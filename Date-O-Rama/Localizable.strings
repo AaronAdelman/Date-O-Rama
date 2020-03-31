@@ -1,0 +1,123 @@
+/* 
+  Localizable.strings
+  DoubleDate
+
+  Created by אהרן שלמה אדלמן on 2018-01-25.
+  Copyright © 2018 Adelsoft. All rights reserved.
+*/
+
+// Calendar identifiers
+// ISO doesn’t seem to have a set of codes for calendars, so I had to invent one.
+"BE" = "Buddhist";
+"CH" = "Chinese";
+"CO" = "Coptic";
+"EA" = "Ethiopic Amete Alem";
+"EM" = "Ethiopic Amete Mihret";
+"NS" = "Gregorian";
+"AM" = "Hebrew";
+"IN" = "Indian";
+"AH" = "Islamic";
+"IC" = "Islamic Civil";
+"IT" = "Islamic Tabular";
+"IU" = "Islamic Umm Al-Qura";
+"IS" = "ISO 8601";
+"JA" = "Japanese";
+"AP" = "Persian";
+"RC" = "Republic of China";
+"LJ" = "LDML Modified Julian Day";
+
+"DEFAULT_LOCALE" = "Default";
+
+"HEADER_Preview" = "Preview";
+
+"HEADER_E" = "Weekday";
+"ITEM_E_"       = "None";
+"ITEM_E_eeeee"  = "Narrow (1 letter)";
+"ITEM_E_eeeeee" = "Short";
+"ITEM_E_eee"    = "Abbreviated";
+"ITEM_E_eeee"   = "Wide";
+"ITEM_E_e"      = "Numeric: 1 digit";
+"ITEM_E_ee"     = "Numeric: 2 digits";
+
+"HEADER_y" = "Year";
+"ITEM_y_"     = "None";
+"ITEM_y_y"    = "Full";
+"ITEM_y_yy"   = "2 digits only";
+"ITEM_y_yyy"  = "≥ 3 digits";
+"ITEM_y_yyyy" = "≥ 4 digits";
+
+"HEADER_M" = "Month";
+"ITEM_M_"      = "None";
+"ITEM_M_MMMMM" = "Narrow (1 letter)";
+"ITEM_M_MMM"   = "Abbreviated";
+"ITEM_M_MMMM"  = "Wide";
+"ITEM_M_M"     = "Numeric: 1 digit";
+"ITEM_M_MM"    = "Numeric: 2 digits";
+
+"HEADER_d" = "Day of month";
+"ITEM_d_"   = "None";
+"ITEM_d_d"  = "Minimum digits";
+"ITEM_d_dd" = "2 digits";
+
+"HEADER_G" = "Era";
+"ITEM_G_"       = "None";
+"ITEM_G_GGGGG"  = "Narrow (1 letter)";
+"ITEM_G_G"      = "Abbreviated";
+"ITEM_G_GGGG"   = "Wide";
+
+"HEADER_Y" = "Year for week of year";
+"ITEM_Y_"     = "None";
+"ITEM_Y_Y"    = "Full";
+"ITEM_Y_YY"   = "2 digits only";
+"ITEM_Y_YYY"  = "≥ 3 digits";
+"ITEM_Y_YYYY" = "≥ 4 digits";
+
+"HEADER_U" = "Cyclic year";
+"ITEM_U_"      = "None";
+"ITEM_U_UUUUU" = "Narrow";
+"ITEM_U_U"     = "Abbreviated";
+"ITEM_U_UUUU"  = "Wide";
+
+"HEADER_r" = "Related Gregorian year";
+"ITEM_r_"     = "None";
+"ITEM_r_r"    = "Minimum digits";
+"ITEM_r_rr"   = "≥ 2 digits";
+"ITEM_r_rrr"  = "≥ 3 digits";
+"ITEM_r_rrrr" = "≥ 4 digits";
+
+"HEADER_Q" = "Quarter";
+"ITEM_Q_"      = "None";
+"ITEM_Q_Q"     = "Numeric: 1 digit";
+"ITEM_Q_QQ"    = "Numeric: 2 digits";
+"ITEM_Q_QQQQQ" = "Narrow";
+"ITEM_Q_QQQ"   = "Abbreviated";
+"ITEM_Q_QQQQ"  = "Wide";
+
+"HEADER_w" = "Week of year";
+"ITEM_w_"   = "None";
+"ITEM_w_w"  = "Minimum digits";
+"ITEM_w_ww" = "2 digits";
+
+"HEADER_W" = "Week of month";
+"ITEM_W_"  = "None";
+"ITEM_W_W" = "1 digit";
+
+"HEADER_D" = "Day of year";
+"ITEM_D_"    = "None";
+"ITEM_D_D"   = "Minimum digits";
+"ITEM_D_DD"  = "≥ 2 digits";
+"ITEM_D_DDD" = "3 digits";
+
+"HEADER_F" = "Day of week in month";
+"ITEM_F_"  = "None";
+"ITEM_F_F" = "1 digit";
+
+"HEADER_g" = "Modified Julian day";
+"ITEM_g_"   = "None";
+"ITEM_g_g"  = "Minimum digits";
+
+"HEADER_-" = "Dash separator in date";
+"ITEM_-_"   = "None";
+"ITEM_-_-"  = "Present";
+
+"HEADER_MODULAR_LARGE" = "Modular large";

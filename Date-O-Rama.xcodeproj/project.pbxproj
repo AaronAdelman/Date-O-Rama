@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */; };
-		A5C77C012433361400CFEE47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ContentView.swift */; };
+		A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */; };
 		A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C022433361900CFEE47 /* Assets.xcassets */; };
 		A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C052433361900CFEE47 /* Preview Assets.xcassets */; };
 		A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */; };
 		A5C77C142433361900CFEE47 /* Date_O_RamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C132433361900CFEE47 /* Date_O_RamaTests.swift */; };
 		A5C77C1F2433361900CFEE47 /* Date_O_RamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C1E2433361900CFEE47 /* Date_O_RamaUITests.swift */; };
+		A5C77C312433371800CFEE47 /* ASAStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* ASAStringExtensions.swift */; };
+		A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
+		A5C77C332433371800CFEE47 /* ASARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2E2433371700CFEE47 /* ASARow.swift */; };
+		A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */; };
+		A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
+		A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */; };
+		A5C77C3A243359BE00CFEE47 /* ASALocaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C39243359BE00CFEE47 /* ASALocaleCell.swift */; };
+		A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
+		A5C77C3E243364CB00CFEE47 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C3D243364CB00CFEE47 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "✨Date-O-Rama✨.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C77C002433361400CFEE47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsView.swift; sourceTree = "<group>"; };
 		A5C77C022433361900CFEE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C77C052433361900CFEE47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5C77C082433361900CFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,16 @@
 		A5C77C1A2433361900CFEE47 /* Date-O-RamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Date-O-RamaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77C1E2433361900CFEE47 /* Date_O_RamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date_O_RamaUITests.swift; sourceTree = "<group>"; };
 		A5C77C202433361900CFEE47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C77C2C2433371700CFEE47 /* ASAStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAStringExtensions.swift; sourceTree = "<group>"; };
+		A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASACalendarCode.swift; sourceTree = "<group>"; };
+		A5C77C2E2433371700CFEE47 /* ASARow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASARow.swift; sourceTree = "<group>"; };
+		A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAConfiguration.swift; sourceTree = "<group>"; };
+		A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASARowArrayKey.swift; sourceTree = "<group>"; };
+		A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "✨Date-O-Rama✨.entitlements"; sourceTree = "<group>"; };
+		A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocalePickerView.swift; sourceTree = "<group>"; };
+		A5C77C39243359BE00CFEE47 /* ASALocaleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleCell.swift; sourceTree = "<group>"; };
+		A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleData.swift; sourceTree = "<group>"; };
+		A5C77C3D243364CB00CFEE47 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +108,7 @@
 		A5C77BFA2433361400CFEE47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5C77BF92433361400CFEE47 /* Date-O-Rama.app */,
+				A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */,
 				A5C77C0F2433361900CFEE47 /* Date-O-RamaTests.xctest */,
 				A5C77C1A2433361900CFEE47 /* Date-O-RamaUITests.xctest */,
 			);
@@ -99,13 +118,23 @@
 		A5C77BFB2433361400CFEE47 /* Date-O-Rama */ = {
 			isa = PBXGroup;
 			children = (
+				A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */,
 				A5C77BFC2433361400CFEE47 /* AppDelegate.swift */,
-				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
-				A5C77C002433361400CFEE47 /* ContentView.swift */,
+				A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */,
+				A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */,
+				A5C77C39243359BE00CFEE47 /* ASALocaleCell.swift */,
+				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
+				A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */,
+				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
+				A5C77C2E2433371700CFEE47 /* ASARow.swift */,
+				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
+				A5C77C2C2433371700CFEE47 /* ASAStringExtensions.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
-				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
+				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
+				A5C77C3D243364CB00CFEE47 /* Localizable.strings */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
+				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
 			);
 			path = "Date-O-Rama";
 			sourceTree = "<group>";
@@ -153,7 +182,7 @@
 			);
 			name = "Date-O-Rama";
 			productName = "Date-O-Rama";
-			productReference = A5C77BF92433361400CFEE47 /* Date-O-Rama.app */;
+			productReference = A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A5C77C0E2433361900CFEE47 /* Date-O-RamaTests */ = {
@@ -198,6 +227,7 @@
 		A5C77BF12433361400CFEE47 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ASA;
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Adelsoft;
@@ -241,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
+				A5C77C3E243364CB00CFEE47 /* Localizable.strings in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 			);
@@ -267,9 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
+				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
+				A5C77C312433371800CFEE47 /* ASAStringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,
-				A5C77C012433361400CFEE47 /* ContentView.swift in Sources */,
+				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
+				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
+				A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */,
+				A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */,
+				A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */,
+				A5C77C3A243359BE00CFEE47 /* ASALocaleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
@@ -444,7 +484,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "✨Date-O-Rama✨";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
@@ -464,7 +506,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "✨Date-O-Rama✨";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

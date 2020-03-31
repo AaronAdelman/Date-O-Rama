@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ASAMainRowsView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -15,7 +15,7 @@ private let dateFormatter: DateFormatter = {
     return dateFormatter
 }()
 
-struct ContentView: View {
+struct ASAMainRowsView: View {
     @State private var dates = [Date]()
 
     var body: some View {
@@ -72,6 +72,6 @@ struct DetailView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ASAMainRowsView()
     }
 }
