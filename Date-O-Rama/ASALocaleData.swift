@@ -37,11 +37,11 @@ struct ASALocaleData {
     
     init() {
         var temp:  Array<ASALocaleRecord> = []
-        let availableLocaleIdentifiers = [""] + Locale.availableIdentifiers
+        let availableLocaleIdentifiers = Locale.availableIdentifiers
         for identifier in availableLocaleIdentifiers {
             let record = ASALocaleRecord(id: identifier, nativeName: identifier.asSelfLocalizedLocaleIdentifier())
             temp.append(record)
         } // for identifier in availableLocaleIdentifiers
-        self.records = temp.sorted(by: {$0.nativeName < $1.nativeName})
+        self.records = [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))] + temp.sorted(by: {$0.nativeName < $1.nativeName})
     } // init()
 } // struct ASALocaleData
