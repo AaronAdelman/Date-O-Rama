@@ -24,6 +24,8 @@
 		A5C77C3A243359BE00CFEE47 /* ASALocaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C39243359BE00CFEE47 /* ASALocaleCell.swift */; };
 		A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
 		A5C77C3E243364CB00CFEE47 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C3D243364CB00CFEE47 /* Localizable.strings */; };
+		A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */; };
+		A5C77C422433A23400CFEE47 /* ASACalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C412433A23400CFEE47 /* ASACalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		A5C77C39243359BE00CFEE47 /* ASALocaleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleCell.swift; sourceTree = "<group>"; };
 		A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleData.swift; sourceTree = "<group>"; };
 		A5C77C3D243364CB00CFEE47 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarPickerView.swift; sourceTree = "<group>"; };
+		A5C77C412433A23400CFEE47 /* ASACalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				A5C77C3D243364CB00CFEE47 /* Localizable.strings */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
 				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
+				A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */,
+				A5C77C412433A23400CFEE47 /* ASACalendarCell.swift */,
 			);
 			path = "Date-O-Rama";
 			sourceTree = "<group>";
@@ -300,6 +306,8 @@
 			files = (
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
+				A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */,
+				A5C77C422433A23400CFEE47 /* ASACalendarCell.swift in Sources */,
 				A5C77C312433371800CFEE47 /* ASAStringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,

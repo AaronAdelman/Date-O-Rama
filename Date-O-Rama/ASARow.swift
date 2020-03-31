@@ -107,6 +107,7 @@ class ASARow: NSObject {
     lazy var dateFormatter = DateFormatter()
     lazy var ISODateFormatter = ISO8601DateFormatter()
     
+    
     // MARK: -
     
     func equivalentCalendarIdentifier(calendarCode:  ASACalendarCode) -> Calendar.Identifier {
@@ -169,7 +170,6 @@ class ASARow: NSObject {
     
     public func dictionary() -> Dictionary<String, String?> {
         let result = [
-//            "subkey":  subkey?.rawValue,
                 "locale":  localeIdentifier,
                 "calendar":  calendarCode.rawValue,
                 "majorDateFormat":  majorDateFormat.rawValue,
@@ -206,7 +206,6 @@ class ASARow: NSObject {
     
     class func generic() -> ASARow {
         let temp = ASARow()
-//        temp.subkey = .app
         temp.calendarCode = ASACalendarCode.Gregorian
         temp.localeIdentifier = ""
         temp.majorDateFormat = .full
@@ -216,7 +215,6 @@ class ASARow: NSObject {
     
     func copy() -> ASARow {
         let tempRow = ASARow()
-//        tempRow.subkey = self.subkey
         tempRow.calendarCode = self.calendarCode
         tempRow.localeIdentifier = self.localeIdentifier
         tempRow.majorDateFormat = self.majorDateFormat

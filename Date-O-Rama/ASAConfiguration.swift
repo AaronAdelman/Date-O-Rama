@@ -39,25 +39,6 @@ let defaults =
     UserDefaults.init(suiteName: storageKey)
 
 class ASAConfiguration: NSObject {
-    public static let calendarCodes = [
-        ASACalendarCode.Gregorian,
-        ASACalendarCode.Buddhist,
-        ASACalendarCode.Chinese,
-        ASACalendarCode.Coptic,
-        ASACalendarCode.EthiopicAmeteAlem,
-        ASACalendarCode.EthiopicAmeteMihret,
-        ASACalendarCode.Hebrew,
-        ASACalendarCode.Indian,
-        ASACalendarCode.Islamic,
-        ASACalendarCode.IslamicCivil,
-        ASACalendarCode.IslamicTabular,
-        ASACalendarCode.IslamicUmmAlQura,
-        ASACalendarCode.ISO8601,
-        ASACalendarCode.Japanese,
-        ASACalendarCode.Persian,
-        ASACalendarCode.RepublicOfChina
-     ]
-    
     public static func configureDefaults() -> Void {
         let defaultSettings = [:] as [String : Any]
         

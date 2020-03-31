@@ -12,7 +12,7 @@ struct ASALocaleCell: View {
     let localeString: String
     let localizedLocaleString:  String
     @Binding var selectedLocaleString: String?
-
+    
     var body: some View {
         HStack {
             Text(verbatim:  localizedLocaleString)
@@ -22,8 +22,8 @@ struct ASALocaleCell: View {
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-                self.selectedLocaleString = self.localeString
-            }
+            self.selectedLocaleString = self.localeString
+        }
     }
 }
 
