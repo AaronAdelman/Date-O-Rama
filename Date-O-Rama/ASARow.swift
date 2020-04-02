@@ -10,56 +10,40 @@ import UIKit
 
 //MARK: -
 
-class ASARow: NSObject {    
-    var secretCalendarCode:  ASACalendarCode = .None
-    
-    public var calendarCode:  ASACalendarCode {
-        set {
-            self.calendarIdentifier = equivalentCalendarIdentifier(calendarCode: newValue)
+class ASARow: NSObject, ObservableObject, Identifiable {
+    var uid = UUID()
+    @Published var calendarCode:  ASACalendarCode = .Gregorian {
+        didSet {
+            self.calendarIdentifier = equivalentCalendarIdentifier(calendarCode: self.calendarCode)
             
-            if newValue.usesDateFormatter() {
+            if self.calendarCode.usesDateFormatter() {
                 // Need to use a DateFormatter
                 dateFormatter.timeStyle = .none
                 dateFormatter.timeZone = .current
                 dateFormatter.calendar = Calendar(identifier: calendarIdentifier!)
-                
-            } else if newValue.ISO8601AppleCalendar() {
+            } else if self.calendarCode.ISO8601AppleCalendar() {
                 // Need to use an ISO8601DateFormatter
                 ISODateFormatter.timeZone = TimeZone.current
             }
-            
-            secretCalendarCode = newValue
-        } // set
-        
-        get {
-            return secretCalendarCode
-        } // get
-    } // public var calendarCode:  String
+        } // didset
+    } // var calendarCode:  String
     
-    var secretLocaleIdentifier:  String = ""
-    public var localeIdentifier:  String {
-        set {
-            if newValue == "" {
+    @Published var localeIdentifier:  String = Locale.current.identifier {
+        didSet {
+            if self.localeIdentifier == "" {
                 self.dateFormatter.locale = Locale.current
             } else {
-                self.dateFormatter.locale = Locale(identifier: newValue)
+                self.dateFormatter.locale = Locale(identifier: self.localeIdentifier)
             }
-            
-            secretLocaleIdentifier = newValue
-        }
-        
-        get {
-            return secretLocaleIdentifier
-        }
-    } // public var localeIdentifier:  String
+        } // didSet
+    } // var localeIdentifier:  String
     
-    var secretMajorDateFormat:  ASAMajorDateFormat = .long
-    public var majorDateFormat:  ASAMajorDateFormat {
-        set {
+    @Published var majorDateFormat:  ASAMajorDateFormat = .full {
+        didSet {
             if calendarCode.usesDateFormatter() {
                 dateFormatter.dateStyle = .full
                 
-                switch newValue {
+                switch self.majorDateFormat {
                 case .full:
                     dateFormatter.dateStyle = .full
                     self.geekFormat = "eee, d MMM y"
@@ -92,15 +76,9 @@ class ASARow: NSObject {
                     ISODateFormatter.formatOptions = []
                 }
             }
-            
-            secretMajorDateFormat = newValue
-        } // set
-        
-        get {
-            return secretMajorDateFormat
-        } // get
-    }
-    public var geekFormat:  String = "eMMMdy"
+        } // didset
+    } // var majorDateFormat
+    @Published var geekFormat:  String = "eMMMdy"
     
     var calendarIdentifier:  Calendar.Identifier?
     
@@ -213,6 +191,17 @@ class ASARow: NSObject {
         return temp
     } // func generic() -> ASARow
     
+    class func test() -> ASARow {
+        let temp = ASARow()
+        temp.calendarCode = ASACalendarCode.Gregorian
+        temp.localeIdentifier = "en_US"
+        temp.majorDateFormat = .localizedLDML
+        temp.geekFormat = "eeeyMMMd"
+        
+        return temp
+    } // func generic() -> ASARow
+
+    
     func copy() -> ASARow {
         let tempRow = ASARow()
         tempRow.calendarCode = self.calendarCode
@@ -286,7 +275,18 @@ class ASARow: NSObject {
         }
         
         return "Error!"
-    } // public static func dateString(now:  Date) -> String
+    } // func dateString(now:  Date) -> String
+    
+    public func dateString(now:  Date, LDMLString:  String) -> String {
+        if self.calendarCode == .ISO8601 {
+            self.dateFormatter.locale = Locale(identifier: "en_US")
+        }
+        
+        self.dateFormatter.dateFormat = LDMLString
+        let result = self.dateFormatter.string(from: now)
+        
+        return result
+    } // func dateString(now:  Date, LDMLString:  String) -> String
 
 } // class ASARow: NSObject
 

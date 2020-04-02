@@ -6,6 +6,8 @@
 //  Copyright © 2018 Adelsoft. All rights reserved.
 //
 
+import Foundation
+
 // Calendar codes
 enum ASACalendarCode:  String {
     case None                = "  "
@@ -29,6 +31,12 @@ enum ASACalendarCode:  String {
 
 
 // MARK: -
+
+extension ASACalendarCode {
+    func localizedName() -> String {
+        return NSLocalizedString(self.rawValue, comment: "")
+    } // func localizedName() -> String
+} // extension ASACalendarCode
 
 extension ASACalendarCode {
     func ordinaryAppleCalendar() -> Bool {

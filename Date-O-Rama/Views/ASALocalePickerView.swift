@@ -1,5 +1,5 @@
 //
-//  ASALocaleCell.swift
+//  ASALocalePickerView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -8,9 +8,24 @@
 
 import SwiftUI
 
+struct ASALocalePickerView: View {
+    let localeData = ASALocaleData()
+    
+    @State var localeIdentifier: String? = nil
+
+    var body: some View {
+        List {
+            ForEach(localeData.records) { item in
+                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, selectedLocaleString: self.$localeIdentifier)
+            } // ForEach(localeData.records)
+        } // List
+    } // var body
+} // struct ASALocalePickerView
+
 struct ASALocaleCell: View {
     let localeString: String
     let localizedLocaleString:  String
+    
     @Binding var selectedLocaleString: String?
     
     var body: some View {
@@ -27,8 +42,8 @@ struct ASALocaleCell: View {
     }
 }
 
-struct ASALocaleCell_Previews: PreviewProvider {
+struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocaleCell(localeString: "he_IL", localizedLocaleString:  "עברית (ישראל)", selectedLocaleString: .constant("en_US"))
+        ASALocalePickerView()
     }
 }
