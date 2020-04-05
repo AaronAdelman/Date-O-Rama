@@ -11,12 +11,12 @@ import SwiftUI
 struct ASALocalePickerView: View {
     let localeData = ASALocaleData()
     
-    @State var localeIdentifier: String? = nil
+    @ObservedObject var row:  ASARow
 
     var body: some View {
         List {
             ForEach(localeData.records) { item in
-                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, selectedLocaleString: self.$localeIdentifier)
+                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
             } // ForEach(localeData.records)
         } // List
     } // var body
@@ -26,24 +26,25 @@ struct ASALocaleCell: View {
     let localeString: String
     let localizedLocaleString:  String
     
-    @Binding var selectedLocaleString: String?
-    
+    @ObservedObject var row:  ASARow
+
     var body: some View {
         HStack {
             Text(verbatim:  localizedLocaleString)
             Spacer()
-            if localeString == selectedLocaleString {
+            if localeString == self.row.localeIdentifier {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-            self.selectedLocaleString = self.localeString
+            self.row.localeIdentifier = self.localeString
         }
     }
 }
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocalePickerView()
+        ASALocalePickerView(row: ASARow.test())
     }
 }
+

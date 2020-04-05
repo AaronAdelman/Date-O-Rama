@@ -115,7 +115,7 @@ struct DetailView: View {
                 NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
                     ASADetailCell(title: "Calendar", detail: self.selectedRow.calendarCode.localizedName())
                 }
-                NavigationLink(destination: ASALocalePickerView(localeIdentifier: selectedRow.localeIdentifier)) {
+                NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
                     ASADetailCell(title:  "Locale", detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                 }
             }
