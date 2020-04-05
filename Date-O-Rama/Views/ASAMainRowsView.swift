@@ -91,20 +91,20 @@ struct ASADetail {
 
 struct DetailView: View {
     let details:  Array<ASADetail> = [
-        ASADetail(name: "Era", geekCode: "GGGG"),
-        ASADetail(name: "Calendar year", geekCode: "y"),
-        ASADetail(name: "Month", geekCode: "MMMM"),
-        ASADetail(name: "Day of month", geekCode: "d"),
-        ASADetail(name: "Weekday", geekCode: "eeee"),
-        ASADetail(name: "Quarter", geekCode: "QQQQ"),
-        ASADetail(name: "Year (for “week of year”)", geekCode: "Y"),
-        ASADetail(name: "Week of year", geekCode: "w"),
-        ASADetail(name: "Week of month", geekCode: "W"),
-        ASADetail(name: "Day of week in month", geekCode: "F"),
-        ASADetail(name: "Day of year", geekCode: "D"),
-        ASADetail(name: "Cyclic year name", geekCode: "UUUU"),
-        ASADetail(name: "Related Gregorian year", geekCode: "r"),
-        ASADetail(name: "Modified Julian day", geekCode: "g")    ]
+        ASADetail(name: "HEADER_G", geekCode: "GGGG"),
+        ASADetail(name: "HEADER_y", geekCode: "y"),
+        ASADetail(name: "HEADER_M", geekCode: "MMMM"),
+        ASADetail(name: "HEADER_d", geekCode: "d"),
+        ASADetail(name: "HEADER_E", geekCode: "eeee"),
+        ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
+        ASADetail(name: "HEADER_Y", geekCode: "Y"),
+        ASADetail(name: "HEADER_w", geekCode: "w"),
+        ASADetail(name: "HEADER_W", geekCode: "W"),
+        ASADetail(name: "HEADER_F", geekCode: "F"),
+        ASADetail(name: "HEADER_D", geekCode: "D"),
+        ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+        ASADetail(name: "HEADER_r", geekCode: "r"),
+        ASADetail(name: "HEADER_g", geekCode: "g")    ]
     
     @ObservedObject var selectedRow:  ASARow
     
@@ -124,7 +124,7 @@ struct DetailView: View {
                     detail
                     in
                     HStack {
-                        Text(verbatim:  detail.name).bold()
+                        Text(NSLocalizedString(detail.name, comment: "")).bold()
                         Spacer()
                         Text(verbatim:  (self.selectedRow.dateString(now: Date(), LDMLString: detail.geekCode)) )
                     }
