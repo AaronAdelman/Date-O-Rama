@@ -83,29 +83,31 @@ struct DetailView: View {
                     }
                 }
                 Section(header:  Text("Date")) {
-                    ASADetailCell(title: "Era", detail: selectedRow!.dateString(now: Date(), LDMLString: "GGGG"))
-                    
-                    ASADetailCell(title: "Calendar year", detail: selectedRow!.dateString(now: Date(), LDMLString: "y"))
-                    ASADetailCell(title: "Month", detail: selectedRow!.dateString(now: Date(), LDMLString: "MMMM"))
-                    ASADetailCell(title: "Day of month", detail: selectedRow!.dateString(now: Date(), LDMLString: "d"))
-                    ASADetailCell(title: "Weekday", detail: selectedRow!.dateString(now: Date(), LDMLString: "eeee"))
-                } // Section
-                Section(header:  Text("Foo")) {
-                    ASADetailCell(title: "Quarter", detail: selectedRow!.dateString(now: Date(), LDMLString: "QQQQ"))
-                    
-                    ASADetailCell(title: "Year (for “week of year”)", detail: selectedRow!.dateString(now: Date(), LDMLString: "Y"))
-                    ASADetailCell(title: "Week of year", detail: selectedRow!.dateString(now: Date(), LDMLString: "w"))
-                    
-                    ASADetailCell(title: "Week of month", detail: selectedRow!.dateString(now: Date(), LDMLString: "W"))
-                    ASADetailCell(title: "Day of week in month", detail: selectedRow!.dateString(now: Date(), LDMLString: "F"))
-                    
-                    ASADetailCell(title: "Day of year", detail: selectedRow!.dateString(now: Date(), LDMLString: "D"))
-                    
-                    ASADetailCell(title: "Cyclic year name", detail: selectedRow!.dateString(now: Date(), LDMLString: "UUUU"))
-                    
-                    ASADetailCell(title: "Related Gregorian year", detail: selectedRow!.dateString(now: Date(), LDMLString: "r"))
-                    
-                    ASADetailCell(title: "Modified Julian day", detail: selectedRow!.dateString(now: Date(), LDMLString: "g"))
+                    Group {
+                        ASADetailCell(title: "Era", detail: selectedRow!.dateString(now: Date(), LDMLString: "GGGG"))
+                        
+                        ASADetailCell(title: "Calendar year", detail: selectedRow!.dateString(now: Date(), LDMLString: "y"))
+                        ASADetailCell(title: "Month", detail: selectedRow!.dateString(now: Date(), LDMLString: "MMMM"))
+                        ASADetailCell(title: "Day of month", detail: selectedRow!.dateString(now: Date(), LDMLString: "d"))
+                        ASADetailCell(title: "Weekday", detail: selectedRow!.dateString(now: Date(), LDMLString: "eeee"))
+                    }
+                    Group {
+                        ASADetailCell(title: "Quarter", detail: selectedRow!.dateString(now: Date(), LDMLString: "QQQQ"))
+                        
+                        ASADetailCell(title: "Year (for “week of year”)", detail: selectedRow!.dateString(now: Date(), LDMLString: "Y"))
+                        ASADetailCell(title: "Week of year", detail: selectedRow!.dateString(now: Date(), LDMLString: "w"))
+                        
+                        ASADetailCell(title: "Week of month", detail: selectedRow!.dateString(now: Date(), LDMLString: "W"))
+                        ASADetailCell(title: "Day of week in month", detail: selectedRow!.dateString(now: Date(), LDMLString: "F"))
+                        
+                        ASADetailCell(title: "Day of year", detail: selectedRow!.dateString(now: Date(), LDMLString: "D"))
+                        
+                        ASADetailCell(title: "Cyclic year name", detail: selectedRow!.dateString(now: Date(), LDMLString: "UUUU"))
+                        
+                        ASADetailCell(title: "Related Gregorian year", detail: selectedRow!.dateString(now: Date(), LDMLString: "r"))
+                        
+                        ASADetailCell(title: "Modified Julian day", detail: selectedRow!.dateString(now: Date(), LDMLString: "g"))
+                    }
                 }
             } else {
                 Text("Detail view content goes here")
