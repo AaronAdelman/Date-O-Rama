@@ -28,7 +28,7 @@ struct ASACalendarPickerView: View {
         .RepublicOfChina
     ]
     
-    @State var row:  ASARow
+    @ObservedObject var row:  ASARow
     
     var body: some View {
         List {

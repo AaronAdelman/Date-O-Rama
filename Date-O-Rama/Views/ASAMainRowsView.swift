@@ -105,14 +105,15 @@ struct DetailView: View {
         ASADetail(name: "Cyclic year name", geekCode: "UUUU"),
         ASADetail(name: "Related Gregorian year", geekCode: "r"),
         ASADetail(name: "Modified Julian day", geekCode: "g")    ]
-    @State var selectedRow:  ASARow
+    
+    @ObservedObject var selectedRow:  ASARow
     
     var body: some View {
         List {
             //            if selectedRow != nil {
             Section(header:  Text("Row")) {
-                NavigationLink(destination: ASACalendarPickerView(row: selectedRow)) {
-                    ASADetailCell(title: "Calendar", detail: selectedRow.calendarCode.localizedName())
+                NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
+                    ASADetailCell(title: "Calendar", detail: self.selectedRow.calendarCode.localizedName())
                 }
                 NavigationLink(destination: ASALocalePickerView(localeIdentifier: selectedRow.localeIdentifier)) {
                     ASADetailCell(title:  "Locale", detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
