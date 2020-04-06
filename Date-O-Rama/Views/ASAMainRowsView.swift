@@ -86,6 +86,9 @@ struct DetailView: View {
                     NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
                         ASADetailCell(title:  "Locale", detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                     }
+                    NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
+                        ASADetailCell(title:  "Format", detail: selectedRow.majorDateFormat.localizedItemName())
+                    }
                 }
                 Section(header:  Text("Date")) {
                     ForEach(selectedRow.details(), id: \.name) {

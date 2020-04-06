@@ -38,6 +38,7 @@ struct ASACalendarPickerView: View {
                 ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendarCode)
             }
         }
+        .navigationBarTitle(Text(row.dateString(now: Date()) ))
     }
 }
 

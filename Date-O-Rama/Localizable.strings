@@ -129,6 +129,6 @@
 "ITEM_Medium"     = "Medium";
 "ITEM_Short"      = "Short";
 "ITEM_Components" = "Components";
-"ITEM_Raw_LDML"   = "Raw_LDML";
+"ITEM_Raw_LDML"   = "Raw LDML";
 
 "HEADER_MODULAR_LARGE" = "Modular large";

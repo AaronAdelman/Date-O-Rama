@@ -27,8 +27,8 @@ extension ASAComponentsPickerSection {
 // MARK : -
 
 struct ASAComponentsPickerView: View {
-    @State var row:         ASARow
-        
+    @ObservedObject var row:  ASARow
+
     let PREVIEW_HEADER_CODE = "Preview"
     
     var model:  Array<ASAComponentsPickerSection> {
@@ -85,7 +85,7 @@ struct ASAComponentsPickerView: View {
                         ForEach(section.items, id:  \.self) {
                             item
                             in
-                            ASAComponentCell(headerCode: section.headerCode, item: item, row:  self.$row)
+                            ASAComponentCell(headerCode: section.headerCode, item: item, row:  self.row)
                         } // ForEach(section.items, id:  \.self)
                     }
                 }
@@ -94,8 +94,39 @@ struct ASAComponentsPickerView: View {
     } // var body
 }
 
+struct ASAComponentCell: View {
+    let headerCode:  String
+    let item: String
+    
+    @ObservedObject var row: ASARow
+    
+    func selectedItem(row:  ASARow, headerCode:  String) -> String {
+        let components = row.geekFormat.components(calendarCode: row.calendarCode)
+        let selection = components[headerCode]
+        return selection ?? ""
+    }
+    
+    var body: some View {
+        HStack {
+            Text(verbatim: NSLocalizedString("ITEM_\(headerCode)_\(item)", comment: ""))
+            Spacer()
+            if self.item == self.selectedItem(row: self.row, headerCode: headerCode) {
+                Image(systemName: "checkmark")
+                    .foregroundColor(.accentColor)
+            }
+        }
+        .onTapGesture {
+            debugPrint("\(#file) \(#function) Geek format before = \(self.row.geekFormat)")
+            var components = self.row.geekFormat.components(calendarCode: self.row.calendarCode)
+            components[self.headerCode] = self.item
+            self.row.geekFormat = String.geekFormat(components: components)
+            debugPrint("\(#file) \(#function) Geek format after = \(self.row.geekFormat)")
+        }
+    }  // var body
+} // struct ASAComponentCell
+
 struct ASAComponentsPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAComponentsPickerView(row:  ASARow.test())
+        ASAComponentsPickerView(row:  ASARow.generic())
     }
 }

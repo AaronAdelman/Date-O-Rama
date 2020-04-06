@@ -19,6 +19,7 @@ struct ASALocalePickerView: View {
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
             } // ForEach(localeData.records)
         } // List
+        .navigationBarTitle(Text(row.dateString(now: Date()) ))
     } // var body
 } // struct ASALocalePickerView
 
