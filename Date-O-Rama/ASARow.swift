@@ -8,9 +8,16 @@
 
 import UIKit
 
+struct ASADetail {
+    var name:  String
+    var geekCode:  String
+} // struct ASADetail
+
 //MARK: -
 
 class ASARow: NSObject, ObservableObject, Identifiable {
+    let genericISOGeekFormat = "yyyy-MM-dd"
+    
     var uid = UUID()
     @Published var dummy = false
     @Published var calendarCode:  ASACalendarCode = .Gregorian {
@@ -26,6 +33,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             } else if self.calendarCode.ISO8601AppleCalendar() {
                 // Need to use an ISO8601DateFormatter
                 ISODateFormatter.timeZone = TimeZone.current
+                self.geekFormat = self.genericISOGeekFormat
             }
         } // didset
     } // var calendarCode:  String
@@ -71,7 +79,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             } else if calendarCode.ISO8601AppleCalendar() {
                 switch calendarCode {
                 case ASACalendarCode.ISO8601:
-                    self.geekFormat = "yyyy-MM-dd"
+                    self.geekFormat = self.genericISOGeekFormat
                     ISODateFormatter.formatOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
                                         
                 default:
@@ -89,64 +97,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     
     // MARK: -
-    
-//    func equivalentCalendarIdentifier(calendarCode:  ASACalendarCode) -> Calendar.Identifier {
-//        var calendarIdentifier:  Calendar.Identifier
-//        switch calendarCode {
-//        case ASACalendarCode.Buddhist:
-//            calendarIdentifier = .buddhist
-//
-//        case ASACalendarCode.Chinese:
-//            calendarIdentifier = .chinese
-//
-//        case ASACalendarCode.Coptic:
-//            calendarIdentifier = .coptic
-//
-//        case ASACalendarCode.EthiopicAmeteAlem:
-//            calendarIdentifier = .ethiopicAmeteAlem
-//
-//        case ASACalendarCode.EthiopicAmeteMihret:
-//            calendarIdentifier = .ethiopicAmeteMihret
-//
-//        case ASACalendarCode.Gregorian:
-//            calendarIdentifier = .gregorian
-//
-//        case ASACalendarCode.Hebrew:
-//            calendarIdentifier = .hebrew
-//
-//        case ASACalendarCode.Indian:
-//            calendarIdentifier = .indian
-//
-//        case ASACalendarCode.Islamic:
-//            calendarIdentifier = .islamic
-//
-//        case ASACalendarCode.IslamicCivil:
-//            calendarIdentifier = .islamicCivil
-//
-//        case ASACalendarCode.IslamicTabular:
-//            calendarIdentifier = .islamicTabular
-//
-//        case ASACalendarCode.IslamicUmmAlQura:
-//            calendarIdentifier = .islamicUmmAlQura
-//
-//        case ASACalendarCode.ISO8601:
-//            calendarIdentifier = .gregorian
-//
-//        case ASACalendarCode.Japanese:
-//            calendarIdentifier = .japanese
-//
-//        case ASACalendarCode.Persian:
-//            calendarIdentifier = .persian
-//
-//        case ASACalendarCode.RepublicOfChina:
-//            calendarIdentifier = .republicOfChina
-//
-//        default:
-//            calendarIdentifier = .gregorian
-//        } // switch calendarCode
-//
-//        return calendarIdentifier
-//    } // func calendarIdentifier(calendarCode:  String) -> Calendar.Identifier
     
     public func dictionary() -> Dictionary<String, String?> {
         let result = [
@@ -217,6 +167,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         tempRow.geekFormat = self.geekFormat
         return tempRow
     } // func copy() -> ASARow
+    
     
     //MARK: -
     
@@ -294,6 +245,40 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         return result
     } // func dateString(now:  Date, LDMLString:  String) -> String
+    
+    
+    // MARK: -
+    
+    public func details() -> Array<ASADetail> {
+        if self.calendarCode == .ISO8601 {
+            return [
+                ASADetail(name: "HEADER_y", geekCode: "yyyy"),
+                ASADetail(name: "HEADER_M", geekCode: "MM"),
+                ASADetail(name: "HEADER_d", geekCode: "dd"),
+                ASADetail(name: "HEADER_Y", geekCode: "Y"),
+                ASADetail(name: "HEADER_w", geekCode: "ww"),
+                ASADetail(name: "HEADER_E", geekCode: "e"),
+                ASADetail(name: "HEADER_g", geekCode: "g")
+            ]
+        } else {
+            return [
+                ASADetail(name: "HEADER_G", geekCode: "GGGG"),
+                ASADetail(name: "HEADER_y", geekCode: "y"),
+                ASADetail(name: "HEADER_M", geekCode: "MMMM"),
+                ASADetail(name: "HEADER_d", geekCode: "d"),
+                ASADetail(name: "HEADER_E", geekCode: "eeee"),
+                ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
+                ASADetail(name: "HEADER_Y", geekCode: "Y"),
+                ASADetail(name: "HEADER_w", geekCode: "w"),
+                ASADetail(name: "HEADER_W", geekCode: "W"),
+                ASADetail(name: "HEADER_F", geekCode: "F"),
+                ASADetail(name: "HEADER_D", geekCode: "D"),
+                ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+                ASADetail(name: "HEADER_r", geekCode: "r"),
+                ASADetail(name: "HEADER_g", geekCode: "g")
+            ]
+        }
+    }
 
 } // class ASARow: NSObject
 

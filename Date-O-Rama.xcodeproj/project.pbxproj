@@ -131,6 +131,7 @@
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A5C77C2E2433371700CFEE47 /* ASARow.swift */,
 				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
+				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
@@ -139,7 +140,6 @@
 				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A5C77C452434723300CFEE47 /* Views */,
-				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 			);
 			path = "Date-O-Rama";
 			sourceTree = "<group>";
@@ -173,9 +173,9 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */,
 				A5B4105C24349A52009A7F9F /* ASAComponentCell.swift */,
 				A5C77C432434720F00CFEE47 /* ASAComponentsPickerView.swift */,
-				A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */,
 				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
 			);
