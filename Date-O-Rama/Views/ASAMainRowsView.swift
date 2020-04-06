@@ -7,19 +7,23 @@
 //
 
 import SwiftUI
-
+import Combine
 
 struct ASAMainRowsView: View {
-    @State var rows:  Array<ASARow> = [ASARow.test()]
+    @EnvironmentObject var userData:  ASAUserData
+//    @State var rows:  Array<ASARow> = [ASARow.test()]
     @State var dummyRow:  ASARow = ASARow.dummy()
 
     var body: some View {
         NavigationView {
-//            MasterView(rows: self.$rows)
             List {
-                ForEach(rows, id:  \.uid) { row in
+                ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
                         destination: DetailView(selectedRow: row )
+                            .onReceive(row.objectWillChange) { _ in
+                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                self.userData.objectWillChange.send()
+                        }
                     ) {
                         Text(row.dateString(now: Date()))
                     }
@@ -27,24 +31,24 @@ struct ASAMainRowsView: View {
                 .onDelete { indices in
                     indices.forEach {
                         debugPrint("\(#file) \(#function)")
-                        self.rows.remove(at: $0) }
+                        self.userData.mainRows.remove(at: $0) }
                 }
             }
-                .navigationBarTitle(Text("Date-O-Rama"))
-                .navigationBarItems(
-                    leading: EditButton(),
-                    trailing: Button(
-                        action: {
-                            withAnimation {
-                                debugPrint("\(#file) \(#function) + button, \(self.rows.count) rows before")
-                                self.rows.insert(ASARow.generic(), at: 0)
-                                debugPrint("\(#file) \(#function) + button, \(self.rows.count) rows after")
-                            }
+            .navigationBarTitle(Text("Date-O-Rama"))
+            .navigationBarItems(
+                leading: EditButton(),
+                trailing: Button(
+                    action: {
+                        withAnimation {
+                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
+                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
+                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
                         }
-                    ) {
-                        Image(systemName: "plus")
-                    }
-                )
+                }
+                ) {
+                    Image(systemName: "plus")
+                }
+            )
             DetailView(selectedRow: self.dummyRow)
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
@@ -122,6 +126,6 @@ struct DetailView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsView()
+        ASAMainRowsView().environmentObject(ASAUserData())
     }
 }
