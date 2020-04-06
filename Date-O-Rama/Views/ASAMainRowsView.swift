@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ASAMainRowsView: View {
     @State var rows:  Array<ASARow> = [ASARow.test()]
-    @State var dummyRow:  ASARow = ASARow.generic()
+    @State var dummyRow:  ASARow = ASARow.dummy()
 
     var body: some View {
         NavigationView {
@@ -50,27 +50,6 @@ struct ASAMainRowsView: View {
     }
 }
 
-//struct MasterView: View {
-//    @Binding var rows:  Array<ASARow>
-//
-//    var body: some View {
-//        List {
-//            ForEach(rows, id:  \.uid) { row in
-//                NavigationLink(
-//                    destination: DetailView(selectedRow: row )
-//                ) {
-//                    Text(row.dateString(now: Date()))
-//                }
-//            }
-//            .onDelete { indices in
-//                indices.forEach {
-//                    debugPrint("\(#file) \(#function)")
-//                    self.rows.remove(at: $0) }
-//            }
-//        }
-//    }
-//}
-
 
 struct ASADetailCell:  View {
     var title:  String
@@ -104,35 +83,38 @@ struct DetailView: View {
         ASADetail(name: "HEADER_D", geekCode: "D"),
         ASADetail(name: "HEADER_U", geekCode: "UUUU"),
         ASADetail(name: "HEADER_r", geekCode: "r"),
-        ASADetail(name: "HEADER_g", geekCode: "g")    ]
+        ASADetail(name: "HEADER_g", geekCode: "g")
+    ]
     
     @ObservedObject var selectedRow:  ASARow
     
     var body: some View {
         List {
             //            if selectedRow != nil {
-            Section(header:  Text("Row")) {
-                NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
-                    ASADetailCell(title: "Calendar", detail: self.selectedRow.calendarCode.localizedName())
-                }
-                NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
-                    ASADetailCell(title:  "Locale", detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
-                }
-            }
-            Section(header:  Text("Date")) {
-                ForEach(self.details, id: \.name) {
-                    detail
-                    in
-                    HStack {
-                        Text(NSLocalizedString(detail.name, comment: "")).bold()
-                        Spacer()
-                        Text(verbatim:  (self.selectedRow.dateString(now: Date(), LDMLString: detail.geekCode)) )
+            if selectedRow.dummy != true {
+                Section(header:  Text("Row")) {
+                    NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
+                        ASADetailCell(title: "Calendar", detail: self.selectedRow.calendarCode.localizedName())
+                    }
+                    NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
+                        ASADetailCell(title:  "Locale", detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                     }
                 }
+                Section(header:  Text("Date")) {
+                    ForEach(self.details, id: \.name) {
+                        detail
+                        in
+                        HStack {
+                            Text(NSLocalizedString(detail.name, comment: "")).bold()
+                            Spacer()
+                            Text(verbatim:  (self.selectedRow.dateString(now: Date(), LDMLString: detail.geekCode)) )
+                        }
+                    }
+                }
+            } else {
+//                Text("Detail view content goes here")
+                EmptyView()
             }
-            //            } else {
-            //                Text("Detail view content goes here")
-            //            }
         }.navigationBarTitle(Text(selectedRow.dateString(now: Date()) ))
     }
 }

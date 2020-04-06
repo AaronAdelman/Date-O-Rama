@@ -12,10 +12,12 @@ import UIKit
 
 class ASARow: NSObject, ObservableObject, Identifiable {
     var uid = UUID()
+    @Published var dummy = false
     @Published var calendarCode:  ASACalendarCode = .Gregorian {
         didSet {
-            self.calendarIdentifier = equivalentCalendarIdentifier(calendarCode: self.calendarCode)
-            
+//            self.calendarIdentifier = equivalentCalendarIdentifier(calendarCode: self.calendarCode)
+            self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+
             if self.calendarCode.usesDateFormatter() {
                 // Need to use a DateFormatter
                 dateFormatter.timeStyle = .none
@@ -88,63 +90,63 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     // MARK: -
     
-    func equivalentCalendarIdentifier(calendarCode:  ASACalendarCode) -> Calendar.Identifier {
-        var calendarIdentifier:  Calendar.Identifier
-        switch calendarCode {
-        case ASACalendarCode.Buddhist:
-            calendarIdentifier = .buddhist
-            
-        case ASACalendarCode.Chinese:
-            calendarIdentifier = .chinese
-            
-        case ASACalendarCode.Coptic:
-            calendarIdentifier = .coptic
-            
-        case ASACalendarCode.EthiopicAmeteAlem:
-            calendarIdentifier = .ethiopicAmeteAlem
-            
-        case ASACalendarCode.EthiopicAmeteMihret:
-            calendarIdentifier = .ethiopicAmeteMihret
-            
-        case ASACalendarCode.Gregorian:
-            calendarIdentifier = .gregorian
-            
-        case ASACalendarCode.Hebrew:
-            calendarIdentifier = .hebrew
-            
-        case ASACalendarCode.Indian:
-            calendarIdentifier = .indian
-            
-        case ASACalendarCode.Islamic:
-            calendarIdentifier = .islamic
-            
-        case ASACalendarCode.IslamicCivil:
-            calendarIdentifier = .islamicCivil
-            
-        case ASACalendarCode.IslamicTabular:
-            calendarIdentifier = .islamicTabular
-            
-        case ASACalendarCode.IslamicUmmAlQura:
-            calendarIdentifier = .islamicUmmAlQura
-            
-        case ASACalendarCode.ISO8601:
-            calendarIdentifier = .gregorian
-            
-        case ASACalendarCode.Japanese:
-            calendarIdentifier = .japanese
-            
-        case ASACalendarCode.Persian:
-            calendarIdentifier = .persian
-            
-        case ASACalendarCode.RepublicOfChina:
-            calendarIdentifier = .republicOfChina
-            
-        default:
-            calendarIdentifier = .gregorian
-        } // switch calendarCode
-        
-        return calendarIdentifier
-    } // func calendarIdentifier(calendarCode:  String) -> Calendar.Identifier
+//    func equivalentCalendarIdentifier(calendarCode:  ASACalendarCode) -> Calendar.Identifier {
+//        var calendarIdentifier:  Calendar.Identifier
+//        switch calendarCode {
+//        case ASACalendarCode.Buddhist:
+//            calendarIdentifier = .buddhist
+//
+//        case ASACalendarCode.Chinese:
+//            calendarIdentifier = .chinese
+//
+//        case ASACalendarCode.Coptic:
+//            calendarIdentifier = .coptic
+//
+//        case ASACalendarCode.EthiopicAmeteAlem:
+//            calendarIdentifier = .ethiopicAmeteAlem
+//
+//        case ASACalendarCode.EthiopicAmeteMihret:
+//            calendarIdentifier = .ethiopicAmeteMihret
+//
+//        case ASACalendarCode.Gregorian:
+//            calendarIdentifier = .gregorian
+//
+//        case ASACalendarCode.Hebrew:
+//            calendarIdentifier = .hebrew
+//
+//        case ASACalendarCode.Indian:
+//            calendarIdentifier = .indian
+//
+//        case ASACalendarCode.Islamic:
+//            calendarIdentifier = .islamic
+//
+//        case ASACalendarCode.IslamicCivil:
+//            calendarIdentifier = .islamicCivil
+//
+//        case ASACalendarCode.IslamicTabular:
+//            calendarIdentifier = .islamicTabular
+//
+//        case ASACalendarCode.IslamicUmmAlQura:
+//            calendarIdentifier = .islamicUmmAlQura
+//
+//        case ASACalendarCode.ISO8601:
+//            calendarIdentifier = .gregorian
+//
+//        case ASACalendarCode.Japanese:
+//            calendarIdentifier = .japanese
+//
+//        case ASACalendarCode.Persian:
+//            calendarIdentifier = .persian
+//
+//        case ASACalendarCode.RepublicOfChina:
+//            calendarIdentifier = .republicOfChina
+//
+//        default:
+//            calendarIdentifier = .gregorian
+//        } // switch calendarCode
+//
+//        return calendarIdentifier
+//    } // func calendarIdentifier(calendarCode:  String) -> Calendar.Identifier
     
     public func dictionary() -> Dictionary<String, String?> {
         let result = [
@@ -200,7 +202,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         return temp
     } // func generic() -> ASARow
-
+    
+    class func dummy() -> ASARow {
+        let temp = ASARow()
+        temp.dummy = true
+        return temp
+    } // func dummy() -> ASARow
     
     func copy() -> ASARow {
         let tempRow = ASARow()

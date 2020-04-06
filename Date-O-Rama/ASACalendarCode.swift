@@ -75,3 +75,63 @@ extension ASACalendarCode {
         }
     } // func ISOAppleCalendar() -> Bool
 } // extension ASACalendarCode
+
+extension ASACalendarCode {
+    func equivalentCalendarIdentifier() -> Calendar.Identifier {
+           var calendarIdentifier:  Calendar.Identifier
+           switch self {
+           case ASACalendarCode.Buddhist:
+               calendarIdentifier = .buddhist
+               
+           case ASACalendarCode.Chinese:
+               calendarIdentifier = .chinese
+               
+           case ASACalendarCode.Coptic:
+               calendarIdentifier = .coptic
+               
+           case ASACalendarCode.EthiopicAmeteAlem:
+               calendarIdentifier = .ethiopicAmeteAlem
+               
+           case ASACalendarCode.EthiopicAmeteMihret:
+               calendarIdentifier = .ethiopicAmeteMihret
+               
+           case ASACalendarCode.Gregorian:
+               calendarIdentifier = .gregorian
+               
+           case ASACalendarCode.Hebrew:
+               calendarIdentifier = .hebrew
+               
+           case ASACalendarCode.Indian:
+               calendarIdentifier = .indian
+               
+           case ASACalendarCode.Islamic:
+               calendarIdentifier = .islamic
+               
+           case ASACalendarCode.IslamicCivil:
+               calendarIdentifier = .islamicCivil
+               
+           case ASACalendarCode.IslamicTabular:
+               calendarIdentifier = .islamicTabular
+               
+           case ASACalendarCode.IslamicUmmAlQura:
+               calendarIdentifier = .islamicUmmAlQura
+               
+           case ASACalendarCode.ISO8601:
+               calendarIdentifier = .gregorian
+               
+           case ASACalendarCode.Japanese:
+               calendarIdentifier = .japanese
+               
+           case ASACalendarCode.Persian:
+               calendarIdentifier = .persian
+               
+           case ASACalendarCode.RepublicOfChina:
+               calendarIdentifier = .republicOfChina
+               
+           default:
+               calendarIdentifier = .gregorian
+           } // switch calendarCode
+           
+           return calendarIdentifier
+       } // func calendarIdentifier() -> Calendar.Identifier
+} // extension ASACalendarCode
