@@ -278,10 +278,5 @@ class ASARow: NSObject, ObservableObject, Identifiable {
                 ASADetail(name: "HEADER_g", geekCode: "g")
             ]
         }
-    }
-
+    } // public func details() -> Array<ASADetail>
 } // class ASARow: NSObject
-
-
-
-
