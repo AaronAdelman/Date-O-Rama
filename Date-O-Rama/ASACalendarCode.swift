@@ -9,24 +9,25 @@
 import Foundation
 
 // Calendar codes
+// I would prefer to use a standard, but ISO has not released one as of this writing.
 enum ASACalendarCode:  String {
     case None                = "  "
-    case Buddhist            = "BE"
-    case Chinese             = "CH"
-    case Coptic              = "CO"
-    case EthiopicAmeteAlem   = "EA"
-    case EthiopicAmeteMihret = "EM"
-    case Gregorian           = "NS"
-    case Hebrew              = "AM"
-    case Indian              = "IN"
-    case Islamic             = "AH"
-    case IslamicCivil        = "IC"
-    case IslamicTabular      = "IT"
-    case IslamicUmmAlQura    = "IU"
-    case ISO8601             = "IS"
-    case Japanese            = "JA"
-    case Persian             = "AP"
-    case RepublicOfChina     = "RC"
+    case Buddhist            = "Buddhist"
+    case Chinese             = "Chinese"
+    case Coptic              = "Coptic"
+    case EthiopicAmeteAlem   = "EthiopicAmeteAlem"
+    case EthiopicAmeteMihret = "EthiopicAmeteMihret"
+    case Gregorian           = "Gregorian"
+    case Hebrew              = "Hebrew"
+    case Indian              = "Indian"
+    case Islamic             = "Islamic"
+    case IslamicCivil        = "IslamicCivil"
+    case IslamicTabular      = "IslamicTabular"
+    case IslamicUmmAlQura    = "IslamicUmmAlQura"
+    case ISO8601             = "ISO8601"
+    case Japanese            = "Japanese"
+    case Persian             = "Persian"
+    case RepublicOfChina     = "RepublicOfChina"
 } // enum ASACalendarCode:  String
 
 

@@ -39,47 +39,8 @@ extension String {
         case "e":
             return "E"
             
-        case "y":
-            return "y"
-            
-        case "M":
-            return "M"
-            
-        case "d":
-            return "d"
-            
-        case "G":
-            return "G"
-            
-        case "Y":
-            return "Y"
-            
-        case "U":
-            return "U"
-            
-        case "r":
-            return "r"
-            
-        case "Q":
-            return "Q"
-            
-        case "w":
-            return "w"
-            
-        case "W":
-            return "W"
-            
-        case "D":
-            return "D"
-            
-        case "F":
-            return "F"
-            
-        case "g":
-            return "g"
-            
         default:
-            return nil
+            return "\(firstCharacter!)"
         } // switch firstCharacter
     } // func relevantSection() -> String?
     
