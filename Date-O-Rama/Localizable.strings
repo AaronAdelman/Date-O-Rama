@@ -53,7 +53,7 @@
 "ITEM_M_M"     = "Numeric: 1 digit";
 "ITEM_M_MM"    = "Numeric: 2 digits";
 
-"HEADER_d" = "Day of month";
+"HEADER_d" = "Day";
 "ITEM_d_"   = "None";
 "ITEM_d_d"  = "Minimum digits";
 "ITEM_d_dd" = "2 digits";

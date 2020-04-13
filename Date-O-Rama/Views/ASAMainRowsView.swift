@@ -11,7 +11,6 @@ import Combine
 
 struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
-//    @State var rows:  Array<ASARow> = [ASARow.test()]
     @State var dummyRow:  ASARow = ASARow.dummy()
 
     var body: some View {
@@ -52,7 +51,7 @@ struct ASAMainRowsView: View {
             DetailView(selectedRow: self.dummyRow)
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
-}
+} // struct ASAMainRowsView
 
 
 struct ASADetailCell:  View {
@@ -63,14 +62,10 @@ struct ASADetailCell:  View {
             Text(verbatim:  title).bold()
             Spacer()
             Text(verbatim:  detail)
-        }
-    }
-}
+        } // HStack
+    } // var body
+} // struct ASADetailCell
 
-//struct ASADetail {
-//    var name:  String
-//    var geekCode:  String
-//}
 
 struct DetailView: View {
      @ObservedObject var selectedRow:  ASARow

@@ -22,7 +22,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     @Published var dummy = false
     @Published var calendarCode:  ASACalendarCode = .Gregorian {
         didSet {
-//            self.calendarIdentifier = equivalentCalendarIdentifier(calendarCode: self.calendarCode)
             self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
 
             if self.calendarCode.usesDateFormatter() {
@@ -34,6 +33,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
                 // Need to use an ISO8601DateFormatter
                 ISODateFormatter.timeZone = TimeZone.current
                 self.geekFormat = self.genericISOGeekFormat
+                self.majorDateFormat = .localizedLDML
             }
         } // didset
     } // var calendarCode:  String
