@@ -279,4 +279,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             ]
         }
     } // public func details() -> Array<ASADetail>
+    
+    public func supportsLocales() -> Bool {
+        if self.calendarCode == .ISO8601 {
+            return false
+        } else {
+            return true
+        }
+    } // func supportsLocales() -> Bool
 } // class ASARow: NSObject
