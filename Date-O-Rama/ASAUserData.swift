@@ -11,5 +11,14 @@ import Combine
 import SwiftUI
 
 final class ASAUserData:  ObservableObject {
-    @Published var mainRows:  Array<ASARow> = [ASARow.generic()]
+    @Published var mainRows:  Array<ASARow>
+//        = [ASARow.generic()]
+    
+    init() {
+        self.mainRows = ASAConfiguration.rowArray(key: .app)
+    }
+    
+    public func savePreferences() {
+        ASAConfiguration.saveRowArray(rowArray: self.mainRows, key: .app)
+    }
 } // class ASAUserDate

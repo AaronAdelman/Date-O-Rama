@@ -47,7 +47,7 @@ class ASAConfiguration: NSObject {
     
     // MARK: -
     
-    public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
+    public class func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
         var temp:  Array<Dictionary<String, String?>> = []
         for row in rowArray {
             let dictionary = row.dictionary()
@@ -58,7 +58,7 @@ class ASAConfiguration: NSObject {
         defaults?.synchronize()
     } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
     
-    public func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+    public class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
         let temp = defaults?.array(forKey: key.rawValue)
         var tempArray:  Array<ASARow> = []
         

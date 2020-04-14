@@ -22,15 +22,20 @@ struct ASAMainRowsView: View {
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
+                                self.userData.savePreferences()
                         }
                     ) {
-                        Text(row.dateString(now: Date()))
+                        VStack(alignment: .leading) {
+                            Text(row.dateString(now: Date())).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                            Text(row.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                        }
                     }
                 }
                 .onDelete { indices in
                     indices.forEach {
                         debugPrint("\(#file) \(#function)")
                         self.userData.mainRows.remove(at: $0) }
+                    self.userData.savePreferences()
                 }
             }
             .navigationBarTitle(Text("Date-O-Rama"))
@@ -40,7 +45,8 @@ struct ASAMainRowsView: View {
                     action: {
                         withAnimation {
                             debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
-                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
+                            self.userData.mainRows.insert(ASARow.generic(), at: self.userData.mainRows.count)
+                            self.userData.savePreferences()
                             debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
                         }
                 }
