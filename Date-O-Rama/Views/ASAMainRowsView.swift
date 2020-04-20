@@ -29,7 +29,7 @@ struct ASAMainRowsView: View {
                     ) {
                         VStack(alignment: .leading) {
                             Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                            Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                            Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(2)
                         }
                     }
                 }

@@ -8,22 +8,22 @@
 
 // Calendar identifiers
 // ISO doesn’t seem to have a set of codes for calendars, so I had to invent one.
-"Buddhist"            = "Buddhist";
+"Buddhist"            = "Buddhist (Thai Solar)";
 "Chinese"             = "Chinese";
 "Coptic"              = "Coptic";
-"EthiopicAmeteAlem"   = "Ethiopic Amete Alem";
-"EthiopicAmeteMihret" = "Ethiopic Amete Mihret";
+"EthiopicAmeteAlem"   = "Ethiopic Amete Alem (Year of the World)";
+"EthiopicAmeteMihret" = "Ethiopic Amete Mihret (Year of Grace)";
 "Gregorian"           = "Gregorian";
 "Hebrew"              = "Hebrew (Jewish)";
-"Indian"              = "Indian";
+"Indian"              = "Indian (Shalivahana Shaka)";
 "Islamic"             = "Islamic";
 "IslamicCivil"        = "Islamic Civil";
 "IslamicTabular"      = "Islamic Tabular";
 "IslamicUmmAlQura"    = "Islamic Umm Al-Qura";
 "ISO8601"             = "ISO 8601";
 "Japanese"            = "Japanese";
-"Persian"             = "Persian";
-"RepublicOfChina"     = "Republic of China";
+"Persian"             = "Persian (Solar Hijri)";
+"RepublicOfChina"     = "Republic of China (Minguo)";
 
 "DEFAULT_LOCALE" = "Default";
 
