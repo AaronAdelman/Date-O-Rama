@@ -11,7 +11,7 @@ import Foundation
 // Calendar codes
 // I would prefer to use a standard, but ISO has not released one as of this writing.
 enum ASACalendarCode:  String {
-    case None                = "  "
+//    case None                = "  "
     case Buddhist            = "Buddhist"
     case Chinese             = "Chinese"
     case Coptic              = "Coptic"
