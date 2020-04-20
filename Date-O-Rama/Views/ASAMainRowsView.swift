@@ -35,6 +35,7 @@ struct ASAMainRowsView: View {
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in
                     self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
+                    self.userData.savePreferences()
                 }
                 .onDelete { indices in
                     indices.forEach {
