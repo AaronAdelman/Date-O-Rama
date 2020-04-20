@@ -62,22 +62,22 @@ struct ASAFormatPickerView: View {
             if row.calendarCode == ASACalendarCode.ISO8601 {
                 ComponentsForEach()
             } else {
-                Section(header:  Text("HEADER_Format")) {
+                Section(header:  Text("HEADER_Date_format")) {
                     ASAMajorDateFormatCell(majorDateFormat: .full, row: row)
                     ASAMajorDateFormatCell(majorDateFormat: .long, row: row)
                     ASAMajorDateFormatCell(majorDateFormat: .medium, row: row)
                     ASAMajorDateFormatCell(majorDateFormat: .short, row: row)
                     ASAMajorDateFormatCell(majorDateFormat: .localizedLDML, row: row)
-                    ASAMajorDateFormatCell(majorDateFormat: .rawLDML, row: row)
+//                    ASAMajorDateFormatCell(majorDateFormat: .rawLDML, row: row)
                 } // Section
                 if row.majorDateFormat == .localizedLDML {
                     ComponentsForEach()
                 }
-                if row.majorDateFormat == .rawLDML {
-                    Section(header:  Text("LDML")) {
-                        Text("Quux")
-                    }
-                }
+//                if row.majorDateFormat == .rawLDML {
+//                    Section(header:  Text("LDML")) {
+//                        Text("Quux")
+//                    }
+//                }
             }
         }
         .navigationBarTitle(Text(row.dateString(now: Date()) ))
@@ -85,7 +85,7 @@ struct ASAFormatPickerView: View {
 }
 
 struct ASAMajorDateFormatCell: View {
-    let majorDateFormat: ASAMajorDateFormat
+    let majorDateFormat: ASAMajorFormat
     
     @ObservedObject var row:  ASARow
 
@@ -110,7 +110,7 @@ struct ASAComponentCell: View {
     @ObservedObject var row: ASARow
     
     func selectedItem(row:  ASARow, headerCode:  String) -> String {
-        let components = row.geekFormat.components(calendarCode: row.calendarCode)
+        let components = row.dateGeekFormat.components(calendarCode: row.calendarCode)
         let selection = components[headerCode]
         return selection ?? ""
     }
@@ -125,11 +125,11 @@ struct ASAComponentCell: View {
             }
         }
         .onTapGesture {
-            debugPrint("\(#file) \(#function) Geek format before = \(self.row.geekFormat)")
-            var components = self.row.geekFormat.components(calendarCode: self.row.calendarCode)
+            debugPrint("\(#file) \(#function) Geek format before = \(self.row.dateGeekFormat)")
+            var components = self.row.dateGeekFormat.components(calendarCode: self.row.calendarCode)
             components[self.headerCode] = self.item
-            self.row.geekFormat = String.geekFormat(components: components)
-            debugPrint("\(#file) \(#function) Geek format after = \(self.row.geekFormat)")
+            self.row.dateGeekFormat = String.geekFormat(components: components)
+            debugPrint("\(#file) \(#function) Geek format after = \(self.row.dateGeekFormat)")
         }
     }  // var body
 } // struct ASAComponentCell

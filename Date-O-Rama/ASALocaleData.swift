@@ -36,12 +36,62 @@ struct ASALocaleData {
     var records:  Array<ASALocaleRecord> = []
     
     init() {
-        var temp:  Array<ASALocaleRecord> = []
+        let standardLocaleIdentifiers = [
+            "ar",
+            "ca",
+            "cs",
+            "da",
+            "de",
+            "el",
+            "en_AU",
+            "en_CA",
+            "en_GB",
+            "en",
+            "es_419",
+            "es",
+            "fi",
+            "fr_CA",
+            "fr",
+            "he",
+            "hi",
+            "hr",
+            "hu",
+            "id",
+            "it",
+            "ja",
+            "ko",
+            "ms",
+            "nl",
+            "no",
+            "pl",
+            "pt_PT",
+            "pt",
+            "ro",
+            "ru",
+            "sk",
+            "sv",
+            "th",
+            "tr",
+            "uk",
+            "vi",
+            "zh_CN",
+            "zh_HK",
+            "zh_TW"
+        ]
+        let sortedStandardLocaleRecords = self.sortedLocalizedRecords(identifiers: standardLocaleIdentifiers)
+        
+        let defaultRecords: [ASALocaleRecord] = [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))]
         let availableLocaleIdentifiers = Locale.availableIdentifiers
-        for identifier in availableLocaleIdentifiers {
+        let sortedAvailableLocaleRecords = self.sortedLocalizedRecords(identifiers: availableLocaleIdentifiers)
+        self.records = defaultRecords + sortedStandardLocaleRecords + sortedAvailableLocaleRecords
+    } // init()
+    
+    private func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord> {
+        var temp:  Array<ASALocaleRecord> = []
+        for identifier in identifiers {
             let record = ASALocaleRecord(id: identifier, nativeName: identifier.asSelfLocalizedLocaleIdentifier())
             temp.append(record)
         } // for identifier in availableLocaleIdentifiers
-        self.records = [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))] + temp.sorted(by: {$0.nativeName < $1.nativeName})
-    } // init()
+        return temp.sorted(by: {$0.nativeName < $1.nativeName})
+    }
 } // struct ASALocaleData

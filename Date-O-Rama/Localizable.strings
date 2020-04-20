@@ -119,16 +119,20 @@
 "ITEM_-_"   = "None";
 "ITEM_-_-"  = "Present";
 
+"HEADER_Row" = "Row";
+
 "HEADER_Calendar" = "Calendar";
 
 "HEADER_Locale"   = "Locale";
 
-"HEADER_Format"   = "Format";
-"ITEM_Full"       = "Full";
-"ITEM_Long"       = "Long";
-"ITEM_Medium"     = "Medium";
-"ITEM_Short"      = "Short";
-"ITEM_Components" = "Components";
-"ITEM_Raw_LDML"   = "Raw LDML";
+"HEADER_Date_format" = "Date format";
+"ITEM_Full"          = "Full";
+"ITEM_Long"          = "Long";
+"ITEM_Medium"        = "Medium";
+"ITEM_Short"         = "Short";
+"ITEM_Components"    = "Components";
+"ITEM_Raw_LDML"      = "Raw LDML";
+
+"HEADER_Date" = "Date";
 
 "HEADER_MODULAR_LARGE" = "Modular large";

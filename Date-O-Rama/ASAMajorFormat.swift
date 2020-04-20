@@ -8,16 +8,16 @@
 
 import Foundation
 
-enum ASAMajorDateFormat:  String {
+enum ASAMajorFormat:  String {
     case short         = "short"
     case medium        = "medium"
     case long          = "long"
     case full          = "full"
     case localizedLDML = "loc"
-    case rawLDML       = "raw"
+//    case rawLDML       = "raw"
 } // enum ASAMajorDateFormat
 
-extension ASAMajorDateFormat {
+extension ASAMajorFormat {
     func localizedItemName() -> String {
         var unlocalizedString = ""
         switch self {
@@ -31,8 +31,8 @@ extension ASAMajorDateFormat {
             unlocalizedString = "ITEM_Full"
         case .localizedLDML:
             unlocalizedString = "ITEM_Components"
-        case .rawLDML:
-            unlocalizedString = "ITEM_Raw_LDML"
+//        case .rawLDML:
+//            unlocalizedString = "ITEM_Raw_LDML"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String

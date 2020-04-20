@@ -32,7 +32,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             } else if self.calendarCode.ISO8601AppleCalendar() {
                 // Need to use an ISO8601DateFormatter
                 ISODateFormatter.timeZone = TimeZone.current
-                self.geekFormat = self.genericISOGeekFormat
+                self.dateGeekFormat = self.genericISOGeekFormat
                 self.majorDateFormat = .localizedLDML
             }
         } // didset
@@ -48,7 +48,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         } // didSet
     } // var localeIdentifier:  String
     
-    @Published var majorDateFormat:  ASAMajorDateFormat = .full {
+    @Published var majorDateFormat:  ASAMajorFormat = .full {
         didSet {
             if calendarCode.usesDateFormatter() {
                 dateFormatter.dateStyle = .full
@@ -56,30 +56,30 @@ class ASARow: NSObject, ObservableObject, Identifiable {
                 switch self.majorDateFormat {
                 case .full:
                     dateFormatter.dateStyle = .full
-                    self.geekFormat = "eee, d MMM y"
+                    self.dateGeekFormat = "eee, d MMM y"
                     
                 case .long:
                     dateFormatter.dateStyle = .long
-                    self.geekFormat = "eee, d MMM y"
+                    self.dateGeekFormat = "eee, d MMM y"
                     
                 case .medium:
                     dateFormatter.dateStyle = .medium
-                    self.geekFormat = "eee, d MMM y"
+                    self.dateGeekFormat = "eee, d MMM y"
 
                 case .short:
                     dateFormatter.dateStyle = .short
-                    self.geekFormat = "eee, d MMM y"
+                    self.dateGeekFormat = "eee, d MMM y"
 
                 default:
                     dateFormatter.dateStyle = .full
-                    if self.geekFormat.isEmpty {
-                        self.geekFormat = "eee, d MMM y"
+                    if self.dateGeekFormat.isEmpty {
+                        self.dateGeekFormat = "eee, d MMM y"
                     }
                } // switch newValue
             } else if calendarCode.ISO8601AppleCalendar() {
                 switch calendarCode {
                 case ASACalendarCode.ISO8601:
-                    self.geekFormat = self.genericISOGeekFormat
+                    self.dateGeekFormat = self.genericISOGeekFormat
                     ISODateFormatter.formatOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
                                         
                 default:
@@ -88,7 +88,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             }
         } // didset
     } // var majorDateFormat
-    @Published var geekFormat:  String = "eMMMdy"
+    @Published var dateGeekFormat:  String = "eMMMdy"
     
     var calendarIdentifier:  Calendar.Identifier?
     
@@ -102,8 +102,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         let result = [
                 "locale":  localeIdentifier,
                 "calendar":  calendarCode.rawValue,
-                "majorDateFormat":  majorDateFormat.rawValue,
-                "geekFormat":  geekFormat
+                "majorDateFormat":  majorDateFormat.rawValue ,
+                "geekFormat":  dateGeekFormat
         ]
         return result
     } // public func dictionary() -> Dictionary<String, String?>
@@ -123,12 +123,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         let majorDateFormat = dictionary["majorDateFormat"]
         if majorDateFormat != nil {
-            newRow.majorDateFormat = ASAMajorDateFormat(rawValue: majorDateFormat!!)!
+            newRow.majorDateFormat = ASAMajorFormat(rawValue: majorDateFormat!!)!
         }
         
         let geekFormat = dictionary["geekFormat"]
         if geekFormat != nil {
-            newRow.geekFormat = geekFormat!!
+            newRow.dateGeekFormat = geekFormat!!
         }
         
         return newRow
@@ -148,7 +148,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         temp.calendarCode = ASACalendarCode.Gregorian
         temp.localeIdentifier = "en_US"
         temp.majorDateFormat = .localizedLDML
-        temp.geekFormat = "eeeyMMMd"
+        temp.dateGeekFormat = "eeeyMMMd"
         
         return temp
     } // func generic() -> ASARow
@@ -164,7 +164,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         tempRow.calendarCode = self.calendarCode
         tempRow.localeIdentifier = self.localeIdentifier
         tempRow.majorDateFormat = self.majorDateFormat
-        tempRow.geekFormat = self.geekFormat
+        tempRow.dateGeekFormat = self.dateGeekFormat
         return tempRow
     } // func copy() -> ASARow
     
@@ -178,8 +178,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         var dateString:  String
         
+        // FOR TESTING PURPOSES
+//        self.dateFormatter.timeStyle = .medium
+        // END TESTING
+        
         if self.calendarCode.ISO8601AppleCalendar() {
-            let options = self.geekFormat.chop()
+            let options = self.dateGeekFormat.chop()
             var formatterOptions:  ISO8601DateFormatter.Options = []
             for o in options {
                 switch o {
@@ -201,13 +205,13 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             return dateString
         }
         
-        if self.majorDateFormat == .rawLDML {
-            self.dateFormatter.dateFormat = self.geekFormat
-            return self.dateFormatter.string(from: now)
-        }
+//        if self.majorDateFormat == .rawLDML {
+//            self.dateFormatter.dateFormat = self.geekFormat
+//            return self.dateFormatter.string(from: now)
+//        }
         
         if self.majorDateFormat == .localizedLDML {
-            let dateFormat = DateFormatter.dateFormat(fromTemplate:self.geekFormat, options: 0, locale: self.dateFormatter.locale)!
+            let dateFormat = DateFormatter.dateFormat(fromTemplate:self.dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
             return self.dateFormatter.string(from: now)
         }

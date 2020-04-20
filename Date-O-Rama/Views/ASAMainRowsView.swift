@@ -12,13 +12,15 @@ import Combine
 struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var dummyRow:  ASARow = ASARow.dummy()
-
+    @State var now = Date()
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
-                        destination: DetailView(selectedRow: row )
+                        destination: DetailView(selectedRow: row)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
@@ -26,10 +28,13 @@ struct ASAMainRowsView: View {
                         }
                     ) {
                         VStack(alignment: .leading) {
-                            Text(row.dateString(now: Date())).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                            Text(row.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                            Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                            Text(verbatim:  row.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                         }
                     }
+                }
+                .onMove { (source: IndexSet, destination: Int) -> Void in
+                    self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
                 }
                 .onDelete { indices in
                     indices.forEach {
@@ -56,6 +61,13 @@ struct ASAMainRowsView: View {
             )
             DetailView(selectedRow: self.dummyRow)
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+            .onReceive(timer) { input in
+                let midnight = self.now.nextMidnight()
+                if input > midnight {
+                    debugPrint("\(#file) \(#function) After midnight (\(midnight)), updating date to \(input)…")
+                    self.now = Date()
+                }
+        }
     }
 } // struct ASAMainRowsView
 
@@ -74,26 +86,26 @@ struct ASADetailCell:  View {
 
 
 struct DetailView: View {
-     @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASARow
     
     var body: some View {
         List {
             //            if selectedRow != nil {
             if selectedRow.dummy != true {
-                Section(header:  Text("Row")) {
+                Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                     NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
-                        ASADetailCell(title: "Calendar", detail: self.selectedRow.calendarCode.localizedName())
+                        ASADetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendarCode.localizedName())
                     }
                     if selectedRow.supportsLocales() {
                         NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
-                            ASADetailCell(title:  "Locale", detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+                            ASADetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                         }
                     }
                     NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
-                        ASADetailCell(title:  "Format", detail: selectedRow.majorDateFormat.localizedItemName())
+                        ASADetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }
-                Section(header:  Text("Date")) {
+                Section(header:  Text("HEADER_Date")) {
                     ForEach(selectedRow.details(), id: \.name) {
                         detail
                         in
@@ -105,7 +117,7 @@ struct DetailView: View {
                     }
                 }
             } else {
-//                Text("Detail view content goes here")
+                //                Text("Detail view content goes here")
                 EmptyView()
             }
         }.navigationBarTitle(Text(selectedRow.dateString(now: Date()) ))

@@ -24,8 +24,9 @@
 		A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
 		A5C77C3E243364CB00CFEE47 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C3D243364CB00CFEE47 /* Localizable.strings */; };
 		A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */; };
+		A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A5D62860243B79F300F3CC19 /* ASAFormatPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASAFormatPickerView.swift */; };
-		A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */; };
+		A5D62862243B80F100F3CC19 /* ASAMajorFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASAMajorFormat.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A58AE62B244C6DFF00A64B67 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
 		A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "✨Date-O-Rama✨.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +73,9 @@
 		A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleData.swift; sourceTree = "<group>"; };
 		A5C77C3D243364CB00CFEE47 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarPickerView.swift; sourceTree = "<group>"; };
+		A5CB86402448E03F00DB27A9 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A5D6285F243B79F300F3CC19 /* ASAFormatPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAFormatPickerView.swift; sourceTree = "<group>"; };
-		A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMajorDateFormat.swift; sourceTree = "<group>"; };
+		A5D62861243B80F100F3CC19 /* ASAMajorFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMajorFormat.swift; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A58AE62A244C6DFF00A64B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A58AE62B244C6DFF00A64B67 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5BDB7C7244D9F760027704F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
+				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A5C77BF02433361400CFEE47 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +128,7 @@
 				A5C77C122433361900CFEE47 /* Date-O-RamaTests */,
 				A5C77C1D2433361900CFEE47 /* Date-O-RamaUITests */,
 				A5C77BFA2433361400CFEE47 /* Products */,
+				A58AE62A244C6DFF00A64B67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,17 +150,17 @@
 				A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */,
 				A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
-				A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */,
+				A5D62861243B80F100F3CC19 /* ASAMajorFormat.swift */,
 				A5C77C2E2433371700CFEE47 /* ASARow.swift */,
 				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
+				A5BDB7C7244D9F760027704F /* Extensions */,
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
 				A5C77C3D243364CB00CFEE47 /* Localizable.strings */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
 				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
-				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A5C77C452434723300CFEE47 /* Views */,
 			);
 			path = "Date-O-Rama";
@@ -325,7 +346,8 @@
 				A5D62860243B79F300F3CC19 /* ASAFormatPickerView.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
-				A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */,
+				A5D62862243B80F100F3CC19 /* ASAMajorFormat.swift in Sources */,
+				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
 				A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */,
 				A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */,
 				A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */,
@@ -430,6 +452,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -483,6 +506,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
