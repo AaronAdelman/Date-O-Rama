@@ -13,7 +13,7 @@ struct ASAFormatPickerView: View {
     
     var model:  Array<ASAComponentsPickerSection> {
         get {
-            if self.row.calendarCode == ASACalendarCode.ISO8601 {
+            if self.row.calendar.calendarCode == ASACalendarCode.ISO8601 {
                 return [
                     ASAComponentsPickerSection(headerCode: "y", items: ["", "yyyy"]),
                     ASAComponentsPickerSection(headerCode: "M", items: ["", "MM"]),
@@ -59,7 +59,7 @@ struct ASAFormatPickerView: View {
     
     var body: some View {
         List {
-            if row.calendarCode == ASACalendarCode.ISO8601 {
+            if row.calendar.calendarCode == ASACalendarCode.ISO8601 {
                 ComponentsForEach()
             } else {
                 Section(header:  Text("HEADER_Date_format")) {
@@ -110,7 +110,7 @@ struct ASAComponentCell: View {
     @ObservedObject var row: ASARow
     
     func selectedItem(row:  ASARow, headerCode:  String) -> String {
-        let components = row.dateGeekFormat.components(calendarCode: row.calendarCode)
+        let components = row.dateGeekFormat.components(calendarCode: row.calendar.calendarCode)
         let selection = components[headerCode]
         return selection ?? ""
     }
@@ -126,7 +126,7 @@ struct ASAComponentCell: View {
         }
         .onTapGesture {
             debugPrint("\(#file) \(#function) Geek format before = \(self.row.dateGeekFormat)")
-            var components = self.row.dateGeekFormat.components(calendarCode: self.row.calendarCode)
+            var components = self.row.dateGeekFormat.components(calendarCode: self.row.calendar.calendarCode)
             components[self.headerCode] = self.item
             self.row.dateGeekFormat = String.geekFormat(components: components)
             debugPrint("\(#file) \(#function) Geek format after = \(self.row.dateGeekFormat)")

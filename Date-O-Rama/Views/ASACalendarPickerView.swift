@@ -35,7 +35,7 @@ struct ASACalendarPickerView: View {
             ForEach(self.calendarCodes, id: \.self) {
                 calendarCode
                 in
-                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendarCode)
+                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode)
             }
         }
         .navigationBarTitle(Text(row.dateString(now: Date()) ))

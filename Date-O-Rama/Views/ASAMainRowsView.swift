@@ -29,7 +29,7 @@ struct ASAMainRowsView: View {
                     ) {
                         VStack(alignment: .leading) {
                             Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                            Text(verbatim:  row.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                            Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                         }
                     }
                 }
@@ -94,7 +94,7 @@ struct DetailView: View {
             if selectedRow.dummy != true {
                 Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                     NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
-                        ASADetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendarCode.localizedName())
+                        ASADetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                     }
                     if selectedRow.supportsLocales() {
                         NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {

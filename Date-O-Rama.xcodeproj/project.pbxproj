@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
+		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
+		A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */; };
 		A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */; };
@@ -49,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		A58AE62B244C6DFF00A64B67 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
+		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
+		A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAISO8601Calendar.swift; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "✨Date-O-Rama✨.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,14 +127,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A5BDB7CE244DAE3E0027704F /* Calendars */ = {
+			isa = PBXGroup;
+			children = (
+				A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */,
+				A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */,
+			);
+			path = Calendars;
+			sourceTree = "<group>";
+		};
 		A5C77BF02433361400CFEE47 = {
 			isa = PBXGroup;
 			children = (
 				A5C77BFB2433361400CFEE47 /* Date-O-Rama */,
 				A5C77C122433361900CFEE47 /* Date-O-RamaTests */,
 				A5C77C1D2433361900CFEE47 /* Date-O-RamaUITests */,
-				A5C77BFA2433361400CFEE47 /* Products */,
 				A58AE62A244C6DFF00A64B67 /* Frameworks */,
+				A5C77BFA2433361400CFEE47 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +163,7 @@
 				A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */,
 				A5C77BFC2433361400CFEE47 /* AppDelegate.swift */,
 				A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */,
+				A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */,
 				A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A5D62861243B80F100F3CC19 /* ASAMajorFormat.swift */,
@@ -155,6 +171,7 @@
 				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
+				A5BDB7CE244DAE3E0027704F /* Calendars */,
 				A5BDB7C7244D9F760027704F /* Extensions */,
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
@@ -340,14 +357,17 @@
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
 				A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */,
+				A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */,
 				A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
+				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASAFormatPickerView.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASAMajorFormat.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
+				A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */,
 				A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */,
 				A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */,
 				A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */,
