@@ -7,12 +7,11 @@
 */
 
 // Calendar identifiers
-// ISO doesn’t seem to have a set of codes for calendars, so I had to invent one.
 "Buddhist"            = "Buddhist (Thai Solar)";
 "Chinese"             = "Chinese";
 "Coptic"              = "Coptic";
-"EthiopicAmeteAlem"   = "Ethiopic Amete Alem (Year of the World)";
-"EthiopicAmeteMihret" = "Ethiopic Amete Mihret (Year of Grace)";
+"EthiopicAmeteAlem"   = "Ethiopic Amete Alem";
+"EthiopicAmeteMihret" = "Ethiopic Amete Mihret";
 "Gregorian"           = "Gregorian";
 "Hebrew"              = "Hebrew (Jewish)";
 "Indian"              = "Indian (Shalivahana Shaka)";

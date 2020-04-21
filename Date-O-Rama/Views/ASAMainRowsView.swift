@@ -20,7 +20,7 @@ struct ASAMainRowsView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
-                        destination: DetailView(selectedRow: row)
+                        destination: ASACalendarDetailView(selectedRow: row, now: self.now)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
@@ -60,7 +60,7 @@ struct ASAMainRowsView: View {
                     Image(systemName: "plus")
                 }
             )
-            DetailView(selectedRow: self.dummyRow)
+            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now)
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             .onReceive(timer) { input in
                 let midnight = self.now.nextMidnight()
@@ -71,60 +71,6 @@ struct ASAMainRowsView: View {
         }
     }
 } // struct ASAMainRowsView
-
-
-struct ASADetailCell:  View {
-    var title:  String
-    var detail:  String
-    var body:  some View {
-        HStack {
-            Text(verbatim:  title).bold()
-            Spacer()
-            Text(verbatim:  detail)
-        } // HStack
-    } // var body
-} // struct ASADetailCell
-
-
-struct DetailView: View {
-    @ObservedObject var selectedRow:  ASARow
-    
-    var body: some View {
-        List {
-            //            if selectedRow != nil {
-            if selectedRow.dummy != true {
-                Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                    NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
-                        ASADetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
-                    }
-                    if selectedRow.supportsLocales() {
-                        NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
-                            ASADetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
-                        }
-                    }
-                    NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
-                        ASADetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
-                    }
-                }
-                Section(header:  Text("HEADER_Date")) {
-                    ForEach(selectedRow.details(), id: \.name) {
-                        detail
-                        in
-                        HStack {
-                            Text(NSLocalizedString(detail.name, comment: "")).bold()
-                            Spacer()
-                            Text(verbatim:  (self.selectedRow.dateString(now: Date(), LDMLString: detail.geekCode)) )
-                        }
-                    }
-                }
-            } else {
-                //                Text("Detail view content goes here")
-                EmptyView()
-            }
-        }.navigationBarTitle(Text(selectedRow.dateString(now: Date()) ))
-    }
-}
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

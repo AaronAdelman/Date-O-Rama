@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */; };
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
 		A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		A58AE62B244C6DFF00A64B67 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailView.swift; sourceTree = "<group>"; };
 		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
 		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
 		A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAISO8601Calendar.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */,
 				A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */,
 				A5D6285F243B79F300F3CC19 /* ASAFormatPickerView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */,
@@ -356,6 +359,7 @@
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
+				A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */,
 				A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */,
 				A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */,
 				A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */,
