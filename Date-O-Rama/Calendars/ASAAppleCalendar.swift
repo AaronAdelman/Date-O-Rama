@@ -61,41 +61,51 @@ class ASAAppleCalendar:  ASACalendar {
         return "Error!"
     } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateString(now: Date, LDMLString: String, location: CLLocation?) -> String {
+    func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String {
         // TODO:  Update when times are supported!
         
         self.dateFormatter.dateFormat = LDMLString
         let result = self.dateFormatter.string(from: now)
         
         return result
-    } // func dateString(now: Date, LDMLString: String, location: CLLocation?) -> String
+    } // func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
     func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String {
         return "eee, d MMM y"
-    }
-    
+    } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
     func details() -> Array<ASADetail> {
         return [
-                        ASADetail(name: "HEADER_G", geekCode: "GGGG"),
-                        ASADetail(name: "HEADER_y", geekCode: "y"),
-                        ASADetail(name: "HEADER_M", geekCode: "MMMM"),
-                        ASADetail(name: "HEADER_d", geekCode: "d"),
-                        ASADetail(name: "HEADER_E", geekCode: "eeee"),
-                        ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                        ASADetail(name: "HEADER_Y", geekCode: "Y"),
-                        ASADetail(name: "HEADER_w", geekCode: "w"),
-                        ASADetail(name: "HEADER_W", geekCode: "W"),
-                        ASADetail(name: "HEADER_F", geekCode: "F"),
-                        ASADetail(name: "HEADER_D", geekCode: "D"),
-                        ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-                        ASADetail(name: "HEADER_r", geekCode: "r"),
-                        ASADetail(name: "HEADER_g", geekCode: "g")
-                    ]
-    }
+            ASADetail(name: "HEADER_G", geekCode: "GGGG"),
+            ASADetail(name: "HEADER_y", geekCode: "y"),
+            ASADetail(name: "HEADER_M", geekCode: "MMMM"),
+            ASADetail(name: "HEADER_d", geekCode: "d"),
+            ASADetail(name: "HEADER_E", geekCode: "eeee"),
+            ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
+            ASADetail(name: "HEADER_Y", geekCode: "Y"),
+            ASADetail(name: "HEADER_w", geekCode: "w"),
+            ASADetail(name: "HEADER_W", geekCode: "W"),
+            ASADetail(name: "HEADER_F", geekCode: "F"),
+            ASADetail(name: "HEADER_D", geekCode: "D"),
+            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+            ASADetail(name: "HEADER_r", geekCode: "r"),
+            ASADetail(name: "HEADER_g", geekCode: "g")
+        ]
+    } // func details() -> Array<ASADetail>
     
     func supportsLocales() -> Bool {
         return true
-    }
-
+    } // func supportsLocales() -> Bool
+    
+    func transitionToNextDay(now:  Date, location:  CLLocation?) -> Date {
+        return now.nextMidnight(timeZone:  TimeZone.autoupdatingCurrent)
+    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation?) -> Date
+    
+    func supportsDateFormats() -> Bool {
+        return true
+    } // func supportsDateFormats() -> Bool
+    
+    func supportsTimeZones() -> Bool {
+        return true
+    } // func supportsTimeZones() -> Bool
 } // class ASAAppleCalendar

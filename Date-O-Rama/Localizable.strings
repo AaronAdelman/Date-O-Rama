@@ -23,6 +23,15 @@
 "Japanese"            = "Japanese";
 "Persian"             = "Persian (Solar Hijri)";
 "RepublicOfChina"     = "Republic of China (Minguo)";
+"JulianDay"           = "Julian Day";
+"ReducedJulianDay"    = "Reduced Julian Day";
+"DublinJulianDay"     = "Dublin Julian Day";
+"ModifiedJulianDay"   = "Modified Julian Day";
+"TruncatedJulianDay"  = "Truncated Julian Day";
+"CNESJulianDay"       = "CNES Julian Day";
+"CCSDSJulianDay"      = "CCSDS Julian Day";
+"LilianDate"          = "Lilian Date";
+"RataDie"             = "Rata Die";
 
 "DEFAULT_LOCALE" = "Default";
 
@@ -132,6 +141,12 @@
 "ITEM_Components"    = "Components";
 "ITEM_Raw_LDML"      = "Raw LDML";
 
-"HEADER_Date" = "Date";
+"HEADER_Date" = "Date components";
+
+"HEADER_Other" = "Other";
+"ITEM_NEXT_DATE_TRANSITION" = "Next date transition";
+
+"HEADER_TIME_ZONE" = "Time zone";
+
 
 "HEADER_MODULAR_LARGE" = "Modular large";

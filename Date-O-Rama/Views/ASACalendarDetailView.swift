@@ -23,7 +23,7 @@ struct ASACalendarDetailCell:  View {
 
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
-     var now:  Date
+    var now:  Date
     
     var body: some View {
         List {
@@ -38,26 +38,34 @@ struct ASACalendarDetailView: View {
                             ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                         }
                     }
-                    NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
-                        ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
-                    }
-                }
-                Section(header:  Text("HEADER_Date")) {
-                    ForEach(selectedRow.details(), id: \.name) {
-                        detail
-                        in
-                        HStack {
-                            Text(NSLocalizedString(detail.name, comment: "")).bold()
-                            Spacer()
-                            Text(verbatim:  (self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode)) )
+                    if selectedRow.calendar.supportsDateFormats() {
+                        NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
+                            ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                         }
                     }
+                    if selectedRow.calendar.supportsTimeZones() {
+                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone.autoupdatingCurrent)")
+                    } else {
+                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!)")
+                    }
+                }
+                if selectedRow.calendar.details().count > 0 {
+                    Section(header:  Text("HEADER_Date")) {
+                        ForEach(selectedRow.details(), id: \.name) {
+                            detail
+                            in
+                            ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode))
+                        }
+                    }
+                }
+                Section(header:  Text("HEADER_Other")) {
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: "\(self.selectedRow.calendar.transitionToNextDay(now: self.now, location: nil))")
                 }
             } else {
                 //                Text("Detail view content goes here")
                 EmptyView()
             }
-        }.navigationBarTitle(Text(selectedRow.dateString(now: self.now) ))
+        }.navigationBarTitle(Text(selectedRow.dummy ? "" : selectedRow.dateString(now: self.now) ))
     }
 }
 

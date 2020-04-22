@@ -25,7 +25,16 @@ struct ASACalendarPickerView: View {
         .ISO8601,
         .Japanese,
         .Persian,
-        .RepublicOfChina
+        .RepublicOfChina,
+        .JulianDay,
+        .ReducedJulianDay,
+        .ModifiedJulianDay,
+        .TruncatedJulianDay,
+        .DublinJulianDay,
+        .CNESJulianDay,
+        .CCSDSJulianDay,
+        .LilianDate,
+        .RataDie
     ]
     
     @ObservedObject var row:  ASARow
@@ -35,7 +44,9 @@ struct ASACalendarPickerView: View {
             ForEach(self.calendarCodes, id: \.self) {
                 calendarCode
                 in
-                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode)
+                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode).onTapGesture {
+                    self.row.calendar = ASACalendarFactory.calendar(code: calendarCode)!
+                }
             }
         }
         .navigationBarTitle(Text(row.dateString(now: Date()) ))
@@ -55,9 +66,10 @@ struct ASACalendarCell: View {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
-        }   .onTapGesture {
-            self.selectedCalendarCode = self.calendarCode
         }
+//        .onTapGesture {
+//            self.selectedCalendarCode = self.calendarCode
+//        }
     } // var body
 }
 

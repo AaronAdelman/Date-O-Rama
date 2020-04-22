@@ -28,6 +28,17 @@ enum ASACalendarCode:  String {
     case Japanese            = "Japanese"
     case Persian             = "Persian"
     case RepublicOfChina     = "RepublicOfChina"
+    case JulianDay           = "JulianDay"
+    case ReducedJulianDay    = "ReducedJulianDay"
+    case DublinJulianDay     = "DublinJulianDay"
+    case ModifiedJulianDay   = "ModifiedJulianDay"
+    case TruncatedJulianDay  = "TruncatedJulianDay"
+    case CNESJulianDay       = "CNESJulianDay"
+    case CCSDSJulianDay      = "CCSDSJulianDay"
+    case LilianDate          = "LilianDate"
+    case RataDie            = "RataDie"
+
+
 } // enum ASACalendarCode:  String
 
 
@@ -40,7 +51,7 @@ extension ASACalendarCode {
 } // extension ASACalendarCode
 
 extension ASACalendarCode {
-    func ordinaryAppleCalendar() -> Bool {
+    func isAppleCalendar() -> Bool {
         switch self {
         case .Buddhist,
              .Chinese,
@@ -61,20 +72,25 @@ extension ASACalendarCode {
         default:
             return false
         } // switch self
-    } // func ordinaryAppleCalendar() -> Bool
-    
-    func usesDateFormatter() -> Bool {
-        return self.ordinaryAppleCalendar()
-    } // func usesDateFormatter() -> Bool
-    
-    func ISO8601AppleCalendar() -> Bool {
+    } // func isAppleCalendar() -> Bool
+        
+    func isISO8601Calendar() -> Bool {
         switch self {
         case .ISO8601:
             return true
         default:
             return false
         }
-    } // func ISOAppleCalendar() -> Bool
+    } // func isISO8601Calendar() -> Bool
+    
+    func isJulianDayCalendar() -> Bool {
+        switch self {
+        case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+            return true
+        default:
+            return false
+        }
+    }
 } // extension ASACalendarCode
 
 extension ASACalendarCode {

@@ -9,8 +9,9 @@
 import Foundation
 
 extension Date {
-    func nextMidnight() -> Date {
-        let gregorianCalendar = Calendar(identifier: .gregorian)
+    func nextMidnight(timeZone:  TimeZone) -> Date {
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
         let midnightToday = gregorianCalendar.startOfDay(for:self)
 //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
 
@@ -23,4 +24,23 @@ extension Date {
 //        print("\(String(describing: type(of: self))) \(#function) Midnight tomorrow:  \(String(describing: midnightTomorrow))")
         return midnightTomorrow!
     } // func nextMidnight() -> Date
+} // extension Date
+
+extension Date {
+    func JulianDate() -> Double {
+        let seconds = self.timeIntervalSince1970
+        return ( seconds / 86400.0 ) + 2440587.5
+    } // func JulianDate() -> Double
+    
+    static func date(JulianDate:  Double) -> Date {
+        let seconds = (JulianDate - 2440587.5) * 86400.0
+        return Date(timeIntervalSince1970: seconds)
+    } // static func date(JulianDate:  Double) -> Date
+    
+    func nextGMTNoon() -> Date {
+        let thisJulianDay = floor(self.JulianDate())
+        let nextJulianDay = thisJulianDay + 1
+        let result = Date.date(JulianDate: nextJulianDay)
+        return result
+    } // func nextGMTNoon() -> Date
 } // extension Date

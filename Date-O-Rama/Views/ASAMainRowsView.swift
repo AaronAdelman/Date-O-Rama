@@ -29,7 +29,7 @@ struct ASAMainRowsView: View {
                     ) {
                         VStack(alignment: .leading) {
                             Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                            Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(2)
+                            Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                         }
                     }
                 }
@@ -63,11 +63,17 @@ struct ASAMainRowsView: View {
             ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now)
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             .onReceive(timer) { input in
-                let midnight = self.now.nextMidnight()
-                if input > midnight {
-                    debugPrint("\(#file) \(#function) After midnight (\(midnight)), updating date to \(input)…")
-                    self.now = Date()
-                }
+                for row in self.userData.mainRows {
+                    let transition = row.calendar.transitionToNextDay(now: self.now, location: nil)
+//                    debugPrint("\(#file) \(#function) Transition time:  \(transition); input time:  \(input)…")
+//                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
+                    if  input >= transition {
+//                        debugPrint("\(#file) \(#function) After transition time (\(transition)), updating date to \(input)…")
+                        self.now = Date()
+                        break
+                    }
+                } // for row in self.userData.mainRows
+//                debugPrint("==========")
         }
     }
 } // struct ASAMainRowsView
