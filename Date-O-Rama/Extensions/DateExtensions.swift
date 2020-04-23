@@ -53,12 +53,20 @@ extension Date {
         let sunset = events[.sunset]
         if sunset == nil {
             // Guarding against there being no Sunset
-            return self // TODO:  FIX THIS!
+            return self.sixPM()
         }
         if self > sunset!! {
             return self.nextGMTNoon()
         } else {
             return self
         }
-    }
-}
+    } // func solarCorrected(location:  CLLocation) -> Date
+    
+    func sixPM() -> Date {
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        let result = midnightToday.addingTimeInterval(18 * 60 * 60)
+        return result
+    } // func sixPM()
+} // extension Date
