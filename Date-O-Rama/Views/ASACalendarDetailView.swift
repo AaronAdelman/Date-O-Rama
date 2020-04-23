@@ -50,6 +50,9 @@ struct ASACalendarDetailView: View {
                     } else {
                         ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!)")
                     }
+                    if selectedRow.calendar.supportsLocations() {
+                        ASACalendarDetailCell(title: "HEADER_LOCATION", detail: "\(self.currentLocation)")
+                    }
                 }
                 if selectedRow.calendar.details().count > 0 {
                     Section(header:  Text("HEADER_Date")) {

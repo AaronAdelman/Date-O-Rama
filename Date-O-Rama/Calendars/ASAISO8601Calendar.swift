@@ -105,4 +105,8 @@ class ASAISO8601Calendar:  ASACalendar {
     func supportsTimeZones() -> Bool {
         return true
     } // func supportsTimeZones() -> Bool
+    
+    func supportsLocations() -> Bool {
+        return false
+    } // func supportsLocations() -> Bool
 } // class ASAISO8601Calendar

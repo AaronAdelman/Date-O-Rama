@@ -99,4 +99,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     func supportsTimeZones() -> Bool {
         return false
     } // func supportsTimeZones() -> Bool
+    
+    func supportsLocations() -> Bool {
+        return false
+    } // func supportsLocations() -> Bool
 } // class ASAJulianDayCalendar
