@@ -46,6 +46,13 @@ class ASAISO8601Calendar:  ASACalendar {
             } // switch o
         }
         self.ISODateFormatter.formatOptions = formatterOptions
+        
+        if timeZone == nil {
+            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
+        } else {
+            self.ISODateFormatter.timeZone = timeZone
+        }
+
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
     } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
@@ -56,6 +63,13 @@ class ASAISO8601Calendar:  ASACalendar {
         self.dateFormatter.locale = Locale(identifier: "en_US")
         
         self.dateFormatter.dateFormat = LDMLString
+        
+        if timeZone == nil {
+            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
+        } else {
+            self.ISODateFormatter.timeZone = timeZone
+        }
+
         let result = self.dateFormatter.string(from: now)
         
         return result

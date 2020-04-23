@@ -29,7 +29,7 @@ struct ASAMainRowsView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
-                        destination: ASACalendarDetailView(selectedRow: row, now: self.now)
+                        destination: ASACalendarDetailView(selectedRow: row, now: self.now, currentLocation: self.currentLocation)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
@@ -37,7 +37,7 @@ struct ASAMainRowsView: View {
                         }
                     ) {
                         VStack(alignment: .leading) {
-                            Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                            Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.currentLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
                             Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                         }
                     }
@@ -69,7 +69,7 @@ struct ASAMainRowsView: View {
                     Image(systemName: "plus")
                 }
             )
-            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now)
+            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ASACalendarPickerView: View {
     let calendarCodes:  Array<ASACalendarCode> = [
@@ -38,6 +39,7 @@ struct ASACalendarPickerView: View {
     ]
     
     @ObservedObject var row:  ASARow
+    var currentLocation:  CLLocation
     
     var body: some View {
         List {
@@ -49,7 +51,7 @@ struct ASACalendarPickerView: View {
                 }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.currentLocation ) ))
     }
 }
 
@@ -75,6 +77,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarPickerView(row: ASARow.test())
+        ASACalendarPickerView(row: ASARow.test(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
     }
 }

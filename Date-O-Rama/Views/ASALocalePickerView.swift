@@ -7,19 +7,21 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ASALocalePickerView: View {
     let localeData = ASALocaleData()
     
     @ObservedObject var row:  ASARow
-
+    var currentLocation:  CLLocation
+    
     var body: some View {
         List {
             ForEach(localeData.records) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
             } // ForEach(localeData.records)
         } // List
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+            .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.currentLocation) ))
     } // var body
 } // struct ASALocalePickerView
 
@@ -45,7 +47,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocalePickerView(row: ASARow.test())
+        ASALocalePickerView(row: ASARow.test(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
     }
 }
 

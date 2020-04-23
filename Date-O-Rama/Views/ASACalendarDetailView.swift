@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ASACalendarDetailCell:  View {
     var title:  String
@@ -24,22 +25,23 @@ struct ASACalendarDetailCell:  View {
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
+    var currentLocation:  CLLocation
     
     var body: some View {
         List {
             //            if selectedRow != nil {
             if selectedRow.dummy != true {
                 Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                    NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
+                    NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow, currentLocation: self.currentLocation)) {
                         ASACalendarDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                     }
                     if selectedRow.supportsLocales() {
-                        NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
+                        NavigationLink(destination: ASALocalePickerView(row: selectedRow, currentLocation: self.currentLocation)) {
                             ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                         }
                     }
                     if selectedRow.calendar.supportsDateFormats() {
-                        NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
+                        NavigationLink(destination: ASAFormatPickerView(row: selectedRow, currentLocation: self.currentLocation)) {
                             ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                         }
                     }
@@ -54,7 +56,7 @@ struct ASACalendarDetailView: View {
                         ForEach(selectedRow.details(), id: \.name) {
                             detail
                             in
-                            ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode))
+                            ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode, defaultLocation: self.currentLocation))
                         }
                     }
                 }
@@ -65,12 +67,12 @@ struct ASACalendarDetailView: View {
                 //                Text("Detail view content goes here")
                 EmptyView()
             }
-        }.navigationBarTitle(Text(selectedRow.dummy ? "" : selectedRow.dateString(now: self.now) ))
+        }.navigationBarTitle(Text(selectedRow.dummy ? "" : selectedRow.dateString(now: self.now, defaultLocation: self.currentLocation) ))
     }
 }
 
 struct ASACalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date())
+        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
     }
 }

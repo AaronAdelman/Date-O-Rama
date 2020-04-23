@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ASARow: NSObject, ObservableObject, Identifiable {    
     var uid = UUID()
@@ -24,7 +25,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         } // didset
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
-        
+    
     
     // MARK: -
     
@@ -103,12 +104,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     //MARK: -
     
-    public func dateString(now:  Date) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: nil, timeZone: nil)
+    public func dateString(now:  Date, defaultLocation:  CLLocation) -> String {
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: defaultLocation, timeZone: TimeZone.autoupdatingCurrent)
     } // func dateString(now:  Date) -> String
     
-    public func dateString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: nil, timeZone: nil)
+    public func dateString(now:  Date, LDMLString:  String, defaultLocation:  CLLocation) -> String {
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: defaultLocation, timeZone: TimeZone.autoupdatingCurrent)
     } // func dateString(now:  Date, LDMLString:  String) -> String
     
     

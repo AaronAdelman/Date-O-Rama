@@ -7,9 +7,11 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ASAFormatPickerView: View {
     @ObservedObject var row:  ASARow
+    var currentLocation:  CLLocation
     
     var model:  Array<ASAComponentsPickerSection> {
         get {
@@ -80,7 +82,7 @@ struct ASAFormatPickerView: View {
 //                }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.currentLocation) ))
     }
 }
 
@@ -151,6 +153,6 @@ extension ASAComponentsPickerSection {
 
 struct ASAFormatPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAFormatPickerView(row: ASARow.generic())
+        ASAFormatPickerView(row: ASARow.generic(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
     }
 }
