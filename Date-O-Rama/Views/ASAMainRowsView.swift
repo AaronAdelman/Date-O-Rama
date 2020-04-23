@@ -8,12 +8,21 @@
 
 import SwiftUI
 import Combine
+import CoreLocation
 
 struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var dummyRow:  ASARow = ASARow.dummy()
     @State var now = Date()
+    @ObservedObject var locationManager = LocationManager()
+
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    var currentLocation:  CLLocation {
+        get {
+            return self.locationManager.lastLocation ?? CLLocation(latitude: 0.0, longitude: 0.0)
+        } // get
+    } // var currentLocation
     
     var body: some View {
         NavigationView {
@@ -74,6 +83,8 @@ struct ASAMainRowsView: View {
                     }
                 } // for row in self.userData.mainRows
 //                debugPrint("==========")
+                
+//                debugPrint("\(#file) \(#function) \(self.locationManager.statusString) \(String(describing: self.currentLocation)), \(self.now.solarEvents(latitude: self.currentLocation.coordinate.latitude, longitude: self.currentLocation.coordinate.longitude, events: [.sunrise, .sunset]))")
         }
     }
 } // struct ASAMainRowsView

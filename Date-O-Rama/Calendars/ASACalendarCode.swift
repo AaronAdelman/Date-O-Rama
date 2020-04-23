@@ -36,9 +36,7 @@ enum ASACalendarCode:  String {
     case CNESJulianDay       = "CNESJulianDay"
     case CCSDSJulianDay      = "CCSDSJulianDay"
     case LilianDate          = "LilianDate"
-    case RataDie            = "RataDie"
-
-
+    case RataDie             = "RataDie"
 } // enum ASACalendarCode:  String
 
 

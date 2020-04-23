@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53A5B0024519859005F9876 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* LocationManager.swift */; };
+		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A53A5AFF24519859005F9876 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
 		A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendar.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 			children = (
 				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
+				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
 				A5C77C3D243364CB00CFEE47 /* Localizable.strings */,
+				A53A5AFF24519859005F9876 /* LocationManager.swift */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
 				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
 				A5C77C452434723300CFEE47 /* Views */,
@@ -373,7 +379,9 @@
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,
 				A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASAFormatPickerView.swift in Sources */,
+				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
+				A53A5B0024519859005F9876 /* LocationManager.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASAMajorFormat.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
@@ -551,6 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -573,6 +582,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
