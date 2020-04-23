@@ -154,5 +154,7 @@
 "HEADER_TIME_ZONE" = "Time zone";
 
 "HEADER_LOCATION" = "Location";
+"HEADER_LATITUDE"  = "Latitude (° N)";
+"HEADER_LONGITUDE" = "Longitude (° E)";
 
 "HEADER_MODULAR_LARGE" = "Modular large";
