@@ -16,7 +16,7 @@ struct ASACalendarDetailCell:  View {
         HStack {
             Text(verbatim:  title).bold()
             Spacer()
-            Text(verbatim:  detail)
+            Text(verbatim:  detail).multilineTextAlignment(.trailing)
         } // HStack
     } // var body
 } // struct ASADetailCell
@@ -51,7 +51,7 @@ struct ASACalendarDetailView: View {
                         ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!)")
                     }
                     if selectedRow.calendar.supportsLocations() {
-                        ASACalendarDetailCell(title: "HEADER_LOCATION", detail: "\(self.currentLocation)")
+                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_LOCATION", comment: ""), detail: "\(self.currentLocation)")
                     }
                 }
                 if selectedRow.calendar.details().count > 0 {
@@ -64,7 +64,7 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 Section(header:  Text("HEADER_Other")) {
-                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: "\(self.selectedRow.calendar.transitionToNextDay(now: self.now, location: nil))")
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: "\(self.selectedRow.calendar.transitionToNextDay(now: self.now, location: currentLocation))")
                 }
             } else {
                 //                Text("Detail view content goes here")

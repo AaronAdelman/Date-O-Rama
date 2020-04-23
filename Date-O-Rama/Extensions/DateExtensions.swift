@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 extension Date {
     func nextMidnight(timeZone:  TimeZone) -> Date {
@@ -44,3 +45,20 @@ extension Date {
         return result
     } // func nextGMTNoon() -> Date
 } // extension Date
+
+extension Date {
+    func solarCorrected(location:  CLLocation) -> Date {
+        let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [.sunset])
+        
+        let sunset = events[.sunset]
+        if sunset == nil {
+            // Guarding against there being no Sunset
+            return self // TODO:  FIX THIS!
+        }
+        if self > sunset!! {
+            return self.nextGMTNoon()
+        } else {
+            return self
+        }
+    }
+}

@@ -35,7 +35,12 @@ struct ASACalendarPickerView: View {
         .CNESJulianDay,
         .CCSDSJulianDay,
         .LilianDate,
-        .RataDie
+        .RataDie,
+        .HebrewSolar,
+        .IslamicSolar,
+        .IslamicCivilSolar,
+        .IslamicTabularSolar,
+        .IslamicUmmAlQuraSolar
     ]
     
     @ObservedObject var row:  ASARow

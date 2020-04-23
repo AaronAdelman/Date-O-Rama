@@ -1,18 +1,18 @@
 //
-//  ASAAppleCalendar.swift
+//  ASASolarCalendar.swift
 //  Date-O-Rama
 //
-//  Created by אהרן שלמה אדלמן on 2020-04-20.
+//  Created by אהרן שלמה אדלמן on 2020-04-22.
 //  Copyright © 2020 Adelsoft. All rights reserved.
 //
 
 import Foundation
 import CoreLocation
 
-class ASAAppleCalendar:  ASACalendar {
+class ASASolarCalendar:  ASACalendar {
     var calendarIdentifier:  Calendar.Identifier?
-    
-    var calendarCode:  ASACalendarCode
+
+    var calendarCode: ASACalendarCode
     
     lazy var dateFormatter = DateFormatter()
     
@@ -21,70 +21,61 @@ class ASAAppleCalendar:  ASACalendar {
         self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
         
         dateFormatter.calendar = Calendar(identifier: calendarIdentifier!)
-    }
+    } // init(calendarCode:  ASACalendarCode)
     
-    func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String {
+        return "eee, d MMM y"
+    } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
+
+    func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         // TODO:  Update when times are supported!
-        
+        let fixedNow = now.solarCorrected(location: location!)
+
         if localeIdentifier == "" {
             self.dateFormatter.locale = Locale.current
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
-        
-        if timeZone == nil {
-            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
-            self.dateFormatter.timeZone = timeZone
-        }
 
         if majorDateFormat == .localizedLDML {
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
-            return self.dateFormatter.string(from: now)
+            return self.dateFormatter.string(from: fixedNow)
         }
         
         if majorDateFormat == .full {
             self.dateFormatter.dateStyle = .full
-            return self.dateFormatter.string(from: now)
+            return self.dateFormatter.string(from: fixedNow)
         }
         
         if majorDateFormat == .long {
             self.dateFormatter.dateStyle = .long
-            return self.dateFormatter.string(from: now)
+            return self.dateFormatter.string(from: fixedNow)
         }
         
         if majorDateFormat == .medium {
             self.dateFormatter.dateStyle = .medium
-            return self.dateFormatter.string(from: now)
+            return self.dateFormatter.string(from: fixedNow)
         }
         
         if majorDateFormat == .short {
             self.dateFormatter.dateStyle = .short
-            return self.dateFormatter.string(from: now)
+            return self.dateFormatter.string(from: fixedNow)
         }
         
         return "Error!"
     } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
+        let fixedNow = now.solarCorrected(location: location!)
+        
         self.dateFormatter.dateFormat = LDMLString
-        if timeZone == nil {
-            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
-            self.dateFormatter.timeZone = timeZone
-        }
-
-        let result = self.dateFormatter.string(from: now)
+        let result = self.dateFormatter.string(from: fixedNow)
         
         return result
     } // func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
-    
-    func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String {
-        return "eee, d MMM y"
-    } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
     func details() -> Array<ASADetail> {
         return [
@@ -108,20 +99,23 @@ class ASAAppleCalendar:  ASACalendar {
     func supportsLocales() -> Bool {
         return true
     } // func supportsLocales() -> Bool
-    
-    func transitionToNextDay(now:  Date, location:  CLLocation) -> Date {
-        return now.nextMidnight(timeZone:  TimeZone.autoupdatingCurrent)
-    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation) -> Date
-    
+
     func supportsDateFormats() -> Bool {
         return true
     } // func supportsDateFormats() -> Bool
-    
+
     func supportsTimeZones() -> Bool {
         return true
     } // func supportsTimeZones() -> Bool
-    
+
+    func transitionToNextDay(now: Date, location: CLLocation) -> Date {
+        let fixedNow = now.solarCorrected(location: location)
+        let events = fixedNow.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [.sunset])
+    return events[.sunset]!!
+    } // func transitionToNextDay(now: Date, location: CLLocation) -> Date
+            
     func supportsLocations() -> Bool {
-        return false
+        return true
     } // func supportsLocations() -> Bool
-} // class ASAAppleCalendar
+    
+}

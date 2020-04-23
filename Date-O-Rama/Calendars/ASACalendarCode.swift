@@ -12,31 +12,36 @@ import Foundation
 // I would prefer to use a standard, but ISO has not released one as of this writing.
 enum ASACalendarCode:  String {
 //    case None                = "  "
-    case Buddhist            = "Buddhist"
-    case Chinese             = "Chinese"
-    case Coptic              = "Coptic"
-    case EthiopicAmeteAlem   = "EthiopicAmeteAlem"
-    case EthiopicAmeteMihret = "EthiopicAmeteMihret"
-    case Gregorian           = "Gregorian"
-    case Hebrew              = "Hebrew"
-    case Indian              = "Indian"
-    case Islamic             = "Islamic"
-    case IslamicCivil        = "IslamicCivil"
-    case IslamicTabular      = "IslamicTabular"
-    case IslamicUmmAlQura    = "IslamicUmmAlQura"
-    case ISO8601             = "ISO8601"
-    case Japanese            = "Japanese"
-    case Persian             = "Persian"
-    case RepublicOfChina     = "RepublicOfChina"
-    case JulianDay           = "JulianDay"
-    case ReducedJulianDay    = "ReducedJulianDay"
-    case DublinJulianDay     = "DublinJulianDay"
-    case ModifiedJulianDay   = "ModifiedJulianDay"
-    case TruncatedJulianDay  = "TruncatedJulianDay"
-    case CNESJulianDay       = "CNESJulianDay"
-    case CCSDSJulianDay      = "CCSDSJulianDay"
-    case LilianDate          = "LilianDate"
-    case RataDie             = "RataDie"
+    case Buddhist              = "Buddhist"
+    case Chinese               = "Chinese"
+    case Coptic                = "Coptic"
+    case EthiopicAmeteAlem     = "EthiopicAmeteAlem"
+    case EthiopicAmeteMihret   = "EthiopicAmeteMihret"
+    case Gregorian             = "Gregorian"
+    case Hebrew                = "Hebrew"
+    case Indian                = "Indian"
+    case Islamic               = "Islamic"
+    case IslamicCivil          = "IslamicCivil"
+    case IslamicTabular        = "IslamicTabular"
+    case IslamicUmmAlQura      = "IslamicUmmAlQura"
+    case ISO8601               = "ISO8601"
+    case Japanese              = "Japanese"
+    case Persian               = "Persian"
+    case RepublicOfChina       = "RepublicOfChina"
+    case JulianDay             = "JulianDay"
+    case ReducedJulianDay      = "ReducedJulianDay"
+    case DublinJulianDay       = "DublinJulianDay"
+    case ModifiedJulianDay     = "ModifiedJulianDay"
+    case TruncatedJulianDay    = "TruncatedJulianDay"
+    case CNESJulianDay         = "CNESJulianDay"
+    case CCSDSJulianDay        = "CCSDSJulianDay"
+    case LilianDate            = "LilianDate"
+    case RataDie               = "RataDie"
+    case HebrewSolar           = "HebrewSolar"
+    case IslamicSolar          = "IslamicSolar"
+    case IslamicCivilSolar     = "IslamicCivilSolar"
+    case IslamicTabularSolar   = "IslamicTabularSolar"
+    case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
 } // enum ASACalendarCode:  String
 
 
@@ -89,6 +94,15 @@ extension ASACalendarCode {
             return false
         }
     }
+    
+    func isSolarCalendar() -> Bool {
+        switch self {
+        case .HebrewSolar, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar:
+            return true
+        default:
+            return false
+        } // switch self
+    } // func isSolarCalendar() -> Bool
 } // extension ASACalendarCode
 
 extension ASACalendarCode {
@@ -113,22 +127,22 @@ extension ASACalendarCode {
            case ASACalendarCode.Gregorian:
                calendarIdentifier = .gregorian
                
-           case ASACalendarCode.Hebrew:
+           case ASACalendarCode.Hebrew, .HebrewSolar:
                calendarIdentifier = .hebrew
                
            case ASACalendarCode.Indian:
                calendarIdentifier = .indian
                
-           case ASACalendarCode.Islamic:
+           case ASACalendarCode.Islamic, .IslamicSolar:
                calendarIdentifier = .islamic
                
-           case ASACalendarCode.IslamicCivil:
+           case ASACalendarCode.IslamicCivil, .IslamicCivilSolar:
                calendarIdentifier = .islamicCivil
                
-           case ASACalendarCode.IslamicTabular:
+           case ASACalendarCode.IslamicTabular, .IslamicTabularSolar:
                calendarIdentifier = .islamicTabular
                
-           case ASACalendarCode.IslamicUmmAlQura:
+           case ASACalendarCode.IslamicUmmAlQura, .IslamicUmmAlQuraSolar:
                calendarIdentifier = .islamicUmmAlQura
                
            case ASACalendarCode.ISO8601:

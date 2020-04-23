@@ -94,9 +94,9 @@ class ASAISO8601Calendar:  ASACalendar {
         return false
     } // func supportsLocales() -> Bool
     
-    func transitionToNextDay(now:  Date, location:  CLLocation?) -> Date {
+    func transitionToNextDay(now:  Date, location:  CLLocation) -> Date {
         return now.nextMidnight(timeZone:  TimeZone.autoupdatingCurrent)
-    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation?) -> Date
+    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation) -> Date
 
     func supportsDateFormats() -> Bool {
         return true

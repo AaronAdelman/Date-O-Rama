@@ -32,6 +32,11 @@
 "CCSDSJulianDay"      = "CCSDS Julian Day";
 "LilianDate"          = "Lilian Date";
 "RataDie"             = "Rata Die";
+"HebrewSolar"           = "Hebrew (Sunset transition)";
+"IslamicSolar"          = "Islamic (Sunset transition)";
+"IslamicCivilSolar"     = "IslamicCivil (Sunset transition)";
+"IslamicTabularSolar"   = "IslamicTabular (Sunset transition)";
+"IslamicUmmAlQuraSolar" = "IslamicUmmAlQura (Sunset transition)";
 
 "DEFAULT_LOCALE" = "Default";
 
