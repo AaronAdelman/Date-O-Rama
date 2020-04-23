@@ -7,36 +7,36 @@
 */
 
 // Calendar identifiers
-"Buddhist"            = "Buddhist (Thai Solar)";
-"Chinese"             = "Chinese";
-"Coptic"              = "Coptic";
-"EthiopicAmeteAlem"   = "Ethiopic Amete Alem";
-"EthiopicAmeteMihret" = "Ethiopic Amete Mihret";
-"Gregorian"           = "Gregorian";
-"Hebrew"              = "Hebrew (Jewish)";
-"Indian"              = "Indian (Shalivahana Shaka)";
-"Islamic"             = "Islamic";
-"IslamicCivil"        = "Islamic Civil";
-"IslamicTabular"      = "Islamic Tabular";
-"IslamicUmmAlQura"    = "Islamic Umm Al-Qura";
-"ISO8601"             = "ISO 8601";
-"Japanese"            = "Japanese";
-"Persian"             = "Persian (Solar Hijri)";
-"RepublicOfChina"     = "Republic of China (Minguo)";
-"JulianDay"           = "Julian Day";
-"ReducedJulianDay"    = "Reduced Julian Day";
-"DublinJulianDay"     = "Dublin Julian Day";
-"ModifiedJulianDay"   = "Modified Julian Day";
-"TruncatedJulianDay"  = "Truncated Julian Day";
-"CNESJulianDay"       = "CNES Julian Day";
-"CCSDSJulianDay"      = "CCSDS Julian Day";
-"LilianDate"          = "Lilian Date";
-"RataDie"             = "Rata Die";
-"HebrewSolar"           = "Hebrew (Sunset transition)";
-"IslamicSolar"          = "Islamic (Sunset transition)";
-"IslamicCivilSolar"     = "IslamicCivil (Sunset transition)";
-"IslamicTabularSolar"   = "IslamicTabular (Sunset transition)";
-"IslamicUmmAlQuraSolar" = "IslamicUmmAlQura (Sunset transition)";
+"Buddhist"              = "Buddhist (Thai Solar)";
+"Chinese"               = "Chinese";
+"Coptic"                = "Coptic";
+"EthiopicAmeteAlem"     = "Ethiopic Amete Alem";
+"EthiopicAmeteMihret"   = "Ethiopic Amete Mihret";
+"Gregorian"             = "Gregorian";
+"Hebrew"                = "Hebrew (Jewish) (midnight day start)";
+"Indian"                = "Indian (Shalivahana Shaka)";
+"Islamic"               = "Islamic (midnight day start)";
+"IslamicCivil"          = "Islamic Civil (midnight day start)";
+"IslamicTabular"        = "Islamic Tabular (midnight day start)";
+"IslamicUmmAlQura"      = "Islamic Umm Al-Qura (midnight day start)";
+"ISO8601"               = "ISO 8601";
+"Japanese"              = "Japanese";
+"Persian"               = "Persian (Solar Hijri)";
+"RepublicOfChina"       = "Republic of China (Minguo)";
+"JulianDay"             = "Julian Day";
+"ReducedJulianDay"      = "Reduced Julian Day";
+"DublinJulianDay"       = "Dublin Julian Day";
+"ModifiedJulianDay"     = "Modified Julian Day";
+"TruncatedJulianDay"    = "Truncated Julian Day";
+"CNESJulianDay"         = "CNES Julian Day";
+"CCSDSJulianDay"        = "CCSDS Julian Day";
+"LilianDate"            = "Lilian Date";
+"RataDie"               = "Rata Die";
+"HebrewSolar"           = "Hebrew (Jewish) (Sunset day start)";
+"IslamicSolar"          = "Islamic (Sunset day start)";
+"IslamicCivilSolar"     = "Islamic Civil (Sunset day start)";
+"IslamicTabularSolar"   = "Islamic Tabular (Sunset day start)";
+"IslamicUmmAlQuraSolar" = "Islamic Umm Al-Qura (Sunset day start)";
 
 "DEFAULT_LOCALE" = "Default";
 
