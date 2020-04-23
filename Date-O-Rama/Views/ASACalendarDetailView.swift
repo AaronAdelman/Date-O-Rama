@@ -46,13 +46,11 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsTimeZones() {
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone.autoupdatingCurrent)")
+                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone.autoupdatingCurrent.identifier)")
                     } else {
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!)")
+                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!.identifier)")
                     }
                     if selectedRow.calendar.supportsLocations() {
-//                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_LATITUDE", comment: ""), detail: "\(self.currentLocation.coordinate.latitude)")
-//                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_LONGITUDE", comment: ""), detail: "\(self.currentLocation.coordinate.longitude)")
                         ASACalendarDetailCell(title: NSLocalizedString("HEADER_LOCATION", comment: ""), detail: "\(self.currentLocation.ISO6079HumanInterfaceRepresentation())")
 
                     }
