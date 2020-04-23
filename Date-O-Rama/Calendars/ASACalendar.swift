@@ -21,8 +21,8 @@ protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     
     func defaultDateGeekCode(majorDateFormat:  ASAMajorFormat) -> String
-    func dateString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorFormat, dateGeekFormat:  String, majorTimeFormat:  ASAMajorFormat, timeGeekFormat:  String, location:  CLLocation?) -> String
-    func dateString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?) -> String
+    func dateString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorFormat, dateGeekFormat:  String, majorTimeFormat:  ASAMajorFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
+    func dateString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func details() -> Array<ASADetail>
     func supportsLocales() -> Bool
     func supportsDateFormats() -> Bool

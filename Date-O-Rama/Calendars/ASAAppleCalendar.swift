@@ -23,7 +23,7 @@ class ASAAppleCalendar:  ASACalendar {
         dateFormatter.calendar = Calendar(identifier: calendarIdentifier!)
     }
     
-    func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String {
+    func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
         if localeIdentifier == "" {
@@ -61,7 +61,7 @@ class ASAAppleCalendar:  ASACalendar {
         return "Error!"
     } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String {
+    func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
         self.dateFormatter.dateFormat = LDMLString

@@ -104,11 +104,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     //MARK: -
     
     public func dateString(now:  Date) -> String {
-              return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: nil)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: nil, timeZone: nil)
     } // func dateString(now:  Date) -> String
     
     public func dateString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: nil)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: nil, timeZone: nil)
     } // func dateString(now:  Date, LDMLString:  String) -> String
     
     
