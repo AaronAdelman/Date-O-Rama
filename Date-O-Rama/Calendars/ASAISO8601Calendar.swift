@@ -86,8 +86,9 @@ class ASAISO8601Calendar:  ASACalendar {
             ASADetail(name: "HEADER_Y", geekCode: "Y"),
             ASADetail(name: "HEADER_w", geekCode: "ww"),
             ASADetail(name: "HEADER_E", geekCode: "e"),
-            ASADetail(name: "HEADER_D", geekCode: "D"),
-            ASADetail(name: "HEADER_g", geekCode: "g")
+            ASADetail(name: "HEADER_D", geekCode: "D")
+//            ,
+//            ASADetail(name: "HEADER_g", geekCode: "g")
         ]
     } // public func details() -> Array<ASADetail>
     

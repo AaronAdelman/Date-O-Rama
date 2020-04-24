@@ -90,9 +90,9 @@ class ASASolarCalendar:  ASACalendar {
             ASADetail(name: "HEADER_W", geekCode: "W"),
             ASADetail(name: "HEADER_F", geekCode: "F"),
             ASADetail(name: "HEADER_D", geekCode: "D"),
-            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+//            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
             ASADetail(name: "HEADER_r", geekCode: "r"),
-            ASADetail(name: "HEADER_g", geekCode: "g")
+//            ASADetail(name: "HEADER_g", geekCode: "g")
         ]
     } // func details() -> Array<ASADetail>
     
