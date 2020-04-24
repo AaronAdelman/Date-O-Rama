@@ -73,15 +73,28 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsTimeZones() {
-//                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone.autoupdatingCurrent.identifier)")
                         ASACalendarTimeZoneCell(timeZone: TimeZone.autoupdatingCurrent, now: now)
                     } else {
-//                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!.identifier)")
                         ASACalendarTimeZoneCell(timeZone: TimeZone(secondsFromGMT: 0)!, now: now)
                     }
                     if selectedRow.calendar.supportsLocations() {
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_LOCATION", comment: ""), detail: "\(self.currentLocation.ISO6079HumanInterfaceRepresentation())")
-
+                        //                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_LOCATION", comment: ""), detail: "\(self.currentLocation.humanInterfaceRepresentation())")
+                        HStack {
+                            Text("HEADER_LOCATION").bold()
+                            Spacer()
+                            VStack {
+                                if true {
+                                    HStack {
+                                        Spacer()
+                                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
+                                    }
+                                }
+                                HStack {
+                                    Spacer()
+                                    Text(verbatim:  self.currentLocation.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                                }
+                            }
+                        } // HStack
                     }
                 }
                 if selectedRow.calendar.details().count > 0 {

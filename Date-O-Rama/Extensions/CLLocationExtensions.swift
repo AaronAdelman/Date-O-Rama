@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 extension CLLocation {
-    func ISO6079HumanInterfaceRepresentation() -> String {
+    func humanInterfaceRepresentation() -> String {
         let absoluteLatitude:  Double = abs(self.coordinate.latitude)
         let absoluteLatitudeString = String(format: "%.4f", absoluteLatitude)
         let latituteDirection = self.coordinate.latitude >= 0.0 ? "N" : "S"
