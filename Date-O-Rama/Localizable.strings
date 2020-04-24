@@ -158,3 +158,5 @@
 "HEADER_LONGITUDE" = "Longitude (° E)";
 
 "HEADER_MODULAR_LARGE" = "Modular large";
+
+"AUTOUPDATING_CURRENT_TIME_ZONE" = "Autoupdating current";

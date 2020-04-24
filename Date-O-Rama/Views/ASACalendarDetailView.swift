@@ -21,6 +21,33 @@ struct ASACalendarDetailCell:  View {
     } // var body
 } // struct ASADetailCell
 
+struct ASACalendarTimeZoneCell:  View {
+    var timeZone:  TimeZone
+    var now:  Date
+
+    var body:  some View {
+        HStack {
+            Text(verbatim:  NSLocalizedString("HEADER_TIME_ZONE", comment: "")).bold()
+            Spacer()
+            VStack {
+                if timeZone == TimeZone.autoupdatingCurrent {
+                    HStack {
+                        Spacer()
+                        Text("AUTOUPDATING_CURRENT_TIME_ZONE").multilineTextAlignment(.trailing)
+                    }
+                }
+                HStack {
+                    Spacer()
+                    Text(verbatim:  timeZone.abbreviation(for:  now) ?? "").multilineTextAlignment(.trailing)
+                }
+                HStack {
+                    Spacer()
+                    Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.autoupdatingCurrent) ?? "").multilineTextAlignment(.trailing)
+                }
+            }
+        } // HStack
+    } // var body
+} // struct ASACalendarTimeZoneCell
 
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
@@ -46,9 +73,11 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsTimeZones() {
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone.autoupdatingCurrent.identifier)")
+//                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone.autoupdatingCurrent.identifier)")
+                        ASACalendarTimeZoneCell(timeZone: TimeZone.autoupdatingCurrent, now: now)
                     } else {
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!.identifier)")
+//                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_TIME_ZONE", comment: ""), detail: "\(TimeZone(secondsFromGMT: 0)!.identifier)")
+                        ASACalendarTimeZoneCell(timeZone: TimeZone(secondsFromGMT: 0)!, now: now)
                     }
                     if selectedRow.calendar.supportsLocations() {
                         ASACalendarDetailCell(title: NSLocalizedString("HEADER_LOCATION", comment: ""), detail: "\(self.currentLocation.ISO6079HumanInterfaceRepresentation())")
