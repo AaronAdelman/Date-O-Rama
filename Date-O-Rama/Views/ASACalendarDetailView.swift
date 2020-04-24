@@ -78,7 +78,6 @@ struct ASACalendarDetailView: View {
                         ASACalendarTimeZoneCell(timeZone: TimeZone(secondsFromGMT: 0)!, now: now)
                     }
                     if selectedRow.calendar.supportsLocations() {
-                        //                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_LOCATION", comment: ""), detail: "\(self.currentLocation.humanInterfaceRepresentation())")
                         HStack {
                             Text("HEADER_LOCATION").bold()
                             Spacer()
@@ -107,7 +106,7 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 Section(header:  Text("HEADER_Other")) {
-                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: "\(self.selectedRow.calendar.transitionToNextDay(now: self.now, location: currentLocation))")
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.transitionToNextDay(now: self.now, location: currentLocation), dateStyle: .full, timeStyle: .full))
                 }
             } else {
                 //                Text("Detail view content goes here")
