@@ -70,7 +70,8 @@ struct ASAMainRowsView: View {
                 }
             )
             ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+//        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+            }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {
                     let transition = row.calendar.transitionToNextDay(now: self.now, location: self.currentLocation)
