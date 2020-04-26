@@ -48,6 +48,10 @@ enum ASASolarEvent {
     case eveningNauticalTwilight
     case morningAstronomicalTwilight
     case eveningAstronomicalTwilight
+    
+    case dawn
+    case recognition
+    case dusk
 
     func zenith() -> Double {
         switch self {
@@ -59,6 +63,13 @@ enum ASASolarEvent {
             return 102.0
         case .morningAstronomicalTwilight, .eveningAstronomicalTwilight:
             return 108.0
+            
+        case .dawn:
+            return 90.0 + 16.1
+        case .recognition:
+            return 90.0 + 11
+        case .dusk:
+            return 90.0 + 8.5
         } // switch self
     } // func zenith() -> Double
     
@@ -67,6 +78,10 @@ enum ASASolarEvent {
         case .sunrise, .morningCivilTwilight, .morningNauticalTwilight, .morningAstronomicalTwilight:
             return true
         case .sunset, .eveningCivilTwilight, .eveningNauticalTwilight, .eveningAstronomicalTwilight:
+            return false
+        case .dawn, .recognition:
+            return true
+        case .dusk:
             return false
         } // switch self
     } // func rising() -> Bool

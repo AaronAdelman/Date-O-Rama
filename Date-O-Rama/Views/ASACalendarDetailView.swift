@@ -96,12 +96,21 @@ struct ASACalendarDetailView: View {
                         } // HStack
                     }
                 }
-                if selectedRow.calendar.details().count > 0 {
+                if selectedRow.calendar.LDMLDetails().count > 0 {
                     Section(header:  Text("HEADER_Date")) {
                         ForEach(selectedRow.details(), id: \.name) {
                             detail
                             in
                             ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode, defaultLocation: self.currentLocation))
+                        }
+                    }
+                }
+                if selectedRow.calendar.supportsEventDetails() {
+                    Section(header:  Text("HEADER_EVENTS")) {
+                        ForEach(selectedRow.calendar.eventDetails(date: now, location: currentLocation), id: \.key) {
+                            detail
+                            in
+                            ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : DateFormatter.localizedString(from: detail.value!, dateStyle: .none, timeStyle: .medium))
                         }
                     }
                 }

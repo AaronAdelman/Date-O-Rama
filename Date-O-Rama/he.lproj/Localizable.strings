@@ -1,0 +1,191 @@
+/*
+  Localizable.strings
+  DoubleDate
+
+  Created by אהרן שלמה אדלמן on 2018-01-25.
+  Copyright © 2018 Adelsoft. All rights reserved.
+*/
+
+// Calendar identifiers
+"Buddhist"              = "בודהיסטי";
+"Chinese"               = "סיני";
+"Coptic"                = "קופטי";
+"EthiopicAmeteAlem"     = "אתיופי (שנות העולם)";
+"EthiopicAmeteMihret"   = "אתיופי";
+"Gregorian"             = "גרגוריאני";
+"Hebrew"                = "עברי (יהודי) (יום מתחיל בחצות הלילה)";
+"Indian"                = "הודי לאומי";
+"Islamic"               = "מוסלמי (יום מתחיל בחצות הלילה)";
+"IslamicCivil"          = "מוסלמי אזרחי (יום מתחיל בחצות הלילה)";
+"IslamicTabular"        = "מוסלמי טבלאי (יום מתחיל בחצות הלילה)";
+"IslamicUmmAlQura"      = "מוסלמי אום אל-קורה (יום מתחיל בחצות הלילה)";
+"ISO8601"               = "ISO 8601";
+"Japanese"              = "יפני";
+"Persian"               = "פרסי";
+"RepublicOfChina"       = "טאיוואני";
+"JulianDay"             = "יום יוליאני";
+"ReducedJulianDay"      = "Reduced Julian Day";
+"DublinJulianDay"       = "Dublin Julian Day";
+"ModifiedJulianDay"     = "Modified Julian Day";
+"TruncatedJulianDay"    = "Truncated Julian Day";
+"CNESJulianDay"         = "CNES Julian Day";
+"CCSDSJulianDay"        = "CCSDS Julian Day";
+"LilianDate"            = "Lilian Date";
+"RataDie"               = "Rata Die";
+"HebrewSolar"           = "עברי (יהודי) (יום מתחיל בשקיעה)";
+"IslamicSolar"          = "מוסלמי (יום מתחיל בשקיעה)";
+"IslamicCivilSolar"     = "מוסלמי אזרחי (יום מתחיל בשקיעה)";
+"IslamicTabularSolar"   = "מוסלמי טבלאי (יום מתחיל בשקיעה)";
+"IslamicUmmAlQuraSolar" = "מוסלמי אום אל-קורה (יום מתחיל בשקיעה)";
+
+"DEFAULT_LOCALE" = "בחירת מחדל";
+
+//"HEADER_Preview" = "Preview";
+
+"HEADER_E" = "יום בשבוע";
+"ITEM_E_"       = "אין";
+"ITEM_E_eeeee"  = "צר (אות 1)";
+"ITEM_E_eeeeee" = "מקוצר";
+"ITEM_E_eee"    = "ראשי תיבות";
+"ITEM_E_eeee"   = "רחב";
+"ITEM_E_e"      = "ספרה 1";
+"ITEM_E_ee"     = "2 ספרות";
+
+"HEADER_y" = "שנה";
+"ITEM_y_"     = "אין";
+"ITEM_y_y"    = "מלאה";
+"ITEM_y_yy"   = "רק 2 ספרות";
+"ITEM_y_yyy"  = "לפחות 3 ספרות";
+"ITEM_y_yyyy" = "לפחות 4 ספרות";
+
+"HEADER_M" = "חודש";
+"ITEM_M_"      = "אין";
+"ITEM_M_MMMMM" = "צר";
+"ITEM_M_MMM"   = "ראשי תיבות";
+"ITEM_M_MMMM"  = "רחב";
+"ITEM_M_M"     = "ספרה 1";
+"ITEM_M_MM"    = "2 ספרות";
+
+"HEADER_d" = "יום";
+"ITEM_d_"   = "אין";
+"ITEM_d_d"  = "ספרות מינימליות";
+"ITEM_d_dd" = "2 ספרות";
+
+"HEADER_G" = "תקופה";
+"ITEM_G_"       = "אין";
+"ITEM_G_GGGGG"  = "צרה";
+"ITEM_G_G"      = "ראשי תיבות";
+"ITEM_G_GGGG"   = "רחבה";
+
+"HEADER_Y" = "שנה לשבוע בשנה";
+"ITEM_Y_"     = "אין";
+"ITEM_Y_Y"    = "מלאה";
+"ITEM_Y_YY"   = "רק 2 ספרות";
+"ITEM_Y_YYY"  = "לפחות 3 ספרות";
+"ITEM_Y_YYYY" = "לפחות 4 ספרות";
+
+"HEADER_U" = "שנה מחזורית";
+"ITEM_U_"      = "אין";
+"ITEM_U_UUUUU" = "צרה";
+"ITEM_U_U"     = "ראשי תיבות";
+"ITEM_U_UUUU"  = "רחבה";
+
+//"HEADER_r" = "Related Gregorian year";
+//"ITEM_r_"     = "אין";
+//"ITEM_r_r"    = "ספרות מינימליות";
+//"ITEM_r_rr"   = "לפחות 2 ספרות";
+//"ITEM_r_rrr"  = לפחות 3 ספרות;
+//"ITEM_r_rrrr" = לפחות 4 ספרות;
+
+"HEADER_Q" = "רבעון";
+"ITEM_Q_"      = "אין";
+"ITEM_Q_Q"     = "ספרה 1";
+"ITEM_Q_QQ"    = "2 ספרות";
+"ITEM_Q_QQQQQ" = "צר";
+"ITEM_Q_QQQ"   = "ראשי תיבות";
+"ITEM_Q_QQQQ"  = "רחב";
+
+"HEADER_w" = "שבוע בשנה";
+"ITEM_w_"   = "אין";
+"ITEM_w_w"  = "ספרות מינימליות";
+"ITEM_w_ww" = "2 ספרות";
+
+"HEADER_W" = "שבוע בחודש";
+"ITEM_W_"  = "אין";
+"ITEM_W_W" = "ספרה 1";
+
+"HEADER_D" = "יום בשנה";
+"ITEM_D_"    = "אין";
+"ITEM_D_D"   = "ספרות מינימליות";
+"ITEM_D_DD"  = "לפחות 2 ספרות";
+"ITEM_D_DDD" = "3 digits";
+
+"HEADER_F" = "יום בשבוע בחודש";
+"ITEM_F_"  = "אין";
+"ITEM_F_F" = "ספרה 1";
+
+//"HEADER_g" = "Modified Julian day";
+//"ITEM_g_"   = "אין";
+//"ITEM_g_g"  = "ספרות מינימליות";
+
+"HEADER_-" = "מפריד מקף בתאריך";
+"ITEM_-_"   = "אין";
+"ITEM_-_-"  = "יש";
+
+"HEADER_Row" = "שורה";
+
+"HEADER_Calendar" = "לוח שנה";
+
+"HEADER_Locale"   = "אזור";
+
+"HEADER_Date_format" = "מבנה תאריך";
+"ITEM_Full"          = "מלא";
+"ITEM_Long"          = "ארוך";
+"ITEM_Medium"        = "בינוני";
+"ITEM_Short"         = "מקוצר";
+"ITEM_Components"    = "רכיבים";
+//"ITEM_Raw_LDML"      = "Raw LDML";
+
+"HEADER_Date" = "רכיבי תאריך";
+
+"HEADER_Other" = "אחרים";
+"ITEM_NEXT_DATE_TRANSITION" = "תחילת היום הבא";
+
+"HEADER_TIME_ZONE" = "שעון מקומי";
+
+"HEADER_LOCATION" = "מקום";
+
+"HEADER_MODULAR_LARGE" = "Modular large";
+
+"AUTOUPDATING_CURRENT_TIME_ZONE" = "נוכחי מעודכן אוטומטית";
+
+"DEVICE_LOCATION" = "מקום המכשיר";
+
+"HEADER_EVENTS" = "אירועים";
+
+"midnight"                    = "חצות הלילה";
+"sunrise"                     = "נץ החמה";
+"noon"                        = "חצות היום";
+"sunset"                      = "שקיעת החמה";
+"morningCivilTwilight"        = "Morning civil twilight";
+"eveningCivilTwilight"        = "Evening civil twilight";
+"morningNauticalTwilight"     = "Morning nautical twilight";
+"eveningNauticalTwilight"     = "Evening nautical twilight";
+"morningAstronomicalTwilight" = "Morning astronomical twilight";
+"eveningAstronomicalTwilight" = "Evening astronomical twilight";
+"dawn"                        = "עלות השחר (16.1°)";
+"recognition"                 = "משיכיר (11°)";
+"hour03"                      = "סוף זמן קריאת שמע (גר״א)";
+"hour04"                      = "סוף זמן תפילה (גר״א)";
+"hour06½"                     = "מנחה גדולה (גר״א)";
+"hour09½"                     = "מנחה קטנה (גר״א)";
+"hour10¾"                     = "פלג המנחה (גר״א)";
+"candlelighting"              = "הדלקת נרות (18 דקות)";
+"dusk"                        = "צאת הכוכבים (8.5°)";
+"otherDawn"                   = "עלות השחר (72 דקות)";
+"otherHour03"                 = "סוף זמן קריאת שמע (מ״א)";
+"otherHour04"                 = "סוף זמן תפילה (מ״א)";
+"otherHour06½"                = "מנחה גדולה (מ״א)";
+"otherHour09½"                = "מנחה קטנה (מ״א)";
+"otherHour10¾"                = "פלג המנחה (מ״א)";
+"otherDusk"                   = "צאת הכוכבים (72 דקות)";

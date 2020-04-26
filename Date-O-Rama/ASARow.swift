@@ -115,8 +115,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     // MARK: -
     
-    public func details() -> Array<ASADetail> {
-        return self.calendar.details()
+    public func details() -> Array<ASALDMLDetail> {
+        return self.calendar.LDMLDetails()
     } // public func details() -> Array<ASADetail>
     
     public func supportsLocales() -> Bool {

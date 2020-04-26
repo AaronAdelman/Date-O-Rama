@@ -40,7 +40,7 @@
 
 "DEFAULT_LOCALE" = "Default";
 
-"HEADER_Preview" = "Preview";
+//"HEADER_Preview" = "Preview";
 
 "HEADER_E" = "Weekday";
 "ITEM_E_"       = "None";
@@ -90,12 +90,12 @@
 "ITEM_U_U"     = "Abbreviated";
 "ITEM_U_UUUU"  = "Wide";
 
-"HEADER_r" = "Related Gregorian year";
-"ITEM_r_"     = "None";
-"ITEM_r_r"    = "Minimum digits";
-"ITEM_r_rr"   = "≥ 2 digits";
-"ITEM_r_rrr"  = "≥ 3 digits";
-"ITEM_r_rrrr" = "≥ 4 digits";
+//"HEADER_r" = "Related Gregorian year";
+//"ITEM_r_"     = "None";
+//"ITEM_r_r"    = "Minimum digits";
+//"ITEM_r_rr"   = "≥ 2 digits";
+//"ITEM_r_rrr"  = "≥ 3 digits";
+//"ITEM_r_rrrr" = "≥ 4 digits";
 
 "HEADER_Q" = "Quarter";
 "ITEM_Q_"      = "None";
@@ -124,9 +124,9 @@
 "ITEM_F_"  = "None";
 "ITEM_F_F" = "1 digit";
 
-"HEADER_g" = "Modified Julian day";
-"ITEM_g_"   = "None";
-"ITEM_g_g"  = "Minimum digits";
+//"HEADER_g" = "Modified Julian day";
+//"ITEM_g_"   = "None";
+//"ITEM_g_g"  = "Minimum digits";
 
 "HEADER_-" = "Dash separator in date";
 "ITEM_-_"   = "None";
@@ -144,7 +144,7 @@
 "ITEM_Medium"        = "Medium";
 "ITEM_Short"         = "Short";
 "ITEM_Components"    = "Components";
-"ITEM_Raw_LDML"      = "Raw LDML";
+//"ITEM_Raw_LDML"      = "Raw LDML";
 
 "HEADER_Date" = "Date components";
 

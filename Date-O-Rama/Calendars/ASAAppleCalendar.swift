@@ -86,20 +86,20 @@ class ASAAppleCalendar:  ASACalendar {
         return "eee, d MMM y"
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
-    func details() -> Array<ASADetail> {
+    func LDMLDetails() -> Array<ASALDMLDetail> {
         if self.calendarCode == .Gregorian {
                     return [
-                        ASADetail(name: "HEADER_G", geekCode: "GGGG"),
-                        ASADetail(name: "HEADER_y", geekCode: "y"),
-                        ASADetail(name: "HEADER_M", geekCode: "MMMM"),
-                        ASADetail(name: "HEADER_d", geekCode: "d"),
-                        ASADetail(name: "HEADER_E", geekCode: "eeee"),
-                        ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                        ASADetail(name: "HEADER_Y", geekCode: "Y"),
-                        ASADetail(name: "HEADER_w", geekCode: "w"),
-                        ASADetail(name: "HEADER_W", geekCode: "W"),
-                        ASADetail(name: "HEADER_F", geekCode: "F"),
-                        ASADetail(name: "HEADER_D", geekCode: "D"),
+                        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+                        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+                        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+                        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+                        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+                        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+                        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+                        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+                        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+                        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+                        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
             //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
 //                        ASADetail(name: "HEADER_r", geekCode: "r"),
             //            ASADetail(name: "HEADER_g", geekCode: "g")
@@ -108,40 +108,44 @@ class ASAAppleCalendar:  ASACalendar {
         
         if self.calendarCode == .Chinese {
             return [
-                        ASADetail(name: "HEADER_G", geekCode: "GGGG"),
-                        ASADetail(name: "HEADER_y", geekCode: "y"),
-                        ASADetail(name: "HEADER_M", geekCode: "MMMM"),
-                        ASADetail(name: "HEADER_d", geekCode: "d"),
-                        ASADetail(name: "HEADER_E", geekCode: "eeee"),
-                        ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                        ASADetail(name: "HEADER_Y", geekCode: "Y"),
-                        ASADetail(name: "HEADER_w", geekCode: "w"),
-                        ASADetail(name: "HEADER_W", geekCode: "W"),
-                        ASADetail(name: "HEADER_F", geekCode: "F"),
-                        ASADetail(name: "HEADER_D", geekCode: "D"),
-                        ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-                        ASADetail(name: "HEADER_r", geekCode: "r"),
+                        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+                        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+                        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+                        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+                        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+                        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+                        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+                        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+                        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+                        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+                        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+                        ASALDMLDetail(name: "HEADER_U", geekCode: "UUUU"),
+//                        ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
             //            ASADetail(name: "HEADER_g", geekCode: "g")
                     ]
         }
         
         return [
-            ASADetail(name: "HEADER_G", geekCode: "GGGG"),
-            ASADetail(name: "HEADER_y", geekCode: "y"),
-            ASADetail(name: "HEADER_M", geekCode: "MMMM"),
-            ASADetail(name: "HEADER_d", geekCode: "d"),
-            ASADetail(name: "HEADER_E", geekCode: "eeee"),
-            ASADetail(name: "HEADER_Q", geekCode: "QQQQ"),
-            ASADetail(name: "HEADER_Y", geekCode: "Y"),
-            ASADetail(name: "HEADER_w", geekCode: "w"),
-            ASADetail(name: "HEADER_W", geekCode: "W"),
-            ASADetail(name: "HEADER_F", geekCode: "F"),
-            ASADetail(name: "HEADER_D", geekCode: "D"),
+            ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+            ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+            ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+            ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+            ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+            ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+            ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+            ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+            ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+            ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+            ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
 //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-            ASADetail(name: "HEADER_r", geekCode: "r"),
+//            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
 //            ASADetail(name: "HEADER_g", geekCode: "g")
         ]
     } // func details() -> Array<ASADetail>
+    
+    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+        return []
+    } // func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
     
     func supportsLocales() -> Bool {
         return true
@@ -162,4 +166,8 @@ class ASAAppleCalendar:  ASACalendar {
     func supportsLocations() -> Bool {
         return false
     } // func supportsLocations() -> Bool
+    
+    func supportsEventDetails() -> Bool {
+        return false
+    } // func supportsEventDetails() -> Bool
 } // class ASAAppleCalendar

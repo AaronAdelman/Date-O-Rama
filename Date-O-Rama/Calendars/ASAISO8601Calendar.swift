@@ -78,19 +78,23 @@ class ASAISO8601Calendar:  ASACalendar {
     
     // MARK: -
     
-    public func details() -> Array<ASADetail> {
+    public func LDMLDetails() -> Array<ASALDMLDetail> {
         return [
-            ASADetail(name: "HEADER_y", geekCode: "yyyy"),
-            ASADetail(name: "HEADER_M", geekCode: "MM"),
-            ASADetail(name: "HEADER_d", geekCode: "dd"),
-            ASADetail(name: "HEADER_Y", geekCode: "Y"),
-            ASADetail(name: "HEADER_w", geekCode: "ww"),
-            ASADetail(name: "HEADER_E", geekCode: "e"),
-            ASADetail(name: "HEADER_D", geekCode: "D")
+            ASALDMLDetail(name: "HEADER_y", geekCode: "yyyy"),
+            ASALDMLDetail(name: "HEADER_M", geekCode: "MM"),
+            ASALDMLDetail(name: "HEADER_d", geekCode: "dd"),
+            ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+            ASALDMLDetail(name: "HEADER_w", geekCode: "ww"),
+            ASALDMLDetail(name: "HEADER_E", geekCode: "e"),
+            ASALDMLDetail(name: "HEADER_D", geekCode: "D")
 //            ,
 //            ASADetail(name: "HEADER_g", geekCode: "g")
         ]
     } // public func details() -> Array<ASADetail>
+    
+    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+        return []
+    } // func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
     
     public func supportsLocales() -> Bool {
         return false
@@ -111,4 +115,8 @@ class ASAISO8601Calendar:  ASACalendar {
     func supportsLocations() -> Bool {
         return false
     } // func supportsLocations() -> Bool
+    
+    func supportsEventDetails() -> Bool {
+        return false
+    } // func supportsEventDetails() -> Bool
 } // class ASAISO8601Calendar

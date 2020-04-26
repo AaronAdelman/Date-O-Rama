@@ -72,7 +72,7 @@ extension String {
                     "W": "",
                     "D": "",
                     "F": "",
-                    "g": "",
+//                    "g": "",
                     "-": "-"
                 ]
                 debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
@@ -92,7 +92,7 @@ extension String {
                     "W": "",
                     "D": "",
                     "F": "",
-                    "g": "",
+//                    "g": "",
                     "-": ""
                 ]
                 debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")

@@ -71,9 +71,13 @@ class ASAJulianDayCalendar:  ASACalendar {
         return self.dateString(now: now, localeIdentifier: localeIdentifier)
     } // func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
-    func details() -> Array<ASADetail> {
+    func LDMLDetails() -> Array<ASALDMLDetail> {
         return []
     } // func details() -> Array<ASADetail>
+    
+    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+        return []
+    } // func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
     
     func supportsLocales() -> Bool {
         return true
@@ -103,4 +107,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     func supportsLocations() -> Bool {
         return false
     } // func supportsLocations() -> Bool
+    
+    func supportsEventDetails() -> Bool {
+        return false
+    } // func supportsEventDetails() -> Bool
 } // class ASAJulianDayCalendar

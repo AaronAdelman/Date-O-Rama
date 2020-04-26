@@ -33,13 +33,13 @@ struct ASAFormatPickerView: View {
                     ASAComponentsPickerSection(headerCode: "G", items: ["", "GGGGG", "G", "GGGG"]),
                     ASAComponentsPickerSection(headerCode: "Y", items: ["", "Y", "YY", "YYY", "YYYY"]),
                     ASAComponentsPickerSection(headerCode: "U", items: ["", "UUUUU", "U", "UUUU"]),
-                    ASAComponentsPickerSection(headerCode: "r", items: ["", "r", "rr", "rrr", "rrrr"]),
+//                    ASAComponentsPickerSection(headerCode: "r", items: ["", "r", "rr", "rrr", "rrrr"]),
                     ASAComponentsPickerSection(headerCode: "Q", items: ["", "Q", "QQ", "QQQQQ", "QQQ", "QQQQ"]),
                     ASAComponentsPickerSection(headerCode: "w", items: ["", "w", "ww"]),
                     ASAComponentsPickerSection(headerCode: "W", items: ["", "W"]),
                     ASAComponentsPickerSection(headerCode: "D", items: ["", "D", "DD", "DDD"]),
                     ASAComponentsPickerSection(headerCode: "F", items: ["", "F"]),
-                    ASAComponentsPickerSection(headerCode: "g", items: ["", "g"])
+//                    ASAComponentsPickerSection(headerCode: "g", items: ["", "g"])
                 ]
             }
         } // get
