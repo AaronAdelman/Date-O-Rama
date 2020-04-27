@@ -36,13 +36,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
     
-    @Published var timeZoneIdentifier:  String = TimeZone.autoupdatingCurrent.identifier {
-        didSet {
-            self.timeZone = TimeZone(identifier: self.timeZoneIdentifier) ?? TimeZone.autoupdatingCurrent
-        } // didSet
-    } // var timeZoneIdentifier
-    
-    public var timeZone:  TimeZone = TimeZone.autoupdatingCurrent
+    @Published var timeZone:  TimeZone = TimeZone.autoupdatingCurrent
     
     // MARK: -
     
@@ -52,7 +46,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
-            TIME_ZONE_KEY:  timeZoneIdentifier
+            TIME_ZONE_KEY:  timeZone.identifier
         ]
         return result
     } // public func dictionary() -> Dictionary<String, String?>
@@ -83,7 +77,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY]
         if timeZoneIdentifier != nil {
-            newRow.timeZoneIdentifier = timeZoneIdentifier!!
+            newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!!)!
         }
         
         return newRow
@@ -94,7 +88,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         temp.calendar = ASAAppleCalendar(calendarCode: .Gregorian)
         temp.localeIdentifier = ""
         temp.majorDateFormat = .full
-        temp.timeZoneIdentifier = TimeZone.autoupdatingCurrent.identifier
+        temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
     
@@ -104,7 +98,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         temp.localeIdentifier = "en_US"
         temp.majorDateFormat = .localizedLDML
         temp.dateGeekFormat = "eeeyMMMd"
-        temp.timeZoneIdentifier = TimeZone.autoupdatingCurrent.identifier
+        temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
     
@@ -120,7 +114,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         tempRow.localeIdentifier = self.localeIdentifier
         tempRow.majorDateFormat = self.majorDateFormat
         tempRow.dateGeekFormat = self.dateGeekFormat
-        tempRow.timeZoneIdentifier = self.timeZoneIdentifier
+        tempRow.timeZone = TimeZone(identifier: self.timeZone.identifier)!
         return tempRow
     } // func copy() -> ASARow
     
