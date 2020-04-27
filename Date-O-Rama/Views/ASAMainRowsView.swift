@@ -38,9 +38,15 @@ struct ASAMainRowsView: View {
                     ) {
                         VStack(alignment: .leading) {
                             Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.currentLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                            Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                            HStack {
+                                Image(systemName: "calendar")
+                                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                            }
                             if row.calendar.supportsTimeZones() {
-                                Text(verbatim: row.timeZone.abbreviation() ?? "")
+                                HStack {
+                                    Image(systemName: "globe")
+                                    Text(verbatim: "\(row.timeZone.localizedName(for: row.timeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.autoupdatingCurrent) ?? "") • \(row.timeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                                }
                             }
                         }
                     }
