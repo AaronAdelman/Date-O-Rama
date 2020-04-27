@@ -9,17 +9,39 @@
 import SwiftUI
 import CoreLocation
 
+extension String {
+    func systemIconName() -> String? {
+        switch self {
+        case SUNRISE_KEY:
+            return "sunrise"
+           
+            case SUNSET_KEY:
+            return "sunset"
+            
+        default:
+            return nil
+        } // switch self
+    } // func systemIconName() -> String?
+} // extension ASASolarEvent
+
+
 struct ASACalendarDetailCell:  View {
     var title:  String
     var detail:  String
+    var systemIconName:  String?
+    
     var body:  some View {
         HStack {
+            if systemIconName != nil {
+                Image(systemName: systemIconName!)
+            }
             Text(verbatim:  title).bold()
             Spacer()
             Text(verbatim:  detail).multilineTextAlignment(.trailing)
         } // HStack
     } // var body
 } // struct ASADetailCell
+
 
 struct ASACalendarTimeZoneCell:  View {
     var timeZone:  TimeZone
@@ -112,7 +134,7 @@ struct ASACalendarDetailView: View {
                         ForEach(selectedRow.calendar.eventDetails(date: now, location: currentLocation), id: \.key) {
                             detail
                             in
-                            ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : DateFormatter.localizedString(from: detail.value!, dateStyle: .none, timeStyle: .medium))
+                            ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : DateFormatter.localizedString(from: detail.value!, dateStyle: .none, timeStyle: .medium), systemIconName: detail.key.systemIconName())
                         }
                     }
                 }
