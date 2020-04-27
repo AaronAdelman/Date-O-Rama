@@ -27,7 +27,7 @@ class ASAAppleCalendar:  ASACalendar {
         // TODO:  Update when times are supported!
         
         if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.current
+            self.dateFormatter.locale = Locale.autoupdatingCurrent
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
@@ -170,4 +170,8 @@ class ASAAppleCalendar:  ASACalendar {
     func supportsEventDetails() -> Bool {
         return false
     } // func supportsEventDetails() -> Bool
+    
+    func timeZone(location:  CLLocation?) -> TimeZone {
+        return TimeZone.autoupdatingCurrent
+    } // func timeZone(location:  CLLocation?) -> TimeZone
 } // class ASAAppleCalendar

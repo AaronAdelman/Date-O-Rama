@@ -63,7 +63,7 @@ class ASASolarCalendar:  ASACalendar {
         let fixedNow = now.solarCorrected(location: location!)
 
         if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.current
+            self.dateFormatter.locale = Locale.autoupdatingCurrent
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
@@ -248,7 +248,7 @@ class ASASolarCalendar:  ASACalendar {
     } // func supportsDateFormats() -> Bool
 
     func supportsTimeZones() -> Bool {
-        return true
+        return false
     } // func supportsTimeZones() -> Bool
 
     func transitionToNextDay(now: Date, location: CLLocation) -> Date {
@@ -264,4 +264,9 @@ class ASASolarCalendar:  ASACalendar {
     func supportsEventDetails() -> Bool {
         return true
     } // func supportsEventDetails() -> Bool
+    
+    
+    func timeZone(location:  CLLocation?) -> TimeZone {
+        return TimeZone.autoupdatingCurrent // FIX THIS
+    } // func timeZone(location:  CLLocation?) -> TimeZone
 }

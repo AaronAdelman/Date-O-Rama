@@ -73,9 +73,9 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsTimeZones() {
-                        ASACalendarTimeZoneCell(timeZone: TimeZone.autoupdatingCurrent, now: now)
+                        ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
                     } else {
-                        ASACalendarTimeZoneCell(timeZone: TimeZone(secondsFromGMT: 0)!, now: now)
+                        ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.currentLocation), now: now)
                     }
                     if selectedRow.calendar.supportsLocations() {
                         HStack {

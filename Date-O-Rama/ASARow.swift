@@ -9,13 +9,23 @@
 import UIKit
 import CoreLocation
 
-class ASARow: NSObject, ObservableObject, Identifiable {    
+let LOCALE_KEY:  String            = "locale"
+let CALENDAR_KEY:  String          = "calendar"
+let MAJOR_DATE_FORMAT_KEY:  String = "majorDateFormat"
+let DATE_GEEK_FORMAT_KEY:  String  = "geekFormat"
+let TIME_ZONE_KEY:  String         = "timeZone"
+
+// MARK: -
+
+
+class ASARow: NSObject, ObservableObject, Identifiable {
     var uid = UUID()
+
     @Published var dummy = false
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian)
         
-    @Published var localeIdentifier:  String = Locale.current.identifier
+    @Published var localeIdentifier:  String = Locale.autoupdatingCurrent.identifier
     
     @Published var majorDateFormat:  ASAMajorFormat = .full {
         didSet {
@@ -26,16 +36,23 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
     
+    @Published var timeZoneIdentifier:  String = TimeZone.autoupdatingCurrent.identifier {
+        didSet {
+            self.timeZone = TimeZone(identifier: self.timeZoneIdentifier) ?? TimeZone.autoupdatingCurrent
+        } // didSet
+    } // var timeZoneIdentifier
+    
+    public var timeZone:  TimeZone = TimeZone.autoupdatingCurrent
     
     // MARK: -
     
     public func dictionary() -> Dictionary<String, String?> {
         let result = [
-            "locale":  localeIdentifier,
-            //                "calendar":  calendarCode.rawValue,
-            "calendar":  calendar.calendarCode.rawValue,
-            "majorDateFormat":  majorDateFormat.rawValue ,
-            "geekFormat":  dateGeekFormat
+            LOCALE_KEY:  localeIdentifier,
+            CALENDAR_KEY:  calendar.calendarCode.rawValue,
+            MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
+            DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
+            TIME_ZONE_KEY:  timeZoneIdentifier
         ]
         return result
     } // public func dictionary() -> Dictionary<String, String?>
@@ -43,25 +60,30 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     public class func newRow(dictionary:  Dictionary<String, String?>) -> ASARow {
         let newRow = ASARow()
         
-        let localeIdentifier = dictionary["locale"]
+        let localeIdentifier = dictionary[LOCALE_KEY]
         if localeIdentifier != nil {
             newRow.localeIdentifier = localeIdentifier!!
         }
 
-        let calendarCode = dictionary["calendar"]
+        let calendarCode = dictionary[CALENDAR_KEY]
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!!) ?? ASACalendarCode.Gregorian
             newRow.calendar = ASACalendarFactory.calendar(code: code)!
         }
         
-        let majorDateFormat = dictionary["majorDateFormat"]
+        let majorDateFormat = dictionary[MAJOR_DATE_FORMAT_KEY]
         if majorDateFormat != nil {
             newRow.majorDateFormat = ASAMajorFormat(rawValue: majorDateFormat!!)!
         }
         
-        let geekFormat = dictionary["geekFormat"]
-        if geekFormat != nil {
-            newRow.dateGeekFormat = geekFormat!!
+        let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY]
+        if dateGeekFormat != nil {
+            newRow.dateGeekFormat = dateGeekFormat!!
+        }
+        
+        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY]
+        if timeZoneIdentifier != nil {
+            newRow.timeZoneIdentifier = timeZoneIdentifier!!
         }
         
         return newRow
@@ -72,7 +94,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         temp.calendar = ASAAppleCalendar(calendarCode: .Gregorian)
         temp.localeIdentifier = ""
         temp.majorDateFormat = .full
-        
+        temp.timeZoneIdentifier = TimeZone.autoupdatingCurrent.identifier
         return temp
     } // func generic() -> ASARow
     
@@ -82,7 +104,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         temp.localeIdentifier = "en_US"
         temp.majorDateFormat = .localizedLDML
         temp.dateGeekFormat = "eeeyMMMd"
-        
+        temp.timeZoneIdentifier = TimeZone.autoupdatingCurrent.identifier
         return temp
     } // func generic() -> ASARow
     
@@ -98,6 +120,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         tempRow.localeIdentifier = self.localeIdentifier
         tempRow.majorDateFormat = self.majorDateFormat
         tempRow.dateGeekFormat = self.dateGeekFormat
+        tempRow.timeZoneIdentifier = self.timeZoneIdentifier
         return tempRow
     } // func copy() -> ASARow
     
@@ -105,11 +128,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     //MARK: -
     
     public func dateString(now:  Date, defaultLocation:  CLLocation) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: defaultLocation, timeZone: TimeZone.autoupdatingCurrent)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: defaultLocation, timeZone: self.timeZone)
     } // func dateString(now:  Date) -> String
     
     public func dateString(now:  Date, LDMLString:  String, defaultLocation:  CLLocation) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: defaultLocation, timeZone: TimeZone.autoupdatingCurrent)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: defaultLocation, timeZone: self.timeZone)
     } // func dateString(now:  Date, LDMLString:  String) -> String
     
     

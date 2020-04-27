@@ -66,7 +66,8 @@ struct ASAMainRowsView: View {
                         }
                 }
                 ) {
-                    Image(systemName: "plus")
+//                    Image(systemName: "plus")
+                    Image(systemName: "calendar.badge.plus")
                 }
             )
             ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
