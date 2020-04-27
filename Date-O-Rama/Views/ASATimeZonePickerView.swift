@@ -29,7 +29,7 @@ struct ASATimeZoneCell: View {
             Text(verbatim: record.abbreviation).frame(width: 100.0).multilineTextAlignment(.center)
             Spacer()
             Text(verbatim: record.localizedName).frame(width:  150.0).multilineTextAlignment(.leading)
-            if self.record.identifier == self.selectedTimeZone.identifier {
+            if self.record.timeZone == self.selectedTimeZone {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor).frame(width:  CHECKMARK_WIDTH)
             } else {
@@ -43,7 +43,9 @@ struct ASATimeZoneCell: View {
 struct ASATimeZonePickerView: View {
     var timeZoneRecords:  Array<ASATimeZoneRecord> = {
         let now = Date()
-        var result:  Array<ASATimeZoneRecord> = []
+        var result:  Array<ASATimeZoneRecord> = [
+            ASATimeZoneRecord(identifier: TimeZone.autoupdatingCurrent.identifier, timeZone: TimeZone.autoupdatingCurrent, abbreviation: TimeZone.autoupdatingCurrent.abbreviation() ?? "", localizedName: NSLocalizedString("AUTOUPDATING_CURRENT_TIME_ZONE", comment: ""))
+        ]
         for identifier in TimeZone.knownTimeZoneIdentifiers {
             let timeZone = TimeZone(identifier: identifier)!
             let abbreviation: String = timeZone.abbreviation(for:  now) ?? ""

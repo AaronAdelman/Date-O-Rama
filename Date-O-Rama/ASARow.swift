@@ -15,6 +15,8 @@ let MAJOR_DATE_FORMAT_KEY:  String = "majorDateFormat"
 let DATE_GEEK_FORMAT_KEY:  String  = "geekFormat"
 let TIME_ZONE_KEY:  String         = "timeZone"
 
+let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
+
 // MARK: -
 
 
@@ -46,7 +48,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
-            TIME_ZONE_KEY:  timeZone.identifier
+            TIME_ZONE_KEY:  timeZone == TimeZone.autoupdatingCurrent ? AUTOUPDATING_CURRENT_TIME_ZONE_VALUE : timeZone.identifier
         ]
         return result
     } // public func dictionary() -> Dictionary<String, String?>
@@ -77,7 +79,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY]
         if timeZoneIdentifier != nil {
-            newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!!)!
+            if timeZoneIdentifier! == AUTOUPDATING_CURRENT_TIME_ZONE_VALUE {
+                newRow.timeZone = TimeZone.autoupdatingCurrent
+            } else {
+                newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!!)!
+            }
         }
         
         return newRow
