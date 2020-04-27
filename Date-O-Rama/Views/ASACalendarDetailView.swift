@@ -82,7 +82,10 @@ struct ASACalendarDetailView: View {
             if selectedRow.dummy != true {
                 Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                     NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow, currentLocation: self.currentLocation)) {
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
+                        HStack {
+                            Image(systemName: "calendar")
+                            ASACalendarDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
+                        }
                     }
                     if selectedRow.supportsLocales() {
                         NavigationLink(destination: ASALocalePickerView(row: selectedRow, currentLocation: self.currentLocation)) {
@@ -96,13 +99,20 @@ struct ASACalendarDetailView: View {
                     }
                     if selectedRow.calendar.supportsTimeZones() {
                         NavigationLink(destination: ASATimeZonePickerView(row: selectedRow)) {
-                        ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
+                            HStack {
+                                Image(systemName: "globe")
+                                ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
+                            }
                         }
                     } else {
-                        ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.currentLocation), now: now)
+                        HStack {
+                            Image(systemName: "globe")
+                            ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.currentLocation), now: now)
+                        }
                     }
                     if selectedRow.calendar.supportsLocations() {
                         HStack {
+                            Image(systemName: "mappin.and.ellipse")
                             Text("HEADER_LOCATION").bold()
                             Spacer()
                             VStack {
