@@ -151,9 +151,9 @@ class ASAAppleCalendar:  ASACalendar {
         return true
     } // func supportsLocales() -> Bool
     
-    func transitionToNextDay(now:  Date, location:  CLLocation) -> Date {
-        return now.nextMidnight(timeZone:  TimeZone.autoupdatingCurrent)
-    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation) -> Date
+    func transitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date {
+        return now.nextMidnight(timeZone:  timeZone)
+    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     
     func supportsDateFormats() -> Bool {
         return true

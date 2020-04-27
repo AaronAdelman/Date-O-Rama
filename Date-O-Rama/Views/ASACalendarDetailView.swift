@@ -73,7 +73,9 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsTimeZones() {
+                        NavigationLink(destination: ASATimeZonePickerView(row: selectedRow)) {
                         ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
+                        }
                     } else {
                         ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.currentLocation), now: now)
                     }
@@ -115,7 +117,7 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 Section(header:  Text("HEADER_Other")) {
-                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.transitionToNextDay(now: self.now, location: currentLocation), dateStyle: .full, timeStyle: .full))
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.transitionToNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone), dateStyle: .full, timeStyle: .full))
                 }
             } else {
                 //                Text("Detail view content goes here")

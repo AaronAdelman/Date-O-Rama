@@ -251,11 +251,11 @@ class ASASolarCalendar:  ASACalendar {
         return false
     } // func supportsTimeZones() -> Bool
 
-    func transitionToNextDay(now: Date, location: CLLocation) -> Date {
+    func transitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date {
         let fixedNow = now.solarCorrected(location: location)
         let events = fixedNow.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [.sunset])
     return events[.sunset]!!
-    } // func transitionToNextDay(now: Date, location: CLLocation) -> Date
+    } // func transitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
             
     func supportsLocations() -> Bool {
         return true

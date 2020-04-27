@@ -78,7 +78,7 @@ struct ASACalendarCell: View {
 //            self.selectedCalendarCode = self.calendarCode
 //        }
     } // var body
-}
+} // struct ASACalendarCell
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {

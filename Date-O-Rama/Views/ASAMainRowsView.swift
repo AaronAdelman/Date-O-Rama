@@ -75,7 +75,7 @@ struct ASAMainRowsView: View {
             }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {
-                    let transition = row.calendar.transitionToNextDay(now: self.now, location: self.currentLocation)
+                    let transition = row.calendar.transitionToNextDay(now: self.now, location: self.currentLocation, timeZone: row.timeZone)
 //                    debugPrint("\(#file) \(#function) Transition time:  \(transition); input time:  \(input)…")
 //                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
                     if  input >= transition {

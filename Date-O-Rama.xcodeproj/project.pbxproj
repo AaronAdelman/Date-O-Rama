@@ -12,6 +12,7 @@
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASolarCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASolarCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
+		A577DE172456F649008CC94F /* ASATimeZonePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE162456F649008CC94F /* ASATimeZonePickerView.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
@@ -65,6 +66,7 @@
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASolarCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
+		A577DE162456F649008CC94F /* ASATimeZonePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeZonePickerView.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
 		A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendar.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				A5D6285F243B79F300F3CC19 /* ASAFormatPickerView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */,
 				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
+				A577DE162456F649008CC94F /* ASATimeZonePickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASAFormatPickerView.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
+				A577DE172456F649008CC94F /* ASATimeZonePickerView.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
 				A53A5B0024519859005F9876 /* LocationManager.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
