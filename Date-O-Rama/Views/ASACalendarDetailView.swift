@@ -104,13 +104,13 @@ struct ASACalendarDetailView: View {
                     if selectedRow.calendar.supportsTimeZones() {
                         NavigationLink(destination: ASATimeZonePickerView(row: selectedRow)) {
                             HStack {
-                                Image(systemName: "globe")
+                                Text(selectedRow.timeZone.emoji(date:  now))
                                 ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
                             }
                         }
                     } else {
                         HStack {
-                            Image(systemName: "globe")
+                            Text(selectedRow.calendar.timeZone(location:  self.currentLocation).emoji(date:  now))
                             ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.currentLocation), now: now)
                         }
                     }

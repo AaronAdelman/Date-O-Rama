@@ -4,7 +4,7 @@
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-23.
 //  Copyright © 2020 Adelsoft. All rights reserved.
-//  From https://stackoverflow.com/questions/57681885/how-to-get-current-location-using-swiftui-without-viewcontrollers
+//  Based on https://stackoverflow.com/questions/57681885/how-to-get-current-location-using-swiftui-without-viewcontrollers
 //
 
 import Foundation
@@ -17,7 +17,8 @@ class LocationManager: NSObject, ObservableObject {
         super.init()
         self.locationManager.delegate = self
         
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
 
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()

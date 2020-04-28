@@ -55,7 +55,7 @@ struct ASAMainRowsView: View {
                             if row.calendar.supportsTimeZones() {
                                 HStack {
                                     Spacer().frame(width: self.INSET)
-                                    Image(systemName: "globe")
+                                    Text(row.timeZone.emoji(date:  self.now))
                                     Text(verbatim: "\(row.timeZone.localizedName(for: row.timeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.autoupdatingCurrent) ?? "") • \(row.timeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                                 }
                             }
