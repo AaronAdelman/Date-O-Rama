@@ -112,3 +112,19 @@ extension String {
     } // static func geekFormat(components:  Dictionary<String, String>) -> String
     
 } // extension String
+
+extension String {
+    // Based on https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode
+    // Converts a country code into a Unicode emoji flag
+    func flag() -> String {
+        if self == "" {
+            return "🏳️"
+        }
+        return self
+            .unicodeScalars
+            .map({ 127397 + $0.value })
+            .compactMap(UnicodeScalar.init)
+            .map(String.init)
+            .joined()
+    }
+}

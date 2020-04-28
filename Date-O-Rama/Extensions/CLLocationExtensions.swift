@@ -18,7 +18,7 @@ extension CLLocation {
         let absoluteLongitudeString = String(format: "%.4f", absoluteLongitude)
         let longitudeDirection = self.coordinate.longitude >= 0.0 ? "E" : "W"
         
-        let altitudeString = String(format: "%.2f", self.altitude)
+        let altitudeString = String(format: "%.0f", self.altitude)
 
         let result = "\(absoluteLatitudeString)°\(latituteDirection) \(absoluteLongitudeString)°\(longitudeDirection) \(altitudeString)m"
         return result

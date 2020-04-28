@@ -75,6 +75,7 @@ struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
     var currentLocation:  CLLocation
+    var currentPlacemark:  CLPlacemark?
     
     var body: some View {
         List {
@@ -127,7 +128,28 @@ struct ASACalendarDetailView: View {
                                     Spacer()
                                     Text(verbatim:  self.currentLocation.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
                                 }
-                            }
+                                if self.currentPlacemark?.name != nil {
+                                    HStack {
+                                        Spacer()
+                                        Text(self.currentPlacemark!.name!)
+                                    }
+                                }
+                                if self.currentPlacemark?.locality != nil {
+                                    HStack {
+                                        Spacer()
+                                        Text(self.currentPlacemark!.locality!)
+                                    }
+                                }
+                                if self.currentPlacemark != nil {
+                                    HStack {
+                                        Spacer()
+                                        if self.currentPlacemark?.country != nil {
+                                            Text(self.currentPlacemark!.country!)
+                                        }
+                                        Text((self.currentPlacemark!.isoCountryCode ?? "").flag())
+                                    }
+                                }
+                            } // VStack
                         } // HStack
                     }
                 }

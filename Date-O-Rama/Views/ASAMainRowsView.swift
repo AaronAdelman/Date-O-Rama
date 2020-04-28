@@ -24,6 +24,13 @@ struct ASAMainRowsView: View {
         } // get
     } // var currentLocation
     
+    var currentPlacemark:  CLPlacemark? {
+        get {
+            return self.locationManager.lastPlacemark
+        } // get
+    } // var currentPlacemark
+
+    
     let INSET = 25.0 as CGFloat
     
     var body: some View {
@@ -31,7 +38,7 @@ struct ASAMainRowsView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
-                        destination: ASACalendarDetailView(selectedRow: row, now: self.now, currentLocation: self.currentLocation)
+                        destination: ASACalendarDetailView(selectedRow: row, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
@@ -83,7 +90,7 @@ struct ASAMainRowsView: View {
                     Image(systemName: "calendar.badge.plus")
                 }
             )
-            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
+//            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
 //        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in

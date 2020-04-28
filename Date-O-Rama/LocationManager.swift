@@ -16,8 +16,9 @@ class LocationManager: NSObject, ObservableObject {
     override init() {
         super.init()
         self.locationManager.delegate = self
+        
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
     }
@@ -33,6 +34,13 @@ class LocationManager: NSObject, ObservableObject {
             objectWillChange.send()
         }
     }
+  
+    @Published var lastPlacemark: CLPlacemark? {
+        willSet {
+            objectWillChange.send()
+        }
+    }
+
 
     var statusString: String {
         guard let status = locationStatus else {
@@ -64,8 +72,20 @@ extension LocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        self.lastLocation = location
-        print(#function, location)
+//        self.lastLocation = location
+//        print(#function, location)
+        
+        let coder = CLGeocoder();
+        coder.reverseGeocodeLocation(location) { (placemarks, error) in
+            let place = placemarks?.last;
+
+            self.lastLocation = location
+            
+//            if place != nil {
+                self.lastPlacemark = place
+//            }
+            debugPrint(#file, #function, location, place as Any)
+        }
     }
 
 }
