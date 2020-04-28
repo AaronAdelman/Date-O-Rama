@@ -79,11 +79,17 @@ extension LocationManager: CLLocationManagerDelegate {
         coder.reverseGeocodeLocation(location) { (placemarks, error) in
             let place = placemarks?.last;
 
+            let Δ = self.lastLocation?.distance(from: location)
             self.lastLocation = location
             
-//            if place != nil {
+            if place != nil {
                 self.lastPlacemark = place
-//            }
+            } else {
+                // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than a kilometer to avoid the relevant info from disappearing needlessly.
+                if (Δ ?? 0.0) > 1000.0 {
+                    self.lastPlacemark = nil
+                }
+            }
             debugPrint(#file, #function, location, place as Any)
         }
     }
