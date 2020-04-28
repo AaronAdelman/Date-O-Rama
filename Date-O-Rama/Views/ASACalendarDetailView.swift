@@ -119,6 +119,7 @@ struct ASACalendarDetailView: View {
                                 if true {
                                     HStack {
                                         Spacer()
+                                        Image(systemName: "location")
                                         Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
                                     }
                                 }
