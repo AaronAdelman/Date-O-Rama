@@ -15,7 +15,7 @@ extension String {
         case SUNRISE_KEY:
             return "sunrise"
            
-            case SUNSET_KEY:
+            case SUNSET_KEY, PREVIOUS_SUNSET_KEY:
             return "sunset"
             
         default:

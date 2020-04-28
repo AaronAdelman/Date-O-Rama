@@ -163,6 +163,7 @@
 
 "HEADER_EVENTS" = "אירועים";
 
+"previousSunset"              = "שקיעת החמה";
 "midnight"                    = "חצות הלילה";
 "sunrise"                     = "נץ החמה";
 "noon"                        = "חצות היום";
@@ -173,6 +174,7 @@
 "eveningNauticalTwilight"     = "Evening nautical twilight";
 "morningAstronomicalTwilight" = "Morning astronomical twilight";
 "eveningAstronomicalTwilight" = "Evening astronomical twilight";
+"previousDusk"                = "צאת הכוכבים (8.5°)";
 "dawn"                        = "עלות השחר (16.1°)";
 "recognition"                 = "משיכיר (11°)";
 "hour03"                      = "סוף זמן קריאת שמע (גר״א)";
@@ -182,6 +184,7 @@
 "hour10¾"                     = "פלג המנחה (גר״א)";
 "candlelighting"              = "הדלקת נרות (18 דקות)";
 "dusk"                        = "צאת הכוכבים (8.5°)";
+"previousOtherDusk"           = "צאת הכוכבים (72 דקות)";
 "otherDawn"                   = "עלות השחר (72 דקות)";
 "otherHour03"                 = "סוף זמן קריאת שמע (מ״א)";
 "otherHour04"                 = "סוף זמן תפילה (מ״א)";
