@@ -116,7 +116,7 @@ struct ASACalendarDetailView: View {
                     }
                     if selectedRow.calendar.supportsLocations() {
                         HStack {
-                            Text((self.currentPlacemark!.isoCountryCode ?? "").flag())
+                            Text((self.currentPlacemark?.isoCountryCode ?? "").flag())
                             Text("HEADER_LOCATION").bold()
                             Spacer()
                             VStack {
