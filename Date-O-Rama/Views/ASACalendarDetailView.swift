@@ -90,7 +90,10 @@ struct ASACalendarDetailView: View {
                     }
                     if selectedRow.supportsLocales() {
                         NavigationLink(destination: ASALocalePickerView(row: selectedRow, currentLocation: self.currentLocation)) {
-                            ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+                            HStack {
+                                Image(systemName: "flag")
+                                ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+                            }
                         }
                     }
                     if selectedRow.calendar.supportsDateFormats() {
