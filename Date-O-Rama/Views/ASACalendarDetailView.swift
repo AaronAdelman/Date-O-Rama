@@ -64,7 +64,7 @@ struct ASACalendarTimeZoneCell:  View {
                 }
                 HStack {
                     Spacer()
-                    Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.autoupdatingCurrent) ?? "").multilineTextAlignment(.trailing)
+                    Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.current) ?? "").multilineTextAlignment(.trailing)
                 }
             }
         } // HStack

@@ -10,32 +10,27 @@ import Foundation
 import CoreLocation
 
 class ASAAppleCalendar:  ASACalendar {
-    var calendarIdentifier:  Calendar.Identifier?
+//    var calendarIdentifier:  Calendar.Identifier?
     
     var calendarCode:  ASACalendarCode
     
-    lazy var dateFormatter = DateFormatter()
+    var dateFormatter = DateFormatter()
     
     init(calendarCode:  ASACalendarCode) {
         self.calendarCode = calendarCode
-        self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        //        self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
         
-        dateFormatter.calendar = Calendar(identifier: calendarIdentifier!)
+        dateFormatter.calendar = Calendar(identifier: calendarIdentifier)
     }
     
     func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
         if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.autoupdatingCurrent
+            self.dateFormatter.locale = Locale.current
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-        }
-        
-        if timeZone == nil {
-            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
-            self.dateFormatter.timeZone = timeZone
         }
 
         if majorDateFormat == .localizedLDML {

@@ -27,7 +27,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian)
         
-    @Published var localeIdentifier:  String = Locale.autoupdatingCurrent.identifier
+    @Published var localeIdentifier:  String = Locale.current.identifier
     
     @Published var majorDateFormat:  ASAMajorFormat = .full {
         didSet {

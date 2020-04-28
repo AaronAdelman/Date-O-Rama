@@ -42,17 +42,18 @@ let OTHER_DUSK_KEY                    = "otherDusk"
 
 
 class ASASolarCalendar:  ASACalendar {
-    var calendarIdentifier:  Calendar.Identifier?
+//    var calendarIdentifier:  Calendar.Identifier?
     
     var calendarCode: ASACalendarCode
     
-    lazy var dateFormatter = DateFormatter()
+    var dateFormatter = DateFormatter()
     
     init(calendarCode:  ASACalendarCode) {
         self.calendarCode = calendarCode
-        self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        //        self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
         
-        dateFormatter.calendar = Calendar(identifier: calendarIdentifier!)
+        dateFormatter.calendar = Calendar(identifier: calendarIdentifier)
     } // init(calendarCode:  ASACalendarCode)
     
     func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String {
@@ -64,7 +65,7 @@ class ASASolarCalendar:  ASACalendar {
         let fixedNow = now.solarCorrected(location: location!)
         
         if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.autoupdatingCurrent
+            self.dateFormatter.locale = Locale.current
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }

@@ -49,7 +49,7 @@ struct ASATimeZonePickerView: View {
         for identifier in TimeZone.knownTimeZoneIdentifiers {
             let timeZone = TimeZone(identifier: identifier)!
             let abbreviation: String = timeZone.abbreviation(for:  now) ?? ""
-            let localizedName: String = timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.autoupdatingCurrent)!
+            let localizedName: String = timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.current)!
             let record = ASATimeZoneRecord(identifier: identifier, timeZone: timeZone, abbreviation: abbreviation, localizedName: localizedName)
             result.append(record)
         } // for identifier in TimeZone.knownTimeZoneIdentifiers
