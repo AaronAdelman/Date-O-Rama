@@ -91,7 +91,7 @@ struct ASACalendarDetailView: View {
                     if selectedRow.supportsLocales() {
                         NavigationLink(destination: ASALocalePickerView(row: selectedRow, currentLocation: self.currentLocation)) {
                             HStack {
-                                Image(systemName: "flag")
+                                Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
                                 ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                             }
                         }
@@ -116,7 +116,7 @@ struct ASACalendarDetailView: View {
                     }
                     if selectedRow.calendar.supportsLocations() {
                         HStack {
-                            Image(systemName: "mappin.and.ellipse")
+                            Text((self.currentPlacemark!.isoCountryCode ?? "").flag())
                             Text("HEADER_LOCATION").bold()
                             Spacer()
                             VStack {
@@ -149,7 +149,6 @@ struct ASACalendarDetailView: View {
                                         if self.currentPlacemark?.country != nil {
                                             Text(self.currentPlacemark!.country!)
                                         }
-                                        Text((self.currentPlacemark!.isoCountryCode ?? "").flag())
                                     }
                                 }
                             } // VStack

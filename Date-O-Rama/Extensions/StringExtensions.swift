@@ -117,14 +117,64 @@ extension String {
     // Based on https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode
     // Converts a country code into a Unicode emoji flag
     func flag() -> String {
+        let FAILURE_FLAG = "🏳️"
+        
         if self == "" {
-            return "🏳️"
+            return FAILURE_FLAG
         }
+        
+        if self.count == 3 {
+            switch self {
+                case "001":
+                return "🌍"
+                
+                case "002", "015", "202", "014", "017", "018", "011":
+                return "🌍"
+                
+                case "019", "419", "029", "013", "005", "003", "021":
+                return "🌎"
+                
+            case "142", "143", "030", "035", "034", "145":
+                return "🌏"
+                
+            case "150", "151", "154", "039", "155":
+                return "🌍"
+
+            case "009", "053", "054", "057", "061":
+                return "🌏"
+
+            default:
+                return FAILURE_FLAG
+            } // switch self
+        }
+        
         return self
             .unicodeScalars
             .map({ 127397 + $0.value })
             .compactMap(UnicodeScalar.init)
             .map(String.init)
             .joined()
+    } // func flag() -> String
+} // extension String
+
+extension String {
+    func localeCountryCode() -> String? {
+        let array = self.components(separatedBy: "_")
+        let count: Int = array.count
+        if count == 2 || count == 3 {
+            let countryCode = array[count - 1]
+            return countryCode
+        }
+        
+        return nil
     }
-}
+    
+    func localeCountryCodeFlag() -> String {
+        let countryCode = self.localeCountryCode()
+        if countryCode == nil {
+            return "🏳️"
+        }
+        
+        return countryCode!.flag()
+    }
+} // extension String
