@@ -9,16 +9,17 @@
 import UIKit
 import CoreLocation
 
-let LOCALE_KEY:  String            = "locale"
-let CALENDAR_KEY:  String          = "calendar"
-let MAJOR_DATE_FORMAT_KEY:  String = "majorDateFormat"
-let DATE_GEEK_FORMAT_KEY:  String  = "geekFormat"
-let TIME_ZONE_KEY:  String         = "timeZone"
-let LATITUDE_KEY:  String          = "latitude"
-let LONGITUDE_KEY:  String         = "longitude"
-let ALTITUDE_KEY:  String          = "altitude"
-let HORIZONTAL_ACCURACY_KEY:  String         = "haccuracy"
-let VERTICAL_ACCURACY_KEY:  String         = "vaccuracy"
+let LOCALE_KEY:  String               = "locale"
+let CALENDAR_KEY:  String             = "calendar"
+let MAJOR_DATE_FORMAT_KEY:  String    = "majorDateFormat"
+let DATE_GEEK_FORMAT_KEY:  String     = "geekFormat"
+let TIME_ZONE_KEY:  String            = "timeZone"
+let USES_DEVICE_LOCATION_KEY:  String = "usesDeviceLocation"
+let LATITUDE_KEY:  String             = "latitude"
+let LONGITUDE_KEY:  String            = "longitude"
+let ALTITUDE_KEY:  String             = "altitude"
+let HORIZONTAL_ACCURACY_KEY:  String  = "haccuracy"
+let VERTICAL_ACCURACY_KEY:  String    = "vaccuracy"
 
 let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
 let DEVICE_LOCATION_VALUE = -1000000.0 // Something implausible for latitude and longitude and fairly unlikely for an altitude
@@ -59,15 +60,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
             TIME_ZONE_KEY:  timeZone == TimeZone.autoupdatingCurrent ? AUTOUPDATING_CURRENT_TIME_ZONE_VALUE : timeZone.identifier,
-            LATITUDE_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.coordinate.latitude,
-            LONGITUDE_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.coordinate.longitude,
-            ALTITUDE_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.altitude,
-            HORIZONTAL_ACCURACY_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.horizontalAccuracy,
-            VERTICAL_ACCURACY_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.verticalAccuracy,
-            
-            
-            
-              
+            USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
+            LATITUDE_KEY:  self.location.coordinate.latitude,
+            LONGITUDE_KEY:  self.location.coordinate.longitude,
+            ALTITUDE_KEY:  self.location.altitude,
+            HORIZONTAL_ACCURACY_KEY:  self.location.horizontalAccuracy,
+            VERTICAL_ACCURACY_KEY:  self.location.verticalAccuracy
             ] as [String : Any]
         return result
     } // public func dictionary() -> Dictionary<String, Any>
@@ -105,18 +103,16 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             }
         }
         
+        let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool
         let latitude = dictionary[LATITUDE_KEY] as? Double
         let longitude = dictionary[LONGITUDE_KEY] as? Double
         let altitude = dictionary[ALTITUDE_KEY] as? Double
         let horizontalAccuracy = dictionary[HORIZONTAL_ACCURACY_KEY] as? Double
         let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
+        newRow.usesDeviceLocation = usesDeviceLocation ?? true
         if latitude != nil && longitude != nil {
-            if latitude == DEVICE_LOCATION_VALUE {
-                newRow.usesDeviceLocation = true
-            } else {
-                newRow.usesDeviceLocation = false
-                newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
-            }
+            newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
+            
         }
         
         return newRow
