@@ -14,11 +14,17 @@ let CALENDAR_KEY:  String          = "calendar"
 let MAJOR_DATE_FORMAT_KEY:  String = "majorDateFormat"
 let DATE_GEEK_FORMAT_KEY:  String  = "geekFormat"
 let TIME_ZONE_KEY:  String         = "timeZone"
+let LATITUDE_KEY:  String          = "latitude"
+let LONGITUDE_KEY:  String         = "longitude"
+let ALTITUDE_KEY:  String          = "altitude"
+let HORIZONTAL_ACCURACY_KEY:  String         = "haccuracy"
+let VERTICAL_ACCURACY_KEY:  String         = "vaccuracy"
 
 let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
+let DEVICE_LOCATION_VALUE = -1000000.0 // Something implausible for latitude and longitude and fairly unlikely for an altitude
+
 
 // MARK: -
-
 
 class ASARow: NSObject, ObservableObject, Identifiable {
     var uid = UUID()
@@ -40,51 +46,76 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @Published var timeZone:  TimeZone = TimeZone.autoupdatingCurrent
     
-    
+    @Published var usesDeviceLocation:  Bool = true
+    @Published var location:  CLLocation     = CLLocation.NullIsland
+    @Published var placemark:  CLPlacemark?
     
     // MARK: -
     
-    public func dictionary() -> Dictionary<String, String?> {
+    public func dictionary() -> Dictionary<String, Any> {
         let result = [
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
-            TIME_ZONE_KEY:  timeZone == TimeZone.autoupdatingCurrent ? AUTOUPDATING_CURRENT_TIME_ZONE_VALUE : timeZone.identifier
-        ]
+            TIME_ZONE_KEY:  timeZone == TimeZone.autoupdatingCurrent ? AUTOUPDATING_CURRENT_TIME_ZONE_VALUE : timeZone.identifier,
+            LATITUDE_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.coordinate.latitude,
+            LONGITUDE_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.coordinate.longitude,
+            ALTITUDE_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.altitude,
+            HORIZONTAL_ACCURACY_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.horizontalAccuracy,
+            VERTICAL_ACCURACY_KEY:  self.usesDeviceLocation ? DEVICE_LOCATION_VALUE : self.location.verticalAccuracy,
+            
+            
+            
+              
+            ] as [String : Any]
         return result
-    } // public func dictionary() -> Dictionary<String, String?>
+    } // public func dictionary() -> Dictionary<String, Any>
     
-    public class func newRow(dictionary:  Dictionary<String, String?>) -> ASARow {
+    public class func newRow(dictionary:  Dictionary<String, Any>) -> ASARow {
         let newRow = ASARow()
         
-        let localeIdentifier = dictionary[LOCALE_KEY]
+        let localeIdentifier = dictionary[LOCALE_KEY] as? String
         if localeIdentifier != nil {
-            newRow.localeIdentifier = localeIdentifier!!
+            newRow.localeIdentifier = localeIdentifier!
         }
 
-        let calendarCode = dictionary[CALENDAR_KEY]
+        let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
-            let code = ASACalendarCode(rawValue: calendarCode!!) ?? ASACalendarCode.Gregorian
+            let code = ASACalendarCode(rawValue: calendarCode! ) ?? ASACalendarCode.Gregorian
             newRow.calendar = ASACalendarFactory.calendar(code: code)!
         }
         
-        let majorDateFormat = dictionary[MAJOR_DATE_FORMAT_KEY]
+        let majorDateFormat = dictionary[MAJOR_DATE_FORMAT_KEY] as? String
         if majorDateFormat != nil {
-            newRow.majorDateFormat = ASAMajorFormat(rawValue: majorDateFormat!!)!
+            newRow.majorDateFormat = ASAMajorFormat(rawValue: majorDateFormat! )!
         }
         
-        let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY]
+        let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY] as? String
         if dateGeekFormat != nil {
-            newRow.dateGeekFormat = dateGeekFormat!!
+            newRow.dateGeekFormat = dateGeekFormat!
         }
         
-        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY]
+        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
         if timeZoneIdentifier != nil {
             if timeZoneIdentifier! == AUTOUPDATING_CURRENT_TIME_ZONE_VALUE {
                 newRow.timeZone = TimeZone.autoupdatingCurrent
             } else {
-                newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!!)!
+                newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
+            }
+        }
+        
+        let latitude = dictionary[LATITUDE_KEY] as? Double
+        let longitude = dictionary[LONGITUDE_KEY] as? Double
+        let altitude = dictionary[ALTITUDE_KEY] as? Double
+        let horizontalAccuracy = dictionary[HORIZONTAL_ACCURACY_KEY] as? Double
+        let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
+        if latitude != nil && longitude != nil {
+            if latitude == DEVICE_LOCATION_VALUE {
+                newRow.usesDeviceLocation = true
+            } else {
+                newRow.usesDeviceLocation = false
+                newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
             }
         }
         

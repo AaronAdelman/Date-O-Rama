@@ -71,6 +71,54 @@ struct ASACalendarTimeZoneCell:  View {
     } // var body
 } // struct ASACalendarTimeZoneCell
 
+struct ASACalendarLocationCell:  View {
+    @ObservedObject var selectedRow:  ASARow
+    var now:  Date
+    var currentLocation:  CLLocation
+    var currentPlacemark:  CLPlacemark?
+    
+    var body: some View {
+        HStack {
+            Text((self.currentPlacemark?.isoCountryCode ?? "").flag())
+            Text("HEADER_LOCATION").bold()
+            Spacer()
+            VStack {
+                if selectedRow.usesDeviceLocation {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "location")
+                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
+                    }
+                }
+                HStack {
+                    Spacer()
+                    Text(verbatim:  self.currentLocation.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                }
+                if self.currentPlacemark?.name != nil {
+                    HStack {
+                        Spacer()
+                        Text(self.currentPlacemark!.name!)
+                    }
+                }
+                if self.currentPlacemark?.locality != nil {
+                    HStack {
+                        Spacer()
+                        Text(self.currentPlacemark!.locality!)
+                    }
+                }
+                if self.currentPlacemark != nil {
+                    HStack {
+                        Spacer()
+                        if self.currentPlacemark?.country != nil {
+                            Text(self.currentPlacemark!.country!)
+                        }
+                    }
+                }
+            } // VStack
+        } // HStack
+    } // body
+} // struct ASACalendarLocationCell
+
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
@@ -116,44 +164,7 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsLocations() {
-                        HStack {
-                            Text((self.currentPlacemark?.isoCountryCode ?? "").flag())
-                            Text("HEADER_LOCATION").bold()
-                            Spacer()
-                            VStack {
-                                if true {
-                                    HStack {
-                                        Spacer()
-                                        Image(systemName: "location")
-                                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
-                                    }
-                                }
-                                HStack {
-                                    Spacer()
-                                    Text(verbatim:  self.currentLocation.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
-                                }
-                                if self.currentPlacemark?.name != nil {
-                                    HStack {
-                                        Spacer()
-                                        Text(self.currentPlacemark!.name!)
-                                    }
-                                }
-                                if self.currentPlacemark?.locality != nil {
-                                    HStack {
-                                        Spacer()
-                                        Text(self.currentPlacemark!.locality!)
-                                    }
-                                }
-                                if self.currentPlacemark != nil {
-                                    HStack {
-                                        Spacer()
-                                        if self.currentPlacemark?.country != nil {
-                                            Text(self.currentPlacemark!.country!)
-                                        }
-                                    }
-                                }
-                            } // VStack
-                        } // HStack
+                        ASACalendarLocationCell(selectedRow: self.selectedRow, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
                     }
                 }
                 if selectedRow.calendar.LDMLDetails().count > 0 {

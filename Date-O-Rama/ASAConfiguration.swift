@@ -48,7 +48,7 @@ class ASAConfiguration: NSObject {
     // MARK: -
     
     public class func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
-        var temp:  Array<Dictionary<String, String?>> = []
+        var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
             let dictionary = row.dictionary()
             temp.append(dictionary)
@@ -64,7 +64,7 @@ class ASAConfiguration: NSObject {
         
         if temp != nil {
             for dictionary in temp! {
-                let row = ASARow.newRow(dictionary: dictionary as! Dictionary<String, String?>)
+                let row = ASARow.newRow(dictionary: dictionary as! Dictionary<String, Any>)
                 tempArray.append(row)
             } // for dictionary in temp!
         }
