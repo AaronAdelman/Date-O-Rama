@@ -162,8 +162,12 @@ extension String {
         let array = self.components(separatedBy: "_")
         let count: Int = array.count
         if count == 2 || count == 3 {
-            let countryCode = array[count - 1]
-            return countryCode
+            let suspectedCountryCode = array[count - 1]
+            if suspectedCountryCode.count != 2 && suspectedCountryCode.count != 3 {
+                return nil
+            }
+            
+            return suspectedCountryCode
         }
         
         return nil

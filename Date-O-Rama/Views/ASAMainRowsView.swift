@@ -49,7 +49,8 @@ struct ASAMainRowsView: View {
                             Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.currentLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
                             HStack {
                                 Spacer().frame(width: self.INSET)
-                                Image(systemName: "calendar")
+//                                Image(systemName: "calendar")
+                                Text(verbatim: "🗓")
                                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                             }
                             if row.calendar.supportsTimeZones() {
@@ -87,7 +88,7 @@ struct ASAMainRowsView: View {
                 }
                 ) {
 //                    Image(systemName: "plus")
-                    Image(systemName: "calendar.badge.plus")
+                    Image(systemName: "plus.rectangle.fill")
                 }
             )
 //            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)

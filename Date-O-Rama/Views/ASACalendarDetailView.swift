@@ -84,7 +84,8 @@ struct ASACalendarDetailView: View {
                 Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                     NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow, currentLocation: self.currentLocation)) {
                         HStack {
-                            Image(systemName: "calendar")
+//                            Image(systemName: "calendar")
+                            Text(verbatim: "🗓")
                             ASACalendarDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                         }
                     }
