@@ -61,6 +61,10 @@ class ASASolarCalendar:  ASACalendar {
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
     func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+        if location == nil {
+            return ""
+        }
+        
         // TODO:  Update when times are supported!
         let fixedNow = now.solarCorrected(location: location!)
         
@@ -100,6 +104,9 @@ class ASASolarCalendar:  ASACalendar {
     } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
     func dateString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+        if location == nil {
+            return ""
+        }
         // TODO:  Update when times are supported!
         
         let fixedNow = now.solarCorrected(location: location!)
@@ -238,18 +245,22 @@ class ASASolarCalendar:  ASACalendar {
     } // func IslamicEventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
     
     
-    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail> {
+        if location == nil {
+            return []
+        }
+        
         switch self.calendarCode {
         case .HebrewSolar:
-            return self.HebrewEventDetails(date: date, location: location)
+            return self.HebrewEventDetails(date: date, location: location!)
             
         case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
-            return self.IslamicEventDetails(date: date, location: location)
+            return self.IslamicEventDetails(date: date, location: location!)
             
         default:
             return []
         }
-    } // func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
+    } // func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
     
     func supportsLocales() -> Bool {
         return true
@@ -263,11 +274,15 @@ class ASASolarCalendar:  ASACalendar {
         return false
     } // func supportsTimeZones() -> Bool
     
-    func transitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date {
-        let fixedNow = now.solarCorrected(location: location)
-        let events = fixedNow.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [.sunset])
+    func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
+        if location == nil {
+            return now.sixPM()
+        }
+        
+        let fixedNow = now.solarCorrected(location: location!)
+        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset])
         return events[.sunset]!!
-    } // func transitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
+    } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
     
     func supportsLocations() -> Bool {
         return true

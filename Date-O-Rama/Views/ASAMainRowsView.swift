@@ -18,9 +18,9 @@ struct ASAMainRowsView: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    var currentLocation:  CLLocation {
+    var currentLocation:  CLLocation? {
         get {
-            return self.locationManager.lastLocation ?? CLLocation.NullIsland
+            return self.locationManager.lastLocation
         } // get
     } // var currentLocation
     
@@ -119,16 +119,16 @@ struct ASAMainRowLocationSubcell:  View {
     var INSET:  CGFloat
     var row:  ASARow
     var now:  Date
-    var currentLocation:  CLLocation
+    var currentLocation:  CLLocation?
     var currentPlacemark:  CLPlacemark?
     
-    func location() -> CLLocation {
+    func location() -> CLLocation? {
         if row.usesDeviceLocation {
             return currentLocation
         } else {
             return row.location
         }
-    } // func location() -> CLLocation
+    } // func location() -> CLLocation?
     
     func placemark() -> CLPlacemark? {
         if row.usesDeviceLocation {
@@ -146,8 +146,8 @@ struct ASAMainRowLocationSubcell:  View {
                 Image(systemName: "location.fill")
             }
             if placemark() == nil {
-                if location().coordinate.latitude != 0.0 && location().coordinate.longitude != 0.0 {
-                    Text(verbatim:  location().humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                if location() != nil {
+                    Text(verbatim:  location()!.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
                 }
             } else {
                 Text(placemark()!.name ?? "")

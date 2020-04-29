@@ -44,7 +44,7 @@ struct ASACalendarPickerView: View {
     ]
     
     @ObservedObject var row:  ASARow
-    var currentLocation:  CLLocation
+    var currentLocation:  CLLocation?
     
     var body: some View {
         List {

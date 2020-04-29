@@ -75,16 +75,16 @@ struct ASACalendarTimeZoneCell:  View {
 struct ASACalendarLocationCell:  View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
-    var currentLocation:  CLLocation
+    var currentLocation:  CLLocation?
     var currentPlacemark:  CLPlacemark?
     
-    func location() -> CLLocation {
+    func location() -> CLLocation? {
         if selectedRow.usesDeviceLocation {
             return currentLocation
         } else {
             return selectedRow.location
         }
-    } // func location() -> CLLocation
+    } // func location() -> CLLocation?
     
     func placemark() -> CLPlacemark? {
         if selectedRow.usesDeviceLocation {
@@ -109,7 +109,7 @@ struct ASACalendarLocationCell:  View {
                 }
                 HStack {
                     Spacer()
-                    Text(verbatim:  location().humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                    Text(verbatim: location() != nil ?  location()!.humanInterfaceRepresentation() : "").multilineTextAlignment(.trailing)
                 }
                 if placemark()?.name != nil {
                     HStack {
@@ -140,7 +140,7 @@ struct ASACalendarLocationCell:  View {
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
-    var currentLocation:  CLLocation
+    var currentLocation:  CLLocation?
     var currentPlacemark:  CLPlacemark?
     
     var body: some View {

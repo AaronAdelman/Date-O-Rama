@@ -11,7 +11,7 @@ import CoreLocation
 
 struct ASAFormatPickerView: View {
     @ObservedObject var row:  ASARow
-    var currentLocation:  CLLocation
+    var currentLocation:  CLLocation?
     
     var model:  Array<ASAComponentsPickerSection> {
         get {

@@ -13,7 +13,7 @@ struct ASALocalePickerView: View {
     let localeData = ASALocaleData()
     
     @ObservedObject var row:  ASARow
-    var currentLocation:  CLLocation
+    var currentLocation:  CLLocation?
     
     var body: some View {
         List {

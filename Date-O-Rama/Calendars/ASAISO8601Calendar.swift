@@ -92,15 +92,15 @@ class ASAISO8601Calendar:  ASACalendar {
         ]
     } // public func details() -> Array<ASADetail>
     
-    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail> {
         return []
-    } // func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
+    } // func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
     
     public func supportsLocales() -> Bool {
         return false
     } // func supportsLocales() -> Bool
     
-    func transitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date {
+    func transitionToNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
         return now.nextMidnight(timeZone:  timeZone)
     } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
 

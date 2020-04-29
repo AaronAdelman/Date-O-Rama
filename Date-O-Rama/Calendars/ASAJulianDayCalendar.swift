@@ -75,9 +75,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         return []
     } // func details() -> Array<ASADetail>
     
-    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail> {
         return []
-    } // func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
+    } // func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
     
     func supportsLocales() -> Bool {
         return true
@@ -87,7 +87,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         return false
     } // func supportsDateFormats() -> Bool
     
-    func transitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date {
+    func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
             return now.nextGMTNoon()

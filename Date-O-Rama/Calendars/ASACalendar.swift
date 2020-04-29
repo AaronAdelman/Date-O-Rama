@@ -30,12 +30,12 @@ protocol ASACalendar {
     func dateString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorFormat, dateGeekFormat:  String, majorTimeFormat:  ASAMajorFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func dateString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func LDMLDetails() -> Array<ASALDMLDetail>
-    func eventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
+    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
     func supportsLocales() -> Bool
     func supportsDateFormats() -> Bool
     func supportsTimeZones() -> Bool
     func supportsLocations() -> Bool
     func supportsEventDetails() -> Bool
     func timeZone(location:  CLLocation?) -> TimeZone
-    func transitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
+    func transitionToNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
 } // protocol ASACalendar
