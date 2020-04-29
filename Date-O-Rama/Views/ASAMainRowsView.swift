@@ -60,6 +60,9 @@ struct ASAMainRowsView: View {
                                     Text(verbatim: "\(row.timeZone.localizedName(for: row.timeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.timeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                                 }
                             }
+                            if row.calendar.supportsLocations() {
+                                ASAMainRowLocationSubcell(INSET: self.INSET, row: row, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
+                            }
                         }
                     }
                 }
@@ -111,6 +114,49 @@ struct ASAMainRowsView: View {
         }
     }
 } // struct ASAMainRowsView
+
+struct ASAMainRowLocationSubcell:  View {
+    var INSET:  CGFloat
+    var row:  ASARow
+    var now:  Date
+    var currentLocation:  CLLocation
+    var currentPlacemark:  CLPlacemark?
+    
+    func location() -> CLLocation {
+        if row.usesDeviceLocation {
+            return currentLocation
+        } else {
+            return row.location
+        }
+    } // func location() -> CLLocation
+    
+    func placemark() -> CLPlacemark? {
+        if row.usesDeviceLocation {
+            return currentPlacemark
+        } else {
+            return row.placemark
+        }
+    } // func placemark() -> CLPlacemark?
+    
+    var body: some View {
+        HStack {
+            Spacer().frame(width: self.INSET)
+            Text((self.placemark()?.isoCountryCode ?? "").flag())
+            if row.usesDeviceLocation {
+                Image(systemName: "location.fill")
+            }
+            if placemark() == nil {
+                if location().coordinate.latitude != 0.0 && location().coordinate.longitude != 0.0 {
+                    Text(verbatim:  location().humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                }
+            } else {
+                Text(placemark()!.name ?? "")
+                Text(placemark()!.locality ?? "")
+                Text(placemark()!.country ?? "")
+            }
+        } // HStack
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

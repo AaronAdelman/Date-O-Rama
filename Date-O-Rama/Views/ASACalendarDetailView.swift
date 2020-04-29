@@ -92,18 +92,18 @@ struct ASACalendarLocationCell:  View {
         } else {
             return selectedRow.placemark
         }
-    } //
+    } // func placemark() -> CLPlacemark?
     
     var body: some View {
         HStack {
-            Text((self.currentPlacemark?.isoCountryCode ?? "").flag())
+            Text((self.placemark()?.isoCountryCode ?? "").flag())
             Text("HEADER_LOCATION").bold()
             Spacer()
             VStack {
                 if selectedRow.usesDeviceLocation {
                     HStack {
                         Spacer()
-                        Image(systemName: "location")
+                        Image(systemName: "location.fill")
                         Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
                     }
                 }
