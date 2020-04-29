@@ -116,7 +116,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         newRow.usesDeviceLocation = usesDeviceLocation ?? true
         if latitude != nil && longitude != nil {
             newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
-            
         }
         
         return newRow
