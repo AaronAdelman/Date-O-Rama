@@ -150,6 +150,7 @@
 
 "HEADER_Other" = "אחרים";
 "ITEM_NEXT_DATE_TRANSITION" = "תחילת היום הבא";
+"ITEM_NEXT_DAY" = "היום הבא";
 
 "HEADER_TIME_ZONE" = "שעון מקומי";
 

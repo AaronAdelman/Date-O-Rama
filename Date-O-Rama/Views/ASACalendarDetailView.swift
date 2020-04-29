@@ -205,6 +205,7 @@ struct ASACalendarDetailView: View {
                 }
                 Section(header:  Text("HEADER_Other")) {
                     ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.startOfNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone), dateStyle: .full, timeStyle: .full))
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.calendar.startOfNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone).addingTimeInterval(1), defaultLocation: self.currentLocation), systemIconName: nil)
                 }
 //            } else {
 //                //                Text("Detail view content goes here")

@@ -150,6 +150,7 @@
 
 "HEADER_Other" = "Other";
 "ITEM_NEXT_DATE_TRANSITION" = "Next date transition";
+"ITEM_NEXT_DAY" = "Next date";
 
 "HEADER_TIME_ZONE" = "Time zone";
 
