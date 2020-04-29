@@ -12,7 +12,7 @@ import CoreLocation
 
 struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
-    @State var dummyRow:  ASARow = ASARow.dummy()
+//    @State var dummyRow:  ASARow = ASARow.dummy()
     @State var now = Date()
     @ObservedObject var locationManager = LocationManager()
 
@@ -81,7 +81,7 @@ struct ASAMainRowsView: View {
             }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {
-                    let transition = row.calendar.transitionToNextDay(now: self.now, location: self.currentLocation, timeZone: row.timeZone)
+                    let transition = row.calendar.startOfNextDay(now: self.now, location: self.currentLocation, timeZone: row.timeZone)
 //                    debugPrint("\(#file) \(#function) Transition time:  \(transition); input time:  \(input)…")
 //                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
                     if  input >= transition {

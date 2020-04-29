@@ -274,7 +274,7 @@ class ASASolarCalendar:  ASACalendar {
         return false
     } // func supportsTimeZones() -> Bool
     
-    func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
+    func startOfNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         if location == nil {
             return now.sixPM()
         }

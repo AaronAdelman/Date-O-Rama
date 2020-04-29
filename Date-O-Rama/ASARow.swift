@@ -30,7 +30,7 @@ let DEVICE_LOCATION_VALUE = -1000000.0 // Something implausible for latitude and
 class ASARow: NSObject, ObservableObject, Identifiable {
     var uid = UUID()
 
-    @Published var dummy = false
+//    @Published var dummy = false
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian)
         
@@ -140,11 +140,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         return temp
     } // func generic() -> ASARow
     
-    class func dummy() -> ASARow {
-        let temp = ASARow()
-        temp.dummy = true
-        return temp
-    } // func dummy() -> ASARow
+//    class func dummy() -> ASARow {
+//        let temp = ASARow()
+//        temp.dummy = true
+//        return temp
+//    } // func dummy() -> ASARow
     
     func copy() -> ASARow {
         let tempRow = ASARow()

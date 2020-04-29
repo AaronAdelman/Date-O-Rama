@@ -87,7 +87,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         return false
     } // func supportsDateFormats() -> Bool
     
-    func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
+    func startOfNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
             return now.nextGMTNoon()

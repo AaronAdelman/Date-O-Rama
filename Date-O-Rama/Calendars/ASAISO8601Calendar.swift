@@ -100,7 +100,7 @@ class ASAISO8601Calendar:  ASACalendar {
         return false
     } // func supportsLocales() -> Bool
     
-    func transitionToNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
+    func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
         return now.nextMidnight(timeZone:  timeZone)
     } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
 

@@ -146,7 +146,7 @@ struct ASACalendarDetailView: View {
     var body: some View {
         List {
             //            if selectedRow != nil {
-            if selectedRow.dummy != true {
+//            if selectedRow.dummy != true {
                 Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                     NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow, currentLocation: self.currentLocation)) {
                         HStack {
@@ -204,13 +204,15 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 Section(header:  Text("HEADER_Other")) {
-                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.transitionToNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone), dateStyle: .full, timeStyle: .full))
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.startOfNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone), dateStyle: .full, timeStyle: .full))
                 }
-            } else {
-                //                Text("Detail view content goes here")
-                EmptyView()
-            }
-        }.navigationBarTitle(Text(selectedRow.dummy ? "" : selectedRow.dateString(now: self.now, defaultLocation: self.currentLocation) ))
+//            } else {
+//                //                Text("Detail view content goes here")
+//                EmptyView()
+//            }
+        }.navigationBarTitle(Text(
+//            selectedRow.dummy ? "" :
+                selectedRow.dateString(now: self.now, defaultLocation: self.currentLocation) ))
     }
 }
 
