@@ -88,7 +88,7 @@ struct ASAMainRowsView: View {
                 }
                 ) {
 //                    Image(systemName: "plus")
-                    Image(systemName: "plus.rectangle.fill")
+                    Text(verbatim:  "➕")
                 }
             )
 //            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
