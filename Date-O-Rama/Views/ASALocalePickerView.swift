@@ -48,7 +48,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocalePickerView(row: ASARow.test(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
+        ASALocalePickerView(row: ASARow.test(), currentLocation: CLLocation.NullIsland)
     }
 }
 

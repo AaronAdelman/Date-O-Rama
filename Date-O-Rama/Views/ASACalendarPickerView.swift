@@ -82,6 +82,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarPickerView(row: ASARow.test(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
+        ASACalendarPickerView(row: ASARow.test(), currentLocation: CLLocation.NullIsland)
     }
 }

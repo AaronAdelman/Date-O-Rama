@@ -40,6 +40,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @Published var timeZone:  TimeZone = TimeZone.autoupdatingCurrent
     
+    
+    
     // MARK: -
     
     public func dictionary() -> Dictionary<String, String?> {

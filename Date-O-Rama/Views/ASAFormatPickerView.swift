@@ -153,6 +153,6 @@ extension ASAComponentsPickerSection {
 
 struct ASAFormatPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAFormatPickerView(row: ASARow.generic(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
+        ASAFormatPickerView(row: ASARow.generic(), currentLocation: CLLocation.NullIsland)
     }
 }

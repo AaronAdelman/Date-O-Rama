@@ -187,6 +187,6 @@ struct ASACalendarDetailView: View {
 
 struct ASACalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date(), currentLocation: CLLocation(latitude: 0.0, longitude: 0.0))
+        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date(), currentLocation: CLLocation.NullIsland)
     }
 }

@@ -20,7 +20,7 @@ struct ASAMainRowsView: View {
     
     var currentLocation:  CLLocation {
         get {
-            return self.locationManager.lastLocation ?? CLLocation(latitude: 0.0, longitude: 0.0)
+            return self.locationManager.lastLocation ?? CLLocation.NullIsland
         } // get
     } // var currentLocation
     

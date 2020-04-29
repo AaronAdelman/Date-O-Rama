@@ -24,3 +24,10 @@ extension CLLocation {
         return result
     } // func ISO6079HumanInterfaceRepresentation() -> String
 } // extension CLLocation
+
+extension CLLocation {
+    static var NullIsland:  CLLocation {
+        // Default, filler location value that keeps being used in this program
+        return CLLocation(latitude: 0.0, longitude: 0.0)
+    } // static var NullIsland:  CLLocation
+} // extension CLLocation
