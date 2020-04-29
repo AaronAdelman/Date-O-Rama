@@ -71,11 +71,28 @@ struct ASACalendarTimeZoneCell:  View {
     } // var body
 } // struct ASACalendarTimeZoneCell
 
+
 struct ASACalendarLocationCell:  View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
     var currentLocation:  CLLocation
     var currentPlacemark:  CLPlacemark?
+    
+    func location() -> CLLocation {
+        if selectedRow.usesDeviceLocation {
+            return currentLocation
+        } else {
+            return selectedRow.location
+        }
+    } // func location() -> CLLocation
+    
+    func placemark() -> CLPlacemark? {
+        if selectedRow.usesDeviceLocation {
+            return currentPlacemark
+        } else {
+            return selectedRow.placemark
+        }
+    } //
     
     var body: some View {
         HStack {
@@ -92,25 +109,25 @@ struct ASACalendarLocationCell:  View {
                 }
                 HStack {
                     Spacer()
-                    Text(verbatim:  self.currentLocation.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                    Text(verbatim:  location().humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
                 }
-                if self.currentPlacemark?.name != nil {
+                if placemark()?.name != nil {
                     HStack {
                         Spacer()
-                        Text(self.currentPlacemark!.name!)
+                        Text(placemark()!.name!)
                     }
                 }
-                if self.currentPlacemark?.locality != nil {
+                if placemark()?.locality != nil {
                     HStack {
                         Spacer()
-                        Text(self.currentPlacemark!.locality!)
+                        Text(placemark()!.locality!)
                     }
                 }
-                if self.currentPlacemark != nil {
+                if placemark() != nil {
                     HStack {
                         Spacer()
-                        if self.currentPlacemark?.country != nil {
-                            Text(self.currentPlacemark!.country!)
+                        if placemark()?.country != nil {
+                            Text(placemark()!.country!)
                         }
                     }
                 }
@@ -118,6 +135,7 @@ struct ASACalendarLocationCell:  View {
         } // HStack
     } // body
 } // struct ASACalendarLocationCell
+
 
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
