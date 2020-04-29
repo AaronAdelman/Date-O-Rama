@@ -45,25 +45,7 @@ struct ASAMainRowsView: View {
                                 self.userData.savePreferences()
                         }
                     ) {
-                        VStack(alignment: .leading) {
-                            Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.currentLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                            HStack {
-                                Spacer().frame(width: self.INSET)
-//                                Image(systemName: "calendar")
-                                Text(verbatim: "🗓")
-                                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-                            }
-                            if row.calendar.supportsTimeZones() {
-                                HStack {
-                                    Spacer().frame(width: self.INSET)
-                                    Text(row.timeZone.emoji(date:  self.now))
-                                    Text(verbatim: "\(row.timeZone.localizedName(for: row.timeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.timeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-                                }
-                            }
-                            if row.calendar.supportsLocations() {
-                                ASAMainRowLocationSubcell(INSET: self.INSET, row: row, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
-                            }
-                        }
+                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
                     }
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -115,7 +97,38 @@ struct ASAMainRowsView: View {
     }
 } // struct ASAMainRowsView
 
-struct ASAMainRowLocationSubcell:  View {
+struct ASAMainRowsViewCell:  View {
+    var row:  ASARow
+    var now:  Date
+    var INSET:  CGFloat
+    var currentLocation:  CLLocation?
+    var currentPlacemark:  CLPlacemark?
+    
+    let ROW_HEIGHT = 30.0 as CGFloat
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.currentLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+            HStack {
+                Spacer().frame(width: self.INSET)
+                Text(verbatim: "🗓")
+                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+            }.frame(height: ROW_HEIGHT)
+            if row.calendar.supportsTimeZones() {
+                HStack {
+                    Spacer().frame(width: self.INSET)
+                    Text(row.timeZone.emoji(date:  self.now))
+                    Text(verbatim: "\(row.timeZone.localizedName(for: row.timeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.timeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                }.frame(height: ROW_HEIGHT)
+            }
+            if row.calendar.supportsLocations() {
+                ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark).frame(height: ROW_HEIGHT)
+            }
+        }
+    } // var body
+} // struct ASAMainRowsViewCell
+
+struct ASAMainRowsLocationSubcell:  View {
     var INSET:  CGFloat
     var row:  ASARow
     var now:  Date
@@ -147,12 +160,12 @@ struct ASAMainRowLocationSubcell:  View {
             }
             if placemark() == nil {
                 if location() != nil {
-                    Text(verbatim:  location()!.humanInterfaceRepresentation()).multilineTextAlignment(.trailing)
+                    Text(verbatim:  location()!.humanInterfaceRepresentation()).font(.subheadline)
                 }
             } else {
-                Text(placemark()!.name ?? "")
-                Text(placemark()!.locality ?? "")
-                Text(placemark()!.country ?? "")
+                Text(placemark()!.name ?? "").font(.subheadline)
+                Text(placemark()!.locality ?? "").font(.subheadline)
+                Text(placemark()!.country ?? "").font(.subheadline)
             }
         } // HStack
     }
