@@ -18,17 +18,17 @@ struct ASAMainRowsView: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    var currentLocation:  CLLocation? {
+    var deviceLocation:  CLLocation? {
         get {
-            return self.locationManager.lastLocation
+            return self.locationManager.lastDeviceLocation
         } // get
-    } // var currentLocation
+    } // var deviceLocation
     
-    var currentPlacemark:  CLPlacemark? {
+    var devicePlacemark:  CLPlacemark? {
         get {
-            return self.locationManager.lastPlacemark
+            return self.locationManager.lastDevicePlacemark
         } // get
-    } // var currentPlacemark
+    } // var devicePlacemark
 
     
     let INSET = 25.0 as CGFloat
@@ -38,14 +38,14 @@ struct ASAMainRowsView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
-                        destination: ASACalendarDetailView(selectedRow: row, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
+                        destination: ASACalendarDetailView(selectedRow: row, now: self.now, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
                                 self.userData.savePreferences()
                         }
                     ) {
-                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
+                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark)
                     }
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -76,12 +76,12 @@ struct ASAMainRowsView: View {
                     Text(verbatim:  "➕")
                 }
             )
-//            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, currentLocation: self.currentLocation)
+//            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, deviceLocation: self.deviceLocation)
 //        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {
-                    let transition = row.calendar.startOfNextDay(now: self.now, location: self.currentLocation, timeZone: row.timeZone)
+                    let transition = row.calendar.startOfNextDay(now: self.now, location: self.deviceLocation, timeZone: row.timeZone)
 //                    debugPrint("\(#file) \(#function) Transition time:  \(transition); input time:  \(input)…")
 //                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
                     if  input >= transition {
@@ -92,7 +92,7 @@ struct ASAMainRowsView: View {
                 } // for row in self.userData.mainRows
 //                debugPrint("==========")
                 
-//                debugPrint("\(#file) \(#function) \(self.locationManager.statusString) \(String(describing: self.currentLocation)), \(self.now.solarEvents(latitude: self.currentLocation.coordinate.latitude, longitude: self.currentLocation.coordinate.longitude, events: [.sunrise, .sunset]))")
+//                debugPrint("\(#file) \(#function) \(self.locationManager.statusString) \(String(describing: self.deviceLocation)), \(self.now.solarEvents(latitude: self.deviceLocation.coordinate.latitude, longitude: self.deviceLocation.coordinate.longitude, events: [.sunrise, .sunset]))")
         }
     }
 } // struct ASAMainRowsView
@@ -101,14 +101,14 @@ struct ASAMainRowsViewCell:  View {
     var row:  ASARow
     var now:  Date
     var INSET:  CGFloat
-    var currentLocation:  CLLocation?
-    var currentPlacemark:  CLPlacemark?
+    var deviceLocation:  CLLocation?
+    var devicePlacemark:  CLPlacemark?
     
     let ROW_HEIGHT = 30.0 as CGFloat
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.currentLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+            Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.deviceLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
             HStack {
                 Spacer().frame(width: self.INSET)
                 Text(verbatim: "🗓")
@@ -122,7 +122,7 @@ struct ASAMainRowsViewCell:  View {
                 }.frame(height: ROW_HEIGHT)
             }
             if row.calendar.supportsLocations() {
-                ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark).frame(height: ROW_HEIGHT)
+                ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark).frame(height: ROW_HEIGHT)
             }
         }
     } // var body
@@ -132,12 +132,12 @@ struct ASAMainRowsLocationSubcell:  View {
     var INSET:  CGFloat
     var row:  ASARow
     var now:  Date
-    var currentLocation:  CLLocation?
-    var currentPlacemark:  CLPlacemark?
+    var deviceLocation:  CLLocation?
+    var devicePlacemark:  CLPlacemark?
     
     func location() -> CLLocation? {
         if row.usesDeviceLocation {
-            return currentLocation
+            return deviceLocation
         } else {
             return row.location
         }
@@ -145,7 +145,7 @@ struct ASAMainRowsLocationSubcell:  View {
     
     func placemark() -> CLPlacemark? {
         if row.usesDeviceLocation {
-            return currentPlacemark
+            return devicePlacemark
         } else {
             return row.placemark
         }

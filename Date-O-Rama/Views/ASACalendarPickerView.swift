@@ -44,7 +44,7 @@ struct ASACalendarPickerView: View {
     ]
     
     @ObservedObject var row:  ASARow
-    var currentLocation:  CLLocation?
+    var deviceLocation:  CLLocation?
     
     var body: some View {
         List {
@@ -56,7 +56,7 @@ struct ASACalendarPickerView: View {
                 }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.currentLocation ) ))
+        .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.deviceLocation ) ))
     }
 }
 
@@ -82,6 +82,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarPickerView(row: ASARow.test(), currentLocation: CLLocation.NullIsland)
+        ASACalendarPickerView(row: ASARow.test(), deviceLocation: CLLocation.NullIsland)
     }
 }

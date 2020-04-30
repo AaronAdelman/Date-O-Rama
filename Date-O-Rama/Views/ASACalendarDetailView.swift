@@ -75,12 +75,12 @@ struct ASACalendarTimeZoneCell:  View {
 struct ASACalendarLocationCell:  View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
-    var currentLocation:  CLLocation?
-    var currentPlacemark:  CLPlacemark?
+    var deviceLocation:  CLLocation?
+    var devicePlacemark:  CLPlacemark?
     
     func location() -> CLLocation? {
         if selectedRow.usesDeviceLocation {
-            return currentLocation
+            return deviceLocation
         } else {
             return selectedRow.location
         }
@@ -88,7 +88,7 @@ struct ASACalendarLocationCell:  View {
     
     func placemark() -> CLPlacemark? {
         if selectedRow.usesDeviceLocation {
-            return currentPlacemark
+            return devicePlacemark
         } else {
             return selectedRow.placemark
         }
@@ -140,15 +140,15 @@ struct ASACalendarLocationCell:  View {
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
-    var currentLocation:  CLLocation?
-    var currentPlacemark:  CLPlacemark?
+    var deviceLocation:  CLLocation?
+    var devicePlacemark:  CLPlacemark?
     
     var body: some View {
         List {
             //            if selectedRow != nil {
 //            if selectedRow.dummy != true {
                 Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                    NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow, currentLocation: self.currentLocation)) {
+                    NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow, deviceLocation: self.deviceLocation)) {
                         HStack {
 //                            Image(systemName: "calendar")
                             Text(verbatim: "🗓")
@@ -156,7 +156,7 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.supportsLocales() {
-                        NavigationLink(destination: ASALocalePickerView(row: selectedRow, currentLocation: self.currentLocation)) {
+                        NavigationLink(destination: ASALocalePickerView(row: selectedRow, deviceLocation: self.deviceLocation)) {
                             HStack {
                                 Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
                                 ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
@@ -164,7 +164,7 @@ struct ASACalendarDetailView: View {
                         }
                     }
                     if selectedRow.calendar.supportsDateFormats() {
-                        NavigationLink(destination: ASAFormatPickerView(row: selectedRow, currentLocation: self.currentLocation)) {
+                        NavigationLink(destination: ASAFormatPickerView(row: selectedRow, deviceLocation: self.deviceLocation)) {
                             ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                         }
                     }
@@ -177,12 +177,12 @@ struct ASACalendarDetailView: View {
                         }
                     } else {
                         HStack {
-                            Text(selectedRow.calendar.timeZone(location:  self.currentLocation).emoji(date:  now))
-                            ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.currentLocation), now: now)
+                            Text(selectedRow.calendar.timeZone(location:  self.deviceLocation).emoji(date:  now))
+                            ASACalendarTimeZoneCell(timeZone: selectedRow.calendar.timeZone(location:  self.deviceLocation), now: now)
                         }
                     }
                     if selectedRow.calendar.supportsLocations() {
-                        ASACalendarLocationCell(selectedRow: self.selectedRow, now: self.now, currentLocation: self.currentLocation, currentPlacemark: self.currentPlacemark)
+                        ASACalendarLocationCell(selectedRow: self.selectedRow, now: self.now, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark)
                     }
                 }
                 if selectedRow.calendar.LDMLDetails().count > 0 {
@@ -190,13 +190,13 @@ struct ASACalendarDetailView: View {
                         ForEach(selectedRow.details(), id: \.name) {
                             detail
                             in
-                            ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode, defaultLocation: self.currentLocation))
+                            ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateString(now: self.now, LDMLString: detail.geekCode, defaultLocation: self.deviceLocation))
                         }
                     }
                 }
                 if selectedRow.calendar.supportsEventDetails() {
                     Section(header:  Text("HEADER_EVENTS")) {
-                        ForEach(selectedRow.calendar.eventDetails(date: now, location: currentLocation), id: \.key) {
+                        ForEach(selectedRow.calendar.eventDetails(date: now, location: deviceLocation), id: \.key) {
                             detail
                             in
                             ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : DateFormatter.localizedString(from: detail.value!, dateStyle: .none, timeStyle: .medium), systemIconName: detail.key.systemIconName())
@@ -204,8 +204,8 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 Section(header:  Text("HEADER_Other")) {
-                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.startOfNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone), dateStyle: .full, timeStyle: .full))
-                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.calendar.startOfNextDay(now: self.now, location: currentLocation, timeZone: self.selectedRow.timeZone).addingTimeInterval(1), defaultLocation: self.currentLocation), systemIconName: nil)
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.calendar.startOfNextDay(now: self.now, location: deviceLocation, timeZone: self.selectedRow.timeZone), dateStyle: .full, timeStyle: .full))
+                    ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.calendar.startOfNextDay(now: self.now, location: deviceLocation, timeZone: self.selectedRow.timeZone).addingTimeInterval(1), defaultLocation: self.deviceLocation), systemIconName: nil)
                 }
 //            } else {
 //                //                Text("Detail view content goes here")
@@ -213,12 +213,12 @@ struct ASACalendarDetailView: View {
 //            }
         }.navigationBarTitle(Text(
 //            selectedRow.dummy ? "" :
-                selectedRow.dateString(now: self.now, defaultLocation: self.currentLocation) ))
+                selectedRow.dateString(now: self.now, defaultLocation: self.deviceLocation) ))
     }
 }
 
 struct ASACalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date(), currentLocation: CLLocation.NullIsland)
+        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date(), deviceLocation: CLLocation.NullIsland)
     }
 }

@@ -11,7 +11,7 @@ import CoreLocation
 
 struct ASAFormatPickerView: View {
     @ObservedObject var row:  ASARow
-    var currentLocation:  CLLocation?
+    var deviceLocation:  CLLocation?
     
     var model:  Array<ASAComponentsPickerSection> {
         get {
@@ -82,7 +82,7 @@ struct ASAFormatPickerView: View {
 //                }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.currentLocation) ))
+        .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.deviceLocation) ))
     }
 }
 
@@ -153,6 +153,6 @@ extension ASAComponentsPickerSection {
 
 struct ASAFormatPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAFormatPickerView(row: ASARow.generic(), currentLocation: CLLocation.NullIsland)
+        ASAFormatPickerView(row: ASARow.generic(), deviceLocation: CLLocation.NullIsland)
     }
 }

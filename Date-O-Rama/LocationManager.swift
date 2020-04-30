@@ -30,13 +30,13 @@ class LocationManager: NSObject, ObservableObject {
         }
     }
 
-    @Published var lastLocation: CLLocation? {
+    @Published var lastDeviceLocation: CLLocation? {
         willSet {
             objectWillChange.send()
         }
     }
   
-    @Published var lastPlacemark: CLPlacemark? {
+    @Published var lastDevicePlacemark: CLPlacemark? {
         willSet {
             objectWillChange.send()
         }
@@ -80,15 +80,15 @@ extension LocationManager: CLLocationManagerDelegate {
         coder.reverseGeocodeLocation(location) { (placemarks, error) in
             let place = placemarks?.last;
 
-            let Δ = self.lastLocation?.distance(from: location)
-            self.lastLocation = location
+            let Δ = self.lastDeviceLocation?.distance(from: location)
+            self.lastDeviceLocation = location
             
             if place != nil {
-                self.lastPlacemark = place
+                self.lastDevicePlacemark = place
             } else {
-                // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than a kilometer to avoid the relevant info from disappearing needlessly.
-                if (Δ ?? 0.0) > 1000.0 {
-                    self.lastPlacemark = nil
+                // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than 10 meters to avoid the relevant info from disappearing needlessly.
+                if (Δ ?? 0.0) > 10.0 {
+                    self.lastDevicePlacemark = nil
                 }
             }
             debugPrint(#file, #function, location, place as Any)
