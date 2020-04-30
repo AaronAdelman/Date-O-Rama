@@ -90,15 +90,16 @@ extension LocationManager: CLLocationManagerDelegate {
             let place = placemarks?.last;
 
             let Δ = self.lastDeviceLocation?.distance(from: location)
-            self.lastDeviceLocation = location
             
             if place != nil {
                 self.lastDevicePlacemark = place
+                self.lastDeviceLocation = place?.location
             } else {
                 // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than a kilometer to avoid the relevant info from disappearing needlessly.
                 if (Δ ?? 0.0) > 1000.0 {
                     self.lastDevicePlacemark = nil
                 }
+                self.lastDeviceLocation = location
             }
             debugPrint(#file, #function, location, place as Any)
         }

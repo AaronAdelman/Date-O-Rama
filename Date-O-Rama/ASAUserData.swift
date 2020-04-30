@@ -21,9 +21,12 @@ final class ASAUserData:  ObservableObject {
             if row.location != nil {
                 coder.reverseGeocodeLocation(row.location!) { (placemarks, error) in
                     let place = placemarks?.last;
-                    
+
                     if place != nil {
-                        row.placemark = place
+                        row.placeName = place?.name
+                        row.locality = place?.locality
+                        row.country = place?.country
+                        row.ISOCountryCode = place?.isoCountryCode
                     }
                     debugPrint(#file, #function, row.location as Any, place as Any)
                 }

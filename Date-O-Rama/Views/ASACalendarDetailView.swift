@@ -56,7 +56,7 @@ struct ASACalendarDetailView: View {
                 ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
 
                 if selectedRow.calendar.supportsLocations() {
-                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.effectiveLocation, placemark: self.selectedRow.placemark, now: now)
+                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.effectiveLocation, placeName: self.selectedRow.placeName, locality: self.selectedRow.locality, country: self.selectedRow.country, ISOCountryCode: self.selectedRow.ISOCountryCode, now: now)
                 }
             } // Section
             

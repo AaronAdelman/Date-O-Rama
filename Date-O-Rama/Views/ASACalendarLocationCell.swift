@@ -12,12 +12,15 @@ import CoreLocation
 struct ASACalendarLocationCell:  View {
     var usesDeviceLocation:  Bool
     var location:  CLLocation?
-    var placemark:  CLPlacemark?
+    var placeName:  String?
+    var locality:  String?
+    var country:  String?
+    var ISOCountryCode:  String?
     var now:  Date
     
     var body: some View {
         HStack {
-            Text((placemark?.isoCountryCode ?? "").flag())
+            Text((ISOCountryCode ?? "").flag())
             Text("HEADER_LOCATION").bold()
             Spacer()
             VStack {
@@ -32,26 +35,26 @@ struct ASACalendarLocationCell:  View {
                     Spacer()
                     Text(verbatim: location != nil ?  location!.humanInterfaceRepresentation() : "").multilineTextAlignment(.trailing)
                 }
-                if placemark?.name != nil {
+                if placeName != nil {
                     HStack {
                         Spacer()
-                        Text(placemark!.name!)
+                        Text(placeName!)
                     }
                 }
-                if placemark?.locality != nil {
+                if locality != nil {
                     HStack {
                         Spacer()
-                        Text(placemark!.locality!)
+                        Text(locality!)
                     }
                 }
-                if placemark != nil {
+
                     HStack {
                         Spacer()
-                        if placemark?.country != nil {
-                            Text(placemark!.country!)
+                        if country != nil {
+                            Text(country!)
                         }
                     }
-                }
+                
             } // VStack
         } // HStack
     } // body

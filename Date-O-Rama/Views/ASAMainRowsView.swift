@@ -45,7 +45,7 @@ struct ASAMainRowsView: View {
                                 self.userData.savePreferences()
                         }
                     ) {
-                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark)
+                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET)
                     }
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -72,17 +72,13 @@ struct ASAMainRowsView: View {
                         }
                 }
                 ) {
-//                    Image(systemName: "plus")
                     Text(verbatim:  "➕")
                 }
             )
-//            ASACalendarDetailView(selectedRow: self.dummyRow, now: self.now, deviceLocation: self.deviceLocation)
-//        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
             }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {
                     let transition = row.calendar.startOfNextDay(now: self.now, location: self.deviceLocation, timeZone: row.timeZone)
-//                    debugPrint("\(#file) \(#function) Transition time:  \(transition); input time:  \(input)…")
 //                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
                     if  input >= transition {
 //                        debugPrint("\(#file) \(#function) After transition time (\(transition)), updating date to \(input)…")
@@ -101,8 +97,6 @@ struct ASAMainRowsViewCell:  View {
     var row:  ASARow
     var now:  Date
     var INSET:  CGFloat
-    var deviceLocation:  CLLocation?
-    var devicePlacemark:  CLPlacemark?
     
     let ROW_HEIGHT = 30.0 as CGFloat
     
@@ -122,7 +116,7 @@ struct ASAMainRowsViewCell:  View {
                 }.frame(height: ROW_HEIGHT)
             }
             if row.calendar.supportsLocations() {
-                ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark).frame(height: ROW_HEIGHT)
+                ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
             }
         }
     } // var body
@@ -132,24 +126,28 @@ struct ASAMainRowsLocationSubcell:  View {
     var INSET:  CGFloat
     var row:  ASARow
     var now:  Date
-    var deviceLocation:  CLLocation?
-    var devicePlacemark:  CLPlacemark?
-        
+
     var body: some View {
         HStack {
             Spacer().frame(width: self.INSET)
-            Text((row.placemark?.isoCountryCode ?? "").flag())
+            Text((row.ISOCountryCode ?? "").flag())
             if row.usesDeviceLocation {
                 Image(systemName: "location.fill")
             }
-            if row.placemark == nil {
+            if row.placeName == nil && row.locality == nil && row.country == nil {
                 if row.effectiveLocation != nil {
                     Text(verbatim:  row.effectiveLocation!.humanInterfaceRepresentation()).font(.subheadline)
                 }
             } else {
-                Text(row.placemark!.name ?? "").font(.subheadline)
-                Text(row.placemark!.locality ?? "").font(.subheadline)
-                Text(row.placemark!.country ?? "").font(.subheadline)
+                if row.placeName != nil {
+                    Text(row.placeName ?? "").font(.subheadline)
+                }
+                if row.locality != nil {
+                    Text(row.locality ?? "").font(.subheadline)
+                }
+                if row.country != nil {
+                    Text(row.country ?? "").font(.subheadline)
+                }
             }
         } // HStack
     }

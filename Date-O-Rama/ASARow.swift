@@ -20,6 +20,11 @@ let LONGITUDE_KEY:  String            = "longitude"
 let ALTITUDE_KEY:  String             = "altitude"
 let HORIZONTAL_ACCURACY_KEY:  String  = "haccuracy"
 let VERTICAL_ACCURACY_KEY:  String    = "vaccuracy"
+let PLACE_NAME_KEY:  String           = "placeName"
+let LOCALITY_KEY                      = "locality"
+let COUNTRY_KEY                       = "country"
+let ISO_COUNTRY_CODE_KEY              = "ISOCountryCode"
+
 
 let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
 let DEVICE_LOCATION_VALUE = -1000000.0 // Something implausible for latitude and longitude and fairly unlikely for an altitude
@@ -49,7 +54,10 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @Published var usesDeviceLocation:  Bool = true
     @Published var location:  CLLocation?
-    var placemark:  CLPlacemark?
+    @Published var placeName:  String?
+    @Published var locality:  String?
+    @Published var country:  String?
+    @Published var ISOCountryCode:  String?
     
     var locationManager = LocationManager.shared()
     
@@ -73,6 +81,19 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             result[ALTITUDE_KEY] = self.location?.altitude
             result[HORIZONTAL_ACCURACY_KEY] = self.location?.horizontalAccuracy
             result[VERTICAL_ACCURACY_KEY] = self.location?.verticalAccuracy
+        }
+        
+        if self.placeName != nil {
+            result[PLACE_NAME_KEY] = self.placeName
+        }
+        if self.locality != nil {
+            result[LOCALITY_KEY] = self.locality
+        }
+        if self.country != nil {
+            result[COUNTRY_KEY] = self.country
+        }
+        if self.ISOCountryCode != nil {
+            result[ISO_COUNTRY_CODE_KEY] = self.ISOCountryCode
         }
         
         debugPrint(#file, #function, result)
@@ -124,6 +145,10 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         if latitude != nil && longitude != nil {
             newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
         }
+        newRow.placeName = dictionary[PLACE_NAME_KEY] as? String
+        newRow.locality = dictionary[LOCALITY_KEY] as? String
+        newRow.country = dictionary[COUNTRY_KEY] as? String
+        newRow.ISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
         
         return newRow
     } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASARow
@@ -178,21 +203,29 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         } // get
     } // var effectiveTimeZone
     
+    func updateLocationInformation() {
+        self.location       = locationManager.lastDeviceLocation
+        self.placeName      = locationManager.lastDevicePlacemark?.name
+        self.locality       = locationManager.lastDevicePlacemark?.locality
+        self.country        = locationManager.lastDevicePlacemark?.country
+        self.ISOCountryCode = locationManager.lastDevicePlacemark?.isoCountryCode
+    } // func updateLocationInformation()
+    
     var effectiveLocation:  CLLocation? {
         get {
             if self.usesDeviceLocation {
-                let lastDeviceLocation:  CLLocation = LocationManager.shared().lastDeviceLocation ?? self.location ?? CLLocation.NullIsland
+                let lastDeviceLocation:  CLLocation = locationManager.lastDeviceLocation ?? self.location ?? CLLocation.NullIsland
                 let storedLocation = self.location ?? CLLocation.NullIsland
-                if (storedLocation.distance(from: lastDeviceLocation)) > 1000.0 { // We need to check to avoid thrashing.
-                    self.location = LocationManager.shared().lastDeviceLocation
-                    return LocationManager.shared().lastDeviceLocation
+                if (storedLocation.distance(from: lastDeviceLocation)) > 1000.0 || (self.placeName == nil && locationManager.lastDevicePlacemark != nil) { // We need to check to avoid thrashing.
+//                    self.location = locationManager.lastDeviceLocation
+                    self.updateLocationInformation()
+                    return locationManager.lastDeviceLocation
                 }
             }
             return self.location
         } // get
     } // var effectiveLocation:  CLLocation?
-    
-    
+        
     public func dateString(now:  Date) -> String {
         return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
     } // func dateString(now:  Date) -> String
