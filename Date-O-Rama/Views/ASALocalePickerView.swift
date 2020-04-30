@@ -13,7 +13,7 @@ struct ASALocalePickerView: View {
     let localeData = ASALocaleData()
     
     @ObservedObject var row:  ASARow
-    var deviceLocation:  CLLocation?
+//    var deviceLocation:  CLLocation?
     
     var body: some View {
         List {
@@ -21,7 +21,7 @@ struct ASALocalePickerView: View {
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
             } // ForEach(localeData.records)
         } // List
-            .navigationBarTitle(Text(row.dateString(now: Date(), defaultLocation: self.deviceLocation) ))
+            .navigationBarTitle(Text(row.dateString(now: Date()) ))
     } // var body
 } // struct ASALocalePickerView
 
@@ -48,7 +48,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocalePickerView(row: ASARow.test(), deviceLocation: CLLocation.NullIsland)
+        ASALocalePickerView(row: ASARow.test())
     }
 }
 

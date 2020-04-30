@@ -14,7 +14,7 @@ struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
 //    @State var dummyRow:  ASARow = ASARow.dummy()
     @State var now = Date()
-    @ObservedObject var locationManager = LocationManager()
+    @ObservedObject var locationManager = LocationManager.shared()
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -38,7 +38,7 @@ struct ASAMainRowsView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uid) { row in
                     NavigationLink(
-                        destination: ASACalendarDetailView(selectedRow: row, now: self.now, deviceLocation: self.deviceLocation, devicePlacemark: self.devicePlacemark)
+                        destination: ASACalendarDetailView(selectedRow: row, now: self.now)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
@@ -108,7 +108,7 @@ struct ASAMainRowsViewCell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(verbatim:  row.dateString(now:self.now, defaultLocation: self.deviceLocation)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+            Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
             HStack {
                 Spacer().frame(width: self.INSET)
                 Text(verbatim: "🗓")
@@ -134,38 +134,22 @@ struct ASAMainRowsLocationSubcell:  View {
     var now:  Date
     var deviceLocation:  CLLocation?
     var devicePlacemark:  CLPlacemark?
-    
-    func location() -> CLLocation? {
-        if row.usesDeviceLocation {
-            return deviceLocation
-        } else {
-            return row.location
-        }
-    } // func location() -> CLLocation?
-    
-    func placemark() -> CLPlacemark? {
-        if row.usesDeviceLocation {
-            return devicePlacemark
-        } else {
-            return row.placemark
-        }
-    } // func placemark() -> CLPlacemark?
-    
+        
     var body: some View {
         HStack {
             Spacer().frame(width: self.INSET)
-            Text((self.placemark()?.isoCountryCode ?? "").flag())
+            Text((row.placemark?.isoCountryCode ?? "").flag())
             if row.usesDeviceLocation {
                 Image(systemName: "location.fill")
             }
-            if placemark() == nil {
-                if location() != nil {
-                    Text(verbatim:  location()!.humanInterfaceRepresentation()).font(.subheadline)
+            if row.placemark == nil {
+                if row.effectiveLocation != nil {
+                    Text(verbatim:  row.effectiveLocation!.humanInterfaceRepresentation()).font(.subheadline)
                 }
             } else {
-                Text(placemark()!.name ?? "").font(.subheadline)
-                Text(placemark()!.locality ?? "").font(.subheadline)
-                Text(placemark()!.country ?? "").font(.subheadline)
+                Text(row.placemark!.name ?? "").font(.subheadline)
+                Text(row.placemark!.locality ?? "").font(.subheadline)
+                Text(row.placemark!.country ?? "").font(.subheadline)
             }
         } // HStack
     }

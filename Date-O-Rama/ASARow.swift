@@ -49,17 +49,21 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @Published var usesDeviceLocation:  Bool = true
     @Published var location:  CLLocation?
-    @Published var placemark:  CLPlacemark?
+    var placemark:  CLPlacemark?
+    
+    var locationManager = LocationManager.shared()
+    
     
     // MARK: -
     
     public func dictionary() -> Dictionary<String, Any> {
+        debugPrint(#file, #function)
         var result = [
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
-            TIME_ZONE_KEY:  timeZone == TimeZone.autoupdatingCurrent ? AUTOUPDATING_CURRENT_TIME_ZONE_VALUE : timeZone.identifier,
+            TIME_ZONE_KEY:  timeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
             ] as [String : Any]
         
@@ -71,10 +75,13 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             result[VERTICAL_ACCURACY_KEY] = self.location?.verticalAccuracy
         }
         
+        debugPrint(#file, #function, result)
         return result
     } // public func dictionary() -> Dictionary<String, Any>
     
     public class func newRow(dictionary:  Dictionary<String, Any>) -> ASARow {
+        debugPrint(#file, #function, dictionary)
+        
         let newRow = ASARow()
         
         let localeIdentifier = dictionary[LOCALE_KEY] as? String
@@ -159,13 +166,44 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     //MARK: -
     
-    public func dateString(now:  Date, defaultLocation:  CLLocation?) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: defaultLocation, timeZone: self.timeZone)
+    var effectiveTimeZone:  TimeZone {
+        get {
+            if self.usesDeviceLocation {
+                if self.timeZone != TimeZone.autoupdatingCurrent { // We need to check to avoid thrashing.
+                    self.timeZone = TimeZone.autoupdatingCurrent
+                }
+                return TimeZone.autoupdatingCurrent
+            }
+            return self.timeZone
+        } // get
+    } // var effectiveTimeZone
+    
+    var effectiveLocation:  CLLocation? {
+        get {
+            if self.usesDeviceLocation {
+                let lastDeviceLocation:  CLLocation = LocationManager.shared().lastDeviceLocation ?? self.location ?? CLLocation.NullIsland
+                let storedLocation = self.location ?? CLLocation.NullIsland
+                if (storedLocation.distance(from: lastDeviceLocation)) > 1000.0 { // We need to check to avoid thrashing.
+                    self.location = LocationManager.shared().lastDeviceLocation
+                    return LocationManager.shared().lastDeviceLocation
+                }
+            }
+            return self.location
+        } // get
+    } // var effectiveLocation:  CLLocation?
+    
+    
+    public func dateString(now:  Date) -> String {
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
     } // func dateString(now:  Date) -> String
     
-    public func dateString(now:  Date, LDMLString:  String, defaultLocation:  CLLocation?) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: defaultLocation, timeZone: self.timeZone)
+    public func dateString(now:  Date, LDMLString:  String) -> String {
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
     } // func dateString(now:  Date, LDMLString:  String) -> String
+    
+    func startOfNextDay(now:  Date) -> Date {
+        return self.calendar.startOfNextDay(now: now, location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
+    } // func startOfNextDay(now:  Date) -> Date
     
     
     // MARK: -

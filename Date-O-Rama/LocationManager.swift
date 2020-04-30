@@ -12,6 +12,15 @@ import CoreLocation
 import Combine
 
 class LocationManager: NSObject, ObservableObject {
+    private static var sharedLocationManager: LocationManager = {
+        let locationManager = LocationManager()
+
+        return locationManager
+    }()
+    
+    class func shared() -> LocationManager {
+        return sharedLocationManager
+    }
 
     override init() {
         super.init()
@@ -86,8 +95,8 @@ extension LocationManager: CLLocationManagerDelegate {
             if place != nil {
                 self.lastDevicePlacemark = place
             } else {
-                // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than 10 meters to avoid the relevant info from disappearing needlessly.
-                if (Δ ?? 0.0) > 10.0 {
+                // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than a kilometer to avoid the relevant info from disappearing needlessly.
+                if (Δ ?? 0.0) > 1000.0 {
                     self.lastDevicePlacemark = nil
                 }
             }
