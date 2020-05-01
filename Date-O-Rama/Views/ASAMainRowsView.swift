@@ -66,7 +66,7 @@ struct ASAMainRowsView: View {
                     action: {
                         withAnimation {
                             debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
-                            self.userData.mainRows.insert(ASARow.generic(), at: self.userData.mainRows.count)
+                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
                             self.userData.savePreferences()
                             debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
                         }
