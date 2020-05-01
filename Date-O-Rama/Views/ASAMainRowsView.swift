@@ -94,7 +94,7 @@ struct ASAMainRowsView: View {
 } // struct ASAMainRowsView
 
 struct ASAMainRowsViewCell:  View {
-    var row:  ASARow
+    @ObservedObject  var row:  ASARow
     var now:  Date
     var INSET:  CGFloat
     
@@ -124,7 +124,7 @@ struct ASAMainRowsViewCell:  View {
 
 struct ASAMainRowsLocationSubcell:  View {
     var INSET:  CGFloat
-    var row:  ASARow
+    @ObservedObject var row:  ASARow
     var now:  Date
 
     var body: some View {
