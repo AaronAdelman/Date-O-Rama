@@ -52,11 +52,11 @@ struct ASACalendarDetailView: View {
                         ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }
-
-                ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
-
-                if selectedRow.calendar.supportsLocations() {
-                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.location, placeName: self.selectedRow.placeName, locality: self.selectedRow.locality, country: self.selectedRow.country, ISOCountryCode: self.selectedRow.ISOCountryCode, now: now)
+                
+                ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
+                
+                NavigationLink(destination:  ASALocationChooserView(row:  selectedRow, tempLocationData: ASALocationData())) {
+                                        ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.location, placeName: self.selectedRow.placeName, locality: self.selectedRow.locality, country: self.selectedRow.country, ISOCountryCode: self.selectedRow.ISOCountryCode)
                 }
             } // Section
             

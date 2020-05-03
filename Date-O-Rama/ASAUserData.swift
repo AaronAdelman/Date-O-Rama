@@ -28,7 +28,7 @@ final class ASAUserData:  ObservableObject {
                         row.country = place?.country
                         row.ISOCountryCode = place?.isoCountryCode
                     }
-                    debugPrint(#file, #function, row.location as Any, place as Any)
+//                    debugPrint(#file, #function, row.location as Any, place as Any)
                 }
             }
         } // for row in self.mainRows

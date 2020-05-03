@@ -50,14 +50,84 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
     
-    @Published var timeZone:  TimeZone = TimeZone.autoupdatingCurrent
+    @Published var timeZone:  TimeZone? = TimeZone.autoupdatingCurrent
+    var effectiveTimeZone:  TimeZone {
+        get {
+            if usesDeviceLocation || self.timeZone == nil {
+                return TimeZone.autoupdatingCurrent
+            } else {
+                return self.timeZone!
+            }
+        } // get
+    } // var effectiveTimeZone
     
     @Published var usesDeviceLocation:  Bool = true
-    @Published var location:  CLLocation?
-    @Published var placeName:  String?
-    @Published var locality:  String?
-    @Published var country:  String?
-    @Published var ISOCountryCode:  String?
+//    @Published var location:  CLLocation?
+//    @Published var placeName:  String?
+//    @Published var locality:  String?
+//    @Published var country:  String?
+//    @Published var ISOCountryCode:  String?
+    
+//    var locationData:  ASALocationData {
+//        get {
+//            let tempLocationData = ASALocationData(location: location, name: placeName, locality: locality, country: country, ISOCountryCode: ISOCountryCode, timeZone:  timeZone)
+//            return tempLocationData
+//        } // get
+//        set {
+//            self.location = newValue.location
+//            self.placeName = newValue.name
+//            self.locality = newValue.locality
+//            self.country = newValue.country
+//            self.ISOCountryCode = newValue.ISOCountryCode
+//            self.timeZone = newValue.timeZone
+//        } // set
+//    } // var locationData
+    @Published var locationData:  ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone: TimeZone.autoupdatingCurrent)
+    
+    var location:  CLLocation? {
+        get {
+            return self.locationData.location
+        } // get
+        set {
+            self.locationData.location = newValue
+        } // set
+    }
+    
+    var placeName:  String? {
+           get {
+               return self.locationData.name
+           } // get
+           set {
+               self.locationData.name = newValue
+           } // set
+       }
+    
+    var locality:  String? {
+           get {
+               return self.locationData.locality
+           } // get
+           set {
+               self.locationData.locality = newValue
+           } // set
+       }
+    
+    var country:  String? {
+           get {
+               return self.locationData.country
+           } // get
+           set {
+               self.locationData.country = newValue
+           } // set
+       }
+    
+    var ISOCountryCode:  String? {
+           get {
+               return self.locationData.ISOCountryCode
+           } // get
+           set {
+               self.locationData.ISOCountryCode = newValue
+           } // set
+       }
     
     var locationManager = ASALocationManager.shared()
     let notificationCenter = NotificationCenter.default
@@ -76,22 +146,23 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @objc func handle(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
-            self.location       = self.locationManager.locationData.location
-            self.placeName      = self.locationManager.locationData.name
-            self.locality       = self.locationManager.locationData.locality
-            self.country        = self.locationManager.locationData.country
-            self.ISOCountryCode = self.locationManager.locationData.ISOCountryCode
+//            self.location       = self.locationManager.locationData.location
+//            self.placeName      = self.locationManager.locationData.name
+//            self.locality       = self.locationManager.locationData.locality
+//            self.country        = self.locationManager.locationData.country
+//            self.ISOCountryCode = self.locationManager.locationData.ISOCountryCode
+            self.locationData = self.locationManager.locationData
         }
     } // func handle(notification:  Notification) -> Void
     
     public func dictionary() -> Dictionary<String, Any> {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
         var result = [
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
-            TIME_ZONE_KEY:  timeZone.identifier,
+            TIME_ZONE_KEY:  effectiveTimeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
             ] as [String : Any]
         
@@ -116,12 +187,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             result[ISO_COUNTRY_CODE_KEY] = self.ISOCountryCode
         }
         
-        debugPrint(#file, #function, result)
+//        debugPrint(#file, #function, result)
         return result
     } // public func dictionary() -> Dictionary<String, Any>
     
     public class func newRow(dictionary:  Dictionary<String, Any>) -> ASARow {
-        debugPrint(#file, #function, dictionary)
+//        debugPrint(#file, #function, dictionary)
         
         let newRow = ASARow()
         
@@ -204,58 +275,23 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         tempRow.localeIdentifier = self.localeIdentifier
         tempRow.majorDateFormat = self.majorDateFormat
         tempRow.dateGeekFormat = self.dateGeekFormat
-        tempRow.timeZone = TimeZone(identifier: self.timeZone.identifier)!
+        tempRow.timeZone = TimeZone(identifier: self.effectiveTimeZone.identifier)!
         return tempRow
     } // func copy() -> ASARow
     
     
     //MARK: -
-    
-//    var effectiveTimeZone:  TimeZone {
-//        get {
-//            if self.usesDeviceLocation {
-//                if self.timeZone != TimeZone.autoupdatingCurrent { // We need to check to avoid thrashing.
-//                    self.timeZone = TimeZone.autoupdatingCurrent
-//                }
-//                return TimeZone.autoupdatingCurrent
-//            }
-//            return self.timeZone
-//        } // get
-//    } // var effectiveTimeZone
-//
-//    func updateLocationInformation() {
-//        self.location       = locationManager.lastDeviceLocation
-//        self.placeName      = locationManager.lastDevicePlacemark?.name
-//        self.locality       = locationManager.lastDevicePlacemark?.locality
-//        self.country        = locationManager.lastDevicePlacemark?.country
-//        self.ISOCountryCode = locationManager.lastDevicePlacemark?.isoCountryCode
-//    } // func updateLocationInformation()
-//
-//    var effectiveLocation:  CLLocation? {
-//        get {
-//            if self.usesDeviceLocation {
-//                let lastDeviceLocation:  CLLocation = locationManager.lastDeviceLocation ?? self.location ?? CLLocation.NullIsland
-//                let storedLocation = self.location ?? CLLocation.NullIsland
-//                if (storedLocation.distance(from: lastDeviceLocation)) > 1000.0 || (self.placeName == nil && locationManager.lastDevicePlacemark != nil) { // We need to check to avoid thrashing.
-////                    self.location = locationManager.lastDeviceLocation
-//                    self.updateLocationInformation()
-//                    return locationManager.lastDeviceLocation
-//                }
-//            }
-//            return self.location
-//        } // get
-//    } // var effectiveLocation:  CLLocation?
         
     public func dateString(now:  Date) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.timeZone)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateString(now:  Date) -> String
     
     public func dateString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.timeZone)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateString(now:  Date, LDMLString:  String) -> String
     
     func startOfNextDay(now:  Date) -> Date {
-        return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.timeZone)
+        return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.effectiveTimeZone)
     } // func startOfNextDay(now:  Date) -> Date
     
     

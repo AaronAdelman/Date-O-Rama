@@ -40,7 +40,7 @@ let defaults =
 
 class ASAConfiguration: NSObject {
     public static func configureDefaults() -> Void {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
         let defaultSettings = [:] as [String : Any]
         
         defaults?.register(defaults: defaultSettings)
@@ -49,7 +49,7 @@ class ASAConfiguration: NSObject {
     // MARK: -
     
     public class func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
-        debugPrint(#file, #function, rowArray)
+//        debugPrint(#file, #function, rowArray)
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
             let dictionary = row.dictionary()
@@ -61,7 +61,7 @@ class ASAConfiguration: NSObject {
     } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
     
     public class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
-        debugPrint(#file, #function, key)
+//        debugPrint(#file, #function, key)
         
         let temp = defaults?.array(forKey: key.rawValue)
         var tempArray:  Array<ASARow> = []
@@ -80,7 +80,7 @@ class ASAConfiguration: NSObject {
             tempArray += Array.init(repeatElement(ASARow.generic(), count: minimumNumberOfRows - numberOfRows))
         }
         
-        debugPrint(#file, #function, tempArray)
+//        debugPrint(#file, #function, tempArray)
         return tempArray
     } // public func rowArray(key:  ASARowArrayKey) -> Array<ASARow>?
     

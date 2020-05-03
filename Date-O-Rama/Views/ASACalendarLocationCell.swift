@@ -16,7 +16,6 @@ struct ASACalendarLocationCell:  View {
     var locality:  String?
     var country:  String?
     var ISOCountryCode:  String?
-    var now:  Date
     
     var body: some View {
         HStack {
@@ -62,6 +61,6 @@ struct ASACalendarLocationCell:  View {
 
 struct ASACalendarLocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarLocationCell(usesDeviceLocation: true, now: Date())
+        ASACalendarLocationCell(usesDeviceLocation: true)
     }
 }

@@ -111,8 +111,8 @@ struct ASAMainRowsViewCell:  View {
             if row.calendar.supportsTimeZones() {
                 HStack {
                     Spacer().frame(width: self.INSET)
-                    Text(row.timeZone.emoji(date:  self.now))
-                    Text(verbatim: "\(row.timeZone.localizedName(for: row.timeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.timeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                    Text(row.effectiveTimeZone.emoji(date:  self.now))
+                    Text(verbatim: "\(row.timeZone!.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                 }.frame(height: ROW_HEIGHT)
             }
             if row.calendar.supportsLocations() {
