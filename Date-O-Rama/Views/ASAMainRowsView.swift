@@ -14,21 +14,21 @@ struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
 //    @State var dummyRow:  ASARow = ASARow.dummy()
     @State var now = Date()
-    @ObservedObject var locationManager = LocationManager.shared()
+//    @ObservedObject var locationManager = LocationManager.shared()
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    var deviceLocation:  CLLocation? {
-        get {
-            return self.locationManager.lastDeviceLocation
-        } // get
-    } // var deviceLocation
-    
-    var devicePlacemark:  CLPlacemark? {
-        get {
-            return self.locationManager.lastDevicePlacemark
-        } // get
-    } // var devicePlacemark
+//    var deviceLocation:  CLLocation? {
+//        get {
+//            return self.locationManager.lastDeviceLocation
+//        } // get
+//    } // var deviceLocation
+//
+//    var devicePlacemark:  CLPlacemark? {
+//        get {
+//            return self.locationManager.lastDevicePlacemark
+//        } // get
+//    } // var devicePlacemark
 
     
     let INSET = 25.0 as CGFloat
@@ -78,7 +78,7 @@ struct ASAMainRowsView: View {
             }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
                 for row in self.userData.mainRows {
-                    let transition = row.calendar.startOfNextDay(now: self.now, location: self.deviceLocation, timeZone: row.timeZone)
+                    let transition = row.startOfNextDay(now: self.now)
 //                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
                     if  input >= transition {
 //                        debugPrint("\(#file) \(#function) After transition time (\(transition)), updating date to \(input)…")
@@ -135,8 +135,8 @@ struct ASAMainRowsLocationSubcell:  View {
                 Image(systemName: "location.fill")
             }
             if row.placeName == nil && row.locality == nil && row.country == nil {
-                if row.effectiveLocation != nil {
-                    Text(verbatim:  row.effectiveLocation!.humanInterfaceRepresentation()).font(.subheadline)
+                if row.location != nil {
+                    Text(verbatim:  row.location!.humanInterfaceRepresentation()).font(.subheadline)
                 }
             } else {
                 if row.placeName != nil {

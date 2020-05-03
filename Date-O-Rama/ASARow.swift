@@ -59,10 +59,26 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     @Published var country:  String?
     @Published var ISOCountryCode:  String?
     
-    var locationManager = LocationManager.shared()
-    
+    var locationManager = ASALocationManager.shared()
+    let notificationCenter = NotificationCenter.default
+
     
     // MARK: -
+    
+    override init() {
+        super.init()
+        notificationCenter.addObserver(self, selector: #selector(handle(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil)
+    }
+    
+    @objc func handle(notification:  Notification) -> Void {
+        if self.usesDeviceLocation {
+            self.location       = self.locationManager.locationData.location
+            self.placeName      = self.locationManager.locationData.name
+            self.locality       = self.locationManager.locationData.locality
+            self.country        = self.locationManager.locationData.country
+            self.ISOCountryCode = self.locationManager.locationData.ISOCountryCode
+        }
+    }
     
     public func dictionary() -> Dictionary<String, Any> {
         debugPrint(#file, #function)
@@ -191,51 +207,51 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     //MARK: -
     
-    var effectiveTimeZone:  TimeZone {
-        get {
-            if self.usesDeviceLocation {
-                if self.timeZone != TimeZone.autoupdatingCurrent { // We need to check to avoid thrashing.
-                    self.timeZone = TimeZone.autoupdatingCurrent
-                }
-                return TimeZone.autoupdatingCurrent
-            }
-            return self.timeZone
-        } // get
-    } // var effectiveTimeZone
-    
-    func updateLocationInformation() {
-        self.location       = locationManager.lastDeviceLocation
-        self.placeName      = locationManager.lastDevicePlacemark?.name
-        self.locality       = locationManager.lastDevicePlacemark?.locality
-        self.country        = locationManager.lastDevicePlacemark?.country
-        self.ISOCountryCode = locationManager.lastDevicePlacemark?.isoCountryCode
-    } // func updateLocationInformation()
-    
-    var effectiveLocation:  CLLocation? {
-        get {
-            if self.usesDeviceLocation {
-                let lastDeviceLocation:  CLLocation = locationManager.lastDeviceLocation ?? self.location ?? CLLocation.NullIsland
-                let storedLocation = self.location ?? CLLocation.NullIsland
-                if (storedLocation.distance(from: lastDeviceLocation)) > 1000.0 || (self.placeName == nil && locationManager.lastDevicePlacemark != nil) { // We need to check to avoid thrashing.
-//                    self.location = locationManager.lastDeviceLocation
-                    self.updateLocationInformation()
-                    return locationManager.lastDeviceLocation
-                }
-            }
-            return self.location
-        } // get
-    } // var effectiveLocation:  CLLocation?
+//    var effectiveTimeZone:  TimeZone {
+//        get {
+//            if self.usesDeviceLocation {
+//                if self.timeZone != TimeZone.autoupdatingCurrent { // We need to check to avoid thrashing.
+//                    self.timeZone = TimeZone.autoupdatingCurrent
+//                }
+//                return TimeZone.autoupdatingCurrent
+//            }
+//            return self.timeZone
+//        } // get
+//    } // var effectiveTimeZone
+//
+//    func updateLocationInformation() {
+//        self.location       = locationManager.lastDeviceLocation
+//        self.placeName      = locationManager.lastDevicePlacemark?.name
+//        self.locality       = locationManager.lastDevicePlacemark?.locality
+//        self.country        = locationManager.lastDevicePlacemark?.country
+//        self.ISOCountryCode = locationManager.lastDevicePlacemark?.isoCountryCode
+//    } // func updateLocationInformation()
+//
+//    var effectiveLocation:  CLLocation? {
+//        get {
+//            if self.usesDeviceLocation {
+//                let lastDeviceLocation:  CLLocation = locationManager.lastDeviceLocation ?? self.location ?? CLLocation.NullIsland
+//                let storedLocation = self.location ?? CLLocation.NullIsland
+//                if (storedLocation.distance(from: lastDeviceLocation)) > 1000.0 || (self.placeName == nil && locationManager.lastDevicePlacemark != nil) { // We need to check to avoid thrashing.
+////                    self.location = locationManager.lastDeviceLocation
+//                    self.updateLocationInformation()
+//                    return locationManager.lastDeviceLocation
+//                }
+//            }
+//            return self.location
+//        } // get
+//    } // var effectiveLocation:  CLLocation?
         
     public func dateString(now:  Date) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.timeZone)
     } // func dateString(now:  Date) -> String
     
     public func dateString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.timeZone)
     } // func dateString(now:  Date, LDMLString:  String) -> String
     
     func startOfNextDay(now:  Date) -> Date {
-        return self.calendar.startOfNextDay(now: now, location: self.effectiveLocation, timeZone: self.effectiveTimeZone)
+        return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.timeZone)
     } // func startOfNextDay(now:  Date) -> Date
     
     

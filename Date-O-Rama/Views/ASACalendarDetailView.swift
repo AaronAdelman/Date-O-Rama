@@ -53,10 +53,10 @@ struct ASACalendarDetailView: View {
                     }
                 }
 
-                ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
+                ASACalendarTimeZoneCell(timeZone: selectedRow.timeZone, now: now)
 
                 if selectedRow.calendar.supportsLocations() {
-                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.effectiveLocation, placeName: self.selectedRow.placeName, locality: self.selectedRow.locality, country: self.selectedRow.country, ISOCountryCode: self.selectedRow.ISOCountryCode, now: now)
+                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.location, placeName: self.selectedRow.placeName, locality: self.selectedRow.locality, country: self.selectedRow.country, ISOCountryCode: self.selectedRow.ISOCountryCode, now: now)
                 }
             } // Section
             
@@ -72,7 +72,7 @@ struct ASACalendarDetailView: View {
             
             if selectedRow.calendar.supportsEventDetails() {
                 Section(header:  Text("HEADER_EVENTS")) {
-                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.effectiveLocation), id: \.key) {
+                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location), id: \.key) {
                         detail
                         in
                         ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : DateFormatter.localizedString(from: detail.value!, dateStyle: .none, timeStyle: .medium), systemIconName: detail.key.systemIconName())

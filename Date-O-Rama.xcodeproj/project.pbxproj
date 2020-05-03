@@ -11,7 +11,7 @@
 		A51A0839245B071B00135AA6 /* ASACalendarTimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */; };
 		A51A083B245B079A00135AA6 /* ASACalendarLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */; };
 		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
-		A53A5B0024519859005F9876 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* LocationManager.swift */; };
+		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASolarCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASolarCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
@@ -68,7 +68,7 @@
 		A525622B24556169009C2920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A525622E245561E3009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A53A5AFF24519859005F9876 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASolarCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
 				A525622C24556169009C2920 /* Localizable.strings */,
-				A53A5AFF24519859005F9876 /* LocationManager.swift */,
+				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
 				A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */,
 				A5C77C452434723300CFEE47 /* Views */,
@@ -406,7 +406,7 @@
 				A51A0839245B071B00135AA6 /* ASACalendarTimeZoneCell.swift in Sources */,
 				A51A0837245B06B500135AA6 /* ASACalendarDetailCell.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
-				A53A5B0024519859005F9876 /* LocationManager.swift in Sources */,
+				A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASolarCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASAMajorFormat.swift in Sources */,

@@ -11,14 +11,29 @@ import Foundation
 import CoreLocation
 import Combine
 
-class LocationManager: NSObject, ObservableObject {
-    private static var sharedLocationManager: LocationManager = {
-        let locationManager = LocationManager()
+struct ASALocationData {
+    var location:  CLLocation?
+    var name:  String?
+    var locality:  String?
+    var country:  String?
+    var ISOCountryCode:  String?
+} // struct ASALocationData
+
+
+let UPDATED_LOCATION = "UPDATED_LOCATION"
+
+
+// MARK: -
+
+
+class ASALocationManager: NSObject, ObservableObject {
+    private static var sharedLocationManager: ASALocationManager = {
+        let locationManager = ASALocationManager()
 
         return locationManager
     }()
     
-    class func shared() -> LocationManager {
+    class func shared() -> ASALocationManager {
         return sharedLocationManager
     }
 
@@ -32,31 +47,43 @@ class LocationManager: NSObject, ObservableObject {
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
     }
+    
+    let notificationCenter = NotificationCenter.default
 
     @Published var locationStatus: CLAuthorizationStatus? {
         willSet {
             objectWillChange.send()
         }
     }
-
-    @Published var lastDeviceLocation: CLLocation? {
+    
+    //    @Published var lastDeviceLocation: CLLocation? {
+    //        willSet {
+    //            objectWillChange.send()
+    //        }
+    //    }
+    //
+    //    @Published var lastDevicePlacemark: CLPlacemark? {
+    //        willSet {
+    //            objectWillChange.send()
+    //        }
+    //    }
+    
+    private var lastDeviceLocation: CLLocation?
+    
+    private var lastDevicePlacemark: CLPlacemark?
+    
+    @Published var locationData: ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil) {
         willSet {
             objectWillChange.send()
-        }
-    }
-  
-    @Published var lastDevicePlacemark: CLPlacemark? {
-        willSet {
-            objectWillChange.send()
-        }
-    }
-
-
+        } // willSet
+    } // var locationData
+    
+    
     var statusString: String {
         guard let status = locationStatus else {
             return "unknown"
         }
-
+        
         switch status {
         case .notDetermined: return "notDetermined"
         case .authorizedWhenInUse: return "authorizedWhenInUse"
@@ -73,7 +100,7 @@ class LocationManager: NSObject, ObservableObject {
     private let locationManager = CLLocationManager()
 }
 
-extension LocationManager: CLLocationManagerDelegate {
+extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationStatus = status
@@ -102,13 +129,16 @@ extension LocationManager: CLLocationManagerDelegate {
 //                self.lastDeviceLocation = location
 //            }
             
-            if Δ ?? 1000000000.0 >= 1.0 {
+            if Δ ?? 1000000000.0 >= 10.0 {
                 self.lastDevicePlacemark = place
                 self.lastDeviceLocation = location
+                let tempLocationData = ASALocationData(location: location, name: place?.name, locality: place?.locality, country: place?.country, ISOCountryCode: place?.isoCountryCode)
+                self.locationData = tempLocationData
+                self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
             }
             
             debugPrint(#file, #function, location, place as Any)
         }
-    }
+    } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 
-}
+} // extension ASALocationManager
