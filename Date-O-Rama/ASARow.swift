@@ -68,7 +68,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     override init() {
         super.init()
         notificationCenter.addObserver(self, selector: #selector(handle(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil)
-    }
+    } // override init()
+    
+    deinit {
+        notificationCenter.removeObserver(self)
+    } // deinit
     
     @objc func handle(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
@@ -78,7 +82,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             self.country        = self.locationManager.locationData.country
             self.ISOCountryCode = self.locationManager.locationData.ISOCountryCode
         }
-    }
+    } // func handle(notification:  Notification) -> Void
     
     public func dictionary() -> Dictionary<String, Any> {
         debugPrint(#file, #function)

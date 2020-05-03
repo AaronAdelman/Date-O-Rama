@@ -109,35 +109,23 @@ extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-//        self.lastLocation = location
-//        print(#function, location)
-        
-        let coder = CLGeocoder();
-        coder.reverseGeocodeLocation(location) { (placemarks, error) in
-            let place = placemarks?.last;
+        //        self.lastLocation = location
+        //        print(#function, location)
+        let Δ = self.lastDeviceLocation?.distance(from: location)
 
-            let Δ = self.lastDeviceLocation?.distance(from: location)
-            
-//            if place != nil {
-//                self.lastDevicePlacemark = place
-//                self.lastDeviceLocation = place?.location
-//            } else {
-//                // Uh-oh!  We had a reverse geocoding failure.  Only change the placemark if the distance is more than a kilometer to avoid the relevant info from disappearing needlessly.
-//                if (Δ ?? 0.0) > 1000.0 {
-//                    self.lastDevicePlacemark = nil
-//                }
-//                self.lastDeviceLocation = location
-//            }
-            
-            if Δ ?? 1000000000.0 >= 10.0 {
+        if Δ ?? 1000000000.0 >= 10.0 {
+            let coder = CLGeocoder();
+            coder.reverseGeocodeLocation(location) { (placemarks, error) in
+                let place = placemarks?.last;
+                
                 self.lastDevicePlacemark = place
                 self.lastDeviceLocation = location
                 let tempLocationData = ASALocationData(location: location, name: place?.name, locality: place?.locality, country: place?.country, ISOCountryCode: place?.isoCountryCode)
                 self.locationData = tempLocationData
                 self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
+                
+                debugPrint(#file, #function, location, place as Any)
             }
-            
-            debugPrint(#file, #function, location, place as Any)
         }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 
