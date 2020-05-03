@@ -124,23 +124,24 @@ extension String {
         }
         
         if self.count == 3 {
+            // We are probably dealing with a UN M49 code
             switch self {
-                case "001":
+                case "001": // Earth in general
+                return "🇺🇳"
+                
+                case "002", "015", "202", "014", "017", "018", "011":  // Africa
                 return "🌍"
                 
-                case "002", "015", "202", "014", "017", "018", "011":
-                return "🌍"
-                
-                case "019", "419", "029", "013", "005", "003", "021":
+                case "019", "419", "029", "013", "005", "003", "021":  // Americas
                 return "🌎"
                 
-            case "142", "143", "030", "035", "034", "145":
+            case "142", "143", "030", "035", "034", "145": // Asia
                 return "🌏"
                 
-            case "150", "151", "154", "039", "155":
-                return "🌍"
+            case "150", "151", "154", "039", "155": // Europe
+                return "🇪🇺"
 
-            case "009", "053", "054", "057", "061":
+            case "009", "053", "054", "057", "061":  // Oceania
                 return "🌏"
 
             default:
