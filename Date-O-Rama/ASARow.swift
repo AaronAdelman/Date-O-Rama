@@ -32,7 +32,7 @@ let SUBLOCALITY_KEY:  String            = "subLocality"
 let THOROUGHFARE_KEY:  String           = "thoroughfare"
 let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
 
-let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
+//let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
 
 
 // MARK: -
@@ -230,11 +230,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
         if timeZoneIdentifier != nil {
-            if timeZoneIdentifier! == AUTOUPDATING_CURRENT_TIME_ZONE_VALUE {
-                newRow.timeZone = TimeZone.autoupdatingCurrent
-            } else {
+//            if timeZoneIdentifier! == AUTOUPDATING_CURRENT_TIME_ZONE_VALUE {
+//                newRow.timeZone = TimeZone.autoupdatingCurrent
+//            } else {
                 newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
-            }
+//            }
         }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool

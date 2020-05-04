@@ -108,14 +108,12 @@ struct ASAMainRowsViewCell:  View {
                 Text(verbatim: "🗓")
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
             }.frame(height: ROW_HEIGHT)
-            if row.calendar.supportsTimeZones() {
+            if row.calendar.supportsTimeZones() || row.calendar.supportsLocations() {
                 HStack {
                     Spacer().frame(width: self.INSET)
                     Text(row.effectiveTimeZone.emoji(date:  self.now))
                     Text(verbatim: "\(row.timeZone!.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                 }.frame(height: ROW_HEIGHT)
-            }
-            if row.calendar.supportsLocations() {
                 ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
             }
         }
@@ -139,7 +137,7 @@ struct ASAMainRowsLocationSubcell:  View {
                     Text(verbatim:  row.location!.humanInterfaceRepresentation()).font(.subheadline)
                 }
             } else {
-                Text(row.locationData.formattedOneLineAddress()).font(.subheadline)
+                Text(row.locationData.formattedOneLineAddress()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(2).frame(height: 60.0)
             }
         } // HStack
     }
