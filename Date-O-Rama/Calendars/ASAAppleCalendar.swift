@@ -32,6 +32,12 @@ class ASAAppleCalendar:  ASACalendar {
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
+        
+        if timeZone == nil {
+            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
+        } else {
+            self.dateFormatter.timeZone = timeZone
+        }
 
         if majorDateFormat == .localizedLDML {
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!

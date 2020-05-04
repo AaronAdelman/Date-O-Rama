@@ -29,6 +29,14 @@ struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
     
+    func localDateFormatter(timeZone:  TimeZone?) -> DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = timeZone ?? TimeZone(secondsFromGMT: 0)
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .long
+        return dateFormatter
+    }
+    
     var body: some View {
         List {
             
@@ -77,7 +85,7 @@ struct ASACalendarDetailView: View {
                     ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location), id: \.key) {
                         detail
                         in
-                        ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : DateFormatter.localizedString(from: detail.value!, dateStyle: .none, timeStyle: .medium), systemIconName: detail.key.systemIconName())
+                        ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : self.localDateFormatter(timeZone: TimeZone.autoupdatingCurrent).string(from: detail.value!), detail2: detail.value == nil ? "—" : self.localDateFormatter(timeZone: self.selectedRow.locationData.timeZone).string(from: detail.value!), systemIconName: detail.key.systemIconName())
                     }
                 } // Section
             }

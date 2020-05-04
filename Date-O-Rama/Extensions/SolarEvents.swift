@@ -93,7 +93,8 @@ extension Date {
 
         // 1. first calculate the day of the year
         
-        let calendar = Calendar(identifier: .gregorian)
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
         
         let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
         
@@ -107,8 +108,18 @@ extension Date {
         // Now switch to a function
         var result:  Dictionary<ASASolarEvent, Date?> = [:]
         for event in events {
-            result[event] = solarEventsContinued(t: event.rising() ? t_rising : t_setting, latitude: latitude, zenith: event.zenith(), risingDesired: event.rising(), date: self, lngHour: lngHour)
+            var tempResult = solarEventsContinued(t: event.rising() ? t_rising : t_setting, latitude: latitude, zenith: event.zenith(), risingDesired: event.rising(), date: self, lngHour: lngHour)
+            if !event.rising() && tempResult != nil {
+                let midnightToday = calendar.startOfDay(for:self)
+                let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
+                if tempResult! < noon {
+                    // Something went wrong, and we got a result for the previous day
+                    tempResult = tempResult!.addingTimeInterval(24 * 60 * 60)
+                }
+            }
+            result[event] = tempResult
         } // for event in events
+        
         return result
     } // func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
 } // extension Date

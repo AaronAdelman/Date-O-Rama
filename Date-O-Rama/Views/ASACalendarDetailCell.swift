@@ -11,6 +11,7 @@ import SwiftUI
 struct ASACalendarDetailCell:  View {
     var title:  String
     var detail:  String
+    var detail2:  String?
     var systemIconName:  String?
     
     var body:  some View {
@@ -18,9 +19,13 @@ struct ASACalendarDetailCell:  View {
             if systemIconName != nil {
                 Image(systemName: systemIconName!)
             }
-            Text(verbatim:  title).bold()
+            Text(verbatim:  title).bold().frame(width:  150.0)
             Spacer()
-            Text(verbatim:  detail).multilineTextAlignment(.trailing)
+            Text(verbatim:  detail).multilineTextAlignment(.leading)
+            if detail2 != nil {
+                Spacer()
+                Text(verbatim:  detail2!).multilineTextAlignment(.leading)
+            }
         } // HStack
     } // var body
 } // struct ASACalendarDetailCell
