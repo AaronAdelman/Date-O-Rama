@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A517658C2460721A0039AFAF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517658B2460721A0039AFAF /* MapView.swift */; };
 		A51A0837245B06B500135AA6 /* ASACalendarDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASACalendarDetailCell.swift */; };
 		A51A0839245B071B00135AA6 /* ASACalendarTimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */; };
 		A51A083B245B079A00135AA6 /* ASACalendarLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A517658B2460721A0039AFAF /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A51A0836245B06B500135AA6 /* ASACalendarDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailCell.swift; sourceTree = "<group>"; };
 		A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarTimeZoneCell.swift; sourceTree = "<group>"; };
 		A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarLocationCell.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A517658B2460721A0039AFAF /* MapView.swift */,
 				A51A0836245B06B500135AA6 /* ASACalendarDetailCell.swift */,
 				A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */,
 				A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */,
@@ -400,6 +403,7 @@
 				A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
 				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,
+				A517658C2460721A0039AFAF /* MapView.swift in Sources */,
 				A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */,
 				A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */,
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,

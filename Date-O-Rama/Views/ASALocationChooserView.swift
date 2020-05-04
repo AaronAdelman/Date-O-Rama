@@ -28,13 +28,13 @@ struct ASALocationChooserView: View {
                 }
             }
             if !tempUsesDeviceLocation {
-                Section {
-                    Text("Address")
+                HStack {
+//                    Text("Address")
                     TextField("Requested address", text: $enteredAddress)
                     Button(action: {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                         self.geolocate()
-                    }) {Text("Check").foregroundColor(.accentColor).bold()}
+                    }) {Text("🔍").foregroundColor(.accentColor).bold()}
                 }
                 Section {
                     ForEach(self.locationDataArray, id: \.uid) {
@@ -45,6 +45,13 @@ struct ASALocationChooserView: View {
                                 self.tempLocationData = locationData
                         }
                     }
+                } // Section
+                Section {
+                    MapView(coordinate: tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0))
+//                    .edgesIgnoringSafeArea(.top)
+//                        .frame(width: 300, height: 600)
+//                        .frame(minHeight:  300, maxHeight:  1200)
+                        .aspectRatio(1.0, contentMode: .fit)
                 } // Section
             }
         }
