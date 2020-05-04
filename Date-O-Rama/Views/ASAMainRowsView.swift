@@ -139,15 +139,7 @@ struct ASAMainRowsLocationSubcell:  View {
                     Text(verbatim:  row.location!.humanInterfaceRepresentation()).font(.subheadline)
                 }
             } else {
-                if row.placeName != nil {
-                    Text(row.placeName ?? "").font(.subheadline)
-                }
-                if row.locality != nil {
-                    Text(row.locality ?? "").font(.subheadline)
-                }
-                if row.country != nil {
-                    Text(row.country ?? "").font(.subheadline)
-                }
+                Text(row.locationData.formattedOneLineAddress()).font(.subheadline)
             }
         } // HStack
     }

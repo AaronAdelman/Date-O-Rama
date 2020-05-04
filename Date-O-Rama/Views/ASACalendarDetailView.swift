@@ -56,7 +56,7 @@ struct ASACalendarDetailView: View {
                 ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
                 
                 NavigationLink(destination:  ASALocationChooserView(row:  selectedRow, tempLocationData: ASALocationData())) {
-                                        ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, location: self.selectedRow.location, placeName: self.selectedRow.placeName, locality: self.selectedRow.locality, country: self.selectedRow.country, ISOCountryCode: self.selectedRow.ISOCountryCode)
+                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
                 }
             } // Section
             

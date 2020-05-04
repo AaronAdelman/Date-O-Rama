@@ -25,17 +25,20 @@ let LOCALITY_KEY                      = "locality"
 let COUNTRY_KEY                       = "country"
 let ISO_COUNTRY_CODE_KEY              = "ISOCountryCode"
 
+let POSTAL_CODE_KEY:  String            = "postalCode"
+let ADMINISTRATIVE_AREA_KEY:  String    = "administrativeArea"
+let SUBADMINISTRATIVE_AREA_KEY:  String = "subAdministrativeArea"
+let SUBLOCALITY_KEY:  String            = "subLocality"
+let THOROUGHFARE_KEY:  String           = "thoroughfare"
+let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
 
 let AUTOUPDATING_CURRENT_TIME_ZONE_VALUE = "*AUTOUPDATING*"
-let DEVICE_LOCATION_VALUE = -1000000.0 // Something implausible for latitude and longitude and fairly unlikely for an altitude
 
 
 // MARK: -
 
 class ASARow: NSObject, ObservableObject, Identifiable {
     var uid = UUID()
-
-//    @Published var dummy = false
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian)
         
@@ -50,7 +53,15 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
     
-    @Published var timeZone:  TimeZone? = TimeZone.autoupdatingCurrent
+    var timeZone:  TimeZone? {
+        get {
+            return self.locationData.timeZone
+        } // get
+        set {
+            self.locationData.timeZone = newValue
+        } // set
+    }
+    
     var effectiveTimeZone:  TimeZone {
         get {
             if usesDeviceLocation || self.timeZone == nil {
@@ -62,26 +73,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var effectiveTimeZone
     
     @Published var usesDeviceLocation:  Bool = true
-//    @Published var location:  CLLocation?
-//    @Published var placeName:  String?
-//    @Published var locality:  String?
-//    @Published var country:  String?
-//    @Published var ISOCountryCode:  String?
-    
-//    var locationData:  ASALocationData {
-//        get {
-//            let tempLocationData = ASALocationData(location: location, name: placeName, locality: locality, country: country, ISOCountryCode: ISOCountryCode, timeZone:  timeZone)
-//            return tempLocationData
-//        } // get
-//        set {
-//            self.location = newValue.location
-//            self.placeName = newValue.name
-//            self.locality = newValue.locality
-//            self.country = newValue.country
-//            self.ISOCountryCode = newValue.ISOCountryCode
-//            self.timeZone = newValue.timeZone
-//        } // set
-//    } // var locationData
     @Published var locationData:  ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone: TimeZone.autoupdatingCurrent)
     
     var location:  CLLocation? {
@@ -146,11 +137,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @objc func handle(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
-//            self.location       = self.locationManager.locationData.location
-//            self.placeName      = self.locationManager.locationData.name
-//            self.locality       = self.locationManager.locationData.locality
-//            self.country        = self.locationManager.locationData.country
-//            self.ISOCountryCode = self.locationManager.locationData.ISOCountryCode
             self.locationData = self.locationManager.locationData
         }
     } // func handle(notification:  Notification) -> Void
@@ -186,6 +172,31 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         if self.ISOCountryCode != nil {
             result[ISO_COUNTRY_CODE_KEY] = self.ISOCountryCode
         }
+        
+        if self.locationData.postalCode != nil {
+            result[POSTAL_CODE_KEY] = self.locationData.postalCode
+        }
+        
+        if self.locationData.administrativeArea != nil {
+            result[ADMINISTRATIVE_AREA_KEY] = self.locationData.administrativeArea
+        }
+
+        if self.locationData.subAdministrativeArea != nil {
+            result[SUBADMINISTRATIVE_AREA_KEY] = self.locationData.subAdministrativeArea
+        }
+
+        if self.locationData.subLocality != nil {
+            result[SUBLOCALITY_KEY] = self.locationData.subLocality
+        }
+
+        if self.locationData.thoroughfare != nil {
+            result[THOROUGHFARE_KEY] = self.locationData.thoroughfare
+        }
+
+        if self.locationData.subThoroughfare != nil {
+            result[SUBTHOROUGHFARE_KEY] = self.locationData.subThoroughfare
+        }
+
         
 //        debugPrint(#file, #function, result)
         return result
@@ -240,6 +251,13 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         newRow.locality = dictionary[LOCALITY_KEY] as? String
         newRow.country = dictionary[COUNTRY_KEY] as? String
         newRow.ISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
+        
+        newRow.locationData.postalCode = dictionary[POSTAL_CODE_KEY] as? String
+        newRow.locationData.administrativeArea = dictionary[ADMINISTRATIVE_AREA_KEY] as? String
+        newRow.locationData.subAdministrativeArea = dictionary[SUBADMINISTRATIVE_AREA_KEY] as? String
+        newRow.locationData.subLocality = dictionary[SUBLOCALITY_KEY] as? String
+        newRow.locationData.thoroughfare = dictionary[THOROUGHFARE_KEY] as? String
+        newRow.locationData.subThoroughfare = dictionary[SUBTHOROUGHFARE_KEY] as? String
         
         return newRow
     } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASARow

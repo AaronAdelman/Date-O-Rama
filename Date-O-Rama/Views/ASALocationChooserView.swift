@@ -19,7 +19,8 @@ struct ASALocationChooserView: View {
     var body: some View {
         Form {
             Section {
-                ASACalendarLocationCell(usesDeviceLocation: tempUsesDeviceLocation, location: tempLocationData.location, placeName: tempLocationData.name, locality: tempLocationData.locality, country: tempLocationData.country, ISOCountryCode: tempLocationData.ISOCountryCode)
+                ASACalendarTimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
+                ASACalendarLocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
             }
             Section {
                 Toggle(isOn: $tempUsesDeviceLocation) {
@@ -88,7 +89,7 @@ struct ASALocationChooserViewCell:  View {
     
     var body: some View {
         HStack {
-            Text("\(locationData.name ?? "") \(locationData.locality ?? "") \(locationData.country ?? "")")
+            Text(locationData.formattedOneLineAddress())
                Spacer()
                 if self.locationData == self.selectedLocationData {
                     Image(systemName: "checkmark")

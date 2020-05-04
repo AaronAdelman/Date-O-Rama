@@ -193,3 +193,5 @@
 "otherHour09½"                = "מנחה קטנה (מ״א)";
 "otherHour10¾"                = "פלג המנחה (מ״א)";
 "otherDusk"                   = "צאת הכוכבים (72 דקות)";
+
+"ADDRESS_SEPARATOR" = ", ";

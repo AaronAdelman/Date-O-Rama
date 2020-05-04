@@ -11,15 +11,16 @@ import CoreLocation
 
 struct ASACalendarLocationCell:  View {
     var usesDeviceLocation:  Bool
-    var location:  CLLocation?
-    var placeName:  String?
-    var locality:  String?
-    var country:  String?
-    var ISOCountryCode:  String?
+//    var location:  CLLocation?
+//    var placeName:  String?
+//    var locality:  String?
+//    var country:  String?
+//    var ISOCountryCode:  String?
+    var locationData:  ASALocationData
     
     var body: some View {
         HStack {
-            Text((ISOCountryCode ?? "").flag())
+            Text((locationData.ISOCountryCode ?? "").flag())
             Text("HEADER_LOCATION").bold()
             Spacer()
             VStack {
@@ -32,25 +33,32 @@ struct ASACalendarLocationCell:  View {
                 }
                 HStack {
                     Spacer()
-                    Text(verbatim: location != nil ?  location!.humanInterfaceRepresentation() : "").multilineTextAlignment(.trailing)
+                    Text(verbatim: locationData.location != nil ?  locationData.location!.humanInterfaceRepresentation() : "").multilineTextAlignment(.trailing)
                 }
-                if placeName != nil {
+                if locationData.name != nil {
                     HStack {
                         Spacer()
-                        Text(placeName!)
+                        Text(locationData.name!)
                     }
                 }
-                if locality != nil {
+                if locationData.locality != nil && locationData.locality != locationData.name {
                     HStack {
                         Spacer()
-                        Text(locality!)
+                        Text(locationData.locality!)
+                    }
+                }
+
+                if locationData.administrativeArea != nil {
+                    HStack {
+                        Spacer()
+                        Text(locationData.administrativeArea!)
                     }
                 }
 
                     HStack {
                         Spacer()
-                        if country != nil {
-                            Text(country!)
+                        if locationData.country != nil {
+                            Text(locationData.country!)
                         }
                     }
                 
@@ -61,6 +69,6 @@ struct ASACalendarLocationCell:  View {
 
 struct ASACalendarLocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarLocationCell(usesDeviceLocation: true)
+        ASACalendarLocationCell(usesDeviceLocation: true, locationData: ASALocationData())
     }
 }
