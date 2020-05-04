@@ -112,7 +112,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         return false
     } // func supportsEventDetails() -> Bool
 
-    func timeZone(location:  CLLocation?) -> TimeZone {
-        return TimeZone(secondsFromGMT: 0)!
-    } // func timeZone(location:  CLLocation?) -> TimeZone} // class ASAJulianDayCalendar
+//    func timeZone(location:  CLLocation?) -> TimeZone {
+//        return TimeZone(secondsFromGMT: 0)!
+//    } // func timeZone(location:  CLLocation?) -> TimeZone} // class ASAJulianDayCalendar
 } // class ASAJulianDayCalendar

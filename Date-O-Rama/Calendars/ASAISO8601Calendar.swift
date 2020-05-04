@@ -120,7 +120,7 @@ class ASAISO8601Calendar:  ASACalendar {
         return false
     } // func supportsEventDetails() -> Bool
     
-    func timeZone(location:  CLLocation?) -> TimeZone {
-        return TimeZone.autoupdatingCurrent
-    } // func timeZone(location:  CLLocation?) -> TimeZone
+//    func timeZone(location:  CLLocation?) -> TimeZone {
+//        return TimeZone.autoupdatingCurrent
+//    } // func timeZone(location:  CLLocation?) -> TimeZone
 } // class ASAISO8601Calendar

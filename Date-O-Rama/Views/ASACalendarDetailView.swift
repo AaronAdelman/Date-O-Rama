@@ -53,10 +53,12 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 
-                ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
-                
-                NavigationLink(destination:  ASALocationChooserView(row:  selectedRow, tempLocationData: ASALocationData())) {
-                    ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                if selectedRow.calendar.supportsTimeZones() || selectedRow.calendar.supportsLocations() {
+                    ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
+                    
+                    NavigationLink(destination:  ASALocationChooserView(row:  selectedRow, tempLocationData: ASALocationData())) {
+                        ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                    }
                 }
             } // Section
             

@@ -8,6 +8,9 @@
 
 import Foundation
 import CoreLocation
+
+// MARK: - Solar event keys
+
 let PREVIOUS_SUNSET_KEY               = "previousSunset"
 let MIDNIGHT_KEY                      = "midnight"
 let SUNRISE_KEY                       = "sunrise"
@@ -41,6 +44,8 @@ let OTHER_HOUR_10¾_KEY                = "otherHour10¾"
 let OTHER_DUSK_KEY                    = "otherDusk"
 
 
+// MARK: -
+
 class ASASolarCalendar:  ASACalendar {
 //    var calendarIdentifier:  Calendar.Identifier?
     
@@ -65,7 +70,6 @@ class ASASolarCalendar:  ASACalendar {
             return ""
         }
         
-        // TODO:  Update when times are supported!
         let fixedNow = now.solarCorrected(location: location!)
         
         if localeIdentifier == "" {
@@ -107,7 +111,6 @@ class ASASolarCalendar:  ASACalendar {
         if location == nil {
             return ""
         }
-        // TODO:  Update when times are supported!
         
         let fixedNow = now.solarCorrected(location: location!)
         
@@ -293,7 +296,7 @@ class ASASolarCalendar:  ASACalendar {
     } // func supportsEventDetails() -> Bool
     
     
-    func timeZone(location:  CLLocation?) -> TimeZone {
-        return TimeZone.autoupdatingCurrent // FIX THIS
-    } // func timeZone(location:  CLLocation?) -> TimeZone
+//    func timeZone(location:  CLLocation?) -> TimeZone {
+//        return TimeZone.autoupdatingCurrent // FIX THIS
+//    } // func timeZone(location:  CLLocation?) -> TimeZone
 }
