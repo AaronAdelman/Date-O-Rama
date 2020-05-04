@@ -136,7 +136,7 @@
 
 "HEADER_Calendar" = "לוח שנה";
 
-"HEADER_Locale"   = "אזור";
+"HEADER_Locale"   = "שפה ואזור";
 
 "HEADER_Date_format" = "מבנה תאריך";
 "ITEM_Full"          = "מלא";
