@@ -87,6 +87,7 @@ struct ASACalendarDetailView: View {
                         ASAEventCell(event:  event)
                     }
                 } // Section
+                    .listRowBackground(Color(selectedRow.calendar.color))
             }
             
             Section(header:  Text("HEADER_Other")) {
