@@ -11,11 +11,11 @@ import CoreLocation
 
 struct ASACalendarLocationCell:  View {
     var usesDeviceLocation:  Bool
-//    var location:  CLLocation?
-//    var placeName:  String?
-//    var locality:  String?
-//    var country:  String?
-//    var ISOCountryCode:  String?
+    //    var location:  CLLocation?
+    //    var placeName:  String?
+    //    var locality:  String?
+    //    var country:  String?
+    //    var ISOCountryCode:  String?
     var locationData:  ASALocationData
     
     var body: some View {
@@ -41,26 +41,49 @@ struct ASACalendarLocationCell:  View {
                         Text(locationData.name!)
                     }
                 }
+                
+                if locationData.subLocality != nil && locationData.locality != locationData.subLocality {
+                    HStack {
+                        Spacer()
+                        Text(locationData.subLocality!)
+                    }
+                }
+                
                 if locationData.locality != nil && locationData.locality != locationData.name {
                     HStack {
                         Spacer()
                         Text(locationData.locality!)
                     }
                 }
-
+                
+                if locationData.subAdministrativeArea != nil {
+                    HStack {
+                        Spacer()
+                        Text(locationData.subAdministrativeArea!)
+                    }
+                }
+                
                 if locationData.administrativeArea != nil {
                     HStack {
                         Spacer()
                         Text(locationData.administrativeArea!)
                     }
                 }
-
+                
+                HStack {
+                    Spacer()
+                    if locationData.country != nil {
+                        Text(locationData.country!)
+                    }
+                }
+                
+                if locationData.postalCode != nil {
                     HStack {
                         Spacer()
-                        if locationData.country != nil {
-                            Text(locationData.country!)
-                        }
+                        Text(locationData.postalCode!)
                     }
+                }
+                
                 
             } // VStack
         } // HStack

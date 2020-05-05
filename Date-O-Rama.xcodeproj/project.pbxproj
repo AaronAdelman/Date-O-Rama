@@ -252,12 +252,12 @@
 				A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */,
 				A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */,
 				A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */,
+				A517658D24615BA80039AFAF /* ASAEventCell.swift */,
 				A5D6285F243B79F300F3CC19 /* ASAFormatPickerView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */,
 				A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */,
 				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
 				A517658B2460721A0039AFAF /* MapView.swift */,
-				A517658D24615BA80039AFAF /* ASAEventCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
