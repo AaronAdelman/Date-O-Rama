@@ -37,7 +37,6 @@ struct ASAEventCell: View {
     
     var body: some View {
         HStack {
-            Spacer().frame(width: 8.0)
             Text(event.title)
                 .bold()
                 .foregroundColor(Color(.white))
@@ -47,7 +46,6 @@ struct ASAEventCell: View {
                 .multilineTextAlignment(.trailing)
                 .foregroundColor(Color(.white))
         } // HStack
-            .background(Color(event.calendar.color))
     }
 }
 
