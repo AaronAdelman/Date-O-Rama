@@ -12,7 +12,6 @@ import UIKit
 
 // MARK: - Solar event keys
 
-let PREVIOUS_SUNSET_KEY               = "previousSunset"
 let MIDNIGHT_KEY                      = "midnight"
 let SUNRISE_KEY                       = "sunrise"
 let NOON_KEY                          = "noon"
@@ -24,7 +23,6 @@ let EVENING_NAUTICAL_TWILIGHT_KEY     = "eveningNauticalTwilight"
 let MORNING_ASTRONOMICAL_TWILIGHT_KEY = "morningAstronomicalTwilight"
 let EVENING_ASTRONOMICAL_TWILIGHT_KEY = "eveningAstronomicalTwilight"
 
-let PREVIOUS_DUSK_KEY                 = "previousDusk"
 let DAWN_KEY                          = "dawn"
 let RECOGNITION_KEY                   = "recognition"
 let HOUR_03_KEY                       = "hour03"
@@ -35,7 +33,6 @@ let HOUR_10¾_KEY                      = "hour10¾"
 let CANDLELIGHTING_KEY                = "candlelighting"
 let DUSK_KEY                          = "dusk"
 
-let PREVIOUS_OTHER_DUSK_KEY           = "previousOtherDusk"
 let OTHER_DAWN_KEY                    = "otherDawn"
 let OTHER_HOUR_03_KEY                 = "otherHour03"
 let OTHER_HOUR_04_KEY                 = "otherHour04"
@@ -217,12 +214,12 @@ class ASASolarCalendar:  ASACalendar {
         //        let otherHour11  = otherDawn.addingTimeInterval(11    * otherHourLength)
         
         return [
-            ASAEvent(title: NSLocalizedString(PREVIOUS_SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(PREVIOUS_DUSK_KEY, comment: ""), startDate: previousDusk, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(PREVIOUS_OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: previousDusk, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(MIDNIGHT_KEY, comment: ""), startDate: midnight, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_DAWN_KEY, comment: ""), startDate: otherDawn, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(DAWN_KEY, comment: ""), startDate: dawn, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_DAWN_KEY, comment: ""), startDate: otherDawn, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(RECOGNITION_KEY, comment: ""), startDate: recognition, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(OTHER_HOUR_03_KEY, comment: ""), startDate: otherHour03, calendar: self, timeZone: timeZone),
@@ -257,7 +254,7 @@ class ASASolarCalendar:  ASACalendar {
         let sunset:  Date = events[.sunset]!! // שקיעה
         
         let result = [
-            ASAEvent(title: NSLocalizedString(PREVIOUS_SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, calendar: self, timeZone: timeZone),
             ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, calendar: self, timeZone: timeZone),
         ]

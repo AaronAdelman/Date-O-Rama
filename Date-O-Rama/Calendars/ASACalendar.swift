@@ -16,6 +16,7 @@ struct ASALDMLDetail {
 } // struct ASADetail
 
 struct ASAEvent {
+    var uuid = UUID()
     var title:  String
     var startDate:  Date?
     var calendar:  ASACalendar

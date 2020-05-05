@@ -15,7 +15,7 @@ extension String {
         case SUNRISE_KEY:
             return "sunrise"
             
-        case SUNSET_KEY, PREVIOUS_SUNSET_KEY:
+        case SUNSET_KEY:
             return "sunset"
             
         default:
@@ -81,10 +81,9 @@ struct ASACalendarDetailView: View {
             
             if selectedRow.calendar.supportsEventDetails() {
                 Section(header:  Text("HEADER_EVENTS")) {
-                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.title) {
+                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.uuid) {
                         event
                         in
-//                        ASACalendarDetailCell(title: NSLocalizedString(detail.title, comment: ""), detail: detail.startDate == nil ? "—" : self.localDateFormatter(timeZone: TimeZone.autoupdatingCurrent).string(from: detail.startDate!), detail2: detail.startDate == nil ? "—" : self.localDateFormatter(timeZone: self.selectedRow.locationData.timeZone).string(from: detail.startDate!))
                         ASAEventCell(event:  event)
                     }
                 } // Section
