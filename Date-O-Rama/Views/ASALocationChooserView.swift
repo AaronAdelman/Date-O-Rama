@@ -64,7 +64,11 @@ struct ASALocationChooserView: View {
             debugPrint(#file, #function, "Before row", self.row.usesDeviceLocation, self.row.locationData)
             debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
             self.row.usesDeviceLocation = self.tempUsesDeviceLocation
-            self.row.locationData = self.tempLocationData
+            if self.tempUsesDeviceLocation {
+                self.row.locationData = ASALocationManager.shared().locationData
+            } else {
+                self.row.locationData = self.tempLocationData
+            }
             debugPrint(#file, #function, "After row", self.row.usesDeviceLocation, self.row.locationData)
         }
     }
