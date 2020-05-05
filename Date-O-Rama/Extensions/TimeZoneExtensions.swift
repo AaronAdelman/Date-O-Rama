@@ -12,6 +12,7 @@ extension TimeZone {
     func emoji(date:  Date) -> String {
         let HOURS = 60 * 60
         let HALF_HOUR = 30 * 60
+        let FOURTY_FIVE_MINUTES = 45 * 60
         
         switch self.secondsFromGMT(for: date) {
         case 0, 12 * HOURS, -(12 * HOURS):
@@ -50,6 +51,9 @@ extension TimeZone {
         case 5 * HOURS + HALF_HOUR, -(6 * HOURS + HALF_HOUR):
             return "🕠"
             
+        case 5 * HOURS + FOURTY_FIVE_MINUTES:
+            return "🇳🇵"
+            
         case 6 * HOURS, -(6 * HOURS):
             return "🕕"
             
@@ -67,6 +71,9 @@ extension TimeZone {
             
         case 8 * HOURS + HALF_HOUR, -(3 * HOURS + HALF_HOUR):
             return "🕣"
+            
+        case 8 * HOURS + FOURTY_FIVE_MINUTES:
+            return "🇦🇺"
             
         case 9 * HOURS, -(3 * HOURS):
             return "🕘"
@@ -86,8 +93,11 @@ extension TimeZone {
         case 11 * HOURS + HALF_HOUR, -(HALF_HOUR):
             return "🕜"
             
+        case 12 * HOURS + FOURTY_FIVE_MINUTES, 13 * HOURS + FOURTY_FIVE_MINUTES:
+                return "🇳🇿"
+
         default:
-            return "⚪️"
+            return "🕰"
         }
     }
 } // extension TimeZone
