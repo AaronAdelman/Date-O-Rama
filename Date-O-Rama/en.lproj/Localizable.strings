@@ -194,3 +194,6 @@
 "ADDRESS_SEPARATOR" = ", ";
 
 "PARENTHESIZED_TIME_FORMAT" = "\r(%@ there)";
+
+"Use device location" = "Use device location";
+"Requested address"   = "Requested address";

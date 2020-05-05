@@ -29,7 +29,6 @@ struct ASALocationChooserView: View {
             }
             if !tempUsesDeviceLocation {
                 HStack {
-//                    Text("Address")
                     TextField("Requested address", text: $enteredAddress)
                     Button(action: {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
@@ -48,9 +47,6 @@ struct ASALocationChooserView: View {
                 } // Section
                 Section {
                     MapView(coordinate: tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0))
-//                    .edgesIgnoringSafeArea(.top)
-//                        .frame(width: 300, height: 600)
-//                        .frame(minHeight:  300, maxHeight:  1200)
                         .aspectRatio(1.0, contentMode: .fit)
                 } // Section
             }
