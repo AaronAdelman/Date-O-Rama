@@ -89,13 +89,13 @@ enum ASASolarEvent {
 
 
 extension Date {
-    func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?> {
+    func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
 
         // 1. first calculate the day of the year
         
         var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
-        
+        calendar.timeZone = timeZone
+
         let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
         
         // 2. convert the longitude to hour value and calculate an approximate time
@@ -192,12 +192,14 @@ func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, rising
 extension Double {
     func normalizedTo(lower:  Double, upper:  Double) -> Double {
         var temp = self
-        if temp < lower {
+        while temp < lower {
             temp += upper
-        }
-        if temp >= upper {
+        } // while temp < lower
+        
+        while temp >= upper {
             temp -= upper
-        }
+        } // while temp >= upper
+        
         return temp
     } // func normalizedTo(lower:  Double, upper:  Double) -> Double
 } // func normalizedTo(lower:  Double, upper:  Double) -> Double
@@ -205,6 +207,7 @@ extension Double {
 
 // MARK: - Trigonometric functions that take degrees as inputs
 // Based on https://stackoverflow.com/questions/28598307/make-swift-assume-degrees-for-trigonometry-calculations
+
 func sin(degrees: Double) -> Double {
     return sin(degrees * Double.pi / 180.0)
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 // MARK: - Solar event keys
 
@@ -51,6 +52,21 @@ class ASASolarCalendar:  ASACalendar {
     
     var calendarCode: ASACalendarCode
     
+    var color: UIColor {
+        get {
+            switch self.calendarCode {
+            case .HebrewSolar:
+                return UIColor.systemBlue
+                
+            case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+                return UIColor.systemGreen
+                
+            default:
+                return UIColor.systemGray
+            } // switch self.calendarCode
+        } // get
+    } // var color: UIColor
+    
     var dateFormatter = DateFormatter()
     
     init(calendarCode:  ASACalendarCode) {
@@ -70,7 +86,7 @@ class ASASolarCalendar:  ASACalendar {
             return ""
         }
         
-        let fixedNow = now.solarCorrected(location: location!)
+        let fixedNow = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
         
         if localeIdentifier == "" {
             self.dateFormatter.locale = Locale.current
@@ -112,7 +128,7 @@ class ASASolarCalendar:  ASACalendar {
             return ""
         }
         
-        let fixedNow = now.solarCorrected(location: location!)
+        let fixedNow = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
         
         self.dateFormatter.dateFormat = LDMLString
         let result = self.dateFormatter.string(from: fixedNow)
@@ -139,16 +155,16 @@ class ASASolarCalendar:  ASACalendar {
         ]
     } // func details() -> Array<ASADetail>
     
-    func HebrewEventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+    func HebrewEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         let previousDate = date.addingTimeInterval(-24 * 60 * 60)
-        let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk])
+        let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk], timeZone:  timeZone )
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
         let previousDusk      = previousEvents[.dusk]!! // צאת הכוכבים
         let previousOtherDusk = previousSunset.addingTimeInterval(72 * 60) // צאת הכוכבים
         
-        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset, .dawn, .recognition, .dusk])
+        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset, .dawn, .recognition, .dusk], timeZone:  timeZone )
         
         // According to the גר״א
         let sunrise:  Date = events[.sunrise]!! // נץ
@@ -201,69 +217,71 @@ class ASASolarCalendar:  ASACalendar {
         //        let otherHour11  = otherDawn.addingTimeInterval(11    * otherHourLength)
         
         return [
-            ASAEventDetail(key: PREVIOUS_SUNSET_KEY, value: previousSunset),
-            ASAEventDetail(key: PREVIOUS_DUSK_KEY, value: previousDusk),
-            ASAEventDetail(key: PREVIOUS_OTHER_DUSK_KEY, value: previousOtherDusk),
-            ASAEventDetail(key: MIDNIGHT_KEY, value: midnight),
-            ASAEventDetail(key: OTHER_DAWN_KEY, value: otherDawn),
-            ASAEventDetail(key: DAWN_KEY, value: dawn),
-            ASAEventDetail(key: RECOGNITION_KEY, value: recognition),
-            ASAEventDetail(key: SUNRISE_KEY, value: sunrise),
-            ASAEventDetail(key: OTHER_HOUR_03_KEY, value: otherHour03),
-            ASAEventDetail(key: HOUR_03_KEY, value: hour03),
-            ASAEventDetail(key: OTHER_HOUR_04_KEY, value: otherHour04),
-            ASAEventDetail(key: HOUR_04_KEY, value: hour04),
-            ASAEventDetail(key: NOON_KEY, value: hour06),
-            ASAEventDetail(key: HOUR_06½_KEY, value: hour06½),
-            ASAEventDetail(key: OTHER_HOUR_06½_KEY, value: otherHour06½),
-            ASAEventDetail(key: HOUR_09½_KEY, value: hour09½),
-            ASAEventDetail(key: OTHER_HOUR_09½_KEY, value: otherHour09½),
-            ASAEventDetail(key: HOUR_10¾_KEY, value: hour10¾),
-            ASAEventDetail(key: OTHER_HOUR_10¾_KEY, value: otherHour10¾),
-            ASAEventDetail(key: CANDLELIGHTING_KEY, value: candelLighting),
-            ASAEventDetail(key: SUNSET_KEY, value: sunset),
-            ASAEventDetail(key: DUSK_KEY, value: dusk),
-            ASAEventDetail(key: OTHER_DUSK_KEY, value: otherDusk),
+            ASAEvent(title: NSLocalizedString(PREVIOUS_SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(PREVIOUS_DUSK_KEY, comment: ""), startDate: previousDusk, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(PREVIOUS_OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(MIDNIGHT_KEY, comment: ""), startDate: midnight, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_DAWN_KEY, comment: ""), startDate: otherDawn, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(DAWN_KEY, comment: ""), startDate: dawn, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(RECOGNITION_KEY, comment: ""), startDate: recognition, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_03_KEY, comment: ""), startDate: otherHour03, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(HOUR_03_KEY, comment: ""), startDate: hour03, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_04_KEY, comment: ""), startDate: otherHour04, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(HOUR_04_KEY, comment: ""), startDate: hour04, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(NOON_KEY, comment: ""), startDate: hour06, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(HOUR_06½_KEY, comment: ""), startDate: hour06½, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_06½_KEY, comment: ""), startDate: otherHour06½, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(HOUR_09½_KEY, comment: ""), startDate: hour09½, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_09½_KEY, comment: ""), startDate: otherHour09½, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(HOUR_10¾_KEY, comment: ""), startDate: hour10¾, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_10¾_KEY, comment: ""), startDate: otherHour10¾, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(CANDLELIGHTING_KEY, comment: ""), startDate: candelLighting, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: dusk, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: otherDusk, calendar: self, timeZone: timeZone),
         ]
     } // func HebrewEventDetails(date:  Date, location:  CLLocation) -> Array<ASADetail>
     
-    func IslamicEventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail> {
+    func IslamicEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         
         let previousDate = date.addingTimeInterval(-24 * 60 * 60)
-        let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk])
+        let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk], timeZone: timeZone )
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
         
-        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset])
+        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset], timeZone: timeZone )
         
         let sunrise:  Date = events[.sunrise]!! // נץ
         let sunset:  Date = events[.sunset]!! // שקיעה
         
-        return [
-            ASAEventDetail(key: PREVIOUS_SUNSET_KEY, value: previousSunset),
-            ASAEventDetail(key: SUNRISE_KEY, value: sunrise),
-            ASAEventDetail(key: SUNSET_KEY, value: sunset),
+        let result = [
+            ASAEvent(title: NSLocalizedString(PREVIOUS_SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, calendar: self, timeZone: timeZone),
         ]
-    } // func IslamicEventDetails(date:  Date, location:  CLLocation) -> Array<ASAEventDetail>
+        
+        return result
+    } // func IslamicEventDetails(date:  Date, location:  CLLocation) -> Array<ASAEvent>
     
     
-    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail> {
+    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
         if location == nil {
             return []
         }
         
         switch self.calendarCode {
         case .HebrewSolar:
-            return self.HebrewEventDetails(date: date, location: location!)
+            return self.HebrewEventDetails(date: date, location: location!, timeZone: timeZone)
             
         case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
-            return self.IslamicEventDetails(date: date, location: location!)
+            return self.IslamicEventDetails(date: date, location: location!, timeZone: timeZone)
             
         default:
             return []
         }
-    } // func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
+    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent>
     
     func supportsLocales() -> Bool {
         return true
@@ -279,11 +297,11 @@ class ASASolarCalendar:  ASACalendar {
     
     func startOfNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         if location == nil {
-            return now.sixPM()
+            return now.sixPM(timeZone: timeZone)
         }
         
-        let fixedNow = now.solarCorrected(location: location!)
-        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset])
+        let fixedNow = now.solarCorrected(location: location!, timeZone: timeZone)
+        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
         return events[.sunset]!!
     } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
     

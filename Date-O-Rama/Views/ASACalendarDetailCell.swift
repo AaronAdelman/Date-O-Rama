@@ -12,14 +12,10 @@ struct ASACalendarDetailCell:  View {
     var title:  String
     var detail:  String
     var detail2:  String?
-    var systemIconName:  String?
     
     var body:  some View {
         HStack {
-            if systemIconName != nil {
-                Image(systemName: systemIconName!)
-            }
-            Text(verbatim:  title).bold().frame(width:  150.0)
+            Text(verbatim:  title).bold().multilineTextAlignment(.leading)
             Spacer()
             Text(verbatim:  detail).multilineTextAlignment(.leading)
             if detail2 != nil {

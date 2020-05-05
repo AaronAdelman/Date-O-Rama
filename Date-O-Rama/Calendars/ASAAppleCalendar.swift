@@ -8,8 +8,11 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
+    var color: UIColor = .systemGray
+    
 //    var calendarIdentifier:  Calendar.Identifier?
     
     var calendarCode:  ASACalendarCode
@@ -144,9 +147,9 @@ class ASAAppleCalendar:  ASACalendar {
         ]
     } // func details() -> Array<ASADetail>
     
-    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail> {
+    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
         return []
-    } // func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
+    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
     func supportsLocales() -> Bool {
         return true

@@ -112,7 +112,7 @@ struct ASAMainRowsViewCell:  View {
                 HStack {
                     Spacer().frame(width: self.INSET)
                     Text(row.effectiveTimeZone.emoji(date:  self.now))
-                    Text(verbatim: "\(row.timeZone!.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                    Text(verbatim: "\(row.effectiveTimeZone.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                 }.frame(height: ROW_HEIGHT)
                 ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
             }

@@ -39,7 +39,6 @@ struct ASACalendarDetailView: View {
     
     var body: some View {
         List {
-            
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                 NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
                     HStack {
@@ -82,17 +81,18 @@ struct ASACalendarDetailView: View {
             
             if selectedRow.calendar.supportsEventDetails() {
                 Section(header:  Text("HEADER_EVENTS")) {
-                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location), id: \.key) {
-                        detail
+                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.title) {
+                        event
                         in
-                        ASACalendarDetailCell(title: NSLocalizedString(detail.key, comment: ""), detail: detail.value == nil ? "—" : self.localDateFormatter(timeZone: TimeZone.autoupdatingCurrent).string(from: detail.value!), detail2: detail.value == nil ? "—" : self.localDateFormatter(timeZone: self.selectedRow.locationData.timeZone).string(from: detail.value!), systemIconName: detail.key.systemIconName())
+//                        ASACalendarDetailCell(title: NSLocalizedString(detail.title, comment: ""), detail: detail.startDate == nil ? "—" : self.localDateFormatter(timeZone: TimeZone.autoupdatingCurrent).string(from: detail.startDate!), detail2: detail.startDate == nil ? "—" : self.localDateFormatter(timeZone: self.selectedRow.locationData.timeZone).string(from: detail.startDate!))
+                        ASAEventCell(event:  event)
                     }
                 } // Section
             }
             
             Section(header:  Text("HEADER_Other")) {
                 ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(now: now), dateStyle: .full, timeStyle: .full))
-                ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(now:  now).addingTimeInterval(1)), systemIconName: nil)
+                ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(now:  now).addingTimeInterval(1)))
             } // Section
             
         }.navigationBarTitle(Text(

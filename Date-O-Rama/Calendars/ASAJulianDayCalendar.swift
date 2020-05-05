@@ -8,9 +8,12 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
+    var color: UIColor = .systemGray
+    
     private var offsetFromJulianDay:  Double {
         get {
             switch calendarCode {
@@ -75,9 +78,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         return []
     } // func details() -> Array<ASADetail>
     
-    func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail> {
+    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
         return []
-    } // func eventDetails(date:  Date, location:  CLLocation?) -> Array<ASAEventDetail>
+    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
     func supportsLocales() -> Bool {
         return true
