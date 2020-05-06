@@ -39,8 +39,9 @@ extension ASALocationData {
     func formattedOneLineAddress() -> String {
         let separator = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
         
-        var temp = self.name ?? ""
-        
+//        var temp = self.name ?? ""
+        var temp = ""
+
         if self.locality != nil && self.locality != self.name {
             temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
         }
