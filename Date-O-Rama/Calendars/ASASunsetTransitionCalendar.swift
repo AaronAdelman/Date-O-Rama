@@ -99,13 +99,13 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             let secondsAfterSunrise = now.timeIntervalSince(sunrise)
             let hourLength = sunset.timeIntervalSince(sunrise) / 12.0
             let hoursAfterSunrise = secondsAfterSunrise / hourLength
-            result = "\(numberFormatter.string(from: NSNumber(value:  hoursAfterSunrise)) ?? "") ☀️"
+            result = "\(numberFormatter.string(from: NSNumber(value:  hoursAfterSunrise)) ?? "") ☼"
         } else {
             let nightLength = sunrise.timeIntervalSince(previousSunset)
             let secondsAfterSunset = now.timeIntervalSince(sunset)
             let nightHourLength = nightLength / 12.0
             let hoursAfterSunset = secondsAfterSunset / nightHourLength
-            result = "\(numberFormatter.string(from: NSNumber(value:  hoursAfterSunset)) ?? "") 🌙"
+            result = "\(numberFormatter.string(from: NSNumber(value:  hoursAfterSunset)) ?? "") ☽"
         }
         return result
     }
