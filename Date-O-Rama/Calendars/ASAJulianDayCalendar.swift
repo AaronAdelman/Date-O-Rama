@@ -59,11 +59,22 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
     private func dateString(now:  Date, localeIdentifier: String) -> String {
-        let JulianDay = Int(floor(now.JulianDate()) - self.offsetFromJulianDay)
-        let formatter = NumberFormatter()
-        formatter.locale = Locale(identifier: localeIdentifier)
-        let result = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
-        return result
+        if self.supportsTimes() {
+            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
+            let formatter = NumberFormatter()
+            formatter.locale = Locale(identifier: localeIdentifier)
+            formatter.allowsFloats = true
+            formatter.minimumFractionDigits = 6
+            let result = formatter.string(from: NSNumber(floatLiteral: JulianDay)) ?? ""
+            return result
+        } else {
+            let JulianDay = Int(floor(now.JulianDate() - self.offsetFromJulianDay))
+            let formatter = NumberFormatter()
+            formatter.locale = Locale(identifier: localeIdentifier)
+            formatter.allowsFloats = false
+            let result = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
+            return result
+        }
     } // func dateString(now:  Date, localeIdentifier: String) -> String
     
     func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
@@ -115,7 +126,13 @@ class ASAJulianDayCalendar:  ASACalendar {
         return false
     } // func supportsEventDetails() -> Bool
 
-//    func timeZone(location:  CLLocation?) -> TimeZone {
-//        return TimeZone(secondsFromGMT: 0)!
-//    } // func timeZone(location:  CLLocation?) -> TimeZone} // class ASAJulianDayCalendar
+    func supportsTimes() -> Bool {
+        switch self.calendarCode {
+        case .TruncatedJulianDay, .LilianDate, .RataDie:
+            return false
+
+        default:
+            return true
+        } // switch self.calendarCode
+    } // func supportsTimes() -> Bool
 } // class ASAJulianDayCalendar

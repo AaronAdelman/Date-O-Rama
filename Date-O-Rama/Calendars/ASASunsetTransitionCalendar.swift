@@ -310,8 +310,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return true
     } // func supportsEventDetails() -> Bool
     
-    
-//    func timeZone(location:  CLLocation?) -> TimeZone {
-//        return TimeZone.autoupdatingCurrent // FIX THIS
-//    } // func timeZone(location:  CLLocation?) -> TimeZone
+    func supportsTimes() -> Bool {
+        return false
+    } // func supportsTimes() -> Bool
 }

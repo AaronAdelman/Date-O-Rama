@@ -41,6 +41,8 @@ class ASAAppleCalendar:  ASACalendar {
         } else {
             self.dateFormatter.timeZone = timeZone
         }
+        
+        self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
 
         if majorDateFormat == .localizedLDML {
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
@@ -175,7 +177,7 @@ class ASAAppleCalendar:  ASACalendar {
         return false
     } // func supportsEventDetails() -> Bool
     
-//    func timeZone(location:  CLLocation?) -> TimeZone {
-//        return TimeZone.autoupdatingCurrent
-//    } // func timeZone(location:  CLLocation?) -> TimeZone
+    func supportsTimes() -> Bool {
+    return true
+    } // func supportsTimes() -> Bool
 } // class ASAAppleCalendar

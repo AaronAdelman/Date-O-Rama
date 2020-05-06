@@ -40,6 +40,7 @@ protocol ASACalendar {
     func supportsTimeZones() -> Bool
     func supportsLocations() -> Bool
     func supportsEventDetails() -> Bool
+    func supportsTimes() -> Bool
 //    func timeZone(location:  CLLocation?) -> TimeZone
     func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
 } // protocol ASACalendar
