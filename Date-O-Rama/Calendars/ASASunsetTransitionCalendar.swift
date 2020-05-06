@@ -110,7 +110,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return result
     }
     
-    func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {
             return ""
         }
@@ -154,9 +154,9 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         }
         
         return "Error!"
-    } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {
             return ""
         }
@@ -167,7 +167,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let result = self.dateFormatter.string(from: fixedNow)
         
         return result
-    } // func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
     func LDMLDetails() -> Array<ASALDMLDetail> {
         return [

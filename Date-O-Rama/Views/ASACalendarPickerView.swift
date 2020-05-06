@@ -56,7 +56,7 @@ struct ASACalendarPickerView: View {
                 }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
     }
 }
 

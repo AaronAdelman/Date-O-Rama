@@ -300,13 +300,13 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     //MARK: -
         
-    public func dateString(now:  Date) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.effectiveTimeZone)
-    } // func dateString(now:  Date) -> String
+    public func dateTimeString(now:  Date) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.effectiveTimeZone)
+    } // func dateTimeString(now:  Date) -> String
     
-    public func dateString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
-    } // func dateString(now:  Date, LDMLString:  String) -> String
+    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
+    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
     
     func startOfNextDay(now:  Date) -> Date {
         return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.effectiveTimeZone)

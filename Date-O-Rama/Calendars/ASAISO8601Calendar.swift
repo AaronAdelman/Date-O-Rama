@@ -25,7 +25,7 @@ class ASAISO8601Calendar:  ASACalendar {
         return "yyyy-MM-dd"
     } // func defaultDateGeekCode(majorDateFormat:  ASAMajorFormat) -> String
     
-    func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
         var dateString:  String
@@ -57,9 +57,9 @@ class ASAISO8601Calendar:  ASACalendar {
 
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
-    } // func dateString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
         self.dateFormatter.locale = Locale(identifier: "en_US")
@@ -75,7 +75,7 @@ class ASAISO8601Calendar:  ASACalendar {
         let result = self.dateFormatter.string(from: now)
         
         return result
-    } // func dateString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?) -> String
+    } // func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?) -> String
     
     
     // MARK: -

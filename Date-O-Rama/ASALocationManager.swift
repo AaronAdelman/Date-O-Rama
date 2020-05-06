@@ -81,8 +81,8 @@ class ASALocationManager: NSObject, ObservableObject {
         super.init()
         self.locationManager.delegate = self
         
-//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
 
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
@@ -153,7 +153,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
         //        print(#function, location)
         let Δ = self.lastDeviceLocation?.distance(from: location)
 
-        if Δ ?? 1000000000.0 >= 10.0 {
+        if Δ == nil || Δ! >= 10.0 {
             let coder = CLGeocoder();
             coder.reverseGeocodeLocation(location) { (placemarks, error) in
                 let place = placemarks?.last;

@@ -51,7 +51,7 @@ struct ASALocationChooserView: View {
                 } // Section
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
         .onAppear() {
             self.tempUsesDeviceLocation = self.row.usesDeviceLocation
             self.tempLocationData = self.row.locationData

@@ -82,7 +82,7 @@ struct ASAFormatPickerView: View {
 //                }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
     }
 }
 

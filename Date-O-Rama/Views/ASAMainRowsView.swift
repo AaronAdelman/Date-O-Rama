@@ -102,7 +102,7 @@ struct ASAMainRowsViewCell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+            Text(verbatim:  row.dateTimeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
             HStack {
                 Spacer().frame(width: self.INSET)
                 Text(verbatim: "🗓")
