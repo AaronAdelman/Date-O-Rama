@@ -42,8 +42,9 @@ extension ASALocationData {
 //        var temp = self.name ?? ""
         var temp = ""
 
-        if self.locality != nil && self.locality != self.name {
-            temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
+//        if self.locality != nil && self.locality != self.name {
+            if self.locality != nil {
+                temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
         }
         
         if self.administrativeArea != nil {
