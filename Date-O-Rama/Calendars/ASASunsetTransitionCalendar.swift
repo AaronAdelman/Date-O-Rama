@@ -94,6 +94,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
+        numberFormatter.locale = Locale(identifier:  localeIdentifier)
         if now > sunrise {
             let secondsAfterSunrise = now.timeIntervalSince(sunrise)
             let hourLength = sunset.timeIntervalSince(sunrise) / 12.0
