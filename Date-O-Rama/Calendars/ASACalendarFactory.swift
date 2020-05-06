@@ -19,7 +19,7 @@ class ASACalendarFactory {
         } else if code.isJulianDayCalendar() {
             return ASAJulianDayCalendar(calendarCode:  code)
         } else if code.isSolarCalendar() {
-            return ASASolarCalendar(calendarCode: code)
+            return ASASunsetTransitionCalendar(calendarCode: code)
         }
      
         return nil

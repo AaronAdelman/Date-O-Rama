@@ -9,22 +9,6 @@
 import SwiftUI
 import CoreLocation
 
-extension String {
-    func systemIconName() -> String? {
-        switch self {
-        case SUNRISE_KEY:
-            return "sunrise"
-            
-        case SUNSET_KEY:
-            return "sunset"
-            
-        default:
-            return nil
-        } // switch self
-    } // func systemIconName() -> String?
-} // extension ASASolarEvent
-
-
 struct ASACalendarDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
@@ -87,7 +71,7 @@ struct ASACalendarDetailView: View {
                         ASAEventCell(event:  event)
                     }
                 } // Section
-                    .listRowBackground(Color(selectedRow.calendar.color))
+                    .listRowBackground(Color(selectedRow.calendar.color.lighter(by: 97.5)))
             }
             
             Section(header:  Text("HEADER_Other")) {

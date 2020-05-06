@@ -35,16 +35,22 @@ struct ASAEventCell: View {
     return result
     }
     
+    var textColor:  UIColor {
+        get {
+            return event.calendar.color.darker(by: 50.0)
+        }
+    }
+    
     var body: some View {
         HStack {
             Text(event.title)
                 .bold()
-                .foregroundColor(Color(.white))
+                .foregroundColor(Color(self.textColor))
             Spacer()
             Text(self.formattedStartDate())
                 .bold()
                 .multilineTextAlignment(.trailing)
-                .foregroundColor(Color(.white))
+                .foregroundColor(Color(self.textColor))
         } // HStack
     }
 }

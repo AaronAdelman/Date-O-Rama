@@ -1,5 +1,5 @@
 //
-//  ASASolarCalendar.swift
+//  ASASunsetTransitionCalendar.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-22.
@@ -44,7 +44,7 @@ let OTHER_DUSK_KEY                    = "otherDusk"
 
 // MARK: -
 
-class ASASolarCalendar:  ASACalendar {
+class ASASunsetTransitionCalendar:  ASACalendar {
 //    var calendarIdentifier:  Calendar.Identifier?
     
     var calendarCode: ASACalendarCode
