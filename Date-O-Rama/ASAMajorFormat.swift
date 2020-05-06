@@ -9,6 +9,7 @@
 import Foundation
 
 enum ASAMajorFormat:  String {
+    case none          = "none"
     case short         = "short"
     case medium        = "medium"
     case long          = "long"
@@ -33,6 +34,8 @@ extension ASAMajorFormat {
             unlocalizedString = "ITEM_Components"
 //        case .rawLDML:
 //            unlocalizedString = "ITEM_Raw_LDML"
+        case .none:
+            "ITEM_None"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String

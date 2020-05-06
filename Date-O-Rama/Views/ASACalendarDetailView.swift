@@ -76,11 +76,11 @@ struct ASACalendarDetailView: View {
             
             Section(header:  Text("HEADER_Other")) {
                 ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(now: now), dateStyle: .full, timeStyle: .full))
-                ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateTimeString(now: self.selectedRow.startOfNextDay(now:  now).addingTimeInterval(1)))
+                ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(now:  now).addingTimeInterval(1)))
             } // Section
             
         }.navigationBarTitle(Text(
-            selectedRow.dateTimeString(now: self.now) ))
+            selectedRow.dateString(now: self.now) ))
     }
 }
 

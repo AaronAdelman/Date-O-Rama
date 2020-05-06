@@ -304,6 +304,10 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date) -> String
     
+    public func dateString(now:  Date) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
+    } // func dateTimeString(now:  Date) -> String
+
     public func dateTimeString(now:  Date, LDMLString:  String) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date, LDMLString:  String) -> String

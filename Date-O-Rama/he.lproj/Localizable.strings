@@ -139,6 +139,7 @@
 "HEADER_Locale"   = "שפה ואזור";
 
 "HEADER_Date_format" = "מבנה תאריך";
+"ITEM_None"          = "אין";
 "ITEM_Full"          = "מלא";
 "ITEM_Long"          = "ארוך";
 "ITEM_Medium"        = "בינוני";

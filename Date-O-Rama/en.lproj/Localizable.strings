@@ -139,6 +139,7 @@
 "HEADER_Locale"   = "Locale";
 
 "HEADER_Date_format" = "Date format";
+"ITEM_None"          = "None";
 "ITEM_Full"          = "Full";
 "ITEM_Long"          = "Long";
 "ITEM_Medium"        = "Medium";

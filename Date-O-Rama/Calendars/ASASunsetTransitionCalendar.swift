@@ -78,35 +78,51 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return "eee, d MMM y"
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
+    func hours(now:  Date, startDate:  Date, endDate:  Date) -> Double {
+        let seconds = now.timeIntervalSince(startDate)
+        let hourLength = endDate.timeIntervalSince(startDate) / 12.0
+        let hours = seconds / hourLength
+        return hours
+    } // func hours(startDate:  Date, endDate:  Date) -> Double
+    
     func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         let latitude  = location!.coordinate.latitude
         let longitude = location!.coordinate.longitude
-        
-        let previousDate = now.addingTimeInterval(-24 * 60 * 60)
-        let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-        let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
         
         let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
         
         let sunrise:  Date = events[.sunrise]!! // נץ
         let sunset:  Date = events[.sunset]!! // שקיעה
+
+        var hours:  Double
+        var symbol:  String
+        let NIGHT_SYMBOL = "☽"
+        
+        if sunrise <= now && now < sunset {
+            hours = self.hours(now:  now, startDate:  sunrise, endDate:  sunset)
+            symbol = "☼"
+        } else if now < sunrise {
+            let previousDate = now.addingTimeInterval(-24 * 60 * 60)
+            let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+            let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
+
+            hours = self.hours(now:  now, startDate:  previousSunset, endDate:  sunrise)
+            symbol = NIGHT_SYMBOL
+        } else {
+            // now >= sunset
+            let nextDate = now.addingTimeInterval(24 * 60 * 60)
+            let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+            let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
+
+            hours = self.hours(now:  now, startDate:  sunset, endDate:  nextSunrise)
+            symbol = NIGHT_SYMBOL
+        }
         
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
         numberFormatter.locale = Locale(identifier:  localeIdentifier)
-        if now > sunrise {
-            let secondsAfterSunrise = now.timeIntervalSince(sunrise)
-            let hourLength = sunset.timeIntervalSince(sunrise) / 12.0
-            let hoursAfterSunrise = secondsAfterSunrise / hourLength
-            result = "\(numberFormatter.string(from: NSNumber(value:  hoursAfterSunrise)) ?? "") ☼"
-        } else {
-            let nightLength = sunrise.timeIntervalSince(previousSunset)
-            let secondsAfterSunset = now.timeIntervalSince(sunset)
-            let nightHourLength = nightLength / 12.0
-            let hoursAfterSunset = secondsAfterSunset / nightHourLength
-            result = "\(numberFormatter.string(from: NSNumber(value:  hoursAfterSunset)) ?? "") ☽"
-        }
+        result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
         return result
     }
     
@@ -117,7 +133,12 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         
         let fixedNow = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
         
-        let timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone) // TO DO:  EXPAND ON THIS!
+        var timeSuffix = ""
+        if majorTimeFormat != .none {
+            let timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone) // TO DO:  EXPAND ON THIS!
+            let SEPARATOR = " • "
+            timeSuffix = SEPARATOR + timeString
+        }
         
         if localeIdentifier == "" {
             self.dateFormatter.locale = Locale.current
@@ -125,32 +146,31 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
         
-        let SEPARATOR = " • "
         
         if majorDateFormat == .localizedLDML {
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
-            return self.dateFormatter.string(from: fixedNow) + SEPARATOR + timeString
+            return self.dateFormatter.string(from: fixedNow) + timeSuffix
         }
         
         if majorDateFormat == .full {
             self.dateFormatter.dateStyle = .full
-            return self.dateFormatter.string(from: fixedNow) + SEPARATOR + timeString
+            return self.dateFormatter.string(from: fixedNow) + timeSuffix
         }
         
         if majorDateFormat == .long {
             self.dateFormatter.dateStyle = .long
-            return self.dateFormatter.string(from: fixedNow) + SEPARATOR + timeString
+            return self.dateFormatter.string(from: fixedNow) + timeSuffix
         }
         
         if majorDateFormat == .medium {
             self.dateFormatter.dateStyle = .medium
-            return self.dateFormatter.string(from: fixedNow) + SEPARATOR + timeString
+            return self.dateFormatter.string(from: fixedNow) + timeSuffix
         }
         
         if majorDateFormat == .short {
             self.dateFormatter.dateStyle = .short
-            return self.dateFormatter.string(from: fixedNow) + SEPARATOR + timeString
+            return self.dateFormatter.string(from: fixedNow) + timeSuffix
         }
         
         return "Error!"
