@@ -43,7 +43,10 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
             if !self.calendar.supportedMajorDateFormats.contains(self.majorDateFormat) {
-                majorDateFormat = self.calendar.defaultMajorDateFormat
+                self.majorDateFormat = self.calendar.defaultMajorDateFormat
+            }
+            if !self.calendar.supportsLocations && !self.calendar.supportsTimeZones {
+                self.usesDeviceLocation = false
             }
         } // didSet
     } // var calendar
@@ -78,7 +81,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         } // get
     } // var effectiveTimeZone
     
-    @Published var usesDeviceLocation:  Bool = true
+    @Published var usesDeviceLocation:  Bool = true 
     @Published var locationData:  ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone: TimeZone.autoupdatingCurrent)
     
     var location:  CLLocation? {
