@@ -13,7 +13,7 @@
 "EthiopicAmeteAlem"     = "אתיופי (שנות העולם)";
 "EthiopicAmeteMihret"   = "אתיופי";
 "Gregorian"             = "גרגוריאני";
-"Hebrew"                = "עברי (יהודי) (יום מתחיל בחצות הלילה)";
+"Hebrew"                = "יהודי (עברי) (יום מתחיל בחצות הלילה)";
 "Indian"                = "הודי לאומי";
 "Islamic"               = "מוסלמי (יום מתחיל בחצות הלילה)";
 "IslamicCivil"          = "מוסלמי אזרחי (יום מתחיל בחצות הלילה)";
@@ -32,11 +32,12 @@
 "CCSDSJulianDay"        = "CCSDS Julian Date";
 "LilianDate"            = "Lilian Date";
 "RataDie"               = "Rata Die";
-"HebrewSolar"           = "עברי (יהודי) (יום מתחיל בשקיעה)";
+"HebrewSolar"           = "יהודי (עברי) (גר״א)";
 "IslamicSolar"          = "מוסלמי (יום מתחיל בשקיעה)";
 "IslamicCivilSolar"     = "מוסלמי אזרחי (יום מתחיל בשקיעה)";
 "IslamicTabularSolar"   = "מוסלמי טבלאי (יום מתחיל בשקיעה)";
 "IslamicUmmAlQuraSolar" = "מוסלמי אום אל-קורה (יום מתחיל בשקיעה)";
+"HebrewSolarMA"         = "יהודי (עברי) (מגן אברהם)";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
 

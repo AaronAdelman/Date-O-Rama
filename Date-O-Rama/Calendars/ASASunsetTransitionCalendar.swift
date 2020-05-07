@@ -41,6 +41,17 @@ let OTHER_HOUR_09½_KEY                = "otherHour09½"
 let OTHER_HOUR_10¾_KEY                = "otherHour10¾"
 let OTHER_DUSK_KEY                    = "otherDusk"
 
+extension Date {
+    // For מגן אברהם
+    func sunriseToOtherDawn() -> Date {
+        return self.addingTimeInterval(-72 * 60)
+    } // func sunriseToOtherDawn() -> Date
+    
+    func sunsetToOtherDusk() -> Date {
+        return self.addingTimeInterval(72 * 60)
+    } // // func sunsetToOtherDusk() -> Date
+} // extension Date
+
 
 // MARK: -
 
@@ -50,7 +61,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     var color: UIColor {
         get {
             switch self.calendarCode {
-            case .HebrewSolar:
+            case .HebrewGRA, .HebrewMA:
                 return UIColor.systemBlue
                 
             case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
@@ -94,27 +105,59 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let sunrise:  Date = events[.sunrise]!! // נץ
         let sunset:  Date = events[.sunset]!! // שקיעה
         
+        var dayHalfStart:  Date
+        var dayHalfEnd:  Date
+        
+        switch self.calendarCode {
+        case .HebrewMA:
+            let otherDawn = sunrise.sunriseToOtherDawn() // עלות השחר
+            let otherDusk = sunset.sunsetToOtherDusk() // צאת הכוכבים
+            dayHalfStart = otherDawn;
+            dayHalfEnd = otherDusk;
+            
+        default:
+            dayHalfStart = sunrise
+            dayHalfEnd = sunset
+        } // switch self.calendarCode
+        
         var hours:  Double
         var symbol:  String
         let NIGHT_SYMBOL = "☽"
         
-        if sunrise <= now && now < sunset {
-            hours = self.hours(now:  now, startDate:  sunrise, endDate:  sunset)
+        if dayHalfStart <= now && now < dayHalfEnd {
+            hours = self.hours(now:  now, startDate:  dayHalfStart, endDate:  dayHalfEnd)
             symbol = "☼"
-        } else if now < sunrise {
+        } else if now < dayHalfStart {
             let previousDate = now.addingTimeInterval(-24 * 60 * 60)
             let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
-            
-            hours = self.hours(now:  now, startDate:  previousSunset, endDate:  sunrise)
+            var previousDayHalfEnd:  Date
+            switch self.calendarCode {
+            case .HebrewMA:
+                let previousOtherDusk = previousSunset.sunsetToOtherDusk() // צאת הכוכבים
+                previousDayHalfEnd = previousOtherDusk;
+                
+            default:
+                previousDayHalfEnd = previousSunset
+            } // switch self.calendarCode
+            hours = self.hours(now:  now, startDate:  previousDayHalfEnd, endDate:  dayHalfStart)
             symbol = NIGHT_SYMBOL
         } else {
-            // now >= sunset
+            // now >= dayHalfEnd
             let nextDate = now.addingTimeInterval(24 * 60 * 60)
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
-            
-            hours = self.hours(now:  now, startDate:  sunset, endDate:  nextSunrise)
+            var nextDayHalfStart:  Date
+            switch self.calendarCode {
+            case .HebrewMA:
+                let nextOtherDawn = nextSunrise.sunriseToOtherDawn() // עלות השחר
+                nextDayHalfStart = nextOtherDawn;
+                
+            default:
+                nextDayHalfStart = nextSunrise
+            } // switch self.calendarCode
+
+            hours = self.hours(now:  now, startDate:  dayHalfEnd, endDate:  nextDayHalfStart)
             symbol = NIGHT_SYMBOL
         }
         
@@ -250,8 +293,8 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let dusk           = events[.dusk]!! // צאת הכוכבים
         
         // According to the מגן אברהם
-        let otherDawn = sunrise.addingTimeInterval(-72 * 60) // עלות השחר
-        let otherDusk = sunset.addingTimeInterval(72 * 60) // צאת הכוכבים
+        let otherDawn = sunrise.sunriseToOtherDawn() // עלות השחר
+        let otherDusk = sunset.sunsetToOtherDusk() // צאת הכוכבים
         let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
         let otherHourLength = otherDayLength / 12.0
         
@@ -326,7 +369,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         }
         
         switch self.calendarCode {
-        case .HebrewSolar:
+        case .HebrewGRA, .HebrewMA:
             return self.HebrewEventDetails(date: date, location: location!, timeZone: timeZone)
             
         case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
@@ -350,7 +393,13 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         
         let fixedNow = now.solarCorrected(location: location!, timeZone: timeZone)
         let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
-        return events[.sunset]!!
+        let sunset:  Date = events[.sunset]!! // שקיעה
+        
+        if self.calendarCode == .HebrewMA {
+            let otherDusk = sunset.sunsetToOtherDusk() // צאת הכוכבים
+            return otherDusk
+        }
+        return sunset
     } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
     
     var supportsLocations: Bool = true

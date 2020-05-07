@@ -57,6 +57,6 @@ struct ASAEventCell: View {
 
 struct ASAEventCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventCell(event: ASAEvent(title: "Foo", startDate: Date(), calendar: ASACalendarFactory.calendar(code: .HebrewSolar)!))
+        ASAEventCell(event: ASAEvent(title: "Foo", startDate: Date(), calendar: ASACalendarFactory.calendar(code: .HebrewGRA)!))
     }
 }

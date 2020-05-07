@@ -37,11 +37,12 @@ enum ASACalendarCode:  String {
     case CCSDSJulianDay        = "CCSDSJulianDay"
     case LilianDate            = "LilianDate"
     case RataDie               = "RataDie"
-    case HebrewSolar           = "HebrewSolar"
+    case HebrewGRA             = "HebrewSolar"
     case IslamicSolar          = "IslamicSolar"
     case IslamicCivilSolar     = "IslamicCivilSolar"
     case IslamicTabularSolar   = "IslamicTabularSolar"
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
+    case HebrewMA              = "HebrewSolarMA"
 } // enum ASACalendarCode:  String
 
 
@@ -97,7 +98,7 @@ extension ASACalendarCode {
     
     func isSolarCalendar() -> Bool {
         switch self {
-        case .HebrewSolar, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar:
+        case .HebrewGRA, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar, .HebrewMA:
             return true
         default:
             return false
@@ -127,7 +128,7 @@ extension ASACalendarCode {
            case ASACalendarCode.Gregorian:
                calendarIdentifier = .gregorian
                
-           case ASACalendarCode.Hebrew, .HebrewSolar:
+           case ASACalendarCode.Hebrew, .HebrewGRA, .HebrewMA:
                calendarIdentifier = .hebrew
                
            case ASACalendarCode.Indian:
