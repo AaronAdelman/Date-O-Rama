@@ -133,11 +133,9 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         
         let fixedNow = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
         
-        var timeSuffix = ""
+        var timeString:  String = ""
         if majorTimeFormat != .none {
-            let timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone) // TO DO:  EXPAND ON THIS!
-            let SEPARATOR = " • "
-            timeSuffix = SEPARATOR + timeString
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone) // TO DO:  EXPAND ON THIS!
         }
         
         if localeIdentifier == "" {
@@ -146,36 +144,41 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
         
-        
-        if majorDateFormat == .localizedLDML {
+        switch majorDateFormat {
+        case .localizedLDML:
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
-            return self.dateFormatter.string(from: fixedNow) + timeSuffix
-        }
-        
-        if majorDateFormat == .full {
+            
+        case .none:
+            self.dateFormatter.dateStyle = .none
+            
+        case .full:
             self.dateFormatter.dateStyle = .full
-            return self.dateFormatter.string(from: fixedNow) + timeSuffix
-        }
-        
-        if majorDateFormat == .long {
+            
+        case .long:
             self.dateFormatter.dateStyle = .long
-            return self.dateFormatter.string(from: fixedNow) + timeSuffix
-        }
-        
-        if majorDateFormat == .medium {
+            
+        case .medium:
             self.dateFormatter.dateStyle = .medium
-            return self.dateFormatter.string(from: fixedNow) + timeSuffix
-        }
-        
-        if majorDateFormat == .short {
+            
+        case .short:
             self.dateFormatter.dateStyle = .short
-            return self.dateFormatter.string(from: fixedNow) + timeSuffix
-        }
+            
+        default:
+            self.dateFormatter.dateStyle = .full
+        } // switch majorDateFormat
         
-        return "Error!"
+        let dateString = self.dateFormatter.string(from: fixedNow)
+        if dateString == "" {
+            return timeString
+        } else if timeString == "" {
+            return dateString
+        } else {
+            let SEPARATOR = " • "
+            return dateString + SEPARATOR + timeString
+        }
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
-    
+        
     func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {
             return ""
@@ -367,4 +370,6 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
     
     var supportsTimeFormats: Bool = true
+    
+    var canSplitTimeFromDate:  Bool = true
 } // class ASASunsetTransitionCalendar

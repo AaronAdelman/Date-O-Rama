@@ -28,6 +28,7 @@ struct ASAEvent {
 
 protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
+    var canSplitTimeFromDate:  Bool { get }
     var color:  UIColor { get }
     var defaultMajorDateFormat:  ASAMajorDateFormat { get }
     var LDMLDetails: Array<ASALDMLDetail> { get }

@@ -61,33 +61,31 @@ class ASAAppleCalendar:  ASACalendar {
             self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
         } // switch majorTimeFormat
         
-        if majorDateFormat == .localizedLDML {
+        switch majorDateFormat {
+        case .localizedLDML:
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
-            return self.dateFormatter.string(from: now)
-        }
-        
-        if majorDateFormat == .full {
+            
+        case .none:
+            self.dateFormatter.dateStyle = .none
+            
+        case .full:
             self.dateFormatter.dateStyle = .full
-            return self.dateFormatter.string(from: now)
-        }
-        
-        if majorDateFormat == .long {
+            
+        case .long:
             self.dateFormatter.dateStyle = .long
-            return self.dateFormatter.string(from: now)
-        }
-        
-        if majorDateFormat == .medium {
+            
+        case .medium:
             self.dateFormatter.dateStyle = .medium
-            return self.dateFormatter.string(from: now)
-        }
-        
-        if majorDateFormat == .short {
+            
+        case .short:
             self.dateFormatter.dateStyle = .short
-            return self.dateFormatter.string(from: now)
-        }
+            
+        default:
+            self.dateFormatter.dateStyle = .full
+        } // switch majorDateFormat
         
-        return "Error!"
+        return self.dateFormatter.string(from: now)
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
     func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
@@ -180,4 +178,6 @@ class ASAAppleCalendar:  ASACalendar {
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
     
     var supportsTimeFormats: Bool = true
+    
+    var canSplitTimeFromDate:  Bool = true
 } // class ASAAppleCalendar

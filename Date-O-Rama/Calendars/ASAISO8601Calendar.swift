@@ -140,4 +140,6 @@ class ASAISO8601Calendar:  ASACalendar {
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
     
     var supportsTimeFormats: Bool = true
+    
+    var canSplitTimeFromDate:  Bool = true
 } // class ASAISO8601Calendar
