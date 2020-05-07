@@ -30,8 +30,8 @@ protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var color:  UIColor { get }
 
-    func defaultDateGeekCode(majorDateFormat:  ASAMajorFormat) -> String
-    func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorFormat, dateGeekFormat:  String, majorTimeFormat:  ASAMajorFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
+    func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
+    func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat, dateGeekFormat:  String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func LDMLDetails() -> Array<ASALDMLDetail>
     func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent>

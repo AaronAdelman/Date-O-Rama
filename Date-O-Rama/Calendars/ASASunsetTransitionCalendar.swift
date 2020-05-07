@@ -74,7 +74,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         dateFormatter.calendar = Calendar(identifier: calendarIdentifier)
     } // init(calendarCode:  ASACalendarCode)
     
-    func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String {
+    func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
         return "eee, d MMM y"
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
@@ -85,7 +85,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return hours
     } // func hours(startDate:  Date, endDate:  Date) -> Double
     
-    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         let latitude  = location!.coordinate.latitude
         let longitude = location!.coordinate.longitude
         
@@ -126,7 +126,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return result
     }
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {
             return ""
         }
@@ -174,7 +174,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         }
         
         return "Error!"
-    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
     func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {

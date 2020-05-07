@@ -44,7 +44,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
     @Published var localeIdentifier:  String = Locale.current.identifier
     
-    @Published var majorDateFormat:  ASAMajorFormat = .full {
+    @Published var majorDateFormat:  ASAMajorDateFormat = .full {
         didSet {
             if dateGeekFormat.isEmpty {
                 self.dateGeekFormat = self.calendar.defaultDateGeekCode(majorDateFormat: self.majorDateFormat)
@@ -220,7 +220,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         let majorDateFormat = dictionary[MAJOR_DATE_FORMAT_KEY] as? String
         if majorDateFormat != nil {
-            newRow.majorDateFormat = ASAMajorFormat(rawValue: majorDateFormat! )!
+            newRow.majorDateFormat = ASAMajorDateFormat(rawValue: majorDateFormat! )!
         }
         
         let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY] as? String

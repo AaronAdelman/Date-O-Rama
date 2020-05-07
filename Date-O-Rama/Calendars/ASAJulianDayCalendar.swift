@@ -54,11 +54,11 @@ class ASAJulianDayCalendar:  ASACalendar {
         self.calendarCode = calendarCode
     } // init(calendarCode: ASACalendarCode)
     
-    func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String {
+    func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
         return ""
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
-    private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorFormat) -> String {
+    private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat) -> String {
         if self.supportsTimes() && majorTimeFormat != .none {
             let JulianDay = now.JulianDate() - self.offsetFromJulianDay
             let formatter = NumberFormatter()
@@ -77,9 +77,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         }
     } // func dateTimeString(now:  Date, localeIdentifier: String) -> String
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: majorTimeFormat)
-    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
     func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: .full)

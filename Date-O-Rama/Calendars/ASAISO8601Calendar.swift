@@ -21,11 +21,11 @@ class ASAISO8601Calendar:  ASACalendar {
         self.ISODateFormatter.timeZone = TimeZone.current
     } // init()
     
-    func defaultDateGeekCode(majorDateFormat:  ASAMajorFormat) -> String {
+    func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String {
         return "yyyy-MM-dd"
     } // func defaultDateGeekCode(majorDateFormat:  ASAMajorFormat) -> String
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
         var dateString:  String
@@ -57,7 +57,7 @@ class ASAISO8601Calendar:  ASACalendar {
 
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
-    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
     func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!

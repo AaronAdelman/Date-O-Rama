@@ -17,15 +17,6 @@ public let calendarSubkey = "Calendar"
 public let majorDateFormatSubkey = "MajorDateFormat"
 public let geekFormatSubkey = "GeekFormat"
 
-//enum ASAMajorDateFormat:  String {
-//    case short         = "short"
-//    case medium        = "medium"
-//    case long          = "long"
-//    case full          = "full"
-//    case localizedLDML = "loc"
-//    case rawLDML       = "raw"
-//} // enum ASAMajorDateFormat:  String
-
 public let shortDateFormatKey  = "short"
 public let mediumDateFormatKey = "medium"
 public let longDateFormatKey   = "long"

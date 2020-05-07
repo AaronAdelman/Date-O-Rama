@@ -87,7 +87,7 @@ struct ASAFormatPickerView: View {
 }
 
 struct ASAMajorDateFormatCell: View {
-    let majorDateFormat: ASAMajorFormat
+    let majorDateFormat: ASAMajorDateFormat
     
     @ObservedObject var row:  ASARow
 
