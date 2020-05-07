@@ -108,7 +108,7 @@ struct ASAMainRowsViewCell:  View {
                 Text(verbatim: "🗓")
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
             }.frame(height: ROW_HEIGHT)
-            if row.calendar.supportsTimeZones() || row.calendar.supportsLocations() {
+            if row.calendar.supportsTimeZones || row.calendar.supportsLocations {
                 HStack {
                     Spacer().frame(width: self.INSET)
                     Text(row.effectiveTimeZone.emoji(date:  self.now))

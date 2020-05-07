@@ -62,7 +62,7 @@ struct ASAFormatPickerView: View {
     var body: some View {
         List {
             Section(header:  Text("HEADER_Date_format")) {
-                ForEach(row.calendar.supportedMajorDateFormats(), id: \.self) {
+                ForEach(row.calendar.supportedMajorDateFormats, id: \.self) {
                     format
                     in
                     ASAMajorDateFormatCell(majorDateFormat: format, row: self.row)

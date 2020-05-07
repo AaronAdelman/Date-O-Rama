@@ -19,7 +19,7 @@ struct ASACalendarDetailView: View {
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .long
         return dateFormatter
-    }
+    } // func localDateFormatter(timeZone:  TimeZone?) -> DateFormatter
     
     var body: some View {
         List {
@@ -38,13 +38,13 @@ struct ASACalendarDetailView: View {
                         }
                     }
                 }
-                if selectedRow.calendar.supportsDateFormats() {
+                if selectedRow.calendar.supportsDateFormats {
                     NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
                         ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }
                 
-                if selectedRow.calendar.supportsTimeZones() || selectedRow.calendar.supportsLocations() {
+                if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
                     ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
                     
                     NavigationLink(destination:  ASALocationChooserView(row:  selectedRow, tempLocationData: ASALocationData())) {
@@ -53,7 +53,7 @@ struct ASACalendarDetailView: View {
                 }
             } // Section
             
-            if selectedRow.calendar.LDMLDetails().count > 0 {
+            if selectedRow.calendar.LDMLDetails.count > 0 {
                 Section(header:  Text("HEADER_Date")) {
                     ForEach(selectedRow.details(), id: \.name) {
                         detail
@@ -63,7 +63,7 @@ struct ASACalendarDetailView: View {
                 } // Section
             }
             
-            if selectedRow.calendar.supportsEventDetails() {
+            if selectedRow.calendar.supportsEventDetails {
                 Section(header:  Text("HEADER_EVENTS")) {
                     ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.uuid) {
                         event

@@ -42,7 +42,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
-            if !self.calendar.supportedMajorDateFormats().contains(self.majorDateFormat) {
+            if !self.calendar.supportedMajorDateFormats.contains(self.majorDateFormat) {
                 majorDateFormat = self.calendar.defaultMajorDateFormat
             }
         } // didSet
@@ -326,10 +326,10 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     // MARK: -
     
     public func details() -> Array<ASALDMLDetail> {
-        return self.calendar.LDMLDetails()
+        return self.calendar.LDMLDetails
     } // public func details() -> Array<ASADetail>
     
     public func supportsLocales() -> Bool {
-        return self.calendar.supportsLocales()
+        return self.calendar.supportsLocales
     } // func supportsLocales() -> Bool
 } // class ASARow: NSObject

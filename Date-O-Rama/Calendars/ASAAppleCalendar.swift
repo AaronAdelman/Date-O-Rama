@@ -13,9 +13,7 @@ import UIKit
 class ASAAppleCalendar:  ASACalendar {
     var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
-    
-//    var calendarIdentifier:  Calendar.Identifier?
-    
+        
     var calendarCode:  ASACalendarCode
     
     var dateFormatter = DateFormatter()
@@ -62,7 +60,7 @@ class ASAAppleCalendar:  ASACalendar {
         default:
             self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
         } // switch majorTimeFormat
-
+        
         if majorDateFormat == .localizedLDML {
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
@@ -101,7 +99,7 @@ class ASAAppleCalendar:  ASACalendar {
         } else {
             self.dateFormatter.timeZone = timeZone
         }
-
+        
         let result = self.dateFormatter.string(from: now)
         
         return result
@@ -111,102 +109,71 @@ class ASAAppleCalendar:  ASACalendar {
         return "eee, d MMM y"
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
-    func LDMLDetails() -> Array<ASALDMLDetail> {
-        if self.calendarCode == .Gregorian {
-                    return [
-                        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-                        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-                        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-                        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-                        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-                        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-                        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-                        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-                        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-                        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-            //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-//                        ASADetail(name: "HEADER_r", geekCode: "r"),
-            //            ASADetail(name: "HEADER_g", geekCode: "g")
-                    ]
-        }
-        
-        if self.calendarCode == .Chinese {
+    var LDMLDetails: Array<ASALDMLDetail> {
+        get {
+            if self.calendarCode == .Chinese {
+                return [
+                    ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+                    ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+                    ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+                    ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+                    ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+                    ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+                    ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+                    ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+                    ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+                    ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+                    ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+                    ASALDMLDetail(name: "HEADER_U", geekCode: "UUUU"),
+                    //                        ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
+                    //            ASADetail(name: "HEADER_g", geekCode: "g")
+                ]
+            }
+            
             return [
-                        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-                        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-                        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-                        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-                        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-                        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-                        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-                        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-                        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-                        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-                        ASALDMLDetail(name: "HEADER_U", geekCode: "UUUU"),
-//                        ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
-            //            ASADetail(name: "HEADER_g", geekCode: "g")
-                    ]
-        }
-        
-        return [
-            ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-            ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-            ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-            ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-            ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-            ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-            ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-            ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-            ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-            ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-            ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-//            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-//            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
-//            ASADetail(name: "HEADER_g", geekCode: "g")
-        ]
-    } // func details() -> Array<ASADetail>
+                ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+                ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+                ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+                ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+                ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+                ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+                ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+                ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+                ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+                ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+                //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+                //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
+                //            ASADetail(name: "HEADER_g", geekCode: "g")
+            ]
+        } // get
+    } // var LDMLDetails: Array<ASALDMLDetail>
     
     func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
         return []
     } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
-    func supportsLocales() -> Bool {
-        return true
-    } // func supportsLocales() -> Bool
+    var supportsLocales: Bool = true
     
     func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
         return now.nextMidnight(timeZone:  timeZone)
     } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     
-    func supportsDateFormats() -> Bool {
-        return true
-    } // func supportsDateFormats() -> Bool
+    var supportsDateFormats: Bool = true
     
-    func supportsTimeZones() -> Bool {
-        return true
-    } // func supportsTimeZones() -> Bool
+    var supportsTimeZones: Bool = true
     
-    func supportsLocations() -> Bool {
-        return false
-    } // func supportsLocations() -> Bool
+    var supportsLocations: Bool = false
     
-    func supportsEventDetails() -> Bool {
-        return false
-    } // func supportsEventDetails() -> Bool
+    var supportsEventDetails: Bool = false
     
-    func supportsTimes() -> Bool {
-        return true
-    } // func supportsTimes() -> Bool
+    var supportsTimes: Bool = true
     
-    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
-        return [
-            .full,
-            .long,
-            .medium,
-            .short,
-            .localizedLDML
-        ]
-    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
+    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+        .full,
+        .long,
+        .medium,
+        .short,
+        .localizedLDML
+    ]
 } // class ASAAppleCalendar

@@ -14,7 +14,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
     var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full
-
+    
     private var offsetFromJulianDay:  Double {
         get {
             switch calendarCode {
@@ -60,7 +60,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
     private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat) -> String {
-        if self.supportsTimes() && majorTimeFormat != .none {
+        if self.supportsTimes && majorTimeFormat != .none {
             let JulianDay = now.JulianDate() - self.offsetFromJulianDay
             let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
@@ -86,21 +86,15 @@ class ASAJulianDayCalendar:  ASACalendar {
         return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: .full)
     } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
-    func LDMLDetails() -> Array<ASALDMLDetail> {
-        return []
-    } // func details() -> Array<ASADetail>
+    var LDMLDetails: Array<ASALDMLDetail> = []
     
     func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
         return []
     } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
-    func supportsLocales() -> Bool {
-        return true
-    } // func supportsLocales() -> Bool
+    var supportsLocales: Bool = true
     
-    func supportsDateFormats() -> Bool {
-        return false
-    } // func supportsDateFormats() -> Bool
+    var supportsDateFormats: Bool = false
     
     func startOfNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         switch self.calendarCode {
@@ -109,37 +103,31 @@ class ASAJulianDayCalendar:  ASACalendar {
             
         case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
             return now.nextMidnight(timeZone: TimeZone(secondsFromGMT: 0)!)
-
+            
         default:
             return now.nextGMTNoon()
         }
     } // func nextTransitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
     
-    func supportsTimeZones() -> Bool {
-        return false
-    } // func supportsTimeZones() -> Bool
+    var supportsTimeZones: Bool = false
     
-    func supportsLocations() -> Bool {
-        return false
-    } // func supportsLocations() -> Bool
+    var supportsLocations: Bool = false
     
-    func supportsEventDetails() -> Bool {
-        return false
-    } // func supportsEventDetails() -> Bool
-
-    func supportsTimes() -> Bool {
-        switch self.calendarCode {
-        case .TruncatedJulianDay, .LilianDate, .RataDie:
-            return false
-
-        default:
-            return true
-        } // switch self.calendarCode
-    } // func supportsTimes() -> Bool
+    var supportsEventDetails: Bool = false
     
-    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
-        return [
-            .full
-        ]
-    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
+    var supportsTimes: Bool {
+        get {
+            switch self.calendarCode {
+            case .TruncatedJulianDay, .LilianDate, .RataDie:
+                return false
+                
+            default:
+                return true
+            } // switch self.calendarCode
+        } // get
+    } // var supportsTimes: Bool
+    
+    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+        .full
+    ]
 } // class ASAJulianDayCalendar

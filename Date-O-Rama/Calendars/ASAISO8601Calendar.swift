@@ -40,9 +40,9 @@ class ASAISO8601Calendar:  ASACalendar {
         case .ISO8601YearMonthDay:
             formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
         case .ISO8601YearWeekDay:
-        formatterOptions = [.withYear, .withWeekOfYear, .withDay, .withDashSeparatorInDate]
+            formatterOptions = [.withYear, .withWeekOfYear, .withDay, .withDashSeparatorInDate]
         case .ISO8601YearDay:
-        formatterOptions = [.withYear, .withDay, .withDashSeparatorInDate]
+            formatterOptions = [.withYear, .withDay, .withDashSeparatorInDate]
         default:
             formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
         } // switch majorDateFormat
@@ -68,7 +68,7 @@ class ASAISO8601Calendar:  ASACalendar {
         } else {
             self.ISODateFormatter.timeZone = timeZone
         }
-
+        
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
@@ -85,7 +85,7 @@ class ASAISO8601Calendar:  ASACalendar {
         } else {
             self.ISODateFormatter.timeZone = timeZone
         }
-
+        
         let result = self.dateFormatter.string(from: now)
         
         return result
@@ -94,58 +94,46 @@ class ASAISO8601Calendar:  ASACalendar {
     
     // MARK: -
     
-    public func LDMLDetails() -> Array<ASALDMLDetail> {
-        return [
-            ASALDMLDetail(name: "HEADER_y", geekCode: "yyyy"),
-            ASALDMLDetail(name: "HEADER_M", geekCode: "MM"),
-            ASALDMLDetail(name: "HEADER_d", geekCode: "dd"),
-            ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-            ASALDMLDetail(name: "HEADER_w", geekCode: "ww"),
-            ASALDMLDetail(name: "HEADER_E", geekCode: "e"),
-            ASALDMLDetail(name: "HEADER_D", geekCode: "D")
-//            ,
-//            ASADetail(name: "HEADER_g", geekCode: "g")
-        ]
-    } // public func details() -> Array<ASADetail>
+    var LDMLDetails: Array<ASALDMLDetail> {
+        get {
+            return [
+                ASALDMLDetail(name: "HEADER_y", geekCode: "yyyy"),
+                ASALDMLDetail(name: "HEADER_M", geekCode: "MM"),
+                ASALDMLDetail(name: "HEADER_d", geekCode: "dd"),
+                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+                ASALDMLDetail(name: "HEADER_w", geekCode: "ww"),
+                ASALDMLDetail(name: "HEADER_E", geekCode: "e"),
+                ASALDMLDetail(name: "HEADER_D", geekCode: "D")
+                //            ,
+                //            ASADetail(name: "HEADER_g", geekCode: "g")
+            ]
+        }
+    } // var LDMLDetails: Array<ASALDMLDetail>
     
     func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
         return []
     } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
-    public func supportsLocales() -> Bool {
-        return false
-    } // func supportsLocales() -> Bool
+    var supportsLocales: Bool = false
     
     func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
         return now.nextMidnight(timeZone:  timeZone)
     } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
-
-    func supportsDateFormats() -> Bool {
-        return true
-    } // func supportsDateFormats() -> Bool
     
-    func supportsTimeZones() -> Bool {
-        return true
-    } // func supportsTimeZones() -> Bool
+    var supportsDateFormats: Bool = true
     
-    func supportsLocations() -> Bool {
-        return false
-    } // func supportsLocations() -> Bool
+    var supportsTimeZones: Bool = true
     
-    func supportsEventDetails() -> Bool {
-        return false
-    } // func supportsEventDetails() -> Bool
+    var supportsLocations: Bool = false
     
-    func supportsTimes() -> Bool {
-        return false
-    } // func supportsTimes() -> Bool
+    var supportsEventDetails: Bool = false
     
-    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
-        return [
-            .full,
-            .ISO8601YearMonthDay,
-            .ISO8601YearWeekDay,
-            .ISO8601YearDay
-        ]
-    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
+    var supportsTimes: Bool = false
+    
+    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+        .full,
+        .ISO8601YearMonthDay,
+        .ISO8601YearWeekDay,
+        .ISO8601YearDay
+    ]
 } // class ASAISO8601Calendar

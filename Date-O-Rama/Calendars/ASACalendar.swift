@@ -30,18 +30,18 @@ protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var color:  UIColor { get }
     var defaultMajorDateFormat:  ASAMajorDateFormat { get }
-
+    var LDMLDetails: Array<ASALDMLDetail> { get }
+    var supportedMajorDateFormats: Array<ASAMajorDateFormat> { get }
+    var supportsEventDetails: Bool { get }
+    var supportsLocales: Bool { get }
+    var supportsDateFormats: Bool { get }
+    var supportsLocations: Bool { get }
+    var supportsTimes: Bool { get }
+    var supportsTimeZones: Bool { get }
+    
     func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat, dateGeekFormat:  String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
-    func LDMLDetails() -> Array<ASALDMLDetail>
     func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent>
-    func supportsLocales() -> Bool
-    func supportsDateFormats() -> Bool
-    func supportsTimeZones() -> Bool
-    func supportsLocations() -> Bool
-    func supportsEventDetails() -> Bool
-    func supportsTimes() -> Bool
     func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
-    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
 } // protocol ASACalendar

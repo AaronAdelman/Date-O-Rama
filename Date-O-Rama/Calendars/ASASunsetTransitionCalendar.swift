@@ -63,7 +63,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     } // var color: UIColor
     
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
-
+    
     var dateFormatter = DateFormatter()
     
     init(calendarCode:  ASACalendarCode) {
@@ -93,7 +93,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         
         let sunrise:  Date = events[.sunrise]!! // נץ
         let sunset:  Date = events[.sunset]!! // שקיעה
-
+        
         var hours:  Double
         var symbol:  String
         let NIGHT_SYMBOL = "☽"
@@ -105,7 +105,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             let previousDate = now.addingTimeInterval(-24 * 60 * 60)
             let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
-
+            
             hours = self.hours(now:  now, startDate:  previousSunset, endDate:  sunrise)
             symbol = NIGHT_SYMBOL
         } else {
@@ -113,7 +113,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             let nextDate = now.addingTimeInterval(24 * 60 * 60)
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
-
+            
             hours = self.hours(now:  now, startDate:  sunset, endDate:  nextSunrise)
             symbol = NIGHT_SYMBOL
         }
@@ -189,24 +189,22 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return result
     } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
-    func LDMLDetails() -> Array<ASALDMLDetail> {
-        return [
-            ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-            ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-            ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-            ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-            ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-            ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-            ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-            ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-            ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-            ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-            ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-            //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-            //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
-            //            ASADetail(name: "HEADER_g", geekCode: "g")
-        ]
-    } // func details() -> Array<ASADetail>
+    var LDMLDetails: Array<ASALDMLDetail> = [
+        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+        //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+        //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
+        //            ASADetail(name: "HEADER_g", geekCode: "g")
+    ]
     
     func HebrewEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
@@ -336,17 +334,11 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         }
     } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent>
     
-    func supportsLocales() -> Bool {
-        return true
-    } // func supportsLocales() -> Bool
+    var supportsLocales: Bool = true
     
-    func supportsDateFormats() -> Bool {
-        return true
-    } // func supportsDateFormats() -> Bool
+    var supportsDateFormats: Bool = true
     
-    func supportsTimeZones() -> Bool {
-        return false
-    } // func supportsTimeZones() -> Bool
+    var supportsTimeZones: Bool = false
     
     func startOfNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         if location == nil {
@@ -358,25 +350,17 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return events[.sunset]!!
     } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
     
-    func supportsLocations() -> Bool {
-        return true
-    } // func supportsLocations() -> Bool
+    var supportsLocations: Bool = true
     
-    func supportsEventDetails() -> Bool {
-        return true
-    } // func supportsEventDetails() -> Bool
+    var supportsEventDetails: Bool = true
     
-    func supportsTimes() -> Bool {
-        return true
-    } // func supportsTimes() -> Bool
+    var supportsTimes: Bool = true
     
-    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
-        return [
-            .full,
-            .long,
-            .medium,
-            .short,
-            .localizedLDML
-        ]
-    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
+    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+        .full,
+        .long,
+        .medium,
+        .short,
+        .localizedLDML
+    ]
 } // class ASASunsetTransitionCalendar
