@@ -113,15 +113,24 @@ struct ASAMainRowsViewCell:  View {
                 Text(verbatim: "🗓")
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
             }.frame(height: ROW_HEIGHT)
-            if row.calendar.supportsTimeZones || row.calendar.supportsLocations {
-                HStack {
-                    Spacer().frame(width: self.INSET)
-                    Text(row.effectiveTimeZone.emoji(date:  self.now))
-                    Text(verbatim: "\(row.effectiveTimeZone.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-                }.frame(height: ROW_HEIGHT)
-                ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
+            
+            HStack {
+                if row.usesDeviceLocation {
+                    Image(systemName: "location.fill")
+                }
+                VStack(alignment: .leading) {
+                    if row.calendar.supportsTimeZones || row.calendar.supportsLocations {
+                        HStack {
+                            Spacer().frame(width: self.INSET)
+                            Text(row.effectiveTimeZone.emoji(date:  self.now))
+                            Text(verbatim: "\(row.effectiveTimeZone.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                        }.frame(height: ROW_HEIGHT)
+                        ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
+                    }
+                }
             }
-        }
+            
+        } // VStack
     } // var body
 } // struct ASAMainRowsViewCell
 
@@ -134,9 +143,6 @@ struct ASAMainRowsLocationSubcell:  View {
         HStack {
             Spacer().frame(width: self.INSET)
             Text((row.ISOCountryCode ?? "").flag())
-            if row.usesDeviceLocation {
-                Image(systemName: "location.fill")
-            }
             if row.placeName == nil && row.locality == nil && row.country == nil {
                 if row.location != nil {
                     Text(verbatim:  row.location!.humanInterfaceRepresentation()).font(.subheadline)
