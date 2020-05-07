@@ -363,4 +363,8 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         .short,
         .localizedLDML
     ]
+    
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
+    
+    var supportsTimeFormats: Bool = true
 } // class ASASunsetTransitionCalendar

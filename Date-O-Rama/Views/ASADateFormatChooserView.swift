@@ -1,5 +1,5 @@
 //
-//  ASAFormatPickerView.swift
+//  ASADateFormatChooserView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-06.
@@ -9,43 +9,28 @@
 import SwiftUI
 import CoreLocation
 
-struct ASAFormatPickerView: View {
+struct ASADateFormatChooserView: View {
     @ObservedObject var row:  ASARow
-//    var deviceLocation:  CLLocation?
     
-    var model:  Array<ASAComponentsPickerSection> {
-        get {
-            if self.row.calendar.calendarCode == ASACalendarCode.ISO8601 {
-                return [
-                    ASAComponentsPickerSection(headerCode: "y", items: ["", "yyyy"]),
-                    ASAComponentsPickerSection(headerCode: "M", items: ["", "MM"]),
-                    ASAComponentsPickerSection(headerCode: "w", items: ["", "ww"]),
-                    ASAComponentsPickerSection(headerCode: "d", items: ["", "dd"]),
-                    ASAComponentsPickerSection(headerCode: "-", items: ["", "-"])
-                ]
-            } else {
-                return [
-                    ASAComponentsPickerSection(headerCode: "E", items: ["", "eeeee", "eeeeee", "eee", "eeee", "e", "ee"
-                    ]),
-                    ASAComponentsPickerSection(headerCode: "y", items: ["", "y", "yy", "yyy", "yyyy"]),
-                    ASAComponentsPickerSection(headerCode: "M", items: ["", "MMMMM", "MMM", "MMMM", "M", "MM"]),
-                    ASAComponentsPickerSection(headerCode: "d", items: ["", "d", "dd"]),
-                    ASAComponentsPickerSection(headerCode: "G", items: ["", "GGGGG", "G", "GGGG"]),
-                    ASAComponentsPickerSection(headerCode: "Y", items: ["", "Y", "YY", "YYY", "YYYY"]),
-                    ASAComponentsPickerSection(headerCode: "U", items: ["", "UUUUU", "U", "UUUU"]),
-//                    ASAComponentsPickerSection(headerCode: "r", items: ["", "r", "rr", "rrr", "rrrr"]),
-                    ASAComponentsPickerSection(headerCode: "Q", items: ["", "Q", "QQ", "QQQQQ", "QQQ", "QQQQ"]),
-                    ASAComponentsPickerSection(headerCode: "w", items: ["", "w", "ww"]),
-                    ASAComponentsPickerSection(headerCode: "W", items: ["", "W"]),
-                    ASAComponentsPickerSection(headerCode: "D", items: ["", "D", "DD", "DDD"]),
-                    ASAComponentsPickerSection(headerCode: "F", items: ["", "F"]),
-//                    ASAComponentsPickerSection(headerCode: "g", items: ["", "g"])
-                ]
-            }
-        } // get
-    } // var model
-
-    fileprivate func ComponentsForEach() -> ForEach<[ASAComponentsPickerSection], String, Section<Text, ForEach<[String], String, ASAComponentCell>, EmptyView>> {
+    var model:  Array<ASAComponentsPickerSection> = [
+        ASAComponentsPickerSection(headerCode: "E", items: ["", "eeeee", "eeeeee", "eee", "eeee", "e", "ee"
+        ]),
+        ASAComponentsPickerSection(headerCode: "y", items: ["", "y", "yy", "yyy", "yyyy"]),
+        ASAComponentsPickerSection(headerCode: "M", items: ["", "MMMMM", "MMM", "MMMM", "M", "MM"]),
+        ASAComponentsPickerSection(headerCode: "d", items: ["", "d", "dd"]),
+        ASAComponentsPickerSection(headerCode: "G", items: ["", "GGGGG", "G", "GGGG"]),
+        ASAComponentsPickerSection(headerCode: "Y", items: ["", "Y", "YY", "YYY", "YYYY"]),
+        ASAComponentsPickerSection(headerCode: "U", items: ["", "UUUUU", "U", "UUUU"]),
+        //                    ASAComponentsPickerSection(headerCode: "r", items: ["", "r", "rr", "rrr", "rrrr"]),
+        ASAComponentsPickerSection(headerCode: "Q", items: ["", "Q", "QQ", "QQQQQ", "QQQ", "QQQQ"]),
+        ASAComponentsPickerSection(headerCode: "w", items: ["", "w", "ww"]),
+        ASAComponentsPickerSection(headerCode: "W", items: ["", "W"]),
+        ASAComponentsPickerSection(headerCode: "D", items: ["", "D", "DD", "DDD"]),
+        ASAComponentsPickerSection(headerCode: "F", items: ["", "F"]),
+        //                    ASAComponentsPickerSection(headerCode: "g", items: ["", "g"])
+    ]
+    
+    fileprivate func ComponentsForEach() -> ForEach<[ASAComponentsPickerSection], String, Section<Text, ForEach<[String], String, ASADateFormatComponentCell>, EmptyView>> {
         return ForEach(self.model, id:  \.headerCode) {
             section
             in
@@ -53,7 +38,7 @@ struct ASAFormatPickerView: View {
                 ForEach(section.items, id:  \.self) {
                     item
                     in
-                    ASAComponentCell(headerCode: section.headerCode, item: item, row:  self.row)
+                    ASADateFormatComponentCell(headerCode: section.headerCode, item: item, row:  self.row)
                 } // ForEach(section.items, id:  \.self)
             }
         }
@@ -72,7 +57,7 @@ struct ASAFormatPickerView: View {
                 ComponentsForEach()
             }
         } // List
-            .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
+            .navigationBarTitle(Text(row.dateString(now: Date()) ))
     }
 }
 
@@ -83,7 +68,7 @@ struct ASAMajorDateFormatCell: View {
     let majorDateFormat: ASAMajorDateFormat
     
     @ObservedObject var row:  ASARow
-
+    
     var body: some View {
         HStack {
             Text(verbatim:  majorDateFormat.localizedItemName())
@@ -101,7 +86,7 @@ struct ASAMajorDateFormatCell: View {
 
 // MARK: -
 
-struct ASAComponentCell: View {
+struct ASADateFormatComponentCell: View {
     let headerCode:  String
     let item: String
     
@@ -152,8 +137,8 @@ extension ASAComponentsPickerSection {
 
 // MARK: -
 
-struct ASAFormatPickerView_Previews: PreviewProvider {
+struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAFormatPickerView(row: ASARow.generic())
+        ASADateFormatChooserView(row: ASARow.generic())
     }
 }

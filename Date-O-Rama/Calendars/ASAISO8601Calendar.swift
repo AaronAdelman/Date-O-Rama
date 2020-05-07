@@ -136,4 +136,8 @@ class ASAISO8601Calendar:  ASACalendar {
         .ISO8601YearWeekDay,
         .ISO8601YearDay
     ]
+    
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
+    
+    var supportsTimeFormats: Bool = true
 } // class ASAISO8601Calendar

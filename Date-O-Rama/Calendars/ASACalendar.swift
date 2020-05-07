@@ -32,10 +32,12 @@ protocol ASACalendar {
     var defaultMajorDateFormat:  ASAMajorDateFormat { get }
     var LDMLDetails: Array<ASALDMLDetail> { get }
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> { get }
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> { get }
     var supportsEventDetails: Bool { get }
     var supportsLocales: Bool { get }
     var supportsDateFormats: Bool { get }
     var supportsLocations: Bool { get }
+    var supportsTimeFormats: Bool { get }
     var supportsTimes: Bool { get }
     var supportsTimeZones: Bool { get }
     

@@ -130,4 +130,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
         .full
     ]
+    
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full]
+    
+    var supportsTimeFormats: Bool = false
 } // class ASAJulianDayCalendar

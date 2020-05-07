@@ -39,7 +39,7 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 if selectedRow.calendar.supportsDateFormats {
-                    NavigationLink(destination: ASAFormatPickerView(row: selectedRow)) {
+                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow)) {
                         ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }
