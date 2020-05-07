@@ -40,8 +40,14 @@ let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
 class ASARow: NSObject, ObservableObject, Identifiable {
     var uid = UUID()
     
-    @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian)
-        
+    @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
+        didSet {
+            if !self.calendar.supportedMajorDateFormats().contains(self.majorDateFormat) {
+                majorDateFormat = self.calendar.defaultMajorDateFormat
+            }
+        } // didSet
+    } // var calendar
+    
     @Published var localeIdentifier:  String = Locale.current.identifier
     
     @Published var majorDateFormat:  ASAMajorDateFormat = .full {

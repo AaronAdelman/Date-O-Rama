@@ -13,6 +13,7 @@ import UIKit
 class ASAISO8601Calendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .ISO8601
     var color: UIColor = .systemGray
+    var defaultMajorDateFormat:  ASAMajorDateFormat = .ISO8601YearMonthDay
     
     lazy var dateFormatter = DateFormatter()
     lazy var ISODateFormatter = ISO8601DateFormatter()
@@ -30,23 +31,36 @@ class ASAISO8601Calendar:  ASACalendar {
         
         var dateString:  String
         
-        let options = dateGeekFormat.chop()
         var formatterOptions:  ISO8601DateFormatter.Options = []
-        for o in options {
-            switch o {
-            case "yyyy":  formatterOptions.insert(.withYear)
-                
-            case "MM":  formatterOptions.insert(.withMonth)
-                
-            case "dd":  formatterOptions.insert(.withDay)
-                
-            case "ww":  formatterOptions.insert(.withWeekOfYear)
-                
-            case "-":  formatterOptions.insert(.withDashSeparatorInDate)
-                
-            default:  do {}
-            } // switch o
-        }
+        switch majorDateFormat {
+        case .none:
+            formatterOptions = []
+        case .full:
+            formatterOptions = [.withFullDate]
+        case .ISO8601YearMonthDay:
+            formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
+        case .ISO8601YearWeekDay:
+        formatterOptions = [.withYear, .withWeekOfYear, .withDay, .withDashSeparatorInDate]
+        case .ISO8601YearDay:
+        formatterOptions = [.withYear, .withDay, .withDashSeparatorInDate]
+        default:
+            formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
+        } // switch majorDateFormat
+        
+        switch majorTimeFormat {
+        case .full:
+            formatterOptions.insert(.withFullTime)
+        case .long:
+            formatterOptions.insert(.withTime)
+            formatterOptions.insert(.withColonSeparatorInTime)
+            formatterOptions.insert(.withFractionalSeconds)
+        case .medium, .short:
+            formatterOptions.insert(.withTime)
+            formatterOptions.insert(.withColonSeparatorInTime)
+        default:
+            debugPrint("")
+        } // switch majorTimeFormat
+        
         self.ISODateFormatter.formatOptions = formatterOptions
         
         if timeZone == nil {
@@ -62,7 +76,7 @@ class ASAISO8601Calendar:  ASACalendar {
     func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
-        self.dateFormatter.locale = Locale(identifier: "en_US")
+        self.dateFormatter.locale = Locale(identifier: "en_UK")
         
         self.dateFormatter.dateFormat = LDMLString
         
@@ -124,5 +138,14 @@ class ASAISO8601Calendar:  ASACalendar {
     
     func supportsTimes() -> Bool {
         return false
-    } // func supportsTimes() -> Bool    
+    } // func supportsTimes() -> Bool
+    
+    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
+        return [
+            .full,
+            .ISO8601YearMonthDay,
+            .ISO8601YearWeekDay,
+            .ISO8601YearDay
+        ]
+    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
 } // class ASAISO8601Calendar

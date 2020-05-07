@@ -29,6 +29,7 @@ struct ASAEvent {
 protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var color:  UIColor { get }
+    var defaultMajorDateFormat:  ASAMajorDateFormat { get }
 
     func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat, dateGeekFormat:  String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
@@ -41,6 +42,6 @@ protocol ASACalendar {
     func supportsLocations() -> Bool
     func supportsEventDetails() -> Bool
     func supportsTimes() -> Bool
-//    func timeZone(location:  CLLocation?) -> TimeZone
     func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
+    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
 } // protocol ASACalendar

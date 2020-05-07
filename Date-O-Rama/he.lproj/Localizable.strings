@@ -146,6 +146,9 @@
 "ITEM_Short"         = "מקוצר";
 "ITEM_Components"    = "רכיבים";
 //"ITEM_Raw_LDML"      = "Raw LDML";
+"ITEM_ISO8601YearMonthDay" = "ISO 8601 (שנה-חודש-יום)";
+"ITEM_ISO8601YearWeekDay"  = "ISO 8601 (שנה-שבוע-יום)";
+"ITEM_ISO8601YearDay"      = "ISO 8601 (שנה-יום)";
 
 "HEADER_Date" = "רכיבי תאריך";
 

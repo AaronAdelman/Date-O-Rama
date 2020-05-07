@@ -139,13 +139,16 @@
 "HEADER_Locale"   = "Locale";
 
 "HEADER_Date_format" = "Date format";
-"ITEM_None"          = "None";
-"ITEM_Full"          = "Full";
-"ITEM_Long"          = "Long";
-"ITEM_Medium"        = "Medium";
-"ITEM_Short"         = "Short";
-"ITEM_Components"    = "Components";
+"ITEM_None"                = "None";
+"ITEM_Full"                = "Full";
+"ITEM_Long"                = "Long";
+"ITEM_Medium"              = "Medium";
+"ITEM_Short"               = "Short";
+"ITEM_Components"          = "Components";
 //"ITEM_Raw_LDML"      = "Raw LDML";
+"ITEM_ISO8601YearMonthDay" = "ISO 8601 (Year-Month-Day)";
+"ITEM_ISO8601YearWeekDay"  = "ISO 8601 (Year-Week-Day)";
+"ITEM_ISO8601YearDay"      = "ISO 8601 (Year-Day)";
 
 "HEADER_Date" = "Date components";
 

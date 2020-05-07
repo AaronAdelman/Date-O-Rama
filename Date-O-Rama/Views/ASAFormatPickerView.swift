@@ -61,30 +61,23 @@ struct ASAFormatPickerView: View {
     
     var body: some View {
         List {
-            if row.calendar.calendarCode == ASACalendarCode.ISO8601 {
-                ComponentsForEach()
-            } else {
-                Section(header:  Text("HEADER_Date_format")) {
-                    ASAMajorDateFormatCell(majorDateFormat: .full, row: row)
-                    ASAMajorDateFormatCell(majorDateFormat: .long, row: row)
-                    ASAMajorDateFormatCell(majorDateFormat: .medium, row: row)
-                    ASAMajorDateFormatCell(majorDateFormat: .short, row: row)
-                    ASAMajorDateFormatCell(majorDateFormat: .localizedLDML, row: row)
-//                    ASAMajorDateFormatCell(majorDateFormat: .rawLDML, row: row)
-                } // Section
-                if row.majorDateFormat == .localizedLDML {
-                    ComponentsForEach()
+            Section(header:  Text("HEADER_Date_format")) {
+                ForEach(row.calendar.supportedMajorDateFormats(), id: \.self) {
+                    format
+                    in
+                    ASAMajorDateFormatCell(majorDateFormat: format, row: self.row)
                 }
-//                if row.majorDateFormat == .rawLDML {
-//                    Section(header:  Text("LDML")) {
-//                        Text("Quux")
-//                    }
-//                }
+            } // Section
+            if row.majorDateFormat == .localizedLDML {
+                ComponentsForEach()
             }
-        }
-        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
+        } // List
+            .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
     }
 }
+
+
+// MARK: -
 
 struct ASAMajorDateFormatCell: View {
     let majorDateFormat: ASAMajorDateFormat
@@ -104,6 +97,9 @@ struct ASAMajorDateFormatCell: View {
         }
     }
 } // struct ASAMajorDateFormatCell
+
+
+// MARK: -
 
 struct ASAComponentCell: View {
     let headerCode:  String
@@ -136,6 +132,9 @@ struct ASAComponentCell: View {
     }  // var body
 } // struct ASAComponentCell
 
+
+// MARK: -
+
 struct ASAComponentsPickerSection {
     var headerCode:  String
     var items:  Array<String>
@@ -150,6 +149,8 @@ extension ASAComponentsPickerSection {
     } // func localizedHeaderTitle() -> String
 } // extension ASAComponentsPickerSection
 
+
+// MARK: -
 
 struct ASAFormatPickerView_Previews: PreviewProvider {
     static var previews: some View {

@@ -9,13 +9,16 @@
 import Foundation
 
 enum ASAMajorDateFormat:  String {
-    case none          = "none"
-    case short         = "short"
-    case medium        = "medium"
-    case long          = "long"
-    case full          = "full"
-    case localizedLDML = "loc"
-//    case rawLDML       = "raw"
+    case none                = "none"
+    case short               = "short"
+    case medium              = "medium"
+    case long                = "long"
+    case full                = "full"
+    case localizedLDML       = "loc"
+    //    case rawLDML       = "raw"
+    case ISO8601YearMonthDay = "ISO8601YearMonthDay"
+    case ISO8601YearWeekDay  = "ISO8601YearWeekDay"
+    case ISO8601YearDay      = "ISO8601YearDay"
 } // enum ASAMajorDateFormat
 
 extension ASAMajorDateFormat {
@@ -36,6 +39,12 @@ extension ASAMajorDateFormat {
 //            unlocalizedString = "ITEM_Raw_LDML"
         case .none:
             unlocalizedString = "ITEM_None"
+        case .ISO8601YearMonthDay:
+            unlocalizedString = "ITEM_ISO8601YearMonthDay"
+        case .ISO8601YearWeekDay:
+            unlocalizedString = "ITEM_ISO8601YearWeekDay"
+        case .ISO8601YearDay:
+            unlocalizedString = "ITEM_ISO8601YearDay"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String

@@ -13,7 +13,8 @@ import UIKit
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
     var color: UIColor = .systemGray
-    
+    var defaultMajorDateFormat:  ASAMajorDateFormat = .full
+
     private var offsetFromJulianDay:  Double {
         get {
             switch calendarCode {
@@ -135,4 +136,10 @@ class ASAJulianDayCalendar:  ASACalendar {
             return true
         } // switch self.calendarCode
     } // func supportsTimes() -> Bool
+    
+    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
+        return [
+            .full
+        ]
+    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
 } // class ASAJulianDayCalendar

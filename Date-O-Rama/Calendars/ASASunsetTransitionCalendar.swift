@@ -45,8 +45,6 @@ let OTHER_DUSK_KEY                    = "otherDusk"
 // MARK: -
 
 class ASASunsetTransitionCalendar:  ASACalendar {
-//    var calendarIdentifier:  Calendar.Identifier?
-    
     var calendarCode: ASACalendarCode
     
     var color: UIColor {
@@ -64,6 +62,8 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         } // get
     } // var color: UIColor
     
+    var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
+
     var dateFormatter = DateFormatter()
     
     init(calendarCode:  ASACalendarCode) {
@@ -369,4 +369,14 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     func supportsTimes() -> Bool {
         return true
     } // func supportsTimes() -> Bool
-}
+    
+    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
+        return [
+            .full,
+            .long,
+            .medium,
+            .short,
+            .localizedLDML
+        ]
+    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
+} // class ASASunsetTransitionCalendar

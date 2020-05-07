@@ -12,6 +12,7 @@ import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
     var color: UIColor = .systemGray
+    var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
     
 //    var calendarIdentifier:  Calendar.Identifier?
     
@@ -42,7 +43,25 @@ class ASAAppleCalendar:  ASACalendar {
             self.dateFormatter.timeZone = timeZone
         }
         
-        self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
+        switch majorTimeFormat {
+        case .none:
+            self.dateFormatter.timeStyle = .none
+            
+        case .full:
+            self.dateFormatter.timeStyle = .full
+            
+        case .long:
+            self.dateFormatter.timeStyle = .long
+            
+        case .medium:
+            self.dateFormatter.timeStyle = .medium
+            
+        case .short:
+            self.dateFormatter.timeStyle = .short
+            
+        default:
+            self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
+        } // switch majorTimeFormat
 
         if majorDateFormat == .localizedLDML {
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
@@ -178,6 +197,16 @@ class ASAAppleCalendar:  ASACalendar {
     } // func supportsEventDetails() -> Bool
     
     func supportsTimes() -> Bool {
-    return true
+        return true
     } // func supportsTimes() -> Bool
+    
+    func supportedMajorDateFormats() -> Array<ASAMajorDateFormat> {
+        return [
+            .full,
+            .long,
+            .medium,
+            .short,
+            .localizedLDML
+        ]
+    } // func supportedMajorDateFormats() -> Array<ASAMajorDateFormat>
 } // class ASAAppleCalendar
