@@ -184,6 +184,10 @@
 "ITEM_ISO8601YearMonthDay" = "ISO 8601 (שנה-חודש-יום)";
 "ITEM_ISO8601YearWeekDay"  = "ISO 8601 (שנה-שבוע-יום)";
 "ITEM_ISO8601YearDay"      = "ISO 8601 (שנה-יום)";
+"ITEM_decimalTwelveHour"   = "Decimal twelve-hour";
+"ITEM_traditionalJewish"   = "יהודי מסורתי";
+"ITEM_decimal"             = "Decimal";
+"ITEM_hexadecimal"         = "Hexadecimal";
 
 "HEADER_Date" = "רכיבי תאריך";
 

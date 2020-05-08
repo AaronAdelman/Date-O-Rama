@@ -123,7 +123,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let NUMBER_OF_HOURS = 12.0
         
         if dayHalfStart <= now && now < dayHalfEnd {
-            hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  dayHalfEnd, numberOfHours:  NUMBER_OF_HOURS)
+            hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  dayHalfEnd, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = "☼"
         } else if now < dayHalfStart {
             let previousDate = now.oneDayBefore
@@ -138,7 +138,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             default:
                 previousDayHalfEnd = previousSunset
             } // switch self.calendarCode
-            hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHours:  NUMBER_OF_HOURS)
+            hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
         } else {
             // now >= dayHalfEnd
@@ -155,17 +155,56 @@ class ASASunsetTransitionCalendar:  ASACalendar {
                 nextDayHalfStart = nextSunrise
             } // switch self.calendarCode
 
-            hours = now.fractionalHours(startDate:  dayHalfEnd, endDate:  nextDayHalfStart, numberOfHours:  NUMBER_OF_HOURS)
+            hours = now.fractionalHours(startDate:  dayHalfEnd, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
         }
         
+        var result = ""
+        switch majorTimeFormat {
+        case .decimalTwelveHour:
+            result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+
+        case .traditionalJewish:
+            result = self.traditionalJewishTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+            
+        default:
+            result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+        }
+        return result
+    } // func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String
+    
+    func fractionalHoursTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
         numberFormatter.locale = Locale(identifier:  localeIdentifier)
         result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
         return result
-    }
+    } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
+    
+    func traditionalJewishTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
+        let integralHours = floor(hours)
+        let fractionalHours = hours - integralHours
+        let MINUTES_PER_HOUR = 1080.0
+        let totalMinutes = fractionalHours * MINUTES_PER_HOUR
+        let integralMinutes = floor(totalMinutes)
+        let fractionalMinutes = totalMinutes - integralMinutes
+        let SECONDS_PER_MINUTES = 76.0
+        let totalSeconds = fractionalMinutes * SECONDS_PER_MINUTES
+        let integralSeconds = floor(totalSeconds)
+        
+        var result = ""
+        let numberFormatter = NumberFormatter()
+        numberFormatter.maximumFractionDigits = 0
+        numberFormatter.locale = Locale(identifier:  localeIdentifier)
+        let hourString = numberFormatter.string(from: NSNumber(value:  integralHours))
+        numberFormatter.minimumIntegerDigits = 4
+        let minuteString = numberFormatter.string(from: NSNumber(value:  integralMinutes))
+        numberFormatter.minimumIntegerDigits = 2
+        let secondString = numberFormatter.string(from: NSNumber(value:  integralSeconds))
+        result = "\(hourString ?? ""):\(minuteString ?? ""):\(secondString ?? "") \(symbol)"
+        return result
+    } // func traditionalJewishTimeString(hours:  Double, symbol:  String) -> String
     
     func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {
@@ -414,11 +453,11 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.medium]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.decimalTwelveHour, .traditionalJewish]
     
     var supportsTimeFormats: Bool = true
     
     var canSplitTimeFromDate:  Bool = true
     
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .decimalTwelveHour
 } // class ASASunsetTransitionCalendar

@@ -265,8 +265,8 @@
 				A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */,
 				A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */,
 				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
-				A517658B2460721A0039AFAF /* MapView.swift */,
 				A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */,
+				A517658B2460721A0039AFAF /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

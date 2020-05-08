@@ -35,8 +35,16 @@ extension ASAMajorTimeFormat {
             unlocalizedString = "ITEM_Full"
         case .localizedLDML:
             unlocalizedString = "ITEM_Components"
-        default:
-            unlocalizedString = self.rawValue
+        case .none:
+            unlocalizedString = "ITEM_None"
+        case .decimalTwelveHour:
+            unlocalizedString = "ITEM_decimalTwelveHour"
+        case .traditionalJewish:
+            unlocalizedString = "ITEM_traditionalJewish"
+        case .decimal:
+            unlocalizedString = "ITEM_decimal"
+        case .hexadecimal:
+            unlocalizedString = "ITEM_hexadecimal"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String

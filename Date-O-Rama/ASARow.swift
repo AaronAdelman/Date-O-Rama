@@ -168,6 +168,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
             DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
+            MAJOR_TIME_FORMAT_KEY:  majorTimeFormat.rawValue ,
+            TIME_GEEK_FORMAT_KEY:  timeGeekFormat,
             TIME_ZONE_KEY:  effectiveTimeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
             ] as [String : Any]
@@ -246,6 +248,16 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY] as? String
         if dateGeekFormat != nil {
             newRow.dateGeekFormat = dateGeekFormat!
+        }
+        
+        let majorTimeFormat = dictionary[MAJOR_TIME_FORMAT_KEY] as? String
+        if majorTimeFormat != nil {
+            newRow.majorTimeFormat = ASAMajorTimeFormat(rawValue: majorTimeFormat! )!
+        }
+        
+        let timeGeekFormat = dictionary[TIME_GEEK_FORMAT_KEY] as? String
+        if timeGeekFormat != nil {
+            newRow.timeGeekFormat = timeGeekFormat!
         }
         
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String

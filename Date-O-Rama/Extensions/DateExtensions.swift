@@ -86,10 +86,23 @@ extension Date {
 } // extension Date
 
 extension Date {
-    func fractionalHours(startDate:  Date, endDate:  Date, numberOfHours:  Double) -> Double {
+    func fractionalHours(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double) -> Double {
         let seconds = self.timeIntervalSince(startDate)
-        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHours
+        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
         let hours = seconds / hourLength
         return hours
     } // func fractionalHours(startDate:  Date, endDate:  Date) -> Double
-}
+    
+    func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double, numberOfMinutesPerHour:  Double, numberOfSecondsPerMinute:  Double) -> (hours:  Int, minutes:  Int, seconds:  Double) {
+        let totalSISeconds = self.timeIntervalSince(startDate)
+        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
+        let hours = floor(totalSISeconds / hourLength)
+        let nonHourSISeconds = totalSISeconds - hours * hourLength
+        let minuteLength = hourLength / numberOfMinutesPerHour
+        let minutes = floor(nonHourSISeconds  / minuteLength)
+        let nonMinuteSISeconds = nonHourSISeconds - minutes * minuteLength
+        let secondLength = minuteLength / numberOfSecondsPerMinute
+        let seconds = nonMinuteSISeconds / secondLength
+        return (hours:  Int(hours), minutes:  Int(minutes), seconds:  seconds)
+    } // func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHours:  Int, numberOfMinutesPerHour:  Int, numberOfSecondsPerMinute:  Int) -> (hours:  Int, minutes:  Int, seconds:  Double)
+} // extension Date

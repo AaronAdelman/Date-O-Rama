@@ -183,6 +183,10 @@
 "ITEM_ISO8601YearMonthDay" = "ISO 8601 (Year-Month-Day)";
 "ITEM_ISO8601YearWeekDay"  = "ISO 8601 (Year-Week-Day)";
 "ITEM_ISO8601YearDay"      = "ISO 8601 (Year-Day)";
+"ITEM_decimalTwelveHour"   = "Decimal twelve-hour";
+"ITEM_traditionalJewish"   = "Traditional Jewish";
+"ITEM_decimal"             = "Decimal";
+"ITEM_hexadecimal"         = "Hexadecimal";
 
 "HEADER_Date" = "Date components";
 
