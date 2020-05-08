@@ -464,7 +464,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.decimalTwelveHour, .traditionalJewish, .short, .medium, .long, .full]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.traditionalJewish, .full, .long, .medium, .short, .decimalTwelveHour]
     
     var supportsTimeFormats: Bool = true
     
