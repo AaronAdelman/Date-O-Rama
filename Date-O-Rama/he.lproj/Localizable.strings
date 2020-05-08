@@ -129,9 +129,42 @@
 //"ITEM_g_"   = "אין";
 //"ITEM_g_g"  = "ספרות מינימליות";
 
-"HEADER_-" = "מפריד מקף בתאריך";
-"ITEM_-_"   = "אין";
-"ITEM_-_-"  = "יש";
+//"HEADER_-" = "מפריד מקף בתאריך";
+//"ITEM_-_"   = "אין";
+//"ITEM_-_-"  = "יש";
+
+"HEADER_a" = "Period";
+"ITEM_a_"      = "אין";
+"ITEM_a_a"     = "AM, PM ראשי תיבות";
+"ITEM_a_aaaa"  = "AM, PM רחב";
+"ITEM_a_aaaaa" = "AM, PM צר";
+"ITEM_a_b"     = "am, pm, noon, midnight ראשי תיבות";
+"ITEM_a_bbbb"  = "am, pm, noon, midnight רחב";
+"ITEM_a_bbbbb" = "am, pm, noon, midnight צר";
+"ITEM_a_B"     = "flexible day periods ראשי תיבות";
+"ITEM_a_BBBB"  = "flexible day periods רחב";
+"ITEM_a_BBBBB" = "flexible day periods צר";
+
+"HEADER_H" = "שעה";
+"ITEM_H_"   = "אין";
+"ITEM_H_h"  = "שעה [1-12], ספרות מינימליות";
+"ITEM_H_hh" = "שעה [1-12], 2 ספרות";
+"ITEM_H_H"  = "שעה [0-23], ספרות מינימליות";
+"ITEM_H_HH" = "שעה [0-23], 2 ספרות";
+"ITEM_H_K"  = "שעה [0-11], ספרות מינימליות";
+"ITEM_H_KK" = "שעה [0-11], 2 ספרות";
+"ITEM_H_k"  = "שעה [1-24], ספרות מינימליות";
+"ITEM_H_kk" = "שעה [1-24], 2 ספרות";
+
+"HEADER_m" = "דקה";
+"ITEM_m_m"  = "ספרות מינימליות";
+"ITEM_m_mm" = "2 ספרות";
+
+"HEADER_s" = "שניה";
+"ITEM_s_"   = "אין";
+"ITEM_s_s"  = "ספרות מינימליות";
+"ITEM_s_ss" = "2 ספרות";
+
 
 "HEADER_Row" = "שורה";
 
@@ -140,6 +173,7 @@
 "HEADER_Locale"   = "שפה ואזור";
 
 "HEADER_Date_format" = "מבנה תאריך";
+"HEADER_Time_format" = "מבנה זמן";
 "ITEM_None"          = "אין";
 "ITEM_Full"          = "מלא";
 "ITEM_Long"          = "ארוך";

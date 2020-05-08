@@ -26,6 +26,10 @@ class ASAISO8601Calendar:  ASACalendar {
         return "yyyy-MM-dd"
     } // func defaultDateGeekCode(majorDateFormat:  ASAMajorFormat) -> String
     
+    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+        return "HH:mm:ss"
+    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
+    
     func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
         // TODO:  Update when times are supported!
         
@@ -128,7 +132,7 @@ class ASAISO8601Calendar:  ASACalendar {
     
     var supportsEventDetails: Bool = false
     
-    var supportsTimes: Bool = false
+    var supportsTimes: Bool = true
     
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
         .full,
@@ -142,4 +146,6 @@ class ASAISO8601Calendar:  ASACalendar {
     var supportsTimeFormats: Bool = true
     
     var canSplitTimeFromDate:  Bool = true
+    
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
 } // class ASAISO8601Calendar

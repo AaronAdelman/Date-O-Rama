@@ -93,7 +93,7 @@ struct ASADateFormatComponentCell: View {
     @ObservedObject var row: ASARow
     
     func selectedItem(row:  ASARow, headerCode:  String) -> String {
-        let components = row.dateGeekFormat.components(calendarCode: row.calendar.calendarCode)
+        let components = row.dateGeekFormat.dateComponents(calendarCode: row.calendar.calendarCode)
         let selection = components[headerCode]
         return selection ?? ""
     }
@@ -109,7 +109,7 @@ struct ASADateFormatComponentCell: View {
         }
         .onTapGesture {
             debugPrint("\(#file) \(#function) Geek format before = \(self.row.dateGeekFormat)")
-            var components = self.row.dateGeekFormat.components(calendarCode: self.row.calendar.calendarCode)
+            var components = self.row.dateGeekFormat.dateComponents(calendarCode: self.row.calendar.calendarCode)
             components[self.headerCode] = self.item
             self.row.dateGeekFormat = String.geekFormat(components: components)
             debugPrint("\(#file) \(#function) Geek format after = \(self.row.dateGeekFormat)")

@@ -39,12 +39,21 @@ extension String {
         case "e":
             return "E"
             
+        case "h", "H", "k", "K":
+            return "H"
+            
+        case "z", "Z", "O", "V", "v", "X", "x":
+            return "z"
+            
+        case "a", "b", "B":
+            return "a"
+            
         default:
             return "\(firstCharacter!)"
         } // switch firstCharacter
     } // func relevantSection() -> String?
     
-    func components(calendarCode:  ASACalendarCode) -> Dictionary<String, String> {
+    func dateComponents(calendarCode:  ASACalendarCode) -> Dictionary<String, String> {
         if self != "" {
             var temp:  Dictionary<String, String> = [:]
             let codes = self.chop()
@@ -57,56 +66,61 @@ extension String {
             debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
             return temp
         } else {
-            if calendarCode == ASACalendarCode.ISO8601 {
-                let temp = [
-                    "E": "",
-                    "y": "yyyyy",
-                    "M": "MM",
-                    "d": "dd",
-                    "G": "",
-                    "Y": "",
-                    "U": "",
-                    "r": "",
-                    "Q": "",
-                    "w": "",
-                    "W": "",
-                    "D": "",
-                    "F": "",
-//                    "g": "",
-                    "-": "-"
-                ]
-                debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
-                return temp
-            } else {
-                let temp = [
-                    "E": "eee",
-                    "y": "y",
-                    "M": "MMM",
-                    "d": "d",
-                    "G": "",
-                    "Y": "",
-                    "U": "",
-                    "r": "",
-                    "Q": "",
-                    "w": "",
-                    "W": "",
-                    "D": "",
-                    "F": "",
-//                    "g": "",
-                    "-": ""
-                ]
-                debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
-                return temp
-            }
+            
+            let temp = [
+                "E": "eee",
+                "y": "y",
+                "M": "MMM",
+                "d": "d",
+                "G": "",
+                "Y": "",
+                "U": "",
+                "r": "",
+                "Q": "",
+                "w": "",
+                "W": "",
+                "D": "",
+                "F": "",
+                //                    "g": "",
+//                "-": ""
+            ]
+            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+            return temp
         }
-    } // func components(calendarCode:  ASACalendarCode) -> Dictionary<String, String>
+        
+    } // func dateComponents(calendarCode:  ASACalendarCode) -> Dictionary<String, String>
+
+    func timeComponents(calendarCode:  ASACalendarCode) -> Dictionary<String, String> {
+        if self != "" {
+            var temp:  Dictionary<String, String> = [:]
+            let codes = self.chop()
+            for code in codes {
+                let relevantSection = code.relevantSection()
+                if relevantSection != nil {
+                    temp[relevantSection!] = code
+                }
+            } // for code in codes
+            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+            return temp
+        } else {
+            
+            let temp = [
+                "a": "",
+                "H": "HH",
+                "m": "mm",
+                "s": "ss"
+            ]
+            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+            return temp
+        }
+    }
     
     static func geekFormat(components:  Dictionary<String, String>) -> String {
         var temp:  String = ""
         for componentKey in components.keys {
             let component = components[componentKey] ?? ""
             temp += component
-        } // for componentKey in c.keys
+        } // for componentKey in ccomponents.keys
         debugPrint("\(#file) \(#function) Components = \(components), geek format = \(temp)")
         return temp
     } // static func geekFormat(components:  Dictionary<String, String>) -> String

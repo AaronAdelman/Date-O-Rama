@@ -41,7 +41,17 @@ class ASAAppleCalendar:  ASACalendar {
             self.dateFormatter.timeZone = timeZone
         }
         
+        if majorTimeFormat == .localizedLDML || majorDateFormat == .localizedLDML {
+            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat + timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+            return self.dateFormatter.string(from: now)
+        }
+        
         switch majorTimeFormat {
+        case .localizedLDML:
+            let timeFormat = DateFormatter.dateFormat(fromTemplate:timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+            self.dateFormatter.setLocalizedDateFormatFromTemplate(timeFormat)
+            
         case .none:
             self.dateFormatter.timeStyle = .none
             
@@ -106,6 +116,10 @@ class ASAAppleCalendar:  ASACalendar {
     func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
         return "eee, d MMM y"
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
+    
+    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+        return "HH:mm:ss"
+    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     
     var LDMLDetails: Array<ASALDMLDetail> {
         get {
@@ -175,9 +189,11 @@ class ASAAppleCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short, .localizedLDML]
     
     var supportsTimeFormats: Bool = true
     
     var canSplitTimeFromDate:  Bool = true
+    
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
 } // class ASAAppleCalendar

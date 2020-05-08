@@ -13,6 +13,8 @@ let LOCALE_KEY:  String               = "locale"
 let CALENDAR_KEY:  String             = "calendar"
 let MAJOR_DATE_FORMAT_KEY:  String    = "majorDateFormat"
 let DATE_GEEK_FORMAT_KEY:  String     = "geekFormat"
+let MAJOR_TIME_FORMAT_KEY:  String    = "majorTimeFormat"
+let TIME_GEEK_FORMAT_KEY:  String     = "timeGeekFormat"
 let TIME_ZONE_KEY:  String            = "timeZone"
 let USES_DEVICE_LOCATION_KEY:  String = "usesDeviceLocation"
 let LATITUDE_KEY:  String             = "latitude"
@@ -62,6 +64,15 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
     
+    @Published var majorTimeFormat:  ASAMajorTimeFormat = .medium {
+        didSet {
+            if timeGeekFormat.isEmpty {
+                self.timeGeekFormat = self.calendar.defaultTimeGeekCode(majorTimeFormat: self.majorTimeFormat)
+            }
+        } // didset
+    } // var majorDateFormat
+    @Published var timeGeekFormat:  String = "HHmmss"
+    
     var timeZone:  TimeZone? {
         get {
             return self.locationData.timeZone
@@ -82,7 +93,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var effectiveTimeZone
     
     @Published var usesDeviceLocation:  Bool = true 
-    @Published var locationData:  ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone: TimeZone.autoupdatingCurrent)
+    @Published var locationData:  ASALocationData = ASALocationManager.shared().locationData
     
     var location:  CLLocation? {
         get {
@@ -310,7 +321,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     //MARK: -
         
     public func dateTimeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .medium, timeGeekFormat: "HH:mm:ss", location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date) -> String
     
     public func dateString(now:  Date) -> String {
@@ -318,7 +329,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // func dateTimeString(now:  Date) -> String
 
     public func timeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: .medium, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
     } // func timeString(now:  Date
 
     public func dateTimeString(now:  Date, LDMLString:  String) -> String {

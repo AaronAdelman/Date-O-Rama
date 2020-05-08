@@ -89,6 +89,10 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return "eee, d MMM y"
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
+    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+        return "HH:mm:ss"
+    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
+    
     func hours(now:  Date, startDate:  Date, endDate:  Date) -> Double {
         let seconds = now.timeIntervalSince(startDate)
         let hourLength = endDate.timeIntervalSince(startDate) / 12.0
@@ -416,9 +420,11 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.medium]
     
     var supportsTimeFormats: Bool = true
     
     var canSplitTimeFromDate:  Bool = true
+    
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
 } // class ASASunsetTransitionCalendar

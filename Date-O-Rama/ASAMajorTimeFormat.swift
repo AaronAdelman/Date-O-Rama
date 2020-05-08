@@ -20,3 +20,24 @@ enum ASAMajorTimeFormat:  String {
     case decimal           = "decimal" // 10:100:100
     case hexadecimal       = "hexadecimal" // 16:256:16
 } // enum ASAMajorTimeFormat
+
+extension ASAMajorTimeFormat {
+    func localizedItemName() -> String {
+        var unlocalizedString = ""
+        switch self {
+        case .short:
+            unlocalizedString = "ITEM_Short"
+        case .medium:
+            unlocalizedString = "ITEM_Medium"
+        case .long:
+            unlocalizedString = "ITEM_Long"
+        case .full:
+            unlocalizedString = "ITEM_Full"
+        case .localizedLDML:
+            unlocalizedString = "ITEM_Components"
+        default:
+            unlocalizedString = self.rawValue
+        } // switch self
+        return NSLocalizedString(unlocalizedString, comment: "")
+    } // func localizedItemName() -> String
+} // extension ASAMajorTimeFormat

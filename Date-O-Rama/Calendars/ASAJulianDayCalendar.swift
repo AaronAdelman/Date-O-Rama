@@ -59,6 +59,11 @@ class ASAJulianDayCalendar:  ASACalendar {
         return ""
     } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
     
+    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+        return "HH:mm:ss"
+    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
+
+    
     private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat) -> String {
         if self.supportsTimes && majorTimeFormat != .none {
             let JulianDay = now.JulianDate() - self.offsetFromJulianDay
@@ -136,4 +141,6 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsTimeFormats: Bool = false
     
     var canSplitTimeFromDate:  Bool = false
+    
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
 } // class ASAJulianDayCalendar

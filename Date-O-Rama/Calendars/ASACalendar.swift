@@ -31,6 +31,7 @@ protocol ASACalendar {
     var canSplitTimeFromDate:  Bool { get }
     var color:  UIColor { get }
     var defaultMajorDateFormat:  ASAMajorDateFormat { get }
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat { get }
     var LDMLDetails: Array<ASALDMLDetail> { get }
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> { get }
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> { get }
@@ -43,6 +44,7 @@ protocol ASACalendar {
     var supportsTimeZones: Bool { get }
     
     func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
+    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat, dateGeekFormat:  String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent>

@@ -46,6 +46,7 @@
 		A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */; };
 		A5E4719C24627C89002BB471 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719B24627C89002BB471 /* UIColorExtensions.swift */; };
 		A5E4719E2463F938002BB471 /* ASAMajorTimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASAMajorTimeFormat.swift */; };
+		A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMajorDateFormat.swift; sourceTree = "<group>"; };
 		A5E4719B24627C89002BB471 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		A5E4719D2463F938002BB471 /* ASAMajorTimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMajorTimeFormat.swift; sourceTree = "<group>"; };
+		A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormatChooserView.swift; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -264,6 +266,7 @@
 				A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */,
 				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
 				A517658B2460721A0039AFAF /* MapView.swift */,
+				A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */,
 				A5E4719C24627C89002BB471 /* UIColorExtensions.swift in Sources */,
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
+				A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */,
 				A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */,
 				A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,

@@ -129,9 +129,41 @@
 //"ITEM_g_"   = "None";
 //"ITEM_g_g"  = "Minimum digits";
 
-"HEADER_-" = "Dash separator in date";
-"ITEM_-_"   = "None";
-"ITEM_-_-"  = "Present";
+//"HEADER_-" = "Dash separator in date";
+//"ITEM_-_"   = "None";
+//"ITEM_-_-"  = "Present";
+
+"HEADER_a" = "Period";
+"ITEM_a_"      = "None";
+"ITEM_a_a"     = "AM, PM Abbreviated";
+"ITEM_a_aaaa"  = "AM, PM Wide";
+"ITEM_a_aaaaa" = "AM, PM Narrow";
+"ITEM_a_b"     = "am, pm, noon, midnight Abbreviated";
+"ITEM_a_bbbb"  = "am, pm, noon, midnight Wide";
+"ITEM_a_bbbbb" = "am, pm, noon, midnight Narrow";
+"ITEM_a_B"     = "flexible day periods Abbreviated";
+"ITEM_a_BBBB"  = "flexible day periods Wide";
+"ITEM_a_BBBBB" = "flexible day periods Narrow";
+
+"HEADER_H" = "Hour";
+"ITEM_H_"   = "None";
+"ITEM_H_h"  = "Hour [1-12], minimum digits";
+"ITEM_H_hh" = "Hour [1-12], 2 digits";
+"ITEM_H_H"  = "Hour [0-23], minimum digits";
+"ITEM_H_HH" = "Hour [0-23], 2 digits";
+"ITEM_H_K"  = "Hour [0-11], minimum digits";
+"ITEM_H_KK" = "Hour [0-11], 2 digits";
+"ITEM_H_k"  = "Hour [1-24], minimum digits";
+"ITEM_H_kk" = "Hour [1-24], 2 digits";
+
+"HEADER_m" = "Minute";
+"ITEM_m_m"  = "Minimum digits";
+"ITEM_m_mm" = "2 digits";
+
+"HEADER_s" = "Second";
+"ITEM_s_"   = "None";
+"ITEM_s_s"  = "Minimum digits";
+"ITEM_s_ss" = "2 digits";
 
 "HEADER_Row" = "Row";
 
@@ -140,6 +172,7 @@
 "HEADER_Locale"   = "Locale";
 
 "HEADER_Date_format" = "Date format";
+"HEADER_Time_format" = "Time format";
 "ITEM_None"                = "None";
 "ITEM_Full"                = "Full";
 "ITEM_Long"                = "Long";
