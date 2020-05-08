@@ -167,6 +167,9 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         case .traditionalJewish:
             result = self.traditionalJewishTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
             
+        case .short, .medium, .long, .full:
+            result = self.sexagesimalTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+            
         default:
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
         }
@@ -183,28 +186,36 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
     
     func traditionalJewishTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
+        return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  1080.0, secondsPerMinutes:  76.0, minimumHourDigits:  1, minimumMinuteDigits:  4, minimumSecondDigits:  2)
+    } // func traditionalJewishTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
+    
+    func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
+        return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  60.0, secondsPerMinutes:  60.0, minimumHourDigits:  1, minimumMinuteDigits:  2, minimumSecondDigits:  2)
+    } // func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
+    
+    func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String {
         let integralHours = floor(hours)
         let fractionalHours = hours - integralHours
-        let MINUTES_PER_HOUR = 1080.0
-        let totalMinutes = fractionalHours * MINUTES_PER_HOUR
+        let totalMinutes = fractionalHours * minutesPerHour
         let integralMinutes = floor(totalMinutes)
         let fractionalMinutes = totalMinutes - integralMinutes
-        let SECONDS_PER_MINUTES = 76.0
-        let totalSeconds = fractionalMinutes * SECONDS_PER_MINUTES
+        let totalSeconds = fractionalMinutes * secondsPerMinutes
         let integralSeconds = floor(totalSeconds)
         
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.maximumFractionDigits = 0
         numberFormatter.locale = Locale(identifier:  localeIdentifier)
+        numberFormatter.minimumIntegerDigits = minimumHourDigits
         let hourString = numberFormatter.string(from: NSNumber(value:  integralHours))
-        numberFormatter.minimumIntegerDigits = 4
+        numberFormatter.minimumIntegerDigits = minimumMinuteDigits
         let minuteString = numberFormatter.string(from: NSNumber(value:  integralMinutes))
-        numberFormatter.minimumIntegerDigits = 2
+        numberFormatter.minimumIntegerDigits = minimumSecondDigits
         let secondString = numberFormatter.string(from: NSNumber(value:  integralSeconds))
         result = "\(hourString ?? ""):\(minuteString ?? ""):\(secondString ?? "") \(symbol)"
         return result
     } // func traditionalJewishTimeString(hours:  Double, symbol:  String) -> String
+
     
     func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         if location == nil {
@@ -453,7 +464,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.decimalTwelveHour, .traditionalJewish]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.decimalTwelveHour, .traditionalJewish, .short, .medium, .long, .full]
     
     var supportsTimeFormats: Bool = true
     
