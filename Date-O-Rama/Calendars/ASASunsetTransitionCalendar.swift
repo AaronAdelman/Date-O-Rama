@@ -132,7 +132,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             hours = self.hours(now:  now, startDate:  dayHalfStart, endDate:  dayHalfEnd)
             symbol = "☼"
         } else if now < dayHalfStart {
-            let previousDate = now.addingTimeInterval(-24 * 60 * 60)
+            let previousDate = now.oneDayBefore
             let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
             var previousDayHalfEnd:  Date
@@ -148,7 +148,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             symbol = NIGHT_SYMBOL
         } else {
             // now >= dayHalfEnd
-            let nextDate = now.addingTimeInterval(24 * 60 * 60)
+            let nextDate = now.oneDayAfter
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
             var nextDayHalfStart:  Date
@@ -259,7 +259,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     func HebrewEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
-        let previousDate = date.addingTimeInterval(-24 * 60 * 60)
+        let previousDate = date.oneDayBefore
         let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk], timeZone:  timeZone )
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
         let previousDusk      = previousEvents[.dusk]!! // צאת הכוכבים
@@ -348,7 +348,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         
-        let previousDate = date.addingTimeInterval(-24 * 60 * 60)
+        let previousDate = date.oneDayBefore
         let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk], timeZone: timeZone )
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
         

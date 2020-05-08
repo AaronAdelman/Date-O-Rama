@@ -114,7 +114,7 @@ extension Date {
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
                 if tempResult! < noon {
                     // Something went wrong, and we got a result for the previous day
-                    tempResult = tempResult!.addingTimeInterval(24 * 60 * 60)
+                    tempResult = tempResult!.oneDayAfter
                 }
             }
             result[event] = tempResult

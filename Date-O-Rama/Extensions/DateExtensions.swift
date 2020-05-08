@@ -70,3 +70,17 @@ extension Date {
         return result
     } // func sixPM()
 } // extension Date
+
+extension Date {
+    var oneDayBefore:  Date {
+        get {
+            return self.addingTimeInterval(-24 * 60 * 60)
+        } // get
+    } // var oneDayBefore
+    
+    var oneDayAfter:  Date {
+        get {
+            return self.addingTimeInterval(24 * 60 * 60)
+        } // get
+    } // var oneDayAfter
+} // extension Date
