@@ -84,3 +84,12 @@ extension Date {
         } // get
     } // var oneDayAfter
 } // extension Date
+
+extension Date {
+    func fractionalHours(startDate:  Date, endDate:  Date, numberOfHours:  Double) -> Double {
+        let seconds = self.timeIntervalSince(startDate)
+        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHours
+        let hours = seconds / hourLength
+        return hours
+    } // func fractionalHours(startDate:  Date, endDate:  Date) -> Double
+}

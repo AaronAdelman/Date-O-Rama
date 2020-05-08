@@ -92,14 +92,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
     func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
         return "HH:mm:ss"
     } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
-    
-    func hours(now:  Date, startDate:  Date, endDate:  Date) -> Double {
-        let seconds = now.timeIntervalSince(startDate)
-        let hourLength = endDate.timeIntervalSince(startDate) / 12.0
-        let hours = seconds / hourLength
-        return hours
-    } // func hours(startDate:  Date, endDate:  Date) -> Double
-    
+        
     func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         let latitude  = location!.coordinate.latitude
         let longitude = location!.coordinate.longitude
@@ -127,9 +120,10 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         var hours:  Double
         var symbol:  String
         let NIGHT_SYMBOL = "☽"
+        let NUMBER_OF_HOURS = 12.0
         
         if dayHalfStart <= now && now < dayHalfEnd {
-            hours = self.hours(now:  now, startDate:  dayHalfStart, endDate:  dayHalfEnd)
+            hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  dayHalfEnd, numberOfHours:  NUMBER_OF_HOURS)
             symbol = "☼"
         } else if now < dayHalfStart {
             let previousDate = now.oneDayBefore
@@ -144,7 +138,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
             default:
                 previousDayHalfEnd = previousSunset
             } // switch self.calendarCode
-            hours = self.hours(now:  now, startDate:  previousDayHalfEnd, endDate:  dayHalfStart)
+            hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHours:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
         } else {
             // now >= dayHalfEnd
@@ -161,7 +155,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
                 nextDayHalfStart = nextSunrise
             } // switch self.calendarCode
 
-            hours = self.hours(now:  now, startDate:  dayHalfEnd, endDate:  nextDayHalfStart)
+            hours = now.fractionalHours(startDate:  dayHalfEnd, endDate:  nextDayHalfStart, numberOfHours:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
         }
         
