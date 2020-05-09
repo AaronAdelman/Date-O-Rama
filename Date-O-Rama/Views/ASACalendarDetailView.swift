@@ -69,6 +69,7 @@ struct ASACalendarDetailView: View {
             }
             
             if selectedRow.calendar.supportsEventDetails {
+                ScrollView {
                 Section(header:  Text("HEADER_EVENTS")) {
                     ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.uuid) {
                         event
@@ -77,6 +78,7 @@ struct ASACalendarDetailView: View {
                     }
                 } // Section
                     .listRowBackground(Color(selectedRow.calendar.color.lighter(by: 97.5)))
+                }.background(Color(selectedRow.calendar.color.lighter(by: 97.5)))
             }
             
             Section(header:  Text("HEADER_Other")) {
