@@ -27,8 +27,10 @@ struct ASACalendarLocationCell:  View {
                 if usesDeviceLocation {
                     HStack {
                         Spacer()
-                        Image(systemName: "location.fill")
-                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
+//                        Image(systemName: "location.fill")
+//                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
+                        Text(verbatim: "📍\(NSLocalizedString("DEVICE_LOCATION", comment: ""))").multilineTextAlignment(.trailing)
+
                     }
                 }
                 HStack {
