@@ -195,5 +195,5 @@ class ASAAppleCalendar:  ASACalendar {
     
     var canSplitTimeFromDate:  Bool = true
     
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
 } // class ASAAppleCalendar

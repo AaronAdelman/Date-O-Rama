@@ -102,30 +102,41 @@ struct ASAMainRowsViewCell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            if row.calendar.canSplitTimeFromDate {
-                Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                Text(verbatim:  row.timeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-            } else {
-                Text(verbatim:  row.dateTimeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-            }
             HStack {
-                Spacer().frame(width: self.INSET)
                 Text(verbatim: "🗓")
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
             }.frame(height: ROW_HEIGHT)
             
             HStack {
-                if row.usesDeviceLocation {
-                    Image(systemName: "location.fill")
+                Spacer().frame(width: self.INSET)
+                VStack(alignment: .leading) {
+                    if row.calendar.canSplitTimeFromDate {
+                        Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                        Text(verbatim:  row.timeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                    } else {
+                        Text(verbatim:  row.dateTimeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                    }
                 }
+            }
+//            HStack {
+//                Spacer().frame(width: self.INSET)
+//                Text(verbatim: "🗓")
+//                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+//            }.frame(height: ROW_HEIGHT)
+            
+            HStack {
+                //                if row.usesDeviceLocation {
+                //                    Image(systemName: "location.fill")
+                //                }
                 VStack(alignment: .leading) {
                     if row.calendar.supportsTimeZones || row.calendar.supportsLocations {
-                        HStack {
-                            Spacer().frame(width: self.INSET)
-                            Text(row.effectiveTimeZone.emoji(date:  self.now))
-                            Text(verbatim: "\(row.effectiveTimeZone.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-                        }.frame(height: ROW_HEIGHT)
+                        //                        HStack {
+                        //                            Spacer().frame(width: self.INSET)
+                        //                            Text(row.effectiveTimeZone.emoji(date:  self.now))
+                        //                            Text(verbatim: "\(row.effectiveTimeZone.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                         ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
+                        //                        }.frame(height: ROW_HEIGHT)
+                        //                        ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
                     }
                 }
             }
@@ -142,7 +153,12 @@ struct ASAMainRowsLocationSubcell:  View {
     var body: some View {
         HStack {
             Spacer().frame(width: self.INSET)
-            Text((row.ISOCountryCode ?? "").flag())
+//            if row.usesDeviceLocation {
+//                Image(systemName: "location.fill")
+//            }
+//            Text((row.ISOCountryCode ?? "").flag())
+            Text("\((row.ISOCountryCode ?? "").flag())\(row.effectiveTimeZone.emoji(date:  self.now))\(row.usesDeviceLocation ? "📍" : "")")
+
             if row.placeName == nil && row.locality == nil && row.country == nil {
                 if row.location != nil {
                     Text(verbatim:  row.location!.humanInterfaceRepresentation()).font(.subheadline)

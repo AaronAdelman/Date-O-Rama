@@ -64,7 +64,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var majorDateFormat
     @Published var dateGeekFormat:  String = "eMMMdy"
     
-    @Published var majorTimeFormat:  ASAMajorTimeFormat = .medium {
+    @Published var majorTimeFormat:  ASAMajorTimeFormat = .full {
         didSet {
             if timeGeekFormat.isEmpty {
                 self.timeGeekFormat = self.calendar.defaultTimeGeekCode(majorTimeFormat: self.majorTimeFormat)
