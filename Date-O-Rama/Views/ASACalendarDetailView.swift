@@ -69,16 +69,19 @@ struct ASACalendarDetailView: View {
             }
             
             if selectedRow.calendar.supportsEventDetails {
-                ScrollView {
                 Section(header:  Text("HEADER_EVENTS")) {
-                    ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.uuid) {
-                        event
-                        in
-                        ASAEventCell(event:  event)
-                    }
+                    ScrollView {
+                        ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.uuid) {
+                            event
+                            in
+                            VStack {
+                                ASAEventCell(event:  event)
+                                Spacer().frame(height:  8.0)
+                            }
+                        }
+                    }.background(Color(selectedRow.calendar.color.lighter(by: 97.5)))
                 } // Section
                     .listRowBackground(Color(selectedRow.calendar.color.lighter(by: 97.5)))
-                }.background(Color(selectedRow.calendar.color.lighter(by: 97.5)))
             }
             
             Section(header:  Text("HEADER_Other")) {
