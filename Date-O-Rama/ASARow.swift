@@ -328,38 +328,39 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         tempRow.timeZone = TimeZone(identifier: self.effectiveTimeZone.identifier)!
         return tempRow
     } // func copy() -> ASARow
-    
-    
-    //MARK: -
-        
-    public func dateTimeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
-    } // func dateTimeString(now:  Date) -> String
-    
+} // class ASARow: NSObject
+
+
+extension ASARow {
     public func dateString(now:  Date) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date) -> String
+
+    public func dateTimeString(now:  Date) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+    } // func dateTimeString(now:  Date) -> String
+
+    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
+    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
+
+    func eventDetails(date:  Date) -> Array<ASAEvent> {
+        return self.calendar.eventDetails(date: date, location: self.locationData.location, timeZone: self.effectiveTimeZone)
+    } // func eventDetails(date:  Date) -> Array<ASAEvent>
+
+    public func LDMLDetails() -> Array<ASALDMLDetail> {
+        return self.calendar.LDMLDetails
+    } // public func LDMLDetails() -> Array<ASADetail>
+    
+    func startOfNextDay(now:  Date) -> Date {
+        return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.effectiveTimeZone)
+    } // func startOfNextDay(now:  Date) -> Date
 
     public func timeString(now:  Date) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
     } // func timeString(now:  Date
 
-    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
-    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
-    
-    func startOfNextDay(now:  Date) -> Date {
-        return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.effectiveTimeZone)
-    } // func startOfNextDay(now:  Date) -> Date
-    
-    
-    // MARK: -
-    
-    public func details() -> Array<ASALDMLDetail> {
-        return self.calendar.LDMLDetails
-    } // public func details() -> Array<ASADetail>
-    
     public func supportsLocales() -> Bool {
         return self.calendar.supportsLocales
     } // func supportsLocales() -> Bool
-} // class ASARow: NSObject
+} // extension ASARow

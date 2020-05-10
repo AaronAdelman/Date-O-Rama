@@ -60,7 +60,7 @@ struct ASACalendarDetailView: View {
             
             if selectedRow.calendar.LDMLDetails.count > 0 {
                 Section(header:  Text("HEADER_Date")) {
-                    ForEach(selectedRow.details(), id: \.name) {
+                    ForEach(selectedRow.LDMLDetails(), id: \.name) {
                         detail
                         in
                         ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
@@ -71,8 +71,8 @@ struct ASACalendarDetailView: View {
             if selectedRow.calendar.supportsEventDetails {
                 Section(header:  Text("HEADER_EVENTS")) {
                     ScrollView {
-                        ForEach(selectedRow.calendar.eventDetails(date: now, location: self.selectedRow.location, timeZone: selectedRow.effectiveTimeZone), id: \.uuid) {
-                            event
+                            ForEach(selectedRow.eventDetails(date: now), id: \.uuid) {
+event
                             in
                             VStack {
                                 ASAEventCell(event:  event)
