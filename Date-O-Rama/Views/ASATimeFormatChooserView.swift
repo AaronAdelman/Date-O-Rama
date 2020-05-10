@@ -20,7 +20,8 @@ struct ASATimeFormatChooserView: View {
         ASAComponentsPickerSection(headerCode: "m", items: [
 //            "",
             "m", "mm"]),
-        ASAComponentsPickerSection(headerCode: "s", items: ["", "s", "ss"])
+        ASAComponentsPickerSection(headerCode: "s", items: ["", "s", "ss"]),
+        ASAComponentsPickerSection(headerCode: "z", items: ["", "z", "zzzz", "O", "OOOO", "v", "vvvv", "V", "VV", "VVV", "VVVV", "X", "XX", "XXX", "XXXX", "XXXXX", "x", "xx", "xxx", "xxxx", "xxxxx"])
     ]
     
     fileprivate func ComponentsForEach() -> ForEach<[ASAComponentsPickerSection], String, Section<Text, ForEach<[String], String, ASATimeFormatComponentCell>, EmptyView>> {

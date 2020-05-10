@@ -165,6 +165,29 @@
 "ITEM_s_s"  = "Minimum digits";
 "ITEM_s_ss" = "2 digits";
 
+"HEADER_z" = "Time zone";
+"ITEM_z_"        = "None";
+"ITEM_z_z"       = "Short specific non-location";
+"ITEM_z_zzzz"      = "Long specific non-location";
+"ITEM_z_O"       = "Short localized GMT";
+"ITEM_z_OOOO"    = "Long localized GMT ";
+"ITEM_z_v"       = "Short generic";
+"ITEM_z_vvvv"    = "Long generic";
+"ITEM_z_V"       = "Short time zone ID";
+"ITEM_z_VV"      = "Long time zone ID";
+"ITEM_z_VVV"     = "Exemplar city";
+"ITEM_z_VVVV"    = "Generic location";
+"ITEM_z_X"       = "ISO 8601 basic, hours and optional minutes, Z";
+"ITEM_z_XX"      = "ISO 8601 basic, hours and minutes, Z";
+"ITEM_z_XXX"     = "ISO 8601 extended, hours and minutes, Z";
+"ITEM_z_XXXX"    = "ISO 8601 basic, hours, minutes and optional seconds, Z";
+"ITEM_z_XXXXX"   = "ISO 8601 extended, hours, minutes and optional seconds, Z";
+"ITEM_z_x"       = "ISO 8601 basic, hours field and optional minutes";
+"ITEM_z_xx"      = "ISO 8601 basic, hours and minutes";
+"ITEM_z_xxx"     = "ISO 8601 extended, hours and minutes";
+"ITEM_z_xxxx"    = "ISO 8601 basic, hours, minutes and optional seconds";
+"ITEM_z_xxxxx"   = "ISO 8601 extended, hours, minutes and optional seconds";
+
 "HEADER_Row" = "Row";
 
 "HEADER_Calendar" = "Calendar";
