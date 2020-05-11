@@ -262,3 +262,6 @@
 
 "Use device location" = "Use device location";
 "Requested address"   = "Requested address";
+
+"CLOCKS_TAB" = "Clocks";
+"EVENTS_TAB" = "Events";

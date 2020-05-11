@@ -262,3 +262,6 @@
 
 "Use device location" = "השתמש במיקום המכשיר";
 "Requested address"   = "כתובת מבוקשת";
+
+"CLOCKS_TAB" = "שעונים";
+"EVENTS_TAB" = "אירועים";
