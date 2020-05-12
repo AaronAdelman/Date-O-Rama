@@ -37,7 +37,7 @@ struct ASAEventCell: View {
     
     var textColor:  UIColor {
         get {
-            return event.calendar.color.darker(by: 50.0)
+            return UIColor.black
         }
     }
     
@@ -57,6 +57,6 @@ struct ASAEventCell: View {
 
 struct ASAEventCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventCell(event: ASAEvent(title: "Foo", startDate: Date(), calendar: ASACalendarFactory.calendar(code: .HebrewGRA)!))
+        ASAEventCell(event: ASAEvent(title: "Foo", startDate: Date(), endDate: Date(), isAllDay: false, color: Color(UIColor.systemYellow)))
     }
 }

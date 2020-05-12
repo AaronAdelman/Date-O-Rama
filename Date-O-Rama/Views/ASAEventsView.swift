@@ -12,7 +12,7 @@ import EventKit
 struct ASAEventsView: View {
     var eventManager = ASAEventManager.shared()
     @State var date = Date()
-    @State var events:  Array<EKEvent> = []
+    @State var events:  Array<ASAEventCompatible> = []
     var timeFormatter:  DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .none
@@ -38,7 +38,7 @@ struct ASAEventsView: View {
                                 Text(self.timeFormatter.string(from: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
                             }
                         }
-                        Rectangle().frame(width:  2.0).foregroundColor(Color(UIColor(cgColor: event.calendar.cgColor)))
+                        Rectangle().frame(width:  2.0).foregroundColor(event.color)
                         Text(event.title)
                     }
                 }
@@ -48,7 +48,9 @@ struct ASAEventsView: View {
                 debugPrint(#file, #function, status)
                 
                 self.eventManager.requestAccessToCalendar()
-                self.events = self.eventManager.eventsFor(startDate: self.date.previousMidnight(timeZone: TimeZone.autoupdatingCurrent), endDate: self.date.nextMidnight(timeZone: TimeZone.autoupdatingCurrent))
+                let externalEvents = self.eventManager.eventsFor(startDate: self.date.previousMidnight(timeZone: TimeZone.autoupdatingCurrent), endDate: self.date.nextMidnight(timeZone: TimeZone.autoupdatingCurrent))
+                
+                self.events = externalEvents + ASASunsetTransitionCalendar.HebrewEventDetails(date: self.date, location: ASALocationManager.shared().locationData.location ?? CLLocation.NullIsland, timeZone: ASALocationManager.shared().locationData.timeZone ?? TimeZone.autoupdatingCurrent)
                 debugPrint(#file, #function, self.events.count)
             }
         }

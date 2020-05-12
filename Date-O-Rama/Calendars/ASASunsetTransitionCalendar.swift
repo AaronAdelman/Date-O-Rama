@@ -9,6 +9,7 @@
 import Foundation
 import CoreLocation
 import UIKit
+import SwiftUI
 
 // MARK: - Solar event keys
 
@@ -300,7 +301,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         //            ASADetail(name: "HEADER_g", geekCode: "g")
     ]
     
-    func HebrewEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
+    class func HebrewEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         let previousDate = date.oneDayBefore
@@ -362,33 +363,33 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         //        let otherHour11  = otherDawn.addingTimeInterval(11    * otherHourLength)
         
         return [
-            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: previousDusk, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(MIDNIGHT_KEY, comment: ""), startDate: midnight, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(DAWN_KEY, comment: ""), startDate: dawn, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_DAWN_KEY, comment: ""), startDate: otherDawn, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(RECOGNITION_KEY, comment: ""), startDate: recognition, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_HOUR_03_KEY, comment: ""), startDate: otherHour03, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(HOUR_03_KEY, comment: ""), startDate: hour03, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_HOUR_04_KEY, comment: ""), startDate: otherHour04, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(HOUR_04_KEY, comment: ""), startDate: hour04, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(NOON_KEY, comment: ""), startDate: hour06, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(HOUR_06½_KEY, comment: ""), startDate: hour06½, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_HOUR_06½_KEY, comment: ""), startDate: otherHour06½, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(HOUR_09½_KEY, comment: ""), startDate: hour09½, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_HOUR_09½_KEY, comment: ""), startDate: otherHour09½, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(HOUR_10¾_KEY, comment: ""), startDate: hour10¾, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_HOUR_10¾_KEY, comment: ""), startDate: otherHour10¾, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(CANDLELIGHTING_KEY, comment: ""), startDate: candelLighting, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: dusk, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: otherDusk, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, endDate: previousSunset, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: previousDusk, endDate: previousDusk, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, endDate: previousOtherDusk, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(MIDNIGHT_KEY, comment: ""), startDate: midnight, endDate: midnight, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(DAWN_KEY, comment: ""), startDate: dawn, endDate: dawn, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_DAWN_KEY, comment: ""), startDate: otherDawn, endDate: otherDawn, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(RECOGNITION_KEY, comment: ""), startDate: recognition, endDate: recognition, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, endDate: sunrise, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_03_KEY, comment: ""), startDate: otherHour03, endDate: otherHour03, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(HOUR_03_KEY, comment: ""), startDate: hour03, endDate: hour03, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_04_KEY, comment: ""), startDate: otherHour04, endDate: otherHour04, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(HOUR_04_KEY, comment: ""), startDate: hour04, endDate: hour04, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(NOON_KEY, comment: ""), startDate: hour06, endDate: hour06, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(HOUR_06½_KEY, comment: ""), startDate: hour06½, endDate: hour06½, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_06½_KEY, comment: ""), startDate: otherHour06½, endDate: otherHour06½, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(HOUR_09½_KEY, comment: ""), startDate: hour09½, endDate: hour09½, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_09½_KEY, comment: ""), startDate: otherHour09½, endDate: otherHour09½, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(HOUR_10¾_KEY, comment: ""), startDate: hour10¾, endDate: hour10¾, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_HOUR_10¾_KEY, comment: ""), startDate: otherHour10¾, endDate: otherHour10¾, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(CANDLELIGHTING_KEY, comment: ""), startDate: candelLighting, endDate: candelLighting, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, endDate: sunset, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: dusk, endDate: dusk, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
+            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: otherDusk, endDate: otherDusk, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemBlue)),
         ]
     } // func HebrewEventDetails(date:  Date, location:  CLLocation) -> Array<ASADetail>
     
-    func IslamicEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
+    class func IslamicEventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         
@@ -402,9 +403,9 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let sunset:  Date = events[.sunset]!! // שקיעה
         
         let result = [
-            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, calendar: self, timeZone: timeZone),
-            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, calendar: self, timeZone: timeZone),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, endDate: previousSunset, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemGreen)),
+            ASAEvent(title: NSLocalizedString(SUNRISE_KEY, comment: ""), startDate: sunrise, endDate: sunrise, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemGreen)),
+            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: sunset, endDate: sunset, isAllDay: false, timeZone: timeZone, color: Color(UIColor.systemGreen)),
         ]
         
         return result
@@ -418,10 +419,10 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         
         switch self.calendarCode {
         case .HebrewGRA, .HebrewMA:
-            return self.HebrewEventDetails(date: date, location: location!, timeZone: timeZone)
+            return ASASunsetTransitionCalendar.self.HebrewEventDetails(date: date, location: location!, timeZone: timeZone)
             
         case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
-            return self.IslamicEventDetails(date: date, location: location!, timeZone: timeZone)
+            return ASASunsetTransitionCalendar.self.IslamicEventDetails(date: date, location: location!, timeZone: timeZone)
             
         default:
             return []

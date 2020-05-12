@@ -68,21 +68,21 @@ struct ASACalendarDetailView: View {
                 } // Section
             }
             
-            if selectedRow.calendar.supportsEventDetails {
-                Section(header:  Text("HEADER_EVENTS")) {
-                    ScrollView {
-                            ForEach(selectedRow.eventDetails(date: now), id: \.uuid) {
-event
-                            in
-                            VStack {
-                                ASAEventCell(event:  event)
-                                Spacer().frame(height:  8.0)
-                            }
-                        }
-                    }.background(Color(selectedRow.calendar.color.lighter(by: 97.5)))
-                } // Section
-                    .listRowBackground(Color(selectedRow.calendar.color.lighter(by: 97.5)))
-            }
+//            if selectedRow.calendar.supportsEventDetails {
+//                Section(header:  Text("HEADER_EVENTS")) {
+//                    ScrollView {
+//                            ForEach(selectedRow.eventDetails(date: now), id: \.uuid) {
+//event
+//                            in
+//                            VStack {
+//                                ASAEventCell(event:  event)
+//                                Spacer().frame(height:  8.0)
+//                            }
+//                        }
+//                    }.background(Color(selectedRow.calendar.color.lighter(by: 97.5)))
+//                } // Section
+//                    .listRowBackground(Color(selectedRow.calendar.color.lighter(by: 97.5)))
+//            }
             
             Section(header:  Text("HEADER_Other")) {
                 ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(now: now), dateStyle: .full, timeStyle: .full))

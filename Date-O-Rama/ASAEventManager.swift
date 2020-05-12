@@ -51,7 +51,7 @@ class ASAEventManager:  NSObject, ObservableObject {
         })
     } // func requestAccessToCalendar()
     
-    public func eventsFor(startDate:  Date, endDate: Date) -> Array<EKEvent> {
+    public func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible> {
         // Use an event store instance to create and properly configure an NSPredicate
         let eventsPredicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: self.calendars)
         
@@ -62,6 +62,6 @@ class ASAEventManager:  NSObject, ObservableObject {
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
         return events
-    }
+    } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
     
 } // class ASAEventManager
