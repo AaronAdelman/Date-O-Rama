@@ -17,8 +17,8 @@ struct ASALDMLDetail {
 
 struct ASAEvent {
     var uuid = UUID()
-    var title:  String
-    var startDate:  Date?
+    var title:  String!
+    var startDate:  Date!
     var calendar:  ASACalendar
     var timeZone: TimeZone?
 } // struct ASAEvent
