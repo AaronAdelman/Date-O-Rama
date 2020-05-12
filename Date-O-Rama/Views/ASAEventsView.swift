@@ -14,7 +14,7 @@ struct ASAEventsView: View {
     @State var date = Date()
     @State var events:  Array<EKEvent> = []
     var timeFormatter:  DateFormatter = {
-       let dateFormatter = DateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .none
         dateFormatter.timeStyle = .short
         dateFormatter.timeZone = TimeZone.autoupdatingCurrent
@@ -27,7 +27,7 @@ struct ASAEventsView: View {
         NavigationView {
             List {
                 ForEach(events, id: \.eventIdentifier) {
-             event
+                    event
                     in
                     HStack {
                         if event.isAllDay {
@@ -39,7 +39,7 @@ struct ASAEventsView: View {
                             }
                         }
                         Rectangle().frame(width:  2.0).foregroundColor(Color(UIColor(cgColor: event.calendar.cgColor)))
-                    Text(event.title)
+                        Text(event.title)
                     }
                 }
             }
@@ -52,8 +52,9 @@ struct ASAEventsView: View {
                 debugPrint(#file, #function, self.events.count)
             }
         }
-    }
-}
+        .navigationViewStyle(StackNavigationViewStyle())
+    } // var body
+} // struct ASAEventsView
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
