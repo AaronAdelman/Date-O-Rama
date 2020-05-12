@@ -75,7 +75,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     class func shared() -> ASALocationManager {
         return sharedLocationManager
-    }
+    } // class func shared() -> ASALocationManager
 
     override init() {
         super.init()
@@ -86,7 +86,7 @@ class ASALocationManager: NSObject, ObservableObject {
 
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
-    }
+    } // init()
     
     let notificationCenter = NotificationCenter.default
 

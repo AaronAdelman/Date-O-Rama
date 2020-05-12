@@ -22,6 +22,8 @@
 	<string>public.app-category.productivity</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your events.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Foo</string>
 	<key>UIApplicationSceneManifest</key>

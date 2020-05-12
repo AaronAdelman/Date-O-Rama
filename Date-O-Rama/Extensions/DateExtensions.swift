@@ -10,6 +10,15 @@ import Foundation
 import CoreLocation
 
 extension Date {
+        func previousMidnight(timeZone:  TimeZone) -> Date {
+            var gregorianCalendar = Calendar(identifier: .gregorian)
+            gregorianCalendar.timeZone = timeZone
+            let midnightToday = gregorianCalendar.startOfDay(for:self)
+    //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
+
+            return midnightToday
+        } // func previousMidnight(timeZone:  TimeZone) -> Date
+    
     func nextMidnight(timeZone:  TimeZone) -> Date {
         var gregorianCalendar = Calendar(identifier: .gregorian)
         gregorianCalendar.timeZone = timeZone
@@ -24,7 +33,7 @@ extension Date {
         let midnightTomorrow = gregorianCalendar.date(byAdding: dateComponents, to: midnightToday)
 //        print("\(String(describing: type(of: self))) \(#function) Midnight tomorrow:  \(String(describing: midnightTomorrow))")
         return midnightTomorrow!
-    } // func nextMidnight() -> Date
+    } // func nextMidnight(timeZone:  TimeZone) -> Date
 } // extension Date
 
 extension Date {
