@@ -93,25 +93,39 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     var LDMLDetails: Array<ASALDMLDetail> = []
     
-    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
-        return []
-    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
+//    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
+//        return []
+//    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
     var supportsLocales: Bool = true
     
     var supportsDateFormats: Bool = false
     
-    func startOfNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
+    func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-            return now.nextGMTNoon()
+            return date.previousGMTNoon()
             
         case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-            return now.nextMidnight(timeZone: TimeZone(secondsFromGMT: 0)!)
+            return date.previousMidnight(timeZone: TimeZone(secondsFromGMT: 0)!)
             
         default:
-            return now.nextGMTNoon()
-        }
+            return date.previousGMTNoon()
+        } // switch self.calendarCode
+    } // func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date
+
+    
+    func startOfNextDay(date: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
+        switch self.calendarCode {
+        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
+            return date.nextGMTNoon()
+            
+        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+            return date.nextMidnight(timeZone: TimeZone(secondsFromGMT: 0)!)
+            
+        default:
+            return date.nextGMTNoon()
+        } // switch self.calendarCode
     } // func nextTransitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
     
     var supportsTimeZones: Bool = false

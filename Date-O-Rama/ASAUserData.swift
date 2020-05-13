@@ -12,6 +12,16 @@ import SwiftUI
 import CoreLocation
 
 final class ASAUserData:  ObservableObject {
+    private static var sharedUserData: ASAUserData = {
+        let userData = ASAUserData()
+        
+        return userData
+    }()
+    
+    class func shared() -> ASAUserData {
+        return sharedUserData
+    } // class func shared() -> ASAUserData
+
     @Published var mainRows:  Array<ASARow>
     
     init() {

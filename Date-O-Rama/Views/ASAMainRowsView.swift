@@ -12,31 +12,16 @@ import CoreLocation
 
 struct ASAMainRowsView: View {
     @EnvironmentObject var userData:  ASAUserData
-//    @State var dummyRow:  ASARow = ASARow.dummy()
     @State var now = Date()
-//    @ObservedObject var locationManager = LocationManager.shared()
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
-//    var deviceLocation:  CLLocation? {
-//        get {
-//            return self.locationManager.lastDeviceLocation
-//        } // get
-//    } // var deviceLocation
-//
-//    var devicePlacemark:  CLPlacemark? {
-//        get {
-//            return self.locationManager.lastDevicePlacemark
-//        } // get
-//    } // var devicePlacemark
-
     
     let INSET = 25.0 as CGFloat
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(userData.mainRows, id:  \.uid) { row in
+                ForEach(userData.mainRows, id:  \.uuid) { row in
                     NavigationLink(
                         destination: ASACalendarDetailView(selectedRow: row, now: self.now)
                             .onReceive(row.objectWillChange) { _ in
@@ -172,6 +157,6 @@ struct ASAMainRowsLocationSubcell:  View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsView().environmentObject(ASAUserData())
+        ASAMainRowsView().environmentObject(ASAUserData.shared())
     }
 }

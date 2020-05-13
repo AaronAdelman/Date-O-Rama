@@ -12,7 +12,7 @@ struct ASAContentView: View {
     var body: some View {
         UITabBarWrapper([
             TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("CLOCKS_TAB", comment: ""), systemImageName: "clock")) {
-                ASAMainRowsView().environmentObject(ASAUserData())
+                ASAMainRowsView().environmentObject(ASAUserData.shared())
             },
             TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("EVENTS_TAB", comment: ""), systemImageName: "list.dash")) {
                 ASAEventsView()

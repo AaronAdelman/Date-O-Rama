@@ -11,32 +11,80 @@ import EventKit
 
 struct ASAEventsView: View {
     var eventManager = ASAEventManager.shared()
+    var userData = ASAUserData.shared()
     @State var date = Date()
-    @State var events:  Array<ASAEventCompatible> = []
-    var timeFormatter:  DateFormatter = {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .none
-        dateFormatter.timeStyle = .short
-        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        return dateFormatter
-    }()
-    let TIME_WIDTH = 45.0 as CGFloat
-    let TIME_FONT_SIZE = Font.caption
+    @State var primaryRowUUID:  UUID?
+    @State var secondaryRowUUID:  UUID?
+    
+    func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
+        let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startODay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
+        
+        let row = self.primaryRow
+        //        return externalEvents + ASAHebrewCalendarSupplement.eventDetails(startDate: self.primaryRow.startODay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date), location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
+        let HebrewCalendarEvents: [ASAEvent] = ASAHebrewCalendarSupplement.eventDetails(date:  self.date, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
+        let unsortedEvents: [ASAEventCompatible] = externalEvents + HebrewCalendarEvents
+        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
+            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
+            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+        })
+        return events
+    } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
+    
+    //    var timeFormatter:  DateFormatter = {
+    //        let dateFormatter = DateFormatter()
+    //        dateFormatter.dateStyle = .none
+//        dateFormatter.timeStyle = .short
+//        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
+//        return dateFormatter
+//    }()
+    let TIME_WIDTH = 150.0 as CGFloat
+    let TIME_FONT_SIZE = Font.subheadline
+    
+    var primaryRow:  ASARow {
+        get {
+            let result = self.userData.mainRows.first(where: {$0.uuid == self.primaryRowUUID})
+            if result != nil {
+                return result!
+            }
+            
+            return ASARow.generic()
+        } // get
+    } // var primaryRow
+    
+    var secondaryRow:  ASARow {
+        get {
+            let result = self.userData.mainRows.first(where: {$0.uuid == self.secondaryRowUUID})
+            if result != nil {
+                return result!
+            }
+            
+            return ASARow.generic()
+        } // get
+    } // var secondaryRow:  ASARow
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(events, id: \.eventIdentifier) {
+                Text(verbatim: primaryRow.dateString(now: date)).font(.title)
+                Text(verbatim: secondaryRow.dateString(now: date)).font(.title)
+                Spacer()
+                ForEach(self.events(startDate: self.primaryRow.startODay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                     event
                     in
                     HStack {
                         if event.isAllDay {
-                            Text("All day").frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                            Text("All day").frame(width:  2.0 * self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
                         } else {
                             VStack {
-                                Text(self.timeFormatter.string(from: event.startDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                                Text(self.primaryRow.dateTimeString(now: event.startDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
                                 if event.endDate != event.startDate {
-                                    Text(self.timeFormatter.string(from: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                                    Text(self.primaryRow.dateTimeString(now: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                                }
+                            }
+                            VStack {
+                                Text(self.secondaryRow.dateTimeString(now: event.startDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                                if event.endDate != event.startDate {
+                                    Text(self.secondaryRow.dateTimeString(now: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
                                 }
                             }
                         }
@@ -46,14 +94,17 @@ struct ASAEventsView: View {
                 }
             }
             .onAppear() {
+                if self.primaryRowUUID == nil {
+                    self.primaryRowUUID = self.userData.mainRows[0].uuid
+                }
+                if self.secondaryRowUUID == nil {
+                    self.secondaryRowUUID = self.userData.mainRows[1].uuid
+                }
+                
                 let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
                 debugPrint(#file, #function, status)
                 
                 self.eventManager.requestAccessToCalendar()
-                let externalEvents = self.eventManager.eventsFor(startDate: self.date.previousMidnight(timeZone: TimeZone.autoupdatingCurrent), endDate: self.date.nextMidnight(timeZone: TimeZone.autoupdatingCurrent))
-                
-                self.events = externalEvents + ASASunsetTransitionCalendar.HebrewEventDetails(date: self.date, location: ASALocationManager.shared().locationData.location ?? CLLocation.NullIsland, timeZone: ASALocationManager.shared().locationData.timeZone ?? TimeZone.autoupdatingCurrent)
-                debugPrint(#file, #function, self.events.count)
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

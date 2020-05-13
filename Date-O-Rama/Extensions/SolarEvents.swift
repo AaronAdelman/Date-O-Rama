@@ -94,7 +94,8 @@ extension Date {
         // 1. first calculate the day of the year
         
         var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = timeZone
+//        calendar.timeZone = timeZone
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 
         let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
         

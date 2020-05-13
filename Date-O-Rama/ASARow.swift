@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 
+let UUID_KEY:  String                 = "UUID"
 let LOCALE_KEY:  String               = "locale"
 let CALENDAR_KEY:  String             = "calendar"
 let MAJOR_DATE_FORMAT_KEY:  String    = "majorDateFormat"
@@ -40,7 +41,7 @@ let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
 // MARK: -
 
 class ASARow: NSObject, ObservableObject, Identifiable {
-    var uid = UUID()
+    var uuid = UUID()
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
@@ -164,6 +165,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     public func dictionary() -> Dictionary<String, Any> {
 //        debugPrint(#file, #function)
         var result = [
+            UUID_KEY:  uuid.uuidString,
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
@@ -228,6 +230,13 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 //        debugPrint(#file, #function, dictionary)
         
         let newRow = ASARow()
+        
+        let UUIDString = dictionary[UUID_KEY] as? String
+        if UUIDString != nil {
+            newRow.uuid = UUID(uuidString: UUIDString!) ?? UUID()
+        } else {
+            newRow.uuid = UUID()
+        }
         
         let localeIdentifier = dictionary[LOCALE_KEY] as? String
         if localeIdentifier != nil {
@@ -344,16 +353,20 @@ extension ASARow {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date, LDMLString:  String) -> String
 
-    func eventDetails(date:  Date) -> Array<ASAEvent> {
-        return self.calendar.eventDetails(date: date, location: self.locationData.location, timeZone: self.effectiveTimeZone)
-    } // func eventDetails(date:  Date) -> Array<ASAEvent>
+//    func eventDetails(date:  Date) -> Array<ASAEvent> {
+//        return self.calendar.eventDetails(date: date, location: self.locationData.location, timeZone: self.effectiveTimeZone)
+//    } // func eventDetails(date:  Date) -> Array<ASAEvent>
 
     public func LDMLDetails() -> Array<ASALDMLDetail> {
         return self.calendar.LDMLDetails
     } // public func LDMLDetails() -> Array<ASADetail>
     
-    func startOfNextDay(now:  Date) -> Date {
-        return self.calendar.startOfNextDay(now: now, location: self.location, timeZone: self.effectiveTimeZone)
+    func startODay(date:  Date) -> Date {
+        return self.calendar.startOfDay(for: date, location: self.location, timeZone: self.effectiveTimeZone)
+    } // func startODay(date:  Date) -> Date
+
+    func startOfNextDay(date:  Date) -> Date {
+        return self.calendar.startOfNextDay(date: date, location: self.location, timeZone: self.effectiveTimeZone)
     } // func startOfNextDay(now:  Date) -> Date
 
     public func timeString(now:  Date) -> String {

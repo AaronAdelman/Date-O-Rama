@@ -47,6 +47,12 @@ extension Date {
         return Date(timeIntervalSince1970: seconds)
     } // static func date(JulianDate:  Double) -> Date
     
+    func previousGMTNoon() -> Date {
+        let thisJulianDay = floor(self.JulianDate())
+        let result = Date.date(JulianDate: thisJulianDay)
+        return result
+    } // func previousGMTNoon() -> Date
+    
     func nextGMTNoon() -> Date {
         let thisJulianDay = floor(self.JulianDate())
         let nextJulianDay = thisJulianDay + 1
@@ -78,6 +84,15 @@ extension Date {
         let result = midnightToday.addingTimeInterval(18 * 60 * 60)
         return result
     } // func sixPM()
+    
+    func sixPMYesterday(timeZone:  TimeZone) -> Date {
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
+        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
+        return result
+    } // func sixPMYesterday()
 } // extension Date
 
 extension Date {

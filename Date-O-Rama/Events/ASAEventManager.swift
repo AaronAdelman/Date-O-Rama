@@ -61,7 +61,8 @@ class ASAEventManager:  NSObject, ObservableObject {
             (e1: EKEvent, e2: EKEvent) -> Bool in
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
-        return events
+//        return events
+        return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
     
 } // class ASAEventManager

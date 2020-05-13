@@ -114,14 +114,18 @@ class ASAISO8601Calendar:  ASACalendar {
         }
     } // var LDMLDetails: Array<ASALDMLDetail>
     
-    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
-        return []
-    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
+//    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
+//        return []
+//    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
     
     var supportsLocales: Bool = false
     
-    func startOfNextDay(now:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
-        return now.nextMidnight(timeZone:  timeZone)
+    func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date {
+        return date.previousMidnight(timeZone:  timeZone)
+    } // func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date
+    
+    func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
+        return date.nextMidnight(timeZone:  timeZone)
     } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     
     var supportsDateFormats: Bool = true
