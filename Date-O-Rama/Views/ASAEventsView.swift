@@ -52,8 +52,11 @@ struct ASAEventsView: View {
                         ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
                         ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
                         Rectangle().frame(width:  2.0).foregroundColor(event.color)
-                        Text(event.title)
-                    }
+                        VStack(alignment: .leading) {
+                            Text(event.title).font(.headline)
+                            Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.systemGray))
+                        } // VStack
+                    } // HStack
                 }
                 
             }

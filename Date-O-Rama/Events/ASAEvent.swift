@@ -18,6 +18,7 @@ protocol ASAEventCompatible {
     var isAllDay: Bool { get }
     var timeZone: TimeZone? { get }
     var color:  Color { get }
+    var calendarTitle:  String { get }
 } // protocol ASAEventCompatible
 
 struct ASAEvent:  ASAEventCompatible {
@@ -29,6 +30,7 @@ struct ASAEvent:  ASAEventCompatible {
     var timeZone: TimeZone?
     var color:  Color
     var uuid = UUID()
+        var calendarTitle: String = ""
 } // struct ASAEvent
 
 extension EKEvent:  ASAEventCompatible {
@@ -37,7 +39,11 @@ extension EKEvent:  ASAEventCompatible {
             let calendarColor = self.calendar.cgColor ?? CGColor(genericGrayGamma2_2Gray: 0.5, alpha: 1.0)
             return Color(UIColor(cgColor: calendarColor))
         } // get
-    } // var color: Color
+    } // var color
     
-    
-}
+    var calendarTitle:  String {
+        get {
+            return self.calendar.title
+        } // get
+    } // var calendarTitle
+} // extension EKEvent:  ASAEventCompatible
