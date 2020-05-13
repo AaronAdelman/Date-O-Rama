@@ -27,7 +27,7 @@ struct ASAEventsView: View {
         return events
     } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
     
-    let TIME_WIDTH = 150.0 as CGFloat
+    let TIME_WIDTH = 100.0 as CGFloat
     let TIME_FONT_SIZE = Font.subheadline
     
     @State var primaryRow:  ASARow = ASAUserData.shared().mainRows[0]
