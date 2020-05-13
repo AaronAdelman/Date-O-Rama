@@ -35,7 +35,9 @@ struct ASAEventsView: View {
                         } else {
                             VStack {
                                 Text(self.timeFormatter.string(from: event.startDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
-                                Text(self.timeFormatter.string(from: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                                if event.endDate != event.startDate {
+                                    Text(self.timeFormatter.string(from: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
+                                }
                             }
                         }
                         Rectangle().frame(width:  2.0).foregroundColor(event.color)
