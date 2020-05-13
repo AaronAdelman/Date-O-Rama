@@ -266,7 +266,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         } else if timeString == "" {
             return dateString
         } else {
-            let SEPARATOR = " • "
+            let SEPARATOR = ", "
             return dateString + SEPARATOR + timeString
         }
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String

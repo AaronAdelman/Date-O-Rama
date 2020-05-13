@@ -58,12 +58,9 @@ struct ASAEventsView: View {
                 
             }
             .onAppear() {
-                if self.primaryRow == nil {
-                    self.primaryRow = self.userData.mainRows[0]
-                }
-                if self.secondaryRow == nil {
-                    self.secondaryRow = self.userData.mainRows[1]
-                }
+                self.primaryRow = self.userData.mainRows[0]
+                
+                self.secondaryRow = self.userData.mainRows[1]
                 
                 let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
                 debugPrint(#file, #function, status)

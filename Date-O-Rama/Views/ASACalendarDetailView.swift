@@ -31,7 +31,7 @@ struct ASACalendarDetailView: View {
                     }
                 }
                 if selectedRow.supportsLocales() {
-                    NavigationLink(destination: ASALocalePickerView(row: selectedRow)) {
+                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow)) {
                         HStack {
                             Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
                             ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())

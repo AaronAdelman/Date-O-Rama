@@ -57,10 +57,10 @@ class ASAEventManager:  NSObject, ObservableObject {
         
         // Use the configured NSPredicate to find and return events in the store that match
         let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)
-        let events:  Array<EKEvent> = rawEvents.sorted(by: {
-            (e1: EKEvent, e2: EKEvent) -> Bool in
-            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
-        })
+//        let events:  Array<EKEvent> = rawEvents.sorted(by: {
+//            (e1: EKEvent, e2: EKEvent) -> Bool in
+//            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+//        })
 //        return events
         return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>

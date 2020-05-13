@@ -1,5 +1,5 @@
 //
-//  ASALocalePickerView.swift
+//  ASALocaleChooserView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreLocation
 
-struct ASALocalePickerView: View {
+struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
     @ObservedObject var row:  ASARow
@@ -49,7 +49,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocalePickerView(row: ASARow.test())
+        ASALocaleChooserView(row: ASARow.test())
     }
 }
 
