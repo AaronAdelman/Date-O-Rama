@@ -361,7 +361,7 @@ extension ASARow {
         return self.calendar.LDMLDetails
     } // public func LDMLDetails() -> Array<ASADetail>
     
-    func startODay(date:  Date) -> Date {
+    func startOfDay(date:  Date) -> Date {
         return self.calendar.startOfDay(for: date, location: self.location, timeZone: self.effectiveTimeZone)
     } // func startODay(date:  Date) -> Date
 

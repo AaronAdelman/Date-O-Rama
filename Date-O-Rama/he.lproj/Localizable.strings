@@ -267,3 +267,4 @@
 "EVENTS_TAB" = "אירועים";
 
 "All day" = "יום שלם";
+"INTERVAL_SEPARATOR" = " - ";

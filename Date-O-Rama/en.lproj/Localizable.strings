@@ -267,3 +267,4 @@
 "EVENTS_TAB" = "Events";
 
 "All day" = "All day";
+"INTERVAL_SEPARATOR" = " - ";

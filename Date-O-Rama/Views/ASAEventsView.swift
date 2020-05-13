@@ -17,7 +17,7 @@ struct ASAEventsView: View {
     @State var secondaryRowUUID:  UUID?
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
-        let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startODay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
+        let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
         
         let row = self.primaryRow
         //        return externalEvents + ASAHebrewCalendarSupplement.eventDetails(startDate: self.primaryRow.startODay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date), location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
@@ -30,13 +30,6 @@ struct ASAEventsView: View {
         return events
     } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
     
-    //    var timeFormatter:  DateFormatter = {
-    //        let dateFormatter = DateFormatter()
-    //        dateFormatter.dateStyle = .none
-//        dateFormatter.timeStyle = .short
-//        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-//        return dateFormatter
-//    }()
     let TIME_WIDTH = 150.0 as CGFloat
     let TIME_FONT_SIZE = Font.subheadline
     
@@ -66,9 +59,9 @@ struct ASAEventsView: View {
         NavigationView {
             List {
                 Text(verbatim: primaryRow.dateString(now: date)).font(.title)
-                Text(verbatim: secondaryRow.dateString(now: date)).font(.title)
+                Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
                 Spacer()
-                ForEach(self.events(startDate: self.primaryRow.startODay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+                ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                     event
                     in
                     HStack {
