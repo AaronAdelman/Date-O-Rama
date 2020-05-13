@@ -11,16 +11,13 @@ import EventKit
 
 struct ASAEventsView: View {
     var eventManager = ASAEventManager.shared()
-    var userData = ASAUserData.shared()
+    @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
-    @State var primaryRowUUID:  UUID?
-    @State var secondaryRowUUID:  UUID?
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
         
         let row = self.primaryRow
-        //        return externalEvents + ASAHebrewCalendarSupplement.eventDetails(startDate: self.primaryRow.startODay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date), location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
         let HebrewCalendarEvents: [ASAEvent] = ASAHebrewCalendarSupplement.eventDetails(date:  self.date, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
         let unsortedEvents: [ASAEventCompatible] = externalEvents + HebrewCalendarEvents
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -33,34 +30,21 @@ struct ASAEventsView: View {
     let TIME_WIDTH = 150.0 as CGFloat
     let TIME_FONT_SIZE = Font.subheadline
     
-    var primaryRow:  ASARow {
-        get {
-            let result = self.userData.mainRows.first(where: {$0.uuid == self.primaryRowUUID})
-            if result != nil {
-                return result!
-            }
-            
-            return ASARow.generic()
-        } // get
-    } // var primaryRow
+    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows[0]
     
-    var secondaryRow:  ASARow {
-        get {
-            let result = self.userData.mainRows.first(where: {$0.uuid == self.secondaryRowUUID})
-            if result != nil {
-                return result!
-            }
-            
-            return ASARow.generic()
-        } // get
-    } // var secondaryRow:  ASARow
+    @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows[1]
     
     var body: some View {
         NavigationView {
             List {
-                Text(verbatim: primaryRow.dateString(now: date)).font(.title)
+                NavigationLink(destination:  ASARowChooser(selectedRow: $primaryRow)) {
+                    Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
+                }
+                
+                NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
                 Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
-                Spacer()
+                }
+   
                 ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                     event
                     in
@@ -71,13 +55,14 @@ struct ASAEventsView: View {
                         Text(event.title)
                     }
                 }
+                
             }
             .onAppear() {
-                if self.primaryRowUUID == nil {
-                    self.primaryRowUUID = self.userData.mainRows[0].uuid
+                if self.primaryRow == nil {
+                    self.primaryRow = self.userData.mainRows[0]
                 }
-                if self.secondaryRowUUID == nil {
-                    self.secondaryRowUUID = self.userData.mainRows[1].uuid
+                if self.secondaryRow == nil {
+                    self.secondaryRow = self.userData.mainRows[1]
                 }
                 
                 let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
@@ -113,6 +98,6 @@ struct ASAStartAndEndTimesSubcell:  View {
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsView()
+        ASAEventsView(primaryRow: ASARow.generic(), secondaryRow: ASARow.generic())
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ASACalendarPickerView.swift
+//  ASACalendarChooserView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreLocation
 
-struct ASACalendarPickerView: View {
+struct ASACalendarChooserView: View {
     let calendarCodes:  Array<ASACalendarCode> = [
         .Gregorian,
         .Buddhist,
@@ -83,6 +83,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarPickerView(row: ASARow.test())
+        ASACalendarChooserView(row: ASARow.test())
     }
 }

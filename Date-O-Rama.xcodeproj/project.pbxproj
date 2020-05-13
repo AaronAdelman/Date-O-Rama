@@ -18,6 +18,7 @@
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
 		A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
+		A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
@@ -47,7 +48,7 @@
 		A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
 		A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */; };
 		A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
-		A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */; };
+		A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */; };
 		A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
 		A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */; };
@@ -88,6 +89,7 @@
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
+		A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARowChooser.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
@@ -124,7 +126,7 @@
 		A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "✨Date-O-Rama✨.entitlements"; sourceTree = "<group>"; };
 		A5C77C372433596A00CFEE47 /* ASALocalePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocalePickerView.swift; sourceTree = "<group>"; };
 		A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleData.swift; sourceTree = "<group>"; };
-		A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarPickerView.swift; sourceTree = "<group>"; };
+		A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarChooserView.swift; sourceTree = "<group>"; };
 		A5CB86402448E03F00DB27A9 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatChooserView.swift; sourceTree = "<group>"; };
 		A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMajorDateFormat.swift; sourceTree = "<group>"; };
@@ -283,7 +285,7 @@
 				A51A0836245B06B500135AA6 /* ASACalendarDetailCell.swift */,
 				A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */,
 				A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */,
-				A5C77C3F24339E0600CFEE47 /* ASACalendarPickerView.swift */,
+				A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */,
 				A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */,
 				A5BFC5AE246971AD0075AF58 /* ASAContentView.swift */,
 				A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */,
@@ -296,6 +298,7 @@
 				A517658B2460721A0039AFAF /* MapView.swift */,
 				A5BFC5B22469CB900075AF58 /* TabBarElement.swift */,
 				A5BFC5B02469CB230075AF58 /* UITabBarWrapper.swift */,
+				A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -442,7 +445,7 @@
 				A5BFC5AD246971030075AF58 /* ASAEventsView.swift in Sources */,
 				A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */,
 				A517658E24615BA80039AFAF /* ASAEventCell.swift in Sources */,
-				A5C77C4024339E0600CFEE47 /* ASACalendarPickerView.swift in Sources */,
+				A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */,
 				A5BFC5BC246BF3180075AF58 /* ASAHebrewCalendarSupplement.swift in Sources */,
 				A5E4719C24627C89002BB471 /* UIColorExtensions.swift in Sources */,
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
@@ -463,6 +466,7 @@
 				A51A0837245B06B500135AA6 /* ASACalendarDetailCell.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocalePickerView.swift in Sources */,
 				A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */,
+				A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */,

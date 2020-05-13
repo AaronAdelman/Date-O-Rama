@@ -15,7 +15,7 @@ struct ASAContentView: View {
                 ASAMainRowsView().environmentObject(ASAUserData.shared())
             },
             TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("EVENTS_TAB", comment: ""), systemImageName: "list.dash")) {
-                ASAEventsView()
+                ASAEventsView().environmentObject(ASAUserData.shared())
             }
         ])
     } // var body

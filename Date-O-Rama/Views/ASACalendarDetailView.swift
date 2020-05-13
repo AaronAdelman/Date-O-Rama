@@ -24,7 +24,7 @@ struct ASACalendarDetailView: View {
     var body: some View {
         List {
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                NavigationLink(destination: ASACalendarPickerView(row: self.selectedRow)) {
+                NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow)) {
                     HStack {
                         Text(verbatim: "🗓")
                         ASACalendarDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())

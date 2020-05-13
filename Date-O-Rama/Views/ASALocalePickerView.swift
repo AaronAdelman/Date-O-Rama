@@ -40,7 +40,8 @@ struct ASALocaleCell: View {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
-        }   .onTapGesture {
+        }
+        .onTapGesture {
             self.row.localeIdentifier = self.localeString
         }
     }
