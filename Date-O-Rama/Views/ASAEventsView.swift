@@ -72,22 +72,8 @@ struct ASAEventsView: View {
                     event
                     in
                     HStack {
-                        if event.isAllDay {
-                            Text("All day").frame(width:  2.0 * self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
-                        } else {
-                            VStack {
-                                Text(self.primaryRow.dateTimeString(now: event.startDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
-                                if event.endDate != event.startDate {
-                                    Text(self.primaryRow.dateTimeString(now: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
-                                }
-                            }
-                            VStack {
-                                Text(self.secondaryRow.dateTimeString(now: event.startDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
-                                if event.endDate != event.startDate {
-                                    Text(self.secondaryRow.dateTimeString(now: event.endDate)).frame(width:  self.TIME_WIDTH).font(self.TIME_FONT_SIZE)
-                                }
-                            }
-                        }
+                        ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
+                        ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
                         Rectangle().frame(width:  2.0).foregroundColor(event.color)
                         Text(event.title)
                     }
@@ -110,6 +96,27 @@ struct ASAEventsView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
 } // struct ASAEventsView
+
+struct ASAStartAndEndTimesSubcell:  View {
+    var event:  ASAEventCompatible
+    var row:  ASARow
+    var timeWidth:  CGFloat
+    var timeFontSize:  Font
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            if event.isAllDay && row.calendar.calendarCode == ASACalendarCode.Gregorian {
+                Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize)
+                Text("All day").frame(width:  timeWidth).font(timeFontSize)
+            } else {
+                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize)
+                if event.endDate != event.startDate {
+                    Text(row.dateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize)
+                }
+            }
+        } // VStack
+    } // var body
+} // struct ASAStartAndEndTimesSubcell
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
