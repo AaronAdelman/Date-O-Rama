@@ -56,12 +56,22 @@ struct ASAEventsView: View {
             VStack {
                 List {
                     NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
-                        Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
+                        VStack {
+                            Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
+                            if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
+                                Text(verbatim: primaryRow.locationData.formattedOneLineAddress() )
+                            }
+                        }
                     }
                     
                     if settings.eventsViewShouldShowSecondaryDates {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
-                            Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                            VStack {
+                                Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                                if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
+                                    Text(verbatim: secondaryRow.locationData.formattedOneLineAddress() )
+                                }
+                            }
                         }
                     }
                     Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {

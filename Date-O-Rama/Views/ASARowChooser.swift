@@ -32,9 +32,9 @@ struct ASARowCell: View {
     
     var body: some View {
         HStack {
-            VStack {
-                Text(verbatim:  row.calendar.calendarCode.localizedName())
-                Text(verbatim: row.locationData.formattedOneLineAddress() )
+            VStack(alignment:  .leading) {
+                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.headline)
+                Text(verbatim: row.locationData.formattedOneLineAddress()).font(.subheadline)
             }
             Spacer()
             if selectedUUIDString == self.row.uuid.uuidString {
