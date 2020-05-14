@@ -8,21 +8,21 @@
 
 import UIKit
 
-let ASAMessageKeyType = "type"
-let ASAMessageKeyRequestComplicationData = "requestComplicationData"
-let ASAMessageKeyUpdateComplicationData = "updateComplicationData"
-
-public let localeSubkey = "Locale"
-public let calendarSubkey = "Calendar"
-public let majorDateFormatSubkey = "MajorDateFormat"
-public let geekFormatSubkey = "GeekFormat"
-
-public let shortDateFormatKey  = "short"
-public let mediumDateFormatKey = "medium"
-public let longDateFormatKey   = "long"
-public let fullDateFormatKey   = "full"
-public let localizedLDMLMajorDateFormatKey = "localizedLDML"
-public let rawLDMLMajorDateFormatKey = "rawLDML"
+//let ASAMessageKeyType = "type"
+//let ASAMessageKeyRequestComplicationData = "requestComplicationData"
+//let ASAMessageKeyUpdateComplicationData = "updateComplicationData"
+//
+//public let localeSubkey = "Locale"
+//public let calendarSubkey = "Calendar"
+//public let majorDateFormatSubkey = "MajorDateFormat"
+//public let geekFormatSubkey = "GeekFormat"
+//
+//public let shortDateFormatKey  = "short"
+//public let mediumDateFormatKey = "medium"
+//public let longDateFormatKey   = "long"
+//public let fullDateFormatKey   = "full"
+//public let localizedLDMLMajorDateFormatKey = "localizedLDML"
+//public let rawLDMLMajorDateFormatKey = "rawLDML"
 
 let storageKey = "group.com.adelsoft.DoubleDate"
 
@@ -30,12 +30,12 @@ let defaults =
     UserDefaults.init(suiteName: storageKey)
 
 class ASAConfiguration: NSObject {
-    public static func configureDefaults() -> Void {
-//        debugPrint(#file, #function)
-        let defaultSettings = [:] as [String : Any]
-        
-        defaults?.register(defaults: defaultSettings)
-    } // public func configureDefaults()
+//    public static func configureDefaults() -> Void {
+////        debugPrint(#file, #function)
+//        let defaultSettings = [:] as [String : Any]
+//
+//        defaults?.register(defaults: defaultSettings)
+//    } // public func configureDefaults()
     
     // MARK: -
     
