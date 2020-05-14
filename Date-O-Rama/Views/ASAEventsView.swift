@@ -9,19 +9,31 @@
 import SwiftUI
 import EventKit
 
-let PRIMARY_ROW_UUID_KEY:  String   = "ASAEventsView_ROW_1_UUID"
-let SECONDARY_ROW_UUID_KEY:  String = "ASAEventsView_ROW_2_UUID"
-let SHOULD_SHOW_SECONDARY_DATES_KEY:  String = "ASAEventsView_SHOULD_SHOW_SECONDARY_DATES"
-
 struct ASAEventsView: View {
     @ObservedObject var settings = ASAUserSettings()
 
     var eventManager = ASAEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
-    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 1 ? ASAUserData.shared().mainRows[0] : ASARow.generic()
-    @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 2 ? ASAUserData.shared().mainRows[1] : ASARow.generic()
+//    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 1 ? ASAUserData.shared().mainRows[0] : ASARow.generic()
+//    @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 2 ? ASAUserData.shared().mainRows[1] : ASARow.generic()
 //    @State var shouldShowSecondaryDates:  Bool = true
+    var primaryRow:  ASARow {
+        get {
+            return settings.primaryRowUUIDString.row(backupIndex: 0)
+        } // get
+        set {
+            settings.primaryRowUUIDString = newValue.uuid.uuidString
+        } // set
+    } // var primaryRow:  ASARow
+    var secondaryRow:  ASARow {
+        get {
+            return settings.secondaryRowUUIDString.row(backupIndex: 1)
+        } // get
+        set {
+            settings.secondaryRowUUIDString = newValue.uuid.uuidString
+        } // set
+    } // var secondaryRow
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
@@ -43,12 +55,12 @@ struct ASAEventsView: View {
         NavigationView {
             VStack {
                 List {
-                    NavigationLink(destination:  ASARowChooser(selectedRow: $primaryRow)) {
+                    NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
                         Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
                     }
                     
                     if settings.eventsViewShouldShowSecondaryDates {
-                        NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
+                        NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
                             Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
                         }
                     }
@@ -73,10 +85,6 @@ struct ASAEventsView: View {
                     }
                 }
                 .onAppear() {
-                    self.primaryRow = self.userData.mainRows[0]
-                    
-                    self.secondaryRow = self.userData.mainRows[1]
-                    
                     let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
                     debugPrint(#file, #function, status)
                     
@@ -141,6 +149,6 @@ struct ASAStartAndEndTimesSubcell:  View {
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsView(primaryRow: ASARow.generic(), secondaryRow: ASARow.generic())
+        ASAEventsView(settings: ASAUserSettings(), eventManager: ASAEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
     }
 }

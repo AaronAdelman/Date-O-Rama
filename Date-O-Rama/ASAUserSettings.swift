@@ -10,6 +10,11 @@
 import Foundation
 import Combine
 
+let PRIMARY_ROW_UUID_KEY:  String   = "ASAEventsView_ROW_1_UUID"
+let SECONDARY_ROW_UUID_KEY:  String = "ASAEventsView_ROW_2_UUID"
+let SHOULD_SHOW_SECONDARY_DATES_KEY:  String = "ASAEventsView_SHOULD_SHOW_SECONDARY_DATES"
+
+
 @propertyWrapper
 struct UserDefault<T> {
     let key: String
@@ -34,10 +39,24 @@ final class ASAUserSettings: ObservableObject {
 
     let objectWillChange = PassthroughSubject<Void, Never>()
 
-    @UserDefault("ASAEventsView_SHOULD_SHOW_SECONDARY_DATES", defaultValue: true)
+    @UserDefault(SHOULD_SHOW_SECONDARY_DATES_KEY, defaultValue: true)
     var eventsViewShouldShowSecondaryDates: Bool {
         willSet {
             objectWillChange.send()
         }
-    }
+    } // var eventsViewShouldShowSecondaryDates
+    
+    @UserDefault(PRIMARY_ROW_UUID_KEY, defaultValue: UUID().uuidString)
+    var primaryRowUUIDString: String {
+        willSet {
+            objectWillChange.send()
+        }
+    } // var primaryRowUUID
+
+    @UserDefault(SECONDARY_ROW_UUID_KEY, defaultValue: UUID().uuidString)
+    var secondaryRowUUIDString: String {
+        willSet {
+            objectWillChange.send()
+        }
+    } //
 }

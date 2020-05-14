@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASARowChooser: View {
-    @Binding var selectedRow:  ASARow
+    @Binding var selectedUUIDString:  String
     let mainRows = ASAUserData.shared().mainRows
     
     var body: some View {
@@ -17,8 +17,8 @@ struct ASARowChooser: View {
             ForEach(mainRows) {
                 row
                 in
-                ASARowCell(selectedRow: self.selectedRow, row: row).onTapGesture {
-                    self.selectedRow = row
+                ASARowCell(selectedUUIDString: self.$selectedUUIDString, row: row).onTapGesture {
+                    self.selectedUUIDString = row.uuid.uuidString
                 }
             }
         }
@@ -26,7 +26,7 @@ struct ASARowChooser: View {
 }
 
 struct ASARowCell: View {
-    @ObservedObject var selectedRow:  ASARow
+    @Binding var selectedUUIDString:  String
 
     var row:  ASARow
     
@@ -37,20 +37,17 @@ struct ASARowCell: View {
                 Text(verbatim: row.locationData.formattedOneLineAddress() )
             }
             Spacer()
-            if selectedRow.uuid == self.row.uuid {
+            if selectedUUIDString == self.row.uuid.uuidString {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }
-//        .onTapGesture {
-////            selectedRow = row
-//        }
     }
 }
 
 
 struct ASARowChooser_Previews: PreviewProvider {
     static var previews: some View {
-        ASARowChooser(selectedRow: .constant(ASARow.generic()))
+        ASARowChooser(selectedUUIDString: .constant(UUID().uuidString))
     }
 }

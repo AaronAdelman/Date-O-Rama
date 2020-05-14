@@ -197,3 +197,23 @@ extension String {
         return countryCode!.flag()
     }
 } // extension String
+
+extension String {
+    func row(backupIndex:  Int) -> ASARow {
+        let tempUUID = UUID(uuidString: self)
+        if tempUUID == nil {
+            return ASARow.generic()
+        }
+        
+        let temp = ASAUserData.shared().mainRows.first(where: {$0.uuid == tempUUID!})
+        if temp != nil {
+            return temp!
+        }
+        
+        if ASAUserData.shared().mainRows.count >= backupIndex + 1 {
+            return ASAUserData.shared().mainRows[backupIndex]
+        }
+        
+        return ASARow.generic()
+    } // func row(backupIndex:  Int) -> ASARow
+} // extension UUID
