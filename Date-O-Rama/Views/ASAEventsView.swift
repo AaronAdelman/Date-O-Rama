@@ -94,13 +94,15 @@ struct ASAEventsView: View {
                 }
                 
                 HStack {
+                    Spacer()
+
                     Button(action: {
                         self.date = self.date.oneDayBefore
                     }) {
                         Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
                     }
                     
-                    Spacer()
+                    Spacer().frame(width:  50)
                     
                     Button(action: {
                         self.date = Date()
@@ -108,13 +110,15 @@ struct ASAEventsView: View {
                         Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
                     }
                     
-                    Spacer()
+                    Spacer().frame(width:  50)
                     
                     Button(action: {
                         self.date = self.date.oneDayAfter
                     }) {
                         Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
                     }
+                    
+                    Spacer()
                 }.border(Color.gray)
             }
         }

@@ -30,7 +30,7 @@ struct ASAEvent:  ASAEventCompatible {
     var timeZone: TimeZone?
     var color:  Color
     var uuid = UUID()
-        var calendarTitle: String = ""
+    var calendarTitle: String = ""
 } // struct ASAEvent
 
 extension EKEvent:  ASAEventCompatible {
