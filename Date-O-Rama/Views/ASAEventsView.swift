@@ -13,6 +13,9 @@ struct ASAEventsView: View {
     var eventManager = ASAEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
+    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 1 ? ASAUserData.shared().mainRows[0] : ASARow.generic()
+    @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 2 ? ASAUserData.shared().mainRows[1] : ASARow.generic()
+    @State var shouldShowSecondaryDates:  Bool = true
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
@@ -29,11 +32,7 @@ struct ASAEventsView: View {
     
     let TIME_WIDTH = 100.0 as CGFloat
     let TIME_FONT_SIZE = Font.subheadline
-    
-    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows[0]
-    
-    @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows[1]
-    
+        
     var body: some View {
         NavigationView {
             List {
@@ -41,8 +40,13 @@ struct ASAEventsView: View {
                     Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
                 }
                 
-                NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
-                Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                if self.shouldShowSecondaryDates {
+                    NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
+                        Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                    }
+                }
+                Toggle(isOn: $shouldShowSecondaryDates) {
+                    Text("Show secondary dates")
                 }
    
                 ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
@@ -50,7 +54,9 @@ struct ASAEventsView: View {
                     in
                     HStack {
                         ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
-                        ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
+                        if self.shouldShowSecondaryDates {
+                            ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
+                        }
                         Rectangle().frame(width:  2.0).foregroundColor(event.color)
                         VStack(alignment: .leading) {
                             Text(event.title).font(.headline)
