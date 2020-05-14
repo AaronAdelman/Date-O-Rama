@@ -9,6 +9,10 @@
 import SwiftUI
 import EventKit
 
+let PRIMARY_ROW_UUID_KEY:  String   = "ASAEventsView_ROW_1_UUID"
+let SECONDARY_ROW_UUID_KEY:  String = "ASAEventsView_ROW_2_UUID"
+let SHOULD_SHOW_SECONDARY_DATES_KEY:  String = "ASAEventsView_SHOULD_SHOW_SECONDARY_DATES"
+
 struct ASAEventsView: View {
     var eventManager = ASAEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
@@ -67,6 +71,14 @@ struct ASAEventsView: View {
                 
             }
             .onAppear() {
+                let userDefaults = ASAConfiguration.userDefaults
+                let tempShouldShowSecondaryDates = userDefaults?.bool(forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
+                if tempShouldShowSecondaryDates != nil {
+                    self.shouldShowSecondaryDates = tempShouldShowSecondaryDates!
+                } else {
+                    self.shouldShowSecondaryDates = true
+                }
+                
                 self.primaryRow = self.userData.mainRows[0]
                 
                 self.secondaryRow = self.userData.mainRows[1]
@@ -75,6 +87,11 @@ struct ASAEventsView: View {
                 debugPrint(#file, #function, status)
                 
                 self.eventManager.requestAccessToCalendar()
+            }
+            .onDisappear() {
+                let userDefaults = ASAConfiguration.userDefaults
+                userDefaults?.set(self.shouldShowSecondaryDates, forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
+
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

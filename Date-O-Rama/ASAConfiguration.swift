@@ -26,10 +26,10 @@ import UIKit
 
 let storageKey = "group.com.adelsoft.DoubleDate"
 
-let defaults =
+class ASAConfiguration: NSObject {
+    static let userDefaults =
     UserDefaults.init(suiteName: storageKey)
 
-class ASAConfiguration: NSObject {
 //    public static func configureDefaults() -> Void {
 ////        debugPrint(#file, #function)
 //        let defaultSettings = [:] as [String : Any]
@@ -47,14 +47,14 @@ class ASAConfiguration: NSObject {
             temp.append(dictionary)
         }
         
-        defaults?.set(temp, forKey: key.rawValue)
-        defaults?.synchronize()
+        userDefaults?.set(temp, forKey: key.rawValue)
+        userDefaults?.synchronize()
     } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
     
     public class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
 //        debugPrint(#file, #function, key)
         
-        let temp = defaults?.array(forKey: key.rawValue)
+        let temp = userDefaults?.array(forKey: key.rawValue)
         var tempArray:  Array<ASARow> = []
         
         if temp != nil {

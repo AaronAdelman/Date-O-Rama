@@ -227,13 +227,18 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // public func dictionary() -> Dictionary<String, Any>
     
     public class func newRow(dictionary:  Dictionary<String, Any>) -> ASARow {
-//        debugPrint(#file, #function, dictionary)
+        //        debugPrint(#file, #function, dictionary)
         
         let newRow = ASARow()
         
         let UUIDString = dictionary[UUID_KEY] as? String
         if UUIDString != nil {
-            newRow.uuid = UUID(uuidString: UUIDString!) ?? UUID()
+            let tempUUID: UUID? = UUID(uuidString: UUIDString!)
+            if tempUUID != nil {
+                newRow.uuid = tempUUID!
+            } else {
+                newRow.uuid = UUID()
+            }
         } else {
             newRow.uuid = UUID()
         }
