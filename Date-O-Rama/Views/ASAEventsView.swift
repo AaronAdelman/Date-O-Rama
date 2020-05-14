@@ -39,63 +39,89 @@ struct ASAEventsView: View {
         
     var body: some View {
         NavigationView {
-            List {
-                NavigationLink(destination:  ASARowChooser(selectedRow: $primaryRow)) {
-                    Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
-                }
-                
-                if self.shouldShowSecondaryDates {
-                    NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
-                        Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+            VStack {
+                List {
+                    NavigationLink(destination:  ASARowChooser(selectedRow: $primaryRow)) {
+                        Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
+                    }
+                    
+                    if self.shouldShowSecondaryDates {
+                        NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
+                            Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                        }
+                    }
+                    Toggle(isOn: $shouldShowSecondaryDates) {
+                        Text("Show secondary dates")
+                    }
+                    
+                    ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+                        event
+                        in
+                        HStack {
+                            ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
+                            if self.shouldShowSecondaryDates {
+                                ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
+                            }
+                            Rectangle().frame(width:  2.0).foregroundColor(event.color)
+                            VStack(alignment: .leading) {
+                                Text(event.title).font(.headline)
+                                Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.systemGray))
+                            } // VStack
+                        } // HStack
                     }
                 }
-                Toggle(isOn: $shouldShowSecondaryDates) {
-                    Text("Show secondary dates")
+                .onAppear() {
+                    let userDefaults = ASAConfiguration.userDefaults
+                    let tempShouldShowSecondaryDates = userDefaults?.bool(forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
+                    if tempShouldShowSecondaryDates != nil {
+                        self.shouldShowSecondaryDates = tempShouldShowSecondaryDates!
+                    } else {
+                        self.shouldShowSecondaryDates = true
+                    }
+                    
+                    self.primaryRow = self.userData.mainRows[0]
+                    
+                    self.secondaryRow = self.userData.mainRows[1]
+                    
+                    let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
+                    debugPrint(#file, #function, status)
+                    
+                    self.eventManager.requestAccessToCalendar()
                 }
-   
-                ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
-                    event
-                    in
-                    HStack {
-                        ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
-                        if self.shouldShowSecondaryDates {
-                            ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
-                        }
-                        Rectangle().frame(width:  2.0).foregroundColor(event.color)
-                        VStack(alignment: .leading) {
-                            Text(event.title).font(.headline)
-                            Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.systemGray))
-                        } // VStack
-                    } // HStack
-                }
-                
-            }
-            .onAppear() {
-                let userDefaults = ASAConfiguration.userDefaults
-                let tempShouldShowSecondaryDates = userDefaults?.bool(forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
-                if tempShouldShowSecondaryDates != nil {
-                    self.shouldShowSecondaryDates = tempShouldShowSecondaryDates!
-                } else {
-                    self.shouldShowSecondaryDates = true
+                .onDisappear() {
+                    let userDefaults = ASAConfiguration.userDefaults
+                    userDefaults?.set(self.shouldShowSecondaryDates, forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
                 }
                 
-                self.primaryRow = self.userData.mainRows[0]
-                
-                self.secondaryRow = self.userData.mainRows[1]
-                
-                let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
-                debugPrint(#file, #function, status)
-                
-                self.eventManager.requestAccessToCalendar()
-            }
-            .onDisappear() {
-                let userDefaults = ASAConfiguration.userDefaults
-                userDefaults?.set(self.shouldShowSecondaryDates, forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
-
+                HStack {
+                    Button(action: {
+                        self.date = self.date.oneDayBefore
+                    }) {
+                        Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        self.date = Date()
+                    }) {
+                        Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        self.date = self.date.oneDayAfter
+                    }) {
+                        Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
+                    }
+                }.border(Color.gray)
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
+    
+    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
 } // struct ASAEventsView
 
 struct ASAStartAndEndTimesSubcell:  View {

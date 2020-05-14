@@ -258,8 +258,6 @@
 
 "ADDRESS_SEPARATOR" = ", ";
 
-"PARENTHESIZED_TIME_FORMAT" = "\r(%@ there)";
-
 "Use device location" = "Use device location";
 "Requested address"   = "Requested address";
 
@@ -269,3 +267,4 @@
 "All day" = "All day";
 "INTERVAL_SEPARATOR" = " - ";
 "Show secondary dates" = "Show secondary dates";
+"Today" = "Today";
