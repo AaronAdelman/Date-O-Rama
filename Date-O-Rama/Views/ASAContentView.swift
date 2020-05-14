@@ -15,7 +15,7 @@ struct ASAContentView: View {
                 ASAMainRowsView().environmentObject(ASAUserData.shared())
             },
             TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("EVENTS_TAB", comment: ""), systemImageName: "list.dash")) {
-                ASAEventsView(primaryRow: ASARow.generic(), secondaryRow: ASARow.generic(), shouldShowSecondaryDates: true).environmentObject(ASAUserData.shared())
+                ASAEventsView(primaryRow: ASARow.generic(), secondaryRow: ASARow.generic()).environmentObject(ASAUserData.shared())
             }
         ])
     } // var body

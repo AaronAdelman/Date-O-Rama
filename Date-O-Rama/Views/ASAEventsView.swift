@@ -14,12 +14,14 @@ let SECONDARY_ROW_UUID_KEY:  String = "ASAEventsView_ROW_2_UUID"
 let SHOULD_SHOW_SECONDARY_DATES_KEY:  String = "ASAEventsView_SHOULD_SHOW_SECONDARY_DATES"
 
 struct ASAEventsView: View {
+    @ObservedObject var settings = ASAUserSettings()
+
     var eventManager = ASAEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
     @State var primaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 1 ? ASAUserData.shared().mainRows[0] : ASARow.generic()
     @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 2 ? ASAUserData.shared().mainRows[1] : ASARow.generic()
-    @State var shouldShowSecondaryDates:  Bool = true
+//    @State var shouldShowSecondaryDates:  Bool = true
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
@@ -45,12 +47,12 @@ struct ASAEventsView: View {
                         Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
                     }
                     
-                    if self.shouldShowSecondaryDates {
+                    if settings.eventsViewShouldShowSecondaryDates {
                         NavigationLink(destination:  ASARowChooser(selectedRow: $secondaryRow)) {
                             Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
                         }
                     }
-                    Toggle(isOn: $shouldShowSecondaryDates) {
+                    Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
                         Text("Show secondary dates")
                     }
                     
@@ -59,7 +61,7 @@ struct ASAEventsView: View {
                         in
                         HStack {
                             ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
-                            if self.shouldShowSecondaryDates {
+                            if self.settings.eventsViewShouldShowSecondaryDates {
                                 ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
                             }
                             Rectangle().frame(width:  2.0).foregroundColor(event.color)
@@ -71,14 +73,6 @@ struct ASAEventsView: View {
                     }
                 }
                 .onAppear() {
-                    let userDefaults = ASAConfiguration.userDefaults
-                    let tempShouldShowSecondaryDates = userDefaults?.bool(forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
-                    if tempShouldShowSecondaryDates != nil {
-                        self.shouldShowSecondaryDates = tempShouldShowSecondaryDates!
-                    } else {
-                        self.shouldShowSecondaryDates = true
-                    }
-                    
                     self.primaryRow = self.userData.mainRows[0]
                     
                     self.secondaryRow = self.userData.mainRows[1]
@@ -87,10 +81,6 @@ struct ASAEventsView: View {
                     debugPrint(#file, #function, status)
                     
                     self.eventManager.requestAccessToCalendar()
-                }
-                .onDisappear() {
-                    let userDefaults = ASAConfiguration.userDefaults
-                    userDefaults?.set(self.shouldShowSecondaryDates, forKey: SHOULD_SHOW_SECONDARY_DATES_KEY)
                 }
                 
                 HStack {
