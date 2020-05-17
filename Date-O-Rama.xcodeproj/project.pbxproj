@@ -35,7 +35,7 @@
 		A5BFC5BC246BF3180075AF58 /* ASAHebrewCalendarSupplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5BB246BF3180075AF58 /* ASAHebrewCalendarSupplement.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */; };
-		A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */; };
+		A5C77C012433361400CFEE47 /* ASAClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksView.swift */; };
 		A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C022433361900CFEE47 /* Assets.xcassets */; };
 		A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C052433361900CFEE47 /* Preview Assets.xcassets */; };
 		A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */; };
@@ -107,7 +107,7 @@
 		A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "✨Date-O-Rama✨.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsView.swift; sourceTree = "<group>"; };
+		A5C77C002433361400CFEE47 /* ASAClocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksView.swift; sourceTree = "<group>"; };
 		A5C77C022433361900CFEE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C77C052433361900CFEE47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5C77C082433361900CFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -288,12 +288,12 @@
 				A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */,
 				A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */,
 				A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */,
+				A5C77C002433361400CFEE47 /* ASAClocksView.swift */,
 				A5BFC5AE246971AD0075AF58 /* ASAContentView.swift */,
 				A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */,
 				A5BFC5AC246971030075AF58 /* ASAEventsView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */,
 				A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */,
-				A5C77C002433361400CFEE47 /* ASAMainRowsView.swift */,
 				A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */,
 				A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */,
 				A517658B2460721A0039AFAF /* MapView.swift */,
@@ -476,7 +476,7 @@
 				A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */,
 				A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */,
 				A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */,
-				A5C77C012433361400CFEE47 /* ASAMainRowsView.swift in Sources */,
+				A5C77C012433361400CFEE47 /* ASAClocksView.swift in Sources */,
 				A5BFC5B12469CB240075AF58 /* UITabBarWrapper.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASACalendarLocationCell.swift in Sources */,
 				A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */,

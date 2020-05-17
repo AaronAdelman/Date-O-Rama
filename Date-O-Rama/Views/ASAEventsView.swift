@@ -129,6 +129,7 @@ struct ASAEventsView: View {
                     Spacer()
                 }.border(Color.gray)
             }
+            .navigationBarTitle(Text("EVENTS_TAB"))
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body

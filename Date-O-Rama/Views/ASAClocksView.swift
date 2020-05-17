@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsView.swift
+//  ASAClocksView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import CoreLocation
 
-struct ASAMainRowsView: View {
+struct ASAClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
 
@@ -44,7 +44,7 @@ struct ASAMainRowsView: View {
                     self.userData.savePreferences()
                 }
             }
-            .navigationBarTitle(Text("Date-O-Rama"))
+            .navigationBarTitle(Text("CLOCKS_TAB"))
             .navigationBarItems(
                 leading: EditButton(),
                 trailing: Button(
@@ -157,6 +157,6 @@ struct ASAMainRowsLocationSubcell:  View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsView().environmentObject(ASAUserData.shared())
+        ASAClocksView().environmentObject(ASAUserData.shared())
     }
 }
