@@ -138,11 +138,7 @@ struct ASAMainRowsLocationSubcell:  View {
     var body: some View {
         HStack {
             Spacer().frame(width: self.INSET)
-//            if row.usesDeviceLocation {
-//                Image(systemName: "location.fill")
-//            }
-//            Text((row.ISOCountryCode ?? "").flag())
-            Text("\((row.ISOCountryCode ?? "").flag())\(row.effectiveTimeZone.emoji(date:  self.now))\(row.usesDeviceLocation ? "📍" : "")")
+            Text(verbatim:  row.emoji(date:  self.now))
 
             if row.placeName == nil && row.locality == nil && row.country == nil {
                 if row.location != nil {

@@ -34,7 +34,10 @@ struct ASARowCell: View {
         HStack {
             VStack(alignment:  .leading) {
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.headline)
-                Text(verbatim: row.locationData.formattedOneLineAddress()).font(.subheadline)
+                HStack {
+                    Text(verbatim:  row.emoji(date:  Date()))
+                    Text(verbatim: row.locationData.formattedOneLineAddress()).font(.subheadline)
+                }
             }
             Spacer()
             if selectedUUIDString == self.row.uuid.uuidString {

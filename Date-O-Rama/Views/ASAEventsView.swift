@@ -59,7 +59,10 @@ struct ASAEventsView: View {
                         VStack(alignment:  .leading) {
                             Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
                             if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
-                                Text(verbatim: primaryRow.locationData.formattedOneLineAddress() )
+                                HStack {
+                                    Text(verbatim: primaryRow.emoji(date:  date))
+                                    Text(verbatim:  primaryRow.locationData.formattedOneLineAddress())
+                                }
                             }
                         }
                     }
@@ -69,7 +72,10 @@ struct ASAEventsView: View {
                             VStack(alignment:  .leading) {
                                 Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
                                 if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
-                                    Text(verbatim: secondaryRow.locationData.formattedOneLineAddress() )
+                                    HStack {
+                                        Text(verbatim: secondaryRow.emoji(date:  date))
+                                        Text(verbatim: secondaryRow.locationData.formattedOneLineAddress())
+                                    }
                                 }
                             }
                         }

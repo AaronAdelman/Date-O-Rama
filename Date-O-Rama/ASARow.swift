@@ -345,6 +345,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 } // class ASARow: NSObject
 
 
+// MARK :-
+
 extension ASARow {
     public func dateString(now:  Date) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
@@ -377,8 +379,17 @@ extension ASARow {
     public func timeString(now:  Date) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
     } // func timeString(now:  Date
-
+    
     public func supportsLocales() -> Bool {
         return self.calendar.supportsLocales
     } // func supportsLocales() -> Bool
+} // extension ASARow
+
+
+// MARK :-
+
+extension ASARow {
+    public func emoji(date:  Date) -> String {
+       return "\((self.ISOCountryCode ?? "").flag())\(self.effectiveTimeZone.emoji(date:  date))\(self.usesDeviceLocation ? "📍" : "")"
+    } // public func emoji(date:  Date) -> String
 } // extension ASARow
