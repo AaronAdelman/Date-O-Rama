@@ -24,6 +24,8 @@
 	<true/>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your events.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your contacts.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Foo</string>
 	<key>UIApplicationSceneManifest</key>
