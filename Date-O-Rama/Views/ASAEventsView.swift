@@ -12,7 +12,7 @@ import EventKit
 struct ASAEventsView: View {
     @ObservedObject var settings = ASAUserSettings()
 
-    var eventManager = ASAEventManager.shared()
+    @ObservedObject var eventManager = ASAEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
 //    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 1 ? ASAUserData.shared().mainRows[0] : ASARow.generic()

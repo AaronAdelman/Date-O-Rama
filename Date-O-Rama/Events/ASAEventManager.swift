@@ -26,6 +26,12 @@ class ASAEventManager:  NSObject, ObservableObject {
     override init() {
         super.init()
     } // init()
+    
+    @Published var ready:  Bool = false {
+        willSet {
+          objectWillChange.send()
+        }
+    }
 
     func loadCalendars() {
         self.calendars = eventStore.calendars(for: EKEntityType.event)
@@ -41,6 +47,7 @@ class ASAEventManager:  NSObject, ObservableObject {
                     debugPrint(#file, #function, "access granted")
                     self.loadCalendars()
                     //                self.refreshTableView()
+                    self.ready = true
                 })
             } else {
                 DispatchQueue.main.async(execute: {
