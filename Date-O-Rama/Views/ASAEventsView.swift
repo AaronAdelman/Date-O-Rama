@@ -87,19 +87,9 @@ struct ASAEventsView: View {
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                         event
                         in
-                        HStack {
-                            ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
-                            if self.settings.eventsViewShouldShowSecondaryDates {
-                                ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE)
-                            }
-                            Rectangle().frame(width:  2.0).foregroundColor(event.color)
-                            VStack(alignment: .leading) {
-                                Text(event.title).font(.headline)
-                                Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.systemGray))
-                            } // VStack
-                        } // HStack
-                    }
-                }
+                        ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates)
+                    } // ForEach
+                } // List
                 .onAppear() {
                     let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
                     debugPrint(#file, #function, status)
@@ -134,14 +124,59 @@ struct ASAEventsView: View {
                     
                     Spacer()
                 }.border(Color.gray)
-            }
+            } // VStack
             .navigationBarTitle(Text("EVENTS_TAB"))
+            
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
     
     let BOTTOM_BUTTONS_FONT_SIZE = Font.title
 } // struct ASAEventsView
+
+struct ASALinkedEventCell:  View {
+    var event:  ASAEventCompatible
+    var primaryRow:  ASARow
+    var secondaryRow:  ASARow
+    var timeWidth:  CGFloat
+    var timeFontSize:  Font
+    var eventsViewShouldShowSecondaryDates: Bool
+    
+    var body: some View {
+        Group {
+            if event.isEKEvent {
+                NavigationLink(destination: ASAEKEventView(event: event as! EKEvent)) {
+                    ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
+                }
+            } else {
+                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
+            }
+        }
+    }
+}
+
+struct ASAEventCell:  View {
+    var event:  ASAEventCompatible
+    var primaryRow:  ASARow
+    var secondaryRow:  ASARow
+    var timeWidth:  CGFloat
+    var timeFontSize:  Font
+    var eventsViewShouldShowSecondaryDates: Bool
+
+    var body: some View {
+        HStack {
+            ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
+            if self.eventsViewShouldShowSecondaryDates {
+                ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
+            }
+            Rectangle().frame(width:  2.0).foregroundColor(event.color)
+            VStack(alignment: .leading) {
+                Text(event.title).font(.headline)
+                Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.systemGray))
+            } // VStack
+        } // HStack
+    }
+}
 
 struct ASAStartAndEndTimesSubcell:  View {
     var event:  ASAEventCompatible

@@ -19,6 +19,7 @@ protocol ASAEventCompatible {
     var timeZone: TimeZone? { get }
     var color:  Color { get }
     var calendarTitle:  String { get }
+    var isEKEvent:  Bool { get }
 } // protocol ASAEventCompatible
 
 struct ASAEvent:  ASAEventCompatible {
@@ -31,9 +32,16 @@ struct ASAEvent:  ASAEventCompatible {
     var color:  Color
     var uuid = UUID()
     var calendarTitle: String
+    var isEKEvent: Bool = false
 } // struct ASAEvent
 
 extension EKEvent:  ASAEventCompatible {
+    var isEKEvent: Bool {
+        get {
+            return true
+        } // get
+    } // var isEKEvent
+    
     var color: Color {
         get {
             let calendarColor = self.calendar.cgColor ?? CGColor(genericGrayGamma2_2Gray: 0.5, alpha: 1.0)
