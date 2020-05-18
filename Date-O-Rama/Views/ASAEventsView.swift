@@ -51,6 +51,8 @@ struct ASAEventsView: View {
     let TIME_WIDTH = 100.0 as CGFloat
     let TIME_FONT_SIZE = Font.subheadline
         
+    @State var isNavBarHidden:  Bool = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -126,7 +128,12 @@ struct ASAEventsView: View {
                 }.border(Color.gray)
             } // VStack
             .navigationBarTitle(Text("EVENTS_TAB"))
-            
+            .navigationBarHidden(self.isNavBarHidden)
+            .onAppear {
+                self.isNavBarHidden = true
+            }.onDisappear {
+                self.isNavBarHidden = false
+            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
