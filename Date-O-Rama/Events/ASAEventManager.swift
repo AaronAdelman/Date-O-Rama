@@ -20,11 +20,13 @@ class ASAEventManager:  NSObject, ObservableObject {
         return sharedEventManager
     } // class func shared() -> ASAEventManager
     
-    let eventStore = EKEventStore()
+    @Published var eventStore = EKEventStore()
     @Published var calendars: [EKCalendar]?
     
     override init() {
         super.init()
+        
+        self.requestAccessToCalendar()
     } // init()
     
     @Published var ready:  Bool = false {

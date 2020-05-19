@@ -8,16 +8,14 @@
 
 import SwiftUI
 import EventKit
+import EventKitUI
 
 struct ASAEventsView: View {
     @ObservedObject var settings = ASAUserSettings()
-
+    
     @ObservedObject var eventManager = ASAEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
-//    @State var primaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 1 ? ASAUserData.shared().mainRows[0] : ASARow.generic()
-//    @State var secondaryRow:  ASARow = ASAUserData.shared().mainRows.count >= 2 ? ASAUserData.shared().mainRows[1] : ASARow.generic()
-//    @State var shouldShowSecondaryDates:  Bool = true
     var primaryRow:  ASARow {
         get {
             return settings.primaryRowUUIDString.row(backupIndex: 0)
@@ -50,7 +48,7 @@ struct ASAEventsView: View {
     
     let TIME_WIDTH = 100.0 as CGFloat
     let TIME_FONT_SIZE = Font.subheadline
-        
+    
     @State var isNavBarHidden:  Bool = false
     
     var body: some View {
@@ -89,19 +87,13 @@ struct ASAEventsView: View {
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                         event
                         in
-                        ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates)
+                        ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
                     } // ForEach
                 } // List
-                .onAppear() {
-                    let status = EKEventStore.authorizationStatus(for: EKEntityType.event)
-                    debugPrint(#file, #function, status)
-                    
-                    self.eventManager.requestAccessToCalendar()
-                }
                 
                 HStack {
                     Spacer()
-
+                    
                     Button(action: {
                         self.date = self.date.oneDayBefore
                     }) {
@@ -127,10 +119,10 @@ struct ASAEventsView: View {
                     Spacer()
                 }.border(Color.gray)
             } // VStack
-            .navigationBarTitle(Text("EVENTS_TAB"))
-            .navigationBarHidden(self.isNavBarHidden)
-            .onAppear {
-                self.isNavBarHidden = true
+                .navigationBarTitle(Text("EVENTS_TAB"))
+                .navigationBarHidden(self.isNavBarHidden)
+                .onAppear {
+                    self.isNavBarHidden = true
             }.onDisappear {
                 self.isNavBarHidden = false
             }
@@ -148,12 +140,43 @@ struct ASALinkedEventCell:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
+    var eventStore:  EKEventStore
+    @State private var action:  EKEventViewAction?
+    @State private var showingEventView = false
     
     var body: some View {
         Group {
             if event.isEKEvent {
-                NavigationLink(destination: ASAEKEventView(event: event as! EKEvent)) {
+                HStack {
                     ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
+                    
+                    Spacer()
+                    
+                    Button(action:  {
+                        self.showingEventView = true
+                    }, label:  {
+//                        Image(systemName: "info.circle")
+                        Text("ℹ️")
+                    }
+                    )
+                }
+                .sheet(isPresented: $showingEventView) {
+                    VStack {
+                        Spacer()
+                        
+                        HStack {
+                            Spacer().frame(width:  8.0)
+                            Button(action: {
+                                self.showingEventView = false
+                            }, label:  {
+//                                Image(systemName: "xmark")
+                                Text("❎")
+                            }
+                            )
+                            Spacer()
+                        }
+                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent)
+                    }
                 }
             } else {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
@@ -169,7 +192,7 @@ struct ASAEventCell:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
-
+    
     var body: some View {
         HStack {
             ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
