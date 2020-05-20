@@ -51,6 +51,9 @@ struct ASAEventsView: View {
     
     @State var isNavBarHidden:  Bool = false
     
+    @State private var action:  EKEventEditViewAction?
+    @State private var showingEventEditView = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -82,6 +85,12 @@ struct ASAEventsView: View {
                     }
                     Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
                         Text("Show secondary dates")
+                    }
+                    
+                    Button("➕") {
+                        self.showingEventEditView = true
+                    }.popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+                        ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
                     }
                     
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
@@ -152,32 +161,14 @@ struct ASALinkedEventCell:  View {
                     
                     Spacer()
                     
-                    Button(action:  {
+                    Button("ℹ️") {
                         self.showingEventView = true
-                    }, label:  {
-//                        Image(systemName: "info.circle")
-                        Text("ℹ️")
                     }
-                    )
-                }
-                .sheet(isPresented: $showingEventView) {
-                    VStack {
-                        Spacer()
-                        
-                        HStack {
-                            Spacer().frame(width:  8.0)
-                            Button(action: {
-                                self.showingEventView = false
-                            }, label:  {
-//                                Image(systemName: "xmark")
-                                Text("❎")
-                            }
-                            )
-                            Spacer()
-                        }
-                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent)
+                        .popover(isPresented: $showingEventView, arrowEdge: .leading) {
+                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }
                 }
+                
             } else {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
             }

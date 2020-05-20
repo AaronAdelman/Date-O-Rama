@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5152A062472BE430098A94B /* ASAEKEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5152A052472BE420098A94B /* ASAEKEventView.swift */; };
+		A5152A0A247410EA0098A94B /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */; };
 		A517658C2460721A0039AFAF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517658B2460721A0039AFAF /* MapView.swift */; };
 		A51A0837245B06B500135AA6 /* ASACalendarDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASACalendarDetailCell.swift */; };
 		A51A0839245B071B00135AA6 /* ASACalendarTimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */; };
@@ -78,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		A5152A052472BE420098A94B /* ASAEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventView.swift; sourceTree = "<group>"; };
+		A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
 		A517658B2460721A0039AFAF /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A51A0836245B06B500135AA6 /* ASACalendarDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailCell.swift; sourceTree = "<group>"; };
 		A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarTimeZoneCell.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		A5152A042472BE0B0098A94B /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
+				A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */,
 				A5152A052472BE420098A94B /* ASAEKEventView.swift */,
 				A517658B2460721A0039AFAF /* MapView.swift */,
 				A5BFC5B22469CB900075AF58 /* TabBarElement.swift */,
@@ -480,6 +483,7 @@
 				A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */,
 				A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
+				A5152A0A247410EA0098A94B /* ASAEKEventEditView.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
