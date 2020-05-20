@@ -16,7 +16,7 @@ struct ASAEKEventEditView:  UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
     
     func makeCoordinator() -> Coordinator {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
         
         return Coordinator(self)
     } // func makeCoordinator() -> Coordinator
@@ -25,7 +25,7 @@ struct ASAEKEventEditView:  UIViewControllerRepresentable {
     var eventStore:  EKEventStore
     
     func makeUIViewController(context: Context) -> EKEventEditViewController {
-        debugPrint(#file, #function, context)
+//        debugPrint(#file, #function, context)
 
         let eventEditViewController = EKEventEditViewController()
         eventEditViewController.event = event
@@ -36,7 +36,7 @@ struct ASAEKEventEditView:  UIViewControllerRepresentable {
     } // func makeUIViewController(context: Context) -> EKEventEditViewController
     
     func updateUIViewController(_ uiViewController: EKEventEditViewController, context: Context) {
-        debugPrint(#file, #function, uiViewController, context)
+//        debugPrint(#file, #function, uiViewController, context)
         
     } // func updateUIViewController(_ uiViewController: EKEventEditViewController, context: Context)
 
@@ -44,7 +44,7 @@ struct ASAEKEventEditView:  UIViewControllerRepresentable {
         var parent:  ASAEKEventEditView
         
         init(_ parent: ASAEKEventEditView) {
-            debugPrint(#file, #function, parent)
+//            debugPrint(#file, #function, parent)
 
             self.parent = parent
         } // init(_ parent: ASAEKEventEditView)

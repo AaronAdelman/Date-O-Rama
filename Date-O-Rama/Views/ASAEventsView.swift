@@ -87,11 +87,19 @@ struct ASAEventsView: View {
                         Text("Show secondary dates")
                     }
                     
+                    #if targetEnvironment(macCatalyst)
                     Button("➕") {
                         self.showingEventEditView = true
                     }.popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                         ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
                     }
+                    #else
+                    Button("➕") {
+                        self.showingEventEditView = true
+                    }.sheet(isPresented:  $showingEventEditView) {
+                        ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                    }
+                    #endif
                     
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                         event
@@ -160,13 +168,22 @@ struct ASALinkedEventCell:  View {
                     ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
                     
                     Spacer()
-                    
+                   
+                    #if targetEnvironment(macCatalyst)
                     Button("ⓘ") {
                         self.showingEventView = true
                     }
                         .popover(isPresented: $showingEventView, arrowEdge: .leading) {
                             ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }
+                    #else
+                    Button("ⓘ") {
+                        self.showingEventView = true
+                    }
+                        .sheet(isPresented: $showingEventView) {
+                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                    }
+                    #endif
                 }
                 
             } else {
