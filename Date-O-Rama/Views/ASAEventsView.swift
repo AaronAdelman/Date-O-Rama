@@ -161,7 +161,7 @@ struct ASALinkedEventCell:  View {
                     
                     Spacer()
                     
-                    Button("ℹ️") {
+                    Button("ⓘ") {
                         self.showingEventView = true
                     }
                         .popover(isPresented: $showingEventView, arrowEdge: .leading) {
