@@ -165,8 +165,8 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         case .decimalTwelveHour:
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
 
-        case .traditionalJewish:
-            result = self.traditionalJewishTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
+        case .JewishCalendricalCalculation:
+            result = self.JewishCalendricalCalculationTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
             
         case .short, .medium, .long, .full:
             result = self.sexagesimalTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
@@ -186,9 +186,9 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
     
-    func traditionalJewishTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
+    func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  1080.0, secondsPerMinutes:  76.0, minimumHourDigits:  1, minimumMinuteDigits:  4, minimumSecondDigits:  2)
-    } // func traditionalJewishTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
+    } // func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String
     
     func sexagesimalTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         return self.hoursMinutesSecondsTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier, minutesPerHour:  60.0, secondsPerMinutes:  60.0, minimumHourDigits:  1, minimumMinuteDigits:  2, minimumSecondDigits:  2)
@@ -215,7 +215,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         let secondString = numberFormatter.string(from: NSNumber(value:  integralSeconds))
         result = "\(hourString ?? ""):\(minuteString ?? ""):\(secondString ?? "") \(symbol)"
         return result
-    } // func traditionalJewishTimeString(hours:  Double, symbol:  String) -> String
+    } // func JewishCalendricalCalculationTimeString(hours:  Double, symbol:  String) -> String
 
     
     func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
@@ -482,7 +482,7 @@ class ASASunsetTransitionCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short, .decimalTwelveHour, .traditionalJewish]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short, .decimalTwelveHour, .JewishCalendricalCalculation]
     
     var supportsTimeFormats: Bool = true
     

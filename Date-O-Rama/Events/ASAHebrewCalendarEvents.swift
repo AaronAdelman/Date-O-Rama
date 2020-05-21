@@ -1,5 +1,5 @@
 //
-//  ASAHebrewCalendarSupplement.swift
+//  ASAHebrewCalendarEvents.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-13.
@@ -11,13 +11,13 @@ import CoreLocation
 import UIKit
 import SwiftUI
 
-class ASAHebrewCalendarSupplement {
+class ASAHebrewCalendarEvents {
     class func eventDetails(startDate:  Date, endDate:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
         debugPrint(#file, #function, startDate, endDate, location, timeZone)
         var now = startDate.oneDayBefore
         var result:  Array<ASAEvent> = []
         repeat {
-            let temp = ASAHebrewCalendarSupplement.eventDetails(date: now, location: location, timeZone: timeZone)
+            let temp = ASAHebrewCalendarEvents.eventDetails(date: now, location: location, timeZone: timeZone)
             for event in temp {
                 if !(event.endDate < startDate || event.startDate >= endDate) {
                     result.append(event)

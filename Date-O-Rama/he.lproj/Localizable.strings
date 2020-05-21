@@ -196,20 +196,20 @@
 
 "HEADER_Date_format" = "מבנה תאריך";
 "HEADER_Time_format" = "מבנה זמן";
-"ITEM_None"          = "אין";
-"ITEM_Full"          = "מלא";
-"ITEM_Long"          = "ארוך";
-"ITEM_Medium"        = "בינוני";
-"ITEM_Short"         = "מקוצר";
-"ITEM_Components"    = "רכיבים";
+"ITEM_None"                         = "אין";
+"ITEM_Full"                         = "מלא";
+"ITEM_Long"                         = "ארוך";
+"ITEM_Medium"                       = "בינוני";
+"ITEM_Short"                        = "מקוצר";
+"ITEM_Components"                   = "רכיבים";
 //"ITEM_Raw_LDML"      = "Raw LDML";
-"ITEM_ISO8601YearMonthDay" = "ISO 8601 (שנה-חודש-יום)";
-"ITEM_ISO8601YearWeekDay"  = "ISO 8601 (שנה-שבוע-יום)";
-"ITEM_ISO8601YearDay"      = "ISO 8601 (שנה-יום)";
-"ITEM_decimalTwelveHour"   = "עשרוני 12 שעות";
-"ITEM_traditionalJewish"   = "יהודי מסורתי";
-"ITEM_decimal"             = "עשרוני";
-"ITEM_hexadecimal"         = "הקסדצימלי";
+"ITEM_ISO8601YearMonthDay"          = "ISO 8601 (שנה-חודש-יום)";
+"ITEM_ISO8601YearWeekDay"           = "ISO 8601 (שנה-שבוע-יום)";
+"ITEM_ISO8601YearDay"               = "ISO 8601 (שנה-יום)";
+"ITEM_decimalTwelveHour"            = "עשרוני 12 שעות";
+"ITEM_JewishCalendricalCalculation" = "יהודי, חישוב הלוח";
+"ITEM_decimal"                      = "עשרוני";
+"ITEM_hexadecimal"                  = "הקסדצימלי";
 
 "HEADER_Date" = "רכיבי תאריך";
 

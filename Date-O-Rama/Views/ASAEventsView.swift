@@ -40,7 +40,7 @@ struct ASAEventsView: View {
         let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
         
         let row = self.primaryRow
-        let HebrewCalendarEvents: [ASAEvent] = ASAHebrewCalendarSupplement.eventDetails(startDate:  startDate, endDate: endDate, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
+        let HebrewCalendarEvents: [ASAEvent] = ASAHebrewCalendarEvents.eventDetails(startDate:  startDate, endDate: endDate, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
         let unsortedEvents: [ASAEventCompatible] = externalEvents + HebrewCalendarEvents
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
