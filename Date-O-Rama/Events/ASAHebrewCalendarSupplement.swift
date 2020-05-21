@@ -13,11 +13,16 @@ import SwiftUI
 
 class ASAHebrewCalendarSupplement {
     class func eventDetails(startDate:  Date, endDate:  Date, location:  CLLocation, timeZone:  TimeZone) -> Array<ASAEvent> {
+        debugPrint(#file, #function, startDate, endDate, location, timeZone)
+        var now = startDate.oneDayBefore
         var result:  Array<ASAEvent> = []
-        var now = startDate
         repeat {
             let temp = ASAHebrewCalendarSupplement.eventDetails(date: now, location: location, timeZone: timeZone)
-            result = result + temp
+            for event in temp {
+                if !(event.endDate < startDate || event.startDate >= endDate) {
+                    result.append(event)
+                }
+            } // for event in tempResult
             now = now.oneDayAfter
         } while now < endDate
         
