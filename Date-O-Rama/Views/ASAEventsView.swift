@@ -10,6 +10,9 @@ import SwiftUI
 import EventKit
 import EventKitUI
 
+let INFO_STRING     = "ⓘ"
+let BIG_PLUS_STRING = "➕"
+
 struct ASAEventsView: View {
     @ObservedObject var settings = ASAUserSettings()
     
@@ -88,17 +91,17 @@ struct ASAEventsView: View {
                     }
                     
                     #if targetEnvironment(macCatalyst)
-                    Button("➕") {
+                    Button(BIG_PLUS_STRING) {
                         self.showingEventEditView = true
                     }.popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                         ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                    }
+                    }.foregroundColor(.accentColor)
                     #else
-                    Button("➕") {
+                    Button(BIG_PLUS_STRING) {
                         self.showingEventEditView = true
                     }.sheet(isPresented:  $showingEventEditView) {
                         ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                    }
+                    }.foregroundColor(.accentColor)
                     #endif
                     
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
@@ -123,7 +126,7 @@ struct ASAEventsView: View {
                         self.date = Date()
                     }) {
                         Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
-                    }
+                    }.foregroundColor(.accentColor)
                     
                     Spacer().frame(width:  50)
                     
@@ -170,19 +173,19 @@ struct ASALinkedEventCell:  View {
                     Spacer()
                    
                     #if targetEnvironment(macCatalyst)
-                    Button("ⓘ") {
+                    Button(INFO_STRING) {
                         self.showingEventView = true
                     }
                         .popover(isPresented: $showingEventView, arrowEdge: .leading) {
                             ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
-                    }
+                    }.foregroundColor(.accentColor)
                     #else
-                    Button("ⓘ") {
+                    Button(INFO_STRING) {
                         self.showingEventView = true
                     }
                         .sheet(isPresented: $showingEventView) {
                             ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
-                    }
+                    }.foregroundColor(.accentColor)
                     #endif
                 }
                 
