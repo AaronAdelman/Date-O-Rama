@@ -11,7 +11,7 @@ import EventKit
 import EventKitUI
 
 let INFO_STRING     = "ⓘ"
-let BIG_PLUS_STRING = "➕"
+let BIG_PLUS_STRING = "Add external event"
 
 struct ASAEventsView: View {
     @ObservedObject var settings = ASAUserSettings()
@@ -91,17 +91,27 @@ struct ASAEventsView: View {
                     }
                     
                     #if targetEnvironment(macCatalyst)
-                    Button(BIG_PLUS_STRING) {
-                        self.showingEventEditView = true
-                    }.popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+                    Button(action:
+                        {
+                            self.showingEventEditView = true
+                    }, label:  {
+                        Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
+                    })
+                    .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                         ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                    }.foregroundColor(.accentColor)
+                    }
+                    .foregroundColor(.accentColor)
                     #else
-                    Button(BIG_PLUS_STRING) {
-                        self.showingEventEditView = true
-                    }.sheet(isPresented:  $showingEventEditView) {
-                        ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                    }.foregroundColor(.accentColor)
+                    Button(action:
+                        {
+                            self.showingEventEditView = true
+                    }, label:  {
+                        Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
+                    })
+                        .sheet(isPresented:  $showingEventEditView) {
+                            ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                    }
+                    .foregroundColor(.accentColor)
                     #endif
                     
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
