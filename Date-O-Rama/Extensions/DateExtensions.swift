@@ -70,7 +70,7 @@ extension Date {
             // Guarding against there being no Sunset
             return self.sixPM(timeZone: timeZone)
         }
-        if self > sunset!! {
+        if self >= sunset!! {
             return self.nextGMTNoon()
         } else {
             return self
