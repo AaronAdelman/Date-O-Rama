@@ -27,6 +27,11 @@ class ASAEventManager:  NSObject, ObservableObject {
         super.init()
         
         self.requestAccessToCalendar()
+        NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {notification
+            in
+            debugPrint(#file, #function, notification)
+            self.objectWillChange.send()
+        })
     } // init()
     
     @Published var ready:  Bool = false {

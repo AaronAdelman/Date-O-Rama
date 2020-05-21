@@ -39,12 +39,10 @@ extension ASALocationData {
     func formattedOneLineAddress() -> String {
         let separator = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
         
-//        var temp = self.name ?? ""
         var temp = ""
-
-//        if self.locality != nil && self.locality != self.name {
-            if self.locality != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
+        
+        if self.locality != nil {
+            temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
         }
         
         if self.administrativeArea != nil {
@@ -64,7 +62,6 @@ let UPDATED_LOCATION = "UPDATED_LOCATION"
 
 
 // MARK: -
-
 
 class ASALocationManager: NSObject, ObservableObject {
     private static var sharedLocationManager: ASALocationManager = {
@@ -95,18 +92,6 @@ class ASALocationManager: NSObject, ObservableObject {
             objectWillChange.send()
         }
     }
-    
-    //    @Published var lastDeviceLocation: CLLocation? {
-    //        willSet {
-    //            objectWillChange.send()
-    //        }
-    //    }
-    //
-    //    @Published var lastDevicePlacemark: CLPlacemark? {
-    //        willSet {
-    //            objectWillChange.send()
-    //        }
-    //    }
     
     private var lastDeviceLocation: CLLocation?
     
@@ -149,7 +134,6 @@ extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        //        self.lastLocation = location
         //        print(#function, location)
         let Δ = self.lastDeviceLocation?.distance(from: location)
 
@@ -160,7 +144,6 @@ extension ASALocationManager: CLLocationManagerDelegate {
                 
                 self.lastDevicePlacemark = place
                 self.lastDeviceLocation = location
-//                let tempLocationData = ASALocationData(location: location, name: place?.name, locality: place?.locality, country: place?.country, ISOCountryCode: place?.isoCountryCode, timeZone:  place?.timeZone)
                 let tempLocationData = ASALocationData.create(placemark: place)
                 self.locationData = tempLocationData
                 self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
