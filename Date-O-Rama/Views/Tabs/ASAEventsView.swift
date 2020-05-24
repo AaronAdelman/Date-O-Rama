@@ -37,11 +37,15 @@ struct ASAEventsView: View {
     } // var secondaryRow
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
+        var unsortedEvents: [ASAEventCompatible] = []
+        if settings.useExternalEvents {
         let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
+            unsortedEvents = unsortedEvents + externalEvents
+        }
         
         let row = self.primaryRow
         let HebrewCalendarEvents: [ASAEvent] = ASAHebrewCalendarEvents.eventDetails(startDate:  startDate, endDate: endDate, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
-        let unsortedEvents: [ASAEventCompatible] = externalEvents + HebrewCalendarEvents
+        unsortedEvents = unsortedEvents + HebrewCalendarEvents
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
@@ -90,29 +94,31 @@ struct ASAEventsView: View {
                         Text("Show secondary dates")
                     }
                     
-                    #if targetEnvironment(macCatalyst)
-                    Button(action:
-                        {
-                            self.showingEventEditView = true
-                    }, label:  {
-                        Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
-                    })
-                    .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                        ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                    if settings.useExternalEvents {
+                        #if targetEnvironment(macCatalyst)
+                        Button(action:
+                            {
+                                self.showingEventEditView = true
+                        }, label:  {
+                            Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
+                        })
+                            .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+                                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                        }
+                        .foregroundColor(.accentColor)
+                        #else
+                        Button(action:
+                            {
+                                self.showingEventEditView = true
+                        }, label:  {
+                            Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
+                        })
+                            .sheet(isPresented:  $showingEventEditView) {
+                                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                        }
+                        .foregroundColor(.accentColor)
+                        #endif
                     }
-                    .foregroundColor(.accentColor)
-                    #else
-                    Button(action:
-                        {
-                            self.showingEventEditView = true
-                    }, label:  {
-                        Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
-                    })
-                        .sheet(isPresented:  $showingEventEditView) {
-                            ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                    }
-                    .foregroundColor(.accentColor)
-                    #endif
                     
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                         event

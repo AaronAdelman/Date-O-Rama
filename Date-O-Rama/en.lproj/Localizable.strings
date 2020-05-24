@@ -261,8 +261,9 @@
 "Use device location" = "Use device location";
 "Requested address"   = "Requested address";
 
-"CLOCKS_TAB" = "Clocks";
-"EVENTS_TAB" = "Events";
+"CLOCKS_TAB"      = "Clocks";
+"EVENTS_TAB"      = "Events";
+"PREFERENCES_TAB" = "Preferences";
 
 "All day" = "All day";
 "INTERVAL_SEPARATOR" = " - ";
@@ -272,3 +273,5 @@
 "Jewish calendar" = "Jewish calendar";
 
 "Add external event" = "Add external event";
+
+"Use external events" = "Use external events";

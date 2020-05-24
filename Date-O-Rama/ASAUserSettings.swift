@@ -13,6 +13,7 @@ import Combine
 let PRIMARY_ROW_UUID_KEY:  String   = "ASAEventsView_ROW_1_UUID"
 let SECONDARY_ROW_UUID_KEY:  String = "ASAEventsView_ROW_2_UUID"
 let SHOULD_SHOW_SECONDARY_DATES_KEY:  String = "ASAEventsView_SHOULD_SHOW_SECONDARY_DATES"
+let USE_EXTERNAL_EVENTS:  String = "ASAUserData_USE_EXTERNAL_EVENTS"
 
 
 @propertyWrapper
@@ -58,5 +59,13 @@ final class ASAUserSettings: ObservableObject {
         willSet {
             objectWillChange.send()
         }
-    } //
+    } // var secondaryRowUUIDString
+    
+    @UserDefault(USE_EXTERNAL_EVENTS, defaultValue: true)
+    var useExternalEvents: Bool {
+        willSet {
+            objectWillChange.send()
+        }
+    } // var useExternalEvents
+
 }

@@ -261,8 +261,9 @@
 "Use device location" = "השתמש במיקום המכשיר";
 "Requested address"   = "כתובת מבוקשת";
 
-"CLOCKS_TAB" = "שעונים";
-"EVENTS_TAB" = "אירועים";
+"CLOCKS_TAB"      = "שעונים";
+"EVENTS_TAB"      = "אירועים";
+"PREFERENCES_TAB" = "הגדרות";
 
 "All day" = "יום שלם";
 "INTERVAL_SEPARATOR" = " - ";
@@ -272,3 +273,5 @@
 "Jewish calendar" = "לוח יהודי";
 
 "Add external event" = "הוסף אירוע חיצוני";
+
+"Use external events" = "השתמש אירועים חיצוניים";
