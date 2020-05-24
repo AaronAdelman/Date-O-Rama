@@ -42,12 +42,12 @@ enum ASASolarEvent {
     // This enum encapsulates parameters for Solar events of interest
     case sunrise
     case sunset
-    case morningCivilTwilight
-    case eveningCivilTwilight
-    case morningNauticalTwilight
-    case eveningNauticalTwilight
-    case morningAstronomicalTwilight
-    case eveningAstronomicalTwilight
+    case civilDawn
+    case civilDusk
+    case nauticalDawn
+    case nauticalDusk
+    case astronomicalDawn
+    case astronomicalDusk
     
     case dawn
     case recognition
@@ -57,11 +57,11 @@ enum ASASolarEvent {
         switch self {
         case .sunrise, .sunset:
             return 90.0 + (50.0 / 60.0)
-        case .morningCivilTwilight, .eveningCivilTwilight:
+        case .civilDawn, .civilDusk:
             return 96.0
-        case .morningNauticalTwilight, .eveningNauticalTwilight:
+        case .nauticalDawn, .nauticalDusk:
             return 102.0
-        case .morningAstronomicalTwilight, .eveningAstronomicalTwilight:
+        case .astronomicalDawn, .astronomicalDusk:
             return 108.0
             
         case .dawn:
@@ -75,9 +75,9 @@ enum ASASolarEvent {
     
     func rising() -> Bool {
         switch self {
-        case .sunrise, .morningCivilTwilight, .morningNauticalTwilight, .morningAstronomicalTwilight:
+        case .sunrise, .civilDawn, .nauticalDawn, .astronomicalDawn:
             return true
-        case .sunset, .eveningCivilTwilight, .eveningNauticalTwilight, .eveningAstronomicalTwilight:
+        case .sunset, .civilDusk, .nauticalDusk, .astronomicalDusk:
             return false
         case .dawn, .recognition:
             return true
