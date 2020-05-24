@@ -16,7 +16,7 @@ let BIG_PLUS_STRING = "Add external event"
 struct ASAEventsView: View {
     @ObservedObject var settings = ASAUserSettings()
     
-    @ObservedObject var eventManager = ASAEventManager.shared()
+    @ObservedObject var eventManager = ASAExternalEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
     var primaryRow:  ASARow {
@@ -252,6 +252,6 @@ struct ASAStartAndEndTimesSubcell:  View {
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsView(settings: ASAUserSettings(), eventManager: ASAEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
+        ASAEventsView(settings: ASAUserSettings(), eventManager: ASAExternalEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
     }
 }

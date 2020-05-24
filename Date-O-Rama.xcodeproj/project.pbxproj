@@ -32,7 +32,7 @@
 		A5BFC5AF246971AD0075AF58 /* ASAContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AE246971AD0075AF58 /* ASAContentView.swift */; };
 		A5BFC5B12469CB240075AF58 /* UITabBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B02469CB230075AF58 /* UITabBarWrapper.swift */; };
 		A5BFC5B32469CB900075AF58 /* TabBarElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B22469CB900075AF58 /* TabBarElement.swift */; };
-		A5BFC5B5246AB5B50075AF58 /* ASAEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEventManager.swift */; };
+		A5BFC5B5246AB5B50075AF58 /* ASAExternalEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAExternalEventManager.swift */; };
 		A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
 		A5BFC5BC246BF3180075AF58 /* ASAHebrewCalendarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5BB246BF3180075AF58 /* ASAHebrewCalendarEvents.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
@@ -105,7 +105,7 @@
 		A5BFC5AE246971AD0075AF58 /* ASAContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAContentView.swift; sourceTree = "<group>"; };
 		A5BFC5B02469CB230075AF58 /* UITabBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarWrapper.swift; sourceTree = "<group>"; };
 		A5BFC5B22469CB900075AF58 /* TabBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarElement.swift; sourceTree = "<group>"; };
-		A5BFC5B4246AB5B50075AF58 /* ASAEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventManager.swift; sourceTree = "<group>"; };
+		A5BFC5B4246AB5B50075AF58 /* ASAExternalEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAExternalEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
 		A5BFC5BB246BF3180075AF58 /* ASAHebrewCalendarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAHebrewCalendarEvents.swift; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "✨Date-O-Rama✨.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A5BFC5B6246B29600075AF58 /* ASAEvent.swift */,
-				A5BFC5B4246AB5B50075AF58 /* ASAEventManager.swift */,
+				A5BFC5B4246AB5B50075AF58 /* ASAExternalEventManager.swift */,
 				A5BFC5BB246BF3180075AF58 /* ASAHebrewCalendarEvents.swift */,
 			);
 			path = Events;
@@ -455,7 +455,7 @@
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */,
-				A5BFC5B5246AB5B50075AF58 /* ASAEventManager.swift in Sources */,
+				A5BFC5B5246AB5B50075AF58 /* ASAExternalEventManager.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
 				A5BFC5AD246971030075AF58 /* ASAEventsView.swift in Sources */,
 				A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ASAEventManager.swift
+//  ASAExternalEventManager.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-12.
@@ -9,14 +9,14 @@
 import Foundation
 import EventKit
 
-class ASAEventManager:  NSObject, ObservableObject {
-    private static var sharedEventManager: ASAEventManager = {
-        let eventManager = ASAEventManager()
+class ASAExternalEventManager:  NSObject, ObservableObject {
+    private static var sharedEventManager: ASAExternalEventManager = {
+        let eventManager = ASAExternalEventManager()
         
         return eventManager
     }()
     
-    class func shared() -> ASAEventManager {
+    class func shared() -> ASAExternalEventManager {
         return sharedEventManager
     } // class func shared() -> ASAEventManager
     
@@ -26,7 +26,7 @@ class ASAEventManager:  NSObject, ObservableObject {
     override init() {
         super.init()
         
-        self.requestAccessToCalendar()
+        self.requestAccessToExternalCalendars()
         NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {notification
             in
             debugPrint(#file, #function, notification)
@@ -40,19 +40,19 @@ class ASAEventManager:  NSObject, ObservableObject {
         }
     }
 
-    func loadCalendars() {
+    func loadExternalCalendars() {
         self.calendars = eventStore.calendars(for: EKEntityType.event)
 //        debugPrint(#file, #function, self.calendars as Any)
-    } // func loadCalendars()
+    } // func loadExternalCalendars()
     
-    public func requestAccessToCalendar() {
+    public func requestAccessToExternalCalendars() {
         eventStore.requestAccess(to: EKEntityType.event, completion: {
             (accessGranted: Bool, error: Error?) in
             
             if accessGranted == true {
                 DispatchQueue.main.async(execute: {
                     debugPrint(#file, #function, "access granted")
-                    self.loadCalendars()
+                    self.loadExternalCalendars()
                     //                self.refreshTableView()
                     self.ready = true
                 })
@@ -63,7 +63,7 @@ class ASAEventManager:  NSObject, ObservableObject {
                 })
             }
         })
-    } // func requestAccessToCalendar()
+    } // func requestAccessToExternalCalendars()
     
     public func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible> {
         // Use an event store instance to create and properly configure an NSPredicate
@@ -79,4 +79,4 @@ class ASAEventManager:  NSObject, ObservableObject {
         return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
     
-} // class ASAEventManager
+} // class ASAExternalEventManager
