@@ -276,11 +276,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
         if timeZoneIdentifier != nil {
-//            if timeZoneIdentifier! == AUTOUPDATING_CURRENT_TIME_ZONE_VALUE {
-//                newRow.timeZone = TimeZone.autoupdatingCurrent
-//            } else {
-                newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
-//            }
+            newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
         }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool
@@ -326,12 +322,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
-    
-//    class func dummy() -> ASARow {
-//        let temp = ASARow()
-//        temp.dummy = true
-//        return temp
-//    } // func dummy() -> ASARow
     
     func copy() -> ASARow {
         let tempRow = ASARow()

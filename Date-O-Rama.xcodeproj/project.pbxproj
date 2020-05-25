@@ -189,6 +189,17 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		A57BCCAB247BB3440019C02C /* Clocks */ = {
+			isa = PBXGroup;
+			children = (
+				A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */,
+				A5E4719D2463F938002BB471 /* ASAMajorTimeFormat.swift */,
+				A5C77C2E2433371700CFEE47 /* ASARow.swift */,
+				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
+			);
+			path = Clocks;
+			sourceTree = "<group>";
+		};
 		A58AE62A244C6DFF00A64B67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,14 +273,11 @@
 				A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
-				A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */,
-				A5E4719D2463F938002BB471 /* ASAMajorTimeFormat.swift */,
-				A5C77C2E2433371700CFEE47 /* ASARow.swift */,
-				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 				A5622E23246DA597008E5C2D /* ASAUserSettings.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
 				A5BDB7CE244DAE3E0027704F /* Calendars */,
+				A57BCCAB247BB3440019C02C /* Clocks */,
 				A5BFC5B8246BED860075AF58 /* Events */,
 				A5BDB7C7244D9F760027704F /* Extensions */,
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
