@@ -23,9 +23,11 @@ final class ASAUserData:  ObservableObject {
     } // class func shared() -> ASAUserData
 
     @Published var mainRows:  Array<ASARow>
+    @Published var internalEventCalendars:  Array<ASAInternalEventCalendar>
     
     init() {
         self.mainRows = ASAConfiguration.rowArray(key: .app)
+        self.internalEventCalendars = [] // TODO:  FIX THIS!
         let coder = CLGeocoder();
         for row in self.mainRows {
             if row.location != nil {

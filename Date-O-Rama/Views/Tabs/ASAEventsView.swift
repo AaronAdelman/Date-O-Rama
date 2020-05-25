@@ -43,9 +43,12 @@ struct ASAEventsView: View {
             unsortedEvents = unsortedEvents + externalEvents
         }
         
-        let row = self.primaryRow
-        let HebrewCalendarEvents: [ASAEvent] = ASAHebrewCalendarEvents.eventDetails(startDate:  startDate, endDate: endDate, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone)
-        unsortedEvents = unsortedEvents + HebrewCalendarEvents
+//        let row = self.primaryRow
+//        let HebrewCalendarEvents: [ASAEvent] = ASADailyJewishEventSource().eventDetails(startDate:  startDate, endDate: endDate, location: row.locationData.location ?? CLLocation.NullIsland, timeZone: row.effectiveTimeZone, eventCalendarName: "✡")
+//        unsortedEvents = unsortedEvents + HebrewCalendarEvents
+        for eventCalendar in userData.internalEventCalendars {
+            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate)
+        }
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending

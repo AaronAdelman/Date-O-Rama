@@ -14,7 +14,7 @@ struct ASATabBarView: View {
             TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("CLOCKS_TAB", comment: ""), systemImageName: "clock")) {
                 ASAClocksView().environmentObject(ASAUserData.shared())
             },
-            TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("EVENTS_TAB", comment: ""), systemImageName: "list.dash")) {
+            TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("EVENTS_TAB", comment: ""), systemImageName: "rectangle")) {
                 ASAEventsView().environmentObject(ASAUserData.shared())
             },
             TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("PREFERENCES_TAB", comment: ""), systemImageName: "gear")) {
