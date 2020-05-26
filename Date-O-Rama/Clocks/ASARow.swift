@@ -373,12 +373,3 @@ extension ASARow {
         return self.calendar.supportsLocales
     } // func supportsLocales() -> Bool
 } // extension ASARow
-
-
-// MARK :-
-
-extension ASARow {
-    public func emoji(date:  Date) -> String {
-       return "\((self.ISOCountryCode ?? "").flag())\(self.effectiveTimeZone.emoji(date:  date))\(self.usesDeviceLocation ? "📍" : "")"
-    } // public func emoji(date:  Date) -> String
-} // extension ASARow

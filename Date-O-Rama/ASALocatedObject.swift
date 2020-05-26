@@ -84,3 +84,12 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     } // func handle(notification:  Notification) -> Void
     
 } // class ASALocatedObject
+
+
+// MARK :-
+
+extension ASALocatedObject {
+    public func emoji(date:  Date) -> String {
+        return "\((self.locationData.ISOCountryCode ?? "").flag())\(self.effectiveTimeZone.emoji(date:  date))\(self.usesDeviceLocation ? "📍" : "")"
+    } // public func emoji(date:  Date) -> String
+} // extension ASARow
