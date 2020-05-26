@@ -12,8 +12,21 @@ import CoreLocation
 class ASAInternalEventCalendar:  ASALocatedObject {
     var eventSource:  ASAInternalEventSource?
     
-    func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent> {
+    public func dictionary() -> Dictionary<String, Any> {
         
+        return [:]
+    }
+    
+    public class func newInternalEventCalendar(dictionary:  Dictionary<String, Any>) -> ASAInternalEventCalendar {
+        
+        return ASAInternalEventCalendar()
+    }
+    
+    func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent> {
+        if eventSource == nil || self.locationData.location == nil {
         return []
+        }
+        
+        return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, location: self.locationData.location!, timeZone: self.effectiveTimeZone, eventCalendarName: self.eventSource!.eventCalendarName(locationData:  locationData))
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 } // class ASAInternalEventCalendar

@@ -17,6 +17,7 @@ class ASAInternalEventCalendarFactory {
             let result = ASAInternalEventCalendar()
             result.eventSource = ASADailyJewishEventSource()
             result.locationData = ASALocationManager.shared().locationData
+            result.usesDeviceLocation = true
             return result
             
         default:

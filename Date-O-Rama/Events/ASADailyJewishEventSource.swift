@@ -121,5 +121,9 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
             ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: dusk, endDate: dusk, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
             ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: otherDusk, endDate: otherDusk, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
         ]
-    } // func HebrewEventDetails(date:  Date, location:  CLLocation) -> Array<ASADetail>
-} // class ASAHebrewCalendarEvents
+    } // func eventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName: String) -> Array<ASAEvent>
+    
+    func eventCalendarName(locationData:  ASALocationData) -> String {
+        return "\(NSLocalizedString("Jewish calendar", comment: "")) • \(locationData.formattedOneLineAddress())"
+    } // func eventCalendarName(locationData:  ASALocationData) -> String
+} // class ASADailyJewishEventSource

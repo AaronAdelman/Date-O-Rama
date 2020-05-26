@@ -274,4 +274,7 @@
 
 "Add external event" = "הוסף אירוע חיצוני";
 
-"Use external events" = "השתמש אירועים חיצוניים";
+"Use external events" = "השתמש באירועים חיצוניים";
+
+"External events" = "אירועים חיצוניים";
+"Internal events" = "אירועים פנימיים";

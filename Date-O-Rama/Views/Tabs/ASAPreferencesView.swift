@@ -10,17 +10,21 @@ import SwiftUI
 
 struct ASAPreferencesView: View {
     @ObservedObject var settings = ASAUserSettings()
-
+    
     var body: some View {
         List {
             Text("PREFERENCES_TAB").font(.largeTitle).bold()
-            Divider()
-            Toggle(isOn: $settings.useExternalEvents) {
-                Text("Use external events")
-            }
-        }
-    }
-}
+            Section(header:  Text("External events")) {
+                Toggle(isOn: $settings.useExternalEvents) {
+                    Text("Use external events")
+                }
+            } // Section
+            Section(header:  Text("Internal events")) {
+                Text("")
+            } // Section
+        } // List
+    } // var body
+} // struct ASAPreferencesView
 
 struct ASAPreferencesView_Previews: PreviewProvider {
     static var previews: some View {

@@ -13,4 +13,5 @@ protocol ASAInternalEventSource {
     var eventSourceCode:  ASAInternalEventSourceCode { get }
 
     func eventDetails(startDate:  Date, endDate:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName:  String) -> Array<ASAEvent>
+    func eventCalendarName(locationData:  ASALocationData) -> String
 } // protocol ASAInternalEventSource

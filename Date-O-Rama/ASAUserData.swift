@@ -27,7 +27,7 @@ final class ASAUserData:  ObservableObject {
     
     init() {
         self.mainRows = ASAConfiguration.rowArray(key: .app)
-        self.internalEventCalendars = [] // TODO:  FIX THIS!
+        self.internalEventCalendars = [ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!] // TODO:  FIX THIS!
         let coder = CLGeocoder();
         for row in self.mainRows {
             if row.location != nil {
