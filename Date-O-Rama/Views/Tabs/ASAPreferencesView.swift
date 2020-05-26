@@ -15,22 +15,51 @@ struct ASAPreferencesView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header:  Text("External events")) {
+                Section(header:  HStack {
+                    Text("External events")
+                }) {
                     Toggle(isOn: $settings.useExternalEvents) {
                         Text("Use external events")
                     }
                 } // Section
-                Section(header:  Text("Internal events")) {
-                    ForEach(userData.internalEventCalendars) {
+                
+                Section(header:  HStack {
+                    Text("Internal events")
+                }) {
+                    ForEach(userData.internalEventCalendars, id:  \.uuid) {
                         eventCalendar
                         in
                         ASAInternalEventCalendarCell(eventCalendar:  eventCalendar)
+                    } // ForEach(userData.internalEventCalendars)
+                        .onMove { (source: IndexSet, destination: Int) -> Void in
+                            self.userData.internalEventCalendars.move(fromOffsets: source, toOffset: destination)
+                            self.userData.savePreferences()
+                    }
+                    .onDelete { indices in
+                        indices.forEach {
+                            debugPrint("\(#file) \(#function)")
+                            self.userData.internalEventCalendars.remove(at: $0) }
+                        self.userData.savePreferences()
                     }
                 } // Section
             } // List
                 .navigationBarTitle(Text("PREFERENCES_TAB"))
+                .navigationBarItems(
+                    leading: EditButton(),
+                    trailing: Button(
+                        action: {
+                            withAnimation {
+                                self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
+                                self.userData.savePreferences()
+                            }
+                    }
+                    ) {
+                        Text(verbatim:  "➕")
+                    }
+            )
         }// NavigationView
             .navigationViewStyle(StackNavigationViewStyle())
+        
     } // var body
 } // struct ASAPreferencesView
 
