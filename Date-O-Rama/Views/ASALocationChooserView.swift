@@ -10,7 +10,8 @@ import SwiftUI
 import CoreLocation
 
 struct ASALocationChooserView: View {
-    @ObservedObject var row:  ASARow
+//    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASALocatedObject
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocationData> = []
     @State var tempLocationData:  ASALocationData = ASALocationData()
@@ -51,7 +52,7 @@ struct ASALocationChooserView: View {
                 } // Section
             }
         }
-        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
+//        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
         .onAppear() {
             self.tempUsesDeviceLocation = self.row.usesDeviceLocation
             self.tempLocationData = self.row.locationData

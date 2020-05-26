@@ -27,6 +27,7 @@
 		A57BCCB3247BC28C0019C02C /* ASAInternalEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB2247BC28B0019C02C /* ASAInternalEventSource.swift */; };
 		A57BCCB5247BC33A0019C02C /* ASAInternalEventSourceCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB4247BC33A0019C02C /* ASAInternalEventSourceCode.swift */; };
 		A57BCCB7247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB6247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift */; };
+		A57BCCB9247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */; };
 		A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASACalendarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */; };
@@ -107,6 +108,7 @@
 		A57BCCB2247BC28B0019C02C /* ASAInternalEventSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventSource.swift; sourceTree = "<group>"; };
 		A57BCCB4247BC33A0019C02C /* ASAInternalEventSourceCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventSourceCode.swift; sourceTree = "<group>"; };
 		A57BCCB6247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventCalendarFactory.swift; sourceTree = "<group>"; };
+		A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventCalendarDetailView.swift; sourceTree = "<group>"; };
 		A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARowChooser.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASACalendarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarDetailView.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				A51A083A245B079A00135AA6 /* ASACalendarLocationCell.swift */,
 				A51A0838245B071B00135AA6 /* ASACalendarTimeZoneCell.swift */,
 				A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */,
+				A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */,
 				A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */,
 				A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */,
@@ -490,6 +493,7 @@
 			files = (
 				A57BCCB1247BBDC20019C02C /* ASALocationData.swift in Sources */,
 				A5622E24246DA597008E5C2D /* ASAUserSettings.swift in Sources */,
+				A57BCCB9247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift in Sources */,
 				A57BCCB3247BC28C0019C02C /* ASAInternalEventSource.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,

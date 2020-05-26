@@ -29,7 +29,9 @@ struct ASAPreferencesView: View {
                     ForEach(userData.internalEventCalendars, id:  \.uuid) {
                         eventCalendar
                         in
-                        ASAInternalEventCalendarCell(eventCalendar:  eventCalendar)
+                        NavigationLink(destination: ASAInternalEventCalendarDetailView(eventCalendar:  eventCalendar)) {
+                            ASAInternalEventCalendarCell(eventCalendar:  eventCalendar)
+                        }
                     } // ForEach(userData.internalEventCalendars)
                         .onMove { (source: IndexSet, destination: Int) -> Void in
                             self.userData.internalEventCalendars.move(fromOffsets: source, toOffset: destination)
