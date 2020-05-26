@@ -29,7 +29,12 @@ struct ASAPreferencesView: View {
                     ForEach(userData.internalEventCalendars, id:  \.uuid) {
                         eventCalendar
                         in
-                        NavigationLink(destination: ASAInternalEventCalendarDetailView(eventCalendar:  eventCalendar)) {
+                        NavigationLink(destination: ASAInternalEventCalendarDetailView(eventCalendar:  eventCalendar)
+                            .onReceive(eventCalendar.objectWillChange) { _ in
+                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                self.userData.objectWillChange.send()
+                                self.userData.savePreferences()
+                        }) {
                             ASAInternalEventCalendarCell(eventCalendar:  eventCalendar)
                         }
                     } // ForEach(userData.internalEventCalendars)

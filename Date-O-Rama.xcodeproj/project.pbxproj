@@ -54,7 +54,6 @@
 		A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
 		A5C77C332433371800CFEE47 /* ASARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2E2433371700CFEE47 /* ASARow.swift */; };
-		A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */; };
 		A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
 		A5C77C382433596A00CFEE47 /* ASALocaleChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */; };
 		A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
@@ -141,7 +140,6 @@
 		A5C77C2C2433371700CFEE47 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASACalendarCode.swift; sourceTree = "<group>"; };
 		A5C77C2E2433371700CFEE47 /* ASARow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASARow.swift; sourceTree = "<group>"; };
-		A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAConfiguration.swift; sourceTree = "<group>"; };
 		A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASARowArrayKey.swift; sourceTree = "<group>"; };
 		A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "✨Date-O-Rama✨.entitlements"; sourceTree = "<group>"; };
 		A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleChooserView.swift; sourceTree = "<group>"; };
@@ -288,7 +286,6 @@
 			children = (
 				A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */,
 				A5C77BFC2433361400CFEE47 /* AppDelegate.swift */,
-				A5C77C2F2433371800CFEE47 /* ASAConfiguration.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */,
 				A57BCCB0247BBDC20019C02C /* ASALocationData.swift */,
@@ -543,7 +540,6 @@
 				A57BCCB5247BC33A0019C02C /* ASAInternalEventSourceCode.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASACalendarLocationCell.swift in Sources */,
 				A57BCCB7247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift in Sources */,
-				A5C77C342433371800CFEE47 /* ASAConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
