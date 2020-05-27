@@ -11,10 +11,12 @@ import Combine
 import SwiftUI
 import CoreLocation
 
+let storageKey = "group.com.adelsoft.DoubleDate"
+
 final class ASAUserData:  ObservableObject {
     private static let INTERNAL_EVENT_CALENDARS_KEY = "INTERNAL_EVENT_CALENDARS"
     
-    private static let userDefaults = UserDefaults.standard
+    static let userDefaults = UserDefaults.init(suiteName: storageKey)!
     
     private static var sharedUserData: ASAUserData = {
         let userData = ASAUserData()

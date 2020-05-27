@@ -9,19 +9,19 @@
 import SwiftUI
 
 struct ASAInternalEventCalendarDetailView: View {
-    @ObservedObject var eventCalendar:  ASAInternalEventCalendar
+    @ObservedObject var selectedEventCalendar:  ASAInternalEventCalendar
     
     var body: some View {
         List {
-            HStack {
-                Text(eventCalendar.emoji(date: Date()))
-                Text(eventCalendar.eventCalendarName()).font(.headline)
+            
+            NavigationLink(destination:  ASAInternalEventSourceChooser(eventCalendar:  self.selectedEventCalendar)) {
+                Text(selectedEventCalendar.eventSourceCode.localizedName()).font(.headline)
             }
             
-            ASACalendarTimeZoneCell(timeZone: eventCalendar.effectiveTimeZone, now: Date())
+            ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
             
-            NavigationLink(destination:  ASALocationChooserView(row:  eventCalendar, tempLocationData: ASALocationData())) {
-                ASACalendarLocationCell(usesDeviceLocation: self.eventCalendar.usesDeviceLocation, locationData: self.eventCalendar.locationData)
+            NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedEventCalendar, tempLocationData: ASALocationData())) {
+                ASALocationCell(usesDeviceLocation: self.selectedEventCalendar.usesDeviceLocation, locationData: self.selectedEventCalendar.locationData)
             }
             
         } // List
@@ -30,6 +30,6 @@ struct ASAInternalEventCalendarDetailView: View {
 
 struct ASAInternalEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAInternalEventCalendarDetailView(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
+        ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
     }
 }

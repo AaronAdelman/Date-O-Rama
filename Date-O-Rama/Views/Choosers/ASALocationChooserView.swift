@@ -10,8 +10,7 @@ import SwiftUI
 import CoreLocation
 
 struct ASALocationChooserView: View {
-//    @ObservedObject var row:  ASARow
-    @ObservedObject var row:  ASALocatedObject
+    @ObservedObject var locatedObject:  ASALocatedObject
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocationData> = []
     @State var tempLocationData:  ASALocationData = ASALocationData()
@@ -20,8 +19,8 @@ struct ASALocationChooserView: View {
     var body: some View {
         Form {
             Section {
-                ASACalendarTimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
-                ASACalendarLocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
+                ASATimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
+                ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
             }
             Section {
                 Toggle(isOn: $tempUsesDeviceLocation) {
@@ -54,19 +53,19 @@ struct ASALocationChooserView: View {
         }
 //        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
         .onAppear() {
-            self.tempUsesDeviceLocation = self.row.usesDeviceLocation
-            self.tempLocationData = self.row.locationData
+            self.tempUsesDeviceLocation = self.locatedObject.usesDeviceLocation
+            self.tempLocationData = self.locatedObject.locationData
         }
         .onDisappear() {
-            debugPrint(#file, #function, "Before row", self.row.usesDeviceLocation, self.row.locationData)
+            debugPrint(#file, #function, "Before row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
             debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
-            self.row.usesDeviceLocation = self.tempUsesDeviceLocation
+            self.locatedObject.usesDeviceLocation = self.tempUsesDeviceLocation
             if self.tempUsesDeviceLocation {
-                self.row.locationData = ASALocationManager.shared().locationData
+                self.locatedObject.locationData = ASALocationManager.shared().locationData
             } else {
-                self.row.locationData = self.tempLocationData
+                self.locatedObject.locationData = self.tempLocationData
             }
-            debugPrint(#file, #function, "After row", self.row.usesDeviceLocation, self.row.locationData)
+            debugPrint(#file, #function, "After row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
         }
     }
     
@@ -110,6 +109,6 @@ struct ASALocationChooserViewCell:  View {
 
 struct LocationChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationChooserView(row: ASARow.test(), tempLocationData: ASALocationData())
+        ASALocationChooserView(locatedObject: ASARow.test(), tempLocationData: ASALocationData())
     }
 }

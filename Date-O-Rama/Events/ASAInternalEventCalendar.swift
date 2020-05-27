@@ -12,7 +12,13 @@ import CoreLocation
 fileprivate let EVENT_SOURCE_CODE_KEY = "EVENT_SOURCE_CODE"
 
 class ASAInternalEventCalendar:  ASALocatedObject {
-    var eventSource:  ASAInternalEventSource?
+    private var eventSource:  ASAInternalEventSource?
+
+    @Published var eventSourceCode:  ASAInternalEventSourceCode = .none {
+        didSet {
+            self.eventSource = ASAInternalEventCalendarFactory.eventCalendarSource(eventSourceCode:  self.eventSourceCode)
+        } // didSet
+    } // var eventSourceCode
     
     public func dictionary() -> Dictionary<String, Any> {
         //        debugPrint(#file, #function)
@@ -122,12 +128,16 @@ class ASAInternalEventCalendar:  ASALocatedObject {
     } // class func newInternalEventCalendar(dictionary:  Dictionary<String, Any>) -> ASAInternalEventCalendar?
     
     public func eventCalendarName() -> String {
+        if self.eventSource == nil {
+            return ""
+        }
+        
         return self.eventSource!.eventCalendarName(locationData:  locationData)
     }
     
     func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent> {
         if eventSource == nil || self.locationData.location == nil {
-        return []
+            return []
         }
         
         return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, location: self.locationData.location!, timeZone: self.effectiveTimeZone, eventCalendarName: eventCalendarName())

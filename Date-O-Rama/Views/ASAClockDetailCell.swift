@@ -1,5 +1,5 @@
 //
-//  ASACalendarDetailCell.swift
+//  ASAClockDetailCell.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-30.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASACalendarDetailCell:  View {
+struct ASAClockDetailCell:  View {
     var title:  String
     var detail:  String
     var detail2:  String?
@@ -24,10 +24,10 @@ struct ASACalendarDetailCell:  View {
             }
         } // HStack
     } // var body
-} // struct ASACalendarDetailCell
+} // struct ASAClockDetailCell
 
-struct ASACalendarDetailCell_Previews: PreviewProvider {
+struct ASAClockDetailCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarDetailCell(title: "Blah", detail: "Blah")
+        ASAClockDetailCell(title: "Blah", detail: "Blah")
     }
 }

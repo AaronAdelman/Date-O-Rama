@@ -9,7 +9,7 @@
 import SwiftUI
 import CoreLocation
 
-struct ASACalendarDetailView: View {
+struct ASAClockDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
     
@@ -27,33 +27,33 @@ struct ASACalendarDetailView: View {
                 NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow)) {
                     HStack {
                         Text(verbatim: "🗓")
-                        ASACalendarDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
+                        ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                     }
                 }
                 if selectedRow.supportsLocales() {
                     NavigationLink(destination: ASALocaleChooserView(row: selectedRow)) {
                         HStack {
                             Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
-                            ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+                            ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                         }
                     }
                 }
                 if selectedRow.calendar.supportsDateFormats {
                     NavigationLink(destination: ASADateFormatChooserView(row: selectedRow)) {
-                        ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }
                 if selectedRow.calendar.supportsTimeFormats {
                     NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow)) {
-                        ASACalendarDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
                     }
                 }
 
                 if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
-                    ASACalendarTimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
+                    ASATimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
                     
-                    NavigationLink(destination:  ASALocationChooserView(row:  selectedRow, tempLocationData: ASALocationData())) {
-                        ASACalendarLocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                    NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedRow, tempLocationData: ASALocationData())) {
+                        ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
                     }
                 }
             } // Section
@@ -63,23 +63,23 @@ struct ASACalendarDetailView: View {
                     ForEach(selectedRow.LDMLDetails(), id: \.name) {
                         detail
                         in
-                        ASACalendarDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
+                        ASAClockDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
                     }
                 } // Section
             }
                         
             Section(header:  Text("HEADER_Other")) {
-                ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(date: now), dateStyle: .full, timeStyle: .full))
-                ASACalendarDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(date:  now).addingTimeInterval(1)))
+                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(date: now), dateStyle: .full, timeStyle: .full))
+                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(date:  now).addingTimeInterval(1)))
             } // Section
             
         }.navigationBarTitle(Text(
             selectedRow.dateString(now: self.now) ))
     }
-}
+} // struct ASAClockDetailView
 
-struct ASACalendarDetailView_Previews: PreviewProvider {
+struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarDetailView(selectedRow: ASARow.generic(), now: Date())
+        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date())
     }
 }

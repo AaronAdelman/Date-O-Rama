@@ -45,14 +45,14 @@ struct ASACalendarChooserView: View {
     ]
     
     @ObservedObject var row:  ASARow
-//    var deviceLocation:  CLLocation?
-    
+
     var body: some View {
         List {
             ForEach(self.calendarCodes, id: \.self) {
                 calendarCode
                 in
-                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode).onTapGesture {
+                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode)
+                    .onTapGesture {
                     self.row.calendar = ASACalendarFactory.calendar(code: calendarCode)!
                 }
             }
@@ -75,9 +75,6 @@ struct ASACalendarCell: View {
                     .foregroundColor(.accentColor)
             }
         }
-//        .onTapGesture {
-//            self.selectedCalendarCode = self.calendarCode
-//        }
     } // var body
 } // struct ASACalendarCell
 

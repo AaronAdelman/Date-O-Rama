@@ -1,5 +1,5 @@
 //
-//  ASACalendarLocationCell.swift
+//  ASALocationCell.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-30.
@@ -9,13 +9,8 @@
 import SwiftUI
 import CoreLocation
 
-struct ASACalendarLocationCell:  View {
+struct ASALocationCell:  View {
     var usesDeviceLocation:  Bool
-    //    var location:  CLLocation?
-    //    var placeName:  String?
-    //    var locality:  String?
-    //    var country:  String?
-    //    var ISOCountryCode:  String?
     var locationData:  ASALocationData
     
     var body: some View {
@@ -90,10 +85,10 @@ struct ASACalendarLocationCell:  View {
             } // VStack
         } // HStack
     } // body
-} // struct ASACalendarLocationCell
+} // struct ASALocationCell
 
-struct ASACalendarLocationCell_Previews: PreviewProvider {
+struct ASALocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarLocationCell(usesDeviceLocation: true, locationData: ASALocationData())
+        ASALocationCell(usesDeviceLocation: true, locationData: ASALocationData())
     }
 }

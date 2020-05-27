@@ -1,5 +1,5 @@
 //
-//  ASACalendarTimeZoneCell.swift
+//  ASATimeZoneCell.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-30.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASACalendarTimeZoneCell:  View {
+struct ASATimeZoneCell:  View {
     var timeZone:  TimeZone
     var now:  Date
 
@@ -35,10 +35,10 @@ struct ASACalendarTimeZoneCell:  View {
             }
         } // HStack
     } // var body
-} // struct ASACalendarTimeZoneCell
+} // struct ASATimeZoneCell
 
-struct ASACalendarTimeZoneCell_Previews: PreviewProvider {
+struct ASATimeZoneCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarTimeZoneCell(timeZone: TimeZone.autoupdatingCurrent, now: Date())
+        ASATimeZoneCell(timeZone: TimeZone.autoupdatingCurrent, now: Date())
     }
 }

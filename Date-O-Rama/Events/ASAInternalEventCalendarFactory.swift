@@ -12,16 +12,24 @@ import CoreLocation
 class ASAInternalEventCalendarFactory {
     class func eventCalendar(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventCalendar? {
         
+        let result = ASAInternalEventCalendar()
+//        result.eventSource =  ASAInternalEventCalendarFactory.eventCalendarSource(eventSourceCode:  eventSourceCode)
+        result.eventSourceCode = eventSourceCode
+        result.locationData = ASALocationManager.shared().locationData
+        result.usesDeviceLocation = true
+        return result
+    } //class func eventCalendar(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventCalendar?
+    
+    class func eventCalendarSource(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventSource? {
         switch eventSourceCode {
         case .dailyJewish:
-            let result = ASAInternalEventCalendar()
-            result.eventSource = ASADailyJewishEventSource()
-            result.locationData = ASALocationManager.shared().locationData
-            result.usesDeviceLocation = true
-            return result
+            return ASADailyJewishEventSource()
+            
+        case .solar:
+            return ASASolarEventSource()
             
         default:
             return nil
         } // switch eventSourceCode
-    } //class func eventCalendar(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventCalendar?
+    }
 } // class ASAInternalEventCalendarFactory

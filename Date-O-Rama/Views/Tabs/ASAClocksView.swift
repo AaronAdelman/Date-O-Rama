@@ -23,7 +23,7 @@ struct ASAClocksView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uuid) { row in
                     NavigationLink(
-                        destination: ASACalendarDetailView(selectedRow: row, now: self.now)
+                        destination: ASAClockDetailView(selectedRow: row, now: self.now)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()

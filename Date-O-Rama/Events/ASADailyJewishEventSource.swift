@@ -126,4 +126,8 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
     func eventCalendarName(locationData:  ASALocationData) -> String {
         return "\(NSLocalizedString("Jewish calendar", comment: "")) • \(locationData.formattedOneLineAddress())"
     } // func eventCalendarName(locationData:  ASALocationData) -> String
+    
+    func eventSourceName() -> String {
+        return NSLocalizedString("Daily Jewish events", comment:  "")
+    } // func eventSourceName() -> String
 } // class ASADailyJewishEventSource
