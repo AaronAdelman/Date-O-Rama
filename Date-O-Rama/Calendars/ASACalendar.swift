@@ -21,7 +21,7 @@ struct ASALDMLDetail {
 protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var canSplitTimeFromDate:  Bool { get }
-    var color:  UIColor { get }
+//    var color:  UIColor { get }
     var defaultMajorDateFormat:  ASAMajorDateFormat { get }
     var defaultMajorTimeFormat:  ASAMajorTimeFormat { get }
     var LDMLDetails: Array<ASALDMLDetail> { get }

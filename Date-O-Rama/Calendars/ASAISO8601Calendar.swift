@@ -12,7 +12,7 @@ import UIKit
 
 class ASAISO8601Calendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .ISO8601
-    var color: UIColor = .systemGray
+//    var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .ISO8601YearMonthDay
     
     lazy var dateFormatter = DateFormatter()

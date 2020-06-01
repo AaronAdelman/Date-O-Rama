@@ -31,7 +31,7 @@ class ASASolarEventSource:  ASAInternalEventSource {
         }
         
         fileprivate func calendarColor() -> Color {
-            return Color(UIColor.systemYellow)
+            return Color(UIColor.yellow)
         } // static func calendarColor() -> Color
         
          func eventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName: String) -> Array<ASAEvent> {

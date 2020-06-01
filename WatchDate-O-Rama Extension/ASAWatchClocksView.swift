@@ -1,16 +1,14 @@
 //
-//  ASAClocksView.swift
-//  Date-O-Rama
+//  ASAWatchClocksView.swift
+//  WatchDate-O-Rama Extension
 //
-//  Created by אהרן שלמה אדלמן on 2020-03-31.
+//  Created by אהרן שלמה אדלמן on 2020-05-31.
 //  Copyright © 2020 Adelsoft. All rights reserved.
 //
 
 import SwiftUI
-import Combine
-import CoreLocation
 
-struct ASAClocksView: View {
+struct ASAWatchClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
 
@@ -19,11 +17,11 @@ struct ASAClocksView: View {
     let INSET = 25.0 as CGFloat
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             List {
                 ForEach(userData.mainRows, id:  \.uuid) { row in
                     NavigationLink(
-                        destination: ASAClockDetailView(selectedRow: row, now: self.now)
+                        destination: ASAWatchClockDetailView(selectedRow: row, now: self.now)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
@@ -45,22 +43,22 @@ struct ASAClocksView: View {
                 }
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))
-            .navigationBarItems(
-                leading: EditButton(),
-                trailing: Button(
-                    action: {
-                        withAnimation {
-                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
-                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
-                            self.userData.savePreferences()
-                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
-                        }
-                }
-                ) {
-                    Text(verbatim:  "➕")
-                }
-            )
-            }.navigationViewStyle(StackNavigationViewStyle())
+//            .navigationBarItems(
+//                leading: EditButton(),
+//                trailing: Button(
+//                    action: {
+//                        withAnimation {
+//                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
+//                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
+//                            self.userData.savePreferences()
+//                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
+//                        }
+//                }
+//                ) {
+//                    Text(verbatim:  "➕")
+//                }
+//            )
+//            }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
 //                for row in self.userData.mainRows {
 //                    let transition = row.startOfNextDay(now: self.now)
@@ -76,10 +74,10 @@ struct ASAClocksView: View {
 //                debugPrint("\(#file) \(#function) \(self.locationManager.statusString) \(String(describing: self.deviceLocation)), \(self.now.solarEvents(latitude: self.deviceLocation.coordinate.latitude, longitude: self.deviceLocation.coordinate.longitude, events: [.sunrise, .sunset]))")
         }
     }
-} // struct ASAClocksView
+}
 
-struct ASAClocksView_Previews: PreviewProvider {
+struct ASAWatchClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksView().environmentObject(ASAUserData.shared())
+        ASAWatchClocksView()
     }
 }

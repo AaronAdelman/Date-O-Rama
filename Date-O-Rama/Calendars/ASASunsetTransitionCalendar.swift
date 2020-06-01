@@ -59,20 +59,20 @@ extension Date {
 class ASASunsetTransitionCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode
     
-    var color: UIColor {
-        get {
-            switch self.calendarCode {
-            case .HebrewGRA, .HebrewMA:
-                return UIColor.systemBlue
-                
-            case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
-                return UIColor.systemGreen
-                
-            default:
-                return UIColor.systemGray
-            } // switch self.calendarCode
-        } // get
-    } // var color: UIColor
+//    var color: UIColor {
+//        get {
+//            switch self.calendarCode {
+//            case .HebrewGRA, .HebrewMA:
+//                return UIColor.systemBlue
+//                
+//            case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+//                return UIColor.systemGreen
+//                
+//            default:
+//                return UIColor.systemGray
+//            } // switch self.calendarCode
+//        } // get
+//    } // var color: UIColor
     
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
     

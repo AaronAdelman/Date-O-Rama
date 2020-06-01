@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,48 @@
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
 		A5622E24246DA597008E5C2D /* ASAUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5622E23246DA597008E5C2D /* ASAUserSettings.swift */; };
+		A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566F4442483D6E6000A05B5 /* Interface.storyboard */; };
+		A566F4482483D6EB000A05B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F4472483D6EB000A05B5 /* Assets.xcassets */; };
+		A566F44F2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4532483D6EC000A05B5 /* ContentView.swift */; };
+		A566F4562483D6EC000A05B5 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4552483D6EC000A05B5 /* HostingController.swift */; };
+		A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */; };
+		A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4592483D6EC000A05B5 /* NotificationController.swift */; };
+		A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F45B2483D6EC000A05B5 /* NotificationView.swift */; };
+		A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F45D2483D6EF000A05B5 /* Assets.xcassets */; };
+		A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */; };
+		A566F4662483D6EF000A05B5 /* WatchDate-O-Rama.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
+		A566F4702483D7CF000A05B5 /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
+		A566F4712483D7CF000A05B5 /* ASALocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocationData.swift */; };
+		A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
+		A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
+		A566F4742483D7CF000A05B5 /* ASAUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5622E23246DA597008E5C2D /* ASAUserSettings.swift */; };
+		A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
+		A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
+		A566F4772483D7CF000A05B5 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
+		A566F4782483D7CF000A05B5 /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
+		A566F4792483D7CF000A05B5 /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
+		A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
+		A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
+		A566F47C2483D7CF000A05B5 /* ASAMajorDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASAMajorDateFormat.swift */; };
+		A566F47D2483D7CF000A05B5 /* ASAMajorTimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASAMajorTimeFormat.swift */; };
+		A566F47E2483D7CF000A05B5 /* ASARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2E2433371700CFEE47 /* ASARow.swift */; };
+		A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
+		A566F4802483D7CF000A05B5 /* ASADailyJewishEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5BB246BF3180075AF58 /* ASADailyJewishEventSource.swift */; };
+		A566F4812483D7CF000A05B5 /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
+		A566F4822483D7CF000A05B5 /* ASAExternalEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAExternalEventManager.swift */; };
+		A566F4832483D7CF000A05B5 /* ASAInternalEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAE247BB7F80019C02C /* ASAInternalEventCalendar.swift */; };
+		A566F4842483D7CF000A05B5 /* ASAInternalEventCalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB6247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift */; };
+		A566F4852483D7CF000A05B5 /* ASAInternalEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB2247BC28B0019C02C /* ASAInternalEventSource.swift */; };
+		A566F4862483D7CF000A05B5 /* ASAInternalEventSourceCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB4247BC33A0019C02C /* ASAInternalEventSourceCode.swift */; };
+		A566F4872483D7CF000A05B5 /* ASASolarEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASASolarEventSource.swift */; };
+		A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
+		A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
+		A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
+		A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
+		A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
+		A566F48D2483D7CF000A05B5 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719B24627C89002BB471 /* UIColorExtensions.swift */; };
 		A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A57BCCA9247AA8310019C02C /* ASAPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */; };
 		A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
@@ -31,6 +73,18 @@
 		A57BCCBC247D82620019C02C /* ASAInternalEventSourceChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBB247D82620019C02C /* ASAInternalEventSourceChooser.swift */; };
 		A57BCCBE247D8A700019C02C /* ASASolarEventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASASolarEventSource.swift */; };
 		A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
+		A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */; };
+		A57CA3142483EA6500378EA7 /* ASAMainRowsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */; };
+		A57CA3152483EB3400378EA7 /* ASAMainRowsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */; };
+		A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
+		A57CA3202483ED1F00378EA7 /* ASACalendarChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */; };
+		A57CA3212483ED2F00378EA7 /* ASALocaleChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */; };
+		A57CA3222483ED4A00378EA7 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
+		A57CA3232483ED4A00378EA7 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
+		A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */; };
+		A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASALocationCell.swift */; };
+		A57CA3282484E3F800378EA7 /* ASAWatchClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3272484E3F800378EA7 /* ASAWatchClockDetailView.swift */; };
+		A57CA3292484E61800378EA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
@@ -70,6 +124,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A566F4502483D6EC000A05B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C77BF12433361400CFEE47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A566F44D2483D6EC000A05B5;
+			remoteInfo = "WatchDate-O-Rama Extension";
+		};
+		A566F4642483D6EF000A05B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5C77BF12433361400CFEE47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A566F4412483D6E6000A05B5;
+			remoteInfo = "WatchDate-O-Rama";
+		};
 		A5C77C102433361900CFEE47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A5C77BF12433361400CFEE47 /* Project object */;
@@ -86,6 +154,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A566F4672483D6EF000A05B5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A566F4662483D6EF000A05B5 /* WatchDate-O-Rama.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566F46A2483D6EF000A05B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A566F44F2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A5152A052472BE420098A94B /* ASAEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventView.swift; sourceTree = "<group>"; };
 		A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
@@ -101,6 +194,20 @@
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 		A5622E23246DA597008E5C2D /* ASAUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserSettings.swift; sourceTree = "<group>"; };
+		A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchDate-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A566F4472483D6EB000A05B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A566F4492483D6EB000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDate-O-Rama Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566F4532483D6EC000A05B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A566F4552483D6EC000A05B5 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A566F4592483D6EC000A05B5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A566F45B2483D6EC000A05B5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A566F45D2483D6EF000A05B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A566F4622483D6EF000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPreferencesView.swift; sourceTree = "<group>"; };
 		A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocatedObject.swift; sourceTree = "<group>"; };
@@ -113,6 +220,9 @@
 		A57BCCBB247D82620019C02C /* ASAInternalEventSourceChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventSourceChooser.swift; sourceTree = "<group>"; };
 		A57BCCBD247D8A700019C02C /* ASASolarEventSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarEventSource.swift; sourceTree = "<group>"; };
 		A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARowChooser.swift; sourceTree = "<group>"; };
+		A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchClocksView.swift; sourceTree = "<group>"; };
+		A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsViewCell.swift; sourceTree = "<group>"; };
+		A57CA3272484E3F800378EA7 /* ASAWatchClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchClockDetailView.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
@@ -159,6 +269,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A566F44B2483D6EC000A05B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5C77BF62433361400CFEE47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +310,42 @@
 				A5BFC5B02469CB230075AF58 /* UITabBarWrapper.swift */,
 			);
 			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */ = {
+			isa = PBXGroup;
+			children = (
+				A566F4442483D6E6000A05B5 /* Interface.storyboard */,
+				A566F4472483D6EB000A05B5 /* Assets.xcassets */,
+				A566F4492483D6EB000A05B5 /* Info.plist */,
+			);
+			path = "WatchDate-O-Rama";
+			sourceTree = "<group>";
+		};
+		A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A566F4532483D6EC000A05B5 /* ContentView.swift */,
+				A566F4552483D6EC000A05B5 /* HostingController.swift */,
+				A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */,
+				A566F4592483D6EC000A05B5 /* NotificationController.swift */,
+				A566F45B2483D6EC000A05B5 /* NotificationView.swift */,
+				A566F45D2483D6EF000A05B5 /* Assets.xcassets */,
+				A566F4622483D6EF000A05B5 /* Info.plist */,
+				A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */,
+				A566F45F2483D6EF000A05B5 /* Preview Content */,
+				A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */,
+				A57CA3272484E3F800378EA7 /* ASAWatchClockDetailView.swift */,
+			);
+			path = "WatchDate-O-Rama Extension";
+			sourceTree = "<group>";
+		};
+		A566F45F2483D6EF000A05B5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		A57BCCAA247AA9290019C02C /* Tabs */ = {
@@ -285,6 +438,8 @@
 				A5C77BFB2433361400CFEE47 /* Date-O-Rama */,
 				A5C77C122433361900CFEE47 /* Date-O-RamaTests */,
 				A5C77C1D2433361900CFEE47 /* Date-O-RamaUITests */,
+				A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */,
+				A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */,
 				A58AE62A244C6DFF00A64B67 /* Frameworks */,
 				A5C77BFA2433361400CFEE47 /* Products */,
 			);
@@ -296,6 +451,8 @@
 				A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */,
 				A5C77C0F2433361900CFEE47 /* Date-O-RamaTests.xctest */,
 				A5C77C1A2433361900CFEE47 /* Date-O-RamaUITests.xctest */,
+				A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */,
+				A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -359,6 +516,7 @@
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
 				A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
+				A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */,
 				A5BFC5AE246971AD0075AF58 /* ASATabBarView.swift */,
 				A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */,
 				A57BCCBA247D81A80019C02C /* Choosers */,
@@ -371,6 +529,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A566F4412483D6E6000A05B5 /* WatchDate-O-Rama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A566F46E2483D6EF000A05B5 /* Build configuration list for PBXNativeTarget "WatchDate-O-Rama" */;
+			buildPhases = (
+				A566F4402483D6E6000A05B5 /* Resources */,
+				A566F46A2483D6EF000A05B5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A566F4512483D6EC000A05B5 /* PBXTargetDependency */,
+			);
+			name = "WatchDate-O-Rama";
+			productName = "WatchDate-O-Rama";
+			productReference = A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A566F44D2483D6EC000A05B5 /* WatchDate-O-Rama Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A566F46D2483D6EF000A05B5 /* Build configuration list for PBXNativeTarget "WatchDate-O-Rama Extension" */;
+			buildPhases = (
+				A566F44A2483D6EC000A05B5 /* Sources */,
+				A566F44B2483D6EC000A05B5 /* Frameworks */,
+				A566F44C2483D6EC000A05B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchDate-O-Rama Extension";
+			productName = "WatchDate-O-Rama Extension";
+			productReference = A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		A5C77BF82433361400CFEE47 /* Date-O-Rama */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C77C232433361900CFEE47 /* Build configuration list for PBXNativeTarget "Date-O-Rama" */;
@@ -378,10 +570,12 @@
 				A5C77BF52433361400CFEE47 /* Sources */,
 				A5C77BF62433361400CFEE47 /* Frameworks */,
 				A5C77BF72433361400CFEE47 /* Resources */,
+				A566F4672483D6EF000A05B5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A566F4652483D6EF000A05B5 /* PBXTargetDependency */,
 			);
 			name = "Date-O-Rama";
 			productName = "Date-O-Rama";
@@ -431,10 +625,16 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ASA;
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Adelsoft;
 				TargetAttributes = {
+					A566F4412483D6E6000A05B5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					A566F44D2483D6EC000A05B5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					A5C77BF82433361400CFEE47 = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -465,11 +665,32 @@
 				A5C77BF82433361400CFEE47 /* Date-O-Rama */,
 				A5C77C0E2433361900CFEE47 /* Date-O-RamaTests */,
 				A5C77C192433361900CFEE47 /* Date-O-RamaUITests */,
+				A566F4412483D6E6000A05B5 /* WatchDate-O-Rama */,
+				A566F44D2483D6EC000A05B5 /* WatchDate-O-Rama Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A566F4402483D6E6000A05B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A566F4482483D6EB000A05B5 /* Assets.xcassets in Resources */,
+				A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A566F44C2483D6EC000A05B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
+				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
+				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5C77BF72433361400CFEE47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,6 +719,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A566F44A2483D6EC000A05B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57CA3152483EB3400378EA7 /* ASAMainRowsViewCell.swift in Sources */,
+				A566F4852483D7CF000A05B5 /* ASAInternalEventSource.swift in Sources */,
+				A566F4772483D7CF000A05B5 /* ASACalendarCode.swift in Sources */,
+				A566F47D2483D7CF000A05B5 /* ASAMajorTimeFormat.swift in Sources */,
+				A566F4712483D7CF000A05B5 /* ASALocationData.swift in Sources */,
+				A566F4832483D7CF000A05B5 /* ASAInternalEventCalendar.swift in Sources */,
+				A566F4782483D7CF000A05B5 /* ASACalendarFactory.swift in Sources */,
+				A566F4822483D7CF000A05B5 /* ASAExternalEventManager.swift in Sources */,
+				A566F4562483D6EC000A05B5 /* HostingController.swift in Sources */,
+				A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */,
+				A566F4802483D7CF000A05B5 /* ASADailyJewishEventSource.swift in Sources */,
+				A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */,
+				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
+				A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */,
+				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
+				A566F4842483D7CF000A05B5 /* ASAInternalEventCalendarFactory.swift in Sources */,
+				A566F4742483D7CF000A05B5 /* ASAUserSettings.swift in Sources */,
+				A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */,
+				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
+				A566F4862483D7CF000A05B5 /* ASAInternalEventSourceCode.swift in Sources */,
+				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
+				A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */,
+				A566F47C2483D7CF000A05B5 /* ASAMajorDateFormat.swift in Sources */,
+				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
+				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
+				A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */,
+				A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */,
+				A566F4812483D7CF000A05B5 /* ASAEvent.swift in Sources */,
+				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
+				A57CA3232483ED4A00378EA7 /* ASATimeFormatChooserView.swift in Sources */,
+				A566F4702483D7CF000A05B5 /* ASALocatedObject.swift in Sources */,
+				A566F48D2483D7CF000A05B5 /* UIColorExtensions.swift in Sources */,
+				A566F4792483D7CF000A05B5 /* ASAISO8601Calendar.swift in Sources */,
+				A57CA3222483ED4A00378EA7 /* ASADateFormatChooserView.swift in Sources */,
+				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
+				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
+				A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */,
+				A57CA3202483ED1F00378EA7 /* ASACalendarChooserView.swift in Sources */,
+				A566F47E2483D7CF000A05B5 /* ASARow.swift in Sources */,
+				A57CA3212483ED2F00378EA7 /* ASALocaleChooserView.swift in Sources */,
+				A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */,
+				A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */,
+				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
+				A566F4872483D7CF000A05B5 /* ASASolarEventSource.swift in Sources */,
+				A57CA3282484E3F800378EA7 /* ASAWatchClockDetailView.swift in Sources */,
+				A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5C77BF52433361400CFEE47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,6 +783,7 @@
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */,
+				A57CA3142483EA6500378EA7 /* ASAMainRowsViewCell.swift in Sources */,
 				A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */,
 				A5BFC5B5246AB5B50075AF58 /* ASAExternalEventManager.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
@@ -578,6 +853,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A566F4512483D6EC000A05B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A566F44D2483D6EC000A05B5 /* WatchDate-O-Rama Extension */;
+			targetProxy = A566F4502483D6EC000A05B5 /* PBXContainerItemProxy */;
+		};
+		A566F4652483D6EF000A05B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A566F4412483D6E6000A05B5 /* WatchDate-O-Rama */;
+			targetProxy = A566F4642483D6EF000A05B5 /* PBXContainerItemProxy */;
+		};
 		A5C77C112433361900CFEE47 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A5C77BF82433361400CFEE47 /* Date-O-Rama */;
@@ -600,6 +885,14 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		A566F4442483D6E6000A05B5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A566F4452483D6E6000A05B5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -612,6 +905,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A566F4682483D6EF000A05B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53M887FS75;
+				IBSC_MODULE = WatchDate_O_Rama_Extension;
+				INFOPLIST_FILE = "WatchDate-O-Rama/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		A566F4692483D6EF000A05B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53M887FS75;
+				IBSC_MODULE = WatchDate_O_Rama_Extension;
+				INFOPLIST_FILE = "WatchDate-O-Rama/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		A566F46B2483D6EF000A05B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 53M887FS75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchDate-O-Rama Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		A566F46C2483D6EF000A05B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 53M887FS75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchDate-O-Rama Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 		A5C77C212433361900CFEE47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -865,6 +1248,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A566F46D2483D6EF000A05B5 /* Build configuration list for PBXNativeTarget "WatchDate-O-Rama Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A566F46B2483D6EF000A05B5 /* Debug */,
+				A566F46C2483D6EF000A05B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A566F46E2483D6EF000A05B5 /* Build configuration list for PBXNativeTarget "WatchDate-O-Rama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A566F4682483D6EF000A05B5 /* Debug */,
+				A566F4692483D6EF000A05B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A5C77BF42433361400CFEE47 /* Build configuration list for PBXProject "Date-O-Rama" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

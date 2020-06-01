@@ -11,7 +11,7 @@ import CoreLocation
 import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
-    var color: UIColor = .systemGray
+//    var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
         
     var calendarCode:  ASACalendarCode

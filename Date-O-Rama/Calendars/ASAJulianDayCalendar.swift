@@ -12,7 +12,7 @@ import UIKit
 
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
-    var color: UIColor = .systemGray
+//    var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full
     
     private var offsetFromJulianDay:  Double {
