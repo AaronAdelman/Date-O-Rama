@@ -10,11 +10,11 @@ import Foundation
 import Combine
 import SwiftUI
 import CoreLocation
+import UIKit
 
 let storageKey = "group.com.adelsoft.DoubleDate"
 
 final class ASAUserData:  ObservableObject {
-    private static let INTERNAL_EVENT_CALENDARS_KEY = "INTERNAL_EVENT_CALENDARS"
     
     static let userDefaults = UserDefaults.init(suiteName: storageKey)!
     
@@ -55,7 +55,7 @@ final class ASAUserData:  ObservableObject {
     public func savePreferences() {
         self.saveRowArray(rowArray: self.mainRows, key: .app)
         self.saveInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
-    }
+    } // func savePreferences()
     
     
     // MARK: -
@@ -103,7 +103,7 @@ final class ASAUserData:  ObservableObject {
             temp.append(dictionary)
         } //for eventCalendar in self.internalEventCalendars
         
-        ASAUserData.self.userDefaults.set(temp, forKey: ASAUserData.INTERNAL_EVENT_CALENDARS_KEY)
+        ASAUserData.self.userDefaults.set(temp, forKey: INTERNAL_EVENT_CALENDARS_KEY)
         ASAUserData.self.userDefaults.synchronize()
     } // func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>)
     
