@@ -110,6 +110,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 }
                 DispatchQueue.main.async {
                     ASAUserData.shared().mainRows = mainRows
+                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
                 }
             }
         }
