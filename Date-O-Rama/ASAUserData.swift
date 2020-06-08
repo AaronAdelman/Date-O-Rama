@@ -34,8 +34,9 @@ final class ASAUserData:  ObservableObject {
     @Published var modularLargeRows:      Array<ASARow>
     @Published var modularSmallRows:      Array<ASARow>
     @Published var circularSmallRows:     Array<ASARow>
+    @Published var extraLargeRows:        Array<ASARow>
     @Published var utilitarianLargeRows:  Array<ASARow>
-    @Published var utilitarianRows:       Array<ASARow>
+    @Published var utilitarianSmallRows:       Array<ASARow>
 
     
     private func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
@@ -88,15 +89,17 @@ final class ASAUserData:  ObservableObject {
         modularLargeRows     = []
         modularSmallRows     = []
         circularSmallRows    = []
+        extraLargeRows       = []
         utilitarianLargeRows = []
-        utilitarianRows      = []
+        utilitarianSmallRows      = []
         
         self.mainRows = self.rowArray(key: .app)
         self.modularLargeRows     = self.rowArray(key: .modularLarge)
         self.modularSmallRows     = self.rowArray(key: .modularSmall)
         self.circularSmallRows    = self.rowArray(key: .circularSmall)
+        self.extraLargeRows       = self.rowArray(key: .extraLarge)
         self.utilitarianLargeRows = self.rowArray(key: .utilitarianLarge)
-        self.utilitarianRows      = self.rowArray(key: .utilitarian)
+        self.utilitarianSmallRows      = self.rowArray(key: .utilitarianSmall)
 
 
     } // init()

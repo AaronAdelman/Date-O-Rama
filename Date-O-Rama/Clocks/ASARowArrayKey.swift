@@ -13,8 +13,9 @@ enum ASARowArrayKey:  String {
     case modularLarge     = "modularLarge"
     case modularSmall     = "modularSmall"
     case circularSmall    = "circularSmall"
+    case extraLarge       = "extraLarge"
     case utilitarianLarge = "utilitarianLarge"
-    case utilitarian      = "utilitarian"
+    case utilitarianSmall      = "utilitarian"
 } // enum ASARowArrayKeys:  String
 
 extension ASARowArrayKey {
@@ -32,10 +33,13 @@ extension ASARowArrayKey {
         case .circularSmall:
             return 2
             
+        case .extraLarge:
+            return 2
+
         case .utilitarianLarge:
             return 1
             
-        case .utilitarian:
+        case .utilitarianSmall:
             return 1
         } // switch self
     } // func minimumNumberOfRows() -> Int
