@@ -31,11 +31,18 @@ final class ASAUserData:  ObservableObject {
     @Published var mainRows:  Array<ASARow>
     @Published var internalEventCalendars:  Array<ASAInternalEventCalendar>
     
-    init() {
-        self.mainRows = ASAUserData.rowArray(key: .app)
+    @Published var modularLargeRows:      Array<ASARow>
+    @Published var modularSmallRows:      Array<ASARow>
+    @Published var circularSmallRows:     Array<ASARow>
+    @Published var utilitarianLargeRows:  Array<ASARow>
+    @Published var utilitarianRows:       Array<ASARow>
+
+    
+    private func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+        var rows = ASAUserData.rowArray(key: .app)
         self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
         let coder = CLGeocoder();
-        for row in self.mainRows {
+        for row in rows {
             if row.location != nil {
                 coder.reverseGeocodeLocation(row.location!) { (placemarks, error) in
                     let place = placemarks?.last;
@@ -49,7 +56,49 @@ final class ASAUserData:  ObservableObject {
                     //                    debugPrint(#file, #function, row.location as Any, place as Any)
                 }
             }
-        } // for row in self.mainRows
+        } // for row in rows
+        
+        while rows.count < key.minimumNumberOfRows() {
+            rows.append(ASARow.generic())
+        } // while rows.count < key.minimumNumberOfRows()
+        
+        return rows
+    }
+        
+    init() {
+//        self.mainRows = ASAUserData.rowArray(key: .app)
+        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
+//        let coder = CLGeocoder();
+//        for row in self.mainRows {
+//            if row.location != nil {
+//                coder.reverseGeocodeLocation(row.location!) { (placemarks, error) in
+//                    let place = placemarks?.last;
+//
+//                    if place != nil {
+//                        row.placeName = place?.name
+//                        row.locality = place?.locality
+//                        row.country = place?.country
+//                        row.ISOCountryCode = place?.isoCountryCode
+//                    }
+//                    //                    debugPrint(#file, #function, row.location as Any, place as Any)
+//                }
+//            }
+//        } // for row in self.mainRows
+        mainRows             = []
+        modularLargeRows     = []
+        modularSmallRows     = []
+        circularSmallRows    = []
+        utilitarianLargeRows = []
+        utilitarianRows      = []
+        
+        self.mainRows = self.rowArray(key: .app)
+        self.modularLargeRows     = self.rowArray(key: .modularLarge)
+        self.modularSmallRows     = self.rowArray(key: .modularSmall)
+        self.circularSmallRows    = self.rowArray(key: .circularSmall)
+        self.utilitarianLargeRows = self.rowArray(key: .utilitarianLarge)
+        self.utilitarianRows      = self.rowArray(key: .utilitarian)
+
+
     } // init()
     
     public func savePreferences() {

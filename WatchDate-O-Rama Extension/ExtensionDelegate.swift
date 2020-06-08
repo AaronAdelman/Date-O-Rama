@@ -90,13 +90,13 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             if modularLargeTemp != nil {
                 let tempAsArray = modularLargeTemp! as! Array<Dictionary<String, Any>>
                 for i in 0..<ASARowArrayKey.modularLarge.minimumNumberOfRows() {
-                    complicationController.modularLargeRows[i] = ASARow.newRow(dictionary: tempAsArray[i])
+                    complicationController.userData.modularLargeRows[i] = ASARow.newRow(dictionary: tempAsArray[i])
                 } // for i in 0..<ASARowArrayKey.modularLarge.minimumNumberOfRows()
             }
             
             if complicationController.complication != nil {
                 CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
-                ASAUserData.shared().saveRowArray(rowArray: (complicationController.modularLargeRows), key: .modularLarge)
+                ASAUserData.shared().saveRowArray(rowArray: (complicationController.userData.modularLargeRows), key: .modularLarge)
             }
             //             TODO:  Figure out what went wrong
             
