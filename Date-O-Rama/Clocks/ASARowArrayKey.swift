@@ -9,13 +9,12 @@
 import Foundation
 
 enum ASARowArrayKey:  String {
-    case app              = "app"
-    case threeLineLarge     = "modularLarge"
-    case modularSmall     = "modularSmall"
-    case circularSmall    = "circularSmall"
-    case extraLarge       = "extraLarge"
-    case utilitarianLarge = "utilitarianLarge"
-    case utilitarianSmall      = "utilitarian"
+    case app            = "app"
+    case threeLineLarge = "modularLarge"
+    case twoLineSmall   = "modularSmall"
+    case twoLineLarge   = "extraLarge"
+    case oneLineLarge   = "utilitarianLarge"
+    case oneLineSmall   = "utilitarian"
 } // enum ASARowArrayKeys:  String
 
 extension ASARowArrayKey {
@@ -27,19 +26,16 @@ extension ASARowArrayKey {
         case .threeLineLarge:
             return 3
             
-        case .modularSmall:
+        case .twoLineSmall:
             return 2
-            
-        case .circularSmall:
-            return 2
-            
-        case .extraLarge:
+                        
+        case .twoLineLarge:
             return 2
 
-        case .utilitarianLarge:
+        case .oneLineLarge:
             return 1
             
-        case .utilitarianSmall:
+        case .oneLineSmall:
             return 1
         } // switch self
     } // func minimumNumberOfRows() -> Int

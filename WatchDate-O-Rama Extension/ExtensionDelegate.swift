@@ -86,17 +86,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         debugPrint(#file, #function, message)
         
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
-            let modularLargeTemp = message[ASARowArrayKey.modularLarge.rawValue]
+            let modularLargeTemp = message[ASARowArrayKey.threeLineLarge.rawValue]
             if modularLargeTemp != nil {
                 let tempAsArray = modularLargeTemp! as! Array<Dictionary<String, Any>>
-                for i in 0..<ASARowArrayKey.modularLarge.minimumNumberOfRows() {
-                    complicationController.userData.modularLargeRows[i] = ASARow.newRow(dictionary: tempAsArray[i])
+                for i in 0..<ASARowArrayKey.threeLineLarge.minimumNumberOfRows() {
+                    complicationController.userData.threeLineLargeRows[i] = ASARow.newRow(dictionary: tempAsArray[i])
                 } // for i in 0..<ASARowArrayKey.modularLarge.minimumNumberOfRows()
             }
             
             if complicationController.complication != nil {
                 CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
-                ASAUserData.shared().saveRowArray(rowArray: (complicationController.userData.modularLargeRows), key: .modularLarge)
+                ASAUserData.shared().saveRowArray(rowArray: (complicationController.userData.threeLineLargeRows), key: .threeLineLarge)
             }
             //             TODO:  Figure out what went wrong
             

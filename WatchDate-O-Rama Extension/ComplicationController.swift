@@ -13,25 +13,19 @@ extension ASAUserData {
     func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>? {
         switch complicationFamily {
         case .modularLarge, .graphicRectangular:
-            return self.modularLargeRows
+            return self.threeLineLargeRows
             
-        case .modularSmall:
-            return self.modularSmallRows
+        case .modularSmall, .circularSmall:
+            return self.twoLineSmallRows
             
-        case .utilitarianSmall:
-            return self.utilitarianSmallRows
-            
-        case .utilitarianSmallFlat:
-            return self.utilitarianSmallRows
+        case .utilitarianSmall, .utilitarianSmallFlat:
+            return self.oneLineSmallRows
             
         case .utilitarianLarge:
-            return self.utilitarianLargeRows
-            
-        case .circularSmall:
-            return self.circularSmallRows
+            return self.oneLineLargeRows
             
         case .extraLarge:
-            return self.extraLargeRows
+            return self.twoLineLargeRows
             
         default:
             return nil
@@ -199,8 +193,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK:  -
     
     func modularSmallTemplate(now:  Date) -> CLKComplicationTemplateModularSmallStackText {
-        let headerRow = self.userData.modularSmallRows[0]
-        let body1Row  = self.userData.modularSmallRows[1]
+        let headerRow = self.userData.twoLineSmallRows[0]
+        let body1Row  = self.userData.twoLineSmallRows[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -217,9 +211,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func modularSmallTemplate(now:  Date) -> CLKComplicationTemplateModularSmallStackText
     
     func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody {
-        let headerRow = self.userData.modularLargeRows[0]
-        let body1Row  = self.userData.modularLargeRows[1]
-        let body2Row  = self.userData.modularLargeRows[2]
+        let headerRow = self.userData.threeLineLargeRows[0]
+        let body1Row  = self.userData.threeLineLargeRows[1]
+        let body2Row  = self.userData.threeLineLargeRows[2]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -242,9 +236,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
     func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularStandardBody {
-        let headerRow = self.userData.modularLargeRows[0]
-        let body1Row  = self.userData.modularLargeRows[1]
-        let body2Row  = self.userData.modularLargeRows[2]
+        let headerRow = self.userData.threeLineLargeRows[0]
+        let body1Row  = self.userData.threeLineLargeRows[1]
+        let body2Row  = self.userData.threeLineLargeRows[2]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -267,8 +261,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
     func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText {
-        let headerRow = self.userData.circularSmallRows[0]
-        let body1Row  = self.userData.circularSmallRows[1]
+        let headerRow = self.userData.twoLineSmallRows[0]
+        let body1Row  = self.userData.twoLineSmallRows[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -283,8 +277,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText
     
     func extraLargeTemplate(now:  Date) -> CLKComplicationTemplateExtraLargeStackText {
-        let headerRow = self.userData.extraLargeRows[0]
-        let body1Row  = self.userData.extraLargeRows[1]
+        let headerRow = self.userData.twoLineLargeRows[0]
+        let body1Row  = self.userData.twoLineLargeRows[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -299,7 +293,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func extraLargeTemplate(now:  Date) -> CLKComplicationTemplateExtraLargeStackText
     
     func utilitarianSmallTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianSmallFlat {
-        let headerRow = self.userData.utilitarianSmallRows[0]
+        let headerRow = self.userData.oneLineSmallRows[0]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -310,7 +304,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func utilitarianSmallTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianSmallFlat
 
     func utilitarianLargeTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianLargeFlat {
-        let headerRow = self.userData.utilitarianLargeRows[0]
+        let headerRow = self.userData.oneLineLargeRows[0]
         
         // Header date
         let headerString = headerRow.dateString(now: now)

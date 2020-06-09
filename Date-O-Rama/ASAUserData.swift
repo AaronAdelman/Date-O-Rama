@@ -31,12 +31,11 @@ final class ASAUserData:  ObservableObject {
     @Published var mainRows:  Array<ASARow>
     @Published var internalEventCalendars:  Array<ASAInternalEventCalendar>
     
-    @Published var threeLineLargeRows:      Array<ASARow>
-    @Published var modularSmallRows:      Array<ASARow>
-    @Published var circularSmallRows:     Array<ASARow>
-    @Published var extraLargeRows:        Array<ASARow>
-    @Published var utilitarianLargeRows:  Array<ASARow>
-    @Published var utilitarianSmallRows:       Array<ASARow>
+    @Published var threeLineLargeRows:  Array<ASARow>
+    @Published var twoLineSmallRows:    Array<ASARow>
+    @Published var twoLineLargeRows:    Array<ASARow>
+    @Published var oneLineLargeRows:    Array<ASARow>
+    @Published var oneLineSmallRows:    Array<ASARow>
 
     
     private func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
@@ -87,19 +86,17 @@ final class ASAUserData:  ObservableObject {
 //        } // for row in self.mainRows
         mainRows             = []
         threeLineLargeRows     = []
-        modularSmallRows     = []
-        circularSmallRows    = []
-        extraLargeRows       = []
-        utilitarianLargeRows = []
-        utilitarianSmallRows      = []
+        twoLineSmallRows     = []
+        twoLineLargeRows       = []
+        oneLineLargeRows = []
+        oneLineSmallRows      = []
         
         self.mainRows = self.rowArray(key: .app)
         self.threeLineLargeRows     = self.rowArray(key: .threeLineLarge)
-        self.modularSmallRows     = self.rowArray(key: .modularSmall)
-        self.circularSmallRows    = self.rowArray(key: .circularSmall)
-        self.extraLargeRows       = self.rowArray(key: .extraLarge)
-        self.utilitarianLargeRows = self.rowArray(key: .utilitarianLarge)
-        self.utilitarianSmallRows      = self.rowArray(key: .utilitarianSmall)
+        self.twoLineSmallRows     = self.rowArray(key: .twoLineSmall)
+        self.twoLineLargeRows       = self.rowArray(key: .twoLineLarge)
+        self.oneLineLargeRows = self.rowArray(key: .oneLineLarge)
+        self.oneLineSmallRows      = self.rowArray(key: .oneLineSmall)
 
 
     } // init()
