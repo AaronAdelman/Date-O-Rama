@@ -261,9 +261,10 @@
 "Use device location" = "Use device location";
 "Requested address"   = "Requested address";
 
-"CLOCKS_TAB"      = "Clocks";
-"EVENTS_TAB"      = "Events";
-"PREFERENCES_TAB" = "Preferences";
+"CLOCKS_TAB"              = "Clocks";
+"EVENTS_TAB"              = "Events";
+"PREFERENCES_TAB"         = "Preferences";
+"COMPLICATION_CLOCKS_TAB" = "Watch";
 
 "All day" = "All day";
 "INTERVAL_SEPARATOR" = " - ";

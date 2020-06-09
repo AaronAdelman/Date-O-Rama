@@ -78,27 +78,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
+    func rowArrayDictionary(key:  ASARowArrayKey) -> Array<Dictionary<String, Any>> {
+        let rowArray = ASAUserData.rowArray(key: key)
+        
+        var temp:  Array<Dictionary<String, Any>> = []
+        for row in rowArray {
+            let dictionary = row.dictionary()
+            temp.append(dictionary)
+        }
+        
+        return temp
+    }
+    
     public func sendUserData(_ session: WCSession) {
         debugPrint(#file, #function)
         
-        let modularLargeRowArray = ASAUserData.rowArray(key: ASARowArrayKey.threeLineLarge)
+//        let modularLargeRowArray = ASAUserData.rowArray(key: ASARowArrayKey.threeLineLarge)
+//
+//        var threeLineLargeTemp:  Array<Dictionary<String, Any>> = []
+//        for row in modularLargeRowArray {
+//            let dictionary = row.dictionary()
+//            threeLineLargeTemp.append(dictionary)
+//        }
+//
+//        var mainRowsTemp:  Array<Dictionary<String, Any>> = []
+//        for row in ASAUserData.shared().mainRows {
+//            let dictionary = row.dictionary()
+//            mainRowsTemp.append(dictionary)
+//        }
         
-        var modularLargeTemp:  Array<Dictionary<String, Any>> = []
-        for row in modularLargeRowArray {
-            let dictionary = row.dictionary()
-            modularLargeTemp.append(dictionary)
-        }
-        
-        var mainRowsTemp:  Array<Dictionary<String, Any>> = []
-        for row in ASAUserData.shared().mainRows {
-            let dictionary = row.dictionary()
-            mainRowsTemp.append(dictionary)
-        }
-        
+        let threeLineLargeTemp = self.rowArrayDictionary(key: .threeLineLarge)
+        let twoLineLargeTemp   = self.rowArrayDictionary(key: .twoLineLarge)
+        let twoLineSmallTemp   = self.rowArrayDictionary(key: .twoLineSmall)
+        let oneLineLargeTemp   = self.rowArrayDictionary(key: .oneLineLarge)
+        let oneLineSmallTemp   = self.rowArrayDictionary(key: .oneLineSmall)
+  
+        let mainRowsTemp = self.rowArrayDictionary(key: .app)
+
         
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,
-            ASARowArrayKey.threeLineLarge.rawValue:  modularLargeTemp,
+            ASARowArrayKey.threeLineLarge.rawValue:  threeLineLargeTemp,
+            ASARowArrayKey.twoLineLarge.rawValue:  twoLineLargeTemp,
+            ASARowArrayKey.twoLineSmall.rawValue:  twoLineSmallTemp,
+            ASARowArrayKey.oneLineLarge.rawValue:  oneLineLargeTemp,
+            ASARowArrayKey.oneLineSmall.rawValue:  oneLineSmallTemp,
             ASARowArrayKey.app.rawValue:  mainRowsTemp
             ] as [String : Any]
         

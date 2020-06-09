@@ -39,4 +39,14 @@ extension ASARowArrayKey {
             return 1
         } // switch self
     } // func minimumNumberOfRows() -> Int
+    
+    static func complicationSections() -> Array<ASARowArrayKey> {
+        return [
+            .threeLineLarge,
+            .twoLineSmall,
+            .twoLineLarge,
+            .oneLineLarge,
+            .oneLineSmall
+        ]
+    } // static func complicationSections() -> Array<ASARowArrayKey>
 } // extension ASARowArrayKey

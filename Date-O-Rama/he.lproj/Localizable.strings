@@ -261,9 +261,10 @@
 "Use device location" = "השתמש במיקום המכשיר";
 "Requested address"   = "כתובת מבוקשת";
 
-"CLOCKS_TAB"      = "שעונים";
-"EVENTS_TAB"      = "אירועים";
-"PREFERENCES_TAB" = "הגדרות";
+"CLOCKS_TAB"              = "שעונים";
+"EVENTS_TAB"              = "אירועים";
+"PREFERENCES_TAB"         = "הגדרות";
+"COMPLICATION_CLOCKS_TAB" = "שעון יד";
 
 "All day" = "יום שלם";
 "INTERVAL_SEPARATOR" = " - ";

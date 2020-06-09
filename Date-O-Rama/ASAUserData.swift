@@ -39,7 +39,7 @@ final class ASAUserData:  ObservableObject {
 
     
     private func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
-        var rows = ASAUserData.rowArray(key: .app)
+        var rows = ASAUserData.rowArray(key: key)
         self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
         let coder = CLGeocoder();
         for row in rows {
@@ -91,18 +91,22 @@ final class ASAUserData:  ObservableObject {
         oneLineLargeRows = []
         oneLineSmallRows      = []
         
-        self.mainRows = self.rowArray(key: .app)
-        self.threeLineLargeRows     = self.rowArray(key: .threeLineLarge)
-        self.twoLineSmallRows     = self.rowArray(key: .twoLineSmall)
-        self.twoLineLargeRows       = self.rowArray(key: .twoLineLarge)
-        self.oneLineLargeRows = self.rowArray(key: .oneLineLarge)
-        self.oneLineSmallRows      = self.rowArray(key: .oneLineSmall)
-
-
+        self.mainRows           = self.rowArray(key: .app)
+        self.threeLineLargeRows = self.rowArray(key: .threeLineLarge)
+        self.twoLineSmallRows   = self.rowArray(key: .twoLineSmall)
+        self.twoLineLargeRows   = self.rowArray(key: .twoLineLarge)
+        self.oneLineLargeRows   = self.rowArray(key: .oneLineLarge)
+        self.oneLineSmallRows   = self.rowArray(key: .oneLineSmall)
     } // init()
     
     public func savePreferences() {
         self.saveRowArray(rowArray: self.mainRows, key: .app)
+        self.saveRowArray(rowArray: self.threeLineLargeRows, key: .threeLineLarge)
+        self.saveRowArray(rowArray: self.twoLineLargeRows, key: .twoLineLarge)
+        self.saveRowArray(rowArray: self.twoLineSmallRows, key: .twoLineSmall)
+        self.saveRowArray(rowArray: self.oneLineLargeRows, key: .oneLineLarge)
+        self.saveRowArray(rowArray: self.oneLineSmallRows, key: .oneLineSmall)
+
         self.saveInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
     } // func savePreferences()
     
