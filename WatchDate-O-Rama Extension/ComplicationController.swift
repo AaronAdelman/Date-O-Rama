@@ -219,19 +219,15 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         // Header date
         let headerString = headerRow.dateString(now: now)
-        //let headerString = "…"
         
         // Body 1 date
         let body1String = body1Row.dateString(now: now)
-        //let body1String = "…"
         
         // Body 2 date
         let body2String = body2Row.dateString(now: now)
-        //let body2String = "…≥≥"
         
         let template = CLKComplicationTemplateModularLargeStandardBody()
         template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
-        //            template.headerTextProvider.tintColor = ASAConfiguration().color(row: .header)
         template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
         template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
         return template
@@ -244,19 +240,15 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         // Header date
         let headerString = headerRow.dateString(now: now)
-        //let headerString = "…"
         
         // Body 1 date
         let body1String = body1Row.dateString(now: now)
-        //let body1String = "…"
         
         // Body 2 date
         let body2String = body2Row.dateString(now: now)
-        //let body2String = "…≥≥"
         
         let template = CLKComplicationTemplateGraphicRectangularStandardBody()
         template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
-        //            template.headerTextProvider.tintColor = ASAConfiguration().color(row: .header)
         template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
         template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
         return template

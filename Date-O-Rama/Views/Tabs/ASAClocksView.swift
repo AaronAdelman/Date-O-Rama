@@ -24,7 +24,7 @@ struct ASAClocksView: View {
         let app = UIApplication.shared
         let appDelegate = app.delegate as! AppDelegate
         appDelegate.sendUserData(appDelegate.session)
-    }
+    } // func saveUserData()
     
     var body: some View {
         NavigationView {
@@ -70,18 +70,7 @@ struct ASAClocksView: View {
             )
         }.navigationViewStyle(StackNavigationViewStyle())
             .onReceive(timer) { input in
-                //                for row in self.userData.mainRows {
-                //                    let transition = row.startOfNextDay(now: self.now)
-                ////                    debugPrint("ն:  \(self.now); 🕛:  \(transition); 🔣:  \(input)…")
-                //                    if  input >= transition {
-                ////                        debugPrint("\(#file) \(#function) After transition time (\(transition)), updating date to \(input)…")
                 self.now = Date()
-                //                        break
-                //                    }
-                //                } // for row in self.userData.mainRows
-                //                debugPrint("==========")
-                
-                //                debugPrint("\(#file) \(#function) \(self.locationManager.statusString) \(String(describing: self.deviceLocation)), \(self.now.solarEvents(latitude: self.deviceLocation.coordinate.latitude, longitude: self.deviceLocation.coordinate.longitude, events: [.sunrise, .sunset]))")
         }
     }
 } // struct ASAClocksView
