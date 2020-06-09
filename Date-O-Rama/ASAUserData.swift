@@ -31,7 +31,7 @@ final class ASAUserData:  ObservableObject {
     @Published var mainRows:  Array<ASARow>
     @Published var internalEventCalendars:  Array<ASAInternalEventCalendar>
     
-    @Published var modularLargeRows:      Array<ASARow>
+    @Published var threeLineLargeRows:      Array<ASARow>
     @Published var modularSmallRows:      Array<ASARow>
     @Published var circularSmallRows:     Array<ASARow>
     @Published var extraLargeRows:        Array<ASARow>
@@ -86,7 +86,7 @@ final class ASAUserData:  ObservableObject {
 //            }
 //        } // for row in self.mainRows
         mainRows             = []
-        modularLargeRows     = []
+        threeLineLargeRows     = []
         modularSmallRows     = []
         circularSmallRows    = []
         extraLargeRows       = []
@@ -94,7 +94,7 @@ final class ASAUserData:  ObservableObject {
         utilitarianSmallRows      = []
         
         self.mainRows = self.rowArray(key: .app)
-        self.modularLargeRows     = self.rowArray(key: .modularLarge)
+        self.threeLineLargeRows     = self.rowArray(key: .threeLineLarge)
         self.modularSmallRows     = self.rowArray(key: .modularSmall)
         self.circularSmallRows    = self.rowArray(key: .circularSmall)
         self.extraLargeRows       = self.rowArray(key: .extraLarge)

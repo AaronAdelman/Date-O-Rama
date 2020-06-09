@@ -12,7 +12,7 @@ import WatchKit
 extension ASAUserData {
     func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>? {
         switch complicationFamily {
-        case .modularLarge:
+        case .modularLarge, .graphicRectangular:
             return self.modularLargeRows
             
         case .modularSmall:
@@ -182,6 +182,10 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let template = self.modularLargeTemplate(now: now)
             handler(template)
             
+        case .graphicRectangular:
+            let template = self.graphicRectangularTemplate(now: now)
+            handler(template)
+            
         default:
             handler(nil)
         } // switch complication.family
@@ -236,6 +240,31 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
         return template
     } // func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
+    
+    func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularStandardBody {
+        let headerRow = self.userData.modularLargeRows[0]
+        let body1Row  = self.userData.modularLargeRows[1]
+        let body2Row  = self.userData.modularLargeRows[2]
+        
+        // Header date
+        let headerString = headerRow.dateString(now: now)
+        //let headerString = "…"
+        
+        // Body 1 date
+        let body1String = body1Row.dateString(now: now)
+        //let body1String = "…"
+        
+        // Body 2 date
+        let body2String = body2Row.dateString(now: now)
+        //let body2String = "…≥≥"
+        
+        let template = CLKComplicationTemplateGraphicRectangularStandardBody()
+        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
+        //            template.headerTextProvider.tintColor = ASAConfiguration().color(row: .header)
+        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
+        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
+        return template
+    } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
     func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText {
         let headerRow = self.userData.circularSmallRows[0]
@@ -324,6 +353,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let template = self.modularLargeTemplate(now: now)
             let entry = CLKComplicationTimelineEntry(date: now as Date, complicationTemplate: template)
             return entry
+            
+        case .graphicRectangular:
+            let template = self.graphicRectangularTemplate(now: now)
+            let entry = CLKComplicationTimelineEntry(date: now as Date, complicationTemplate: template)
+            return entry
+
         default:
             return nil
         } // switch complication.family

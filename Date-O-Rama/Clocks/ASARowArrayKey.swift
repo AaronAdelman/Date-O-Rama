@@ -10,7 +10,7 @@ import Foundation
 
 enum ASARowArrayKey:  String {
     case app              = "app"
-    case modularLarge     = "modularLarge"
+    case threeLineLarge     = "modularLarge"
     case modularSmall     = "modularSmall"
     case circularSmall    = "circularSmall"
     case extraLarge       = "extraLarge"
@@ -24,7 +24,7 @@ extension ASARowArrayKey {
         case .app:
             return 1
             
-        case .modularLarge:
+        case .threeLineLarge:
             return 3
             
         case .modularSmall:

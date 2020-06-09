@@ -81,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     public func sendUserData(_ session: WCSession) {
         debugPrint(#file, #function)
         
-        let modularLargeRowArray = ASAUserData.rowArray(key: ASARowArrayKey.modularLarge)
+        let modularLargeRowArray = ASAUserData.rowArray(key: ASARowArrayKey.threeLineLarge)
         
         var modularLargeTemp:  Array<Dictionary<String, Any>> = []
         for row in modularLargeRowArray {
@@ -98,7 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,
-            ASARowArrayKey.modularLarge.rawValue:  modularLargeTemp,
+            ASARowArrayKey.threeLineLarge.rawValue:  modularLargeTemp,
             ASARowArrayKey.app.rawValue:  mainRowsTemp
             ] as [String : Any]
         
