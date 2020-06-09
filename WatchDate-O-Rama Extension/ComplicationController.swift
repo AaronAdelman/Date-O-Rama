@@ -15,7 +15,7 @@ extension ASAUserData {
         case .modularLarge, .graphicRectangular:
             return self.threeLineLargeRows
             
-        case .modularSmall, .circularSmall:
+        case .modularSmall, .circularSmall, .graphicCircular:
             return self.twoLineSmallRows
             
         case .utilitarianSmall, .utilitarianSmallFlat:
@@ -180,6 +180,10 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let template = self.graphicRectangularTemplate(now: now)
             handler(template)
             
+        case .graphicCircular:
+            let template = self.graphicCircularTemplate(now: now)
+            handler(template)
+            
         default:
             handler(nil)
         } // switch complication.family
@@ -198,11 +202,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         // Header date
         let headerString = headerRow.dateString(now: now)
-        //let headerString = "…"
         
         // Body 1 date
         let body1String = body1Row.dateString(now: now)
-        //let body1String = "…"
         
         let template = CLKComplicationTemplateModularSmallStackText()
         template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
@@ -313,6 +315,22 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         template.textProvider = CLKSimpleTextProvider(text: headerString)
         return template
     } // func utilitarianLargeTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianLargeFlat
+    
+    func graphicCircularTemplate(now:  Date) -> CLKComplicationTemplateGraphicCircularStackText {
+        let headerRow = self.userData.twoLineSmallRows[0]
+        let body1Row  = self.userData.twoLineSmallRows[1]
+        
+        // Header date
+        let headerString = headerRow.dateString(now: now)
+        
+        // Body 1 date
+        let body1String = body1Row.dateString(now: now)
+        
+        let template = CLKComplicationTemplateGraphicCircularStackText()
+        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
+        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
+        return template
+    } // // func graphicCircularTemplate(now:  Date) -> CLKComplicationTemplateGraphicCircularStackText
 
     func getTimelineEntryForComplication(complication: CLKComplication, now: Date) -> CLKComplicationTimelineEntry? {
         print("\(#file) \(#function) now = \(now)")
@@ -352,7 +370,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             let template = self.graphicRectangularTemplate(now: now)
             let entry = CLKComplicationTimelineEntry(date: now as Date, complicationTemplate: template)
             return entry
-
+            
+        case .graphicCircular:
+            let template = self.graphicCircularTemplate(now: now)
+            let entry = CLKComplicationTimelineEntry(date: now as Date, complicationTemplate: template)
+            return entry
+            
         default:
             return nil
         } // switch complication.family
