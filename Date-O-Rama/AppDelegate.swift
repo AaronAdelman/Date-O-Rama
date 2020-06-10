@@ -127,6 +127,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
             ] as [String : Any]
         
         session.sendMessage(updateMessage, replyHandler: nil, errorHandler: nil)
+        session.transferCurrentComplicationUserInfo(updateMessage)
     } // func sendUserData(_ session: WCSession)
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {

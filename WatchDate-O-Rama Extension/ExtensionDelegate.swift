@@ -88,15 +88,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
             for key in ASARowArrayKey.complicationSections() {
                 let value = message[key.rawValue]
-                var rowArray = complicationController.userData.rowArray(for:  complicationController.complication!.family)
-                if value != nil {
-                    let valueAsArray = value! as! Array<Dictionary<String, Any>>
-                    for i in 0..<key.minimumNumberOfRows() {
-                        let newRow: ASARow = ASARow.newRow(dictionary: valueAsArray[i])
-                        rowArray?[i] = newRow
-                    } // for i in 0..<ASARowArrayKey.modularLarge.minimumNumberOfRows()
+                if complicationController.complication != nil {
+                    var rowArray = complicationController.userData.rowArray(for:  complicationController.complication!.family)
+                    if value != nil {
+                        let valueAsArray = value! as! Array<Dictionary<String, Any>>
+                        for i in 0..<key.minimumNumberOfRows() {
+                            let newRow: ASARow = ASARow.newRow(dictionary: valueAsArray[i])
+                            rowArray?[i] = newRow
+                        } // for i in 0..<key.minimumNumberOfRows()
+                    }
+                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
                 }
-                ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
             }
  
 
