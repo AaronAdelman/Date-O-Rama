@@ -95,15 +95,38 @@ extension ASALocationManager: CLLocationManagerDelegate {
             coder.reverseGeocodeLocation(location) { (placemarks, error) in
                 let place = placemarks?.last;
                 
+                if place == nil || error != nil {
+                    debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
+
+                    var tempLocationData = ASALocationData()
+                    tempLocationData.location              = location
+                    tempLocationData.name                  = NSLocalizedString("???", comment: "")
+                    tempLocationData.locality              = NSLocalizedString("???", comment: "")
+                    tempLocationData.country               = NSLocalizedString("???", comment: "")
+                    tempLocationData.ISOCountryCode        = NSLocalizedString("???", comment: "")
+                    tempLocationData.postalCode            = NSLocalizedString("???", comment: "")
+                    tempLocationData.administrativeArea    = NSLocalizedString("???", comment: "")
+                    tempLocationData.subAdministrativeArea = NSLocalizedString("???", comment: "")
+                    tempLocationData.subLocality           = NSLocalizedString("???", comment: "")
+                    tempLocationData.thoroughfare          = NSLocalizedString("???", comment: "")
+                    tempLocationData.subThoroughfare       = NSLocalizedString("???", comment: "")
+                    tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
+                    self.finishDidUpdateLocations(tempLocationData)
+                    return
+                }
+                
                 self.lastDevicePlacemark = place
                 self.lastDeviceLocation = location
                 let tempLocationData = ASALocationData.create(placemark: place)
-                self.locationData = tempLocationData
-                self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
-                
-                debugPrint(#file, #function, location, place as Any)
+                self.finishDidUpdateLocations(tempLocationData)
             }
         }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 
+    fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocationData) {
+        self.locationData = tempLocationData
+        self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
+        
+        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
+    } // func finishDidUpdateLocations(_ tempLocationData: ASALocationData)
 } // extension ASALocationManager

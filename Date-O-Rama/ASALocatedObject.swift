@@ -79,6 +79,9 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     
     @objc func handle(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
+            if self.locationManager.locationData.location == nil {
+                debugPrint("AHA!")
+            }
             self.locationData = self.locationManager.locationData
         }
     } // func handle(notification:  Notification) -> Void
