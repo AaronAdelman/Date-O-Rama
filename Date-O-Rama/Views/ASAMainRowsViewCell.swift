@@ -12,6 +12,7 @@ struct ASAMainRowsViewCell:  View {
     @ObservedObject  var row:  ASARow
     var now:  Date
     var INSET:  CGFloat
+    var shouldShowTime:  Bool
     
     let ROW_HEIGHT = 30.0 as CGFloat
     
@@ -27,7 +28,9 @@ struct ASAMainRowsViewCell:  View {
                 VStack(alignment: .leading) {
                     if row.calendar.canSplitTimeFromDate {
                         Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
-                        Text(verbatim:  row.timeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                        if shouldShowTime {
+                            Text(verbatim:  row.timeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                        }
                     } else {
                         Text(verbatim:  row.dateTimeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
                     }
@@ -83,6 +86,6 @@ struct ASAMainRowsLocationSubcell:  View {
 
 struct ASAMainRowsViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsViewCell(row: ASARow.generic(), now: Date(), INSET: 8.0)
+        ASAMainRowsViewCell(row: ASARow.generic(), now: Date(), INSET: 8.0, shouldShowTime: true)
     }
 }

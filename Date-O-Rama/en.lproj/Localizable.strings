@@ -285,3 +285,9 @@
 "Internal events" = "Internal events";
 
 "???" = "???";
+
+"modularLarge"     = "Three-line large complication rows";
+"modularSmall"     = "Two-line small complication rows";
+"extraLarge"       = "Two-line large complication rows";
+"utilitarianLarge" = "One-line large complication rows";
+"utilitarian"      = "One-line small complication rows";

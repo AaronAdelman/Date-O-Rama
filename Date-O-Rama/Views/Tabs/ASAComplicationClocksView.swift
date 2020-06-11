@@ -43,17 +43,17 @@ struct ASAComplicationClocksView: View {
                NavigationView {
         List {
         ForEach(ASARowArrayKey.complicationSections(), id:  \.self) {complicationKey in
-            Section(header:  Text(complicationKey.rawValue)) {
+            Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                 ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                     NavigationLink(
-                        destination: ASAClockDetailView(selectedRow: row, now: self.now)
+                        destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
                                 self.saveUserData()
                         }
                     ) {
-                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET)
+                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, shouldShowTime: false)
                     }
                 }
             }

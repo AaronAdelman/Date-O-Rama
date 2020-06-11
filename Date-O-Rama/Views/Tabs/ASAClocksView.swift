@@ -31,14 +31,14 @@ struct ASAClocksView: View {
             List {
                 ForEach(userData.mainRows, id:  \.uuid) { row in
                     NavigationLink(
-                        destination: ASAClockDetailView(selectedRow: row, now: self.now)
+                        destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: true)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
                                 self.saveUserData()
                         }
                     ) {
-                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET)
+                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, shouldShowTime: true)
                     }
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in

@@ -12,6 +12,7 @@ import CoreLocation
 struct ASAClockDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
+    var shouldShowTime:  Bool
     
     func localDateFormatter(timeZone:  TimeZone?) -> DateFormatter {
         let dateFormatter = DateFormatter()
@@ -43,7 +44,7 @@ struct ASAClockDetailView: View {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }
-                if selectedRow.calendar.supportsTimeFormats {
+                if selectedRow.calendar.supportsTimeFormats && shouldShowTime {
                     NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
                     }
@@ -80,6 +81,6 @@ struct ASAClockDetailView: View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date())
+        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date(), shouldShowTime: true)
     }
 }
