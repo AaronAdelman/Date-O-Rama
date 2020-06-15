@@ -92,21 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     
     public func sendUserData(_ session: WCSession) {
         debugPrint(#file, #function)
-        
-//        let modularLargeRowArray = ASAUserData.rowArray(key: ASARowArrayKey.threeLineLarge)
-//
-//        var threeLineLargeTemp:  Array<Dictionary<String, Any>> = []
-//        for row in modularLargeRowArray {
-//            let dictionary = row.dictionary()
-//            threeLineLargeTemp.append(dictionary)
-//        }
-//
-//        var mainRowsTemp:  Array<Dictionary<String, Any>> = []
-//        for row in ASAUserData.shared().mainRows {
-//            let dictionary = row.dictionary()
-//            mainRowsTemp.append(dictionary)
-//        }
-        
+                
         let threeLineLargeTemp = self.rowArrayDictionary(key: .threeLineLarge)
         let twoLineLargeTemp   = self.rowArrayDictionary(key: .twoLineLarge)
         let twoLineSmallTemp   = self.rowArrayDictionary(key: .twoLineSmall)
@@ -115,7 +101,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
   
         let mainRowsTemp = self.rowArrayDictionary(key: .app)
 
-        
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,
             ASARowArrayKey.threeLineLarge.rawValue:  threeLineLargeTemp,
@@ -132,6 +117,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         debugPrint(#file, #function, applicationContext)
+        self.sendUserData(session)
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {

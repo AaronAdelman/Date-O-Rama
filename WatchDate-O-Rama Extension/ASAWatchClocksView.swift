@@ -28,7 +28,7 @@ struct ASAWatchClocksView: View {
                                 self.userData.savePreferences()
                         }
                     ) {
-                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, shouldShowTime: false)
+                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, shouldShowTime: true)
                     }
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in

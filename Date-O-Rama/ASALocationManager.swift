@@ -85,41 +85,50 @@ extension ASALocationManager: CLLocationManagerDelegate {
         print(#function, statusString)
     }
 
+    fileprivate func reverseGeocode(_ location: CLLocation) {
+        let coder = CLGeocoder();
+        coder.reverseGeocodeLocation(location) { (placemarks, error) in
+            let place = placemarks?.last;
+            
+            if place == nil || error != nil {
+                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
+                
+                var tempLocationData = ASALocationData()
+                tempLocationData.location              = location
+                tempLocationData.name                  = NSLocalizedString("???", comment: "")
+                tempLocationData.locality              = NSLocalizedString("???", comment: "")
+                tempLocationData.country               = NSLocalizedString("???", comment: "")
+                tempLocationData.ISOCountryCode        = NSLocalizedString("???", comment: "")
+                tempLocationData.postalCode            = NSLocalizedString("???", comment: "")
+                tempLocationData.administrativeArea    = NSLocalizedString("???", comment: "")
+                tempLocationData.subAdministrativeArea = NSLocalizedString("???", comment: "")
+                tempLocationData.subLocality           = NSLocalizedString("???", comment: "")
+                tempLocationData.thoroughfare          = NSLocalizedString("???", comment: "")
+                tempLocationData.subThoroughfare       = NSLocalizedString("???", comment: "")
+                tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
+                self.finishDidUpdateLocations(tempLocationData)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
+                    self.reverseGeocode(location)
+                }
+                return
+            }
+            
+            self.lastDevicePlacemark = place
+            self.lastDeviceLocation = location
+            let tempLocationData = ASALocationData.create(placemark: place)
+            self.finishDidUpdateLocations(tempLocationData)
+        }
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        //        print(#function, location)
+        print(#file, #function, location)
+        
         let Δ = self.lastDeviceLocation?.distance(from: location)
 
         if Δ == nil || Δ! >= 10.0 {
-            let coder = CLGeocoder();
-            coder.reverseGeocodeLocation(location) { (placemarks, error) in
-                let place = placemarks?.last;
-                
-                if place == nil || error != nil {
-                    debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
-
-                    var tempLocationData = ASALocationData()
-                    tempLocationData.location              = location
-                    tempLocationData.name                  = NSLocalizedString("???", comment: "")
-                    tempLocationData.locality              = NSLocalizedString("???", comment: "")
-                    tempLocationData.country               = NSLocalizedString("???", comment: "")
-                    tempLocationData.ISOCountryCode        = NSLocalizedString("???", comment: "")
-                    tempLocationData.postalCode            = NSLocalizedString("???", comment: "")
-                    tempLocationData.administrativeArea    = NSLocalizedString("???", comment: "")
-                    tempLocationData.subAdministrativeArea = NSLocalizedString("???", comment: "")
-                    tempLocationData.subLocality           = NSLocalizedString("???", comment: "")
-                    tempLocationData.thoroughfare          = NSLocalizedString("???", comment: "")
-                    tempLocationData.subThoroughfare       = NSLocalizedString("???", comment: "")
-                    tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
-                    self.finishDidUpdateLocations(tempLocationData)
-                    return
-                }
-                
-                self.lastDevicePlacemark = place
-                self.lastDeviceLocation = location
-                let tempLocationData = ASALocationData.create(placemark: place)
-                self.finishDidUpdateLocations(tempLocationData)
-            }
+            reverseGeocode(location)
         }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 
