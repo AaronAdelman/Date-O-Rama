@@ -25,6 +25,17 @@ struct ASAPreferencesView: View {
                 
                 Section(header:  HStack {
                     Text("Internal events")
+                    Spacer()
+                    Button(
+                                action: {
+                                    withAnimation {
+                                        self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
+                                        self.userData.savePreferences()
+                                    }
+                            }
+                            ) {
+                                Text(verbatim:  "➕")
+                            }
                 }) {
                     ForEach(userData.internalEventCalendars, id:  \.uuid) {
                         eventCalendar
@@ -53,16 +64,18 @@ struct ASAPreferencesView: View {
                 .navigationBarTitle(Text("PREFERENCES_TAB"))
                 .navigationBarItems(
                     leading: EditButton(),
-                    trailing: Button(
-                        action: {
-                            withAnimation {
-                                self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
-                                self.userData.savePreferences()
-                            }
-                    }
-                    ) {
-                        Text(verbatim:  "➕")
-                    }
+                    trailing:
+//                    Button(
+//                        action: {
+//                            withAnimation {
+//                                self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
+//                                self.userData.savePreferences()
+//                            }
+//                    }
+//                    ) {
+//                        Text(verbatim:  "➕")
+//                    }
+                    EmptyView()
             )
         }// NavigationView
             .navigationViewStyle(StackNavigationViewStyle())
