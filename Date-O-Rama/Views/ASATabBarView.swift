@@ -9,9 +9,6 @@
 import SwiftUI
 
 struct ASATabBarView: View {
-    
-    let TESTING = false
-    
     let tabBarElements: [TabBarElement] = {
         let app = UIApplication.shared
         let appDelegate = app.delegate as! AppDelegate
@@ -27,11 +24,11 @@ struct ASATabBarView: View {
                 ASAPreferencesView().environmentObject(ASAUserData.shared())
             }
         ]
-//        if appDelegate.session.isPaired && TESTING {
+        if appDelegate.session.isWatchAppInstalled || false {
             temp.append(TabBarElement(tabBarElementItem: .init(title: NSLocalizedString("COMPLICATION_CLOCKS_TAB", comment: ""), systemImageName: "gear")) {
                 ASAComplicationClocksView().environmentObject(ASAUserData.shared())
             })
-//        }
+        }
         
         return temp
     }()
