@@ -93,6 +93,15 @@ struct ASAEventsView: View {
                             }
                         }
                     }
+                    
+                    if settings.eventsViewShouldShowSecondaryDates {
+                        Button("🔃") {
+                            let tempRowUUIDString = self.settings.primaryRowUUIDString
+                            self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
+                            self.settings.secondaryRowUUIDString = tempRowUUIDString
+                        }
+                    }
+                    
                     Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
                         Text("Show secondary dates")
                     }
