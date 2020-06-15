@@ -18,32 +18,36 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
         debugPrint(#file, #function, startDate, endDate, location, timeZone)
         var now = startDate.oneDayBefore
         var result:  Array<ASAEvent> = []
+        var oldNow = now
         repeat {
             let temp = self.eventDetails(date: now, location: location, timeZone: timeZone, eventCalendarName: eventCalendarName)
             for event in temp {
+                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
+
                 if !(event.endDate < startDate || event.startDate >= endDate) {
                     result.append(event)
                 }
             } // for event in tempResult
+            oldNow = now
             now = now.oneDayAfter
-        } while now < endDate
+        } while oldNow < endDate
         
         return result
-    }
+    } // func eventDetails(startDate: Date, endDate: Date, location: CLLocation, timeZone: TimeZone, eventCalendarName: String) -> Array<ASAEvent>
     
     fileprivate func calendarColor() -> Color {
         return Color(UIColor.blue)
     } // static func calendarColor() -> Color
     
-     func eventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName: String) -> Array<ASAEvent> {
+    func eventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName: String) -> Array<ASAEvent> {
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         let previousDate = date.oneDayBefore
         let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset
-//            , .dusk
+            //            , .dusk
         ], timeZone:  timeZone )
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
-
+        
         let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset, .dawn, .recognition, .dusk], timeZone:  timeZone )
         
         // According to the גר״א
@@ -97,9 +101,9 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
         //        let otherHour11  = otherDawn.addingTimeInterval(11    * otherHourLength)
         
         return [
-//            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, endDate: previousSunset, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
-//            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: previousDusk, endDate: previousDusk, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
-//            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, endDate: previousOtherDusk, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
+            //            ASAEvent(title: NSLocalizedString(SUNSET_KEY, comment: ""), startDate: previousSunset, endDate: previousSunset, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
+            //            ASAEvent(title: NSLocalizedString(DUSK_KEY, comment: ""), startDate: previousDusk, endDate: previousDusk, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
+            //            ASAEvent(title: NSLocalizedString(OTHER_DUSK_KEY, comment: ""), startDate: previousOtherDusk, endDate: previousOtherDusk, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
             ASAEvent(title: NSLocalizedString(MIDNIGHT_KEY, comment: ""), startDate: midnight, endDate: midnight, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
             ASAEvent(title: NSLocalizedString(DAWN_KEY, comment: ""), startDate: dawn, endDate: dawn, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
             ASAEvent(title: NSLocalizedString(OTHER_DAWN_KEY, comment: ""), startDate: otherDawn, endDate: otherDawn, isAllDay: false, timeZone: timeZone, color: calendarColor(), calendarTitle:  eventCalendarName),
