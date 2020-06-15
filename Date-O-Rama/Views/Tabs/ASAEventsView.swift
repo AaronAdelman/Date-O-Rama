@@ -254,12 +254,12 @@ struct ASAStartAndEndTimesSubcell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             if event.isAllDay && row.calendar.calendarCode == ASACalendarCode.Gregorian {
-                Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize)
+                Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color.black)
                 Text("All day").frame(width:  timeWidth).font(timeFontSize)
             } else {
-                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize)
+                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color.black)
                 if event.endDate != event.startDate {
-                    Text(row.dateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize)
+                    Text(row.dateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color.black)
                 }
             }
         } // VStack
