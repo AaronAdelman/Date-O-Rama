@@ -238,8 +238,8 @@ struct ASAEventCell:  View {
             }
             Rectangle().frame(width:  2.0).foregroundColor(event.color)
             VStack(alignment: .leading) {
-                Text(event.title).font(.headline)
-                Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.systemGray))
+                Text(event.title).font(.headline).foregroundColor(Color(UIColor.label))
+                Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.secondaryLabel))
             } // VStack
         } // HStack
     }
