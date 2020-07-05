@@ -48,7 +48,7 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
         ], timeZone:  timeZone )
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
         
-        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset, .dawn, .recognition, .dusk], timeZone:  timeZone )
+        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset, .dawn16Point1Degrees, .recognition, .dusk8Point5Degrees, .dawn72Minutes, .dusk72Minutes, .candleLighting], timeZone:  timeZone )
         
         // According to the גר״א
         let sunrise:  Date = events[.sunrise]!! // נץ
@@ -60,7 +60,7 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
         let dayLength = sunset.timeIntervalSince(sunrise)
         let hourLength = dayLength / 12.0
         
-        let dawn           = events[.dawn]!! // עלות השחר
+        let dawn           = events[.dawn16Point1Degrees]!! // עלות השחר
         let recognition    = events[.recognition]!! // משיכיר
         //        let hour01         = sunrise.addingTimeInterval( 1    * hourLength)
         //        let hour02         = sunrise.addingTimeInterval( 2    * hourLength)
@@ -76,12 +76,12 @@ class ASADailyJewishEventSource:  ASAInternalEventSource {
         //        let hour10         = sunrise.addingTimeInterval(10    * hourLength)
         let hour10¾        = sunrise.addingTimeInterval(10.75 * hourLength) // פלג המנחה
         //        let hour11         = sunrise.addingTimeInterval(11    * hourLength)
-        let candelLighting = sunset.addingTimeInterval(-18 * 60) // הדלקת נרות
-        let dusk           = events[.dusk]!! // צאת הכוכבים
+        let candelLighting = events[.candleLighting]!! // הדלקת נרות
+        let dusk           = events[.dusk8Point5Degrees]!! // צאת הכוכבים
         
         // According to the מגן אברהם
-        let otherDawn = sunrise.sunriseToOtherDawn() // עלות השחר
-        let otherDusk = sunset.sunsetToOtherDusk() // צאת הכוכבים
+        let otherDawn = events[.dawn72Minutes]!! // עלות השחר
+        let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
         let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
         let otherHourLength = otherDayLength / 12.0
         

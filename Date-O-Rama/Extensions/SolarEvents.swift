@@ -38,54 +38,34 @@ import CoreLocation
 //         = (180/pi)*atan(0.91764 * tan((pi/180)*L)) to give a degree
 //         answer with a degree input for L.
 
-enum ASASolarEvent {
-    // This enum encapsulates parameters for Solar events of interest
-    case sunrise
-    case sunset
-    case civilDawn
-    case civilDusk
-    case nauticalDawn
-    case nauticalDusk
-    case astronomicalDawn
-    case astronomicalDusk
-    
-    case dawn
-    case recognition
-    case dusk
+fileprivate let SUNRISE_AND_SUNSET_ZENITH = 90.0 + (50.0 / 60.0)
+fileprivate let CIVIL_ZENTH               = 96.0
+fileprivate let NAUTICAL_ZENITH           = 102.0
+fileprivate let ASTRONOMICAL_ZENITH       = 108.0
 
-    func zenith() -> Double {
-        switch self {
-        case .sunrise, .sunset:
-            return 90.0 + (50.0 / 60.0)
-        case .civilDawn, .civilDusk:
-            return 96.0
-        case .nauticalDawn, .nauticalDusk:
-            return 102.0
-        case .astronomicalDawn, .astronomicalDusk:
-            return 108.0
-            
-        case .dawn:
-            return 90.0 + 16.1
-        case .recognition:
-            return 90.0 + 11
-        case .dusk:
-            return 90.0 + 8.5
-        } // switch self
-    } // func zenith() -> Double
+struct ASASolarEvent:  Hashable {
+    // This struct encapsulates parameters for Solar events of interest
+    var zenith:  Double       // Degrees from perfectly overhead
+    var rising:  Bool
+    var offset:  TimeInterval // Seconds after the Sun reaches the requested apparent position
     
-    func rising() -> Bool {
-        switch self {
-        case .sunrise, .civilDawn, .nauticalDawn, .astronomicalDawn:
-            return true
-        case .sunset, .civilDusk, .nauticalDusk, .astronomicalDusk:
-            return false
-        case .dawn, .recognition:
-            return true
-        case .dusk:
-            return false
-        } // switch self
-    } // func rising() -> Bool
-} // enum ASASolarEvent
+    static var sunrise             = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: true, offset: 0)
+    static var sunset              = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: false, offset: 0)
+    static var civilDawn           = ASASolarEvent(zenith: CIVIL_ZENTH, rising: true, offset: 0)
+    static var civilDusk           = ASASolarEvent(zenith: CIVIL_ZENTH, rising: false, offset: 0)
+    static var nauticalDawn        = ASASolarEvent(zenith: NAUTICAL_ZENITH, rising: true, offset: 0)
+    static var nauticalDusk        = ASASolarEvent(zenith: NAUTICAL_ZENITH, rising: false, offset: 0)
+    static var astronomicalDawn    = ASASolarEvent(zenith: ASTRONOMICAL_ZENITH, rising: true, offset: 0)
+    static var astronomicalDusk    = ASASolarEvent(zenith: ASTRONOMICAL_ZENITH, rising: false, offset: 0)
+    static var dawn16Point1Degrees = ASASolarEvent(zenith: 90.0 + 16.1, rising: true, offset: 0) // עלות השחר
+    static var recognition = ASASolarEvent(zenith: 90.0 + 11, rising: true, offset: 0) // משיכיר
+    static var dusk8Point5Degrees  = ASASolarEvent(zenith: 90.0 + 8.5, rising: false, offset: 0) // צאת הכוכבים
+    
+    static var dawn72Minutes        = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: true, offset: -72 * 60)
+    static var dusk72Minutes        = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: false, offset: 72 * 60)
+    
+    static var candleLighting       = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: false, offset: -18 * 60)
+} // struct ASASolarEvent
 
 
 extension Date {
@@ -109,8 +89,8 @@ extension Date {
         // Now switch to a function
         var result:  Dictionary<ASASolarEvent, Date?> = [:]
         for event in events {
-            var tempResult = solarEventsContinued(t: event.rising() ? t_rising : t_setting, latitude: latitude, zenith: event.zenith(), risingDesired: event.rising(), date: self, lngHour: lngHour)
-            if !event.rising() && tempResult != nil {
+            var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, zenith: event.zenith, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
+            if !event.rising && tempResult != nil {
                 let midnightToday = calendar.startOfDay(for:self)
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
                 if tempResult! < noon {
@@ -125,7 +105,7 @@ extension Date {
     } // func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
 } // extension Date
 
-func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date? {
+func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval) -> Date? {
     // 3. calculate the Sun's mean anomaly
     let M = (0.9856 * t) - 3.289
     
@@ -185,7 +165,7 @@ func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, rising
     var gregorianCalendar = Calendar(identifier: .gregorian)
     gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
     let midnight = gregorianCalendar.startOfDay(for:date)
-    let result = midnight.addingTimeInterval(UT * 60 * 60)
+    let result = midnight.addingTimeInterval(UT * 60 * 60) + offset
     
     return result
 } // func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?
