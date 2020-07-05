@@ -38,33 +38,33 @@ import CoreLocation
 //         = (180/pi)*atan(0.91764 * tan((pi/180)*L)) to give a degree
 //         answer with a degree input for L.
 
-fileprivate let SUNRISE_AND_SUNSET_ZENITH = 90.0 + (50.0 / 60.0)
-fileprivate let CIVIL_ZENTH               = 96.0
-fileprivate let NAUTICAL_ZENITH           = 102.0
-fileprivate let ASTRONOMICAL_ZENITH       = 108.0
+fileprivate let SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON = (50.0 / 60.0)
+fileprivate let CIVIL_DEGREES_BELOW_HORIZON               = 6.0
+fileprivate let NAUTICAL_DEGREES_BELOW_HORIZON           = 12.0
+fileprivate let ASTRONOMICAL_DEGREES_BELOW_HORIZON       = 18.0
 
 struct ASASolarEvent:  Hashable {
     // This struct encapsulates parameters for Solar events of interest
-    var zenith:  Double       // Degrees from perfectly overhead
+    var degreesBelowHorizon:  Double       // Sun’s center degrees below horizon
     var rising:  Bool
     var offset:  TimeInterval // Seconds after the Sun reaches the requested apparent position
     
-    static var sunrise             = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: true, offset: 0)
-    static var sunset              = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: false, offset: 0)
-    static var civilDawn           = ASASolarEvent(zenith: CIVIL_ZENTH, rising: true, offset: 0)
-    static var civilDusk           = ASASolarEvent(zenith: CIVIL_ZENTH, rising: false, offset: 0)
-    static var nauticalDawn        = ASASolarEvent(zenith: NAUTICAL_ZENITH, rising: true, offset: 0)
-    static var nauticalDusk        = ASASolarEvent(zenith: NAUTICAL_ZENITH, rising: false, offset: 0)
-    static var astronomicalDawn    = ASASolarEvent(zenith: ASTRONOMICAL_ZENITH, rising: true, offset: 0)
-    static var astronomicalDusk    = ASASolarEvent(zenith: ASTRONOMICAL_ZENITH, rising: false, offset: 0)
-    static var dawn16Point1Degrees = ASASolarEvent(zenith: 90.0 + 16.1, rising: true, offset: 0) // עלות השחר
-    static var recognition = ASASolarEvent(zenith: 90.0 + 11, rising: true, offset: 0) // משיכיר
-    static var dusk8Point5Degrees  = ASASolarEvent(zenith: 90.0 + 8.5, rising: false, offset: 0) // צאת הכוכבים
+    static var sunrise             = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+    static var sunset              = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+    static var civilDawn           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+    static var civilDusk           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+    static var nauticalDawn        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+    static var nauticalDusk        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+    static var astronomicalDawn    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+    static var astronomicalDusk    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+    static var dawn16Point1Degrees = ASASolarEvent(degreesBelowHorizon: 16.1, rising: true, offset: 0) // עלות השחר
+    static var recognition = ASASolarEvent(degreesBelowHorizon: 11.0, rising: true, offset: 0) // משיכיר
+    static var dusk8Point5Degrees  = ASASolarEvent(degreesBelowHorizon: 8.5, rising: false, offset: 0) // צאת הכוכבים
     
-    static var dawn72Minutes        = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: true, offset: -72 * 60)
-    static var dusk72Minutes        = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: false, offset: 72 * 60)
+    static var dawn72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: -72 * 60)
+    static var dusk72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 72 * 60)
     
-    static var candleLighting       = ASASolarEvent(zenith: SUNRISE_AND_SUNSET_ZENITH, rising: false, offset: -18 * 60)
+    static var candleLighting       = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: -18 * 60)
 } // struct ASASolarEvent
 
 
@@ -89,7 +89,7 @@ extension Date {
         // Now switch to a function
         var result:  Dictionary<ASASolarEvent, Date?> = [:]
         for event in events {
-            var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, zenith: event.zenith, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
+            var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
             if !event.rising && tempResult != nil {
                 let midnightToday = calendar.startOfDay(for:self)
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
@@ -105,7 +105,7 @@ extension Date {
     } // func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
 } // extension Date
 
-func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval) -> Date? {
+func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval) -> Date? {
     // 3. calculate the Sun's mean anomaly
     let M = (0.9856 * t) - 3.289
     
@@ -133,6 +133,7 @@ func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, rising
     let cosDec = cos(degrees:  asin(degrees:  sinDec))
     
     // 7a. calculate the Sun's local hour angle
+    let zenith = degreesBelowHorizon + 90
     let cosH = (cos(degrees:  zenith) - (sinDec * sin(degrees:  latitude))) / (cosDec * cos(degrees: latitude))
     
     if (cosH >  1.0) {
@@ -168,7 +169,7 @@ func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, rising
     let result = midnight.addingTimeInterval(UT * 60 * 60) + offset
     
     return result
-} // func solarEventsContinued(t:  Double, latitude:  Double, zenith:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?
+} // func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?
 
 extension Double {
     func normalizedTo(lower:  Double, upper:  Double) -> Double {
