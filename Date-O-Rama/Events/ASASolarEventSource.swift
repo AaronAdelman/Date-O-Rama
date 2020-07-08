@@ -60,13 +60,14 @@ class ASASolarEventSource:  ASAInternalEventSource {
         var result:  Array<ASAEvent> = []
         for programmedEvent in self.eventsFile.events {
             let title = NSLocalizedString(programmedEvent.localizableTitle!, comment: "")
+            let color = self.calendarColor()
             if programmedEvent.type == .degreesBelowHorizon {
                 let solarEvent = ASASolarEvent(degreesBelowHorizon: programmedEvent.degreesBelowHorizon!, rising: programmedEvent.rising!, offset: programmedEvent.offset!)
                 
                 let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
                 let date = events[solarEvent]
                 
-                let newEvent = ASAEvent(title: title, startDate: date!!, endDate: date!!, isAllDay: programmedEvent.isAllDay, timeZone: timeZone, color: Color(self.eventsFile.calendarColor), calendarTitle: eventCalendarName)
+                let newEvent = ASAEvent(title: title, startDate: date!!, endDate: date!!, isAllDay: programmedEvent.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
                 result.append(newEvent)
             }
         } // for programmedEvent in self.eventsFile.events
