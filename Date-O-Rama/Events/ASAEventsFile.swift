@@ -55,4 +55,5 @@ struct ASAEncodedEvent: Codable {
     var degreesBelowHorizon: Double?
     var rising: Bool?
     var offset: TimeInterval?
+    var isAllDay:  Bool
 } // struct ASAEncodedEvent

@@ -66,7 +66,7 @@ class ASASolarEventSource:  ASAInternalEventSource {
                 let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
                 let date = events[solarEvent]
                 
-                let newEvent = ASAEvent(title: title, startDate: date!!, endDate: date!!, isAllDay: false, timeZone: timeZone, color: Color(self.eventsFile.calendarColor), calendarTitle: eventCalendarName)
+                let newEvent = ASAEvent(title: title, startDate: date!!, endDate: date!!, isAllDay: programmedEvent.isAllDay, timeZone: timeZone, color: Color(self.eventsFile.calendarColor), calendarTitle: eventCalendarName)
                 result.append(newEvent)
             }
         } // for programmedEvent in self.eventsFile.events
