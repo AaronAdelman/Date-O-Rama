@@ -445,13 +445,13 @@
 			children = (
 				A5BFC5BB246BF3180075AF58 /* ASADailyJewishEventSource.swift */,
 				A5BFC5B6246B29600075AF58 /* ASAEvent.swift */,
+				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A5BFC5B4246AB5B50075AF58 /* ASAExternalEventManager.swift */,
 				A57BCCAE247BB7F80019C02C /* ASAInternalEventCalendar.swift */,
 				A57BCCB6247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift */,
 				A57BCCB2247BC28B0019C02C /* ASAInternalEventSource.swift */,
 				A57BCCB4247BC33A0019C02C /* ASAInternalEventSourceCode.swift */,
 				A57BCCBD247D8A700019C02C /* ASASolarEventSource.swift */,
-				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
