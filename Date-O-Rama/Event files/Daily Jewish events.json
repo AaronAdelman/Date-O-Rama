@@ -24,9 +24,9 @@
         },
         
         {
-            "localizableTitle":  "dawn",
+            "localizableTitle":  "dawn16°",
             "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  16.1,
+            "degreesBelowHorizon":  16,
             "rising":  true,
             "offset":  0,
             "isAllDay":  false
@@ -157,6 +157,23 @@
             "isAllDay":  false,
             "solarHours":  10.75,
             "dayHalf":  "day"
+        },
+        
+        {
+            "localizableTitle":  "dusk3.7°",
+            "type":  "degreesBelowHorizon",
+            "degreesBelowHorizon":  3.7,
+            "rising":  false,
+            "offset":  0,
+            "isAllDay":  false
+        },
+        {
+            "localizableTitle":  "dawn",
+            "type":  "degreesBelowHorizon",
+            "degreesBelowHorizon":  16.1,
+            "rising":  true,
+            "offset":  0,
+            "isAllDay":  false
         }
     ]
 }

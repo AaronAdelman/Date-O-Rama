@@ -255,6 +255,8 @@
 "otherHour09½"     = "Minḥah qeṭanah (Maghen ’Avraham)";
 "otherHour10¾"     = "Pelagh hamminḥah (Maghen ’Avraham)";
 "otherDusk"        = "🌌 Ṣe’th hakkokhavim (72 minutes)";
+"dusk3.7°"         = "🌌 Ṣe’th hakkokhavim habbenonim (3.7°)";
+"dawn16°"          = "‘Aloth hashshaḥar (16°)";
 
 "ADDRESS_SEPARATOR" = ", ";
 
