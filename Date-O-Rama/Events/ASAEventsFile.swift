@@ -15,8 +15,15 @@ import Foundation
 import UIKit
 
 enum ASAEncodedEventType:  String, Codable {
-    case degreesBelowHorizon = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
+    case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
+    case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
+    case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
 } // enum ASAEncodedEventType
+
+enum ASAEncodedEventDayHalf:  String, Codable {
+    case night = "night"
+    case day   = "day"
+} // enum ASAEncodedEventDayHalf
 
 // MARK: - ASAEventsFile
 struct ASAEventsFile: Codable {
@@ -52,8 +59,14 @@ struct ASAEncodedEvent: Codable {
     var title:  String?
     var localizableTitle:  String?
     var type: ASAEncodedEventType
+    var isAllDay:  Bool
+
+    // For degrees below horizon events
     var degreesBelowHorizon: Double?
     var rising: Bool?
     var offset: TimeInterval?
-    var isAllDay:  Bool
+    
+    // For solar time events
+    var solarHours:  Double?
+    var dayHalf:  ASAEncodedEventDayHalf?
 } // struct ASAEncodedEvent

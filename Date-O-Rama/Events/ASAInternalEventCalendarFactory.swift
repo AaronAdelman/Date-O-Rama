@@ -13,7 +13,6 @@ class ASAInternalEventCalendarFactory {
     class func eventCalendar(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventCalendar? {
         
         let result = ASAInternalEventCalendar()
-//        result.eventSource =  ASAInternalEventCalendarFactory.eventCalendarSource(eventSourceCode:  eventSourceCode)
         result.eventSourceCode = eventSourceCode
         result.locationData = ASALocationManager.shared().locationData
         result.usesDeviceLocation = true
@@ -23,10 +22,10 @@ class ASAInternalEventCalendarFactory {
     class func eventCalendarSource(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventSource? {
         switch eventSourceCode {
         case .dailyJewish:
-            return ASADailyJewishEventSource()
-            
+            return ASAJSONFileEventSource(fileName: "Daily Jewish events")
+
         case .solar:
-            return ASASolarEventSource()
+            return ASAJSONFileEventSource(fileName: "Solar events")
             
         default:
             return nil
