@@ -116,7 +116,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
             
             self.lastDevicePlacemark = place
             self.lastDeviceLocation = location
-            let tempLocationData = ASALocationData.create(placemark: place)
+            let tempLocationData = ASALocationData.create(placemark: place, location: location)
             self.finishDidUpdateLocations(tempLocationData)
         }
     }

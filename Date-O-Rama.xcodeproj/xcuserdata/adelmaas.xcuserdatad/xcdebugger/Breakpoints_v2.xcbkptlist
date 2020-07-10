@@ -135,15 +135,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6A0F3731-C316-4CFD-B60F-BB642B24E345"
-            shouldBeEnabled = "No"
+            uuid = "99F82E8C-9043-4D75-A94B-01978F93ABE8"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Date-O-Rama/ASALocationManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "reverseGeocode(_:)"
             landmarkType = "7">
          </BreakpointContent>

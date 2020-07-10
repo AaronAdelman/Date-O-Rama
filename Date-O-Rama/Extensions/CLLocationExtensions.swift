@@ -17,12 +17,14 @@ extension CLLocation {
         let absoluteLongitude:  Double = abs(self.coordinate.longitude)
         let absoluteLongitudeString = String(format: "%.4f", absoluteLongitude)
         let longitudeDirection = self.coordinate.longitude >= 0.0 ? "E" : "W"
+        var result = "\(absoluteLatitudeString)°\(latituteDirection) \(absoluteLongitudeString)°\(longitudeDirection)"
         
-//        let altitudeString = String(format: "%.0f", self.altitude)
-
-//        let result = "\(absoluteLatitudeString)°\(latituteDirection) \(absoluteLongitudeString)°\(longitudeDirection) \(altitudeString)m"
-        let result = "\(absoluteLatitudeString)°\(latituteDirection) \(absoluteLongitudeString)°\(longitudeDirection)"
-
+        if self.altitude != 0.0 {
+            let altitudeString = String(format: "%.0f", self.altitude)
+            
+            result = "\(result) \(altitudeString)m"
+        }
+        
         return result
     } // func ISO6079HumanInterfaceRepresentation() -> String
 } // extension CLLocation

@@ -78,7 +78,7 @@ func geolocate() {
             if error == nil {
                 var temp:  Array<ASALocationData> = []
                 for placemark in placemarks ?? [] {
-                    temp.append(ASALocationData.create(placemark: placemark))
+                    temp.append(ASALocationData.create(placemark: placemark, location: nil))
                 }
                 self.locationDataArray = temp
             } else {
