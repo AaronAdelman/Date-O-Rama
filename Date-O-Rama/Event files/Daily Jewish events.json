@@ -5,174 +5,218 @@
     "calendarColorGreen":  0.0,
     "calendarColorBlue":  1.0,
     "calendarColorAlpha":  1.0,
-    "events":  [
+    "eventSpecifications":  [
         {
             "localizableTitle":  "sunrise",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "sunset",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "dawn16°",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  16,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  16,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "recognition",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  11.0,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  11.0,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "dusk",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  8.5,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  8.5,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "otherDawn",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  true,
-            "offset":  -4320.0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  true,
+                "offset":  -4320.0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "otherDusk",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  false,
-            "offset":  4320.0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  false,
+                "offset":  4320.0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "candlelighting",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  false,
-            "offset":  -1080.0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  false,
+                "offset":  -1080.0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "midnight",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  6.0,
-            "dayHalf":  "night"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  6.0,
+                "dayHalf":  "night"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "hour03",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  3.0,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  3.0,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "hour04",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  4.0,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  4.0,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "noon",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  6.0,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  6.0,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "hour06½",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  6.5,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  6.5,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "hour09½",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  9.5,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  9.5,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "hour10¾",
-            "type":  "solarTimeSunriseSunset",
-            "isAllDay":  false,
-            "solarHours":  10.75,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeSunriseSunset",
+                "solarHours":  10.75,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "otherHour03",
-            "type":  "solarTimeDawn72MinutesDusk72Minutes",
-            "isAllDay":  false,
-            "solarHours":  3.0,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeDawn72MinutesDusk72Minutes",
+                "solarHours":  3.0,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "otherHour04",
-            "type":  "solarTimeDawn72MinutesDusk72Minutes",
-            "isAllDay":  false,
-            "solarHours":  4.0,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeDawn72MinutesDusk72Minutes",
+                "solarHours":  4.0,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "otherHour06½",
-            "type":  "solarTimeDawn72MinutesDusk72Minutes",
-            "isAllDay":  false,
-            "solarHours":  6.5,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeDawn72MinutesDusk72Minutes",
+                "solarHours":  6.5,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "otherHour09½",
-            "type":  "solarTimeDawn72MinutesDusk72Minutes",
-            "isAllDay":  false,
-            "solarHours":  9.5,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeDawn72MinutesDusk72Minutes",
+                "solarHours":  9.5,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         {
             "localizableTitle":  "otherHour10¾",
-            "type":  "solarTimeDawn72MinutesDusk72Minutes",
-            "isAllDay":  false,
-            "solarHours":  10.75,
-            "dayHalf":  "day"
+            "startDateSpecification":  {
+                "type":  "solarTimeDawn72MinutesDusk72Minutes",
+                "solarHours":  10.75,
+                "dayHalf":  "day"
+            },
+            "isAllDay":  false
         },
         
         {
             "localizableTitle":  "dusk3.7°",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  3.7,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  3.7,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "dawn",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  16.1,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  16.1,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         }
     ]

@@ -5,72 +5,88 @@
     "calendarColorGreen":  1.0,
     "calendarColorBlue":  0.0,
     "calendarColorAlpha":  1.0,
-    "events":  [
+    "eventSpecifications":  [
         {
             "localizableTitle":  "sunrise",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "sunset",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  0.8333333333,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  0.8333333333,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "civilDawn",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  6.0,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  6.0,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "civilDusk",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  6.0,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  6.0,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "nauticalDawn",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  12.0,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  12.0,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "nauticalDusk",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  12.0,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  12.0,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         
         {
             "localizableTitle":  "astronomicalDawn",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  18.0,
-            "rising":  true,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  18.0,
+                "rising":  true,
+                "offset":  0
+            },
             "isAllDay":  false
         },
         {
             "localizableTitle":  "astronomicalDusk",
-            "type":  "degreesBelowHorizon",
-            "degreesBelowHorizon":  18.0,
-            "rising":  false,
-            "offset":  0,
+            "startDateSpecification":  {
+                "type":  "degreesBelowHorizon",
+                "degreesBelowHorizon":  18.0,
+                "rising":  false,
+                "offset":  0
+            },
             "isAllDay":  false
         }
         

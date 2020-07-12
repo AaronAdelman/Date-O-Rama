@@ -14,27 +14,29 @@
 import Foundation
 import UIKit
 
-enum ASAEncodedEventType:  String, Codable {
+enum ASATimeSpecificationType:  String, Codable {
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-} // enum ASAEncodedEventType
+} // enum ASATimeSpecificationType
 
-enum ASAEncodedEventDayHalf:  String, Codable {
+enum ASATimeSpecificationDayHalf:  String, Codable {
     case night = "night"
     case day   = "day"
-} // enum ASAEncodedEventDayHalf
+} // enum ASATimeSpecificationDayHalf
 
-// MARK: - ASAEventsFile
-struct ASAEventsFile: Codable {
+
+// MARK: - ASAInternalEventsFile
+
+struct ASAInternalEventsFile: Codable {
     var eventSourceCode: String
-    var title:  String?
+    var title:  String? // TODO:  Add support!
     var localizableTitle:  String?
     var calendarColorRed:  CGFloat
     var calendarColorGreen:  CGFloat
     var calendarColorBlue:  CGFloat
     var calendarColorAlpha:  CGFloat
-    var events: [ASAEncodedEvent]
+    var eventSpecifications: [ASAInternalEventSpecification]
     
     var calendarColor: UIColor {
         get {
@@ -54,12 +56,20 @@ struct ASAEventsFile: Codable {
     }
 } // struct ASAEventsFile
 
-// MARK: - Event
-struct ASAEncodedEvent: Codable {
-    var title:  String?
+
+// MARK: - ASAInternalEventSpecification
+
+struct ASAInternalEventSpecification: Codable {
+    var title:  String? // TODO:  Add support!
     var localizableTitle:  String?
-    var type: ASAEncodedEventType
     var isAllDay:  Bool
+
+    var startDateSpecification:  ASADateSpecification
+    var endDateSpecification:  ASADateSpecification? // TODO:  Add support!
+} // struct ASAInternalEventSpecification
+
+struct ASADateSpecification:  Codable {
+    var type: ASATimeSpecificationType
 
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
@@ -68,5 +78,5 @@ struct ASAEncodedEvent: Codable {
     
     // For solar time events
     var solarHours:  Double?
-    var dayHalf:  ASAEncodedEventDayHalf?
-} // struct ASAEncodedEvent
+    var dayHalf:  ASATimeSpecificationDayHalf?
+} // struct ASADateSpecification
