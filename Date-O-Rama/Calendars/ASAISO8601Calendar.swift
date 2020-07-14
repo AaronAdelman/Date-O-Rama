@@ -12,7 +12,6 @@ import UIKit
 
 class ASAISO8601Calendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .ISO8601
-//    var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .ISO8601YearMonthDay
     
     lazy var dateFormatter = DateFormatter()
@@ -31,7 +30,6 @@ class ASAISO8601Calendar:  ASACalendar {
     } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     
     func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-        // TODO:  Update when times are supported!
         
         var dateString:  String
         
@@ -78,7 +76,6 @@ class ASAISO8601Calendar:  ASACalendar {
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
     func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-        // TODO:  Update when times are supported!
         
         self.dateFormatter.locale = Locale(identifier: "en_UK")
         
@@ -113,11 +110,7 @@ class ASAISO8601Calendar:  ASACalendar {
             ]
         }
     } // var LDMLDetails: Array<ASALDMLDetail>
-    
-//    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
-//        return []
-//    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
-    
+        
     var supportsLocales: Bool = false
     
     func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date {
@@ -152,4 +145,31 @@ class ASAISO8601Calendar:  ASACalendar {
     var canSplitTimeFromDate:  Bool = true
     
     var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
+    
+    // MARK: -
+    
+    func isValidDate(dateComponents: ASADateComponents) -> Bool {
+        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+        return ApplesDateComponents.isValidDate
+    } // func isValidDate(dateComponents: ASADateComponents) -> Bool
+    
+    func date(dateComponents: ASADateComponents) -> Date? {
+        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+
+        return ApplesDateComponents.date
+    } // func date(dateComponents: ASADateComponents) -> Date?
+    
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+        var ApplesComponents = Set<Calendar.Component>()
+        for component in components {
+            let ApplesCalendarComponent = component.calendarComponent()
+            if ApplesCalendarComponent != nil {
+                ApplesComponents.insert(ApplesCalendarComponent!)
+            }
+        } // for component in components
+        
+        let calendar = Calendar(identifier: .gregorian)
+        let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
+        return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
 } // class ASAISO8601Calendar

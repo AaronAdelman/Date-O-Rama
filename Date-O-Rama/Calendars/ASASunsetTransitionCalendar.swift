@@ -52,12 +52,18 @@
      
      var dateFormatter = DateFormatter()
      
+    private func appropriateCalendar() -> Calendar {
+        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        let calendar = Calendar(identifier: calendarIdentifier)
+        return calendar
+    } // func appropriateCalendar() -> Calendar
+
      init(calendarCode:  ASACalendarCode) {
          self.calendarCode = calendarCode
-         //        self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
-         let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
-         
-         dateFormatter.calendar = Calendar(identifier: calendarIdentifier)
+         //        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+         //        let calendar = Calendar(identifier: calendarIdentifier)
+                 let calendar = self.appropriateCalendar()
+                 dateFormatter.calendar = calendar
      } // init(calendarCode:  ASACalendarCode)
      
      func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
@@ -343,4 +349,32 @@
      var canSplitTimeFromDate:  Bool = true
      
      var defaultMajorTimeFormat:  ASAMajorTimeFormat = .decimalTwelveHour
+    
+    
+    // MARK: -
+    
+    func isValidDate(dateComponents: ASADateComponents) -> Bool { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+        return ApplesDateComponents.isValidDate
+    } // func isValidDate(dateComponents: ASADateComponents) -> Bool
+    
+    func date(dateComponents: ASADateComponents) -> Date? { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+
+        return ApplesDateComponents.date
+    } // func date(dateComponents: ASADateComponents) -> Date?
+    
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+        var ApplesComponents = Set<Calendar.Component>()
+        for component in components {
+            let ApplesCalendarComponent = component.calendarComponent()
+            if ApplesCalendarComponent != nil {
+                ApplesComponents.insert(ApplesCalendarComponent!)
+            }
+        } // for component in components
+        
+        let calendar = self.appropriateCalendar()
+        let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
+        return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
  } // class ASASunsetTransitionCalendar

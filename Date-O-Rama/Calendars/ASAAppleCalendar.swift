@@ -11,23 +11,27 @@ import CoreLocation
 import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
-//    var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
         
     var calendarCode:  ASACalendarCode
     
     var dateFormatter = DateFormatter()
     
+    private func appropriateCalendar() -> Calendar {
+        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        let calendar = Calendar(identifier: calendarIdentifier)
+        return calendar
+    } // func appropriateCalendar() -> Calendar
+    
     init(calendarCode:  ASACalendarCode) {
         self.calendarCode = calendarCode
-        //        self.calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
-        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
-        
-        dateFormatter.calendar = Calendar(identifier: calendarIdentifier)
+//        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+//        let calendar = Calendar(identifier: calendarIdentifier)
+        let calendar = self.appropriateCalendar()
+        dateFormatter.calendar = calendar
     }
     
     func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-        // TODO:  Update when times are supported!
         
         if localeIdentifier == "" {
             self.dateFormatter.locale = Locale.current
@@ -200,4 +204,32 @@ class ASAAppleCalendar:  ASACalendar {
     var canSplitTimeFromDate:  Bool = true
     
     var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
+    
+    
+    // MARK: - Date components
+    
+    func isValidDate(dateComponents: ASADateComponents) -> Bool {
+        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+        return ApplesDateComponents.isValidDate
+    } // func isValidDate(dateComponents: ASADateComponents) -> Bool
+    
+    func date(dateComponents: ASADateComponents) -> Date? {
+        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+
+        return ApplesDateComponents.date
+    } // func date(dateComponents: ASADateComponents) -> Date?
+    
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+        var ApplesComponents = Set<Calendar.Component>()
+        for component in components {
+            let ApplesCalendarComponent = component.calendarComponent()
+            if ApplesCalendarComponent != nil {
+                ApplesComponents.insert(ApplesCalendarComponent!)
+            }
+        } // for component in components
+        
+        let calendar = self.appropriateCalendar()
+        let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
+        return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
 } // class ASAAppleCalendar

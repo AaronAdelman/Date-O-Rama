@@ -21,7 +21,6 @@ struct ASALDMLDetail {
 protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var canSplitTimeFromDate:  Bool { get }
-//    var color:  UIColor { get }
     var defaultMajorDateFormat:  ASAMajorDateFormat { get }
     var defaultMajorTimeFormat:  ASAMajorTimeFormat { get }
     var LDMLDetails: Array<ASALDMLDetail> { get }
@@ -39,7 +38,12 @@ protocol ASACalendar {
     func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat, dateGeekFormat:  String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
-//    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent>
     func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
+    
+    // Date components
+    func isValidDate(dateComponents:  ASADateComponents) -> Bool
+    func date(dateComponents:  ASADateComponents) -> Date?
+    
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
 } // protocol ASACalendar

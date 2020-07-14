@@ -12,7 +12,6 @@ import UIKit
 
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
-//    var color: UIColor = .systemGray
     var defaultMajorDateFormat:  ASAMajorDateFormat = .full
     
     private var offsetFromJulianDay:  Double {
@@ -66,7 +65,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat) -> String {
         if self.supportsTimes && majorTimeFormat != .none {
-            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
+//            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
+            let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
             formatter.allowsFloats = true
@@ -74,7 +74,8 @@ class ASAJulianDayCalendar:  ASACalendar {
             let result = formatter.string(from: NSNumber(floatLiteral: JulianDay)) ?? ""
             return result
         } else {
-            let JulianDay = Int(floor(now.JulianDate() - self.offsetFromJulianDay))
+//            let JulianDay = Int(floor(now.JulianDate() - self.offsetFromJulianDay))
+            let JulianDay = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
             formatter.allowsFloats = false
@@ -92,11 +93,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
     var LDMLDetails: Array<ASALDMLDetail> = []
-    
-//    func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Array<ASAEvent> {
-//        return []
-//    } // func eventDetails(date:  Date, location:  CLLocation?, timeZone:  TimeZone?) -> Array<ASAEventDetail>
-    
+        
     var supportsLocales: Bool = true
     
     var supportsDateFormats: Bool = false
@@ -157,4 +154,54 @@ class ASAJulianDayCalendar:  ASACalendar {
     var canSplitTimeFromDate:  Bool = false
     
     var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
+    
+    
+    // MARK: - Date components
+    
+    func isValidDate(dateComponents: ASADateComponents) -> Bool {
+        if dateComponents.era != nil
+            || dateComponents.year != nil
+            || dateComponents.yearForWeekOfYear != nil
+            || dateComponents.quarter != nil
+            || dateComponents.month != nil
+            || dateComponents.weekOfMonth != nil
+            || dateComponents.weekOfYear != nil
+            || dateComponents.weekday != nil
+            || dateComponents.weekdayOrdinal != nil
+            || dateComponents.hour != nil
+            || dateComponents.minute != nil
+            || dateComponents.second != nil
+            || dateComponents.nanosecond != nil {
+            return false
+        }
+        
+        // TODO:  Add something to handle fractional days!
+        
+        if dateComponents.day != nil {
+            return true
+        } else {
+            return false
+        }
+    } // func isValidDate(dateComponents: ASADateComponents) -> Bool
+    
+    func date(dateComponents: ASADateComponents) -> Date? {
+        let day = dateComponents.day
+        if day == nil {
+            return nil
+        }
+        
+        // TODO:  Add something to handle fractional days!
+        return Date.date(JulianDate: Double(dateComponents.day!), offsetFromJulianDay: self.offsetFromJulianDay)
+    } // func date(dateComponents: ASADateComponents) -> Date?
+
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+        let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
+        var result = ASADateComponents(calendar: self, locationData: locationData)
+        for component in components {
+            if component == .day {
+                result.day = day
+            }
+        } // for component in components
+        return result
+    }
 } // class ASAJulianDayCalendar

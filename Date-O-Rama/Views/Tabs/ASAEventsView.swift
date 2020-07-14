@@ -19,6 +19,7 @@ struct ASAEventsView: View {
     @ObservedObject var eventManager = ASAExternalEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
+        
     var primaryRow:  ASARow {
         get {
             return settings.primaryRowUUIDString.row(backupIndex: 0)
@@ -35,6 +36,8 @@ struct ASAEventsView: View {
             settings.secondaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var secondaryRow
+    
+    @State var components = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocationData())
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
@@ -164,11 +167,21 @@ struct ASAEventsView: View {
                     
                     Spacer()
                 }.border(Color.gray)
+                
+                HStack {
+                    Text(verbatim: "\(components.year ?? -1)")
+                    Text(verbatim: "\(components.month ?? -1)")
+                    Text(verbatim: "\(components.day ?? -1)")
+                }.environment(\.layoutDirection, .leftToRight).border(Color.gray)
             } // VStack
                 .navigationBarTitle(Text("EVENTS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
                 .onAppear {
                     self.isNavBarHidden = true
+                    
+                    let calendar = self.primaryRow.calendar
+                    self.components = calendar.dateComponents([.year, .month, .day, .weekday], from: self.date, locationData: self.primaryRow.locationData)
+                    debugPrint(#file, #function, self.components)
             }.onDisappear {
                 self.isNavBarHidden = false
             }
