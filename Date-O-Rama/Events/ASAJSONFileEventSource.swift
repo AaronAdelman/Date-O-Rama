@@ -88,49 +88,11 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         for eventSpecification in self.eventsFile.eventSpecifications {
             let title = NSLocalizedString(eventSpecification.localizableTitle!, comment: "")
             let color = self.calendarColor()
-            
-            switch eventSpecification.startDateSpecification.type {
-            case .degreesBelowHorizon:
-                let solarEvent = ASASolarEvent(degreesBelowHorizon: eventSpecification.startDateSpecification.degreesBelowHorizon!, rising: eventSpecification.startDateSpecification.rising!, offset: eventSpecification.startDateSpecification.offset!)
-                
-                let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
-                let date = events[solarEvent]
-                
-                let newEvent = ASAEvent(title: title, startDate: date!!, endDate: date!!, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
-                result.append(newEvent)
-                
-            case .solarTimeSunriseSunset:
-                let hours = eventSpecification.startDateSpecification.solarHours!
-                let dayHalf = eventSpecification.startDateSpecification.dayHalf!
-                switch dayHalf {
-                case .night:
-                    let date = previousSunset + hours * nightHourLength
-                    let newEvent = ASAEvent(title: title, startDate: date, endDate: date, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
-                    result.append(newEvent)
-                    
-                case .day:
-                    let date = sunrise + hours * hourLength
-                    let newEvent = ASAEvent(title: title, startDate: date, endDate: date, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
-                    result.append(newEvent)
-                } // switch dayHalf
-                
-            case .solarTimeDawn72MinutesDusk72Minutes:
-                let hours = eventSpecification.startDateSpecification.solarHours!
-                let dayHalf = eventSpecification.startDateSpecification.dayHalf!
-                switch dayHalf {
-                case .night:
-                    let date = previousOtherDusk + hours * otherNightHourLength
-                    let newEvent = ASAEvent(title: title, startDate: date, endDate: date, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
-                    result.append(newEvent)
-                    
-                case .day:
-                    let date = otherDawn + hours * otherHourLength
-                    let newEvent = ASAEvent(title: title, startDate: date, endDate: date, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
-                    result.append(newEvent)
-                } // switch dayHalf
-
-            } // switch programmedEvent.type
-        } // for programmedEvent in self.eventsFile.events
+            let startDate = eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
+            let endDate = eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
+            let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
+            result.append(newEvent)
+        } // for eventSpecification in self.eventsFile.eventSpecifications
         return result
     } // func eventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName: String) -> Array<ASAEvent>
     
@@ -141,4 +103,47 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
     func eventSourceName() -> String {
         return NSLocalizedString(self.eventsFile.localizableTitle!, comment:  "")
     } // func eventSourceName() -> String} // class ASASolarEventSource:  ASAInternalEventSource
-}
+} // class ASAJSONFileEventSource
+
+
+// MARK: -
+
+extension ASADateSpecification {
+    func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date? {
+        switch self.type {
+        case .degreesBelowHorizon:
+            let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
+            
+            let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
+            let result = events[solarEvent]
+            
+            return result!
+            
+        case .solarTimeSunriseSunset:
+            let hours = self.solarHours!
+            let dayHalf = self.dayHalf!
+            switch dayHalf {
+            case .night:
+                let result = previousSunset + hours * nightHourLength
+                return result
+                
+            case .day:
+                let result = sunrise + hours * hourLength
+                return result
+            } // switch dayHalf
+            
+        case .solarTimeDawn72MinutesDusk72Minutes:
+            let hours = self.solarHours!
+            let dayHalf = self.dayHalf!
+            switch dayHalf {
+            case .night:
+                let result = previousOtherDusk + hours * otherNightHourLength
+                return result
+                
+            case .day:
+                let result = otherDawn + hours * otherHourLength
+                return result
+            } // switch dayHalf
+        } // switch self.type
+    } // func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
+} // extension ASADateSpecification

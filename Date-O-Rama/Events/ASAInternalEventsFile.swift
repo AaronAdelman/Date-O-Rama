@@ -13,6 +13,7 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 enum ASATimeSpecificationType:  String, Codable {
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
@@ -63,14 +64,14 @@ class ASAInternalEventSpecification: Codable {
     var title:  String? // TODO:  Add support!
     var localizableTitle:  String?
     var isAllDay:  Bool
-
+    
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification? // TODO:  Add support!
 } // struct ASAInternalEventSpecification
 
 struct ASADateSpecification:  Codable {
     var type: ASATimeSpecificationType
-
+    
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
     var rising: Bool?
