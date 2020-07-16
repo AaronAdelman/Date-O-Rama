@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ASADateComponents {
+struct ASADateComponents:  Equatable {
     // MARK:  - Initializing Date Components
     
     var calendar:  ASACalendar
@@ -162,6 +162,34 @@ struct ASADateComponents {
             debugPrint(#file, #function, "Some wiseguy seems to think a calendar or time zone is an integer.")
         } // switch component
     } // mutating func setValue(_ value:  Int?, for component: ASACalendarComponent)
+    
+    
+    // MARK: - Equatable
+    
+    static func == (lhs: ASADateComponents, rhs: ASADateComponents) -> Bool {
+        if lhs.era != rhs.era
+        || lhs.year != rhs.year
+            || lhs.year != rhs.year
+            || lhs.yearForWeekOfYear != rhs.yearForWeekOfYear
+            || lhs.quarter != rhs.quarter
+            || lhs.month != rhs.month
+            || lhs.weekOfYear != rhs.weekOfYear
+            || lhs.weekOfMonth != rhs.weekOfMonth
+            || lhs.weekday != rhs.weekday
+            || lhs.weekdayOrdinal != rhs.weekdayOrdinal
+            || lhs.day != rhs.day
+            || lhs.hour != rhs.hour
+            || lhs.minute != rhs.minute
+            || lhs.second != rhs.second
+            || lhs.nanosecond != rhs.nanosecond
+            || lhs.calendar.calendarCode != lhs.calendar.calendarCode
+            || lhs.locationData != rhs.locationData {
+            return false
+        }
+        
+        return true
+    }
+
 } // struct ASADateComponents
 
 

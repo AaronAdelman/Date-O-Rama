@@ -17,7 +17,13 @@ class ASAISO8601Calendar:  ASACalendar {
     lazy var dateFormatter = DateFormatter()
     lazy var ISODateFormatter = ISO8601DateFormatter()
     
+    private var ApplesCalendar:  Calendar
+    
     init() {
+        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
+        ApplesCalendar = Calendar(identifier: calendarIdentifier)
+        dateFormatter.calendar = ApplesCalendar
+
         self.ISODateFormatter.timeZone = TimeZone.current
     } // init()
     
@@ -159,6 +165,19 @@ class ASAISO8601Calendar:  ASACalendar {
         return ApplesDateComponents.date
     } // func date(dateComponents: ASADateComponents) -> Date?
     
+    
+    // MARK:  - Extracting Components
+    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
+        // Returns the value for one component of a date.
+        let ApplesComponent = component.calendarComponent()
+        if ApplesComponent == nil {
+            return -1
+        }
+        
+        let calendar = self.ApplesCalendar
+        return calendar.component(ApplesComponent!, from: date)
+    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
+
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {
@@ -172,4 +191,59 @@ class ASAISO8601Calendar:  ASACalendar {
         let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
         return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
+    
+    
+    // MARK:  - Getting Calendar Information
+    
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
+         // The maximum range limits of the values that a given component can take on.
+        let ApplesComponent = component.calendarComponent()
+        if ApplesComponent == nil {
+            return nil
+        }
+        return self.ApplesCalendar.maximumRange(of: ApplesComponent!)
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
+    
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
+        // Returns the minimum range limits of the values that a given component can take on.
+        let ApplesComponent = component.calendarComponent()
+        if ApplesComponent == nil {
+            return nil
+        }
+        return self.ApplesCalendar.minimumRange(of: ApplesComponent!)
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
+    
+    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
+        // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
+        let ApplesSmaller = smaller.calendarComponent()
+        let ApplesLarger = larger.calendarComponent()
+        if ApplesSmaller == nil || ApplesLarger == nil {
+            return nil
+        }
+        return self.ApplesCalendar.ordinality(of: ApplesSmaller!, in: ApplesLarger!, for: date)
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
+    
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+        // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
+        let ApplesSmaller = smaller.calendarComponent()
+        let ApplesLarger = larger.calendarComponent()
+        if ApplesSmaller == nil || ApplesLarger == nil {
+            return nil
+        }
+        return self.ApplesCalendar.range(of: ApplesSmaller!, in: ApplesLarger!, for: date)
+    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
+    
+    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? {
+        // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
+        switch component {
+        case .month:
+            return .year
+            
+        case .day:
+            return .month
+            
+        default:
+            return nil
+        } // switch component
+    } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
 } // class ASAISO8601Calendar

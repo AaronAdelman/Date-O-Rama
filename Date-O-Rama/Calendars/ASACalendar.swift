@@ -41,9 +41,20 @@ protocol ASACalendar {
     func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     
-    // Date components
+    // MARK:  - Date components
     func isValidDate(dateComponents:  ASADateComponents) -> Bool
     func date(dateComponents:  ASADateComponents) -> Date?
     
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
+    // MARK:  - Extracting Components
+    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int // Returns the value for one component of a date.
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents // Returns all the date components of a date.
+    
+    // MARK:  - Getting Calendar Information
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? // The maximum range limits of the values that a given component can take on.
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? // Returns the minimum range limits of the values that a given component can take on.
+    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
+    
+    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
+
 } // protocol ASACalendar

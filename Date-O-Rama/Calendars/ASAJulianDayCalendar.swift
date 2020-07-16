@@ -61,11 +61,11 @@ class ASAJulianDayCalendar:  ASACalendar {
     func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
         return "HH:mm:ss"
     } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
-
+    
     
     private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat) -> String {
         if self.supportsTimes && majorTimeFormat != .none {
-//            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
+            //            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
             let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
@@ -74,7 +74,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             let result = formatter.string(from: NSNumber(floatLiteral: JulianDay)) ?? ""
             return result
         } else {
-//            let JulianDay = Int(floor(now.JulianDate() - self.offsetFromJulianDay))
+            //            let JulianDay = Int(floor(now.JulianDate() - self.offsetFromJulianDay))
             let JulianDay = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
@@ -93,7 +93,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
     var LDMLDetails: Array<ASALDMLDetail> = []
-        
+    
     var supportsLocales: Bool = true
     
     var supportsDateFormats: Bool = false
@@ -110,7 +110,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             return date.previousGMTNoon()
         } // switch self.calendarCode
     } // func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date
-
+    
     
     func startOfNextDay(date: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         switch self.calendarCode {
@@ -193,6 +193,19 @@ class ASAJulianDayCalendar:  ASACalendar {
         // TODO:  Add something to handle fractional days!
         return Date.date(JulianDate: Double(dateComponents.day!), offsetFromJulianDay: self.offsetFromJulianDay)
     } // func date(dateComponents: ASADateComponents) -> Date?
+    
+
+    // MARK:  - Extracting Components
+
+    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
+         // Returns the value for one component of a date.
+        if component == .day {
+            let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
+            return day
+        } else {
+            return -1
+        }
+    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
         let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
@@ -203,5 +216,40 @@ class ASAJulianDayCalendar:  ASACalendar {
             }
         } // for component in components
         return result
-    }
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
+    
+    
+    // MARK:  - Getting Calendar Information
+    func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
+        // The maximum range limits of the values that a given component can take on.
+        if component == .day {
+            return Int.max..<Int.max
+        } else {
+            return nil
+        }
+    } // func maximumRange(of component: ASACalendarComponent) -> Range<Int>?
+    
+    func minimumRange(of component: ASACalendarComponent) -> Range<Int>? {
+        // Returns the minimum range limits of the values that a given component can take on.
+        if component == .day {
+            return Int.min..<Int.min
+        } else {
+            return nil
+        }
+    } // func minimumRange(of component: ASACalendarComponent) -> Range<Int>?
+    
+    func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? {
+        // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
+        return nil
+    } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
+    
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+        // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
+        return nil
+    } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
+    
+    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? {
+        // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
+        return nil
+    } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
 } // class ASAJulianDayCalendar

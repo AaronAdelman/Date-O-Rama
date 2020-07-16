@@ -148,3 +148,21 @@ extension Calendar.Component {
         } // switch self
     } // func ASACalendarComponent() -> ASACalendarComponent?
 } // extension Calendar.Component
+
+extension String {
+    func calendarComponent() -> ASACalendarComponent? {
+        switch self {
+        case "y":
+            return .year
+            
+        case "M":
+            return .month
+            
+        case "d":
+            return .day
+            
+        default:
+            return nil
+        } // switch self
+    } // func calendarComponent() -> ASACalendarComponent?
+} // extension String

@@ -29,12 +29,20 @@ extension String {
         return resultsArray
     } // func chop() -> Array<String>
     
-    private func relevantSection() -> String? {
+    func relevantSection() -> String? {
         if self.isEmpty {
             return nil
         }
         
         let firstCharacter = self.first
+        
+        if firstCharacter == nil {
+            return nil
+        }
+        
+        if !(firstCharacter!.isLetter && firstCharacter!.isASCII)   {
+            return nil
+        }
         switch firstCharacter {
         case "e":
             return "E"

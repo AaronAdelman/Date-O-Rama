@@ -36,9 +36,7 @@ struct ASAEventsView: View {
             settings.secondaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var secondaryRow
-    
-    @State var components = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocationData())
-    
+        
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         if settings.useExternalEvents {
@@ -140,57 +138,177 @@ struct ASAEventsView: View {
                     } // ForEach
                 } // List
                 
-                HStack {
-                    Spacer()
-                    
-                    Button(action: {
-                        self.date = self.date.oneDayBefore
-                    }) {
-                        Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
-                    }
-                    
-                    Spacer().frame(width:  50)
-                    
-                    Button(action: {
-                        self.date = Date()
-                    }) {
-                        Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
-                    }.foregroundColor(.accentColor)
-                    
-                    Spacer().frame(width:  50)
-                    
-                    Button(action: {
-                        self.date = self.date.oneDayAfter
-                    }) {
-                        Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
-                    }
-                    
-                    Spacer()
-                }.border(Color.gray)
-                
-                HStack {
-                    Text(verbatim: "\(components.year ?? -1)")
-                    Text(verbatim: "\(components.month ?? -1)")
-                    Text(verbatim: "\(components.day ?? -1)")
-                }.environment(\.layoutDirection, .leftToRight).border(Color.gray)
+                ASADatePicker(date: $date, primaryRow: self.primaryRow)
             } // VStack
                 .navigationBarTitle(Text("EVENTS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
                 .onAppear {
                     self.isNavBarHidden = true
-                    
-                    let calendar = self.primaryRow.calendar
-                    self.components = calendar.dateComponents([.year, .month, .day, .weekday], from: self.date, locationData: self.primaryRow.locationData)
-                    debugPrint(#file, #function, self.components)
             }.onDisappear {
                 self.isNavBarHidden = false
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
-    
-    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
 } // struct ASAEventsView
+
+struct ASADatePicker:  View {
+    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
+    
+    @Binding var date:  Date {
+        didSet {
+            self.updateComponentsFromDate()
+        } // didSet
+    } // var date
+    @ObservedObject var primaryRow:  ASARow {
+        didSet {
+            self.updateSectionsFromPrimaryRow()
+            self.updateComponentsFromDate()
+        } // didSet
+    } // var primaryRow
+    
+    @State var components = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocationData())  {
+        didSet {
+            self.updateDateFromComponents()
+        } // didSet
+    } // var components
+    
+    @State var sections:  Array<ASACalendarComponent> = []
+    
+    fileprivate func updateComponentsFromDate() {
+        let calendar = self.primaryRow.calendar
+        let newComponents = calendar.dateComponents([.year, .month, .day, .weekday], from: self.date, locationData: self.primaryRow.locationData)
+        if newComponents != self.components {
+            self.components = newComponents
+        }
+//        debugPrint(#file, #function, self.components)
+    } // func updateComponentsFromDate()
+    
+    fileprivate func updateDateFromComponents() {
+        let calendar = self.primaryRow.calendar
+        let newDate = calendar.date(dateComponents: self.components)
+        if newDate != nil {
+            if newDate! != self.date {
+                self.date = newDate!
+            }
+        }
+    } // func updateDateFromComponents()
+    
+    fileprivate func updateSectionsFromPrimaryRow() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: self.primaryRow.localeIdentifier)
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .none
+        let dateFormat = dateFormatter.dateFormat
+        
+        debugPrint(#file, #function, dateFormat!)
+        
+        let choppedDateFormat = dateFormat?.chop()
+        
+        debugPrint(#file, #function, choppedDateFormat as Any)
+        
+        var newSections:  Array<ASACalendarComponent> = []
+        for piece in choppedDateFormat! {
+            let section = piece.relevantSection()?.calendarComponent()
+            if section != nil {
+                newSections.append(section!)
+            }
+        } // for piece in choppedDateFormat!
+        
+        debugPrint(#file, #function, newSections)
+        
+        sections = newSections
+    } // func updateSectionsFromPrimaryRow()
+    
+    fileprivate func currentValue(_ section: ASACalendarComponent) -> Int {
+        let result = self.primaryRow.calendar.component(section, from: self.date, locationData: self.primaryRow.locationData)
+        debugPrint(#file, #function, section, result)
+        return result
+    }
+    
+    fileprivate func appropriateRange(_ section: ASACalendarComponent) -> (Range<Int>?) {
+        let containingComponent = self.primaryRow.calendar.containingComponent(of: section)
+        if containingComponent != nil {
+            let range = self.primaryRow.calendar.range(of: section, in: containingComponent!, for: self.date)
+            debugPrint(#file, #function, section, containingComponent as Any, range as Any)
+            if (range?.max() ?? 10000) - (range?.min() ?? -10000) <= 25 {
+                return range
+            }
+        }
+        
+        let currentValue = self.currentValue(section)
+        let result = (currentValue - 10)..<(currentValue + 10)
+        debugPrint(#file, #function, result)
+        return result
+    }
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Spacer()
+                
+                Button(action: {
+                    self.date = self.date.oneDayBefore
+                }) {
+                    Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
+                }
+                
+                Spacer().frame(width:  50)
+                
+                Button(action: {
+                    self.date = Date()
+                }) {
+                    Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
+                }.foregroundColor(.accentColor)
+                
+                Spacer().frame(width:  50)
+                
+                Button(action: {
+                    self.date = self.date.oneDayAfter
+                }) {
+                    Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
+                }
+                
+                Spacer()
+//            }.border(Color.gray)
+//            
+//            HStack {
+//                ForEach(sections, id: \.self) {
+//                    section
+//                    in
+//
+////                    Text(verbatim: "\(self.components.value(for: section) ?? -1)")
+//                    ASADatePickerSectionCell(components: self.$components, section: section, range:  self.appropriateRange(section)!).frame(width:  100.0)
+//                } // ForEach(sections, id: \.self)
+            }
+                .border(Color.gray)
+        }
+        .onAppear() {
+            self.updateComponentsFromDate()
+            self.updateSectionsFromPrimaryRow()
+        }
+    } // var body
+} // struct ASADatePicker
+
+//struct ASADatePickerSectionCell:  View {
+//    @Binding var components:  ASADateComponents
+//    var section:  ASACalendarComponent
+//    var range:  Range<Int>
+//
+//    var body: some View {
+//        Group {
+////                Text(verbatim: "\(components.value(for: section) ?? -1)")
+//                Picker("", selection: $components.day) {
+//                    ForEach(range) {
+//                        value
+//                        in
+//                        Text("\(value)")
+//                    }
+//                }
+//            }
+//        
+//    } // var body
+//} // struct ASADatePickerSectionCell
 
 struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
@@ -210,20 +328,20 @@ struct ASALinkedEventCell:  View {
                     ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
                     
                     Spacer()
-                   
+                    
                     #if targetEnvironment(macCatalyst)
                     Button(INFO_STRING) {
                         self.showingEventView = true
                     }
-                        .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                    .popover(isPresented: $showingEventView, arrowEdge: .leading) {
+                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }.foregroundColor(.accentColor)
                     #else
                     Button(INFO_STRING) {
                         self.showingEventView = true
                     }
-                        .sheet(isPresented: $showingEventView) {
-                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                    .sheet(isPresented: $showingEventView) {
+                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }.foregroundColor(.accentColor)
                     #endif
                 }
