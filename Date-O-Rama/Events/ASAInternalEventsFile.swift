@@ -63,10 +63,18 @@ struct ASAInternalEventsFile: Codable {
 class ASAInternalEventSpecification: Codable {
     var title:  String?
     var localizableTitle:  String?
+    
+    var calendarCode:  ASACalendarCode?
+    
     var isAllDay:  Bool
     
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
+    
+    // TODO:  Do something with these properties
+    var url: URL? // The URL for the calendar item.
+    var hasNotes: Bool // A Boolean value that indicates whether the calendar item has notes.
+    var notes: String? // The notes associated with the calendar item.
 } // struct ASAInternalEventSpecification
 
 struct ASADateSpecification:  Codable {
