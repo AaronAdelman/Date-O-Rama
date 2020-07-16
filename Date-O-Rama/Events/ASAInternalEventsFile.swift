@@ -61,12 +61,12 @@ struct ASAInternalEventsFile: Codable {
 // MARK: - ASAInternalEventSpecification
 
 class ASAInternalEventSpecification: Codable {
-    var title:  String? // TODO:  Add support!
+    var title:  String?
     var localizableTitle:  String?
     var isAllDay:  Bool
     
     var startDateSpecification:  ASADateSpecification
-    var endDateSpecification:  ASADateSpecification? // TODO:  Add support!
+    var endDateSpecification:  ASADateSpecification?
 } // struct ASAInternalEventSpecification
 
 struct ASADateSpecification:  Codable {

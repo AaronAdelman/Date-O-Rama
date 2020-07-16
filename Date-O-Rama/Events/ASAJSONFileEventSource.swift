@@ -86,7 +86,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
 
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile.eventSpecifications {
-            let title = NSLocalizedString(eventSpecification.localizableTitle!, comment: "")
+            let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
             let color = self.calendarColor()
             let startDate = eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
             let endDate = eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
