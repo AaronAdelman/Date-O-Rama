@@ -241,25 +241,6 @@
             },
             "isAllDay":  false,
             "hasNotes":  false
-        },
-        
-        {
-            "localizableTitle":  "betweenTheSuns",
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  0.8333333333,
-                "rising":  false,
-                "offset":  0
-            },
-            "endDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  3.7,
-                "rising":  false,
-                "offset":  0
-            },
-            "isAllDay":  false,
-            "hasNotes":  true,
-            "notes":  "Experimental event.  Likely to be removed later."
         }
     ]
 }
