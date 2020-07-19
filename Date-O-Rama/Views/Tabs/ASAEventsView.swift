@@ -332,21 +332,21 @@ struct ASALinkedEventCell:  View {
                     
                     Spacer()
                     
-                    #if targetEnvironment(macCatalyst)
-                    Button(INFO_STRING) {
-                        self.showingEventView = true
-                    }
-                    .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
-                    }.foregroundColor(.accentColor)
-                    #else
+//                    #if targetEnvironment(macCatalyst)
+//                    Button(INFO_STRING) {
+//                        self.showingEventView = true
+//                    }
+//                    .popover(isPresented: $showingEventView, arrowEdge: .leading) {
+//                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+//                    }.foregroundColor(.accentColor)
+//                    #else
                     Button(INFO_STRING) {
                         self.showingEventView = true
                     }
                     .sheet(isPresented: $showingEventView) {
                         ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }.foregroundColor(.accentColor)
-                    #endif
+//                    #endif
                 }
                 
             } else {
