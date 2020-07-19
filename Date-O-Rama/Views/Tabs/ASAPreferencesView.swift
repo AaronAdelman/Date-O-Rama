@@ -65,16 +65,7 @@ struct ASAPreferencesView: View {
                 .navigationBarItems(
                     leading: EditButton(),
                     trailing:
-//                    Button(
-//                        action: {
-//                            withAnimation {
-//                                self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
-//                                self.userData.savePreferences()
-//                            }
-//                    }
-//                    ) {
-//                        Text(verbatim:  "➕")
-//                    }
+
                     EmptyView()
             )
         }// NavigationView

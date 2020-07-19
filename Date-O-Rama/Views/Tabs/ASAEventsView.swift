@@ -10,7 +10,7 @@ import SwiftUI
 import EventKit
 import EventKitUI
 
-let INFO_STRING     = "ⓘ"
+let INFO_STRING     = "ℹ️"
 let BIG_PLUS_STRING = "Add external event"
 
 struct ASAEventsView: View {
@@ -19,7 +19,7 @@ struct ASAEventsView: View {
     @ObservedObject var eventManager = ASAExternalEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
-        
+    
     var primaryRow:  ASARow {
         get {
             return settings.primaryRowUUIDString.row(backupIndex: 0)
@@ -36,7 +36,7 @@ struct ASAEventsView: View {
             settings.secondaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var secondaryRow
-        
+    
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         if settings.useExternalEvents {
@@ -181,7 +181,7 @@ struct ASADatePicker:  View {
         if newComponents != self.components {
             self.components = newComponents
         }
-//        debugPrint(#file, #function, self.components)
+        //        debugPrint(#file, #function, self.components)
     } // func updateComponentsFromDate()
     
     fileprivate func updateDateFromComponents() {
@@ -270,18 +270,21 @@ struct ASADatePicker:  View {
                 }
                 
                 Spacer()
-//            }.border(Color.gray)
-//            
-//            HStack {
-//                ForEach(sections, id: \.self) {
-//                    section
-//                    in
-//
-////                    Text(verbatim: "\(self.components.value(for: section) ?? -1)")
-//                    ASADatePickerSectionCell(components: self.$components, section: section, range:  self.appropriateRange(section)!).frame(width:  100.0)
-//                } // ForEach(sections, id: \.self)
+                //            }.border(Color.gray)
+                //
+                //            HStack {
+                //                ForEach(sections, id: \.self) {
+                //                    section
+                //                    in
+                //
+                ////                    Text(verbatim: "\(self.components.value(for: section) ?? -1)")
+                //                    ASADatePickerSectionCell(components: self.$components, section: section, range:  self.appropriateRange(section)!).frame(width:  100.0)
+                //                } // ForEach(sections, id: \.self)
+                
+                DatePicker(selection:  self.$date, in:  Date.distantPast...Date.distantFuture, displayedComponents: .date) {Text("")}
+                    .datePickerStyle(WheelDatePickerStyle())
             }
-                .border(Color.gray)
+            .border(Color.gray)
         }
         .onAppear() {
             self.updateComponentsFromDate()
