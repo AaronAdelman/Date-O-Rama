@@ -27,6 +27,9 @@ class ASAInternalEventCalendarFactory {
         case .solar:
             return ASAJSONFileEventSource(fileName: "Solar events")
             
+        case .test:
+            return ASAJSONFileEventSource(fileName: "Test")
+            
         default:
             return nil
         } // switch eventSourceCode

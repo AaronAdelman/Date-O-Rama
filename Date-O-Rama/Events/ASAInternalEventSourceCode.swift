@@ -8,12 +8,13 @@
 
 import Foundation
 
-enum ASAInternalEventSourceCode:  String {
+enum ASAInternalEventSourceCode:  String, Codable {
     case none         = ""
     case dailyJewish  = "dailyJewish"
     case allDayJewish = "allDayJewish"
     case solar        = "solar"
     case lunar        = "lunar"
+    case test         = "test"
 } // enum ASAInternalEventSourceCode
 
 extension ASAInternalEventSourceCode {
@@ -23,6 +24,8 @@ extension ASAInternalEventSourceCode {
         case .dailyJewish:  rawName = "Daily Jewish events"
             
         case .solar:  rawName = "Daily solar events"
+            
+        case .test:  rawName = "Test"
             
         default:  rawName = ""
         } // switch self

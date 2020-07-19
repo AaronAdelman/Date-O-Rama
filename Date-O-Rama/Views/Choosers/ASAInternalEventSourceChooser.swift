@@ -11,7 +11,8 @@ import SwiftUI
 struct ASAInternalEventSourceChooser: View {
     let eventSourceCodes:  Array<ASAInternalEventSourceCode> = [
         .solar,
-        .dailyJewish
+        .dailyJewish,
+        .test
     ]
     
     @ObservedObject var eventCalendar:  ASAInternalEventCalendar

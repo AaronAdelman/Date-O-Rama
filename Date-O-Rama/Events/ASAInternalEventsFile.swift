@@ -30,8 +30,8 @@ enum ASATimeSpecificationDayHalf:  String, Codable {
 // MARK: - ASAInternalEventsFile
 
 struct ASAInternalEventsFile: Codable {
-    var eventSourceCode: String
-    var title:  String? // TODO:  Add support!
+    var eventSourceCode: ASAInternalEventSourceCode
+    var title:  String?
     var localizableTitle:  String?
     var calendarColorRed:  CGFloat
     var calendarColorGreen:  CGFloat

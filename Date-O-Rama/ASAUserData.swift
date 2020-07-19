@@ -41,22 +41,6 @@ final class ASAUserData:  ObservableObject {
     private func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
         var rows = ASAUserData.rowArray(key: key)
         self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
-//        let coder = CLGeocoder();
-//        for row in rows {
-//            if row.location != nil {
-//                coder.reverseGeocodeLocation(row.location!) { (placemarks, error) in
-//                    let place = placemarks?.last;
-//
-//                    if place != nil {
-//                        row.placeName = place?.name
-//                        row.locality = place?.locality
-//                        row.country = place?.country
-//                        row.ISOCountryCode = place?.isoCountryCode
-//                    }
-//                    //                    debugPrint(#file, #function, row.location as Any, place as Any)
-//                }
-//            }
-//        } // for row in rows
         
         while rows.count < key.minimumNumberOfRows() {
             rows.append(ASARow.generic())
@@ -66,24 +50,7 @@ final class ASAUserData:  ObservableObject {
     }
         
     init() {
-//        self.mainRows = ASAUserData.rowArray(key: .app)
         self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
-//        let coder = CLGeocoder();
-//        for row in self.mainRows {
-//            if row.location != nil {
-//                coder.reverseGeocodeLocation(row.location!) { (placemarks, error) in
-//                    let place = placemarks?.last;
-//
-//                    if place != nil {
-//                        row.placeName = place?.name
-//                        row.locality = place?.locality
-//                        row.country = place?.country
-//                        row.ISOCountryCode = place?.isoCountryCode
-//                    }
-//                    //                    debugPrint(#file, #function, row.location as Any, place as Any)
-//                }
-//            }
-//        } // for row in self.mainRows
         mainRows             = []
         threeLineLargeRows     = []
         twoLineSmallRows     = []

@@ -16,15 +16,19 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
     init(fileName:  String) {
         let fileURL = Bundle.main.url(forResource:fileName, withExtension: "json")!
 
-        let jsonData = (try? Data(contentsOf: fileURL))!
-        let newJSONDecoder = JSONDecoder()
-        let eventsFile = try? newJSONDecoder.decode(ASAInternalEventsFile.self, from: jsonData)
-        self.eventsFile = eventsFile!
+        do {
+            let jsonData = (try? Data(contentsOf: fileURL))!
+               let newJSONDecoder = JSONDecoder()
+               let eventsFile = try? newJSONDecoder.decode(ASAInternalEventsFile.self, from: jsonData)
+               self.eventsFile = eventsFile!
+        } catch {
+            debugPrint(#file, #function, error)
+        }
     }
     
     var eventSourceCode: ASAInternalEventSourceCode {
         get {
-            return ASAInternalEventSourceCode.init(rawValue: self.eventsFile.eventSourceCode)!
+            return ASAInternalEventSourceCode.init(rawValue: self.eventsFile.eventSourceCode.rawValue)!
         }
     }
     
@@ -97,11 +101,21 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
     } // func eventDetails(date:  Date, location:  CLLocation, timeZone:  TimeZone, eventCalendarName: String) -> Array<ASAEvent>
     
     func eventCalendarName(locationData:  ASALocationData) -> String {
-        return "\(NSLocalizedString(self.eventsFile.localizableTitle!, comment: "")) • \(locationData.formattedOneLineAddress())"
+        let localizableTitle = self.eventsFile.localizableTitle
+        if localizableTitle != nil {
+            return "\(NSLocalizedString(localizableTitle!, comment: "")) • \(locationData.formattedOneLineAddress())"
+        } else {
+            return "\(self.eventsFile.title ?? "???") • \(locationData.formattedOneLineAddress())"
+        }
     } // func eventCalendarName(locationData:  ASALocationData) -> String
     
     func eventSourceName() -> String {
-        return NSLocalizedString(self.eventsFile.localizableTitle!, comment:  "")
+        let localizableTitle = self.eventsFile.localizableTitle
+        if localizableTitle != nil {
+            return NSLocalizedString(localizableTitle!, comment:  "")
+        } else {
+            return self.eventsFile.title ?? "???"
+        }
     } // func eventSourceName() -> String} // class ASASolarEventSource:  ASAInternalEventSource
 } // class ASAJSONFileEventSource
 

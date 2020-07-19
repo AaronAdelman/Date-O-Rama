@@ -133,7 +133,7 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         }
         
         return self.eventSource!.eventCalendarName(locationData:  locationData)
-    }
+    } // func eventCalendarName() -> String
     
     func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent> {
         if eventSource == nil || self.locationData.location == nil {

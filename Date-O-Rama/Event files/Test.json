@@ -1,0 +1,10 @@
+{
+    "eventSourceCode":  "test",
+    "title":  "Test",
+    "calendarColorRed":  1.0,
+    "calendarColorGreen":  0.0,
+    "calendarColorBlue":  0.0,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+    ]
+}
