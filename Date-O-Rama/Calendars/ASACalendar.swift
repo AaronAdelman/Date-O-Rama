@@ -41,13 +41,18 @@ protocol ASACalendar {
     func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     
+    func supports(calendarComponent:  ASACalendarComponent) -> Bool
+
+    
     // MARK:  - Date components
     func isValidDate(dateComponents:  ASADateComponents) -> Bool
     func date(dateComponents:  ASADateComponents) -> Date?
+        
     
     // MARK:  - Extracting Components
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int // Returns the value for one component of a date.
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents // Returns all the date components of a date.
+    
     
     // MARK:  - Getting Calendar Information
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? // The maximum range limits of the values that a given component can take on.

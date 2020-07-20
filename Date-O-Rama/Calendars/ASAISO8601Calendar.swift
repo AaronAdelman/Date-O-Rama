@@ -246,4 +246,22 @@ class ASAISO8601Calendar:  ASACalendar {
             return nil
         } // switch component
     } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
+    
+    
+    // MARK: -
+    func supports(calendarComponent:  ASACalendarComponent) -> Bool {
+        switch calendarComponent {
+        case .era, .year, .yearForWeekOfYear, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .weekdayOrdinal, .day:
+            return true
+            
+        case .hour, .minute, .second, .nanosecond:
+            return true
+            
+        case .calendar, .timeZone:
+            return true
+            
+        default:
+            return false
+        } // switch calendarComponent
+    } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
 } // class ASAISO8601Calendar

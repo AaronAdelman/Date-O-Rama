@@ -278,10 +278,6 @@ extension ASARow {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date, LDMLString:  String) -> String
 
-//    func eventDetails(date:  Date) -> Array<ASAEvent> {
-//        return self.calendar.eventDetails(date: date, location: self.locationData.location, timeZone: self.effectiveTimeZone)
-//    } // func eventDetails(date:  Date) -> Array<ASAEvent>
-
     public func LDMLDetails() -> Array<ASALDMLDetail> {
         return self.calendar.LDMLDetails
     } // public func LDMLDetails() -> Array<ASADetail>

@@ -252,4 +252,20 @@ class ASAJulianDayCalendar:  ASACalendar {
         // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
         return nil
     } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
+    
+    
+    // MARK: -
+    
+    func supports(calendarComponent:  ASACalendarComponent) -> Bool {
+        switch calendarComponent {
+        case .day:
+            return true
+                        
+        case .calendar, .timeZone:
+            return true
+            
+        default:
+            return false
+        } // switch calendarComponent
+    } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
 } // class ASAJulianDayCalendar

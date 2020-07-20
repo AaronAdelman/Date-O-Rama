@@ -37,6 +37,7 @@ struct ASAInternalEventsFile: Codable {
     var calendarColorGreen:  CGFloat
     var calendarColorBlue:  CGFloat
     var calendarColorAlpha:  CGFloat
+    var calendarCode:  ASACalendarCode?
     var eventSpecifications: [ASAInternalEventSpecification]
     
     var calendarColor: UIColor {
@@ -64,20 +65,37 @@ class ASAInternalEventSpecification: Codable {
     var title:  String?
     var localizableTitle:  String?
     
-    var calendarCode:  ASACalendarCode?
-    
     var isAllDay:  Bool
     
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
     
+    var recurrenceRules: [ASARecurrenceRule]? // The recurrence rules for the calendar item.
+    
     // TODO:  Do something with these properties
     var url: URL? // The URL for the calendar item.
-    var hasNotes: Bool // A Boolean value that indicates whether the calendar item has notes.
     var notes: String? // The notes associated with the calendar item.
-} // struct ASAInternalEventSpecification
+
+    var hasNotes: Bool // A Boolean value that indicates whether the calendar item has notes.
+        {
+        get {
+            return self.notes != nil
+        } // get
+    } // var hasNotes
+
+    var hasRecurrenceRules: Bool // A Boolean value that indicates whether the calendar item has recurrence rules.
+        {
+        get {
+            return self.recurrenceRules != nil
+        } // get
+    } // var hasRecurrenceRules
+} // extension ASAInternalEventSpecification
 
 struct ASADateSpecification:  Codable {
+    var year:  Int  // Will be ignored if not relevant
+    var month:  Int // Will be ignored if not relevant
+    var day:  Int
+
     var type: ASATimeSpecificationType
     
     // For degrees below horizon events
@@ -89,3 +107,36 @@ struct ASADateSpecification:  Codable {
     var solarHours:  Double?
     var dayHalf:  ASATimeSpecificationDayHalf?
 } // struct ASADateSpecification
+
+struct ASARecurrenceRule:  Codable {
+    var frequency:  ASARecurrenceFrequency // The frequency of the recurrence rule.
+    var interval: Int // Specifies how often the recurrence rule repeats over the unit of time indicated by its frequency.  (Only meaningful for daily and weekly frequency)
+    
+    var daysOfTheWeek: [ASARecurrenceDayOfWeek]? // The days of the week associated with the recurrence rule, as an array of EKRecurrenceDayOfWeek objects.
+    var daysOfTheMonth: [Int]?                   // The days of the month associated with the recurrence rule, as an array of NSNumber objects.
+    var daysOfTheYear: [Int]?                    // The days of the year associated with the recurrence rule, as an array of NSNumber objects.
+    var weeksOfTheYear: [Int]?                   // The weeks of the year associated with the recurrence rule, as an array of NSNumber objects.
+    var monthsOfTheYear: [Int]?                  // The months of the year associated with the recurrence rule, as an array of NSNumber objects.
+} // struct ASARecurrenceRule
+
+enum ASARecurrenceFrequency:  String, Codable {
+    case daily   = "daily"   // Indicates a daily recurrence rule.
+    case weekly  = "weekly"  // Indicates a weekly recurrence rule.
+    case monthly = "monthly" // Indicates a monthly recurrence rule.
+    case yearly  = "yearly"  // Indicates a yearly recurrence rule.
+} // enum ASARecurrenceFrequency
+
+struct ASARecurrenceDayOfWeek:  Codable {
+    var dayOfTheWeek: ASAWeekday // The day of the week.
+    var weekNumber: Int // The week number of the day of the week.  Values range from –53 to 53. A negative value indicates a value from the end of the range. 0 indicates the week number is irrelevant.
+} // struct ASARecurrenceDayOfWeek
+
+enum ASAWeekday:  Int, Codable {
+    case sunday    = 1
+    case monday    = 2
+    case tuesday   = 3
+    case wednesday = 4
+    case thursday  = 5
+    case friday    = 6
+    case saturday  = 7
+} // enum ASAWeekday

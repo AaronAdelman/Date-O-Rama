@@ -84,11 +84,19 @@ extension Date {
             return self.sixPM(timeZone: timeZone)
         }
         if self >= sunset!! {
-            return self.nextGMTNoon()
+            return self.noon(timeZone: timeZone).oneDayAfter
         } else {
             return self
         }
     } // func solarCorrected(location:  CLLocation) -> Date
+    
+    func noon(timeZone:  TimeZone) -> Date {
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        let result = midnightToday.addingTimeInterval(12 * 60 * 60)
+        return result
+    } // func noon(timeZone:  TimeZone) -> Date
     
     func sixPM(timeZone:  TimeZone) -> Date {
         var gregorianCalendar = Calendar(identifier: .gregorian)
@@ -96,7 +104,7 @@ extension Date {
         let midnightToday = gregorianCalendar.startOfDay(for:self)
         let result = midnightToday.addingTimeInterval(18 * 60 * 60)
         return result
-    } // func sixPM()
+    } // func sixPM(timeZone:  TimeZone) -> Date
     
     func sixPMYesterday(timeZone:  TimeZone) -> Date {
         var gregorianCalendar = Calendar(identifier: .gregorian)

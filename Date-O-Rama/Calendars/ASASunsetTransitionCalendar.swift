@@ -386,7 +386,9 @@
         let fixedDate = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!)
 
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
-        return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
+        let result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
+        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
+        return result
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     
     
@@ -447,4 +449,21 @@
             return nil
         } // switch component
     } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
+    
+    
+    // MARK: -
+    
+    func supports(calendarComponent:  ASACalendarComponent) -> Bool {
+        switch calendarComponent {
+        case .era, .year, .yearForWeekOfYear, .quarter, .month, .weekOfYear, .weekOfMonth, .weekday, .weekdayOrdinal, .day:
+            return true
+            
+        case .calendar, .timeZone:
+            return true
+            
+        default:
+            return false
+        } // switch calendarComponent
+    } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
+
  } // class ASASunsetTransitionCalendar

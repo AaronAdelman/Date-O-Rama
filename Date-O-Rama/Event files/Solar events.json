@@ -1,6 +1,7 @@
 {
     "eventSourceCode":  "solar",
     "localizableTitle":  "Daily solar events",
+    "calendarCode":  "Gregorian",
     "calendarColorRed":  1.0,
     "calendarColorGreen":  1.0,
     "calendarColorBlue":  0.0,
@@ -9,93 +10,157 @@
         {
             "localizableTitle":  "sunrise",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  true,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         {
             "localizableTitle":  "sunset",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         
         {
             "localizableTitle":  "civilDawn",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  6.0,
                 "rising":  true,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         {
             "localizableTitle":  "civilDusk",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  6.0,
                 "rising":  false,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         
         {
             "localizableTitle":  "nauticalDawn",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  12.0,
                 "rising":  true,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         {
             "localizableTitle":  "nauticalDusk",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  12.0,
                 "rising":  false,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         
         {
             "localizableTitle":  "astronomicalDawn",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  18.0,
                 "rising":  true,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         },
         {
             "localizableTitle":  "astronomicalDusk",
             "startDateSpecification":  {
+                "year":  1,
+                "month":  1,
+                "day":  1,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  18.0,
                 "rising":  false,
                 "offset":  0
             },
             "isAllDay":  false,
-            "hasNotes":  false
+            "recurrenceRules":  [
+                {
+                    "frequency":  "daily",
+                    "interval":  1
+                }
+            ]
         }
         
     ]

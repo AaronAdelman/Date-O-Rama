@@ -140,6 +140,6 @@ class ASAInternalEventCalendar:  ASALocatedObject {
             return []
         }
         
-        return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, location: self.locationData.location!, timeZone: self.effectiveTimeZone, eventCalendarName: eventCalendarName())
+        return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName())
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 } // class ASAInternalEventCalendar

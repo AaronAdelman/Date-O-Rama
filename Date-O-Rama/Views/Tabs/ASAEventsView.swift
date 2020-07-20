@@ -157,68 +157,68 @@ struct ASADatePicker:  View {
     
     @Binding var date:  Date {
         didSet {
-            self.updateComponentsFromDate()
+//            self.updateComponentsFromDate()
         } // didSet
     } // var date
     @ObservedObject var primaryRow:  ASARow {
         didSet {
-            self.updateSectionsFromPrimaryRow()
-            self.updateComponentsFromDate()
+//            self.updateSectionsFromPrimaryRow()
+//            self.updateComponentsFromDate()
         } // didSet
     } // var primaryRow
     
-    @State var components = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocationData())  {
-        didSet {
-            self.updateDateFromComponents()
-        } // didSet
-    } // var components
+//    @State var components = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocationData())  {
+//        didSet {
+//            self.updateDateFromComponents()
+//        } // didSet
+//    } // var components
     
-    @State var sections:  Array<ASACalendarComponent> = []
+//    @State var sections:  Array<ASACalendarComponent> = []
     
-    fileprivate func updateComponentsFromDate() {
-        let calendar = self.primaryRow.calendar
-        let newComponents = calendar.dateComponents([.year, .month, .day, .weekday], from: self.date, locationData: self.primaryRow.locationData)
-        if newComponents != self.components {
-            self.components = newComponents
-        }
-        //        debugPrint(#file, #function, self.components)
-    } // func updateComponentsFromDate()
+//    fileprivate func updateComponentsFromDate() {
+//        let calendar = self.primaryRow.calendar
+//        let newComponents = calendar.dateComponents([.year, .month, .day, .weekday], from: self.date, locationData: self.primaryRow.locationData)
+//        if newComponents != self.components {
+//            self.components = newComponents
+//        }
+//        //        debugPrint(#file, #function, self.components)
+//    } // func updateComponentsFromDate()
+//
+//    fileprivate func updateDateFromComponents() {
+//        let calendar = self.primaryRow.calendar
+//        let newDate = calendar.date(dateComponents: self.components)
+//        if newDate != nil {
+//            if newDate! != self.date {
+//                self.date = newDate!
+//            }
+//        }
+//    } // func updateDateFromComponents()
     
-    fileprivate func updateDateFromComponents() {
-        let calendar = self.primaryRow.calendar
-        let newDate = calendar.date(dateComponents: self.components)
-        if newDate != nil {
-            if newDate! != self.date {
-                self.date = newDate!
-            }
-        }
-    } // func updateDateFromComponents()
-    
-    fileprivate func updateSectionsFromPrimaryRow() {
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale(identifier: self.primaryRow.localeIdentifier)
-        dateFormatter.dateStyle = .long
-        dateFormatter.timeStyle = .none
-        let dateFormat = dateFormatter.dateFormat
-        
-        debugPrint(#file, #function, dateFormat!)
-        
-        let choppedDateFormat = dateFormat?.chop()
-        
-        debugPrint(#file, #function, choppedDateFormat as Any)
-        
-        var newSections:  Array<ASACalendarComponent> = []
-        for piece in choppedDateFormat! {
-            let section = piece.relevantSection()?.calendarComponent()
-            if section != nil {
-                newSections.append(section!)
-            }
-        } // for piece in choppedDateFormat!
-        
-        debugPrint(#file, #function, newSections)
-        
-        sections = newSections
-    } // func updateSectionsFromPrimaryRow()
+//    fileprivate func updateSectionsFromPrimaryRow() {
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.locale = Locale(identifier: self.primaryRow.localeIdentifier)
+//        dateFormatter.dateStyle = .long
+//        dateFormatter.timeStyle = .none
+//        let dateFormat = dateFormatter.dateFormat
+//
+//        debugPrint(#file, #function, dateFormat!)
+//
+//        let choppedDateFormat = dateFormat?.chop()
+//
+//        debugPrint(#file, #function, choppedDateFormat as Any)
+//
+//        var newSections:  Array<ASACalendarComponent> = []
+//        for piece in choppedDateFormat! {
+//            let section = piece.relevantSection()?.calendarComponent()
+//            if section != nil {
+//                newSections.append(section!)
+//            }
+//        } // for piece in choppedDateFormat!
+//
+//        debugPrint(#file, #function, newSections)
+//
+//        sections = newSections
+//    } // func updateSectionsFromPrimaryRow()
     
     fileprivate func currentValue(_ section: ASACalendarComponent) -> Int {
         let result = self.primaryRow.calendar.component(section, from: self.date, locationData: self.primaryRow.locationData)
@@ -248,7 +248,7 @@ struct ASADatePicker:  View {
                 Spacer()
                 
                 Button(action: {
-                    self.date = self.date.oneDayBefore
+                    self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayBefore
                 }) {
                     Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
@@ -256,7 +256,7 @@ struct ASADatePicker:  View {
                 Spacer().frame(width:  50)
                 
                 Button(action: {
-                    self.date = Date()
+                    self.date = Date().noon(timeZone:  self.primaryRow.effectiveTimeZone)
                 }) {
                     Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }.foregroundColor(.accentColor)
@@ -264,7 +264,7 @@ struct ASADatePicker:  View {
                 Spacer().frame(width:  50)
                 
                 Button(action: {
-                    self.date = self.date.oneDayAfter
+                    self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayAfter
                 }) {
                     Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
@@ -287,8 +287,8 @@ struct ASADatePicker:  View {
             .border(Color.gray)
         }
         .onAppear() {
-            self.updateComponentsFromDate()
-            self.updateSectionsFromPrimaryRow()
+//            self.updateComponentsFromDate()
+//            self.updateSectionsFromPrimaryRow()
         }
     } // var body
 } // struct ASADatePicker
