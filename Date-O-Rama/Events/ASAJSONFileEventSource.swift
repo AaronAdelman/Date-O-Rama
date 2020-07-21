@@ -10,37 +10,37 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-extension ASADateComponents {
-    func matches(startDateSpecification:  ASADateSpecification, recurrenceRules:  Array<ASARecurrenceRule>?) -> Bool {
-        let supportsYear: Bool = self.calendar.supports(calendarComponent: .year)
-        let supportsMonth: Bool = self.calendar.supports(calendarComponent: .month)
-        let supportsDay: Bool = self.calendar.supports(calendarComponent: .day)
-        
-        // Perfect matching
-        if supportsDay {
-            if self.day == startDateSpecification.day {
-                if supportsYear && supportsMonth {
-                    if self.year == startDateSpecification.year && self.month == startDateSpecification.month {
-                        return true
-                    }
-                } else {
-                    return true
-                }
-            }
-        } else {
-            debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
-        }
-        
-        // Recurring events
-        
-        
-        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
-        
-        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
-        
-        return false
-    } // func matches(startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> Bool
-} // extension ASADateComponents
+//extension ASADateComponents {
+//    func matches(startDateSpecification:  ASADateSpecification, recurrenceRules:  Array<ASARecurrenceRule>?) -> Bool {
+//        let supportsYear: Bool = self.calendar.supports(calendarComponent: .year)
+//        let supportsMonth: Bool = self.calendar.supports(calendarComponent: .month)
+//        let supportsDay: Bool = self.calendar.supports(calendarComponent: .day)
+//        
+//        // Perfect matching
+//        if supportsDay {
+//            if self.day == startDateSpecification.day {
+//                if supportsYear && supportsMonth {
+//                    if self.year == startDateSpecification.year && self.month == startDateSpecification.month {
+//                        return true
+//                    }
+//                } else {
+//                    return true
+//                }
+//            }
+//        } else {
+//            debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
+//        }
+//        
+//        // Recurring events
+//        
+//        
+//        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
+//        
+//        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
+//        
+//        return false
+//    } // func matches(startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> Bool
+//} // extension ASADateComponents
 
 
 // MARK: -

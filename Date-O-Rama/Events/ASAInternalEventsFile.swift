@@ -109,28 +109,28 @@ struct ASADateSpecification:  Codable {
     var dayHalf:  ASATimeSpecificationDayHalf?
 } // struct ASADateSpecification
 
-struct ASARecurrenceRule:  Codable {
-    var frequency:  ASARecurrenceFrequency // The frequency of the recurrence rule.
-    var interval: Int // Specifies how often the recurrence rule repeats over the unit of time indicated by its frequency.  (Only meaningful for daily and weekly frequency)
-    
-    var daysOfTheWeek: [ASARecurrenceDayOfWeek]? // The days of the week associated with the recurrence rule, as an array of EKRecurrenceDayOfWeek objects.
-    var daysOfTheMonth: [Int]?                   // The days of the month associated with the recurrence rule, as an array of NSNumber objects.
-    var daysOfTheYear: [Int]?                    // The days of the year associated with the recurrence rule, as an array of NSNumber objects.
-    var weeksOfTheYear: [Int]?                   // The weeks of the year associated with the recurrence rule, as an array of NSNumber objects.
-    var monthsOfTheYear: [Int]?                  // The months of the year associated with the recurrence rule, as an array of NSNumber objects.
-} // struct ASARecurrenceRule
-
-enum ASARecurrenceFrequency:  String, Codable {
-    case daily   = "daily"   // Indicates a daily recurrence rule.
-    case weekly  = "weekly"  // Indicates a weekly recurrence rule.
-    case monthly = "monthly" // Indicates a monthly recurrence rule.
-    case yearly  = "yearly"  // Indicates a yearly recurrence rule.
-} // enum ASARecurrenceFrequency
-
-struct ASARecurrenceDayOfWeek:  Codable {
-    var dayOfTheWeek: ASAWeekday // The day of the week.
-    var weekNumber: Int // The week number of the day of the week.  Values range from –53 to 53. A negative value indicates a value from the end of the range. 0 indicates the week number is irrelevant.
-} // struct ASARecurrenceDayOfWeek
+//struct ASARecurrenceRule:  Codable {
+//    var frequency:  ASARecurrenceFrequency // The frequency of the recurrence rule.
+//    var interval: Int // Specifies how often the recurrence rule repeats over the unit of time indicated by its frequency.  (Only meaningful for daily and weekly frequency)
+//    
+//    var daysOfTheWeek: [ASARecurrenceDayOfWeek]? // The days of the week associated with the recurrence rule, as an array of EKRecurrenceDayOfWeek objects.
+//    var daysOfTheMonth: [Int]?                   // The days of the month associated with the recurrence rule, as an array of NSNumber objects.
+//    var daysOfTheYear: [Int]?                    // The days of the year associated with the recurrence rule, as an array of NSNumber objects.
+//    var weeksOfTheYear: [Int]?                   // The weeks of the year associated with the recurrence rule, as an array of NSNumber objects.
+//    var monthsOfTheYear: [Int]?                  // The months of the year associated with the recurrence rule, as an array of NSNumber objects.
+//} // struct ASARecurrenceRule
+//
+//enum ASARecurrenceFrequency:  String, Codable {
+//    case daily   = "daily"   // Indicates a daily recurrence rule.
+//    case weekly  = "weekly"  // Indicates a weekly recurrence rule.
+//    case monthly = "monthly" // Indicates a monthly recurrence rule.
+//    case yearly  = "yearly"  // Indicates a yearly recurrence rule.
+//} // enum ASARecurrenceFrequency
+//
+//struct ASARecurrenceDayOfWeek:  Codable {
+//    var dayOfTheWeek: ASAWeekday // The day of the week.
+//    var weekNumber: Int // The week number of the day of the week.  Values range from –53 to 53. A negative value indicates a value from the end of the range. 0 indicates the week number is irrelevant.
+//} // struct ASARecurrenceDayOfWeek
 
 enum ASAWeekday:  Int, Codable {
     case sunday    = 1
