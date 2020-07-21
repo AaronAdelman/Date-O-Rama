@@ -75,6 +75,9 @@ class ASAInternalEventSpecification: Codable {
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
     
+    var includeISOCountryCodes:  Array<String>?
+    var excludeISOCountryCodes:  Array<String>?
+    
 //    var recurrenceRules: [ASARecurrenceRule]? // The recurrence rules for the calendar item.
     
     // TODO:  Do something with these properties
@@ -95,6 +98,29 @@ class ASAInternalEventSpecification: Codable {
 //        } // get
 //    } // var hasRecurrenceRules
 } // extension ASAInternalEventSpecification
+
+extension ASAInternalEventSpecification {
+    func match(ISOCountryCode:  String?) -> Bool {
+        if ISOCountryCode == nil {
+            return true
+        }
+        
+        if self.includeISOCountryCodes != nil {
+            if self.includeISOCountryCodes!.contains(ISOCountryCode!) {
+                return true
+            }
+        }
+        
+        if self.excludeISOCountryCodes != nil {
+            if self.excludeISOCountryCodes!.contains(ISOCountryCode!) {
+                return false
+            }
+        }
+        
+        return true
+    } // func match(ISOCountryCode:  String?) -> Bool
+} // extension ASAInternalEventSpecification
+
 
 struct ASADateSpecification:  Codable {
     var year:  Int?  // Will be ignored if not relevant

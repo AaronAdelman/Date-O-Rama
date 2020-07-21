@@ -67,17 +67,14 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
     }
     
-    func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent> {
-//        let location = locationData.location!
-//        let timeZone = locationData.timeZone!
-        
+    func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {        
 //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
         var now = startDate.noon(timeZone: locationData.timeZone!).oneDayBefore
         var result:  Array<ASAEvent> = []
         var oldNow = now
         repeat {
-            let temp = self.eventDetails(date: now, locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!)
+            let temp = self.eventDetails(date: now, locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!, ISOCountryCode: ISOCountryCode)
             for event in temp {
 //                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
                 
@@ -213,18 +210,17 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
 //        default:
 //            return false
 //        }
-        
-        return false
+//
+//        return false
     } //
     
-    func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar) -> Array<ASAEvent> {
+    func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?) -> Array<ASAEvent> {
         let location = locationData.location!
         let timeZone = locationData.timeZone!
         
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
         
-        let calendarCode:  ASACalendarCode = (self.eventsFile?.calendarCode != nil ? self.eventsFile?.calendarCode : ASACalendarCode.Gregorian)!
 //        let calendar = ASACalendarFactory.calendar(code: calendarCode)
 //        let components = calendar?.dateComponents([.year, .month,.day, .weekday, .weekOfYear, .weekOfMonth], from: date, locationData: locationData)
 //        if components == nil {
@@ -260,7 +256,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile!.eventSpecifications {
-            if self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification
+            if eventSpecification.match(ISOCountryCode: ISOCountryCode) && self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification
 //                , recurrenceRules: eventSpecification.recurrenceRules
                 ) {
                 let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title

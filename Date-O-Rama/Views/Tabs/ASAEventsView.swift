@@ -37,7 +37,7 @@ struct ASAEventsView: View {
         } // set
     } // var secondaryRow
     
-    func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
+    func events(startDate:  Date, endDate:  Date, row:  ASARow, ISOCountryCode:  String?) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         if settings.useExternalEvents {
             let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
@@ -45,7 +45,7 @@ struct ASAEventsView: View {
         }
         
         for eventCalendar in userData.internalEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate)
+            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: ISOCountryCode)
         } // for eventCalendar in userData.internalEventCalendars
         
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -131,7 +131,7 @@ struct ASAEventsView: View {
                         #endif
                     }
                     
-                    ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+                    ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow, ISOCountryCode: self.primaryRow.locationData.ISOCountryCode), id: \.eventIdentifier) {
                         event
                         in
                         ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)

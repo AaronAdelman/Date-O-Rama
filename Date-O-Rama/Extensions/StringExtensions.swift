@@ -71,7 +71,7 @@ extension String {
                     temp[relevantSection!] = code
                 }
             } // for code in codes
-            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+//            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
             return temp
         } else {
             
@@ -92,7 +92,7 @@ extension String {
                 //                    "g": "",
 //                "-": ""
             ]
-            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+//            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
             return temp
         }
         
@@ -108,7 +108,7 @@ extension String {
                     temp[relevantSection!] = code
                 }
             } // for code in codes
-            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+//            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
             return temp
         } else {
             
@@ -118,7 +118,7 @@ extension String {
                 "m": "mm",
                 "s": "ss"
             ]
-            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
+//            debugPrint("\(#file) \(#function) Geek format = \(self), components = \(temp)")
             return temp
         }
     }
@@ -129,7 +129,7 @@ extension String {
             let component = components[componentKey] ?? ""
             temp += component
         } // for componentKey in ccomponents.keys
-        debugPrint("\(#file) \(#function) Components = \(components), geek format = \(temp)")
+//        debugPrint("\(#file) \(#function) Components = \(components), geek format = \(temp)")
         return temp
     } // static func geekFormat(components:  Dictionary<String, String>) -> String
     

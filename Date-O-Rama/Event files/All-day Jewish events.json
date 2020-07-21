@@ -32,11 +32,180 @@
             }
         },
         {
+            "localizableTitle":  "יום שבו נתפס רבי עקיבא והייתה שעת שמד",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  5
+            }
+        },{
+            "localizableTitle":  "יום שבו נגזרה גזירה על אבותינו שימותו ברעב בחרב ובדבר בשל מעשה העגל",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  7
+            }
+        },{
+            "localizableTitle":  "ערב יום כיפור",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  9
+            }
+        },
+        {
             "localizableTitle":  "יום כיפור",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  1,
                 "day":  10
+            }
+        },
+        {
+            "localizableTitle":  "ערב סוכות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  14
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (יום טוב)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  15
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום א׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  16
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ב׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  17
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ג׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  18
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ד׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  19
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ה׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  20
+            }
+        },
+        {
+            "localizableTitle":  "הושענא רבה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  21
+            }
+        },
+        {
+            "localizableTitle":  "שמיני עצרת",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  22
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (יום טוב שני)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  16
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום א׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  17
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ב׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  18
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ג׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  19
+            }
+        },
+        {
+            "localizableTitle":  "סוכות (חול המועד, יום ד׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  20
+            }
+        },
+        {
+            "localizableTitle":  "שמחת תורה",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  23
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש חשון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  30
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש חשון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  1
             }
         }
     ]

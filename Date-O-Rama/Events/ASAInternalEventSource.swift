@@ -12,7 +12,7 @@ import CoreLocation
 protocol ASAInternalEventSource {
     var eventSourceCode:  ASAInternalEventSourceCode { get }
 
-    func eventDetails(startDate:  Date, endDate:  Date, locationData:  ASALocationData, eventCalendarName:  String) -> Array<ASAEvent>
+    func eventDetails(startDate:  Date, endDate:  Date, locationData:  ASALocationData, eventCalendarName:  String, ISOCountryCode:  String?) -> Array<ASAEvent>
     func eventCalendarName(locationData:  ASALocationData) -> String
     func eventSourceName() -> String
 } // protocol ASAInternalEventSource
