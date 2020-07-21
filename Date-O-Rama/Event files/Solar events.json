@@ -14,13 +14,7 @@
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "sunset",
@@ -29,13 +23,7 @@
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -45,13 +33,7 @@
                 "degreesBelowHorizon":  6.0,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "civilDusk",
@@ -60,13 +42,7 @@
                 "degreesBelowHorizon":  6.0,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -76,13 +52,7 @@
                 "degreesBelowHorizon":  12.0,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "nauticalDusk",
@@ -91,13 +61,7 @@
                 "degreesBelowHorizon":  12.0,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -107,13 +71,7 @@
                 "degreesBelowHorizon":  18.0,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "astronomicalDusk",
@@ -122,13 +80,7 @@
                 "degreesBelowHorizon":  18.0,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         }
         
     ]

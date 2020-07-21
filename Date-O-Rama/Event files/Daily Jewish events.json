@@ -14,13 +14,7 @@
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "sunset",
@@ -29,13 +23,7 @@
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -45,13 +33,7 @@
                 "degreesBelowHorizon":  16,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "recognition",
@@ -60,13 +42,7 @@
                 "degreesBelowHorizon":  11.0,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "dusk",
@@ -75,13 +51,7 @@
                 "degreesBelowHorizon":  8.5,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -91,13 +61,7 @@
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  true,
                 "offset":  -4320.0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "otherDusk",
@@ -106,13 +70,7 @@
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
                 "offset":  4320.0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -147,13 +105,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  6.0,
                 "dayHalf":  "night"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "hour03",
@@ -161,13 +113,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  3.0,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "hour04",
@@ -175,13 +121,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  4.0,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "noon",
@@ -189,13 +129,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  6.0,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "hour06½",
@@ -203,13 +137,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  6.5,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "hour09½",
@@ -217,13 +145,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  9.5,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "hour10¾",
@@ -231,13 +153,7 @@
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  10.75,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "otherHour03",
@@ -245,13 +161,7 @@
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  3.0,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "otherHour04",
@@ -259,13 +169,7 @@
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  4.0,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "otherHour06½",
@@ -273,13 +177,7 @@
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  6.5,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "otherHour09½",
@@ -287,13 +185,7 @@
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  9.5,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "otherHour10¾",
@@ -301,13 +193,7 @@
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  10.75,
                 "dayHalf":  "day"
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         
         {
@@ -317,13 +203,7 @@
                 "degreesBelowHorizon":  3.7,
                 "rising":  false,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         },
         {
             "localizableTitle":  "dawn",
@@ -332,13 +212,7 @@
                 "degreesBelowHorizon":  16.1,
                 "rising":  true,
                 "offset":  0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "daily",
-                    "interval":  1
-                }
-            ]
+            }
         }
     ]
 }
