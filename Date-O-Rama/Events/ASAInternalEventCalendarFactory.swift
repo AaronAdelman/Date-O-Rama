@@ -21,6 +21,9 @@ class ASAInternalEventCalendarFactory {
     
     class func eventCalendarSource(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventSource? {
         switch eventSourceCode {
+            case .allDayJewish:
+                return ASAJSONFileEventSource(fileName: "All-day Jewish events")
+            
         case .dailyJewish:
             return ASAJSONFileEventSource(fileName: "Daily Jewish events")
 

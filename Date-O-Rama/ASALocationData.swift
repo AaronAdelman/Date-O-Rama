@@ -32,7 +32,7 @@ extension ASALocationData {
         let usedLocation = location != nil ? location! : placemark?.location
 //        let temp = ASALocationData(uid: UUID(), location: placemark?.location, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone)
         let temp = ASALocationData(uid: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone)
-        debugPrint(#file, #function, placemark as Any, temp)
+//        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocationData
     

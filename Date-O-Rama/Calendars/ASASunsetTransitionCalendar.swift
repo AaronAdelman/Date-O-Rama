@@ -387,7 +387,7 @@
 
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
         let result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
-        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
+//        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
         return result
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     

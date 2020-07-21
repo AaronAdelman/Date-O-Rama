@@ -1,0 +1,43 @@
+{
+    "eventSourceCode":  "allDayJewish",
+    "localizableTitle":  "All-day Jewish events",
+    "calendarCode":  "HebrewSolar",
+    "calendarColorRed":  0.0,
+    "calendarColorGreen":  0.0,
+    "calendarColorBlue":  1.0,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "localizableTitle":  "ראש השנה, יום א׳",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  1
+            }
+        },
+        {
+            "localizableTitle":  "ראש השנה, יום ב׳",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  2
+            }
+        },
+        {
+            "localizableTitle":  "צום גדליה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  3
+            }
+        },
+        {
+            "localizableTitle":  "יום כיפור",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  1,
+                "day":  10
+            }
+        }
+    ]
+}

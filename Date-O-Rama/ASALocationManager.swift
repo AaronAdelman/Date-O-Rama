@@ -91,7 +91,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
             let place = placemarks?.last;
             
             if place == nil || error != nil {
-                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
+//                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
                 
                 var tempLocationData = ASALocationData()
                 tempLocationData.location              = location
@@ -123,7 +123,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        print(#file, #function, location)
+//        print(#file, #function, location)
         
         let Δ = self.lastDeviceLocation?.distance(from: location)
 
@@ -136,6 +136,6 @@ extension ASALocationManager: CLLocationManagerDelegate {
         self.locationData = tempLocationData
         self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
         
-        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
+//        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
     } // func finishDidUpdateLocations(_ tempLocationData: ASALocationData)
 } // extension ASALocationManager

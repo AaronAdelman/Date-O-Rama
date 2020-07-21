@@ -387,7 +387,7 @@ struct ASAStartAndEndTimesSubcell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            if event.isAllDay && row.calendar.calendarCode == ASACalendarCode.Gregorian {
+            if event.isAllDay && row.calendar.calendarCode == event.calendarCode {
                 Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
                 Text("All day").frame(width:  timeWidth).font(timeFontSize)
             } else {

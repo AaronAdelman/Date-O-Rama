@@ -23,6 +23,8 @@ extension ASAInternalEventSourceCode {
         switch self {
         case .dailyJewish:  rawName = "Daily Jewish events"
             
+        case .allDayJewish:  rawName = "All-day Jewish events"
+            
         case .solar:  rawName = "Daily solar events"
             
         case .test:  rawName = "Test"

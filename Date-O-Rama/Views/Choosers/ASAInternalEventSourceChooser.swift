@@ -12,6 +12,7 @@ struct ASAInternalEventSourceChooser: View {
     let eventSourceCodes:  Array<ASAInternalEventSourceCode> = [
         .solar,
         .dailyJewish,
+        .allDayJewish,
         .test
     ]
     

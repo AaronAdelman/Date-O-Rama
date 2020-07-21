@@ -19,6 +19,7 @@ protocol ASAEventCompatible {
     var timeZone: TimeZone? { get }
     var color:  Color { get }
     var calendarTitle:  String { get }
+    var calendarCode:  ASACalendarCode { get }
     var isEKEvent:  Bool { get }
 } // protocol ASAEventCompatible
 
@@ -33,6 +34,7 @@ struct ASAEvent:  ASAEventCompatible {
     var uuid = UUID()
     var calendarTitle: String
     var isEKEvent: Bool = false
+    var calendarCode: ASACalendarCode
 } // struct ASAEvent
 
 extension EKEvent:  ASAEventCompatible {
@@ -54,4 +56,10 @@ extension EKEvent:  ASAEventCompatible {
             return self.calendar.title
         } // get
     } // var calendarTitle
+    
+    var calendarCode: ASACalendarCode {
+        get {
+            return .Gregorian
+        } // get
+    } // var calendarCode
 } // extension EKEvent:  ASAEventCompatible
