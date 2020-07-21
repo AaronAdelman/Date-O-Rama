@@ -15,7 +15,7 @@ import CoreLocation
 //        let supportsYear: Bool = self.calendar.supports(calendarComponent: .year)
 //        let supportsMonth: Bool = self.calendar.supports(calendarComponent: .month)
 //        let supportsDay: Bool = self.calendar.supports(calendarComponent: .day)
-//        
+//
 //        // Perfect matching
 //        if supportsDay {
 //            if self.day == startDateSpecification.day {
@@ -30,14 +30,14 @@ import CoreLocation
 //        } else {
 //            debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
 //        }
-//        
+//
 //        // Recurring events
-//        
-//        
+//
+//
 //        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
-//        
+//
 //        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
-//        
+//
 //        return false
 //    } // func matches(startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> Bool
 //} // extension ASADateComponents
@@ -264,8 +264,8 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
                 ) {
                 let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
                 let color = self.calendarColor()
-                let startDate = eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
-                let endDate = eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
+                let startDate = eventSpecification.isAllDay ? calendar?.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
+                let endDate = eventSpecification.isAllDay ? calendar?.startOfNextDay(date: date, location: location, timeZone: timeZone) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength))
                 let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName)
                 result.append(newEvent)
             }
@@ -331,6 +331,9 @@ extension ASADateSpecification {
                 let result = otherDawn + hours * otherHourLength
                 return result
             } // switch dayHalf
+            
+        case .allDay:
+            return date
         } // switch self.type
     } // func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification

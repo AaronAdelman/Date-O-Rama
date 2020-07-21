@@ -16,6 +16,7 @@ import UIKit
 import CoreLocation
 
 enum ASATimeSpecificationType:  String, Codable {
+    case allDay                              = "allDay"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
@@ -65,7 +66,11 @@ class ASAInternalEventSpecification: Codable {
     var title:  String?
     var localizableTitle:  String?
     
-    var isAllDay:  Bool
+    var isAllDay:  Bool {
+        get {
+            return self.startDateSpecification.type == .allDay
+        } // get
+    } // var isAllDay
     
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
@@ -112,7 +117,7 @@ struct ASADateSpecification:  Codable {
 //struct ASARecurrenceRule:  Codable {
 //    var frequency:  ASARecurrenceFrequency // The frequency of the recurrence rule.
 //    var interval: Int // Specifies how often the recurrence rule repeats over the unit of time indicated by its frequency.  (Only meaningful for daily and weekly frequency)
-//    
+//
 //    var daysOfTheWeek: [ASARecurrenceDayOfWeek]? // The days of the week associated with the recurrence rule, as an array of EKRecurrenceDayOfWeek objects.
 //    var daysOfTheMonth: [Int]?                   // The days of the month associated with the recurrence rule, as an array of NSNumber objects.
 //    var daysOfTheYear: [Int]?                    // The days of the year associated with the recurrence rule, as an array of NSNumber objects.

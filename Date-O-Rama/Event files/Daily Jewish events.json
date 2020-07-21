@@ -15,7 +15,6 @@
                 "rising":  true,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -31,7 +30,6 @@
                 "rising":  false,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -48,7 +46,6 @@
                 "rising":  true,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -64,7 +61,6 @@
                 "rising":  true,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -80,7 +76,6 @@
                 "rising":  false,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -97,7 +92,6 @@
                 "rising":  true,
                 "offset":  -4320.0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -113,7 +107,6 @@
                 "rising":  false,
                 "offset":  4320.0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -131,7 +124,6 @@
                 "rising":  false,
                 "offset":  -1080.0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "weekly",
@@ -156,7 +148,6 @@
                 "solarHours":  6.0,
                 "dayHalf":  "night"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -171,7 +162,6 @@
                 "solarHours":  3.0,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -186,7 +176,6 @@
                 "solarHours":  4.0,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -201,7 +190,6 @@
                 "solarHours":  6.0,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -216,7 +204,6 @@
                 "solarHours":  6.5,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -231,7 +218,6 @@
                 "solarHours":  9.5,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -246,7 +232,6 @@
                 "solarHours":  10.75,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -261,7 +246,6 @@
                 "solarHours":  3.0,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -276,7 +260,6 @@
                 "solarHours":  4.0,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -291,7 +274,6 @@
                 "solarHours":  6.5,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -306,7 +288,6 @@
                 "solarHours":  9.5,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -321,7 +302,6 @@
                 "solarHours":  10.75,
                 "dayHalf":  "day"
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -338,7 +318,6 @@
                 "rising":  false,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
@@ -354,7 +333,6 @@
                 "rising":  true,
                 "offset":  0
             },
-            "isAllDay":  false,
             "recurrenceRules":  [
                 {
                     "frequency":  "daily",
