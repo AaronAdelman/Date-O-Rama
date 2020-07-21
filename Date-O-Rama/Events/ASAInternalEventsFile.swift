@@ -70,7 +70,7 @@ class ASAInternalEventSpecification: Codable {
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
     
-    var recurrenceRules: [ASARecurrenceRule]? // The recurrence rules for the calendar item.
+//    var recurrenceRules: [ASARecurrenceRule]? // The recurrence rules for the calendar item.
     
     // TODO:  Do something with these properties
     var url: URL? // The URL for the calendar item.
@@ -83,18 +83,19 @@ class ASAInternalEventSpecification: Codable {
         } // get
     } // var hasNotes
 
-    var hasRecurrenceRules: Bool // A Boolean value that indicates whether the calendar item has recurrence rules.
-        {
-        get {
-            return self.recurrenceRules != nil
-        } // get
-    } // var hasRecurrenceRules
+//    var hasRecurrenceRules: Bool // A Boolean value that indicates whether the calendar item has recurrence rules.
+//        {
+//        get {
+//            return self.recurrenceRules != nil
+//        } // get
+//    } // var hasRecurrenceRules
 } // extension ASAInternalEventSpecification
 
 struct ASADateSpecification:  Codable {
-    var year:  Int  // Will be ignored if not relevant
-    var month:  Int // Will be ignored if not relevant
-    var day:  Int
+    var year:  Int?  // Will be ignored if not relevant
+    var month:  Int? // Will be ignored if not relevant
+    var day:  Int?
+    var weekday:  ASAWeekday?
 
     var type: ASATimeSpecificationType
     

@@ -95,7 +95,9 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         return Color(self.eventsFile!.calendarColor)
     } // static func calendarColor() -> Color
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification, recurrenceRules:  Array<ASARecurrenceRule>?) -> Bool {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification
+//        , recurrenceRules:  Array<ASARecurrenceRule>?
+    ) -> Bool {
         let components = calendar.dateComponents([.year, .month, .day, .weekday
 //            , .weekOfYear, .weekOfMonth
         ], from: date, locationData: locationData)
@@ -103,86 +105,113 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
-        
+        let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
+
         // Perfect matching
+//    if supportsDay {
+//        if components.day == startDateSpecification.day {
+//            if supportsYear && supportsMonth {
+//                if components.year == startDateSpecification.year && components.month == startDateSpecification.month {
+//                    return true
+//                }
+//            } else {
+//                return true
+//            }
+//        }
+//    } else {
+//        debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
+//    }
+        
+        if supportsYear {
+            if !(components.year?.matches(startDateSpecification.year) ?? false) {
+                return false
+            }
+        }
+        
+        if supportsMonth {
+            if !(components.month?.matches(startDateSpecification.month) ?? false) {
+                return false
+            }
+        }
+        
         if supportsDay {
-            if components.day == startDateSpecification.day {
-                if supportsYear && supportsMonth {
-                    if components.year == startDateSpecification.year && components.month == startDateSpecification.month {
-                        return true
-                    }
-                } else {
-                    return true
-                }
-            }
-        } else {
-            debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
-        }
-                
-        // Recurring events
-        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
-
-        if !hasRecurrenceRules {
-            return false
-        }
-
-        if supportsYear && supportsMonth {
-            if startDateSpecification.year > components.year! {
-                return false
-            }
-            
-            if startDateSpecification.year == components.year! {
-                if startDateSpecification.month > components.month! {
-                    return false
-                }
-                
-                if startDateSpecification.month == components.month! {
-                    if startDateSpecification.day > components.day! {
-                        return false
-                    }
-                }
-
-            }
-        } else {
-            if startDateSpecification.day > components.day! {
+            if !(components.day?.matches(startDateSpecification.day) ?? false) {
                 return false
             }
         }
         
-        
-        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
-        
-        switch recurrenceRule?.frequency {
-        case .daily:
-            if recurrenceRule?.interval == 1 {  // TODO:  Support other intervals
-                return true
-            } else {
+        if supportsWeekday {
+            if !(components.weekday?.matches(startDateSpecification.weekday.map { $0.rawValue }) ?? false) {
                 return false
             }
-            
-        case .weekly:
-            if recurrenceRule?.interval == 1 { // TODO:  Support other
-                if recurrenceRule?.daysOfTheWeek != nil {  // TODO:  Is this neccessary?
-                    for dayOfTheWeek in recurrenceRule!.daysOfTheWeek! {
-                        if dayOfTheWeek.weekNumber == 0 { // TODO:  Support specific weeks of the year
-                            if dayOfTheWeek.dayOfTheWeek.rawValue == components.weekday! {
-                                debugPrint(#file, #function, date, locationData, components, recurrenceRule as Any)
-                                
-                                return true
-                            }
-                        }
-                    }
-                    return false
-                    
-                }
-                
-            } else {
-                return false
-            }
-            
-        default:
-            return false
         }
+
+        return true
+                
+//        // Recurring events
+//        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
+//
+//        if !hasRecurrenceRules {
+//            return false
+//        }
+//
+//        if supportsYear && supportsMonth {
+//            if startDateSpecification.year > components.year! {
+//                return false
+//            }
+//
+//            if startDateSpecification.year == components.year! {
+//                if startDateSpecification.month > components.month! {
+//                    return false
+//                }
+//
+//                if startDateSpecification.month == components.month! {
+//                    if startDateSpecification.day > components.day! {
+//                        return false
+//                    }
+//                }
+//
+//            }
+//        } else {
+//            if startDateSpecification.day > components.day! {
+//                return false
+//            }
+//        }
+//
+//
+//        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
+//
+//        switch recurrenceRule?.frequency {
+//        case .daily:
+//            if recurrenceRule?.interval == 1 {  // TODO:  Support other intervals
+//                return true
+//            } else {
+//                return false
+//            }
+//
+//        case .weekly:
+//            if recurrenceRule?.interval == 1 { // TODO:  Support other
+//                if recurrenceRule?.daysOfTheWeek != nil {  // TODO:  Is this neccessary?
+//                    for dayOfTheWeek in recurrenceRule!.daysOfTheWeek! {
+//                        if dayOfTheWeek.weekNumber == 0 { // TODO:  Support specific weeks of the year
+//                            if dayOfTheWeek.dayOfTheWeek.rawValue == components.weekday! {
+//                                debugPrint(#file, #function, date, locationData, components, recurrenceRule as Any)
+//
+//                                return true
+//                            }
+//                        }
+//                    }
+//                    return false
+//
+//                }
+//
+//            } else {
+//                return false
+//            }
+//
+//        default:
+//            return false
+//        }
         
         return false
     } //
@@ -230,7 +259,9 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile!.eventSpecifications {
-            if self.match(date: date, calendar: calendar!, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, recurrenceRules: eventSpecification.recurrenceRules) {
+            if self.match(date: date, calendar: calendar!, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification
+//                , recurrenceRules: eventSpecification.recurrenceRules
+                ) {
                 let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
                 let color = self.calendarColor()
                 let startDate = eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
@@ -303,3 +334,14 @@ extension ASADateSpecification {
         } // switch self.type
     } // func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification
+
+extension Int {
+    func matches(_ value:  Int?) -> Bool {
+        if value == nil {
+            return true
+        }
+        
+        return self == value!
+    } // func matches(_ value:  Int?) -> Bool
+} // extension Int
+

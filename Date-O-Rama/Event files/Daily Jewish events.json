@@ -10,9 +10,6 @@
         {
             "localizableTitle":  "sunrise",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  true,
@@ -29,9 +26,6 @@
         {
             "localizableTitle":  "sunset",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
@@ -49,9 +43,6 @@
         {
             "localizableTitle":  "dawn16°",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  16,
                 "rising":  true,
@@ -68,9 +59,6 @@
         {
             "localizableTitle":  "recognition",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  11.0,
                 "rising":  true,
@@ -87,9 +75,6 @@
         {
             "localizableTitle":  "dusk",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  8.5,
                 "rising":  false,
@@ -107,9 +92,6 @@
         {
             "localizableTitle":  "otherDawn",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  true,
@@ -126,9 +108,6 @@
         {
             "localizableTitle":  "otherDusk",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
@@ -146,9 +125,7 @@
         {
             "localizableTitle":  "candlelighting",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  18,
+                "weekday":  6,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
@@ -190,9 +167,6 @@
         {
             "localizableTitle":  "hour03",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  3.0,
                 "dayHalf":  "day"
@@ -208,9 +182,6 @@
         {
             "localizableTitle":  "hour04",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  4.0,
                 "dayHalf":  "day"
@@ -226,9 +197,6 @@
         {
             "localizableTitle":  "noon",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  6.0,
                 "dayHalf":  "day"
@@ -244,9 +212,6 @@
         {
             "localizableTitle":  "hour06½",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  6.5,
                 "dayHalf":  "day"
@@ -262,9 +227,6 @@
         {
             "localizableTitle":  "hour09½",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  9.5,
                 "dayHalf":  "day"
@@ -280,9 +242,6 @@
         {
             "localizableTitle":  "hour10¾",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  10.75,
                 "dayHalf":  "day"
@@ -298,9 +257,6 @@
         {
             "localizableTitle":  "otherHour03",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  3.0,
                 "dayHalf":  "day"
@@ -316,9 +272,6 @@
         {
             "localizableTitle":  "otherHour04",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  4.0,
                 "dayHalf":  "day"
@@ -334,9 +287,6 @@
         {
             "localizableTitle":  "otherHour06½",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  6.5,
                 "dayHalf":  "day"
@@ -352,9 +302,6 @@
         {
             "localizableTitle":  "otherHour09½",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  9.5,
                 "dayHalf":  "day"
@@ -370,9 +317,6 @@
         {
             "localizableTitle":  "otherHour10¾",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "solarTimeDawn72MinutesDusk72Minutes",
                 "solarHours":  10.75,
                 "dayHalf":  "day"
@@ -389,9 +333,6 @@
         {
             "localizableTitle":  "dusk3.7°",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  3.7,
                 "rising":  false,
@@ -408,9 +349,6 @@
         {
             "localizableTitle":  "dawn",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  16,
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  16.1,
                 "rising":  true,
