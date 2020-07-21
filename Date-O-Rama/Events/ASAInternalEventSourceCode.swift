@@ -12,6 +12,8 @@ enum ASAInternalEventSourceCode:  String, Codable {
     case none         = ""
     case dailyJewish  = "dailyJewish"
     case allDayJewish = "allDayJewish"
+    case israeli      = "israeli"
+    case lubavitch    = "lubavitch"
     case solar        = "solar"
     case lunar        = "lunar"
     case test         = "test"
@@ -24,6 +26,10 @@ extension ASAInternalEventSourceCode {
         case .dailyJewish:  rawName = "Daily Jewish events"
             
         case .allDayJewish:  rawName = "All-day Jewish events"
+            
+        case .israeli:  rawName = "Israeli events"
+            
+        case .lubavitch:  rawName = "Lubavitch events"
             
         case .solar:  rawName = "Daily solar events"
             

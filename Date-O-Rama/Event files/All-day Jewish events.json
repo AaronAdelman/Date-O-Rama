@@ -207,6 +207,38 @@
                 "month":  2,
                 "day":  1
             }
+        },
+        {
+            "localizableTitle":  "יום שבו עוורו את המלך צדקיהו והמיתו את בניו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  7
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לרחל אימנו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  11
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש כסלו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  30
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש כסלו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "day":  1
+            }
         }
     ]
 }

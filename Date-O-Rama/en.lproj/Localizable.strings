@@ -274,10 +274,11 @@
 "Show secondary dates" = "Show secondary dates";
 "Today" = "Today";
 
-"Daily Jewish events" = "✡ Judaism (daily)";
+"Daily Jewish events"   = "✡ Judaism (daily)";
 "All-day Jewish events" = "✡ Judaism (all-day)";
-
-"Daily solar events" = "☉ Sun";
+"Israeli events"        = "🇮🇱 Israel";
+"Lubavitch events"      = "✡ Lubavitch";
+"Daily solar events"    = "☉ Sun";
 
 "Add external event" = "Add external event";
 

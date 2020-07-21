@@ -1,0 +1,90 @@
+{
+    "eventSourceCode":  "israeli",
+    "localizableTitle":  "Israeli events",
+    "calendarCode":  "HebrewSolar",
+    "calendarColorRed":  0.0,
+    "calendarColorGreen":  0.0,
+    "calendarColorBlue":  1.0,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "localizableTitle":  "יום העליה לבתי ספר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  7
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  12,
+                "weekday":  1
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  12,
+                "weekday":  2
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  12,
+                "weekday": 3
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  12,
+                "weekday":  4
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  12,
+                "weekday":  5
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  11,
+                "weekday":  5
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  10,
+                "weekday":  5
+            }
+        },
+        {
+            "localizableTitle":  "סיגד",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  29
+            }
+        }
+    ]
+}

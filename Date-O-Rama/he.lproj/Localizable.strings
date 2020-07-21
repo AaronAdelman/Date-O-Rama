@@ -274,10 +274,11 @@
 "Show secondary dates" = "הצג תאריכים שניים";
 "Today" = "היום";
 
-"Daily Jewish events" = "✡ יהדות (יומיים)";
+"Daily Jewish events"   = "✡ יהדות (יומיים)";
 "All-day Jewish events" = "✡ יהדות (יום שלם)";
-
-"Daily solar events" = "☉ שמש";
+"Israeli events"        = "🇮🇱 ישראל";
+"Lubavitch events"      = "✡ חב״ד";
+"Daily solar events"    = "☉ שמש";
 
 "Add external event" = "הוסף אירוע חיצוני";
 

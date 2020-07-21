@@ -13,6 +13,8 @@ struct ASAInternalEventSourceChooser: View {
         .solar,
         .dailyJewish,
         .allDayJewish,
+        .israeli,
+        .lubavitch,
         .test
     ]
     

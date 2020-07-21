@@ -1,0 +1,12 @@
+{
+    "eventSourceCode":  "lubavitch",
+    "localizableTitle":  "Lubavitch events",
+    "calendarCode":  "HebrewSolar",
+    "calendarColorRed":  0.0,
+    "calendarColorGreen":  0.0,
+    "calendarColorBlue":  1.0,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+    ]
+}
+
