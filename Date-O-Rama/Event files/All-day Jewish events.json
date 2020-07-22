@@ -438,6 +438,107 @@
                 "days":  [30],
                 "lengthsOfYear":  [383, 384, 385]
             }
+        },
+        {
+            "localizableTitle":  "ראש חודש אדר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [1],
+                "lengthsOfYear":  [353, 354, 355]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אדר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [1],
+                "lengthsOfYear":  [383, 384, 385]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אדר א׳",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  6,
+                "days":  [1],
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של משה רבנו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [7],
+            }
+        },
+        {
+            "localizableTitle":  "יום שבו פרצה המחלוקת בין בית הלל לבית שמאי",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [9],
+            }
+        },
+        {
+            "localizableTitle":  "פורים קטן",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  6,
+                "days":  [14],
+            }
+        },
+        {
+            "localizableTitle":  "תענית אסתר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [13],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "תענית אסתר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [11],
+                "weekdays":  [7]
+            }
+        },
+        {
+            "localizableTitle":  "פורים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [14]
+            }
+        },
+        {
+            "localizableTitle":  "פורים שושן",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [15]
+            }
+        },
+        {
+            "localizableTitle":  "פורים משולש",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [16],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אדר ב׳",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  6,
+                "days":  [30]
+            }
         }
     ]
 }
