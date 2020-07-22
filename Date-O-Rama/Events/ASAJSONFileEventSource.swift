@@ -68,6 +68,13 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
             if !(components.year?.matches(startDateSpecification.year) ?? false) {
                 return false
             }
+            
+            let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
+            let numberOfDaysInYear = rangeOfDaysInYear!.count
+//            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
+            if !numberOfDaysInYear.matches(startDateSpecification.lengthsOfYear) {
+                return false
+            }
         }
         
         let supportsMonth: Bool = calendar.supports(calendarComponent: .month)

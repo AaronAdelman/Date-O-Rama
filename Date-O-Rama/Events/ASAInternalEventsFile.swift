@@ -123,6 +123,7 @@ struct ASADateSpecification:  Codable {
     var month:  Int? // Will be ignored if not relevant
     var days:  Array<Int>?
     var weekdays:  Array<ASAWeekday>?
+    var lengthsOfYear:  Array<Int>?
 
     var type: ASATimeSpecificationType
     

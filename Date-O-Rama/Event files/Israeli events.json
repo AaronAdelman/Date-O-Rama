@@ -40,6 +40,32 @@
                 "month":  2,
                 "days":  [29]
             }
+        },
+        {
+            "localizableTitle":  "יום בן־גוריון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [6],
+                "weekdays":  [1, 2, 3, 4, 5]
+            }
+        },
+        {
+            "localizableTitle":  "יום בן־גוריון (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [7, 8],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום המורה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [23]
+            }
         }
     ]
 }

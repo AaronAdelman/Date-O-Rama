@@ -16,7 +16,7 @@
             }
         },
         {
-            "localizableTitle":  "ראש השנה, יום א׳",
+            "localizableTitle":  "ראש השנה (יום א׳)",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  1,
@@ -24,7 +24,7 @@
             }
         },
         {
-            "localizableTitle":  "ראש השנה, יום ב׳",
+            "localizableTitle":  "ראש השנה (יום ב׳)",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  1,
@@ -245,6 +245,123 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום א׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [25]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ב׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [26]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ג׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [27]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ד׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [28]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ה׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [29]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ו׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [30],
+                "lengthsOfYear":  [354, 355, 384, 385]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ז׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [1],
+                "lengthsOfYear":  [354, 355, 384, 385]
+            }
+        },{
+            "localizableTitle":  "חנוכה (יום ח׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [2],
+                "lengthsOfYear":  [354, 355, 384, 385]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ו׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [1],
+                "lengthsOfYear":  [353, 383]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ז׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [2],
+                "lengthsOfYear":  [353, 383]
+            }
+        },
+        {
+            "localizableTitle":  "חנוכה (יום ח׳)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [3],
+                "lengthsOfYear":  [353, 383]
+            }
+        },
+        {
+            "localizableTitle":  "יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [28]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש טבת",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [30]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש טבת",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
                 "days":  [1]
             }
         }

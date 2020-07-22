@@ -7,6 +7,30 @@
     "calendarColorBlue":  1.0,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
+        {
+            "localizableTitle":  "יום־שנה של רבי דובער שניאורי",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [9]
+            }
+        },
+        {
+            "localizableTitle":  "יום גאולה של רבי דובער שניאור",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "יום גאולה של רבי שניאור זלמן מליאדי",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [19]
+            }
+        }
     ]
 }
 
