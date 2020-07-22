@@ -66,6 +66,41 @@
                 "month":  3,
                 "days":  [23]
             }
+        },
+        {
+            "localizableTitle":  "יום העליה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לשואה ולגבורה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [27],
+                "weekdays":  [2, 3, 4, 5]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לשואה ולגבורה (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [28],
+                "weekdays":  [2]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לשואה ולגבורה (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [26],
+                "weekdays":  [5]
+            }
         }
     ]
 }

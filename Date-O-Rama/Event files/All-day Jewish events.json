@@ -539,6 +539,596 @@
                 "month":  6,
                 "days":  [30]
             }
+        },
+        {
+            "localizableTitle":  "ראש חודש ניסן/ראש השנה למלכים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של נדב ואביהו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של מרים הנביאה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "תענית בכורות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [14],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "תענית בכורות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [12],
+                "weekdays":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (יום טוב ראשון)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [15]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום א׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [16]            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ב׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [17]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ג׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [18]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ד׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [19]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ה׳)",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [20]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (יום טוב אחרון)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [21]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (יום טוב שני)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [16]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום א׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [17]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ב׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [18]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ג׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [19]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (חול המועד, יום ד׳)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [20]
+            }
+        },
+        {
+            "localizableTitle":  "פסח (יום טוב אחרון שני)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [22]
+            }
+        },
+        {
+            "localizableTitle":  "מימונה",
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [22]
+            }
+        },
+        {
+            "localizableTitle":  "מימונה",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [23]
+            }
+        },
+        {
+            "localizableTitle":  "א׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [16]
+            }
+        },
+        {
+            "localizableTitle":  "ב׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [17]
+            }
+        },
+        {
+            "localizableTitle":  "ג׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [18]
+            }
+        },
+        {
+            "localizableTitle":  "ד׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [19]
+            }
+        },
+        {
+            "localizableTitle":  "ה׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [20]
+            }
+        },
+        {
+            "localizableTitle":  "ו׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [21]
+            }
+        },
+        {
+            "localizableTitle":  "ז׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [22]
+            }
+        },
+        {
+            "localizableTitle":  "ח׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [23]
+            }
+        },
+        {
+            "localizableTitle":  "ט׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [24]
+            }
+        },
+        {
+            "localizableTitle":  "י׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [25]
+            }
+        },
+        {
+            "localizableTitle":  "י״א בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [26]
+            }
+        },
+        {
+            "localizableTitle":  "י״ב בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [27]
+            }
+        },
+        {
+            "localizableTitle":  "י״ג בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [28]
+            }
+        },
+        {
+            "localizableTitle":  "י״ד בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [29]
+            }
+        },
+        {
+            "localizableTitle":  "ט״ו בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [30]
+            }
+        },
+        {
+            "localizableTitle":  "ט״ז בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "י״ז בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [2]
+            }
+        },
+        {
+            "localizableTitle":  "י״ח בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [3]
+            }
+        },
+        {
+            "localizableTitle":  "י״ט בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [4]
+            }
+        },
+        {
+            "localizableTitle":  "כ׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "כ״א בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [6]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ב בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [7]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ג בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [8]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ד בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [9]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ה בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ו בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [11]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ז בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [12]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ח בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [13]
+            }
+        },
+        {
+            "localizableTitle":  "כ״ט בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [14]
+            }
+        },
+        {
+            "localizableTitle":  "ל׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [15]
+            }
+        },
+        {
+            "localizableTitle":  "ל״א בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [16]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ב בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [17]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ג בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [18]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ד בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [19]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ה בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [20]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ו בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [21]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ז בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [22]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ח בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [23]
+            }
+        },
+        {
+            "localizableTitle":  "ל״ט בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [24]
+            }
+        },
+        {
+            "localizableTitle":  "מ׳ בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [25]
+            }
+        },
+        {
+            "localizableTitle":  "מ״א בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [26]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ב בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [27]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ג בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [28]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ד בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [29]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ה בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ו בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [2]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ז בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [3]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ח בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [4]
+            }
+        },
+        {
+            "localizableTitle":  "מ״ט בעומר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של יהושע בן נון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [26]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אייר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [30]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אייר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [1]
+            }
         }
     ]
 }

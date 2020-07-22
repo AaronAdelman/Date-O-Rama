@@ -100,15 +100,13 @@ extension ASAInternalEventSpecification {
         }
         
         if self.includeISOCountryCodes != nil {
-            if self.includeISOCountryCodes!.contains(ISOCountryCode!) {
-                return true
-            }
+            let result = self.includeISOCountryCodes!.contains(ISOCountryCode!)
+            return result
         }
         
         if self.excludeISOCountryCodes != nil {
-            if self.excludeISOCountryCodes!.contains(ISOCountryCode!) {
-                return false
-            }
+            let result = !self.excludeISOCountryCodes!.contains(ISOCountryCode!)
+            return result
         }
         
         return true
