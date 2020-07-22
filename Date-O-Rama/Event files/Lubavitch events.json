@@ -30,6 +30,22 @@
                 "month":  3,
                 "days":  [19]
             }
+        },
+        {
+            "localizableTitle":  "ה׳ טבת",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של שניאור זלמן מליאדי",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [24]
+            }
         }
     ]
 }

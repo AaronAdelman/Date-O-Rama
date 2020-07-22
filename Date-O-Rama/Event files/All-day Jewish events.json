@@ -364,6 +364,30 @@
                 "month":  4,
                 "days":  [1]
             }
+        },
+        {
+            "localizableTitle":  "יום שבו נכתבה התורה בתרגום השבעים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [8]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של עזרא הסופר ונחמיה בן חכליה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [9]
+            }
+        },
+        {
+            "localizableTitle":  "צום טבת",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  4,
+                "days":  [10]
+            }
         }
     ]
 }
