@@ -10,41 +10,6 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-//extension ASADateComponents {
-//    func matches(startDateSpecification:  ASADateSpecification, recurrenceRules:  Array<ASARecurrenceRule>?) -> Bool {
-//        let supportsYear: Bool = self.calendar.supports(calendarComponent: .year)
-//        let supportsMonth: Bool = self.calendar.supports(calendarComponent: .month)
-//        let supportsDay: Bool = self.calendar.supports(calendarComponent: .day)
-//
-//        // Perfect matching
-//        if supportsDay {
-//            if self.day == startDateSpecification.day {
-//                if supportsYear && supportsMonth {
-//                    if self.year == startDateSpecification.year && self.month == startDateSpecification.month {
-//                        return true
-//                    }
-//                } else {
-//                    return true
-//                }
-//            }
-//        } else {
-//            debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
-//        }
-//
-//        // Recurring events
-//
-//
-//        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
-//
-//        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
-//
-//        return false
-//    } // func matches(startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> Bool
-//} // extension ASADateComponents
-
-
-// MARK: -
-
 class ASAJSONFileEventSource:  ASAInternalEventSource {
     var eventsFile:  ASAInternalEventsFile?
     
@@ -93,51 +58,33 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         return Color(self.eventsFile!.calendarColor)
     } // static func calendarColor() -> Color
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification
-//        , recurrenceRules:  Array<ASARecurrenceRule>?
-    ) -> Bool {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool {
         let components = calendar.dateComponents([.year, .month, .day, .weekday
 //            , .weekOfYear, .weekOfMonth
         ], from: date, locationData: locationData)
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
-        let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
-        let supportsDay: Bool = calendar.supports(calendarComponent: .day)
-        let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
-
-        // Perfect matching
-//    if supportsDay {
-//        if components.day == startDateSpecification.day {
-//            if supportsYear && supportsMonth {
-//                if components.year == startDateSpecification.year && components.month == startDateSpecification.month {
-//                    return true
-//                }
-//            } else {
-//                return true
-//            }
-//        }
-//    } else {
-//        debugPrint(#file, #function, "Somehow this calendar doesn’t have days!")
-//    }
-        
         if supportsYear {
             if !(components.year?.matches(startDateSpecification.year) ?? false) {
                 return false
             }
         }
         
+        let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
         if supportsMonth {
             if !(components.month?.matches(startDateSpecification.month) ?? false) {
                 return false
             }
         }
         
+        let supportsDay: Bool = calendar.supports(calendarComponent: .day)
         if supportsDay {
             if !(components.day?.matches(startDateSpecification.days) ?? false) {
                 return false
             }
         }
         
+        let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
         if supportsWeekday {
             if !(components.weekday?.matches(startDateSpecification.weekdays) ?? false) {
                 return false
@@ -145,74 +92,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
 
         return true
-                
-//        // Recurring events
-//        let hasRecurrenceRules = recurrenceRules != nil && recurrenceRules?.count ?? 0 >= 1
-//
-//        if !hasRecurrenceRules {
-//            return false
-//        }
-//
-//        if supportsYear && supportsMonth {
-//            if startDateSpecification.year > components.year! {
-//                return false
-//            }
-//
-//            if startDateSpecification.year == components.year! {
-//                if startDateSpecification.month > components.month! {
-//                    return false
-//                }
-//
-//                if startDateSpecification.month == components.month! {
-//                    if startDateSpecification.day > components.day! {
-//                        return false
-//                    }
-//                }
-//
-//            }
-//        } else {
-//            if startDateSpecification.day > components.day! {
-//                return false
-//            }
-//        }
-//
-//
-//        let recurrenceRule = hasRecurrenceRules ? recurrenceRules![0] : nil
-//
-//        switch recurrenceRule?.frequency {
-//        case .daily:
-//            if recurrenceRule?.interval == 1 {  // TODO:  Support other intervals
-//                return true
-//            } else {
-//                return false
-//            }
-//
-//        case .weekly:
-//            if recurrenceRule?.interval == 1 { // TODO:  Support other
-//                if recurrenceRule?.daysOfTheWeek != nil {  // TODO:  Is this neccessary?
-//                    for dayOfTheWeek in recurrenceRule!.daysOfTheWeek! {
-//                        if dayOfTheWeek.weekNumber == 0 { // TODO:  Support specific weeks of the year
-//                            if dayOfTheWeek.dayOfTheWeek.rawValue == components.weekday! {
-//                                debugPrint(#file, #function, date, locationData, components, recurrenceRule as Any)
-//
-//                                return true
-//                            }
-//                        }
-//                    }
-//                    return false
-//
-//                }
-//
-//            } else {
-//                return false
-//            }
-//
-//        default:
-//            return false
-//        }
-//
-//        return false
-    } //
+    } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool
     
     func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?) -> Array<ASAEvent> {
         let location = locationData.location!
@@ -220,13 +100,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
-        
-//        let calendar = ASACalendarFactory.calendar(code: calendarCode)
-//        let components = calendar?.dateComponents([.year, .month,.day, .weekday, .weekOfYear, .weekOfMonth], from: date, locationData: locationData)
-//        if components == nil {
-//            return []
-//        }
-        
+                
         let previousDate = date.oneDayBefore
         let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
@@ -256,9 +130,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile!.eventSpecifications {
-            if eventSpecification.match(ISOCountryCode: ISOCountryCode) && self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification
-//                , recurrenceRules: eventSpecification.recurrenceRules
-                ) {
+            if eventSpecification.match(ISOCountryCode: ISOCountryCode) && self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification) {
                 let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
                 let color = self.calendarColor()
                 let startDate = eventSpecification.isAllDay ? calendar.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
