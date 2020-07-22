@@ -388,6 +388,56 @@
                 "month":  4,
                 "days":  [10]
             }
+        },
+        {
+            "localizableTitle":  "ראש חודש שבט",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של הזקנים שהיו בימי יהושע בן נון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "ראש השנה לאילנות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [15]
+            }
+        },
+        {
+            "localizableTitle":  "יום שבו המלחמה בין שבטי ישראל לשבט בנימין בעקבות פרשיית פילגש בגבעה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [23]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אדר",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [30],
+                "lengthsOfYear":  [353, 354, 355]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אדר א׳",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [30],
+                "lengthsOfYear":  [383, 384, 385]
+            }
         }
     ]
 }

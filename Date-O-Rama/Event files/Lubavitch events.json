@@ -46,6 +46,22 @@
                 "month":  4,
                 "days":  [24]
             }
+        },
+        {
+            "localizableTitle":  "יום־שנה של רבי יוסף יצחק שניאורסאהן",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של חיה מושקא שניאורסון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  5,
+                "days":  [22]
+            }
         }
     ]
 }
