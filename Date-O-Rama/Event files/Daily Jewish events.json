@@ -76,32 +76,17 @@
         {
             "localizableTitle":  "candlelighting",
             "startDateSpecification":  {
-                "weekday":  6,
+                "weekdays":  [6],
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
                 "rising":  false,
                 "offset":  -1080.0
-            },
-            "recurrenceRules":  [
-                {
-                    "frequency":  "weekly",
-                    "interval":  1,
-                    "daysOfTheWeek":  [
-                        {
-                            "dayOfTheWeek":  6,
-                            "weekNumber":  0
-                        }
-                    ]
-                }
-            ]
+            }
         },
         
         {
             "localizableTitle":  "midnight",
             "startDateSpecification":  {
-                "year":  4760,
-                "month":  4,
-                "day":  18,
                 "type":  "solarTimeSunriseSunset",
                 "solarHours":  6.0,
                 "dayHalf":  "night"

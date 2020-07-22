@@ -12,7 +12,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "day":  7
+                "days":  [7]
             }
         },
         {
@@ -20,44 +20,8 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "day":  12,
-                "weekday":  1
-            }
-        },
-        {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  2,
-                "day":  12,
-                "weekday":  2
-            }
-        },
-        {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  2,
-                "day":  12,
-                "weekday": 3
-            }
-        },
-        {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  2,
-                "day":  12,
-                "weekday":  4
-            }
-        },
-        {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  2,
-                "day":  12,
-                "weekday":  5
+                "days":  [12],
+                "weekdays":  [1, 2, 3, 4, 5]
             }
         },
         {
@@ -65,17 +29,8 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "day":  11,
-                "weekday":  5
-            }
-        },
-        {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין (מוקדם)",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  2,
-                "day":  10,
-                "weekday":  5
+                "days":  [10, 11],
+                "weekdays":  [5]
             }
         },
         {
@@ -83,7 +38,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "day":  29
+                "days":  [29]
             }
         }
     ]

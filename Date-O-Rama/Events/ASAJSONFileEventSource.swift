@@ -57,7 +57,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
             let eventsFile = try newJSONDecoder.decode(ASAInternalEventsFile.self, from: jsonData)
             self.eventsFile = eventsFile
         } catch {
-            debugPrint(#file, #function, error)
+            debugPrint(#file, #function, fileName, error)
         }
     }
     
@@ -67,7 +67,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
     }
     
-    func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {        
+    func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {
 //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
         var now = startDate.noon(timeZone: locationData.timeZone!).oneDayBefore
@@ -133,13 +133,13 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
         
         if supportsDay {
-            if !(components.day?.matches(startDateSpecification.day) ?? false) {
+            if !(components.day?.matches(startDateSpecification.days) ?? false) {
                 return false
             }
         }
         
         if supportsWeekday {
-            if !(components.weekday?.matches(startDateSpecification.weekday.map { $0.rawValue }) ?? false) {
+            if !(components.weekday?.matches(startDateSpecification.weekdays) ?? false) {
                 return false
             }
         }
@@ -343,5 +343,21 @@ extension Int {
         
         return self == value!
     } // func matches(_ value:  Int?) -> Bool
+    
+    func matches(_ values:  Array<Int>?) -> Bool {
+        if values == nil {
+            return true
+        }
+        
+        return values!.contains(self)
+    } // func matches(_ values:  Array<Int>?) -> Bool
+    
+    func matches(_ values:  Array<ASAWeekday>?) -> Bool {
+        if values == nil {
+            return true
+        }
+        
+        return values!.contains(ASAWeekday(rawValue: self)!)
+    } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
 } // extension Int
 

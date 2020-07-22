@@ -125,8 +125,8 @@ extension ASAInternalEventSpecification {
 struct ASADateSpecification:  Codable {
     var year:  Int?  // Will be ignored if not relevant
     var month:  Int? // Will be ignored if not relevant
-    var day:  Int?
-    var weekday:  ASAWeekday?
+    var days:  Array<Int>?
+    var weekdays:  Array<ASAWeekday>?
 
     var type: ASATimeSpecificationType
     
