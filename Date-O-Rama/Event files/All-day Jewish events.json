@@ -1226,6 +1226,178 @@
                 "month":  11,
                 "days":  [1]
             }
+        },
+        {
+            "localizableTitle":  "צום תמוז",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [17],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "צום תמוז",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [18],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ג׳ שבועות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "ג׳ שבועות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+                "weekdays":  [7]
+            }
+        },
+        {
+            "localizableTitle":  "ג׳ שבועות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "ג׳ שבועות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                "weekdays":  [7]
+            }
+        },
+        {
+            "localizableTitle":  "יום ז׳בוטינסקי",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [29],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "יום ז׳בוטינסקי (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אב",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של אהרן הכהן",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ט׳ ימים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                "weekdays":  [2, 3, 4, 5, 6, 7]
+            }
+        },
+        {
+            "localizableTitle":  "ט׳ ימים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "צום אב",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [9],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "צום אב",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [10],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום האהבה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [15]
+            }
+        },
+        {
+            "localizableTitle":  "יום שבו כבה הנר המערבי בימי המלך אחז",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [18]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אלול",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [30]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש אלול/ראש השנה לבהמות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  13,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של עשרת המרגלים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  13,
+                "days":  [17]
+            }
+        },
+        {
+            "localizableTitle":  "ערב ראש השנה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  13,
+                "days":  [29]
+            }
         }
     ]
 }

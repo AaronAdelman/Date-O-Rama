@@ -137,18 +137,17 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile!.eventSpecifications {
-            let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
             let matchesStartDateSpecification: Bool = self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification)
-            
-//            debugPrint(#file, #function, ISOCountryCode ?? "No country code", eventSpecification.includeISOCountryCodes, eventSpecification.excludeISOCountryCodes, matchesCountryCode, eventSpecification.startDateSpecification, matchesStartDateSpecification)
-            
-            if matchesCountryCode && matchesStartDateSpecification {
-                let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
-                let color = self.calendarColor()
-                let startDate = eventSpecification.isAllDay ? calendar.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
-                let endDate = eventSpecification.isAllDay ? (calendar.startOfNextDay(date: date, location: location, timeZone: timeZone) - 1) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength))
-                let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName, calendarCode: calendar.calendarCode)
-                result.append(newEvent)
+            if matchesStartDateSpecification {
+                let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
+                if matchesCountryCode {
+                    let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
+                    let color = self.calendarColor()
+                    let startDate = eventSpecification.isAllDay ? calendar.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
+                    let endDate = eventSpecification.isAllDay ? (calendar.startOfNextDay(date: date, location: location, timeZone: timeZone) - 1) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength))
+                    let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName, calendarCode: calendar.calendarCode)
+                    result.append(newEvent)
+                }
             }
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return result
