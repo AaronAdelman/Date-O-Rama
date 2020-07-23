@@ -139,12 +139,12 @@
             symbol = NIGHT_SYMBOL
         }
         
+        assert(hours >= 0.0)
+        assert(hours < 12.0)
+        
         var result = ""
         switch majorTimeFormat {
         case .decimalTwelveHour:
-            if hours < 0.0 || hours >= 12.0 {
-                debugPrint(#file, #function, hours, symbol, localeIdentifier)
-            }
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
             
         case .JewishCalendricalCalculation:

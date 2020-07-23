@@ -1129,6 +1129,103 @@
                 "month":  9,
                 "days":  [1]
             }
+        },
+        {
+            "localizableTitle":  "יום־שנה של עלי הכהן ושני בניו, יום שבו ארון הברית נשבה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "פסח שני",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [14]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של שמואל הנביא",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [28]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש סיון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "שבועות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [6]
+            }
+        },
+        {
+            "localizableTitle":  "שבועות (יום טוב שני)",
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [7]
+            }
+        },
+        {
+            "localizableTitle":  "תענית תקופת חמלניצקי",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [20]
+            }
+        },
+        {
+            "localizableTitle":  "יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [23]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של רבן שמעון בן גמליאל הזקן, רבי ישמעאל, ורבי חנינא סגן הכהנים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [25]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של רבי חנינא בן תרדיון, יום שספר תורה נשרפה עמו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [27]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש תמוז",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [30]
+            }
+        },
+        {
+            "localizableTitle":  "ראש חודש תמוז",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [1]
+            }
         }
     ]
 }

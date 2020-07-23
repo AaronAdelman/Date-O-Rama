@@ -101,6 +101,105 @@
                 "days":  [26],
                 "weekdays":  [5]
             }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [4],
+                "weekdays":  [2, 3, 4, 7]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [5],
+                "weekdays":  [2]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [2, 3],
+                "weekdays":  [4]
+            }
+        },
+        {
+            "localizableTitle":  "יום העצמאות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [5],
+                "weekdays":  [3, 4, 5, 1]
+            }
+        },
+        {
+            "localizableTitle":  "יום העצמאות (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [6],
+                "weekdays":  [2]
+            }
+        },
+        {
+            "localizableTitle":  "יום העצמאות (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [3, 4],
+                "weekdays":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "יום הרצל",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [10],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "יום הרצל",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [11],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום ירושלים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [28],
+                "weekdays":  [2, 3, 4, 5, 7]
+            }
+        },
+        {
+            "localizableTitle":  "יום ירושלים (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [29],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום ירושלים (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [27],
+                "weekdays":  [5]
+            }
         }
     ]
 }

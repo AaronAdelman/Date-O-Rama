@@ -70,6 +70,14 @@
                 "month":  8,
                 "days":  [11]
             }
+        },
+        {
+            "localizableTitle":  "יום הולדת של רבי שמואל שניאורסון",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [2]
+            }
         }
     ]
 }
