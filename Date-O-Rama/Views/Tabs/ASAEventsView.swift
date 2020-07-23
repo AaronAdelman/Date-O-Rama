@@ -66,6 +66,8 @@ struct ASAEventsView: View {
     var body: some View {
         NavigationView {
             VStack {
+                ASADatePicker(date: $date, primaryRow: self.primaryRow, showingDatePicker: false)
+
                 List {
                     NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
                         VStack(alignment:  .leading) {
@@ -138,7 +140,7 @@ struct ASAEventsView: View {
                     } // ForEach
                 } // List
                 
-                ASADatePicker(date: $date, primaryRow: self.primaryRow)
+//                ASADatePicker(date: $date, primaryRow: self.primaryRow, showingDatePicker: $showingDatePicker)
             } // VStack
                 .navigationBarTitle(Text("EVENTS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
@@ -153,144 +155,83 @@ struct ASAEventsView: View {
 } // struct ASAEventsView
 
 struct ASADatePicker:  View {
-//    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
-    let BOTTOM_BUTTONS_FONT_SIZE = Font.body
-
+    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
+//        let BOTTOM_BUTTONS_FONT_SIZE = Font.body
+    
     @Binding var date:  Date {
         didSet {
-//            self.updateComponentsFromDate()
+            //            self.updateComponentsFromDate()
         } // didSet
     } // var date
     @ObservedObject var primaryRow:  ASARow {
         didSet {
-//            self.updateSectionsFromPrimaryRow()
-//            self.updateComponentsFromDate()
+            //            self.updateSectionsFromPrimaryRow()
+            //            self.updateComponentsFromDate()
         } // didSet
     } // var primaryRow
+    @State var showingDatePicker:  Bool
     
-//    @State var components = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocationData())  {
-//        didSet {
-//            self.updateDateFromComponents()
-//        } // didSet
-//    } // var components
+    #if os(iOS)
+    #if targetEnvironment(macCatalyst)
+    let runningOnIOS = false
+    #else
+    let runningOnIOS = true
+    #endif
+    #else
+    let runningOnIOS = false
+    #endif
     
-//    @State var sections:  Array<ASACalendarComponent> = []
-    
-//    fileprivate func updateComponentsFromDate() {
-//        let calendar = self.primaryRow.calendar
-//        let newComponents = calendar.dateComponents([.year, .month, .day, .weekday], from: self.date, locationData: self.primaryRow.locationData)
-//        if newComponents != self.components {
-//            self.components = newComponents
-//        }
-//        //        debugPrint(#file, #function, self.components)
-//    } // func updateComponentsFromDate()
-//
-//    fileprivate func updateDateFromComponents() {
-//        let calendar = self.primaryRow.calendar
-//        let newDate = calendar.date(dateComponents: self.components)
-//        if newDate != nil {
-//            if newDate! != self.date {
-//                self.date = newDate!
-//            }
-//        }
-//    } // func updateDateFromComponents()
-    
-//    fileprivate func updateSectionsFromPrimaryRow() {
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.locale = Locale(identifier: self.primaryRow.localeIdentifier)
-//        dateFormatter.dateStyle = .long
-//        dateFormatter.timeStyle = .none
-//        let dateFormat = dateFormatter.dateFormat
-//
-//        debugPrint(#file, #function, dateFormat!)
-//
-//        let choppedDateFormat = dateFormat?.chop()
-//
-//        debugPrint(#file, #function, choppedDateFormat as Any)
-//
-//        var newSections:  Array<ASACalendarComponent> = []
-//        for piece in choppedDateFormat! {
-//            let section = piece.relevantSection()?.calendarComponent()
-//            if section != nil {
-//                newSections.append(section!)
-//            }
-//        } // for piece in choppedDateFormat!
-//
-//        debugPrint(#file, #function, newSections)
-//
-//        sections = newSections
-//    } // func updateSectionsFromPrimaryRow()
-    
-//    fileprivate func currentValue(_ section: ASACalendarComponent) -> Int {
-//        let result = self.primaryRow.calendar.component(section, from: self.date, locationData: self.primaryRow.locationData)
-//        debugPrint(#file, #function, section, result)
-//        return result
-//    }
-//
-//    fileprivate func appropriateRange(_ section: ASACalendarComponent) -> (Range<Int>?) {
-//        let containingComponent = self.primaryRow.calendar.containingComponent(of: section)
-//        if containingComponent != nil {
-//            let range = self.primaryRow.calendar.range(of: section, in: containingComponent!, for: self.date)
-//            debugPrint(#file, #function, section, containingComponent as Any, range as Any)
-//            if (range?.max() ?? 10000) - (range?.min() ?? -10000) <= 25 {
-//                return range
-//            }
-//        }
-//
-//        let currentValue = self.currentValue(section)
-//        let result = (currentValue - 10)..<(currentValue + 10)
-//        debugPrint(#file, #function, result)
-//        return result
-//    }
+    let SPECIAL_SPACER_WIDTH = 80.0 as CGFloat
     
     var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                
+        HStack {
+            if runningOnIOS {
+                Toggle(isOn: self.$showingDatePicker) {
+                    Text("")
+                }
+                .frame(width:  SPECIAL_SPACER_WIDTH)
+            }
+            
+            Spacer()
+            
+            if !self.showingDatePicker || !runningOnIOS {
                 Button(action: {
                     self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayBefore
                 }) {
                     Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
-                
-//                Spacer().frame(width:  50)
-                
-                Button(action: {
-                    self.date = Date().noon(timeZone:  self.primaryRow.effectiveTimeZone)
-                }) {
-                    Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
-                }.foregroundColor(.accentColor)
-                
-//                Spacer().frame(width:  50)
-                
+            }
+            
+            
+            Button(action: {
+                self.date = Date().noon(timeZone:  self.primaryRow.effectiveTimeZone)
+            }) {
+                Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
+            }.foregroundColor(.accentColor)
+            
+            if !self.showingDatePicker || !runningOnIOS {
                 Button(action: {
                     self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayAfter
                 }) {
                     Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
-                
-//                Spacer()
-                //            }.border(Color.gray)
-                //
-                //            HStack {
-                //                ForEach(sections, id: \.self) {
-                //                    section
-                //                    in
-                //
-                ////                    Text(verbatim: "\(self.components.value(for: section) ?? -1)")
-                //                    ASADatePickerSectionCell(components: self.$components, section: section, range:  self.appropriateRange(section)!).frame(width:  100.0)
-                //                } // ForEach(sections, id: \.self)
-                
-                DatePicker(selection:  self.$date, in:  Date.distantPast...Date.distantFuture, displayedComponents: .date) {Text("")}
-                    .datePickerStyle(WheelDatePickerStyle())
             }
-            .border(Color.gray)
+            
+            Spacer()
+                        
+            if self.showingDatePicker || !runningOnIOS {
+                DatePicker(selection:  self.$date, in:  Date.distantPast...Date.distantFuture, displayedComponents: .date) {
+                    Text("")
+                }
+                Spacer()
+            }
+            
+            if !self.showingDatePicker && runningOnIOS {
+                Spacer().frame(width:  SPECIAL_SPACER_WIDTH)
+            }
+                        
         }
-        .onAppear() {
-//            self.updateComponentsFromDate()
-//            self.updateSectionsFromPrimaryRow()
-        }
+        .border(Color.gray)
     } // var body
 } // struct ASADatePicker
 

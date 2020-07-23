@@ -557,7 +557,15 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש ניסן/ראש השנה למלכים",
+            "localizableTitle":  "ראש חודש ניסן",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ראש השנה למלכים",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
@@ -1155,7 +1163,15 @@
             }
         },
         {
-            "localizableTitle":  "יום־שנה של עלי הכהן ושני בניו, יום שבו ארון הברית נשבה",
+            "localizableTitle":  "יום־שנה של עלי הכהן ושני בניו",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "days":  [10]
+            }
+        },
+        {
+            "localizableTitle":  "יום שבו ארון הברית נשבה",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -1236,7 +1252,7 @@
             }
         },
         {
-            "localizableTitle":  "יום־שנה של רבי חנינא בן תרדיון, יום שספר תורה נשרפה עמו",
+            "localizableTitle":  "יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  10,
@@ -1274,6 +1290,42 @@
                 "type":  "allDay",
                 "month":  11,
                 "days":  [18],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "צום אב",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [9],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "צום אב",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [10],
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ט׳ ימים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
+                "weekdays":  [2, 3, 4, 5, 6, 7]
+            }
+        },
+        {
+            "localizableTitle":  "ט׳ ימים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  12,
+                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
                 "weekdays":  [1]
             }
         },
@@ -1348,42 +1400,6 @@
             }
         },
         {
-            "localizableTitle":  "ט׳ ימים",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  12,
-                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                "weekdays":  [2, 3, 4, 5, 6, 7]
-            }
-        },
-        {
-            "localizableTitle":  "ט׳ ימים",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  12,
-                "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-                "weekdays":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "צום אב",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  12,
-                "days":  [9],
-                "weekdays":  [1, 2, 3, 4, 5, 6]
-            }
-        },
-        {
-            "localizableTitle":  "צום אב",
-            "startDateSpecification":  {
-                "type":  "allDay",
-                "month":  12,
-                "days":  [10],
-                "weekdays":  [1]
-            }
-        },
-        {
             "localizableTitle":  "יום האהבה",
             "startDateSpecification":  {
                 "type":  "allDay",
@@ -1408,7 +1424,15 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש אלול/ראש השנה לבהמות",
+            "localizableTitle":  "ראש חודש אלול",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  13,
+                "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ראש השנה לבהמות",
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  13,
