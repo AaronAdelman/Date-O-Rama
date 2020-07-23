@@ -153,8 +153,9 @@ struct ASAEventsView: View {
 } // struct ASAEventsView
 
 struct ASADatePicker:  View {
-    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
-    
+//    let BOTTOM_BUTTONS_FONT_SIZE = Font.title
+    let BOTTOM_BUTTONS_FONT_SIZE = Font.body
+
     @Binding var date:  Date {
         didSet {
 //            self.updateComponentsFromDate()
@@ -220,27 +221,27 @@ struct ASADatePicker:  View {
 //        sections = newSections
 //    } // func updateSectionsFromPrimaryRow()
     
-    fileprivate func currentValue(_ section: ASACalendarComponent) -> Int {
-        let result = self.primaryRow.calendar.component(section, from: self.date, locationData: self.primaryRow.locationData)
-        debugPrint(#file, #function, section, result)
-        return result
-    }
-    
-    fileprivate func appropriateRange(_ section: ASACalendarComponent) -> (Range<Int>?) {
-        let containingComponent = self.primaryRow.calendar.containingComponent(of: section)
-        if containingComponent != nil {
-            let range = self.primaryRow.calendar.range(of: section, in: containingComponent!, for: self.date)
-            debugPrint(#file, #function, section, containingComponent as Any, range as Any)
-            if (range?.max() ?? 10000) - (range?.min() ?? -10000) <= 25 {
-                return range
-            }
-        }
-        
-        let currentValue = self.currentValue(section)
-        let result = (currentValue - 10)..<(currentValue + 10)
-        debugPrint(#file, #function, result)
-        return result
-    }
+//    fileprivate func currentValue(_ section: ASACalendarComponent) -> Int {
+//        let result = self.primaryRow.calendar.component(section, from: self.date, locationData: self.primaryRow.locationData)
+//        debugPrint(#file, #function, section, result)
+//        return result
+//    }
+//
+//    fileprivate func appropriateRange(_ section: ASACalendarComponent) -> (Range<Int>?) {
+//        let containingComponent = self.primaryRow.calendar.containingComponent(of: section)
+//        if containingComponent != nil {
+//            let range = self.primaryRow.calendar.range(of: section, in: containingComponent!, for: self.date)
+//            debugPrint(#file, #function, section, containingComponent as Any, range as Any)
+//            if (range?.max() ?? 10000) - (range?.min() ?? -10000) <= 25 {
+//                return range
+//            }
+//        }
+//
+//        let currentValue = self.currentValue(section)
+//        let result = (currentValue - 10)..<(currentValue + 10)
+//        debugPrint(#file, #function, result)
+//        return result
+//    }
     
     var body: some View {
         VStack {
@@ -253,7 +254,7 @@ struct ASADatePicker:  View {
                     Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
                 
-                Spacer().frame(width:  50)
+//                Spacer().frame(width:  50)
                 
                 Button(action: {
                     self.date = Date().noon(timeZone:  self.primaryRow.effectiveTimeZone)
@@ -261,7 +262,7 @@ struct ASADatePicker:  View {
                     Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }.foregroundColor(.accentColor)
                 
-                Spacer().frame(width:  50)
+//                Spacer().frame(width:  50)
                 
                 Button(action: {
                     self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayAfter
@@ -269,7 +270,7 @@ struct ASADatePicker:  View {
                     Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
                 
-                Spacer()
+//                Spacer()
                 //            }.border(Color.gray)
                 //
                 //            HStack {

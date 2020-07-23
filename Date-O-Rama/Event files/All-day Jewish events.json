@@ -249,6 +249,14 @@
             }
         },
         {
+            "localizableTitle":  "ערב חנוכה",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "days":  [24]
+            }
+        },
+        {
             "localizableTitle":  "חנוכה (יום א׳)",
             "startDateSpecification":  {
                 "type":  "allDay",
@@ -508,6 +516,14 @@
             }
         },
         {
+            "localizableTitle":  "ערב פורים",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  7,
+                "days":  [13]
+            }
+        },
+        {
             "localizableTitle":  "פורים",
             "startDateSpecification":  {
                 "type":  "allDay",
@@ -588,6 +604,14 @@
                 "type":  "allDay",
                 "month":  8,
                 "days":  [15]
+            }
+        },
+        {
+            "localizableTitle":  "ערב פסח",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  8,
+                "days":  [14]
             }
         },
         {
@@ -1160,6 +1184,14 @@
                 "type":  "allDay",
                 "month":  10,
                 "days":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "ערב שבועות",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  10,
+                "days":  [5]
             }
         },
         {
