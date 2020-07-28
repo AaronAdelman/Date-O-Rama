@@ -390,7 +390,7 @@
             "localizableTitle":  "תענית אסתר",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "days":  [11],
-                "weekdays":  [7]
+                "weekdays":  [5]
             }
         },
         {
