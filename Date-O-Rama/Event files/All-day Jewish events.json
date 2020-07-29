@@ -28,7 +28,13 @@
         {
             "localizableTitle":  "צום גדליה",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  1, "days":  [3]
+                "month":  1, "days":  [3], "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "צום גדליה",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "days":  [4], "weekdays":  [1]
             }
         },
         {
