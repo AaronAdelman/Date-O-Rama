@@ -349,7 +349,7 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש אדר",
+            "localizableTitle":  "ראש חודש אדר ב׳",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "days":  [1],
                 "lengthsOfYear":  [383, 384, 385]
