@@ -1033,14 +1033,14 @@
             "localizableTitle":  "ג׳ שבועות",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                "weekdays":  [1, 2, 3, 4, 5, 6]
+                "weekdays":  [1, 2, 3, 4, 5, 6, 7]
             }
         },
         {
             "localizableTitle":  "ג׳ שבועות",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-                "weekdays":  [7]
+                "month":  12, "days":  [10],
+                "weekdays":  [1]
             }
         },
         {
