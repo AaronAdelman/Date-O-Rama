@@ -1310,7 +1310,7 @@
         { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354], "month":  11, "days":  [10]}, "localizableTitle":  "חוקת"},
         { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354], "month":  11, "days":  [17]}, "localizableTitle":  "בלק"},
         { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354], "month":  11, "days":  [24]}, "localizableTitle":  "פינחס", "notes":  "Rosh Chodesh Menachem Av will be next Yom Shishi"},
-        { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354, 385], "month":  12, "days":  [2]}, "localizableTitle":  "מטות־מסעי"},
+        { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354], "month":  12, "days":  [2]}, "localizableTitle":  "מטות־מסעי"},
         { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354, 385, 384], "month":  12, "days":  [9]}, "localizableTitle":  "דברים/חזון"},
         { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354, 385, 384], "month":  12, "days":  [16]}, "localizableTitle":  "ואתחנן/נחמו"},
         { "startDateSpecification":  { "type":  "allDay", "weekdays":  [7], "lengthsOfYear":  [354, 385, 384], "month":  12, "days":  [23]}, "localizableTitle":  "עקב", "notes":  "Rosh Chodesh Elul will be next Yom Shabbat - Yom Rishon"},
