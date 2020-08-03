@@ -329,7 +329,7 @@ struct ASAStartAndEndTimesSubcell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            if event.isAllDay && row.calendar.calendarCode == event.calendarCode {
+            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && row.effectiveTimeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) {
                 Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
                 Text("All day").frame(width:  timeWidth).font(timeFontSize)
             } else {

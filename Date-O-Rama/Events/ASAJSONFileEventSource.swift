@@ -32,6 +32,30 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
     }
     
+    fileprivate func contained(_ event: ASAEvent, _ startDate: Date, _ endDate: Date) -> Bool {
+        if event.startDate >= startDate && event.endDate <= endDate {
+            return true
+        }
+        
+        if event.endDate <= startDate {
+            return false
+        }
+        
+        if event.startDate >= endDate {
+            return false
+        }
+        
+        if event.startDate  <= startDate && startDate <= event.endDate {
+            return true
+        }
+        
+        if event.startDate  <= endDate && endDate <= event.endDate {
+            return true
+        }
+
+        return false
+    }
+    
     func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {
 //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
@@ -43,7 +67,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
             for event in temp {
 //                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
                 
-                if !(event.endDate < startDate || event.startDate >= endDate) {
+                if contained(event, startDate, endDate) {
                     result.append(event)
                 }
             } // for event in tempResult
@@ -144,7 +168,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
                     let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
                     let color = self.calendarColor()
                     let startDate = eventSpecification.isAllDay ? calendar.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
-                    let endDate = eventSpecification.isAllDay ? (calendar.startOfNextDay(date: date, location: location, timeZone: timeZone) - 1) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength))
+                    let endDate = eventSpecification.isAllDay ? (calendar.startOfNextDay(date: date, location: location, timeZone: timeZone)) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength))
                     let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName, calendarCode: calendar.calendarCode)
                     result.append(newEvent)
                 }
