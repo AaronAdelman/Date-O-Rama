@@ -333,9 +333,12 @@ struct ASAStartAndEndTimesSubcell:  View {
                 Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
                 Text("All day").frame(width:  timeWidth).font(timeFontSize)
             } else {
-                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
+                //                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
+                //                if event.endDate != event.startDate {
+                //                    Text(row.dateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
+                Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
                 if event.endDate != event.startDate {
-                    Text(row.dateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
+                    Text(row.shortenedDateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
                 }
             }
         } // VStack

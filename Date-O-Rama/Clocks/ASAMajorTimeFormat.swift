@@ -49,3 +49,17 @@ extension ASAMajorTimeFormat {
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String
 } // extension ASAMajorTimeFormat
+
+extension ASAMajorTimeFormat {
+    var shortened:  ASAMajorTimeFormat {
+        get {
+            switch self {
+            case .long, .full:
+                return .medium
+                
+            default:
+                return self
+            } // switch self
+        } // get
+    } // var shortened
+} // extension ASAMajorTimeFormat

@@ -298,3 +298,9 @@ extension ASARow {
         return self.calendar.supportsLocales
     } // func supportsLocales() -> Bool
 } // extension ASARow
+
+extension ASARow {
+    public func shortenedDateTimeString(now:  Date) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat.shortened, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: self.majorTimeFormat.shortened, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+    } // func shortenedDateTimeString(now:  Date) -> String
+} // extension ASARow

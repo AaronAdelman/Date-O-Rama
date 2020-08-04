@@ -32,30 +32,6 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
     }
     
-    fileprivate func contained(_ event: ASAEvent, _ startDate: Date, _ endDate: Date) -> Bool {
-        if event.startDate >= startDate && event.endDate <= endDate {
-            return true
-        }
-        
-        if event.endDate <= startDate {
-            return false
-        }
-        
-        if event.startDate >= endDate {
-            return false
-        }
-        
-        if event.startDate  <= startDate && startDate <= event.endDate {
-            return true
-        }
-        
-        if event.startDate  <= endDate && endDate <= event.endDate {
-            return true
-        }
-
-        return false
-    }
-    
     func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {
 //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
@@ -67,8 +43,8 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
             for event in temp {
 //                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
                 
-                if contained(event, startDate, endDate) {
-                    result.append(event)
+                if event.relevant(startDate:  startDate, endDate:  endDate) {
+                        result.append(event)
                 }
             } // for event in tempResult
             oldNow = now

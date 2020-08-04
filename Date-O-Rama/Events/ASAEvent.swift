@@ -23,6 +23,9 @@ protocol ASAEventCompatible {
     var isEKEvent:  Bool { get }
 } // protocol ASAEventCompatible
 
+
+// MARK: -
+
 struct ASAEvent:  ASAEventCompatible {
     var eventIdentifier: String! = "\(UUID())"
     var title: String!
@@ -36,6 +39,36 @@ struct ASAEvent:  ASAEventCompatible {
     var isEKEvent: Bool = false
     var calendarCode: ASACalendarCode
 } // struct ASAEvent
+
+
+extension ASAEvent {
+    func relevant(startDate: Date, endDate: Date) -> Bool {
+        if self.endDate <= startDate {
+            return false
+        }
+        
+        if self.startDate >= endDate {
+            return false
+        }
+        
+        if self.startDate >= startDate && self.endDate <= endDate {
+            return true
+        }
+        
+        if self.startDate  <= startDate && startDate <= self.endDate {
+            return true
+        }
+        
+        if self.startDate  <= endDate && endDate <= self.endDate {
+            return true
+        }
+
+        return false
+    } // func relevant(startDate: Date, endDate: Date) -> Bool
+} // extension ASAEvent
+
+
+// MARK: -
 
 extension EKEvent:  ASAEventCompatible {
     var isEKEvent: Bool {
