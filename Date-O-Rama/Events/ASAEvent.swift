@@ -51,19 +51,7 @@ extension ASAEvent {
             return false
         }
         
-        if self.startDate >= startDate && self.endDate <= endDate {
-            return true
-        }
-        
-        if self.startDate  <= startDate && startDate <= self.endDate {
-            return true
-        }
-        
-        if self.startDate  <= endDate && endDate <= self.endDate {
-            return true
-        }
-
-        return false
+        return true
     } // func relevant(startDate: Date, endDate: Date) -> Bool
 } // extension ASAEvent
 

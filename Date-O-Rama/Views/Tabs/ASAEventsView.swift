@@ -196,7 +196,7 @@ struct ASADatePicker:  View {
             
             if !self.showingDatePicker || !runningOnIOS {
                 Button(action: {
-                    self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayBefore
+                    self.date = self.date.oneDayBefore
                 }) {
                     Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
@@ -204,14 +204,14 @@ struct ASADatePicker:  View {
             
             
             Button(action: {
-                self.date = Date().noon(timeZone:  self.primaryRow.effectiveTimeZone)
+                self.date = Date()
             }) {
                 Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
             }.foregroundColor(.accentColor)
             
             if !self.showingDatePicker || !runningOnIOS {
                 Button(action: {
-                    self.date = self.date.noon(timeZone:  self.primaryRow.effectiveTimeZone).oneDayAfter
+                    self.date = self.date.oneDayAfter
                 }) {
                     Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
                 }
