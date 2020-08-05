@@ -104,19 +104,20 @@
             hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  dayHalfEnd, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = "☼"
         } else if now < dayHalfStart {
-            let previousDate = now.oneDayBefore
+//            let previousDate = now.oneDayBefore
             var previousDayHalfEnd:  Date
-            switch self.calendarCode {
-            case .HebrewMA:
-                let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-                let previousOtherDusk:  Date = previousEvents[.dusk72Minutes]!! // צאת הכוכבים
-                previousDayHalfEnd = previousOtherDusk;
-                
-            default:
-                let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-                let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
-                previousDayHalfEnd = previousSunset
-            } // switch self.calendarCode
+//            switch self.calendarCode {
+//            case .HebrewMA:
+//                let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+//                let previousOtherDusk:  Date = previousEvents[.dusk72Minutes]!! // צאת הכוכבים
+//                previousDayHalfEnd = previousOtherDusk;
+//
+//            default:
+//                let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+//                let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
+//                previousDayHalfEnd = previousSunset
+//            } // switch self.calendarCode
+            previousDayHalfEnd = self.startOfDay(for: now, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
         } else {
@@ -139,8 +140,8 @@
             symbol = NIGHT_SYMBOL
         }
         
-//        assert(hours >= 0.0)
-//        assert(hours < 12.0)
+        assert(hours >= 0.0)
+        assert(hours < 12.0)
         
         var result = ""
         switch majorTimeFormat {
@@ -165,6 +166,7 @@
         numberFormatter.minimumFractionDigits = 4
         numberFormatter.locale = Locale(identifier:  localeIdentifier)
         result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
+//        assert(result != "12.0000 ☼")
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
     
