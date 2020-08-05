@@ -43,6 +43,10 @@ struct ASAEvent:  ASAEventCompatible {
 
 extension ASAEvent {
     func relevant(startDate: Date, endDate: Date) -> Bool {
+        if self.startDate == self.endDate && self.startDate == startDate {
+            return true
+        }
+        
         if self.endDate <= startDate {
             return false
         }
