@@ -69,6 +69,30 @@
         return "HH:mm:ss"
     } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     
+    var dayStart:  ASASolarEvent {
+        get {
+            switch self.calendarCode {
+            case .HebrewMA:
+                return .dawn72Minutes
+                
+            default:
+                return .sunrise
+            } // switch self.calendarCode
+        } // get
+    } // var dayStart
+    
+    var dayEnd:  ASASolarEvent {
+        get {
+            switch self.calendarCode {
+            case .HebrewMA:
+                return .dusk72Minutes
+                
+            default:
+                return .sunset
+            } // switch self.calendarCode
+        } // get
+    } //
+    
     func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
         let latitude  = location!.coordinate.latitude
         let longitude = location!.coordinate.longitude
@@ -76,44 +100,54 @@
         var dayHalfStart:  Date
         var dayHalfEnd:  Date
         
-        switch self.calendarCode {
-        case .HebrewMA:
-            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes, .dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-            
-            let rawDayStart: Date?? = events[.dawn72Minutes]
-            let rawDayEnd: Date?? = events[.dusk72Minutes]
+//        switch self.calendarCode {
+//        case .HebrewMA:
+//            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes, .dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+//
+//            let rawDayStart: Date?? = events[.dawn72Minutes]
+//            let rawDayEnd: Date?? = events[.dusk72Minutes]
+//
+//            if rawDayStart == nil || rawDayEnd == nil {
+//                return "???"
+//            }
+//            if rawDayStart! == nil || rawDayEnd! == nil {
+//                return "???"
+//            }
+//
+//            dayHalfStart = rawDayStart!!
+//            dayHalfEnd = rawDayEnd!!
+//
+//        default:
+//            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+//
+//            let rawDayStart: Date?? = events[.sunrise]
+//            let rawDayEnd: Date?? = events[.sunset]
+//
+//            if rawDayStart == nil || rawDayEnd == nil {
+//                return "???"
+//            }
+//            if rawDayStart! == nil || rawDayEnd! == nil {
+//                return "???"
+//            }
+//
+//            dayHalfStart = rawDayStart!!
+//            dayHalfEnd = rawDayEnd!!
+//        } // switch self.calendarCode
+        
+        let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart, self.dayEnd], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+        
+        let rawDayStart: Date?? = events[self.dayStart]
+        let rawDayEnd: Date?? = events[self.dayEnd]
 
-            if rawDayStart == nil || rawDayEnd == nil {
-                return "???"
-            }
-            if rawDayStart! == nil || rawDayEnd! == nil {
-                return "???"
-            }
+        if rawDayStart == nil || rawDayEnd == nil {
+            return "???"
+        }
+        if rawDayStart! == nil || rawDayEnd! == nil {
+            return "???"
+        }
 
-            let otherDawn = rawDayStart!! // עלות השחר
-            let otherDusk = rawDayEnd!! // צאת הכוכבים
-            dayHalfStart = otherDawn;
-            dayHalfEnd = otherDusk;
-            
-        default:
-            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-            
-            let rawDayStart: Date?? = events[.sunrise]
-            let rawDayEnd: Date?? = events[.sunset]
-
-            if rawDayStart == nil || rawDayEnd == nil {
-                return "???"
-            }
-            if rawDayStart! == nil || rawDayEnd! == nil {
-                return "???"
-            }
-
-            let sunrise:  Date = rawDayStart!! // נץ
-            let sunset:  Date = rawDayEnd!! // שקיעה
-            
-            dayHalfStart = sunrise
-            dayHalfEnd = sunset
-        } // switch self.calendarCode
+        dayHalfStart = rawDayStart!!
+        dayHalfEnd = rawDayEnd!!
         
         var hours:  Double
         var symbol:  String
@@ -144,17 +178,19 @@
             // now >= dayHalfEnd
             let nextDate = now.oneDayAfter
             var nextDayHalfStart:  Date
-            switch self.calendarCode {
-            case .HebrewMA:
-                let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-                let nextOtherDawn:  Date = nextEvents[.dawn72Minutes]!! // עלות השחר
-                nextDayHalfStart = nextOtherDawn;
-                
-            default:
-                let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-                let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
-                nextDayHalfStart = nextSunrise
-            } // switch self.calendarCode
+//            switch self.calendarCode {
+//            case .HebrewMA:
+//                let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+//                let nextOtherDawn:  Date = nextEvents[.dawn72Minutes]!! // עלות השחר
+//                nextDayHalfStart = nextOtherDawn;
+//
+//            default:
+//                let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+//                let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
+//                nextDayHalfStart = nextSunrise
+//            } // switch self.calendarCode
+            let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+            nextDayHalfStart = nextEvents[self.dayStart]!!
             
             hours = now.fractionalHours(startDate:  dayHalfEnd, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
