@@ -11,38 +11,6 @@
  import UIKit
  import SwiftUI
  
- // MARK: - Solar event keys
- 
- let MIDNIGHT_KEY          = "midnight"
- let SUNRISE_KEY           = "sunrise"
- let NOON_KEY              = "noon"
- let SUNSET_KEY            = "sunset"
- let CIVIL_DAWN_KEY        = "civilDawn"
- let CIVIL_DUSK_KEY        = "civilDusk"
- let NAUTICAL_DAWN_KEY     = "nauticalDawn"
- let NAUTICAL_DUSK_KEY     = "nauticalDusk"
- let ASTRONOMICAL_DAWN_KEY = "astronomicalDawn"
- let ASTRONOMICAL_DUSK_KEY = "astronomicalDusk"
- 
- let DAWN_KEY              = "dawn"
- let RECOGNITION_KEY       = "recognition"
- let HOUR_03_KEY           = "hour03"
- let HOUR_04_KEY           = "hour04"
- let HOUR_06½_KEY          = "hour06½"
- let HOUR_09½_KEY          = "hour09½"
- let HOUR_10¾_KEY          = "hour10¾"
- let CANDLELIGHTING_KEY    = "candlelighting"
- let DUSK_KEY              = "dusk"
- 
- let OTHER_DAWN_KEY        = "otherDawn"
- let OTHER_HOUR_03_KEY     = "otherHour03"
- let OTHER_HOUR_04_KEY     = "otherHour04"
- let OTHER_HOUR_06½_KEY    = "otherHour06½"
- let OTHER_HOUR_09½_KEY    = "otherHour09½"
- let OTHER_HOUR_10¾_KEY    = "otherHour10¾"
- let OTHER_DUSK_KEY        = "otherDusk"
- 
- 
  // MARK: -
  
  class ASASunsetTransitionCalendar:  ASACalendar {
