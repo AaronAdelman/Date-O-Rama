@@ -83,6 +83,10 @@ extension Date {
             // Guarding against there being no Sunset
             return self.sixPM(timeZone: timeZone)
         }
+        if sunset! == nil {
+            // Guarding against there being no Sunset
+            return self.sixPM(timeZone: timeZone)
+        }
         if self >= sunset!! {
             return self.noon(timeZone: timeZone).oneDayAfter
         } else {

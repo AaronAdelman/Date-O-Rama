@@ -80,16 +80,36 @@
         case .HebrewMA:
             let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes, .dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             
-            let otherDawn = events[.dawn72Minutes]!! // עלות השחר
-            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
+            let rawDayStart: Date?? = events[.dawn72Minutes]
+            let rawDayEnd: Date?? = events[.dusk72Minutes]
+
+            if rawDayStart == nil || rawDayEnd == nil {
+                return "???"
+            }
+            if rawDayStart! == nil || rawDayEnd! == nil {
+                return "???"
+            }
+
+            let otherDawn = rawDayStart!! // עלות השחר
+            let otherDusk = rawDayEnd!! // צאת הכוכבים
             dayHalfStart = otherDawn;
             dayHalfEnd = otherDusk;
             
         default:
             let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             
-            let sunrise:  Date = events[.sunrise]!! // נץ
-            let sunset:  Date = events[.sunset]!! // שקיעה
+            let rawDayStart: Date?? = events[.sunrise]
+            let rawDayEnd: Date?? = events[.sunset]
+
+            if rawDayStart == nil || rawDayEnd == nil {
+                return "???"
+            }
+            if rawDayStart! == nil || rawDayEnd! == nil {
+                return "???"
+            }
+
+            let sunrise:  Date = rawDayStart!! // נץ
+            let sunset:  Date = rawDayEnd!! // שקיעה
             
             dayHalfStart = sunrise
             dayHalfEnd = sunset
