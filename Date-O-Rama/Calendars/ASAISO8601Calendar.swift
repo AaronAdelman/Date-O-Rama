@@ -233,19 +233,19 @@ class ASAISO8601Calendar:  ASACalendar {
         return self.ApplesCalendar.range(of: ApplesSmaller!, in: ApplesLarger!, for: date)
     } // func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>?
     
-    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? {
-        // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
-        switch component {
-        case .month:
-            return .year
-            
-        case .day:
-            return .month
-            
-        default:
-            return nil
-        } // switch component
-    } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
+//    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? {
+//        // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
+//        switch component {
+//        case .month:
+//            return .year
+//            
+//        case .day:
+//            return .month
+//            
+//        default:
+//            return nil
+//        } // switch component
+//    } // func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent?
     
     
     // MARK: -
