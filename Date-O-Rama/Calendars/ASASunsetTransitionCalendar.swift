@@ -68,52 +68,18 @@
         var dayHalfStart:  Date
         var dayHalfEnd:  Date
         
-//        switch self.calendarCode {
-//        case .HebrewMA:
-//            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes, .dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//
-//            let rawDayStart: Date?? = events[.dawn72Minutes]
-//            let rawDayEnd: Date?? = events[.dusk72Minutes]
-//
-//            if rawDayStart == nil || rawDayEnd == nil {
-//                return "???"
-//            }
-//            if rawDayStart! == nil || rawDayEnd! == nil {
-//                return "???"
-//            }
-//
-//            dayHalfStart = rawDayStart!!
-//            dayHalfEnd = rawDayEnd!!
-//
-//        default:
-//            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise, .sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//
-//            let rawDayStart: Date?? = events[.sunrise]
-//            let rawDayEnd: Date?? = events[.sunset]
-//
-//            if rawDayStart == nil || rawDayEnd == nil {
-//                return "???"
-//            }
-//            if rawDayStart! == nil || rawDayEnd! == nil {
-//                return "???"
-//            }
-//
-//            dayHalfStart = rawDayStart!!
-//            dayHalfEnd = rawDayEnd!!
-//        } // switch self.calendarCode
-        
         let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart, self.dayEnd], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
         
         let rawDayStart: Date?? = events[self.dayStart]
         let rawDayEnd: Date?? = events[self.dayEnd]
-
+        
         if rawDayStart == nil || rawDayEnd == nil {
             return "???"
         }
         if rawDayStart! == nil || rawDayEnd! == nil {
             return "???"
         }
-
+        
         dayHalfStart = rawDayStart!!
         dayHalfEnd = rawDayEnd!!
         
@@ -126,37 +92,13 @@
             hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  dayHalfEnd, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = "☼"
         } else if now < dayHalfStart {
-//            let previousDate = now.oneDayBefore
             var previousDayHalfEnd:  Date
-//            switch self.calendarCode {
-//            case .HebrewMA:
-//                let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.dusk72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//                let previousOtherDusk:  Date = previousEvents[.dusk72Minutes]!! // צאת הכוכבים
-//                previousDayHalfEnd = previousOtherDusk;
-//
-//            default:
-//                let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//                let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
-//                previousDayHalfEnd = previousSunset
-//            } // switch self.calendarCode
             previousDayHalfEnd = self.startOfDay(for: now, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
         } else {
-            // now >= dayHalfEnd
             let nextDate = now.oneDayAfter
             var nextDayHalfStart:  Date
-//            switch self.calendarCode {
-//            case .HebrewMA:
-//                let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.dawn72Minutes], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//                let nextOtherDawn:  Date = nextEvents[.dawn72Minutes]!! // עלות השחר
-//                nextDayHalfStart = nextOtherDawn;
-//
-//            default:
-//                let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunrise], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//                let nextSunrise:  Date = nextEvents[.sunrise]!! //  נץ
-//                nextDayHalfStart = nextSunrise
-//            } // switch self.calendarCode
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             nextDayHalfStart = nextEvents[self.dayStart]!!
             
@@ -190,7 +132,7 @@
         numberFormatter.minimumFractionDigits = 4
         numberFormatter.locale = Locale(identifier:  localeIdentifier)
         result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
-//        assert(result != "12.0000 ☼")
+        //        assert(result != "12.0000 ☼")
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
     
@@ -322,17 +264,6 @@
         
         let yesterday: Date = date.addingTimeInterval(-24 * 60 * 60)
         let fixedYesterday = yesterday.solarCorrected(location: location!, timeZone: timeZone)
-        
-//        if self.calendarCode == .HebrewMA {
-//            let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.dusk72Minutes], timeZone: timeZone )
-//            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
-//            return otherDusk
-//        }
-//
-//        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
-//        let sunset:  Date = events[.sunset]!! // שקיעה
-//        return sunset
-        
         let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
@@ -343,8 +274,7 @@
         }
         let dayEnd:  Date = rawDayEnd!! // שקיעה
         return dayEnd
-
-    }
+    } // func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     
     func startOfNextDay(date: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
         if location == nil {
@@ -352,17 +282,6 @@
         }
         
         let fixedNow = date.solarCorrected(location: location!, timeZone: timeZone)
-        
-//        if self.calendarCode == .HebrewMA {
-//            let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.dusk72Minutes], timeZone: timeZone )
-//            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
-//            return otherDusk
-//        }
-//
-//        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
-//        let sunset:  Date = events[.sunset]!! // שקיעה
-//        return sunset
-        
         let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
@@ -372,7 +291,7 @@
             return date.sixPM(timeZone: timeZone)
         }
         let dayEnd:  Date = rawDayEnd!!
-         return dayEnd
+        return dayEnd
     } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
     
     var supportsLocations: Bool = true
@@ -411,7 +330,7 @@
         return ApplesDateComponents.date
     } // func date(dateComponents: ASADateComponents) -> Date?
     
-
+    
     // MARK:  - Extracting Components
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
         // Returns the value for one component of a date.
@@ -422,10 +341,10 @@
         
         let calendar = self.ApplesCalendar
         let fixedDate = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!)
-
+        
         return calendar.component(ApplesComponent!, from: fixedDate)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
-
+    
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {
@@ -436,10 +355,10 @@
         } // for component in components
         
         let fixedDate = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!)
-
+        
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
         let result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
-//        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
+        //        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
         return result
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     
@@ -448,7 +367,7 @@
     // TODO:  Need to modify these to deal with non-ISO times!
     
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? {
-         // The maximum range limits of the values that a given component can take on.
+        // The maximum range limits of the values that a given component can take on.
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
             return nil
@@ -517,5 +436,5 @@
             return false
         } // switch calendarComponent
     } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
-
+    
  } // class ASASunsetTransitionCalendar
