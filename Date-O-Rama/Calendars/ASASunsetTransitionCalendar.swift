@@ -355,15 +355,27 @@
         let yesterday: Date = date.addingTimeInterval(-24 * 60 * 60)
         let fixedYesterday = yesterday.solarCorrected(location: location!, timeZone: timeZone)
         
-        if self.calendarCode == .HebrewMA {
-            let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.dusk72Minutes], timeZone: timeZone )
-            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
-            return otherDusk
-        }
+//        if self.calendarCode == .HebrewMA {
+//            let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.dusk72Minutes], timeZone: timeZone )
+//            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
+//            return otherDusk
+//        }
+//
+//        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
+//        let sunset:  Date = events[.sunset]!! // שקיעה
+//        return sunset
         
-        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
-        let sunset:  Date = events[.sunset]!! // שקיעה
-        return sunset
+        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+        let rawDayEnd: Date?? = events[self.dayEnd]
+        if rawDayEnd == nil {
+            return date.sixPMYesterday(timeZone: timeZone)
+        }
+        if rawDayEnd! == nil {
+            return date.sixPMYesterday(timeZone: timeZone)
+        }
+        let dayEnd:  Date = rawDayEnd!! // שקיעה
+        return dayEnd
+
     }
     
     func startOfNextDay(date: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
@@ -373,15 +385,26 @@
         
         let fixedNow = date.solarCorrected(location: location!, timeZone: timeZone)
         
-        if self.calendarCode == .HebrewMA {
-            let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.dusk72Minutes], timeZone: timeZone )
-            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
-            return otherDusk
-        }
+//        if self.calendarCode == .HebrewMA {
+//            let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.dusk72Minutes], timeZone: timeZone )
+//            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
+//            return otherDusk
+//        }
+//
+//        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
+//        let sunset:  Date = events[.sunset]!! // שקיעה
+//        return sunset
         
-        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [.sunset], timeZone: timeZone )
-        let sunset:  Date = events[.sunset]!! // שקיעה
-        return sunset
+        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+        let rawDayEnd: Date?? = events[self.dayEnd]
+        if rawDayEnd == nil {
+            return date.sixPM(timeZone: timeZone)
+        }
+        if rawDayEnd! == nil {
+            return date.sixPM(timeZone: timeZone)
+        }
+        let dayEnd:  Date = rawDayEnd!!
+         return dayEnd
     } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
     
     var supportsLocations: Bool = true
