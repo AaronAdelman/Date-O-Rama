@@ -75,22 +75,22 @@ extension Date {
 } // extension Date
 
 extension Date {
-    func solarCorrected(location:  CLLocation, timeZone:  TimeZone) -> Date {
-        let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [.sunset], timeZone: timeZone)
+    func solarCorrected(location:  CLLocation, timeZone:  TimeZone, transitionEvent:  ASASolarEvent) -> (date:  Date, transition:  Date??) {
+        let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [transitionEvent], timeZone: timeZone)
         
-        let sunset = events[.sunset]
+        let sunset = events[transitionEvent]
         if sunset == nil {
             // Guarding against there being no Sunset
-            return self.sixPM(timeZone: timeZone)
+            return (self.sixPM(timeZone: timeZone), sunset)
         }
         if sunset! == nil {
             // Guarding against there being no Sunset
-            return self.sixPM(timeZone: timeZone)
+            return (self.sixPM(timeZone: timeZone), sunset)
         }
         if self >= sunset!! {
-            return self.noon(timeZone: timeZone).oneDayAfter
+            return (self.noon(timeZone: timeZone).oneDayAfter, sunset)
         } else {
-            return self
+            return (self, sunset)
         }
     } // func solarCorrected(location:  CLLocation) -> Date
     
