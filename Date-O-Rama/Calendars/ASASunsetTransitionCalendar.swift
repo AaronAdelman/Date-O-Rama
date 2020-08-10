@@ -61,6 +61,11 @@
         } // get
     } //
     
+    fileprivate func invalidTimeString() -> String {
+        return "???"
+        // TODO:  Make this a bit fancier.
+    }
+    
     func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
         let latitude  = location!.coordinate.latitude
         let longitude = location!.coordinate.longitude
@@ -73,8 +78,7 @@
             existsSolarTime = false
         }
         if !existsSolarTime {
-            return "???"
-            // TODO:  Make this a bit fancier.
+            return invalidTimeString()
         }
         
         var dayHalfStart:  Date
@@ -103,12 +107,10 @@
             let rawDayHalfStart: Date?? = events[self.dayStart]
             
             if rawDayHalfStart == nil {
-                return "???"
-                // TODO:  Make this a bit fancier.
+                return invalidTimeString()
             }
             if rawDayHalfStart! == nil {
-                return "???"
-                // TODO:  Make this a bit fancier.
+                return invalidTimeString()
             }
             
             dayHalfStart = rawDayHalfStart!!
