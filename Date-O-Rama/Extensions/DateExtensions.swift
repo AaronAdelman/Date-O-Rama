@@ -79,19 +79,21 @@ extension Date {
         let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [transitionEvent], timeZone: timeZone)
         
         let sunset = events[transitionEvent]
+        var result: (date:  Date, transition:  Date??)
         if sunset == nil {
             // Guarding against there being no Sunset
-            return (self.sixPM(timeZone: timeZone), sunset)
-        }
-        if sunset! == nil {
+            result = (self.sixPM(timeZone: timeZone), sunset)
+        } else if sunset! == nil {
             // Guarding against there being no Sunset
-            return (self.sixPM(timeZone: timeZone), sunset)
-        }
-        if self >= sunset!! {
-            return (self.noon(timeZone: timeZone).oneDayAfter, sunset)
+            result = (self.sixPM(timeZone: timeZone), sunset)
+        } else if self >= sunset!! {
+            result = (self.noon(timeZone: timeZone).oneDayAfter, sunset)
         } else {
-            return (self, sunset)
+            result = (self, sunset)
         }
+        
+//        debugPrint(#file, #function, self, result)
+        return result
     } // func solarCorrected(location:  CLLocation) -> Date
     
     func noon(timeZone:  TimeZone) -> Date {

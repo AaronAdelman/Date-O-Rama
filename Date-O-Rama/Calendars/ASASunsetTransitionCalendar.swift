@@ -61,9 +61,21 @@
         } // get
     } //
     
-    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
         let latitude  = location!.coordinate.latitude
         let longitude = location!.coordinate.longitude
+        
+        var existsSolarTime = true
+        if transition == nil {
+            existsSolarTime = false
+        }
+        if transition! == nil {
+            existsSolarTime = false
+        }
+        if !existsSolarTime {
+            return "???"
+            // TODO:  Make this a bit fancier.
+        }
         
         var dayHalfStart:  Date
         var dayHalfEnd:  Date
@@ -177,7 +189,7 @@
         
         var timeString:  String = ""
         if majorTimeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone) // TO DO:  EXPAND ON THIS!
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
         }
         
         if localeIdentifier == "" {
@@ -334,6 +346,7 @@
     // MARK:  - Extracting Components
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
         // Returns the value for one component of a date.
+        // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
             return -1
@@ -345,7 +358,8 @@
         return calendar.component(ApplesComponent!, from: fixedDate)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
     
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+        // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {
             let ApplesCalendarComponent = component.calendarComponent()
