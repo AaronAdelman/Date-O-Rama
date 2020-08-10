@@ -39,9 +39,9 @@ import CoreLocation
 //         answer with a degree input for L.
 
 fileprivate let SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON = (50.0 / 60.0)
-fileprivate let CIVIL_DEGREES_BELOW_HORIZON               = 6.0
-fileprivate let NAUTICAL_DEGREES_BELOW_HORIZON           = 12.0
-fileprivate let ASTRONOMICAL_DEGREES_BELOW_HORIZON       = 18.0
+//fileprivate let CIVIL_DEGREES_BELOW_HORIZON               = 6.0
+//fileprivate let NAUTICAL_DEGREES_BELOW_HORIZON           = 12.0
+//fileprivate let ASTRONOMICAL_DEGREES_BELOW_HORIZON       = 18.0
 
 struct ASASolarEvent:  Hashable {
     // This struct encapsulates parameters for Solar events of interest
