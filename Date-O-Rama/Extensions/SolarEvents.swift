@@ -51,20 +51,20 @@ struct ASASolarEvent:  Hashable {
     
     static var sunrise             = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
     static var sunset              = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-    static var civilDawn           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
-    static var civilDusk           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-    static var nauticalDawn        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
-    static var nauticalDusk        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-    static var astronomicalDawn    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
-    static var astronomicalDusk    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-    static var dawn16Point1Degrees = ASASolarEvent(degreesBelowHorizon: 16.1, rising: true, offset: 0) // עלות השחר
-    static var recognition = ASASolarEvent(degreesBelowHorizon: 11.0, rising: true, offset: 0) // משיכיר
-    static var dusk8Point5Degrees  = ASASolarEvent(degreesBelowHorizon: 8.5, rising: false, offset: 0) // צאת הכוכבים
+//    static var civilDawn           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+//    static var civilDusk           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+//    static var nauticalDawn        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+//    static var nauticalDusk        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+//    static var astronomicalDawn    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
+//    static var astronomicalDusk    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
+//    static var dawn16Point1Degrees = ASASolarEvent(degreesBelowHorizon: 16.1, rising: true, offset: 0) // עלות השחר
+//    static var recognition = ASASolarEvent(degreesBelowHorizon: 11.0, rising: true, offset: 0) // משיכיר
+//    static var dusk8Point5Degrees  = ASASolarEvent(degreesBelowHorizon: 8.5, rising: false, offset: 0) // צאת הכוכבים
     
     static var dawn72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: -72 * 60)
     static var dusk72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 72 * 60)
     
-    static var candleLighting       = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: -18 * 60)
+//    static var candleLighting       = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: -18 * 60)
 } // struct ASASolarEvent
 
 
