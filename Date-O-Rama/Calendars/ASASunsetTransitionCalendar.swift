@@ -78,44 +78,51 @@
         }
         
         var dayHalfStart:  Date
-        var dayHalfEnd:  Date
-        
-        let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart, self.dayEnd], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-        
-        let rawDayStart: Date?? = events[self.dayStart]
-        let rawDayEnd: Date?? = events[self.dayEnd]
-        
-        if rawDayStart == nil || rawDayEnd == nil {
-            return "???"
-        }
-        if rawDayStart! == nil || rawDayEnd! == nil {
-            return "???"
-        }
-        
-        dayHalfStart = rawDayStart!!
-        dayHalfEnd = rawDayEnd!!
+        //        var dayHalfEnd:  Date
         
         var hours:  Double
         var symbol:  String
-        let NIGHT_SYMBOL = "☽"
+        let NIGHT_SYMBOL    = "☽"
+        let DAY_SYMBOL      = "☼"
         let NUMBER_OF_HOURS = 12.0
         
-        if dayHalfStart <= now && now < dayHalfEnd {
-            hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  dayHalfEnd, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-            symbol = "☼"
-        } else if now < dayHalfStart {
-            var previousDayHalfEnd:  Date
-            previousDayHalfEnd = self.startOfDay(for: now, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-            hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-            symbol = NIGHT_SYMBOL
-        } else {
+        let deoptionalizedTransition: Date = transition!!
+        if now >= deoptionalizedTransition {
+            // Nighttime, transition is at the start of the nighttime
             let nextDate = now.oneDayAfter
             var nextDayHalfStart:  Date
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             nextDayHalfStart = nextEvents[self.dayStart]!!
             
-            hours = now.fractionalHours(startDate:  dayHalfEnd, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
+            hours = now.fractionalHours(startDate:  deoptionalizedTransition, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             symbol = NIGHT_SYMBOL
+        } else {
+            let events = now.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+            
+            let rawDayHalfStart: Date?? = events[self.dayStart]
+            
+            if rawDayHalfStart == nil {
+                return "???"
+                // TODO:  Make this a bit fancier.
+            }
+            if rawDayHalfStart! == nil {
+                return "???"
+                // TODO:  Make this a bit fancier.
+            }
+            
+            dayHalfStart = rawDayHalfStart!!
+            
+            if dayHalfStart <= now && now < deoptionalizedTransition {
+                // Daytime
+                hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
+                symbol = DAY_SYMBOL
+            } else {
+                // Previous nighttime
+                var previousDayHalfEnd:  Date
+                previousDayHalfEnd = self.startOfDay(for: now, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+                hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
+                symbol = NIGHT_SYMBOL
+            }
         }
         
         assert(hours >= 0.0)
