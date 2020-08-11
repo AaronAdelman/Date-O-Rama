@@ -15,13 +15,37 @@ struct ASALocaleChooserView: View {
     @ObservedObject var row:  ASARow
 //    var deviceLocation:  CLLocation?
     
+    let ALL_LOCALES   = 0
+    let APPLE_LOCALES = 1
+
+    @State var selection = 0 // All locales
+    
+    func locales(option:  Int) -> Array<ASALocaleRecord> {
+        switch selection {
+            case ALL_LOCALES:
+                return self.localeData.allRecords
+            
+            case APPLE_LOCALES:
+                return self.localeData.standardLocaleRecords
+        
+            default:
+                return []
+            } // switch selection
+        } // func locales(option:  Int) -> Array<ASALocaleRecord>
+    
     var body: some View {
         List {
-            ForEach(localeData.records) { item in
+            Picker(selection: $selection, label:
+                Text("Show locales:"), content: {
+                    Text("All locales").tag(ALL_LOCALES)
+                    Text("Apple locales").tag(APPLE_LOCALES)
+            })
+
+            ForEach(self.locales(option: selection)) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
             } // ForEach(localeData.records)
         } // List
-            .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
+            .navigationBarTitle(Text(row.dateString(now: Date()) ))
     } // var body
 } // struct ASALocalePickerView
 

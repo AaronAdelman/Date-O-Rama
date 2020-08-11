@@ -33,7 +33,8 @@ extension String {
 
 
 struct ASALocaleData {
-    var records:  Array<ASALocaleRecord> = []
+    var allRecords:  Array<ASALocaleRecord> = []
+    var standardLocaleRecords:  Array<ASALocaleRecord> = []
     
     init() {
         let standardLocaleIdentifiers = [
@@ -83,7 +84,8 @@ struct ASALocaleData {
         let defaultRecords: [ASALocaleRecord] = [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))]
         let availableLocaleIdentifiers = Locale.availableIdentifiers
         let sortedAvailableLocaleRecords = self.sortedLocalizedRecords(identifiers: availableLocaleIdentifiers)
-        self.records = defaultRecords + sortedStandardLocaleRecords + sortedAvailableLocaleRecords
+        self.allRecords = defaultRecords + sortedAvailableLocaleRecords
+        self.standardLocaleRecords = defaultRecords + sortedStandardLocaleRecords
     } // init()
     
     private func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord> {

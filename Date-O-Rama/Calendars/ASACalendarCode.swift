@@ -190,5 +190,5 @@ extension ASACalendarCode {
                 return .JulianDay
             } // switch self
         } // get
-    }
+    } // var type
 } // extension ASACalendarCode
