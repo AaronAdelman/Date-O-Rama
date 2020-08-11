@@ -10,7 +10,6 @@ import SwiftUI
 import EventKit
 import EventKitUI
 
-let INFO_STRING     = "ℹ️"
 let BIG_PLUS_STRING = "Add external event"
 
 struct ASAEventsView: View {
@@ -282,15 +281,16 @@ struct ASALinkedEventCell:  View {
 //                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
 //                    }.foregroundColor(.accentColor)
 //                    #else
-                    Button(INFO_STRING) {
+                    Button(action:  {
                         self.showingEventView = true
-                    }
-                    .sheet(isPresented: $showingEventView) {
-                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                    }, label:  {
+                        Image(systemName: "info.circle.fill") .font(Font.system(.title))
+                    })
+                        .sheet(isPresented: $showingEventView) {
+                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }.foregroundColor(.accentColor)
-//                    #endif
+                    //                    #endif
                 }
-                
             } else {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
             }
