@@ -295,7 +295,7 @@
 "utilitarianLarge" = "One-line large complication rows";
 "utilitarian"      = "One-line small complication rows";
 
-"Show calendars:" = "הצג לוחות:";
+"Show calendars:"      = "הצג לוחות:";
 "All calendars"        = "כל לוחות";
 "Apple calendars"      = "לוחות אפל";
 "Solar calendars"      = "לוחות שמשיות";
@@ -303,6 +303,8 @@
 "Lunar calendars"      = "לוחות ירחיות";
 "Julian day calendars" = "לוחות יום יוליאני";
 
-"Show locales:" = "הצג מיקומים:";
-"All locales"   = "כל מיקומים";
-"Apple locales" = "מיקומי אפל";
+"Show locales:"           = "הצג מיקומים:";
+"All locales"             = "כל מיקומים";
+"Apple locales"           = "מיקומי אפל";
+"User’s language locales" = "מיקומי שפת המשתמש";
+"User’s region locales"   = "מיקומי איזור המשתמש";

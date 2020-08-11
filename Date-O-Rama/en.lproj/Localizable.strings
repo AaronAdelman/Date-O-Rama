@@ -295,7 +295,7 @@
 "utilitarianLarge" = "One-line large complication rows";
 "utilitarian"      = "One-line small complication rows";
 
-"Show calendars:" = "Show calendars:";
+"Show calendars:"      = "Show calendars:";
 "All calendars"        = "All calendars";
 "Apple calendars"      = "Apple calendars";
 "Solar calendars"      = "Solar calendars";
@@ -303,6 +303,8 @@
 "Lunar calendars"      = "Lunar calendars";
 "Julian day calendars" = "Julian day calendars";
 
-"Show locales:" = "Show locales:";
-"All locales"   = "All locales";
-"Apple locales" = "Apple locales";
+"Show locales:"           = "Show locales:";
+"All locales"             = "All locales";
+"Apple locales"           = "Apple locales";
+"User’s language locales" = "User’s language locales";
+"User’s region locales"   = "User’s region locales";

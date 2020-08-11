@@ -181,7 +181,16 @@ extension String {
 } // extension String
 
 extension String {
-    func localeCountryCode() -> String? {
+    func localeLanguageCode() -> String? {
+        let array = self.components(separatedBy: "_")
+        if array.count < 1 {
+            return nil
+        }
+        
+        return array[0]
+    } // func localeLanguageCode() -> String?
+    
+    func localeRegionCode() -> String? {
         let array = self.components(separatedBy: "_")
         let count: Int = array.count
         if count == 2 || count == 3 {
@@ -197,7 +206,7 @@ extension String {
     }
     
     func localeCountryCodeFlag() -> String {
-        let countryCode = self.localeCountryCode()
+        let countryCode = self.localeRegionCode()
         if countryCode == nil {
             return "🏳️"
         }

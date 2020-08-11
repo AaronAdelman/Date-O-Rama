@@ -15,23 +15,31 @@ struct ASALocaleChooserView: View {
     @ObservedObject var row:  ASARow
 //    var deviceLocation:  CLLocation?
     
-    let ALL_LOCALES   = 0
-    let APPLE_LOCALES = 1
+    let ALL_LOCALES            = 0
+    let APPLE_LOCALES          = 1
+    let USERS_LANGUAGE_LOCALES = 2
+    let USERS_REGION_LOCALES   = 3
 
     @State var selection = 0 // All locales
     
     func locales(option:  Int) -> Array<ASALocaleRecord> {
         switch selection {
-            case ALL_LOCALES:
-                return self.localeData.allRecords
+        case ALL_LOCALES:
+            return self.localeData.allRecords
             
-            case APPLE_LOCALES:
-                return self.localeData.standardLocaleRecords
-        
-            default:
-                return []
-            } // switch selection
-        } // func locales(option:  Int) -> Array<ASALocaleRecord>
+        case APPLE_LOCALES:
+            return self.localeData.standardLocaleRecords
+            
+        case USERS_LANGUAGE_LOCALES:
+            return self.localeData.recordsForUsersLanguage
+            
+        case USERS_REGION_LOCALES:
+            return self.localeData.recordsForUsersRegion
+            
+        default:
+            return []
+        } // switch selection
+    } // func locales(option:  Int) -> Array<ASALocaleRecord>
     
     var body: some View {
         List {
@@ -39,6 +47,8 @@ struct ASALocaleChooserView: View {
                 Text("Show locales:"), content: {
                     Text("All locales").tag(ALL_LOCALES)
                     Text("Apple locales").tag(APPLE_LOCALES)
+                    Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
+                    Text("User’s region locales").tag(USERS_REGION_LOCALES)
             })
 
             ForEach(self.locales(option: selection)) { item in

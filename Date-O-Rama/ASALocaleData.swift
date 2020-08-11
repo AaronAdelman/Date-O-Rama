@@ -35,6 +35,8 @@ extension String {
 struct ASALocaleData {
     var allRecords:  Array<ASALocaleRecord> = []
     var standardLocaleRecords:  Array<ASALocaleRecord> = []
+    var recordsForUsersLanguage: Array<ASALocaleRecord> = []
+    var recordsForUsersRegion:  Array<ASALocaleRecord> = []
     
     init() {
         let standardLocaleIdentifiers = [
@@ -86,6 +88,8 @@ struct ASALocaleData {
         let sortedAvailableLocaleRecords = self.sortedLocalizedRecords(identifiers: availableLocaleIdentifiers)
         self.allRecords = defaultRecords + sortedAvailableLocaleRecords
         self.standardLocaleRecords = defaultRecords + sortedStandardLocaleRecords
+        self.recordsForUsersLanguage = self.recordsForTheUsersLanguage()
+        self.recordsForUsersRegion = self.recordsForTheUsersRegion()
     } // init()
     
     private func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord> {
@@ -95,5 +99,27 @@ struct ASALocaleData {
             temp.append(record)
         } // for identifier in availableLocaleIdentifiers
         return temp.sorted(by: {$0.nativeName < $1.nativeName})
-    }
+    } // func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord>
+    
+    func recordsForTheUsersLanguage() -> Array<ASALocaleRecord> {
+        let usersLanguageCode = Locale.autoupdatingCurrent.languageCode
+        //        debugPrint(#file, #function, "User’s language code", usersLanguageCode)
+        let result = self.allRecords.filter {
+            let languageCode = $0.id.localeLanguageCode()
+            //            debugPrint(#file, #function, "Language code", languageCode)
+            return languageCode == usersLanguageCode
+        }
+        return result
+    } // func recordsFor(languageCode:  String) -> Array<ASALocaleRecord>
+    
+    func recordsForTheUsersRegion() -> Array<ASALocaleRecord> {
+        let usersRegionCode = Locale.autoupdatingCurrent.regionCode
+        //        debugPrint(#file, #function, "User’s language code", usersLanguageCode)
+        let result = self.allRecords.filter {
+            let regionCode = $0.id.localeRegionCode()
+            //            debugPrint(#file, #function, "Language code", languageCode)
+            return regionCode == usersRegionCode
+        }
+        return result
+    } // func recordsForUsersRegion() -> Array<ASALocaleRecord>
 } // struct ASALocaleData
