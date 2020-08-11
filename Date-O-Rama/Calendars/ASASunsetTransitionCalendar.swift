@@ -80,6 +80,7 @@
         if !existsSolarTime {
             return invalidTimeString()
         }
+//        debugPrint(#file, #function, "Now:", now, localeIdentifier, majorTimeFormat, timeGeekFormat, location!, timeZone!, "Transition:", transition!!)
         
         var dayHalfStart:  Date
         //        var dayHalfEnd:  Date
@@ -93,6 +94,7 @@
         let deoptionalizedTransition: Date = transition!!
         if now >= deoptionalizedTransition {
             // Nighttime, transition is at the start of the nighttime
+//            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
             let nextDate = now.oneDayAfter
             var nextDayHalfStart:  Date
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
@@ -115,16 +117,39 @@
             
             dayHalfStart = rawDayHalfStart!!
             
+            var jiggeredNow = now
+            if dayHalfStart > deoptionalizedTransition {
+                // Uh-oh.  It found the day half start for the wrong day!
+                jiggeredNow = now - 24 * 60 * 60
+                let events = jiggeredNow.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+                
+                let rawDayHalfStart: Date?? = events[self.dayStart]
+                
+                if rawDayHalfStart == nil {
+                    return invalidTimeString()
+                }
+                if rawDayHalfStart! == nil {
+                    return invalidTimeString()
+                }
+                
+                dayHalfStart = rawDayHalfStart!!
+            }
+            
+//            debugPrint(#file, #function, "Day half start:", dayHalfStart)
+            
             if dayHalfStart <= now && now < deoptionalizedTransition {
                 // Daytime
+//                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Daytime")
                 assert(deoptionalizedTransition > dayHalfStart)
                 hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
                 symbol = DAY_SYMBOL
             } else {
                 // Previous nighttime
+//                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Previous nighttime")
                 var previousDayHalfEnd:  Date
-                previousDayHalfEnd = self.startOfDay(for: now, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+                previousDayHalfEnd = self.startOfDay(for: jiggeredNow, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
                 assert(dayHalfStart > previousDayHalfEnd)
+//                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
                 hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
                 symbol = NIGHT_SYMBOL
             }
@@ -282,22 +307,23 @@
     var supportsTimeZones: Bool = false
     
     func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
-        if location == nil {
-            return date.sixPMYesterday(timeZone: timeZone)
-        }
+//        if location == nil {
+//            return date.sixPMYesterday(timeZone: timeZone)
+//        }
         
         let yesterday: Date = date.addingTimeInterval(-24 * 60 * 60)
-        let (fixedYesterday, transition) = yesterday.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
-        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
-        let rawDayEnd: Date?? = events[self.dayEnd]
-        if rawDayEnd == nil {
-            return date.sixPMYesterday(timeZone: timeZone)
-        }
-        if rawDayEnd! == nil {
-            return date.sixPMYesterday(timeZone: timeZone)
-        }
-        let dayEnd:  Date = rawDayEnd!! // שקיעה
-        return dayEnd
+//        let (fixedYesterday, transition) = yesterday.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
+//        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+//        let rawDayEnd: Date?? = events[self.dayEnd]
+//        if rawDayEnd == nil {
+//            return date.sixPMYesterday(timeZone: timeZone)
+//        }
+//        if rawDayEnd! == nil {
+//            return date.sixPMYesterday(timeZone: timeZone)
+//        }
+//        let dayEnd:  Date = rawDayEnd!! // שקיעה
+//        return dayEnd
+        return self.startOfNextDay(date: yesterday, location: location, timeZone: timeZone)
     } // func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     
     func startOfNextDay(date: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {

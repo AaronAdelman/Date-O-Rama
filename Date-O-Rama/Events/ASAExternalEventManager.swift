@@ -29,7 +29,7 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         self.requestAccessToExternalCalendars()
         NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {notification
             in
-            debugPrint(#file, #function, notification)
+//            debugPrint(#file, #function, notification)
             self.objectWillChange.send()
         })
     } // init()
