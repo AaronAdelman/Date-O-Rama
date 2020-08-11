@@ -294,3 +294,11 @@
 "extraLarge"       = "Two-line large complication rows";
 "utilitarianLarge" = "One-line large complication rows";
 "utilitarian"      = "One-line small complication rows";
+
+"Show calendars:" = "Show calendars:";
+"All calendars"        = "All calendars";
+"Apple calendars"      = "Apple calendars";
+"Solar calendars"      = "Solar calendars";
+"Lunisolar calendars"  = "Lunisolar calendars";
+"Lunar calendars"      = "Lunar calendars";
+"Julian day calendars" = "Julian day calendars";

@@ -45,6 +45,13 @@ enum ASACalendarCode:  String, Codable {
     case HebrewMA              = "HebrewSolarMA"
 } // enum ASACalendarCode:  String
 
+enum ASACalendarType {
+    case solar
+    case lunisolar
+    case lunar
+    case JulianDay
+} // enum ASACalendarType
+
 
 // MARK: -
 
@@ -96,7 +103,7 @@ extension ASACalendarCode {
         }
     }
     
-    func isSolarCalendar() -> Bool {
+    func isSunsetTransitionCalendar() -> Bool {
         switch self {
         case .HebrewGRA, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar, .HebrewMA:
             return true
@@ -164,4 +171,24 @@ extension ASACalendarCode {
            
            return calendarIdentifier
        } // func calendarIdentifier() -> Calendar.Identifier
+} // extension ASACalendarCode
+
+extension ASACalendarCode {
+    var type:  ASACalendarType {
+        get {
+            switch self {
+            case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian, .ISO8601, .Japanese ,.Persian, .RepublicOfChina:
+                return .solar
+                
+            case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA:
+                return .lunisolar
+                
+            case .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+                return .lunar
+                
+            case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+                return .JulianDay
+            } // switch self
+        } // get
+    }
 } // extension ASACalendarCode

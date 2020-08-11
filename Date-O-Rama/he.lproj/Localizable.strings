@@ -294,3 +294,11 @@
 "extraLarge"       = "Two-line large complication rows";
 "utilitarianLarge" = "One-line large complication rows";
 "utilitarian"      = "One-line small complication rows";
+
+"Show calendars:" = "הצג לוחות:";
+"All calendars"        = "כל לוחות";
+"Apple calendars"      = "לוחות אפל";
+"Solar calendars"      = "לוחות שמשיות";
+"Lunisolar calendars"  = "לוחות ירחיות־שמשיות";
+"Lunar calendars"      = "לוחות ירחיות";
+"Julian day calendars" = "לוחות יום יוליאני";

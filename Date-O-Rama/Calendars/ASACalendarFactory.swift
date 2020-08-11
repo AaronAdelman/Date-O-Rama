@@ -18,7 +18,7 @@ class ASACalendarFactory {
             return ASAISO8601Calendar()
         } else if code.isJulianDayCalendar() {
             return ASAJulianDayCalendar(calendarCode:  code)
-        } else if code.isSolarCalendar() {
+        } else if code.isSunsetTransitionCalendar() {
             return ASASunsetTransitionCalendar(calendarCode: code)
         }
      

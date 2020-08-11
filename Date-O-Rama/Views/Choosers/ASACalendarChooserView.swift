@@ -45,10 +45,61 @@ struct ASACalendarChooserView: View {
     ]
     
     @ObservedObject var row:  ASARow
+    
+    let ALL_CALENDARS        = 0
+    let APPLE_CALENDARS      = 1
+    let SOLAR_CALENDARS      = 2
+    let LUNISOLAR_CALENDARS  = 3
+    let LUNAR_CALENDARS      = 4
+    let JULIAN_DAY_CALENDARS = 5
+
+    @State var selection = 0 // All calendars
+    
+    func calendarCodes(option:  Int) -> Array<ASACalendarCode> {
+        let rawResult: [ASACalendarCode] = self.calendarCodes.filter {
+            switch selection {
+            case ALL_CALENDARS:
+                return true
+                
+            case APPLE_CALENDARS:
+                return $0.isAppleCalendar() || $0.isISO8601Calendar()
+                
+            case SOLAR_CALENDARS:
+                return $0.type == .solar
+                
+            case LUNISOLAR_CALENDARS:
+                return $0.type == .lunisolar
+                
+            case LUNAR_CALENDARS:
+                return $0.type == .lunar
+                
+            case JULIAN_DAY_CALENDARS:
+                return $0.type == .JulianDay
+                
+            default:
+                return false
+            } // switch selection
+        }
+        let result = rawResult.sorted {
+            $0.localizedName() < $1.localizedName()
+        }
+        return result
+    } // func calendarCodes(option:  Int) -> Array<ASACalendarCode>
 
     var body: some View {
         List {
-            ForEach(self.calendarCodes, id: \.self) {
+            Picker(selection: $selection, label:
+                Text("Show calendars:")
+                , content: {
+                    Text("All calendars").tag(ALL_CALENDARS)
+                    Text("Apple calendars").tag(APPLE_CALENDARS)
+                    Text("Solar calendars").tag(SOLAR_CALENDARS)
+                    Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
+                    Text("Lunar calendars").tag(LUNAR_CALENDARS)
+                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
+            })
+            
+            ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode
                 in
                 ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode)
@@ -57,7 +108,7 @@ struct ASACalendarChooserView: View {
                 }
             }
         }
-        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
+        .navigationBarTitle(Text(row.dateString(now: Date()) ))
     }
 }
 
