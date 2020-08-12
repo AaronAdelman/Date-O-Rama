@@ -96,7 +96,7 @@
             // Nighttime, transition is at the start of the nighttime
 //            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
             //            let nextDate = now.oneDayAfter
-            let nextDate = now.noon(timeZone:  timeZone!).oneDayAfter
+            let nextDate = now.noon(timeZone:  timeZone ?? TimeZone.autoupdatingCurrent).oneDayAfter
             var nextDayHalfStart:  Date
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             nextDayHalfStart = nextEvents[self.dayStart]!!
@@ -393,7 +393,7 @@
         }
         
         let calendar = self.ApplesCalendar
-        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
+        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
         
         return calendar.component(ApplesComponent!, from: fixedDate)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
@@ -408,7 +408,7 @@
             }
         } // for component in components
         
-        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
+        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
         
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
         let result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
