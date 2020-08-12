@@ -10,23 +10,31 @@ import Foundation
 import CoreLocation
 
 fileprivate let EVENT_SOURCE_CODE_KEY = "EVENT_SOURCE_CODE"
+fileprivate let BUILTIN_KEY           = "builtIn"
+
+fileprivate let TRUE_STRING  = "true"
+fileprivate let FALSE_STRING = "false"
 
 class ASAInternalEventCalendar:  ASALocatedObject {
-    private var eventSource:  ASAInternalEventSource?
+    private var eventSource:  ASAJSONFileEventSource?
 
-    @Published var eventSourceCode:  ASAInternalEventSourceCode = .none {
+    @Published var eventSourceCode:  String = "Solar events" {
         didSet {
             self.eventSource = ASAInternalEventCalendarFactory.eventCalendarSource(eventSourceCode:  self.eventSourceCode)
         } // didSet
     } // var eventSourceCode
     
+    @Published var builtIn:  Bool = true
+    
     public func dictionary() -> Dictionary<String, Any> {
         //        debugPrint(#file, #function)
         var result = [
             UUID_KEY:  uuid.uuidString,
-            EVENT_SOURCE_CODE_KEY:  self.eventSource?.eventSourceCode.rawValue ?? "",
+            //            EVENT_SOURCE_CODE_KEY:  self.eventSource?.eventSourceCode.rawValue ?? "",
+            EVENT_SOURCE_CODE_KEY:  self.eventSourceCode,
             TIME_ZONE_KEY:  effectiveTimeZone.identifier,
-            USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
+            USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
+            BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING
             ] as [String : Any]
         
         if location != nil {
@@ -82,13 +90,18 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         //        debugPrint(#file, #function, dictionary)
         
         let rawCode:  String = dictionary[EVENT_SOURCE_CODE_KEY] as? String ?? ""
-        let code:  ASAInternalEventSourceCode = ASAInternalEventSourceCode(rawValue: rawCode) ?? .solar
-        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  code)
+//        let code:  ASAInternalEventSourceCode = ASAInternalEventSourceCode(rawValue: rawCode) ?? .solar
+//        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  code)
+        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  rawCode)
         if tempNewEventCalendar == nil {
             return nil
         }
         
         let newEventCalendar = tempNewEventCalendar!
+        
+        let builtInString:  String = (dictionary[BUILTIN_KEY] ?? FALSE_STRING) as! String
+        let builtIn = (builtInString == TRUE_STRING)
+        newEventCalendar.builtIn = builtIn
         
         let UUIDString = dictionary[UUID_KEY] as? String
         if UUIDString != nil {
@@ -134,6 +147,14 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         
         return self.eventSource!.eventCalendarName(locationData:  locationData)
     } // func eventCalendarName() -> String
+    
+    public func eventSourceName() -> String {
+        if self.eventSource == nil {
+            return ""
+        }
+        
+        return self.eventSource!.eventSourceName()
+    } // func eventSourceName() -> String
     
     func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?) -> Array<ASAEvent> {
         if eventSource == nil || self.locationData.location == nil {

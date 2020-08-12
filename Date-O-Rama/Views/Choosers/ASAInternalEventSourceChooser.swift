@@ -9,20 +9,32 @@
 import SwiftUI
 
 struct ASAInternalEventSourceChooser: View {
-    let eventSourceCodes:  Array<ASAInternalEventSourceCode> = [
-        .solar,
-        .dailyJewish,
-        .allDayJewish,
-        .israeli,
-        .lubavitch,
-        .test
-    ]
+//    let eventSourceCodes:  Array<ASAInternalEventSourceCode> = [
+//        .solar,
+//        .dailyJewish,
+//        .allDayJewish,
+//        .israeli,
+//        .lubavitch,
+//        .test
+//    ]
     
     @ObservedObject var eventCalendar:  ASAInternalEventCalendar
     
+    fileprivate func internalEventCodes() -> [String] {
+        let mainBundle = Bundle.main
+        let URLs = mainBundle.urls(forResourcesWithExtension: "json", subdirectory: nil)
+        let fileNames = URLs!.map {
+            $0.deletingPathExtension().lastPathComponent
+        }
+        debugPrint(#file, #function, fileNames)
+        
+//        return self.eventSourceCodes
+        return fileNames
+    }
+    
     var body: some View {
         List {
-            ForEach(self.eventSourceCodes, id: \.self) {
+            ForEach(internalEventCodes(), id: \.self) {
                 potentialEventSourceCode
                 in
                 ASAInternalEventSourceCell(eventSourceCode: potentialEventSourceCode, selectedEventSourceCode: self.$eventCalendar.eventSourceCode)
@@ -37,13 +49,16 @@ struct ASAInternalEventSourceChooser: View {
 }
 
 struct ASAInternalEventSourceCell: View {
-    let eventSourceCode: ASAInternalEventSourceCode
+//    let eventSourceCode: ASAInternalEventSourceCode
+    let eventSourceCode: String
 
-    @Binding var selectedEventSourceCode: ASAInternalEventSourceCode
-    
+//    @Binding var selectedEventSourceCode: ASAInternalEventSourceCode
+    @Binding var selectedEventSourceCode: String
+
     var body: some View {
         HStack {
-            Text(verbatim: eventSourceCode.localizedName()).font(.headline)
+//            Text(verbatim: eventSourceCode.localizedName()).font(.headline)
+            Text(verbatim: NSLocalizedString(eventSourceCode, comment: "")).font(.headline)
             Spacer()
             if self.eventSourceCode == self.selectedEventSourceCode {
                 Image(systemName: "checkmark")
@@ -55,6 +70,7 @@ struct ASAInternalEventSourceCell: View {
 
 struct ASAInternalEventSourceChooser_Previews: PreviewProvider {
     static var previews: some View {
-        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
+//        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
+        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
     }
 }

@@ -34,7 +34,7 @@ enum ASATimeSpecificationDayHalf:  String, Codable {
 // MARK: - ASAInternalEventsFile
 
 struct ASAInternalEventsFile: Codable {
-    var eventSourceCode: ASAInternalEventSourceCode
+//    var eventSourceCode: ASAInternalEventSourceCode
     var title:  String?
     var localizableTitle:  String?
     var calendarColorRed:  CGFloat

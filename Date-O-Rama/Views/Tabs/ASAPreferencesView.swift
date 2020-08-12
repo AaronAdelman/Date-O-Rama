@@ -29,7 +29,8 @@ struct ASAPreferencesView: View {
                     Button(
                                 action: {
                                     withAnimation {
-                                        self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
+//                                        self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
+                                        self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!, at: 0)
                                         self.userData.savePreferences()
                                     }
                             }

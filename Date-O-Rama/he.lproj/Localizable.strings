@@ -278,7 +278,7 @@
 "All-day Jewish events" = "✡ יהדות (יום שלם)";
 "Israeli events"        = "🇮🇱 ישראל";
 "Lubavitch events"      = "✡ חב״ד";
-"Daily solar events"    = "☉ שמש";
+"Solar events"          = "☉ שמש";
 
 "Add external event" = "הוסף אירוע חיצוני";
 

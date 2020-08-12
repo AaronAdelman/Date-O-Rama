@@ -15,7 +15,8 @@ struct ASAInternalEventCalendarDetailView: View {
         List {
             
             NavigationLink(destination:  ASAInternalEventSourceChooser(eventCalendar:  self.selectedEventCalendar)) {
-                Text(selectedEventCalendar.eventSourceCode.localizedName()).font(.headline)
+//                Text(selectedEventCalendar.eventSourceCode).font(.headline)
+                Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }
             
             ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
@@ -30,6 +31,7 @@ struct ASAInternalEventCalendarDetailView: View {
 
 struct ASAInternalEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
+//        ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
+        ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
     }
 }

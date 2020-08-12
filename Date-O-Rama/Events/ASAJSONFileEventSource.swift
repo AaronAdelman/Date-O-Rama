@@ -10,15 +10,21 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-class ASAJSONFileEventSource:  ASAInternalEventSource {
+class ASAJSONFileEventSource {
     var eventsFile:  ASAInternalEventsFile?
     
     init(fileName:  String) {
-        let fileURL = Bundle.main.url(forResource:fileName, withExtension: "json")!
-        
-             let jsonData = (try? Data(contentsOf: fileURL))!
-            let newJSONDecoder = JSONDecoder()
         do {
+            var fileURL = Bundle.main.url(forResource:fileName, withExtension: "json")
+            if fileURL == nil {
+                debugPrint(#file, #function, fileName, "Could not open!")
+                
+                fileURL = Bundle.main.url(forResource:"Solar events", withExtension: "json")
+            }
+            
+            let jsonData = (try? Data(contentsOf: fileURL!))!
+                let newJSONDecoder = JSONDecoder()
+
             let eventsFile = try newJSONDecoder.decode(ASAInternalEventsFile.self, from: jsonData)
             self.eventsFile = eventsFile
         } catch {
@@ -26,11 +32,7 @@ class ASAJSONFileEventSource:  ASAInternalEventSource {
         }
     }
     
-    var eventSourceCode: ASAInternalEventSourceCode {
-        get {
-            return ASAInternalEventSourceCode.init(rawValue: self.eventsFile!.eventSourceCode.rawValue)!
-        }
-    }
+//    var eventSourceCode: String
     
     func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {
 //        debugPrint(#file, #function, startDate, endDate, location, timeZone)

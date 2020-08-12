@@ -1,6 +1,6 @@
 {
     "eventSourceCode":  "solar",
-    "localizableTitle":  "Daily solar events",
+    "localizableTitle":  "Solar events",
     "calendarCode":  "Gregorian",
     "calendarColorRed":  1.0,
     "calendarColorGreen":  1.0,
