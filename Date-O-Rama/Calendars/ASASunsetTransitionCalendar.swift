@@ -234,7 +234,8 @@
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
-        
+        self.dateFormatter.timeZone = timeZone
+
         switch majorDateFormat {
         case .localizedLDML:
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
