@@ -95,7 +95,8 @@
         if now >= deoptionalizedTransition {
             // Nighttime, transition is at the start of the nighttime
 //            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
-            let nextDate = now.oneDayAfter
+            //            let nextDate = now.oneDayAfter
+            let nextDate = now.noon(timeZone:  timeZone!).oneDayAfter
             var nextDayHalfStart:  Date
             let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
             nextDayHalfStart = nextEvents[self.dayStart]!!
