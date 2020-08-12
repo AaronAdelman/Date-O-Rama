@@ -1,5 +1,4 @@
 {
-    "eventSourceCode":  "allDayJewish",
     "localizableTitle":  "All-day Jewish events",
     "calendarCode":  "HebrewSolar",
     "calendarColorRed":  0.0,
@@ -38,16 +37,6 @@
             }
         },
         {
-            "localizableTitle":  "יום שבו נתפס רבי עקיבא והייתה שעת שמד",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  1, "days":  [5]
-            }
-        },{
-            "localizableTitle":  "יום שבו נגזרה גזירה על אבותינו שימותו ברעב בחרב ובדבר בשל מעשה העגל",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  1, "days":  [7]
-            }
-        },{
             "localizableTitle":  "ערב יום כיפור",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "days":  [9]
@@ -173,18 +162,6 @@
             }
         },
         {
-            "localizableTitle":  "יום שבו עוורו את המלך צדקיהו והמיתו את בניו",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  2, "days":  [7]
-            }
-        },
-        {
-            "localizableTitle":  "יום הזיכרון לרחל אימנו",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  2, "days":  [11]
-            }
-        },
-        {
             "localizableTitle":  "ראש חודש כסלו",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "days":  [30]
@@ -274,12 +251,6 @@
             }
         },
         {
-            "localizableTitle":  "יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  3, "days":  [28]
-            }
-        },
-        {
             "localizableTitle":  "ראש חודש טבת",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "days":  [30]
@@ -289,18 +260,6 @@
             "localizableTitle":  "ראש חודש טבת",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "days":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "יום שבו נכתבה התורה בתרגום השבעים",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  4, "days":  [8]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של עזרא הסופר ונחמיה בן חכליה",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  4, "days":  [9]
             }
         },
         {
@@ -316,21 +275,9 @@
             }
         },
         {
-            "localizableTitle":  "יום־שנה של הזקנים שהיו בימי יהושע בן נון",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  5, "days":  [5]
-            }
-        },
-        {
             "localizableTitle":  "ראש השנה לאילנות",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "days":  [15]
-            }
-        },
-        {
-            "localizableTitle":  "יום שבו המלחמה בין שבטי ישראל לשבט בנימין בעקבות פרשיית פילגש בגבעה",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  5, "days":  [23]
             }
         },
         {
@@ -371,12 +318,6 @@
             "localizableTitle":  "יום־שנה של משה רבנו",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "days":  [7],
-            }
-        },
-        {
-            "localizableTitle":  "יום שבו פרצה המחלוקת בין בית הלל לבית שמאי",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  7, "days":  [9],
             }
         },
         {
@@ -440,18 +381,6 @@
             "localizableTitle":  "ראש השנה למלכים",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "days":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של נדב ואביהו",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  8, "days":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של מרים הנביאה",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  8, "days":  [10]
             }
         },
         {
@@ -889,27 +818,9 @@
             }
         },
         {
-            "localizableTitle":  "יום־שנה של עלי הכהן ושני בניו",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "days":  [10]
-            }
-        },
-        {
-            "localizableTitle":  "יום שבו ארון הברית נשבה",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "days":  [10]
-            }
-        },
-        {
             "localizableTitle":  "פסח שני",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "days":  [14]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של שמואל הנביא",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "days":  [28]
             }
         },
         {
@@ -935,30 +846,6 @@
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "days":  [7]
-            }
-        },
-        {
-            "localizableTitle":  "תענית תקופת חמלניצקי",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  10, "days":  [20]
-            }
-        },
-        {
-            "localizableTitle":  "יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  10, "days":  [23]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של רבן שמעון בן גמליאל הזקן, רבי ישמעאל, ורבי חנינא סגן הכהנים",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  10, "days":  [25]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  10, "days":  [27]
             }
         },
         {
@@ -1044,20 +931,6 @@
             }
         },
         {
-            "localizableTitle":  "יום ז׳בוטינסקי",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  11, "days":  [29],
-                "weekdays":  [1, 2, 3, 4, 5, 6]
-            }
-        },
-        {
-            "localizableTitle":  "יום ז׳בוטינסקי (נדחה)",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1],
-                "weekdays":  [1]
-            }
-        },
-        {
             "localizableTitle":  "ראש חודש אב",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "days":  [1]
@@ -1076,12 +949,6 @@
             }
         },
         {
-            "localizableTitle":  "יום שבו כבה הנר המערבי בימי המלך אחז",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [18]
-            }
-        },
-        {
             "localizableTitle":  "ראש חודש אלול",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "days":  [30]
@@ -1094,15 +961,9 @@
             }
         },
         {
-            "localizableTitle":  "ראש השנה לבהמות",
+            "localizableTitle":  "ראש השנה למעשר בהמות",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "days":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של עשרת המרגלים",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  13, "days":  [17]
             }
         },
         {

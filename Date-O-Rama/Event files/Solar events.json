@@ -1,10 +1,9 @@
 {
-    "eventSourceCode":  "solar",
     "localizableTitle":  "Solar events",
     "calendarCode":  "Gregorian",
-    "calendarColorRed":  1.0,
-    "calendarColorGreen":  1.0,
-    "calendarColorBlue":  0.0,
+    "calendarColorRed":  0.0,
+    "calendarColorGreen":  0.0,
+    "calendarColorBlue":  1.0,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {

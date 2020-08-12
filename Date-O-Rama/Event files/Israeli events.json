@@ -1,5 +1,4 @@
 {
-    "eventSourceCode":  "israeli",
     "localizableTitle":  "Israeli events",
     "calendarCode":  "HebrewSolar",
     "calendarColorRed":  0.0,
@@ -199,6 +198,20 @@
                 "month":  9,
                 "days":  [27],
                 "weekdays":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "יום ז׳בוטינסקי",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  11, "days":  [29],
+                "weekdays":  [1, 2, 3, 4, 5, 6]
+            }
+        },
+        {
+            "localizableTitle":  "יום ז׳בוטינסקי (נדחה)",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "days":  [1],
+                "weekdays":  [1]
             }
         }
     ]

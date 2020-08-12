@@ -59,7 +59,7 @@
 		A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A566F48D2483D7CF000A05B5 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719B24627C89002BB471 /* UIColorExtensions.swift */; };
-		A56CE62A24C43BED00865E95 /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Test.json */; };
+		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A57BCCA9247AA8310019C02C /* ASAPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */; };
 		A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
@@ -220,7 +220,7 @@
 		A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A566F4622483D6EF000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		A56CE62924C43BED00865E95 /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
+		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPreferencesView.swift; sourceTree = "<group>"; };
 		A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocatedObject.swift; sourceTree = "<group>"; };
@@ -338,9 +338,9 @@
 				A5E3606324C71FBC0000A268 /* All-day Jewish events.json */,
 				A584C8FF24B646210014CE2E /* Daily Jewish events.json */,
 				A5E3606524C756FF0000A268 /* Israeli events.json */,
+				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
 				A533798024B2333400340C0B /* Solar events.json */,
-				A56CE62924C43BED00865E95 /* Test.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -733,7 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */,
-				A56CE62A24C43BED00865E95 /* Test.json in Resources */,
+				A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */,
 				A5E3606624C756FF0000A268 /* Israeli events.json in Resources */,
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
 				A5E3606824C7571A0000A268 /* Lubavitch events.json in Resources */,
