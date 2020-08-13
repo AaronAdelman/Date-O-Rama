@@ -156,24 +156,24 @@
             "localizableTitle":  "ראש חודש חשון",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "days":  [30]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש חשון",
-            "startDateSpecification":  { "type":  "allDay",
+            },
+            "endDateSpecification":  { "type":  "allDay",
                 "month":  2, "days":  [1]
             }
         },
         {
             "localizableTitle":  "ראש חודש כסלו",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  2, "days":  [30]
+                "month":  2, "days":  [30], "lengthsOfYear":  [355, 385]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  3, "days":  [1]
             }
         },
         {
             "localizableTitle":  "ראש חודש כסלו",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  3, "days":  [1]
+                "month":  3, "days":  [1], "lengthsOfYear":  [353, 354, 383, 384]
             }
         },
         {
@@ -256,13 +256,16 @@
         {
             "localizableTitle":  "ראש חודש טבת",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  3, "days":  [30]
+                "month":  3, "days":  [30], "lengthsOfYear":  [354, 355, 384, 385]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  4, "days":  [1]
             }
         },
         {
             "localizableTitle":  "ראש חודש טבת",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  4, "days":  [1]
+                "month":  4, "days":  [1], "lengthsOfYear":  [353, 383]
             }
         },
         {
@@ -288,6 +291,9 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "days":  [30],
                 "lengthsOfYear":  [353, 354, 355]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  7, "days":  [1]
             }
         },
         {
@@ -295,26 +301,19 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "days":  [30],
                 "lengthsOfYear":  [383, 384, 385]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש אדר",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  7, "days":  [1],
-                "lengthsOfYear":  [353, 354, 355]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  6, "days":  [1],
             }
         },
         {
             "localizableTitle":  "ראש חודש אדר ב׳",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  7, "days":  [1],
+                "month":  6, "days":  [30],
                 "lengthsOfYear":  [383, 384, 385]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש אדר א׳",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  6, "days":  [1],
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  7, "days":  [1]
             }
         },
         {
@@ -366,12 +365,6 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "days":  [16],
                 "weekdays":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש אדר ב׳",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  6, "days":  [30]
             }
         },
         {
@@ -806,11 +799,8 @@
             "localizableTitle":  "ראש חודש אייר",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "days":  [30]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש אייר",
-            "startDateSpecification":  { "type":  "allDay",
+            },
+            "endDateSpecification":  { "type":  "allDay",
                 "month":  9, "days":  [1]
             }
         },
@@ -849,11 +839,8 @@
             "localizableTitle":  "ראש חודש תמוז",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "days":  [30]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש תמוז",
-            "startDateSpecification":  { "type":  "allDay",
+            },
+            "endDateSpecification":  { "type":  "allDay",
                 "month":  11, "days":  [1]
             }
         },
@@ -919,11 +906,8 @@
             "localizableTitle":  "ראש חודש אלול",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "days":  [30]
-            }
-        },
-        {
-            "localizableTitle":  "ראש חודש אלול",
-            "startDateSpecification":  { "type":  "allDay",
+            },
+            "endDateSpecification":  { "type":  "allDay",
                 "month":  13, "days":  [1]
             }
         },
