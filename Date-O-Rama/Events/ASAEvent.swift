@@ -40,6 +40,37 @@ struct ASAEvent:  ASAEventCompatible {
     var calendarCode: ASACalendarCode
 } // struct ASAEvent
 
+extension ASAEvent:  Equatable {
+    static func ==(lhs: ASAEvent, rhs: ASAEvent) -> Bool {
+        if lhs.title != rhs.title {
+            return false
+        }
+        if lhs.startDate != rhs.startDate {
+            return false
+        }
+        if lhs.endDate != rhs.endDate {
+            return false
+        }
+        if lhs.isAllDay != rhs.isAllDay {
+            return false
+        }
+        if lhs.timeZone != rhs.timeZone {
+            return false
+        }
+        if lhs.color != rhs.color {
+            return false
+        }
+        if lhs.calendarTitle != rhs.calendarTitle {
+            return false
+        }
+        if lhs.calendarCode != rhs.calendarCode {
+            return false
+        }
+
+        return true
+    } // static func ==(lhs: ASAEvent, rhs: ASAEvent) -> Bool
+} // extension ASAEvent:  Equatable
+
 
 extension ASAEvent {
     func relevant(startDate: Date, endDate: Date) -> Bool {

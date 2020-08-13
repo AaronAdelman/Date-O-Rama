@@ -206,8 +206,8 @@
             filePath = "Date-O-Rama/Events/ASAJSONFileEventSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "match(date:calendar:locationData:startDateSpecification:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -273,6 +273,54 @@
             startingLineNumber = "98"
             endingLineNumber = "98"
             landmarkName = "solarEvents(latitude:longitude:events:timeZone:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9FDBA4E-0AAE-48EC-B6F2-CF03C467D228"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Date-O-Rama/Events/ASAJSONFileEventSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "match(date:calendar:locationData:startDateSpecification:endDateSpecification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA473B85-5D1B-49D0-A41D-84659BA8D861"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Date-O-Rama/Events/ASAJSONFileEventSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "date(dateComponents:calendar:isEndDate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4822D8E4-1D13-494D-BC1A-87EC9CB08388"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Date-O-Rama/Calendars/ASASunsetTransitionCalendar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
+            landmarkName = "isValidDate(dateComponents:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

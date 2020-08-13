@@ -373,7 +373,8 @@
     
     func isValidDate(dateComponents: ASADateComponents) -> Bool { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
         let ApplesDateComponents = dateComponents.ApplesDateComponents()
-        return ApplesDateComponents.isValidDate
+        let result: Bool = ApplesDateComponents.isValidDate
+        return result
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
     func date(dateComponents: ASADateComponents) -> Date? { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS

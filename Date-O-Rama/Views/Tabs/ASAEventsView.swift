@@ -321,6 +321,29 @@ struct ASAEventCell:  View {
     }
 }
 
+struct ASAAllDayTimesSubsubcell:  View {
+    var startDate:  Date
+    var endDate:  Date
+    var startDateString:  String
+    var endDateString:    String
+    var timeWidth:  CGFloat
+    var timeFontSize:  Font
+    
+    var body:  some View {
+        VStack {
+            Text(startDateString).frame(width:  timeWidth).font(timeFontSize)
+                .foregroundColor(startDate < Date() ? Color.gray : Color(UIColor.label))
+            if startDateString != endDateString {
+                Text(endDateString).frame(width:  timeWidth).font(timeFontSize)
+                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
+            } else {
+                Text("All day").frame(width:  timeWidth).font(timeFontSize)
+                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
+            }
+        }
+    }
+}
+
 struct ASAStartAndEndTimesSubcell:  View {
     var event:  ASAEventCompatible
     var row:  ASARow
@@ -330,8 +353,9 @@ struct ASAStartAndEndTimesSubcell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             if event.isAllDay && row.calendar.calendarCode == event.calendarCode && row.effectiveTimeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) {
-                Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
-                Text("All day").frame(width:  timeWidth).font(timeFontSize)
+//                Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
+//                Text("All day").frame(width:  timeWidth).font(timeFontSize)
+                ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.dateString(now: event.startDate), endDateString: row.dateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
                 //                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
                 //                if event.endDate != event.startDate {

@@ -9,7 +9,10 @@
         {
             "localizableTitle":  "עשרת ימי תשובה",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  1, "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                "month":  1, "days":  [1]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  1, "days":  [10]
             }
         },
         {
@@ -800,12 +803,6 @@
             }
         },
         {
-            "localizableTitle":  "יום־שנה של יהושע בן נון",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  8, "days":  [26]
-            }
-        },
-        {
             "localizableTitle":  "ראש חודש אייר",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "days":  [30]
@@ -891,53 +888,23 @@
         {
             "localizableTitle":  "ט׳ ימים",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                "weekdays":  [2, 3, 4, 5, 6, 7]
-            }
-        },
-        {
-            "localizableTitle":  "ט׳ ימים",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-                "weekdays":  [1]
+                "month":  12, "days":  [1]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  12, "days":  [9]
             }
         },
         {
             "localizableTitle":  "ג׳ שבועות",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  11, "days":  [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
-                "weekdays":  [1, 2, 3, 4, 5, 6]
-            }
-        },
-        {
-            "localizableTitle":  "ג׳ שבועות",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  11, "days":  [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
-                "weekdays":  [7]
-            }
-        },
-        {
-            "localizableTitle":  "ג׳ שבועות",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                "weekdays":  [1, 2, 3, 4, 5, 6, 7]
-            }
-        },
-        {
-            "localizableTitle":  "ג׳ שבועות",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [10],
-                "weekdays":  [1]
+                "month":  11, "days":  [17]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  12, "days":  [9]
             }
         },
         {
             "localizableTitle":  "ראש חודש אב",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1]
-            }
-        },
-        {
-            "localizableTitle":  "יום־שנה של אהרן הכהן",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "days":  [1]
             }
