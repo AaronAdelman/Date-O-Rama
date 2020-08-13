@@ -131,6 +131,18 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "days":  [17]
             }
+        },
+        {
+            "localizableTitle":  "יום־שנה של יהושע בן נון",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "days":  [26]
+            }
+        },
+        {
+            "localizableTitle":  "יום־שנה של אהרן הכהן",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "days":  [1]
+            }
         }
     ]
 }
