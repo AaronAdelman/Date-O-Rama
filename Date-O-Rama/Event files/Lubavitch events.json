@@ -91,7 +91,12 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  11,
-                "days":  [12, 13]
+                "days":  [12]
+            },
+            "endDateSpecification":  {
+                "type":  "allDay",
+                "month":  11,
+                "days":  [13]
             }
         },
         {
