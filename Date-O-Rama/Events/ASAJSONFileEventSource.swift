@@ -124,7 +124,7 @@ class ASAJSONFileEventSource {
         
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
         if supportsDay {
-            if !(components.day?.matches(startDateSpecification.days) ?? false) {
+            if !(components.day?.matches(startDateSpecification.day) ?? false) {
                 return false
             }
         }
@@ -251,10 +251,8 @@ extension ASADateSpecification {
         if self.month != nil {
             revisedDateComponents.month = self.month
         }
-        if self.days != nil {
-            if self.days!.count > 0 {
-                revisedDateComponents.day = self.days![0]
-            }
+        if self.day != nil {
+            revisedDateComponents.day = self.day
         }
         
         revisedDateComponents.weekday = nil

@@ -11,7 +11,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
-                "days":  [9]
+                "day":  9
             }
         },
         {
@@ -19,7 +19,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
-                "days":  [10]
+                "day":  10
             }
         },
         {
@@ -27,7 +27,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
-                "days":  [19]
+                "day":  19
             }
         },
         {
@@ -35,7 +35,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  4,
-                "days":  [5]
+                "day":  5
             }
         },
         {
@@ -43,7 +43,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  4,
-                "days":  [24]
+                "day":  24
             }
         },
         {
@@ -51,7 +51,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  5,
-                "days":  [10]
+                "day":  10
             }
         },
         {
@@ -59,7 +59,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  5,
-                "days":  [22]
+                "day":  22
             }
         },
         {
@@ -67,7 +67,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
-                "days":  [11]
+                "day":  11
             }
         },
         {
@@ -75,7 +75,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [2]
+                "day":  2
             }
         },
         {
@@ -83,7 +83,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  11,
-                "days":  [3]
+                "day":  3
             }
         },
         {
@@ -91,12 +91,12 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  11,
-                "days":  [12]
+                "day":  12
             },
             "endDateSpecification":  {
                 "type":  "allDay",
                 "month":  11,
-                "days":  [13]
+                "day":  13
             }
         },
         {
@@ -104,7 +104,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  13,
-                "days":  [15]
+                "day":  15
             }
         },
         {
@@ -112,7 +112,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  13,
-                "days":  [18]
+                "day":  18
             }
         }
     ]

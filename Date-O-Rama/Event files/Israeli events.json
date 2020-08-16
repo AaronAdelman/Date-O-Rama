@@ -11,7 +11,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "days":  [7]
+                "day":  7
             }
         },
         {
@@ -19,7 +19,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "days":  [12],
+                "day":  12,
                 "weekdays":  [1, 2, 3, 4, 5]
             }
         },
@@ -28,7 +28,16 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "days":  [10, 11],
+                "day":  10,
+                "weekdays":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון ליצחק רבין (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  2,
+                "day":  11,
                 "weekdays":  [5]
             }
         },
@@ -37,7 +46,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
-                "days":  [29]
+                "day":  29
             }
         },
         {
@@ -45,7 +54,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
-                "days":  [6],
+                "day":  6,
                 "weekdays":  [1, 2, 3, 4, 5]
             }
         },
@@ -54,7 +63,16 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
-                "days":  [7, 8],
+                "day":  7,
+                "weekdays":  [1]
+            }
+        },
+        {
+            "localizableTitle":  "יום בן־גוריון (נדחה)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  3,
+                "day":  8,
                 "weekdays":  [1]
             }
         },
@@ -63,7 +81,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
-                "days":  [23]
+                "day":  23
             }
         },
         {
@@ -71,7 +89,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
-                "days":  [10]
+                "day":  10
             }
         },
         {
@@ -79,7 +97,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
-                "days":  [27],
+                "day":  27,
                 "weekdays":  [2, 3, 4, 5]
             }
         },
@@ -88,7 +106,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
-                "days":  [28],
+                "day":  28,
                 "weekdays":  [2]
             }
         },
@@ -97,7 +115,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
-                "days":  [26],
+                "day":  26,
                 "weekdays":  [5]
             }
         },
@@ -106,7 +124,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [4],
+                "day":  4,
                 "weekdays":  [2, 3, 4, 7]
             }
         },
@@ -115,7 +133,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [5],
+                "day":  5,
                 "weekdays":  [2]
             }
         },
@@ -124,7 +142,16 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [2, 3],
+                "day":  2,
+                "weekdays":  [4]
+            }
+        },
+        {
+            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "day":  3,
                 "weekdays":  [4]
             }
         },
@@ -133,7 +160,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [5],
+                "day":  5,
                 "weekdays":  [3, 4, 5, 1]
             }
         },
@@ -142,7 +169,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [6],
+                "day":  6,
                 "weekdays":  [3]
             }
         },
@@ -151,7 +178,16 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [3, 4],
+                "day":  3,
+                "weekdays":  [5]
+            }
+        },
+        {
+            "localizableTitle":  "יום העצמאות (מוקדם)",
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "day":  4,
                 "weekdays":  [5]
             }
         },
@@ -160,7 +196,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [10],
+                "day":  10,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
@@ -169,7 +205,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [11],
+                "day":  11,
                 "weekdays":  [1]
             }
         },
@@ -178,7 +214,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [28],
+                "day":  28,
                 "weekdays":  [2, 3, 4, 5, 7]
             }
         },
@@ -187,7 +223,7 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [29],
+                "day":  29,
                 "weekdays":  [2]
             }
         },
@@ -196,21 +232,21 @@
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
-                "days":  [27],
+                "day":  27,
                 "weekdays":  [5]
             }
         },
         {
             "localizableTitle":  "יום ז׳בוטינסקי",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  11, "days":  [29],
+                "month":  11, "day":  29,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
             "localizableTitle":  "יום ז׳בוטינסקי (נדחה)",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  12, "days":  [1],
+                "month":  12, "day":  1,
                 "weekdays":  [1]
             }
         }
