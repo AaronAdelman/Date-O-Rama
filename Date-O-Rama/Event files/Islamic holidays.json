@@ -1,0 +1,141 @@
+{
+    "localizableTitle":  "Islamic holidays",
+    "calendarCode":  "IslamicSolar",
+    "calendarColorRed":  0.0,
+    "calendarColorGreen":  1.0,
+    "calendarColorBlue":  0.0,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "localizableTitle":  "Islamic New Year",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  1
+            }
+        },
+        {
+            "localizableTitle":  "Ashura",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  10
+            }
+        },
+        
+        {
+            "localizableTitle":  "Eid-e-Shuja' (Eid-e-Zahra)",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  9
+            }
+        },
+        {
+            "localizableTitle":  "Birthday of the Prophet (Sunni)",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  12
+            }
+        },
+        {
+            "localizableTitle":  "Birthday of the Prophet (Shia)",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  17
+            }
+        },
+        {
+            "localizableTitle":  "Birthday of ‘Alī ibn Abī Ṭālib",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  13
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Mi'raj",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  27
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Bara'at",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  15
+            }
+        },
+        {
+            "localizableTitle":  "Birthday of Hujjat-Allah al-Mahdī",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  15
+            }
+        },
+        {
+            "localizableTitle":  "First day of Ramaḍān",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  1
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Qadr",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  19
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Qadr",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  21
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Qadr",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  23
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Qadr",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  25
+            }
+        },
+        {
+            "localizableTitle":  "Laylat al-Qadr",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  27
+            }
+        },
+        
+        {
+            "localizableTitle":  "Eid al-Fitr",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  1
+            }
+        },
+        {
+            "localizableTitle":  "Hajj",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  8
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  13
+            }
+        },
+        {
+            "localizableTitle":  "Day of Arafah",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  9
+            }
+        },
+        {
+            "localizableTitle":  "Eid al-Adha",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  10
+            }
+        },
+        {
+            "localizableTitle":  "Eid al-Ghadeer",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  18
+            }
+        },
+        {
+            "localizableTitle":  "Eid al-Mubahalah",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  24
+            }
+        }
+    ]
+}
