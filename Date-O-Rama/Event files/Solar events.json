@@ -9,7 +9,6 @@
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {
-            "localizableTitle":  "sunrise",
             "titles":  {
                 "en":  "🌅 Sunrise",
                 "he":  "🌅 נץ החמה"
@@ -22,7 +21,6 @@
             }
         },
         {
-            "localizableTitle":  "sunset",
             "titles":  {
                 "en":  "🌇 Sunset",
                 "he":  "🌇 שקיעת החמה"
@@ -36,7 +34,6 @@
         },
         
         {
-            "localizableTitle":  "civilDawn",
             "titles":  {
                 "en":  "Civil dawn",
                 "he":  "שחר אזרחי"
@@ -49,7 +46,6 @@
             }
         },
         {
-            "localizableTitle":  "civilDusk",
             "titles":  {
                 "en":  "Civil dusk",
                 "he":  "בין הערביים אזרחי"
@@ -63,7 +59,6 @@
         },
         
         {
-            "localizableTitle":  "nauticalDawn",
             "titles":  {
                 "en":  "Nautical dawn",
                 "he":  "שחר ימי"
@@ -76,7 +71,6 @@
             }
         },
         {
-            "localizableTitle":  "nauticalDusk",
             "titles":  {
                 "en":  "Nautical dusk",
                 "he":  "בין העבריים ימי"
@@ -90,7 +84,6 @@
         },
         
         {
-            "localizableTitle":  "astronomicalDawn",
             "titles":  {
                 "en":  "Astronomical dawn",
                 "he":  "שחר אסטרונומי"
@@ -103,7 +96,6 @@
             }
         },
         {
-            "localizableTitle":  "astronomicalDusk",
             "titles":  {
                 "en":  "Astronomical dusk",
                 "he":  "בין הערביים אסטרונומי"
