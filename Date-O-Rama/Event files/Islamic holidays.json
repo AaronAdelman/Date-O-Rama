@@ -99,6 +99,19 @@
         },
         
         {
+            "localizableTitle":  "Chaand Raat",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  29, "lengthsOfMonth":  [29]
+            }
+        },
+        {
+            "localizableTitle":  "Chaand Raat",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  30, "lengthsOfMonth":  [30]
+            }
+        },
+        
+        {
             "localizableTitle":  "Eid al-Fitr",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  1

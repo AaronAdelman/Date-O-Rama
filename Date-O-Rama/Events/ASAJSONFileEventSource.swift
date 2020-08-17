@@ -107,11 +107,13 @@ class ASAJSONFileEventSource {
                 return false
             }
             
-            let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
-            let numberOfDaysInYear = rangeOfDaysInYear!.count
-//            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
-            if !numberOfDaysInYear.matches(startDateSpecification.lengthsOfYear) {
-                return false
+            if startDateSpecification.lengthsOfYear != nil {
+                let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
+                let numberOfDaysInYear = rangeOfDaysInYear!.count
+                //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
+                if !numberOfDaysInYear.matches(startDateSpecification.lengthsOfYear) {
+                    return false
+                }
             }
         }
         
@@ -119,6 +121,14 @@ class ASAJSONFileEventSource {
         if supportsMonth {
             if !(components.month?.matches(startDateSpecification.month) ?? false) {
                 return false
+            }
+            
+            if startDateSpecification.lengthsOfMonth != nil {
+                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+                if !numberOfDaysInMonth.matches(startDateSpecification.lengthsOfMonth) {
+                    return false
+                }
             }
         }
         
