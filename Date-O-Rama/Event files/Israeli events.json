@@ -9,7 +9,7 @@
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {
-            "localizableTitle":  "יום העליה לבתי ספר",
+            "titles":  {"he":  "יום העליה לבתי ספר", "en":  "‘Aliyyah Day for schools"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
@@ -17,7 +17,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין",
+            "titles":  {"he":  "יום הזיכרון ליצחק רבין", "en":  "Yiṣḥaq Rabbin Memorial Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
@@ -26,7 +26,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין (מוקדם)",
+            "titles":  {"he":  "יום הזיכרון ליצחק רבין (מוקדם)", "en":  "Yiṣḥaq Rabbin Memorial Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
@@ -35,7 +35,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון ליצחק רבין (מוקדם)",
+            "titles":  {"he":  "יום הזיכרון ליצחק רבין (מוקדם)", "en":  "Yiṣḥaq Rabbin Memorial Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
@@ -44,7 +44,7 @@
             }
         },
         {
-            "localizableTitle":  "סיגד",
+            "titles":  {"he":  "סיגד", "en":  "Sighdh"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  2,
@@ -52,7 +52,7 @@
             }
         },
         {
-            "localizableTitle":  "יום בן־גוריון",
+            "titles":  {"he":  "יום בן־גוריון", "en":  "Ben Gureyon Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
@@ -61,7 +61,7 @@
             }
         },
         {
-            "localizableTitle":  "יום בן־גוריון (נדחה)",
+            "titles":  {"he":  "יום בן־גוריון (נדחה)", "en":  "Ben Gureyon Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
@@ -70,7 +70,7 @@
             }
         },
         {
-            "localizableTitle":  "יום בן־גוריון (נדחה)",
+            "titles":  {"he":  "יום בן־גוריון (נדחה)", "en":  "Ben Gureyon Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
@@ -79,7 +79,7 @@
             }
         },
         {
-            "localizableTitle":  "יום המורה",
+            "titles":  {"he":  "יום המורה", "en":  "Teacher Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  3,
@@ -87,7 +87,7 @@
             }
         },
         {
-            "localizableTitle":  "יום העליה",
+            "titles":  {"he":  "יום העליה", "en":  "‘Aliyyah Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
@@ -95,7 +95,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לשואה ולגבורה",
+            "titles":  {"he":  "יום הזיכרון לשואה ולגבורה", "en":  "Holocaust Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
@@ -104,7 +104,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לשואה ולגבורה (נדחה)",
+            "titles":  {"he":  "יום הזיכרון לשואה ולגבורה (נדחה)", "en":  "Holocaust Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
@@ -113,7 +113,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לשואה ולגבורה (מוקדם)",
+            "titles":  {"he":  "יום הזיכרון לשואה ולגבורה (מוקדם)", "en":  "Holocaust Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  8,
@@ -122,7 +122,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל",
+            "titles":  {"he":  "יום הזיכרון לחללי מערכות ישראל", "en":  "Memorial Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -131,7 +131,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל (נדחה)",
+            "titles":  {"he":  "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en":  "Memorial Day (postposed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -140,7 +140,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל (מוקדם)",
+            "titles":  {"he":  "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en":  "Memorial Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -149,7 +149,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לחללי מערכות ישראל (מוקדם)",
+            "titles":  {"he":  "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en":  "Memorial Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -158,7 +158,7 @@
             }
         },
         {
-            "localizableTitle":  "יום העצמאות",
+            "titles":  {"he":  "יום העצמאות", "en":  "Independence Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -167,7 +167,7 @@
             }
         },
         {
-            "localizableTitle":  "יום העצמאות (נדחה)",
+            "titles":  {"he":  "יום העצמאות (נדחה)", "en":  "Independence Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -176,7 +176,7 @@
             }
         },
         {
-            "localizableTitle":  "יום העצמאות (מוקדם)",
+            "titles":  {"he":  "יום העצמאות (מוקדם)", "en":  "Independence Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -185,7 +185,7 @@
             }
         },
         {
-            "localizableTitle":  "יום העצמאות (מוקדם)",
+            "titles":  {"he":  "יום העצמאות (מוקדם)", "en":  "Independence Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -194,7 +194,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הרצל",
+            "titles":  {"he":  "יום הרצל", "en":  "Herṣel Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -203,7 +203,7 @@
             }
         },
         {
-            "localizableTitle":  "יום הרצל",
+            "titles":  {"he":  "יום הרצל (נדחה)", "en":  "Herṣel Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -212,7 +212,7 @@
             }
         },
         {
-            "localizableTitle":  "יום ירושלים",
+            "titles":  {"he":  "יום ירושלים", "en":  "Yerushalayim Day"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -221,7 +221,7 @@
             }
         },
         {
-            "localizableTitle":  "יום ירושלים (נדחה)",
+            "titles":  {"he":  "יום ירושלים (נדחה)", "en":  "Yerushalayim Day (postponed)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -230,7 +230,7 @@
             }
         },
         {
-            "localizableTitle":  "יום ירושלים (מוקדם)",
+            "titles":  {"he":  "יום ירושלים (מוקדם)", "en":  "Yerushalayim Day (brought forward)"},
             "startDateSpecification":  {
                 "type":  "allDay",
                 "month":  9,
@@ -239,14 +239,14 @@
             }
         },
         {
-            "localizableTitle":  "יום ז׳בוטינסקי",
+            "titles":  {"he":  "יום ז׳בוטינסקי", "en":  "Zhabboṭinsqi Day"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  29,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
-            "localizableTitle":  "יום ז׳בוטינסקי (נדחה)",
+            "titles":  {"he":  "יום ז׳בוטינסקי (נדחה)", "en":  "Zhabboṭinsqi Day (postponed)"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  1,
                 "weekdays":  [1]
