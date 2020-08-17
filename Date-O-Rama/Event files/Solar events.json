@@ -1,6 +1,6 @@
 {
     "localizableTitle":  "Solar events",
-    "supportedLocales":  ["en"],
+    "supportedLocales":  ["en", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
     "calendarColorRed":  1.0,
