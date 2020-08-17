@@ -77,6 +77,14 @@ class ASAJSONFileEventSource {
         if eventEndDate == nil {
             return (false, nil, nil)
         }
+        
+        if !self.matchYearSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+            return (false, nil, nil)
+        }
+        if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+            return (false, nil, nil)
+        }
+        
         let timeZone: TimeZone = locationData.timeZone ?? TimeZone.autoupdatingCurrent
         let dateStartOfDay = calendar.startOfDay(for: date, location: locationData.location, timeZone: timeZone)
         let dateEndOfDay = calendar.startOfNextDay(date: date, location: locationData.location, timeZone: timeZone)
@@ -96,6 +104,41 @@ class ASAJSONFileEventSource {
         return (true, eventStartDate, eventEndDate)
     }
     
+    func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
+        if dateSpecification.lengthsOfYear != nil {
+            let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
+            let numberOfDaysInYear = rangeOfDaysInYear!.count
+            //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
+            if !numberOfDaysInYear.matches(dateSpecification.lengthsOfYear) {
+                return false
+            }
+        }
+        
+        if dateSpecification.dayOfYear != nil {
+            let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
+            if dayOfYear == nil {
+                return false
+            }
+            if !dayOfYear!.matches(dateSpecification.dayOfYear) {
+                return false
+            }
+        }
+        
+        return true
+    } // func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
+    
+    func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
+        if dateSpecification.lengthsOfMonth != nil {
+            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+            if !numberOfDaysInMonth.matches(dateSpecification.lengthsOfMonth) {
+                return false
+            }
+        }
+        
+        return true
+    } // func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
+    
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool {
         let components = calendar.dateComponents([.year, .month, .day, .weekday
 //            , .weekOfYear, .weekOfMonth
@@ -107,23 +150,8 @@ class ASAJSONFileEventSource {
                 return false
             }
             
-            if startDateSpecification.lengthsOfYear != nil {
-                let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
-                let numberOfDaysInYear = rangeOfDaysInYear!.count
-                //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
-                if !numberOfDaysInYear.matches(startDateSpecification.lengthsOfYear) {
-                    return false
-                }
-            }
-            
-            if startDateSpecification.dayOfYear != nil {
-                let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
-                if dayOfYear == nil {
-                    return false
-                }
-                if !dayOfYear!.matches(startDateSpecification.dayOfYear) {
-                    return false
-                }
+            if !self.matchYearSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+                return false
             }
         }
         
@@ -133,12 +161,8 @@ class ASAJSONFileEventSource {
                 return false
             }
             
-            if startDateSpecification.lengthsOfMonth != nil {
-                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
-                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
-                if !numberOfDaysInMonth.matches(startDateSpecification.lengthsOfMonth) {
-                    return false
-                }
+            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+                return false
             }
         }
         

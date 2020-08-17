@@ -69,9 +69,21 @@
             }
         },
         {
-            "localizableTitle":  "First day of Ramaḍān",
+            "localizableTitle":  "Ramaḍān",
             "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  1
+                "month":  9, "day":  1, "lengthsOfMonth":  [29]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  29
+            }
+        },
+        {
+            "localizableTitle":  "Ramaḍān",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  1, "lengthsOfMonth":  [30]
+            },
+            "endDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  30
             }
         },
         {
