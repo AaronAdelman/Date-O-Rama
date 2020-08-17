@@ -183,6 +183,39 @@ class ASAJSONFileEventSource {
         return true
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool
     
+    fileprivate func eventTitle(_ eventSpecification: ASAInternalEventSpecification, defaultLocale:  String) -> String? {
+        // TODO:  Make it so the user can choose a locale
+        
+        if eventSpecification.titles != nil {
+            let titles = eventSpecification.titles!
+            
+            let autoupdatingCurrentLocale: Locale = Locale.autoupdatingCurrent
+            let userLocale = autoupdatingCurrentLocale.identifier
+            let firstAttempt = titles[userLocale]
+            if firstAttempt != nil {
+                return firstAttempt
+            }
+            
+            let userLanguageCode = autoupdatingCurrentLocale.languageCode
+            if userLanguageCode != nil {
+                let secondAttempt = titles[userLanguageCode!]
+                if secondAttempt != nil {
+                    return secondAttempt
+                }
+            }
+            
+            let defaultLocale = eventsFile?.defaultLocale
+            if defaultLocale != nil {
+                let thirdAttempt = titles[defaultLocale!]
+                if thirdAttempt != nil {
+                    return thirdAttempt
+                }
+            }
+        }
+        
+        return eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
+    }
+    
     func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?) -> Array<ASAEvent> {
         let location = locationData.location!
         let timeZone = locationData.timeZone!
@@ -223,7 +256,7 @@ class ASAJSONFileEventSource {
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
-                    let title = eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
+                    let title = eventTitle(eventSpecification, defaultLocale: self.eventsFile!.defaultLocale)
                     let color = self.calendarColor()
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate

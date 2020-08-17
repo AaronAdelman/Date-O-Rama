@@ -1,5 +1,7 @@
 {
     "localizableTitle":  "Solar events",
+    "supportedLocales":  ["en"],
+    "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
     "calendarColorRed":  1.0,
     "calendarColorGreen":  1.0,
@@ -8,6 +10,10 @@
     "eventSpecifications":  [
         {
             "localizableTitle":  "sunrise",
+            "titles":  {
+                "en":  "🌅 Sunrise",
+                "he":  "🌅 נץ החמה"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
@@ -17,6 +23,10 @@
         },
         {
             "localizableTitle":  "sunset",
+            "titles":  {
+                "en":  "🌇 Sunset",
+                "he":  "🌇 שקיעת החמה"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
@@ -27,6 +37,10 @@
         
         {
             "localizableTitle":  "civilDawn",
+            "titles":  {
+                "en":  "Civil dawn",
+                "he":  "שחר אזרחי"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  6.0,
@@ -36,6 +50,10 @@
         },
         {
             "localizableTitle":  "civilDusk",
+            "titles":  {
+                "en":  "Civil dusk",
+                "he":  "בין הערביים אזרחי"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  6.0,
@@ -46,6 +64,10 @@
         
         {
             "localizableTitle":  "nauticalDawn",
+            "titles":  {
+                "en":  "Nautical dawn",
+                "he":  "שחר ימי"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  12.0,
@@ -55,6 +77,10 @@
         },
         {
             "localizableTitle":  "nauticalDusk",
+            "titles":  {
+                "en":  "Nautical dusk",
+                "he":  "בין העבריים ימי"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  12.0,
@@ -65,6 +91,10 @@
         
         {
             "localizableTitle":  "astronomicalDawn",
+            "titles":  {
+                "en":  "Astronomical dawn",
+                "he":  "שחר אסטרונומי"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  18.0,
@@ -74,6 +104,10 @@
         },
         {
             "localizableTitle":  "astronomicalDusk",
+            "titles":  {
+                "en":  "Astronomical dusk",
+                "he":  "בין הערביים אסטרונומי"
+            },
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  18.0,

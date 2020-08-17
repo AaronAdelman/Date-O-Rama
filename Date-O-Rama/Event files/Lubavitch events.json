@@ -1,5 +1,7 @@
 {
     "localizableTitle":  "Lubavitch events",
+    "supportedLocales":  ["he"],
+    "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",
     "calendarColorRed":  0.0,
     "calendarColorGreen":  0.0,

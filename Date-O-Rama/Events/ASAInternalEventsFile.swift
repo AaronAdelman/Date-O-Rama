@@ -37,6 +37,10 @@ struct ASAInternalEventsFile: Codable {
 //    var eventSourceCode: ASAInternalEventSourceCode
     var title:  String?
     var localizableTitle:  String?
+    
+    var supportedLocales:  Array<String>
+    var defaultLocale:  String
+    
     var calendarColorRed:  CGFloat
     var calendarColorGreen:  CGFloat
     var calendarColorBlue:  CGFloat
@@ -68,6 +72,8 @@ struct ASAInternalEventsFile: Codable {
 class ASAInternalEventSpecification: Codable {
     var title:  String?
     var localizableTitle:  String?
+    
+    var titles:  Dictionary<String, String>?
     
     var isAllDay:  Bool {
         get {
