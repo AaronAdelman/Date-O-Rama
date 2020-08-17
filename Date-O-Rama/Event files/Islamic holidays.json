@@ -20,6 +20,13 @@
         },
         
         {
+            "localizableTitle":  "Arba'een",
+            "startDateSpecification":  { "type":  "allDay",
+                "dayOfYear":  50
+            }
+        },
+        
+        {
             "localizableTitle":  "Eid-e-Shuja' (Eid-e-Zahra)",
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  9

@@ -115,6 +115,16 @@ class ASAJSONFileEventSource {
                     return false
                 }
             }
+            
+            if startDateSpecification.dayOfYear != nil {
+                let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
+                if dayOfYear == nil {
+                    return false
+                }
+                if !dayOfYear!.matches(startDateSpecification.dayOfYear) {
+                    return false
+                }
+            }
         }
         
         let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
