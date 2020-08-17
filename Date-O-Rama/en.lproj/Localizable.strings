@@ -229,36 +229,6 @@
 
 "HEADER_EVENTS" = "Events";
 
-//"midnight"         = "Midnight";
-//"sunrise"          = "🌅 Sunrise";
-//"noon"             = "Noon";
-//"sunset"           = "🌇 Sunset";
-//"civilDawn"        = "Civil dawn";
-//"civilDusk"        = "Civil dusk";
-//"nauticalDawn"     = "Nautical dawn";
-//"nauticalDusk"     = "Nautical dusk";
-//"astronomicalDawn" = "Astronomical dawn";
-//"astronomicalDusk" = "Astronomical dusk";
-//"dawn"             = "‘Aloth hashshaḥar (16.1°)";
-//"recognition"      = "Mishsheyyakir (11°)";
-//"hour03"           = "End time for Qeri’ath Shema‘ (Vilna Ga’on)";
-//"hour04"           = "End time for Tefillah (Vilna Ga’on)";
-//"hour06½"          = "Minḥah gedholah (Vilna Ga’on)";
-//"hour09½"          = "Minḥah qeṭanah (Vilna Ga’on)";
-//"hour10¾"          = "Pelagh hamminḥah (Vilna Ga’on)";
-//"candlelighting"   = "🕯 Candlelighting (18 minutes)";
-//"dusk"             = "🌌 Ṣe’th hakkokhavim (8.5°)";
-//"otherDawn"        = "‘Aloth hashshaḥar (72 minutes)";
-//"otherHour03"      = "End time for Qeri’ath Shema‘ (Maghen ’Avraham)";
-//"otherHour04"      = "End time for Tefillah (Maghen ’Avraham)";
-//"otherHour06½"     = " (Maghen ’Avraham)";
-//"otherHour09½"     = "Minḥah qeṭanah (Maghen ’Avraham)";
-//"otherHour10¾"     = "Pelagh hamminḥah (Maghen ’Avraham)";
-//"otherDusk"        = "🌌 Ṣe’th hakkokhavim (72 minutes)";
-//"dusk3.7°"         = "🌌 Ṣe’th hakkokhavim habbenonim (3.7°)";
-//"dawn16°"          = "‘Aloth hashshaḥar (16°)";
-//"betweenTheSuns"   = "Ben hashShemashoth";
-
 "ADDRESS_SEPARATOR" = ", ";
 
 "Use device location" = "Use device location";

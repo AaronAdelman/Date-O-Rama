@@ -1,6 +1,6 @@
 {
     "localizableTitle":  "All-day Jewish events",
-    "supportedLocales":  ["he"],
+    "supportedLocales":  ["he", "en"],
     "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",
     "calendarColorRed":  0.0,
@@ -9,7 +9,10 @@
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {
-            "localizableTitle":  "עשרת ימי תשובה",
+            "titles": {
+                "he": "עשרת ימי תשובה",
+                "en":  "Ten Days of Repentance"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  1
             },
@@ -18,144 +21,210 @@
             }
         },
         {
-            "localizableTitle":  "ראש השנה (יום א׳)",
+            "titles":  {
+                "he":  "ראש השנה (יום א׳)",
+                "en":  "Ro’sh hashShanah (day 1)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  1
             }
         },
         {
-            "localizableTitle":  "ראש השנה (יום ב׳)",
+            "titles":  {
+                "he":  "ראש השנה (יום ב׳)",
+                "en":  "Ro’sh hashShanah (day 2)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  2
             }
         },
         {
-            "localizableTitle":  "צום גדליה",
+            "titles":  {
+                "he":  "צום גדליה",
+                "en":  "Fast of Gedhalyah"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  3, "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
-            "localizableTitle":  "צום גדליה",
+            "titles":  {
+                "he":  "צום גדליה",
+                "en":  "Fast of Gedhalyah"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  4, "weekdays":  [1]
             }
         },
         {
-            "localizableTitle":  "ערב יום כיפור",
+            "titles":  {
+                "he":  "ערב יום כיפור",
+                "en":  "Eve of Yom Kippur"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  9
             }
         },
         {
-            "localizableTitle":  "יום כיפור",
+            "titles":  {
+                "he":  "יום כיפור",
+                "en":  "Yom Kippur"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  10
             }
         },
         {
-            "localizableTitle":  "ערב סוכות",
+            "titles":  {
+                "he":  "ערב סוכות",
+                "en":  "Eve of Sukkoth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  14
             }
         },
         {
-            "localizableTitle":  "סוכות (יום טוב)",
+            "titles":  {
+                "he":  "סוכות (יום טוב)",
+                "en":  "Sukkoth (yom ṭov)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  15
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום א׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום א׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 1)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  16
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ב׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ב׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 2)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  17
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ג׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ג׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 3)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  18
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ד׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ד׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 4)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  19
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ה׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ה׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 5)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  20
             }
         },
         {
-            "localizableTitle":  "הושענא רבה",
+            "titles":  {
+                "he":  "הושענא רבה",
+                "en":  "Hosha‘na’ Rabbah"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  21
             }
         },
         {
-            "localizableTitle":  "שמיני עצרת",
+            "titles":  {
+                "he":  "שמיני עצרת",
+                "en":  "Shemini ‘Aṣereth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  22
             }
         },
         {
-            "localizableTitle":  "סוכות (יום טוב שני)",
+            "titles":  {
+                "he":  "סוכות (יום טוב שני)",
+                "en":  "Sukkoth (yom ṭov sheni)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  16
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום א׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום א׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 1)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  17
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ב׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ב׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 2)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  18
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ג׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ג׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 3)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  19
             }
         },
         {
-            "localizableTitle":  "סוכות (חול המועד, יום ד׳)",
+            "titles":  {
+                "he":  "סוכות (חול המועד, יום ד׳)",
+                "en":  "Sukkoth (ḥol hammo‘edh, day 4)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  20
             }
         },
         {
-            "localizableTitle":  "שמחת תורה",
+            "titles":  {
+                "he":  "שמחת תורה",
+                "en":  "Simḥath Torah"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  23
             }
         },
         {
-            "localizableTitle":  "ראש חודש חשון",
+            "titles":  {
+                "he":  "ראש חודש חשון",
+                "en":  "Ro’sh Ḥodhesh Ḥeshwan"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  30
             },
@@ -164,7 +233,10 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש כסלו",
+            "titles":  {
+                "he":  "ראש חודש כסלו",
+                "en":  "Ro’sh Ḥodhesh Kislew"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  30, "lengthsOfYear":  [355, 385]
             },
@@ -173,90 +245,132 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש כסלו",
+            "titles":  {
+                "he":  "ראש חודש כסלו",
+                "en":  "Ro’sh Ḥodhesh Kislew"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  1, "lengthsOfYear":  [353, 354, 383, 384]
             }
         },
         {
-            "localizableTitle":  "ערב חנוכה",
+            "titles":  {
+                "he":  "ערב חנוכה",
+                "en":  "Eve of Ḥanukkah"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  24
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום א׳)",
+            "titles":  {
+                "he":  "חנוכה (יום א׳)",
+                "en":  "Ḥanukkah (day 1)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  25
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ב׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ב׳)",
+                "en":  "Ḥanukkah (day 2)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  26
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ג׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ג׳)",
+                "en":  "Ḥanukkah (day 3)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  27
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ד׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ד׳)",
+                "en":  "Ḥanukkah (day 4)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  28
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ה׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ה׳)",
+                "en":  "Ḥanukkah (day 5)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  29
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ו׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ו׳)",
+                "en":  "Ḥanukkah (day 6)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  30,
                 "lengthsOfYear":  [354, 355, 384, 385]
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ז׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ז׳)",
+                "en":  "Ḥanukkah (day 7)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  1,
                 "lengthsOfYear":  [354, 355, 384, 385]
             }
         },{
-            "localizableTitle":  "חנוכה (יום ח׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ח׳)",
+                "en":  "Ḥanukkah (day 8)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  2,
                 "lengthsOfYear":  [354, 355, 384, 385]
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ו׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ו׳)",
+                "en":  "Ḥanukkah (day 6)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  1,
                 "lengthsOfYear":  [353, 383]
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ז׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ז׳)",
+                "en":  "Ḥanukkah (day 7)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  2,
                 "lengthsOfYear":  [353, 383]
             }
         },
         {
-            "localizableTitle":  "חנוכה (יום ח׳)",
+            "titles":  {
+                "he":  "חנוכה (יום ח׳)",
+                "en":  "Ḥanukkah (day 8)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  3,
                 "lengthsOfYear":  [353, 383]
             }
         },
         {
-            "localizableTitle":  "ראש חודש טבת",
+            "titles":  {
+                "he":  "ראש חודש טבת",
+                "en":  "Ro’sh Ḥodhesh Ṭeveth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  30, "lengthsOfYear":  [354, 355, 384, 385]
             },
@@ -265,31 +379,46 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש טבת",
+            "titles":  {
+                "he":  "ראש חודש טבת",
+                "en":  "Ro’sh Ḥodhesh Ṭeveth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  1, "lengthsOfYear":  [353, 383]
             }
         },
         {
-            "localizableTitle":  "צום טבת",
+            "titles":  {
+                "he":  "צום טבת",
+                "en":  "Fast of Ṭeveth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  10
             }
         },
         {
-            "localizableTitle":  "ראש חודש שבט",
+            "titles":  {
+                "he":  "ראש חודש שבט",
+                "en":  "Ro’sh Ḥodhesh Shevaṭ"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  1
             }
         },
         {
-            "localizableTitle":  "ראש השנה לאילנות",
+            "titles":  {
+                "he":  "ראש השנה לאילנות",
+                "en":  "Ro’sh hashShanah for Trees"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  15
             }
         },
         {
-            "localizableTitle":  "ראש חודש אדר",
+            "titles":  {
+                "he":  "ראש חודש אדר",
+                "en":  "Ro’sh Ḥodhesh ’Adhar"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  30,
                 "lengthsOfYear":  [353, 354, 355]
@@ -299,7 +428,10 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש אדר א׳",
+            "titles":  {
+                "he":  "ראש חודש אדר א׳",
+                "en":  "Ro’sh Ḥodhesh ’Adhar Ri’shon"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  30,
                 "lengthsOfYear":  [383, 384, 385]
@@ -309,7 +441,10 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש אדר ב׳",
+            "titles":  {
+                "he":  "ראש חודש אדר ב׳",
+                "en":  "Ro’sh Ḥodhesh ’Adhar Sheni"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  30,
                 "lengthsOfYear":  [383, 384, 385]
@@ -319,486 +454,721 @@
             }
         },
         {
-            "localizableTitle":  "יום־שנה של משה רבנו",
+            "titles":  {
+                "he":  "יום־שנה של משה רבנו",
+                "en":  "Yortsayt of Mosheh Rabbenu"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  7,
             }
         },
         {
-            "localizableTitle":  "פורים קטן",
+            "titles":  {
+                "he":  "פורים קטן",
+                "en":  "Purim Qaṭan"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  14,
             }
         },
         {
-            "localizableTitle":  "תענית אסתר",
+            "titles":  {
+                "he":  "תענית אסתר",
+                "en":  "Fast of ’Ester"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  13,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
-            "localizableTitle":  "תענית אסתר",
+            "titles":  {
+                "he":  "תענית אסתר",
+                "en":  "Fast of ’Ester"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  11,
                 "weekdays":  [5]
             }
         },
         {
-            "localizableTitle":  "ערב פורים",
+            "titles":  {
+                "he":  "ערב פורים",
+                "en":  "Eve of Purim"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  13
             }
         },
         {
-            "localizableTitle":  "פורים",
+            "titles":  {
+                "he":  "פורים",
+                "en":  "Purim"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  14
             }
         },
         {
-            "localizableTitle":  "פורים שושן",
+            "titles":  {
+                "he":  "פורים שושן",
+                "en":  "Purim Shushan"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  15
             }
         },
         {
-            "localizableTitle":  "פורים משולש",
+            "titles":  {
+                "he":  "פורים משולש",
+                "en":  "Purim Meshullash"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  16,
                 "weekdays":  [1]
             }
         },
         {
-            "localizableTitle":  "ראש חודש ניסן",
+            "titles":  {
+                "he":  "ראש חודש ניסן",
+                "en":  "Ro’sh Ḥodhesh Nisan"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  1
             }
         },
         {
-            "localizableTitle":  "ראש השנה למלכים",
+            "titles":  {
+                "he":  "ראש השנה למלכים",
+                "en":  "Ro’sh hashShanah for Kings"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  1
             }
         },
         {
-            "localizableTitle":  "תענית בכורות",
+            "titles":  {
+                "he":  "תענית בכורות",
+                "en":  "Fast of the Firstborn"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  14,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
-            "localizableTitle":  "תענית בכורות",
+            "titles":  {
+                "he":  "תענית בכורות",
+                "en":  "Fast of the Firstborn"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  12,
                 "weekdays":  [5]
             }
         },
         {
-            "localizableTitle":  "פסח (יום טוב ראשון)",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  8, "day":  15
-            }
-        },
-        {
-            "localizableTitle":  "ערב פסח",
+            "titles":  {
+                "he":  "ערב פסח",
+                "en":  "Eve of Pesaḥ"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  14
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום א׳)",
-            "includeISOCountryCodes":  ["IL"],
+            "titles":  {
+                "he":  "פסח (יום טוב ראשון)",
+                "en":  "Pesaḥ (yom ṭov ri’shon)"
+            },
             "startDateSpecification":  { "type":  "allDay",
-                "month":  8, "day":  16            }
+                "month":  8, "day":  15
+            }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ב׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום א׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 1)"
+            },
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  16
+            }
+        },
+        {
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ב׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 2)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  17
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ג׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ג׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 3)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  18
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ד׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ד׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 4)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  19
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ה׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ה׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 5)"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  20
             }
         },
         {
-            "localizableTitle":  "פסח (יום טוב אחרון)",
+            "titles":  {
+                "he":  "פסח (יום טוב אחרון)",
+                "en":  "Pesaḥ (yom ṭov ’aḥaron)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  21
             }
         },
         {
-            "localizableTitle":  "פסח (יום טוב שני)",
+            "titles":  {
+                "he":  "פסח (יום טוב שני)",
+                "en":  "Pesaḥ (yom ṭov sheni)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  16
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום א׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום א׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 1)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  17
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ב׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ב׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 2)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  18
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ג׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ג׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 3)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  19
             }
         },
         {
-            "localizableTitle":  "פסח (חול המועד, יום ד׳)",
+            "titles":  {
+                "he":  "פסח (חול המועד, יום ד׳)",
+                "en":  "Pesaḥ (ḥol hammo‘edh, day 4)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  20
             }
         },
         {
-            "localizableTitle":  "פסח (יום טוב אחרון שני)",
+            "titles":  {
+                "he":  "פסח (יום טוב אחרון שני)",
+                "en":  "Pesaḥ (yom ṭov ’aḥaron sheni)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  22
             }
         },
         {
-            "localizableTitle":  "מימונה",
+            "titles":  {
+                "he":  "מימונה/אסרו חג פסח",
+                "en":  "Mimunah/’Isru Ḥagh Pesaḥ"
+            },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  22
             }
         },
         {
-            "localizableTitle":  "מימונה",
+            "titles":  {
+                "he":  "מימונה/אסרו חג פסח",
+                "en":  "Mimunah/’Isru Ḥagh Pesaḥ"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  23
             }
         },
         {
-            "localizableTitle":  "א׳ בעומר",
+            "titles":  {
+                "he":  "א׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 1)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  16
             }
         },
         {
-            "localizableTitle":  "ב׳ בעומר",
+            "titles":  {
+                "he":  "ב׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 2)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  17
             }
         },
         {
-            "localizableTitle":  "ג׳ בעומר",
+            "titles":  {
+                "he":  "ג׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 3)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  18
             }
         },
         {
-            "localizableTitle":  "ד׳ בעומר",
+            "titles":  {
+                "he":  "ד׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 4)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  19
             }
         },
         {
-            "localizableTitle":  "ה׳ בעומר",
+            "titles":  {
+                "he":  "ה׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 5)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  20
             }
         },
         {
-            "localizableTitle":  "ו׳ בעומר",
+            "titles":  {
+                "he":  "ו׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 6)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  21
             }
         },
         {
-            "localizableTitle":  "ז׳ בעומר",
+            "titles":  {
+                "he":  "ז׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 7)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  22
             }
         },
         {
-            "localizableTitle":  "ח׳ בעומר",
+            "titles":  {
+                "he":  "ח׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 8)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  23
             }
         },
         {
-            "localizableTitle":  "ט׳ בעומר",
+            "titles":  {
+                "he":  "ט׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 9)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  24
             }
         },
         {
-            "localizableTitle":  "י׳ בעומר",
+            "titles":  {
+                "he":  "י׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 10)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  25
             }
         },
         {
-            "localizableTitle":  "י״א בעומר",
+            "titles":  {
+                "he":  "י״א בעומר",
+                "en":  "Counting of the ‘Omer (day 11)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  26
             }
         },
         {
-            "localizableTitle":  "י״ב בעומר",
+            "titles":  {
+                "he":  "י״ב בעומר",
+                "en":  "Counting of the ‘Omer (day 12)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  27
             }
         },
         {
-            "localizableTitle":  "י״ג בעומר",
+            "titles":  {
+                "he":  "י״ג בעומר",
+                "en":  "Counting of the ‘Omer (day 13)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  28
             }
         },
         {
-            "localizableTitle":  "י״ד בעומר",
+            "titles":  {
+                "he":  "י״ד בעומר",
+                "en":  "Counting of the ‘Omer (day 14)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  29
             }
         },
         {
-            "localizableTitle":  "ט״ו בעומר",
+            "titles":  {
+                "he":  "ט״ו בעומר",
+                "en":  "Counting of the ‘Omer (day 15)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  30
             }
         },
         {
-            "localizableTitle":  "ט״ז בעומר",
+            "titles":  {
+                "he":  "ט״ז בעומר",
+                "en":  "Counting of the ‘Omer (day 16)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  1
             }
         },
         {
-            "localizableTitle":  "י״ז בעומר",
+            "titles":  {
+                "he":  "י״ז בעומר",
+                "en":  "Counting of the ‘Omer (day 17)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  2
             }
         },
         {
-            "localizableTitle":  "י״ח בעומר",
+            "titles":  {
+                "he":  "י״ח בעומר",
+                "en":  "Counting of the ‘Omer (day 18)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  3
             }
         },
         {
-            "localizableTitle":  "י״ט בעומר",
+            "titles":  {
+                "he":  "י״ט בעומר",
+                "en":  "Counting of the ‘Omer (day 19)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  4
             }
         },
         {
-            "localizableTitle":  "כ׳ בעומר",
+            "titles":  {
+                "he":  "כ׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 20)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  5
             }
         },
         {
-            "localizableTitle":  "כ״א בעומר",
+            "titles":  {
+                "he":  "כ״א בעומר",
+                "en":  "Counting of the ‘Omer (day 21)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  6
             }
         },
         {
-            "localizableTitle":  "כ״ב בעומר",
+            "titles":  {
+                "he":  "כ״ב בעומר",
+                "en":  "Counting of the ‘Omer (day 22)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  7
             }
         },
         {
-            "localizableTitle":  "כ״ג בעומר",
+            "titles":  {
+                "he":  "כ״ג בעומר",
+                "en":  "Counting of the ‘Omer (day 23)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  8
             }
         },
         {
-            "localizableTitle":  "כ״ד בעומר",
+            "titles":  {
+                "he":  "כ״ד בעומר",
+                "en":  "Counting of the ‘Omer (day 24)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  9
             }
         },
         {
-            "localizableTitle":  "כ״ה בעומר",
+            "titles":  {
+                "he":  "כ״ה בעומר",
+                "en":  "Counting of the ‘Omer (day 25)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  10
             }
         },
         {
-            "localizableTitle":  "כ״ו בעומר",
+            "titles":  {
+                "he":  "כ״ו בעומר",
+                "en":  "Counting of the ‘Omer (day 26)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  11
             }
         },
         {
-            "localizableTitle":  "כ״ז בעומר",
+            "titles":  {
+                "he":  "כ״ז בעומר",
+                "en":  "Counting of the ‘Omer (day 27)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  12
             }
         },
         {
-            "localizableTitle":  "כ״ח בעומר",
+            "titles":  {
+                "he":  "כ״ח בעומר",
+                "en":  "Counting of the ‘Omer (day 28)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  13
             }
         },
         {
-            "localizableTitle":  "כ״ט בעומר",
+            "titles":  {
+                "he":  "כ״ט בעומר",
+                "en":  "Counting of the ‘Omer (day 29)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  14
             }
         },
         {
-            "localizableTitle":  "ל׳ בעומר",
+            "titles":  {
+                "he":  "ל׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 30)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  15
             }
         },
         {
-            "localizableTitle":  "ל״א בעומר",
+            "titles":  {
+                "he":  "ל״א בעומר",
+                "en":  "Counting of the ‘Omer (day 31)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  16
             }
         },
         {
-            "localizableTitle":  "ל״ב בעומר",
+            "titles":  {
+                "he":  "ל״ב בעומר",
+                "en":  "Counting of the ‘Omer (day 32)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  17
             }
         },
         {
-            "localizableTitle":  "ל״ג בעומר",
+            "titles":  {
+                "he":  "ל״ג בעומר",
+                "en":  "Counting of the ‘Omer (day 33) (Lagh ba‘Omer)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  18
             }
         },
         {
-            "localizableTitle":  "ל״ד בעומר",
+            "titles":  {
+                "he":  "ל״ד בעומר",
+                "en":  "Counting of the ‘Omer (day 34)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  19
             }
         },
         {
-            "localizableTitle":  "ל״ה בעומר",
+            "titles":  {
+                "he":  "ל״ה בעומר",
+                "en":  "Counting of the ‘Omer (day 35)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  20
             }
         },
         {
-            "localizableTitle":  "ל״ו בעומר",
+            "titles":  {
+                "he":  "ל״ו בעומר",
+                "en":  "Counting of the ‘Omer (day 36)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  21
             }
         },
         {
-            "localizableTitle":  "ל״ז בעומר",
+            "titles":  {
+                "he":  "ל״ז בעומר",
+                "en":  "Counting of the ‘Omer (day 37)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  22
             }
         },
         {
-            "localizableTitle":  "ל״ח בעומר",
+            "titles":  {
+                "he":  "ל״ח בעומר",
+                "en":  "Counting of the ‘Omer (day 38)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  23
             }
         },
         {
-            "localizableTitle":  "ל״ט בעומר",
+            "titles":  {
+                "he":  "ל״ט בעומר",
+                "en":  "Counting of the ‘Omer (day 39)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  24
             }
         },
         {
-            "localizableTitle":  "מ׳ בעומר",
+            "titles":  {
+                "he":  "מ׳ בעומר",
+                "en":  "Counting of the ‘Omer (day 40)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  25
             }
         },
         {
-            "localizableTitle":  "מ״א בעומר",
+            "titles":  {
+                "he":  "מ״א בעומר",
+                "en":  "Counting of the ‘Omer (day 41)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  26
             }
         },
         {
-            "localizableTitle":  "מ״ב בעומר",
+            "titles":  {
+                "he":  "מ״ב בעומר",
+                "en":  "Counting of the ‘Omer (day 42)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  27
             }
         },
         {
-            "localizableTitle":  "מ״ג בעומר",
+            "titles":  {
+                "he":  "מ״ג בעומר",
+                "en":  "Counting of the ‘Omer (day 43)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  28
             }
         },
         {
-            "localizableTitle":  "מ״ד בעומר",
+            "titles":  {
+                "he":  "מ״ד בעומר",
+                "en":  "Counting of the ‘Omer (day 44)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  29
             }
         },
         {
-            "localizableTitle":  "מ״ה בעומר",
+            "titles":  {
+                "he":  "מ״ה בעומר",
+                "en":  "Counting of the ‘Omer (day 45)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  1
             }
         },
         {
-            "localizableTitle":  "מ״ו בעומר",
+            "titles":  {
+                "he":  "מ״ו בעומר",
+                "en":  "Counting of the ‘Omer (day 46)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  2
             }
         },
         {
-            "localizableTitle":  "מ״ז בעומר",
+            "titles":  {
+                "he":  "מ״ז בעומר",
+                "en":  "Counting of the ‘Omer (day 47)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  3
             }
         },
         {
-            "localizableTitle":  "מ״ח בעומר",
+            "titles":  {
+                "he":  "מ״ח בעומר",
+                "en":  "Counting of the ‘Omer (day 48)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  4
             }
         },
         {
-            "localizableTitle":  "מ״ט בעומר",
+            "titles":  {
+                "he":  "מ״ט בעומר",
+                "en":  "Counting of the ‘Omer (day 49)"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  5
             }
         },
         {
-            "localizableTitle":  "ראש חודש אייר",
+            "titles":  {
+                "he":  "ראש חודש אייר",
+                "en":  "Ro’sh Ḥodhesh ’Iyyar"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  30
             },
@@ -807,38 +1177,56 @@
             }
         },
         {
-            "localizableTitle":  "פסח שני",
+            "titles":  {
+                "he":  "פסח שני",
+                "en":  "Pesaḥ Sheni"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  14
             }
         },
         {
-            "localizableTitle":  "ראש חודש סיון",
+            "titles":  {
+                "he":  "ראש חודש סיון",
+                "en":  "Ro’sh Ḥodhesh Siwan"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  1
             }
         },
         {
-            "localizableTitle":  "ערב שבועות",
+            "titles":  {
+                "he":  "ערב שבועות",
+                "en":  "Eve of Shavu‘oth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  5
             }
         },
         {
-            "localizableTitle":  "שבועות",
+            "titles":  {
+                "he":  "שבועות",
+                "en":  "Shavu‘oth"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  6
             }
         },
         {
-            "localizableTitle":  "שבועות (יום טוב שני)",
+            "titles":  {
+                "he":  "שבועות (יום טוב שני)",
+                "en":  "Shavu‘oth (yom ṭov sheni)"
+            },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  7
             }
         },
         {
-            "localizableTitle":  "ראש חודש תמוז",
+            "titles":  {
+                "he":  "ראש חודש תמוז",
+                "en":  "Ro’sh Ḥodhesh Tammuz"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  30
             },
@@ -847,35 +1235,50 @@
             }
         },
         {
-            "localizableTitle":  "צום תמוז",
+            "titles":  {
+                "he":  "צום תמוז",
+                "en":  "Fast of Tammuz"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  17,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
-            "localizableTitle":  "צום תמוז",
+            "titles":  {
+                "he":  "צום תמוז",
+                "en":  "Fast of Tammuz"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  18,
                 "weekdays":  [1]
             }
         },
         {
-            "localizableTitle":  "צום אב",
+            "titles":  {
+                "he":  "צום אב",
+                "en":  "Fast of ’Av"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  9,
                 "weekdays":  [1, 2, 3, 4, 5, 6]
             }
         },
         {
-            "localizableTitle":  "צום אב",
+            "titles":  {
+                "he":  "צום אב",
+                "en":  "Fast of ’Av"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  10,
                 "weekdays":  [1]
             }
         },
         {
-            "localizableTitle":  "ט׳ ימים",
+            "titles":  {
+                "he":  "ט׳ ימים",
+                "en":  "Nine Days"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  1
             },
@@ -884,7 +1287,10 @@
             }
         },
         {
-            "localizableTitle":  "ג׳ שבועות",
+            "titles":  {
+                "he":  "ג׳ שבועות",
+                "en":  "Three Weeks"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  17
             },
@@ -893,19 +1299,28 @@
             }
         },
         {
-            "localizableTitle":  "ראש חודש אב",
+            "titles":  {
+                "he":  "ראש חודש אב",
+                "en":  "Ro’sh Ḥodhesh ’Av"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  1
             }
         },
         {
-            "localizableTitle":  "יום האהבה",
+            "titles":  {
+                "he":  "יום האהבה",
+                "en":  "Love Day"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  15
             }
         },
         {
-            "localizableTitle":  "ראש חודש אלול",
+            "titles":  {
+                "he":  "ראש חודש אלול",
+                "en":  "Ro’sh Ḥodhesh ’Elul"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  30
             },
@@ -914,13 +1329,19 @@
             }
         },
         {
-            "localizableTitle":  "ראש השנה למעשר בהמות",
+            "titles":  {
+                "he":  "ראש השנה למעשר בהמות",
+                "en":  "Ro’sh hashShanah for Animal Tithes"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "day":  1
             }
         },
         {
-            "localizableTitle":  "ערב ראש השנה",
+            "titles":  {
+                "he":  "ערב ראש השנה",
+                "en":  "Eve of Ro’sh hashShanah"
+            },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "day":  29
             }
