@@ -9,139 +9,139 @@
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {
-            "localizableTitle":  "יום שבו נתפס רבי עקיבא והייתה שעת שמד",
+            "titles":  {"he":  "יום שבו נתפס רבי עקיבא והייתה שעת שמד"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  5
             }
         },
         {
-            "localizableTitle":  "יום שבו נגזרה גזירה על אבותינו שימותו ברעב בחרב ובדבר בשל מעשה העגל",
+            "titles":  {"he":  "יום שבו נגזרה גזירה על אבותינו שימותו ברעב בחרב ובדבר בשל מעשה העגל"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  7
             }
         },
         {
-            "localizableTitle":  "יום שבו עוורו את המלך צדקיהו והמיתו את בניו",
+            "titles":  {"he":  "יום שבו עוורו את המלך צדקיהו והמיתו את בניו"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  7
             }
         },
         {
-            "localizableTitle":  "יום הזיכרון לרחל אימנו",
+            "titles":  {"he":  "יום הזיכרון לרחל אימנו"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  11
             }
         },
         {
-            "localizableTitle":  "יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו",
+            "titles":  {"he":  "יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  28
             }
         },
         {
-            "localizableTitle":  "יום שבו נכתבה התורה בתרגום השבעים",
+            "titles":  {"he":  "יום שבו נכתבה התורה בתרגום השבעים"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  8
             }
         },
         {
-            "localizableTitle":  "יום־שנה של עזרא הסופר ונחמיה בן חכליה",
+            "titles":  {"he":  "יום־שנה של עזרא הסופר ונחמיה בן חכליה"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  9
             }
         },
         {
-            "localizableTitle":  "יום־שנה של הזקנים שהיו בימי יהושע בן נון",
+            "titles":  {"he":  "יום־שנה של הזקנים שהיו בימי יהושע בן נון"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  5
             }
         },
         {
-            "localizableTitle":  "יום שבו המלחמה בין שבטי ישראל לשבט בנימין בעקבות פרשיית פילגש בגבעה",
+            "titles":  {"he":  "יום שבו המלחמה בין שבטי ישראל לשבט בנימין בעקבות פרשיית פילגש בגבעה"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  23
             }
         },
         {
-            "localizableTitle":  "יום שבו פרצה המחלוקת בין בית הלל לבית שמאי",
+            "titles":  {"he":  "יום שבו פרצה המחלוקת בין בית הלל לבית שמאי"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  9,
             }
         },
         {
-            "localizableTitle":  "יום־שנה של נדב ואביהו",
+            "titles":  {"he":  "יום־שנה של נדב ואביהו"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  1
             }
         },
         {
-            "localizableTitle":  "יום־שנה של מרים הנביאה",
+            "titles":  {"he":  "יום־שנה של מרים הנביאה"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  10
             }
         },
         {
-            "localizableTitle":  "יום־שנה של עלי הכהן ושני בניו",
+            "titles":  {"he":  "יום־שנה של עלי הכהן ושני בניו"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  10
             }
         },
         {
-            "localizableTitle":  "יום שבו ארון הברית נשבה",
+            "titles":  {"he":  "יום שבו ארון הברית נשבה"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  10
             }
         },
         {
-            "localizableTitle":  "יום־שנה של שמואל הנביא",
+            "titles":  {"he":  "יום־שנה של שמואל הנביא"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  28
             }
         },
         {
-            "localizableTitle":  "תענית תקופת חמלניצקי",
+            "titles":  {"he":  "תענית תקופת חמלניצקי"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  20
             }
         },
         {
-            "localizableTitle":  "יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט",
+            "titles":  {"he":  "יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  23
             }
         },
         {
-            "localizableTitle":  "יום־שנה של רבן שמעון בן גמליאל הזקן, רבי ישמעאל, ורבי חנינא סגן הכהנים",
+            "titles":  {"he":  "יום־שנה של רבן שמעון בן גמליאל הזקן, רבי ישמעאל, ורבי חנינא סגן הכהנים"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  25
             }
         },
         {
-            "localizableTitle":  "יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו",
+            "titles":  {"he":  "יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  27
             }
         },
         {
-            "localizableTitle":  "יום שבו כבה הנר המערבי בימי המלך אחז",
+            "titles":  {"he":  "יום שבו כבה הנר המערבי בימי המלך אחז"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  18
             }
         },
         {
-            "localizableTitle":  "יום־שנה של עשרת המרגלים",
+            "titles":  {"he":  "יום־שנה של עשרת המרגלים"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "day":  17
             }
         },
         {
-            "localizableTitle":  "יום־שנה של יהושע בן נון",
+            "titles":  {"he":  "יום־שנה של יהושע בן נון"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  26
             }
         },
         {
-            "localizableTitle":  "יום־שנה של אהרן הכהן",
+            "titles":  {"he":  "יום־שנה של אהרן הכהן"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  1
             }
