@@ -70,8 +70,8 @@ struct ASAInternalEventsFile: Codable {
 // MARK: - ASAInternalEventSpecification
 
 class ASAInternalEventSpecification: Codable {
-    var title:  String?
-    var localizableTitle:  String?
+//    var title:  String?
+//    var localizableTitle:  String?
     
     var titles:  Dictionary<String, String>?
     

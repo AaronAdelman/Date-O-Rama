@@ -211,9 +211,15 @@ class ASAJSONFileEventSource {
                     return thirdAttempt
                 }
             }
+
+            let fourthAttempt = titles["en"]
+            if fourthAttempt != nil {
+                return fourthAttempt
+            }
         }
         
-        return eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
+        //        return eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
+        return nil
     }
     
     func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?) -> Array<ASAEvent> {
