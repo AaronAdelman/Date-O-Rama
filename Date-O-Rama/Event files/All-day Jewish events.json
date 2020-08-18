@@ -23,7 +23,7 @@
         {
             "titles":  {
                 "he":  "ראש השנה (יום א׳)",
-                "en":  "Ro’sh hashShanah (day 1)"
+                "en":  "Ro’sh hashShanah (New Year) (day 1)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  1
@@ -32,7 +32,7 @@
         {
             "titles":  {
                 "he":  "ראש השנה (יום ב׳)",
-                "en":  "Ro’sh hashShanah (day 2)"
+                "en":  "Ro’sh hashShanah (New Year) (day 2)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  2
@@ -59,7 +59,7 @@
         {
             "titles":  {
                 "he":  "ערב יום כיפור",
-                "en":  "Eve of Yom Kippur"
+                "en":  "Eve of Yom Kippur (Day of Atonement)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  9
@@ -68,7 +68,7 @@
         {
             "titles":  {
                 "he":  "יום כיפור",
-                "en":  "Yom Kippur"
+                "en":  "Yom Kippur (Day of Atonement)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  10
@@ -408,7 +408,7 @@
         {
             "titles":  {
                 "he":  "ראש השנה לאילנות",
-                "en":  "Ro’sh hashShanah for Trees"
+                "en":  "Ro’sh hashShanah (New Year) for Trees"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  15
@@ -540,7 +540,7 @@
         {
             "titles":  {
                 "he":  "ראש השנה למלכים",
-                "en":  "Ro’sh hashShanah for Kings"
+                "en":  "Ro’sh hashShanah (New Year) for Kings"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  1
@@ -569,7 +569,7 @@
         {
             "titles":  {
                 "he":  "ערב פסח",
-                "en":  "Eve of Pesaḥ"
+                "en":  "Eve of Pesaḥ (Passover)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  14
@@ -578,7 +578,7 @@
         {
             "titles":  {
                 "he":  "פסח (יום טוב ראשון)",
-                "en":  "Pesaḥ (yom ṭov ri’shon)"
+                "en":  "Pesaḥ (Passover) (yom ṭov ri’shon)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  15
@@ -587,7 +587,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום א׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 1)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 1)"
             },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -597,7 +597,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ב׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 2)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 2)"
             },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -607,7 +607,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ג׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 3)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 3)"
             },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -617,7 +617,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ד׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 4)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 4)"
             },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -627,7 +627,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ה׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 5)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 5)"
             },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -637,7 +637,7 @@
         {
             "titles":  {
                 "he":  "פסח (יום טוב אחרון)",
-                "en":  "Pesaḥ (yom ṭov ’aḥaron)"
+                "en":  "Pesaḥ (Passover) (yom ṭov ’aḥaron)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  21
@@ -646,7 +646,7 @@
         {
             "titles":  {
                 "he":  "פסח (יום טוב שני)",
-                "en":  "Pesaḥ (yom ṭov sheni)"
+                "en":  "Pesaḥ (Passover) (yom ṭov sheni)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -656,7 +656,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום א׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 1)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 1)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -666,7 +666,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ב׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 2)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 2)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -676,7 +676,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ג׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 3)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 3)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -686,7 +686,7 @@
         {
             "titles":  {
                 "he":  "פסח (חול המועד, יום ד׳)",
-                "en":  "Pesaḥ (ḥol hammo‘edh, day 4)"
+                "en":  "Pesaḥ (Passover) (ḥol hammo‘edh, day 4)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -696,7 +696,7 @@
         {
             "titles":  {
                 "he":  "פסח (יום טוב אחרון שני)",
-                "en":  "Pesaḥ (yom ṭov ’aḥaron sheni)"
+                "en":  "Pesaḥ (Passover) (yom ṭov ’aḥaron sheni)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -706,7 +706,7 @@
         {
             "titles":  {
                 "he":  "מימונה/אסרו חג פסח",
-                "en":  "Mimunah/’Isru Ḥagh Pesaḥ"
+                "en":  "Mimunah/’Isru Ḥagh Pesaḥ (Passover)"
             },
             "includeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -716,7 +716,7 @@
         {
             "titles":  {
                 "he":  "מימונה/אסרו חג פסח",
-                "en":  "Mimunah/’Isru Ḥagh Pesaḥ"
+                "en":  "Mimunah/’Isru Ḥagh Pesaḥ (Passover)"
             },
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
@@ -1179,7 +1179,7 @@
         {
             "titles":  {
                 "he":  "פסח שני",
-                "en":  "Pesaḥ Sheni"
+                "en":  "Pesaḥ (Passover) Sheni"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  14
@@ -1331,7 +1331,7 @@
         {
             "titles":  {
                 "he":  "ראש השנה למעשר בהמות",
-                "en":  "Ro’sh hashShanah for Animal Tithes"
+                "en":  "Ro’sh hashShanah (New Year) for Animal Tithes"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "day":  1
@@ -1340,7 +1340,7 @@
         {
             "titles":  {
                 "he":  "ערב ראש השנה",
-                "en":  "Eve of Ro’sh hashShanah"
+                "en":  "Eve of Ro’sh hashShanah (New Year)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  13, "day":  29
