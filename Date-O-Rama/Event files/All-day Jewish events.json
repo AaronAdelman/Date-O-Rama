@@ -408,7 +408,7 @@
         {
             "titles":  {
                 "he":  "ראש השנה לאילנות",
-                "en":  "Ro’sh hashShanah (New Year) for Trees"
+                "en":  "Ro’sh hashShanah (New Year) for Trees (Ṭu biShvaṭ)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  15
@@ -1310,7 +1310,7 @@
         {
             "titles":  {
                 "he":  "יום האהבה",
-                "en":  "Love Day"
+                "en":  "Love Day (Ṭu be’Av)"
             },
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  15
