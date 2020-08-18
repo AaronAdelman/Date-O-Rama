@@ -119,6 +119,40 @@ extension ASAInternalEventSpecification {
     } // func match(ISOCountryCode:  String?) -> Bool
 } // extension ASAInternalEventSpecification
 
+extension ASAInternalEventSpecification {
+    func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
+        if self.titles != nil {
+            let titles = self.titles!
+
+            let userLocaleIdentifier = requestedLocaleIdentifier == "" ? Locale.autoupdatingCurrent.identifier : requestedLocaleIdentifier
+            let firstAttempt = titles[userLocaleIdentifier]
+            if firstAttempt != nil {
+                return firstAttempt
+            }
+
+            let userLanguageCode = userLocaleIdentifier.localeLanguageCode()
+            if userLanguageCode != nil {
+                let secondAttempt = titles[userLanguageCode!]
+                if secondAttempt != nil {
+                    return secondAttempt
+                }
+            }
+
+            let thirdAttempt = titles[eventsFileDefaultLocaleIdentifier]
+            if thirdAttempt != nil {
+                return thirdAttempt
+            }
+
+            let fourthAttempt = titles["en"]
+            if fourthAttempt != nil {
+                return fourthAttempt
+            }
+        }
+
+        return nil
+    } // eventsFileDefaultLocaleIdentifier:  String) -> String?
+} // extension ASAInternalEventSpecification
+
 
 // MARK: -
 

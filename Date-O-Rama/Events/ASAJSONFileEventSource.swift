@@ -34,14 +34,14 @@ class ASAJSONFileEventSource {
     
 //    var eventSourceCode: String
     
-    func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?) -> Array<ASAEvent> {
+    func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
         var now = startDate.noon(timeZone: locationData.timeZone!).oneDayBefore
         var result:  Array<ASAEvent> = []
         var oldNow = now
         repeat {
-            let temp = self.eventDetails(date: now, locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!, ISOCountryCode: ISOCountryCode)
+            let temp = self.eventDetails(date: now, locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!, ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
             for event in temp {
                 //                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
                 
@@ -183,46 +183,7 @@ class ASAJSONFileEventSource {
         return true
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool
     
-    fileprivate func eventTitle(_ eventSpecification: ASAInternalEventSpecification, defaultLocale:  String) -> String? {
-        // TODO:  Make it so the user can choose a locale
-        
-        if eventSpecification.titles != nil {
-            let titles = eventSpecification.titles!
-            
-            let autoupdatingCurrentLocale: Locale = Locale.autoupdatingCurrent
-            let userLocale = autoupdatingCurrentLocale.identifier
-            let firstAttempt = titles[userLocale]
-            if firstAttempt != nil {
-                return firstAttempt
-            }
-            
-            let userLanguageCode = autoupdatingCurrentLocale.languageCode
-            if userLanguageCode != nil {
-                let secondAttempt = titles[userLanguageCode!]
-                if secondAttempt != nil {
-                    return secondAttempt
-                }
-            }
-            
-            let defaultLocale = eventsFile?.defaultLocale
-            if defaultLocale != nil {
-                let thirdAttempt = titles[defaultLocale!]
-                if thirdAttempt != nil {
-                    return thirdAttempt
-                }
-            }
-
-            let fourthAttempt = titles["en"]
-            if fourthAttempt != nil {
-                return fourthAttempt
-            }
-        }
-        
-        //        return eventSpecification.localizableTitle != nil ? NSLocalizedString(eventSpecification.localizableTitle!, comment: "") :  eventSpecification.title
-        return nil
-    }
-    
-    func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?) -> Array<ASAEvent> {
+    func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
         let location = locationData.location!
         let timeZone = locationData.timeZone!
         
@@ -262,7 +223,8 @@ class ASAJSONFileEventSource {
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
-                    let title = eventTitle(eventSpecification, defaultLocale: self.eventsFile!.defaultLocale)
+//                    let title = eventTitle(eventSpecification, defaultLocale: self.eventsFile!.defaultLocale)
+                    let title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     let color = self.calendarColor()
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate

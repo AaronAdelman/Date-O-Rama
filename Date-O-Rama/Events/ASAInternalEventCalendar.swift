@@ -25,6 +25,8 @@ class ASAInternalEventCalendar:  ASALocatedObject {
     } // var eventSourceCode
     
     @Published var builtIn:  Bool = true
+
+    @Published var localeIdentifier:  String = ""
     
     public func dictionary() -> Dictionary<String, Any> {
         //        debugPrint(#file, #function)
@@ -34,7 +36,8 @@ class ASAInternalEventCalendar:  ASALocatedObject {
             EVENT_SOURCE_CODE_KEY:  self.eventSourceCode,
             TIME_ZONE_KEY:  effectiveTimeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
-            BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING
+            BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING,
+            LOCALE_KEY:  localeIdentifier
             ] as [String : Any]
         
         if location != nil {
@@ -102,6 +105,11 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         let builtInString:  String = (dictionary[BUILTIN_KEY] ?? FALSE_STRING) as! String
         let builtIn = (builtInString == TRUE_STRING)
         newEventCalendar.builtIn = builtIn
+
+        let localeIdentifier = dictionary[LOCALE_KEY] as? String
+        if localeIdentifier != nil {
+            newEventCalendar.localeIdentifier = localeIdentifier!
+        }
         
         let UUIDString = dictionary[UUID_KEY] as? String
         if UUIDString != nil {
@@ -156,11 +164,11 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         return self.eventSource!.eventSourceName()
     } // func eventSourceName() -> String
     
-    func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?) -> Array<ASAEvent> {
+    func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
         if eventSource == nil || self.locationData.location == nil {
             return []
         }
         
-        return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode)
+        return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 } // class ASAInternalEventCalendar

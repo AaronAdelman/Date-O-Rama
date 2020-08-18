@@ -44,7 +44,7 @@ struct ASAEventsView: View {
         }
         
         for eventCalendar in userData.internalEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode)
+            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier)
         } // for eventCalendar in userData.internalEventCalendars
         
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
