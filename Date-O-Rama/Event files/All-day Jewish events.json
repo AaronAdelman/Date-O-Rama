@@ -222,6 +222,26 @@
         },
         {
             "titles":  {
+                "he":  "אסרו חג שמיני עצרת",
+                "en":  "’Isru Ḥagh Shemini ‘Aṣereth"
+            },
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  23
+            }
+        },
+        {
+            "titles":  {
+                "he":  "אסרו חג שמחת תורה",
+                "en":  "’Isru Ḥagh Simḥath Torah"
+            },
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  24
+            }
+        },
+        {
+            "titles":  {
                 "he":  "ראש חודש חשון",
                 "en":  "Ro’sh Ḥodhesh Ḥeshwan"
             },
@@ -1220,6 +1240,26 @@
             "excludeISOCountryCodes":  ["IL"],
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  7
+            }
+        },
+        {
+            "titles":  {
+                "he":  "אסרו חג שבועות",
+                "en":  "’Isru Ḥagh Shavu‘oth"
+            },
+            "includeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  7
+            }
+        },
+        {
+            "titles":  {
+                "he":  "אסרו חג שבועות",
+                "en":  "’Isru Ḥagh Shavu‘oth"
+            },
+            "excludeISOCountryCodes":  ["IL"],
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  8
             }
         },
         {
