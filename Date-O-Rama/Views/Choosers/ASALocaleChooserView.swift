@@ -26,8 +26,8 @@ struct ASALocaleChooserView: View {
     
     func locales(option:  Int) -> Array<ASALocaleRecord> {
         if providedLocaleIdentifiers != nil {
-            return
-                [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))] +  self.localeData.sortedLocalizedRecords(identifiers:  providedLocaleIdentifiers!)
+            let result: [ASALocaleRecord] = self.localeData.defaultLocaleRecords() +  self.localeData.sortedLocalizedRecords(identifiers:  providedLocaleIdentifiers!)
+            return result
         }
 
         switch selection {

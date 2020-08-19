@@ -38,6 +38,10 @@ struct ASALocaleData {
     var recordsForUsersLanguage: Array<ASALocaleRecord> = []
     var recordsForUsersRegion:  Array<ASALocaleRecord> = []
     
+    public func defaultLocaleRecords() -> [ASALocaleRecord] {
+        return [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))]
+    }
+
     init() {
         let standardLocaleIdentifiers = [
             "ar_001",
@@ -83,7 +87,7 @@ struct ASALocaleData {
         ]
         let sortedStandardLocaleRecords = self.sortedLocalizedRecords(identifiers: standardLocaleIdentifiers)
         
-        let defaultRecords: [ASALocaleRecord] = [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))]
+        let defaultRecords: [ASALocaleRecord] = defaultLocaleRecords()
         let availableLocaleIdentifiers = Locale.availableIdentifiers
         let sortedAvailableLocaleRecords = self.sortedLocalizedRecords(identifiers: availableLocaleIdentifiers)
         self.allRecords = defaultRecords + sortedAvailableLocaleRecords

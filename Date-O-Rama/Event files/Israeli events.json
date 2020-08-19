@@ -1,6 +1,6 @@
 {
     "localizableTitle":  "Israeli events",
-    "supportedLocales":  ["he"],
+    "supportedLocales":  ["he", "en"],
     "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",
     "calendarColorRed":  0.0,

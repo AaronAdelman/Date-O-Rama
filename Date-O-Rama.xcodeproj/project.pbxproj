@@ -345,14 +345,14 @@
 			children = (
 				A5E3606324C71FBC0000A268 /* All-day Jewish events.json */,
 				A584C8FF24B646210014CE2E /* Daily Jewish events.json */,
-				A5E3606524C756FF0000A268 /* Israeli events.json */,
-				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
-				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
-				A533798024B2333400340C0B /* Solar events.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islamic holidays (Islamic calendar).json */,
 				A5D3015924EBDFF7003E79E9 /* Islamic holidays (Islamic civil calendar).json */,
 				A5D3015B24EBDFF8003E79E9 /* Islamic holidays (Islamic tabular calendar).json */,
 				A5D3015C24EBDFF8003E79E9 /* Islamic holidays (Islamic Umm Al-Qura calendar).json */,
+				A5E3606524C756FF0000A268 /* Israeli events.json */,
+				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
+				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
+				A533798024B2333400340C0B /* Solar events.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
