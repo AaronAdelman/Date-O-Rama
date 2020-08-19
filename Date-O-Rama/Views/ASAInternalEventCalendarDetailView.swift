@@ -18,6 +18,13 @@ struct ASAInternalEventCalendarDetailView: View {
 //                Text(selectedEventCalendar.eventSourceCode).font(.headline)
                 Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }
+
+            NavigationLink(destination: ASALocaleChooserView(row: selectedEventCalendar, providedLocaleIdentifiers: selectedEventCalendar.supportedLocales)) {
+                HStack {
+                    Text(verbatim:  selectedEventCalendar.localeIdentifier.localeCountryCodeFlag())
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedEventCalendar.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+                }
+            }
             
             ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
             

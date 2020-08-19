@@ -18,6 +18,12 @@ fileprivate let FALSE_STRING = "false"
 class ASAInternalEventCalendar:  ASALocatedObject {
     private var eventSource:  ASAJSONFileEventSource?
 
+    public var supportedLocales:  Array<String>? {
+        get {
+            return self.eventSource?.eventsFile?.supportedLocales
+        } // get
+    } // var supportedLocales
+
     @Published var eventSourceCode:  String = "Solar events" {
         didSet {
             self.eventSource = ASAInternalEventCalendarFactory.eventCalendarSource(eventSourceCode:  self.eventSourceCode)
@@ -26,7 +32,7 @@ class ASAInternalEventCalendar:  ASALocatedObject {
     
     @Published var builtIn:  Bool = true
 
-    @Published var localeIdentifier:  String = ""
+//    @Published var localeIdentifier:  String = ""
     
     public func dictionary() -> Dictionary<String, Any> {
         //        debugPrint(#file, #function)

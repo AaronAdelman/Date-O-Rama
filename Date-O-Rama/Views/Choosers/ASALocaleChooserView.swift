@@ -12,8 +12,10 @@ import CoreLocation
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
-    @ObservedObject var row:  ASARow
+//    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASALocatedObject
 //    var deviceLocation:  CLLocation?
+    @State var providedLocaleIdentifiers:  Array<String>?
     
     let ALL_LOCALES            = 0
     let APPLE_LOCALES          = 1
@@ -23,6 +25,11 @@ struct ASALocaleChooserView: View {
     @State var selection = 0 // All locales
     
     func locales(option:  Int) -> Array<ASALocaleRecord> {
+        if providedLocaleIdentifiers != nil {
+            return
+                [ASALocaleRecord(id: "", nativeName: NSLocalizedString("DEFAULT_LOCALE", comment: ""))] +  self.localeData.sortedLocalizedRecords(identifiers:  providedLocaleIdentifiers!)
+        }
+
         switch selection {
         case ALL_LOCALES:
             return self.localeData.allRecords
@@ -43,6 +50,7 @@ struct ASALocaleChooserView: View {
     
     var body: some View {
         List {
+            if providedLocaleIdentifiers == nil {
             Picker(selection: $selection, label:
                 Text("Show locales:"), content: {
                     Text("All locales").tag(ALL_LOCALES)
@@ -50,12 +58,13 @@ struct ASALocaleChooserView: View {
                     Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
                     Text("User’s region locales").tag(USERS_REGION_LOCALES)
             })
+            }
 
             ForEach(self.locales(option: selection)) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
             } // ForEach(localeData.records)
         } // List
-            .navigationBarTitle(Text(row.dateString(now: Date()) ))
+//            .navigationBarTitle(Text(row.dateString(now: Date()) ))
     } // var body
 } // struct ASALocalePickerView
 
@@ -63,7 +72,8 @@ struct ASALocaleCell: View {
     let localeString: String
     let localizedLocaleString:  String
     
-    @ObservedObject var row:  ASARow
+//    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASALocatedObject
 
     var body: some View {
         HStack {

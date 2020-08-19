@@ -32,7 +32,7 @@ class ASARow: ASALocatedObject {
         } // didSet
     } // var calendar
     
-    @Published var localeIdentifier:  String = Locale.current.identifier
+//    @Published var localeIdentifier:  String = Locale.current.identifier
     
     @Published var majorDateFormat:  ASAMajorDateFormat = .full {
         didSet {

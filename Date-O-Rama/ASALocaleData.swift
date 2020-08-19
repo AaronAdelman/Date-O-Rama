@@ -92,7 +92,7 @@ struct ASALocaleData {
         self.recordsForUsersRegion = self.recordsForTheUsersRegion()
     } // init()
     
-    private func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord> {
+    public func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord> {
         var temp:  Array<ASALocaleRecord> = []
         for identifier in identifiers {
             let record = ASALocaleRecord(id: identifier, nativeName: identifier.asSelfLocalizedLocaleIdentifier())

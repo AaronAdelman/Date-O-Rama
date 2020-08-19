@@ -61,6 +61,8 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
             self.locationData.location = newValue
         } // set
     }
+
+    @Published var localeIdentifier:  String = ""
     
     var locationManager = ASALocationManager.shared()
     let notificationCenter = NotificationCenter.default
