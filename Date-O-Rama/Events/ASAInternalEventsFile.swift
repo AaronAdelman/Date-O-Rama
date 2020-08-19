@@ -88,15 +88,15 @@ class ASAInternalEventSpecification: Codable {
     var excludeISOCountryCodes:  Array<String>?
         
     // TODO:  Do something with these properties
-    var url: URL? // The URL for the calendar item.
-    var notes: String? // The notes associated with the calendar item.
-
-    var hasNotes: Bool // A Boolean value that indicates whether the calendar item has notes.
-        {
-        get {
-            return self.notes != nil
-        } // get
-    } // var hasNotes
+//    var url: URL? // The URL for the calendar item.
+//    var notes: String? // The notes associated with the calendar item.
+//
+//    var hasNotes: Bool // A Boolean value that indicates whether the calendar item has notes.
+//        {
+//        get {
+//            return self.notes != nil
+//        } // get
+//    } // var hasNotes
 } // extension ASAInternalEventSpecification
 
 extension ASAInternalEventSpecification {
