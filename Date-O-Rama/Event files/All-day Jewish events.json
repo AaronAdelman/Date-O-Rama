@@ -247,6 +247,7 @@
         {"titles": {"he": "סליחות לפי אשכנזים (יום ג׳)", "en": "Seliḥoth according to ’Ashkenazim (day 3)"}, "startDateSpecification": {"type": "allDay", "month": 13, "day": 26, "weekdays":  [3]}},
         {"titles": {"he": "סליחות לפי אשכנזים (יום ד׳)", "en": "Seliḥoth according to ’Ashkenazim (day 4)"}, "startDateSpecification": {"type": "allDay", "month": 13, "day": 27, "weekdays":  [4]}},
         {"titles": {"he": "סליחות לפי אשכנזים (יום ה׳)", "en": "Seliḥoth according to ’Ashkenazim (day 5)"}, "startDateSpecification": {"type": "allDay", "month": 13, "day": 28, "weekdays":  [5]}},
+        {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "startDateSpecification": {"type": "allDay", "month": 2, "day": 7, "includeISOCountryCodes": ["IL"]}},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [353, 355, 383, 385], "month": 1, "day": 6}, "titles": {"he": "פרשת וילך/שבת שובה", "en": "Parashath Wayyelekh/Shabbath Shuvah"}},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [353, 355, 383, 385], "month": 1, "day": 13}, "titles": {"he": "פרשת האזינו", "en": "Parashath Ha’azinu"}},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [353, 355, 383, 385], "month": 1, "day": 27}, "titles": {"he": "פרשת בראשית", "en": "Parashath Bere’shith"}, "notes": "Rosh Chodesh Cheshvan will be next Yom Shlishi - Yom Rivii"},
