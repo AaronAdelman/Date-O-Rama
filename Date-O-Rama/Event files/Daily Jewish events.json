@@ -1,269 +1,38 @@
 {
-    "localizableTitle":  "Daily Jewish events",
-    "supportedLocales":  ["he", "en"],
-    "defaultLocale":  "he",
-    "calendarCode":  "HebrewSolar",
-    "calendarColorRed":  0.0,
-    "calendarColorGreen":  0.0,
-    "calendarColorBlue":  1.0,
-    "calendarColorAlpha":  1.0,
-    "eventSpecifications":  [
-        {
-            "titles":  {
-                "en":  "🌅 Sunrise",
-                "he":  "🌅 נץ החמה"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  0.0,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "🌇 Sunset",
-                "he":  "🌇 שקיעת החמה"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  0.0,
-                "dayHalf":  "night"
-            }
-        },
-        
-        {
-            "titles":  {
-                "en":  "‘Aloth hashshaḥar (16°)",
-                "he":  "עלות השחר (16°)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  16,
-                "rising":  true,
-                "offset":  0
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Mishsheyyakir (11°)",
-                "he":  "משיכיר (11°)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  11.0,
-                "rising":  true,
-                "offset":  0
-            }
-        },
-        {
-            "titles":  {
-                "en":  "🌌 Ṣe’th hakkokhavim (8.5°)",
-                "he":  "🌌 צאת הכוכבים (8.5°)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  8.5,
-                "rising":  false,
-                "offset":  0
-            }
-        },
-        
-        {
-            "localizableTitle":  "otherDawn",
-            "titles":  {
-                "en":  "‘Aloth hashshaḥar (72 minutes)",
-                "he":  "עלות השחר (72 דקות)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  0.8333333333,
-                "rising":  true,
-                "offset":  -4320.0
-            }
-        },
-        {
-            "titles":  {
-                "en":  "🌌 Ṣe’th hakkokhavim (72 minutes)",
-                "he":  "🌌 צאת הכוכבים (72 דקות)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  0.8333333333,
-                "rising":  false,
-                "offset":  4320.0
-            }
-        },
-        
-        {
-            "titles":  {
-                "en":  "🕯 Candlelighting (18 minutes)",
-                "he":  "🕯 הדלקת נרות (18 דקות)"
-            },
-            "startDateSpecification":  {
-                "weekdays":  [6],
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  0.8333333333,
-                "rising":  false,
-                "offset":  -1080.0
-            }
-        },
-        
-        {
-            "titles":  {
-                "en":  "Midnight",
-                "he":  "חצות הלילה"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  6.0,
-                "dayHalf":  "night"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "End time for Qeri’ath Shema‘ (Vilna Ga’on)",
-                "he":  "סוף זמן קריאת שמע (גר״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  3.0,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "End time for Tefillah (Vilna Ga’on)",
-                "he":  "סוף זמן תפילה (גר״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  4.0,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Noon",
-                "he":  "חצות היום"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  6.0,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Minḥah gedholah (Vilna Ga’on)",
-                "he":  "מנחה גדולה (גר״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  6.5,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Minḥah qeṭanah (Vilna Ga’on)",
-                "he":  "מנחה קטנה (גר״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  9.5,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Pelagh hamminḥah (Vilna Ga’on)",
-                "he":  "פלג המנחה (גר״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeSunriseSunset",
-                "solarHours":  10.75,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "End time for Qeri’ath Shema‘ (Maghen ’Avraham)",
-                "he":  "סוף זמן קריאת שמע (מ״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeDawn72MinutesDusk72Minutes",
-                "solarHours":  3.0,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "End time for Tefillah (Maghen ’Avraham)",
-                "he":  "סוף זמן תפילה (מ״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeDawn72MinutesDusk72Minutes",
-                "solarHours":  4.0,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Minḥah gedholah (Maghen ’Avraham)",
-                "he":  "מנחה גדולה (מ״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeDawn72MinutesDusk72Minutes",
-                "solarHours":  6.5,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Minḥah qeṭanah (Maghen ’Avraham)",
-                "he":  "מנחה קטנה (מ״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeDawn72MinutesDusk72Minutes",
-                "solarHours":  9.5,
-                "dayHalf":  "day"
-            }
-        },
-        {
-            "titles":  {
-                "en":  "Pelagh hamminḥah (Maghen ’Avraham)",
-                "he":  "פלג המנחה (מ״א)"
-            },
-            "startDateSpecification":  {
-                "type":  "solarTimeDawn72MinutesDusk72Minutes",
-                "solarHours":  10.75,
-                "dayHalf":  "day"
-            }
-        },
-        
-        {
-            "titles":  {
-                "en":  "🌌 Ṣe’th hakkokhavim habbenonim (3.7°)",
-                "he":  "🌌 צאת הכוכבים הבינונים (3.7°)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  3.7,
-                "rising":  false,
-                "offset":  0
-            }
-        },
-        {
-            "titles":  {
-                "en":  "‘Aloth hashshaḥar (16.1°)",
-                "he":  "עלות השחר (16.1°)"
-            },
-            "startDateSpecification":  {
-                "type":  "degreesBelowHorizon",
-                "degreesBelowHorizon":  16.1,
-                "rising":  true,
-                "offset":  0
-            }
-        }
+    "localizableTitle": "Daily Jewish events",
+    "supportedLocales": ["he", "en"],
+    "defaultLocale": "he",
+    "calendarCode": "HebrewSolar",
+    "calendarColorRed": 0.0,
+    "calendarColorGreen": 0.0,
+    "calendarColorBlue": 1.0,
+    "calendarColorAlpha": 1.0,
+    "eventSpecifications": [
+        {"titles": {"en": "🌅 Sunrise", "he": "🌅 נץ החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}},
+        {"titles": {"en": "🌇 Sunset", "he": "🌇 שקיעת החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}},
+        {"titles": {"en": "‘Aloth hashshaḥar (16°)", "he": "עלות השחר (16°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 16, "rising": true, "offset": 0}},
+        {"titles": {"en": "Mishsheyyakir (11°)", "he": "משיכיר (11°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 11.0, "rising": true, "offset": 0}},
+        {"titles": {"en": "🌌 Ṣe’th hakkokhavim (8.5°)", "he": "🌌 צאת הכוכבים (8.5°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 8.5, "rising": false, "offset": 0}},
+        {"localizableTitle": "otherDawn", "titles": {"en": "‘Aloth hashshaḥar (72 minutes)", "he": "עלות השחר (72 דקות)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": -4320.0}},
+        {"titles": {"en": "🌌 Ṣe’th hakkokhavim (72 minutes)", "he": "🌌 צאת הכוכבים (72 דקות)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 4320.0}},
+        {"titles": {"en": "🕯 Candlelighting (18 minutes)", "he": "🕯 הדלקת נרות (18 דקות)"}, "startDateSpecification": {"weekdays": [6], "type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": -1080.0}},
+        {"titles": {"en": "Midnight", "he": "חצות הלילה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 6.0, "dayHalf": "night"}},
+        {"titles": {"en": "End time for Qeri’ath Shema‘ (Vilna Ga’on)", "he": "סוף זמן קריאת שמע (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 3.0, "dayHalf": "day"}},
+        {"titles": {"en": "End time for Tefillah (Vilna Ga’on)", "he": "סוף זמן תפילה (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 4.0, "dayHalf": "day"}},
+        {"titles": {"en": "Noon", "he": "חצות היום"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 6.0, "dayHalf": "day"}},
+        {"titles": {"en": "Minḥah gedholah (Vilna Ga’on)", "he": "מנחה גדולה (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 6.5, "dayHalf": "day"}},
+        {"titles": {"en": "Minḥah qeṭanah (Vilna Ga’on)", "he": "מנחה קטנה (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 9.5, "dayHalf": "day"}},
+        {"titles": {"en": "Pelagh hamminḥah (Vilna Ga’on)", "he": "פלג המנחה (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 10.75, "dayHalf": "day"}},
+        {"titles": {"en": "End time for Qeri’ath Shema‘ (Maghen ’Avraham)", "he": "סוף זמן קריאת שמע (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 3.0, "dayHalf": "day"}},
+        {"titles": {"en": "End time for Tefillah (Maghen ’Avraham)", "he": "סוף זמן תפילה (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 4.0, "dayHalf": "day"}},
+        {"titles": {"en": "Minḥah gedholah (Maghen ’Avraham)", "he": "מנחה גדולה (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 6.5, "dayHalf": "day"}},
+        {"titles": {"en": "Minḥah qeṭanah (Maghen ’Avraham)", "he": "מנחה קטנה (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 9.5, "dayHalf": "day"}},
+        {"titles": {"en": "Pelagh hamminḥah (Maghen ’Avraham)", "he": "פלג המנחה (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 10.75, "dayHalf": "day"}},
+        {"titles": {"en": "🌌 Ṣe’th hakkokhavim habbenonim (3.7°)", "he": "🌌 צאת הכוכבים הבינונים (3.7°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 3.7, "rising": false, "offset": 0}},
+        {"titles": {"en": "‘Aloth hashshaḥar (16.1°)", "he": "עלות השחר (16.1°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 16.1, "rising": true, "offset": 0}},
+        {"titles": {"en": "End time for eating ḥameṣ (Vilna Ga’on)", "he": "סוף זמן אכילת חמץ (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 4.0, "dayHalf": "day", "month": 8, "day": 14}},
+        {"titles": {"en": "End time for benefitting from ḥameṣ (Vilna Ga’on)", "he": "סוף זמן הנאה מחמץ (גר״א)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 5.0, "dayHalf": "day", "month": 8, "day": 14}},
+        {"titles": {"en": "End time for eating ḥameṣ (Maghen ’Avraham)", "he": "סוף זמן אכילת חמץ (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 4.0, "dayHalf": "day", "month": 8, "day": 14}},
+        {"titles": {"en": "End time for benefitting from ḥameṣ (Maghen ’Avraham)", "he": "סוף זמן הנאה מחמץ (מ״א)"}, "startDateSpecification": {"type": "solarTimeDawn72MinutesDusk72Minutes", "solarHours": 5.0, "dayHalf": "day", "month": 8, "day": 14}}
     ]
 }
