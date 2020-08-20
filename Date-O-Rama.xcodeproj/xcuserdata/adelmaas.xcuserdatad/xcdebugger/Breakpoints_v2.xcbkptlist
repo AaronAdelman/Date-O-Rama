@@ -254,8 +254,8 @@
             filePath = "Date-O-Rama/Calendars/ASASunsetTransitionCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "377"
-            endingLineNumber = "377"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
             landmarkName = "isValidDate(dateComponents:)"
             landmarkType = "7">
          </BreakpointContent>
