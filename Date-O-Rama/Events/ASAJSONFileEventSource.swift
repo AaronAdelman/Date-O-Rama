@@ -37,7 +37,8 @@ class ASAJSONFileEventSource {
     func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
-        var now = startDate.noon(timeZone: locationData.timeZone!).oneDayBefore
+//        var now = startDate.noon(timeZone: locationData.timeZone!).oneDayBefore
+        var now:  Date = calendar?.startOfDay(for: startDate, location: locationData.location, timeZone: locationData.timeZone ?? TimeZone.autoupdatingCurrent) ?? startDate
         var result:  Array<ASAEvent> = []
         var oldNow = now
         repeat {
@@ -51,7 +52,7 @@ class ASAJSONFileEventSource {
             } // for event in tempResult
             oldNow = now
             now = now.oneDayAfter
-        } while oldNow < endDate
+        } while oldNow <= endDate
         
         return result
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
