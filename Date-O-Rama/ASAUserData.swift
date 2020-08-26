@@ -70,13 +70,17 @@ final class ASAUserData:  ObservableObject {
         return nil
     } // func checkForContainerExistence()
 
+    fileprivate func preferencesFilePath() -> String {
+        return self.containerURL!.path + "/Preferences.json"
+    }
+
     private func preferenceFileExists() -> Bool {
         if self.containerURL == nil {
             return false
         }
 
-        let preferencesFilePath = self.containerURL!.path + "Preferences.json"
-        let result = FileManager.default.fileExists(atPath: preferencesFilePath)
+        let path = self.preferencesFilePath()
+        let result = FileManager.default.fileExists(atPath: path)
         return result
     } // func preferenceFileExists() -> Bool
     
@@ -119,10 +123,50 @@ final class ASAUserData:  ObservableObject {
         self.saveRowArray(rowArray: self.oneLineSmallRows, key: .oneLineSmall)
 
         self.saveInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
+
+        let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
+        let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
+        let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
+        let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows)
+        let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows)
+        let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows)
+
+        let processedInternalEventCalendarArray = self.processedInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
+        let temp: Dictionary<String, Any> = [
+            ASARowArrayKey.app.rawValue:  processedMainRows,
+            ASARowArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
+            ASARowArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeRows,
+            ASARowArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallRows,
+            ASARowArrayKey.oneLineLarge.rawValue:  processedOneLineLargeRows,
+            ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows,
+            INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
+        ]
+        let data = (try? JSONSerialization.data(withJSONObject: temp, options: .prettyPrinted))
+//        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
+        if data != nil {
+            do {
+                let url: URL = URL(fileURLWithPath: self.preferencesFilePath())
+
+                try data!.write(to: url, options: .atomic)
+
+            } catch {
+                debugPrint(#file, #function, error)
+            }
+        }
+
     } // func savePreferences()
     
     
     // MARK: -
+
+    private func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>> {
+        var temp:  Array<Dictionary<String, Any>> = []
+        for row in rowArray {
+            let dictionary = row.dictionary()
+            temp.append(dictionary)
+        }
+        return temp
+    } // func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
     
     private func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
         //        debugPrint(#file, #function, rowArray)
@@ -159,6 +203,15 @@ final class ASAUserData:  ObservableObject {
         //        debugPrint(#file, #function, tempArray)
         return tempArray
     } // public func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
+
+    private func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>> {
+        var temp:  Array<Dictionary<String, Any>> = []
+        for eventCalendar in self.internalEventCalendars {
+            let dictionary = eventCalendar.dictionary()
+            temp.append(dictionary)
+        } //for eventCalendar in self.internalEventCalendars
+        return temp
+    } // func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>>
     
     private func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) {
         var temp:  Array<Dictionary<String, Any>> = []
