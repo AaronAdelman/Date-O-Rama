@@ -127,7 +127,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                             rowArray?[i] = newRow
                         } // for i in 0..<key.minimumNumberOfRows()
                     }
-                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
+//                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
+                    ASAUserData.shared().savePreferences()
                 }
             }
  
@@ -147,7 +148,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 }
                 DispatchQueue.main.async {
                     ASAUserData.shared().mainRows = mainRows
-                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
+//                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
+                    ASAUserData.shared().savePreferences()
                 }
             }
         }

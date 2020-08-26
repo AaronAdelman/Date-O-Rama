@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
     func rowArrayDictionary(key:  ASARowArrayKey) -> Array<Dictionary<String, Any>> {
-        let rowArray = ASAUserData.rowArray(key: key)
+        let rowArray = ASAUserData.shared().rowArray(key: key)
         
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
