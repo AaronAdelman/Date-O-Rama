@@ -12,14 +12,9 @@ import SwiftUI
 import CoreLocation
 import UIKit
 
-//let storageKey = "group.com.adelsoft.DoubleDate"
 let INTERNAL_EVENT_CALENDARS_KEY = "INTERNAL_EVENT_CALENDARS"
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
-//    var description: String
-
-//    static let userDefaults = UserDefaults.init(suiteName: storageKey)!
-    
     private static var sharedUserData: ASAUserData = {
         let userData = ASAUserData()
         
@@ -43,7 +38,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     class func ubiquityContainerURL() -> URL? {
         let result: URL? = FileManager.default.url(forUbiquityContainerIdentifier: nil)
-        debugPrint(#file, #function, result as Any)
+//        debugPrint(#file, #function, result as Any)
         return result
     }
 
@@ -51,11 +46,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         // check for container existence
         if let url = ubiquityContainerURL() {
             let needToCreateContainer = !FileManager.default.fileExists(atPath: url.path)
-            debugPrint(#file, #function, "Need to create container:", needToCreateContainer)
+//            debugPrint(#file, #function, "Need to create container:", needToCreateContainer)
             if needToCreateContainer {
                 do {
                     try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
-                    debugPrint(#file, #function, "Container created")
+//                    debugPrint(#file, #function, "Container created")
                 } catch {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
@@ -63,22 +58,22 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
             let documentsPath = url.path + "/Documents"
             let needToCreateDocuments = !FileManager.default.fileExists(atPath: documentsPath)
-            debugPrint(#file, #function, "Need to create documents:", needToCreateDocuments)
+//            debugPrint(#file, #function, "Need to create documents:", needToCreateDocuments)
             if needToCreateDocuments {
                 do {
                     try FileManager.default.createDirectory(at: URL(fileURLWithPath: documentsPath), withIntermediateDirectories: true, attributes: nil)
-                    debugPrint(#file, #function, "Documents created")
+//                    debugPrint(#file, #function, "Documents created")
                 }  catch {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
             }
 
-            let subpaths = FileManager.default.subpaths(atPath: url.path)
-            debugPrint(#file, #function, "Subpaths:", subpaths as Any)
+//            let subpaths = FileManager.default.subpaths(atPath: url.path)
+//            debugPrint(#file, #function, "Subpaths:", subpaths as Any)
 
             return url
         } else {
-            debugPrint(#file, #function, "Something else happened")
+//            debugPrint(#file, #function, "Something else happened")
         }
 
         return nil
@@ -89,11 +84,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             return nil
         }
 
-        let containerURLContents = FileManager.default.contents(atPath: self.containerURL!.path)
-        debugPrint(#file, #function, "Container contents:", containerURLContents as Any)
-        let documentsPath = self.containerURL!.path + "/Documents"
-        let documentsContents = FileManager.default.contents(atPath: documentsPath)
-        debugPrint(#file, #function, "Documents contents:", documentsContents as Any)
+//        let containerURLContents = FileManager.default.contents(atPath: self.containerURL!.path)
+//        debugPrint(#file, #function, "Container contents:", containerURLContents as Any)
+//        let documentsPath = self.containerURL!.path + "/Documents"
+//        let documentsContents = FileManager.default.contents(atPath: documentsPath)
+//        debugPrint(#file, #function, "Documents contents:", documentsContents as Any)
 
         let possibility1Path = self.containerURL!.path + "/Documents/Preferences.json"
         do {
@@ -106,26 +101,19 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             return possibility1Path
         }
 
-//        let possibility2Path = self.containerURL!.path + "/Documents/.Preferences.json.icloud"
-//        let exists2 = FileManager.default.fileExists(atPath: possibility2Path)
-//        if exists2 {
-//            return possibility2Path
-//        }
-
         return possibility1Path
-    }
+    } // func preferencesFilePath() -> String?
 
     private func preferenceFileExists() -> Bool {
         if self.containerURL == nil {
             return false
         }
 
-        let containerURLContents = FileManager.default.contents(atPath: self.containerURL!.path)
-        debugPrint(#file, #function, "Container contents:", containerURLContents as Any)
-        let documentsPath = self.containerURL!.path + "/Documents"
-        let documentsContents = FileManager.default.contents(atPath: documentsPath)
-        debugPrint(#file, #function, "Documents contents:", documentsContents as Any)
-
+//        let containerURLContents = FileManager.default.contents(atPath: self.containerURL!.path)
+//        debugPrint(#file, #function, "Container contents:", containerURLContents as Any)
+//        let documentsPath = self.containerURL!.path + "/Documents"
+//        let documentsContents = FileManager.default.contents(atPath: documentsPath)
+//        debugPrint(#file, #function, "Documents contents:", documentsContents as Any)
 
         let path = self.preferencesFilePath()
         if path == nil {
@@ -136,15 +124,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // func preferenceFileExists() -> Bool
     
      func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
-//        var rows = ASAUserData.rowArray(key: key)
-////        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
-//
-//        while rows.count < key.minimumNumberOfRows() {
-//            rows.append(ASARow.generic())
-//        } // while rows.count < key.minimumNumberOfRows()
-//
-//        return rows
-
         switch key {
         case .app:
             return self.mainRows
@@ -176,16 +155,16 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     fileprivate func loadPreferences() {
         if preferenceFileExists() {
-            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
+//            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
             let path = self.preferencesFilePath()
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+//                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-                debugPrint(#file, #function, jsonResult)
+//                debugPrint(#file, #function, jsonResult)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
-                    //                    debugPrint(#file, #function, jsonResult)
+                                        debugPrint(#file, #function, jsonResult)
                     self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
                     self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
                     self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
@@ -213,15 +192,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         oneLineSmallRows       = self.emptyRowArray(key: .oneLineSmall)
 
         internalEventCalendars = []
-
-        //        self.mainRows           = self.rowArray(key: .app)
-        //        self.threeLineLargeRows = self.rowArray(key: .threeLineLarge)
-        //        self.twoLineSmallRows   = self.rowArray(key: .twoLineSmall)
-        //        self.twoLineLargeRows   = self.rowArray(key: .twoLineLarge)
-        //        self.oneLineLargeRows   = self.rowArray(key: .oneLineLarge)
-        //        self.oneLineSmallRows   = self.rowArray(key: .oneLineSmall)
-        //
-        //        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
     } // func loadPreferences()
 
     override init() {
@@ -240,15 +210,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     }
     
     public func savePreferences() {
-//        self.saveRowArray(rowArray: self.mainRows, key: .app)
-//        self.saveRowArray(rowArray: self.threeLineLargeRows, key: .threeLineLarge)
-//        self.saveRowArray(rowArray: self.twoLineLargeRows, key: .twoLineLarge)
-//        self.saveRowArray(rowArray: self.twoLineSmallRows, key: .twoLineSmall)
-//        self.saveRowArray(rowArray: self.oneLineLargeRows, key: .oneLineLarge)
-//        self.saveRowArray(rowArray: self.oneLineSmallRows, key: .oneLineSmall)
-//
-//        self.saveInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
-
         let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
         let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
         let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
@@ -274,14 +235,13 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
                 try data!.write(to: url, options: .atomic)
 
-                debugPrint(#file, #function, "Preferences successfully saved")
+//                debugPrint(#file, #function, "Preferences successfully saved")
             } catch {
                 debugPrint(#file, #function, error)
             }
         } else {
             debugPrint(#file, #function, "Data is nil")
         }
-
     } // func savePreferences()
     
     
@@ -295,42 +255,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         return temp
     } // func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
-    
-//    private func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
-//        //        debugPrint(#file, #function, rowArray)
-//        var temp:  Array<Dictionary<String, Any>> = []
-//        for row in rowArray {
-//            let dictionary = row.dictionary()
-//            temp.append(dictionary)
-//        }
-//
-//        ASAUserData.self.userDefaults.set(temp, forKey: key.rawValue)
-//        ASAUserData.self.userDefaults.synchronize()
-//    } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
-    
-//    private class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
-//        //        debugPrint(#file, #function, key)
-//
-//        let temp = self.userDefaults.array(forKey: key.rawValue)
-//        var tempArray:  Array<ASARow> = []
-//
-//        if temp != nil {
-//            for dictionary in temp! {
-//                let row = ASARow.newRow(dictionary: dictionary as! Dictionary<String, Any>)
-//                tempArray.append(row)
-//            } // for dictionary in temp!
-//        }
-//
-//        let numberOfRows = tempArray.count
-//        let minimumNumberOfRows = key.minimumNumberOfRows()
-//        if numberOfRows < minimumNumberOfRows {
-//
-//            tempArray += Array.init(repeatElement(ASARow.generic(), count: minimumNumberOfRows - numberOfRows))
-//        }
-//
-//        //        debugPrint(#file, #function, tempArray)
-//        return tempArray
-//    } // public func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
 
     private class func rowArray(key:  ASARowArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow> {
         //        debugPrint(#file, #function, key)
@@ -391,49 +315,21 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } //for eventCalendar in self.internalEventCalendars
         return temp
     } // func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>>
-    
-//    private func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) {
-//        var temp:  Array<Dictionary<String, Any>> = []
-//        for eventCalendar in self.internalEventCalendars {
-//            let dictionary = eventCalendar.dictionary()
-//            temp.append(dictionary)
-//        } //for eventCalendar in self.internalEventCalendars
-//
-//        ASAUserData.self.userDefaults.set(temp, forKey: INTERNAL_EVENT_CALENDARS_KEY)
-//        ASAUserData.self.userDefaults.synchronize()
-//    } // func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>)
-    
-//    private class func internalEventCalendarArray() -> Array<ASAInternalEventCalendar> {
-//        let temp = self.userDefaults.array(forKey: INTERNAL_EVENT_CALENDARS_KEY)
-//        var tempArray:  Array<ASAInternalEventCalendar> = []
-//
-//        if temp != nil {
-//            for dictionary in temp! {
-//                let eventCalendar = ASAInternalEventCalendar.newInternalEventCalendar(dictionary: dictionary as! Dictionary<String, Any>)
-//                if eventCalendar != nil {
-//                    tempArray.append(eventCalendar!)
-//                }
-//            } // for dictionary in temp!
-//        }
-//
-//        return tempArray
-//    } // class func internalEventCalendarArray() -> Array<ASAInternalEventCalendar>
 
 
-    // MARK: -
+    // MARK: - NSFilePresenter
 
     var presentedItemURL: URL?
 
     var presentedItemOperationQueue: OperationQueue = OperationQueue.main
 
     func presentedSubitemDidChange(at url: URL) {
-        debugPrint(#file, #function, url)
+//        debugPrint(#file, #function, url)
         self.loadPreferences()
-    }
+    } // func presentedSubitemDidChange(at url: URL)
 
     func presentedItemDidChange() {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
         self.loadPreferences()
-    }
-
+    } // func presentedItemDidChange()
 } // class ASAUserDate
