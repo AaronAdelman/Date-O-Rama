@@ -12,12 +12,13 @@ import SwiftUI
 import CoreLocation
 import UIKit
 
-let storageKey = "group.com.adelsoft.DoubleDate"
+//let storageKey = "group.com.adelsoft.DoubleDate"
 let INTERNAL_EVENT_CALENDARS_KEY = "INTERNAL_EVENT_CALENDARS"
 
-final class ASAUserData:  ObservableObject {
-    
-    static let userDefaults = UserDefaults.init(suiteName: storageKey)!
+final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
+//    var description: String
+
+//    static let userDefaults = UserDefaults.init(suiteName: storageKey)!
     
     private static var sharedUserData: ASAUserData = {
         let userData = ASAUserData()
@@ -223,21 +224,30 @@ final class ASAUserData:  ObservableObject {
         //        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
     } // func loadPreferences()
 
-    init() {
+    override init() {
+        super.init()
+
         self.containerURL = ASAUserData.checkForContainerExistence()
+        self.presentedItemURL = self.containerURL
+
+        NSFileCoordinator.addFilePresenter(self)
 
         self.loadPreferences()
     } // init()
+
+    deinit {
+        NSFileCoordinator.removeFilePresenter(self)
+    }
     
     public func savePreferences() {
-        self.saveRowArray(rowArray: self.mainRows, key: .app)
-        self.saveRowArray(rowArray: self.threeLineLargeRows, key: .threeLineLarge)
-        self.saveRowArray(rowArray: self.twoLineLargeRows, key: .twoLineLarge)
-        self.saveRowArray(rowArray: self.twoLineSmallRows, key: .twoLineSmall)
-        self.saveRowArray(rowArray: self.oneLineLargeRows, key: .oneLineLarge)
-        self.saveRowArray(rowArray: self.oneLineSmallRows, key: .oneLineSmall)
-
-        self.saveInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
+//        self.saveRowArray(rowArray: self.mainRows, key: .app)
+//        self.saveRowArray(rowArray: self.threeLineLargeRows, key: .threeLineLarge)
+//        self.saveRowArray(rowArray: self.twoLineLargeRows, key: .twoLineLarge)
+//        self.saveRowArray(rowArray: self.twoLineSmallRows, key: .twoLineSmall)
+//        self.saveRowArray(rowArray: self.oneLineLargeRows, key: .oneLineLarge)
+//        self.saveRowArray(rowArray: self.oneLineSmallRows, key: .oneLineSmall)
+//
+//        self.saveInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
 
         let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
         let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
@@ -256,7 +266,7 @@ final class ASAUserData:  ObservableObject {
             ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows,
             INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
         ]
-        let data = (try? JSONSerialization.data(withJSONObject: temp, options: .prettyPrinted))
+        let data = (try? JSONSerialization.data(withJSONObject: temp, options: []))
 //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
         if data != nil {
             do {
@@ -286,17 +296,17 @@ final class ASAUserData:  ObservableObject {
         return temp
     } // func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
     
-    private func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
-        //        debugPrint(#file, #function, rowArray)
-        var temp:  Array<Dictionary<String, Any>> = []
-        for row in rowArray {
-            let dictionary = row.dictionary()
-            temp.append(dictionary)
-        }
-        
-        ASAUserData.self.userDefaults.set(temp, forKey: key.rawValue)
-        ASAUserData.self.userDefaults.synchronize()
-    } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
+//    private func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey) {
+//        //        debugPrint(#file, #function, rowArray)
+//        var temp:  Array<Dictionary<String, Any>> = []
+//        for row in rowArray {
+//            let dictionary = row.dictionary()
+//            temp.append(dictionary)
+//        }
+//
+//        ASAUserData.self.userDefaults.set(temp, forKey: key.rawValue)
+//        ASAUserData.self.userDefaults.synchronize()
+//    } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
     
 //    private class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
 //        //        debugPrint(#file, #function, key)
@@ -382,31 +392,48 @@ final class ASAUserData:  ObservableObject {
         return temp
     } // func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>>
     
-    private func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) {
-        var temp:  Array<Dictionary<String, Any>> = []
-        for eventCalendar in self.internalEventCalendars {
-            let dictionary = eventCalendar.dictionary()
-            temp.append(dictionary)
-        } //for eventCalendar in self.internalEventCalendars
-        
-        ASAUserData.self.userDefaults.set(temp, forKey: INTERNAL_EVENT_CALENDARS_KEY)
-        ASAUserData.self.userDefaults.synchronize()
-    } // func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>)
+//    private func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) {
+//        var temp:  Array<Dictionary<String, Any>> = []
+//        for eventCalendar in self.internalEventCalendars {
+//            let dictionary = eventCalendar.dictionary()
+//            temp.append(dictionary)
+//        } //for eventCalendar in self.internalEventCalendars
+//
+//        ASAUserData.self.userDefaults.set(temp, forKey: INTERNAL_EVENT_CALENDARS_KEY)
+//        ASAUserData.self.userDefaults.synchronize()
+//    } // func saveInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>)
     
-    private class func internalEventCalendarArray() -> Array<ASAInternalEventCalendar> {
-        let temp = self.userDefaults.array(forKey: INTERNAL_EVENT_CALENDARS_KEY)
-        var tempArray:  Array<ASAInternalEventCalendar> = []
-        
-        if temp != nil {
-            for dictionary in temp! {
-                let eventCalendar = ASAInternalEventCalendar.newInternalEventCalendar(dictionary: dictionary as! Dictionary<String, Any>)
-                if eventCalendar != nil {
-                    tempArray.append(eventCalendar!)
-                }
-            } // for dictionary in temp!
-        }
-        
-        return tempArray
-    } // class func internalEventCalendarArray() -> Array<ASAInternalEventCalendar>
-    
+//    private class func internalEventCalendarArray() -> Array<ASAInternalEventCalendar> {
+//        let temp = self.userDefaults.array(forKey: INTERNAL_EVENT_CALENDARS_KEY)
+//        var tempArray:  Array<ASAInternalEventCalendar> = []
+//
+//        if temp != nil {
+//            for dictionary in temp! {
+//                let eventCalendar = ASAInternalEventCalendar.newInternalEventCalendar(dictionary: dictionary as! Dictionary<String, Any>)
+//                if eventCalendar != nil {
+//                    tempArray.append(eventCalendar!)
+//                }
+//            } // for dictionary in temp!
+//        }
+//
+//        return tempArray
+//    } // class func internalEventCalendarArray() -> Array<ASAInternalEventCalendar>
+
+
+    // MARK: -
+
+    var presentedItemURL: URL?
+
+    var presentedItemOperationQueue: OperationQueue = OperationQueue.main
+
+    func presentedSubitemDidChange(at url: URL) {
+        debugPrint(#file, #function, url)
+        self.loadPreferences()
+    }
+
+    func presentedItemDidChange() {
+        debugPrint(#file, #function)
+        self.loadPreferences()
+    }
+
 } // class ASAUserDate
