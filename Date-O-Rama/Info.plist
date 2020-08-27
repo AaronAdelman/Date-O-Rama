@@ -27,7 +27,19 @@
 	<key>NSContactsUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your contacts.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Foo</string>
+	<string>Date-O-Rama needs authorization to access your location.</string>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.com.Adelsoft.Date-O-Rama</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+			<true/>
+			<key>NSUbiquitousContainerName</key>
+			<string>Date-O-Rama</string>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>Any</string>
+		</dict>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

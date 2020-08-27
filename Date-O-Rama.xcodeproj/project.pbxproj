@@ -30,7 +30,7 @@
 		A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F45B2483D6EC000A05B5 /* NotificationView.swift */; };
 		A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F45D2483D6EF000A05B5 /* Assets.xcassets */; };
 		A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */; };
-		A566F4662483D6EF000A05B5 /* WatchDate-O-Rama.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A566F4662483D6EF000A05B5 /* Date-O-Rama.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A566F4422483D6E6000A05B5 /* Date-O-Rama.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */; };
 		A566F4702483D7CF000A05B5 /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
 		A566F4712483D7CF000A05B5 /* ASALocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocationData.swift */; };
@@ -176,7 +176,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				A566F4662483D6EF000A05B5 /* WatchDate-O-Rama.app in Embed Watch Content */,
+				A566F4662483D6EF000A05B5 /* Date-O-Rama.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +210,7 @@
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 		A5622E23246DA597008E5C2D /* ASAUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserSettings.swift; sourceTree = "<group>"; };
-		A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchDate-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566F4422483D6E6000A05B5 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A566F4472483D6EB000A05B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A566F4492483D6EB000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		A5BFC5B22469CB900075AF58 /* TabBarElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarElement.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAExternalEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAExternalEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
-		A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "✨Date-O-Rama✨.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A5C77C002433361400CFEE47 /* ASAClocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksView.swift; sourceTree = "<group>"; };
@@ -495,10 +495,10 @@
 		A5C77BFA2433361400CFEE47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */,
+				A5C77BF92433361400CFEE47 /* Date-O-Rama.app */,
 				A5C77C0F2433361900CFEE47 /* Date-O-RamaTests.xctest */,
 				A5C77C1A2433361900CFEE47 /* Date-O-RamaUITests.xctest */,
-				A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */,
+				A566F4422483D6E6000A05B5 /* Date-O-Rama.app */,
 				A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */,
 			);
 			name = Products;
@@ -592,7 +592,7 @@
 			);
 			name = "WatchDate-O-Rama";
 			productName = "WatchDate-O-Rama";
-			productReference = A566F4422483D6E6000A05B5 /* WatchDate-O-Rama.app */;
+			productReference = A566F4422483D6E6000A05B5 /* Date-O-Rama.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		A566F44D2483D6EC000A05B5 /* WatchDate-O-Rama Extension */ = {
@@ -628,7 +628,7 @@
 			);
 			name = "Date-O-Rama";
 			productName = "Date-O-Rama";
-			productReference = A5C77BF92433361400CFEE47 /* ✨Date-O-Rama✨.app */;
+			productReference = A5C77BF92433361400CFEE47 /* Date-O-Rama.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A5C77C0E2433361900CFEE47 /* Date-O-RamaTests */ = {
@@ -975,12 +975,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 53M887FS75;
 				IBSC_MODULE = WatchDate_O_Rama_Extension;
 				INFOPLIST_FILE = "WatchDate-O-Rama/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Date-O-Rama";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -996,12 +996,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 53M887FS75;
 				IBSC_MODULE = WatchDate_O_Rama_Extension;
 				INFOPLIST_FILE = "WatchDate-O-Rama/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Date-O-Rama";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
@@ -1016,7 +1016,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				ENABLE_PREVIEWS = YES;
@@ -1042,7 +1042,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				ENABLE_PREVIEWS = YES;
@@ -1187,7 +1187,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
@@ -1198,7 +1198,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama";
-				PRODUCT_NAME = "✨Date-O-Rama✨";
+				PRODUCT_NAME = "Date-O-Rama";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1211,7 +1211,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Date-O-Rama/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
@@ -1222,7 +1222,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama";
-				PRODUCT_NAME = "✨Date-O-Rama✨";
+				PRODUCT_NAME = "Date-O-Rama";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -29,14 +29,14 @@ final class ASAUserData:  ObservableObject {
         return sharedUserData
     } // class func shared() -> ASAUserData
     
-    @Published var mainRows:  Array<ASARow>
-    @Published var internalEventCalendars:  Array<ASAInternalEventCalendar>
+    @Published var mainRows:  Array<ASARow> = []
+    @Published var internalEventCalendars:  Array<ASAInternalEventCalendar> = []
     
-    @Published var threeLineLargeRows:  Array<ASARow>
-    @Published var twoLineSmallRows:    Array<ASARow>
-    @Published var twoLineLargeRows:    Array<ASARow>
-    @Published var oneLineLargeRows:    Array<ASARow>
-    @Published var oneLineSmallRows:    Array<ASARow>
+    @Published var threeLineLargeRows:  Array<ASARow> = []
+    @Published var twoLineSmallRows:    Array<ASARow> = []
+    @Published var twoLineLargeRows:    Array<ASARow> = []
+    @Published var oneLineLargeRows:    Array<ASARow> = []
+    @Published var oneLineSmallRows:    Array<ASARow> = []
 
     var containerURL:  URL?
 
@@ -51,16 +51,29 @@ final class ASAUserData:  ObservableObject {
         if let url = ubiquityContainerURL() {
             let needToCreateContainer = !FileManager.default.fileExists(atPath: url.path)
             debugPrint(#file, #function, "Need to create container:", needToCreateContainer)
-
             if needToCreateContainer {
                 do {
                     try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
                     debugPrint(#file, #function, "Container created")
-                }
-                catch {
+                } catch {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
             }
+
+            let documentsPath = url.path + "/Documents"
+            let needToCreateDocuments = !FileManager.default.fileExists(atPath: documentsPath)
+            debugPrint(#file, #function, "Need to create documents:", needToCreateDocuments)
+            if needToCreateDocuments {
+                do {
+                    try FileManager.default.createDirectory(at: URL(fileURLWithPath: documentsPath), withIntermediateDirectories: true, attributes: nil)
+                    debugPrint(#file, #function, "Documents created")
+                }  catch {
+                    debugPrint(#file, #function, error.localizedDescription)
+                }
+            }
+
+            let subpaths = FileManager.default.subpaths(atPath: url.path)
+            debugPrint(#file, #function, "Subpaths:", subpaths as Any)
 
             return url
         } else {
@@ -70,8 +83,35 @@ final class ASAUserData:  ObservableObject {
         return nil
     } // func checkForContainerExistence()
 
-    fileprivate func preferencesFilePath() -> String {
-        return self.containerURL!.path + "/Preferences.json"
+    fileprivate func preferencesFilePath() -> String? {
+        if self.containerURL == nil {
+            return nil
+        }
+
+        let containerURLContents = FileManager.default.contents(atPath: self.containerURL!.path)
+        debugPrint(#file, #function, "Container contents:", containerURLContents as Any)
+        let documentsPath = self.containerURL!.path + "/Documents"
+        let documentsContents = FileManager.default.contents(atPath: documentsPath)
+        debugPrint(#file, #function, "Documents contents:", documentsContents as Any)
+
+        let possibility1Path = self.containerURL!.path + "/Documents/Preferences.json"
+        do {
+        try FileManager.default.startDownloadingUbiquitousItem(at: URL(fileURLWithPath: possibility1Path))
+        } catch {
+            debugPrint(#file, #function, "startDownloadingUbiquitousItem error:", error)
+        }
+        let exists1 = FileManager.default.fileExists(atPath: possibility1Path)
+        if exists1 {
+            return possibility1Path
+        }
+
+//        let possibility2Path = self.containerURL!.path + "/Documents/.Preferences.json.icloud"
+//        let exists2 = FileManager.default.fileExists(atPath: possibility2Path)
+//        if exists2 {
+//            return possibility2Path
+//        }
+
+        return possibility1Path
     }
 
     private func preferenceFileExists() -> Bool {
@@ -79,39 +119,114 @@ final class ASAUserData:  ObservableObject {
             return false
         }
 
+        let containerURLContents = FileManager.default.contents(atPath: self.containerURL!.path)
+        debugPrint(#file, #function, "Container contents:", containerURLContents as Any)
+        let documentsPath = self.containerURL!.path + "/Documents"
+        let documentsContents = FileManager.default.contents(atPath: documentsPath)
+        debugPrint(#file, #function, "Documents contents:", documentsContents as Any)
+
+
         let path = self.preferencesFilePath()
-        let result = FileManager.default.fileExists(atPath: path)
+        if path == nil {
+            return false
+        }
+        let result = FileManager.default.fileExists(atPath: path!)
         return result
     } // func preferenceFileExists() -> Bool
     
      func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
-        var rows = ASAUserData.rowArray(key: key)
-        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
-        
-        while rows.count < key.minimumNumberOfRows() {
-            rows.append(ASARow.generic())
-        } // while rows.count < key.minimumNumberOfRows()
-        
-        return rows
-    }
-        
+//        var rows = ASAUserData.rowArray(key: key)
+////        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
+//
+//        while rows.count < key.minimumNumberOfRows() {
+//            rows.append(ASARow.generic())
+//        } // while rows.count < key.minimumNumberOfRows()
+//
+//        return rows
+
+        switch key {
+        case .app:
+            return self.mainRows
+
+        case .threeLineLarge:
+            return self.threeLineLargeRows
+
+        case .twoLineSmall:
+            return self.twoLineSmallRows
+
+        case .twoLineLarge:
+            return self.twoLineLargeRows
+
+        case .oneLineLarge:
+            return self.oneLineLargeRows
+
+        case .oneLineSmall:
+            return self.oneLineSmallRows
+        } // switch key
+    } // func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
+
+    func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+        var result:  Array<ASARow> = []
+        for _ in 1...key.minimumNumberOfRows() {
+            result.append(ASARow.generic())
+        }
+        return result
+    } // func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow>
+
+    fileprivate func loadPreferences() {
+        if preferenceFileExists() {
+            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
+            let path = self.preferencesFilePath()
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+                debugPrint(#file, #function, jsonResult)
+                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                    // do stuff
+                    //                    debugPrint(#file, #function, jsonResult)
+                    self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
+                    self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
+                    self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
+                    self.twoLineSmallRows = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult)
+                    self.oneLineLargeRows = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult)
+                    self.oneLineSmallRows = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult)
+
+                    self.internalEventCalendars = ASAUserData.internalEventCalendarArray(dictionary: jsonResult)
+
+                    return
+                }
+            } catch {
+                // handle error
+                debugPrint(#file, #function, error)
+            }
+        } else {
+            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” does not exist")
+        }
+
+        mainRows               = self.emptyRowArray(key: .app)
+        threeLineLargeRows     = self.emptyRowArray(key: .threeLineLarge)
+        twoLineSmallRows       = self.emptyRowArray(key: .twoLineSmall)
+        twoLineLargeRows       = self.emptyRowArray(key: .twoLineLarge)
+        oneLineLargeRows       = self.emptyRowArray(key: .oneLineLarge)
+        oneLineSmallRows       = self.emptyRowArray(key: .oneLineSmall)
+
+        internalEventCalendars = []
+
+        //        self.mainRows           = self.rowArray(key: .app)
+        //        self.threeLineLargeRows = self.rowArray(key: .threeLineLarge)
+        //        self.twoLineSmallRows   = self.rowArray(key: .twoLineSmall)
+        //        self.twoLineLargeRows   = self.rowArray(key: .twoLineLarge)
+        //        self.oneLineLargeRows   = self.rowArray(key: .oneLineLarge)
+        //        self.oneLineSmallRows   = self.rowArray(key: .oneLineSmall)
+        //
+        //        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
+    } // func loadPreferences()
+
     init() {
         self.containerURL = ASAUserData.checkForContainerExistence()
 
-        self.internalEventCalendars = ASAUserData.internalEventCalendarArray()
-        mainRows             = []
-        threeLineLargeRows     = []
-        twoLineSmallRows     = []
-        twoLineLargeRows       = []
-        oneLineLargeRows = []
-        oneLineSmallRows      = []
-        
-        self.mainRows           = self.rowArray(key: .app)
-        self.threeLineLargeRows = self.rowArray(key: .threeLineLarge)
-        self.twoLineSmallRows   = self.rowArray(key: .twoLineSmall)
-        self.twoLineLargeRows   = self.rowArray(key: .twoLineLarge)
-        self.oneLineLargeRows   = self.rowArray(key: .oneLineLarge)
-        self.oneLineSmallRows   = self.rowArray(key: .oneLineSmall)
+        self.loadPreferences()
     } // init()
     
     public func savePreferences() {
@@ -145,13 +260,16 @@ final class ASAUserData:  ObservableObject {
 //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
         if data != nil {
             do {
-                let url: URL = URL(fileURLWithPath: self.preferencesFilePath())
+                let url: URL = URL(fileURLWithPath: self.preferencesFilePath()!)
 
                 try data!.write(to: url, options: .atomic)
 
+                debugPrint(#file, #function, "Preferences successfully saved")
             } catch {
                 debugPrint(#file, #function, error)
             }
+        } else {
+            debugPrint(#file, #function, "Data is nil")
         }
 
     } // func savePreferences()
@@ -180,29 +298,80 @@ final class ASAUserData:  ObservableObject {
         ASAUserData.self.userDefaults.synchronize()
     } // public func saveRowArray(rowArray:  Array<ASARow>, key:  ASARowArrayKey)
     
-    private class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+//    private class func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+//        //        debugPrint(#file, #function, key)
+//
+//        let temp = self.userDefaults.array(forKey: key.rawValue)
+//        var tempArray:  Array<ASARow> = []
+//
+//        if temp != nil {
+//            for dictionary in temp! {
+//                let row = ASARow.newRow(dictionary: dictionary as! Dictionary<String, Any>)
+//                tempArray.append(row)
+//            } // for dictionary in temp!
+//        }
+//
+//        let numberOfRows = tempArray.count
+//        let minimumNumberOfRows = key.minimumNumberOfRows()
+//        if numberOfRows < minimumNumberOfRows {
+//
+//            tempArray += Array.init(repeatElement(ASARow.generic(), count: minimumNumberOfRows - numberOfRows))
+//        }
+//
+//        //        debugPrint(#file, #function, tempArray)
+//        return tempArray
+//    } // public func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
+
+    private class func rowArray(key:  ASARowArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow> {
         //        debugPrint(#file, #function, key)
-        
-        let temp = self.userDefaults.array(forKey: key.rawValue)
+
+        if dictionary == nil {
+            return []
+        }
+
+        let temp = dictionary![key.rawValue] as! Array<Dictionary<String, Any>>?
         var tempArray:  Array<ASARow> = []
-        
+
         if temp != nil {
             for dictionary in temp! {
-                let row = ASARow.newRow(dictionary: dictionary as! Dictionary<String, Any>)
+                let row = ASARow.newRow(dictionary: dictionary)
                 tempArray.append(row)
             } // for dictionary in temp!
+        } else {
+            return []
         }
-        
+
         let numberOfRows = tempArray.count
         let minimumNumberOfRows = key.minimumNumberOfRows()
         if numberOfRows < minimumNumberOfRows {
-            
+
             tempArray += Array.init(repeatElement(ASARow.generic(), count: minimumNumberOfRows - numberOfRows))
         }
-        
+
         //        debugPrint(#file, #function, tempArray)
         return tempArray
-    } // public func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
+    } // class func rowArray(key:  ASARowArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow>
+
+    private class func internalEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAInternalEventCalendar> {
+        if dictionary == nil {
+            return []
+        }
+
+//        let temp = self.userDefaults.array(forKey: INTERNAL_EVENT_CALENDARS_KEY)
+        let temp = dictionary![INTERNAL_EVENT_CALENDARS_KEY] as! Array<Dictionary<String, Any>>?
+        var tempArray:  Array<ASAInternalEventCalendar> = []
+
+        if temp != nil {
+            for dictionary in temp! {
+                let eventCalendar = ASAInternalEventCalendar.newInternalEventCalendar(dictionary: dictionary)
+                if eventCalendar != nil {
+                    tempArray.append(eventCalendar!)
+                }
+            } // for dictionary in temp!
+        }
+
+        return tempArray
+    } // class func internalEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAInternalEventCalendar>
 
     private func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
