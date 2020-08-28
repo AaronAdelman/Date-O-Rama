@@ -239,6 +239,33 @@
             }
         },
         {
+            "titles":  {"he":  "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en":  "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"},
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "day":  28,
+                "weekdays":  [2, 3, 4, 5, 7]
+            }
+        },
+        {
+            "titles":  {"he":  "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (נדחה)", "en":  "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (postponed)"},
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "day":  29,
+                "weekdays":  [2]
+            }
+        },
+        {
+            "titles":  {"he":  "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (מוקדם)", "en":  "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (brought forward)"},
+            "startDateSpecification":  {
+                "type":  "allDay",
+                "month":  9,
+                "day":  27,
+                "weekdays":  [5]
+            }
+        },
+        {
             "titles":  {"he":  "יום ז׳בוטינסקי", "en":  "Zhabboṭinsqi Day"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  29,
@@ -250,12 +277,6 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  1,
                 "weekdays":  [1]
-            }
-        },
-        {
-            "titles":  {"he":  "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en":  "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  28
             }
         },
         {
