@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5C77BF82433361400CFEE47"
-               BuildableName = "&#x2728;Date-O-Rama&#x2728;.app"
+               BuildableName = "Date-O-Rama.app"
                BlueprintName = "Date-O-Rama"
                ReferencedContainer = "container:Date-O-Rama.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5C77BF82433361400CFEE47"
-            BuildableName = "&#x2728;Date-O-Rama&#x2728;.app"
+            BuildableName = "Date-O-Rama.app"
             BlueprintName = "Date-O-Rama"
             ReferencedContainer = "container:Date-O-Rama.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5C77BF82433361400CFEE47"
-            BuildableName = "&#x2728;Date-O-Rama&#x2728;.app"
+            BuildableName = "Date-O-Rama.app"
             BlueprintName = "Date-O-Rama"
             ReferencedContainer = "container:Date-O-Rama.xcodeproj">
          </BuildableReference>

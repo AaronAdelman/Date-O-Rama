@@ -251,6 +251,42 @@
                 "month":  12, "day":  1,
                 "weekdays":  [1]
             }
+        },
+        {
+            "titles":  {"he":  "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en":  "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  28
+            }
+        },
+        {
+            "titles":  {"he":  "יום השחרור וההצלה", "en":  "Liberation and Rescue Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  26
+            }
+        },
+        {
+            "titles":  {"he":  "יום הזיכרון לרחבעם זאבי", "en":  "Reḥav‘am Ze’evi Memorial Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  30
+            }
+        },
+        {
+            "titles":  {"he":  "יום ההוקרה לפצועי מערכות ישראל", "en":  "Day of Recognition for the Wounded in Israeli Wars"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  17
+            }
+        },
+        {
+            "titles":  {"he":  "יום הלשון העברית", "en":  "Hebrew Language Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  4, "day":  21
+            }
+        },
+        {
+            "titles":  {"he":  "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en":  "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  7
+            }
         }
     ]
 }
