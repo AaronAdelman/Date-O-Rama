@@ -63,29 +63,49 @@ class ASAJSONFileEventSource {
     fileprivate func calendarColor() -> Color {
         return Color(self.eventsFile!.calendarColor)
     } // static func calendarColor() -> Color
+
+    func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification {
+        var tweakedDateSpecification = dateSpecification
+        if tweakedDateSpecification.day ?? 1 < 0 {
+            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+            tweakedDateSpecification.day! += (numberOfDaysInMonth + 1)
+        }
+        return tweakedDateSpecification
+    } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+//        var tweakedStartDateSpecification = startDateSpecification
+//        if tweakedStartDateSpecification.day ?? 1 < 0 {
+//            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+//            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+//            tweakedStartDateSpecification.day! += (numberOfDaysInMonth + 1)
+//        }
+        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar)
+
         if endDateSpecification == nil {
-            let matches = self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: startDateSpecification)
+            let matches = self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: tweakedStartDateSpecification)
             return (matches, nil, nil)
         }
+
+        let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar)
         
                 let components = calendar.dateComponents([.year, .month, .day, .weekday
         //            , .weekOfYear, .weekOfMonth
                 ], from: date, locationData: locationData)
-        let eventStartDate = startDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false)
+        let eventStartDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false)
         if eventStartDate == nil {
             return (false, nil, nil)
         }
-        let eventEndDate = endDateSpecification!.date(dateComponents: components, calendar: calendar, isEndDate: true)
+        let eventEndDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true)
         if eventEndDate == nil {
             return (false, nil, nil)
         }
         
-        if !self.matchYearSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+        if !self.matchYearSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
             return (false, nil, nil)
         }
-        if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+        if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
             return (false, nil, nil)
         }
         
@@ -147,39 +167,45 @@ class ASAJSONFileEventSource {
         let components = calendar.dateComponents([.year, .month, .day, .weekday
 //            , .weekOfYear, .weekOfMonth
         ], from: date, locationData: locationData)
+        var tweakedStartDateSpecification = startDateSpecification
+        if tweakedStartDateSpecification.day ?? 1 < 0 {
+            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+            tweakedStartDateSpecification.day! += (numberOfDaysInMonth + 1)
+        }
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
-            if !(components.year?.matches(startDateSpecification.year) ?? false) {
+            if !(components.year?.matches(tweakedStartDateSpecification.year) ?? false) {
                 return false
             }
             
-            if !self.matchYearSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+            if !self.matchYearSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
                 return false
             }
         }
         
         let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
         if supportsMonth {
-            if !(components.month?.matches(startDateSpecification.month) ?? false) {
+            if !(components.month?.matches(tweakedStartDateSpecification.month) ?? false) {
                 return false
             }
             
-            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: startDateSpecification, calendar: calendar) {
+            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
                 return false
             }
         }
         
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
         if supportsDay {
-            if !(components.day?.matches(startDateSpecification.day) ?? false) {
+            if !(components.day?.matches(tweakedStartDateSpecification.day) ?? false) {
                 return false
             }
         }
         
         let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
         if supportsWeekday {
-            if !(components.weekday?.matches(startDateSpecification.weekdays) ?? false) {
+            if !(components.weekday?.matches(tweakedStartDateSpecification.weekdays) ?? false) {
                 return false
             }
         }
