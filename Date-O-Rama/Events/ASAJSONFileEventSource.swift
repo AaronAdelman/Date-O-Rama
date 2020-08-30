@@ -38,11 +38,14 @@ class ASAJSONFileEventSource {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode!)
 //        var now = startDate.noon(timeZone: locationData.timeZone!).oneDayBefore
-        var now:  Date = calendar?.startOfDay(for: startDate, location: locationData.location, timeZone: locationData.timeZone ?? TimeZone.autoupdatingCurrent) ?? startDate
+        let timeZone: TimeZone = locationData.timeZone ?? TimeZone.autoupdatingCurrent
+        var now:  Date = calendar?.startOfDay(for: startDate, location: locationData.location, timeZone: timeZone) ?? startDate
         var result:  Array<ASAEvent> = []
         var oldNow = now
         repeat {
-            let temp = self.eventDetails(date: now, locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!, ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
+            let startOfDay:  Date = (calendar?.startOfDay(for: now, location: locationData.location, timeZone: timeZone))!
+            let startOfNextDay:  Date = (calendar?.startOfNextDay(date: now, location: locationData.location, timeZone: timeZone))!
+            let temp = self.eventDetails(date: now, locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!, ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             for event in temp {
                 //                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
                 
@@ -184,13 +187,13 @@ class ASAJSONFileEventSource {
         return true
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool
     
-    func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
+    func eventDetails(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendar:  ASACalendar, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> Array<ASAEvent> {
         let location = locationData.location!
         let timeZone = locationData.timeZone!
         
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
-                
+
         let previousDate = date.oneDayBefore
         let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
@@ -224,14 +227,13 @@ class ASAJSONFileEventSource {
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
-//                    let title = eventTitle(eventSpecification, defaultLocale: self.eventsFile!.defaultLocale)
                     let title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     let color = self.calendarColor()
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate
                     if startDate == nil {
-                     startDate = eventSpecification.isAllDay ? calendar.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
-                     endDate = eventSpecification.isAllDay ? (calendar.startOfNextDay(date: date, location: location, timeZone: timeZone)) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength))
+                        startDate = eventSpecification.isAllDay ? calendar.startOfDay(for: date, location: location, timeZone: timeZone) : eventSpecification.startDateSpecification.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+                        endDate = eventSpecification.isAllDay ? (calendar.startOfNextDay(date: date, location: location, timeZone: timeZone)) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay))
                     }
                     let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitle: eventCalendarName, calendarCode: calendar.calendarCode)
                     result.append(newEvent)
@@ -349,14 +351,30 @@ extension ASADateSpecification {
             return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, latitude: latitude, longitude: longitude, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
+
+    func rawDegreesBelowHorizon(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone) -> Date? {
+        let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
+
+        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
+        let result = events[solarEvent]
+        return result!
+    }
     
-    func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date? {
+    func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
         switch self.type {
         case .degreesBelowHorizon:
-            let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
-            
-            let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
-            let result = events[solarEvent]
+//            let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
+//
+//            let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
+//            let result = events[solarEvent]
+
+            var result = self.rawDegreesBelowHorizon(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone)
+
+            if result! < startOfDay {
+                result = self.rawDegreesBelowHorizon(date: date.oneDayAfter, latitude: latitude, longitude: longitude, timeZone: timeZone)
+            } else if result! > startOfNextDay {
+                result = self.rawDegreesBelowHorizon(date: date.oneDayBefore, latitude: latitude, longitude: longitude, timeZone: timeZone)
+            }
             
             return result!
             

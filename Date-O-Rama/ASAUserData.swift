@@ -164,7 +164,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 //                debugPrint(#file, #function, jsonResult)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
-                                        debugPrint(#file, #function, jsonResult)
+//                                        debugPrint(#file, #function, jsonResult)
                     self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
                     self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
                     self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
