@@ -75,12 +75,6 @@ class ASAJSONFileEventSource {
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-//        var tweakedStartDateSpecification = startDateSpecification
-//        if tweakedStartDateSpecification.day ?? 1 < 0 {
-//            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
-//            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
-//            tweakedStartDateSpecification.day! += (numberOfDaysInMonth + 1)
-//        }
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar)
 
         if endDateSpecification == nil {
@@ -167,12 +161,8 @@ class ASAJSONFileEventSource {
         let components = calendar.dateComponents([.year, .month, .day, .weekday
 //            , .weekOfYear, .weekOfMonth
         ], from: date, locationData: locationData)
-        var tweakedStartDateSpecification = startDateSpecification
-        if tweakedStartDateSpecification.day ?? 1 < 0 {
-            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
-            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
-            tweakedStartDateSpecification.day! += (numberOfDaysInMonth + 1)
-        }
+
+        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar)
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
