@@ -168,16 +168,16 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         var complicationsSuccess = false
 
         if preferenceFileExists(code: .generic) {
-//            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
+            //            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
             let path = self.preferencesFilePath(code: .generic)
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-//                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-//                debugPrint(#file, #function, jsonResult)
+                //                debugPrint(#file, #function, jsonResult)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
-//                                        debugPrint(#file, #function, jsonResult)
+                    //                                        debugPrint(#file, #function, jsonResult)
                     self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
                     self.internalEventCalendars = ASAUserData.internalEventCalendarArray(dictionary: jsonResult)
 
@@ -191,43 +191,47 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .generic)))” does not exist")
         }
 
-                if preferenceFileExists(code: .complications) {
-        //            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
-                    let path = self.preferencesFilePath(code: .complications)
-                    do {
-                        let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-        //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
-                        let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-        //                debugPrint(#file, #function, jsonResult)
-                        if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
-                            // do stuff
-        //                                        debugPrint(#file, #function, jsonResult)
-                            self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
-                            self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
-                            self.twoLineSmallRows = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult)
-                            self.oneLineLargeRows = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult)
-                            self.oneLineSmallRows = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult)
-                            complicationsSuccess = true
-                        }
-                    } catch {
-                        // handle error
-                        debugPrint(#file, #function, error)
+        if #available(iOS 13.0, watchOS 6.0, *) {
+            if preferenceFileExists(code: .complications) {
+                //            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
+                let path = self.preferencesFilePath(code: .complications)
+                do {
+                    let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+                    //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                    let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+                    //                debugPrint(#file, #function, jsonResult)
+                    if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                        // do stuff
+                        //                                        debugPrint(#file, #function, jsonResult)
+                        self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
+                        self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
+                        self.twoLineSmallRows = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult)
+                        self.oneLineLargeRows = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult)
+                        self.oneLineSmallRows = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult)
+                        complicationsSuccess = true
                     }
-                } else {
-                    debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .generic)))” does not exist")
+                } catch {
+                    // handle error
+                    debugPrint(#file, #function, error)
                 }
+            } else {
+                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .generic)))” does not exist")
+            }
+        }
 
         if !genericSuccess {
             mainRows               = self.emptyRowArray(key: .app)
             internalEventCalendars = []
         }
 
-        if !complicationsSuccess {
-            threeLineLargeRows     = self.emptyRowArray(key: .threeLineLarge)
-            twoLineSmallRows       = self.emptyRowArray(key: .twoLineSmall)
-            twoLineLargeRows       = self.emptyRowArray(key: .twoLineLarge)
-            oneLineLargeRows       = self.emptyRowArray(key: .oneLineLarge)
-            oneLineSmallRows       = self.emptyRowArray(key: .oneLineSmall)
+        if #available(iOS 13.0, watchOS 6.0, *) {
+            if !complicationsSuccess {
+                threeLineLargeRows     = self.emptyRowArray(key: .threeLineLarge)
+                twoLineSmallRows       = self.emptyRowArray(key: .twoLineSmall)
+                twoLineLargeRows       = self.emptyRowArray(key: .twoLineLarge)
+                oneLineLargeRows       = self.emptyRowArray(key: .oneLineLarge)
+                oneLineSmallRows       = self.emptyRowArray(key: .oneLineSmall)
+            }
         }
     } // func loadPreferences()
 
@@ -248,23 +252,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     public func savePreferences() {
         let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
-        let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
-        let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
-        let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows)
-        let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows)
-        let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows)
 
         let processedInternalEventCalendarArray = self.processedInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
         let temp1: Dictionary<String, Any> = [
             ASARowArrayKey.app.rawValue:  processedMainRows,
             INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
-        ]
-        let temp2: Dictionary<String, Any> = [
-            ASARowArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
-            ASARowArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeRows,
-            ASARowArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallRows,
-            ASARowArrayKey.oneLineLarge.rawValue:  processedOneLineLargeRows,
-            ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows
         ]
 
         let data1 = (try? JSONSerialization.data(withJSONObject: temp1, options: []))
@@ -283,7 +275,22 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             debugPrint(#file, #function, "Data is nil")
         }
 
-        let data2 = (try? JSONSerialization.data(withJSONObject: temp2, options: []))
+        if #available(iOS 13.0, watchOS 6.0, *) {
+            let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
+            let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
+            let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows)
+            let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows)
+            let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows)
+
+        let temp2: Dictionary<String, Any> = [
+            ASARowArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
+            ASARowArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeRows,
+            ASARowArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallRows,
+            ASARowArrayKey.oneLineLarge.rawValue:  processedOneLineLargeRows,
+            ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows
+        ]
+
+            let data2 = (try? JSONSerialization.data(withJSONObject: temp2, options: []))
         //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
         if data2 != nil {
             do {
@@ -297,6 +304,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             }
         } else {
             debugPrint(#file, #function, "Data is nil")
+        }
         }
     } // func savePreferences()
     
