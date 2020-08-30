@@ -12,5 +12,3 @@ let ASAMessageKeyType            = "type"
 let ASAMessageKeyRequestUserData = "requestUserData"
 let ASAMessageKeyUpdateUserData  = "updateUserData"
 
-//let INTERNAL_EVENT_CALENDARS_KEY = "INTERNAL_EVENT_CALENDARS"
-
