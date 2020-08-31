@@ -73,11 +73,11 @@ extension Date {
 
         // 1. first calculate the day of the year
         
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = timeZone
+//        var calendar = Calendar(identifier: .gregorian)
+        Date.gregorianCalendar.timeZone = timeZone
 //        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 
-        let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
+        let N:  Int = Date.gregorianCalendar.ordinality(of: .day, in: .year, for: self)!
         
         // 2. convert the longitude to hour value and calculate an approximate time
         
@@ -91,7 +91,7 @@ extension Date {
         for event in events {
             var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
             if !event.rising && tempResult != nil {
-                let midnightToday = calendar.startOfDay(for:self)
+                let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
                 if tempResult! < noon {
                     // Something went wrong, and we got a result for the previous day
