@@ -3,7 +3,7 @@
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",
-    "otherCalendarCodes": ["Coptic"],
+    "otherCalendarCodes": ["Coptic", "Gregorian"],
     "calendarColorRed": 0.0,
     "calendarColorGreen": 0.0,
     "calendarColorBlue": 1.0,
@@ -614,7 +614,7 @@
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 17}, "titles": {"he": "פרשת בהר", "en": "Parashath BeHar"}},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 24}, "titles": {"he": "פרשת בחקתי", "en": "Parashath BeḤuqqothay"}, "notes": "Rosh Chodesh Sivan will be next Yom Shishi"},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [385], "month": 13, "day": 23}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim-Wayyelekh"}, "notes": "Rosh Hashanah will be next Yom Shabbat - Yom Rishon"},
-        {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode":  "Coptic", "startDateSpecification": {
-            "type": "allDay", "month": 3, "day": 26}, "excludeISOCountryCodes": ["IL"]}
+        {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode":  "Coptic", "startDateSpecification": {"type": "allDay", "month": 3, "day": 26}, "excludeISOCountryCodes": ["IL"]},
+        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode":  "Gregorian", "startDateSpecification": {"type": "allDay", "month": 12, "day": 24}}
     ]
 }
