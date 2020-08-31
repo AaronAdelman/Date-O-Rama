@@ -34,7 +34,6 @@ enum ASATimeSpecificationDayHalf:  String, Codable {
 // MARK: - ASAInternalEventsFile
 
 struct ASAInternalEventsFile: Codable {
-//    var eventSourceCode: ASAInternalEventSourceCode
     var title:  String?
     var localizableTitle:  String?
     
@@ -45,8 +44,9 @@ struct ASAInternalEventsFile: Codable {
     var calendarColorGreen:  CGFloat
     var calendarColorBlue:  CGFloat
     var calendarColorAlpha:  CGFloat
-    var calendarCode:  ASACalendarCode?
-    var eventSpecifications: [ASAInternalEventSpecification]
+    var calendarCode:  ASACalendarCode
+    var otherCalendarCodes:  Array<ASACalendarCode>?
+    var eventSpecifications: Array<ASAInternalEventSpecification>
     
     var calendarColor: UIColor {
         get {
@@ -70,9 +70,6 @@ struct ASAInternalEventsFile: Codable {
 // MARK: - ASAInternalEventSpecification
 
 class ASAInternalEventSpecification: Codable {
-//    var title:  String?
-//    var localizableTitle:  String?
-    
     var titles:  Dictionary<String, String>?
     
     var isAllDay:  Bool {
@@ -80,7 +77,8 @@ class ASAInternalEventSpecification: Codable {
             return self.startDateSpecification.type == .allDay
         } // get
     } // var isAllDay
-    
+
+    var calendarCode:  ASACalendarCode?
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
     
