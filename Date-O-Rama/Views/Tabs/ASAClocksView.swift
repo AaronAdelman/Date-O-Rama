@@ -13,7 +13,9 @@ import CoreLocation
 struct ASAClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
-    
+
+    @Environment(\.horizontalSizeClass) var sizeClass
+
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     let INSET = 25.0 as CGFloat
@@ -38,7 +40,7 @@ struct ASAClocksView: View {
                                 self.saveUserData()
                         }
                     ) {
-                        ASAMainRowsViewCell(row: row, now: self.now, INSET: self.INSET, shouldShowTime: true)
+                        ASAMainRowsViewCell(row: row, compact: self.sizeClass == .compact, now: self.now, INSET: self.INSET, shouldShowTime: true)
                     }
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in

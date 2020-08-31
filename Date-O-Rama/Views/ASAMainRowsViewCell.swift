@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ASAMainRowsViewCell:  View {
     @ObservedObject  var row:  ASARow
+    var compact:  Bool
+
     var now:  Date
     var INSET:  CGFloat
     var shouldShowTime:  Bool
@@ -26,7 +28,7 @@ struct ASAMainRowsViewCell:  View {
             HStack {
                 Spacer().frame(width: self.INSET)
                 VStack(alignment: .leading) {
-                    if row.calendar.canSplitTimeFromDate {
+                    if row.calendar.canSplitTimeFromDate && compact {
                         Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
                         if shouldShowTime {
                             Text(verbatim:  row.timeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
@@ -86,6 +88,6 @@ struct ASAMainRowsLocationSubcell:  View {
 
 struct ASAMainRowsViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsViewCell(row: ASARow.generic(), now: Date(), INSET: 8.0, shouldShowTime: true)
+        ASAMainRowsViewCell(row: ASARow.generic(), compact: true, now: Date(), INSET: 8.0, shouldShowTime: true)
     }
 }
