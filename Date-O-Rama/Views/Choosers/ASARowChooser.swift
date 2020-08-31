@@ -36,7 +36,7 @@ struct ASARowCell: View {
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.headline)
                 HStack {
                     Text(verbatim:  row.emoji(date:  Date()))
-                    Text(verbatim: row.locationData.formattedOneLineAddress()).font(.subheadline)
+                    Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadline)
                 }
             }
             Spacer()

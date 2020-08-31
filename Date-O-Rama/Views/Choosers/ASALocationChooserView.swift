@@ -96,7 +96,7 @@ struct ASALocationChooserViewCell:  View {
     
     var body: some View {
         HStack {
-            Text(locationData.formattedOneLineAddress())
+            Text(locationData.formattedOneLineAddress)
                Spacer()
                 if self.locationData == self.selectedLocationData {
                     Image(systemName: "checkmark")

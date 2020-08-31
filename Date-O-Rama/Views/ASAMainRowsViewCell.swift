@@ -75,10 +75,10 @@ struct ASAMainRowsLocationSubcell:  View {
 
             if row.placeName == nil && row.locality == nil && row.country == nil {
                 if row.location != nil {
-                    Text(verbatim:  row.location!.humanInterfaceRepresentation()).font(.subheadline)
+                    Text(verbatim:  row.location!.humanInterfaceRepresentation).font(.subheadline)
                 }
             } else {
-                Text(row.locationData.formattedOneLineAddress()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(2).frame(height: 60.0)
+                Text(row.locationData.formattedOneLineAddress).font(.subheadline).multilineTextAlignment(.leading).lineLimit(2).frame(height: 60.0)
             }
         } // HStack
     }

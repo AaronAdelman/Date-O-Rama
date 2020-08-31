@@ -262,9 +262,9 @@ class ASAJSONFileEventSource {
     func eventCalendarName(locationData:  ASALocationData) -> String {
         let localizableTitle = self.eventsFile?.localizableTitle
         if localizableTitle != nil {
-            return "\(NSLocalizedString(localizableTitle!, comment: "")) • \(locationData.formattedOneLineAddress())"
+            return "\(NSLocalizedString(localizableTitle!, comment: "")) • \(locationData.formattedOneLineAddress)"
         } else {
-            return "\(self.eventsFile?.title ?? "???") • \(locationData.formattedOneLineAddress())"
+            return "\(self.eventsFile?.title ?? "???") • \(locationData.formattedOneLineAddress)"
         }
     } // func eventCalendarName(locationData:  ASALocationData) -> String
     

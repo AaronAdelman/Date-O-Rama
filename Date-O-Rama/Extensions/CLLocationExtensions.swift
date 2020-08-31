@@ -10,23 +10,25 @@ import Foundation
 import CoreLocation
 
 extension CLLocation {
-    func humanInterfaceRepresentation() -> String {
-        let absoluteLatitude:  Double = abs(self.coordinate.latitude)
-        let absoluteLatitudeString = String(format: "%.4f", absoluteLatitude)
-        let latituteDirection = self.coordinate.latitude >= 0.0 ? "N" : "S"
-        let absoluteLongitude:  Double = abs(self.coordinate.longitude)
-        let absoluteLongitudeString = String(format: "%.4f", absoluteLongitude)
-        let longitudeDirection = self.coordinate.longitude >= 0.0 ? "E" : "W"
-        var result = "\(absoluteLatitudeString)°\(latituteDirection) \(absoluteLongitudeString)°\(longitudeDirection)"
-        
-        if self.altitude != 0.0 {
-            let altitudeString = String(format: "%.0f", self.altitude)
-            
-            result = "\(result) \(altitudeString)m"
+    var humanInterfaceRepresentation:  String {
+        get {
+            let absoluteLatitude:  Double = abs(self.coordinate.latitude)
+            let absoluteLatitudeString = String(format: "%.4f", absoluteLatitude)
+            let latituteDirection = self.coordinate.latitude >= 0.0 ? "N" : "S"
+            let absoluteLongitude:  Double = abs(self.coordinate.longitude)
+            let absoluteLongitudeString = String(format: "%.4f", absoluteLongitude)
+            let longitudeDirection = self.coordinate.longitude >= 0.0 ? "E" : "W"
+            var result = "\(absoluteLatitudeString)°\(latituteDirection) \(absoluteLongitudeString)°\(longitudeDirection)"
+
+            if self.altitude != 0.0 {
+                let altitudeString = String(format: "%.0f", self.altitude)
+
+                result = "\(result) \(altitudeString)m"
+            }
+
+            return result
         }
-        
-        return result
-    } // func ISO6079HumanInterfaceRepresentation() -> String
+    } // var humanInterfaceRepresentation
 } // extension CLLocation
 
 extension CLLocation {

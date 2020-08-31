@@ -21,7 +21,9 @@ struct ASAEventsView: View {
     
     var primaryRow:  ASARow {
         get {
-            return settings.primaryRowUUIDString.row(backupIndex: 0)
+            let result: ASARow = settings.primaryRowUUIDString.row(backupIndex: 0)
+//            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
+            return result
         } // get
         set {
             settings.primaryRowUUIDString = newValue.uuid.uuidString
@@ -29,7 +31,9 @@ struct ASAEventsView: View {
     } // var primaryRow:  ASARow
     var secondaryRow:  ASARow {
         get {
-            return settings.secondaryRowUUIDString.row(backupIndex: 1)
+            let result: ASARow = settings.secondaryRowUUIDString.row(backupIndex: 1)
+//            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
+            return result
         } // get
         set {
             settings.secondaryRowUUIDString = newValue.uuid.uuidString
@@ -74,7 +78,7 @@ struct ASAEventsView: View {
                             if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
                                 HStack {
                                     Text(verbatim: primaryRow.emoji(date:  date))
-                                    Text(verbatim:  primaryRow.locationData.formattedOneLineAddress())
+                                    Text(verbatim:  primaryRow.locationData.formattedOneLineAddress)
                                 }
                             }
                         }
@@ -87,7 +91,7 @@ struct ASAEventsView: View {
                                 if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
                                     HStack {
                                         Text(verbatim: secondaryRow.emoji(date:  date))
-                                        Text(verbatim: secondaryRow.locationData.formattedOneLineAddress())
+                                        Text(verbatim: secondaryRow.locationData.formattedOneLineAddress)
                                     }
                                 }
                             }
