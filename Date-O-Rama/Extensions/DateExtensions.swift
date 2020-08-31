@@ -110,13 +110,13 @@ extension Date {
         return result
     } // func sixPM(timeZone:  TimeZone) -> Date
     
-    func sixPMYesterday(timeZone:  TimeZone) -> Date {
-        Date.gregorianCalendar.timeZone = timeZone
-        let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
-        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
-        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
-        return result
-    } // func sixPMYesterday()
+//    func sixPMYesterday(timeZone:  TimeZone) -> Date {
+//        Date.gregorianCalendar.timeZone = timeZone
+//        let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
+//        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
+//        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
+//        return result
+//    } // func sixPMYesterday()
 } // extension Date
 
 extension Date {
@@ -141,16 +141,16 @@ extension Date {
         return hours
     } // func fractionalHours(startDate:  Date, endDate:  Date) -> Double
     
-    func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double, numberOfMinutesPerHour:  Double, numberOfSecondsPerMinute:  Double) -> (hours:  Int, minutes:  Int, seconds:  Double) {
-        let totalSISeconds = self.timeIntervalSince(startDate)
-        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
-        let hours = floor(totalSISeconds / hourLength)
-        let nonHourSISeconds = totalSISeconds - hours * hourLength
-        let minuteLength = hourLength / numberOfMinutesPerHour
-        let minutes = floor(nonHourSISeconds  / minuteLength)
-        let nonMinuteSISeconds = nonHourSISeconds - minutes * minuteLength
-        let secondLength = minuteLength / numberOfSecondsPerMinute
-        let seconds = nonMinuteSISeconds / secondLength
-        return (hours:  Int(hours), minutes:  Int(minutes), seconds:  seconds)
-    } // func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHours:  Int, numberOfMinutesPerHour:  Int, numberOfSecondsPerMinute:  Int) -> (hours:  Int, minutes:  Int, seconds:  Double)
+//    func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double, numberOfMinutesPerHour:  Double, numberOfSecondsPerMinute:  Double) -> (hours:  Int, minutes:  Int, seconds:  Double) {
+//        let totalSISeconds = self.timeIntervalSince(startDate)
+//        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
+//        let hours = floor(totalSISeconds / hourLength)
+//        let nonHourSISeconds = totalSISeconds - hours * hourLength
+//        let minuteLength = hourLength / numberOfMinutesPerHour
+//        let minutes = floor(nonHourSISeconds  / minuteLength)
+//        let nonMinuteSISeconds = nonHourSISeconds - minutes * minuteLength
+//        let secondLength = minuteLength / numberOfSecondsPerMinute
+//        let seconds = nonMinuteSISeconds / secondLength
+//        return (hours:  Int(hours), minutes:  Int(minutes), seconds:  seconds)
+//    } // func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHours:  Int, numberOfMinutesPerHour:  Int, numberOfSecondsPerMinute:  Int) -> (hours:  Int, minutes:  Int, seconds:  Double)
 } // extension Date
