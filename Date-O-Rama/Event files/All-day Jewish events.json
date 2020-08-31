@@ -3,6 +3,7 @@
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",
+    "otherCalendarCodes": ["Coptic"],
     "calendarColorRed": 0.0,
     "calendarColorGreen": 0.0,
     "calendarColorBlue": 1.0,
@@ -612,6 +613,8 @@
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 10}, "titles": {"he": "פרשת אמור", "en": "Parashath ’Emor"}},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 17}, "titles": {"he": "פרשת בהר", "en": "Parashath BeHar"}},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 24}, "titles": {"he": "פרשת בחקתי", "en": "Parashath BeḤuqqothay"}, "notes": "Rosh Chodesh Sivan will be next Yom Shishi"},
-        {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [385], "month": 13, "day": 23}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim-Wayyelekh"}, "notes": "Rosh Hashanah will be next Yom Shabbat - Yom Rishon"}
+        {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [385], "month": 13, "day": 23}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim-Wayyelekh"}, "notes": "Rosh Hashanah will be next Yom Shabbat - Yom Rishon"},
+        {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode":  "Coptic", "startDateSpecification": {
+            "type": "allDay", "month": 3, "day": 26}, "excludeISOCountryCodes": ["IL"]}
     ]
 }
