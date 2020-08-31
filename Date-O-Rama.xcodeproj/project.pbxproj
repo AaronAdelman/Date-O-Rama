@@ -122,6 +122,7 @@
 		A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */; };
 		A5CA532524979D1D008EEE2F /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
 		A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
+		A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitic events.json */; };
 		A5D3015D24EBDFF8003E79E9 /* Islamic holidays (civil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */; };
 		A5D3015E24EBDFF8003E79E9 /* Islamic holidays.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015A24EBDFF8003E79E9 /* Islamic holidays.json */; };
 		A5D3015F24EBDFF8003E79E9 /* Islamic holidays (tabular).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015B24EBDFF8003E79E9 /* Islamic holidays (tabular).json */; };
@@ -280,6 +281,7 @@
 		A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleData.swift; sourceTree = "<group>"; };
 		A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarChooserView.swift; sourceTree = "<group>"; };
 		A5CB86402448E03F00DB27A9 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		A5CBB50F24FD54310084DF72 /* Antisemitic events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Antisemitic events.json"; sourceTree = "<group>"; };
 		A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islamic holidays (civil).json"; sourceTree = "<group>"; };
 		A5D3015A24EBDFF8003E79E9 /* Islamic holidays.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islamic holidays.json"; sourceTree = "<group>"; };
 		A5D3015B24EBDFF8003E79E9 /* Islamic holidays (tabular).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islamic holidays (tabular).json"; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
 				A533798024B2333400340C0B /* Solar events.json */,
+				A5CBB50F24FD54310084DF72 /* Antisemitic events.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				A5E3606424C71FBC0000A268 /* All-day Jewish events.json in Resources */,
 				A5D3015F24EBDFF8003E79E9 /* Islamic holidays (tabular).json in Resources */,
 				A533798124B2333500340C0B /* Solar events.json in Resources */,
+				A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 				A5D3015D24EBDFF8003E79E9 /* Islamic holidays (civil).json in Resources */,
 			);
