@@ -39,9 +39,6 @@ import CoreLocation
 //         answer with a degree input for L.
 
 fileprivate let SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON = (50.0 / 60.0)
-//fileprivate let CIVIL_DEGREES_BELOW_HORIZON               = 6.0
-//fileprivate let NAUTICAL_DEGREES_BELOW_HORIZON           = 12.0
-//fileprivate let ASTRONOMICAL_DEGREES_BELOW_HORIZON       = 18.0
 
 struct ASASolarEvent:  Hashable {
     // This struct encapsulates parameters for Solar events of interest
@@ -51,20 +48,9 @@ struct ASASolarEvent:  Hashable {
     
     static var sunrise             = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
     static var sunset              = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-//    static var civilDawn           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
-//    static var civilDusk           = ASASolarEvent(degreesBelowHorizon: CIVIL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-//    static var nauticalDawn        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
-//    static var nauticalDusk        = ASASolarEvent(degreesBelowHorizon: NAUTICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-//    static var astronomicalDawn    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
-//    static var astronomicalDusk    = ASASolarEvent(degreesBelowHorizon: ASTRONOMICAL_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-//    static var dawn16Point1Degrees = ASASolarEvent(degreesBelowHorizon: 16.1, rising: true, offset: 0) // עלות השחר
-//    static var recognition = ASASolarEvent(degreesBelowHorizon: 11.0, rising: true, offset: 0) // משיכיר
-//    static var dusk8Point5Degrees  = ASASolarEvent(degreesBelowHorizon: 8.5, rising: false, offset: 0) // צאת הכוכבים
-    
+
     static var dawn72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: -72 * 60)
     static var dusk72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 72 * 60)
-    
-//    static var candleLighting       = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: -18 * 60)
 } // struct ASASolarEvent
 
 
@@ -73,9 +59,7 @@ extension Date {
 
         // 1. first calculate the day of the year
         
-//        var calendar = Calendar(identifier: .gregorian)
         Date.gregorianCalendar.timeZone = timeZone
-//        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 
         let N:  Int = Date.gregorianCalendar.ordinality(of: .day, in: .year, for: self)!
         

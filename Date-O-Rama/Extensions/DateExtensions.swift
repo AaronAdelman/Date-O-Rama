@@ -13,7 +13,6 @@ extension Date {
     static var gregorianCalendar = Calendar(identifier: .gregorian)
 
         func previousMidnight(timeZone:  TimeZone) -> Date {
-//            var gregorianCalendar = Calendar(identifier: .gregorian)
             Date.gregorianCalendar.timeZone = timeZone
             let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
     //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
@@ -22,7 +21,6 @@ extension Date {
         } // func previousMidnight(timeZone:  TimeZone) -> Date
     
     func nextMidnight(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
         Date.gregorianCalendar.timeZone = timeZone
         let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
 //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
@@ -99,7 +97,6 @@ extension Date {
     } // func solarCorrected(location:  CLLocation) -> Date
     
     func noon(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
         Date.gregorianCalendar.timeZone = timeZone
         let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
         let result = midnightToday.addingTimeInterval(12 * 60 * 60)
@@ -107,7 +104,6 @@ extension Date {
     } // func noon(timeZone:  TimeZone) -> Date
     
     func sixPM(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
         Date.gregorianCalendar.timeZone = timeZone
         let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
         let result = midnightToday.addingTimeInterval(18 * 60 * 60)
@@ -115,7 +111,6 @@ extension Date {
     } // func sixPM(timeZone:  TimeZone) -> Date
     
     func sixPMYesterday(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
         Date.gregorianCalendar.timeZone = timeZone
         let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
         let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
