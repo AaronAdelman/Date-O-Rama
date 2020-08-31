@@ -244,12 +244,16 @@
 "Show secondary dates" = "Show secondary dates";
 "Today" = "Today";
 
-"Daily Jewish events"   = "✡ Judaism (daily)";
-"All-day Jewish events" = "✡ Judaism (all-day)";
-"Jewish minor fasts"    = "✡ Judaism (minor fasts)";
-"Israeli events"        = "🇮🇱 Israel";
-"Lubavitch events"      = "✡ Lubavitch";
-"Solar events"          = "☉ Sun";
+"Daily Jewish events"            = "✡ Judaism (daily)";
+"All-day Jewish events"          = "✡ Judaism (all-day)";
+"Jewish minor fasts"             = "✡ Judaism (minor fasts)";
+"Israeli events"                 = "🇮🇱 Israel";
+"Lubavitch events"               = "✡ Lubavitch";
+"Solar events"                   = "☉ Sun";
+"Islamic holidays"               = "☪ Islam (all-day)";
+"Islamic holidays (civil)"       = "☪ Islam (all-day, civil)";
+"Islamic holidays (tabular)"     = "☪ Islam (all-day, tabular)";
+"Islamic holidays (Umm Al-Qura)" = "☪ Islam (all-day, Umm Al-Qura)";
 
 "Add external event" = "Add external event";
 
