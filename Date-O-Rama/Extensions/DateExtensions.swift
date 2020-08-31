@@ -135,6 +135,8 @@ extension Date {
 
 extension Date {
     func fractionalHours(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double) -> Double {
+        assert(startDate <= self)
+        assert(self < endDate)
         let seconds = self.timeIntervalSince(startDate)
         let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
         let hours = seconds / hourLength
