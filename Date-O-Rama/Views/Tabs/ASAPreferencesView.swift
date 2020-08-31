@@ -27,16 +27,15 @@ struct ASAPreferencesView: View {
                     Text("Internal events")
                     Spacer()
                     Button(
-                                action: {
-                                    withAnimation {
-//                                        self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  .dailyJewish)!, at: 0)
-                                        self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!, at: 0)
-                                        self.userData.savePreferences()
-                                    }
+                        action: {
+                            withAnimation {
+                                self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!, at: 0)
+                                self.userData.savePreferences()
                             }
-                            ) {
-                                Text(verbatim:  "➕")
-                            }
+                    }
+                    ) {
+                        Text("Add internal event calendar")
+                    }
                 }) {
                     ForEach(userData.internalEventCalendars, id:  \.uuid) {
                         eventCalendar

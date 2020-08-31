@@ -139,7 +139,6 @@ struct ASAEventsView: View {
                     } // ForEach
                 } // List
                 
-//                ASADatePicker(date: $date, primaryRow: self.primaryRow, showingDatePicker: $showingDatePicker)
             } // VStack
                 .navigationBarTitle(Text("EVENTS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
@@ -153,19 +152,21 @@ struct ASAEventsView: View {
     } // var body
 } // struct ASAEventsView
 
+
+// MARK: -
+
 struct ASADatePicker:  View {
     let BOTTOM_BUTTONS_FONT_SIZE = Font.title
-//        let BOTTOM_BUTTONS_FONT_SIZE = Font.body
+    //        let BOTTOM_BUTTONS_FONT_SIZE = Font.body
     
     @Binding var date:  Date {
         didSet {
-            //            self.updateComponentsFromDate()
+
         } // didSet
     } // var date
     @ObservedObject var primaryRow:  ASARow {
         didSet {
-            //            self.updateSectionsFromPrimaryRow()
-            //            self.updateComponentsFromDate()
+
         } // didSet
     } // var primaryRow
     @State var showingDatePicker:  Bool
@@ -217,7 +218,7 @@ struct ASADatePicker:  View {
             }
             
             Spacer()
-                        
+
             if self.showingDatePicker || !runningOnIOS {
                 DatePicker(selection:  self.$date, in:  Date.distantPast...Date.distantFuture, displayedComponents: .date) {
                     Text("")
@@ -228,31 +229,14 @@ struct ASADatePicker:  View {
             if !self.showingDatePicker && runningOnIOS {
                 Spacer().frame(width:  SPECIAL_SPACER_WIDTH)
             }
-                        
+
         }
         .border(Color.gray)
     } // var body
 } // struct ASADatePicker
 
-//struct ASADatePickerSectionCell:  View {
-//    @Binding var components:  ASADateComponents
-//    var section:  ASACalendarComponent
-//    var range:  Range<Int>
-//
-//    var body: some View {
-//        Group {
-////                Text(verbatim: "\(components.value(for: section) ?? -1)")
-//                Picker("", selection: $components.day) {
-//                    ForEach(range) {
-//                        value
-//                        in
-//                        Text("\(value)")
-//                    }
-//                }
-//            }
-//        
-//    } // var body
-//} // struct ASADatePickerSectionCell
+
+// MARK: -
 
 struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
@@ -273,14 +257,16 @@ struct ASALinkedEventCell:  View {
                     
                     Spacer()
                     
-//                    #if targetEnvironment(macCatalyst)
-//                    Button(INFO_STRING) {
-//                        self.showingEventView = true
-//                    }
-//                    .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-//                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
-//                    }.foregroundColor(.accentColor)
-//                    #else
+                    #if targetEnvironment(macCatalyst)
+                    Button(action:  {
+                        self.showingEventView = true
+                    }, label:  {
+                        Image(systemName: "info.circle.fill") .font(Font.system(.title))
+                    })
+                        .popover(isPresented: $showingEventView, arrowEdge: .leading) {
+                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                    }.foregroundColor(.accentColor)
+                    #else
                     Button(action:  {
                         self.showingEventView = true
                     }, label:  {
@@ -289,7 +275,7 @@ struct ASALinkedEventCell:  View {
                         .sheet(isPresented: $showingEventView) {
                             ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                     }.foregroundColor(.accentColor)
-                    //                    #endif
+                    #endif
                 }
             } else {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
@@ -297,6 +283,9 @@ struct ASALinkedEventCell:  View {
         }
     }
 }
+
+
+// MARK: -
 
 struct ASAEventCell:  View {
     var event:  ASAEventCompatible
@@ -321,6 +310,9 @@ struct ASAEventCell:  View {
     }
 }
 
+
+// MARK: -
+
 struct ASAAllDayTimesSubsubcell:  View {
     var startDate:  Date
     var endDate:  Date
@@ -344,6 +336,9 @@ struct ASAAllDayTimesSubsubcell:  View {
     }
 }
 
+
+// MARK: -
+
 struct ASAStartAndEndTimesSubcell:  View {
     var event:  ASAEventCompatible
     var row:  ASARow
@@ -353,13 +348,8 @@ struct ASAStartAndEndTimesSubcell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             if event.isAllDay && row.calendar.calendarCode == event.calendarCode && row.effectiveTimeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) {
-//                Text(row.dateString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
-//                Text("All day").frame(width:  timeWidth).font(timeFontSize)
                 ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.dateString(now: event.startDate), endDateString: row.dateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
-                //                Text(row.dateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
-                //                if event.endDate != event.startDate {
-                //                    Text(row.dateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
                 Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
                 if event.endDate != event.startDate {
                     Text(row.shortenedDateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
@@ -368,6 +358,9 @@ struct ASAStartAndEndTimesSubcell:  View {
         } // VStack
     } // var body
 } // struct ASAStartAndEndTimesSubcell
+
+
+// MARK: -
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {

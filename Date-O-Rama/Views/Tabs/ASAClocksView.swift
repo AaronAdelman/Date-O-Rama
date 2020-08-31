@@ -65,7 +65,7 @@ struct ASAClocksView: View {
                         }
                 }
                 ) {
-                    Text(verbatim:  "➕")
+                    Text("Add clock")
                 }
             )
         }.navigationViewStyle(StackNavigationViewStyle())
