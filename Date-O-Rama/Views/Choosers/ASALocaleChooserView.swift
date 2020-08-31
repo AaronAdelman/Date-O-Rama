@@ -12,9 +12,7 @@ import CoreLocation
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
-//    @ObservedObject var row:  ASARow
     @ObservedObject var row:  ASALocatedObject
-//    var deviceLocation:  CLLocation?
     @State var providedLocaleIdentifiers:  Array<String>?
     
     let ALL_LOCALES            = 0
