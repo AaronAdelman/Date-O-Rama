@@ -21,10 +21,10 @@ enum ASAPreferencesFileCode {
         get {
             switch self {
             case .generic:
-                return "/Documents/Preferences.json"
+                return "/Documents/Clock Preferences.json"
 
             case .events:
-                return "/Documents/Events Preferences.json"
+                return "/Documents/Event Preferences.json"
 
             case .complications:
                 return "/Documents/Complication Preferences.json"
