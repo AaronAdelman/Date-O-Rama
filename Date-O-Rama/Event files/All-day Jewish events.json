@@ -622,6 +622,7 @@
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 24}, "titles": {"he": "פרשת בחקתי", "en": "Parashath BeḤuqqothay"}, "notes": "Rosh Chodesh Sivan will be next Yom Shishi"},
         {"startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [385], "month": 13, "day": 23}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim-Wayyelekh"}, "notes": "Rosh Hashanah will be next Yom Shabbat - Yom Rishon"},
         {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode":  "Coptic", "startDateSpecification": {"type": "allDay", "month": 3, "day": 26}, "excludeISOCountryCodes": ["IL"]},
-        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode":  "Gregorian", "startDateSpecification": {"type": "allDay", "month": 12, "day": 24}}
+        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode":  "Gregorian", "startDateSpecification": {"type": "allDay", "month": 12, "day": 24}},
+        {"titles": {"he": "ברכת החמה", "en": "Blessing of the Sun"}, "calendarCode":  "Coptic", "startDateSpecification": {"type": "allDay", "month": 7, "day": 30, "yearDivisor": 28, "yearRemainder": 17}}
     ]
 }
