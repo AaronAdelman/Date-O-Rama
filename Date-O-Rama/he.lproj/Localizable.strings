@@ -239,7 +239,7 @@
 "PREFERENCES_TAB"         = "הגדרות";
 "COMPLICATION_CLOCKS_TAB" = "שעון יד";
 
-"All day" = "יום שלם";
+//"All day" = "יום שלם";
 "INTERVAL_SEPARATOR" = " - ";
 "Show secondary dates" = "הצג תאריכים שניים";
 "Today" = "היום";

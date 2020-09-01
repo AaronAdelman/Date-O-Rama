@@ -298,6 +298,8 @@ struct ASAEventCell:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
+
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     var body: some View {
         HStack {
@@ -307,8 +309,18 @@ struct ASAEventCell:  View {
             }
             Rectangle().frame(width:  2.0).foregroundColor(event.color)
             VStack(alignment: .leading) {
-                Text(event.title).font(.headline).foregroundColor(Color(UIColor.label))
+                if self.sizeClass == .compact {
+                Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
+                    .allowsTightening(true)
+                    .minimumScaleFactor(0.5)
+                } else {
+                    Text(event.title).font(.headline).foregroundColor(Color(UIColor.label))
+                        .allowsTightening(true)
+                        .minimumScaleFactor(0.5)
+                }
                 Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.secondaryLabel))
+                .allowsTightening(true)
+                .minimumScaleFactor(0.5)
             } // VStack
         } // HStack
     }
@@ -332,9 +344,9 @@ struct ASAAllDayTimesSubsubcell:  View {
             if startDateString != endDateString {
                 Text(endDateString).frame(width:  timeWidth).font(timeFontSize)
                     .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
-            } else {
-                Text("All day").frame(width:  timeWidth).font(timeFontSize)
-                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
+//            } else {
+//                Text("All day").frame(width:  timeWidth).font(timeFontSize)
+//                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
             }
         }
     }

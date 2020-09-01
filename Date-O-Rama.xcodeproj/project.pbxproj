@@ -346,16 +346,16 @@
 			isa = PBXGroup;
 			children = (
 				A5E3606324C71FBC0000A268 /* All-day Jewish events.json */,
+				A5CBB50F24FD54310084DF72 /* Antisemitic events.json */,
 				A584C8FF24B646210014CE2E /* Daily Jewish events.json */,
-				A5D3015A24EBDFF8003E79E9 /* Islamic holidays.json */,
 				A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */,
 				A5D3015B24EBDFF8003E79E9 /* Islamic holidays (tabular).json */,
 				A5D3015C24EBDFF8003E79E9 /* Islamic holidays (Umm Al-Qura).json */,
+				A5D3015A24EBDFF8003E79E9 /* Islamic holidays.json */,
 				A5E3606524C756FF0000A268 /* Israeli events.json */,
 				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
 				A533798024B2333400340C0B /* Solar events.json */,
-				A5CBB50F24FD54310084DF72 /* Antisemitic events.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";

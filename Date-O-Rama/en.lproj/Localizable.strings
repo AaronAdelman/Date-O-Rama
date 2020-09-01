@@ -239,7 +239,7 @@
 "PREFERENCES_TAB"         = "Preferences";
 "COMPLICATION_CLOCKS_TAB" = "Watch";
 
-"All day" = "All day";
+//"All day" = "All day";
 "INTERVAL_SEPARATOR" = " - ";
 "Show secondary dates" = "Show secondary dates";
 "Today" = "Today";
