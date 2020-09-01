@@ -147,6 +147,14 @@ class ASAJSONFileEventSource {
                 return false
             }
         }
+
+        if dateSpecification.yearDivisor != nil && dateSpecification.yearRemainder != nil {
+            let year = components.year
+            let (_, remainder) = year!.quotientAndRemainder(dividingBy:  dateSpecification.yearDivisor!)
+            if !remainder.matches(dateSpecification.yearRemainder) {
+                return false
+            }
+        }
         
         return true
     } // func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool

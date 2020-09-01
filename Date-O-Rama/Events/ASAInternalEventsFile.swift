@@ -163,6 +163,9 @@ struct ASADateSpecification:  Codable {
     var lengthsOfYear:  Array<Int>?
     var dayOfYear:  Int?
 
+    var yearDivisor:  Int?
+    var yearRemainder:  Int? // Matches if year mod yearDivisor = yearRemainder
+
     var type: ASATimeSpecificationType
     
     // For degrees below horizon events
