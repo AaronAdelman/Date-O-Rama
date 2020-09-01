@@ -18,11 +18,13 @@ struct ASAEventsView: View {
     @ObservedObject var eventManager = ASAExternalEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
+
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     var primaryRow:  ASARow {
         get {
             let result: ASARow = settings.primaryRowUUIDString.row(backupIndex: 0)
-//            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
+            //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
             return result
         } // get
         set {
@@ -32,7 +34,7 @@ struct ASAEventsView: View {
     var secondaryRow:  ASARow {
         get {
             let result: ASARow = settings.secondaryRowUUIDString.row(backupIndex: 1)
-//            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
+            //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
             return result
         } // get
         set {
@@ -58,7 +60,15 @@ struct ASAEventsView: View {
         return events
     } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
     
-    let TIME_WIDTH = 100.0 as CGFloat
+    var timeWidth:  CGFloat {
+        get {
+            if self.sizeClass! == .compact {
+                return 100.00
+            } else {
+                return 120.00
+            }
+        } // get
+    } // var timeWidth
     let TIME_FONT_SIZE = Font.subheadline
     
     @State var isNavBarHidden:  Bool = false
@@ -139,7 +149,7 @@ struct ASAEventsView: View {
                     ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                         event
                         in
-                        ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.TIME_WIDTH, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
+                        ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
                     } // ForEach
                 } // List
                 
@@ -310,17 +320,17 @@ struct ASAEventCell:  View {
             Rectangle().frame(width:  2.0).foregroundColor(event.color)
             VStack(alignment: .leading) {
                 if self.sizeClass == .compact {
-                Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
+                    Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
+                        .allowsTightening(true)
+                        .minimumScaleFactor(0.5)
                 } else {
                     Text(event.title).font(.headline).foregroundColor(Color(UIColor.label))
                         .allowsTightening(true)
                         .minimumScaleFactor(0.5)
                 }
                 Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.secondaryLabel))
-                .allowsTightening(true)
-                .minimumScaleFactor(0.5)
+                    .allowsTightening(true)
+                    .minimumScaleFactor(0.5)
             } // VStack
         } // HStack
     }
@@ -341,12 +351,16 @@ struct ASAAllDayTimesSubsubcell:  View {
         VStack {
             Text(startDateString).frame(width:  timeWidth).font(timeFontSize)
                 .foregroundColor(startDate < Date() ? Color.gray : Color(UIColor.label))
+                .allowsTightening(true)
+                .minimumScaleFactor(0.5)
             if startDateString != endDateString {
                 Text(endDateString).frame(width:  timeWidth).font(timeFontSize)
                     .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
-//            } else {
-//                Text("All day").frame(width:  timeWidth).font(timeFontSize)
-//                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
+                    .allowsTightening(true)
+                    .minimumScaleFactor(0.5)
+                //            } else {
+                //                Text("All day").frame(width:  timeWidth).font(timeFontSize)
+                //                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
             }
         }
     }
@@ -367,8 +381,14 @@ struct ASAStartAndEndTimesSubcell:  View {
                 ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.dateString(now: event.startDate), endDateString: row.dateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
                 Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
+                    .lineLimit(2)
+                    .allowsTightening(true)
+                    .minimumScaleFactor(0.5)
                 if event.endDate != event.startDate {
                     Text(row.shortenedDateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
+                        .lineLimit(2)
+                        .allowsTightening(true)
+                        .minimumScaleFactor(0.5)
                 }
             }
         } // VStack
