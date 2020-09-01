@@ -14,6 +14,7 @@ import UIKit
 
 enum ASAPreferencesFileCode {
     case generic
+    case events
     case complications
 
     var suffix:  String {
@@ -21,6 +22,9 @@ enum ASAPreferencesFileCode {
             switch self {
             case .generic:
                 return "/Documents/Preferences.json"
+
+            case .events:
+                return "/Documents/Events Preferences.json"
 
             case .complications:
                 return "/Documents/Complication Preferences.json"
@@ -179,7 +183,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     // do stuff
                     //                                        debugPrint(#file, #function, jsonResult)
                     self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
-                    self.internalEventCalendars = ASAUserData.internalEventCalendarArray(dictionary: jsonResult)
 
                     genericSuccess = true
                 }
@@ -189,6 +192,30 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             }
         } else {
             debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .generic)))” does not exist")
+        }
+
+        if preferenceFileExists(code: .events) {
+            //            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
+            let path = self.preferencesFilePath(code: .events)
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+                //                debugPrint(#file, #function, jsonResult)
+                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                    // do stuff
+                    //                                        debugPrint(#file, #function, jsonResult)
+//                    self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
+                    self.internalEventCalendars = ASAUserData.internalEventCalendarArray(dictionary: jsonResult)
+
+                    genericSuccess = true
+                }
+            } catch {
+                // handle error
+                debugPrint(#file, #function, error)
+            }
+        } else {
+            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .events)))” does not exist")
         }
 
         if #available(iOS 13.0, watchOS 6.0, *) {
@@ -254,18 +281,38 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
 
         let processedInternalEventCalendarArray = self.processedInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
-        let temp1: Dictionary<String, Any> = [
+
+        let temp1a: Dictionary<String, Any> = [
             ASARowArrayKey.app.rawValue:  processedMainRows,
+        ]
+
+        let temp1b: Dictionary<String, Any> = [
             INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
         ]
 
-        let data1 = (try? JSONSerialization.data(withJSONObject: temp1, options: []))
+        let data1a = (try? JSONSerialization.data(withJSONObject: temp1a, options: []))
         //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-        if data1 != nil {
+        if data1a != nil {
             do {
                 let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .generic)!)
 
-                try data1!.write(to: url, options: .atomic)
+                try data1a!.write(to: url, options: .atomic)
+
+                //                debugPrint(#file, #function, "Preferences successfully saved")
+            } catch {
+                debugPrint(#file, #function, error)
+            }
+        } else {
+            debugPrint(#file, #function, "Data is nil")
+        }
+
+        let data1b = (try? JSONSerialization.data(withJSONObject: temp1b, options: []))
+        //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
+        if data1b != nil {
+            do {
+                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .events)!)
+
+                try data1b!.write(to: url, options: .atomic)
 
                 //                debugPrint(#file, #function, "Preferences successfully saved")
             } catch {
