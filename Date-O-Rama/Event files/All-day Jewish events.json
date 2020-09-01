@@ -15,7 +15,7 @@
         {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 7, "yearRemainder": 4}, "endDateSpecification": {"type": "allDay", "month": 13, "day": 29}, "titles": {"he": "שנה ד׳ לשמיטה", "en": "Year 4 in the Shemiṭṭah Cycle"}},
         {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 7, "yearRemainder": 5}, "endDateSpecification": {"type": "allDay", "month": 13, "day": 29}, "titles": {"he": "שנה ה׳ לשמיטה", "en": "Year 5 in the Shemiṭṭah Cycle"}},
         {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 7, "yearRemainder": 6}, "endDateSpecification": {"type": "allDay", "month": 13, "day": 29}, "titles": {"he": "שנה ו׳ לשמיטה", "en": "Year 6 in the Shemiṭṭah Cycle"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 7, "yearRemainder": 0}, "endDateSpecification": {"type": "allDay", "month": 13, "day": 29}, "titles": {"he": "שנת השמיטה", "en": "Shemiṭṭah Cycle"}},
+        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 7, "yearRemainder": 0}, "endDateSpecification": {"type": "allDay", "month": 13, "day": 29}, "titles": {"he": "שנת השמיטה", "en": "Shemiṭṭah Year"}},
         {"titles": {"he": "עשרת ימי תשובה", "en": "Ten Days of Repentance"}, "startDateSpecification": {"type": "allDay", "month": 1, "day": 1},
             "endDateSpecification": {"type": "allDay", "month": 1, "day": 10}},
         {"titles": {"he": "ראש השנה (יום א׳)", "en": "Ro’sh hashShanah (New Year) (day 1)"}, "startDateSpecification": {"type": "allDay", "month": 1, "day": 1}},
