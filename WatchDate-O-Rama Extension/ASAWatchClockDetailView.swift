@@ -24,12 +24,12 @@ struct ASAWatchClockDetailView: View {
     var body: some View {
         List {
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow)) {
+//                NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow)) {
                     HStack {
                         Text(verbatim: "🗓")
                         ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                     }
-                }
+//                }
                 if selectedRow.supportsLocales() {
                     NavigationLink(destination: ASALocaleChooserView(row: selectedRow)) {
                         HStack {

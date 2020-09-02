@@ -45,6 +45,10 @@ struct ASACalendarChooserView: View {
     ]
     
     @ObservedObject var row:  ASARow
+    @State var tempCalendarCode:  ASACalendarCode
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var didCancel = false
     
     let ALL_CALENDARS        = 0
     let APPLE_CALENDARS      = 1
@@ -102,15 +106,30 @@ struct ASACalendarChooserView: View {
             ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode
                 in
-                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$row.calendar.calendarCode)
+                ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$tempCalendarCode)
                     .onTapGesture {
-                    self.row.calendar = ASACalendarFactory.calendar(code: calendarCode)!
+                    self.tempCalendarCode = calendarCode
                 }
             }
         }
-        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+//        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarItems(trailing:
+            Button("Cancel", action: {
+                self.didCancel = true
+                self.presentationMode.wrappedValue.dismiss()
+            })
+        )
+            .onAppear() {
+                self.tempCalendarCode = self.row.calendar.calendarCode
+        }
+        .onDisappear() {
+            if !self.didCancel {
+                self.row.calendar = ASACalendarFactory.calendar(code: self.tempCalendarCode)!
+                }
+            }
+        }
     }
-}
+
 
 struct ASACalendarCell: View {
     let calendarCode: ASACalendarCode
@@ -131,6 +150,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarChooserView(row: ASARow.test())
+        ASACalendarChooserView(row: ASARow.test(), tempCalendarCode: .Gregorian)
     }
 }

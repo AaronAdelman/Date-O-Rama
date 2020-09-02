@@ -74,7 +74,6 @@
 		A57CA3142483EA6500378EA7 /* ASAMainRowsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */; };
 		A57CA3152483EB3400378EA7 /* ASAMainRowsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */; };
 		A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
-		A57CA3202483ED1F00378EA7 /* ASACalendarChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */; };
 		A57CA3212483ED2F00378EA7 /* ASALocaleChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */; };
 		A57CA3222483ED4A00378EA7 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
 		A57CA3232483ED4A00378EA7 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
@@ -825,7 +824,6 @@
 				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
 				A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */,
-				A57CA3202483ED1F00378EA7 /* ASACalendarChooserView.swift in Sources */,
 				A566F47E2483D7CF000A05B5 /* ASARow.swift in Sources */,
 				A57CA3212483ED2F00378EA7 /* ASALocaleChooserView.swift in Sources */,
 				A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */,
