@@ -32,7 +32,7 @@ struct ASAClockDetailView: View {
                     }
                 }
                 if selectedRow.supportsLocales() {
-                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow)) {
+                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
                         HStack {
                             Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
                             ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())

@@ -13,6 +13,12 @@ struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
     @ObservedObject var row:  ASALocatedObject
+
+    @State var tempLocaleIdentifier:  String
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var didCancel = false
+
     @State var providedLocaleIdentifiers:  Array<String>?
     
     let ALL_LOCALES            = 0
@@ -59,10 +65,24 @@ struct ASALocaleChooserView: View {
             }
 
             ForEach(self.locales(option: selection)) { item in
-                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, row: self.row)
+                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier)
             } // ForEach(localeData.records)
         } // List
 //            .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarItems(trailing:
+            Button("Cancel", action: {
+                self.didCancel = true
+                self.presentationMode.wrappedValue.dismiss()
+            })
+        )
+            .onAppear() {
+                self.tempLocaleIdentifier = self.row.localeIdentifier
+        }
+        .onDisappear() {
+            if !self.didCancel {
+                self.row.localeIdentifier = self.tempLocaleIdentifier
+                }
+            }
     } // var body
 } // struct ASALocalePickerView
 
@@ -71,27 +91,28 @@ struct ASALocaleCell: View {
     let localizedLocaleString:  String
     
 //    @ObservedObject var row:  ASARow
-    @ObservedObject var row:  ASALocatedObject
+//    @ObservedObject var row:  ASALocatedObject
+    @Binding var tempLocaleIdentifier:  String
 
     var body: some View {
         HStack {
             Text(verbatim: localeString.localeCountryCodeFlag())
             Text(verbatim:  localizedLocaleString)
             Spacer()
-            if localeString == self.row.localeIdentifier {
+            if localeString == self.tempLocaleIdentifier {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }
         .onTapGesture {
-            self.row.localeIdentifier = self.localeString
+            self.tempLocaleIdentifier = self.localeString
         }
     }
 }
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocaleChooserView(row: ASARow.test())
+        ASALocaleChooserView(row: ASARow.test(), tempLocaleIdentifier: "en_US")
     }
 }
 

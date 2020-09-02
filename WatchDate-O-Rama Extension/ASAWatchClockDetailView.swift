@@ -31,12 +31,12 @@ struct ASAWatchClockDetailView: View {
                     }
 //                }
                 if selectedRow.supportsLocales() {
-                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow)) {
+//                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow)) {
                         HStack {
                             Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
                             ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                         }
-                    }
+//                    }
                 }
                 if selectedRow.calendar.supportsDateFormats {
                     NavigationLink(destination: ASADateFormatChooserView(row: selectedRow)) {

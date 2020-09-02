@@ -19,7 +19,7 @@ struct ASAInternalEventCalendarDetailView: View {
                 Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }
 
-            NavigationLink(destination: ASALocaleChooserView(row: selectedEventCalendar, providedLocaleIdentifiers: selectedEventCalendar.supportedLocales)) {
+            NavigationLink(destination: ASALocaleChooserView(row: selectedEventCalendar, tempLocaleIdentifier: selectedEventCalendar.localeIdentifier, providedLocaleIdentifiers: selectedEventCalendar.supportedLocales)) {
                 HStack {
                     Text(verbatim:  selectedEventCalendar.localeIdentifier.localeCountryCodeFlag())
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedEventCalendar.localeIdentifier.asSelfLocalizedLocaleIdentifier())
