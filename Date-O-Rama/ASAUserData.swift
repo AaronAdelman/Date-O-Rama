@@ -272,8 +272,26 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     deinit {
         NSFileCoordinator.removeFilePresenter(self)
-    }
+    } // deinit
     
+    fileprivate func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode) {
+        let data1a = (try? JSONSerialization.data(withJSONObject: dictionary, options: []))
+        //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
+        if data1a != nil {
+            do {
+                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: code)!)
+
+                try data1a!.write(to: url, options: .atomic)
+
+                //                debugPrint(#file, #function, "Preferences successfully saved")
+            } catch {
+                debugPrint(#file, #function, error)
+            }
+        } else {
+            debugPrint(#file, #function, "Data is nil")
+        }
+    } // func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode)
+
     public func savePreferences(code:  ASAPreferencesFileCode) {
         if code == .clocks {
             let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
@@ -282,21 +300,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 ASARowArrayKey.app.rawValue:  processedMainRows,
             ]
 
-            let data1a = (try? JSONSerialization.data(withJSONObject: temp1a, options: []))
-            //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-            if data1a != nil {
-                do {
-                    let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .clocks)!)
-
-                    try data1a!.write(to: url, options: .atomic)
-
-                    //                debugPrint(#file, #function, "Preferences successfully saved")
-                } catch {
-                    debugPrint(#file, #function, error)
-                }
-            } else {
-                debugPrint(#file, #function, "Data is nil")
-            }
+            writePreferences(temp1a, code: .clocks)
         }
 
         if code == .events {
@@ -305,22 +309,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             let temp1b: Dictionary<String, Any> = [
                 INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
             ]
-            
-            let data1b = (try? JSONSerialization.data(withJSONObject: temp1b, options: []))
-            //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-            if data1b != nil {
-                do {
-                    let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .events)!)
 
-                    try data1b!.write(to: url, options: .atomic)
-
-                    //                debugPrint(#file, #function, "Preferences successfully saved")
-                } catch {
-                    debugPrint(#file, #function, error)
-                }
-            } else {
-                debugPrint(#file, #function, "Data is nil")
-            }
+            writePreferences(temp1b, code: .events)
         }
 
         if code == .complications {
@@ -339,21 +329,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows
                 ]
 
-                let data2 = (try? JSONSerialization.data(withJSONObject: temp2, options: []))
-                //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-                if data2 != nil {
-                    do {
-                        let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .complications)!)
-
-                        try data2!.write(to: url, options: .atomic)
-
-                        //                debugPrint(#file, #function, "Preferences successfully saved")
-                    } catch {
-                        debugPrint(#file, #function, error)
-                    }
-                } else {
-                    debugPrint(#file, #function, "Data is nil")
-                }
+                writePreferences(temp2, code: .complications)
             }
         }
     } // func savePreferences()
