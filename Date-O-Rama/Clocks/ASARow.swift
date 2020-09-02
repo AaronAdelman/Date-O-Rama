@@ -31,9 +31,7 @@ class ASARow: ASALocatedObject {
             }
         } // didSet
     } // var calendar
-    
-//    @Published var localeIdentifier:  String = Locale.current.identifier
-    
+
     @Published var majorDateFormat:  ASAMajorDateFormat = .full {
         didSet {
             if dateGeekFormat.isEmpty {
@@ -51,42 +49,6 @@ class ASARow: ASALocatedObject {
         } // didset
     } // var majorDateFormat
     @Published var timeGeekFormat:  String = "HHmmss"
-    
-    var placeName:  String? {
-           get {
-               return self.locationData.name
-           } // get
-           set {
-               self.locationData.name = newValue
-           } // set
-       }
-    
-    var locality:  String? {
-           get {
-               return self.locationData.locality
-           } // get
-           set {
-               self.locationData.locality = newValue
-           } // set
-       }
-    
-    var country:  String? {
-           get {
-               return self.locationData.country
-           } // get
-           set {
-               self.locationData.country = newValue
-           } // set
-       }
-    
-    var ISOCountryCode:  String? {
-           get {
-               return self.locationData.ISOCountryCode
-           } // get
-           set {
-               self.locationData.ISOCountryCode = newValue
-           } // set
-       }
 
     
     // MARK: -
@@ -113,17 +75,17 @@ class ASARow: ASALocatedObject {
             result[VERTICAL_ACCURACY_KEY] = self.location?.verticalAccuracy
         }
         
-        if self.placeName != nil {
-            result[PLACE_NAME_KEY] = self.placeName
+        if self.locationData.name != nil {
+            result[PLACE_NAME_KEY] = self.locationData.name
         }
-        if self.locality != nil {
-            result[LOCALITY_KEY] = self.locality
+        if self.locationData.locality != nil {
+            result[LOCALITY_KEY] = self.locationData.locality
         }
-        if self.country != nil {
-            result[COUNTRY_KEY] = self.country
+        if self.locationData.country != nil {
+            result[COUNTRY_KEY] = self.locationData.country
         }
-        if self.ISOCountryCode != nil {
-            result[ISO_COUNTRY_CODE_KEY] = self.ISOCountryCode
+        if self.locationData.ISOCountryCode != nil {
+            result[ISO_COUNTRY_CODE_KEY] = self.locationData.ISOCountryCode
         }
         
         if self.locationData.postalCode != nil {
@@ -217,10 +179,10 @@ class ASARow: ASALocatedObject {
         if latitude != nil && longitude != nil {
             newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
         }
-        newRow.placeName = dictionary[PLACE_NAME_KEY] as? String
-        newRow.locality = dictionary[LOCALITY_KEY] as? String
-        newRow.country = dictionary[COUNTRY_KEY] as? String
-        newRow.ISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
+        newRow.locationData.name = dictionary[PLACE_NAME_KEY] as? String
+        newRow.locationData.locality = dictionary[LOCALITY_KEY] as? String
+        newRow.locationData.country = dictionary[COUNTRY_KEY] as? String
+        newRow.locationData.ISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
         
         newRow.locationData.postalCode = dictionary[POSTAL_CODE_KEY] as? String
         newRow.locationData.administrativeArea = dictionary[ADMINISTRATIVE_AREA_KEY] as? String

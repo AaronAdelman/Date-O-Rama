@@ -75,7 +75,7 @@ struct ASAMainRowsLocationSubcell:  View {
             Spacer().frame(width: self.INSET)
             Text(verbatim:  row.emoji(date:  self.now))
 
-            if row.placeName == nil && row.locality == nil && row.country == nil {
+            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
                 if row.location != nil {
                     Text(verbatim:  row.location!.humanInterfaceRepresentation).font(.subheadline)
                 }
