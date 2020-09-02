@@ -39,14 +39,14 @@ struct ASAWatchClockDetailView: View {
 //                    }
                 }
                 if selectedRow.calendar.supportsDateFormats {
-                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow)) {
+//                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
-                    }
+//                    }
                 }
                 if selectedRow.calendar.supportsTimeFormats {
-                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow)) {
+//                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
-                    }
+//                    }
                 }
 
                 if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {

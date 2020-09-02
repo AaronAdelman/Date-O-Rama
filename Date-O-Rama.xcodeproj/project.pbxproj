@@ -74,8 +74,6 @@
 		A57CA3142483EA6500378EA7 /* ASAMainRowsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */; };
 		A57CA3152483EB3400378EA7 /* ASAMainRowsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */; };
 		A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
-		A57CA3222483ED4A00378EA7 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
-		A57CA3232483ED4A00378EA7 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
 		A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */; };
 		A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASALocationCell.swift */; };
 		A57CA3282484E3F800378EA7 /* ASAWatchClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3272484E3F800378EA7 /* ASAWatchClockDetailView.swift */; };
@@ -813,13 +811,11 @@
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
 				A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */,
-				A57CA3232483ED4A00378EA7 /* ASATimeFormatChooserView.swift in Sources */,
 				A566F4702483D7CF000A05B5 /* ASALocatedObject.swift in Sources */,
 				A566F48D2483D7CF000A05B5 /* UIColorExtensions.swift in Sources */,
 				A566F4792483D7CF000A05B5 /* ASAISO8601Calendar.swift in Sources */,
 				A57F442024BC69FE005261EE /* ASACalendarComponent.swift in Sources */,
 				A584C8FE24B5E3DB0014CE2E /* ASAInternalEventsFile.swift in Sources */,
-				A57CA3222483ED4A00378EA7 /* ASADateFormatChooserView.swift in Sources */,
 				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
 				A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */,

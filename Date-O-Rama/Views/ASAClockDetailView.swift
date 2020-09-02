@@ -40,7 +40,7 @@ struct ASAClockDetailView: View {
                     }
                 }
                 if selectedRow.calendar.supportsDateFormats {
-                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow)) {
+                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat, tempDateGeekFormat: selectedRow.dateGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                     }
                 }

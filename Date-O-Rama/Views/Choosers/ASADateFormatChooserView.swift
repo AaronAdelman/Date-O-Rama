@@ -11,6 +11,14 @@ import CoreLocation
 
 struct ASADateFormatChooserView: View {
     @ObservedObject var row:  ASARow
+
+    @State var tempMajorDateFormat:  ASAMajorDateFormat
+    @State var tempDateGeekFormat:  String
+    @State var calendarCode:  ASACalendarCode
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var didCancel = false
+
     
     var model:  Array<ASAComponentsPickerSection> = [
         ASAComponentsPickerSection(headerCode: "E", items: ["", "eeeee", "eeeeee", "eee", "eeee", "e", "ee"
@@ -38,7 +46,7 @@ struct ASADateFormatChooserView: View {
                 ForEach(section.items, id:  \.self) {
                     item
                     in
-                    ASADateFormatComponentCell(headerCode: section.headerCode, item: item, row:  self.row)
+                    ASADateFormatComponentCell(headerCode: section.headerCode, item: item, calendarCode:  self.calendarCode, selectedDateGeekFormat: self.$tempDateGeekFormat)
                 } // ForEach(section.items, id:  \.self)
             }
         }
@@ -50,14 +58,30 @@ struct ASADateFormatChooserView: View {
                 ForEach(row.calendar.supportedMajorDateFormats, id: \.self) {
                     format
                     in
-                    ASAMajorDateFormatCell(majorDateFormat: format, row: self.row)
+                    ASAMajorDateFormatCell(majorDateFormat: format, selectedMajorDateFormat: self.$tempMajorDateFormat)
                 }
             } // Section
-            if row.majorDateFormat == .localizedLDML {
+            if tempMajorDateFormat == .localizedLDML {
                 ComponentsForEach()
             }
         } // List
-            .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        .navigationBarItems(trailing:
+            Button("Cancel", action: {
+                self.didCancel = true
+                self.presentationMode.wrappedValue.dismiss()
+            })
+        )
+            .onAppear() {
+                self.tempMajorDateFormat = self.row.majorDateFormat
+                self.tempDateGeekFormat  = self.row.dateGeekFormat
+                self.calendarCode        = self.row.calendar.calendarCode
+        }
+        .onDisappear() {
+            if !self.didCancel {
+                self.row.majorDateFormat = self.tempMajorDateFormat
+                self.row.dateGeekFormat  = self.tempDateGeekFormat
+                }
+            }
     }
 }
 
@@ -67,18 +91,18 @@ struct ASADateFormatChooserView: View {
 struct ASAMajorDateFormatCell: View {
     let majorDateFormat: ASAMajorDateFormat
     
-    @ObservedObject var row:  ASARow
+    @Binding var selectedMajorDateFormat:  ASAMajorDateFormat
     
     var body: some View {
         HStack {
             Text(verbatim:  majorDateFormat.localizedItemName())
             Spacer()
-            if majorDateFormat == self.row.majorDateFormat {
+            if majorDateFormat == self.selectedMajorDateFormat {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-            self.row.majorDateFormat = self.majorDateFormat
+            self.selectedMajorDateFormat = self.majorDateFormat
         }
     }
 } // struct ASAMajorDateFormatCell
@@ -89,11 +113,12 @@ struct ASAMajorDateFormatCell: View {
 struct ASADateFormatComponentCell: View {
     let headerCode:  String
     let item: String
+    let calendarCode:  ASACalendarCode
     
-    @ObservedObject var row: ASARow
+    @Binding var selectedDateGeekFormat:  String
     
-    func selectedItem(row:  ASARow, headerCode:  String) -> String {
-        let components = row.dateGeekFormat.dateComponents(calendarCode: row.calendar.calendarCode)
+    func selectedItem(selectedDateGeekFormat:  String, headerCode:  String) -> String {
+        let components = selectedDateGeekFormat.dateComponents(calendarCode: calendarCode)
         let selection = components[headerCode]
         return selection ?? ""
     }
@@ -102,17 +127,17 @@ struct ASADateFormatComponentCell: View {
         HStack {
             Text(verbatim: NSLocalizedString("ITEM_\(headerCode)_\(item)", comment: ""))
             Spacer()
-            if self.item == self.selectedItem(row: self.row, headerCode: headerCode) {
+            if self.item == self.selectedItem(selectedDateGeekFormat: self.selectedDateGeekFormat, headerCode: headerCode) {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }
         .onTapGesture {
-            debugPrint("\(#file) \(#function) Geek format before = \(self.row.dateGeekFormat)")
-            var components = self.row.dateGeekFormat.dateComponents(calendarCode: self.row.calendar.calendarCode)
+            debugPrint("\(#file) \(#function) Geek format before = \(self.selectedDateGeekFormat)")
+            var components = self.selectedDateGeekFormat.dateComponents(calendarCode:  self.calendarCode)
             components[self.headerCode] = self.item
-            self.row.dateGeekFormat = String.geekFormat(components: components)
-            debugPrint("\(#file) \(#function) Geek format after = \(self.row.dateGeekFormat)")
+            self.selectedDateGeekFormat = String.geekFormat(components: components)
+            debugPrint("\(#file) \(#function) Geek format after = \(self.selectedDateGeekFormat)")
         }
     }  // var body
 } // struct ASAComponentCell
@@ -139,6 +164,6 @@ extension ASAComponentsPickerSection {
 
 struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASADateFormatChooserView(row: ASARow.generic())
+        ASADateFormatChooserView(row: ASARow.generic(), tempMajorDateFormat: .full, tempDateGeekFormat: "yyyy", calendarCode: .Gregorian)
     }
 }
