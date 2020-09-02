@@ -86,7 +86,6 @@ func geolocate() {
             }
         }
     } // func geolocate()
-    
 } // struct ASALocationChooserView
 
 struct ASALocationChooserViewCell:  View {
@@ -96,7 +95,7 @@ struct ASALocationChooserViewCell:  View {
     
     var body: some View {
         HStack {
-            Text(locationData.formattedOneLineAddress)
+            Text(locationData.longFormattedOneLineAddress)
                Spacer()
                 if self.locationData == self.selectedLocationData {
                     Image(systemName: "checkmark")
