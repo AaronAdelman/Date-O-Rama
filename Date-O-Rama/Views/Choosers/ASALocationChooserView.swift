@@ -15,6 +15,9 @@ struct ASALocationChooserView: View {
     @State var locationDataArray:  Array<ASALocationData> = []
     @State var tempLocationData:  ASALocationData = ASALocationData()
     @State var tempUsesDeviceLocation: Bool = false
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var didCancel = false
     
     var body: some View {
         Form {
@@ -51,25 +54,32 @@ struct ASALocationChooserView: View {
                 } // Section
             }
         }
-//        .navigationBarTitle(Text(row.dateTimeString(now: Date()) ))
-        .onAppear() {
-            self.tempUsesDeviceLocation = self.locatedObject.usesDeviceLocation
-            self.tempLocationData = self.locatedObject.locationData
+        .navigationBarItems(trailing:
+            Button("Cancel", action: {
+                self.didCancel = true
+                self.presentationMode.wrappedValue.dismiss()
+            })
+        )
+            .onAppear() {
+                self.tempUsesDeviceLocation = self.locatedObject.usesDeviceLocation
+                self.tempLocationData = self.locatedObject.locationData
         }
         .onDisappear() {
-            debugPrint(#file, #function, "Before row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
-            debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
-            self.locatedObject.usesDeviceLocation = self.tempUsesDeviceLocation
-            if self.tempUsesDeviceLocation {
-                self.locatedObject.locationData = ASALocationManager.shared().locationData
-            } else {
-                self.locatedObject.locationData = self.tempLocationData
+            if !self.didCancel {
+                //                debugPrint(#file, #function, "Before row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
+                //                debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
+                self.locatedObject.usesDeviceLocation = self.tempUsesDeviceLocation
+                if self.tempUsesDeviceLocation {
+                    self.locatedObject.locationData = ASALocationManager.shared().locationData
+                } else {
+                    self.locatedObject.locationData = self.tempLocationData
+                }
+                //                debugPrint(#file, #function, "After row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
             }
-            debugPrint(#file, #function, "After row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
         }
     }
     
-func geolocate() {
+    func geolocate() {
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(self.enteredAddress) { (placemarks, error)
             in
@@ -96,14 +106,14 @@ struct ASALocationChooserViewCell:  View {
     var body: some View {
         HStack {
             Text(locationData.longFormattedOneLineAddress)
-               Spacer()
-                if self.locationData == self.selectedLocationData {
-                    Image(systemName: "checkmark")
-                        .foregroundColor(.accentColor)
-                }
+            Spacer()
+            if self.locationData == self.selectedLocationData {
+                Image(systemName: "checkmark")
+                    .foregroundColor(.accentColor)
             }
         }
     }
+}
 
 
 struct LocationChooserView_Previews: PreviewProvider {
