@@ -13,14 +13,14 @@ import CoreLocation
 import UIKit
 
 enum ASAPreferencesFileCode {
-    case generic
+    case clocks
     case events
     case complications
 
     var suffix:  String {
         get {
             switch self {
-            case .generic:
+            case .clocks:
                 return "/Documents/Clock Preferences.json"
 
             case .events:
@@ -93,9 +93,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
             }
-
-//            let subpaths = FileManager.default.subpaths(atPath: url.path)
-//            debugPrint(#file, #function, "Subpaths:", subpaths as Any)
 
             return url
         } else {
@@ -171,9 +168,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         var genericSuccess = false
         var complicationsSuccess = false
 
-        if preferenceFileExists(code: .generic) {
+        if preferenceFileExists(code: .clocks) {
             //            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath()))” exists")
-            let path = self.preferencesFilePath(code: .generic)
+            let path = self.preferencesFilePath(code: .clocks)
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
                 //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
@@ -191,7 +188,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 debugPrint(#file, #function, error)
             }
         } else {
-            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .generic)))” does not exist")
+            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
         }
 
         if preferenceFileExists(code: .events) {
@@ -242,7 +239,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error)
                 }
             } else {
-                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .generic)))” does not exist")
+                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
             }
         }
 
@@ -294,7 +291,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
         if data1a != nil {
             do {
-                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .generic)!)
+                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .clocks)!)
 
                 try data1a!.write(to: url, options: .atomic)
 
