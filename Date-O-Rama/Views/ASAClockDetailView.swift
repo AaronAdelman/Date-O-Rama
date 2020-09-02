@@ -45,7 +45,7 @@ struct ASAClockDetailView: View {
                     }
                 }
                 if selectedRow.calendar.supportsTimeFormats && shouldShowTime {
-                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow)) {
+                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.majorTimeFormat, tempTimeGeekFormat: selectedRow.timeGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
                     }
                 }

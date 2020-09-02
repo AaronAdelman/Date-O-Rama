@@ -18,7 +18,6 @@ struct ASADateFormatChooserView: View {
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
-
     
     var model:  Array<ASAComponentsPickerSection> = [
         ASAComponentsPickerSection(headerCode: "E", items: ["", "eeeee", "eeeeee", "eee", "eeee", "e", "ee"
@@ -65,11 +64,11 @@ struct ASADateFormatChooserView: View {
                 ComponentsForEach()
             }
         } // List
-        .navigationBarItems(trailing:
-            Button("Cancel", action: {
-                self.didCancel = true
-                self.presentationMode.wrappedValue.dismiss()
-            })
+            .navigationBarItems(trailing:
+                Button("Cancel", action: {
+                    self.didCancel = true
+                    self.presentationMode.wrappedValue.dismiss()
+                })
         )
             .onAppear() {
                 self.tempMajorDateFormat = self.row.majorDateFormat
@@ -80,8 +79,8 @@ struct ASADateFormatChooserView: View {
             if !self.didCancel {
                 self.row.majorDateFormat = self.tempMajorDateFormat
                 self.row.dateGeekFormat  = self.tempDateGeekFormat
-                }
             }
+        }
     }
 }
 

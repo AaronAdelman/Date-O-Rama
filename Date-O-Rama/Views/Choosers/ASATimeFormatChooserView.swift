@@ -11,14 +11,21 @@ import CoreLocation
 
 struct ASATimeFormatChooserView: View {
     @ObservedObject var row:  ASARow
+
+    @State var tempMajorTimeFormat:  ASAMajorTimeFormat
+    @State var tempTimeGeekFormat:  String
+    @State var calendarCode:  ASACalendarCode
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var didCancel = false
     
     var model:  Array<ASAComponentsPickerSection> = [
         ASAComponentsPickerSection(headerCode: "a", items: ["", "a", "aaaa", "aaaaa", "b", "bbbb", "bbbbb", "B", "BBBB", "BBBBB"]),
-    ASAComponentsPickerSection(headerCode: "H", items: [
-//        "",
-                                                        "h", "hh", "H", "HH", "k", "kk", "K", "KK"]),
+        ASAComponentsPickerSection(headerCode: "H", items: [
+            //        "",
+            "h", "hh", "H", "HH", "k", "kk", "K", "KK"]),
         ASAComponentsPickerSection(headerCode: "m", items: [
-//            "",
+            //            "",
             "m", "mm"]),
         ASAComponentsPickerSection(headerCode: "s", items: ["", "s", "ss"]),
         ASAComponentsPickerSection(headerCode: "z", items: ["", "z", "zzzz", "O", "OOOO", "v", "vvvv", "V", "VV", "VVV", "VVVV", "X", "XX", "XXX", "XXXX", "XXXXX", "x", "xx", "xxx", "xxxx", "xxxxx"])
@@ -32,7 +39,7 @@ struct ASATimeFormatChooserView: View {
                 ForEach(section.items, id:  \.self) {
                     item
                     in
-                    ASATimeFormatComponentCell(headerCode: section.headerCode, item: item, row:  self.row)
+                    ASATimeFormatComponentCell(headerCode: section.headerCode, item: item, calendarCode: self.calendarCode, selectedTimeGeekFormat: self.$tempTimeGeekFormat)
                 } // ForEach(section.items, id:  \.self)
             }
         }
@@ -44,14 +51,30 @@ struct ASATimeFormatChooserView: View {
                 ForEach(row.calendar.supportedMajorTimeFormats, id: \.self) {
                     format
                     in
-                    ASAMajorTimeFormatCell(majorTimeFormat: format, row: self.row)
+                    ASAMajorTimeFormatCell(majorTimeFormat: format, selectedMajorTimeFormat: self.$tempMajorTimeFormat)
                 }
             } // Section
-            if row.majorTimeFormat == .localizedLDML {
+            if self.tempMajorTimeFormat == .localizedLDML {
                 ComponentsForEach()
             }
         } // List
-            .navigationBarTitle(Text(row.timeString(now: Date()) ))
+            .navigationBarItems(trailing:
+                Button("Cancel", action: {
+                    self.didCancel = true
+                    self.presentationMode.wrappedValue.dismiss()
+                })
+        )
+            .onAppear() {
+                self.tempMajorTimeFormat = self.row.majorTimeFormat
+                self.tempTimeGeekFormat  = self.row.timeGeekFormat
+                self.calendarCode        = self.row.calendar.calendarCode
+        }
+        .onDisappear() {
+            if !self.didCancel {
+                self.row.majorTimeFormat = self.tempMajorTimeFormat
+                self.row.timeGeekFormat  = self.tempTimeGeekFormat
+            }
+        }
     }
 }
 
@@ -61,18 +84,18 @@ struct ASATimeFormatChooserView: View {
 struct ASAMajorTimeFormatCell: View {
     let majorTimeFormat: ASAMajorTimeFormat
     
-    @ObservedObject var row:  ASARow
-    
+    @Binding var selectedMajorTimeFormat:  ASAMajorTimeFormat
+
     var body: some View {
         HStack {
             Text(verbatim:  majorTimeFormat.localizedItemName())
             Spacer()
-            if majorTimeFormat == self.row.majorTimeFormat {
+            if majorTimeFormat == self.selectedMajorTimeFormat {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-            self.row.majorTimeFormat = self.majorTimeFormat
+            self.selectedMajorTimeFormat = self.majorTimeFormat
         }
     }
 } // struct ASAMajorTimeFormatCell
@@ -83,11 +106,12 @@ struct ASAMajorTimeFormatCell: View {
 struct ASATimeFormatComponentCell: View {
     let headerCode:  String
     let item: String
-    
-    @ObservedObject var row: ASARow
-    
-    func selectedItem(row:  ASARow, headerCode:  String) -> String {
-        let components = row.timeGeekFormat.timeComponents(calendarCode: row.calendar.calendarCode)
+    let calendarCode:  ASACalendarCode
+
+    @Binding var selectedTimeGeekFormat:  String
+
+    func selectedItem(selectedTimeGeekFormat:  String, headerCode:  String) -> String {
+        let components = selectedTimeGeekFormat.timeComponents(calendarCode: self.calendarCode)
         let selection = components[headerCode]
         return selection ?? ""
     }
@@ -96,29 +120,26 @@ struct ASATimeFormatComponentCell: View {
         HStack {
             Text(verbatim: NSLocalizedString("ITEM_\(headerCode)_\(item)", comment: ""))
             Spacer()
-            if self.item == self.selectedItem(row: self.row, headerCode: headerCode) {
+            if self.item == self.selectedItem(selectedTimeGeekFormat: self.selectedTimeGeekFormat, headerCode: headerCode) {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }
         .onTapGesture {
-            debugPrint("\(#file) \(#function) Geek format before = \(self.row.timeGeekFormat)")
-            var components = self.row.timeGeekFormat.timeComponents(calendarCode: self.row.calendar.calendarCode)
+            //            debugPrint("\(#file) \(#function) Geek format before = \(self.row.timeGeekFormat)")
+            var components = self.selectedTimeGeekFormat.timeComponents(calendarCode: self.calendarCode)
             components[self.headerCode] = self.item
-            self.row.timeGeekFormat = String.geekFormat(components: components)
-            debugPrint("\(#file) \(#function) Geek format after = \(self.row.timeGeekFormat)")
+            self.selectedTimeGeekFormat = String.geekFormat(components: components)
+            //            debugPrint("\(#file) \(#function) Geek format after = \(self.row.timeGeekFormat)")
         }
     }  // var body
 } // struct ASATimeFormatComponentCell
-
-
-
 
 
 // MARK: -
 
 struct ASATimeFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASATimeFormatChooserView(row: ASARow.generic())
+        ASATimeFormatChooserView(row: ASARow.generic(), tempMajorTimeFormat: .full, tempTimeGeekFormat: "HHmmss", calendarCode: .Gregorian)
     }
 }
