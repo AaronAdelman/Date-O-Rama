@@ -14,7 +14,7 @@ struct ASAInternalEventCalendarDetailView: View {
     var body: some View {
         List {
             
-            NavigationLink(destination:  ASAInternalEventSourceChooser(eventCalendar:  self.selectedEventCalendar)) {
+            NavigationLink(destination:  ASAInternalEventSourceChooser(eventCalendar:  self.selectedEventCalendar, tempInternalEventCode: self.selectedEventCalendar.eventSourceCode)) {
 //                Text(selectedEventCalendar.eventSourceCode).font(.headline)
                 Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }

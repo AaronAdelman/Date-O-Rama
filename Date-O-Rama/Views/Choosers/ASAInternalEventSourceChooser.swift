@@ -8,9 +8,16 @@
 
 import SwiftUI
 
+// TODO:  This view is going to need some serious revision when introducing internal event sources which are not built in!
+
 struct ASAInternalEventSourceChooser: View {
     @ObservedObject var eventCalendar:  ASAInternalEventCalendar
-    
+
+    @State var tempInternalEventCode:  String
+
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State var didCancel = false
+
     fileprivate func internalEventCodes() -> [String] {
         let mainBundle = Bundle.main
         let URLs = mainBundle.urls(forResourcesWithExtension: "json", subdirectory: nil)
@@ -27,14 +34,28 @@ struct ASAInternalEventSourceChooser: View {
             ForEach(internalEventCodes(), id: \.self) {
                 potentialEventSourceCode
                 in
-                ASAInternalEventSourceCell(eventSourceCode: potentialEventSourceCode, selectedEventSourceCode: self.$eventCalendar.eventSourceCode)
+                ASAInternalEventSourceCell(eventSourceCode: potentialEventSourceCode, selectedEventSourceCode: self.$tempInternalEventCode)
                     .onTapGesture {
 //                        debugPrint(#file, #function, potentialEventSourceCode, self.eventCalendar.eventSourceCode, "Before")
-                        self.eventCalendar.eventSourceCode = potentialEventSourceCode
+                        self.tempInternalEventCode = potentialEventSourceCode
 //                        debugPrint(#file, #function, potentialEventSourceCode, self.eventCalendar.eventSourceCode, "After")
                 }
             }
         }
+        .navigationBarItems(trailing:
+            Button("Cancel", action: {
+                self.didCancel = true
+                self.presentationMode.wrappedValue.dismiss()
+            })
+        )
+            .onAppear() {
+                self.tempInternalEventCode = self.eventCalendar.eventSourceCode
+        }
+        .onDisappear() {
+            if !self.didCancel {
+                self.eventCalendar.eventSourceCode = self.tempInternalEventCode
+                }
+            }
     }
 }
 
@@ -57,7 +78,6 @@ struct ASAInternalEventSourceCell: View {
 
 struct ASAInternalEventSourceChooser_Previews: PreviewProvider {
     static var previews: some View {
-//        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
-        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
+        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!, tempInternalEventCode: "Solar events")
     }
 }
