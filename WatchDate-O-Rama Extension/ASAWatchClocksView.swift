@@ -25,7 +25,7 @@ struct ASAWatchClocksView: View {
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
-                                self.userData.savePreferences()
+                                self.userData.savePreferences(code: .clocks)
                         }
                     ) {
                         ASAMainRowsViewCell(row: row, compact: true, now: self.now, INSET: self.INSET, shouldShowTime: true)
@@ -33,13 +33,13 @@ struct ASAWatchClocksView: View {
                 }
                 .onMove { (source: IndexSet, destination: Int) -> Void in
                     self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
-                    self.userData.savePreferences()
+                    self.userData.savePreferences(code: .clocks)
                 }
                 .onDelete { indices in
                     indices.forEach {
                         debugPrint("\(#file) \(#function)")
                         self.userData.mainRows.remove(at: $0) }
-                    self.userData.savePreferences()
+                    self.userData.savePreferences(code: .clocks)
                 }
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))

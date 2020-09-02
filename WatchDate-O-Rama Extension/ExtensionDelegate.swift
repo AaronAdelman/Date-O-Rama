@@ -128,7 +128,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                         } // for i in 0..<key.minimumNumberOfRows()
                     }
 //                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
-                    ASAUserData.shared().savePreferences()
+                    ASAUserData.shared().savePreferences(code: .clocks)
                 }
             }
  
@@ -149,7 +149,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 DispatchQueue.main.async {
                     ASAUserData.shared().mainRows = mainRows
 //                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
-                    ASAUserData.shared().savePreferences()
+                    ASAUserData.shared().savePreferences(code: .clocks)
                 }
             }
         }

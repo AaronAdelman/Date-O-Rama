@@ -21,7 +21,7 @@ struct ASAClocksView: View {
     let INSET = 25.0 as CGFloat
     
     fileprivate func saveUserData() {
-        self.userData.savePreferences()
+        self.userData.savePreferences(code: .clocks)
         
         let app = UIApplication.shared
         let appDelegate = app.delegate as! AppDelegate

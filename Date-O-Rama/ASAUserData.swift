@@ -274,81 +274,87 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         NSFileCoordinator.removeFilePresenter(self)
     }
     
-    public func savePreferences() {
-        let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
+    public func savePreferences(code:  ASAPreferencesFileCode) {
+        if code == .clocks {
+            let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
 
-        let processedInternalEventCalendarArray = self.processedInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
+            let temp1a: Dictionary<String, Any> = [
+                ASARowArrayKey.app.rawValue:  processedMainRows,
+            ]
 
-        let temp1a: Dictionary<String, Any> = [
-            ASARowArrayKey.app.rawValue:  processedMainRows,
-        ]
+            let data1a = (try? JSONSerialization.data(withJSONObject: temp1a, options: []))
+            //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
+            if data1a != nil {
+                do {
+                    let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .clocks)!)
 
-        let temp1b: Dictionary<String, Any> = [
-            INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
-        ]
+                    try data1a!.write(to: url, options: .atomic)
 
-        let data1a = (try? JSONSerialization.data(withJSONObject: temp1a, options: []))
-        //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-        if data1a != nil {
-            do {
-                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .clocks)!)
-
-                try data1a!.write(to: url, options: .atomic)
-
-                //                debugPrint(#file, #function, "Preferences successfully saved")
-            } catch {
-                debugPrint(#file, #function, error)
+                    //                debugPrint(#file, #function, "Preferences successfully saved")
+                } catch {
+                    debugPrint(#file, #function, error)
+                }
+            } else {
+                debugPrint(#file, #function, "Data is nil")
             }
-        } else {
-            debugPrint(#file, #function, "Data is nil")
         }
 
-        let data1b = (try? JSONSerialization.data(withJSONObject: temp1b, options: []))
-        //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-        if data1b != nil {
-            do {
-                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .events)!)
+        if code == .events {
+            let processedInternalEventCalendarArray = self.processedInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
 
-                try data1b!.write(to: url, options: .atomic)
+            let temp1b: Dictionary<String, Any> = [
+                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
+            ]
+            
+            let data1b = (try? JSONSerialization.data(withJSONObject: temp1b, options: []))
+            //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
+            if data1b != nil {
+                do {
+                    let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .events)!)
 
-                //                debugPrint(#file, #function, "Preferences successfully saved")
-            } catch {
-                debugPrint(#file, #function, error)
+                    try data1b!.write(to: url, options: .atomic)
+
+                    //                debugPrint(#file, #function, "Preferences successfully saved")
+                } catch {
+                    debugPrint(#file, #function, error)
+                }
+            } else {
+                debugPrint(#file, #function, "Data is nil")
             }
-        } else {
-            debugPrint(#file, #function, "Data is nil")
         }
 
-        if #available(iOS 13.0, watchOS 6.0, *) {
-            let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
-            let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
-            let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows)
-            let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows)
-            let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows)
+        if code == .complications {
+            if #available(iOS 13.0, watchOS 6.0, *) {
+                let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
+                let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
+                let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows)
+                let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows)
+                let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows)
 
-        let temp2: Dictionary<String, Any> = [
-            ASARowArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
-            ASARowArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeRows,
-            ASARowArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallRows,
-            ASARowArrayKey.oneLineLarge.rawValue:  processedOneLineLargeRows,
-            ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows
-        ]
+                let temp2: Dictionary<String, Any> = [
+                    ASARowArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
+                    ASARowArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeRows,
+                    ASARowArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallRows,
+                    ASARowArrayKey.oneLineLarge.rawValue:  processedOneLineLargeRows,
+                    ASARowArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows
+                ]
 
-            let data2 = (try? JSONSerialization.data(withJSONObject: temp2, options: []))
-        //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-        if data2 != nil {
-            do {
-                let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .complications)!)
+                let data2 = (try? JSONSerialization.data(withJSONObject: temp2, options: []))
+                //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
+                if data2 != nil {
+                    do {
+                        let url: URL = URL(fileURLWithPath: self.preferencesFilePath(code: .complications)!)
 
-                try data2!.write(to: url, options: .atomic)
+                        try data2!.write(to: url, options: .atomic)
 
-                //                debugPrint(#file, #function, "Preferences successfully saved")
-            } catch {
-                debugPrint(#file, #function, error)
+                        //                debugPrint(#file, #function, "Preferences successfully saved")
+                    } catch {
+                        debugPrint(#file, #function, error)
+                    }
+                } else {
+                    debugPrint(#file, #function, "Data is nil")
+                }
             }
-        } else {
-            debugPrint(#file, #function, "Data is nil")
-        }
         }
     } // func savePreferences()
     

@@ -30,7 +30,7 @@ struct ASAPreferencesView: View {
                         action: {
                             withAnimation {
                                 self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!, at: 0)
-                                self.userData.savePreferences()
+                                self.userData.savePreferences(code: .events)
                             }
                     }
                     ) {
@@ -44,20 +44,20 @@ struct ASAPreferencesView: View {
                             .onReceive(eventCalendar.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()
-                                self.userData.savePreferences()
+                                self.userData.savePreferences(code: .events)
                         }) {
                             ASAInternalEventCalendarCell(eventCalendar:  eventCalendar)
                         }
                     } // ForEach(userData.internalEventCalendars)
                         .onMove { (source: IndexSet, destination: Int) -> Void in
                             self.userData.internalEventCalendars.move(fromOffsets: source, toOffset: destination)
-                            self.userData.savePreferences()
+                            self.userData.savePreferences(code: .events)
                     }
                     .onDelete { indices in
                         indices.forEach {
                             debugPrint("\(#file) \(#function)")
                             self.userData.internalEventCalendars.remove(at: $0) }
-                        self.userData.savePreferences()
+                        self.userData.savePreferences(code: .events)
                     }
                 } // Section
             } // List
