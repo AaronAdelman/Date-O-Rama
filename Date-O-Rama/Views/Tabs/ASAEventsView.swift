@@ -262,6 +262,8 @@ struct ASALinkedEventCell:  View {
     var eventStore:  EKEventStore
     @State private var action:  EKEventViewAction?
     @State private var showingEventView = false
+
+    let CLOSE_BUTTON_EMOJI = "🔴"
     
     var body: some View {
         Group {
@@ -278,7 +280,16 @@ struct ASALinkedEventCell:  View {
                         Image(systemName: "info.circle.fill") .font(Font.system(.title))
                     })
                         .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                            VStack {
+                                Spacer()
+                                HStack {
+                                    Button(self.CLOSE_BUTTON_EMOJI, action: {
+                                        self.showingEventView = false
+                                    })
+                                    Spacer()
+                                }
+                                ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                            }
                     }.foregroundColor(.accentColor)
                     #else
                     Button(action:  {
@@ -287,8 +298,18 @@ struct ASALinkedEventCell:  View {
                         Image(systemName: "info.circle.fill") .font(Font.system(.title))
                     })
                         .sheet(isPresented: $showingEventView) {
-                            ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
-                    }.foregroundColor(.accentColor)
+                                VStack {
+                                    Spacer()
+                                    HStack {
+                                        Spacer().frame(width:  10)
+                                        Button(self.CLOSE_BUTTON_EMOJI, action: {
+                                            self.showingEventView = false
+                                        })
+                                        Spacer()
+                                    }
+                                    ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  300)
+                                }
+                        }.foregroundColor(.accentColor)
                     #endif
                 }
             } else {
