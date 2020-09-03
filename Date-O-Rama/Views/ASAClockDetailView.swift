@@ -1,5 +1,5 @@
 //
-//  ASACalendarDetailView.swift
+//  ASAClockDetailView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-21.
@@ -13,14 +13,6 @@ struct ASAClockDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
     var shouldShowTime:  Bool
-    
-    func localDateFormatter(timeZone:  TimeZone?) -> DateFormatter {
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = timeZone ?? TimeZone(secondsFromGMT: 0)
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .long
-        return dateFormatter
-    } // func localDateFormatter(timeZone:  TimeZone?) -> DateFormatter
     
     var body: some View {
         List {
