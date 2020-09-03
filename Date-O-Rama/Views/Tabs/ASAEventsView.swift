@@ -263,7 +263,7 @@ struct ASALinkedEventCell:  View {
     @State private var action:  EKEventViewAction?
     @State private var showingEventView = false
 
-    let CLOSE_BUTTON_EMOJI = "🔴"
+    let CLOSE_BUTTON_TITLE = "Done"
     
     var body: some View {
         Group {
@@ -283,10 +283,11 @@ struct ASALinkedEventCell:  View {
                             VStack {
                                 Spacer()
                                 HStack {
-                                    Button(self.CLOSE_BUTTON_EMOJI, action: {
+                                    Spacer()
+                                    Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
                                         self.showingEventView = false
                                     })
-                                    Spacer()
+                                    Spacer().frame(width:  30)
                                 }
                                 ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
                             }
@@ -301,11 +302,11 @@ struct ASALinkedEventCell:  View {
                                 VStack {
                                     Spacer()
                                     HStack {
-                                        Spacer().frame(width:  10)
-                                        Button(self.CLOSE_BUTTON_EMOJI, action: {
+                                        Spacer()
+                                        Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
                                             self.showingEventView = false
                                         })
-                                        Spacer()
+                                        Spacer().frame(width:  20)
                                     }
                                     ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  300)
                                 }
