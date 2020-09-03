@@ -55,13 +55,15 @@ struct ASASolarEvent:  Hashable {
 
 
 extension Date {
+    fileprivate static var solarEventsGregorianCalendar = Calendar(identifier: .gregorian)
+
     func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
 
         // 1. first calculate the day of the year
-        
-        Date.gregorianCalendar.timeZone = timeZone
 
-        let N:  Int = Date.gregorianCalendar.ordinality(of: .day, in: .year, for: self)!
+        Date.solarEventsGregorianCalendar.timeZone = timeZone
+
+        let N:  Int = Date.solarEventsGregorianCalendar.ordinality(of: .day, in: .year, for: self)!
         
         // 2. convert the longitude to hour value and calculate an approximate time
         
@@ -75,7 +77,7 @@ extension Date {
         for event in events {
             var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
             if !event.rising && tempResult != nil {
-                let midnightToday = Date.gregorianCalendar.startOfDay(for:self)
+                let midnightToday = Date.solarEventsGregorianCalendar.startOfDay(for:self)
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
                 if tempResult! < noon {
                     // Something went wrong, and we got a result for the previous day
