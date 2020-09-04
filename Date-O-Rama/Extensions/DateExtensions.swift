@@ -10,19 +10,19 @@ import Foundation
 import CoreLocation
 
 extension Date {
-    fileprivate static var previousMidnightGregorianCalendar = Calendar(identifier: .gregorian)
-    func previousMidnight(timeZone:  TimeZone) -> Date {
-        Date.previousMidnightGregorianCalendar.timeZone = timeZone
-        let midnightToday = Date.previousMidnightGregorianCalendar.startOfDay(for:self)
-        //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
+        func previousMidnight(timeZone:  TimeZone) -> Date {
+            var gregorianCalendar = Calendar(identifier: .gregorian)
+            gregorianCalendar.timeZone = timeZone
+            let midnightToday = gregorianCalendar.startOfDay(for:self)
+    //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
 
-        return midnightToday
-    } // func previousMidnight(timeZone:  TimeZone) -> Date
+            return midnightToday
+        } // func previousMidnight(timeZone:  TimeZone) -> Date
 
-    fileprivate static var nextMidnightGregorianCalendar = Calendar(identifier: .gregorian)
     func nextMidnight(timeZone:  TimeZone) -> Date {
-        Date.nextMidnightGregorianCalendar.timeZone = timeZone
-        let midnightToday = Date.nextMidnightGregorianCalendar.startOfDay(for:self)
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
 //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
 
         let dateComponents:DateComponents = {
@@ -30,7 +30,7 @@ extension Date {
             dateComp.day = 1
             return dateComp
         }()
-        let midnightTomorrow = Date.nextMidnightGregorianCalendar.date(byAdding: dateComponents, to: midnightToday)
+        let midnightTomorrow = gregorianCalendar.date(byAdding: dateComponents, to: midnightToday)
 //        print("\(String(describing: type(of: self))) \(#function) Midnight tomorrow:  \(String(describing: midnightTomorrow))")
         return midnightTomorrow!
     } // func nextMidnight(timeZone:  TimeZone) -> Date
@@ -41,31 +41,31 @@ extension Date {
         let seconds = self.timeIntervalSince1970
         return ( seconds / 86400.0 ) + 2440587.5
     } // func JulianDate() -> Double
-    
+
     static func date(JulianDate:  Double) -> Date {
         let seconds = (JulianDate - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)
     } // static func date(JulianDate:  Double) -> Date
-    
+
     func JulianDateWithTime(offsetFromJulianDay:  TimeInterval) -> Double {
         return self.JulianDate() - offsetFromJulianDay
     } // func JulianDateWithTime(offsetFromJulianDay:  TimeInterval) -> Double
-    
+
     func JulianDateWithoutTime(offsetFromJulianDay:  TimeInterval) -> Int {
         return Int(floor(JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)))
     } // func JulianDateWithoutTime(offsetFromJulianDay:  TimeInterval) -> Int
-    
+
     static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date {
         let seconds = ((JulianDate + offsetFromJulianDay) - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)
     } //
-    
+
     func previousGMTNoon() -> Date {
         let thisJulianDay = floor(self.JulianDate())
         let result = Date.date(JulianDate: thisJulianDay)
         return result
     } // func previousGMTNoon() -> Date
-    
+
     func nextGMTNoon() -> Date {
         let thisJulianDay = floor(self.JulianDate())
         let nextJulianDay = thisJulianDay + 1
@@ -77,7 +77,7 @@ extension Date {
 extension Date {
     func solarCorrected(location:  CLLocation, timeZone:  TimeZone, transitionEvent:  ASASolarEvent) -> (date:  Date, transition:  Date??) {
         let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [transitionEvent], timeZone: timeZone)
-        
+
         let sunset = events[transitionEvent]
         var result: (date:  Date, transition:  Date??)
         if sunset == nil {
@@ -91,26 +91,35 @@ extension Date {
         } else {
             result = (self, sunset)
         }
-        
-//        debugPrint(#file, #function, self, result)
+
+//        debugPrint(#file, #function, "Self:", self, "Result:", result)
         return result
     } // func solarCorrected(location:  CLLocation) -> Date
 
-    fileprivate static var noonGregorianCalendar = Calendar(identifier: .gregorian)
     func noon(timeZone:  TimeZone) -> Date {
-        Date.noonGregorianCalendar.timeZone = timeZone
-        let midnightToday = Date.noonGregorianCalendar.startOfDay(for:self)
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
         let result = midnightToday.addingTimeInterval(12 * 60 * 60)
         return result
     } // func noon(timeZone:  TimeZone) -> Date
-    
-    fileprivate static var sixPMGregorianCalendar = Calendar(identifier: .gregorian)
+
     func sixPM(timeZone:  TimeZone) -> Date {
-        Date.sixPMGregorianCalendar.timeZone = timeZone
-        let midnightToday = Date.sixPMGregorianCalendar.startOfDay(for:self)
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
         let result = midnightToday.addingTimeInterval(18 * 60 * 60)
         return result
     } // func sixPM(timeZone:  TimeZone) -> Date
+
+    func sixPMYesterday(timeZone:  TimeZone) -> Date {
+        var gregorianCalendar = Calendar(identifier: .gregorian)
+        gregorianCalendar.timeZone = timeZone
+        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
+        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
+        return result
+    } // func sixPMYesterday()
 } // extension Date
 
 extension Date {
@@ -119,7 +128,7 @@ extension Date {
             return self.addingTimeInterval(-24 * 60 * 60)
         } // get
     } // var oneDayBefore
-    
+
     var oneDayAfter:  Date {
         get {
             return self.addingTimeInterval(24 * 60 * 60)
@@ -129,24 +138,30 @@ extension Date {
 
 extension Date {
     func fractionalHours(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double) -> Double {
-        assert(startDate <= self)
-        assert(self < endDate)
+        assert(endDate > startDate)
+        assert(numberOfHoursPerDay > 0.0)
+
         let seconds = self.timeIntervalSince(startDate)
         let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
         let hours = seconds / hourLength
         return hours
     } // func fractionalHours(startDate:  Date, endDate:  Date) -> Double
-    
-//    func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double, numberOfMinutesPerHour:  Double, numberOfSecondsPerMinute:  Double) -> (hours:  Int, minutes:  Int, seconds:  Double) {
-//        let totalSISeconds = self.timeIntervalSince(startDate)
-//        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
-//        let hours = floor(totalSISeconds / hourLength)
-//        let nonHourSISeconds = totalSISeconds - hours * hourLength
-//        let minuteLength = hourLength / numberOfMinutesPerHour
-//        let minutes = floor(nonHourSISeconds  / minuteLength)
-//        let nonMinuteSISeconds = nonHourSISeconds - minutes * minuteLength
-//        let secondLength = minuteLength / numberOfSecondsPerMinute
-//        let seconds = nonMinuteSISeconds / secondLength
-//        return (hours:  Int(hours), minutes:  Int(minutes), seconds:  seconds)
-//    } // func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHours:  Int, numberOfMinutesPerHour:  Int, numberOfSecondsPerMinute:  Int) -> (hours:  Int, minutes:  Int, seconds:  Double)
+
+    func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHoursPerDay:  Double, numberOfMinutesPerHour:  Double, numberOfSecondsPerMinute:  Double) -> (hours:  Int, minutes:  Int, seconds:  Double) {
+        assert(endDate > startDate)
+        assert(numberOfHoursPerDay > 0.0)
+        assert(numberOfMinutesPerHour > 0.0)
+        assert(numberOfSecondsPerMinute > 0.0)
+
+        let totalSISeconds = self.timeIntervalSince(startDate)
+        let hourLength = endDate.timeIntervalSince(startDate) / numberOfHoursPerDay
+        let hours = floor(totalSISeconds / hourLength)
+        let nonHourSISeconds = totalSISeconds - hours * hourLength
+        let minuteLength = hourLength / numberOfMinutesPerHour
+        let minutes = floor(nonHourSISeconds  / minuteLength)
+        let nonMinuteSISeconds = nonHourSISeconds - minutes * minuteLength
+        let secondLength = minuteLength / numberOfSecondsPerMinute
+        let seconds = nonMinuteSISeconds / secondLength
+        return (hours:  Int(hours), minutes:  Int(minutes), seconds:  seconds)
+    } // func hoursMinutesAndSeconds(startDate:  Date, endDate:  Date, numberOfHours:  Int, numberOfMinutesPerHour:  Int, numberOfSecondsPerMinute:  Int) -> (hours:  Int, minutes:  Int, seconds:  Double)
 } // extension Date

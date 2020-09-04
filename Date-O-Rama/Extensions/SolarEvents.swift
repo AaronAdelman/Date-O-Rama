@@ -45,39 +45,38 @@ struct ASASolarEvent:  Hashable {
     var degreesBelowHorizon:  Double       // Sun’s center degrees below horizon
     var rising:  Bool
     var offset:  TimeInterval // Seconds after the Sun reaches the requested apparent position
-    
+
     static var sunrise             = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: 0)
     static var sunset              = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 0)
-
     static var dawn72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: true, offset: -72 * 60)
     static var dusk72Minutes        = ASASolarEvent(degreesBelowHorizon: SUNRISE_AND_SUNSET_DEGREES_BELOW_HORIZON, rising: false, offset: 72 * 60)
 } // struct ASASolarEvent
 
 
 extension Date {
-    fileprivate static var solarEventsGregorianCalendar = Calendar(identifier: .gregorian)
-
     func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
 
         // 1. first calculate the day of the year
 
-        Date.solarEventsGregorianCalendar.timeZone = timeZone
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = timeZone
+//        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 
-        let N:  Int = Date.solarEventsGregorianCalendar.ordinality(of: .day, in: .year, for: self)!
-        
+        let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
+
         // 2. convert the longitude to hour value and calculate an approximate time
-        
+
         let lngHour:  Double = longitude / 15.0
-        
+
         let t_rising =  Double(N) + ((6.0 - lngHour) / 24.0)
         let t_setting = Double(N) + ((18.0 - lngHour) / 24.0)
-        
+
         // Now switch to a function
         var result:  Dictionary<ASASolarEvent, Date?> = [:]
         for event in events {
             var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
             if !event.rising && tempResult != nil {
-                let midnightToday = Date.solarEventsGregorianCalendar.startOfDay(for:self)
+                let midnightToday = calendar.startOfDay(for:self)
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
                 if tempResult! < noon {
                     // Something went wrong, and we got a result for the previous day
@@ -86,7 +85,7 @@ extension Date {
             }
             result[event] = tempResult
         } // for event in events
-        
+
         return result
     } // func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
 } // extension Date
@@ -94,34 +93,34 @@ extension Date {
 func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval) -> Date? {
     // 3. calculate the Sun's mean anomaly
     let M = (0.9856 * t) - 3.289
-    
+
     // 4. calculate the Sun's true longitude
     var L = M + (1.916 * sin(degrees:  M)) + (0.020 * sin(degrees:  2.0 * M)) + 282.634
     //     NOTE: L potentially needs to be adjusted into the range [0,360) by adding/subtracting 360
     L = L.normalizedTo(lower: 0.0, upper: 360.0)
-    
+
     // 5a. calculate the Sun's right ascension
     var RA = atan(degrees:  0.91764 * tan(degrees:  L))
     // NOTE: RA potentially needs to be adjusted into the range [0,360) by adding/subtracting 360
     RA = RA.normalizedTo(lower: 0.0, upper: 360.0)
-    
+
     // 5b. right ascension value needs to be in the same quadrant as L
     let Lquadrant  = (floor( L/90.0)) * 90.0
     let RAquadrant = (floor(RA/90.0)) * 90.0
     RA = RA + (Lquadrant - RAquadrant)
-    
+
     // 5c. right ascension value needs to be converted into hours
-    
+
     RA = RA / 15.0
-    
+
     // 6. calculate the Sun's declination
     let sinDec = 0.39782 * sin(degrees:  L)
     let cosDec = cos(degrees:  asin(degrees:  sinDec))
-    
+
     // 7a. calculate the Sun's local hour angle
     let zenith = degreesBelowHorizon + 90
     let cosH = (cos(degrees:  zenith) - (sinDec * sin(degrees:  latitude))) / (cosDec * cos(degrees: latitude))
-    
+
     if (cosH >  1.0) {
         //      the sun never rises on this location (on the specified date)
         return nil
@@ -130,7 +129,7 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
         //      the sun never sets on this location (on the specified date)
         return nil
     }
-    
+
     // 7b. finish calculating H and convert into hours
     var H:  Double
     if risingDesired {
@@ -138,9 +137,9 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
     } else {
         H = acos(degrees:  cosH)
     }
-    
+
     H = H / 15.0
-    
+
     // 8. calculate local mean time of rising/setting
     let T = H + RA - (0.06571 * t) - 6.622
 
@@ -148,12 +147,12 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
     var UT = T - lngHour
     // NOTE: UT potentially needs to be adjusted into the range [0,24) by adding/subtracting 24
     UT = UT.normalizedTo(lower: 0.0, upper: 24.0)
-    
+
     var gregorianCalendar = Calendar(identifier: .gregorian)
     gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
     let midnight = gregorianCalendar.startOfDay(for:date)
     let result = midnight.addingTimeInterval(UT * 60 * 60) + offset
-    
+
     return result
 } // func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?
 
@@ -163,11 +162,11 @@ extension Double {
         while temp < lower {
             temp += upper
         } // while temp < lower
-        
+
         while temp >= upper {
             temp -= upper
         } // while temp >= upper
-        
+
         return temp
     } // func normalizedTo(lower:  Double, upper:  Double) -> Double
 } // func normalizedTo(lower:  Double, upper:  Double) -> Double
