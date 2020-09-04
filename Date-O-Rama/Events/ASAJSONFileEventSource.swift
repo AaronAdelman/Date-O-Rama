@@ -252,12 +252,12 @@ class ASAJSONFileEventSource {
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile!.eventSpecifications {
 
-            if eventSpecification.startDateSpecification.type == .degreesBelowHorizon
-            && eventSpecification.startDateSpecification.degreesBelowHorizon ?? 2.0 < 1.0
-            && eventSpecification.startDateSpecification.rising ?? false == true
-            && eventSpecification.startDateSpecification.offset ?? 1.0 == 0.0 {
-                debugPrint(#file, #function, "Internal event file:", self.eventSourceName(), "Date:", date, "Previous sunset:", previousSunset, "Sunrise:", sunrise, "Sunset:", sunset, "Start date specification", eventSpecification.startDateSpecification)
-            }
+//            if eventSpecification.startDateSpecification.type == .degreesBelowHorizon
+//            && eventSpecification.startDateSpecification.degreesBelowHorizon ?? 2.0 < 1.0
+//            && eventSpecification.startDateSpecification.rising ?? false == true
+//            && eventSpecification.startDateSpecification.offset ?? 1.0 == 0.0 {
+//                debugPrint(#file, #function, "Internal event file:", self.eventSourceName(), "Date:", date, "Previous sunset:", previousSunset, "Sunrise:", sunrise, "Sunset:", sunset, "Start date specification", eventSpecification.startDateSpecification)
+//            }
             assert( previousSunset.oneDayAfter > date)
 
             var appropriateCalendar:  ASACalendar = calendar
