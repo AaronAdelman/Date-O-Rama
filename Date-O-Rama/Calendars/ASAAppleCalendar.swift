@@ -163,12 +163,16 @@ class ASAAppleCalendar:  ASACalendar {
     var supportsLocales: Bool = true
     
     func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date {
-        return date.previousMidnight(timeZone:  timeZone)
+        //        return date.previousMidnight(timeZone:  timeZone)
+        self.ApplesCalendar.timeZone = timeZone
+        return self.ApplesCalendar.startOfDay(for: date)
     } // func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date
     
     func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
-        return date.nextMidnight(timeZone:  timeZone)
-    } // func nextTransitionToNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
+        //        return date.nextMidnight(timeZone:  timeZone)
+        self.ApplesCalendar.timeZone = timeZone
+        return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
+    } // func startOfNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     
     var supportsDateFormats: Bool = true
     

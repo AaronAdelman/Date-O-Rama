@@ -8,8 +8,18 @@
     "calendarColorBlue": 1.0,
     "calendarColorAlpha": 1.0,
     "eventSpecifications": [
-        {"titles": {"en": "🌅 Sunrise", "he": "🌅 נץ החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}},
-        {"titles": {"en": "🌇 Sunset", "he": "🌇 שקיעת החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}},
+        {"titles": {"en": "🌅 Sunrise", "he": "🌅 נץ החמה"}, "startDateSpecification": {
+            "type":  "degreesBelowHorizon",
+            "degreesBelowHorizon":  0.8333333333,
+            "rising":  true,
+            "offset":  0
+        }},
+        {"titles": {"en": "🌇 Sunset", "he": "🌇 שקיעת החמה"}, "startDateSpecification": {
+            "type":  "degreesBelowHorizon",
+            "degreesBelowHorizon":  0.8333333333,
+            "rising":  false,
+            "offset":  0
+        }},
         {"titles": {"en": "‘Aloth hashshaḥar (16°)", "he": "עלות השחר (16°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 16, "rising": true, "offset": 0}},
         {"titles": {"en": "Mishsheyyakir (11°)", "he": "משיכיר (11°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 11.0, "rising": true, "offset": 0}},
         {"titles": {"en": "🌌 Ṣe’th hakkokhavim (8.5°)", "he": "🌌 צאת הכוכבים (8.5°)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 8.5, "rising": false, "offset": 0}},

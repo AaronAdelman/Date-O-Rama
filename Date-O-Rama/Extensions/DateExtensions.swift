@@ -10,29 +10,48 @@ import Foundation
 import CoreLocation
 
 extension Date {
-        func previousMidnight(timeZone:  TimeZone) -> Date {
-            var gregorianCalendar = Calendar(identifier: .gregorian)
-            gregorianCalendar.timeZone = timeZone
-            let midnightToday = gregorianCalendar.startOfDay(for:self)
-    //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
+    static let SECONDS_PER_DAY:  TimeInterval = 24.0 * 60.0 * 60.0
+    static let SECONDS_PER_HOUR:  TimeInterval = 60.0 * 60.0
 
-            return midnightToday
-        } // func previousMidnight(timeZone:  TimeZone) -> Date
+    func previousMidnight(timeZoneOffset: TimeInterval) -> Date {
+        let secondsSinceGlobalEpoch = self.timeIntervalSince1970
+        let secondsSinceTimeZoneEpoch = secondsSinceGlobalEpoch + timeZoneOffset
+        let daysSinceTimeZoneEpoch = secondsSinceTimeZoneEpoch / Date.SECONDS_PER_DAY
+        let integralDaysSinceTimeZoneEpoch = floor(daysSinceTimeZoneEpoch)
+        let midnightOfDate = Date(timeIntervalSince1970: -timeZoneOffset + (integralDaysSinceTimeZoneEpoch * Date.SECONDS_PER_DAY))
+        return midnightOfDate
+    } // func previousMidnight(timeZoneOffset: TimeInterval) -> Date
+
+    func previousMidnight(timeZone:  TimeZone) -> Date {
+        //            var gregorianCalendar = Calendar(identifier: .gregorian)
+        //            gregorianCalendar.timeZone = timeZone
+        //            let midnightToday = gregorianCalendar.startOfDay(for:self)
+        //    //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
+        //
+        //            return midnightToday
+
+        let timeZoneOffset:  TimeInterval = TimeInterval(timeZone.secondsFromGMT(for: self))
+        return previousMidnight(timeZoneOffset: timeZoneOffset)
+    } // func previousMidnight(timeZone:  TimeZone) -> Date
 
     func nextMidnight(timeZone:  TimeZone) -> Date {
-        var gregorianCalendar = Calendar(identifier: .gregorian)
-        gregorianCalendar.timeZone = timeZone
-        let midnightToday = gregorianCalendar.startOfDay(for:self)
-//        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
+        //        var gregorianCalendar = Calendar(identifier: .gregorian)
+        //        gregorianCalendar.timeZone = timeZone
+        //        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        ////        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
+        //
+        //        let dateComponents:DateComponents = {
+        //            var dateComp = DateComponents()
+        //            dateComp.day = 1
+        //            return dateComp
+        //        }()
+        //        let midnightTomorrow = gregorianCalendar.date(byAdding: dateComponents, to: midnightToday)
+        ////        print("\(String(describing: type(of: self))) \(#function) Midnight tomorrow:  \(String(describing: midnightTomorrow))")
+        //        return midnightTomorrow!
 
-        let dateComponents:DateComponents = {
-            var dateComp = DateComponents()
-            dateComp.day = 1
-            return dateComp
-        }()
-        let midnightTomorrow = gregorianCalendar.date(byAdding: dateComponents, to: midnightToday)
-//        print("\(String(describing: type(of: self))) \(#function) Midnight tomorrow:  \(String(describing: midnightTomorrow))")
-        return midnightTomorrow!
+        let previousMidnight = self.previousMidnight(timeZone: timeZone)
+        let nextMidnight =  previousMidnight.addingTimeInterval(Date.SECONDS_PER_DAY)
+        return nextMidnight
     } // func nextMidnight(timeZone:  TimeZone) -> Date
 } // extension Date
 
@@ -97,27 +116,31 @@ extension Date {
     } // func solarCorrected(location:  CLLocation) -> Date
 
     func noon(timeZone:  TimeZone) -> Date {
-        var gregorianCalendar = Calendar(identifier: .gregorian)
-        gregorianCalendar.timeZone = timeZone
-        let midnightToday = gregorianCalendar.startOfDay(for:self)
-        let result = midnightToday.addingTimeInterval(12 * 60 * 60)
+//        var gregorianCalendar = Calendar(identifier: .gregorian)
+//        gregorianCalendar.timeZone = timeZone
+//        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        let midnightToday = self.previousMidnight(timeZone: timeZone)
+        let result = midnightToday.addingTimeInterval(12 * Date.SECONDS_PER_HOUR)
         return result
     } // func noon(timeZone:  TimeZone) -> Date
 
     func sixPM(timeZone:  TimeZone) -> Date {
-        var gregorianCalendar = Calendar(identifier: .gregorian)
-        gregorianCalendar.timeZone = timeZone
-        let midnightToday = gregorianCalendar.startOfDay(for:self)
-        let result = midnightToday.addingTimeInterval(18 * 60 * 60)
+//        var gregorianCalendar = Calendar(identifier: .gregorian)
+//        gregorianCalendar.timeZone = timeZone
+//        let midnightToday = gregorianCalendar.startOfDay(for:self)
+        let midnightToday = self.previousMidnight(timeZone: timeZone)
+        let result = midnightToday.addingTimeInterval(18 * Date.SECONDS_PER_HOUR)
         return result
     } // func sixPM(timeZone:  TimeZone) -> Date
 
     func sixPMYesterday(timeZone:  TimeZone) -> Date {
-        var gregorianCalendar = Calendar(identifier: .gregorian)
-        gregorianCalendar.timeZone = timeZone
-        let midnightToday = gregorianCalendar.startOfDay(for:self)
-        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
-        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
+//        var gregorianCalendar = Calendar(identifier: .gregorian)
+//        gregorianCalendar.timeZone = timeZone
+//        let midnightToday = gregorianCalendar.startOfDay(for:self)
+//        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
+//        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
+        let midnightToday = self.previousMidnight(timeZone: timeZone)
+        let result = midnightToday.addingTimeInterval(6 * Date.SECONDS_PER_HOUR)
         return result
     } // func sixPMYesterday()
 } // extension Date
