@@ -111,7 +111,9 @@ extension Date {
             result = (self, sunset)
         }
 
-//        debugPrint(#file, #function, "Self:", self, "Result:", result)
+//        if timeZone.identifier.contains("America/New_York") {
+//            debugPrint(#file, #function, "Self:", self, "Result:", result, "Sunset:", sunset!!, "Time zone:", timeZone)
+//        }
         return result
     } // func solarCorrected(location:  CLLocation) -> Date
 

@@ -60,9 +60,10 @@ extension Date {
 
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = timeZone
-//        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        //        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 
         let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
+        //        debugPrint(#file, #function, "N:", N)
 
         // 2. convert the longitude to hour value and calculate an approximate time
 
@@ -70,17 +71,23 @@ extension Date {
 
         let t_rising =  Double(N) + ((6.0 - lngHour) / 24.0)
         let t_setting = Double(N) + ((18.0 - lngHour) / 24.0)
+        //        debugPrint(#file, #function, "lngHour:", lngHour, "t_rising:", t_rising, "t_setting:", t_setting)
 
         // Now switch to a function
         var result:  Dictionary<ASASolarEvent, Date?> = [:]
         for event in events {
-            var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset)
+            //            debugPrint(#file, #function, "event:", event)
+            var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset, timeZone:  timeZone)
+            //            debugPrint(#file, #function, "tempResult:", tempResult as Any)
             if !event.rising && tempResult != nil {
                 let midnightToday = calendar.startOfDay(for:self)
+                //                debugPrint(#file, #function, "midnightToday:", midnightToday)
                 let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
+                //                debugPrint(#file, #function, "noon:", noon)
                 if tempResult! < noon {
                     // Something went wrong, and we got a result for the previous day
                     tempResult = tempResult!.oneDayAfter
+                    //                    debugPrint(#file, #function, "Reset tempResult:", tempResult as Any)
                 }
             }
             result[event] = tempResult
@@ -90,7 +97,7 @@ extension Date {
     } // func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
 } // extension Date
 
-func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval) -> Date? {
+func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval, timeZone:  TimeZone) -> Date? {
     // 3. calculate the Sun's mean anomaly
     let M = (0.9856 * t) - 3.289
 
@@ -148,11 +155,17 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
     // NOTE: UT potentially needs to be adjusted into the range [0,24) by adding/subtracting 24
     UT = UT.normalizedTo(lower: 0.0, upper: 24.0)
 
-//    var gregorianCalendar = Calendar(identifier: .gregorian)
-//    gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
-//    let midnight = gregorianCalendar.startOfDay(for:date)
+    //    var gregorianCalendar = Calendar(identifier: .gregorian)
+    //    gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
+    //    let midnight = gregorianCalendar.startOfDay(for:date)
     let midnight = date.previousMidnight(timeZoneOffset:  0)
-    let result = midnight.addingTimeInterval(UT * 60 * 60) + offset
+    var result = midnight.addingTimeInterval(UT * 60 * 60) + offset
+
+    let localNextMidnight = date.nextMidnight(timeZone:  timeZone)
+    if result >= localNextMidnight {
+        // Uh-oh!  Too late!
+        result = result.oneDayBefore
+    }
 
     return result
 } // func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?

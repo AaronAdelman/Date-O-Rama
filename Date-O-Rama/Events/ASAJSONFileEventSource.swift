@@ -59,8 +59,8 @@ class ASAJSONFileEventSource {
             } // for event in tempResult
             oldNow = now
             now = now.oneDayAfter
-        } while oldNow <= endDate
-        
+        } while oldNow <= endDate.oneDayAfter
+
         return result
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
     

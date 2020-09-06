@@ -234,6 +234,10 @@
         }
 
         let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+        assert(fixedNow >= now)
+//        if timeZone!.identifier.contains("America/New_York") {
+//            debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any, "Time zone:", timeZone as Any)
+//        }
 
         var timeString:  String = ""
         if majorTimeFormat != .none {
@@ -288,6 +292,8 @@
         }
 
         let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+        assert(fixedNow >= now)
+//        debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any)
 
         self.dateFormatter.dateFormat = LDMLString
         let result = self.dateFormatter.string(from: fixedNow)
