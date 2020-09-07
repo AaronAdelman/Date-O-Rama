@@ -30,7 +30,7 @@ class ASAJSONFileEventSource {
         } catch {
             debugPrint(#file, #function, fileName, error)
         }
-    }
+    } // init(fileName:  String)
 
     func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
@@ -43,7 +43,7 @@ class ASAJSONFileEventSource {
         }
 
         let timeZone: TimeZone = locationData.timeZone ?? TimeZone.autoupdatingCurrent
-        var now:  Date = calendar?.startOfDay(for: startDate, location: locationData.location, timeZone: timeZone) ?? startDate
+        var now:  Date = startDate.oneDayBefore
         var result:  Array<ASAEvent> = []
         var oldNow = now
         repeat {
@@ -51,15 +51,20 @@ class ASAJSONFileEventSource {
             let startOfNextDay:  Date = (calendar?.startOfNextDay(date: now, location: locationData.location, timeZone: timeZone))!
             let temp = self.eventDetails(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendar: calendar!, otherCalendars: otherCalendars, ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             for event in temp {
-                //                debugPrint(#file, #function, startDate, endDate, event.title ?? "No title", event.startDate ?? "No start date", event.endDate ?? "No end date")
-                
                 if event.relevant(startDate:  startDate, endDate:  endDate) && !result.contains(event) {
                     result.append(event)
+//                    if event.title.contains("🕯") {
+//                        debugPrint(#file, #function, "Period start date:", startDate, "Period end date:", endDate, "Title:", event.title ?? "No title", "Event start date:", event.startDate ?? "No start date", "Event end date:", event.endDate ?? "No end date", "Event is relevant")
+//                    }
+                } else {
+//                    if event.title.contains("🕯") {
+//                        debugPrint(#file, #function, "Period start date:", startDate, "Period end date:", endDate, "Title:", event.title ?? "No title", "Event start date:", event.startDate ?? "No start date", "Event end date:", event.endDate ?? "No end date", "Event is NOT relevant")
+//                    }
                 }
             } // for event in tempResult
             oldNow = now
             now = now.oneDayAfter
-        } while oldNow <= endDate.oneDayAfter
+        } while oldNow < endDate
 
         return result
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
@@ -258,7 +263,7 @@ class ASAJSONFileEventSource {
 //            && eventSpecification.startDateSpecification.offset ?? 1.0 == 0.0 {
 //                debugPrint(#file, #function, "Internal event file:", self.eventSourceName(), "Date:", date, "Previous sunset:", previousSunset, "Sunrise:", sunrise, "Sunset:", sunset, "Start date specification", eventSpecification.startDateSpecification)
 //            }
-            assert( previousSunset.oneDayAfter > date)
+            assert(previousSunset.oneDayAfter > date)
 
             var appropriateCalendar:  ASACalendar = calendar
             if eventSpecification.calendarCode != nil {
@@ -407,14 +412,7 @@ extension ASADateSpecification {
     func date(date:  Date, latitude: Double, longitude:  Double, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
         switch self.type {
         case .degreesBelowHorizon:
-            var result = self.rawDegreesBelowHorizon(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone)
-
-            if result! < startOfDay {
-                result = self.rawDegreesBelowHorizon(date: date.oneDayAfter, latitude: latitude, longitude: longitude, timeZone: timeZone)
-            } else if result! >= startOfNextDay {
-                result = self.rawDegreesBelowHorizon(date: date.oneDayBefore, latitude: latitude, longitude: longitude, timeZone: timeZone)
-            }
-            
+            let result = self.rawDegreesBelowHorizon(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone)
             return result!
             
         case .solarTimeSunriseSunset:
