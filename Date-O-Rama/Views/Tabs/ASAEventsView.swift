@@ -76,6 +76,10 @@ struct ASAEventsView: View {
     @State private var action:  EKEventEditViewAction?
     @State private var showingEventEditView = false
     
+    fileprivate func enoughRowsToShowSecondaryDates() -> Bool {
+        return self.userData.mainRows.count > 1
+    }
+
     var body: some View {
         NavigationView {
             VStack {
@@ -94,7 +98,7 @@ struct ASAEventsView: View {
                         }
                     }
                     
-                    if settings.eventsViewShouldShowSecondaryDates {
+                    if settings.eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
                                 Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
@@ -106,18 +110,20 @@ struct ASAEventsView: View {
                                 }
                             }
                         }
-                    }
-                    
-                    if settings.eventsViewShouldShowSecondaryDates {
+                        //                    }
+                        //
+                        //                    if settings.eventsViewShouldShowSecondaryDates {
                         Button("🔃") {
                             let tempRowUUIDString = self.settings.primaryRowUUIDString
                             self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
                             self.settings.secondaryRowUUIDString = tempRowUUIDString
                         }
                     }
-                    
-                    Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
-                        Text("Show secondary dates")
+
+                    if self.enoughRowsToShowSecondaryDates() {
+                        Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
+                            Text("Show secondary dates")
+                        }
                     }
                     
                     if settings.useExternalEvents {
@@ -299,18 +305,18 @@ struct ASALinkedEventCell:  View {
                         Image(systemName: "info.circle.fill") .font(Font.system(.title))
                     })
                         .sheet(isPresented: $showingEventView) {
-                                VStack {
+                            VStack {
+                                Spacer()
+                                HStack {
                                     Spacer()
-                                    HStack {
-                                        Spacer()
-                                        Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
-                                            self.showingEventView = false
-                                        })
-                                        Spacer().frame(width:  20)
-                                    }
-                                    ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  300)
+                                    Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
+                                        self.showingEventView = false
+                                    })
+                                    Spacer().frame(width:  20)
                                 }
-                        }.foregroundColor(.accentColor)
+                                ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  300)
+                            }
+                    }.foregroundColor(.accentColor)
                     #endif
                 }
             } else {
