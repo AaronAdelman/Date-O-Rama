@@ -41,6 +41,19 @@ struct ASAEventsView: View {
             settings.secondaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var secondaryRow
+
+    var shouldHideTimesInSecondaryRow:  Bool {
+        get {
+            let primaryRowStartOfDay = self.primaryRow.startOfDay(date: date)
+            let primaryRowStartOfNextDay = self.primaryRow.startOfNextDay(date: date)
+            let secondaryRowStartOfDay = self.secondaryRow.startOfDay(date: date)
+            let secondaryRowStartOfNextDay = self.secondaryRow.startOfNextDay(date: date)
+
+            let result: Bool = primaryRowStartOfDay == secondaryRowStartOfDay && primaryRowStartOfNextDay == secondaryRowStartOfNextDay
+            debugPrint(#file, #function, "Primary row:", primaryRowStartOfDay, primaryRowStartOfNextDay, "Secondary row:", secondaryRowStartOfDay, secondaryRowStartOfNextDay)
+            return result
+        }
+    }
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
@@ -101,7 +114,11 @@ struct ASAEventsView: View {
                     if settings.eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
-                                Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                                if self.shouldHideTimesInSecondaryRow {
+                                    Text(verbatim: secondaryRow.dateString(now: date)).font(.title)
+                                } else {
+                                    Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                                }
                                 if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
                                     HStack {
                                         Text(verbatim: secondaryRow.emoji(date:  date))
