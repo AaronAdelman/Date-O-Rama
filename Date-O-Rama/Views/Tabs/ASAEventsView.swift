@@ -127,9 +127,6 @@ struct ASAEventsView: View {
                                 }
                             }
                         }
-                        //                    }
-                        //
-                        //                    if settings.eventsViewShouldShowSecondaryDates {
                         Button("🔃") {
                             let tempRowUUIDString = self.settings.primaryRowUUIDString
                             self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
