@@ -13,9 +13,11 @@ struct ASANewClockDetailView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
+    @State private var showingActionSheet = false
+
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
-    }
+    } // func dismiss()
 
     let HORIZONTAL_PADDING:  CGFloat = 20.0
 
@@ -26,7 +28,7 @@ struct ASANewClockDetailView: View {
                     Spacer().frame(width:  HORIZONTAL_PADDING)
 
                     Button("Cancel") {
-                        self.dismiss()
+                        self.showingActionSheet = true
                     }
 
                     Spacer()
@@ -87,10 +89,17 @@ struct ASANewClockDetailView: View {
                     }
                 }
             } // VStack
-            .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
-        }.navigationViewStyle(StackNavigationViewStyle())
-    }
-}
+                .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
+        } // NavigationView
+        .navigationViewStyle(StackNavigationViewStyle())
+        .actionSheet(isPresented: self.$showingActionSheet) {
+            ActionSheet(title: Text("Are you sure you want to delete this new clock?"), buttons: [
+                .destructive(Text("Cancel Changes")) { self.dismiss() },
+                .default(Text("Continue Editing")) {  }
+            ])
+        }
+    } // var body
+} // struct ASANewClockDetailView
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {

@@ -296,3 +296,6 @@
 "Add" = "הוסף";
 
 "New Clock" = "שעון חדש";
+"Are you sure you want to delete this new clock?" = "בטוח שברצונך למחוק שעון חדש זה?";
+"Cancel Changes" = "בטל שינויים";
+"Continue Editing" = "המשך עריכה";

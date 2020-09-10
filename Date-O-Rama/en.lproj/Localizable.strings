@@ -296,3 +296,6 @@
 "Add" = "Add";
 
 "New Clock" = "New Clock";
+"Are you sure you want to delete this new clock?" = "Are you sure you want to delete this new clock?";
+"Cancel Changes" = "Cancel Changes";
+"Continue Editing" = "Continue Editing";
