@@ -16,6 +16,8 @@ struct ASAClocksView: View {
 
     @Environment(\.horizontalSizeClass) var sizeClass
 
+    @State private var showingNewClockDetailView = false
+
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     let INSET = 25.0 as CGFloat
@@ -54,17 +56,21 @@ struct ASAClocksView: View {
                     self.saveUserData()
                 }
             }
+            .sheet(isPresented: self.$showingNewClockDetailView) {
+                ASANewClockDetailView()
+            }
             .navigationBarTitle(Text("CLOCKS_TAB"))
             .navigationBarItems(
                 leading: EditButton(),
                 trailing: Button(
                     action: {
-                        withAnimation {
-                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
-                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
-                            self.saveUserData()
-                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
-                        }
+//                        withAnimation {
+//                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows before")
+//                            self.userData.mainRows.insert(ASARow.generic(), at: 0)
+//                            self.saveUserData()
+//                            debugPrint("\(#file) \(#function) + button, \(self.userData.mainRows.count) rows after")
+//                        }
+                        self.showingNewClockDetailView = true
                 }
                 ) {
                     Text("Add clock")
