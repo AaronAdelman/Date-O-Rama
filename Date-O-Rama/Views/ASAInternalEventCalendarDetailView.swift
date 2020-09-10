@@ -12,10 +12,16 @@ struct ASAInternalEventCalendarDetailView: View {
     @ObservedObject var selectedEventCalendar:  ASAInternalEventCalendar
     
     var body: some View {
+        ASAInternalEventCalendarDetailList(selectedEventCalendar: self.selectedEventCalendar)
+    } // var body
+} // struct ASAInternalEventCalendarDetailView
+
+struct ASAInternalEventCalendarDetailList:  View {
+    @ObservedObject var selectedEventCalendar:  ASAInternalEventCalendar
+
+    var body: some View {
         List {
-            
             NavigationLink(destination:  ASAInternalEventSourceChooser(eventCalendar:  self.selectedEventCalendar, tempInternalEventCode: self.selectedEventCalendar.eventSourceCode)) {
-//                Text(selectedEventCalendar.eventSourceCode).font(.headline)
                 Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }
 
@@ -25,20 +31,19 @@ struct ASAInternalEventCalendarDetailView: View {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedEventCalendar.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                 }
             }
-            
+
             ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
-            
+
             NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedEventCalendar, tempLocationData: ASALocationData())) {
                 ASALocationCell(usesDeviceLocation: self.selectedEventCalendar.usesDeviceLocation, locationData: self.selectedEventCalendar.locationData)
             }
-            
+
         } // List
     } // var body
-} // struct ASAInternalEventCalendarDetailView
+} // struct ASAInternalEventCalendarDetailList
 
 struct ASAInternalEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-//        ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: .dailyJewish)!)
         ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
     }
 }

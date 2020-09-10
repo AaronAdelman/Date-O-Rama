@@ -11,6 +11,8 @@ import SwiftUI
 struct ASAPreferencesView: View {
     @EnvironmentObject var userData:  ASAUserData
     @ObservedObject var settings = ASAUserSettings()
+
+    @State private var showingNewInternalEventCalendarDetailView = false
     
     var body: some View {
         NavigationView {
@@ -28,10 +30,7 @@ struct ASAPreferencesView: View {
                     Spacer()
                     Button(
                         action: {
-                            withAnimation {
-                                self.userData.internalEventCalendars.insert(ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!, at: 0)
-                                self.userData.savePreferences(code: .events)
-                            }
+                            self.showingNewInternalEventCalendarDetailView = true
                     }
                     ) {
                         Text("Add internal event calendar")
@@ -58,6 +57,9 @@ struct ASAPreferencesView: View {
                             debugPrint("\(#file) \(#function)")
                             self.userData.internalEventCalendars.remove(at: $0) }
                         self.userData.savePreferences(code: .events)
+                    }
+                    .sheet(isPresented: self.$showingNewInternalEventCalendarDetailView) {
+                        ASANewInternalEventCalendarDetailView()
                     }
                 } // Section
             } // List
