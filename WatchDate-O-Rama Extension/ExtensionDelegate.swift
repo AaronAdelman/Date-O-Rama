@@ -8,6 +8,7 @@
 
 import WatchKit
 import WatchConnectivity
+import ClockKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     var session:  WCSession?
@@ -19,7 +20,6 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         
         override init() {
             super.init()
-//            notificationCenter.addObserver(self, selector: #selector(handle(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil)
             notificationCenter.addObserver(forName: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil, queue: nil, using: {notification
                 in
                 if notification.name.rawValue == UPDATED_LOCATION {
@@ -34,14 +34,6 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         deinit {
             notificationCenter.removeObserver(self)
     } // deinit
-    
-//    @objc func handle(notification:  Notification) -> Void {
-//        if notification.name.rawValue == UPDATED_LOCATION {
-//            // TODO:  Put in something to check if we need if something actually needs a refresh!
-//            CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
-//        }
-//    } // func handle(notification:  Notification) -> Void
-    
     
     public func requestComplicationData() {
         debugPrint(#file, #function)
