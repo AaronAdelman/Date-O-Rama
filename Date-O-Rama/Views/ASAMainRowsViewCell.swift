@@ -29,38 +29,29 @@ struct ASAMainRowsViewCell:  View {
                 Spacer().frame(width: self.INSET)
                 VStack(alignment: .leading) {
                     if row.calendar.canSplitTimeFromDate && compact {
-                        Text(verbatim:  row.dateString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                        Text(verbatim:  row.dateString(now:self.now))
+                            .font(Font.headline.monospacedDigit())
+                            .multilineTextAlignment(.leading).lineLimit(2)
                         if shouldShowTime {
-                            Text(verbatim:  row.timeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                            Text(verbatim:  row.timeString(now:self.now))
+                                .font(Font.headline.monospacedDigit())
+                                .multilineTextAlignment(.leading).lineLimit(2)
                         }
                     } else {
-                        Text(verbatim:  row.dateTimeString(now:self.now)).font(.headline).multilineTextAlignment(.leading).lineLimit(2)
+                        Text(verbatim:  row.dateTimeString(now:self.now))
+                            .font(Font.headline.monospacedDigit())
+                            .multilineTextAlignment(.leading).lineLimit(2)
                     }
                 }
             }
-//            HStack {
-//                Spacer().frame(width: self.INSET)
-//                Text(verbatim: "🗓")
-//                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-//            }.frame(height: ROW_HEIGHT)
-            
+
             HStack {
-                //                if row.usesDeviceLocation {
-                //                    Image(systemName: "location.fill")
-                //                }
                 VStack(alignment: .leading) {
                     if row.calendar.supportsTimeZones || row.calendar.supportsLocations {
-                        //                        HStack {
-                        //                            Spacer().frame(width: self.INSET)
-                        //                            Text(row.effectiveTimeZone.emoji(date:  self.now))
-                        //                            Text(verbatim: "\(row.effectiveTimeZone.localizedName(for: row.effectiveTimeZone.isDaylightSavingTime(for: self.now) ? .daylightSaving : .standard, locale: Locale.current) ?? "") • \(row.effectiveTimeZone.abbreviation() ?? "")").font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                         ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
-                        //                        }.frame(height: ROW_HEIGHT)
-                        //                        ASAMainRowsLocationSubcell(INSET: self.INSET, row: row, now: self.now).frame(height: ROW_HEIGHT)
                     }
                 }
             }
-            
         } // VStack
     } // var body
 } // struct ASAMainRowsViewCell
