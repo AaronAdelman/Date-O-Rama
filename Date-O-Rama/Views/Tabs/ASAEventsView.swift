@@ -207,17 +207,17 @@ struct ASADatePicker:  View {
     } // var primaryRow
 //    @State var showingDatePicker:  Bool
     
-    #if os(iOS)
-    #if targetEnvironment(macCatalyst)
-    let runningOnIOS = false
-    #else
-    let runningOnIOS = true
-    #endif
-    #else
-    let runningOnIOS = false
-    #endif
+//    #if os(iOS)
+//    #if targetEnvironment(macCatalyst)
+//    let runningOnIOS = false
+//    #else
+//    let runningOnIOS = true
+//    #endif
+//    #else
+//    let runningOnIOS = false
+//    #endif
     
-    let SPECIAL_SPACER_WIDTH = 80.0 as CGFloat
+//    let SPECIAL_SPACER_WIDTH = 80.0 as CGFloat
     
     var body: some View {
         HStack {
