@@ -24,6 +24,7 @@ enum ASAClocksViewGroupingOption {
     case plain
     case byFormattedDate
     case byCalendar
+    case byPlaceName
 
     func text() -> String {
         var raw:  String
@@ -37,6 +38,9 @@ enum ASAClocksViewGroupingOption {
 
         case .byCalendar:
             raw = "By Calendar"
+
+        case .byPlaceName:
+            raw = "By Place Name"
         } // switch self
 
         return NSLocalizedString(raw, comment: "")
@@ -56,7 +60,8 @@ struct ASAClocksView: View {
     let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
         .plain,
         .byFormattedDate,
-        .byCalendar
+        .byCalendar,
+        .byPlaceName
     ]
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -118,6 +123,24 @@ struct ASAClocksView: View {
         return result
     } // func processedRowsByCalendar() -> Dictionary<String, Array<ASAProcessedRow>>
 
+    func processedRowsByPlaceName() -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processedRows()
+
+        for processedRow in processedRows {
+            let key = processedRow.locationString
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } // func processedRowsByPlaceName() -> Dictionary<String, Array<ASAProcessedRow>>
+
     var body: some View {
         NavigationView {
             VStack {
@@ -126,14 +149,6 @@ struct ASAClocksView: View {
                         Text(self.groupingOptions[$0].text())
                     }
                 }
-
-//                if self.groupingOptions[self.groupingOptionIndex] == .plain {
-//                    ASAPlainMainRowsList(processedRows: self.processedRows(), now: $now, INSET: INSET)
-//                } else if self.groupingOptions[self.groupingOptionIndex] == .byFormattedDate {
-//                    ASAMainRowsByFormattedDateList(processedRowsByFormattedDate: self.processedRowsByFormattedDate(), now: $now, INSET: INSET)
-//                } else {
-//                    Text("💣")
-//                }
 
                 switch self.groupingOptions[self.groupingOptionIndex] {
                 case .plain:
@@ -144,6 +159,9 @@ struct ASAClocksView: View {
 
                 case .byCalendar:
                     ASAMainRowsByCalendarList(processedRowsByCalendar: self.processedRowsByCalendar(), now: $now, INSET: INSET)
+
+                case .byPlaceName:
+                    ASAMainRowsByPlaceName(processedRowsByPlaceName: self.processedRowsByPlaceName(), now: $now, INSET: INSET)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
 
             } // VStack
@@ -190,7 +208,7 @@ struct ASAPlainMainRowsList:  View {
                             self.userData.savePreferences(code: .clocks)
                         }
                 ) {
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, INSET: INSET, shouldShowTime: true)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
                 }
             }
             .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -239,7 +257,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                                     self.userData.savePreferences(code: .clocks)
                                 }
                         ) {
-                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, INSET: INSET, shouldShowTime: true)
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
                         }
 
                     }
@@ -281,7 +299,7 @@ struct ASAMainRowsByCalendarList:  View {
                                     self.userData.savePreferences(code: .clocks)
                                 }
                         ) {
-                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, INSET: INSET, shouldShowTime: true)
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
                         }
 
                     }
@@ -289,13 +307,57 @@ struct ASAMainRowsByCalendarList:  View {
             }
         } // List
     } // var body
-} // struct ASAMainRowsByCalendar
+} // struct ASAMainRowsByCalendarList
+
+
+struct ASAMainRowsByPlaceName:  View {
+    @EnvironmentObject var userData:  ASAUserData
+
+    var processedRowsByPlaceName: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var now:  Date
+    var INSET:  CGFloat
+
+    var keys:  Array<String> {
+        get {
+            return Array(self.processedRowsByPlaceName.keys).sorted()
+        } // get
+    } // var keys:  Array<String>
+
+    var body: some View {
+        List {
+            ForEach(self.keys, id: \.self) {
+                key
+                in
+                Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
+                            .multilineTextAlignment(.leading).lineLimit(2)) {
+                    ForEach(self.processedRowsByPlaceName[key]!, id:  \.row.uuid) {
+                        processedRow
+                        in
+
+                        NavigationLink(
+                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                                .onReceive(processedRow.row.objectWillChange) { _ in
+                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                    self.userData.objectWillChange.send()
+                                    self.userData.savePreferences(code: .clocks)
+                                }
+                        ) {
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, INSET: INSET, shouldShowTime: true)
+                        }
+
+                    }
+                }
+            }
+        } // List
+    } // var body
+}
 
 struct ASAClockCell:  View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
+    var shouldShowPlaceName:  Bool
 
     var INSET:  CGFloat
     var shouldShowTime:  Bool
@@ -333,15 +395,17 @@ struct ASAClockCell:  View {
                 }
             }
 
-            HStack {
-                VStack(alignment: .leading) {
-                    if processedRow.row.calendar.supportsTimeZones || processedRow.row.calendar.supportsLocations {
-                        HStack {
-                            Spacer().frame(width: self.INSET)
-                            Text(verbatim:  processedRow.emojiString)
+            if shouldShowPlaceName {
+                HStack {
+                    VStack(alignment: .leading) {
+                        if processedRow.row.calendar.supportsTimeZones || processedRow.row.calendar.supportsLocations {
+                            HStack {
+                                Spacer().frame(width: self.INSET)
+                                Text(verbatim:  processedRow.emojiString)
 
-                            Text(processedRow.locationString).font(.subheadline)
-                        } // HStack
+                                Text(processedRow.locationString).font(.subheadline)
+                            } // HStack
+                        }
                     }
                 }
             }
