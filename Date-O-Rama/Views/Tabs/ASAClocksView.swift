@@ -25,9 +25,9 @@ struct ASAClocksView: View {
     fileprivate func saveUserData() {
         self.userData.savePreferences(code: .clocks)
         
-        let app = UIApplication.shared
-        let appDelegate = app.delegate as! AppDelegate
-        appDelegate.sendUserData(appDelegate.session)
+//        let app = UIApplication.shared
+//        let appDelegate = app.delegate as! AppDelegate
+//        appDelegate.sendUserData(appDelegate.session)
     } // func saveUserData()
     
     var body: some View {

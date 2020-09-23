@@ -42,9 +42,9 @@ struct ASANewInternalEventCalendarDetailView: View {
                         userData.internalEventCalendars.insert(self.selectedEventCalendar, at: 0)
                         userData.savePreferences(code: .events)
 
-                        let app = UIApplication.shared
-                        let appDelegate = app.delegate as! AppDelegate
-                        appDelegate.sendUserData(appDelegate.session)
+//                        let app = UIApplication.shared
+//                        let appDelegate = app.delegate as! AppDelegate
+//                        appDelegate.sendUserData(appDelegate.session)
 
                         self.dismiss()
                     }

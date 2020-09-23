@@ -332,6 +332,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 writePreferences(temp2, code: .complications)
             }
         }
+
+        #if os(iOS)
+        let app = UIApplication.shared
+            let appDelegate = app.delegate as! AppDelegate
+            appDelegate.sendUserData(appDelegate.session)
+        #endif
     } // func savePreferences()
     
     
