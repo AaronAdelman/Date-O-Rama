@@ -19,6 +19,27 @@ struct ASAProcessedRow {
     var locationString:  String
 } // struct ASAProcessedRow
 
+
+enum ASAClocksViewGroupingOption {
+    case plain
+    case byFormattedDate
+
+    func text() -> String {
+        var raw:  String
+
+        switch self {
+        case .plain:
+            raw = "Plain"
+
+        case .byFormattedDate:
+            raw = "By Formatted Date"
+        } // switch self
+
+        return NSLocalizedString(raw, comment: "")
+    } // func text() -> String
+} // enum ASAClocksViewGroupingOption
+
+
 struct ASAClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
@@ -26,6 +47,12 @@ struct ASAClocksView: View {
     @Environment(\.horizontalSizeClass) var sizeClass
 
     @State private var showingNewClockDetailView = false
+
+    @State private var groupingOptionIndex = 0
+    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
+        .plain,
+        .byFormattedDate
+    ]
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -48,40 +75,44 @@ struct ASAClocksView: View {
         }
 
         return result
-    }
-    
-    fileprivate func saveUserData() {
-        self.userData.savePreferences(code: .clocks)
-    } // func saveUserData()
-    
+    } // func processedRows() -> Array<ASAProcessedRow>
+
+    func processedRowsByFormattedDate() -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processedRows()
+
+        for processedRow in processedRows {
+            let key = processedRow.dateString
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } // func processedRowsByFormattedDate() -> Dictionary<String, Array<ASAProcessedRow>>
+
     var body: some View {
         NavigationView {
-            List {
-                ForEach(self.processedRows(), id:  \.row.uuid) {
-                    processedRow
-                    in
-                    NavigationLink(
-                        destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
-                            .onReceive(processedRow.row.objectWillChange) { _ in
-                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                self.userData.objectWillChange.send()
-                                self.saveUserData()
-                            }
-                    ) {
-                        ASAPlainMainRowsViewCell(processedRow: processedRow, now: now, INSET: INSET, shouldShowTime: true)
+            VStack {
+                Picker(selection: $groupingOptionIndex, label: Text("Arrangement")) {
+                    ForEach(0 ..< self.groupingOptions.count) {
+                        Text(self.groupingOptions[$0].text())
                     }
                 }
-                .onMove { (source: IndexSet, destination: Int) -> Void in
-                    self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
-                    self.saveUserData()
+
+                if self.groupingOptions[self.groupingOptionIndex] == .plain {
+                    ASAPlainMainRowsList(processedRows: self.processedRows(), now: $now, INSET: INSET)
+                } else if self.groupingOptions[self.groupingOptionIndex] == .byFormattedDate {
+                    ASAMainRowsByFormattedDateList(processedRowsByFormattedDate: self.processedRowsByFormattedDate(), now: $now, INSET: INSET)
+                } else {
+                    Text("💣")
                 }
-                .onDelete { indices in
-                    indices.forEach {
-                        debugPrint("\(#file) \(#function)")
-                        self.userData.mainRows.remove(at: $0) }
-                    self.saveUserData()
-                }
-            }
+
+            } // VStack
             .sheet(isPresented: self.$showingNewClockDetailView) {
                 ASANewClockDetailView()
             }
@@ -96,6 +127,7 @@ struct ASAClocksView: View {
                     Text("Add clock")
                 }
             )
+
         }.navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in
             self.now = Date()
@@ -103,9 +135,90 @@ struct ASAClocksView: View {
     }
 } // struct ASAClocksView
 
-struct ASAPlainMainRowsViewCell:  View {
+
+struct ASAPlainMainRowsList:  View {
+    @EnvironmentObject var userData:  ASAUserData
+
+    var processedRows:  Array<ASAProcessedRow>
+    @Binding var now:  Date
+    var INSET:  CGFloat
+
+    var body: some View {
+        List {
+            ForEach(self.processedRows, id:  \.row.uuid) {
+                processedRow
+                in
+                NavigationLink(
+                    destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                        .onReceive(processedRow.row.objectWillChange) { _ in
+                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                            self.userData.objectWillChange.send()
+                            self.userData.savePreferences(code: .clocks)
+                        }
+                ) {
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, INSET: INSET, shouldShowTime: true)
+                }
+            }
+            .onMove { (source: IndexSet, destination: Int) -> Void in
+                self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
+                self.userData.savePreferences(code: .clocks)
+            }
+            .onDelete { indices in
+                indices.forEach {
+                    debugPrint("\(#file) \(#function)")
+                    self.userData.mainRows.remove(at: $0) }
+                self.userData.savePreferences(code: .clocks)
+            }
+        } // List
+    }
+} // struct ASAPlainMainRowsList:  View
+
+struct ASAMainRowsByFormattedDateList:  View {
+    @EnvironmentObject var userData:  ASAUserData
+
+    var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var now:  Date
+    var INSET:  CGFloat
+
+    var keys:  Array<String> {
+        get {
+            return Array(self.processedRowsByFormattedDate.keys).sorted()
+        } // get
+    } // var keys:  Array<String>
+
+    var body: some View {
+        List {
+            ForEach(self.keys, id: \.self) {
+                key
+                in
+                Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
+                            .multilineTextAlignment(.leading).lineLimit(2)) {
+                    ForEach(self.processedRowsByFormattedDate[key]!, id:  \.row.uuid) {
+                        processedRow
+                        in
+
+                        NavigationLink(
+                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                                .onReceive(processedRow.row.objectWillChange) { _ in
+                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                    self.userData.objectWillChange.send()
+                                    self.userData.savePreferences(code: .clocks)
+                                }
+                        ) {
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, INSET: INSET, shouldShowTime: true)
+                        }
+
+                    }
+                }
+            }
+        } // List
+    } // var body
+} // struct ASAMainRowsByFormattedDateList:  View
+
+struct ASAClockCell:  View {
     var processedRow:  ASAProcessedRow
-    var now:  Date
+    @Binding var now:  Date
+    var shouldShowFormattedDate:  Bool
 
     var INSET:  CGFloat
     var shouldShowTime:  Bool
@@ -123,15 +236,17 @@ struct ASAPlainMainRowsViewCell:  View {
                 Spacer().frame(width: self.INSET)
                 VStack(alignment: .leading) {
                     if processedRow.row.calendar.canSplitTimeFromDate {
+                        if shouldShowFormattedDate {
                         Text(verbatim:  processedRow.dateString)
                             .font(Font.headline.monospacedDigit())
                             .multilineTextAlignment(.leading).lineLimit(2)
+                        }
                         if shouldShowTime {
                             Text(verbatim:  processedRow.timeString ?? "")
                                 .font(Font.headline.monospacedDigit())
                                 .multilineTextAlignment(.leading).lineLimit(2)
                         }
-                    } else {
+                    } else if shouldShowFormattedDate {
                         Text(verbatim:  processedRow.dateString)
                             .font(Font.headline.monospacedDigit())
                             .multilineTextAlignment(.leading).lineLimit(2)
