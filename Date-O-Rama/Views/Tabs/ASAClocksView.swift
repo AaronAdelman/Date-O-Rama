@@ -23,6 +23,7 @@ struct ASAProcessedRow {
 enum ASAClocksViewGroupingOption {
     case plain
     case byFormattedDate
+    case byCalendar
 
     func text() -> String {
         var raw:  String
@@ -33,6 +34,9 @@ enum ASAClocksViewGroupingOption {
 
         case .byFormattedDate:
             raw = "By Formatted Date"
+
+        case .byCalendar:
+            raw = "By Calendar"
         } // switch self
 
         return NSLocalizedString(raw, comment: "")
@@ -51,7 +55,8 @@ struct ASAClocksView: View {
     @State private var groupingOptionIndex = 0
     let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
         .plain,
-        .byFormattedDate
+        .byFormattedDate,
+        .byCalendar
     ]
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -95,6 +100,24 @@ struct ASAClocksView: View {
         return result
     } // func processedRowsByFormattedDate() -> Dictionary<String, Array<ASAProcessedRow>>
 
+    func processedRowsByCalendar() -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processedRows()
+
+        for processedRow in processedRows {
+            let key = processedRow.calendarString
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } // func processedRowsByCalendar() -> Dictionary<String, Array<ASAProcessedRow>>
+
     var body: some View {
         NavigationView {
             VStack {
@@ -104,13 +127,24 @@ struct ASAClocksView: View {
                     }
                 }
 
-                if self.groupingOptions[self.groupingOptionIndex] == .plain {
+//                if self.groupingOptions[self.groupingOptionIndex] == .plain {
+//                    ASAPlainMainRowsList(processedRows: self.processedRows(), now: $now, INSET: INSET)
+//                } else if self.groupingOptions[self.groupingOptionIndex] == .byFormattedDate {
+//                    ASAMainRowsByFormattedDateList(processedRowsByFormattedDate: self.processedRowsByFormattedDate(), now: $now, INSET: INSET)
+//                } else {
+//                    Text("💣")
+//                }
+
+                switch self.groupingOptions[self.groupingOptionIndex] {
+                case .plain:
                     ASAPlainMainRowsList(processedRows: self.processedRows(), now: $now, INSET: INSET)
-                } else if self.groupingOptions[self.groupingOptionIndex] == .byFormattedDate {
+
+                case .byFormattedDate:
                     ASAMainRowsByFormattedDateList(processedRowsByFormattedDate: self.processedRowsByFormattedDate(), now: $now, INSET: INSET)
-                } else {
-                    Text("💣")
-                }
+
+                case .byCalendar:
+                    ASAMainRowsByCalendarList(processedRowsByCalendar: self.processedRowsByCalendar(), now: $now, INSET: INSET)
+                } // switch self.groupingOptions[self.groupingOptionIndex]
 
             } // VStack
             .sheet(isPresented: self.$showingNewClockDetailView) {
@@ -156,7 +190,7 @@ struct ASAPlainMainRowsList:  View {
                             self.userData.savePreferences(code: .clocks)
                         }
                 ) {
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, INSET: INSET, shouldShowTime: true)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, INSET: INSET, shouldShowTime: true)
                 }
             }
             .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -205,7 +239,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                                     self.userData.savePreferences(code: .clocks)
                                 }
                         ) {
-                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, INSET: INSET, shouldShowTime: true)
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, INSET: INSET, shouldShowTime: true)
                         }
 
                     }
@@ -215,10 +249,53 @@ struct ASAMainRowsByFormattedDateList:  View {
     } // var body
 } // struct ASAMainRowsByFormattedDateList:  View
 
+struct ASAMainRowsByCalendarList:  View {
+    @EnvironmentObject var userData:  ASAUserData
+
+    var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var now:  Date
+    var INSET:  CGFloat
+
+    var keys:  Array<String> {
+        get {
+            return Array(self.processedRowsByCalendar.keys).sorted()
+        } // get
+    } // var keys:  Array<String>
+
+    var body: some View {
+        List {
+            ForEach(self.keys, id: \.self) {
+                key
+                in
+                Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
+                            .multilineTextAlignment(.leading).lineLimit(2)) {
+                    ForEach(self.processedRowsByCalendar[key]!, id:  \.row.uuid) {
+                        processedRow
+                        in
+
+                        NavigationLink(
+                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                                .onReceive(processedRow.row.objectWillChange) { _ in
+                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                    self.userData.objectWillChange.send()
+                                    self.userData.savePreferences(code: .clocks)
+                                }
+                        ) {
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, INSET: INSET, shouldShowTime: true)
+                        }
+
+                    }
+                }
+            }
+        } // List
+    } // var body
+} // struct ASAMainRowsByCalendar
+
 struct ASAClockCell:  View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
+    var shouldShowCalendar:  Bool
 
     var INSET:  CGFloat
     var shouldShowTime:  Bool
@@ -227,10 +304,12 @@ struct ASAClockCell:  View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
-                Text(verbatim: "🗓")
-                Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-            }.frame(height: ROW_HEIGHT)
+            if shouldShowCalendar {
+                HStack {
+                    Text(verbatim: "🗓")
+                    Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                }.frame(height: ROW_HEIGHT)
+            }
 
             HStack {
                 Spacer().frame(width: self.INSET)
