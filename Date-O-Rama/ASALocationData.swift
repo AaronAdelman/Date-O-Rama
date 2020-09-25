@@ -53,6 +53,16 @@ extension ASALocationData {
                 temp += "\(temp.count > 0 ? separator : "")\(self.country!)"
             }
 
+            if temp == "" {
+                if self.name != nil {
+                    temp = self.name!
+                } else if self.location != nil {
+                    temp = self.location!.humanInterfaceRepresentation
+                } else {
+                    temp = "???"
+                }
+            }
+
             return temp
         } // get
     } // var formattedOneLineAddress
@@ -77,6 +87,14 @@ extension ASALocationData {
 
             if self.country != nil {
                 temp += "\(temp.count > 0 ? separator : "")\(self.country!)"
+            }
+
+            if temp == "" {
+                if self.location != nil {
+                    temp = self.location!.humanInterfaceRepresentation
+                } else {
+                    temp = "???"
+                }
             }
 
             return temp
