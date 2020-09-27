@@ -17,6 +17,9 @@ struct ASAProcessedRow {
     var timeString:  String?
     var emojiString:  String
     var locationString:  String
+    var canSplitTimeFromDate:  Bool
+    var supportsTimeZones:  Bool
+    var supportsLocations:  Bool
 } // struct ASAProcessedRow
 
 
@@ -48,6 +51,85 @@ enum ASAClocksViewGroupingOption {
 } // enum ASAClocksViewGroupingOption
 
 
+extension Array where Element == ASARow {
+    func processed(now:  Date) -> Array<ASAProcessedRow> {
+        var result:  Array<ASAProcessedRow> = []
+
+        for row in self {
+            var locationString = ""
+            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
+                if row.location != nil {
+                    locationString = row.location!.humanInterfaceRepresentation
+                }
+            } else {
+                locationString = row.locationData.formattedOneLineAddress
+            }
+            let processedRow = ASAProcessedRow(row: row, calendarString: row.calendar.calendarCode.localizedName(), dateString: row.dateString(now: now), timeString: row.timeString(now: now), emojiString: row.emoji(date:  now), locationString: locationString, canSplitTimeFromDate: row.calendar.canSplitTimeFromDate, supportsTimeZones: row.calendar.supportsTimeZones, supportsLocations: row.calendar.supportsLocations)
+            result.append(processedRow)
+        }
+
+        return result
+    } // func processed(now:  Date) -> Array<ASAProcessedRow>
+
+    func processedByFormattedDate(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processed(now: now)
+
+        for processedRow in processedRows {
+            let key = processedRow.dateString
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        //        debugPrint(#file, #function, result)
+        //        debugPrint("-----------")
+
+        return result
+    } // func processedByFormattedDate(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+
+    func processedRowsByCalendar(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processed(now: now)
+
+        for processedRow in processedRows {
+            let key = processedRow.calendarString
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } // func processedRowsByCalendar(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+
+    func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processed(now: now)
+
+        for processedRow in processedRows {
+            let key = processedRow.locationString
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } //
+} // extension Array where Element == ASARow
+
+
 struct ASAClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
@@ -68,82 +150,9 @@ struct ASAClocksView: View {
     
     let INSET = 25.0 as CGFloat
 
-    func processedRows() -> Array<ASAProcessedRow> {
-        var result:  Array<ASAProcessedRow> = []
-
-        for row in self.userData.mainRows {
-            var locationString = ""
-            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
-                if row.location != nil {
-                    locationString = row.location!.humanInterfaceRepresentation
-                }
-            } else {
-                locationString = row.locationData.formattedOneLineAddress
-            }
-            let processedRow = ASAProcessedRow(row: row, calendarString: row.calendar.calendarCode.localizedName(), dateString: row.dateString(now: now), timeString: row.timeString(now: now), emojiString: row.emoji(date:  self.now), locationString: locationString)
-            result.append(processedRow)
-        }
-
-        return result
-    } // func processedRows() -> Array<ASAProcessedRow>
-
-    func processedRowsByFormattedDate() -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
-        let processedRows = self.processedRows()
-
-        for processedRow in processedRows {
-            let key = processedRow.dateString
-            var value = result[key]
-            if value == nil {
-                result[key] = [processedRow]
-            } else {
-                value!.append(processedRow)
-                result[key] = value
-            }
-        } // for processedRow in processedRows
-
-        return result
-    } // func processedRowsByFormattedDate() -> Dictionary<String, Array<ASAProcessedRow>>
-
-    func processedRowsByCalendar() -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
-        let processedRows = self.processedRows()
-
-        for processedRow in processedRows {
-            let key = processedRow.calendarString
-            var value = result[key]
-            if value == nil {
-                result[key] = [processedRow]
-            } else {
-                value!.append(processedRow)
-                result[key] = value
-            }
-        } // for processedRow in processedRows
-
-        return result
-    } // func processedRowsByCalendar() -> Dictionary<String, Array<ASAProcessedRow>>
-
-    func processedRowsByPlaceName() -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
-        let processedRows = self.processedRows()
-
-        for processedRow in processedRows {
-            let key = processedRow.locationString
-            var value = result[key]
-            if value == nil {
-                result[key] = [processedRow]
-            } else {
-                value!.append(processedRow)
-                result[key] = value
-            }
-        } // for processedRow in processedRows
-
-        return result
-    } // func processedRowsByPlaceName() -> Dictionary<String, Array<ASAProcessedRow>>
-
     var body: some View {
         NavigationView {
-            VStack {
+            Form {
                 Picker(selection: $groupingOptionIndex, label: Text("Arrangement")) {
                     ForEach(0 ..< self.groupingOptions.count) {
                         Text(self.groupingOptions[$0].text())
@@ -152,19 +161,18 @@ struct ASAClocksView: View {
 
                 switch self.groupingOptions[self.groupingOptionIndex] {
                 case .plain:
-                    ASAPlainMainRowsList(processedRows: self.processedRows(), now: $now, INSET: INSET)
+                    ASAPlainMainRowsList(rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .byFormattedDate:
-                    ASAMainRowsByFormattedDateList(processedRowsByFormattedDate: self.processedRowsByFormattedDate(), now: $now, INSET: INSET)
+                    ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .byCalendar:
-                    ASAMainRowsByCalendarList(processedRowsByCalendar: self.processedRowsByCalendar(), now: $now, INSET: INSET)
+                    ASAMainRowsByCalendarList(rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .byPlaceName:
-                    ASAMainRowsByPlaceName(processedRowsByPlaceName: self.processedRowsByPlaceName(), now: $now, INSET: INSET)
+                    ASAMainRowsByPlaceName(rows: $userData.mainRows, now: $now, INSET: INSET)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
-
-            } // VStack
+            }
             .sheet(isPresented: self.$showingNewClockDetailView) {
                 ASANewClockDetailView()
             }
@@ -191,7 +199,12 @@ struct ASAClocksView: View {
 struct ASAPlainMainRowsList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
-    var processedRows:  Array<ASAProcessedRow>
+    @Binding var rows:  Array<ASARow>
+    var processedRows:  Array<ASAProcessedRow> {
+        get {
+            return rows.processed(now: now)
+        } // get
+    } // var processedRows
     @Binding var now:  Date
     var INSET:  CGFloat
 
@@ -225,10 +238,16 @@ struct ASAPlainMainRowsList:  View {
     }
 } // struct ASAPlainMainRowsList:  View
 
+
 struct ASAMainRowsByFormattedDateList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
-    var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var rows:  Array<ASARow>
+    var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>> {
+        get {
+            return self.rows.processedByFormattedDate(now: now)
+        }
+    }
     @Binding var now:  Date
     var INSET:  CGFloat
 
@@ -270,7 +289,12 @@ struct ASAMainRowsByFormattedDateList:  View {
 struct ASAMainRowsByCalendarList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
-    var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var rows:  Array<ASARow>
+    var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>> {
+        get {
+            return self.rows.processedRowsByCalendar(now: now)
+        } // get
+    }
     @Binding var now:  Date
     var INSET:  CGFloat
 
@@ -313,7 +337,12 @@ struct ASAMainRowsByCalendarList:  View {
 struct ASAMainRowsByPlaceName:  View {
     @EnvironmentObject var userData:  ASAUserData
 
-    var processedRowsByPlaceName: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var rows:  Array<ASARow>
+    var processedRowsByPlaceName: Dictionary<String, Array<ASAProcessedRow>> {
+        get {
+            return self.rows.processedRowsByPlaceName(now: now)
+        } // get
+    }
     @Binding var now:  Date
     var INSET:  CGFloat
 
@@ -376,11 +405,11 @@ struct ASAClockCell:  View {
             HStack {
                 Spacer().frame(width: self.INSET)
                 VStack(alignment: .leading) {
-                    if processedRow.row.calendar.canSplitTimeFromDate {
+                    if processedRow.canSplitTimeFromDate {
                         if shouldShowFormattedDate {
-                        Text(verbatim:  processedRow.dateString)
-                            .font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)
+                            Text(verbatim:  processedRow.dateString)
+                                .font(Font.headline.monospacedDigit())
+                                .multilineTextAlignment(.leading).lineLimit(2)
                         }
                         if shouldShowTime {
                             Text(verbatim:  processedRow.timeString ?? "")
@@ -398,7 +427,7 @@ struct ASAClockCell:  View {
             if shouldShowPlaceName {
                 HStack {
                     VStack(alignment: .leading) {
-                        if processedRow.row.calendar.supportsTimeZones || processedRow.row.calendar.supportsLocations {
+                        if processedRow.supportsTimeZones || processedRow.supportsLocations {
                             HStack {
                                 Spacer().frame(width: self.INSET)
                                 Text(verbatim:  processedRow.emojiString)

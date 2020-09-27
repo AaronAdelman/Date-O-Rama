@@ -42,10 +42,6 @@ struct ASANewClockDetailView: View {
                         userData.mainRows.insert(self.selectedRow, at: 0)
                         userData.savePreferences(code: .clocks)
 
-//                        let app = UIApplication.shared
-//                        let appDelegate = app.delegate as! AppDelegate
-//                        appDelegate.sendUserData(appDelegate.session)
-
                         self.dismiss()
                     }
 
