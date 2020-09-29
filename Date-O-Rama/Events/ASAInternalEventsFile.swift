@@ -155,6 +155,7 @@ extension ASAInternalEventSpecification {
 // MARK: -
 
 struct ASADateSpecification:  Codable {
+    var era:  Int?
     var year:  Int?  // Will be ignored if not relevant
     var month:  Int? // Will be ignored if not relevant
     var day:  Int?

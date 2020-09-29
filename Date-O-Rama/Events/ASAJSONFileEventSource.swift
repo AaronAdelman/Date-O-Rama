@@ -73,25 +73,44 @@ class ASAJSONFileEventSource {
         return Color(self.eventsFile!.calendarColor)
     } // static func calendarColor() -> Color
 
-    func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification {
+    func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar, templateDateComponents:  ASADateComponents) -> ASADateSpecification {
         var tweakedDateSpecification = dateSpecification
-        if tweakedDateSpecification.day ?? 1 < 0 {
-            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+        if tweakedDateSpecification.era == nil {
+            tweakedDateSpecification.era = templateDateComponents.era!
+        }
+        if tweakedDateSpecification.year == nil {
+            tweakedDateSpecification.year = templateDateComponents.year!
+        }
+        if tweakedDateSpecification.month == nil {
+            tweakedDateSpecification.month = templateDateComponents.month!
+        }
+        if tweakedDateSpecification.day == nil {
+            tweakedDateSpecification.day = templateDateComponents.day!
+        } else if tweakedDateSpecification.day! < 0 {
+            let tweakedDate = calendar.date(dateComponents: ASADateComponents(calendar: calendar, locationData: templateDateComponents.locationData, era: tweakedDateSpecification.era, year: tweakedDateSpecification.year, yearForWeekOfYear: nil, quarter: nil, month: tweakedDateSpecification.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: tweakedDateSpecification.day, hour: nil, minute: nil, second: nil, nanosecond: nil))
+//            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+            if tweakedDate != nil {
+            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: tweakedDate!)
             let numberOfDaysInMonth = rangeOfDaysInMonth!.count
-            tweakedDateSpecification.day! += (numberOfDaysInMonth + 1)
+            tweakedDateSpecification.day = tweakedDateSpecification.day! + (numberOfDaysInMonth + 1)
+
+//            debugPrint(#file, #function, "📆 Date:", date, "🔴 Original date specification:", dateSpecification, "🟢 Tweaked date specification:", tweakedDateSpecification, "🗓 Calendar:", calendar, "Template date components:", templateDateComponents)
+            }
         }
         return tweakedDateSpecification
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar)
+        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+
+        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: templateDateComponents)
 
         if endDateSpecification == nil {
             let matches = self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: tweakedStartDateSpecification)
             return (matches, nil, nil)
         }
 
-        let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar)
+        let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar, templateDateComponents: templateDateComponents)
         
                 let components = calendar.dateComponents([.year, .month, .day, .weekday
         //            , .weekOfYear, .weekOfMonth
@@ -175,14 +194,18 @@ class ASAJSONFileEventSource {
     } // func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool {
-        let components = calendar.dateComponents([.year, .month, .day, .weekday
+        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday
 //            , .weekOfYear, .weekOfMonth
         ], from: date, locationData: locationData)
 
-        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar)
+        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
+            if !(components.era?.matches(tweakedStartDateSpecification.era) ?? false) {
+                return false
+            }
+
             if !(components.year?.matches(tweakedStartDateSpecification.year) ?? false) {
                 return false
             }
@@ -342,6 +365,9 @@ extension ASADateSpecification {
     
     func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date? {
         var revisedDateComponents = dateComponents
+        if self.era != nil {
+            revisedDateComponents.era = self.era
+        }
         if self.year != nil {
             revisedDateComponents.year = self.year
         }

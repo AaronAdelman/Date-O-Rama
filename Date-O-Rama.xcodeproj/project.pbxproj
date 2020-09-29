@@ -59,6 +59,7 @@
 		A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A566F48D2483D7CF000A05B5 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719B24627C89002BB471 /* UIColorExtensions.swift */; };
+		A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A57BCCA9247AA8310019C02C /* ASAPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */; };
@@ -223,6 +224,7 @@
 		A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A566F4622483D6EF000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A568DBBA25232E3200500419 /* Chinese zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac events.json"; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPreferencesView.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 			children = (
 				A5E3606324C71FBC0000A268 /* All-day Jewish events.json */,
 				A5CBB50F24FD54310084DF72 /* Antisemitic events.json */,
+				A568DBBA25232E3200500419 /* Chinese zodiac events.json */,
 				A584C8FF24B646210014CE2E /* Daily Jewish events.json */,
 				A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */,
 				A5D3015B24EBDFF8003E79E9 /* Islamic holidays (tabular).json */,
@@ -749,6 +752,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */,
 				A5D3016024EBDFF8003E79E9 /* Islamic holidays (Umm Al-Qura).json in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islamic holidays.json in Resources */,
 				A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */,
