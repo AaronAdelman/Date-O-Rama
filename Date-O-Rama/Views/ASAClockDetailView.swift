@@ -12,29 +12,64 @@ import CoreLocation
 struct ASAClockDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
+
     var shouldShowTime:  Bool
+
+    @EnvironmentObject var userData:  ASAUserData
+
+    @State private var showingActionSheet = false
+
+    @Environment(\.presentationMode) var presentationMode
+
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
     
     var body: some View {
         List {
             ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime)
             
-            if selectedRow.calendar.LDMLDetails.count > 0 {
-                Section(header:  Text("HEADER_Date")) {
-                    ForEach(selectedRow.LDMLDetails(), id: \.name) {
-                        detail
-                        in
-                        ASAClockDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
-                    }
-                } // Section
-            }
+            //            if selectedRow.calendar.LDMLDetails.count > 0 {
+            //                Section(header:  Text("HEADER_Date")) {
+            //                    ForEach(selectedRow.LDMLDetails(), id: \.name) {
+            //                        detail
+            //                        in
+            //                        ASAClockDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
+            //                    }
+            //                } // Section
+            //            }
+            //
+            //            Section(header:  Text("HEADER_Other")) {
+            //                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(date: now), dateStyle: .full, timeStyle: .full))
+            //                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(date:  now).addingTimeInterval(1)))
+            //            } // Section
 
-            Section(header:  Text("HEADER_Other")) {
-                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(date: now), dateStyle: .full, timeStyle: .full))
-                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(date:  now).addingTimeInterval(1)))
+            Section(header:  Text("")){
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        self.showingActionSheet = true
+                    }) {
+                        Text("Delete This Clock").foregroundColor(Color.red).frame(alignment: .center)
+                    }
+                    Spacer()
+                } // HStack
+                .actionSheet(isPresented: self.$showingActionSheet) {
+                    ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
+                        .destructive(Text("Delete This Clock")) {
+                            let index = self.userData.mainRows.firstIndex(of: selectedRow)
+                            if index != nil {
+                                self.userData.mainRows.remove(at: index!)
+                                self.userData.savePreferences(code: .clocks)
+                                self.dismiss()
+                            }
+                        },
+                        .cancel()
+                    ])
+                }
             } // Section
-            
-        }.navigationBarTitle(Text(
-            selectedRow.dateString(now: self.now) ))
+        }
+        .navigationBarTitle(Text(selectedRow.dateString(now: self.now) ))
     }
 } // struct ASAClockDetailView
 

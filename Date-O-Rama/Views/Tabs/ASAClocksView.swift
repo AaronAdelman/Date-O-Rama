@@ -23,34 +23,6 @@ struct ASAProcessedRow {
 } // struct ASAProcessedRow
 
 
-enum ASAClocksViewGroupingOption {
-    case plain
-    case byFormattedDate
-    case byCalendar
-    case byPlaceName
-
-    func text() -> String {
-        var raw:  String
-
-        switch self {
-        case .plain:
-            raw = "Plain"
-
-        case .byFormattedDate:
-            raw = "By Formatted Date"
-
-        case .byCalendar:
-            raw = "By Calendar"
-
-        case .byPlaceName:
-            raw = "By Place Name"
-        } // switch self
-
-        return NSLocalizedString(raw, comment: "")
-    } // func text() -> String
-} // enum ASAClocksViewGroupingOption
-
-
 extension Array where Element == ASARow {
     func processed(now:  Date) -> Array<ASAProcessedRow> {
         var result:  Array<ASAProcessedRow> = []
@@ -138,7 +110,6 @@ struct ASAClocksView: View {
 
     @State private var showingNewClockDetailView = false
 
-    @State private var groupingOptionIndex = 0
     let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
         .plain,
         .byFormattedDate,
@@ -153,13 +124,13 @@ struct ASAClocksView: View {
     var body: some View {
         NavigationView {
             Form {
-                Picker(selection: $groupingOptionIndex, label: Text("Arrangement")) {
-                    ForEach(0 ..< self.groupingOptions.count) {
-                        Text(self.groupingOptions[$0].text())
+                    Picker(selection: self.$userData.mainRowsGroupingOption, label: Text("Arrangement")) {
+                        ForEach(self.groupingOptions, id:  \.self) {
+                            Text($0.text())
+                        }
                     }
-                }
 
-                switch self.groupingOptions[self.groupingOptionIndex] {
+                switch self.userData.mainRowsGroupingOption {
                 case .plain:
                     ASAPlainMainRowsList(rows: $userData.mainRows, now: $now, INSET: INSET)
 
@@ -178,7 +149,7 @@ struct ASAClocksView: View {
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))
             .navigationBarItems(
-                leading: EditButton(),
+                leading: ASAConditionalEditButton(shouldShow: self.userData.mainRowsGroupingOption == .plain),
                 trailing: Button(
                     action: {
                         self.showingNewClockDetailView = true
@@ -194,6 +165,25 @@ struct ASAClocksView: View {
         }
     }
 } // struct ASAClocksView
+
+struct ASAConditionalEditButton:  View {
+    var shouldShow:  Bool
+    
+    var body: some View {
+        Group {
+            
+            if #available(macOS 11, iOS 14.0, tvOS 14.0, *) {
+                if shouldShow {
+                    EditButton()
+                } else {
+                    EmptyView()
+                }
+            } else {
+                EditButton()
+            }
+        }
+    }
+}
 
 
 struct ASAPlainMainRowsList:  View {
@@ -230,7 +220,7 @@ struct ASAPlainMainRowsList:  View {
             }
             .onDelete { indices in
                 indices.forEach {
-                    debugPrint("\(#file) \(#function)")
+//                    debugPrint("\(#file) \(#function)")
                     self.userData.mainRows.remove(at: $0) }
                 self.userData.savePreferences(code: .clocks)
             }
@@ -278,12 +268,15 @@ struct ASAMainRowsByFormattedDateList:  View {
                         ) {
                             ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
                         }
-
                     }
                 }
-            }
+            } // ForEach
         } // List
     } // var body
+
+    func deleteItem(at offsets: IndexSet, in: ASAProcessedRow) {
+        debugPrint(#file, #function )
+    }
 } // struct ASAMainRowsByFormattedDateList:  View
 
 struct ASAMainRowsByCalendarList:  View {
