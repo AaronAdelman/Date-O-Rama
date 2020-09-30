@@ -39,6 +39,10 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
     case byFormattedDate
     case byCalendar
     case byPlaceName
+    case westToEast
+    case eastToWest
+    case northToSouth
+    case southToNorth
 
     func text() -> String {
         var raw:  String
@@ -55,6 +59,18 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
 
         case .byPlaceName:
             raw = "By Place Name"
+
+        case .westToEast:
+            raw = "West to East"
+
+        case .eastToWest:
+            raw = "East to West"
+
+        case .southToNorth:
+            raw = "South to North"
+
+        case .northToSouth:
+            raw = "North to South"
         } // switch self
 
         return NSLocalizedString(raw, comment: "")

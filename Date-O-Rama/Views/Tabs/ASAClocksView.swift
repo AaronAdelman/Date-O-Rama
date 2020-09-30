@@ -22,6 +22,11 @@ struct ASAProcessedRow {
     var supportsLocations:  Bool
 } // struct ASAProcessedRow
 
+struct ASAProcessedRowsDictionaryKey {
+    var text:  String
+    var emoji:  String?
+} // struct ASAProcessedRowsDictionaryKey
+
 
 extension Array where Element == ASARow {
     func processed(now:  Date) -> Array<ASAProcessedRow> {
@@ -98,7 +103,31 @@ extension Array where Element == ASARow {
         } // for processedRow in processedRows
 
         return result
-    } //
+    } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+
+    func processedWestToEast(now:  Date) -> Array<ASAProcessedRow> {
+        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.longitude ?? 0.0 < $1.row.locationData.location?.coordinate.longitude ?? 0.0}
+
+        return processedRows
+    } // func processedWestToEast(now:  Date) -> Array<ASAProcessedRow>
+
+    func processedEastToWest(now:  Date) -> Array<ASAProcessedRow> {
+        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.longitude ?? 0.0 > $1.row.locationData.location?.coordinate.longitude ?? 0.0}
+
+        return processedRows
+    } // func processedEastToWest(now:  Date) -> Array<ASAProcessedRow>
+
+    func processedNorthToSouth(now:  Date) -> Array<ASAProcessedRow> {
+        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.latitude ?? 0.0 > $1.row.locationData.location?.coordinate.latitude ?? 0.0}
+
+        return processedRows
+    } // func processedNorthToSouth(now:  Date) -> Array<ASAProcessedRow>
+
+    func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow> {
+        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.latitude ?? 0.0 < $1.row.locationData.location?.coordinate.latitude ?? 0.0}
+
+        return processedRows
+    } // func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow>
 } // extension Array where Element == ASARow
 
 
@@ -114,7 +143,11 @@ struct ASAClocksView: View {
         .plain,
         .byFormattedDate,
         .byCalendar,
-        .byPlaceName
+        .byPlaceName,
+        .eastToWest,
+        .westToEast,
+        .northToSouth,
+        .southToNorth
     ]
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -132,7 +165,7 @@ struct ASAClocksView: View {
 
                 switch self.userData.mainRowsGroupingOption {
                 case .plain:
-                    ASAPlainMainRowsList(rows: $userData.mainRows, now: $now, INSET: INSET)
+                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .byFormattedDate:
                     ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now, INSET: INSET)
@@ -142,6 +175,9 @@ struct ASAClocksView: View {
 
                 case .byPlaceName:
                     ASAMainRowsByPlaceName(rows: $userData.mainRows, now: $now, INSET: INSET)
+
+                case .westToEast, .eastToWest, .southToNorth, .northToSouth:
+                    ASAPlainMainRowsList(groupingOption: self.userData.mainRowsGroupingOption, rows: $userData.mainRows, now: $now, INSET: INSET)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
             .sheet(isPresented: self.$showingNewClockDetailView) {
@@ -189,10 +225,31 @@ struct ASAConditionalEditButton:  View {
 struct ASAPlainMainRowsList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
+    var groupingOption:  ASAClocksViewGroupingOption
+
     @Binding var rows:  Array<ASARow>
     var processedRows:  Array<ASAProcessedRow> {
         get {
-            return rows.processed(now: now)
+            switch groupingOption {
+            case .plain:
+                return rows.processed(now: now)
+
+            case .westToEast:
+                return rows.processedWestToEast(now: now)
+
+            case .eastToWest:
+                return rows.processedEastToWest(now: now)
+
+            case .northToSouth:
+                return rows.processedNorthToSouth(now: now)
+
+            case .southToNorth:
+                return rows.processedSouthToNorth(now: now)
+
+            default:
+                return rows.processed(now: now)
+            }
+
         } // get
     } // var processedRows
     @Binding var now:  Date
