@@ -93,6 +93,8 @@ struct ASAEventsView: View {
         return self.userData.mainRows.count > 1
     }
 
+    let SECONDARY_ROW_FONT_SIZE:  CGFloat = 22.0
+
     var body: some View {
         NavigationView {
             VStack {
@@ -100,7 +102,7 @@ struct ASAEventsView: View {
 //                              , showingDatePicker: false
                 )
 
-                List {
+                Form {
                     NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
                         VStack(alignment:  .leading) {
                             Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
@@ -117,9 +119,9 @@ struct ASAEventsView: View {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
                                 if self.shouldHideTimesInSecondaryRow {
-                                    Text(verbatim: secondaryRow.dateString(now: date)).font(.title)
+                                    Text(verbatim: secondaryRow.dateString(now: date)).font(.system(size: SECONDARY_ROW_FONT_SIZE))
                                 } else {
-                                    Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.title)
+                                    Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.system(size: SECONDARY_ROW_FONT_SIZE))
                                 }
                                 if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
                                     HStack {
@@ -422,7 +424,7 @@ struct ASAStartAndEndTimesSubcell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.effectiveTimeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
-                ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.dateString(now: event.startDate), endDateString: row.dateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
+                ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
                 Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
                     .lineLimit(2)
