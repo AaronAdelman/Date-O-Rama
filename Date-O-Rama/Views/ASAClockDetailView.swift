@@ -21,6 +21,8 @@ struct ASAClockDetailView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
+    var deleteable:  Bool
+
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
@@ -44,30 +46,32 @@ struct ASAClockDetailView: View {
             //                ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DAY", comment: ""), detail: self.selectedRow.dateString(now: self.selectedRow.startOfNextDay(date:  now).addingTimeInterval(1)))
             //            } // Section
 
-            Section(header:  Text("")){
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        self.showingActionSheet = true
-                    }) {
-                        Text("Delete This Clock").foregroundColor(Color.red).frame(alignment: .center)
+            if deleteable {
+                Section(header:  Text("")){
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            self.showingActionSheet = true
+                        }) {
+                            Text("Delete This Clock").foregroundColor(Color.red).frame(alignment: .center)
+                        }
+                        Spacer()
+                    } // HStack
+                    .actionSheet(isPresented: self.$showingActionSheet) {
+                        ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
+                            .destructive(Text("Delete This Clock")) {
+                                let index = self.userData.mainRows.firstIndex(of: selectedRow)
+                                if index != nil {
+                                    self.userData.mainRows.remove(at: index!)
+                                    self.userData.savePreferences(code: .clocks)
+                                    self.dismiss()
+                                }
+                            },
+                            .cancel()
+                        ])
                     }
-                    Spacer()
-                } // HStack
-                .actionSheet(isPresented: self.$showingActionSheet) {
-                    ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
-                        .destructive(Text("Delete This Clock")) {
-                            let index = self.userData.mainRows.firstIndex(of: selectedRow)
-                            if index != nil {
-                                self.userData.mainRows.remove(at: index!)
-                                self.userData.savePreferences(code: .clocks)
-                                self.dismiss()
-                            }
-                        },
-                        .cancel()
-                    ])
-                }
-            } // Section
+                } // Section
+            }
         }
         .navigationBarTitle(Text(selectedRow.dateString(now: self.now) ))
     }
@@ -106,10 +110,13 @@ struct ASAClockDetailEditingSection:  View {
             }
 
             if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
-                ASATimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
 
                 NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedRow, tempLocationData: ASALocationData())) {
-                    ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                    VStack {
+                        ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                        Spacer()
+                        ASATimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
+                    } // VStack
                 }
             }
         } // Section
@@ -118,6 +125,6 @@ struct ASAClockDetailEditingSection:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date(), shouldShowTime: true)
+        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date(), shouldShowTime: true, deleteable: true)
     }
 }

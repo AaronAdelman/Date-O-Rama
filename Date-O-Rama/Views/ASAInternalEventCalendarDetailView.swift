@@ -32,10 +32,13 @@ struct ASAInternalEventCalendarDetailList:  View {
                 }
             }
 
-            ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
 
             NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedEventCalendar, tempLocationData: ASALocationData())) {
-                ASALocationCell(usesDeviceLocation: self.selectedEventCalendar.usesDeviceLocation, locationData: self.selectedEventCalendar.locationData)
+                VStack {
+                    ASALocationCell(usesDeviceLocation: self.selectedEventCalendar.usesDeviceLocation, locationData: self.selectedEventCalendar.locationData)
+                    Spacer()
+                    ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
+                } // VStack
             }
 
         } // List

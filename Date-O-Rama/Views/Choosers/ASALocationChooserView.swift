@@ -22,8 +22,8 @@ struct ASALocationChooserView: View {
     var body: some View {
         Form {
             Section {
-                ASATimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
                 ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
+                ASATimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
             }
             Section {
                 Toggle(isOn: $tempUsesDeviceLocation) {
