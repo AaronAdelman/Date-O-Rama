@@ -22,9 +22,9 @@ struct ASALocationCell:  View {
                 if usesDeviceLocation {
                     HStack {
                         Spacer()
-//                        Image(systemName: "location.fill")
-//                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
-                        Text(verbatim: "📍\(NSLocalizedString("DEVICE_LOCATION", comment: ""))").multilineTextAlignment(.trailing)
+                        Image(systemName: "location.fill").imageScale(.small)
+                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
+//                        Text(verbatim: "📍\(NSLocalizedString("DEVICE_LOCATION", comment: ""))").multilineTextAlignment(.trailing)
 
                     }
                 }

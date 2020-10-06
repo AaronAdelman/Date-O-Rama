@@ -16,6 +16,7 @@ struct ASAProcessedRow {
     var dateString:  String
     var timeString:  String?
     var emojiString:  String
+    var usesDeviceLocation:  Bool
     var locationString:  String
     var canSplitTimeFromDate:  Bool
     var supportsTimeZones:  Bool
@@ -41,7 +42,7 @@ extension Array where Element == ASARow {
             } else {
                 locationString = row.locationData.formattedOneLineAddress
             }
-            let processedRow = ASAProcessedRow(row: row, calendarString: row.calendar.calendarCode.localizedName(), dateString: row.dateString(now: now), timeString: row.timeString(now: now), emojiString: row.emoji(date:  now), locationString: locationString, canSplitTimeFromDate: row.calendar.canSplitTimeFromDate, supportsTimeZones: row.calendar.supportsTimeZones, supportsLocations: row.calendar.supportsLocations)
+            let processedRow = ASAProcessedRow(row: row, calendarString: row.calendar.calendarCode.localizedName(), dateString: row.dateString(now: now), timeString: row.timeString(now: now), emojiString: row.emoji(date:  now), usesDeviceLocation: row.usesDeviceLocation, locationString: locationString, canSplitTimeFromDate: row.calendar.canSplitTimeFromDate, supportsTimeZones: row.calendar.supportsTimeZones, supportsLocations: row.calendar.supportsLocations)
             result.append(processedRow)
         }
 
@@ -480,6 +481,9 @@ struct ASAClockCell:  View {
                         if processedRow.supportsTimeZones || processedRow.supportsLocations {
                             HStack {
                                 Spacer().frame(width: self.INSET)
+                                if processedRow.usesDeviceLocation {
+                                    Image(systemName:  "location.fill").imageScale(.small)
+                                }
                                 Text(verbatim:  processedRow.emojiString)
 
                                 Text(processedRow.locationString).font(.subheadline)
