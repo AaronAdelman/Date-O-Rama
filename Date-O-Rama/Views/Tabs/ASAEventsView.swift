@@ -120,99 +120,103 @@ struct ASAEventsView: View {
                 )
 
                 Form {
-                    NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
-                        VStack(alignment:  .leading) {
-                            Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
-                            if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
-                                HStack {
-                                    if primaryRow.usesDeviceLocation {
-                                        ASASmallLocationSymbol()
-                                    }
-                                    Text(verbatim: primaryRow.emoji(date:  date))
-                                    Text(verbatim:  primaryRow.locationData.formattedOneLineAddress)
-                                }
-                            }
-                        }
-                    }
-                    
-                    if settings.eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
-                        NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
+                    Section {
+                        NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
-                                if self.shouldHideTimesInSecondaryRow {
-                                    Text(verbatim: secondaryRow.dateString(now: date)).font(.system(size: SECONDARY_ROW_FONT_SIZE))
-                                } else {
-                                    Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.system(size: SECONDARY_ROW_FONT_SIZE))
-                                }
-                                if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
+                                Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
+                                if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
                                     HStack {
-                                        if secondaryRow.usesDeviceLocation {
+                                        if primaryRow.usesDeviceLocation {
                                             ASASmallLocationSymbol()
                                         }
-                                        Text(verbatim: secondaryRow.emoji(date:  date))
-                                        Text(verbatim: secondaryRow.locationData.formattedOneLineAddress)
+                                        Text(verbatim: primaryRow.emoji(date:  date))
+                                        Text(verbatim:  primaryRow.locationData.formattedOneLineAddress)
                                     }
                                 }
                             }
                         }
-                        Button("🔃") {
-                            let tempRowUUIDString = self.settings.primaryRowUUIDString
-                            self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
-                            self.settings.secondaryRowUUIDString = tempRowUUIDString
-                        }
-                    }
 
-                    Toggle(isOn: $showingPreferences) {
-                        Text("Show preferences")
-                    } // Toggle
-
-                    if showingPreferences {
-                        if self.enoughRowsToShowSecondaryDates() {
-                            Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
-                                ASAIndentedText(title: "Show secondary dates")
+                        if settings.eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
+                            NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
+                                VStack(alignment:  .leading) {
+                                    if self.shouldHideTimesInSecondaryRow {
+                                        Text(verbatim: secondaryRow.dateString(now: date)).font(.system(size: SECONDARY_ROW_FONT_SIZE))
+                                    } else {
+                                        Text(verbatim: "\(secondaryRow.dateTimeString(now: primaryRow.startOfDay(date: date)))\(NSLocalizedString("INTERVAL_SEPARATOR", comment: ""))\(secondaryRow.dateTimeString(now: primaryRow.startOfNextDay(date: date)))").font(.system(size: SECONDARY_ROW_FONT_SIZE))
+                                    }
+                                    if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
+                                        HStack {
+                                            if secondaryRow.usesDeviceLocation {
+                                                ASASmallLocationSymbol()
+                                            }
+                                            Text(verbatim: secondaryRow.emoji(date:  date))
+                                            Text(verbatim: secondaryRow.locationData.formattedOneLineAddress)
+                                        }
+                                    }
+                                }
+                            }
+                            Button("🔃") {
+                                let tempRowUUIDString = self.settings.primaryRowUUIDString
+                                self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
+                                self.settings.secondaryRowUUIDString = tempRowUUIDString
                             }
                         }
 
-                        Toggle(isOn: $settings.useExternalEvents) {
-                            ASAIndentedText(title: "Use external events")
+                        Toggle(isOn: $showingPreferences) {
+                            Text("Show preferences")
                         } // Toggle
 
-                        NavigationLink(destination:                             ASAInternalEventCalendarsView()
-                        ) {
-                            ASAIndentedText(title: "Internal event calendars")
+                        if showingPreferences {
+                            if self.enoughRowsToShowSecondaryDates() {
+                                Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
+                                    ASAIndentedText(title: "Show secondary dates")
+                                }
+                            }
+
+                            Toggle(isOn: $settings.useExternalEvents) {
+                                ASAIndentedText(title: "Use external events")
+                            } // Toggle
+
+                            NavigationLink(destination:                             ASAInternalEventCalendarsView()
+                            ) {
+                                ASAIndentedText(title: "Internal event calendars")
+                            }
+                        }
+
+                        if settings.useExternalEvents {
+                            #if targetEnvironment(macCatalyst)
+                            Button(action:
+                                    {
+                                        self.showingEventEditView = true
+                                    }, label:  {
+                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
+                                    })
+                                .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                                }
+                                .foregroundColor(.accentColor)
+                            #else
+                            Button(action:
+                                    {
+                                        self.showingEventEditView = true
+                                    }, label:  {
+                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
+                                    })
+                                .sheet(isPresented:  $showingEventEditView) {
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                                }
+                                .foregroundColor(.accentColor)
+                            #endif
                         }
                     }
-                    
-                    if settings.useExternalEvents {
-                        #if targetEnvironment(macCatalyst)
-                        Button(action:
-                            {
-                                self.showingEventEditView = true
-                        }, label:  {
-                            Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
-                        })
-                            .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                        }
-                        .foregroundColor(.accentColor)
-                        #else
-                        Button(action:
-                            {
-                                self.showingEventEditView = true
-                        }, label:  {
-                            Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
-                        })
-                            .sheet(isPresented:  $showingEventEditView) {
-                                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
-                        }
-                        .foregroundColor(.accentColor)
-                        #endif
+
+                    Section {
+                        ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+                            event
+                            in
+                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
+                        } // ForEach
                     }
-                    
-                    ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
-                        event
-                        in
-                        ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
-                    } // ForEach
                 } // Form
                 
             } // VStack
