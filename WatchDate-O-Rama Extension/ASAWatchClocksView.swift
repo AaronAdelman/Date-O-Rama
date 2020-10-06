@@ -28,7 +28,8 @@ struct ASAWatchClocksView: View {
 //                                self.userData.savePreferences(code: .clocks)
 //                        }
                     ) {
-                        ASAMainRowsViewCell(row: row, compact: true, now: self.now, INSET: self.INSET, shouldShowTime: true)
+//                        ASAMainRowsViewCell(row: row, compact: true, now: self.now, INSET: self.INSET, shouldShowTime: true)
+                        ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: 0.0, shouldShowTime: false)
                     }
                 }
 //                .onMove { (source: IndexSet, destination: Int) -> Void in
