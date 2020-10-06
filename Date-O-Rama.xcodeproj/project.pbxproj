@@ -62,7 +62,7 @@
 		A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
-		A57BCCA9247AA8310019C02C /* ASAPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */; };
+		A57BCCA9247AA8310019C02C /* ASAInternalEventCalendarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAInternalEventCalendarsView.swift */; };
 		A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
 		A57BCCAF247BB7F80019C02C /* ASAInternalEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAE247BB7F80019C02C /* ASAInternalEventCalendar.swift */; };
 		A57BCCB1247BBDC20019C02C /* ASALocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocationData.swift */; };
@@ -195,6 +195,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
 		A5152A052472BE420098A94B /* ASAEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventView.swift; sourceTree = "<group>"; };
 		A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
 		A517658B2460721A0039AFAF /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -227,7 +228,7 @@
 		A568DBBA25232E3200500419 /* Chinese zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac events.json"; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
-		A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPreferencesView.swift; sourceTree = "<group>"; };
+		A57BCCA8247AA8310019C02C /* ASAInternalEventCalendarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventCalendarsView.swift; sourceTree = "<group>"; };
 		A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocatedObject.swift; sourceTree = "<group>"; };
 		A57BCCAE247BB7F80019C02C /* ASAInternalEventCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventCalendar.swift; sourceTree = "<group>"; };
 		A57BCCB0247BBDC20019C02C /* ASALocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationData.swift; sourceTree = "<group>"; };
@@ -376,6 +377,7 @@
 		A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */,
 				A57CA3272484E3F800378EA7 /* ASAWatchClockDetailView.swift */,
 				A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */,
 				A566F45D2483D6EF000A05B5 /* Assets.xcassets */,
@@ -406,7 +408,6 @@
 				A5C77C002433361400CFEE47 /* ASAClocksView.swift */,
 				A5E3B040248FDCEA00283513 /* ASAComplicationClocksView.swift */,
 				A5BFC5AC246971030075AF58 /* ASAEventsView.swift */,
-				A57BCCA8247AA8310019C02C /* ASAPreferencesView.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -570,6 +571,7 @@
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
 				A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */,
+				A57BCCA8247AA8310019C02C /* ASAInternalEventCalendarsView.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A57CA3132483EA6500378EA7 /* ASAMainRowsViewCell.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
@@ -887,7 +889,7 @@
 				A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
 				A5152A0A247410EA0098A94B /* ASAEKEventEditView.swift in Sources */,
-				A57BCCA9247AA8310019C02C /* ASAPreferencesView.swift in Sources */,
+				A57BCCA9247AA8310019C02C /* ASAInternalEventCalendarsView.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASAMajorDateFormat.swift in Sources */,
 				A5CB8D36250A4A03007B2CA9 /* ASANewInternalEventCalendarDetailView.swift in Sources */,
@@ -994,7 +996,7 @@
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -1015,7 +1017,7 @@
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -1023,6 +1025,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
@@ -1041,7 +1044,7 @@
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -1049,6 +1052,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
@@ -1067,7 +1071,7 @@
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};

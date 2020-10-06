@@ -22,25 +22,25 @@ struct ASAWatchClocksView: View {
                 ForEach(userData.mainRows, id:  \.uuid) { row in
                     NavigationLink(
                         destination: ASAWatchClockDetailView(selectedRow: row, now: self.now)
-                            .onReceive(row.objectWillChange) { _ in
-                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                self.userData.objectWillChange.send()
-                                self.userData.savePreferences(code: .clocks)
-                        }
+//                            .onReceive(row.objectWillChange) { _ in
+//                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+//                                self.userData.objectWillChange.send()
+//                                self.userData.savePreferences(code: .clocks)
+//                        }
                     ) {
                         ASAMainRowsViewCell(row: row, compact: true, now: self.now, INSET: self.INSET, shouldShowTime: true)
                     }
                 }
-                .onMove { (source: IndexSet, destination: Int) -> Void in
-                    self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
-                    self.userData.savePreferences(code: .clocks)
-                }
-                .onDelete { indices in
-                    indices.forEach {
-                        debugPrint("\(#file) \(#function)")
-                        self.userData.mainRows.remove(at: $0) }
-                    self.userData.savePreferences(code: .clocks)
-                }
+//                .onMove { (source: IndexSet, destination: Int) -> Void in
+//                    self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
+//                    self.userData.savePreferences(code: .clocks)
+//                }
+//                .onDelete { indices in
+//                    indices.forEach {
+//                        debugPrint("\(#file) \(#function)")
+//                        self.userData.mainRows.remove(at: $0) }
+//                    self.userData.savePreferences(code: .clocks)
+//                }
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))
 //            .navigationBarItems(

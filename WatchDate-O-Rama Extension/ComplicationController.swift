@@ -48,7 +48,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         print("\(#file) \(#function)")
         
         handler([.forward
-            //            , .backward
+                 //            , .backward
         ])
     } // func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void)
     
@@ -129,7 +129,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         }
         
         for _ in 1...limit {
-//            when = when + (60 * 60 * 24)
+            //            when = when + (60 * 60 * 24)
             when = self.earliestStartOfNextDay(when: when, rowArray: rowArray!)
             entries?.append(self.getTimelineEntryForComplication(complication: complication, now: when)!)
         } // for i
@@ -269,66 +269,66 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func modularSmallTemplate(now:  Date) -> CLKComplicationTemplateModularSmallStackText {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
-        let template = CLKComplicationTemplateModularSmallStackText()
-        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
+        let template = CLKComplicationTemplateModularSmallStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
+        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
+        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // func modularSmallTemplate(now:  Date) -> CLKComplicationTemplateModularSmallStackText
     
     func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody {
         let (headerString, body1String, body2String) = self.threeLineLargeRowStrings(now: now)
-        let template = CLKComplicationTemplateModularLargeStandardBody()
-        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
-        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
-        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
+        let template = CLKComplicationTemplateModularLargeStandardBody(headerImageProvider: nil, headerTextProvider: CLKSimpleTextProvider(text: headerString), body1TextProvider: CLKSimpleTextProvider(text: body1String), body2TextProvider: CLKSimpleTextProvider(text:body2String))
+        //        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
+        //        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
+        //        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
         return template
     } // func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
     func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularStandardBody {
         let (headerString, body1String, body2String) = self.threeLineLargeRowStrings(now: now)
-        let template = CLKComplicationTemplateGraphicRectangularStandardBody()
-        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
-        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
-        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
+        let template = CLKComplicationTemplateGraphicRectangularStandardBody(headerImageProvider: nil, headerTextProvider: CLKSimpleTextProvider(text: headerString), body1TextProvider: CLKSimpleTextProvider(text: body1String), body2TextProvider: CLKSimpleTextProvider(text:body2String))
+        //        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
+        //        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
+        //        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
         return template
     } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
     func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
-        let template = CLKComplicationTemplateCircularSmallStackText()
-        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
+        let template = CLKComplicationTemplateCircularSmallStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
+        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
+        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText
     
     func extraLargeTemplate(now:  Date) -> CLKComplicationTemplateExtraLargeStackText {
         let (headerString, body1String) = self.twoLineLargeRowStrings(now: now)
-        let template = CLKComplicationTemplateExtraLargeStackText()
-        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
+        let template = CLKComplicationTemplateExtraLargeStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
+        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
+        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // func extraLargeTemplate(now:  Date) -> CLKComplicationTemplateExtraLargeStackText
     
     func utilitarianSmallTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianSmallFlat {
         let headerString = self.oneLineSmallRowString(now: now)
-        let template = CLKComplicationTemplateUtilitarianSmallFlat()
-        template.textProvider = CLKSimpleTextProvider(text: headerString)
+        let template = CLKComplicationTemplateUtilitarianSmallFlat(textProvider: CLKSimpleTextProvider(text: headerString), imageProvider: nil)
+        //        template.textProvider = CLKSimpleTextProvider(text: headerString)
         return template
     } // func utilitarianSmallTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianSmallFlat
 
     func utilitarianLargeTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianLargeFlat {
         let headerString = self.oneLineLargeRowString(now: now)
-        let template = CLKComplicationTemplateUtilitarianLargeFlat()
-        template.textProvider = CLKSimpleTextProvider(text: headerString)
+        let template = CLKComplicationTemplateUtilitarianLargeFlat(textProvider: CLKSimpleTextProvider(text: headerString), imageProvider: nil)
+        //        template.textProvider = CLKSimpleTextProvider(text: headerString)
         return template
     } // func utilitarianLargeTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianLargeFlat
     
     func graphicCircularTemplate(now:  Date) -> CLKComplicationTemplateGraphicCircularStackText {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
 
-        let template = CLKComplicationTemplateGraphicCircularStackText()
-        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
+        let template = CLKComplicationTemplateGraphicCircularStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
+        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
+        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // // func graphicCircularTemplate(now:  Date) -> CLKComplicationTemplateGraphicCircularStackText
 

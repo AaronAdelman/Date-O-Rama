@@ -491,6 +491,11 @@ struct ASAClockCell:  View {
                         }
                     }
                 }
+            } else if processedRow.usesDeviceLocation {
+                HStack {
+                    Spacer().frame(width: self.INSET)
+                    Image(systemName:  "location.fill").imageScale(.small)
+                }
             }
         } // VStack
     } // var body
