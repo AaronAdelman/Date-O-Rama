@@ -314,6 +314,8 @@
 "North to South"    = "צפון לדרום";
 "South to North"    = "דרום לצפון";
 
-
 "Are you sure you want to delete this clock?" = "בטוח שברצונך למחוק שעון זה?";
 "Delete This Clock" = "מחק שעון זה";
+
+"Show preferences" = "⚙️ הצג העדפות";
+"Internal event calendars" = "לוחות שנה אירועים";

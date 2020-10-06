@@ -15,7 +15,7 @@ struct ASAComplicationClocksView: View {
     let INSET = 25.0 as CGFloat
 
     fileprivate func saveUserData() {
-        self.userData.savePreferences(code: .clocks)
+        self.userData.savePreferences(code: .complications)
         
 //        let app = UIApplication.shared
 //        let appDelegate = app.delegate as! AppDelegate
@@ -46,7 +46,7 @@ struct ASAComplicationClocksView: View {
             Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                 ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                     NavigationLink(
-                        destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false)
+                        destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false)
                             .onReceive(row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 self.userData.objectWillChange.send()

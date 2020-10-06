@@ -10,9 +10,23 @@ import SwiftUI
 import EventKit
 import EventKitUI
 
-let BIG_PLUS_STRING = "Add external event"
+
+struct ASAIndentedText:  View {
+    var title:  String
+
+    var body: some View {
+        HStack {
+            Spacer().frame(width:  25.0)
+            Text("•")
+            Text(NSLocalizedString(title, comment: ""))
+        }
+    } // var body
+} // struct ASAIndentedText
+
 
 struct ASAEventsView: View {
+    let ADD_EXTERNAL_EVENT_STRING = "Add external event"
+
     @ObservedObject var settings = ASAUserSettings()
     
     @ObservedObject var eventManager = ASAExternalEventManager.shared()
@@ -20,6 +34,9 @@ struct ASAEventsView: View {
     @State var date = Date()
 
     @Environment(\.horizontalSizeClass) var sizeClass
+
+    @State var showingPreferences:  Bool = false
+    @State private var showingNewInternalEventCalendarDetailView = false
     
     var primaryRow:  ASARow {
         get {
@@ -138,9 +155,24 @@ struct ASAEventsView: View {
                         }
                     }
 
-                    if self.enoughRowsToShowSecondaryDates() {
-                        Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
-                            Text("Show secondary dates")
+                    Toggle(isOn: $showingPreferences) {
+                        Text("Show preferences")
+                    } // Toggle
+
+                    if showingPreferences {
+                        if self.enoughRowsToShowSecondaryDates() {
+                            Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
+                                ASAIndentedText(title: "Show secondary dates")
+                            }
+                        }
+
+                        Toggle(isOn: $settings.useExternalEvents) {
+                            ASAIndentedText(title: "Use external events")
+                        } // Toggle
+
+                        NavigationLink(destination:                             ASAInternalEventCalendarsView()
+                        ) {
+                            ASAIndentedText(title: "Internal event calendars")
                         }
                     }
                     
@@ -150,7 +182,7 @@ struct ASAEventsView: View {
                             {
                                 self.showingEventEditView = true
                         }, label:  {
-                            Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
+                            Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
                         })
                             .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                                 ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
@@ -161,7 +193,7 @@ struct ASAEventsView: View {
                             {
                                 self.showingEventEditView = true
                         }, label:  {
-                            Text(NSLocalizedString(BIG_PLUS_STRING, comment: ""))
+                            Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
                         })
                             .sheet(isPresented:  $showingEventEditView) {
                                 ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
@@ -175,7 +207,7 @@ struct ASAEventsView: View {
                         in
                         ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
                     } // ForEach
-                } // List
+                } // Form
                 
             } // VStack
                 .navigationBarTitle(Text("EVENTS_TAB"))

@@ -260,25 +260,25 @@ struct ASAPlainMainRowsList:  View {
             ForEach(self.processedRows, id:  \.row.uuid) {
                 processedRow
                 in
-                NavigationLink(
-                    destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
-                        .onReceive(processedRow.row.objectWillChange) { _ in
-                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                            self.userData.objectWillChange.send()
-                            self.userData.savePreferences(code: .clocks)
-                        }
+                NavigationLink(destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
+                                .onReceive(processedRow.row.objectWillChange) { _ in
+                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                    self.userData.objectWillChange.send()
+                                    self.userData.savePreferences(code: .clocks)
+                                }
                 ) {
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
                 }
-            }
+            } // ForEach
             .onMove { (source: IndexSet, destination: Int) -> Void in
                 self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
                 self.userData.savePreferences(code: .clocks)
             }
             .onDelete { indices in
                 indices.forEach {
-//                    debugPrint("\(#file) \(#function)")
-                    self.userData.mainRows.remove(at: $0) }
+                    // debugPrint("\(#file) \(#function)")
+                    self.userData.mainRows.remove(at: $0)
+                }
                 self.userData.savePreferences(code: .clocks)
             }
         } // List
@@ -316,7 +316,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                         in
 
                         NavigationLink(
-                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
                                 .onReceive(processedRow.row.objectWillChange) { _ in
                                     // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                     self.userData.objectWillChange.send()
@@ -366,7 +366,7 @@ struct ASAMainRowsByCalendarList:  View {
                         in
 
                         NavigationLink(
-                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
                                 .onReceive(processedRow.row.objectWillChange) { _ in
                                     // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                     self.userData.objectWillChange.send()
@@ -414,7 +414,7 @@ struct ASAMainRowsByPlaceName:  View {
                         in
 
                         NavigationLink(
-                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true)
+                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
                                 .onReceive(processedRow.row.objectWillChange) { _ in
                                     // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                     self.userData.objectWillChange.send()
