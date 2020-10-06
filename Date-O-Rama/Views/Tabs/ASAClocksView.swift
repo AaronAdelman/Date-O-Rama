@@ -382,7 +382,7 @@ struct ASAMainRowsByCalendarList:  View {
                 key
                 in
                 Section(header:  HStack {
-                    Text("🗓")
+                    ASACalendarSymbol()
                     Text(verbatim: "\(key)").font(Font.headline.monospacedDigit())
                         .multilineTextAlignment(.leading).lineLimit(2)
                 }) {
@@ -463,6 +463,9 @@ struct ASAMainRowsByPlaceName:  View {
     } // var body
 }
 
+
+// MARK: -
+
 struct ASAClockCell:  View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
@@ -479,7 +482,7 @@ struct ASAClockCell:  View {
         VStack(alignment: .leading) {
             if shouldShowCalendar {
                 HStack {
-                    Text(verbatim: "🗓")
+                    ASACalendarSymbol()
                     Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                 }.frame(height: ROW_HEIGHT)
             }
@@ -513,7 +516,7 @@ struct ASAClockCell:  View {
                             HStack {
                                 Spacer().frame(width: self.INSET)
                                 if processedRow.usesDeviceLocation {
-                                    Image(systemName:  "location.fill").imageScale(.small)
+                                    ASASmallLocationSymbol()
                                 }
                                 Text(verbatim:  processedRow.emojiString)
 
@@ -525,12 +528,15 @@ struct ASAClockCell:  View {
             } else if processedRow.usesDeviceLocation {
                 HStack {
                     Spacer().frame(width: self.INSET)
-                    Image(systemName:  "location.fill").imageScale(.small)
+                    ASASmallLocationSymbol()
                 }
             }
         } // VStack
     } // var body
 }
+
+
+// MARK: -
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {

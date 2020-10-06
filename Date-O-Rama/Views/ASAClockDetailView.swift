@@ -71,7 +71,7 @@ struct ASAClockDetailEditingSection:  View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
             NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
                 HStack {
-                    Text(verbatim: "🗓")
+                    ASACalendarSymbol()
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                 }
             }

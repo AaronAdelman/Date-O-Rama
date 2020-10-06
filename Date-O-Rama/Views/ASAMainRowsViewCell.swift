@@ -21,7 +21,7 @@ struct ASAMainRowsViewCell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text(verbatim: "🗓")
+                ASACalendarSymbol()
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
             }.frame(height: ROW_HEIGHT)
             
