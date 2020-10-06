@@ -52,7 +52,7 @@ struct ASANewInternalEventCalendarDetailView: View {
                     Spacer().frame(width:  HORIZONTAL_PADDING)
                 } // HStack
 
-                ASAInternalEventCalendarDetailList(selectedEventCalendar: self.selectedEventCalendar)
+                ASAInternalEventCalendarDetailSection(selectedEventCalendar: self.selectedEventCalendar)
 
             } // VStack
         } // NavigationView
