@@ -23,11 +23,17 @@ struct ASAProcessedRow {
     var supportsLocations:  Bool
 } // struct ASAProcessedRow
 
+
+// MARK:  -
+
 struct ASAProcessedRowsDictionaryKey {
     var text:  String
     var emoji:  String?
 } // struct ASAProcessedRowsDictionaryKey
 
+
+
+// MARK:  -
 
 extension Array where Element == ASARow {
     func processed(now:  Date) -> Array<ASAProcessedRow> {
@@ -132,6 +138,9 @@ extension Array where Element == ASARow {
 } // extension Array where Element == ASARow
 
 
+
+// MARK:  -
+
 struct ASAClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
@@ -203,6 +212,9 @@ struct ASAClocksView: View {
     }
 } // struct ASAClocksView
 
+
+// MARK:  -
+
 struct ASAConditionalEditButton:  View {
     var shouldShow:  Bool
     
@@ -218,10 +230,13 @@ struct ASAConditionalEditButton:  View {
             } else {
                 EditButton()
             }
-        }
-    }
-}
+        } // Group
+    } //var body
+} // struct ASAConditionalEditButton
 
+
+
+// MARK:  -
 
 struct ASAPlainMainRowsList:  View {
     @EnvironmentObject var userData:  ASAUserData
@@ -287,6 +302,9 @@ struct ASAPlainMainRowsList:  View {
 } // struct ASAPlainMainRowsList:  View
 
 
+
+// MARK:  -
+
 struct ASAMainRowsByFormattedDateList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
@@ -337,6 +355,9 @@ struct ASAMainRowsByFormattedDateList:  View {
     }
 } // struct ASAMainRowsByFormattedDateList:  View
 
+
+// MARK:  -
+
 struct ASAMainRowsByCalendarList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
@@ -360,8 +381,11 @@ struct ASAMainRowsByCalendarList:  View {
             ForEach(self.keys, id: \.self) {
                 key
                 in
-                Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)) {
+                Section(header:  HStack {
+                    Text("🗓")
+                    Text(verbatim: "\(key)").font(Font.headline.monospacedDigit())
+                        .multilineTextAlignment(.leading).lineLimit(2)
+                }) {
                     ForEach(self.processedRowsByCalendar[key]!, id:  \.row.uuid) {
                         processedRow
                         in
@@ -384,6 +408,9 @@ struct ASAMainRowsByCalendarList:  View {
     } // var body
 } // struct ASAMainRowsByCalendarList
 
+
+
+// MARK:  -
 
 struct ASAMainRowsByPlaceName:  View {
     @EnvironmentObject var userData:  ASAUserData
@@ -408,8 +435,12 @@ struct ASAMainRowsByPlaceName:  View {
             ForEach(self.keys, id: \.self) {
                 key
                 in
-                Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)) {
+                Section(header: HStack {
+                    Text(self.processedRowsByPlaceName[key]![0].emojiString)
+                    Text("\(key)").font(Font.headline.monospacedDigit())
+                        .multilineTextAlignment(.leading).lineLimit(2)
+
+                }) {
                     ForEach(self.processedRowsByPlaceName[key]!, id:  \.row.uuid) {
                         processedRow
                         in
