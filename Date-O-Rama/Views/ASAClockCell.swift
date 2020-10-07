@@ -55,6 +55,17 @@ struct ASAClockCell: View {
                 HStack {
                     VStack(alignment: .leading) {
                         if processedRow.supportsTimeZones || processedRow.supportsLocations {
+                            #if os(watchOS)
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    if processedRow.usesDeviceLocation {
+                                        ASASmallLocationSymbol()
+                                    }
+                                    Text(verbatim:  processedRow.emojiString)
+                                }
+                                Text(processedRow.locationString).font(.subheadline)
+                            }
+                            #else
                             HStack {
                                 Spacer().frame(width: self.INSET)
                                 if processedRow.usesDeviceLocation {
@@ -64,6 +75,7 @@ struct ASAClockCell: View {
 
                                 Text(processedRow.locationString).font(.subheadline)
                             } // HStack
+                            #endif
                         }
                     }
                 }
@@ -75,10 +87,10 @@ struct ASAClockCell: View {
             }
         } // VStack
     } // var body
-}
+} // struct ASAClockCell
 
-//struct ASAClockCell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic(), now: Date()), now: Date(), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: 20.0, shouldShowTime: true)
-//    }
-//}
+struct ASAClockCell_Previews: PreviewProvider {
+    static var previews: some View {
+        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic(), now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: 20.0, shouldShowTime: true)
+    }
+} // struct ASAClockCell_Previews
