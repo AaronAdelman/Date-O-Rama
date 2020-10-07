@@ -66,7 +66,7 @@ struct ASAClocksView: View {
                 ASANewClockDetailView()
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))
-            .navigationBarHidden(self.isNavBarHidden)
+//            .navigationBarHidden(self.isNavBarHidden)
             .onAppear {
                 self.isNavBarHidden = true
             }
