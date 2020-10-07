@@ -34,6 +34,8 @@ struct ASAClocksView: View {
     
     let INSET = 25.0 as CGFloat
 
+    @State var isNavBarHidden:  Bool = false
+
     var body: some View {
         NavigationView {
             Form {
@@ -64,6 +66,13 @@ struct ASAClocksView: View {
                 ASANewClockDetailView()
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))
+            .navigationBarHidden(self.isNavBarHidden)
+            .onAppear {
+                self.isNavBarHidden = true
+            }
+            .onDisappear {
+                self.isNavBarHidden = false
+            }
             .navigationBarItems(
                 leading: ASAConditionalEditButton(shouldShow: self.userData.mainRowsGroupingOption == .plain),
                 trailing: Button(

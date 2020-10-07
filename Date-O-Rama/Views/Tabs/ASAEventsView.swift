@@ -221,11 +221,12 @@ struct ASAEventsView: View {
                 } // Form
                 
             } // VStack
-                .navigationBarTitle(Text("EVENTS_TAB"))
-                .navigationBarHidden(self.isNavBarHidden)
-                .onAppear {
-                    self.isNavBarHidden = true
-            }.onDisappear {
+            .navigationBarTitle(Text("EVENTS_TAB"))
+            .navigationBarHidden(self.isNavBarHidden)
+            .onAppear {
+                self.isNavBarHidden = true
+            }
+            .onDisappear {
                 self.isNavBarHidden = false
             }
         }
