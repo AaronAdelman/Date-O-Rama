@@ -45,6 +45,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
+        // TODO:  Deprecated!
         print("\(#file) \(#function)")
         
         handler([.forward
@@ -53,6 +54,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void)
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
+        // TODO:  Deprecated!
         print("\(#file) \(#function)")
         
         handler(Date.distantPast)
@@ -203,7 +205,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Header date
         let headerString = headerRow.dateString(now: now)
 
-        debugPrint(#file, #function, headerString)
+//        debugPrint(#file, #function, headerString)
         return headerString
     } // func oneLineSmallRowString(now:  Date) -> String
 
@@ -213,7 +215,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Header date
         let headerString = headerRow.dateString(now: now)
 
-        debugPrint(#file, #function, headerString)
+//        debugPrint(#file, #function, headerString)
         return headerString
     } // func oneLineLargeRowString(now:  Date) -> String
 
@@ -227,7 +229,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Body 1 date
         let body1String = body1Row.dateString(now: now)
 
-        debugPrint(#file, #function, headerString, body1String)
+//        debugPrint(#file, #function, headerString, body1String)
         return (headerString, body1String)
     } // func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String)
     
@@ -241,7 +243,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Body 1 date
         let body1String = body1Row.dateString(now: now)
 
-        debugPrint(#file, #function, headerString, body1String)
+//        debugPrint(#file, #function, headerString, body1String)
         return (headerString, body1String)
     } // func twoLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String)
 
@@ -260,7 +262,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Body 2 date
         let body2String = body2Row.dateString(now: now)
 
-        debugPrint(#file, #function, headerString, body1String, body2String)
+//        debugPrint(#file, #function, headerString, body1String, body2String)
         return (headerString, body1String, body2String)
     } // func threeLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String, body2String:  String)
 
@@ -383,5 +385,23 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             return nil
         } // switch complication.family
     } // func getTimelineEntryForComplication(complication: CLKComplication, now: Date) -> CLKComplicationTimelineEntry?
-    
+
+    // MARK:  -
+
+    func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
+        let threeLineLargeRowsDescriptor = CLKComplicationDescriptor(
+            identifier: ASARowArrayKey.threeLineLarge.rawValue,
+            displayName: "3-line large",
+            supportedFamilies: [.modularLarge, .graphicRectangular])
+
+        let twoLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineSmall.rawValue, displayName: "2-line small", supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
+
+        let twoLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineLarge.rawValue, displayName: "2-line large", supportedFamilies: [.extraLarge])
+
+        let oneLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineSmall.rawValue, displayName: "1-line small", supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
+
+        let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineLarge.rawValue, displayName: "1-line large", supportedFamilies: [.utilitarianLarge])
+
+        handler([threeLineLargeRowsDescriptor, twoLineSmallRowsDescriptor, twoLineLargeRowsDescriptor, oneLineSmallRowsDescriptor, oneLineLargeRowsDescriptor])
+    }
 } // class ComplicationController: NSObject, CLKComplicationDataSource

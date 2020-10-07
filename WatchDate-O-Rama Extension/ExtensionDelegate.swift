@@ -14,25 +14,28 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     var session:  WCSession?
     public var complicationController = ComplicationController()
     
-        var locationManager = ASALocationManager.shared()
-        let notificationCenter = NotificationCenter.default
-        
-        
-        override init() {
-            super.init()
-            notificationCenter.addObserver(forName: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil, queue: nil, using: {notification
-                in
-                if notification.name.rawValue == UPDATED_LOCATION {
-                    // TODO:  Put in something to check if we need if something actually needs a refresh!
-                    if self.complicationController.complication != nil {
-                        CLKComplicationServer.sharedInstance().reloadTimeline(for: self.complicationController.complication!)
-                    }
+    var locationManager = ASALocationManager.shared()
+    let notificationCenter = NotificationCenter.default
+
+    let userData = ASAUserData.shared()
+
+    override init() {
+        super.init()
+        notificationCenter.addObserver(forName: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil, queue: nil, using: {notification
+            in
+            if notification.name.rawValue == UPDATED_LOCATION {
+                // TODO:  Put in something to check if we need if something actually needs a refresh!
+                if self.complicationController.complication != nil {
+                    CLKComplicationServer.sharedInstance().reloadTimeline(for: self.complicationController.complication!)
+                } else {
+                    debugPrint(#file, #function, "No complication!")
                 }
-            })
-        } // override init()
-        
-        deinit {
-            notificationCenter.removeObserver(self)
+            }
+        })
+    } // override init()
+
+    deinit {
+        notificationCenter.removeObserver(self)
     } // deinit
     
     public func requestComplicationData() {
@@ -105,28 +108,33 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     }
     
     fileprivate func handleMessage(_ message: [String : Any]) {
-        debugPrint(#file, #function, message)
+        //        debugPrint(#file, #function, message)
         
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
             for key in ASARowArrayKey.complicationSections() {
                 let value = message[key.rawValue]
-                if complicationController.complication != nil {
-                    var rowArray = complicationController.userData.rowArray(for:  complicationController.complication!.family)
-                    if value != nil {
-                        let valueAsArray = value! as! Array<Dictionary<String, Any>>
-                        for i in 0..<key.minimumNumberOfRows() {
-                            let newRow: ASARow = ASARow.newRow(dictionary: valueAsArray[i])
-                            rowArray?[i] = newRow
-                        } // for i in 0..<key.minimumNumberOfRows()
-                    }
-//                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
-                    ASAUserData.shared().savePreferences(code: .clocks)
+                //                if complicationController.complication != nil {
+                //                    var rowArray = self.userData.rowArray(for:  complicationController.complication!.family)
+                var rowArray = self.userData.rowArray(key: key)
+                if value != nil {
+                    let valueAsArray = value! as! Array<Dictionary<String, Any>>
+                    for i in 0..<key.minimumNumberOfRows() {
+                        let newRow: ASARow = ASARow.newRow(dictionary: valueAsArray[i])
+                        rowArray[i] = newRow
+                    } // for i in 0..<key.minimumNumberOfRows()
                 }
-            }
- 
+                //                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
+                userData.setRowArray(rowArray:  rowArray, key:  key)
+                //                }
+            } // for
+            ASAUserData.shared().savePreferences(code: .clocks)
+            ASAUserData.shared().savePreferences(code: .complications)
 
             if complicationController.complication != nil {
                 CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
+                debugPrint(#file, #function, "Updated complication \(String(describing: complicationController.complication?.identifier))", complicationController.complication?.identifier as Any)
+            } else {
+                debugPrint(#file, #function, "Could not update complication!  Complication is nil!")
             }
             //             TODO:  Figure out what went wrong
             
@@ -140,7 +148,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 }
                 DispatchQueue.main.async {
                     ASAUserData.shared().mainRows = mainRows
-//                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
+                    //                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
                     ASAUserData.shared().savePreferences(code: .clocks)
                 }
             }
@@ -170,8 +178,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     } // func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        debugPrint(#file, #function, message)
+        //        debugPrint(#file, #function, message)
         
         self.handleMessage(message)
     } // func session(_ session: WCSession, didReceiveMessage message: [String : Any])
+
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        //        debugPrint(#file, #function, userInfo)
+
+        self.handleMessage(userInfo)
+    }
 } // class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate
