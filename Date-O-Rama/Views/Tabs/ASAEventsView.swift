@@ -155,11 +155,6 @@ struct ASAEventsView: View {
                                     }
                                 }
                             }
-                            Button("🔃") {
-                                let tempRowUUIDString = self.settings.primaryRowUUIDString
-                                self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
-                                self.settings.secondaryRowUUIDString = tempRowUUIDString
-                            }
                         }
 
                         Toggle(isOn: $showingPreferences) {
@@ -167,6 +162,12 @@ struct ASAEventsView: View {
                         } // Toggle
 
                         if showingPreferences {
+                            Button("Swap clocks") {
+                                let tempRowUUIDString = self.settings.primaryRowUUIDString
+                                self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
+                                self.settings.secondaryRowUUIDString = tempRowUUIDString
+                            }
+                            
                             if self.enoughRowsToShowSecondaryDates() {
                                 Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
                                     ASAIndentedText(title: "Show secondary dates")

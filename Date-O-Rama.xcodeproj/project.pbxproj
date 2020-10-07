@@ -579,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				A506E3C5252C90FE009345A0 /* ASACalendarSymbol.swift */,
+				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
 				A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */,
@@ -592,7 +593,6 @@
 				A57BCCBA247D81A80019C02C /* Choosers */,
 				A57BCCAA247AA9290019C02C /* Tabs */,
 				A5152A042472BE0B0098A94B /* Wrappers */,
-				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
