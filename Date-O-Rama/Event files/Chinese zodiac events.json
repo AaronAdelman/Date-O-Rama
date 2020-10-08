@@ -3,9 +3,9 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "Chinese",
-    "calendarColorRed": 1.0,
-    "calendarColorGreen": 0.0,
-    "calendarColorBlue": 0.0,
+    "calendarColorRed": 0.8706,
+    "calendarColorGreen": 0.1608,
+    "calendarColorBlue": 0.0627,
     "calendarColorAlpha": 1.0,
     "eventSpecifications": [
         {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 1}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐀 Year of the Rat", "he": "🐀 שנת החולדה"}},
