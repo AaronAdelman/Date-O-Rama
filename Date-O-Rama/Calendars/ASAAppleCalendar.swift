@@ -313,8 +313,8 @@ class ASAAppleCalendar:  ASACalendar {
         case .calendar, .timeZone:
             return true
             
-        default:
-            return false
+//        default:
+//            return false
         } // switch calendarComponent
     } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
 } // class ASAAppleCalendar

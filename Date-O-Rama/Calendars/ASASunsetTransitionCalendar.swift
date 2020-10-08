@@ -291,7 +291,7 @@
             return "No location"
         }
 
-        let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+        let (fixedNow, _) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
 //        debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any)
 
@@ -330,7 +330,7 @@
         }
 
         let yesterday: Date = date.addingTimeInterval(-24 * 60 * 60)
-        let (fixedYesterday, transition) = yesterday.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
+        let (fixedYesterday, _) = yesterday.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
         let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
@@ -348,7 +348,7 @@
             return date.sixPM(timeZone: timeZone)
         }
 
-        let (fixedNow, transition) = date.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
+        let (fixedNow, _) = date.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
         let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
@@ -410,7 +410,7 @@
         }
 
         let calendar = self.ApplesCalendar
-        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
+        let (fixedDate, _) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
 
         return calendar.component(ApplesComponent!, from: fixedDate)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
@@ -425,7 +425,7 @@
             }
         } // for component in components
 
-        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
+        let (fixedDate, _) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
 
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
         let result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
