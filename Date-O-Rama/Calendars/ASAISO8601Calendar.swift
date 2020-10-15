@@ -101,21 +101,21 @@ class ASAISO8601Calendar:  ASACalendar {
     
     // MARK: -
     
-    var LDMLDetails: Array<ASALDMLDetail> {
-        get {
-            return [
-                ASALDMLDetail(name: "HEADER_y", geekCode: "yyyy"),
-                ASALDMLDetail(name: "HEADER_M", geekCode: "MM"),
-                ASALDMLDetail(name: "HEADER_d", geekCode: "dd"),
-                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-                ASALDMLDetail(name: "HEADER_w", geekCode: "ww"),
-                ASALDMLDetail(name: "HEADER_E", geekCode: "e"),
-                ASALDMLDetail(name: "HEADER_D", geekCode: "D")
-                //            ,
-                //            ASADetail(name: "HEADER_g", geekCode: "g")
-            ]
-        }
-    } // var LDMLDetails: Array<ASALDMLDetail>
+//    var LDMLDetails: Array<ASALDMLDetail> {
+//        get {
+//            return [
+//                ASALDMLDetail(name: "HEADER_y", geekCode: "yyyy"),
+//                ASALDMLDetail(name: "HEADER_M", geekCode: "MM"),
+//                ASALDMLDetail(name: "HEADER_d", geekCode: "dd"),
+//                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+//                ASALDMLDetail(name: "HEADER_w", geekCode: "ww"),
+//                ASALDMLDetail(name: "HEADER_E", geekCode: "e"),
+//                ASALDMLDetail(name: "HEADER_D", geekCode: "D")
+//                //            ,
+//                //            ASADetail(name: "HEADER_g", geekCode: "g")
+//            ]
+//        }
+//    } // var LDMLDetails: Array<ASALDMLDetail>
         
     var supportsLocales: Bool = false
     

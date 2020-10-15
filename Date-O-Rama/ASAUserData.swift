@@ -162,18 +162,18 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             return nil
         }
 
-        let possibility1Path = self.containerURL!.path + code.suffix
+        let possibilityPath = self.containerURL!.path + code.suffix
         do {
-        try FileManager.default.startDownloadingUbiquitousItem(at: URL(fileURLWithPath: possibility1Path))
+        try FileManager.default.startDownloadingUbiquitousItem(at: URL(fileURLWithPath: possibilityPath))
         } catch {
             debugPrint(#file, #function, "startDownloadingUbiquitousItem error:", error)
         }
-        let exists1 = FileManager.default.fileExists(atPath: possibility1Path)
-        if exists1 {
-            return possibility1Path
+        let exists = FileManager.default.fileExists(atPath: possibilityPath)
+        if exists {
+            return possibilityPath
         }
 
-        return possibility1Path
+        return possibilityPath
     } // func func preferencesFilePath(code:  ASAPreferencesFileCode) -> String?
 
     private func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool {

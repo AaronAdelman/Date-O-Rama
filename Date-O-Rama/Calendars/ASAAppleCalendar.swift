@@ -120,45 +120,45 @@ class ASAAppleCalendar:  ASACalendar {
         return "HH:mm:ss"
     } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     
-    var LDMLDetails: Array<ASALDMLDetail> {
-        get {
-            if self.calendarCode == .Chinese {
-                return [
-                    ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-                    ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-                    ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-                    ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-                    ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-                    ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                    ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-                    ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-                    ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-                    ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-                    ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-                    ASALDMLDetail(name: "HEADER_U", geekCode: "UUUU"),
-                    //                        ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
-                    //            ASADetail(name: "HEADER_g", geekCode: "g")
-                ]
-            }
-            
-            return [
-                ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-                ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-                ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-                ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-                ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-                ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-                ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-                ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-                ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-                ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-                //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-                //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
-                //            ASADetail(name: "HEADER_g", geekCode: "g")
-            ]
-        } // get
-    } // var LDMLDetails: Array<ASALDMLDetail>
+//    var LDMLDetails: Array<ASALDMLDetail> {
+//        get {
+//            if self.calendarCode == .Chinese {
+//                return [
+//                    ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+//                    ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+//                    ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+//                    ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+//                    ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+//                    ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+//                    ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+//                    ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+//                    ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+//                    ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+//                    ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+//                    ASALDMLDetail(name: "HEADER_U", geekCode: "UUUU"),
+//                    //                        ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
+//                    //            ASADetail(name: "HEADER_g", geekCode: "g")
+//                ]
+//            }
+//            
+//            return [
+//                ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+//                ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+//                ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+//                ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+//                ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+//                ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+//                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+//                ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+//                ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+//                ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+//                ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+//                //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+//                //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
+//                //            ASADetail(name: "HEADER_g", geekCode: "g")
+//            ]
+//        } // get
+//    } // var LDMLDetails: Array<ASALDMLDetail>
         
     var supportsLocales: Bool = true
     

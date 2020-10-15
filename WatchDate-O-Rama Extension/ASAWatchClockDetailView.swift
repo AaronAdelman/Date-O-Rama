@@ -58,15 +58,15 @@ struct ASAWatchClockDetailView: View {
                 }
             } // Section
             
-            if selectedRow.calendar.LDMLDetails.count > 0 {
-                Section(header:  Text("HEADER_Date")) {
-                    ForEach(selectedRow.LDMLDetails(), id: \.name) {
-                        detail
-                        in
-                        ASAClockDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
-                    }
-                } // Section
-            }
+//            if selectedRow.calendar.LDMLDetails.count > 0 {
+//                Section(header:  Text("HEADER_Date")) {
+//                    ForEach(selectedRow.LDMLDetails(), id: \.name) {
+//                        detail
+//                        in
+//                        ASAClockDetailCell(title: NSLocalizedString(detail.name, comment: ""), detail: self.selectedRow.dateTimeString(now: self.now, LDMLString: detail.geekCode))
+//                    }
+//                } // Section
+//            }
                         
             Section(header:  Text("HEADER_Other")) {
                 ASAClockDetailCell(title: NSLocalizedString("ITEM_NEXT_DATE_TRANSITION", comment: ""), detail: DateFormatter.localizedString(from: self.selectedRow.startOfNextDay(date: now), dateStyle: .full, timeStyle: .full))

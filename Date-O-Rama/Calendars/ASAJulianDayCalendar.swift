@@ -92,7 +92,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: .full)
     } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
-    var LDMLDetails: Array<ASALDMLDetail> = []
+//    var LDMLDetails: Array<ASALDMLDetail> = []
     
     var supportsLocales: Bool = true
     

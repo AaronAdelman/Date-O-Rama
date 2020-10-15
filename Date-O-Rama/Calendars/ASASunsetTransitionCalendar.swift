@@ -16,7 +16,11 @@
  public class ASASunsetTransitionCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode
 
-    var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
+    #if os(watchOS)
+    var defaultMajorDateFormat:  ASAMajorDateFormat = .short
+    #else
+    var defaultMajorDateFormat:  ASAMajorDateFormat = .full
+    #endif
 
     public var dateFormatter = DateFormatter()
 
@@ -232,24 +236,21 @@
         if location == nil {
             return "No location"
         }
-
-        let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
-        assert(fixedNow >= now)
-//        if timeZone!.identifier.contains("America/New_York") {
-//            debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any, "Time zone:", timeZone as Any)
-//        }
-
-        var timeString:  String = ""
-        if majorTimeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
-        }
-
         if localeIdentifier == "" {
             self.dateFormatter.locale = Locale.current
         } else {
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
         }
         self.dateFormatter.timeZone = timeZone
+
+        let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+        assert(fixedNow >= now)
+
+        var timeString:  String = ""
+        if majorTimeFormat != .none {
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
+        }
+
 
         switch majorDateFormat {
         case .localizedLDML:
@@ -291,6 +292,13 @@
             return "No location"
         }
 
+        if localeIdentifier == "" {
+            self.dateFormatter.locale = Locale.current
+        } else {
+            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
+        }
+        self.dateFormatter.timeZone = timeZone
+
         let (fixedNow, _) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
 //        debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any)
@@ -301,22 +309,22 @@
         return result
     } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
 
-    var LDMLDetails: Array<ASALDMLDetail> = [
-        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
-        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
-        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
-        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
-        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
-        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
-        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
-        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
-        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
-        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
-        //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
-        //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
-        //            ASADetail(name: "HEADER_g", geekCode: "g")
-    ]
+//    var LDMLDetails: Array<ASALDMLDetail> = [
+//        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
+//        ASALDMLDetail(name: "HEADER_y", geekCode: "y"),
+//        ASALDMLDetail(name: "HEADER_M", geekCode: "MMMM"),
+//        ASALDMLDetail(name: "HEADER_d", geekCode: "d"),
+//        ASALDMLDetail(name: "HEADER_E", geekCode: "eeee"),
+//        ASALDMLDetail(name: "HEADER_Q", geekCode: "QQQQ"),
+//        ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
+//        ASALDMLDetail(name: "HEADER_w", geekCode: "w"),
+//        ASALDMLDetail(name: "HEADER_W", geekCode: "W"),
+//        ASALDMLDetail(name: "HEADER_F", geekCode: "F"),
+//        ASALDMLDetail(name: "HEADER_D", geekCode: "D"),
+//        //            ASADetail(name: "HEADER_U", geekCode: "UUUU"),
+//        //            ASALDMLDetail(name: "HEADER_r", geekCode: "r"),
+//        //            ASADetail(name: "HEADER_g", geekCode: "g")
+//    ]
 
     public var supportsLocales: Bool = true
 
