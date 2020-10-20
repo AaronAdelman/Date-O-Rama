@@ -41,16 +41,19 @@ struct ASAClockCell: View {
                             Text(verbatim:  processedRow.dateString)
                                 .font(Font.headline.monospacedDigit())
                                 .multilineTextAlignment(.leading).lineLimit(2)
+                                .fixedSize(horizontal: false, vertical: true)
                         }
                         if shouldShowTime {
                             Text(verbatim:  processedRow.timeString ?? "")
                                 .font(Font.headline.monospacedDigit())
-                                .multilineTextAlignment(.leading).lineLimit(2)
+                                .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
+
                         }
                     } else if shouldShowFormattedDate {
                         Text(verbatim:  processedRow.dateString)
                             .font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)
+                            .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
+
                     }
                 }
             }
