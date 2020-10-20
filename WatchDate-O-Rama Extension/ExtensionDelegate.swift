@@ -113,8 +113,6 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
             for key in ASARowArrayKey.complicationSections() {
                 let value = message[key.rawValue]
-                //                if complicationController.complication != nil {
-                //                    var rowArray = self.userData.rowArray(for:  complicationController.complication!.family)
                 var rowArray = self.userData.rowArray(key: key)
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
@@ -123,9 +121,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                         rowArray[i] = newRow
                     } // for i in 0..<key.minimumNumberOfRows()
                 }
-                //                    ASAUserData.shared().saveRowArray(rowArray: rowArray!, key: key)
                 userData.setRowArray(rowArray:  rowArray, key:  key)
-                //                }
             } // for
             ASAUserData.shared().savePreferences(code: .clocks)
             ASAUserData.shared().savePreferences(code: .complications)
@@ -148,7 +144,6 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 }
                 DispatchQueue.main.async {
                     ASAUserData.shared().mainRows = mainRows
-                    //                    ASAUserData.shared().saveRowArray(rowArray: mainRows, key: .app)
                     ASAUserData.shared().savePreferences(code: .clocks)
                 }
             }

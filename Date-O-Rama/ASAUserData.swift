@@ -85,7 +85,6 @@ fileprivate let MAIN_ROWS_GROUPING_OPTION_KEY = "MAIN_ROWS_GROUPING_OPTION"
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
-
     private static var sharedUserData: ASAUserData = {
         let userData = ASAUserData()
         
@@ -95,6 +94,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     class func shared() -> ASAUserData {
         return sharedUserData
     } // class func shared() -> ASAUserData
+
+
+    // MARK:  -
     
     @Published var mainRows:  Array<ASARow> = []
 
@@ -116,6 +118,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     @Published var oneLineSmallRows:    Array<ASARow> = []
 
     var containerURL:  URL?
+
+
+    // MARK:  -
 
     class func ubiquityContainerURL() -> URL? {
         let result: URL? = FileManager.default.url(forUbiquityContainerIdentifier: nil)
@@ -177,6 +182,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // func func preferencesFilePath(code:  ASAPreferencesFileCode) -> String?
 
     private func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool {
+        #if os(watchOS)
+        let defaults = UserDefaults.standard
+        return defaults.object(forKey: code.suffix) != nil
+        #else
         if self.containerURL == nil {
             return false
         }
@@ -187,6 +196,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         let result = FileManager.default.fileExists(atPath: path!)
         return result
+        #endif
     } // func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool
     
      func rowArray(key:  ASARowArrayKey) -> Array<ASARow> {
@@ -222,13 +232,20 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     fileprivate func loadPreferences() {
         var genericSuccess = false
         var complicationsSuccess = false
-        
+        #if os(watchOS)
+        let defaults = UserDefaults.standard
+        #endif
+
         if preferenceFileExists(code: .clocks) {
             let path = self.preferencesFilePath(code: .clocks)
             
             debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
             do {
+                #if os(watchOS)
+                let data = defaults.object(forKey:  ASAPreferencesFileCode.clocks.suffix) as! Data
+                #else
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+                #endif
 //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
 //                debugPrint(#file, #function, jsonResult)
@@ -257,7 +274,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             let path = self.preferencesFilePath(code: .events)
             debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
             do {
+                #if os(watchOS)
+                let data = defaults.object(forKey:  ASAPreferencesFileCode.events.suffix) as! Data
+                #else
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+                #endif
 //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
 //                debugPrint(#file, #function, jsonResult)
@@ -282,7 +303,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 let path = self.preferencesFilePath(code: .complications)
                 debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
                 do {
+                    #if os(watchOS)
+                    let data = defaults.object(forKey:  ASAPreferencesFileCode.complications.suffix) as! Data
+                    #else
                     let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+                    #endif
 //                    debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                     let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
 //                    debugPrint(#file, #function, jsonResult)
@@ -339,15 +364,19 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // deinit
     
     fileprivate func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode) {
-        let data1a = (try? JSONSerialization.data(withJSONObject: dictionary, options: []))
+        let data = (try? JSONSerialization.data(withJSONObject: dictionary, options: []))
         //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
-        if data1a != nil {
-            do {
+        if data != nil {
+                #if os(watchOS)
+                let defaults = UserDefaults.standard
+                defaults.setValue(data, forKey: code.suffix)
+                #else
+                do {
                 let preferencesFilePath: String? = self.preferencesFilePath(code: code)
                 if preferencesFilePath != nil {
                     let url: URL = URL(fileURLWithPath: preferencesFilePath!)
 
-                    try data1a!.write(to: url, options: .atomic)
+                    try data!.write(to: url, options: .atomic)
 
                     // debugPrint(#file, #function, "Preferences successfully saved")
                 } else {
@@ -356,6 +385,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             } catch {
                 debugPrint(#file, #function, error)
             }
+                #endif
         } else {
             debugPrint(#file, #function, "Data is nil")
         }
