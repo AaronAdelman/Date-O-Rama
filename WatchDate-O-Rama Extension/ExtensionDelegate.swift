@@ -38,7 +38,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         notificationCenter.removeObserver(self)
     } // deinit
     
-    public func requestComplicationData() {
+    public func requestUserData() {
         debugPrint(#file, #function)
         
         if WCSession.isSupported() {
@@ -51,7 +51,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         } else {
             debugPrint(#file, #function, "WCsession is not supported")
         }
-    } // func requestComplicationData()
+    } // func requestUserData()
     
     
     func applicationDidFinishLaunching() {
@@ -66,10 +66,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 session?.activate()
             }
         }
+
+        self.requestUserData()
     }
     
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
+        self.requestUserData()
     }
     
     func applicationWillResignActive() {
@@ -169,7 +173,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         
         print("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
         
-        requestComplicationData()
+        requestUserData()
     } // func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {

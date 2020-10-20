@@ -23,10 +23,14 @@ struct ASAClockCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             if shouldShowCalendar {
+                #if os(watchOS)
+                Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                #else
                 HStack {
                     ASACalendarSymbol()
                     Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
                 }.frame(height: ROW_HEIGHT)
+                #endif
             }
 
             HStack {
@@ -56,13 +60,13 @@ struct ASAClockCell: View {
                     VStack(alignment: .leading) {
                         if processedRow.supportsTimeZones || processedRow.supportsLocations {
                             #if os(watchOS)
-                            VStack(alignment: .leading) {
+//                            VStack(alignment: .leading) {
                                 HStack {
                                     if processedRow.usesDeviceLocation {
                                         ASASmallLocationSymbol()
                                     }
-                                    Text(verbatim:  processedRow.emojiString)
-                                }
+//                                    Text(verbatim:  processedRow.emojiString)
+//                                }
                                 Text(processedRow.locationString).font(.subheadline)
                             }
                             #else
