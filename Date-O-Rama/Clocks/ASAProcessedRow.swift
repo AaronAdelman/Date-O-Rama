@@ -23,8 +23,14 @@ struct ASAProcessedRow {
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
-        self.dateString = row.dateString(now: now)
-        self.timeString = row.timeString(now: now)
+        self.canSplitTimeFromDate =  row.calendar.canSplitTimeFromDate
+        if self.canSplitTimeFromDate {
+            self.dateString = row.dateString(now: now)
+            self.timeString = row.timeString(now: now)
+        } else {
+            self.dateString = row.dateTimeString(now: now)
+            self.timeString = ""
+        }
         self.emojiString = row.emoji(date:  now)
         self.usesDeviceLocation = row.usesDeviceLocation
         var locationString = ""
@@ -36,7 +42,6 @@ struct ASAProcessedRow {
             locationString = row.locationData.formattedOneLineAddress
         }
         self.locationString = locationString
-        self.canSplitTimeFromDate =  row.calendar.canSplitTimeFromDate
         self.supportsTimeZones = row.calendar.supportsTimeZones
         self.supportsLocations = row.calendar.supportsLocations
     }
