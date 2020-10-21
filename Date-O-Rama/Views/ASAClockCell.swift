@@ -24,7 +24,7 @@ struct ASAClockCell: View {
         VStack(alignment: .leading) {
             if shouldShowCalendar {
                 #if os(watchOS)
-                Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
+                Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading)
                 #else
                 HStack {
                     ASACalendarSymbol()
