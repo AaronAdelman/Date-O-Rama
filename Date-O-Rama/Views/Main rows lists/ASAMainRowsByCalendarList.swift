@@ -61,6 +61,10 @@ struct ASAMainRowsByCalendarList:  View {
                     }
                 }
             }
+
+            #if os(watchOS)
+            Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+            #endif
         } // List
     } // var body
 } // struct ASAMainRowsByCalendarList

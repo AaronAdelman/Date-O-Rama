@@ -466,10 +466,10 @@
 		A5B8164B2541A3C500E309E0 /* Main rows lists */ = {
 			isa = PBXGroup;
 			children = (
-				A5B8162F2541A2D100E309E0 /* ASAPlainMainRowsList.swift */,
-				A5B816362541A30900E309E0 /* ASAMainRowsByFormattedDateList.swift */,
 				A5B8163D2541A37500E309E0 /* ASAMainRowsByCalendarList.swift */,
+				A5B816362541A30900E309E0 /* ASAMainRowsByFormattedDateList.swift */,
 				A5B816442541A3A200E309E0 /* ASAMainRowsByPlaceName.swift */,
+				A5B8162F2541A2D100E309E0 /* ASAPlainMainRowsList.swift */,
 			);
 			path = "Main rows lists";
 			sourceTree = "<group>";

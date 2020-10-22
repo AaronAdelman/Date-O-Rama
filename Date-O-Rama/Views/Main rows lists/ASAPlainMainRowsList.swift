@@ -73,6 +73,10 @@ struct ASAPlainMainRowsList:  View {
                 }
                 self.userData.savePreferences(code: .clocks)
             }
+
+            #if os(watchOS)
+            Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+            #endif
         } // List
     }
 } // struct ASAPlainMainRowsList:  View
