@@ -58,7 +58,7 @@ struct ASAWatchClocksView: View {
         }
         .onReceive(timer) { input in
             DispatchQueue.main.async {
-                debugPrint(#file, #function, "Timer signal recieved:", input)
+//                debugPrint(#file, #function, "Timer signal recieved:", input)
                 self.now = input
             }
         }
