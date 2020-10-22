@@ -43,13 +43,22 @@ struct ASAPlainMainRowsList:  View {
 
     var body: some View {
         List {
+            #if os(watchOS)
+
+            ForEach(self.processedRows, id:  \.row.uuid) {
+                processedRow
+                in
+                HStack {
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
+                    Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+                }
+            } // ForEach
+
+            #else
             ForEach(self.processedRows, id:  \.row.uuid) {
                 processedRow
                 in
 
-                #if os(watchOS)
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
-                #else
                 NavigationLink(destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
                                 .onReceive(processedRow.row.objectWillChange) { _ in
                                     // Clause based on https://troz.net/post/2019/swiftui-data-flow/
@@ -59,8 +68,6 @@ struct ASAPlainMainRowsList:  View {
                 ) {
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
                 }
-                #endif
-                
             } // ForEach
             .onMove { (source: IndexSet, destination: Int) -> Void in
                 self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
@@ -73,9 +80,6 @@ struct ASAPlainMainRowsList:  View {
                 }
                 self.userData.savePreferences(code: .clocks)
             }
-
-            #if os(watchOS)
-            Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             #endif
         } // List
     }

@@ -45,7 +45,10 @@ struct ASAMainRowsByPlaceName:  View {
                         in
 
                         #if os(watchOS)
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, INSET: INSET, shouldShowTime: true)
+                        HStack {
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, INSET: INSET, shouldShowTime: true)
+                            Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+                        }
                         #else
                         NavigationLink(
                             destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
@@ -61,10 +64,6 @@ struct ASAMainRowsByPlaceName:  View {
                     }
                 }
             }
-
-            #if os(watchOS)
-            Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-            #endif
         } // List
     } // var body
 } // struct ASAMainRowsByPlaceName

@@ -38,7 +38,10 @@ struct ASAMainRowsByFormattedDateList:  View {
                         in
 
                         #if os(watchOS)
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
+                        HStack {
+                            ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
+                            Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+                        }
                         #else
                         NavigationLink(
                             destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
@@ -55,10 +58,6 @@ struct ASAMainRowsByFormattedDateList:  View {
                     }
                 }
             } // ForEach
-
-            #if os(watchOS)
-            Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-            #endif
         } // List
     } // var body
 
