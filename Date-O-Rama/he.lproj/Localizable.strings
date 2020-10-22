@@ -244,16 +244,16 @@
 "Show secondary dates" = "הצג תאריכים שניים";
 "Today" = "היום";
 
-"Daily Jewish events"            = "✡ יהדות (יומיים)";
-"All-day Jewish events"          = "✡ יהדות (יום שלם)";
-"Jewish minor fasts"             = "✡ יהדות (תעניות קטנות)";
-"Israeli events"                 = "🇮🇱 ישראל";
-"Lubavitch events"               = "✡ חב״ד";
-"Solar events"                   = "☉ שמש";
-"Islamic holidays"               = "☪ אסלאם (יום שלם)";
-"Islamic holidays (civil)"       = "☪ אסלאם (יום שלם, אזרחי)";
-"Islamic holidays (tabular)"     = "☪ אסלאם (יום שלם, טבולאי)";
-"Islamic holidays (Umm Al-Qura)" = "☪ אסלאם (יום שלם, אום אל־קורה)";
+"Daily Jewish events"            = "יהדות (זמנים)";
+"All-day Jewish events"          = "יהדות";
+"Jewish minor fasts"             = "יהדות (תעניות קטנות)";
+"Israeli events"                 = "ישראל";
+"Lubavitch events"               = "חב״ד";
+"Solar events"                   = "שמש";
+"Islamic holidays"               = "אסלאם";
+"Islamic holidays (civil)"       = "אסלאם (אזרחי)";
+"Islamic holidays (tabular)"     = "אסלאם (טבולאי)";
+"Islamic holidays (Umm Al-Qura)" = "אסלאם (אום אל־קורה)";
 "Antisemitic events"             = "אנטישמיות";
 "Chinese zodiac events"          = "גלגל המזלות הסיני";
 
