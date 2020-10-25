@@ -42,7 +42,6 @@ struct ASAClockCell: View {
                         if processedRow.usesDeviceLocation {
                             ASASmallLocationSymbol()
                         }
-                        Text(verbatim:  processedRow.verticalEmojiString)
                     }
                 }
                 #endif

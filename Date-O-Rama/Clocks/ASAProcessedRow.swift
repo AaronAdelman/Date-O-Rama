@@ -56,14 +56,6 @@ struct ASAProcessedRow {
 } // struct ASAProcessedRow
 
 
-extension ASAProcessedRow {
-    var verticalEmojiString:  String {
-        get {
-            return "\(self.emojiString[0])\n\(self.emojiString[1])"
-        }
-    }
-}
-
 
 // MARK:  -
 

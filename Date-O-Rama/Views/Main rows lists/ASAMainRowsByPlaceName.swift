@@ -32,10 +32,7 @@ struct ASAMainRowsByPlaceName:  View {
                 key
                 in
                 Section(header: HStack {
-                    #if os(watchOS)
-                    #else
                     Text(self.processedRowsByPlaceName[key]![0].emojiString)
-                    #endif
                     Text("\(key)").font(Font.headline.monospacedDigit())
                         .multilineTextAlignment(.leading).lineLimit(2)
 
