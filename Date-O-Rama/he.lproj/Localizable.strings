@@ -33,10 +33,10 @@
 "LilianDate"            = "Lilian Date";
 "RataDie"               = "Rata Die";
 "HebrewSolar"           = "עברי (גר״א)";
-"IslamicSolar"          = "מוסלמי (יום מתחיל בשקיעה)";
-"IslamicCivilSolar"     = "מוסלמי אזרחי (יום מתחיל בשקיעה)";
-"IslamicTabularSolar"   = "מוסלמי טבלאי (יום מתחיל בשקיעה)";
-"IslamicUmmAlQuraSolar" = "מוסלמי אום אל-קורה (יום מתחיל בשקיעה)";
+"IslamicSolar"          = "מוסלמי";
+"IslamicCivilSolar"     = "מוסלמי אזרחי";
+"IslamicTabularSolar"   = "מוסלמי טבלאי";
+"IslamicUmmAlQuraSolar" = "מוסלמי אום אל-קורה";
 "HebrewSolarMA"         = "עברי (מגן אברהם)";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
