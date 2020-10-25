@@ -271,9 +271,13 @@ extension ASARow {
 
     public func shortenedDateString(now:  Date) -> String {
         let majorDateFormat: ASAMajorDateFormat = self.majorDateFormat.shortened
-        let majorTimeFormat: ASAMajorTimeFormat = .none
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
         return result
     } // func shortenedDateString(now:  Date) -> String
 
+    public func shortenedTimeString(now:  Date) -> String {
+        let majorTimeFormat: ASAMajorTimeFormat = self.majorTimeFormat.shortened
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+        return result
+    } // func shortenedTimeString(now:  Date) -> String
 } // extension ASARow
