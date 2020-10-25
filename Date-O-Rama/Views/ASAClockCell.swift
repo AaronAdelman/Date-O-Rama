@@ -80,14 +80,14 @@ struct ASAClockCell: View {
                 HStack {
                     VStack(alignment: .leading) {
                         if processedRow.supportsTimeZones || processedRow.supportsLocations {
-                            #if os(watchOS)
-                            HStack {
-                                if processedRow.usesDeviceLocation {
-                                    ASASmallLocationSymbol()
-                                }
-                                Text(processedRow.locationString).font(.subheadline)
-                            }
-                            #else
+//                            #if os(watchOS)
+//                            HStack {
+//                                if processedRow.usesDeviceLocation {
+//                                    ASASmallLocationSymbol()
+//                                }
+//                                Text(processedRow.locationString).font(.subheadline)
+//                            }
+//                            #else
                             HStack {
                                 Spacer().frame(width: self.INSET)
                                 if processedRow.usesDeviceLocation {
@@ -97,7 +97,7 @@ struct ASAClockCell: View {
 
                                 Text(processedRow.locationString).font(.subheadline)
                             } // HStack
-                            #endif
+//                            #endif
                         }
                     }
                 }
