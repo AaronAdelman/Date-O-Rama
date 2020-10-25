@@ -88,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
         }
         
         return temp
-    }
+    } // func rowArrayDictionary(key:  ASARowArrayKey) -> Array<Dictionary<String, Any>>
     
     public func sendUserData(_ session: WCSession) {
         debugPrint(#file, #function)
@@ -111,13 +111,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
             ASARowArrayKey.app.rawValue:  mainRowsTemp
             ] as [String : Any]
         
-        session.sendMessage(updateMessage, replyHandler: nil, errorHandler: nil)
-        session.transferCurrentComplicationUserInfo(updateMessage)
+//        session.sendMessage(updateMessage, replyHandler: nil, errorHandler: nil)
+//        session.transferCurrentComplicationUserInfo(updateMessage)
+
+        do {
+            try self.session.updateApplicationContext(updateMessage)
+        } catch {
+            debugPrint(#file, #function, error)
+        }
     } // func sendUserData(_ session: WCSession)
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         debugPrint(#file, #function, applicationContext)
-        self.sendUserData(session)
+//        self.sendUserData(session)
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {

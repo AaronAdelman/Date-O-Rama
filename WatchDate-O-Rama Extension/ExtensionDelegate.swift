@@ -186,5 +186,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         //        debugPrint(#file, #function, userInfo)
 
         self.handleMessage(userInfo)
-    }
+    } // func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:])
+
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        self.handleMessage(applicationContext)
+    } // func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any])
 } // class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate
