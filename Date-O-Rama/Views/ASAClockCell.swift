@@ -35,6 +35,18 @@ struct ASAClockCell: View {
 
             HStack {
                 Spacer().frame(width: self.INSET)
+
+                #if os(watchOS)
+                VStack {
+                    if !shouldShowPlaceName {
+                        if processedRow.usesDeviceLocation {
+                            ASASmallLocationSymbol()
+                        }
+                        Text(verbatim:  processedRow.verticalEmojiString)
+                    }
+                }
+                #endif
+                
                 VStack(alignment: .leading) {
                     if processedRow.canSplitTimeFromDate {
                         if shouldShowFormattedDate {
@@ -73,8 +85,8 @@ struct ASAClockCell: View {
 //                        #endif
 
                     }
-                }
-            }
+                } // VStack
+            } // HStack
 
             if shouldShowPlaceName {
                 HStack {
@@ -102,10 +114,13 @@ struct ASAClockCell: View {
                     }
                 }
             } else if processedRow.usesDeviceLocation {
+                #if os(watchOS)
+                #else
                 HStack {
                     Spacer().frame(width: self.INSET)
                     ASASmallLocationSymbol()
-                }
+                } // HStack
+                #endif
             }
         } // VStack
     } // var body
