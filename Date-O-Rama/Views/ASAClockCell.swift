@@ -71,6 +71,7 @@ struct ASAClockCell: View {
                             .font(Font.headline.monospacedDigit())
                             .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
 //                        #endif
+
                     }
                 }
             }
@@ -80,10 +81,10 @@ struct ASAClockCell: View {
                     VStack(alignment: .leading) {
                         if processedRow.supportsTimeZones || processedRow.supportsLocations {
                             #if os(watchOS)
-                                HStack {
-                                    if processedRow.usesDeviceLocation {
-                                        ASASmallLocationSymbol()
-                                    }
+                            HStack {
+                                if processedRow.usesDeviceLocation {
+                                    ASASmallLocationSymbol()
+                                }
                                 Text(processedRow.locationString).font(.subheadline)
                             }
                             #else

@@ -67,6 +67,29 @@ extension ASALocationData {
         } // get
     } // var formattedOneLineAddress
 
+    var shortFormattedOneLineAddress:  String {
+        get {
+            if self.locality != nil {
+                return self.locality!
+            }
+
+            if self.administrativeArea != nil {
+                return self.administrativeArea!            }
+
+            if self.country != nil {
+                return self.country!
+            }
+
+            if self.name != nil {
+                return self.name!
+            } else if self.location != nil {
+                return self.location!.humanInterfaceRepresentation
+            } else {
+                return "???"
+            }
+        } // get
+    } // var shortFormattedOneLineAddress
+
     var longFormattedOneLineAddress:  String {
         get {
             let separator = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")

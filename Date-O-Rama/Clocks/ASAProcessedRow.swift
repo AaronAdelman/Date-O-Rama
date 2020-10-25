@@ -39,7 +39,11 @@ struct ASAProcessedRow {
                 locationString = row.location!.humanInterfaceRepresentation
             }
         } else {
+            #if os(watchOS)
+            locationString = row.locationData.shortFormattedOneLineAddress
+            #else
             locationString = row.locationData.formattedOneLineAddress
+            #endif
         }
         self.locationString = locationString
         self.supportsTimeZones = row.calendar.supportsTimeZones
