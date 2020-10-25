@@ -251,9 +251,9 @@
             timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
         }
 
-
         switch majorDateFormat {
         case .localizedLDML:
+            self.dateFormatter.dateStyle = .short
             let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
             self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
 
