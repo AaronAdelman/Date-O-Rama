@@ -81,7 +81,6 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
 // MARK: -
 
 fileprivate let INTERNAL_EVENT_CALENDARS_KEY  = "INTERNAL_EVENT_CALENDARS"
-fileprivate let MAIN_ROWS_GROUPING_OPTION_KEY = "MAIN_ROWS_GROUPING_OPTION"
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
@@ -101,13 +100,13 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     @Published var mainRows:  Array<ASARow> = []
 
     var didBoot = false
-    @Published var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .plain {
-        didSet {
-            if didBoot {
-                self.savePreferences(code: .clocks)
-            }
-        }
-    }
+//    @Published var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .plain {
+//        didSet {
+//            if didBoot {
+//                self.savePreferences(code: .clocks)
+//            }
+//        }
+//    }
 
     @Published var internalEventCalendars:  Array<ASAInternalEventCalendar> = []
     
@@ -253,12 +252,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     // do stuff
 //                    debugPrint(#file, #function, jsonResult)
                     self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
-                    let rawMainRowsGroupingOption: AnyObject? = jsonResult[MAIN_ROWS_GROUPING_OPTION_KEY]
-                    if rawMainRowsGroupingOption != nil {
-                        self.mainRowsGroupingOption = ASAClocksViewGroupingOption.init(rawValue: rawMainRowsGroupingOption! as! String)!
-                    } else {
-                        self.mainRowsGroupingOption = .plain
-                    }
                     
                     genericSuccess = true
                 }
@@ -396,8 +389,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
 
             let temp1a: Dictionary<String, Any> = [
-                ASARowArrayKey.app.rawValue:  processedMainRows,
-                MAIN_ROWS_GROUPING_OPTION_KEY:  self.mainRowsGroupingOption.rawValue
+                ASARowArrayKey.app.rawValue:  processedMainRows
+//                ,
+//                MAIN_ROWS_GROUPING_OPTION_KEY:  self.mainRowsGroupingOption.rawValue
             ]
 
             writePreferences(temp1a, code: .clocks)

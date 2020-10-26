@@ -28,6 +28,8 @@ struct ASAClocksView: View {
         .southToNorth
     ]
 
+    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .plain
+
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     let INSET = 0.0 as CGFloat
@@ -37,13 +39,13 @@ struct ASAClocksView: View {
     var body: some View {
         NavigationView {
             Form {
-                Picker(selection: self.$userData.mainRowsGroupingOption, label: Text("Arrangement")) {
+                Picker(selection: self.$mainRowsGroupingOption, label: Text("Arrangement")) {
                     ForEach(self.groupingOptions, id:  \.self) {
                         Text($0.text())
                     }
                 }
 
-                switch self.userData.mainRowsGroupingOption {
+                switch self.mainRowsGroupingOption {
                 case .plain:
                     ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
 
@@ -57,7 +59,7 @@ struct ASAClocksView: View {
                     ASAMainRowsByPlaceName(rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                    ASAPlainMainRowsList(groupingOption: self.userData.mainRowsGroupingOption, rows: $userData.mainRows, now: $now, INSET: INSET)
+                    ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now, INSET: INSET)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
             .sheet(isPresented: self.$showingNewClockDetailView) {
@@ -72,7 +74,7 @@ struct ASAClocksView: View {
                 self.isNavBarHidden = false
             }
             .navigationBarItems(
-                leading: ASAConditionalEditButton(shouldShow: self.userData.mainRowsGroupingOption == .plain),
+                leading: ASAConditionalEditButton(shouldShow: self.mainRowsGroupingOption == .plain),
                 trailing: Button(
                     action: {
                         self.showingNewClockDetailView = true
