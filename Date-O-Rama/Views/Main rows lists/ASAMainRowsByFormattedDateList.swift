@@ -32,7 +32,8 @@ struct ASAMainRowsByFormattedDateList:  View {
                 key
                 in
                 Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)) {
+                            .minimumScaleFactor(0.5).lineLimit(1)
+                ) {
                     ForEach(self.processedRowsByFormattedDate[key]!, id:  \.row.uuid) {
                         processedRow
                         in

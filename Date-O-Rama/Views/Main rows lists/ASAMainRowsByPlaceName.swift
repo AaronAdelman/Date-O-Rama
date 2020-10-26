@@ -34,7 +34,7 @@ struct ASAMainRowsByPlaceName:  View {
                 Section(header: HStack {
                     Text(self.processedRowsByPlaceName[key]![0].emojiString)
                     Text("\(key)").font(Font.headline.monospacedDigit())
-                        .multilineTextAlignment(.leading).lineLimit(2)
+                        .minimumScaleFactor(0.5).lineLimit(1)
 
                 }) {
                     ForEach(self.processedRowsByPlaceName[key]!, id:  \.row.uuid) {

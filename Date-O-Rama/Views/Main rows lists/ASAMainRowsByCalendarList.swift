@@ -32,13 +32,12 @@ struct ASAMainRowsByCalendarList:  View {
                 key
                 in
                 Section(header:  HStack {
-                    #if os(watchOS)
-                    #else
-                    ASACalendarSymbol()
-                    #endif
-                    Text(verbatim: "\(key)").font(Font.headline.monospacedDigit())
-                        .multilineTextAlignment(.leading).lineLimit(2)
-                }) {
+                            #if os(watchOS)
+                            #else
+                            ASACalendarSymbol()
+                            #endif
+                            Text(verbatim: "\(key)").font(Font.headline.monospacedDigit())
+                                .minimumScaleFactor(0.5).lineLimit(1)                }) {
                     ForEach(self.processedRowsByCalendar[key]!, id:  \.row.uuid) {
                         processedRow
                         in
