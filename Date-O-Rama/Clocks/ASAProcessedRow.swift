@@ -25,9 +25,13 @@ struct ASAProcessedRow {
         self.calendarString = row.calendar.calendarCode.localizedName()
         self.canSplitTimeFromDate = row.calendar.canSplitTimeFromDate
         if self.canSplitTimeFromDate {
-            self.dateString = row.dateString(now: now)
             #if os(watchOS)
-            self.timeString = row.shortenedTimeString(now: now)
+            self.dateString = row.watchShortenedDateString(now: now)
+            #else
+            self.dateString = row.dateString(now: now)
+            #endif
+            #if os(watchOS)
+            self.timeString = row.watchShortenedTimeString(now: now)
             #else
             self.timeString = row.timeString(now: now)
             #endif

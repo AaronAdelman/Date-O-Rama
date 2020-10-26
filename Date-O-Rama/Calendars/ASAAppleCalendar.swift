@@ -65,7 +65,7 @@ class ASAAppleCalendar:  ASACalendar {
             
         case .short:
             self.dateFormatter.timeStyle = .short
-            
+
         default:
             self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
         } // switch majorTimeFormat
@@ -89,6 +89,18 @@ class ASAAppleCalendar:  ASACalendar {
             
         case .short:
             self.dateFormatter.dateStyle = .short
+
+        case .shortWithWeekday:
+            self.dateFormatter.dateStyle = .short
+            let alchemy = "E" + self.dateFormatter.dateFormat
+            let dateFormat = DateFormatter.dateFormat(fromTemplate:alchemy, options: 0, locale: self.dateFormatter.locale)!
+            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+
+        case .mediumWithWeekday:
+            self.dateFormatter.dateStyle = .medium
+            let alchemy = "E" + self.dateFormatter.dateFormat
+            let dateFormat = DateFormatter.dateFormat(fromTemplate:alchemy, options: 0, locale: self.dateFormatter.locale)!
+            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
             
         default:
             self.dateFormatter.dateStyle = .full
@@ -188,7 +200,9 @@ class ASAAppleCalendar:  ASACalendar {
         .full,
         .long,
         .medium,
+        .mediumWithWeekday,
         .short,
+        .shortWithWeekday,
         .localizedLDML
     ]
     
