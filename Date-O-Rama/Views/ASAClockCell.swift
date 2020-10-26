@@ -49,39 +49,43 @@ struct ASAClockCell: View {
                 VStack(alignment: .leading) {
                     if processedRow.canSplitTimeFromDate {
                         if shouldShowFormattedDate {
-//                            #if os(watchOS)
-//                            Text(verbatim:  processedRow.dateString)
-//                                .font(Font.subheadline.monospacedDigit())
-//                                .multilineTextAlignment(.leading).lineLimit(2)
-//                                .fixedSize(horizontal: false, vertical: true)
-//                            #else
+                            #if os(watchOS)
+                            Text(verbatim:  processedRow.dateString)
+                                .font(Font.headline.monospacedDigit())
+                                .minimumScaleFactor(0.5).lineLimit(1)
+                                .fixedSize(horizontal: false, vertical: true)
+                            #else
                             Text(verbatim:  processedRow.dateString)
                                 .font(Font.headline.monospacedDigit())
                                 .multilineTextAlignment(.leading).lineLimit(2)
                                 .fixedSize(horizontal: false, vertical: true)
-//                            #endif
+                            #endif
                         }
                         if shouldShowTime {
-//                            #if os(watchOS)
-//                            Text(verbatim:  processedRow.timeString ?? "")
-//                                .font(Font.subheadline.monospacedDigit())
-//                                .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
-//                            #else
+                            #if os(watchOS)
+                            Text(verbatim:  processedRow.timeString ?? "")
+                                .font(Font.subheadline.monospacedDigit())
+                                .minimumScaleFactor(0.5).lineLimit(1)
+                                .fixedSize(horizontal: false, vertical: true)
+                            #else
                             Text(verbatim:  processedRow.timeString ?? "")
                                 .font(Font.headline.monospacedDigit())
-                                .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
-//                            #endif
+                                .multilineTextAlignment(.leading).lineLimit(2)
+                                .fixedSize(horizontal: false, vertical: true)
+                            #endif
                         }
                     } else if shouldShowFormattedDate {
-//                        #if os(watchOS)
-//                        Text(verbatim:  processedRow.dateString)
-//                            .font(Font.subheadline.monospacedDigit())
-//                            .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
-//                        #else
+                        #if os(watchOS)
+                        Text(verbatim:  processedRow.dateString)
+                            .font(Font.subheadline.monospacedDigit())
+                            .minimumScaleFactor(0.5).lineLimit(1)
+                            .fixedSize(horizontal: false, vertical: true)
+                        #else
                         Text(verbatim:  processedRow.dateString)
                             .font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)  .fixedSize(horizontal: false, vertical: true)
-//                        #endif
+                            .multilineTextAlignment(.leading).lineLimit(2)
+                            .fixedSize(horizontal: false, vertical: true)
+                        #endif
 
                     }
                 } // VStack
