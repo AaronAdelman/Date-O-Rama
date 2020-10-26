@@ -35,24 +35,36 @@ struct ASAClockCell: View {
             HStack {
                 Spacer().frame(width: self.INSET)
 
-                #if os(watchOS)
-                if !shouldShowPlaceName {
-                    if processedRow.usesDeviceLocation {
-                        ASASmallLocationSymbol()
-                    }
-                }
-                #endif
-                
                 VStack(alignment: .leading) {
                     if processedRow.canSplitTimeFromDate {
                         if shouldShowFormattedDate {
                             ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
                         }
                         if shouldShowTime {
-                            ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.subheadline.monospacedDigit())
+                            HStack {
+                                #if os(watchOS)
+                                if !shouldShowPlaceName {
+                                    if processedRow.usesDeviceLocation {
+                                        ASASmallLocationSymbol()
+                                    }
+                                }
+                                #endif
+
+                                ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit())
+                            }
                         }
                     } else if shouldShowFormattedDate {
-                        ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                        HStack {
+                            #if os(watchOS)
+                            if !shouldShowPlaceName {
+                                if processedRow.usesDeviceLocation {
+                                    ASASmallLocationSymbol()
+                                }
+                            }
+                            #endif
+
+                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                        }
                     }
                 } // VStack
             } // HStack
