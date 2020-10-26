@@ -23,25 +23,22 @@ struct ASAClockCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             if shouldShowCalendar {
-                #if os(watchOS)
-                Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading)
-                #else
                 HStack {
+                    #if os(watchOS)
+                    #else
                     ASACalendarSymbol()
-                    Text(verbatim:  processedRow.calendarString).font(.subheadline).multilineTextAlignment(.leading).lineLimit(1)
-                }.frame(height: ROW_HEIGHT)
-                #endif
+                    #endif
+                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadline)
+                }
             }
 
             HStack {
                 Spacer().frame(width: self.INSET)
 
                 #if os(watchOS)
-                VStack {
-                    if !shouldShowPlaceName {
-                        if processedRow.usesDeviceLocation {
-                            ASASmallLocationSymbol()
-                        }
+                if !shouldShowPlaceName {
+                    if processedRow.usesDeviceLocation {
+                        ASASmallLocationSymbol()
                     }
                 }
                 #endif
@@ -49,44 +46,13 @@ struct ASAClockCell: View {
                 VStack(alignment: .leading) {
                     if processedRow.canSplitTimeFromDate {
                         if shouldShowFormattedDate {
-                            #if os(watchOS)
-                            Text(verbatim:  processedRow.dateString)
-                                .font(Font.headline.monospacedDigit())
-                                .minimumScaleFactor(0.5).lineLimit(1)
-                                .fixedSize(horizontal: false, vertical: true)
-                            #else
-                            Text(verbatim:  processedRow.dateString)
-                                .font(Font.headline.monospacedDigit())
-                                .multilineTextAlignment(.leading).lineLimit(2)
-                                .fixedSize(horizontal: false, vertical: true)
-                            #endif
+                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
                         }
                         if shouldShowTime {
-                            #if os(watchOS)
-                            Text(verbatim:  processedRow.timeString ?? "")
-                                .font(Font.subheadline.monospacedDigit())
-                                .minimumScaleFactor(0.5).lineLimit(1)
-                                .fixedSize(horizontal: false, vertical: true)
-                            #else
-                            Text(verbatim:  processedRow.timeString ?? "")
-                                .font(Font.headline.monospacedDigit())
-                                .multilineTextAlignment(.leading).lineLimit(2)
-                                .fixedSize(horizontal: false, vertical: true)
-                            #endif
+                            ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.subheadline.monospacedDigit())
                         }
                     } else if shouldShowFormattedDate {
-                        #if os(watchOS)
-                        Text(verbatim:  processedRow.dateString)
-                            .font(Font.subheadline.monospacedDigit())
-                            .minimumScaleFactor(0.5).lineLimit(1)
-                            .fixedSize(horizontal: false, vertical: true)
-                        #else
-                        Text(verbatim:  processedRow.dateString)
-                            .font(Font.headline.monospacedDigit())
-                            .multilineTextAlignment(.leading).lineLimit(2)
-                            .fixedSize(horizontal: false, vertical: true)
-                        #endif
-
+                        ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
                     }
                 } // VStack
             } // HStack
@@ -95,14 +61,6 @@ struct ASAClockCell: View {
                 HStack {
                     VStack(alignment: .leading) {
                         if processedRow.supportsTimeZones || processedRow.supportsLocations {
-//                            #if os(watchOS)
-//                            HStack {
-//                                if processedRow.usesDeviceLocation {
-//                                    ASASmallLocationSymbol()
-//                                }
-//                                Text(processedRow.locationString).font(.subheadline)
-//                            }
-//                            #else
                             HStack {
                                 Spacer().frame(width: self.INSET)
                                 if processedRow.usesDeviceLocation {
@@ -112,7 +70,6 @@ struct ASAClockCell: View {
 
                                 Text(processedRow.locationString).font(.subheadline)
                             } // HStack
-//                            #endif
                         }
                     }
                 }
@@ -128,6 +85,27 @@ struct ASAClockCell: View {
         } // VStack
     } // var body
 } // struct ASAClockCell
+
+
+struct ASAClockCellText:  View {
+    var string:  String
+    var font:  Font
+
+    var body: some View {
+        #if os(watchOS)
+        Text(verbatim:  string)
+            .font(font)
+            .minimumScaleFactor(0.5).lineLimit(1)
+            .fixedSize(horizontal: false, vertical: true)
+        #else
+        Text(verbatim:  string)
+            .font(font)
+            .multilineTextAlignment(.leading).lineLimit(2)
+            .fixedSize(horizontal: false, vertical: true)
+        #endif
+    } // var body
+} // struct ASAClockCellText
+
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
