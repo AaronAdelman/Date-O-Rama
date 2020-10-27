@@ -8,6 +8,7 @@
 
 import ClockKit
 import WatchKit
+import SwiftUI
 
 extension ASAUserData {
     func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>? {
@@ -272,56 +273,42 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func modularSmallTemplate(now:  Date) -> CLKComplicationTemplateModularSmallStackText {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
         let template = CLKComplicationTemplateModularSmallStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
-        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // func modularSmallTemplate(now:  Date) -> CLKComplicationTemplateModularSmallStackText
     
     func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody {
         let (headerString, body1String, body2String) = self.threeLineLargeRowStrings(now: now)
         let template = CLKComplicationTemplateModularLargeStandardBody(headerImageProvider: nil, headerTextProvider: CLKSimpleTextProvider(text: headerString), body1TextProvider: CLKSimpleTextProvider(text: body1String), body2TextProvider: CLKSimpleTextProvider(text:body2String))
-        //        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
-        //        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
-        //        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
         return template
     } // func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
-    func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularStandardBody {
+    func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularFullView<ASAThreeLinesLargeView> {
         let (headerString, body1String, body2String) = self.threeLineLargeRowStrings(now: now)
-        let template = CLKComplicationTemplateGraphicRectangularStandardBody(headerImageProvider: nil, headerTextProvider: CLKSimpleTextProvider(text: headerString), body1TextProvider: CLKSimpleTextProvider(text: body1String), body2TextProvider: CLKSimpleTextProvider(text:body2String))
-        //        template.headerTextProvider = CLKSimpleTextProvider(text: headerString)
-        //        template.body1TextProvider = CLKSimpleTextProvider(text: body1String)
-        //        template.body2TextProvider = CLKSimpleTextProvider(text:body2String)
+        let template = CLKComplicationTemplateGraphicRectangularFullView(ASAThreeLinesLargeView(line0: headerString, line1: body1String, line2: body2String))
         return template
-    } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
+    } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularFullView<ASAThreeLinesLargeView>
     
     func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
         let template = CLKComplicationTemplateCircularSmallStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
-        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText
     
     func extraLargeTemplate(now:  Date) -> CLKComplicationTemplateExtraLargeStackText {
         let (headerString, body1String) = self.twoLineLargeRowStrings(now: now)
         let template = CLKComplicationTemplateExtraLargeStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
-        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // func extraLargeTemplate(now:  Date) -> CLKComplicationTemplateExtraLargeStackText
     
     func utilitarianSmallTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianSmallFlat {
         let headerString = self.oneLineSmallRowString(now: now)
         let template = CLKComplicationTemplateUtilitarianSmallFlat(textProvider: CLKSimpleTextProvider(text: headerString), imageProvider: nil)
-        //        template.textProvider = CLKSimpleTextProvider(text: headerString)
         return template
     } // func utilitarianSmallTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianSmallFlat
 
     func utilitarianLargeTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianLargeFlat {
         let headerString = self.oneLineLargeRowString(now: now)
         let template = CLKComplicationTemplateUtilitarianLargeFlat(textProvider: CLKSimpleTextProvider(text: headerString), imageProvider: nil)
-        //        template.textProvider = CLKSimpleTextProvider(text: headerString)
         return template
     } // func utilitarianLargeTemplate(now:  Date) -> CLKComplicationTemplateUtilitarianLargeFlat
     
@@ -329,8 +316,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
 
         let template = CLKComplicationTemplateGraphicCircularStackText(line1TextProvider: CLKSimpleTextProvider(text: headerString), line2TextProvider: CLKSimpleTextProvider(text: body1String))
-        //        template.line1TextProvider = CLKSimpleTextProvider(text: headerString)
-        //        template.line2TextProvider = CLKSimpleTextProvider(text: body1String)
         return template
     } // // func graphicCircularTemplate(now:  Date) -> CLKComplicationTemplateGraphicCircularStackText
 
@@ -405,3 +390,18 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler([threeLineLargeRowsDescriptor, twoLineSmallRowsDescriptor, twoLineLargeRowsDescriptor, oneLineSmallRowsDescriptor, oneLineLargeRowsDescriptor])
     }
 } // class ComplicationController: NSObject, CLKComplicationDataSource
+
+
+struct ASAThreeLinesLargeView:  View {
+    var line0:  String
+    var line1:  String
+    var line2:  String
+
+    var body: some View {
+        VStack {
+            ASAClockCellText(string: line0, font: .headline)
+            ASAClockCellText(string: line1, font: .headline)
+            ASAClockCellText(string: line2, font: .headline)
+        } // VStack
+    }
+}
