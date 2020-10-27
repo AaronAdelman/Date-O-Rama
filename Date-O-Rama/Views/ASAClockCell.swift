@@ -99,26 +99,6 @@ struct ASAClockCell: View {
 } // struct ASAClockCell
 
 
-struct ASAClockCellText:  View {
-    var string:  String
-    var font:  Font
-
-    var body: some View {
-        #if os(watchOS)
-        Text(verbatim:  string)
-            .font(font)
-            .minimumScaleFactor(0.5).lineLimit(1)
-            .fixedSize(horizontal: false, vertical: true)
-        #else
-        Text(verbatim:  string)
-            .font(font)
-            .multilineTextAlignment(.leading).lineLimit(2)
-            .fixedSize(horizontal: false, vertical: true)
-        #endif
-    } // var body
-} // struct ASAClockCellText
-
-
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
         ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic(), now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: 20.0, shouldShowTime: true)

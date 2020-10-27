@@ -24,6 +24,8 @@ struct ASAIndentedText:  View {
 } // struct ASAIndentedText
 
 
+// MARK: -
+
 struct ASAEventsView: View {
     let ADD_EXTERNAL_EVENT_STRING = "Add external event"
 
@@ -93,7 +95,7 @@ struct ASAEventsView: View {
     var timeWidth:  CGFloat {
         get {
             if self.sizeClass! == .compact {
-                return 100.00
+                return  90.00
             } else {
                 return 120.00
             }
@@ -332,7 +334,7 @@ struct ASALinkedEventCell:  View {
                     Button(action:  {
                         self.showingEventView = true
                     }, label:  {
-                        Image(systemName: "info.circle.fill") .font(Font.system(.title))
+                        Image(systemName: "info.circle.fill") .font(Font.system(.title)).imageScale(.small)
                     })
                         .sheet(isPresented: $showingEventView) {
                             VStack {
@@ -354,7 +356,7 @@ struct ASALinkedEventCell:  View {
             }
         }
     }
-}
+} // struct ASALinkedEventCell
 
 
 // MARK: -
@@ -380,19 +382,20 @@ struct ASAEventCell:  View {
                 if self.sizeClass == .compact {
                     Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
                         .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
+                        .minimumScaleFactor(0.4)
                 } else {
                     Text(event.title).font(.headline).foregroundColor(Color(UIColor.label))
                         .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
+                        .minimumScaleFactor(0.4)
                 }
                 Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.secondaryLabel))
                     .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
+                    .minimumScaleFactor(0.4)
+                    .lineLimit(2)
             } // VStack
         } // HStack
     }
-}
+} // struct ASAEventCell
 
 
 // MARK: -
@@ -416,13 +419,10 @@ struct ASAAllDayTimesSubsubcell:  View {
                     .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
                     .allowsTightening(true)
                     .minimumScaleFactor(0.5)
-                //            } else {
-                //                Text("All day").frame(width:  timeWidth).font(timeFontSize)
-                //                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
             }
         }
     }
-}
+} // struct ASAAllDayTimesSubsubcell
 
 
 // MARK: -
@@ -460,4 +460,4 @@ struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
         ASAEventsView(settings: ASAUserSettings(), eventManager: ASAExternalEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
     }
-}
+} // struct ASAEventsView_Previews
