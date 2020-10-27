@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct ASAProcessedRow {
     var row:  ASARow
@@ -64,6 +65,27 @@ struct ASAProcessedRow {
     }
 } // struct ASAProcessedRow
 
+extension ASAProcessedRow {
+    var latitude:  CLLocationDegrees {
+        get {
+            if self.supportsLocations {
+                return self.row.locationData.location?.coordinate.latitude ?? 0.0
+            } else {
+                return 0.0
+            }
+        } // get
+    } // var latitude
+
+    var longitude:  CLLocationDegrees {
+        get {
+            if self.supportsLocations {
+                return self.row.locationData.location?.coordinate.longitude ?? 0.0
+            } else {
+                 return 0.0
+            }
+        } // get
+    } // var longitude
+} // extension ASAProcessedRow
 
 
 // MARK:  -
@@ -147,25 +169,33 @@ extension Array where Element == ASARow {
     } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
 
     func processedWestToEast(now:  Date) -> Array<ASAProcessedRow> {
-        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.longitude ?? 0.0 < $1.row.locationData.location?.coordinate.longitude ?? 0.0}
+        let processedRows = self.processed(now: now).sorted {
+            $0.longitude < $1.longitude
+        }
 
         return processedRows
     } // func processedWestToEast(now:  Date) -> Array<ASAProcessedRow>
 
     func processedEastToWest(now:  Date) -> Array<ASAProcessedRow> {
-        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.longitude ?? 0.0 > $1.row.locationData.location?.coordinate.longitude ?? 0.0}
+        let processedRows = self.processed(now: now).sorted {
+            $0.longitude > $1.longitude
+        }
 
         return processedRows
     } // func processedEastToWest(now:  Date) -> Array<ASAProcessedRow>
 
     func processedNorthToSouth(now:  Date) -> Array<ASAProcessedRow> {
-        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.latitude ?? 0.0 > $1.row.locationData.location?.coordinate.latitude ?? 0.0}
+        let processedRows = self.processed(now: now).sorted {
+            $0.latitude > $1.latitude
+        }
 
         return processedRows
     } // func processedNorthToSouth(now:  Date) -> Array<ASAProcessedRow>
 
     func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow> {
-        let processedRows = self.processed(now: now).sorted {$0.row.locationData.location?.coordinate.latitude ?? 0.0 < $1.row.locationData.location?.coordinate.latitude ?? 0.0}
+        let processedRows = self.processed(now: now).sorted {
+            $0.latitude < $1.latitude
+        }
 
         return processedRows
     } // func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow>
