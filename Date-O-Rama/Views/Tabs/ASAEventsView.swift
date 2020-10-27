@@ -383,6 +383,7 @@ struct ASAEventCell:  View {
                     Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
                         .allowsTightening(true)
                         .minimumScaleFactor(0.4)
+                        .lineLimit(3)
                 } else {
                     Text(event.title).font(.headline).foregroundColor(Color(UIColor.label))
                         .allowsTightening(true)
