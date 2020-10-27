@@ -53,13 +53,7 @@ class ASAJSONFileEventSource {
             for event in temp {
                 if event.relevant(startDate:  startDate, endDate:  endDate) && !result.contains(event) {
                     result.append(event)
-//                    if event.title.contains("🕯") {
-//                        debugPrint(#file, #function, "Period start date:", startDate, "Period end date:", endDate, "Title:", event.title ?? "No title", "Event start date:", event.startDate ?? "No start date", "Event end date:", event.endDate ?? "No end date", "Event is relevant")
-//                    }
                 } else {
-//                    if event.title.contains("🕯") {
-//                        debugPrint(#file, #function, "Period start date:", startDate, "Period end date:", endDate, "Title:", event.title ?? "No title", "Event start date:", event.startDate ?? "No start date", "Event end date:", event.endDate ?? "No end date", "Event is NOT relevant")
-//                    }
                 }
             } // for event in tempResult
             oldNow = now
@@ -321,12 +315,9 @@ class ASAJSONFileEventSource {
     } // func eventDetails(date:  Date, location:  locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
     
     func eventCalendarName(locationData:  ASALocationData) -> String {
-        let localizableTitle = self.eventsFile?.localizableTitle
-        if localizableTitle != nil {
-            return "\(NSLocalizedString(localizableTitle!, comment: "")) • \(locationData.formattedOneLineAddress)"
-        } else {
-            return "\(self.eventsFile?.title ?? "???") • \(locationData.formattedOneLineAddress)"
-        }
+        let localizableTitle = self.eventsFile?.localizableTitle ?? self.eventsFile?.title ?? "???"
+        let oneLineAddress = locationData.shortFormattedOneLineAddress
+        return "\(NSLocalizedString(localizableTitle, comment: "")) • \(oneLineAddress)"
     } // func eventCalendarName(locationData:  ASALocationData) -> String
     
     func eventSourceName() -> String {

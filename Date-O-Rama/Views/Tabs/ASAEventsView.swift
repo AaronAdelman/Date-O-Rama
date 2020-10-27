@@ -115,9 +115,7 @@ struct ASAEventsView: View {
     var body: some View {
         NavigationView {
             VStack {
-                ASADatePicker(date: $date, primaryRow: self.primaryRow
-//                              , showingDatePicker: false
-                )
+                ASADatePicker(date: $date, primaryRow: self.primaryRow)
 
                 Form {
                     Section {
@@ -251,39 +249,18 @@ struct ASADatePicker:  View {
 
         } // didSet
     } // var primaryRow
-//    @State var showingDatePicker:  Bool
-    
-//    #if os(iOS)
-//    #if targetEnvironment(macCatalyst)
-//    let runningOnIOS = false
-//    #else
-//    let runningOnIOS = true
-//    #endif
-//    #else
-//    let runningOnIOS = false
-//    #endif
-    
-//    let SPECIAL_SPACER_WIDTH = 80.0 as CGFloat
-    
+
     var body: some View {
         HStack {
-//            if runningOnIOS {
-//                Toggle(isOn: self.$showingDatePicker) {
-//                    Text("")
-//                }
-//                .frame(width:  SPECIAL_SPACER_WIDTH)
-//            }
-            
+
             Spacer()
             
-//            if !self.showingDatePicker || !runningOnIOS {
-                Button(action: {
-                    self.date = self.date.oneDayBefore
-                }) {
-                    Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
-                }
-//            }
-            
+            Button(action: {
+                self.date = self.date.oneDayBefore
+            }) {
+                Text("🔺").font(BOTTOM_BUTTONS_FONT_SIZE)
+            }
+
             
             Button(action: {
                 self.date = Date()
@@ -291,27 +268,18 @@ struct ASADatePicker:  View {
                 Text("Today").font(BOTTOM_BUTTONS_FONT_SIZE)
             }.foregroundColor(.accentColor)
             
-//            if !self.showingDatePicker || !runningOnIOS {
-                Button(action: {
-                    self.date = self.date.oneDayAfter
-                }) {
-                    Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
-                }
-//            }
-            
+            Button(action: {
+                self.date = self.date.oneDayAfter
+            }) {
+                Text("🔻").font(BOTTOM_BUTTONS_FONT_SIZE)
+            }
+
             Spacer()
 
-//            if self.showingDatePicker || !runningOnIOS {
-                DatePicker(selection:  self.$date, in:  Date.distantPast...Date.distantFuture, displayedComponents: .date) {
-                    Text("")
-                }
-                Spacer()
-//            }
-            
-//            if !self.showingDatePicker && runningOnIOS {
-//                Spacer().frame(width:  SPECIAL_SPACER_WIDTH)
-//            }
-
+            DatePicker(selection:  self.$date, in:  Date.distantPast...Date.distantFuture, displayedComponents: .date) {
+                Text("")
+            }
+            Spacer()
         }
         .border(Color.gray)
     } // var body
