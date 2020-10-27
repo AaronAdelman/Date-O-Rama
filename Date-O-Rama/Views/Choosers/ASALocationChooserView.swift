@@ -8,6 +8,7 @@
 
 import SwiftUI
 import CoreLocation
+import MapKit
 
 struct ASALocationChooserView: View {
     @ObservedObject var locatedObject:  ASALocatedObject
@@ -49,7 +50,7 @@ struct ASALocationChooserView: View {
                     }
                 } // Section
                 Section {
-                    MapView(coordinate: tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0))
+                    Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)))
                         .aspectRatio(1.0, contentMode: .fit)
                 } // Section
             }
