@@ -13,19 +13,19 @@ struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
     @ObservedObject var row:  ASALocatedObject
-
+    
     @State var tempLocaleIdentifier:  String
-
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
-
+    
     @State var providedLocaleIdentifiers:  Array<String>?
     
     let ALL_LOCALES            = 0
     let APPLE_LOCALES          = 1
     let USERS_LANGUAGE_LOCALES = 2
     let USERS_REGION_LOCALES   = 3
-
+    
     @State var selection = 0 // All locales
     
     func locales(option:  Int) -> Array<ASALocaleRecord> {
@@ -33,7 +33,7 @@ struct ASALocaleChooserView: View {
             let result: [ASALocaleRecord] = self.localeData.defaultLocaleRecords() +  self.localeData.sortedLocalizedRecords(identifiers:  providedLocaleIdentifiers!)
             return result
         }
-
+        
         switch selection {
         case ALL_LOCALES:
             return self.localeData.allRecords
@@ -55,34 +55,34 @@ struct ASALocaleChooserView: View {
     var body: some View {
         List {
             if providedLocaleIdentifiers == nil {
-            Picker(selection: $selection, label:
-                Text("Show locales:"), content: {
-                    Text("All locales").tag(ALL_LOCALES)
-                    Text("Apple locales").tag(APPLE_LOCALES)
-                    Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
-                    Text("User’s region locales").tag(USERS_REGION_LOCALES)
-            })
+                Picker(selection: $selection, label:
+                        Text("Show locales:"), content: {
+                            Text("All locales").tag(ALL_LOCALES)
+                            Text("Apple locales").tag(APPLE_LOCALES)
+                            Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
+                            Text("User’s region locales").tag(USERS_REGION_LOCALES)
+                        })
             }
-
+            
             ForEach(self.locales(option: selection)) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier)
             } // ForEach(localeData.records)
         } // List
-//            .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        //            .navigationBarTitle(Text(row.dateString(now: Date()) ))
         .navigationBarItems(trailing:
-            Button("Cancel", action: {
-                self.didCancel = true
-                self.presentationMode.wrappedValue.dismiss()
-            })
+                                Button("Cancel", action: {
+                                    self.didCancel = true
+                                    self.presentationMode.wrappedValue.dismiss()
+                                })
         )
-            .onAppear() {
-                self.tempLocaleIdentifier = self.row.localeIdentifier
+        .onAppear() {
+            self.tempLocaleIdentifier = self.row.localeIdentifier
         }
         .onDisappear() {
             if !self.didCancel {
                 self.row.localeIdentifier = self.tempLocaleIdentifier
-                }
             }
+        }
     } // var body
 } // struct ASALocalePickerView
 
@@ -90,10 +90,10 @@ struct ASALocaleCell: View {
     let localeString: String
     let localizedLocaleString:  String
     
-//    @ObservedObject var row:  ASARow
-//    @ObservedObject var row:  ASALocatedObject
+    //    @ObservedObject var row:  ASARow
+    //    @ObservedObject var row:  ASALocatedObject
     @Binding var tempLocaleIdentifier:  String
-
+    
     var body: some View {
         HStack {
             Text(verbatim: localeString.localeCountryCodeFlag())

@@ -10,78 +10,78 @@ import SwiftUI
 
 struct ASAPlainMainRowsList:  View {
     @EnvironmentObject var userData:  ASAUserData
-
+    
     var groupingOption:  ASAClocksViewGroupingOption
-
+    
     @Binding var rows:  Array<ASARow>
     var processedRows:  Array<ASAProcessedRow> {
         get {
             switch groupingOption {
             case .plain:
                 return rows.processed(now: now)
-
+                
             case .westToEast:
                 return rows.processedWestToEast(now: now)
-
+                
             case .eastToWest:
                 return rows.processedEastToWest(now: now)
-
+                
             case .northToSouth:
                 return rows.processedNorthToSouth(now: now)
-
+                
             case .southToNorth:
                 return rows.processedSouthToNorth(now: now)
-
+                
             default:
                 return rows.processed(now: now)
-            }
-
+            } // switch groupingOption
         } // get
     } // var processedRows
     @Binding var now:  Date
     var INSET:  CGFloat
-
+    
     var body: some View {
-        List {
-            #if os(watchOS)
-
-            ForEach(self.processedRows, id:  \.row.uuid) {
-                processedRow
-                in
-                HStack {
+        //        List {
+        #if os(watchOS)
+        
+        ForEach(self.processedRows, id:  \.row.uuid) {
+            processedRow
+            in
+            HStack {
                 ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
-                    Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-                }
-            } // ForEach
-
-            #else
-            ForEach(self.processedRows, id:  \.row.uuid) {
-                processedRow
-                in
-
-                NavigationLink(destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
-                                .onReceive(processedRow.row.objectWillChange) { _ in
-                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                    self.userData.objectWillChange.send()
-                                    self.userData.savePreferences(code: .clocks)
-                                }
-                ) {
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
-                }
-            } // ForEach
-            .onMove { (source: IndexSet, destination: Int) -> Void in
-                self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
-                self.userData.savePreferences(code: .clocks)
+                Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             }
-            .onDelete { indices in
-                indices.forEach {
-                    // debugPrint("\(#file) \(#function)")
-                    self.userData.mainRows.remove(at: $0)
-                }
-                self.userData.savePreferences(code: .clocks)
+        } // ForEach
+        
+        #else
+        
+        ForEach(self.processedRows, id:  \.row.uuid) {
+            processedRow
+            in
+            
+            NavigationLink(destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true)
+                            .onReceive(processedRow.row.objectWillChange) { _ in
+                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                self.userData.objectWillChange.send()
+                                self.userData.savePreferences(code: .clocks)
+                            }
+            ) {
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
             }
-            #endif
-        } // List
+        } // ForEach
+        .onMove { (source: IndexSet, destination: Int) -> Void in
+            self.userData.mainRows.move(fromOffsets: source, toOffset: destination)
+            self.userData.savePreferences(code: .clocks)
+        }
+        .onDelete { indices in
+            indices.forEach {
+                // debugPrint("\(#file) \(#function)")
+                self.userData.mainRows.remove(at: $0)
+            }
+            self.userData.savePreferences(code: .clocks)
+        }
+        #endif
+        //        } // List
     }
 } // struct ASAPlainMainRowsList:  View
 

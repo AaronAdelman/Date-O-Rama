@@ -93,42 +93,42 @@ struct ASACalendarChooserView: View {
     var body: some View {
         List {
             Picker(selection: $selection, label:
-                Text("Show calendars:")
-                , content: {
+                    Text("Show calendars:")
+                   , content: {
                     Text("All calendars").tag(ALL_CALENDARS)
                     Text("Apple calendars").tag(APPLE_CALENDARS)
                     Text("Solar calendars").tag(SOLAR_CALENDARS)
                     Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
                     Text("Lunar calendars").tag(LUNAR_CALENDARS)
                     Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
-            })
+                   })
             
             ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode
                 in
                 ASACalendarCell(calendarCode: calendarCode, selectedCalendarCode: self.$tempCalendarCode)
                     .onTapGesture {
-                    self.tempCalendarCode = calendarCode
-                }
+                        self.tempCalendarCode = calendarCode
+                    }
             }
         }
-//        .navigationBarTitle(Text(row.dateString(now: Date()) ))
+        //        .navigationBarTitle(Text(row.dateString(now: Date()) ))
         .navigationBarItems(trailing:
-            Button("Cancel", action: {
-                self.didCancel = true
-                self.presentationMode.wrappedValue.dismiss()
-            })
+                                Button("Cancel", action: {
+                                    self.didCancel = true
+                                    self.presentationMode.wrappedValue.dismiss()
+                                })
         )
-            .onAppear() {
-                self.tempCalendarCode = self.row.calendar.calendarCode
+        .onAppear() {
+            self.tempCalendarCode = self.row.calendar.calendarCode
         }
         .onDisappear() {
             if !self.didCancel {
                 self.row.calendar = ASACalendarFactory.calendar(code: self.tempCalendarCode)!
-                }
             }
         }
     }
+}
 
 
 struct ASACalendarCell: View {

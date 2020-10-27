@@ -20,8 +20,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-//        let contentView = ASAMainRowsView().environmentObject(ASAUserData())
-        let contentView = ASATabBarView()
+        let app = UIApplication.shared
+        let appDelegate = app.delegate as! AppDelegate
+        let userData = ASAUserData.shared()
+
+        let contentView = TabView {
+            ASAClocksView().environmentObject(userData)
+                .tabItem {
+                    Image(systemName: "clock")
+                    Text("CLOCKS_TAB")
+                }
+
+            ASAEventsView().environmentObject(userData)
+                .tabItem {
+                    Image(systemName: "rectangle")
+                    Text("EVENTS_TAB")
+                }
+
+            if appDelegate.session.isPaired {
+                ASAComplicationClocksView().environmentObject(userData)
+                    .tabItem {
+                        Image(systemName: "gear")
+                        Text("COMPLICATION_CLOCKS_TAB")
+                    }
+            }
+        }
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
