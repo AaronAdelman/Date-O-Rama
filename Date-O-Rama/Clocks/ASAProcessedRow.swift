@@ -40,8 +40,9 @@ struct ASAProcessedRow {
             self.dateString = row.dateTimeString(now: now)
             self.timeString = ""
         }
-        self.emojiString = row.emoji(date:  now)
-        if row.calendar.supportsLocations {
+        self.supportsLocations = row.calendar.supportsLocations
+        if self.supportsLocations {
+            self.emojiString = row.emoji(date:  now)
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
@@ -57,11 +58,11 @@ struct ASAProcessedRow {
             }
             self.locationString = locationString
         } else {
+            self.emojiString = "🇺🇳🕛"
             self.usesDeviceLocation = false
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
         self.supportsTimeZones = row.calendar.supportsTimeZones
-        self.supportsLocations = row.calendar.supportsLocations
     }
 } // struct ASAProcessedRow
 
