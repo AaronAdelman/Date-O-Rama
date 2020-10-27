@@ -9,8 +9,8 @@
 import Foundation
 import CoreLocation
 
-struct ASALocationData:  Equatable {
-    var uid = UUID()
+struct ASALocationData:  Equatable, Identifiable {
+    var id = UUID()
     var location:  CLLocation?
     var name:  String?
     var locality:  String?
@@ -30,7 +30,7 @@ struct ASALocationData:  Equatable {
 extension ASALocationData {
     static func create(placemark:  CLPlacemark?, location:  CLLocation?) -> ASALocationData {
         let usedLocation = location != nil ? location! : placemark?.location
-        let temp = ASALocationData(uid: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone)
+        let temp = ASALocationData(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocationData

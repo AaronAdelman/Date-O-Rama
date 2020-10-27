@@ -15,7 +15,13 @@ struct ASALocationChooserView: View {
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocationData> = []
     @State var tempLocationData:  ASALocationData = ASALocationData()
-    @State var tempUsesDeviceLocation: Bool = false
+    @State var tempUsesDeviceLocation: Bool = false {
+        didSet {
+            if tempUsesDeviceLocation == true {
+                tempLocationData = ASALocationManager.shared().locationData
+            }
+        } // didSet
+    } // var tempUsesDeviceLocation
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
@@ -40,30 +46,34 @@ struct ASALocationChooserView: View {
                     }) {Text("🔍").foregroundColor(.accentColor).bold()}
                 }
                 Section {
-                    ForEach(self.locationDataArray, id: \.uid) {
+                    ForEach(self.locationDataArray, id: \.id) {
                         locationData
                         in
                         ASALocationChooserViewCell(locationData: locationData, selectedLocationData: self.$tempLocationData)
                             .onTapGesture {
                                 self.tempLocationData = locationData
-                        }
+                            }
                     }
                 } // Section
-                Section {
-                    Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)))
-                        .aspectRatio(1.0, contentMode: .fit)
-                } // Section
             }
+            Section {
+                Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
+                    tempLocationData
+                    in
+                    MapPin(coordinate: tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0))
+                }
+                .aspectRatio(1.0, contentMode: .fit)
+            } // Section
         }
         .navigationBarItems(trailing:
-            Button("Cancel", action: {
-                self.didCancel = true
-                self.presentationMode.wrappedValue.dismiss()
-            })
+                                Button("Cancel", action: {
+                                    self.didCancel = true
+                                    self.presentationMode.wrappedValue.dismiss()
+                                })
         )
-            .onAppear() {
-                self.tempUsesDeviceLocation = self.locatedObject.usesDeviceLocation
-                self.tempLocationData = self.locatedObject.locationData
+        .onAppear() {
+            self.tempUsesDeviceLocation = self.locatedObject.usesDeviceLocation
+            self.tempLocationData = self.locatedObject.locationData
         }
         .onDisappear() {
             if !self.didCancel {
