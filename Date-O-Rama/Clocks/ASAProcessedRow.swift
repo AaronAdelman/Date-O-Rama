@@ -40,20 +40,25 @@ struct ASAProcessedRow {
             self.timeString = ""
         }
         self.emojiString = row.emoji(date:  now)
-        self.usesDeviceLocation = row.usesDeviceLocation
-        var locationString = ""
-        if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
-            if row.location != nil {
-                locationString = row.location!.humanInterfaceRepresentation
+        if row.calendar.supportsLocations {
+            self.usesDeviceLocation = row.usesDeviceLocation
+            var locationString = ""
+            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
+                if row.location != nil {
+                    locationString = row.location!.humanInterfaceRepresentation
+                }
+            } else {
+                #if os(watchOS)
+                locationString = row.locationData.shortFormattedOneLineAddress
+                #else
+                locationString = row.locationData.formattedOneLineAddress
+                #endif
             }
+            self.locationString = locationString
         } else {
-            #if os(watchOS)
-            locationString = row.locationData.shortFormattedOneLineAddress
-            #else
-            locationString = row.locationData.formattedOneLineAddress
-            #endif
+            self.usesDeviceLocation = false
+            self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
-        self.locationString = locationString
         self.supportsTimeZones = row.calendar.supportsTimeZones
         self.supportsLocations = row.calendar.supportsLocations
     }
@@ -77,15 +82,6 @@ extension Array where Element == ASARow {
         var result:  Array<ASAProcessedRow> = []
 
         for row in self {
-//            var locationString = ""
-//            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
-//                if row.location != nil {
-//                    locationString = row.location!.humanInterfaceRepresentation
-//                }
-//            } else {
-//                locationString = row.locationData.formattedOneLineAddress
-//            }
-//            let processedRow = ASAProcessedRow(row: row, calendarString: row.calendar.calendarCode.localizedName(), dateString: row.dateString(now: now), timeString: row.timeString(now: now), emojiString: row.emoji(date:  now), usesDeviceLocation: row.usesDeviceLocation, locationString: locationString, canSplitTimeFromDate: row.calendar.canSplitTimeFromDate, supportsTimeZones: row.calendar.supportsTimeZones, supportsLocations: row.calendar.supportsLocations)
             let processedRow = ASAProcessedRow(row: row, now: now)
             result.append(processedRow)
         }

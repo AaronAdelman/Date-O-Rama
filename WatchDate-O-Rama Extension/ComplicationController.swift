@@ -398,10 +398,10 @@ struct ASAThreeLinesLargeView:  View {
     var line2:  String
 
     var body: some View {
-        VStack {
+        VStack(alignment:  .center) {
             ASAClockCellText(string: line0, font: .headline)
             ASAClockCellText(string: line1, font: .headline)
             ASAClockCellText(string: line2, font: .headline)
         } // VStack
-    }
-}
+    } // var body
+} // struct ASAThreeLinesLargeView

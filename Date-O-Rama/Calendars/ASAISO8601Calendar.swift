@@ -136,9 +136,7 @@ class ASAISO8601Calendar:  ASACalendar {
     var supportsTimeZones: Bool = true
     
     var supportsLocations: Bool = false
-    
-    var supportsEventDetails: Bool = false
-    
+        
     var supportsTimes: Bool = true
     
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [

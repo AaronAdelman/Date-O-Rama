@@ -184,10 +184,8 @@ class ASAAppleCalendar:  ASACalendar {
     
     var supportsTimeZones: Bool = true
     
-    var supportsLocations: Bool = false
-    
-    var supportsEventDetails: Bool = false
-    
+    var supportsLocations: Bool = true
+        
     var supportsTimes: Bool = true
     
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [

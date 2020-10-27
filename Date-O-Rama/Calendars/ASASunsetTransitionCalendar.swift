@@ -377,8 +377,6 @@
 
     public var supportsLocations: Bool = true
 
-    public var supportsEventDetails: Bool = true
-
     public var supportsTimes: Bool = true
 
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [

@@ -128,9 +128,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsTimeZones: Bool = false
     
     var supportsLocations: Bool = false
-    
-    var supportsEventDetails: Bool = false
-    
+        
     var supportsTimes: Bool {
         get {
             switch self.calendarCode {

@@ -26,7 +26,6 @@ protocol ASACalendar {
 //    var LDMLDetails: Array<ASALDMLDetail> { get }
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> { get }
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> { get }
-    var supportsEventDetails: Bool { get }
     var supportsLocales: Bool { get }
     var supportsDateFormats: Bool { get }
     var supportsLocations: Bool { get }
