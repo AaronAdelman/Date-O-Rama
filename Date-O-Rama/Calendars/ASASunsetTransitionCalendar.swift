@@ -273,16 +273,10 @@
             self.dateFormatter.dateStyle = .short
 
         case .shortWithWeekday:
-            self.dateFormatter.dateStyle = .short
-            let alchemy = "E" + self.dateFormatter.dateFormat
-            let dateFormat = DateFormatter.dateFormat(fromTemplate:alchemy, options: 0, locale: self.dateFormatter.locale)!
-            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "E")
 
         case .mediumWithWeekday:
-            self.dateFormatter.dateStyle = .medium
-            let alchemy = "E" + self.dateFormatter.dateFormat
-            let dateFormat = DateFormatter.dateFormat(fromTemplate:alchemy, options: 0, locale: self.dateFormatter.locale)!
-            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "E")
 
         default:
             self.dateFormatter.dateStyle = .full
