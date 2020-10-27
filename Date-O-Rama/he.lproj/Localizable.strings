@@ -269,11 +269,11 @@
 
 "???" = "???";
 
-"modularLarge"     = "Three-line large complication rows";
-"modularSmall"     = "Two-line small complication rows";
-"extraLarge"       = "Two-line large complication rows";
-"utilitarianLarge" = "One-line large complication rows";
-"utilitarian"      = "One-line small complication rows";
+"modularLarge"     = "שורות תצוגות גדולות של 3 שורות";
+"modularSmall"     = "שורות תצוגות גדולות של 2 שורות";
+"extraLarge"       = "שורות תצוגות קטנות של 2 שורות";
+"utilitarianLarge" = "שורות תצוגות גדולות של שור 1";
+"utilitarian"      = "שורות תצוגות קטנות של שור 1";
 
 "Show calendars:"      = "הצג לוחות:";
 "All calendars"        = "כל לוחות";
