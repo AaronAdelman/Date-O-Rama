@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    @ObservedObject var appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -20,8 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let app = UIApplication.shared
-        let appDelegate = app.delegate as! AppDelegate
         let userData = ASAUserData.shared()
 
         let contentView = TabView {
@@ -40,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             if appDelegate.session.isPaired {
                 ASAComplicationClocksView().environmentObject(userData)
                     .tabItem {
-                        Image(systemName: "gear")
+                        Image(systemName: "applewatch.watchface")
                         Text("COMPLICATION_CLOCKS_TAB")
                     }
             }
