@@ -81,6 +81,7 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
 // MARK: -
 
 fileprivate let INTERNAL_EVENT_CALENDARS_KEY  = "INTERNAL_EVENT_CALENDARS"
+fileprivate let EXTERNAL_EVENT_CALENDARS_KEY  = "EXTERNAL_EVENT_CALENDARS"
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
@@ -99,16 +100,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     @Published var mainRows:  Array<ASARow> = []
 
-    var didBoot = false
-//    @Published var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .plain {
-//        didSet {
-//            if didBoot {
-//                self.savePreferences(code: .clocks)
-//            }
-//        }
-//    }
-
     @Published var internalEventCalendars:  Array<ASAInternalEventCalendar> = []
+    @Published var externalEventCalendarIdentifiers:  Array<String> = [] {
+        didSet {
+            ASAExternalEventManager.shared().reloadExternalCalendars(calendarIdentifiers: externalEventCalendarIdentifiers)
+        } // didSet
+    }
     
     @Published var threeLineLargeRows:  Array<ASARow> = []
     @Published var twoLineSmallRows:    Array<ASARow> = []
@@ -280,6 +277,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 //                    debugPrint(#file, #function, jsonResult)
                     //                    self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
                     self.internalEventCalendars = ASAUserData.internalEventCalendarArray(dictionary: jsonResult)
+                    self.externalEventCalendarIdentifiers = jsonResult[EXTERNAL_EVENT_CALENDARS_KEY] as! Array<String>
                     
                     genericSuccess = true
                 }
@@ -348,8 +346,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         NSFileCoordinator.addFilePresenter(self)
 
         self.loadPreferences()
-
-        self.didBoot = true
     } // init()
 
     deinit {
@@ -401,7 +397,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             let processedInternalEventCalendarArray = self.processedInternalEventCalendarArray(internalEventCalendarArray: self.internalEventCalendars)
 
             let temp1b: Dictionary<String, Any> = [
-                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray
+                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
+                EXTERNAL_EVENT_CALENDARS_KEY:  ASAExternalEventManager.shared().calendarIdentifiers
             ]
 
             writePreferences(temp1b, code: .events)

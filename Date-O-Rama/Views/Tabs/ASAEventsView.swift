@@ -38,7 +38,7 @@ struct ASAEventsView: View {
     @Environment(\.horizontalSizeClass) var sizeClass
 
     @State var showingPreferences:  Bool = false
-    @State private var showingNewInternalEventCalendarDetailView = false
+    @State private var showingEventCalendarChooserView = false
     
     var primaryRow:  ASARow {
         get {
@@ -178,11 +178,36 @@ struct ASAEventsView: View {
                                 ASAIndentedText(title: "Use external events")
                             } // Toggle
 
+                            #if targetEnvironment(macCatalyst)
+                            Button(action:
+                                    {
+                                        self.showingEventCalendarChooserView = true
+                                    }, label:  {
+                                        Text(NSLocalizedString("External event calendars", comment: ""))
+                                    })
+                                .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
+                                    ASAEKCalendarChooserView().frame(minWidth:  300, minHeight:  600)
+                                }
+                                .foregroundColor(.accentColor)
+                            #else
+                            Button(action:
+                                    {
+                                        self.showingEventCalendarChooserView = true
+                                    }, label:  {
+                                        Text(NSLocalizedString("External event calendars", comment: ""))
+                                    })
+                                .sheet(isPresented:  $showingEventCalendarChooserView) {
+                                    ASAEKCalendarChooserView().frame(minWidth:  300, minHeight:  600)
+                                }
+                                .foregroundColor(.accentColor)
+                            #endif
+
+
                             NavigationLink(destination:                             ASAInternalEventCalendarsView()
                             ) {
                                 ASAIndentedText(title: "Internal event calendars")
                             }
-                        }
+                        } // if showingPreferences
 
                         if settings.useExternalEvents {
                             #if targetEnvironment(macCatalyst)

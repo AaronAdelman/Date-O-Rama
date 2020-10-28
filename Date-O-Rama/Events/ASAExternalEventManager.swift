@@ -21,7 +21,28 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
     } // class func shared() -> ASAEventManager
     
     @Published var eventStore = EKEventStore()
+
+    public var calendarIdentifiers:  Array<String> {
+        get {
+            if calendars != nil {
+                return calendars!.map {$0.calendarIdentifier}
+            } else {
+                return []
+            }
+        } // get
+    } // var calendarIdentifiers
+
     @Published var calendars: [EKCalendar]?
+
+    public var calendarSet:  Set<EKCalendar> {
+        get {
+            var calendarSet = Set<EKCalendar>()
+            for calendar in self.calendars! {
+                calendarSet.insert(calendar)
+            } // for calendar in parent.calendarArray
+            return calendarSet
+        }
+    }
     
     override init() {
         super.init()
@@ -41,9 +62,25 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
     }
 
     func loadExternalCalendars() {
-        self.calendars = eventStore.calendars(for: EKEntityType.event)
+        let externalEventCalendarIdentifiers = ASAUserData.shared().externalEventCalendarIdentifiers
+        if externalEventCalendarIdentifiers.count == 0 {
+            self.calendars = eventStore.calendars(for: EKEntityType.event)
+        } else {
+            self.reloadExternalCalendars(calendarIdentifiers: externalEventCalendarIdentifiers)
+        }
 //        debugPrint(#file, #function, self.calendars as Any)
     } // func loadExternalCalendars()
+
+    func reloadExternalCalendars(calendarIdentifiers:  Array<String>) {
+        var temp:  Array<EKCalendar> = []
+        for identifier in calendarIdentifiers {
+            let calendar = self.eventStore.calendar(withIdentifier: identifier)
+            if calendar != nil {
+                temp.append(calendar!)
+            }
+        }
+        self.calendars = temp
+    } // func reloadExternalCalendars(calendarIdentifiers:  Array<String>)
     
     public func requestAccessToExternalCalendars() {
         eventStore.requestAccess(to: EKEntityType.event, completion: {

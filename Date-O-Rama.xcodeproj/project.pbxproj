@@ -14,6 +14,7 @@
 		A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
 		A506E3E5252C9405009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
 		A506E3EB252C940E009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
+		A506F6F42549850F00A04EE6 /* ASAEKCalendarChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506F6F32549850F00A04EE6 /* ASAEKCalendarChooserView.swift */; };
 		A5152A062472BE430098A94B /* ASAEKEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5152A052472BE420098A94B /* ASAEKEventView.swift */; };
 		A5152A0A247410EA0098A94B /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */; };
 		A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
@@ -211,6 +212,7 @@
 		A506E3C5252C90FE009345A0 /* ASACalendarSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSymbol.swift; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedRow.swift; sourceTree = "<group>"; };
+		A506F6F32549850F00A04EE6 /* ASAEKCalendarChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKCalendarChooserView.swift; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
 		A5152A052472BE420098A94B /* ASAEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventView.swift; sourceTree = "<group>"; };
 		A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
@@ -353,6 +355,7 @@
 		A5152A042472BE0B0098A94B /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
+				A506F6F32549850F00A04EE6 /* ASAEKCalendarChooserView.swift */,
 				A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */,
 				A5152A052472BE420098A94B /* ASAEKEventView.swift */,
 			);
@@ -918,6 +921,7 @@
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,
 				A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
+				A506F6F42549850F00A04EE6 /* ASAEKCalendarChooserView.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A584C8FD24B4FDC10014CE2E /* ASAInternalEventsFile.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
