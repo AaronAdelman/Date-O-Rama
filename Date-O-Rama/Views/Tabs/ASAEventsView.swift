@@ -166,6 +166,32 @@ struct ASAEventsView: View {
                             }
                         }
 
+                        if useExternalEvents {
+                            #if targetEnvironment(macCatalyst)
+                            Button(action:
+                                    {
+                                        self.showingEventEditView = true
+                                    }, label:  {
+                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
+                                    })
+                                .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                                }
+                                .foregroundColor(.accentColor)
+                            #else
+                            Button(action:
+                                    {
+                                        self.showingEventEditView = true
+                                    }, label:  {
+                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
+                                    })
+                                .sheet(isPresented:  $showingEventEditView) {
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                                }
+                                .foregroundColor(.accentColor)
+                            #endif
+                        }
+
                         Toggle(isOn: $showingPreferences) {
                             Text("Show preferences")
                         } // Toggle
@@ -217,32 +243,6 @@ struct ASAEventsView: View {
                                 ASAIndentedText(title: "Internal event calendars")
                             }
                         } // if showingPreferences
-
-                        if useExternalEvents {
-                            #if targetEnvironment(macCatalyst)
-                            Button(action:
-                                    {
-                                        self.showingEventEditView = true
-                                    }, label:  {
-                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
-                                    })
-                                .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                }
-                                .foregroundColor(.accentColor)
-                            #else
-                            Button(action:
-                                    {
-                                        self.showingEventEditView = true
-                                    }, label:  {
-                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
-                                    })
-                                .sheet(isPresented:  $showingEventEditView) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                }
-                                .foregroundColor(.accentColor)
-                            #endif
-                        }
                     }
 
                     Section {
