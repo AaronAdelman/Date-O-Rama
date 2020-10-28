@@ -28,6 +28,8 @@ struct ASAIndentedText:  View {
 
 struct ASAEventsView: View {
     let ADD_EXTERNAL_EVENT_STRING = "Add external event"
+    let FRAME_MIN_WIDTH:  CGFloat  = 300.0
+    let FRAME_MIN_HEIGHT:  CGFloat = 500.0
 
     @ObservedObject var settings = ASAUserSettings()
     
@@ -186,7 +188,7 @@ struct ASAEventsView: View {
                                         Text(NSLocalizedString("External event calendars", comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
-                                    ASAEKCalendarChooserView().frame(minWidth:  300, minHeight:  600)
+                                    ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                                 }
                                 .foregroundColor(.accentColor)
                             #else
@@ -197,7 +199,7 @@ struct ASAEventsView: View {
                                         Text(NSLocalizedString("External event calendars", comment: ""))
                                     })
                                 .sheet(isPresented:  $showingEventCalendarChooserView) {
-                                    ASAEKCalendarChooserView().frame(minWidth:  300, minHeight:  600)
+                                    ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                                 }
                                 .foregroundColor(.accentColor)
                             #endif
@@ -218,7 +220,7 @@ struct ASAEventsView: View {
                                         Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                                 }
                                 .foregroundColor(.accentColor)
                             #else
@@ -229,7 +231,7 @@ struct ASAEventsView: View {
                                         Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
                                     })
                                 .sheet(isPresented:  $showingEventEditView) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  300, minHeight:  600)
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                                 }
                                 .foregroundColor(.accentColor)
                             #endif
@@ -352,7 +354,7 @@ struct ASALinkedEventCell:  View {
                                     })
                                     Spacer().frame(width:  30)
                                 }
-                                ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  500)
+                                ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                             }
                     }.foregroundColor(.accentColor)
                     #else
