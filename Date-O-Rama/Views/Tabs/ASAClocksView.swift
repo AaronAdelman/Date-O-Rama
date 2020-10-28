@@ -45,6 +45,14 @@ struct ASAClocksView: View {
                     }
                 }
 
+                Button(
+                    action: {
+                        self.showingNewClockDetailView = true
+                    }
+                ) {
+                    Text("Add clock")
+                }
+
                 switch self.mainRowsGroupingOption {
                 case .plain:
                     ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
@@ -66,23 +74,23 @@ struct ASAClocksView: View {
                 ASANewClockDetailView()
             }
             .navigationBarTitle(Text("CLOCKS_TAB"))
-//            .navigationBarHidden(self.isNavBarHidden)
+            .navigationBarHidden(self.isNavBarHidden)
             .onAppear {
                 self.isNavBarHidden = true
             }
             .onDisappear {
                 self.isNavBarHidden = false
             }
-            .navigationBarItems(
-                leading: ASAConditionalEditButton(shouldShow: self.mainRowsGroupingOption == .plain),
-                trailing: Button(
-                    action: {
-                        self.showingNewClockDetailView = true
-                    }
-                ) {
-                    Text("Add clock")
-                }
-            )
+//            .navigationBarItems(
+//                leading: ASAConditionalEditButton(shouldShow: self.mainRowsGroupingOption == .plain),
+//                trailing: Button(
+//                    action: {
+//                        self.showingNewClockDetailView = true
+//                    }
+//                ) {
+//                    Text("Add clock")
+//                }
+//            )
 
         }.navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in
