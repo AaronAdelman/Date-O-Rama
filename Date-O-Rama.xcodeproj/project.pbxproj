@@ -26,7 +26,6 @@
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
-		A5622E24246DA597008E5C2D /* ASAUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5622E23246DA597008E5C2D /* ASAUserSettings.swift */; };
 		A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566F4442483D6E6000A05B5 /* Interface.storyboard */; };
@@ -45,7 +44,6 @@
 		A566F4712483D7CF000A05B5 /* ASALocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocationData.swift */; };
 		A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
-		A566F4742483D7CF000A05B5 /* ASAUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5622E23246DA597008E5C2D /* ASAUserSettings.swift */; };
 		A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
 		A566F4772483D7CF000A05B5 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
@@ -227,7 +225,6 @@
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
-		A5622E23246DA597008E5C2D /* ASAUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserSettings.swift; sourceTree = "<group>"; };
 		A564C13F2548731B000F2CDF /* ASAClockCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellText.swift; sourceTree = "<group>"; };
 		A566F4422483D6E6000A05B5 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -551,7 +548,6 @@
 				A57BCCB0247BBDC20019C02C /* ASALocationData.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
-				A5622E23246DA597008E5C2D /* ASAUserSettings.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
 				A5BDB7CE244DAE3E0027704F /* Calendars */,
 				A57BCCAB247BB3440019C02C /* Clocks */,
@@ -846,7 +842,6 @@
 				A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */,
 				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
 				A566F4842483D7CF000A05B5 /* ASAInternalEventCalendarFactory.swift in Sources */,
-				A566F4742483D7CF000A05B5 /* ASAUserSettings.swift in Sources */,
 				A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
@@ -888,7 +883,6 @@
 			files = (
 				A5B8163E2541A37500E309E0 /* ASAMainRowsByCalendarList.swift in Sources */,
 				A57BCCB1247BBDC20019C02C /* ASALocationData.swift in Sources */,
-				A5622E24246DA597008E5C2D /* ASAUserSettings.swift in Sources */,
 				A57BCCB9247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,

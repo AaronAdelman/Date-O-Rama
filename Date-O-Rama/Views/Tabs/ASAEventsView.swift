@@ -31,8 +31,6 @@ struct ASAEventsView: View {
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
 
-    @ObservedObject var settings = ASAUserSettings()
-    
     @ObservedObject var eventManager = ASAExternalEventManager.shared()
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
@@ -44,22 +42,24 @@ struct ASAEventsView: View {
     
     var primaryRow:  ASARow {
         get {
-            let result: ASARow = settings.primaryRowUUIDString.row(backupIndex: 0)
+            let result: ASARow = primaryRowUUIDString.row(backupIndex: 0)
+            self.primaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
             return result
         } // get
         set {
-            settings.primaryRowUUIDString = newValue.uuid.uuidString
+            primaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var primaryRow:  ASARow
     var secondaryRow:  ASARow {
         get {
-            let result: ASARow = settings.secondaryRowUUIDString.row(backupIndex: 1)
+            let result: ASARow = secondaryRowUUIDString.row(backupIndex: 1)
+            self.secondaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
             return result
         } // get
         set {
-            settings.secondaryRowUUIDString = newValue.uuid.uuidString
+            secondaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var secondaryRow
 
@@ -75,10 +75,17 @@ struct ASAEventsView: View {
             return result
         }
     }
+
+    @AppStorage("SHOULD_SHOW_SECONDARY_DATES_KEY") var eventsViewShouldShowSecondaryDates: Bool = true
+
+    @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
+    @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
+
+    @AppStorage("USE_EXTERNAL_EVENTS") var useExternalEvents: Bool = true
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        if settings.useExternalEvents {
+        if useExternalEvents {
             let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
             unsortedEvents = unsortedEvents + externalEvents
         }
@@ -123,7 +130,7 @@ struct ASAEventsView: View {
 
                 Form {
                     Section {
-                        NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.primaryRowUUIDString)) {
+                        NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $primaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
                                 Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
                                 if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
@@ -138,8 +145,8 @@ struct ASAEventsView: View {
                             }
                         }
 
-                        if settings.eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
-                            NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $settings.secondaryRowUUIDString)) {
+                        if eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
+                            NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $secondaryRowUUIDString)) {
                                 VStack(alignment:  .leading) {
                                     if self.shouldHideTimesInSecondaryRow {
                                         Text(verbatim: secondaryRow.dateString(now: date)).font(.system(size: SECONDARY_ROW_FONT_SIZE))
@@ -165,18 +172,18 @@ struct ASAEventsView: View {
 
                         if showingPreferences {
                             Button("Swap clocks") {
-                                let tempRowUUIDString = self.settings.primaryRowUUIDString
-                                self.settings.primaryRowUUIDString = self.settings.secondaryRowUUIDString
-                                self.settings.secondaryRowUUIDString = tempRowUUIDString
+                                let tempRowUUIDString = self.primaryRowUUIDString
+                                self.primaryRowUUIDString = self.secondaryRowUUIDString
+                                self.secondaryRowUUIDString = tempRowUUIDString
                             }
                             
                             if self.enoughRowsToShowSecondaryDates() {
-                                Toggle(isOn: $settings.eventsViewShouldShowSecondaryDates) {
+                                Toggle(isOn: $eventsViewShouldShowSecondaryDates) {
                                     ASAIndentedText(title: "Show secondary dates")
                                 }
                             }
 
-                            Toggle(isOn: $settings.useExternalEvents) {
+                            Toggle(isOn: $useExternalEvents) {
                                 ASAIndentedText(title: "Use external events")
                             } // Toggle
 
@@ -211,7 +218,7 @@ struct ASAEventsView: View {
                             }
                         } // if showingPreferences
 
-                        if settings.useExternalEvents {
+                        if useExternalEvents {
                             #if targetEnvironment(macCatalyst)
                             Button(action:
                                     {
@@ -242,7 +249,7 @@ struct ASAEventsView: View {
                         ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                             event
                             in
-                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.settings.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
+                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
                         } // ForEach
                     }
                 } // Form
@@ -486,6 +493,6 @@ struct ASAStartAndEndTimesSubcell:  View {
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsView(settings: ASAUserSettings(), eventManager: ASAExternalEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
+        ASAEventsView(eventManager: ASAExternalEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
     }
 } // struct ASAEventsView_Previews
