@@ -81,22 +81,22 @@ class ASAISO8601Calendar:  ASACalendar {
         return dateString
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-        
-        self.dateFormatter.locale = Locale(identifier: "en_UK")
-        
-        self.dateFormatter.dateFormat = LDMLString
-        
-        if timeZone == nil {
-            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
-            self.ISODateFormatter.timeZone = timeZone
-        }
-        
-        let result = self.dateFormatter.string(from: now)
-        
-        return result
-    } // func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?) -> String
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+//        
+//        self.dateFormatter.locale = Locale(identifier: "en_UK")
+//        
+//        self.dateFormatter.dateFormat = LDMLString
+//        
+//        if timeZone == nil {
+//            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
+//        } else {
+//            self.ISODateFormatter.timeZone = timeZone
+//        }
+//        
+//        let result = self.dateFormatter.string(from: now)
+//        
+//        return result
+//    } // func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?) -> String
     
     
     // MARK: -

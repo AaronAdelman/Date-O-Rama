@@ -88,9 +88,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: majorTimeFormat)
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: .full)
-    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+//        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: .full)
+//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
 //    var LDMLDetails: Array<ASALDMLDetail> = []
     

@@ -293,27 +293,27 @@
         }
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
 
-    public func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
-        if location == nil {
-            return "No location"
-        }
-
-        if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.current
-        } else {
-            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-        }
-        self.dateFormatter.timeZone = timeZone
-
-        let (fixedNow, _) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
-        assert(fixedNow >= now)
-//        debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any)
-
-        self.dateFormatter.dateFormat = LDMLString
-        let result = self.dateFormatter.string(from: fixedNow)
-
-        return result
-    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
+//    public func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+//        if location == nil {
+//            return "No location"
+//        }
+//
+//        if localeIdentifier == "" {
+//            self.dateFormatter.locale = Locale.current
+//        } else {
+//            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
+//        }
+//        self.dateFormatter.timeZone = timeZone
+//
+//        let (fixedNow, _) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+//        assert(fixedNow >= now)
+////        debugPrint(#file, #function, "Now:", now, "Fixed now:", fixedNow, "Transition:", transition as Any)
+//
+//        self.dateFormatter.dateFormat = LDMLString
+//        let result = self.dateFormatter.string(from: fixedNow)
+//
+//        return result
+//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
 
 //    var LDMLDetails: Array<ASALDMLDetail> = [
 //        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),

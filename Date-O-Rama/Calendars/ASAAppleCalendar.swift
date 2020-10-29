@@ -103,20 +103,20 @@ class ASAAppleCalendar:  ASACalendar {
         return self.dateFormatter.string(from: now)
     } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
-    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-        // TODO:  Update when times are supported!
-        
-        self.dateFormatter.dateFormat = LDMLString
-        if timeZone == nil {
-            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
-            self.dateFormatter.timeZone = timeZone
-        }
-        
-        let result = self.dateFormatter.string(from: now)
-        
-        return result
-    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+//        // TODO:  Update when times are supported!
+//        
+//        self.dateFormatter.dateFormat = LDMLString
+//        if timeZone == nil {
+//            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
+//        } else {
+//            self.dateFormatter.timeZone = timeZone
+//        }
+//        
+//        let result = self.dateFormatter.string(from: now)
+//        
+//        return result
+//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
     func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
         return "eee, d MMM y"

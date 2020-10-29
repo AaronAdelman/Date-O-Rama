@@ -236,9 +236,9 @@ extension ASARow {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date) -> String
 
-    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
-    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
+//    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
+//        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
+//    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
 
 //    public func LDMLDetails() -> Array<ASALDMLDetail> {
 //        return self.calendar.LDMLDetails
