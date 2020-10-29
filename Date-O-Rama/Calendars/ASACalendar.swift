@@ -10,10 +10,10 @@ import Foundation
 import CoreLocation
 import UIKit
 
-struct ASALDMLDetail {
-    var name:  String
-    var geekCode:  String
-} // struct ASADetail
+//struct ASALDMLDetail {
+//    var name:  String
+//    var geekCode:  String
+//} // struct ASADetail
 
 
 // MARK: -
