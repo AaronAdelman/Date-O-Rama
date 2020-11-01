@@ -21,6 +21,8 @@ struct ASAClockCell: View {
     let ROW_HEIGHT = 30.0 as CGFloat
 
     var body: some View {
+        HStack {
+
         VStack(alignment: .leading) {
             if shouldShowCalendar {
                 HStack {
@@ -67,15 +69,6 @@ struct ASAClockCell: View {
                         }
                     }
                 } // VStack
-
-                #if os(watchOS)
-                #else
-                if shouldShowTime {
-                    Spacer()
-                    
-                    ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth)
-                }
-                #endif
             } // HStack
 
             if shouldShowPlaceName {
@@ -104,6 +97,16 @@ struct ASAClockCell: View {
                 #endif
             }
         } // VStack
+
+            #if os(watchOS)
+            #else
+            if shouldShowTime {
+                Spacer()
+
+                ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth)
+            }
+            #endif
+        } // HStack
     } // var body
 } // struct ASAClockCell
 

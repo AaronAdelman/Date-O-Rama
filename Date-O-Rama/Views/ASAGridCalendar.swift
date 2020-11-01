@@ -23,16 +23,11 @@ struct ASAOrdinaryCell:  View {
     var font:  Font
 
     var body: some View {
-        //        ZStack {
-        //            Rectangle()
-        //                .aspectRatio(1.0, contentMode: .fill)
-        //                .foregroundColor(Color(red: 255.0/255.0, green: 247.0/255.0, blue: 223.0/255.0))
-        //                .shadow(color: .black, radius: 1.0, x: 1.0, y: 1.0)
         Text("\(number)")
             .font(font)
-            .aspectRatio(1.0, contentMode: .fill)
-        //            .foregroundColor(Color(red: 255.0/255.0, green: 247.0/255.0, blue: 223.0/255.0))
-        //        }
+            .foregroundColor(.primary)
+            .minimumScaleFactor(0.5)
+            .lineLimit(1)
     } // var body
 } // struct ASAOrdinaryCell
 
@@ -41,18 +36,13 @@ struct ASAAccentedCell:  View {
     var font:  Font
 
     var body: some View {
-        //        ZStack {
-        //            Rectangle()
-        //                .aspectRatio(1.0, contentMode: .fill)
-        //                .foregroundColor(.accentColor)
-        //                .shadow(color: .black, radius: 1.0, x: 1.0, y: 1.0)
         Text("\(number)")
             .font(font)
             .bold()
-            //                .foregroundColor(.white)
-            .aspectRatio(1.0, contentMode: .fill)
-        //            .foregroundColor(.accentColor)
-        //        }
+            .underline()
+            .foregroundColor(.accentColor)
+            .minimumScaleFactor(0.5)
+            .lineLimit(1)
     } // var body
 } // struct ASAAccentedCell
 
@@ -117,10 +107,10 @@ struct ASAGridCalendar:  View {
         } // get
     } // var gridLayout
 
-    let font:  Font = .caption2
+    let font:  Font = .system(size: 9.0)
 
     var body: some View {
-        LazyVGrid(columns: gridLayout, spacing: 1.0) {
+        LazyVGrid(columns: gridLayout, spacing: 0.0) {
             ForEach((gridFirstDay...gridLastDay), id: \.self) {
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
