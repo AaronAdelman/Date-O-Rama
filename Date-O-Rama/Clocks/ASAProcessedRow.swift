@@ -25,7 +25,7 @@ struct ASAProcessedRow {
     var day:  Int
     var weekday:  Int
     var daysInMonth:  Int
-
+    var supportsMonths:  Bool
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -75,8 +75,14 @@ struct ASAProcessedRow {
         self.daysPerWeek = 7 // TODO:  FIX THIS!
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
-        let rangeOfDaysInMonth = row.calendar.range(of: .day, in: .month, for: now)
-        self.daysInMonth = rangeOfDaysInMonth!.count
+        if row.calendar.supports(calendarComponent: .month) {
+            let rangeOfDaysInMonth = row.calendar.range(of: .day, in: .month, for: now)
+            self.daysInMonth = rangeOfDaysInMonth?.count ?? 1
+            self.supportsMonths = true
+        } else {
+            self.daysInMonth = 1
+            self.supportsMonths = false
+        }
     }
 } // struct ASAProcessedRow
 

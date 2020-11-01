@@ -13,7 +13,7 @@ import SwiftUI
 struct ASABlankCell:  View {
     var body: some View {
         Rectangle()
-            .aspectRatio(1.0, contentMode: .fill)
+//            .aspectRatio(1.0, contentMode: .fill)
             .foregroundColor(.clear)
     } // var body
 } // struct ASABlankCell
@@ -26,7 +26,7 @@ struct ASAOrdinaryCell:  View {
         Text("\(number)")
             .font(font)
             .foregroundColor(.primary)
-            .minimumScaleFactor(0.5)
+//            .minimumScaleFactor(0.5)
             .lineLimit(1)
     } // var body
 } // struct ASAOrdinaryCell
@@ -41,7 +41,7 @@ struct ASAAccentedCell:  View {
             .bold()
             .underline()
             .foregroundColor(.accentColor)
-            .minimumScaleFactor(0.5)
+//            .minimumScaleFactor(0.5)
             .lineLimit(1)
     } // var body
 } // struct ASAAccentedCell
@@ -107,7 +107,7 @@ struct ASAGridCalendar:  View {
         } // get
     } // var gridLayout
 
-    let font:  Font = .system(size: 9.0)
+    let font:  Font = Font.system(size: 9.0).weight(.semibold)
 
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
