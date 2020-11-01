@@ -67,6 +67,15 @@ struct ASAClockCell: View {
                         }
                     }
                 } // VStack
+
+                #if os(watchOS)
+                #else
+                if shouldShowTime {
+                    Spacer()
+                    
+                    ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth)
+                }
+                #endif
             } // HStack
 
             if shouldShowPlaceName {

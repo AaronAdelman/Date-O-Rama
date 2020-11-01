@@ -213,15 +213,15 @@ class ASARow: ASALocatedObject {
         return temp
     } // func generic() -> ASARow
     
-    func copy() -> ASARow {
-        let tempRow = ASARow()
-        tempRow.calendar = ASACalendarFactory.calendar(code: self.calendar.calendarCode)!
-        tempRow.localeIdentifier = self.localeIdentifier
-        tempRow.majorDateFormat = self.majorDateFormat
-        tempRow.dateGeekFormat = self.dateGeekFormat
-        tempRow.timeZone = TimeZone(identifier: self.effectiveTimeZone.identifier)!
-        return tempRow
-    } // func copy() -> ASARow
+//    func copy() -> ASARow {
+//        let tempRow = ASARow()
+//        tempRow.calendar = ASACalendarFactory.calendar(code: self.calendar.calendarCode)!
+//        tempRow.localeIdentifier = self.localeIdentifier
+//        tempRow.majorDateFormat = self.majorDateFormat
+//        tempRow.dateGeekFormat = self.dateGeekFormat
+//        tempRow.timeZone = TimeZone(identifier: self.effectiveTimeZone.identifier)!
+//        return tempRow
+//    } // func copy() -> ASARow
 } // class ASARow: NSObject
 
 
@@ -259,6 +259,10 @@ extension ASARow {
     public func supportsLocales() -> Bool {
         return self.calendar.supportsLocales
     } // func supportsLocales() -> Bool
+
+    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+        self.calendar.dateComponents([.year, .month, .day, .weekday], from: date, locationData: self.locationData)
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
 } // extension ASARow
 
 extension ASARow {

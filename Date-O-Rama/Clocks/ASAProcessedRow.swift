@@ -21,6 +21,12 @@ struct ASAProcessedRow {
     var supportsTimeZones:  Bool
     var supportsLocations:  Bool
 
+    var daysPerWeek:  Int
+    var day:  Int
+    var weekday:  Int
+    var daysInMonth:  Int
+
+
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
@@ -63,6 +69,14 @@ struct ASAProcessedRow {
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
         self.supportsTimeZones = row.calendar.supportsTimeZones
+
+        let dateComponents = row.dateComponents([.day, .weekday], from: now, locationData: row.locationData)
+
+        self.daysPerWeek = 7 // TODO:  FIX THIS!
+        self.day = dateComponents.day ?? 1
+        self.weekday = dateComponents.weekday ?? 1
+        let rangeOfDaysInMonth = row.calendar.range(of: .day, in: .month, for: now)
+        self.daysInMonth = rangeOfDaysInMonth!.count
     }
 } // struct ASAProcessedRow
 
