@@ -20,6 +20,12 @@ struct ASAClockCell: View {
 
     let ROW_HEIGHT = 30.0 as CGFloat
 
+    fileprivate func numberFormatter() -> NumberFormatter {
+        let temp = NumberFormatter()
+        temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
+        return temp
+    } // func numberFormatter() -> NumberFormatter
+
     var body: some View {
         HStack {
 
@@ -103,7 +109,7 @@ struct ASAClockCell: View {
             if shouldShowTime && processedRow.supportsMonths {
                 Spacer()
 
-                ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth)
+                ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
             }
             #endif
         } // HStack

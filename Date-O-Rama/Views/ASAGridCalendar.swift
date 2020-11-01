@@ -21,9 +21,10 @@ struct ASABlankCell:  View {
 struct ASAOrdinaryCell:  View {
     var number:  Int
     var font:  Font
+    var numberFormatter:  NumberFormatter
 
     var body: some View {
-        Text("\(number)")
+        Text(numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? "")
             .font(font)
             .foregroundColor(.primary)
 //            .minimumScaleFactor(0.5)
@@ -34,9 +35,10 @@ struct ASAOrdinaryCell:  View {
 struct ASAAccentedCell:  View {
     var number:  Int
     var font:  Font
+    var numberFormatter:  NumberFormatter
 
     var body: some View {
-        Text("\(number)")
+        Text(numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? "")
             .font(font)
             .bold()
             .underline()
@@ -64,6 +66,7 @@ struct ASAGridCalendar:  View {
     var day:  Int
     var weekday:  Int
     var daysInMonth:  Int
+    var numberFormatter:  NumberFormatter
 
     var weekdayOfDay1:  Int {
         get {
@@ -115,9 +118,9 @@ struct ASAGridCalendar:  View {
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
                 } else if $0 == day {
-                    ASAAccentedCell(number: $0, font: font)
+                    ASAAccentedCell(number: $0, font: font, numberFormatter: numberFormatter)
                 } else {
-                    ASAOrdinaryCell(number: $0, font: font)
+                    ASAOrdinaryCell(number: $0, font: font, numberFormatter: numberFormatter)
                 }
             }
         }
@@ -127,6 +130,6 @@ struct ASAGridCalendar:  View {
 
 struct ASAGridCalendar_Previews: PreviewProvider {
     static var previews: some View {
-        ASAGridCalendar(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31)
+        ASAGridCalendar(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter())
     }
 }
