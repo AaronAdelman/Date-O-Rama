@@ -27,6 +27,10 @@ struct ASAProcessedRow {
     var daysInMonth:  Int
     var supportsMonths:  Bool
 
+    var hour:  Int
+    var minute:  Int
+    var second:  Int
+
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
@@ -70,7 +74,7 @@ struct ASAProcessedRow {
         }
         self.supportsTimeZones = row.calendar.supportsTimeZones
 
-        let dateComponents = row.dateComponents([.day, .weekday], from: now, locationData: row.locationData)
+        let dateComponents = row.dateComponents([.day, .weekday, .hour, .minute, .second], from: now, locationData: row.locationData)
 
         self.daysPerWeek = 7 // TODO:  FIX THIS!
         self.day = dateComponents.day ?? 1
@@ -83,6 +87,10 @@ struct ASAProcessedRow {
             self.daysInMonth = 1
             self.supportsMonths = false
         }
+
+        self.hour   = dateComponents.hour ?? 0
+        self.minute = dateComponents.minute ?? 0
+        self.second = dateComponents.second ?? 0
     }
 } // struct ASAProcessedRow
 

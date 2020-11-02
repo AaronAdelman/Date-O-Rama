@@ -261,7 +261,7 @@ extension ASARow {
     } // func supportsLocales() -> Bool
 
     public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
-        self.calendar.dateComponents([.year, .month, .day, .weekday], from: date, locationData: self.locationData)
+        self.calendar.dateComponents(components, from: date, locationData: self.locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
 } // extension ASARow
 

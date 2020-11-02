@@ -229,7 +229,8 @@ class ASAAppleCalendar:  ASACalendar {
             return -1
         }
         
-        let calendar = self.ApplesCalendar
+        var calendar = self.ApplesCalendar
+        calendar.timeZone = locationData.timeZone ?? TimeZone.current
         return calendar.component(ApplesComponent!, from: date)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
 
@@ -243,7 +244,8 @@ class ASAAppleCalendar:  ASACalendar {
             }
         } // for component in components
         
-        let calendar = self.ApplesCalendar
+        var calendar = self.ApplesCalendar
+        calendar.timeZone = locationData.timeZone ?? TimeZone.current
         let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
         return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents

@@ -423,7 +423,8 @@
             return -1
         }
 
-        let calendar = self.ApplesCalendar
+        var calendar = self.ApplesCalendar
+        calendar.timeZone = locationData.timeZone ?? TimeZone.current
         let (fixedDate, _) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
 
         return calendar.component(ApplesComponent!, from: fixedDate)

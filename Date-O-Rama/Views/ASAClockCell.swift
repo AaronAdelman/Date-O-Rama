@@ -29,26 +29,39 @@ struct ASAClockCell: View {
     var body: some View {
         HStack {
 
-        VStack(alignment: .leading) {
-            if shouldShowCalendar {
-                HStack {
-                    #if os(watchOS)
-                    #else
-                    ASACalendarSymbol()
-                    #endif
-                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadline)
+            VStack(alignment: .leading) {
+                if shouldShowCalendar {
+                    HStack {
+                        #if os(watchOS)
+                        #else
+                        ASACalendarSymbol()
+                        #endif
+                        ASAClockCellText(string:  processedRow.calendarString, font:  .subheadline)
+                    }
                 }
-            }
 
-            HStack {
-                Spacer().frame(width: self.INSET)
+                HStack {
+                    Spacer().frame(width: self.INSET)
 
-                VStack(alignment: .leading) {
-                    if processedRow.canSplitTimeFromDate {
-                        if shouldShowFormattedDate {
-                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
-                        }
-                        if shouldShowTime {
+                    VStack(alignment: .leading) {
+                        if processedRow.canSplitTimeFromDate {
+                            if shouldShowFormattedDate {
+                                ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                            }
+                            if shouldShowTime {
+                                HStack {
+                                    #if os(watchOS)
+                                    if !shouldShowPlaceName {
+                                        if processedRow.usesDeviceLocation {
+                                            ASASmallLocationSymbol()
+                                        }
+                                    }
+                                    #endif
+
+                                    ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit())
+                                }
+                            }
+                        } else if shouldShowFormattedDate {
                             HStack {
                                 #if os(watchOS)
                                 if !shouldShowPlaceName {
@@ -58,58 +71,49 @@ struct ASAClockCell: View {
                                 }
                                 #endif
 
-                                ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit())
+                                ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
                             }
                         }
-                    } else if shouldShowFormattedDate {
-                        HStack {
-                            #if os(watchOS)
-                            if !shouldShowPlaceName {
-                                if processedRow.usesDeviceLocation {
-                                    ASASmallLocationSymbol()
-                                }
-                            }
-                            #endif
-
-                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
-                        }
-                    }
-                } // VStack
-            } // HStack
-
-            if shouldShowPlaceName {
-                HStack {
-                    VStack(alignment: .leading) {
-                        if processedRow.supportsTimeZones || processedRow.supportsLocations {
-                            HStack {
-                                Spacer().frame(width: self.INSET)
-                                if processedRow.usesDeviceLocation {
-                                    ASASmallLocationSymbol()
-                                }
-                                Text(verbatim:  processedRow.emojiString)
-
-                                Text(processedRow.locationString).font(.subheadline)
-                            } // HStack
-                        }
-                    }
-                }
-            } else if processedRow.usesDeviceLocation {
-                #if os(watchOS)
-                #else
-                HStack {
-                    Spacer().frame(width: self.INSET)
-                    ASASmallLocationSymbol()
+                    } // VStack
                 } // HStack
-                #endif
-            }
-        } // VStack
+
+                if shouldShowPlaceName {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            if processedRow.supportsTimeZones || processedRow.supportsLocations {
+                                HStack {
+                                    Spacer().frame(width: self.INSET)
+                                    if processedRow.usesDeviceLocation {
+                                        ASASmallLocationSymbol()
+                                    }
+                                    Text(verbatim:  processedRow.emojiString)
+
+                                    Text(processedRow.locationString).font(.subheadline)
+                                } // HStack
+                            }
+                        }
+                    }
+                } else if processedRow.usesDeviceLocation {
+                    #if os(watchOS)
+                    #else
+                    HStack {
+                        Spacer().frame(width: self.INSET)
+                        ASASmallLocationSymbol()
+                    } // HStack
+                    #endif
+                }
+            } // VStack
 
             #if os(watchOS)
             #else
-            if shouldShowTime && processedRow.supportsMonths {
-                Spacer()
+            VStack {
+                if processedRow.supportsMonths {
+                    ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                }
 
-                ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                if shouldShowTime {
+                    Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+                }
             }
             #endif
         } // HStack
