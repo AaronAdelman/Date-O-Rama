@@ -88,21 +88,6 @@ struct ASAGridCalendar:  View {
         } // get
     } // var weekdayOfDay1
 
-    var gridFirstDay:  Int {
-        get {
-            return -(weekdayOfDay1 - 2)
-        } // get
-    } // var gridFirstDay
-
-    var gridLastDay:  Int {
-        get {
-            let preexistingDays = daysInMonth - gridFirstDay + 1
-            let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
-            let result = (neededDays - preexistingDays) + daysInMonth
-            return result
-        } // get
-    } // var gridLastDay
-
     private var gridLayout:  Array<GridItem> {
         get {
             let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerWeek)
@@ -112,9 +97,19 @@ struct ASAGridCalendar:  View {
 
     let font:  Font = Font.system(size: 10.0).weight(.semibold)
 
+    fileprivate func gridRange() -> ClosedRange<Int> {
+        let gridFirstDay = -(weekdayOfDay1 - 2)
+
+        let preexistingDays = daysInMonth - gridFirstDay + 1
+        let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
+        let gridLastDay = (neededDays - preexistingDays) + daysInMonth
+
+        return gridFirstDay...gridLastDay
+    } // func gridRange() -> ClosedRange<Int>
+
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
-            ForEach((gridFirstDay...gridLastDay), id: \.self) {
+            ForEach((gridRange()), id: \.self) {
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
                 } else if $0 == day {
