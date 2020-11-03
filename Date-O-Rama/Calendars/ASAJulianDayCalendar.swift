@@ -197,22 +197,68 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
          // Returns the value for one component of a date.
-        if component == .day {
-            let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
-            return day
-        } else {
+        let components = date.JulianDateComponents(offsetFromJulianDay: self.offsetFromJulianDay)
+
+        switch component {
+        case .day:
+            return components.day
+
+        case .hour:
+            return components.hour
+
+        case .minute:
+            return components.minute
+
+        case .second:
+            return components.second
+
+        case .nanosecond:
+            return components.nanosecond
+
+        default:
             return -1
-        }
+        } // switch component
+
+//        if component == .day {
+//            let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
+//            return day
+//        } else {
+//            return -1
+//        }
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
-        let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
+//        let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
+//        var result = ASADateComponents(calendar: self, locationData: locationData)
+//        for component in components {
+//            if component == .day {
+//                result.day = day
+//            }
+//        } // for component in components
+//        return result
+        let JDComponents = date.JulianDateComponents(offsetFromJulianDay: self.offsetFromJulianDay)
         var result = ASADateComponents(calendar: self, locationData: locationData)
         for component in components {
-            if component == .day {
-                result.day = day
-            }
-        } // for component in components
+            switch component {
+            case .day:
+                result.day = JDComponents.day
+                
+            case .hour:
+                result.hour = JDComponents.hour
+                
+            case .minute:
+                result.minute = JDComponents.minute
+                
+            case .second:
+                result.second = JDComponents.second
+                
+            case .nanosecond:
+                result.nanosecond = JDComponents.nanosecond
+
+        default:
+            debugPrint(#file, #function, component as Any)
+        } // switch component
+        }
         return result
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
     

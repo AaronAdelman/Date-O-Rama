@@ -74,6 +74,28 @@ extension Date {
         return Int(floor(JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)))
     } // func JulianDateWithoutTime(offsetFromJulianDay:  TimeInterval) -> Int
 
+    func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int) {
+        let full = self.JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)
+        let dayAsDouble: TimeInterval = floor(full)
+        let fractionOfDay = full - dayAsDouble
+        let fullHours = fractionOfDay * 24.0
+        let integralHoursAsDouble = floor(fullHours)
+        let fullMinutes = (fullHours - integralHoursAsDouble) * 60.0
+        let integralMinutesAsDouble = floor(fullMinutes)
+        let fullSeconds = (fullMinutes - integralMinutesAsDouble) * 60.0
+        let integralSecondsAsDouble = floor(fullSeconds)
+        let fullNanoseconds = (fullSeconds - integralSecondsAsDouble) * 1000000000.0
+        let integralNanosecondsAsDouble = floor(fullNanoseconds)
+
+        let day = Int(dayAsDouble)
+        let hour = Int(integralHoursAsDouble)
+        let minute = Int(integralMinutesAsDouble)
+        let second = Int(integralSecondsAsDouble)
+        let nanosecond = Int(integralNanosecondsAsDouble)
+
+        return (day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond)
+    } // func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
+
     static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date {
         let seconds = ((JulianDate + offsetFromJulianDay) - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)

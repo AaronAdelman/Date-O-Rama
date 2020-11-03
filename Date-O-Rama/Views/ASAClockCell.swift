@@ -106,6 +106,10 @@ struct ASAClockCell: View {
 
             #if os(watchOS)
             #else
+            if processedRow.supportsMonths || shouldShowTime {
+                Spacer()
+            }
+
             VStack {
                 if processedRow.supportsMonths {
                     ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
