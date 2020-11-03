@@ -20,6 +20,11 @@ struct ASAClockCell: View {
 
     let ROW_HEIGHT = 30.0 as CGFloat
 
+    #if os(watchOS)
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    #endif
+
     fileprivate func numberFormatter() -> NumberFormatter {
         let temp = NumberFormatter()
         temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
@@ -110,15 +115,28 @@ struct ASAClockCell: View {
                 Spacer()
             }
 
-            VStack {
-                if processedRow.supportsMonths {
-                    ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
-                }
+            if self.sizeClass == .compact {
+                VStack {
+                    if processedRow.supportsMonths {
+                        ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                    }
 
-                if shouldShowTime {
-                    Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+                    if shouldShowTime {
+                        Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+                    }
+                }
+            } else {
+                HStack {
+                    if processedRow.supportsMonths {
+                        ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                    }
+
+                    if shouldShowTime {
+                        Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+                    }
                 }
             }
+
             #endif
         } // HStack
     } // var body
