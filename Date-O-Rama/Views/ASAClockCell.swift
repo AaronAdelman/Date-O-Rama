@@ -236,13 +236,11 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
 
     var body:  some View {
         if !runningOnWatchOS && processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 8.0)
-                    .fill(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
-                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET: INSET)
-                    .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
-                    .padding(.horizontal)
-            }
+            ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET: INSET)
+                .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
+                .padding(.horizontal)
+                .background(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
+                .cornerRadius(8.0)
         } else {
             HStack {
                 Spacer().frame(width: self.INSET)
@@ -322,12 +320,18 @@ struct ASAPlaceSubcell:  View {
                     if processedRow.supportsTimeZones || processedRow.supportsLocations {
                         HStack {
                             Spacer().frame(width: self.INSET)
-                            if processedRow.usesDeviceLocation {
-                                ASASmallLocationSymbol()
-                            }
+                            
                             if compact {
-                                Text(verbatim: processedRow.verticalEmojiString)
+                                VStack {
+                                    if processedRow.usesDeviceLocation {
+                                        ASASmallLocationSymbol()
+                                    }
+                                    Text(verbatim: processedRow.verticalEmojiString)
+                                }
                             } else {
+                                if processedRow.usesDeviceLocation {
+                                    ASASmallLocationSymbol()
+                                }
                                 Text(verbatim:  processedRow.emojiString)
                             }
 
