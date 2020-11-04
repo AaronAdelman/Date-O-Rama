@@ -50,31 +50,7 @@ struct ASAClockCell: View {
 
                 ASAStyledClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET:  INSET)
 
-                if shouldShowPlaceName {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            if processedRow.supportsTimeZones || processedRow.supportsLocations {
-                                HStack {
-                                    Spacer().frame(width: self.INSET)
-                                    if processedRow.usesDeviceLocation {
-                                        ASASmallLocationSymbol()
-                                    }
-                                    Text(verbatim:  processedRow.emojiString)
 
-                                    Text(processedRow.locationString).font(.subheadline)
-                                } // HStack
-                            }
-                        }
-                    }
-                } else if processedRow.usesDeviceLocation {
-                    #if os(watchOS)
-                    #else
-                    HStack {
-                        Spacer().frame(width: self.INSET)
-                        ASASmallLocationSymbol()
-                    } // HStack
-                    #endif
-                }
             } // VStack
 
             #if os(watchOS)
@@ -263,14 +239,14 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
             ZStack {
                 RoundedRectangle(cornerRadius: 8.0)
                     .fill(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
-                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime)
+                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET: INSET)
                     .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                     .padding(.horizontal)
             }
         } else {
             HStack {
                 Spacer().frame(width: self.INSET)
-                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime)
+                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET: INSET)
             } // HStack
         }
     } //var body:  some View
@@ -282,6 +258,7 @@ struct ASAClockDateAndTimeSubcell:  View {
     var shouldShowFormattedDate:  Bool
     var shouldShowTime:  Bool
     var shouldShowPlaceName:  Bool
+    var INSET:  CGFloat
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -315,9 +292,61 @@ struct ASAClockDateAndTimeSubcell:  View {
                     ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
                 }
             }
+
+            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, INSET:  INSET)
         } // VStack
     } // var body
 } // struct ASAClockDateAndTimeSubcell
+
+
+struct ASAPlaceSubcell:  View {
+    var processedRow:  ASAProcessedRow
+    var shouldShowPlaceName:  Bool
+    var INSET:  CGFloat
+
+    #if os(watchOS)
+    let compact = false
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+    #endif
+
+    var body: some View {
+        if shouldShowPlaceName {
+            HStack {
+                VStack(alignment: .leading) {
+                    if processedRow.supportsTimeZones || processedRow.supportsLocations {
+                        HStack {
+                            Spacer().frame(width: self.INSET)
+                            if processedRow.usesDeviceLocation {
+                                ASASmallLocationSymbol()
+                            }
+                            if compact {
+                                Text(verbatim: processedRow.verticalEmojiString)
+                            } else {
+                                Text(verbatim:  processedRow.emojiString)
+                            }
+
+                            Text(processedRow.locationString).font(.subheadline)
+                        } // HStack
+                    }
+                }
+            }
+        } else if processedRow.usesDeviceLocation {
+            #if os(watchOS)
+            #else
+            HStack {
+                Spacer().frame(width: self.INSET)
+                ASASmallLocationSymbol()
+            } // HStack
+            #endif
+        }
+    }
+}
 
 
 struct ASAClockPizzazztron:  View {
