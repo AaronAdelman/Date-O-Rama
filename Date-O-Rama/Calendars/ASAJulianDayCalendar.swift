@@ -312,4 +312,9 @@ class ASAJulianDayCalendar:  ASACalendar {
             return false
         } // switch calendarComponent
     } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
+
+
+    // MARK: -
+
+    public var transitionType:  ASATransitionType = .noon
 } // class ASAJulianDayCalendar

@@ -14,7 +14,21 @@ struct ASAProcessedRow {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
-    var emojiString:  String
+    var flagEmojiString:  String
+    var timeZoneEmojiString:  String
+
+    var emojiString:  String {
+        get {
+            return flagEmojiString + timeZoneEmojiString
+        } // get
+    } // var emojiString
+
+    var verticalEmojiString:  String {
+        get {
+            return flagEmojiString + "\n" + timeZoneEmojiString
+        } // get
+    } // var verticalEmojiString
+
     var usesDeviceLocation:  Bool
     var locationString:  String
     var canSplitTimeFromDate:  Bool
@@ -30,6 +44,9 @@ struct ASAProcessedRow {
     var hour:  Int
     var minute:  Int
     var second:  Int
+
+    var transitionType:  ASATransitionType
+    var calendarType:  ASACalendarType
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -52,7 +69,9 @@ struct ASAProcessedRow {
         }
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
-            self.emojiString = row.emoji(date:  now)
+//            self.emojiString = row.emoji(date:  now)
+            self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag()
+            self.timeZoneEmojiString = row.effectiveTimeZone.emoji(date:  now)
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
@@ -68,7 +87,9 @@ struct ASAProcessedRow {
             }
             self.locationString = locationString
         } else {
-            self.emojiString = "🇺🇳🕛"
+//            self.emojiString = "🇺🇳🕛"
+            self.flagEmojiString = "🇺🇳"
+            self.timeZoneEmojiString = "🕛"
             self.usesDeviceLocation = false
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
@@ -91,6 +112,9 @@ struct ASAProcessedRow {
         self.hour   = dateComponents.hour ?? 0
         self.minute = dateComponents.minute ?? 0
         self.second = dateComponents.second ?? 0
+
+        self.transitionType = row.calendar.transitionType
+        self.calendarType = row.calendar.calendarCode.type
     }
 } // struct ASAProcessedRow
 

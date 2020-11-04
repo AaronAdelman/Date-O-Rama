@@ -15,6 +15,13 @@ import UIKit
 //    var geekCode:  String
 //} // struct ASADetail
 
+public enum ASATransitionType {
+    case sunset
+    case dusk
+    case midnight
+    case noon
+} // enum ASATransitionType
+
 
 // MARK: -
 
@@ -32,6 +39,7 @@ protocol ASACalendar {
     var supportsTimeFormats: Bool { get }
     var supportsTimes: Bool { get }
     var supportsTimeZones: Bool { get }
+    var transitionType:  ASATransitionType { get }
     
     func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
     func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String

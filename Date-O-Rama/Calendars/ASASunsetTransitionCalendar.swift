@@ -695,4 +695,21 @@
         } // switch calendarComponent
     } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
 
+
+    // MARK: -
+
+    public var transitionType:  ASATransitionType {
+        get {
+            switch self.dayEnd {
+            case .sunset:
+                return .sunset
+
+            case .dusk72Minutes:
+            return .dusk
+
+            default:
+                return .midnight
+            }
+        }
+    }
  } // class ASASunsetTransitionCalendar

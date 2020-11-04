@@ -122,7 +122,7 @@ struct ASAClockCell: View {
                     }
 
                     if shouldShowTime {
-                        Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+                        ASAClockPizzazztron(processedRow:  processedRow)
                     }
                 }
             } else {
@@ -132,7 +132,7 @@ struct ASAClockCell: View {
                     }
 
                     if shouldShowTime {
-                        Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+                        ASAClockPizzazztron(processedRow:  processedRow)
                     }
                 }
             }
@@ -141,6 +141,29 @@ struct ASAClockCell: View {
         } // HStack
     } // var body
 } // struct ASAClockCell
+
+
+struct ASAClockPizzazztron:  View {
+    var processedRow:  ASAProcessedRow
+
+    func progress() -> Double {
+        let secondsIntoDay:  Double = Double((processedRow.hour * 60 + processedRow.minute) * 60 + processedRow.second)
+        let secondsPerDay = 24.0 * 60.0 * 60.0
+        return secondsIntoDay / secondsPerDay
+    } // func progress() -> Double
+
+    var body: some View {
+        #if os(watchOS)
+        EmptyView()
+        #else
+        if processedRow.calendarType == .JulianDay {
+            ProgressView(value: progress())
+        } else {
+            Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
+        }
+        #endif
+    } // var body
+} // struct ASAClockPizzazztron
 
 
 struct ASAClockCell_Previews: PreviewProvider {

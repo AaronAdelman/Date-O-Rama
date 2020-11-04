@@ -212,18 +212,7 @@ class ASARow: ASALocatedObject {
         temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
-    
-//    func copy() -> ASARow {
-//        let tempRow = ASARow()
-//        tempRow.calendar = ASACalendarFactory.calendar(code: self.calendar.calendarCode)!
-//        tempRow.localeIdentifier = self.localeIdentifier
-//        tempRow.majorDateFormat = self.majorDateFormat
-//        tempRow.dateGeekFormat = self.dateGeekFormat
-//        tempRow.timeZone = TimeZone(identifier: self.effectiveTimeZone.identifier)!
-//        return tempRow
-//    } // func copy() -> ASARow
-} // class ASARow: NSObject
-
+} // class ASARow
 
 // MARK :-
 
