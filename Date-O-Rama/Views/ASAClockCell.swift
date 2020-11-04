@@ -114,13 +114,13 @@ struct ASAClockCell: View {
 extension Color {
     static var skyBlue:  Color {
         get {
-            return Color(red: 38.0 / 255.0, green: 165.0 / 255.0, blue: 203.0 / 255.0)
+            return Color(red: 20.0 / 255.0, green: 117.0 / 255.0, blue: 157.0 / 255.0)
         } // get
     } // static var skyBlue
 
     static var midnightBlue:  Color {
         get {
-            return Color(red: 1.0 / 255.0, green: 2.0 / 255.0, blue: 4.0 / 255.0)
+            return Color(red: 12.0 / 255.0, green: 15.0 / 255.0, blue: 38.0 / 255.0)
         } // get
     } // static var midnightBlue
 
