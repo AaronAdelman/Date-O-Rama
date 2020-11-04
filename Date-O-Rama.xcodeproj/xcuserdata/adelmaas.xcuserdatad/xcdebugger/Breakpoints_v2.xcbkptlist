@@ -334,8 +334,8 @@
             filePath = "Date-O-Rama/Views/ASAClockCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "skyGradientColors(transitionType:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +350,8 @@
             filePath = "Date-O-Rama/Views/ASAClockCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "skyGradientColors(transitionType:)"
             landmarkType = "7">
          </BreakpointContent>

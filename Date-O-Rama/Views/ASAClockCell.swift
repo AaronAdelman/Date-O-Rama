@@ -131,20 +131,11 @@ extension Color {
     } // static var sunsetRed
 
     static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
-        switch transitionType {
-        case .sunset:
-            if hour == 0 || hour == 11 {
-                return .white
-            }
-
-        case .dusk:
+        if transitionType == .dusk {
             if hour == 23 || hour == 12 {
                 return .white
             }
-
-        default:
-            debugPrint(#file, #function, transitionType)
-        } // switch transitionType
+        }
 
         if hour >= 0 && hour <= 11 {
             return .yellow
