@@ -82,7 +82,7 @@
             existsSolarTime = false
         }
         if !existsSolarTime {
-            return (hours:  0.0, daytime:  false, valid:  false)
+            return (hours:  -1.0, daytime:  false, valid:  false)
         }
         //        debugPrint(#file, #function, "Now:", now, localeIdentifier, majorTimeFormat, timeGeekFormat, location!, timeZone!, "Transition:", transition!!)
 
@@ -120,10 +120,10 @@
             let rawDayHalfStart: Date?? = events[self.dayStart]
 
             if rawDayHalfStart == nil {
-                return (hours:  0.0, daytime:  false, valid:  false)
+                return (hours:  -1.0, daytime:  false, valid:  false)
             }
             if rawDayHalfStart! == nil {
-                return (hours:  0.0, daytime:  false, valid:  false)
+                return (hours:  -1.0, daytime:  false, valid:  false)
             }
 
             dayHalfStart = rawDayHalfStart!!
@@ -137,10 +137,10 @@
                 let rawDayHalfStart: Date?? = events[self.dayStart]
 
                 if rawDayHalfStart == nil {
-                    return (hours:  0.0, daytime:  false, valid:  false)
+                    return (hours:  -1.0, daytime:  false, valid:  false)
                 }
                 if rawDayHalfStart! == nil {
-                    return (hours:  0.0, daytime:  false, valid:  false)
+                    return (hours:  -1.0, daytime:  false, valid:  false)
                 }
 
                 dayHalfStart = rawDayHalfStart!!

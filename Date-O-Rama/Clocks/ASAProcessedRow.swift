@@ -138,6 +138,12 @@ extension ASAProcessedRow {
             }
         } // get
     } // var longitude
+
+    var hasValidTime:  Bool {
+        get {
+            return self.hour != -1
+        } // get
+    } // var hasValidTime
 } // extension ASAProcessedRow
 
 

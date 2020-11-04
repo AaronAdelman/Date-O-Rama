@@ -31,9 +31,12 @@ struct ASAClockCell: View {
         return temp
     } // func numberFormatter() -> NumberFormatter
 
+    fileprivate func shouldShowClockPizzazztron() -> Bool {
+        return shouldShowTime && processedRow.hasValidTime
+    } //func shouldShowClockPizzazztron() -> Bool
+
     var body: some View {
         HStack {
-
             VStack(alignment: .leading) {
                 if shouldShowCalendar {
                     HStack {
@@ -86,7 +89,7 @@ struct ASAClockCell: View {
                         ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
                     }
 
-                    if shouldShowTime {
+                    if shouldShowClockPizzazztron() {
                         ASAClockPizzazztron(processedRow:  processedRow)
                     }
                 }
@@ -96,7 +99,7 @@ struct ASAClockCell: View {
                         ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
                     }
 
-                    if shouldShowTime {
+                    if shouldShowClockPizzazztron() {
                         ASAClockPizzazztron(processedRow:  processedRow)
                     }
                 }
@@ -183,12 +186,13 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
     var INSET:  CGFloat
 
     var body:  some View {
-        if processedRow.transitionType == .sunset || processedRow.transitionType == .dusk {
+        if processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
             ZStack {
                 RoundedRectangle(cornerRadius: 8.0)
                     .foregroundColor(.backgroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                 ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime)
                     .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
+                    .padding(.horizontal)
             }
         } else {
             HStack {
