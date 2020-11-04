@@ -45,42 +45,7 @@ struct ASAClockCell: View {
                     }
                 }
 
-                HStack {
-                    Spacer().frame(width: self.INSET)
-
-                    VStack(alignment: .leading) {
-                        if processedRow.canSplitTimeFromDate {
-                            if shouldShowFormattedDate {
-                                ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
-                            }
-                            if shouldShowTime {
-                                HStack {
-                                    #if os(watchOS)
-                                    if !shouldShowPlaceName {
-                                        if processedRow.usesDeviceLocation {
-                                            ASASmallLocationSymbol()
-                                        }
-                                    }
-                                    #endif
-
-                                    ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit())
-                                }
-                            }
-                        } else if shouldShowFormattedDate {
-                            HStack {
-                                #if os(watchOS)
-                                if !shouldShowPlaceName {
-                                    if processedRow.usesDeviceLocation {
-                                        ASASmallLocationSymbol()
-                                    }
-                                }
-                                #endif
-
-                                ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
-                            }
-                        }
-                    } // VStack
-                } // HStack
+                ASAStyledClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET:  INSET)
 
                 if shouldShowPlaceName {
                     HStack {
@@ -141,6 +106,141 @@ struct ASAClockCell: View {
         } // HStack
     } // var body
 } // struct ASAClockCell
+
+
+extension Color {
+    static var skyBlue:  Color {
+        get {
+            return Color(red: 38.0 / 255.0, green: 165.0 / 255.0, blue: 203.0 / 255.0)
+        } // get
+    } // static var skyBlue
+
+    static var midnightBlue:  Color {
+        get {
+            return Color(red: 1.0 / 255.0, green: 2.0 / 255.0, blue: 4.0 / 255.0)
+        } // get
+    } // static var midnightBlue
+
+    static var sunsetRed:  Color {
+        get {
+            return Color(red: 189.0 / 255.0, green: 17.0 / 255.0, blue: 89.0 / 255.0)
+        } // get
+    } // static var sunsetRed
+
+    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
+        switch transitionType {
+        case .sunset:
+            if hour == 0 || hour == 11 {
+                return .white
+            }
+
+        case .dusk:
+            if hour == 23 || hour == 12 {
+                return .white
+            }
+
+        default:
+            debugPrint(#file, #function, transitionType)
+        } // switch transitionType
+
+        if hour >= 0 && hour <= 11 {
+            return .yellow
+        } else {
+            return .white
+        }
+    } // static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
+
+    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
+        switch transitionType {
+        case .sunset:
+            if hour == 0 || hour == 11 {
+                return .sunsetRed
+            }
+
+        case .dusk:
+            if hour == 23 || hour == 12 {
+                return .sunsetRed
+            }
+
+        default:
+            debugPrint(#file, #function, transitionType)
+        } // switch transitionType
+
+        if hour >= 0 && hour <= 11 {
+            return .midnightBlue
+        } else {
+            return .skyBlue
+        }
+    } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
+} // extension Color
+
+
+struct ASAStyledClockDateAndTimeSubcell:  View {
+    var processedRow:  ASAProcessedRow
+    var shouldShowFormattedDate:  Bool
+    var shouldShowTime:  Bool
+    var shouldShowPlaceName:  Bool
+    var INSET:  CGFloat
+
+    var body:  some View {
+        if processedRow.transitionType == .sunset || processedRow.transitionType == .dusk {
+            ZStack {
+                RoundedRectangle(cornerRadius: 8.0)
+                    .foregroundColor(.backgroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
+                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime)
+                    .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
+            }
+        } else {
+            HStack {
+                Spacer().frame(width: self.INSET)
+                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime)
+            } // HStack
+        }
+    } //var body:  some View
+} // struct ASAStyledClockDateAndTimeSubcell
+
+
+struct ASAClockDateAndTimeSubcell:  View {
+    var processedRow:  ASAProcessedRow
+    var shouldShowFormattedDate:  Bool
+    var shouldShowTime:  Bool
+    var shouldShowPlaceName:  Bool
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            if processedRow.canSplitTimeFromDate {
+                if shouldShowFormattedDate {
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                }
+                if shouldShowTime {
+                    HStack {
+                        #if os(watchOS)
+                        if !shouldShowPlaceName {
+                            if processedRow.usesDeviceLocation {
+                                ASASmallLocationSymbol()
+                            }
+                        }
+                        #endif
+
+                        ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit())
+                    }
+                }
+            } else if shouldShowFormattedDate {
+                HStack {
+                    #if os(watchOS)
+                    if !shouldShowPlaceName {
+                        if processedRow.usesDeviceLocation {
+                            ASASmallLocationSymbol()
+                        }
+                    }
+                    #endif
+
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                }
+            }
+        } // VStack
+    } // var body
+} // struct ASAClockDateAndTimeSubcell
 
 
 struct ASAClockPizzazztron:  View {
