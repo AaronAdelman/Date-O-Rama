@@ -48,7 +48,7 @@ struct ASAClockCell: View {
                     }
                 }
 
-                ASAStyledClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET:  INSET)
+                ASAStyledClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET:  INSET)
 
 
             } // VStack
@@ -236,7 +236,7 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
 
     var body:  some View {
         if !runningOnWatchOS && processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
-            ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET: INSET)
+            ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                 .padding(.horizontal)
                 .background(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
@@ -244,7 +244,7 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
         } else {
             HStack {
                 Spacer().frame(width: self.INSET)
-                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime, INSET: INSET)
+                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
             } // HStack
         }
     } //var body:  some View
@@ -320,7 +320,7 @@ struct ASAPlaceSubcell:  View {
                     if processedRow.supportsTimeZones || processedRow.supportsLocations {
                         HStack {
                             Spacer().frame(width: self.INSET)
-                            
+
                             if compact {
                                 VStack {
                                     if processedRow.usesDeviceLocation {
