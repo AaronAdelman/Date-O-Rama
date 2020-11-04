@@ -126,7 +126,7 @@ extension Color {
 
     static var sunsetRed:  Color {
         get {
-            return Color(red: 189.0 / 255.0, green: 17.0 / 255.0, blue: 89.0 / 255.0)
+            return Color(red: 99.0 / 255.0, green: 29.0 / 255.0, blue: 35.0 / 255.0)
         } // get
     } // static var sunsetRed
 
@@ -153,29 +153,40 @@ extension Color {
         }
     } // static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
 
-    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
-        switch transitionType {
-        case .sunset:
-            if hour == 0 || hour == 11 {
-                return .sunsetRed
+    var components:  (CGFloat, CGFloat, CGFloat) {
+        get {
+            let cg = self.cgColor
+            if cg == nil {
+                return (0.5, 0.5, 0.5)
             }
-
-        case .dusk:
-            if hour == 23 || hour == 12 {
-                return .sunsetRed
+            let components = cg!.components
+            if components == nil {
+                return (0.5, 0.5, 0.5)
             }
+            let result = (components![0], components![1], components![2])
+            return result
+        } // get
+    } // var components
 
-        default:
-            debugPrint(#file, #function, transitionType)
-        } // switch transitionType
+    static func blend(startColor:  Color, endColor:  Color, progress:  CGFloat) -> Color {
+        let oneOverProgress:  CGFloat = 1.0 - progress
 
-        if hour >= 0 && hour <= 11 {
-            return .midnightBlue
-        } else {
-            return .skyBlue
-        }
-    } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
+        let startComponents = startColor.components
+        let endComponents = endColor.components
+        let red   = startComponents.0 * oneOverProgress + endComponents.0 * progress
+        let green = startComponents.1 * oneOverProgress + endComponents.1 * progress
+        let blue  = startComponents.2 * oneOverProgress + endComponents.2 * progress
+        let result = Color(red: Double(red), green: Double(green), blue: Double(blue))
+        return result
+    } // func blend(startColor:  Color, endColor:  Color, progress:  CGFloat)
 } // extension Color
+
+
+enum ASASkyTime {
+    case day
+    case twilight
+    case night
+} // enum ASASkyTime
 
 
 struct ASAStyledClockDateAndTimeSubcell:  View {
@@ -185,11 +196,83 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
     var shouldShowPlaceName:  Bool
     var INSET:  CGFloat
 
+    fileprivate func skyGradientColors(transitionType:  ASATransitionType) -> [Color] {
+        let hour: Int = processedRow.hour
+        let minute: Int = processedRow.minute
+
+        let minutes = hour * 60 + minute
+
+        var topColor:  Color
+        var bottomColor:  Color
+
+        var eveningTwilightStart:  Int = 0
+        var eveningTwilightEnd:  Int   = 0
+        var morningTwilightStart:  Int = 0
+        var morningTwilightEnd:  Int   = 0
+
+        let lengthOfDay = 24 * 60 * 60
+
+        let twilightLength_sunsetTransition    = 83
+        let earlyTwilightLength_duskTransition = 60
+        let lateTwilightLength_duskTransition  = 12
+
+        switch transitionType {
+        case .sunset:
+            eveningTwilightStart = 0
+            eveningTwilightEnd = eveningTwilightStart + twilightLength_sunsetTransition
+            morningTwilightEnd = 12 * 60
+            morningTwilightStart = morningTwilightEnd - twilightLength_sunsetTransition
+
+        case .dusk:
+             let transitionLength = earlyTwilightLength_duskTransition + lateTwilightLength_duskTransition
+            eveningTwilightStart = lengthOfDay - earlyTwilightLength_duskTransition
+            eveningTwilightEnd = lateTwilightLength_duskTransition
+            morningTwilightEnd = 13 * 60
+            morningTwilightStart = morningTwilightEnd - transitionLength
+
+        default:
+            debugPrint(#file, #function, transitionType)
+
+        } // switch transitionType.0
+
+        if morningTwilightStart <= minutes && minutes < morningTwilightEnd {
+            // Morning twilight
+            let progress = CGFloat((minutes - morningTwilightStart) / (morningTwilightEnd - morningTwilightStart))
+            topColor = Color.blend(startColor: .midnightBlue, endColor: .skyBlue, progress: progress)
+            bottomColor = Color.blend(startColor: .midnightBlue, endColor: .sunsetRed, progress: progress)
+        } else if transitionType == .sunset && eveningTwilightStart <= minutes && minutes < eveningTwilightEnd {
+            // Evening twilight, sunset transition
+            let progress = CGFloat(minutes) / CGFloat(eveningTwilightEnd)
+            topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
+            bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
+        } else if transitionType == .dusk && eveningTwilightStart <= minutes {
+            // Early evening twilight, dusk transition
+            let progress = CGFloat((lengthOfDay - minutes) / (earlyTwilightLength_duskTransition + lateTwilightLength_duskTransition))
+            topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
+            bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
+        } else if transitionType == .dusk && minutes < eveningTwilightEnd {
+            // Late evening twilight, dusk transition
+            let progress = CGFloat((earlyTwilightLength_duskTransition + minutes) / (earlyTwilightLength_duskTransition + lateTwilightLength_duskTransition))
+            topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
+            bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
+        } else if hour >= 0 && hour <= 11 {
+            // Night
+            topColor = .midnightBlue
+            bottomColor = .midnightBlue
+        } else {
+            // Day
+            topColor = .skyBlue
+            bottomColor = .skyBlue
+        }
+
+        return [topColor, bottomColor]
+    } // func skyGradientColors() -> [Color]
+
     var body:  some View {
         if processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
             ZStack {
                 RoundedRectangle(cornerRadius: 8.0)
-                    .foregroundColor(.backgroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
+                    .fill(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
                 ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowTime)
                     .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                     .padding(.horizontal)
