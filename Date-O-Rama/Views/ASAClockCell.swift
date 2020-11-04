@@ -173,19 +173,18 @@ extension Color {
 } // extension Color
 
 
-enum ASASkyTime {
-    case day
-    case twilight
-    case night
-} // enum ASASkyTime
-
-
 struct ASAStyledClockDateAndTimeSubcell:  View {
     var processedRow:  ASAProcessedRow
     var shouldShowFormattedDate:  Bool
     var shouldShowTime:  Bool
     var shouldShowPlaceName:  Bool
     var INSET:  CGFloat
+
+    #if os(watchOS)
+    let runningOnWatchOS = true
+    #else
+    let runningOnWatchOS = false
+    #endif
 
     fileprivate func skyGradientColors(transitionType:  ASATransitionType) -> [Color] {
         let hour: Int = processedRow.hour
@@ -260,7 +259,7 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
     } // func skyGradientColors() -> [Color]
 
     var body:  some View {
-        if processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
+        if !runningOnWatchOS && processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
             ZStack {
                 RoundedRectangle(cornerRadius: 8.0)
                     .fill(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
