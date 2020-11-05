@@ -142,19 +142,19 @@ struct Watch:  View {
                 .fill()
                 .frame(width: 1.0, alignment: .center)
                 .rotationEffect(.radians(minuteAngle))
-                .foregroundColor(.primary)
+//                .foregroundColor(.primary)
 
             // Hour hand
             Hand(offset: 12)
                 .fill()
                 .frame(width: 2.0, alignment: .center)
                 .rotationEffect(.radians(hourAngle))
-                .foregroundColor(.primary)
+//                .foregroundColor(.primary)
 
             // Second hand
             Hand(offset: 3.0)
                 .fill()
-                .foregroundColor(.secondary)
+//                .foregroundColor(.secondary)
                 .frame(width: 0.5, alignment: .center)
                 .rotationEffect(.radians(secondAngle))
 

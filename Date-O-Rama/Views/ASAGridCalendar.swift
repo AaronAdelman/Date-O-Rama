@@ -25,7 +25,7 @@ struct ASAOrdinaryCell:  View {
     var body: some View {
         Text(numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? "")
             .font(font)
-            .foregroundColor(.primary)
+//            .foregroundColor(.primary)
             .lineLimit(1)
     } // var body
 } // struct ASAOrdinaryCell
@@ -95,7 +95,7 @@ struct ASAGridCalendar:  View {
         } // get
     } // var gridLayout
 
-    let font:  Font = Font.system(size: 10.0).weight(.semibold)
+    let font:  Font = Font.system(size: 9.5).bold()
 
     fileprivate func gridRange() -> ClosedRange<Int> {
         let gridFirstDay = -(weekdayOfDay1 - 2)
