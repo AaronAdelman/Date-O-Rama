@@ -87,6 +87,40 @@ struct ASAClockCell: View {
 } // struct ASAClockCell
 
 
+// MARK:  -
+
+fileprivate func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool {
+    switch transitionType {
+    case .sunset, .dusk:
+        if transitionType == .dusk {
+            if hour == 23 || hour == 12 {
+                return false
+            }
+        }
+
+        if hour >= 0 && hour <= 11 {
+            return true
+        } else {
+            return false
+        }
+
+    case .midnight:
+        if hour <= 5 || hour >= 18 {
+            return true
+        } else {
+            return false
+        }
+
+    case .noon:
+        if 6 <= hour && hour <= 17 {
+            return true
+        } else {
+            return false
+        }
+    } // switch transitionType
+} // func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool
+
+
 extension Color {
     static var skyBlue:  Color {
         get {
@@ -107,18 +141,22 @@ extension Color {
     } // static var sunsetRed
 
     static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
-        if transitionType == .dusk {
-            if hour == 23 || hour == 12 {
-                return .white
-            }
-        }
+        let DAY_COLOR: Color = .white
+        let NIGHT_COLOR: Color = .yellow
 
-        if hour >= 0 && hour <= 11 {
-            return .yellow
-        } else {
-            return .white
-        }
+        let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
+
+        return result
     } // static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
+
+    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
+        let DAY_COLOR: Color = .skyBlue
+        let NIGHT_COLOR: Color = .midnightBlue
+
+        let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
+
+        return result
+    } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
 
     var components:  (CGFloat, CGFloat, CGFloat) {
         get {
@@ -149,6 +187,8 @@ extension Color {
 } // extension Color
 
 
+// MARK:  -
+
 struct ASAStyledClockDateAndTimeSubcell:  View {
     var processedRow:  ASAProcessedRow
     var shouldShowFormattedDate:  Bool
@@ -164,42 +204,47 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
 
     fileprivate func skyGradientColors(transitionType:  ASATransitionType) -> [Color] {
         let hour: Int = processedRow.hour
-        let minute: Int = processedRow.minute
 
-        let minutes = hour * 60 + minute
+        if transitionType == .midnight || transitionType == .noon {
+            let color = Color.backgroundColor(transitionType: transitionType, hour: hour)
+            return [color, color]
+        }
 
         var topColor:  Color
         var bottomColor:  Color
+
+        let minute: Int = processedRow.minute
+
+        let minutes = hour * 60 + minute
 
         var eveningTwilightStart:  Int = 0
         var eveningTwilightEnd:  Int   = 0
         var morningTwilightStart:  Int = 0
         var morningTwilightEnd:  Int   = 0
 
-        let lengthOfDay = 24 * 60 * 60
+        let LENGTH_OF_DAY = 24 * 60 * 60
 
-        let twilightLength_sunsetTransition    = 83
-        let earlyTwilightLength_duskTransition = 60
-        let lateTwilightLength_duskTransition  = 12
+        let TWILIGHT_LENGTH_SUNSET_TRANSITION     = 83
+        let EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION = 60
+        let LATE_TWILIGHT_LENGTH_DUSK_TRANSITION  = 12
 
         switch transitionType {
         case .sunset:
             eveningTwilightStart = 0
-            eveningTwilightEnd = eveningTwilightStart + twilightLength_sunsetTransition
+            eveningTwilightEnd = eveningTwilightStart + TWILIGHT_LENGTH_SUNSET_TRANSITION
             morningTwilightEnd = 12 * 60
-            morningTwilightStart = morningTwilightEnd - twilightLength_sunsetTransition
+            morningTwilightStart = morningTwilightEnd - TWILIGHT_LENGTH_SUNSET_TRANSITION
 
         case .dusk:
-             let transitionLength = earlyTwilightLength_duskTransition + lateTwilightLength_duskTransition
-            eveningTwilightStart = lengthOfDay - earlyTwilightLength_duskTransition
-            eveningTwilightEnd = lateTwilightLength_duskTransition
+            let transitionLength = EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION
+            eveningTwilightStart = LENGTH_OF_DAY - EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION
+            eveningTwilightEnd = LATE_TWILIGHT_LENGTH_DUSK_TRANSITION
             morningTwilightEnd = 13 * 60
             morningTwilightStart = morningTwilightEnd - transitionLength
 
         default:
             debugPrint(#file, #function, transitionType)
-
-        } // switch transitionType.0
+        } // switch transitionType
 
         if morningTwilightStart <= minutes && minutes < morningTwilightEnd {
             // Morning twilight
@@ -213,12 +258,12 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
             bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
         } else if transitionType == .dusk && eveningTwilightStart <= minutes {
             // Early evening twilight, dusk transition
-            let progress = CGFloat((lengthOfDay - minutes) / (earlyTwilightLength_duskTransition + lateTwilightLength_duskTransition))
+            let progress = CGFloat((LENGTH_OF_DAY - minutes) / (EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION))
             topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
             bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
         } else if transitionType == .dusk && minutes < eveningTwilightEnd {
             // Late evening twilight, dusk transition
-            let progress = CGFloat((earlyTwilightLength_duskTransition + minutes) / (earlyTwilightLength_duskTransition + lateTwilightLength_duskTransition))
+            let progress = CGFloat((EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + minutes) / (EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION))
             topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
             bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
         } else if hour >= 0 && hour <= 11 {
@@ -235,7 +280,7 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
     } // func skyGradientColors() -> [Color]
 
     var body:  some View {
-        if !runningOnWatchOS && processedRow.hasValidTime && (processedRow.transitionType == .sunset || processedRow.transitionType == .dusk) {
+        if !runningOnWatchOS && processedRow.hasValidTime && processedRow.transitionType != .noon {
             ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                 .padding(.horizontal)
@@ -250,6 +295,8 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
     } //var body:  some View
 } // struct ASAStyledClockDateAndTimeSubcell
 
+
+// MARK:  -
 
 struct ASAClockDateAndTimeSubcell:  View {
     var processedRow:  ASAProcessedRow
@@ -296,6 +343,8 @@ struct ASAClockDateAndTimeSubcell:  View {
     } // var body
 } // struct ASAClockDateAndTimeSubcell
 
+
+// MARK:  -
 
 struct ASAPlaceSubcell:  View {
     var processedRow:  ASAProcessedRow
@@ -353,6 +402,8 @@ struct ASAPlaceSubcell:  View {
 }
 
 
+// MARK:  -
+
 struct ASAClockPizzazztron:  View {
     var processedRow:  ASAProcessedRow
 
@@ -375,6 +426,8 @@ struct ASAClockPizzazztron:  View {
     } // var body
 } // struct ASAClockPizzazztron
 
+
+// MARK:  -
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
