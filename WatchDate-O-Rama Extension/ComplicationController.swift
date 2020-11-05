@@ -399,9 +399,9 @@ struct ASAThreeLinesLargeView:  View {
 
     var body: some View {
         VStack(alignment:  .center) {
-            ASAClockCellText(string: line0, font: .headline)
-            ASAClockCellText(string: line1, font: .headline)
-            ASAClockCellText(string: line2, font: .headline)
+            ASAClockCellText(string: line0, font: .headline, lineLimit: 1)
+            ASAClockCellText(string: line1, font: .headline, lineLimit: 1)
+            ASAClockCellText(string: line2, font: .headline, lineLimit: 1)
         } // VStack
     } // var body
 } // struct ASAThreeLinesLargeView

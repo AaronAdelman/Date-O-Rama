@@ -37,21 +37,7 @@ struct ASAClockCell: View {
 
     var body: some View {
         HStack {
-            VStack(alignment: .leading) {
-                if shouldShowCalendar {
-                    HStack {
-                        #if os(watchOS)
-                        #else
-                        ASACalendarSymbol()
-                        #endif
-                        ASAClockCellText(string:  processedRow.calendarString, font:  .subheadline)
-                    }
-                }
-
-                ASAStyledClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET:  INSET)
-
-
-            } // VStack
+            ASAStyledClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET:  INSET)
 
             #if os(watchOS)
             #else
@@ -59,32 +45,68 @@ struct ASAClockCell: View {
                 Spacer()
             }
 
-            if self.sizeClass == .compact {
-                VStack {
-                    if processedRow.supportsMonths {
-                        ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
-                    }
-
-                    if shouldShowClockPizzazztron() {
-                        ASAClockPizzazztron(processedRow:  processedRow)
-                    }
-                }
-            } else {
-                HStack {
-                    if processedRow.supportsMonths {
-                        ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
-                    }
-
-                    if shouldShowClockPizzazztron() {
-                        ASAClockPizzazztron(processedRow:  processedRow)
-                    }
-                }
-            }
-
+            ASAClockPizzazztronCell(processedRow: processedRow, shouldShowTime: shouldShowTime)
             #endif
         } // HStack
     } // var body
 } // struct ASAClockCell
+
+
+// MARK: -
+
+struct ASAClockPizzazztronCell:  View {
+    #if os(watchOS)
+    let compact = false
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+    #endif
+
+    var processedRow:  ASAProcessedRow
+    var shouldShowTime:  Bool
+
+    fileprivate func shouldShowClockPizzazztron() -> Bool {
+        return shouldShowTime && processedRow.hasValidTime
+    } //func shouldShowClockPizzazztron() -> Bool
+
+    fileprivate func numberFormatter() -> NumberFormatter {
+        let temp = NumberFormatter()
+        temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
+        return temp
+    } // func numberFormatter() -> NumberFormatter
+
+    var body:  some View {
+        #if os(watchOS)
+        EmptyView()
+        #else
+        if compact {
+            VStack {
+                if processedRow.supportsMonths {
+                    ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                }
+
+                if shouldShowClockPizzazztron() {
+                    ASAClockPizzazztron(processedRow:  processedRow)
+                }
+            }
+        } else {
+            HStack {
+                if processedRow.supportsMonths {
+                    ASAGridCalendar(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                }
+
+                if shouldShowClockPizzazztron() {
+                    ASAClockPizzazztron(processedRow:  processedRow)
+                }
+            }
+        }
+        #endif
+    }
+}
 
 
 // MARK:  -
@@ -189,8 +211,9 @@ extension Color {
 
 // MARK:  -
 
-struct ASAStyledClockDateAndTimeSubcell:  View {
+struct ASAStyledClockMainSubcell:  View {
     var processedRow:  ASAProcessedRow
+    var shouldShowCalendar:  Bool
     var shouldShowFormattedDate:  Bool
     var shouldShowTime:  Bool
     var shouldShowPlaceName:  Bool
@@ -281,7 +304,7 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
 
     var body:  some View {
         if !runningOnWatchOS && processedRow.hasValidTime && processedRow.transitionType != .noon {
-            ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                 .padding(.horizontal)
                 .background(LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom))
@@ -289,7 +312,7 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
         } else {
             HStack {
                 Spacer().frame(width: self.INSET)
-                ASAClockDateAndTimeSubcell(processedRow: processedRow, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
+                ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET)
             } // HStack
         }
     } //var body:  some View
@@ -298,8 +321,9 @@ struct ASAStyledClockDateAndTimeSubcell:  View {
 
 // MARK:  -
 
-struct ASAClockDateAndTimeSubcell:  View {
+struct ASAClockMainSubcell:  View {
     var processedRow:  ASAProcessedRow
+    var shouldShowCalendar:  Bool
     var shouldShowFormattedDate:  Bool
     var shouldShowTime:  Bool
     var shouldShowPlaceName:  Bool
@@ -307,9 +331,19 @@ struct ASAClockDateAndTimeSubcell:  View {
 
     var body: some View {
         VStack(alignment: .leading) {
+            if shouldShowCalendar {
+                HStack {
+                    #if os(watchOS)
+                    #else
+                    ASACalendarSymbol()
+                    #endif
+                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadline, lineLimit:  1)
+                }
+            }
+
             if processedRow.canSplitTimeFromDate {
                 if shouldShowFormattedDate {
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit(), lineLimit:  2)
                 }
                 if shouldShowTime {
                     HStack {
@@ -321,7 +355,7 @@ struct ASAClockDateAndTimeSubcell:  View {
                         }
                         #endif
 
-                        ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit())
+                        ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit(), lineLimit:  2)
                     }
                 }
             } else if shouldShowFormattedDate {
@@ -334,7 +368,7 @@ struct ASAClockDateAndTimeSubcell:  View {
                     }
                     #endif
 
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit())
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit(), lineLimit:  2)
                 }
             }
 

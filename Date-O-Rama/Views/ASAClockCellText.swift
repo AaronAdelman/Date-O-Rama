@@ -11,6 +11,7 @@ import SwiftUI
 struct ASAClockCellText:  View {
     var string:  String
     var font:  Font
+    var lineLimit:  Int
 
     var body: some View {
         #if os(watchOS)
@@ -25,7 +26,7 @@ struct ASAClockCellText:  View {
             .font(font)
             .minimumScaleFactor(0.5)
             .multilineTextAlignment(.leading)
-            .lineLimit(2)
+            .lineLimit(lineLimit)
             .fixedSize(horizontal: false, vertical: true)
             .allowsTightening(true)
         #endif
@@ -34,6 +35,6 @@ struct ASAClockCellText:  View {
 
 struct ASAClockCellText_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCellText(string: "99 Bottles of Beer on the Wall", font: .headline)
+        ASAClockCellText(string: "99 Bottles of Beer on the Wall", font: .headline, lineLimit: 2)
     }
 }
