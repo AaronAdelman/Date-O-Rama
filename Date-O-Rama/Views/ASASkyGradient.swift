@@ -29,7 +29,7 @@ struct ASASkyGradient: View {
         var morningTwilightStart:  Int = 0
         var morningTwilightEnd:  Int   = 0
 
-        let LENGTH_OF_DAY = 24 * 60 * 60
+        let LENGTH_OF_DAY = 24 * 60
 
         let TWILIGHT_LENGTH_SUNSET_TRANSITION     = 83
         let EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION = 60
