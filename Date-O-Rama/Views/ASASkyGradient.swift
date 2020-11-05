@@ -89,9 +89,22 @@ struct ASASkyGradient: View {
     var processedRow:  ASAProcessedRow
 
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: skyGradientColors(transitionType: processedRow.transitionType)), startPoint: .top, endPoint: .bottom)
-    }
-}
+        ASASkyGradientSubview(colors: skyGradientColors(transitionType: processedRow.transitionType))
+    } // var body
+} // struct ASASkyGradient
+
+
+struct ASASkyGradientSubview:  View {
+    var colors:  Array<Color>
+
+    var body: some View {
+        if colors[0] == colors[1] {
+            colors[0]
+        } else {
+            LinearGradient(gradient: Gradient(colors: colors), startPoint: .top, endPoint: .bottom)
+        }
+    } // var body
+} // struct ASASkyGradientSubview
 
 //struct ASASkyGradient_Previews: PreviewProvider {
 //    static var previews: some View {
