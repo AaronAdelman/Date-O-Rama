@@ -1,5 +1,5 @@
 //
-//  ASAGridCalendar.swift
+//  ASACalendarPizzazztron.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 01/11/2020.
@@ -61,7 +61,7 @@ extension Int {
 } // extension Int
 
 
-struct ASAGridCalendar:  View {
+struct ASACalendarPizzazztron:  View {
     var daysPerWeek:  Int
     var day:  Int
     var weekday:  Int
@@ -120,11 +120,11 @@ struct ASAGridCalendar:  View {
             }
         }
     }
-} // struct ASAGridCalendar
+} // struct ASACalendarPizzazztron
 
 
-struct ASAGridCalendar_Previews: PreviewProvider {
+struct ASACalendarPizzazztron_Previews: PreviewProvider {
     static var previews: some View {
-        ASAGridCalendar(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter())
+        ASACalendarPizzazztron(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter())
     }
 }

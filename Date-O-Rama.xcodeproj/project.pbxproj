@@ -100,7 +100,7 @@
 		A57F441F24BC5DD1005261EE /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
 		A57F442024BC69FE005261EE /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
 		A57F442124BC6A25005261EE /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
-		A5832B88254ED124008E8A97 /* ASAGridCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASAGridCalendar.swift */; };
+		A5832B88254ED124008E8A97 /* ASACalendarPizzazztron.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASACalendarPizzazztron.swift */; };
 		A584C8FD24B4FDC10014CE2E /* ASAInternalEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAInternalEventsFile.swift */; };
 		A584C8FE24B5E3DB0014CE2E /* ASAInternalEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAInternalEventsFile.swift */; };
 		A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
@@ -272,7 +272,7 @@
 		A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAConfiguration.swift; sourceTree = "<group>"; };
 		A57F441C24BC5908005261EE /* ASADateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateComponents.swift; sourceTree = "<group>"; };
 		A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarComponent.swift; sourceTree = "<group>"; };
-		A5832B87254ED124008E8A97 /* ASAGridCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGridCalendar.swift; sourceTree = "<group>"; };
+		A5832B87254ED124008E8A97 /* ASACalendarPizzazztron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarPizzazztron.swift; sourceTree = "<group>"; };
 		A584C8FC24B4FDC10014CE2E /* ASAInternalEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Daily Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Daily Jewish events.json"; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
@@ -609,13 +609,13 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5832B87254ED124008E8A97 /* ASACalendarPizzazztron.swift */,
 				A506E3C5252C90FE009345A0 /* ASACalendarSymbol.swift */,
 				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 				A564C13F2548731B000F2CDF /* ASAClockCellText.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
 				A50CD63325541B3F00B781EC /* ASAClockPizzazztron.swift */,
-				A5832B87254ED124008E8A97 /* ASAGridCalendar.swift */,
 				A57BCCB8247D566A0019C02C /* ASAInternalEventCalendarDetailView.swift */,
 				A57BCCA8247AA8310019C02C /* ASAInternalEventCalendarsView.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
@@ -973,7 +973,7 @@
 				A5C77C012433361400CFEE47 /* ASAClocksView.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */,
 				A57BCCB7247BC55F0019C02C /* ASAInternalEventCalendarFactory.swift in Sources */,
-				A5832B88254ED124008E8A97 /* ASAGridCalendar.swift in Sources */,
+				A5832B88254ED124008E8A97 /* ASACalendarPizzazztron.swift in Sources */,
 				A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
