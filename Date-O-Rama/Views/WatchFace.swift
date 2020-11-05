@@ -158,10 +158,10 @@ struct Watch:  View {
                 .frame(width: 0.5, alignment: .center)
                 .rotationEffect(.radians(secondAngle))
 
-//            Circle()
-//                .fill()
+            Circle()
+                .fill()
 //                .foregroundColor(.red)
-//                .frame(width: 1.0, height: 1.0, alignment: .center)
+                .frame(width: 4.0, height: 4.0, alignment: .center)
         }
         .frame(width: WATCH_DIMENSION, height: WATCH_DIMENSION, alignment: .center)
         .environment(\.layoutDirection, .leftToRight)
