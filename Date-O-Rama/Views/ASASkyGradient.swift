@@ -55,7 +55,7 @@ struct ASASkyGradient: View {
 
         if morningTwilightStart <= minutes && minutes < morningTwilightEnd {
             // Morning twilight
-            let progress = CGFloat((minutes - morningTwilightStart) / (morningTwilightEnd - morningTwilightStart))
+            let progress = CGFloat(minutes - morningTwilightStart) / CGFloat(morningTwilightEnd - morningTwilightStart)
             topColor = Color.blend(startColor: .midnightBlue, endColor: .skyBlue, progress: progress)
             bottomColor = Color.blend(startColor: .midnightBlue, endColor: .sunsetRed, progress: progress)
         } else if transitionType == .sunset && eveningTwilightStart <= minutes && minutes < eveningTwilightEnd {
@@ -65,12 +65,12 @@ struct ASASkyGradient: View {
             bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
         } else if transitionType == .dusk && eveningTwilightStart <= minutes {
             // Early evening twilight, dusk transition
-            let progress = CGFloat((LENGTH_OF_DAY - minutes) / (EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION))
+            let progress = CGFloat(LENGTH_OF_DAY - minutes) / CGFloat(EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION)
             topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
             bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
         } else if transitionType == .dusk && minutes < eveningTwilightEnd {
             // Late evening twilight, dusk transition
-            let progress = CGFloat((EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + minutes) / (EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION))
+            let progress = CGFloat(EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + minutes) / CGFloat(EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION)
             topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
             bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
         } else if hour >= 0 && hour <= 11 {
