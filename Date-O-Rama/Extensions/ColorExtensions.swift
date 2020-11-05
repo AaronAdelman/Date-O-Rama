@@ -110,15 +110,25 @@ extension Color {
         } // get
     } // var components
 
-    static func blend(startColor:  Color, endColor:  Color, progress:  CGFloat) -> Color {
-        let oneOverProgress:  CGFloat = 1.0 - progress
+//    static func blend(startColor:  Color, endColor:  Color, progress:  CGFloat) -> Color {
+//        let oneOverProgress:  CGFloat = 1.0 - progress
+//
+//        let startComponents = startColor.components
+//        let endComponents = endColor.components
+//        let red   = startComponents.0 * oneOverProgress + endComponents.0 * progress
+//        let green = startComponents.1 * oneOverProgress + endComponents.1 * progress
+//        let blue  = startComponents.2 * oneOverProgress + endComponents.2 * progress
+//        let result = Color(red: Double(red), green: Double(green), blue: Double(blue))
+//        return result
+//    } // func blend(startColor:  Color, endColor:  Color, progress:  CGFloat)
 
-        let startComponents = startColor.components
-        let endComponents = endColor.components
-        let red   = startComponents.0 * oneOverProgress + endComponents.0 * progress
-        let green = startComponents.1 * oneOverProgress + endComponents.1 * progress
-        let blue  = startComponents.2 * oneOverProgress + endComponents.2 * progress
-        let result = Color(red: Double(red), green: Double(green), blue: Double(blue))
+    static func blend(startRed:  Double, startGreen:  Double, startBlue:  Double, endRed:  Double, endGreen:  Double, endBlue:  Double, progress:  Double) -> Color {
+        let oneOverProgress = 1.0 - progress
+
+        let red   = startRed * oneOverProgress + endRed * progress
+        let green = startGreen * oneOverProgress + endGreen * progress
+        let blue  = startBlue * oneOverProgress + endBlue * progress
+        let result = Color(red: red, green: green, blue: blue)
         return result
-    } // func blend(startColor:  Color, endColor:  Color, progress:  CGFloat)
+    } // static func blend(startRed:  Double, startGreen:  Double, startBlue:  Double, endRed:  Double, endGreen:  Double, endBlue:  Double, progress:  Double) -> Color
 } // extension Color
