@@ -95,7 +95,7 @@ struct ASAGridCalendar:  View {
         } // get
     } // var gridLayout
 
-    let font:  Font = Font.system(size: 9.5).bold()
+    let font:  Font = Font.system(size: 10.0).bold()
 
     fileprivate func gridRange() -> ClosedRange<Int> {
         let gridFirstDay = -(weekdayOfDay1 - 2)
