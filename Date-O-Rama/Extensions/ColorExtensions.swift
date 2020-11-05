@@ -45,22 +45,35 @@ fileprivate func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bo
 
 // MARK: -
 
+let SKY_BLUE_RED: Double   = 20.0 / 255.0
+let SKY_BLUE_GREEN: Double = 117.0 / 255.0
+let SKY_BLUE_BLUE: Double  = 157.0 / 255.0
+
+let MIDNIGHT_BLUE_RED: Double   = 12.0 / 255.0
+let MIDNIGHT_BLUE_GREEN: Double = 15.0 / 255.0
+let MIDNIGHT_BLUE_BLUE: Double  = 38.0 / 255.0
+
+let SUNSET_RED_RED: Double   = 99.0 / 255.0
+let SUNSET_RED_GREEN: Double = 29.0 / 255.0
+let SUNSET_RED_BLUE: Double  = 35.0 / 255.0
+
+
 extension Color {
     static var skyBlue:  Color {
         get {
-            return Color(red: 20.0 / 255.0, green: 117.0 / 255.0, blue: 157.0 / 255.0)
+            return Color(red: SKY_BLUE_RED, green: SKY_BLUE_GREEN, blue: SKY_BLUE_BLUE)
         } // get
     } // static var skyBlue
 
     static var midnightBlue:  Color {
         get {
-            return Color(red: 12.0 / 255.0, green: 15.0 / 255.0, blue: 38.0 / 255.0)
+            return Color(red: MIDNIGHT_BLUE_RED, green: MIDNIGHT_BLUE_GREEN, blue: MIDNIGHT_BLUE_BLUE)
         } // get
     } // static var midnightBlue
 
     static var sunsetRed:  Color {
         get {
-            return Color(red: 99.0 / 255.0, green: 29.0 / 255.0, blue: 35.0 / 255.0)
+            return Color(red: SUNSET_RED_RED, green: SUNSET_RED_GREEN, blue: SUNSET_RED_BLUE)
         } // get
     } // static var sunsetRed
 
