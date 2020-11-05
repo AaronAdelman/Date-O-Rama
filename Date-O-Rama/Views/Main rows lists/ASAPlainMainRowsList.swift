@@ -48,7 +48,7 @@ struct ASAPlainMainRowsList:  View {
             processedRow
             in
             HStack {
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                 Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             }
         } // ForEach
@@ -66,7 +66,7 @@ struct ASAPlainMainRowsList:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
             ) {
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true)
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
             }
         } // ForEach
         .onMove { (source: IndexSet, destination: Int) -> Void in
