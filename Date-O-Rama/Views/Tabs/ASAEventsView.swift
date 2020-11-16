@@ -336,9 +336,12 @@ struct ASALinkedEventCell:  View {
     @State private var showingEventView = false
 
     let CLOSE_BUTTON_TITLE = "Done"
+
+    let FRAME_MIN_WIDTH:  CGFloat  = 300.0
+    let FRAME_MIN_HEIGHT:  CGFloat = 500.0
     
     var body: some View {
-        Group {
+//        Group {
             if event.isEKEvent {
                 HStack {
                     ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
@@ -388,7 +391,7 @@ struct ASALinkedEventCell:  View {
             } else {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
             }
-        }
+//        }
     }
 } // struct ASALinkedEventCell
 
