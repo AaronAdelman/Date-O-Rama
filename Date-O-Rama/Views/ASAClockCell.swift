@@ -75,14 +75,11 @@ struct ASAClockCellBody:  View {
         HStack {
             ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET:  INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
 
-//            #if os(watchOS)
-//            #else
             if (processedRow.supportsMonths || shouldShowTime) {
                 Spacer()
             }
 
             ASAClockPizzazztronSubcell(processedRow: processedRow, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
-//            #endif
         } // HStack
     }
 }

@@ -154,14 +154,15 @@ struct Watch:  View {
             // Second hand
             Hand(offset: 3.0)
                 .fill()
-//                .foregroundColor(.secondary)
+                .foregroundColor(.orange)
                 .frame(width: 0.5, alignment: .center)
                 .rotationEffect(.radians(secondAngle))
 
             Circle()
                 .fill()
-//                .foregroundColor(.red)
+//                .foregroundColor(.gray)
                 .frame(width: 4.0, height: 4.0, alignment: .center)
+                .shadow(color: .black, radius: 1.0, x: 1.0, y: 1.0)
         }
         .frame(width: WATCH_DIMENSION, height: WATCH_DIMENSION, alignment: .center)
         .environment(\.layoutDirection, .leftToRight)

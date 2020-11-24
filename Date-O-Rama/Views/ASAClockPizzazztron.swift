@@ -18,15 +18,11 @@ struct ASAClockPizzazztron:  View {
     } // func progress() -> Double
 
     var body: some View {
-        #if os(watchOS)
-        EmptyView()
-        #else
         if processedRow.calendarType == .JulianDay {
             ProgressView(value: progress())
         } else {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second)
         }
-        #endif
     } // var body
 } // struct ASAClockPizzazztron
 
