@@ -21,6 +21,8 @@ enum ASAMajorDateFormat:  String {
     case ISO8601YearDay      = "ISO8601YearDay"
     case shortWithWeekday    = "shortWithWeekday"
     case mediumWithWeekday   = "mediumWithWeekday"
+    case abbreviatedWeekday  = "abbreviatedWeekday"
+    case dayOfMonth          = "dayOfMonth"
 } // enum ASAMajorDateFormat
 
 extension ASAMajorDateFormat {
@@ -51,6 +53,10 @@ extension ASAMajorDateFormat {
             unlocalizedString = "ITEM_ShortWithWeekday"
         case .mediumWithWeekday:
             unlocalizedString = "ITEM_MediumWithWeekday"
+        case .abbreviatedWeekday:
+            unlocalizedString = "ITEM_AbbreviatedWeekday"
+        case .dayOfMonth:
+            unlocalizedString = "ITEM_DayOfMonth"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String

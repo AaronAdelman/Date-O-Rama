@@ -17,4 +17,9 @@ extension DateFormatter {
             self.setLocalizedDateFormatFromTemplate(dateFormat!)
         }
     } // func setDateStyle(dateStyle:  DateFormatter.Style, LDMLExtension:  String)
+
+    func apply(dateStyle:  DateFormatter.Style, template:  String) {
+        self.dateStyle = dateStyle
+        self.setLocalizedDateFormatFromTemplate(template)
+    } // func apply(dateStyle:  DateFormatter.Style, template:  String)
 } // extension DateFormatter

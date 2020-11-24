@@ -96,6 +96,12 @@ class ASAAppleCalendar:  ASACalendar {
         case .mediumWithWeekday:
             self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "E")
 
+        case .abbreviatedWeekday:
+            self.dateFormatter.apply(dateStyle: .short, template: "eee")
+
+        case .dayOfMonth:
+            self.dateFormatter.apply(dateStyle: .short, template: "d")
+
         default:
             self.dateFormatter.dateStyle = .full
         } // switch majorDateFormat
@@ -195,6 +201,8 @@ class ASAAppleCalendar:  ASACalendar {
         .mediumWithWeekday,
         .short,
         .shortWithWeekday,
+        .abbreviatedWeekday,
+        .dayOfMonth,
         .localizedLDML
     ]
     

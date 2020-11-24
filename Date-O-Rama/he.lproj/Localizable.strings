@@ -208,6 +208,8 @@
 "ITEM_ISO8601YearDay"               = "ISO 8601 (שנה-יום)";
 "ITEM_ShortWithWeekday"             = "מקוצר עם יום־השבוע";
 "ITEM_MediumWithWeekday"            = "בינוני עם יום־השבוע";
+"ITEM_AbbreviatedWeekday"           = "יום בשבוע מקוצר";
+"ITEM_DayOfMonth"                   = "יום בחודש";
 
 "ITEM_decimalTwelveHour"            = "עשרוני 12 שעות";
 "ITEM_JewishCalendricalCalculation" = "יהודי, חישוב הלוח";

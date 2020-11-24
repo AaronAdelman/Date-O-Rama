@@ -208,6 +208,8 @@
 "ITEM_ISO8601YearDay"               = "ISO 8601 (Year-Day)";
 "ITEM_ShortWithWeekday"             = "Short with Weekday";
 "ITEM_MediumWithWeekday"            = "Medium with Weekday";
+"ITEM_AbbreviatedWeekday"           = "Abbreviated Weekday";
+"ITEM_DayOfMonth"                   = "Day of Month";
 
 "ITEM_decimalTwelveHour"            = "Decimal twelve-hour";
 "ITEM_JewishCalendricalCalculation" = "Jewish calendrical calculation";
