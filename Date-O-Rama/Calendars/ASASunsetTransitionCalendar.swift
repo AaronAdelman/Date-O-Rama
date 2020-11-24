@@ -66,8 +66,7 @@
     } //
 
     fileprivate func invalidTimeString() -> String {
-        return "???"
-        // TODO:  Make this a bit fancier.
+        return NSLocalizedString("NO_SOLAR_TIME", comment: "")
     }
 
     func solarTimeComponents(now: Date, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool) {
