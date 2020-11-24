@@ -275,6 +275,12 @@
 "utilitarianLarge" = "שורות תצוגות גדולות של שור 1";
 "utilitarian"      = "שורות תצוגות קטנות של שור 1";
 
+"3-line large" = "גדולה של 3 שורות";
+"2-line small" = "קטנה של 2 שורות";
+"2-line large" = "גדולה של 2 שורות";
+"1-line small" = "קטנה של שור 1";
+"1-line large" = "גדולה של שור 1";
+
 "Show calendars:"      = "הצג לוחות:";
 "All calendars"        = "כל לוחות";
 "Apple calendars"      = "לוחות אפל";

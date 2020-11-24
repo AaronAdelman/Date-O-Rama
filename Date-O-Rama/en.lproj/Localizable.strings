@@ -275,6 +275,12 @@
 "utilitarianLarge" = "One-line large complication rows";
 "utilitarian"      = "One-line small complication rows";
 
+"3-line large" = "3-line large";
+"2-line small" = "2-line small";
+"2-line large" = "2-line large";
+"1-line small" = "1-line small";
+"1-line large" = "1-line large";
+
 "Show calendars:"      = "Show calendars:";
 "All calendars"        = "All calendars";
 "Apple calendars"      = "Apple calendars";

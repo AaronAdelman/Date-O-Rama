@@ -376,16 +376,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let threeLineLargeRowsDescriptor = CLKComplicationDescriptor(
             identifier: ASARowArrayKey.threeLineLarge.rawValue,
-            displayName: "3-line large",
+            displayName: NSLocalizedString("3-line large", comment: ""),
             supportedFamilies: [.modularLarge, .graphicRectangular])
 
-        let twoLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineSmall.rawValue, displayName: "2-line small", supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
+        let twoLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineSmall.rawValue, displayName: NSLocalizedString("2-line small", comment: ""), supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
 
-        let twoLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineLarge.rawValue, displayName: "2-line large", supportedFamilies: [.extraLarge])
+        let twoLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineLarge.rawValue, displayName: NSLocalizedString("2-line large", comment: ""), supportedFamilies: [.extraLarge])
 
-        let oneLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineSmall.rawValue, displayName: "1-line small", supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
+        let oneLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineSmall.rawValue, displayName: NSLocalizedString("1-line small", comment: ""), supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
 
-        let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineLarge.rawValue, displayName: "1-line large", supportedFamilies: [.utilitarianLarge])
+        let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineLarge.rawValue, displayName: NSLocalizedString("1-line large", comment: ""), supportedFamilies: [.utilitarianLarge])
 
         handler([threeLineLargeRowsDescriptor, twoLineSmallRowsDescriptor, twoLineLargeRowsDescriptor, oneLineSmallRowsDescriptor, oneLineLargeRowsDescriptor])
     }
