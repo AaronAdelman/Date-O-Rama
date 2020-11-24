@@ -41,11 +41,8 @@ struct ASAClockCell: View {
                 .padding(EdgeInsets(top: 4.0, leading: 4.0, bottom: 4.0, trailing: 4.0))
                 .background(ASASkyGradient(processedRow: processedRow))
                 .cornerRadius(8.0)
+                .padding(EdgeInsets(top: -5.5, leading: -19.0, bottom: -5.5, trailing: 0.0))
         } else {
-//            HStack {
-//                Spacer().frame(width: self.INSET)
-//                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
-//            } // HStack
             ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
         }
     } // var body
