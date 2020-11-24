@@ -267,7 +267,7 @@
 "External events" = "External events";
 "Internal events" = "Internal events";
 
-"???" = "???";
+//"???" = "???";
 
 "modularLarge"     = "Three-line large complication rows";
 "modularSmall"     = "Two-line small complication rows";
@@ -339,3 +339,5 @@
 "External event calendars" = "External event calendars";
 
 "NO_SOLAR_TIME" = "No solar time";
+
+"MYSTERY_LOCATION" = "Mystery location";

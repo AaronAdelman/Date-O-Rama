@@ -267,7 +267,7 @@
 "External events" = "אירועים חיצוניים";
 "Internal events" = "אירועים פנימיים";
 
-"???" = "???";
+//"???" = "???";
 
 "modularLarge"     = "שורות תצוגות גדולות של 3 שורות";
 "modularSmall"     = "שורות תצוגות קטנות של 2 שורות";
@@ -339,3 +339,5 @@
 "External event calendars" = "לוחות שנה אירועים חיצוניים";
 
 "NO_SOLAR_TIME" = "אין זמן שמשי";
+
+"MYSTERY_LOCATION" = "מקום מסתריון";

@@ -59,7 +59,7 @@ extension ASALocationData {
                 } else if self.location != nil {
                     temp = self.location!.humanInterfaceRepresentation
                 } else {
-                    temp = "???"
+                    temp = NSLocalizedString("MYSTERY_LOCATION", comment: "")
                 }
             }
 
@@ -85,7 +85,7 @@ extension ASALocationData {
             } else if self.location != nil {
                 return self.location!.humanInterfaceRepresentation
             } else {
-                return "???"
+                return NSLocalizedString("MYSTERY_LOCATION", comment: "")
             }
         } // get
     } // var shortFormattedOneLineAddress
@@ -116,7 +116,7 @@ extension ASALocationData {
                 if self.location != nil {
                     temp = self.location!.humanInterfaceRepresentation
                 } else {
-                    temp = "???"
+                    temp = NSLocalizedString("MYSTERY_LOCATION", comment: "")
                 }
             }
 
