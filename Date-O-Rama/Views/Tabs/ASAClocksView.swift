@@ -58,6 +58,7 @@ struct ASAClocksView: View {
                 ) {
                     Text("Add clock")
                 }
+                .foregroundColor(.accentColor)
 
                 switch self.mainRowsGroupingOption {
                 case .plain:
