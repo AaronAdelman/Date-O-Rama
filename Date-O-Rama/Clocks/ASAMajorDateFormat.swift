@@ -9,23 +9,24 @@
 import Foundation
 
 enum ASAMajorDateFormat:  String {
-    case none                         = "none"
-    case short                        = "short"
-    case medium                       = "medium"
-    case long                         = "long"
-    case full                         = "full"
-    case localizedLDML                = "loc"
-    //    case rawLDML                = "raw"
-    case ISO8601YearMonthDay          = "ISO8601YearMonthDay"
-    case ISO8601YearWeekDay           = "ISO8601YearWeekDay"
-    case ISO8601YearDay               = "ISO8601YearDay"
-    case shortWithWeekday             = "shortWithWeekday"
-    case mediumWithWeekday            = "mediumWithWeekday"
-    case abbreviatedWeekday           = "abbreviatedWeekday"
-    case dayOfMonth                   = "dayOfMonth"
-    case shortWithWeekdayWithoutYear  = "shortWithWeekdayWithoutYear"
-    case mediumWithWeekdayWithoutYear = "mediumWithWeekdayWithoutYear"
-    case fullWithoutYear              = "fullWithoutYear"
+    case none                             = "none"
+    case short                            = "short"
+    case medium                           = "medium"
+    case long                             = "long"
+    case full                             = "full"
+    case localizedLDML                    = "loc"
+    //    case rawLDML                    = "raw"
+    case ISO8601YearMonthDay              = "ISO8601YearMonthDay"
+    case ISO8601YearWeekDay               = "ISO8601YearWeekDay"
+    case ISO8601YearDay                   = "ISO8601YearDay"
+    case shortWithWeekday                 = "shortWithWeekday"
+    case mediumWithWeekday                = "mediumWithWeekday"
+    case abbreviatedWeekday               = "abbreviatedWeekday"
+    case dayOfMonth                       = "dayOfMonth"
+    case abbreviatedWeekdayWithDayOfMonth = "abbreviatedWeekdayWithDayOfMonth"
+    case shortWithWeekdayWithoutYear      = "shortWithWeekdayWithoutYear"
+    case mediumWithWeekdayWithoutYear     = "mediumWithWeekdayWithoutYear"
+    case fullWithoutYear                  = "fullWithoutYear"
 
 } // enum ASAMajorDateFormat
 
@@ -61,6 +62,8 @@ extension ASAMajorDateFormat {
             unlocalizedString = "ITEM_AbbreviatedWeekday"
         case .dayOfMonth:
             unlocalizedString = "ITEM_DayOfMonth"
+        case .abbreviatedWeekdayWithDayOfMonth:
+            unlocalizedString = "ITEM_AbbreviatedWeekdayWithDayOfMonth"
         case .shortWithWeekdayWithoutYear:
             unlocalizedString = "ITEM_ShortWithWeekdayWithoutYear"
         case .mediumWithWeekdayWithoutYear:

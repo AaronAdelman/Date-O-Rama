@@ -402,6 +402,9 @@
         case .dayOfMonth:
             self.dateFormatter.apply(dateStyle: .short, template: "d")
 
+        case .abbreviatedWeekdayWithDayOfMonth:
+            self.dateFormatter.apply(dateStyle: .short, template: "eeed")
+
         case .shortWithWeekdayWithoutYear:
             self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
 
@@ -521,6 +524,7 @@
         .shortWithWeekday,
         .abbreviatedWeekday,
         .dayOfMonth,
+        .abbreviatedWeekdayWithDayOfMonth,
         .shortWithWeekdayWithoutYear,
         .mediumWithWeekdayWithoutYear,
         .fullWithoutYear,
