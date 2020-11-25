@@ -18,8 +18,23 @@ extension DateFormatter {
         }
     } // func setDateStyle(dateStyle:  DateFormatter.Style, LDMLExtension:  String)
 
+    func apply(dateStyle:  DateFormatter.Style, LDMLExtension:  String, removing:  Array<String>) {
+        self.dateStyle = dateStyle
+        var rawDateFormat = self.dateFormat ?? ""
+        for thingToRemove in removing {
+            rawDateFormat = rawDateFormat.replacingOccurrences(of: thingToRemove, with: "")
+        }
+        let alchemy = LDMLExtension + rawDateFormat
+        let dateFormat = DateFormatter.dateFormat(fromTemplate:alchemy, options: 0, locale: self.locale)
+        if dateFormat != nil {
+            self.setLocalizedDateFormatFromTemplate(dateFormat!)
+        }
+    } // func apply(dateStyle:  DateFormatter.Style, LDMLExtension:  String, removing:  Array<String>)
+
     func apply(dateStyle:  DateFormatter.Style, template:  String) {
         self.dateStyle = dateStyle
         self.setLocalizedDateFormatFromTemplate(template)
     } // func apply(dateStyle:  DateFormatter.Style, template:  String)
+
+    static let yearCodes:  Array<String> = ["y", "G", "Y", "U", "r"]
 } // extension DateFormatter
