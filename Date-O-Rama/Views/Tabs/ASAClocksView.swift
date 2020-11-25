@@ -46,9 +46,11 @@ struct ASAClocksView: View {
                         }
                     }.pickerStyle(MenuPickerStyle())
 
+                    #if !targetEnvironment(macCatalyst)
                     Spacer()
 
                     Text(verbatim: self.mainRowsGroupingOption.text())
+                    #endif
                 }
 
                 Button(

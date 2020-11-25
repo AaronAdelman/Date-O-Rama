@@ -88,9 +88,11 @@ struct ASALocaleChooserView: View {
                                 Text("User’s region locales").tag(USERS_REGION_LOCALES)
                             }).pickerStyle(MenuPickerStyle())
 
+                    #if !targetEnvironment(macCatalyst)
                     Spacer()
 
                     Text(verbatim: self.selection.localeCategoryText)
+                    #endif
                 }
             }
             
