@@ -40,11 +40,11 @@ struct ASAClocksView: View {
         NavigationView {
             List {
                 HStack {
-                Picker(selection: self.$mainRowsGroupingOption, label: Text("Arrangement")) {
-                    ForEach(self.groupingOptions, id:  \.self) {
-                        Text($0.text())
-                    }
-                }.pickerStyle(MenuPickerStyle())
+                    Picker(selection: self.$mainRowsGroupingOption, label: Text("Arrangement")) {
+                        ForEach(self.groupingOptions, id:  \.self) {
+                            Text($0.text())
+                        }
+                    }.pickerStyle(MenuPickerStyle())
 
                     Spacer()
 

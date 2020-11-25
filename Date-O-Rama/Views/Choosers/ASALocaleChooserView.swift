@@ -9,6 +9,35 @@
 import SwiftUI
 import CoreLocation
 
+let ALL_LOCALES            = 0
+let APPLE_LOCALES          = 1
+let USERS_LANGUAGE_LOCALES = 2
+let USERS_REGION_LOCALES   = 3
+
+fileprivate extension Int {
+    var localeCategoryText:  String {
+        get {
+            switch self {
+            case ALL_LOCALES:
+                return NSLocalizedString("All locales", comment: "")
+
+            case APPLE_LOCALES:
+                return NSLocalizedString("All locales", comment: "")
+
+            case USERS_LANGUAGE_LOCALES:
+                return NSLocalizedString("User’s language locales", comment: "")
+
+            case USERS_REGION_LOCALES:
+                return NSLocalizedString("User’s region locales", comment: "")
+
+            default:
+                return ""
+            }
+        } // get
+    } // var calendarCategoryText:  String
+} // extension Int
+
+
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
@@ -20,12 +49,7 @@ struct ASALocaleChooserView: View {
     @State var didCancel = false
     
     @State var providedLocaleIdentifiers:  Array<String>?
-    
-    let ALL_LOCALES            = 0
-    let APPLE_LOCALES          = 1
-    let USERS_LANGUAGE_LOCALES = 2
-    let USERS_REGION_LOCALES   = 3
-    
+
     @State var selection = 0 // All locales
     
     func locales(option:  Int) -> Array<ASALocaleRecord> {
@@ -55,13 +79,19 @@ struct ASALocaleChooserView: View {
     var body: some View {
         List {
             if providedLocaleIdentifiers == nil {
-                Picker(selection: $selection, label:
-                        Text("Show locales:"), content: {
-                            Text("All locales").tag(ALL_LOCALES)
-                            Text("Apple locales").tag(APPLE_LOCALES)
-                            Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
-                            Text("User’s region locales").tag(USERS_REGION_LOCALES)
-                        })
+                HStack {
+                    Picker(selection: $selection, label:
+                            Text("Show locales:"), content: {
+                                Text("All locales").tag(ALL_LOCALES)
+                                Text("Apple locales").tag(APPLE_LOCALES)
+                                Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
+                                Text("User’s region locales").tag(USERS_REGION_LOCALES)
+                            }).pickerStyle(MenuPickerStyle())
+
+                    Spacer()
+
+                    Text(verbatim: self.selection.localeCategoryText)
+                }
             }
             
             ForEach(self.locales(option: selection)) { item in

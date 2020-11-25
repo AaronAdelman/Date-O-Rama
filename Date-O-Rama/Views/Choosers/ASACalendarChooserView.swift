@@ -9,6 +9,42 @@
 import SwiftUI
 import CoreLocation
 
+let ALL_CALENDARS        = 0
+let APPLE_CALENDARS      = 1
+let SOLAR_CALENDARS      = 2
+let LUNISOLAR_CALENDARS  = 3
+let LUNAR_CALENDARS      = 4
+let JULIAN_DAY_CALENDARS = 5
+
+fileprivate extension Int {
+    var calendarCategoryText:  String {
+        get {
+            switch self {
+            case ALL_CALENDARS:
+                return NSLocalizedString("All calendars", comment: "")
+
+            case APPLE_CALENDARS:
+                return NSLocalizedString("Apple calendars", comment: "")
+
+            case SOLAR_CALENDARS:
+                return NSLocalizedString("Solar calendars", comment: "")
+
+            case LUNISOLAR_CALENDARS:
+                return NSLocalizedString("Lunisolar calendars", comment: "")
+
+            case LUNAR_CALENDARS:
+                return NSLocalizedString("Lunar calendars", comment: "")
+
+            case JULIAN_DAY_CALENDARS:
+                return NSLocalizedString("Julian day calendars", comment: "")
+
+            default:
+                return ""
+            }
+        } // get
+    } // var calendarCategoryText:  String
+} // extension Int
+
 struct ASACalendarChooserView: View {
     let calendarCodes:  Array<ASACalendarCode> = [
         .Gregorian,
@@ -49,13 +85,6 @@ struct ASACalendarChooserView: View {
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
-    
-    let ALL_CALENDARS        = 0
-    let APPLE_CALENDARS      = 1
-    let SOLAR_CALENDARS      = 2
-    let LUNISOLAR_CALENDARS  = 3
-    let LUNAR_CALENDARS      = 4
-    let JULIAN_DAY_CALENDARS = 5
 
     @State var selection = 0 // All calendars
     
@@ -92,6 +121,7 @@ struct ASACalendarChooserView: View {
 
     var body: some View {
         List {
+            HStack {
             Picker(selection: $selection, label:
                     Text("Show calendars:")
                    , content: {
@@ -101,7 +131,12 @@ struct ASACalendarChooserView: View {
                     Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
                     Text("Lunar calendars").tag(LUNAR_CALENDARS)
                     Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
-                   })
+                   }).pickerStyle(MenuPickerStyle())
+
+                Spacer()
+
+                Text(verbatim: self.selection.calendarCategoryText)
+            }
             
             ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode
