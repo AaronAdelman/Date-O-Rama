@@ -121,7 +121,7 @@ struct ASACalendarChooserView: View {
 
     var body: some View {
         List {
-            HStack {
+//            HStack {
                 Picker(selection: $selection, label:
                         Text("Show calendars:")
                        , content: {
@@ -131,14 +131,14 @@ struct ASACalendarChooserView: View {
                         Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
                         Text("Lunar calendars").tag(LUNAR_CALENDARS)
                         Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
-                       }).pickerStyle(MenuPickerStyle())
+                       })
 
-                #if !targetEnvironment(macCatalyst)
-                Spacer()
-
-                Text(verbatim: self.selection.calendarCategoryText)
-                #endif
-            }
+//                #if !targetEnvironment(macCatalyst)
+//                Spacer()
+//
+//                Text(verbatim: self.selection.calendarCategoryText)
+//                #endif
+//            }
             
             ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode

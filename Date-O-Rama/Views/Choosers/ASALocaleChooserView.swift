@@ -79,21 +79,21 @@ struct ASALocaleChooserView: View {
     var body: some View {
         List {
             if providedLocaleIdentifiers == nil {
-                HStack {
+//                HStack {
                     Picker(selection: $selection, label:
                             Text("Show locales:"), content: {
                                 Text("All locales").tag(ALL_LOCALES)
                                 Text("Apple locales").tag(APPLE_LOCALES)
                                 Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
                                 Text("User’s region locales").tag(USERS_REGION_LOCALES)
-                            }).pickerStyle(MenuPickerStyle())
+                            })
 
-                    #if !targetEnvironment(macCatalyst)
-                    Spacer()
-
-                    Text(verbatim: self.selection.localeCategoryText)
-                    #endif
-                }
+//                    #if !targetEnvironment(macCatalyst)
+//                    Spacer()
+//
+//                    Text(verbatim: self.selection.localeCategoryText)
+//                    #endif
+//                }
             }
             
             ForEach(self.locales(option: selection)) { item in
