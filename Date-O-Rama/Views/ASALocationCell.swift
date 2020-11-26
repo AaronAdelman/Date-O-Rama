@@ -66,19 +66,19 @@ struct ASALocationCell:  View {
                         Text(locationData.administrativeArea!)
                     }
                 }
-                
+
+                if locationData.postalCode != nil {
+                    HStack {
+                        Spacer()
+                        Text(locationData.postalCode!)
+                    }
+                }
+
                 HStack {
                     Spacer()
                     if locationData.country != nil {
                         Text(locationData.country!)
                         Text((locationData.ISOCountryCode ?? "").flag())
-                    }
-                }
-                
-                if locationData.postalCode != nil {
-                    HStack {
-                        Spacer()
-                        Text(locationData.postalCode!)
                     }
                 }
                 
