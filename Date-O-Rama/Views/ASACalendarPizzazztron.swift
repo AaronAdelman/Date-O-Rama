@@ -8,12 +8,17 @@
 
 import SwiftUI
 
+
 // MARK: - Cells
+
+fileprivate let MINIMUM_CELL_WIDTH:  CGFloat   = 12.0
+fileprivate let MINIMUM_SCALE_FACTOR:  CGFloat =  0.5
 
 struct ASABlankCell:  View {
     var body: some View {
         Rectangle()
             .foregroundColor(.clear)
+            .frame(minWidth:  MINIMUM_CELL_WIDTH)
     } // var body
 } // struct ASABlankCell
 
@@ -27,6 +32,8 @@ struct ASAOrdinaryCell:  View {
             .font(font)
 //            .foregroundColor(.primary)
             .lineLimit(1)
+            .frame(minWidth:  MINIMUM_CELL_WIDTH)
+            .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
 } // struct ASAOrdinaryCell
 
@@ -44,6 +51,8 @@ struct ASAAccentedCell:  View {
                 .font(font)
                 .foregroundColor(.white)
                 .lineLimit(1)
+                .frame(minWidth:  MINIMUM_CELL_WIDTH)
+                .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
         } // ZStack
     } // var body
 } // struct ASAAccentedCell
