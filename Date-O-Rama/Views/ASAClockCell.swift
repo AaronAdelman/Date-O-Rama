@@ -38,7 +38,7 @@ struct ASAClockCell: View {
         if !runningOnWatchOS && processedRow.hasValidTime && processedRow.transitionType != .noon {
             ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
-                .padding(EdgeInsets(top: 4.0, leading: 8.0, bottom: 4.0, trailing: 16.0))
+                .padding(EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0))
                 .background(ASASkyGradient(processedRow: processedRow))
                 .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))
         } else {
