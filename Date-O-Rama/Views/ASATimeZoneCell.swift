@@ -14,7 +14,7 @@ struct ASATimeZoneCell:  View {
 
     var body:  some View {
         HStack {
-            Text(timeZone.emoji(date:  now))
+//            Text(timeZone.emoji(date:  now))
             Text(verbatim:  NSLocalizedString("HEADER_TIME_ZONE", comment: "")).bold()
             Spacer()
             VStack {
@@ -27,6 +27,7 @@ struct ASATimeZoneCell:  View {
                 HStack {
                     Spacer()
                     Text(verbatim:  timeZone.abbreviation(for:  now) ?? "").multilineTextAlignment(.trailing)
+                    Text(timeZone.emoji(date:  now))
                 }
                 HStack {
                     Spacer()

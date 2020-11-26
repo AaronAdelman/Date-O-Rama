@@ -71,26 +71,8 @@ struct ASAClockDetailEditingSection:  View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
             NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
                 HStack {
-                    ASACalendarSymbol()
+//                    ASACalendarSymbol()
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
-                }
-            }
-            if selectedRow.supportsLocales() {
-                NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
-                    HStack {
-                        Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail: selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
-                    }
-                }
-            }
-            if selectedRow.calendar.supportsDateFormats {
-                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat, tempDateGeekFormat: selectedRow.dateGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
-                }
-            }
-            if selectedRow.calendar.supportsTimeFormats && shouldShowTime {
-                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.majorTimeFormat, tempTimeGeekFormat: selectedRow.timeGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
                 }
             }
 
@@ -102,6 +84,25 @@ struct ASAClockDetailEditingSection:  View {
                         Spacer()
                         ASATimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
                     } // VStack
+                }
+            }
+            
+            if selectedRow.supportsLocales() {
+                NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
+//                    HStack {
+//                        Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag() + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+//                    }
+                }
+            }
+            if selectedRow.calendar.supportsDateFormats {
+                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat, tempDateGeekFormat: selectedRow.dateGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
+                }
+            }
+            if selectedRow.calendar.supportsTimeFormats && shouldShowTime {
+                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.majorTimeFormat, tempTimeGeekFormat: selectedRow.timeGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
                 }
             }
         } // Section
