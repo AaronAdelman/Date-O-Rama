@@ -40,7 +40,6 @@ struct ASAClockCell: View {
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                 .padding(EdgeInsets(top: 4.0, leading: 8.0, bottom: 4.0, trailing: 16.0))
                 .background(ASASkyGradient(processedRow: processedRow))
-//                .cornerRadius(8.0)
                 .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))
         } else {
             ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)

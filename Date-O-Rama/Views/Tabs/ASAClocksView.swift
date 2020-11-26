@@ -39,18 +39,13 @@ struct ASAClocksView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    Picker(selection: self.$mainRowsGroupingOption, label: Text("Arrangement")) {
-                        ForEach(self.groupingOptions, id:  \.self) {
-                            Text($0.text())
-                        }
-                    }.pickerStyle(MenuPickerStyle())
-
-                    #if !targetEnvironment(macCatalyst)
-                    Spacer()
-
-                    Text(verbatim: self.mainRowsGroupingOption.text())
-                    #endif
+                NavigationLink(destination:  ASAArrangementChooserView(groupingOption:  self.$mainRowsGroupingOption, tempGroupingOption: self.mainRowsGroupingOption)) {
+                    HStack {
+                        Text("Arrangement")
+                        Spacer()
+                        Text(self.mainRowsGroupingOption.text())
+                    }
+                    .foregroundColor(.accentColor)
                 }
 
                 Button(
