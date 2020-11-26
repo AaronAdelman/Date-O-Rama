@@ -188,7 +188,7 @@
 "ITEM_z_xxxx"    = "ISO 8601 basic, hours, minutes and optional seconds";
 "ITEM_z_xxxxx"   = "ISO 8601 extended, hours, minutes and optional seconds";
 
-"HEADER_Row" = "שורה";
+"HEADER_Row" = "שעון";
 
 "HEADER_Calendar" = "לוח שנה";
 
