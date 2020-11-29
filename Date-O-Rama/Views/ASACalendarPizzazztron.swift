@@ -45,7 +45,7 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
-                .foregroundColor(.red)
+                .foregroundColor(Color(red: 0.75, green: 0.25, blue: 0.25, opacity: 1.0))
 
             Text(numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? "")
                 .font(font)
