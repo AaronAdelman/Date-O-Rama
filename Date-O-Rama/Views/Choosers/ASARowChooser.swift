@@ -36,7 +36,7 @@ struct ASARowCell: View {
                 Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.headline)
                 HStack {
                     if row.usesDeviceLocation {
-                        ASASmallLocationSymbol()
+                        ASASmallLocationSymbol(locationAuthorizationStatus: ASALocationManager.shared.locationAuthorizationStatus)
                     }
                     Text(verbatim:  row.emoji(date:  Date()))
                     Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadline)

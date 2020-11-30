@@ -36,13 +36,13 @@ struct ASAPlaceSubcell:  View {
                             if compact && shouldShowCalendarPizzazztron {
                                 VStack {
                                     if processedRow.usesDeviceLocation {
-                                        ASASmallLocationSymbol()
+                                        ASASmallLocationSymbol(locationAuthorizationStatus: ASALocationManager.shared.locationAuthorizationStatus)
                                     }
                                     Text(verbatim: processedRow.verticalEmojiString)
                                 }
                             } else {
                                 if processedRow.usesDeviceLocation {
-                                    ASASmallLocationSymbol()
+                                    ASASmallLocationSymbol(locationAuthorizationStatus: ASALocationManager.shared.locationAuthorizationStatus)
                                 }
                                 Text(verbatim:  processedRow.emojiString)
                             }
@@ -57,7 +57,7 @@ struct ASAPlaceSubcell:  View {
             #else
             HStack {
                 Spacer().frame(width: self.INSET)
-                ASASmallLocationSymbol()
+                ASASmallLocationSymbol(locationAuthorizationStatus: ASALocationManager.shared.locationAuthorizationStatus)
             } // HStack
             #endif
         }

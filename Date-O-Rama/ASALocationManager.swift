@@ -40,7 +40,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     let notificationCenter = NotificationCenter.default
 
-    @Published var locationStatus: CLAuthorizationStatus? {
+    @Published var locationAuthorizationStatus: CLAuthorizationStatus? {
         willSet {
             objectWillChange.send()
         }
@@ -58,7 +58,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     
     var statusString: String {
-        guard let status = locationStatus else {
+        guard let status = locationAuthorizationStatus else {
             return "unknown"
         }
         
@@ -81,7 +81,7 @@ class ASALocationManager: NSObject, ObservableObject {
 extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        self.locationStatus = status
+        self.locationAuthorizationStatus = status
         print(#function, statusString)
     }
 

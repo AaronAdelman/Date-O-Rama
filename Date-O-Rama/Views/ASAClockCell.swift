@@ -177,7 +177,7 @@ struct ASAClockMainSubcell:  View {
                         #if os(watchOS)
                         if !shouldShowPlaceName {
                             if processedRow.usesDeviceLocation {
-                                ASASmallLocationSymbol()
+                                ASASmallLocationSymbol(locationAuthorizationStatus:  ASALocationManager.shared.locationAuthorizationStatus)
                             }
                         }
                         #endif
@@ -190,7 +190,7 @@ struct ASAClockMainSubcell:  View {
                     #if os(watchOS)
                     if !shouldShowPlaceName {
                         if processedRow.usesDeviceLocation {
-                            ASASmallLocationSymbol()
+                            ASASmallLocationSymbol(locationAuthorizationStatus:  ASALocationManager.shared.locationAuthorizationStatus)
                         }
                     }
                     #endif

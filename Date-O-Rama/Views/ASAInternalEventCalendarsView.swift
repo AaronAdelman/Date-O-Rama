@@ -69,7 +69,7 @@ struct ASAInternalEventCalendarCell:  View {
     var body:  some View {
         HStack {
             if eventCalendar.usesDeviceLocation {
-                ASASmallLocationSymbol()
+                ASASmallLocationSymbol(locationAuthorizationStatus: ASALocationManager.shared.locationAuthorizationStatus)
             }
             Text(eventCalendar.emoji(date: now))
             Text(eventCalendar.eventCalendarName()).font(.headline)
