@@ -37,7 +37,7 @@ struct ASAEventsView: View {
 
     @Environment(\.horizontalSizeClass) var sizeClass
 
-    @State var showingPreferences:  Bool = false
+    @State private var showingPreferences:  Bool = false
     @State private var showingEventCalendarChooserView = false
     
     var primaryRow:  ASARow {
@@ -71,7 +71,7 @@ struct ASAEventsView: View {
             let secondaryRowStartOfNextDay = self.secondaryRow.startOfNextDay(date: date)
 
             let result: Bool = primaryRowStartOfDay == secondaryRowStartOfDay && primaryRowStartOfNextDay == secondaryRowStartOfNextDay
-//            debugPrint(#file, #function, "Primary row:", primaryRowStartOfDay, primaryRowStartOfNextDay, "Secondary row:", secondaryRowStartOfDay, secondaryRowStartOfNextDay)
+            //            debugPrint(#file, #function, "Primary row:", primaryRowStartOfDay, primaryRowStartOfNextDay, "Secondary row:", secondaryRowStartOfDay, secondaryRowStartOfNextDay)
             return result
         }
     }
@@ -128,7 +128,7 @@ struct ASAEventsView: View {
             VStack {
                 ASADatePicker(date: $date, primaryRow: self.primaryRow)
 
-                Form {
+                List {
                     Section {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $primaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
@@ -167,7 +167,6 @@ struct ASAEventsView: View {
                         }
 
                         if useExternalEvents {
-                            #if targetEnvironment(macCatalyst)
                             Button(action:
                                     {
                                         self.showingEventEditView = true
@@ -175,21 +174,10 @@ struct ASAEventsView: View {
                                         Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                }
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+                                        .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                                    }
                                 .foregroundColor(.accentColor)
-                            #else
-                            Button(action:
-                                    {
-                                        self.showingEventEditView = true
-                                    }, label:  {
-                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
-                                    })
-                                .sheet(isPresented:  $showingEventEditView) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                }
-                                .foregroundColor(.accentColor)
-                            #endif
                         }
 
                         Toggle(isOn: $showingPreferences) {
@@ -202,6 +190,7 @@ struct ASAEventsView: View {
                                 self.primaryRowUUIDString = self.secondaryRowUUIDString
                                 self.secondaryRowUUIDString = tempRowUUIDString
                             }
+                            .foregroundColor(.accentColor)
                             
                             if self.enoughRowsToShowSecondaryDates() {
                                 Toggle(isOn: $eventsViewShouldShowSecondaryDates) {
@@ -213,30 +202,16 @@ struct ASAEventsView: View {
                                 ASAIndentedText(title: "Use external events")
                             } // Toggle
 
-                            #if targetEnvironment(macCatalyst)
                             Button(action:
                                     {
                                         self.showingEventCalendarChooserView = true
                                     }, label:  {
-                                        Text(NSLocalizedString("External event calendars", comment: ""))
+                                        ASAIndentedText(title: NSLocalizedString("External event calendars", comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
                                     ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                                 }
                                 .foregroundColor(.accentColor)
-                            #else
-                            Button(action:
-                                    {
-                                        self.showingEventCalendarChooserView = true
-                                    }, label:  {
-                                        Text(NSLocalizedString("External event calendars", comment: ""))
-                                    })
-                                .sheet(isPresented:  $showingEventCalendarChooserView) {
-                                    ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                }
-                                .foregroundColor(.accentColor)
-                            #endif
-
 
                             NavigationLink(destination:                             ASAInternalEventCalendarsView()
                             ) {
@@ -341,57 +316,36 @@ struct ASALinkedEventCell:  View {
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
     
     var body: some View {
-//        Group {
-            if event.isEKEvent {
-                HStack {
-                    ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
-                    
-                    Spacer()
-                    
-                    #if targetEnvironment(macCatalyst)
-                    Button(action:  {
-                        self.showingEventView = true
-                    }, label:  {
-                        Image(systemName: "info.circle.fill") .font(Font.system(.title))
-                    })
-                        .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    Spacer()
-                                    Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
-                                        self.showingEventView = false
-                                    })
-                                    Spacer().frame(width:  30)
-                                }
-                                ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                            }
-                    }.foregroundColor(.accentColor)
-                    #else
-                    Button(action:  {
-                        self.showingEventView = true
-                    }, label:  {
-                        Image(systemName: "info.circle.fill") .font(Font.system(.title)).imageScale(.small)
-                    })
-                        .sheet(isPresented: $showingEventView) {
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    Spacer()
-                                    Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
-                                        self.showingEventView = false
-                                    })
-                                    Spacer().frame(width:  20)
-                                }
-                                ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  300, minHeight:  300)
-                            }
-                    }.foregroundColor(.accentColor)
-                    #endif
-                }
-            } else {
+        //        Group {
+        if event.isEKEvent {
+            HStack {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
+
+                Spacer()
+
+                Button(action:  {
+                    self.showingEventView = true
+                }, label:  {
+                    Image(systemName: "info.circle.fill") .font(Font.system(.title))
+                })
+                .popover(isPresented: $showingEventView, arrowEdge: .leading) {
+//                    VStack {
+//                        Spacer()
+//                        HStack {
+//                            Spacer()
+//                            Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
+//                                self.showingEventView = false
+//                            })
+//                            Spacer().frame(width:  30)
+//                        }
+                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+//                    }
+                }.foregroundColor(.accentColor)
             }
-//        }
+        } else {
+            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
+        }
+        //        }
     }
 } // struct ASALinkedEventCell
 

@@ -1,5 +1,5 @@
 //
-//  CalendarChooser.swift
+//  ASAEKCalendarChooserView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 28/10/2020.
@@ -7,8 +7,8 @@
 //  Based on https://nemecek.be/blog/39/how-to-use-ekcalendarchooser-with-swiftui
 //
 
-import SwiftUI
 import EventKitUI
+import SwiftUI
 
 struct ASAEKCalendarChooserView: UIViewControllerRepresentable {
     func makeCoordinator() -> Coordinator {
@@ -35,12 +35,13 @@ struct ASAEKCalendarChooserView: UIViewControllerRepresentable {
     class Coordinator: NSObject, UINavigationControllerDelegate, EKCalendarChooserDelegate {
         let parent: ASAEKCalendarChooserView
 
-
         init(_ parent: ASAEKCalendarChooserView) {
             self.parent = parent
         }
 
         func calendarChooserDidFinish(_ calendarChooser: EKCalendarChooser) {
+            debugPrint(#file, #function, calendarChooser)
+
             let calendars = calendarChooser.selectedCalendars
             parent.externalEventManager.calendars = Array(calendars)
             ASAUserData.shared().savePreferences(code: .events)
@@ -48,6 +49,8 @@ struct ASAEKCalendarChooserView: UIViewControllerRepresentable {
         }
 
         func calendarChooserDidCancel(_ calendarChooser: EKCalendarChooser) {
+            debugPrint(#file, #function, calendarChooser)
+
             parent.presentationMode.wrappedValue.dismiss()
         }
     }

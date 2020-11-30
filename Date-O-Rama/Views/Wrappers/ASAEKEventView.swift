@@ -6,10 +6,10 @@
 //  Copyright © 2020 Adelsoft. All rights reserved.
 //
 
-import Foundation
-import SwiftUI
 import EventKit
 import EventKitUI
+import Foundation
+import SwiftUI
 
 struct ASAEKEventView: UIViewControllerRepresentable {
     @Binding var action:  EKEventViewAction?
@@ -31,7 +31,7 @@ struct ASAEKEventView: UIViewControllerRepresentable {
     } // func makeUIViewController(context: Context) -> EKEventViewController
     
     func updateUIViewController(_ uiViewController: EKEventViewController, context: Context) {
-        
+
     } // func updateUIViewController(_ uiViewController: EKEventViewController, context: Context)
     
     class Coordinator:  NSObject, EKEventViewDelegate {
