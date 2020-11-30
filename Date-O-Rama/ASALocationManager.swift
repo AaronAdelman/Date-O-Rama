@@ -23,9 +23,9 @@ class ASALocationManager: NSObject, ObservableObject {
         return locationManager
     }()
     
-    class func shared() -> ASALocationManager {
+    static var shared:  ASALocationManager {
         return sharedLocationManager
-    } // class func shared() -> ASALocationManager
+    } // static var shared
 
     override init() {
         super.init()

@@ -14,7 +14,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     var session:  WCSession?
     public var complicationController = ComplicationController()
     
-    var locationManager = ASALocationManager.shared()
+    var locationManager = ASALocationManager.shared
     let notificationCenter = NotificationCenter.default
 
     let userData = ASAUserData.shared()

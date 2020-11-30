@@ -51,7 +51,7 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     } // var effectiveTimeZone
     
     @Published var usesDeviceLocation:  Bool = true
-    @Published var locationData:  ASALocationData = ASALocationManager.shared().locationData
+    @Published var locationData:  ASALocationData = ASALocationManager.shared.locationData
     
     var location:  CLLocation? {
         get {
@@ -64,7 +64,7 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
 
     @Published var localeIdentifier:  String = ""
     
-    var locationManager = ASALocationManager.shared()
+    var locationManager = ASALocationManager.shared
     let notificationCenter = NotificationCenter.default
 
     
