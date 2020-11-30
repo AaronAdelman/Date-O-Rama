@@ -347,3 +347,5 @@
 "NO_SOLAR_TIME" = "No solar time";
 
 "MYSTERY_LOCATION" = "Mystery location";
+
+"NO_EXTERNAL_EVENTS_PERMISSION" = "Sorry, but Date-O-Rama does not have permission to access your external event calendars (“Calendars”). You can change this within the Settings application.";

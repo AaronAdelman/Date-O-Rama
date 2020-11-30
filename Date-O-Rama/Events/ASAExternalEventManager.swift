@@ -8,6 +8,7 @@
 
 import Foundation
 import EventKit
+import SwiftUI
 
 class ASAExternalEventManager:  NSObject, ObservableObject {
     private static var sharedEventManager: ASAExternalEventManager = {
@@ -16,7 +17,7 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         return eventManager
     }()
     
-    class func shared() -> ASAExternalEventManager {
+    static var shared:  ASAExternalEventManager {
         return sharedEventManager
     } // class func shared() -> ASAEventManager
     
@@ -41,6 +42,14 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
                 calendarSet.insert(calendar)
             } // for calendar in parent.calendarArray
             return calendarSet
+        } // get
+    } // var calendarSet
+
+    @AppStorage("USE_EXTERNAL_EVENTS") var shouldUseExternalEvents: Bool = true
+
+    @Published var userHasPermission:  Bool = false {
+        willSet {
+            objectWillChange.send()
         }
     }
     
@@ -48,9 +57,12 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         super.init()
         
         self.requestAccessToExternalCalendars()
-        NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {notification
+        NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {
+            notification
             in
-//            debugPrint(#file, #function, notification)
+            debugPrint(#file, #function, notification)
+            self.requestAccessToExternalCalendars()
+
             self.objectWillChange.send()
         })
     } // init()
@@ -82,22 +94,62 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         self.calendars = temp
     } // func reloadExternalCalendars(calendarIdentifiers:  Array<String>)
     
+    fileprivate func handleAccessGranted() {
+        DispatchQueue.main.async(execute: {
+            debugPrint(#file, #function, "access granted")
+            self.userHasPermission = true
+            self.loadExternalCalendars()
+
+            self.ready = true
+        })
+    }
+
+    fileprivate func handleAccessDenied() {
+        DispatchQueue.main.async(execute: {
+            //                self.needPermissionView.fadeIn()
+            debugPrint(#file, #function, "access denied")
+            self.userHasPermission = false
+            self.shouldUseExternalEvents = false
+            self.ready = true
+        })
+    }
+
     public func requestAccessToExternalCalendars() {
+        switch EKEventStore.authorizationStatus(for: .event) {
+
+        case .authorized:
+            print("Authorized")
+            self.handleAccessGranted()
+
+        case .denied:
+            print("Access denied")
+            self.handleAccessDenied()
+
+        case .notDetermined:
+            eventStore.requestAccess(to: .event, completion:
+                                        {(granted: Bool, error: Error?) -> Void in
+                                            if granted {
+                                                print("Access granted")
+                                                self.handleAccessGranted()
+                                            } else {
+                                                print("Access denied")
+                                                self.handleAccessDenied()
+                                            }
+                                        })
+
+            print("Not Determined")
+        default:
+            print("Case Default")
+        }
+
+
         eventStore.requestAccess(to: EKEntityType.event, completion: {
             (accessGranted: Bool, error: Error?) in
             
             if accessGranted == true {
-                DispatchQueue.main.async(execute: {
-                    debugPrint(#file, #function, "access granted")
-                    self.loadExternalCalendars()
-                    //                self.refreshTableView()
-                    self.ready = true
-                })
+                self.handleAccessGranted()
             } else {
-                DispatchQueue.main.async(execute: {
-                    //                self.needPermissionView.fadeIn()
-                    debugPrint(#file, #function, "access denied")
-                })
+                self.handleAccessDenied()
             }
         })
     } // func requestAccessToExternalCalendars()

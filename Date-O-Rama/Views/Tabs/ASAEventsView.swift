@@ -31,7 +31,7 @@ struct ASAEventsView: View {
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
 
-    @ObservedObject var eventManager = ASAExternalEventManager.shared()
+    @ObservedObject var eventManager = ASAExternalEventManager.shared
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
 
@@ -80,12 +80,10 @@ struct ASAEventsView: View {
 
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
-
-    @AppStorage("USE_EXTERNAL_EVENTS") var useExternalEvents: Bool = true
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        if useExternalEvents {
+        if ASAExternalEventManager.shared.shouldUseExternalEvents {
             let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
             unsortedEvents = unsortedEvents + externalEvents
         }
@@ -166,7 +164,7 @@ struct ASAEventsView: View {
                             }
                         }
 
-                        if useExternalEvents {
+                        if ASAExternalEventManager.shared.shouldUseExternalEvents {
                             Button(action:
                                     {
                                         self.showingEventEditView = true
@@ -198,27 +196,31 @@ struct ASAEventsView: View {
                                 }
                             }
 
-                            Toggle(isOn: $useExternalEvents) {
-                                ASAIndentedText(title: "Use external events")
-                            } // Toggle
+                            if ASAExternalEventManager.shared.userHasPermission {
+                                Toggle(isOn: ASAExternalEventManager.shared.$shouldUseExternalEvents) {
+                                    ASAIndentedText(title: "Use external events")
+                                } // Toggle
 
-                            Button(action:
-                                    {
-                                        self.showingEventCalendarChooserView = true
-                                    }, label:  {
-                                        ASAIndentedText(title: NSLocalizedString("External event calendars", comment: ""))
-                                    })
-                                .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
-                                    ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                }
-                                .foregroundColor(.accentColor)
+                                Button(action:
+                                        {
+                                            self.showingEventCalendarChooserView = true
+                                        }, label:  {
+                                            ASAIndentedText(title: NSLocalizedString("External event calendars", comment: ""))
+                                        })
+                                    .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
+                                        ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                                    }
+                                    .foregroundColor(.accentColor)
+                            } else {
+                                Text("NO_EXTERNAL_EVENTS_PERMISSION").foregroundColor(.gray)
+                            }
 
                             NavigationLink(destination:                             ASAInternalEventCalendarsView()
                             ) {
                                 ASAIndentedText(title: "Internal event calendars")
                             }
                         } // if showingPreferences
-                    }
+                    } // Section
 
                     Section {
                         ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
@@ -450,6 +452,6 @@ struct ASAStartAndEndTimesSubcell:  View {
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsView(eventManager: ASAExternalEventManager.shared(), userData:                 ASAEventsView().environmentObject(ASAUserData.shared()) as! EnvironmentObject<ASAUserData>, date: Date())
+        ASAEventsView()
     }
 } // struct ASAEventsView_Previews
