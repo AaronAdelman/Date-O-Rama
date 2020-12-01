@@ -32,7 +32,6 @@ class ASALocationManager: NSObject, ObservableObject {
         self.locationManager.delegate = self
         
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
 
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()

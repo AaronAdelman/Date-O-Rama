@@ -79,28 +79,19 @@ struct ASALocaleChooserView: View {
     var body: some View {
         List {
             if providedLocaleIdentifiers == nil {
-//                HStack {
-                    Picker(selection: $selection, label:
-                            Text("Show locales:"), content: {
-                                Text("All locales").tag(ALL_LOCALES)
-                                Text("Apple locales").tag(APPLE_LOCALES)
-                                Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
-                                Text("User’s region locales").tag(USERS_REGION_LOCALES)
-                            })
-
-//                    #if !targetEnvironment(macCatalyst)
-//                    Spacer()
-//
-//                    Text(verbatim: self.selection.localeCategoryText)
-//                    #endif
-//                }
+                Picker(selection: $selection, label:
+                        Text("Show locales:"), content: {
+                            Text("All locales").tag(ALL_LOCALES)
+                            Text("Apple locales").tag(APPLE_LOCALES)
+                            Text("User’s language locales").tag(USERS_LANGUAGE_LOCALES)
+                            Text("User’s region locales").tag(USERS_REGION_LOCALES)
+                        })
             }
             
             ForEach(self.locales(option: selection)) { item in
                 ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier)
             } // ForEach(localeData.records)
         } // List
-        //            .navigationBarTitle(Text(row.dateString(now: Date()) ))
         .navigationBarItems(trailing:
                                 Button("Cancel", action: {
                                     self.didCancel = true
