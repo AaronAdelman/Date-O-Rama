@@ -12,20 +12,27 @@ import CoreLocation
 struct ASALocationCell:  View {
     var usesDeviceLocation:  Bool
     var locationData:  ASALocationData
+    @ObservedObject var locationManager = ASALocationManager.shared
+
+    func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String {
+        switch authorizationStatus! {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return "DEVICE_LOCATION"
+        default:
+            return "LAST_DEVICE_LOCATION"
+        } // switch authorizationStatus
+    } // func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String
     
     var body: some View {
         HStack {
-//            Text((locationData.ISOCountryCode ?? "").flag())
             Text("HEADER_LOCATION").bold()
             Spacer()
             VStack {
                 if usesDeviceLocation {
                     HStack {
                         Spacer()
-                        Image(systemName: "location.fill").imageScale(.small)
-                        Text("DEVICE_LOCATION").multilineTextAlignment(.trailing)
-//                        Text(verbatim: "📍\(NSLocalizedString("DEVICE_LOCATION", comment: ""))").multilineTextAlignment(.trailing)
-
+                        ASASmallLocationSymbol(locationAuthorizationStatus: locationManager.locationAuthorizationStatus)
+                        Text(NSLocalizedString(rawDeviceLocationString(authorizationStatus: locationManager.locationAuthorizationStatus), comment:  "")).multilineTextAlignment(.trailing)
                     }
                 }
                 HStack {

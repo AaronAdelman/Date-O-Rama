@@ -77,7 +77,6 @@ struct ASAClockDetailEditingSection:  View {
             }
 
             if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
-
                 NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedRow, tempLocationData: ASALocationData())) {
                     VStack {
                         ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)

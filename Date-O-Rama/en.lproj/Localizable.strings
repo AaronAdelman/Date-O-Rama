@@ -235,6 +235,7 @@
 "AUTOUPDATING_CURRENT_TIME_ZONE" = "Autoupdating current";
 
 "DEVICE_LOCATION" = "Device location";
+"LAST_DEVICE_LOCATION" = "Device location (last on record)";
 
 "HEADER_EVENTS" = "Events";
 

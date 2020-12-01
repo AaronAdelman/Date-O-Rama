@@ -109,6 +109,9 @@ struct ASALocationChooserView: View {
     } // func geolocate()
 } // struct ASALocationChooserView
 
+
+// MARK:  -
+
 struct ASALocationChooserViewCell:  View {
     var locationData:  ASALocationData
     
@@ -126,6 +129,9 @@ struct ASALocationChooserViewCell:  View {
     }
 }
 
+
+
+// MARK:  -
 
 struct LocationChooserView_Previews: PreviewProvider {
     static var previews: some View {

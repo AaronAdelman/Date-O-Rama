@@ -235,6 +235,7 @@
 "AUTOUPDATING_CURRENT_TIME_ZONE" = "נוכחי מעודכן אוטומטית";
 
 "DEVICE_LOCATION" = "מקום המכשיר";
+"LAST_DEVICE_LOCATION" = "מקום המכשיר (האחרון הרשום)";
 
 "HEADER_EVENTS" = "אירועים";
 
