@@ -236,6 +236,8 @@
 
 "DEVICE_LOCATION" = "Device location";
 "LAST_DEVICE_LOCATION" = "Device location (last on record)";
+"NO_DEVICE_LOCATION_PERMISSION" = "Sorry, but Date-O-Rama does not have permission to access your device location. You can change this within the Settings application.";
+
 
 "HEADER_EVENTS" = "Events";
 

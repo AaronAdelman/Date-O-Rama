@@ -236,6 +236,7 @@
 
 "DEVICE_LOCATION" = "מקום המכשיר";
 "LAST_DEVICE_LOCATION" = "מקום המכשיר (האחרון הרשום)";
+"NO_DEVICE_LOCATION_PERMISSION" = "מצטער, אבל אין הרשאה ל־Date-O-Rama לגשת למיקום המתקן שלך. אפשר לשנות זאת ביישום ״הגדרות״.";
 
 "HEADER_EVENTS" = "אירועים";
 

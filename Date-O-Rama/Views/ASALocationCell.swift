@@ -15,12 +15,17 @@ struct ASALocationCell:  View {
     @ObservedObject var locationManager = ASALocationManager.shared
 
     func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String {
-        switch authorizationStatus! {
-        case .authorizedAlways, .authorizedWhenInUse:
+        let RAW_LAST_DEVICE_LOCATION_STRING = "LAST_DEVICE_LOCATION"
+
+        if authorizationStatus == nil {
+            return RAW_LAST_DEVICE_LOCATION_STRING
+        }
+
+        if authorizationStatus!.authorizedAtLeastWhenInUse {
             return "DEVICE_LOCATION"
-        default:
-            return "LAST_DEVICE_LOCATION"
-        } // switch authorizationStatus
+        } else {
+            return RAW_LAST_DEVICE_LOCATION_STRING
+        }
     } // func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String
     
     var body: some View {
@@ -33,6 +38,9 @@ struct ASALocationCell:  View {
                         Spacer()
                         ASASmallLocationSymbol()
                         Text(NSLocalizedString(rawDeviceLocationString(authorizationStatus: locationManager.locationAuthorizationStatus), comment:  "")).multilineTextAlignment(.trailing)
+                    }
+                    if !(locationManager.locationAuthorizationStatus?.authorizedAtLeastWhenInUse ?? false) {
+                        Text("NO_DEVICE_LOCATION_PERMISSION").foregroundColor(.gray)
                     }
                 }
                 HStack {

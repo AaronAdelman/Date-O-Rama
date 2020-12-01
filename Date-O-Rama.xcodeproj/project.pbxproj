@@ -75,6 +75,8 @@
 		A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
+		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
+		A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
@@ -255,6 +257,7 @@
 		A566F4622483D6EF000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac events.json"; sourceTree = "<group>"; };
+		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
@@ -487,6 +490,7 @@
 		A5BDB7C7244D9F760027704F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */,
 				A53A5B052451E945005F9876 /* CLLocationExtensions.swift */,
 				A50CD621255414EC00B781EC /* ColorExtensions.swift */,
 				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
@@ -867,6 +871,7 @@
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
 				A50CD6282554159500B781EC /* ColorExtensions.swift in Sources */,
+				A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */,
 				A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */,
 				A506E3E5252C9405009345A0 /* ASAProcessedRow.swift in Sources */,
@@ -928,6 +933,7 @@
 				A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */,
 				A55AA4A7256FD61300D62326 /* ASAArrangementChooserView.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
+				A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
 				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,
