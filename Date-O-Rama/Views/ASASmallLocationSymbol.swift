@@ -28,8 +28,9 @@ extension CLAuthorizationStatus {
 } // extension CLAuthorizationStatus
 
 struct ASASmallLocationSymbol:  View {
-    var locationAuthorizationStatus:  CLAuthorizationStatus?
+    @ObservedObject var locationManager = ASALocationManager.shared
+
     var body:  some View {
-        Image(systemName:  (self.locationAuthorizationStatus ?? CLAuthorizationStatus.denied).symbolName).imageScale(.small)
+        Image(systemName:  (self.locationManager.locationAuthorizationStatus ?? CLAuthorizationStatus.denied).symbolName).imageScale(.small)
     } // var body
 } // struct ASASmallLocationSymbol
