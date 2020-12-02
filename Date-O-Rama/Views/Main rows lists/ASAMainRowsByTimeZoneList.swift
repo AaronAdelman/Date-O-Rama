@@ -37,6 +37,30 @@ struct ASAMainRowsByTimeZoneList:  View {
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
 
     var body:  some View {
+        ASAMainRowsByTimeZoneSublist(groupingOption: self.groupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now)
+    }
+}
+
+struct ASAMainRowsByTimeZoneSublist:  View {
+    @EnvironmentObject var userData:  ASAUserData
+    var groupingOption:  ASAClocksViewGroupingOption
+    var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>>
+    @Binding var now:  Date
+
+    func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int> {
+        switch groupingOption {
+        case .byTimeZoneWestToEast:
+            return Array(self.processedRowsByTimeZone.keys).sorted(by:  <)
+
+        case .byTimeZoneEastToWest:
+            return Array(self.processedRowsByTimeZone.keys).sorted(by:  >)
+
+        default:
+            return []
+        } // switch groupingOption
+    } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
+
+    var body:  some View {
         ForEach(self.keys(groupingOption: groupingOption), id: \.self) {
             key
             in
@@ -64,7 +88,6 @@ struct ASAMainRowsByTimeZoneList:  View {
                         ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
-
                 }
             }
         } // ForEach

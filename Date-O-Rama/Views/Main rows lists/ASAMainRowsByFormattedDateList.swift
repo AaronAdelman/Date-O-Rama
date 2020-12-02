@@ -18,14 +18,23 @@ struct ASAMainRowsByFormattedDateList:  View {
         }
     }
     @Binding var now:  Date
-    
-    
+
+    var body: some View {
+        ASAMainRowsByFormattedDateSublist(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now)
+    } // var body
+} // struct ASAMainRowsByFormattedDateList
+
+struct ASAMainRowsByFormattedDateSublist:  View {
+    @EnvironmentObject var userData:  ASAUserData
+    var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var now:  Date
+
     var keys:  Array<String> {
         get {
             return Array(self.processedRowsByFormattedDate.keys).sorted()
         } // get
     } // var keys:  Array<String>
-    
+
     var body: some View {
         ForEach(self.keys, id: \.self) {
             key
@@ -36,7 +45,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                 ForEach(self.processedRowsByFormattedDate[key]!, id:  \.row.uuid) {
                     processedRow
                     in
-                    
+
                     #if os(watchOS)
                     HStack {
                         ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
@@ -54,16 +63,12 @@ struct ASAMainRowsByFormattedDateList:  View {
                         ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
-                    
+
                 }
             }
         } // ForEach
-    } // var body
-    
-    func deleteItem(at offsets: IndexSet, in: ASAProcessedRow) {
-        debugPrint(#file, #function )
     }
-} // struct ASAMainRowsByFormattedDateList
+}
 
 struct ASAMainRowsByFormattedDateList_Previews: PreviewProvider {
     static var previews: some View {

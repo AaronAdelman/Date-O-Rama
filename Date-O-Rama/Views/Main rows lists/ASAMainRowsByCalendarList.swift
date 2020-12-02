@@ -19,7 +19,6 @@ struct ASAMainRowsByCalendarList:  View {
     }
     @Binding var now:  Date
 
-
     var keys:  Array<String> {
         get {
             return Array(self.processedRowsByCalendar.keys).sorted()
@@ -27,7 +26,21 @@ struct ASAMainRowsByCalendarList:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        //        List {
+        ASAMainRowsByCalendarSublist(processedRowsByCalendar: self.processedRowsByCalendar, now: $now)
+    } // var body
+} // struct ASAMainRowsByCalendarList
+
+struct ASAMainRowsByCalendarSublist:  View {
+    @EnvironmentObject var userData:  ASAUserData
+    var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
+    @Binding var now:  Date
+    var keys:  Array<String> {
+        get {
+            return Array(self.processedRowsByCalendar.keys).sorted()
+        } // get
+    } // var keys:  Array<String>
+
+    var body:  some View {
         ForEach(self.keys, id: \.self) {
             key
             in
@@ -63,9 +76,8 @@ struct ASAMainRowsByCalendarList:  View {
                 }
             }
         }
-        //        } // List
     } // var body
-} // struct ASAMainRowsByCalendarList
+}
 
 struct ASAMainRowsByCalendarList_Previews: PreviewProvider {
     static var previews: some View {
