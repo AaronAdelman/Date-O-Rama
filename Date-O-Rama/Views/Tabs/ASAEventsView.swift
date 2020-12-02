@@ -108,7 +108,7 @@ struct ASAEventsView: View {
             }
         } // get
     } // var timeWidth
-    let TIME_FONT_SIZE = Font.subheadline
+    let TIME_FONT_SIZE = Font.subheadlineMonospacedDigit
     
     @State var isNavBarHidden:  Bool = false
     
@@ -382,7 +382,7 @@ struct ASAEventCell:  View {
                         .allowsTightening(true)
                         .minimumScaleFactor(0.4)
                 }
-                Text(event.calendarTitle).font(.subheadline).foregroundColor(Color(UIColor.secondaryLabel))
+                Text(event.calendarTitle).font(.subheadlineMonospacedDigit).foregroundColor(Color(UIColor.secondaryLabel))
                     .allowsTightening(true)
                     .minimumScaleFactor(0.4)
                     .lineLimit(2)

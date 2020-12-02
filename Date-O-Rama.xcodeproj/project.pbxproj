@@ -106,6 +106,8 @@
 		A584C8FD24B4FDC10014CE2E /* ASAInternalEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAInternalEventsFile.swift */; };
 		A584C8FE24B5E3DB0014CE2E /* ASAInternalEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAInternalEventsFile.swift */; };
 		A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
+		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
+		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5B816302541A2D100E309E0 /* ASAPlainMainRowsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8162F2541A2D100E309E0 /* ASAPlainMainRowsList.swift */; };
@@ -278,6 +280,7 @@
 		A5832B87254ED124008E8A97 /* ASACalendarPizzazztron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarPizzazztron.swift; sourceTree = "<group>"; };
 		A584C8FC24B4FDC10014CE2E /* ASAInternalEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Daily Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Daily Jewish events.json"; sourceTree = "<group>"; };
+		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5B8162F2541A2D100E309E0 /* ASAPlainMainRowsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPlainMainRowsList.swift; sourceTree = "<group>"; };
@@ -498,6 +501,7 @@
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
+				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -868,6 +872,7 @@
 				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
 				A566F4842483D7CF000A05B5 /* ASAInternalEventCalendarFactory.swift in Sources */,
 				A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */,
+				A59322632577F61100318BC3 /* FontExtensions.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
 				A50CD6282554159500B781EC /* ColorExtensions.swift in Sources */,
@@ -946,6 +951,7 @@
 				A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
 				A506F6F42549850F00A04EE6 /* ASAEKCalendarChooserView.swift in Sources */,
+				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A584C8FD24B4FDC10014CE2E /* ASAInternalEventsFile.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,

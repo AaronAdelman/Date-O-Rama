@@ -39,7 +39,7 @@ struct ASARowCell: View {
                         ASASmallLocationSymbol()
                     }
                     Text(verbatim:  row.emoji(date:  Date()))
-                    Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadline)
+                    Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadlineMonospacedDigit)
                 }
             }
             Spacer()

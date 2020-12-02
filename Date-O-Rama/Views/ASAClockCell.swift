@@ -164,13 +164,13 @@ struct ASAClockMainSubcell:  View {
                     #else
                     ASACalendarSymbol()
                     #endif
-                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadline, lineLimit:  1)
+                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
                 }
             }
 
             if processedRow.canSplitTimeFromDate {
                 if shouldShowFormattedDate {
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit(), lineLimit:  2)
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                 }
                 if shouldShowTime {
                     HStack {
@@ -182,12 +182,12 @@ struct ASAClockMainSubcell:  View {
                         }
                         #endif
 
-                        ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit(), lineLimit:  2)
+                        ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  1)
 
                         if processedRow.supportsTimeZones {
-                            ASAClockCellText(string:  "·", font:  Font.headline.monospacedDigit(), lineLimit:  2)
+                            ASAClockCellText(string:  "·", font:  Font.headlineMonospacedDigit, lineLimit:  1)
 
-                            ASAClockCellText(string:  processedRow.timeZoneString, font:  Font.headline.monospacedDigit(), lineLimit:  2)
+                            ASAClockCellText(string:  processedRow.timeZoneString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                         }
                     }
                 }
@@ -201,7 +201,7 @@ struct ASAClockMainSubcell:  View {
                     }
                     #endif
 
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headline.monospacedDigit(), lineLimit:  2)
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                 }
             }
 

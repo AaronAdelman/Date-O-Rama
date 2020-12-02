@@ -50,7 +50,7 @@ struct ASAPlaceSubcell:  View {
                                 Text(verbatim:  processedRow.flagEmojiString)
                             }
 
-                            Text(processedRow.locationString).font(.subheadline)
+                            Text(processedRow.locationString).font(.subheadlineMonospacedDigit)
                         } // HStack
                     }
                 }

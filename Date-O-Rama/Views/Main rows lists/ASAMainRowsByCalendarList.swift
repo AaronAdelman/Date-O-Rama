@@ -36,7 +36,7 @@ struct ASAMainRowsByCalendarList:  View {
                         #else
                         ASACalendarSymbol()
                         #endif
-                        Text(verbatim: "\(key)").font(Font.headline.monospacedDigit())
+                        Text(verbatim: "\(key)").font(Font.headlineMonospacedDigit)
                             .minimumScaleFactor(0.5).lineLimit(1)                }) {
                 ForEach(self.processedRowsByCalendar[key]!, id:  \.row.uuid) {
                     processedRow

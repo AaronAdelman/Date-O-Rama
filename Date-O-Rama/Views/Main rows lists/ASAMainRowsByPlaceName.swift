@@ -34,7 +34,7 @@ struct ASAMainRowsByPlaceName:  View {
             Section(header: HStack {
 //                Text(self.processedRowsByPlaceName[key]![0].emojiString)
                 Text(self.processedRowsByPlaceName[key]![0].flagEmojiString)
-                Text("\(key)").font(Font.headline.monospacedDigit())
+                Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
 
             }) {

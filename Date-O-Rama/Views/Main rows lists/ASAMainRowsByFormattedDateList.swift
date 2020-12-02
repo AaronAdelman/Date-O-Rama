@@ -31,7 +31,7 @@ struct ASAMainRowsByFormattedDateList:  View {
         ForEach(self.keys, id: \.self) {
             key
             in
-            Section(header:  Text("\(key)").font(Font.headline.monospacedDigit())
+            Section(header:  Text("\(key)").font(Font.headlineMonospacedDigit)
                         .minimumScaleFactor(0.5).lineLimit(1)
             ) {
                 ForEach(self.processedRowsByFormattedDate[key]!, id:  \.row.uuid) {
