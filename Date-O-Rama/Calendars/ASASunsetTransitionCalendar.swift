@@ -531,7 +531,9 @@
         .localizedLDML
     ]
 
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short, .decimalTwelveHour
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
+//        .full, .long,
+        .medium, .short, .decimalTwelveHour
 //                                                                , .JewishCalendricalCalculation
     ]
 

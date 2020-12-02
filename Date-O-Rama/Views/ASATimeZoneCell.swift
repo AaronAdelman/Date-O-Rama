@@ -27,7 +27,7 @@ struct ASATimeZoneCell:  View {
                 HStack {
                     Spacer()
                     Text(verbatim:  timeZone.abbreviation(for:  now) ?? "").multilineTextAlignment(.trailing)
-                    Text(timeZone.emoji(date:  now))
+//                    Text(timeZone.emoji(date:  now))
                 }
                 HStack {
                     Spacer()

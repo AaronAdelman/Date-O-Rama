@@ -151,7 +151,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     var canSplitTimeFromDate:  Bool = false
     
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
     
     
     // MARK: - Date components

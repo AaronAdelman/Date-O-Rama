@@ -73,7 +73,6 @@
 		A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
-		A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
@@ -82,7 +81,6 @@
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
-		A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */; };
 		A57BCCA9247AA8310019C02C /* ASAInternalEventCalendarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAInternalEventCalendarsView.swift */; };
 		A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
 		A57BCCAF247BB7F80019C02C /* ASAInternalEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAE247BB7F80019C02C /* ASAInternalEventCalendar.swift */; };
@@ -263,7 +261,6 @@
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
-		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A57BCCA8247AA8310019C02C /* ASAInternalEventCalendarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventCalendarsView.swift; sourceTree = "<group>"; };
 		A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocatedObject.swift; sourceTree = "<group>"; };
 		A57BCCAE247BB7F80019C02C /* ASAInternalEventCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAInternalEventCalendar.swift; sourceTree = "<group>"; };
@@ -498,10 +495,9 @@
 				A50CD621255414EC00B781EC /* ColorExtensions.swift */,
 				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
 				A57083F2254818B200904E7C /* DateFormatterExtensions.swift */,
+				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
-				A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */,
-				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -883,7 +879,6 @@
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */,
-				A566F48C2483D7CF000A05B5 /* TimeZoneExtensions.swift in Sources */,
 				A566F4812483D7CF000A05B5 /* ASAEvent.swift in Sources */,
 				A506E3CC252C910A009345A0 /* ASACalendarSymbol.swift in Sources */,
 				A5B816512541A3DD00E309E0 /* ASAMainRowsByPlaceName.swift in Sources */,
@@ -945,7 +940,6 @@
 				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,
 				A50CD63B25541BE100B781EC /* ASAPlaceSubcell.swift in Sources */,
 				A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */,
-				A577DE1924587E2F008CC94F /* TimeZoneExtensions.swift in Sources */,
 				A57BCCAF247BB7F80019C02C /* ASAInternalEventCalendar.swift in Sources */,
 				A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */,
 				A5490F982550339D00EFB13F /* WatchFace.swift in Sources */,

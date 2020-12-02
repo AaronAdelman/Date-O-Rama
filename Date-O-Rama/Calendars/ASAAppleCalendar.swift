@@ -222,14 +222,18 @@ class ASAAppleCalendar:  ASACalendar {
         .localizedLDML
     ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full, .long, .medium, .short, .localizedLDML]
+    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
+//        .full, .long,
+        .medium, .short
+//        , .localizedLDML
+    ]
     
     var supportsTimeFormats: Bool = true
     
     var canSplitTimeFromDate:  Bool = true
     
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
-    
+//    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
+    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
     
     // MARK: - Date components
     
