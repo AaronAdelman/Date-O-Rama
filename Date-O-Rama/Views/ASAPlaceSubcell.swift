@@ -34,11 +34,12 @@ struct ASAPlaceSubcell:  View {
                             Spacer().frame(width: self.INSET)
 
                             if compact && shouldShowCalendarPizzazztron {
-                                VStack {
+                                VStack(alignment: .leading) {
                                     if processedRow.usesDeviceLocation {
                                         ASASmallLocationSymbol()
                                     }
-                                    Text(verbatim: processedRow.verticalEmojiString)
+//                                    Text(verbatim: processedRow.verticalEmojiString)
+                                    Text(verbatim:  processedRow.emojiString)
                                 }
                             } else {
                                 if processedRow.usesDeviceLocation {

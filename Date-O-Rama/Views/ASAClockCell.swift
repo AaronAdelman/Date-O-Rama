@@ -118,18 +118,18 @@ struct ASAClockPizzazztronSubcell:  View {
         #if os(watchOS)
         EmptyView()
         #else
-        if compact {
-            VStack {
-                if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
-                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode)
-                }
-
-                if shouldShowClockPizzazztron() {
-                    ASAClockPizzazztron(processedRow:  processedRow)
-                    Spacer().frame(height:  4.0)
-                }
-            }
-        } else {
+//        if compact {
+//            VStack {
+//                if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
+//                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode)
+//                }
+//
+//                if shouldShowClockPizzazztron() {
+//                    ASAClockPizzazztron(processedRow:  processedRow)
+//                    Spacer().frame(height:  4.0)
+//                }
+//            }
+//        } else {
             HStack {
                 if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
                     ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode)
@@ -139,7 +139,7 @@ struct ASAClockPizzazztronSubcell:  View {
                     ASAClockPizzazztron(processedRow:  processedRow)
                 }
             }
-        }
+//        }
         #endif
     } // var body
 } // struct ASAClockPizzazztronCell

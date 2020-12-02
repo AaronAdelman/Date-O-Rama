@@ -11,8 +11,9 @@ import SwiftUI
 
 // MARK: - Cells
 
-fileprivate let MINIMUM_CELL_WIDTH:  CGFloat   = 12.0
-fileprivate let MINIMUM_SCALE_FACTOR:  CGFloat =  0.5
+fileprivate let MINIMUM_CELL_WIDTH:  CGFloat   = 15.0
+fileprivate let MINIMUM_SCALE_FACTOR:  CGFloat =  0.6
+fileprivate let CELL_FONT:  Font = .system(size: 11.0, weight: .bold, design: .default)
 
 struct ASABlankCell:  View {
     var body: some View {
@@ -24,7 +25,7 @@ struct ASABlankCell:  View {
 
 struct ASAOrdinaryCell:  View {
     var number:  Int
-    var font:  Font
+//    var font:  Font
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
@@ -39,7 +40,7 @@ struct ASAOrdinaryCell:  View {
 
     var body: some View {
         Text(formattedNumber())
-            .font(font)
+            .font(CELL_FONT)
 //            .foregroundColor(.primary)
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
@@ -49,7 +50,7 @@ struct ASAOrdinaryCell:  View {
 
 struct ASAAccentedCell:  View {
     var number:  Int
-    var font:  Font
+//    var font:  Font
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
@@ -65,10 +66,10 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
-                .foregroundColor(Color(red: 0.75, green: 0.25, blue: 0.25, opacity: 1.0))
+                .foregroundColor(Color(red: 0.75, green: 0.125, blue: 0.125, opacity: 1.0))
 
             Text(formattedNumber())
-                .font(font)
+                .font(CELL_FONT)
                 .foregroundColor(.white)
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
@@ -126,7 +127,7 @@ struct ASACalendarPizzazztron:  View {
         } // get
     } // var gridLayout
 
-    let font:  Font = Font.system(size: 10.0).bold()
+//    let font:  Font = Font.system(size: 12.0).bold()
 
     fileprivate func gridRange() -> ClosedRange<Int> {
         let gridFirstDay = -(weekdayOfDay1 - 2)
@@ -144,9 +145,13 @@ struct ASACalendarPizzazztron:  View {
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
                 } else if $0 == day {
-                    ASAAccentedCell(number: $0, font: font, numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
+                    ASAAccentedCell(number: $0,
+//                                    font: font,
+                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
                 } else {
-                    ASAOrdinaryCell(number: $0, font: font, numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
+                    ASAOrdinaryCell(number: $0,
+//                                    font: font,
+                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
                 }
             }
         }
