@@ -12,18 +12,20 @@ struct ASAWatchClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
 
-    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
-        .plain,
-        .byFormattedDate,
-        .byCalendar,
-        .byPlaceName,
-        .eastToWest,
-        .westToEast,
-        .northToSouth,
-        .southToNorth
-    ]
+//    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
+////        .plain,
+//        .byFormattedDate,
+//        .byCalendar,
+//        .byPlaceName,
+//        .eastToWest,
+//        .westToEast,
+//        .northToSouth,
+//        .southToNorth,
+//        .byTimeZoneWestToEast,
+//        .byTimeZoneEastToWest
+//    ]
 
-    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .plain
+    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
 
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -36,14 +38,14 @@ struct ASAWatchClocksView: View {
         NavigationView {
             Form {
                 Picker(selection: self.$mainRowsGroupingOption, label: Text("Arrangement")) {
-                    ForEach(self.groupingOptions, id:  \.self) {
+                    ForEach(ASAClocksViewGroupingOption.allOptions, id:  \.self) {
                         Text($0.text())
                     }
                 }
 
                 switch self.mainRowsGroupingOption {
-                case .plain:
-                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
+//                case .plain:
+//                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .byFormattedDate:
                     ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now, INSET: INSET)
@@ -56,6 +58,9 @@ struct ASAWatchClocksView: View {
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
                     ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now, INSET: INSET)
+
+                case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
+                    ASAMainRowsByTimeZoneList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
         }

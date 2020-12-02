@@ -26,7 +26,11 @@ class ASARow: ASALocatedObject {
             if !self.calendar.supportedMajorDateFormats.contains(self.majorDateFormat) {
                 self.majorDateFormat = self.calendar.defaultMajorDateFormat
             }
-            if !self.calendar.supportsLocations && !self.calendar.supportsTimeZones {
+            if !self.calendar.supportsLocations {
+                self.usesDeviceLocation = false
+            }
+            if !self.calendar.supportsTimeZones {
+                self.timeZone = TimeZone(secondsFromGMT: 0)
                 self.usesDeviceLocation = false
             }
         } // didSet
@@ -214,7 +218,8 @@ class ASARow: ASALocatedObject {
     } // func generic() -> ASARow
 } // class ASARow
 
-// MARK :-
+
+// MARK:  -
 
 extension ASARow {
     public func dateString(now:  Date) -> String {
@@ -253,6 +258,9 @@ extension ASARow {
         self.calendar.dateComponents(components, from: date, locationData: self.locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
 } // extension ASARow
+
+
+// MARK:  -
 
 extension ASARow {
     public func shortenedDateTimeString(now:  Date) -> String {

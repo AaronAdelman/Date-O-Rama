@@ -27,7 +27,6 @@ struct ASAMainRowsByFormattedDateList:  View {
     } // var keys:  Array<String>
     
     var body: some View {
-        //        List {
         ForEach(self.keys, id: \.self) {
             key
             in
@@ -40,7 +39,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                     
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -52,14 +51,13 @@ struct ASAMainRowsByFormattedDateList:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
                     
                 }
             }
         } // ForEach
-        //        } // List
     } // var body
     
     func deleteItem(at offsets: IndexSet, in: ASAProcessedRow) {

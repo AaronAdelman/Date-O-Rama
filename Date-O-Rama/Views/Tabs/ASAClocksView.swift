@@ -17,18 +17,20 @@ struct ASAClocksView: View {
 
     @State private var showingNewClockDetailView = false
 
-    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
-        .plain,
-        .byFormattedDate,
-        .byCalendar,
-        .byPlaceName,
-        .eastToWest,
-        .westToEast,
-        .northToSouth,
-        .southToNorth
-    ]
+//    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
+////        .plain,
+//        .byFormattedDate,
+//        .byCalendar,
+//        .byPlaceName,
+//        .eastToWest,
+//        .westToEast,
+//        .northToSouth,
+//        .southToNorth,
+//        .byTimeZoneWestToEast,
+//        .byTimeZoneEastToWest
+//    ]
 
-    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .plain
+    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -58,8 +60,8 @@ struct ASAClocksView: View {
                 .foregroundColor(.accentColor)
 
                 switch self.mainRowsGroupingOption {
-                case .plain:
-                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
+//                case .plain:
+//                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
 
                 case .byFormattedDate:
                     ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now, INSET: INSET)
@@ -72,6 +74,9 @@ struct ASAClocksView: View {
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
                     ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now, INSET: INSET)
+
+                case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
+                    ASAMainRowsByTimeZoneList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
             .sheet(isPresented: self.$showingNewClockDetailView) {

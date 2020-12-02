@@ -14,6 +14,7 @@ struct ASAClockCell: View {
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
     var shouldShowPlaceName:  Bool
+    var shouldShowTimeZone:  Bool
 
     var INSET:  CGFloat
     var shouldShowTime:  Bool
@@ -36,13 +37,13 @@ struct ASAClockCell: View {
 
     var body: some View {
         if !runningOnWatchOS && processedRow.hasValidTime && processedRow.transitionType != .noon {
-            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, INSET: INSET, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
                 .padding(EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0))
                 .background(ASASkyGradient(processedRow: processedRow))
                 .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))
         } else {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET: INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, INSET: INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
         }
     } // var body
 } // struct ASAClockCell
@@ -56,6 +57,7 @@ struct ASAClockCellBody:  View {
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
     var shouldShowPlaceName:  Bool
+    var shouldShowTimeZone:  Bool
 
     var INSET:  CGFloat
     var shouldShowTime:  Bool
@@ -72,7 +74,7 @@ struct ASAClockCellBody:  View {
 
     var body: some View {
         HStack {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, INSET:  INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, INSET:  INSET, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
 
             if (processedRow.supportsMonths || shouldShowTime) {
                 Spacer()
@@ -153,6 +155,7 @@ struct ASAClockMainSubcell:  View {
     var shouldShowFormattedDate:  Bool
     var shouldShowTime:  Bool
     var shouldShowPlaceName:  Bool
+    var shouldShowTimeZone:  Bool
     var INSET:  CGFloat
     var shouldShowCalendarPizzazztron:  Bool
 
@@ -184,7 +187,7 @@ struct ASAClockMainSubcell:  View {
 
                         ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  1)
 
-                        if processedRow.supportsTimeZones {
+                        if processedRow.supportsTimeZones && shouldShowTimeZone {
                             ASAClockCellText(string:  "·", font:  Font.headlineMonospacedDigit, lineLimit:  1)
 
                             ASAClockCellText(string:  processedRow.timeZoneString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
@@ -203,6 +206,8 @@ struct ASAClockMainSubcell:  View {
 
                     ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                 }
+//            } else {
+//                Text("Bleh")
             }
 
             ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, INSET:  INSET, shouldShowCalendarPizzazztron:  shouldShowCalendarPizzazztron)
@@ -215,6 +220,6 @@ struct ASAClockMainSubcell:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic(), now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, INSET: 20.0, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic(), now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: 20.0, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
     }
 } // struct ASAClockCell_Previews

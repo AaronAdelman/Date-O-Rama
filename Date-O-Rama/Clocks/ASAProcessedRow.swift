@@ -17,18 +17,6 @@ struct ASAProcessedRow {
     var flagEmojiString:  String
     var timeZoneString:  String
 
-//    var emojiString:  String {
-//        get {
-//            return flagEmojiString + " " + timeZoneString
-//        } // get
-//    } // var emojiString
-
-//    var verticalEmojiString:  String {
-//        get {
-//            return flagEmojiString + "\n" + timeZoneString
-//        } // get
-//    } // var verticalEmojiString
-
     var usesDeviceLocation:  Bool
     var locationString:  String
     var canSplitTimeFromDate:  Bool
@@ -71,12 +59,10 @@ struct ASAProcessedRow {
             self.dateString = row.dateTimeString(now: now)
             self.timeString = ""
         }
+        self.timeZoneString = row.effectiveTimeZone.abbreviation(for:  now) ?? ""
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
-//            self.emojiString = row.emoji(date:  now)
             self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag()
-//            self.timeZoneEmojiString = row.effectiveTimeZone.emoji(date:  now)
-            self.timeZoneString = row.effectiveTimeZone.abbreviation(for:  now) ?? ""
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
@@ -92,9 +78,7 @@ struct ASAProcessedRow {
             }
             self.locationString = locationString
         } else {
-//            self.emojiString = "🇺🇳🕛"
             self.flagEmojiString = "🇺🇳"
-            self.timeZoneString = "🕛"
             self.usesDeviceLocation = false
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
@@ -146,7 +130,7 @@ extension ASAProcessedRow {
             if self.supportsLocations {
                 return self.row.locationData.location?.coordinate.longitude ?? 0.0
             } else {
-                 return 0.0
+                return 0.0
             }
         } // get
     } // var longitude
@@ -238,6 +222,24 @@ extension Array where Element == ASARow {
 
         return result
     } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+
+    func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedRow>> {
+        var result:  Dictionary<Int, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processed(now: now)
+
+        for processedRow in processedRows {
+            let key = processedRow.row.timeZone?.secondsFromGMT(for: now) ?? 0
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } // func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedRow>>
 
     func processedWestToEast(now:  Date) -> Array<ASAProcessedRow> {
         let processedRows = self.processed(now: now).sorted {

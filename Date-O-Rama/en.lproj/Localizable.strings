@@ -323,14 +323,16 @@
 "Are you sure you want to delete this new internal event calendar?" = "Are you sure you want to delete this new internal event calendar?";
 
 "Arrangement" = "Arrangement";
-"Plain"             = "Plain";
-"By Formatted Date" = "By Formatted Date";
-"By Calendar"       = "By Calendar";
-"By Place Name"     = "By Place Name";
-"West to East"      = "West to East";
-"East to West"      = "East to West";
-"North to South"    = "North to South";
-"South to North"    = "South to North";
+"Plain"                      = "Plain";
+"By Formatted Date"          = "By Formatted Date";
+"By Calendar"                = "By Calendar";
+"By Place Name"              = "By Place Name";
+"West to East"               = "West to East";
+"East to West"               = "East to West";
+"North to South"             = "North to South";
+"South to North"             = "South to North";
+"By Time Zone, West to East" = "By Time Zone, West to East";
+"By Time Zone, East to West" = "By Time Zone, East to West";
 
 "Are you sure you want to delete this clock?" = "Are you sure you want to delete this clock?";
 "Delete This Clock" = "Delete This Clock";

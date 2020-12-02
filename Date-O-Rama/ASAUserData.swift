@@ -34,50 +34,6 @@ enum ASAPreferencesFileCode {
 } // enum ASAPreferencesFileCode
 
 
-enum ASAClocksViewGroupingOption:  String, CaseIterable {
-    case plain
-    case byFormattedDate
-    case byCalendar
-    case byPlaceName
-    case westToEast
-    case eastToWest
-    case northToSouth
-    case southToNorth
-
-    func text() -> String {
-        var raw:  String
-
-        switch self {
-        case .plain:
-            raw = "Plain"
-
-        case .byFormattedDate:
-            raw = "By Formatted Date"
-
-        case .byCalendar:
-            raw = "By Calendar"
-
-        case .byPlaceName:
-            raw = "By Place Name"
-
-        case .westToEast:
-            raw = "West to East"
-
-        case .eastToWest:
-            raw = "East to West"
-
-        case .southToNorth:
-            raw = "South to North"
-
-        case .northToSouth:
-            raw = "North to South"
-        } // switch self
-
-        return NSLocalizedString(raw, comment: "")
-    } // func text() -> String
-} // enum ASAClocksViewGroupingOption
-
-
 // MARK: -
 
 fileprivate let INTERNAL_EVENT_CALENDARS_KEY  = "INTERNAL_EVENT_CALENDARS"

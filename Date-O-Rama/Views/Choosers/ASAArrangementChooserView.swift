@@ -9,16 +9,18 @@
 import SwiftUI
 
 struct ASAArrangementChooserView: View {
-    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
-        .plain,
-        .byFormattedDate,
-        .byCalendar,
-        .byPlaceName,
-        .eastToWest,
-        .westToEast,
-        .northToSouth,
-        .southToNorth
-    ]
+//    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
+////        .plain,
+//        .byFormattedDate,
+//        .byCalendar,
+//        .byPlaceName,
+//        .eastToWest,
+//        .westToEast,
+//        .northToSouth,
+//        .southToNorth,
+//        .byTimeZoneWestToEast,
+//        .byTimeZoneEastToWest
+//    ]
 
     @Binding var groupingOption:  ASAClocksViewGroupingOption
     @State var tempGroupingOption:  ASAClocksViewGroupingOption
@@ -28,7 +30,7 @@ struct ASAArrangementChooserView: View {
     
     var body: some View {
         List {
-            ForEach(self.groupingOptions, id: \.self) {
+            ForEach(ASAClocksViewGroupingOption.allOptions, id: \.self) {
                 groupingOption
                 in
                 ASAArrangementCell(groupingOption: groupingOption, selectedGroupingOption: self.$tempGroupingOption)
