@@ -84,7 +84,7 @@ extension ASACalendarCode {
             return false
         } // switch self
     } // func isAppleCalendar() -> Bool
-        
+
     func isISO8601Calendar() -> Bool {
         switch self {
         case .ISO8601:
@@ -111,6 +111,18 @@ extension ASACalendarCode {
             return false
         } // switch self
     } // func isSolarCalendar() -> Bool
+
+    var isHebrewCalendar: Bool {
+        get {
+            switch self {
+            case .Hebrew, .HebrewMA, .HebrewGRA:
+                return true
+
+            default:
+                return false
+            } // switch self
+        } // get
+    } // var isHebrewCalendar
 } // extension ASACalendarCode
 
 extension ASACalendarCode {

@@ -77,6 +77,8 @@
 		A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
+		A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
+		A56BDB502577B7AC0037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
@@ -258,6 +260,7 @@
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A568DBBA25232E3200500419 /* Chinese zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac events.json"; sourceTree = "<group>"; };
 		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
+		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
@@ -498,6 +501,7 @@
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A577DE1824587E2F008CC94F /* TimeZoneExtensions.swift */,
+				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -895,6 +899,7 @@
 				A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */,
 				A566F47E2483D7CF000A05B5 /* ASARow.swift in Sources */,
 				A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */,
+				A56BDB502577B7AC0037F833 /* IntExtensions.swift in Sources */,
 				A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */,
 				A57F442124BC6A25005261EE /* ASADateComponents.swift in Sources */,
 				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
@@ -917,6 +922,7 @@
 				A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */,
 				A57F441D24BC5908005261EE /* ASADateComponents.swift in Sources */,
 				A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */,
+				A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */,
 				A5BFC5B5246AB5B50075AF58 /* ASAExternalEventManager.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
 				A5BFC5AD246971030075AF58 /* ASAEventsView.swift in Sources */,

@@ -48,6 +48,10 @@ struct ASAProcessedRow {
     var transitionType:  ASATransitionType
     var calendarType:  ASACalendarType
 
+    var localeIdentifier:  String
+    var calendarCode:  ASACalendarCode
+
+
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
@@ -115,7 +119,14 @@ struct ASAProcessedRow {
 
         self.transitionType = row.calendar.transitionType
         self.calendarType = row.calendar.calendarCode.type
-    }
+
+        if row.localeIdentifier == "" {
+            self.localeIdentifier = Locale.current.identifier
+        } else {
+            self.localeIdentifier = row.localeIdentifier
+        }
+        self.calendarCode = row.calendar.calendarCode
+    } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
 extension ASAProcessedRow {

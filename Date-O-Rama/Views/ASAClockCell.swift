@@ -121,7 +121,7 @@ struct ASAClockPizzazztronSubcell:  View {
         if compact {
             VStack {
                 if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
-                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode)
                 }
 
                 if shouldShowClockPizzazztron() {
@@ -132,7 +132,7 @@ struct ASAClockPizzazztronSubcell:  View {
         } else {
             HStack {
                 if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
-                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter())
+                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode)
                 }
 
                 if shouldShowClockPizzazztron() {

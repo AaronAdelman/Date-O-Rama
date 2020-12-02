@@ -26,9 +26,19 @@ struct ASAOrdinaryCell:  View {
     var number:  Int
     var font:  Font
     var numberFormatter:  NumberFormatter
+    var localeIdentifier:  String
+    var calendarCode:  ASACalendarCode
+
+    fileprivate func formattedNumber() -> String {
+        if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
+            return number.HebrewNumeral
+        }
+
+        return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
+    } // formattedNumber() -> String
 
     var body: some View {
-        Text(numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? "")
+        Text(formattedNumber())
             .font(font)
 //            .foregroundColor(.primary)
             .lineLimit(1)
@@ -41,13 +51,23 @@ struct ASAAccentedCell:  View {
     var number:  Int
     var font:  Font
     var numberFormatter:  NumberFormatter
+    var localeIdentifier:  String
+    var calendarCode:  ASACalendarCode
+
+    fileprivate func formattedNumber() -> String {
+        if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
+            return number.HebrewNumeral
+        }
+
+        return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
+    } // formattedNumber() -> String
 
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
                 .foregroundColor(Color(red: 0.75, green: 0.25, blue: 0.25, opacity: 1.0))
 
-            Text(numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? "")
+            Text(formattedNumber())
                 .font(font)
                 .foregroundColor(.white)
                 .lineLimit(1)
@@ -76,6 +96,8 @@ struct ASACalendarPizzazztron:  View {
     var weekday:  Int
     var daysInMonth:  Int
     var numberFormatter:  NumberFormatter
+    var localeIdentifier:  String
+    var calendarCode:  ASACalendarCode
 
     var weekdayOfDay1:  Int {
         get {
@@ -122,9 +144,9 @@ struct ASACalendarPizzazztron:  View {
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
                 } else if $0 == day {
-                    ASAAccentedCell(number: $0, font: font, numberFormatter: numberFormatter)
+                    ASAAccentedCell(number: $0, font: font, numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
                 } else {
-                    ASAOrdinaryCell(number: $0, font: font, numberFormatter: numberFormatter)
+                    ASAOrdinaryCell(number: $0, font: font, numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
                 }
             }
         }
@@ -134,6 +156,6 @@ struct ASACalendarPizzazztron:  View {
 
 struct ASACalendarPizzazztron_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarPizzazztron(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter())
+        ASACalendarPizzazztron(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian)
     }
 }
