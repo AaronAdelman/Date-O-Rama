@@ -54,7 +54,7 @@ struct ASAWatchClocksView: View {
                     ASAMainRowsByCalendarList(rows: $userData.mainRows, now: $now)
 
                 case .byPlaceName:
-                    ASAMainRowsByPlaceName(rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByPlaceNameList(rows: $userData.mainRows, now: $now)
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
                     ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)

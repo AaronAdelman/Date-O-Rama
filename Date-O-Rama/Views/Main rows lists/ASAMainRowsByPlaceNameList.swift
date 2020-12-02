@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByPlaceName.swift
+//  ASAMainRowsByPlaceNameList.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAMainRowsByPlaceName:  View {
+struct ASAMainRowsByPlaceNameList:  View {
     @EnvironmentObject var userData:  ASAUserData
 
     @Binding var rows:  Array<ASARow>
@@ -18,7 +18,6 @@ struct ASAMainRowsByPlaceName:  View {
         } // get
     }
     @Binding var now:  Date
-    
 
     var keys:  Array<String> {
         get {
@@ -27,12 +26,26 @@ struct ASAMainRowsByPlaceName:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        //        List {
+        ASAMainRowsByPlaceNameSublist(processedRowsByPlaceName: processedRowsByPlaceName, now: $now)
+    } // var body
+} // struct ASAMainRowsByPlaceName
+
+
+struct ASAMainRowsByPlaceNameSublist:  View {
+    var processedRowsByPlaceName: Dictionary<String, Array<ASAProcessedRow>>
+    var keys:  Array<String> {
+        get {
+            return Array(self.processedRowsByPlaceName.keys).sorted()
+        } // get
+    } // var keys:  Array<String>
+    @Binding var now:  Date
+    @EnvironmentObject var userData:  ASAUserData
+
+    var body:  some View {
         ForEach(self.keys, id: \.self) {
             key
             in
             Section(header: HStack {
-//                Text(self.processedRowsByPlaceName[key]![0].emojiString)
                 Text(self.processedRowsByPlaceName[key]![0].flagEmojiString)
                 Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
@@ -62,11 +75,12 @@ struct ASAMainRowsByPlaceName:  View {
                 }
             }
         }
-        //        } // List
-    } // var body
-} // struct ASAMainRowsByPlaceName
+    }
+}
+
+
 struct ASAMainRowsByPlaceName_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceName(rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByPlaceNameList(rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }
