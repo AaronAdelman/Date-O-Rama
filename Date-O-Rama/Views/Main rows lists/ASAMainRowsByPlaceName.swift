@@ -18,7 +18,7 @@ struct ASAMainRowsByPlaceName:  View {
         } // get
     }
     @Binding var now:  Date
-    var INSET:  CGFloat
+    
 
     var keys:  Array<String> {
         get {
@@ -44,7 +44,7 @@ struct ASAMainRowsByPlaceName:  View {
 
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -56,7 +56,7 @@ struct ASAMainRowsByPlaceName:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
                 }
@@ -67,6 +67,6 @@ struct ASAMainRowsByPlaceName:  View {
 } // struct ASAMainRowsByPlaceName
 struct ASAMainRowsByPlaceName_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceName(rows: .constant([ASARow.generic()]), now: .constant(Date()), INSET: 25.0)
+        ASAMainRowsByPlaceName(rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

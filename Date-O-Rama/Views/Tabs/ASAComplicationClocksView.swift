@@ -54,7 +54,7 @@ struct ASAComplicationClocksView: View {
                                         self.saveUserData()
                                     }
                             ) {
-                                ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: 25.0, shouldShowTime: false, shouldShowCalendarPizzazztron: false)
+                                ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowCalendarPizzazztron: false)
 
                             }
                         }

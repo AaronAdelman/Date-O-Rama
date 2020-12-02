@@ -45,19 +45,19 @@ struct ASAWatchClocksView: View {
 
                 switch self.mainRowsGroupingOption {
 //                case .plain:
-//                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now, INSET: INSET)
+//                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now)
 
                 case .byFormattedDate:
-                    ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now, INSET: INSET)
+                    ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now)
 
                 case .byCalendar:
-                    ASAMainRowsByCalendarList(rows: $userData.mainRows, now: $now, INSET: INSET)
+                    ASAMainRowsByCalendarList(rows: $userData.mainRows, now: $now)
 
                 case .byPlaceName:
-                    ASAMainRowsByPlaceName(rows: $userData.mainRows, now: $now, INSET: INSET)
+                    ASAMainRowsByPlaceName(rows: $userData.mainRows, now: $now)
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                    ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now, INSET: INSET)
+                    ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
                     ASAMainRowsByTimeZoneList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)

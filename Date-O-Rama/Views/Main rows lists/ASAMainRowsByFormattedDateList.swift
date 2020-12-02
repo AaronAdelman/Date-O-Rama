@@ -18,7 +18,7 @@ struct ASAMainRowsByFormattedDateList:  View {
         }
     }
     @Binding var now:  Date
-    var INSET:  CGFloat
+    
     
     var keys:  Array<String> {
         get {
@@ -39,7 +39,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                     
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -51,7 +51,7 @@ struct ASAMainRowsByFormattedDateList:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
                     
@@ -67,6 +67,6 @@ struct ASAMainRowsByFormattedDateList:  View {
 
 struct ASAMainRowsByFormattedDateList_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateList(rows: .constant([ASARow.generic()]), now: .constant(Date()), INSET: 25.0)
+        ASAMainRowsByFormattedDateList(rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

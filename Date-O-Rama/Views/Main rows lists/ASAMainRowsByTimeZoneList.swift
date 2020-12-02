@@ -36,8 +36,6 @@ struct ASAMainRowsByTimeZoneList:  View {
         } // switch groupingOption
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
 
-    let INSET:  CGFloat = 0.0
-
     var body:  some View {
         ForEach(self.keys(groupingOption: groupingOption), id: \.self) {
             key
@@ -51,7 +49,7 @@ struct ASAMainRowsByTimeZoneList:  View {
 
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -63,7 +61,7 @@ struct ASAMainRowsByTimeZoneList:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
 

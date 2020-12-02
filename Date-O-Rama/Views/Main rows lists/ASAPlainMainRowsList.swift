@@ -38,7 +38,7 @@ struct ASAPlainMainRowsList:  View {
         } // get
     } // var processedRows
     @Binding var now:  Date
-    var INSET:  CGFloat
+    
     
     var body: some View {
         //        List {
@@ -48,7 +48,7 @@ struct ASAPlainMainRowsList:  View {
             processedRow
             in
             HStack {
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                 Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             }
         } // ForEach
@@ -66,7 +66,7 @@ struct ASAPlainMainRowsList:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
             ) {
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, INSET: INSET, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
             }
         } // ForEach
         .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -87,6 +87,6 @@ struct ASAPlainMainRowsList:  View {
 
 struct ASAPlainMainRowsList_Previews: PreviewProvider {
     static var previews: some View {
-        ASAPlainMainRowsList(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()), INSET: 25.0)
+        ASAPlainMainRowsList(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

@@ -11,7 +11,6 @@ import SwiftUI
 struct ASAPlaceSubcell:  View {
     var processedRow:  ASAProcessedRow
     var shouldShowPlaceName:  Bool
-    var INSET:  CGFloat
     var shouldShowCalendarPizzazztron:  Bool
 
     #if os(watchOS)
@@ -31,8 +30,6 @@ struct ASAPlaceSubcell:  View {
                 VStack(alignment: .leading) {
                     if processedRow.supportsTimeZones || processedRow.supportsLocations {
                         HStack(alignment: .top) {
-//                            Spacer().frame(width: self.INSET)
-
                             if compact && shouldShowCalendarPizzazztron {
                                 VStack(alignment: .leading) {
                                     if processedRow.usesDeviceLocation {
@@ -58,10 +55,7 @@ struct ASAPlaceSubcell:  View {
         } else if processedRow.usesDeviceLocation {
             #if os(watchOS)
             #else
-            HStack {
-                Spacer().frame(width: self.INSET)
-                ASASmallLocationSymbol()
-            } // HStack
+            ASASmallLocationSymbol()
             #endif
         }
     } // var body
