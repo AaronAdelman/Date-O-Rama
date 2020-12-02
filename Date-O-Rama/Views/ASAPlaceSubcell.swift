@@ -30,8 +30,8 @@ struct ASAPlaceSubcell:  View {
             HStack {
                 VStack(alignment: .leading) {
                     if processedRow.supportsTimeZones || processedRow.supportsLocations {
-                        HStack {
-                            Spacer().frame(width: self.INSET)
+                        HStack(alignment: .top) {
+//                            Spacer().frame(width: self.INSET)
 
                             if compact && shouldShowCalendarPizzazztron {
                                 VStack(alignment: .leading) {
@@ -39,13 +39,15 @@ struct ASAPlaceSubcell:  View {
                                         ASASmallLocationSymbol()
                                     }
 //                                    Text(verbatim: processedRow.verticalEmojiString)
-                                    Text(verbatim:  processedRow.emojiString)
+//                                    Text(verbatim:  processedRow.emojiString)
+                                    Text(verbatim:  processedRow.flagEmojiString)
                                 }
                             } else {
                                 if processedRow.usesDeviceLocation {
                                     ASASmallLocationSymbol()
                                 }
-                                Text(verbatim:  processedRow.emojiString)
+//                                Text(verbatim:  processedRow.emojiString)
+                                Text(verbatim:  processedRow.flagEmojiString)
                             }
 
                             Text(processedRow.locationString).font(.subheadline)

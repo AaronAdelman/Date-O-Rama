@@ -183,6 +183,12 @@ struct ASAClockMainSubcell:  View {
                         #endif
 
                         ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headline.monospacedDigit(), lineLimit:  2)
+
+                        if processedRow.supportsTimeZones {
+                            ASAClockCellText(string:  "·", font:  Font.headline.monospacedDigit(), lineLimit:  2)
+
+                            ASAClockCellText(string:  processedRow.timeZoneString, font:  Font.headline.monospacedDigit(), lineLimit:  2)
+                        }
                     }
                 }
             } else if shouldShowFormattedDate {

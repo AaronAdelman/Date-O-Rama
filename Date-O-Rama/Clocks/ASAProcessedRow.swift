@@ -15,19 +15,19 @@ struct ASAProcessedRow {
     var dateString:  String
     var timeString:  String?
     var flagEmojiString:  String
-    var timeZoneEmojiString:  String
+    var timeZoneString:  String
 
-    var emojiString:  String {
-        get {
-            return flagEmojiString + timeZoneEmojiString
-        } // get
-    } // var emojiString
+//    var emojiString:  String {
+//        get {
+//            return flagEmojiString + " " + timeZoneString
+//        } // get
+//    } // var emojiString
 
-    var verticalEmojiString:  String {
-        get {
-            return flagEmojiString + "\n" + timeZoneEmojiString
-        } // get
-    } // var verticalEmojiString
+//    var verticalEmojiString:  String {
+//        get {
+//            return flagEmojiString + "\n" + timeZoneString
+//        } // get
+//    } // var verticalEmojiString
 
     var usesDeviceLocation:  Bool
     var locationString:  String
@@ -75,7 +75,8 @@ struct ASAProcessedRow {
         if self.supportsLocations {
 //            self.emojiString = row.emoji(date:  now)
             self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag()
-            self.timeZoneEmojiString = row.effectiveTimeZone.emoji(date:  now)
+//            self.timeZoneEmojiString = row.effectiveTimeZone.emoji(date:  now)
+            self.timeZoneString = row.effectiveTimeZone.abbreviation(for:  now) ?? ""
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
@@ -93,7 +94,7 @@ struct ASAProcessedRow {
         } else {
 //            self.emojiString = "🇺🇳🕛"
             self.flagEmojiString = "🇺🇳"
-            self.timeZoneEmojiString = "🕛"
+            self.timeZoneString = "🕛"
             self.usesDeviceLocation = false
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
