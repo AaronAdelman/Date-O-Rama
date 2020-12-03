@@ -322,16 +322,17 @@
 "Are you sure you want to delete this new internal event calendar?" = "בטוח שברצונך למחוק לוח שנה אירועים פנימי חדש זה?";
 
 "Arrangement" = "ארגון";
-"Plain" = "פשוט";
-"By Formatted Date" = "לפי תאריך מפורמט";
-"By Calendar" = "לפי לוח";
-"By Place Name" = "לפי שם מקום";
-"West to East" = "מערב למזרח";
-"East to West"      = "מזרח למערב";
-"North to South"    = "צפון לדרום";
-"South to North"    = "דרום לצפון";
+//"Plain" = "פשוט";
+"By Formatted Date"          = "לפי תאריך מפורמט";
+"By Calendar"                = "לפי לוח";
+"By Place Name"              = "לפי שם מקום";
+"West to East"               = "מערב למזרח";
+"East to West"               = "מזרח למערב";
+"North to South"             = "צפון לדרום";
+"South to North"             = "דרום לצפון";
 "By Time Zone, West to East" = "לפי אזור זמן, מערב למזרח";
 "By Time Zone, East to West" = "לפי אזור זמן, מזרח למערב";
+"By Country or Region"       = "לפי מדינה או אזור";
 
 "Are you sure you want to delete this clock?" = "בטוח שברצונך למחוק שעון זה?";
 "Delete This Clock" = "מחק שעון זה";
@@ -344,7 +345,8 @@
 
 "Swap clocks" = "🔃 החלף שעונים";
 
-"NO_PLACE_NAME" = "אין מקום";
+"NO_PLACE_NAME"        = "אין מקום";
+"NO_COUNTRY_OR_REGION" = "אין מדינה או אזור";
 
 "External event calendars" = "לוחות שנה אירועים חיצוניים";
 

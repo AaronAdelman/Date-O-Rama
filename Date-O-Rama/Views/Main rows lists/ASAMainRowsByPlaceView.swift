@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByPlaceNameList.swift
+//  ASAMainRowsByPlaceNameView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,34 +8,43 @@
 
 import SwiftUI
 
-struct ASAMainRowsByPlaceNameList:  View {
+struct ASAMainRowsByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
-
+    var groupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASARow>
-    var processedRowsByPlaceName: Dictionary<String, Array<ASAProcessedRow>> {
+    var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>> {
         get {
-            return self.rows.processedRowsByPlaceName(now: now)
+            switch groupingOption {
+            case .byPlaceName:
+               return self.rows.processedRowsByPlaceName(now: now)
+
+            case .byCountry:
+                return self.rows.processedRowsByCountry(now: now)
+
+            default:
+                return [:]
+            }
         } // get
     }
     @Binding var now:  Date
 
     var keys:  Array<String> {
         get {
-            return Array(self.processedRowsByPlaceName.keys).sorted()
+            return Array(self.processedRowsByPlace.keys).sorted()
         } // get
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByPlaceNameSublist(processedRowsByPlaceName: processedRowsByPlaceName, now: $now)
+        ASAMainRowsByPlaceSubview(processedRowsByPlace: processedRowsByPlace, now: $now)
     } // var body
-} // struct ASAMainRowsByPlaceName
+} // struct ASAMainRowsByPlaceNameView
 
 
-struct ASAMainRowsByPlaceNameSublist:  View {
-    var processedRowsByPlaceName: Dictionary<String, Array<ASAProcessedRow>>
+struct ASAMainRowsByPlaceSubview:  View {
+    var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>>
     var keys:  Array<String> {
         get {
-            return Array(self.processedRowsByPlaceName.keys).sorted()
+            return Array(self.processedRowsByPlace.keys).sorted()
         } // get
     } // var keys:  Array<String>
     @Binding var now:  Date
@@ -46,12 +55,11 @@ struct ASAMainRowsByPlaceNameSublist:  View {
             key
             in
             Section(header: HStack {
-                Text(self.processedRowsByPlaceName[key]![0].flagEmojiString)
+                Text(self.processedRowsByPlace[key]![0].flagEmojiString)
                 Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
-
             }) {
-                ForEach(self.processedRowsByPlaceName[key]!, id:  \.row.uuid) {
+                ForEach(self.processedRowsByPlace[key]!, id:  \.row.uuid) {
                     processedRow
                     in
 
@@ -79,8 +87,8 @@ struct ASAMainRowsByPlaceNameSublist:  View {
 }
 
 
-struct ASAMainRowsByPlaceName_Previews: PreviewProvider {
+struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceNameList(rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByPlaceView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

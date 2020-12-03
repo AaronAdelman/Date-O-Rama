@@ -223,6 +223,24 @@ extension Array where Element == ASARow {
         return result
     } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
 
+    func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
+        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+        let processedRows = self.processed(now: now)
+
+        for processedRow in processedRows {
+            let key = processedRow.row.locationData.country ?? NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
+            var value = result[key]
+            if value == nil {
+                result[key] = [processedRow]
+            } else {
+                value!.append(processedRow)
+                result[key] = value
+            }
+        } // for processedRow in processedRows
+
+        return result
+    } // func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+
     func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedRow>> {
         var result:  Dictionary<Int, Array<ASAProcessedRow>> = [:]
         let processedRows = self.processed(now: now)

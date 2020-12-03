@@ -13,6 +13,7 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
     case byFormattedDate
     case byCalendar
     case byPlaceName
+    case byCountry
     case westToEast
     case eastToWest
     case northToSouth
@@ -54,6 +55,8 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
         case .byTimeZoneEastToWest:
             raw = "By Time Zone, East to West"
 
+        case .byCountry:
+            raw = "By Country or Region"
         } // switch self
 
         return NSLocalizedString(raw, comment: "")
@@ -63,6 +66,7 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
         .byCalendar,
         .byFormattedDate,
         .byPlaceName,
+        .byCountry,
         .byTimeZoneWestToEast,
         .byTimeZoneEastToWest,
         .eastToWest,
