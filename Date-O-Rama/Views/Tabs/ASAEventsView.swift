@@ -174,7 +174,7 @@ struct ASAEventsView: View {
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                                     ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
                                         .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                    }
+                                }
                                 .foregroundColor(.accentColor)
                         }
 
@@ -318,7 +318,6 @@ struct ASALinkedEventCell:  View {
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
     
     var body: some View {
-        //        Group {
         if event.isEKEvent {
             HStack {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
@@ -331,23 +330,12 @@ struct ASALinkedEventCell:  View {
                     Image(systemName: "info.circle.fill") .font(Font.system(.title))
                 })
                 .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-//                    VStack {
-//                        Spacer()
-//                        HStack {
-//                            Spacer()
-//                            Button(NSLocalizedString(self.CLOSE_BUTTON_TITLE, comment: ""), action: {
-//                                self.showingEventView = false
-//                            })
-//                            Spacer().frame(width:  30)
-//                        }
-                        ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-//                    }
+                    ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                 }.foregroundColor(.accentColor)
             }
         } else {
             ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
         }
-        //        }
     }
 } // struct ASALinkedEventCell
 

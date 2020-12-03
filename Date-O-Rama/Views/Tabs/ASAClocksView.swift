@@ -17,19 +17,6 @@ struct ASAClocksView: View {
 
     @State private var showingNewClockDetailView = false
 
-//    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
-////        .plain,
-//        .byFormattedDate,
-//        .byCalendar,
-//        .byPlaceName,
-//        .eastToWest,
-//        .westToEast,
-//        .northToSouth,
-//        .southToNorth,
-//        .byTimeZoneWestToEast,
-//        .byTimeZoneEastToWest
-//    ]
-
     @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -41,7 +28,7 @@ struct ASAClocksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Rectangle().frame(height:  0.0)
+                Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
                     NavigationLink(destination:  ASAArrangementChooserView(groupingOption:  self.$mainRowsGroupingOption, tempGroupingOption: self.mainRowsGroupingOption)) {
                         HStack {

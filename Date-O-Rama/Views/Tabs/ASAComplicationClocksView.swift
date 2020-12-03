@@ -17,10 +17,6 @@ struct ASAComplicationClocksView: View {
 
     fileprivate func saveUserData() {
         self.userData.savePreferences(code: .complications)
-        
-        //        let app = UIApplication.shared
-        //        let appDelegate = app.delegate as! AppDelegate
-        //        appDelegate.sendUserData(appDelegate.session)
     } // func saveUserData()
 
     func row(with key:  ASARowArrayKey) -> Array<ASARow> {
@@ -43,7 +39,7 @@ struct ASAComplicationClocksView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Rectangle().frame(height:  0.0)
+                Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
                     ForEach(ASARowArrayKey.complicationSections(), id:  \.self) {complicationKey in
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
