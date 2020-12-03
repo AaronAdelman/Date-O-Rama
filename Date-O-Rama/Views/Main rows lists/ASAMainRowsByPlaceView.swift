@@ -35,12 +35,13 @@ struct ASAMainRowsByPlaceView:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByPlaceSubview(processedRowsByPlace: processedRowsByPlace, now: $now)
+        ASAMainRowsByPlaceSubview(groupingOption: self.groupingOption, processedRowsByPlace: processedRowsByPlace, now: $now)
     } // var body
 } // struct ASAMainRowsByPlaceNameView
 
 
 struct ASAMainRowsByPlaceSubview:  View {
+    var groupingOption:  ASAClocksViewGroupingOption
     var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>>
     var keys:  Array<String> {
         get {
@@ -49,6 +50,10 @@ struct ASAMainRowsByPlaceSubview:  View {
     } // var keys:  Array<String>
     @Binding var now:  Date
     @EnvironmentObject var userData:  ASAUserData
+
+    fileprivate func shouldShowPlaceName() -> Bool {
+        return self.groupingOption == .byPlaceName ? false : true
+    }
 
     var body:  some View {
         ForEach(self.keys, id: \.self) {
@@ -65,7 +70,7 @@ struct ASAMainRowsByPlaceSubview:  View {
 
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -77,7 +82,7 @@ struct ASAMainRowsByPlaceSubview:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: false, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
                     }
                     #endif
                 }

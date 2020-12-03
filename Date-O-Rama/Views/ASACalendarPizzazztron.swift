@@ -66,7 +66,7 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
-                .foregroundColor(Color(red: 0.75, green: 0.125, blue: 0.125, opacity: 1.0))
+                .foregroundColor(Color("calendarActiveCellBackground"))
 
             Text(formattedNumber())
                 .font(CELL_FONT)

@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByCalendarList.swift
+//  ASAMainRowsByCalendarView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAMainRowsByCalendarList:  View {
+struct ASAMainRowsByCalendarView:  View {
     @EnvironmentObject var userData:  ASAUserData
 
     @Binding var rows:  Array<ASARow>
@@ -26,11 +26,11 @@ struct ASAMainRowsByCalendarList:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByCalendarSublist(processedRowsByCalendar: self.processedRowsByCalendar, now: $now)
+        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now)
     } // var body
-} // struct ASAMainRowsByCalendarList
+} // struct ASAMainRowsByCalendarView
 
-struct ASAMainRowsByCalendarSublist:  View {
+struct ASAMainRowsByCalendarSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
     var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
@@ -79,8 +79,8 @@ struct ASAMainRowsByCalendarSublist:  View {
     } // var body
 }
 
-struct ASAMainRowsByCalendarList_Previews: PreviewProvider {
+struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarList(rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

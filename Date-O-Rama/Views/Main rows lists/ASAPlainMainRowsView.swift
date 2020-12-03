@@ -1,5 +1,5 @@
 //
-//  ASAPlainMainRowsList.swift
+//  ASAPlainMainRowsView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAPlainMainRowsList:  View {
+struct ASAPlainMainRowsView:  View {
     @EnvironmentObject var userData:  ASAUserData
     
     var groupingOption:  ASAClocksViewGroupingOption
@@ -83,10 +83,10 @@ struct ASAPlainMainRowsList:  View {
         #endif
         //        } // List
     }
-} // struct ASAPlainMainRowsList:  View
+} // struct ASAPlainMainRowsView:  View
 
-struct ASAPlainMainRowsList_Previews: PreviewProvider {
+struct ASAPlainMainRowsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAPlainMainRowsList(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAPlainMainRowsView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

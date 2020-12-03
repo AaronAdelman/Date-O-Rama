@@ -64,19 +64,19 @@ struct ASAClocksView: View {
 //                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now)
 
                 case .byFormattedDate:
-                    ASAMainRowsByFormattedDateList(rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now)
 
                 case .byCalendar:
-                    ASAMainRowsByCalendarList(rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now)
 
                 case .byPlaceName, .byCountry:
                     ASAMainRowsByPlaceView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                    ASAPlainMainRowsList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                    ASAPlainMainRowsView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                    ASAMainRowsByTimeZoneList(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByTimeZoneView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
             .sheet(isPresented: self.$showingNewClockDetailView) {

@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByTimeZoneList.swift
+//  ASAMainRowsByTimeZoneView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 02/12/2020.
@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 
-struct ASAMainRowsByTimeZoneList:  View {
+struct ASAMainRowsByTimeZoneView:  View {
     @EnvironmentObject var userData:  ASAUserData
     var groupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASARow>
@@ -37,11 +37,11 @@ struct ASAMainRowsByTimeZoneList:  View {
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
 
     var body:  some View {
-        ASAMainRowsByTimeZoneSublist(groupingOption: self.groupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now)
+        ASAMainRowsByTimeZoneSubview(groupingOption: self.groupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now)
     }
 }
 
-struct ASAMainRowsByTimeZoneSublist:  View {
+struct ASAMainRowsByTimeZoneSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
     var groupingOption:  ASAClocksViewGroupingOption
     var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>>

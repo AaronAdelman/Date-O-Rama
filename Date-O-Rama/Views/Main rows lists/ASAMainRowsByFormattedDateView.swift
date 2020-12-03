@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByFormattedDateList.swift
+//  ASAMainRowsByFormattedDateView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAMainRowsByFormattedDateList:  View {
+struct ASAMainRowsByFormattedDateView:  View {
     @EnvironmentObject var userData:  ASAUserData
     
     @Binding var rows:  Array<ASARow>
@@ -20,11 +20,11 @@ struct ASAMainRowsByFormattedDateList:  View {
     @Binding var now:  Date
 
     var body: some View {
-        ASAMainRowsByFormattedDateSublist(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now)
+        ASAMainRowsByFormattedDateSubview(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now)
     } // var body
-} // struct ASAMainRowsByFormattedDateList
+} // struct ASAMainRowsByFormattedDateView
 
-struct ASAMainRowsByFormattedDateSublist:  View {
+struct ASAMainRowsByFormattedDateSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
     var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
@@ -70,8 +70,8 @@ struct ASAMainRowsByFormattedDateSublist:  View {
     }
 }
 
-struct ASAMainRowsByFormattedDateList_Previews: PreviewProvider {
+struct ASAMainRowsByFormattedDateView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateList(rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }
