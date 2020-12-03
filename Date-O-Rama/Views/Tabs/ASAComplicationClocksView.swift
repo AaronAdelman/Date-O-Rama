@@ -42,20 +42,22 @@ struct ASAComplicationClocksView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(ASARowArrayKey.complicationSections(), id:  \.self) {complicationKey in
-                    Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
-                        ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
-                            NavigationLink(
-                                destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false)
-                                    .onReceive(row.objectWillChange) { _ in
-                                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                        self.userData.objectWillChange.send()
-                                        self.saveUserData()
-                                    }
-                            ) {
-                                ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowCalendarPizzazztron: false)
-
+            VStack {
+                Rectangle().frame(height:  0.0)
+                List {
+                    ForEach(ASARowArrayKey.complicationSections(), id:  \.self) {complicationKey in
+                        Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
+                            ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
+                                NavigationLink(
+                                    destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false)
+                                        .onReceive(row.objectWillChange) { _ in
+                                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                            self.userData.objectWillChange.send()
+                                            self.saveUserData()
+                                        }
+                                ) {
+                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowCalendarPizzazztron: false)
+                                }
                             }
                         }
                     }

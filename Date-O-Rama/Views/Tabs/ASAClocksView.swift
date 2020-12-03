@@ -40,72 +40,61 @@ struct ASAClocksView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                NavigationLink(destination:  ASAArrangementChooserView(groupingOption:  self.$mainRowsGroupingOption, tempGroupingOption: self.mainRowsGroupingOption)) {
-                    HStack {
-                        Text("Arrangement")
-                        Spacer()
-                        Text(self.mainRowsGroupingOption.text())
+            VStack {
+                Rectangle().frame(height:  0.0)
+                List {
+                    NavigationLink(destination:  ASAArrangementChooserView(groupingOption:  self.$mainRowsGroupingOption, tempGroupingOption: self.mainRowsGroupingOption)) {
+                        HStack {
+                            Text("Arrangement")
+                            Spacer()
+                            Text(self.mainRowsGroupingOption.text())
+                        }
+                        .foregroundColor(.accentColor)
+                    }
+
+                    Button(
+                        action: {
+                            self.showingNewClockDetailView = true
+                        }
+                    ) {
+                        Text("Add clock")
                     }
                     .foregroundColor(.accentColor)
+
+                    switch self.mainRowsGroupingOption {
+                    case .byFormattedDate:
+                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now)
+
+                    case .byCalendar:
+                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now)
+
+                    case .byPlaceName, .byCountry:
+                        ASAMainRowsByPlaceView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+
+                    case .westToEast, .eastToWest, .southToNorth, .northToSouth:
+                        ASAPlainMainRowsView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+
+                    case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
+                        ASAMainRowsByTimeZoneView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                    } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
-
-                Button(
-                    action: {
-                        self.showingNewClockDetailView = true
-                    }
-                ) {
-                    Text("Add clock")
+                .sheet(isPresented: self.$showingNewClockDetailView) {
+                    ASANewClockDetailView()
                 }
-                .foregroundColor(.accentColor)
-
-                switch self.mainRowsGroupingOption {
-//                case .plain:
-//                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now)
-
-                case .byFormattedDate:
-                    ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now)
-
-                case .byCalendar:
-                    ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now)
-
-                case .byPlaceName, .byCountry:
-                    ASAMainRowsByPlaceView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
-
-                case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                    ASAPlainMainRowsView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
-
-                case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                    ASAMainRowsByTimeZoneView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
-                } // switch self.groupingOptions[self.groupingOptionIndex]
-            }
-            .sheet(isPresented: self.$showingNewClockDetailView) {
-                ASANewClockDetailView()
-            }
-            .navigationBarTitle(Text("CLOCKS_TAB"))
-            .navigationBarHidden(self.isNavBarHidden)
-            .onAppear {
-                self.isNavBarHidden = true
-            }
-            .onDisappear {
-                self.isNavBarHidden = false
-            }
-//            .navigationBarItems(
-//                leading: ASAConditionalEditButton(shouldShow: self.mainRowsGroupingOption == .plain),
-//                trailing: Button(
-//                    action: {
-//                        self.showingNewClockDetailView = true
-//                    }
-//                ) {
-//                    Text("Add clock")
-//                }
-//            )
-
+                .navigationBarTitle(Text("CLOCKS_TAB"))
+                .navigationBarHidden(self.isNavBarHidden)
+                .onAppear {
+                    self.isNavBarHidden = true
+                }
+                .onDisappear {
+                    self.isNavBarHidden = false
+                }
+            } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in
             self.now = Date()
         }
-    }
+    } // var body
 } // struct ASAClocksView
 
 
