@@ -60,13 +60,13 @@ struct ASAComplicationClocksView: View {
                 }
             }
         }
-        .navigationBarTitle(Text(""))
+//        .navigationBarTitle(Text(""))
         .navigationBarHidden(self.isNavBarHidden)
         .onAppear {
             self.isNavBarHidden = true
         }
         .onDisappear {
-            self.isNavBarHidden = false
+//            self.isNavBarHidden = false
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in

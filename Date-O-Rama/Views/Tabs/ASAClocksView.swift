@@ -68,13 +68,13 @@ struct ASAClocksView: View {
                 .sheet(isPresented: self.$showingNewClockDetailView) {
                     ASANewClockDetailView()
                 }
-                .navigationBarTitle(Text("CLOCKS_TAB"))
+//                .navigationBarTitle(Text("CLOCKS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
                 .onAppear {
                     self.isNavBarHidden = true
                 }
                 .onDisappear {
-                    self.isNavBarHidden = false
+//                    self.isNavBarHidden = false
                 }
             } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())

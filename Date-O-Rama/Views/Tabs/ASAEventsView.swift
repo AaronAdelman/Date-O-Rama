@@ -228,17 +228,17 @@ struct ASAEventsView: View {
                             in
                             ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
                         } // ForEach
-                    }
-                } // Form
-                
+                    } // Section
+                } // List
+
             } // VStack
-            .navigationBarTitle(Text("EVENTS_TAB"))
+//            .navigationBarTitle(Text("EVENTS_TAB"))
             .navigationBarHidden(self.isNavBarHidden)
             .onAppear {
                 self.isNavBarHidden = true
             }
             .onDisappear {
-                self.isNavBarHidden = false
+//                self.isNavBarHidden = false
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
