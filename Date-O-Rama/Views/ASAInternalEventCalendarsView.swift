@@ -42,9 +42,6 @@ struct ASAInternalEventCalendarsView: View {
                 self.userData.savePreferences(code: .events)
             }
         } // List
-        .sheet(isPresented: self.$showingNewInternalEventCalendarDetailView) {
-            ASANewInternalEventCalendarDetailView()
-        }
         .navigationBarTitle(Text("Internal event calendars"))
         .navigationBarItems(
             leading:
@@ -57,10 +54,15 @@ struct ASAInternalEventCalendarsView: View {
                 ) {
                     Text("Add internal event calendar")
                 }
+                .popover(isPresented: self.$showingNewInternalEventCalendarDetailView, arrowEdge: .top) {
+                    ASANewInternalEventCalendarDetailView()
+                }
         )
     } // var body
 } // struct ASAInternalEventsView
 
+
+// MARK:  -
 
 struct ASAInternalEventCalendarCell:  View {
     @ObservedObject var eventCalendar:  ASAInternalEventCalendar

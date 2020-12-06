@@ -69,7 +69,6 @@ struct ASAInternalEventCalendarDetailSection:  View {
                 }
             }
 
-
             NavigationLink(destination:  ASALocationChooserView(locatedObject:  selectedEventCalendar, tempLocationData: ASALocationData())) {
                 VStack {
                     ASALocationCell(usesDeviceLocation: self.selectedEventCalendar.usesDeviceLocation, locationData: self.selectedEventCalendar.locationData)
@@ -77,10 +76,12 @@ struct ASAInternalEventCalendarDetailSection:  View {
                     ASATimeZoneCell(timeZone: selectedEventCalendar.effectiveTimeZone, now: Date())
                 } // VStack
             }
-
-        } // List
+        } // Section
     } // var body
-} // struct ASAInternalEventCalendarDetailList
+} // struct ASAInternalEventCalendarDetailSection
+
+
+// MARK:  -
 
 struct ASAInternalEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
