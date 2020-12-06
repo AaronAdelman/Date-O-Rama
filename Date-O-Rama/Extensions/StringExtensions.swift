@@ -139,7 +139,7 @@ extension String {
     // Based on https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode
     // Converts a country code into a Unicode emoji flag
     func flag() -> String {
-        let FAILURE_FLAG = "🏳️"
+        let FAILURE_FLAG = "📍"
         
         if self == "" {
             return FAILURE_FLAG
