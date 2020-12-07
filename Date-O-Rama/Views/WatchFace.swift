@@ -10,21 +10,21 @@
 import Foundation
 import SwiftUI
 
-struct Arc:  Shape {
-    var startAngle:  Angle = .radians(0.0)
-    var endAngle:  Angle   = .radians(Double.pi * 2.0)
-    var clockwise:  Bool   = true
-
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-
-        let center = CGPoint(x: rect.midX, y: rect.midY)
-        let radius = min(rect.width / 2.0, rect.height / 2.0)
-
-        path.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
-        return path
-    } // func path(in rect: CGRect) -> Path
-} // struct Arc
+//struct Arc:  Shape {
+//    var startAngle:  Angle = .radians(0.0)
+//    var endAngle:  Angle   = .radians(Double.pi * 2.0)
+//    var clockwise:  Bool   = true
+//
+//    func path(in rect: CGRect) -> Path {
+//        var path = Path()
+//
+//        let center = CGPoint(x: rect.midX, y: rect.midY)
+//        let radius = min(rect.width / 2.0, rect.height / 2.0)
+//
+//        path.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
+//        return path
+//    } // func path(in rect: CGRect) -> Path
+//} // struct Arc
 
 
 struct Tick:  Shape {
@@ -47,6 +47,7 @@ struct Ticks:  View {
             Tick(isLong: position % 5 == 0)
                 .stroke(lineWidth: 1.0)
                 .rotationEffect(.radians(Double.pi * 2.0 / 60 * Double(position)))
+                .foregroundColor(Color("tick"))
         }
     } // var body
 } // struct Ticks
@@ -130,8 +131,12 @@ struct Watch:  View {
 
     var body:  some View {
         ZStack {
-            Arc(startAngle: .radians(0.0), endAngle: .radians(Double.pi * 2.0))
-                .stroke(lineWidth: 1.0)
+            //            Arc(startAngle: .radians(0.0), endAngle: .radians(Double.pi * 2.0))
+            //                .stroke(lineWidth: 1.0)
+            Circle()
+                .strokeBorder(Color("clockBorder"), lineWidth: 1.0)
+                .background(Circle()
+                                .foregroundColor(Color("clockBackground")))
             Ticks()
             //            Numbers()
             Circle()
@@ -142,27 +147,27 @@ struct Watch:  View {
                 .fill()
                 .frame(width: 1.0, alignment: .center)
                 .rotationEffect(.radians(minuteAngle))
-//                .foregroundColor(.primary)
+                .foregroundColor(Color("minuteHand"))
 
             // Hour hand
             Hand(offset: 12)
                 .fill()
                 .frame(width: 2.0, alignment: .center)
                 .rotationEffect(.radians(hourAngle))
-//                .foregroundColor(.primary)
+                .foregroundColor(Color("hourHand"))
 
             // Second hand
             Hand(offset: 3.0)
                 .fill()
-                .foregroundColor(.orange)
+                .foregroundColor(Color("secondHand"))
                 .frame(width: 0.5, alignment: .center)
                 .rotationEffect(.radians(secondAngle))
 
             Circle()
                 .fill()
-//                .foregroundColor(.gray)
-                .frame(width: 4.0, height: 4.0, alignment: .center)
-                .shadow(color: .black, radius: 1.0, x: 1.0, y: 1.0)
+                .foregroundColor(Color("clockHub"))
+            .frame(width: 4.0, height: 4.0, alignment: .center)
+                .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
         }
         .frame(width: WATCH_DIMENSION, height: WATCH_DIMENSION, alignment: .center)
         .environment(\.layoutDirection, .leftToRight)
