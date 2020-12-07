@@ -41,7 +41,7 @@ struct ASAOrdinaryCell:  View {
     var body: some View {
         Text(formattedNumber())
             .font(CELL_FONT)
-//            .foregroundColor(.primary)
+            .foregroundColor(Color("ordinaryCellText"))
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
@@ -70,7 +70,7 @@ struct ASAAccentedCell:  View {
 
             Text(formattedNumber())
                 .font(CELL_FONT)
-                .foregroundColor(.white)
+                .foregroundColor(Color("accentedCellText"))
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
@@ -90,6 +90,8 @@ extension Int {
     } // func weekdayFixed(daysPerWeek:  Int) -> Int
 } // extension Int
 
+
+// MARK:  -
 
 struct ASACalendarPizzazztron:  View {
     var daysPerWeek:  Int
