@@ -41,7 +41,7 @@ struct ASAOrdinaryCell:  View {
     var body: some View {
         Text(formattedNumber())
             .font(CELL_FONT)
-            .foregroundColor(Color("ordinaryCellText"))
+            .foregroundColor(Color("calendarOrdinaryCellText"))
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
@@ -66,11 +66,11 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
-                .foregroundColor(Color("calendarActiveCellBackground"))
+                .foregroundColor(Color("calendarAccentedCellBackground"))
 
             Text(formattedNumber())
                 .font(CELL_FONT)
-                .foregroundColor(Color("accentedCellText"))
+                .foregroundColor(Color("calendarAccentedCellText"))
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
