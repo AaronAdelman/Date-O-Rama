@@ -95,20 +95,20 @@ extension Color {
         return result
     } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
 
-    var components:  (CGFloat, CGFloat, CGFloat) {
-        get {
-            let cg = self.cgColor
-            if cg == nil {
-                return (0.5, 0.5, 0.5)
-            }
-            let components = cg!.components
-            if components == nil {
-                return (0.5, 0.5, 0.5)
-            }
-            let result = (components![0], components![1], components![2])
-            return result
-        } // get
-    } // var components
+//    var components:  (CGFloat, CGFloat, CGFloat) {
+//        get {
+//            let cg = self.cgColor
+//            if cg == nil {
+//                return (0.5, 0.5, 0.5)
+//            }
+//            let components = cg!.components
+//            if components == nil {
+//                return (0.5, 0.5, 0.5)
+//            }
+//            let result = (components![0], components![1], components![2])
+//            return result
+//        } // get
+//    } // var components
 
 //    static func blend(startColor:  Color, endColor:  Color, progress:  CGFloat) -> Color {
 //        let oneOverProgress:  CGFloat = 1.0 - progress
