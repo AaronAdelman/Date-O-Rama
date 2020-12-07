@@ -51,7 +51,7 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     } // var effectiveTimeZone
     
     @Published var usesDeviceLocation:  Bool = true
-    @Published var locationData:  ASALocationData = ASALocationManager.shared.locationData
+    @Published var locationData:  ASALocationData = ASALocationManager.shared.deviceLocationData
     
     var location:  CLLocation? {
         get {
@@ -72,7 +72,7 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     
     override init() {
         super.init()
-        notificationCenter.addObserver(self, selector: #selector(handle(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil)
+        notificationCenter.addObserver(self, selector: #selector(handle(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
     } // override init()
     
     deinit {
@@ -81,10 +81,10 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     
     @objc func handle(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
-            if self.locationManager.locationData.location == nil {
+            if self.locationManager.deviceLocationData.location == nil {
                 debugPrint("AHA!")
             }
-            self.locationData = self.locationManager.locationData
+            self.locationData = self.locationManager.deviceLocationData
         }
     } // func handle(notification:  Notification) -> Void
     

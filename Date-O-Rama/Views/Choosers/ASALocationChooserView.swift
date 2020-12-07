@@ -18,7 +18,7 @@ struct ASALocationChooserView: View {
     @State var tempUsesDeviceLocation: Bool = false {
         didSet {
             if tempUsesDeviceLocation == true {
-                tempLocationData = ASALocationManager.shared.locationData
+                tempLocationData = ASALocationManager.shared.deviceLocationData
             }
         } // didSet
     } // var tempUsesDeviceLocation
@@ -84,7 +84,7 @@ struct ASALocationChooserView: View {
                 //                debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
                 self.locatedObject.usesDeviceLocation = self.tempUsesDeviceLocation
                 if self.tempUsesDeviceLocation {
-                    self.locatedObject.locationData = ASALocationManager.shared.locationData
+                    self.locatedObject.locationData = ASALocationManager.shared.deviceLocationData
                 } else {
                     self.locatedObject.locationData = self.tempLocationData
                 }

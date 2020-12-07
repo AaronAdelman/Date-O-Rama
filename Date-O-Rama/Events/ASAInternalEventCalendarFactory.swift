@@ -14,7 +14,7 @@ class ASAInternalEventCalendarFactory {
         
         let result = ASAInternalEventCalendar()
         result.eventSourceCode = eventSourceCode
-        result.locationData = ASALocationManager.shared.locationData
+        result.locationData = ASALocationManager.shared.deviceLocationData
         result.usesDeviceLocation = true
         return result
     } //class func eventCalendar(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventCalendar?

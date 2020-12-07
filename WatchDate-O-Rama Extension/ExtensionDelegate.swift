@@ -21,9 +21,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
 
     override init() {
         super.init()
-        notificationCenter.addObserver(forName: NSNotification.Name(rawValue: UPDATED_LOCATION), object: nil, queue: nil, using: {notification
+        notificationCenter.addObserver(forName: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil, queue: nil, using: {notification
             in
-            if notification.name.rawValue == UPDATED_LOCATION {
+            if notification.name.rawValue == UPDATED_LOCATION_NAME {
                 // TODO:  Put in something to check if we need if something actually needs a refresh!
                 if self.complicationController.complication != nil {
                     CLKComplicationServer.sharedInstance().reloadTimeline(for: self.complicationController.complication!)

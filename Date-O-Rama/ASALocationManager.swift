@@ -11,7 +11,7 @@ import Foundation
 import CoreLocation
 import Combine
 
-let UPDATED_LOCATION = "UPDATED_LOCATION"
+let UPDATED_LOCATION_NAME = "UPDATED_LOCATION"
 
 
 // MARK: -
@@ -49,28 +49,26 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var locationData: ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone:  TimeZone.autoupdatingCurrent) {
+    @Published var deviceLocationData: ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone:  TimeZone.autoupdatingCurrent) {
         willSet {
             objectWillChange.send()
         } // willSet
-    } // var locationData
-    
-    
-    var statusString: String {
-        guard let status = locationAuthorizationStatus else {
-            return "unknown"
-        }
-        
-        switch status {
-        case .notDetermined: return "notDetermined"
-        case .authorizedWhenInUse: return "authorizedWhenInUse"
-        case .authorizedAlways: return "authorizedAlways"
-        case .restricted: return "restricted"
-        case .denied: return "denied"
-        default: return "unknown"
-        }
+    } // var deviceLocationData
 
-    }
+//    var statusString: String {
+//        guard let status = locationAuthorizationStatus else {
+//            return "unknown"
+//        }
+//
+//        switch status {
+//        case .notDetermined: return "notDetermined"
+//        case .authorizedWhenInUse: return "authorizedWhenInUse"
+//        case .authorizedAlways: return "authorizedAlways"
+//        case .restricted: return "restricted"
+//        case .denied: return "denied"
+//        default: return "unknown"
+//        }
+//    }
 
     let objectWillChange = PassthroughSubject<Void, Never>()
 
@@ -81,7 +79,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationAuthorizationStatus = status
-        print(#function, statusString)
+//        print(#function, statusString)
     }
 
     fileprivate func reverseGeocode(_ location: CLLocation) {
@@ -105,6 +103,9 @@ extension ASALocationManager: CLLocationManagerDelegate {
 //                tempLocationData.thoroughfare          = NSLocalizedString("???", comment: "")
 //                tempLocationData.subThoroughfare       = NSLocalizedString("???", comment: "")
                 tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
+
+                tempLocationData.country  = self.lastDevicePlacemark?.country
+
                 self.finishDidUpdateLocations(tempLocationData)
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
@@ -132,8 +133,8 @@ extension ASALocationManager: CLLocationManagerDelegate {
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 
     fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocationData) {
-        self.locationData = tempLocationData
-        self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION), object: nil)
+        self.deviceLocationData = tempLocationData
+        self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION_NAME), object: nil)
         
 //        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
     } // func finishDidUpdateLocations(_ tempLocationData: ASALocationData)
