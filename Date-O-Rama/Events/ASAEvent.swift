@@ -102,8 +102,12 @@ extension EKEvent:  ASAEventCompatible {
     
     var color: Color {
         get {
-            let calendarColor = self.calendar.cgColor ?? CGColor(genericGrayGamma2_2Gray: 0.5, alpha: 1.0)
-            return Color(UIColor(cgColor: calendarColor))
+            let calendarColor = self.calendar.cgColor
+            if calendarColor == nil {
+                return Color("genericCalendar")
+            }
+
+            return Color(UIColor(cgColor: calendarColor!))
         } // get
     } // var color
     
