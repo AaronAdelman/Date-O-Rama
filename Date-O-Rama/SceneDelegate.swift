@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let contentView = TabView {
             ASAClocksView().environmentObject(userData)
                 .tabItem {
-                    Image(systemName: "clock")
+                    Image(systemName: "globe")
                     Text("CLOCKS_TAB")
                 }
 
