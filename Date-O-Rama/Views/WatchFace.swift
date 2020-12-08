@@ -10,22 +10,6 @@
 import Foundation
 import SwiftUI
 
-//struct Arc:  Shape {
-//    var startAngle:  Angle = .radians(0.0)
-//    var endAngle:  Angle   = .radians(Double.pi * 2.0)
-//    var clockwise:  Bool   = true
-//
-//    func path(in rect: CGRect) -> Path {
-//        var path = Path()
-//
-//        let center = CGPoint(x: rect.midX, y: rect.midY)
-//        let radius = min(rect.width / 2.0, rect.height / 2.0)
-//
-//        path.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
-//        return path
-//    } // func path(in rect: CGRect) -> Path
-//} // struct Arc
-
 
 struct Tick:  Shape {
     var isLong:  Bool = false
@@ -88,7 +72,7 @@ struct Hand:  Shape {
 
     func path(in rect: CGRect) -> Path {
         var path = Path()
-        path.addRoundedRect(in: CGRect(origin: CGPoint(x: rect.origin.x, y: rect.origin.y + offset), size: CGSize(width: rect.width, height: rect.height / 2.0 - offset)), cornerSize: CGSize(width: rect.width / 2.0, height: rect.width / 2.0))
+        path.addEllipse(in: CGRect(origin: CGPoint(x: rect.origin.x, y: rect.origin.y + offset), size: CGSize(width: rect.width, height: rect.height / 2.0 - offset)))
         return path
     }
 }
@@ -96,8 +80,11 @@ struct Hand:  Shape {
 
 // MARK:  - Watch
 
-let WATCH_DIMENSION:  CGFloat = 48.0
-let HUB_DIMENSION:  CGFloat   =  2.0
+let WATCH_DIMENSION:  CGFloat             = 48.0
+let BACKGROUND_CIRCLE_DIMENSION:  CGFloat = WATCH_DIMENSION - 2.0
+let OUTSIDE_STROKE_WIDTH:  CGFloat        =  1.0
+let TICKS_DIMENSION                       = BACKGROUND_CIRCLE_DIMENSION - 2.0 * OUTSIDE_STROKE_WIDTH
+let HUB_DIMENSION:  CGFloat               =  4.0
 
 struct Watch:  View {
     var hour:  Int
@@ -134,14 +121,20 @@ struct Watch:  View {
             //            Arc(startAngle: .radians(0.0), endAngle: .radians(Double.pi * 2.0))
             //                .stroke(lineWidth: 1.0)
             Circle()
-                .strokeBorder(Color("clockBorder"), lineWidth: 1.0)
+                .strokeBorder(Color("clockBorder"), lineWidth: OUTSIDE_STROKE_WIDTH)
                 .background(Circle()
                                 .foregroundColor(Color("clockBackground")))
+                .frame(width: BACKGROUND_CIRCLE_DIMENSION, height: BACKGROUND_CIRCLE_DIMENSION, alignment: .center)
+                .blur(radius: 0.3)
             Ticks()
+                .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
+            
             //            Numbers()
-            Circle()
-                .fill()
-                .frame(width: HUB_DIMENSION, height: HUB_DIMENSION, alignment: .center)
+
+//            Circle()
+//                .fill()
+//                .frame(width: HUB_DIMENSION, height: HUB_DIMENSION, alignment: .center)
+
             // Minute hand
             Hand(offset: 7.0)
                 .fill()
@@ -166,7 +159,7 @@ struct Watch:  View {
             Circle()
                 .fill()
                 .foregroundColor(Color("clockHub"))
-            .frame(width: 4.0, height: 4.0, alignment: .center)
+                .frame(width: HUB_DIMENSION, height: HUB_DIMENSION, alignment: .center)
                 .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
         }
         .frame(width: WATCH_DIMENSION, height: WATCH_DIMENSION, alignment: .center)

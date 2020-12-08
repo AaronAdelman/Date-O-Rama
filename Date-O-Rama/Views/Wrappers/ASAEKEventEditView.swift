@@ -58,19 +58,45 @@ struct ASAEKEventEditView:  UIViewControllerRepresentable {
             @unknown default:
                 debugPrint(#file, #function, "Unknown default")
             } // switch action
-            
+
             parent.action = action
 
             parent.presentationMode.wrappedValue.dismiss()
         } // func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction)
 
-        func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-            debugPrint(#file, #function, navigationController, viewController, animated)
-        }
-
-        func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-            debugPrint(#file, #function, navigationController, viewController, animated)
-        }
+//        func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+//            debugPrint(#file, #function, navigationController, viewController, animated)
+//        }
+//
+//        func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+//            debugPrint(#file, #function, navigationController, viewController, animated)
+//        }
+//
+//        func navigationController(_ navigationController: UINavigationController,
+//                                  animationControllerFor operation: UINavigationController.Operation,
+//                                  from fromVC: UIViewController,
+//                                  to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//            debugPrint(#file, #function, navigationController, operation, fromVC, toVC)
+//
+//            return nil
+//        }
+//
+//        func navigationController(_ navigationController: UINavigationController,
+//                                  interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+//            debugPrint(#file, #function, navigationController, animationController)
+//
+//            return nil
+//        }
+//
+//        func navigationControllerPreferredInterfaceOrientationForPresentation(_ navigationController: UINavigationController) -> UIInterfaceOrientation {
+//            debugPrint(#file, #function, navigationController)
+//            return .portrait
+//        }
+//
+//        func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask {
+//            debugPrint(#file, #function, navigationController)
+//            return [.allButUpsideDown]
+//        }
     } // class Coordinator
 
 } // struct ASAEKEventEditView
