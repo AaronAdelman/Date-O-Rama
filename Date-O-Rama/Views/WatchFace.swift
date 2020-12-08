@@ -24,6 +24,8 @@ struct Tick:  Shape {
 
 
 struct Ticks:  View {
+    var isNight:  Bool
+
     var body: some View {
         ForEach(0..<60) {
             position
@@ -31,7 +33,7 @@ struct Ticks:  View {
             Tick(isLong: position % 5 == 0)
                 .stroke(lineWidth: 1.0)
                 .rotationEffect(.radians(Double.pi * 2.0 / 60 * Double(position)))
-                .foregroundColor(Color("tick"))
+                .foregroundColor(Color(isNight ? "tickNight" : "tickDay"))
         }
     } // var body
 } // struct Ticks
@@ -90,6 +92,7 @@ struct Watch:  View {
     var hour:  Int
     var minute:  Int
     var second:  Int
+    var isNight:  Bool
 
     let radianInOneHour = 2.0 * Double.pi / 12.0
     let radianInOneMinute = 2.0 * Double.pi / 60.0
@@ -118,47 +121,41 @@ struct Watch:  View {
 
     var body:  some View {
         ZStack {
-            //            Arc(startAngle: .radians(0.0), endAngle: .radians(Double.pi * 2.0))
-            //                .stroke(lineWidth: 1.0)
             Circle()
-                .strokeBorder(Color("clockBorder"), lineWidth: OUTSIDE_STROKE_WIDTH)
+                .strokeBorder(Color(isNight ? "clockBorderNight" : "clockBorderDay"), lineWidth: OUTSIDE_STROKE_WIDTH)
                 .background(Circle()
-                                .foregroundColor(Color("clockBackground")))
+                                .foregroundColor(Color(isNight ? "clockBackgroundNight" : "clockBackgroundDay")))
                 .frame(width: BACKGROUND_CIRCLE_DIMENSION, height: BACKGROUND_CIRCLE_DIMENSION, alignment: .center)
                 .blur(radius: 0.3)
-            Ticks()
+            Ticks(isNight: isNight)
                 .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
             
             //            Numbers()
-
-//            Circle()
-//                .fill()
-//                .frame(width: HUB_DIMENSION, height: HUB_DIMENSION, alignment: .center)
-
-            // Minute hand
-            Hand(offset: 7.0)
-                .fill()
-                .frame(width: 1.0, alignment: .center)
-                .rotationEffect(.radians(minuteAngle))
-                .foregroundColor(Color("minuteHand"))
 
             // Hour hand
             Hand(offset: 12)
                 .fill()
                 .frame(width: 2.0, alignment: .center)
                 .rotationEffect(.radians(hourAngle))
-                .foregroundColor(Color("hourHand"))
+                .foregroundColor(Color(isNight ? "hourHandNight" : "hourHandDay"))
+
+            // Minute hand
+            Hand(offset: 7.0)
+                .fill()
+                .frame(width: 1.0, alignment: .center)
+                .rotationEffect(.radians(minuteAngle))
+                .foregroundColor(Color(isNight ? "minuteHandNight" : "minuteHandDay"))
 
             // Second hand
             Hand(offset: 3.0)
                 .fill()
-                .foregroundColor(Color("secondHand"))
+                .foregroundColor(Color(isNight ? "secondHandNight" : "secondHandDay"))
                 .frame(width: 0.5, alignment: .center)
                 .rotationEffect(.radians(secondAngle))
 
             Circle()
                 .fill()
-                .foregroundColor(Color("clockHub"))
+                .foregroundColor(Color(isNight ? "clockHubNight" : "clockHubDay"))
                 .frame(width: HUB_DIMENSION, height: HUB_DIMENSION, alignment: .center)
                 .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
         }

@@ -11,7 +11,7 @@ import SwiftUI
 
 // MARK: - Utility functions
 
-fileprivate func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool {
+public func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool {
     switch transitionType {
     case .sunset, .dusk:
         if transitionType == .dusk {
