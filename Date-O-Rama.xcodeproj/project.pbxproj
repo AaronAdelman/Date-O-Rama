@@ -417,7 +417,6 @@
 		A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */,
 				A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */,
 				A566F45D2483D6EF000A05B5 /* Assets.xcassets */,
 				A57CA32C2486474900378EA7 /* ComplicationController.swift */,
@@ -429,6 +428,7 @@
 				A566F45B2483D6EC000A05B5 /* NotificationView.swift */,
 				A566F45F2483D6EF000A05B5 /* Preview Content */,
 				A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */,
+				A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */,
 			);
 			path = "WatchDate-O-Rama Extension";
 			sourceTree = "<group>";
