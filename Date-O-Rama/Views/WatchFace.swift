@@ -86,7 +86,7 @@ let WATCH_DIMENSION:  CGFloat             = 48.0
 let BACKGROUND_CIRCLE_DIMENSION:  CGFloat = WATCH_DIMENSION - 2.0
 let OUTSIDE_STROKE_WIDTH:  CGFloat        =  1.0
 let TICKS_DIMENSION                       = BACKGROUND_CIRCLE_DIMENSION - 2.0 * OUTSIDE_STROKE_WIDTH
-let HUB_DIMENSION:  CGFloat               =  4.0
+let HUB_DIMENSION:  CGFloat               =  3.0
 
 struct Watch:  View {
     var hour:  Int
@@ -157,7 +157,7 @@ struct Watch:  View {
                 .fill()
                 .foregroundColor(Color(isNight ? "clockHubNight" : "clockHubDay"))
                 .frame(width: HUB_DIMENSION, height: HUB_DIMENSION, alignment: .center)
-                .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
+//                .shadow(color: .black, radius: 0.5, x: 0.5, y: 0.5)
         }
         .frame(width: WATCH_DIMENSION, height: WATCH_DIMENSION, alignment: .center)
         .environment(\.layoutDirection, .leftToRight)
