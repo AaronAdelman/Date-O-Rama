@@ -55,7 +55,6 @@ struct ASASolarEvent:  Hashable {
 
 extension Date {
     func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
-
         // 1. first calculate the day of the year
 
         var calendar = Calendar(identifier: .gregorian)
