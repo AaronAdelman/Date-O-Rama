@@ -1300,7 +1300,6 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1308,8 +1307,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama";
 				PRODUCT_NAME = "Date-O-Rama";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1326,7 +1326,6 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1334,8 +1333,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama";
 				PRODUCT_NAME = "Date-O-Rama";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,6";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
