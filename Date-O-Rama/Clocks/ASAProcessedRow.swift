@@ -22,6 +22,7 @@ struct ASAProcessedRow {
     var canSplitTimeFromDate:  Bool
     var supportsTimeZones:  Bool
     var supportsLocations:  Bool
+    var supportsTimes:  Bool
 
     var daysPerWeek:  Int
     var day:  Int
@@ -38,7 +39,6 @@ struct ASAProcessedRow {
 
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
-
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -103,7 +103,6 @@ struct ASAProcessedRow {
         self.second = dateComponents.second ?? 0
 
         self.transitionType = row.calendar.transitionType
-        self.calendarType = row.calendar.calendarCode.type
 
         if row.localeIdentifier == "" {
             self.localeIdentifier = Locale.current.identifier
@@ -111,8 +110,14 @@ struct ASAProcessedRow {
             self.localeIdentifier = row.localeIdentifier
         }
         self.calendarCode = row.calendar.calendarCode
+
+        self.calendarType = row.calendar.calendarCode.type
+        self.supportsTimes = row.calendar.supportsTimes
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
+
+
+// MARK:  -
 
 extension ASAProcessedRow {
     var latitude:  CLLocationDegrees {
