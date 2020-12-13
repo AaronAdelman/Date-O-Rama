@@ -143,7 +143,7 @@ struct Watch:  View {
                 .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
 
             // Hour hand
-            Hand(offset: 12)
+            Hand(offset: 18.0)
                 .fill()
                 .frame(width: 2.0, alignment: .center)
                 .rotationEffect(.radians(hourAngle))
