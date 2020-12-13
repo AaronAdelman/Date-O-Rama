@@ -33,7 +33,7 @@ struct ASAClockCell: View {
     var body: some View {
         if !runningOnWatchOS && processedRow.hasValidTime {
             ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
-                .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
+                .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType))
                 .padding(EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0))
                 .background(ASASkyGradient(processedRow: processedRow))
                 .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))

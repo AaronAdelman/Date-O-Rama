@@ -17,11 +17,11 @@ struct ASASkyGradient: View {
         return Color.blend(startRed: SUNSET_RED_RED, startGreen: SUNSET_RED_GREEN, startBlue: SUNSET_RED_BLUE, endRed: MIDNIGHT_BLUE_RED, endGreen: MIDNIGHT_BLUE_GREEN, endBlue: MIDNIGHT_BLUE_BLUE, progress: progress)
     }
 
-    fileprivate func skyGradientColors(transitionType:  ASATransitionType) -> [Color] {
+    fileprivate func skyGradientColors(transitionType:  ASATransitionType, calendarType:  ASACalendarType) -> [Color] {
         let hour: Int = processedRow.hour
 
         if transitionType == .midnight || transitionType == .noon {
-            let color = Color.backgroundColor(transitionType: transitionType, hour: hour)
+            let color = Color.backgroundColor(transitionType: transitionType, hour: hour, calendarType: calendarType)
             return [color, color]
         }
 
@@ -105,7 +105,7 @@ struct ASASkyGradient: View {
     var processedRow:  ASAProcessedRow
 
     var body: some View {
-        ASASkyGradientSubview(colors: skyGradientColors(transitionType: processedRow.transitionType))
+        ASASkyGradientSubview(colors: skyGradientColors(transitionType: processedRow.transitionType, calendarType: processedRow.calendarType))
     } // var body
 } // struct ASASkyGradient
 

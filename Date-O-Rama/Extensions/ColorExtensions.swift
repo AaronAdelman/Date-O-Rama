@@ -53,9 +53,9 @@ let MIDNIGHT_BLUE_RED: Double   = 12.0 / 255.0
 let MIDNIGHT_BLUE_GREEN: Double = 15.0 / 255.0
 let MIDNIGHT_BLUE_BLUE: Double  = 38.0 / 255.0
 
-let SUNSET_RED_RED: Double   = 99.0 / 255.0
-let SUNSET_RED_GREEN: Double = 29.0 / 255.0
-let SUNSET_RED_BLUE: Double  = 35.0 / 255.0
+let SUNSET_RED_RED: Double   = 128.0 / 255.0
+let SUNSET_RED_GREEN: Double = 37.0 / 255.0
+let SUNSET_RED_BLUE: Double  = 37.0 / 255.0
 
 
 extension Color {
@@ -77,7 +77,11 @@ extension Color {
         } // get
     } // static var sunsetRed
 
-    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
+    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
+        if calendarType == .JulianDay {
+            return Color("julianDayForeground")
+        }
+
         let DAY_COLOR: Color   = Color("dayForeground")
         let NIGHT_COLOR: Color = Color("nightForeground")
 
@@ -86,7 +90,11 @@ extension Color {
         return result
     } // static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
 
-    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
+    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
+        if calendarType == .JulianDay {
+            return Color("julianDayBackground")
+        }
+
         let DAY_COLOR: Color = .skyBlue
         let NIGHT_COLOR: Color = .midnightBlue
 
