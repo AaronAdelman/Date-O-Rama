@@ -505,10 +505,10 @@
 				A50CD621255414EC00B781EC /* ColorExtensions.swift */,
 				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
 				A57083F2254818B200904E7C /* DateFormatterExtensions.swift */,
+				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
-				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

@@ -39,34 +39,38 @@ struct Ticks:  View {
 } // struct Ticks
 
 
-//struct Number:  View {
-//    var hour:  Int
-//
-//    var body: some View {
-////        VStack {
-//            Text("\(hour)")
-////                .fontWeight(.bold)
-//                .rotationEffect(.radians(-(Double.pi * 2.0 / 12.0 * Double(hour))))
-//                .font(.caption2)
-////            Spacer()
-////        }
-//        .padding()
-//        .rotationEffect(.radians((Double.pi * 2.0 / 12.0 * Double(hour))))
-//    }
-//}
-//
-//
-//struct Numbers:  View {
-//    var body: some View {
-//        ZStack {
-//            ForEach(1..<13) {
-//                hour
-//                in
-//                Number(hour: hour)
-//            }
-//        }
-//    }
-//}
+struct Number:  View {
+    var isNight:  Bool
+    var hour:  Int
+
+    var body: some View {
+        VStack {
+            Text("\(hour)")
+                .font(Font.system(size: 6.0, weight: .bold))
+                .rotationEffect(.radians(-(Double.pi * 2 / 12 * Double(hour))))
+                .foregroundColor(Color(isNight ? "numberNight" : "numberDay"))
+
+            Spacer().frame(height:  32.0)
+        }
+        .padding()
+        .rotationEffect(.radians((Double.pi * 2 / 12 * Double(hour))))
+    }
+}
+
+
+struct Numbers:  View {
+    var isNight:  Bool
+
+    var body: some View {
+        ZStack {
+            ForEach(1..<13) {
+                hour
+                in
+                Number(isNight: isNight, hour: hour)
+            }
+        }
+    }
+}
 
 
 struct Hand:  Shape {
@@ -130,7 +134,8 @@ struct Watch:  View {
             Ticks(isNight: isNight)
                 .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
             
-            //            Numbers()
+            Numbers(isNight: isNight)
+                .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
 
             // Hour hand
             Hand(offset: 12)
