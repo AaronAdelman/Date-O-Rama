@@ -78,8 +78,8 @@ extension Color {
     } // static var sunsetRed
 
     static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color {
-        let DAY_COLOR: Color = .white
-        let NIGHT_COLOR: Color = .white
+        let DAY_COLOR: Color   = Color("dayForeground")
+        let NIGHT_COLOR: Color = Color("nightForeground")
 
         let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
 

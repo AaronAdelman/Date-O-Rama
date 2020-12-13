@@ -19,7 +19,7 @@ struct ASAClockPizzazztron:  View {
 
     var body: some View {
         if processedRow.calendarType == .JulianDay {
-            ProgressView(value: progress())
+            ProgressView(value: progress()).accentColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour))
         } else {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType))
         }

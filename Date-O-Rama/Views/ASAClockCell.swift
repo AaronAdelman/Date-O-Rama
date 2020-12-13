@@ -57,10 +57,10 @@ struct ASAClockCellBody:  View {
     var shouldShowTime:  Bool
     var shouldShowCalendarPizzazztron:  Bool
 
-    #if os(watchOS)
-    #else
-    @Environment(\.horizontalSizeClass) var sizeClass
-    #endif
+//    #if os(watchOS)
+//    #else
+//    @Environment(\.horizontalSizeClass) var sizeClass
+//    #endif
 
     var body: some View {
         HStack {
