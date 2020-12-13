@@ -46,11 +46,11 @@ struct Number:  View {
     var body: some View {
         VStack {
             Text("\(hour)")
-                .font(Font.system(size: 6.0, weight: .bold))
+                .font(Font.system(size: 9.0, weight: .bold))
                 .rotationEffect(.radians(-(Double.pi * 2 / 12 * Double(hour))))
                 .foregroundColor(Color(isNight ? "numberNight" : "numberDay"))
 
-            Spacer().frame(height:  32.0)
+            Spacer().frame(height:  44.0)
         }
         .padding()
         .rotationEffect(.radians((Double.pi * 2 / 12 * Double(hour))))
@@ -86,7 +86,7 @@ struct Hand:  Shape {
 
 // MARK:  - Watch
 
-let WATCH_DIMENSION:  CGFloat             = 48.0
+let WATCH_DIMENSION:  CGFloat             = 64.0
 let BACKGROUND_CIRCLE_DIMENSION:  CGFloat = WATCH_DIMENSION - 2.0
 let OUTSIDE_STROKE_WIDTH:  CGFloat        =  1.0
 let TICKS_DIMENSION                       = BACKGROUND_CIRCLE_DIMENSION - 2.0 * OUTSIDE_STROKE_WIDTH
