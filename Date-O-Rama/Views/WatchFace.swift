@@ -42,10 +42,12 @@ struct Ticks:  View {
 struct Number:  View {
     var isNight:  Bool
     var hour:  Int
+    var numberFormatter:  NumberFormatter
 
     var body: some View {
         VStack {
-            Text("\(hour)")
+            Text(numberFormatter.string(from: NSNumber(integerLiteral: hour)) ?? ""
+)
                 .font(Font.system(size: 9.0, weight: .bold))
                 .rotationEffect(.radians(-(Double.pi * 2 / 12 * Double(hour))))
                 .foregroundColor(Color(isNight ? "numberNight" : "numberDay"))
@@ -60,13 +62,14 @@ struct Number:  View {
 
 struct Numbers:  View {
     var isNight:  Bool
+    var numberFormatter:  NumberFormatter
 
     var body: some View {
         ZStack {
             ForEach(1..<13) {
                 hour
                 in
-                Number(isNight: isNight, hour: hour)
+                Number(isNight: isNight, hour: hour, numberFormatter: numberFormatter)
             }
         }
     }
@@ -123,6 +126,8 @@ struct Watch:  View {
         } // get
     } // var secondAngle
 
+    var numberFormatter:  NumberFormatter
+
     var body:  some View {
         ZStack {
             Circle()
@@ -134,7 +139,7 @@ struct Watch:  View {
             Ticks(isNight: isNight)
                 .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
             
-            Numbers(isNight: isNight)
+            Numbers(isNight: isNight, numberFormatter: numberFormatter)
                 .frame(width: TICKS_DIMENSION, height: TICKS_DIMENSION, alignment: .center)
 
             // Hour hand

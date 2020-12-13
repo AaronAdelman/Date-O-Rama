@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ASAClockPizzazztron:  View {
     var processedRow:  ASAProcessedRow
+    var numberFormatter:  NumberFormatter
 
     func progress() -> Double {
         let secondsIntoDay:  Double = Double((processedRow.hour * 60 + processedRow.minute) * 60 + processedRow.second)
@@ -21,7 +22,7 @@ struct ASAClockPizzazztron:  View {
         if processedRow.calendarType == .JulianDay {
             ProgressView(value: progress()).accentColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType))
         } else {
-            Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType))
+            Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
         }
     } // var body
 } // struct ASAClockPizzazztron

@@ -117,7 +117,7 @@ struct ASAClockPizzazztronSubcell:  View {
                 }
 
                 if shouldShowClockPizzazztron() {
-                    ASAClockPizzazztron(processedRow:  processedRow)
+                    ASAClockPizzazztron(processedRow:  processedRow, numberFormatter: numberFormatter())
                 }
             }
 //        }
