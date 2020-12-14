@@ -92,19 +92,10 @@ extension ASALocationManager: CLLocationManagerDelegate {
                 
                 var tempLocationData = ASALocationData()
                 tempLocationData.location              = location
-//                tempLocationData.name                  = NSLocalizedString("???", comment: "")
-//                tempLocationData.locality              = NSLocalizedString("???", comment: "")
-//                tempLocationData.country               = NSLocalizedString("???", comment: "")
-//                tempLocationData.ISOCountryCode        = NSLocalizedString("???", comment: "")
-//                tempLocationData.postalCode            = NSLocalizedString("???", comment: "")
-//                tempLocationData.administrativeArea    = NSLocalizedString("???", comment: "")
-//                tempLocationData.subAdministrativeArea = NSLocalizedString("???", comment: "")
-//                tempLocationData.subLocality           = NSLocalizedString("???", comment: "")
-//                tempLocationData.thoroughfare          = NSLocalizedString("???", comment: "")
-//                tempLocationData.subThoroughfare       = NSLocalizedString("???", comment: "")
                 tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
 
                 tempLocationData.country  = self.lastDevicePlacemark?.country
+                tempLocationData.ISOCountryCode = self.lastDevicePlacemark?.isoCountryCode
 
                 self.finishDidUpdateLocations(tempLocationData)
                 
