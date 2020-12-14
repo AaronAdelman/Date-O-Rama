@@ -130,7 +130,7 @@
             var jiggeredNow = now
             if dayHalfStart > deoptionalizedTransition {
                 // Uh-oh.  It found the day half start for the wrong day!
-                jiggeredNow = now - 24 * 60 * 60
+                jiggeredNow = now - Date.SECONDS_PER_DAY
                 let events = jiggeredNow.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
 
                 let rawDayHalfStart: Date?? = events[self.dayStart]
@@ -162,7 +162,6 @@
                 assert(dayHalfStart > previousDayHalfEnd)
                 //                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
                 hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-//                symbol = NIGHT_SYMBOL
                 daytime = false
             }
         }
@@ -171,107 +170,9 @@
     } // func solarTimeComponents(now: Date, localeIdentifier: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
 
     func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
-//        let latitude  = location!.coordinate.latitude
-//        let longitude = location!.coordinate.longitude
-//
-//        var existsSolarTime = true
-//        if transition == nil {
-//            existsSolarTime = false
-//        }
-//        if transition! == nil {
-//            existsSolarTime = false
-//        }
-//        if !existsSolarTime {
-//            return invalidTimeString()
-//        }
-////        debugPrint(#file, #function, "Now:", now, localeIdentifier, majorTimeFormat, timeGeekFormat, location!, timeZone!, "Transition:", transition!!)
-//
-//        var dayHalfStart:  Date
-//        //        var dayHalfEnd:  Date
-//
-//        var hours:  Double
-//        var symbol:  String
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
-//        let NUMBER_OF_HOURS = 12.0
-//
-//        let deoptionalizedTransition: Date = transition!!
-//        if deoptionalizedTransition <= now  {
-//            // Nighttime, transition is at the start of the nighttime
-////            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
-//            //            let nextDate = now.oneDayAfter
-//            let nextDate = now.noon(timeZone:  timeZone!).oneDayAfter
-//            var nextDayHalfStart:  Date
-//            let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//            nextDayHalfStart = nextEvents[self.dayStart]!!
-//            assert(nextDayHalfStart > deoptionalizedTransition)
-//
-////            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition, "Nighttime end:", nextDayHalfStart)
-//
-//            hours = now.fractionalHours(startDate:  deoptionalizedTransition, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-//            symbol = NIGHT_SYMBOL
-//        } else {
-//            // now < deoptionalizedTransition
-//            let ourTimeZone = timeZone ?? TimeZone.autoupdatingCurrent
-//            let events = now.noon(timeZone:ourTimeZone).solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: ourTimeZone)
-//
-//            let rawDayHalfStart: Date?? = events[self.dayStart]
-//
-//            if rawDayHalfStart == nil {
-//                return invalidTimeString()
-//            }
-//            if rawDayHalfStart! == nil {
-//                return invalidTimeString()
-//            }
-//
-//            dayHalfStart = rawDayHalfStart!!
-//
-//            var jiggeredNow = now
-//            if dayHalfStart > deoptionalizedTransition {
-//                // Uh-oh.  It found the day half start for the wrong day!
-//                jiggeredNow = now - 24 * 60 * 60
-//                let events = jiggeredNow.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//
-//                let rawDayHalfStart: Date?? = events[self.dayStart]
-//
-//                if rawDayHalfStart == nil {
-//                    return invalidTimeString()
-//                }
-//                if rawDayHalfStart! == nil {
-//                    return invalidTimeString()
-//                }
-//
-//                dayHalfStart = rawDayHalfStart!!
-//            }
-//
-////            debugPrint(#file, #function, "Day half start:", dayHalfStart)
-//
-//            if dayHalfStart <= now && now < deoptionalizedTransition {
-//                // Daytime
-////                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Daytime")
-//                assert(deoptionalizedTransition > dayHalfStart)
-//                hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-//                symbol = DAY_SYMBOL
-//            } else {
-//                // Previous nighttime
-////                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Previous nighttime")
-//                var previousDayHalfEnd:  Date
-//                previousDayHalfEnd = self.startOfDay(for: jiggeredNow, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
-//                assert(dayHalfStart > previousDayHalfEnd)
-////                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
-//                hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-//                symbol = NIGHT_SYMBOL
-//            }
-//        }
-//
-//        assert(hours >= 0.0)
-////        if !(hours >= 0.0) {
-////            debugPrint(#file, #function, "Hours:", hours)
-////        }
-//        assert(hours < 12.0)
-////        if !(hours < 12.0) {
-////            debugPrint(#file, #function, "Hours:", hours)
-////        }
+
         let (hours, daytime, valid) = self.solarTimeComponents(now: now, location: location, timeZone: timeZone, transition: transition)
         if !valid {
             return invalidTimeString()
@@ -326,13 +227,6 @@
     }
 
     func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinute:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String {
-//        let integralHours = floor(hours)
-//        let fractionalHours = hours - integralHours
-//        let totalMinutes = fractionalHours * minutesPerHour
-//        let integralMinutes = floor(totalMinutes)
-//        let fractionalMinutes = totalMinutes - integralMinutes
-//        let totalSeconds = fractionalMinutes * secondsPerMinutes
-//        let integralSeconds = floor(totalSeconds)
         let (integralHours, integralMinutes, integralSeconds, _) = self .hoursMinutesSecondsComponents(hours: hours, minutesPerHour: minutesPerHour, secondsPerMinute: secondsPerMinute)
 
         var result = ""
@@ -479,7 +373,7 @@
             return date.sixPMYesterday(timeZone: timeZone)
         }
 
-        let yesterday: Date = date.addingTimeInterval(-24 * 60 * 60)
+        let yesterday: Date = date.addingTimeInterval(-Date.SECONDS_PER_DAY)
         let (fixedYesterday, _) = yesterday.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
         let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]

@@ -85,7 +85,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         // Call the handler with the current timeline entry
         
-        //        let now = Calendar.current.startOfDay(for: Date()) // Midnight.  Will need to rethink this for support of calendars which start the day at Sunset or other times other than midnight.
         let now = Date()
         print("• \(#file) \(#function) now = \(now)")
         let entry = self.getTimelineEntryForComplication(complication: complication, now:  now
@@ -93,21 +92,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         handler(entry)
     } // func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void)
-    
-    //    func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-    //        print("\(#file) \(#function) before \(date), limit = \(limit)")
-    //
-    //        var entries: [CLKComplicationTimelineEntry]? = []
-    //        var when = date
-    //        for _ in 1...limit {
-    //            when = when - (60 * 60 * 24)
-    //            entries = [self.getTimelineEntryForComplication(complication: complication, now: when)!] + entries!
-    //        } // for i
-    //
-    //// Call the handler with the timeline entries prior to the given date
-    //        handler(entries)
-    //    } // func getTimelineEntries(for complication: CLKComplication, before date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void)
-    
+
     func earliestStartOfNextDay(when:  Date, rowArray:  Array<ASARow>) -> Date {
         var result = Date.distantFuture
         
@@ -132,7 +117,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         }
         
         for _ in 1...limit {
-            //            when = when + (60 * 60 * 24)
             when = self.earliestStartOfNextDay(when: when, rowArray: rowArray!)
             entries?.append(self.getTimelineEntryForComplication(complication: complication, now: when)!)
         } // for i
@@ -140,7 +124,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
         
         // Call the handler with the timeline entries prior to the given date
-        //        handler(nil)
         handler(entries)
     } // func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void)
     

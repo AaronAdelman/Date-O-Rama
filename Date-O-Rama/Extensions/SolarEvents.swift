@@ -81,7 +81,7 @@ extension Date {
             if !event.rising && tempResult != nil {
                 let midnightToday = calendar.startOfDay(for:self)
                 //                debugPrint(#file, #function, "midnightToday:", midnightToday)
-                let noon = midnightToday.addingTimeInterval(12 * 60 * 60)
+                let noon = midnightToday.addingTimeInterval(12 * Date.SECONDS_PER_HOUR)
                 //                debugPrint(#file, #function, "noon:", noon)
                 if tempResult! < noon {
                     // Something went wrong, and we got a result for the previous day
@@ -158,7 +158,7 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
     //    gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
     //    let midnight = gregorianCalendar.startOfDay(for:date)
     let midnight = date.previousMidnight(timeZoneOffset:  0)
-    var result = midnight.addingTimeInterval(UT * 60 * 60) + offset
+    var result = midnight.addingTimeInterval(UT * Date.SECONDS_PER_HOUR) + offset
 
     let localNextMidnight = date.nextMidnight(timeZone:  timeZone)
     if result >= localNextMidnight {

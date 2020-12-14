@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 extension Date {
-    static let SECONDS_PER_DAY:  TimeInterval = 24.0 * 60.0 * 60.0
+    static let SECONDS_PER_DAY:  TimeInterval  = 24.0 * 60.0 * 60.0
     static let SECONDS_PER_HOUR:  TimeInterval = 60.0 * 60.0
 
     func previousMidnight(timeZoneOffset: TimeInterval) -> Date {
@@ -23,32 +23,11 @@ extension Date {
     } // func previousMidnight(timeZoneOffset: TimeInterval) -> Date
 
     func previousMidnight(timeZone:  TimeZone) -> Date {
-        //            var gregorianCalendar = Calendar(identifier: .gregorian)
-        //            gregorianCalendar.timeZone = timeZone
-        //            let midnightToday = gregorianCalendar.startOfDay(for:self)
-        //    //        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
-        //
-        //            return midnightToday
-
         let timeZoneOffset:  TimeInterval = TimeInterval(timeZone.secondsFromGMT(for: self))
         return previousMidnight(timeZoneOffset: timeZoneOffset)
     } // func previousMidnight(timeZone:  TimeZone) -> Date
 
     func nextMidnight(timeZone:  TimeZone) -> Date {
-        //        var gregorianCalendar = Calendar(identifier: .gregorian)
-        //        gregorianCalendar.timeZone = timeZone
-        //        let midnightToday = gregorianCalendar.startOfDay(for:self)
-        ////        print("\(String(describing: type(of: self))) \(#function) Midnight today:  \(midnightToday)")
-        //
-        //        let dateComponents:DateComponents = {
-        //            var dateComp = DateComponents()
-        //            dateComp.day = 1
-        //            return dateComp
-        //        }()
-        //        let midnightTomorrow = gregorianCalendar.date(byAdding: dateComponents, to: midnightToday)
-        ////        print("\(String(describing: type(of: self))) \(#function) Midnight tomorrow:  \(String(describing: midnightTomorrow))")
-        //        return midnightTomorrow!
-
         let previousMidnight = self.previousMidnight(timeZone: timeZone)
         let nextMidnight =  previousMidnight.addingTimeInterval(Date.SECONDS_PER_DAY)
         return nextMidnight
@@ -133,36 +112,22 @@ extension Date {
             result = (self, sunset)
         }
 
-//        if timeZone.identifier.contains("America/New_York") {
-//            debugPrint(#file, #function, "Self:", self, "Result:", result, "Sunset:", sunset!!, "Time zone:", timeZone)
-//        }
         return result
     } // func solarCorrected(location:  CLLocation) -> Date
 
     func noon(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
-//        gregorianCalendar.timeZone = timeZone
-//        let midnightToday = gregorianCalendar.startOfDay(for:self)
         let midnightToday = self.previousMidnight(timeZone: timeZone)
         let result = midnightToday.addingTimeInterval(12 * Date.SECONDS_PER_HOUR)
         return result
     } // func noon(timeZone:  TimeZone) -> Date
 
     func sixPM(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
-//        gregorianCalendar.timeZone = timeZone
-//        let midnightToday = gregorianCalendar.startOfDay(for:self)
         let midnightToday = self.previousMidnight(timeZone: timeZone)
         let result = midnightToday.addingTimeInterval(18 * Date.SECONDS_PER_HOUR)
         return result
     } // func sixPM(timeZone:  TimeZone) -> Date
 
     func sixPMYesterday(timeZone:  TimeZone) -> Date {
-//        var gregorianCalendar = Calendar(identifier: .gregorian)
-//        gregorianCalendar.timeZone = timeZone
-//        let midnightToday = gregorianCalendar.startOfDay(for:self)
-//        let midnightYesterday = midnightToday.addingTimeInterval(-24 * 60 * 60)
-//        let result = midnightYesterday.addingTimeInterval(18 * 60 * 60)
         let midnightToday = self.previousMidnight(timeZone: timeZone)
         let result = midnightToday.addingTimeInterval(6 * Date.SECONDS_PER_HOUR)
         return result
@@ -172,13 +137,13 @@ extension Date {
 extension Date {
     var oneDayBefore:  Date {
         get {
-            return self.addingTimeInterval(-24 * 60 * 60)
+            return self.addingTimeInterval(-Date.SECONDS_PER_DAY)
         } // get
     } // var oneDayBefore
 
     var oneDayAfter:  Date {
         get {
-            return self.addingTimeInterval(24 * 60 * 60)
+            return self.addingTimeInterval(Date.SECONDS_PER_DAY)
         } // get
     } // var oneDayAfter
 } // extension Date

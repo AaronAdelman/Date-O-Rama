@@ -14,8 +14,7 @@ struct ASAClockPizzazztron:  View {
 
     func progress() -> Double {
         let secondsIntoDay:  Double = Double((processedRow.hour * 60 + processedRow.minute) * 60 + processedRow.second)
-        let secondsPerDay = 24.0 * 60.0 * 60.0
-        return secondsIntoDay / secondsPerDay
+        return secondsIntoDay / Date.SECONDS_PER_DAY
     } // func progress() -> Double
 
     var body: some View {
