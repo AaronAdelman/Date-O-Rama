@@ -54,13 +54,13 @@ class ASAJulianDayCalendar:  ASACalendar {
         self.calendarCode = calendarCode
     } // init(calendarCode: ASACalendarCode)
     
-    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
-        return ""
-    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
-    
-    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
-        return "HH:mm:ss"
-    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
+//    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
+//        return ""
+//    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
+//    
+//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
+//        return "HH:mm:ss"
+//    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
     
     
     private func dateTimeString(now:  Date, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
@@ -145,16 +145,16 @@ class ASAJulianDayCalendar:  ASACalendar {
         } // get
     } // var supportsTimes: Bool
     
-    var supportedMajorDateFormats: Array<ASADateFormat> = [
+    var supportedDateFormats: Array<ASADateFormat> = [
         .full
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
+    var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full
     ]
 
     
-    var supportedMajorTimeFormats: Array<ASATimeFormat> = [.medium]
+    var supportedTimeFormats: Array<ASATimeFormat> = [.medium]
     
     var supportsTimeFormats: Bool = false
     
@@ -326,4 +326,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     // MARK: -
 
     public var transitionType:  ASATransitionType = .noon
+
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        return []
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // class ASAJulianDayCalendar

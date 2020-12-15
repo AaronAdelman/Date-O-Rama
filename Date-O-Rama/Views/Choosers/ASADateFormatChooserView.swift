@@ -56,10 +56,10 @@ struct ASADateFormatChooserView: View {
     
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
-            return row.calendar.supportedWatchMajorDateFormats
+            return row.calendar.supportedWatchDateFormats
         }
         
-        return row.calendar.supportedMajorDateFormats
+        return row.calendar.supportedDateFormats
     }
 
     var body: some View {

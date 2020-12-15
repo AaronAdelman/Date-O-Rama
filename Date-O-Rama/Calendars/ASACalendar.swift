@@ -31,9 +31,9 @@ protocol ASACalendar {
     var defaultMajorDateFormat:  ASADateFormat { get }
     var defaultMajorTimeFormat:  ASATimeFormat { get }
 //    var LDMLDetails: Array<ASALDMLDetail> { get }
-    var supportedMajorDateFormats: Array<ASADateFormat> { get }
-    var supportedWatchMajorDateFormats: Array<ASADateFormat> { get }
-    var supportedMajorTimeFormats: Array<ASATimeFormat> { get }
+    var supportedDateFormats: Array<ASADateFormat> { get }
+    var supportedWatchDateFormats: Array<ASADateFormat> { get }
+    var supportedTimeFormats: Array<ASATimeFormat> { get }
     var supportsLocales: Bool { get }
     var supportsDateFormats: Bool { get }
     var supportsLocations: Bool { get }
@@ -42,8 +42,8 @@ protocol ASACalendar {
     var supportsTimeZones: Bool { get }
     var transitionType:  ASATransitionType { get }
     
-    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String
-    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String
+//    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String
+//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat,
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
@@ -74,4 +74,5 @@ protocol ASACalendar {
     
 //    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
 
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // protocol ASACalendar

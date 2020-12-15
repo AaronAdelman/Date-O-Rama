@@ -72,10 +72,10 @@ struct ASAClockDetailEditingSection:  View {
 
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
-            return selectedRow.calendar.supportedWatchMajorDateFormats
+            return selectedRow.calendar.supportedWatchDateFormats
         }
 
-        return selectedRow.calendar.supportedMajorDateFormats
+        return selectedRow.calendar.supportedDateFormats
     }
 
     var body: some View {
@@ -112,7 +112,7 @@ struct ASAClockDetailEditingSection:  View {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName())
                 }
             }
-            if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedMajorTimeFormats.count > 1 {
+            if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {
                 NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.timeFormat,
 //                                                                     tempTimeGeekFormat: selectedRow.timeGeekFormat,
                                                                      calendarCode: selectedRow.calendar.calendarCode)) {

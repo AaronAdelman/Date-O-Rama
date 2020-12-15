@@ -48,7 +48,7 @@ struct ASATimeFormatChooserView: View {
     var body: some View {
         List {
             Section(header:  Text("HEADER_Time_format")) {
-                ForEach(row.calendar.supportedMajorTimeFormats, id: \.self) {
+                ForEach(row.calendar.supportedTimeFormats, id: \.self) {
                     format
                     in
                     ASAMajorTimeFormatCell(timeFormat: format, selectedMajorTimeFormat: self.$tempMajorTimeFormat)

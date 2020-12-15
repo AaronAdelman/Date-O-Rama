@@ -33,13 +33,13 @@
         dateFormatter.calendar = ApplesCalendar
     } // init(calendarCode:  ASACalendarCode)
 
-    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
-        return "eee, d MMM y"
-    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
-
-    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
-        return "HH:mm:ss"
-    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
+//    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
+//        return "eee, d MMM y"
+//    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
+//
+//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
+//        return "HH:mm:ss"
+//    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
 
     var dayStart:  ASASolarEvent {
         get {
@@ -421,7 +421,7 @@
 
     public var supportsTimes: Bool = true
 
-    var supportedMajorDateFormats: Array<ASADateFormat> = [
+    var supportedDateFormats: Array<ASADateFormat> = [
         .full
 //        ,
 //        .long,
@@ -438,7 +438,7 @@
 //        .localizedLDML
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
+    var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full,
         .long,
         .medium,
@@ -453,7 +453,7 @@
         .fullWithoutYear
     ]
 
-    var supportedMajorTimeFormats: Array<ASATimeFormat> = [
+    var supportedTimeFormats: Array<ASATimeFormat> = [
 //        .full, .long,
         .medium,
 //        .short,
@@ -661,4 +661,9 @@
             }
         }
     }
+
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.ApplesCalendar.locale = Locale(identifier: localeIdentifier)
+        return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
  } // class ASASunsetTransitionCalendar

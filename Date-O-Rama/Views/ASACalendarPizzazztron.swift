@@ -78,6 +78,19 @@ struct ASAAccentedCell:  View {
     } // var body
 } // struct ASAAccentedCell
 
+struct ASAWeekdayCell:  View {
+    var symbol:  String
+
+    var body: some View {
+        Text(symbol)
+            .font(CELL_FONT).fontWeight(.black)
+            .foregroundColor(Color("calendarWeekdayCellText"))
+            .lineLimit(1)
+            .frame(minWidth:  MINIMUM_CELL_WIDTH)
+            .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
+    } // var body
+} // struct ASAWeekdayCell
+
 
 // MARK: -
 
@@ -93,6 +106,11 @@ extension Int {
 
 // MARK:  -
 
+struct ASAWeekdayData {
+    var symbol:  String
+    var index:  Int
+}
+
 struct ASACalendarPizzazztron:  View {
     var daysPerWeek:  Int
     var day:  Int
@@ -101,6 +119,7 @@ struct ASACalendarPizzazztron:  View {
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
+    var weekdaySymbols:  Array<String>
 
     var weekdayOfDay1:  Int {
         get {
@@ -121,6 +140,14 @@ struct ASACalendarPizzazztron:  View {
             return possibility2
         } // get
     } // var weekdayOfDay1
+
+    private var processedWeekdaySymbols:  Array<ASAWeekdayData> {
+        var result:  Array<ASAWeekdayData> = []
+        for i in 0..<self.weekdaySymbols.count {
+            result.append(ASAWeekdayData(symbol: self.weekdaySymbols[i], index: i))
+        } // for i
+        return result
+    }
 
     private var gridLayout:  Array<GridItem> {
         get {
@@ -143,6 +170,10 @@ struct ASACalendarPizzazztron:  View {
 
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
+            ForEach(processedWeekdaySymbols, id: \.index) {
+                ASAWeekdayCell(symbol: $0.symbol)
+            }
+
             ForEach((gridRange()), id: \.self) {
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
@@ -163,6 +194,6 @@ struct ASACalendarPizzazztron:  View {
 
 struct ASACalendarPizzazztron_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarPizzazztron(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian)
+        ASACalendarPizzazztron(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols)
     }
 }

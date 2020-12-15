@@ -27,13 +27,13 @@ class ASAISO8601Calendar:  ASACalendar {
         self.ISODateFormatter.timeZone = TimeZone.current
     } // init()
     
-    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String {
-        return "yyyy-MM-dd"
-    } // func defaultDateGeekCode(dateFormat:  ASAMajorFormat) -> String
-    
-    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
-        return "HH:mm:ss"
-    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
+//    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String {
+//        return "yyyy-MM-dd"
+//    } // func defaultDateGeekCode(dateFormat:  ASAMajorFormat) -> String
+//    
+//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
+//        return "HH:mm:ss"
+//    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat,
 //                        dateGeekFormat: String,
@@ -141,24 +141,24 @@ class ASAISO8601Calendar:  ASACalendar {
     
     var supportsTimeZones: Bool = true
     
-    var supportsLocations: Bool = false
+    var supportsLocations: Bool = true
         
     var supportsTimes: Bool = true
     
-    var supportedMajorDateFormats: Array<ASADateFormat> = [
+    var supportedDateFormats: Array<ASADateFormat> = [
 //        .full,
         .ISO8601YearMonthDay,
         .ISO8601YearWeekDay,
         .ISO8601YearDay
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
+    var supportedWatchDateFormats: Array<ASADateFormat> = [
         .ISO8601YearMonthDay,
         .ISO8601YearWeekDay,
         .ISO8601YearDay
     ]
     
-    var supportedMajorTimeFormats: Array<ASATimeFormat> = [
+    var supportedTimeFormats: Array<ASATimeFormat> = [
 //        .full, .long,
         .medium
 //        , .short
@@ -289,4 +289,8 @@ class ASAISO8601Calendar:  ASACalendar {
     // MARK: -
 
     public var transitionType:  ASATransitionType = .midnight
+
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        return ["1", "2", "3", "4", "5", "6", "7"]
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // class ASAISO8601Calendar

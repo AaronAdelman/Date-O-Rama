@@ -23,7 +23,7 @@ let MAJOR_TIME_FORMAT_KEY:  String    = "timeFormat"
 class ASARow: ASALocatedObject {
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
-            if !self.calendar.supportedMajorDateFormats.contains(self.dateFormat) {
+            if !self.calendar.supportedDateFormats.contains(self.dateFormat) {
                 self.dateFormat = self.calendar.defaultMajorDateFormat
             }
             if !self.calendar.supportsLocations {

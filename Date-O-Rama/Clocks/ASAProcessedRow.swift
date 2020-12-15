@@ -40,6 +40,8 @@ struct ASAProcessedRow {
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
 
+    var veryShortStandaloneWeekdaySymbols:  Array<String>
+
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
@@ -113,6 +115,8 @@ struct ASAProcessedRow {
 
         self.calendarType = row.calendar.calendarCode.type
         self.supportsTimes = row.calendar.supportsTimes
+
+        self.veryShortStandaloneWeekdaySymbols = row.calendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: row.localeIdentifier)
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 

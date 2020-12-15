@@ -140,13 +140,13 @@ class ASAAppleCalendar:  ASACalendar {
 //        return result
 //    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
-    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
-        return "eee, d MMM y"
-    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
-    
-    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
-        return "HH:mm:ss"
-    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
+//    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
+//        return "eee, d MMM y"
+//    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
+//    
+//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
+//        return "HH:mm:ss"
+//    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
     
 //    var LDMLDetails: Array<ASALDMLDetail> {
 //        get {
@@ -210,7 +210,7 @@ class ASAAppleCalendar:  ASACalendar {
         
     var supportsTimes: Bool = true
     
-    var supportedMajorDateFormats: Array<ASADateFormat> = [
+    var supportedDateFormats: Array<ASADateFormat> = [
         .full
 //        ,
 //        .long,
@@ -227,7 +227,7 @@ class ASAAppleCalendar:  ASACalendar {
 //        .localizedLDML
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
+    var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full,
         .long,
         .medium,
@@ -241,7 +241,7 @@ class ASAAppleCalendar:  ASACalendar {
         .mediumWithWeekdayWithoutYear,
         .fullWithoutYear    ]
     
-    var supportedMajorTimeFormats: Array<ASATimeFormat> = [
+    var supportedTimeFormats: Array<ASATimeFormat> = [
 //        .full, .long,
         .medium
 //        , .short
@@ -378,4 +378,9 @@ class ASAAppleCalendar:  ASACalendar {
     // MARK: -
 
     public var transitionType:  ASATransitionType = .midnight
+
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.ApplesCalendar.locale = Locale(identifier: localeIdentifier)
+        return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // class ASAAppleCalendar
