@@ -45,7 +45,7 @@ struct ASAComplicationClocksView: View {
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                                 NavigationLink(
-                                    destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false)
+                                    destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
                                         .onReceive(row.objectWillChange) { _ in
                                             // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                             self.userData.objectWillChange.send()

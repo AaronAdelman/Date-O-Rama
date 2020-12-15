@@ -21,6 +21,8 @@ struct ASANewClockDetailView: View {
 
     let HORIZONTAL_PADDING:  CGFloat = 20.0
 
+    var forAppleWatch:  Bool
+
     var body: some View {
         NavigationView {
             VStack {
@@ -49,7 +51,7 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: Date(), shouldShowTime: true)
+                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: Date(), shouldShowTime: true, forAppleWatch: forAppleWatch)
                 }
             } // VStack
                 .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
@@ -66,6 +68,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedRow: ASARow.generic())
+        ASANewClockDetailView(selectedRow: ASARow.generic(), forAppleWatch: false)
     }
 }

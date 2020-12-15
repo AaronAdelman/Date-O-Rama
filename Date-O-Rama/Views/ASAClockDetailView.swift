@@ -26,10 +26,12 @@ struct ASAClockDetailView: View {
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
+
+    var forAppleWatch:  Bool
     
     var body: some View {
         List {
-            ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime)
+            ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
 
             if deleteable {
                 Section(header:  Text("")){
@@ -66,6 +68,7 @@ struct ASAClockDetailEditingSection:  View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
     var shouldShowTime:  Bool
+    var forAppleWatch:  Bool
 
     var body: some View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
@@ -95,7 +98,7 @@ struct ASAClockDetailEditingSection:  View {
                 }
             }
             if selectedRow.calendar.supportsDateFormats {
-                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat, tempDateGeekFormat: selectedRow.dateGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
+                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat, tempDateGeekFormat: selectedRow.dateGeekFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                 }
             }
@@ -110,6 +113,6 @@ struct ASAClockDetailEditingSection:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date(), shouldShowTime: true, deleteable: true)
+        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date(), shouldShowTime: true, deleteable: true, forAppleWatch: true)
     }
 }

@@ -25,6 +25,8 @@ struct ASAClocksView: View {
 
     @State var isNavBarHidden:  Bool = false
 
+    var forAppleWatch:  Bool
+
     var body: some View {
         NavigationView {
             VStack {
@@ -66,7 +68,7 @@ struct ASAClocksView: View {
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
                 .sheet(isPresented: self.$showingNewClockDetailView) {
-                    ASANewClockDetailView()
+                    ASANewClockDetailView(forAppleWatch: forAppleWatch)
                 }
 //                .navigationBarTitle(Text("CLOCKS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
@@ -109,6 +111,6 @@ struct ASAConditionalEditButton:  View {
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksView().environmentObject(ASAUserData.shared())
+        ASAClocksView(forAppleWatch: false).environmentObject(ASAUserData.shared())
     }
 }

@@ -32,6 +32,7 @@ protocol ASACalendar {
     var defaultMajorTimeFormat:  ASAMajorTimeFormat { get }
 //    var LDMLDetails: Array<ASALDMLDetail> { get }
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> { get }
+    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> { get }
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> { get }
     var supportsLocales: Bool { get }
     var supportsDateFormats: Bool { get }

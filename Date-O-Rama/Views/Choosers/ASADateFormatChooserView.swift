@@ -16,6 +16,9 @@ struct ASADateFormatChooserView: View {
     @State var tempDateGeekFormat:  String
     @State var calendarCode:  ASACalendarCode
 
+    var forAppleWatch:  Bool
+
+
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
     
@@ -51,10 +54,18 @@ struct ASADateFormatChooserView: View {
         }
     }
     
+    fileprivate func dateFormats() -> [ASAMajorDateFormat] {
+        if forAppleWatch {
+            return row.calendar.supportedWatchMajorDateFormats
+        }
+        
+        return row.calendar.supportedMajorDateFormats
+    }
+
     var body: some View {
         List {
             Section(header:  Text("HEADER_Date_format")) {
-                ForEach(row.calendar.supportedMajorDateFormats, id: \.self) {
+                ForEach(dateFormats(), id: \.self) {
                     format
                     in
                     ASAMajorDateFormatCell(majorDateFormat: format, selectedMajorDateFormat: self.$tempMajorDateFormat)
@@ -163,6 +174,6 @@ extension ASAComponentsPickerSection {
 
 struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASADateFormatChooserView(row: ASARow.generic(), tempMajorDateFormat: .full, tempDateGeekFormat: "yyyy", calendarCode: .Gregorian)
+        ASADateFormatChooserView(row: ASARow.generic(), tempMajorDateFormat: .full, tempDateGeekFormat: "yyyy", calendarCode: .Gregorian, forAppleWatch: true)
     }
 }

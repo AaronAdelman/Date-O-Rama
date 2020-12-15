@@ -207,6 +207,23 @@ class ASAAppleCalendar:  ASACalendar {
     var supportsTimes: Bool = true
     
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+        .full
+//        ,
+//        .long,
+//        .medium,
+//        .mediumWithWeekday,
+//        .short,
+//        .shortWithWeekday,
+//        .abbreviatedWeekday,
+//        .dayOfMonth,
+//        .abbreviatedWeekdayWithDayOfMonth,
+//        .shortWithWeekdayWithoutYear,
+//        .mediumWithWeekdayWithoutYear,
+//        .fullWithoutYear,
+//        .localizedLDML
+    ]
+
+    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> = [
         .full,
         .long,
         .medium,
@@ -218,9 +235,7 @@ class ASAAppleCalendar:  ASACalendar {
         .abbreviatedWeekdayWithDayOfMonth,
         .shortWithWeekdayWithoutYear,
         .mediumWithWeekdayWithoutYear,
-        .fullWithoutYear,
-        .localizedLDML
-    ]
+        .fullWithoutYear    ]
     
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
 //        .full, .long,

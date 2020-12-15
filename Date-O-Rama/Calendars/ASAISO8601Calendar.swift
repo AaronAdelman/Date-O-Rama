@@ -140,7 +140,13 @@ class ASAISO8601Calendar:  ASACalendar {
     var supportsTimes: Bool = true
     
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
-        .full,
+//        .full,
+        .ISO8601YearMonthDay,
+        .ISO8601YearWeekDay,
+        .ISO8601YearDay
+    ]
+
+    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> = [
         .ISO8601YearMonthDay,
         .ISO8601YearWeekDay,
         .ISO8601YearDay

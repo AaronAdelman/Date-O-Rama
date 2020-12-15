@@ -144,6 +144,11 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
         .full
     ]
+
+    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> = [
+        .full
+    ]
+
     
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full]
     
