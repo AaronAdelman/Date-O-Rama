@@ -32,12 +32,13 @@ class ASAAppleCalendar:  ASACalendar {
 //                        timeGeekFormat: String,
                         location: CLLocation?, timeZone:  TimeZone?) -> String {
         
-        if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.current
-        } else {
-            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-        }
-        
+//        if localeIdentifier == "" {
+//            self.dateFormatter.locale = Locale.current
+//        } else {
+//            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
+//        }
+        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier:  localeIdentifier)
+
         if timeZone == nil {
             self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
         } else {
@@ -380,7 +381,7 @@ class ASAAppleCalendar:  ASACalendar {
     public var transitionType:  ASATransitionType = .midnight
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        self.ApplesCalendar.locale = Locale(identifier: localeIdentifier)
+        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier:  localeIdentifier)
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // class ASAAppleCalendar

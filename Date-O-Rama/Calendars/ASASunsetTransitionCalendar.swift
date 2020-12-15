@@ -206,7 +206,7 @@
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
-        numberFormatter.locale = Locale(identifier:  localeIdentifier)
+        numberFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
         result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
         //        assert(result != "12.0000 ☼")
         return result
@@ -238,7 +238,7 @@
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.maximumFractionDigits = 0
-        numberFormatter.locale = Locale(identifier:  localeIdentifier)
+        numberFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
         numberFormatter.minimumIntegerDigits = minimumHourDigits
         let hourString = numberFormatter.string(from: NSNumber(value:  integralHours))
         numberFormatter.minimumIntegerDigits = minimumMinuteDigits
@@ -268,11 +268,14 @@
         if location == nil {
             return "No location"
         }
-        if localeIdentifier == "" {
-            self.dateFormatter.locale = Locale.current
-        } else {
-            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-        }
+//        if localeIdentifier == "" {
+//            self.dateFormatter.locale = Locale.current
+//        } else {
+//            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
+//        }
+
+        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
+
         self.dateFormatter.timeZone = timeZone
 
         switch dateFormat {
@@ -663,7 +666,7 @@
     }
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        self.ApplesCalendar.locale = Locale(identifier: localeIdentifier)
+        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
  } // class ASASunsetTransitionCalendar
