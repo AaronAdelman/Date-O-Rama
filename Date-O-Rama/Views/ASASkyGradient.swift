@@ -20,11 +20,18 @@ struct ASASkyGradient: View {
     fileprivate func skyGradientColors(transitionType:  ASATransitionType, calendarType:  ASACalendarType) -> [Color] {
         let hour: Int = processedRow.hour
 
-        if
-//            transitionType == .midnight ||
-            transitionType == .noon {
+        if calendarType == .JulianDay {
             let color = Color.backgroundColor(transitionType: transitionType, hour: hour, calendarType: calendarType)
             return [color, color]
+        }
+
+        if transitionType == .midnight {
+            let isNight = nightTime(hour: hour, transitionType: transitionType)
+            if isNight {
+                return [Color.midnightBlueTop, Color.midnightBlueBottom]
+            } else {
+                return [Color.skyBlueTop, Color.skyBlueBottom]
+            }
         }
 
         var topColor:  Color
@@ -66,17 +73,13 @@ struct ASASkyGradient: View {
         if morningTwilightStart <= minutes && minutes < morningTwilightEnd {
             // Morning twilight
             let progress = Double(minutes - morningTwilightStart) / Double(morningTwilightEnd - morningTwilightStart)
-//            topColor = Color.blend(startColor: .midnightBlue, endColor: .skyBlue, progress: progress)
-//            bottomColor = Color.blend(startColor: .midnightBlue, endColor: .sunsetRed, progress: progress)
             topColor = Color.blend(startRed: MIDNIGHT_BLUE_TOP_RED, startGreen: MIDNIGHT_BLUE_TOP_GREEN, startBlue: MIDNIGHT_BLUE_TOP_BLUE, endRed: SKY_BLUE_TOP_RED, endGreen: SKY_BLUE_TOP_GREEN, endBlue: SKY_BLUE_TOP_BLUE, progress: progress)
             bottomColor = Color.blend(startRed: MIDNIGHT_BLUE_TOP_RED, startGreen: MIDNIGHT_BLUE_TOP_GREEN, startBlue: MIDNIGHT_BLUE_TOP_BLUE, endRed: SUNSET_RED_RED, endGreen: SUNSET_RED_GREEN, endBlue: SUNSET_RED_BLUE, progress: progress)
-       } else if transitionType == .sunset && eveningTwilightStart <= minutes && minutes < eveningTwilightEnd {
+        } else if transitionType == .sunset && eveningTwilightStart <= minutes && minutes < eveningTwilightEnd {
             // Evening twilight, sunset transition
             let progress = Double(minutes) / Double(eveningTwilightEnd)
-//            topColor = Color.blend(startColor: .skyBlue, endColor: .midnightBlue, progress: progress)
-//            bottomColor = Color.blend(startColor: .sunsetRed, endColor: .midnightBlue, progress: progress)
-        topColor = blendSkyBlueToMidnightBlue(progress)
-        bottomColor = blendSunsetRedToMidnightBlue(progress)
+            topColor = blendSkyBlueToMidnightBlue(progress)
+            bottomColor = blendSunsetRedToMidnightBlue(progress)
         } else if transitionType == .dusk && eveningTwilightStart <= minutes {
             // Early evening twilight, dusk transition
             let progress = Double(LENGTH_OF_DAY - minutes) / Double(EARLY_TWILIGHT_LENGTH_DUSK_TRANSITION + LATE_TWILIGHT_LENGTH_DUSK_TRANSITION)
