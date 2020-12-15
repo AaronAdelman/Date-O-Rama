@@ -8,8 +8,9 @@
 //
 
 import Foundation
-import CoreLocation
 import Combine
+import CoreLocation
+import Network
 
 let UPDATED_LOCATION_NAME = "UPDATED_LOCATION"
 
@@ -27,6 +28,15 @@ class ASALocationManager: NSObject, ObservableObject {
         return sharedLocationManager
     } // static var shared
 
+    private let monitor = NWPathMonitor()
+    @Published var connectedToTheInternet = false {
+        willSet {
+            DispatchQueue.main.async {
+                self.objectWillChange.send()
+            } // DispatchQueue.main.async
+        } // willSet
+    } // var connectedToTheInternet
+
     override init() {
         super.init()
         self.locationManager.delegate = self
@@ -35,15 +45,32 @@ class ASALocationManager: NSObject, ObservableObject {
 
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
+
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                debugPrint(#file, #function, "We’re connected!")
+                self.connectedToTheInternet = true
+            } else {
+                debugPrint(#file, #function, "No connection.")
+                self.connectedToTheInternet = false
+            }
+
+            debugPrint(#file, #function, path.isExpensive)
+        }
+
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
     } // init()
     
     let notificationCenter = NotificationCenter.default
 
     @Published var locationAuthorizationStatus: CLAuthorizationStatus? {
         willSet {
-            objectWillChange.send()
-        }
-    }
+            DispatchQueue.main.async {
+                self.objectWillChange.send()
+            } // DispatchQueue.main.async
+        } // willSet
+    } // var locationAuthorizationStatus
     
     private var lastDeviceLocation: CLLocation?
     

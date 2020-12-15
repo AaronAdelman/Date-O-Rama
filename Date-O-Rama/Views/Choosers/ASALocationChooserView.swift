@@ -22,6 +22,7 @@ struct ASALocationChooserView: View {
             }
         } // didSet
     } // var tempUsesDeviceLocation
+    @ObservedObject var locationManager = ASALocationManager.shared
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
@@ -33,11 +34,18 @@ struct ASALocationChooserView: View {
                 ASATimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
             }
             Section {
-                Toggle(isOn: $tempUsesDeviceLocation) {
-                    Text("Use device location")
+                if !locationManager.connectedToTheInternet {
+                    Text("CANNOT_GEOLOCATE").foregroundColor(.gray)
                 }
-            }
-            if !tempUsesDeviceLocation {
+
+                if locationManager.connectedToTheInternet {
+                    Toggle(isOn: $tempUsesDeviceLocation) {
+                        Text("Use device location")
+                    }
+                }
+            } // Section
+
+            if !tempUsesDeviceLocation && locationManager.connectedToTheInternet {
                 HStack {
                     TextField("Requested address", text: $enteredAddress)
                     Button(action: {

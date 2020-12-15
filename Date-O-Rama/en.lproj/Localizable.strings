@@ -355,3 +355,5 @@
 "MYSTERY_LOCATION" = "Mystery location";
 
 "NO_EXTERNAL_EVENTS_PERMISSION" = "Sorry, but Date-O-Rama does not have permission to access your external event calendars (“Calendars”). You can change this within the Settings application.";
+
+"CANNOT_GEOLOCATE" = "Sorry, but Date-O-Rama needs an Internet connection if you wish to choose a different location, because it needs to talk to Apple’s geolocation server to do so.  Please connect to the Internet.";
