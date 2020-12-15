@@ -239,7 +239,8 @@ class ASAAppleCalendar:  ASACalendar {
     
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
 //        .full, .long,
-        .medium, .short
+        .medium
+//        , .short
 //        , .localizedLDML
     ]
     

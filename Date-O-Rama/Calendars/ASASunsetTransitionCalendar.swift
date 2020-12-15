@@ -443,7 +443,9 @@
 
     var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
 //        .full, .long,
-        .medium, .short, .decimalTwelveHour
+        .medium,
+//        .short,
+        .decimalTwelveHour
 //                                                                , .JewishCalendricalCalculation
     ]
 

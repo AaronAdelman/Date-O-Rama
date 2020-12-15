@@ -70,6 +70,14 @@ struct ASAClockDetailEditingSection:  View {
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
 
+    fileprivate func majorDateFormats() -> [ASAMajorDateFormat] {
+        if forAppleWatch {
+            return selectedRow.calendar.supportedWatchMajorDateFormats
+        }
+
+        return selectedRow.calendar.supportedMajorDateFormats
+    }
+
     var body: some View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
             NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
@@ -97,12 +105,12 @@ struct ASAClockDetailEditingSection:  View {
 //                    }
                 }
             }
-            if selectedRow.calendar.supportsDateFormats {
+            if selectedRow.calendar.supportsDateFormats && majorDateFormats().count > 1 {
                 NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat, tempDateGeekFormat: selectedRow.dateGeekFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
                 }
             }
-            if selectedRow.calendar.supportsTimeFormats && shouldShowTime {
+            if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedMajorTimeFormats.count > 1 {
                 NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.majorTimeFormat, tempTimeGeekFormat: selectedRow.timeGeekFormat, calendarCode: selectedRow.calendar.calendarCode)) {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
                 }
