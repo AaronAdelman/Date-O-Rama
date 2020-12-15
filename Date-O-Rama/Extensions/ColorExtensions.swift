@@ -45,13 +45,21 @@ public func nightTime(hour:  Int, transitionType:  ASATransitionType) -> Bool {
 
 // MARK: -
 
-let SKY_BLUE_RED: Double   = 20.0 / 255.0
-let SKY_BLUE_GREEN: Double = 117.0 / 255.0
-let SKY_BLUE_BLUE: Double  = 157.0 / 255.0
+let SKY_BLUE_TOP_RED: Double   =  48.0 / 255.0
+let SKY_BLUE_TOP_GREEN: Double = 133.0 / 255.0
+let SKY_BLUE_TOP_BLUE: Double  = 182.0 / 255.0
 
-let MIDNIGHT_BLUE_RED: Double   = 12.0 / 255.0
-let MIDNIGHT_BLUE_GREEN: Double = 15.0 / 255.0
-let MIDNIGHT_BLUE_BLUE: Double  = 38.0 / 255.0
+let SKY_BLUE_BOTTOM_RED: Double   =  83.0 / 255.0
+let SKY_BLUE_BOTTOM_GREEN: Double = 144.0 / 255.0
+let SKY_BLUE_BOTTOM_BLUE: Double  = 187.0 / 255.0
+
+let MIDNIGHT_BLUE_TOP_RED: Double   = 53.0 / 255.0
+let MIDNIGHT_BLUE_TOP_GREEN: Double = 57.0 / 255.0
+let MIDNIGHT_BLUE_TOP_BLUE: Double  = 60.0 / 255.0
+
+let MIDNIGHT_BLUE_BOTTOM_RED: Double   = 26.0 / 255.0
+let MIDNIGHT_BLUE_BOTTOM_GREEN: Double = 28.0 / 255.0
+let MIDNIGHT_BLUE_BOTTOM_BLUE: Double  = 31.0 / 255.0
 
 let SUNSET_RED_RED: Double   = 128.0 / 255.0
 let SUNSET_RED_GREEN: Double = 37.0 / 255.0
@@ -59,23 +67,15 @@ let SUNSET_RED_BLUE: Double  = 37.0 / 255.0
 
 
 extension Color {
-    static var skyBlue:  Color {
-        get {
-            return Color(red: SKY_BLUE_RED, green: SKY_BLUE_GREEN, blue: SKY_BLUE_BLUE)
-        } // get
-    } // static var skyBlue
+    static var skyBlueTop:  Color = Color(red: SKY_BLUE_TOP_RED, green: SKY_BLUE_TOP_GREEN, blue: SKY_BLUE_TOP_BLUE)
 
-    static var midnightBlue:  Color {
-        get {
-            return Color(red: MIDNIGHT_BLUE_RED, green: MIDNIGHT_BLUE_GREEN, blue: MIDNIGHT_BLUE_BLUE)
-        } // get
-    } // static var midnightBlue
+    static var skyBlueBottom:  Color = Color(red: SKY_BLUE_BOTTOM_RED, green: SKY_BLUE_BOTTOM_GREEN, blue: SKY_BLUE_BOTTOM_BLUE)
 
-    static var sunsetRed:  Color {
-        get {
-            return Color(red: SUNSET_RED_RED, green: SUNSET_RED_GREEN, blue: SUNSET_RED_BLUE)
-        } // get
-    } // static var sunsetRed
+    static var midnightBlueTop:  Color =  Color(red: MIDNIGHT_BLUE_TOP_RED, green: MIDNIGHT_BLUE_TOP_GREEN, blue: MIDNIGHT_BLUE_TOP_BLUE)
+
+    static var midnightBlueBottom:  Color =  Color(red: MIDNIGHT_BLUE_BOTTOM_RED, green: MIDNIGHT_BLUE_BOTTOM_GREEN, blue: MIDNIGHT_BLUE_BOTTOM_BLUE)
+
+    static var sunsetRed:  Color = Color(red: SUNSET_RED_RED, green: SUNSET_RED_GREEN, blue: SUNSET_RED_BLUE)
 
     static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
         if calendarType == .JulianDay {
@@ -95,8 +95,8 @@ extension Color {
             return Color("julianDayBackground")
         }
 
-        let DAY_COLOR: Color = .skyBlue
-        let NIGHT_COLOR: Color = .midnightBlue
+        let DAY_COLOR: Color = .skyBlueTop
+        let NIGHT_COLOR: Color = .midnightBlueTop
 
         let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
 
