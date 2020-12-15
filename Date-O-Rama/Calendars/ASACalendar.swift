@@ -44,7 +44,11 @@ protocol ASACalendar {
     
     func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
     func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
-    func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat, dateGeekFormat:  String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
+    func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat,
+//                        dateGeekFormat: String,
+                        majorTimeFormat: ASAMajorTimeFormat,
+//                        timeGeekFormat: String,
+                        location:  CLLocation?, timeZone:  TimeZone?) -> String
 //    func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
     func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
     func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date

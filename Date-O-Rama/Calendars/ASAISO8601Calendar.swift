@@ -35,7 +35,11 @@ class ASAISO8601Calendar:  ASACalendar {
         return "HH:mm:ss"
     } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat,
+//                        dateGeekFormat: String,
+                        majorTimeFormat: ASAMajorTimeFormat,
+//                        timeGeekFormat: String,
+                        location: CLLocation?, timeZone:  TimeZone?) -> String {
         
         var dateString:  String
         

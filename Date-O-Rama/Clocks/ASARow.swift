@@ -13,9 +13,9 @@ let UUID_KEY:  String                 = "UUID"
 let LOCALE_KEY:  String               = "locale"
 let CALENDAR_KEY:  String             = "calendar"
 let MAJOR_DATE_FORMAT_KEY:  String    = "majorDateFormat"
-let DATE_GEEK_FORMAT_KEY:  String     = "geekFormat"
+//let DATE_GEEK_FORMAT_KEY:  String     = "geekFormat"
 let MAJOR_TIME_FORMAT_KEY:  String    = "majorTimeFormat"
-let TIME_GEEK_FORMAT_KEY:  String     = "timeGeekFormat"
+//let TIME_GEEK_FORMAT_KEY:  String     = "timeGeekFormat"
 
 
 // MARK: -
@@ -38,21 +38,21 @@ class ASARow: ASALocatedObject {
 
     @Published var majorDateFormat:  ASAMajorDateFormat = .full {
         didSet {
-            if dateGeekFormat.isEmpty {
-                self.dateGeekFormat = self.calendar.defaultDateGeekCode(majorDateFormat: self.majorDateFormat)
-            }
+//            if dateGeekFormat.isEmpty {
+//                self.dateGeekFormat = self.calendar.defaultDateGeekCode(majorDateFormat: self.majorDateFormat)
+//            }
         } // didset
     } // var majorDateFormat
-    @Published var dateGeekFormat:  String = "eMMMdy"
+//    @Published var dateGeekFormat:  String = "eMMMdy"
     
     @Published var majorTimeFormat:  ASAMajorTimeFormat = .full {
         didSet {
-            if timeGeekFormat.isEmpty {
-                self.timeGeekFormat = self.calendar.defaultTimeGeekCode(majorTimeFormat: self.majorTimeFormat)
-            }
+//            if timeGeekFormat.isEmpty {
+//                self.timeGeekFormat = self.calendar.defaultTimeGeekCode(majorTimeFormat: self.majorTimeFormat)
+//            }
         } // didset
     } // var majorDateFormat
-    @Published var timeGeekFormat:  String = "HHmmss"
+//    @Published var timeGeekFormat:  String = "HHmmss"
 
     
     // MARK: -
@@ -64,9 +64,9 @@ class ASARow: ASALocatedObject {
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             MAJOR_DATE_FORMAT_KEY:  majorDateFormat.rawValue ,
-            DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
+//            DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
             MAJOR_TIME_FORMAT_KEY:  majorTimeFormat.rawValue ,
-            TIME_GEEK_FORMAT_KEY:  timeGeekFormat,
+//            TIME_GEEK_FORMAT_KEY:  timeGeekFormat,
             TIME_ZONE_KEY:  effectiveTimeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
             ] as [String : Any]
@@ -153,20 +153,20 @@ class ASARow: ASALocatedObject {
             newRow.majorDateFormat = ASAMajorDateFormat(rawValue: majorDateFormat! )!
         }
         
-        let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY] as? String
-        if dateGeekFormat != nil {
-            newRow.dateGeekFormat = dateGeekFormat!
-        }
+//        let dateGeekFormat = dictionary[DATE_GEEK_FORMAT_KEY] as? String
+//        if dateGeekFormat != nil {
+//            newRow.dateGeekFormat = dateGeekFormat!
+//        }
         
         let majorTimeFormat = dictionary[MAJOR_TIME_FORMAT_KEY] as? String
         if majorTimeFormat != nil {
             newRow.majorTimeFormat = ASAMajorTimeFormat(rawValue: majorTimeFormat! )!
         }
         
-        let timeGeekFormat = dictionary[TIME_GEEK_FORMAT_KEY] as? String
-        if timeGeekFormat != nil {
-            newRow.timeGeekFormat = timeGeekFormat!
-        }
+//        let timeGeekFormat = dictionary[TIME_GEEK_FORMAT_KEY] as? String
+//        if timeGeekFormat != nil {
+//            newRow.timeGeekFormat = timeGeekFormat!
+//        }
         
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
         if timeZoneIdentifier != nil {
@@ -211,8 +211,9 @@ class ASARow: ASALocatedObject {
         let temp = ASARow()
         temp.calendar = ASAAppleCalendar(calendarCode: .Gregorian)
         temp.localeIdentifier = "en_US"
-        temp.majorDateFormat = .localizedLDML
-        temp.dateGeekFormat = "eeeyMMMd"
+//        temp.majorDateFormat = .localizedLDML
+//        temp.dateGeekFormat = "eeeyMMMd"
+        temp.majorDateFormat = .full
         temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
@@ -223,11 +224,19 @@ class ASARow: ASALocatedObject {
 
 extension ASARow {
     public func dateString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat,
+//                                            dateGeekFormat: self.dateGeekFormat,
+                                            majorTimeFormat: .none,
+//                                            timeGeekFormat: "",
+                                            location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date) -> String
 
     public func dateTimeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: self.majorDateFormat,
+//                                            dateGeekFormat: self.dateGeekFormat,
+                                            majorTimeFormat: self.majorTimeFormat,
+//                                            timeGeekFormat: self.timeGeekFormat,
+                                            location: self.location, timeZone: self.effectiveTimeZone)
     } // func dateTimeString(now:  Date) -> String
 
 //    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
@@ -247,7 +256,11 @@ extension ASARow {
     } // func startOfNextDay(now:  Date) -> Date
 
     public func timeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: self.majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none,
+//                                            dateGeekFormat: "",
+                                            majorTimeFormat: self.majorTimeFormat,
+//                                            timeGeekFormat: self.timeGeekFormat,
+                                            location: self.location, timeZone: self.effectiveTimeZone)
     } // func timeString(now:  Date
     
     public func supportsLocales() -> Bool {
@@ -266,25 +279,41 @@ extension ASARow {
     public func shortenedDateTimeString(now:  Date) -> String {
         let majorDateFormat: ASAMajorDateFormat = self.majorDateFormat.shortened
         let majorTimeFormat: ASAMajorTimeFormat = self.majorTimeFormat.shortened
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat,
+//                                                          dateGeekFormat: self.dateGeekFormat,
+                                                          majorTimeFormat: majorTimeFormat,
+//                                                          timeGeekFormat: self.timeGeekFormat,
+                                                          location: self.location, timeZone: self.effectiveTimeZone)
         return result
     } // func shortenedDateTimeString(now:  Date) -> String
 
     public func shortenedDateString(now:  Date) -> String {
         let majorDateFormat: ASAMajorDateFormat = self.majorDateFormat.shortened
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat,
+//                                                          dateGeekFormat: self.dateGeekFormat,
+                                                          majorTimeFormat: .none,
+//                                                          timeGeekFormat: "",
+                                                          location: self.location, timeZone: self.effectiveTimeZone)
         return result
     } // func shortenedDateString(now:  Date) -> String
 
     public func watchShortenedDateString(now:  Date) -> String {
         let majorDateFormat: ASAMajorDateFormat = self.majorDateFormat.watchShortened
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat, dateGeekFormat: self.dateGeekFormat, majorTimeFormat: .none, timeGeekFormat: "", location: self.location, timeZone: self.effectiveTimeZone)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: majorDateFormat,
+//                                                          dateGeekFormat: self.dateGeekFormat,
+                                                          majorTimeFormat: .none,
+//                                                          timeGeekFormat: "",
+                                                          location: self.location, timeZone: self.effectiveTimeZone)
         return result
     } //
 
     public func watchShortenedTimeString(now:  Date) -> String {
         let majorTimeFormat: ASAMajorTimeFormat = self.majorTimeFormat.shortened
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none, dateGeekFormat: "", majorTimeFormat: majorTimeFormat, timeGeekFormat: self.timeGeekFormat, location: self.location, timeZone: self.effectiveTimeZone)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, majorDateFormat: .none,
+//                                                          dateGeekFormat: "",
+                                                          majorTimeFormat: majorTimeFormat,
+//                                                          timeGeekFormat: self.timeGeekFormat,
+                                                          location: self.location, timeZone: self.effectiveTimeZone)
         return result
     } // func shortenedTimeString(now:  Date) -> String
 } // extension ASARow

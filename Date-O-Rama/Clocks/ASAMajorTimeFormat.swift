@@ -14,7 +14,7 @@ enum ASAMajorTimeFormat:  String {
     case medium                       = "medium"
     case long                         = "long"
     case full                         = "full"
-    case localizedLDML                = "loc"
+//    case localizedLDML                = "loc"
     case decimalTwelveHour            = "decimalTwelveHour" // 12 Night|Day
 //    case JewishCalendricalCalculation = "JewishCalendricalCalculation" // 12:1080:76 Night|Day
     case decimal                      = "decimal" // 10:100:100
@@ -33,7 +33,7 @@ extension ASAMajorTimeFormat {
             unlocalizedString = "ITEM_Long"
         case .full:
             unlocalizedString = "ITEM_Full"
-        case .localizedLDML:
+//        case .localizedLDML:
             unlocalizedString = "ITEM_Components"
         case .none:
             unlocalizedString = "ITEM_None"

@@ -169,7 +169,9 @@
         return (hours:  hours, daytime:  daytime, valid:  true)
     } // func solarTimeComponents(now: Date, localeIdentifier: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
 
-    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
+    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat,
+//                    timeGeekFormat: String,
+                    location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
 
@@ -244,13 +246,19 @@
     } // func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String
 
 
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat,
+//                        dateGeekFormat: String,
+                        majorTimeFormat: ASAMajorTimeFormat,
+//                        timeGeekFormat: String,
+                        location: CLLocation?, timeZone: TimeZone?) -> String {
         let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
 
         var timeString:  String = ""
         if majorTimeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat, timeGeekFormat:  timeGeekFormat, location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat,
+//                                         timeGeekFormat:  timeGeekFormat,
+                                         location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
         }
 
         if location == nil {
@@ -264,10 +272,10 @@
         self.dateFormatter.timeZone = timeZone
 
         switch majorDateFormat {
-        case .localizedLDML:
-            self.dateFormatter.dateStyle = .short
-            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
-            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+//        case .localizedLDML:
+//            self.dateFormatter.dateStyle = .short
+//            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+//            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
 
         case .none:
             self.dateFormatter.dateStyle = .none

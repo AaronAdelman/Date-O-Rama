@@ -26,7 +26,11 @@ class ASAAppleCalendar:  ASACalendar {
         dateFormatter.calendar = ApplesCalendar
     } // init(calendarCode:  ASACalendarCode)
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat,
+//                        dateGeekFormat: String,
+                        majorTimeFormat: ASAMajorTimeFormat,
+//                        timeGeekFormat: String,
+                        location: CLLocation?, timeZone:  TimeZone?) -> String {
         
         if localeIdentifier == "" {
             self.dateFormatter.locale = Locale.current
@@ -40,16 +44,16 @@ class ASAAppleCalendar:  ASACalendar {
             self.dateFormatter.timeZone = timeZone
         }
         
-        if majorTimeFormat == .localizedLDML || majorDateFormat == .localizedLDML {
-            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat + timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
-            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
-            return self.dateFormatter.string(from: now)
-        }
+//        if majorTimeFormat == .localizedLDML || majorDateFormat == .localizedLDML {
+//            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat + timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+//            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+//            return self.dateFormatter.string(from: now)
+//        }
         
         switch majorTimeFormat {
-        case .localizedLDML:
-            let timeFormat = DateFormatter.dateFormat(fromTemplate:timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
-            self.dateFormatter.setLocalizedDateFormatFromTemplate(timeFormat)
+//        case .localizedLDML:
+//            let timeFormat = DateFormatter.dateFormat(fromTemplate:timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+//            self.dateFormatter.setLocalizedDateFormatFromTemplate(timeFormat)
             
         case .none:
             self.dateFormatter.timeStyle = .none
@@ -71,9 +75,9 @@ class ASAAppleCalendar:  ASACalendar {
         } // switch majorTimeFormat
         
         switch majorDateFormat {
-        case .localizedLDML:
-            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
-            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+//        case .localizedLDML:
+//            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+//            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
             
         case .none:
             self.dateFormatter.dateStyle = .none

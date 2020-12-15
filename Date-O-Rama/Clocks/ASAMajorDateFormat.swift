@@ -14,7 +14,7 @@ enum ASAMajorDateFormat:  String {
     case medium                           = "medium"
     case long                             = "long"
     case full                             = "full"
-    case localizedLDML                    = "loc"
+//    case localizedLDML                    = "loc"
     //    case rawLDML                    = "raw"
     case ISO8601YearMonthDay              = "ISO8601YearMonthDay"
     case ISO8601YearWeekDay               = "ISO8601YearWeekDay"
@@ -42,8 +42,8 @@ extension ASAMajorDateFormat {
             unlocalizedString = "ITEM_Long"
         case .full:
             unlocalizedString = "ITEM_Full"
-        case .localizedLDML:
-            unlocalizedString = "ITEM_Components"
+//        case .localizedLDML:
+//            unlocalizedString = "ITEM_Components"
 //        case .rawLDML:
 //            unlocalizedString = "ITEM_Raw_LDML"
         case .none:
