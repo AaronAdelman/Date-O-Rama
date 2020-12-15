@@ -12,7 +12,7 @@ import CoreLocation
 struct ASATimeFormatChooserView: View {
     @ObservedObject var row:  ASARow
 
-    @State var tempMajorTimeFormat:  ASAMajorTimeFormat
+    @State var tempMajorTimeFormat:  ASATimeFormat
 //    @State var tempTimeGeekFormat:  String
     @State var calendarCode:  ASACalendarCode
 
@@ -51,7 +51,7 @@ struct ASATimeFormatChooserView: View {
                 ForEach(row.calendar.supportedMajorTimeFormats, id: \.self) {
                     format
                     in
-                    ASAMajorTimeFormatCell(majorTimeFormat: format, selectedMajorTimeFormat: self.$tempMajorTimeFormat)
+                    ASAMajorTimeFormatCell(timeFormat: format, selectedMajorTimeFormat: self.$tempMajorTimeFormat)
                 }
             } // Section
 //            if self.tempMajorTimeFormat == .localizedLDML {
@@ -65,13 +65,13 @@ struct ASATimeFormatChooserView: View {
                 })
         )
             .onAppear() {
-                self.tempMajorTimeFormat = self.row.majorTimeFormat
+                self.tempMajorTimeFormat = self.row.timeFormat
 //                self.tempTimeGeekFormat  = self.row.timeGeekFormat
                 self.calendarCode        = self.row.calendar.calendarCode
         }
         .onDisappear() {
             if !self.didCancel {
-                self.row.majorTimeFormat = self.tempMajorTimeFormat
+                self.row.timeFormat = self.tempMajorTimeFormat
 //                self.row.timeGeekFormat  = self.tempTimeGeekFormat
             }
         }
@@ -82,20 +82,20 @@ struct ASATimeFormatChooserView: View {
 // MARK: -
 
 struct ASAMajorTimeFormatCell: View {
-    let majorTimeFormat: ASAMajorTimeFormat
+    let timeFormat: ASATimeFormat
     
-    @Binding var selectedMajorTimeFormat:  ASAMajorTimeFormat
+    @Binding var selectedMajorTimeFormat:  ASATimeFormat
 
     var body: some View {
         HStack {
-            Text(verbatim:  majorTimeFormat.localizedItemName())
+            Text(verbatim:  timeFormat.localizedItemName())
             Spacer()
-            if majorTimeFormat == self.selectedMajorTimeFormat {
+            if timeFormat == self.selectedMajorTimeFormat {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-            self.selectedMajorTimeFormat = self.majorTimeFormat
+            self.selectedMajorTimeFormat = self.timeFormat
         }
     }
 } // struct ASAMajorTimeFormatCell
@@ -140,7 +140,7 @@ struct ASAMajorTimeFormatCell: View {
 
 struct ASATimeFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASATimeFormatChooserView(row: ASARow.generic(), tempMajorTimeFormat: .full,
+        ASATimeFormatChooserView(row: ASARow.generic(), tempMajorTimeFormat: .medium,
 //                                 tempTimeGeekFormat: "HHmmss",
                                  calendarCode: .Gregorian)
     }

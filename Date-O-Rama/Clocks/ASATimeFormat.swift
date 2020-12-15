@@ -1,5 +1,5 @@
 //
-//  ASAMajorTimeFormat.swift
+//  ASATimeFormat.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-07.
@@ -8,30 +8,30 @@
 
 import Foundation
 
-enum ASAMajorTimeFormat:  String {
+enum ASATimeFormat:  String {
     case none                         = "none"
-    case short                        = "short"
+//    case short                        = "short"
     case medium                       = "medium"
-    case long                         = "long"
-    case full                         = "full"
+//    case long                         = "long"
+//    case full                         = "full"
 //    case localizedLDML                = "loc"
     case decimalTwelveHour            = "decimalTwelveHour" // 12 Night|Day
 //    case JewishCalendricalCalculation = "JewishCalendricalCalculation" // 12:1080:76 Night|Day
     case decimal                      = "decimal" // 10:100:100
     case hexadecimal                  = "hexadecimal" // 16:256:16
-} // enum ASAMajorTimeFormat
+} // enum ASATimeFormat
 
-extension ASAMajorTimeFormat {
+extension ASATimeFormat {
     func localizedItemName() -> String {
         var unlocalizedString = ""
         switch self {
-        case .short:
-            unlocalizedString = "ITEM_Short"
+//        case .short:
+//            unlocalizedString = "ITEM_Short"
         case .medium:
             unlocalizedString = "ITEM_Medium"
-        case .long:
-            unlocalizedString = "ITEM_Long"
-        case .full:
+//        case .long:
+//            unlocalizedString = "ITEM_Long"
+//        case .full:
             unlocalizedString = "ITEM_Full"
 //        case .localizedLDML:
             unlocalizedString = "ITEM_Components"
@@ -48,18 +48,18 @@ extension ASAMajorTimeFormat {
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String
-} // extension ASAMajorTimeFormat
+} // extension ASATimeFormat
 
-extension ASAMajorTimeFormat {
-    var shortened:  ASAMajorTimeFormat {
+extension ASATimeFormat {
+    var shortened:  ASATimeFormat {
         get {
             switch self {
-            case .long, .full:
-                return .medium
+//            case .long, .full:
+//                return .medium
                 
             default:
                 return self
             } // switch self
         } // get
     } // var shortened
-} // extension ASAMajorTimeFormat
+} // extension ASATimeFormat

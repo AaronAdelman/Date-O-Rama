@@ -11,7 +11,7 @@ import CoreLocation
 import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
-    var defaultMajorDateFormat:  ASAMajorDateFormat = .full  // TODO:  Rethink this when dealing with watchOS
+    var defaultMajorDateFormat:  ASADateFormat = .full  // TODO:  Rethink this when dealing with watchOS
         
     var calendarCode:  ASACalendarCode
     
@@ -26,9 +26,9 @@ class ASAAppleCalendar:  ASACalendar {
         dateFormatter.calendar = ApplesCalendar
     } // init(calendarCode:  ASACalendarCode)
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat,
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat,
 //                        dateGeekFormat: String,
-                        majorTimeFormat: ASAMajorTimeFormat,
+                        timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
                         location: CLLocation?, timeZone:  TimeZone?) -> String {
         
@@ -44,13 +44,13 @@ class ASAAppleCalendar:  ASACalendar {
             self.dateFormatter.timeZone = timeZone
         }
         
-//        if majorTimeFormat == .localizedLDML || majorDateFormat == .localizedLDML {
+//        if timeFormat == .localizedLDML || dateFormat == .localizedLDML {
 //            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat + timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
 //            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
 //            return self.dateFormatter.string(from: now)
 //        }
         
-        switch majorTimeFormat {
+        switch timeFormat {
 //        case .localizedLDML:
 //            let timeFormat = DateFormatter.dateFormat(fromTemplate:timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
 //            self.dateFormatter.setLocalizedDateFormatFromTemplate(timeFormat)
@@ -58,23 +58,23 @@ class ASAAppleCalendar:  ASACalendar {
         case .none:
             self.dateFormatter.timeStyle = .none
             
-        case .full:
-            self.dateFormatter.timeStyle = .full
-            
-        case .long:
-            self.dateFormatter.timeStyle = .long
+//        case .full:
+//            self.dateFormatter.timeStyle = .full
+//
+//        case .long:
+//            self.dateFormatter.timeStyle = .long
             
         case .medium:
             self.dateFormatter.timeStyle = .medium
             
-        case .short:
-            self.dateFormatter.timeStyle = .short
+//        case .short:
+//            self.dateFormatter.timeStyle = .short
 
         default:
             self.dateFormatter.timeStyle = .medium // TODO:  EXPAND ON THIS!
-        } // switch majorTimeFormat
+        } // switch timeFormat
         
-        switch majorDateFormat {
+        switch dateFormat {
 //        case .localizedLDML:
 //            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
 //            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
@@ -120,10 +120,10 @@ class ASAAppleCalendar:  ASACalendar {
 
         default:
             self.dateFormatter.dateStyle = .full
-        } // switch majorDateFormat
+        } // switch dateFormat
         
         return self.dateFormatter.string(from: now)
-    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
 //    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
 //        // TODO:  Update when times are supported!
@@ -140,13 +140,13 @@ class ASAAppleCalendar:  ASACalendar {
 //        return result
 //    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
-    func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
+    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
         return "eee, d MMM y"
-    } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
+    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
     
-    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
         return "HH:mm:ss"
-    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
+    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
     
 //    var LDMLDetails: Array<ASALDMLDetail> {
 //        get {
@@ -210,7 +210,7 @@ class ASAAppleCalendar:  ASACalendar {
         
     var supportsTimes: Bool = true
     
-    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+    var supportedMajorDateFormats: Array<ASADateFormat> = [
         .full
 //        ,
 //        .long,
@@ -227,7 +227,7 @@ class ASAAppleCalendar:  ASACalendar {
 //        .localizedLDML
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> = [
+    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
         .full,
         .long,
         .medium,
@@ -241,7 +241,7 @@ class ASAAppleCalendar:  ASACalendar {
         .mediumWithWeekdayWithoutYear,
         .fullWithoutYear    ]
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
+    var supportedMajorTimeFormats: Array<ASATimeFormat> = [
 //        .full, .long,
         .medium
 //        , .short
@@ -253,7 +253,7 @@ class ASAAppleCalendar:  ASACalendar {
     var canSplitTimeFromDate:  Bool = true
     
 //    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .medium
+    var defaultMajorTimeFormat:  ASATimeFormat = .medium
     
     // MARK: - Date components
     

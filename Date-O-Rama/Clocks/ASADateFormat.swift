@@ -1,5 +1,5 @@
 //
-//  ASAMajorDateFormat.swift
+//  ASADateFormat.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-06.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ASAMajorDateFormat:  String {
+enum ASADateFormat:  String {
     case none                             = "none"
     case short                            = "short"
     case medium                           = "medium"
@@ -28,9 +28,9 @@ enum ASAMajorDateFormat:  String {
     case mediumWithWeekdayWithoutYear     = "mediumWithWeekdayWithoutYear"
     case fullWithoutYear                  = "fullWithoutYear"
 
-} // enum ASAMajorDateFormat
+} // enum ASADateFormat
 
-extension ASAMajorDateFormat {
+extension ASADateFormat {
     func localizedItemName() -> String {
         var unlocalizedString = ""
         switch self {
@@ -73,10 +73,10 @@ extension ASAMajorDateFormat {
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // func localizedItemName() -> String
-} // extension ASAMajorDateFormat
+} // extension ASADateFormat
 
-extension ASAMajorDateFormat {
-    var shortened:  ASAMajorDateFormat {
+extension ASADateFormat {
+    var shortened:  ASADateFormat {
         get {
             switch self {
             case .long, .full, .medium:
@@ -88,7 +88,7 @@ extension ASAMajorDateFormat {
         } // get
     } // var shortened
 
-    var watchShortened:  ASAMajorDateFormat {
+    var watchShortened:  ASADateFormat {
         get {
             switch self {
             case .full, .mediumWithWeekday:
@@ -102,4 +102,4 @@ extension ASAMajorDateFormat {
             } // switch self
         } // get
     } // var watchShortened
-} // extension ASAMajorDateFormat
+} // extension ASADateFormat

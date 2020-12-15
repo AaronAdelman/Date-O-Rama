@@ -12,7 +12,7 @@ import UIKit
 
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
-    var defaultMajorDateFormat:  ASAMajorDateFormat = .full
+    var defaultMajorDateFormat:  ASADateFormat = .full
     
     private var offsetFromJulianDay:  Double {
         get {
@@ -54,17 +54,17 @@ class ASAJulianDayCalendar:  ASACalendar {
         self.calendarCode = calendarCode
     } // init(calendarCode: ASACalendarCode)
     
-    func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
+    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
         return ""
-    } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
+    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
     
-    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
         return "HH:mm:ss"
-    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
+    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
     
     
-    private func dateTimeString(now:  Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat) -> String {
-        if self.supportsTimes && majorTimeFormat != .none {
+    private func dateTimeString(now:  Date, localeIdentifier: String, timeFormat: ASATimeFormat) -> String {
+        if self.supportsTimes && timeFormat != .none {
             //            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
             let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let formatter = NumberFormatter()
@@ -84,16 +84,16 @@ class ASAJulianDayCalendar:  ASACalendar {
         }
     } // func dateTimeString(now:  Date, localeIdentifier: String) -> String
     
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat,
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat,
 //                        dateGeekFormat: String,
-                        majorTimeFormat: ASAMajorTimeFormat,
+                        timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
                         location: CLLocation?, timeZone:  TimeZone?) -> String {
-        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: majorTimeFormat)
-    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
+        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
     
 //    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
-//        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, majorTimeFormat: .full)
+//        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, timeFormat: .full)
 //    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
     
 //    var LDMLDetails: Array<ASALDMLDetail> = []
@@ -145,22 +145,22 @@ class ASAJulianDayCalendar:  ASACalendar {
         } // get
     } // var supportsTimes: Bool
     
-    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+    var supportedMajorDateFormats: Array<ASADateFormat> = [
         .full
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> = [
+    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
         .full
     ]
 
     
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [.full]
+    var supportedMajorTimeFormats: Array<ASATimeFormat> = [.medium]
     
     var supportsTimeFormats: Bool = false
     
     var canSplitTimeFromDate:  Bool = false
     
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
+    var defaultMajorTimeFormat:  ASATimeFormat = .medium
     
     
     // MARK: - Date components

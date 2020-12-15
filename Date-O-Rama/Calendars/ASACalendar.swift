@@ -28,12 +28,12 @@ public enum ASATransitionType {
 protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var canSplitTimeFromDate:  Bool { get }
-    var defaultMajorDateFormat:  ASAMajorDateFormat { get }
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat { get }
+    var defaultMajorDateFormat:  ASADateFormat { get }
+    var defaultMajorTimeFormat:  ASATimeFormat { get }
 //    var LDMLDetails: Array<ASALDMLDetail> { get }
-    var supportedMajorDateFormats: Array<ASAMajorDateFormat> { get }
-    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> { get }
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> { get }
+    var supportedMajorDateFormats: Array<ASADateFormat> { get }
+    var supportedWatchMajorDateFormats: Array<ASADateFormat> { get }
+    var supportedMajorTimeFormats: Array<ASATimeFormat> { get }
     var supportsLocales: Bool { get }
     var supportsDateFormats: Bool { get }
     var supportsLocations: Bool { get }
@@ -42,11 +42,11 @@ protocol ASACalendar {
     var supportsTimeZones: Bool { get }
     var transitionType:  ASATransitionType { get }
     
-    func defaultDateGeekCode(majorDateFormat:  ASAMajorDateFormat) -> String
-    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
-    func dateTimeString(now:  Date, localeIdentifier:  String, majorDateFormat:  ASAMajorDateFormat,
+    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String
+    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String
+    func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat,
 //                        dateGeekFormat: String,
-                        majorTimeFormat: ASAMajorTimeFormat,
+                        timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
                         location:  CLLocation?, timeZone:  TimeZone?) -> String
 //    func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String

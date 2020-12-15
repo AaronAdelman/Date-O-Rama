@@ -70,7 +70,7 @@ struct ASAClockDetailEditingSection:  View {
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
 
-    fileprivate func majorDateFormats() -> [ASAMajorDateFormat] {
+    fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
             return selectedRow.calendar.supportedWatchMajorDateFormats
         }
@@ -105,18 +105,18 @@ struct ASAClockDetailEditingSection:  View {
 //                    }
                 }
             }
-            if selectedRow.calendar.supportsDateFormats && majorDateFormats().count > 1 {
-                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.majorDateFormat,
+            if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {
+                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.dateFormat,
 //                                                                     tempDateGeekFormat: selectedRow.dateGeekFormat,
                                                                      calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.majorDateFormat.localizedItemName())
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName())
                 }
             }
             if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedMajorTimeFormats.count > 1 {
-                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.majorTimeFormat,
+                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.timeFormat,
 //                                                                     tempTimeGeekFormat: selectedRow.timeGeekFormat,
                                                                      calendarCode: selectedRow.calendar.calendarCode)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.majorTimeFormat.localizedItemName())
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName())
                 }
             }
         } // Section

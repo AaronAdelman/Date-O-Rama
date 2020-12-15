@@ -12,7 +12,7 @@ import CoreLocation
 struct ASADateFormatChooserView: View {
     @ObservedObject var row:  ASARow
 
-    @State var tempMajorDateFormat:  ASAMajorDateFormat
+    @State var tempMajorDateFormat:  ASADateFormat
 //    @State var tempDateGeekFormat:  String
     @State var calendarCode:  ASACalendarCode
 
@@ -54,7 +54,7 @@ struct ASADateFormatChooserView: View {
 //        }
 //    }
     
-    fileprivate func dateFormats() -> [ASAMajorDateFormat] {
+    fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
             return row.calendar.supportedWatchMajorDateFormats
         }
@@ -68,7 +68,7 @@ struct ASADateFormatChooserView: View {
                 ForEach(dateFormats(), id: \.self) {
                     format
                     in
-                    ASAMajorDateFormatCell(majorDateFormat: format, selectedMajorDateFormat: self.$tempMajorDateFormat)
+                    ASAMajorDateFormatCell(dateFormat: format, selectedMajorDateFormat: self.$tempMajorDateFormat)
                 }
             } // Section
 //            if tempMajorDateFormat == .localizedLDML {
@@ -82,13 +82,13 @@ struct ASADateFormatChooserView: View {
                 })
         )
             .onAppear() {
-                self.tempMajorDateFormat = self.row.majorDateFormat
+                self.tempMajorDateFormat = self.row.dateFormat
 //                self.tempDateGeekFormat  = self.row.dateGeekFormat
                 self.calendarCode        = self.row.calendar.calendarCode
         }
         .onDisappear() {
             if !self.didCancel {
-                self.row.majorDateFormat = self.tempMajorDateFormat
+                self.row.dateFormat = self.tempMajorDateFormat
 //                self.row.dateGeekFormat  = self.tempDateGeekFormat
             }
         }
@@ -99,20 +99,20 @@ struct ASADateFormatChooserView: View {
 // MARK: -
 
 struct ASAMajorDateFormatCell: View {
-    let majorDateFormat: ASAMajorDateFormat
+    let dateFormat: ASADateFormat
     
-    @Binding var selectedMajorDateFormat:  ASAMajorDateFormat
+    @Binding var selectedMajorDateFormat:  ASADateFormat
     
     var body: some View {
         HStack {
-            Text(verbatim:  majorDateFormat.localizedItemName())
+            Text(verbatim:  dateFormat.localizedItemName())
             Spacer()
-            if majorDateFormat == self.selectedMajorDateFormat {
+            if dateFormat == self.selectedMajorDateFormat {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-            self.selectedMajorDateFormat = self.majorDateFormat
+            self.selectedMajorDateFormat = self.dateFormat
         }
     }
 } // struct ASAMajorDateFormatCell

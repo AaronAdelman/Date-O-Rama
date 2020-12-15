@@ -17,9 +17,9 @@
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
-    var defaultMajorDateFormat:  ASAMajorDateFormat = .short
+    var defaultMajorDateFormat:  ASADateFormat = .short
     #else
-    var defaultMajorDateFormat:  ASAMajorDateFormat = .full
+    var defaultMajorDateFormat:  ASADateFormat = .full
     #endif
 
     public var dateFormatter = DateFormatter()
@@ -33,13 +33,13 @@
         dateFormatter.calendar = ApplesCalendar
     } // init(calendarCode:  ASACalendarCode)
 
-    func defaultDateGeekCode(majorDateFormat: ASAMajorDateFormat) -> String {
+    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
         return "eee, d MMM y"
-    } // func defaultDateGeekCode(majorDateFormat: ASAMajorFormat) -> String
+    } // func defaultDateGeekCode(dateFormat: ASAMajorFormat) -> String
 
-    func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String {
+    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
         return "HH:mm:ss"
-    } // func defaultTimeGeekCode(majorTimeFormat:  ASAMajorTimeFormat) -> String
+    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
 
     var dayStart:  ASASolarEvent {
         get {
@@ -83,7 +83,7 @@
         if !existsSolarTime {
             return (hours:  -1.0, daytime:  false, valid:  false)
         }
-        //        debugPrint(#file, #function, "Now:", now, localeIdentifier, majorTimeFormat, timeGeekFormat, location!, timeZone!, "Transition:", transition!!)
+        //        debugPrint(#file, #function, "Now:", now, localeIdentifier, timeFormat, timeGeekFormat, location!, timeZone!, "Transition:", transition!!)
 
         var dayHalfStart:  Date
         //        var dayHalfEnd:  Date
@@ -169,7 +169,7 @@
         return (hours:  hours, daytime:  daytime, valid:  true)
     } // func solarTimeComponents(now: Date, localeIdentifier: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
 
-    func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat,
+    func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat,
 //                    timeGeekFormat: String,
                     location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
         let NIGHT_SYMBOL    = "☽"
@@ -182,21 +182,25 @@
         let symbol = daytime ? DAY_SYMBOL : NIGHT_SYMBOL
 
         var result = ""
-        switch majorTimeFormat {
+        switch timeFormat {
         case .decimalTwelveHour:
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
 
 //        case .JewishCalendricalCalculation:
 //            result = self.JewishCalendricalCalculationTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
 
-        case .short, .medium, .long, .full:
+        case
+//            .short,
+            .medium
+//            , .long, .full
+        :
             result = self.sexagesimalTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
 
         default:
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
         }
         return result
-    } // func timeString(now: Date, localeIdentifier: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String
+    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String
 
     func fractionalHoursTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         var result = ""
@@ -246,17 +250,17 @@
     } // func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String
 
 
-    func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorDateFormat,
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat,
 //                        dateGeekFormat: String,
-                        majorTimeFormat: ASAMajorTimeFormat,
+                        timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
                         location: CLLocation?, timeZone: TimeZone?) -> String {
         let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
 
         var timeString:  String = ""
-        if majorTimeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, majorTimeFormat:  majorTimeFormat,
+        if timeFormat != .none {
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat,
 //                                         timeGeekFormat:  timeGeekFormat,
                                          location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
         }
@@ -271,7 +275,7 @@
         }
         self.dateFormatter.timeZone = timeZone
 
-        switch majorDateFormat {
+        switch dateFormat {
 //        case .localizedLDML:
 //            self.dateFormatter.dateStyle = .short
 //            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
@@ -318,7 +322,7 @@
 
         default:
             self.dateFormatter.dateStyle = .full
-        } // switch majorDateFormat
+        } // switch dateFormat
 
         let dateString = self.dateFormatter.string(from: fixedNow)
         if dateString == "" {
@@ -329,7 +333,7 @@
             let SEPARATOR = ", "
             return dateString + SEPARATOR + timeString
         }
-    } // func dateTimeString(now: Date, localeIdentifier: String, majorDateFormat: ASAMajorFormat, dateGeekFormat: String, majorTimeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
 
 //    public func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
 //        if location == nil {
@@ -417,7 +421,7 @@
 
     public var supportsTimes: Bool = true
 
-    var supportedMajorDateFormats: Array<ASAMajorDateFormat> = [
+    var supportedMajorDateFormats: Array<ASADateFormat> = [
         .full
 //        ,
 //        .long,
@@ -434,7 +438,7 @@
 //        .localizedLDML
     ]
 
-    var supportedWatchMajorDateFormats: Array<ASAMajorDateFormat> = [
+    var supportedWatchMajorDateFormats: Array<ASADateFormat> = [
         .full,
         .long,
         .medium,
@@ -449,7 +453,7 @@
         .fullWithoutYear
     ]
 
-    var supportedMajorTimeFormats: Array<ASAMajorTimeFormat> = [
+    var supportedMajorTimeFormats: Array<ASATimeFormat> = [
 //        .full, .long,
         .medium,
 //        .short,
@@ -461,7 +465,7 @@
 
     public var canSplitTimeFromDate:  Bool = true
 
-    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .decimalTwelveHour
+    var defaultMajorTimeFormat:  ASATimeFormat = .decimalTwelveHour
 
 
     // MARK: - Date components
