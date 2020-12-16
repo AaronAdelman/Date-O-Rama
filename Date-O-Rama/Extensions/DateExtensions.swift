@@ -78,7 +78,7 @@ extension Date {
     static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date {
         let seconds = ((JulianDate + offsetFromJulianDay) - 2440587.5) * 86400.0
         return Date(timeIntervalSince1970: seconds)
-    } //
+    } // static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date
 
     func previousGMTNoon() -> Date {
         let thisJulianDay = floor(self.JulianDate())
