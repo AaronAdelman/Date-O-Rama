@@ -32,9 +32,9 @@ extension ASATimeFormat {
 //        case .long:
 //            unlocalizedString = "ITEM_Long"
 //        case .full:
-            unlocalizedString = "ITEM_Full"
+//            unlocalizedString = "ITEM_Full"
 //        case .localizedLDML:
-            unlocalizedString = "ITEM_Components"
+//            unlocalizedString = "ITEM_Components"
         case .none:
             unlocalizedString = "ITEM_None"
         case .decimalTwelveHour:
