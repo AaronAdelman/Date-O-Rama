@@ -57,46 +57,6 @@ struct ASAClockCellBody:  View {
     var shouldShowTime:  Bool
     var shouldShowCalendarPizzazztron:  Bool
 
-//    #if os(watchOS)
-//    #else
-//    @Environment(\.horizontalSizeClass) var sizeClass
-//    #endif
-
-    var body: some View {
-        HStack {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
-
-            if (processedRow.supportsMonths || shouldShowTime) {
-                Spacer()
-            }
-
-            if processedRow.supportsTimes {                ASAClockPizzazztronSubcell(processedRow: processedRow, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
-            }
-
-            Spacer().frame(width:  16.0)
-        } // HStack
-    }
-}
-
-
-// MARK: -
-
-struct ASAClockPizzazztronSubcell:  View {
-    #if os(watchOS)
-    let compact = false
-    #else
-    @Environment(\.horizontalSizeClass) var sizeClass
-    var compact:  Bool {
-        get {
-            return self.sizeClass == .compact
-        } // get
-    } // var compact
-    #endif
-
-    var processedRow:  ASAProcessedRow
-    var shouldShowTime:  Bool
-    var shouldShowCalendarPizzazztron:  Bool
-
     fileprivate func shouldShowClockPizzazztron() -> Bool {
         return shouldShowTime && processedRow.hasValidTime
     } //func shouldShowClockPizzazztron() -> Bool
@@ -107,23 +67,31 @@ struct ASAClockPizzazztronSubcell:  View {
         return temp
     } // func numberFormatter() -> NumberFormatter
 
-    var body:  some View {
-        #if os(watchOS)
-        EmptyView()
-        #else
-            HStack {
+    var body: some View {
+        HStack {
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+
+            if (processedRow.supportsMonths || shouldShowTime) {
+                Spacer()
+            }
+
+            #if os(watchOS)
+            #else
+            if processedRow.supportsTimes {
                 if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
                     ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
                 }
-
+                Spacer()
                 if shouldShowClockPizzazztron() {
                     ASAClockPizzazztron(processedRow:  processedRow, numberFormatter: numberFormatter())
                 }
             }
-//        }
-        #endif
+            #endif
+
+            Spacer().frame(width:  16.0)
+        } // HStack
     } // var body
-} // struct ASAClockPizzazztronCell
+} // struct ASAClockCellBody
 
 
 // MARK:  -
