@@ -18,6 +18,7 @@ struct ASAMainRowsByCalendarView:  View {
         } // get
     }
     @Binding var now:  Date
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
 
     var keys:  Array<String> {
         get {
@@ -26,7 +27,7 @@ struct ASAMainRowsByCalendarView:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now)
+        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption)
     } // var body
 } // struct ASAMainRowsByCalendarView
 
@@ -34,6 +35,8 @@ struct ASAMainRowsByCalendarSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
     var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
+
     var keys:  Array<String> {
         get {
             return Array(self.processedRowsByCalendar.keys).sorted()
@@ -51,7 +54,7 @@ struct ASAMainRowsByCalendarSubview:  View {
                         #endif
                         Text(verbatim: "\(key)").font(Font.headlineMonospacedDigit)
                             .minimumScaleFactor(0.5).lineLimit(1)                }) {
-                ForEach(self.processedRowsByCalendar[key]!, id:  \.row.uuid) {
+                ForEach(self.processedRowsByCalendar[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
 
@@ -81,6 +84,6 @@ struct ASAMainRowsByCalendarSubview:  View {
 
 struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic()]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }

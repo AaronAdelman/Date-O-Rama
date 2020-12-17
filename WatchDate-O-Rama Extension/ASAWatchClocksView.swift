@@ -12,21 +12,8 @@ struct ASAWatchClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
 
-//    let groupingOptions:  Array<ASAClocksViewGroupingOption> = [
-////        .plain,
-//        .byFormattedDate,
-//        .byCalendar,
-//        .byPlaceName,
-//        .eastToWest,
-//        .westToEast,
-//        .northToSouth,
-//        .southToNorth,
-//        .byTimeZoneWestToEast,
-//        .byTimeZoneEastToWest
-//    ]
-
-    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
-
+    @AppStorage("mainRowsGroupingOption") var primaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
+    @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byFormattedDate
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -37,30 +24,41 @@ struct ASAWatchClocksView: View {
     var body: some View {
         NavigationView {
             Form {
-                Picker(selection: self.$mainRowsGroupingOption, label: Text("Arrangement")) {
-                    ForEach(ASAClocksViewGroupingOption.allOptions, id:  \.self) {
+                Picker(selection: self.$primaryMainRowsGroupingOption, label: Text("Arrangement")) {
+                    ForEach(ASAClocksViewGroupingOption.primaryOptions, id:  \.self) {
+                        Text($0.text())
+                    }
+                }.onChange(of: self.primaryMainRowsGroupingOption, perform: {(foo)
+                    in
+                    if !self.primaryMainRowsGroupingOption.compatibleOptions.contains(self.secondaryMainRowsGroupingOption) {
+                        self.secondaryMainRowsGroupingOption = self.primaryMainRowsGroupingOption.defaultCompatibleOption
+                    }
+                })
+
+                Picker(selection: self.$secondaryMainRowsGroupingOption, label: Text("Secondary arrangement")) {
+                    ForEach(self.primaryMainRowsGroupingOption.compatibleOptions, id:  \.self) {
                         Text($0.text())
                     }
                 }
 
-                switch self.mainRowsGroupingOption {
+                switch self.primaryMainRowsGroupingOption {
 //                case .plain:
 //                    ASAPlainMainRowsList(groupingOption: .plain, rows: $userData.mainRows, now: $now)
 
                 case .byFormattedDate:
-                    ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
 
                 case .byCalendar:
-                    ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
 
                 case .byPlaceName, .byCountry:
-                    ASAMainRowsByPlaceView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByPlaceView(primaryGroupingOption: primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                    ASAPlainMainRowsView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                    ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                    ASAMainRowsByTimeZoneView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                    ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
         }

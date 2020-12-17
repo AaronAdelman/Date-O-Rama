@@ -10,11 +10,12 @@ import SwiftUI
 
 struct ASAMainRowsByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
-    var groupingOption:  ASAClocksViewGroupingOption
+    var primaryGroupingOption:  ASAClocksViewGroupingOption
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASARow>
     var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>> {
         get {
-            switch groupingOption {
+            switch primaryGroupingOption {
             case .byPlaceName:
                return self.rows.processedRowsByPlaceName(now: now)
 
@@ -35,13 +36,14 @@ struct ASAMainRowsByPlaceView:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByPlaceSubview(groupingOption: self.groupingOption, processedRowsByPlace: processedRowsByPlace, now: $now)
+        ASAMainRowsByPlaceSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByPlace: processedRowsByPlace, now: $now)
     } // var body
 } // struct ASAMainRowsByPlaceNameView
 
 
 struct ASAMainRowsByPlaceSubview:  View {
-    var groupingOption:  ASAClocksViewGroupingOption
+    var primaryGroupingOption:  ASAClocksViewGroupingOption
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>>
     var keys:  Array<String> {
         get {
@@ -52,7 +54,7 @@ struct ASAMainRowsByPlaceSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
 
     fileprivate func shouldShowPlaceName() -> Bool {
-        return self.groupingOption == .byPlaceName ? false : true
+        return self.primaryGroupingOption == .byPlaceName ? false : true
     }
 
     var body:  some View {
@@ -64,7 +66,7 @@ struct ASAMainRowsByPlaceSubview:  View {
                 Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
             }) {
-                ForEach(self.processedRowsByPlace[key]!, id:  \.row.uuid) {
+                ForEach(self.processedRowsByPlace[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
 
@@ -94,6 +96,6 @@ struct ASAMainRowsByPlaceSubview:  View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASARow.generic()]), now: .constant(Date()))
     }
 }

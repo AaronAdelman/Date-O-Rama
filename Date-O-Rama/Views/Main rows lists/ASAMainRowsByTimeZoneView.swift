@@ -12,7 +12,8 @@ import SwiftUI
 
 struct ASAMainRowsByTimeZoneView:  View {
     @EnvironmentObject var userData:  ASAUserData
-    var groupingOption:  ASAClocksViewGroupingOption
+    var primaryGroupingOption:  ASAClocksViewGroupingOption
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASARow>
 
     var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>> {
@@ -37,13 +38,14 @@ struct ASAMainRowsByTimeZoneView:  View {
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
 
     var body:  some View {
-        ASAMainRowsByTimeZoneSubview(groupingOption: self.groupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now)
+        ASAMainRowsByTimeZoneSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now)
     }
 }
 
 struct ASAMainRowsByTimeZoneSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
-    var groupingOption:  ASAClocksViewGroupingOption
+    var primaryGroupingOption:  ASAClocksViewGroupingOption
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>>
     @Binding var now:  Date
 
@@ -61,13 +63,13 @@ struct ASAMainRowsByTimeZoneSubview:  View {
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
 
     var body:  some View {
-        ForEach(self.keys(groupingOption: groupingOption), id: \.self) {
+        ForEach(self.keys(groupingOption: primaryGroupingOption), id: \.self) {
             key
             in
             Section(header:  Text(self.processedRowsByTimeZone[key]![0].timeZoneString).font(Font.headlineMonospacedDigit)
                         .minimumScaleFactor(0.5).lineLimit(1)
             ) {
-                ForEach(self.processedRowsByTimeZone[key]!, id:  \.row.uuid) {
+                ForEach(self.processedRowsByTimeZone[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
 

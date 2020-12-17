@@ -321,7 +321,8 @@
 "New Internal Event Calendar" = "לוח שנה אירועים פנימי חדש";
 "Are you sure you want to delete this new internal event calendar?" = "בטוח שברצונך למחוק לוח שנה אירועים פנימי חדש זה?";
 
-"Arrangement" = "ארגון";
+"Arrangement"           = "ארגון ראשי";
+"Secondary arrangement" = "ארגון משני";
 //"Plain" = "פשוט";
 "By Formatted Date"          = "לפי תאריך מפורמט";
 "By Calendar"                = "לפי לוח";

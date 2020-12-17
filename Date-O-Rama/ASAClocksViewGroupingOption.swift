@@ -9,7 +9,6 @@
 import Foundation
 
 enum ASAClocksViewGroupingOption:  String, CaseIterable {
-//    case plain
     case byFormattedDate
     case byCalendar
     case byPlaceName
@@ -25,9 +24,6 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
         var raw:  String
 
         switch self {
-//        case .plain:
-//            raw = "Plain"
-
         case .byFormattedDate:
             raw = "By Formatted Date"
 
@@ -62,16 +58,59 @@ enum ASAClocksViewGroupingOption:  String, CaseIterable {
         return NSLocalizedString(raw, comment: "")
     } // func text() -> String
 
-    static var allOptions:  Array<ASAClocksViewGroupingOption> = [
+    static var primaryOptions:  Array<ASAClocksViewGroupingOption> = [
         .byCalendar,
         .byFormattedDate,
         .byPlaceName,
         .byCountry,
         .byTimeZoneWestToEast,
-        .byTimeZoneEastToWest,
-        .eastToWest,
-        .westToEast,
-        .northToSouth,
-        .southToNorth
+        .byTimeZoneEastToWest
     ]
+
+    var compatibleOptions:  Array<ASAClocksViewGroupingOption> {
+        switch self {
+        case .byFormattedDate:
+            return [.byCalendar, .byPlaceName, .byCountry, .byTimeZoneWestToEast, .byTimeZoneEastToWest, .eastToWest, .westToEast, .northToSouth, .southToNorth]
+
+        case .byCalendar:
+            return [.byFormattedDate, .byPlaceName, .byCountry, .byTimeZoneWestToEast, .byTimeZoneEastToWest, .eastToWest, .westToEast, .northToSouth, .southToNorth]
+
+        case .byPlaceName:
+            return [.byCalendar, .byFormattedDate, .eastToWest, .westToEast, .northToSouth, .southToNorth]
+
+        case .byCountry:
+            return [.byCalendar, .byFormattedDate, .byPlaceName, .byTimeZoneWestToEast, .byTimeZoneEastToWest, .eastToWest, .westToEast, .northToSouth, .southToNorth]
+
+        case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
+            return [.byCalendar, .byFormattedDate, .byPlaceName, .byCountry, .eastToWest, .westToEast, .northToSouth, .southToNorth]
+
+        default:
+            return []
+        } // switch self
+    } // var compatibleOptions
+
+    var defaultCompatibleOption:  ASAClocksViewGroupingOption {
+        switch self {
+        case .byFormattedDate:
+            return .byPlaceName
+
+        case .byCalendar:
+            return .byPlaceName
+
+        case .byPlaceName:
+            return .byFormattedDate
+
+        case .byCountry:
+            return .byPlaceName
+
+        case .byTimeZoneWestToEast:
+            return .byPlaceName
+
+        case .byTimeZoneEastToWest:
+            return .byPlaceName
+
+        default:
+            return .byPlaceName
+        } // switch self
+    } //var defaultCompatibleOption
 } // enum ASAClocksViewGroupingOption

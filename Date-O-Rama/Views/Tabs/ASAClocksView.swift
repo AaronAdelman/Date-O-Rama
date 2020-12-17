@@ -17,7 +17,8 @@ struct ASAClocksView: View {
 
     @State private var showingNewClockDetailView = false
 
-    @AppStorage("mainRowsGroupingOption") var mainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
+    @AppStorage("mainRowsGroupingOption") var primaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
+    @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byFormattedDate
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -32,14 +33,23 @@ struct ASAClocksView: View {
             VStack {
                 Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
-                    NavigationLink(destination:  ASAArrangementChooserView(groupingOption:  self.$mainRowsGroupingOption, tempGroupingOption: self.mainRowsGroupingOption)) {
+                    NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
                         HStack {
                             Text("Arrangement")
                             Spacer()
-                            Text(self.mainRowsGroupingOption.text())
+                            Text(self.primaryMainRowsGroupingOption.text())
                         }
                         .foregroundColor(.accentColor)
-                    }
+                    } // NavigationLink
+
+                    NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$secondaryMainRowsGroupingOption, groupingOptions: self.primaryMainRowsGroupingOption.compatibleOptions, otherGroupingOption: self.$primaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: false)) {
+                        HStack {
+                            Text("Secondary arrangement")
+                            Spacer()
+                            Text(self.secondaryMainRowsGroupingOption.text())
+                        }
+                        .foregroundColor(.accentColor)
+                    } // NavigationLink
 
                     Button(
                         action: {
@@ -50,21 +60,21 @@ struct ASAClocksView: View {
                     }
                     .foregroundColor(.accentColor)
 
-                    switch self.mainRowsGroupingOption {
+                    switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
-                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now)
+                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
 
                     case .byCalendar:
-                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now)
+                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
 
                     case .byPlaceName, .byCountry:
-                        ASAMainRowsByPlaceView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                     case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                        ASAPlainMainRowsView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                        ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                        ASAMainRowsByTimeZoneView(groupingOption: self.mainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
                 .sheet(isPresented: self.$showingNewClockDetailView) {

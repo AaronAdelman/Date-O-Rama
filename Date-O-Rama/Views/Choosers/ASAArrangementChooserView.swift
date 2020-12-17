@@ -9,15 +9,19 @@
 import SwiftUI
 
 struct ASAArrangementChooserView: View {
-    @Binding var groupingOption:  ASAClocksViewGroupingOption
-    @State var tempGroupingOption:  ASAClocksViewGroupingOption
+    @Binding var selectedGroupingOption:  ASAClocksViewGroupingOption
+    var groupingOptions:  Array<ASAClocksViewGroupingOption>
+    @Binding var otherGroupingOption:  ASAClocksViewGroupingOption
+    var otherGroupingOptionIsSecondary:  Bool
+
+    @State var tempGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
     
     var body: some View {
         List {
-            ForEach(ASAClocksViewGroupingOption.allOptions, id: \.self) {
+            ForEach(groupingOptions, id: \.self) {
                 groupingOption
                 in
                 ASAArrangementCell(groupingOption: groupingOption, selectedGroupingOption: self.$tempGroupingOption)
@@ -33,11 +37,16 @@ struct ASAArrangementChooserView: View {
                                 })
         )
         .onAppear() {
-            self.tempGroupingOption = self.groupingOption
+            self.tempGroupingOption = self.selectedGroupingOption
         }
         .onDisappear() {
             if !self.didCancel {
-                self.groupingOption = self.tempGroupingOption
+                self.selectedGroupingOption = self.tempGroupingOption
+                if otherGroupingOptionIsSecondary {
+                    if !self.selectedGroupingOption.compatibleOptions.contains(self.otherGroupingOption) {
+                        self.otherGroupingOption = self.selectedGroupingOption.defaultCompatibleOption
+                    }
+                }
             }
         }
     }
@@ -62,6 +71,6 @@ struct ASAArrangementCell: View {
 
 struct ASAArrangementChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAArrangementChooserView(groupingOption: .constant(ASAClocksViewGroupingOption.byPlaceName), tempGroupingOption: ASAClocksViewGroupingOption.byPlaceName)
+        ASAArrangementChooserView(selectedGroupingOption: .constant(ASAClocksViewGroupingOption.byPlaceName), groupingOptions: ASAClocksViewGroupingOption.byPlaceName.compatibleOptions, otherGroupingOption: .constant(.byFormattedDate), otherGroupingOptionIsSecondary: true)
     }
 }

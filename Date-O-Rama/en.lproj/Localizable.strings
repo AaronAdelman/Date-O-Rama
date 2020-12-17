@@ -321,7 +321,8 @@
 "New Internal Event Calendar" = "New Internal Event Calendar";
 "Are you sure you want to delete this new internal event calendar?" = "Are you sure you want to delete this new internal event calendar?";
 
-"Arrangement" = "Arrangement";
+"Arrangement"           = "Primary arrangement";
+"Secondary arrangement" = "Secondary arrangement";
 //"Plain"                      = "Plain";
 "By Formatted Date"          = "By Formatted Date";
 "By Calendar"                = "By Calendar";

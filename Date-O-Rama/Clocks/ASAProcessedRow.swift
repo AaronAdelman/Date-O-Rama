@@ -232,12 +232,21 @@ extension Array where Element == ASARow {
         return result
     } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
 
+    fileprivate func noCountryString() -> String {
+        return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
+    }
+
     func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
         var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
-            let key = processedRow.row.locationData.country ?? NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
+            let key:  String = {
+                if processedRow.supportsLocations == false {
+                return noCountryString()
+            }
+                return processedRow.row.locationData.country ?? noCountryString()
+            }()
             var value = result[key]
             if value == nil {
                 result[key] = [processedRow]
@@ -300,3 +309,65 @@ extension Array where Element == ASARow {
         return processedRows
     } // func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow>
 } // extension Array where Element == ASARow
+
+
+// MARK: -
+
+extension Array where Element == ASAProcessedRow {
+    fileprivate func noCountryString() -> String {
+        return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
+    }
+
+    func sorted(_ groupingOption:  ASAClocksViewGroupingOption) -> Array<ASAProcessedRow> {
+        switch groupingOption {
+        case .eastToWest:
+            return self.sorted {
+                $0.longitude > $1.longitude
+            }
+
+        case .westToEast:
+            return self.sorted {
+                $0.longitude < $1.longitude
+            }
+
+        case .northToSouth:
+            return self.sorted {
+                $0.latitude > $1.latitude
+            }
+
+        case .southToNorth:
+            return self.sorted {
+                $0.latitude < $1.latitude
+            }
+
+        case .byFormattedDate:
+            return self.sorted {
+                $0.dateString < $1.dateString
+            }
+
+        case .byCalendar:
+            return self.sorted {
+                $0.calendarString < $1.calendarString
+            }
+
+        case .byPlaceName:
+            return self.sorted {
+                $0.locationString < $1.locationString
+            }
+
+        case .byCountry:
+            return self.sorted {
+                $0.row.locationData.country ?? noCountryString() < $1.row.locationData.country ?? noCountryString()
+            }
+
+        case .byTimeZoneWestToEast:
+            return self.sorted {
+                $0.row.locationData.timeZone?.secondsFromGMT() ?? 0 < $1.row.locationData.timeZone?.secondsFromGMT() ?? 0
+            }
+        case .byTimeZoneEastToWest:
+            return self.sorted {
+                $0.row.locationData.timeZone?.secondsFromGMT() ?? 0 > $1.row.locationData.timeZone?.secondsFromGMT() ?? 0
+            }
+        } // switch groupingOption
+    } // func sorted(_ groupingOption:  ASAClocksViewGroupingOption, now:  Date) -> Array<ASAProcessedRow>
+}

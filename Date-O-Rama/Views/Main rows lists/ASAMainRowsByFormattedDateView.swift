@@ -18,9 +18,10 @@ struct ASAMainRowsByFormattedDateView:  View {
         }
     }
     @Binding var now:  Date
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
 
     var body: some View {
-        ASAMainRowsByFormattedDateSubview(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now)
+        ASAMainRowsByFormattedDateSubview(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now, secondaryGroupingOption: $secondaryGroupingOption)
     } // var body
 } // struct ASAMainRowsByFormattedDateView
 
@@ -28,6 +29,7 @@ struct ASAMainRowsByFormattedDateSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
     var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
+    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
 
     var keys:  Array<String> {
         get {
@@ -42,7 +44,7 @@ struct ASAMainRowsByFormattedDateSubview:  View {
             Section(header:  Text("\(key)").font(Font.headlineMonospacedDigit)
                         .minimumScaleFactor(0.5).lineLimit(1)
             ) {
-                ForEach(self.processedRowsByFormattedDate[key]!, id:  \.row.uuid) {
+                ForEach(self.processedRowsByFormattedDate[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
 
@@ -72,6 +74,6 @@ struct ASAMainRowsByFormattedDateSubview:  View {
 
 struct ASAMainRowsByFormattedDateView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic()]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }
