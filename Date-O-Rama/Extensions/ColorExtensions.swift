@@ -78,10 +78,10 @@ extension Color {
     static var sunsetRed:  Color = Color(red: SUNSET_RED_RED, green: SUNSET_RED_GREEN, blue: SUNSET_RED_BLUE)
 
     static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
-//        if calendarType == .JulianDay {
-//            return Color("julianDayForeground")
-//        }
-//
+        if calendarType == .JulianDay {
+            return Color("julianDayForeground")
+        }
+
         let DAY_COLOR: Color   = Color("dayForeground")
         let NIGHT_COLOR: Color = Color("nightForeground")
 
