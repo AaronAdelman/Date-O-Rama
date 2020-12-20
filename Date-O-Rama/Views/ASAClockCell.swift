@@ -31,14 +31,15 @@ struct ASAClockCell: View {
     #endif
 
     var body: some View {
-        if !runningOnWatchOS && processedRow.hasValidTime {
-            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+        if !runningOnWatchOS {
+            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
+                .frame(minHeight:  40.0)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType))
                 .padding(EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0))
                 .background(ASASkyGradient(processedRow: processedRow))
                 .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))
         } else {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
         }
     } // var body
 } // struct ASAClockCell
@@ -56,6 +57,7 @@ struct ASAClockCellBody:  View {
 
     var shouldShowTime:  Bool
     var shouldShowCalendarPizzazztron:  Bool
+    var canSplitTimeFromDate:  Bool
 
     fileprivate func shouldShowClockPizzazztron() -> Bool {
         return shouldShowTime && processedRow.hasValidTime
@@ -69,7 +71,7 @@ struct ASAClockCellBody:  View {
 
     var body: some View {
         HStack {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron)
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: canSplitTimeFromDate)
 
             if (processedRow.supportsMonths || shouldShowTime) {
                 Spacer()
@@ -104,6 +106,7 @@ struct ASAClockMainSubcell:  View {
     var shouldShowPlaceName:  Bool
     var shouldShowTimeZone:  Bool
     var shouldShowCalendarPizzazztron:  Bool
+    var canSplitTimeFromDate:  Bool
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -117,7 +120,7 @@ struct ASAClockMainSubcell:  View {
                 }
             }
 
-            if processedRow.canSplitTimeFromDate {
+            if canSplitTimeFromDate {
                 if shouldShowFormattedDate {
                     ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                 }
@@ -140,9 +143,7 @@ struct ASAClockMainSubcell:  View {
                         }
                     }
                 }
-            } else
-//            if shouldShowFormattedDate
-            {
+            } else {
                 HStack {
                     #if os(watchOS)
                     if !shouldShowPlaceName {
@@ -152,10 +153,10 @@ struct ASAClockMainSubcell:  View {
                     }
                     #endif
 
+                    if shouldShowFormattedDate {
                     ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                    }
                 }
-//            } else {
-//                Text("Bleh")
             }
 
             ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, shouldShowCalendarPizzazztron:  shouldShowCalendarPizzazztron)

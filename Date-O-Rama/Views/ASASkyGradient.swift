@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ASASkyGradient: View {
+    fileprivate let JulianDayBackground: [Color] = [Color("julianDayBackgroundTop"), Color("julianDayBackgroundBottom")]
+
     fileprivate func blendSkyBlueToMidnightBlue(_ progress: Double) -> Color {
         return Color.blend(startRed: SKY_BLUE_TOP_RED, startGreen: SKY_BLUE_TOP_GREEN, startBlue: SKY_BLUE_TOP_BLUE, endRed: MIDNIGHT_BLUE_BOTTOM_RED, endGreen: MIDNIGHT_BLUE_BOTTOM_GREEN, endBlue: MIDNIGHT_BLUE_BOTTOM_BLUE, progress: progress)
     }
@@ -21,8 +23,9 @@ struct ASASkyGradient: View {
         let hour: Int = processedRow.hour
 
         if calendarType == .JulianDay {
-            let color = Color.backgroundColor(transitionType: transitionType, hour: hour, calendarType: calendarType)
-            return [color, color]
+//            let color = Color.backgroundColor(transitionType: transitionType, hour: hour, calendarType: calendarType)
+//            return [color, color]
+            return JulianDayBackground
         }
 
         if transitionType == .midnight {

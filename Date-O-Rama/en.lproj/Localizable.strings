@@ -346,8 +346,8 @@
 
 "Swap clocks" = "🔃 Swap clocks";
 
-"NO_PLACE_NAME"        = "No Place";
-"NO_COUNTRY_OR_REGION" = "No Country or Region";
+"NO_PLACE_NAME"        = "International";
+"NO_COUNTRY_OR_REGION" = "International";
 
 "External event calendars" = "External event calendars";
 
