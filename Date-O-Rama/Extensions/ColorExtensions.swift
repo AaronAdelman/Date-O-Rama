@@ -90,18 +90,18 @@ extension Color {
         return result
     } // static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
 
-    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
-        if calendarType == .JulianDay {
-            return Color("julianDayBackground")
-        }
-
-        let DAY_COLOR: Color = .skyBlueTop
-        let NIGHT_COLOR: Color = .midnightBlueTop
-
-        let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
-
-        return result
-    } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
+//    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
+//        if calendarType == .JulianDay {
+//            return Color("julianDayBackground")
+//        }
+//
+//        let DAY_COLOR: Color = .skyBlueTop
+//        let NIGHT_COLOR: Color = .midnightBlueTop
+//
+//        let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
+//
+//        return result
+//    } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
 
 //    var components:  (CGFloat, CGFloat, CGFloat) {
 //        get {
