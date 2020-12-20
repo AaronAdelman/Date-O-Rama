@@ -144,8 +144,12 @@ class ASARow: ASALocatedObject {
 
         let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
-            let code = ASACalendarCode(rawValue: calendarCode! ) ?? ASACalendarCode.Gregorian
-            newRow.calendar = ASACalendarFactory.calendar(code: code)!
+            let code = ASACalendarCode(rawValue: calendarCode!)
+            if code == nil {
+                newRow.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
+            } else {
+                newRow.calendar = ASACalendarFactory.calendar(code: code!)!
+            }
         }
         
         let dateFormat = dictionary[MAJOR_DATE_FORMAT_KEY] as? String

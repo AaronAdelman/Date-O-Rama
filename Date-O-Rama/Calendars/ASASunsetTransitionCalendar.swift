@@ -266,17 +266,20 @@
         }
 
         if location == nil {
+            debugPrint(#file, #function, "No location")
             return "No location"
         }
-//        if localeIdentifier == "" {
-//            self.dateFormatter.locale = Locale.current
-//        } else {
-//            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-//        }
+
+        self.dateFormatter.calendar = self.ApplesCalendar
+        let acceptableIdentifiers: [Calendar.Identifier] = [.hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura]
+        assert(acceptableIdentifiers.contains(self.ApplesCalendar.identifier))
+        assert(acceptableIdentifiers.contains(self.dateFormatter.calendar.identifier))
 
         self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
+        self.dateFormatter.calendar.locale = self.dateFormatter.locale
 
         self.dateFormatter.timeZone = timeZone
+        self.dateFormatter.calendar.timeZone = self.dateFormatter.timeZone
 
         switch dateFormat {
 //        case .localizedLDML:
@@ -327,7 +330,10 @@
             self.dateFormatter.dateStyle = .full
         } // switch dateFormat
 
+        self.dateFormatter.timeStyle = .none
+
         let dateString = self.dateFormatter.string(from: fixedNow)
+
         if dateString == "" {
             return timeString
         } else if timeString == "" {

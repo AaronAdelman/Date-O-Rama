@@ -11,7 +11,7 @@ import Foundation
 extension Locale {
     static func desiredLocale(localeIdentifier:  String) -> Locale {
         if localeIdentifier == "" {
-            return Locale.autoupdatingCurrent
+            return Locale.current // autoupdatingCurrent makes the date formatter default to the Gregorian calendar.
         } else {
             return Locale(identifier: localeIdentifier)
         }
