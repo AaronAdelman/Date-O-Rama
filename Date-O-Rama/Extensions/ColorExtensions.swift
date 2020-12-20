@@ -53,17 +53,17 @@ let SKY_BLUE_BOTTOM_RED: Double   =  83.0 / 255.0
 let SKY_BLUE_BOTTOM_GREEN: Double = 144.0 / 255.0
 let SKY_BLUE_BOTTOM_BLUE: Double  = 187.0 / 255.0
 
-let MIDNIGHT_BLUE_TOP_RED: Double   = 53.0 / 255.0
-let MIDNIGHT_BLUE_TOP_GREEN: Double = 57.0 / 255.0
-let MIDNIGHT_BLUE_TOP_BLUE: Double  = 60.0 / 255.0
+let MIDNIGHT_BLUE_TOP_RED: Double   =  1.0 / 255.0
+let MIDNIGHT_BLUE_TOP_GREEN: Double =  6.0 / 255.0
+let MIDNIGHT_BLUE_TOP_BLUE: Double  = 31.0 / 255.0
 
-let MIDNIGHT_BLUE_BOTTOM_RED: Double   = 26.0 / 255.0
-let MIDNIGHT_BLUE_BOTTOM_GREEN: Double = 28.0 / 255.0
-let MIDNIGHT_BLUE_BOTTOM_BLUE: Double  = 31.0 / 255.0
+let MIDNIGHT_BLUE_BOTTOM_RED: Double   = 36.0 / 255.0
+let MIDNIGHT_BLUE_BOTTOM_GREEN: Double = 41.0 / 255.0
+let MIDNIGHT_BLUE_BOTTOM_BLUE: Double  = 62.0 / 255.0
 
 let SUNSET_RED_RED: Double   = 128.0 / 255.0
-let SUNSET_RED_GREEN: Double = 37.0 / 255.0
-let SUNSET_RED_BLUE: Double  = 37.0 / 255.0
+let SUNSET_RED_GREEN: Double =  37.0 / 255.0
+let SUNSET_RED_BLUE: Double  =  62.0 / 255.0
 
 
 extension Color {

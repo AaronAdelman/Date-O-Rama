@@ -152,7 +152,7 @@ struct Watch:  View {
             // Minute hand
             Hand(offset: 7.0)
                 .fill()
-                .frame(width: 1.0, alignment: .center)
+                .frame(width: 2.0, alignment: .center)
                 .rotationEffect(.radians(minuteAngle))
                 .foregroundColor(Color(isNight ? "minuteHandNight" : "minuteHandDay"))
 
