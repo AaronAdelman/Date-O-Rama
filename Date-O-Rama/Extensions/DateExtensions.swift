@@ -103,13 +103,21 @@ extension Date {
         if sunset == nil {
             // Guarding against there being no Sunset
             result = (self.sixPM(timeZone: timeZone), sunset)
+            assert(result.date >= self)
         } else if sunset! == nil {
             // Guarding against there being no Sunset
             result = (self.sixPM(timeZone: timeZone), sunset)
+            if !(result.date >= self) {
+                debugPrint(#file, #function, result, self)
+                result.date = self
+            }
+            assert(result.date >= self)
         } else if self >= sunset!! {
             result = (self.noon(timeZone: timeZone).oneDayAfter, sunset)
+            assert(result.date >= self)
         } else {
             result = (self, sunset)
+            assert(result.date >= self)
         }
 
         return result

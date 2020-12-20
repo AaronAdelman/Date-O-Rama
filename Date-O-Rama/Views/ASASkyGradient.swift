@@ -8,6 +8,35 @@
 
 import SwiftUI
 
+enum ASAPolarLighting {
+    case sunDoesNotSet
+    case sunDoesNotRise
+    case cannotTell
+
+    static func given(month:  Int, latitude:  Double, calendarCode:  ASACalendarCode) -> ASAPolarLighting {
+        if calendarCode.isHebrewCalendar {
+            if month < 8 {
+                // Winter
+                if latitude > 0 {
+                    return sunDoesNotRise
+                } else {
+                    return sunDoesNotSet
+                }
+            } else {
+                // Summer
+                if latitude > 0 {
+                    return sunDoesNotRise
+                } else {
+                    return sunDoesNotSet
+                }
+            }
+        } else {
+            return cannotTell
+        }
+    }
+} // enum ASAPolarLighting
+
+
 struct ASASkyGradient: View {
     fileprivate let JulianDayBackground: [Color] = [Color("julianDayBackgroundTop"), Color("julianDayBackgroundBottom")]
 
@@ -19,8 +48,20 @@ struct ASASkyGradient: View {
         return Color.blend(startRed: SUNSET_RED_RED, startGreen: SUNSET_RED_GREEN, startBlue: SUNSET_RED_BLUE, endRed: MIDNIGHT_BLUE_TOP_RED, endGreen: MIDNIGHT_BLUE_TOP_GREEN, endBlue: MIDNIGHT_BLUE_TOP_BLUE, progress: progress)
     }
 
-    fileprivate func skyGradientColors(transitionType:  ASATransitionType, calendarType:  ASACalendarType) -> [Color] {
+    fileprivate func skyGradientColors(transitionType:  ASATransitionType, calendarType:  ASACalendarType, calendarCode:  ASACalendarCode, month:  Int, latitude:  Double) -> [Color] {
         let hour: Int = processedRow.hour
+
+        if hour == -1 {
+            let polarLighting = ASAPolarLighting.given(month: month, latitude: latitude, calendarCode: calendarCode)
+            switch polarLighting {
+            case .sunDoesNotSet:
+                return [Color.midnightBlueTop, Color.midnightBlueBottom]
+            case .sunDoesNotRise:
+                return [Color.skyBlueTop, Color.skyBlueBottom]
+            case .cannotTell:
+                return JulianDayBackground
+            } // switch polarLighting
+        }
 
         if calendarType == .JulianDay {
 //            let color = Color.backgroundColor(transitionType: transitionType, hour: hour, calendarType: calendarType)
@@ -109,7 +150,7 @@ struct ASASkyGradient: View {
     var processedRow:  ASAProcessedRow
 
     var body: some View {
-        ASASkyGradientSubview(colors: skyGradientColors(transitionType: processedRow.transitionType, calendarType: processedRow.calendarType))
+        ASASkyGradientSubview(colors: skyGradientColors(transitionType: processedRow.transitionType, calendarType: processedRow.calendarType, calendarCode: processedRow.calendarCode, month: processedRow.month, latitude: processedRow.latitude))
     } // var body
 } // struct ASASkyGradient
 

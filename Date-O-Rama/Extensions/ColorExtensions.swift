@@ -77,13 +77,24 @@ extension Color {
 
     static var sunsetRed:  Color = Color(red: SUNSET_RED_RED, green: SUNSET_RED_GREEN, blue: SUNSET_RED_BLUE)
 
-    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
-        if calendarType == .JulianDay {
-            return Color("julianDayForeground")
-        }
-
+    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType, month:  Int, latitude:  Double, calendarCode:  ASACalendarCode) -> Color {
         let DAY_COLOR: Color   = Color("dayForeground")
         let NIGHT_COLOR: Color = Color("nightForeground")
+        let JULIAN_DAY_COLOR: Color = Color("julianDayForeground")
+
+        if calendarType == .JulianDay {
+            return JULIAN_DAY_COLOR
+        }
+
+        if hour == -1 {
+            switch ASAPolarLighting.given(month: month, latitude: latitude, calendarCode: calendarCode) {
+            case ASAPolarLighting.sunDoesNotSet:  return DAY_COLOR
+            case ASAPolarLighting.sunDoesNotRise:  return NIGHT_COLOR
+            case ASAPolarLighting.cannotTell:  return JULIAN_DAY_COLOR
+            }
+        }
+
+
 
         let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
 
