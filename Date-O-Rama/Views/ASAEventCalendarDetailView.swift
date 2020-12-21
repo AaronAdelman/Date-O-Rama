@@ -85,6 +85,7 @@ struct ASAEventCalendarDetailSection:  View {
 
 struct ASAEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventCalendarDetailView(selectedEventCalendar: ASAEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
+//        ASAEventCalendarDetailView(selectedEventCalendar: ASAEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
+        ASAEventCalendarDetailView(selectedEventCalendar: ASAEventCalendar.eventCalendar(eventSourceCode: "Solar events")!)
     }
 } // struct ASAEventCalendarDetailView_Previews

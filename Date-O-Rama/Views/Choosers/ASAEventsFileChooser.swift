@@ -78,6 +78,7 @@ struct ASAEventsFileCell: View {
 
 struct ASAEventsFileChooser_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsFileChooser(eventCalendar: ASAEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!, tempInternalEventCode: "Solar events")
+//        ASAEventsFileChooser(eventCalendar: ASAEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!, tempInternalEventCode: "Solar events")
+        ASAEventsFileChooser(eventCalendar: ASAEventCalendar.eventCalendar(eventSourceCode: "Solar events")!, tempInternalEventCode: "Solar events")
     }
 }

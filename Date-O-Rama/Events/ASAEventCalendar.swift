@@ -101,7 +101,8 @@ class ASAEventCalendar:  ASALocatedObject {
         let rawCode:  String = dictionary[EVENT_SOURCE_CODE_KEY] as? String ?? ""
 //        let code:  ASAInternalEventSourceCode = ASAInternalEventSourceCode(rawValue: rawCode) ?? .solar
 //        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  code)
-        let tempNewEventCalendar = ASAEventCalendarFactory.eventCalendar(eventSourceCode:  rawCode)
+//        let tempNewEventCalendar = ASAEventCalendarFactory.eventCalendar(eventSourceCode:  rawCode)
+        let tempNewEventCalendar = ASAEventCalendar.eventCalendar(eventSourceCode:  rawCode)
         if tempNewEventCalendar == nil {
             return nil
         }
@@ -177,4 +178,12 @@ class ASAEventCalendar:  ASALocatedObject {
         
         return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
+
+    class func eventCalendar(eventSourceCode:  String) -> ASAEventCalendar? {
+        let result = ASAEventCalendar()
+        result.eventsFileName = eventSourceCode
+        result.locationData = ASALocationManager.shared.deviceLocationData
+        result.usesDeviceLocation = true
+        return result
+    } //class func eventCalendar(eventSourceCode:  ASAEventSourceCode) -> ASAEventCalendar?
 } // class ASAEventCalendar
