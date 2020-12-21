@@ -197,9 +197,9 @@ struct ASADateComponents:  Equatable {
 
 extension ASADateComponents {
     func ApplesDateComponents() -> DateComponents {
-        let calendarIdentifier = self.calendar.calendarCode.equivalentCalendarIdentifier()
+        let title = self.calendar.calendarCode.equivalentCalendarIdentifier()
         
-        let calendar = Calendar(identifier: calendarIdentifier)
+        let calendar = Calendar(identifier: title)
         var dateComponents = DateComponents()
         
         dateComponents.calendar = calendar

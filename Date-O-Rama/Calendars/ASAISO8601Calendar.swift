@@ -20,8 +20,8 @@ class ASAISO8601Calendar:  ASACalendar {
     private var ApplesCalendar:  Calendar
     
     init() {
-        let calendarIdentifier = self.calendarCode.equivalentCalendarIdentifier()
-        ApplesCalendar = Calendar(identifier: calendarIdentifier)
+        let title = self.calendarCode.equivalentCalendarIdentifier()
+        ApplesCalendar = Calendar(identifier: title)
         dateFormatter.calendar = ApplesCalendar
 
         self.ISODateFormatter.timeZone = TimeZone.current

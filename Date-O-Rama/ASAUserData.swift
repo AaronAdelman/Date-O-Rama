@@ -59,7 +59,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     @Published var internalEventCalendars:  Array<ASAEventCalendar> = []
     @Published var externalEventCalendarIdentifiers:  Array<String> = [] {
         didSet {
-            ASAExternalEventManager.shared.reloadExternalCalendars(calendarIdentifiers: externalEventCalendarIdentifiers)
+            ASAExternalEventManager.shared.reloadExternalCalendars(titles: externalEventCalendarIdentifiers)
         } // didSet
     }
     
@@ -354,7 +354,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
             let temp1b: Dictionary<String, Any> = [
                 INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
-                EXTERNAL_EVENT_CALENDARS_KEY:  ASAExternalEventManager.shared.calendarIdentifiers
+                EXTERNAL_EVENT_CALENDARS_KEY:  ASAExternalEventManager.shared.titles
             ]
 
             writePreferences(temp1b, code: .events)

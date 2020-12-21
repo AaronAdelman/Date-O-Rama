@@ -127,62 +127,62 @@ extension ASACalendarCode {
 
 extension ASACalendarCode {
     func equivalentCalendarIdentifier() -> Calendar.Identifier {
-           var calendarIdentifier:  Calendar.Identifier
+           var title:  Calendar.Identifier
            switch self {
            case ASACalendarCode.Buddhist:
-               calendarIdentifier = .buddhist
+               title = .buddhist
                
            case ASACalendarCode.Chinese:
-               calendarIdentifier = .chinese
+               title = .chinese
                
            case ASACalendarCode.Coptic:
-               calendarIdentifier = .coptic
+               title = .coptic
                
            case ASACalendarCode.EthiopicAmeteAlem:
-               calendarIdentifier = .ethiopicAmeteAlem
+               title = .ethiopicAmeteAlem
                
            case ASACalendarCode.EthiopicAmeteMihret:
-               calendarIdentifier = .ethiopicAmeteMihret
+               title = .ethiopicAmeteMihret
                
            case ASACalendarCode.Gregorian:
-               calendarIdentifier = .gregorian
+               title = .gregorian
                
            case ASACalendarCode.Hebrew, .HebrewGRA, .HebrewMA:
-               calendarIdentifier = .hebrew
+               title = .hebrew
                
            case ASACalendarCode.Indian:
-               calendarIdentifier = .indian
+               title = .indian
                
            case ASACalendarCode.Islamic, .IslamicSolar:
-               calendarIdentifier = .islamic
+               title = .islamic
                
            case ASACalendarCode.IslamicCivil, .IslamicCivilSolar:
-               calendarIdentifier = .islamicCivil
+               title = .islamicCivil
                
            case ASACalendarCode.IslamicTabular, .IslamicTabularSolar:
-               calendarIdentifier = .islamicTabular
+               title = .islamicTabular
                
            case ASACalendarCode.IslamicUmmAlQura, .IslamicUmmAlQuraSolar:
-               calendarIdentifier = .islamicUmmAlQura
+               title = .islamicUmmAlQura
                
            case ASACalendarCode.ISO8601:
-               calendarIdentifier = .gregorian
+               title = .gregorian
                
            case ASACalendarCode.Japanese:
-               calendarIdentifier = .japanese
+               title = .japanese
                
            case ASACalendarCode.Persian:
-               calendarIdentifier = .persian
+               title = .persian
                
            case ASACalendarCode.RepublicOfChina:
-               calendarIdentifier = .republicOfChina
+               title = .republicOfChina
                
            default:
-               calendarIdentifier = .gregorian
+               title = .gregorian
            } // switch calendarCode
            
-           return calendarIdentifier
-       } // func calendarIdentifier() -> Calendar.Identifier
+           return title
+       } // func title() -> Calendar.Identifier
 } // extension ASACalendarCode
 
 extension ASACalendarCode {

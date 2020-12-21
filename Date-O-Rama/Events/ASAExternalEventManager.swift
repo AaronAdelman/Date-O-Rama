@@ -23,15 +23,15 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
     
     @Published var eventStore = EKEventStore()
 
-    public var calendarIdentifiers:  Array<String> {
+    public var titles:  Array<String> {
         get {
             if calendars != nil {
-                return calendars!.map {$0.calendarIdentifier}
+                return calendars!.map {$0.title}
             } else {
                 return []
             }
         } // get
-    } // var calendarIdentifiers
+    } // var titles
 
     @Published var calendars: [EKCalendar]?
 
@@ -78,21 +78,21 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         if externalEventCalendarIdentifiers.count == 0 {
             self.calendars = eventStore.calendars(for: EKEntityType.event)
         } else {
-            self.reloadExternalCalendars(calendarIdentifiers: externalEventCalendarIdentifiers)
+            self.reloadExternalCalendars(titles: externalEventCalendarIdentifiers)
         }
 //        debugPrint(#file, #function, self.calendars as Any)
     } // func loadExternalCalendars()
 
-    func reloadExternalCalendars(calendarIdentifiers:  Array<String>) {
+    func reloadExternalCalendars(titles:  Array<String>) {
         var temp:  Array<EKCalendar> = []
-        for identifier in calendarIdentifiers {
-            let calendar = self.eventStore.calendar(withIdentifier: identifier)
+        for title in titles {
+            let calendar = self.eventStore.calendars(for: .event).first(where: {$0.title == title})
             if calendar != nil {
                 temp.append(calendar!)
             }
         }
         self.calendars = temp
-    } // func reloadExternalCalendars(calendarIdentifiers:  Array<String>)
+    } // func reloadExternalCalendars(titles:  Array<String>)
     
     fileprivate func handleAccessGranted() {
         DispatchQueue.main.async(execute: {
