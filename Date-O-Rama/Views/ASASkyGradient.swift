@@ -39,6 +39,8 @@ enum ASAPolarLighting {
 
 struct ASASkyGradient: View {
     fileprivate let JulianDayBackground: [Color] = [Color("julianDayBackgroundTop"), Color("julianDayBackgroundBottom")]
+    fileprivate let dayBackground: [Color] = [Color.skyBlueTop, Color.skyBlueBottom]
+    fileprivate let nightBackground: [Color] = [Color.midnightBlueTop, Color.midnightBlueBottom]
 
     fileprivate func blendSkyBlueToMidnightBlue(_ progress: Double) -> Color {
         return Color.blend(startRed: SKY_BLUE_TOP_RED, startGreen: SKY_BLUE_TOP_GREEN, startBlue: SKY_BLUE_TOP_BLUE, endRed: MIDNIGHT_BLUE_BOTTOM_RED, endGreen: MIDNIGHT_BLUE_BOTTOM_GREEN, endBlue: MIDNIGHT_BLUE_BOTTOM_BLUE, progress: progress)
@@ -55,9 +57,9 @@ struct ASASkyGradient: View {
             let polarLighting = ASAPolarLighting.given(month: month, latitude: latitude, calendarCode: calendarCode)
             switch polarLighting {
             case .sunDoesNotSet:
-                return [Color.midnightBlueTop, Color.midnightBlueBottom]
+                return dayBackground
             case .sunDoesNotRise:
-                return [Color.skyBlueTop, Color.skyBlueBottom]
+                return nightBackground
             case .cannotTell:
                 return JulianDayBackground
             } // switch polarLighting
