@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASANewEventCalendarDetailView: View {
 //    @ObservedObject var selectedEventCalendar:  ASAEventCalendar = ASAEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!
-    @ObservedObject var selectedEventCalendar:  ASAEventCalendar = ASAEventCalendar.eventCalendar(eventSourceCode:  "Solar events")!
+    @ObservedObject var selectedEventCalendar:  ASAEventCalendar = ASAEventCalendar.eventCalendar(eventsFileName:  "Solar events")!
 
     @Environment(\.presentationMode) var presentationMode
 
