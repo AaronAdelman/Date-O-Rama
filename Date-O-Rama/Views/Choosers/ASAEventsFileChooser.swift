@@ -1,5 +1,5 @@
 //
-//  ASAInternalEventSourceChooser.swift
+//  ASAEventsFileChooser.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-26.
@@ -10,8 +10,8 @@ import SwiftUI
 
 // TODO:  This view is going to need some serious revision when introducing internal event sources which are not built in!
 
-struct ASAInternalEventSourceChooser: View {
-    @ObservedObject var eventCalendar:  ASAInternalEventCalendar
+struct ASAEventsFileChooser: View {
+    @ObservedObject var eventCalendar:  ASAEventCalendar
 
     @State var tempInternalEventCode:  String
 
@@ -34,7 +34,7 @@ struct ASAInternalEventSourceChooser: View {
             ForEach(internalEventCodes(), id: \.self) {
                 potentialEventSourceCode
                 in
-                ASAInternalEventSourceCell(eventSourceCode: potentialEventSourceCode, selectedEventSourceCode: self.$tempInternalEventCode)
+                ASAEventsFileCell(eventSourceCode: potentialEventSourceCode, selectedEventSourceCode: self.$tempInternalEventCode)
                     .onTapGesture {
 //                        debugPrint(#file, #function, potentialEventSourceCode, self.eventCalendar.eventSourceCode, "Before")
                         self.tempInternalEventCode = potentialEventSourceCode
@@ -57,9 +57,9 @@ struct ASAInternalEventSourceChooser: View {
                 }
             }
     }
-}
+} // ASAEventsFileChooser
 
-struct ASAInternalEventSourceCell: View {
+struct ASAEventsFileCell: View {
     let eventSourceCode: String
 
     @Binding var selectedEventSourceCode: String
@@ -76,8 +76,8 @@ struct ASAInternalEventSourceCell: View {
     } // var body
 } // struct ASACalendarCell
 
-struct ASAInternalEventSourceChooser_Previews: PreviewProvider {
+struct ASAEventsFileChooser_Previews: PreviewProvider {
     static var previews: some View {
-        ASAInternalEventSourceChooser(eventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!, tempInternalEventCode: "Solar events")
+        ASAEventsFileChooser(eventCalendar: ASAEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!, tempInternalEventCode: "Solar events")
     }
 }

@@ -1,5 +1,5 @@
 //
-//  ASAInternalEventCalendar.swift
+//  ASAEventCalendar.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-25.
@@ -15,8 +15,8 @@ fileprivate let BUILTIN_KEY           = "builtIn"
 fileprivate let TRUE_STRING  = "true"
 fileprivate let FALSE_STRING = "false"
 
-class ASAInternalEventCalendar:  ASALocatedObject {
-    private var eventSource:  ASAJSONFileEventSource?
+class ASAEventCalendar:  ASALocatedObject {
+    private var eventSource:  ASAUnlocatedEventCalendar?
 
     public var supportedLocales:  Array<String>? {
         get {
@@ -26,7 +26,7 @@ class ASAInternalEventCalendar:  ASALocatedObject {
 
     @Published var eventSourceCode:  String = "Solar events" {
         didSet {
-            self.eventSource = ASAInternalEventCalendarFactory.eventCalendarSource(eventSourceCode:  self.eventSourceCode)
+            self.eventSource = ASAEventCalendarFactory.eventCalendarSource(eventSourceCode:  self.eventSourceCode)
         } // didSet
     } // var eventSourceCode
     
@@ -95,13 +95,13 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         return result
     }
     
-    public class func newInternalEventCalendar(dictionary:  Dictionary<String, Any>) -> ASAInternalEventCalendar? {
+    public class func newInternalEventCalendar(dictionary:  Dictionary<String, Any>) -> ASAEventCalendar? {
         //        debugPrint(#file, #function, dictionary)
         
         let rawCode:  String = dictionary[EVENT_SOURCE_CODE_KEY] as? String ?? ""
 //        let code:  ASAInternalEventSourceCode = ASAInternalEventSourceCode(rawValue: rawCode) ?? .solar
 //        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  code)
-        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  rawCode)
+        let tempNewEventCalendar = ASAEventCalendarFactory.eventCalendar(eventSourceCode:  rawCode)
         if tempNewEventCalendar == nil {
             return nil
         }
@@ -177,4 +177,4 @@ class ASAInternalEventCalendar:  ASALocatedObject {
         
         return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
-} // class ASAInternalEventCalendar
+} // class ASAEventCalendar

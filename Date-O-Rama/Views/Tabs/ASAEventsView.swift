@@ -211,7 +211,7 @@ struct ASAEventsView: View {
                                 Text("NO_EXTERNAL_EVENTS_PERMISSION").foregroundColor(.gray)
                             }
 
-                            NavigationLink(destination:                             ASAInternalEventCalendarsView()
+                            NavigationLink(destination:                             ASAEventCalendarsView()
                             ) {
                                 ASAIndentedText(title: "Internal event calendars")
                             }

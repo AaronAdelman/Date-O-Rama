@@ -1,5 +1,5 @@
 //
-//  ASANewInternalEventCalendarDetailView.swift
+//  ASANewEventCalendarDetailView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 10/09/2020.
@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct ASANewInternalEventCalendarDetailView: View {
-    @ObservedObject var selectedEventCalendar:  ASAInternalEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!
+struct ASANewEventCalendarDetailView: View {
+    @ObservedObject var selectedEventCalendar:  ASAEventCalendar = ASAEventCalendarFactory.eventCalendar(eventSourceCode:  "Solar events")!
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -50,7 +50,7 @@ struct ASANewInternalEventCalendarDetailView: View {
                     Spacer().frame(width:  PADDING)
                 } // HStack
                 List {
-                    ASAInternalEventCalendarDetailSection(selectedEventCalendar: self.selectedEventCalendar)
+                    ASAEventCalendarDetailSection(selectedEventCalendar: self.selectedEventCalendar)
                 } // List
             } // VStack
         } // NavigationView
@@ -62,13 +62,13 @@ struct ASANewInternalEventCalendarDetailView: View {
             ])
         }
     } // var body
-} // struct ASANewInternalEventCalendarDetailView
+} // struct ASANewEventCalendarDetailView
 
 
 // MARK:  -
 
-struct ASANewInternalEventCalendarDetailView_Previews: PreviewProvider {
+struct ASANewEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewInternalEventCalendarDetailView()
+        ASANewEventCalendarDetailView()
     }
-} // struct ASANewInternalEventCalendarDetailView_Previews
+} // struct ASANewEventCalendarDetailView_Previews

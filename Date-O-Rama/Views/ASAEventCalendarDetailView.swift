@@ -1,5 +1,5 @@
 //
-//  ASAInternalEventCalendarDetailView.swift
+//  ASAEventCalendarDetailView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-26.
@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct ASAInternalEventCalendarDetailView: View {
-    @ObservedObject var selectedEventCalendar:  ASAInternalEventCalendar
+struct ASAEventCalendarDetailView: View {
+    @ObservedObject var selectedEventCalendar:  ASAEventCalendar
 
     @EnvironmentObject var userData:  ASAUserData
 
@@ -23,7 +23,7 @@ struct ASAInternalEventCalendarDetailView: View {
 
     var body: some View {
         List {
-        ASAInternalEventCalendarDetailSection(selectedEventCalendar: self.selectedEventCalendar)
+        ASAEventCalendarDetailSection(selectedEventCalendar: self.selectedEventCalendar)
 
         Section(header:  Text("")) {
             HStack {
@@ -51,14 +51,14 @@ struct ASAInternalEventCalendarDetailView: View {
         } // Section
         }
     } // var body
-} // struct ASAInternalEventCalendarDetailView
+} // struct ASAEventCalendarDetailView
 
-struct ASAInternalEventCalendarDetailSection:  View {
-    @ObservedObject var selectedEventCalendar:  ASAInternalEventCalendar
+struct ASAEventCalendarDetailSection:  View {
+    @ObservedObject var selectedEventCalendar:  ASAEventCalendar
 
     var body: some View {
         Section {
-            NavigationLink(destination:  ASAInternalEventSourceChooser(eventCalendar:  self.selectedEventCalendar, tempInternalEventCode: self.selectedEventCalendar.eventSourceCode)) {
+            NavigationLink(destination:  ASAEventsFileChooser(eventCalendar:  self.selectedEventCalendar, tempInternalEventCode: self.selectedEventCalendar.eventSourceCode)) {
                 Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }
 
@@ -78,13 +78,13 @@ struct ASAInternalEventCalendarDetailSection:  View {
             }
         } // Section
     } // var body
-} // struct ASAInternalEventCalendarDetailSection
+} // struct ASAEventCalendarDetailSection
 
 
 // MARK:  -
 
-struct ASAInternalEventCalendarDetailView_Previews: PreviewProvider {
+struct ASAEventCalendarDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAInternalEventCalendarDetailView(selectedEventCalendar: ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
+        ASAEventCalendarDetailView(selectedEventCalendar: ASAEventCalendarFactory.eventCalendar(eventSourceCode: "Solar events")!)
     }
-}
+} // struct ASAEventCalendarDetailView_Previews

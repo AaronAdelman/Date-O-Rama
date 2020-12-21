@@ -31,9 +31,9 @@ enum ASATimeSpecificationDayHalf:  String, Codable {
 } // enum ASATimeSpecificationDayHalf
 
 
-// MARK: - ASAInternalEventsFile
+// MARK: - ASAEventsFile
 
-struct ASAInternalEventsFile: Codable {
+struct ASAEventsFile: Codable {
     var title:  String?
     var localizableTitle:  String?
     

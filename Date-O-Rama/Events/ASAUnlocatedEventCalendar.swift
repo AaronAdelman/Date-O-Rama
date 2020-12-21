@@ -1,5 +1,5 @@
 //
-//  ASAJSONFileEventSource.swift
+//  ASAUnlocatedEventCalendar.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-26.
@@ -10,8 +10,8 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-class ASAJSONFileEventSource {
-    var eventsFile:  ASAInternalEventsFile?
+class ASAUnlocatedEventCalendar {
+    var eventsFile:  ASAEventsFile?
     
     init(fileName:  String) {
         do {
@@ -25,7 +25,7 @@ class ASAJSONFileEventSource {
             let jsonData = (try? Data(contentsOf: fileURL!))!
             let newJSONDecoder = JSONDecoder()
 
-            let eventsFile = try newJSONDecoder.decode(ASAInternalEventsFile.self, from: jsonData)
+            let eventsFile = try newJSONDecoder.decode(ASAEventsFile.self, from: jsonData)
             self.eventsFile = eventsFile
         } catch {
             debugPrint(#file, #function, fileName, error)
@@ -332,8 +332,8 @@ class ASAJSONFileEventSource {
         } else {
             return self.eventsFile?.title ?? "???"
         }
-    } // func eventSourceName() -> String} // class ASASolarEventSource:  ASAInternalEventSource
-} // class ASAJSONFileEventSource
+    } // func eventSourceName() -> String
+} // class ASAUnlocatedEventCalendar
 
 
 // MARK: -
