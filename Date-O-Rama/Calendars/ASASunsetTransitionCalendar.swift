@@ -270,22 +270,23 @@
             return "No location"
         }
 
-        self.dateFormatter.calendar = self.ApplesCalendar
-        let acceptableIdentifiers: [Calendar.Identifier] = [.hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura]
-        assert(acceptableIdentifiers.contains(self.ApplesCalendar.identifier))
-        assert(acceptableIdentifiers.contains(self.dateFormatter.calendar.identifier))
+//        self.dateFormatter.calendar = self.ApplesCalendar
+//        let acceptableIdentifiers: [Calendar.Identifier] = [.hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura]
+//        assert(acceptableIdentifiers.contains(self.ApplesCalendar.identifier))
+//        assert(acceptableIdentifiers.contains(self.dateFormatter.calendar.identifier))
 
         self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
-        self.dateFormatter.calendar.locale = self.dateFormatter.locale
+//        self.dateFormatter.calendar.locale = self.dateFormatter.locale
 
         self.dateFormatter.timeZone = timeZone
-        self.dateFormatter.calendar.timeZone = self.dateFormatter.timeZone
+//        self.dateFormatter.calendar.timeZone = self.dateFormatter.timeZone
+
+        self.dateFormatter.timeStyle = .none
 
         switch dateFormat {
-//        case .localizedLDML:
-//            self.dateFormatter.dateStyle = .short
-//            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
-//            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
+        //        case .localizedLDML:
+        //            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
+        //            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
 
         case .none:
             self.dateFormatter.dateStyle = .none
@@ -303,10 +304,10 @@
             self.dateFormatter.dateStyle = .short
 
         case .shortWithWeekday:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "E")
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "eee")
 
         case .mediumWithWeekday:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "E")
+            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "eee")
 
         case .abbreviatedWeekday:
             self.dateFormatter.apply(dateStyle: .short, template: "eee")
@@ -329,8 +330,6 @@
         default:
             self.dateFormatter.dateStyle = .full
         } // switch dateFormat
-
-        self.dateFormatter.timeStyle = .none
 
         let dateString = self.dateFormatter.string(from: fixedNow)
 

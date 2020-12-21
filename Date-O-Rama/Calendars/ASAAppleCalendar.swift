@@ -96,10 +96,10 @@ class ASAAppleCalendar:  ASACalendar {
             self.dateFormatter.dateStyle = .short
 
         case .shortWithWeekday:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "E")
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "eee")
 
         case .mediumWithWeekday:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "E")
+            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "eee")
 
         case .abbreviatedWeekday:
             self.dateFormatter.apply(dateStyle: .short, template: "eee")
