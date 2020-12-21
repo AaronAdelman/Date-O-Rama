@@ -61,9 +61,9 @@ let MIDNIGHT_BLUE_BOTTOM_RED: Double   = 36.0 / 255.0
 let MIDNIGHT_BLUE_BOTTOM_GREEN: Double = 41.0 / 255.0
 let MIDNIGHT_BLUE_BOTTOM_BLUE: Double  = 62.0 / 255.0
 
-let SUNSET_RED_RED: Double   = 193.0 / 255.0
-let SUNSET_RED_GREEN: Double =  92.0 / 255.0
-let SUNSET_RED_BLUE: Double  =  42.0 / 255.0
+let SUNSET_RED_RED: Double   = 183.0 / 255.0
+let SUNSET_RED_GREEN: Double =  97.0 / 255.0
+let SUNSET_RED_BLUE: Double  =  98.0 / 255.0
 
 
 extension Color {
