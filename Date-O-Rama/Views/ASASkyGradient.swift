@@ -16,18 +16,18 @@ enum ASAPolarLighting {
     static func given(month:  Int, latitude:  Double, calendarCode:  ASACalendarCode) -> ASAPolarLighting {
         if calendarCode.isHebrewCalendar {
             if month < 8 {
-                // Winter
+                // Winter in Northern Hemisphere
                 if latitude > 0 {
                     return sunDoesNotRise
                 } else {
                     return sunDoesNotSet
                 }
             } else {
-                // Summer
+                // Summer in Northern Hemisphere
                 if latitude > 0 {
-                    return sunDoesNotRise
-                } else {
                     return sunDoesNotSet
+                } else {
+                    return sunDoesNotRise
                 }
             }
         } else {
