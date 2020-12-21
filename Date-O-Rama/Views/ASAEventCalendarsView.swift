@@ -44,18 +44,22 @@ struct ASAEventCalendarsView: View {
         } // List
         .navigationBarTitle(Text("Internal event calendars"))
         .navigationBarItems(
-            leading:
-                EditButton(),
             trailing:
-                Button(
+                HStack {
+                    EditButton()
+
+                    Text("•")
+
+                    Button(
                     action: {
-                        self.showingNewInternalEventCalendarDetailView = true
+                    self.showingNewInternalEventCalendarDetailView = true
                     }
-                ) {
-                    Text("Add internal event calendar")
-                }
-                .popover(isPresented: self.$showingNewInternalEventCalendarDetailView, arrowEdge: .top) {
-                    ASANewEventCalendarDetailView()
+                    ) {
+                        Text("Add internal event calendar")
+                    }
+                    .popover(isPresented: self.$showingNewInternalEventCalendarDetailView, arrowEdge: .top) {
+                        ASANewEventCalendarDetailView()
+                    }
                 }
         )
     } // var body
