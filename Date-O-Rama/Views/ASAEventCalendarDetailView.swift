@@ -58,7 +58,7 @@ struct ASAEventCalendarDetailSection:  View {
 
     var body: some View {
         Section {
-            NavigationLink(destination:  ASAEventsFileChooser(eventCalendar:  self.selectedEventCalendar, tempInternalEventCode: self.selectedEventCalendar.eventSourceCode)) {
+            NavigationLink(destination:  ASAEventsFileChooser(eventCalendar:  self.selectedEventCalendar, tempInternalEventCode: self.selectedEventCalendar.eventsFileName)) {
                 Text(selectedEventCalendar.eventSourceName()).font(.headline)
             }
 

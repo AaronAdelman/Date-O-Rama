@@ -24,9 +24,9 @@ class ASAEventCalendar:  ASALocatedObject {
         } // get
     } // var supportedLocales
 
-    @Published var eventSourceCode:  String = "Solar events" {
+    @Published var eventsFileName:  String = "Solar events" {
         didSet {
-            self.eventSource = ASAEventCalendarFactory.eventCalendarSource(eventSourceCode:  self.eventSourceCode)
+            self.eventSource = ASAUnlocatedEventCalendar(fileName: self.eventsFileName)
         } // didSet
     } // var eventSourceCode
     
@@ -39,7 +39,7 @@ class ASAEventCalendar:  ASALocatedObject {
         var result = [
             UUID_KEY:  uuid.uuidString,
             //            EVENT_SOURCE_CODE_KEY:  self.eventSource?.eventSourceCode.rawValue ?? "",
-            EVENT_SOURCE_CODE_KEY:  self.eventSourceCode,
+            EVENT_SOURCE_CODE_KEY:  self.eventsFileName,
             TIME_ZONE_KEY:  effectiveTimeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
             BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING,

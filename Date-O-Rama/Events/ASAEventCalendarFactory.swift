@@ -11,15 +11,14 @@ import CoreLocation
 
 class ASAEventCalendarFactory {
     class func eventCalendar(eventSourceCode:  String) -> ASAEventCalendar? {
-        
         let result = ASAEventCalendar()
-        result.eventSourceCode = eventSourceCode
+        result.eventsFileName = eventSourceCode
         result.locationData = ASALocationManager.shared.deviceLocationData
         result.usesDeviceLocation = true
         return result
-    } //class func eventCalendar(eventSourceCode:  ASAInternalEventSourceCode) -> ASAInternalEventCalendar?
+    } //class func eventCalendar(eventSourceCode:  ASAEventSourceCode) -> ASAEventCalendar?
     
-    class func eventCalendarSource(eventSourceCode:  String) -> ASAUnlocatedEventCalendar? {
-        return ASAUnlocatedEventCalendar(fileName: eventSourceCode)
-    }
+//    class func eventCalendarSource(eventSourceCode:  String) -> ASAUnlocatedEventCalendar? {
+//        return ASAUnlocatedEventCalendar(fileName: eventSourceCode)
+//    }
 } // class ASAEventCalendarFactory
