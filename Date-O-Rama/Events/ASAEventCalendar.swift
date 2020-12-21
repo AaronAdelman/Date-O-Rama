@@ -9,24 +9,24 @@
 import Foundation
 import CoreLocation
 
-fileprivate let EVENT_SOURCE_CODE_KEY = "EVENT_SOURCE_CODE"
-fileprivate let BUILTIN_KEY           = "builtIn"
+fileprivate let FILE_NAME_KEY = "EVENT_SOURCE_CODE"
+fileprivate let BUILTIN_KEY   = "builtIn"
 
 fileprivate let TRUE_STRING  = "true"
 fileprivate let FALSE_STRING = "false"
 
 class ASAEventCalendar:  ASALocatedObject {
-    private var eventSource:  ASAUnlocatedEventCalendar?
+    private var unlocatedEventCalendar:  ASAUnlocatedEventCalendar?
 
     public var supportedLocales:  Array<String>? {
         get {
-            return self.eventSource?.eventsFile?.supportedLocales
+            return self.unlocatedEventCalendar?.eventsFile?.supportedLocales
         } // get
     } // var supportedLocales
 
-    @Published var eventsFileName:  String = "Solar events" {
+    @Published var fileName:  String = "Solar events" {
         didSet {
-            self.eventSource = ASAUnlocatedEventCalendar(fileName: self.eventsFileName)
+            self.unlocatedEventCalendar = ASAUnlocatedEventCalendar(fileName: self.fileName)
         } // didSet
     } // var eventsFileName
     
@@ -39,7 +39,7 @@ class ASAEventCalendar:  ASALocatedObject {
         var result = [
             UUID_KEY:  uuid.uuidString,
             //            EVENT_SOURCE_CODE_KEY:  self.eventSource?.eventSourceCode.rawValue ?? "",
-            EVENT_SOURCE_CODE_KEY:  self.eventsFileName,
+            FILE_NAME_KEY:  self.fileName,
             TIME_ZONE_KEY:  effectiveTimeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
             BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING,
@@ -98,11 +98,11 @@ class ASAEventCalendar:  ASALocatedObject {
     public class func newInternalEventCalendar(dictionary:  Dictionary<String, Any>) -> ASAEventCalendar? {
         //        debugPrint(#file, #function, dictionary)
         
-        let rawCode:  String = dictionary[EVENT_SOURCE_CODE_KEY] as? String ?? ""
+        let rawFileName:  String = dictionary[FILE_NAME_KEY] as? String ?? ""
 //        let code:  ASAInternalEventSourceCode = ASAInternalEventSourceCode(rawValue: rawCode) ?? .solar
 //        let tempNewEventCalendar = ASAInternalEventCalendarFactory.eventCalendar(eventSourceCode:  code)
 //        let tempNewEventCalendar = ASAEventCalendarFactory.eventCalendar(eventSourceCode:  rawCode)
-        let tempNewEventCalendar = ASAEventCalendar.eventCalendar(eventsFileName:  rawCode)
+        let tempNewEventCalendar = ASAEventCalendar.eventCalendar(eventsFileName:  rawFileName)
         if tempNewEventCalendar == nil {
             return nil
         }
@@ -156,32 +156,32 @@ class ASAEventCalendar:  ASALocatedObject {
     } // class func newInternalEventCalendar(dictionary:  Dictionary<String, Any>) -> ASAInternalEventCalendar?
     
     public func eventCalendarName() -> String {
-        if self.eventSource == nil {
+        if self.unlocatedEventCalendar == nil {
             return ""
         }
         
-        return self.eventSource!.eventCalendarName(locationData:  locationData)
+        return self.unlocatedEventCalendar!.eventCalendarName(locationData:  locationData)
     } // func eventCalendarName() -> String
     
     public func eventSourceName() -> String {
-        if self.eventSource == nil {
+        if self.unlocatedEventCalendar == nil {
             return ""
         }
         
-        return self.eventSource!.eventSourceName()
+        return self.unlocatedEventCalendar!.eventSourceName()
     } // func eventSourceName() -> String
     
     func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
-        if eventSource == nil || self.locationData.location == nil {
+        if unlocatedEventCalendar == nil || self.locationData.location == nil {
             return []
         }
         
-        return self.eventSource!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
+        return self.unlocatedEventCalendar!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 
     class func eventCalendar(eventsFileName:  String) -> ASAEventCalendar? {
         let result = ASAEventCalendar()
-        result.eventsFileName = eventsFileName
+        result.fileName = eventsFileName
         result.locationData = ASALocationManager.shared.deviceLocationData
         result.usesDeviceLocation = true
         return result

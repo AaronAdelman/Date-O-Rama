@@ -49,11 +49,11 @@ struct ASAEventsFileChooser: View {
             })
         )
             .onAppear() {
-                self.tempInternalEventCode = self.eventCalendar.eventsFileName
+                self.tempInternalEventCode = self.eventCalendar.fileName
         }
         .onDisappear() {
             if !self.didCancel {
-                self.eventCalendar.eventsFileName = self.tempInternalEventCode
+                self.eventCalendar.fileName = self.tempInternalEventCode
                 }
             }
     }
