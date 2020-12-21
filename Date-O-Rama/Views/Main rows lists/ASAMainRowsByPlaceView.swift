@@ -54,7 +54,7 @@ struct ASAMainRowsByPlaceSubview:  View {
     @EnvironmentObject var userData:  ASAUserData
 
     fileprivate func shouldShowPlaceName() -> Bool {
-        return self.primaryGroupingOption == .byPlaceName ? false : true
+        return self.primaryGroupingOption != .byPlaceName
     }
 
     var body:  some View {
