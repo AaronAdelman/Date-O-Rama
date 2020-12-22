@@ -86,6 +86,8 @@
 		A5790196259263A300224666 /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A579019E259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
+		A57901B425926A6E00224666 /* ASAEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57901B325926A6E00224666 /* ASAEventManager.swift */; };
+		A57901B525926A6E00224666 /* ASAEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57901B325926A6E00224666 /* ASAEventManager.swift */; };
 		A57BCCA9247AA8310019C02C /* ASAEventCalendarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCA8247AA8310019C02C /* ASAEventCalendarsView.swift */; };
 		A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
 		A57BCCAF247BB7F80019C02C /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAE247BB7F80019C02C /* ASAEventCalendar.swift */; };
@@ -274,6 +276,7 @@
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
 		A579019C259263F900224666 /* EKEventExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventExtensions.swift; sourceTree = "<group>"; };
+		A57901B325926A6E00224666 /* ASAEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventManager.swift; sourceTree = "<group>"; };
 		A57BCCA8247AA8310019C02C /* ASAEventCalendarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCalendarsView.swift; sourceTree = "<group>"; };
 		A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocatedObject.swift; sourceTree = "<group>"; };
 		A57BCCAE247BB7F80019C02C /* ASAEventCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCalendar.swift; sourceTree = "<group>"; };
@@ -546,6 +549,7 @@
 				A5790194259263A300224666 /* ASAEventCompatible.swift */,
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A57BCCBD247D8A700019C02C /* ASAUnlocatedEventCalendar.swift */,
+				A57901B325926A6E00224666 /* ASAEventManager.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -886,6 +890,7 @@
 				A50CD616255410BF00B781EC /* ASASkyGradient.swift in Sources */,
 				A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */,
 				A50CD64125541C0500B781EC /* ASAPlaceSubcell.swift in Sources */,
+				A57901B525926A6E00224666 /* ASAEventManager.swift in Sources */,
 				A593227D25780DA300318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */,
 				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
 				A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */,
@@ -983,6 +988,7 @@
 				A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */,
 				A5B816452541A3A200E309E0 /* ASAMainRowsByPlaceView.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocaleChooserView.swift in Sources */,
+				A57901B425926A6E00224666 /* ASAEventManager.swift in Sources */,
 				A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */,
 				A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */,
 				A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */,
