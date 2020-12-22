@@ -19,7 +19,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     static var shared:  ASAEKEventManager {
         return sharedEventManager
-    } // class func shared() -> ASAEventManager
+    } // static var shared
     
     @Published var eventStore = EKEventStore()
 
@@ -74,7 +74,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     }
 
     func loadEKCalendars() {
-        let EKCalendarTitles = ASAUserData.shared().EKCalendarTitles
+        let EKCalendarTitles = ASAUserData.shared.EKCalendarTitles
         if EKCalendarTitles.count == 0 {
             self.calendars = eventStore.calendars(for: EKEntityType.event)
         } else {

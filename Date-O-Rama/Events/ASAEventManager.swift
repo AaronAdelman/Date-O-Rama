@@ -10,7 +10,7 @@ import Foundation
 
 class ASAEventManager {
     static let eventManager = ASAEKEventManager.shared
-    static let userData = ASAUserData.shared()
+    static let userData = ASAUserData.shared
     
     static func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []

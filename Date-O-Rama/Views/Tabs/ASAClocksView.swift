@@ -125,6 +125,6 @@ struct ASAConditionalEditButton:  View {
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksView(forAppleWatch: false).environmentObject(ASAUserData.shared())
+        ASAClocksView(forAppleWatch: false).environmentObject(ASAUserData.shared)
     }
 }

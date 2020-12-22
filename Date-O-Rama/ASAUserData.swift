@@ -47,9 +47,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         return userData
     }()
     
-    class func shared() -> ASAUserData {
+    static var shared:  ASAUserData {
         return sharedUserData
-    } // class func shared() -> ASAUserData
+    } // static var shared
 
 
     // MARK:  -

@@ -86,6 +86,6 @@ struct ASAEventCalendarCell:  View {
 
 struct ASAEventCalendarsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventCalendarsView().environmentObject(ASAUserData.shared())
+        ASAEventCalendarsView().environmentObject(ASAUserData.shared)
     }
 } // struct ASAEventCalendarsView

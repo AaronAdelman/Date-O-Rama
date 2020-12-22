@@ -41,7 +41,7 @@ struct ASANewEventCalendarDetailView: View {
                     Spacer()
 
                     Button("Add") {
-                        let userData = ASAUserData.shared()
+                        let userData = ASAUserData.shared
                         userData.ASAEventCalendars.insert(self.selectedEventCalendar, at: 0)
                         userData.savePreferences(code: .events)
 

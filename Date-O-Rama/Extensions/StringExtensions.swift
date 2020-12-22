@@ -222,13 +222,13 @@ extension String {
             return ASARow.generic()
         }
         
-        let temp = ASAUserData.shared().mainRows.first(where: {$0.uuid == tempUUID!})
+        let temp = ASAUserData.shared.mainRows.first(where: {$0.uuid == tempUUID!})
         if temp != nil {
             return temp!
         }
         
-        if ASAUserData.shared().mainRows.count >= backupIndex + 1 {
-            return ASAUserData.shared().mainRows[backupIndex]
+        if ASAUserData.shared.mainRows.count >= backupIndex + 1 {
+            return ASAUserData.shared.mainRows[backupIndex]
         }
         
         return ASARow.generic()

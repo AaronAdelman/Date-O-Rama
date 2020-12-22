@@ -17,7 +17,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     var locationManager = ASALocationManager.shared
     let notificationCenter = NotificationCenter.default
 
-    let userData = ASAUserData.shared()
+    let userData = ASAUserData.shared
 
     override init() {
         super.init()
@@ -127,8 +127,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 }
                 userData.setRowArray(rowArray:  rowArray, key:  key)
             } // for
-            ASAUserData.shared().savePreferences(code: .clocks)
-            ASAUserData.shared().savePreferences(code: .complications)
+            ASAUserData.shared.savePreferences(code: .clocks)
+            ASAUserData.shared.savePreferences(code: .complications)
 
             if complicationController.complication != nil {
                 CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
@@ -147,8 +147,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                     mainRows.append(itemAsRow)
                 }
                 DispatchQueue.main.async {
-                    ASAUserData.shared().mainRows = mainRows
-                    ASAUserData.shared().savePreferences(code: .clocks)
+                    ASAUserData.shared.mainRows = mainRows
+                    ASAUserData.shared.savePreferences(code: .clocks)
                 }
             }
         }

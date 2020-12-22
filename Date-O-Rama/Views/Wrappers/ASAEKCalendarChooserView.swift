@@ -44,7 +44,7 @@ struct ASAEKCalendarChooserView: UIViewControllerRepresentable {
 
             let calendars = calendarChooser.selectedCalendars
             parent.externalEventManager.calendars = Array(calendars)
-            ASAUserData.shared().savePreferences(code: .events)
+            ASAUserData.shared.savePreferences(code: .events)
             parent.presentationMode.wrappedValue.dismiss()
         }
 
