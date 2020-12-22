@@ -17,7 +17,7 @@ struct ASAEventCalendarsView: View {
 
     var body:  some View {
         List {
-            ForEach(userData.internalEventCalendars, id:  \.uuid) {
+            ForEach(userData.ASAEventCalendars, id:  \.uuid) {
                 eventCalendar
                 in
                 NavigationLink(destination: ASAEventCalendarDetailView(selectedEventCalendar:  eventCalendar)
@@ -31,13 +31,13 @@ struct ASAEventCalendarsView: View {
                 }
             } // ForEach(userData.internalEventCalendars)
             .onMove { (source: IndexSet, destination: Int) -> Void in
-                self.userData.internalEventCalendars.move(fromOffsets: source, toOffset: destination)
+                self.userData.ASAEventCalendars.move(fromOffsets: source, toOffset: destination)
                 self.userData.savePreferences(code: .events)
             }
             .onDelete { indices in
                 indices.forEach {
                     //                        debugPrint("\(#file) \(#function)")
-                    self.userData.internalEventCalendars.remove(at: $0)
+                    self.userData.ASAEventCalendars.remove(at: $0)
                 }
                 self.userData.savePreferences(code: .events)
             }

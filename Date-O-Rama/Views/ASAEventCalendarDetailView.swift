@@ -38,9 +38,9 @@ struct ASAEventCalendarDetailView: View {
             .actionSheet(isPresented: self.$showingActionSheet) {
                 ActionSheet(title: Text("Are you sure you want to delete this internal event calendar?"), buttons: [
                     .destructive(Text("Delete This Internal Event Calendar")) {
-                        let index = self.userData.internalEventCalendars.firstIndex(where: {$0.uuid == selectedEventCalendar.uuid})
+                        let index = self.userData.ASAEventCalendars.firstIndex(where: {$0.uuid == selectedEventCalendar.uuid})
                         if index != nil {
-                            self.userData.internalEventCalendars.remove(at: index!)
+                            self.userData.ASAEventCalendars.remove(at: index!)
                             self.userData.savePreferences(code: .events)
                             self.dismiss()
                         }

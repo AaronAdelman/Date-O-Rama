@@ -1,5 +1,5 @@
 //
-//  ASAExternalEventManager.swift
+//  ASAEKEventManager.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-12.
@@ -10,14 +10,14 @@ import Foundation
 import EventKit
 import SwiftUI
 
-class ASAExternalEventManager:  NSObject, ObservableObject {
-    private static var sharedEventManager: ASAExternalEventManager = {
-        let eventManager = ASAExternalEventManager()
+class ASAEKEventManager:  NSObject, ObservableObject {
+    private static var sharedEventManager: ASAEKEventManager = {
+        let eventManager = ASAEKEventManager()
         
         return eventManager
     }()
     
-    static var shared:  ASAExternalEventManager {
+    static var shared:  ASAEKEventManager {
         return sharedEventManager
     } // class func shared() -> ASAEventManager
     
@@ -45,7 +45,7 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         } // get
     } // var calendarSet
 
-    @AppStorage("USE_EXTERNAL_EVENTS") var shouldUseExternalEvents: Bool = true
+    @AppStorage("USE_EXTERNAL_EVENTS") var shouldUseEKEvents: Bool = true
 
     @Published var userHasPermission:  Bool = false {
         willSet {
@@ -56,12 +56,12 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
     override init() {
         super.init()
         
-        self.requestAccessToExternalCalendars()
+        self.requestAccessToEKCalendars()
         NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {
             notification
             in
             debugPrint(#file, #function, notification)
-            self.requestAccessToExternalCalendars()
+            self.requestAccessToEKCalendars()
 
             self.objectWillChange.send()
         })
@@ -73,17 +73,17 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
         }
     }
 
-    func loadExternalCalendars() {
-        let externalEventCalendarIdentifiers = ASAUserData.shared().externalEventCalendarIdentifiers
-        if externalEventCalendarIdentifiers.count == 0 {
+    func loadEKCalendars() {
+        let EKCalendarTitles = ASAUserData.shared().EKCalendarTitles
+        if EKCalendarTitles.count == 0 {
             self.calendars = eventStore.calendars(for: EKEntityType.event)
         } else {
-            self.reloadExternalCalendars(titles: externalEventCalendarIdentifiers)
+            self.reloadEKCalendars(titles: EKCalendarTitles)
         }
 //        debugPrint(#file, #function, self.calendars as Any)
     } // func loadExternalCalendars()
 
-    func reloadExternalCalendars(titles:  Array<String>) {
+    func reloadEKCalendars(titles:  Array<String>) {
         var temp:  Array<EKCalendar> = []
         for title in titles {
             let calendar = self.eventStore.calendars(for: .event).first(where: {$0.title == title})
@@ -92,13 +92,13 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
             }
         }
         self.calendars = temp
-    } // func reloadExternalCalendars(titles:  Array<String>)
+    } // func reloadEKCalendars(titles:  Array<String>)
     
     fileprivate func handleAccessGranted() {
         DispatchQueue.main.async(execute: {
             debugPrint(#file, #function, "access granted")
             self.userHasPermission = true
-            self.loadExternalCalendars()
+            self.loadEKCalendars()
 
             self.ready = true
         })
@@ -109,37 +109,37 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
             //                self.needPermissionView.fadeIn()
             debugPrint(#file, #function, "access denied")
             self.userHasPermission = false
-            self.shouldUseExternalEvents = false
+            self.shouldUseEKEvents = false
             self.ready = true
         })
     }
 
-    public func requestAccessToExternalCalendars() {
+    public func requestAccessToEKCalendars() {
         switch EKEventStore.authorizationStatus(for: .event) {
 
         case .authorized:
-            print("Authorized")
+            debugPrint(#file, #function, "Authorized")
             self.handleAccessGranted()
 
         case .denied:
-            print("Access denied")
+            debugPrint(#file, #function, "Access denied")
             self.handleAccessDenied()
 
         case .notDetermined:
             eventStore.requestAccess(to: .event, completion:
                                         {(granted: Bool, error: Error?) -> Void in
                                             if granted {
-                                                print("Access granted")
+                                                debugPrint(#file, #function, "Access granted")
                                                 self.handleAccessGranted()
                                             } else {
-                                                print("Access denied")
+                                                debugPrint(#file, #function, "Access denied")
                                                 self.handleAccessDenied()
                                             }
                                         })
 
-            print("Not Determined")
+            debugPrint(#file, #function, "Not Determined")
         default:
-            print("Case Default")
+            debugPrint(#file, #function, "Case Default")
         }
 
 
@@ -152,7 +152,7 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
                 self.handleAccessDenied()
             }
         })
-    } // func requestAccessToExternalCalendars()
+    } // func requestAccessToEKCalendars()
     
     public func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible> {
         // Use an event store instance to create and properly configure an NSPredicate
@@ -167,5 +167,4 @@ class ASAExternalEventManager:  NSObject, ObservableObject {
 //        return events
         return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
-    
-} // class ASAExternalEventManager
+} // class ASAEKEventManager

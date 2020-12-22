@@ -16,7 +16,7 @@ struct ASAEventsView: View {
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
 
-    @ObservedObject var eventManager = ASAExternalEventManager.shared
+    @ObservedObject var eventManager = ASAEKEventManager.shared
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
 
@@ -68,12 +68,12 @@ struct ASAEventsView: View {
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        if ASAExternalEventManager.shared.shouldUseExternalEvents {
+        if ASAEKEventManager.shared.shouldUseEKEvents {
             let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
             unsortedEvents = unsortedEvents + externalEvents
         }
         
-        for eventCalendar in userData.internalEventCalendars {
+        for eventCalendar in userData.ASAEventCalendars {
             unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier)
         } // for eventCalendar in userData.internalEventCalendars
         
@@ -149,7 +149,7 @@ struct ASAEventsView: View {
                             }
                         }
 
-                        if ASAExternalEventManager.shared.shouldUseExternalEvents {
+                        if ASAEKEventManager.shared.shouldUseEKEvents {
                             Button(action:
                                     {
                                         self.showingEventEditView = true
@@ -177,8 +177,8 @@ struct ASAEventsView: View {
                                 }
                             }
 
-                            if ASAExternalEventManager.shared.userHasPermission {
-                                Toggle(isOn: ASAExternalEventManager.shared.$shouldUseExternalEvents) {
+                            if ASAEKEventManager.shared.userHasPermission {
+                                Toggle(isOn: ASAEKEventManager.shared.$shouldUseEKEvents) {
                                     Text("Use external events")
                                 } // Toggle
 

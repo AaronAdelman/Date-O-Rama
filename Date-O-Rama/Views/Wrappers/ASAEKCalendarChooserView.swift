@@ -16,9 +16,9 @@ struct ASAEKCalendarChooserView: UIViewControllerRepresentable {
     }
 
     @Environment(\.presentationMode) var presentationMode
-    var externalEventManager =  ASAExternalEventManager.shared
+    var externalEventManager =  ASAEKEventManager.shared
 
-    var calendars: Set<EKCalendar>? = ASAExternalEventManager.shared.calendarSet
+    var calendars: Set<EKCalendar>? = ASAEKEventManager.shared.calendarSet
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<ASAEKCalendarChooserView>) -> UINavigationController {
         let chooser = EKCalendarChooser(selectionStyle: .multiple, displayStyle: .allCalendars, entityType: .event, eventStore: externalEventManager.eventStore)
