@@ -1137,7 +1137,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				ENABLE_PREVIEWS = YES;
@@ -1164,7 +1164,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				ENABLE_PREVIEWS = YES;
