@@ -28,10 +28,11 @@ class ASARow: ASALocatedObject {
             }
             if !self.calendar.supportsLocations {
                 self.usesDeviceLocation = false
-            }
-            if !self.calendar.supportsTimeZones {
-                self.timeZone = TimeZone(secondsFromGMT: 0)
-                self.usesDeviceLocation = false
+
+                if !self.calendar.supportsTimeZones {
+                    self.locationData = ASALocationData(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone(secondsFromGMT: 0))
+                    self.usesDeviceLocation = false
+                }
             }
         } // didSet
     } // var calendar
