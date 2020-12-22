@@ -11,21 +11,6 @@ import EventKit
 import EventKitUI
 
 
-struct ASAIndentedText:  View {
-    var title:  String
-
-    var body: some View {
-        HStack {
-            Spacer().frame(width:  25.0)
-            Text("•")
-            Text(NSLocalizedString(title, comment: ""))
-        }
-    } // var body
-} // struct ASAIndentedText
-
-
-// MARK: -
-
 struct ASAEventsView: View {
     let ADD_EXTERNAL_EVENT_STRING = "Add external event"
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
@@ -188,20 +173,20 @@ struct ASAEventsView: View {
                             
                             if self.enoughRowsToShowSecondaryDates() {
                                 Toggle(isOn: $eventsViewShouldShowSecondaryDates) {
-                                    ASAIndentedText(title: "Show secondary dates")
+                                    Text("Show secondary dates")
                                 }
                             }
 
                             if ASAExternalEventManager.shared.userHasPermission {
                                 Toggle(isOn: ASAExternalEventManager.shared.$shouldUseExternalEvents) {
-                                    ASAIndentedText(title: "Use external events")
+                                    Text("Use external events")
                                 } // Toggle
 
                                 Button(action:
                                         {
                                             self.showingEventCalendarChooserView = true
                                         }, label:  {
-                                            ASAIndentedText(title: NSLocalizedString("External event calendars", comment: ""))
+                                            Text(NSLocalizedString("External event calendars", comment: ""))
                                         })
                                     .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
                                         ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
@@ -213,7 +198,7 @@ struct ASAEventsView: View {
 
                             NavigationLink(destination:                             ASAEventCalendarsView()
                             ) {
-                                ASAIndentedText(title: "Internal event calendars")
+                                Text("Internal event calendars")
                             }
                         } // if showingPreferences
                     } // Section
