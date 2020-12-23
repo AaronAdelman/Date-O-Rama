@@ -31,7 +31,7 @@ struct ASALocationChooserView: View {
         Form {
             Section {
                 ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
-                ASATimeZoneCell(timeZone: tempLocationData.timeZone ?? TimeZone.autoupdatingCurrent, now: Date())
+                ASATimeZoneCell(timeZone: tempLocationData.timeZone, now: Date())
             }
             Section {
                 if !locationManager.connectedToTheInternet {
@@ -68,10 +68,10 @@ struct ASALocationChooserView: View {
                 } // Section
             }
             Section {
-                Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
+                Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
                     tempLocationData
                     in
-                    MapPin(coordinate: tempLocationData.location?.coordinate ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0))
+                    MapPin(coordinate: tempLocationData.location.coordinate )
                 }
                 .aspectRatio(1.0, contentMode: .fit)
             } // Section

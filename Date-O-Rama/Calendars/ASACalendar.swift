@@ -28,9 +28,9 @@ public enum ASATransitionType {
 protocol ASACalendar {
     var calendarCode:  ASACalendarCode { get set }
     var canSplitTimeFromDate:  Bool { get }
-    var defaultMajorDateFormat:  ASADateFormat { get }
-    var defaultMajorTimeFormat:  ASATimeFormat { get }
-//    var LDMLDetails: Array<ASALDMLDetail> { get }
+    var defaultDateFormat:  ASADateFormat { get }
+    var defaultTimeFormat:  ASATimeFormat { get }
+    //    var LDMLDetails: Array<ASALDMLDetail> { get }
     var supportedDateFormats: Array<ASADateFormat> { get }
     var supportedWatchDateFormats: Array<ASADateFormat> { get }
     var supportedTimeFormats: Array<ASATimeFormat> { get }
@@ -42,16 +42,16 @@ protocol ASACalendar {
     var supportsTimeZones: Bool { get }
     var transitionType:  ASATransitionType { get }
     
-//    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String
-//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String
+    //    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String
+    //    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String
     func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat,
-//                        dateGeekFormat: String,
+                        //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
-//                        timeGeekFormat: String,
-                        location:  CLLocation?, timeZone:  TimeZone?) -> String
-//    func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation?, timeZone:  TimeZone?) -> String
-    func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
-    func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
+                        //                        timeGeekFormat: String,
+                        location:  CLLocation, timeZone:  TimeZone?) -> String
+    //    func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation, timeZone:  TimeZone?) -> String
+    func startOfDay(for date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
+    func startOfNextDay(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     
     func supports(calendarComponent:  ASACalendarComponent) -> Bool
 
@@ -59,7 +59,7 @@ protocol ASACalendar {
     // MARK:  - Date components
     func isValidDate(dateComponents:  ASADateComponents) -> Bool
     func date(dateComponents:  ASADateComponents) -> Date?
-        
+
     
     // MARK:  - Extracting Components
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int // Returns the value for one component of a date.
@@ -72,7 +72,7 @@ protocol ASACalendar {
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
     
-//    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
+    //    func containingComponent(of component:  ASACalendarComponent) -> ASACalendarComponent? // Returns which component contains the specified component for specifying a date.  E.g., in many calendars days are contained within months, months are contained within years, and years are contained within eras.
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // protocol ASACalendar

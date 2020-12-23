@@ -103,22 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "28E843C0-6B02-48AA-AF21-192DDBA6D958"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Date-O-Rama/ASALocatedObject.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "handle(notification:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5C8E1E58-0F73-457A-9CDD-09CC091139C7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -391,16 +375,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A398A034-3554-42AC-823B-BC5AA64CB678"
-            shouldBeEnabled = "Yes"
+            uuid = "D38BB31E-C4DF-415D-986C-B22C71B67CCA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Date-O-Rama/Calendars/ASASunsetTransitionCalendar.swift"
+            filePath = "Date-O-Rama/Clocks/ASARow.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
-            landmarkName = "dateTimeString(now:localeIdentifier:dateFormat:timeFormat:location:timeZone:)"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "generic()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -24,13 +24,13 @@ class ASARow: ASALocatedObject {
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
             if !self.calendar.supportedDateFormats.contains(self.dateFormat) {
-                self.dateFormat = self.calendar.defaultMajorDateFormat
+                self.dateFormat = self.calendar.defaultDateFormat
             }
             if !self.calendar.supportsLocations {
                 self.usesDeviceLocation = false
 
                 if !self.calendar.supportsTimeZones {
-                    self.locationData = ASALocationData(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone(secondsFromGMT: 0))
+                    self.locationData = ASALocationData(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone(secondsFromGMT: 0)!)
                     self.usesDeviceLocation = false
                 }
             }
@@ -68,17 +68,17 @@ class ASARow: ASALocatedObject {
 //            DATE_GEEK_FORMAT_KEY:  dateGeekFormat,
             MAJOR_TIME_FORMAT_KEY:  timeFormat.rawValue ,
 //            TIME_GEEK_FORMAT_KEY:  timeGeekFormat,
-            TIME_ZONE_KEY:  effectiveTimeZone.identifier,
+            TIME_ZONE_KEY:  timeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
             ] as [String : Any]
         
-        if location != nil {
-            result[LATITUDE_KEY] = self.location!.coordinate.latitude
-            result[LONGITUDE_KEY] = self.location!.coordinate.longitude
-            result[ALTITUDE_KEY] = self.location?.altitude
-            result[HORIZONTAL_ACCURACY_KEY] = self.location?.horizontalAccuracy
-            result[VERTICAL_ACCURACY_KEY] = self.location?.verticalAccuracy
-        }
+//        if location != nil {
+            result[LATITUDE_KEY] = self.location.coordinate.latitude
+            result[LONGITUDE_KEY] = self.location.coordinate.longitude
+            result[ALTITUDE_KEY] = self.location.altitude
+            result[HORIZONTAL_ACCURACY_KEY] = self.location.horizontalAccuracy
+            result[VERTICAL_ACCURACY_KEY] = self.location.verticalAccuracy
+//        }
         
         if self.locationData.name != nil {
             result[PLACE_NAME_KEY] = self.locationData.name
@@ -208,7 +208,7 @@ class ASARow: ASALocatedObject {
         temp.calendar = ASAAppleCalendar(calendarCode: .Gregorian)
         temp.localeIdentifier = ""
         temp.dateFormat = .full
-        temp.timeZone = TimeZone.autoupdatingCurrent
+//        temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
     
@@ -219,7 +219,7 @@ class ASARow: ASALocatedObject {
 //        temp.dateFormat = .localizedLDML
 //        temp.dateGeekFormat = "eeeyMMMd"
         temp.dateFormat = .full
-        temp.timeZone = TimeZone.autoupdatingCurrent
+//        temp.timeZone = TimeZone.autoupdatingCurrent
         return temp
     } // func generic() -> ASARow
 } // class ASARow
@@ -233,7 +233,7 @@ extension ASARow {
 //                                            dateGeekFormat: self.dateGeekFormat,
                                             timeFormat: .none,
 //                                            timeGeekFormat: "",
-                                            location: self.location, timeZone: self.effectiveTimeZone)
+                                            location: self.location, timeZone: self.timeZone)
     } // func dateTimeString(now:  Date) -> String
 
     public func dateTimeString(now:  Date) -> String {
@@ -241,11 +241,11 @@ extension ASARow {
 //                                            dateGeekFormat: self.dateGeekFormat,
                                             timeFormat: self.timeFormat,
 //                                            timeGeekFormat: self.timeGeekFormat,
-                                            location: self.location, timeZone: self.effectiveTimeZone)
+                                            location: self.location, timeZone: self.timeZone)
     } // func dateTimeString(now:  Date) -> String
 
 //    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
-//        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.effectiveTimeZone)
+//        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.timeZone)
 //    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
 
 //    public func LDMLDetails() -> Array<ASALDMLDetail> {
@@ -253,11 +253,11 @@ extension ASARow {
 //    } // public func LDMLDetails() -> Array<ASADetail>
     
     func startOfDay(date:  Date) -> Date {
-        return self.calendar.startOfDay(for: date, location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.startOfDay(for: date, location: self.location, timeZone: self.timeZone)
     } // func startODay(date:  Date) -> Date
 
     func startOfNextDay(date:  Date) -> Date {
-        return self.calendar.startOfNextDay(date: date, location: self.location, timeZone: self.effectiveTimeZone)
+        return self.calendar.startOfNextDay(date: date, location: self.location, timeZone: self.timeZone)
     } // func startOfNextDay(now:  Date) -> Date
 
     public func timeString(now:  Date) -> String {
@@ -265,7 +265,7 @@ extension ASARow {
 //                                            dateGeekFormat: "",
                                             timeFormat: self.timeFormat,
 //                                            timeGeekFormat: self.timeGeekFormat,
-                                            location: self.location, timeZone: self.effectiveTimeZone)
+                                            location: self.location, timeZone: self.timeZone)
     } // func timeString(now:  Date
     
     public func supportsLocales() -> Bool {
@@ -288,7 +288,7 @@ extension ASARow {
 //                                                          dateGeekFormat: self.dateGeekFormat,
                                                           timeFormat: timeFormat,
 //                                                          timeGeekFormat: self.timeGeekFormat,
-                                                          location: self.location, timeZone: self.effectiveTimeZone)
+                                                          location: self.location, timeZone: self.timeZone)
         return result
     } // func shortenedDateTimeString(now:  Date) -> String
 
@@ -298,7 +298,7 @@ extension ASARow {
 //                                                          dateGeekFormat: self.dateGeekFormat,
                                                           timeFormat: .none,
 //                                                          timeGeekFormat: "",
-                                                          location: self.location, timeZone: self.effectiveTimeZone)
+                                                          location: self.location, timeZone: self.timeZone)
         return result
     } // func shortenedDateString(now:  Date) -> String
 
@@ -308,7 +308,7 @@ extension ASARow {
 //                                                          dateGeekFormat: self.dateGeekFormat,
                                                           timeFormat: .none,
 //                                                          timeGeekFormat: "",
-                                                          location: self.location, timeZone: self.effectiveTimeZone)
+                                                          location: self.location, timeZone: self.timeZone)
         return result
     } //
 
@@ -318,7 +318,7 @@ extension ASARow {
 //                                                          dateGeekFormat: "",
                                                           timeFormat: timeFormat,
 //                                                          timeGeekFormat: self.timeGeekFormat,
-                                                          location: self.location, timeZone: self.effectiveTimeZone)
+                                                          location: self.location, timeZone: self.timeZone)
         return result
     } // func shortenedTimeString(now:  Date) -> String
 } // extension ASARow

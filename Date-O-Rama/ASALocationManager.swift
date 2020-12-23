@@ -76,7 +76,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocationData: ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone:  TimeZone.autoupdatingCurrent) {
+    @Published var deviceLocationData: ASALocationData = ASALocationData(location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone:  TimeZone(secondsFromGMT: 0)!) {
         willSet {
             objectWillChange.send()
         } // willSet

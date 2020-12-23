@@ -399,7 +399,7 @@ struct ASAStartAndEndTimesSubcell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.effectiveTimeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
+            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
                 ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
                 Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))

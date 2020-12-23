@@ -11,7 +11,7 @@ import CoreLocation
 import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
-    var defaultMajorDateFormat:  ASADateFormat = .full  // TODO:  Rethink this when dealing with watchOS
+    var defaultDateFormat:  ASADateFormat = .full  // TODO:  Rethink this when dealing with watchOS
         
     var calendarCode:  ASACalendarCode
     
@@ -30,7 +30,7 @@ class ASAAppleCalendar:  ASACalendar {
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
-                        location: CLLocation?, timeZone:  TimeZone?) -> String {
+                        location:  CLLocation, timeZone:  TimeZone?) -> String {
         
 //        if localeIdentifier == "" {
 //            self.dateFormatter.locale = Locale.current
@@ -124,9 +124,9 @@ class ASAAppleCalendar:  ASACalendar {
         } // switch dateFormat
         
         return self.dateFormatter.string(from: now)
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location:  CLLocation) -> String
     
-//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?, timeZone:  TimeZone?) -> String {
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation, timeZone:  TimeZone?) -> String {
 //        // TODO:  Update when times are supported!
 //        
 //        self.dateFormatter.dateFormat = LDMLString
@@ -139,7 +139,7 @@ class ASAAppleCalendar:  ASACalendar {
 //        let result = self.dateFormatter.string(from: now)
 //        
 //        return result
-//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
+//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation) -> String
     
 //    func defaultDateGeekCode(dateFormat: ASADateFormat) -> String {
 //        return "eee, d MMM y"
@@ -191,13 +191,13 @@ class ASAAppleCalendar:  ASACalendar {
         
     var supportsLocales: Bool = true
     
-    func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date {
+    func startOfDay(for date: Date, location:  CLLocation, timeZone: TimeZone) -> Date {
         //        return date.previousMidnight(timeZone:  timeZone)
         self.ApplesCalendar.timeZone = timeZone
         return self.ApplesCalendar.startOfDay(for: date)
-    } // func startOfDay(for date: Date, location: CLLocation?, timeZone: TimeZone) -> Date
+    } // func startOfDay(for date: Date, location:  CLLocation, timeZone: TimeZone) -> Date
     
-    func startOfNextDay(date:  Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
+    func startOfNextDay(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date {
         //        return date.nextMidnight(timeZone:  timeZone)
         self.ApplesCalendar.timeZone = timeZone
         return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
@@ -254,7 +254,7 @@ class ASAAppleCalendar:  ASACalendar {
     var canSplitTimeFromDate:  Bool = true
     
 //    var defaultMajorTimeFormat:  ASAMajorTimeFormat = .full
-    var defaultMajorTimeFormat:  ASATimeFormat = .medium
+    var defaultTimeFormat:  ASATimeFormat = .medium
     
     // MARK: - Date components
     
@@ -279,7 +279,7 @@ class ASAAppleCalendar:  ASACalendar {
         }
         
         var calendar = self.ApplesCalendar
-        calendar.timeZone = locationData.timeZone ?? TimeZone.current
+        calendar.timeZone = locationData.timeZone 
         return calendar.component(ApplesComponent!, from: date)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
 
@@ -294,7 +294,7 @@ class ASAAppleCalendar:  ASACalendar {
         } // for component in components
         
         var calendar = self.ApplesCalendar
-        calendar.timeZone = locationData.timeZone ?? TimeZone.current
+        calendar.timeZone = locationData.timeZone 
         let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
         return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
