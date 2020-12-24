@@ -21,11 +21,31 @@ struct ASALocationCell:  View {
             return RAW_LAST_DEVICE_LOCATION_STRING
         }
 
-        if authorizationStatus!.authorizedAtLeastWhenInUse {
+//        if authorizationStatus!.authorizedAtLeastWhenInUse {
+//            return "DEVICE_LOCATION"
+//        } else {
+//            return RAW_LAST_DEVICE_LOCATION_STRING
+//        }
+
+        switch authorizationStatus! {
+        case .notDetermined:
+            return "Device location (not determined)"
+
+        case .restricted:
+            return "Device location (restricted)"
+
+        case .denied:
+            return "Device location (denied)"
+
+        case .authorizedAlways:
             return "DEVICE_LOCATION"
-        } else {
-            return RAW_LAST_DEVICE_LOCATION_STRING
-        }
+
+        case .authorizedWhenInUse:
+            return "DEVICE_LOCATION"
+
+        @unknown default:
+            return "Device location (unknown status)"
+        } // switch authorizationStatus!
     } // func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String
     
     var body: some View {

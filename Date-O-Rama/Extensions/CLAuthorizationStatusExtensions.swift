@@ -15,6 +15,8 @@ public extension CLAuthorizationStatus {
             switch self {
             case .authorizedAlways, .authorizedWhenInUse:
                 return true
+            case .notDetermined:
+                return true // Provisional
             default:
                 return false
             } // switch self
