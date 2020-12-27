@@ -54,7 +54,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     // MARK:  -
     
-    @Published var mainRows:  Array<ASARow> = []
+    @Published var mainRows:  Array<ASARow> = [ASARow.generic()]
 
     @Published var ASAEventCalendars:  Array<ASAEventCalendar> = []
     @Published var EKCalendarTitles:  Array<String> = [] {
