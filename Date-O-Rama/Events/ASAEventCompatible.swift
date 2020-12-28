@@ -21,3 +21,18 @@ protocol ASAEventCompatible {
     var calendarCode:  ASACalendarCode { get }
     var isEKEvent:  Bool { get }
 } // protocol ASAEventCompatible
+
+
+// MARK:  -
+
+extension Array where Element == ASAEventCompatible {
+    var allDayOnly:  Array<ASAEventCompatible> {
+        var selectedEvents:  Array<ASAEventCompatible> = []
+        for event in self {
+            if event.isAllDay {
+                selectedEvents.append(event)
+            }
+        } // for event in self
+        return selectedEvents
+    } // var allDayOnly
+} // extension Array where Element == ASAEventCompatible

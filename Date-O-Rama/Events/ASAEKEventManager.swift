@@ -163,16 +163,3 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
 } // class ASAEKEventManager
-
-
-extension Array where Element == ASAEventCompatible {
-    var allDayOnly:  Array<ASAEventCompatible> {
-        var selectedEvents:  Array<ASAEventCompatible> = []
-        for event in self {
-            if event.isAllDay {
-                selectedEvents.append(event)
-            }
-        } // for event in self
-        return selectedEvents
-    }
-}
