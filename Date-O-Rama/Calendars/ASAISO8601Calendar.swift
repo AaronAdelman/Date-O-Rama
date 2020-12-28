@@ -39,7 +39,7 @@ class ASAISO8601Calendar:  ASACalendar {
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
-                        location:  CLLocation, timeZone:  TimeZone?) -> String {
+                        locationData:  ASALocationData) -> String {
         
         var dateString:  String
         
@@ -76,18 +76,19 @@ class ASAISO8601Calendar:  ASACalendar {
         } // switch timeFormat
         
         self.ISODateFormatter.formatOptions = formatterOptions
-        
-        if timeZone == nil {
-            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
+
+        let timeZone = locationData.timeZone
+//        if timeZone == nil {
+//            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
+//        } else {
             self.ISODateFormatter.timeZone = timeZone
-        }
+//        }
         
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location:  CLLocation) -> String
     
-//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation, timeZone:  TimeZone?) -> String {
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, locationData:  ASALocationData) -> String {
 //        
 //        self.dateFormatter.locale = Locale(identifier: "en_UK")
 //        

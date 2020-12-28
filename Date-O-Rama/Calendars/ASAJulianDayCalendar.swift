@@ -66,7 +66,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
-                        location:  CLLocation, timeZone:  TimeZone?) -> String {
+                        locationData:  ASALocationData) -> String {
         if self.supportsTimes && timeFormat != .none {
             //            let JulianDay = now.JulianDate() - self.offsetFromJulianDay
             let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
@@ -87,7 +87,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         }
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location:  CLLocation) -> String
     
-//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation, timeZone:  TimeZone?) -> String {
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, locationData:  ASALocationData) -> String {
 //        return self.dateTimeString(now: now, localeIdentifier: localeIdentifier, timeFormat: .full)
 //    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation) -> String
     

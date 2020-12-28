@@ -254,8 +254,10 @@
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
-                        location:  CLLocation, timeZone: TimeZone?) -> String {
-        let (fixedNow, transition) = now.solarCorrected(location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+                        locationData:  ASALocationData) -> String {
+        let location = locationData.location
+        let timeZone = locationData.timeZone
+        let (fixedNow, transition) = now.solarCorrected(location: location, timeZone: timeZone, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
 
         var timeString:  String = ""

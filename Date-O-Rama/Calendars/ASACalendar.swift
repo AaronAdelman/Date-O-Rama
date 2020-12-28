@@ -48,8 +48,8 @@ protocol ASACalendar {
                         //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
                         //                        timeGeekFormat: String,
-                        location:  CLLocation, timeZone:  TimeZone?) -> String
-    //    func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation, timeZone:  TimeZone?) -> String
+                        locationData:  ASALocationData) -> String
+    //    func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, locationData:  ASALocationData) -> String
     func startOfDay(for date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     func startOfNextDay(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
     

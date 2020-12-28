@@ -30,7 +30,7 @@ class ASAAppleCalendar:  ASACalendar {
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
-                        location:  CLLocation, timeZone:  TimeZone?) -> String {
+                        locationData:  ASALocationData) -> String {
         
 //        if localeIdentifier == "" {
 //            self.dateFormatter.locale = Locale.current
@@ -39,11 +39,12 @@ class ASAAppleCalendar:  ASACalendar {
 //        }
         self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier:  localeIdentifier)
 
-        if timeZone == nil {
-            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
-        } else {
+        let timeZone = locationData.timeZone
+//        if timeZone == nil {
+//            self.dateFormatter.timeZone = TimeZone.autoupdatingCurrent
+//        } else {
             self.dateFormatter.timeZone = timeZone
-        }
+//        }
         
 //        if timeFormat == .localizedLDML || dateFormat == .localizedLDML {
 //            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat + timeGeekFormat, options: 0, locale: self.dateFormatter.locale)!
@@ -126,7 +127,7 @@ class ASAAppleCalendar:  ASACalendar {
         return self.dateFormatter.string(from: now)
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location:  CLLocation) -> String
     
-//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation, timeZone:  TimeZone?) -> String {
+//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, locationData:  ASALocationData) -> String {
 //        // TODO:  Update when times are supported!
 //        
 //        self.dateFormatter.dateFormat = LDMLString
