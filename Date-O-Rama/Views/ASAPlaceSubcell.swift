@@ -35,19 +35,16 @@ struct ASAPlaceSubcell:  View {
                                     if processedRow.usesDeviceLocation {
                                         ASASmallLocationSymbol()
                                     }
-//                                    Text(verbatim: processedRow.verticalEmojiString)
-//                                    Text(verbatim:  processedRow.emojiString)
                                     Text(verbatim:  processedRow.flagEmojiString)
                                 }
                             } else {
                                 if processedRow.usesDeviceLocation {
                                     ASASmallLocationSymbol()
                                 }
-//                                Text(verbatim:  processedRow.emojiString)
                                 Text(verbatim:  processedRow.flagEmojiString)
                             }
 
-                            Text(processedRow.locationString).font(.subheadlineMonospacedDigit)
+                            Text(processedRow.locationString).font(.subheadlineMonospacedDigit).minimumScaleFactor(0.5).lineLimit(2)
                         } // HStack
                     }
                 }

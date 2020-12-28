@@ -152,10 +152,8 @@ struct ASAClockMainSubcell:  View {
                                 \.eventIdentifier) {
                         event
                         in
-                        HStack(alignment: .top) {
-                            Spacer().frame(width:  20.0)
-
-                            ASAClockCellText(string:  "•", font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                        HStack {
+                            ASAEventColorRectangle(color: event.color)
 
                             ASAClockCellText(string:  event.title ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  2)
                         } // HStack

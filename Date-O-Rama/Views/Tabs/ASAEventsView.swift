@@ -340,7 +340,8 @@ struct ASAEventCell:  View {
             if self.eventsViewShouldShowSecondaryDates {
                 ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
             }
-            Rectangle().frame(width:  2.0).foregroundColor(event.color)
+//            Rectangle().frame(width:  2.0).foregroundColor(event.color)
+            ASAEventColorRectangle(color: event.color)
             VStack(alignment: .leading) {
                 if self.sizeClass == .compact {
                     Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
