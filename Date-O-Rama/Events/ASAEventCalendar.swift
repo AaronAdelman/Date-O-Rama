@@ -33,6 +33,14 @@ class ASAEventCalendar:  ASALocatedObject {
     @Published var builtIn:  Bool = true
 
 //    @Published var localeIdentifier:  String = ""
+
+    public var calendarCode:  ASACalendarCode {
+        get {
+            return self.unlocatedEventCalendar?.eventsFile?.calendarCode ?? .Gregorian
+        }
+    }
+
+
     
     public func dictionary() -> Dictionary<String, Any> {
         //        debugPrint(#file, #function)
@@ -172,9 +180,7 @@ class ASAEventCalendar:  ASALocatedObject {
     } // func eventSourceName() -> String
     
     func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
-        if unlocatedEventCalendar == nil
-//            || self.locationData.location == nil
-        {
+        if unlocatedEventCalendar == nil {
             return []
         }
         

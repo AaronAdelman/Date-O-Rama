@@ -19,28 +19,16 @@ struct ASAClockCell: View {
     var shouldShowTime:  Bool
     var shouldShowCalendarPizzazztron:  Bool
 
-    #if os(watchOS)
-    #else
-    @Environment(\.horizontalSizeClass) var sizeClass
-    #endif
-
-    #if os(watchOS)
-    let runningOnWatchOS = true
-    #else
-    let runningOnWatchOS = false
-    #endif
-
     var body: some View {
-        if !runningOnWatchOS {
-            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
-                .frame(minHeight:  40.0)
-                .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
-                .padding(EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0))
-                .background(ASASkyGradient(processedRow: processedRow))
-                .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))
-        } else {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
-        }
+        #if os(watchOS)
+        ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)        #else
+        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
+            .frame(minHeight:  40.0)
+            .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
+            .padding(EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0))
+            .background(ASASkyGradient(processedRow: processedRow))
+            .padding(EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0))
+        #endif
     } // var body
 } // struct ASAClockCell
 
@@ -68,6 +56,8 @@ struct ASAClockCellBody:  View {
         temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
         return temp
     } // func numberFormatter() -> NumberFormatter
+
+    @State private var showingEvents:  Bool = false
 
     var body: some View {
         HStack {
@@ -154,6 +144,24 @@ struct ASAClockMainSubcell:  View {
                     }
                 }
             }
+
+            #if os(watchOS)
+            #else
+            if processedRow.events.count > 0 {
+                    ForEach(processedRow.events, id:
+                                \.eventIdentifier) {
+                        event
+                        in
+                        HStack {
+                            Spacer().frame(width:  20.0)
+
+                            ASAClockCellText(string:  "•", font:  Font.headlineMonospacedDigit, lineLimit:  2)
+
+                            ASAClockCellText(string:  event.title ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                        } // HStack
+                    }
+            }
+            #endif
 
             ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, shouldShowCalendarPizzazztron:  shouldShowCalendarPizzazztron)
         } // VStack

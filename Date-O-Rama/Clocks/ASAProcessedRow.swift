@@ -42,6 +42,8 @@ struct ASAProcessedRow {
 
     var veryShortStandaloneWeekdaySymbols:  Array<String>
 
+    var events:  Array<ASAEventCompatible>
+
     var month:  Int
 
     init(row:  ASARow, now:  Date) {
@@ -121,6 +123,8 @@ struct ASAProcessedRow {
         self.veryShortStandaloneWeekdaySymbols = row.calendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: row.localeIdentifier)
 
         self.month = dateComponents.month ?? 0
+
+        self.events = ASAEventManager.clockSpecificAllDayEvents(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now), row: row)
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 

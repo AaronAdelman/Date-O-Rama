@@ -160,11 +160,19 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         
         // Use the configured NSPredicate to find and return events in the store that match
         let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)
-//        let events:  Array<EKEvent> = rawEvents.sorted(by: {
-//            (e1: EKEvent, e2: EKEvent) -> Bool in
-//            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
-//        })
-//        return events
         return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
 } // class ASAEKEventManager
+
+
+extension Array where Element == ASAEventCompatible {
+    var allDayOnly:  Array<ASAEventCompatible> {
+        var selectedEvents:  Array<ASAEventCompatible> = []
+        for event in self {
+            if event.isAllDay {
+                selectedEvents.append(event)
+            }
+        } // for event in self
+        return selectedEvents
+    }
+}

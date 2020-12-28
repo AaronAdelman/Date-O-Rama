@@ -547,9 +547,9 @@
 				A5BFC5B6246B29600075AF58 /* ASAEvent.swift */,
 				A57BCCAE247BB7F80019C02C /* ASAEventCalendar.swift */,
 				A5790194259263A300224666 /* ASAEventCompatible.swift */,
+				A57901B325926A6E00224666 /* ASAEventManager.swift */,
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A57BCCBD247D8A700019C02C /* ASAUnlocatedEventCalendar.swift */,
-				A57901B325926A6E00224666 /* ASAEventManager.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
