@@ -233,7 +233,7 @@ extension ASARow {
 //                                            dateGeekFormat: self.dateGeekFormat,
                                             timeFormat: .none,
 //                                            timeGeekFormat: "",
-//                                            location: self.location, timeZone: self.timeZone
+//                                            locationData: self.locationData
                                             locationData: self.locationData)
     } // func dateTimeString(now:  Date) -> String
 
@@ -242,12 +242,12 @@ extension ASARow {
 //                                            dateGeekFormat: self.dateGeekFormat,
                                             timeFormat: self.timeFormat,
 //                                            timeGeekFormat: self.timeGeekFormat,
-//                                            location: self.location, timeZone: self.timeZone
+//                                            locationData: self.locationData
                                             locationData: self.locationData)
     } // func dateTimeString(now:  Date) -> String
 
 //    public func dateTimeString(now:  Date, LDMLString:  String) -> String {
-//        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, location: self.location, timeZone: self.timeZone)
+//        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, LDMLString: LDMLString, locationData: self.locationData)
 //    } // func dateTimeString(now:  Date, LDMLString:  String) -> String
 
 //    public func LDMLDetails() -> Array<ASALDMLDetail> {
@@ -255,11 +255,11 @@ extension ASARow {
 //    } // public func LDMLDetails() -> Array<ASADetail>
     
     func startOfDay(date:  Date) -> Date {
-        return self.calendar.startOfDay(for: date, location: self.location, timeZone: self.timeZone)
+        return self.calendar.startOfDay(for: date, locationData: self.locationData)
     } // func startODay(date:  Date) -> Date
 
     func startOfNextDay(date:  Date) -> Date {
-        return self.calendar.startOfNextDay(date: date, location: self.location, timeZone: self.timeZone)
+        return self.calendar.startOfNextDay(date: date, locationData: self.locationData)
     } // func startOfNextDay(now:  Date) -> Date
 
     public func timeString(now:  Date) -> String {
@@ -267,7 +267,7 @@ extension ASARow {
 //                                            dateGeekFormat: "",
                                             timeFormat: self.timeFormat,
 //                                            timeGeekFormat: self.timeGeekFormat,
-//                                            location: self.location, timeZone: self.timeZone
+//                                            locationData: self.locationData
                                             locationData: self.locationData)
     } // func timeString(now:  Date
     
@@ -291,7 +291,7 @@ extension ASARow {
 //                                                          dateGeekFormat: self.dateGeekFormat,
                                                           timeFormat: timeFormat,
 //                                                          timeGeekFormat: self.timeGeekFormat,
-//                                                          location: self.location, timeZone: self.timeZone
+//                                                          locationData: self.locationData
                                                           locationData: self.locationData)
         return result
     } // func shortenedDateTimeString(now:  Date) -> String
@@ -302,7 +302,7 @@ extension ASARow {
 //                                                          dateGeekFormat: self.dateGeekFormat,
                                                           timeFormat: .none,
 //                                                          timeGeekFormat: "",
-//                                                          location: self.location, timeZone: self.timeZone
+//                                                          locationData: self.locationData
                                                           locationData: self.locationData)
         return result
     } // func shortenedDateString(now:  Date) -> String
@@ -313,7 +313,7 @@ extension ASARow {
 //                                                          dateGeekFormat: self.dateGeekFormat,
                                                           timeFormat: .none,
 //                                                          timeGeekFormat: "",
-//                                                          location: self.location, timeZone: self.timeZone
+//                                                          locationData: self.locationData
                                                           locationData: self.locationData)
         return result
     } //
@@ -324,7 +324,7 @@ extension ASARow {
 //                                                          dateGeekFormat: "",
                                                           timeFormat: timeFormat,
 //                                                          timeGeekFormat: self.timeGeekFormat,
-//                                                          location: self.location, timeZone: self.timeZone
+//                                                          locationData: self.locationData
                                                           locationData: self.locationData)
         return result
     } // func shortenedTimeString(now:  Date) -> String

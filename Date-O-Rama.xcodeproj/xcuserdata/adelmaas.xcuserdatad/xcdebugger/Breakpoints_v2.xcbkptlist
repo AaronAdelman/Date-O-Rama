@@ -270,10 +270,10 @@
             filePath = "Date-O-Rama/Calendars/ASAAppleCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
-            landmarkName = "ASAAppleCalendar"
-            landmarkType = "3">
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "startOfNextDay(date:locationData:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -286,8 +286,8 @@
             filePath = "Date-O-Rama/Calendars/ASAAppleCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "ASAAppleCalendar"
             landmarkType = "3">
          </BreakpointContent>
@@ -302,8 +302,8 @@
             filePath = "Date-O-Rama/Calendars/ASASunsetTransitionCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "530"
-            endingLineNumber = "530"
+            startingLineNumber = "537"
+            endingLineNumber = "537"
             landmarkName = "component(_:from:locationData:)"
             landmarkType = "7">
          </BreakpointContent>

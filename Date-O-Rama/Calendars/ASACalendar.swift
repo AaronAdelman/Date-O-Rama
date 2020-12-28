@@ -37,8 +37,8 @@ protocol ASACalendar {
     var transitionType:  ASATransitionType { get }
     
     func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String
-    func startOfDay(for date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
-    func startOfNextDay(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
+    func startOfDay(for date:  Date, locationData:  ASALocationData) -> Date
+    func startOfNextDay(date:  Date, locationData:  ASALocationData) -> Date
     
     func supports(calendarComponent:  ASACalendarComponent) -> Bool
 

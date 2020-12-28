@@ -179,12 +179,12 @@ class ASAEventCalendar:  ASALocatedObject {
         return self.unlocatedEventCalendar!.eventSourceName()
     } // func eventSourceName() -> String
     
-    func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
+    func events(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
         if unlocatedEventCalendar == nil {
             return []
         }
         
-        return self.unlocatedEventCalendar!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
+        return self.unlocatedEventCalendar!.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, allDayEventsOnly:  allDayEventsOnly)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 
     class func eventCalendar(eventsFileName:  String) -> ASAEventCalendar? {

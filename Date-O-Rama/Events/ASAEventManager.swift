@@ -20,7 +20,7 @@ class ASAEventManager {
         }
 
         for eventCalendar in userData.ASAEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier)
+            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
         } // for eventCalendar in userData.ASAEventCalendars
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -42,8 +42,8 @@ class ASAEventManager {
         // ASAEvents
         for eventCalendar in userData.ASAEventCalendars {
             if eventCalendar.calendarCode == row.calendar.calendarCode && eventCalendar.locationData.location == row.locationData.location {
-                let moreEvents: [ASAEventCompatible] = eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier)
-                unsortedEvents = unsortedEvents + moreEvents.allDayOnly
+                let moreEvents: [ASAEventCompatible] = eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly:  true)
+                unsortedEvents = unsortedEvents + moreEvents
             }
         } // for eventCalendar in userData.ASAEventCalendars
 

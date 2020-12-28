@@ -97,7 +97,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     var supportsDateFormats: Bool = false
     
-    func startOfDay(for date: Date, location:  CLLocation, timeZone: TimeZone) -> Date {
+    func startOfDay(for date: Date, locationData:  ASALocationData) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
             return date.previousGMTNoon()
@@ -108,10 +108,10 @@ class ASAJulianDayCalendar:  ASACalendar {
         default:
             return date.previousGMTNoon()
         } // switch self.calendarCode
-    } // func startOfDay(for date: Date, location:  CLLocation, timeZone: TimeZone) -> Date
+    } // func startOfDay(for date: Date, locationData:  ASALocationData) -> Date
     
     
-    func startOfNextDay(date: Date, location:  CLLocation, timeZone:  TimeZone) -> Date {
+    func startOfNextDay(date: Date, locationData:  ASALocationData) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
             return date.nextGMTNoon()
@@ -233,7 +233,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
 //        let day = date.JulianDateWithoutTime(offsetFromJulianDay:  self.offsetFromJulianDay)
-//        var result = ASADateComponents(calendar: self, locationData: locationData)
+//        var result = ASADateComponents(calendar: self, locationData: ASALocationData)
 //        for component in components {
 //            if component == .day {
 //                result.day = day

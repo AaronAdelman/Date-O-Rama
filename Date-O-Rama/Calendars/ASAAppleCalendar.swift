@@ -192,17 +192,18 @@ class ASAAppleCalendar:  ASACalendar {
         
     var supportsLocales: Bool = true
     
-    func startOfDay(for date: Date, location:  CLLocation, timeZone: TimeZone) -> Date {
+    func startOfDay(for date: Date, locationData:  ASALocationData) -> Date {
         //        return date.previousMidnight(timeZone:  timeZone)
+        let timeZone = locationData.timeZone
         self.ApplesCalendar.timeZone = timeZone
         return self.ApplesCalendar.startOfDay(for: date)
-    } // func startOfDay(for date: Date, location:  CLLocation, timeZone: TimeZone) -> Date
+    } // func startOfDay(for date: Date, locationData:  ASALocationData) -> Date
     
-    func startOfNextDay(date:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date {
+    func startOfNextDay(date:  Date, locationData:  ASALocationData) -> Date {
         //        return date.nextMidnight(timeZone:  timeZone)
-        self.ApplesCalendar.timeZone = timeZone
+        self.ApplesCalendar.timeZone = locationData.timeZone
         return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
-    } // func startOfNextDay(now:  Date, location:  CLLocation, timeZone:  TimeZone) -> Date
+    } // func startOfNextDay(now:  Date, locationData:  ASALocationData) -> Date
     
     var supportsDateFormats: Bool = true
     
