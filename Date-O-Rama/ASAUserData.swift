@@ -52,7 +52,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // static var shared
 
 
-    // MARK:  -
+    // MARK:  - Model objects
     
     @Published var mainRows:  Array<ASARow> = [ASARow.generic]
 
@@ -198,12 +198,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 #else
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
                 #endif
-//                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-//                debugPrint(#file, #function, jsonResult)
+                //                debugPrint(#file, #function, jsonResult)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
-//                    debugPrint(#file, #function, jsonResult)
+                    //                    debugPrint(#file, #function, jsonResult)
                     self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
                     
                     genericSuccess = true
@@ -225,13 +225,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 #else
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
                 #endif
-//                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-//                debugPrint(#file, #function, jsonResult)
+                //                debugPrint(#file, #function, jsonResult)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
-//                    debugPrint(#file, #function, jsonResult)
-                    //                    self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
+                    //                    debugPrint(#file, #function, jsonResult)
                     self.ASAEventCalendars = ASAUserData.ASASEventCalendarArray(dictionary: jsonResult)
                     self.EKCalendarTitles = jsonResult[EXTERNAL_EVENT_CALENDARS_KEY] as! Array<String>
                     
@@ -255,12 +254,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     #else
                     let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
                     #endif
-//                    debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+                    //                    debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                     let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-//                    debugPrint(#file, #function, jsonResult)
+                    //                    debugPrint(#file, #function, jsonResult)
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
-//                        debugPrint(#file, #function, jsonResult)
+                        //                        debugPrint(#file, #function, jsonResult)
                         self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
                         self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
                         self.twoLineSmallRows = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult)
@@ -392,7 +391,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // func savePreferences()
     
     
-    // MARK: -
+    // MARK: - Translation between JSON and model objects
 
     private func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
@@ -460,7 +459,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             return []
         }
 
-//        let temp = self.userDefaults.array(forKey: INTERNAL_EVENT_CALENDARS_KEY)
         let temp = dictionary![INTERNAL_EVENT_CALENDARS_KEY] as! Array<Dictionary<String, Any>>?
         var tempArray:  Array<ASAEventCalendar> = []
 

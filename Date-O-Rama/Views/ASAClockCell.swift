@@ -99,7 +99,7 @@ struct ASAClockCellBody:  View {
                 Spacer().frame(width:  16.0)
             } // HStack
 
-            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName)
+//            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName)
 
             #if os(watchOS)
             #else
@@ -180,7 +180,8 @@ struct ASAClockMainSubcell:  View {
                 }
             }
 
-//            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, shouldShowCalendarPizzazztron:  shouldShowCalendarPizzazztron)
+            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
+            )
         } // VStack
     } // var body
 } // struct ASAClockMainSubcell

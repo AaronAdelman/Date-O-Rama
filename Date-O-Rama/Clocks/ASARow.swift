@@ -9,13 +9,11 @@
 import UIKit
 import CoreLocation
 
-let UUID_KEY:  String                 = "UUID"
-let LOCALE_KEY:  String               = "locale"
-let CALENDAR_KEY:  String             = "calendar"
-let MAJOR_DATE_FORMAT_KEY:  String    = "dateFormat"
-//let DATE_GEEK_FORMAT_KEY:  String     = "geekFormat"
-let MAJOR_TIME_FORMAT_KEY:  String    = "timeFormat"
-//let TIME_GEEK_FORMAT_KEY:  String     = "timeGeekFormat"
+let UUID_KEY:  String        = "UUID"
+let LOCALE_KEY:  String      = "locale"
+let CALENDAR_KEY:  String    = "calendar"
+let DATE_FORMAT_KEY:  String = "dateFormat"
+let TIME_FORMAT_KEY:  String = "timeFormat"
 
 
 // MARK: -
@@ -56,8 +54,8 @@ class ASARow: ASALocatedObject {
             UUID_KEY:  uuid.uuidString,
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
-            MAJOR_DATE_FORMAT_KEY:  dateFormat.rawValue ,
-            MAJOR_TIME_FORMAT_KEY:  timeFormat.rawValue ,
+            DATE_FORMAT_KEY:  dateFormat.rawValue ,
+            TIME_FORMAT_KEY:  timeFormat.rawValue ,
             TIME_ZONE_KEY:  timeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
         ] as [String : Any]
@@ -141,12 +139,12 @@ class ASARow: ASALocatedObject {
             }
         }
         
-        let dateFormat = dictionary[MAJOR_DATE_FORMAT_KEY] as? String
+        let dateFormat = dictionary[DATE_FORMAT_KEY] as? String
         if dateFormat != nil {
             newRow.dateFormat = ASADateFormat(rawValue: dateFormat! )!
         }
 
-        let timeFormat = dictionary[MAJOR_TIME_FORMAT_KEY] as? String
+        let timeFormat = dictionary[TIME_FORMAT_KEY] as? String
         if timeFormat != nil {
             newRow.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
         }
