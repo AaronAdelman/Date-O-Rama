@@ -146,6 +146,6 @@ struct ASALocationChooserViewCell:  View {
 
 struct LocationChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationChooserView(locatedObject: ASARow.test(), tempLocationData: ASALocationData())
+        ASALocationChooserView(locatedObject: ASARow.generic, tempLocationData: ASALocationData())
     }
 }

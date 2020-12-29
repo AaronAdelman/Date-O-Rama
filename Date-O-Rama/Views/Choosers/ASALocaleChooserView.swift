@@ -135,7 +135,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocaleChooserView(row: ASARow.test(), tempLocaleIdentifier: "en_US")
+        ASALocaleChooserView(row: ASARow.generic, tempLocaleIdentifier: "en_US")
     }
 }
 

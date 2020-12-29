@@ -103,7 +103,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             return date.previousGMTNoon()
             
         case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-            return date.previousMidnight(timeZone: TimeZone(secondsFromGMT: 0)!)
+            return date.previousMidnight(timeZone: TimeZone.GMT)
             
         default:
             return date.previousGMTNoon()
@@ -117,7 +117,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             return date.nextGMTNoon()
             
         case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-            return date.nextMidnight(timeZone: TimeZone(secondsFromGMT: 0)!)
+            return date.nextMidnight(timeZone: TimeZone.GMT)
             
         default:
             return date.nextGMTNoon()

@@ -54,7 +54,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     // MARK:  -
     
-    @Published var mainRows:  Array<ASARow> = [ASARow.generic()]
+    @Published var mainRows:  Array<ASARow> = [ASARow.generic]
 
     @Published var ASAEventCalendars:  Array<ASAEventCalendar> = []
     @Published var EKCalendarTitles:  Array<String> = [] {
@@ -176,7 +176,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow> {
         var result:  Array<ASARow> = []
         for _ in 1...key.minimumNumberOfRows() {
-            result.append(ASARow.generic())
+            result.append(ASARow.generic)
         }
         return result
     } // func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow>
@@ -397,7 +397,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     private func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
-            let dictionary = row.dictionary()
+            let dictionary = row.dictionary
             temp.append(dictionary)
         }
         return temp
@@ -448,7 +448,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         let minimumNumberOfRows = key.minimumNumberOfRows()
         if numberOfRows < minimumNumberOfRows {
 
-            tempArray += Array.init(repeatElement(ASARow.generic(), count: minimumNumberOfRows - numberOfRows))
+            tempArray += Array.init(repeatElement(ASARow.generic, count: minimumNumberOfRows - numberOfRows))
         }
 
         //        debugPrint(#file, #function, tempArray)

@@ -140,7 +140,7 @@ struct ASAMajorTimeFormatCell: View {
 
 struct ASATimeFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASATimeFormatChooserView(row: ASARow.generic(), tempMajorTimeFormat: .medium,
+        ASATimeFormatChooserView(row: ASARow.generic, tempMajorTimeFormat: .medium,
 //                                 tempTimeGeekFormat: "HHmmss",
                                  calendarCode: .Gregorian)
     }

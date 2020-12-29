@@ -96,6 +96,6 @@ struct ASAMainRowsByPlaceSubview:  View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASARow.generic]), now: .constant(Date()))
     }
 }

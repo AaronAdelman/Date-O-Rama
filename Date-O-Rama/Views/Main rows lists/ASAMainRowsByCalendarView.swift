@@ -84,6 +84,6 @@ struct ASAMainRowsByCalendarSubview:  View {
 
 struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic()]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
+        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASANewClockDetailView: View {
-    @State var selectedRow:  ASARow = ASARow.generic()
+    @State var selectedRow:  ASARow = ASARow.generic
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -68,6 +68,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedRow: ASARow.generic(), forAppleWatch: false)
+        ASANewClockDetailView(selectedRow: ASARow.generic, forAppleWatch: false)
     }
 }

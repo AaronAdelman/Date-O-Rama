@@ -219,7 +219,7 @@ extension String {
     func row(backupIndex:  Int) -> ASARow {
         let tempUUID = UUID(uuidString: self)
         if tempUUID == nil {
-            return ASARow.generic()
+            return ASARow.generic
         }
         
         let temp = ASAUserData.shared.mainRows.first(where: {$0.uuid == tempUUID!})
@@ -231,7 +231,7 @@ extension String {
             return ASAUserData.shared.mainRows[backupIndex]
         }
         
-        return ASARow.generic()
+        return ASARow.generic
     } // func row(backupIndex:  Int) -> ASARow
 } // extension UUID
 

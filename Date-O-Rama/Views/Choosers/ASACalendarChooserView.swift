@@ -187,6 +187,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarChooserView(row: ASARow.test(), tempCalendarCode: .Gregorian)
+        ASACalendarChooserView(row: ASARow.generic, tempCalendarCode: .Gregorian)
     }
 }

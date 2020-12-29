@@ -76,26 +76,11 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocationData: ASALocationData = ASALocationData(location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone:  TimeZone(secondsFromGMT: 0)!) {
+    @Published var deviceLocationData: ASALocationData = ASALocationData.NullIsland {
         willSet {
             objectWillChange.send()
         } // willSet
     } // var deviceLocationData
-
-//    var statusString: String {
-//        guard let status = locationAuthorizationStatus else {
-//            return "unknown"
-//        }
-//
-//        switch status {
-//        case .notDetermined: return "notDetermined"
-//        case .authorizedWhenInUse: return "authorizedWhenInUse"
-//        case .authorizedAlways: return "authorizedAlways"
-//        case .restricted: return "restricted"
-//        case .denied: return "denied"
-//        default: return "unknown"
-//        }
-//    }
 
     let objectWillChange = PassthroughSubject<Void, Never>()
 

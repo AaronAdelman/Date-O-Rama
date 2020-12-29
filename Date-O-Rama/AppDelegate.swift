@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
-            let dictionary = row.dictionary()
+            let dictionary = row.dictionary
             temp.append(dictionary)
         }
         

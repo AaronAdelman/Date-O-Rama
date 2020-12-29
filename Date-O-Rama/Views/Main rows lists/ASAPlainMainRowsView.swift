@@ -87,6 +87,6 @@ struct ASAPlainMainRowsView:  View {
 
 struct ASAPlainMainRowsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAPlainMainRowsView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic()]), now: .constant(Date()))
+        ASAPlainMainRowsView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic]), now: .constant(Date()))
     }
 }
