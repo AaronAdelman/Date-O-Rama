@@ -52,5 +52,5 @@ class ASAEventManager {
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
         return events
-    } //
+    } // static func clockSpecificAllDayEvents(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
 } // class ASAEventManager

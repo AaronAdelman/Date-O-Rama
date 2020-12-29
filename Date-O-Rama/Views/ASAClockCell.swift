@@ -21,7 +21,9 @@ struct ASAClockCell: View {
 
     var body: some View {
         #if os(watchOS)
-        ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)        #else
+//        ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
+        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
+        #else
         ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: processedRow.canSplitTimeFromDate)
             .frame(minHeight:  40.0)
             .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
@@ -47,8 +49,19 @@ struct ASAClockCellBody:  View {
     var shouldShowCalendarPizzazztron:  Bool
     var canSplitTimeFromDate:  Bool
 
+    #if os(watchOS)
+    let compact = true
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+    #endif
+
     fileprivate func shouldShowClockPizzazztron() -> Bool {
-        return shouldShowTime && processedRow.hasValidTime
+        return !compact && shouldShowTime && processedRow.hasValidTime
     } //func shouldShowClockPizzazztron() -> Bool
 
     fileprivate func numberFormatter() -> NumberFormatter {
@@ -60,28 +73,50 @@ struct ASAClockCellBody:  View {
     @State private var showingEvents:  Bool = false
 
     var body: some View {
-        HStack {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: canSplitTimeFromDate)
+        VStack(alignment:  .leading) {
+            HStack {
+                ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowCalendarPizzazztron: shouldShowCalendarPizzazztron, canSplitTimeFromDate: canSplitTimeFromDate)
 
-            if (processedRow.supportsMonths || shouldShowTime) {
-                Spacer()
-            }
+                if (processedRow.supportsMonths || shouldShowTime) {
+                    Spacer()
+                }
+
+                #if os(watchOS)
+                #else
+                if processedRow.supportsTimes {
+                    if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
+                        ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
+                    }
+
+                    if shouldShowClockPizzazztron() {
+                        Spacer()
+
+                        ASAClockPizzazztron(processedRow:  processedRow, numberFormatter: numberFormatter())
+                    }
+                }
+                #endif
+
+                Spacer().frame(width:  16.0)
+            } // HStack
+
+            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName)
 
             #if os(watchOS)
             #else
-            if processedRow.supportsTimes {
-                if processedRow.supportsMonths && shouldShowCalendarPizzazztron {
-                    ASACalendarPizzazztron(daysPerWeek:  processedRow.daysPerWeek, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
-                }
-                Spacer()
-                if shouldShowClockPizzazztron() {
-                    ASAClockPizzazztron(processedRow:  processedRow, numberFormatter: numberFormatter())
-                }
-            }
+//            if processedRow.events.count > 0 {
+//                ForEach(processedRow.events, id:
+//                            \.eventIdentifier) {
+//                    event
+//                    in
+//                    HStack {
+//                        ASAEventColorRectangle(color: event.color)
+//
+//                        ASAClockCellText(string:  event.title ?? "", font:  Font.subheadlineMonospacedDigit, lineLimit:  1)
+//                    } // HStack
+//                }
+//            }
             #endif
-
-            Spacer().frame(width:  16.0)
-        } // HStack
+        } // VStack
     } // var body
 } // struct ASAClockCellBody
 
@@ -140,31 +175,15 @@ struct ASAClockMainSubcell:  View {
                     #endif
 
                     if shouldShowFormattedDate {
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                     }
                 }
             }
 
-            #if os(watchOS)
-            #else
-            if processedRow.events.count > 0 {
-                    ForEach(processedRow.events, id:
-                                \.eventIdentifier) {
-                        event
-                        in
-                        HStack {
-                            ASAEventColorRectangle(color: event.color)
-
-                            ASAClockCellText(string:  event.title ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  2)
-                        } // HStack
-                    }
-            }
-            #endif
-
-            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, shouldShowCalendarPizzazztron:  shouldShowCalendarPizzazztron)
+//            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName, shouldShowCalendarPizzazztron:  shouldShowCalendarPizzazztron)
         } // VStack
     } // var body
-} // struct ASAClockDateAndTimeSubcell
+} // struct ASAClockMainSubcell
 
 
 // MARK:  -

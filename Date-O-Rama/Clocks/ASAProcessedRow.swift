@@ -42,9 +42,9 @@ struct ASAProcessedRow {
 
     var veryShortStandaloneWeekdaySymbols:  Array<String>
 
-    var events:  Array<ASAEventCompatible>
-
     var month:  Int
+
+//    var events:  Array<ASAEventCompatible>
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -72,9 +72,9 @@ struct ASAProcessedRow {
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
-//                if row.location != nil {
-                    locationString = row.location.humanInterfaceRepresentation
-//                }
+                //                if row.location != nil {
+                locationString = row.location.humanInterfaceRepresentation
+                //                }
             } else {
                 #if os(watchOS)
                 locationString = row.locationData.shortFormattedOneLineAddress
@@ -124,7 +124,7 @@ struct ASAProcessedRow {
 
         self.month = dateComponents.month ?? 0
 
-        self.events = ASAEventManager.clockSpecificAllDayEvents(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now), row: row)
+//        self.events = ASAEventManager.clockSpecificAllDayEvents(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now), row: row)
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
