@@ -103,22 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "28E843C0-6B02-48AA-AF21-192DDBA6D958"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Date-O-Rama/ASALocatedObject.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "handle(notification:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5C8E1E58-0F73-457A-9CDD-09CC091139C7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -286,9 +270,9 @@
             filePath = "Date-O-Rama/Calendars/ASAAppleCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "290"
-            endingLineNumber = "290"
-            landmarkName = "dateComponents(_:from:locationData:)"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "startOfNextDay(date:locationData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -302,10 +286,10 @@
             filePath = "Date-O-Rama/Calendars/ASAAppleCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
-            landmarkName = "dateComponents(_:from:locationData:)"
-            landmarkType = "7">
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "ASAAppleCalendar"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -318,8 +302,8 @@
             filePath = "Date-O-Rama/Calendars/ASASunsetTransitionCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "528"
-            endingLineNumber = "528"
+            startingLineNumber = "537"
+            endingLineNumber = "537"
             landmarkName = "component(_:from:locationData:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -375,32 +359,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5D8F97D5-2046-4311-89B7-964ACB422259"
-            shouldBeEnabled = "Yes"
+            uuid = "3FD08B95-E117-4DD2-99FC-175446FDED55"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Date-O-Rama/Clocks/ASARow.swift"
+            filePath = "Date-O-Rama/ASALocationManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "newRow(dictionary:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A398A034-3554-42AC-823B-BC5AA64CB678"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Date-O-Rama/Calendars/ASASunsetTransitionCalendar.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
-            landmarkName = "dateTimeString(now:localeIdentifier:dateFormat:timeFormat:location:timeZone:)"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "locationManager(_:didFailWithError:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

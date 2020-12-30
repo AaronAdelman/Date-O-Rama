@@ -44,6 +44,8 @@ struct ASAProcessedRow {
 
     var month:  Int
 
+//    var events:  Array<ASAEventCompatible>
+
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
@@ -63,16 +65,16 @@ struct ASAProcessedRow {
             self.dateString = row.dateTimeString(now: now)
             self.timeString = ""
         }
-        self.timeZoneString = row.effectiveTimeZone.abbreviation(for:  now) ?? ""
+        self.timeZoneString = row.timeZone.abbreviation(for:  now) ?? ""
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
             self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag()
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
-                if row.location != nil {
-                    locationString = row.location!.humanInterfaceRepresentation
-                }
+                //                if row.location != nil {
+                locationString = row.location.humanInterfaceRepresentation
+                //                }
             } else {
                 #if os(watchOS)
                 locationString = row.locationData.shortFormattedOneLineAddress
@@ -121,6 +123,8 @@ struct ASAProcessedRow {
         self.veryShortStandaloneWeekdaySymbols = row.calendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: row.localeIdentifier)
 
         self.month = dateComponents.month ?? 0
+
+//        self.events = ASAEventManager.clockSpecificAllDayEvents(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now), row: row)
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
@@ -131,7 +135,7 @@ extension ASAProcessedRow {
     var latitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
-                return self.row.locationData.location?.coordinate.latitude ?? 0.0
+                return self.row.locationData.location.coordinate.latitude 
             } else {
                 return 0.0
             }
@@ -141,7 +145,7 @@ extension ASAProcessedRow {
     var longitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
-                return self.row.locationData.location?.coordinate.longitude ?? 0.0
+                return self.row.locationData.location.coordinate.longitude 
             } else {
                 return 0.0
             }
@@ -268,7 +272,7 @@ extension Array where Element == ASARow {
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
-            let key = processedRow.row.timeZone?.secondsFromGMT(for: now) ?? 0
+            let key = processedRow.row.timeZone.secondsFromGMT(for: now) 
             var value = result[key]
             if value == nil {
                 result[key] = [processedRow]
@@ -366,11 +370,11 @@ extension Array where Element == ASAProcessedRow {
 
         case .byTimeZoneWestToEast:
             return self.sorted {
-                $0.row.locationData.timeZone?.secondsFromGMT() ?? 0 < $1.row.locationData.timeZone?.secondsFromGMT() ?? 0
+                $0.row.locationData.timeZone.secondsFromGMT() < $1.row.locationData.timeZone.secondsFromGMT() 
             }
         case .byTimeZoneEastToWest:
             return self.sorted {
-                $0.row.locationData.timeZone?.secondsFromGMT() ?? 0 > $1.row.locationData.timeZone?.secondsFromGMT() ?? 0
+                $0.row.locationData.timeZone.secondsFromGMT() > $1.row.locationData.timeZone.secondsFromGMT() 
             }
         } // switch groupingOption
     } // func sorted(_ groupingOption:  ASAClocksViewGroupingOption, now:  Date) -> Array<ASAProcessedRow>

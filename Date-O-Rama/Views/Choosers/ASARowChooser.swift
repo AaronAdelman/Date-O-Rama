@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASARowChooser: View {
     @Binding var selectedUUIDString:  String
-    let mainRows = ASAUserData.shared().mainRows
+    let mainRows = ASAUserData.shared.mainRows
     
     var body: some View {
         List {

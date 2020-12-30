@@ -28,37 +28,41 @@ struct ASAClocksView: View {
 
     var forAppleWatch:  Bool
 
+    @State private var showingPreferences:  Bool = false
+
     var body: some View {
         NavigationView {
             VStack {
                 Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
-                    NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
-                        HStack {
-                            Text("Arrangement")
-                            Spacer()
-                            Text(self.primaryMainRowsGroupingOption.text())
+                    DisclosureGroup("Show preferences", isExpanded: $showingPreferences) {
+                        NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
+                            HStack {
+                                Text("Arrangement")
+                                Spacer()
+                                Text(self.primaryMainRowsGroupingOption.text())
+                            }
+                            .foregroundColor(.accentColor)
+                        } // NavigationLink
+
+                        NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$secondaryMainRowsGroupingOption, groupingOptions: self.primaryMainRowsGroupingOption.compatibleOptions, otherGroupingOption: self.$primaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: false)) {
+                            HStack {
+                                Text("Secondary arrangement")
+                                Spacer()
+                                Text(self.secondaryMainRowsGroupingOption.text())
+                            }
+                            .foregroundColor(.accentColor)
+                        } // NavigationLink
+
+                        Button(
+                            action: {
+                                self.showingNewClockDetailView = true
+                            }
+                        ) {
+                            Text("Add clock")
                         }
                         .foregroundColor(.accentColor)
-                    } // NavigationLink
-
-                    NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$secondaryMainRowsGroupingOption, groupingOptions: self.primaryMainRowsGroupingOption.compatibleOptions, otherGroupingOption: self.$primaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: false)) {
-                        HStack {
-                            Text("Secondary arrangement")
-                            Spacer()
-                            Text(self.secondaryMainRowsGroupingOption.text())
-                        }
-                        .foregroundColor(.accentColor)
-                    } // NavigationLink
-
-                    Button(
-                        action: {
-                            self.showingNewClockDetailView = true
-                        }
-                    ) {
-                        Text("Add clock")
-                    }
-                    .foregroundColor(.accentColor)
+                    } // DisclosureGroup
 
                     switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
@@ -121,6 +125,6 @@ struct ASAConditionalEditButton:  View {
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksView(forAppleWatch: false).environmentObject(ASAUserData.shared())
+        ASAClocksView(forAppleWatch: false).environmentObject(ASAUserData.shared)
     }
 }

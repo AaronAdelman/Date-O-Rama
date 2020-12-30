@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASANewClockDetailView: View {
-    @State var selectedRow:  ASARow = ASARow.generic()
+    @State var selectedRow:  ASARow = ASARow.generic
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -40,7 +40,7 @@ struct ASANewClockDetailView: View {
                     Spacer()
 
                     Button("Add") {
-                        let userData = ASAUserData.shared()
+                        let userData = ASAUserData.shared
                         userData.mainRows.insert(self.selectedRow, at: 0)
                         userData.savePreferences(code: .clocks)
 
@@ -68,6 +68,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedRow: ASARow.generic(), forAppleWatch: false)
+        ASANewClockDetailView(selectedRow: ASARow.generic, forAppleWatch: false)
     }
 }

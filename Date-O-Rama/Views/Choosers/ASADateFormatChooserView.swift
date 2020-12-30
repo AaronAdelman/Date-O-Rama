@@ -174,7 +174,7 @@ extension ASAComponentsPickerSection {
 
 struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASADateFormatChooserView(row: ASARow.generic(), tempMajorDateFormat: .full,
+        ASADateFormatChooserView(row: ASARow.generic, tempMajorDateFormat: .full,
 //                                 tempDateGeekFormat: "yyyy",
                                  calendarCode: .Gregorian, forAppleWatch: true)
     }

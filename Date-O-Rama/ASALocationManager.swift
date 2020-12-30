@@ -44,7 +44,7 @@ class ASALocationManager: NSObject, ObservableObject {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
         self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+//        self.locationManager.startUpdatingLocation()
 
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
@@ -76,38 +76,30 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocationData: ASALocationData = ASALocationData(location: nil, name: nil, locality: nil, country: nil, ISOCountryCode: nil, timeZone:  TimeZone.autoupdatingCurrent) {
+    @Published var deviceLocationData: ASALocationData = ASALocationData.NullIsland {
         willSet {
             objectWillChange.send()
         } // willSet
     } // var deviceLocationData
 
-//    var statusString: String {
-//        guard let status = locationAuthorizationStatus else {
-//            return "unknown"
-//        }
-//
-//        switch status {
-//        case .notDetermined: return "notDetermined"
-//        case .authorizedWhenInUse: return "authorizedWhenInUse"
-//        case .authorizedAlways: return "authorizedAlways"
-//        case .restricted: return "restricted"
-//        case .denied: return "denied"
-//        default: return "unknown"
-//        }
-//    }
-
     let objectWillChange = PassthroughSubject<Void, Never>()
 
     private let locationManager = CLLocationManager()
-}
+} // class ASALocationManager
+
+
+// MARK:  - CLLocationManagerDelegate
 
 extension ASALocationManager: CLLocationManagerDelegate {
-
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationAuthorizationStatus = status
-//        print(#function, statusString)
-    }
+//        print(#file, #function, status)
+        self.locationManager.startUpdatingLocation()
+    } // func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        debugPrint(#file, #function, error)
+    } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
 
     fileprivate func reverseGeocode(_ location: CLLocation) {
         let coder = CLGeocoder();
@@ -146,7 +138,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
         let Δ = self.lastDeviceLocation?.distance(from: location)
 
         if Δ == nil || Δ! >= 10.0 {
-            reverseGeocode(location)
+            self.reverseGeocode(location)
         }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 

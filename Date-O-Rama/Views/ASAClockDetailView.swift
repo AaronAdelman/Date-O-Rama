@@ -82,7 +82,7 @@ struct ASAClockDetailEditingSection:  View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
             NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
                 HStack {
-//                    ASACalendarSymbol()
+                    //                    ASACalendarSymbol()
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                 }
             }
@@ -92,30 +92,23 @@ struct ASAClockDetailEditingSection:  View {
                     VStack {
                         ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
                         Spacer()
-                        ASATimeZoneCell(timeZone: selectedRow.effectiveTimeZone, now: now)
+                        ASATimeZoneCell(timeZone: selectedRow.timeZone, now: now)
                     } // VStack
                 }
             }
             
-            if selectedRow.supportsLocales() {
+            if selectedRow.supportsLocales {
                 NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
-//                    HStack {
-//                        Text(verbatim:  selectedRow.localeIdentifier.localeCountryCodeFlag())
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag() + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
-//                    }
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag() + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
                 }
             }
             if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {
-                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.dateFormat,
-//                                                                     tempDateGeekFormat: selectedRow.dateGeekFormat,
-                                                                     calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
+                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempMajorDateFormat: selectedRow.dateFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName())
                 }
             }
             if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {
-                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.timeFormat,
-//                                                                     tempTimeGeekFormat: selectedRow.timeGeekFormat,
-                                                                     calendarCode: selectedRow.calendar.calendarCode)) {
+                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempMajorTimeFormat: selectedRow.timeFormat, calendarCode: selectedRow.calendar.calendarCode)) {
                     ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName())
                 }
             }
@@ -125,6 +118,6 @@ struct ASAClockDetailEditingSection:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASARow.generic(), now: Date(), shouldShowTime: true, deleteable: true, forAppleWatch: true)
+        ASAClockDetailView(selectedRow: ASARow.generic, now: Date(), shouldShowTime: true, deleteable: true, forAppleWatch: true)
     }
 }

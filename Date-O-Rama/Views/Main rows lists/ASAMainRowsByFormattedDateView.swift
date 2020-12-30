@@ -74,6 +74,6 @@ struct ASAMainRowsByFormattedDateSubview:  View {
 
 struct ASAMainRowsByFormattedDateView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic()]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
+        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }

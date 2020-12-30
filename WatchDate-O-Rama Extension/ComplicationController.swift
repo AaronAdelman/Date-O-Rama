@@ -40,7 +40,7 @@ extension ASAUserData {
 class ComplicationController: NSObject, CLKComplicationDataSource {
     public var complication:  CLKComplication?
     
-    let  userData = ASAUserData.shared()
+    let  userData = ASAUserData.shared
 
     
     // MARK: - Timeline Configuration

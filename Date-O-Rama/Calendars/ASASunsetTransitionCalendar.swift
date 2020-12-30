@@ -17,9 +17,9 @@
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
-    var defaultMajorDateFormat:  ASADateFormat = .short
+    var defaultDateFormat:  ASADateFormat = .short
     #else
-    var defaultMajorDateFormat:  ASADateFormat = .full
+    var defaultDateFormat:  ASADateFormat = .full
     #endif
 
     public var dateFormatter = DateFormatter()
@@ -69,9 +69,11 @@
         return NSLocalizedString("NO_SOLAR_TIME", comment: "")
     }
 
-    func solarTimeComponents(now: Date, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool) {
-        let latitude  = location!.coordinate.latitude
-        let longitude = location!.coordinate.longitude
+    func solarTimeComponents(now: Date, locationData:  ASALocationData, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool) {
+        let location = locationData.location
+        let timeZone = locationData.timeZone
+        let latitude  = location.coordinate.latitude
+        let longitude = location.coordinate.longitude
 
         var existsSolarTime = true
         if transition == nil {
@@ -100,9 +102,9 @@
             // Nighttime, transition is at the start of the nighttime
             //            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
             //            let nextDate = now.oneDayAfter
-            let nextDate = now.noon(timeZone:  timeZone!).oneDayAfter
+            let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
             var nextDayHalfStart:  Date
-            let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+            let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone )
             nextDayHalfStart = nextEvents[self.dayStart]!!
             assert(nextDayHalfStart > deoptionalizedTransition)
 
@@ -113,7 +115,7 @@
             daytime = false
         } else {
             // now < deoptionalizedTransition
-            let ourTimeZone = timeZone ?? TimeZone.autoupdatingCurrent
+            let ourTimeZone = timeZone
             let events = now.noon(timeZone:ourTimeZone).solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: ourTimeZone)
 
             let rawDayHalfStart: Date?? = events[self.dayStart]
@@ -131,7 +133,7 @@
             if dayHalfStart > deoptionalizedTransition {
                 // Uh-oh.  It found the day half start for the wrong day!
                 jiggeredNow = now - Date.SECONDS_PER_DAY
-                let events = jiggeredNow.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+                let events = jiggeredNow.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone )
 
                 let rawDayHalfStart: Date?? = events[self.dayStart]
 
@@ -158,7 +160,7 @@
                 // Previous nighttime
                 //                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Previous nighttime")
                 var previousDayHalfEnd:  Date
-                previousDayHalfEnd = self.startOfDay(for: jiggeredNow, location: location, timeZone: timeZone ?? TimeZone.autoupdatingCurrent)
+                previousDayHalfEnd = self.startOfDay(for: jiggeredNow, locationData: locationData)
                 assert(dayHalfStart > previousDayHalfEnd)
                 //                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
                 hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
@@ -167,15 +169,15 @@
         }
 
         return (hours:  hours, daytime:  daytime, valid:  true)
-    } // func solarTimeComponents(now: Date, localeIdentifier: String, location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
+    } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocationData, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
 
     func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat,
 //                    timeGeekFormat: String,
-                    location: CLLocation?, timeZone: TimeZone?, transition:  Date??) -> String {
+                    locationData: ASALocationData, transition:  Date??) -> String {
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
 
-        let (hours, daytime, valid) = self.solarTimeComponents(now: now, location: location, timeZone: timeZone, transition: transition)
+        let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
         if !valid {
             return invalidTimeString()
         }
@@ -200,7 +202,7 @@
             result = self.fractionalHoursTimeString(hours:  hours, symbol:  symbol, localeIdentifier:  localeIdentifier)
         }
         return result
-    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?, timeZone: TimeZone?) -> String
+    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, locationData: ASALocationData) -> String
 
     func fractionalHoursTimeString(hours:  Double, symbol:  String, localeIdentifier:  String) -> String {
         var result = ""
@@ -254,21 +256,22 @@
 //                        dateGeekFormat: String,
                         timeFormat: ASATimeFormat,
 //                        timeGeekFormat: String,
-                        location: CLLocation?, timeZone: TimeZone?) -> String {
-        let (fixedNow, transition) = now.solarCorrected(location: location!, timeZone: timeZone ?? TimeZone.autoupdatingCurrent, transitionEvent: self.dayEnd)
+                        locationData:  ASALocationData) -> String {
+        let timeZone = locationData.timeZone
+        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
 
         var timeString:  String = ""
         if timeFormat != .none {
             timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat,
 //                                         timeGeekFormat:  timeGeekFormat,
-                                         location:  location, timeZone:  timeZone, transition: transition) // TO DO:  EXPAND ON THIS!
+                                         locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
         }
 
-        if location == nil {
-            debugPrint(#file, #function, "No location")
-            return "No location"
-        }
+//        if location == nil {
+//            debugPrint(#file, #function, "No location")
+//            return "No location"
+//        }
 
 //        self.dateFormatter.calendar = self.ApplesCalendar
 //        let acceptableIdentifiers: [Calendar.Identifier] = [.hebrew, .islamic, .islamicCivil, .islamicTabular, .islamicUmmAlQura]
@@ -341,9 +344,9 @@
             let SEPARATOR = ", "
             return dateString + SEPARATOR + timeString
         }
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location: CLLocation?) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location:  CLLocation) -> String
 
-//    public func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, location: CLLocation?, timeZone: TimeZone?) -> String {
+//    public func dateTimeString(now: Date, localeIdentifier: String, LDMLString: String, locationData: ASALocationData) -> String {
 //        if location == nil {
 //            return "No location"
 //        }
@@ -363,7 +366,7 @@
 //        let result = self.dateFormatter.string(from: fixedNow)
 //
 //        return result
-//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location: CLLocation?) -> String
+//    } // func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, location:  CLLocation) -> String
 
 //    var LDMLDetails: Array<ASALDMLDetail> = [
 //        ASALDMLDetail(name: "HEADER_G", geekCode: "GGGG"),
@@ -388,14 +391,16 @@
 
     public var supportsTimeZones: Bool = false
 
-    public func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date {
-        if location == nil {
-            return date.sixPMYesterday(timeZone: timeZone)
-        }
+    func startOfDay(for date: Date, locationData:  ASALocationData) -> Date {
+//        if location == nil {
+//            return date.sixPMYesterday(timeZone: timeZone)
+//        }
 
+        let location = locationData.location
+        let timeZone = locationData.timeZone
         let yesterday: Date = date.addingTimeInterval(-Date.SECONDS_PER_DAY)
-        let (fixedYesterday, _) = yesterday.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
-        let events = fixedYesterday.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+        let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let events = fixedYesterday.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
             return date.sixPMYesterday(timeZone: timeZone)
@@ -405,15 +410,17 @@
         }
         let dayEnd:  Date = rawDayEnd!! // שקיעה
         return dayEnd
-    } // func startOfDay(for date: Date, location:  CLLocation?, timeZone:  TimeZone) -> Date
+    } // func startOfDay(for date: Date, locationData:  ASALocationData) -> Date
 
-    public func startOfNextDay(date: Date, location: CLLocation?, timeZone:  TimeZone) -> Date {
-        if location == nil {
-            return date.sixPM(timeZone: timeZone)
-        }
+    func startOfNextDay(date: Date, locationData:  ASALocationData) -> Date {
+        let location = locationData.location
+        let timeZone = locationData.timeZone
+//        if location == nil {
+//            return date.sixPM(timeZone: timeZone)
+//        }
 
-        let (fixedNow, _) = date.solarCorrected(location: location!, timeZone: timeZone, transitionEvent: self.dayEnd)
-        let events = fixedNow.solarEvents(latitude: (location!.coordinate.latitude), longitude: (location!.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+        let (fixedNow, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let events = fixedNow.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
             return date.sixPM(timeZone: timeZone)
@@ -423,7 +430,7 @@
         }
         let dayEnd:  Date = rawDayEnd!!
         return dayEnd
-    } // func transitionToNextDay(now: Date, location: CLLocation?, timeZone:  TimeZone) -> Date
+    } // func transitionToNextDay(now: Date, locationData:  ASALocationData) -> Date
 
     public var supportsLocations: Bool = true
 
@@ -473,7 +480,7 @@
 
     public var canSplitTimeFromDate:  Bool = true
 
-    var defaultMajorTimeFormat:  ASATimeFormat = .decimalTwelveHour
+    var defaultTimeFormat:  ASATimeFormat = .decimalTwelveHour
 
 
     // MARK: - Date components
@@ -493,7 +500,7 @@
     // MARK:  - Extracting Components
 
     func hoursMinutesSecondsComponents(date: Date, transition:  Date??, locationData:  ASALocationData) -> (hour:  Int, minute:  Int, second:  Int, nanosecond:  Int) {
-        let solarTimeComponents = self.solarTimeComponents(now: date, location: locationData.location, timeZone: locationData.timeZone, transition: transition)
+        let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, transition: transition)
         if !solarTimeComponents.valid {
             return (hour:  -1, minute:  -1, second:  -1, nanosecond:  -1)
         }
@@ -506,8 +513,8 @@
         // Returns the value for one component of a date.
 
         var calendar = self.ApplesCalendar
-        calendar.timeZone = locationData.timeZone ?? TimeZone.current
-        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
+        calendar.timeZone = locationData.timeZone
+        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
 
         if [ASACalendarComponent.hour, ASACalendarComponent.minute, ASACalendarComponent.second, ASACalendarComponent.nanosecond].contains(component) {
             let HMSComponents = self.hoursMinutesSecondsComponents(date: date, transition: transition, locationData: locationData)
@@ -539,7 +546,7 @@
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
         // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
-        let (fixedDate, transition) = date.solarCorrected(location: locationData.location!, timeZone: locationData.timeZone!, transitionEvent: self.dayEnd)
+        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
 
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {

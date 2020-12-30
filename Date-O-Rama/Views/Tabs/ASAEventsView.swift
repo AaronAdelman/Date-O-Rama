@@ -11,27 +11,12 @@ import EventKit
 import EventKitUI
 
 
-struct ASAIndentedText:  View {
-    var title:  String
-
-    var body: some View {
-        HStack {
-            Spacer().frame(width:  25.0)
-            Text("•")
-            Text(NSLocalizedString(title, comment: ""))
-        }
-    } // var body
-} // struct ASAIndentedText
-
-
-// MARK: -
-
 struct ASAEventsView: View {
     let ADD_EXTERNAL_EVENT_STRING = "Add external event"
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
 
-    @ObservedObject var eventManager = ASAExternalEventManager.shared
+    @ObservedObject var eventManager = ASAEKEventManager.shared
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
 
@@ -83,13 +68,13 @@ struct ASAEventsView: View {
     
     func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        if ASAExternalEventManager.shared.shouldUseExternalEvents {
+        if ASAEKEventManager.shared.shouldUseEKEvents {
             let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
             unsortedEvents = unsortedEvents + externalEvents
         }
         
-        for eventCalendar in userData.internalEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.eventDetails(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier)
+        for eventCalendar in userData.ASAEventCalendars {
+            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
         } // for eventCalendar in userData.internalEventCalendars
         
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -164,7 +149,7 @@ struct ASAEventsView: View {
                             }
                         }
 
-                        if ASAExternalEventManager.shared.shouldUseExternalEvents {
+                        if ASAEKEventManager.shared.shouldUseEKEvents {
                             Button(action:
                                     {
                                         self.showingEventEditView = true
@@ -188,20 +173,20 @@ struct ASAEventsView: View {
                             
                             if self.enoughRowsToShowSecondaryDates() {
                                 Toggle(isOn: $eventsViewShouldShowSecondaryDates) {
-                                    ASAIndentedText(title: "Show secondary dates")
+                                    Text("Show secondary dates")
                                 }
                             }
 
-                            if ASAExternalEventManager.shared.userHasPermission {
-                                Toggle(isOn: ASAExternalEventManager.shared.$shouldUseExternalEvents) {
-                                    ASAIndentedText(title: "Use external events")
+                            if ASAEKEventManager.shared.userHasPermission {
+                                Toggle(isOn: ASAEKEventManager.shared.$shouldUseEKEvents) {
+                                    Text("Use external events")
                                 } // Toggle
 
                                 Button(action:
                                         {
                                             self.showingEventCalendarChooserView = true
                                         }, label:  {
-                                            ASAIndentedText(title: NSLocalizedString("External event calendars", comment: ""))
+                                            Text(NSLocalizedString("External event calendars", comment: ""))
                                         })
                                     .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
                                         ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
@@ -213,13 +198,14 @@ struct ASAEventsView: View {
 
                             NavigationLink(destination:                             ASAEventCalendarsView()
                             ) {
-                                ASAIndentedText(title: "Internal event calendars")
+                                Text("Internal event calendars")
                             }
                         } // if showingPreferences
                     } // Section
 
                     Section {
-                        ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+//                        ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+                        ForEach(ASAEventManager.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                             event
                             in
                             ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
@@ -354,7 +340,8 @@ struct ASAEventCell:  View {
             if self.eventsViewShouldShowSecondaryDates {
                 ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
             }
-            Rectangle().frame(width:  2.0).foregroundColor(event.color)
+//            Rectangle().frame(width:  2.0).foregroundColor(event.color)
+            ASAEventColorRectangle(color: event.color)
             VStack(alignment: .leading) {
                 if self.sizeClass == .compact {
                     Text(event.title).font(.callout).bold().foregroundColor(Color(UIColor.label))
@@ -413,7 +400,7 @@ struct ASAStartAndEndTimesSubcell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.effectiveTimeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
+            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
                 ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
                 Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))

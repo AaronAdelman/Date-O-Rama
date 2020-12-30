@@ -33,6 +33,14 @@ class ASAEventCalendar:  ASALocatedObject {
     @Published var builtIn:  Bool = true
 
 //    @Published var localeIdentifier:  String = ""
+
+    public var calendarCode:  ASACalendarCode {
+        get {
+            return self.unlocatedEventCalendar?.eventsFile?.calendarCode ?? .Gregorian
+        }
+    }
+
+
     
     public func dictionary() -> Dictionary<String, Any> {
         //        debugPrint(#file, #function)
@@ -40,19 +48,19 @@ class ASAEventCalendar:  ASALocatedObject {
             UUID_KEY:  uuid.uuidString,
             //            EVENT_SOURCE_CODE_KEY:  self.eventSource?.eventSourceCode.rawValue ?? "",
             FILE_NAME_KEY:  self.fileName,
-            TIME_ZONE_KEY:  effectiveTimeZone.identifier,
+            TIME_ZONE_KEY:  timeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
             BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING,
             LOCALE_KEY:  localeIdentifier
             ] as [String : Any]
         
-        if location != nil {
-            result[LATITUDE_KEY] = self.location!.coordinate.latitude
-            result[LONGITUDE_KEY] = self.location!.coordinate.longitude
-            result[ALTITUDE_KEY] = self.location?.altitude
-            result[HORIZONTAL_ACCURACY_KEY] = self.location?.horizontalAccuracy
-            result[VERTICAL_ACCURACY_KEY] = self.location?.verticalAccuracy
-        }
+//        if location != nil {
+            result[LATITUDE_KEY] = self.location.coordinate.latitude
+            result[LONGITUDE_KEY] = self.location.coordinate.longitude
+            result[ALTITUDE_KEY] = self.location.altitude
+            result[HORIZONTAL_ACCURACY_KEY] = self.location.horizontalAccuracy
+            result[VERTICAL_ACCURACY_KEY] = self.location.verticalAccuracy
+//        }
         
         if self.locationData.name != nil {
             result[PLACE_NAME_KEY] = self.locationData.name
@@ -171,12 +179,12 @@ class ASAEventCalendar:  ASALocatedObject {
         return self.unlocatedEventCalendar!.eventSourceName()
     } // func eventSourceName() -> String
     
-    func eventDetails(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String) -> Array<ASAEvent> {
-        if unlocatedEventCalendar == nil || self.locationData.location == nil {
+    func events(startDate:  Date, endDate:  Date, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
+        if unlocatedEventCalendar == nil {
             return []
         }
         
-        return self.unlocatedEventCalendar!.eventDetails(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier)
+        return self.unlocatedEventCalendar!.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, allDayEventsOnly:  allDayEventsOnly)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 
     class func eventCalendar(eventsFileName:  String) -> ASAEventCalendar? {

@@ -11,7 +11,7 @@ import CoreLocation
 
 struct ASALocationData:  Equatable, Identifiable {
     var id = UUID()
-    var location:  CLLocation?
+    var location:  CLLocation = CLLocation.NullIsland
     var name:  String?
     var locality:  String?
     var country:  String?
@@ -24,13 +24,16 @@ struct ASALocationData:  Equatable, Identifiable {
     var thoroughfare: String?
     var subThoroughfare: String?
     
-    var timeZone:  TimeZone?
+    var timeZone:  TimeZone = TimeZone.GMT
 } // struct ASALocationData
+
+
+// MARK:  -
 
 extension ASALocationData {
     static func create(placemark:  CLPlacemark?, location:  CLLocation?) -> ASALocationData {
-        let usedLocation = location != nil ? location! : placemark?.location
-        let temp = ASALocationData(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone)
+        let usedLocation = location != nil ? location! : (placemark?.location ?? CLLocation.NullIsland)
+        let temp = ASALocationData(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone ?? TimeZone.GMT)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocationData
@@ -56,10 +59,8 @@ extension ASALocationData {
             if temp == "" {
                 if self.name != nil {
                     temp = self.name!
-                } else if self.location != nil {
-                    temp = self.location!.humanInterfaceRepresentation
                 } else {
-                    temp = NSLocalizedString("MYSTERY_LOCATION", comment: "")
+                    temp = self.location.humanInterfaceRepresentation
                 }
             }
 
@@ -82,10 +83,8 @@ extension ASALocationData {
 
             if self.name != nil {
                 return self.name!
-            } else if self.location != nil {
-                return self.location!.humanInterfaceRepresentation
             } else {
-                return NSLocalizedString("MYSTERY_LOCATION", comment: "")
+                return self.location.humanInterfaceRepresentation
             }
         } // get
     } // var shortFormattedOneLineAddress
@@ -113,14 +112,19 @@ extension ASALocationData {
             }
 
             if temp == "" {
-                if self.location != nil {
-                    temp = self.location!.humanInterfaceRepresentation
-                } else {
-                    temp = NSLocalizedString("MYSTERY_LOCATION", comment: "")
-                }
+                temp = self.location.humanInterfaceRepresentation
             }
 
             return temp
         } // get
     } // var longFormattedOneLineAddress
+} // extension ASALocationData
+
+
+// MARK:  -
+
+extension ASALocationData {
+    static var NullIsland:  ASALocationData {
+        return ASALocationData(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
+    } // static var NullIsland
 } // extension ASALocationData

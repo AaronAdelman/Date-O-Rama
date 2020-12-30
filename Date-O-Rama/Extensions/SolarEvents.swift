@@ -59,7 +59,6 @@ extension Date {
 
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = timeZone
-        //        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
 
         let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
         //        debugPrint(#file, #function, "N:", N)
@@ -154,9 +153,6 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
     // NOTE: UT potentially needs to be adjusted into the range [0,24) by adding/subtracting 24
     UT = UT.normalizedTo(lower: 0.0, upper: 24.0)
 
-    //    var gregorianCalendar = Calendar(identifier: .gregorian)
-    //    gregorianCalendar.timeZone = TimeZone(secondsFromGMT: 0)!
-    //    let midnight = gregorianCalendar.startOfDay(for:date)
     let midnight = date.previousMidnight(timeZoneOffset:  0)
     var result = midnight.addingTimeInterval(UT * Date.SECONDS_PER_HOUR) + offset
 

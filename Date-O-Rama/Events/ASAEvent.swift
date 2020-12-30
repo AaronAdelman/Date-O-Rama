@@ -10,21 +10,6 @@ import Foundation
 import SwiftUI
 import EventKit
 
-protocol ASAEventCompatible {
-    var eventIdentifier: String! { get }
-    var title:  String! { get }
-    var startDate:  Date! { get }
-    var endDate: Date! { get }
-    var isAllDay: Bool { get }
-    var timeZone: TimeZone? { get }
-    var color:  Color { get }
-    var calendarTitle:  String { get }
-    var calendarCode:  ASACalendarCode { get }
-    var isEKEvent:  Bool { get }
-} // protocol ASAEventCompatible
-
-
-// MARK: -
 
 struct ASAEvent:  ASAEventCompatible {
     var eventIdentifier: String! = "\(UUID())"
@@ -38,7 +23,11 @@ struct ASAEvent:  ASAEventCompatible {
     var calendarTitle: String
     var isEKEvent: Bool = false
     var calendarCode: ASACalendarCode
+    var locationData:  ASALocationData
 } // struct ASAEvent
+
+
+// MARK: -
 
 extension ASAEvent:  Equatable {
     static func ==(lhs: ASAEvent, rhs: ASAEvent) -> Bool {
@@ -72,6 +61,8 @@ extension ASAEvent:  Equatable {
 } // extension ASAEvent:  Equatable
 
 
+// MARK: -
+
 extension ASAEvent {
     func relevant(startDate: Date, endDate: Date) -> Bool {
         if self.startDate == self.endDate && self.startDate == startDate {
@@ -89,37 +80,3 @@ extension ASAEvent {
         return true
     } // func relevant(startDate: Date, endDate: Date) -> Bool
 } // extension ASAEvent
-
-
-// MARK: -
-
-extension EKEvent:  ASAEventCompatible {
-    var isEKEvent: Bool {
-        get {
-            return true
-        } // get
-    } // var isEKEvent
-    
-    var color: Color {
-        get {
-            let calendarColor = self.calendar.cgColor
-            if calendarColor == nil {
-                return Color("genericCalendar")
-            }
-
-            return Color(UIColor(cgColor: calendarColor!))
-        } // get
-    } // var color
-    
-    var calendarTitle:  String {
-        get {
-            return self.calendar.title
-        } // get
-    } // var calendarTitle
-    
-    var calendarCode: ASACalendarCode {
-        get {
-            return .Gregorian
-        } // get
-    } // var calendarCode
-} // extension EKEvent:  ASAEventCompatible
