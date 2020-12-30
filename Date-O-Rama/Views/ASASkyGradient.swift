@@ -6,6 +6,7 @@
 //  Copyright © 2020 Adelsoft. All rights reserved.
 //
 
+import CoreLocation
 import SwiftUI
 
 enum ASAPolarLighting {
@@ -13,7 +14,7 @@ enum ASAPolarLighting {
     case sunDoesNotRise
     case cannotTell
 
-    static func given(month:  Int, latitude:  Double, calendarCode:  ASACalendarCode) -> ASAPolarLighting {
+    static func given(month:  Int, latitude: CLLocationDegrees, calendarCode:  ASACalendarCode) -> ASAPolarLighting {
         if calendarCode.isHebrewCalendar {
             if month < 8 {
                 // Winter in Northern Hemisphere
@@ -50,7 +51,7 @@ struct ASASkyGradient: View {
         return Color.blend(startRed: SUNSET_RED_RED, startGreen: SUNSET_RED_GREEN, startBlue: SUNSET_RED_BLUE, endRed: MIDNIGHT_BLUE_TOP_RED, endGreen: MIDNIGHT_BLUE_TOP_GREEN, endBlue: MIDNIGHT_BLUE_TOP_BLUE, progress: progress)
     }
 
-    fileprivate func skyGradientColors(transitionType:  ASATransitionType, calendarType:  ASACalendarType, calendarCode:  ASACalendarCode, month:  Int, latitude:  Double) -> [Color] {
+    fileprivate func skyGradientColors(transitionType:  ASATransitionType, calendarType:  ASACalendarType, calendarCode:  ASACalendarCode, month:  Int, latitude: CLLocationDegrees) -> [Color] {
         let hour: Int = processedRow.hour
 
         if hour == -1 {

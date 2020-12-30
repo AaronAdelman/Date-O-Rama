@@ -54,7 +54,7 @@ struct ASASolarEvent:  Hashable {
 
 
 extension Date {
-    func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
+    func solarEvents(latitude: CLLocationDegrees, longitude: CLLocationDegrees, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
         // 1. first calculate the day of the year
 
         var calendar = Calendar(identifier: .gregorian)
@@ -92,10 +92,10 @@ extension Date {
         } // for event in events
 
         return result
-    } // func solarEvents(latitude:  Double, longitude:  Double, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
+    } // func solarEvents(latitude: CLLocationDegrees, longitude: CLLocationDegrees, events:  Array<ASASolarEvent>) -> Dictionary<ASASolarEvent, Date?>
 } // extension Date
 
-func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval, timeZone:  TimeZone) -> Date? {
+func solarEventsContinued(t:  Double, latitude: CLLocationDegrees, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double, offset:  TimeInterval, timeZone:  TimeZone) -> Date? {
     // 3. calculate the Sun's mean anomaly
     let M = (0.9856 * t) - 3.289
 
@@ -163,7 +163,7 @@ func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  D
     }
 
     return result
-} // func solarEventsContinued(t:  Double, latitude:  Double, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?
+} // func solarEventsContinued(t:  Double, latitude: CLLocationDegrees, degreesBelowHorizon:  Double, risingDesired:  Bool, date:  Date, lngHour:  Double) -> Date?
 
 extension Double {
     func normalizedTo(lower:  Double, upper:  Double) -> Double {

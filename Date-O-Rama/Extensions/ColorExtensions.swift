@@ -6,6 +6,7 @@
 //  Copyright © 2020 Adelsoft. All rights reserved.
 //
 
+import CoreLocation
 import Foundation
 import SwiftUI
 
@@ -77,7 +78,7 @@ extension Color {
 
     static var sunsetRed:  Color = Color(red: SUNSET_RED_RED, green: SUNSET_RED_GREEN, blue: SUNSET_RED_BLUE)
 
-    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType, month:  Int, latitude:  Double, calendarCode:  ASACalendarCode) -> Color {
+    static func foregroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType, month:  Int, latitude: CLLocationDegrees, calendarCode:  ASACalendarCode) -> Color {
         let DAY_COLOR: Color   = Color("dayForeground")
         let NIGHT_COLOR: Color = Color("nightForeground")
         let JULIAN_DAY_COLOR: Color = Color("julianDayForeground")
