@@ -1,6 +1,6 @@
 //
 //  ASARow.swift
-//  DoubleDate
+//  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2018-01-04.
 //  Copyright © 2018 Adelsoft. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ComplicationController.swift
-//  DoubleDate WatchKit Extension
+//  Date-O-Rama WatchKit Extension
 //
 //  Created by אהרן שלמה אדלמן on 2017-11-14.
 //  Copyright © 2017 Adelsoft. All rights reserved.

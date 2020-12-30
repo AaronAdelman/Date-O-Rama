@@ -1,6 +1,6 @@
 //
 //  ASACalendarCode.swift
-//  DoubleDate
+//  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2018-02-03.
 //  Copyright © 2018 Adelsoft. All rights reserved.
