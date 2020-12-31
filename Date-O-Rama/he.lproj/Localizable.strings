@@ -40,160 +40,10 @@
 "HebrewSolarMA"         = "עברי (מגן אברהם)";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
-
-//"HEADER_Preview" = "Preview";
-
-"HEADER_E" = "יום בשבוע";
-"ITEM_E_"       = "אין";
-"ITEM_E_eeeee"  = "צר (אות 1)";
-"ITEM_E_eeeeee" = "מקוצר";
-"ITEM_E_eee"    = "ראשי תיבות";
-"ITEM_E_eeee"   = "רחב";
-"ITEM_E_e"      = "ספרה 1";
-"ITEM_E_ee"     = "2 ספרות";
-
-"HEADER_y" = "שנה";
-"ITEM_y_"     = "אין";
-"ITEM_y_y"    = "מלאה";
-"ITEM_y_yy"   = "רק 2 ספרות";
-"ITEM_y_yyy"  = "לפחות 3 ספרות";
-"ITEM_y_yyyy" = "לפחות 4 ספרות";
-
-"HEADER_M" = "חודש";
-"ITEM_M_"      = "אין";
-"ITEM_M_MMMMM" = "צר";
-"ITEM_M_MMM"   = "ראשי תיבות";
-"ITEM_M_MMMM"  = "רחב";
-"ITEM_M_M"     = "ספרה 1";
-"ITEM_M_MM"    = "2 ספרות";
-
-"HEADER_d" = "יום";
-"ITEM_d_"   = "אין";
-"ITEM_d_d"  = "ספרות מינימליות";
-"ITEM_d_dd" = "2 ספרות";
-
-"HEADER_G" = "תקופה";
-"ITEM_G_"       = "אין";
-"ITEM_G_GGGGG"  = "צרה";
-"ITEM_G_G"      = "ראשי תיבות";
-"ITEM_G_GGGG"   = "רחבה";
-
-"HEADER_Y" = "שנה לשבוע בשנה";
-"ITEM_Y_"     = "אין";
-"ITEM_Y_Y"    = "מלאה";
-"ITEM_Y_YY"   = "רק 2 ספרות";
-"ITEM_Y_YYY"  = "לפחות 3 ספרות";
-"ITEM_Y_YYYY" = "לפחות 4 ספרות";
-
-"HEADER_U" = "שנה מחזורית";
-"ITEM_U_"      = "אין";
-"ITEM_U_UUUUU" = "צרה";
-"ITEM_U_U"     = "ראשי תיבות";
-"ITEM_U_UUUU"  = "רחבה";
-
-//"HEADER_r" = "Related Gregorian year";
-//"ITEM_r_"     = "אין";
-//"ITEM_r_r"    = "ספרות מינימליות";
-//"ITEM_r_rr"   = "לפחות 2 ספרות";
-//"ITEM_r_rrr"  = לפחות 3 ספרות;
-//"ITEM_r_rrrr" = לפחות 4 ספרות;
-
-"HEADER_Q" = "רבעון";
-"ITEM_Q_"      = "אין";
-"ITEM_Q_Q"     = "ספרה 1";
-"ITEM_Q_QQ"    = "2 ספרות";
-"ITEM_Q_QQQQQ" = "צר";
-"ITEM_Q_QQQ"   = "ראשי תיבות";
-"ITEM_Q_QQQQ"  = "רחב";
-
-"HEADER_w" = "שבוע בשנה";
-"ITEM_w_"   = "אין";
-"ITEM_w_w"  = "ספרות מינימליות";
-"ITEM_w_ww" = "2 ספרות";
-
-"HEADER_W" = "שבוע בחודש";
-"ITEM_W_"  = "אין";
-"ITEM_W_W" = "ספרה 1";
-
-"HEADER_D" = "יום בשנה";
-"ITEM_D_"    = "אין";
-"ITEM_D_D"   = "ספרות מינימליות";
-"ITEM_D_DD"  = "לפחות 2 ספרות";
-"ITEM_D_DDD" = "3 digits";
-
-"HEADER_F" = "יום בשבוע בחודש";
-"ITEM_F_"  = "אין";
-"ITEM_F_F" = "ספרה 1";
-
-//"HEADER_g" = "Modified Julian day";
-//"ITEM_g_"   = "אין";
-//"ITEM_g_g"  = "ספרות מינימליות";
-
-//"HEADER_-" = "מפריד מקף בתאריך";
-//"ITEM_-_"   = "אין";
-//"ITEM_-_-"  = "יש";
-
-"HEADER_a" = "Period";
-"ITEM_a_"      = "אין";
-"ITEM_a_a"     = "AM, PM ראשי תיבות";
-"ITEM_a_aaaa"  = "AM, PM רחב";
-"ITEM_a_aaaaa" = "AM, PM צר";
-"ITEM_a_b"     = "am, pm, noon, midnight ראשי תיבות";
-"ITEM_a_bbbb"  = "am, pm, noon, midnight רחב";
-"ITEM_a_bbbbb" = "am, pm, noon, midnight צר";
-"ITEM_a_B"     = "flexible day periods ראשי תיבות";
-"ITEM_a_BBBB"  = "flexible day periods רחב";
-"ITEM_a_BBBBB" = "flexible day periods צר";
-
-"HEADER_H" = "שעה";
-"ITEM_H_"   = "אין";
-"ITEM_H_h"  = "שעה [1-12], ספרות מינימליות";
-"ITEM_H_hh" = "שעה [1-12], 2 ספרות";
-"ITEM_H_H"  = "שעה [0-23], ספרות מינימליות";
-"ITEM_H_HH" = "שעה [0-23], 2 ספרות";
-"ITEM_H_K"  = "שעה [0-11], ספרות מינימליות";
-"ITEM_H_KK" = "שעה [0-11], 2 ספרות";
-"ITEM_H_k"  = "שעה [1-24], ספרות מינימליות";
-"ITEM_H_kk" = "שעה [1-24], 2 ספרות";
-
-"HEADER_m" = "דקה";
-"ITEM_m_m"  = "ספרות מינימליות";
-"ITEM_m_mm" = "2 ספרות";
-
-"HEADER_s" = "שניה";
-"ITEM_s_"   = "אין";
-"ITEM_s_s"  = "ספרות מינימליות";
-"ITEM_s_ss" = "2 ספרות";
-
-"HEADER_z" = "Time zone";
-"ITEM_z_"        = "None";
-"ITEM_z_z"       = "Short specific non-location";
-"ITEM_z_zzzz"      = "Long specific non-location";
-"ITEM_z_O"       = "Short localized GMT";
-"ITEM_z_OOOO"    = "Long localized GMT ";
-"ITEM_z_v"       = "Short generic";
-"ITEM_z_vvvv"    = "Long generic";
-"ITEM_z_V"       = "Short time zone ID";
-"ITEM_z_VV"      = "Long time zone ID";
-"ITEM_z_VVV"     = "Exemplar city";
-"ITEM_z_VVVV"    = "Generic location";
-"ITEM_z_X"       = "ISO 8601 basic, hours and optional minutes, Z";
-"ITEM_z_XX"      = "ISO 8601 basic, hours and minutes, Z";
-"ITEM_z_XXX"     = "ISO 8601 extended, hours and minutes, Z";
-"ITEM_z_XXXX"    = "ISO 8601 basic, hours, minutes and optional seconds, Z";
-"ITEM_z_XXXXX"   = "ISO 8601 extended, hours, minutes and optional seconds, Z";
-"ITEM_z_x"       = "ISO 8601 basic, hours field and optional minutes";
-"ITEM_z_xx"      = "ISO 8601 basic, hours and minutes";
-"ITEM_z_xxx"     = "ISO 8601 extended, hours and minutes";
-"ITEM_z_xxxx"    = "ISO 8601 basic, hours, minutes and optional seconds";
-"ITEM_z_xxxxx"   = "ISO 8601 extended, hours, minutes and optional seconds";
-
 "HEADER_Row" = "שעון";
-
 "HEADER_Calendar" = "לוח שנה";
-
+"HEADER_BuiltInEventCalendars" = "לוחות שנה לאירועים (מובנים)";
 "HEADER_Locale"   = "שפה ואזור";
-
 "HEADER_Date_format" = "מבנה תאריך";
 "HEADER_Time_format" = "מבנה זמן";
 "ITEM_None"                             = "אין";
@@ -201,8 +51,6 @@
 "ITEM_Long"                             = "ארוך";
 "ITEM_Medium"                           = "בינוני";
 "ITEM_Short"                            = "מקוצר";
-"ITEM_Components"                       = "רכיבים";
-//"ITEM_Raw_LDML"      = "Raw LDML";
 "ITEM_ISO8601YearMonthDay"              = "ISO 8601 (שנה-חודש-יום)";
 "ITEM_ISO8601YearWeekDay"               = "ISO 8601 (שנה-שבוע-יום)";
 "ITEM_ISO8601YearDay"                   = "ISO 8601 (שנה-יום)";
@@ -214,47 +62,25 @@
 "ITEM_ShortWithWeekdayWithoutYear"      = "מקוצר עם יום־השבוע בלי שנה";
 "ITEM_MediumWithWeekdayWithoutYear"     = "בינוני עם יום־השבוע בלי שנה";
 "ITEM_FullWithoutYear"                  = "מלא בלי שנה";
-
 "ITEM_decimalTwelveHour"            = "עשרוני 12 שעות";
 "ITEM_JewishCalendricalCalculation" = "יהודי, חישוב הלוח";
 "ITEM_decimal"                      = "עשרוני";
 "ITEM_hexadecimal"                  = "הקסדצימלי";
-
-"HEADER_Date" = "רכיבי תאריך";
-
-"HEADER_Other" = "אחרים";
-"ITEM_NEXT_DATE_TRANSITION" = "תחילת היום הבא";
-"ITEM_NEXT_DAY" = "היום הבא";
-
 "HEADER_TIME_ZONE" = "שעון מקומי";
-
 "HEADER_LOCATION" = "מקום";
-
-"HEADER_MODULAR_LARGE" = "Modular large";
-
 "AUTOUPDATING_CURRENT_TIME_ZONE" = "נוכחי מעודכן אוטומטית";
-
 "DEVICE_LOCATION" = "מקום המכשיר";
 "LAST_DEVICE_LOCATION" = "מקום המכשיר (האחרון הרשום)";
 "NO_DEVICE_LOCATION_PERMISSION" = "מצטער, אבל אין הרשאה ל־Date-O-Rama לגשת למיקום המתקן שלך. אפשר לשנות זאת ביישום ״הגדרות״.";
-
-"HEADER_EVENTS" = "אירועים";
-
 "ADDRESS_SEPARATOR" = ", ";
-
 "Use device location" = "השתמש במיקום המכשיר";
 "Requested address"   = "כתובת מבוקשת";
-
 "CLOCKS_TAB"              = "שעונים";
 "EVENTS_TAB"              = "אירועים";
-"PREFERENCES_TAB"         = "הגדרות";
 "COMPLICATION_CLOCKS_TAB" = "שעון יד";
-
-//"All day" = "יום שלם";
 "INTERVAL_SEPARATOR" = " - ";
 "Show secondary dates" = "הצג תאריכים שניים";
 "Today" = "היום";
-
 "Daily Jewish events"            = "יהדות (זמנים)";
 "All-day Jewish events"          = "יהדות";
 "Jewish minor fasts"             = "יהדות (תעניות קטנות)";
@@ -267,28 +93,20 @@
 "Islamic holidays (Umm Al-Qura)" = "אסלאם (אום אל־קורה)";
 "Antisemitic events"             = "אנטישמיות";
 "Chinese zodiac events"          = "גלגל המזלות הסיני";
-
 "Add external event" = "הוסף אירוע חיצוני";
-
 "Use external events" = "השתמש באירועים חיצוניים";
-
 "External events" = "אירועים חיצוניים";
 "Internal events" = "אירועים פנימיים";
-
-//"???" = "???";
-
 "modularLarge"     = "שורות תצוגות גדולות של 3 שורות";
 "modularSmall"     = "שורות תצוגות קטנות של 2 שורות";
 "extraLarge"       = "שורות תצוגות גדולות של 2 שורות";
 "utilitarianLarge" = "שורות תצוגות גדולות של שור 1";
 "utilitarian"      = "שורות תצוגות קטנות של שור 1";
-
 "3-line large" = "גדולה של 3 שורות";
 "2-line small" = "קטנה של 2 שורות";
 "2-line large" = "גדולה של 2 שורות";
 "1-line small" = "קטנה של שור 1";
 "1-line large" = "גדולה של שור 1";
-
 "Show calendars:"      = "הצג לוחות:";
 "All calendars"        = "כל לוחות";
 "Apple calendars"      = "לוחות אפל";
@@ -296,34 +114,24 @@
 "Lunisolar calendars"  = "לוחות ירחיות־שמשיות";
 "Lunar calendars"      = "לוחות ירחיות";
 "Julian day calendars" = "לוחות יום יוליאני";
-
 "Show locales:"           = "הצג מיקומים:";
 "All locales"             = "כל מיקומים";
 "Apple locales"           = "מיקומי אפל";
 "User’s language locales" = "מיקומי שפת המשתמש";
 "User’s region locales"   = "מיקומי איזור המשתמש";
-
 "Add clock" = "הוסף שעון";
-
 "Add internal event calendar" = "הוסף לוח שנה אירועים פנימי";
-
 "Cancel" = "ביטול";
-
 "Done" = "סיום";
-
 "Add" = "הוסף";
-
 "New Clock" = "שעון חדש";
 "Are you sure you want to delete this new clock?" = "בטוח שברצונך למחוק שעון חדש זה?";
 "Cancel Changes" = "בטל שינויים";
 "Continue Editing" = "המשך עריכה";
-
 "New Internal Event Calendar" = "לוח שנה אירועים פנימי חדש";
 "Are you sure you want to delete this new internal event calendar?" = "בטוח שברצונך למחוק לוח שנה אירועים פנימי חדש זה?";
-
 "Arrangement"           = "ארגון ראשי";
 "Secondary arrangement" = "ארגון משני";
-//"Plain" = "פשוט";
 "By Formatted Date"          = "לפי תאריך מפורמט";
 "By Calendar"                = "לפי לוח";
 "By Place Name"              = "לפי שם מקום";
@@ -334,27 +142,16 @@
 "By Time Zone, West to East" = "לפי אזור זמן, מערב למזרח";
 "By Time Zone, East to West" = "לפי אזור זמן, מזרח למערב";
 "By Country or Region"       = "לפי מדינה או אזור";
-
 "Are you sure you want to delete this clock?" = "בטוח שברצונך למחוק שעון זה?";
 "Delete This Clock" = "מחק שעון זה";
-
 "Show preferences" = "⚙️ העדפות";
 "Internal event calendars" = "לוחות שנה אירועים פנימיים";
-
 "Are you sure you want to delete this internal event calendar?" = "בטוח שברצונך למחוק לוח אירועים פנימי זה?";
 "Delete This Internal Event Calendar" = "מחק לוח אירועים פנימי זה";
-
 "Swap clocks" = "🔃 החלף שעונים";
-
 "NO_PLACE_NAME"        = "בינלאומי";
 "NO_COUNTRY_OR_REGION" = "בינלאומי";
-
 "External event calendars" = "לוחות שנה אירועים חיצוניים";
-
 "NO_SOLAR_TIME" = "אין זמן שמשי";
-
-"MYSTERY_LOCATION" = "מקום מסתריון";
-
 "NO_EXTERNAL_EVENTS_PERMISSION" = "מצטער, אבל ל־Date-O-Rama אין הרשאה לגשת ללוחות־האירועים החיצוניים (״לוחות שנה״) שלך.  אפשר לשנות זאת ביישום ״הגדרות״.";
-
 "CANNOT_GEOLOCATE" = "מצטער, אבל Date-O-Rama זקוק לחיבור אינטרנט אם ברצונך לבחור מיקום אחר, מכיוון שהוא צריך לדבר עם שרת המיקום הגיאוגרפי של אפל כדי לעשות זאת.  אנא התחבר לאינטרנט.";

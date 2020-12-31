@@ -40,160 +40,10 @@
 "HebrewSolarMA"         = "Hebrew (Maghen ’Avraham)";
 
 "DEFAULT_LOCALE" = "Default";
-
-//"HEADER_Preview" = "Preview";
-
-"HEADER_E" = "Weekday";
-"ITEM_E_"       = "None";
-"ITEM_E_eeeee"  = "Narrow (1 letter)";
-"ITEM_E_eeeeee" = "Short";
-"ITEM_E_eee"    = "Abbreviated";
-"ITEM_E_eeee"   = "Wide";
-"ITEM_E_e"      = "Numeric: 1 digit";
-"ITEM_E_ee"     = "Numeric: 2 digits";
-
-"HEADER_y" = "Year";
-"ITEM_y_"     = "None";
-"ITEM_y_y"    = "Full";
-"ITEM_y_yy"   = "2 digits only";
-"ITEM_y_yyy"  = "≥ 3 digits";
-"ITEM_y_yyyy" = "≥ 4 digits";
-
-"HEADER_M" = "Month";
-"ITEM_M_"      = "None";
-"ITEM_M_MMMMM" = "Narrow (1 letter)";
-"ITEM_M_MMM"   = "Abbreviated";
-"ITEM_M_MMMM"  = "Wide";
-"ITEM_M_M"     = "Numeric: 1 digit";
-"ITEM_M_MM"    = "Numeric: 2 digits";
-
-"HEADER_d" = "Day";
-"ITEM_d_"   = "None";
-"ITEM_d_d"  = "Minimum digits";
-"ITEM_d_dd" = "2 digits";
-
-"HEADER_G" = "Era";
-"ITEM_G_"       = "None";
-"ITEM_G_GGGGG"  = "Narrow (1 letter)";
-"ITEM_G_G"      = "Abbreviated";
-"ITEM_G_GGGG"   = "Wide";
-
-"HEADER_Y" = "Year for week of year";
-"ITEM_Y_"     = "None";
-"ITEM_Y_Y"    = "Full";
-"ITEM_Y_YY"   = "2 digits only";
-"ITEM_Y_YYY"  = "≥ 3 digits";
-"ITEM_Y_YYYY" = "≥ 4 digits";
-
-"HEADER_U" = "Cyclic year";
-"ITEM_U_"      = "None";
-"ITEM_U_UUUUU" = "Narrow";
-"ITEM_U_U"     = "Abbreviated";
-"ITEM_U_UUUU"  = "Wide";
-
-//"HEADER_r" = "Related Gregorian year";
-//"ITEM_r_"     = "None";
-//"ITEM_r_r"    = "Minimum digits";
-//"ITEM_r_rr"   = "≥ 2 digits";
-//"ITEM_r_rrr"  = "≥ 3 digits";
-//"ITEM_r_rrrr" = "≥ 4 digits";
-
-"HEADER_Q" = "Quarter";
-"ITEM_Q_"      = "None";
-"ITEM_Q_Q"     = "Numeric: 1 digit";
-"ITEM_Q_QQ"    = "Numeric: 2 digits";
-"ITEM_Q_QQQQQ" = "Narrow";
-"ITEM_Q_QQQ"   = "Abbreviated";
-"ITEM_Q_QQQQ"  = "Wide";
-
-"HEADER_w" = "Week of year";
-"ITEM_w_"   = "None";
-"ITEM_w_w"  = "Minimum digits";
-"ITEM_w_ww" = "2 digits";
-
-"HEADER_W" = "Week of month";
-"ITEM_W_"  = "None";
-"ITEM_W_W" = "1 digit";
-
-"HEADER_D" = "Day of year";
-"ITEM_D_"    = "None";
-"ITEM_D_D"   = "Minimum digits";
-"ITEM_D_DD"  = "≥ 2 digits";
-"ITEM_D_DDD" = "3 digits";
-
-"HEADER_F" = "Day of week in month";
-"ITEM_F_"  = "None";
-"ITEM_F_F" = "1 digit";
-
-//"HEADER_g" = "Modified Julian day";
-//"ITEM_g_"   = "None";
-//"ITEM_g_g"  = "Minimum digits";
-
-//"HEADER_-" = "Dash separator in date";
-//"ITEM_-_"   = "None";
-//"ITEM_-_-"  = "Present";
-
-"HEADER_a" = "Period";
-"ITEM_a_"      = "None";
-"ITEM_a_a"     = "AM, PM Abbreviated";
-"ITEM_a_aaaa"  = "AM, PM Wide";
-"ITEM_a_aaaaa" = "AM, PM Narrow";
-"ITEM_a_b"     = "am, pm, noon, midnight Abbreviated";
-"ITEM_a_bbbb"  = "am, pm, noon, midnight Wide";
-"ITEM_a_bbbbb" = "am, pm, noon, midnight Narrow";
-"ITEM_a_B"     = "flexible day periods Abbreviated";
-"ITEM_a_BBBB"  = "flexible day periods Wide";
-"ITEM_a_BBBBB" = "flexible day periods Narrow";
-
-"HEADER_H" = "Hour";
-"ITEM_H_"   = "None";
-"ITEM_H_h"  = "Hour [1-12], minimum digits";
-"ITEM_H_hh" = "Hour [1-12], 2 digits";
-"ITEM_H_H"  = "Hour [0-23], minimum digits";
-"ITEM_H_HH" = "Hour [0-23], 2 digits";
-"ITEM_H_K"  = "Hour [0-11], minimum digits";
-"ITEM_H_KK" = "Hour [0-11], 2 digits";
-"ITEM_H_k"  = "Hour [1-24], minimum digits";
-"ITEM_H_kk" = "Hour [1-24], 2 digits";
-
-"HEADER_m" = "Minute";
-"ITEM_m_m"  = "Minimum digits";
-"ITEM_m_mm" = "2 digits";
-
-"HEADER_s" = "Second";
-"ITEM_s_"   = "None";
-"ITEM_s_s"  = "Minimum digits";
-"ITEM_s_ss" = "2 digits";
-
-"HEADER_z" = "Time zone";
-"ITEM_z_"      = "None";
-"ITEM_z_z"     = "Short specific non-location";
-"ITEM_z_zzzz"  = "Long specific non-location";
-"ITEM_z_O"     = "Short localized GMT";
-"ITEM_z_OOOO"  = "Long localized GMT ";
-"ITEM_z_v"     = "Short generic";
-"ITEM_z_vvvv"  = "Long generic";
-"ITEM_z_V"     = "Short time zone ID";
-"ITEM_z_VV"    = "Long time zone ID";
-"ITEM_z_VVV"   = "Exemplar city";
-"ITEM_z_VVVV"  = "Generic location";
-"ITEM_z_X"     = "ISO 8601 basic, hours and optional minutes, Z";
-"ITEM_z_XX"    = "ISO 8601 basic, hours and minutes, Z";
-"ITEM_z_XXX"   = "ISO 8601 extended, hours and minutes, Z";
-"ITEM_z_XXXX"  = "ISO 8601 basic, hours, minutes and optional seconds, Z";
-"ITEM_z_XXXXX" = "ISO 8601 extended, hours, minutes and optional seconds, Z";
-"ITEM_z_x"     = "ISO 8601 basic, hours field and optional minutes";
-"ITEM_z_xx"    = "ISO 8601 basic, hours and minutes";
-"ITEM_z_xxx"   = "ISO 8601 extended, hours and minutes";
-"ITEM_z_xxxx"  = "ISO 8601 basic, hours, minutes and optional seconds";
-"ITEM_z_xxxxx" = "ISO 8601 extended, hours, minutes and optional seconds";
-
 "HEADER_Row" = "Clock";
-
+"HEADER_BuiltInEventCalendars" = "Event calendars (built-in)";
 "HEADER_Calendar" = "Calendar";
-
 "HEADER_Locale"   = "Locale";
-
 "HEADER_Date_format" = "Date format";
 "HEADER_Time_format" = "Time format";
 "ITEM_None"                             = "None";
@@ -201,8 +51,6 @@
 "ITEM_Long"                             = "Long";
 "ITEM_Medium"                           = "Medium";
 "ITEM_Short"                            = "Short";
-"ITEM_Components"                       = "Components";
-//"ITEM_Raw_LDML"      = "Raw LDML";
 "ITEM_ISO8601YearMonthDay"              = "ISO 8601 (Year-Month-Day)";
 "ITEM_ISO8601YearWeekDay"               = "ISO 8601 (Year-Week-Day)";
 "ITEM_ISO8601YearDay"                   = "ISO 8601 (Year-Day)";
@@ -214,47 +62,25 @@
 "ITEM_ShortWithWeekdayWithoutYear"      = "Short with Weekday without Year";
 "ITEM_MediumWithWeekdayWithoutYear"     = "Medium with Weekday without Year";
 "ITEM_FullWithoutYear"                  = "Full without Year";
-
 "ITEM_decimalTwelveHour"            = "Decimal twelve-hour";
 "ITEM_JewishCalendricalCalculation" = "Jewish calendrical calculation";
 "ITEM_decimal"                      = "Decimal";
 "ITEM_hexadecimal"                  = "Hexadecimal";
-
-"HEADER_Date" = "Date components";
-
-"HEADER_Other" = "Other";
-"ITEM_NEXT_DATE_TRANSITION" = "Next date transition";
-"ITEM_NEXT_DAY" = "Next date";
-
 "HEADER_TIME_ZONE" = "Time zone";
-
 "HEADER_LOCATION" = "Location";
-
-"HEADER_MODULAR_LARGE" = "Modular large";
-
 "AUTOUPDATING_CURRENT_TIME_ZONE" = "Autoupdating current";
-
 "DEVICE_LOCATION" = "Device location";
 "LAST_DEVICE_LOCATION" = "Device location (last on record)";
 "NO_DEVICE_LOCATION_PERMISSION" = "Sorry, but Date-O-Rama does not have permission to access your device location. You can change this within the Settings application.";
-
-"HEADER_EVENTS" = "Events";
-
 "ADDRESS_SEPARATOR" = ", ";
-
 "Use device location" = "Use device location";
 "Requested address"   = "Requested address";
-
 "CLOCKS_TAB"              = "Clocks";
 "EVENTS_TAB"              = "Events";
-"PREFERENCES_TAB"         = "Preferences";
 "COMPLICATION_CLOCKS_TAB" = "Watch";
-
-//"All day" = "All day";
 "INTERVAL_SEPARATOR" = " - ";
 "Show secondary dates" = "Show secondary dates";
 "Today" = "Today";
-
 "Daily Jewish events"            = "Judaism (times)";
 "All-day Jewish events"          = "Judaism";
 "Jewish minor fasts"             = "Judaism (minor fasts)";
@@ -267,28 +93,20 @@
 "Islamic holidays (Umm Al-Qura)" = "Islam (Umm Al-Qura)";
 "Antisemitic events"             = "Antisemitism";
 "Chinese zodiac events"          = "Chinese zodiac";
-
 "Add external event" = "Add external event";
-
 "Use external events" = "Use external events";
-
 "External events" = "External events";
 "Internal events" = "Internal events";
-
-//"???" = "???";
-
 "modularLarge"     = "Three-line large complication rows";
 "modularSmall"     = "Two-line small complication rows";
 "extraLarge"       = "Two-line large complication rows";
 "utilitarianLarge" = "One-line large complication rows";
 "utilitarian"      = "One-line small complication rows";
-
 "3-line large" = "3-line large";
 "2-line small" = "2-line small";
 "2-line large" = "2-line large";
 "1-line small" = "1-line small";
 "1-line large" = "1-line large";
-
 "Show calendars:"      = "Show calendars:";
 "All calendars"        = "All calendars";
 "Apple calendars"      = "Apple calendars";
@@ -296,34 +114,24 @@
 "Lunisolar calendars"  = "Lunisolar calendars";
 "Lunar calendars"      = "Lunar calendars";
 "Julian day calendars" = "Julian day calendars";
-
 "Show locales:"           = "Show locales:";
 "All locales"             = "All locales";
 "Apple locales"           = "Apple locales";
 "User’s language locales" = "User’s language locales";
 "User’s region locales"   = "User’s region locales";
-
 "Add clock" = "Add clock";
-
 "Add internal event calendar" = "Add internal event calendar";
-
 "Cancel" = "Cancel";
-
 "Done" = "Done";
-
 "Add" = "Add";
-
 "New Clock" = "New Clock";
 "Are you sure you want to delete this new clock?" = "Are you sure you want to delete this new clock?";
 "Cancel Changes" = "Cancel Changes";
 "Continue Editing" = "Continue Editing";
-
 "New Internal Event Calendar" = "New Internal Event Calendar";
 "Are you sure you want to delete this new internal event calendar?" = "Are you sure you want to delete this new internal event calendar?";
-
 "Arrangement"           = "Primary arrangement";
 "Secondary arrangement" = "Secondary arrangement";
-//"Plain"                      = "Plain";
 "By Formatted Date"          = "By Formatted Date";
 "By Calendar"                = "By Calendar";
 "By Place Name"              = "By Place Name";
@@ -334,27 +142,16 @@
 "By Time Zone, West to East" = "By Time Zone, West to East";
 "By Time Zone, East to West" = "By Time Zone, East to West";
 "By Country or Region"       = "By Country or Region";
-
 "Are you sure you want to delete this clock?" = "Are you sure you want to delete this clock?";
 "Delete This Clock" = "Delete This Clock";
-
 "Show preferences" = "⚙️ Preferences";
 "Internal event calendars" = "Internal event calendars";
-
 "Are you sure you want to delete this internal event calendar?" = "Are you sure you want to delete this internal event calendar?";
 "Delete This Internal Event Calendar" = "Delete This Internal Event Calendar";
-
 "Swap clocks" = "🔃 Swap clocks";
-
 "NO_PLACE_NAME"        = "International";
 "NO_COUNTRY_OR_REGION" = "International";
-
 "External event calendars" = "External event calendars";
-
 "NO_SOLAR_TIME" = "No solar time";
-
-"MYSTERY_LOCATION" = "Mystery location";
-
 "NO_EXTERNAL_EVENTS_PERMISSION" = "Sorry, but Date-O-Rama does not have permission to access your external event calendars (“Calendars”). You can change this within the Settings application.";
-
 "CANNOT_GEOLOCATE" = "Sorry, but Date-O-Rama needs an Internet connection if you wish to choose a different location, because it needs to talk to Apple’s geolocation server to do so.  Please connect to the Internet.";
