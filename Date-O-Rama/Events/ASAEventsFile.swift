@@ -191,3 +191,27 @@ enum ASAWeekday:  Int, Codable {
     case friday    = 6
     case saturday  = 7
 } // enum ASAWeekday
+
+
+// MARK:  -
+
+extension ASAEventsFile {
+    static func builtIn(fileName: String) -> ASAEventsFile? {
+        do {
+            let fileURL = Bundle.main.url(forResource:fileName, withExtension: "json")
+            if fileURL == nil {
+                debugPrint(#file, #function, fileName, "Could not open!")
+                return nil
+            }
+
+            let jsonData = (try? Data(contentsOf: fileURL!))!
+            let newJSONDecoder = JSONDecoder()
+
+            let eventsFile = try newJSONDecoder.decode(ASAEventsFile.self, from: jsonData)
+            return eventsFile
+        } catch {
+            debugPrint(#file, #function, fileName, error)
+            return nil
+        }
+    } // static func builtIn(fileName: String) -> ASAEventsFile?
+} // extension ASAEventsFile

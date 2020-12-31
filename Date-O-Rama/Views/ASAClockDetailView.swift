@@ -33,6 +33,8 @@ struct ASAClockDetailView: View {
         List {
             ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
 
+            ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAUnlocatedEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+
             if deleteable {
                 Section(header:  Text("")){
                     HStack {
@@ -82,7 +84,6 @@ struct ASAClockDetailEditingSection:  View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
             NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
                 HStack {
-                    //                    ASACalendarSymbol()
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
                 }
             }
@@ -115,6 +116,56 @@ struct ASAClockDetailEditingSection:  View {
         } // Section
     } // var body
 } // struct ASAClockDetailEditingSection
+
+
+// MARK:  -
+
+struct ASABuiltInEventCalendarsEditingSection:  View {
+    @ObservedObject var selectedRow:  ASARow
+    var builtInEventCalendarFileNames:  Array<String>
+
+    var body:  some View {
+        if builtInEventCalendarFileNames.count > 0 {
+            Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
+                ForEach(builtInEventCalendarFileNames, id:
+                            \.self) {
+                    fileName
+                    in
+                    ASABuiltInEventCalendarCell(selectedRow: selectedRow, fileName: fileName)
+                        .onTapGesture {
+                            if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
+                                let fileNameIndex = selectedRow.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
+                                if fileNameIndex != nil {
+                                    selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
+                                }
+                            } else {
+                                selectedRow.builtInEventCalendars.append(ASAUnlocatedEventCalendar(fileName: fileName))
+                            }
+                        }
+                }
+            } // Section
+        } else {
+            EmptyView()
+        }
+    } // var body
+} // struct ASABuiltInEventCalendarsEditingSection
+
+struct ASABuiltInEventCalendarCell:  View {
+    @ObservedObject var selectedRow:  ASARow
+
+    var fileName:  String
+
+    var body: some View {
+        HStack {
+            if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
+                Image(systemName: "checkmark.circle.fill")
+            } else {
+                Image(systemName: "circle")
+            }
+            Text(verbatim: NSLocalizedString(fileName, comment: "")).font(.headline)
+        }
+    }
+}
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {

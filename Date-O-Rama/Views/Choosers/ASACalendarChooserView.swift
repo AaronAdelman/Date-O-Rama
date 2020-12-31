@@ -121,25 +121,17 @@ struct ASACalendarChooserView: View {
 
     var body: some View {
         List {
-//            HStack {
-                Picker(selection: $selection, label:
-                        Text("Show calendars:")
-                       , content: {
-                        Text("All calendars").tag(ALL_CALENDARS)
-                        Text("Apple calendars").tag(APPLE_CALENDARS)
-                        Text("Solar calendars").tag(SOLAR_CALENDARS)
-                        Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
-                        Text("Lunar calendars").tag(LUNAR_CALENDARS)
-                        Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
-                       })
+            Picker(selection: $selection, label:
+                    Text("Show calendars:")
+                   , content: {
+                    Text("All calendars").tag(ALL_CALENDARS)
+                    Text("Apple calendars").tag(APPLE_CALENDARS)
+                    Text("Solar calendars").tag(SOLAR_CALENDARS)
+                    Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
+                    Text("Lunar calendars").tag(LUNAR_CALENDARS)
+                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
+                   })
 
-//                #if !targetEnvironment(macCatalyst)
-//                Spacer()
-//
-//                Text(verbatim: self.selection.calendarCategoryText)
-//                #endif
-//            }
-            
             ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode
                 in
@@ -149,7 +141,6 @@ struct ASACalendarChooserView: View {
                     }
             }
         }
-        //        .navigationBarTitle(Text(row.dateString(now: Date()) ))
         .navigationBarItems(trailing:
                                 Button("Cancel", action: {
                                     self.didCancel = true

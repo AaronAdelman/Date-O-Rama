@@ -9,11 +9,12 @@
 import UIKit
 import CoreLocation
 
-let UUID_KEY:  String        = "UUID"
-let LOCALE_KEY:  String      = "locale"
-let CALENDAR_KEY:  String    = "calendar"
-let DATE_FORMAT_KEY:  String = "dateFormat"
-let TIME_FORMAT_KEY:  String = "timeFormat"
+let UUID_KEY:  String                     = "UUID"
+let LOCALE_KEY:  String                   = "locale"
+let CALENDAR_KEY:  String                 = "calendar"
+let DATE_FORMAT_KEY:  String              = "dateFormat"
+let TIME_FORMAT_KEY:  String              = "timeFormat"
+let BUILT_IN_EVENT_CALENDARS_KEY:  String = "builtInEventCalendars"
 
 
 // MARK: -
@@ -45,6 +46,8 @@ class ASARow: ASALocatedObject {
         } // didset
     } // var timeFormat
 
+    @Published var builtInEventCalendars:  Array<ASAUnlocatedEventCalendar> = []
+
     
     // MARK: -
         
@@ -57,6 +60,7 @@ class ASARow: ASALocatedObject {
             DATE_FORMAT_KEY:  dateFormat.rawValue ,
             TIME_FORMAT_KEY:  timeFormat.rawValue ,
             TIME_ZONE_KEY:  timeZone.identifier,
+            BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
         ] as [String : Any]
         
@@ -152,6 +156,14 @@ class ASARow: ASALocatedObject {
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
         if timeZoneIdentifier != nil {
             newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
+        }
+
+        let builtInEventCalendarsFileNames = dictionary[BUILT_IN_EVENT_CALENDARS_KEY] as? Array<String>
+        if builtInEventCalendarsFileNames != nil {
+            for fileName in builtInEventCalendarsFileNames! {
+                let newEventCalendar = ASAUnlocatedEventCalendar(fileName: fileName)
+                newRow.builtInEventCalendars.append(newEventCalendar)
+            }
         }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool

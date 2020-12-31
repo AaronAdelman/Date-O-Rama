@@ -11,25 +11,12 @@ import SwiftUI
 import CoreLocation
 
 class ASAUnlocatedEventCalendar {
+    var fileName:  String
     var eventsFile:  ASAEventsFile?
-    
-    init(fileName:  String) {
-        do {
-            var fileURL = Bundle.main.url(forResource:fileName, withExtension: "json")
-            if fileURL == nil {
-                debugPrint(#file, #function, fileName, "Could not open!")
-                
-                fileURL = Bundle.main.url(forResource:"Solar events", withExtension: "json")
-            }
-            
-            let jsonData = (try? Data(contentsOf: fileURL!))!
-            let newJSONDecoder = JSONDecoder()
 
-            let eventsFile = try newJSONDecoder.decode(ASAEventsFile.self, from: jsonData)
-            self.eventsFile = eventsFile
-        } catch {
-            debugPrint(#file, #function, fileName, error)
-        }
+    init(fileName:  String) {
+        self.fileName = fileName
+        self.eventsFile = ASAEventsFile.builtIn(fileName: fileName)
     } // init(fileName:  String)
 
     func events(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
@@ -506,3 +493,26 @@ extension Int {
     } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
 } // extension Int
 
+
+// MARK: -
+
+extension ASAUnlocatedEventCalendar {
+    class func builtInEventCalendarFileNames(calendarCode:  ASACalendarCode) -> Array<String> {
+        let mainBundle = Bundle.main
+        let URLs = mainBundle.urls(forResourcesWithExtension: "json", subdirectory: nil)
+        let rawFileNames: Array<String> = URLs!.map {
+            $0.deletingPathExtension().lastPathComponent
+        }
+        var unsortedFileNames:  Array<String> = []
+        for fileName in rawFileNames {
+            let eventsFile = ASAEventsFile.builtIn(fileName: fileName)
+            if eventsFile?.calendarCode == calendarCode {
+                unsortedFileNames.append(fileName)
+            }
+        }
+        let fileNames = unsortedFileNames.sorted(by: {NSLocalizedString($0, comment: "") < NSLocalizedString($1, comment: "")})
+        debugPrint(#file, #function, fileNames)
+
+        return fileNames
+    } // static var builtInEventCalendarFileNames
+} // extension ASAUnlocatedEventCalendar
