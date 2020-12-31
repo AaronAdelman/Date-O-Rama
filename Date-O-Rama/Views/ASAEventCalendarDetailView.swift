@@ -73,7 +73,7 @@ struct ASAEventCalendarDetailSection:  View {
                 VStack {
                     ASALocationCell(usesDeviceLocation: self.selectedEventCalendar.usesDeviceLocation, locationData: self.selectedEventCalendar.locationData)
                     Spacer()
-                    ASATimeZoneCell(timeZone: selectedEventCalendar.timeZone, now: Date())
+                    ASATimeZoneCell(timeZone: selectedEventCalendar.locationData.timeZone, now: Date())
                 } // VStack
             }
         } // Section

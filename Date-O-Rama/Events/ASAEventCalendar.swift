@@ -48,18 +48,18 @@ class ASAEventCalendar:  ASALocatedObject {
             UUID_KEY:  uuid.uuidString,
             //            EVENT_SOURCE_CODE_KEY:  self.eventSource?.eventSourceCode.rawValue ?? "",
             FILE_NAME_KEY:  self.fileName,
-            TIME_ZONE_KEY:  timeZone.identifier,
+            TIME_ZONE_KEY:  locationData.timeZone.identifier,
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation,
             BUILTIN_KEY:  self.builtIn ? TRUE_STRING : FALSE_STRING,
             LOCALE_KEY:  localeIdentifier
             ] as [String : Any]
         
 //        if location != nil {
-            result[LATITUDE_KEY] = self.location.coordinate.latitude
-            result[LONGITUDE_KEY] = self.location.coordinate.longitude
-            result[ALTITUDE_KEY] = self.location.altitude
-            result[HORIZONTAL_ACCURACY_KEY] = self.location.horizontalAccuracy
-            result[VERTICAL_ACCURACY_KEY] = self.location.verticalAccuracy
+        result[LATITUDE_KEY] = self.locationData.location.coordinate.latitude
+            result[LONGITUDE_KEY] = self.locationData.location.coordinate.longitude
+            result[ALTITUDE_KEY] = self.locationData.location.altitude
+            result[HORIZONTAL_ACCURACY_KEY] = self.locationData.location.horizontalAccuracy
+            result[VERTICAL_ACCURACY_KEY] = self.locationData.location.verticalAccuracy
 //        }
         
         if self.locationData.name != nil {
@@ -146,7 +146,7 @@ class ASAEventCalendar:  ASALocatedObject {
         let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
         newEventCalendar.usesDeviceLocation = usesDeviceLocation ?? true
         if latitude != nil && longitude != nil {
-            newEventCalendar.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
+            newEventCalendar.locationData.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
         }
         newEventCalendar.locationData.name = dictionary[PLACE_NAME_KEY] as? String
         newEventCalendar.locationData.locality = dictionary[LOCALITY_KEY] as? String
@@ -184,7 +184,7 @@ class ASAEventCalendar:  ASALocatedObject {
             return []
         }
         
-        return self.unlocatedEventCalendar!.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, allDayEventsOnly:  allDayEventsOnly)
+        return self.unlocatedEventCalendar!.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName(), calendarTitleWithoutLocation: eventSourceName(), ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, allDayEventsOnly:  allDayEventsOnly)
     } // func eventDetails(startDate:  Date, endDate:  Date) -> Array<ASAEvent>
 
     class func eventCalendar(eventsFileName:  String) -> ASAEventCalendar? {

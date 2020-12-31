@@ -93,7 +93,7 @@ struct ASAClockDetailEditingSection:  View {
                     VStack {
                         ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
                         Spacer()
-                        ASATimeZoneCell(timeZone: selectedRow.timeZone, now: now)
+                        ASATimeZoneCell(timeZone: selectedRow.locationData.timeZone, now: now)
                     } // VStack
                 }
             }

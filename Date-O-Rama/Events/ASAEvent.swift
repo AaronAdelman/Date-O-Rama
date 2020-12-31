@@ -20,7 +20,8 @@ struct ASAEvent:  ASAEventCompatible {
     var timeZone: TimeZone?
     var color:  Color
     var uuid = UUID()
-    var calendarTitle: String
+    var calendarTitleWithLocation:  String
+    var calendarTitleWithoutLocation: String
     var isEKEvent: Bool = false
     var calendarCode: ASACalendarCode
     var locationData:  ASALocationData
@@ -49,7 +50,9 @@ extension ASAEvent:  Equatable {
         if lhs.color != rhs.color {
             return false
         }
-        if lhs.calendarTitle != rhs.calendarTitle {
+        if lhs.calendarTitleWithLocation
+ != rhs.calendarTitleWithLocation
+ {
             return false
         }
         if lhs.calendarCode != rhs.calendarCode {

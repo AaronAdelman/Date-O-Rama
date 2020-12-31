@@ -66,23 +66,23 @@ struct ASAEventsView: View {
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
     
-    func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
-        var unsortedEvents: [ASAEventCompatible] = []
-        if ASAEKEventManager.shared.shouldUseEKEvents {
-            let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
-            unsortedEvents = unsortedEvents + externalEvents
-        }
-        
-        for eventCalendar in userData.ASAEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
-        } // for eventCalendar in userData.internalEventCalendars
-        
-        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
-            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
-            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
-        })
-        return events
-    } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
+//    func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
+//        var unsortedEvents: [ASAEventCompatible] = []
+//        if ASAEKEventManager.shared.shouldUseEKEvents {
+//            let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
+//            unsortedEvents = unsortedEvents + externalEvents
+//        }
+//
+//        for eventCalendar in userData.ASAEventCalendars {
+//            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
+//        } // for eventCalendar in userData.internalEventCalendars
+//
+//        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
+//            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
+//            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+//        })
+//        return events
+//    } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
     
     var timeWidth:  CGFloat {
         get {
@@ -204,11 +204,10 @@ struct ASAEventsView: View {
                     } // Section
 
                     Section {
-//                        ForEach(self.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                         ForEach(ASAEventManager.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
                             event
                             in
-                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, eventStore: self.eventManager.eventStore)
+                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
                         } // ForEach
                     } // Section
                 } // List
@@ -290,7 +289,7 @@ struct ASALinkedEventCell:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
-    var eventStore:  EKEventStore
+//    var eventStore:  EKEventStore
     @State private var action:  EKEventViewAction?
     @State private var showingEventView = false
 
@@ -353,7 +352,8 @@ struct ASAEventCell:  View {
                         .allowsTightening(true)
                         .minimumScaleFactor(0.4)
                 }
-                Text(event.calendarTitle).font(.subheadlineMonospacedDigit).foregroundColor(Color(UIColor.secondaryLabel))
+                Text(event.calendarTitleWithLocation
+).font(.subheadlineMonospacedDigit).foregroundColor(Color(UIColor.secondaryLabel))
                     .allowsTightening(true)
                     .minimumScaleFactor(0.4)
                     .lineLimit(2)
@@ -400,7 +400,7 @@ struct ASAStartAndEndTimesSubcell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
+            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
                 ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
             } else {
                 Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))

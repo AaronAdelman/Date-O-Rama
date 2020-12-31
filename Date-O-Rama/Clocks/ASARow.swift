@@ -17,7 +17,28 @@ let TIME_FORMAT_KEY:  String              = "timeFormat"
 let BUILT_IN_EVENT_CALENDARS_KEY:  String = "builtInEventCalendars"
 
 
-// MARK: -
+// MARK:  -
+
+//class ASAEventCacheKey {
+//    var startDate:  Date
+////    var endDate:  Date
+//
+//    init(startDate:  Date, endDate:  Date) {
+//        self.startDate = startDate
+////        self.endDate   = endDate
+//    }
+//}
+
+class ASAEventCacheObject {
+    var array:  Array<ASAEventCompatible>
+
+    init(array:  Array<ASAEventCompatible>) {
+        self.array = array
+    }
+}
+
+
+// MARK:  -
 
 class ASARow: ASALocatedObject {
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
@@ -33,42 +54,71 @@ class ASARow: ASALocatedObject {
                     self.usesDeviceLocation = false
                 }
             }
+
+            if !startingUp {
+                self.eventCache.removeAllObjects()
+            }
         } // didSet
     } // var calendar
 
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
+            if !startingUp {
+                self.eventCache.removeAllObjects()
+            }
         } // didset
     } // var dateFormat
 
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
+            if !startingUp {
+                self.eventCache.removeAllObjects()
+            }
         } // didset
     } // var timeFormat
 
-    @Published var builtInEventCalendars:  Array<ASAUnlocatedEventCalendar> = []
+    @Published var builtInEventCalendars:  Array<ASAUnlocatedEventCalendar> = [] {
+        didSet {
+            if !startingUp {
+                self.eventCache.removeAllObjects()
+            }
+        } // didset
+    }
+
+    override func handleLocationDataChanged() {
+        if !startingUp {
+            self.eventCache.removeAllObjects()
+            debugPrint(#file, #function, "The event cache has been cleared.")
+        }
+    }
+
+    private var eventCache = NSCache<
+//        ASAEventCacheKey,
+        NSNumber,
+        ASAEventCacheObject>()
 
     
-    // MARK: -
+    // MARK:  -
         
     public var dictionary:  Dictionary<String, Any> {
         //        debugPrint(#file, #function)
+
         var result = [
             UUID_KEY:  uuid.uuidString,
             LOCALE_KEY:  localeIdentifier,
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             DATE_FORMAT_KEY:  dateFormat.rawValue ,
             TIME_FORMAT_KEY:  timeFormat.rawValue ,
-            TIME_ZONE_KEY:  timeZone.identifier,
+            TIME_ZONE_KEY:  locationData.timeZone.identifier,
             BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
         ] as [String : Any]
         
-        result[LATITUDE_KEY] = self.location.coordinate.latitude
-        result[LONGITUDE_KEY] = self.location.coordinate.longitude
-        result[ALTITUDE_KEY] = self.location.altitude
-        result[HORIZONTAL_ACCURACY_KEY] = self.location.horizontalAccuracy
-        result[VERTICAL_ACCURACY_KEY] = self.location.verticalAccuracy
+        result[LATITUDE_KEY] = self.locationData.location.coordinate.latitude
+        result[LONGITUDE_KEY] = self.locationData.location.coordinate.longitude
+        result[ALTITUDE_KEY] = self.locationData.location.altitude
+        result[HORIZONTAL_ACCURACY_KEY] = self.locationData.location.horizontalAccuracy
+        result[VERTICAL_ACCURACY_KEY] = self.locationData.location.verticalAccuracy
 
         if self.locationData.name != nil {
             result[PLACE_NAME_KEY] = self.locationData.name
@@ -110,6 +160,8 @@ class ASARow: ASALocatedObject {
         //        debugPrint(#file, #function, result)
         return result
     } // var dictionary:  Dictionary<String, Any>
+
+    private var startingUp = true
     
     public class func newRow(dictionary:  Dictionary<String, Any>) -> ASARow {
         //        debugPrint(#file, #function, dictionary)
@@ -153,10 +205,10 @@ class ASARow: ASALocatedObject {
             newRow.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
         }
 
-        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
-        if timeZoneIdentifier != nil {
-            newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
-        }
+//        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
+//        if timeZoneIdentifier != nil {
+//            newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
+//        }
 
         let builtInEventCalendarsFileNames = dictionary[BUILT_IN_EVENT_CALENDARS_KEY] as? Array<String>
         if builtInEventCalendarsFileNames != nil {
@@ -173,21 +225,28 @@ class ASARow: ASALocatedObject {
         let horizontalAccuracy = dictionary[HORIZONTAL_ACCURACY_KEY] as? Double
         let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
         newRow.usesDeviceLocation = usesDeviceLocation ?? true
+        var newLocation = CLLocation()
         if latitude != nil && longitude != nil {
-            newRow.location = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
+            newLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
         }
-        newRow.locationData.name = dictionary[PLACE_NAME_KEY] as? String
-        newRow.locationData.locality = dictionary[LOCALITY_KEY] as? String
-        newRow.locationData.country = dictionary[COUNTRY_KEY] as? String
-        newRow.locationData.ISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
+        let newName = dictionary[PLACE_NAME_KEY] as? String
+        let newLocality = dictionary[LOCALITY_KEY] as? String
+        let newCountry = dictionary[COUNTRY_KEY] as? String
+        let newISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
         
-        newRow.locationData.postalCode = dictionary[POSTAL_CODE_KEY] as? String
-        newRow.locationData.administrativeArea = dictionary[ADMINISTRATIVE_AREA_KEY] as? String
-        newRow.locationData.subAdministrativeArea = dictionary[SUBADMINISTRATIVE_AREA_KEY] as? String
-        newRow.locationData.subLocality = dictionary[SUBLOCALITY_KEY] as? String
-        newRow.locationData.thoroughfare = dictionary[THOROUGHFARE_KEY] as? String
-        newRow.locationData.subThoroughfare = dictionary[SUBTHOROUGHFARE_KEY] as? String
-        
+        let newPostalCode = dictionary[POSTAL_CODE_KEY] as? String
+        let newAdministrativeArea = dictionary[ADMINISTRATIVE_AREA_KEY] as? String
+        let newSubAdministrativeArea = dictionary[SUBADMINISTRATIVE_AREA_KEY] as? String
+        let newSubLocality = dictionary[SUBLOCALITY_KEY] as? String
+        let newThoroughfare = dictionary[THOROUGHFARE_KEY] as? String
+        let newSubThoroughfare = dictionary[SUBTHOROUGHFARE_KEY] as? String
+
+        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
+
+        let newLocationData = ASALocationData(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, ISOCountryCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
+        newRow.locationData = newLocationData
+
+        newRow.startingUp = false
         return newRow
     } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASARow
     
@@ -198,6 +257,42 @@ class ASARow: ASALocatedObject {
         temp.dateFormat = .full
         return temp
     } // static var generic:  ASARow
+
+
+    // MARK:  -
+
+    func events(for date:  Date) -> Array<ASAEventCompatible> {
+        let startDate = self.startOfDay(date: date)
+        let endDate = self.startOfNextDay(date: date)
+
+//        let eventCacheKey: ASAEventCacheKey = ASAEventCacheKey(startDate: startDate, endDate: endDate)
+        let eventCacheKey = NSNumber(value: startDate.timeIntervalSince1970)
+        let wrappedArray = self.eventCache.object(forKey: eventCacheKey)
+        if wrappedArray != nil {
+//            debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Found events in cache")
+            return wrappedArray!.array
+        }
+
+//        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Did not find events in cache")
+
+        var unsortedEvents: [ASAEventCompatible] = []
+
+        // TODO:  Something for EKEvents here
+
+        for eventCalendar in self.builtInEventCalendars {
+            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarName(locationData: self.locationData), calendarTitleWithoutLocation: eventCalendar.eventSourceName(), ISOCountryCode: self.locationData.ISOCountryCode, requestedLocaleIdentifier: self.localeIdentifier, allDayEventsOnly: false)
+        } // for eventCalendar in self.builtInEventCalendars
+
+        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
+            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
+            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+        })
+
+        self.eventCache.setObject(ASAEventCacheObject(array: events), forKey: eventCacheKey)
+//        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Number of events written to cache:", events.count, "Start date:", startDate, "End date:", endDate)
+
+        return events
+    }
 } // class ASARow
 
 

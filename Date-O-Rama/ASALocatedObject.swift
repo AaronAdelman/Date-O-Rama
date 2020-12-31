@@ -31,38 +31,34 @@ let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
 class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
-    var timeZone:  TimeZone {
-        get {
-            return self.locationData.timeZone
-        } // get
-        set {
-            self.locationData.timeZone = newValue
-        } // set
-    }
-    
-//    var effectiveTimeZone:  TimeZone {
+//    var timeZone:  TimeZone {
 //        get {
-////            if usesDeviceLocation
-//////                || self.timeZone == nil
-////            {
-////                return TimeZone.autoupdatingCurrent
-////            } else {
-//                return self.timeZone
-////            }
+//            return self.locationData.timeZone
 //        } // get
-//    } // var effectiveTimeZone
-    
+//        set {
+//            self.locationData.timeZone = newValue
+//        } // set
+//    }
+        
     @Published var usesDeviceLocation:  Bool = true
-    @Published var locationData:  ASALocationData = ASALocationManager.shared.deviceLocationData
-    
-    var location:  CLLocation {
-        get {
-            return self.locationData.location
-        } // get
-        set {
-            self.locationData.location = newValue 
-        } // set
+    @Published var locationData:  ASALocationData = ASALocationManager.shared.deviceLocationData {
+        didSet {
+            self.handleLocationDataChanged()
+        }
     }
+
+    func handleLocationDataChanged() {
+
+    }
+    
+//    var location:  CLLocation {
+//        get {
+//            return self.locationData.location
+//        } // get
+//        set {
+//            self.locationData.location = newValue 
+//        } // set
+//    }
 
     @Published var localeIdentifier:  String = ""
     
@@ -83,9 +79,6 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     
     @objc func handle(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
-//            if self.locationManager.deviceLocationData.location == nil {
-//                debugPrint("AHA!")
-//            }
             self.locationData = self.locationManager.deviceLocationData
         }
     } // func handle(notification:  Notification) -> Void
@@ -93,12 +86,10 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
 } // class ASALocatedObject
 
 
-// MARK :-
+// MARK:  -
 
 extension ASALocatedObject {
     public func emoji(date:  Date) -> String {
-//        return "\((self.locationData.ISOCountryCode ?? "").flag())\(self.timeZone.emoji(date:  date))"
         return (self.locationData.ISOCountryCode ?? "").flag()
-
     } // public func emoji(date:  Date) -> String
 } // extension ASARow

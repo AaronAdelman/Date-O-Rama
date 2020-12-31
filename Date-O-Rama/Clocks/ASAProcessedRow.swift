@@ -44,7 +44,7 @@ struct ASAProcessedRow {
 
     var month:  Int
 
-//    var events:  Array<ASAEventCompatible>
+    var events:  Array<ASAEventCompatible>
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -65,7 +65,7 @@ struct ASAProcessedRow {
             self.dateString = row.dateTimeString(now: now)
             self.timeString = ""
         }
-        self.timeZoneString = row.timeZone.abbreviation(for:  now) ?? ""
+        self.timeZoneString = row.locationData.timeZone.abbreviation(for:  now) ?? ""
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
             self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag()
@@ -73,7 +73,7 @@ struct ASAProcessedRow {
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
                 //                if row.location != nil {
-                locationString = row.location.humanInterfaceRepresentation
+                locationString = row.locationData.location.humanInterfaceRepresentation
                 //                }
             } else {
                 #if os(watchOS)
@@ -124,7 +124,7 @@ struct ASAProcessedRow {
 
         self.month = dateComponents.month ?? 0
 
-//        self.events = ASAEventManager.clockSpecificAllDayEvents(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now), row: row)
+        self.events = row.events(for: now)
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
@@ -272,7 +272,7 @@ extension Array where Element == ASARow {
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
-            let key = processedRow.row.timeZone.secondsFromGMT(for: now) 
+            let key = processedRow.row.locationData.timeZone.secondsFromGMT(for: now) 
             var value = result[key]
             if value == nil {
                 result[key] = [processedRow]

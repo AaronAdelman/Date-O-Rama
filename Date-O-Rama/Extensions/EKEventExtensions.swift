@@ -11,6 +11,10 @@ import Foundation
 import SwiftUI
 
 extension EKEvent:  ASAEventCompatible {
+    var calendarTitleWithoutLocation: String {
+        return self.calendar.title
+    }
+
     var isEKEvent: Bool {
         get {
             return true
@@ -28,11 +32,13 @@ extension EKEvent:  ASAEventCompatible {
         } // get
     } // var color
 
-    var calendarTitle:  String {
+    var calendarTitleWithLocation
+:  String {
         get {
             return self.calendar.title
         } // get
-    } // var calendarTitle
+    } // var calendarTitleWithLocation
+
 
     var calendarCode: ASACalendarCode {
         get {

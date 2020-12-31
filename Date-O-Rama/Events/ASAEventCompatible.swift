@@ -17,7 +17,8 @@ protocol ASAEventCompatible {
     var isAllDay: Bool { get }
     var timeZone: TimeZone? { get }
     var color:  Color { get }
-    var calendarTitle:  String { get }
+    var calendarTitleWithLocation:  String { get }
+    var calendarTitleWithoutLocation:  String { get }
     var calendarCode:  ASACalendarCode { get }
     var isEKEvent:  Bool { get }
 } // protocol ASAEventCompatible
