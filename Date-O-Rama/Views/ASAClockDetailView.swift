@@ -155,12 +155,16 @@ struct ASABuiltInEventCalendarCell:  View {
 
     var fileName:  String
 
+    let SCALE: Image.Scale = .large
+
     var body: some View {
         HStack {
             if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
                 Image(systemName: "checkmark.circle.fill")
+                    .imageScale(SCALE)
             } else {
                 Image(systemName: "circle")
+                    .imageScale(SCALE)
             }
             Text(verbatim: NSLocalizedString(fileName, comment: "")).font(.headline)
         }

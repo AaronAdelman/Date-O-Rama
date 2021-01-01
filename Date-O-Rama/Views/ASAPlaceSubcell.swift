@@ -27,11 +27,6 @@ struct ASAPlaceSubcell:  View {
                     }
                 }
             }
-        } else if processedRow.usesDeviceLocation {
-            #if os(watchOS)
-            #else
-            ASASmallLocationSymbol()
-            #endif
         }
     } // var body
 } // struct ASAPlaceSubcell

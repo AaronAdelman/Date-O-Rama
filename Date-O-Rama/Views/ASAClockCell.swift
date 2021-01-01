@@ -158,11 +158,9 @@ struct ASAClockMainSubcell:  View {
                 }
                 if shouldShowTime {
                     HStack {
-                        #if os(watchOS)
                         if !shouldShowPlaceName && processedRow.usesDeviceLocation {
                             ASASmallLocationSymbol()
                         }
-                        #endif
                         
                         ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  1)
 
@@ -175,11 +173,9 @@ struct ASAClockMainSubcell:  View {
                 }
             } else {
                 HStack {
-                    #if os(watchOS)
                     if !shouldShowPlaceName && processedRow.usesDeviceLocation {
                         ASASmallLocationSymbol()
                     }
-                    #endif
 
                     if shouldShowFormattedDate {
                     ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
