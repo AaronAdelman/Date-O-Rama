@@ -86,6 +86,18 @@
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
+		A576994A259EDCC000757B0F /* Islamic holidays (civil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */; };
+		A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
+		A576994C259EDCC000757B0F /* All-day Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* All-day Jewish events.json */; };
+		A576994D259EDCC000757B0F /* Islamic holidays.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015A24EBDFF8003E79E9 /* Islamic holidays.json */; };
+		A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitic events.json */; };
+		A576994F259EDCC000757B0F /* Islamic holidays (Umm Al-Qura).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015C24EBDFF8003E79E9 /* Islamic holidays (Umm Al-Qura).json */; };
+		A5769950259EDCC000757B0F /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
+		A5769951259EDCC000757B0F /* Israeli events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israeli events.json */; };
+		A5769952259EDCC000757B0F /* Islamic holidays (tabular).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015B24EBDFF8003E79E9 /* Islamic holidays (tabular).json */; };
+		A5769953259EDCC000757B0F /* Solar events.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Solar events.json */; };
+		A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch events.json */; };
+		A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
 		A5790195259263A300224666 /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
 		A5790196259263A300224666 /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
@@ -828,8 +840,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A576994A259EDCC000757B0F /* Islamic holidays (civil).json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
+				A5769950259EDCC000757B0F /* Chinese zodiac events.json in Resources */,
+				A576994F259EDCC000757B0F /* Islamic holidays (Umm Al-Qura).json in Resources */,
+				A5769953259EDCC000757B0F /* Solar events.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
+				A576994C259EDCC000757B0F /* All-day Jewish events.json in Resources */,
+				A5769952259EDCC000757B0F /* Islamic holidays (tabular).json in Resources */,
+				A5769951259EDCC000757B0F /* Israeli events.json in Resources */,
+				A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */,
+				A576994D259EDCC000757B0F /* Islamic holidays.json in Resources */,
+				A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */,
+				A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */,
+				A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

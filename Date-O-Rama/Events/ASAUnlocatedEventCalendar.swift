@@ -21,6 +21,12 @@ class ASAUnlocatedEventCalendar {
 
     func events(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
+
+        if self.eventsFile == nil {
+            // Something went wrong
+            return []
+        }
+
         let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode)
         var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
         if eventsFile!.otherCalendarCodes != nil {

@@ -50,6 +50,8 @@ struct ASAClockCellBody:  View {
     var shouldShowCalendarPizzazztron:  Bool
     var canSplitTimeFromDate:  Bool
 
+    @State var shouldShowEvents:  Bool = false
+
     #if os(watchOS)
     let compact = true
     #else
@@ -100,14 +102,30 @@ struct ASAClockCellBody:  View {
                 Spacer().frame(width:  16.0)
             } // HStack
 
-            ForEach(processedRow.events, id: \.eventIdentifier) {
-                event
-                in
-                ASAClockEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASARow.generic, timeWidth: 90.0, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: false)
-            } // ForEach
+            if processedRow.events.count > 0 {
+                Toggle(isOn: $shouldShowEvents) {
+                    Text("Show Events")
+                }
+                if shouldShowEvents {
+                    ASAClockEventsForEach(processedRow: processedRow)
+                }
+            }
         } // VStack
     } // var body
 } // struct ASAClockCellBody
+
+
+struct ASAClockEventsForEach:  View {
+    var processedRow:  ASAProcessedRow
+
+    var body: some View {
+        ForEach(processedRow.events, id: \.eventIdentifier) {
+            event
+            in
+            ASAClockEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASARow.generic, timeWidth: 90.0, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: false)
+        } // ForEach
+    }
+}
 
 
 // MARK:  -
