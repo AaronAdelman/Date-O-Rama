@@ -11,18 +11,6 @@ import SwiftUI
 struct ASAPlaceSubcell:  View {
     var processedRow:  ASAProcessedRow
     var shouldShowPlaceName:  Bool
-//    var shouldShowCalendarPizzazztron:  Bool
-
-//    #if os(watchOS)
-//    let compact = false
-//    #else
-//    @Environment(\.horizontalSizeClass) var sizeClass
-//    var compact:  Bool {
-//        get {
-//            return self.sizeClass == .compact
-//        } // get
-//    } // var compact
-//    #endif
 
     var body: some View {
         if shouldShowPlaceName {
@@ -30,21 +18,11 @@ struct ASAPlaceSubcell:  View {
                 VStack(alignment: .leading) {
                     if processedRow.supportsTimeZones || processedRow.supportsLocations {
                         HStack(alignment: .top) {
-//                            if compact && shouldShowCalendarPizzazztron {
-//                                VStack(alignment: .leading) {
-//                                    if processedRow.usesDeviceLocation {
-//                                        ASASmallLocationSymbol()
-//                                    }
-//                                    Text(verbatim:  processedRow.flagEmojiString)
-//                                }
-//                            } else {
-                                if processedRow.usesDeviceLocation {
-                                    ASASmallLocationSymbol()
-                                }
-                                Text(verbatim:  processedRow.flagEmojiString)
-//                            }
-
-                            Text(processedRow.locationString).font(.subheadlineMonospacedDigit).minimumScaleFactor(0.5).lineLimit(2)
+                            if processedRow.usesDeviceLocation {
+                                ASASmallLocationSymbol()
+                            }
+                            Text(verbatim:  processedRow.flagEmojiString)
+                            ASAClockCellText(string:  processedRow.locationString, font:  Font.subheadlineMonospacedDigit, lineLimit:  2)
                         } // HStack
                     }
                 }
