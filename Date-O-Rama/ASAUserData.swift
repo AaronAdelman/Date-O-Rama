@@ -56,7 +56,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     @Published var mainRows:  Array<ASARow> = [ASARow.generic]
 
-    @Published var ASAEventCalendars:  Array<ASAEventCalendar> = []
+//    @Published var ASAEventCalendars:  Array<ASAEventCalendar> = []
     @Published var EKCalendarTitles:  Array<String> = [] {
         didSet {
             ASAEKEventManager.shared.reloadEKCalendars(titles: EKCalendarTitles)
@@ -231,7 +231,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
                     //                    debugPrint(#file, #function, jsonResult)
-                    self.ASAEventCalendars = ASAUserData.ASASEventCalendarArray(dictionary: jsonResult)
+//                    self.ASAEventCalendars = ASAUserData.ASASEventCalendarArray(dictionary: jsonResult)
                     self.EKCalendarTitles = jsonResult[EXTERNAL_EVENT_CALENDARS_KEY] as! Array<String>
                     
                     genericSuccess = true
@@ -278,7 +278,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         if !genericSuccess {
             mainRows               = self.emptyRowArray(key: .app)
-            ASAEventCalendars = []
+//            ASAEventCalendars = []
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
@@ -349,10 +349,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
 
         if code == .events {
-            let processedInternalEventCalendarArray = self.processedASAEventCalendarArray(ASAEventCalendarArray: self.ASAEventCalendars)
+//            let processedInternalEventCalendarArray = self.processedASAEventCalendarArray(ASAEventCalendarArray: self.ASAEventCalendars)
 
             let temp1b: Dictionary<String, Any> = [
-                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
+//                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
                 EXTERNAL_EVENT_CALENDARS_KEY:  ASAEKEventManager.shared.titles
             ]
 
@@ -454,34 +454,34 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         return tempArray
     } // class func rowArray(key:  ASARowArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow>
 
-    private class func ASASEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAEventCalendar> {
-        if dictionary == nil {
-            return []
-        }
+//    private class func ASASEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAEventCalendar> {
+//        if dictionary == nil {
+//            return []
+//        }
+//
+//        let temp = dictionary![INTERNAL_EVENT_CALENDARS_KEY] as! Array<Dictionary<String, Any>>?
+//        var tempArray:  Array<ASAEventCalendar> = []
+//
+//        if temp != nil {
+//            for dictionary in temp! {
+//                let eventCalendar = ASAEventCalendar.newInternalEventCalendar(dictionary: dictionary)
+//                if eventCalendar != nil {
+//                    tempArray.append(eventCalendar!)
+//                }
+//            } // for dictionary in temp!
+//        }
+//
+//        return tempArray
+//    } // class func internalEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAInternalEventCalendar>
 
-        let temp = dictionary![INTERNAL_EVENT_CALENDARS_KEY] as! Array<Dictionary<String, Any>>?
-        var tempArray:  Array<ASAEventCalendar> = []
-
-        if temp != nil {
-            for dictionary in temp! {
-                let eventCalendar = ASAEventCalendar.newInternalEventCalendar(dictionary: dictionary)
-                if eventCalendar != nil {
-                    tempArray.append(eventCalendar!)
-                }
-            } // for dictionary in temp!
-        }
-
-        return tempArray
-    } // class func internalEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAInternalEventCalendar>
-
-    private func processedASAEventCalendarArray(ASAEventCalendarArray:  Array<ASAEventCalendar>) -> Array<Dictionary<String, Any>> {
-        var temp:  Array<Dictionary<String, Any>> = []
-        for eventCalendar in self.ASAEventCalendars {
-            let dictionary = eventCalendar.dictionary()
-            temp.append(dictionary)
-        } //for eventCalendar in self.internalEventCalendars
-        return temp
-    } // func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>>
+//    private func processedASAEventCalendarArray(ASAEventCalendarArray:  Array<ASAEventCalendar>) -> Array<Dictionary<String, Any>> {
+//        var temp:  Array<Dictionary<String, Any>> = []
+//        for eventCalendar in self.ASAEventCalendars {
+//            let dictionary = eventCalendar.dictionary()
+//            temp.append(dictionary)
+//        } //for eventCalendar in self.internalEventCalendars
+//        return temp
+//    } // func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>>
 
 
     // MARK: - NSFilePresenter

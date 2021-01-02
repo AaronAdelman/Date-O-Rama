@@ -261,11 +261,7 @@ class ASARow: ASALocatedObject {
 
     // MARK:  -
 
-    func events(for date:  Date) -> Array<ASAEventCompatible> {
-        let startDate = self.startOfDay(date: date)
-        let endDate = self.startOfNextDay(date: date)
-
-//        let eventCacheKey: ASAEventCacheKey = ASAEventCacheKey(startDate: startDate, endDate: endDate)
+    func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible> {
         let eventCacheKey = NSNumber(value: startDate.timeIntervalSince1970)
         let wrappedArray = self.eventCache.object(forKey: eventCacheKey)
         if wrappedArray != nil {

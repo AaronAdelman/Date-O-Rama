@@ -196,10 +196,10 @@ struct ASAEventsView: View {
                                 Text("NO_EXTERNAL_EVENTS_PERMISSION").foregroundColor(.gray)
                             }
 
-                            NavigationLink(destination:                             ASAEventCalendarsView()
-                            ) {
-                                Text("Internal event calendars")
-                            }
+//                            NavigationLink(destination:                             ASAEventCalendarsView()
+//                            ) {
+//                                Text("Internal event calendars")
+//                            }
                         } // if showingPreferences
                     } // Section
 

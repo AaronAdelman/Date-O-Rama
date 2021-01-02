@@ -124,7 +124,7 @@ struct ASAProcessedRow {
 
         self.month = dateComponents.month ?? 0
 
-        self.events = row.events(for: now)
+        self.events = row.events(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now))
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 

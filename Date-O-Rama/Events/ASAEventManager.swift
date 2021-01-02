@@ -19,9 +19,13 @@ class ASAEventManager {
             unsortedEvents = unsortedEvents + EKEvents
         }
 
-        for eventCalendar in userData.ASAEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
-        } // for eventCalendar in userData.ASAEventCalendars
+//        for eventCalendar in userData.ASAEventCalendars {
+//            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
+//        } // for eventCalendar in userData.ASAEventCalendars
+
+        for row in userData.mainRows {
+            unsortedEvents = unsortedEvents + row.events(startDate:  startDate, endDate:  endDate)
+        } // for row in userData.mainRows
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
