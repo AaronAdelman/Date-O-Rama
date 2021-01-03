@@ -52,7 +52,7 @@ struct ASAComplicationClocksView: View {
                                             self.saveUserData()
                                         }
                                 ) {
-                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowCalendarPizzazztron: false, forAppleWatch: true)
+                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowCalendarPizzazztron: false, forComplications: true)
                                 }
                             }
                         }
