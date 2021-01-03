@@ -34,7 +34,7 @@ struct ASAClockDetailView: View {
         List {
             ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
 
-            ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAUnlocatedEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+            ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
 
             ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
 
@@ -142,7 +142,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
                                     selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
-                                selectedRow.builtInEventCalendars.append(ASAUnlocatedEventCalendar(fileName: fileName))
+                                selectedRow.builtInEventCalendars.append(ASAEventCalendar(fileName: fileName))
                             }
                         }
                 }

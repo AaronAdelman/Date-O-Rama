@@ -69,7 +69,7 @@ class ASARow: ASALocatedObject {
         } // didset
     } // var timeFormat
 
-    @Published var builtInEventCalendars:  Array<ASAUnlocatedEventCalendar> = [] {
+    @Published var builtInEventCalendars:  Array<ASAEventCalendar> = [] {
         didSet {
             if !startingUp {
                 self.eventCache.removeAllObjects()
@@ -217,7 +217,7 @@ class ASARow: ASALocatedObject {
         let builtInEventCalendarsFileNames = dictionary[BUILT_IN_EVENT_CALENDARS_KEY] as? Array<String>
         if builtInEventCalendarsFileNames != nil {
             for fileName in builtInEventCalendarsFileNames! {
-                let newEventCalendar = ASAUnlocatedEventCalendar(fileName: fileName)
+                let newEventCalendar = ASAEventCalendar(fileName: fileName)
                 newRow.builtInEventCalendars.append(newEventCalendar)
             }
         }

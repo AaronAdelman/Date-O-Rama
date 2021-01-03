@@ -499,4 +499,20 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 //        debugPrint(#file, #function)
         self.loadPreferences()
     } // func presentedItemDidChange()
-} // class ASAUserDate
+
+
+    // MARK:  - Events
+
+    func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
+        var unsortedEvents: [ASAEventCompatible] = []
+        for row in self.mainRows {
+            unsortedEvents = unsortedEvents + row.events(startDate:  startDate, endDate:  endDate)
+        } // for row in userData.mainRows
+
+        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
+            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
+            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+        })
+        return events
+    } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
+} // class ASAUserData
