@@ -103,9 +103,12 @@ struct ASAClockCellBody:  View {
             } // HStack
 
             if processedRow.events.count > 0 {
-                Toggle(isOn: $shouldShowEvents) {
-                    Text("Show Events")
-                }
+                HStack {
+                    Toggle(isOn: $shouldShowEvents) {
+                        Text("Show Events")
+                    }
+                    Spacer().frame(width:  48.0)
+                } // HStack
                 if shouldShowEvents {
                     ASAClockEventsForEach(processedRow: processedRow)
                 }
