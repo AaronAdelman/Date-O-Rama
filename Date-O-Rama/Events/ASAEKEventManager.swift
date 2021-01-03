@@ -83,13 +83,17 @@ class ASAEKEventManager:  NSObject, ObservableObject {
 //        debugPrint(#file, #function, self.calendars as Any)
 //    } // func loadExternalCalendars()
 
+    public func allEventCalendars() -> [EKCalendar] {
+        return self.eventStore.calendars(for: .event)
+    }
+
     func EKCalendars(titles:  Array<String>?) -> Array<EKCalendar> {
         if titles == nil {
             return ASAEKEventManager.shared.eventStore.calendars(for: EKEntityType.event)
         } else {
             var temp:  Array<EKCalendar> = []
             for title in titles! {
-                let calendar = ASAEKEventManager.shared.eventStore.calendars(for: .event).first(where: {$0.title == title})
+                let calendar = allEventCalendars().first(where: {$0.title == title})
                 if calendar != nil {
                     temp.append(calendar!)
                 }

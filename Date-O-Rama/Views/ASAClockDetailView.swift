@@ -156,7 +156,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 
 struct ASAICalendarEventCalendarsEditingSection:  View {
     @ObservedObject var selectedRow:  ASARow
-    var iCalendarEventCalendarTitles:  Array<String> = ASAEKEventManager.shared.eventStore.calendars(for: .event).map{ $0.title }.sorted()
+    var iCalendarEventCalendarTitles:  Array<String> = ASAEKEventManager.shared.allEventCalendars().map{ $0.title }.sorted()
 
     var body:  some View {
         if selectedRow.calendar.usesISOTime {
@@ -173,7 +173,7 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
                                     selectedRow.iCalendarEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
-                                let desiredEventCalendar: EKCalendar? = ASAEKEventManager.shared.eventStore.calendars(for: .event).first(where: {eventCalendar
+                                let desiredEventCalendar: EKCalendar? = ASAEKEventManager.shared.allEventCalendars().first(where: {eventCalendar
                                                                                                                                     in
                                                                                                                                     eventCalendar.title == title})
                                 if desiredEventCalendar != nil {

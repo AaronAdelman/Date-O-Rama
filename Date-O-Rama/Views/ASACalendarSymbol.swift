@@ -11,6 +11,7 @@ import SwiftUI
 struct ASACalendarSymbol: View {
     var body: some View {
         Text(verbatim: "🗓")
+            .font(.subheadlineMonospacedDigit)
     }
 }
 
