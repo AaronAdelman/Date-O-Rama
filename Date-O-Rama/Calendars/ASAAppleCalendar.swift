@@ -386,4 +386,6 @@ class ASAAppleCalendar:  ASACalendar {
         self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier:  localeIdentifier)
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+
+    var usesISOTime:  Bool = true
 } // class ASAAppleCalendar

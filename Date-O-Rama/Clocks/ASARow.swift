@@ -8,34 +8,26 @@
 
 import UIKit
 import CoreLocation
+import EventKit
 
-let UUID_KEY:  String                     = "UUID"
-let LOCALE_KEY:  String                   = "locale"
-let CALENDAR_KEY:  String                 = "calendar"
-let DATE_FORMAT_KEY:  String              = "dateFormat"
-let TIME_FORMAT_KEY:  String              = "timeFormat"
-let BUILT_IN_EVENT_CALENDARS_KEY:  String = "builtInEventCalendars"
+let UUID_KEY:  String                      = "UUID"
+let LOCALE_KEY:  String                    = "locale"
+let CALENDAR_KEY:  String                  = "calendar"
+let DATE_FORMAT_KEY:  String               = "dateFormat"
+let TIME_FORMAT_KEY:  String               = "timeFormat"
+let BUILT_IN_EVENT_CALENDARS_KEY:  String  = "builtInEventCalendars"
+let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 
 
 // MARK:  -
-
-//class ASAEventCacheKey {
-//    var startDate:  Date
-////    var endDate:  Date
-//
-//    init(startDate:  Date, endDate:  Date) {
-//        self.startDate = startDate
-////        self.endDate   = endDate
-//    }
-//}
 
 class ASAEventCacheObject {
     var array:  Array<ASAEventCompatible>
 
     init(array:  Array<ASAEventCompatible>) {
         self.array = array
-    }
-}
+    } // init(array:  Array<ASAEventCompatible>)
+} // class ASAEventCacheObject
 
 
 // MARK:  -
@@ -83,7 +75,15 @@ class ASARow: ASALocatedObject {
                 self.eventCache.removeAllObjects()
             }
         } // didset
-    }
+    } // var builtInEventCalendars
+
+    @Published var iCalendarEventCalendars:  Array<EKCalendar> = [] {
+        didSet {
+            if !startingUp {
+                self.eventCache.removeAllObjects()
+            }
+        } // didset
+    } // var EKCalendarTitles
 
     override func handleLocationDataChanged() {
         if !startingUp {
@@ -113,6 +113,10 @@ class ASARow: ASALocatedObject {
             BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
         ] as [String : Any]
+
+        if self.isICalendarCompatible {
+            result[ICALENDAR_EVENT_CALENDARS_KEY] =  self.iCalendarEventCalendars.map{ $0.title }
+        }
         
         result[LATITUDE_KEY] = self.locationData.location.coordinate.latitude
         result[LONGITUDE_KEY] = self.locationData.location.coordinate.longitude
@@ -217,6 +221,11 @@ class ASARow: ASALocatedObject {
                 newRow.builtInEventCalendars.append(newEventCalendar)
             }
         }
+
+        if newRow.calendar.usesISOTime {
+            let iCalendarEventCalendarsTitles = dictionary[ICALENDAR_EVENT_CALENDARS_KEY] as? Array<String>
+            newRow.iCalendarEventCalendars = ASAEKEventManager.shared.EKCalendars(titles: iCalendarEventCalendarsTitles)
+        }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool
         let latitude = dictionary[LATITUDE_KEY] as? Double
@@ -273,7 +282,9 @@ class ASARow: ASALocatedObject {
 
         var unsortedEvents: [ASAEventCompatible] = []
 
-        // TODO:  Something for EKEvents here
+        if self.isICalendarCompatible {
+            unsortedEvents = unsortedEvents + ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
+        }
 
         for eventCalendar in self.builtInEventCalendars {
             unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarName(locationData: self.locationData), calendarTitleWithoutLocation: eventCalendar.eventSourceName(), ISOCountryCode: self.locationData.ISOCountryCode, requestedLocaleIdentifier: self.localeIdentifier, allDayEventsOnly: false)
@@ -288,7 +299,11 @@ class ASARow: ASALocatedObject {
 //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Number of events written to cache:", events.count, "Start date:", startDate, "End date:", endDate)
 
         return events
-    }
+    } // func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible>
+
+    var isICalendarCompatible:  Bool {
+        return self.calendar.usesISOTime && self.usesDeviceLocation
+    } // var isICalendarCompatible
 } // class ASARow
 
 

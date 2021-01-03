@@ -8,6 +8,7 @@
 
 import SwiftUI
 import CoreLocation
+import EventKit
 
 struct ASAClockDetailView: View {
     @ObservedObject var selectedRow:  ASARow
@@ -34,6 +35,8 @@ struct ASAClockDetailView: View {
             ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
 
             ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAUnlocatedEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+
+            ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
 
             if deleteable {
                 Section(header:  Text("")){
@@ -150,6 +153,42 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     } // var body
 } // struct ASABuiltInEventCalendarsEditingSection
 
+
+struct ASAICalendarEventCalendarsEditingSection:  View {
+    @ObservedObject var selectedRow:  ASARow
+    var iCalendarEventCalendarTitles:  Array<String> = ASAEKEventManager.shared.eventStore.calendars(for: .event).map{ $0.title }.sorted()
+
+    var body:  some View {
+        if selectedRow.calendar.usesISOTime {
+            Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
+                ForEach(iCalendarEventCalendarTitles, id:
+                            \.self) {
+                    title
+                    in
+                    ASAICalendarEventCalendarCell(selectedRow: selectedRow, title: title)
+                        .onTapGesture {
+                            if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title) {
+                                let fileNameIndex = selectedRow.iCalendarEventCalendars.firstIndex(where: {$0.title == title})
+                                if fileNameIndex != nil {
+                                    selectedRow.iCalendarEventCalendars.remove(at: fileNameIndex!)
+                                }
+                            } else {
+                                let desiredEventCalendar: EKCalendar? = ASAEKEventManager.shared.eventStore.calendars(for: .event).first(where: {eventCalendar
+                                                                                                                                    in
+                                                                                                                                    eventCalendar.title == title})
+                                if desiredEventCalendar != nil {
+                                    selectedRow.iCalendarEventCalendars.append(desiredEventCalendar!)
+                                }
+                            }
+                        }
+                }
+            } // Section
+        } else {
+            EmptyView()
+        }
+    } // var body
+}
+
 struct ASABuiltInEventCalendarCell:  View {
     @ObservedObject var selectedRow:  ASARow
 
@@ -167,6 +206,27 @@ struct ASABuiltInEventCalendarCell:  View {
                     .imageScale(SCALE)
             }
             Text(verbatim: NSLocalizedString(fileName, comment: "")).font(.headline)
+        }
+    }
+}
+
+struct ASAICalendarEventCalendarCell:  View {
+    @ObservedObject var selectedRow:  ASARow
+
+    var title:  String
+
+    let SCALE: Image.Scale = .large
+
+    var body: some View {
+        HStack {
+            if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title) {
+                Image(systemName: "checkmark.circle.fill")
+                    .imageScale(SCALE)
+            } else {
+                Image(systemName: "circle")
+                    .imageScale(SCALE)
+            }
+            Text(verbatim: NSLocalizedString(title, comment: "")).font(.headline)
         }
     }
 }

@@ -681,4 +681,6 @@
         self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+
+    var usesISOTime:  Bool = false
  } // class ASASunsetTransitionCalendar

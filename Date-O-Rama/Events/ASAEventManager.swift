@@ -14,10 +14,10 @@ class ASAEventManager {
     
     static func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        if ASAEKEventManager.shared.shouldUseEKEvents {
-            let EKEvents = self.EKEventManager.eventsFor(startDate: startDate, endDate: endDate)
-            unsortedEvents = unsortedEvents + EKEvents
-        }
+//        if ASAEKEventManager.shared.shouldUseEKEvents {
+//            let EKEvents = self.EKEventManager.eventsFor(startDate: startDate, endDate: endDate)
+//            unsortedEvents = unsortedEvents + EKEvents
+//        }
 
 //        for eventCalendar in userData.ASAEventCalendars {
 //            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)

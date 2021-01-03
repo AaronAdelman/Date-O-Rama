@@ -83,6 +83,21 @@ class ASAEKEventManager:  NSObject, ObservableObject {
 //        debugPrint(#file, #function, self.calendars as Any)
     } // func loadExternalCalendars()
 
+    func EKCalendars(titles:  Array<String>?) -> Array<EKCalendar> {
+        if titles == nil {
+            return ASAEKEventManager.shared.eventStore.calendars(for: EKEntityType.event)
+        } else {
+            var temp:  Array<EKCalendar> = []
+            for title in titles! {
+                let calendar = ASAEKEventManager.shared.eventStore.calendars(for: .event).first(where: {$0.title == title})
+                if calendar != nil {
+                    temp.append(calendar!)
+                }
+            } // for title in titles
+            return temp
+        }
+    } // static func EKCalendars(titles:  Array<String>?) -> Array<EKCalendar>
+
     func reloadEKCalendars(titles:  Array<String>) {
         var temp:  Array<EKCalendar> = []
         for title in titles {
@@ -162,4 +177,13 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)
         return rawEvents
     } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
+
+    public func eventsFor(startDate:  Date, endDate: Date, calendars:  Array<EKCalendar>) -> Array<ASAEventCompatible> {
+        // Use an event store instance to create and properly configure an NSPredicate
+        let eventsPredicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: calendars)
+
+        // Use the configured NSPredicate to find and return events in the store that match
+        let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)
+        return rawEvents
+    } // func eventsFor(startDate:  Date, endDate: Date, calendars:  Array<EKCalendar>) -> Array<ASAEventCompatible>
 } // class ASAEKEventManager

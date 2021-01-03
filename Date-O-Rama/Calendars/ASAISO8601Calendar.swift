@@ -295,4 +295,6 @@ class ASAISO8601Calendar:  ASACalendar {
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
         return ["1", "2", "3", "4", "5", "6", "7"]
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+
+    var usesISOTime:  Bool = true
 } // class ASAISO8601Calendar

@@ -35,6 +35,7 @@ protocol ASACalendar {
     var supportsTimes: Bool { get }
     var supportsTimeZones: Bool { get }
     var transitionType:  ASATransitionType { get }
+    var usesISOTime:  Bool { get }
     
     func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String
     func startOfDay(for date:  Date, locationData:  ASALocationData) -> Date
