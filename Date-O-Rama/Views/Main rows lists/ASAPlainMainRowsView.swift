@@ -38,6 +38,8 @@ struct ASAPlainMainRowsView:  View {
         } // get
     } // var processedRows
     @Binding var now:  Date
+
+    var forAppleWatch:  Bool
     
     
     var body: some View {
@@ -48,7 +50,7 @@ struct ASAPlainMainRowsView:  View {
             processedRow
             in
             HStack {
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true, forAppleWatch: forAppleWatch)
                 Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             }
         } // ForEach
@@ -66,7 +68,7 @@ struct ASAPlainMainRowsView:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
             ) {
-                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true, forAppleWatch: forAppleWatch)
             }
         } // ForEach
         .onMove { (source: IndexSet, destination: Int) -> Void in
@@ -87,6 +89,6 @@ struct ASAPlainMainRowsView:  View {
 
 struct ASAPlainMainRowsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAPlainMainRowsView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic]), now: .constant(Date()))
+        ASAPlainMainRowsView(groupingOption: .byPlaceName, rows: .constant([ASARow.generic]), now: .constant(Date()), forAppleWatch: false)
     }
 }

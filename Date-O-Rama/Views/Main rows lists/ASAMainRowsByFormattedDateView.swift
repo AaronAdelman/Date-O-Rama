@@ -20,8 +20,10 @@ struct ASAMainRowsByFormattedDateView:  View {
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
 
+    var forAppleWatch:  Bool
+
     var body: some View {
-        ASAMainRowsByFormattedDateSubview(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now, secondaryGroupingOption: $secondaryGroupingOption)
+        ASAMainRowsByFormattedDateSubview(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now, secondaryGroupingOption: $secondaryGroupingOption, forAppleWatch:  forAppleWatch)
     } // var body
 } // struct ASAMainRowsByFormattedDateView
 
@@ -30,6 +32,8 @@ struct ASAMainRowsByFormattedDateSubview:  View {
     var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
+
+    var forAppleWatch:  Bool
 
     var keys:  Array<String> {
         get {
@@ -50,7 +54,7 @@ struct ASAMainRowsByFormattedDateSubview:  View {
 
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true, forAppleWatch: forAppleWatch)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -62,7 +66,7 @@ struct ASAMainRowsByFormattedDateSubview:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowCalendarPizzazztron: true, forAppleWatch: forAppleWatch)
                     }
                     #endif
 
@@ -74,6 +78,6 @@ struct ASAMainRowsByFormattedDateSubview:  View {
 
 struct ASAMainRowsByFormattedDateView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
+        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), forAppleWatch:  false)
     }
 }

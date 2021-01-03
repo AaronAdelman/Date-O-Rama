@@ -34,9 +34,11 @@ struct ASAClockDetailView: View {
         List {
             ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
 
-            ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
-
-            ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
+            if !forAppleWatch {
+                ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+                
+                ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
+            }
 
             if deleteable {
                 Section(header:  Text("")){

@@ -66,19 +66,19 @@ struct ASAClocksView: View {
 
                     switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
-                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
+                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, forAppleWatch:  false)
 
                     case .byCalendar:
-                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
+                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, forAppleWatch:  false)
 
                     case .byPlaceName, .byCountry:
-                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forAppleWatch:  false)
 
                     case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                        ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                        ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forAppleWatch:  false)
 
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
+                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forAppleWatch:  false)
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
                 .sheet(isPresented: self.$showingNewClockDetailView) {
