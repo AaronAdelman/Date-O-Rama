@@ -107,7 +107,10 @@ struct ASAClockCellBody:  View {
                     Toggle(isOn: $shouldShowEvents) {
                         Text("Show Events")
                     }
+                    #if os(watchOS)
+                    #else
                     Spacer().frame(width:  48.0)
+                    #endif
                 } // HStack
                 if shouldShowEvents {
                     ASAClockEventsForEach(processedRow: processedRow)
