@@ -124,11 +124,17 @@ struct ASAClockCellBody:  View {
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedRow
 
+    #if os(watchOS)
+    let TIME_WIDTH:  CGFloat = 50.0
+    #else
+    let TIME_WIDTH:  CGFloat = 90.0
+    #endif
+
     var body: some View {
         ForEach(processedRow.events, id: \.eventIdentifier) {
             event
             in
-            ASAClockEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASARow.generic, timeWidth: 90.0, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: false)
+            ASAClockEventCell(event: event, primaryRow: processedRow.row, timeWidth: TIME_WIDTH, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: false)
         } // ForEach
     }
 }
@@ -198,7 +204,7 @@ struct ASAClockMainSubcell:  View {
 struct ASAClockEventCell:  View {
     var event:  ASAEventCompatible
     var primaryRow:  ASARow
-    var secondaryRow:  ASARow
+//    var secondaryRow:  ASARow
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
@@ -206,9 +212,9 @@ struct ASAClockEventCell:  View {
     var body: some View {
         HStack {
             ASAClockStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
-            if self.eventsViewShouldShowSecondaryDates {
-                ASAClockStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
-            }
+//            if self.eventsViewShouldShowSecondaryDates {
+//                ASAClockStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
+//            }
             ASAEventColorRectangle(color: event.color)
             VStack(alignment: .leading) {
                     Text(event.title).font(.callout).bold()
