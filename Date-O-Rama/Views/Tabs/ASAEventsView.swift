@@ -178,20 +178,20 @@ struct ASAEventsView: View {
                             }
 
                             if ASAEKEventManager.shared.userHasPermission {
-                                Toggle(isOn: ASAEKEventManager.shared.$shouldUseEKEvents) {
-                                    Text("Use external events")
-                                } // Toggle
+//                                Toggle(isOn: ASAEKEventManager.shared.$shouldUseEKEvents) {
+//                                    Text("Use external events")
+//                                } // Toggle
 
-                                Button(action:
-                                        {
-                                            self.showingEventCalendarChooserView = true
-                                        }, label:  {
-                                            Text(NSLocalizedString("External event calendars", comment: ""))
-                                        })
-                                    .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
-                                        ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-                                    }
-                                    .foregroundColor(.accentColor)
+//                                Button(action:
+//                                        {
+//                                            self.showingEventCalendarChooserView = true
+//                                        }, label:  {
+//                                            Text(NSLocalizedString("External event calendars", comment: ""))
+//                                        })
+//                                    .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
+//                                        ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+//                                    }
+//                                    .foregroundColor(.accentColor)
                             } else {
                                 Text("NO_EXTERNAL_EVENTS_PERMISSION").foregroundColor(.gray)
                             }

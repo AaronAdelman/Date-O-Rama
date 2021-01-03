@@ -23,27 +23,27 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     @Published var eventStore = EKEventStore()
 
-    public var titles:  Array<String> {
-        get {
-            if calendars != nil {
-                return calendars!.map {$0.title}
-            } else {
-                return []
-            }
-        } // get
-    } // var titles
+//    public var titles:  Array<String> {
+//        get {
+//            if calendars != nil {
+//                return calendars!.map {$0.title}
+//            } else {
+//                return []
+//            }
+//        } // get
+//    } // var titles
 
-    @Published var calendars: [EKCalendar]?
+//    @Published var calendars: [EKCalendar]?
 
-    public var calendarSet:  Set<EKCalendar> {
-        get {
-            var calendarSet = Set<EKCalendar>()
-            for calendar in self.calendars! {
-                calendarSet.insert(calendar)
-            } // for calendar in parent.calendarArray
-            return calendarSet
-        } // get
-    } // var calendarSet
+//    public var calendarSet:  Set<EKCalendar> {
+//        get {
+//            var calendarSet = Set<EKCalendar>()
+//            for calendar in self.calendars! {
+//                calendarSet.insert(calendar)
+//            } // for calendar in parent.calendarArray
+//            return calendarSet
+//        } // get
+//    } // var calendarSet
 
     @AppStorage("USE_EXTERNAL_EVENTS") var shouldUseEKEvents: Bool = true
 
@@ -73,15 +73,15 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         }
     }
 
-    func loadEKCalendars() {
-        let EKCalendarTitles = ASAUserData.shared.EKCalendarTitles
-        if EKCalendarTitles.count == 0 {
-            self.calendars = eventStore.calendars(for: EKEntityType.event)
-        } else {
-            self.reloadEKCalendars(titles: EKCalendarTitles)
-        }
+//    func loadEKCalendars() {
+//        let EKCalendarTitles = ASAUserData.shared.EKCalendarTitles
+//        if EKCalendarTitles.count == 0 {
+//            self.calendars = eventStore.calendars(for: EKEntityType.event)
+//        } else {
+//            self.reloadEKCalendars(titles: EKCalendarTitles)
+//        }
 //        debugPrint(#file, #function, self.calendars as Any)
-    } // func loadExternalCalendars()
+//    } // func loadExternalCalendars()
 
     func EKCalendars(titles:  Array<String>?) -> Array<EKCalendar> {
         if titles == nil {
@@ -98,22 +98,22 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         }
     } // static func EKCalendars(titles:  Array<String>?) -> Array<EKCalendar>
 
-    func reloadEKCalendars(titles:  Array<String>) {
-        var temp:  Array<EKCalendar> = []
-        for title in titles {
-            let calendar = self.eventStore.calendars(for: .event).first(where: {$0.title == title})
-            if calendar != nil {
-                temp.append(calendar!)
-            }
-        }
-        self.calendars = temp
-    } // func reloadEKCalendars(titles:  Array<String>)
+//    func reloadEKCalendars(titles:  Array<String>) {
+//        var temp:  Array<EKCalendar> = []
+//        for title in titles {
+//            let calendar = self.eventStore.calendars(for: .event).first(where: {$0.title == title})
+//            if calendar != nil {
+//                temp.append(calendar!)
+//            }
+//        }
+//        self.calendars = temp
+//    } // func reloadEKCalendars(titles:  Array<String>)
     
     fileprivate func handleAccessGranted() {
         DispatchQueue.main.async(execute: {
             debugPrint(#file, #function, "access granted")
             self.userHasPermission = true
-            self.loadEKCalendars()
+//            self.loadEKCalendars()
 
             self.ready = true
         })
@@ -169,14 +169,14 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         })
     } // func requestAccessToEKCalendars()
     
-    public func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible> {
-        // Use an event store instance to create and properly configure an NSPredicate
-        let eventsPredicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: self.calendars)
-        
-        // Use the configured NSPredicate to find and return events in the store that match
-        let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)
-        return rawEvents
-    } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
+//    public func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible> {
+//        // Use an event store instance to create and properly configure an NSPredicate
+//        let eventsPredicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: self.calendars)
+//
+//        // Use the configured NSPredicate to find and return events in the store that match
+//        let rawEvents:  Array<EKEvent> = eventStore.events(matching: eventsPredicate)
+//        return rawEvents
+//    } // func eventsFor(startDate:  Date, endDate: Date) -> Array<ASAEventCompatible>
 
     public func eventsFor(startDate:  Date, endDate: Date, calendars:  Array<EKCalendar>) -> Array<ASAEventCompatible> {
         // Use an event store instance to create and properly configure an NSPredicate

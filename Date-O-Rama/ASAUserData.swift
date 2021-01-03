@@ -14,7 +14,7 @@ import UIKit
 
 enum ASAPreferencesFileCode {
     case clocks
-    case events
+//    case events
     case complications
 
     var suffix:  String {
@@ -23,8 +23,8 @@ enum ASAPreferencesFileCode {
             case .clocks:
                 return "/Documents/Clock Preferences.json"
 
-            case .events:
-                return "/Documents/Event Preferences.json"
+//            case .events:
+//                return "/Documents/Event Preferences.json"
 
             case .complications:
                 return "/Documents/Complication Preferences.json"
@@ -37,7 +37,7 @@ enum ASAPreferencesFileCode {
 // MARK: -
 
 //fileprivate let INTERNAL_EVENT_CALENDARS_KEY  = "INTERNAL_EVENT_CALENDARS"
-fileprivate let EXTERNAL_EVENT_CALENDARS_KEY  = "EXTERNAL_EVENT_CALENDARS"
+//fileprivate let EXTERNAL_EVENT_CALENDARS_KEY  = "EXTERNAL_EVENT_CALENDARS"
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
@@ -57,11 +57,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     @Published var mainRows:  Array<ASARow> = [ASARow.generic]
 
 //    @Published var ASAEventCalendars:  Array<ASAEventCalendar> = []
-    @Published var EKCalendarTitles:  Array<String> = [] {
-        didSet {
-            ASAEKEventManager.shared.reloadEKCalendars(titles: EKCalendarTitles)
-        } // didSet
-    }
+//    @Published var EKCalendarTitles:  Array<String> = [] {
+//        didSet {
+//            ASAEKEventManager.shared.reloadEKCalendars(titles: EKCalendarTitles)
+//        } // didSet
+//    }
     
     @Published var threeLineLargeRows:  Array<ASARow> = []
     @Published var twoLineSmallRows:    Array<ASARow> = []
@@ -216,33 +216,33 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
         }
         
-        if preferenceFileExists(code: .events) {
-            let path = self.preferencesFilePath(code: .events)
-            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
-            do {
-                #if os(watchOS)
-                let data = defaults.object(forKey:  ASAPreferencesFileCode.events.suffix) as! Data
-                #else
-                let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-                #endif
-                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-                //                debugPrint(#file, #function, jsonResult)
-                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
-                    // do stuff
-                    //                    debugPrint(#file, #function, jsonResult)
-//                    self.ASAEventCalendars = ASAUserData.ASASEventCalendarArray(dictionary: jsonResult)
-                    self.EKCalendarTitles = jsonResult[EXTERNAL_EVENT_CALENDARS_KEY] as! Array<String>
-                    
-                    genericSuccess = true
-                }
-            } catch {
-                // handle error
-                debugPrint(#file, #function, error)
-            }
-        } else {
-            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .events)))” does not exist")
-        }
+//        if preferenceFileExists(code: .events) {
+//            let path = self.preferencesFilePath(code: .events)
+//            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
+//            do {
+//                #if os(watchOS)
+//                let data = defaults.object(forKey:  ASAPreferencesFileCode.events.suffix) as! Data
+//                #else
+//                let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
+//                #endif
+//                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
+//                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+//                //                debugPrint(#file, #function, jsonResult)
+//                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+//                    // do stuff
+//                    //                    debugPrint(#file, #function, jsonResult)
+////                    self.ASAEventCalendars = ASAUserData.ASASEventCalendarArray(dictionary: jsonResult)
+//                    self.EKCalendarTitles = jsonResult[EXTERNAL_EVENT_CALENDARS_KEY] as! Array<String>
+//                    
+//                    genericSuccess = true
+//                }
+//            } catch {
+//                // handle error
+//                debugPrint(#file, #function, error)
+//            }
+//        } else {
+//            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .events)))” does not exist")
+//        }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
             if preferenceFileExists(code: .complications) {
@@ -348,16 +348,16 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             writePreferences(temp1a, code: .clocks)
         }
 
-        if code == .events {
-//            let processedInternalEventCalendarArray = self.processedASAEventCalendarArray(ASAEventCalendarArray: self.ASAEventCalendars)
-
-            let temp1b: Dictionary<String, Any> = [
-//                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
-                EXTERNAL_EVENT_CALENDARS_KEY:  ASAEKEventManager.shared.titles
-            ]
-
-            writePreferences(temp1b, code: .events)
-        }
+//        if code == .events {
+////            let processedInternalEventCalendarArray = self.processedASAEventCalendarArray(ASAEventCalendarArray: self.ASAEventCalendars)
+//
+//            let temp1b: Dictionary<String, Any> = [
+////                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
+//                EXTERNAL_EVENT_CALENDARS_KEY:  ASAEKEventManager.shared.titles
+//            ]
+//
+//            writePreferences(temp1b, code: .events)
+//        }
 
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
