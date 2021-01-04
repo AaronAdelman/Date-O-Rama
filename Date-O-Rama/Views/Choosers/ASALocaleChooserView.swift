@@ -113,8 +113,6 @@ struct ASALocaleCell: View {
     let localeString: String
     let localizedLocaleString:  String
     
-    //    @ObservedObject var row:  ASARow
-    //    @ObservedObject var row:  ASALocatedObject
     @Binding var tempLocaleIdentifier:  String
     
     var body: some View {

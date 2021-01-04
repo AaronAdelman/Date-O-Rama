@@ -31,15 +31,6 @@ let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
 class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
-//    var timeZone:  TimeZone {
-//        get {
-//            return self.locationData.timeZone
-//        } // get
-//        set {
-//            self.locationData.timeZone = newValue
-//        } // set
-//    }
-        
     @Published var usesDeviceLocation:  Bool = true
     @Published var locationData:  ASALocationData = ASALocationManager.shared.deviceLocationData {
         didSet {
@@ -50,15 +41,6 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     func handleLocationDataChanged() {
 
     }
-    
-//    var location:  CLLocation {
-//        get {
-//            return self.locationData.location
-//        } // get
-//        set {
-//            self.locationData.location = newValue 
-//        } // set
-//    }
 
     @Published var localeIdentifier:  String = ""
     
@@ -82,7 +64,6 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
             self.locationData = self.locationManager.deviceLocationData
         }
     } // func handle(notification:  Notification) -> Void
-    
 } // class ASALocatedObject
 
 

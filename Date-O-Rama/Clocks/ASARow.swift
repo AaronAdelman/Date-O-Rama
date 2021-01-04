@@ -209,11 +209,6 @@ class ASARow: ASALocatedObject {
             newRow.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
         }
 
-//        let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
-//        if timeZoneIdentifier != nil {
-//            newRow.timeZone = TimeZone(identifier: timeZoneIdentifier!)!
-//        }
-
         let builtInEventCalendarsFileNames = dictionary[BUILT_IN_EVENT_CALENDARS_KEY] as? Array<String>
         if builtInEventCalendarsFileNames != nil {
             for fileName in builtInEventCalendarsFileNames! {
