@@ -110,9 +110,15 @@ struct ASAClockCellBody:  View {
                     Toggle(isOn: $shouldShowEvents) {
                         Text("Show Events")
                     }
+                    .padding(EdgeInsets(top: 1.0, leading: 4.0, bottom: 1.0, trailing: 1.0))
+                    .overlay(
+                        Capsule()
+                            .stroke(Color("toggleBorder"), lineWidth: 1.0)
+                    )
                     #if os(watchOS)
                     #else
-                    Spacer().frame(width:  48.0)
+                    Spacer()
+                        .frame(width:  128.0)
                     #endif
                 } // HStack
                 if shouldShowEvents {

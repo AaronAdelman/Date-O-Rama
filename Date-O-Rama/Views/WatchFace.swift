@@ -160,7 +160,7 @@ struct Watch:  View {
             Hand(offset: 3.0)
                 .fill()
                 .foregroundColor(Color(isNight ? "secondHandNight" : "secondHandDay"))
-                .frame(width: 0.5, alignment: .center)
+                .frame(width: 1.0, alignment: .center)
                 .rotationEffect(.radians(secondAngle))
 
             Circle()
