@@ -95,52 +95,10 @@ extension Color {
             }
         }
 
-
-
         let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
 
         return result
     } // static func foregroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
-
-//    static func backgroundColor(transitionType:  ASATransitionType, hour:  Int, calendarType:  ASACalendarType) -> Color {
-//        if calendarType == .JulianDay {
-//            return Color("julianDayBackground")
-//        }
-//
-//        let DAY_COLOR: Color = .skyBlueTop
-//        let NIGHT_COLOR: Color = .midnightBlueTop
-//
-//        let result = nightTime(hour:  hour, transitionType:  transitionType) ? NIGHT_COLOR : DAY_COLOR
-//
-//        return result
-//    } // static func backgroundColor(transitionType:  ASATransitionType, hour:  Int) -> Color
-
-//    var components:  (CGFloat, CGFloat, CGFloat) {
-//        get {
-//            let cg = self.cgColor
-//            if cg == nil {
-//                return (0.5, 0.5, 0.5)
-//            }
-//            let components = cg!.components
-//            if components == nil {
-//                return (0.5, 0.5, 0.5)
-//            }
-//            let result = (components![0], components![1], components![2])
-//            return result
-//        } // get
-//    } // var components
-
-//    static func blend(startColor:  Color, endColor:  Color, progress:  CGFloat) -> Color {
-//        let oneOverProgress:  CGFloat = 1.0 - progress
-//
-//        let startComponents = startColor.components
-//        let endComponents = endColor.components
-//        let red   = startComponents.0 * oneOverProgress + endComponents.0 * progress
-//        let green = startComponents.1 * oneOverProgress + endComponents.1 * progress
-//        let blue  = startComponents.2 * oneOverProgress + endComponents.2 * progress
-//        let result = Color(red: Double(red), green: Double(green), blue: Double(blue))
-//        return result
-//    } // func blend(startColor:  Color, endColor:  Color, progress:  CGFloat)
 
     static func blend(startRed:  Double, startGreen:  Double, startBlue:  Double, endRed:  Double, endGreen:  Double, endBlue:  Double, progress:  Double) -> Color {
         let oneOverProgress = 1.0 - progress
@@ -151,4 +109,11 @@ extension Color {
         let result = Color(red: red, green: green, blue: blue)
         return result
     } // static func blend(startRed:  Double, startGreen:  Double, startBlue:  Double, endRed:  Double, endGreen:  Double, endBlue:  Double, progress:  Double) -> Color
+} // extension Color
+
+
+extension Color {
+    func grayIfBefore(_ date:  Date) -> Color {
+        date < Date() ? Color.gray : self
+    } // func grayIfBefore(_ startDate:  Date) -> Color
 } // extension Color

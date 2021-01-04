@@ -13,21 +13,17 @@ struct ASAStartAndEndTimesSubcell:  View {
     var row:  ASARow
     var timeWidth:  CGFloat
     var timeFontSize:  Font
+    var labelColor:  Color
 
     var body: some View {
         VStack(alignment: .leading) {
             if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
-                ASAAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
+                ASAAllDayTimesSubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize, labelColor: labelColor)
             } else {
-                Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize).foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
-                    .lineLimit(2)
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
+                ASATimeText(verbatim:  row.shortenedDateTimeString(now: event.startDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor)
+
                 if event.endDate != event.startDate {
-                    Text(row.shortenedDateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize).foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
-                        .lineLimit(2)
-                        .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
+                    ASATimeText(verbatim:  row.shortenedDateTimeString(now: event.endDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor)
                 }
             }
         } // VStack
