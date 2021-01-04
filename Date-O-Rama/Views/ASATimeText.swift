@@ -16,6 +16,14 @@ struct ASATimeText:  View {
     var labelColor:  Color
 
     var body:  some View {
+        #if os(watchOS)
+        Text(verbatim:  verbatim)
+            .lineLimit(2)
+            .font(timeFontSize)
+            .foregroundColor(labelColor.grayIfBefore(cutoffDate))
+            .allowsTightening(true)
+            .minimumScaleFactor(0.5)
+        #else
         Text(verbatim:  verbatim)
             .lineLimit(2)
             .frame(width:  timeWidth)
@@ -23,6 +31,7 @@ struct ASATimeText:  View {
             .foregroundColor(labelColor.grayIfBefore(cutoffDate))
             .allowsTightening(true)
             .minimumScaleFactor(0.5)
+        #endif
     } // var body
 } // struct ASATimesText
 

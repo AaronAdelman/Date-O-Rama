@@ -32,6 +32,31 @@ struct ASAEventCell:  View {
     #endif
 
     var body: some View {
+        #if os(watchOS)
+        HStack {
+            ASAEventColorRectangle(color: event.color)
+
+            VStack(alignment: .leading) {
+                Text(event.title).font(.callout).bold().foregroundColor(labelColor)
+                    .allowsTightening(true)
+                    .minimumScaleFactor(0.4)
+                    .lineLimit(3)
+
+                Text(event.calendarTitleWithLocation
+                ).font(.subheadlineMonospacedDigit).foregroundColor(secondaryLabelColor)
+                .allowsTightening(true)
+                .minimumScaleFactor(0.4)
+                .lineLimit(2)
+
+                ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
+
+                if self.eventsViewShouldShowSecondaryDates {
+                    ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
+                }
+
+            } // VStack
+        } // HStack
+        #else
         HStack {
             ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
 
@@ -51,6 +76,7 @@ struct ASAEventCell:  View {
                     Text(event.title).font(.headline).foregroundColor(labelColor)
                         .allowsTightening(true)
                         .minimumScaleFactor(0.4)
+                        .lineLimit(2)
                 }
 
                 Text(event.calendarTitleWithLocation
@@ -60,6 +86,7 @@ struct ASAEventCell:  View {
                 .lineLimit(2)
             } // VStack
         } // HStack
+        #endif
     } // var body
 } // struct ASAEventCell
 
