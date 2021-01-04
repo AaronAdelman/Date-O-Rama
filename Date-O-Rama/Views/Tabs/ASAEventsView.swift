@@ -66,24 +66,6 @@ struct ASAEventsView: View {
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
     
-//    func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible> {
-//        var unsortedEvents: [ASAEventCompatible] = []
-//        if ASAEKEventManager.shared.shouldUseEKEvents {
-//            let externalEvents = self.eventManager.eventsFor(startDate: self.primaryRow.startOfDay(date: self.date), endDate: self.primaryRow.startOfNextDay(date: self.date))
-//            unsortedEvents = unsortedEvents + externalEvents
-//        }
-//
-//        for eventCalendar in userData.ASAEventCalendars {
-//            unsortedEvents = unsortedEvents + eventCalendar.events(startDate:  startDate, endDate:  endDate, ISOCountryCode: eventCalendar.locationData.ISOCountryCode, requestedLocaleIdentifier: eventCalendar.localeIdentifier, allDayEventsOnly: false)
-//        } // for eventCalendar in userData.internalEventCalendars
-//
-//        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
-//            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
-//            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
-//        })
-//        return events
-//    } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
-    
     var timeWidth:  CGFloat {
         get {
             if self.sizeClass! == .compact {
@@ -177,29 +159,9 @@ struct ASAEventsView: View {
                                 }
                             }
 
-                            if ASAEKEventManager.shared.userHasPermission {
-//                                Toggle(isOn: ASAEKEventManager.shared.$shouldUseEKEvents) {
-//                                    Text("Use external events")
-//                                } // Toggle
-
-//                                Button(action:
-//                                        {
-//                                            self.showingEventCalendarChooserView = true
-//                                        }, label:  {
-//                                            Text(NSLocalizedString("External event calendars", comment: ""))
-//                                        })
-//                                    .popover(isPresented:  $showingEventCalendarChooserView, arrowEdge: .top) {
-//                                        ASAEKCalendarChooserView().frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-//                                    }
-//                                    .foregroundColor(.accentColor)
-                            } else {
+                            if !ASAEKEventManager.shared.userHasPermission {
                                 Text("NO_EXTERNAL_EVENTS_PERMISSION").foregroundColor(.gray)
                             }
-
-//                            NavigationLink(destination:                             ASAEventCalendarsView()
-//                            ) {
-//                                Text("Internal event calendars")
-//                            }
                         } // if showingPreferences
                     } // Section
 
@@ -224,10 +186,6 @@ struct ASAEventsView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
 } // struct ASAEventsView
-
-
-// MARK: -
-
 
 
 // MARK: -
