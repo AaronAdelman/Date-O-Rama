@@ -222,7 +222,7 @@ struct ASAClockEventCell:  View {
 
     var body: some View {
         HStack {
-            ASAClockTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
+            ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color.white)
 //            if self.eventsViewShouldShowSecondaryDates {
 //                ASAClockStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
 //            }
@@ -241,85 +241,6 @@ struct ASAClockEventCell:  View {
                     .lineLimit(2)
             } // VStack
         } // HStack
-    }
-}
-
-struct ASAClockTimesSubcell:  View {
-    var event:  ASAEventCompatible
-    var row:  ASARow
-    var timeWidth:  CGFloat
-    var timeFontSize:  Font
-
-    static var ISOTimeDateFormatter:  DateFormatter = {
-        var dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .medium
-        return dateFormatter
-    }()
-
-    private func formatAsISOTime(date:  Date) -> String {
-        return ASAClockTimesSubcell.ISOTimeDateFormatter.string(from: date)
-    } // func formatAsISOTime(date:  Date) -> String
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
-                ASAClockAllDayTimesSubsubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize)
-            } else if event.startDate == event.endDate {
-                Text(verbatim: row.timeString(now: event.startDate))
-                    .frame(width:  timeWidth)
-                    .font(timeFontSize)
-                    //                    .foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
-                    .lineLimit(1)
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
-                if !row.calendar.usesISOTime {
-                    Text(verbatim: "(\(formatAsISOTime(date: event.startDate)))")
-                        .frame(width:  timeWidth)
-                        .font(timeFontSize)
-                        //                    .foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
-                        .lineLimit(1)
-                        .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
-                }
-            } else {
-                Text(row.shortenedDateTimeString(now: event.startDate)).frame(width:  timeWidth).font(timeFontSize)
-//                    .foregroundColor(event.startDate < Date() ? Color.gray : Color(UIColor.label))
-                    .lineLimit(2)
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
-                if event.endDate != event.startDate {
-                    Text(row.shortenedDateTimeString(now: event.endDate)).frame(width:  timeWidth).font(self.timeFontSize)
-//                        .foregroundColor(event.endDate < Date() ? Color.gray : Color(UIColor.label))
-                        .lineLimit(2)
-                        .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
-                }
-            }
-        } // VStack
-    } // var body
-}
-
-struct ASAClockAllDayTimesSubsubcell:  View {
-    var startDate:  Date
-    var endDate:  Date
-    var startDateString:  String
-    var endDateString:    String
-    var timeWidth:  CGFloat
-    var timeFontSize:  Font
-
-    var body:  some View {
-        VStack {
-            Text(startDateString).frame(width:  timeWidth).font(timeFontSize)
-//                .foregroundColor(startDate < Date() ? Color.gray : Color(UIColor.label))
-                .allowsTightening(true)
-                .minimumScaleFactor(0.5)
-            if startDateString != endDateString {
-                Text(endDateString).frame(width:  timeWidth).font(timeFontSize)
-//                    .foregroundColor(endDate < Date() ? Color.gray : Color(UIColor.label))
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
-            }
-        }
     }
 }
 
