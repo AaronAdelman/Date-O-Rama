@@ -20,9 +20,9 @@ struct ASAEventCell:  View {
 
     var body: some View {
         HStack {
-            ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color(UIColor.label))
+            ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color(UIColor.label))
             if self.eventsViewShouldShowSecondaryDates {
-                ASAStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color(UIColor.label))
+                ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color(UIColor.label))
             }
             ASAEventColorRectangle(color: event.color)
             VStack(alignment: .leading) {

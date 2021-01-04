@@ -1,5 +1,5 @@
 //
-//  ASAStartAndEndTimesSubcell.swift
+//  ASATimesSubcell.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 04/01/2021.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAStartAndEndTimesSubcell:  View {
+struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
     var row:  ASARow
     var timeWidth:  CGFloat
@@ -28,10 +28,10 @@ struct ASAStartAndEndTimesSubcell:  View {
             }
         } // VStack
     } // var body
-} // struct ASAStartAndEndTimesSubcell
+} // struct ASATimesSubcell
 
-//struct ASAStartAndEndTimesSubcell_Previews: PreviewProvider {
+//struct ASATimesSubcell_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAStartAndEndTimesSubcell()
+//        ASATimesSubcell()
 //    }
 //}

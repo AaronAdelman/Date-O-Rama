@@ -212,6 +212,9 @@ struct ASAClockMainSubcell:  View {
     } // var body
 } // struct ASAClockMainSubcell
 
+
+// MARK:  -
+
 struct ASAClockEventCell:  View {
     var event:  ASAEventCompatible
     var primaryRow:  ASARow
@@ -222,7 +225,7 @@ struct ASAClockEventCell:  View {
 
     var body: some View {
         HStack {
-            ASAStartAndEndTimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color.white)
+            ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color.white)
 //            if self.eventsViewShouldShowSecondaryDates {
 //                ASAClockStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
 //            }
