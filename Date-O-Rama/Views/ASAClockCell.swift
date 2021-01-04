@@ -141,11 +141,13 @@ struct ASAClockEventsForEach:  View {
     let TIME_WIDTH:  CGFloat = 90.0
     #endif
 
+    static let genericRow = ASARow.generic
+
     var body: some View {
         ForEach(processedRow.events, id: \.eventIdentifier) {
             event
             in
-            ASAClockEventCell(event: event, primaryRow: processedRow.row, timeWidth: TIME_WIDTH, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: false)
+            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, timeWidth: TIME_WIDTH, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime)
         } // ForEach
     }
 }
@@ -201,7 +203,7 @@ struct ASAClockMainSubcell:  View {
                     }
 
                     if shouldShowFormattedDate {
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
+                        ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                     }
                 }
             }
@@ -211,41 +213,6 @@ struct ASAClockMainSubcell:  View {
         } // VStack
     } // var body
 } // struct ASAClockMainSubcell
-
-
-// MARK:  -
-
-struct ASAClockEventCell:  View {
-    var event:  ASAEventCompatible
-    var primaryRow:  ASARow
-//    var secondaryRow:  ASARow
-    var timeWidth:  CGFloat
-    var timeFontSize:  Font
-    var eventsViewShouldShowSecondaryDates: Bool
-
-    var body: some View {
-        HStack {
-            ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: Color.white)
-//            if self.eventsViewShouldShowSecondaryDates {
-//                ASAClockStartAndEndTimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize)
-//            }
-            ASAEventColorRectangle(color: event.color)
-            VStack(alignment: .leading) {
-                    Text(event.title).font(.callout).bold()
-//                        .foregroundColor(Color(UIColor.label))
-                        .allowsTightening(true)
-                        .minimumScaleFactor(0.4)
-                        .lineLimit(3)
-                Text(event.calendarTitleWithoutLocation
-).font(.subheadlineMonospacedDigit)
-//                    .foregroundColor(Color(UIColor.secondaryLabel))
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.4)
-                    .lineLimit(2)
-            } // VStack
-        } // HStack
-    }
-}
 
 
 // MARK:  -

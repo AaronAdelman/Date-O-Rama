@@ -132,6 +132,7 @@
 		A59C436625A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
 		A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
+		A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
 		A5A9666325A31DA200CF158F /* ASADatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666225A31DA200CF158F /* ASADatePicker.swift */; };
 		A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */; };
 		A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
@@ -951,6 +952,7 @@
 				A584C8FE24B5E3DB0014CE2E /* ASAEventsFile.swift in Sources */,
 				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
+				A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */,
 				A501B24F259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
 				A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */,
 				A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */,
