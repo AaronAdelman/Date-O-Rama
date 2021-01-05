@@ -22,8 +22,6 @@ struct ASAEventCell:  View {
     let secondaryLabelColor = Color(UIColor.lightGray)
     let compact = true
     #else
-//    let labelColor = Color(UIColor.label)
-//    let secondaryLabelColor = Color(UIColor.secondaryLabel)
     var labelColor:  Color {
         get {
             if self.forClock {
@@ -54,9 +52,6 @@ struct ASAEventCell:  View {
     var rangeEnd:  Date
 
     func eventIsTodayOnly() -> Bool {
-//        let now = Date()
-//        let rangeStart = primaryRow.startOfDay(date: now)
-//        let rangeEnd = primaryRow.startOfNextDay(date: now)
         return rangeStart <= event.startDate && event.endDate <= rangeEnd
     }
 
@@ -101,7 +96,7 @@ struct ASAEventCell:  View {
                     Text(event.title).font(.headline).foregroundColor(labelColor)
                         .allowsTightening(true)
                         .minimumScaleFactor(0.4)
-                        .lineLimit(2)
+                        .lineLimit(3)
                 }
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor)
