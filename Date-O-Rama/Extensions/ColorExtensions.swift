@@ -112,8 +112,16 @@ extension Color {
 } // extension Color
 
 
+// MARK:  -
+
 extension Color {
     func grayIfBefore(_ date:  Date) -> Color {
-        date < Date() ? Color.gray : self
+        #if os(watchOS)
+        let gray: Color = Color.gray
+        #else
+        let gray: Color = Color("secondaryLabel")
+        #endif
+        
+        return date < Date() ? gray : self
     } // func grayIfBefore(_ startDate:  Date) -> Color
 } // extension Color

@@ -21,8 +21,10 @@ struct ASAEventCell:  View {
     let secondaryLabelColor = Color(UIColor.lightGray)
     let compact = true
     #else
-    let labelColor = Color(UIColor.label)
-    let secondaryLabelColor = Color(UIColor.secondaryLabel)
+//    let labelColor = Color(UIColor.label)
+//    let secondaryLabelColor = Color(UIColor.secondaryLabel)
+    let labelColor = Color("label")
+    let secondaryLabelColor = Color("secondaryLabel")
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
         get {
