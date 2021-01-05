@@ -71,6 +71,9 @@ struct ASAClockDetailView: View {
     }
 } // struct ASAClockDetailView
 
+
+// MARK:  -
+
 struct ASAClockDetailEditingSection:  View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
@@ -156,6 +159,9 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 } // struct ASABuiltInEventCalendarsEditingSection
 
 
+
+// MARK:  -
+
 struct ASAICalendarEventCalendarsEditingSection:  View {
     @ObservedObject var selectedRow:  ASARow
     var iCalendarEventCalendarTitles:  Array<String> = ASAEKEventManager.shared.allEventCalendars().map{ $0.title }.sorted()
@@ -191,6 +197,9 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
     } // var body
 }
 
+
+// MARK:  -
+
 struct ASABuiltInEventCalendarCell:  View {
     @ObservedObject var selectedRow:  ASARow
 
@@ -199,10 +208,12 @@ struct ASABuiltInEventCalendarCell:  View {
     let SCALE: Image.Scale = .large
 
     var body: some View {
+        let eventFile = ASAEventCalendar(fileName: fileName)
+
         HStack {
             if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
                 Image(systemName: "checkmark.circle.fill")
-                    .imageScale(SCALE)
+                    .imageScale(SCALE).foregroundColor(eventFile.color)
             } else {
                 Image(systemName: "circle")
                     .imageScale(SCALE)
@@ -211,6 +222,9 @@ struct ASABuiltInEventCalendarCell:  View {
         }
     }
 }
+
+
+// MARK:  -
 
 struct ASAICalendarEventCalendarCell:  View {
     @ObservedObject var selectedRow:  ASARow
@@ -232,6 +246,9 @@ struct ASAICalendarEventCalendarCell:  View {
         }
     }
 }
+
+
+// MARK:  -
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {

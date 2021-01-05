@@ -56,7 +56,7 @@ class ASAEventCalendar {
         return result
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
     
-    fileprivate func calendarColor() -> Color {
+    var color:  Color {
         return Color(self.eventsFile!.calendarColor)
     } // static func calendarColor() -> Color
 
@@ -287,7 +287,7 @@ class ASAEventCalendar {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
                     let title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    let color = self.calendarColor()
+                    let color = self.color
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate
 
