@@ -20,7 +20,7 @@ class ASAISO8601Calendar:  ASACalendar {
     private var ApplesCalendar:  Calendar
     
     init() {
-        let title = self.calendarCode.equivalentCalendarIdentifier()
+        let title = self.calendarCode.equivalentCalendarIdentifier
         ApplesCalendar = Calendar(identifier: title)
         dateFormatter.calendar = ApplesCalendar
 

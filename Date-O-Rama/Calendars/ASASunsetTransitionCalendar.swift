@@ -28,7 +28,7 @@
 
     init(calendarCode:  ASACalendarCode) {
         self.calendarCode = calendarCode
-        let title = self.calendarCode.equivalentCalendarIdentifier()
+        let title = self.calendarCode.equivalentCalendarIdentifier
         ApplesCalendar = Calendar(identifier: title)
         dateFormatter.calendar = ApplesCalendar
     } // init(calendarCode:  ASACalendarCode)

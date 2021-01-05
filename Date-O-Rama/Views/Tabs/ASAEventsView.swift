@@ -66,16 +66,16 @@ struct ASAEventsView: View {
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
     
-    var timeWidth:  CGFloat {
-        get {
-            if self.sizeClass! == .compact {
-                return  90.00
-            } else {
-                return 120.00
-            }
-        } // get
-    } // var timeWidth
-    let TIME_FONT_SIZE = Font.subheadlineMonospacedDigit
+//    var timeWidth:  CGFloat {
+//        get {
+//            if self.sizeClass! == .compact {
+//                return  90.00
+//            } else {
+//                return 120.00
+//            }
+//        } // get
+//    } // var timeWidth
+//    let TIME_FONT_SIZE = Font.subheadlineMonospacedDigit
     
     @State var isNavBarHidden:  Bool = false
     
