@@ -15,6 +15,7 @@ struct ASAEventCell:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
+    var forClock:  Bool
 
     #if os(watchOS)
     let labelColor = Color.white
@@ -23,8 +24,24 @@ struct ASAEventCell:  View {
     #else
 //    let labelColor = Color(UIColor.label)
 //    let secondaryLabelColor = Color(UIColor.secondaryLabel)
-    let labelColor = Color("label")
-    let secondaryLabelColor = Color("secondaryLabel")
+    var labelColor:  Color {
+        get {
+            if self.forClock {
+                return Color("label")
+            } else {
+                return Color(UIColor.label)
+            }
+        }
+    }
+    var secondaryLabelColor:  Color {
+        get {
+            if self.forClock {
+                return Color("secondaryLabel")
+            } else {
+                return Color(UIColor.secondaryLabel)
+            }
+        }
+    }
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
         get {
@@ -32,6 +49,13 @@ struct ASAEventCell:  View {
         } // get
     } // var compact
     #endif
+
+    func eventIsTodayOnly() -> Bool {
+        let now = Date()
+        let rangeStart = primaryRow.startOfDay(date: now)
+        let rangeEnd = primaryRow.startOfNextDay(date: now)
+        return rangeStart <= event.startDate && event.endDate <= rangeEnd
+    }
 
     var body: some View {
         #if os(watchOS)
@@ -44,26 +68,22 @@ struct ASAEventCell:  View {
                     .minimumScaleFactor(0.4)
                     .lineLimit(3)
 
-                Text(event.calendarTitleWithLocation
-                ).font(.subheadlineMonospacedDigit).foregroundColor(secondaryLabelColor)
-                .allowsTightening(true)
-                .minimumScaleFactor(0.4)
-                .lineLimit(2)
+                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor)
 
-                ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
+                ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
 
                 if self.eventsViewShouldShowSecondaryDates {
-                    ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
+                    ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
                 }
 
             } // VStack
         } // HStack
         #else
         HStack {
-            ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
+            ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
 
             if self.eventsViewShouldShowSecondaryDates {
-                ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor)
+                ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
             ASAEventColorRectangle(color: event.color)
@@ -81,16 +101,25 @@ struct ASAEventCell:  View {
                         .lineLimit(2)
                 }
 
-                Text(event.calendarTitleWithLocation
-                ).font(.subheadlineMonospacedDigit).foregroundColor(secondaryLabelColor)
-                .allowsTightening(true)
-                .minimumScaleFactor(0.4)
-                .lineLimit(2)
+                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor)
             } // VStack
         } // HStack
         #endif
     } // var body
 } // struct ASAEventCell
+
+struct ASAEventCellCalendarTitle:  View {
+    var event:  ASAEventCompatible
+    var color:  Color
+
+    var body: some View {
+        Text(event.calendarTitleWithLocation
+        ).font(.subheadlineMonospacedDigit).foregroundColor(color)
+        .allowsTightening(true)
+        .minimumScaleFactor(0.4)
+        .lineLimit(2)
+    }
+}
 
 //struct ASAEventCell_Previews: PreviewProvider {
 //    static var previews: some View {

@@ -17,13 +17,14 @@ struct ASAAllDayTimesSubcell:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var labelColor:  Color
+    var forClock:  Bool
 
     var body:  some View {
         VStack {
-            ASATimeText(verbatim:  startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  startDate, labelColor: labelColor)
+            ASATimeText(verbatim:  startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  startDate, labelColor: labelColor, forClock: forClock)
 
             if startDateString != endDateString {
-                ASATimeText(verbatim:  endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  endDate, labelColor:  labelColor)
+                ASATimeText(verbatim:  endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  endDate, labelColor:  labelColor, forClock: forClock)
             }
         }
     }

@@ -46,6 +46,9 @@ struct ASAProcessedRow {
 
     var events:  Array<ASAEventCompatible>
 
+    var rangeStart:  Date
+    var rangeEnd:  Date
+
     init(row:  ASARow, now:  Date) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName()
@@ -124,7 +127,11 @@ struct ASAProcessedRow {
 
         self.month = dateComponents.month ?? 0
 
-        self.events = row.events(startDate: row.startOfDay(date: now), endDate: row.startOfNextDay(date: now))
+        let rangeStart: Date = row.startOfDay(date: now)
+        let rangeEnd: Date   = row.startOfNextDay(date: now)
+        self.events     = row.events(startDate: rangeStart, endDate: rangeEnd)
+        self.rangeStart = rangeStart
+        self.rangeEnd   = rangeEnd
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
