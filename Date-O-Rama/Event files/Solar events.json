@@ -1,5 +1,5 @@
 {
-    "localizableTitle":  "Solar events",
+    "titles": {"en":  "Sun", "he":  "שמש"},
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",

@@ -1,5 +1,5 @@
 {
-    "localizableTitle":  "Islamic holidays (tabular)",
+    "titles": {"en":  "Islam (tabular)", "he":  "אסלאם (טבולאי)"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicTabularSolar",

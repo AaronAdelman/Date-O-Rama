@@ -1,5 +1,5 @@
 {
-    "localizableTitle": "Jewish minor fasts",
+    "titles": {"en":  "Judaism (minor fasts)", "he":  "יהדות (תעניות קטנות)"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",

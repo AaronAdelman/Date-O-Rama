@@ -60,6 +60,10 @@ class ASAEventCalendar {
         return Color(self.eventsFile!.calendarColor)
     } // static func calendarColor() -> Color
 
+    func title(localeIdentifier:  String) -> String {
+        return self.eventsFile!.titles[localeIdentifier] ?? "???"
+    }
+
     func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar, templateDateComponents:  ASADateComponents, strong:  Bool) -> ASADateSpecification {
         var tweakedDateSpecification = dateSpecification
 
@@ -315,19 +319,35 @@ class ASAEventCalendar {
         return result
     } // func eventDetails(date:  Date, location:  locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
     
-    func eventCalendarName(locationData:  ASALocationData) -> String {
-        let localizableTitle = self.eventsFile?.localizableTitle ?? self.eventsFile?.title ?? "???"
+    func eventCalendarName(locationData:  ASALocationData, localeIdentifier:  String) -> String {
+        let localizableTitle = self.eventSourceName(localeIdentifier: localeIdentifier)
         let oneLineAddress = locationData.shortFormattedOneLineAddress
         return "\(NSLocalizedString(localizableTitle, comment: "")) • \(oneLineAddress)"
     } // func eventCalendarName(locationData:  ASALocationData) -> String
     
-    func eventSourceName() -> String {
-        let localizableTitle = self.eventsFile?.localizableTitle
-        if localizableTitle != nil {
-            return NSLocalizedString(localizableTitle!, comment:  "")
-        } else {
-            return self.eventsFile?.title ?? "???"
+    func eventSourceName(localeIdentifier:  String) -> String {
+        let titles = self.eventsFile!.titles
+
+        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
+        let firstAttempt = titles[userLocaleIdentifier]
+        if firstAttempt != nil {
+            return firstAttempt!
         }
+
+        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
+        if userLanguageCode != nil {
+            let secondAttempt = titles[userLanguageCode!]
+            if secondAttempt != nil {
+                return secondAttempt!
+            }
+        }
+
+        let thirdAttempt = titles["en"]
+        if thirdAttempt != nil {
+            return thirdAttempt!
+        }
+
+        return "???"
     } // func eventSourceName() -> String
 } // class ASAEventCalendar
 

@@ -34,10 +34,8 @@ enum ASATimeSpecificationDayHalf:  String, Codable {
 // MARK: - ASAEventsFile
 
 struct ASAEventsFile: Codable {
-    var title:  String?
-    var localizableTitle:  String?
-    
     var supportedLocales:  Array<String>
+    var titles:  Dictionary<String, String>
     var defaultLocale:  String
     
     var calendarColorRed:  CGFloat
@@ -128,7 +126,7 @@ extension ASAInternalEventSpecification {
                 return firstAttempt
             }
 
-            let userLanguageCode = userLocaleIdentifier.localeLanguageCode()
+            let userLanguageCode = userLocaleIdentifier.localeLanguageCode
             if userLanguageCode != nil {
                 let secondAttempt = titles[userLanguageCode!]
                 if secondAttempt != nil {

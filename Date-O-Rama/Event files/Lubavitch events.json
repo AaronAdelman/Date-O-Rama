@@ -1,5 +1,5 @@
 {
-    "localizableTitle":  "Lubavitch events",
+    "titles": {"en":  "Lubavitch", "he":  "חב״ד"},
     "supportedLocales":  ["he", "en"],
     "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",

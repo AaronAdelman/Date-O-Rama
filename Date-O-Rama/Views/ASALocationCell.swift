@@ -117,7 +117,7 @@ struct ASALocationCell:  View {
                     Spacer()
                     if locationData.country != nil {
                         Text(locationData.country!)
-                        Text((locationData.ISOCountryCode ?? "").flag())
+                        Text((locationData.ISOCountryCode ?? "").flag)
                     }
                 }
                 

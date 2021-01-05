@@ -1,5 +1,5 @@
 {
-    "localizableTitle":  "Islamic holidays (Umm Al-Qura)",
+    "titles": {"en":  "Islam (Umm Al-Qura)", "he":  "אסלאם (אום אל־קורה)"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicUmmAlQuraSolar",

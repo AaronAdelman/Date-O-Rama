@@ -109,7 +109,7 @@ struct ASALocaleData {
         let usersLanguageCode = Locale.autoupdatingCurrent.languageCode
         //        debugPrint(#file, #function, "User’s language code", usersLanguageCode)
         let result = self.allRecords.filter {
-            let languageCode = $0.id.localeLanguageCode()
+            let languageCode = $0.id.localeLanguageCode
             //            debugPrint(#file, #function, "Language code", languageCode)
             return languageCode == usersLanguageCode
         }
@@ -120,7 +120,7 @@ struct ASALocaleData {
         let usersRegionCode = Locale.autoupdatingCurrent.regionCode
         //        debugPrint(#file, #function, "User’s language code", usersLanguageCode)
         let result = self.allRecords.filter {
-            let regionCode = $0.id.localeRegionCode()
+            let regionCode = $0.id.localeRegionCode
             //            debugPrint(#file, #function, "Language code", languageCode)
             return regionCode == usersRegionCode
         }

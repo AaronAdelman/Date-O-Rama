@@ -138,7 +138,7 @@ extension String {
 extension String {
     // Based on https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode
     // Converts a country code into a Unicode emoji flag
-    func flag() -> String {
+    var flag:  String {
         let FAILURE_FLAG = "📍"
         
         if self == "" {
@@ -177,20 +177,20 @@ extension String {
             .compactMap(UnicodeScalar.init)
             .map(String.init)
             .joined()
-    } // func flag() -> String
+    } // var flag
 } // extension String
 
 extension String {
-    func localeLanguageCode() -> String? {
+    var localeLanguageCode:  String? {
         let array = self.components(separatedBy: "_")
         if array.count < 1 {
             return nil
         }
         
         return array[0]
-    } // func localeLanguageCode() -> String?
+    } // var localeLanguageCode
     
-    func localeRegionCode() -> String? {
+    var localeRegionCode:  String? {
         let array = self.components(separatedBy: "_")
         let count: Int = array.count
         if count == 2 || count == 3 {
@@ -203,16 +203,16 @@ extension String {
         }
         
         return nil
-    }
+    } // var localeRegionCode
     
-    func localeCountryCodeFlag() -> String {
-        let countryCode = self.localeRegionCode()
+    var localeCountryCodeFlag:  String {
+        let countryCode = self.localeRegionCode
         if countryCode == nil {
             return "🏳️"
         }
         
-        return countryCode!.flag()
-    }
+        return countryCode!.flag
+    } //var localeCountryCodeFlag
 } // extension String
 
 extension String {

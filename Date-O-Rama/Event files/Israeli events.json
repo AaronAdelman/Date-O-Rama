@@ -1,5 +1,5 @@
 {
-    "localizableTitle": "Israeli events",
+    "titles": {"en":  "Israel", "he":  "ישראל"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",

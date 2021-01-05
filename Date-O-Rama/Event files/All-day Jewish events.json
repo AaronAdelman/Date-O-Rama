@@ -1,5 +1,5 @@
 {
-    "localizableTitle": "All-day Jewish events",
+    "titles": {"en":  "Judaism", "he":  "יהדות"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",

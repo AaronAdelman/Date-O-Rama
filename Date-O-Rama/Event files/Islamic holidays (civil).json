@@ -1,5 +1,5 @@
 {
-    "localizableTitle":  "Islamic holidays (civil)",
+    "titles": {"en":  "Islam (civil)", "he":  "אסלאם (אזרחי)"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicCivilSolar",

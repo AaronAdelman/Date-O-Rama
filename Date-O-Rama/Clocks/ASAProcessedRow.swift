@@ -71,7 +71,7 @@ struct ASAProcessedRow {
         self.timeZoneString = row.locationData.timeZone.abbreviation(for:  now) ?? ""
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
-            self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag()
+            self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {

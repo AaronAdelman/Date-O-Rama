@@ -117,7 +117,7 @@ struct ASALocaleCell: View {
     
     var body: some View {
         HStack {
-            Text(verbatim: localeString.localeCountryCodeFlag())
+            Text(verbatim: localeString.localeCountryCodeFlag)
             Text(verbatim:  localizedLocaleString)
             Spacer()
             if localeString == self.tempLocaleIdentifier {

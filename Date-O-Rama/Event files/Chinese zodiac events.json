@@ -1,5 +1,5 @@
 {
-    "localizableTitle": "Chinese zodiac events",
+    "titles": {"en":  "Chinese zodiac", "he":  "גלגל המזלות הסיני"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "Chinese",

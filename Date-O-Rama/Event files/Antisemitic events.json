@@ -1,12 +1,12 @@
 {
-    "localizableTitle":  "Antisemitic events",
+    "titles": {"en":  "Antisemitism", "he":  "אנטישמיות"},
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
     "otherCalendarCodes": ["IslamicSolar"],
-    "calendarColorRed":  0.0,
-    "calendarColorGreen":  0.0,
-    "calendarColorBlue":  0.0,
+    "calendarColorRed":  0.5,
+    "calendarColorGreen":  0.5,
+    "calendarColorBlue":  0.5,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {"titles": {"he": "יום הנכבה", "en": "Nakba Day"}, "startDateSpecification": {

@@ -71,6 +71,6 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
 
 extension ASALocatedObject {
     public func emoji(date:  Date) -> String {
-        return (self.locationData.ISOCountryCode ?? "").flag()
+        return (self.locationData.ISOCountryCode ?? "").flag
     } // public func emoji(date:  Date) -> String
 } // extension ASARow
