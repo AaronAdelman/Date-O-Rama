@@ -12,8 +12,6 @@ struct ASAEventCell:  View {
     var event:  ASAEventCompatible
     var primaryRow:  ASARow
     var secondaryRow:  ASARow
-    var timeWidth:  CGFloat
-    var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
     var forClock:  Bool
 
@@ -68,20 +66,20 @@ struct ASAEventCell:  View {
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
 
-                ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
+                ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
 
                 if self.eventsViewShouldShowSecondaryDates {
-                    ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
+                    ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
                 }
 
             } // VStack
         } // HStack
         #else
         HStack {
-            ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
+            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
 
             if self.eventsViewShouldShowSecondaryDates {
-                ASATimesSubcell(event: event, row: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
+                ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
             ASAEventColorRectangle(color: event.color)
@@ -105,6 +103,9 @@ struct ASAEventCell:  View {
         #endif
     } // var body
 } // struct ASAEventCell
+
+
+// MARK:  -
 
 struct ASAEventCellCalendarTitle:  View {
     var event:  ASAEventCompatible

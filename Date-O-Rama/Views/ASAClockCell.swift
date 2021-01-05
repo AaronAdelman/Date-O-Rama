@@ -145,19 +145,13 @@ struct ASAClockCellBody:  View {
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedRow
 
-    #if os(watchOS)
-    let TIME_WIDTH:  CGFloat = 50.0
-    #else
-    let TIME_WIDTH:  CGFloat = 90.0
-    #endif
-
     static let genericRow = ASARow.generic
 
     var body: some View {
         ForEach(processedRow.events, id: \.eventIdentifier) {
             event
             in
-            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, timeWidth: TIME_WIDTH, timeFontSize:  .body, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.rangeStart, rangeEnd:  processedRow.rangeEnd)
+            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.rangeStart, rangeEnd:  processedRow.rangeEnd)
         } // ForEach
     }
 }

@@ -14,8 +14,6 @@ struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
     var primaryRow:  ASARow
     var secondaryRow:  ASARow
-    var timeWidth:  CGFloat
-    var timeFontSize:  Font
     var eventsViewShouldShowSecondaryDates: Bool
     @State private var action:  EKEventViewAction?
     @State private var showingEventView = false
@@ -30,7 +28,7 @@ struct ASALinkedEventCell:  View {
     var body: some View {
         if event.isEKEvent {
             HStack {
-                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, rangeStart: rangeStart, rangeEnd:  rangeEnd)
 
                 Spacer()
 
@@ -44,7 +42,7 @@ struct ASALinkedEventCell:  View {
                 }.foregroundColor(.accentColor)
             }
         } else {
-            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, rangeStart: rangeStart, rangeEnd:  rangeEnd)
         }
     }
 } // struct ASALinkedEventCell

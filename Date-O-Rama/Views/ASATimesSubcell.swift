@@ -11,8 +11,35 @@ import SwiftUI
 struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
     var row:  ASARow
-    var timeWidth:  CGFloat
-    var timeFontSize:  Font
+
+    #if os(watchOS)
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    #endif
+
+    var timeWidth:  CGFloat {
+        get {
+            if forClock {
+                #if os(watchOS)
+                return 50.0
+                #else
+                return 90.0
+                #endif
+            }
+            
+            #if os(watchOS)
+            return 90.0
+            #else
+            if self.sizeClass! == .compact {
+                return  90.00
+            } else {
+                return 120.00
+            }
+            #endif
+        } // get
+    } // var timeWidth
+    let timeFontSize = Font.subheadlineMonospacedDigit
+
     var labelColor:  Color
     var forClock:  Bool
     var primary:  Bool
