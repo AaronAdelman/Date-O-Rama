@@ -50,10 +50,13 @@ struct ASAEventCell:  View {
     } // var compact
     #endif
 
+    var rangeStart:  Date
+    var rangeEnd:  Date
+
     func eventIsTodayOnly() -> Bool {
-        let now = Date()
-        let rangeStart = primaryRow.startOfDay(date: now)
-        let rangeEnd = primaryRow.startOfNextDay(date: now)
+//        let now = Date()
+//        let rangeStart = primaryRow.startOfDay(date: now)
+//        let rangeEnd = primaryRow.startOfNextDay(date: now)
         return rangeStart <= event.startDate && event.endDate <= rangeEnd
     }
 

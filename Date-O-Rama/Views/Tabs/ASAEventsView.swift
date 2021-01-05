@@ -165,11 +165,13 @@ struct ASAEventsView: View {
                         } // if showingPreferences
                     } // Section
 
+                    let rangeStart = self.primaryRow.startOfDay(date: date)
+                    let rangeEnd = self.primaryRow.startOfNextDay(date: date)
                     Section {
-                        ForEach(ASAUserData.shared.events(startDate: self.primaryRow.startOfDay(date: date), endDate: self.primaryRow.startOfNextDay(date: date), row: self.primaryRow), id: \.eventIdentifier) {
+                        ForEach(ASAUserData.shared.events(startDate: rangeStart, endDate: rangeEnd, row: self.primaryRow), id: \.eventIdentifier) {
                             event
                             in
-                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates)
+                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, timeWidth: self.timeWidth, timeFontSize: self.TIME_FONT_SIZE, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
                         } // ForEach
                     } // Section
                 } // List
