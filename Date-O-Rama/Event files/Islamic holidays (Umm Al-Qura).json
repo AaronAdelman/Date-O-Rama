@@ -3,9 +3,9 @@
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicUmmAlQuraSolar",
-    "calendarColorRed":  0.0,
-    "calendarColorGreen":  1.0,
-    "calendarColorBlue":  0.0,
+    "calendarColorRed":  0.450980392156863,
+    "calendarColorGreen":  0.964705882352941,
+    "calendarColorBlue":  0.611764705882353,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {

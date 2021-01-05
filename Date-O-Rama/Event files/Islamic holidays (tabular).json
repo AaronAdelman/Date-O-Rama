@@ -3,9 +3,9 @@
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicTabularSolar",
-    "calendarColorRed":  0.0,
-    "calendarColorGreen":  1.0,
-    "calendarColorBlue":  0.0,
+    "calendarColorRed":  0.203921568627451,
+    "calendarColorGreen":  0.466666666666667,
+    "calendarColorBlue":  0.450980392156863,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
         {

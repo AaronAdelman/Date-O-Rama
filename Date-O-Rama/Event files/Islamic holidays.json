@@ -4,7 +4,7 @@
     "defaultLocale":  "en",
     "calendarCode":  "IslamicSolar",
     "calendarColorRed":  0.0,
-    "calendarColorGreen":  1.0,
+    "calendarColorGreen":  0.976470588235294,
     "calendarColorBlue":  0.0,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [

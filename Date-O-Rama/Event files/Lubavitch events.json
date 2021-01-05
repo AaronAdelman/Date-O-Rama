@@ -4,7 +4,7 @@
     "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",
     "calendarColorRed":  0.0,
-    "calendarColorGreen":  0.0,
+    "calendarColorGreen":  0.588235294117647,
     "calendarColorBlue":  1.0,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [

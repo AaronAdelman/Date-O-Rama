@@ -4,9 +4,9 @@
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",
     "otherCalendarCodes": ["Gregorian"],
-    "calendarColorRed": 0.0,
-    "calendarColorGreen": 0.0,
-    "calendarColorBlue": 1.0,
+    "calendarColorRed": 0.313725490196078,
+    "calendarColorGreen": 0.67843137254902,
+    "calendarColorBlue": 0.8,
     "calendarColorAlpha": 1.0,
     "eventSpecifications": [
         {"titles": {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, "startDateSpecification": {

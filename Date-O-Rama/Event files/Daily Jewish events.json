@@ -3,8 +3,8 @@
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",
-    "calendarColorRed": 0.0,
-    "calendarColorGreen": 0.0,
+    "calendarColorRed": 0.01777777778,
+    "calendarColorGreen": 0.2,
     "calendarColorBlue": 1.0,
     "calendarColorAlpha": 1.0,
     "eventSpecifications": [

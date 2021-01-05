@@ -3,9 +3,9 @@
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",
-    "calendarColorRed": 0.0,
-    "calendarColorGreen": 0.0,
-    "calendarColorBlue": 1.0,
+    "calendarColorRed": 0.270588235294118,
+    "calendarColorGreen": 0.325490196078431,
+    "calendarColorBlue": 0.807843137254902,
     "calendarColorAlpha": 1.0,
     "eventSpecifications": [
         {"titles": {"he": "יום שבו נתפס רבי עקיבא והייתה שעת שמד", "en": "Day of the arrest of Rabbi ‘Aqiva’ in a time of religious persecution"}, "startDateSpecification": {"type": "allDay", "month": 1, "day": 5}},
