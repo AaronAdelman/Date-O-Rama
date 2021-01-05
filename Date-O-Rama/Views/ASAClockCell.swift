@@ -88,6 +88,13 @@ struct ASAClockCellBody:  View {
                 }
 
                 #if os(watchOS)
+                if processedRow.events.count > 0 {
+                    NavigationLink(destination: List {
+                        ASAClockEventsForEach(processedRow: processedRow)
+                    }) {
+                        Image(systemName: "chevron.forward.circle.fill")
+                    }
+                }
                 #else
                 if processedRow.supportsTimes {
                     if processedRow.supportsMonths && shouldShowMiniCalendar {
@@ -100,11 +107,13 @@ struct ASAClockCellBody:  View {
                         ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
                     }
                 }
-                #endif
 
                 Spacer().frame(width:  16.0)
+                #endif
             } // HStack
 
+            #if os(watchOS)
+            #else
             if processedRow.events.count > 0 && !forComplications {
                 HStack {
                     Toggle(isOn: $shouldShowEvents) {
@@ -125,6 +134,7 @@ struct ASAClockCellBody:  View {
                     ASAClockEventsForEach(processedRow: processedRow)
                 }
             }
+            #endif
         } // VStack
     } // var body
 } // struct ASAClockCellBody
