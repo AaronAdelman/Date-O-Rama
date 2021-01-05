@@ -1,5 +1,5 @@
 //
-//  ASAClockPizzazztron.swift
+//  ASAMiniClockView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 05/11/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAClockPizzazztron:  View {
+struct ASAMiniClockView:  View {
     var processedRow:  ASAProcessedRow
     var numberFormatter:  NumberFormatter
 
@@ -37,10 +37,10 @@ struct ASAClockPizzazztron:  View {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
         }
     } // var body
-} // struct ASAClockPizzazztron
+} // struct ASAMiniClockView
 
-//struct ASAClockPizzazztron_Previews: PreviewProvider {
+//struct ASAMiniClockView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAClockPizzazztron()
+//        ASAMiniClockView()
 //    }
 //}
