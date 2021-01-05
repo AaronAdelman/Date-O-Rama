@@ -66,7 +66,7 @@ struct ASAEventCell:  View {
                     .minimumScaleFactor(0.4)
                     .lineLimit(3)
 
-                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor)
+                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
 
                 ASATimesSubcell(event: event, row: self.primaryRow, timeWidth: self.timeWidth, timeFontSize: self.timeFontSize, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
 
@@ -99,7 +99,7 @@ struct ASAEventCell:  View {
                         .lineLimit(3)
                 }
 
-                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor)
+                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
             } // VStack
         } // HStack
         #endif
@@ -109,9 +109,11 @@ struct ASAEventCell:  View {
 struct ASAEventCellCalendarTitle:  View {
     var event:  ASAEventCompatible
     var color:  Color
+    var forClock:  Bool
 
     var body: some View {
-        Text(event.calendarTitleWithLocation
+        let title: String = forClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
+        Text(title
         ).font(.subheadlineMonospacedDigit).foregroundColor(color)
         .allowsTightening(true)
         .minimumScaleFactor(0.4)
