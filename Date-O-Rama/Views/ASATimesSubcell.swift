@@ -45,15 +45,19 @@ struct ASATimesSubcell:  View {
     var primary:  Bool
     var eventIsTodayOnly:  Bool
 
+    func properlyShortenedString(date:  Date) -> String {
+       return (primary && eventIsTodayOnly) ? row.shortenedTimeString(now: date) : row.shortenedDateTimeString(now: date)
+    }
+
     var body: some View {
         VStack(alignment: .leading) {
             if event.isAllDay && row.calendar.calendarCode == event.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: event.startDate) == event.timeZone?.secondsFromGMT(for: event.startDate) || event.timeZone == nil) {
                 ASAAllDayTimesSubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize, labelColor: labelColor, forClock: forClock)
             } else {
-                ASATimeText(verbatim: (primary && eventIsTodayOnly) ? row.shortenedTimeString(now: event.startDate) : row.shortenedDateTimeString(now: event.startDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, forClock: forClock)
+                ASATimeText(verbatim: properlyShortenedString(date: event.startDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, forClock: forClock)
 
                 if event.endDate != event.startDate {
-                    ASATimeText(verbatim:  (primary && eventIsTodayOnly) ? row.shortenedTimeString(now: event.endDate) : row.shortenedDateTimeString(now: event.endDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, forClock: forClock)
+                    ASATimeText(verbatim:  properlyShortenedString(date: event.endDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, forClock: forClock)
                 }
             }
         } // VStack
