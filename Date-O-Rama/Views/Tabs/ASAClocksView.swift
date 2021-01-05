@@ -74,11 +74,14 @@ struct ASAClocksView: View {
                     case .byPlaceName, .byCountry:
                         ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
 
-                    case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                        ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
+//                    case .westToEast, .eastToWest, .southToNorth, .northToSouth:
+//                        ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
 
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
                         ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
+
+                    default:
+                        EmptyView()
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
                 .sheet(isPresented: self.$showingNewClockDetailView) {

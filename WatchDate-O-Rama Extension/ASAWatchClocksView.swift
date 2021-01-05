@@ -51,11 +51,14 @@ struct ASAWatchClocksView: View {
                 case .byPlaceName, .byCountry:
                     ASAMainRowsByPlaceView(primaryGroupingOption: primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications: false)
 
-                case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-                    ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications: false)
+//                case .westToEast, .eastToWest, .southToNorth, .northToSouth:
+//                    ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications: false)
 
                 case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
                     ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
+
+                default:
+                    EmptyView()
                 } // switch self.groupingOptions[self.groupingOptionIndex]
             }
         }
