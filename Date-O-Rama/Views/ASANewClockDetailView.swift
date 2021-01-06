@@ -21,8 +21,6 @@ struct ASANewClockDetailView: View {
 
     let HORIZONTAL_PADDING:  CGFloat = 20.0
 
-    var forAppleWatch:  Bool
-
     var body: some View {
         NavigationView {
             VStack {
@@ -51,8 +49,12 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: Date(), shouldShowTime: true, forAppleWatch: forAppleWatch)
-                }
+                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: Date(), shouldShowTime: true, forAppleWatch: false)
+
+                        ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+
+                        ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
+                } // List
             } // VStack
                 .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
         } // NavigationView
@@ -68,6 +70,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedRow: ASARow.generic, forAppleWatch: false)
+        ASANewClockDetailView(selectedRow: ASARow.generic)
     }
 }

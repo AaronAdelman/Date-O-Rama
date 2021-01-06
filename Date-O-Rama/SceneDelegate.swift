@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let userData = ASAUserData.shared
 
         let contentView = TabView {
-            ASAClocksView(forAppleWatch: true).environmentObject(userData)
+            ASAClocksView().environmentObject(userData)
                 .tabItem {
                     Image(systemName: "globe")
                     Text("CLOCKS_TAB")

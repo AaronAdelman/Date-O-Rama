@@ -26,8 +26,6 @@ struct ASAClocksView: View {
 
     @State var isNavBarHidden:  Bool = false
 
-    var forAppleWatch:  Bool
-
     @State private var showingPreferences:  Bool = false
 
     var body: some View {
@@ -74,9 +72,6 @@ struct ASAClocksView: View {
                     case .byPlaceName, .byCountry:
                         ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
 
-//                    case .westToEast, .eastToWest, .southToNorth, .northToSouth:
-//                        ASAPlainMainRowsView(groupingOption: self.primaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
-
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
                         ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
 
@@ -85,15 +80,13 @@ struct ASAClocksView: View {
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
                 .sheet(isPresented: self.$showingNewClockDetailView) {
-                    ASANewClockDetailView(forAppleWatch: forAppleWatch)
+                    ASANewClockDetailView()
                 }
-//                .navigationBarTitle(Text("CLOCKS_TAB"))
                 .navigationBarHidden(self.isNavBarHidden)
                 .onAppear {
                     self.isNavBarHidden = true
                 }
                 .onDisappear {
-//                    self.isNavBarHidden = false
                 }
             } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())
@@ -128,6 +121,6 @@ struct ASAConditionalEditButton:  View {
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksView(forAppleWatch: false).environmentObject(ASAUserData.shared)
+        ASAClocksView().environmentObject(ASAUserData.shared)
     }
 }
