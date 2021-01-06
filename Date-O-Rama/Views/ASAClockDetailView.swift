@@ -92,7 +92,7 @@ struct ASAClockDetailEditingSection:  View {
         Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
             NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
                 HStack {
-                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName())
+                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName)
                 }
             }
 
@@ -108,7 +108,7 @@ struct ASAClockDetailEditingSection:  View {
             
             if selectedRow.supportsLocales {
                 NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier())
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier)
                 }
             }
             if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {

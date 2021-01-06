@@ -95,7 +95,7 @@ struct ASACalendarChooserView: View {
                 return true
                 
             case APPLE_CALENDARS:
-                return $0.isAppleCalendar() || $0.isISO8601Calendar()
+                return $0.isAppleCalendar || $0.isISO8601Calendar
                 
             case SOLAR_CALENDARS:
                 return $0.type == .solar
@@ -113,8 +113,8 @@ struct ASACalendarChooserView: View {
                 return false
             } // switch selection
         }
-        let result = rawResult.sorted {
-            $0.localizedName() < $1.localizedName()
+        let result = rawResult.sorted() {
+            $0.localizedName < $1.localizedName
         }
         return result
     } // func calendarCodes(option:  Int) -> Array<ASACalendarCode>
@@ -166,7 +166,7 @@ struct ASACalendarCell: View {
     
     var body: some View {
         HStack {
-            Text(verbatim: calendarCode.localizedName())
+            Text(verbatim: calendarCode.localizedName)
             Spacer()
             if self.calendarCode == self.selectedCalendarCode {
                 Image(systemName: "checkmark")

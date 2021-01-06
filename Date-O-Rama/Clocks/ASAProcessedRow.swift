@@ -51,7 +51,7 @@ struct ASAProcessedRow {
 
     init(row:  ASARow, now:  Date) {
         self.row = row
-        self.calendarString = row.calendar.calendarCode.localizedName()
+        self.calendarString = row.calendar.calendarCode.localizedName
         self.canSplitTimeFromDate = row.calendar.canSplitTimeFromDate
         if self.canSplitTimeFromDate {
             #if os(watchOS)

@@ -56,13 +56,13 @@ enum ASACalendarType {
 // MARK: -
 
 extension ASACalendarCode {
-    func localizedName() -> String {
+    var localizedName:  String {
         return NSLocalizedString(self.rawValue, comment: "")
-    } // func localizedName() -> String
+    } // var localizedName
 } // extension ASACalendarCode
 
 extension ASACalendarCode {
-    func isAppleCalendar() -> Bool {
+    var isAppleCalendar:  Bool {
         switch self {
         case .Buddhist,
              .Chinese,
@@ -83,34 +83,34 @@ extension ASACalendarCode {
         default:
             return false
         } // switch self
-    } // func isAppleCalendar() -> Bool
+    } // var isAppleCalendar
 
-    func isISO8601Calendar() -> Bool {
+    var isISO8601Calendar:  Bool {
         switch self {
         case .ISO8601:
             return true
         default:
             return false
-        }
-    } // func isISO8601Calendar() -> Bool
+        } // switch self
+    } // var isISO8601Calendar
     
-    func isJulianDayCalendar() -> Bool {
+    var isJulianDayCalendar:  Bool {
         switch self {
         case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
             return true
         default:
             return false
-        }
-    }
+        } // switch self
+    } // var isJulianDayCalendar
     
-    func isSunsetTransitionCalendar() -> Bool {
+    var isSunsetTransitionCalendar:  Bool {
         switch self {
         case .HebrewGRA, .IslamicSolar, .IslamicTabularSolar, .IslamicCivilSolar, .IslamicUmmAlQuraSolar, .HebrewMA:
             return true
         default:
             return false
         } // switch self
-    } // func isSolarCalendar() -> Bool
+    } // var isSunsetTransitionCalendar
 
     var isHebrewCalendar: Bool {
         get {

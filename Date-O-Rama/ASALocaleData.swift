@@ -16,7 +16,7 @@ struct ASALocaleRecord:  Identifiable {
 
 
 extension String {
-    func asSelfLocalizedLocaleIdentifier() -> String! {
+    var asSelfLocalizedLocaleIdentifier:  String! {
         if self == "" {
             return NSLocalizedString("DEFAULT_LOCALE", comment: "")
         }
@@ -28,7 +28,7 @@ extension String {
         } else {
             return self
         }
-    } // func asSelfLocalizedLocaleIdentifier() -> String!
+    } // var asSelfLocalizedLocaleIdentifier
 } // extension String
 
 
@@ -99,7 +99,7 @@ struct ASALocaleData {
     public func sortedLocalizedRecords(identifiers:  Array<String>) -> Array<ASALocaleRecord> {
         var temp:  Array<ASALocaleRecord> = []
         for identifier in identifiers {
-            let record = ASALocaleRecord(id: identifier, nativeName: identifier.asSelfLocalizedLocaleIdentifier())
+            let record = ASALocaleRecord(id: identifier, nativeName: identifier.asSelfLocalizedLocaleIdentifier)
             temp.append(record)
         } // for identifier in availableLocaleIdentifiers
         return temp.sorted(by: {$0.nativeName < $1.nativeName})

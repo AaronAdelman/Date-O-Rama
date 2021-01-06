@@ -12,13 +12,13 @@ import CoreLocation
 
 class ASACalendarFactory {
     class func calendar(code:  ASACalendarCode) -> ASACalendar? {
-        if code.isAppleCalendar() {
+        if code.isAppleCalendar {
             return ASAAppleCalendar(calendarCode:  code)
-        } else if code.isISO8601Calendar() {
+        } else if code.isISO8601Calendar {
             return ASAISO8601Calendar()
-        } else if code.isJulianDayCalendar() {
+        } else if code.isJulianDayCalendar {
             return ASAJulianDayCalendar(calendarCode:  code)
-        } else if code.isSunsetTransitionCalendar() {
+        } else if code.isSunsetTransitionCalendar {
             return ASASunsetTransitionCalendar(calendarCode: code)
         }
      

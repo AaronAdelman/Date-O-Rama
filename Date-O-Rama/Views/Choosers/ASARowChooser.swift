@@ -33,7 +33,7 @@ struct ASARowCell: View {
     var body: some View {
         HStack {
             VStack(alignment:  .leading) {
-                Text(verbatim:  row.calendar.calendarCode.localizedName()).font(.headline)
+                Text(verbatim:  row.calendar.calendarCode.localizedName).font(.headline)
                 HStack {
                     if row.usesDeviceLocation {
                         ASASmallLocationSymbol()
