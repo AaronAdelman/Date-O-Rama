@@ -164,26 +164,26 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 
 struct ASAICalendarEventCalendarsEditingSection:  View {
     @ObservedObject var selectedRow:  ASARow
-    var iCalendarEventCalendarTitles:  Array<String> = ASAEKEventManager.shared.allEventCalendars().map{ $0.title }.sorted()
+    var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
 
     var body:  some View {
         if selectedRow.calendar.usesISOTime {
             Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
-                ForEach(iCalendarEventCalendarTitles, id:
-                            \.self) {
-                    title
+                ForEach(iCalendarEventCalendars, id:
+                        \.calendarIdentifier) {
+                    calendar
                     in
-                    ASAICalendarEventCalendarCell(selectedRow: selectedRow, title: title)
+                    ASAICalendarEventCalendarCell(selectedRow: selectedRow, title: calendar.title, color: Color(calendar.cgColor))
                         .onTapGesture {
-                            if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title) {
-                                let fileNameIndex = selectedRow.iCalendarEventCalendars.firstIndex(where: {$0.title == title})
+                            if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(calendar.title) {
+                                let fileNameIndex = selectedRow.iCalendarEventCalendars.firstIndex(where: {$0.title == calendar.title})
                                 if fileNameIndex != nil {
                                     selectedRow.iCalendarEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
                                 let desiredEventCalendar: EKCalendar? = ASAEKEventManager.shared.allEventCalendars().first(where: {eventCalendar
                                                                                                                                     in
-                                                                                                                                    eventCalendar.title == title})
+                                                                                                                            eventCalendar.title == calendar.title})
                                 if desiredEventCalendar != nil {
                                     selectedRow.iCalendarEventCalendars.append(desiredEventCalendar!)
                                 }
@@ -230,6 +230,7 @@ struct ASAICalendarEventCalendarCell:  View {
     @ObservedObject var selectedRow:  ASARow
 
     var title:  String
+    var color:  Color
 
     let SCALE: Image.Scale = .large
 
@@ -238,9 +239,11 @@ struct ASAICalendarEventCalendarCell:  View {
             if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title) {
                 Image(systemName: "checkmark.circle.fill")
                     .imageScale(SCALE)
+                    .foregroundColor(color)
             } else {
                 Image(systemName: "circle")
                     .imageScale(SCALE)
+                    .foregroundColor(color)
             }
             Text(verbatim: NSLocalizedString(title, comment: "")).font(.headline)
         }
