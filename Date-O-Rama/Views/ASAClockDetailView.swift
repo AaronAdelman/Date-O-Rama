@@ -218,7 +218,7 @@ struct ASABuiltInEventCalendarCell:  View {
                 Image(systemName: "circle")
                     .imageScale(SCALE)
             }
-            Text(verbatim: NSLocalizedString(fileName, comment: "")).font(.headline)
+            Text(verbatim: eventFile.eventSourceName(localeIdentifier: Locale.current.identifier)).font(.headline)
         }
     }
 }
