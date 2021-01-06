@@ -173,7 +173,7 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
                         \.calendarIdentifier) {
                     calendar
                     in
-                    ASAICalendarEventCalendarCell(selectedRow: selectedRow, title: calendar.title, color: Color(calendar.cgColor))
+                    ASAICalendarEventCalendarCell(selectedRow: selectedRow, title: calendar.title, color: calendar.color)
                         .onTapGesture {
                             if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(calendar.title) {
                                 let fileNameIndex = selectedRow.iCalendarEventCalendars.firstIndex(where: {$0.title == calendar.title})

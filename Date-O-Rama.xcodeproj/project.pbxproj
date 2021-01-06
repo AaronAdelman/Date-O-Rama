@@ -128,6 +128,8 @@
 		A593227D25780DA300318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5932276257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift */; };
 		A593229225782AB800318BC3 /* ASAMainRowsByPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASAMainRowsByPlaceView.swift */; };
 		A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */; };
+		A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
+		A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
 		A59C436625A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
 		A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */; };
@@ -308,6 +310,7 @@
 		A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksViewGroupingOption.swift; sourceTree = "<group>"; };
 		A5932276257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsByTimeZoneView.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
+		A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKCalendarExtensions.swift; sourceTree = "<group>"; };
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
 		A5A9666225A31DA200CF158F /* ASADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePicker.swift; sourceTree = "<group>"; };
 		A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALinkedEventCell.swift; sourceTree = "<group>"; };
@@ -526,6 +529,7 @@
 				A50CD621255414EC00B781EC /* ColorExtensions.swift */,
 				A5CB86402448E03F00DB27A9 /* DateExtensions.swift */,
 				A57083F2254818B200904E7C /* DateFormatterExtensions.swift */,
+				A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */,
 				A579019C259263F900224666 /* EKEventExtensions.swift */,
 				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
@@ -920,6 +924,7 @@
 				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
 				A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */,
 				A59322632577F61100318BC3 /* FontExtensions.swift in Sources */,
+				A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
 				A50CD6282554159500B781EC /* ColorExtensions.swift in Sources */,
@@ -991,6 +996,7 @@
 				A57F441F24BC5DD1005261EE /* ASACalendarComponent.swift in Sources */,
 				A5E3B041248FDCEA00283513 /* ASAComplicationClocksView.swift in Sources */,
 				A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
+				A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A5152A062472BE430098A94B /* ASAEKEventView.swift in Sources */,
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
 				A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */,
