@@ -15,6 +15,8 @@ struct ASANewClockDetailView: View {
 
     @State private var showingActionSheet = false
 
+    var now:  Date
+
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
@@ -49,11 +51,7 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: Date(), shouldShowTime: true, forAppleWatch: false)
-
-                        ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
-
-                        ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
+                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: true, forAppleWatch: false)
                 } // List
             } // VStack
                 .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
@@ -70,6 +68,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedRow: ASARow.generic)
+        ASANewClockDetailView(selectedRow: ASARow.generic, now: Date())
     }
 }

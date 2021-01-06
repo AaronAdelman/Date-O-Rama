@@ -80,7 +80,7 @@ struct ASAClocksView: View {
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
                 .sheet(isPresented: self.$showingNewClockDetailView) {
-                    ASANewClockDetailView()
+                    ASANewClockDetailView(now:  now)
                 }
                 .navigationBarHidden(self.isNavBarHidden)
                 .onAppear {
