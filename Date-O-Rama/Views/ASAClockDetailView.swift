@@ -159,7 +159,6 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 } // struct ASABuiltInEventCalendarsEditingSection
 
 
-
 // MARK:  -
 
 struct ASAICalendarEventCalendarsEditingSection:  View {
@@ -167,7 +166,7 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
     var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
 
     var body:  some View {
-        if selectedRow.calendar.usesISOTime {
+        if selectedRow.calendar.usesISOTime && selectedRow.locationData.timeZone.identifier == TimeZone.current.identifier {
             Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
                 ForEach(iCalendarEventCalendars, id:
                         \.calendarIdentifier) {
