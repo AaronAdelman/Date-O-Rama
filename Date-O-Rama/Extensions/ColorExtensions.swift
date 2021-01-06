@@ -119,7 +119,7 @@ extension Color {
         #if os(watchOS)
         let gray: Color = Color.gray
         #else
-        let gray: Color = Color("secondaryLabel")
+        let gray: Color = Color("grayed")
         #endif
         
         return date < Date() ? (forClock ? gray: Color.gray) : self
