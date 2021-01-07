@@ -62,7 +62,7 @@ struct ASAEventCell:  View {
                 Text(event.title).font(.callout).bold().foregroundColor(labelColor)
                     .allowsTightening(true)
                     .minimumScaleFactor(0.5)
-                    .lineLimit(3)
+                    .lineLimit(1)
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
 
@@ -71,7 +71,6 @@ struct ASAEventCell:  View {
                 if self.eventsViewShouldShowSecondaryDates {
                     ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
                 }
-
             } // VStack
         } // HStack
         #else
@@ -112,13 +111,19 @@ struct ASAEventCellCalendarTitle:  View {
     var color:  Color
     var forClock:  Bool
 
+    #if os(watchOS)
+    let LINE_LIMIT = 1
+    #else
+    let LINE_LIMIT = 2
+    #endif
+
     var body: some View {
         let title: String = forClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
         Text(title
         ).font(.subheadlineMonospacedDigit).foregroundColor(color)
         .allowsTightening(true)
         .minimumScaleFactor(0.5)
-        .lineLimit(2)
+        .lineLimit(LINE_LIMIT)
     }
 }
 

@@ -182,7 +182,6 @@ struct ASAEventsView: View {
                 self.isNavBarHidden = true
             }
             .onDisappear {
-//                self.isNavBarHidden = false
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

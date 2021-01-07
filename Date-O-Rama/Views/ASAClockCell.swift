@@ -181,7 +181,12 @@ struct ASAClockMainSubcell:  View {
 
             if canSplitTimeFromDate {
                 if shouldShowFormattedDate {
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                    #if os(watchOS)
+                    let LINE_LIMIT = 1
+                    #else
+                    let LINE_LIMIT = 2
+                    #endif
+                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                 }
                 if shouldShowTime {
                     HStack {

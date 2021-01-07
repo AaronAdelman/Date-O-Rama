@@ -19,7 +19,7 @@ struct ASATimeText:  View {
     var body:  some View {
         #if os(watchOS)
         Text(verbatim:  verbatim)
-            .lineLimit(2)
+            .lineLimit(1)
             .font(timeFontSize)
             .foregroundColor(labelColor.grayIfPast(cutoffDate, forClock: forClock))
             .allowsTightening(true)
