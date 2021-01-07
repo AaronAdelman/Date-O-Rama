@@ -89,9 +89,7 @@ struct ASAClockCellBody:  View {
 
                 #if os(watchOS)
                 if processedRow.events.count > 0 {
-                    NavigationLink(destination: List {
-                        ASAClockEventsForEach(processedRow: processedRow)
-                    }) {
+                    NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow)) {
                         Image(systemName: "chevron.forward.circle.fill")
                     }
                 }
@@ -153,8 +151,8 @@ struct ASAClockEventsForEach:  View {
             in
             ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.rangeStart, rangeEnd:  processedRow.rangeEnd)
         } // ForEach
-    }
-}
+    } // var body
+} // struct ASAClockEventsForEach
 
 
 // MARK:  -
