@@ -156,7 +156,6 @@ struct ASAMiniCalendarView:  View {
         } // get
     } // var gridLayout
 
-//    let font:  Font = Font.system(size: 12.0).bold()
 
     fileprivate func gridRange() -> ClosedRange<Int> {
         let gridFirstDay = -(weekdayOfDay1 - 2)
@@ -167,6 +166,10 @@ struct ASAMiniCalendarView:  View {
 
         return gridFirstDay...gridLastDay
     } // func gridRange() -> ClosedRange<Int>
+
+    var characterDirection:  Locale.LanguageDirection {
+        return Locale.characterDirection(forLanguage: localeIdentifier)
+    } // var characterDirection
 
     var body: some View {
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
@@ -179,15 +182,14 @@ struct ASAMiniCalendarView:  View {
                     ASABlankCell()
                 } else if $0 == day {
                     ASAAccentedCell(number: $0,
-//                                    font: font,
                                     numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
                 } else {
                     ASAOrdinaryCell(number: $0,
-//                                    font: font,
                                     numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
                 }
             }
         }
+        .environment(\.layoutDirection, (self.characterDirection == Locale.LanguageDirection.leftToRight ? .leftToRight :  .rightToLeft))
     }
 } // struct ASAMiniCalendarView
 
