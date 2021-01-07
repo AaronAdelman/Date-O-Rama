@@ -204,23 +204,20 @@ struct ASABuiltInEventCalendarCell:  View {
 
     var fileName:  String
 
-    let SCALE: Image.Scale = .large
-
     var body: some View {
         let eventFile = ASAEventCalendar(fileName: fileName)
 
         HStack {
             if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
-                Image(systemName: "checkmark.circle.fill")
-                    .imageScale(SCALE).foregroundColor(eventFile.color)
+                ASACheckmarkCircleSymbol()                    .foregroundColor(eventFile.color)
             } else {
-                Image(systemName: "circle")
-                    .imageScale(SCALE)
+                ASACircleSymbol()
+                    .foregroundColor(eventFile.color)
             }
             Text(verbatim: eventFile.eventSourceName(localeIdentifier: Locale.current.identifier)).font(.headline)
-        }
-    }
-}
+        } // HStack
+    } //var body
+} // struct ASABuiltInEventCalendarCell
 
 
 // MARK:  -
@@ -231,17 +228,13 @@ struct ASAICalendarEventCalendarCell:  View {
     var title:  String
     var color:  Color
 
-    let SCALE: Image.Scale = .large
-
     var body: some View {
         HStack {
             if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title) {
-                Image(systemName: "checkmark.circle.fill")
-                    .imageScale(SCALE)
+                ASACheckmarkCircleSymbol()
                     .foregroundColor(color)
             } else {
-                Image(systemName: "circle")
-                    .imageScale(SCALE)
+                ASACircleSymbol()
                     .foregroundColor(color)
             }
             Text(verbatim: NSLocalizedString(title, comment: "")).font(.headline)
