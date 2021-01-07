@@ -36,7 +36,7 @@ struct ASARowCell: View {
                 Text(verbatim:  row.calendar.calendarCode.localizedName).font(.headline)
                 HStack {
                     if row.usesDeviceLocation {
-                        ASASmallLocationSymbol()
+                        ASALocationSymbol()
                     }
                     Text(verbatim:  row.emoji(date:  Date()))
                     Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadlineMonospacedDigit)
@@ -44,8 +44,7 @@ struct ASARowCell: View {
             }
             Spacer()
             if selectedUUIDString == self.row.uuid.uuidString {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }
     }

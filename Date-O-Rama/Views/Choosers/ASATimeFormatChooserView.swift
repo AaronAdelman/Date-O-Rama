@@ -59,8 +59,7 @@ struct ASATimeFormatCell: View {
             Text(verbatim:  timeFormat.localizedItemName())
             Spacer()
             if timeFormat == self.selectedTimeFormat {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }   .onTapGesture {
             self.selectedTimeFormat = self.timeFormat

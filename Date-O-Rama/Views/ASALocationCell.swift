@@ -56,7 +56,7 @@ struct ASALocationCell:  View {
                 if usesDeviceLocation {
                     HStack {
                         Spacer()
-                        ASASmallLocationSymbol()
+                        ASALocationSymbol()
                         Text(NSLocalizedString(rawDeviceLocationString(authorizationStatus: locationManager.locationAuthorizationStatus), comment:  "")).multilineTextAlignment(.trailing)
                     }
                     if !(locationManager.locationAuthorizationStatus?.authorizedAtLeastWhenInUse ?? false) {

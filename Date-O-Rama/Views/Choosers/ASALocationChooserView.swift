@@ -133,13 +133,11 @@ struct ASALocationChooserViewCell:  View {
             Text(locationData.longFormattedOneLineAddress)
             Spacer()
             if self.locationData == self.selectedLocationData {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }
     }
 }
-
 
 
 // MARK:  -

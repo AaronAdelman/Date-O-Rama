@@ -169,8 +169,7 @@ struct ASACalendarCell: View {
             Text(verbatim: calendarCode.localizedName)
             Spacer()
             if self.calendarCode == self.selectedCalendarCode {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }
     } // var body

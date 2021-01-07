@@ -69,8 +69,7 @@ struct ASADateFormatCell: View {
             Text(verbatim:  dateFormat.localizedItemName())
             Spacer()
             if dateFormat == self.selectedDateFormat {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }   .onTapGesture {
             self.selectedDateFormat = self.dateFormat

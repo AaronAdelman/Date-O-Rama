@@ -188,7 +188,7 @@ struct ASAClockMainSubcell:  View {
                 if shouldShowTime {
                     HStack {
                         if !shouldShowPlaceName && processedRow.usesDeviceLocation {
-                            ASASmallLocationSymbol()
+                            ASALocationSymbol()
                         }
                         
                         ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  1)
@@ -203,7 +203,7 @@ struct ASAClockMainSubcell:  View {
             } else {
                 HStack {
                     if !shouldShowPlaceName && processedRow.usesDeviceLocation {
-                        ASASmallLocationSymbol()
+                        ASALocationSymbol()
                     }
 
                     if shouldShowFormattedDate {

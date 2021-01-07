@@ -121,8 +121,7 @@ struct ASALocaleCell: View {
             Text(verbatim:  localizedLocaleString)
             Spacer()
             if localeString == self.tempLocaleIdentifier {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }
         .onTapGesture {

@@ -62,8 +62,7 @@ struct ASAArrangementCell: View {
             Text(verbatim: groupingOption.text())
             Spacer()
             if self.groupingOption == self.selectedGroupingOption {
-                Image(systemName: "checkmark")
-                    .foregroundColor(.accentColor)
+                ASACheckmarkSymbol()
             }
         }
     } // var body

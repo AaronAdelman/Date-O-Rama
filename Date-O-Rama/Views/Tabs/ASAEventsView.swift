@@ -101,7 +101,7 @@ struct ASAEventsView: View {
                                 if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
                                     HStack {
                                         if primaryRow.usesDeviceLocation {
-                                            ASASmallLocationSymbol()
+                                            ASALocationSymbol()
                                         }
                                         Text(verbatim: primaryRow.emoji(date:  date))
                                         Text(verbatim:  primaryRow.locationData.formattedOneLineAddress)
@@ -121,7 +121,7 @@ struct ASAEventsView: View {
                                     if secondaryRow.calendar.supportsLocations ||  secondaryRow.calendar.supportsTimeZones {
                                         HStack {
                                             if secondaryRow.usesDeviceLocation {
-                                                ASASmallLocationSymbol()
+                                                ASALocationSymbol()
                                             }
                                             Text(verbatim: secondaryRow.emoji(date:  date))
                                             Text(verbatim: secondaryRow.locationData.formattedOneLineAddress)

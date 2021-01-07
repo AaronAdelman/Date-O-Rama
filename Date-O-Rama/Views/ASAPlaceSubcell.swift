@@ -19,7 +19,7 @@ struct ASAPlaceSubcell:  View {
                     if processedRow.supportsTimeZones || processedRow.supportsLocations {
                         HStack(alignment: .top) {
                             if processedRow.usesDeviceLocation {
-                                ASASmallLocationSymbol()
+                                ASALocationSymbol()
                             }
                             Text(verbatim:  processedRow.flagEmojiString)
                             ASAClockCellText(string:  processedRow.locationString, font:  Font.subheadlineMonospacedDigit, lineLimit:  2)

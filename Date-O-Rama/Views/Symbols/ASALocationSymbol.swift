@@ -1,5 +1,5 @@
 //
-//  ASASmallLocationSymbol.swift
+//  ASALocationSymbol.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 06/10/2020.
@@ -27,10 +27,10 @@ extension CLAuthorizationStatus {
     } // var symbolName
 } // extension CLAuthorizationStatus
 
-struct ASASmallLocationSymbol:  View {
+struct ASALocationSymbol:  View {
     @ObservedObject var locationManager = ASALocationManager.shared
 
     var body:  some View {
         Image(systemName:  (self.locationManager.locationAuthorizationStatus ?? CLAuthorizationStatus.denied).symbolName).imageScale(.small)
     } // var body
-} // struct ASASmallLocationSymbol
+} // struct ASALocationSymbol
