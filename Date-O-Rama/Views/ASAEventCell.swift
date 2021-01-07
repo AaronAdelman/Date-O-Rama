@@ -61,7 +61,7 @@ struct ASAEventCell:  View {
             VStack(alignment: .leading) {
                 Text(event.title).font(.callout).bold().foregroundColor(labelColor)
                     .allowsTightening(true)
-                    .minimumScaleFactor(0.4)
+                    .minimumScaleFactor(0.5)
                     .lineLimit(3)
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
@@ -88,12 +88,12 @@ struct ASAEventCell:  View {
                 if self.compact {
                     Text(event.title).font(.callout).bold().foregroundColor(labelColor)
                         .allowsTightening(true)
-                        .minimumScaleFactor(0.4)
+                        .minimumScaleFactor(0.5)
                         .lineLimit(3)
                 } else {
                     Text(event.title).font(.headline).foregroundColor(labelColor)
                         .allowsTightening(true)
-                        .minimumScaleFactor(0.4)
+                        .minimumScaleFactor(0.5)
                         .lineLimit(3)
                 }
 
@@ -117,7 +117,7 @@ struct ASAEventCellCalendarTitle:  View {
         Text(title
         ).font(.subheadlineMonospacedDigit).foregroundColor(color)
         .allowsTightening(true)
-        .minimumScaleFactor(0.4)
+        .minimumScaleFactor(0.5)
         .lineLimit(2)
     }
 }

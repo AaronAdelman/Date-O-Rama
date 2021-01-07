@@ -19,17 +19,13 @@ struct ASATimesSubcell:  View {
 
     var timeWidth:  CGFloat {
         get {
-            if forClock {
-                #if os(watchOS)
-                return 50.0
-                #else
-                return 90.0
-                #endif
-            }
-            
             #if os(watchOS)
             return 90.0
             #else
+            if self.forClock {
+                return 85.0
+            }
+
             if self.sizeClass! == .compact {
                 return  90.00
             } else {
