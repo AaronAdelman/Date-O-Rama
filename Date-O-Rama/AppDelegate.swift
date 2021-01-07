@@ -79,12 +79,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
-    func rowArrayDictionary(key:  ASARowArrayKey) -> Array<Dictionary<String, Any>> {
+    func rowArrayDictionary(key:  ASARowArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
         let rowArray = ASAUserData.shared.rowArray(key: key)
         
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
-            let dictionary = row.dictionary
+            let dictionary = row.dictionary(forComplication: forComplication)
             temp.append(dictionary)
         }
         
@@ -94,13 +94,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     public func sendUserData(_ session: WCSession) {
         debugPrint(#file, #function)
                 
-        let threeLineLargeTemp = self.rowArrayDictionary(key: .threeLineLarge)
-        let twoLineLargeTemp   = self.rowArrayDictionary(key: .twoLineLarge)
-        let twoLineSmallTemp   = self.rowArrayDictionary(key: .twoLineSmall)
-        let oneLineLargeTemp   = self.rowArrayDictionary(key: .oneLineLarge)
-        let oneLineSmallTemp   = self.rowArrayDictionary(key: .oneLineSmall)
+        let threeLineLargeTemp = self.rowArrayDictionary(key: .threeLineLarge, forComplication: true)
+        let twoLineLargeTemp   = self.rowArrayDictionary(key: .twoLineLarge, forComplication: true)
+        let twoLineSmallTemp   = self.rowArrayDictionary(key: .twoLineSmall, forComplication: true)
+        let oneLineLargeTemp   = self.rowArrayDictionary(key: .oneLineLarge, forComplication: true)
+        let oneLineSmallTemp   = self.rowArrayDictionary(key: .oneLineSmall, forComplication: true)
   
-        let mainRowsTemp = self.rowArrayDictionary(key: .app)
+        let mainRowsTemp = self.rowArrayDictionary(key: .app, forComplication: false)
 
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,

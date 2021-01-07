@@ -14,7 +14,6 @@ import UIKit
 
 enum ASAPreferencesFileCode {
     case clocks
-//    case events
     case complications
 
     var suffix:  String {
@@ -22,9 +21,6 @@ enum ASAPreferencesFileCode {
             switch self {
             case .clocks:
                 return "/Documents/Clock Preferences.json"
-
-//            case .events:
-//                return "/Documents/Event Preferences.json"
 
             case .complications:
                 return "/Documents/Complication Preferences.json"
@@ -35,9 +31,6 @@ enum ASAPreferencesFileCode {
 
 
 // MARK: -
-
-//fileprivate let INTERNAL_EVENT_CALENDARS_KEY  = "INTERNAL_EVENT_CALENDARS"
-//fileprivate let EXTERNAL_EVENT_CALENDARS_KEY  = "EXTERNAL_EVENT_CALENDARS"
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
@@ -55,13 +48,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     // MARK:  - Model objects
     
     @Published var mainRows:  Array<ASARow> = [ASARow.generic]
-
-//    @Published var ASAEventCalendars:  Array<ASAEventCalendar> = []
-//    @Published var EKCalendarTitles:  Array<String> = [] {
-//        didSet {
-//            ASAEKEventManager.shared.reloadEKCalendars(titles: EKCalendarTitles)
-//        } // didSet
-//    }
     
     @Published var threeLineLargeRows:  Array<ASARow> = []
     @Published var twoLineSmallRows:    Array<ASARow> = []
@@ -337,35 +323,22 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     public func savePreferences(code:  ASAPreferencesFileCode) {
         if code == .clocks {
-            let processedMainRows = self.processedRowArray(rowArray: self.mainRows)
+            let processedMainRows = self.processedRowArray(rowArray: self.mainRows, forComplication: false)
 
             let temp1a: Dictionary<String, Any> = [
                 ASARowArrayKey.app.rawValue:  processedMainRows
-//                ,
-//                MAIN_ROWS_GROUPING_OPTION_KEY:  self.mainRowsGroupingOption.rawValue
             ]
 
             writePreferences(temp1a, code: .clocks)
         }
 
-//        if code == .events {
-////            let processedInternalEventCalendarArray = self.processedASAEventCalendarArray(ASAEventCalendarArray: self.ASAEventCalendars)
-//
-//            let temp1b: Dictionary<String, Any> = [
-////                INTERNAL_EVENT_CALENDARS_KEY:  processedInternalEventCalendarArray,
-//                EXTERNAL_EVENT_CALENDARS_KEY:  ASAEKEventManager.shared.titles
-//            ]
-//
-//            writePreferences(temp1b, code: .events)
-//        }
-
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
-                let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows)
-                let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows)
-                let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows)
-                let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows)
-                let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows)
+                let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows, forComplication: true)
+                let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows, forComplication: true)
+                let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows, forComplication: true)
+                let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows, forComplication: true)
+                let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows, forComplication: true)
 
                 let temp2: Dictionary<String, Any> = [
                     ASARowArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
@@ -393,10 +366,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK: - Translation between JSON and model objects
 
-    private func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>> {
+    private func processedRowArray(rowArray:  Array<ASARow>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
-            let dictionary = row.dictionary
+            let dictionary = row.dictionary(forComplication: forComplication)
             temp.append(dictionary)
         }
         return temp

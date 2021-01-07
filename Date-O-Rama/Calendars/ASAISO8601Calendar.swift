@@ -26,21 +26,8 @@ class ASAISO8601Calendar:  ASACalendar {
 
         self.ISODateFormatter.timeZone = TimeZone.current
     } // init()
-    
-//    func defaultDateGeekCode(dateFormat:  ASADateFormat) -> String {
-//        return "yyyy-MM-dd"
-//    } // func defaultDateGeekCode(dateFormat:  ASAMajorFormat) -> String
-//    
-//    func defaultTimeGeekCode(timeFormat:  ASATimeFormat) -> String {
-//        return "HH:mm:ss"
-//    } // func defaultTimeGeekCode(timeFormat:  ASAMajorTimeFormat) -> String
-    
-    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat,
-//                        dateGeekFormat: String,
-                        timeFormat: ASATimeFormat,
-//                        timeGeekFormat: String,
-                        locationData:  ASALocationData) -> String {
-        
+
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String {
         var dateString:  String
         
         var formatterOptions:  ISO8601DateFormatter.Options = []
@@ -60,15 +47,7 @@ class ASAISO8601Calendar:  ASACalendar {
         } // switch dateFormat
         
         switch timeFormat {
-//        case .full:
-//            formatterOptions.insert(.withFullTime)
-//        case .long:
-//            formatterOptions.insert(.withTime)
-//            formatterOptions.insert(.withColonSeparatorInTime)
-//            formatterOptions.insert(.withFractionalSeconds)
-        case .medium
-//             , .short
-        :
+        case .medium :
             formatterOptions.insert(.withTime)
             formatterOptions.insert(.withColonSeparatorInTime)
         default:
@@ -78,51 +57,14 @@ class ASAISO8601Calendar:  ASACalendar {
         self.ISODateFormatter.formatOptions = formatterOptions
 
         let timeZone = locationData.timeZone
-//        if timeZone == nil {
-//            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
-//        } else {
-            self.ISODateFormatter.timeZone = timeZone
-//        }
-        
+        self.ISODateFormatter.timeZone = timeZone
+
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASAMajorFormat, dateGeekFormat: String, timeFormat: ASAMajorTimeFormat, timeGeekFormat: String, location:  CLLocation) -> String
-    
-//    func dateTimeString(now: Date, localeIdentifier:  String, LDMLString: String, locationData:  ASALocationData) -> String {
-//        
-//        self.dateFormatter.locale = Locale(identifier: "en_UK")
-//        
-//        self.dateFormatter.dateFormat = LDMLString
-//        
-//        if timeZone == nil {
-//            self.ISODateFormatter.timeZone = TimeZone.autoupdatingCurrent
-//        } else {
-//            self.ISODateFormatter.timeZone = timeZone
-//        }
-//        
-//        let result = self.dateFormatter.string(from: now)
-//        
-//        return result
-//    } // func dateTimeString(now:  Date, localeIdentifier:  String, LDMLString:  String, location:  CLLocation) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String
     
     
     // MARK: -
-    
-//    var LDMLDetails: Array<ASALDMLDetail> {
-//        get {
-//            return [
-//                ASALDMLDetail(name: "HEADER_y", geekCode: "yyyy"),
-//                ASALDMLDetail(name: "HEADER_M", geekCode: "MM"),
-//                ASALDMLDetail(name: "HEADER_d", geekCode: "dd"),
-//                ASALDMLDetail(name: "HEADER_Y", geekCode: "Y"),
-//                ASALDMLDetail(name: "HEADER_w", geekCode: "ww"),
-//                ASALDMLDetail(name: "HEADER_E", geekCode: "e"),
-//                ASALDMLDetail(name: "HEADER_D", geekCode: "D")
-//                //            ,
-//                //            ASADetail(name: "HEADER_g", geekCode: "g")
-//            ]
-//        }
-//    } // var LDMLDetails: Array<ASALDMLDetail>
         
     var supportsLocales: Bool = false
     
@@ -161,9 +103,7 @@ class ASAISO8601Calendar:  ASACalendar {
     ]
     
     var supportedTimeFormats: Array<ASATimeFormat> = [
-//        .full, .long,
         .medium
-//        , .short
     ]
     
     var supportsTimeFormats: Bool = true

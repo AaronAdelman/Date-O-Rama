@@ -12,48 +12,14 @@ import CoreLocation
 struct ASADateFormatChooserView: View {
     @ObservedObject var row:  ASARow
 
-    @State var tempMajorDateFormat:  ASADateFormat
-//    @State var tempDateGeekFormat:  String
+    @State var tempDateFormat:  ASADateFormat
     @State var calendarCode:  ASACalendarCode
 
     var forAppleWatch:  Bool
 
-
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
-    
-    var model:  Array<ASAComponentsPickerSection> = [
-        ASAComponentsPickerSection(headerCode: "E", items: ["", "eeeee", "eeeeee", "eee", "eeee", "e", "ee"
-        ]),
-        ASAComponentsPickerSection(headerCode: "y", items: ["", "y", "yy", "yyy", "yyyy"]),
-        ASAComponentsPickerSection(headerCode: "M", items: ["", "MMMMM", "MMM", "MMMM", "M", "MM"]),
-        ASAComponentsPickerSection(headerCode: "d", items: ["", "d", "dd"]),
-        ASAComponentsPickerSection(headerCode: "G", items: ["", "GGGGG", "G", "GGGG"]),
-        ASAComponentsPickerSection(headerCode: "Y", items: ["", "Y", "YY", "YYY", "YYYY"]),
-        ASAComponentsPickerSection(headerCode: "U", items: ["", "UUUUU", "U", "UUUU"]),
-        //                    ASAComponentsPickerSection(headerCode: "r", items: ["", "r", "rr", "rrr", "rrrr"]),
-        ASAComponentsPickerSection(headerCode: "Q", items: ["", "Q", "QQ", "QQQQQ", "QQQ", "QQQQ"]),
-        ASAComponentsPickerSection(headerCode: "w", items: ["", "w", "ww"]),
-        ASAComponentsPickerSection(headerCode: "W", items: ["", "W"]),
-        ASAComponentsPickerSection(headerCode: "D", items: ["", "D", "DD", "DDD"]),
-        ASAComponentsPickerSection(headerCode: "F", items: ["", "F"]),
-        //                    ASAComponentsPickerSection(headerCode: "g", items: ["", "g"])
-    ]
-    
-//    fileprivate func ComponentsForEach() -> ForEach<[ASAComponentsPickerSection], String, Section<Text, ForEach<[String], String, ASADateFormatComponentCell>, EmptyView>> {
-//        return ForEach(self.model, id:  \.headerCode) {
-//            section
-//            in
-//            Section(header: Text(verbatim:  section.localizedHeaderTitle())) {
-//                ForEach(section.items, id:  \.self) {
-//                    item
-//                    in
-//                    ASADateFormatComponentCell(headerCode: section.headerCode, item: item, calendarCode:  self.calendarCode, selectedDateGeekFormat: self.$tempDateGeekFormat)
-//                } // ForEach(section.items, id:  \.self)
-//            }
-//        }
-//    }
-    
+
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
             return row.calendar.supportedWatchDateFormats
@@ -68,12 +34,9 @@ struct ASADateFormatChooserView: View {
                 ForEach(dateFormats(), id: \.self) {
                     format
                     in
-                    ASAMajorDateFormatCell(dateFormat: format, selectedMajorDateFormat: self.$tempMajorDateFormat)
+                    ASADateFormatCell(dateFormat: format, selectedDateFormat: self.$tempDateFormat)
                 }
             } // Section
-//            if tempMajorDateFormat == .localizedLDML {
-//                ComponentsForEach()
-//            }
         } // List
             .navigationBarItems(trailing:
                 Button("Cancel", action: {
@@ -82,14 +45,12 @@ struct ASADateFormatChooserView: View {
                 })
         )
             .onAppear() {
-                self.tempMajorDateFormat = self.row.dateFormat
-//                self.tempDateGeekFormat  = self.row.dateGeekFormat
+                self.tempDateFormat = self.row.dateFormat
                 self.calendarCode        = self.row.calendar.calendarCode
         }
         .onDisappear() {
             if !self.didCancel {
-                self.row.dateFormat = self.tempMajorDateFormat
-//                self.row.dateGeekFormat  = self.tempDateGeekFormat
+                self.row.dateFormat = self.tempDateFormat
             }
         }
     }
@@ -98,84 +59,30 @@ struct ASADateFormatChooserView: View {
 
 // MARK: -
 
-struct ASAMajorDateFormatCell: View {
+struct ASADateFormatCell: View {
     let dateFormat: ASADateFormat
     
-    @Binding var selectedMajorDateFormat:  ASADateFormat
+    @Binding var selectedDateFormat:  ASADateFormat
     
     var body: some View {
         HStack {
             Text(verbatim:  dateFormat.localizedItemName())
             Spacer()
-            if dateFormat == self.selectedMajorDateFormat {
+            if dateFormat == self.selectedDateFormat {
                 Image(systemName: "checkmark")
                     .foregroundColor(.accentColor)
             }
         }   .onTapGesture {
-            self.selectedMajorDateFormat = self.dateFormat
+            self.selectedDateFormat = self.dateFormat
         }
     }
-} // struct ASAMajorDateFormatCell
-
-
-// MARK: -
-
-//struct ASADateFormatComponentCell: View {
-//    let headerCode:  String
-//    let item: String
-//    let calendarCode:  ASACalendarCode
-//
-////    @Binding var selectedDateGeekFormat:  String
-//
-////    func selectedItem(selectedDateGeekFormat:  String, headerCode:  String) -> String {
-////        let components = selectedDateGeekFormat.dateComponents(calendarCode: calendarCode)
-////        let selection = components[headerCode]
-////        return selection ?? ""
-////    }
-//
-//    var body: some View {
-//        HStack {
-//            Text(verbatim: NSLocalizedString("ITEM_\(headerCode)_\(item)", comment: ""))
-//            Spacer()
-//            if self.item == self.selectedItem(selectedDateGeekFormat: self.selectedDateGeekFormat, headerCode: headerCode) {
-//                Image(systemName: "checkmark")
-//                    .foregroundColor(.accentColor)
-//            }
-//        }
-//        .onTapGesture {
-//            debugPrint("\(#file) \(#function) Geek format before = \(self.selectedDateGeekFormat)")
-//            var components = self.selectedDateGeekFormat.dateComponents(calendarCode:  self.calendarCode)
-//            components[self.headerCode] = self.item
-//            self.selectedDateGeekFormat = String.geekFormat(components: components)
-//            debugPrint("\(#file) \(#function) Geek format after = \(self.selectedDateGeekFormat)")
-//        }
-//    }  // var body
-//} // struct ASAComponentCell
-
-
-// MARK: -
-
-struct ASAComponentsPickerSection {
-    var headerCode:  String
-    var items:  Array<String>
-} // struct ASAComponentsPickerSection
-
-extension ASAComponentsPickerSection {
-    func localizedHeaderTitle() -> String {
-        let sectionCode = self.headerCode
-        let unlocalizedTitle = "HEADER_\(sectionCode)"
-        let headerTitle = NSLocalizedString(unlocalizedTitle, comment: "")
-        return headerTitle
-    } // func localizedHeaderTitle() -> String
-} // extension ASAComponentsPickerSection
+} // struct ASADateFormatCell
 
 
 // MARK: -
 
 struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASADateFormatChooserView(row: ASARow.generic, tempMajorDateFormat: .full,
-//                                 tempDateGeekFormat: "yyyy",
-                                 calendarCode: .Gregorian, forAppleWatch: true)
+        ASADateFormatChooserView(row: ASARow.generic, tempDateFormat: .full, calendarCode: .Gregorian, forAppleWatch: true)
     }
 }

@@ -92,15 +92,12 @@ class ASARow: ASALocatedObject {
         }
     }
 
-    private var eventCache = NSCache<
-//        ASAEventCacheKey,
-        NSNumber,
-        ASAEventCacheObject>()
+    private var eventCache = NSCache<NSNumber, ASAEventCacheObject>()
 
     
     // MARK:  -
         
-    public var dictionary:  Dictionary<String, Any> {
+    public func dictionary(forComplication:  Bool) ->  Dictionary<String, Any> {
         //        debugPrint(#file, #function)
 
         var result = [
@@ -114,7 +111,7 @@ class ASARow: ASALocatedObject {
             USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
         ] as [String : Any]
 
-        if self.isICalendarCompatible {
+        if self.isICalendarCompatible && !forComplication {
             result[ICALENDAR_EVENT_CALENDARS_KEY] =  self.iCalendarEventCalendars.map{ $0.title }
         }
         
