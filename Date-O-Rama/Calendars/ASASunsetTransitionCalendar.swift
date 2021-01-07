@@ -364,19 +364,6 @@
 
     var supportedDateFormats: Array<ASADateFormat> = [
         .full
-//        ,
-//        .long,
-//        .medium,
-//        .mediumWithWeekday,
-//        .short,
-//        .shortWithWeekday,
-//        .abbreviatedWeekday,
-//        .dayOfMonth,
-//        .abbreviatedWeekdayWithDayOfMonth,
-//        .shortWithWeekdayWithoutYear,
-//        .mediumWithWeekdayWithoutYear,
-//        .fullWithoutYear,
-//        .localizedLDML
     ]
 
     var supportedWatchDateFormats: Array<ASADateFormat> = [
@@ -609,4 +596,6 @@
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 
     var usesISOTime:  Bool = false
+
+    var daysPerWeek:  Int? = 7
  } // class ASASunsetTransitionCalendar

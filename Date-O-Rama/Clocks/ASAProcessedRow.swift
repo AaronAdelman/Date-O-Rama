@@ -24,7 +24,7 @@ struct ASAProcessedRow {
     var supportsLocations:  Bool
     var supportsTimes:  Bool
 
-    var daysPerWeek:  Int
+    var daysPerWeek:  Int?
     var day:  Int
     var weekday:  Int
     var daysInMonth:  Int
@@ -95,7 +95,7 @@ struct ASAProcessedRow {
 
         let dateComponents = row.dateComponents([.day, .weekday, .hour, .minute, .second], from: now, locationData: row.locationData)
 
-        self.daysPerWeek = 7 // TODO:  FIX THIS!
+        self.daysPerWeek = row.daysPerWeek
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
         if row.calendar.supports(calendarComponent: .month) {

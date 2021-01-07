@@ -266,4 +266,6 @@ class ASAAppleCalendar:  ASACalendar {
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 
     var usesISOTime:  Bool = true
+
+    var daysPerWeek:  Int? = 7
 } // class ASAAppleCalendar

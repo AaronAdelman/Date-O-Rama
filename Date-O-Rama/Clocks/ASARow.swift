@@ -329,12 +329,7 @@ extension ASARow {
     public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
         self.calendar.dateComponents(components, from: date, locationData: self.locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
-} // extension ASARow
 
-
-// MARK:  -
-
-extension ASARow {
     public func shortenedDateTimeString(now:  Date) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let timeFormat: ASATimeFormat = self.timeFormat.shortened
@@ -365,4 +360,8 @@ extension ASARow {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: self.locationData)
         return result
     } // func watchShortenedTimeString(now:  Date) -> String
+
+    var daysPerWeek:  Int? {
+        return self.calendar.daysPerWeek
+    }
 } // extension ASARow
