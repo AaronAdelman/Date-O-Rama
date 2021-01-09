@@ -279,7 +279,7 @@ class ASARow: ASALocatedObject {
         }
 
         for eventCalendar in self.builtInEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarName(locationData: self.locationData, localeIdentifier: Locale.current.identifier), calendarTitleWithoutLocation: eventCalendar.eventSourceName(localeIdentifier: Locale.current.identifier), ISOCountryCode: self.locationData.ISOCountryCode, requestedLocaleIdentifier: self.localeIdentifier, allDayEventsOnly: false)
+            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: Locale.current.identifier), calendarTitleWithoutLocation: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier), ISOCountryCode: self.locationData.ISOCountryCode, requestedLocaleIdentifier: self.localeIdentifier, allDayEventsOnly: false)
         } // for eventCalendar in self.builtInEventCalendars
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {

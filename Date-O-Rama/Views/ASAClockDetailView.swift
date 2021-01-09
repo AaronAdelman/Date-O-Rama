@@ -214,7 +214,7 @@ struct ASABuiltInEventCalendarCell:  View {
                 ASACircleSymbol()
                     .foregroundColor(eventFile.color)
             }
-            Text(verbatim: eventFile.eventSourceName(localeIdentifier: Locale.current.identifier)).font(.headline)
+            Text(verbatim: eventFile.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
         } // HStack
     } //var body
 } // struct ASABuiltInEventCalendarCell

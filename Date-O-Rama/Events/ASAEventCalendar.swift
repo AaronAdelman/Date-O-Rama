@@ -319,13 +319,13 @@ class ASAEventCalendar {
         return result
     } // func eventDetails(date:  Date, location:  locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
     
-    func eventCalendarName(locationData:  ASALocationData, localeIdentifier:  String) -> String {
-        let localizableTitle = self.eventSourceName(localeIdentifier: localeIdentifier)
+    func eventCalendarNameWithPlaceName(locationData:  ASALocationData, localeIdentifier:  String) -> String {
+        let localizableTitle = self.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)
         let oneLineAddress = locationData.shortFormattedOneLineAddress
         return "\(NSLocalizedString(localizableTitle, comment: "")) • \(oneLineAddress)"
     } // func eventCalendarName(locationData:  ASALocationData) -> String
     
-    func eventSourceName(localeIdentifier:  String) -> String {
+    func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
         let titles = self.eventsFile!.titles
 
         let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
