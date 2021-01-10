@@ -36,7 +36,7 @@
 "IslamicSolar"          = "מוסלמי";
 "IslamicCivilSolar"     = "מוסלמי אזרחי";
 "IslamicTabularSolar"   = "מוסלמי טבלאי";
-"IslamicUmmAlQuraSolar" = "מוסלמי אום אל-קורה";
+"IslamicUmmAlQuraSolar" = "מוסלמי אום אל־קורה";
 "HebrewSolarMA"         = "עברי (מגן אברהם)";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
