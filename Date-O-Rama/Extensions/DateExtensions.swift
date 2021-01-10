@@ -95,7 +95,7 @@ extension Date {
 } // extension Date
 
 extension Date {
-    func solarCorrected(locationData:  ASALocationData, transitionEvent:  ASASolarEvent) -> (date:  Date, transition:  Date??) {
+    func solarCorrected(locationData:  ASALocation, transitionEvent:  ASASolarEvent) -> (date:  Date, transition:  Date??) {
         let location = locationData.location
         let timeZone = locationData.timeZone
         let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [transitionEvent], timeZone: timeZone)

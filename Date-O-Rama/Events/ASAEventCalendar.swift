@@ -20,7 +20,7 @@ class ASAEventCalendar {
         (self.eventsFile, self.error) = ASAEventsFile.builtIn(fileName: fileName)
     } // init(fileName:  String)
 
-    func events(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
+    func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
 
         if self.eventsFile == nil {
@@ -55,7 +55,7 @@ class ASAEventCalendar {
         } while oldNow < endDate
 
         return result
-    } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
+    } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String) -> Array<ASAEvent>
     
     var color:  Color {
         return Color(self.eventsFile!.calendarColor)
@@ -96,7 +96,7 @@ class ASAEventCalendar {
         return tweakedDateSpecification
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
 
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: templateDateComponents, strong: true)
@@ -188,7 +188,7 @@ class ASAEventCalendar {
         return true
     } // func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification) -> Bool {
         let components = calendar.dateComponents([.era, .year, .month, .day, .weekday
                                                   //            , .weekOfYear, .weekOfMonth
         ], from: date, locationData: locationData)
@@ -236,9 +236,9 @@ class ASAEventCalendar {
         }
 
         return true
-    } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocationData, startDateSpecification:  ASADateSpecification) -> Bool
+    } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification) -> Bool
     
-    func events(date:  Date, locationData:  ASALocationData, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
+    func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -318,13 +318,13 @@ class ASAEventCalendar {
             }
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return result
-    } // func eventDetails(date:  Date, location:  locationData:  ASALocationData, eventCalendarName: String) -> Array<ASAEvent>
+    } // func eventDetails(date:  Date, location:  locationData:  ASALocation, eventCalendarName: String) -> Array<ASAEvent>
     
-    func eventCalendarNameWithPlaceName(locationData:  ASALocationData, localeIdentifier:  String) -> String {
+    func eventCalendarNameWithPlaceName(locationData:  ASALocation, localeIdentifier:  String) -> String {
         let localizableTitle = self.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)
         let oneLineAddress = locationData.shortFormattedOneLineAddress
         return "\(NSLocalizedString(localizableTitle, comment: "")) • \(oneLineAddress)"
-    } // func eventCalendarName(locationData:  ASALocationData) -> String
+    } // func eventCalendarName(locationData:  ASALocation) -> String
     
     func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
         if self.eventsFile == nil {

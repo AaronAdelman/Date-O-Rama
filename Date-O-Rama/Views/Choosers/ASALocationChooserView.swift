@@ -13,8 +13,8 @@ import MapKit
 struct ASALocationChooserView: View {
     @ObservedObject var locatedObject:  ASALocatedObject
     @State var enteredAddress:  String = ""
-    @State var locationDataArray:  Array<ASALocationData> = []
-    @State var tempLocationData:  ASALocationData = ASALocationData()
+    @State var locationDataArray:  Array<ASALocation> = []
+    @State var tempLocationData:  ASALocation = ASALocation()
     @State var tempUsesDeviceLocation: Bool = false {
         didSet {
             if tempUsesDeviceLocation == true {
@@ -108,9 +108,9 @@ struct ASALocationChooserView: View {
             debugPrint(#file, #function, placemarks as Any, error as Any)
             
             if error == nil {
-                var temp:  Array<ASALocationData> = []
+                var temp:  Array<ASALocation> = []
                 for placemark in placemarks ?? [] {
-                    temp.append(ASALocationData.create(placemark: placemark, location: nil))
+                    temp.append(ASALocation.create(placemark: placemark, location: nil))
                 }
                 self.locationDataArray = temp
             } else {
@@ -124,9 +124,9 @@ struct ASALocationChooserView: View {
 // MARK:  -
 
 struct ASALocationChooserViewCell:  View {
-    var locationData:  ASALocationData
+    var locationData:  ASALocation
     
-    @Binding var selectedLocationData:  ASALocationData
+    @Binding var selectedLocationData:  ASALocation
     
     var body: some View {
         HStack {
@@ -144,6 +144,6 @@ struct ASALocationChooserViewCell:  View {
 
 struct LocationChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationChooserView(locatedObject: ASARow.generic, tempLocationData: ASALocationData())
+        ASALocationChooserView(locatedObject: ASARow.generic, tempLocationData: ASALocation())
     }
 }

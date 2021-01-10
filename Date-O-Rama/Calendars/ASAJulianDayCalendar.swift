@@ -55,7 +55,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // init(calendarCode: ASACalendarCode)
 
     
-    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         if self.supportsTimes && timeFormat != .none {
             let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let formatter = NumberFormatter()
@@ -72,13 +72,13 @@ class ASAJulianDayCalendar:  ASACalendar {
             let result = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
             return result
         }
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
     
     var supportsLocales: Bool = true
     
     var supportsDateFormats: Bool = false
     
-    func startOfDay(for date: Date, locationData:  ASALocationData) -> Date {
+    func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
             return date.previousGMTNoon()
@@ -89,10 +89,10 @@ class ASAJulianDayCalendar:  ASACalendar {
         default:
             return date.previousGMTNoon()
         } // switch self.calendarCode
-    } // func startOfDay(for date: Date, locationData:  ASALocationData) -> Date
+    } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
     
     
-    func startOfNextDay(date: Date, locationData:  ASALocationData) -> Date {
+    func startOfNextDay(date: Date, locationData:  ASALocation) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
             return date.nextGMTNoon()
@@ -180,7 +180,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     // MARK:  - Extracting Components
 
-    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
+    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
          // Returns the value for one component of a date.
         let components = date.JulianDateComponents(offsetFromJulianDay: self.offsetFromJulianDay)
 
@@ -203,9 +203,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         default:
             return -1
         } // switch component
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
+    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
 
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         let JDComponents = date.JulianDateComponents(offsetFromJulianDay: self.offsetFromJulianDay)
         var result = ASADateComponents(calendar: self, locationData: locationData)
         for component in components {
@@ -230,7 +230,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             } // switch component
         }
         return result
-    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
     
     
     // MARK:  - Getting Calendar Information

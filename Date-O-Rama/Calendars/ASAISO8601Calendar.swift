@@ -27,7 +27,7 @@ class ASAISO8601Calendar:  ASACalendar {
         self.ISODateFormatter.timeZone = TimeZone.current
     } // init()
 
-    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String {
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         var dateString:  String
         
         var formatterOptions:  ISO8601DateFormatter.Options = []
@@ -61,25 +61,25 @@ class ASAISO8601Calendar:  ASACalendar {
 
         dateString = self.ISODateFormatter.string(from: now)
         return dateString
-    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
     
     
     // MARK: -
         
     var supportsLocales: Bool = false
     
-    func startOfDay(for date: Date, locationData:  ASALocationData) -> Date {
+    func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
         //        return date.previousMidnight(timeZone:  timeZone)
         let timeZone = locationData.timeZone
         self.ApplesCalendar.timeZone = timeZone
         return self.ApplesCalendar.startOfDay(for: date)
-    } // func startOfDay(for date: Date, locationData:  ASALocationData) -> Date
+    } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
 
-    func startOfNextDay(date:  Date, locationData:  ASALocationData) -> Date {
+    func startOfNextDay(date:  Date, locationData:  ASALocation) -> Date {
         //        return date.nextMidnight(timeZone:  timeZone)
         self.ApplesCalendar.timeZone = locationData.timeZone
         return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
-    } // func startOfNextDay(now:  Date, locationData:  ASALocationData) -> Date
+    } // func startOfNextDay(now:  Date, locationData:  ASALocation) -> Date
 
     var supportsDateFormats: Bool = true
     
@@ -127,7 +127,7 @@ class ASAISO8601Calendar:  ASACalendar {
     
     
     // MARK:  - Extracting Components
-    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int {
+    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
         // Returns the value for one component of a date.
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
@@ -137,9 +137,9 @@ class ASAISO8601Calendar:  ASACalendar {
         var calendar = self.ApplesCalendar
         calendar.timeZone = locationData.timeZone 
         return calendar.component(ApplesComponent!, from: date)
-    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int
+    } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
 
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {
             let ApplesCalendarComponent = component.calendarComponent()

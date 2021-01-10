@@ -42,7 +42,7 @@ class ASARow: ASALocatedObject {
                 self.usesDeviceLocation = false
 
                 if !self.calendar.supportsTimeZones {
-                    self.locationData = ASALocationData.NullIsland
+                    self.locationData = ASALocation.NullIsland
                     self.usesDeviceLocation = false
                 }
             }
@@ -244,7 +244,7 @@ class ASARow: ASALocatedObject {
 
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
 
-        let newLocationData = ASALocationData(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, ISOCountryCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
+        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, ISOCountryCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
         newRow.locationData = newLocationData
 
         newRow.startingUp = false
@@ -326,9 +326,9 @@ extension ASARow {
         return self.calendar.supportsLocales
     } // var supportsLocales:  Bool
 
-    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents {
+    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         self.calendar.dateComponents(components, from: date, locationData: self.locationData)
-    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents
+    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
 
     public func shortenedDateTimeString(now:  Date) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened

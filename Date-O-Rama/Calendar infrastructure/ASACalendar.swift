@@ -37,9 +37,9 @@ protocol ASACalendar {
     var transitionType:  ASATransitionType { get }
     var usesISOTime:  Bool { get }
     
-    func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocationData) -> String
-    func startOfDay(for date:  Date, locationData:  ASALocationData) -> Date
-    func startOfNextDay(date:  Date, locationData:  ASALocationData) -> Date
+    func dateTimeString(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
+    func startOfDay(for date:  Date, locationData:  ASALocation) -> Date
+    func startOfNextDay(date:  Date, locationData:  ASALocation) -> Date
     
     func supports(calendarComponent:  ASACalendarComponent) -> Bool
 
@@ -50,8 +50,8 @@ protocol ASACalendar {
 
     
     // MARK:  - Extracting Components
-    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocationData) -> Int // Returns the value for one component of a date.
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocationData) -> ASADateComponents // Returns all the date components of a date.
+    func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int // Returns the value for one component of a date.
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents // Returns all the date components of a date.
     
     
     // MARK:  - Getting Calendar Information

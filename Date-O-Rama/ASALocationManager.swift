@@ -76,7 +76,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocationData: ASALocationData = ASALocationData.NullIsland {
+    @Published var deviceLocationData: ASALocation = ASALocation.NullIsland {
         willSet {
             objectWillChange.send()
         } // willSet
@@ -109,7 +109,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
             if place == nil || error != nil {
 //                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
                 
-                var tempLocationData = ASALocationData()
+                var tempLocationData = ASALocation()
                 tempLocationData.location              = location
                 tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
 
@@ -126,7 +126,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
             
             self.lastDevicePlacemark = place
             self.lastDeviceLocation = location
-            let tempLocationData = ASALocationData.create(placemark: place, location: location)
+            let tempLocationData = ASALocation.create(placemark: place, location: location)
             self.finishDidUpdateLocations(tempLocationData)
         }
     }
@@ -142,10 +142,10 @@ extension ASALocationManager: CLLocationManagerDelegate {
         }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 
-    fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocationData) {
+    fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocation) {
         self.deviceLocationData = tempLocationData
         self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION_NAME), object: nil)
         
 //        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
-    } // func finishDidUpdateLocations(_ tempLocationData: ASALocationData)
+    } // func finishDidUpdateLocations(_ tempLocationData: ASALocation)
 } // extension ASALocationManager

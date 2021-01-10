@@ -1,5 +1,5 @@
 //
-//  ASALocationData.swift
+//  ASALocation.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-25.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct ASALocationData:  Equatable, Identifiable {
+struct ASALocation:  Equatable, Identifiable {
     var id = UUID()
     var location:  CLLocation = CLLocation.NullIsland
     var name:  String?
@@ -25,18 +25,18 @@ struct ASALocationData:  Equatable, Identifiable {
     var subThoroughfare: String?
     
     var timeZone:  TimeZone = TimeZone.GMT
-} // struct ASALocationData
+} // struct ASALocation
 
 
 // MARK:  -
 
-extension ASALocationData {
-    static func create(placemark:  CLPlacemark?, location:  CLLocation?) -> ASALocationData {
+extension ASALocation {
+    static func create(placemark:  CLPlacemark?, location:  CLLocation?) -> ASALocation {
         let usedLocation = location != nil ? location! : (placemark?.location ?? CLLocation.NullIsland)
-        let temp = ASALocationData(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone ?? TimeZone.GMT)
+        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: placemark?.country, ISOCountryCode: placemark?.isoCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: placemark?.timeZone ?? TimeZone.GMT)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
-    } // static func create(placemark:  CLPlacemark?) -> ASALocationData
+    } // static func create(placemark:  CLPlacemark?) -> ASALocation
     
     var formattedOneLineAddress:  String {
         get {
@@ -118,13 +118,13 @@ extension ASALocationData {
             return temp
         } // get
     } // var longFormattedOneLineAddress
-} // extension ASALocationData
+} // extension ASALocation
 
 
 // MARK:  -
 
-extension ASALocationData {
-    static var NullIsland:  ASALocationData {
-        return ASALocationData(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
+extension ASALocation {
+    static var NullIsland:  ASALocation {
+        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
     } // static var NullIsland
-} // extension ASALocationData
+} // extension ASALocation

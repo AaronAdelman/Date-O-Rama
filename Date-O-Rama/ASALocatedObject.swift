@@ -32,7 +32,7 @@ class ASALocatedObject:  NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
     @Published var usesDeviceLocation:  Bool = true
-    @Published var locationData:  ASALocationData = ASALocationManager.shared.deviceLocationData {
+    @Published var locationData:  ASALocation = ASALocationManager.shared.deviceLocationData {
         didSet {
             self.handleLocationDataChanged()
         }

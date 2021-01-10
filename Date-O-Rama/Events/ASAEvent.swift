@@ -24,7 +24,7 @@ struct ASAEvent:  ASAEventCompatible {
     var calendarTitleWithoutLocation: String
     var isEKEvent: Bool = false
     var calendarCode: ASACalendarCode
-    var locationData:  ASALocationData
+    var locationData:  ASALocation
 } // struct ASAEvent
 
 
