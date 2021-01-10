@@ -214,7 +214,14 @@ struct ASABuiltInEventCalendarCell:  View {
                 ASACircleSymbol()
                     .foregroundColor(eventFile.color)
             }
-            Text(verbatim: eventFile.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
+            VStack {
+                Text(verbatim: eventFile.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
+                if eventFile.error != nil {
+                    Text(verbatim: eventFile.error!.localizedDescription)
+                        .font(.headline)
+                        .foregroundColor(.gray)
+                }
+            }
         } // HStack
     } //var body
 } // struct ASABuiltInEventCalendarCell

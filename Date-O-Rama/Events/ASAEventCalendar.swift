@@ -13,10 +13,11 @@ import CoreLocation
 class ASAEventCalendar {
     var fileName:  String
     var eventsFile:  ASAEventsFile?
+    var error:  Error?
 
     init(fileName:  String) {
         self.fileName = fileName
-        self.eventsFile = ASAEventsFile.builtIn(fileName: fileName)
+        (self.eventsFile, self.error) = ASAEventsFile.builtIn(fileName: fileName)
     } // init(fileName:  String)
 
     func events(startDate: Date, endDate: Date, locationData:  ASALocationData, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
@@ -326,6 +327,10 @@ class ASAEventCalendar {
     } // func eventCalendarName(locationData:  ASALocationData) -> String
     
     func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
+        if self.eventsFile == nil {
+            return self.fileName
+        }
+        
         let titles = self.eventsFile!.titles
 
         let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
@@ -531,7 +536,7 @@ extension ASAEventCalendar {
         }
         var unsortedFileNames:  Array<String> = []
         for fileName in rawFileNames {
-            let eventsFile = ASAEventsFile.builtIn(fileName: fileName)
+            let (eventsFile, _) = ASAEventsFile.builtIn(fileName: fileName)
             if eventsFile?.calendarCode == calendarCode {
                 unsortedFileNames.append(fileName)
             }
