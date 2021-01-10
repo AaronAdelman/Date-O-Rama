@@ -83,7 +83,7 @@ class ASARow: ASALocatedObject {
                 self.eventCache.removeAllObjects()
             }
         } // didset
-    } // var EKCalendarTitles
+    } // var iCalendarEventCalendars
 
     override func handleLocationDataChanged() {
         if !startingUp {

@@ -547,3 +547,13 @@ extension ASAEventCalendar {
         return fileNames
     } // static var builtInEventCalendarFileNames
 } // extension ASAEventCalendar
+
+
+// MARK:  -
+
+extension Array where Element == ASAEventCompatible {
+    func nextEvent(now:  Date) -> ASAEventCompatible? {
+        let result = self.first(where: { $0.startDate > now })
+        return result
+    } // func nextEvent(now:  Date) -> ASAEventCompatible?
+} // extension Array where Element == ASAEventCompatible

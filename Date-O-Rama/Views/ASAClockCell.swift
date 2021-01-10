@@ -128,9 +128,19 @@ struct ASAClockCellBody:  View {
                         .frame(width:  128.0)
                     #endif
                 } // HStack
+
                 if shouldShowEvents {
                     ASAClockEventsForEach(processedRow: processedRow)
+                } else {
+                    let nextEvent = processedRow.events.nextEvent(now: now)
+                    if nextEvent != nil {
+                        HStack {
+                            Text("Next event:")
+                            ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.rangeStart, rangeEnd:  processedRow.rangeEnd)
+                        }
+                    }
                 }
+
             }
             #endif
         } // VStack
