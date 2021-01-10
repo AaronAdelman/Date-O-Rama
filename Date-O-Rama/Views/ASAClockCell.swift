@@ -116,6 +116,7 @@ struct ASAClockCellBody:  View {
                 HStack {
                     Toggle(isOn: $shouldShowEvents) {
                         Text("Show Events")
+                            .font(.subheadlineMonospacedDigit)
                     }
                     .padding(EdgeInsets(top: 1.0, leading: 4.0, bottom: 1.0, trailing: 1.0))
                     .overlay(
@@ -136,12 +137,19 @@ struct ASAClockCellBody:  View {
                     if nextEvent != nil {
                         HStack {
                             Text("Next event:")
-                            ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.rangeStart, rangeEnd:  processedRow.rangeEnd)
-                        }
+                                .font(.subheadlineMonospacedDigit)
+                            ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
+                        } // HStack
                     }
                 }
-
             }
+
+            HStack {
+                Text("Time to next day:")
+                    .font(.subheadlineMonospacedDigit)
+                Text(processedRow.startOfNextDay, style: .timer)
+                    .font(.subheadlineMonospacedDigit)
+            } // HStack
             #endif
         } // VStack
     } // var body
@@ -159,7 +167,7 @@ struct ASAClockEventsForEach:  View {
         ForEach(processedRow.events, id: \.eventIdentifier) {
             event
             in
-            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.rangeStart, rangeEnd:  processedRow.rangeEnd)
+            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach
