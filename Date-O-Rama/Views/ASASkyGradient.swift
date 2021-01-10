@@ -67,8 +67,6 @@ struct ASASkyGradient: View {
         }
 
         if calendarType == .JulianDay {
-//            let color = Color.backgroundColor(transitionType: transitionType, hour: hour, calendarType: calendarType)
-//            return [color, color]
             return JulianDayBackground
         }
 
