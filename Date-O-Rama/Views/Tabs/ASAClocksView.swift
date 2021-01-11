@@ -33,7 +33,7 @@ struct ASAClocksView: View {
             VStack {
                 Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
-                    DisclosureGroup("Show preferences", isExpanded: $showingPreferences) {
+                    DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
                         NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
                             HStack {
                                 Text("Arrangement")

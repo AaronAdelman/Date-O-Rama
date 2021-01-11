@@ -145,7 +145,7 @@ struct ASAEventsView: View {
                                 .foregroundColor(.accentColor)
                         }
 
-                        DisclosureGroup("Show preferences", isExpanded: $showingPreferences) {
+                        DisclosureGroup("Show event preferences", isExpanded: $showingPreferences) {
                             Button("Swap clocks") {
                                 let tempRowUUIDString = self.primaryRowUUIDString
                                 self.primaryRowUUIDString = self.secondaryRowUUIDString
