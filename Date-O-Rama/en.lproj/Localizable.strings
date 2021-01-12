@@ -146,5 +146,5 @@
 "CANNOT_GEOLOCATE" = "Sorry, but Date-O-Rama needs an Internet connection if you wish to choose a different location, because it needs to talk to Apple’s geolocation server to do so.  Please connect to the Internet.";
 "Show Events" = "Show Events";
 "HEADER_iCalendarEventCalendars" = "Event calendars (iCalendar/Calendar.app)";
-"Next event:" = "Next event:";
+"Next event today:" = "Next event today:";
 "Time to next day:" = "Time to next day:";

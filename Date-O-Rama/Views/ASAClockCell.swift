@@ -136,7 +136,7 @@ struct ASAClockCellBody:  View {
                     let nextEvent = processedRow.events.nextEvent(now: now)
                     if nextEvent != nil {
                         HStack {
-                            Text("Next event:")
+                            Text("Next event today:")
                                 .font(.subheadlineMonospacedDigit)
                             ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
                         } // HStack
