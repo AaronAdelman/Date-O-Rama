@@ -256,6 +256,7 @@ class ASARow: ASALocatedObject {
         temp.calendar = ASAAppleCalendar(calendarCode: .Gregorian)
         temp.localeIdentifier = ""
         temp.dateFormat = .full
+        temp.locationData = ASALocation.currentTimeZoneDefault
         return temp
     } // static var generic:  ASARow
 
