@@ -17,18 +17,14 @@ struct ASAClockCellText:  View {
         #if os(watchOS)
         Text(verbatim:  string)
             .font(font)
-            .minimumScaleFactor(0.5)
-            .lineLimit(1)
             .fixedSize(horizontal: false, vertical: true)
-            .allowsTightening(true)
+            .modifier(ASAScalable(lineLimit: 1))
         #else
         Text(verbatim:  string)
             .font(font)
-            .minimumScaleFactor(0.5)
             .multilineTextAlignment(.leading)
-            .lineLimit(lineLimit)
             .fixedSize(horizontal: false, vertical: true)
-            .allowsTightening(true)
+            .modifier(ASAScalable(lineLimit: lineLimit))
         #endif
     } // var body
 } // struct ASAClockCellText

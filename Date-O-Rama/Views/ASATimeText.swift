@@ -19,19 +19,16 @@ struct ASATimeText:  View {
     var body:  some View {
         #if os(watchOS)
         Text(verbatim:  verbatim)
-            .lineLimit(1)
             .font(timeFontSize)
             .foregroundColor(labelColor.grayIfPast(cutoffDate, forClock: forClock))
-            .allowsTightening(true)
-            .minimumScaleFactor(0.5)
+            .modifier(ASAScalable(lineLimit: 1))
         #else
         Text(verbatim:  verbatim)
-            .lineLimit(2)
             .frame(width:  timeWidth)
             .font(timeFontSize)
             .foregroundColor(labelColor.grayIfPast(cutoffDate, forClock: forClock))
-            .allowsTightening(true)
-            .minimumScaleFactor(0.5)
+            .modifier(ASAScalable(lineLimit: 2))
+
         #endif
     } // var body
 } // struct ASATimesText

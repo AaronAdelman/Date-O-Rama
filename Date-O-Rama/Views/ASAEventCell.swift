@@ -60,9 +60,7 @@ struct ASAEventCell:  View {
 
             VStack(alignment: .leading) {
                 Text(event.title).font(.callout).bold().foregroundColor(labelColor)
-                    .allowsTightening(true)
-                    .minimumScaleFactor(0.5)
-                    .lineLimit(1)
+                    .modifier(ASAScalable(lineLimit: 1))
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
 
@@ -84,16 +82,13 @@ struct ASAEventCell:  View {
             ASAEventColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
+                let LINE_LIMIT = 3
                 if self.compact {
                     Text(event.title).font(.callout).bold().foregroundColor(labelColor)
-                        .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
-                        .lineLimit(3)
+                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 } else {
                     Text(event.title).font(.headline).foregroundColor(labelColor)
-                        .allowsTightening(true)
-                        .minimumScaleFactor(0.5)
-                        .lineLimit(3)
+                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
@@ -121,9 +116,7 @@ struct ASAEventCellCalendarTitle:  View {
         let title: String = forClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
         Text(title
         ).font(.subheadlineMonospacedDigit).foregroundColor(color)
-        .allowsTightening(true)
-        .minimumScaleFactor(0.5)
-        .lineLimit(LINE_LIMIT)
+        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
 }
 

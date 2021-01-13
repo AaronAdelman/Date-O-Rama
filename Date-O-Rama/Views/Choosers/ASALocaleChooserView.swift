@@ -41,7 +41,7 @@ fileprivate extension Int {
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
-    @ObservedObject var row:  ASALocatedObject
+    @ObservedObject var row:  ASARow
     
     @State var tempLocaleIdentifier:  String
     
@@ -89,7 +89,7 @@ struct ASALocaleChooserView: View {
             }
             
             ForEach(self.locales(option: selection)) { item in
-                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier)
+                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier, row: row)
             } // ForEach(localeData.records)
         } // List
         .navigationBarItems(trailing:
@@ -114,11 +114,21 @@ struct ASALocaleCell: View {
     let localizedLocaleString:  String
     
     @Binding var tempLocaleIdentifier:  String
+
+    @ObservedObject var row:  ASARow
     
     var body: some View {
         HStack {
             Text(verbatim: localeString.localeCountryCodeFlag)
             Text(verbatim:  localizedLocaleString)
+            VStack(alignment: .leading) {
+                Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: row.dateFormat, timeFormat: .none, locationData: row.locationData))
+                    .foregroundColor(Color(UIColor.secondaryLabel))
+                    .modifier(ASAScalable(lineLimit: 1))
+                Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: row.timeFormat, locationData: row.locationData))
+                    .foregroundColor(Color(UIColor.secondaryLabel))
+                    .modifier(ASAScalable(lineLimit: 1))
+            }
             Spacer()
             if localeString == self.tempLocaleIdentifier {
                 ASACheckmarkSymbol()
