@@ -113,22 +113,14 @@ struct ASAClockCellBody:  View {
             #if os(watchOS)
             #else
             if processedRow.events.count > 0 && !forComplications {
-                HStack {
-                    Toggle(isOn: $shouldShowEvents) {
-                        Text("Show Events")
-                            .font(.subheadlineMonospacedDigit)
-                    }
-                    .padding(EdgeInsets(top: 1.0, leading: 4.0, bottom: 1.0, trailing: 1.0))
-                    .overlay(
-                        Capsule()
-                            .stroke(Color("toggleBorder"), lineWidth: 1.0)
-                    )
-                    #if os(watchOS)
-                    #else
-                    Spacer()
-                        .frame(width:  128.0)
-                    #endif
-                } // HStack
+                let toggleBorderColor: Color = Color("toggleBorder")
+
+                Toggle(isOn: $shouldShowEvents) {
+                    Text("Show Events")
+                        .font(.subheadlineMonospacedDigit)
+                }
+                .frame(maxWidth:  150.0)
+                .modifier(ASACapsuleBorder(topInset: 1.0, leadingInset: 4.0, bottomInset: 1.0, trailingInset: 1.0, color: toggleBorderColor, width: 1.0))
 
                 if shouldShowEvents {
                     ASAClockEventsForEach(processedRow: processedRow)

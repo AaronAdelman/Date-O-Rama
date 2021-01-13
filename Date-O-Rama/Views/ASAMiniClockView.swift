@@ -31,13 +31,9 @@ struct ASAMiniClockView:  View {
     var body: some View {
         if processedRow.calendarType == .JulianDay {
             ProgressView(value: progress())
-                .accentColor(Color("julianDayForeground"))
+                .foregroundColor(Color("julianDayForeground"))
                 .frame(maxWidth:  julianDayWidth)
-                .padding(EdgeInsets(top: 1.0, leading: 1.0, bottom: 1.0, trailing: 1.0))
-                .overlay(
-                    Capsule()
-                        .stroke(Color("julianDayBorder"), lineWidth: 1.0)
-                )
+                .modifier(ASACapsuleBorder(topInset: 1.0, leadingInset: 1.0, bottomInset: 1.0, trailingInset: 1.0, color: Color("julianDayForeground"), width: 1.0))
         } else {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
         }
