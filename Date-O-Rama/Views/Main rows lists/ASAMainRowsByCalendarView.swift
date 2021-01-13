@@ -50,13 +50,7 @@ struct ASAMainRowsByCalendarSubview:  View {
         ForEach(self.keys, id: \.self) {
             key
             in
-            Section(header:  HStack {
-                        #if os(watchOS)
-                        #else
-                        ASACalendarSymbol()
-                        #endif
-                        Text(verbatim: "\(key)").font(Font.headlineMonospacedDigit)
-                            .minimumScaleFactor(0.5).lineLimit(1)                }) {
+            Section(header: Text(verbatim: key).font(Font.headlineMonospacedDigit)) {
                 ForEach(self.processedRowsByCalendar[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in

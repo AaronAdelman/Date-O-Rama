@@ -180,13 +180,7 @@ struct ASAClockMainSubcell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             if shouldShowCalendar {
-                HStack {
-                    #if os(watchOS)
-                    #else
-                    ASACalendarSymbol()
-                    #endif
-                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
-                }
+                ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
             }
 
             if canSplitTimeFromDate {
