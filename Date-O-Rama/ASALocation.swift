@@ -167,7 +167,19 @@ fileprivate func localityAndAdministrativeArea(name:  String) -> (String, String
 } // fileprivate func localityAndAdministrativeArea(name:  String) -> (String, String?)
 
 extension ASALocation {
+    static var cachedCurrentTimeZoneDefaultIdentifier:  String?
+    static var cachedCurrentTimeZoneDefaultLocation:  ASALocation?
+
     static var currentTimeZoneDefault:  ASALocation {
+        let currentTimeZone: TimeZone = TimeZone.current
+        let currentTimeZoneIdentifier = currentTimeZone.identifier
+        if cachedCurrentTimeZoneDefaultIdentifier != nil && cachedCurrentTimeZoneDefaultLocation != nil {
+            if currentTimeZoneIdentifier == cachedCurrentTimeZoneDefaultIdentifier! {
+                // Used cached info
+                return cachedCurrentTimeZoneDefaultLocation!
+            }
+        }
+
         do {
             let fileURL = Bundle.main.url(forResource:"TimeZones", withExtension: "txt")
             if fileURL == nil {
@@ -178,11 +190,7 @@ extension ASALocation {
             let newJSONDecoder = JSONDecoder()
 
             let timeZoneDatabase = try newJSONDecoder.decode(ASATimeZoneDatabase.self, from: jsonData)
-//            for entry in timeZoneDatabase.entries {
-//                debugPrint(#file, #function,  entry, localityAndAdministrativeArea(name: entry.name), countryName(countryCode: entry.ISOCountryCode ?? "N/A") as Any)
-//            }
-            let currentTimeZone: TimeZone = TimeZone.current
-            let entry:  ASATimeZoneEntry? = timeZoneDatabase.entries.first(where: { $0.name == currentTimeZone.identifier })
+            let entry:  ASATimeZoneEntry? = timeZoneDatabase.entries.first(where: { $0.name == currentTimeZoneIdentifier })
 
             if entry == nil {
                 return ASALocation.NullIsland
@@ -195,7 +203,13 @@ extension ASALocation {
             let latitude: CLLocationDegrees = entry!.latitude
             let longitude: CLLocationDegrees = entry!.longitude
 
-            return ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, ISOCountryCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
+            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, ISOCountryCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
+
+            // Store result in cache
+            ASALocation.cachedCurrentTimeZoneDefaultIdentifier = currentTimeZoneIdentifier
+            ASALocation.cachedCurrentTimeZoneDefaultLocation = result
+
+            return result
         } catch {
             debugPrint(#file, #function, error)
             return ASALocation.NullIsland
