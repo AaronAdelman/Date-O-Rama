@@ -22,7 +22,7 @@ enum ASATimeFormat:  String {
 } // enum ASATimeFormat
 
 extension ASATimeFormat {
-    func localizedItemName() -> String {
+    var localizedItemName: String {
         var unlocalizedString = ""
         switch self {
 //        case .short:
@@ -47,7 +47,7 @@ extension ASATimeFormat {
             unlocalizedString = "ITEM_hexadecimal"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
-    } // func localizedItemName() -> String
+    } // var localizedItemName
 } // extension ASATimeFormat
 
 extension ASATimeFormat {

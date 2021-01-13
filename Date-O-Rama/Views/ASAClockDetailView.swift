@@ -118,7 +118,7 @@ struct ASAClockDetailEditingSection:  View {
             }
             if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {
                 NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempTimeFormat: selectedRow.timeFormat, calendarCode: selectedRow.calendar.calendarCode)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName())
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName)
                 }
             }
         } // Section

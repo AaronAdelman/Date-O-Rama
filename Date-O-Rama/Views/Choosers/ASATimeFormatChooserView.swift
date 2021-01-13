@@ -24,7 +24,7 @@ struct ASATimeFormatChooserView: View {
                 ForEach(row.calendar.supportedTimeFormats, id: \.self) {
                     format
                     in
-                    ASATimeFormatCell(timeFormat: format, selectedTimeFormat: self.$tempTimeFormat)
+                    ASATimeFormatCell(timeFormat: format, selectedTimeFormat: self.$tempTimeFormat, row: row)
                 }
             } // Section
         } // List
@@ -54,9 +54,15 @@ struct ASATimeFormatCell: View {
     
     @Binding var selectedTimeFormat:  ASATimeFormat
 
+    @ObservedObject var row:  ASARow
+
     var body: some View {
         HStack {
-            Text(verbatim:  timeFormat.localizedItemName())
+            Text(verbatim:  timeFormat.localizedItemName)
+            Spacer()
+                .frame(width: 20.0)
+            Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: row.locationData))
+                .foregroundColor(Color(UIColor.secondaryLabel))
             Spacer()
             if timeFormat == self.selectedTimeFormat {
                 ASACheckmarkSymbol()
