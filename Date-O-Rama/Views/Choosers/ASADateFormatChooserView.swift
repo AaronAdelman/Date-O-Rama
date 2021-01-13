@@ -34,7 +34,7 @@ struct ASADateFormatChooserView: View {
                 ForEach(dateFormats(), id: \.self) {
                     format
                     in
-                    ASADateFormatCell(dateFormat: format, selectedDateFormat: self.$tempDateFormat)
+                    ASADateFormatCell(dateFormat: format, selectedDateFormat: self.$tempDateFormat, row: row)
                 }
             } // Section
         } // List
@@ -63,10 +63,17 @@ struct ASADateFormatCell: View {
     let dateFormat: ASADateFormat
     
     @Binding var selectedDateFormat:  ASADateFormat
+
+    @ObservedObject var row:  ASARow
     
     var body: some View {
         HStack {
             Text(verbatim:  dateFormat.localizedItemName())
+            Spacer()
+                .frame(width: 20.0)
+            Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: row.locationData))
+                .foregroundColor(Color(UIColor.secondaryLabel))
+
             Spacer()
             if dateFormat == self.selectedDateFormat {
                 ASACheckmarkSymbol()
