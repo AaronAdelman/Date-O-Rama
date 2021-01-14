@@ -49,11 +49,9 @@ class Date_O_RamaTests: XCTestCase {
         let LOCALE_IDENTIFIER = "en_US"
         let DATE_FORMAT       = ASADateFormat.full
         let TIME_FORMAT       = ASATimeFormat.medium
-        let LOCATION          = CLLocation(latitude: 0.0, longitude: 0.0)
-        let TIME_ZONE         = TimeZone.autoupdatingCurrent
 
         let calendar = ASACalendarFactory.calendar(code: code)
-        let result = calendar?.dateTimeString(now: testDate, localeIdentifier: LOCALE_IDENTIFIER, dateFormat: DATE_FORMAT, timeFormat: TIME_FORMAT, location: LOCATION, timeZone: TIME_ZONE)
+        let result = calendar?.dateTimeString(now: testDate, localeIdentifier: LOCALE_IDENTIFIER, dateFormat: DATE_FORMAT, timeFormat: TIME_FORMAT, locationData: ASALocation.NullIsland)
         XCTAssert(result == expectedResult)
     } // func examineJulianDayCalendar(code:  ASACalendarCode, expectedResult:  String)
 

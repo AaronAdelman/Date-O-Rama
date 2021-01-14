@@ -54,13 +54,14 @@ struct ASASolarEvent:  Hashable {
 
 
 extension Date {
+    fileprivate static var solarEventsGregorianCalendar = Calendar(identifier: .gregorian)
+
     func solarEvents(latitude: CLLocationDegrees, longitude: CLLocationDegrees, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
         // 1. first calculate the day of the year
 
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = timeZone
+        Date.solarEventsGregorianCalendar.timeZone = timeZone
 
-        let N:  Int = calendar.ordinality(of: .day, in: .year, for: self)!
+        let N:  Int = Date.solarEventsGregorianCalendar.ordinality(of: .day, in: .year, for: self)!
         //        debugPrint(#file, #function, "N:", N)
 
         // 2. convert the longitude to hour value and calculate an approximate time
@@ -78,7 +79,7 @@ extension Date {
             var tempResult = solarEventsContinued(t: event.rising ? t_rising : t_setting, latitude: latitude, degreesBelowHorizon: event.degreesBelowHorizon, risingDesired: event.rising, date: self, lngHour: lngHour, offset: event.offset, timeZone:  timeZone)
             //            debugPrint(#file, #function, "tempResult:", tempResult as Any)
             if !event.rising && tempResult != nil {
-                let midnightToday = calendar.startOfDay(for:self)
+                let midnightToday = Date.solarEventsGregorianCalendar.startOfDay(for:self)
                 //                debugPrint(#file, #function, "midnightToday:", midnightToday)
                 let noon = midnightToday.addingTimeInterval(12 * Date.SECONDS_PER_HOUR)
                 //                debugPrint(#file, #function, "noon:", noon)
