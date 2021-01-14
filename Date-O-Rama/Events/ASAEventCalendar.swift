@@ -20,7 +20,7 @@ class ASAEventCalendar {
         (self.eventsFile, self.error) = ASAEventsFile.builtIn(fileName: fileName)
     } // init(fileName:  String)
 
-    func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
+    func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, calendar:  ASACalendar) -> Array<ASAEvent> {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
 
         if self.eventsFile == nil {
@@ -28,7 +28,7 @@ class ASAEventCalendar {
             return []
         }
 
-        let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode)
+//        let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode)
         var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
         if eventsFile!.otherCalendarCodes != nil {
             for calendarCode in eventsFile!.otherCalendarCodes! {
@@ -41,9 +41,9 @@ class ASAEventCalendar {
         var result:  Array<ASAEvent> = []
         var oldNow = now
         repeat {
-            let startOfDay:  Date = (calendar?.startOfDay(for: now, locationData: locationData))!
-            let startOfNextDay:  Date = (calendar?.startOfNextDay(date: now, locationData: locationData))!
-            let temp = self.events(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar!, otherCalendars: otherCalendars, ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay, allDayEventsOnly: allDayEventsOnly)
+            let startOfDay:  Date = (calendar.startOfDay(for: now, locationData: locationData))
+            let startOfNextDay:  Date = (calendar.startOfNextDay(date: now, locationData: locationData))
+            let temp = self.events(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, ISOCountryCode: ISOCountryCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             for event in temp {
                 if event.relevant(startDate:  startDate, endDate:  endDate) && !result.contains(event) {
                     result.append(event)
@@ -238,7 +238,7 @@ class ASAEventCalendar {
         return true
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification) -> Bool
     
-    func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date, allDayEventsOnly:  Bool) -> Array<ASAEvent> {
+    func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> Array<ASAEvent> {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -275,10 +275,6 @@ class ASAEventCalendar {
         var result:  Array<ASAEvent> = []
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)
-
-            if allDayEventsOnly && !eventSpecification.isAllDay {
-                continue
-            }
 
             var appropriateCalendar:  ASACalendar = calendar
             if eventSpecification.calendarCode != nil {
