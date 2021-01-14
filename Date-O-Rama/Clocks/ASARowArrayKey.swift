@@ -18,7 +18,7 @@ enum ASARowArrayKey:  String {
 } // enum ASARowArrayKeys:  String
 
 extension ASARowArrayKey {
-    func minimumNumberOfRows() -> Int {
+    var minimumNumberOfRows:  Int {
         switch self {
         case .app:
             return 1
@@ -38,9 +38,9 @@ extension ASARowArrayKey {
         case .oneLineSmall:
             return 1
         } // switch self
-    } // func minimumNumberOfRows() -> Int
+    } // var minimumNumberOfRows
     
-    static func complicationSections() -> Array<ASARowArrayKey> {
+    static var complicationSections:  Array<ASARowArrayKey> {
         return [
             .threeLineLarge,
             .twoLineSmall,
@@ -48,5 +48,5 @@ extension ASARowArrayKey {
             .oneLineLarge,
             .oneLineSmall
         ]
-    } // static func complicationSections() -> Array<ASARowArrayKey>
+    } // static var complicationSections
 } // extension ASARowArrayKey

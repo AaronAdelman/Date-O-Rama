@@ -41,7 +41,7 @@ struct ASAComplicationClocksView: View {
             VStack {
                 Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
-                    ForEach(ASARowArrayKey.complicationSections(), id:  \.self) {complicationKey in
+                    ForEach(ASARowArrayKey.complicationSections, id:  \.self) {complicationKey in
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                                 NavigationLink(

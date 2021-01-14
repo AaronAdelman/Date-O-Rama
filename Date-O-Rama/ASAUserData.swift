@@ -110,6 +110,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         try FileManager.default.startDownloadingUbiquitousItem(at: URL(fileURLWithPath: possibilityPath))
         } catch {
             debugPrint(#file, #function, "startDownloadingUbiquitousItem error:", error)
+            return nil
         }
         let exists = FileManager.default.fileExists(atPath: possibilityPath)
         if exists {
@@ -159,9 +160,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // switch key
     } // func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
 
-    func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+    func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow> {        
         var result:  Array<ASARow> = []
-        for _ in 1...key.minimumNumberOfRows() {
+        let n: Int = key.minimumNumberOfRows
+        for _ in 1...n {
             result.append(ASARow.generic)
         }
         return result
@@ -202,34 +204,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
         }
         
-//        if preferenceFileExists(code: .events) {
-//            let path = self.preferencesFilePath(code: .events)
-//            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
-//            do {
-//                #if os(watchOS)
-//                let data = defaults.object(forKey:  ASAPreferencesFileCode.events.suffix) as! Data
-//                #else
-//                let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-//                #endif
-//                //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
-//                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
-//                //                debugPrint(#file, #function, jsonResult)
-//                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
-//                    // do stuff
-//                    //                    debugPrint(#file, #function, jsonResult)
-////                    self.ASAEventCalendars = ASAUserData.ASASEventCalendarArray(dictionary: jsonResult)
-//                    self.EKCalendarTitles = jsonResult[EXTERNAL_EVENT_CALENDARS_KEY] as! Array<String>
-//                    
-//                    genericSuccess = true
-//                }
-//            } catch {
-//                // handle error
-//                debugPrint(#file, #function, error)
-//            }
-//        } else {
-//            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .events)))” does not exist")
-//        }
-        
         if #available(iOS 13.0, watchOS 6.0, *) {
             if preferenceFileExists(code: .complications) {
                 let path = self.preferencesFilePath(code: .complications)
@@ -258,13 +232,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error)
                 }
             } else {
-                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
+                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .complications)))” does not exist")
             }
         }
         
         if !genericSuccess {
             mainRows               = self.emptyRowArray(key: .app)
-//            ASAEventCalendars = []
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
@@ -417,7 +390,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
 
         let numberOfRows = tempArray.count
-        let minimumNumberOfRows = key.minimumNumberOfRows()
+        let minimumNumberOfRows = key.minimumNumberOfRows
         if numberOfRows < minimumNumberOfRows {
 
             tempArray += Array.init(repeatElement(ASARow.generic, count: minimumNumberOfRows - numberOfRows))
