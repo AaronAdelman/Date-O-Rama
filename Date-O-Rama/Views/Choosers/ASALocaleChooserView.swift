@@ -121,11 +121,17 @@ struct ASALocaleCell: View {
         HStack {
             Text(verbatim: localeString.localeCountryCodeFlag)
             Text(verbatim:  localizedLocaleString)
-            VStack(alignment: .leading) {
-                Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: row.dateFormat, timeFormat: .none, locationData: row.locationData))
-                    .foregroundColor(Color(UIColor.secondaryLabel))
-                    .modifier(ASAScalable(lineLimit: 1))
-                Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: row.timeFormat, locationData: row.locationData))
+            if row.calendar.canSplitTimeFromDate {
+                VStack(alignment: .leading) {
+                    Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: row.dateFormat, timeFormat: .none, locationData: row.locationData))
+                        .foregroundColor(Color(UIColor.secondaryLabel))
+                        .modifier(ASAScalable(lineLimit: 1))
+                    Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: row.timeFormat, locationData: row.locationData))
+                        .foregroundColor(Color(UIColor.secondaryLabel))
+                        .modifier(ASAScalable(lineLimit: 1))
+                } // VStack
+            } else {
+                Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: row.dateFormat, timeFormat: row.timeFormat, locationData: row.locationData))
                     .foregroundColor(Color(UIColor.secondaryLabel))
                     .modifier(ASAScalable(lineLimit: 1))
             }
