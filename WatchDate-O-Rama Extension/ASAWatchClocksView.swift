@@ -17,10 +17,6 @@ struct ASAWatchClocksView: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
-    let INSET = 0.0 as CGFloat
-
-    @State var isNavBarHidden:  Bool = false
-
     var body: some View {
         NavigationView {
             Form {

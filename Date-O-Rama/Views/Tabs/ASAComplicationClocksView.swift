@@ -12,8 +12,7 @@ struct ASAComplicationClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    let INSET = 25.0 as CGFloat
-    @State var isNavBarHidden:  Bool = false
+    @State var isNavBarHidden:  Bool = true
 
     fileprivate func saveUserData() {
         self.userData.savePreferences(code: .complications)

@@ -22,9 +22,7 @@ struct ASAClocksView: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    let INSET = 0.0 as CGFloat
-
-    @State var isNavBarHidden:  Bool = false
+    @State var isNavBarHidden:  Bool = true
 
     @State private var showingPreferences:  Bool = false
 

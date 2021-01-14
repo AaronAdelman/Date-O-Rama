@@ -70,7 +70,7 @@ struct ASAEventsView: View {
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
 
-    @State var isNavBarHidden:  Bool = false
+    @State var isNavBarHidden:  Bool = true
     
     @State private var action:  EKEventEditViewAction?
     @State private var showingEventEditView = false
