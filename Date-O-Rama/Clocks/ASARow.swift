@@ -284,7 +284,12 @@ class ASARow: ASALocatedObject {
         } // for eventCalendar in self.builtInEventCalendars
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
-            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
+            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool
+            in
+            if e1.isAllDay && !e2.isAllDay {
+                return true
+            }
+
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
 
