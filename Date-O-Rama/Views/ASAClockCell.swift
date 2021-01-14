@@ -139,11 +139,19 @@ struct ASAClockCellBody:  View {
                 } else {
                     let nextEvent = processedRow.events.nextEvent(now: now)
                     if nextEvent != nil {
-                        HStack {
-                            Text("Next event today:")
-                                .font(.subheadlineMonospacedDigit)
-                            ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
-                        } // HStack
+                        if compact {
+                            VStack(alignment: .leading) {
+                                Text("Next event today:")
+                                    .font(.subheadlineMonospacedDigit)
+                                ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
+                            } // VStack
+                        } else {
+                            HStack {
+                                Text("Next event today:")
+                                    .font(.subheadlineMonospacedDigit)
+                                ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
+                            } // HStack
+                        }
                     }
                 }
             }
