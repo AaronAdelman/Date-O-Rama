@@ -14,10 +14,20 @@ class ASAEventCalendar {
     var fileName:  String
     var eventsFile:  ASAEventsFile?
     var error:  Error?
+    var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
+
 
     init(fileName:  String) {
         self.fileName = fileName
         (self.eventsFile, self.error) = ASAEventsFile.builtIn(fileName: fileName)
+
+        if eventsFile != nil {
+            if eventsFile!.otherCalendarCodes != nil {
+                for calendarCode in eventsFile!.otherCalendarCodes! {
+                    otherCalendars[calendarCode] = ASACalendarFactory.calendar(code: calendarCode)
+                } // for calendarCode in eventsFile!.otherCalendarCodes!
+            }
+        }
     } // init(fileName:  String)
 
     func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, ISOCountryCode:  String?, requestedLocaleIdentifier:  String, calendar:  ASACalendar) -> Array<ASAEvent> {
@@ -29,12 +39,12 @@ class ASAEventCalendar {
         }
 
 //        let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode)
-        var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
-        if eventsFile!.otherCalendarCodes != nil {
-            for calendarCode in eventsFile!.otherCalendarCodes! {
-                otherCalendars[calendarCode] = ASACalendarFactory.calendar(code: calendarCode)
-            } // for calendarCode in eventsFile!.otherCalendarCodes!
-        }
+//        var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
+//        if eventsFile!.otherCalendarCodes != nil {
+//            for calendarCode in eventsFile!.otherCalendarCodes! {
+//                otherCalendars[calendarCode] = ASACalendarFactory.calendar(code: calendarCode)
+//            } // for calendarCode in eventsFile!.otherCalendarCodes!
+//        }
 
         let timeZone: TimeZone = locationData.timeZone 
         var now:  Date = startDate.oneDayBefore
