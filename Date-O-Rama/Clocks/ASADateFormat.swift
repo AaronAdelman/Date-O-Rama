@@ -31,7 +31,7 @@ enum ASADateFormat:  String {
 } // enum ASADateFormat
 
 extension ASADateFormat {
-    func localizedItemName() -> String {
+    var localizedItemName:  String {
         var unlocalizedString = ""
         switch self {
         case .short:
@@ -72,7 +72,7 @@ extension ASADateFormat {
             unlocalizedString = "ITEM_FullWithoutYear"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
-    } // func localizedItemName() -> String
+    } // var localizedItemName
 } // extension ASADateFormat
 
 extension ASADateFormat {

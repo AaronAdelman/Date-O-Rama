@@ -113,7 +113,7 @@ struct ASAClockDetailEditingSection:  View {
             }
             if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {
                 NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempDateFormat: selectedRow.dateFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName())
+                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName)
                 }
             }
             if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {

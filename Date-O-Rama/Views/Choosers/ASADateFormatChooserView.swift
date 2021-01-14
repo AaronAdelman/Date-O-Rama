@@ -68,7 +68,7 @@ struct ASADateFormatCell: View {
     
     var body: some View {
         HStack {
-            Text(verbatim:  dateFormat.localizedItemName())
+            Text(verbatim:  dateFormat.localizedItemName)
             Spacer()
                 .frame(width: 20.0)
             Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: row.locationData))
