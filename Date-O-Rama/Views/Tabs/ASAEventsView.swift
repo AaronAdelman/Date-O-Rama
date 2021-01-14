@@ -38,6 +38,10 @@ struct ASAEventsView: View {
     } // var primaryRow:  ASARow
     var secondaryRow:  ASARow {
         get {
+            if self.userData.mainRows.count < 2 {
+                return ASARow.generic
+            }
+
             let result: ASARow = secondaryRowUUIDString.row(backupIndex: 1)
             self.secondaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
@@ -65,18 +69,7 @@ struct ASAEventsView: View {
 
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
-    
-//    var timeWidth:  CGFloat {
-//        get {
-//            if self.sizeClass! == .compact {
-//                return  90.00
-//            } else {
-//                return 120.00
-//            }
-//        } // get
-//    } // var timeWidth
-//    let TIME_FONT_SIZE = Font.subheadlineMonospacedDigit
-    
+
     @State var isNavBarHidden:  Bool = false
     
     @State private var action:  EKEventEditViewAction?
