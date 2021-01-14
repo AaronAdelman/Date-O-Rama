@@ -250,15 +250,6 @@ class ASARow: ASALocatedObject {
         newRow.startingUp = false
         return newRow
     } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASARow
-    
-    static var generic:  ASARow {
-        let temp = ASARow()
-        temp.calendar = ASAAppleCalendar(calendarCode: .Gregorian)
-        temp.localeIdentifier = ""
-        temp.dateFormat = .full
-        temp.locationData = ASALocation.currentTimeZoneDefault
-        return temp
-    } // static var generic:  ASARow
 
 
     // MARK:  -
@@ -370,4 +361,22 @@ extension ASARow {
     var daysPerWeek:  Int? {
         return self.calendar.daysPerWeek
     }
+} // extension ASARow
+
+
+// MARK:  -
+
+extension ASARow {
+    static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASARow {
+        let temp = ASARow()
+        temp.calendar = ASAAppleCalendar(calendarCode: calendarCode)
+        temp.localeIdentifier = ""
+        temp.dateFormat = dateFormat
+        temp.locationData = ASALocation.currentTimeZoneDefault
+        return temp
+    } // static func generic(calendarCode:  ASACalendarCode) ->  ASARow
+
+    static var generic:  ASARow {
+        return ASARow.generic(calendarCode: .Gregorian, dateFormat: .full)
+    } // static var generic:  ASARow
 } // extension ASARow

@@ -160,13 +160,38 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // switch key
     } // func rowArray(key:  ASARowArrayKey) -> Array<ASARow>
 
-    func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow> {        
-        var result:  Array<ASARow> = []
-        let n: Int = key.minimumNumberOfRows
-        for _ in 1...n {
-            result.append(ASARow.generic)
-        }
-        return result
+    func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow> {
+        switch key {
+        case .app:
+            return [ASARow.generic]
+
+        case .threeLineLarge:
+            return [
+                ASARow.generic(calendarCode: .Gregorian, dateFormat: .full),
+                ASARow.generic(calendarCode: .HebrewGRA, dateFormat: .full),
+                ASARow.generic(calendarCode: .IslamicSolar, dateFormat: .full)
+            ]
+
+        case .twoLineSmall:
+            return [
+                ASARow.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekday),
+                ASARow.generic(calendarCode: .Gregorian, dateFormat:  .dayOfMonth)
+            ]
+
+        case .twoLineLarge:
+            return [
+                ASARow.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekdayWithDayOfMonth),
+                ASARow.generic(calendarCode: .HebrewGRA, dateFormat:  .abbreviatedWeekdayWithDayOfMonth)
+            ]
+
+        case .oneLineSmall:
+            return [                ASARow.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
+            ]
+
+        case .oneLineLarge:
+            return [                ASARow.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
+            ]
+        } // switch key
     } // func emptyRowArray(key:  ASARowArrayKey) -> Array<ASARow>
 
     fileprivate func loadPreferences() {
