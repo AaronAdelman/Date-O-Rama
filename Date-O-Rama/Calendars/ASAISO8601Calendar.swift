@@ -148,9 +148,8 @@ class ASAISO8601Calendar:  ASACalendar {
             }
         } // for component in components
         
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = locationData.timeZone 
-        let ApplesDateComponents = calendar.dateComponents(ApplesComponents, from: date)
+        self.ApplesCalendar.timeZone = locationData.timeZone
+        let ApplesDateComponents = self.ApplesCalendar.dateComponents(ApplesComponents, from: date)
         return ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
     

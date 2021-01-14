@@ -400,35 +400,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         return tempArray
     } // class func rowArray(key:  ASARowArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow>
 
-//    private class func ASASEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAEventCalendar> {
-//        if dictionary == nil {
-//            return []
-//        }
-//
-//        let temp = dictionary![INTERNAL_EVENT_CALENDARS_KEY] as! Array<Dictionary<String, Any>>?
-//        var tempArray:  Array<ASAEventCalendar> = []
-//
-//        if temp != nil {
-//            for dictionary in temp! {
-//                let eventCalendar = ASAEventCalendar.newInternalEventCalendar(dictionary: dictionary)
-//                if eventCalendar != nil {
-//                    tempArray.append(eventCalendar!)
-//                }
-//            } // for dictionary in temp!
-//        }
-//
-//        return tempArray
-//    } // class func internalEventCalendarArray(dictionary:  Dictionary<String, Any>?) -> Array<ASAInternalEventCalendar>
-
-//    private func processedASAEventCalendarArray(ASAEventCalendarArray:  Array<ASAEventCalendar>) -> Array<Dictionary<String, Any>> {
-//        var temp:  Array<Dictionary<String, Any>> = []
-//        for eventCalendar in self.ASAEventCalendars {
-//            let dictionary = eventCalendar.dictionary()
-//            temp.append(dictionary)
-//        } //for eventCalendar in self.internalEventCalendars
-//        return temp
-//    } // func processedInternalEventCalendarArray(internalEventCalendarArray:  Array<ASAInternalEventCalendar>) -> Array<Dictionary<String, Any>>
-
 
     // MARK: - NSFilePresenter
 
