@@ -29,8 +29,6 @@
 		A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
 		A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
-		A523A3F725A7202F007CB54B /* ASACircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3F625A7202F007CB54B /* ASACircleSymbol.swift */; };
-		A523A3F825A7202F007CB54B /* ASACircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3F625A7202F007CB54B /* ASACircleSymbol.swift */; };
 		A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A40325A72889007CB54B /* ASAWatchEventsList.swift */; };
 		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
 		A533798124B2333500340C0B /* Solar events.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Solar events.json */; };
@@ -272,7 +270,6 @@
 		A51A083A245B079A00135AA6 /* ASALocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationCell.swift; sourceTree = "<group>"; };
 		A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkSymbol.swift; sourceTree = "<group>"; };
 		A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkCircleSymbol.swift; sourceTree = "<group>"; };
-		A523A3F625A7202F007CB54B /* ASACircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACircleSymbol.swift; sourceTree = "<group>"; };
 		A523A40325A72889007CB54B /* ASAWatchEventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchEventsList.swift; sourceTree = "<group>"; };
 		A525622B24556169009C2920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -433,7 +430,6 @@
 			children = (
 				A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */,
 				A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */,
-				A523A3F625A7202F007CB54B /* ASACircleSymbol.swift */,
 				A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */,
 			);
 			path = Symbols;
@@ -989,7 +985,6 @@
 				A5B6D01D25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */,
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
-				A523A3F825A7202F007CB54B /* ASACircleSymbol.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */,
 				A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */,
 				A566F4812483D7CF000A05B5 /* ASAEvent.swift in Sources */,
@@ -1096,7 +1091,6 @@
 				A5B816372541A30900E309E0 /* ASAMainRowsByFormattedDateView.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
-				A523A3F725A7202F007CB54B /* ASACircleSymbol.swift in Sources */,
 				A57BCCBE247D8A700019C02C /* ASAEventCalendar.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,

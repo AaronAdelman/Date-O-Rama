@@ -208,12 +208,7 @@ struct ASABuiltInEventCalendarCell:  View {
         let eventFile = ASAEventCalendar(fileName: fileName)
 
         HStack {
-            if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
-                ASACheckmarkCircleSymbol()                    .foregroundColor(eventFile.color)
-            } else {
-                ASACircleSymbol()
-                    .foregroundColor(eventFile.color)
-            }
+            ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventFile.color)
             VStack {
                 Text(verbatim: eventFile.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
                 if eventFile.error != nil {
@@ -237,13 +232,8 @@ struct ASAICalendarEventCalendarCell:  View {
 
     var body: some View {
         HStack {
-            if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title) {
-                ASACheckmarkCircleSymbol()
-                    .foregroundColor(color)
-            } else {
-                ASACircleSymbol()
-                    .foregroundColor(color)
-            }
+            ASACheckmarkCircleSymbol(on: selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title))
+                .foregroundColor(color)
             Text(verbatim: NSLocalizedString(title, comment: "")).font(.headline)
         }
     }

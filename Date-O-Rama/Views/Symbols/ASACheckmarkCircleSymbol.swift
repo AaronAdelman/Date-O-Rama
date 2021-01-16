@@ -9,14 +9,22 @@
 import SwiftUI
 
 struct ASACheckmarkCircleSymbol:  View {
+    var on:  Bool
+
     var body:  some View {
-        Image(systemName: "checkmark.circle.fill")
-            .imageScale(.large)
+        let SCALE: Image.Scale = .large
+        if on {
+            Image(systemName: "checkmark.circle.fill")
+                .imageScale(SCALE)
+        } else {
+            Image(systemName: "circle")
+                .imageScale(SCALE)
+        }
     } // var body
 } // struct ASACheckmarkCircleSymbol
 
 struct ASACheckmarkCircleSymbol_Previews: PreviewProvider {
     static var previews: some View {
-        ASACheckmarkCircleSymbol()
+        ASACheckmarkCircleSymbol(on: true)
     }
 }
