@@ -9,6 +9,33 @@
 import SwiftUI
 import UIKit
 
+enum ASAClockCellEventVisibility:  String, CaseIterable {
+    case none
+    case allDay
+    case next
+    case future
+    case all
+
+    var emoji:  String {
+        switch self {
+        case .none:
+            return "0️⃣"
+
+        case .allDay:
+            return "📅"
+
+        case .next:
+            return "🔽"
+
+        case .future:
+            return "⬇️"
+
+        case .all:
+            return "↕️"
+        }
+    }
+}
+
 struct ASAClockCell: View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
@@ -51,6 +78,13 @@ struct ASAClockCell: View {
 
 // MARK: -
 
+struct ASANextEventTitle:  View {
+    var body: some View {
+        Text("Next event today:")
+            .font(.subheadlineMonospacedDigit)
+    }
+}
+
 struct ASAClockCellBody:  View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
@@ -65,7 +99,7 @@ struct ASAClockCellBody:  View {
 
     var forComplications:  Bool
 
-    @State var shouldShowEvents:  Bool = false
+    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
 
     #if os(watchOS)
     let compact = true
@@ -87,8 +121,6 @@ struct ASAClockCellBody:  View {
         temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
         return temp
     } // func numberFormatter() -> NumberFormatter
-
-    @State private var showingEvents:  Bool = false
 
     var body: some View {
         VStack(alignment:  .leading) {
@@ -125,33 +157,24 @@ struct ASAClockCellBody:  View {
             #if os(watchOS)
             #else
             if processedRow.events.count > 0 && !forComplications {
-                let toggleBorderColor: Color = Color("toggleBorder")
+                Picker(selection: $shouldShowEvents, label: Text("Show Events")) {
+                    ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+                        possibility
+                        in
+                        Text(possibility.emoji)
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
 
-                Toggle(isOn: $shouldShowEvents) {
-                    Text("Show Events")
-                        .font(.subheadlineMonospacedDigit)
-                }
-                .frame(maxWidth:  150.0)
-                .modifier(ASACapsuleBorder(topInset: 1.0, leadingInset: 4.0, bottomInset: 1.0, trailingInset: 1.0, color: toggleBorderColor, width: 1.0))
-
-                if shouldShowEvents {
-                    ASAClockEventsForEach(processedRow: processedRow)
-                } else {
+                if shouldShowEvents == .all {
+                    ASAClockEventsForEach(processedRow: processedRow, visibility:  .all)
+                } else if shouldShowEvents == .allDay {
+                    ASAClockEventsForEach(processedRow: processedRow, visibility:  .allDay)
+                } else if shouldShowEvents == .future {
+                    ASAClockEventsForEach(processedRow: processedRow, visibility:  .future)
+                } else if shouldShowEvents == .next {
                     let nextEvent = processedRow.events.nextEvent(now: now)
                     if nextEvent != nil {
-                        if compact {
-                            VStack(alignment: .leading) {
-                                Text("Next event today:")
-                                    .font(.subheadlineMonospacedDigit)
-                                ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
-                            } // VStack
-                        } else {
-                            HStack {
-                                Text("Next event today:")
-                                    .font(.subheadlineMonospacedDigit)
-                                ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
-                            } // HStack
-                        }
+                        ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
                     }
                 }
             }
@@ -172,11 +195,25 @@ struct ASAClockCellBody:  View {
 
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedRow
+    var visibility:  ASAClockCellEventVisibility
 
     static let genericRow = ASARow.generic
 
     var body: some View {
-        ForEach(processedRow.events, id: \.eventIdentifier) {
+        let events:  Array<ASAEventCompatible> = {
+            switch self.visibility {
+            case .allDay:
+                return processedRow.events.allDayOnly
+
+            case .future:
+                return processedRow.events.futureOnly
+
+            default:
+                return processedRow.events
+            } // switch visibility
+        }()
+
+        ForEach(events, id: \.eventIdentifier) {
             event
             in
             ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)

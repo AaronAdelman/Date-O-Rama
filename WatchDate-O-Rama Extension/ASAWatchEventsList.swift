@@ -13,7 +13,7 @@ struct ASAWatchEventsList: View {
 
     var body: some View {
         List {
-            ASAClockEventsForEach(processedRow: processedRow)
+            ASAClockEventsForEach(processedRow: processedRow, visibility: .all)
         } // List
     } // var body
 } // struct ASAWatchEventsList

@@ -36,4 +36,16 @@ extension Array where Element == ASAEventCompatible {
         } // for event in self
         return selectedEvents
     } // var allDayOnly
+
+    var futureOnly:  Array<ASAEventCompatible> {
+        var selectedEvents:  Array<ASAEventCompatible> = []
+
+        let now = Date()
+        for event in self {
+            if event.startDate >= now {
+                selectedEvents.append(event)
+            }
+        } // for event in self
+        return selectedEvents
+    } //
 } // extension Array where Element == ASAEventCompatible
