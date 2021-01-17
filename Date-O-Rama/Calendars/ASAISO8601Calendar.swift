@@ -232,7 +232,7 @@ class ASAISO8601Calendar:  ASACalendar {
     public var transitionType:  ASATransitionType = .midnight
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        return ["1", "2", "3", "4", "5", "6", "7"]
+        return ["7", "1", "2", "3", "4", "5", "6"] // Yes, this comes off as stupid in Hebrew oand Arabic.
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 
     var usesISOTime:  Bool = true
