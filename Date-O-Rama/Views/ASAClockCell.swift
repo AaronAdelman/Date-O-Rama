@@ -98,13 +98,6 @@ struct ASAClockCell: View {
 
 // MARK: -
 
-struct ASANextEventTitle:  View {
-    var body: some View {
-        Text("Next event today:")
-            .font(.subheadlineMonospacedDigit)
-    }
-}
-
 struct ASAClockCellBody:  View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
