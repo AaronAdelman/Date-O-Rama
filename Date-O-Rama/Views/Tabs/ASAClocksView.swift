@@ -19,6 +19,7 @@ struct ASAClocksView: View {
 
     @AppStorage("mainRowsGroupingOption") var primaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
     @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byFormattedDate
+    @AppStorage("showTimeToNextDay") var shouldShowTimeToNextDay = true
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -58,20 +59,22 @@ struct ASAClocksView: View {
                             Text("Add clock")
                         }
                         .foregroundColor(.accentColor)
+
+                        Toggle("Show time to next day", isOn: $shouldShowTimeToNextDay)
                     } // DisclosureGroup
 
                     switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
-                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, forComplications:  false)
+                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications:  false)
 
                     case .byCalendar:
-                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, forComplications:  false)
+                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications:  false)
 
                     case .byPlaceName, .byCountry:
-                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
+                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications:  false)
 
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
+                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications:  false)
 
                     default:
                         EmptyView()

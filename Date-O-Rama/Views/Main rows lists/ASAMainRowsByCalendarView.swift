@@ -19,6 +19,7 @@ struct ASAMainRowsByCalendarView:  View {
     }
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
+    var shouldShowTimeToNextDay:  Bool
 
     var forComplications:  Bool
 
@@ -29,7 +30,7 @@ struct ASAMainRowsByCalendarView:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption, forComplications:  forComplications)
+        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications:  forComplications)
     } // var body
 } // struct ASAMainRowsByCalendarView
 
@@ -38,6 +39,7 @@ struct ASAMainRowsByCalendarSubview:  View {
     var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
+    var shouldShowTimeToNextDay:  Bool
     var forComplications:  Bool
 
     var keys:  Array<String> {
@@ -57,7 +59,7 @@ struct ASAMainRowsByCalendarSubview:  View {
 
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications: forComplications)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
@@ -69,7 +71,7 @@ struct ASAMainRowsByCalendarSubview:  View {
                                 self.userData.savePreferences(code: .clocks)
                             }
                     ) {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications: forComplications)
                     }
                     #endif
 
@@ -81,6 +83,6 @@ struct ASAMainRowsByCalendarSubview:  View {
 
 struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), forComplications: false)
+        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), shouldShowTimeToNextDay: true, forComplications: false)
     }
 }

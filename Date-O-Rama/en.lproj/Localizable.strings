@@ -148,3 +148,4 @@
 "HEADER_iCalendarEventCalendars" = "Event calendars (iCalendar/Calendar.app)";
 "Next event today:" = "Next event today:";
 "Time to next day:" = "Time to next day:";
+"Show time to next day" = "Show time to next day";

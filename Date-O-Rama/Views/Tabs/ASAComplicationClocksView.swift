@@ -51,7 +51,7 @@ struct ASAComplicationClocksView: View {
                                             self.saveUserData()
                                         }
                                 ) {
-                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, forComplications: true)
+                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, shouldShowTimeToNextDay: false, forComplications: true)
                                 }
                             }
                         }

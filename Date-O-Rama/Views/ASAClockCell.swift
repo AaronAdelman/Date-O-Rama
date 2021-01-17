@@ -46,25 +46,26 @@ struct ASAClockCell: View {
 
     var shouldShowTime:  Bool
     var shouldShowMiniCalendar:  Bool
+    var shouldShowTimeToNextDay:  Bool
 
     var forComplications:  Bool
 
     var body: some View {
         #if os(watchOS)
-        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
+        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
         #else
         let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
         let EDGE_INSETS_2: EdgeInsets = EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0)
         let MINIMUM_HEIGHT:  CGFloat = 40.0
         if forComplications {
-            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
+            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
                 .frame(minHeight:  MINIMUM_HEIGHT)
                 .foregroundColor(Color.white)
                 .padding(EDGE_INSETS_1)
                 .background(Color.black)
                 .padding(EDGE_INSETS_2)
         } else {
-            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
+            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
                 .frame(minHeight:  MINIMUM_HEIGHT)
                 .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
                 .padding(EDGE_INSETS_1)
@@ -95,6 +96,7 @@ struct ASAClockCellBody:  View {
 
     var shouldShowTime:  Bool
     var shouldShowMiniCalendar:  Bool
+    var shouldShowTimeToNextDay:  Bool
     var canSplitTimeFromDate:  Bool
 
     var forComplications:  Bool
@@ -157,13 +159,16 @@ struct ASAClockCellBody:  View {
             #if os(watchOS)
             #else
             if processedRow.events.count > 0 && !forComplications {
-                Picker(selection: $shouldShowEvents, label: Text("Show Events")) {
-                    ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
-                        possibility
-                        in
-                        Text(possibility.emoji)
-                    }
-                }.pickerStyle(SegmentedPickerStyle())
+                HStack {
+                    Text("Show Events")
+                    Picker(selection: $shouldShowEvents, label: Text("")) {
+                        ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+                            possibility
+                            in
+                            Text(possibility.emoji)
+                        }
+                    }.pickerStyle(SegmentedPickerStyle())
+                }
 
                 if shouldShowEvents == .all {
                     ASAClockEventsForEach(processedRow: processedRow, visibility:  .all)
@@ -179,12 +184,14 @@ struct ASAClockCellBody:  View {
                 }
             }
 
-            HStack {
-                Text("Time to next day:")
-                    .font(.subheadlineMonospacedDigit)
-                Text(processedRow.startOfNextDay, style: .timer)
-                    .font(.subheadlineMonospacedDigit)
-            } // HStack
+            if self.shouldShowTimeToNextDay {
+                HStack {
+                    Text("Time to next day:")
+                        .font(.subheadlineMonospacedDigit)
+                    Text(processedRow.startOfNextDay, style: .timer)
+                        .font(.subheadlineMonospacedDigit)
+                } // HStack
+            }
             #endif
         } // VStack
     } // var body
@@ -287,6 +294,6 @@ struct ASAClockMainSubcell:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic, now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: false)
+        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic, now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, shouldShowTimeToNextDay: true, forComplications: false)
     }
 } // struct ASAClockCell_Previews
