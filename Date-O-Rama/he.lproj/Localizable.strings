@@ -149,3 +149,9 @@
 "Next event today:" = "האירוע הבא היום:";
 "Time to next day:" = "זמן עד היום הבא:";
 "Show time to next day" = "הצג זמן עד היום הבא";
+"ASAClockCellEventVisibility.none"   = "אין";
+"ASAClockCellEventVisibility.allDay" = "יום שלם";
+"ASAClockCellEventVisibility.next"   = "הבא";
+"ASAClockCellEventVisibility.future" = "עתידיים";
+"ASAClockCellEventVisibility.all"    = "הכול";
+

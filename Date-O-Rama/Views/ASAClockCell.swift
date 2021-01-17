@@ -16,6 +16,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     case future
     case all
 
+    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, all]
+
     var emoji:  String {
         switch self {
         case .none:
@@ -32,9 +34,26 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
 
         case .all:
             return "↕️"
-        }
+        } // switch self
+    } // var emoji
+
+    var text:  String {
+        var raw:  String = ""
+        switch self {
+        case .none:
+            raw = "ASAClockCellEventVisibility.none"
+        case .allDay:
+            raw = "ASAClockCellEventVisibility.allDay"
+        case .next:
+            raw = "ASAClockCellEventVisibility.next"
+        case .future:
+            raw = "ASAClockCellEventVisibility.future"
+        case .all:
+            raw = "ASAClockCellEventVisibility.all"
+        } // switch self
+        return NSLocalizedString(raw, comment: "")
     }
-}
+} // enum ASAClockCellEventVisibility
 
 struct ASAClockCell: View {
     var processedRow:  ASAProcessedRow

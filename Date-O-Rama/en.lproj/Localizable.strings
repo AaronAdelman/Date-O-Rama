@@ -149,3 +149,9 @@
 "Next event today:" = "Next event today:";
 "Time to next day:" = "Time to next day:";
 "Show time to next day" = "Show time to next day";
+"ASAClockCellEventVisibility.none"   = "None";
+"ASAClockCellEventVisibility.allDay" = "All-day";
+"ASAClockCellEventVisibility.next"   = "Next";
+"ASAClockCellEventVisibility.future" = "Future";
+"ASAClockCellEventVisibility.all"    = "All";
+

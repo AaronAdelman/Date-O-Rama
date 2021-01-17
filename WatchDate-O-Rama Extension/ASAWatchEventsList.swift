@@ -15,10 +15,10 @@ struct ASAWatchEventsList: View {
     var body: some View {
         List {
             Picker(selection: $shouldShowEvents, label: Text("Show Events")) {
-                ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+                ForEach(ASAClockCellEventVisibility.watchCases, id: \.self) {
                     possibility
                     in
-                    Text(possibility.emoji)
+                    Text(possibility.text)
                 }
             }
 
