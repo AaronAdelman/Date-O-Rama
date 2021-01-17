@@ -12,14 +12,9 @@ struct ASACheckmarkCircleSymbol:  View {
     var on:  Bool
 
     var body:  some View {
-        let SCALE: Image.Scale = .large
-        if on {
-            Image(systemName: "checkmark.circle.fill")
-                .imageScale(SCALE)
-        } else {
-            Image(systemName: "circle")
-                .imageScale(SCALE)
-        }
+        let systemName = on ? "checkmark.circle.fill" : "circle"
+        Image(systemName: systemName)
+            .imageScale(.large)
     } // var body
 } // struct ASACheckmarkCircleSymbol
 
