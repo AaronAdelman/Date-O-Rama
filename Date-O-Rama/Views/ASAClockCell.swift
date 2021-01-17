@@ -169,19 +169,8 @@ struct ASAClockCellBody:  View {
                         }
                     }.pickerStyle(SegmentedPickerStyle())
                 }
-
-                if shouldShowEvents == .all {
-                    ASAClockEventsForEach(processedRow: processedRow, visibility:  .all)
-                } else if shouldShowEvents == .allDay {
-                    ASAClockEventsForEach(processedRow: processedRow, visibility:  .allDay)
-                } else if shouldShowEvents == .future {
-                    ASAClockEventsForEach(processedRow: processedRow, visibility:  .future)
-                } else if shouldShowEvents == .next {
-                    let nextEvent = processedRow.events.nextEvent(now: now)
-                    if nextEvent != nil {
-                        ASAEventCell(event: nextEvent!, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
-                    }
-                }
+                
+                ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: now)
             }
 
             if self.shouldShowTimeToNextDay {
@@ -203,6 +192,7 @@ struct ASAClockCellBody:  View {
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedRow
     var visibility:  ASAClockCellEventVisibility
+    var now:  Date
 
     static let genericRow = ASARow.generic
 
@@ -215,8 +205,19 @@ struct ASAClockEventsForEach:  View {
             case .future:
                 return processedRow.events.futureOnly
 
-            default:
+            case .all:
                 return processedRow.events
+
+            case .next:
+                let nextEvent: ASAEventCompatible? = processedRow.events.nextEvent(now: now)
+                if nextEvent == nil {
+                    return []
+                } else {
+                    return [nextEvent!]
+                }
+
+            case .none:
+                return []
             } // switch visibility
         }()
 

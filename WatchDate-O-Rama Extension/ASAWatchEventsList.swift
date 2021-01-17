@@ -10,10 +10,20 @@ import SwiftUI
 
 struct ASAWatchEventsList: View {
     var processedRow:  ASAProcessedRow
+    @State var shouldShowEvents:  ASAClockCellEventVisibility = .all
 
     var body: some View {
         List {
-            ASAClockEventsForEach(processedRow: processedRow, visibility: .all)
+            Picker(selection: $shouldShowEvents, label: Text("Show Events")) {
+                ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+                    possibility
+                    in
+                    Text(possibility.emoji)
+                }
+            }
+
+
+            ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: Date())
         } // List
     } // var body
 } // struct ASAWatchEventsList
