@@ -32,7 +32,7 @@
 "CCSDSJulianDay"        = "CCSDS Julian Date";
 "LilianDate"            = "Lilian Date";
 "RataDie"               = "Rata Die";
-"HebrewSolar"           = "Hebrew (Vilna Ga’on)";
+"HebrewSolar"           = "Hebrew";
 "IslamicSolar"          = "Islamic";
 "IslamicCivilSolar"     = "Islamic Civil";
 "IslamicTabularSolar"   = "Islamic Tabular";
