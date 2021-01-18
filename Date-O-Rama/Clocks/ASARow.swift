@@ -21,13 +21,13 @@ let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 
 // MARK:  -
 
-class ASAEventCacheObject {
-    var array:  Array<ASAEventCompatible>
-
-    init(array:  Array<ASAEventCompatible>) {
-        self.array = array
-    } // init(array:  Array<ASAEventCompatible>)
-} // class ASAEventCacheObject
+//class ASAEventCacheObject {
+//    var array:  Array<ASAEventCompatible>
+//
+//    init(array:  Array<ASAEventCompatible>) {
+//        self.array = array
+//    } // init(array:  Array<ASAEventCompatible>)
+//} // class ASAEventCacheObject
 
 
 // MARK:  -
@@ -48,7 +48,8 @@ class ASARow: ASALocatedObject {
             }
 
             if !startingUp {
-                self.eventCache.removeAllObjects()
+//                self.eventCache.removeAllObjects()
+                self.clearCacheObjects()
             }
         } // didSet
     } // var calendar
@@ -56,7 +57,8 @@ class ASARow: ASALocatedObject {
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
             if !startingUp {
-                self.eventCache.removeAllObjects()
+//                self.eventCache.removeAllObjects()
+                self.clearCacheObjects()
             }
         } // didset
     } // var dateFormat
@@ -64,7 +66,8 @@ class ASARow: ASALocatedObject {
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
             if !startingUp {
-                self.eventCache.removeAllObjects()
+//                self.eventCache.removeAllObjects()
+                self.clearCacheObjects()
             }
         } // didset
     } // var timeFormat
@@ -72,7 +75,8 @@ class ASARow: ASALocatedObject {
     @Published var builtInEventCalendars:  Array<ASAEventCalendar> = [] {
         didSet {
             if !startingUp {
-                self.eventCache.removeAllObjects()
+//                self.eventCache.removeAllObjects()
+                self.clearCacheObjects()
             }
         } // didset
     } // var builtInEventCalendars
@@ -80,19 +84,30 @@ class ASARow: ASALocatedObject {
     @Published var iCalendarEventCalendars:  Array<EKCalendar> = [] {
         didSet {
             if !startingUp {
-                self.eventCache.removeAllObjects()
+//                self.eventCache.removeAllObjects()
+                self.clearCacheObjects()
             }
         } // didset
     } // var iCalendarEventCalendars
 
     override func handleLocationDataChanged() {
         if !startingUp {
-            self.eventCache.removeAllObjects()
+//            self.eventCache.removeAllObjects()
+            self.clearCacheObjects()
             debugPrint(#file, #function, "The event cache has been cleared.")
         }
     }
 
-    private var eventCache = NSCache<NSNumber, ASAEventCacheObject>()
+//    private var eventCache = NSCache<NSNumber, ASAEventCacheObject>()
+    private var eventCacheStartDate:  Date = Date.distantPast
+    private var eventCacheEndDate:  Date = Date.distantPast
+    private var eventCacheValue:  Array<ASAEventCompatible> = []
+
+    private func clearCacheObjects() {
+        self.eventCacheStartDate = Date.distantPast
+        self.eventCacheEndDate   = Date.distantPast
+        self.eventCacheValue     = []
+    } // func clearCacheObjects()
 
     
     // MARK:  -
@@ -255,11 +270,14 @@ class ASARow: ASALocatedObject {
     // MARK:  -
 
     func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible> {
-        let eventCacheKey = NSNumber(value: startDate.timeIntervalSince1970)
-        let wrappedArray = self.eventCache.object(forKey: eventCacheKey)
-        if wrappedArray != nil {
-//            debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Found events in cache")
-            return wrappedArray!.array
+//        let eventCacheKey = NSNumber(value: startDate.timeIntervalSince1970)
+//        let wrappedArray = self.eventCache.object(forKey: eventCacheKey)
+//        if wrappedArray != nil {
+////            debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Found events in cache")
+//            return wrappedArray!.array
+//        }
+        if self.eventCacheStartDate == startDate && self.eventCacheEndDate == endDate {
+            return self.eventCacheValue
         }
 
 //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Did not find events in cache")
@@ -284,7 +302,10 @@ class ASARow: ASALocatedObject {
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
 
-        self.eventCache.setObject(ASAEventCacheObject(array: events), forKey: eventCacheKey)
+//        self.eventCache.setObject(ASAEventCacheObject(array: events), forKey: eventCacheKey)
+        self.eventCacheStartDate = startDate
+        self.eventCacheEndDate   = endDate
+        self.eventCacheValue     = events
 //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Number of events written to cache:", events.count, "Start date:", startDate, "End date:", endDate)
 
         return events

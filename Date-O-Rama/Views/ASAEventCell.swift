@@ -14,6 +14,7 @@ struct ASAEventCell:  View {
     var secondaryRow:  ASARow
     var eventsViewShouldShowSecondaryDates: Bool
     var forClock:  Bool
+    @Binding var now:  Date
 
     #if os(watchOS)
     let labelColor = Color.white
@@ -69,6 +70,7 @@ struct ASAEventCell:  View {
                 if self.eventsViewShouldShowSecondaryDates {
                     ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
                 }
+                Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
         } // HStack
         #else
@@ -92,6 +94,8 @@ struct ASAEventCell:  View {
                 }
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
+
+                Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
         } // HStack
         #endif

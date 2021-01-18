@@ -19,6 +19,7 @@ struct ASALinkedEventCell:  View {
     @State private var showingEventView = false
     var rangeStart:  Date
     var rangeEnd:  Date
+    @Binding var now:  Date
 
     let CLOSE_BUTTON_TITLE = "Done"
 
@@ -28,7 +29,7 @@ struct ASALinkedEventCell:  View {
     var body: some View {
         if event.isEKEvent {
             HStack {
-                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
 
                 Spacer()
 
@@ -42,7 +43,7 @@ struct ASALinkedEventCell:  View {
                 }.foregroundColor(.accentColor)
             }
         } else {
-            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
         }
     }
 } // struct ASALinkedEventCell
