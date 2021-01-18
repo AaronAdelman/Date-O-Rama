@@ -11,6 +11,7 @@ import SwiftUI
 struct ASAWatchEventsList: View {
     var processedRow:  ASAProcessedRow
     @State var shouldShowEvents:  ASAClockCellEventVisibility = .all
+    @State var now:  Date = Date()
 
     var body: some View {
         List {
@@ -23,7 +24,7 @@ struct ASAWatchEventsList: View {
             }
 
 
-            ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: Date())
+            ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
         } // List
     } // var body
 } // struct ASAWatchEventsList

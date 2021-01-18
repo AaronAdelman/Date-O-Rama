@@ -182,7 +182,7 @@ struct ASAClockCellBody:  View {
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 
-                ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: now)
+                ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
             }
 
             if self.shouldShowTimeToNextDay {
@@ -204,7 +204,7 @@ struct ASAClockCellBody:  View {
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedRow
     var visibility:  ASAClockCellEventVisibility
-    var now:  Date
+    @Binding var now:  Date
 
     static let genericRow = ASARow.generic
 
