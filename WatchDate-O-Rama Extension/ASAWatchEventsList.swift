@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ASAWatchEventsList: View {
     var processedRow:  ASAProcessedRow
-    @State var shouldShowEvents:  ASAClockCellEventVisibility = .all
-    @State var now:  Date = Date()
+    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
+    @State var now:  Date
 
     var body: some View {
         List {

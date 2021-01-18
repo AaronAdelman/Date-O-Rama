@@ -147,7 +147,7 @@ struct ASAClockCellBody:  View {
 
                 #if os(watchOS)
                 if processedRow.events.count > 0 {
-                    NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow)) {
+                    NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
                         Image(systemName: "chevron.forward.circle.fill")
                     }
                 }
@@ -221,12 +221,7 @@ struct ASAClockEventsForEach:  View {
                 return processedRow.events
 
             case .next:
-                let nextEvent: ASAEventCompatible? = processedRow.events.nextEvent(now: now)
-                if nextEvent == nil {
-                    return []
-                } else {
-                    return [nextEvent!]
-                }
+                return processedRow.events.nextEvents(now: now)
 
             case .none:
                 return []

@@ -558,8 +558,23 @@ extension ASAEventCalendar {
 // MARK:  -
 
 extension Array where Element == ASAEventCompatible {
-    func nextEvent(now:  Date) -> ASAEventCompatible? {
-        let result = self.first(where: { $0.startDate > now })
+    func nextEvents(now:  Date) -> Array<ASAEventCompatible> {
+        let firstIndex = self.firstIndex(where: { $0.startDate > now })
+        if firstIndex == nil {
+            return []
+        }
+        let firstItemStartDate = self[firstIndex!].startDate
+
+        var result:  Array<ASAEventCompatible> = []
+        for i in firstIndex!..<self.count {
+            let item_i: ASAEventCompatible = self[i]
+            if item_i.startDate == firstItemStartDate {
+                result.append(item_i)
+            } else {
+                break
+            }
+        } // for i
+
         return result
     } // func nextEvent(now:  Date) -> ASAEventCompatible?
 } // extension Array where Element == ASAEventCompatible
