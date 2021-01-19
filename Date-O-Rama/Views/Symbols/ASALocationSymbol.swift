@@ -25,12 +25,44 @@ extension CLAuthorizationStatus {
             } // switch self
         } // get
     } // var symbolName
+
+    var symbolColor:  Color {
+        get {
+            switch self {
+            case .authorizedAlways, .authorizedWhenInUse:
+                return Color.green
+
+            case .notDetermined:
+                return Color.yellow
+
+            case .restricted:
+                return Color.orange
+
+            case .denied:
+                return Color.red
+
+            @unknown default:
+                return Color.gray
+            } // switch self
+        } // get
+    } // var symbolColor
 } // extension CLAuthorizationStatus
 
 struct ASALocationSymbol:  View {
     @ObservedObject var locationManager = ASALocationManager.shared
 
     var body:  some View {
-        Image(systemName:  (self.locationManager.locationAuthorizationStatus ?? CLAuthorizationStatus.denied).symbolName).imageScale(.small)
+        let SCALE: Image.Scale = .small
+        if self.locationManager.locationAuthorizationStatus == nil {
+            Image(systemName:  "location.slash")
+                .imageScale(SCALE)
+                .foregroundColor(.pink)
+
+        } else {
+            let effectiveStatus: CLAuthorizationStatus = self.locationManager.locationAuthorizationStatus!
+            Image(systemName:  (effectiveStatus).symbolName)
+                .imageScale(SCALE)
+                .foregroundColor(effectiveStatus.symbolColor)
+        }
     } // var body
 } // struct ASALocationSymbol
