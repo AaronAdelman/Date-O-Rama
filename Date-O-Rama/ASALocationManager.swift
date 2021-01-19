@@ -43,8 +43,7 @@ class ASALocationManager: NSObject, ObservableObject {
         
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
-        self.locationManager.requestWhenInUseAuthorization()
-//        self.locationManager.startUpdatingLocation()
+        self.locationManager.requestAlwaysAuthorization()
 
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
@@ -99,6 +98,8 @@ extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(#file, #function, error)
+
+        self.locationManager.requestWhenInUseAuthorization()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
 
     fileprivate func reverseGeocode(_ location: CLLocation) {
@@ -148,4 +149,16 @@ extension ASALocationManager: CLLocationManagerDelegate {
         
 //        debugPrint(#file, #function, tempLocationData.location ?? "nil location")
     } // func finishDidUpdateLocations(_ tempLocationData: ASALocation)
+
+    #if os(watchOS)
+    #else
+    func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
+        debugPrint(#file, #function)
+    }
+
+    func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
+        debugPrint(#file, #function)
+        self.locationManager.requestAlwaysAuthorization()
+    }
+    #endif
 } // extension ASALocationManager
