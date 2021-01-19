@@ -15,17 +15,9 @@ struct ASALocationCell:  View {
     @ObservedObject var locationManager = ASALocationManager.shared
 
     func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String {
-        let RAW_LAST_DEVICE_LOCATION_STRING = "LAST_DEVICE_LOCATION"
-
         if authorizationStatus == nil {
-            return RAW_LAST_DEVICE_LOCATION_STRING
+            return "LAST_DEVICE_LOCATION"
         }
-
-//        if authorizationStatus!.authorizedAtLeastWhenInUse {
-//            return "DEVICE_LOCATION"
-//        } else {
-//            return RAW_LAST_DEVICE_LOCATION_STRING
-//        }
 
         switch authorizationStatus! {
         case .notDetermined:
