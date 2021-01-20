@@ -154,4 +154,5 @@
 "ASAClockCellEventVisibility.next"   = "Next";
 "ASAClockCellEventVisibility.future" = "Future";
 "ASAClockCellEventVisibility.all"    = "All";
-
+"ABOUT_TAB" = "About";
+"by Aaron Solomon Adelman" = "by Aaron Solomon Adelman";

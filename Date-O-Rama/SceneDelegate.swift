@@ -43,6 +43,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                         Text("COMPLICATION_CLOCKS_TAB")
                     }
             }
+
+            ASAAboutView()
+                .tabItem {
+                    Image(systemName: "info.circle.fill")
+                    Text("ABOUT_TAB")
+                }
         }
 
         // Use a UIHostingController as window root view controller.
