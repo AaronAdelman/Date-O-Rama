@@ -43,6 +43,9 @@ struct ASAComplicationClocksView: View {
                     ForEach(ASARowArrayKey.complicationSections, id:  \.self) {complicationKey in
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
+                                // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
+                                ZStack {
+                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, shouldShowTimeToNextDay: false, forComplications: true)
                                 NavigationLink(
                                     destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
                                         .onReceive(row.objectWillChange) { _ in
@@ -51,7 +54,8 @@ struct ASAComplicationClocksView: View {
                                             self.saveUserData()
                                         }
                                 ) {
-                                    ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, shouldShowTimeToNextDay: false, forComplications: true)
+                                }
+                                .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
                                 }
                             }
                         }
