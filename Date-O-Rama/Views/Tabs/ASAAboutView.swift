@@ -11,9 +11,18 @@ import SwiftUI
 struct ASAAboutView: View {
     var body: some View {
         VStack {
-            let appName = (Bundle.main.infoDictionary?["CFBundleName"] as? String) ?? ""
-            let version: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
-            let build:  String = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
+            let SCALE = 2.0
+            Image(uiImage: UIImage(named: "AppIcon") ?? UIImage())
+                .cornerRadius(2.0)
+                .scaleEffect(CGSize(width: SCALE, height: SCALE))
+
+            Spacer()
+                .frame(height:  8.0)
+
+            let mainBundle: Bundle = Bundle.main
+            let appName = (mainBundle.infoDictionary?["CFBundleName"] as? String) ?? ""
+            let version: String = mainBundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
+            let build:  String = mainBundle.infoDictionary?["CFBundleVersion"] as? String ?? ""
             Text("\(appName) \(version) (\(build))")
                 .font(.largeTitle)
 
