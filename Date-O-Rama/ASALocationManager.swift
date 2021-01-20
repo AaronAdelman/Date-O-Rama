@@ -84,6 +84,8 @@ class ASALocationManager: NSObject, ObservableObject {
     let objectWillChange = PassthroughSubject<Void, Never>()
 
     private let locationManager = CLLocationManager()
+
+    var lastError:  Error?
 } // class ASALocationManager
 
 
@@ -93,12 +95,13 @@ extension ASALocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationAuthorizationStatus = status
 //        print(#file, #function, status)
+        self.lastError = nil
         self.locationManager.startUpdatingLocation()
     } // func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
 
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(#file, #function, error)
-
+        self.lastError = error
         self.locationManager.requestWhenInUseAuthorization()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
 
@@ -158,7 +161,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
 
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
         debugPrint(#file, #function)
-        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
     }
     #endif
 } // extension ASALocationManager
