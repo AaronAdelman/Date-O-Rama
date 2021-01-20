@@ -67,7 +67,7 @@ struct ASAClockDetailView: View {
                 } // Section
             }
         }
-        .navigationBarTitle(Text(selectedRow.dateString(now: self.now) ))
+//        .navigationBarTitle(Text(selectedRow.dateString(now: self.now)))
     }
 } // struct ASAClockDetailView
 

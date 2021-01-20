@@ -54,7 +54,7 @@ struct ASANewClockDetailView: View {
                     ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: true, forAppleWatch: false)
                 } // List
             } // VStack
-                .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
+//                .navigationBarTitle(Text(selectedRow.dateString(now: Date())))
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
