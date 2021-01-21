@@ -30,8 +30,11 @@ struct ASAAboutView: View {
                 Text("by Aaron Solomon Adelman")
                 Link("✉️ Aaron.Solomon.Adelman@gmail.com", destination:  URL(string: "mailto:Aaron.Solomon.Adelman@gmail.com?subject=Date-O-Rama")!)
 
+
                 List {
-                    NavigationLink(destination:                     ASALocalPDFView(fileName: "Thanks to")) {
+                    NavigationLink(destination:
+                                    ASALocalHTMLView(fileName:  "Thanks to")
+                    ) {
                         Text("Thanks to…")
                     }
                 }
