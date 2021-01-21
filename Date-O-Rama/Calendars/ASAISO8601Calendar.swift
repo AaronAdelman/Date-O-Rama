@@ -46,13 +46,10 @@ class ASAISO8601Calendar:  ASACalendar {
             formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
         } // switch dateFormat
         
-        //        switch timeFormat {
-        //        case .medium :
-        formatterOptions.insert(.withTime)
-        formatterOptions.insert(.withColonSeparatorInTime)
-        //        default:
-        //            debugPrint("")
-        //        } // switch timeFormat
+        if timeFormat == .medium {
+            formatterOptions.insert(.withTime)
+            formatterOptions.insert(.withColonSeparatorInTime)
+        }
         
         self.ISODateFormatter.formatOptions = formatterOptions
 
@@ -109,7 +106,7 @@ class ASAISO8601Calendar:  ASACalendar {
     var supportsTimeFormats: Bool = true
     
     var canSplitTimeFromDate:  Bool = true
-    
+
     var defaultTimeFormat:  ASATimeFormat = .medium
     
     // MARK: -
