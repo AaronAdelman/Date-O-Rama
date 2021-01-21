@@ -226,7 +226,10 @@ class ASAJulianDayCalendar:  ASACalendar {
                 result.nanosecond = JDComponents.nanosecond
 
             default:
-                debugPrint(#file, #function, component as Any)
+//                debugPrint(#file, #function, component as Any)
+                result.month   = 0
+                result.year    = 0
+                result.weekday = 0
             } // switch component
         }
         return result

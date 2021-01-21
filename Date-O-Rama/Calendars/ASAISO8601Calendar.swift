@@ -46,13 +46,13 @@ class ASAISO8601Calendar:  ASACalendar {
             formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
         } // switch dateFormat
         
-        switch timeFormat {
-        case .medium :
-            formatterOptions.insert(.withTime)
-            formatterOptions.insert(.withColonSeparatorInTime)
-        default:
-            debugPrint("")
-        } // switch timeFormat
+        //        switch timeFormat {
+        //        case .medium :
+        formatterOptions.insert(.withTime)
+        formatterOptions.insert(.withColonSeparatorInTime)
+        //        default:
+        //            debugPrint("")
+        //        } // switch timeFormat
         
         self.ISODateFormatter.formatOptions = formatterOptions
 
