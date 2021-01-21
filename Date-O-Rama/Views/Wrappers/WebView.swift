@@ -12,10 +12,10 @@ import WebKit
 
 struct WebView : UIViewRepresentable {
     let request: URLRequest
-    var webview: WKWebView?
+    var webView: WKWebView?
 
-    init(web: WKWebView?, req: URLRequest) {
-        self.webview = WKWebView()
+    init(req: URLRequest) {
+        self.webView = WKWebView()
         self.request = req
     }
 
@@ -53,7 +53,7 @@ struct WebView : UIViewRepresentable {
     }
 
     func makeUIView(context: Context) -> WKWebView  {
-        return webview!
+        return webView!
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
@@ -63,15 +63,15 @@ struct WebView : UIViewRepresentable {
     }
 
     func goBack(){
-        webview?.goBack()
+        webView?.goBack()
     }
 
     func goForward(){
-        webview?.goForward()
+        webView?.goForward()
     }
 
     func reload(){
-        webview?.reload()
+        webView?.reload()
     }
 }
 
@@ -87,7 +87,23 @@ struct ASALocalHTMLView: View {
         if fileURL == nil {
             EmptyView()
         } else {
-            WebView(web: nil, req: URLRequest(url: fileURL!))
+            WebView(req: URLRequest(url: fileURL!))
+        }
+    }
+}
+
+
+// MARK:  -
+
+struct ASALinkToLocalHTMLView:  View {
+    var text:  String
+    var fileName: String
+
+    var body: some View {
+        NavigationLink(destination:
+                        ASALocalHTMLView(fileName:  fileName)
+        ) {
+            Text(NSLocalizedString(text, comment: ""))
         }
     }
 }

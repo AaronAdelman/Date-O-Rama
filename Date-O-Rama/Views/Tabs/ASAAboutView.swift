@@ -32,11 +32,12 @@ struct ASAAboutView: View {
 
 
                 List {
-                    NavigationLink(destination:
-                                    ASALocalHTMLView(fileName:  "Thanks to")
-                    ) {
-                        Text("Thanks to…")
-                    }
+//                    NavigationLink(destination:
+//                                    ASALocalHTMLView(fileName:  "Thanks to")
+//                    ) {
+//                        Text("Thanks to…")
+//                    }
+                    ASALinkToLocalHTMLView(text: "Thanks to…", fileName: "Thanks to")
                 }
             } // VStack
         }
