@@ -16,6 +16,7 @@ struct WebView : UIViewRepresentable {
 
     init(req: URLRequest) {
         self.webView = WKWebView()
+        self.webView?.configuration.preferences.minimumFontSize = 24.0
         self.request = req
     }
 
@@ -88,6 +89,7 @@ struct ASALocalHTMLView: View {
             EmptyView()
         } else {
             WebView(req: URLRequest(url: fileURL!))
+                .padding(8.0)
         }
     }
 }
