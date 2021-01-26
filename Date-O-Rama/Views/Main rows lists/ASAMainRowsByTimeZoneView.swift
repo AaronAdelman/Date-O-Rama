@@ -99,6 +99,7 @@ struct ASAMainRowsByTimeZoneSubview:  View {
                         }
                         .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
                     }
+                    .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                     #endif
                 }
             }

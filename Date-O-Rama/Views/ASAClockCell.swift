@@ -75,31 +75,37 @@ struct ASAClockCell: View {
         #if os(watchOS)
         ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
         #else
-        HStack {
-            let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
-            let EDGE_INSETS_2: EdgeInsets = EdgeInsets(top: -5.5, leading: -20.0, bottom: -5.5, trailing: -40.0)
-            let MINIMUM_HEIGHT:  CGFloat = 40.0
-            if forComplications {
+        let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
+        let MINIMUM_HEIGHT: CGFloat = 40.0
+        let SPACER_WIDTH: CGFloat = 16.0
+
+        if forComplications {
+            HStack {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-                    .foregroundColor(Color.white)
                     .padding(EDGE_INSETS_1)
-                    .background(Color.black)
-                    .padding(EDGE_INSETS_2)
-            } else {
+
+                ASAForwardChevronSymbol()
+                    .foregroundColor(.white)
+                Spacer()
+                    .frame(width:  SPACER_WIDTH)
+            } // HStack
+            .foregroundColor(Color.white)
+            .background(Color.black)
+        } else {
+            HStack {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-                    .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
                     .padding(EDGE_INSETS_1)
-                    .background(ASASkyGradient(processedRow: processedRow))
-                    .padding(EDGE_INSETS_2)
-            }
 
-            Spacer()
-                .frame(width:  16.0)
-            Image(systemName: "chevron.forward")
-                .foregroundColor(.white)
-        } // HStack
+                ASAForwardChevronSymbol()
+                    .foregroundColor(.white)
+                Spacer()
+                    .frame(width:  SPACER_WIDTH)
+            } // HStack
+            .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
+            .background(ASASkyGradient(processedRow: processedRow))
+        }
         #endif
     } // var body
 } // struct ASAClockCell

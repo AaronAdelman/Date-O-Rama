@@ -74,6 +74,7 @@ struct ASAMainRowsByFormattedDateSubview:  View {
                         }
                         .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
                     } // ZStack
+                    .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
                     #endif
 
                 }
