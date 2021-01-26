@@ -32,13 +32,38 @@ struct ASAAboutView: View {
 
 
                 List {
-                    ASALinkToLocalHTMLView(text: "Thanks to…", fileName: "Thanks to")
+                    ASAAboutNavigationLink(fileName: "Thanks to", text: "Thanks to…")
+
+                    ASAAboutNavigationLink(fileName: "What should I do if I have a", text: "What should I do if I have a problem with Date-O-Rama?")
+
+                    ASAAboutNavigationLink(fileName: "What calendar systems are", text: "What calendar systems are currently supported?")
+
+
+                    ASAAboutNavigationLink(fileName: "Personal information policy", text: "What is Adelsoft’s policy on your personal information?")
                 }
             } // VStack
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
 } // struct ASAAboutView
+
+
+// MARK:  -
+
+struct ASAAboutNavigationLink:  View {
+    var fileName:  String
+    var text:  String
+
+    var body:  some View {
+        NavigationLink(destination:                     ASALocalPDFView(fileName: fileName)) {
+            Text(NSLocalizedString(text, comment: ""))
+                .font(.headline)
+        }
+    } // var body
+} // struct ASAAboutNavigationLink
+
+
+// MARK:  -
 
 struct ASAAboutView_Previews: PreviewProvider {
     static var previews: some View {

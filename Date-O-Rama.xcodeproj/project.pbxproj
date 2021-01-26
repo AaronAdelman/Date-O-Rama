@@ -20,6 +20,11 @@
 		A50CD63425541B3F00B781EC /* ASAMiniClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD63325541B3F00B781EC /* ASAMiniClockView.swift */; };
 		A50CD63B25541BE100B781EC /* ASAPlaceSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD63A25541BE100B781EC /* ASAPlaceSubcell.swift */; };
 		A50CD64125541C0500B781EC /* ASAPlaceSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD63A25541BE100B781EC /* ASAPlaceSubcell.swift */; };
+		A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150EF525C0237300BC62C4 /* PDFKitView.swift */; };
+		A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */; };
+		A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */; };
+		A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */; };
+		A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0925C026AA00BC62C4 /* Thanks to.pdf */; };
 		A5152A062472BE430098A94B /* ASAEKEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5152A052472BE420098A94B /* ASAEKEventView.swift */; };
 		A5152A0A247410EA0098A94B /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */; };
 		A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
@@ -132,8 +137,6 @@
 		A593227D25780DA300318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5932276257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift */; };
 		A593229225782AB800318BC3 /* ASAMainRowsByPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASAMainRowsByPlaceView.swift */; };
 		A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */; };
-		A5980BD425B9FA0F00A07DBC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5980BD325B9FA0F00A07DBC /* WebView.swift */; };
-		A5980BE125B9FAD500A07DBC /* Thanks to.html in Resources */ = {isa = PBXBuildFile; fileRef = A5980BE325B9FAD500A07DBC /* Thanks to.html */; };
 		A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
@@ -266,6 +269,15 @@
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A50CD63325541B3F00B781EC /* ASAMiniClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniClockView.swift; sourceTree = "<group>"; };
 		A50CD63A25541BE100B781EC /* ASAPlaceSubcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPlaceSubcell.swift; sourceTree = "<group>"; };
+		A5150EF525C0237300BC62C4 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
+		A5150F0425C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
+		A5150F0625C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
+		A5150F0825C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/Personal information policy.pdf"; sourceTree = "<group>"; };
+		A5150F0A25C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/Thanks to.pdf"; sourceTree = "<group>"; };
+		A5150F1425C026B000BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/Personal information policy.pdf"; sourceTree = "<group>"; };
+		A5150F1525C026B700BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/Thanks to.pdf"; sourceTree = "<group>"; };
+		A5150F1625C026BB00BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
+		A5150F1725C026C200BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
 		A5152A052472BE420098A94B /* ASAEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventView.swift; sourceTree = "<group>"; };
 		A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
 		A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailCell.swift; sourceTree = "<group>"; };
@@ -325,9 +337,6 @@
 		A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksViewGroupingOption.swift; sourceTree = "<group>"; };
 		A5932276257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsByTimeZoneView.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
-		A5980BD325B9FA0F00A07DBC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		A5980BE225B9FAD500A07DBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = "en.lproj/Thanks to.html"; sourceTree = "<group>"; };
-		A5980BE925B9FADA00A07DBC /* he */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = he; path = "he.lproj/Thanks to.html"; sourceTree = "<group>"; };
 		A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKCalendarExtensions.swift; sourceTree = "<group>"; };
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
 		A5A9666225A31DA200CF158F /* ASADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePicker.swift; sourceTree = "<group>"; };
@@ -428,7 +437,7 @@
 			children = (
 				A5152A09247410EA0098A94B /* ASAEKEventEditView.swift */,
 				A5152A052472BE420098A94B /* ASAEKEventView.swift */,
-				A5980BD325B9FA0F00A07DBC /* WebView.swift */,
+				A5150EF525C0237300BC62C4 /* PDFKitView.swift */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -559,7 +568,10 @@
 		A5980BBF25B8BB5400A07DBC /* About */ = {
 			isa = PBXGroup;
 			children = (
-				A5980BE325B9FAD500A07DBC /* Thanks to.html */,
+				A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */,
+				A5150F0925C026AA00BC62C4 /* Thanks to.pdf */,
+				A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */,
+				A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -924,9 +936,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */,
+				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
+				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A5D3016024EBDFF8003E79E9 /* Islamic holidays (Umm Al-Qura).json in Resources */,
+				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islamic holidays.json in Resources */,
+				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */,
 				A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */,
 				A5E3606624C756FF0000A268 /* Israeli events.json in Resources */,
@@ -936,7 +952,6 @@
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5E3606424C71FBC0000A268 /* All-day Jewish events.json in Resources */,
 				A5D3015F24EBDFF8003E79E9 /* Islamic holidays (tabular).json in Resources */,
-				A5980BE125B9FAD500A07DBC /* Thanks to.html in Resources */,
 				A533798124B2333500340C0B /* Solar events.json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
@@ -1043,6 +1058,7 @@
 			files = (
 				A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */,
 				A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */,
+				A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */,
 				A5B8163E2541A37500E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
@@ -1109,7 +1125,6 @@
 				A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */,
 				A5152A0A247410EA0098A94B /* ASAEKEventEditView.swift in Sources */,
 				A5B816372541A30900E309E0 /* ASAMainRowsByFormattedDateView.swift in Sources */,
-				A5980BD425B9FA0F00A07DBC /* WebView.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
 				A57BCCBE247D8A700019C02C /* ASAEventCalendar.swift in Sources */,
@@ -1169,6 +1184,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5150F0425C026AA00BC62C4 /* en */,
+				A5150F1625C026BB00BC62C4 /* he */,
+			);
+			name = "What calendar systems are.pdf";
+			sourceTree = "<group>";
+		};
+		A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5150F0625C026AA00BC62C4 /* en */,
+				A5150F1725C026C200BC62C4 /* he */,
+			);
+			name = "What should I do if I have a.pdf";
+			sourceTree = "<group>";
+		};
+		A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5150F0825C026AA00BC62C4 /* en */,
+				A5150F1425C026B000BC62C4 /* he */,
+			);
+			name = "Personal information policy.pdf";
+			sourceTree = "<group>";
+		};
+		A5150F0925C026AA00BC62C4 /* Thanks to.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5150F0A25C026AA00BC62C4 /* en */,
+				A5150F1525C026B700BC62C4 /* he */,
+			);
+			name = "Thanks to.pdf";
+			sourceTree = "<group>";
+		};
 		A525622C24556169009C2920 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1184,15 +1235,6 @@
 				A566F4452483D6E6000A05B5 /* Base */,
 			);
 			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-		A5980BE325B9FAD500A07DBC /* Thanks to.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A5980BE225B9FAD500A07DBC /* en */,
-				A5980BE925B9FADA00A07DBC /* he */,
-			);
-			name = "Thanks to.html";
 			sourceTree = "<group>";
 		};
 		A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */ = {
