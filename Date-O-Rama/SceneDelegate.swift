@@ -24,27 +24,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let userData = ASAUserData.shared
 
         let contentView = TabView {
-            ASAClocksView().environmentObject(userData)
+            ASAClocksTab().environmentObject(userData)
                 .tabItem {
                     Image(systemName: "globe")
                     Text("CLOCKS_TAB")
                 }
 
-            ASAEventsView().environmentObject(userData)
+            ASAEventsTab().environmentObject(userData)
                 .tabItem {
                     Image(systemName: "rectangle")
                     Text("EVENTS_TAB")
                 }
 
             if appDelegate.session.isPaired {
-                ASAComplicationClocksView().environmentObject(userData)
+                ASAComplicationClocksTab().environmentObject(userData)
                     .tabItem {
                         Image(systemName: "applewatch.watchface")
                         Text("COMPLICATION_CLOCKS_TAB")
                     }
             }
 
-            ASAAboutView()
+            ASAAboutTab()
                 .tabItem {
                     Image(systemName: "info.circle.fill")
                     Text("ABOUT_TAB")

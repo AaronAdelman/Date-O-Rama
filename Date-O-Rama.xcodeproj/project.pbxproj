@@ -48,7 +48,7 @@
 		A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A55AA4A7256FD61300D62326 /* ASAArrangementChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */; };
-		A5629CD925B8646200C6D062 /* ASAAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5629CD825B8646200C6D062 /* ASAAboutView.swift */; };
+		A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5629CD825B8646200C6D062 /* ASAAboutTab.swift */; };
 		A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566F4442483D6E6000A05B5 /* Interface.storyboard */; };
@@ -168,12 +168,12 @@
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
 		A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
-		A5BFC5AD246971030075AF58 /* ASAEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsView.swift */; };
+		A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */; };
 		A5BFC5B5246AB5B50075AF58 /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
 		A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */; };
-		A5C77C012433361400CFEE47 /* ASAClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksView.swift */; };
+		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
 		A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C022433361900CFEE47 /* Assets.xcassets */; };
 		A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C052433361900CFEE47 /* Preview Assets.xcassets */; };
 		A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */; };
@@ -198,7 +198,7 @@
 		A5E3606424C71FBC0000A268 /* All-day Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* All-day Jewish events.json */; };
 		A5E3606624C756FF0000A268 /* Israeli events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israeli events.json */; };
 		A5E3606824C7571A0000A268 /* Lubavitch events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch events.json */; };
-		A5E3B041248FDCEA00283513 /* ASAComplicationClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B040248FDCEA00283513 /* ASAComplicationClocksView.swift */; };
+		A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */; };
 		A5E4719E2463F938002BB471 /* ASATimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASATimeFormat.swift */; };
 		A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
@@ -298,7 +298,7 @@
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAArrangementChooserView.swift; sourceTree = "<group>"; };
-		A5629CD825B8646200C6D062 /* ASAAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutView.swift; sourceTree = "<group>"; };
+		A5629CD825B8646200C6D062 /* ASAAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutTab.swift; sourceTree = "<group>"; };
 		A564C13F2548731B000F2CDF /* ASAClockCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellText.swift; sourceTree = "<group>"; };
 		A566F4422483D6E6000A05B5 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -358,13 +358,13 @@
 		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
 		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
 		A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAISO8601Calendar.swift; sourceTree = "<group>"; };
-		A5BFC5AC246971030075AF58 /* ASAEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsView.swift; sourceTree = "<group>"; };
+		A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsTab.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C77C002433361400CFEE47 /* ASAClocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksView.swift; sourceTree = "<group>"; };
+		A5C77C002433361400CFEE47 /* ASAClocksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksTab.swift; sourceTree = "<group>"; };
 		A5C77C022433361900CFEE47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C77C052433361900CFEE47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5C77C082433361900CFEE47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -394,7 +394,7 @@
 		A5E3606324C71FBC0000A268 /* All-day Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "All-day Jewish events.json"; sourceTree = "<group>"; };
 		A5E3606524C756FF0000A268 /* Israeli events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Israeli events.json"; sourceTree = "<group>"; };
 		A5E3606724C7571A0000A268 /* Lubavitch events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Lubavitch events.json"; sourceTree = "<group>"; };
-		A5E3B040248FDCEA00283513 /* ASAComplicationClocksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAComplicationClocksView.swift; sourceTree = "<group>"; };
+		A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAComplicationClocksTab.swift; sourceTree = "<group>"; };
 		A5E4719D2463F938002BB471 /* ASATimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormat.swift; sourceTree = "<group>"; };
 		A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormatChooserView.swift; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
@@ -523,10 +523,10 @@
 		A57BCCAA247AA9290019C02C /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				A5629CD825B8646200C6D062 /* ASAAboutView.swift */,
-				A5C77C002433361400CFEE47 /* ASAClocksView.swift */,
-				A5E3B040248FDCEA00283513 /* ASAComplicationClocksView.swift */,
-				A5BFC5AC246971030075AF58 /* ASAEventsView.swift */,
+				A5629CD825B8646200C6D062 /* ASAAboutTab.swift */,
+				A5C77C002433361400CFEE47 /* ASAClocksTab.swift */,
+				A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */,
+				A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -535,6 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				A5D62861243B80F100F3CC19 /* ASADateFormat.swift */,
+				A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */,
 				A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */,
 				A5C77C2E2433371700CFEE47 /* ASARow.swift */,
 				A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */,
@@ -674,7 +675,6 @@
 				A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */,
 				A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
-				A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */,
 				A57BCCB0247BBDC20019C02C /* ASALocation.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
@@ -1071,13 +1071,13 @@
 				A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */,
 				A5BFC5B5246AB5B50075AF58 /* ASAEKEventManager.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
-				A5BFC5AD246971030075AF58 /* ASAEventsView.swift in Sources */,
+				A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */,
 				A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */,
 				A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */,
 				A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */,
 				A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */,
 				A57F441F24BC5DD1005261EE /* ASACalendarComponent.swift in Sources */,
-				A5E3B041248FDCEA00283513 /* ASAComplicationClocksView.swift in Sources */,
+				A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */,
 				A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A5152A062472BE430098A94B /* ASAEKEventView.swift in Sources */,
@@ -1111,7 +1111,7 @@
 				A584C8FD24B4FDC10014CE2E /* ASAEventsFile.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */,
-				A5629CD925B8646200C6D062 /* ASAAboutView.swift in Sources */,
+				A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */,
 				A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */,
 				A5B6D01C25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */,
 				A5B816452541A3A200E309E0 /* ASAMainRowsByPlaceView.swift in Sources */,
@@ -1135,7 +1135,7 @@
 				A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */,
 				A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */,
 				A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */,
-				A5C77C012433361400CFEE47 /* ASAClocksView.swift in Sources */,
+				A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */,
 				A5832B88254ED124008E8A97 /* ASAMiniCalendarView.swift in Sources */,
 				A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */,

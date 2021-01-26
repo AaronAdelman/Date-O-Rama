@@ -1,5 +1,5 @@
 //
-//  ASAComplicationClocksView.swift
+//  ASAComplicationClocksTab.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-06-09.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAComplicationClocksView: View {
+struct ASAComplicationClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -74,10 +74,10 @@ struct ASAComplicationClocksView: View {
             self.now = Date()
         }
     }
-}
+} // struct ASAComplicationClocksTab
 
 struct ASAComplicationClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAComplicationClocksView()
+        ASAComplicationClocksTab()
     }
 }

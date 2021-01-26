@@ -393,7 +393,6 @@ extension ASARow {
         temp.calendar = ASAAppleCalendar(calendarCode: calendarCode)
         temp.localeIdentifier = ""
         temp.dateFormat = dateFormat
-        temp.locationData = ASALocation.currentTimeZoneDefault
         return temp
     } // static func generic(calendarCode:  ASACalendarCode) ->  ASARow
 

@@ -1,5 +1,5 @@
 //
-//  ASAAboutView.swift
+//  ASAAboutTab.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 20/01/2021.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAAboutView: View {
+struct ASAAboutTab: View {
     var body: some View {
         NavigationView {
             VStack {
@@ -45,7 +45,7 @@ struct ASAAboutView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
-} // struct ASAAboutView
+} // struct ASAAboutTab
 
 
 // MARK:  -
@@ -67,6 +67,6 @@ struct ASAAboutNavigationLink:  View {
 
 struct ASAAboutView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAAboutView()
+        ASAAboutTab()
     }
 }

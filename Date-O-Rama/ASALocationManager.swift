@@ -75,7 +75,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocationData: ASALocation = ASALocation.NullIsland {
+    @Published var deviceLocationData: ASALocation = ASALocation.currentTimeZoneDefault {
         willSet {
             objectWillChange.send()
         } // willSet

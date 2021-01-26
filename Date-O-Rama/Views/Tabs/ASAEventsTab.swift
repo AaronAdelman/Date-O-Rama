@@ -1,5 +1,5 @@
 //
-//  ASAEventsView.swift
+//  ASAEventsTab.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-11.
@@ -11,7 +11,7 @@ import EventKit
 import EventKitUI
 
 
-struct ASAEventsView: View {
+struct ASAEventsTab: View {
     let ADD_EXTERNAL_EVENT_STRING = "Add external event"
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
@@ -179,13 +179,13 @@ struct ASAEventsView: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     } // var body
-} // struct ASAEventsView
+} // struct ASAEventsTab
 
 
 // MARK: -
 
 struct ASAEventsView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventsView()
+        ASAEventsTab()
     }
 } // struct ASAEventsView_Previews

@@ -1,5 +1,5 @@
 //
-//  ASAClocksView.swift
+//  ASAClocksTab.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-03-31.
@@ -11,7 +11,7 @@ import Combine
 import CoreLocation
 
 
-struct ASAClocksView: View {
+struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
 
@@ -95,7 +95,7 @@ struct ASAClocksView: View {
             self.now = Date()
         }
     } // var body
-} // struct ASAClocksView
+} // struct ASAClocksTab
 
 
 // MARK:  -
@@ -122,6 +122,6 @@ struct ASAConditionalEditButton:  View {
 
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClocksView().environmentObject(ASAUserData.shared)
+        ASAClocksTab().environmentObject(ASAUserData.shared)
     }
 }
