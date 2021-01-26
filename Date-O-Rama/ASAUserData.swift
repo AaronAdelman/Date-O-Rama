@@ -55,6 +55,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     @Published var oneLineLargeRows:    Array<ASARow> = []
     @Published var oneLineSmallRows:    Array<ASARow> = []
 
+
+    // MARK:  -
+
     var containerURL:  URL?
 
 

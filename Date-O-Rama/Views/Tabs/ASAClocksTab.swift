@@ -19,7 +19,7 @@ struct ASAClocksTab: View {
 
     @AppStorage("mainRowsGroupingOption") var primaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
     @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byFormattedDate
-    @AppStorage("showTimeToNextDay") var shouldShowTimeToNextDay = true
+    @AppStorage("showTimeToNextDay") var shouldShowTimeToNextDay = false
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
