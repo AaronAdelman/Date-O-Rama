@@ -98,7 +98,14 @@ struct ASANewEKEventView: View {
                         ForEach(0..<self.iCalendarEventCalendars.count, id: \.self) {
                             i
                             in
-                            Text(verbatim: self.iCalendarEventCalendars[i].title)
+                            HStack {
+                                let CIRCLE_DIAMETER:  CGFloat = 8.0
+                                let calendar: EKCalendar = self.iCalendarEventCalendars[i]
+                                Circle()
+                                    .foregroundColor(calendar.color)
+                                    .frame(width: CIRCLE_DIAMETER, height: CIRCLE_DIAMETER)
+                                Text(verbatim: calendar.title)
+                            }
                         }
                     }
                     .onAppear() {
