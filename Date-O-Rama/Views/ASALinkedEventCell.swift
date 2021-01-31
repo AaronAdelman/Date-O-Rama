@@ -17,9 +17,9 @@ struct ASALinkedEventCell:  View {
     var eventsViewShouldShowSecondaryDates: Bool
     @State private var action:  EKEventViewAction?
     @State private var showingEventView = false
+    @Binding var now:  Date
     var rangeStart:  Date
     var rangeEnd:  Date
-    @Binding var now:  Date
 
     let CLOSE_BUTTON_TITLE = "Done"
 
