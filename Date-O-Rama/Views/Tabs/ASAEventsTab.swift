@@ -132,7 +132,8 @@ struct ASAEventsTab: View {
                                         Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+//                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+                                    ASANewEKEventView()
                                         .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                                 }
                                 .foregroundColor(.accentColor)
