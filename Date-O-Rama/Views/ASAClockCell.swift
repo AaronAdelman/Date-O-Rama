@@ -246,7 +246,7 @@ struct ASAClockEventsForEach:  View {
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, now: $now, rangeStart: processedRow.starOfDay, rangeEnd:  processedRow.startOfNextDay)
+            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, now: $now, rangeStart: processedRow.startOfDay, rangeEnd:  processedRow.startOfNextDay)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach
