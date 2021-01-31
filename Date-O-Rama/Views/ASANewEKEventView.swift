@@ -15,9 +15,12 @@ struct ASANewEKEventView: View {
     @State private var startDate: Date = Date()
     @State private var endDate: Date = Date()
     @State private var isAllDay: Bool = false
-    @State private var calendar: EKCalendar = ASAEKEventManager.shared.eventStore.defaultCalendarForNewEvents!
+//    @State private var calendar: EKCalendar = ASAEKEventManager.shared.eventStore.defaultCalendarForNewEvents!
 
-    var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
+    let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
+        .sorted(by: {$0.title < $1.title})
+    @State private var calendarIndex = 0
+    @State private var didSetCalendarIndex = false
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -48,26 +51,28 @@ struct ASANewEKEventView: View {
 
                         Button("Add") {
                             self.showingActionSheet = false
-                            
-                            let newEvent = EKEvent(eventStore: ASAEKEventManager.shared.eventStore)
 
                             if self.title != "" {
+                                let newEvent = EKEvent(eventStore: ASAEKEventManager.shared.eventStore)
+
                                 newEvent.title = self.title
-                            }
 
-                            if self.location != "" {
-                                newEvent.location = self.location
-                            }
+                                if self.location != "" {
+                                    newEvent.location = self.location
+                                }
 
-                            newEvent.isAllDay  = self.isAllDay
-                            newEvent.startDate = self.startDate
-                            newEvent.endDate   = self.endDate
-                            newEvent.calendar  = self.calendar
+                                newEvent.isAllDay  = self.isAllDay
+                                newEvent.startDate = self.startDate
+                                newEvent.endDate   = self.endDate
+                                newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
 
-                            do {
-                                try ASAEKEventManager.shared.eventStore.save(newEvent, span: .futureEvents)
-                            } catch {
-                                debugPrint(#file, #function, error)
+                                let eventStore = ASAEKEventManager.shared.eventStore
+
+                                do {
+                                    try eventStore.save(newEvent, span: .futureEvents)
+                                } catch {
+                                    debugPrint(#file, #function, error)
+                                }
                             }
 
                             self.dismiss()
@@ -86,14 +91,23 @@ struct ASANewEKEventView: View {
                 } // Section
 
                 Section {
-                    Picker(selection: self.$calendar, label: HStack {
+                    Picker(selection: self.$calendarIndex, label: HStack {
                         Text("Calendar")
-                        Text(self.calendar.title)
+                        Spacer()
                     }) {
-                        ForEach(self.iCalendarEventCalendars, id: \.calendarIdentifier) {
-                            Text(verbatim: $0.title)
+                        ForEach(0..<self.iCalendarEventCalendars.count, id: \.self) {
+                            i
+                            in
+                            Text(verbatim: self.iCalendarEventCalendars[i].title)
                         }
                     }
+                    .onAppear() {
+                        if !didSetCalendarIndex {
+                            self.calendarIndex = self.iCalendarEventCalendars.firstIndex(of: ASAEKEventManager.shared.eventStore.defaultCalendarForNewEvents!) ?? 0
+                            self.didSetCalendarIndex = true
+                        }
+                    }
+
                 } // Section
             } // Form
         } // NavigationView
