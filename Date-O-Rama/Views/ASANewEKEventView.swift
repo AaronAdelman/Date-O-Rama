@@ -15,7 +15,6 @@ struct ASANewEKEventView: View {
     @State private var startDate: Date = Date()
     @State private var endDate: Date = Date()
     @State private var isAllDay: Bool = false
-//    @State private var calendar: EKCalendar = ASAEKEventManager.shared.eventStore.defaultCalendarForNewEvents!
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -29,6 +28,14 @@ struct ASANewEKEventView: View {
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
+
+    fileprivate var appropriateDateComponents:  DatePicker<Text>.Components {
+        if self.isAllDay {
+            return [.date]
+        } else {
+            return [.date, .hourAndMinute]
+        }
+    }
 
     let HORIZONTAL_PADDING:  CGFloat = 20.0
 
@@ -86,8 +93,24 @@ struct ASANewEKEventView: View {
                     TextField("Title", text: self.$title)
                     TextField("Location", text: self.$location)
                     Toggle("All Day", isOn: self.$isAllDay)
-                    DatePicker("Start", selection: self.$startDate)
-                    DatePicker("End", selection: self.$endDate)
+                    DatePicker("Start", selection: self.$startDate,
+                               displayedComponents: self.appropriateDateComponents)
+                        .onChange(of: startDate, perform: {
+                            value
+                            in
+                            if self.startDate > self.endDate {
+                                self.endDate = self.startDate
+                            }
+                        })
+                    DatePicker("End", selection: self.$endDate,
+                               displayedComponents: self.appropriateDateComponents)
+                        .onChange(of: endDate, perform: {
+                            value
+                            in
+                            if self.endDate < self.startDate {
+                                self.startDate = self.endDate
+                            }
+                        })
                 } // Section
 
                 Section {

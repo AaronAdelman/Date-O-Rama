@@ -12,10 +12,6 @@ import EventKitUI
 
 
 struct ASAEventsTab: View {
-    let ADD_EXTERNAL_EVENT_STRING = "Add external event"
-    let FRAME_MIN_WIDTH:  CGFloat  = 300.0
-    let FRAME_MIN_HEIGHT:  CGFloat = 500.0
-
     @ObservedObject var eventManager = ASAEKEventManager.shared
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
@@ -129,12 +125,12 @@ struct ASAEventsTab: View {
                                     {
                                         self.showingEventEditView = true
                                     }, label:  {
-                                        Text(NSLocalizedString(ADD_EXTERNAL_EVENT_STRING, comment: ""))
+                                        Text(NSLocalizedString("Add external event", comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
 //                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
                                     ASANewEKEventView()
-                                        .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                                        .frame(minWidth:  500.0, minHeight:  700.0)
                                 }
                                 .foregroundColor(.accentColor)
                         }
