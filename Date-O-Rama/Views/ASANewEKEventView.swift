@@ -56,33 +56,35 @@ struct ASANewEKEventView: View {
 
                         Spacer()
 
-                        Button("Add") {
-                            self.showingActionSheet = false
+                        if self.title.count != 0 {
+                            Button("Add") {
+                                self.showingActionSheet = false
 
-                            if self.title != "" {
-                                let newEvent = EKEvent(eventStore: ASAEKEventManager.shared.eventStore)
+                                if self.title != "" {
+                                    let newEvent = EKEvent(eventStore: ASAEKEventManager.shared.eventStore)
 
-                                newEvent.title = self.title
+                                    newEvent.title = self.title
 
-                                if self.location != "" {
-                                    newEvent.location = self.location
+                                    if self.location != "" {
+                                        newEvent.location = self.location
+                                    }
+
+                                    newEvent.isAllDay  = self.isAllDay
+                                    newEvent.startDate = self.startDate
+                                    newEvent.endDate   = self.endDate
+                                    newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
+
+                                    let eventStore = ASAEKEventManager.shared.eventStore
+
+                                    do {
+                                        try eventStore.save(newEvent, span: .futureEvents)
+                                    } catch {
+                                        debugPrint(#file, #function, error)
+                                    }
                                 }
 
-                                newEvent.isAllDay  = self.isAllDay
-                                newEvent.startDate = self.startDate
-                                newEvent.endDate   = self.endDate
-                                newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
-
-                                let eventStore = ASAEKEventManager.shared.eventStore
-
-                                do {
-                                    try eventStore.save(newEvent, span: .futureEvents)
-                                } catch {
-                                    debugPrint(#file, #function, error)
-                                }
+                                self.dismiss()
                             }
-
-                            self.dismiss()
                         }
 
                         Spacer().frame(width:  HORIZONTAL_PADDING)
@@ -90,10 +92,10 @@ struct ASANewEKEventView: View {
                 } // Section
 
                 Section {
-                    TextField("Title", text: self.$title)
-                    TextField("Location", text: self.$location)
-                    Toggle("All Day", isOn: self.$isAllDay)
-                    DatePicker("Start", selection: self.$startDate,
+                    TextField("Event Title", text: self.$title)
+                    TextField("Event Location", text: self.$location)
+                    Toggle("Event All Day", isOn: self.$isAllDay)
+                    DatePicker("Event Start", selection: self.$startDate,
                                displayedComponents: self.appropriateDateComponents)
                         .onChange(of: startDate, perform: {
                             value
@@ -102,7 +104,7 @@ struct ASANewEKEventView: View {
                                 self.endDate = self.startDate
                             }
                         })
-                    DatePicker("End", selection: self.$endDate,
+                    DatePicker("Event End", selection: self.$endDate,
                                displayedComponents: self.appropriateDateComponents)
                         .onChange(of: endDate, perform: {
                             value
@@ -115,7 +117,7 @@ struct ASANewEKEventView: View {
 
                 Section {
                     Picker(selection: self.$calendarIndex, label: HStack {
-                        Text("Calendar")
+                        Text("Event Calendar")
                         Spacer()
                     }) {
                         ForEach(0..<self.iCalendarEventCalendars.count, id: \.self) {

@@ -160,3 +160,10 @@
 "What is Adelsoft’s policy on your personal information?" = "מה המדיניות של אדלסופט לגבי המידע האישי שלך?";
 "What should I do if I have a problem with Date-O-Rama?" = "מה עלי לעשות אם יש לי בעיה עם Date-O-Rama?";
 "What calendar systems are currently supported?" = "אלה לוחות שנה נתמכים כרגע?";
+"New Event"      = "אירוע חדש";
+"Event Title"    = "שם האירוע";
+"Event Location" = "מיקום";
+"Event All Day"  = "כל היום";
+"Event Start"    = "מתחיל";
+"Event End"      = "מסתיים";
+"Event Calendar" = "לוח שנה";
