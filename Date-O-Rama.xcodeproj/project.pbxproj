@@ -149,6 +149,7 @@
 		A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
 		A5A9668925A31F2600CF158F /* ASAAllDayTimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */; };
 		A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
+		A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
 		A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
@@ -345,6 +346,7 @@
 		A5A9667B25A31EC900CF158F /* ASAEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCell.swift; sourceTree = "<group>"; };
 		A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAllDayTimesSubcell.swift; sourceTree = "<group>"; };
 		A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimesSubcell.swift; sourceTree = "<group>"; };
+		A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKRecurrenceFrequencyExtensions.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeZones.txt; sourceTree = "<group>"; };
 		A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACapsuleBorder.swift; sourceTree = "<group>"; };
@@ -615,6 +617,7 @@
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */,
+				A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1096,6 +1099,7 @@
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A5932277257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */,
 				A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
+				A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
 				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,

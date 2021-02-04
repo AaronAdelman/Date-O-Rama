@@ -9,17 +9,18 @@
 import EventKit
 import SwiftUI
 
-enum ASARecurrenceRule: String, Equatable, CaseIterable {
-    case never    = "ASARecurrenceRule_never"
-    case daily    = "ASARecurrenceRule_daily"
-    case weekly   = "ASARecurrenceRule_weekly"
-    case biweekly = "ASARecurrenceRule_biweekly"
-    case monthly  = "ASARecurrenceRule_monthly"
-    case yearly   = "ASARecurrenceRule_yearly"
+enum ASARecurrenceType: String, Equatable, CaseIterable {
+    case never    = "ASARecurrenceType_never"
+    case daily    = "ASARecurrenceType_daily"
+    case weekly   = "ASARecurrenceType_weekly"
+    case biweekly = "ASARecurrenceType_biweekly"
+    case monthly  = "ASARecurrenceType_monthly"
+    case yearly   = "ASARecurrenceType_yearly"
+    case custom   = "ASARecurrenceType_custom"
 
     var localizedName: LocalizedStringKey { LocalizedStringKey(rawValue)
     } // var localizedName
-} // enum ASARecurrenceRule
+} // enum ASARecurrenceType
 
 
 // MARK:  -
@@ -30,7 +31,14 @@ struct ASANewEKEventView: View {
     @State private var startDate: Date = Date()
     @State private var endDate: Date = Date()
     @State private var isAllDay: Bool = false
-    @State private var recurrenceRule: ASARecurrenceRule = .never
+    @State private var recurrenceRule: ASARecurrenceType = .never
+
+    // Only for custom recurrence
+    @State private var type: EKRecurrenceFrequency = .daily
+    @State private var interval: Int = 1
+    @State private var daysOfTheWeek: [EKRecurrenceDayOfWeek]?
+    @State private var daysOfTheMonth: [NSNumber]?
+    @State private var monthsOfTheYear: [NSNumber]?
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -55,6 +63,60 @@ struct ASANewEKEventView: View {
 
     let HORIZONTAL_PADDING:  CGFloat = 20.0
 
+    fileprivate func addNewEvent() {
+        if self.title != "" {
+            let newEvent = EKEvent(eventStore: ASAEKEventManager.shared.eventStore)
+
+            newEvent.title = self.title
+
+            if self.location != "" {
+                newEvent.location = self.location
+            }
+
+            newEvent.isAllDay  = self.isAllDay
+            newEvent.startDate = self.startDate
+            newEvent.endDate   = self.endDate
+            switch self.recurrenceRule {
+            case .never:
+                newEvent.recurrenceRules = nil
+
+            case .daily:
+                let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .daily, interval: 1, end: nil)
+                newEvent.addRecurrenceRule(newRecurrenceRule)
+
+            case .weekly:
+                let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .weekly, interval: 1, end: nil)
+                newEvent.addRecurrenceRule(newRecurrenceRule)
+
+            case .biweekly:
+                let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .weekly, interval: 2, end: nil)
+                newEvent.addRecurrenceRule(newRecurrenceRule)
+
+            case .monthly:
+                let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .monthly, interval: 1, end: nil)
+                newEvent.addRecurrenceRule(newRecurrenceRule)
+
+            case .yearly:
+                let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .yearly, interval: 1, end: nil)
+                newEvent.addRecurrenceRule(newRecurrenceRule)
+
+            case .custom:
+                let (newRecurrenceRule) = EKRecurrenceRule(recurrenceWith: type, interval: interval, daysOfTheWeek: daysOfTheWeek, daysOfTheMonth: daysOfTheMonth, monthsOfTheYear: monthsOfTheYear, weeksOfTheYear: nil, daysOfTheYear: nil, setPositions: nil, end: nil)
+                newEvent.addRecurrenceRule(newRecurrenceRule)
+            } // switch self.recurrenceRule
+
+            newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
+
+            let eventStore = ASAEKEventManager.shared.eventStore
+
+            do {
+                try eventStore.save(newEvent, span: .futureEvents)
+            } catch {
+                debugPrint(#file, #function, error)
+            }
+        }
+    } // func addNewEvent()
+
     var body: some View {
         NavigationView {
             Form {
@@ -76,53 +138,7 @@ struct ASANewEKEventView: View {
                             Button("Add") {
                                 self.showingActionSheet = false
 
-                                if self.title != "" {
-                                    let newEvent = EKEvent(eventStore: ASAEKEventManager.shared.eventStore)
-
-                                    newEvent.title = self.title
-
-                                    if self.location != "" {
-                                        newEvent.location = self.location
-                                    }
-
-                                    newEvent.isAllDay  = self.isAllDay
-                                    newEvent.startDate = self.startDate
-                                    newEvent.endDate   = self.endDate
-                                    switch self.recurrenceRule {
-                                    case .never:
-                                        newEvent.recurrenceRules = nil
-
-                                    case .daily:
-                                        let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .daily, interval: 1, end: nil)
-                                        newEvent.addRecurrenceRule(newRecurrenceRule)
-
-                                    case .weekly:
-                                        let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .weekly, interval: 1, end: nil)
-                                        newEvent.addRecurrenceRule(newRecurrenceRule)
-
-                                    case .biweekly:
-                                        let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .weekly, interval: 2, end: nil)
-                                        newEvent.addRecurrenceRule(newRecurrenceRule)
-
-                                    case .monthly:
-                                        let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .monthly, interval: 1, end: nil)
-                                        newEvent.addRecurrenceRule(newRecurrenceRule)
-
-                                    case .yearly:
-                                        let newRecurrenceRule = EKRecurrenceRule(recurrenceWith: .yearly, interval: 1, end: nil)
-                                        newEvent.addRecurrenceRule(newRecurrenceRule)
-                                    } // switch self.recurrenceRule
-
-                                    newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
-
-                                    let eventStore = ASAEKEventManager.shared.eventStore
-
-                                    do {
-                                        try eventStore.save(newEvent, span: .futureEvents)
-                                    } catch {
-                                        debugPrint(#file, #function, error)
-                                    }
-                                }
+                                addNewEvent()
 
                                 self.dismiss()
                             }
@@ -155,11 +171,37 @@ struct ASANewEKEventView: View {
                             }
                         })
                     Picker("Event Recurrence", selection: $recurrenceRule) {
-                        ForEach(ASARecurrenceRule.allCases, id: \.rawValue) { value in
+                        ForEach(ASARecurrenceType.allCases, id: \.rawValue) { value in
                             Text(value.localizedName)
                                 .tag(value)
                         } // ForEach
                     } // Picker
+                    if self.recurrenceRule == .custom {
+                        Picker("Event Frequency", selection:  self.$type) {
+                            ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
+                                value
+                                in
+                                Text(value.text)
+                            } // ForEach
+                        } // Picker
+
+                        switch self.type {
+                        case .daily:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
+
+                        case .weekly:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
+
+                        case .monthly:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
+
+                        case .yearly:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
+
+                        @unknown default:
+                            Text("Unknown default")
+                        } // switch self.type
+                    } // if self.recurrenceRule == .custom
                 } // Section
 
                 Section {
@@ -199,6 +241,22 @@ struct ASANewEKEventView: View {
         }
     } // var body
 }
+
+
+struct ASANewEKEventLabeledIntView: View {
+    var labelString: String
+    @Binding var value: Int
+
+    var body: some View {
+        HStack {
+            Text(NSLocalizedString(labelString, comment: ""))
+            TextField("", value: $value, formatter: NumberFormatter())
+                .multilineTextAlignment(.trailing)
+        } // HStack
+
+    }
+}
+
 
 struct ASANewEventView_Previews: PreviewProvider {
     static var previews: some View {
