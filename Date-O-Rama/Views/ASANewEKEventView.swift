@@ -42,7 +42,8 @@ struct ASANewEKEventView: View {
     @State private var weeksOfTheYear: [NSNumber]?             = nil
     @State private var daysOfTheYear: [NSNumber]?              = nil
     @State private var setPositions: [NSNumber]?               = nil
-    @State private var end: EKRecurrenceEnd?                   = nil
+    @State private var recurrenceEndDate: Date?                = nil
+    @State private var recurrenceOccurrenceCount: Int          = 0
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -105,6 +106,12 @@ struct ASANewEKEventView: View {
                 newEvent.addRecurrenceRule(newRecurrenceRule)
 
             case .custom:
+                var end:  EKRecurrenceEnd? = nil
+                if recurrenceEndDate != nil {
+                    end = EKRecurrenceEnd(end: recurrenceEndDate!)
+                } else if recurrenceOccurrenceCount != 0 {
+                    end = EKRecurrenceEnd(occurrenceCount: recurrenceOccurrenceCount)
+                }
                 let (newRecurrenceRule) = EKRecurrenceRule(recurrenceWith: type, interval: interval, daysOfTheWeek: daysOfTheWeek, daysOfTheMonth: daysOfTheMonth, monthsOfTheYear: monthsOfTheYear, weeksOfTheYear: weeksOfTheYear, daysOfTheYear: daysOfTheYear, setPositions: setPositions, end: end)
                 newEvent.addRecurrenceRule(newRecurrenceRule)
             } // switch self.recurrenceRule
