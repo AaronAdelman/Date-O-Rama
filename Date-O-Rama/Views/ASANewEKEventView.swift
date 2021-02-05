@@ -34,11 +34,15 @@ struct ASANewEKEventView: View {
     @State private var recurrenceRule: ASARecurrenceType = .never
 
     // Only for custom recurrence
-    @State private var type: EKRecurrenceFrequency = .daily
-    @State private var interval: Int = 1
-    @State private var daysOfTheWeek: [EKRecurrenceDayOfWeek]?
-    @State private var daysOfTheMonth: [NSNumber]?
-    @State private var monthsOfTheYear: [NSNumber]?
+    @State private var type: EKRecurrenceFrequency             = .daily
+    @State private var interval: Int                           = 1
+    @State private var daysOfTheWeek: [EKRecurrenceDayOfWeek]? = nil
+    @State private var daysOfTheMonth: [NSNumber]?             = nil
+    @State private var monthsOfTheYear: [NSNumber]?            = nil
+    @State private var weeksOfTheYear: [NSNumber]?             = nil
+    @State private var daysOfTheYear: [NSNumber]?              = nil
+    @State private var setPositions: [NSNumber]?               = nil
+    @State private var end: EKRecurrenceEnd?                   = nil
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -101,7 +105,7 @@ struct ASANewEKEventView: View {
                 newEvent.addRecurrenceRule(newRecurrenceRule)
 
             case .custom:
-                let (newRecurrenceRule) = EKRecurrenceRule(recurrenceWith: type, interval: interval, daysOfTheWeek: daysOfTheWeek, daysOfTheMonth: daysOfTheMonth, monthsOfTheYear: monthsOfTheYear, weeksOfTheYear: nil, daysOfTheYear: nil, setPositions: nil, end: nil)
+                let (newRecurrenceRule) = EKRecurrenceRule(recurrenceWith: type, interval: interval, daysOfTheWeek: daysOfTheWeek, daysOfTheMonth: daysOfTheMonth, monthsOfTheYear: monthsOfTheYear, weeksOfTheYear: weeksOfTheYear, daysOfTheYear: daysOfTheYear, setPositions: setPositions, end: end)
                 newEvent.addRecurrenceRule(newRecurrenceRule)
             } // switch self.recurrenceRule
 
@@ -243,6 +247,8 @@ struct ASANewEKEventView: View {
 }
 
 
+// MARK:  -
+
 struct ASANewEKEventLabeledIntView: View {
     var labelString: String
     @Binding var value: Int
@@ -257,6 +263,8 @@ struct ASANewEKEventLabeledIntView: View {
     }
 }
 
+
+// MARK:  -
 
 struct ASANewEventView_Previews: PreviewProvider {
     static var previews: some View {
