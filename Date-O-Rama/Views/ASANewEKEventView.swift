@@ -128,6 +128,11 @@ struct ASANewEKEventView: View {
         }
     } // func addNewEvent()
 
+    private func gridLayout(count: Int) -> Array<GridItem> {
+        let temp:  Array<GridItem> = Array(repeating: GridItem(), count: count)
+        return temp
+    } // func gridLayout(count: Int) -> Array<GridItem>
+
     var body: some View {
         NavigationView {
             Form {
@@ -188,36 +193,40 @@ struct ASANewEKEventView: View {
                         } // ForEach
                     } // Picker
                     if self.recurrenceRule == .custom {
-                        HStack {
-                            Spacer()
-                                .frame(width: 10.0)
-                            VStack {
-                                Picker("Event Frequency", selection:  self.$type) {
-                                    ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
-                                        value
-                                        in
-                                        Text(value.text)
-                                    } // ForEach
-                                } // Picker
+                        Picker("Event Frequency", selection:  self.$type) {
+                            ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
+                                value
+                                in
+                                Text(value.text)
+                            } // ForEach
+                        } // Picker
 
-                                switch self.type {
-                                case .daily:
-                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
+                        let GregorianCalendar = Calendar(identifier: .gregorian)
+                        switch self.type {
+                        case .daily:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
 
-                                case .weekly:
-                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
+                        case .weekly:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
+                            let symbols: [String] = GregorianCalendar.veryShortStandaloneWeekdaySymbols
+                            let numberOfColumns = 7
+                            LazyVGrid(columns: gridLayout(count: numberOfColumns), spacing: 0.0) {
+                                ForEach(0..<numberOfColumns) {
+                                    value
+                                    in
+                                    Text(verbatim: symbols[value])
+                                } // ForEach
+                            } // LazyVGrid
 
-                                case .monthly:
-                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
+                        case .monthly:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
 
-                                case .yearly:
-                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
+                        case .yearly:
+                            ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
 
-                                @unknown default:
-                                    Text("Unknown default")
-                                } // switch self.type
-                            } // VStack
-                        } // HStack
+                        @unknown default:
+                            Text("Unknown default")
+                        } // switch self.type
                     } // if self.recurrenceRule == .custom
                 } // Section
 
