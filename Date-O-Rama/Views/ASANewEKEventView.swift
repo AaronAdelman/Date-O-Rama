@@ -241,7 +241,8 @@ struct ASANewEKEventView: View {
 
                         case .monthly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
-                            let values:  Array<Int> = Array(1...31)
+                            let DAYS_PER_MONTH = 31
+                            let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
                             ForEach(0..<values.count) {
                                 i
                                 in
@@ -269,7 +270,8 @@ struct ASANewEKEventView: View {
                         case .yearly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
                             let symbols: [String] = GregorianCalendar.standaloneMonthSymbols
-                            let values:  Array<Int> = Array(1...12)
+                            let MONTHS_PER_YEAR = 12
+                            let values:  Array<Int> = Array(1...MONTHS_PER_YEAR)
                             ForEach(0..<values.count) {
                                 i
                                 in
