@@ -188,30 +188,36 @@ struct ASANewEKEventView: View {
                         } // ForEach
                     } // Picker
                     if self.recurrenceRule == .custom {
-                        Picker("Event Frequency", selection:  self.$type) {
-                            ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
-                                value
-                                in
-                                Text(value.text)
-                            } // ForEach
-                        } // Picker
+                        HStack {
+                            Spacer()
+                                .frame(width: 10.0)
+                            VStack {
+                                Picker("Event Frequency", selection:  self.$type) {
+                                    ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
+                                        value
+                                        in
+                                        Text(value.text)
+                                    } // ForEach
+                                } // Picker
 
-                        switch self.type {
-                        case .daily:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
+                                switch self.type {
+                                case .daily:
+                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
 
-                        case .weekly:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
+                                case .weekly:
+                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
 
-                        case .monthly:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
+                                case .monthly:
+                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
 
-                        case .yearly:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
+                                case .yearly:
+                                    ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
 
-                        @unknown default:
-                            Text("Unknown default")
-                        } // switch self.type
+                                @unknown default:
+                                    Text("Unknown default")
+                                } // switch self.type
+                            } // VStack
+                        } // HStack
                     } // if self.recurrenceRule == .custom
                 } // Section
 
