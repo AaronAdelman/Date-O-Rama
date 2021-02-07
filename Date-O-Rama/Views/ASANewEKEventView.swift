@@ -221,17 +221,17 @@ struct ASANewEKEventView: View {
                                 let weekday: EKWeekday = values[i]
                                 let recurringWeekday: EKRecurrenceDayOfWeek = EKRecurrenceDayOfWeek(weekday)
                                 HStack {
-                                Button(symbols[i], action: {
-                                    debugPrint(#file, #function, symbols[i], weekday)
-                                    if daysOfTheWeek == nil {
-                                        daysOfTheWeek = [recurringWeekday]
-                                    } else if daysOfTheWeek!.contains(recurringWeekday) {
-                                        let index = daysOfTheWeek!.firstIndex(of: recurringWeekday)
-                                        daysOfTheWeek!.remove(at: index!)
-                                    } else {
-                                        daysOfTheWeek!.append(recurringWeekday)
-                                    }
-                                })
+                                    Button("• " + symbols[i], action: {
+                                        debugPrint(#file, #function, symbols[i], weekday)
+                                        if daysOfTheWeek == nil {
+                                            daysOfTheWeek = [recurringWeekday]
+                                        } else if daysOfTheWeek!.contains(recurringWeekday) {
+                                            let index = daysOfTheWeek!.firstIndex(of: recurringWeekday)
+                                            daysOfTheWeek!.remove(at: index!)
+                                        } else {
+                                            daysOfTheWeek!.append(recurringWeekday)
+                                        }
+                                    })
                                     Spacer()
                                     if daysOfTheWeek?.contains(recurringWeekday) ?? false {
                                         ASACheckmarkSymbol()
