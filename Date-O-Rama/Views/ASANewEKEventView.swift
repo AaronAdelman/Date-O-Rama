@@ -201,22 +201,44 @@ struct ASANewEKEventView: View {
                             } // ForEach
                         } // Picker
 
-                        let GregorianCalendar = Calendar(identifier: .gregorian)
+                        let GregorianCalendar: Calendar = {
+                            var calendar = Calendar(identifier: .gregorian)
+                            calendar.locale = Locale.current
+                            return calendar
+                        }()
+
                         switch self.type {
                         case .daily:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
 
                         case .weekly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
-                            let symbols: [String] = GregorianCalendar.veryShortStandaloneWeekdaySymbols
-                            let numberOfColumns = 7
-                            LazyVGrid(columns: gridLayout(count: numberOfColumns), spacing: 0.0) {
-                                ForEach(0..<numberOfColumns) {
-                                    value
-                                    in
-                                    Text(verbatim: symbols[value])
-                                } // ForEach
-                            } // LazyVGrid
+                            let symbols: [String] = GregorianCalendar.standaloneWeekdaySymbols
+                            let values:  Array<EKWeekday> = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
+                            ForEach(0..<values.count) {
+                                i
+                                in
+                                let weekday: EKWeekday = values[i]
+                                let recurringWeekday: EKRecurrenceDayOfWeek = EKRecurrenceDayOfWeek(weekday)
+                                HStack {
+                                Button(symbols[i], action: {
+                                    debugPrint(#file, #function, symbols[i], weekday)
+                                    if daysOfTheWeek == nil {
+                                        daysOfTheWeek = [recurringWeekday]
+                                    } else if daysOfTheWeek!.contains(recurringWeekday) {
+                                        let index = daysOfTheWeek!.firstIndex(of: recurringWeekday)
+                                        daysOfTheWeek!.remove(at: index!)
+                                    } else {
+                                        daysOfTheWeek!.append(recurringWeekday)
+                                    }
+                                })
+                                    Spacer()
+                                    if daysOfTheWeek?.contains(recurringWeekday) ?? false {
+                                        ASACheckmarkSymbol()
+                                    }
+                                } // HStack
+
+                            } // ForEach
 
                         case .monthly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
