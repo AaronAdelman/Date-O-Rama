@@ -265,9 +265,34 @@ struct ASANewEKEventView: View {
                                     }
                                 } // HStack
                             } // ForEach
-                        
+
                         case .yearly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
+                            let symbols: [String] = GregorianCalendar.standaloneMonthSymbols
+                            let values:  Array<Int> = Array(1...12)
+                            ForEach(0..<values.count) {
+                                i
+                                in
+                                let month: Int = values[i]
+                                let recurringMonth: NSNumber = NSNumber(value: month)
+                                HStack {
+                                    Button(action: {
+                                        if monthsOfTheYear == nil {
+                                            monthsOfTheYear = [recurringMonth]
+                                        } else if monthsOfTheYear!.contains(recurringMonth) {
+                                            monthsOfTheYear!.remove(recurringMonth)
+                                        } else {
+                                            monthsOfTheYear!.append(recurringMonth)
+                                        }
+                                    }) {
+                                        ASANewEventBulletedLabel(text: symbols[i])
+                                    }
+                                    Spacer()
+                                    if monthsOfTheYear?.contains(recurringMonth) ?? false {
+                                        ASACheckmarkSymbol()
+                                    }
+                                } // HStack
+                            } // ForEach
 
                         @unknown default:
                             Text("Unknown default")
