@@ -221,28 +221,51 @@ struct ASANewEKEventView: View {
                                 let weekday: EKWeekday = values[i]
                                 let recurringWeekday: EKRecurrenceDayOfWeek = EKRecurrenceDayOfWeek(weekday)
                                 HStack {
-                                    Button("• " + symbols[i], action: {
-                                        debugPrint(#file, #function, symbols[i], weekday)
+                                    Button(action: {
                                         if daysOfTheWeek == nil {
                                             daysOfTheWeek = [recurringWeekday]
                                         } else if daysOfTheWeek!.contains(recurringWeekday) {
-                                            let index = daysOfTheWeek!.firstIndex(of: recurringWeekday)
-                                            daysOfTheWeek!.remove(at: index!)
+                                            daysOfTheWeek!.remove(recurringWeekday)
                                         } else {
                                             daysOfTheWeek!.append(recurringWeekday)
                                         }
-                                    })
+                                    }) {
+                                        ASANewEventBulletedLabel(text: symbols[i])
+                                    }
                                     Spacer()
                                     if daysOfTheWeek?.contains(recurringWeekday) ?? false {
                                         ASACheckmarkSymbol()
                                     }
                                 } // HStack
-
                             } // ForEach
 
                         case .monthly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
-
+                            let values:  Array<Int> = Array(1...31)
+                            ForEach(0..<values.count) {
+                                i
+                                in
+                                let day: Int = values[i]
+                                let recurringDay: NSNumber = NSNumber(value: day)
+                                HStack {
+                                    Button(action: {
+                                        if daysOfTheMonth == nil {
+                                            daysOfTheMonth = [recurringDay]
+                                        } else if daysOfTheMonth!.contains(recurringDay) {
+                                            daysOfTheMonth!.remove(recurringDay)
+                                        } else {
+                                            daysOfTheMonth!.append(recurringDay)
+                                        }
+                                    }) {
+                                        ASANewEventBulletedLabel(text: "\(values[i])")
+                                    }
+                                    Spacer()
+                                    if daysOfTheMonth?.contains(recurringDay) ?? false {
+                                        ASACheckmarkSymbol()
+                                    }
+                                } // HStack
+                            } // ForEach
+                        
                         case .yearly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
 
@@ -291,7 +314,33 @@ struct ASANewEKEventView: View {
 }
 
 
+extension Array where Element == EKRecurrenceDayOfWeek {
+    mutating func remove(_ element:  Element) {
+        let index = self.firstIndex(of: element)
+        self.remove(at: index!)
+    }
+}
+
+extension Array where Element == NSNumber {
+    mutating func remove(_ element:  Element) {
+        let index = self.firstIndex(of: element)
+        self.remove(at: index!)
+    }
+}
+
+
 // MARK:  -
+
+struct ASANewEventBulletedLabel:  View {
+    var text: String
+
+    var body: some View {
+        HStack {
+            Text("•")
+            Text(text)
+        }
+    }
+}
 
 struct ASANewEKEventLabeledIntView: View {
     var labelString: String
