@@ -23,8 +23,6 @@ enum ASARecurrenceType: String, Equatable, CaseIterable {
 } // enum ASARecurrenceType
 
 
-// MARK:  -
-
 struct ASANewEKEventView: View {
     @State private var title: String = ""
     @State private var location: String = ""
@@ -44,6 +42,9 @@ struct ASANewEKEventView: View {
     @State private var setPositions: [NSNumber]?               = nil
     @State private var recurrenceEndDate: Date?                = nil
     @State private var recurrenceOccurrenceCount: Int          = 0
+    @State private var monthlyIsByDayOfMonth: Bool             = true
+    @State private var recurrenceDayOfTheWeek: Int             = 1
+    @State private var recurrenceWeekNumber: Int               = 1
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -112,6 +113,17 @@ struct ASANewEKEventView: View {
                 } else if recurrenceOccurrenceCount != 0 {
                     end = EKRecurrenceEnd(occurrenceCount: recurrenceOccurrenceCount)
                 }
+                if type == .monthly {
+                    if monthlyIsByDayOfMonth {
+                        self.daysOfTheWeek = nil
+                    } else {
+                        self.daysOfTheMonth = nil
+                        let values:  Array<EKWeekday> = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
+                        let dayOfTheWeek = EKRecurrenceDayOfWeek(dayOfTheWeek: values[self.recurrenceDayOfTheWeek - 1], weekNumber: self.recurrenceWeekNumber)
+                        self.daysOfTheWeek = [dayOfTheWeek]
+                    }
+                }
+
                 let (newRecurrenceRule) = EKRecurrenceRule(recurrenceWith: type, interval: interval, daysOfTheWeek: daysOfTheWeek, daysOfTheMonth: daysOfTheMonth, monthsOfTheYear: monthsOfTheYear, weeksOfTheYear: weeksOfTheYear, daysOfTheYear: daysOfTheYear, setPositions: setPositions, end: end)
                 newEvent.addRecurrenceRule(newRecurrenceRule)
             } // switch self.recurrenceRule
@@ -127,11 +139,6 @@ struct ASANewEKEventView: View {
             }
         }
     } // func addNewEvent()
-
-    private func gridLayout(count: Int) -> Array<GridItem> {
-        let temp:  Array<GridItem> = Array(repeating: GridItem(), count: count)
-        return temp
-    } // func gridLayout(count: Int) -> Array<GridItem>
 
     var body: some View {
         NavigationView {
@@ -241,31 +248,58 @@ struct ASANewEKEventView: View {
 
                         case .monthly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
-                            let DAYS_PER_MONTH = 31
-                            let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
-                            ForEach(0..<values.count) {
-                                i
-                                in
-                                let day: Int = values[i]
-                                let recurringDay: NSNumber = NSNumber(value: day)
-                                HStack {
-                                    Button(action: {
-                                        if daysOfTheMonth == nil {
-                                            daysOfTheMonth = [recurringDay]
-                                        } else if daysOfTheMonth!.contains(recurringDay) {
-                                            daysOfTheMonth!.remove(recurringDay)
-                                        } else {
-                                            daysOfTheMonth!.append(recurringDay)
+                            Button(action: {
+                                self.monthlyIsByDayOfMonth = true
+                            }) {
+                                ASACheckmarkableLabel(shouldShowCheckmark: self.monthlyIsByDayOfMonth, text: "Every")
+                            }
+
+                            if self.monthlyIsByDayOfMonth {
+                                let DAYS_PER_MONTH = 31
+                                let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
+                                ForEach(0..<values.count) {
+                                    i
+                                    in
+                                    let day: Int = values[i]
+                                    let recurringDay: NSNumber = NSNumber(value: day)
+                                    HStack {
+                                        Button(action: {
+                                            if daysOfTheMonth == nil {
+                                                daysOfTheMonth = [recurringDay]
+                                            } else if daysOfTheMonth!.contains(recurringDay) {
+                                                daysOfTheMonth!.remove(recurringDay)
+                                            } else {
+                                                daysOfTheMonth!.append(recurringDay)
+                                            }
+                                        }) {
+                                            ASANewEventBulletedLabel(text: "\(values[i])")
                                         }
-                                    }) {
-                                        ASANewEventBulletedLabel(text: "\(values[i])")
+                                        Spacer()
+                                        if daysOfTheMonth?.contains(recurringDay) ?? false {
+                                            ASACheckmarkSymbol()
+                                        }
+                                    } // HStack
+                                } // ForEach
+                            }
+                            Button(action: {
+                                self.monthlyIsByDayOfMonth = false
+                            }) {
+                                ASACheckmarkableLabel(shouldShowCheckmark: !self.monthlyIsByDayOfMonth, text: "On")
+                            }
+                            if !self.monthlyIsByDayOfMonth {
+                                let symbols: [String] = GregorianCalendar.standaloneWeekdaySymbols
+                                Picker(selection: self.$recurrenceDayOfTheWeek, label: HStack {
+                                    Text("Day of week")
+                                }
+                                ) {
+                                    ForEach(1 ... 7, id: \.self) {
+                                        Text(verbatim: symbols[$0 - 1]).tag($0)
                                     }
-                                    Spacer()
-                                    if daysOfTheMonth?.contains(recurringDay) ?? false {
-                                        ASACheckmarkSymbol()
-                                    }
-                                } // HStack
-                            } // ForEach
+                                }
+                                ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$recurrenceWeekNumber)
+
+                            }
+
 
                         case .yearly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
@@ -338,22 +372,25 @@ struct ASANewEKEventView: View {
             ])
         }
     } // var body
-}
+} // struct ASANewEKEventView
 
 
-extension Array where Element == EKRecurrenceDayOfWeek {
-    mutating func remove(_ element:  Element) {
-        let index = self.firstIndex(of: element)
-        self.remove(at: index!)
-    }
-}
+// MARK:  -
 
-extension Array where Element == NSNumber {
-    mutating func remove(_ element:  Element) {
-        let index = self.firstIndex(of: element)
-        self.remove(at: index!)
-    }
-}
+struct ASACheckmarkableLabel: View {
+    var shouldShowCheckmark: Bool
+    var text: String
+
+    var body: some View {
+        HStack {
+            Text(text)
+            Spacer()
+            if shouldShowCheckmark {
+                ASACheckmarkSymbol()
+            }
+        } // HStack
+    } // var body
+} // struct ASACheckmarkableLabel
 
 
 // MARK:  -
