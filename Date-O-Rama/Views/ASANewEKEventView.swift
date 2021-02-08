@@ -369,6 +369,9 @@ struct ASANewEventBulletedLabel:  View {
     }
 }
 
+
+// MARK:  -
+
 struct ASANewEKEventLabeledIntView: View {
     var labelString: String
     @Binding var value: Int
@@ -378,6 +381,7 @@ struct ASANewEKEventLabeledIntView: View {
             Text(NSLocalizedString(labelString, comment: ""))
             TextField("", value: $value, formatter: NumberFormatter())
                 .multilineTextAlignment(.trailing)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
         } // HStack
 
     }
