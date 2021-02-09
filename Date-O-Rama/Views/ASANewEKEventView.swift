@@ -45,10 +45,26 @@ enum ASARecurrenceWeekNumber: Int, Equatable, CaseIterable {
             rawValue = "Fifth"
         case .last:
             rawValue = "Last"
-        }
+        } // switch self
         return rawValue
-    }
-}
+    } // var text
+} // enum ASARecurrenceWeekNumber
+
+enum ASARecurrenceMonthly: Int, CaseIterable {
+    case byDayOfMonth
+    case byDayOfWeekAndWeekNumber
+
+    var text: String {
+        var rawValue = ""
+        switch self {
+        case .byDayOfMonth:
+            rawValue = "Every"
+        case .byDayOfWeekAndWeekNumber:
+            rawValue = "On"
+        } // switch self
+        return rawValue
+    } // var text
+} // enum ASARecurrenceMonthly
 
 
 struct ASANewEKEventView: View {
@@ -70,7 +86,7 @@ struct ASANewEKEventView: View {
     @State private var setPositions: [NSNumber]?               = nil
     @State private var recurrenceEndDate: Date?                = nil
     @State private var recurrenceOccurrenceCount: Int          = 0
-    @State private var monthlyIsByDayOfMonth: Bool             = true
+    @State private var recurrenceMonthly: ASARecurrenceMonthly = .byDayOfMonth
     @State private var recurrenceDayOfTheWeek: Int             = 1
     @State private var recurrenceWeekNumber: ASARecurrenceWeekNumber               = .first
 
@@ -142,7 +158,7 @@ struct ASANewEKEventView: View {
                     end = EKRecurrenceEnd(occurrenceCount: recurrenceOccurrenceCount)
                 }
                 if type == .monthly {
-                    if monthlyIsByDayOfMonth {
+                    if recurrenceMonthly == .byDayOfMonth {
                         self.daysOfTheWeek = nil
                     } else {
                         self.daysOfTheMonth = nil
@@ -277,13 +293,16 @@ struct ASANewEKEventView: View {
 
                         case .monthly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
-                            Button(action: {
-                                self.monthlyIsByDayOfMonth = true
-                            }) {
-                                ASACheckmarkableLabel(shouldShowCheckmark: self.monthlyIsByDayOfMonth, text: "Every")
-                            }
 
-                            if self.monthlyIsByDayOfMonth {
+                            Picker("Monthly recurrence", selection: self.$recurrenceMonthly) {
+                                ForEach(ASARecurrenceMonthly.allCases, id: \.rawValue) { value in
+                                    Text(value.text)
+                                        .tag(value)
+                                } // ForEach
+                            }
+                            .pickerStyle(SegmentedPickerStyle())
+
+                            if self.recurrenceMonthly == .byDayOfMonth {
                                 let DAYS_PER_MONTH = 31
                                 let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
                                 ForEach(0..<values.count) {
@@ -310,12 +329,8 @@ struct ASANewEKEventView: View {
                                     } // HStack
                                 } // ForEach
                             }
-                            Button(action: {
-                                self.monthlyIsByDayOfMonth = false
-                            }) {
-                                ASACheckmarkableLabel(shouldShowCheckmark: !self.monthlyIsByDayOfMonth, text: "On")
-                            }
-                            if !self.monthlyIsByDayOfMonth {
+
+                            if self.recurrenceMonthly == .byDayOfWeekAndWeekNumber {
                                 let symbols: [String] = GregorianCalendar.shortStandaloneWeekdaySymbols
                                 Picker(selection: self.$recurrenceDayOfTheWeek, label: Text("Day of week")) {
                                     ForEach(1 ... 7, id: \.self) {
@@ -405,24 +420,6 @@ struct ASANewEKEventView: View {
         }
     } // var body
 } // struct ASANewEKEventView
-
-
-// MARK:  -
-
-struct ASACheckmarkableLabel: View {
-    var shouldShowCheckmark: Bool
-    var text: String
-
-    var body: some View {
-        HStack {
-            Text(text)
-            Spacer()
-            if shouldShowCheckmark {
-                ASACheckmarkSymbol()
-            }
-        } // HStack
-    } // var body
-} // struct ASACheckmarkableLabel
 
 
 // MARK:  -
