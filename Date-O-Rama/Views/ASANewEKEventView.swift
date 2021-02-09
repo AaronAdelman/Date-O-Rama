@@ -235,6 +235,7 @@ struct ASANewEKEventView: View {
                                 Text(value.text)
                             } // ForEach
                         } // Picker
+                        .pickerStyle(SegmentedPickerStyle())
 
                         let GregorianCalendar: Calendar = {
                             var calendar = Calendar(identifier: .gregorian)
@@ -315,18 +316,21 @@ struct ASANewEKEventView: View {
                                 ASACheckmarkableLabel(shouldShowCheckmark: !self.monthlyIsByDayOfMonth, text: "On")
                             }
                             if !self.monthlyIsByDayOfMonth {
-                                let symbols: [String] = GregorianCalendar.standaloneWeekdaySymbols
+                                let symbols: [String] = GregorianCalendar.shortStandaloneWeekdaySymbols
                                 Picker(selection: self.$recurrenceDayOfTheWeek, label: Text("Day of week")) {
                                     ForEach(1 ... 7, id: \.self) {
                                         Text(verbatim: symbols[$0 - 1]).tag($0)
                                     }
                                 }
+                                .pickerStyle(SegmentedPickerStyle())
+
                                 Picker("Week number", selection: $recurrenceWeekNumber) {
                                     ForEach(ASARecurrenceWeekNumber.allCases, id: \.rawValue) { value in
                                         Text(value.text)
                                             .tag(value)
                                     } // ForEach
                                 } // Picker
+                                .pickerStyle(SegmentedPickerStyle())
                             }
 
                         case .yearly:
