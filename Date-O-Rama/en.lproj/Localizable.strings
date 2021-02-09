@@ -184,3 +184,9 @@
 "EKRecurrenceFrequency_weekly"  = "Weekly";
 "EKRecurrenceFrequency_monthly" = "Monthly";
 "EKRecurrenceFrequency_yearly"  = "Yearly";
+"ASARecurrenceWeekNumber_First"  = "First";
+"ASARecurrenceWeekNumber_Second" = "Second";
+"ASARecurrenceWeekNumber_Third"  = "Third";
+"ASARecurrenceWeekNumber_Fourth" = "Fourth";
+"ASARecurrenceWeekNumber_Fifth"  = "Fifth";
+"ASARecurrenceWeekNumber_Last"   = "Last";

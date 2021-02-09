@@ -184,3 +184,9 @@
 "EKRecurrenceFrequency_weekly"  = "כל שבוע";
 "EKRecurrenceFrequency_monthly" = "פעם בחודש";
 "EKRecurrenceFrequency_yearly"  = "כל שנה";
+"ASARecurrenceWeekNumber_First"  = "ראשון";
+"ASARecurrenceWeekNumber_Second" = "שני";
+"ASARecurrenceWeekNumber_Third"  = "שלישי";
+"ASARecurrenceWeekNumber_Fourth" = "רביעי";
+"ASARecurrenceWeekNumber_Fifth"  = "חמישי";
+"ASARecurrenceWeekNumber_Last"   = "אחרון";

@@ -34,19 +34,19 @@ enum ASARecurrenceWeekNumber: Int, Equatable, CaseIterable {
         var rawValue = ""
         switch self {
         case .first:
-            rawValue = "First"
+            rawValue = "ASARecurrenceWeekNumber_First"
         case .second:
-            rawValue = "Second"
+            rawValue = "ASARecurrenceWeekNumber_Second"
         case .third:
-            rawValue = "Third"
+            rawValue = "ASARecurrenceWeekNumber_Third"
         case .fourth:
-            rawValue = "Fourth"
+            rawValue = "ASARecurrenceWeekNumber_Fourth"
         case .fifth:
-            rawValue = "Fifth"
+            rawValue = "ASARecurrenceWeekNumber_Fifth"
         case .last:
-            rawValue = "Last"
+            rawValue = "ASARecurrenceWeekNumber_Last"
         } // switch self
-        return rawValue
+        return NSLocalizedString(rawValue, comment: "")
     } // var text
 } // enum ASARecurrenceWeekNumber
 
