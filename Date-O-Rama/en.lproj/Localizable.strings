@@ -190,3 +190,5 @@
 "ASARecurrenceWeekNumber_Fourth" = "Fourth";
 "ASARecurrenceWeekNumber_Fifth"  = "Fifth";
 "ASARecurrenceWeekNumber_Last"   = "Last";
+"ASARecurrenceMonthly_Every" = "Days";
+"ASARecurrenceMonthly_On"    = "Weekdays";

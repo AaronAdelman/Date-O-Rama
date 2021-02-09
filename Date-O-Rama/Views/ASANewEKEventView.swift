@@ -58,11 +58,11 @@ enum ASARecurrenceMonthly: Int, CaseIterable {
         var rawValue = ""
         switch self {
         case .byDayOfMonth:
-            rawValue = "Every"
+            rawValue = "ASARecurrenceMonthly_Every"
         case .byDayOfWeekAndWeekNumber:
-            rawValue = "On"
+            rawValue = "ASARecurrenceMonthly_On"
         } // switch self
-        return rawValue
+        return NSLocalizedString(rawValue, comment: "")
     } // var text
 } // enum ASARecurrenceMonthly
 

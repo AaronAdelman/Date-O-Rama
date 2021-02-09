@@ -190,3 +190,5 @@
 "ASARecurrenceWeekNumber_Fourth" = "רביעי";
 "ASARecurrenceWeekNumber_Fifth"  = "חמישי";
 "ASARecurrenceWeekNumber_Last"   = "אחרון";
+"ASARecurrenceMonthly_Every" = "ימי החודש";
+"ASARecurrenceMonthly_On"    = "ימי השבוע";
