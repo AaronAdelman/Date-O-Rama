@@ -192,3 +192,5 @@
 "ASARecurrenceWeekNumber_Last"   = "Last";
 "ASARecurrenceMonthly_Every" = "Days";
 "ASARecurrenceMonthly_On"    = "Weekdays";
+"ASARecurrenceYearly_All" = "All days";
+"ASARecurrenceYearly_On" = "On…";

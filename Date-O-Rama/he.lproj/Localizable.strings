@@ -192,3 +192,5 @@
 "ASARecurrenceWeekNumber_Last"   = "אחרון";
 "ASARecurrenceMonthly_Every" = "ימי החודש";
 "ASARecurrenceMonthly_On"    = "ימי השבוע";
+"ASARecurrenceYearly_All" = "כל יום";
+"ASARecurrenceYearly_On" = "ב…";

@@ -66,6 +66,22 @@ enum ASARecurrenceMonthly: Int, CaseIterable {
     } // var text
 } // enum ASARecurrenceMonthly
 
+enum ASARecurrenceYearly: Int, CaseIterable {
+    case onAnyDay
+    case byDayOfWeekAndWeekNumber
+
+    var text: String {
+        var rawValue = ""
+        switch self {
+        case .onAnyDay:
+            rawValue = "ASARecurrenceYearly_All"
+        case .byDayOfWeekAndWeekNumber:
+            rawValue = "ASARecurrenceYearly_On"
+        } // switch self
+        return NSLocalizedString(rawValue, comment: "")
+    } // var text
+} //
+
 
 struct ASANewEKEventView: View {
     @State private var title: String = ""
@@ -89,6 +105,8 @@ struct ASANewEKEventView: View {
     @State private var recurrenceMonthly: ASARecurrenceMonthly = .byDayOfMonth
     @State private var recurrenceDayOfTheWeek: Int             = 1
     @State private var recurrenceWeekNumber: ASARecurrenceWeekNumber               = .first
+    @State private var recurrenceYearly: ASARecurrenceYearly = .onAnyDay
+
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -162,6 +180,15 @@ struct ASANewEKEventView: View {
                         self.daysOfTheWeek = nil
                     } else {
                         self.daysOfTheMonth = nil
+                        let values:  Array<EKWeekday> = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
+                        let dayOfTheWeek = EKRecurrenceDayOfWeek(dayOfTheWeek: values[self.recurrenceDayOfTheWeek - 1], weekNumber: self.recurrenceWeekNumber.rawValue)
+                        self.daysOfTheWeek = [dayOfTheWeek]
+                    }
+                }
+                if type == .yearly {
+                    if recurrenceYearly == .onAnyDay {
+                        self.daysOfTheWeek = nil
+                    } else {
                         let values:  Array<EKWeekday> = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
                         let dayOfTheWeek = EKRecurrenceDayOfWeek(dayOfTheWeek: values[self.recurrenceDayOfTheWeek - 1], weekNumber: self.recurrenceWeekNumber.rawValue)
                         self.daysOfTheWeek = [dayOfTheWeek]
@@ -331,21 +358,7 @@ struct ASANewEKEventView: View {
                             }
 
                             if self.recurrenceMonthly == .byDayOfWeekAndWeekNumber {
-                                let symbols: [String] = GregorianCalendar.shortStandaloneWeekdaySymbols
-                                Picker(selection: self.$recurrenceDayOfTheWeek, label: Text("Day of week")) {
-                                    ForEach(1 ... 7, id: \.self) {
-                                        Text(verbatim: symbols[$0 - 1]).tag($0)
-                                    }
-                                }
-                                .pickerStyle(SegmentedPickerStyle())
-
-                                Picker("Week number", selection: $recurrenceWeekNumber) {
-                                    ForEach(ASARecurrenceWeekNumber.allCases, id: \.rawValue) { value in
-                                        Text(value.text)
-                                            .tag(value)
-                                    } // ForEach
-                                } // Picker
-                                .pickerStyle(SegmentedPickerStyle())
+                                ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
                             }
 
                         case .yearly:
@@ -376,6 +389,16 @@ struct ASANewEKEventView: View {
                                     }
                                 } // HStack
                             } // ForEach
+                            Picker("Yearly recurrence", selection: self.$recurrenceYearly) {
+                                ForEach(ASARecurrenceYearly.allCases, id: \.rawValue) { value in
+                                    Text(value.text)
+                                        .tag(value)
+                                } // ForEach
+                            }
+                            .pickerStyle(SegmentedPickerStyle())
+                            if self.recurrenceYearly == .byDayOfWeekAndWeekNumber {
+                                ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
+                            }
 
                         @unknown default:
                             Text("Unknown default")
@@ -420,6 +443,33 @@ struct ASANewEKEventView: View {
         }
     } // var body
 } // struct ASANewEKEventView
+
+
+// MARK:  -
+
+struct ASADayOfWeekAndWeekNumberPicker: View {
+    var GregorianCalendar: Calendar
+    @Binding var recurrenceDayOfTheWeek: Int
+    @Binding var recurrenceWeekNumber: ASARecurrenceWeekNumber
+
+    var body: some View {
+        let symbols: [String] = GregorianCalendar.shortStandaloneWeekdaySymbols
+        Picker(selection: self.$recurrenceDayOfTheWeek, label: Text("Day of week")) {
+            ForEach(1 ... 7, id: \.self) {
+                Text(verbatim: symbols[$0 - 1]).tag($0)
+            }
+        }
+        .pickerStyle(SegmentedPickerStyle())
+
+        Picker("Week number", selection: $recurrenceWeekNumber) {
+            ForEach(ASARecurrenceWeekNumber.allCases, id: \.rawValue) { value in
+                Text(value.text)
+                    .tag(value)
+            } // ForEach
+        } // Picker
+        .pickerStyle(SegmentedPickerStyle())
+    }
+}
 
 
 // MARK:  -
