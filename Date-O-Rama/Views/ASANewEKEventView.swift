@@ -129,6 +129,9 @@ struct ASANewEKEventView: View {
     @State private var recurrenceYearly: ASARecurrenceYearly   = .onAnyDay
     @State private var recurrenceEndType: ASARecurrenceEndType = .none
 
+    @State private var URLString: String = ""
+    @State private var notes: String     = ""
+
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
     @State private var calendarIndex = 0
@@ -225,6 +228,15 @@ struct ASANewEKEventView: View {
                 let (newRecurrenceRule) = EKRecurrenceRule(recurrenceWith: type, interval: interval, daysOfTheWeek: daysOfTheWeek, daysOfTheMonth: daysOfTheMonth, monthsOfTheYear: monthsOfTheYear, weeksOfTheYear: weeksOfTheYear, daysOfTheYear: daysOfTheYear, setPositions: setPositions, end: end)
                 newEvent.addRecurrenceRule(newRecurrenceRule)
             } // switch self.recurrenceRule
+
+            let url = URL(string: self.URLString)
+            if url != nil {
+                newEvent.url = url!
+            }
+
+            if notes.count > 0 {
+                newEvent.notes = notes
+            }
 
             newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
 
@@ -477,6 +489,13 @@ struct ASANewEKEventView: View {
                         }
                     }
 
+                } // Section
+
+                Section {
+                    TextField("Event URL", text: self.$URLString)
+                        .keyboardType(.URL)
+
+                    TextField("Event Notes", text: self.$notes)
                 } // Section
             } // Form
         } // NavigationView

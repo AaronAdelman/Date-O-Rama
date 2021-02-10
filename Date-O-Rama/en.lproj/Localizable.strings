@@ -176,6 +176,8 @@
 "Event Recurrence end"        = "Recurrence end";
 "Event Recurrence end date"   = "End date";
 "Event Recurrence count"      = "Occurrence count";
+"Event URL"                   = "URL";
+"Event Notes"                 = "Notes";
 "ASARecurrenceType_never"    = "Never";
 "ASARecurrenceType_daily"    = "Daily";
 "ASARecurrenceType_weekly"   = "Weekly";

@@ -176,6 +176,8 @@
 "Event Recurrence end"        = "סיום חזרה";
 "Event Recurrence end date"   = "בתאריך";
 "Event Recurrence count"      = "אחרי כמה פעמים";
+"Event URL"                   = "כתובת אינטרנט";
+"Event Notes"                 = "הערות";
 "ASARecurrenceType_never"    = "אף פעם";
 "ASARecurrenceType_daily"    = "כל יום";
 "ASARecurrenceType_weekly"   = "כל שבוע";
