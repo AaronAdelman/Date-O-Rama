@@ -130,7 +130,7 @@ struct ASAEventsTab: View {
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
 //                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
                                     ASANewEKEventView()
-                                        .frame(minWidth:  500.0, minHeight:  700.0)
+                                        .frame(minWidth:  400.0, minHeight:  600.0)
                                 }
                                 .foregroundColor(.accentColor)
                         }
