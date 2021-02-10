@@ -80,8 +80,29 @@ enum ASARecurrenceYearly: Int, CaseIterable {
         } // switch self
         return NSLocalizedString(rawValue, comment: "")
     } // var text
-} //
+} // enum ASARecurrenceYearly
 
+enum ASARecurrenceEndType: Int, CaseIterable, Equatable {
+    case none
+    case endDate
+    case occurrenceCount
+
+    var text: String {
+        var rawValue = ""
+        switch self {
+        case .none:
+            rawValue = "ASARecurrenceEndType_none"
+        case .endDate:
+            rawValue = "ASARecurrenceEndType_endDate"
+        case .occurrenceCount:
+            rawValue = "ASARecurrenceEndType_occurrenceCount"
+        } // switch self
+        return NSLocalizedString(rawValue, comment: "")
+    } // var text
+} // enum ASARecurrenceEndType
+
+
+// MARK:  -
 
 struct ASANewEKEventView: View {
     @State private var title: String = ""
@@ -100,13 +121,13 @@ struct ASANewEKEventView: View {
     @State private var weeksOfTheYear: [NSNumber]?             = nil
     @State private var daysOfTheYear: [NSNumber]?              = nil
     @State private var setPositions: [NSNumber]?               = nil
-    @State private var recurrenceEndDate: Date?                = nil
-    @State private var recurrenceOccurrenceCount: Int          = 0
+    @State private var recurrenceEndDate: Date                 = Date()
+    @State private var recurrenceOccurrenceCount: Int          = 25
     @State private var recurrenceMonthly: ASARecurrenceMonthly = .byDayOfMonth
-    @State private var recurrenceDayOfTheWeek: Int             = 1
+    @State private var recurrenceDayOfTheWeek: Int             =  1
     @State private var recurrenceWeekNumber: ASARecurrenceWeekNumber               = .first
-    @State private var recurrenceYearly: ASARecurrenceYearly = .onAnyDay
-
+    @State private var recurrenceYearly: ASARecurrenceYearly   = .onAnyDay
+    @State private var recurrenceEndType: ASARecurrenceEndType = .none
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -170,11 +191,17 @@ struct ASANewEKEventView: View {
 
             case .custom:
                 var end:  EKRecurrenceEnd? = nil
-                if recurrenceEndDate != nil {
-                    end = EKRecurrenceEnd(end: recurrenceEndDate!)
-                } else if recurrenceOccurrenceCount != 0 {
+                switch self.recurrenceEndType {
+                case .none:
+                    end = nil
+
+                case .endDate:
+                    end = EKRecurrenceEnd(end: recurrenceEndDate)
+
+                case .occurrenceCount:
                     end = EKRecurrenceEnd(occurrenceCount: recurrenceOccurrenceCount)
-                }
+                } // switch self.recurrenceEndType
+
                 if type == .monthly {
                     if recurrenceMonthly == .byDayOfMonth {
                         self.daysOfTheWeek = nil
@@ -403,6 +430,25 @@ struct ASANewEKEventView: View {
                         @unknown default:
                             Text("Unknown default")
                         } // switch self.type
+
+                        Picker("Event Recurrence end", selection: self.$recurrenceEndType) {
+                            ForEach(ASARecurrenceEndType.allCases, id: \.rawValue) { value in
+                                Text(value.text)
+                                    .tag(value)
+                            } // ForEach
+                        } // Picker
+                        if self.recurrenceEndType == .endDate {
+                            HStack {
+                                Text("•")
+                                DatePicker("Event Recurrence end date", selection: self.$recurrenceEndDate,
+                                           displayedComponents: [.date])
+                            }
+                        } else if self.recurrenceEndType == .occurrenceCount {
+                            HStack {
+                                Text("•")
+                                ASANewEKEventLabeledIntView(labelString: "Event Recurrence count", value: self.$recurrenceOccurrenceCount)
+                            }
+                        }
                     } // if self.recurrenceRule == .custom
                 } // Section
 

@@ -173,6 +173,9 @@
 "Event Every how many weeks"  = "כל כמה שבועות";
 "Event Every how many months" = "כל כמה חודשים";
 "Event Every how many years"  = "כל כמה שנים";
+"Event Recurrence end"        = "סיום חזרה";
+"Event Recurrence end date"   = "בתאריך";
+"Event Recurrence count"      = "אחרי כמה פעמים";
 "ASARecurrenceType_never"    = "אף פעם";
 "ASARecurrenceType_daily"    = "כל יום";
 "ASARecurrenceType_weekly"   = "כל שבוע";
@@ -194,3 +197,6 @@
 "ASARecurrenceMonthly_On"    = "ימי השבוע";
 "ASARecurrenceYearly_All" = "כל יום";
 "ASARecurrenceYearly_On" = "ב…";
+"ASARecurrenceEndType_none"            = "אף פעם לא";
+"ASARecurrenceEndType_endDate"         = "בתאריך";
+"ASARecurrenceEndType_occurrenceCount" = "אחרי כמה פעמים";

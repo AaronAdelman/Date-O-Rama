@@ -173,6 +173,9 @@
 "Event Every how many weeks"  = "Every how many weeks";
 "Event Every how many months" = "Every how many months";
 "Event Every how many years"  = "Every how many years";
+"Event Recurrence end"        = "Recurrence end";
+"Event Recurrence end date"   = "End date";
+"Event Recurrence count"      = "Occurrence count";
 "ASARecurrenceType_never"    = "Never";
 "ASARecurrenceType_daily"    = "Daily";
 "ASARecurrenceType_weekly"   = "Weekly";
@@ -194,3 +197,6 @@
 "ASARecurrenceMonthly_On"    = "Weekdays";
 "ASARecurrenceYearly_All" = "All days";
 "ASARecurrenceYearly_On" = "On…";
+"ASARecurrenceEndType_none"            = "None";
+"ASARecurrenceEndType_endDate"         = "End date";
+"ASARecurrenceEndType_occurrenceCount" = "Occurrence count";
