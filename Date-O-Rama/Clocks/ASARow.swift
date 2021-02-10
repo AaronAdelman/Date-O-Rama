@@ -344,7 +344,7 @@ extension ASARow {
         return self.calendar.supportsLocales
     } // var supportsLocales:  Bool
 
-    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
+    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents {
         self.calendar.dateComponents(components, from: date, locationData: self.locationData)
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
 

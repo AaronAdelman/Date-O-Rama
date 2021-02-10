@@ -93,7 +93,7 @@ struct ASAProcessedRow {
         }
         self.supportsTimeZones = row.calendar.supportsTimeZones
 
-        let dateComponents = row.dateComponents([.day, .weekday, .hour, .minute, .second], from: now, locationData: row.locationData)
+        let dateComponents = row.dateComponents([.day, .weekday, .hour, .minute, .second], from: now)
 
         self.daysPerWeek = row.daysPerWeek
         self.day = dateComponents.day ?? 1
