@@ -178,6 +178,9 @@
 "Event Recurrence count"      = "אחרי כמה פעמים";
 "Event URL"                   = "כתובת אינטרנט";
 "Event Notes"                 = "הערות";
+"Event Alarm"                = "התרעה";
+"Event Alarm date"           = "תאריך";
+"Event Alarm minutes before" = "דקות לפני";
 "ASARecurrenceType_never"    = "אף פעם";
 "ASARecurrenceType_daily"    = "כל יום";
 "ASARecurrenceType_weekly"   = "כל שבוע";
@@ -202,3 +205,6 @@
 "ASARecurrenceEndType_none"            = "אף פעם לא";
 "ASARecurrenceEndType_endDate"         = "בתאריך";
 "ASARecurrenceEndType_occurrenceCount" = "אחרי כמה פעמים";
+"ASAAlarmType_none"          = "אין";
+"ASAAlarmType_absoluteDate"  = "תאריך";
+"ASAAlarmType_minutesBefore" = "דקות לפני";

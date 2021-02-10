@@ -178,6 +178,9 @@
 "Event Recurrence count"      = "Occurrence count";
 "Event URL"                   = "URL";
 "Event Notes"                 = "Notes";
+"Event Alarm"                = "Alarm";
+"Event Alarm date"           = "Date";
+"Event Alarm minutes before" = "Minutes before";
 "ASARecurrenceType_never"    = "Never";
 "ASARecurrenceType_daily"    = "Daily";
 "ASARecurrenceType_weekly"   = "Weekly";
@@ -202,3 +205,6 @@
 "ASARecurrenceEndType_none"            = "None";
 "ASARecurrenceEndType_endDate"         = "End date";
 "ASARecurrenceEndType_occurrenceCount" = "Occurrence count";
+"ASAAlarmType_none"          = "None";
+"ASAAlarmType_absoluteDate"  = "Date";
+"ASAAlarmType_minutesBefore" = "Minutes before";

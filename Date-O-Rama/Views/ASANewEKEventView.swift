@@ -6,6 +6,7 @@
 //  Copyright © 2021 Adelsoft. All rights reserved.
 //
 
+import Combine
 import EventKit
 import SwiftUI
 
@@ -101,6 +102,25 @@ enum ASARecurrenceEndType: Int, CaseIterable, Equatable {
     } // var text
 } // enum ASARecurrenceEndType
 
+enum ASAAlarmType: Int, Equatable, CaseIterable {
+    case none
+    case absoluteDate
+    case minutesBefore
+
+    var text: String {
+        var rawValue = ""
+        switch self {
+        case .none:
+            rawValue = "ASAAlarmType_none"
+        case .absoluteDate:
+            rawValue = "ASAAlarmType_absoluteDate"
+        case .minutesBefore:
+            rawValue = "ASAAlarmType_minutesBefore"
+        } // switch self
+        return NSLocalizedString(rawValue, comment: "")
+    } // var text
+} // enum ASAAlarmType
+
 
 // MARK:  -
 
@@ -131,6 +151,10 @@ struct ASANewEKEventView: View {
 
     @State private var URLString: String = ""
     @State private var notes: String     = ""
+
+    @State private var alarmType: ASAAlarmType = .none
+    @State private var alarmAbsoluteDate: Date = Date()
+    @State private var alarmMinutesBefore: Int = 0
 
     let iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().filter({$0.allowsContentModifications})
         .sorted(by: {$0.title < $1.title})
@@ -237,6 +261,21 @@ struct ASANewEKEventView: View {
             if notes.count > 0 {
                 newEvent.notes = notes
             }
+
+            switch self.alarmType {
+            case .none:
+                newEvent.alarms = nil
+
+            case .absoluteDate:
+                let alarm: EKAlarm = EKAlarm(absoluteDate: self.alarmAbsoluteDate)
+                newEvent.addAlarm(alarm)
+
+            case .minutesBefore:
+                let date: Date = self.startDate - 60.0 * Double(self.alarmMinutesBefore)
+                let alarm: EKAlarm = EKAlarm(absoluteDate: date)
+//                debugPrint(#file, #function, self.startDate, self.alarmMinutesBefore, date)
+                newEvent.addAlarm(alarm)
+            } // switch self.alarmType
 
             newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
 
@@ -462,6 +501,25 @@ struct ASANewEKEventView: View {
                             }
                         }
                     } // if self.recurrenceRule == .custom
+
+                    Picker("Event Alarm", selection: self.$alarmType) {
+                        ForEach(ASAAlarmType.allCases, id: \.rawValue) { value in
+                            Text(value.text)
+                                .tag(value)
+                        } // ForEach
+                    } // Picker
+                    if self.alarmType == .absoluteDate {
+                        HStack {
+                            Text("•")
+                            DatePicker("Event Alarm date", selection: self.$alarmAbsoluteDate,
+                                       displayedComponents: [.date, .hourAndMinute])
+                        } // HStack
+                    } else if self.alarmType == .minutesBefore {
+                        HStack {
+                            Text("•")
+                            ASANewEKEventLabeledIntView(labelString: "Event Alarm minutes before", value: self.$alarmMinutesBefore)
+                        } // HStack
+                    }
                 } // Section
 
                 Section {
@@ -555,14 +613,22 @@ struct ASANewEventBulletedLabel:  View {
 
 struct ASANewEKEventLabeledIntView: View {
     var labelString: String
+    @State private var enteredValue : String = ""
     @Binding var value: Int
 
     var body: some View {
         HStack {
             Text(NSLocalizedString(labelString, comment: ""))
-            TextField("", value: $value, formatter: NumberFormatter())
-                .multilineTextAlignment(.trailing)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+            // Based on https://stackoverflow.com/questions/58733003/swiftui-how-to-create-textfield-that-only-accepts-numbers
+                 TextField("", text: $enteredValue)
+                    .multilineTextAlignment(.trailing)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .keyboardType(.numberPad)
+                    .onReceive(Just(enteredValue)) { typedValue in
+                        if let newValue = Int(typedValue) {
+                            self.value = newValue
+                        }
+                    }.onAppear(perform:{self.enteredValue = "\(self.value)"})
         } // HStack
 
     }
