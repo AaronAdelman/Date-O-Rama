@@ -43,6 +43,8 @@ protocol ASACalendar {
     
     func supports(calendarComponent:  ASACalendarComponent) -> Bool
 
+    func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
+
     
     // MARK:  - Date components
     func isValidDate(dateComponents:  ASADateComponents) -> Bool

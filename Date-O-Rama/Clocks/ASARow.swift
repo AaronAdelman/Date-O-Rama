@@ -308,17 +308,23 @@ class ASARow: ASALocatedObject {
 
 extension ASARow {
     public func dateStringTimeStringDateComponents(now: Date) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
-        let dateComponents: ASADateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now)
+//        let dateComponents: ASADateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now)
         
-        if self.calendar.canSplitTimeFromDate {
-            #if os(watchOS)
-            return (self.watchShortenedDateString(now: now), self.watchShortenedTimeString(now: now), dateComponents)
-            #else
-            return (self.dateString(now: now), self.timeString(now: now), dateComponents)
-            #endif
-        } else {
-            return (self.dateTimeString(now: now), "", dateComponents)
-        }
+//        if self.calendar.canSplitTimeFromDate {
+//            #if os(watchOS)
+//            return (self.watchShortenedDateString(now: now), self.watchShortenedTimeString(now: now), dateComponents)
+//            #else
+//            return (self.dateString(now: now), self.timeString(now: now), dateComponents)
+//            #endif
+//        } else {
+//            return (self.dateTimeString(now: now), "", dateComponents)
+//        }
+        #if os(watchOS)
+        let properDateFormat = self.dateFormat.watchShortened
+        #else
+        let properDateFormat = self.dateFormat
+        #endif
+        return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: self.locationData)
     }
 
     public func dateString(now:  Date) -> String {
