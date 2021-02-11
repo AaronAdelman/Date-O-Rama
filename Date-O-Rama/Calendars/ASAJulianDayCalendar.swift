@@ -55,10 +55,14 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // init(calendarCode: ASACalendarCode)
 
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: localeIdentifier)
+        var components = ASADateComponents(calendar: self, locationData: locationData)
+        components.year       = 0
+        components.month      = 0
+
         if self.supportsTimes {
             let (JulianDay, day, hour, minute, second, nanosecond) = now.JulianDateWithComponents(offsetFromJulianDay: self.offsetFromJulianDay)
-            let formatter = NumberFormatter()
-            formatter.locale = Locale(identifier: localeIdentifier)
             formatter.allowsFloats = (timeFormat != .none) ? true : false
             if timeFormat == .none {
                 formatter.roundingMode = .floor
@@ -66,10 +70,6 @@ class ASAJulianDayCalendar:  ASACalendar {
                 formatter.minimumFractionDigits = 6
             }
             let dateString = formatter.string(from: NSNumber(floatLiteral: JulianDay)) ?? ""
-
-            var components = ASADateComponents(calendar: self, locationData: locationData)
-            components.year       = 0
-            components.month      = 0
             components.day        = day
             components.hour       = hour
             components.minute     = minute
@@ -78,13 +78,8 @@ class ASAJulianDayCalendar:  ASACalendar {
             return (dateString, "", components)
         } else {
             let day = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
-            let formatter = NumberFormatter()
-            formatter.locale = Locale(identifier: localeIdentifier)
             formatter.allowsFloats = false
             let dateString = formatter.string(from: NSNumber(value: day)) ?? ""
-            var components = ASADateComponents(calendar: self, locationData: locationData)
-            components.year       = 0
-            components.month      = 0
             components.day        = 0
             components.hour       = 0
             components.minute     = 0
