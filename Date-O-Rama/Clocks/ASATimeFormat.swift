@@ -50,16 +50,3 @@ extension ASATimeFormat {
     } // var localizedItemName
 } // extension ASATimeFormat
 
-extension ASATimeFormat {
-    var shortened:  ASATimeFormat {
-        get {
-            switch self {
-//            case .long, .full:
-//                return .medium
-                
-            default:
-                return self
-            } // switch self
-        } // get
-    } // var shortened
-} // extension ASATimeFormat

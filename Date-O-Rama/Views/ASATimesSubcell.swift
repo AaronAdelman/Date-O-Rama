@@ -42,7 +42,7 @@ struct ASATimesSubcell:  View {
     var eventIsTodayOnly:  Bool
 
     func properlyShortenedString(date:  Date) -> String {
-       return (primary && eventIsTodayOnly) ? row.shortenedTimeString(now: date) : row.shortenedDateTimeString(now: date)
+       return (primary && eventIsTodayOnly) ? row.timeString(now: date) : row.shortenedDateTimeString(now: date)
     }
 
     var body: some View {
