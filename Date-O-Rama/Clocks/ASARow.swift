@@ -21,17 +21,6 @@ let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 
 // MARK:  -
 
-//class ASAEventCacheObject {
-//    var array:  Array<ASAEventCompatible>
-//
-//    init(array:  Array<ASAEventCompatible>) {
-//        self.array = array
-//    } // init(array:  Array<ASAEventCompatible>)
-//} // class ASAEventCacheObject
-
-
-// MARK:  -
-
 class ASARow: ASALocatedObject {
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
@@ -48,7 +37,6 @@ class ASARow: ASALocatedObject {
             }
 
             if !startingUp {
-//                self.eventCache.removeAllObjects()
                 self.clearCacheObjects()
             }
         } // didSet
@@ -57,7 +45,6 @@ class ASARow: ASALocatedObject {
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
             if !startingUp {
-//                self.eventCache.removeAllObjects()
                 self.clearCacheObjects()
             }
         } // didset
@@ -320,6 +307,20 @@ class ASARow: ASALocatedObject {
 // MARK:  -
 
 extension ASARow {
+    public func dateStringTimeStringDateComponents(now: Date) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
+        let dateComponents: ASADateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now)
+        
+        if self.calendar.canSplitTimeFromDate {
+            #if os(watchOS)
+            return (self.watchShortenedDateString(now: now), self.watchShortenedTimeString(now: now), dateComponents)
+            #else
+            return (self.dateString(now: now), self.timeString(now: now), dateComponents)
+            #endif
+        } else {
+            return (self.dateTimeString(now: now), "", dateComponents)
+        }
+    }
+
     public func dateString(now:  Date) -> String {
         return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: self.locationData)
     } // func dateTimeString(now:  Date) -> String
