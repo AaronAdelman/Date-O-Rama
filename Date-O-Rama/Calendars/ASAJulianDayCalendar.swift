@@ -54,8 +54,9 @@ class ASAJulianDayCalendar:  ASACalendar {
         self.calendarCode = calendarCode
     } // init(calendarCode: ASACalendarCode)
 
+    let formatter = NumberFormatter()
+
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
-        let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: localeIdentifier)
         var components = ASADateComponents(calendar: self, locationData: locationData)
         components.year       = 0
@@ -92,7 +93,6 @@ class ASAJulianDayCalendar:  ASACalendar {
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         if self.supportsTimes && timeFormat != .none {
             let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
-            let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
             formatter.allowsFloats = true
             formatter.minimumFractionDigits = 6
@@ -100,7 +100,6 @@ class ASAJulianDayCalendar:  ASACalendar {
             return result
         } else {
             let JulianDay = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
-            let formatter = NumberFormatter()
             formatter.locale = Locale(identifier: localeIdentifier)
             formatter.allowsFloats = false
             let result = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
