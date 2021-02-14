@@ -61,6 +61,7 @@ struct ASAComplicationClocksTab: View {
                         }
                     }
                 }
+                .colorScheme(.dark)
             }
         }
         .navigationBarHidden(self.isNavBarHidden)

@@ -90,8 +90,9 @@ struct ASAClockCell: View {
                 Spacer()
                     .frame(width:  SPACER_WIDTH)
             } // HStack
-            .foregroundColor(Color.white)
-            .background(Color.black)
+//            .foregroundColor(Color.white)
+//            .background(Color.black)
+            .colorScheme(.dark)
         } else {
             HStack {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, shouldShowTimeToNextDay: shouldShowTimeToNextDay, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
