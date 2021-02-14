@@ -34,8 +34,17 @@
     } // init(calendarCode:  ASACalendarCode)
 
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
-        let dateString = self.dateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: locationData)
-        let timeString = self.dateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: locationData)
+        let timeZone = locationData.timeZone
+        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        assert(fixedNow >= now)
+
+        var timeString:  String = ""
+        if timeFormat != .none {
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
+        }
+
+        let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
+
         let dateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
@@ -87,12 +96,8 @@
         //        debugPrint(#file, #function, "Now:", now, localeIdentifier, timeFormat, timeGeekFormat, location!, timeZone!, "Transition:", transition!!)
 
         var dayHalfStart:  Date
-        //        var dayHalfEnd:  Date
 
         var hours:  Double
-//        var symbol:  String
-//        let NIGHT_SYMBOL    = "☽"
-//        let DAY_SYMBOL      = "☼"
         var daytime:  Bool
         let NUMBER_OF_HOURS = 12.0
 
@@ -110,7 +115,6 @@
             //            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition, "Nighttime end:", nextDayHalfStart)
 
             hours = now.fractionalHours(startDate:  deoptionalizedTransition, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-//            symbol = NIGHT_SYMBOL
             daytime = false
         } else {
             // now < deoptionalizedTransition
@@ -153,7 +157,6 @@
                 //                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Daytime")
                 assert(deoptionalizedTransition > dayHalfStart)
                 hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
-//                symbol = DAY_SYMBOL
                 daytime = true
             } else {
                 // Previous nighttime
@@ -248,17 +251,7 @@
         return result
     } // func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String
 
-
-    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        let timeZone = locationData.timeZone
-        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
-        assert(fixedNow >= now)
-
-        var timeString:  String = ""
-        if timeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
-        }
-
+    func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
         self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
 
         self.dateFormatter.timeZone = timeZone
@@ -266,10 +259,6 @@
         self.dateFormatter.timeStyle = .none
 
         switch dateFormat {
-        //        case .localizedLDML:
-        //            let dateFormat = DateFormatter.dateFormat(fromTemplate:dateGeekFormat, options: 0, locale: self.dateFormatter.locale)!
-        //            self.dateFormatter.setLocalizedDateFormatFromTemplate(dateFormat)
-
         case .none:
             self.dateFormatter.dateStyle = .none
 
@@ -314,6 +303,20 @@
         } // switch dateFormat
 
         let dateString = self.dateFormatter.string(from: fixedNow)
+        return dateString
+    }
+
+    func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
+        let timeZone = locationData.timeZone
+        let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        assert(fixedNow >= now)
+
+        var timeString:  String = ""
+        if timeFormat != .none {
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
+        }
+
+        let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
 
         if dateString == "" {
             return timeString
