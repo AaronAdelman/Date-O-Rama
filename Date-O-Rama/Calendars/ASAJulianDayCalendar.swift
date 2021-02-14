@@ -56,6 +56,25 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     let formatter = NumberFormatter()
 
+    func dateString(JulianDate: Double, timeFormat: ASATimeFormat, localeIdentifier:  String) -> String {
+        formatter.locale = Locale(identifier: localeIdentifier)
+        formatter.allowsFloats = (timeFormat != .none) ? true : false
+        if timeFormat == .none {
+            formatter.roundingMode = .floor
+        } else {
+            formatter.minimumFractionDigits = 6
+        }
+        let dateString = formatter.string(from: NSNumber(floatLiteral: JulianDate)) ?? ""
+        return dateString
+    } // func dateString(JulianDate: Double, timeFormat: ASATimeFormat) -> String
+
+    func dateString(JulianDay: Int, localeIdentifier:  String) -> String {
+        formatter.locale = Locale(identifier: localeIdentifier)
+        formatter.allowsFloats = false
+        let dateString = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
+        return dateString
+    } // func dateString(JulianDay: Int) -> String
+
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         formatter.locale = Locale(identifier: localeIdentifier)
         var components = ASADateComponents(calendar: self, locationData: locationData)
@@ -63,14 +82,8 @@ class ASAJulianDayCalendar:  ASACalendar {
         components.month      = 0
 
         if self.supportsTimes {
-            let (JulianDay, day, hour, minute, second, nanosecond) = now.JulianDateWithComponents(offsetFromJulianDay: self.offsetFromJulianDay)
-            formatter.allowsFloats = (timeFormat != .none) ? true : false
-            if timeFormat == .none {
-                formatter.roundingMode = .floor
-            } else {
-                formatter.minimumFractionDigits = 6
-            }
-            let dateString = formatter.string(from: NSNumber(floatLiteral: JulianDay)) ?? ""
+            let (JulianDate, day, hour, minute, second, nanosecond) = now.JulianDateWithComponents(offsetFromJulianDay: self.offsetFromJulianDay)
+            let dateString = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             components.day        = day
             components.hour       = hour
             components.minute     = minute
@@ -79,8 +92,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             return (dateString, "", components)
         } else {
             let day = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
-            formatter.allowsFloats = false
-            let dateString = formatter.string(from: NSNumber(value: day)) ?? ""
+            let dateString = self.dateString(JulianDay: day, localeIdentifier: localeIdentifier)
             components.day        = 0
             components.hour       = 0
             components.minute     = 0
@@ -92,17 +104,12 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         if self.supportsTimes && timeFormat != .none {
-            let JulianDay = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
-            formatter.locale = Locale(identifier: localeIdentifier)
-            formatter.allowsFloats = true
-            formatter.minimumFractionDigits = 6
-            let result = formatter.string(from: NSNumber(floatLiteral: JulianDay)) ?? ""
+            let JulianDate = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
+            let result = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             return result
         } else {
             let JulianDay = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
-            formatter.locale = Locale(identifier: localeIdentifier)
-            formatter.allowsFloats = false
-            let result = formatter.string(from: NSNumber(value: JulianDay)) ?? ""
+            let result = self.dateString(JulianDay: JulianDay, localeIdentifier: localeIdentifier)
             return result
         }
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
