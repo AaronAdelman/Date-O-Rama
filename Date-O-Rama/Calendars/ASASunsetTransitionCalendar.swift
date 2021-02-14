@@ -45,7 +45,7 @@
 
         let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
 
-        let dateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now, locationData: locationData)
+        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.day, .weekday, .hour, .minute, .second], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
@@ -467,10 +467,7 @@
         return calendar.component(ApplesComponent!, from: fixedDate)
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
 
-    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
-        // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
-        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
-
+    fileprivate func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         var ApplesComponents = Set<Calendar.Component>()
         for component in components {
             let ApplesCalendarComponent = component.calendarComponent()
@@ -481,7 +478,7 @@
 
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
         var result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
-//                debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
+        //                debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
         let HMSComponents = self.hoursMinutesSecondsComponents(date: date, transition: transition, locationData: locationData)
 
         for component in components {
@@ -504,6 +501,14 @@
                 } // switch component
             }
         } // for component in components
+        return result
+    }
+
+    func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
+        // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
+        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+
+        let result = dateComponents(fixedDate: fixedDate, transition: transition, components: components, from: date, locationData: locationData)
         return result
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents
 
