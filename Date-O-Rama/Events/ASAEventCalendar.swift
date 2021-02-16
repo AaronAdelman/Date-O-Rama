@@ -38,14 +38,6 @@ class ASAEventCalendar {
             return []
         }
 
-//        let calendar = ASACalendarFactory.calendar(code: eventsFile!.calendarCode)
-//        var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
-//        if eventsFile!.otherCalendarCodes != nil {
-//            for calendarCode in eventsFile!.otherCalendarCodes! {
-//                otherCalendars[calendarCode] = ASACalendarFactory.calendar(code: calendarCode)
-//            } // for calendarCode in eventsFile!.otherCalendarCodes!
-//        }
-
         let timeZone: TimeZone = locationData.timeZone 
         var now:  Date = startDate.oneDayBefore
         var result:  Array<ASAEvent> = []
@@ -106,8 +98,8 @@ class ASAEventCalendar {
         return tweakedDateSpecification
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, templateDateComponents: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+//        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
 
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: templateDateComponents, strong: true)
 
@@ -283,6 +275,9 @@ class ASAEventCalendar {
         let otherHourLength = otherDayLength / 12.0
 
         var result:  Array<ASAEvent> = []
+
+        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)
 
@@ -293,7 +288,7 @@ class ASAEventCalendar {
                     appropriateCalendar = probableAppropriateCalendar!
                 }
             }
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification)
+            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, templateDateComponents: templateDateComponents)
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
