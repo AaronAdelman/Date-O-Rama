@@ -152,7 +152,7 @@ class ASAEventCalendar {
             let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
             let numberOfDaysInYear = rangeOfDaysInYear!.count
             //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
-            if !numberOfDaysInYear.matches(dateSpecification.lengthsOfYear) {
+            if !numberOfDaysInYear.matches(values: dateSpecification.lengthsOfYear) {
                 return false
             }
         }
@@ -162,7 +162,7 @@ class ASAEventCalendar {
             if dayOfYear == nil {
                 return false
             }
-            if !dayOfYear!.matches(dateSpecification.dayOfYear) {
+            if !dayOfYear!.matches(value: dateSpecification.dayOfYear) {
                 return false
             }
         }
@@ -170,7 +170,7 @@ class ASAEventCalendar {
         if dateSpecification.yearDivisor != nil && dateSpecification.yearRemainder != nil {
             let year = components.year
             let (_, remainder) = year!.quotientAndRemainder(dividingBy:  dateSpecification.yearDivisor!)
-            if !remainder.matches(dateSpecification.yearRemainder) {
+            if !remainder.matches(value: dateSpecification.yearRemainder) {
                 return false
             }
         }
@@ -182,7 +182,7 @@ class ASAEventCalendar {
         if dateSpecification.lengthsOfMonth != nil {
             let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
             let numberOfDaysInMonth = rangeOfDaysInMonth!.count
-            if !numberOfDaysInMonth.matches(dateSpecification.lengthsOfMonth) {
+            if !numberOfDaysInMonth.matches(values: dateSpecification.lengthsOfMonth) {
                 return false
             }
         }
@@ -199,11 +199,11 @@ class ASAEventCalendar {
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
-            if !(components.era?.matches(tweakedStartDateSpecification.era) ?? false) {
+            if !(components.era?.matches(value: tweakedStartDateSpecification.era) ?? false) {
                 return false
             }
 
-            if !(components.year?.matches(tweakedStartDateSpecification.year) ?? false) {
+            if !(components.year?.matches(value: tweakedStartDateSpecification.year) ?? false) {
                 return false
             }
             
@@ -214,7 +214,7 @@ class ASAEventCalendar {
         
         let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
         if supportsMonth {
-            if !(components.month?.matches(tweakedStartDateSpecification.month) ?? false) {
+            if !(components.month?.matches(value: tweakedStartDateSpecification.month) ?? false) {
                 return false
             }
             
@@ -225,14 +225,14 @@ class ASAEventCalendar {
         
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
         if supportsDay {
-            if !(components.day?.matches(tweakedStartDateSpecification.day) ?? false) {
+            if !(components.day?.matches(value: tweakedStartDateSpecification.day) ?? false) {
                 return false
             }
         }
         
         let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
         if supportsWeekday {
-            if !(components.weekday?.matches(tweakedStartDateSpecification.weekdays) ?? false) {
+            if !(components.weekday?.matches(weekdays: tweakedStartDateSpecification.weekdays) ?? false) {
                 return false
             }
         }
@@ -495,45 +495,6 @@ extension ASADateSpecification {
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification
-
-
-// MARK:  -
-
-extension Int {
-    func matches(_ value:  Int?) -> Bool {
-        if value == nil {
-            return true
-        }
-        
-        return self == value!
-    } // func matches(_ value:  Int?) -> Bool
-    
-    func matches(_ values:  Array<Int>?) -> Bool {
-        if values == nil {
-            return true
-        }
-        
-        return values!.contains(self)
-    } // func matches(_ values:  Array<Int>?) -> Bool
-    
-    func matches(_ values:  Array<ASAWeekday>?) -> Bool {
-        if values == nil {
-            return true
-        }
-        
-        return values!.contains(ASAWeekday(rawValue: self)!)
-    } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
-    
-    func matches(startValue: Int?, endValue: Int?) -> Bool {
-        assert(startValue != nil && endValue != nil || startValue == nil && endValue == nil)
-        
-        if startValue == nil || endValue == nil {
-            return true
-        }
-        
-        return startValue! <= self || self <= endValue!
-    } // func matches(startValue: Int?, endValue: Int?) -> Bool
-} // extension Int
 
 
 // MARK: -

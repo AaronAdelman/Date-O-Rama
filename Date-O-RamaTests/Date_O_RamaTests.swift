@@ -68,4 +68,27 @@ class Date_O_RamaTests: XCTestCase {
         examineJulianDayCalendar(code: .LilianDate, expectedResult: "160040")
         examineJulianDayCalendar(code: .RataDie, expectedResult: "737775")
     } // func testJulianDates() throws
-}
+    
+    func testMatching() throws {
+        XCTAssert(0.matches(value: nil))
+        XCTAssert(0.matches(value: 0))
+        XCTAssertFalse(0.matches(value: 1))
+
+        XCTAssert(0.matches(values: nil))
+        XCTAssert(0.matches(values: [0]))
+        XCTAssert(0.matches(values: [0, 1]))
+        XCTAssertFalse(0.matches(values: [1]))
+
+        XCTAssert(1.matches(weekdays: nil))
+        XCTAssert(1.matches(weekdays: [ASAWeekday.sunday]))
+        XCTAssert(1.matches(weekdays: [ASAWeekday.sunday, ASAWeekday.monday]))
+        XCTAssertFalse(1.matches(weekdays: [ASAWeekday.monday]))
+        
+        XCTAssert(0.matches(startValue: nil, endValue: nil))
+        XCTAssertFalse(0.matches(startValue: 1, endValue: 3))
+        XCTAssert(1.matches(startValue: 1, endValue: 3))
+        XCTAssert(2.matches(startValue: 1, endValue: 3))
+        XCTAssert(3.matches(startValue: 1, endValue: 3))
+        XCTAssertFalse(4.matches(startValue: 1, endValue: 3))
+    } // func testMatching() throws
+} // class Date_O_RamaTests

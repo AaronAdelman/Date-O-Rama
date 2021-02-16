@@ -9,6 +9,45 @@
 import Foundation
 
 extension Int {
+    func matches(value:  Int?) -> Bool {
+        if value == nil {
+            return true
+        }
+        
+        return self == value!
+    } // func matches(_ value:  Int?) -> Bool
+    
+    func matches(values:  Array<Int>?) -> Bool {
+        if values == nil {
+            return true
+        }
+        
+        return values!.contains(self)
+    } // func matches(_ values:  Array<Int>?) -> Bool
+    
+    func matches(weekdays values:  Array<ASAWeekday>?) -> Bool {
+        if values == nil {
+            return true
+        }
+        
+        return values!.contains(ASAWeekday(rawValue: self)!)
+    } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
+    
+    func matches(startValue: Int?, endValue: Int?) -> Bool {
+        assert(startValue != nil && endValue != nil || startValue == nil && endValue == nil)
+        
+        if startValue == nil || endValue == nil {
+            return true
+        }
+        
+        return startValue! <= self && self <= endValue!
+    } // func matches(startValue: Int?, endValue: Int?) -> Bool
+} // extension Int
+
+
+// MARK:  -
+
+extension Int {
     var HebrewNumeral:  String {
         get {
             if self <= 0 || self >= 999 {
