@@ -98,21 +98,21 @@ class ASAEventCalendar {
         return tweakedDateSpecification
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, templateDateComponents: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
 //        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
 
-        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: templateDateComponents, strong: true)
+        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: true)
 
         if endDateSpecification == nil {
             let matches = self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: tweakedStartDateSpecification)
             return (matches, nil, nil)
         }
 
-        let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar, templateDateComponents: templateDateComponents, strong: true)
+        let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar, templateDateComponents: components, strong: true)
         
-        let components = calendar.dateComponents([.year, .month, .day, .weekday
-                                                  //            , .weekOfYear, .weekOfMonth
-        ], from: date, locationData: locationData)
+//        let components = calendar.dateComponents([.year, .month, .day, .weekday
+//                                                  //            , .weekOfYear, .weekOfMonth
+//        ], from: date, locationData: locationData)
         let eventStartDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false)
         if eventStartDate == nil {
             return (false, nil, nil)
@@ -276,7 +276,7 @@ class ASAEventCalendar {
 
         var result:  Array<ASAEvent> = []
 
-        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
 
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)
@@ -288,7 +288,7 @@ class ASAEventCalendar {
                     appropriateCalendar = probableAppropriateCalendar!
                 }
             }
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, templateDateComponents: templateDateComponents)
+            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: components)
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
@@ -523,6 +523,16 @@ extension Int {
         
         return values!.contains(ASAWeekday(rawValue: self)!)
     } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
+    
+    func matches(startValue: Int?, endValue: Int?) -> Bool {
+        assert(startValue != nil && endValue != nil || startValue == nil && endValue == nil)
+        
+        if startValue == nil || endValue == nil {
+            return true
+        }
+        
+        return startValue! <= self || self <= endValue!
+    } // func matches(startValue: Int?, endValue: Int?) -> Bool
 } // extension Int
 
 
