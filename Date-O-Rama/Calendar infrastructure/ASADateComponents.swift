@@ -87,6 +87,11 @@ struct ASADateComponents:  Equatable {
     //    A nanosecond or count of nanoseconds.
     
     
+    // MARK:  - More stuff
+    
+    var numberOfDaysInYear: Int?
+    
+    
     // MARK:  - Accessing Calendar Components
 //    func value(for value: ASACalendarComponent) -> Int? {
 //        //    Returns the value of one of the properties, using an enumeration value instead of a property name.
@@ -230,4 +235,27 @@ extension ASADateComponents {
         let result = ASADateComponents(calendar: calendar, locationData: locationData, era: ApplesDateComponents.era, year: ApplesDateComponents.year, yearForWeekOfYear: ApplesDateComponents.yearForWeekOfYear, quarter: ApplesDateComponents.quarter, month: ApplesDateComponents.month, isLeapMonth: ApplesDateComponents.isLeapMonth, weekOfMonth: ApplesDateComponents.weekOfMonth, weekOfYear: ApplesDateComponents.weekOfYear, weekday: ApplesDateComponents.weekday, weekdayOrdinal: ApplesDateComponents.weekdayOrdinal, day: ApplesDateComponents.day, hour: ApplesDateComponents.hour, minute: ApplesDateComponents.minute, second: ApplesDateComponents.second, nanosecond: ApplesDateComponents.nanosecond)
         return result
     } // static func new(with ApplesDateComponents:  DateComponents, calendar:  ASACalendar, locationData:  ASALocation) -> ASADateComponents
+} // extension ASADateComponents
+
+
+// MARK:  - Start and end date specifications
+
+extension ASADateComponents {
+    func matchEra(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult {
+        if self.era == nil {
+            return .propogateDown
+        }
+        
+        let matching = self.era!.matches(startValue: startDateSpecification.era, endValue: endDateSpecification.era)
+            return matching
+    } // matchEra(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult
+    
+    func matchYear(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult {
+        if self.year == nil {
+            return .propogateDown
+        }
+        
+        let matching = self.year!.matches(startValue: startDateSpecification.year, endValue: endDateSpecification.year)
+            return matching
+    } // func matchYear(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult
 } // extension ASADateComponents

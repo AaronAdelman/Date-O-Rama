@@ -99,12 +99,31 @@ class ASAEventCalendar {
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: true)
 
         if endDateSpecification == nil {
             let matches = self.match(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
             return (matches, nil, nil)
         }
+        
+        // Now we are clearly dealing with an event with specified start and end dates
+        
+//        let supportsEra: Bool = calendar.supports(calendarComponent: .era)
+//        let supportsYear: Bool = calendar.supports(calendarComponent: .year)
+//        let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
+//        let supportsDay: Bool = calendar.supports(calendarComponent: .weekday)
+//        let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
+//        
+//        if supportsEra {
+//            let matching = components.matchEra(startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification!)
+//            if matching == .success {
+//                return (true, nil, nil)
+//            }
+//            if matching == .failure {
+//                return (false, nil, nil)
+//            }
+//        }
 
         let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar, templateDateComponents: components, strong: true)
         
@@ -186,11 +205,6 @@ class ASAEventCalendar {
     } // func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
-//        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday
-//                                                  //            , .weekOfYear, .weekOfMonth
-//        ], from: date, locationData: locationData)
-
-//        let tweakedOnlyDateSpecification = self.tweak(dateSpecification: onlyDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: false)
         let tweakedOnlyDateSpecification = onlyDateSpecification
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)

@@ -69,7 +69,7 @@ class Date_O_RamaTests: XCTestCase {
         examineJulianDayCalendar(code: .RataDie, expectedResult: "737775")
     } // func testJulianDates() throws
     
-    func testMatching() throws {
+    func testMatchingNumbers() throws {
         XCTAssert(0.matches(value: nil))
         XCTAssert(0.matches(value: 0))
         XCTAssertFalse(0.matches(value: 1))
@@ -79,16 +79,27 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(0.matches(values: [0, 1]))
         XCTAssertFalse(0.matches(values: [1]))
 
-        XCTAssert(1.matches(weekdays: nil))
+//        XCTAssert(1.matches(weekdays: nil))
         XCTAssert(1.matches(weekdays: [ASAWeekday.sunday]))
         XCTAssert(1.matches(weekdays: [ASAWeekday.sunday, ASAWeekday.monday]))
         XCTAssertFalse(1.matches(weekdays: [ASAWeekday.monday]))
         
-        XCTAssert(0.matches(startValue: nil, endValue: nil) == .success)
-        XCTAssert(0.matches(startValue: 1, endValue: 3) == .failure)
-        XCTAssert(1.matches(startValue: 1, endValue: 3) == .propogateDown)
-        XCTAssert(2.matches(startValue: 1, endValue: 3) == .success)
-        XCTAssert(3.matches(startValue: 1, endValue: 3) == .propogateDown)
-        XCTAssert(4.matches(startValue: 1, endValue: 3) == .failure)
+//        XCTAssert(0.matches(startValue: nil, endValue: nil) == .success)
+//        XCTAssert(0.matches(startValue: 1, endValue: 3) == .failure)
+//        XCTAssert(1.matches(startValue: 1, endValue: 3) == .propogateDown)
+//        XCTAssert(2.matches(startValue: 1, endValue: 3) == .success)
+//        XCTAssert(3.matches(startValue: 1, endValue: 3) == .propogateDown)
+//        XCTAssert(4.matches(startValue: 1, endValue: 3) == .failure)
     } // func testMatching() throws
+    
+    func testMatchingStartAndEnd() throws {
+//        let BCE = 0
+        let CE = 1
+        
+        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, yearForWeekOfYear: nil, quarter: nil, month: 2, isLeapMonth: false, weekOfMonth: nil, weekOfYear: nil, weekday: 4, weekdayOrdinal: nil, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
+        let startDateSpecification0 = ASADateSpecification(era: CE, year: 2021, month: 01, day: 01, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
+        let endDateSpecification0 = ASADateSpecification(era: CE, year: 2021, month: 12, day: 31, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
+        XCTAssert(components0.matchEra(startDateSpecification: startDateSpecification0, endDateSpecification: endDateSpecification0) == .propogateDown)
+
+    } // func testMatchingStartAndEnd() throws
 } // class Date_O_RamaTests

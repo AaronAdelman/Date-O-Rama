@@ -9,34 +9,6 @@
 import CoreLocation
 import SwiftUI
 
-enum ASAPolarLighting {
-    case sunDoesNotSet
-    case sunDoesNotRise
-    case cannotTell
-
-    static func given(month:  Int, latitude: CLLocationDegrees, calendarCode:  ASACalendarCode) -> ASAPolarLighting {
-        if calendarCode.isHebrewCalendar {
-            if month < 8 {
-                // Winter in Northern Hemisphere
-                if latitude > 0 {
-                    return sunDoesNotRise
-                } else {
-                    return sunDoesNotSet
-                }
-            } else {
-                // Summer in Northern Hemisphere
-                if latitude > 0 {
-                    return sunDoesNotSet
-                } else {
-                    return sunDoesNotRise
-                }
-            }
-        } else {
-            return cannotTell
-        }
-    }
-} // enum ASAPolarLighting
-
 
 struct ASASkyGradient: View {
     fileprivate let JulianDayBackground: [Color] = [Color("julianDayBackgroundTop"), Color("julianDayBackgroundBottom")]

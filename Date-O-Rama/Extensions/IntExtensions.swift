@@ -44,7 +44,7 @@ extension Int {
         assert(startValue != nil && endValue != nil || startValue == nil && endValue == nil)
         
         if startValue == nil || endValue == nil {
-            return .success
+            return .propogateDown
         }
         
         if startValue! < self && self < endValue! {
