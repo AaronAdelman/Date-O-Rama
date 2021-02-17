@@ -84,11 +84,11 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(1.matches(weekdays: [ASAWeekday.sunday, ASAWeekday.monday]))
         XCTAssertFalse(1.matches(weekdays: [ASAWeekday.monday]))
         
-        XCTAssert(0.matches(startValue: nil, endValue: nil))
-        XCTAssertFalse(0.matches(startValue: 1, endValue: 3))
-        XCTAssert(1.matches(startValue: 1, endValue: 3))
-        XCTAssert(2.matches(startValue: 1, endValue: 3))
-        XCTAssert(3.matches(startValue: 1, endValue: 3))
-        XCTAssertFalse(4.matches(startValue: 1, endValue: 3))
+        XCTAssert(0.matches(startValue: nil, endValue: nil) == .success)
+        XCTAssert(0.matches(startValue: 1, endValue: 3) == .failure)
+        XCTAssert(1.matches(startValue: 1, endValue: 3) == .propogateDown)
+        XCTAssert(2.matches(startValue: 1, endValue: 3) == .success)
+        XCTAssert(3.matches(startValue: 1, endValue: 3) == .propogateDown)
+        XCTAssert(4.matches(startValue: 1, endValue: 3) == .failure)
     } // func testMatching() throws
 } // class Date_O_RamaTests
