@@ -190,7 +190,8 @@ class ASAEventCalendar {
 //                                                  //            , .weekOfYear, .weekOfMonth
 //        ], from: date, locationData: locationData)
 
-        let tweakedOnlyDateSpecification = self.tweak(dateSpecification: onlyDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: false)
+//        let tweakedOnlyDateSpecification = self.tweak(dateSpecification: onlyDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: false)
+        let tweakedOnlyDateSpecification = onlyDateSpecification
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
