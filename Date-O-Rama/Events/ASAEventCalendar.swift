@@ -99,26 +99,21 @@ class ASAEventCalendar {
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-//        let templateDateComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
-
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: true)
 
         if endDateSpecification == nil {
-            let matches = self.match(date: date, calendar: calendar, locationData: locationData, startDateSpecification: tweakedStartDateSpecification)
+            let matches = self.match(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
             return (matches, nil, nil)
         }
 
         let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar, templateDateComponents: components, strong: true)
         
-//        let components = calendar.dateComponents([.year, .month, .day, .weekday
-//                                                  //            , .weekOfYear, .weekOfMonth
-//        ], from: date, locationData: locationData)
-        let eventStartDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false)
-        if eventStartDate == nil {
+        let eventStartDateSpecification = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false)
+        if eventStartDateSpecification == nil {
             return (false, nil, nil)
         }
-        let eventEndDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true)
-        if eventEndDate == nil {
+        let eventEndDateSpecification = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true)
+        if eventEndDateSpecification == nil {
             return (false, nil, nil)
         }
         
@@ -132,19 +127,19 @@ class ASAEventCalendar {
         let dateStartOfDay = calendar.startOfDay(for: date, locationData: locationData)
         let dateEndOfDay = calendar.startOfNextDay(date: date, locationData: locationData)
 
-        if eventStartDate == eventEndDate && eventStartDate == dateStartOfDay {
-            return (true, eventStartDate, eventEndDate)
+        if eventStartDateSpecification == eventEndDateSpecification && eventStartDateSpecification == dateStartOfDay {
+            return (true, eventStartDateSpecification, eventEndDateSpecification)
         }
         
-        if dateEndOfDay <= eventStartDate! {
+        if dateEndOfDay <= eventStartDateSpecification! {
             return (false, nil, nil)
         }
 
-        if dateStartOfDay >= eventEndDate! {
+        if dateStartOfDay >= eventEndDateSpecification! {
             return (false, nil, nil)
         }
         
-        return (true, eventStartDate, eventEndDate)
+        return (true, eventStartDateSpecification, eventEndDateSpecification)
     }
     
     func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
@@ -190,49 +185,49 @@ class ASAEventCalendar {
         return true
     } // func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification) -> Bool {
-        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday
-                                                  //            , .weekOfYear, .weekOfMonth
-        ], from: date, locationData: locationData)
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
+//        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday
+//                                                  //            , .weekOfYear, .weekOfMonth
+//        ], from: date, locationData: locationData)
 
-        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: false)
+        let tweakedOnlyDateSpecification = self.tweak(dateSpecification: onlyDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: false)
 
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
-            if !(components.era?.matches(value: tweakedStartDateSpecification.era) ?? false) {
+            if !(components.era?.matches(value: tweakedOnlyDateSpecification.era) ?? false) {
                 return false
             }
 
-            if !(components.year?.matches(value: tweakedStartDateSpecification.year) ?? false) {
+            if !(components.year?.matches(value: tweakedOnlyDateSpecification.year) ?? false) {
                 return false
             }
             
-            if !self.matchYearSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
+            if !self.matchYearSupplemental(date: date, components: components, dateSpecification: tweakedOnlyDateSpecification, calendar: calendar) {
                 return false
             }
         }
         
         let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
         if supportsMonth {
-            if !(components.month?.matches(value: tweakedStartDateSpecification.month) ?? false) {
+            if !(components.month?.matches(value: tweakedOnlyDateSpecification.month) ?? false) {
                 return false
             }
             
-            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
+            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: tweakedOnlyDateSpecification, calendar: calendar) {
                 return false
             }
         }
         
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
         if supportsDay {
-            if !(components.day?.matches(value: tweakedStartDateSpecification.day) ?? false) {
+            if !(components.day?.matches(value: tweakedOnlyDateSpecification.day) ?? false) {
                 return false
             }
         }
         
         let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
         if supportsWeekday {
-            if !(components.weekday?.matches(weekdays: tweakedStartDateSpecification.weekdays) ?? false) {
+            if !(components.weekday?.matches(weekdays: tweakedOnlyDateSpecification.weekdays) ?? false) {
                 return false
             }
         }
