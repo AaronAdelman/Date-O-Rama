@@ -481,7 +481,11 @@ extension ASADateSpecification {
             }
             revisedDateComponents.weekday     = nil
             revisedDateComponents.isLeapMonth = nil
-            let result = calendar.date(dateComponents: revisedDateComponents)
+            let tempResult = calendar.date(dateComponents: revisedDateComponents)
+            if tempResult == nil {
+                return nil
+            }
+            let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
             return result
             
         case .allDay:

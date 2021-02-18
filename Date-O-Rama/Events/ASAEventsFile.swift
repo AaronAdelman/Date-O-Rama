@@ -73,7 +73,7 @@ class ASAInternalEventSpecification: Codable {
     
     var isAllDay:  Bool {
         get {
-            return self.startDateSpecification.type == .allDay
+            return self.startDateSpecification.type == .allDay || self.startDateSpecification.type == .allYear
         } // get
     } // var isAllDay
 
