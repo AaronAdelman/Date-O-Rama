@@ -23,7 +23,7 @@ struct ASATimesSubcell:  View {
             return 90.0
             #else
             if self.forClock {
-                return 85.0
+                return 90.0
             }
 
             if self.sizeClass! == .compact {

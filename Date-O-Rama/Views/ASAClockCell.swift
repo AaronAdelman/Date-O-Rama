@@ -57,6 +57,9 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     #endif
 } // enum ASAClockCellEventVisibility
 
+
+// MARK:  -
+
 struct ASAClockCell: View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
@@ -247,7 +250,7 @@ struct ASAClockEventsForEach:  View {
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: !processedRow.row.calendar.usesISOTime, forClock: true, now: $now, rangeStart: processedRow.startOfDay, rangeEnd:  processedRow.startOfNextDay)
+            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: processedRow.calendarCode != .Gregorian, forClock: true, now: $now, rangeStart: processedRow.startOfDay, rangeEnd:  processedRow.startOfNextDay)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach
