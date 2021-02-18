@@ -102,6 +102,7 @@
         {"titles": {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, "startDateSpecification": {"type": "allDay", "month": 4, "day": 21}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 7}},
         {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "calendarCode": "Gregorian", "startDateSpecification": {"type": "allDay", "month": 5, "day": 9}},
-        {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "calendarCode": "Gregorian", "startDateSpecification": {"type": "allDay", "month": 11, "day": 30}}
+        {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "calendarCode": "Gregorian", "startDateSpecification": {"type": "allDay", "month": 11, "day": 30}},
+        {"titles": {"he": "יום האם/יום המשפחה", "en": "Family Day/Mother’s Day"}, "startDateSpecification": {"type": "allDay", "month": 5, "day": 30}}
     ]
 }
