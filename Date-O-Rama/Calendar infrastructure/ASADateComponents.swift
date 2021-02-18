@@ -87,11 +87,6 @@ struct ASADateComponents:  Equatable {
     //    A nanosecond or count of nanoseconds.
     
     
-    // MARK:  - More stuff
-    
-    var numberOfDaysInYear: Int?
-    
-    
     // MARK:  - Accessing Calendar Components
 //    func value(for value: ASACalendarComponent) -> Int? {
 //        //    Returns the value of one of the properties, using an enumeration value instead of a property name.

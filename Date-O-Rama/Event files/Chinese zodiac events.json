@@ -8,17 +8,17 @@
     "calendarColorBlue": 0.0627,
     "calendarColorAlpha": 1.0,
     "eventSpecifications": [
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 1}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐀 Year of the Rat", "he": "🐀 שנת החולדה"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 2}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐂 Year of the Ox", "he": "🐂 שנת השור"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 3}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐅 Year of the Tiger", "he": "🐅 שנת הטיגריס"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 4}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐇 Year of the Rabbit", "he": "🐇 שנת הארנב"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 5}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐉 Year of the Dragon"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 6}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐍 Year of the Snake", "he": "🐉 שנת הדרקון"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 7}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐎 Year of the Horse", "he": "🐎 שנת הסוס"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 8}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐐 Year of the Goat", "he": "🐐 שנת העז"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 9}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐒 Year of the Monkey", "he": "🐒 שנת הקוף"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 10}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐓 Year of the Rooster", "he": "🐓 שנת התרנגול"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 11}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐕 Year of the Dog", "he": "🐕 שנת הכלב"}},
-        {"startDateSpecification": {"type": "allDay", "month": 1, "day": 1, "yearDivisor": 12, "yearRemainder": 0}, "endDateSpecification": {"type": "allDay", "month": 12, "day": -1}, "titles": {"en": "🐖 Year of the Pig", "he": "🐖 שנת החזיר"}}
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 1},  "titles": {"en": "🐀 Year of the Rat", "he": "🐀 שנת החולדה"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 2},  "titles": {"en": "🐂 Year of the Ox", "he": "🐂 שנת השור"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 3},  "titles": {"en": "🐅 Year of the Tiger", "he": "🐅 שנת הטיגריס"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 4},  "titles": {"en": "🐇 Year of the Rabbit", "he": "🐇 שנת הארנב"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 5},  "titles": {"en": "🐉 Year of the Dragon"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 6},  "titles": {"en": "🐍 Year of the Snake", "he": "🐉 שנת הדרקון"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 7},  "titles": {"en": "🐎 Year of the Horse", "he": "🐎 שנת הסוס"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 8},  "titles": {"en": "🐐 Year of the Goat", "he": "🐐 שנת העז"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 9},  "titles": {"en": "🐒 Year of the Monkey", "he": "🐒 שנת הקוף"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 10},  "titles": {"en": "🐓 Year of the Rooster", "he": "🐓 שנת התרנגול"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 11},  "titles": {"en": "🐕 Year of the Dog", "he": "🐕 שנת הכלב"}},
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 0},  "titles": {"en": "🐖 Year of the Pig", "he": "🐖 שנת החזיר"}}
     ]
 }

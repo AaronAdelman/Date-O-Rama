@@ -16,6 +16,7 @@ import UIKit
 import CoreLocation
 
 enum ASATimeSpecificationType:  String, Codable {
+    case allYear                             = "allYear"
     case allDay                              = "allDay"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
