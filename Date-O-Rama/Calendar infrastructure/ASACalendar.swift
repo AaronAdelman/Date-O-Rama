@@ -66,3 +66,14 @@ protocol ASACalendar {
     // MARK:  - Symbols
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // protocol ASACalendar
+
+
+// MARK:  -
+
+extension ASACalendar {
+    func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for now: Date) -> Int? {
+        let range = self.range(of: smallComponent, in: largeComponent, for: now)
+        let result = range?.count
+        return result
+    } // func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for now: Date) -> Int?
+} // extension ASACalendar

@@ -88,8 +88,9 @@ class ASAEventCalendar {
         if tweakedDateSpecification.day! < 0 {
             let tweakedDate = calendar.date(dateComponents: ASADateComponents(calendar: calendar, locationData: templateDateComponents.locationData, era: tweakedDateSpecification.era, year: tweakedDateSpecification.year, yearForWeekOfYear: nil, quarter: nil, month: tweakedDateSpecification.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: tweakedDateSpecification.day, hour: nil, minute: nil, second: nil, nanosecond: nil))
             if tweakedDate != nil {
-                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: tweakedDate!)
-                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+//                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: tweakedDate!)
+//                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+                let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: tweakedDate!)!
                 tweakedDateSpecification.day = tweakedDateSpecification.day! + (numberOfDaysInMonth + 1)
 
                 //            debugPrint(#file, #function, "📆 Date:", date, "🔴 Original date specification:", dateSpecification, "🟢 Tweaked date specification:", tweakedDateSpecification, "🗓 Calendar:", calendar, "Template date components:", templateDateComponents)
@@ -188,8 +189,9 @@ class ASAEventCalendar {
     
     func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfYear != nil {
-            let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
-            let numberOfDaysInYear = rangeOfDaysInYear!.count
+//            let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
+//            let numberOfDaysInYear = rangeOfDaysInYear!.count
+            let numberOfDaysInYear = calendar.maximumValue(of: .day, in: .year, for: date)!
             //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
             if !numberOfDaysInYear.matches(values: dateSpecification.lengthsOfYear) {
                 return false
@@ -219,8 +221,9 @@ class ASAEventCalendar {
     
     func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfMonth != nil {
-            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
-            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+//            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
+//            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+            let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: date)!
             if !numberOfDaysInMonth.matches(values: dateSpecification.lengthsOfMonth) {
                 return false
             }
@@ -271,33 +274,8 @@ class ASAEventCalendar {
     } // func matchAllMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
-        let supportsEra: Bool = calendar.supports(calendarComponent: .era)
-        if supportsEra {
-            if !(components.era?.matches(value: onlyDateSpecification.era) ?? false) {
-                return false
-            }
-        }
-
-        let supportsYear: Bool = calendar.supports(calendarComponent: .year)
-        if supportsYear {
-            if !(components.year?.matches(value: onlyDateSpecification.year) ?? false) {
-                return false
-            }
-            
-            if !self.matchYearSupplemental(date: date, components: components, dateSpecification: onlyDateSpecification, calendar: calendar) {
-                return false
-            }
-        }
-        
-        let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
-        if supportsMonth {
-            if !(components.month?.matches(value: onlyDateSpecification.month) ?? false) {
-                return false
-            }
-            
-            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: onlyDateSpecification, calendar: calendar) {
-                return false
-            }
+        if !matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: onlyDateSpecification, components: components) {
+            return false
         }
         
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
@@ -495,12 +473,14 @@ extension ASADateSpecification {
         switch self.type {
         case .allYear:
             if isEndDate {
-                let rangeOfMonthsInYear = calendar.range(of: .month, in: .year, for: baseDate)
-                let numberOfMonthsInYear = rangeOfMonthsInYear!.count
+//                let rangeOfMonthsInYear = calendar.range(of: .month, in: .year, for: baseDate)
+//                let numberOfMonthsInYear = rangeOfMonthsInYear!.count
+                let numberOfMonthsInYear = calendar.maximumValue(of: .month, in: .year, for: baseDate)!
                 let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
                 let tempDate = (calendar.date(dateComponents: tempComponents))!
-                let rangeOfDaysInLastMonth = calendar.range(of: .day, in: .month, for: tempDate)
-                let numberOfDaysInLastMonth = rangeOfDaysInLastMonth!.count
+//                let rangeOfDaysInLastMonth = calendar.range(of: .day, in: .month, for: tempDate)
+//                let numberOfDaysInLastMonth = rangeOfDaysInLastMonth!.count
+                let numberOfDaysInLastMonth = calendar.maximumValue(of: .day, in: .month, for: tempDate)!
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
             } else {
@@ -518,8 +498,9 @@ extension ASADateSpecification {
             
         case .allMonth:
             if isEndDate {
-                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: baseDate)
-                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+//                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: baseDate)
+//                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+                let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: baseDate)!
                 revisedDateComponents.day   = numberOfDaysInMonth
             } else {
                 revisedDateComponents.day   =  1

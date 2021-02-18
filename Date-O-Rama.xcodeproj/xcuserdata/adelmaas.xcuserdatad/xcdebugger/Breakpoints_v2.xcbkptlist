@@ -430,8 +430,8 @@
             filePath = "Date-O-Rama/Events/ASAEventCalendar.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "614"
-            endingLineNumber = "614"
+            startingLineNumber = "595"
+            endingLineNumber = "595"
             landmarkName = "date(date:latitude:longitude:timeZone:previousSunset:nightHourLength:sunrise:hourLength:previousOtherDusk:otherNightHourLength:otherDawn:otherHourLength:startOfDay:startOfNextDay:)"
             landmarkType = "7">
          </BreakpointContent>
