@@ -17,6 +17,7 @@ import CoreLocation
 
 enum ASATimeSpecificationType:  String, Codable {
     case allYear                             = "allYear"
+    case allMonth                            = "allMonth"
     case allDay                              = "allDay"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
@@ -73,7 +74,7 @@ class ASAInternalEventSpecification: Codable {
     
     var isAllDay:  Bool {
         get {
-            return self.startDateSpecification.type == .allDay || self.startDateSpecification.type == .allYear
+            return self.startDateSpecification.type == .allDay || self.startDateSpecification.type == .allMonth || self.startDateSpecification.type == .allYear
         } // get
     } // var isAllDay
 

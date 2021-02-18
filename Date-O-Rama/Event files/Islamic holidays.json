@@ -72,11 +72,8 @@
         },
         {
             "titles":  {"en":  "Ramaḍān", "he":  "רמצֿאן", "ar":  "رَمَضَان‎", "az":  "Ramazan", "bn":  "রমজান", "ckb":  "ڕەمەزان‎", "so":  "Rabadaan", "tr":  "Ramazan", "zza":  "Remezan"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  1
-            },
-            "endDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  -1
+            "startDateSpecification":  { "type":  "allMonth",
+                "month":  9
             }
         },
         {

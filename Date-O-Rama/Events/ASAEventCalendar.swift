@@ -114,8 +114,18 @@ class ASAEventCalendar {
             }
         }
         
-        // TODO:  Add intercept for all-months events
-        
+        // All-months events
+        if startDateSpecification.type == .allMonth {
+            assert(endDateSpecification == nil)
+            let matches = self.matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
+            if matches {
+                let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+                let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+                return (true, startDate, endDate)
+            } else {
+                return (false, nil, nil)
+            }
+        }
 
         if endDateSpecification == nil {
             let matches = self.match(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
@@ -240,6 +250,25 @@ class ASAEventCalendar {
         
         return true
     } // func matchAllYear(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
+    
+    func matchAllMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
+        if !matchAllYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: onlyDateSpecification, components: components) {
+            return false
+        }
+        
+        let supportsMonth: Bool = calendar.supports(calendarComponent: .month)
+        if supportsMonth {
+            if !(components.month?.matches(value: onlyDateSpecification.month) ?? false) {
+                return false
+            }
+            
+            if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: onlyDateSpecification, calendar: calendar) {
+                return false
+            }
+        }
+
+        return true
+    } // func matchAllMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
         let supportsEra: Bool = calendar.supports(calendarComponent: .era)
@@ -472,11 +501,27 @@ extension ASADateSpecification {
                 let tempDate = (calendar.date(dateComponents: tempComponents))!
                 let rangeOfDaysInLastMonth = calendar.range(of: .day, in: .month, for: tempDate)
                 let numberOfDaysInLastMonth = rangeOfDaysInLastMonth!.count
-
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
             } else {
                 revisedDateComponents.month =  1
+                revisedDateComponents.day   =  1
+            }
+            revisedDateComponents.weekday     = nil
+            revisedDateComponents.isLeapMonth = nil
+            let tempResult = calendar.date(dateComponents: revisedDateComponents)
+            if tempResult == nil {
+                return nil
+            }
+            let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
+            return result
+            
+        case .allMonth:
+            if isEndDate {
+                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: baseDate)
+                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
+                revisedDateComponents.day   = numberOfDaysInMonth
+            } else {
                 revisedDateComponents.day   =  1
             }
             revisedDateComponents.weekday     = nil
@@ -564,7 +609,8 @@ extension ASADateSpecification {
 
         case .allDay:
             return date
-        case .allYear:
+            
+        case .allYear, .allMonth:
             return date
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?

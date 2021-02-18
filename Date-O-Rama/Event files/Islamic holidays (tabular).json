@@ -72,20 +72,8 @@
         },
         {
             "titles":  {"en":  "Ramaḍān", "he":  "רמצֿאן", "ar":  "رَمَضَان‎", "az":  "Ramazan", "bn":  "রমজান", "ckb":  "ڕەمەزان‎", "so":  "Rabadaan", "tr":  "Ramazan", "zza":  "Remezan"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  1, "lengthsOfMonth":  [29]
-            },
-            "endDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  29
-            }
-        },
-        {
-             "titles":  {"en":  "Ramaḍān", "he":  "רמצֿאן", "ar":  "رَمَضَان‎", "az":  "Ramazan", "bn":  "রমজান", "ckb":  "ڕەمەزان‎", "so":  "Rabadaan", "tr":  "Ramazan", "zza":  "Remezan"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  1, "lengthsOfMonth":  [30]
-            },
-            "endDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  30
+            "startDateSpecification":  { "type":  "allMonth",
+                "month":  9
             }
         },
         {
@@ -121,13 +109,7 @@
         {
             "titles":  {"en":  "Chaand Raat", "he":  "ליל הלבנה", "bn":  "চাঁদ রাত", "ur":  "چاند رات‎", "hi":  "चाँद रात", "ar":  "جاند رات"},
             "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  29, "lengthsOfMonth":  [29]
-            }
-        },
-        {
-            "titles":  {"en":  "Chaand Raat", "he":  "ליל הלבנה", "bn":  "চাঁদ রাত", "ur":  "چاند رات‎", "hi":  "चाँद रात", "ar":  "جاند رات"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  30, "lengthsOfMonth":  [30]
+                "month":  9, "day":  -1
             }
         },
         {
