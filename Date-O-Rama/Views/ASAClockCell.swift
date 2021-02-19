@@ -289,13 +289,9 @@ struct ASAClockMainSubcell:  View {
                             ASALocationSymbol()
                         }
                         
-                        ASAClockCellText(string:  processedRow.timeString ?? "", font:  Font.headlineMonospacedDigit, lineLimit:  1)
-
-                        if processedRow.supportsTimeZones && shouldShowTimeZone {
-                            ASAClockCellText(string:  "·", font:  Font.headlineMonospacedDigit, lineLimit:  1)
-
-                            ASAClockCellText(string:  processedRow.timeZoneString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
-                        }
+                        let timeString: String = processedRow.timeString ?? ""
+                        let string = (processedRow.supportsTimeZones && shouldShowTimeZone) ? timeString + " · " + processedRow.timeZoneString : timeString
+                        ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                     }
                 }
             } else {
