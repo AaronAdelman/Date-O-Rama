@@ -19,6 +19,18 @@
         {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 9},  "titles": {"en": "🐒 Year of the Monkey", "he": "🐒 שנת הקוף"}},
         {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 10},  "titles": {"en": "🐓 Year of the Rooster", "he": "🐓 שנת התרנגול"}},
         {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 11},  "titles": {"en": "🐕 Year of the Dog", "he": "🐕 שנת הכלב"}},
-        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 0},  "titles": {"en": "🐖 Year of the Pig", "he": "🐖 שנת החזיר"}}
+        {"startDateSpecification": {"type": "allYear", "yearDivisor": 12, "yearRemainder": 0},  "titles": {"en": "🐖 Year of the Pig", "he": "🐖 שנת החזיר"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 11},  "titles": {"en": "🐀 Month of the Rat", "he": "🐀 חודש החולדה"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 12},  "titles": {"en": "🐂 Month of the Ox", "he": "🐂 חודש השור"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 1},  "titles": {"en": "🐅 Month of the Tiger", "he": "🐅 חודש הטיגריס"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 2},  "titles": {"en": "🐇 Month of the Rabbit", "he": "🐇 חודש הארנב"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 3},  "titles": {"en": "🐉 Month of the Dragon"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 4},  "titles": {"en": "🐍 Month of the Snake", "he": "🐉 חודש הדרקון"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 5},  "titles": {"en": "🐎 Month of the Horse", "he": "🐎 חודש הסוס"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 6},  "titles": {"en": "🐐 Month of the Goat", "he": "🐐 חודש העז"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 7},  "titles": {"en": "🐒 Month of the Monkey", "he": "🐒 חודש הקוף"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 8},  "titles": {"en": "🐓 Month of the Rooster", "he": "🐓 חודש התרנגול"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 9},  "titles": {"en": "🐕 Month of the Dog", "he": "🐕 חודש הכלב"}},
+        {"startDateSpecification": {"type": "allMonth", "month": 10},  "titles": {"en": "🐖 Month of the Pig", "he": "🐖 חודש החזיר"}}
     ]
 }
