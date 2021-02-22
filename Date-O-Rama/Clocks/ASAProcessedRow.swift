@@ -102,8 +102,6 @@ struct ASAProcessedRow {
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
         if row.calendar.supports(calendarComponent: .month) {
-//            let rangeOfDaysInMonth = row.calendar.range(of: .day, in: .month, for: now)
-//            self.daysInMonth = rangeOfDaysInMonth?.count ?? 1
             self.daysInMonth = row.calendar.maximumValue(of: .day, in: .month, for: now) ?? 1
             self.supportsMonths = true
         } else {

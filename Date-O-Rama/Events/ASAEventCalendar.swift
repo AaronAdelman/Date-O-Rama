@@ -88,8 +88,6 @@ class ASAEventCalendar {
         if tweakedDateSpecification.day! < 0 {
             let tweakedDate = calendar.date(dateComponents: ASADateComponents(calendar: calendar, locationData: templateDateComponents.locationData, era: tweakedDateSpecification.era, year: tweakedDateSpecification.year, yearForWeekOfYear: nil, quarter: nil, month: tweakedDateSpecification.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: tweakedDateSpecification.day, hour: nil, minute: nil, second: nil, nanosecond: nil))
             if tweakedDate != nil {
-//                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: tweakedDate!)
-//                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
                 let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: tweakedDate!)!
                 tweakedDateSpecification.day = tweakedDateSpecification.day! + (numberOfDaysInMonth + 1)
 
@@ -189,8 +187,6 @@ class ASAEventCalendar {
     
     func matchYearSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfYear != nil {
-//            let rangeOfDaysInYear = calendar.range(of: .day, in: .year, for: date)
-//            let numberOfDaysInYear = rangeOfDaysInYear!.count
             let numberOfDaysInYear = calendar.maximumValue(of: .day, in: .year, for: date)!
             //            debugPrint(#file, #function, rangeOfDaysInYear as Any, numberOfDaysInYear as Any)
             if !numberOfDaysInYear.matches(values: dateSpecification.lengthsOfYear) {
@@ -221,8 +217,6 @@ class ASAEventCalendar {
     
     func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool {
         if dateSpecification.lengthsOfMonth != nil {
-//            let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: date)
-//            let numberOfDaysInMonth = rangeOfDaysInMonth!.count
             let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: date)!
             if !numberOfDaysInMonth.matches(values: dateSpecification.lengthsOfMonth) {
                 return false
@@ -473,13 +467,9 @@ extension ASADateSpecification {
         switch self.type {
         case .allYear:
             if isEndDate {
-//                let rangeOfMonthsInYear = calendar.range(of: .month, in: .year, for: baseDate)
-//                let numberOfMonthsInYear = rangeOfMonthsInYear!.count
                 let numberOfMonthsInYear = calendar.maximumValue(of: .month, in: .year, for: baseDate)!
                 let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
                 let tempDate = (calendar.date(dateComponents: tempComponents))!
-//                let rangeOfDaysInLastMonth = calendar.range(of: .day, in: .month, for: tempDate)
-//                let numberOfDaysInLastMonth = rangeOfDaysInLastMonth!.count
                 let numberOfDaysInLastMonth = calendar.maximumValue(of: .day, in: .month, for: tempDate)!
                 revisedDateComponents.month = numberOfMonthsInYear
                 revisedDateComponents.day   = numberOfDaysInLastMonth
@@ -498,8 +488,6 @@ extension ASADateSpecification {
             
         case .allMonth:
             if isEndDate {
-//                let rangeOfDaysInMonth = calendar.range(of: .day, in: .month, for: baseDate)
-//                let numberOfDaysInMonth = rangeOfDaysInMonth!.count
                 let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: baseDate)!
                 revisedDateComponents.day   = numberOfDaysInMonth
             } else {
