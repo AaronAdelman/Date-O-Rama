@@ -53,7 +53,6 @@ class ASARow: ASALocatedObject {
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
             if !startingUp {
-//                self.eventCache.removeAllObjects()
                 self.clearCacheObjects()
             }
         } // didset
@@ -62,7 +61,6 @@ class ASARow: ASALocatedObject {
     @Published var builtInEventCalendars:  Array<ASAEventCalendar> = [] {
         didSet {
             if !startingUp {
-//                self.eventCache.removeAllObjects()
                 self.clearCacheObjects()
             }
         } // didset
@@ -71,7 +69,6 @@ class ASARow: ASALocatedObject {
     @Published var iCalendarEventCalendars:  Array<EKCalendar> = [] {
         didSet {
             if !startingUp {
-//                self.eventCache.removeAllObjects()
                 self.clearCacheObjects()
             }
         } // didset
@@ -79,13 +76,11 @@ class ASARow: ASALocatedObject {
 
     override func handleLocationDataChanged() {
         if !startingUp {
-//            self.eventCache.removeAllObjects()
             self.clearCacheObjects()
             debugPrint(#file, #function, "The event cache has been cleared.")
         }
     }
 
-//    private var eventCache = NSCache<NSNumber, ASAEventCacheObject>()
     private var eventCacheStartDate:  Date = Date.distantPast
     private var eventCacheEndDate:  Date = Date.distantPast
     private var eventCacheValue:  Array<ASAEventCompatible> = []
