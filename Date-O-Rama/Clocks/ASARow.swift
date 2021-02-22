@@ -266,7 +266,7 @@ class ASARow: ASALocatedObject {
 
         var unsortedEvents: [ASAEventCompatible] = []
 
-        if self.isICalendarCompatible {
+        if self.isICalendarCompatible && self.iCalendarEventCalendars.count > 0 {
             unsortedEvents = unsortedEvents + ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
         }
 
