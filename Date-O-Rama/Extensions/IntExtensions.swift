@@ -8,12 +8,6 @@
 
 import Foundation
 
-enum ASAMatchingResult {
-    case failure
-    case propogateDown
-    case success
-} // enum ASAMatchingResult
-
 
 extension Int {
     func matches(value:  Int?) -> Bool {
@@ -39,24 +33,6 @@ extension Int {
         
         return values!.contains(ASAWeekday(rawValue: self)!)
     } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
-    
-    func matches(startValue: Int?, endValue: Int?) -> ASAMatchingResult {
-        assert(startValue != nil && endValue != nil || startValue == nil && endValue == nil)
-        
-        if startValue == nil || endValue == nil {
-            return .propogateDown
-        }
-        
-        if startValue! < self && self < endValue! {
-            return .success
-        }
-        
-        if startValue! == self || self == endValue! {
-            return .propogateDown
-        }
-        
-        return .failure
-    } // func matches(startValue: Int?, endValue: Int?) -> ASAMatchingResult
 } // extension Int
 
 

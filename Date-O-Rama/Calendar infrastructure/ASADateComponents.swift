@@ -235,22 +235,4 @@ extension ASADateComponents {
 
 // MARK:  - Start and end date specifications
 
-extension ASADateComponents {
-    func matchEra(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult {
-        if self.era == nil {
-            return .propogateDown
-        }
-        
-        let matching = self.era!.matches(startValue: startDateSpecification.era, endValue: endDateSpecification.era)
-            return matching
-    } // matchEra(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult
-    
-    func matchYear(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult {
-        if self.year == nil {
-            return .propogateDown
-        }
-        
-        let matching = self.year!.matches(startValue: startDateSpecification.year, endValue: endDateSpecification.year)
-            return matching
-    } // func matchYear(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification) -> ASAMatchingResult
-} // extension ASADateComponents
+
