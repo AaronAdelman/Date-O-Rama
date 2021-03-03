@@ -171,6 +171,8 @@
 		A584C8FD24B4FDC10014CE2E /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
 		A584C8FE24B5E3DB0014CE2E /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
 		A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
+		A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */; };
+		A58BA9CD25EFCDA60082DA64 /* Western zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */; };
 		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */; };
@@ -381,6 +383,7 @@
 		A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniCalendarView.swift; sourceTree = "<group>"; };
 		A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Daily Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Daily Jewish events.json"; sourceTree = "<group>"; };
+		A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac events.json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksViewGroupingOption.swift; sourceTree = "<group>"; };
 		A5932276257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsByTimeZoneView.swift; sourceTree = "<group>"; };
@@ -529,6 +532,7 @@
 				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
 				A533798024B2333400340C0B /* Solar events.json */,
+				A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -977,6 +981,7 @@
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
 				A576994C259EDCC000757B0F /* All-day Jewish events.json in Resources */,
 				A5769952259EDCC000757B0F /* Islamic holidays (tabular).json in Resources */,
+				A58BA9CD25EFCDA60082DA64 /* Western zodiac events.json in Resources */,
 				A5769951259EDCC000757B0F /* Israeli events.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */,
@@ -993,6 +998,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */,
+				A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,

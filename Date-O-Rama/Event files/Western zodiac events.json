@@ -1,0 +1,48 @@
+{
+    "titles": {"en":  "Western zodiac", "he":  "גלגל המזלות המערבי"},
+    "supportedLocales":  ["en"],
+    "defaultLocale":  "en",
+    "calendarCode":  "Gregorian",
+    "calendarColorRed":  0.5,
+    "calendarColorGreen":  0.5,
+    "calendarColorBlue":  0.5,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {"titles": {"en": "♈︎ Aries"}, "startDateSpecification": {
+            "type": "allDay", "month": 3, "day": 21}, "endDateSpecification": {
+                "type": "allDay", "month": 4, "day": 19}},
+        {"titles": {"en": "♉︎ Taurus"}, "startDateSpecification": {
+            "type": "allDay", "month": 4, "day": 20}, "endDateSpecification": {
+                "type": "allDay", "month": 5, "day": 20}},
+        {"titles": {"en": "♊︎ Gemini"}, "startDateSpecification": {
+            "type": "allDay", "month": 5, "day": 21}, "endDateSpecification": {
+                "type": "allDay", "month": 6, "day": 20}},
+        {"titles": {"en": "♋︎ Cancer"}, "startDateSpecification": {
+            "type": "allDay", "month": 6, "day": 21}, "endDateSpecification": {
+                "type": "allDay", "month": 7, "day": 22}},
+        {"titles": {"en": "♌︎ Leo"}, "startDateSpecification": {
+            "type": "allDay", "month": 7, "day": 23}, "endDateSpecification": {
+                "type": "allDay", "month": 8, "day": 22}},
+        {"titles": {"en": "♍︎ Virgo"}, "startDateSpecification": {
+            "type": "allDay", "month": 8, "day": 23}, "endDateSpecification": {
+                "type": "allDay", "month": 9, "day": 22}},
+        {"titles": {"en": "♎︎ Libra"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": 23}, "endDateSpecification": {
+                "type": "allDay", "month": 10, "day": 22}},
+        {"titles": {"en": "♏︎ Scorpio"}, "startDateSpecification": {
+            "type": "allDay", "month": 10, "day": 23}, "endDateSpecification": {
+                "type": "allDay", "month": 11, "day": 22}},
+        {"titles": {"en": "♐︎ Sagittarius"}, "startDateSpecification": {
+            "type": "allDay", "month": 11, "day": 23}, "endDateSpecification": {
+                "type": "allDay", "month": 12, "day": 21}},
+        {"titles": {"en": "♑︎ Capricorn"}, "startDateSpecification": {
+            "type": "allDay", "month": 12, "day": 22}, "endDateSpecification": {
+                "type": "allDay", "month": 1, "day": 19}},
+        {"titles": {"en": "♒︎ Aquarius"}, "startDateSpecification": {
+            "type": "allDay", "month": 1, "day": 20}, "endDateSpecification": {
+                "type": "allDay", "month": 2, "day": 18}},
+        {"titles": {"en": "♓︎ Pisces"}, "startDateSpecification": {
+            "type": "allDay", "month": 2, "day": 19}, "endDateSpecification": {
+                "type": "allDay", "month": 3, "day": 20}}
+    ]
+}
