@@ -236,3 +236,9 @@ extension ASADateComponents {
 // MARK:  - Start and end date specifications
 
 
+extension ASADateComponents {
+    var EYMD: Array<Int?> {
+        return [self.era, self.year, self.month, self.day]
+    } // var EYMD
+} // extension ASADateComponents
+

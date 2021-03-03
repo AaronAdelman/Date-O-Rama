@@ -116,23 +116,198 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(1.matches(weekdays: [ASAWeekday.sunday]))
         XCTAssert(1.matches(weekdays: [ASAWeekday.sunday, ASAWeekday.monday]))
         XCTAssertFalse(1.matches(weekdays: [ASAWeekday.monday]))
-        
-//        XCTAssert(0.matches(startValue: nil, endValue: nil) == .success)
-//        XCTAssert(0.matches(startValue: 1, endValue: 3) == .failure)
-//        XCTAssert(1.matches(startValue: 1, endValue: 3) == .propogateDown)
-//        XCTAssert(2.matches(startValue: 1, endValue: 3) == .success)
-//        XCTAssert(3.matches(startValue: 1, endValue: 3) == .propogateDown)
-//        XCTAssert(4.matches(startValue: 1, endValue: 3) == .failure)
     } // func testMatching() throws
     
     func testMatchingStartAndEnd() throws {
-//        let BCE = 0
-//        let CE = 1
-//        
-//        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, yearForWeekOfYear: nil, quarter: nil, month: 2, isLeapMonth: false, weekOfMonth: nil, weekOfYear: nil, weekday: 4, weekdayOrdinal: nil, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
-//        let startDateSpecification0 = ASADateSpecification(era: CE, year: 2021, month: 01, day: 01, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
-//        let endDateSpecification0 = ASADateSpecification(era: CE, year: 2021, month: 12, day: 31, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
-//        XCTAssert(components0.matchEra(startDateSpecification: startDateSpecification0, endDateSpecification: endDateSpecification0) == .propogateDown)
+        //        let BCE = 0
+        let CE = 1
+        
+        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, yearForWeekOfYear: nil, quarter: nil, month: 2, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: 4, weekdayOrdinal: nil, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
+        let startDateSpecification0 = ASADateSpecification(era: nil, year: nil, month: 01, day: 01, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
+        let endDateSpecification0 = ASADateSpecification(era: nil, year: nil, month: 12, day: 31, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
+        
+        let components0EYMD = components0.EYMD
+        let startDateSpecification0EMYD = startDateSpecification0.EYMD
+        let endDateSpecification0EYMD = endDateSpecification0.EYMD
+        
+        XCTAssert(components0EYMD == [CE, 2021, 2, 17])
+        XCTAssert(startDateSpecification0EMYD == [nil, nil, 1, 1])
+        XCTAssert(endDateSpecification0EYMD == [nil, nil, 12, 31])
+        XCTAssert(components0EYMD.isWithin(start: startDateSpecification0EMYD, end: endDateSpecification0EYMD))
+        
+        let (filledInStartDateSpecification0EMYD, filledInEndDateSpecification0EMYD) = components0EYMD.fillInFor(start: startDateSpecification0EMYD, end: endDateSpecification0EYMD)
+        XCTAssert(filledInStartDateSpecification0EMYD == [CE, 2021, 1, 1])
+        XCTAssert(filledInEndDateSpecification0EMYD   == [CE, 2021, 12, 31])
+        
+        let filledInStartDateSpecification0 = startDateSpecification0.fillIn(EYMD: filledInStartDateSpecification0EMYD)
+        let filledInEndDateSpecification0 = endDateSpecification0.fillIn(EYMD: filledInEndDateSpecification0EMYD)
+        XCTAssert(filledInStartDateSpecification0.era == CE)
+        XCTAssert(filledInStartDateSpecification0.year == 2021)
+        XCTAssert(filledInStartDateSpecification0.month == 1)
+        XCTAssert(filledInStartDateSpecification0.day == 1)
+        XCTAssert(filledInEndDateSpecification0.era == CE)
+        XCTAssert(filledInEndDateSpecification0.year == 2021)
+        XCTAssert(filledInEndDateSpecification0.month == 12)
+        XCTAssert(filledInEndDateSpecification0.day == 31)
+        
+        let AbstractDecember30: Array<Int?> = [nil, nil, 12, 30]
+        let AbstractJanuary2: Array<Int?> = [nil, nil, 1, 2]
+        
+        let December29: Array<Int?> = [1, 2020, 12, 29]
+        let December30: Array<Int?> = [1, 2020, 12, 30]
+        let December31: Array<Int?> = [1, 2020, 12, 31]
+        let January1: Array<Int?> = [1, 2021, 1, 1]
+        let January2: Array<Int?> = [1, 2021, 1, 2]
+        let January3: Array<Int?> = [1, 2021, 1, 3]
+        
+        XCTAssertFalse(December29.isWithin(start: AbstractDecember30, end: AbstractJanuary2))
+        XCTAssert(December30.isWithin(start: AbstractDecember30, end: AbstractJanuary2))
+        XCTAssert(December31.isWithin(start: AbstractDecember30, end: AbstractJanuary2))
+        XCTAssert(January1.isWithin(start: AbstractDecember30, end: AbstractJanuary2))
+        XCTAssert(January2.isWithin(start: AbstractDecember30, end: AbstractJanuary2))
+        XCTAssertFalse(January3.isWithin(start: AbstractDecember30, end: AbstractJanuary2))
+        
+        let foo = ([1, 2020, 12, 30], [1, 2021, 1, 2])
+        XCTAssert(December30.fillInFor(start: AbstractDecember30, end: AbstractJanuary2) == foo)
+        XCTAssert(December31.fillInFor(start: AbstractDecember30, end: AbstractJanuary2) == foo)
+        XCTAssert(January1.fillInFor(start: AbstractDecember30, end: AbstractJanuary2) == foo)
+        XCTAssert(January2.fillInFor(start: AbstractDecember30, end: AbstractJanuary2) == foo)
+        
+        let SecondAbstractDecember30: Array<Int?> = [nil, 2020, 12, 30]
+        let SecondAbstractJanuary2: Array<Int?> = [nil, 2021, 1, 2]
+        
+        XCTAssertFalse(December29.isWithin(start: SecondAbstractDecember30, end: SecondAbstractJanuary2))
+        XCTAssert(December30.isWithin(start: SecondAbstractDecember30, end: SecondAbstractJanuary2))
+        XCTAssert(December31.isWithin(start: SecondAbstractDecember30, end: SecondAbstractJanuary2))
+        XCTAssert(January1.isWithin(start: SecondAbstractDecember30, end: SecondAbstractJanuary2))
+        XCTAssert(January2.isWithin(start: SecondAbstractDecember30, end: SecondAbstractJanuary2))
+        XCTAssertFalse(January3.isWithin(start: SecondAbstractDecember30, end: SecondAbstractJanuary2))
+        
+        XCTAssert(December30.fillInFor(start: SecondAbstractDecember30, end: SecondAbstractJanuary2) == foo)
+        XCTAssert(December31.fillInFor(start: SecondAbstractDecember30, end: SecondAbstractJanuary2) == foo)
+        XCTAssert(January1.fillInFor(start: SecondAbstractDecember30, end: SecondAbstractJanuary2) == foo)
+        XCTAssert(January2.fillInFor(start: SecondAbstractDecember30, end: SecondAbstractJanuary2) == foo)
+        
+        let ThirdAbstractDecember30: Array<Int?> = [nil, 2020, 12, 30]
+        let ThirdAbstractJanuary2: Array<Int?> = [nil, 2021, 1, 2]
+        
+        XCTAssertFalse(December29.isWithin(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2))
+        XCTAssert(December30.isWithin(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2))
+        XCTAssert(December31.isWithin(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2))
+        XCTAssert(January1.isWithin(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2))
+        XCTAssert(January2.isWithin(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2))
+        XCTAssertFalse(January3.isWithin(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2))
+        
+        XCTAssert(December30.fillInFor(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2) == foo)
+        XCTAssert(December31.fillInFor(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2) == foo)
+        XCTAssert(January1.fillInFor(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2) == foo)
+        XCTAssert(January2.fillInFor(start: ThirdAbstractDecember30, end: ThirdAbstractJanuary2) == foo)
+        
+        let AbstractMarch6: Array<Int?> = [nil, nil, 3, 6]
+        let AbstractMarch28: Array<Int?> = [nil, nil, 3, 28]
+        let AbstractApril1: Array<Int?> = [nil, nil, 4, 1]
+        
+        XCTAssertFalse(December29.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(December29.isWithin(start: AbstractMarch28, end: AbstractMarch6))
+        XCTAssertFalse(December29.isWithin(start: AbstractMarch6, end: AbstractApril1))
+        XCTAssert(December29.isWithin(start: AbstractApril1, end: AbstractMarch6))
+        
+        XCTAssert(December29.fillInFor(start: AbstractMarch28, end: AbstractMarch6) == ([1, 2020, 3, 28], [1, 2021, 3, 6]))
+        XCTAssert(December29.fillInFor(start: AbstractApril1, end: AbstractMarch6) == ([1, 2020, 4, 1], [1, 2021, 3, 6]))
+        
+        let March1: Array<Int?> = [1, 2021, 3, 1]
+        let March2: Array<Int?> = [1, 2021, 3, 2]
+        let March3: Array<Int?> = [1, 2021, 3, 3]
+        let March4: Array<Int?> = [1, 2021, 3, 4]
+        let March5: Array<Int?> = [1, 2021, 3, 5]
+        let March6: Array<Int?> = [1, 2021, 3, 6]
+        let March7: Array<Int?> = [1, 2021, 3, 7]
+        let March8: Array<Int?> = [1, 2021, 3, 8]
+        let March9: Array<Int?> = [1, 2021, 3, 9]
+        let March10: Array<Int?> = [1, 2021, 3, 10]
+        let March11: Array<Int?> = [1, 2021, 3, 11]
+        let March12: Array<Int?> = [1, 2021, 3, 12]
+        let March13: Array<Int?> = [1, 2021, 3, 13]
+        let March14: Array<Int?> = [1, 2021, 3, 14]
+        let March15: Array<Int?> = [1, 2021, 3, 15]
+        let March16: Array<Int?> = [1, 2021, 3, 16]
+        let March17: Array<Int?> = [1, 2021, 3, 17]
+        let March18: Array<Int?> = [1, 2021, 3, 18]
+        let March19: Array<Int?> = [1, 2021, 3, 19]
+        let March20: Array<Int?> = [1, 2021, 3, 20]
+        let March21: Array<Int?> = [1, 2021, 3, 21]
+        let March22: Array<Int?> = [1, 2021, 3, 22]
+        let March23: Array<Int?> = [1, 2021, 3, 23]
+        let March24: Array<Int?> = [1, 2021, 3, 24]
+        let March25: Array<Int?> = [1, 2021, 3, 25]
+        let March26: Array<Int?> = [1, 2021, 3, 26]
+        let March27: Array<Int?> = [1, 2021, 3, 27]
+        let March28: Array<Int?> = [1, 2021, 3, 28]
+        let March29: Array<Int?> = [1, 2021, 3, 29]
+        let March30: Array<Int?> = [1, 2021, 3, 30]
+        
+        XCTAssertFalse(March1.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssertFalse(March2.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssertFalse(March3.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssertFalse(March4.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssertFalse(March5.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March6.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March7.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March8.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March9.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March10.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March11.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March12.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March13.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March14.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March15.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March16.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March17.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March18.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March19.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March20.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March21.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March22.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March23.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March24.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March25.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March26.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March27.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssert(March28.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssertFalse(March29.isWithin(start: AbstractMarch6, end: AbstractMarch28))
+        XCTAssertFalse(March30.isWithin(start: AbstractMarch6, end: AbstractMarch28))
 
+        let foo2 = ([1, 2021, 3, 6], [1, 2022, 3, 28])
+        
+        XCTAssert(March6.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March7.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March8.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March9.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March10.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March11.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March12.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March13.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March14.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March15.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March16.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March17.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March18.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March19.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March20.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March21.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March22.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March23.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March24.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March25.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March26.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March27.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
+        XCTAssert(March28.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
     } // func testMatchingStartAndEnd() throws
+    
+    func testMatchingStartAndEnd2() throws {
+        let bar: Array<Int?> = [0, 5781, 8, 2]
+        let quux0: Array<Int?> = [nil, nil, 1, 1]
+        let quux1: Array<Int?> = [nil, nil, 1, 10]
+        XCTAssertFalse(bar.isWithin(start: quux0, end: quux1))
+    } // func testMatchingStartAndEnd2() throws
 } // class Date_O_RamaTests

@@ -15,23 +15,6 @@ import Foundation
 import UIKit
 import CoreLocation
 
-enum ASATimeSpecificationType:  String, Codable {
-    case allYear                             = "allYear"
-    case allMonth                            = "allMonth"
-    case allDay                              = "allDay"
-    case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
-    case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
-    case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-} // enum ASATimeSpecificationType
-
-
-// MARK: -
-
-enum ASATimeSpecificationDayHalf:  String, Codable {
-    case night = "night"
-    case day   = "day"
-} // enum ASATimeSpecificationDayHalf
-
 
 // MARK: - ASAEventsFile
 
@@ -150,34 +133,6 @@ extension ASAInternalEventSpecification {
         return nil
     } // eventsFileDefaultLocaleIdentifier:  String) -> String?
 } // extension ASAInternalEventSpecification
-
-
-// MARK: -
-
-struct ASADateSpecification:  Codable {
-    var era:  Int?
-    var year:  Int?  // Will be ignored if not relevant
-    var month:  Int? // Will be ignored if not relevant
-    var day:  Int?
-    var weekdays:  Array<ASAWeekday>?
-    var lengthsOfMonth:  Array<Int>?
-    var lengthsOfYear:  Array<Int>?
-    var dayOfYear:  Int?
-
-    var yearDivisor:  Int?
-    var yearRemainder:  Int? // Matches if year mod yearDivisor = yearRemainder
-
-    var type: ASATimeSpecificationType
-    
-    // For degrees below horizon events
-    var degreesBelowHorizon: Double?
-    var rising: Bool?
-    var offset: TimeInterval?
-    
-    // For solar time events
-    var solarHours:  Double?
-    var dayHalf:  ASATimeSpecificationDayHalf?
-} // struct ASADateSpecification
 
 
 // MARK: -
