@@ -134,6 +134,8 @@
 		A56EA58F25EFB40500D46610 /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
 		A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
 		A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */; };
+		A56F0DA125F1705200301969 /* Jewish zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac events.json */; };
+		A56F0DA225F1705200301969 /* Jewish zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac events.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A576994A259EDCC000757B0F /* Islamic holidays (civil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */; };
@@ -370,6 +372,7 @@
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateSpecification.swift; sourceTree = "<group>"; };
 		A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
+		A56F0DA025F1705200301969 /* Jewish zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish zodiac events.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
 		A579019C259263F900224666 /* EKEventExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventExtensions.swift; sourceTree = "<group>"; };
@@ -533,6 +536,7 @@
 				A5D3015A24EBDFF8003E79E9 /* Islamic holidays.json */,
 				A5E3606524C756FF0000A268 /* Israeli events.json */,
 				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
+				A56F0DA025F1705200301969 /* Jewish zodiac events.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
 				A533798024B2333400340C0B /* Solar events.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */,
@@ -992,6 +996,7 @@
 				A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */,
 				A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */,
+				A56F0DA225F1705200301969 /* Jewish zodiac events.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1001,6 +1006,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */,
+				A56F0DA125F1705200301969 /* Jewish zodiac events.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
