@@ -128,9 +128,12 @@ struct ASAEventsTab: View {
                                         Text(NSLocalizedString("Add external event", comment: ""))
                                     })
                                 .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-//                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+                                    #if targetEnvironment(macCatalyst)
+                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+                                    #else
                                     ASANewEKEventView()
                                         .frame(minWidth:  400.0, minHeight:  600.0)
+                                    #endif
                                 }
                                 .foregroundColor(.accentColor)
                         }

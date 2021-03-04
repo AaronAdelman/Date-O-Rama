@@ -133,6 +133,7 @@
 		A56EA58E25EFB40500D46610 /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
 		A56EA58F25EFB40500D46610 /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
 		A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
+		A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A576994A259EDCC000757B0F /* Islamic holidays (civil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015924EBDFF7003E79E9 /* Islamic holidays (civil).json */; };
@@ -368,6 +369,7 @@
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
 		A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateSpecification.swift; sourceTree = "<group>"; };
+		A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
 		A579019C259263F900224666 /* EKEventExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventExtensions.swift; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 		A5152A042472BE0B0098A94B /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
+				A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */,
 				A5152A052472BE420098A94B /* ASAEKEventView.swift */,
 				A5150EF525C0237300BC62C4 /* PDFKitView.swift */,
 			);
@@ -1198,6 +1201,7 @@
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
 				A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */,
 				A57BCCBE247D8A700019C02C /* ASAEventCalendar.swift in Sources */,
+				A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
 				A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */,
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,
