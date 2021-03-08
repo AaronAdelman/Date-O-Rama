@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */; };
 		A501B24F259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */; };
+		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
 		A506E3BF252C9075009345A0 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
@@ -312,6 +313,8 @@
 
 /* Begin PBXFileReference section */
 		A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventColorRectangle.swift; sourceTree = "<group>"; };
+		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
+		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedRow.swift; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
@@ -631,6 +634,7 @@
 		A5980BBF25B8BB5400A07DBC /* About */ = {
 			isa = PBXGroup;
 			children = (
+				A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */,
 				A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */,
 				A5150F0925C026AA00BC62C4 /* Thanks to.pdf */,
 				A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */,
@@ -1023,6 +1027,7 @@
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5E3606424C71FBC0000A268 /* All-day Jewish events.json in Resources */,
+				A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */,
 				A5D3015F24EBDFF8003E79E9 /* Islamic holidays (tabular).json in Resources */,
 				A533798124B2333500340C0B /* Solar events.json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */,
@@ -1302,6 +1307,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A502275B25F65DA600FA47B8 /* en */,
+				A502276225F65DAE00FA47B8 /* he */,
+			);
+			name = "I have a suggestion or request.pdf";
+			sourceTree = "<group>";
+		};
 		A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */ = {
 			isa = PBXVariantGroup;
 			children = (

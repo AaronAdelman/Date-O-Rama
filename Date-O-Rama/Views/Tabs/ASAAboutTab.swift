@@ -35,6 +35,8 @@ struct ASAAboutTab: View {
                     ASAAboutNavigationLink(fileName: "Thanks to", text: "Thanks to…")
 
                     ASAAboutNavigationLink(fileName: "What should I do if I have a", text: "What should I do if I have a problem with Date-O-Rama?")
+                    
+                    ASAAboutNavigationLink(fileName: "I have a suggestion or request", text: "I have a suggestion or request.")
 
                     ASAAboutNavigationLink(fileName: "What calendar systems are", text: "What calendar systems are currently supported?")
 
