@@ -102,7 +102,8 @@ extension ASALocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         debugPrint(#file, #function, error)
         self.lastError = error
-        self.locationManager.requestWhenInUseAuthorization()
+//        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.requestAlwaysAuthorization()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
 
     fileprivate func reverseGeocode(_ location: CLLocation) {
@@ -157,11 +158,17 @@ extension ASALocationManager: CLLocationManagerDelegate {
     #else
     func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
         debugPrint(#file, #function)
-    }
+    } // func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager)
 
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
         debugPrint(#file, #function)
-        self.locationManager.requestWhenInUseAuthorization()
-    }
+//        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.requestAlwaysAuthorization()
+    } // func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager)
+    
+    func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?) {
+        debugPrint(#file, #function, error.debugDescription)
+        self.locationManager.requestAlwaysAuthorization()
+    } // func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?)
     #endif
 } // extension ASALocationManager
