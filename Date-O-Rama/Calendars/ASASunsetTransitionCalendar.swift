@@ -170,6 +170,7 @@
             }
         }
 
+        assert(!(hours == 12.0 && daytime == true))
         return (hours:  hours, daytime:  daytime, valid:  true)
     } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
 
@@ -210,7 +211,7 @@
         numberFormatter.minimumFractionDigits = 4
         numberFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
         result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
-        //        assert(result != "12.0000 ☼")
+        assert(result != "12.0000 ☼")
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
 
