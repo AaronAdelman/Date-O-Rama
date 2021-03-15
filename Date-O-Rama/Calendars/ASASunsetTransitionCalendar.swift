@@ -182,6 +182,9 @@
         if !valid {
             return invalidTimeString()
         }
+        assert(hours >= 0.0)
+        assert(hours < 12.0)
+        
         let symbol = daytime ? DAY_SYMBOL : NIGHT_SYMBOL
 
         var result = ""
@@ -210,7 +213,14 @@
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
         numberFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
-        result = "\(numberFormatter.string(from: NSNumber(value:  hours)) ?? "") \(symbol)"
+        var revisedHours: Double
+        let CUTOFF = 11.9999
+        if hours > CUTOFF && hours < 12.0 {
+            revisedHours = CUTOFF
+        } else {
+            revisedHours = hours
+        }
+        result = "\(numberFormatter.string(from: NSNumber(value:  revisedHours)) ?? "") \(symbol)"
         assert(result != "12.0000 ☼")
         return result
     } // func fractionalHoursTimeString(hours:  Double, symbol:  String) -> String
