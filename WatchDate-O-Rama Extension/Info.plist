@@ -34,6 +34,8 @@
 		<string>CLKComplicationFamilyUtilitarianSmall</string>
 		<string>CLKComplicationFamilyUtilitarianSmallFlat</string>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
