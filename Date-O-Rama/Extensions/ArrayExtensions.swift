@@ -51,6 +51,9 @@ extension Array where Element == Int? {
             let end_i = end[i]
             assert(start_i == nil && end_i == nil || start_i != nil && end_i != nil)
             
+            if self[i] == nil {
+                continue
+            }
             let self_i = self[i]!
 //            debugPrint("🍏 start:", start_i ?? "nil", "end:", end_i ?? "nil", "self:", self_i, "state:", state)
             
@@ -173,6 +176,9 @@ extension Array where Element == Int? {
         for i in stride(from: (length - 1), through: 0, by: -1) {
             let start_i = start[i]
             let end_i = end[i]
+            if self[i] == nil {
+                continue
+            }
             let self_i = self[i]!
 
             if start_i != nil && end_i != nil {

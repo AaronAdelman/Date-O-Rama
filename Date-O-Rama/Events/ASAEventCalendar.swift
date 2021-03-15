@@ -71,16 +71,16 @@ class ASAEventCalendar {
         var tweakedDateSpecification = dateSpecification
 
         if strong {
-            if tweakedDateSpecification.era == nil {
+            if tweakedDateSpecification.era == nil && templateDateComponents.era != nil {
                 tweakedDateSpecification.era = templateDateComponents.era!
             }
-            if tweakedDateSpecification.year == nil {
+            if tweakedDateSpecification.year == nil && templateDateComponents.year != nil {
                 tweakedDateSpecification.year = templateDateComponents.year!
             }
-            if tweakedDateSpecification.month == nil {
+            if tweakedDateSpecification.month == nil && templateDateComponents.month != nil {
                 tweakedDateSpecification.month = templateDateComponents.month!
             }
-            if tweakedDateSpecification.day == nil {
+            if tweakedDateSpecification.day == nil && templateDateComponents.day != nil {
                 tweakedDateSpecification.day = templateDateComponents.day!
             }
         }
