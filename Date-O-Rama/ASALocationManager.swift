@@ -44,6 +44,8 @@ class ASALocationManager: NSObject, ObservableObject {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
 
         self.locationManager.requestAlwaysAuthorization()
+        
+        self.locationManager.startUpdatingLocation()
 
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
