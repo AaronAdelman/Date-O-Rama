@@ -29,10 +29,7 @@ struct ASALocationCell:  View {
         case .denied:
             return "Device location (denied)"
 
-        case .authorizedAlways:
-            return "DEVICE_LOCATION"
-
-        case .authorizedWhenInUse:
+        case .authorizedAlways, .authorizedWhenInUse:
             return "DEVICE_LOCATION"
 
         @unknown default:

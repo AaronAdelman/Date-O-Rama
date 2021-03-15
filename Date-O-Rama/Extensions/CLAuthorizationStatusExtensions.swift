@@ -17,7 +17,9 @@ public extension CLAuthorizationStatus {
                 return true
             case .notDetermined:
                 return true // Provisional
-            default:
+            case .restricted, .denied:
+                return false
+            @unknown default:
                 return false
             } // switch self
         } // get

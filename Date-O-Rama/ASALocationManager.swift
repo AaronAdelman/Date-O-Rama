@@ -105,7 +105,24 @@ extension ASALocationManager: CLLocationManagerDelegate {
 //        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestAlwaysAuthorization()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else {
+            // TODO:  Set self.lastError
+            
+            self.locationManager.requestAlwaysAuthorization()
+            return
+        }
+//        print(#file, #function, location)
+        self.lastError = nil
+        
+        let Δ = self.lastDeviceLocation?.distance(from: location)
 
+        if Δ == nil || Δ! >= 10.0 {
+            self.reverseGeocode(location)
+        }
+    } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    
     fileprivate func reverseGeocode(_ location: CLLocation) {
         let coder = CLGeocoder();
         coder.reverseGeocodeLocation(location) { (placemarks, error) in
@@ -134,18 +151,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
             let tempLocationData = ASALocation.create(placemark: place, location: location)
             self.finishDidUpdateLocations(tempLocationData)
         }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-//        print(#file, #function, location)
-        
-        let Δ = self.lastDeviceLocation?.distance(from: location)
-
-        if Δ == nil || Δ! >= 10.0 {
-            self.reverseGeocode(location)
-        }
-    } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    } // fileprivate func reverseGeocode(_ location: CLLocation)
 
     fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocation) {
         self.deviceLocationData = tempLocationData
