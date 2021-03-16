@@ -11,8 +11,8 @@ import CoreLocation
 import UIKit
 
 class ASAAppleCalendar:  ASACalendar {
-    var defaultDateFormat:  ASADateFormat = .full  // TODO:  Rethink this when dealing with watchOS
-
+    var defaultDateFormat:  ASADateFormat = .full
+    
     var calendarCode:  ASACalendarCode
     
     var dateFormatter = DateFormatter()
@@ -122,19 +122,6 @@ class ASAAppleCalendar:  ASACalendar {
     
     var supportedDateFormats: Array<ASADateFormat> = [
         .full
-        //        ,
-        //        .long,
-        //        .medium,
-        //        .mediumWithWeekday,
-        //        .short,
-        //        .shortWithWeekday,
-        //        .abbreviatedWeekday,
-        //        .dayOfMonth,
-        //        .abbreviatedWeekdayWithDayOfMonth,
-        //        .shortWithWeekdayWithoutYear,
-        //        .mediumWithWeekdayWithoutYear,
-        //        .fullWithoutYear,
-        //        .localizedLDML
     ]
 
     var supportedWatchDateFormats: Array<ASADateFormat> = [
@@ -152,10 +139,7 @@ class ASAAppleCalendar:  ASACalendar {
         .fullWithoutYear    ]
     
     var supportedTimeFormats: Array<ASATimeFormat> = [
-        //        .full, .long,
         .medium
-        //        , .short
-        //        , .localizedLDML
     ]
     
     var supportsTimeFormats: Bool = true

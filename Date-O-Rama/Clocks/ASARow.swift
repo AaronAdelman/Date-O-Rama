@@ -22,31 +22,35 @@ let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 // MARK:  -
 
 class ASARow: ASALocatedObject {
+    fileprivate func enforceSelfConsistency() {
+        if !self.calendar.supportedDateFormats.contains(self.dateFormat) {
+            self.dateFormat = self.calendar.defaultDateFormat
+        }
+        if !self.calendar.supportsLocations {
+            self.usesDeviceLocation = false
+            
+            if !self.calendar.supportsTimeZones {
+                self.locationData = ASALocation.NullIsland
+                self.usesDeviceLocation = false
+            }
+        }
+        
+        if !self.isICalendarCompatible {
+            self.iCalendarEventCalendars = []
+        }
+        
+        var revisedBuiltInEventCalendars: Array<ASAEventCalendar> = []
+        for eventCalendar in self.builtInEventCalendars {
+            if eventCalendar.eventsFile?.calendarCode == self.calendar.calendarCode {
+                revisedBuiltInEventCalendars.append(eventCalendar)
+            } // for eventCalendar
+            self.builtInEventCalendars = revisedBuiltInEventCalendars
+        }
+    }
+    
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
-            if !self.calendar.supportedDateFormats.contains(self.dateFormat) {
-                self.dateFormat = self.calendar.defaultDateFormat
-            }
-            if !self.calendar.supportsLocations {
-                self.usesDeviceLocation = false
-
-                if !self.calendar.supportsTimeZones {
-                    self.locationData = ASALocation.NullIsland
-                    self.usesDeviceLocation = false
-                }
-            }
-            
-            if !self.isICalendarCompatible {
-                self.iCalendarEventCalendars = []
-            }
-            
-            var revisedBuiltInEventCalendars: Array<ASAEventCalendar> = []
-            for eventCalendar in self.builtInEventCalendars {
-                if eventCalendar.eventsFile?.calendarCode == self.calendar.calendarCode {
-                    revisedBuiltInEventCalendars.append(eventCalendar)
-                } // for eventCalendar
-                self.builtInEventCalendars = revisedBuiltInEventCalendars
-            }
+            enforceSelfConsistency()
 
             if !startingUp {
                 self.clearCacheObjects()
@@ -56,6 +60,8 @@ class ASARow: ASALocatedObject {
 
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
+            enforceSelfConsistency()
+
             if !startingUp {
                 self.clearCacheObjects()
             }
@@ -64,6 +70,8 @@ class ASARow: ASALocatedObject {
 
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
+            enforceSelfConsistency()
+
             if !startingUp {
                 self.clearCacheObjects()
             }
