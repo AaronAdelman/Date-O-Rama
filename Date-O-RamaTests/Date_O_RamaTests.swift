@@ -316,9 +316,11 @@ class Date_O_RamaTests: XCTestCase {
         clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
 
         clock.iCalendarEventCalendars =  ASAEKEventManager.shared.EKCalendars(titles: ["A", "B", "C"])
+        clock.builtInEventCalendars = [ASAEventCalendar(fileName: "Western zodiac events")]
         
         clock.calendar = ASACalendarFactory.calendar(code: .CCSDSJulianDay)!
-        XCTAssert(clock.iCalendarEventCalendars == [])
+        XCTAssert(clock.iCalendarEventCalendars.count == 0)
+        XCTAssert(clock.builtInEventCalendars.count == 0)
     } // func testChangingTheCalendarOfAClock() throws
     
 } // class Date_O_RamaTests

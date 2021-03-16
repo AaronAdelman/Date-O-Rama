@@ -39,6 +39,14 @@ class ASARow: ASALocatedObject {
             if !self.isICalendarCompatible {
                 self.iCalendarEventCalendars = []
             }
+            
+            var revisedBuiltInEventCalendars: Array<ASAEventCalendar> = []
+            for eventCalendar in self.builtInEventCalendars {
+                if eventCalendar.eventsFile?.calendarCode == self.calendar.calendarCode {
+                    revisedBuiltInEventCalendars.append(eventCalendar)
+                } // for eventCalendar
+                self.builtInEventCalendars = revisedBuiltInEventCalendars
+            }
 
             if !startingUp {
                 self.clearCacheObjects()
