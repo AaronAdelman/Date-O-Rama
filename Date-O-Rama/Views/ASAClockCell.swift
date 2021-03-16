@@ -222,6 +222,8 @@ struct ASAClockCellBody:  View {
 } // struct ASAClockCellBodyPublished<ASAClockCellEventVisibility>.Pub
 
 
+// MARK:  -
+
 struct ASAClockEventsSubcell: View {
     var processedRow:  ASAProcessedRow
     var forComplications: Bool
@@ -285,7 +287,15 @@ struct ASAClockEventsForEach:  View {
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: ASAClockEventsForEach.genericRow, eventsViewShouldShowSecondaryDates: processedRow.calendarCode != .Gregorian, forClock: true, now: $now, rangeStart: processedRow.startOfDay, rangeEnd:  processedRow.startOfNextDay)
+            let secondaryRow = ASAClockEventsForEach.genericRow
+            let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
+            
+
+            #if os(watchOS)
+            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, forClock: true, now: $now, rangeStart: processedRow.startOfDay, rangeEnd:  processedRow.startOfNextDay)
+            #else
+            ASALinkedEventCell(event: event, primaryRow: processedRow.row, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: processedRow.startOfDay, rangeEnd: processedRow.startOfNextDay)
+            #endif
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach
