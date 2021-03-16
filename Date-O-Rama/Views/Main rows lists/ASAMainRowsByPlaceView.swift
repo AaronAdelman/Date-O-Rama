@@ -17,28 +17,28 @@ struct ASAMainRowsByPlaceView:  View {
         get {
             switch primaryGroupingOption {
             case .byPlaceName:
-               return self.rows.processedRowsByPlaceName(now: now)
-
+                return self.rows.processedRowsByPlaceName(now: now)
+                
             case .byCountry:
                 return self.rows.processedRowsByCountry(now: now)
-
+                
             default:
                 return [:]
             }
         } // get
     }
     @Binding var now:  Date
-
-//    var shouldShowTimeToNextDay:  Bool
-
+    
+    //    var shouldShowTimeToNextDay:  Bool
+    
     var forComplications:  Bool
-
+    
     var keys:  Array<String> {
         get {
             return Array(self.processedRowsByPlace.keys).sorted()
         } // get
     } // var keys:  Array<String>
-
+    
     var body: some View {
         ASAMainRowsByPlaceSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByPlace: processedRowsByPlace, now: $now, forComplications: forComplications)
     } // var body
@@ -55,15 +55,15 @@ struct ASAMainRowsByPlaceSubview:  View {
         } // get
     } // var keys:  Array<String>
     @Binding var now:  Date
-//   var shouldShowTimeToNextDay:  Bool
+    //   var shouldShowTimeToNextDay:  Bool
     
     @EnvironmentObject var userData:  ASAUserData
     var forComplications:  Bool
-
+    
     fileprivate func shouldShowPlaceName() -> Bool {
         return self.primaryGroupingOption != .byPlaceName
     }
-
+    
     var body:  some View {
         ForEach(self.keys, id: \.self) {
             key
@@ -76,12 +76,12 @@ struct ASAMainRowsByPlaceSubview:  View {
                 ForEach(self.processedRowsByPlace[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
-
+                    
                     #if os(watchOS)
-                    HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
-                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-                    }
+                    //                    HStack {
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                    //                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+                    //                    }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
                     ZStack {

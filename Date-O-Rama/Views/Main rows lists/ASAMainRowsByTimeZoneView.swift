@@ -15,31 +15,31 @@ struct ASAMainRowsByTimeZoneView:  View {
     var primaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASARow>
-
+    
     var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>> {
         get {
             return self.rows.processedRowsByTimeZone(now: now)
         } // get
     } // var processedRowsByFormattedDate: Dictionary<Int, Array<ASAProcessedRow>>
-
+    
     @Binding var now:  Date
-//    var shouldShowTimeToNextDay:  Bool
-
+    //    var shouldShowTimeToNextDay:  Bool
+    
     var forComplications:  Bool
-
+    
     func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int> {
         switch groupingOption {
         case .byTimeZoneWestToEast:
             return Array(self.processedRowsByTimeZone.keys).sorted(by:  <)
-
+            
         case .byTimeZoneEastToWest:
             return Array(self.processedRowsByTimeZone.keys).sorted(by:  >)
-
+            
         default:
             return []
         } // switch groupingOption
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
-
+    
     var body:  some View {
         ASAMainRowsByTimeZoneSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now, forComplications:  forComplications)
     }
@@ -51,23 +51,23 @@ struct ASAMainRowsByTimeZoneSubview:  View {
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>>
     @Binding var now:  Date
-//    var shouldShowTimeToNextDay:  Bool
-
+    //    var shouldShowTimeToNextDay:  Bool
+    
     var forComplications:  Bool
-
+    
     func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int> {
         switch groupingOption {
         case .byTimeZoneWestToEast:
             return Array(self.processedRowsByTimeZone.keys).sorted(by:  <)
-
+            
         case .byTimeZoneEastToWest:
             return Array(self.processedRowsByTimeZone.keys).sorted(by:  >)
-
+            
         default:
             return []
         } // switch groupingOption
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
-
+    
     var body:  some View {
         ForEach(self.keys(groupingOption: primaryGroupingOption), id: \.self) {
             key
@@ -78,12 +78,12 @@ struct ASAMainRowsByTimeZoneSubview:  View {
                 ForEach(self.processedRowsByTimeZone[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
-
+                    
                     #if os(watchOS)
-                    HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, forComplications: forComplications)
-                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-                    }
+                    //                    HStack {
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, forComplications: forComplications)
+                    //                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+                    //                    }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
                     ZStack {

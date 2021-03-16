@@ -19,10 +19,10 @@ struct ASAMainRowsByFormattedDateView:  View {
     }
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-//    var shouldShowTimeToNextDay:  Bool
+    //    var shouldShowTimeToNextDay:  Bool
     
     var forComplications:  Bool
-
+    
     var body: some View {
         ASAMainRowsByFormattedDateSubview(processedRowsByFormattedDate: self.processedRowsByFormattedDate, now: $now, secondaryGroupingOption: $secondaryGroupingOption, forComplications:  forComplications)
     } // var body
@@ -33,16 +33,16 @@ struct ASAMainRowsByFormattedDateSubview:  View {
     var processedRowsByFormattedDate: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-//    var shouldShowTimeToNextDay:  Bool
-
+    //    var shouldShowTimeToNextDay:  Bool
+    
     var forComplications:  Bool
-
+    
     var keys:  Array<String> {
         get {
             return Array(self.processedRowsByFormattedDate.keys).sorted()
         } // get
     } // var keys:  Array<String>
-
+    
     var body: some View {
         ForEach(self.keys, id: \.self) {
             key
@@ -53,12 +53,12 @@ struct ASAMainRowsByFormattedDateSubview:  View {
                 ForEach(self.processedRowsByFormattedDate[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
-
+                    
                     #if os(watchOS)
-                    HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
-                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-                    }
+                    //                    HStack {
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                    //                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
+                    //                    }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
                     ZStack {
@@ -76,7 +76,7 @@ struct ASAMainRowsByFormattedDateSubview:  View {
                     } // ZStack
                     .listRowInsets(.zero)
                     #endif
-
+                    
                 }
             }
         } // ForEach
