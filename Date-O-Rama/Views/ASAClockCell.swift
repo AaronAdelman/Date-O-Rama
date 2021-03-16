@@ -161,7 +161,7 @@ struct ASAClockCellBody:  View {
     
     var forComplications:  Bool
     
-    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
+//    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
     
     #if os(watchOS)
     let compact = true
@@ -216,18 +216,17 @@ struct ASAClockCellBody:  View {
                 #endif
             } // HStack
             
-            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, shouldShowEvents: shouldShowEvents)
+//            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
         } // VStack
     } // var body
-} // struct ASAClockCellBody
+} // struct ASAClockCellBodyPublished<ASAClockCellEventVisibility>.Pub
 
 
 struct ASAClockEventsSubcell: View {
     var processedRow:  ASAProcessedRow
     var forComplications: Bool
     @Binding var now:  Date
-    
-    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
+    @State var eventVisibility: ASAClockCellEventVisibility = .next
 
     var body: some View {
         #if os(watchOS)
@@ -236,7 +235,7 @@ struct ASAClockEventsSubcell: View {
         if processedRow.events.count > 0 && !forComplications {
             HStack {
                 Text("Show Events")
-                Picker(selection: $shouldShowEvents, label: Text("")) {
+                Picker(selection: $eventVisibility, label: Text("")) {
                     ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
                         possibility
                         in
@@ -245,7 +244,7 @@ struct ASAClockEventsSubcell: View {
                 }.pickerStyle(SegmentedPickerStyle())
             }
             
-            ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
+            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
         } else {
             EmptyView()
         }

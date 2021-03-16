@@ -93,6 +93,8 @@ class ASARow: ASALocatedObject {
             }
         } // didset
     } // var iCalendarEventCalendars
+    
+    @Published var eventVisibility: ASAClockCellEventVisibility = .next
 
     override func handleLocationDataChanged() {
         if !startingUp {
