@@ -216,35 +216,42 @@ struct ASAClockCellBody:  View {
                 #endif
             } // HStack
             
-            #if os(watchOS)
-            #else
-            if processedRow.events.count > 0 && !forComplications {
-                HStack {
-                    Text("Show Events")
-                    Picker(selection: $shouldShowEvents, label: Text("")) {
-                        ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
-                            possibility
-                            in
-                            Text(possibility.emoji)
-                        }
-                    }.pickerStyle(SegmentedPickerStyle())
-                }
-                
-                ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
-            }
-            
-            //            if self.shouldShowTimeToNextDay {
-            //                HStack {
-            //                    Text("Time to next day:")
-            //                        .font(.subheadlineMonospacedDigit)
-            //                    Text(processedRow.startOfNextDay, style: .timer)
-            //                        .font(.subheadlineMonospacedDigit)
-            //                } // HStack
-            //            }
-            #endif
+            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, shouldShowEvents: shouldShowEvents)
         } // VStack
     } // var body
 } // struct ASAClockCellBody
+
+
+struct ASAClockEventsSubcell: View {
+    var processedRow:  ASAProcessedRow
+    var forComplications: Bool
+    @Binding var now:  Date
+    
+    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
+
+    var body: some View {
+        #if os(watchOS)
+        EmptyView()
+        #else
+        if processedRow.events.count > 0 && !forComplications {
+            HStack {
+                Text("Show Events")
+                Picker(selection: $shouldShowEvents, label: Text("")) {
+                    ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+                        possibility
+                        in
+                        Text(possibility.emoji)
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+            }
+            
+            ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
+        } else {
+            EmptyView()
+        }
+        #endif
+    } // var body
+} // struct ASAClockEventsSubcell
 
 
 // MARK:  -

@@ -23,7 +23,6 @@ struct ASAWatchEventsList: View {
                 }
             }
 
-
             ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
         } // List
     } // var body
