@@ -45,22 +45,12 @@
 		A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
-		A557ACCF25DD471F00A264B6 /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
-		A557ACD525DD484900A264B6 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
-		A557ACD625DD484900A264B6 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
-		A557ACD725DD484900A264B6 /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
-		A557ACD825DD484900A264B6 /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
 		A557ACDE25DD488B00A264B6 /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
 		A557ACDF25DD488B00A264B6 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A557ACE025DD488B00A264B6 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A557ACE125DD488B00A264B6 /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A557ACE725DD48A400A264B6 /* ASALocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocation.swift */; };
 		A557ACF825DD48F000A264B6 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
-		A557ACFE25DD491A00A264B6 /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
-		A557ACFF25DD491A00A264B6 /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
-		A557AD0025DD491A00A264B6 /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
-		A557AD0125DD491A00A264B6 /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
-		A557AD0225DD491A00A264B6 /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
 		A557AD0825DD495400A264B6 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A557AD0925DD495400A264B6 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A557AD0B25DD495400A264B6 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
@@ -107,9 +97,6 @@
 		A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 		A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
-		A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
-		A566F4772483D7CF000A05B5 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
-		A566F4782483D7CF000A05B5 /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
 		A566F4792483D7CF000A05B5 /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
 		A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -117,9 +104,6 @@
 		A566F47D2483D7CF000A05B5 /* ASATimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASATimeFormat.swift */; };
 		A566F47E2483D7CF000A05B5 /* ASARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2E2433371700CFEE47 /* ASARow.swift */; };
 		A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
-		A566F4812483D7CF000A05B5 /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
-		A566F4822483D7CF000A05B5 /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
-		A566F4872483D7CF000A05B5 /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
 		A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
 		A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
@@ -130,9 +114,6 @@
 		A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
 		A56BDB502577B7AC0037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
 		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
-		A56EA58D25EFB40500D46610 /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
-		A56EA58E25EFB40500D46610 /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
-		A56EA58F25EFB40500D46610 /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
 		A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
 		A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */; };
 		A56F0DA125F1705200301969 /* Jewish zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac events.json */; };
@@ -151,13 +132,10 @@
 		A5769953259EDCC000757B0F /* Solar events.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Solar events.json */; };
 		A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch events.json */; };
 		A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
-		A5790195259263A300224666 /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
-		A5790196259263A300224666 /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A579019E259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
 		A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocation.swift */; };
-		A57BCCBE247D8A700019C02C /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
 		A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
 		A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */; };
 		A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
@@ -167,13 +145,7 @@
 		A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32C2486474900378EA7 /* ComplicationController.swift */; };
 		A57CA32F24864C3A00378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
-		A57F441D24BC5908005261EE /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
-		A57F441F24BC5DD1005261EE /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
-		A57F442024BC69FE005261EE /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
-		A57F442124BC6A25005261EE /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
 		A5832B88254ED124008E8A97 /* ASAMiniCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */; };
-		A584C8FD24B4FDC10014CE2E /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
-		A584C8FE24B5E3DB0014CE2E /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
 		A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
 		A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */; };
 		A58BA9CD25EFCDA60082DA64 /* Western zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */; };
@@ -189,6 +161,43 @@
 		A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
 		A59C436625A33E5B009C7F7C /* ASATimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C436425A33E5B009C7F7C /* ASATimeText.swift */; };
+		A59D80222600C57800FD8BBF /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
+		A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
+		A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
+		A59D80252600C57800FD8BBF /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
+		A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
+		A59D802C2600C57A00FD8BBF /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
+		A59D802D2600C57A00FD8BBF /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
+		A59D802E2600C57A00FD8BBF /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
+		A59D802F2600C57A00FD8BBF /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
+		A59D80302600C57A00FD8BBF /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
+		A59D80362600C57D00FD8BBF /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
+		A59D80372600C57D00FD8BBF /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
+		A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441C24BC5908005261EE /* ASADateComponents.swift */; };
+		A59D80392600C57D00FD8BBF /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
+		A59D803A2600C57D00FD8BBF /* ASACalendarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */; };
+		A59D80402600C59200FD8BBF /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
+		A59D80412600C59200FD8BBF /* ASARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2E2433371700CFEE47 /* ASARow.swift */; };
+		A59D80422600C59200FD8BBF /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
+		A59D80432600C59200FD8BBF /* ASALocatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCAC247BB4CF0019C02C /* ASALocatedObject.swift */; };
+		A59D804E2600C6F800FD8BBF /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
+		A59D804F2600C6F800FD8BBF /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
+		A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
+		A59D80512600C6F800FD8BBF /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
+		A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
+		A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
+		A59D80592600C6F900FD8BBF /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
+		A59D805A2600C6F900FD8BBF /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
+		A59D805B2600C6F900FD8BBF /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
+		A59D805C2600C6F900FD8BBF /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
+		A59D805D2600C6F900FD8BBF /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
+		A59D805E2600C6F900FD8BBF /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
+		A59D80692600C6FB00FD8BBF /* ASAEventCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5790194259263A300224666 /* ASAEventCompatible.swift */; };
+		A59D806A2600C6FB00FD8BBF /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
+		A59D806B2600C6FB00FD8BBF /* ASAEventsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */; };
+		A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */; };
+		A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
+		A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
 		A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
 		A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
@@ -213,14 +222,10 @@
 		A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8163D2541A37500E309E0 /* ASAMainRowsByCalendarView.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
-		A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */; };
 		A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
-		A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */; };
 		A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */; };
-		A5BFC5B5246AB5B50075AF58 /* ASAEKEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */; };
-		A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77BFF2433361400CFEE47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFE2433361400CFEE47 /* SceneDelegate.swift */; };
 		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
@@ -230,7 +235,6 @@
 		A5C77C142433361900CFEE47 /* Date_O_RamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C132433361900CFEE47 /* Date_O_RamaTests.swift */; };
 		A5C77C1F2433361900CFEE47 /* Date_O_RamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C1E2433361900CFEE47 /* Date_O_RamaUITests.swift */; };
 		A5C77C312433371800CFEE47 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
-		A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2D2433371700CFEE47 /* ASACalendarCode.swift */; };
 		A5C77C332433371800CFEE47 /* ASARow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2E2433371700CFEE47 /* ASARow.swift */; };
 		A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C302433371800CFEE47 /* ASARowArrayKey.swift */; };
 		A5C77C382433596A00CFEE47 /* ASALocaleChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */; };
@@ -1060,18 +1064,14 @@
 				A5CA532524979D1D008EEE2F /* ASARowChooser.swift in Sources */,
 				A506E3BF252C9075009345A0 /* ASALocationSymbol.swift in Sources */,
 				A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */,
-				A566F4772483D7CF000A05B5 /* ASACalendarCode.swift in Sources */,
-				A5790196259263A300224666 /* ASAEventCompatible.swift in Sources */,
 				A566F47D2483D7CF000A05B5 /* ASATimeFormat.swift in Sources */,
 				A566F4712483D7CF000A05B5 /* ASALocation.swift in Sources */,
 				A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */,
-				A566F4782483D7CF000A05B5 /* ASACalendarFactory.swift in Sources */,
-				A566F4822483D7CF000A05B5 /* ASAEKEventManager.swift in Sources */,
 				A566F4562483D6EC000A05B5 /* HostingController.swift in Sources */,
 				A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */,
 				A5B816532541A3DD00E309E0 /* ASAMainRowsByFormattedDateView.swift in Sources */,
-				A56EA58F25EFB40500D46610 /* ASADateSpecification.swift in Sources */,
 				A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */,
+				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
@@ -1079,40 +1079,46 @@
 				A50CD64125541C0500B781EC /* ASAPlaceSubcell.swift in Sources */,
 				A593227D25780DA300318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */,
 				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
+				A59D806A2600C6FB00FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */,
 				A59322632577F61100318BC3 /* FontExtensions.swift in Sources */,
+				A59D806B2600C6FB00FD8BBF /* ASAEventsFile.swift in Sources */,
 				A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
+				A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */,
+				A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
 				A50CD6282554159500B781EC /* ColorExtensions.swift in Sources */,
 				A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
+				A59D80362600C57D00FD8BBF /* ASACalendar.swift in Sources */,
 				A579019E259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */,
 				A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */,
 				A506E3E5252C9405009345A0 /* ASAProcessedRow.swift in Sources */,
+				A59D80372600C57D00FD8BBF /* ASACalendarCode.swift in Sources */,
 				A566F47C2483D7CF000A05B5 /* ASADateFormat.swift in Sources */,
 				A5B6D01D25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */,
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */,
 				A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */,
-				A566F4812483D7CF000A05B5 /* ASAEvent.swift in Sources */,
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
 				A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */,
 				A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */,
 				A566F4702483D7CF000A05B5 /* ASALocatedObject.swift in Sources */,
+				A59D80692600C6FB00FD8BBF /* ASAEventCompatible.swift in Sources */,
 				A566F4792483D7CF000A05B5 /* ASAISO8601Calendar.swift in Sources */,
-				A57F442024BC69FE005261EE /* ASACalendarComponent.swift in Sources */,
 				A59322702578068400318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A593229225782AB800318BC3 /* ASAMainRowsByPlaceView.swift in Sources */,
-				A584C8FE24B5E3DB0014CE2E /* ASAEventsFile.swift in Sources */,
+				A59D80392600C57D00FD8BBF /* ASACalendarFactory.swift in Sources */,
 				A557AD7B25DD505D00A264B6 /* ASAPolarLighting.swift in Sources */,
 				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
+				A59D803A2600C57D00FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */,
 				A501B24F259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
 				A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */,
@@ -1120,13 +1126,11 @@
 				A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */,
 				A566F47E2483D7CF000A05B5 /* ASARow.swift in Sources */,
 				A59C436625A33E5B009C7F7C /* ASATimeText.swift in Sources */,
-				A566F4762483D7CF000A05B5 /* ASACalendar.swift in Sources */,
 				A56BDB502577B7AC0037F833 /* IntExtensions.swift in Sources */,
 				A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */,
-				A57F442124BC6A25005261EE /* ASADateComponents.swift in Sources */,
 				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
-				A566F4872483D7CF000A05B5 /* ASAEventCalendar.swift in Sources */,
 				A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */,
+				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
 				A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1138,40 +1142,40 @@
 				A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */,
 				A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */,
 				A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */,
-				A56EA58D25EFB40500D46610 /* ASADateSpecification.swift in Sources */,
 				A5B8163E2541A37500E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
+				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
 				A557AD5D25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A5A9666325A31DA200CF158F /* ASADatePicker.swift in Sources */,
+				A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A57CA32F24864C3A00378EA7 /* ASAConfiguration.swift in Sources */,
 				A57BCCAD247BB4CF0019C02C /* ASALocatedObject.swift in Sources */,
-				A57F441D24BC5908005261EE /* ASADateComponents.swift in Sources */,
-				A5BFC5B7246B29600075AF58 /* ASAEvent.swift in Sources */,
 				A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */,
-				A5BFC5B5246AB5B50075AF58 /* ASAEKEventManager.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
 				A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */,
 				A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */,
 				A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */,
 				A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */,
 				A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */,
-				A57F441F24BC5DD1005261EE /* ASACalendarComponent.swift in Sources */,
 				A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */,
 				A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A5152A062472BE430098A94B /* ASAEKEventView.swift in Sources */,
 				A5D8FE3825C6D77A00A29350 /* ASANewEKEventView.swift in Sources */,
+				A59D804E2600C6F800FD8BBF /* ASAEventCompatible.swift in Sources */,
+				A59D804F2600C6F800FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
 				A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */,
-				A5790195259263A300224666 /* ASAEventCompatible.swift in Sources */,
 				A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */,
 				A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */,
 				A55AA4A7256FD61300D62326 /* ASAArrangementChooserView.swift in Sources */,
 				A557AD6F25DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
+				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,
+				A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */,
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A5932277257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */,
 				A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
@@ -1185,15 +1189,16 @@
 				A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */,
 				A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */,
 				A5490F982550339D00EFB13F /* WatchFace.swift in Sources */,
-				A5BB7EEA244F55D700932AF2 /* ASACalendar.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
 				A5A9668925A31F2600CF158F /* ASAAllDayTimesSubcell.swift in Sources */,
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
+				A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
-				A584C8FD24B4FDC10014CE2E /* ASAEventsFile.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
+				A59D80252600C57800FD8BBF /* ASACalendarFactory.swift in Sources */,
+				A59D80512600C6F800FD8BBF /* ASADateSpecification.swift in Sources */,
 				A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */,
 				A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */,
 				A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */,
@@ -1211,16 +1216,15 @@
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
 				A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */,
-				A57BCCBE247D8A700019C02C /* ASAEventCalendar.swift in Sources */,
 				A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
 				A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */,
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A50CD63425541B3F00B781EC /* ASAMiniClockView.swift in Sources */,
+				A59D80222600C57800FD8BBF /* ASACalendar.swift in Sources */,
 				A5E4719E2463F938002BB471 /* ASATimeFormat.swift in Sources */,
-				A5BDB7CF244DC1980027704F /* ASACalendarFactory.swift in Sources */,
+				A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */,
 				A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */,
-				A5C77C322433371800CFEE47 /* ASACalendarCode.swift in Sources */,
 				A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */,
 				A5832B88254ED124008E8A97 /* ASAMiniCalendarView.swift in Sources */,
@@ -1232,41 +1236,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A557AD0125DD491A00A264B6 /* ASAEventCompatible.swift in Sources */,
 				A557AD1525DD495400A264B6 /* IntExtensions.swift in Sources */,
 				A557AD7025DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
-				A557AD0025DD491A00A264B6 /* ASAEKEventManager.swift in Sources */,
+				A59D805D2600C6F900FD8BBF /* ASAEvent.swift in Sources */,
+				A59D80412600C59200FD8BBF /* ASARow.swift in Sources */,
+				A59D80432600C59200FD8BBF /* ASALocatedObject.swift in Sources */,
+				A59D805B2600C6F900FD8BBF /* ASAEventsFile.swift in Sources */,
 				A557AD1025DD495400A264B6 /* SolarEvents.swift in Sources */,
-				A557ACD725DD484900A264B6 /* ASACalendarComponent.swift in Sources */,
 				A557AD2925DD49A900A264B6 /* ASAConfiguration.swift in Sources */,
 				A5C77C142433361900CFEE47 /* Date_O_RamaTests.swift in Sources */,
+				A59D80592600C6F900FD8BBF /* ASAEventCompatible.swift in Sources */,
+				A59D805E2600C6F900FD8BBF /* ASAEventCalendar.swift in Sources */,
+				A59D802E2600C57A00FD8BBF /* ASADateComponents.swift in Sources */,
 				A557ACE125DD488B00A264B6 /* ASAAppleCalendar.swift in Sources */,
+				A59D80302600C57A00FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A557AD1325DD495400A264B6 /* DateFormatterExtensions.swift in Sources */,
-				A557ACD825DD484900A264B6 /* ASACalendarFactory.swift in Sources */,
+				A59D802C2600C57A00FD8BBF /* ASACalendar.swift in Sources */,
+				A59D80402600C59200FD8BBF /* ASAProcessedRow.swift in Sources */,
 				A557AD0F25DD495400A264B6 /* LocaleExtensions.swift in Sources */,
-				A557AD0225DD491A00A264B6 /* ASAEventsFile.swift in Sources */,
 				A557AD5525DD4BA200A264B6 /* ASADateFormat.swift in Sources */,
+				A59D805A2600C6F900FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A557AD1225DD495400A264B6 /* ArrayExtensions.swift in Sources */,
-				A557ACCF25DD471F00A264B6 /* ASADateComponents.swift in Sources */,
 				A557AD1C25DD497800A264B6 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A557AD0B25DD495400A264B6 /* TimeZoneExtensions.swift in Sources */,
 				A557AD1425DD495400A264B6 /* EKEventExtensions.swift in Sources */,
 				A557AD5625DD4BA200A264B6 /* ASATimeFormat.swift in Sources */,
 				A557AD6825DD4F3700A264B6 /* StringExtensions.swift in Sources */,
-				A557ACFE25DD491A00A264B6 /* ASAEvent.swift in Sources */,
-				A557ACFF25DD491A00A264B6 /* ASAEventCalendar.swift in Sources */,
-				A557ACD625DD484900A264B6 /* ASACalendarCode.swift in Sources */,
 				A557ACDF25DD488B00A264B6 /* ASAJulianDayCalendar.swift in Sources */,
+				A59D80422600C59200FD8BBF /* ASARowArrayKey.swift in Sources */,
 				A557ACE725DD48A400A264B6 /* ASALocation.swift in Sources */,
+				A59D802F2600C57A00FD8BBF /* ASACalendarFactory.swift in Sources */,
 				A557ACE025DD488B00A264B6 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A557ACDE25DD488B00A264B6 /* ASAISO8601Calendar.swift in Sources */,
 				A557AD0D25DD495400A264B6 /* DateExtensions.swift in Sources */,
-				A56EA58E25EFB40500D46610 /* ASADateSpecification.swift in Sources */,
 				A557AD1125DD495400A264B6 /* CLAuthorizationStatusExtensions.swift in Sources */,
+				A59D802D2600C57A00FD8BBF /* ASACalendarCode.swift in Sources */,
+				A59D805C2600C6F900FD8BBF /* ASADateSpecification.swift in Sources */,
 				A557ACF825DD48F000A264B6 /* ASALocationManager.swift in Sources */,
 				A557AD0925DD495400A264B6 /* FontExtensions.swift in Sources */,
 				A557AD0E25DD495400A264B6 /* CLLocationExtensions.swift in Sources */,
-				A557ACD525DD484900A264B6 /* ASACalendar.swift in Sources */,
 				A557AD1625DD495400A264B6 /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A557AD0825DD495400A264B6 /* EKCalendarExtensions.swift in Sources */,
 				A557AD0C25DD495400A264B6 /* ColorExtensions.swift in Sources */,

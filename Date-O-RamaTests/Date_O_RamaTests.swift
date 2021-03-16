@@ -310,4 +310,15 @@ class Date_O_RamaTests: XCTestCase {
         let quux1: Array<Int?> = [nil, nil, 1, 10]
         XCTAssertFalse(bar.isWithin(start: quux0, end: quux1))
     } // func testMatchingStartAndEnd2() throws
+    
+    func testChangingTheCalendarOfAClock() throws {
+        let clock = ASARow()
+        clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
+
+        clock.iCalendarEventCalendars =  ASAEKEventManager.shared.EKCalendars(titles: ["A", "B", "C"])
+        
+        clock.calendar = ASACalendarFactory.calendar(code: .CCSDSJulianDay)!
+        XCTAssert(clock.iCalendarEventCalendars == [])
+    } // func testChangingTheCalendarOfAClock() throws
+    
 } // class Date_O_RamaTests

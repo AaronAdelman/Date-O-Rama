@@ -35,6 +35,10 @@ class ASARow: ASALocatedObject {
                     self.usesDeviceLocation = false
                 }
             }
+            
+            if !self.isICalendarCompatible {
+                self.iCalendarEventCalendars = []
+            }
 
             if !startingUp {
                 self.clearCacheObjects()
