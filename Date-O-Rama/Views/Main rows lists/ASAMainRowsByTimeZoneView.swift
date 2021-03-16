@@ -86,20 +86,20 @@ struct ASAMainRowsByTimeZoneSubview:  View {
                     //                    }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                    ZStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: false)
-                        NavigationLink(
-                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                                .onReceive(processedRow.row.objectWillChange) { _ in
-                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                    self.userData.objectWillChange.send()
-                                    self.userData.savePreferences(code: .clocks)
-                                }
-                        ) {
-                        }
-                        .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-                    }
-                    .listRowInsets(.zero)
+                    //                    ZStack {
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: false)
+                    //                        NavigationLink(
+                    //                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                    //                                .onReceive(processedRow.row.objectWillChange) { _ in
+                    //                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                    //                                    self.userData.objectWillChange.send()
+                    //                                    self.userData.savePreferences(code: .clocks)
+                    //                                }
+                    //                        ) {
+                    //                        }
+                    //                        .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
+                    //                    }
+                    //                    .listRowInsets(.zero)
                     #endif
                 }
             }

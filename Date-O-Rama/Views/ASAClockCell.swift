@@ -109,20 +109,35 @@ struct ASAClockCell: View {
                 ) {
                 }
                 .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-            }
+            } // ZStack
         } else {
-            HStack {
-                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
-                    .frame(minHeight:  MINIMUM_HEIGHT)
-                    .padding(EDGE_INSETS_1)
-                
-                ASAForwardChevronSymbol()
-                    .foregroundColor(.white)
-                Spacer()
-                    .frame(width:  SPACER_WIDTH)
-            } // HStack
-            .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
-            .background(ASASkyGradient(processedRow: processedRow))
+            ZStack {
+                HStack {
+                    ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
+                        .frame(minHeight:  MINIMUM_HEIGHT)
+                        .padding(EDGE_INSETS_1)
+                    
+                    ASAForwardChevronSymbol()
+                        .foregroundColor(.white)
+                    Spacer()
+                        .frame(width:  SPACER_WIDTH)
+                } // HStack
+                .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
+                .background(ASASkyGradient(processedRow: processedRow))
+                NavigationLink(
+                    destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                        .onReceive(processedRow.row.objectWillChange) { _ in
+                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                            let userData = ASAUserData.shared
+                            userData.objectWillChange.send()
+                            userData.savePreferences(code: .clocks)
+                        }
+                ) {
+                }
+                .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
+            } // ZStack
+            .listRowInsets(.zero)
+
         }
         #endif
     } // var body
