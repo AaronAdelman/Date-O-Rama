@@ -19,7 +19,7 @@ struct ASAMainRowsByCalendarView:  View {
     }
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    var shouldShowTimeToNextDay:  Bool
+//    var shouldShowTimeToNextDay:  Bool
 
     var forComplications:  Bool
 
@@ -30,7 +30,7 @@ struct ASAMainRowsByCalendarView:  View {
     } // var keys:  Array<String>
 
     var body: some View {
-        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications:  forComplications)
+        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption, forComplications:  forComplications)
     } // var body
 } // struct ASAMainRowsByCalendarView
 
@@ -39,7 +39,7 @@ struct ASAMainRowsByCalendarSubview:  View {
     var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    var shouldShowTimeToNextDay:  Bool
+//    var shouldShowTimeToNextDay:  Bool
     var forComplications:  Bool
 
     var keys:  Array<String> {
@@ -59,13 +59,13 @@ struct ASAMainRowsByCalendarSubview:  View {
 
                     #if os(watchOS)
                     HStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications: forComplications)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
                         Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
                     }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
                     ZStack {
-                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, shouldShowTimeToNextDay: shouldShowTimeToNextDay, forComplications: forComplications)
+                        ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
                         NavigationLink(
                             destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
                                 .onReceive(processedRow.row.objectWillChange) { _ in
@@ -88,6 +88,6 @@ struct ASAMainRowsByCalendarSubview:  View {
 
 struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), shouldShowTimeToNextDay: true, forComplications: false)
+        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), forComplications: false)
     }
 }
