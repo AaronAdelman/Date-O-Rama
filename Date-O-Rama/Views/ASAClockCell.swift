@@ -287,14 +287,16 @@ struct ASAClockEventsForEach:  View {
         ForEach(events, id: \.eventIdentifier) {
             event
             in
+            let primaryRow: ASARow = processedRow.row
             let secondaryRow = ASAClockEventsForEach.genericRow
             let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
-            
+            let rangeStart: Date = processedRow.startOfDay
+            let rangeEnd: Date = processedRow.startOfNextDay
 
             #if os(watchOS)
-            ASAEventCell(event: event, primaryRow: processedRow.row, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, forClock: true, now: $now, rangeStart: processedRow.startOfDay, rangeEnd:  processedRow.startOfNextDay)
+            ASAEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, forClock: true, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
             #else
-            ASALinkedEventCell(event: event, primaryRow: processedRow.row, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: processedRow.startOfDay, rangeEnd: processedRow.startOfNextDay)
+            ASALinkedEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd)
             #endif
         } // ForEach
     } // var body
