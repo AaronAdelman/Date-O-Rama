@@ -28,23 +28,32 @@ struct ASAClocksTab: View {
 
     @State private var showingPreferences:  Bool = false
 
+    fileprivate func datePickerOpacity() -> Double {
+        #if targetEnvironment(macCatalyst)
+        return self.usingRealTime ? 0.25 : 1.0
+        #else
+            return 1.0
+        #endif
+    } // func datePickerOpacity() -> Double
+    
     var body: some View {
         NavigationView {
             VStack {
-//                Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 HStack {
                     Spacer()
-
+                    
                     Button(action: {
                         self.usingRealTime = true
                     }, label: {
                         HStack {
                             ASARadioButtonSymbol(on: self.usingRealTime)
                             Text("Now")
+                                .modifier(ASAScalable(lineLimit: 1))
                         } // HStack
                     })
                     
                     Spacer()
+                        .frame(minWidth: 0.0)
                     
                     HStack {
                         Button(action: {
@@ -53,6 +62,7 @@ struct ASAClocksTab: View {
                             HStack {
                                 ASARadioButtonSymbol(on: !self.usingRealTime)
                                 Text("Date:")
+                                    .modifier(ASAScalable(lineLimit: 1))
                             } // HStack
                         })
                         Spacer()
@@ -60,12 +70,14 @@ struct ASAClocksTab: View {
                         DatePicker(selection:  self.$now, in:  Date.distantPast...Date.distantFuture, displayedComponents: [.date, .hourAndMinute]) {
                             Text("")
                         }
+                        .opacity(datePickerOpacity())
+                        .disabled(self.usingRealTime)
                     } // HStack
                     
                     Spacer()
                 } // HStack
                 .border(Color.gray)
-
+                
                 List {
                     DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
                         NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
@@ -76,7 +88,7 @@ struct ASAClocksTab: View {
                             }
                             .foregroundColor(.accentColor)
                         } // NavigationLink
-
+                        
                         NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$secondaryMainRowsGroupingOption, groupingOptions: self.primaryMainRowsGroupingOption.compatibleOptions, otherGroupingOption: self.$primaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: false)) {
                             HStack {
                                 Text("Secondary arrangement")
@@ -85,7 +97,7 @@ struct ASAClocksTab: View {
                             }
                             .foregroundColor(.accentColor)
                         } // NavigationLink
-
+                        
                         Button(
                             action: {
                                 self.showingNewClockDetailView = true
@@ -94,23 +106,23 @@ struct ASAClocksTab: View {
                             Text("Add clock")
                         }
                         .foregroundColor(.accentColor)
-
-//                        Toggle("Show time to next day", isOn: $shouldShowTimeToNextDay)
+                        
+                        //                        Toggle("Show time to next day", isOn: $shouldShowTimeToNextDay)
                     } // DisclosureGroup
-
+                    
                     switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
                         ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, forComplications:  false)
-
+                        
                     case .byCalendar:
                         ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, forComplications:  false)
-
+                        
                     case .byPlaceName, .byCountry:
                         ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
-
+                        
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
                         ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, forComplications:  false)
-
+                        
                     default:
                         EmptyView()
                     } // switch self.groupingOptions[self.groupingOptionIndex]
