@@ -38,19 +38,22 @@ struct ASAClocksTab: View {
                     Button(action: {
                         self.usingRealTime = true
                     }, label: {
-                        ASARadioButtonSymbol(on: self.usingRealTime)
-                        Text("Now")
+                        HStack {
+                            ASARadioButtonSymbol(on: self.usingRealTime)
+                            Text("Now")
+                        } // HStack
                     })
                     
                     Spacer()
-                        .frame(minWidth:  100.0)
                     
                     HStack {
                         Button(action: {
                             self.usingRealTime = false
                         }, label: {
-                            ASARadioButtonSymbol(on: !self.usingRealTime)
-                            Text("Date:")
+                            HStack {
+                                ASARadioButtonSymbol(on: !self.usingRealTime)
+                                Text("Date:")
+                            } // HStack
                         })
                         Spacer()
                             .frame(maxWidth:0.0)
