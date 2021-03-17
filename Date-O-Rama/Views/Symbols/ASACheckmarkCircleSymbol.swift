@@ -20,6 +20,9 @@ struct ASACheckmarkCircleSymbol:  View {
 
 struct ASACheckmarkCircleSymbol_Previews: PreviewProvider {
     static var previews: some View {
+        VStack {
         ASACheckmarkCircleSymbol(on: true)
+            ASACheckmarkCircleSymbol(on: false)
+        }
     }
 }

@@ -209,3 +209,5 @@
 "ASAAlarmType_none"          = "None";
 "ASAAlarmType_absoluteDate"  = "Date";
 "ASAAlarmType_minutesBefore" = "Minutes before";
+"Now"   = "Now";
+"Date:" = "Date:";

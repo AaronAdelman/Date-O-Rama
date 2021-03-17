@@ -209,3 +209,5 @@
 "ASAAlarmType_none"          = "אין";
 "ASAAlarmType_absoluteDate"  = "תאריך";
 "ASAAlarmType_minutesBefore" = "דקות לפני";
+"Now"   = "עכשיו";
+"Date:" = "תאריך:";

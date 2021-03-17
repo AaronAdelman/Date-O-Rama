@@ -14,6 +14,7 @@ import CoreLocation
 struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
+    @State var usingRealTime = true
 
     @State private var showingNewClockDetailView = false
 
@@ -30,7 +31,38 @@ struct ASAClocksTab: View {
     var body: some View {
         NavigationView {
             VStack {
-                Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
+//                Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
+                HStack {
+                    Spacer()
+
+                    Button(action: {
+                        self.usingRealTime = true
+                    }, label: {
+                        ASARadioButtonSymbol(on: self.usingRealTime)
+                        Text("Now")
+                    })
+                    
+                    Spacer()
+                        .frame(minWidth:  100.0)
+                    
+                    HStack {
+                        Button(action: {
+                            self.usingRealTime = false
+                        }, label: {
+                            ASARadioButtonSymbol(on: !self.usingRealTime)
+                            Text("Date:")
+                        })
+                        Spacer()
+                            .frame(maxWidth:0.0)
+                        DatePicker(selection:  self.$now, in:  Date.distantPast...Date.distantFuture, displayedComponents: [.date, .hourAndMinute]) {
+                            Text("")
+                        }
+                    } // HStack
+                    
+                    Spacer()
+                } // HStack
+                .border(Color.gray)
+
                 List {
                     DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
                         NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
@@ -92,7 +124,9 @@ struct ASAClocksTab: View {
             } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in
-            self.now = Date()
+            if usingRealTime {
+                self.now = Date()
+            }
         }
     } // var body
 } // struct ASAClocksTab
