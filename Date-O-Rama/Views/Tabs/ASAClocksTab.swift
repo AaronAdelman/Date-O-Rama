@@ -40,13 +40,17 @@ struct ASAClocksTab: View {
         NavigationView {
             VStack {
                 HStack {
+                    let offColor = Color.gray
+                    
                     Spacer()
                     
                     Button(action: {
                         self.usingRealTime = true
                     }, label: {
                         HStack {
-                            ASARadioButtonSymbol(on: self.usingRealTime)
+                            let on = self.usingRealTime
+                            let color: Color = on ? .green : offColor
+                            ASARadioButtonSymbol(on: on, color: color)
                             Text("Now")
                                 .modifier(ASAScalable(lineLimit: 1))
                         } // HStack
@@ -60,7 +64,9 @@ struct ASAClocksTab: View {
                             self.usingRealTime = false
                         }, label: {
                             HStack {
-                                ASARadioButtonSymbol(on: !self.usingRealTime)
+                                let on: Bool = !self.usingRealTime
+                                let color: Color = on ? .yellow : offColor
+                                ASARadioButtonSymbol(on: on, color: color)
                                 Text("Date:")
                                     .modifier(ASAScalable(lineLimit: 1))
                             } // HStack

@@ -10,19 +10,26 @@ import SwiftUI
 
 struct ASARadioButtonSymbol: View {
     var on:  Bool
+    var color: Color
 
     var body:  some View {
-        let systemName = on ? "largecircle.fill.circle" : "circle"
-        Image(systemName: systemName)
-            .imageScale(.large)
+        if on {
+            Image(systemName: "largecircle.fill.circle")
+                .imageScale(.large)
+                .modifier(ASAGlow(color: color))
+
+        } else {
+            Image(systemName: "circle")
+                .imageScale(.large)
+        }
     } // var body
 }
 
 struct ASARadioButtonSymbol_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            ASARadioButtonSymbol(on: true)
-            ASARadioButtonSymbol(on: false)
+            ASARadioButtonSymbol(on: true, color: .green)
+            ASARadioButtonSymbol(on: false, color: .yellow)
         }
     }
 }
