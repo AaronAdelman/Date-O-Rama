@@ -10,7 +10,6 @@
 		A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */; };
 		A501B24F259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */; };
 		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
-		A50311D4260281A6003242A5 /* ASAGlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50311D3260281A6003242A5 /* ASAGlow.swift */; };
 		A506E3BF252C9075009345A0 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
@@ -322,7 +321,6 @@
 		A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventColorRectangle.swift; sourceTree = "<group>"; };
 		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
-		A50311D3260281A6003242A5 /* ASAGlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGlow.swift; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedRow.swift; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
@@ -658,7 +656,6 @@
 			isa = PBXGroup;
 			children = (
 				A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */,
-				A50311D3260281A6003242A5 /* ASAGlow.swift */,
 				A5B6D03725AF294D005ECE8D /* ASAScalable.swift */,
 			);
 			path = "View modifiers";
@@ -1209,7 +1206,6 @@
 				A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A59D80252600C57800FD8BBF /* ASACalendarFactory.swift in Sources */,
-				A50311D4260281A6003242A5 /* ASAGlow.swift in Sources */,
 				A59D80512600C6F800FD8BBF /* ASADateSpecification.swift in Sources */,
 				A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */,
 				A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */,

@@ -16,8 +16,7 @@ struct ASARadioButtonSymbol: View {
         if on {
             Image(systemName: "largecircle.fill.circle")
                 .imageScale(.large)
-                .modifier(ASAGlow(color: color))
-
+                .foregroundColor(color)
         } else {
             Image(systemName: "circle")
                 .imageScale(.large)
