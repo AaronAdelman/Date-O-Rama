@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         // Override point for customization after application launch.
         
         if WCSession.isSupported() {
-            print("\(#file) \(#function) WCSession is supported.")
+            debugPrint("\(#file) \(#function) WCSession is supported.")
             session.delegate = self
             session.activate()
         } else {
-            print("\(#file) \(#function) WCSession is not supported.")
+            debugPrint("\(#file) \(#function) WCSession is not supported.")
         }
         return true
     }
@@ -45,36 +45,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     // MARK: -
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
-        print("\(#file) \(#function) Paired:  \(session.isPaired ? "Yes" : "No")")
-        print("\(#file) \(#function) WatchApp installed:  \(session.isWatchAppInstalled ? "Yes" : "No")")
-        print("\(#file) \(#function) Complication installed:  \(session.isComplicationEnabled ? "Yes" : "No")")
-        print("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
+        debugPrint("\(#file) \(#function) Paired:  \(session.isPaired ? "Yes" : "No")")
+        debugPrint("\(#file) \(#function) WatchApp installed:  \(session.isWatchAppInstalled ? "Yes" : "No")")
+        debugPrint("\(#file) \(#function) Complication installed:  \(session.isComplicationEnabled ? "Yes" : "No")")
+        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
+        debugPrint("\(#file) \(#function) Error:  \(String(describing: error))")
         
         sendUserData(session)
     } //  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)
     
     func sessionDidDeactivate(_ session: WCSession) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
     }
     
     func sessionWatchStateDidChange(_ session: WCSession) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
-        if session.isReachable && session.isPaired && session.isWatchAppInstalled && session.isComplicationEnabled {
+        if session.isReachable && session.isPaired && session.isWatchAppInstalled
+//            && session.isComplicationEnabled
+        {
             self.sendUserData(session)
         }
     } // func sessionWatchStateDidChange(_ session: WCSession)
     
     func sessionReachabilityDidChange(_ session: WCSession) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
-        if session.isReachable && session.isPaired && session.isWatchAppInstalled && session.isComplicationEnabled {
+        if session.isReachable && session.isPaired && session.isWatchAppInstalled
+//            && session.isComplicationEnabled
+        {
             self.sendUserData(session)
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
