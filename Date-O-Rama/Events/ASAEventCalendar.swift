@@ -355,7 +355,14 @@ class ASAEventCalendar {
                     appropriateCalendar = probableAppropriateCalendar!
                 }
             }
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: components)
+            var appropriateComponents: ASADateComponents
+            if calendar.calendarCode == appropriateCalendar.calendarCode {
+                appropriateComponents = components
+            } else {
+                appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+            }
+            
+            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents)
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
                 if matchesCountryCode {
