@@ -23,7 +23,7 @@ let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 
 class ASARow: ASALocatedObject {
     fileprivate func enforceSelfConsistency() {
-        if !self.calendar.supportedDateFormats.contains(self.dateFormat) {
+        if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
             self.dateFormat = self.calendar.defaultDateFormat
         }
         if !self.calendar.supportsLocations {
