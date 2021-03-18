@@ -49,7 +49,8 @@ struct ASAClocksTab: View {
                     }, label: {
                         HStack {
                             let on = self.usingRealTime
-                            let color: Color = on ? .green : offColor
+                            let systemGreen: Color = Color(UIColor.systemGreen)
+                            let color: Color = on ? systemGreen : offColor
                             ASARadioButtonSymbol(on: on, color: color)
                             Text("Now")
                                 .modifier(ASAScalable(lineLimit: 1))
@@ -65,7 +66,8 @@ struct ASAClocksTab: View {
                         }, label: {
                             HStack {
                                 let on: Bool = !self.usingRealTime
-                                let color: Color = on ? .yellow : offColor
+                                let systemYellow: Color = Color(UIColor.systemYellow)
+                                let color: Color = on ? systemYellow : offColor
                                 ASARadioButtonSymbol(on: on, color: color)
                                 Text("Date:")
                                     .modifier(ASAScalable(lineLimit: 1))
