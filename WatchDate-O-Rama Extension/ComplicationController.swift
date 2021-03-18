@@ -47,7 +47,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getSupportedTimeTravelDirections(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimeTravelDirections) -> Void) {
         // TODO:  Deprecated!
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
         handler([.forward
                  //            , .backward
@@ -56,13 +56,13 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
         // TODO:  Deprecated!
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
         handler(Date.distantPast)
     } // func getTimelineStartDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void)
     
     func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
         handler(Date.distantFuture)
     } // func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void)
@@ -306,7 +306,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: -
     
     func getTimelineEntryForComplication(complication: CLKComplication, now: Date) -> CLKComplicationTimelineEntry? {
-        print("\(#file) \(#function) now = \(now)")
+        debugPrint("\(#file) \(#function) now = \(now)")
         
         switch complication.family {
         case .circularSmall:
