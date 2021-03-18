@@ -68,7 +68,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func getTimelineEndDate(for complication: CLKComplication, withHandler handler: @escaping (Date?) -> Void)
     
     func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
         handler(.showOnLockScreen)
     } // func getPrivacyBehavior(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void)
@@ -77,7 +77,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
         let myDelegate = WKExtension.shared().delegate as! ExtensionDelegate
         myDelegate.complicationController = self
@@ -86,7 +86,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         // Call the handler with the current timeline entry
         
         let now = Date()
-        print("• \(#file) \(#function) now = \(now)")
+        debugPrint("• \(#file) \(#function) now = \(now)")
         let entry = self.getTimelineEntryForComplication(complication: complication, now:  now
         )
         
@@ -107,7 +107,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func earliestStartOfNextDay(when:  Date, rowArray:  Array<ASARow>) -> Date
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
-        print("\(#file) \(#function) after \(date), limit = \(limit)")
+        debugPrint("\(#file) \(#function) after \(date), limit = \(limit)")
         
         var entries: [CLKComplicationTimelineEntry]? = []
         var when = date
@@ -120,7 +120,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             when = self.earliestStartOfNextDay(when: when, rowArray: rowArray!)
             entries?.append(self.getTimelineEntryForComplication(complication: complication, now: when)!)
         } // for i
-        print("\(#file) \(#function) entries = \(String(describing: entries))")
+        debugPrint("\(#file) \(#function) entries = \(String(describing: entries))")
         
         
         // Call the handler with the timeline entries prior to the given date
@@ -131,7 +131,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Placeholder Templates
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        print("\(#file) \(#function)")
+        debugPrint("\(#file) \(#function)")
         
         // This method will be called once per supported complication, and the results will be cached
         //        handler(nil)
