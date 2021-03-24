@@ -12,7 +12,6 @@ import EventKitUI
 
 
 struct ASAEventsTab: View {
-    @ObservedObject var eventManager = ASAEKEventManager.shared
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
 
@@ -68,9 +67,6 @@ struct ASAEventsTab: View {
 
     @State var isNavBarHidden:  Bool = true
     
-    @State private var action:  EKEventEditViewAction?
-    @State private var showingEventEditView = false
-    
     fileprivate func enoughRowsToShowSecondaryDates() -> Bool {
         return self.userData.mainRows.count > 1
     }
@@ -121,21 +117,7 @@ struct ASAEventsTab: View {
                         }
 
                         if ASAEKEventManager.shared.shouldUseEKEvents {
-                            Button(action:
-                                    {
-                                        self.showingEventEditView = true
-                                    }, label:  {
-                                        Text(NSLocalizedString("Add external event", comment: ""))
-                                    })
-                                .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                                    #if targetEnvironment(macCatalyst)
-                                    ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
-                                    #else
-                                    ASANewEKEventView()
-                                        .frame(minWidth:  400.0, minHeight:  600.0)
-                                    #endif
-                                }
-                                .foregroundColor(.accentColor)
+                            ASANewExternalEventButton()
                         }
 
                         DisclosureGroup("Show event preferences", isExpanded: $showingPreferences) {
