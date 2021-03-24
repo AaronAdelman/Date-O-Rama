@@ -59,20 +59,24 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     override init() {
         super.init()
-        notificationCenter.addObserver(self, selector: #selector(handle(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
+        notificationCenter.addObserver(self, selector: #selector(handleLocationChanged(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleStoreChanged(notification:)), name: .EKEventStoreChanged, object: nil)
     } // override init()
     
     deinit {
         notificationCenter.removeObserver(self)
     } // deinit
     
-    @objc func handle(notification:  Notification) -> Void {
+    @objc func handleLocationChanged(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
             self.locationData = self.locationManager.deviceLocationData
         }
     } // func handle(notification:  Notification) -> Void
-
     
+    @objc func handleStoreChanged(notification:  Notification) -> Void {
+        self.clearCacheObjects()
+    } // func handleStoreChanged(notification:  Notification) -> Void
+
     fileprivate func enforceSelfConsistency() {
         if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
             self.dateFormat = self.calendar.defaultDateFormat
