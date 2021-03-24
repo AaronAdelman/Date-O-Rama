@@ -37,10 +37,9 @@ extension Array where Element == ASAEventCompatible {
         return selectedEvents
     } // var allDayOnly
 
-    var futureOnly:  Array<ASAEventCompatible> {
+    func futureOnly(now: Date) -> Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
 
-        let now = Date()
         for event in self {
             if event.startDate >= now {
                 selectedEvents.append(event)

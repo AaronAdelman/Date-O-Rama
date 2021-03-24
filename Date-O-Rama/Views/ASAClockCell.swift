@@ -271,7 +271,7 @@ struct ASAClockEventsForEach:  View {
                 return processedRow.events.allDayOnly
                 
             case .future:
-                return processedRow.events.futureOnly
+                return processedRow.events.futureOnly(now: now)
                 
             case .all:
                 return processedRow.events
