@@ -23,28 +23,6 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     @Published var eventStore = EKEventStore()
 
-//    public var titles:  Array<String> {
-//        get {
-//            if calendars != nil {
-//                return calendars!.map {$0.title}
-//            } else {
-//                return []
-//            }
-//        } // get
-//    } // var titles
-
-//    @Published var calendars: [EKCalendar]?
-
-//    public var calendarSet:  Set<EKCalendar> {
-//        get {
-//            var calendarSet = Set<EKCalendar>()
-//            for calendar in self.calendars! {
-//                calendarSet.insert(calendar)
-//            } // for calendar in parent.calendarArray
-//            return calendarSet
-//        } // get
-//    } // var calendarSet
-
     @AppStorage("USE_EXTERNAL_EVENTS") var shouldUseEKEvents: Bool = true
 
     @Published var userHasPermission:  Bool = false {

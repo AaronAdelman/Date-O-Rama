@@ -11,7 +11,7 @@ import CoreLocation
 import MapKit
 
 struct ASALocationChooserView: View {
-    @ObservedObject var locatedObject:  ASALocatedObject
+    @ObservedObject var clock:  ASARow
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
     @State var tempLocationData:  ASALocation = ASALocation()
@@ -83,18 +83,18 @@ struct ASALocationChooserView: View {
                                 })
         )
         .onAppear() {
-            self.tempUsesDeviceLocation = self.locatedObject.usesDeviceLocation
-            self.tempLocationData = self.locatedObject.locationData
+            self.tempUsesDeviceLocation = self.clock.usesDeviceLocation
+            self.tempLocationData = self.clock.locationData
         }
         .onDisappear() {
             if !self.didCancel {
                 //                debugPrint(#file, #function, "Before row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
                 //                debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
-                self.locatedObject.usesDeviceLocation = self.tempUsesDeviceLocation
+                self.clock.usesDeviceLocation = self.tempUsesDeviceLocation
                 if self.tempUsesDeviceLocation {
-                    self.locatedObject.locationData = ASALocationManager.shared.deviceLocationData
+                    self.clock.locationData = ASALocationManager.shared.deviceLocationData
                 } else {
-                    self.locatedObject.locationData = self.tempLocationData
+                    self.clock.locationData = self.tempLocationData
                 }
                 //                debugPrint(#file, #function, "After row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
             }
@@ -144,6 +144,6 @@ struct ASALocationChooserViewCell:  View {
 
 struct LocationChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationChooserView(locatedObject: ASARow.generic, tempLocationData: ASALocation())
+        ASALocationChooserView(clock: ASARow.generic, tempLocationData: ASALocation())
     }
 }
