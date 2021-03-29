@@ -79,9 +79,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         debugPrint("\(#file) \(#function)")
         
+        // TODO:  Is this section needed?
         let myDelegate = WKExtension.shared().delegate as! ExtensionDelegate
         myDelegate.complicationController = self
         self.complication = complication
+        // End of questionable section.
         
         // Call the handler with the current timeline entry
         
@@ -371,9 +373,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineLarge.rawValue, displayName: NSLocalizedString("1-line large", comment: ""), supportedFamilies: [.utilitarianLarge])
 
         handler([threeLineLargeRowsDescriptor, twoLineSmallRowsDescriptor, twoLineLargeRowsDescriptor, oneLineSmallRowsDescriptor, oneLineLargeRowsDescriptor])
-    }
+    } // func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void)
 } // class ComplicationController: NSObject, CLKComplicationDataSource
 
+
+// MARK:  -
 
 struct ASAThreeLinesLargeView:  View {
     var line0:  String
