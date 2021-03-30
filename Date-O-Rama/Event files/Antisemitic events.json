@@ -26,6 +26,8 @@
         {"titles": {"he": "יום ירושלים (איראן)", "en": "Quds Day"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
             "type": "allDay", "month": 9, "day": -6, "weekdays": [6]}},
         {"titles": {"he": "יום ירושלים (איראן)", "en": "Quds Day"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}}
+            "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}},
+        {"titles": {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎,"}, "startDateSpecification": {
+            "type": "allDay", "month": 3, "day": 30}}
     ]
 }
