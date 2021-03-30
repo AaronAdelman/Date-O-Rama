@@ -83,20 +83,24 @@ class ASAInternalEventSpecification: Codable {
 extension ASAInternalEventSpecification {
     func match(ISOCountryCode:  String?) -> Bool {
         if ISOCountryCode == nil {
+            if self.includeISOCountryCodes != nil && self.includeISOCountryCodes != [] {
+                return false
+            }
+            
+            return true
+        } else {
+            if self.includeISOCountryCodes != nil {
+                let result = self.includeISOCountryCodes!.contains(ISOCountryCode!)
+                return result
+            }
+            
+            if self.excludeISOCountryCodes != nil {
+                let result = !self.excludeISOCountryCodes!.contains(ISOCountryCode!)
+                return result
+            }
+            
             return true
         }
-        
-        if self.includeISOCountryCodes != nil {
-            let result = self.includeISOCountryCodes!.contains(ISOCountryCode!)
-            return result
-        }
-        
-        if self.excludeISOCountryCodes != nil {
-            let result = !self.excludeISOCountryCodes!.contains(ISOCountryCode!)
-            return result
-        }
-        
-        return true
     } // func match(ISOCountryCode:  String?) -> Bool
 } // extension ASAInternalEventSpecification
 
