@@ -39,15 +39,17 @@ extension ASALocation {
         
         if ISOCountryCode == nil {
             // We need to test if Apple's location server screwed up in favor of inappropriate political neutrality and fix any such problem.
-            let latitude = usedLocation.coordinate.latitude
-            let longitude = usedLocation.coordinate.longitude
-            
             let JudeaAndSamariaNorth: CLLocationDegrees = 32.0 + 40.0 / 60.0
             let JudeaAndSamariaSouth: CLLocationDegrees = 31.0
             let JudeaAndSamariaEast: CLLocationDegrees = 35.0 + 40.0 / 60.0
             let JudeaAndSamariaWest: CLLocationDegrees = 35.0
+            
+            let GolanNorth: CLLocationDegrees = 33.0 + 20.0 / 60.0
+            let GolanSouth: CLLocationDegrees = 32.0 + 30.0 / 60.0
+            let GolanEast: CLLocationDegrees = 36.0
+            let GolanWest: CLLocationDegrees = 35.0 + 20.0 / 60.0
 
-            if JudeaAndSamariaWest <= longitude && longitude <= JudeaAndSamariaEast && JudeaAndSamariaSouth <= latitude && latitude <= JudeaAndSamariaNorth {
+            if usedLocation.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest) || usedLocation.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest) {
                 country = NSLocalizedString("Israel", comment: "")
                 ISOCountryCode = "IL"
                 timeZone = TimeZone(identifier: "Asia/Jerusalem")!

@@ -49,9 +49,23 @@ extension CLLocation {
     } // var humanInterfaceRepresentation
 } // extension CLLocation
 
+
+// MARK:  -
+
 extension CLLocation {
     static var NullIsland:  CLLocation {
         // Default, filler location value that keeps being used in this program
         return CLLocation(latitude: 0.0, longitude: 0.0)
     } // static var NullIsland:  CLLocation
+} // extension CLLocation
+
+
+// MARK:  -
+
+extension CLLocation {
+    func isWithin(north: CLLocationDegrees, south: CLLocationDegrees, east: CLLocationDegrees, west: CLLocationDegrees) -> Bool {
+        let longitude = self.coordinate.longitude
+        let latitude = self.coordinate.latitude
+       return west <= longitude && longitude <= east && south <= latitude && latitude <= north
+    } // func within(north: CLLocationDegrees, south: CLLocationDegrees, east: CLLocationDegrees, west: CLLocationDegrees) -> Bool
 } // extension CLLocation
