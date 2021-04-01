@@ -132,13 +132,31 @@ extension ASALocation {
             }
 
             if self.locality != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
+                var nameAndLocalityAreTheSame = false
+                if self.name != nil {
+                    if self.name! == self.locality! {
+                        nameAndLocalityAreTheSame = true
+                    }
+                }
+                
+                if !nameAndLocalityAreTheSame {
+                    temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
+                }
             }
-
+            
             if self.administrativeArea != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.administrativeArea!)"
+                var nameAndAdministrativeAreaAreTheSame = false
+                if self.name != nil {
+                    if self.name! == self.administrativeArea! {
+                        nameAndAdministrativeAreaAreTheSame = true
+                    }
+                }
+                
+                if !nameAndAdministrativeAreaAreTheSame {
+                    temp += "\(temp.count > 0 ? separator : "")\(self.administrativeArea!)"
+                }
             }
-
+            
             if self.country != nil {
                 var nameAndCountryAreTheSame = false
                 if self.name != nil {
