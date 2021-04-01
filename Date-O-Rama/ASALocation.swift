@@ -72,31 +72,18 @@ extension ASALocation {
     
     var formattedOneLineAddress:  String {
         get {
-            let separator = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
+            let SEPARATOR = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
 
-            var temp = ""
+            var temp: Array<String> = []
+            temp.appendIfDifferentAndNotNil(string: self.locality)
+            temp.appendIfDifferentAndNotNil(string: self.administrativeArea)
+            temp.appendIfDifferentAndNotNil(string: self.country)
 
-            if self.locality != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
+            if temp.count == 0 {
+                return self.location.humanInterfaceRepresentation
             }
 
-            if self.administrativeArea != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.administrativeArea!)"
-            }
-
-            if self.country != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.country!)"
-            }
-
-            if temp == "" {
-                if self.name != nil {
-                    temp = self.name!
-                } else {
-                    temp = self.location.humanInterfaceRepresentation
-                }
-            }
-
-            return temp
+            return temp.joined(separator: SEPARATOR)
         } // get
     } // var formattedOneLineAddress
 
@@ -123,58 +110,19 @@ extension ASALocation {
 
     var longFormattedOneLineAddress:  String {
         get {
-            let separator = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
+            let SEPARATOR = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
 
-            var temp = ""
+            var temp: Array<String> = []
+            temp.appendIfDifferentAndNotNil(string: self.name)
+            temp.appendIfDifferentAndNotNil(string: self.locality)
+            temp.appendIfDifferentAndNotNil(string: self.administrativeArea)
+            temp.appendIfDifferentAndNotNil(string: self.country)
 
-            if self.name != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.name!)"
+            if temp.count == 0 {
+                return self.location.humanInterfaceRepresentation
             }
 
-            if self.locality != nil {
-                var nameAndLocalityAreTheSame = false
-                if self.name != nil {
-                    if self.name! == self.locality! {
-                        nameAndLocalityAreTheSame = true
-                    }
-                }
-                
-                if !nameAndLocalityAreTheSame {
-                    temp += "\(temp.count > 0 ? separator : "")\(self.locality!)"
-                }
-            }
-            
-            if self.administrativeArea != nil {
-                var nameAndAdministrativeAreaAreTheSame = false
-                if self.name != nil {
-                    if self.name! == self.administrativeArea! {
-                        nameAndAdministrativeAreaAreTheSame = true
-                    }
-                }
-                
-                if !nameAndAdministrativeAreaAreTheSame {
-                    temp += "\(temp.count > 0 ? separator : "")\(self.administrativeArea!)"
-                }
-            }
-            
-            if self.country != nil {
-                var nameAndCountryAreTheSame = false
-                if self.name != nil {
-                    if self.name! == self.country! {
-                        nameAndCountryAreTheSame = true
-                    }
-                }
-                
-                if !nameAndCountryAreTheSame {
-                    temp += "\(temp.count > 0 ? separator : "")\(self.country!)"
-                }
-            }
-
-            if temp == "" {
-                temp = self.location.humanInterfaceRepresentation
-            }
-
-            return temp
+            return temp.joined(separator: SEPARATOR)
         } // get
     } // var longFormattedOneLineAddress
 } // extension ASALocation

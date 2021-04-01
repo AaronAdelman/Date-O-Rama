@@ -207,3 +207,17 @@ extension Array where Element == Int? {
         return (start: newStart, end: newEnd)
     } // func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int>, end: Array<Int>)
 } // extension Array where Element == Int
+
+
+// MARK:  -
+
+extension Array where Element == String {
+    mutating func appendIfDifferentAndNotNil(string: String?) {
+        if string != nil {
+            let nonoptionalString = string!
+            if nonoptionalString != self.last {
+                self.append(nonoptionalString)
+            }
+        }
+    } // mutating func appendIfDifferentAndNotNil(string: String?)
+} // extension Array where Element == String
