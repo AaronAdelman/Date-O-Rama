@@ -140,7 +140,16 @@ extension ASALocation {
             }
 
             if self.country != nil {
-                temp += "\(temp.count > 0 ? separator : "")\(self.country!)"
+                var nameAndCountryAreTheSame = false
+                if self.name != nil {
+                    if self.name! == self.country! {
+                        nameAndCountryAreTheSame = true
+                    }
+                }
+                
+                if !nameAndCountryAreTheSame {
+                    temp += "\(temp.count > 0 ? separator : "")\(self.country!)"
+                }
             }
 
             if temp == "" {
