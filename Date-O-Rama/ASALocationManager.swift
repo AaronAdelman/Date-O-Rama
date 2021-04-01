@@ -1,5 +1,5 @@
 //
-//  LocationManager.swift
+//  ASALocationManager.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-04-23.

@@ -48,11 +48,20 @@ extension ASALocation {
             let GolanSouth: CLLocationDegrees = 32.0 + 30.0 / 60.0
             let GolanEast: CLLocationDegrees = 36.0
             let GolanWest: CLLocationDegrees = 35.0 + 20.0 / 60.0
+            
+            let GazaStripNorth: CLLocationDegrees = 31.0 + 40.0 / 60.0
+            let GazaStripSouth: CLLocationDegrees = 31.0
+            let GazaStripEast: CLLocationDegrees = 34.0 + 40.0 / 60.0
+            let GazaStripWest: CLLocationDegrees = 34.0
 
             if usedLocation.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest) || usedLocation.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest) {
                 country = NSLocalizedString("Israel", comment: "")
                 ISOCountryCode = "IL"
                 timeZone = TimeZone(identifier: "Asia/Jerusalem")!
+            } else if usedLocation.isWithin(north: GazaStripNorth, south: GazaStripSouth, east: GazaStripEast, west: GazaStripWest) {
+                country = NSLocalizedString("Gaza Strip", comment: "")
+                ISOCountryCode = "PS"
+                timeZone = TimeZone(identifier: "Asia/Gaza")!
             }
         }
         
