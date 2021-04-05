@@ -12,6 +12,7 @@ import SwiftUI
 protocol ASAEventCompatible {
     var eventIdentifier: String! { get }
     var title:  String! { get }
+    var location: String? { get }
     var startDate:  Date! { get }
     var endDate: Date! { get }
     var isAllDay: Bool { get }

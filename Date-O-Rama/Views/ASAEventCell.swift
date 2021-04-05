@@ -62,9 +62,14 @@ struct ASAEventCell:  View {
             VStack(alignment: .leading) {
                 Text(event.title).font(.callout).bold().foregroundColor(labelColor)
                     .modifier(ASAScalable(lineLimit: 1))
+                
+                if event.location != nil {
+                    Text(event.location!).font(.subheadlineMonospacedDigit).foregroundColor(secondaryLabelColor)
+                        .modifier(ASAScalable(lineLimit: 1))
+                }
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
-
+                
                 ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
 
                 if self.eventsViewShouldShowSecondaryDates {
@@ -92,6 +97,11 @@ struct ASAEventCell:  View {
                     Text(event.title).font(.headline).foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
+                
+                if event.location != nil {
+                    Text(event.location!).font(.callout).foregroundColor(secondaryLabelColor)
+                        .modifier(ASAScalable(lineLimit: 1))
+                }
 
                 ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
 
@@ -118,8 +128,7 @@ struct ASAEventCellCalendarTitle:  View {
 
     var body: some View {
         let title: String = forClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
-        Text(title
-        ).font(.subheadlineMonospacedDigit).foregroundColor(color)
+        Text(title).font(.subheadlineMonospacedDigit).foregroundColor(color)
         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
 }

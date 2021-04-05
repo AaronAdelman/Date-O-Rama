@@ -14,6 +14,7 @@ import EventKit
 struct ASAEvent:  ASAEventCompatible {
     var eventIdentifier: String! = "\(UUID())"
     var title: String!
+    var location: String?
     var startDate: Date!
     var endDate: Date!
     var isAllDay: Bool
