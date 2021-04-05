@@ -332,12 +332,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     // MARK:  -
 
     func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible> {
-//        let eventCacheKey = NSNumber(value: startDate.timeIntervalSince1970)
-//        let wrappedArray = self.eventCache.object(forKey: eventCacheKey)
-//        if wrappedArray != nil {
-////            debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Found events in cache")
-//            return wrappedArray!.array
-//        }
         if self.eventCacheStartDate == startDate && self.eventCacheEndDate == endDate {
             return self.eventCacheValue
         }
@@ -364,7 +358,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
 
-//        self.eventCache.setObject(ASAEventCacheObject(array: events), forKey: eventCacheKey)
         self.eventCacheStartDate = startDate
         self.eventCacheEndDate   = endDate
         self.eventCacheValue     = events
@@ -383,17 +376,6 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 
 extension ASARow {
     public func dateStringTimeStringDateComponents(now: Date) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
-//        let dateComponents: ASADateComponents = self.dateComponents([.day, .weekday, .hour, .minute, .second], from: now)
-        
-//        if self.calendar.canSplitTimeFromDate {
-//            #if os(watchOS)
-//            return (self.watchShortenedDateString(now: now), self.watchShortenedTimeString(now: now), dateComponents)
-//            #else
-//            return (self.dateString(now: now), self.timeString(now: now), dateComponents)
-//            #endif
-//        } else {
-//            return (self.dateTimeString(now: now), "", dateComponents)
-//        }
         #if os(watchOS)
         let properDateFormat = self.dateFormat.watchShortened
         #else

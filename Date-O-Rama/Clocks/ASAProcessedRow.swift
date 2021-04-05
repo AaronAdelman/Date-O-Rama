@@ -54,21 +54,6 @@ struct ASAProcessedRow {
         self.calendarString = row.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = row.dateStringTimeStringDateComponents(now: now)
         self.canSplitTimeFromDate = row.calendar.canSplitTimeFromDate
-//        if self.canSplitTimeFromDate {
-//            #if os(watchOS)
-//            self.dateString = row.watchShortenedDateString(now: now)
-//            #else
-//            self.dateString = row.dateString(now: now)
-//            #endif
-//            #if os(watchOS)
-//            self.timeString = row.watchShortenedTimeString(now: now)
-//            #else
-//            self.timeString = row.timeString(now: now)
-//            #endif
-//        } else {
-//            self.dateString = row.dateTimeString(now: now)
-//            self.timeString = ""
-//        }
         self.dateString = dateString
         self.timeString = timeString
         self.timeZoneString = row.locationData.timeZone.abbreviation(for:  now) ?? ""
@@ -95,8 +80,6 @@ struct ASAProcessedRow {
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
         self.supportsTimeZones = row.calendar.supportsTimeZones
-
-//        let dateComponents = row.dateComponents([.day, .weekday, .hour, .minute, .second], from: now)
 
         self.daysPerWeek = row.daysPerWeek
         self.day = dateComponents.day ?? 1
