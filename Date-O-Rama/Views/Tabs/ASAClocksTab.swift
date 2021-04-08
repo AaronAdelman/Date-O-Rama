@@ -119,7 +119,7 @@ struct ASAClocksTab: View {
                     } // DisclosureGroup
                     
                     if ASAEKEventManager.shared.shouldUseEKEvents {
-                        ASANewExternalEventButton()
+                        ASANewExternalEventButton(now: now)
                     }
                     
                     switch self.primaryMainRowsGroupingOption {

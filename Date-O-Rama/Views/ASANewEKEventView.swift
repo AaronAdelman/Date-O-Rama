@@ -127,8 +127,8 @@ enum ASAAlarmType: Int, Equatable, CaseIterable {
 struct ASANewEKEventView: View {
     @State private var title: String = ""
     @State private var location: String = ""
-    @State private var startDate: Date = Date()
-    @State private var endDate: Date = Date()
+    @State var startDate: Date
+    @State var endDate: Date
     @State private var isAllDay: Bool = false
     @State private var recurrenceRule: ASARecurrenceType = .never
 
@@ -639,6 +639,6 @@ struct ASANewEKEventLabeledIntView: View {
 
 struct ASANewEventView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewEKEventView()
+        ASANewEKEventView(startDate: Date(), endDate: Date())
     }
 }

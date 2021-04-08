@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ASANewExternalEventButton: View {
     @ObservedObject var eventManager = ASAEKEventManager.shared
+    var now: Date
 
     @State private var action:  EKEventEditViewAction?
     @State private var showingEventEditView = false
@@ -26,7 +27,7 @@ struct ASANewExternalEventButton: View {
                 #if targetEnvironment(macCatalyst)
                 ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
                 #else
-                ASANewEKEventView()
+                ASANewEKEventView(startDate: now, endDate: now)
                     .frame(minWidth:  400.0, minHeight:  600.0)
                 #endif
             }
@@ -36,6 +37,6 @@ struct ASANewExternalEventButton: View {
 
 struct ASANewExternalEventButton_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewExternalEventButton()
+        ASANewExternalEventButton(now: Date())
     }
 }

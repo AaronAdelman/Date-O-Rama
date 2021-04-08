@@ -117,7 +117,7 @@ struct ASAEventsTab: View {
                         }
 
                         if ASAEKEventManager.shared.shouldUseEKEvents {
-                            ASANewExternalEventButton()
+                            ASANewExternalEventButton(now: self.date)
                         }
 
                         DisclosureGroup("Show event preferences", isExpanded: $showingPreferences) {
