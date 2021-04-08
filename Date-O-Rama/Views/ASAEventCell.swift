@@ -61,7 +61,7 @@ struct ASAEventCell:  View {
 
             VStack(alignment: .leading) {
                 Text(event.title).font(.callout).bold().foregroundColor(labelColor)
-                    .modifier(ASAScalable(lineLimit: 1))
+                    .modifier(ASAScalable(lineLimit: 2))
                 
                 if event.location != nil {
                     Text(event.location!).font(.subheadlineMonospacedDigit).foregroundColor(secondaryLabelColor)
