@@ -181,6 +181,10 @@ struct ASAClockCellBody:  View {
         return temp
     } // func numberFormatter() -> NumberFormatter
     
+    var characterDirection:  Locale.LanguageDirection {
+        return Locale.characterDirection(forLanguage: Locale.current.identifier)
+    } // var characterDirection
+    
     var body: some View {
         VStack(alignment:  .leading) {
             HStack {
@@ -196,7 +200,15 @@ struct ASAClockCellBody:  View {
                 #if os(watchOS)
                 if processedRow.events.count > 0 {
                     NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
-                        Image(systemName: "chevron.forward.circle.fill")
+                        switch characterDirection {
+                        case .leftToRight:
+                            Image(systemName: "chevron.compact.right")
+                            
+                        case .rightToLeft:
+                            Image(systemName: "chevron.compact.left")
+                        default:
+                            Image(systemName: "chevron.compact.right")
+                        } // switch characterDirection
                     }
                 }
                 #else
