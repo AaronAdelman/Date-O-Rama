@@ -76,10 +76,7 @@ struct ASAClockCell: View {
     
     var body: some View {
         #if os(watchOS)
-        HStack {
-            ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
-            Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-        } // HStack
+        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
         #else
         let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
         let MINIMUM_HEIGHT: CGFloat = 40.0
@@ -137,7 +134,7 @@ struct ASAClockCell: View {
                 .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
             } // ZStack
             .listRowInsets(.zero)
-
+            
         }
         #endif
     } // var body
@@ -189,9 +186,12 @@ struct ASAClockCellBody:  View {
             HStack {
                 ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
                 
+                #if os(watchOS)
+                #else
                 if (processedRow.supportsMonths || shouldShowTime) {
                     Spacer()
                 }
+                #endif
                 
                 #if os(watchOS)
                 if processedRow.events.count > 0 {
