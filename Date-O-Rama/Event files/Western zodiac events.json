@@ -43,6 +43,13 @@
                 "type": "allDay", "month": 2, "day": 18}},
         {"titles": {"en": "♓︎ Pisces", "he": "♓︎ דגים"}, "startDateSpecification": {
             "type": "allDay", "month": 2, "day": 19}, "endDateSpecification": {
-                "type": "allDay", "month": 3, "day": 20}}
+                "type": "allDay", "month": 3, "day": 20}},
+        {"titles": {"en": "☉ Day of the Sun", "he": "☉ יום השמש"}, "startDateSpecification": {"weekdays": [1], "type": "allDay"}},
+        {"titles": {"en": "☾ Day of the Moon", "he": "☾ יום הירח"}, "startDateSpecification": {"weekdays": [2], "type": "allDay"}},
+        {"titles": {"en": "♂︎ Day of Mars", "he": "♂︎ יום מאדין"}, "startDateSpecification": {"weekdays": [3], "type": "allDay"}},
+        {"titles": {"en": "☿ Day of Mercury", "he": "☿ יום כוכב"}, "startDateSpecification": {"weekdays": [4], "type": "allDay"}},
+        {"titles": {"en": "♃ Day of Jupiter", "he": "♃ יום צדק"}, "startDateSpecification": {"weekdays": [5], "type": "allDay"}},
+        {"titles": {"en": "♀︎ Day of Venus", "he": "♀︎ יום נוגה"}, "startDateSpecification": {"weekdays": [6], "type": "allDay"}},
+        {"titles": {"en": "♄ Day of Saturn", "he": "♄ יום שבתי"}, "startDateSpecification": {"weekdays": [7], "type": "allDay"}}
     ]
 }
