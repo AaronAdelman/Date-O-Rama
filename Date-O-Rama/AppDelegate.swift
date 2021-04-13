@@ -10,7 +10,6 @@ import UIKit
 import WatchConnectivity
 
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, ObservableObject {
     public let session = WCSession.default
     
