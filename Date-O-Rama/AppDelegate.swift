@@ -11,6 +11,8 @@ import WatchConnectivity
 
 
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, ObservableObject {
+    static let shared = AppDelegate()
+    
     public let session = WCSession.default
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

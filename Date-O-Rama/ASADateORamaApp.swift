@@ -29,7 +29,7 @@ struct ASADateORamaApp: App {
                         Text("EVENTS_TAB")
                     }
                 
-                if appDelegate.session.isPaired {
+                if self.appDelegate.session.isPaired {
                     ASAComplicationClocksTab().environmentObject(userData)
                         .tabItem {
                             Image(systemName: "applewatch.watchface")

@@ -357,9 +357,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         #if targetEnvironment(macCatalyst)
         
         #else
-        let app = UIApplication.shared
-            let appDelegate = app.delegate as! AppDelegate
-            appDelegate.sendUserData(appDelegate.session)
+        let appDelegate: AppDelegate = AppDelegate.shared
+        appDelegate.sendUserData(appDelegate.session)
         #endif
         #endif
     } // func savePreferences()

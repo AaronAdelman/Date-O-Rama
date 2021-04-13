@@ -86,7 +86,6 @@
 		A566F4482483D6EB000A05B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F4472483D6EB000A05B5 /* Assets.xcassets */; };
 		A566F44F2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4532483D6EC000A05B5 /* ContentView.swift */; };
-		A566F4562483D6EC000A05B5 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4552483D6EC000A05B5 /* HostingController.swift */; };
 		A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */; };
 		A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4592483D6EC000A05B5 /* NotificationController.swift */; };
 		A566F45C2483D6EC000A05B5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F45B2483D6EC000A05B5 /* NotificationView.swift */; };
@@ -210,6 +209,7 @@
 		A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
+		A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */; };
 		A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
 		A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
 		A5B6D01C25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */; };
@@ -367,7 +367,6 @@
 		A566F4492483D6EB000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchDate-O-Rama Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566F4532483D6EC000A05B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A566F4552483D6EC000A05B5 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A566F4592483D6EC000A05B5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A566F45B2483D6EC000A05B5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -413,6 +412,7 @@
 		A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
+		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
 		A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeZones.txt; sourceTree = "<group>"; };
 		A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACapsuleBorder.swift; sourceTree = "<group>"; };
 		A5B6D03725AF294D005ECE8D /* ASAScalable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAScalable.swift; sourceTree = "<group>"; };
@@ -568,12 +568,12 @@
 			isa = PBXGroup;
 			children = (
 				A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */,
+				A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */,
 				A523A40325A72889007CB54B /* ASAWatchEventsList.swift */,
 				A566F45D2483D6EF000A05B5 /* Assets.xcassets */,
 				A57CA32C2486474900378EA7 /* ComplicationController.swift */,
 				A566F4532483D6EC000A05B5 /* ContentView.swift */,
 				A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */,
-				A566F4552483D6EC000A05B5 /* HostingController.swift */,
 				A566F4622483D6EF000A05B5 /* Info.plist */,
 				A566F4592483D6EC000A05B5 /* NotificationController.swift */,
 				A566F45B2483D6EC000A05B5 /* NotificationView.swift */,
@@ -1071,10 +1071,10 @@
 				A566F47D2483D7CF000A05B5 /* ASATimeFormat.swift in Sources */,
 				A566F4712483D7CF000A05B5 /* ASALocation.swift in Sources */,
 				A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */,
-				A566F4562483D6EC000A05B5 /* HostingController.swift in Sources */,
 				A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */,
 				A5B816532541A3DD00E309E0 /* ASAMainRowsByFormattedDateView.swift in Sources */,
 				A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */,
+				A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */,
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
