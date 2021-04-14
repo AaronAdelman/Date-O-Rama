@@ -39,7 +39,7 @@
       "subtype" : "38mm"
     },
     {
-      "filename" : "Icon-44@2x.png",
+      "filename" : "Icon-44@2x-1.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -79,7 +79,7 @@
       "subtype" : "44mm"
     },
     {
-      "filename" : "iTunesArtwork@2x.png",
+      "filename" : "1024.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

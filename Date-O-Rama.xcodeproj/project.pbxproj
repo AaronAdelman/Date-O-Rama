@@ -1404,6 +1404,7 @@
 				DEVELOPMENT_TEAM = 53M887FS75;
 				IBSC_MODULE = WatchDate_O_Rama_Extension;
 				INFOPLIST_FILE = "WatchDate-O-Rama/Info.plist";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp";
 				PRODUCT_NAME = "Date-O-Rama";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1427,6 +1428,7 @@
 				DEVELOPMENT_TEAM = 53M887FS75;
 				IBSC_MODULE = WatchDate_O_Rama_Extension;
 				INFOPLIST_FILE = "WatchDate-O-Rama/Info.plist";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp";
 				PRODUCT_NAME = "Date-O-Rama";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1455,6 +1457,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -1482,6 +1485,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Adelsoft.Date-O-Rama.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;

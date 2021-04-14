@@ -26,9 +26,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             if notification.name.rawValue == UPDATED_LOCATION_NAME {
                 // TODO:  Put in something to check if we need if something actually needs a refresh!
                 if self.complicationController.complication != nil {
+                    debugPrint(#file, #function, "Update location notification recieved.  Will reload timeline")
                     CLKComplicationServer.sharedInstance().reloadTimeline(for: self.complicationController.complication!)
                 } else {
-                    debugPrint(#file, #function, "No complication!")
+                    debugPrint(#file, #function, "Update location notification recieved.  No complication!")
                 }
             }
         })
