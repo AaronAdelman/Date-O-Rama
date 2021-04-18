@@ -11,6 +11,9 @@ import Combine
 import SwiftUI
 import CoreLocation
 import UIKit
+#if os(watchOS)
+import ClockKit
+#endif
 
 enum ASAPreferencesFileCode {
     case clocks
@@ -49,11 +52,41 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     @Published var mainRows:  Array<ASARow> = [ASARow.generic]
     
-    @Published var threeLineLargeRows:  Array<ASARow> = []
-    @Published var twoLineSmallRows:    Array<ASARow> = []
-    @Published var twoLineLargeRows:    Array<ASARow> = []
-    @Published var oneLineLargeRows:    Array<ASARow> = []
-    @Published var oneLineSmallRows:    Array<ASARow> = []
+    private func reloadComplicationTimelines() {
+        #if os(watchOS)
+        // Update any complications on active watch faces.
+        let server = CLKComplicationServer.sharedInstance()
+        for complication in server.activeComplications ?? [] {
+            server.reloadTimeline(for: complication)
+        }
+        #endif
+    }
+    
+    @Published var threeLineLargeRows:  Array<ASARow> = [] {
+        didSet {
+            self.reloadComplicationTimelines()
+        } // didSet
+    }
+    @Published var twoLineSmallRows:    Array<ASARow> = [] {
+        didSet {
+            self.reloadComplicationTimelines()
+        } // didSet
+    }
+    @Published var twoLineLargeRows:    Array<ASARow> = [] {
+        didSet {
+            self.reloadComplicationTimelines()
+        } // didSet
+    }
+    @Published var oneLineLargeRows:    Array<ASARow> = [] {
+        didSet {
+            self.reloadComplicationTimelines()
+        } // didSet
+    }
+    @Published var oneLineSmallRows:    Array<ASARow> = [] {
+        didSet {
+            self.reloadComplicationTimelines()
+        } // didSet
+    }
 
 
     // MARK:  -

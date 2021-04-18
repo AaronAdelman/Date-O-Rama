@@ -25,12 +25,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             in
             if notification.name.rawValue == UPDATED_LOCATION_NAME {
                 // TODO:  Put in something to check if we need if something actually needs a refresh!
-                if self.complicationController.complication != nil {
-                    debugPrint(#file, #function, "Update location notification recieved.  Will reload timeline")
-                    CLKComplicationServer.sharedInstance().reloadTimeline(for: self.complicationController.complication!)
-                } else {
-                    debugPrint(#file, #function, "Update location notification recieved.  No complication!")
-                }
+//                if self.complicationController.complication != nil {
+//                    debugPrint(#file, #function, "Update location notification recieved.  Will reload timeline")
+//                    CLKComplicationServer.sharedInstance().reloadTimeline(for: self.complicationController.complication!)
+//                } else {
+//                    debugPrint(#file, #function, "Update location notification recieved.  No complication!")
+//                }
             }
         })
     } // override init()
@@ -45,9 +45,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if WCSession.isSupported() {
             do {
                 try session?.updateApplicationContext([ASAMessageKeyType:  ASAMessageKeyRequestUserData])
-                print("\(#file) \(#function) Sent request for an update.")
+                debugPrint("\(#file) \(#function) Sent request for an update.")
             } catch {
-                print("\(#file) \(#function) An error occurred when sending the request for an update!")
+                debugPrint("\(#file) \(#function) An error occurred when sending the request for an update!")
             }
         } else {
             debugPrint(#file, #function, "WCsession is not supported")
@@ -131,12 +131,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             ASAUserData.shared.savePreferences(code: .clocks)
             ASAUserData.shared.savePreferences(code: .complications)
 
-            if complicationController.complication != nil {
-                CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
-                debugPrint(#file, #function, "Updated complication \(String(describing: complicationController.complication?.identifier))", complicationController.complication?.identifier as Any)
-            } else {
-                debugPrint(#file, #function, "Could not update complication!  Complication is nil!")
-            }
+//            if complicationController.complication != nil {
+//                CLKComplicationServer.sharedInstance().reloadTimeline(for: complicationController.complication!)
+//                debugPrint(#file, #function, "Updated complication \(String(describing: complicationController.complication?.identifier))", complicationController.complication?.identifier as Any)
+//            } else {
+//                debugPrint(#file, #function, "Could not update complication!  Complication is nil!")
+//            }
             //             TODO:  Figure out what went wrong
             
             let mainRowsTemp = message[ASARowArrayKey.app.rawValue]
@@ -170,9 +170,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         @unknown default:
             activationStateString = "unknownDefault"
         } // switch
-        print("\(#file) \(#function) activation state:  \(activationStateString), error:  \(String(describing: error))")
+        debugPrint("\(#file) \(#function) activation state:  \(activationStateString), error:  \(String(describing: error))")
         
-        print("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
+        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
         
         requestUserData()
     } // func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)

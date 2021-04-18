@@ -38,7 +38,7 @@ extension ASAUserData {
 // MARK: -
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
-    public var complication:  CLKComplication?
+//    public var complication:  CLKComplication?
     
     let  userData = ASAUserData.shared
 
@@ -80,9 +80,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         debugPrint("\(#file) \(#function)")
         
         // TODO:  Is this section needed?
-        let myDelegate = WKExtension.shared().delegate as! ExtensionDelegate
-        myDelegate.complicationController = self
-        self.complication = complication
+//        let myDelegate = WKExtension.shared().delegate as! ExtensionDelegate
+//        myDelegate.complicationController = self
+//        self.complication = complication
         // End of questionable section.
         
         // Call the handler with the current timeline entry
