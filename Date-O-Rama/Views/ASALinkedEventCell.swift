@@ -41,6 +41,14 @@ struct ASALinkedEventCell:  View {
                 .popover(isPresented: $showingEventView, arrowEdge: .leading) {
                     ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                 }.foregroundColor(.accentColor)
+                
+                #if targetEnvironment(macCatalyst)
+                let SPACER_WIDTH: CGFloat = 16.0
+                #else
+                let SPACER_WIDTH: CGFloat =  8.0
+                #endif
+                Spacer()
+                    .frame(width: SPACER_WIDTH)
             }
         } else {
             ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
