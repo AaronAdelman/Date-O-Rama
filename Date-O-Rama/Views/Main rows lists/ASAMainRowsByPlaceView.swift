@@ -51,7 +51,31 @@ struct ASAMainRowsByPlaceSubview:  View {
     var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>>
     var keys:  Array<String> {
         get {
-            return Array(self.processedRowsByPlace.keys).sorted()
+            var here: String?
+            if primaryGroupingOption == .byPlaceName {
+                #if os(watchOS)
+                here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
+                #else
+                here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
+                #endif
+            } else {
+                here = ASALocationManager.shared.deviceLocationData.country
+            }
+            
+//            return Array(self.processedRowsByPlace.keys).sorted()
+            return Array(self.processedRowsByPlace.keys).sorted(by: {
+            element1, element2
+                in
+                if element1 == here {
+                    return true
+                }
+                
+                if element2 == here {
+                    return false
+                }
+                
+                return element1 < element2
+            })
         } // get
     } // var keys:  Array<String>
     @Binding var now:  Date
