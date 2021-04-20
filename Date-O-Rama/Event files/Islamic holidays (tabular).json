@@ -7,6 +7,7 @@
     "calendarColorGreen":  0.466666666666667,
     "calendarColorBlue":  0.450980392156863,
     "calendarColorAlpha":  1.0,
+    "otherCalendarCodes": ["Gregorian"],
     "eventSpecifications":  [
         {
             "titles":  {"en":  "Islamic New Year", "he":  "ראש השנה האיסלאמי", "ar":  "رأس السنة الهجرية‎"},
@@ -149,6 +150,18 @@
             "titles":  {"en":  "Eid al-Mubahalah", "he":  "חג הקללה", "ar":  "عِيْد ٱلْمُبَاهَلَة‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  24
+            }
+        },
+        {
+            "titles":  {"en":  "International Shia Day"}, "calendarCode":  "Gregorian",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  6, "day":  12
+            }
+        },
+        {
+            "titles":  {"en":  "Muslim Women’s Day"}, "calendarCode":  "Gregorian",
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  27
             }
         }
     ]
