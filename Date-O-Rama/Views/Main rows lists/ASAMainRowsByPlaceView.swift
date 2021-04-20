@@ -33,11 +33,11 @@ struct ASAMainRowsByPlaceView:  View {
     
     var forComplications:  Bool
     
-    var keys:  Array<String> {
-        get {
-            return Array(self.processedRowsByPlace.keys).sorted()
-        } // get
-    } // var keys:  Array<String>
+//    var keys:  Array<String> {
+//        get {
+//            return Array(self.processedRowsByPlace.keys).sorted()
+//        } // get
+//    } // var keys:  Array<String>
     
     var body: some View {
         ASAMainRowsByPlaceSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByPlace: processedRowsByPlace, now: $now, forComplications: forComplications)

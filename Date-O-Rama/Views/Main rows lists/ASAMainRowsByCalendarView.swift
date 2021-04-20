@@ -23,11 +23,11 @@ struct ASAMainRowsByCalendarView:  View {
     
     var forComplications:  Bool
     
-    var keys:  Array<String> {
-        get {
-            return Array(self.processedRowsByCalendar.keys).sorted()
-        } // get
-    } // var keys:  Array<String>
+//    var keys:  Array<String> {
+//        get {
+//            return Array(self.processedRowsByCalendar.keys).sorted()
+//        } // get
+//    } // var keys:  Array<String>
     
     var body: some View {
         ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption, forComplications:  forComplications)
