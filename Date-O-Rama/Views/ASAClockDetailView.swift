@@ -34,12 +34,6 @@ struct ASAClockDetailView: View {
         List {
             ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
 
-            if !forAppleWatch {
-                ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
-                
-                ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
-            }
-
             if deleteable {
                 Section(header:  Text("")){
                     HStack {
@@ -79,49 +73,57 @@ struct ASAClockDetailEditingSection:  View {
     var now:  Date
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
-
+    
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
             return selectedRow.calendar.supportedWatchDateFormats
         }
-
+        
         return selectedRow.calendar.supportedDateFormats
     }
-
+    
     var body: some View {
-        Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-            NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
-                HStack {
-                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName)
+        Group {
+            Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
+                NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
+                    HStack {
+                        ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName)
+                    }
                 }
-            }
-
-            if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
-                NavigationLink(destination:  ASALocationChooserView(clock:  selectedRow, tempLocationData: ASALocation())) {
-                    VStack {
-                        ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
-                        Spacer()
-                        ASATimeZoneCell(timeZone: selectedRow.locationData.timeZone, now: now)
-                    } // VStack
+                
+                if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
+                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedRow, tempLocationData: ASALocation())) {
+                        VStack {
+                            ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                            Spacer()
+                            ASATimeZoneCell(timeZone: selectedRow.locationData.timeZone, now: now)
+                        } // VStack
+                    }
                 }
-            }
+                
+                if selectedRow.supportsLocales {
+                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier)
+                    }
+                }
+                if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {
+                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempDateFormat: selectedRow.dateFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName)
+                    }
+                }
+                if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {
+                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempTimeFormat: selectedRow.timeFormat, calendarCode: selectedRow.calendar.calendarCode)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName)
+                    }
+                }
+            } // Section
             
-            if selectedRow.supportsLocales {
-                NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier)
-                }
+            if !forAppleWatch {
+                ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+                
+                ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
             }
-            if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {
-                NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempDateFormat: selectedRow.dateFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName)
-                }
-            }
-            if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {
-                NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempTimeFormat: selectedRow.timeFormat, calendarCode: selectedRow.calendar.calendarCode)) {
-                    ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName)
-                }
-            }
-        } // Section
+        } // Group
     } // var body
 } // struct ASAClockDetailEditingSection
 
