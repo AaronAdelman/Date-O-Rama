@@ -13,3 +13,21 @@ extension TimeZone {
         return TimeZone(secondsFromGMT: 0)!
     } // static var GMT
 } // extension TimeZone
+
+extension TimeZone {
+    func extremeAbbreviation(for date: Date) -> String {
+        let secondsFromGMT = self.secondsFromGMT(for: date)
+        let hoursFromGMT: Double = Double(secondsFromGMT) / (60.0 * 60.0)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 0
+        if hoursFromGMT > 0 {
+            formatter.positivePrefix = formatter.plusSign
+        }
+        
+        let number = NSNumber(value: hoursFromGMT)
+        let formattedValue = formatter.string(from: number)!
+        return formattedValue
+    }
+} // extension TimeZone

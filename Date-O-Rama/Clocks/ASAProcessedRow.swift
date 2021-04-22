@@ -56,7 +56,12 @@ struct ASAProcessedRow {
         self.canSplitTimeFromDate = row.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
-        self.timeZoneString = row.locationData.timeZone.abbreviation(for:  now) ?? ""
+        let timeZone = row.locationData.timeZone
+        #if os(watchOS)
+        self.timeZoneString = timeZone.extremeAbbreviation(for: now)
+        #else
+        self.timeZoneString = timeZone.abbreviation(for:  now) ?? ""
+        #endif
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
             self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag
