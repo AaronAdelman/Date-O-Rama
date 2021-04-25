@@ -126,7 +126,7 @@
             "weekdays": [5]}},
         {"titles": {"he": "ערב פורים", "en": "Eve of Purim"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 13}},
         {"titles": {"he": "פורים", "en": "Purim"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 14}},
-        {"titles": {"he": "פורים שושן", "en": "Purim Shushan"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 15}},
+        {"titles": {"he": "שושן פורים", "en": "Shushan Purim"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 15}},
         {"titles": {"he": "פורים משולש", "en": "Purim Meshullash"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 16,
             "weekdays": [1]}},
         {"titles": {"he": "ראש חודש ניסן", "en": "Ro’sh Ḥodhesh Nisan"}, "startDateSpecification": {"type": "allDay", "month": 8, "day": 1}},
