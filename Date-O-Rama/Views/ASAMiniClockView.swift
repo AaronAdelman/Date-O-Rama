@@ -30,10 +30,15 @@ struct ASAMiniClockView:  View {
 
     var body: some View {
         if processedRow.calendarType == .JulianDay {
+            #if targetEnvironment(macCatalyst)
+            let verticalInset: CGFloat = -5.0
+            #else
+            let verticalInset: CGFloat =  1.0
+            #endif
             ProgressView(value: progress())
                 .accentColor(Color("julianDayForeground"))
                 .frame(maxWidth:  julianDayWidth)
-                .modifier(ASACapsuleBorder(topInset: 1.0, leadingInset: 1.0, bottomInset: 1.0, trailingInset: 1.0, color: Color("julianDayBorder"), width: 1.0))
+                .modifier(ASACapsuleBorder(topInset: verticalInset, leadingInset: 1.0, bottomInset: verticalInset, trailingInset: 1.0, color: Color("julianDayBorder"), width: 1.0))
         } else {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
         }
