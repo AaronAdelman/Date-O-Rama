@@ -27,7 +27,7 @@ struct ASALinkedEventCell:  View {
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
 
     var body: some View {
-        if event.isEKEvent {
+//        if event.isEKEvent {
             HStack {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
 
@@ -39,7 +39,9 @@ struct ASALinkedEventCell:  View {
                     Image(systemName: "info.circle.fill") .font(Font.system(.title))
                 })
                 .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                    ASAEKEventView(action: self.$action, event: self.event as! EKEvent).frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+//                    ASAEKEventView(action: self.$action, event: self.event as! EKEvent)
+                    ASAEventDetailView(event: event)
+                        .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                 }.foregroundColor(.accentColor)
                 
                 #if targetEnvironment(macCatalyst)
@@ -50,10 +52,10 @@ struct ASALinkedEventCell:  View {
                 Spacer()
                     .frame(width: SPACER_WIDTH)
             }
-        } else {
-            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
-        }
-    }
+//        } else {
+//            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+//        }
+    } // var body
 } // struct ASALinkedEventCell
 
 //struct ASALinkedEventCell_Previews: PreviewProvider {
