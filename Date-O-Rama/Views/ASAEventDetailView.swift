@@ -19,6 +19,13 @@ struct ASAEventDetailView: View {
     var secondaryLabelColor = Color(UIColor.secondaryLabel)
     #endif
     
+    var formatter: DateIntervalFormatter = {
+        let formatter = DateIntervalFormatter()
+        formatter.dateStyle = .full
+        formatter.timeStyle = .long
+        return formatter
+    }()
+
     var body: some View {
         List {
             Text(event.title)
@@ -30,7 +37,22 @@ struct ASAEventDetailView: View {
                 ASAEventColorRectangle(color: event.color)
                 Text(event.calendarTitleWithLocation)
             } // HStack
-        } // List
+            
+            if event.isEKEvent || event.calendarCode == .Gregorian {
+                let fudge = event.startDate == event.endDate ? 0.0 : 1.0
+                let intervalString = formatter.string(from: event.startDate, to: event.endDate - fudge)
+                Text(intervalString)
+            }
+            
+            let timeZone = event.timeZone!
+            let now = Date()
+            HStack {
+            Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
+                Text("•")
+            Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.current) ?? "")
+            } // HStack
+            } // List
+        .foregroundColor(labelColor)
     } // body
     } // struct ASAEventDetailView
     
