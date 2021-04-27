@@ -50,7 +50,7 @@ struct ASAEventDetailView: View {
                 HStack {
                     Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
                     Text("•")
-                    Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.current) ?? "")
+                    Text(verbatim:  timeZone.localizedName(for: now))
                 } // HStack
             }
         } // List

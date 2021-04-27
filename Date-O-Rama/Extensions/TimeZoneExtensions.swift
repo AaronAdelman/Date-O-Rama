@@ -29,5 +29,10 @@ extension TimeZone {
         let number = NSNumber(value: hoursFromGMT)
         let formattedValue = formatter.string(from: number)!
         return formattedValue
-    }
+    } // func extremeAbbreviation(for date: Date) -> String
+    
+    func localizedName(for now: Date) -> String {
+        let nameStyle: NSTimeZone.NameStyle = self.isDaylightSavingTime(for: now) ? .daylightSaving : .standard
+        return self.localizedName(for: nameStyle, locale: Locale.current) ?? ""
+    } // func localizedName(for now: Date) -> String
 } // extension TimeZone
