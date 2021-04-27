@@ -25,7 +25,7 @@ struct ASAEventDetailView: View {
         formatter.timeStyle = .long
         return formatter
     }()
-
+    
     var body: some View {
         List {
             Text(event.title)
@@ -44,17 +44,19 @@ struct ASAEventDetailView: View {
                 Text(intervalString)
             }
             
-            let timeZone = event.timeZone!
-            let now = Date()
-            HStack {
-            Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
-                Text("•")
-            Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.current) ?? "")
-            } // HStack
-            } // List
+            if event.timeZone != nil {
+                let timeZone = event.timeZone!
+                let now = Date()
+                HStack {
+                    Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
+                    Text("•")
+                    Text(verbatim:  timeZone.localizedName(for: timeZone.isDaylightSavingTime(for: now) ? .daylightSaving : .standard, locale: Locale.current) ?? "")
+                } // HStack
+            }
+        } // List
         .foregroundColor(labelColor)
     } // body
-    } // struct ASAEventDetailView
+} // struct ASAEventDetailView
     
 
 struct ASEventDetailView_Previews: PreviewProvider {

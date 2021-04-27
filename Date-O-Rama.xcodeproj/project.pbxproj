@@ -818,6 +818,7 @@
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
 				A5A9667B25A31EC900CF158F /* ASAEventCell.swift */,
 				A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */,
+				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
@@ -836,7 +837,6 @@
 				A57BCCAA247AA9290019C02C /* Tabs */,
 				A5490F972550339D00EFB13F /* WatchFace.swift */,
 				A5152A042472BE0B0098A94B /* Wrappers */,
-				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
