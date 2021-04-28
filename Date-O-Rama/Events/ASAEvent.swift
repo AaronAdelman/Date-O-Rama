@@ -19,6 +19,11 @@ struct ASAEvent:  ASAEventCompatible {
     var endDate: Date!
     var isAllDay: Bool
     var timeZone: TimeZone?
+    var url: URL?
+    var hasNotes: Bool {
+        return self.notes != nil
+    }
+    var notes: String?
     var color:  Color
     var uuid = UUID()
     var calendarTitleWithLocation:  String

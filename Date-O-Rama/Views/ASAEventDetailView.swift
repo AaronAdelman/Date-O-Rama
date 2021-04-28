@@ -48,6 +48,18 @@ struct ASAEventDetailView: View {
                     Text(verbatim:  timeZone.localizedName(for: now))
                 } // HStack
             }
+            
+            if event.url != nil {
+                Link(destination: event.url!, label: {
+                    Text(event.url!.absoluteString)
+                        .underline()
+                        .foregroundColor(.accentColor)
+                })
+            }
+            
+            if event.hasNotes {
+                Text(event.notes!)
+            }
         } // List
         .foregroundColor(labelColor)
     } // body

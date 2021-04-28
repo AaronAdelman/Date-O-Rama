@@ -17,6 +17,9 @@ protocol ASAEventCompatible {
     var endDate: Date! { get }
     var isAllDay: Bool { get }
     var timeZone: TimeZone? { get }
+    var url: URL? { get } //    The URL for the calendar item.
+    var hasNotes: Bool { get } //    A Boolean value that indicates whether the calendar item has notes.
+    var notes: String? { get } //    The notes associated with the calendar item.
     var color:  Color { get }
     var calendarTitleWithLocation:  String { get }
     var calendarTitleWithoutLocation:  String { get }
