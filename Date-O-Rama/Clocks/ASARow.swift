@@ -466,7 +466,15 @@ extension ASARow {
 } // extension ASARow
 
 extension ASARow {
-    public func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String {
+    func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String {
         return (isPrimaryRow && eventIsTodayOnly) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
      } // func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String
+    
+    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
+        
+        let eventIsAllDay = event.isAllDay(for: self)
+        let startDateString = eventIsAllDay ? self.shortenedDateString(now: event.startDate) : self.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+        let endDateString = eventIsAllDay ? self.shortenedDateString(now: event.endDate - 1) : self.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+        return (startDateString, endDateString)
+    }
 } // extension ASARow

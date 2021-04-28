@@ -43,9 +43,7 @@ struct ASATimesSubcell:  View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            let eventIsAllDay = event.isAllDay(for: row)
-            let startDateString = eventIsAllDay ? row.shortenedDateString(now: event.startDate) : row.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
-            let endDateString = eventIsAllDay ? row.shortenedDateString(now: event.endDate - 1) : row.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+            let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
             
             ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, isForClock: isForClock)
             

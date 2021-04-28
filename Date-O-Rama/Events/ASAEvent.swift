@@ -51,9 +51,7 @@ extension ASAEvent:  Equatable {
         if lhs.color != rhs.color {
             return false
         }
-        if lhs.calendarTitleWithLocation
- != rhs.calendarTitleWithLocation
- {
+        if lhs.calendarTitleWithLocation != rhs.calendarTitleWithLocation {
             return false
         }
         if lhs.calendarCode != rhs.calendarCode {
