@@ -49,6 +49,10 @@ struct ASAEventDetailView: View {
                 } // HStack
             }
             
+            if event.hasNotes {
+                Text(event.notes!)
+            }
+
             if event.url != nil {
                 Link(destination: event.url!, label: {
                     Text(event.url!.absoluteString)
@@ -57,9 +61,6 @@ struct ASAEventDetailView: View {
                 })
             }
             
-            if event.hasNotes {
-                Text(event.notes!)
-            }
         } // List
         .foregroundColor(labelColor)
     } // body
