@@ -44,12 +44,12 @@ struct ASATimesSubcell:  View {
     var body: some View {
         VStack(alignment: .leading) {
             let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
-            
-            ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, isForClock: isForClock)
-            
-            if event.endDate != event.startDate {
-                ASATimeText(verbatim:  endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, isForClock: isForClock)
+                        
+            if startDateString != endDateString {
+                ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, isForClock: isForClock)
             }
+            
+            ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, isForClock: isForClock)
         } // VStack
     } // var body
 } // struct ASATimesSubcell
