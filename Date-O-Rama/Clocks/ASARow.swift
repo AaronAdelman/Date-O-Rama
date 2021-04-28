@@ -169,6 +169,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         self.eventCacheStartDate = Date.distantPast
         self.eventCacheEndDate   = Date.distantPast
         self.eventCacheValue     = []
+        self.startAndEndDateStringsCache.removeAllObjects()
     } // func clearCacheObjects()
 
     
@@ -369,6 +370,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     var isICalendarCompatible:  Bool {
         return self.calendar.usesISOTime && self.usesDeviceLocation
     } // var isICalendarCompatible
+    
+    var startAndEndDateStringsCache = NSCache<NSString, ASAStartAndEndDateStrings>()
 } // class ASARow
 
 
@@ -482,9 +485,7 @@ extension ASARow {
     
     public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
         // Cache code
-        let cache = NSCache<NSString, ASAStartAndEndDateStrings>()
-
-        if let cachedVersion = cache.object(forKey: event.eventIdentifier! as NSString) {
+        if let cachedVersion = startAndEndDateStringsCache.object(forKey: event.eventIdentifier! as NSString) {
             // use the cached version
             return (cachedVersion.startDateString, cachedVersion.endDateString)
         }
@@ -495,7 +496,7 @@ extension ASARow {
         
         // create it from scratch then store in the cache
         let myObject = ASAStartAndEndDateStrings(startDateString: startDateString, endDateString: endDateString)
-        cache.setObject(myObject, forKey: event.eventIdentifier! as NSString)
+        startAndEndDateStringsCache.setObject(myObject, forKey: event.eventIdentifier! as NSString)
 
         return (startDateString, endDateString)
     }
