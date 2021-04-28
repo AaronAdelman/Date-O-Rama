@@ -7,10 +7,13 @@
 //
 
 import SwiftUI
+import MapKit
+
 
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
     var row:  ASARow
+    @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
     #if os(watchOS)
     let labelColor          = Color.white
@@ -61,8 +64,19 @@ struct ASAEventDetailView: View {
                 })
             }
             
+            let geoLocation = event.geoLocation
+            if geoLocation != nil {
+                Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
+                .aspectRatio(1.0, contentMode: .fit)
+            }
         } // List
         .foregroundColor(labelColor)
+        .onAppear() {
+            let geoLocation: CLLocation? = event.geoLocation
+            if geoLocation != nil {
+                self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: 1000000.0, longitudinalMeters: 1000000.0)
+            }
+        }
     } // body
 } // struct ASAEventDetailView
     

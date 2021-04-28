@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import CoreLocation
 
 protocol ASAEventCompatible {
     var eventIdentifier: String! { get }
@@ -25,6 +26,7 @@ protocol ASAEventCompatible {
     var calendarTitleWithoutLocation:  String { get }
     var calendarCode:  ASACalendarCode { get }
     var isEKEvent:  Bool { get }
+    var geoLocation: CLLocation? { get }
 } // protocol ASAEventCompatible
 
 

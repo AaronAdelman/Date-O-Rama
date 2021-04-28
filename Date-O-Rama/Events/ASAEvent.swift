@@ -31,6 +31,10 @@ struct ASAEvent:  ASAEventCompatible {
     var isEKEvent: Bool = false
     var calendarCode: ASACalendarCode
     var locationData:  ASALocation
+    
+    var geoLocation: CLLocation? {
+        return self.locationData.location
+    } // var geoLocation: CLLocation?
 } // struct ASAEvent
 
 

@@ -45,4 +45,9 @@ extension EKEvent:  ASAEventCompatible {
             return .Gregorian
         } // get
     } // var calendarCode
+    
+    var geoLocation: CLLocation? {
+        return self.structuredLocation?.geoLocation
+    } // var geoLocation: CLLocation?
+
 } // extension EKEvent:  ASAEventCompatible
