@@ -465,16 +465,38 @@ extension ASARow {
     } // public func emoji(date:  Date) -> String
 } // extension ASARow
 
+class ASAStartAndEndDateStrings {
+    var startDateString: String
+    var endDateString: String
+    
+    init(startDateString: String, endDateString: String) {
+        self.startDateString = startDateString
+        self.endDateString   = endDateString
+    }
+}
+
 extension ASARow {
     func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String {
         return (isPrimaryRow && eventIsTodayOnly) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
      } // func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String
     
     public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
+        // Cache code
+        let cache = NSCache<NSString, ASAStartAndEndDateStrings>()
+
+        if let cachedVersion = cache.object(forKey: event.eventIdentifier! as NSString) {
+            // use the cached version
+            return (cachedVersion.startDateString, cachedVersion.endDateString)
+        }
         
         let eventIsAllDay = event.isAllDay(for: self)
         let startDateString = eventIsAllDay ? self.shortenedDateString(now: event.startDate) : self.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
         let endDateString = eventIsAllDay ? self.shortenedDateString(now: event.endDate - 1) : self.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+        
+        // create it from scratch then store in the cache
+        let myObject = ASAStartAndEndDateStrings(startDateString: startDateString, endDateString: endDateString)
+        cache.setObject(myObject, forKey: event.eventIdentifier! as NSString)
+
         return (startDateString, endDateString)
     }
 } // extension ASARow
