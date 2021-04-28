@@ -19,14 +19,7 @@ struct ASAEventDetailView: View {
     var labelColor          = Color(UIColor.label)
     var secondaryLabelColor = Color(UIColor.secondaryLabel)
     #endif
-    
-    var formatter: DateIntervalFormatter = {
-        let formatter = DateIntervalFormatter()
-        formatter.dateStyle = .full
-        formatter.timeStyle = .long
-        return formatter
-    }()
-    
+        
     var body: some View {
         List {
             Text(event.title)
@@ -39,10 +32,11 @@ struct ASAEventDetailView: View {
                 Text(event.calendarTitleWithLocation)
             } // HStack
             
-            if event.isEKEvent || event.calendarCode == .Gregorian {
-                let fudge = event.startDate == event.endDate ? 0.0 : 1.0
-                let intervalString = formatter.string(from: event.startDate, to: event.endDate - fudge)
-                Text(intervalString)
+            let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+            if startDateString == endDateString {
+                Text(startDateString)
+            } else {
+                Text(startDateString + "—" + endDateString)
             }
             
             if event.timeZone != nil {
