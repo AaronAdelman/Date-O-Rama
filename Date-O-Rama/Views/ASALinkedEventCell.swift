@@ -29,7 +29,7 @@ struct ASALinkedEventCell:  View {
     var body: some View {
 //        if event.isEKEvent {
             HStack {
-                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
 
                 Spacer()
 
@@ -53,7 +53,7 @@ struct ASALinkedEventCell:  View {
                     .frame(width: SPACER_WIDTH)
             }
 //        } else {
-//            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, forClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+//            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
 //        }
     } // var body
 } // struct ASALinkedEventCell

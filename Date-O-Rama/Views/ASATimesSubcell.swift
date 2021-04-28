@@ -11,21 +11,21 @@ import SwiftUI
 struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
     var row:  ASARow
-
+    
     #if os(watchOS)
     #else
     @Environment(\.horizontalSizeClass) var sizeClass
     #endif
-
+    
     var timeWidth:  CGFloat {
         get {
             #if os(watchOS)
             return 90.0
             #else
-            if self.forClock {
+            if self.isForClock {
                 return 90.0
             }
-
+            
             if self.sizeClass! == .compact {
                 return  90.00
             } else {
@@ -35,26 +35,22 @@ struct ASATimesSubcell:  View {
         } // get
     } // var timeWidth
     let timeFontSize = Font.subheadlineMonospacedDigit
-
+    
     var labelColor:  Color
-    var forClock:  Bool
-    var primary:  Bool
+    var isForClock:  Bool
+    var isPrimaryRow:  Bool
     var eventIsTodayOnly:  Bool
-
-    func properlyShortenedString(date:  Date) -> String {
-       return (primary && eventIsTodayOnly) ? row.timeString(now: date) : row.shortenedDateTimeString(now: date)
-    }
-
+    
     var body: some View {
         VStack(alignment: .leading) {
-            if event.isAllDay(for: row) {
-                ASAAllDayTimesSubcell(startDate:  event.startDate, endDate:  event.endDate, startDateString: row.shortenedDateString(now: event.startDate), endDateString: row.shortenedDateString(now: event.endDate - 1), timeWidth: timeWidth, timeFontSize: timeFontSize, labelColor: labelColor, forClock: forClock)
-            } else {
-                ASATimeText(verbatim: properlyShortenedString(date: event.startDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, forClock: forClock)
-
-                if event.endDate != event.startDate {
-                    ASATimeText(verbatim:  properlyShortenedString(date: event.endDate), timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, forClock: forClock)
-                }
+            let eventIsAllDay = event.isAllDay(for: row)
+            let startDateString = eventIsAllDay ? row.shortenedDateString(now: event.startDate) : row.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+            let endDateString = eventIsAllDay ? row.shortenedDateString(now: event.endDate - 1) : row.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+            
+            ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, isForClock: isForClock)
+            
+            if event.endDate != event.startDate {
+                ASATimeText(verbatim:  endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, isForClock: isForClock)
             }
         } // VStack
     } // var body

@@ -258,7 +258,7 @@ struct ASAClockEventsForEach:  View {
             let rangeEnd: Date = processedRow.startOfNextDay
 
             #if os(watchOS)
-            ASAEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, forClock: true, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+            ASAEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, isForClock: true, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
             #else
             ASALinkedEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd)
             #endif

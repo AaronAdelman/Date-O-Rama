@@ -464,3 +464,9 @@ extension ASARow {
         return (self.locationData.ISOCountryCode ?? "").flag
     } // public func emoji(date:  Date) -> String
 } // extension ASARow
+
+extension ASARow {
+    public func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String {
+        return (isPrimaryRow && eventIsTodayOnly) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
+     } // func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String
+} // extension ASARow

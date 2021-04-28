@@ -197,13 +197,11 @@
 		A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
 		A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
 		A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */; };
-		A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
 		A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
 		A5A9666325A31DA200CF158F /* ASADatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666225A31DA200CF158F /* ASADatePicker.swift */; };
 		A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */; };
 		A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
-		A5A9668925A31F2600CF158F /* ASAAllDayTimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */; };
 		A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
 		A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */; };
 		A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
@@ -410,7 +408,6 @@
 		A5A9666225A31DA200CF158F /* ASADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePicker.swift; sourceTree = "<group>"; };
 		A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALinkedEventCell.swift; sourceTree = "<group>"; };
 		A5A9667B25A31EC900CF158F /* ASAEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCell.swift; sourceTree = "<group>"; };
-		A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAllDayTimesSubcell.swift; sourceTree = "<group>"; };
 		A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimesSubcell.swift; sourceTree = "<group>"; };
 		A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKRecurrenceFrequencyExtensions.swift; sourceTree = "<group>"; };
 		A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
@@ -811,7 +808,6 @@
 		A5C77C452434723300CFEE47 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A5A9668825A31F2600CF158F /* ASAAllDayTimesSubcell.swift */,
 				A506E3D7252C9378009345A0 /* ASAClockCell.swift */,
 				A564C13F2548731B000F2CDF /* ASAClockCellText.swift */,
 				A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */,
@@ -1115,7 +1111,6 @@
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */,
-				A5A638AC25A341A9003E67A5 /* ASAAllDayTimesSubcell.swift in Sources */,
 				A57CA32D2486474A00378EA7 /* ComplicationController.swift in Sources */,
 				A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
@@ -1203,7 +1198,6 @@
 				A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */,
 				A5490F982550339D00EFB13F /* WatchFace.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
-				A5A9668925A31F2600CF158F /* ASAAllDayTimesSubcell.swift in Sources */,
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
 				A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */,
 				A545068A26022E3B00801AC8 /* ASARadioButtonSymbol.swift in Sources */,

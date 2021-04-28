@@ -13,7 +13,7 @@ struct ASAEventCell:  View {
     var primaryRow:  ASARow
     var secondaryRow:  ASARow
     var eventsViewShouldShowSecondaryDates: Bool
-    var forClock:  Bool
+    var isForClock:  Bool
     @Binding var now:  Date
 
     #if os(watchOS)
@@ -23,7 +23,7 @@ struct ASAEventCell:  View {
     #else
     var labelColor:  Color {
         get {
-            if self.forClock {
+            if self.isForClock {
                 return Color("label")
             } else {
                 return Color(UIColor.label)
@@ -32,7 +32,7 @@ struct ASAEventCell:  View {
     }
     var secondaryLabelColor:  Color {
         get {
-            if self.forClock {
+            if self.isForClock {
                 return Color("secondaryLabel")
             } else {
                 return Color(UIColor.secondaryLabel)
@@ -68,22 +68,22 @@ struct ASAEventCell:  View {
                         .modifier(ASAScalable(lineLimit: 1))
                 }
 
-                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
+                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, isForClock: isForClock)
                 
-                ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
+                ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
 
                 if self.eventsViewShouldShowSecondaryDates {
-                    ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
+                    ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
                 }
 //                Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
         } // HStack
         #else
         HStack {
-            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, forClock: forClock, primary:  true, eventIsTodayOnly: eventIsTodayOnly())
+            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
 
             if self.eventsViewShouldShowSecondaryDates {
-                ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, forClock: forClock, primary:  false, eventIsTodayOnly: eventIsTodayOnly())
+                ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
             ASAEventColorRectangle(color: event.color)
@@ -103,7 +103,7 @@ struct ASAEventCell:  View {
                         .modifier(ASAScalable(lineLimit: 1))
                 }
 
-                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, forClock: forClock)
+                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, isForClock: isForClock)
 
                 Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
@@ -118,7 +118,7 @@ struct ASAEventCell:  View {
 struct ASAEventCellCalendarTitle:  View {
     var event:  ASAEventCompatible
     var color:  Color
-    var forClock:  Bool
+    var isForClock:  Bool
 
     #if os(watchOS)
     let LINE_LIMIT = 1
@@ -127,7 +127,7 @@ struct ASAEventCellCalendarTitle:  View {
     #endif
 
     var body: some View {
-        let title: String = forClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
+        let title: String = isForClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
         Text(title).font(.subheadlineMonospacedDigit).foregroundColor(color)
         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
