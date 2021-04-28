@@ -40,7 +40,7 @@ struct ASALinkedEventCell:  View {
                 })
                 .popover(isPresented: $showingEventView, arrowEdge: .leading) {
 //                    ASAEKEventView(action: self.$action, event: self.event as! EKEvent)
-                    ASAEventDetailView(event: event)
+                    ASAEventDetailView(event: event, row: primaryRow)
                         .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                 }.foregroundColor(.accentColor)
                 

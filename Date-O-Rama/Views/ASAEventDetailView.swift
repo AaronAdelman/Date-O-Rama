@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
+    var row:  ASARow
     
     #if os(watchOS)
     let labelColor          = Color.white
@@ -61,6 +62,6 @@ struct ASAEventDetailView: View {
 
 struct ASEventDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland))
+        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland), row: ASARow.generic)
     }
 }
