@@ -313,7 +313,7 @@ class ASAEventCalendar {
         
         let latitude  = location.coordinate.latitude
         let longitude = location.coordinate.longitude
-
+        
         let previousDate = date.oneDayBefore
         let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
         let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
@@ -340,14 +340,14 @@ class ASAEventCalendar {
         
         let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
         let otherHourLength = otherDayLength / 12.0
-
+        
         var result:  Array<ASAEvent> = []
-
+        
         let components = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
-
+        
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)
-
+            
             var appropriateCalendar:  ASACalendar = calendar
             if eventSpecification.calendarCode != nil {
                 let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
@@ -370,7 +370,7 @@ class ASAEventCalendar {
                     let color = self.color
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate
-
+                    
                     // We have to make sure that solar events after Sunset happen on the correct day.  This is an issue on Sunset transition calendars.
                     var fixedDate:  Date
                     if appropriateCalendar.transitionType == .sunset
@@ -382,12 +382,12 @@ class ASAEventCalendar {
                     } else {
                         fixedDate = date
                     }
-
+                    
                     if startDate == nil {
                         startDate = eventSpecification.isAllDay ? appropriateCalendar.startOfDay(for: date, locationData: locationData) : eventSpecification.startDateSpecification.date(date: fixedDate, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
                         endDate = eventSpecification.isAllDay ? (appropriateCalendar.startOfNextDay(date: date, locationData: locationData)) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: fixedDate, latitude: latitude, longitude: longitude, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay))
                     }
-                    let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData)
+                    let newEvent = ASAEvent(title:  title, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: eventSpecification.url, notes: eventSpecification.notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData)
                     result.append(newEvent)
                 }
             }
