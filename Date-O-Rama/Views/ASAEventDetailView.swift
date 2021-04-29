@@ -74,7 +74,8 @@ struct ASAEventDetailView: View {
         .onAppear() {
             let geoLocation: CLLocation? = event.geoLocation
             if geoLocation != nil {
-                self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: 1000000.0, longitudinalMeters: 1000000.0)
+                let meters = 10000.0
+                self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
             }
         }
     } // body
