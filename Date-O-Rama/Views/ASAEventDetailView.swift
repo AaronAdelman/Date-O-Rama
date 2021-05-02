@@ -52,6 +52,11 @@ struct ASAEventDetailView: View {
                 } // HStack
             }
             
+            if event.status != .none {
+                Text(event.status.text)
+                    .foregroundColor(event.status.color)
+            }
+            
             if event.hasNotes {
                 Text(event.notes!)
             }

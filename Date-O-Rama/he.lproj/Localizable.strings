@@ -213,3 +213,7 @@
 "Date:" = "תאריך:";
 "Israel" = "ישראל";
 "Gaza Strip" = "פס עזה";
+"EKEventStatus.confirmed"        = "מאושר";
+"EKEventStatus.tentative"        = "הססני";
+"EKEventStatus.canceled"         = "מבוטל";
+"EKEventStatus.@unknown default" = "מצב לא ידוע";

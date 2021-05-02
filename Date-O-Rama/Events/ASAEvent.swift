@@ -35,6 +35,8 @@ struct ASAEvent:  ASAEventCompatible {
     var geoLocation: CLLocation? {
         return self.locationData.location
     } // var geoLocation: CLLocation?
+    
+    var status: EKEventStatus = .none
 } // struct ASAEvent
 
 

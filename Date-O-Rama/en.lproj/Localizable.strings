@@ -213,3 +213,7 @@
 "Date:" = "Date:";
 "Israel" = "Israel";
 "Gaza Strip" = "Gaza Strip";
+"EKEventStatus.confirmed"        = "Confirmed";
+"EKEventStatus.tentative"        = "Tentative";
+"EKEventStatus.canceled"         = "Canceled";
+"EKEventStatus.@unknown default" = "Unknown status";
