@@ -217,3 +217,5 @@
 "EKEventStatus.tentative"        = "הססני";
 "EKEventStatus.canceled"         = "מבוטל";
 "EKEventStatus.@unknown default" = "מצב לא ידוע";
+"EKParticipantRole.chair"    = "(המארגן/ת)";
+"EKParticipantRole.optional" = "(לא חובה)";

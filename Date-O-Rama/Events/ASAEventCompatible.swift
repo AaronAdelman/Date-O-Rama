@@ -18,6 +18,9 @@ protocol ASAEventCompatible {
     var startDate:  Date! { get }
     var endDate: Date! { get }
     var isAllDay: Bool { get }
+    var organizer: EKParticipant? { get } // The organizer associated with the event.
+    var hasAttendees: Bool { get } // A Boolean value that indicates whether the calendar item has attendees.
+    var attendees: [EKParticipant]? { get } // The attendees associated with the calendar item, as an array of EKParticipant objects.
     var status: EKEventStatus { get } // The status of the event.
     var timeZone: TimeZone? { get }
     var url: URL? { get } // The URL for the calendar item.
@@ -64,4 +67,23 @@ extension ASAEventCompatible {
     func isAllDay(for row: ASARow) -> Bool {
         return self.isAllDay && row.calendar.calendarCode == self.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: self.startDate) == self.timeZone?.secondsFromGMT(for: self.startDate) || self.timeZone == nil)
     } // func isAllDay(for row: ASARow) -> Bool
+    
+    var hasParticipants: Bool {
+        return self.hasAttendees || self.organizer != nil
+    }
+    
+    var participants: [EKParticipant]? {
+        if !self.hasParticipants {
+            return nil
+        }
+        
+        var result: [EKParticipant] = []
+        if self.organizer != nil {
+            result = [self.organizer!]
+        }
+        if self.hasAttendees {
+            result.append(contentsOf: self.attendees!)
+        }
+        return result
+    }
 } // extension ASAEventCompatible

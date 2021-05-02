@@ -217,3 +217,5 @@
 "EKEventStatus.tentative"        = "Tentative";
 "EKEventStatus.canceled"         = "Canceled";
 "EKEventStatus.@unknown default" = "Unknown status";
+"EKParticipantRole.chair"    = "(Organizer)";
+"EKParticipantRole.optional" = "(Optional)";

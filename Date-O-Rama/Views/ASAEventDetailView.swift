@@ -1,5 +1,5 @@
 //
-//  ASEventDetailView.swift
+//  ASAEventDetailView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 26/04/2021.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 import MapKit
-
+import EventKit
 
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
@@ -51,6 +51,16 @@ struct ASAEventDetailView: View {
                     Text(verbatim:  timeZone.localizedName(for: now))
                 } // HStack
             }
+                        
+            if event.hasParticipants {
+                VStack(alignment: .leading) {
+                    ForEach(event.participants!, id: \.url) {
+                        attendee
+                        in
+                        ASAEKParticipantView(participant: attendee)
+                    }
+                }
+            }
             
             if event.status != .none {
                 Text(event.status.text)
@@ -85,9 +95,30 @@ struct ASAEventDetailView: View {
         }
     } // body
 } // struct ASAEventDetailView
-    
 
-struct ASEventDetailView_Previews: PreviewProvider {
+
+struct ASAEKParticipantView: View {
+    var participant: EKParticipant
+    var body: some View {
+        HStack {
+            let status: EKParticipantStatus = participant.participantStatus
+            
+            Image(systemName: status.systemName)
+                .foregroundColor(status.color)
+            Text(participant.name ?? "Mystery person")
+            if participant.participantRole == .chair {
+                Text("EKParticipantRole.chair")
+            }
+            if participant.participantRole == .optional {
+                Text("EKParticipantRole.optional")
+            }
+            
+        }
+    } // var body
+} // struct ASAEKParticipantView
+
+
+struct ASAEventDetailView_Previews: PreviewProvider {
     static var previews: some View {
         ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland), row: ASARow.generic)
     }

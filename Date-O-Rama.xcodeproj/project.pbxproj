@@ -14,6 +14,8 @@
 		A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
 		A506E3E5252C9405009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
+		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
+		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD61025540E8E00B781EC /* ASASkyGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD60F25540E8E00B781EC /* ASASkyGradient.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
 		A50CD6282554159500B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -326,6 +328,7 @@
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedRow.swift; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
+		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD60F25540E8E00B781EC /* ASASkyGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASkyGradient.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A50CD63325541B3F00B781EC /* ASAMiniClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniClockView.swift; sourceTree = "<group>"; };
@@ -687,6 +690,8 @@
 				A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */,
 				A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */,
 				A579019C259263F900224666 /* EKEventExtensions.swift */,
+				A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */,
+				A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */,
 				A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */,
 				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
@@ -695,7 +700,6 @@
 				A557AD5C25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */,
-				A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1098,6 +1102,7 @@
 				A59D806B2600C6FB00FD8BBF /* ASAEventsFile.swift in Sources */,
 				A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
+				A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
 				A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */,
 				A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
@@ -1230,6 +1235,7 @@
 				A5B816372541A30900E309E0 /* ASAMainRowsByFormattedDateView.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5AF2C4B2636ED8900FD479D /* ASAEventDetailView.swift in Sources */,
+				A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
 				A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */,
 				A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */,

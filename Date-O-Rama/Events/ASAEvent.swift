@@ -37,6 +37,11 @@ struct ASAEvent:  ASAEventCompatible {
     } // var geoLocation: CLLocation?
     
     var status: EKEventStatus = .none
+    
+    var organizer: EKParticipant?   = nil
+    var hasAttendees: Bool          = false
+    var attendees: [EKParticipant]? = nil
+    
 } // struct ASAEvent
 
 
