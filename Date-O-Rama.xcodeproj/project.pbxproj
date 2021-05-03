@@ -258,6 +258,8 @@
 		A5E3606624C756FF0000A268 /* Israeli events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israeli events.json */; };
 		A5E3606824C7571A0000A268 /* Lubavitch events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch events.json */; };
 		A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */; };
+		A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */; };
+		A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */; };
 		A5E4719E2463F938002BB471 /* ASATimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASATimeFormat.swift */; };
 		A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
 		A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
@@ -471,6 +473,7 @@
 		A5E3606524C756FF0000A268 /* Israeli events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Israeli events.json"; sourceTree = "<group>"; };
 		A5E3606724C7571A0000A268 /* Lubavitch events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Lubavitch events.json"; sourceTree = "<group>"; };
 		A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAComplicationClocksTab.swift; sourceTree = "<group>"; };
+		A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantExtensions.swift; sourceTree = "<group>"; };
 		A5E4719D2463F938002BB471 /* ASATimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormat.swift; sourceTree = "<group>"; };
 		A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormatChooserView.swift; sourceTree = "<group>"; };
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
@@ -691,6 +694,7 @@
 				A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */,
 				A579019C259263F900224666 /* EKEventExtensions.swift */,
 				A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */,
+				A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */,
 				A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */,
 				A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */,
 				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
@@ -1147,6 +1151,7 @@
 				A5E1CC5F2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */,
 				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
 				A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */,
+				A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
 				A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */,
 			);
@@ -1211,6 +1216,7 @@
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
 				A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */,
+				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A545068A26022E3B00801AC8 /* ASARadioButtonSymbol.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,

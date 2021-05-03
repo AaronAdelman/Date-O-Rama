@@ -62,7 +62,7 @@ struct ASAEventDetailView: View {
                 }
             }
             
-            if event.status != .none {
+            if event.status != .none && event.status != .confirmed {
                 Text(event.status.text)
                     .foregroundColor(event.status.color)
             }
@@ -105,15 +105,30 @@ struct ASAEKParticipantView: View {
             
             Image(systemName: status.systemName)
                 .foregroundColor(status.color)
-            Text(participant.name ?? "Mystery person")
+            Menu {
+                Text(participant.EMailAddress)
+                Button(action: {
+                    let pasteboard = UIPasteboard.general
+                    pasteboard.string = participant.EMailAddress
+                }, label: {
+                    Text("Copy available address")
+                })
+                Button(action: {
+                    UIApplication.shared.openURL(participant.url)
+                }, label: {
+                    Text("Send E-mail")
+                })
+
+            } label: {
+                Text(participant.name ?? "???")
+            }
             if participant.participantRole == .chair {
                 Text("EKParticipantRole.chair")
             }
             if participant.participantRole == .optional {
                 Text("EKParticipantRole.optional")
             }
-            
-        }
+        } // HStack
     } // var body
 } // struct ASAEKParticipantView
 
