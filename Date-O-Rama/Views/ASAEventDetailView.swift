@@ -175,7 +175,7 @@ struct ASAEKParticipantView: View {
                 })
                 
                 Button(action: {
-                    UIApplication.shared.openURL(participant.url)
+                    UIApplication.shared.open(participant.url, options: [:], completionHandler: nil)
                 }, label: {
                     Text("Send E-mail")
                 })
@@ -184,7 +184,7 @@ struct ASAEKParticipantView: View {
                     let contactURL = URL(string: "addressbook://" + contact!.identifier)
                     if contactURL != nil {
                         Button(action: {
-                            UIApplication.shared.openURL(contactURL!)
+                            UIApplication.shared.open(contactURL!, options: [:], completionHandler: nil)
                         }, label: {
                             Text("Open in Contacts")
                         })
