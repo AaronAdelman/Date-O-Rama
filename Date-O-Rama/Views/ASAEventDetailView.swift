@@ -9,6 +9,7 @@
 import SwiftUI
 import MapKit
 import EventKit
+import Contacts
 
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
@@ -99,26 +100,97 @@ struct ASAEventDetailView: View {
 
 struct ASAEKParticipantView: View {
     var participant: EKParticipant
+    
+    // Based on https://stackoverflow.com/questions/42393384/swift-using-contacts-framework-search-using-identifier-to-match and https://stackoverflow.com/questions/42393384/swift-using-contacts-framework-search-using-identifier-to-match
+    func contactWithPredicate(predicate: NSPredicate) -> CNContact? {
+        let contactsStore = CNContactStore()
+
+        let authorizationStatus = CNContactStore.authorizationStatus(for: .contacts)
+        switch authorizationStatus {
+        case .restricted:
+                print("User cannot grant permission, e.g. parental controls in force.")
+//                exit(1)
+        return nil
+        case .denied:
+                print("User has explicitly denied permission.")
+                print("They have to grant it via Preferences app if they change their mind.")
+//                exit(1)
+            return nil
+        case .notDetermined:
+                print("You need to request authorization via the API now.")
+        case .authorized:
+                print("You are already authorized.")
+        @unknown default:
+            return nil
+        } // switch authStatus
+
+        if authorizationStatus == .notDetermined {
+            contactsStore.requestAccess(for: .contacts) { success, error in
+                if !success {
+                    print("Not authorized to access contacts. Error = \(String(describing: error))")
+//                    exit(1)
+                }
+                print("Authorized!")
+            }
+        }
+        
+        let keys = [CNContactIdentifierKey, CNContactPhoneNumbersKey]
+
+             var contacts = [CNContact]()
+//             var message: String!
+
+
+             do {
+                contacts = try contactsStore.unifiedContacts(matching: predicate, keysToFetch: keys as Array<CNKeyDescriptor>)
+
+                 if contacts.count == 0 {
+//                     message = "No contacts were found matching the given name."
+                    return nil
+                 }
+             }
+             catch {
+//                 message = "Unable to fetch contacts."
+                return nil
+             }
+
+              return contacts[0]
+         } // func contactWithPredicate(predicate: NSPredicate) -> CNContact?
+
     var body: some View {
         HStack {
             let status: EKParticipantStatus = participant.participantStatus
+            let contact = self.contactWithPredicate(predicate: participant.contactPredicate)
             
             Image(systemName: status.systemName)
                 .foregroundColor(status.color)
             Menu {
+                
                 Text(participant.EMailAddress)
+                
                 Button(action: {
                     let pasteboard = UIPasteboard.general
                     pasteboard.string = participant.EMailAddress
                 }, label: {
                     Text("Copy available address")
                 })
+                
                 Button(action: {
                     UIApplication.shared.openURL(participant.url)
                 }, label: {
                     Text("Send E-mail")
                 })
-
+                
+                if contact != nil {
+                    let contactURL = URL(string: "addressbook://" + contact!.identifier)
+                    if contactURL != nil {
+                        Button(action: {
+                            UIApplication.shared.openURL(contactURL!)
+                        }, label: {
+                            Text("Open in Contacts")
+                        })
+                    }
+                }
+                
             } label: {
                 Text(participant.name ?? "???")
             }
