@@ -219,3 +219,6 @@
 "EKEventStatus.@unknown default" = "מצב לא ידוע";
 "EKParticipantRole.chair"    = "(המארגן/ת)";
 "EKParticipantRole.optional" = "(לא חובה)";
+"Copy available address" = "העתק כתובת מוזמן";
+"Send E-mail"            = "שלח דוא״ל";
+"Open in Contacts"       = "הצג כרטיס איש קשר";

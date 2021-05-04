@@ -14,7 +14,7 @@ extension EKParticipantStatus {
     var systemName: String {
         switch self {
         case .unknown:
-            return "u.circle"
+            return "checkmark.circle"
             
         case .pending:
             return "questionmark.circle"

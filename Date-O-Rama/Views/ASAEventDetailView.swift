@@ -174,12 +174,6 @@ struct ASAEKParticipantView: View {
                     Text("Copy available address")
                 })
                 
-                Button(action: {
-                    UIApplication.shared.open(participant.url, options: [:], completionHandler: nil)
-                }, label: {
-                    Text("Send E-mail")
-                })
-                
                 if contact != nil {
                     let contactURL = URL(string: "addressbook://" + contact!.identifier)
                     if contactURL != nil {
@@ -189,6 +183,34 @@ struct ASAEKParticipantView: View {
                             Text("Open in Contacts")
                         })
                     }
+                    
+                    Button(action: {
+                        UIApplication.shared.open(participant.url, options: [:], completionHandler: nil)
+                    }, label: {
+                        Text("Send E-mail")
+                    })
+                    
+                    #if os(iOS)
+                    #if targetEnvironment(macCatalyst)
+                    
+                    #else
+                    ForEach(contact!.phoneNumbers, id:\.self) {
+                        labeledPhoneNumber
+                        in
+                        let phoneNumber: String = labeledPhoneNumber.value.stringValue
+                        let phoneNumberURLString: String = "tel://" + phoneNumber.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
+
+                        Button(action: {
+                            UIApplication.shared.open(URL(string: phoneNumberURLString)!, options: [:], completionHandler: nil)
+                        }, label: {
+                            HStack {
+                                Image(systemName: "phone.circle.fill")
+                                Text(CNLabeledValue<CNPhoneNumber>.localizedString(forLabel: labeledPhoneNumber.label!) + " " + phoneNumber)
+                            } // HStack
+                        })
+                    } // ForEach
+                    #endif
+                    #endif
                 }
                 
             } label: {

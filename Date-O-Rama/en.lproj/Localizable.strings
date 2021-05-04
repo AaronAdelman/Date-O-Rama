@@ -219,3 +219,6 @@
 "EKEventStatus.@unknown default" = "Unknown status";
 "EKParticipantRole.chair"    = "(Organizer)";
 "EKParticipantRole.optional" = "(Optional)";
+"Copy available address" = "Copy available address";
+"Send E-mail"            = "Send E-mail";
+"Open in Contacts"       = "Open in Contacts";
