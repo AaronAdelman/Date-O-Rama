@@ -82,7 +82,15 @@ extension ASAEventCompatible {
             result = [self.organizer!]
         }
         if self.hasAttendees {
-            result.append(contentsOf: self.attendees!)
+            for attendee in self.attendees! {
+                let doppelgänger = result.first(where: {
+                    $0.url == attendee.url
+                })
+                
+                if doppelgänger == nil {
+                    result.append(attendee)
+                }
+            } // for attendee in self.attendees!
         }
         return result
     } // var participants: [EKParticipant]?
