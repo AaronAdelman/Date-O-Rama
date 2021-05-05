@@ -11,6 +11,9 @@ import MapKit
 import EventKit
 import Contacts
 
+let CONTACTS_PREFIX = "addressbook://"
+let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
+
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
     var row:  ASARow
@@ -79,12 +82,23 @@ struct ASAEventDetailView: View {
                     Text(event.notes!)
                 }
                 
-                if event.url != nil {
-                    Link(destination: event.url!, label: {
-                        Text(event.url!.absoluteString)
-                            .underline()
-                            .foregroundColor(.accentColor)
-                    })
+                let eventURL = event.url
+                if eventURL != nil {
+                    if eventURL!.absoluteString.hasPrefix(CONTACTS_PREFIX) {
+                        Button(action: {
+                            UIApplication.shared.open(eventURL!, options: [:], completionHandler: nil)
+                        }, label: {
+                            Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
+                                .underline()
+                                .foregroundColor(.accentColor)
+                        })
+                    } else {
+                        Link(destination: event.url!, label: {
+                            Text(event.url!.absoluteString)
+                                .underline()
+                                .foregroundColor(.accentColor)
+                        })
+                    }
                 }
             }
             
@@ -198,12 +212,12 @@ struct ASAEKParticipantView: View {
                 })
                 
                 if contact != nil {
-                    let contactURL = URL(string: "addressbook://" + contact!.identifier)
+                    let contactURL = URL(string: CONTACTS_PREFIX + contact!.identifier)
                     if contactURL != nil {
                         Button(action: {
                             UIApplication.shared.open(contactURL!, options: [:], completionHandler: nil)
                         }, label: {
-                            Text("Open in Contacts")
+                            Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
                         })
                     }
                     
