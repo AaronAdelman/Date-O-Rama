@@ -222,3 +222,13 @@
 "Copy available address" = "Copy available address";
 "Send E-mail"            = "Send E-mail";
 "Open in Contacts"       = "Open in Contacts";
+"My status"                           = "My status:";
+"EKParticipantStatus.unknown"         = "Unknown";
+"EKParticipantStatus.pending"         = "Pending";
+"EKParticipantStatus.accepted"        = "Accepted";
+"EKParticipantStatus.declined"        = "Declined";
+"EKParticipantStatus.tentative"       = "Tentative";
+"EKParticipantStatus.delegated"       = "Delegated";
+"EKParticipantStatus.completed"       = "Completed";
+"EKParticipantStatus.inProcess"       = "In Process";
+"EKParticipantStatus.unknown default" = "Unknown default";

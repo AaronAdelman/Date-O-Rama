@@ -23,67 +23,90 @@ struct ASAEventDetailView: View {
     var labelColor          = Color(UIColor.label)
     var secondaryLabelColor = Color(UIColor.secondaryLabel)
     #endif
-        
+    
     var body: some View {
         List {
-            Text(event.title)
-                .font(.title)
-            if event.location != nil {
-                Text(event.location!)
-            }
-            HStack {
-                ASAEventColorRectangle(color: event.color)
-                Text(event.calendarTitleWithLocation)
-            } // HStack
-            
-            let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
-            if startDateString == endDateString {
-                Text(startDateString)
-            } else {
-                Text(startDateString + "—" + endDateString)
-            }
-            
-            if event.timeZone != nil {
-                let timeZone = event.timeZone!
-                let now = Date()
+            Section {
+                Text(event.title)
+                    .font(.title)
+                if event.location != nil {
+                    Text(event.location!)
+                }
                 HStack {
-                    Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
-                    Text("•")
-                    Text(verbatim:  timeZone.localizedName(for: now))
+                    ASAEventColorRectangle(color: event.color)
+                    Text(event.calendarTitleWithLocation)
                 } // HStack
             }
-                        
-            if event.hasParticipants {
-                VStack(alignment: .leading) {
-                    ForEach(event.participants!, id: \.url) {
-                        attendee
-                        in
-                        ASAEKParticipantView(participant: attendee)
-                    }
+            
+            Section {
+                let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+                if startDateString == endDateString {
+                    Text(startDateString)
+                } else {
+                    Text(startDateString + "—" + endDateString)
+                }
+                
+                if event.timeZone != nil {
+                    let timeZone = event.timeZone!
+                    let now = Date()
+                    HStack {
+                        Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
+                        Text("•")
+                        Text(verbatim:  timeZone.localizedName(for: now))
+                    } // HStack
                 }
             }
             
-            if event.status != .none && event.status != .confirmed {
-                Text(event.status.text)
-                    .foregroundColor(event.status.color)
+            Section {
+                if event.hasParticipants {
+                    VStack(alignment: .leading) {
+                        ForEach(event.participants!, id: \.url) {
+                            attendee
+                            in
+                            ASAEKParticipantView(participant: attendee)
+                        }
+                    }
+                }
+                
+                if event.status != .none && event.status != .confirmed {
+                    Text(event.status.text)
+                        .foregroundColor(event.status.color)
+                }
             }
             
-            if event.hasNotes {
-                Text(event.notes!)
-            }
-
-            if event.url != nil {
-                Link(destination: event.url!, label: {
-                    Text(event.url!.absoluteString)
-                        .underline()
-                        .foregroundColor(.accentColor)
-                })
+            Section {
+                if event.hasNotes {
+                    Text(event.notes!)
+                }
+                
+                if event.url != nil {
+                    Link(destination: event.url!, label: {
+                        Text(event.url!.absoluteString)
+                            .underline()
+                            .foregroundColor(.accentColor)
+                    })
+                }
             }
             
-            let geoLocation = event.geoLocation
-            if geoLocation != nil {
-                Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
-                .aspectRatio(1.0, contentMode: .fit)
+            Section {
+                let geoLocation = event.geoLocation
+                if geoLocation != nil {
+                    Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
+                        .aspectRatio(1.0, contentMode: .fit)
+                }
+            }
+            
+            Section {
+                let currentUser: EKParticipant? = event.currentUser
+                if currentUser != nil {
+                    let status = currentUser!.participantStatus
+                    HStack {
+                        Text("My status")
+                        Image(systemName: status.systemName)
+                            .foregroundColor(status.color)
+                        Text(status.text)
+                    } // HStack
+                }
             }
         } // List
         .foregroundColor(labelColor)

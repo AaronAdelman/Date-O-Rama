@@ -222,3 +222,13 @@
 "Copy available address" = "העתק כתובת מוזמן";
 "Send E-mail"            = "שלח דוא״ל";
 "Open in Contacts"       = "הצג כרטיס איש קשר";
+"My status"                           = "המצב שלי:";
+"EKParticipantStatus.unknown"         = "לא ידוע";
+"EKParticipantStatus.pending"         = "Pending";
+"EKParticipantStatus.accepted"        = "משתתף/ת";
+"EKParticipantStatus.declined"        = "לא משתתף/ת";
+"EKParticipantStatus.tentative"       = "אולי";
+"EKParticipantStatus.delegated"       = "Delegated";
+"EKParticipantStatus.completed"       = "Completed";
+"EKParticipantStatus.inProcess"       = "In Process";
+"EKParticipantStatus.unknown default" = "Unknown default";

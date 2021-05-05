@@ -85,5 +85,17 @@ extension ASAEventCompatible {
             result.append(contentsOf: self.attendees!)
         }
         return result
-    }
+    } // var participants: [EKParticipant]?
+    
+    var currentUser: EKParticipant? {
+        if self.hasParticipants {
+            for participant in self.participants! {
+                if participant.isCurrentUser {
+                    return participant
+                }
+            } // for participant in self.participants!
+        }
+        
+        return nil
+    } // var currentUser: EKParticipant?
 } // extension ASAEventCompatible

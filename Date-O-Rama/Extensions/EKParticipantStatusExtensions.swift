@@ -23,10 +23,10 @@ extension EKParticipantStatus {
             return "checkmark.circle"
 
         case .declined:
-            return "x.circle"
+            return "multiply.circle"
 
         case .tentative:
-            return "t.circle"
+            return "questionmark.circle"
 
         case .delegated:
             return "d.circle"
@@ -47,8 +47,49 @@ extension EKParticipantStatus {
         case .accepted:
             return .green
             
+        case .tentative:
+            return .orange
+            
+        case .declined:
+            return .red
+            
         default:
             return .black
         } // switch self
     } // var color: Color
+    
+    var text: String {
+        var rawValue = ""
+        
+        switch self {
+        case .unknown:
+            rawValue = "EKParticipantStatus.unknown"
+            
+        case .pending:
+            rawValue = "EKParticipantStatus.pending"
+
+        case .accepted:
+            rawValue = "EKParticipantStatus.accepted"
+
+        case .declined:
+            rawValue = "EKParticipantStatus.declined"
+
+        case .tentative:
+            rawValue = "EKParticipantStatus.tentative"
+
+        case .delegated:
+            rawValue = "EKParticipantStatus.delegated"
+
+        case .completed:
+            rawValue = "EKParticipantStatus.completed"
+
+        case .inProcess:
+            rawValue = "EKParticipantStatus.inProcess"
+
+        @unknown default:
+            rawValue = "EKParticipantStatus.unknown default"
+        } // switch self
+        
+        return NSLocalizedString(rawValue, comment: "")
+    }
 } // extension EKParticipantStatus
