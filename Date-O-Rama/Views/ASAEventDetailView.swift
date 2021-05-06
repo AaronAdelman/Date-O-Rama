@@ -39,14 +39,14 @@ struct ASAEventDetailView: View {
                     ASAEventColorRectangle(color: event.color)
                     Text(event.calendarTitleWithLocation)
                 } // HStack
-            }
+            } // Section
             
             Section {
                 let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
                 if startDateString == endDateString {
                     Text(startDateString)
                 } else {
-                    Text(startDateString + "—" + endDateString)
+                    Text(startDateString + " — " + endDateString)
                 }
                 
                 if event.timeZone != nil {
@@ -58,7 +58,50 @@ struct ASAEventDetailView: View {
                         Text(verbatim:  timeZone.localizedName(for: now))
                     } // HStack
                 }
-            }
+                
+                if event.isEKEvent {
+                    let eventAsEKEvent = event as! EKEvent
+                    if eventAsEKEvent.hasRecurrenceRules {
+                        let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules!.count
+                        ForEach(0..<numberOfRecurrenceRules, id: \.self) {
+                            i
+                            in
+                            let recurrenceRule = eventAsEKEvent.recurrenceRules![i]
+                            
+                            let frequency = recurrenceRule.frequency
+                            let interval = recurrenceRule.interval
+                            ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
+                            switch frequency {
+                            case .daily:
+                                ASAEventPropertyView(key: "Event Every how many days", value: "\(interval)")
+                                
+                            case .weekly:
+                                ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
+
+                            case .monthly:
+                                ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
+
+                            case .yearly:
+                                ASAEventPropertyView(key: "Event Every how many years", value: "\(interval)")
+
+                            @unknown default:
+                                ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
+                            } // switch frequency
+                            
+                            let recurrenceEnd = recurrenceRule.recurrenceEnd
+                            if recurrenceEnd != nil {
+                                let occurrenceCount = recurrenceEnd!.occurrenceCount
+                                if occurrenceCount == 0 {
+                                    // Date-based
+                                    ASAEventPropertyView(key: "Event Recurrence end date", value: row.dateTimeString(now:  recurrenceEnd!.endDate!))
+                                } else {
+                                    ASAEventPropertyView(key: "Event Recurrence count", value: "\(occurrenceCount)")
+                                }
+                            }
+                        } // ForEach(0..<numberOfRecurrenceRules, id: \.self)
+                    }
+                }
+            } // Section
             
             Section {
                 if event.hasParticipants {
@@ -75,7 +118,7 @@ struct ASAEventDetailView: View {
                     Text(event.status.text)
                         .foregroundColor(event.status.color)
                 }
-            }
+            } // Section
             
             Section {
                 if event.hasNotes {
@@ -100,7 +143,7 @@ struct ASAEventDetailView: View {
                         })
                     }
                 }
-            }
+            } // Section
             
             Section {
                 let geoLocation = event.geoLocation
@@ -108,7 +151,7 @@ struct ASAEventDetailView: View {
                     Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
                         .aspectRatio(1.0, contentMode: .fit)
                 }
-            }
+            } // Section
             
             Section {
                 let currentUser: EKParticipant? = event.currentUser
@@ -121,7 +164,7 @@ struct ASAEventDetailView: View {
                         Text(status.text)
                     } // HStack
                 }
-            }
+            } // Section
         } // List
         .foregroundColor(labelColor)
         .onAppear() {
@@ -133,6 +176,21 @@ struct ASAEventDetailView: View {
         }
     } // body
 } // struct ASAEventDetailView
+
+
+struct ASAEventPropertyView: View {
+    var key: String
+    var value: String
+    
+    var body: some View {
+        HStack {
+            Text(NSLocalizedString(key, comment: ""))
+                .bold()
+            Spacer()
+            Text(value)
+        } // HStack
+    }
+}
 
 
 struct ASAEKParticipantView: View {
