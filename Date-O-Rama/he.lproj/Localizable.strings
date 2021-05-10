@@ -233,3 +233,12 @@
 "EKParticipantStatus.inProcess"       = "In Process";
 "EKParticipantStatus.unknown default" = "Unknown default";
 "First day of the week for recurrence" = "היום הראשון בשבוע להישנות";
+"Event days of the week"             = "ימי השבוע:";
+"%@ (week number:  %i)"              = "%@ (מספר שבוע:  %i)";
+"%@ (week number from the end:  %i)" = "%@ (מספר שבוע מהסוף:  %i)";
+"Event months of the year"           = "חודשי השנה";
+"Event days of the month"            = "ימי החודש";
+"Event days of the year"             = "ימי השנה";
+"%i (from the end)"                  = "%i (מהסוף)";
+"Event weeks of the year"            = "שבועות השנה";
+"Event set positions"                = "עמדות קבועות";

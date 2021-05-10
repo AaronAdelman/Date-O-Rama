@@ -233,4 +233,12 @@
 "EKParticipantStatus.inProcess"       = "In Process";
 "EKParticipantStatus.unknown default" = "Unknown default";
 "First day of the week for recurrence" = "First day of the week for recurrence";
-
+"Event days of the week"             = "Days of the week:";
+"%@ (week number:  %i)"              = "%@ (week number:  %i)";
+"%@ (week number from the end:  %i)" = "%@ (week number from the end:  %i)";
+"Event months of the year"           = "Months of the year";
+"Event days of the month"            = "Days of the month";
+"Event days of the year"             = "Days of the year";
+"%i (from the end)"                  = "%i (from the end)";
+"Event weeks of the year"            = "Weeks of the year";
+"Event set positions"                = "Set positions";

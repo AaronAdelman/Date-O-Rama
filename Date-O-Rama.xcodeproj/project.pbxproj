@@ -224,6 +224,12 @@
 		A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8163D2541A37500E309E0 /* ASAMainRowsByCalendarView.swift */; };
 		A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
+		A5BC4DDD26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */; };
+		A5BC4DDE26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */; };
+		A5BC4DE026494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DDF26494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift */; };
+		A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DDF26494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift */; };
+		A5BC4DE326495F3500BF27F2 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */; };
+		A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */; };
 		A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
@@ -431,6 +437,9 @@
 		A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
 		A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendar.swift; sourceTree = "<group>"; };
+		A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWeekdayExtensions.swift; sourceTree = "<group>"; };
+		A5BC4DDF26494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKRecurrenceDayOfWeekExtensions.swift; sourceTree = "<group>"; };
+		A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumberExtensions.swift; sourceTree = "<group>"; };
 		A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationSymbol.swift; sourceTree = "<group>"; };
 		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
 		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
@@ -696,10 +705,13 @@
 				A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */,
 				A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */,
 				A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */,
+				A5BC4DDF26494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift */,
 				A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */,
+				A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */,
 				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 				A5596A3D258950AD002298CE /* LocaleExtensions.swift */,
+				A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */,
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A557AD5C25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
@@ -1094,6 +1106,7 @@
 				A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */,
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
+				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
 				A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */,
@@ -1117,6 +1130,7 @@
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */,
+				A5BC4DDE26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */,
 				A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */,
 				A506E3E5252C9405009345A0 /* ASAProcessedRow.swift in Sources */,
 				A59D80372600C57D00FD8BBF /* ASACalendarCode.swift in Sources */,
@@ -1152,6 +1166,7 @@
 				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
 				A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */,
 				A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
+				A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */,
 				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
 				A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */,
 			);
@@ -1172,6 +1187,7 @@
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A5A9666325A31DA200CF158F /* ASADatePicker.swift in Sources */,
 				A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */,
+				A5BC4DDD26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */,
 				A57CA32F24864C3A00378EA7 /* ASAConfiguration.swift in Sources */,
 				A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */,
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
@@ -1241,6 +1257,7 @@
 				A5B816372541A30900E309E0 /* ASAMainRowsByFormattedDateView.swift in Sources */,
 				A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A5AF2C4B2636ED8900FD479D /* ASAEventDetailView.swift in Sources */,
+				A5BC4DE026494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */,
 				A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
 				A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */,
@@ -1254,6 +1271,7 @@
 				A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */,
 				A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */,
 				A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */,
+				A5BC4DE326495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */,
 				A5832B88254ED124008E8A97 /* ASAMiniCalendarView.swift in Sources */,
 				A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */,

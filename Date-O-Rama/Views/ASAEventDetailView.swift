@@ -97,6 +97,54 @@ struct ASAEventDetailView: View {
                                 ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
                             } // switch frequency
                             
+                            if recurrenceRule.daysOfTheWeek != nil {
+                                let daysOfTheWeekStrings = recurrenceRule.daysOfTheWeek!.map {
+                                    $0.localizedString(calendar: GregorianCalendar)
+                                }
+                                let joined = ListFormatter.localizedString(byJoining: daysOfTheWeekStrings)
+                                ASAEventPropertyView(key: "Event days of the week", value: joined)
+                            }
+                            
+                            if recurrenceRule.daysOfTheMonth != nil {
+                                let daysOfTheMonthStrings = recurrenceRule.daysOfTheMonth!.map {
+                                    "\($0)"
+                                }
+                                let joined = ListFormatter.localizedString(byJoining: daysOfTheMonthStrings)
+                                ASAEventPropertyView(key: "Event days of the month", value: joined)
+                            }
+                            
+                            if recurrenceRule.daysOfTheYear != nil {
+                                let daysOfTheYearStrings = recurrenceRule.daysOfTheYear!.map {
+                                    "\($0.intValue)"
+                                }
+                                let joined = ListFormatter.localizedString(byJoining: daysOfTheYearStrings)
+                                ASAEventPropertyView(key: "Event days of the year", value: joined)
+                            }
+                            
+                            if recurrenceRule.weeksOfTheYear != nil {
+                                let weeksOfTheYearStrings = recurrenceRule.weeksOfTheYear!.map {
+                                    ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
+                                }
+                                let joined = ListFormatter.localizedString(byJoining: weeksOfTheYearStrings)
+                                ASAEventPropertyView(key: "Event weeks of the year", value: joined)
+                            }
+
+                            if recurrenceRule.monthsOfTheYear != nil {
+                                let monthsOfTheYearStrings = recurrenceRule.monthsOfTheYear!.map {
+                                    $0.monthSymbol(calendar: GregorianCalendar)
+                                }
+                                let joined = ListFormatter.localizedString(byJoining: monthsOfTheYearStrings)
+                                ASAEventPropertyView(key: "Event months of the year", value: joined)
+                            }
+                            
+                            if recurrenceRule.setPositions != nil {
+                                let setPositionsStrings = recurrenceRule.setPositions!.map {
+                                    ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
+                                }
+                                let joined = ListFormatter.localizedString(byJoining: setPositionsStrings)
+                                ASAEventPropertyView(key: "Event set positions", value: joined)
+                            }
+                            
                             let recurrenceEnd = recurrenceRule.recurrenceEnd
                             if recurrenceEnd != nil {
                                 let occurrenceCount = recurrenceEnd!.occurrenceCount
