@@ -220,8 +220,8 @@
 "EKParticipantRole.chair"    = "(המארגן/ת)";
 "EKParticipantRole.optional" = "(לא חובה)";
 "Copy available address" = "העתק כתובת מוזמן";
-"Send E-mail"            = "שלח דוא״ל";
-"Open in Contacts"       = "הצג כרטיס איש קשר";
+"Send E-mail"            = "שלח דוא״ל…";
+"Open in Contacts"       = "הצג כרטיס איש קשר…";
 "My status"                           = "המצב שלי:";
 "EKParticipantStatus.unknown"         = "לא ידוע";
 "EKParticipantStatus.pending"         = "Pending";

@@ -220,8 +220,8 @@
 "EKParticipantRole.chair"    = "(Organizer)";
 "EKParticipantRole.optional" = "(Optional)";
 "Copy available address" = "Copy available address";
-"Send E-mail"            = "Send E-mail";
-"Open in Contacts"       = "Open in Contacts";
+"Send E-mail"            = "Send E-mail…";
+"Open in Contacts"       = "Open in Contacts…";
 "My status"                           = "My status:";
 "EKParticipantStatus.unknown"         = "Unknown";
 "EKParticipantStatus.pending"         = "Pending";

@@ -170,7 +170,7 @@ struct ASAEventDetailView: View {
         .onAppear() {
             let geoLocation: CLLocation? = event.geoLocation
             if geoLocation != nil {
-                let meters = 10000.0
+                let meters = 1000.0
                 self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
             }
         }
