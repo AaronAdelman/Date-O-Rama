@@ -42,6 +42,9 @@ struct ASAEvent:  ASAEventCompatible {
     var hasAttendees: Bool          = false
     var attendees: [EKParticipant]? = nil
     
+    var hasAlarms: Bool    = false
+    var alarms: [EKAlarm]? = nil
+    
 } // struct ASAEvent
 
 

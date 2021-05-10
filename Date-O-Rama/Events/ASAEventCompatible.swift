@@ -18,9 +18,14 @@ protocol ASAEventCompatible {
     var startDate:  Date! { get }
     var endDate: Date! { get }
     var isAllDay: Bool { get }
+    
     var organizer: EKParticipant? { get } // The organizer associated with the event.
     var hasAttendees: Bool { get } // A Boolean value that indicates whether the calendar item has attendees.
     var attendees: [EKParticipant]? { get } // The attendees associated with the calendar item, as an array of EKParticipant objects.
+    
+    var hasAlarms: Bool { get }// A Boolean value that indicates whether the calendar item has alarms.
+    var alarms: [EKAlarm]? { get } // The alarms associated with the calendar item, as an array of EKAlarm objects.
+    
     var status: EKEventStatus { get } // The status of the event.
     var timeZone: TimeZone? { get }
     var url: URL? { get } // The URL for the calendar item.

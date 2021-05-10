@@ -161,6 +161,19 @@ struct ASAEventDetailView: View {
             } // Section
             
             Section {
+                if event.hasAlarms {
+                    let numberOfAlarms = event.alarms!.count
+                    ForEach(0..<numberOfAlarms, id: \.self) {
+                        i
+                        in
+                        let alarm = event.alarms![i]
+                        
+                        Text("\(alarm.relativeOffset)")
+                    }
+                }
+            } // Section
+            
+            Section {
                 if event.hasParticipants {
                     VStack(alignment: .leading) {
                         ForEach(event.participants!, id: \.url) {
