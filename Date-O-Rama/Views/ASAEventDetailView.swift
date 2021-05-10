@@ -27,6 +27,12 @@ struct ASAEventDetailView: View {
     var secondaryLabelColor = Color(UIColor.secondaryLabel)
     #endif
     
+    let GregorianCalendar: Calendar = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = Locale.current
+        return calendar
+    }()
+    
     var body: some View {
         List {
             Section {
@@ -77,7 +83,10 @@ struct ASAEventDetailView: View {
                                 
                             case .weekly:
                                 ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
-
+                                let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
+                                let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
+                                ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
+                                
                             case .monthly:
                                 ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
 

@@ -232,3 +232,4 @@
 "EKParticipantStatus.completed"       = "Completed";
 "EKParticipantStatus.inProcess"       = "In Process";
 "EKParticipantStatus.unknown default" = "Unknown default";
+"First day of the week for recurrence" = "היום הראשון בשבוע להישנות";
