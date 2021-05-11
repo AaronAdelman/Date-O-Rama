@@ -222,7 +222,7 @@
 "Copy available address" = "העתק כתובת מוזמן";
 "Send E-mail"            = "שלח דוא״ל…";
 "Open in Contacts"       = "הצג כרטיס איש קשר…";
-"My status"                           = "המצב שלי:";
+"My status"                           = "המצב שלי";
 "EKParticipantStatus.unknown"         = "לא ידוע";
 "EKParticipantStatus.pending"         = "Pending";
 "EKParticipantStatus.accepted"        = "משתתף/ת";
@@ -242,3 +242,6 @@
 "%i (from the end)"                  = "%i (מהסוף)";
 "Event weeks of the year"            = "שבועות השנה";
 "Event set positions"                = "עמדות קבועות";
+"Event alarm"                        = "התרעה";
+"%@ before"                          = "%@ לפני";
+"%@ after"                           = "%@ אחרי";

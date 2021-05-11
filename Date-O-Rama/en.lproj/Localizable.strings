@@ -222,7 +222,7 @@
 "Copy available address" = "Copy available address";
 "Send E-mail"            = "Send E-mail…";
 "Open in Contacts"       = "Open in Contacts…";
-"My status"                           = "My status:";
+"My status"                           = "My status";
 "EKParticipantStatus.unknown"         = "Unknown";
 "EKParticipantStatus.pending"         = "Pending";
 "EKParticipantStatus.accepted"        = "Accepted";
@@ -242,3 +242,6 @@
 "%i (from the end)"                  = "%i (from the end)";
 "Event weeks of the year"            = "Weeks of the year";
 "Event set positions"                = "Set positions";
+"Event alarm"                        = "Alarm";
+"%@ before"                          = "%@ before";
+"%@ after"                           = "%@ after";
