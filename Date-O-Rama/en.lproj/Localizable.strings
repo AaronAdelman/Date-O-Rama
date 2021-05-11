@@ -245,3 +245,10 @@
 "Event alarm"                        = "Alarm";
 "%@ before"                          = "%@ before";
 "%@ after"                           = "%@ after";
+"EKEventAvailability.notSupported"     = "Not supported";
+"EKEventAvailability.busy"             = "Busy";
+"EKEventAvailability.free"             = "Free";
+"EKEventAvailability.tentative"        = "Tentative";
+"EKEventAvailability.unavailable"      = "Unavailable";
+"EKEventAvailability.@unknown default" = "Unknown default";
+"Event availability"                   = "Availability";

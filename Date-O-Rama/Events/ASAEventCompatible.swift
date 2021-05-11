@@ -15,6 +15,9 @@ protocol ASAEventCompatible {
     var eventIdentifier: String! { get }
     var title:  String! { get }
     var location: String? { get }
+    
+    var availability: EKEventAvailability { get } // The availability setting for the event.
+    
     var startDate:  Date! { get }
     var endDate: Date! { get }
     var isAllDay: Bool { get }

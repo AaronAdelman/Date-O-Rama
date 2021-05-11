@@ -245,3 +245,10 @@
 "Event alarm"                        = "התרעה";
 "%@ before"                          = "%@ לפני";
 "%@ after"                           = "%@ אחרי";
+"EKEventAvailability.notSupported"     = "Not supported";
+"EKEventAvailability.busy"             = "עסוק/ה";
+"EKEventAvailability.free"             = "פנוי/ה";
+"EKEventAvailability.tentative"        = "Tentative";
+"EKEventAvailability.unavailable"      = "Unavailable";
+"EKEventAvailability.@unknown default" = "Unknown default";
+"Event availability"                   = "תור";

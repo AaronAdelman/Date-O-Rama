@@ -48,7 +48,11 @@ struct ASAEventDetailView: View {
             } // Section
             
             Section {
-                let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+//                let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+                
+                let startDateString = row.dateTimeString(now: event.startDate)
+                let endDateString = row.dateTimeString(now: event.endDate)
+                
                 if startDateString == endDateString {
                     Text(startDateString)
                 } else {
@@ -162,32 +166,18 @@ struct ASAEventDetailView: View {
             
             Section {
                 if event.hasAlarms {
-                    let numberOfAlarms = event.alarms!.count
+                    let numberOfAlarms = event.alarms?.count ?? 0
                     ForEach(0..<numberOfAlarms, id: \.self) {
                         i
                         in
                         let alarm = event.alarms![i]
-                        
-//                        var strings: Array<String> = []
-//
-//                        let offset = abs(alarm.relativeOffset)
-//                        let before = (alarm.relativeOffset <= 0)
-//                        let formattedOffset = offset.formatted ?? ""
-//                        let format = before ? "%@ before" : "%@ after"
-//                        let localizedFormat = NSLocalizedString(format, comment: "")
-//                        let filledInFormat: String = String(format: localizedFormat, formattedOffset)
-//                        strings.append(filledInFormat)
-//
-//                        if alarm.absoluteDate != nil {
-//                            let absoluteDateString: String = row.dateTimeString(now:  absoluteDate!)
-//                            strings.append(absoluteDateString)
-//                        }
-//
-//                        let joined = ListFormatter.localizedString(byJoining: strings)
-//
-//                        ASAEventPropertyView(key: "Event alarm", value: joined)
+
                         ASAEventAlarmView(alarm: alarm, row: row)
-                    }
+                    } // ForEach(0..<numberOfAlarms, id: \.self)
+                }
+                
+                if event.availability != .notSupported {
+                    ASAEventPropertyView(key: "Event availability", value: event.availability.text)
                 }
             } // Section
             
@@ -273,11 +263,12 @@ struct ASAEventAlarmView: View {
     var row: ASARow
     
     func value() -> String {
-        var strings: Array<String> = []
+//        var strings: Array<String> = []
         
         if alarm.absoluteDate != nil {
             let absoluteDateString: String = row.dateTimeString(now:  alarm.absoluteDate!)
-            strings.append(absoluteDateString)
+//            strings.append(absoluteDateString)
+            return absoluteDateString
         } else {
             let offset = abs(alarm.relativeOffset)
             let before = (alarm.relativeOffset <= 0)
@@ -285,11 +276,12 @@ struct ASAEventAlarmView: View {
             let format = before ? "%@ before" : "%@ after"
             let localizedFormat = NSLocalizedString(format, comment: "")
             let filledInFormat: String = String(format: localizedFormat, formattedOffset)
-            strings.append(filledInFormat)
+//            strings.append(filledInFormat)
+            return filledInFormat
         }
-        
-        let joined = ListFormatter.localizedString(byJoining: strings)
-return joined
+                
+//        let joined = ListFormatter.localizedString(byJoining: strings)
+//        return joined
     }
     
     var body: some View {

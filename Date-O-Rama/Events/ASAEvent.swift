@@ -45,6 +45,7 @@ struct ASAEvent:  ASAEventCompatible {
     var hasAlarms: Bool    = false
     var alarms: [EKAlarm]? = nil
     
+    var availability: EKEventAvailability = .notSupported
 } // struct ASAEvent
 
 

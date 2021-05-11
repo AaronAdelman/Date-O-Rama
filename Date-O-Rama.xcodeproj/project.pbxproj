@@ -259,6 +259,8 @@
 		A5D8FE3825C6D77A00A29350 /* ASANewEKEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */; };
 		A5DC8765264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */; };
 		A5DC8766264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */; };
+		A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */; };
+		A5DC8769264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */; };
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5E2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5F2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
@@ -480,6 +482,7 @@
 		A5D62861243B80F100F3CC19 /* ASADateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormat.swift; sourceTree = "<group>"; };
 		A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewEKEventView.swift; sourceTree = "<group>"; };
 		A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventAvailabilityExtensions.swift; sourceTree = "<group>"; };
 		A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellEventVisibility.swift; sourceTree = "<group>"; };
 		A5E3606324C71FBC0000A268 /* All-day Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "All-day Jewish events.json"; sourceTree = "<group>"; };
 		A5E3606524C756FF0000A268 /* Israeli events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Israeli events.json"; sourceTree = "<group>"; };
@@ -720,6 +723,7 @@
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */,
 				A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */,
+				A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1124,6 +1128,7 @@
 				A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
+				A5DC8769264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */,
 				A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
@@ -1187,6 +1192,7 @@
 				A5B8163E2541A37500E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
+				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
 				A557AD5D25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
