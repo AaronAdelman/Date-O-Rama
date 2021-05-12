@@ -40,6 +40,7 @@ protocol ASAEventCompatible {
     var calendarCode:  ASACalendarCode { get }
     var isEKEvent:  Bool { get }
     var geoLocation: CLLocation? { get }
+    var isReadOnly: Bool { get }
 } // protocol ASAEventCompatible
 
 

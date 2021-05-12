@@ -50,4 +50,18 @@ extension EKEvent:  ASAEventCompatible {
         return self.structuredLocation?.geoLocation
     } // var geoLocation: CLLocation?
 
+    // Based on https://stackoverflow.com/questions/4475120/iphone-how-to-detect-if-an-ekevent-instance-can-be-modified
+    var isReadOnly: Bool {
+        if !self.calendar.allowsContentModifications {
+            return true
+        }
+
+        if self.organizer != nil {
+            if !self.organizer!.isCurrentUser {
+            return true
+            }
+        }
+
+        return false
+    }
 } // extension EKEvent:  ASAEventCompatible

@@ -38,7 +38,7 @@ struct ASAEventDetailView: View {
     
     var body: some View {
         List {
-            if event.isEKEvent {
+            if event.isEKEvent && !event.isReadOnly {
                 let eventAsEKEvent = event as! EKEvent
 
                 HStack {
