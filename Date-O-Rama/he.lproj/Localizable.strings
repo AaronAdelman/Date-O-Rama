@@ -252,3 +252,4 @@
 "EKEventAvailability.unavailable"      = "Unavailable";
 "EKEventAvailability.@unknown default" = "Unknown default";
 "Event availability"                   = "תור";
+"Event edit" = "עריכה";

@@ -10,6 +10,7 @@ import SwiftUI
 import MapKit
 import EventKit
 import Contacts
+import EventKitUI
 
 let CONTACTS_PREFIX = "addressbook://"
 let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
@@ -33,8 +34,20 @@ struct ASAEventDetailView: View {
         return calendar
     }()
     
+    @State var showingEventEditView = false
+    
     var body: some View {
         List {
+            if event.isEKEvent {
+                let eventAsEKEvent = event as! EKEvent
+
+                HStack {
+                    Spacer()
+                    
+                    ASAEditExternalEventButton(event: eventAsEKEvent)
+                } // HStack
+            }
+            
             Section {
                 Text(event.title)
                     .font(.title)
@@ -258,6 +271,33 @@ struct ASAEventDetailView: View {
 } // struct ASAEventDetailView
 
 
+// MARK:  -
+
+struct ASAEditExternalEventButton: View {
+    var event: EKEvent
+    
+    @ObservedObject var eventManager = ASAEKEventManager.shared
+
+    @State private var action:  EKEventEditViewAction?
+    @State private var showingEventEditView = false
+
+    var body: some View {
+        Button(action:
+                {
+                    self.showingEventEditView = true
+                }, label:  {
+                    Text("Event edit")
+                })
+            .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+                ASAEKEventEditView(action: self.$action, event: event, eventStore: self.eventManager.eventStore)
+            }
+            .foregroundColor(.accentColor)
+    }
+}
+
+
+// MARK:  -
+
 struct ASAEventAlarmView: View {
     var alarm: EKAlarm
     var row: ASARow
@@ -290,6 +330,8 @@ struct ASAEventAlarmView: View {
 }
 
 
+// MARK:  -
+
 struct ASAEventPropertyView: View {
     var key: String
     var value: String
@@ -304,6 +346,8 @@ struct ASAEventPropertyView: View {
     }
 }
 
+
+// MARK:  -
 
 struct ASAEKParticipantView: View {
     var participant: EKParticipant
@@ -433,6 +477,8 @@ struct ASAEKParticipantView: View {
     } // var body
 } // struct ASAEKParticipantView
 
+
+// MARK:  -
 
 struct ASAEventDetailView_Previews: PreviewProvider {
     static var previews: some View {

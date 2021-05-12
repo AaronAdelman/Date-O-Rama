@@ -252,3 +252,5 @@
 "EKEventAvailability.unavailable"      = "Unavailable";
 "EKEventAvailability.@unknown default" = "Unknown default";
 "Event availability"                   = "Availability";
+"Event edit" = "Edit";
+
