@@ -32,13 +32,11 @@ extension EKEvent:  ASAEventCompatible {
         } // get
     } // var color
 
-    var calendarTitleWithLocation
-:  String {
+    var calendarTitleWithLocation:  String {
         get {
             return self.calendar.title
         } // get
     } // var calendarTitleWithLocation
-
 
     var calendarCode: ASACalendarCode {
         get {
@@ -55,13 +53,13 @@ extension EKEvent:  ASAEventCompatible {
         if !self.calendar.allowsContentModifications {
             return true
         }
-
+        
         if self.organizer != nil {
             if !self.organizer!.isCurrentUser {
-            return true
+                return true
             }
         }
-
+        
         return false
-    }
+    } // var isReadOnly
 } // extension EKEvent:  ASAEventCompatible
