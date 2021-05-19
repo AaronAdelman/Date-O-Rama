@@ -493,3 +493,23 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         return events
     } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
 } // class ASAUserData
+
+extension ASAUserData {
+    func row(uuidString: String, backupIndex:  Int) -> ASARow {
+        let tempUUID = UUID(uuidString: uuidString)
+        if tempUUID == nil {
+            return ASARow.generic
+        }
+        
+        let temp = self.mainRows.first(where: {$0.uuid == tempUUID!})
+        if temp != nil {
+            return temp!
+        }
+        
+        if self.mainRows.count >= backupIndex + 1 {
+            return self.mainRows[backupIndex]
+        }
+        
+        return ASARow.generic
+    } // func row(backupIndex:  Int) -> ASARow
+} // extension ASAUserData

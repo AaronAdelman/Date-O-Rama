@@ -22,7 +22,8 @@ struct ASAEventsTab: View {
     
     var primaryRow:  ASARow {
         get {
-            let result: ASARow = primaryRowUUIDString.row(backupIndex: 0)
+            let result: ASARow = ASAUserData.shared.row(uuidString: primaryRowUUIDString, backupIndex: 0)
+            
             self.primaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
             return result
@@ -31,13 +32,15 @@ struct ASAEventsTab: View {
             primaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var primaryRow:  ASARow
+    
     var secondaryRow:  ASARow {
         get {
             if self.userData.mainRows.count < 2 {
                 return ASARow.generic
             }
-
-            let result: ASARow = secondaryRowUUIDString.row(backupIndex: 1)
+            
+            let result: ASARow = ASAUserData.shared.row(uuidString: secondaryRowUUIDString, backupIndex: 1)
+            
             self.secondaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
             return result

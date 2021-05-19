@@ -72,7 +72,6 @@
 		A557AD2925DD49A900A264B6 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A557AD5525DD4BA200A264B6 /* ASADateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASADateFormat.swift */; };
 		A557AD5625DD4BA200A264B6 /* ASATimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASATimeFormat.swift */; };
-		A557AD5D25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557AD5C25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift */; };
 		A557AD6825DD4F3700A264B6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
 		A557AD6F25DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */; };
 		A557AD7025DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */; };
@@ -372,7 +371,6 @@
 		A545068926022E3B00801AC8 /* ASARadioButtonSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonSymbol.swift; sourceTree = "<group>"; };
 		A5490F972550339D00EFB13F /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
-		A557AD5C25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ASARow+ASAUserDataExtensions.swift"; sourceTree = "<group>"; };
 		A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPolarLighting.swift; sourceTree = "<group>"; };
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAArrangementChooserView.swift; sourceTree = "<group>"; };
@@ -704,6 +702,7 @@
 				A57083F2254818B200904E7C /* DateFormatterExtensions.swift */,
 				A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */,
 				A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */,
+				A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */,
 				A579019C259263F900224666 /* EKEventExtensions.swift */,
 				A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */,
 				A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */,
@@ -716,11 +715,9 @@
 				A5596A3D258950AD002298CE /* LocaleExtensions.swift */,
 				A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */,
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
-				A557AD5C25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */,
 				A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */,
-				A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1191,7 +1188,6 @@
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
-				A557AD5D25DD4D8D00A264B6 /* String+ASARow+ASAUserDataExtensions.swift in Sources */,
 				A5C77C3C2433603F00CFEE47 /* ASALocaleData.swift in Sources */,
 				A5A9666325A31DA200CF158F /* ASADatePicker.swift in Sources */,
 				A59D80532600C6F800FD8BBF /* ASAEventCalendar.swift in Sources */,
