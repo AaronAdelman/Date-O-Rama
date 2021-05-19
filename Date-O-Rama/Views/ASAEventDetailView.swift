@@ -61,12 +61,9 @@ struct ASAEventDetailView: View {
             } // Section
             
             Section {
-//                let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+                let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
                 
-                let startDateString = row.dateTimeString(now: event.startDate)
-                let endDateString = row.dateTimeString(now: event.endDate)
-                
-                if startDateString == endDateString {
+                if event.startDate == event.endDate || startDateString == endDateString {
                     Text(startDateString)
                 } else {
                     Text(startDateString + " — " + endDateString)

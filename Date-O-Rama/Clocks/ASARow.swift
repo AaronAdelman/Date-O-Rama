@@ -499,5 +499,14 @@ extension ASARow {
         startAndEndDateStringsCache.setObject(myObject, forKey: event.eventIdentifier! as NSString)
 
         return (startDateString, endDateString)
-    }
+    } // func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
+    
+    public func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
+        let eventIsAllDay = event.isAllDay(for: self)
+        let startDateString = eventIsAllDay ? self.dateString(now: event.startDate) : self.dateTimeString(now: event.startDate)
+        let endDate: Date = event.endDate - 1
+        let endDateString = eventIsAllDay ? self.dateString(now: endDate) : self.dateTimeString(now: endDate)
+        
+        return (startDateString, endDateString)
+    } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
 } // extension ASARow
