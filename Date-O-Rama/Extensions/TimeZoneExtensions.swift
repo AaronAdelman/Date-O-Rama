@@ -12,9 +12,7 @@ extension TimeZone {
     static var GMT:  TimeZone {
         return TimeZone(secondsFromGMT: 0)!
     } // static var GMT
-} // extension TimeZone
 
-extension TimeZone {
     func extremeAbbreviation(for date: Date) -> String {
         let secondsFromGMT = self.secondsFromGMT(for: date)
         let hoursFromGMT: Double = Double(secondsFromGMT) / (60.0 * 60.0)
@@ -35,4 +33,8 @@ extension TimeZone {
         let nameStyle: NSTimeZone.NameStyle = self.isDaylightSavingTime(for: now) ? .daylightSaving : .standard
         return self.localizedName(for: nameStyle, locale: Locale.current) ?? ""
     } // func localizedName(for now: Date) -> String
+    
+    var isCurrent: Bool {
+        return self.identifier == TimeZone.current.identifier
+    } // var isCurrent
 } // extension TimeZone

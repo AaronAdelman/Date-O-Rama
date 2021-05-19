@@ -273,7 +273,7 @@ struct ASAEventDetailDateTimeSection: View {
     func dateFormatter() -> DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .full
-        dateFormatter.timeStyle = .medium
+        dateFormatter.timeStyle = .long
         dateFormatter.timeZone  = self.event.timeZone!
         return dateFormatter
     } // func dateFormatter() -> DateFormatter
@@ -284,13 +284,13 @@ struct ASAEventDetailDateTimeSection: View {
             
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)
-                if !row.isGregorian {
+                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
                     Text(dateFormatter().string(from: event.startDate))
                 }
             } else {
                 let DASH = " — "
                 Text(startDateString + DASH + endDateString)
-                if !row.isGregorian {
+                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
                     let dateFormatter = dateFormatter()
                     let startDateString = dateFormatter.string(from: event.startDate)
                     let endDateString = dateFormatter.string(from: event.endDate)
