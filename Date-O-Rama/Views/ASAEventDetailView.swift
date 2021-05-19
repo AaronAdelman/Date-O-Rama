@@ -28,12 +28,6 @@ struct ASAEventDetailView: View {
     var secondaryLabelColor = Color(UIColor.secondaryLabel)
     #endif
     
-    let GregorianCalendar: Calendar = {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.locale = Locale.current
-        return calendar
-    }()
-    
     @State var showingEventEditView = false
         
     var body: some View {
@@ -61,103 +55,7 @@ struct ASAEventDetailView: View {
             } // Section
             
             ASAEventDetailDateTimeSection(row: row, event: event)
-            
-            Section {                
-                if event.isEKEvent {
-                    let eventAsEKEvent = event as! EKEvent
-                    if eventAsEKEvent.hasRecurrenceRules {
-                        let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules!.count
-                        ForEach(0..<numberOfRecurrenceRules, id: \.self) {
-                            i
-                            in
-                            let recurrenceRule = eventAsEKEvent.recurrenceRules![i]
-                            
-                            let frequency = recurrenceRule.frequency
-                            let interval = recurrenceRule.interval
-                            ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
-                            switch frequency {
-                            case .daily:
-                                ASAEventPropertyView(key: "Event Every how many days", value: "\(interval)")
-                                
-                            case .weekly:
-                                ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
-                                let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
-                                let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
-                                ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
-                                
-                            case .monthly:
-                                ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
-
-                            case .yearly:
-                                ASAEventPropertyView(key: "Event Every how many years", value: "\(interval)")
-
-                            @unknown default:
-                                ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
-                            } // switch frequency
-                            
-                            if recurrenceRule.daysOfTheWeek != nil {
-                                let daysOfTheWeekStrings = recurrenceRule.daysOfTheWeek!.map {
-                                    $0.localizedString(calendar: GregorianCalendar)
-                                }
-                                let joined = ListFormatter.localizedString(byJoining: daysOfTheWeekStrings)
-                                ASAEventPropertyView(key: "Event days of the week", value: joined)
-                            }
-                            
-                            if recurrenceRule.daysOfTheMonth != nil {
-                                let daysOfTheMonthStrings = recurrenceRule.daysOfTheMonth!.map {
-                                    "\($0)"
-                                }
-                                let joined = ListFormatter.localizedString(byJoining: daysOfTheMonthStrings)
-                                ASAEventPropertyView(key: "Event days of the month", value: joined)
-                            }
-                            
-                            if recurrenceRule.daysOfTheYear != nil {
-                                let daysOfTheYearStrings = recurrenceRule.daysOfTheYear!.map {
-                                    "\($0.intValue)"
-                                }
-                                let joined = ListFormatter.localizedString(byJoining: daysOfTheYearStrings)
-                                ASAEventPropertyView(key: "Event days of the year", value: joined)
-                            }
-                            
-                            if recurrenceRule.weeksOfTheYear != nil {
-                                let weeksOfTheYearStrings = recurrenceRule.weeksOfTheYear!.map {
-                                    ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
-                                }
-                                let joined = ListFormatter.localizedString(byJoining: weeksOfTheYearStrings)
-                                ASAEventPropertyView(key: "Event weeks of the year", value: joined)
-                            }
-
-                            if recurrenceRule.monthsOfTheYear != nil {
-                                let monthsOfTheYearStrings = recurrenceRule.monthsOfTheYear!.map {
-                                    $0.monthSymbol(calendar: GregorianCalendar)
-                                }
-                                let joined = ListFormatter.localizedString(byJoining: monthsOfTheYearStrings)
-                                ASAEventPropertyView(key: "Event months of the year", value: joined)
-                            }
-                            
-                            if recurrenceRule.setPositions != nil {
-                                let setPositionsStrings = recurrenceRule.setPositions!.map {
-                                    ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
-                                }
-                                let joined = ListFormatter.localizedString(byJoining: setPositionsStrings)
-                                ASAEventPropertyView(key: "Event set positions", value: joined)
-                            }
-                            
-                            let recurrenceEnd = recurrenceRule.recurrenceEnd
-                            if recurrenceEnd != nil {
-                                let occurrenceCount = recurrenceEnd!.occurrenceCount
-                                if occurrenceCount == 0 {
-                                    // Date-based
-                                    ASAEventPropertyView(key: "Event Recurrence end date", value: row.dateTimeString(now:  recurrenceEnd!.endDate!))
-                                } else {
-                                    ASAEventPropertyView(key: "Event Recurrence count", value: "\(occurrenceCount)")
-                                }
-                            }
-                        } // ForEach(0..<numberOfRecurrenceRules, id: \.self)
-                    }
-                }
-            } // Section
-            
+                        
             Section {
                 if event.hasAlarms {
                     let numberOfAlarms = event.alarms?.count ?? 0
@@ -254,6 +152,111 @@ struct ASAEventDetailView: View {
 
 // MARK:  -
 
+struct ASAEKEventRecurrenceRulesForEach: View {
+    var eventAsEKEvent: EKEvent
+    var row: ASARow
+    
+    let GregorianCalendar: Calendar = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = Locale.current
+        return calendar
+    }()
+    
+    var body: some View {
+        let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules!.count
+        ForEach(0..<numberOfRecurrenceRules, id: \.self) {
+            i
+            in
+            let recurrenceRule = eventAsEKEvent.recurrenceRules![i]
+            
+            let frequency = recurrenceRule.frequency
+            let interval = recurrenceRule.interval
+            ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
+            switch frequency {
+            case .daily:
+                ASAEventPropertyView(key: "Event Every how many days", value: "\(interval)")
+                
+            case .weekly:
+                ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
+                let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
+                let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
+                ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
+                
+            case .monthly:
+                ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
+
+            case .yearly:
+                ASAEventPropertyView(key: "Event Every how many years", value: "\(interval)")
+
+            @unknown default:
+                ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
+            } // switch frequency
+            
+            if recurrenceRule.daysOfTheWeek != nil {
+                let daysOfTheWeekStrings = recurrenceRule.daysOfTheWeek!.map {
+                    $0.localizedString(calendar: GregorianCalendar)
+                }
+                let joined = ListFormatter.localizedString(byJoining: daysOfTheWeekStrings)
+                ASAEventPropertyView(key: "Event days of the week", value: joined)
+            }
+            
+            if recurrenceRule.daysOfTheMonth != nil {
+                let daysOfTheMonthStrings = recurrenceRule.daysOfTheMonth!.map {
+                    "\($0)"
+                }
+                let joined = ListFormatter.localizedString(byJoining: daysOfTheMonthStrings)
+                ASAEventPropertyView(key: "Event days of the month", value: joined)
+            }
+            
+            if recurrenceRule.daysOfTheYear != nil {
+                let daysOfTheYearStrings = recurrenceRule.daysOfTheYear!.map {
+                    "\($0.intValue)"
+                }
+                let joined = ListFormatter.localizedString(byJoining: daysOfTheYearStrings)
+                ASAEventPropertyView(key: "Event days of the year", value: joined)
+            }
+            
+            if recurrenceRule.weeksOfTheYear != nil {
+                let weeksOfTheYearStrings = recurrenceRule.weeksOfTheYear!.map {
+                    ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
+                }
+                let joined = ListFormatter.localizedString(byJoining: weeksOfTheYearStrings)
+                ASAEventPropertyView(key: "Event weeks of the year", value: joined)
+            }
+
+            if recurrenceRule.monthsOfTheYear != nil {
+                let monthsOfTheYearStrings = recurrenceRule.monthsOfTheYear!.map {
+                    $0.monthSymbol(calendar: GregorianCalendar)
+                }
+                let joined = ListFormatter.localizedString(byJoining: monthsOfTheYearStrings)
+                ASAEventPropertyView(key: "Event months of the year", value: joined)
+            }
+            
+            if recurrenceRule.setPositions != nil {
+                let setPositionsStrings = recurrenceRule.setPositions!.map {
+                    ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
+                }
+                let joined = ListFormatter.localizedString(byJoining: setPositionsStrings)
+                ASAEventPropertyView(key: "Event set positions", value: joined)
+            }
+            
+            let recurrenceEnd = recurrenceRule.recurrenceEnd
+            if recurrenceEnd != nil {
+                let occurrenceCount = recurrenceEnd!.occurrenceCount
+                if occurrenceCount == 0 {
+                    // Date-based
+                    ASAEventPropertyView(key: "Event Recurrence end date", value: row.dateTimeString(now:  recurrenceEnd!.endDate!))
+                } else {
+                    ASAEventPropertyView(key: "Event Recurrence count", value: "\(occurrenceCount)")
+                }
+            }
+        } // ForEach(0..<numberOfRecurrenceRules, id: \.self)
+    } // var body
+} // struct ASAEKEventRecurrenceRulesForEach
+
+
+// MARK:  -
+
 struct ASAEventDetailDateTimeSection: View {
     var row: ASARow
     var event: ASAEventCompatible
@@ -295,6 +298,11 @@ struct ASAEventDetailDateTimeSection: View {
                     Text("•")
                     Text(verbatim:  timeZone.localizedName(for: now))
                 } // HStack
+            }
+            
+            if event.isEKEvent {
+                let eventAsEKEvent = event as! EKEvent
+                ASAEKEventRecurrenceRulesForEach(eventAsEKEvent: eventAsEKEvent, row: row)
             }
         } // Section
     } // var body
