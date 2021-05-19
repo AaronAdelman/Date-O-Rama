@@ -61,18 +61,6 @@ struct ASAEventDetailView: View {
             } // Section
             
             ASAEventDetailDateTimeSection(row: row, event: event)
-
-            Section {
-                if event.timeZone != nil {
-                    let timeZone = event.timeZone!
-                    let now = Date()
-                    HStack {
-                        Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
-                        Text("•")
-                        Text(verbatim:  timeZone.localizedName(for: now))
-                    } // HStack
-                }
-            } // Section
             
             Section {                
                 if event.isEKEvent {
@@ -297,6 +285,16 @@ struct ASAEventDetailDateTimeSection: View {
                     
                     Text(startDateString + DASH + endDateString)
                 }
+            }
+            
+            if event.timeZone != nil {
+                let timeZone = event.timeZone!
+                let now = Date()
+                HStack {
+                    Text(verbatim:  timeZone.abbreviation(for:  now) ?? "")
+                    Text("•")
+                    Text(verbatim:  timeZone.localizedName(for: now))
+                } // HStack
             }
         } // Section
     } // var body
