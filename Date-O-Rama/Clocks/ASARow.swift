@@ -463,7 +463,7 @@ extension ASARow {
 } // extension ASARow
 
 extension ASARow {
-    public func emoji(date:  Date) -> String {
+    public func countryCodeEmoji(date:  Date) -> String {
         return (self.locationData.ISOCountryCode ?? "").flag
     } // public func emoji(date:  Date) -> String
 } // extension ASARow
@@ -509,4 +509,8 @@ extension ASARow {
         
         return (startDateString, endDateString)
     } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
+    
+    var isGregorian: Bool {
+        return self.calendar.calendarCode == .Gregorian
+    } // var isGregorian
 } // extension ASARow

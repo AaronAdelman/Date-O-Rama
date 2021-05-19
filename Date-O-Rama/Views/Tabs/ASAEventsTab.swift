@@ -88,7 +88,7 @@ struct ASAEventsTab: View {
                                         if primaryRow.usesDeviceLocation {
                                             ASALocationSymbol()
                                         }
-                                        Text(verbatim: primaryRow.emoji(date:  date))
+                                        Text(verbatim: primaryRow.countryCodeEmoji(date:  date))
                                         Text(verbatim:  primaryRow.locationData.formattedOneLineAddress)
                                     }
                                 }
@@ -108,7 +108,7 @@ struct ASAEventsTab: View {
                                             if secondaryRow.usesDeviceLocation {
                                                 ASALocationSymbol()
                                             }
-                                            Text(verbatim: secondaryRow.emoji(date:  date))
+                                            Text(verbatim: secondaryRow.countryCodeEmoji(date:  date))
                                             Text(verbatim: secondaryRow.locationData.formattedOneLineAddress)
                                         }
                                     }

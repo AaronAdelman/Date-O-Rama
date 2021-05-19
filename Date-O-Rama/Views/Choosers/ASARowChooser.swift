@@ -38,7 +38,7 @@ struct ASARowCell: View {
                     if row.usesDeviceLocation {
                         ASALocationSymbol()
                     }
-                    Text(verbatim:  row.emoji(date:  Date()))
+                    Text(verbatim:  row.countryCodeEmoji(date:  Date()))
                     Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadlineMonospacedDigit)
                 }
             }

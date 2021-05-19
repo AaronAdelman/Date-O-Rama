@@ -35,7 +35,7 @@ struct ASAEventDetailView: View {
     }()
     
     @State var showingEventEditView = false
-    
+        
     var body: some View {
         List {
             if event.isEKEvent && !event.isReadOnly {
@@ -60,15 +60,9 @@ struct ASAEventDetailView: View {
                 } // HStack
             } // Section
             
+            ASAEventDetailDateTimeSection(row: row, event: event)
+
             Section {
-                let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
-                
-                if event.startDate == event.endDate || startDateString == endDateString {
-                    Text(startDateString)
-                } else {
-                    Text(startDateString + " — " + endDateString)
-                }
-                
                 if event.timeZone != nil {
                     let timeZone = event.timeZone!
                     let now = Date()
@@ -78,7 +72,9 @@ struct ASAEventDetailView: View {
                         Text(verbatim:  timeZone.localizedName(for: now))
                     } // HStack
                 }
-                
+            } // Section
+            
+            Section {                
                 if event.isEKEvent {
                     let eventAsEKEvent = event as! EKEvent
                     if eventAsEKEvent.hasRecurrenceRules {
@@ -266,6 +262,45 @@ struct ASAEventDetailView: View {
         }
     } // body
 } // struct ASAEventDetailView
+
+
+// MARK:  -
+
+struct ASAEventDetailDateTimeSection: View {
+    var row: ASARow
+    var event: ASAEventCompatible
+    
+    func dateFormatter() -> DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .full
+        dateFormatter.timeStyle = .medium
+        dateFormatter.timeZone  = self.event.timeZone!
+        return dateFormatter
+    } // func dateFormatter() -> DateFormatter
+    
+    var body: some View {
+        Section {
+            let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+            
+            if event.startDate == event.endDate || startDateString == endDateString {
+                Text(startDateString)
+                if !row.isGregorian {
+                    Text(dateFormatter().string(from: event.startDate))
+                }
+            } else {
+                let DASH = " — "
+                Text(startDateString + DASH + endDateString)
+                if !row.isGregorian {
+                    let dateFormatter = dateFormatter()
+                    let startDateString = dateFormatter.string(from: event.startDate)
+                    let endDateString = dateFormatter.string(from: event.endDate)
+                    
+                    Text(startDateString + DASH + endDateString)
+                }
+            }
+        } // Section
+    } // var body
+} // struct ASAEventDetailDateTimeSection
 
 
 // MARK:  -
