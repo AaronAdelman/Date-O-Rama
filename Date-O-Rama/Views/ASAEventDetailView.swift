@@ -45,8 +45,13 @@ struct ASAEventDetailView: View {
             #endif
 
             Section {
+                #if os(watchOS)
+                let titleFont: Font = .headline
+                #else
+                let titleFont: Font = .title
+                #endif
                 Text(event.title)
-                    .font(.title)
+                    .font(titleFont)
                 if event.location != nil {
                     Text(event.location!)
                 }
@@ -79,6 +84,8 @@ struct ASAEventDetailView: View {
 
             ASAEventDetailsNotesAndURLSection(event: event)
 
+            #if os(watchOS)
+            #else
             Section {
                 let geoLocation = event.geoLocation
                 if geoLocation != nil {
@@ -86,6 +93,7 @@ struct ASAEventDetailView: View {
                         .aspectRatio(1.0, contentMode: .fit)
                 }
             } // Section
+            #endif
 
             Section {
                 let currentUser: EKParticipant? = event.currentUser
@@ -104,11 +112,14 @@ struct ASAEventDetailView: View {
         } // List
         .foregroundColor(labelColor)
         .onAppear() {
+            #if os(watchOS)
+            #else
             let geoLocation: CLLocation? = event.geoLocation
             if geoLocation != nil {
                 let meters = 1000.0
                 self.region = MKCoordinateRegion(center: geoLocation!.coordinate, latitudinalMeters: meters, longitudinalMeters: meters)
             }
+            #endif
         }
     } // body
 } // struct ASAEventDetailView
