@@ -10,7 +10,6 @@ import SwiftUI
 import MapKit
 import EventKit
 import Contacts
-import EventKitUI
 
 let CONTACTS_PREFIX = "addressbook://"
 let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
@@ -32,6 +31,8 @@ struct ASAEventDetailView: View {
         
     var body: some View {
         List {
+            #if os(watchOS)
+            #else
             if event.isEKEvent && !event.isReadOnly {
                 let eventAsEKEvent = event as! EKEvent
 
@@ -41,7 +42,8 @@ struct ASAEventDetailView: View {
                     ASAEditExternalEventButton(event: eventAsEKEvent)
                 } // HStack
             }
-            
+            #endif
+
             Section {
                 Text(event.title)
                     .font(.title)
@@ -53,9 +55,9 @@ struct ASAEventDetailView: View {
                     Text(event.calendarTitleWithLocation)
                 } // HStack
             } // Section
-            
+
             ASAEventDetailDateTimeSection(row: row, event: event)
-                        
+
             Section {
                 if event.hasAlarms {
                     let numberOfAlarms = event.alarms?.count ?? 0
@@ -67,54 +69,16 @@ struct ASAEventDetailView: View {
                         ASAEventAlarmView(alarm: alarm, row: row)
                     } // ForEach(0..<numberOfAlarms, id: \.self)
                 }
-                
+
                 if event.availability != .notSupported {
                     ASAEventPropertyView(key: "Event availability", value: event.availability.text)
                 }
             } // Section
-            
-            Section {
-                if event.hasParticipants {
-                    VStack(alignment: .leading) {
-                        ForEach(event.participants!, id: \.url) {
-                            attendee
-                            in
-                            ASAEKParticipantView(participant: attendee)
-                        }
-                    }
-                }
-                
-                if event.status != .none && event.status != .confirmed {
-                    Text(event.status.text)
-                        .foregroundColor(event.status.color)
-                }
-            } // Section
-            
-            Section {
-                if event.hasNotes {
-                    Text(event.notes!)
-                }
-                
-                let eventURL = event.url
-                if eventURL != nil {
-                    if eventURL!.absoluteString.hasPrefix(CONTACTS_PREFIX) {
-                        Button(action: {
-                            UIApplication.shared.open(eventURL!, options: [:], completionHandler: nil)
-                        }, label: {
-                            Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
-                                .underline()
-                                .foregroundColor(.accentColor)
-                        })
-                    } else {
-                        Link(destination: event.url!, label: {
-                            Text(event.url!.absoluteString)
-                                .underline()
-                                .foregroundColor(.accentColor)
-                        })
-                    }
-                }
-            } // Section
-            
+
+            ASAEKEventParticipantsAndStatusSection(event: event)
+
+            ASAEventDetailsNotesAndURLSection(event: event)
+
             Section {
                 let geoLocation = event.geoLocation
                 if geoLocation != nil {
@@ -122,7 +86,7 @@ struct ASAEventDetailView: View {
                         .aspectRatio(1.0, contentMode: .fit)
                 }
             } // Section
-            
+
             Section {
                 let currentUser: EKParticipant? = event.currentUser
                 if currentUser != nil {
@@ -152,9 +116,73 @@ struct ASAEventDetailView: View {
 
 // MARK:  -
 
-struct ASAEKEventRecurrenceRulesForEach: View {
-    var eventAsEKEvent: EKEvent
-    var row: ASARow
+struct ASAEventDetailsNotesAndURLSection: View {
+    var event: ASAEventCompatible
+    
+    var body: some View {
+        Section {
+            if event.hasNotes {
+                Text(event.notes!)
+            }
+            
+            let eventURL = event.url
+            if eventURL != nil {
+                let absoluteURLString = eventURL!.absoluteString
+                #if os(watchOS)
+                Text(absoluteURLString)
+                #else
+                if absoluteURLString.hasPrefix(CONTACTS_PREFIX) {
+                    Button(action: {
+                        UIApplication.shared.open(eventURL!, options: [:], completionHandler: nil)
+                    }, label: {
+                        Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
+                            .underline()
+                            .foregroundColor(.accentColor)
+                    })
+                } else {
+                    Link(destination: event.url!, label: {
+                        Text(event.url!.absoluteString)
+                            .underline()
+                            .foregroundColor(.accentColor)
+                    })
+                }
+                #endif
+            }
+        } // Section
+    } // var body
+} // struct ASAEventDetailsNotesAndURLSection
+
+
+// MARK:  -
+
+struct ASAEKEventParticipantsAndStatusSection: View {
+    var event: ASAEventCompatible
+    
+    var body: some View {
+        Section {
+            if event.hasParticipants {
+                VStack(alignment: .leading) {
+                    ForEach(event.participants!, id: \.url) {
+                        attendee
+                        in
+                        ASAEKParticipantView(participant: attendee)
+                    }
+                }
+            }
+            
+            if event.status != .none && event.status != .confirmed {
+                Text(event.status.text)
+                    .foregroundColor(event.status.color)
+            }
+        } // Section
+    } // var body
+} // struct ASAEKEventParticipantsAndStatusSection
+
+
+// MARK:  -
+
+struct ASAEKEventRecurrenceFrequencyView: View {
+    var recurrenceRule: EKRecurrenceRule
     
     let GregorianCalendar: Calendar = {
         var calendar = Calendar(identifier: .gregorian)
@@ -163,35 +191,53 @@ struct ASAEKEventRecurrenceRulesForEach: View {
     }()
     
     var body: some View {
+        let frequency = recurrenceRule.frequency
+        let interval = recurrenceRule.interval
+        ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
+        switch frequency {
+        case .daily:
+            ASAEventPropertyView(key: "Event Every how many days", value: "\(interval)")
+
+        case .weekly:
+            ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
+            let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
+            let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
+            ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
+
+        case .monthly:
+            ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
+
+        case .yearly:
+            ASAEventPropertyView(key: "Event Every how many years", value: "\(interval)")
+
+        @unknown default:
+            ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
+        } // switch frequency
+    }
+}
+
+
+// MARK:  -
+
+struct ASAEKEventRecurrenceRulesForEach: View {
+    var eventAsEKEvent: EKEvent
+    var row: ASARow
+
+    let GregorianCalendar: Calendar = {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = Locale.current
+        return calendar
+    }()
+
+    var body: some View {
         let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules?.count ?? 0
         ForEach(0..<numberOfRecurrenceRules, id: \.self) {
             i
             in
             let recurrenceRule = eventAsEKEvent.recurrenceRules![i]
-            
-            let frequency = recurrenceRule.frequency
-            let interval = recurrenceRule.interval
-            ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
-            switch frequency {
-            case .daily:
-                ASAEventPropertyView(key: "Event Every how many days", value: "\(interval)")
-                
-            case .weekly:
-                ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
-                let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
-                let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
-                ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
-                
-            case .monthly:
-                ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
 
-            case .yearly:
-                ASAEventPropertyView(key: "Event Every how many years", value: "\(interval)")
+            ASAEKEventRecurrenceFrequencyView(recurrenceRule: recurrenceRule)
 
-            @unknown default:
-                ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
-            } // switch frequency
-            
             if recurrenceRule.daysOfTheWeek != nil {
                 let daysOfTheWeekStrings = recurrenceRule.daysOfTheWeek!.map {
                     $0.localizedString(calendar: GregorianCalendar)
@@ -199,7 +245,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
                 let joined = ListFormatter.localizedString(byJoining: daysOfTheWeekStrings)
                 ASAEventPropertyView(key: "Event days of the week", value: joined)
             }
-            
+
             if recurrenceRule.daysOfTheMonth != nil {
                 let daysOfTheMonthStrings = recurrenceRule.daysOfTheMonth!.map {
                     "\($0)"
@@ -207,7 +253,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
                 let joined = ListFormatter.localizedString(byJoining: daysOfTheMonthStrings)
                 ASAEventPropertyView(key: "Event days of the month", value: joined)
             }
-            
+
             if recurrenceRule.daysOfTheYear != nil {
                 let daysOfTheYearStrings = recurrenceRule.daysOfTheYear!.map {
                     "\($0.intValue)"
@@ -215,7 +261,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
                 let joined = ListFormatter.localizedString(byJoining: daysOfTheYearStrings)
                 ASAEventPropertyView(key: "Event days of the year", value: joined)
             }
-            
+
             if recurrenceRule.weeksOfTheYear != nil {
                 let weeksOfTheYearStrings = recurrenceRule.weeksOfTheYear!.map {
                     ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
@@ -231,7 +277,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
                 let joined = ListFormatter.localizedString(byJoining: monthsOfTheYearStrings)
                 ASAEventPropertyView(key: "Event months of the year", value: joined)
             }
-            
+
             if recurrenceRule.setPositions != nil {
                 let setPositionsStrings = recurrenceRule.setPositions!.map {
                     ($0.intValue > 0) ? "\($0.intValue)" : String(format: NSLocalizedString("%i (from the end)", comment: ""), $0.intValue)
@@ -239,7 +285,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
                 let joined = ListFormatter.localizedString(byJoining: setPositionsStrings)
                 ASAEventPropertyView(key: "Event set positions", value: joined)
             }
-            
+
             let recurrenceEnd = recurrenceRule.recurrenceEnd
             if recurrenceEnd != nil {
                 let occurrenceCount = recurrenceEnd!.occurrenceCount
@@ -260,7 +306,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
 struct ASAEventDetailDateTimeSection: View {
     var row: ASARow
     var event: ASAEventCompatible
-    
+
     func dateFormatter() -> DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .full
@@ -268,11 +314,11 @@ struct ASAEventDetailDateTimeSection: View {
         dateFormatter.timeZone  = self.event.timeZone!
         return dateFormatter
     } // func dateFormatter() -> DateFormatter
-    
+
     var body: some View {
         Section {
             let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
-            
+
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)
                 if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
@@ -285,11 +331,11 @@ struct ASAEventDetailDateTimeSection: View {
                     let dateFormatter = dateFormatter()
                     let startDateString = dateFormatter.string(from: event.startDate)
                     let endDateString = dateFormatter.string(from: event.endDate)
-                    
+
                     Text(startDateString + DASH + endDateString)
                 }
             }
-            
+
             if event.timeZone != nil {
                 let timeZone = event.timeZone!
                 let now = Date()
@@ -299,7 +345,7 @@ struct ASAEventDetailDateTimeSection: View {
                     Text(verbatim:  timeZone.localizedName(for: now))
                 } // HStack
             }
-            
+
             if event.isEKEvent {
                 let eventAsEKEvent = event as! EKEvent
                 ASAEKEventRecurrenceRulesForEach(eventAsEKEvent: eventAsEKEvent, row: row)
@@ -427,6 +473,10 @@ struct ASAEKParticipantView: View {
             
             Image(systemName: status.systemName)
                 .foregroundColor(status.color)
+            let name: String = participant.name ?? "???"
+            #if os(watchOS)
+            Text(name)
+            #else
             Menu {
                 
                 Text(participant.EMailAddress)
@@ -478,8 +528,9 @@ struct ASAEKParticipantView: View {
                 }
                 
             } label: {
-                Text(participant.name ?? "???")
+                Text(name)
             }
+            #endif
             if participant.participantRole == .chair {
                 Text("EKParticipantRole.chair")
             }

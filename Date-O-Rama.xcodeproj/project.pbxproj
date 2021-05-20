@@ -206,6 +206,8 @@
 		A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */; };
 		A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
 		A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */; };
+		A5AAA74B2656C23D000C18AC /* ASAEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */; };
+		A5AAA74C2656C4C4000C18AC /* EKRecurrenceFrequencyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5AF2C4B2636ED8900FD479D /* ASAEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
@@ -1130,9 +1132,11 @@
 				A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
 				A50CD6282554159500B781EC /* ColorExtensions.swift in Sources */,
+				A5AAA74C2656C4C4000C18AC /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A59D80362600C57D00FD8BBF /* ASACalendar.swift in Sources */,
 				A579019E259263F900224666 /* EKEventExtensions.swift in Sources */,
+				A5AAA74B2656C23D000C18AC /* ASAEventDetailView.swift in Sources */,
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */,
