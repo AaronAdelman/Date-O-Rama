@@ -163,7 +163,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
     }()
     
     var body: some View {
-        let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules!.count
+        let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules?.count ?? 0
         ForEach(0..<numberOfRecurrenceRules, id: \.self) {
             i
             in
@@ -307,31 +307,6 @@ struct ASAEventDetailDateTimeSection: View {
         } // Section
     } // var body
 } // struct ASAEventDetailDateTimeSection
-
-
-// MARK:  -
-
-struct ASAEditExternalEventButton: View {
-    var event: EKEvent
-    
-    @ObservedObject var eventManager = ASAEKEventManager.shared
-
-    @State private var action:  EKEventEditViewAction?
-    @State private var showingEventEditView = false
-
-    var body: some View {
-        Button(action:
-                {
-                    self.showingEventEditView = true
-                }, label:  {
-                    Text("Event edit")
-                })
-            .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                ASAEKEventEditView(action: self.$action, event: event, eventStore: self.eventManager.eventStore)
-            }
-            .foregroundColor(.accentColor)
-    }
-}
 
 
 // MARK:  -
