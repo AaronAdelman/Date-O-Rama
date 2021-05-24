@@ -132,35 +132,16 @@ struct ASAClockCellBody:  View {
         temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
         return temp
     } // func numberFormatter() -> NumberFormatter
-    
-    var characterDirection:  Locale.LanguageDirection {
-        return Locale.characterDirection(forLanguage: Locale.current.identifier)
-    } // var characterDirection
-    
+        
     var body: some View {
         VStack(alignment:  .leading) {
             HStack {
                 ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
                 
                 #if os(watchOS)
-                #else
-                if (processedRow.supportsMonths || shouldShowTime) {
-                    Spacer()
-                }
-                #endif
-                
-                #if os(watchOS)
                 if processedRow.events.count > 0 {
                     NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
-                        switch characterDirection {
-                        case .leftToRight:
-                            Image(systemName: "chevron.compact.right")
-                            
-                        case .rightToLeft:
-                            Image(systemName: "chevron.compact.left")
-                        default:
-                            Image(systemName: "chevron.compact.right")
-                        } // switch characterDirection
+                        ASACompactForwardChevronSymbol()
                     }
                 }
                 #else

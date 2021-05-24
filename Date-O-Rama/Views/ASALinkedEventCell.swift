@@ -34,10 +34,13 @@ struct ASALinkedEventCell:  View {
     
     var body: some View {
         #if os(watchOS)
-        NavigationLink(destination:                 ASAEventDetailView(event: event, row: primaryRow), label: {
-            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
-        }
-        )
+        NavigationLink(destination: ASAEventDetailView(event: event, row: primaryRow), label: {
+            HStack {
+                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+                Spacer()
+                ASACompactForwardChevronSymbol()
+            } // HStack
+        })
         #else
         HStack {
             ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
