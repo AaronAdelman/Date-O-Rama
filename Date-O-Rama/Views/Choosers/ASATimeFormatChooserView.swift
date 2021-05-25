@@ -62,7 +62,7 @@ struct ASATimeFormatCell: View {
             Spacer()
                 .frame(width: 20.0)
             Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: row.locationData))
-                .foregroundColor(Color(UIColor.secondaryLabel))
+                .foregroundColor(Color.secondary)
             Spacer()
             if timeFormat == self.selectedTimeFormat {
                 ASACheckmarkSymbol()

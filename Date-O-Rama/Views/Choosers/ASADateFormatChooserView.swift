@@ -72,7 +72,7 @@ struct ASADateFormatCell: View {
             Spacer()
                 .frame(width: 20.0)
             Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: row.locationData))
-                .foregroundColor(Color(UIColor.secondaryLabel))
+                .foregroundColor(Color.secondary)
 
             Spacer()
             if dateFormat == self.selectedDateFormat {

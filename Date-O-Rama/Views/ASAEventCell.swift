@@ -26,7 +26,7 @@ struct ASAEventCell:  View {
             if self.isForClock {
                 return Color("label")
             } else {
-                return Color(UIColor.label)
+                return Color.primary
             }
         }
     }
@@ -35,7 +35,7 @@ struct ASAEventCell:  View {
             if self.isForClock {
                 return Color("secondaryLabel")
             } else {
-                return Color(UIColor.secondaryLabel)
+                return Color.secondary
             }
         }
     }

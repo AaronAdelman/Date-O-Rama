@@ -23,8 +23,8 @@ struct ASAEventDetailView: View {
     let labelColor          = Color.white
     let secondaryLabelColor = Color(UIColor.lightGray)
     #else
-    var labelColor          = Color(UIColor.label)
-    var secondaryLabelColor = Color(UIColor.secondaryLabel)
+    var labelColor          = Color.primary
+    var secondaryLabelColor = Color.secondary
     #endif
     
     @State var showingEventEditView = false
