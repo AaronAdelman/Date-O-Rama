@@ -101,7 +101,7 @@ struct ASAEventDetailView: View {
                     let status = currentUser!.participantStatus
                     HStack {
                         Text("My status")
-                            .bold()
+                            .foregroundColor(Color.secondary)
                         Spacer()
                         Image(systemName: status.systemName)
                             .foregroundColor(status.color)
@@ -409,7 +409,7 @@ struct ASAEventPropertyView: View {
     var body: some View {
         HStack {
             Text(NSLocalizedString(key, comment: ""))
-                .bold()
+                .foregroundColor(Color.secondary)
             Spacer()
             Text(value)
         } // HStack
