@@ -322,7 +322,9 @@ struct ASAEventDetailDateTimeSection: View {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .full
         dateFormatter.timeStyle = .long
-        dateFormatter.timeZone  = self.event.timeZone!
+        if self.event.timeZone != nil {
+            dateFormatter.timeZone  = self.event.timeZone!
+        }
         return dateFormatter
     } // func dateFormatter() -> DateFormatter
 
