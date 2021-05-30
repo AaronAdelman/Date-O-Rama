@@ -120,35 +120,29 @@ struct ASAClockCellBody:  View {
     
     var body: some View {
         HStack {
-            VStack(alignment:  .leading) {
-                HStack {
-                    ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
-                    
-                    #if os(watchOS)
-                    if processedRow.events.count > 0 {
-                        NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
-                            ASACompactForwardChevronSymbol()
-                        }
-                    }
-                    #else
-                    if processedRow.supportsTimes {
-                        if processedRow.supportsMonths && shouldShowMiniCalendar {
-                            ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
-                        }
-                        
-                        if shouldShowMiniClock() {
-                            Spacer()
-                            
-                            ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
-                        }
-                    }
-                    
-                    Spacer().frame(width:  16.0)
-                    #endif
-                } // HStack
+            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
+            
+            #if os(watchOS)
+            if processedRow.events.count > 0 {
+                NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
+                    ASACompactForwardChevronSymbol()
+                }
+            }
+            #else
+            if processedRow.supportsTimes {
+                if processedRow.supportsMonths && shouldShowMiniCalendar {
+                    ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
+                }
                 
-                //            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
-            } // VStack
+                if shouldShowMiniClock() {
+                    Spacer()
+                    
+                    ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
+                }
+            }
+            
+            Spacer().frame(width:  16.0)
+            #endif
             
             #if os(watchOS)
             #else
