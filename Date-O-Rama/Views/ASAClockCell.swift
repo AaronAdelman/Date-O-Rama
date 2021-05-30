@@ -32,21 +32,14 @@ struct ASAClockCell: View {
         #else
         let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
         let MINIMUM_HEIGHT: CGFloat = 40.0
-        let SPACER_WIDTH: CGFloat = 16.0
         
         if forComplications {
             ZStack {
-                HStack {
-                    ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
-                        .frame(minHeight:  MINIMUM_HEIGHT)
-                        .padding(EDGE_INSETS_1)
-                    
-                    ASAForwardChevronSymbol()
-                        .foregroundColor(.white)
-                    Spacer()
-                        .frame(width:  SPACER_WIDTH)
-                } // HStack
-                .colorScheme(.dark)
+                //                HStack {
+                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
+                    .frame(minHeight:  MINIMUM_HEIGHT)
+                    .padding(EDGE_INSETS_1)
+                    .colorScheme(.dark)
                 NavigationLink(
                     destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
                         .onReceive(processedRow.row.objectWillChange) { _ in
@@ -61,18 +54,11 @@ struct ASAClockCell: View {
             } // ZStack
         } else {
             ZStack {
-                HStack {
-                    ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
-                        .frame(minHeight:  MINIMUM_HEIGHT)
-                        .padding(EDGE_INSETS_1)
-                    
-                    ASAForwardChevronSymbol()
-                        .foregroundColor(.white)
-                    Spacer()
-                        .frame(width:  SPACER_WIDTH)
-                } // HStack
-                .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
-                .background(ASASkyGradient(processedRow: processedRow))
+                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
+                    .frame(minHeight:  MINIMUM_HEIGHT)
+                    .padding(EDGE_INSETS_1)
+                    .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
+                    .background(ASASkyGradient(processedRow: processedRow))
                 NavigationLink(
                     destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
                         .onReceive(processedRow.row.objectWillChange) { _ in
@@ -86,7 +72,6 @@ struct ASAClockCell: View {
                 .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
             } // ZStack
             .listRowInsets(.zero)
-            
         }
         #endif
     } // var body
@@ -110,7 +95,7 @@ struct ASAClockCellBody:  View {
     
     var forComplications:  Bool
     
-//    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
+    //    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
     
     #if os(watchOS)
     let compact = true
@@ -132,37 +117,46 @@ struct ASAClockCellBody:  View {
         temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
         return temp
     } // func numberFormatter() -> NumberFormatter
-        
+    
     var body: some View {
-        VStack(alignment:  .leading) {
-            HStack {
-                ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
-                
-                #if os(watchOS)
-                if processedRow.events.count > 0 {
-                    NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
-                        ASACompactForwardChevronSymbol()
+        HStack {
+            VStack(alignment:  .leading) {
+                HStack {
+                    ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
+                    
+                    #if os(watchOS)
+                    if processedRow.events.count > 0 {
+                        NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
+                            ASACompactForwardChevronSymbol()
+                        }
                     }
-                }
-                #else
-                if processedRow.supportsTimes {
-                    if processedRow.supportsMonths && shouldShowMiniCalendar {
-                        ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
+                    #else
+                    if processedRow.supportsTimes {
+                        if processedRow.supportsMonths && shouldShowMiniCalendar {
+                            ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
+                        }
+                        
+                        if shouldShowMiniClock() {
+                            Spacer()
+                            
+                            ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
+                        }
                     }
                     
-                    if shouldShowMiniClock() {
-                        Spacer()
-                        
-                        ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
-                    }
-                }
+                    Spacer().frame(width:  16.0)
+                    #endif
+                } // HStack
                 
-                Spacer().frame(width:  16.0)
-                #endif
-            } // HStack
+                //            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
+            } // VStack
             
-//            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
-        } // VStack
+            #if os(watchOS)
+            #else
+            Spacer()
+            ASAForwardChevronSymbol()
+                .foregroundColor(.white)
+            #endif
+        } // HStack
     } // var body
 } // struct ASAClockCellBodyPublished<ASAClockCellEventVisibility>.Pub
 
