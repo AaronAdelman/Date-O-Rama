@@ -131,12 +131,12 @@ struct ASAClockCellBody:  View {
             #else
             if processedRow.supportsTimes {
                 if processedRow.supportsMonths && shouldShowMiniCalendar {
+                    Spacer()
                     ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
                 }
                 
                 if shouldShowMiniClock() {
                     Spacer()
-                    
                     ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
                 }
             }
