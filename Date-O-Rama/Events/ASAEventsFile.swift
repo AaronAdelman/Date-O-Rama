@@ -148,6 +148,7 @@ extension ASAInternalEventSpecification {
                             // Event repeats every week
                             result.append(EKRecurrenceRule(recurrenceWith: .weekly, interval: 1, end: nil))
                         }
+
                     } else {
                         // Event repeats every month on a specific day
                         result.append(EKRecurrenceRule(recurrenceWith: .monthly, interval: 1, end: nil))

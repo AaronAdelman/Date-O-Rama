@@ -204,26 +204,42 @@ struct ASAEKEventRecurrenceFrequencyView: View {
     var body: some View {
         let frequency = recurrenceRule.frequency
         let interval = recurrenceRule.interval
-        ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
+//        ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
         switch frequency {
         case .daily:
-            ASAEventPropertyView(key: "Event Every how many days", value: "\(interval)")
+            ASAEventFrequencyView(key: "every n days", interval: interval)
 
         case .weekly:
-            ASAEventPropertyView(key: "Event Every how many weeks", value: "\(interval)")
+            ASAEventFrequencyView(key: "every n weeks", interval: interval)
             let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
             let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
             ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
 
         case .monthly:
-            ASAEventPropertyView(key: "Event Every how many months", value: "\(interval)")
+            ASAEventFrequencyView(key: "every n months", interval: interval)
 
         case .yearly:
-            ASAEventPropertyView(key: "Event Every how many years", value: "\(interval)")
+            ASAEventFrequencyView(key: "every n years", interval: interval)
 
         @unknown default:
+            ASAEventPropertyView(key: "Event Frequency", value: frequency.text)
             ASAEventPropertyView(key: "Event Every how many units", value: "\(interval)")
         } // switch frequency
+    }
+}
+
+
+// MARK:  -
+
+struct ASAEventFrequencyView: View {
+    var key: String
+    var interval: Int
+    
+    var body: some View {
+        let formatString : String = NSLocalizedString(key, comment: "")
+        let resultString : String = String.localizedStringWithFormat(formatString, interval)
+        ASAEventPropertyView(key: "Event Frequency", value: resultString)
+
     }
 }
 

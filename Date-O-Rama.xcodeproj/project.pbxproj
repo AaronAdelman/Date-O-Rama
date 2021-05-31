@@ -238,6 +238,8 @@
 		A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
+		A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7762665594600F47416 /* Localizable.stringsdict */; };
+		A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7762665594600F47416 /* Localizable.stringsdict */; };
 		A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
@@ -453,6 +455,8 @@
 		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
 		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
 		A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAISO8601Calendar.swift; sourceTree = "<group>"; };
+		A5BDE7752665594600F47416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		A5BDE7772665594D00F47416 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = he; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsTab.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
@@ -807,6 +811,7 @@
 				A5C77C0A2433361900CFEE47 /* Info.plist */,
 				A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */,
 				A525622C24556169009C2920 /* Localizable.strings */,
+				A5BDE7762665594600F47416 /* Localizable.stringsdict */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
 				A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */,
 				A5B6D01A25AEEFCA005ECE8D /* View modifiers */,
@@ -1047,6 +1052,7 @@
 				A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */,
 				A576994D259EDCC000757B0F /* Islamic holidays.json in Resources */,
 				A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */,
+				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac events.json in Resources */,
@@ -1066,6 +1072,7 @@
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A5D3016024EBDFF8003E79E9 /* Islamic holidays (Umm Al-Qura).json in Resources */,
 				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
+				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islamic holidays.json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */,
@@ -1443,6 +1450,15 @@
 				A566F4452483D6E6000A05B5 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		A5BDE7762665594600F47416 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5BDE7752665594600F47416 /* en */,
+				A5BDE7772665594D00F47416 /* he */,
+			);
+			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 		A5C77C072433361900CFEE47 /* LaunchScreen.storyboard */ = {
