@@ -29,6 +29,9 @@ protocol ASAEventCompatible {
     var hasAlarms: Bool { get }// A Boolean value that indicates whether the calendar item has alarms.
     var alarms: [EKAlarm]? { get } // The alarms associated with the calendar item, as an array of EKAlarm objects.
     
+    var hasRecurrenceRules: Bool { get } // A Boolean value that indicates whether the calendar item has recurrence rules.
+    var recurrenceRules: [EKRecurrenceRule]? { get } // The recurrence rules for the calendar item.
+    
     var status: EKEventStatus { get } // The status of the event.
     var timeZone: TimeZone? { get }
     var url: URL? { get } // The URL for the calendar item.

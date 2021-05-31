@@ -230,8 +230,8 @@ struct ASAEKEventRecurrenceFrequencyView: View {
 
 // MARK:  -
 
-struct ASAEKEventRecurrenceRulesForEach: View {
-    var eventAsEKEvent: EKEvent
+struct ASAEventRecurrenceRulesForEach: View {
+    var event: ASAEventCompatible
     var row: ASARow
 
     let GregorianCalendar: Calendar = {
@@ -241,11 +241,11 @@ struct ASAEKEventRecurrenceRulesForEach: View {
     }()
 
     var body: some View {
-        let numberOfRecurrenceRules = eventAsEKEvent.recurrenceRules?.count ?? 0
+        let numberOfRecurrenceRules = event.recurrenceRules?.count ?? 0
         ForEach(0..<numberOfRecurrenceRules, id: \.self) {
             i
             in
-            let recurrenceRule = eventAsEKEvent.recurrenceRules![i]
+            let recurrenceRule = event.recurrenceRules![i]
 
             ASAEKEventRecurrenceFrequencyView(recurrenceRule: recurrenceRule)
 
@@ -309,7 +309,7 @@ struct ASAEKEventRecurrenceRulesForEach: View {
             }
         } // ForEach(0..<numberOfRecurrenceRules, id: \.self)
     } // var body
-} // struct ASAEKEventRecurrenceRulesForEach
+} // struct ASAEventRecurrenceRulesForEach
 
 
 // MARK:  -
@@ -359,10 +359,7 @@ struct ASAEventDetailDateTimeSection: View {
                 } // HStack
             }
 
-            if event.isEKEvent {
-                let eventAsEKEvent = event as! EKEvent
-                ASAEKEventRecurrenceRulesForEach(eventAsEKEvent: eventAsEKEvent, row: row)
-            }
+            ASAEventRecurrenceRulesForEach(event: event, row: row)
         } // Section
     } // var body
 } // struct ASAEventDetailDateTimeSection

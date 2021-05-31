@@ -14,6 +14,7 @@
 import Foundation
 import UIKit
 import CoreLocation
+import EventKit
 
 
 // MARK: - ASAEventsFile
@@ -70,13 +71,6 @@ class ASAInternalEventSpecification: Codable {
         
     var url: URL? // The URL for the calendar item.
     var notes: String? // The notes associated with the calendar item.
-
-//    var hasNotes: Bool // A Boolean value that indicates whether the calendar item has notes.
-//        {
-//        get {
-//            return self.notes != nil
-//        } // get
-//    } // var hasNotes
 } // extension ASAInternalEventSpecification
 
 extension ASAInternalEventSpecification {
@@ -101,9 +95,7 @@ extension ASAInternalEventSpecification {
             return true
         }
     } // func match(ISOCountryCode:  String?) -> Bool
-} // extension ASAInternalEventSpecification
 
-extension ASAInternalEventSpecification {
     func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
         if self.titles != nil {
             let titles = self.titles!
@@ -135,6 +127,44 @@ extension ASAInternalEventSpecification {
 
         return nil
     } // eventsFileDefaultLocaleIdentifier:  String) -> String?
+    
+    var recurrenceRules: [EKRecurrenceRule]? {
+        var result: [EKRecurrenceRule] = []
+                
+        if startDateSpecification.year == nil {
+            if startDateSpecification.yearDivisor != nil {
+                // Event repeats once every specific number of years
+                result.append(EKRecurrenceRule(recurrenceWith: .yearly, interval: startDateSpecification.yearDivisor!, end: nil))
+            } else {
+                // Event repeats every year
+                if startDateSpecification.month == nil {
+                    // Event repeats at least once every month
+                    
+                    if startDateSpecification.day == nil {
+                        if startDateSpecification.weekdays == nil {
+                            // Event repeats every day
+                            result.append(EKRecurrenceRule(recurrenceWith: .daily, interval: 1, end: nil))
+                        } else {
+                            // Event repeats every week
+                            result.append(EKRecurrenceRule(recurrenceWith: .weekly, interval: 1, end: nil))
+                        }
+                    } else {
+                        // Event repeats every month on a specific day
+                        result.append(EKRecurrenceRule(recurrenceWith: .monthly, interval: 1, end: nil))
+                    }
+                } else {
+                    // Event repeats every year
+                    result.append(EKRecurrenceRule(recurrenceWith: .yearly, interval: 1, end: nil))
+                }
+            }
+        }
+        
+        if result.count == 0 {
+            return nil
+        }
+        
+        return result
+    } // var recurrenceRules
 } // extension ASAInternalEventSpecification
 
 

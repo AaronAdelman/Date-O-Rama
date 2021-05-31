@@ -48,6 +48,16 @@ struct ASAEvent:  ASAEventCompatible {
     var availability: EKEventAvailability = .notSupported
     
     var isReadOnly: Bool = true
+    
+    var recurrenceRules: [EKRecurrenceRule]?
+    
+    var hasRecurrenceRules: Bool {
+        if self.recurrenceRules == nil {
+            return false
+        }
+        
+        return self.recurrenceRules!.count > 0
+    }
 } // struct ASAEvent
 
 
