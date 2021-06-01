@@ -62,4 +62,12 @@ extension EKEvent:  ASAEventCompatible {
         
         return false
     } // var isReadOnly
+    
+    var includeISOCountryCodes: Array<String>? {
+        return nil
+    } // var includeISOCountryCodes
+    
+    var excludeISOCountryCodes: Array<String>? {
+        return nil
+    } // var excludeISOCountryCodes
 } // extension EKEvent:  ASAEventCompatible

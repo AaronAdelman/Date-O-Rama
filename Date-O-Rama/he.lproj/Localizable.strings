@@ -253,3 +253,6 @@
 "EKEventAvailability.@unknown default" = "Unknown default";
 "Event availability"                   = "תור";
 "Event edit" = "עריכה";
+"Event calendar" = "לוח";
+"Event countries and regions"          = "מדינות ואזורים";
+"Event excluded countries and regions" = "מדינות ואזורים שאינם כלולים";

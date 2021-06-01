@@ -220,4 +220,13 @@ extension Array where Element == String {
             }
         }
     } // mutating func appendIfDifferentAndNotNil(string: String?)
+    
+    func asFormattedListOfISOCountryCodes() -> String {
+        let formattedStrings = self.map {
+            Locale.current.localizedString(forRegionCode: $0)
+        }
+        let formatter = ListFormatter()
+        let result = formatter.string(from: formattedStrings as [Any])
+        return result ?? "???"
+    } // func asFormattedListOfISOCountryCodes() -> String
 } // extension Array where Element == String

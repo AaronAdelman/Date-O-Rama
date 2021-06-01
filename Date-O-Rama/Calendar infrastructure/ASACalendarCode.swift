@@ -45,6 +45,9 @@ enum ASACalendarCode:  String, Codable {
     case HebrewMA              = "HebrewSolarMA"
 } // enum ASACalendarCode:  String
 
+
+// MARK:  -
+
 enum ASACalendarType {
     case solar
     case lunisolar
@@ -60,6 +63,9 @@ extension ASACalendarCode {
         return NSLocalizedString(self.rawValue, comment: "")
     } // var localizedName
 } // extension ASACalendarCode
+
+
+// MARK:  -
 
 extension ASACalendarCode {
     var isAppleCalendar:  Bool {
@@ -124,6 +130,9 @@ extension ASACalendarCode {
         } // get
     } // var isHebrewCalendar
 } // extension ASACalendarCode
+
+
+// MARK:  -
 
 extension ASACalendarCode {
     var equivalentCalendarIdentifier:  Calendar.Identifier {

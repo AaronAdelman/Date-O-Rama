@@ -253,4 +253,6 @@
 "EKEventAvailability.@unknown default" = "Unknown default";
 "Event availability"                   = "Availability";
 "Event edit" = "Edit";
-
+"Event calendar" = "Calendar";
+"Event countries and regions"          = "Countries and regions";
+"Event excluded countries and regions" = "Excluded countries and regions";

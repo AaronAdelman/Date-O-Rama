@@ -346,6 +346,8 @@ struct ASAEventDetailDateTimeSection: View {
 
     var body: some View {
         Section {
+            ASAEventPropertyView(key: "Event calendar", value: event.calendarCode.localizedName)
+            
             let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
 
             if event.startDate == event.endDate || startDateString == endDateString {
@@ -376,6 +378,14 @@ struct ASAEventDetailDateTimeSection: View {
             }
 
             ASAEventRecurrenceRulesForEach(event: event, row: row)
+            
+            if event.includeISOCountryCodes != nil {
+                ASAEventPropertyView(key: "Event countries and regions", value: event.includeISOCountryCodes!.asFormattedListOfISOCountryCodes())
+            }
+            
+            if event.excludeISOCountryCodes != nil {
+                ASAEventPropertyView(key: "Event excluded countries and regions", value: event.excludeISOCountryCodes!.asFormattedListOfISOCountryCodes())
+            }
         } // Section
     } // var body
 } // struct ASAEventDetailDateTimeSection

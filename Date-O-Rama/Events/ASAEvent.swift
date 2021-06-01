@@ -58,6 +58,9 @@ struct ASAEvent:  ASAEventCompatible {
         
         return self.recurrenceRules!.count > 0
     }
+    
+    var includeISOCountryCodes: Array<String>?
+    var excludeISOCountryCodes: Array<String>?
 } // struct ASAEvent
 
 
