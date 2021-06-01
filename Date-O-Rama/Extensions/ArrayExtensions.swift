@@ -222,6 +222,11 @@ extension Array where Element == String {
     } // mutating func appendIfDifferentAndNotNil(string: String?)
     
     func asFormattedListOfISOCountryCodes() -> String {
+        // Avoidance of politics
+        if self.count == 2 && self.contains("IL") && self.contains("PS") {
+            return NSLocalizedString("Land of Israel", comment: "")
+        }
+        
         let formattedStrings = self.map {
             Locale.current.localizedString(forRegionCode: $0)
         }
