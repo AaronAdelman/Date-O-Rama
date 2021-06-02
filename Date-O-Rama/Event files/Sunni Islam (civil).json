@@ -1,0 +1,24 @@
+{
+    "titles": {"en":  "Sunni Islam", "he":  "אסלאם סוני", "ar": "أهل السنة والجماعة"},
+    "supportedLocales":  ["en", "ar", "he"],
+    "defaultLocale":  "en",
+    "calendarCode":  "IslamicCivilSolar",
+    "calendarColorRed":  0.15,
+    "calendarColorGreen":  0.85,
+    "calendarColorBlue":  0.15,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי (סוני)", "ar":  "مَولِد النَّبِي‎ (سني)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  12
+            }, "url": "https://en.wikipedia.org/wiki/Mawlid"
+        },
+        {
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  29
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
+        }
+    ]
+}
