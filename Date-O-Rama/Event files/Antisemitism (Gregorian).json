@@ -10,13 +10,13 @@
     "eventSpecifications":  [
         {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "startDateSpecification": {
             "type": "allDay", "month": 5, "day": 15},
-            "locations": {"en": "Judea, Samaria, and the Gaza Strip", "he": "יהודה, שומרון, ופס עזה", "ar": "يهودا والسامرة وقطاع غزة"}
+            "locations": {"en": "The Palestinian Authority and the Gaza Strip", "he": "הרשות הפלסטינית ורצועת עזה", "ar": "السلطة الفلسطينية وقطاع غزة"}
         },
         {"titles": {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, "startDateSpecification": {
             "type": "allDay", "month": 6, "day": 5},
-            "locations": {"en": "Judea, Samaria, and the Gaza Strip", "he": "יהודה, שומרון, ופס עזה", "ar": "يهودا والسامرة وقطاع غزة"}},
+            "locations": {"en": "The Palestinian Authority and the Gaza Strip", "he": "הרשות הפלסטינית ורצועת עזה", "ar": "السلطة الفلسطينية وقطاع غزة"}},
         {"titles": {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎"}, "startDateSpecification": {
             "type": "allDay", "month": 3, "day": 30},
-            "locations": {"en": "Israel, Judea, Samaria, and the Gaza Strip", "he": "ישראל, יהודה, שומרון, ופס עזה", "ar": "إسرائيل ويهودا والسامرة وقطاع غزة"}}
+            "locations": {"en": "Israel, the Palestinian Authority, and the Gaza Strip", "he": "ישראל, הרשות הפלסטינית ורצועת עזה", "ar": "إسرائيل والسلطة الفلسطينية وقطاع غزة"}}
     ]
 }
