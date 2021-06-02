@@ -1,18 +1,13 @@
 {
-    "titles": {"en":  "Antisemitism", "he":  "אנטישמיות", "ar": "معاداة السامية"},
+    "titles": {"en":  "Antisemitism (Islamic)", "he":  "אנטישמיות (מוסלמי)", "ar": "معاداة السامية"},
     "supportedLocales":  ["en", "he", "ar"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
-    "otherCalendarCodes": ["IslamicSolar"],
+    "calendarCode":  "IslamicCivilSolar",
     "calendarColorRed":  0.5,
     "calendarColorGreen":  0.5,
     "calendarColorBlue":  0.5,
     "calendarColorAlpha":  1.0,
     "eventSpecifications":  [
-        {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "startDateSpecification": {
-            "type": "allDay", "month": 5, "day": 15}},
-        {"titles": {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, "startDateSpecification": {
-            "type": "allDay", "month": 6, "day": 5}},
         {"titles": {"he": "יום ירושלים (איראן)", "en": "Quds Day", "ar": "يوم القدس (إيران)"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
             "type": "allDay", "month": 9, "day": -1, "weekdays": [6]}},
         {"titles": {"he": "יום ירושלים (איראן)", "en": "Quds Day", "ar": "يوم القدس (إيران)"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
@@ -26,8 +21,6 @@
         {"titles": {"he": "יום ירושלים (איראן)", "en": "Quds Day", "ar": "يوم القدس (إيران)"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
             "type": "allDay", "month": 9, "day": -6, "weekdays": [6]}},
         {"titles": {"he": "יום ירושלים (איראן)", "en": "Quds Day", "ar": "يوم القدس (إيران)"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}},
-        {"titles": {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎"}, "startDateSpecification": {
-            "type": "allDay", "month": 3, "day": 30}}
+            "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}}
     ]
 }
