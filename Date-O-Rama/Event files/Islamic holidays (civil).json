@@ -151,18 +151,6 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  24
             }
-        },
-        {
-            "titles":  {"en":  "International Shia Day"}, "calendarCode":  "Gregorian",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  6, "day":  12
-            }
-        },
-        {
-            "titles":  {"en":  "Muslim Women’s Day"}, "calendarCode":  "Gregorian",
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  3, "day":  27
-            }
         }
     ]
 }
