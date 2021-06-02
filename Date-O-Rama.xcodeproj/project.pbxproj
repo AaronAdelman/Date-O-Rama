@@ -38,7 +38,7 @@
 		A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A40325A72889007CB54B /* ASAWatchEventsList.swift */; };
 		A52486D4260B260700A55690 /* ASANewExternalEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52486D3260B260700A55690 /* ASANewExternalEventButton.swift */; };
 		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
-		A533798124B2333500340C0B /* Solar events.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Solar events.json */; };
+		A533798124B2333500340C0B /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Sun.json */; };
 		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -108,30 +108,30 @@
 		A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A566F48B2483D7CF000A05B5 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
-		A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
+		A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
 		A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */; };
 		A56BDB4A2577B7A20037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
 		A56BDB502577B7AC0037F833 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BDB492577B7A20037F833 /* IntExtensions.swift */; };
-		A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
+		A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */; };
 		A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA3D6B25D1685C0043FF9F /* ArrayExtensions.swift */; };
 		A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */; };
-		A56F0DA125F1705200301969 /* Jewish zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac events.json */; };
-		A56F0DA225F1705200301969 /* Jewish zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac events.json */; };
+		A56F0DA125F1705200301969 /* Jewish zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac.json */; };
+		A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A576994A259EDCC000757B0F /* Islam (general, civil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015924EBDFF7003E79E9 /* Islam (general, civil).json */; };
-		A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Jewish minor fasts.json */; };
-		A576994C259EDCC000757B0F /* All-day Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* All-day Jewish events.json */; };
+		A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */ = {isa = PBXBuildFile; fileRef = A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */; };
+		A576994C259EDCC000757B0F /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
 		A576994D259EDCC000757B0F /* Islam (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015A24EBDFF8003E79E9 /* Islam (general).json */; };
-		A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitic events.json */; };
+		A576994E259EDCC000757B0F /* Antisemitism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitism.json */; };
 		A576994F259EDCC000757B0F /* Islam (general, Umm Al-Qura).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015C24EBDFF8003E79E9 /* Islam (general, Umm Al-Qura).json */; };
-		A5769950259EDCC000757B0F /* Chinese zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac events.json */; };
-		A5769951259EDCC000757B0F /* Israeli events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israeli events.json */; };
+		A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A568DBBA25232E3200500419 /* Chinese zodiac.json */; };
+		A5769951259EDCC000757B0F /* Israel.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israel.json */; };
 		A5769952259EDCC000757B0F /* Islam (general, tabular).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015B24EBDFF8003E79E9 /* Islam (general, tabular).json */; };
-		A5769953259EDCC000757B0F /* Solar events.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Solar events.json */; };
-		A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch events.json */; };
-		A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
+		A5769953259EDCC000757B0F /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Sun.json */; };
+		A5769954259EDCC000757B0F /* Lubavitch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch.json */; };
+		A5769955259EDCC000757B0F /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A579019E259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocation.swift */; };
@@ -145,9 +145,9 @@
 		A57CA32F24864C3A00378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A5832B88254ED124008E8A97 /* ASAMiniCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */; };
-		A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Daily Jewish events.json */; };
-		A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */; };
-		A58BA9CD25EFCDA60082DA64 /* Western zodiac events.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */; };
+		A584C90024B646210014CE2E /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
+		A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
+		A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
 		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */; };
@@ -282,7 +282,7 @@
 		A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */; };
 		A5CA532524979D1D008EEE2F /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
 		A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
-		A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitic events.json */; };
+		A5CBB51024FD54310084DF72 /* Antisemitism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitism.json */; };
 		A5D3015D24EBDFF8003E79E9 /* Islam (general, civil).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015924EBDFF7003E79E9 /* Islam (general, civil).json */; };
 		A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015A24EBDFF8003E79E9 /* Islam (general).json */; };
 		A5D3015F24EBDFF8003E79E9 /* Islam (general, tabular).json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3015B24EBDFF8003E79E9 /* Islam (general, tabular).json */; };
@@ -297,9 +297,9 @@
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5E2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5F2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
-		A5E3606424C71FBC0000A268 /* All-day Jewish events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* All-day Jewish events.json */; };
-		A5E3606624C756FF0000A268 /* Israeli events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israeli events.json */; };
-		A5E3606824C7571A0000A268 /* Lubavitch events.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch events.json */; };
+		A5E3606424C71FBC0000A268 /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
+		A5E3606624C756FF0000A268 /* Israel.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israel.json */; };
+		A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch.json */; };
 		A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */; };
 		A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */; };
 		A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */; };
@@ -398,7 +398,7 @@
 		A525622B24556169009C2920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A525622E245561E3009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A533798024B2333400340C0B /* Solar events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Solar events.json"; sourceTree = "<group>"; };
+		A533798024B2333400340C0B /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
@@ -424,13 +424,13 @@
 		A566F4602483D6EF000A05B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A566F4622483D6EF000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F4632483D6EF000A05B5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		A568DBBA25232E3200500419 /* Chinese zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac events.json"; sourceTree = "<group>"; };
+		A568DBBA25232E3200500419 /* Chinese zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Chinese zodiac.json"; sourceTree = "<group>"; };
 		A56BDB32257660270037F833 /* CLAuthorizationStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLAuthorizationStatusExtensions.swift; sourceTree = "<group>"; };
 		A56BDB492577B7A20037F833 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
-		A56CE62924C43BED00865E95 /* Jewish minor fasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish minor fasts.json"; sourceTree = "<group>"; };
+		A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (minor fasts).json"; sourceTree = "<group>"; };
 		A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateSpecification.swift; sourceTree = "<group>"; };
 		A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
-		A56F0DA025F1705200301969 /* Jewish zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish zodiac events.json"; sourceTree = "<group>"; };
+		A56F0DA025F1705200301969 /* Jewish zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish zodiac.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
 		A579019C259263F900224666 /* EKEventExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventExtensions.swift; sourceTree = "<group>"; };
@@ -444,8 +444,8 @@
 		A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarComponent.swift; sourceTree = "<group>"; };
 		A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniCalendarView.swift; sourceTree = "<group>"; };
 		A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsFile.swift; sourceTree = "<group>"; };
-		A584C8FF24B646210014CE2E /* Daily Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Daily Jewish events.json"; sourceTree = "<group>"; };
-		A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac events.json"; sourceTree = "<group>"; };
+		A584C8FF24B646210014CE2E /* Judaism (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (times).json"; sourceTree = "<group>"; };
+		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksViewGroupingOption.swift; sourceTree = "<group>"; };
 		A5932276257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainRowsByTimeZoneView.swift; sourceTree = "<group>"; };
@@ -521,7 +521,7 @@
 		A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocaleData.swift; sourceTree = "<group>"; };
 		A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarChooserView.swift; sourceTree = "<group>"; };
 		A5CB86402448E03F00DB27A9 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		A5CBB50F24FD54310084DF72 /* Antisemitic events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Antisemitic events.json"; sourceTree = "<group>"; };
+		A5CBB50F24FD54310084DF72 /* Antisemitism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Antisemitism.json; sourceTree = "<group>"; };
 		A5D3015924EBDFF7003E79E9 /* Islam (general, civil).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islam (general, civil).json"; sourceTree = "<group>"; };
 		A5D3015A24EBDFF8003E79E9 /* Islam (general).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islam (general).json"; sourceTree = "<group>"; };
 		A5D3015B24EBDFF8003E79E9 /* Islam (general, tabular).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Islam (general, tabular).json"; sourceTree = "<group>"; };
@@ -532,9 +532,9 @@
 		A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
 		A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventAvailabilityExtensions.swift; sourceTree = "<group>"; };
 		A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellEventVisibility.swift; sourceTree = "<group>"; };
-		A5E3606324C71FBC0000A268 /* All-day Jewish events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "All-day Jewish events.json"; sourceTree = "<group>"; };
-		A5E3606524C756FF0000A268 /* Israeli events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Israeli events.json"; sourceTree = "<group>"; };
-		A5E3606724C7571A0000A268 /* Lubavitch events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Lubavitch events.json"; sourceTree = "<group>"; };
+		A5E3606324C71FBC0000A268 /* Judaism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Judaism.json; sourceTree = "<group>"; };
+		A5E3606524C756FF0000A268 /* Israel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Israel.json; sourceTree = "<group>"; };
+		A5E3606724C7571A0000A268 /* Lubavitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Lubavitch.json; sourceTree = "<group>"; };
 		A5E3B040248FDCEA00283513 /* ASAComplicationClocksTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAComplicationClocksTab.swift; sourceTree = "<group>"; };
 		A5E4301D263FF1C3007CB470 /* EKParticipantExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantExtensions.swift; sourceTree = "<group>"; };
 		A5E4719D2463F938002BB471 /* ASATimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormat.swift; sourceTree = "<group>"; };
@@ -612,31 +612,31 @@
 			isa = PBXGroup;
 			children = (
 				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
-				A5E3606324C71FBC0000A268 /* All-day Jewish events.json */,
-				A5CBB50F24FD54310084DF72 /* Antisemitic events.json */,
-				A568DBBA25232E3200500419 /* Chinese zodiac events.json */,
-				A584C8FF24B646210014CE2E /* Daily Jewish events.json */,
+				A5CBB50F24FD54310084DF72 /* Antisemitism.json */,
+				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
 				A5D3015924EBDFF7003E79E9 /* Islam (general, civil).json */,
 				A5D3015B24EBDFF8003E79E9 /* Islam (general, tabular).json */,
 				A5D3015C24EBDFF8003E79E9 /* Islam (general, Umm Al-Qura).json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5BDE77B26677E7900F47416 /* Islamic PR.json */,
-				A5E3606524C756FF0000A268 /* Israeli events.json */,
-				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
-				A56F0DA025F1705200301969 /* Jewish zodiac events.json */,
-				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
+				A5E3606524C756FF0000A268 /* Israel.json */,
+				A56F0DA025F1705200301969 /* Jewish zodiac.json */,
+				A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */,
+				A584C8FF24B646210014CE2E /* Judaism (times).json */,
+				A5E3606324C71FBC0000A268 /* Judaism.json */,
+				A5E3606724C7571A0000A268 /* Lubavitch.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5BDE78E2667B17000F47416 /* Shia (civil).json */,
 				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
 				A5BDE78F2667B17000F47416 /* Shia (tabular).json */,
 				A5BDE78D2667B17000F47416 /* Shia (Umm Al-Qura).json */,
 				A5BDE78726679A6200F47416 /* Shia.json */,
-				A533798024B2333400340C0B /* Solar events.json */,
+				A533798024B2333400340C0B /* Sun.json */,
 				A5BDE7962667B1ED00F47416 /* Sunni Islam (civil).json */,
 				A5BDE7982667B1ED00F47416 /* Sunni Islam (tabular).json */,
 				A5BDE7972667B1ED00F47416 /* Sunni Islam (Umm Al-Qura).json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
-				A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */,
+				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1094,32 +1094,32 @@
 				A576994A259EDCC000757B0F /* Islam (general, civil).json in Resources */,
 				A5BDE7832667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
-				A5769950259EDCC000757B0F /* Chinese zodiac events.json in Resources */,
+				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
 				A5BDE79E2667B1ED00F47416 /* Sunni Islam (tabular).json in Resources */,
 				A576994F259EDCC000757B0F /* Islam (general, Umm Al-Qura).json in Resources */,
-				A5769953259EDCC000757B0F /* Solar events.json in Resources */,
+				A5769953259EDCC000757B0F /* Sun.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
-				A576994C259EDCC000757B0F /* All-day Jewish events.json in Resources */,
+				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
 				A5BDE7912667B17000F47416 /* Shia (Umm Al-Qura).json in Resources */,
 				A5769952259EDCC000757B0F /* Islam (general, tabular).json in Resources */,
-				A58BA9CD25EFCDA60082DA64 /* Western zodiac events.json in Resources */,
-				A5769951259EDCC000757B0F /* Israeli events.json in Resources */,
+				A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */,
+				A5769951259EDCC000757B0F /* Israel.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
-				A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */,
+				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5BDE79A2667B1ED00F47416 /* Sunni Islam (civil).json in Resources */,
 				A5BDE79C2667B1ED00F47416 /* Sunni Islam (Umm Al-Qura).json in Resources */,
 				A5BDE78926679A6200F47416 /* Shia.json in Resources */,
 				A576994D259EDCC000757B0F /* Islam (general).json in Resources */,
-				A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */,
+				A576994E259EDCC000757B0F /* Antisemitism.json in Resources */,
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
-				A5769955259EDCC000757B0F /* Daily Jewish events.json in Resources */,
-				A5769954259EDCC000757B0F /* Lubavitch events.json in Resources */,
+				A5769955259EDCC000757B0F /* Judaism (times).json in Resources */,
+				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5BDE7952667B17000F47416 /* Shia (tabular).json in Resources */,
 				A5BDE77D26677E7900F47416 /* Islamic PR.json in Resources */,
-				A56F0DA225F1705200301969 /* Jewish zodiac events.json in Resources */,
+				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1129,12 +1129,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5BDE79B2667B1ED00F47416 /* Sunni Islam (Umm Al-Qura).json in Resources */,
-				A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */,
-				A56F0DA125F1705200301969 /* Jewish zodiac events.json in Resources */,
+				A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */,
+				A56F0DA125F1705200301969 /* Jewish zodiac.json in Resources */,
 				A5BDE7992667B1ED00F47416 /* Sunni Islam (civil).json in Resources */,
 				A5BDE79D2667B1ED00F47416 /* Sunni Islam (tabular).json in Resources */,
 				A5BDE78826679A6200F47416 /* Shia.json in Resources */,
-				A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */,
+				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
@@ -1147,21 +1147,21 @@
 				A5BDE7922667B17000F47416 /* Shia (civil).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
-				A584C90024B646210014CE2E /* Daily Jewish events.json in Resources */,
-				A56CE62A24C43BED00865E95 /* Jewish minor fasts.json in Resources */,
-				A5E3606624C756FF0000A268 /* Israeli events.json in Resources */,
+				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
+				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,
+				A5E3606624C756FF0000A268 /* Israel.json in Resources */,
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
-				A5E3606824C7571A0000A268 /* Lubavitch events.json in Resources */,
+				A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */,
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
-				A5E3606424C71FBC0000A268 /* All-day Jewish events.json in Resources */,
+				A5E3606424C71FBC0000A268 /* Judaism.json in Resources */,
 				A5BDE77C26677E7900F47416 /* Islamic PR.json in Resources */,
 				A5BDE7902667B17000F47416 /* Shia (Umm Al-Qura).json in Resources */,
 				A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */,
 				A5BDE78526678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5D3015F24EBDFF8003E79E9 /* Islam (general, tabular).json in Resources */,
-				A533798124B2333500340C0B /* Solar events.json in Resources */,
-				A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */,
+				A533798124B2333500340C0B /* Sun.json in Resources */,
+				A5CBB51024FD54310084DF72 /* Antisemitism.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 				A5D3015D24EBDFF8003E79E9 /* Islam (general, civil).json in Resources */,
