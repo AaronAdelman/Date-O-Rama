@@ -21,6 +21,13 @@
                 "month":  3, "day":  23
             },
             "url": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"
+        },
+        {
+            "titles":  {"en":  "Caliphate Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  5, "day":  27
+            },
+            "url": "https://en.wikipedia.org/wiki/Caliphate_Day"
         }
     ]
 }
