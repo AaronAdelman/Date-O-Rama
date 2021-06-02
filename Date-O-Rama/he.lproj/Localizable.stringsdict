@@ -74,5 +74,21 @@
 			<string>כל %d יום</string>
 		</dict>
 	</dict>
+	<key>n events</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@n_events@</string>
+		<key>n_events</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>(אירוע 1)</string>
+			<key>other</key>
+			<string>(%d אירועים)</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

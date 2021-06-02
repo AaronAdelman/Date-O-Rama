@@ -239,7 +239,6 @@ struct ASAEventFrequencyView: View {
         let formatString : String = NSLocalizedString(key, comment: "")
         let resultString : String = String.localizedStringWithFormat(formatString, interval)
         ASAEventPropertyView(key: "Event Frequency", value: resultString)
-
     }
 }
 

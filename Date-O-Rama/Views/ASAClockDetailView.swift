@@ -207,18 +207,24 @@ struct ASABuiltInEventCalendarCell:  View {
     var fileName:  String
 
     var body: some View {
-        let eventFile = ASAEventCalendar(fileName: fileName)
+        let eventCalendar = ASAEventCalendar(fileName: fileName)
 
         HStack {
-            ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventFile.color)
+            ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventCalendar.color)
             VStack {
-                Text(verbatim: eventFile.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
-                if eventFile.error != nil {
-                    Text(verbatim: eventFile.error!.localizedDescription)
+                Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
+                if eventCalendar.error != nil {
+                    Text(verbatim: eventCalendar.error!.localizedDescription)
                         .font(.headline)
                         .foregroundColor(.gray)
                 }
-            }
+            } // VStack
+            Spacer()
+            
+            let formatString : String = NSLocalizedString("n events", comment: "")
+            let resultString : String = String.localizedStringWithFormat(formatString, eventCalendar.eventsFile!.eventSpecifications.count)
+            Text(resultString)
+                .foregroundColor(.secondary)
         } // HStack
     } //var body
 } // struct ASABuiltInEventCalendarCell
