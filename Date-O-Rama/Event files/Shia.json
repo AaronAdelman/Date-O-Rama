@@ -21,16 +21,16 @@
             }, "url": "https://en.wikipedia.org/wiki/Mawlid"
         },
         {
-            "titles":  {"en":  "Eid al-Ghadeer", "he":  "חדית׳ ע׳דיר ח׳ם", "ar":  "حَدِيْث ٱلْغَدِيْر‎", "fa":  "رویداد غدیر خم‎"},
+            "titles":  {"en":  "Eid al-Ghadeer (Event of Ghadir Khumm)", "he":  "חדית׳ ע׳דיר ח׳ם", "ar":  "حَدِيْث ٱلْغَدِيْر‎", "fa":  "رویداد غدیر خم‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  18
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Event_of_Ghadir_Khumm"
         },
         {
-            "titles":  {"en":  "Eid al-Mubahalah", "he":  "חג הקללה", "ar":  "عِيْد ٱلْمُبَاهَلَة‎"},
+            "titles":  {"en":  "Eid al-Mubahalah (Event of Mubahala)", "he":  "חג הקללה", "ar":  "عِيْد ٱلْمُبَاهَلَة‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  24
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Event_of_Mubahala"
         },
         {
             "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
