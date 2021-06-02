@@ -12,10 +12,11 @@
             "titles":  {"en":  "International Shia Day"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  12
-            }
+            },
+            "url": "http://internationalshiaday.com"
         },
         {
-            "titles":  {"en":  "Muslim Women’s Day"},§
+            "titles":  {"en":  "Muslim Women’s Day"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  27
             }
