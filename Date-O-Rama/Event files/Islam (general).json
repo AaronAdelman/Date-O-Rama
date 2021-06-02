@@ -20,19 +20,6 @@
                 "month":  1, "day":  10
             }, "url": "https://en.wikipedia.org/wiki/Ashura"
         },
-        
-        {
-            "titles":  {"en":  "Eid-e-Shuja' (Eid-e-Zahra)", "he":  "עיד־אי־שוג׳ה", "ar":  "فرحة الزهراء"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  3, "day":  9
-            }
-        },
-        {
-            "titles":  {"en":  "Birthday of ‘Alī ibn Abī Ṭālib", "he":  "יום הולדת של עלי אבן אבי טאלב", "ar":  "عيد ميلاد علي بن أبي طالب"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  7, "day":  13
-            }
-        },
         {
             "titles":  {"en":  "Lailatu 'l-Miʿrāj", "he":  "לילת אל־מעראג׳", "ar":  "لیلة المعراج‎", "bn":  "শবে মেরাজ", "fa":  "شب معراج‎", "tr":  "Miraç Kandili"},
             "startDateSpecification":  { "type":  "allDay",
@@ -44,12 +31,6 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  15
             }, "url": "https://en.wikipedia.org/wiki/Mid-Sha%27ban"
-        },
-        {
-            "titles":  {"en":  "Birthday of Ḥujjat Allāh al-Mahdī", "he":  "יום הולדת של חוג׳ת־אללה אל־מהדי", "ar":  "عيد ميلاد حجة الله المهدي"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  8, "day":  15
-            }
         },
         {
             "titles":  {"en":  "Ramaḍān", "he":  "רמצֿאן", "ar":  "رَمَضَان‎", "az":  "Ramazan", "bn":  "রমজান", "ckb":  "ڕەمەزان‎", "so":  "Rabadaan", "tr":  "Ramazan", "zza":  "Remezan"},
@@ -85,7 +66,7 @@
             "titles":  {"en":  "Chaand Raat", "he":  "ליל הלבנה", "bn":  "চাঁদ রাত", "ur":  "چاند رات‎", "hi":  "चाँद रात", "ar":  "جاند رات"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  -1
-            }
+            } , "url": "https://en.wikipedia.org/wiki/Chaand_Raat"
         },
         {
             "titles":  {"en":  "ʻĪd al-Fiṭr (Festival of Breaking the Fast)", "he":  "עיד אלפטר", "ar":  "عيد الفطر‎"},
@@ -100,7 +81,7 @@
             },
             "endDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  13
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Hajj"
         },
         {
             "titles":  {"en":  "Day of ‘Arafah", "he":  "יום ערפה", "ar":  "يوم عرفة‎"},
