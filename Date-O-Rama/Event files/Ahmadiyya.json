@@ -14,6 +14,13 @@
                 "month":  2, "day":  20
             },
             "url": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"
+        },
+        {
+            "titles":  {"en":  "Promised Messiah Day", "ur": "یوم مسیح موعود‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  23
+            },
+            "url": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"
         }
     ]
 }
