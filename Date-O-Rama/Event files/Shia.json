@@ -1,0 +1,36 @@
+{
+    "titles": {"en":  "Shia", "he":  "שיעה", "ar": "الشيعة"},
+    "supportedLocales":  ["en", "ar", "he"],
+    "defaultLocale":  "en",
+    "calendarCode":  "IslamicSolar",
+    "calendarColorRed":  0.05,
+    "calendarColorGreen":  0.95,
+    "calendarColorBlue":  0.05,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "titles":  {"en":  "al-Arba‘īn", "he":  "ארבעין", "ar":  "الأربعين‎", "fa":  "چهلم‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "dayOfYear":  50
+            }, "url": "https://en.wikipedia.org/wiki/Arba'een"
+        },
+        {
+            "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי (שיעי)", "ar":  "مَولِد النَّبِي‎ (شيعي)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  17
+            }, "url": "https://en.wikipedia.org/wiki/Mawlid"
+        },
+        {
+            "titles":  {"en":  "Eid al-Ghadeer", "he":  "חדית׳ ע׳דיר ח׳ם", "ar":  "حَدِيْث ٱلْغَدِيْر‎", "fa":  "رویداد غدیر خم‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  18
+            }
+        },
+        {
+            "titles":  {"en":  "Eid al-Mubahalah", "he":  "חג הקללה", "ar":  "عِيْد ٱلْمُبَاهَلَة‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  24
+            }
+        }
+    ]
+}

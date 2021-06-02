@@ -1,0 +1,18 @@
+{
+    "titles": {"en":  "Sunni Islam", "he":  "אסלאם סוני", "ar": "أهل السنة والجماعة"},
+    "supportedLocales":  ["en", "ar", "he"],
+    "defaultLocale":  "en",
+    "calendarCode":  "IslamicSolar",
+    "calendarColorRed":  0.15,
+    "calendarColorGreen":  0.85,
+    "calendarColorBlue":  0.15,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי (סוני)", "ar":  "مَولِد النَّبِي‎ (سني)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  12
+            }, "url": "https://en.wikipedia.org/wiki/Mawlid"
+        }
+    ]
+}
