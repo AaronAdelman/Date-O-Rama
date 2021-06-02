@@ -1,0 +1,20 @@
+{
+    "titles": {"en":  "Ahmadiyya"},
+    "supportedLocales":  ["en"],
+    "defaultLocale":  "en",
+    "calendarCode":  "Gregorian",
+    "calendarColorRed":  0.2,
+    "calendarColorGreen":  0.8,
+    "calendarColorBlue":  0.2,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "titles":  {"en":  "Promised Reformer Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  20
+            },
+            "url": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"
+        }
+    ]
+}
+

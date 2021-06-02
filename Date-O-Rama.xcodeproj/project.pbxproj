@@ -244,6 +244,8 @@
 		A5BDE77A26661F7500F47416 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5BDE77C26677E7900F47416 /* Islamic PR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic PR.json */; };
 		A5BDE77D26677E7900F47416 /* Islamic PR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic PR.json */; };
+		A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77E266784EE00F47416 /* Ahmadiyya.json */; };
+		A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77E266784EE00F47416 /* Ahmadiyya.json */; };
 		A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
@@ -463,6 +465,7 @@
 		A5BDE7772665594D00F47416 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = he; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventSpecification.swift; sourceTree = "<group>"; };
 		A5BDE77B26677E7900F47416 /* Islamic PR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islamic PR.json"; sourceTree = "<group>"; };
+		A5BDE77E266784EE00F47416 /* Ahmadiyya.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ahmadiyya.json; sourceTree = "<group>"; };
 		A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsTab.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
@@ -593,6 +596,7 @@
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
 				A533798024B2333400340C0B /* Solar events.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */,
+				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1058,6 +1062,7 @@
 				A5769951259EDCC000757B0F /* Israeli events.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A576994B259EDCC000757B0F /* Jewish minor fasts.json in Resources */,
+				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A576994D259EDCC000757B0F /* Islamic holidays.json in Resources */,
 				A576994E259EDCC000757B0F /* Antisemitic events.json in Resources */,
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
@@ -1076,6 +1081,7 @@
 				A568DBBB25232E3200500419 /* Chinese zodiac events.json in Resources */,
 				A56F0DA125F1705200301969 /* Jewish zodiac events.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac events.json in Resources */,
+				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
