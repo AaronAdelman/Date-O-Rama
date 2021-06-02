@@ -58,31 +58,7 @@ extension ASAEventSpecification {
 
     func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
         if self.titles != nil {
-            let titles = self.titles!
-
-            let userLocaleIdentifier = requestedLocaleIdentifier == "" ? Locale.autoupdatingCurrent.identifier : requestedLocaleIdentifier
-            let firstAttempt = titles[userLocaleIdentifier]
-            if firstAttempt != nil {
-                return firstAttempt
-            }
-
-            let userLanguageCode = userLocaleIdentifier.localeLanguageCode
-            if userLanguageCode != nil {
-                let secondAttempt = titles[userLanguageCode!]
-                if secondAttempt != nil {
-                    return secondAttempt
-                }
-            }
-
-            let thirdAttempt = titles[eventsFileDefaultLocaleIdentifier]
-            if thirdAttempt != nil {
-                return thirdAttempt
-            }
-
-            let fourthAttempt = titles["en"]
-            if fourthAttempt != nil {
-                return fourthAttempt
-            }
+            return self.titles!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
         }
 
         return nil
@@ -90,31 +66,7 @@ extension ASAEventSpecification {
 
     func eventLocation(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
         if self.locations != nil {
-            let locations = self.locations!
-
-            let userLocaleIdentifier = requestedLocaleIdentifier == "" ? Locale.autoupdatingCurrent.identifier : requestedLocaleIdentifier
-            let firstAttempt = locations[userLocaleIdentifier]
-            if firstAttempt != nil {
-                return firstAttempt
-            }
-
-            let userLanguageCode = userLocaleIdentifier.localeLanguageCode
-            if userLanguageCode != nil {
-                let secondAttempt = locations[userLanguageCode!]
-                if secondAttempt != nil {
-                    return secondAttempt
-                }
-            }
-
-            let thirdAttempt = locations[eventsFileDefaultLocaleIdentifier]
-            if thirdAttempt != nil {
-                return thirdAttempt
-            }
-
-            let fourthAttempt = locations["en"]
-            if fourthAttempt != nil {
-                return fourthAttempt
-            }
+            return self.locations!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
         }
 
         return nil
