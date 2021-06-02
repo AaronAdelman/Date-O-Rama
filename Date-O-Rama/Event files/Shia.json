@@ -31,6 +31,12 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  24
             }
+        },
+        {
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  19
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
         }
     ]
 }

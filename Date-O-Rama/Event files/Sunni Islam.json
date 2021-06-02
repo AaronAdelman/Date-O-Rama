@@ -13,6 +13,12 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  12
             }, "url": "https://en.wikipedia.org/wiki/Mawlid"
+        },
+        {
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  29
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
         }
     ]
 }

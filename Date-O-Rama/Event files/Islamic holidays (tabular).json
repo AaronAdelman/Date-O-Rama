@@ -78,31 +78,31 @@
             }
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  19
             }
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  21
             }
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  23
             }
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  25
             }
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  27
             }

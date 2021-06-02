@@ -58,34 +58,28 @@
             }, "url": "https://en.wikipedia.org/wiki/Ramadan"
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
-            "startDateSpecification":  { "type":  "allDay",
-                "month":  9, "day":  19
-            }
-        },
-        {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  21
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  23
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  25
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
+            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  27
-            }
+            }, "url": "https://en.wikipedia.org/wiki/Qadr_Night"
         },
         {
             "titles":  {"en":  "Chaand Raat", "he":  "ליל הלבנה", "bn":  "চাঁদ রাত", "ur":  "چاند رات‎", "hi":  "चाँद रात", "ar":  "جاند رات"},
