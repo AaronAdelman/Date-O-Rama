@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Islam (general, civil)", "he":  "אסלאם (כללי, אזרחי)"},
+    "titles": {"en":  "Islam (general)", "he":  "אסלאם (כללי)", "ar": "الإسلام (عام)"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicCivilSolar",

@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Islam (general, Umm Al-Qura)", "he":  "אסלאם (כללי, אום אל־קורה)"},
+    "titles": {"en":  "Islam (general)", "he":  "אסלאם (כללי)", "ar": "الإسلام (عام)"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicUmmAlQuraSolar",
