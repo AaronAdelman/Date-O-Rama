@@ -20,6 +20,13 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  27
             }
+        },
+        {
+            "titles":  {"en":  "World Hijab Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  1
+            },
+            "url": "https://en.wikipedia.org/wiki/World_Hijab_Day"
         }
     ]
 }
