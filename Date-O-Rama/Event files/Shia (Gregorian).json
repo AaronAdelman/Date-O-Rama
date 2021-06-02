@@ -1,0 +1,20 @@
+{
+    "titles": {"en":  "Shia (Gregorian)"},
+    "supportedLocales":  ["en"],
+    "defaultLocale":  "en",
+    "calendarCode":  "Gregorian",
+    "calendarColorRed":  0.3,
+    "calendarColorGreen":  0.7,
+    "calendarColorBlue":  0.3,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "titles":  {"en":  "Imamat Day", "ur": "یوم الامامہ", "bn": "ইমামত দিবস"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  11
+            },
+            "url": "https://en.wikipedia.org/wiki/Imamat_Day"
+        }
+    ]
+}
+

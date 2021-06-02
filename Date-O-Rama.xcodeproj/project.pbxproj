@@ -246,6 +246,8 @@
 		A5BDE77D26677E7900F47416 /* Islamic PR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic PR.json */; };
 		A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77E266784EE00F47416 /* Ahmadiyya.json */; };
 		A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77E266784EE00F47416 /* Ahmadiyya.json */; };
+		A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7812667877E00F47416 /* Shia (Gregorian).json */; };
+		A5BDE7832667877E00F47416 /* Shia (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7812667877E00F47416 /* Shia (Gregorian).json */; };
 		A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
@@ -466,6 +468,7 @@
 		A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventSpecification.swift; sourceTree = "<group>"; };
 		A5BDE77B26677E7900F47416 /* Islamic PR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islamic PR.json"; sourceTree = "<group>"; };
 		A5BDE77E266784EE00F47416 /* Ahmadiyya.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ahmadiyya.json; sourceTree = "<group>"; };
+		A5BDE7812667877E00F47416 /* Shia (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Shia (Gregorian).json"; sourceTree = "<group>"; };
 		A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsTab.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
@@ -581,6 +584,7 @@
 		A533798224B2425900340C0B /* Event files */ = {
 			isa = PBXGroup;
 			children = (
+				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
 				A5E3606324C71FBC0000A268 /* All-day Jewish events.json */,
 				A5CBB50F24FD54310084DF72 /* Antisemitic events.json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac events.json */,
@@ -594,9 +598,9 @@
 				A56CE62924C43BED00865E95 /* Jewish minor fasts.json */,
 				A56F0DA025F1705200301969 /* Jewish zodiac events.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch events.json */,
+				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
 				A533798024B2333400340C0B /* Solar events.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac events.json */,
-				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1051,6 +1055,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A576994A259EDCC000757B0F /* Islamic holidays (civil).json in Resources */,
+				A5BDE7832667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
 				A5769950259EDCC000757B0F /* Chinese zodiac events.json in Resources */,
 				A576994F259EDCC000757B0F /* Islamic holidays (Umm Al-Qura).json in Resources */,
@@ -1103,6 +1108,7 @@
 				A5D3015F24EBDFF8003E79E9 /* Islamic holidays (tabular).json in Resources */,
 				A533798124B2333500340C0B /* Solar events.json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitic events.json in Resources */,
+				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 				A5D3015D24EBDFF8003E79E9 /* Islamic holidays (civil).json in Resources */,
 			);
