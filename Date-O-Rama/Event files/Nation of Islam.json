@@ -1,0 +1,20 @@
+{
+    "titles": {"en":  "Nation of Islam"},
+    "supportedLocales":  ["en"],
+    "defaultLocale":  "en",
+    "calendarCode":  "Gregorian",
+    "calendarColorRed":  0.4,
+    "calendarColorGreen":  0.6,
+    "calendarColorBlue":  0.4,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {
+            "titles":  {"en":  "Saviours’ Day"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  28
+            },
+            "url": "https://en.wikipedia.org/wiki/Saviours%27_Day"
+        }
+    ]
+}
+
