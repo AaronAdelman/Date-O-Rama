@@ -1,0 +1,18 @@
+{
+    "titles": {"en":  "Antisemitism (Gregorian)", "he":  "אנטישמיות (גרגוריני)", "ar": "معاداة السامية"},
+    "supportedLocales":  ["en", "he", "ar"],
+    "defaultLocale":  "en",
+    "calendarCode":  "Gregorian",
+    "calendarColorRed":  0.5,
+    "calendarColorGreen":  0.5,
+    "calendarColorBlue":  0.5,
+    "calendarColorAlpha":  1.0,
+    "eventSpecifications":  [
+        {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "startDateSpecification": {
+            "type": "allDay", "month": 5, "day": 15}},
+        {"titles": {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, "startDateSpecification": {
+            "type": "allDay", "month": 6, "day": 5}},
+        {"titles": {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎"}, "startDateSpecification": {
+            "type": "allDay", "month": 3, "day": 30}}
+    ]
+}
