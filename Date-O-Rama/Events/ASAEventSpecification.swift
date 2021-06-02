@@ -11,6 +11,7 @@ import EventKit
 
 class ASAEventSpecification: Codable {
     var titles:  Dictionary<String, String>?
+    var locations: Dictionary<String, String>?
     
     var isAllDay:  Bool {
         get {
@@ -85,7 +86,39 @@ extension ASAEventSpecification {
         }
 
         return nil
-    } // eventsFileDefaultLocaleIdentifier:  String) -> String?
+    } // func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
+
+    func eventLocation(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
+        if self.locations != nil {
+            let locations = self.locations!
+
+            let userLocaleIdentifier = requestedLocaleIdentifier == "" ? Locale.autoupdatingCurrent.identifier : requestedLocaleIdentifier
+            let firstAttempt = locations[userLocaleIdentifier]
+            if firstAttempt != nil {
+                return firstAttempt
+            }
+
+            let userLanguageCode = userLocaleIdentifier.localeLanguageCode
+            if userLanguageCode != nil {
+                let secondAttempt = locations[userLanguageCode!]
+                if secondAttempt != nil {
+                    return secondAttempt
+                }
+            }
+
+            let thirdAttempt = locations[eventsFileDefaultLocaleIdentifier]
+            if thirdAttempt != nil {
+                return thirdAttempt
+            }
+
+            let fourthAttempt = locations["en"]
+            if fourthAttempt != nil {
+                return fourthAttempt
+            }
+        }
+
+        return nil
+    } // func eventLocation(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
     
     var recurrenceRules: [EKRecurrenceRule]? {
         var result: [EKRecurrenceRule] = []
