@@ -218,6 +218,30 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  15
             }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH (alternate date)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  6, "day":  3
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Death of Umm ul-Banin (mother of Abbas ibn Ali)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  6, "day":  13
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Fatimah bint Muhammad, 8 BH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  6, "day":  20
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Ali al-Hadi"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  6, "day":  26
+            }
         }
     ]
 }
