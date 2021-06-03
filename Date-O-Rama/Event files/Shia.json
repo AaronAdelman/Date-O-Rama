@@ -437,6 +437,42 @@
         },
         {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
             "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Battle of the Trench"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  2
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Day of Sorrow"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  8
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Marriage of Khadijah bint Khuwaylid to Muhammad"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  9
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Major Occultation of Muhammad al-Mahdi begins"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  10
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Martyrdom of Hamzah in the Battle of Uhud, 3 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  15
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Birth of Abu Talib"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  10, "day":  29
+            }
         }
     ]
 }
