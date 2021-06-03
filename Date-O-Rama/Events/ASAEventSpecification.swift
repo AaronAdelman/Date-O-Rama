@@ -27,7 +27,7 @@ class ASAEventSpecification: Codable {
     var excludeISOCountryCodes:  Array<String>?
         
     var urls: Dictionary<String, URL>? // URLs for the calendar item, indexed by locale code.
-    var notes: String? // The notes associated with the calendar item.
+    var notes: Dictionary<String, String>? // The notes associated with the calendar item, indexed by locale code.
 } // extension ASAEventSpecification
 
 
@@ -79,6 +79,14 @@ extension ASAEventSpecification {
 
         return nil
     } // func eventURL(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
+    
+    func eventNotes(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
+        if self.notes != nil {
+            return self.notes!.value(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier)
+        }
+
+        return nil
+    } // func eventNotes(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String?
     
     var recurrenceRules: [EKRecurrenceRule]? {
         var result: [EKRecurrenceRule] = []
