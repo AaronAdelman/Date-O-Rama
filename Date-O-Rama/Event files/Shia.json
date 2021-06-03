@@ -200,6 +200,24 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  8
             }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Battle of the Camel"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  5, "day":  10
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  5, "day":  13
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ali ibn Husayn Zayn al-Abidin, 37 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  5, "day":  15
+            }
         }
     ]
 }
