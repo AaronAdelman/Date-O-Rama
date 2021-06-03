@@ -137,6 +137,27 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  7, "weekdays": [6]
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Laylat_al-Raghaib"}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -1, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -2, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -3, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -4, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -5, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -6, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+        },
+        {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -7, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
         }
     ]
 }

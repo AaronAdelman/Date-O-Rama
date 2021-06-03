@@ -417,27 +417,6 @@
                 "month":  9, "day":  21
             }
         },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -1, "weekdays": [6]}
-        },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -2, "weekdays": [6]}
-        },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -3, "weekdays": [6]}
-        },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -4, "weekdays": [6]}
-        },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -5, "weekdays": [6]}
-        },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -6, "weekdays": [6]}
-        },
-        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}
-        },
         {
             "titles":  {"en":  "Remembrance:  Battle of the Trench"},
             "startDateSpecification":  { "type":  "allDay",
