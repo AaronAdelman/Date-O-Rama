@@ -116,6 +116,42 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  1, "day":  30
             }
+        },
+        {
+            "titles":  {"en":  "Remembrance: Battle of Siffin, 37 AH, Mourning:  Prisoners of Karbalā reach Yazid's palace in Syria"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  1
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance: Birth of Imam Musa al-Kadhim, 128 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  7
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Ruqayyah bint Husayn, youngest daughter of Husayn ibn Ali and a prisoner of Karbalā, Mourning:  30th day after ʿĀshūrāʾ, Remembrance: Victory to Ali in the Battle of Nahrawan"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  10
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Birth of Salman the Persian"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  12
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Ali ar-Ridha, 203 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  17
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Muhammad, 11 AH, Mourning:  Martyrdom of Hasan ibn Ali, 50 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  2, "day":  28
+            }
         }
     ]
 }
