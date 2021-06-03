@@ -503,6 +503,66 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  29
             }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Marriage of Fatimah bint Muhammad to Ali, 2 BH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  1
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Renunciation of Adam accepted"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  3
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Muhammad al-Baqir, 114 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  7
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Husayn ibn Ali leaves Makkah for Karbala, 60 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  8
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Muslim ibn Aqeel & Hani ibn Urwa in Kufa, 60 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  9
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ali al-Hadi, 212 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  15
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Zaynab bint Ali"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  16
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Fatimah went to Ali's house after their marriage"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  19
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Martyrdom of the children of Muslim ibn Aqeel, 60 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  23
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Martyrdom of Maytham al-Tammar, 60 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  12, "day":  27
+            }
         }
     ]
 }
