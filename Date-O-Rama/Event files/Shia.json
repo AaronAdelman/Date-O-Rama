@@ -314,6 +314,48 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  28
             }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Zaynab bint Ali, 6 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  1
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Husayn ibn Ali, 4 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  3
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Abbas ibn Ali"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  4
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ali ibn Husayn Zayn al-Abidin"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  5
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ali al-Akbar ibn Husayn"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  11
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Qasim ibn Hasan, Remembrance:  Laylat al Bara'at"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  14
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ruqayyah bint Husayn"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  8, "day":  17
+            }
         }
     ]
 }
