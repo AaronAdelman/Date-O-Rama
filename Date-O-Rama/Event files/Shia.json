@@ -242,6 +242,78 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  26
             }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Muhammad al-Baqir, 57 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  1
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Abbas ibn Ali, 36 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  7
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Muhammad al-Taqi, 195 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  10
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Ja'far al-Sadiq"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  15
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Death of Abraham"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  18
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Sukaynah bint Husayn"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  20
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Koo'nda (table cloth dinner)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  22
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ali al-Asghar ibn Husayn"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  24
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Musa al-Kadhim"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  25
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Abu Talib"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  26
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Mabʻath"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  27
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Believed to be the day that Husayn ibn ‘Alī started his journey to Karbalā from Madinah in 60 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  7, "day":  28
+            }
         }
     ]
 }
