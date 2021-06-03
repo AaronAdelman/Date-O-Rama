@@ -356,6 +356,87 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  17
             }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Descending of the Torah (according to one narration)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  4
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Death of Khadijah bint Khuwaylid"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  10
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Descending of the Gospel (according to one narration)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  12
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Mukhtar ibn Abi Ubayd Al-Thaqafi"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  14
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Hasan ibn Ali"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  15
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Battle of Badr"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  17
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Descending of the Psalms (according to one narration)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  18
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Day of Striking"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  19
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Victorious Conquest of Mecca"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  20
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Ali, 40 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  9, "day":  21
+            }
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -1, "weekdays": [6]}
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -2, "weekdays": [6]}
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -3, "weekdays": [6]}
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -4, "weekdays": [6]}
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -5, "weekdays": [6]}
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -6, "weekdays": [6]}
+        },
+        {"titles": {"en": "Remembrance:  Last Friday of Ramadhan"}, "startDateSpecification": {
+            "type": "allDay", "month": 9, "day": -7, "weekdays": [6]}
         }
     ]
 }
