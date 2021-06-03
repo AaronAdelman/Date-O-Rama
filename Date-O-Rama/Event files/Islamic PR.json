@@ -13,7 +13,7 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  12
             },
-            "url": "http://internationalshiaday.com"
+            "urls": {"en": "http://internationalshiaday.com"}
         },
         {
             "titles":  {"en":  "Muslim Women’s Day"},
@@ -26,56 +26,56 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  1
             },
-            "url": "https://en.wikipedia.org/wiki/World_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/World_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  14, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  13, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  12, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  11, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  10, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  9, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  8, "weekdays": [7]
             },
-            "url": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         }
     ]
 }

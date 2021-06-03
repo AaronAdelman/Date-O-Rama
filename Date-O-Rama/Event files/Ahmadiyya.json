@@ -13,21 +13,21 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  20
             },
-            "url": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}
         },
         {
             "titles":  {"en":  "Promised Messiah Day", "ur": "یوم مسیح موعود‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  23
             },
-            "url": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}
         },
         {
             "titles":  {"en":  "Caliphate Day"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  27
             },
-            "url": "https://en.wikipedia.org/wiki/Caliphate_Day"
+            "urls": {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}
         }
     ]
 }

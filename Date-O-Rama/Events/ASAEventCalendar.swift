@@ -389,8 +389,9 @@ class ASAEventCalendar {
                     }
                     
                     let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                    let url: URL? = eventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     
-                    let newEvent = ASAEvent(title:  title, location: location, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: eventSpecification.url, notes: eventSpecification.notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, includeISOCountryCodes: eventSpecification.includeISOCountryCodes, excludeISOCountryCodes: eventSpecification.excludeISOCountryCodes)
+                    let newEvent = ASAEvent(title:  title, location: location, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: eventSpecification.notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, includeISOCountryCodes: eventSpecification.includeISOCountryCodes, excludeISOCountryCodes: eventSpecification.excludeISOCountryCodes)
                     result.append(newEvent)
                 }
             }

@@ -13,7 +13,7 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  28
             },
-            "url": "https://en.wikipedia.org/wiki/Saviours%27_Day"
+            "urls": {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day"}
         }
     ]
 }
