@@ -473,6 +473,36 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  29
             }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Birth of Fatimah bint Musa"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  11, "day":  1
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Treaty of Hudaybiyyah was executed, 6 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  11, "day":  6
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ali ar-Ridha, 148 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  11, "day":  11
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Dahwul Ardh (Spreading of the Earth)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  11, "day":  25
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Muhammad al-Taqī, 220 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  11, "day":  29
+            }
         }
     ]
 }
