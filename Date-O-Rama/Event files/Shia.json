@@ -152,6 +152,54 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  28
             }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Hijrah"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  1
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Fatimah bint Musa"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  4
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Martyrdom of Hasan al-Askari, 260 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  8
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Death of Yazid"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  14
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  First mosque (Quba Mosque) was established, 1 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  15
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Ja'far al-Sadiq, 83 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  17
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Umm Kulthum bint Ali"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  3, "day":  18
+            }
+        },
+        {
+            "titles":  {"en":  "Celebration:  Birth of Hasan al-Askari, 232 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  4, "day":  8
+            }
         }
     ]
 }
