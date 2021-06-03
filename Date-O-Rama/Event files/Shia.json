@@ -55,6 +55,67 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  15
             }, "url": "https://en.wikipedia.org/wiki/Muhammad_al-Mahdi"
+        },
+        
+        {
+            "titles":  {"en":  "Mourning:  Arrival of Husayn ibn Ali in Karbalā, 61 AH‎"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  2
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Water supply to the camp of Husayn ibn Ali was stopped"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  3
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Stored water in the tents of the camp of Husayn ibn Ali runs out"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  7
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Eve of Ashura (Tāsūʿā)"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  9
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  Burial of the martyrs of Karbala by Bani Asad"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  12
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Abraha attacked the Kaʿbah in the Year of the Elephant"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  17
+            }
+        },
+        {
+            "titles":  {"en":  "Remembrance:  Changing of the Qibla, 2 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  18
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  10th day after ʿĀshūrāʾ"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  20
+            }
+        },
+        {
+            "titles":  {"en":  "Martyrdom of Ali ibn Husayn Zayn al-Abidin, 95 AH"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  25
+            }
+        },
+        {
+            "titles":  {"en":  "Mourning:  20th day after ʿĀshūrāʾ"},
+            "startDateSpecification":  { "type":  "allDay",
+                "month":  1, "day":  30
+            }
         }
     ]
 }
