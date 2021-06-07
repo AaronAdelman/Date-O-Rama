@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -18,6 +16,8 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CLKComplicationPrincipalClass</key>
@@ -46,8 +46,10 @@
 	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Can I use your location, please?</string>
+	<string>Date-O-Rama needs authorization to access your location.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

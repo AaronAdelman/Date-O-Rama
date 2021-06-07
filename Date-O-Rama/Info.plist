@@ -28,6 +28,8 @@
 	<string>Date-O-Rama needs authorization to access your contacts.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Date-O-Rama needs authorization to access your location.</string>
 	<key>NSUbiquitousContainers</key>
