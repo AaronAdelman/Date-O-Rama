@@ -211,9 +211,9 @@ struct ASAEKEventRecurrenceFrequencyView: View {
 
         case .weekly:
             ASAEventFrequencyView(key: "every n weeks", interval: interval)
-            let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
-            let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
-            ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
+//            let firstDayOfTheWeek = recurrenceRule.firstDayOfTheWeek
+//            let firstDayOfTheWeekString = GregorianCalendar.standaloneWeekdaySymbols[firstDayOfTheWeek - 1]
+//            ASAEventPropertyView(key: "First day of the week for recurrence", value: firstDayOfTheWeekString)
 
         case .monthly:
             ASAEventFrequencyView(key: "every n months", interval: interval)
