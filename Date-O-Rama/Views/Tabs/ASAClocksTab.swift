@@ -40,21 +40,12 @@ struct ASAClocksTab: View {
         NavigationView {
             VStack {
                 HStack {
-                    let offColor = Color.gray
-                    
                     Spacer()
                     
                     Button(action: {
                         self.usingRealTime = true
                     }, label: {
-                        HStack {
-                            let on = self.usingRealTime
-                            let systemGreen: Color = Color(UIColor.systemGreen)
-                            let color: Color = on ? systemGreen : offColor
-                            ASARadioButtonSymbol(on: on, color: color)
-                            Text("Now")
-                                .modifier(ASAScalable(lineLimit: 1))
-                        } // HStack
+                        ASARadioButtonLabel(on: self.usingRealTime, onColor: .green, text: "Now")
                     })
                     
                     Spacer()
@@ -64,14 +55,7 @@ struct ASAClocksTab: View {
                         Button(action: {
                             self.usingRealTime = false
                         }, label: {
-                            HStack {
-                                let on: Bool = !self.usingRealTime
-                                let systemYellow: Color = Color(UIColor.systemYellow)
-                                let color: Color = on ? systemYellow : offColor
-                                ASARadioButtonSymbol(on: on, color: color)
-//                                Text("Date:")
-//                                    .modifier(ASAScalable(lineLimit: 1))
-                            } // HStack
+                            ASARadioButtonLabel(on: !self.usingRealTime, onColor: .yellow, text: "Date:")
                         })
                         Spacer()
                             .frame(maxWidth:0.0)
@@ -157,6 +141,25 @@ struct ASAClocksTab: View {
         }
     } // var body
 } // struct ASAClocksTab
+
+
+struct ASARadioButtonLabel: View {
+    var on: Bool
+    var onColor: Color
+    var text: String?
+    
+    var body: some View {
+        let offColor = Color.gray
+
+        HStack {
+            ASARadioButtonSymbol(on: on, color: on ? onColor : offColor)
+            if text != nil {
+            Text(NSLocalizedString(text!, comment: ""))
+                .modifier(ASAScalable(lineLimit: 1))
+            }
+        } // HStack
+    } // var body
+} // struct ASARadioButtonLabel
 
 
 struct ASAClocksView_Previews: PreviewProvider {
