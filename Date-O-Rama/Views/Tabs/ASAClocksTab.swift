@@ -69,8 +69,8 @@ struct ASAClocksTab: View {
                                 let systemYellow: Color = Color(UIColor.systemYellow)
                                 let color: Color = on ? systemYellow : offColor
                                 ASARadioButtonSymbol(on: on, color: color)
-                                Text("Date:")
-                                    .modifier(ASAScalable(lineLimit: 1))
+//                                Text("Date:")
+//                                    .modifier(ASAScalable(lineLimit: 1))
                             } // HStack
                         })
                         Spacer()
