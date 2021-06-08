@@ -36,38 +36,38 @@
                 "type": "allDay", "month": 8, "day": 10}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה", "en": "Holocaust Day"}, "startDateSpecification": {
                 "type": "allDay", "month": 8, "day": 27, "weekdays": [2, 3, 4, 5]
-            }},
+            }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, "startDateSpecification": {
                 "type": "allDay", "month": 8, "day": 28, "weekdays": [2]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (postponed)"}, "startDateSpecification": {
                 "type": "allDay", "month": 8, "day": 26, "weekdays": [5]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 4, "weekdays": [2, 3, 4, 7]
             }},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 5, "weekdays": [2]
-            }},
+            }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 2, "weekdays": [4]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 3, "weekdays": [4]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {"titles": {"he": "יום העצמאות", "en": "Independence Day"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 5, "weekdays": [3, 4, 5, 1]
-            }},
+            }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}},
         {"titles": {"he": "יום העצמאות (נדחה)", "en": "Independence Day (postponed)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 6, "weekdays": [3]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}},
         {"titles": {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 3, "weekdays": [5]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}},
         {"titles": {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 4, "weekdays": [5]
-            }},
-        {"titles": {"he": "יום הרצל", "en": "Herṣel Day"}, "startDateSpecification": {
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}},
+        {"itles": {"he": "יום הרצל", "en": "Herṣel Day"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 10, "weekdays": [1, 2, 3, 4, 5, 6]
             }},
         {"titles": {"he": "יום הרצל (נדחה)", "en": "Herṣel Day (postponed)"}, "startDateSpecification": {
@@ -75,13 +75,13 @@
             }},
         {"titles": {"he": "יום ירושלים", "en": "Yerushalayim Day"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 28, "weekdays": [2, 3, 4, 5, 7]
-            }},
+            }, "urls": {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {"titles": {"he": "יום ירושלים (נדחה)", "en": "Yerushalayim Day (postponed)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 29, "weekdays": [2]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {"titles": {"he": "יום ירושלים (מוקדם)", "en": "Yerushalayim Day (brought forward)"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 27, "weekdays": [5]
-            }},
+        }, "urls": {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {"titles": {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"}, "startDateSpecification": {
                 "type": "allDay", "month": 9, "day": 28, "weekdays": [2, 3, 4, 5, 7]
             }},
