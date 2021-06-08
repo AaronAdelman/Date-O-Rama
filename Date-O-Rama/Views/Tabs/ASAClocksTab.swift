@@ -154,8 +154,8 @@ struct ASARadioButtonLabel: View {
         HStack {
             ASARadioButtonSymbol(on: on, color: on ? onColor : offColor)
             if text != nil {
-            Text(NSLocalizedString(text!, comment: ""))
-                .modifier(ASAScalable(lineLimit: 1))
+                Text(NSLocalizedString(text!, comment: ""))
+                    .modifier(ASAScalable(lineLimit: 1))
             }
         } // HStack
     } // var body
