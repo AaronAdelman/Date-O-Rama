@@ -23,8 +23,8 @@ class ASAEventSpecification: Codable {
     var startDateSpecification:  ASADateSpecification
     var endDateSpecification:  ASADateSpecification?
     
-    var includeISOCountryCodes:  Array<String>?
-    var excludeISOCountryCodes:  Array<String>?
+    var regionCodes:  Array<String>?
+    var excludeRegionCodes:  Array<String>?
         
     var urls: Dictionary<String, URL>? // URLs for the calendar item, indexed by locale code.
     var notes: Dictionary<String, String>? // The notes associated with the calendar item, indexed by locale code.
@@ -36,19 +36,19 @@ class ASAEventSpecification: Codable {
 extension ASAEventSpecification {
     func match(ISOCountryCode:  String?) -> Bool {
         if ISOCountryCode == nil {
-            if self.includeISOCountryCodes != nil && self.includeISOCountryCodes != [] {
+            if self.regionCodes != nil && self.regionCodes != [] {
                 return false
             }
             
             return true
         } else {
-            if self.includeISOCountryCodes != nil {
-                let result = self.includeISOCountryCodes!.contains(ISOCountryCode!)
+            if self.regionCodes != nil {
+                let result = self.regionCodes!.contains(ISOCountryCode!)
                 return result
             }
             
-            if self.excludeISOCountryCodes != nil {
-                let result = !self.excludeISOCountryCodes!.contains(ISOCountryCode!)
+            if self.excludeRegionCodes != nil {
+                let result = !self.excludeRegionCodes!.contains(ISOCountryCode!)
                 return result
             }
             

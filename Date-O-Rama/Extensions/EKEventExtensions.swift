@@ -63,11 +63,11 @@ extension EKEvent:  ASAEventCompatible {
         return false
     } // var isReadOnly
     
-    var includeISOCountryCodes: Array<String>? {
+    var regionCodes: Array<String>? {
         return nil
-    } // var includeISOCountryCodes
+    } // var regionCodes
     
-    var excludeISOCountryCodes: Array<String>? {
+    var excludeRegionCodes: Array<String>? {
         return nil
-    } // var excludeISOCountryCodes
+    } // var excludeRegionCodes
 } // extension EKEvent:  ASAEventCompatible

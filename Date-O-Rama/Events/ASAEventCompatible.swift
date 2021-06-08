@@ -45,8 +45,8 @@ protocol ASAEventCompatible {
     var geoLocation: CLLocation? { get }
     var isReadOnly: Bool { get }
     
-    var includeISOCountryCodes:  Array<String>? { get }
-    var excludeISOCountryCodes:  Array<String>? { get }
+    var regionCodes:  Array<String>? { get }
+    var excludeRegionCodes:  Array<String>? { get }
 
 } // protocol ASAEventCompatible
 
