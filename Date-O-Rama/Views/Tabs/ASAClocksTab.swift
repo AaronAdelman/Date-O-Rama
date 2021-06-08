@@ -159,28 +159,6 @@ struct ASAClocksTab: View {
 } // struct ASAClocksTab
 
 
-// MARK:  -
-
-struct ASAConditionalEditButton:  View {
-    var shouldShow:  Bool
-    
-    var body: some View {
-        Group {
-            
-            if #available(macOS 11, iOS 14.0, tvOS 14.0, *) {
-                if shouldShow {
-                    EditButton()
-                } else {
-                    EmptyView()
-                }
-            } else {
-                EditButton()
-            }
-        } // Group
-    } //var body
-} // struct ASAConditionalEditButton
-
-
 struct ASAClocksView_Previews: PreviewProvider {
     static var previews: some View {
         ASAClocksTab().environmentObject(ASAUserData.shared)
