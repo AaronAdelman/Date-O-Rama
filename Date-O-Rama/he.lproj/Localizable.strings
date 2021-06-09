@@ -210,7 +210,7 @@
 "ASAAlarmType_absoluteDate"  = "תאריך";
 "ASAAlarmType_minutesBefore" = "דקות לפני";
 "Now"   = "עכשיו";
-"Date:" = "תאריך:";
+"Date:" = "תאריך…";
 "Israel" = "ישראל";
 "Gaza Strip" = "פס עזה";
 "EKEventStatus.confirmed"        = "מאושר";

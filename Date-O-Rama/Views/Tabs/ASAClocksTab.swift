@@ -27,14 +27,6 @@ struct ASAClocksTab: View {
     @State var isNavBarHidden:  Bool = true
 
     @State private var showingPreferences:  Bool = false
-
-    fileprivate func datePickerOpacity() -> Double {
-        #if targetEnvironment(macCatalyst)
-        return self.usingRealTime ? 0.25 : 1.0
-        #else
-            return 1.0
-        #endif
-    } // func datePickerOpacity() -> Double
     
     var body: some View {
         NavigationView {
@@ -55,15 +47,15 @@ struct ASAClocksTab: View {
                         Button(action: {
                             self.usingRealTime = false
                         }, label: {
-                            ASARadioButtonLabel(on: !self.usingRealTime, onColor: .yellow, text: "Date:")
+                            let VERTICAL_PADDING: CGFloat = 7.0
+                            ASARadioButtonLabel(on: !self.usingRealTime, onColor: .yellow, text: self.usingRealTime ? "Date:" : "")
+                                .padding(EdgeInsets(top: VERTICAL_PADDING, leading: 0.0, bottom: VERTICAL_PADDING, trailing: 0.0))
                         })
-                        Spacer()
-                            .frame(maxWidth:0.0)
-                        DatePicker(selection:  self.$now, in:  Date.distantPast...Date.distantFuture, displayedComponents: [.date, .hourAndMinute]) {
-                            Text("")
+                        if !self.usingRealTime {
+                            DatePicker(selection:  self.$now, in:  Date.distantPast...Date.distantFuture, displayedComponents: [.date, .hourAndMinute]) {
+                                Text("")
+                            }
                         }
-                        .opacity(datePickerOpacity())
-                        .disabled(self.usingRealTime)
                     } // HStack
                     
                     Spacer()
