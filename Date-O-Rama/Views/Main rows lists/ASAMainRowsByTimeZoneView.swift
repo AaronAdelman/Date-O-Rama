@@ -41,35 +41,8 @@ struct ASAMainRowsByTimeZoneView:  View {
     } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
     
     var body:  some View {
-        ASAMainRowsByTimeZoneSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByTimeZone: self.processedRowsByTimeZone, now: $now, forComplications:  forComplications)
-    }
-}
-
-struct ASAMainRowsByTimeZoneSubview:  View {
-    @EnvironmentObject var userData:  ASAUserData
-    var primaryGroupingOption:  ASAClocksViewGroupingOption
-    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>>
-    @Binding var now:  Date
-    //    var shouldShowTimeToNextDay:  Bool
-    
-    var forComplications:  Bool
-    
-    func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int> {
-        switch groupingOption {
-        case .byTimeZoneWestToEast:
-            return Array(self.processedRowsByTimeZone.keys).sorted(by:  <)
-            
-        case .byTimeZoneEastToWest:
-            return Array(self.processedRowsByTimeZone.keys).sorted(by:  >)
-            
-        default:
-            return []
-        } // switch groupingOption
-    } // func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int>
-    
-    var body:  some View {
-        ForEach(self.keys(groupingOption: primaryGroupingOption), id: \.self) {
+        let keys: [Int] = self.keys(groupingOption: primaryGroupingOption)
+        ForEach(keys, id: \.self) {
             key
             in
             Section(header:  Text(self.processedRowsByTimeZone[key]![0].timeZoneString).font(Font.headlineMonospacedDigit)
@@ -80,28 +53,11 @@ struct ASAMainRowsByTimeZoneSubview:  View {
                     in
                     
                     #if os(watchOS)
-                    //                    HStack {
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, forComplications: forComplications)
-                    //                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-                    //                    }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                    //                    ZStack {
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: false)
                     ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
-                    
-                    //                        NavigationLink(
-                    //                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                    //                                .onReceive(processedRow.row.objectWillChange) { _ in
-                    //                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                    //                                    self.userData.objectWillChange.send()
-                    //                                    self.userData.savePreferences(code: .clocks)
-                    //                                }
-                    //                        ) {
-                    //                        }
-                    //                        .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-                    //                    }
-                    //                    .listRowInsets(.zero)
                     #endif
                 }
             }

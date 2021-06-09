@@ -29,100 +29,60 @@ struct ASAMainRowsByPlaceView:  View {
     }
     @Binding var now:  Date
     
-    //    var shouldShowTimeToNextDay:  Bool
-    
     var forComplications:  Bool
     
-//    var keys:  Array<String> {
-//        get {
-//            return Array(self.processedRowsByPlace.keys).sorted()
-//        } // get
-//    } // var keys:  Array<String>
-    
-    var body: some View {
-        ASAMainRowsByPlaceSubview(primaryGroupingOption: self.primaryGroupingOption, secondaryGroupingOption: $secondaryGroupingOption, processedRowsByPlace: processedRowsByPlace, now: $now, forComplications: forComplications)
-    } // var body
-} // struct ASAMainRowsByPlaceNameView
-
-
-struct ASAMainRowsByPlaceSubview:  View {
-    var primaryGroupingOption:  ASAClocksViewGroupingOption
-    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>>
-    var keys:  Array<String> {
-        get {
-            var here: String?
-            if primaryGroupingOption == .byPlaceName {
-                #if os(watchOS)
-                here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
-                #else
-                here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
-                #endif
-            } else {
-                here = ASALocationManager.shared.deviceLocationData.country
+    func keys() -> Array<String> {
+        var here: String?
+        if primaryGroupingOption == .byPlaceName {
+            #if os(watchOS)
+            here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
+            #else
+            here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
+            #endif
+        } else {
+            here = ASALocationManager.shared.deviceLocationData.country
+        }
+        
+        return Array(self.processedRowsByPlace.keys).sorted(by: {
+            element1, element2
+            in
+            if element1 == here {
+                return true
             }
             
-//            return Array(self.processedRowsByPlace.keys).sorted()
-            return Array(self.processedRowsByPlace.keys).sorted(by: {
-            element1, element2
-                in
-                if element1 == here {
-                    return true
-                }
-                
-                if element2 == here {
-                    return false
-                }
-                
-                return element1 < element2
-            })
-        } // get
-    } // var keys:  Array<String>
-    @Binding var now:  Date
-    //   var shouldShowTimeToNextDay:  Bool
-    
-    @EnvironmentObject var userData:  ASAUserData
-    var forComplications:  Bool
+            if element2 == here {
+                return false
+            }
+            
+            return element1 < element2
+        })
+    } // func keys() -> Array<String>
     
     fileprivate func shouldShowPlaceName() -> Bool {
         return self.primaryGroupingOption != .byPlaceName
     }
     
     var body:  some View {
-        ForEach(self.keys, id: \.self) {
+        let processedRows: [String : [ASAProcessedRow]] = self.processedRowsByPlace
+        let keys: [String] = self.keys()
+        ForEach(keys, id: \.self) {
             key
             in
             Section(header: HStack {
-                Text(self.processedRowsByPlace[key]![0].flagEmojiString)
+                Text(processedRows[key]![0].flagEmojiString)
                 Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
             }) {
-                ForEach(self.processedRowsByPlace[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
+                ForEach(processedRows[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
                     
                     #if os(watchOS)
-                    //                    HStack {
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
-                    //                        Rectangle().frame(width:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
-                    //                    }
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                    //                    ZStack {
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
                     ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
-
-                        //                        NavigationLink(
-                        //                            destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                        //                                .onReceive(processedRow.row.objectWillChange) { _ in
-                        //                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                        //                                    self.userData.objectWillChange.send()
-                        //                                    self.userData.savePreferences(code: .clocks)
-                        //                                }
-                        //                        ) {
-                        //                        }
-                        //                        .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-                        //                    } // ZStack
                         .listRowInsets(.zero)
                     #endif
                 }

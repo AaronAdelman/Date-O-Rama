@@ -12,48 +12,21 @@ struct ASAMainRowsByCalendarView:  View {
     @EnvironmentObject var userData:  ASAUserData
     
     @Binding var rows:  Array<ASARow>
-    var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>> {
-        get {
-            return self.rows.processedRowsByCalendar(now: now)
-        } // get
-    }
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     //    var shouldShowTimeToNextDay:  Bool
     
     var forComplications:  Bool
-    
-//    var keys:  Array<String> {
-//        get {
-//            return Array(self.processedRowsByCalendar.keys).sorted()
-//        } // get
-//    } // var keys:  Array<String>
-    
-    var body: some View {
-        ASAMainRowsByCalendarSubview(processedRowsByCalendar: self.processedRowsByCalendar, now: $now, secondaryGroupingOption: $secondaryGroupingOption, forComplications:  forComplications)
-    } // var body
-} // struct ASAMainRowsByCalendarView
-
-struct ASAMainRowsByCalendarSubview:  View {
-    @EnvironmentObject var userData:  ASAUserData
-    var processedRowsByCalendar: Dictionary<String, Array<ASAProcessedRow>>
-    @Binding var now:  Date
-    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    //    var shouldShowTimeToNextDay:  Bool
-    var forComplications:  Bool
-    
-    var keys:  Array<String> {
-        get {
-            return Array(self.processedRowsByCalendar.keys).sorted()
-        } // get
-    } // var keys:  Array<String>
     
     var body:  some View {
-        ForEach(self.keys, id: \.self) {
+        let processedRows: [String : [ASAProcessedRow]] = self.rows.processedRowsByCalendar(now: now)
+        let keys: [String] = Array(processedRows.keys).sorted()
+
+        ForEach(keys, id: \.self) {
             key
             in
             Section(header: Text(verbatim: key).font(Font.headlineMonospacedDigit)) {
-                ForEach(self.processedRowsByCalendar[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
+                ForEach(processedRows[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
                     processedRow
                     in
                     
