@@ -141,10 +141,16 @@ struct ASARadioButtonLabel: View {
     var text: String?
     
     var body: some View {
-        let offColor = Color.gray
+        HStack {            
+            if on {
+                Image(systemName: "largecircle.fill.circle")
+                    .imageScale(.large)
+                    .foregroundColor(onColor)
+            } else {
+                Image(systemName: "circle")
+                    .imageScale(.large)
+            }
 
-        HStack {
-            ASARadioButtonSymbol(on: on, color: on ? onColor : offColor)
             if text != nil {
                 Text(NSLocalizedString(text!, comment: ""))
                     .modifier(ASAScalable(lineLimit: 1))

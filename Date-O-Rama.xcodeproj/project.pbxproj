@@ -43,7 +43,6 @@
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
-		A545068A26022E3B00801AC8 /* ASARadioButtonSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A545068926022E3B00801AC8 /* ASARadioButtonSymbol.swift */; };
 		A5490F982550339D00EFB13F /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5490F972550339D00EFB13F /* WatchFace.swift */; };
 		A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
@@ -415,7 +414,6 @@
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
-		A545068926022E3B00801AC8 /* ASARadioButtonSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARadioButtonSymbol.swift; sourceTree = "<group>"; };
 		A5490F972550339D00EFB13F /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPolarLighting.swift; sourceTree = "<group>"; };
@@ -610,7 +608,6 @@
 				A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */,
 				A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */,
 				A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */,
-				A545068926022E3B00801AC8 /* ASARadioButtonSymbol.swift */,
 			);
 			path = Symbols;
 			sourceTree = "<group>";
@@ -1375,7 +1372,6 @@
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
 				A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */,
 				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
-				A545068A26022E3B00801AC8 /* ASARadioButtonSymbol.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
