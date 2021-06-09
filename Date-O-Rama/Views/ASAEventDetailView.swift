@@ -50,7 +50,8 @@ struct ASAEventDetailView: View {
                 #else
                 let titleFont: Font = .title
                 #endif
-                Text(event.title)
+                let birthdayPrefix = event.isBirthdayEvent ? "🎂 " : ""
+                Text(birthdayPrefix + event.title)
                     .font(titleFont)
                 if event.location != nil {
                     Text(event.location!)

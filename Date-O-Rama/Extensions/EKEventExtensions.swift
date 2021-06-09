@@ -70,4 +70,8 @@ extension EKEvent:  ASAEventCompatible {
     var excludeRegionCodes: Array<String>? {
         return nil
     } // var excludeRegionCodes
+    
+    var isBirthdayEvent: Bool {
+        return (self.birthdayContactIdentifier != nil)
+    } // var isBirthdayEvent: Bool
 } // extension EKEvent:  ASAEventCompatible

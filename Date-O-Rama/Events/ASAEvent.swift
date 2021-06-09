@@ -61,6 +61,8 @@ struct ASAEvent:  ASAEventCompatible {
     
     var regionCodes: Array<String>?
     var excludeRegionCodes: Array<String>?
+    
+    var isBirthdayEvent: Bool = false
 } // struct ASAEvent
 
 
