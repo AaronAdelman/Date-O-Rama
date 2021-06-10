@@ -14,10 +14,6 @@ struct ASAComplicationClocksTab: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var isNavigationBarHidden:  Bool = true
     
-    //    fileprivate func saveUserData() {
-    //        self.userData.savePreferences(code: .complications)
-    //    } // func saveUserData()
-    
     func row(with key:  ASARowArrayKey) -> Array<ASARow> {
         switch key {
         case .threeLineLarge:
@@ -44,29 +40,17 @@ struct ASAComplicationClocksTab: View {
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                                 // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                                //                                ZStack {
                                 ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, forComplications: true)
-                                //                                NavigationLink(
-                                //                                    destination: ASAClockDetailView(selectedRow: row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
-                                //                                        .onReceive(row.objectWillChange) { _ in
-                                //                                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                //                                            self.userData.objectWillChange.send()
-                                //                                            self.saveUserData()
-                                //                                        }
-                                //                                ) {
-                                //                                }
-                                //                                .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-                                //                                }
                             }
                         }
                     }
                 }
                 .colorScheme(.dark)
+                .navigationBarHidden(self.isNavigationBarHidden)
+                .navigationBarTitle("", displayMode: .inline)
+                .navigationBarBackButtonHidden(true)
             }
         }
-        .navigationBarHidden(self.isNavigationBarHidden)
-        .navigationBarTitle("", displayMode: .inline)
-        .navigationBarBackButtonHidden(true)
         .onAppear {
             self.isNavigationBarHidden = true
         }
