@@ -30,12 +30,12 @@ struct ASAArrangementChooserView: View {
                     }
             }
         }
-        .navigationBarItems(trailing:
-                                Button("Cancel", action: {
-                                    self.didCancel = true
-                                    self.presentationMode.wrappedValue.dismiss()
-                                })
-        )
+//        .navigationBarItems(trailing:
+//                                Button("Cancel", action: {
+//                                    self.didCancel = true
+//                                    self.presentationMode.wrappedValue.dismiss()
+//                                })
+//        )
         .onAppear() {
             self.tempGroupingOption = self.selectedGroupingOption
         }
