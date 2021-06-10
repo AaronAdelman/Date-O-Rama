@@ -66,10 +66,9 @@ struct ASAComplicationClocksTab: View {
         }
         .navigationBarHidden(self.isNavigationBarHidden)
         .navigationBarTitle("", displayMode: .inline)
+        .navigationBarBackButtonHidden(true)
         .onAppear {
             self.isNavigationBarHidden = true
-        }
-        .onDisappear {
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .onReceive(timer) { input in

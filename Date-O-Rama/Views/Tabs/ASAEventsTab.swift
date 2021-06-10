@@ -157,10 +157,9 @@ struct ASAEventsTab: View {
             } // VStack
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
+            .navigationBarBackButtonHidden(true)
             .onAppear {
                 self.isNavigationBarHidden = true
-            }
-            .onDisappear {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

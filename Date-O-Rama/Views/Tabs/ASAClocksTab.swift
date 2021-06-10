@@ -120,10 +120,9 @@ struct ASAClocksTab: View {
                 }
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
+                .navigationBarBackButtonHidden(true)
                 .onAppear {
                     self.isNavigationBarHidden = true
-                }
-                .onDisappear {
                 }
             } // VStack
         }.navigationViewStyle(StackNavigationViewStyle())
