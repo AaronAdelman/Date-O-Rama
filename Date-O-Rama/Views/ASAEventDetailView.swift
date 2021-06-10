@@ -50,7 +50,7 @@ struct ASAEventDetailView: View {
                 #else
                 let titleFont: Font = .title
                 #endif
-                let birthdayPrefix = event.isBirthdayEvent ? "🎂 " : ""
+                let birthdayPrefix = event.category == .birthday ? "🎂 " : ""
                 Text(birthdayPrefix + event.title)
                     .font(titleFont)
                 if event.location != nil {
@@ -582,6 +582,6 @@ struct ASAEKParticipantView: View {
 
 struct ASAEventDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland), row: ASARow.generic)
+        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland, category: .generic), row: ASARow.generic)
     }
 }

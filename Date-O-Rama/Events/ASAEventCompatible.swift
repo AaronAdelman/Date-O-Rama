@@ -48,7 +48,8 @@ protocol ASAEventCompatible {
     var regionCodes:  Array<String>? { get }
     var excludeRegionCodes:  Array<String>? { get }
 
-    var isBirthdayEvent: Bool { get }
+//    var isBirthdayEvent: Bool { get }
+    var category: ASAEventCategory { get }
 } // protocol ASAEventCompatible
 
 

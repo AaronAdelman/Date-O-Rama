@@ -55,7 +55,7 @@ struct ASAEventCell:  View {
     }
 
     var body: some View {
-        let birthdayPrefix = event.isBirthdayEvent ? "🎂 " : "" // To be prepended to an event title to show whether it is a birthday
+        let birthdayPrefix = event.category == .birthday ? "🎂 " : "" // To be prepended to an event title to show whether it is a birthday
 
         #if os(watchOS)
         HStack {

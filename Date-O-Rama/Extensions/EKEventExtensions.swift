@@ -71,7 +71,15 @@ extension EKEvent:  ASAEventCompatible {
         return nil
     } // var excludeRegionCodes
     
-    var isBirthdayEvent: Bool {
-        return (self.birthdayContactIdentifier != nil)
-    } // var isBirthdayEvent: Bool
+//    var isBirthdayEvent: Bool {
+//        return (self.birthdayContactIdentifier != nil)
+//    } // var isBirthdayEvent: Bool
+    
+    var category: ASAEventCategory {
+        if self.birthdayContactIdentifier != nil {
+            return .birthday
+        } else {
+            return .generic
+        }
+    }
 } // extension EKEvent:  ASAEventCompatible
