@@ -830,10 +830,10 @@
 				A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */,
 				A5BFC5B6246B29600075AF58 /* ASAEvent.swift */,
 				A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */,
+				A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */,
 				A5790194259263A300224666 /* ASAEventCompatible.swift */,
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */,
-				A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";

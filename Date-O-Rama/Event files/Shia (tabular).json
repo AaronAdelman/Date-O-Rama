@@ -175,7 +175,7 @@
             "titles":  {"en":  "Celebration:  Death of Yazid"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  14
-            }
+            }, "category": "deathAnniversary"
         },
         {
             "titles":  {"en":  "Remembrance:  First mosque (Quba Mosque) was established, 1 AH"},
@@ -229,7 +229,7 @@
             "titles":  {"en":  "Mourning:  Death of Umm ul-Banin (mother of Abbas ibn Ali)"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  13
-            }
+            }, "category": "deathAnniversary"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Fatimah bint Muhammad, 8 BH"},
@@ -271,7 +271,7 @@
             "titles":  {"en":  "Remembrance:  Death of Abraham"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  18
-            }
+            }, "category": "deathAnniversary"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Sukaynah bint Husayn"},
@@ -367,7 +367,7 @@
             "titles":  {"en":  "Mourning:  Death of Khadijah bint Khuwaylid"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  10
-            }
+            }, "category": "deathAnniversary"
         },
         {
             "titles":  {"en":  "Remembrance:  Descending of the Gospel (according to one narration)"},

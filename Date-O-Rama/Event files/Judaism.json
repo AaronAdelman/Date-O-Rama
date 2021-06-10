@@ -117,8 +117,8 @@
             "lengthsOfYear": [383, 384, 385]
         },
         "endDateSpecification": {"type": "allDay", "month": 7, "day": 1}},
-        {"titles": {"he": "יום־שנה של משה רבנו", "en": "Yortsayt of Mosheh Rabbenu"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 7,
-        }},
+        {"titles": {"he": "יום־שנה של משה רבנו", "en": "Yohrtsayt of Mosheh Rabbenu"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 7,
+        }, "category": "deathAnniversary"},
         {"titles": {"he": "פורים קטן", "en": "Purim Qaṭan"}, "startDateSpecification": {"type": "allDay", "month": 6, "day": 14,
         }},
         {"titles": {"he": "תענית אסתר", "en": "Fast of ’Ester"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 13,
