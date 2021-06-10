@@ -48,7 +48,6 @@ protocol ASAEventCompatible {
     var regionCodes:  Array<String>? { get }
     var excludeRegionCodes:  Array<String>? { get }
 
-//    var isBirthdayEvent: Bool { get }
     var category: ASAEventCategory { get }
 } // protocol ASAEventCompatible
 
@@ -124,4 +123,8 @@ extension ASAEventCompatible {
         
         return nil
     } // var currentUser: EKParticipant?
+    
+    var emoji: String? {
+        return self.category.emoji
+    } // var emoji
 } // extension ASAEventCompatible

@@ -9,12 +9,6 @@
 import Foundation
 import EventKit
 
-enum ASAEventCategory: String, Codable {
-    case generic
-    case birthday
-} // enum ASAEventCategory
-
-
 class ASAEventSpecification: Codable {
     var titles:  Dictionary<String, String>?
     var locations: Dictionary<String, String>?

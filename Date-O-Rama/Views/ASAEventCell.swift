@@ -55,14 +55,15 @@ struct ASAEventCell:  View {
     }
 
     var body: some View {
-        let birthdayPrefix = event.category == .birthday ? "🎂 " : "" // To be prepended to an event title to show whether it is a birthday
+        let eventEmoji = event.emoji
+        let emojiPrefix = eventEmoji != nil ? eventEmoji! + " " : ""
 
         #if os(watchOS)
         HStack {
             ASAEventColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
-                Text(birthdayPrefix + event.title).font(.callout).bold().foregroundColor(labelColor)
+                Text(emojiPrefix + event.title).font(.callout).bold().foregroundColor(labelColor)
                     .modifier(ASAScalable(lineLimit: 2))
                                 
                 if !event.isAllDay {
@@ -87,12 +88,12 @@ struct ASAEventCell:  View {
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
                 if self.compact {
-                    Text(birthdayPrefix + event.title)
+                    Text(emojiPrefix + event.title)
                         .font(.callout)
                         .bold().foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 } else {
-                    Text(birthdayPrefix + event.title)
+                    Text(emojiPrefix + event.title)
                         .font(.headline).foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
