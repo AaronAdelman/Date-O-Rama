@@ -24,7 +24,7 @@ struct ASAClocksTab: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    @State var isNavBarHidden:  Bool = true
+    @State var isNavigationBarHidden:  Bool = true
 
     @State private var showingPreferences:  Bool = false
     
@@ -118,9 +118,10 @@ struct ASAClocksTab: View {
                 .sheet(isPresented: self.$showingNewClockDetailView) {
                     ASANewClockDetailView(now:  now)
                 }
-                .navigationBarHidden(self.isNavBarHidden)
+                .navigationBarHidden(self.isNavigationBarHidden)
+                .navigationBarTitle("", displayMode: .inline)
                 .onAppear {
-                    self.isNavBarHidden = true
+                    self.isNavigationBarHidden = true
                 }
                 .onDisappear {
                 }

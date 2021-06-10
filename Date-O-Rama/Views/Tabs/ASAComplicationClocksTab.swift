@@ -12,7 +12,7 @@ struct ASAComplicationClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var isNavBarHidden:  Bool = true
+    @State var isNavigationBarHidden:  Bool = true
     
     //    fileprivate func saveUserData() {
     //        self.userData.savePreferences(code: .complications)
@@ -64,9 +64,10 @@ struct ASAComplicationClocksTab: View {
                 .colorScheme(.dark)
             }
         }
-        .navigationBarHidden(self.isNavBarHidden)
+        .navigationBarHidden(self.isNavigationBarHidden)
+        .navigationBarTitle("", displayMode: .inline)
         .onAppear {
-            self.isNavBarHidden = true
+            self.isNavigationBarHidden = true
         }
         .onDisappear {
         }

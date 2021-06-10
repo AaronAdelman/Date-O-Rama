@@ -68,7 +68,7 @@ struct ASAEventsTab: View {
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
 
-    @State var isNavBarHidden:  Bool = true
+    @State var isNavigationBarHidden:  Bool = true
     
     fileprivate func enoughRowsToShowSecondaryDates() -> Bool {
         return self.userData.mainRows.count > 1
@@ -155,9 +155,10 @@ struct ASAEventsTab: View {
                 } // List
 
             } // VStack
-            .navigationBarHidden(self.isNavBarHidden)
+            .navigationBarHidden(self.isNavigationBarHidden)
+            .navigationBarTitle("", displayMode: .inline)
             .onAppear {
-                self.isNavBarHidden = true
+                self.isNavigationBarHidden = true
             }
             .onDisappear {
             }
