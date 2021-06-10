@@ -9,6 +9,12 @@
 import Foundation
 import EventKit
 
+enum ASAEventCategory: String, Codable {
+    case generic
+    case birthday
+} // enum ASAEventCategory
+
+
 class ASAEventSpecification: Codable {
     var titles:  Dictionary<String, String>?
     var locations: Dictionary<String, String>?
@@ -28,6 +34,8 @@ class ASAEventSpecification: Codable {
         
     var urls: Dictionary<String, URL>? // URLs for the calendar item, indexed by locale code.
     var notes: Dictionary<String, String>? // The notes associated with the calendar item, indexed by locale code.
+    
+    var category: ASAEventCategory?
 } // extension ASAEventSpecification
 
 

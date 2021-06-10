@@ -15,10 +15,10 @@
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Arba'een"}
         },
         {
-            "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי (שיעי)", "ar":  "مَولِد النَّبِي‎ (شيعي)"},
+            "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי", "ar":  "مَولِد النَّبِي‎"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  17
-            }, "urls": {"en": "https://en.wikipedia.org/wiki/Mawlid"}
+            }, "urls": {"en": "https://en.wikipedia.org/wiki/Mawlid"}, "category": "birthday"
         },
         {
             "titles":  {"en":  "Eid al-Ghadeer (Event of Ghadir Khumm)", "he":  "חדית׳ ע׳דיר ח׳ם", "ar":  "حَدِيْث ٱلْغَدِيْر‎", "fa":  "رویداد غدیر خم‎"},
@@ -48,13 +48,13 @@
             "titles":  {"en":  "Birthday of ‘Alī ibn Abī Ṭālib", "he":  "יום הולדת של עלי אבן אבי טאלב", "ar":  "عيد ميلاد علي بن أبي طالب"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  13
-            }, "urls": {"en": "https://en.wikipedia.org/wiki/Shia_view_of_Ali"}
+            }, "urls": {"en": "https://en.wikipedia.org/wiki/Shia_view_of_Ali"}, "category": "birthday"
         },
         {
             "titles":  {"en":  "Birthday of Ḥujjat Allāh al-Mahdī", "he":  "יום הולדת של חוג׳ת־אללה אל־מהדי", "ar":  "عيد ميلاد حجة الله المهدي"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  15
-            }, "urls": {"en": "https://en.wikipedia.org/wiki/Muhammad_al-Mahdi"}
+            }, "urls": {"en": "https://en.wikipedia.org/wiki/Muhammad_al-Mahdi"}, "category": "birthday"
         },
         
         {
@@ -127,7 +127,7 @@
             "titles":  {"en":  "Remembrance: Birth of Imam Musa al-Kadhim, 128 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  7
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Ruqayyah bint Husayn, youngest daughter of Husayn ibn Ali and a prisoner of Karbalā, Mourning:  30th day after ʿĀshūrāʾ, Remembrance: Victory to Ali in the Battle of Nahrawan"},
@@ -139,7 +139,7 @@
             "titles":  {"en":  "Remembrance:  Birth of Salman the Persian"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  12
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Ali ar-Ridha, 203 AH"},
@@ -187,19 +187,19 @@
             "titles":  {"en":  "Celebration:  Birth of Ja'far al-Sadiq, 83 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  17
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Umm Kulthum bint Ali"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  3, "day":  18
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Hasan al-Askari, 232 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  4, "day":  8
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Remembrance:  Battle of the Camel"},
@@ -217,7 +217,7 @@
             "titles":  {"en":  "Celebration:  Birth of Ali ibn Husayn Zayn al-Abidin, 37 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  5, "day":  15
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH (alternate date)"},
@@ -235,7 +235,7 @@
             "titles":  {"en":  "Celebration:  Birth of Fatimah bint Muhammad, 8 BH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  6, "day":  20
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Ali al-Hadi"},
@@ -247,19 +247,19 @@
             "titles":  {"en":  "Celebration:  Birth of Muhammad al-Baqir, 57 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  1
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Abbas ibn Ali, 36 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  7
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Muhammad al-Taqi, 195 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  10
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Ja'far al-Sadiq"},
@@ -277,19 +277,19 @@
             "titles":  {"en":  "Celebration:  Birth of Sukaynah bint Husayn"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  20
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Koo'nda (table cloth dinner)"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  22
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Ali al-Asghar ibn Husayn"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  7, "day":  24
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Musa al-Kadhim"},
@@ -319,43 +319,43 @@
             "titles":  {"en":  "Celebration:  Birth of Zaynab bint Ali, 6 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  1
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Husayn ibn Ali, 4 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  3
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Abbas ibn Ali"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  4
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Ali ibn Husayn Zayn al-Abidin"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  5
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Ali al-Akbar ibn Husayn"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  11
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Qasim ibn Hasan, Remembrance:  Laylat al Bara'at"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  14
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Celebration:  Birth of Ruqayyah bint Husayn"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  8, "day":  17
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Remembrance:  Descending of the Torah (according to one narration)"},
@@ -385,7 +385,7 @@
             "titles":  {"en":  "Celebration:  Birth of Hasan ibn Ali"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  9, "day":  15
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Remembrance:  Battle of Badr"},
@@ -457,7 +457,7 @@
             "titles":  {"en":  "Remembrance:  Birth of Fatimah bint Musa"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  1
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Remembrance:  Treaty of Hudaybiyyah was executed, 6 AH"},
@@ -469,7 +469,7 @@
             "titles":  {"en":  "Celebration:  Birth of Ali ar-Ridha, 148 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  11, "day":  11
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Remembrance:  Dahwul Ardh (Spreading of the Earth)"},
