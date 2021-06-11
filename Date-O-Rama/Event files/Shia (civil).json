@@ -433,7 +433,7 @@
             "titles":  {"en":  "Remembrance:  Marriage of Khadijah bint Khuwaylid to Muhammad"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  10, "day":  9
-            }
+            }, "category": "weddingAnniversary"
         },
         {
             "titles":  {"en":  "Remembrance:  Major Occultation of Muhammad al-Mahdi begins"},
@@ -487,7 +487,7 @@
             "titles":  {"en":  "Remembrance:  Marriage of Fatimah bint Muhammad to Ali, 2 BH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  1
-            }
+            }, "category": "weddingAnniversary"
         },
         {
             "titles":  {"en":  "Remembrance:  Renunciation of Adam accepted"},

@@ -12,18 +12,21 @@ enum ASAEventCategory: String, Codable {
     case generic
     case birthday
     case deathAnniversary
+    case weddingAnniversary
 } // enum ASAEventCategory
 
 
 extension ASAEventCategory {
     var emoji: String? {
         switch self {
-        case .generic:
-            return nil
         case .birthday:
             return "🎂"
         case .deathAnniversary:
             return "🪦"
+        case .weddingAnniversary:
+            return "💍"
+        default:
+            return nil
         } // switch self
     } // var emoji
 } // extension ASAEventCategory
