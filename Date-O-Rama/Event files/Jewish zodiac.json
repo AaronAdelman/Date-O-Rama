@@ -12,7 +12,7 @@
     {"titles": {"en": "♉︎ Taurus", "he": "♉︎ שור"}, "startDateSpecification": {"type": "allMonth", "month": 9}},
     {"titles": {"en": "♊︎ Gemini", "he": "♊︎ תאומים"}, "startDateSpecification": {"type": "allMonth", "month": 10}},
     {"titles": {"en": "♋︎ Cancer", "he": "♋︎ סרטן"}, "startDateSpecification": {"type": "allMonth", "month": 11}},
-    {"titles": {"en": "♌︎ Leo", "he": "♌︎ ארהי"}, "startDateSpecification": {"type": "allMonth", "month": 12}},
+    {"titles": {"en": "♌︎ Leo", "he": "♌︎ אריה"}, "startDateSpecification": {"type": "allMonth", "month": 12}},
     {"titles": {"en": "♍︎ Virgo", "he": "♍︎ בתולה"}, "startDateSpecification": {"type": "allMonth", "month": 13}},
     {"titles": {"en": "♎︎ Libra", "he": "♎︎ מאזניים"}, "startDateSpecification": {"type": "allMonth", "month": 1}},
     {"titles": {"en": "♏︎ Scorpio", "he": "♏︎ עקרב"}, "startDateSpecification": {"type": "allMonth", "month": 2}},

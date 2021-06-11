@@ -20,7 +20,7 @@
         {"titles": {"en": "♋︎ Cancer", "he": "♋︎ סרטן"}, "startDateSpecification": {
             "type": "allDay", "month": 6, "day": 21}, "endDateSpecification": {
                 "type": "allDay", "month": 7, "day": 22}},
-        {"titles": {"en": "♌︎ Leo", "he": "♌︎ ארהי"}, "startDateSpecification": {
+        {"titles": {"en": "♌︎ Leo", "he": "♌︎ אריה"}, "startDateSpecification": {
             "type": "allDay", "month": 7, "day": 23}, "endDateSpecification": {
                 "type": "allDay", "month": 8, "day": 22}},
         {"titles": {"en": "♍︎ Virgo", "he": "♍︎ בתולה"}, "startDateSpecification": {
