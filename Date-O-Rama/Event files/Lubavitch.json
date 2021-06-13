@@ -14,7 +14,7 @@
                 "type":  "allDay",
                 "month":  3,
                 "day":  9
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/9"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/9"}, "category": "deathAnniversary"
         },
         {
             "titles":  {"he":  "יום גאולה של רבי דובער שניאור", "en":  "Yud Kislev"},
@@ -46,7 +46,7 @@
                 "type":  "allDay",
                 "month":  4,
                 "day":  24
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=10/24"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=10/24"}, "category": "deathAnniversary"
         },
         {
             "titles":  {"he":  "יום־שנה של רבי יוסף יצחק שניאורסאהן", "en":  "Yud Shvat"},
@@ -54,7 +54,7 @@
                 "type":  "allDay",
                 "month":  5,
                 "day":  10
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=11/10"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=11/10"}, "category": "deathAnniversary"
         },
         {
             "titles":  {"he":  "יום־שנה של חיה מושקא שניאורסון", "en":  "Chof Beis Shvat"},
@@ -62,7 +62,7 @@
                 "type":  "allDay",
                 "month":  5,
                 "day":  22
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=11/22"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=11/22"}, "category": "deathAnniversary"
         },
         {
             "titles":  {"he":  "יום הולדת של רבי מנחם מנדל שניאורסון", "en":  "Yud Aleph Nissan"},
@@ -70,7 +70,7 @@
                 "type":  "allDay",
                 "month":  8,
                 "day":  11
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=1/11"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=1/11"}, "category": "birthday"
         },
         {
             "titles":  {"he":  "יום הולדת של רבי שמואל שניאורסון", "en":  "Beis Iyar"},
@@ -78,7 +78,7 @@
                 "type":  "allDay",
                 "month":  9,
                 "day":  2
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=2/2"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=2/2"}, "category": "birthday"
         },
         {
             "titles":  {"he":  "יום־שנה של רבי מנחם מנדל שניאורסון", "en":  "Gimmel Tammuz"},
@@ -86,7 +86,7 @@
                 "type":  "allDay",
                 "month":  11,
                 "day":  3
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=4/3"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=4/3"}, "category": "deathAnniversary"
         },
         {
             "titles":  {"he":  "יום גאולה של יוסף יצחק שניאורסאהן", "en":  "Yud Beis-Yud Gimmel Tammuz"},
@@ -115,7 +115,7 @@
                 "type":  "allDay",
                 "month":  13,
                 "day":  18
-            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=6/18"}
+            }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=6/18"}, "category": "birthday"
         }
     ]
 }
