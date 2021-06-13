@@ -49,6 +49,7 @@ protocol ASAEventCompatible {
     var excludeRegionCodes:  Array<String>? { get }
 
     var category: ASAEventCategory { get }
+    var emoji: String? { get }
 } // protocol ASAEventCompatible
 
 
@@ -124,7 +125,11 @@ extension ASAEventCompatible {
         return nil
     } // var currentUser: EKParticipant?
     
-    var emoji: String? {
+    var symbol: String? {
+        if self.emoji != nil {
+            return self.emoji!
+        }
+        
         return self.category.emoji
     } // var emoji
 } // extension ASAEventCompatible

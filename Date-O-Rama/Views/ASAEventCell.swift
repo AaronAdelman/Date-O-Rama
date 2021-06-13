@@ -55,15 +55,15 @@ struct ASAEventCell:  View {
     }
 
     var body: some View {
-        let eventEmoji = event.emoji
-        let emojiPrefix = eventEmoji != nil ? eventEmoji! + " " : ""
+        let eventSymbol = event.symbol
+        let symbolPrefix = eventSymbol != nil ? eventSymbol! + " " : ""
 
         #if os(watchOS)
         HStack {
             ASAEventColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
-                Text(emojiPrefix + event.title).font(.callout).bold().foregroundColor(labelColor)
+                Text(symbolPrefix + event.title).font(.callout).bold().foregroundColor(labelColor)
                     .modifier(ASAScalable(lineLimit: 2))
                                 
                 if !event.isAllDay {
@@ -88,12 +88,12 @@ struct ASAEventCell:  View {
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
                 if self.compact {
-                    Text(emojiPrefix + event.title)
+                    Text(symbolPrefix + event.title)
                         .font(.callout)
                         .bold().foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 } else {
-                    Text(emojiPrefix + event.title)
+                    Text(symbolPrefix + event.title)
                         .font(.headline).foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }

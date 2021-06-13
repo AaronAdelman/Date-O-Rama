@@ -78,4 +78,8 @@ extension EKEvent:  ASAEventCompatible {
             return .generic
         }
     } // var category
+    
+    var emoji: String? {
+        return nil
+    }
 } // extension EKEvent:  ASAEventCompatible

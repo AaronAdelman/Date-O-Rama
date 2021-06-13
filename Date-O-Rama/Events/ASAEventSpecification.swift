@@ -30,6 +30,7 @@ class ASAEventSpecification: Codable {
     var notes: Dictionary<String, String>? // The notes associated with the calendar item, indexed by locale code.
     
     var category: ASAEventCategory?
+    var emoji: String?
 } // extension ASAEventSpecification
 
 
