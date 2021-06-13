@@ -29,6 +29,14 @@ enum ASAEventCategory: String, Codable {
     case Aquarius
     case Pisces
     
+    // Classical planets
+    case Sun
+    case Moon
+    case Mercury
+    case Venus
+    case Mars
+    case Jupiter
+    case Saturn
 } // enum ASAEventCategory
 
 
@@ -41,6 +49,7 @@ extension ASAEventCategory {
             return "🪦"
         case .weddingAnniversary:
             return "💍"
+            
         case .Aries:
             return "♈️"
         case .Taurus:
@@ -67,6 +76,21 @@ extension ASAEventCategory {
             return "♒️"
         case .Pisces:
             return "♓️"
+            
+        case .Sun:
+            return "☉"
+        case .Moon:
+            return "☾"
+        case .Mercury:
+            return "☿"
+        case .Venus:
+            return "♀︎"
+        case .Mars:
+            return "♂︎"
+        case .Jupiter:
+            return "♃"
+        case .Saturn:
+            return "♄"
         
         default:
             return nil
