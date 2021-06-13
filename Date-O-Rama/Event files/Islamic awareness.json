@@ -26,7 +26,7 @@
             "startDateSpecification":  { "type":  "allDay",
                 "month":  2, "day":  1
             },
-            "urls": {"en": "https://en.wikipedia.org/wiki/World_Hijab_Day"}
+            "urls": {"en": "https://en.wikipedia.org/wiki/World_Hijab_Day"}, "emoji": "🧕"
         },
         {
             "titles":  {"en":  "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
