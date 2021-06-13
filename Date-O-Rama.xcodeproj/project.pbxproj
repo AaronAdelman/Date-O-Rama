@@ -243,8 +243,8 @@
 		A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7762665594600F47416 /* Localizable.stringsdict */; };
 		A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5BDE77A26661F7500F47416 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
-		A5BDE77C26677E7900F47416 /* Islamic PR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic PR.json */; };
-		A5BDE77D26677E7900F47416 /* Islamic PR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic PR.json */; };
+		A5BDE77C26677E7900F47416 /* Islamic awareness.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic awareness.json */; };
+		A5BDE77D26677E7900F47416 /* Islamic awareness.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77B26677E7900F47416 /* Islamic awareness.json */; };
 		A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77E266784EE00F47416 /* Ahmadiyya.json */; };
 		A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE77E266784EE00F47416 /* Ahmadiyya.json */; };
 		A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7812667877E00F47416 /* Shia (Gregorian).json */; };
@@ -497,7 +497,7 @@
 		A5BDE7752665594600F47416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A5BDE7772665594D00F47416 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = he; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventSpecification.swift; sourceTree = "<group>"; };
-		A5BDE77B26677E7900F47416 /* Islamic PR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islamic PR.json"; sourceTree = "<group>"; };
+		A5BDE77B26677E7900F47416 /* Islamic awareness.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islamic awareness.json"; sourceTree = "<group>"; };
 		A5BDE77E266784EE00F47416 /* Ahmadiyya.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ahmadiyya.json; sourceTree = "<group>"; };
 		A5BDE7812667877E00F47416 /* Shia (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Shia (Gregorian).json"; sourceTree = "<group>"; };
 		A5BDE78426678B1600F47416 /* Nation of Islam.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Nation of Islam.json"; sourceTree = "<group>"; };
@@ -640,7 +640,7 @@
 				A5D3015B24EBDFF8003E79E9 /* Islam (general, tabular).json */,
 				A5D3015C24EBDFF8003E79E9 /* Islam (general, Umm Al-Qura).json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
-				A5BDE77B26677E7900F47416 /* Islamic PR.json */,
+				A5BDE77B26677E7900F47416 /* Islamic awareness.json */,
 				A5BDE79F2667B66800F47416 /* Israel (Gregorian).json */,
 				A5E3606524C756FF0000A268 /* Israel.json */,
 				A56F0DA025F1705200301969 /* Jewish zodiac.json */,
@@ -1148,7 +1148,7 @@
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5BDE7952667B17000F47416 /* Shia (tabular).json in Resources */,
-				A5BDE77D26677E7900F47416 /* Islamic PR.json in Resources */,
+				A5BDE77D26677E7900F47416 /* Islamic awareness.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
 			);
@@ -1186,7 +1186,7 @@
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5E3606424C71FBC0000A268 /* Judaism.json in Resources */,
-				A5BDE77C26677E7900F47416 /* Islamic PR.json in Resources */,
+				A5BDE77C26677E7900F47416 /* Islamic awareness.json in Resources */,
 				A5BDE7AC2667E34900F47416 /* Antisemitism (Islamic Umm Al-Qura).json in Resources */,
 				A5BDE7902667B17000F47416 /* Shia (Umm Al-Qura).json in Resources */,
 				A5BDE7AA2667E34900F47416 /* Antisemitism (Islamic tabular).json in Resources */,

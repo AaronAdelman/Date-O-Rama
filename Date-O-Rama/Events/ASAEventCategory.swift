@@ -14,6 +14,10 @@ enum ASAEventCategory: String, Codable {
     case deathAnniversary
     case weddingAnniversary
     
+    // Sun
+    case Sunrise
+    case Sunset
+    
     // Zodiac signs
     case Aries
     case Taurus
@@ -49,6 +53,11 @@ extension ASAEventCategory {
             return "🪦"
         case .weddingAnniversary:
             return "💍"
+            
+        case .Sunrise:
+            return "🌅"
+        case .Sunset:
+            return "🌇"
             
         case .Aries:
             return "♈️"

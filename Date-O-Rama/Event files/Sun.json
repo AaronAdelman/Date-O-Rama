@@ -10,9 +10,9 @@
     "eventSpecifications":  [
         {
             "titles":  {
-                "en":  "🌅 Sunrise",
-                "he":  "🌅 נץ החמה"
-            },
+                "en":  "Sunrise",
+                "he":  "נץ החמה"
+            }, "category": "Sunrise",
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
@@ -22,9 +22,9 @@
         },
         {
             "titles":  {
-                "en":  "🌇 Sunset",
-                "he":  "🌇 שקיעת החמה"
-            },
+                "en":  "Sunset",
+                "he":  "שקיעת החמה"
+            }, "category": "Sunset",
             "startDateSpecification":  {
                 "type":  "degreesBelowHorizon",
                 "degreesBelowHorizon":  0.8333333333,
