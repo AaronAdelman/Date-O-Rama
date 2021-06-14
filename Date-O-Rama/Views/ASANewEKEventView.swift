@@ -348,6 +348,7 @@ struct ASANewEKEventView: View {
                                 .tag(value)
                         } // ForEach
                     } // Picker
+                    
                     if self.recurrenceRule == .custom {
                         Picker("Event Frequency", selection:  self.$type) {
                             ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
@@ -488,6 +489,8 @@ struct ASANewEKEventView: View {
                                     .tag(value)
                             } // ForEach
                         } // Picker
+                        .pickerStyle(SegmentedPickerStyle())
+
                         if self.recurrenceEndType == .endDate {
                             HStack {
                                 Text("•")
@@ -508,6 +511,8 @@ struct ASANewEKEventView: View {
                                 .tag(value)
                         } // ForEach
                     } // Picker
+                    .pickerStyle(SegmentedPickerStyle())
+                    
                     if self.alarmType == .absoluteDate {
                         HStack {
                             Text("•")
