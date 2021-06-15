@@ -120,7 +120,46 @@ struct ASAClockCellBody:  View {
     
     var body: some View {
         HStack {
-            ASAClockMainSubcell(processedRow: processedRow, shouldShowCalendar: shouldShowCalendar, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowTime: shouldShowTime, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: canSplitTimeFromDate)
+            VStack(alignment: .leading) {
+                if shouldShowCalendar {
+                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
+                }
+                
+                if canSplitTimeFromDate {
+                    if shouldShowFormattedDate {
+                        #if os(watchOS)
+                        let LINE_LIMIT = 1
+                        #else
+                        let LINE_LIMIT = 2
+                        #endif
+                        ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
+                    }
+                    if shouldShowTime {
+                        HStack {
+                            if !shouldShowPlaceName && processedRow.usesDeviceLocation {
+                                ASALocationSymbol()
+                            }
+                            
+                            let timeString: String = processedRow.timeString ?? ""
+                            let string = (processedRow.supportsTimeZones && shouldShowTimeZone) ? timeString + " · " + processedRow.timeZoneString : timeString
+                            ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  1)
+                        }
+                    }
+                } else {
+                    HStack {
+                        if !shouldShowPlaceName && processedRow.usesDeviceLocation {
+                            ASALocationSymbol()
+                        }
+                        
+                        if shouldShowFormattedDate {
+                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
+                        }
+                    }
+                }
+                
+                ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
+                )
+            } // VStack
             
             #if os(watchOS)
             if processedRow.events.count > 0 {
@@ -230,63 +269,6 @@ struct ASAClockEventsForEach:  View {
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach
-
-
-// MARK:  -
-
-struct ASAClockMainSubcell:  View {
-    var processedRow:  ASAProcessedRow
-    var shouldShowCalendar:  Bool
-    var shouldShowFormattedDate:  Bool
-    var shouldShowTime:  Bool
-    var shouldShowPlaceName:  Bool
-    var shouldShowTimeZone:  Bool
-    var shouldShowMiniCalendar:  Bool
-    var canSplitTimeFromDate:  Bool
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            if shouldShowCalendar {
-                ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
-            }
-            
-            if canSplitTimeFromDate {
-                if shouldShowFormattedDate {
-                    #if os(watchOS)
-                    let LINE_LIMIT = 1
-                    #else
-                    let LINE_LIMIT = 2
-                    #endif
-                    ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
-                }
-                if shouldShowTime {
-                    HStack {
-                        if !shouldShowPlaceName && processedRow.usesDeviceLocation {
-                            ASALocationSymbol()
-                        }
-                        
-                        let timeString: String = processedRow.timeString ?? ""
-                        let string = (processedRow.supportsTimeZones && shouldShowTimeZone) ? timeString + " · " + processedRow.timeZoneString : timeString
-                        ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  1)
-                    }
-                }
-            } else {
-                HStack {
-                    if !shouldShowPlaceName && processedRow.usesDeviceLocation {
-                        ASALocationSymbol()
-                    }
-                    
-                    if shouldShowFormattedDate {
-                        ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
-                    }
-                }
-            }
-            
-            ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
-            )
-        } // VStack
-    } // var body
-} // struct ASAClockMainSubcell
 
 
 // MARK:  -
