@@ -342,12 +342,14 @@ struct ASANewEKEventView: View {
                                 self.startDate = self.endDate
                             }
                         })
-                    Picker("Event Recurrence", selection: $recurrenceRule) {
-                        ForEach(ASARecurrenceType.allCases, id: \.rawValue) { value in
-                            Text(value.localizedName)
-                                .tag(value)
-                        } // ForEach
-                    } // Picker
+                    
+                    NavigationLink(destination: ASARecurrenceTypeChooserView(selectedRecurrenceType: $recurrenceRule)) {
+                        HStack {
+                            Text("Event Recurrence")
+                            Spacer()
+                            Text(NSLocalizedString(recurrenceRule.rawValue, comment: ""))
+                        } // HStack
+                    }
                     
                     if self.recurrenceRule == .custom {
                         Picker("Event Frequency", selection:  self.$type) {
@@ -551,7 +553,7 @@ struct ASANewEKEventView: View {
                             self.didSetCalendarIndex = true
                         }
                     }
-
+                    // TODO:  Change so we can turn the Form into a List
                 } // Section
 
                 Section {
