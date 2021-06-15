@@ -291,35 +291,35 @@ struct ASANewEKEventView: View {
 
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Section {
                     HStack {
                         Spacer().frame(width:  HORIZONTAL_PADDING)
-
+                        
                         Button("Cancel") {
                             self.showingActionSheet = true
                         }
-
+                        
                         Spacer()
-
+                        
                         Text("New Event").bold()
-
+                        
                         Spacer()
-
+                        
                         if self.title.count != 0 {
                             Button("Add") {
                                 self.showingActionSheet = false
-
+                                
                                 addNewEvent()
-
+                                
                                 self.dismiss()
                             }
                         }
-
+                        
                         Spacer().frame(width:  HORIZONTAL_PADDING)
                     } // HStack
                 } // Section
-
+                
                 Section {
                     TextField("Event Title", text: self.$title)
                     TextField("Event Location", text: self.$location)
@@ -360,17 +360,17 @@ struct ASANewEKEventView: View {
                             } // ForEach
                         } // Picker
                         .pickerStyle(SegmentedPickerStyle())
-
+                        
                         let GregorianCalendar: Calendar = {
                             var calendar = Calendar(identifier: .gregorian)
                             calendar.locale = Locale.current
                             return calendar
                         }()
-
+                        
                         switch self.type {
                         case .daily:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
-
+                            
                         case .weekly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
                             let symbols: [String] = GregorianCalendar.standaloneWeekdaySymbols
@@ -398,10 +398,10 @@ struct ASANewEKEventView: View {
                                     }
                                 } // HStack
                             } // ForEach
-
+                        
                         case .monthly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
-
+                            
                             Picker("Monthly recurrence", selection: self.$recurrenceMonthly) {
                                 ForEach(ASARecurrenceMonthly.allCases, id: \.rawValue) { value in
                                     Text(value.text)
@@ -409,7 +409,7 @@ struct ASANewEKEventView: View {
                                 } // ForEach
                             }
                             .pickerStyle(SegmentedPickerStyle())
-
+                            
                             if self.recurrenceMonthly == .byDayOfMonth {
                                 let DAYS_PER_MONTH = 31
                                 let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
@@ -437,11 +437,11 @@ struct ASANewEKEventView: View {
                                     } // HStack
                                 } // ForEach
                             }
-
+                            
                             if self.recurrenceMonthly == .byDayOfWeekAndWeekNumber {
                                 ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
                             }
-
+                            
                         case .yearly:
                             ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
                             let symbols: [String] = GregorianCalendar.standaloneMonthSymbols
@@ -480,11 +480,11 @@ struct ASANewEKEventView: View {
                             if self.recurrenceYearly == .byDayOfWeekAndWeekNumber {
                                 ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
                             }
-
+                            
                         @unknown default:
                             Text("Unknown default")
                         } // switch self.type
-
+                        
                         Picker("Event Recurrence end", selection: self.$recurrenceEndType) {
                             ForEach(ASARecurrenceEndType.allCases, id: \.rawValue) { value in
                                 Text(value.text)
@@ -492,7 +492,7 @@ struct ASANewEKEventView: View {
                             } // ForEach
                         } // Picker
                         .pickerStyle(SegmentedPickerStyle())
-
+                        
                         if self.recurrenceEndType == .endDate {
                             HStack {
                                 Text("•")
@@ -506,14 +506,17 @@ struct ASANewEKEventView: View {
                             }
                         }
                     } // if self.recurrenceRule == .custom
-
-                    Picker("Event Alarm", selection: self.$alarmType) {
-                        ForEach(ASAAlarmType.allCases, id: \.rawValue) { value in
-                            Text(value.text)
-                                .tag(value)
-                        } // ForEach
-                    } // Picker
-                    .pickerStyle(SegmentedPickerStyle())
+                    
+                    VStack {
+                        Text("Event Alarm")
+                        Picker("Event Alarm", selection: self.$alarmType) {
+                            ForEach(ASAAlarmType.allCases, id: \.rawValue) { value in
+                                Text(value.text)
+                                    .tag(value)
+                            } // ForEach
+                        } // Picker
+                        .pickerStyle(SegmentedPickerStyle())
+                    }
                     
                     if self.alarmType == .absoluteDate {
                         HStack {
@@ -528,24 +531,14 @@ struct ASANewEKEventView: View {
                         } // HStack
                     }
                 } // Section
-
+                
                 Section {
-                    Picker(selection: self.$calendarIndex, label: HStack {
-                        Text("Event Calendar")
-                        Spacer()
-                    }) {
-                        ForEach(0..<self.iCalendarEventCalendars.count, id: \.self) {
-                            i
-                            in
-                            HStack {
-                                let CIRCLE_DIAMETER:  CGFloat = 8.0
-                                let calendar: EKCalendar = self.iCalendarEventCalendars[i]
-                                Circle()
-                                    .foregroundColor(calendar.color)
-                                    .frame(width: CIRCLE_DIAMETER, height: CIRCLE_DIAMETER)
-                                Text(verbatim: calendar.title)
-                            }
-                        }
+                    NavigationLink(destination: ASAICalendarIndexPickerView(iCalendarEventCalendars: self.iCalendarEventCalendars, selectedIndex: self.$calendarIndex)) {
+                        HStack {
+                            Text("Event Calendar")
+                            Spacer()
+                            Text(self.iCalendarEventCalendars[self.calendarIndex].title)
+                        } // HStack
                     }
                     .onAppear() {
                         if !didSetCalendarIndex {
@@ -553,26 +546,40 @@ struct ASANewEKEventView: View {
                             self.didSetCalendarIndex = true
                         }
                     }
-                    // TODO:  Change so we can turn the Form into a List
                 } // Section
-
-                Section {
-                    TextField("Event URL", text: self.$URLString)
-                        .keyboardType(.URL)
-
-                    TextField("Event Notes", text: self.$notes)
-                } // Section
-            } // Form
+                
+                ASAEventURLAndNotesSection(URLString: self.$URLString, notes: self.$notes)
+            } // List
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
             ActionSheet(title: Text("Are you sure you want to delete this new event?"), buttons: [
-                .destructive(Text("Cancel Changes")) { self.dismiss() },
+                .destructive(Text("Cancel Changes")) {
+                    self.showingActionSheet = false
+                    self.dismiss() },
                 .default(Text("Continue Editing")) {  }
             ])
         }
     } // var body
 } // struct ASANewEKEventView
+
+
+
+// MARK:  -
+
+struct ASAEventURLAndNotesSection: View {
+    @Binding var URLString: String
+    @Binding var notes: String
+    
+    var body: some View {
+        Section {
+            TextField("Event URL", text: self.$URLString)
+                .keyboardType(.URL)
+
+            TextField("Event Notes", text: self.$notes)
+        } // Section
+    } // var body
+} // struct ASAEventURLAndNotesSection
 
 
 // MARK:  -
