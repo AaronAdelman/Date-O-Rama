@@ -293,271 +293,275 @@ struct ASANewEKEventView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                Section {
-                    HStack {
-                        Spacer().frame(width:  HORIZONTAL_PADDING)
-                        
-                        Button("Cancel") {
-                            self.showingActionSheet = true
-                        }
-                        
-                        Spacer()
-                        
-                        Text("New Event").bold()
-                        
-                        Spacer()
-                        
-                        if self.title.count != 0 {
-                            Button("Add") {
-                                self.showingActionSheet = false
-                                
-                                addNewEvent()
-                                
-                                self.dismiss()
-                            }
-                        }
-                        
-                        Spacer().frame(width:  HORIZONTAL_PADDING)
-                    } // HStack
-                } // Section
-                
-                Section {
-                    TextField("Event Title", text: self.$title)
-                    TextField("Event Location", text: self.$location)
-                    Toggle("Event All Day", isOn: self.$isAllDay)
-                    DatePicker("Event Start", selection: self.$startDate,
-                               displayedComponents: self.appropriateDateComponents)
-                        .onChange(of: startDate, perform: {
-                            value
-                            in
-                            if self.startDate > self.endDate {
-                                self.endDate = self.startDate
-                            }
-                        })
-                    DatePicker("Event End", selection: self.$endDate,
-                               displayedComponents: self.appropriateDateComponents)
-                        .onChange(of: endDate, perform: {
-                            value
-                            in
-                            if self.endDate < self.startDate {
-                                self.startDate = self.endDate
-                            }
-                        })
+            VStack {
+                HStack {
+                    Spacer()
+                        .frame(width:  HORIZONTAL_PADDING)
                     
-                    NavigationLink(destination: ASARecurrenceTypeChooserView(selectedRecurrenceType: $recurrenceRule)) {
-                        HStack {
-                            Text("Event Recurrence")
-                            Spacer()
-                            Text(NSLocalizedString(recurrenceRule.rawValue, comment: ""))
-                        } // HStack
+                    Button("Cancel") {
+                        self.showingActionSheet = true
                     }
                     
-                    if self.recurrenceRule == .custom {
-                        Picker("Event Frequency", selection:  self.$type) {
-                            ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
+                    Spacer()
+                    
+                    Text("New Event").bold()
+                    
+                    Spacer()
+                    
+                    if self.title.count != 0 {
+                        Button("Add") {
+                            self.showingActionSheet = false
+                            
+                            addNewEvent()
+                            
+                            self.dismiss()
+                        }
+                    }
+                    
+                    Spacer()
+                        .frame(width:  HORIZONTAL_PADDING)
+                } // HStack
+                .frame(height: 64.0)
+                .border(Color.gray)
+
+                List {
+                    Section {
+                        TextField("Event Title", text: self.$title)
+                        TextField("Event Location", text: self.$location)
+                        Toggle("Event All Day", isOn: self.$isAllDay)
+                        DatePicker("Event Start", selection: self.$startDate,
+                                   displayedComponents: self.appropriateDateComponents)
+                            .onChange(of: startDate, perform: {
                                 value
                                 in
-                                Text(value.text)
-                            } // ForEach
-                        } // Picker
-                        .pickerStyle(SegmentedPickerStyle())
-                        
-                        let GregorianCalendar: Calendar = {
-                            var calendar = Calendar(identifier: .gregorian)
-                            calendar.locale = Locale.current
-                            return calendar
-                        }()
-                        
-                        switch self.type {
-                        case .daily:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
-                            
-                        case .weekly:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
-                            let symbols: [String] = GregorianCalendar.standaloneWeekdaySymbols
-                            let values:  Array<EKWeekday> = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
-                            ForEach(0..<values.count) {
-                                i
+                                if self.startDate > self.endDate {
+                                    self.endDate = self.startDate
+                                }
+                            })
+                        DatePicker("Event End", selection: self.$endDate,
+                                   displayedComponents: self.appropriateDateComponents)
+                            .onChange(of: endDate, perform: {
+                                value
                                 in
-                                let weekday: EKWeekday = values[i]
-                                let recurringWeekday: EKRecurrenceDayOfWeek = EKRecurrenceDayOfWeek(weekday)
-                                HStack {
-                                    Button(action: {
-                                        if daysOfTheWeek == nil {
-                                            daysOfTheWeek = [recurringWeekday]
-                                        } else if daysOfTheWeek!.contains(recurringWeekday) {
-                                            daysOfTheWeek!.remove(recurringWeekday)
-                                        } else {
-                                            daysOfTheWeek!.append(recurringWeekday)
-                                        }
-                                    }) {
-                                        ASANewEventBulletedLabel(text: symbols[i])
-                                    }
-                                    Spacer()
-                                    if daysOfTheWeek?.contains(recurringWeekday) ?? false {
-                                        ASACheckmarkSymbol()
-                                    }
-                                } // HStack
-                            } // ForEach
+                                if self.endDate < self.startDate {
+                                    self.startDate = self.endDate
+                                }
+                            })
                         
-                        case .monthly:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
-                            
-                            Picker("Monthly recurrence", selection: self.$recurrenceMonthly) {
-                                ForEach(ASARecurrenceMonthly.allCases, id: \.rawValue) { value in
+                        NavigationLink(destination: ASARecurrenceTypeChooserView(selectedRecurrenceType: $recurrenceRule)) {
+                            HStack {
+                                Text("Event Recurrence")
+                                Spacer()
+                                Text(NSLocalizedString(recurrenceRule.rawValue, comment: ""))
+                            } // HStack
+                        }
+                        
+                        if self.recurrenceRule == .custom {
+                            Picker("Event Frequency", selection:  self.$type) {
+                                ForEach([EKRecurrenceFrequency.daily, EKRecurrenceFrequency.weekly, EKRecurrenceFrequency.monthly, EKRecurrenceFrequency.yearly], id: \.self) {
+                                    value
+                                    in
                                     Text(value.text)
-                                        .tag(value)
                                 } // ForEach
-                            }
+                            } // Picker
                             .pickerStyle(SegmentedPickerStyle())
                             
-                            if self.recurrenceMonthly == .byDayOfMonth {
-                                let DAYS_PER_MONTH = 31
-                                let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
+                            let GregorianCalendar: Calendar = {
+                                var calendar = Calendar(identifier: .gregorian)
+                                calendar.locale = Locale.current
+                                return calendar
+                            }()
+                            
+                            switch self.type {
+                            case .daily:
+                                ASANewEKEventLabeledIntView(labelString: "Event Every how many days", value: self.$interval)
+                                
+                            case .weekly:
+                                ASANewEKEventLabeledIntView(labelString: "Event Every how many weeks", value: self.$interval)
+                                let symbols: [String] = GregorianCalendar.standaloneWeekdaySymbols
+                                let values:  Array<EKWeekday> = [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday]
                                 ForEach(0..<values.count) {
                                     i
                                     in
-                                    let day: Int = values[i]
-                                    let recurringDay: NSNumber = NSNumber(value: day)
+                                    let weekday: EKWeekday = values[i]
+                                    let recurringWeekday: EKRecurrenceDayOfWeek = EKRecurrenceDayOfWeek(weekday)
                                     HStack {
                                         Button(action: {
-                                            if daysOfTheMonth == nil {
-                                                daysOfTheMonth = [recurringDay]
-                                            } else if daysOfTheMonth!.contains(recurringDay) {
-                                                daysOfTheMonth!.remove(recurringDay)
+                                            if daysOfTheWeek == nil {
+                                                daysOfTheWeek = [recurringWeekday]
+                                            } else if daysOfTheWeek!.contains(recurringWeekday) {
+                                                daysOfTheWeek!.remove(recurringWeekday)
                                             } else {
-                                                daysOfTheMonth!.append(recurringDay)
+                                                daysOfTheWeek!.append(recurringWeekday)
                                             }
                                         }) {
-                                            ASANewEventBulletedLabel(text: "\(values[i])")
+                                            ASANewEventBulletedLabel(text: symbols[i])
                                         }
                                         Spacer()
-                                        if daysOfTheMonth?.contains(recurringDay) ?? false {
+                                        if daysOfTheWeek?.contains(recurringWeekday) ?? false {
                                             ASACheckmarkSymbol()
                                         }
                                     } // HStack
                                 } // ForEach
-                            }
                             
-                            if self.recurrenceMonthly == .byDayOfWeekAndWeekNumber {
-                                ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
-                            }
-                            
-                        case .yearly:
-                            ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
-                            let symbols: [String] = GregorianCalendar.standaloneMonthSymbols
-                            let MONTHS_PER_YEAR = 12
-                            let values:  Array<Int> = Array(1...MONTHS_PER_YEAR)
-                            ForEach(0..<values.count) {
-                                i
-                                in
-                                let month: Int = values[i]
-                                let recurringMonth: NSNumber = NSNumber(value: month)
-                                HStack {
-                                    Button(action: {
-                                        if monthsOfTheYear == nil {
-                                            monthsOfTheYear = [recurringMonth]
-                                        } else if monthsOfTheYear!.contains(recurringMonth) {
-                                            monthsOfTheYear!.remove(recurringMonth)
-                                        } else {
-                                            monthsOfTheYear!.append(recurringMonth)
+                            case .monthly:
+                                ASANewEKEventLabeledIntView(labelString: "Event Every how many months", value: self.$interval)
+                                
+                                Picker("Monthly recurrence", selection: self.$recurrenceMonthly) {
+                                    ForEach(ASARecurrenceMonthly.allCases, id: \.rawValue) { value in
+                                        Text(value.text)
+                                            .tag(value)
+                                    } // ForEach
+                                }
+                                .pickerStyle(SegmentedPickerStyle())
+                                
+                                if self.recurrenceMonthly == .byDayOfMonth {
+                                    let DAYS_PER_MONTH = 31
+                                    let values:  Array<Int> = Array(1...DAYS_PER_MONTH)
+                                    ForEach(0..<values.count) {
+                                        i
+                                        in
+                                        let day: Int = values[i]
+                                        let recurringDay: NSNumber = NSNumber(value: day)
+                                        HStack {
+                                            Button(action: {
+                                                if daysOfTheMonth == nil {
+                                                    daysOfTheMonth = [recurringDay]
+                                                } else if daysOfTheMonth!.contains(recurringDay) {
+                                                    daysOfTheMonth!.remove(recurringDay)
+                                                } else {
+                                                    daysOfTheMonth!.append(recurringDay)
+                                                }
+                                            }) {
+                                                ASANewEventBulletedLabel(text: "\(values[i])")
+                                            }
+                                            Spacer()
+                                            if daysOfTheMonth?.contains(recurringDay) ?? false {
+                                                ASACheckmarkSymbol()
+                                            }
+                                        } // HStack
+                                    } // ForEach
+                                }
+                                
+                                if self.recurrenceMonthly == .byDayOfWeekAndWeekNumber {
+                                    ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
+                                }
+                                
+                            case .yearly:
+                                ASANewEKEventLabeledIntView(labelString: "Event Every how many years", value: self.$interval)
+                                let symbols: [String] = GregorianCalendar.standaloneMonthSymbols
+                                let MONTHS_PER_YEAR = 12
+                                let values:  Array<Int> = Array(1...MONTHS_PER_YEAR)
+                                ForEach(0..<values.count) {
+                                    i
+                                    in
+                                    let month: Int = values[i]
+                                    let recurringMonth: NSNumber = NSNumber(value: month)
+                                    HStack {
+                                        Button(action: {
+                                            if monthsOfTheYear == nil {
+                                                monthsOfTheYear = [recurringMonth]
+                                            } else if monthsOfTheYear!.contains(recurringMonth) {
+                                                monthsOfTheYear!.remove(recurringMonth)
+                                            } else {
+                                                monthsOfTheYear!.append(recurringMonth)
+                                            }
+                                        }) {
+                                            ASANewEventBulletedLabel(text: symbols[i])
                                         }
-                                    }) {
-                                        ASANewEventBulletedLabel(text: symbols[i])
-                                    }
-                                    Spacer()
-                                    if monthsOfTheYear?.contains(recurringMonth) ?? false {
-                                        ASACheckmarkSymbol()
-                                    }
-                                } // HStack
-                            } // ForEach
-                            Picker("Yearly recurrence", selection: self.$recurrenceYearly) {
-                                ForEach(ASARecurrenceYearly.allCases, id: \.rawValue) { value in
+                                        Spacer()
+                                        if monthsOfTheYear?.contains(recurringMonth) ?? false {
+                                            ASACheckmarkSymbol()
+                                        }
+                                    } // HStack
+                                } // ForEach
+                                Picker("Yearly recurrence", selection: self.$recurrenceYearly) {
+                                    ForEach(ASARecurrenceYearly.allCases, id: \.rawValue) { value in
+                                        Text(value.text)
+                                            .tag(value)
+                                    } // ForEach
+                                }
+                                .pickerStyle(SegmentedPickerStyle())
+                                if self.recurrenceYearly == .byDayOfWeekAndWeekNumber {
+                                    ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
+                                }
+                                
+                            @unknown default:
+                                Text("Unknown default")
+                            } // switch self.type
+                            
+                            Picker("Event Recurrence end", selection: self.$recurrenceEndType) {
+                                ForEach(ASARecurrenceEndType.allCases, id: \.rawValue) { value in
                                     Text(value.text)
                                         .tag(value)
                                 } // ForEach
-                            }
+                            } // Picker
                             .pickerStyle(SegmentedPickerStyle())
-                            if self.recurrenceYearly == .byDayOfWeekAndWeekNumber {
-                                ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
-                            }
                             
-                        @unknown default:
-                            Text("Unknown default")
-                        } // switch self.type
+                            if self.recurrenceEndType == .endDate {
+                                HStack {
+                                    Text("•")
+                                    DatePicker("Event Recurrence end date", selection: self.$recurrenceEndDate,
+                                               displayedComponents: [.date])
+                                }
+                            } else if self.recurrenceEndType == .occurrenceCount {
+                                HStack {
+                                    Text("•")
+                                    ASANewEKEventLabeledIntView(labelString: "Event Recurrence count", value: self.$recurrenceOccurrenceCount)
+                                }
+                            }
+                        } // if self.recurrenceRule == .custom
                         
-                        Picker("Event Recurrence end", selection: self.$recurrenceEndType) {
-                            ForEach(ASARecurrenceEndType.allCases, id: \.rawValue) { value in
-                                Text(value.text)
-                                    .tag(value)
-                            } // ForEach
-                        } // Picker
-                        .pickerStyle(SegmentedPickerStyle())
+                        VStack {
+                            Text("Event Alarm")
+                            Picker("Event Alarm", selection: self.$alarmType) {
+                                ForEach(ASAAlarmType.allCases, id: \.rawValue) { value in
+                                    Text(value.text)
+                                        .tag(value)
+                                } // ForEach
+                            } // Picker
+                            .pickerStyle(SegmentedPickerStyle())
+                        }
                         
-                        if self.recurrenceEndType == .endDate {
+                        if self.alarmType == .absoluteDate {
                             HStack {
                                 Text("•")
-                                DatePicker("Event Recurrence end date", selection: self.$recurrenceEndDate,
-                                           displayedComponents: [.date])
-                            }
-                        } else if self.recurrenceEndType == .occurrenceCount {
+                                DatePicker("Event Alarm date", selection: self.$alarmAbsoluteDate,
+                                           displayedComponents: [.date, .hourAndMinute])
+                            } // HStack
+                        } else if self.alarmType == .minutesBefore {
                             HStack {
                                 Text("•")
-                                ASANewEKEventLabeledIntView(labelString: "Event Recurrence count", value: self.$recurrenceOccurrenceCount)
+                                ASANewEKEventLabeledIntView(labelString: "Event Alarm minutes before", value: self.$alarmMinutesBefore)
+                            } // HStack
+                        }
+                    } // Section
+                    
+                    Section {
+                        NavigationLink(destination: ASAICalendarIndexPickerView(iCalendarEventCalendars: self.iCalendarEventCalendars, selectedIndex: self.$calendarIndex)) {
+                            HStack {
+                                Text("Event Calendar")
+                                Spacer()
+                                Text(self.iCalendarEventCalendars[self.calendarIndex].title)
+                            } // HStack
+                        }
+                        .onAppear() {
+                            if !didSetCalendarIndex {
+                                self.calendarIndex = self.iCalendarEventCalendars.firstIndex(of: ASAEKEventManager.shared.eventStore.defaultCalendarForNewEvents!) ?? 0
+                                self.didSetCalendarIndex = true
                             }
                         }
-                    } // if self.recurrenceRule == .custom
+                    } // Section
                     
-                    VStack {
-                        Text("Event Alarm")
-                        Picker("Event Alarm", selection: self.$alarmType) {
-                            ForEach(ASAAlarmType.allCases, id: \.rawValue) { value in
-                                Text(value.text)
-                                    .tag(value)
-                            } // ForEach
-                        } // Picker
-                        .pickerStyle(SegmentedPickerStyle())
-                    }
-                    
-                    if self.alarmType == .absoluteDate {
-                        HStack {
-                            Text("•")
-                            DatePicker("Event Alarm date", selection: self.$alarmAbsoluteDate,
-                                       displayedComponents: [.date, .hourAndMinute])
-                        } // HStack
-                    } else if self.alarmType == .minutesBefore {
-                        HStack {
-                            Text("•")
-                            ASANewEKEventLabeledIntView(labelString: "Event Alarm minutes before", value: self.$alarmMinutesBefore)
-                        } // HStack
-                    }
-                } // Section
-                
-                Section {
-                    NavigationLink(destination: ASAICalendarIndexPickerView(iCalendarEventCalendars: self.iCalendarEventCalendars, selectedIndex: self.$calendarIndex)) {
-                        HStack {
-                            Text("Event Calendar")
-                            Spacer()
-                            Text(self.iCalendarEventCalendars[self.calendarIndex].title)
-                        } // HStack
-                    }
-                    .onAppear() {
-                        if !didSetCalendarIndex {
-                            self.calendarIndex = self.iCalendarEventCalendars.firstIndex(of: ASAEKEventManager.shared.eventStore.defaultCalendarForNewEvents!) ?? 0
-                            self.didSetCalendarIndex = true
-                        }
-                    }
-                } // Section
-                
-                ASAEventURLAndNotesSection(URLString: self.$URLString, notes: self.$notes)
-            } // List
-            .navigationBarTitle("", displayMode: .inline)
-            .navigationBarHidden(self.isNavigationBarHidden)
-            .navigationBarBackButtonHidden(true)
-            .onAppear {
-                self.isNavigationBarHidden = true
-            }
+                    ASAEventURLAndNotesSection(URLString: self.$URLString, notes: self.$notes)
+                } // List
+                .navigationBarTitle("", displayMode: .inline)
+                .navigationBarHidden(self.isNavigationBarHidden)
+                .navigationBarBackButtonHidden(true)
+                .onAppear {
+                    self.isNavigationBarHidden = true
+                }
+            } // VStack
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
