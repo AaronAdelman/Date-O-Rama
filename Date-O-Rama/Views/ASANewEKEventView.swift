@@ -288,6 +288,8 @@ struct ASANewEKEventView: View {
             }
         }
     } // func addNewEvent()
+    
+    @State var isNavigationBarHidden:  Bool = true
 
     var body: some View {
         NavigationView {
@@ -550,6 +552,12 @@ struct ASANewEKEventView: View {
                 
                 ASAEventURLAndNotesSection(URLString: self.$URLString, notes: self.$notes)
             } // List
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(self.isNavigationBarHidden)
+            .navigationBarBackButtonHidden(true)
+            .onAppear {
+                self.isNavigationBarHidden = true
+            }
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
