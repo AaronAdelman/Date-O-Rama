@@ -512,15 +512,12 @@ struct ASANewEKEventView: View {
                             }
                         } // if self.recurrenceRule == .custom
                         
-                        VStack {
-                            Text("Event Alarm")
-                            Picker("Event Alarm", selection: self.$alarmType) {
-                                ForEach(ASAAlarmType.allCases, id: \.rawValue) { value in
-                                    Text(value.text)
-                                        .tag(value)
-                                } // ForEach
-                            } // Picker
-                            .pickerStyle(SegmentedPickerStyle())
+                        NavigationLink(destination: ASAAlarmTypeChooserView(selectedAlarmType: $alarmType)) {
+                            HStack {
+                                Text("Event Alarm")
+                                Spacer()
+                                Text(NSLocalizedString(alarmType.text, comment: ""))
+                            } // HStack
                         }
                         
                         if self.alarmType == .absoluteDate {
