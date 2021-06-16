@@ -78,7 +78,7 @@ struct ASAEventsTab: View {
 
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 0.0) {
                 ASADatePicker(date: $date, primaryRow: self.primaryRow)
 
                 List {
