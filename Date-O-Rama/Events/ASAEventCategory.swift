@@ -18,7 +18,7 @@ enum ASAEventCategory: String, Codable {
     case Sunrise
     case Sunset
     
-    // Zodiac signs
+    // Western Zodiac signs
     case Aries
     case Taurus
     case Gemini
@@ -41,6 +41,20 @@ enum ASAEventCategory: String, Codable {
     case Mars
     case Jupiter
     case Saturn
+    
+    // Chinese Zodiac signs
+    case Rat
+    case Ox
+    case Tiger
+    case Rabbit
+    case Dragon
+    case Snake
+    case Horse
+    case Goat
+    case Monkey
+    case Rooster
+    case Dog
+    case Pig
 } // enum ASAEventCategory
 
 
@@ -100,6 +114,31 @@ extension ASAEventCategory {
             return "♃"
         case .Saturn:
             return "♄"
+            
+        case .Rat:
+            return "🐀"
+        case .Ox:
+            return "🐂"
+        case .Tiger:
+            return "🐅"
+        case .Rabbit:
+            return "🐇"
+        case .Dragon:
+            return "🐉"
+        case .Snake:
+            return "🐍"
+        case .Horse:
+            return "🐎"
+        case .Goat:
+            return "🐐"
+        case .Monkey:
+            return "🐒"
+        case .Rooster:
+            return "🐓"
+        case .Dog:
+            return "🐕"
+        case .Pig:
+            return "🐖"
         
         default:
             return nil
