@@ -10,6 +10,10 @@ import SwiftUI
 import MapKit
 import EventKit
 import Contacts
+#if os(watchOS)
+#else
+import EventKitUI
+#endif
 
 let CONTACTS_PREFIX = "addressbook://"
 let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
@@ -28,6 +32,11 @@ struct ASAEventDetailView: View {
     #endif
     
     @State var showingEventEditView = false
+    
+    #if os(watchOS)
+    #else
+    @Binding var action:  EKEventEditViewAction?
+    #endif
         
     var body: some View {
         List {
@@ -39,7 +48,7 @@ struct ASAEventDetailView: View {
                 HStack {
                     Spacer()
                     
-                    ASAEditExternalEventButton(event: eventAsEKEvent)
+                    ASAEditExternalEventButton(event: eventAsEKEvent, action: $action)
                 } // HStack
             }
             #endif
@@ -581,8 +590,8 @@ struct ASAEKParticipantView: View {
 
 // MARK:  -
 
-struct ASAEventDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland, category: .generic), row: ASARow.generic)
-    }
-}
+//struct ASAEventDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland, category: .generic), row: ASARow.generic)
+//    }
+//}

@@ -15,7 +15,7 @@ struct ASAEditExternalEventButton: View {
     
     @ObservedObject var eventManager = ASAEKEventManager.shared
 
-    @State private var action:  EKEventEditViewAction?
+    @Binding var action:  EKEventEditViewAction?
     @State private var showingEventEditView = false
 
     var body: some View {

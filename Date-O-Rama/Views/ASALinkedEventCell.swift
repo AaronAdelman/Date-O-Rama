@@ -20,7 +20,7 @@ struct ASALinkedEventCell:  View {
     var eventsViewShouldShowSecondaryDates: Bool
     #if os(watchOS)
     #else
-    @State private var action:  EKEventViewAction?
+    @State private var action:  EKEventEditViewAction?
     #endif
     @State private var showingEventView = false
     @Binding var now:  Date
@@ -53,9 +53,17 @@ struct ASALinkedEventCell:  View {
                 Image(systemName: "info.circle.fill") .font(Font.system(.title))
             })
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                ASAEventDetailView(event: event, row: primaryRow)
+                ASAEventDetailView(event: event, row: primaryRow, action: $action)
                     .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
-            }.foregroundColor(.accentColor)
+            }
+            .foregroundColor(.accentColor)
+            .onChange(of: action, perform: {
+                newValue
+                in
+                if action == .deleted {
+                    self.showingEventView = false
+                }
+            })
             
             #if targetEnvironment(macCatalyst)
             let SPACER_WIDTH: CGFloat = 16.0
