@@ -61,7 +61,7 @@ class ASAEventCalendar {
     
     var color:  Color {
         return self.eventsFile!.calendarColor
-    } // static func calendarColor() -> Color
+    } // var color
 
     func title(localeIdentifier:  String) -> String {
         return self.eventsFile!.titles[localeIdentifier] ?? "???"

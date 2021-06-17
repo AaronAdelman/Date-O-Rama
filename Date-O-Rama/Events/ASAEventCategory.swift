@@ -17,7 +17,13 @@ enum ASAEventCategory: String, Codable {
     // Sun
     case Sunrise
     case Sunset
-    
+    case civilDawn
+    case civilDusk
+    case nauticalDawn
+    case nauticalDusk
+    case astronomicalDawn
+    case astronomicalDusk
+
     // Western Zodiac signs
     case Aries
     case Taurus
