@@ -3,10 +3,7 @@
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicTabularSolar",
-    "calendarColorRed":  0.203921568627451,
-    "calendarColorGreen":  0.466666666666667,
-    "calendarColorBlue":  0.450980392156863,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.20, "green":  0.46, "blue":  0.45},
     "eventSpecifications":  [
         {
             "titles":  {"en":  "Islamic New Year", "he":  "ראש השנה האסלאמי", "ar":  "رأس السنة الهجرية‎"},

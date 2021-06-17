@@ -3,10 +3,7 @@
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",
-    "calendarColorRed":  0.5,
-    "calendarColorGreen":  0.5,
-    "calendarColorBlue":  0.5,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
     {"titles": {"en": "Aries", "he": "טלה"}, "startDateSpecification": {"type": "allMonth", "month": 8}, "category": "Aries"},
     {"titles": {"en": "Taurus", "he": "שור"}, "startDateSpecification": {"type": "allMonth", "month": 9}, "category": "Taurus"},

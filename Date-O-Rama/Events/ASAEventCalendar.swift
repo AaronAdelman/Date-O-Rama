@@ -60,7 +60,7 @@ class ASAEventCalendar {
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String) -> Array<ASAEvent>
     
     var color:  Color {
-        return Color(self.eventsFile!.calendarColor)
+        return self.eventsFile!.calendarColor
     } // static func calendarColor() -> Color
 
     func title(localeIdentifier:  String) -> String {

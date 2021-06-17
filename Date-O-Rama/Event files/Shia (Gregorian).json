@@ -3,10 +3,7 @@
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
-    "calendarColorRed":  0.3,
-    "calendarColorGreen":  0.7,
-    "calendarColorBlue":  0.3,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.3, "green":  0.7, "blue":  0.3},
     "eventSpecifications":  [
         {
             "titles":  {"en":  "Imamat Day", "ur": "یوم الامامہ", "bn": "ইমামত দিবস"},

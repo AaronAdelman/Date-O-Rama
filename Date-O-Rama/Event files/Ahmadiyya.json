@@ -3,10 +3,7 @@
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
-    "calendarColorRed":  0.25,
-    "calendarColorGreen":  0.25,
-    "calendarColorBlue":  0.25,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.25, "green":  0.25, "blue":  0.25},
     "eventSpecifications":  [
         {
             "titles":  {"en":  "Promised Reformer Day"},

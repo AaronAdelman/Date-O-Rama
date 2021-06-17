@@ -3,10 +3,7 @@
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "Gregorian",
-    "calendarColorRed": 0.313725490196078,
-    "calendarColorGreen": 0.67843137254902,
-    "calendarColorBlue": 0.8,
-    "calendarColorAlpha": 1.0,
+    "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
     "eventSpecifications": [
         {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "startDateSpecification": {"type": "allDay", "month": 5, "day": 9}},
         {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "startDateSpecification": {"type": "allDay", "month": 11, "day": 30}},

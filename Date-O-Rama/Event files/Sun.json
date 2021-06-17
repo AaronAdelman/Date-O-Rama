@@ -3,10 +3,7 @@
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
-    "calendarColorRed":  1.0,
-    "calendarColorGreen":  1.0,
-    "calendarColorBlue":  0.0,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  1.0, "green":  1.0, "blue":  0.0},
     "eventSpecifications":  [
         {
             "titles":  {

@@ -3,10 +3,7 @@
     "supportedLocales":  ["he", "en"],
     "defaultLocale":  "he",
     "calendarCode":  "HebrewSolar",
-    "calendarColorRed":  0.0,
-    "calendarColorGreen":  0.588235294117647,
-    "calendarColorBlue":  1.0,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.0, "green":  0.58, "blue":  1.0},
     "eventSpecifications":  [
         {
             "titles":  {"he":  "יום־שנה של רבי דובער שניאורי", "en":  "Tes Kislev"},

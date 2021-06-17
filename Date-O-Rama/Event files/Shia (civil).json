@@ -3,10 +3,7 @@
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicCivilSolar",
-    "calendarColorRed":  0.05,
-    "calendarColorGreen":  0.95,
-    "calendarColorBlue":  0.05,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.05, "green":  0.95, "blue":  0.05},
     "eventSpecifications":  [
         {
             "titles":  {"en":  "al-Arba‘īn", "he":  "ארבעין", "ar":  "الأربعين‎", "fa":  "چهلم‎"},

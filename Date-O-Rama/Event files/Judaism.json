@@ -4,10 +4,7 @@
     "defaultLocale": "he",
     "calendarCode": "HebrewSolar",
     "otherCalendarCodes": ["Coptic", "Gregorian"],
-    "calendarColorRed": 0.0,
-    "calendarColorGreen": 0.0,
-    "calendarColorBlue": 1.0,
-    "calendarColorAlpha": 1.0,
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 1.0},
     "eventSpecifications": [
         {"startDateSpecification": {"type": "allYear", "yearDivisor": 7, "yearRemainder": 1}, "titles": {"he": "שנה א׳ לשמיטה", "en": "Year 1 in the Shemiṭṭah Cycle"}},
         {"startDateSpecification": {"type": "allYear", "yearDivisor": 7, "yearRemainder": 2}, "titles": {"he": "שנה ב׳ לשמיטה", "en": "Year 2 in the Shemiṭṭah Cycle"}},
@@ -77,7 +74,7 @@
             "endDateSpecification": {"type": "allDay", "month": 2, "day": 1}},
         {"titles": {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, "startDateSpecification": {"type": "allDay", "month": 2, "day": 30, "lengthsOfYear": [355, 385]
         },
-        "endDateSpecification": {"type": "allDay", "month": 3, "day": 1}},
+            "endDateSpecification": {"type": "allDay", "month": 3, "day": 1}},
         {"titles": {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, "startDateSpecification": {"type": "allDay", "month": 3, "day": 1, "lengthsOfYear": [353, 354, 383, 384]}},
         {"titles": {"he": "ערב חנוכה", "en": "Eve of Ḥanukkah"}, "startDateSpecification": {"type": "allDay", "month": 3, "day": 24}, "urls": {"en": "https://www.ou.org/holidays/category/chanukah/"}},
         {"titles": {"he": "חנוכה (יום א׳)", "en": "Ḥanukkah (day 1)"}, "startDateSpecification": {"type": "allDay", "month": 3, "day": 25}, "urls": {"en": "https://www.ou.org/holidays/category/chanukah/"}},
@@ -99,7 +96,7 @@
             "lengthsOfYear": [353, 383]}, "urls": {"en": "https://www.ou.org/holidays/category/chanukah/"}},
         {"titles": {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, "startDateSpecification": {"type": "allDay", "month": 3, "day": 30, "lengthsOfYear": [354, 355, 384, 385]
         },
-        "endDateSpecification": {"type": "allDay", "month": 4, "day": 1}},
+            "endDateSpecification": {"type": "allDay", "month": 4, "day": 1}},
         {"titles": {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, "startDateSpecification": {"type": "allDay", "month": 4, "day": 1, "lengthsOfYear": [353, 383]}},
         {"titles": {"he": "צום טבת", "en": "Fast of Ṭeveth"}, "startDateSpecification": {"type": "allDay", "month": 4, "day": 10}, "urls": {"en": "https://www.ou.org/holidays/category/asarah-btevet/"}},
         {"titles": {"he": "ראש חודש שבט", "en": "Ro’sh Ḥodhesh Shevaṭ"}, "startDateSpecification": {"type": "allDay", "month": 5, "day": 1}},
@@ -107,16 +104,16 @@
         {"titles": {"he": "ראש חודש אדר", "en": "Ro’sh Ḥodhesh ’Adhar"}, "startDateSpecification": {"type": "allDay", "month": 5, "day": 30,
             "lengthsOfYear": [353, 354, 355]
         },
-        "endDateSpecification": {"type": "allDay", "month": 7, "day": 1}},
+            "endDateSpecification": {"type": "allDay", "month": 7, "day": 1}},
         {"titles": {"he": "ראש חודש אדר א׳", "en": "Ro’sh Ḥodhesh ’Adhar Ri’shon"}, "startDateSpecification": {"type": "allDay", "month": 5, "day": 30,
             "lengthsOfYear": [383, 384, 385]
         },
-        "endDateSpecification": {"type": "allDay", "month": 6, "day": 1,
-        }},
+            "endDateSpecification": {"type": "allDay", "month": 6, "day": 1,
+            }},
         {"titles": {"he": "ראש חודש אדר ב׳", "en": "Ro’sh Ḥodhesh ’Adhar Sheni"}, "startDateSpecification": {"type": "allDay", "month": 6, "day": 30,
             "lengthsOfYear": [383, 384, 385]
         },
-        "endDateSpecification": {"type": "allDay", "month": 7, "day": 1}},
+            "endDateSpecification": {"type": "allDay", "month": 7, "day": 1}},
         {"titles": {"he": "יום־שנה של משה רבנו", "en": "Yohrtsayt of Mosheh Rabbenu"}, "startDateSpecification": {"type": "allDay", "month": 7, "day": 7,
         }, "category": "deathAnniversary"},
         {"titles": {"he": "פורים קטן", "en": "Purim Qaṭan"}, "startDateSpecification": {"type": "allDay", "month": 6, "day": 14,

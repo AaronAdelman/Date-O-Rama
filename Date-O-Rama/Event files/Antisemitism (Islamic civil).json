@@ -3,10 +3,7 @@
     "supportedLocales":  ["en", "he", "ar"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicCivilSolar",
-    "calendarColorRed":  0.5,
-    "calendarColorGreen":  0.5,
-    "calendarColorBlue":  0.5,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
         {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "calendarCode":  "IslamicSolar", "startDateSpecification": {
             "type": "allDay", "month": 9, "day": -1, "weekdays": [6]},

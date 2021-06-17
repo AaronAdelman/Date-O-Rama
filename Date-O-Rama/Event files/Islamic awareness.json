@@ -3,10 +3,7 @@
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
     "calendarCode":  "Gregorian",
-    "calendarColorRed":  0.1,
-    "calendarColorGreen":  0.9,
-    "calendarColorBlue":  0.1,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.1, "green":  0.9, "blue":  0.1},
     "eventSpecifications":  [
         {
             "titles":  {"en":  "International Shia Day"},

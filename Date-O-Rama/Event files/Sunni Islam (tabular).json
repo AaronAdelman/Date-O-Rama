@@ -3,10 +3,7 @@
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
     "calendarCode":  "IslamicTabularSolar",
-    "calendarColorRed":  0.15,
-    "calendarColorGreen":  0.85,
-    "calendarColorBlue":  0.15,
-    "calendarColorAlpha":  1.0,
+    "calendarColor": {"red":  0.15, "green":  0.85, "blue":  0.15},
     "eventSpecifications":  [
         {
             "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי", "ar":  "مَولِد النَّبِي‎"},
