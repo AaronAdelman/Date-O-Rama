@@ -150,6 +150,7 @@ struct ASAEventsTab: View {
                             event
                             in
                             ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd)
+                                .listRowInsets(.zero)
                         } // ForEach
                     } // Section
                 } // List

@@ -43,6 +43,12 @@ struct ASALinkedEventCell:  View {
         })
         #else
         HStack {
+            #if targetEnvironment(macCatalyst)
+            #else
+            Spacer()
+                .frame(width: 8.0)
+            #endif
+            
             ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
             
             Spacer()
