@@ -207,8 +207,6 @@ struct ASAClockEventsSubcell: View {
         EmptyView()
         #else
         if processedRow.events.count > 0 && !forComplications {
-            //            HStack {
-            //                Text("Show Events")
             Picker(selection: $eventVisibility, label: Text("")) {
                 ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
                     possibility
@@ -216,7 +214,6 @@ struct ASAClockEventsSubcell: View {
                     Text(possibility.emoji)
                 }
             }.pickerStyle(SegmentedPickerStyle())
-            //            }
             
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
         } else {
