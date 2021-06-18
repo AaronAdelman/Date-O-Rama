@@ -15,6 +15,8 @@ enum ASAEventCategory: String, Codable {
     case weddingAnniversary
     
     // Sun
+    case day
+    case night
     case Sunrise
     case Sunset
     case civilDawn
@@ -150,4 +152,46 @@ extension ASAEventCategory {
             return nil
         } // switch self
     } // var emoji
+    
+    var isDarkMode: Bool {
+        switch self {
+        case .night, .Sunset, .civilDusk, .nauticalDusk, .astronomicalDusk,
+             .Aries,
+             .Taurus,
+             .Gemini,
+             .Cancer,
+             .Leo,
+             .Virgo,
+             .Libra,
+             .Ophiuchus,
+             .Scorpio,
+             .Sagittarius,
+             .Capricorn,
+             .Aquarius,
+             .Pisces,
+             .Sun,
+             .Moon,
+             .Mercury,
+             .Venus,
+             .Mars,
+             .Jupiter,
+             .Saturn,
+             .Rat,
+             .Ox,
+             .Tiger,
+             .Rabbit,
+             .Dragon,
+             .Snake,
+             .Horse,
+             .Goat,
+             .Monkey,
+             .Rooster,
+             .Dog,
+             .Pig:
+            return true
+            
+        default:
+            return false
+        }
+    }
 } // extension ASAEventCategory

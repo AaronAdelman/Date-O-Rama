@@ -215,6 +215,7 @@
 		A5AAA7502657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */; };
 		A5AAA7512657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
+		A5AEB7AE267C61FE004E2E48 /* ASAEventCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AEB7AD267C61FE004E2E48 /* ASAEventCellStyle.swift */; };
 		A5AF2C4B2636ED8900FD479D /* ASAEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
 		A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */; };
@@ -479,6 +480,7 @@
 		A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEditExternalEventButton.swift; sourceTree = "<group>"; };
 		A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACompactForwardChevronSymbol.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
+		A5AEB7AD267C61FE004E2E48 /* ASAEventCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCellStyle.swift; sourceTree = "<group>"; };
 		A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventDetailView.swift; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
 		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
@@ -772,6 +774,7 @@
 			isa = PBXGroup;
 			children = (
 				A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */,
+				A5AEB7AD267C61FE004E2E48 /* ASAEventCellStyle.swift */,
 				A5B6D03725AF294D005ECE8D /* ASAScalable.swift */,
 			);
 			path = "View modifiers";
@@ -1367,6 +1370,7 @@
 				A557AD6F25DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
 				A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */,
+				A5AEB7AE267C61FE004E2E48 /* ASAEventCellStyle.swift in Sources */,
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */,
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
