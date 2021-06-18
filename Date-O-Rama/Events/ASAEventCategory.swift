@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum ASAEventCategory: String, Codable {
     case generic
@@ -155,7 +156,8 @@ extension ASAEventCategory {
     
     var isDarkMode: Bool {
         switch self {
-        case .night, .Sunset, .civilDusk, .nauticalDusk, .astronomicalDusk,
+        case .night, .civilDusk, .nauticalDusk, .astronomicalDusk,
+             .civilDawn, .nauticalDawn, .astronomicalDawn,
              .Aries,
              .Taurus,
              .Gemini,
@@ -192,6 +194,31 @@ extension ASAEventCategory {
             
         default:
             return false
+        } // switch self
+    } // var isDarkMode
+    
+    var backgroundColor: Color {
+        switch self {
+        case .day:
+            return Color("eventDayBackground")
+        case .night:
+            return Color("eventNightBackground")
+        case .civilDusk, .civilDawn:
+            return Color("eventCivilBackground")
+        case .nauticalDusk, .nauticalDawn:
+            return Color("eventNauticalBackground")
+        case .astronomicalDusk, .astronomicalDawn:
+            return Color("eventAstronomicalBackground")
+        case .Sunrise, .Sunset:
+            return Color("eventRiseSetBackground")
+        
+        default:
+            if self.isDarkMode {
+                return .black
+            } else {
+                return .white
+            }
         }
+        
     }
 } // extension ASAEventCategory

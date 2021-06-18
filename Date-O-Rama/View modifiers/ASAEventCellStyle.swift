@@ -17,11 +17,11 @@ struct ASAEventCellStyle: ViewModifier {
         if event.category.isDarkMode {
             content
                 .colorScheme(.dark)
-                .background(Color(.black))
+                .background(event.category.backgroundColor)
         } else {
             content
                 .colorScheme(.light)
-                .background(Color(.white))
+                .background(event.category.backgroundColor)
         }
     } // func body(content: Content) -> some View
 } // struct ASAEventCellStyle
