@@ -64,6 +64,9 @@ enum ASAEventCategory: String, Codable {
     case Rooster
     case Dog
     case Pig
+    
+    case candleLightingBeforeSunset
+    case candleLightingAfterSunset
 } // enum ASAEventCategory
 
 
@@ -148,6 +151,9 @@ extension ASAEventCategory {
             return "🐕"
         case .Pig:
             return "🐖"
+            
+        case .candleLightingBeforeSunset, .candleLightingAfterSunset:
+            return "🕯"
         
         default:
             return nil
@@ -189,7 +195,8 @@ extension ASAEventCategory {
              .Monkey,
              .Rooster,
              .Dog,
-             .Pig:
+             .Pig,
+             .candleLightingAfterSunset:
             return true
             
         default:
@@ -199,9 +206,9 @@ extension ASAEventCategory {
     
     var backgroundColor: Color {
         switch self {
-        case .day:
+        case .day, .candleLightingBeforeSunset:
             return Color("eventDayBackground")
-        case .night:
+        case .night, .candleLightingAfterSunset:
             return Color("eventNightBackground")
         case .civilDusk, .civilDawn:
             return Color("eventCivilBackground")
