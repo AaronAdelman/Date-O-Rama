@@ -13,7 +13,7 @@ struct ASATimeText:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var cutoffDate:  Date
-    var labelColor:  Color
+//    var labelColor:  Color
     var isForClock:  Bool
 
     var body:  some View {
@@ -24,14 +24,14 @@ struct ASATimeText:  View {
 //            .font(timeFontSize)
 //            .foregroundColor(labelColor.grayIfPast(cutoffDate, isForClock: isForClock))
             .font(font)
-            .foregroundColor(labelColor)
+//            .foregroundColor(labelColor)
             .modifier(ASAScalable(lineLimit: 1))
         #else
         Text(verbatim:  verbatim)
             .frame(width:  timeWidth)
 //            .font(timeFontSize)
             .font(font)
-            .foregroundColor(labelColor)
+//            .foregroundColor(labelColor)
             .modifier(ASAScalable(lineLimit: 2))
 
         #endif

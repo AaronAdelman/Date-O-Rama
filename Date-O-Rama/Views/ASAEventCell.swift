@@ -17,19 +17,19 @@ struct ASAEventCell:  View {
     @Binding var now:  Date
 
     #if os(watchOS)
-    let labelColor = Color.white
+//    let labelColor = Color.white
 //    let secondaryLabelColor = Color(UIColor.lightGray)
     let compact = true
     #else
-    var labelColor:  Color {
-        get {
-            if self.isForClock {
-                return Color("label")
-            } else {
-                return Color.primary
-            }
-        }
-    }
+//    var labelColor:  Color {
+//        get {
+//            if self.isForClock {
+//                return Color("label")
+//            } else {
+//                return Color.primary
+//            }
+//        }
+//    }
 //    var secondaryLabelColor:  Color {
 //        get {
 //            if self.isForClock {
@@ -63,24 +63,31 @@ struct ASAEventCell:  View {
             ASAEventColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
-                Text(symbolPrefix + event.title).font(.callout).bold().foregroundColor(labelColor)
+                Text(symbolPrefix + event.title)
+                    .font(.callout)
+                    .bold()
+//                    .foregroundColor(labelColor)
                     .modifier(ASAScalable(lineLimit: 2))
                                 
                 if !event.isAllDay {
-                    ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
+//                    ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
+                    ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
                     
                     if self.eventsViewShouldShowSecondaryDates {
-                        ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
+//                        ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
+                        ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
                     }
                 }
             } // VStack
         } // HStack
         #else
         HStack {
-            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
+//            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
+            ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
 
             if self.eventsViewShouldShowSecondaryDates {
-                ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
+//                ASATimesSubcell(event: event, row: self.secondaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
+                ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
             ASAEventColorRectangle(color: event.color)
@@ -90,24 +97,27 @@ struct ASAEventCell:  View {
                 if self.compact {
                     Text(symbolPrefix + event.title)
                         .font(.callout)
-                        .bold().foregroundColor(labelColor)
+                        .bold()
+//                        .foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 } else {
                     Text(symbolPrefix + event.title)
-                        .font(.headline).foregroundColor(labelColor)
+                        .font(.headline)
+//                        .foregroundColor(labelColor)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
                 
                 if event.location != nil {
                     Text(event.location!).font(.callout)
 //                        .foregroundColor(secondaryLabelColor)
-                        .foregroundColor(labelColor)
+//                        .foregroundColor(labelColor)
                         .italic()
                         .modifier(ASAScalable(lineLimit: 1))
                 }
 
 //                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, isForClock: isForClock)
-                ASAEventCellCalendarTitle(event: event, color: labelColor, isForClock: isForClock)
+//                ASAEventCellCalendarTitle(event: event, color: labelColor, isForClock: isForClock)
+                ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
 
                 Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
@@ -121,7 +131,7 @@ struct ASAEventCell:  View {
 
 struct ASAEventCellCalendarTitle:  View {
     var event:  ASAEventCompatible
-    var color:  Color
+//    var color:  Color
     var isForClock:  Bool
 
     #if os(watchOS)
@@ -132,7 +142,8 @@ struct ASAEventCellCalendarTitle:  View {
 
     var body: some View {
         let title: String = isForClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
-        Text(title).font(.subheadlineMonospacedDigit).foregroundColor(color)
+        Text(title).font(.subheadlineMonospacedDigit)
+//            .foregroundColor(color)
         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
 }

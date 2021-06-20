@@ -17,12 +17,15 @@ struct ASAEventCellStyle: ViewModifier {
         if event.category == .generic {
             content
         } else if event.category.isDarkMode {
+            let foregroundColor: Color = Color("eventNightForeground")
             content
-                .colorScheme(.dark)
+//                .colorScheme(.dark)
+                .foregroundColor(foregroundColor)
                 .background(event.category.backgroundColor.ignoresSafeArea())
         } else {
             content
-                .colorScheme(.light)
+//                .colorScheme(.light)
+                .foregroundColor(.black)
                 .background(event.category.backgroundColor.ignoresSafeArea())
         }
     } // func body(content: Content) -> some View

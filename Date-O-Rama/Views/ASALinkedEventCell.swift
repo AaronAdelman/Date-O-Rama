@@ -62,7 +62,7 @@ struct ASALinkedEventCell:  View {
                 ASAEventDetailView(event: event, row: primaryRow, action: $action)
                     .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
             }
-            .foregroundColor(.accentColor)
+//            .foregroundColor(.accentColor)
             .onChange(of: action, perform: {
                 newValue
                 in

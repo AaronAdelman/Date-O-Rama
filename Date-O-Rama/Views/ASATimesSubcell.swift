@@ -36,7 +36,7 @@ struct ASATimesSubcell:  View {
     } // var timeWidth
     let timeFontSize = Font.subheadlineMonospacedDigit
     
-    var labelColor:  Color
+//    var labelColor:  Color
     var isForClock:  Bool
     var isPrimaryRow:  Bool
     var eventIsTodayOnly:  Bool
@@ -46,10 +46,12 @@ struct ASATimesSubcell:  View {
             let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
                         
             if startDateString != endDateString {
-                ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, isForClock: isForClock)
+//                ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, labelColor: labelColor, isForClock: isForClock)
+                ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
             }
             
-            ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, isForClock: isForClock)
+//            ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, labelColor: labelColor, isForClock: isForClock)
+            ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, isForClock: isForClock)
         } // VStack
     } // var body
 } // struct ASATimesSubcell
