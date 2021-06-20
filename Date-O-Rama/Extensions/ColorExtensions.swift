@@ -114,17 +114,17 @@ extension Color {
 
 // MARK:  -
 
-extension Color {
-    func grayIfPast(_ date:  Date, isForClock:  Bool) -> Color {
-        #if os(watchOS)
-        let gray: Color = Color.gray
-        #else
-        let gray: Color = Color("grayed")
-        #endif
-        
-        return date < Date() ? (isForClock ? gray: Color.gray) : self
-    } // func grayIfPast(_ date:  Date, isForClock:  Bool) -> Color
-} // extension Color
+//extension Color {
+//    func grayIfPast(_ date:  Date, isForClock:  Bool) -> Color {
+//        #if os(watchOS)
+//        let gray: Color = Color.gray
+//        #else
+//        let gray: Color = Color("grayed")
+//        #endif
+//        
+//        return date < Date() ? (isForClock ? gray: Color.gray) : self
+//    } // func grayIfPast(_ date:  Date, isForClock:  Bool) -> Color
+//} // extension Color
 
 
 // MARK:  -

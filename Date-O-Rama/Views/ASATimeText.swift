@@ -17,16 +17,21 @@ struct ASATimeText:  View {
     var isForClock:  Bool
 
     var body:  some View {
+        let font = cutoffDate < Date() ? timeFontSize : timeFontSize.bold()
+        
         #if os(watchOS)
         Text(verbatim:  verbatim)
-            .font(timeFontSize)
-            .foregroundColor(labelColor.grayIfPast(cutoffDate, isForClock: isForClock))
+//            .font(timeFontSize)
+//            .foregroundColor(labelColor.grayIfPast(cutoffDate, isForClock: isForClock))
+            .font(font)
+            .foregroundColor(labelColor)
             .modifier(ASAScalable(lineLimit: 1))
         #else
         Text(verbatim:  verbatim)
             .frame(width:  timeWidth)
-            .font(timeFontSize)
-            .foregroundColor(labelColor.grayIfPast(cutoffDate, isForClock: isForClock))
+//            .font(timeFontSize)
+            .font(font)
+            .foregroundColor(labelColor)
             .modifier(ASAScalable(lineLimit: 2))
 
         #endif

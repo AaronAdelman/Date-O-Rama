@@ -18,7 +18,7 @@ struct ASAEventCell:  View {
 
     #if os(watchOS)
     let labelColor = Color.white
-    let secondaryLabelColor = Color(UIColor.lightGray)
+//    let secondaryLabelColor = Color(UIColor.lightGray)
     let compact = true
     #else
     var labelColor:  Color {
@@ -30,15 +30,15 @@ struct ASAEventCell:  View {
             }
         }
     }
-    var secondaryLabelColor:  Color {
-        get {
-            if self.isForClock {
-                return Color("secondaryLabel")
-            } else {
-                return Color.secondary
-            }
-        }
-    }
+//    var secondaryLabelColor:  Color {
+//        get {
+//            if self.isForClock {
+//                return Color("secondaryLabel")
+//            } else {
+//                return Color.secondary
+//            }
+//        }
+//    }
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
         get {
@@ -99,11 +99,15 @@ struct ASAEventCell:  View {
                 }
                 
                 if event.location != nil {
-                    Text(event.location!).font(.callout).foregroundColor(secondaryLabelColor)
+                    Text(event.location!).font(.callout)
+//                        .foregroundColor(secondaryLabelColor)
+                        .foregroundColor(labelColor)
+                        .italic()
                         .modifier(ASAScalable(lineLimit: 1))
                 }
 
-                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, isForClock: isForClock)
+//                ASAEventCellCalendarTitle(event: event, color: secondaryLabelColor, isForClock: isForClock)
+                ASAEventCellCalendarTitle(event: event, color: labelColor, isForClock: isForClock)
 
                 Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
