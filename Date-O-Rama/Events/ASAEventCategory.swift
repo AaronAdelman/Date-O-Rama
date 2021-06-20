@@ -67,6 +67,7 @@ enum ASAEventCategory: String, Codable {
     
     case candleLightingBeforeSunset
     case candleLightingAfterSunset
+    case Shabbath
 } // enum ASAEventCategory
 
 
@@ -154,6 +155,8 @@ extension ASAEventCategory {
             
         case .candleLightingBeforeSunset, .candleLightingAfterSunset:
             return "🕯"
+        case .Shabbath:
+            return "🍷"
         
         default:
             return nil
