@@ -56,7 +56,7 @@ class ASALocationManager: NSObject, ObservableObject {
                 self.connectedToTheInternet = false
             }
 
-            debugPrint(#file, #function, path.isExpensive)
+            debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
         }
 
         let queue = DispatchQueue(label: "Monitor")
@@ -106,6 +106,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
         self.lastError = error
 //        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.startUpdatingLocation()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

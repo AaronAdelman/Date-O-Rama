@@ -14,7 +14,9 @@ struct ASAEventCellStyle: ViewModifier {
     var event: ASAEventCompatible
     
     func body(content: Content) -> some View {
-        if event.category.isDarkMode {
+        if event.category == .generic {
+            content
+        } else if event.category.isDarkMode {
             content
                 .colorScheme(.dark)
                 .background(event.category.backgroundColor.ignoresSafeArea())
