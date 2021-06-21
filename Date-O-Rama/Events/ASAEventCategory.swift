@@ -207,6 +207,22 @@ extension ASAEventCategory {
         } // switch self
     } // var isDarkMode
     
+    var foregroundColor: Color {
+        switch self {
+        case .day, .candleLightingBeforeSunset, .Sunrise, .Sunset:
+            return Color("dayForeground")
+        case .night, .candleLightingAfterSunset, .civilDawn, .civilDusk, .nauticalDawn, .nauticalDusk, .astronomicalDawn, .astronomicalDusk:
+            return Color("nightForeground")
+        
+        default:
+            if self.isDarkMode {
+                return .white
+            } else {
+                return .black
+            }
+        }
+    }
+    
     var backgroundColor: Color {
         switch self {
         case .day, .candleLightingBeforeSunset:

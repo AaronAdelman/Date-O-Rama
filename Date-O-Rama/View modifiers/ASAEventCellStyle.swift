@@ -14,19 +14,14 @@ struct ASAEventCellStyle: ViewModifier {
     var event: ASAEventCompatible
     
     func body(content: Content) -> some View {
-        if event.category == .generic {
+        let category = event.category
+        if category == .generic {
             content
-        } else if event.category.isDarkMode {
-            let foregroundColor: Color = Color("eventNightForeground")
-            content
-//                .colorScheme(.dark)
-                .foregroundColor(foregroundColor)
-                .background(event.category.backgroundColor.ignoresSafeArea())
         } else {
             content
-//                .colorScheme(.light)
-                .foregroundColor(.black)
-                .background(event.category.backgroundColor.ignoresSafeArea())
+                .colorScheme(category.isDarkMode ? .dark : .light)
+                .foregroundColor(category.foregroundColor)
+                .background(category.backgroundColor.ignoresSafeArea())
         }
     } // func body(content: Content) -> some View
 } // struct ASAEventCellStyle
