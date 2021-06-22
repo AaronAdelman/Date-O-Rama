@@ -44,7 +44,7 @@ struct ASAMiniClockView:  View {
                 let fractionalHours: Double = Double(processedRow.hour) + Double(processedRow.minute) / 60.0
                 let degreesPerHour = 360.0 / 24.0
                 let degrees = fractionalHours * degreesPerHour + 180.0
-                ASASolarTimeView(degrees: degrees, dimension: 64.0, font: .body)
+                ASASolarTimeView(degrees: degrees, dimension: 56.0, font: .body)
             } else {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
             }

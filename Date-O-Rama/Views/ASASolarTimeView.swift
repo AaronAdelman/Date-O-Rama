@@ -16,7 +16,7 @@ struct ASASolarTimeView: View {
     @State var font: Font
 
     
-    private let VERTICAL_FUDGE: CGFloat = 24.0
+    private let VERTICAL_FUDGE: CGFloat = 12.0
     
     var body: some View {
         VStack {
