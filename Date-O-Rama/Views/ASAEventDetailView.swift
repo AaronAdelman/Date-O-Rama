@@ -44,7 +44,7 @@ struct ASAEventDetailView: View {
             #else
             if event.isEKEvent && !event.isReadOnly {
                 let eventAsEKEvent = event as! EKEvent
-
+                
                 HStack {
                     Spacer()
                     
@@ -52,7 +52,7 @@ struct ASAEventDetailView: View {
                 } // HStack
             }
             #endif
-
+            
             Section {
                 #if os(watchOS)
                 let titleFont: Font = .headline
@@ -71,44 +71,49 @@ struct ASAEventDetailView: View {
                     Text(event.calendarTitleWithLocation)
                 } // HStack
             } // Section
-
+            
             ASAEventDetailDateTimeSection(row: row, event: event)
-
-            Section {
-                if event.hasAlarms {
-                    let numberOfAlarms = event.alarms?.count ?? 0
-                    ForEach(0..<numberOfAlarms, id: \.self) {
-                        i
-                        in
-                        let alarm = event.alarms![i]
-
-                        ASAEventAlarmView(alarm: alarm, row: row)
-                    } // ForEach(0..<numberOfAlarms, id: \.self)
-                }
-
-                if event.availability != .notSupported {
-                    ASAEventPropertyView(key: "Event availability", value: event.availability.text)
-                }
-            } // Section
-
+            
+            let eventHasAlarms: Bool = event.hasAlarms
+            let eventAvailabilityIsSupported: Bool = event.availability != .notSupported
+            if eventHasAlarms || eventAvailabilityIsSupported {
+                Section {
+                    if eventHasAlarms {
+                        let numberOfAlarms = event.alarms?.count ?? 0
+                        ForEach(0..<numberOfAlarms, id: \.self) {
+                            i
+                            in
+                            let alarm = event.alarms![i]
+                            
+                            ASAEventAlarmView(alarm: alarm, row: row)
+                        } // ForEach(0..<numberOfAlarms, id: \.self)
+                    }
+                    
+                    if eventAvailabilityIsSupported {
+                        ASAEventPropertyView(key: "Event availability", value: event.availability.text)
+                    }
+                } // Section
+            }
+            
             ASAEKEventParticipantsAndStatusSection(event: event)
-
+            
             ASAEventDetailsNotesAndURLSection(event: event)
-
+            
             #if os(watchOS)
             #else
-            Section {
-                let geoLocation = event.geoLocation
-                if geoLocation != nil {
+            let geoLocation = event.geoLocation
+            if geoLocation != nil {
+                Section {
                     Map(coordinateRegion: .constant(region), interactionModes: [.zoom])
                         .aspectRatio(1.0, contentMode: .fit)
-                }
-            } // Section
+                } // Section
+            }
             #endif
-
-            Section {
-                let currentUser: EKParticipant? = event.currentUser
-                if currentUser != nil {
+            
+            
+            let currentUser: EKParticipant? = event.currentUser
+            if currentUser != nil {
+                Section {
                     let status = currentUser!.participantStatus
                     HStack {
                         Text("My status")
@@ -118,9 +123,10 @@ struct ASAEventDetailView: View {
                             .foregroundColor(status.color)
                         Text(status.text)
                     } // HStack
-                }
-            } // Section
+                } // Section
+            }
         } // List
+        .listStyle(DefaultListStyle())
         .foregroundColor(labelColor)
         .onAppear() {
             #if os(watchOS)
