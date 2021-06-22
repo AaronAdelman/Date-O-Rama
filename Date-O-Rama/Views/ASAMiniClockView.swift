@@ -40,7 +40,14 @@ struct ASAMiniClockView:  View {
                 .frame(maxWidth:  julianDayWidth)
                 .modifier(ASACapsuleBorder(topInset: verticalInset, leadingInset: 1.0, bottomInset: verticalInset, trailingInset: 1.0, color: Color("julianDayBorder"), width: 1.0))
         } else {
+            if processedRow.calendarCode.isSunsetTransitionCalendar {
+                let fractionalHours: Double = Double(processedRow.hour) + Double(processedRow.minute) / 60.0
+                let degreesPerHour = 360.0 / 24.0
+                let degrees = fractionalHours * degreesPerHour + 180.0
+                ASASolarTimeView(degrees: degrees, dimension: 64.0, font: .body)
+            } else {
             Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
+            }
         }
     } // var body
 } // struct ASAMiniClockView
