@@ -45,6 +45,8 @@ struct ASAComplicationClocksTab: View {
                         }
                     }
                 }
+                .listStyle(InsetGroupedListStyle())
+
                 .colorScheme(.dark)
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
