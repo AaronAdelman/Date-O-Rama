@@ -34,49 +34,34 @@ struct ASAClockCell: View {
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if forComplications {
-            ZStack {
-                //                HStack {
+            NavigationLink(
+                destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
+                    .onReceive(processedRow.row.objectWillChange) { _ in
+                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                        let userData = ASAUserData.shared
+                        userData.objectWillChange.send()
+                        userData.savePreferences(code: .complications)
+                    }
+            ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .padding(EDGE_INSETS_1)
                     .colorScheme(.dark)
-                NavigationLink(
-                    destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
-                        .onReceive(processedRow.row.objectWillChange) { _ in
-                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                            let userData = ASAUserData.shared
-                            userData.objectWillChange.send()
-                            userData.savePreferences(code: .complications)
-                        }
-                ) {
-                }
-                .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-            } // ZStack
+            }
         } else {
-            ZStack {
-                VStack(spacing: 0.0) {
-                    Rectangle()
-                        .frame(height: 1.0)
-                        .foregroundColor(Color("separator"))
-                    ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
-                        .frame(minHeight:  MINIMUM_HEIGHT)
-                        .padding(EDGE_INSETS_1)
-//                        .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
-//                        .background(ASASkyGradient(processedRow: processedRow))
-                }
-                NavigationLink(
-                    destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                        .onReceive(processedRow.row.objectWillChange) { _ in
-                            // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                            let userData = ASAUserData.shared
-                            userData.objectWillChange.send()
-                            userData.savePreferences(code: .clocks)
-                        }
-                ) {
-                }
-                .buttonStyle(PlainButtonStyle()).frame(width:0).opacity(0)
-            } // ZStack
-            .listRowInsets(.zero)
+            NavigationLink(
+                destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                    .onReceive(processedRow.row.objectWillChange) { _ in
+                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                        let userData = ASAUserData.shared
+                        userData.objectWillChange.send()
+                        userData.savePreferences(code: .clocks)
+                    }
+            ) {
+                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
+                    .frame(minHeight:  MINIMUM_HEIGHT)
+                    .padding(EDGE_INSETS_1)
+            }
         }
         #endif
     } // var body
@@ -185,14 +170,14 @@ struct ASAClockCellBody:  View {
                 }
             }
             
-            Spacer().frame(width:  16.0)
-            #endif
-            
-            #if os(watchOS)
-            #else
-            Spacer()
-            ASAForwardChevronSymbol()
-//                .foregroundColor(.white)
+//            Spacer().frame(width:  16.0)
+//            #endif
+//
+//            #if os(watchOS)
+//            #else
+//            Spacer()
+//            ASAForwardChevronSymbol()
+////                .foregroundColor(.white)
             #endif
         } // HStack
     } // var body
