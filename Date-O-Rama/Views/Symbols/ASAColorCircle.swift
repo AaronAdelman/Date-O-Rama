@@ -1,5 +1,5 @@
 //
-//  ASACalendarCircleView.swift
+//  ASAColorCircle.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/06/2021.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASACalendarCircleView: View {
+struct ASAColorCircle: View {
     var color: Color
     
     var body: some View {
@@ -23,6 +23,6 @@ struct ASACalendarCircleView: View {
 
 struct ASACalendarCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarCircleView(color: .blue)
+        ASAColorCircle(color: .blue)
     }
 }

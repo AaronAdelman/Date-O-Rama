@@ -1,5 +1,5 @@
 //
-//  ASAEventColorRectangle.swift
+//  ASAColorRectangle.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 28/12/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAEventColorRectangle: View {
+struct ASAColorRectangle: View {
     var color:  Color
 
     var body: some View {
@@ -18,6 +18,6 @@ struct ASAEventColorRectangle: View {
 
 struct ASAEventColorRectangle_Previews: PreviewProvider {
     static var previews: some View {
-        ASAEventColorRectangle(color: .green)
+        ASAColorRectangle(color: .green)
     }
 }

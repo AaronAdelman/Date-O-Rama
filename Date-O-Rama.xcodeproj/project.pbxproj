@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */; };
-		A501B24F259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */; };
+		A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */; };
+		A501B24F259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */; };
 		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
 		A506E3BF252C9075009345A0 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
@@ -312,7 +312,7 @@
 		A5DC8EBE2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */; };
 		A5DC8EC0267A75A4000B1184 /* ASAAlarmTypeChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8EBF267A75A4000B1184 /* ASAAlarmTypeChooserView.swift */; };
 		A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */; };
-		A5DFD52F26824AEF0013189E /* ASACalendarCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52E26824AEF0013189E /* ASACalendarCircleView.swift */; };
+		A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */; };
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5E2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5F2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
@@ -386,7 +386,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventColorRectangle.swift; sourceTree = "<group>"; };
+		A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorRectangle.swift; sourceTree = "<group>"; };
 		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
@@ -561,7 +561,7 @@
 		A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAICalendarIndexPickerView.swift; sourceTree = "<group>"; };
 		A5DC8EBF267A75A4000B1184 /* ASAAlarmTypeChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAlarmTypeChooserView.swift; sourceTree = "<group>"; };
 		A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarTimeView.swift; sourceTree = "<group>"; };
-		A5DFD52E26824AEF0013189E /* ASACalendarCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarCircleView.swift; sourceTree = "<group>"; };
+		A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorCircle.swift; sourceTree = "<group>"; };
 		A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellEventVisibility.swift; sourceTree = "<group>"; };
 		A5E3606324C71FBC0000A268 /* Judaism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Judaism.json; sourceTree = "<group>"; };
 		A5E3606524C756FF0000A268 /* Israel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Israel.json; sourceTree = "<group>"; };
@@ -620,6 +620,8 @@
 			children = (
 				A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */,
 				A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */,
+				A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */,
+				A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */,
 				A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */,
 				A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */,
 				A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */,
@@ -948,7 +950,6 @@
 				A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */,
 				A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */,
 				A5A9667B25A31EC900CF158F /* ASAEventCell.swift */,
-				A501B24D259A32AB00A005E4 /* ASAEventColorRectangle.swift */,
 				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
@@ -969,7 +970,6 @@
 				A57BCCAA247AA9290019C02C /* Tabs */,
 				A5490F972550339D00EFB13F /* WatchFace.swift */,
 				A5152A042472BE0B0098A94B /* Wrappers */,
-				A5DFD52E26824AEF0013189E /* ASACalendarCircleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1313,7 +1313,7 @@
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
 				A59D803A2600C57D00FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */,
-				A501B24F259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
+				A501B24F259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */,
 				A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */,
 				A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */,
@@ -1376,7 +1376,7 @@
 				A557AD6F25DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
 				A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */,
-				A5DFD52F26824AEF0013189E /* ASACalendarCircleView.swift in Sources */,
+				A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */,
 				A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */,
 				A5AEB7AE267C61FE004E2E48 /* ASAEventCellStyle.swift in Sources */,
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,
@@ -1403,7 +1403,7 @@
 				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
-				A501B24E259A32AC00A005E4 /* ASAEventColorRectangle.swift in Sources */,
+				A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A51D88DD2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A52486D4260B260700A55690 /* ASANewExternalEventButton.swift in Sources */,

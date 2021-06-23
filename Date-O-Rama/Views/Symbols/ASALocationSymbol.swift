@@ -57,7 +57,6 @@ struct ASALocationSymbol:  View {
             Image(systemName:  "location.slash")
                 .imageScale(SCALE)
                 .foregroundColor(.pink)
-
         } else {
             let effectiveStatus: CLAuthorizationStatus = self.locationManager.locationAuthorizationStatus!
             Image(systemName:  (effectiveStatus).symbolName)

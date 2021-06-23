@@ -67,7 +67,7 @@ struct ASAEventDetailView: View {
                     Text(event.location!)
                 }
                 HStack {
-                    ASAEventColorRectangle(color: event.color)
+                    ASAColorRectangle(color: event.color)
                     Text(event.calendarTitleWithLocation)
                 } // HStack
             } // Section

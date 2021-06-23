@@ -60,7 +60,7 @@ struct ASAEventCell:  View {
 
         #if os(watchOS)
         HStack {
-            ASAEventColorRectangle(color: event.color)
+            ASAColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
                 Text(symbolPrefix + event.title)
@@ -92,7 +92,7 @@ struct ASAEventCell:  View {
                 Spacer()
                     .frame(width: SPACER_WIDTH)
 
-                ASACalendarCircleView(color: event.color)
+                ASAColorCircle(color: event.color)
             }
             
 //            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
@@ -104,7 +104,7 @@ struct ASAEventCell:  View {
             }
 
             if !isForClock {
-                ASAEventColorRectangle(color: event.color)
+                ASAColorRectangle(color: event.color)
             }
 
             VStack(alignment: .leading) {

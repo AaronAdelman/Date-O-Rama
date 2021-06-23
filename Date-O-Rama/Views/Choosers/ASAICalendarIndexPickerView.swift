@@ -38,7 +38,7 @@ struct ASAICalendarIndexCell: View {
 //            Circle()
 //                .foregroundColor(calendar.color)
 //                .frame(width: CIRCLE_DIAMETER, height: CIRCLE_DIAMETER)
-            ASACalendarCircleView(color: calendar.color)
+            ASAColorCircle(color: calendar.color)
             Text(verbatim: calendar.title)
             Spacer()
             if index == selectedIndex {

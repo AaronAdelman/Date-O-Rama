@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        _ = ASALocationManager.shared
+        
         if WCSession.isSupported() {
             debugPrint("\(#file) \(#function) WCSession is supported.")
             session.delegate = self

@@ -37,16 +37,15 @@ class ASALocationManager: NSObject, ObservableObject {
         } // willSet
     } // var connectedToTheInternet
 
-    override init() {
-        super.init()
+    public func setUp() {
         self.locationManager.delegate = self
         
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-
+        
         self.locationManager.requestAlwaysAuthorization()
         
         self.locationManager.startUpdatingLocation()
-
+        
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
                 debugPrint(#file, #function, "We’re connected!")
@@ -55,12 +54,17 @@ class ASALocationManager: NSObject, ObservableObject {
                 debugPrint(#file, #function, "No connection.")
                 self.connectedToTheInternet = false
             }
-
+            
             debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
         }
-
+        
         let queue = DispatchQueue(label: "Monitor")
         monitor.start(queue: queue)
+    }
+    
+    override init() {
+        super.init()
+        self.setUp()
     } // init()
     
     let notificationCenter = NotificationCenter.default
@@ -105,8 +109,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
         debugPrint(#file, #function, error)
         self.lastError = error
 //        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
+        self.setUp()
     } // func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
