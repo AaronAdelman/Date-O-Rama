@@ -61,8 +61,8 @@ struct ASAClockCell: View {
                     ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications: forComplications)
                         .frame(minHeight:  MINIMUM_HEIGHT)
                         .padding(EDGE_INSETS_1)
-                        .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
-                        .background(ASASkyGradient(processedRow: processedRow))
+//                        .foregroundColor(.foregroundColor(transitionType: processedRow.transitionType, hour: processedRow.hour, calendarType: processedRow.calendarType, month:  processedRow.month, latitude:  processedRow.latitude, calendarCode:  processedRow.calendarCode))
+//                        .background(ASASkyGradient(processedRow: processedRow))
                 }
                 NavigationLink(
                     destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
@@ -192,7 +192,7 @@ struct ASAClockCellBody:  View {
             #else
             Spacer()
             ASAForwardChevronSymbol()
-                .foregroundColor(.white)
+//                .foregroundColor(.white)
             #endif
         } // HStack
     } // var body

@@ -41,7 +41,7 @@ struct ASAOrdinaryCell:  View {
     var body: some View {
         Text(formattedNumber())
             .font(CELL_FONT)
-            .foregroundColor(Color("calendarOrdinaryCellText"))
+//            .foregroundColor(Color("calendarOrdinaryCellText"))
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
@@ -84,7 +84,8 @@ struct ASAWeekdayCell:  View {
     var body: some View {
         Text(symbol)
             .font(CELL_FONT).fontWeight(.black)
-            .foregroundColor(Color("calendarWeekdayCellText"))
+//            .foregroundColor(Color("calendarWeekdayCellText"))
+            .foregroundColor(.secondary)
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)

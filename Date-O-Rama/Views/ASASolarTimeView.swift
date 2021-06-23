@@ -24,14 +24,15 @@ struct ASASolarTimeView: View {
                 .frame(height: VERTICAL_FUDGE)
             
             ZStack {
+                let LINE_WIDTH: CGFloat = 2.0
                 
                 Circle()  // Circular path: Dotted semicircle
-                    .trim(from: 1/2, to: 1)
+                    .trim(from: 1/2, to: LINE_WIDTH)
                     //                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [7, 7]))
-                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [2, 2]))
+                    .stroke(style: StrokeStyle(lineWidth: LINE_WIDTH, dash: [2, 2]))
                     .frame(width:   dimension, height: dimension)
                 
-                Image(systemName: "sun.max")  // Sun symbol
+                Image(systemName: "sun.max.fill")  // Sun symbol
                     .font(font)
                     .offset(x: -dimension / 2.0)
                     .rotationEffect(.degrees(degrees))
@@ -50,7 +51,7 @@ struct ASASolarTimeView: View {
                 //            .clipShape(Circle())  // Mask to bounds + mask to parent
                 
                 Rectangle()  // X-axis
-                    .frame(width: 4.0 * dimension / 3.0, height: 1)
+                    .frame(width: 4.0 * dimension / 3.0, height: LINE_WIDTH)
                     .opacity(0.5)
                 
                 //            Circle() // Point Left
