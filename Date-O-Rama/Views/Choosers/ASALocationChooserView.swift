@@ -52,7 +52,9 @@ struct ASALocationChooserView: View {
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                         self.geolocate()
                     }) {
-                        Text("🔍").foregroundColor(.accentColor).bold()
+                        Text("🔍")
+                            .foregroundColor(.accentColor)
+                            .bold()
                     }
                     .keyboardShortcut(.defaultAction)
                 }

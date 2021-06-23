@@ -39,7 +39,8 @@ struct ASALocationCell:  View {
     
     var body: some View {
         HStack {
-            Text("HEADER_LOCATION").bold()
+            Text("HEADER_LOCATION")
+                .bold()
             Spacer()
             VStack {
                 if usesDeviceLocation {

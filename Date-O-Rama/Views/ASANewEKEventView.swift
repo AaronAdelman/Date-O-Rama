@@ -304,7 +304,8 @@ struct ASANewEKEventView: View {
                     
                     Spacer()
                     
-                    Text("New Event").bold()
+                    Text("New Event")
+                        .bold()
                     
                     Spacer()
                     

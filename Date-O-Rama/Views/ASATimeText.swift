@@ -13,27 +13,23 @@ struct ASATimeText:  View {
     var timeWidth:  CGFloat
     var timeFontSize:  Font
     var cutoffDate:  Date
-//    var labelColor:  Color
     var isForClock:  Bool
 
     var body:  some View {
-        let font = cutoffDate < Date() ? timeFontSize : timeFontSize.bold()
+        let pastCutoffDate: Bool = cutoffDate < Date()
+        let foregroundColor: Color = pastCutoffDate ? .secondary : .primary
         
         #if os(watchOS)
         Text(verbatim:  verbatim)
-//            .font(timeFontSize)
-//            .foregroundColor(labelColor.grayIfPast(cutoffDate, isForClock: isForClock))
-            .font(font)
-//            .foregroundColor(labelColor)
+            .font(timeFontSize)
+            .foregroundColor(foregroundColor)
             .modifier(ASAScalable(lineLimit: 1))
         #else
         Text(verbatim:  verbatim)
             .frame(width:  timeWidth)
-//            .font(timeFontSize)
-            .font(font)
-//            .foregroundColor(labelColor)
+            .font(timeFontSize)
+            .foregroundColor(foregroundColor)
             .modifier(ASAScalable(lineLimit: 2))
-
         #endif
     } // var body
 } // struct ASATimesText

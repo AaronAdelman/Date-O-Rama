@@ -81,7 +81,7 @@ struct ASALinkedEventCell:  View {
             Spacer()
                 .frame(width: SPACER_WIDTH)
         }
-        .modifier(ASAEventCellStyle(event: event))
+//        .modifier(ASAEventCellStyle(event: event))
         #endif
     } // var body
 } // struct ASALinkedEventCell

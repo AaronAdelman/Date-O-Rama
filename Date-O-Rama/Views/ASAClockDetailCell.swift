@@ -15,12 +15,17 @@ struct ASAClockDetailCell:  View {
     
     var body:  some View {
         HStack {
-            Text(verbatim:  title).bold().multilineTextAlignment(.leading)
+            Text(verbatim:  title)
+                .bold()
+                .multilineTextAlignment(.leading)
             Spacer()
-            Text(verbatim:  detail).multilineTextAlignment(.leading)
+            Text(verbatim:  detail)
+                .multilineTextAlignment(.leading)
             if detail2 != nil {
                 Spacer()
-                Text(verbatim:  detail2!).multilineTextAlignment(.leading).frame(width:  100.0)
+                Text(verbatim:  detail2!)
+                    .multilineTextAlignment(.leading)
+                    .frame(width:  100.0)
             }
         } // HStack
     } // var body

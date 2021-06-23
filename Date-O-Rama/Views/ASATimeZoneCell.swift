@@ -15,7 +15,8 @@ struct ASATimeZoneCell:  View {
     var body:  some View {
         HStack {
 //            Text(timeZone.emoji(date:  now))
-            Text(verbatim:  NSLocalizedString("HEADER_TIME_ZONE", comment: "")).bold()
+            Text(verbatim:  NSLocalizedString("HEADER_TIME_ZONE", comment: ""))
+                .bold()
             Spacer()
             VStack {
                 if timeZone == TimeZone.autoupdatingCurrent {

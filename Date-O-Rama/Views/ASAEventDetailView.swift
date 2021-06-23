@@ -23,14 +23,6 @@ struct ASAEventDetailView: View {
     var row:  ASARow
     @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
-    #if os(watchOS)
-    let labelColor          = Color.white
-    let secondaryLabelColor = Color(UIColor.lightGray)
-    #else
-    var labelColor          = Color.primary
-    var secondaryLabelColor = Color.secondary
-    #endif
-    
     @State var showingEventEditView = false
     
     #if os(watchOS)
@@ -127,7 +119,6 @@ struct ASAEventDetailView: View {
             }
         } // List
         .listStyle(DefaultListStyle())
-        .foregroundColor(labelColor)
         .onAppear() {
             #if os(watchOS)
             #else

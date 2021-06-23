@@ -85,7 +85,9 @@ struct ASAEventsTab: View {
                     Section {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $primaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
-                                Text(verbatim: primaryRow.dateString(now: date)).font(.title).bold()
+                                Text(verbatim: primaryRow.dateString(now: date))
+                                    .font(.title)
+                                    .bold()
                                 if primaryRow.calendar.supportsLocations ||  primaryRow.calendar.supportsTimeZones {
                                     HStack {
                                         if primaryRow.usesDeviceLocation {

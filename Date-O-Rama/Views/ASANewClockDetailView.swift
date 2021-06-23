@@ -35,7 +35,8 @@ struct ASANewClockDetailView: View {
 
                     Spacer()
 
-                    Text("New Clock").bold()
+                    Text("New Clock")
+                        .bold()
 
                     Spacer()
 
