@@ -221,8 +221,6 @@ struct ASAClockEventsSubcell: View {
             }.pickerStyle(SegmentedPickerStyle())
             
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
-        } else {
-            EmptyView()
         }
         #endif
     } // var body
