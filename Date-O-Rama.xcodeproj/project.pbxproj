@@ -57,7 +57,6 @@
 		A557AD0825DD495400A264B6 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
 		A557AD0925DD495400A264B6 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A557AD0B25DD495400A264B6 /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
-		A557AD0C25DD495400A264B6 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
 		A557AD0D25DD495400A264B6 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A557AD0E25DD495400A264B6 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
 		A557AD0F25DD495400A264B6 /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
@@ -310,6 +309,10 @@
 		A5DC8769264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */; };
 		A5DC8EBE2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */; };
 		A5DC8EC0267A75A4000B1184 /* ASAAlarmTypeChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8EBF267A75A4000B1184 /* ASAAlarmTypeChooserView.swift */; };
+		A5DD45392683AED5008DBC22 /* ASAEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */; };
+		A5DD453A2683AF4B008DBC22 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
+		A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
+		A5DD453C2683AFAD008DBC22 /* Date_O_RamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C132433361900CFEE47 /* Date_O_RamaTests.swift */; };
 		A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */; };
 		A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */; };
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
@@ -1399,6 +1402,7 @@
 				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
+				A5DD453C2683AFAD008DBC22 /* Date_O_RamaTests.swift in Sources */,
 				A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A51D88DD2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
@@ -1447,6 +1451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DD45392683AED5008DBC22 /* ASAEventCategory.swift in Sources */,
 				A557AD1525DD495400A264B6 /* IntExtensions.swift in Sources */,
 				A557AD7025DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
 				A59D805D2600C6F900FD8BBF /* ASAEvent.swift in Sources */,
@@ -1480,6 +1485,8 @@
 				A557ACDE25DD488B00A264B6 /* ASAISO8601Calendar.swift in Sources */,
 				A557AD0D25DD495400A264B6 /* DateExtensions.swift in Sources */,
 				A557AD1125DD495400A264B6 /* CLAuthorizationStatusExtensions.swift in Sources */,
+				A5DD453A2683AF4B008DBC22 /* ASAEventSpecification.swift in Sources */,
+				A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */,
 				A59D802D2600C57A00FD8BBF /* ASACalendarCode.swift in Sources */,
 				A59D805C2600C6F900FD8BBF /* ASADateSpecification.swift in Sources */,
 				A557ACF825DD48F000A264B6 /* ASALocationManager.swift in Sources */,
@@ -1487,7 +1494,6 @@
 				A557AD0E25DD495400A264B6 /* CLLocationExtensions.swift in Sources */,
 				A557AD1625DD495400A264B6 /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A557AD0825DD495400A264B6 /* EKCalendarExtensions.swift in Sources */,
-				A557AD0C25DD495400A264B6 /* ColorExtensions.swift in Sources */,
 				A5E1CC5E2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -123,8 +123,8 @@ class Date_O_RamaTests: XCTestCase {
         let CE = 1
         
         let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, yearForWeekOfYear: nil, quarter: nil, month: 2, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: 4, weekdayOrdinal: nil, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
-        let startDateSpecification0 = ASADateSpecification(era: nil, year: nil, month: 01, day: 01, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
-        let endDateSpecification0 = ASADateSpecification(era: nil, year: nil, month: 12, day: 31, weekdays: [.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday], lengthsOfMonth: nil, lengthsOfYear: nil, dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, type: .allDay, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil)
+        let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.allDay)
+        let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.allDay)
         
         let components0EYMD = components0.EYMD
         let startDateSpecification0EMYD = startDateSpecification0.EYMD
