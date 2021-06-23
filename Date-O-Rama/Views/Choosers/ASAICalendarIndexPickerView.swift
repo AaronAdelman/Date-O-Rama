@@ -33,11 +33,12 @@ struct ASAICalendarIndexCell: View {
     
     var body: some View {
         HStack {
-            let CIRCLE_DIAMETER:  CGFloat = 8.0
-            
-            Circle()
-                .foregroundColor(calendar.color)
-                .frame(width: CIRCLE_DIAMETER, height: CIRCLE_DIAMETER)
+//            let CIRCLE_DIAMETER:  CGFloat = 8.0
+//
+//            Circle()
+//                .foregroundColor(calendar.color)
+//                .frame(width: CIRCLE_DIAMETER, height: CIRCLE_DIAMETER)
+            ASACalendarCircleView(color: calendar.color)
             Text(verbatim: calendar.title)
             Spacer()
             if index == selectedIndex {

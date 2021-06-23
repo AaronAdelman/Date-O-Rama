@@ -10,11 +10,11 @@ import SwiftUI
 
 struct ASASolarTimeView: View {
     @State private var maskedRectScalesAlong = false
-    @State var degrees: Double
-    @State var dimension: CGFloat
+    var degrees: Double
+    var dimension: CGFloat
     //    let CIRCLE_WIDTH: CGFloat = 10.0
-    @State var font: Font
-
+    var font: Font
+    
     
     private let VERTICAL_FUDGE: CGFloat = 12.0
     
@@ -27,7 +27,7 @@ struct ASASolarTimeView: View {
                 
                 Circle()  // Circular path: Dotted semicircle
                     .trim(from: 1/2, to: 1)
-//                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [7, 7]))
+                    //                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [7, 7]))
                     .stroke(style: StrokeStyle(lineWidth: 1, dash: [2, 2]))
                     .frame(width:   dimension, height: dimension)
                 
@@ -65,6 +65,7 @@ struct ASASolarTimeView: View {
             Spacer()
                 .frame(height: VERTICAL_FUDGE)
         } // VStack
+        .environment(\.layoutDirection, .rightToLeft)
     }
 }
 

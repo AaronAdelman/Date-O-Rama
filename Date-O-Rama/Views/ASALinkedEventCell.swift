@@ -32,6 +32,8 @@ struct ASALinkedEventCell:  View {
     let FRAME_MIN_WIDTH:  CGFloat  = 300.0
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
     
+    var isForClock: Bool
+    
     var body: some View {
         #if os(watchOS)
         NavigationLink(destination: ASAEventDetailView(event: event, row: primaryRow), label: {
@@ -49,7 +51,7 @@ struct ASALinkedEventCell:  View {
                 .frame(width: 8.0)
             #endif
             
-            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
+            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: isForClock, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
             
             Spacer()
             

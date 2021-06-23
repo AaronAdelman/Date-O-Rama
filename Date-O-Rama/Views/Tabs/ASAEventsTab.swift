@@ -149,7 +149,7 @@ struct ASAEventsTab: View {
                         ForEach(ASAUserData.shared.events(startDate: rangeStart, endDate: rangeEnd, row: self.primaryRow), id: \.eventIdentifier) {
                             event
                             in
-                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd)
+                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: false)
                                 .listRowInsets(.zero)
                         } // ForEach
                     } // Section

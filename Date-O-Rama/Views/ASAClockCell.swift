@@ -262,7 +262,7 @@ struct ASAClockEventsForEach:  View {
             let rangeStart: Date = processedRow.startOfDay
             let rangeEnd: Date = processedRow.startOfNextDay
             
-            ASALinkedEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd)
+            ASALinkedEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: true)
         } // ForEach
     } // var body
 } // struct ASAClockEventsForEach

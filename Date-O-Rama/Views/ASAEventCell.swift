@@ -82,6 +82,19 @@ struct ASAEventCell:  View {
         } // HStack
         #else
         HStack {
+            if isForClock {
+                #if targetEnvironment(macCatalyst)
+                let SPACER_WIDTH: CGFloat = 16.0
+                #else
+                let SPACER_WIDTH: CGFloat = 8.0
+                #endif
+                
+                Spacer()
+                    .frame(width: SPACER_WIDTH)
+
+                ASACalendarCircleView(color: event.color)
+            }
+            
 //            ASATimesSubcell(event: event, row: self.primaryRow, labelColor: labelColor, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
             ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
 
@@ -90,7 +103,9 @@ struct ASAEventCell:  View {
                 ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
-            ASAEventColorRectangle(color: event.color)
+            if !isForClock {
+                ASAEventColorRectangle(color: event.color)
+            }
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
