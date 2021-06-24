@@ -29,7 +29,7 @@ struct ASAClockCell: View {
         #if os(watchOS)
         ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  isForComplications)
         #else
-        let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
+//        let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
@@ -44,7 +44,7 @@ struct ASAClockCell: View {
             ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-                    .padding(EDGE_INSETS_1)
+//                    .padding(EDGE_INSETS_1)
                     .colorScheme(.dark)
             }
         } else {
@@ -59,7 +59,7 @@ struct ASAClockCell: View {
             ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-                    .padding(EDGE_INSETS_1)
+//                    .padding(EDGE_INSETS_1)
             }
         }
         #endif
@@ -94,7 +94,7 @@ struct ASAClockCellBody:  View {
         } // get
     } // var compact
     
-    @State private var showingEvents:  Bool = true
+//    @State private var showingEvents:  Bool = true
     #endif
     
     fileprivate func shouldShowMiniClock() -> Bool {
@@ -108,7 +108,7 @@ struct ASAClockCellBody:  View {
     } // func numberFormatter() -> NumberFormatter
     
     var body: some View {
-        VStack {
+//        VStack {
             HStack {
                 VStack(alignment: .leading) {
                     if shouldShowCalendar {
@@ -174,19 +174,19 @@ struct ASAClockCellBody:  View {
             
             #if os(watchOS)
             #else
-            if !isForComplications {
-                let numberOfEvents = processedRow.events.count
-                let formatString : String = NSLocalizedString("n events today", comment: "")
-                let numberOfEventsString: String = String.localizedStringWithFormat(formatString, numberOfEvents)
-                if numberOfEvents > 0 {
-                    DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
-                        ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility)
-                            .listRowInsets(.zero)
-                    }
-                }
-            }
+//            if !isForComplications {
+//                let numberOfEvents = processedRow.events.count
+//                let formatString : String = NSLocalizedString("n events today", comment: "")
+//                let numberOfEventsString: String = String.localizedStringWithFormat(formatString, numberOfEvents)
+//                if numberOfEvents > 0 {
+//                    DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
+//                        ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility)
+//                            .listRowInsets(.zero)
+//                    }
+//                }
+//            }
             #endif
-        } // VStack
+//        } // VStack
     } // var body
 } // struct ASAClockCellBody
 
@@ -196,22 +196,28 @@ struct ASAClockCellBody:  View {
 struct ASAClockEventsSubcell: View {
     var processedRow:  ASAProcessedRow
     @Binding var now:  Date
+    @State private var showingEvents:  Bool = true
     @State var eventVisibility: ASAClockCellEventVisibility = .next
 
     var body: some View {
         #if os(watchOS)
         EmptyView()
         #else
-        if processedRow.events.count > 0 {
-            Picker(selection: $eventVisibility, label: Text("")) {
-                ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
-                    possibility
-                    in
-                    Text(possibility.emoji)
-                }
-            }.pickerStyle(SegmentedPickerStyle())
-            
-            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
+        let numberOfEvents = processedRow.events.count
+        let formatString : String = NSLocalizedString("n events today", comment: "")
+        let numberOfEventsString: String = String.localizedStringWithFormat(formatString, numberOfEvents)
+        if numberOfEvents > 0 {
+            DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
+                Picker(selection: $eventVisibility, label: Text("")) {
+                    ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+                        possibility
+                        in
+                        Text(possibility.emoji)
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+                
+                ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
+            }
         }
         #endif
     } // var body
