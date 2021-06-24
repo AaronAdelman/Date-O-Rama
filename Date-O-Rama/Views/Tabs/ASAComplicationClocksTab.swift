@@ -40,7 +40,7 @@ struct ASAComplicationClocksTab: View {
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                                 // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                                ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, forComplications: true)
+                                ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true)
                             }
                         }
                     }

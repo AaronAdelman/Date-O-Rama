@@ -29,7 +29,7 @@ struct ASAMainRowsByPlaceView:  View {
     }
     @Binding var now:  Date
     
-    var forComplications:  Bool
+    var isForComplications:  Bool
     
     func keys() -> Array<String> {
         var here: String?
@@ -78,10 +78,10 @@ struct ASAMainRowsByPlaceView:  View {
                     in
                     
                     #if os(watchOS)
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: isForComplications)
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
 //                    ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
 //                        .listRowInsets(.zero)
                     #endif
@@ -94,6 +94,6 @@ struct ASAMainRowsByPlaceView:  View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASARow.generic]), now: .constant(Date()), forComplications: false)
+        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASARow.generic]), now: .constant(Date()), isForComplications: false)
     }
 }

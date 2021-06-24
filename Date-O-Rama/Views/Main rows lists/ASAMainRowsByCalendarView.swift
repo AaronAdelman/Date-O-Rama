@@ -16,7 +16,7 @@ struct ASAMainRowsByCalendarView:  View {
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     //    var shouldShowTimeToNextDay:  Bool
     
-    var forComplications:  Bool
+    var isForComplications:  Bool
     
     var body:  some View {
         let processedRows: [String : [ASAProcessedRow]] = self.rows.processedRowsByCalendar(now: now)
@@ -31,9 +31,9 @@ struct ASAMainRowsByCalendarView:  View {
                     in
                     
                     #if os(watchOS)
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: isForComplications)
                     #else
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, forComplications: forComplications)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
 //                    ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
 //                        .listRowInsets(.zero)
                     #endif
@@ -46,6 +46,6 @@ struct ASAMainRowsByCalendarView:  View {
 
 struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), forComplications: false)
+        ASAMainRowsByCalendarView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), isForComplications: false)
     }
 }

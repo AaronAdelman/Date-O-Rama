@@ -56,11 +56,13 @@ struct ASALinkedEventCell:  View {
         })
         #else
         HStack {
-//            #if targetEnvironment(macCatalyst)
-//            #else
-//            Spacer()
-//                .frame(width: 8.0)
-//            #endif
+            if !isForClock {
+                #if targetEnvironment(macCatalyst)
+                #else
+                Spacer()
+                    .frame(width: 8.0)
+                #endif
+            }
             
             ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: isForClock, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
             
@@ -76,7 +78,7 @@ struct ASALinkedEventCell:  View {
                 ASAEventDetailView(event: event, row: primaryRow, action: $action)
                     .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
             }
-//            .foregroundColor(.accentColor)
+            .foregroundColor(.accentColor)
             .onChange(of: action, perform: {
                 newValue
                 in
@@ -85,13 +87,15 @@ struct ASALinkedEventCell:  View {
                 }
             })
             
-            #if targetEnvironment(macCatalyst)
-            let SPACER_WIDTH: CGFloat = 16.0
-            #else
-            let SPACER_WIDTH: CGFloat =  8.0
-            #endif
-//            Spacer()
-//                .frame(width: SPACER_WIDTH)
+            if !isForClock {
+                #if targetEnvironment(macCatalyst)
+                let SPACER_WIDTH: CGFloat = 16.0
+                #else
+                let SPACER_WIDTH: CGFloat =  8.0
+                #endif
+                Spacer()
+                    .frame(width: SPACER_WIDTH)
+            }
         }
 //        .modifier(ASAEventCellStyle(event: event))
         #endif
