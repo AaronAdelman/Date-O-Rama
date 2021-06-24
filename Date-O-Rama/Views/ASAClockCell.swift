@@ -22,7 +22,6 @@ struct ASAClockCell: View {
     
     var shouldShowTime:  Bool
     var shouldShowMiniCalendar:  Bool
-    //    var shouldShowTimeToNextDay:  Bool
     
     var forComplications:  Bool
     
@@ -62,6 +61,8 @@ struct ASAClockCell: View {
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .padding(EDGE_INSETS_1)
             }
+            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
+                .listRowInsets(.zero)
         }
         #endif
     } // var body
@@ -169,15 +170,6 @@ struct ASAClockCellBody:  View {
                     ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
                 }
             }
-            
-//            Spacer().frame(width:  16.0)
-//            #endif
-//
-//            #if os(watchOS)
-//            #else
-//            Spacer()
-//            ASAForwardChevronSymbol()
-////                .foregroundColor(.white)
             #endif
         } // HStack
     } // var body
