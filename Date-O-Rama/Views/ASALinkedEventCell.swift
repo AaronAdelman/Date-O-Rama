@@ -34,6 +34,17 @@ struct ASALinkedEventCell:  View {
     
     var isForClock: Bool
     
+    #if os(watchOS)
+    let compact = true
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+    #endif
+    
     var body: some View {
         #if os(watchOS)
         NavigationLink(destination: ASAEventDetailView(event: event, row: primaryRow), label: {
@@ -45,11 +56,11 @@ struct ASALinkedEventCell:  View {
         })
         #else
         HStack {
-            #if targetEnvironment(macCatalyst)
-            #else
-            Spacer()
-                .frame(width: 8.0)
-            #endif
+//            #if targetEnvironment(macCatalyst)
+//            #else
+//            Spacer()
+//                .frame(width: 8.0)
+//            #endif
             
             ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: isForClock, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
             
@@ -58,7 +69,8 @@ struct ASALinkedEventCell:  View {
             Button(action:  {
                 self.showingEventView = true
             }, label:  {
-                Image(systemName: "info.circle.fill") .font(Font.system(.title))
+                let buttonFont: Font = compact ? Font.system(.body) : Font.system(.title)
+                Image(systemName: "info.circle.fill") .font(buttonFont)
             })
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
                 ASAEventDetailView(event: event, row: primaryRow, action: $action)
@@ -78,8 +90,8 @@ struct ASALinkedEventCell:  View {
             #else
             let SPACER_WIDTH: CGFloat =  8.0
             #endif
-            Spacer()
-                .frame(width: SPACER_WIDTH)
+//            Spacer()
+//                .frame(width: SPACER_WIDTH)
         }
 //        .modifier(ASAEventCellStyle(event: event))
         #endif

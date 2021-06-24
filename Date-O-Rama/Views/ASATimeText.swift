@@ -14,6 +14,17 @@ struct ASATimeText:  View {
     var timeFontSize:  Font
     var cutoffDate:  Date
     var isForClock:  Bool
+    
+    #if os(watchOS)
+    let compact = true
+    #else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+    #endif
 
     var body:  some View {
         let pastCutoffDate: Bool = cutoffDate < Date()
@@ -30,6 +41,7 @@ struct ASATimeText:  View {
             .font(timeFontSize)
             .foregroundColor(foregroundColor)
             .modifier(ASAScalable(lineLimit: 2))
+            .multilineTextAlignment(.leading)
         #endif
     } // var body
 } // struct ASATimesText

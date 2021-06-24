@@ -59,18 +59,18 @@ struct ASAEventCell:  View {
         } // HStack
         #else
         HStack {
-            if isForClock {
-                #if targetEnvironment(macCatalyst)
-                let SPACER_WIDTH: CGFloat = 16.0
-                #else
-                let SPACER_WIDTH: CGFloat = 8.0
-                #endif
-                
-                Spacer()
-                    .frame(width: SPACER_WIDTH)
-
-                ASAColorCircle(color: event.color)
-            }
+//            if isForClock {
+//                #if targetEnvironment(macCatalyst)
+//                let SPACER_WIDTH: CGFloat = 16.0
+//                #else
+//                let SPACER_WIDTH: CGFloat = 8.0
+//                #endif
+//
+//                Spacer()
+//                    .frame(width: SPACER_WIDTH)
+//
+//                ASAColorCircle(color: event.color)
+//            }
             
             ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
 
@@ -78,19 +78,20 @@ struct ASAEventCell:  View {
                 ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
-            if !isForClock {
+//            if !isForClock {
                 ASAColorRectangle(color: event.color)
-            }
+//            }
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
+                let symbolifiedTitle: String = symbolPrefix + event.title
                 if self.compact {
-                    Text(symbolPrefix + event.title)
+                    Text(symbolifiedTitle)
                         .font(.callout)
                         .bold()
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 } else {
-                    Text(symbolPrefix + event.title)
+                    Text(symbolifiedTitle)
                         .font(.headline)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
