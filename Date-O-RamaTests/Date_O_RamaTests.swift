@@ -277,7 +277,7 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssertFalse(March29.isWithin(start: AbstractMarch6, end: AbstractMarch28))
         XCTAssertFalse(March30.isWithin(start: AbstractMarch6, end: AbstractMarch28))
 
-        let foo2 = ([1, 2021, 3, 6], [1, 2022, 3, 28])
+        let foo2 = ([1, 2021, 3, 6], [1, 2021, 3, 28])
         
         XCTAssert(March6.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
         XCTAssert(March7.fillInFor(start: AbstractMarch6, end: AbstractMarch28) == foo2)
