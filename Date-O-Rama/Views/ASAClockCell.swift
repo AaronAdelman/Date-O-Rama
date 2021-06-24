@@ -25,6 +25,8 @@ struct ASAClockCell: View {
     
     var forComplications:  Bool
     
+    @State private var showingEvents:  Bool = true
+    
     var body: some View {
         #if os(watchOS)
         ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, forComplications:  forComplications)
@@ -61,8 +63,15 @@ struct ASAClockCell: View {
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .padding(EDGE_INSETS_1)
             }
-            ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
-                .listRowInsets(.zero)
+            let numberOfEvents = processedRow.events.count
+            let formatString : String = NSLocalizedString("n events today", comment: "")
+            let numberOfEventsString: String = String.localizedStringWithFormat(formatString, numberOfEvents)
+            if numberOfEvents > 0 {
+                DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
+                    ASAClockEventsSubcell(processedRow: processedRow, forComplications: forComplications, now: $now, eventVisibility: processedRow.row.eventVisibility)
+                        .listRowInsets(.zero)
+                }
+            }
         }
         #endif
     } // var body
@@ -228,8 +237,8 @@ struct ASAClockEventsForEach:  View {
             case .next:
                 return processedRow.events.nextEvents(now: now)
                 
-            case .none:
-                return []
+//            case .none:
+//                return []
             } // switch visibility
         }()
         

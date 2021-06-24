@@ -362,10 +362,6 @@ class ASAEventCalendar {
                 appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
             }
             
-            if eventSpecification.startDateSpecification.EYMD == [nil, nil, 11, 12] {
-                debugPrint(#file, #function, "Era:", appropriateComponents.era as Any, "Year:", appropriateComponents.year as Any, "Month:", appropriateComponents.month as Any, "Day:", appropriateComponents.day as Any, "Start date EYMD:", eventSpecification.startDateSpecification.EYMD, "End date EYMD:", eventSpecification.endDateSpecification?.EYMD as Any)
-            }
-            
             let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents)
             if matchesDateSpecifications {
                 let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)

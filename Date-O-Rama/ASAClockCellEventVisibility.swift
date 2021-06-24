@@ -9,7 +9,7 @@
 import Foundation
 
 enum ASAClockCellEventVisibility:  String, CaseIterable {
-    case none
+//    case none
     case allDay
     case next
     case future
@@ -21,8 +21,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     var text:  String {
         var raw:  String = ""
         switch self {
-        case .none:
-            raw = "ASAClockCellEventVisibility.none"
+//        case .none:
+//            raw = "ASAClockCellEventVisibility.none"
         case .allDay:
             raw = "ASAClockCellEventVisibility.allDay"
         case .next:
@@ -37,8 +37,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     #else
     var emoji:  String {
         switch self {
-        case .none:
-            return "0️⃣"
+//        case .none:
+//            return "0️⃣"
             
         case .allDay:
             return "📅"
