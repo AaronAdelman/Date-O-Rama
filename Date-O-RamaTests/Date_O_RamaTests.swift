@@ -311,6 +311,33 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssertFalse(bar.isWithin(start: quux0, end: quux1))
     } // func testMatchingStartAndEnd2() throws
     
+    func testMatchingStartAndEnd3() throws {
+        // Inspired by יום גאולה של יוסף יצחק שניאורסאהן, which falls on י״ב בתמוז and י״ג בתמוז
+        let Tammuz12: Array<Int?> = [0, 5781, 11, 12]
+        let Tammuz13: Array<Int?> = [0, 5781, 11, 13]
+        let Tammuz14: Array<Int?> = [0, 5781, 11, 14]
+        let Tammuz15: Array<Int?> = [0, 5781, 11, 15]
+        let eventStart: Array<Int?> = [nil, nil, 11, 12]
+        let eventEnd: Array<Int?> = [nil, nil, 11, 13]
+        
+        XCTAssert(Tammuz12.isWithin(start: eventStart, end: eventEnd))
+        XCTAssert(Tammuz13.isWithin(start: eventStart, end: eventEnd))
+        XCTAssertFalse(Tammuz14.isWithin(start: eventStart, end: eventEnd))
+        XCTAssertFalse(Tammuz15.isWithin(start: eventStart, end: eventEnd))
+
+        let (_, filledInEndDateEYMDTammuz12) = Tammuz12.fillInFor(start: eventStart, end: eventEnd)
+        XCTAssertFalse(filledInEndDateEYMDTammuz12[1] == 5782)
+
+        let (_, filledInEndDateEYMDTammuz13) = Tammuz13.fillInFor(start: eventStart, end: eventEnd)
+        XCTAssertFalse(filledInEndDateEYMDTammuz13[1] == 5782)
+        
+        let EYMD0: Array<Int?> = [nil, nil, 11, 12]
+        let EYMD1: Array<Int?> = [nil, nil, 11, 13]
+        
+        XCTAssert(Array.areBoring(start: EYMD0, end: EYMD1))
+        XCTAssertFalse(Array.areBoring(start: EYMD1, end: EYMD0))
+    }
+    
     func testChangingTheCalendarOfAClock() throws {
         let clock = ASARow()
         clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!

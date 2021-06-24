@@ -162,10 +162,51 @@ extension Array where Element == Int? {
         return true
     } // func isWithin(start: Array<Int?>, end: Array<Int?>) -> Bool
     
+    // A pair of EYMDs is considered “boring” if we can simply fill in missing values from anohter EYMD without having to worry about, say, having to figure out which year either EYMD occurs in.
+    static func areBoring(start: Array<Int?>, end: Array<Int?>) -> Bool {
+        assert(start.count == end.count)
+
+        for i in 0..<start.count {
+            let start_i = start[i]
+            let end_i   = end[i]
+            
+            if start_i != nil && end_i != nil {
+                if start_i! < end_i! {
+                    return true
+                }
+                
+                if start_i! > end_i! {
+                    return false
+                }
+            }
+        } // for i
+        
+        return true
+    } // func areBoring(start: Array<Int?>, end: Array<Int?>) -> Bool
+    
     func fillInFor(start: Array<Int?>, end: Array<Int?>) -> (start: Array<Int?>, end: Array<Int?>) {
         assert(start.count == end.count)
         
         let length = start.count
+        
+        if Array.areBoring(start: start, end: end) {
+            // We can safely fill in missing values from self without having, say, to worry about start and end falling in different years.
+            var startTemp = start
+            var endTemp   = end
+            
+            for i in 0..<length {
+                let self_i = self[i]
+                if startTemp[i] == nil {
+                    startTemp[i] = self_i
+                }
+                if endTemp[i] == nil {
+                    endTemp[i] = self_i
+                }
+            } // for i
+            return (startTemp, endTemp)
+        }
+        
+        // TODO:  Probably ought to go think about how to do this better, perhaps merged with isWithin.  The “areBoring” business is meant to get around a bug.
         var newStart: Array<Int?> = Array(repeating: -1, count: length)
         var newEnd = newStart
         

@@ -312,7 +312,6 @@
 		A5DD45392683AED5008DBC22 /* ASAEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */; };
 		A5DD453A2683AF4B008DBC22 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
-		A5DD453C2683AFAD008DBC22 /* Date_O_RamaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C132433361900CFEE47 /* Date_O_RamaTests.swift */; };
 		A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */; };
 		A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */; };
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
@@ -1402,7 +1401,6 @@
 				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
-				A5DD453C2683AFAD008DBC22 /* Date_O_RamaTests.swift in Sources */,
 				A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A51D88DD2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,

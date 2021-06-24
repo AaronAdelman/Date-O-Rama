@@ -113,7 +113,7 @@ class ASAEventCalendar {
             }
         }
         
-        // All-months events
+        // All-month events
         if startDateSpecification.type == .allMonth {
             assert(endDateSpecification == nil)
             let matches = self.matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
@@ -141,11 +141,11 @@ class ASAEventCalendar {
         if !within {
             return (false, nil, nil)
         }
+        
         let (filledInStartDateEYMD, filledInEndDateEYMD) = dateEYMD.fillInFor(start: startDateEYMD, end: endDateEYMD)
         
         tweakedStartDateSpecification = startDateSpecification.fillIn(EYMD: filledInStartDateEYMD)
         
-//        let tweakedEndDateSpecification = self.tweak(dateSpecification: endDateSpecification!, date: date, calendar: calendar, templateDateComponents: components, strong: true)
         let tweakedEndDateSpecification = endDateSpecification!.fillIn(EYMD: filledInEndDateEYMD)
         
         let eventStartDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
@@ -360,6 +360,10 @@ class ASAEventCalendar {
                 appropriateComponents = components
             } else {
                 appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+            }
+            
+            if eventSpecification.startDateSpecification.EYMD == [nil, nil, 11, 12] {
+                debugPrint(#file, #function, "Era:", appropriateComponents.era as Any, "Year:", appropriateComponents.year as Any, "Month:", appropriateComponents.month as Any, "Day:", appropriateComponents.day as Any, "Start date EYMD:", eventSpecification.startDateSpecification.EYMD, "End date EYMD:", eventSpecification.endDateSpecification?.EYMD as Any)
             }
             
             let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents)
