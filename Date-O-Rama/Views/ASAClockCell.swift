@@ -205,7 +205,7 @@ struct ASAClockEventsSubcell: View {
         #else
         let numberOfEvents = processedRow.events.count
         let formatString : String = NSLocalizedString("n events today", comment: "")
-        let numberOfEventsString: String = String.localizedStringWithFormat(formatString, numberOfEvents)
+        let numberOfEventsString: String = "• " + String.localizedStringWithFormat(formatString, numberOfEvents)
         if numberOfEvents > 0 {
             DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
                 Picker(selection: $eventVisibility, label: Text("")) {

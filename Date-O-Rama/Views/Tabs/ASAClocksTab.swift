@@ -115,7 +115,7 @@ struct ASAClocksTab: View {
                         EmptyView()
                     } // switch self.groupingOptions[self.groupingOptionIndex]
                 }
-                .listStyle(InsetGroupedListStyle())
+                .listStyle(SidebarListStyle())
                 .sheet(isPresented: self.$showingNewClockDetailView) {
                     ASANewClockDetailView(now:  now)
                 }
