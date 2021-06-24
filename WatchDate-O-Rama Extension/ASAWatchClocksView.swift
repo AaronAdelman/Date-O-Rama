@@ -40,16 +40,16 @@ struct ASAWatchClocksView: View {
 
                 switch self.primaryMainRowsGroupingOption {
                 case .byFormattedDate:
-                    ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, isForComplications:  false)
+                    ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
 
                 case .byCalendar:
-                    ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, isForComplications: false)
+                    ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
 
                 case .byPlaceName, .byCountry:
-                    ASAMainRowsByPlaceView(primaryGroupingOption: primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, isForComplications: false)
+                    ASAMainRowsByPlaceView(primaryGroupingOption: primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                    ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, isForComplications:  false)
+                    ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
 
                 default:
                     EmptyView()

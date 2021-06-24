@@ -16,7 +16,7 @@ struct ASAMainRowsByFormattedDateView:  View {
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     //    var shouldShowTimeToNextDay:  Bool
     
-    var isForComplications:  Bool
+//    var isForComplications:  Bool
     
     var body: some View {
         let processedRows: [String : [ASAProcessedRow]] = self.rows.processedByFormattedDate(now: now)
@@ -33,7 +33,7 @@ struct ASAMainRowsByFormattedDateView:  View {
                     in
                     
                     #if os(watchOS)
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: isForComplications)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: false, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
@@ -48,6 +48,6 @@ struct ASAMainRowsByFormattedDateView:  View {
 
 struct ASAMainRowsByFormattedDateView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest), isForComplications:  false)
+        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }

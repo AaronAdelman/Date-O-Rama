@@ -15,17 +15,17 @@ struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
     @State var usingRealTime = true
-
+    
     @State private var showingNewClockDetailView = false
-
+    
     @AppStorage("mainRowsGroupingOption") var primaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
     @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byFormattedDate
-//    @AppStorage("showTimeToNextDay") var shouldShowTimeToNextDay = false
-
+    //    @AppStorage("showTimeToNextDay") var shouldShowTimeToNextDay = false
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State var isNavigationBarHidden:  Bool = true
-
+    
     @State private var showingPreferences:  Bool = false
     
     var body: some View {
@@ -100,16 +100,16 @@ struct ASAClocksTab: View {
                     
                     switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
-                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, isForComplications:  false)
+                        ASAMainRowsByFormattedDateView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
                         
                     case .byCalendar:
-                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption, isForComplications:  false)
+                        ASAMainRowsByCalendarView(rows: $userData.mainRows, now: $now, secondaryGroupingOption: $secondaryMainRowsGroupingOption)
                         
                     case .byPlaceName, .byCountry:
-                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, isForComplications:  false)
+                        ASAMainRowsByPlaceView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                         
                     case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
-                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now, isForComplications:  false)
+                        ASAMainRowsByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainRows, now: $now)
                         
                     default:
                         EmptyView()
@@ -151,7 +151,7 @@ struct ASARadioButtonLabel: View {
                 Image(systemName: "circle")
                     .imageScale(.large)
             }
-
+            
             if text != nil {
                 Text(NSLocalizedString(text!, comment: ""))
                     .modifier(ASAScalable(lineLimit: 1))

@@ -25,7 +25,7 @@ struct ASAMainRowsByTimeZoneView:  View {
     @Binding var now:  Date
     //    var shouldShowTimeToNextDay:  Bool
     
-    var isForComplications:  Bool
+//    var isForComplications:  Bool
     
     func keys(groupingOption:  ASAClocksViewGroupingOption) -> Array<Int> {
         switch groupingOption {
@@ -53,7 +53,7 @@ struct ASAMainRowsByTimeZoneView:  View {
                     in
                     
                     #if os(watchOS)
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, isForComplications: isForComplications)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, isForComplications: false)
                     #else
                     // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
