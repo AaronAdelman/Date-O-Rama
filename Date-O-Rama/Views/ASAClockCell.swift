@@ -29,7 +29,6 @@ struct ASAClockCell: View {
         #if os(watchOS)
         ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  isForComplications)
         #else
-//        let EDGE_INSETS_1: EdgeInsets = EdgeInsets(top: 4.0, leading: 16.0, bottom: 4.0, trailing: 16.0)
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
@@ -44,7 +43,6 @@ struct ASAClockCell: View {
             ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-//                    .padding(EDGE_INSETS_1)
                     .colorScheme(.dark)
             }
         } else {
@@ -59,7 +57,6 @@ struct ASAClockCell: View {
             ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-//                    .padding(EDGE_INSETS_1)
             }
         }
         #endif
@@ -108,85 +105,68 @@ struct ASAClockCellBody:  View {
     } // func numberFormatter() -> NumberFormatter
     
     var body: some View {
-//        VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    if shouldShowCalendar {
-                        ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
+        HStack {
+            VStack(alignment: .leading) {
+                if shouldShowCalendar {
+                    ASAClockCellText(string:  processedRow.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
+                }
+                
+                if canSplitTimeFromDate {
+                    if shouldShowFormattedDate {
+                        #if os(watchOS)
+                        let LINE_LIMIT = 1
+                        #else
+                        let LINE_LIMIT = 2
+                        #endif
+                        ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                     }
-                    
-                    if canSplitTimeFromDate {
-                        if shouldShowFormattedDate {
-                            #if os(watchOS)
-                            let LINE_LIMIT = 1
-                            #else
-                            let LINE_LIMIT = 2
-                            #endif
-                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
-                        }
-                        if shouldShowTime {
-                            HStack {
-                                if !shouldShowPlaceName && processedRow.usesDeviceLocation {
-                                    ASALocationSymbol()
-                                }
-                                
-                                let timeString: String = processedRow.timeString ?? ""
-                                let string = (processedRow.supportsTimeZones && shouldShowTimeZone) ? timeString + " · " + processedRow.timeZoneString : timeString
-                                ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  2)
-                            }
-                        }
-                    } else {
+                    if shouldShowTime {
                         HStack {
                             if !shouldShowPlaceName && processedRow.usesDeviceLocation {
                                 ASALocationSymbol()
                             }
                             
-                            if shouldShowFormattedDate {
-                                ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
-                            }
+                            let timeString: String = processedRow.timeString ?? ""
+                            let string = (processedRow.supportsTimeZones && shouldShowTimeZone) ? timeString + " · " + processedRow.timeZoneString : timeString
+                            ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                         }
                     }
-                    
-                    ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
-                    )
-                } // VStack
+                } else {
+                    HStack {
+                        if !shouldShowPlaceName && processedRow.usesDeviceLocation {
+                            ASALocationSymbol()
+                        }
+                        
+                        if shouldShowFormattedDate {
+                            ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
+                        }
+                    }
+                }
                 
-                #if os(watchOS)
-                if processedRow.events.count > 0 {
-                    NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
-                        ASACompactForwardChevronSymbol()
-                    }
-                }
-                #else
-                if processedRow.supportsTimes {
-                    if processedRow.supportsMonths && shouldShowMiniCalendar {
-                        Spacer()
-                        ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
-                    }
-                    
-                    if shouldShowMiniClock() {
-                        Spacer()
-                        ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
-                    }
-                }
-                #endif
-            } // HStack
+                ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
+                )
+            } // VStack
             
             #if os(watchOS)
+            if processedRow.events.count > 0 {
+                NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
+                    ASACompactForwardChevronSymbol()
+                }
+            }
             #else
-//            if !isForComplications {
-//                let numberOfEvents = processedRow.events.count
-//                let formatString : String = NSLocalizedString("n events today", comment: "")
-//                let numberOfEventsString: String = String.localizedStringWithFormat(formatString, numberOfEvents)
-//                if numberOfEvents > 0 {
-//                    DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
-//                        ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility)
-//                            .listRowInsets(.zero)
-//                    }
-//                }
-//            }
+            if processedRow.supportsTimes {
+                if processedRow.supportsMonths && shouldShowMiniCalendar {
+                    Spacer()
+                    ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, calendarCode: processedRow.calendarCode, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols)
+                }
+                
+                if shouldShowMiniClock() {
+                    Spacer()
+                    ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
+                }
+            }
             #endif
-//        } // VStack
+        } // HStack
     } // var body
 } // struct ASAClockCellBody
 
@@ -215,6 +195,7 @@ struct ASAClockEventsSubcell: View {
                         Text(possibility.emoji)
                     }
                 }.pickerStyle(SegmentedPickerStyle())
+                .frame(height: 9.0)
                 
                 ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
             }
