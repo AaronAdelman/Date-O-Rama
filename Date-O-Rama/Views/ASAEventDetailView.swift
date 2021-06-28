@@ -119,6 +119,7 @@ struct ASAEventDetailView: View {
             }
         } // List
         .listStyle(DefaultListStyle())
+        .foregroundColor(.primary)
         .onAppear() {
             #if os(watchOS)
             #else
