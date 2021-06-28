@@ -19,6 +19,10 @@ struct ASAArrangementChooserView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
     
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
+
     var body: some View {
         List {
             ForEach(groupingOptions, id: \.self) {
@@ -27,6 +31,7 @@ struct ASAArrangementChooserView: View {
                 ASAArrangementCell(groupingOption: groupingOption, selectedGroupingOption: self.$tempGroupingOption)
                     .onTapGesture {
                         self.tempGroupingOption = groupingOption
+                        self.dismiss()
                     }
             }
         }

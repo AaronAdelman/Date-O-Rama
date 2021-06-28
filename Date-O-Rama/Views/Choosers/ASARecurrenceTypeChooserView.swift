@@ -19,6 +19,12 @@ struct ASARecurrenceTypeChooserView: View {
                                            .yearly,
                                            .custom
     ]
+    
+    @Environment(\.presentationMode) var presentationMode
+
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
 
     var body: some View {
         List {
@@ -26,6 +32,9 @@ struct ASARecurrenceTypeChooserView: View {
                 recurrenceType
                 in
                 ASARecurrenceTypeCell(recurrenceType: recurrenceType, selectedRecurrenceType: $selectedRecurrenceType)
+                    .onTapGesture {
+                        self.selectedRecurrenceType = recurrenceType
+                        self.dismiss()
             } // ForEach
         } // List
         .navigationBarTitle("Event Recurrence", displayMode: .inline)
@@ -47,8 +56,8 @@ struct ASARecurrenceTypeCell: View {
                 ASACheckmarkSymbol()
             }
         }
-        .onTapGesture {
-            self.selectedRecurrenceType = self.recurrenceType
+//        .onTapGesture {
+//            self.selectedRecurrenceType = self.recurrenceType
         }
     }
 } // struct ASARecurrenceTypeCell

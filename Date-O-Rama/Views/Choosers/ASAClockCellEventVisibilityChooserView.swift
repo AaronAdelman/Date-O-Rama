@@ -28,6 +28,12 @@ struct ASAClockCellEventVisibilityCell: View {
     let visibility: ASAClockCellEventVisibility
     
     @Binding var selectedVisibility:  ASAClockCellEventVisibility
+
+    @Environment(\.presentationMode) var presentationMode
+
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
     
     var body: some View {
         HStack {
@@ -40,6 +46,7 @@ struct ASAClockCellEventVisibilityCell: View {
         }
         .onTapGesture {
             self.selectedVisibility = visibility
+            self.dismiss()
         }
     }
 } //

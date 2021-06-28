@@ -11,12 +11,22 @@ import SwiftUI
 struct ASAAlarmTypeChooserView: View {
     @Binding var selectedAlarmType:  ASAAlarmType
     
+    @Environment(\.presentationMode) var presentationMode
+
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
+    
     var body: some View {
         List {
             ForEach(ASAAlarmType.allCases, id: \.self) {
                 alarmType
                 in
                 ASAAlarmTypeCell(alarmType: alarmType, selectedAlarmType: $selectedAlarmType)
+                    .onTapGesture {
+                        self.selectedAlarmType = alarmType
+                        self.dismiss()
+                    }
             } // ForEach
         } // List
         .navigationBarTitle("Event Recurrence", displayMode: .inline)
@@ -37,9 +47,9 @@ struct ASAAlarmTypeCell: View {
                 ASACheckmarkSymbol()
             }
         }
-        .onTapGesture {
-            self.selectedAlarmType = self.alarmType
-        }
+//        .onTapGesture {
+//            self.selectedAlarmType = self.alarmType
+//        }
     }
 } // struct ASAAlarmTypeCell
 

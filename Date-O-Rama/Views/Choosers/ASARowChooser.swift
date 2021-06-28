@@ -12,14 +12,22 @@ struct ASARowChooser: View {
     @Binding var selectedUUIDString:  String
     let mainRows = ASAUserData.shared.mainRows
     
+    @Environment(\.presentationMode) var presentationMode
+
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
+    
     var body: some View {
         List {
             ForEach(mainRows) {
                 row
                 in
-                ASARowCell(selectedUUIDString: self.$selectedUUIDString, row: row).onTapGesture {
-                    self.selectedUUIDString = row.uuid.uuidString
-                }
+                ASARowCell(selectedUUIDString: self.$selectedUUIDString, row: row)
+                    .onTapGesture {
+                        self.selectedUUIDString = row.uuid.uuidString
+                        self.dismiss()
+                    }
             }
         }
     }
