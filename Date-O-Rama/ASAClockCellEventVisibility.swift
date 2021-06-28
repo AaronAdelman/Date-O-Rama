@@ -9,20 +9,17 @@
 import Foundation
 
 enum ASAClockCellEventVisibility:  String, CaseIterable {
-//    case none
+    case none
     case allDay
     case next
     case future
     case all
     
-    #if os(watchOS)
-    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, all]
-    
     var text:  String {
         var raw:  String = ""
         switch self {
-//        case .none:
-//            raw = "ASAClockCellEventVisibility.none"
+        case .none:
+            raw = "ASAClockCellEventVisibility.none"
         case .allDay:
             raw = "ASAClockCellEventVisibility.allDay"
         case .next:
@@ -34,24 +31,45 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } // var text
-    #else
-    var emoji:  String {
+    
+    var showingText:  String {
+        var raw:  String = ""
         switch self {
+        case .none:
+            raw = "Showing ASAClockCellEventVisibility.none"
+        case .allDay:
+            raw = "Showing ASAClockCellEventVisibility.allDay"
+        case .next:
+            raw = "Showing ASAClockCellEventVisibility.next"
+        case .future:
+            raw = "Showing ASAClockCellEventVisibility.future"
+        case .all:
+            raw = "Showing ASAClockCellEventVisibility.all"
+        } // switch self
+        return NSLocalizedString(raw, comment: "")
+    } //
+    
+    #if os(watchOS)
+    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, all]
+    
+    #else
+//    var emoji:  String {
+//        switch self {
 //        case .none:
 //            return "0️⃣"
-            
-        case .allDay:
-            return "📅"
-            
-        case .next:
-            return "🔽"
-            
-        case .future:
-            return "⬇️"
-            
-        case .all:
-            return "↕️"
-        } // switch self
-    } // var emoji
+//            
+//        case .allDay:
+//            return "📅"
+//            
+//        case .next:
+//            return "🔽"
+//            
+//        case .future:
+//            return "⬇️"
+//            
+//        case .all:
+//            return "↕️"
+//        } // switch self
+//    } // var emoji
     #endif
 } // enum ASAClockCellEventVisibility

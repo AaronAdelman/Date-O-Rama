@@ -275,7 +275,7 @@ struct ASANewEKEventView: View {
                 let alarm: EKAlarm = EKAlarm(absoluteDate: date)
 //                debugPrint(#file, #function, self.startDate, self.alarmMinutesBefore, date)
                 newEvent.addAlarm(alarm)
-            } // switch self.alarmType
+            } // switch self.visibility
 
             newEvent.calendar  = self.iCalendarEventCalendars[self.calendarIndex]
 

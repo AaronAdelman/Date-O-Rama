@@ -258,3 +258,8 @@
 "Event excluded countries and regions" = "Excluded countries and regions";
 "Land of Israel"                       = "Land of Israel";
 "Are you sure you want to delete this new event?" = "Are you sure you want to delete this new event?";
+"Showing ASAClockCellEventVisibility.none"   = "showing none";
+"Showing ASAClockCellEventVisibility.allDay" = "showing all-day events";
+"Showing ASAClockCellEventVisibility.next"   = "showing next events";
+"Showing ASAClockCellEventVisibility.future" = "showing future events";
+"Showing ASAClockCellEventVisibility.all"    = "showing all";

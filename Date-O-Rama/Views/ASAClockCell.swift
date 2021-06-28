@@ -185,20 +185,12 @@ struct ASAClockEventsSubcell: View {
         #else
         let numberOfEvents = processedRow.events.count
         let formatString : String = NSLocalizedString("n events today", comment: "")
-        let numberOfEventsString: String = "• " + String.localizedStringWithFormat(formatString, numberOfEvents)
+        let numberOfEventsString: String = "• " + String.localizedStringWithFormat(formatString, numberOfEvents) + eventVisibility.showingText
         if numberOfEvents > 0 {
-            DisclosureGroup(numberOfEventsString, isExpanded: $showingEvents) {
-                Picker(selection: $eventVisibility, label: Text("")) {
-                    ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
-                        possibility
-                        in
-                        Text(possibility.emoji)
-                    }
-                }.pickerStyle(SegmentedPickerStyle())
-                .frame(height: 9.0)
-                
-                ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
+            NavigationLink(destination:             ASAClockCellEventVisibilityChooserView(selectedVisibility: $eventVisibility)) {
+                Text(numberOfEventsString)
             }
+            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
         }
         #endif
     } // var body
@@ -229,8 +221,8 @@ struct ASAClockEventsForEach:  View {
             case .next:
                 return processedRow.events.nextEvents(now: now)
                 
-//            case .none:
-//                return []
+            case .none:
+                return []
             } // switch visibility
         }()
         
