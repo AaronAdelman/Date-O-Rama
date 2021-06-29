@@ -21,7 +21,10 @@ struct ASANewExternalEventButton: View {
                 {
                     self.showingEventEditView = true
                 }, label:  {
-                    Text(NSLocalizedString("Add external event", comment: ""))
+                    HStack {
+                        Image(systemName: "rectangle.badge.plus")
+                        Text(NSLocalizedString("Add external event", comment: ""))
+                    } // HStack
                 })
             .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                 #if targetEnvironment(macCatalyst)
