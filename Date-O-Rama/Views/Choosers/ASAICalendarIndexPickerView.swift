@@ -12,6 +12,12 @@ import EventKit
 struct ASAICalendarIndexPickerView: View {
     var iCalendarEventCalendars:  Array<EKCalendar>
     @Binding var selectedIndex: Int
+    
+    @Environment(\.presentationMode) var presentationMode
+
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
 
     var body: some View {
         List {
@@ -19,6 +25,10 @@ struct ASAICalendarIndexPickerView: View {
                 i
                 in
                 ASAICalendarIndexCell(calendar: self.iCalendarEventCalendars[i], index: i, selectedIndex: $selectedIndex)
+                    .onTapGesture {
+                        selectedIndex = i
+                        self.dismiss()
+                    }
             }
         } // List
         .navigationBarTitle("Event Recurrence", displayMode: .inline)
@@ -33,11 +43,6 @@ struct ASAICalendarIndexCell: View {
     
     var body: some View {
         HStack {
-//            let CIRCLE_DIAMETER:  CGFloat = 8.0
-//
-//            Circle()
-//                .foregroundColor(calendar.color)
-//                .frame(width: CIRCLE_DIAMETER, height: CIRCLE_DIAMETER)
             ASAColorCircle(color: calendar.color)
             Text(verbatim: calendar.title)
             Spacer()
@@ -45,9 +50,6 @@ struct ASAICalendarIndexCell: View {
                 ASACheckmarkSymbol()
             }
         } // HStack
-        .onTapGesture {
-            selectedIndex = index
-        }
     } // var body
 } // struct ASAICalendarIndexCell
 

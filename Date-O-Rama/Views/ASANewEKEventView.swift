@@ -324,6 +324,7 @@ struct ASANewEKEventView: View {
                 } // HStack
                 .frame(height: 64.0)
                 .border(Color.gray)
+                .zIndex(1.0) // This line from https://stackoverflow.com/questions/63934037/swiftui-navigationlink-cell-in-a-form-stays-highlighted-after-detail-pop to get rid of unwanted highlighting.
 
                 List {
                     Section {
