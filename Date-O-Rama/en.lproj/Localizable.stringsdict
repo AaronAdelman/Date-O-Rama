@@ -93,9 +93,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>d</string>
 			<key>one</key>
-			<string>1 event today; </string>
+			<string>1 event today</string>
 			<key>other</key>
-			<string>%d events today; </string>
+			<string>%d events today</string>
 		</dict>
 	</dict>
 </dict>

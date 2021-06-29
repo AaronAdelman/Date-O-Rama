@@ -185,10 +185,16 @@ struct ASAClockEventsSubcell: View {
         #else
         let numberOfEvents = processedRow.events.count
         let formatString : String = NSLocalizedString("n events today", comment: "")
-        let numberOfEventsString: String = "• " + String.localizedStringWithFormat(formatString, numberOfEvents) + eventVisibility.showingText
+        let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
+        let visibilityString = eventVisibility.emoji + " " + eventVisibility.showingText
         if numberOfEvents > 0 {
             NavigationLink(destination:             ASAClockCellEventVisibilityChooserView(selectedVisibility: $eventVisibility)) {
-                Text(numberOfEventsString)
+                HStack {
+                    Image(systemName: "rectangle.stack")
+                    Text(numberOfEventsString)
+                    Spacer()
+                    Text(visibilityString)
+                } // HStack
             }
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
         }

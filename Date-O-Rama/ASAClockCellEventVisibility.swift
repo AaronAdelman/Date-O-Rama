@@ -53,23 +53,23 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, all]
     
     #else
-//    var emoji:  String {
-//        switch self {
-//        case .none:
-//            return "0️⃣"
-//            
-//        case .allDay:
-//            return "📅"
-//            
-//        case .next:
-//            return "🔽"
-//            
-//        case .future:
-//            return "⬇️"
-//            
-//        case .all:
-//            return "↕️"
-//        } // switch self
-//    } // var emoji
+    var emoji:  String {
+        switch self {
+        case .none:
+            return "0️⃣"
+            
+        case .allDay:
+            return "📅"
+            
+        case .next:
+            return "🔽"
+            
+        case .future:
+            return "⬇️"
+            
+        case .all:
+            return "↕️"
+        } // switch self
+    } // var emoji
     #endif
 } // enum ASAClockCellEventVisibility

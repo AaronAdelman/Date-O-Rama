@@ -37,7 +37,7 @@ struct ASAClockCellEventVisibilityCell: View {
     
     var body: some View {
         HStack {
-            Text(verbatim: visibility.text)
+            Text(verbatim: visibility.emoji + " " + visibility.text)
 
             Spacer()
             if visibility == selectedVisibility {
