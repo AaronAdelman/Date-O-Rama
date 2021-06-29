@@ -88,7 +88,10 @@ struct ASAClocksTab: View {
                                 self.showingNewClockDetailView = true
                             }
                         ) {
-                            Text("Add clock")
+                            HStack {
+                                Image(systemName: "calendar.badge.clock")
+                                Text("Add clock")
+                            } // HStack
                         }
                         .foregroundColor(.accentColor)
                         

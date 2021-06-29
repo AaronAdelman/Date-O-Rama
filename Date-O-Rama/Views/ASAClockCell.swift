@@ -196,7 +196,10 @@ struct ASAClockEventsSubcell: View {
                     Text(visibilityString)
                 } // HStack
             }
+            let VERTICAL_INSET: CGFloat   = 0.0
+            let HORIZONTAL_INSET: CGFloat = 8.0
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
+                .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
         }
         #endif
     } // var body
