@@ -291,6 +291,10 @@ struct ASANewEKEventView: View {
     
     @State var isNavigationBarHidden:  Bool = true
 
+    fileprivate func dismissKeyboard() {
+         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    } // func dismissKeyboard()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -331,6 +335,11 @@ struct ASANewEKEventView: View {
                         TextField("Event Title", text: self.$title)
                         TextField("Event Location", text: self.$location)
                         Toggle("Event All Day", isOn: self.$isAllDay)
+                            .onChange(of: isAllDay, perform: {
+                                value
+                                in
+                                dismissKeyboard()
+                            })
                         DatePicker("Event Start", selection: self.$startDate,
                                    displayedComponents: self.appropriateDateComponents)
                             .onChange(of: startDate, perform: {
@@ -367,6 +376,11 @@ struct ASANewEKEventView: View {
                                 } // ForEach
                             } // Picker
                             .pickerStyle(SegmentedPickerStyle())
+                            .onChange(of: type, perform: {
+                                value
+                                in
+                                dismissKeyboard()
+                            })
                             
                             let GregorianCalendar: Calendar = {
                                 var calendar = Calendar(identifier: .gregorian)
@@ -416,6 +430,11 @@ struct ASANewEKEventView: View {
                                     } // ForEach
                                 }
                                 .pickerStyle(SegmentedPickerStyle())
+                                .onChange(of: recurrenceMonthly, perform: {
+                                    value
+                                    in
+                                    dismissKeyboard()
+                                })
                                 
                                 if self.recurrenceMonthly == .byDayOfMonth {
                                     let DAYS_PER_MONTH = 31
@@ -447,6 +466,17 @@ struct ASANewEKEventView: View {
                                 
                                 if self.recurrenceMonthly == .byDayOfWeekAndWeekNumber {
                                     ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
+                                        .onChange(of: recurrenceDayOfTheWeek, perform: {
+                                            value
+                                            in
+                                            dismissKeyboard()
+                                        })
+                                        .onChange(of: recurrenceWeekNumber, perform: {
+                                            value
+                                            in
+                                            dismissKeyboard()
+                                        })
+
                                 }
                                 
                             case .yearly:
@@ -484,6 +514,11 @@ struct ASANewEKEventView: View {
                                     } // ForEach
                                 }
                                 .pickerStyle(SegmentedPickerStyle())
+                                .onChange(of: recurrenceYearly, perform: {
+                                    value
+                                    in
+                                    dismissKeyboard()
+                                })
                                 if self.recurrenceYearly == .byDayOfWeekAndWeekNumber {
                                     ASADayOfWeekAndWeekNumberPicker(GregorianCalendar: GregorianCalendar, recurrenceDayOfTheWeek: self.$recurrenceDayOfTheWeek, recurrenceWeekNumber: self.$recurrenceWeekNumber)
                                 }
@@ -499,6 +534,11 @@ struct ASANewEKEventView: View {
                                 } // ForEach
                             } // Picker
                             .pickerStyle(SegmentedPickerStyle())
+                            .onChange(of: recurrenceEndType, perform: {
+                                value
+                                in
+                                dismissKeyboard()
+                            })
                             
                             if self.recurrenceEndType == .endDate {
                                 HStack {
