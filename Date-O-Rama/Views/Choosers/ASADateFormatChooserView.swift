@@ -18,7 +18,6 @@ struct ASADateFormatChooserView: View {
     var forAppleWatch:  Bool
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State var didCancel = false
 
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
@@ -27,6 +26,11 @@ struct ASADateFormatChooserView: View {
         
         return row.calendar.supportedDateFormats
     }
+    
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
+
 
     var body: some View {
         List {
@@ -35,23 +39,28 @@ struct ASADateFormatChooserView: View {
                     format
                     in
                     ASADateFormatCell(dateFormat: format, selectedDateFormat: self.$tempDateFormat, row: row)
+                        .onTapGesture {
+                            self.tempDateFormat = format
+                            
+                            self.dismiss()
+                        }
                 }
             } // Section
         } // List
-            .navigationBarItems(trailing:
-                Button("Cancel", action: {
-                    self.didCancel = true
-                    self.presentationMode.wrappedValue.dismiss()
-                })
-        )
+//            .navigationBarItems(trailing:
+//                Button("Cancel", action: {
+//                    self.didCancel = true
+//                    self.presentationMode.wrappedValue.dismiss()
+//                })
+//        )
             .onAppear() {
                 self.tempDateFormat = self.row.dateFormat
                 self.calendarCode        = self.row.calendar.calendarCode
         }
         .onDisappear() {
-            if !self.didCancel {
+//            if !self.didCancel {
                 self.row.dateFormat = self.tempDateFormat
-            }
+//            }
         }
     }
 }
@@ -78,9 +87,10 @@ struct ASADateFormatCell: View {
             if dateFormat == self.selectedDateFormat {
                 ASACheckmarkSymbol()
             }
-        }   .onTapGesture {
-            self.selectedDateFormat = self.dateFormat
         }
+//        .onTapGesture {
+//            self.selectedDateFormat = self.dateFormat
+//        }
     }
 } // struct ASADateFormatCell
 

@@ -27,12 +27,12 @@ struct ASANewExternalEventButton: View {
                     } // HStack
                 })
             .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-                #if targetEnvironment(macCatalyst)
-                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
-                #else
+//                #if targetEnvironment(macCatalyst)
+//                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+//                #else
                 ASANewEKEventView(startDate: now, endDate: now)
                     .frame(minWidth:  400.0, minHeight:  600.0)
-                #endif
+//                #endif
             }
             .foregroundColor(.accentColor)
     }

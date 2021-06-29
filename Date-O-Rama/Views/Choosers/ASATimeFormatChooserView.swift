@@ -16,7 +16,12 @@ struct ASATimeFormatChooserView: View {
     @State var calendarCode:  ASACalendarCode
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State var didCancel = false
+//    @State var didCancel = false
+    
+    fileprivate func dismiss() {
+        self.presentationMode.wrappedValue.dismiss()
+    } // func dismiss()
+
     
     var body: some View {
         List {
@@ -25,23 +30,28 @@ struct ASATimeFormatChooserView: View {
                     format
                     in
                     ASATimeFormatCell(timeFormat: format, selectedTimeFormat: self.$tempTimeFormat, row: row)
+                        .onTapGesture {
+                            self.tempTimeFormat = format
+                            
+                            self.dismiss()
+                        }
                 }
             } // Section
         } // List
-            .navigationBarItems(trailing:
-                Button("Cancel", action: {
-                    self.didCancel = true
-                    self.presentationMode.wrappedValue.dismiss()
-                })
-        )
+//            .navigationBarItems(trailing:
+//                Button("Cancel", action: {
+//                    self.didCancel = true
+//                    self.presentationMode.wrappedValue.dismiss()
+//                })
+//        )
             .onAppear() {
                 self.tempTimeFormat = self.row.timeFormat
                 self.calendarCode        = self.row.calendar.calendarCode
         }
         .onDisappear() {
-            if !self.didCancel {
+//            if !self.didCancel {
                 self.row.timeFormat = self.tempTimeFormat
-            }
+//            }
         }
     }
 }
@@ -67,9 +77,10 @@ struct ASATimeFormatCell: View {
             if timeFormat == self.selectedTimeFormat {
                 ASACheckmarkSymbol()
             }
-        }   .onTapGesture {
-            self.selectedTimeFormat = self.timeFormat
         }
+//        .onTapGesture {
+//            self.selectedTimeFormat = self.timeFormat
+//        }
     }
 } // struct ASATimeFormatCell
 
