@@ -25,7 +25,7 @@ struct ASADateORamaApp: App {
                 
                 ASAEventsTab().environmentObject(userData)
                     .tabItem {
-                        Image(systemName: "rectangle")
+                        Image(systemName: "rectangle.stack")
                         Text("EVENTS_TAB")
                     }
                 
