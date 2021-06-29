@@ -61,6 +61,7 @@ struct ASAClocksTab: View {
                     Spacer()
                 } // HStack
                 .border(Color.gray)
+                .zIndex(1.0) // This line from https://stackoverflow.com/questions/63934037/swiftui-navigationlink-cell-in-a-form-stays-highlighted-after-detail-pop to get rid of unwanted highlighting.
                 
                 List {
                     DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
