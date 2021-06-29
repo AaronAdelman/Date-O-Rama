@@ -260,6 +260,6 @@
 "Are you sure you want to delete this new event?" = "בטוח שברצונך למחוק אירוע חדש זה?";
 "Showing ASAClockCellEventVisibility.none"   = "מראה אפס";
 "Showing ASAClockCellEventVisibility.allDay" = "מראה אירועי יום שלם";
-"Showing ASAClockCellEventVisibility.next"   = "מראה הבאים";
+"Showing ASAClockCellEventVisibility.next"   = "מראה הבא";
 "Showing ASAClockCellEventVisibility.future" = "מראה עתידיים";
 "Showing ASAClockCellEventVisibility.all"    = "מראה הכול";
