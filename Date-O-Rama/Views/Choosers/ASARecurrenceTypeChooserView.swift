@@ -35,6 +35,7 @@ struct ASARecurrenceTypeChooserView: View {
                     .onTapGesture {
                         self.selectedRecurrenceType = recurrenceType
                         self.dismiss()
+                    }
             } // ForEach
         } // List
         .navigationBarTitle("Event Recurrence", displayMode: .inline)
@@ -58,7 +59,7 @@ struct ASARecurrenceTypeCell: View {
         }
 //        .onTapGesture {
 //            self.selectedRecurrenceType = self.recurrenceType
-        }
+//        }
     }
 } // struct ASARecurrenceTypeCell
 
