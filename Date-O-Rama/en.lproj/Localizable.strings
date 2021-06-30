@@ -132,12 +132,12 @@
 "By Country or Region"       = "By Country or Region";
 "Are you sure you want to delete this clock?" = "Are you sure you want to delete this clock?";
 "Delete This Clock" = "Delete This Clock";
-"Show clock preferences" = "⚙️ Clock preferences";
-"Show event preferences" = "⚙️ Event preferences";
+"Show clock preferences" = "⚙ Clock preferences";
+"Show event preferences" = "⚙ Event preferences";
 "Internal event calendars" = "Internal event calendars";
 "Are you sure you want to delete this internal event calendar?" = "Are you sure you want to delete this internal event calendar?";
 "Delete This Internal Event Calendar" = "Delete This Internal Event Calendar";
-"Swap clocks" = "🔃 Swap clocks";
+"Swap clocks" = "Swap clocks";
 "NO_PLACE_NAME"        = "International";
 "NO_COUNTRY_OR_REGION" = "International";
 "External event calendars" = "External event calendars";

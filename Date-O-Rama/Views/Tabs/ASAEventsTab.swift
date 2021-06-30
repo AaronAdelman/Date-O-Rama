@@ -126,10 +126,15 @@ struct ASAEventsTab: View {
                         }
 
                         DisclosureGroup("Show event preferences", isExpanded: $showingPreferences) {
-                            Button("Swap clocks") {
+                            Button(action: {
                                 let tempRowUUIDString = self.primaryRowUUIDString
                                 self.primaryRowUUIDString = self.secondaryRowUUIDString
                                 self.secondaryRowUUIDString = tempRowUUIDString
+                            }) {
+                                HStack {
+                                    Image(systemName: "arrow.triangle.swap")
+                                    Text("Swap clocks")
+                                }
                             }
                             .foregroundColor(.accentColor)
                             
