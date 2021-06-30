@@ -360,11 +360,7 @@ struct ASANewEKEventView: View {
                             })
                         
                         NavigationLink(destination: ASARecurrenceTypeChooserView(selectedRecurrenceType: $recurrenceRule)) {
-                            HStack {
-                                Text("Event Recurrence")
-                                Spacer()
-                                Text(NSLocalizedString(recurrenceRule.rawValue, comment: ""))
-                            } // HStack
+                            ASAKeyAndValueStringsView(key: "Event Recurrence", value: NSLocalizedString(recurrenceRule.rawValue, comment: ""))
                         }
                         
                         if self.recurrenceRule == .custom {
@@ -528,11 +524,8 @@ struct ASANewEKEventView: View {
                             } // switch self.type
                             
                             NavigationLink(destination: ASARecurrenceEndTypeChooserView(selectedRecurrenceEndType: self.$recurrenceEndType)) {
-                                HStack {
-                                    Text("Event Recurrence end")
-                                    Spacer()
-                                    Text(recurrenceEndType.text)
-                                } // HStack
+                                ASAKeyAndValueStringsView(key: "Event Recurrence end", value: recurrenceEndType.text)
+
                             }
                             
                             if self.recurrenceEndType == .endDate {
@@ -573,11 +566,7 @@ struct ASANewEKEventView: View {
                     
                     Section {
                         NavigationLink(destination: ASAICalendarIndexPickerView(iCalendarEventCalendars: self.iCalendarEventCalendars, selectedIndex: self.$calendarIndex)) {
-                            HStack {
-                                Text("Event Calendar")
-                                Spacer()
-                                Text(self.iCalendarEventCalendars[self.calendarIndex].title)
-                            } // HStack
+                            ASAKeyAndValueStringsView(key: "Event Calendar", value: self.iCalendarEventCalendars[self.calendarIndex].title)
                         }
                         .onAppear() {
                             if !didSetCalendarIndex {
@@ -651,6 +640,22 @@ struct ASADayOfWeekAndWeekNumberPicker: View {
             } // ForEach
         } // Picker
         .pickerStyle(SegmentedPickerStyle())
+    }
+}
+
+
+// MARK:  -
+
+struct ASAKeyAndValueStringsView: View {
+    var key: String
+    var value: String
+    
+    var body: some View {
+        HStack {
+            Text(NSLocalizedString(key, comment: ""))
+            Spacer()
+            Text(value)
+        }
     }
 }
 
