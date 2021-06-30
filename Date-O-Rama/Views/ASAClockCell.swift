@@ -234,6 +234,12 @@ struct ASAClockEventsForEach:  View {
                 
             case .none:
                 return []
+                
+            case .past:
+                return processedRow.events.pastOnly(now: now)
+                
+            case .present:
+                return processedRow.events.presentOnly(now: now)
             } // switch visibility
         }()
         

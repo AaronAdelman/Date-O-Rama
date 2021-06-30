@@ -13,6 +13,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     case allDay
     case next
     case future
+    case present
+    case past
     case all
     
     var text:  String {
@@ -28,6 +30,10 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
             raw = "ASAClockCellEventVisibility.future"
         case .all:
             raw = "ASAClockCellEventVisibility.all"
+        case .present:
+            raw = "ASAClockCellEventVisibility.present"
+        case .past:
+            raw = "ASAClockCellEventVisibility.past"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } // var text
@@ -45,28 +51,32 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
             raw = "Showing ASAClockCellEventVisibility.future"
         case .all:
             raw = "Showing ASAClockCellEventVisibility.all"
+        case .present:
+            raw = "Showing ASAClockCellEventVisibility.present"
+        case .past:
+            raw = "Showing ASAClockCellEventVisibility.past"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } //
     
     #if os(watchOS)
-    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, all]
+    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, present, past, all]
     
     #else
 //    var emoji:  String {
 //        switch self {
 //        case .none:
 //            return "0️⃣"
-//            
+//
 //        case .allDay:
 //            return "📅"
-//            
+//
 //        case .next:
 //            return "🔽"
-//            
+//
 //        case .future:
 //            return "⬇️"
-//            
+//
 //        case .all:
 //            return "↕️"
 //        } // switch self
@@ -86,6 +96,10 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
             return "arrow.down"
         case .all:
             return "arrow.up.and.down"
+        case .present:
+            return "arrow.down.right.and.arrow.up.left"
+        case .past:
+            return "arrow.up"
         } // switch self
     }
 } // enum ASAClockCellEventVisibility

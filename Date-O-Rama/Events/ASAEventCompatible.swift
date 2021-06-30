@@ -75,6 +75,28 @@ extension Array where Element == ASAEventCompatible {
             }
         } // for event in self
         return selectedEvents
+    } // func futureOnly(now: Date) -> Array<ASAEventCompatible>
+    
+    func presentOnly(now: Date) -> Array<ASAEventCompatible> {
+        var selectedEvents:  Array<ASAEventCompatible> = []
+
+        for event in self {
+            if event.startDate <= now && now < event.endDate {
+                selectedEvents.append(event)
+            }
+        } // for event in self
+        return selectedEvents
+    } // func presentOnly(now: Date) -> Array<ASAEventCompatible>
+    
+    func pastOnly(now: Date) -> Array<ASAEventCompatible> {
+        var selectedEvents:  Array<ASAEventCompatible> = []
+
+        for event in self {
+            if event.endDate <= now {
+                selectedEvents.append(event)
+            }
+        } // for event in self
+        return selectedEvents
     } //
 } // extension Array where Element == ASAEventCompatible
 
