@@ -19,8 +19,11 @@ struct ASAWatchEventsList: View {
                 ForEach(ASAClockCellEventVisibility.watchCases, id: \.self) {
                     possibility
                     in
-                    Text(possibility.text)
-                }
+                    HStack {
+                        Image(systemName: possibility.symbolName)
+                        Text(possibility.text)
+                    } // HStack
+                } // ForEach
             }
 
             ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
