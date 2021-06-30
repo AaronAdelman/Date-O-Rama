@@ -219,28 +219,7 @@ struct ASAClockEventsForEach:  View {
     
     var body: some View {
         let events:  Array<ASAEventCompatible> = {
-            switch self.visibility {
-            case .allDay:
-                return processedRow.events.allDayOnly
-                
-            case .future:
-                return processedRow.events.futureOnly(now: now)
-                
-            case .all:
-                return processedRow.events
-                
-            case .next:
-                return processedRow.events.nextEvents(now: now)
-                
-            case .none:
-                return []
-                
-            case .past:
-                return processedRow.events.pastOnly(now: now)
-                
-            case .present:
-                return processedRow.events.presentOnly(now: now)
-            } // switch visibility
+            return processedRow.events.forVisibility(self.visibility, now: now)
         }()
         
         ForEach(events, id: \.eventIdentifier) {

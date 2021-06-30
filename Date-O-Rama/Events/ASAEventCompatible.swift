@@ -56,6 +56,31 @@ protocol ASAEventCompatible {
 // MARK:  -
 
 extension Array where Element == ASAEventCompatible {
+    func forVisibility(_ visibility: ASAClockCellEventVisibility, now: Date) -> Array<ASAEventCompatible> {
+        switch visibility {
+        case .none:
+            return []
+
+        case .allDay:
+            return self.allDayOnly
+            
+        case .next:
+            return self.nextEvents(now: now)
+            
+        case .future:
+            return self.futureOnly(now: now)
+            
+        case .present:
+            return self.presentOnly(now: now)
+            
+        case .past:
+            return self.pastOnly(now: now)
+            
+        case .all:
+            return self
+        } // switch visibility
+    } // func forVisibility(visibility: ASAClockCellEventVisibility, now: Date) -> Array<ASAEventCompatible>
+    
     var allDayOnly:  Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
         for event in self {
