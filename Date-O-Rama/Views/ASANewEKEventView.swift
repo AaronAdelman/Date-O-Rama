@@ -527,18 +527,13 @@ struct ASANewEKEventView: View {
                                 Text("Unknown default")
                             } // switch self.type
                             
-                            Picker("Event Recurrence end", selection: self.$recurrenceEndType) {
-                                ForEach(ASARecurrenceEndType.allCases, id: \.rawValue) { value in
-                                    Text(value.text)
-                                        .tag(value)
-                                } // ForEach
-                            } // Picker
-                            .pickerStyle(SegmentedPickerStyle())
-                            .onChange(of: recurrenceEndType, perform: {
-                                value
-                                in
-                                dismissKeyboard()
-                            })
+                            NavigationLink(destination: ASARecurrenceEndTypeChooserView(selectedRecurrenceEndType: self.$recurrenceEndType)) {
+                                HStack {
+                                    Text("Event Recurrence end")
+                                    Spacer()
+                                    Text(recurrenceEndType.text)
+                                } // HStack
+                            }
                             
                             if self.recurrenceEndType == .endDate {
                                 HStack {

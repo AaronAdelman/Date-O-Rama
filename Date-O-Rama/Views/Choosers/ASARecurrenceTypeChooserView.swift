@@ -57,9 +57,6 @@ struct ASARecurrenceTypeCell: View {
                 ASACheckmarkSymbol()
             }
         }
-//        .onTapGesture {
-//            self.selectedRecurrenceType = self.recurrenceType
-//        }
     }
 } // struct ASARecurrenceTypeCell
 
