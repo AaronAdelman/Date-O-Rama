@@ -193,7 +193,7 @@ struct ASAMiniCalendarView:  View {
                 let shouldNoteAsWeekEnd: Bool = {
                     var temp = false
                     if canNoteWeekendDays {
-                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
+//                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
                         if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
                             temp = true
                         }
