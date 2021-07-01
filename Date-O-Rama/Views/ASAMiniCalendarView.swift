@@ -46,7 +46,7 @@ struct ASAOrdinaryCell:  View {
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
-            .foregroundColor(shouldNoteAsWeekEnd ? .blue : .primary)
+            .foregroundColor(shouldNoteAsWeekEnd ? .secondary : .primary)
     } // var body
 } // struct ASAOrdinaryCell
 
@@ -73,11 +73,10 @@ struct ASAAccentedCell:  View {
 
             Text(formattedNumber())
                 .font(CELL_FONT)
-                .foregroundColor(Color("calendarAccentedCellText"))
+                .foregroundColor(shouldNoteAsWeekEnd ? Color.yellow : Color("calendarAccentedCellText"))
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
-                .foregroundColor(shouldNoteAsWeekEnd ? .blue : .primary)
         } // ZStack
     } // var body
 } // struct ASAAccentedCell
@@ -126,6 +125,7 @@ struct ASAMiniCalendarView:  View {
     var calendarCode:  ASACalendarCode
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
+    var regionCode: String?
 
     var weekdayOfDay1:  Int {
         get {
@@ -178,7 +178,7 @@ struct ASAMiniCalendarView:  View {
     } // var characterDirection
 
     var body: some View {
-        let canNoteWeekendDays: Bool = (localeIdentifier == Locale.current.identifier)
+        let canNoteWeekendDays: Bool = (regionCode == Locale.current.regionCode)
         
         let gridFirstDay = -(weekdayOfDay1 - 2)
 
@@ -220,6 +220,6 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7])
+        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], regionCode: "IL")
     }
 }

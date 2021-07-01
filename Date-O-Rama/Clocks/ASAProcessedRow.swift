@@ -50,6 +50,7 @@ struct ASAProcessedRow {
     var startOfNextDay:  Date
     
     var weekendDays: Array<Int>
+    var regionCode: String?
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -125,6 +126,7 @@ struct ASAProcessedRow {
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
         self.weekendDays = row.weekendDays
+        self.regionCode = row.locationData.ISOCountryCode
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
