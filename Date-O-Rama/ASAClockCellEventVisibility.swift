@@ -11,6 +11,7 @@ import Foundation
 enum ASAClockCellEventVisibility:  String, CaseIterable {
     case none
     case allDay
+    case nonAllDay
     case next
     case future
     case present
@@ -34,6 +35,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
             raw = "ASAClockCellEventVisibility.present"
         case .past:
             raw = "ASAClockCellEventVisibility.past"
+        case .nonAllDay:
+            raw = "ASAClockCellEventVisibility.nonAllDay"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } // var text
@@ -55,6 +58,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
             raw = "Showing ASAClockCellEventVisibility.present"
         case .past:
             raw = "Showing ASAClockCellEventVisibility.past"
+        case .nonAllDay:
+            raw = "Showing ASAClockCellEventVisibility.nonAllDay"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } //
@@ -85,7 +90,6 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     
     var symbolName: String {
         switch self {
-        
         case .none:
             return "rectangle.dashed"
         case .allDay:
@@ -100,6 +104,8 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
             return "arrow.down.right.and.arrow.up.left"
         case .past:
             return "arrow.up"
+        case .nonAllDay:
+            return "rectangle"
         } // switch self
     }
 } // enum ASAClockCellEventVisibility

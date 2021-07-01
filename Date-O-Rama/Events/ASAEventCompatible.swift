@@ -78,6 +78,9 @@ extension Array where Element == ASAEventCompatible {
             
         case .all:
             return self
+            
+        case .nonAllDay:
+            return self.nonAllDayOnly
         } // switch visibility
     } // func forVisibility(visibility: ASAClockCellEventVisibility, now: Date) -> Array<ASAEventCompatible>
     
@@ -90,6 +93,16 @@ extension Array where Element == ASAEventCompatible {
         } // for event in self
         return selectedEvents
     } // var allDayOnly
+    
+    var nonAllDayOnly:  Array<ASAEventCompatible> {
+        var selectedEvents:  Array<ASAEventCompatible> = []
+        for event in self {
+            if !event.isAllDay {
+                selectedEvents.append(event)
+            }
+        } // for event in self
+        return selectedEvents
+    } // var nonAllDayOnly
 
     func futureOnly(now: Date) -> Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
