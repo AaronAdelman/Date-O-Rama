@@ -65,7 +65,7 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
     } //
     
     #if os(watchOS)
-    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, next, future, present, past, all]
+    static var watchCases:  Array<ASAClockCellEventVisibility> = [allDay, nonAllDay, next, future, present, past, all]
     
     #else
 //    var emoji:  String {
