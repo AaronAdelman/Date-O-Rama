@@ -89,7 +89,7 @@ struct ASAClocksTab: View {
                             }
                         ) {
                             HStack {
-                                Image(systemName: "calendar.badge.clock")
+                                Image(systemName: "plus.circle.fill")
                                 Text("Add clock")
                             } // HStack
                         }

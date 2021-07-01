@@ -156,7 +156,7 @@ extension ASAEventCategory {
         case .candleLightingBeforeSunset, .candleLightingAfterSunset:
             return "🕯"
         case .Shabbath:
-            return "🍷"
+            return "🍷🕯🕯"
         
         default:
             return nil
