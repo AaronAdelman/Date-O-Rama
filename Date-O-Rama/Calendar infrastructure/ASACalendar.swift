@@ -65,6 +65,10 @@ protocol ASACalendar {
 
     // MARK:  - Symbols
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
+    // MARK:  - Workdays and weekends
+    var weekendDays: Array<Int> { get }
+    var workDays: Array<Int> { get }
 } // protocol ASACalendar
 
 

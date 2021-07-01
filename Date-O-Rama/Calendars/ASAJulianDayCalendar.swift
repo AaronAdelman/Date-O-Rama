@@ -333,4 +333,12 @@ class ASAJulianDayCalendar:  ASACalendar {
     var usesISOTime:  Bool = false
 
     var daysPerWeek:  Int? = nil
+    
+    var workDays: Array<Int> {
+        return [1]
+    }
+    
+    var weekendDays: Array<Int> {
+        return []
+    }
 } // class ASAJulianDayCalendar

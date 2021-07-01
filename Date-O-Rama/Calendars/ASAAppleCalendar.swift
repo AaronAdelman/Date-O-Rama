@@ -259,4 +259,12 @@ class ASAAppleCalendar:  ASACalendar {
     var usesISOTime:  Bool = true
 
     var daysPerWeek:  Int? = 7
+    
+    var workDays: Array<Int> {
+        return self.ApplesCalendar.workDays
+    }
+    
+    var weekendDays: Array<Int> {
+        return self.ApplesCalendar.weekendDays
+    }
 } // class ASAAppleCalendar

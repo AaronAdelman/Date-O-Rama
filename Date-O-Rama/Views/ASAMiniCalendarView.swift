@@ -29,6 +29,7 @@ struct ASAOrdinaryCell:  View {
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
+    var shouldNoteAsWeekEnd: Bool
 
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
@@ -45,6 +46,7 @@ struct ASAOrdinaryCell:  View {
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
+            .foregroundColor(shouldNoteAsWeekEnd ? .blue : .primary)
     } // var body
 } // struct ASAOrdinaryCell
 
@@ -54,6 +56,7 @@ struct ASAAccentedCell:  View {
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
+    var shouldNoteAsWeekEnd: Bool
 
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
@@ -74,6 +77,7 @@ struct ASAAccentedCell:  View {
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
+                .foregroundColor(shouldNoteAsWeekEnd ? .blue : .primary)
         } // ZStack
     } // var body
 } // struct ASAAccentedCell
@@ -121,6 +125,7 @@ struct ASAMiniCalendarView:  View {
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
     var weekdaySymbols:  Array<String>
+    var weekendDays: Array<Int>
 
     var weekdayOfDay1:  Int {
         get {
@@ -173,20 +178,38 @@ struct ASAMiniCalendarView:  View {
     } // var characterDirection
 
     var body: some View {
+        let canNoteWeekendDays: Bool = (localeIdentifier == Locale.current.identifier)
+        
+        let gridFirstDay = -(weekdayOfDay1 - 2)
+
+        
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
             ForEach(processedWeekdaySymbols, id: \.index) {
                 ASAWeekdayCell(symbol: $0.symbol)
             }
 
-            ForEach((gridRange()), id: \.self) {
+            let range = self.gridRange()
+            ForEach(range, id: \.self) {
+                let shouldNoteAsWeekEnd: Bool = {
+                    var temp = false
+                    if canNoteWeekendDays {
+                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
+                        if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
+                            temp = true
+                        }
+                    }
+                    return temp
+                }($0)
+
+                
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
                 } else if $0 == day {
                     ASAAccentedCell(number: $0,
-                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
+                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekEnd: shouldNoteAsWeekEnd)
                 } else {
                     ASAOrdinaryCell(number: $0,
-                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode)
+                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekEnd: shouldNoteAsWeekEnd)
                 }
             }
         }
@@ -197,6 +220,6 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols)
+        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7])
     }
 }

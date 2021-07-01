@@ -607,4 +607,12 @@
     var usesISOTime:  Bool = false
 
     var daysPerWeek:  Int? = 7
+    
+    var workDays: Array<Int> {
+        return self.ApplesCalendar.workDays
+    }
+    
+    var weekendDays: Array<Int> {
+        return self.ApplesCalendar.weekendDays
+    }
  } // class ASASunsetTransitionCalendar

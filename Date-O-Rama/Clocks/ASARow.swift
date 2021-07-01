@@ -372,6 +372,14 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // var isICalendarCompatible
     
     var startAndEndDateStringsCache = NSCache<NSString, ASAStartAndEndDateStrings>()
+    
+    // MARK:  - Workdays and weekends
+    var weekendDays: Array<Int> {
+        return self.calendar.weekendDays
+    }
+    var workDays: Array<Int> {
+        return self.calendar.workDays
+    }
 } // class ASARow
 
 

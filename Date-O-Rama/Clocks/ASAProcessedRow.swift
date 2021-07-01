@@ -48,6 +48,8 @@ struct ASAProcessedRow {
 
     var startOfDay:  Date
     var startOfNextDay:  Date
+    
+    var weekendDays: Array<Int>
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -122,6 +124,7 @@ struct ASAProcessedRow {
         self.events     = row.events(startDate: startOfDay, endDate: startOfNextDay)
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
+        self.weekendDays = row.weekendDays
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
