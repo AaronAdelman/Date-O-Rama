@@ -97,7 +97,25 @@ class ASAEventCalendar {
         return tweakedDateSpecification
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        let oneSecondBeforeStartOfDay = startOfDay.addingTimeInterval(-1.0)
+        let nextDaylightSavingTimeTransition = timeZone.nextDaylightSavingTimeTransition(after: oneSecondBeforeStartOfDay)
+        if nextDaylightSavingTimeTransition != nil {
+            let nextTransition: Date = nextDaylightSavingTimeTransition!
+            if startOfDay <= nextTransition && nextTransition < startOfNextDay {
+               return (true, nextTransition, nextTransition)
+            }
+        }
+        
+        return (false, nil, nil)
+    } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        // Time change events
+        if startDateSpecification.type == .timeChange {
+            return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+        }
+        
         var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: true)
 
         // All-year events
@@ -362,11 +380,24 @@ class ASAEventCalendar {
                 appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
             }
             
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents)
+            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if matchesDateSpecifications {
-                let matchesCountryCode: Bool = eventSpecification.match(ISOCountryCode: ISOCountryCode)
-                if matchesCountryCode {
-                    let title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                let matchesRegionCode: Bool = eventSpecification.match(regionCode: ISOCountryCode)
+                if matchesRegionCode {
+                    var title: String
+                    if eventSpecification.startDateSpecification.type == .timeChange {
+                        let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
+                        let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
+                        let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)
+                        let offsetAfterChange = timeZone.daylightSavingTimeOffset(for: oneSecondAfterChange)
+                        if offsetBeforeChange < offsetAfterChange {
+                            title = NSLocalizedString("Spring ahead", comment: "")
+                        } else {
+                            title = NSLocalizedString("Fall back", comment: "")
+                        }
+                    } else {
+                        title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)!
+                    }
                     let color = self.color
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate

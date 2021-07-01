@@ -37,8 +37,8 @@ class ASAEventSpecification: Codable {
 // MARK:  -
 
 extension ASAEventSpecification {
-    func match(ISOCountryCode:  String?) -> Bool {
-        if ISOCountryCode == nil {
+    func match(regionCode:  String?) -> Bool {
+        if regionCode == nil {
             if self.regionCodes != nil && self.regionCodes != [] {
                 return false
             }
@@ -46,12 +46,12 @@ extension ASAEventSpecification {
             return true
         } else {
             if self.regionCodes != nil {
-                let result = self.regionCodes!.contains(ISOCountryCode!)
+                let result = self.regionCodes!.contains(regionCode!)
                 return result
             }
             
             if self.excludeRegionCodes != nil {
-                let result = !self.excludeRegionCodes!.contains(ISOCountryCode!)
+                let result = !self.excludeRegionCodes!.contains(regionCode!)
                 return result
             }
             

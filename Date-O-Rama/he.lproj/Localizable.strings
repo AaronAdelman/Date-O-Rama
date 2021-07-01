@@ -269,3 +269,5 @@
 "Showing ASAClockCellEventVisibility.present"   = "מראה עכשיווים";
 "Showing ASAClockCellEventVisibility.past"      = "מראה עבריים";
 "Showing ASAClockCellEventVisibility.all"       = "מראה הכול";
+"Spring ahead" = "תחילת שעון קיץ";
+"Fall back"    = "תחילת שעון חורף";

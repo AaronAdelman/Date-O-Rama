@@ -232,6 +232,8 @@
 		A5B8AE44268C933000371BD9 /* ASARecurrenceEndTypeChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B8AE43268C933000371BD9 /* ASARecurrenceEndTypeChooserView.swift */; };
 		A5B9113D268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
 		A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
+		A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B9113F268E7C9E0058EA69 /* Time changes.json */; };
+		A5B91141268E7C9E0058EA69 /* Time changes.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B9113F268E7C9E0058EA69 /* Time changes.json */; };
 		A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */; };
 		A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */; };
 		A5BC4DDD26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */; };
@@ -499,6 +501,7 @@
 		A5B8AE39268A367100371BD9 /* ASAClockCellEventVisibilityChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellEventVisibilityChooserView.swift; sourceTree = "<group>"; };
 		A5B8AE43268C933000371BD9 /* ASARecurrenceEndTypeChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARecurrenceEndTypeChooserView.swift; sourceTree = "<group>"; };
 		A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExtensions.swift; sourceTree = "<group>"; };
+		A5B9113F268E7C9E0058EA69 /* Time changes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Time changes.json"; sourceTree = "<group>"; };
 		A5BB7EE5244EA48E00932AF2 /* ASAClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailView.swift; sourceTree = "<group>"; };
 		A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianDayCalendar.swift; sourceTree = "<group>"; };
 		A5BB7EE9244F55D700932AF2 /* ASACalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendar.swift; sourceTree = "<group>"; };
@@ -680,6 +683,7 @@
 				A5BDE7982667B1ED00F47416 /* Sunni Islam (tabular).json */,
 				A5BDE7972667B1ED00F47416 /* Sunni Islam (Umm Al-Qura).json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
+				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 			);
 			path = "Event files";
@@ -1178,6 +1182,7 @@
 				A5BDE77D26677E7900F47416 /* Islamic awareness.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
+				A5B91141268E7C9E0058EA69 /* Time changes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1204,6 +1209,7 @@
 				A5BDE7942667B17000F47416 /* Shia (tabular).json in Resources */,
 				A5BDE7922667B17000F47416 /* Shia (civil).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
+				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
 				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,

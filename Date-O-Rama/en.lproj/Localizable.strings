@@ -269,3 +269,5 @@
 "Showing ASAClockCellEventVisibility.present"   = "showing present events";
 "Showing ASAClockCellEventVisibility.past"      = "showing past events";
 "Showing ASAClockCellEventVisibility.all"       = "showing all";
+"Spring ahead" = "Start of Daylight Savings Time";
+"Fall back"    = "Start of Standard Time";

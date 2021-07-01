@@ -16,6 +16,7 @@ enum ASATimeSpecificationType:  String, Codable {
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
+    case timeChange                          = "timeChange" // Change from standard to daylight savings time or vice versa
 } // enum ASATimeSpecificationType
 
 
@@ -178,6 +179,8 @@ extension ASADateSpecification {
             let dayHalfStart = ASASolarEvent.dawn72Minutes
             let dayHalfEnd   = ASASolarEvent.dusk72Minutes
             return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, latitude: latitude, longitude: longitude, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+        case .timeChange:
+            return Date()
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
@@ -226,6 +229,8 @@ extension ASADateSpecification {
             
         case .allYear, .allMonth:
             return date
+        case .timeChange:
+            return Date()
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification
