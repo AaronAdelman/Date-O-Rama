@@ -46,7 +46,8 @@ struct ASAOrdinaryCell:  View {
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_WIDTH)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
-            .foregroundColor(shouldNoteAsWeekEnd ? .secondary : .primary)
+//            .foregroundColor(shouldNoteAsWeekEnd ? .secondary : .primary)
+            .foregroundColor(shouldNoteAsWeekEnd ? .blue : .primary)
     } // var body
 } // struct ASAOrdinaryCell
 
@@ -69,11 +70,13 @@ struct ASAAccentedCell:  View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
-                .foregroundColor(Color("calendarAccentedCellBackground"))
+//                .foregroundColor(Color("calendarAccentedCellBackground"))
+                .foregroundColor(.red)
 
             Text(formattedNumber())
                 .font(CELL_FONT)
-                .foregroundColor(shouldNoteAsWeekEnd ? Color.yellow : Color("calendarAccentedCellText"))
+//                .foregroundColor(shouldNoteAsWeekEnd ? Color.yellow : Color("calendarAccentedCellText"))
+                .foregroundColor(shouldNoteAsWeekEnd ? Color(.cyan) : .white)
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
