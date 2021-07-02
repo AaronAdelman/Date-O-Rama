@@ -11,15 +11,15 @@ import SwiftUI
 
 // MARK: - Cells
 
-fileprivate let MINIMUM_CELL_WIDTH:  CGFloat   = 15.0
-fileprivate let MINIMUM_SCALE_FACTOR:  CGFloat =  0.6
-fileprivate let CELL_FONT:  Font = .system(size: 11.0, weight: .bold, design: .default)
+fileprivate let MINIMUM_CELL_DIMENSION: CGFloat = 17.0
+fileprivate let MINIMUM_SCALE_FACTOR: CGFloat   =  0.6
+fileprivate let CELL_FONT: Font = .system(size: 11.0, weight: .bold, design: .default)
 
 struct ASABlankCell:  View {
     var body: some View {
         Rectangle()
             .foregroundColor(.clear)
-            .frame(minWidth:  MINIMUM_CELL_WIDTH)
+            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
     } // var body
 } // struct ASABlankCell
 
@@ -29,7 +29,7 @@ struct ASAOrdinaryCell:  View {
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
-    var shouldNoteAsWeekEnd: Bool
+    var shouldNoteAsWeekend: Bool
 
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
@@ -38,16 +38,23 @@ struct ASAOrdinaryCell:  View {
 
         return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
     } // formattedNumber() -> String
-
+    
     var body: some View {
+        let weekendColor: Color = .blue
+        let workdayColor: Color = .primary
+        let todaysColor: Color = shouldNoteAsWeekend ? weekendColor : workdayColor
         Text(formattedNumber())
             .font(CELL_FONT)
+            .padding(1.0)
 //            .foregroundColor(Color("calendarOrdinaryCellText"))
             .lineLimit(1)
-            .frame(minWidth:  MINIMUM_CELL_WIDTH)
+            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
 //            .foregroundColor(shouldNoteAsWeekEnd ? .secondary : .primary)
-            .foregroundColor(shouldNoteAsWeekEnd ? .blue : .primary)
+            .foregroundColor(todaysColor)
+            .overlay(RoundedRectangle(cornerRadius: 2.0)
+                        .stroke((shouldNoteAsWeekend ? Color(.systemTeal) : Color.secondary).opacity(0.5), style: shouldNoteAsWeekend ? StrokeStyle(lineWidth: 0.5, dash: [2, 2]) : StrokeStyle()))
+        
     } // var body
 } // struct ASAOrdinaryCell
 
@@ -57,7 +64,7 @@ struct ASAAccentedCell:  View {
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
-    var shouldNoteAsWeekEnd: Bool
+    var shouldNoteAsWeekend: Bool
 
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
@@ -71,14 +78,15 @@ struct ASAAccentedCell:  View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
 //                .foregroundColor(Color("calendarAccentedCellBackground"))
-                .foregroundColor(shouldNoteAsWeekEnd ? . purple : .red)
+                .foregroundColor(shouldNoteAsWeekend ? . purple : .red)
 
             Text(formattedNumber())
                 .font(CELL_FONT)
+                .padding(1.0)
 //                .foregroundColor(shouldNoteAsWeekEnd ? Color.yellow : Color("calendarAccentedCellText"))
                 .foregroundColor(.white)
                 .lineLimit(1)
-                .frame(minWidth:  MINIMUM_CELL_WIDTH)
+                .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
         } // ZStack
     } // var body
@@ -89,11 +97,13 @@ struct ASAWeekdayCell:  View {
 
     var body: some View {
         Text(symbol)
-            .font(CELL_FONT).fontWeight(.black)
+            .font(CELL_FONT)
+            .fontWeight(.black)
+            .padding(1.0)
 //            .foregroundColor(Color("calendarWeekdayCellText"))
             .foregroundColor(.secondary)
             .lineLimit(1)
-            .frame(minWidth:  MINIMUM_CELL_WIDTH)
+            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
 } // struct ASAWeekdayCell
@@ -209,10 +219,10 @@ struct ASAMiniCalendarView:  View {
                     ASABlankCell()
                 } else if $0 == day {
                     ASAAccentedCell(number: $0,
-                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekEnd: shouldNoteAsWeekEnd)
+                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekend: shouldNoteAsWeekEnd)
                 } else {
                     ASAOrdinaryCell(number: $0,
-                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekEnd: shouldNoteAsWeekEnd)
+                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekend: shouldNoteAsWeekEnd)
                 }
             }
         }
