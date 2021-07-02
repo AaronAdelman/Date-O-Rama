@@ -71,7 +71,7 @@ struct ASALinkedEventCell:  View {
             Button(action:  {
                 self.showingEventView = true
             }, label:  {
-                let buttonFont: Font = compact ? Font.system(.body) : Font.system(.title)
+                let buttonFont: Font = compact ? Font.system(.body) : Font.system(.title2)
                 Image(systemName: "info.circle.fill") .font(buttonFont)
             })
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
