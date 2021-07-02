@@ -71,12 +71,12 @@ struct ASAAccentedCell:  View {
         ZStack {
             RoundedRectangle(cornerRadius: 2.0, style: .circular)
 //                .foregroundColor(Color("calendarAccentedCellBackground"))
-                .foregroundColor(.red)
+                .foregroundColor(shouldNoteAsWeekEnd ? . purple : .red)
 
             Text(formattedNumber())
                 .font(CELL_FONT)
 //                .foregroundColor(shouldNoteAsWeekEnd ? Color.yellow : Color("calendarAccentedCellText"))
-                .foregroundColor(shouldNoteAsWeekEnd ? Color(.cyan) : .white)
+                .foregroundColor(.white)
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_WIDTH)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
