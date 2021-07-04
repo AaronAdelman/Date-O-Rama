@@ -176,11 +176,13 @@ struct ASAMiniCalendarView:  View {
     } // var gridLayout
 
 
-    var  gridFirstDay: Int {
+    fileprivate func gridFirstDay() -> Int {
         return -(weekdayOfDay1 - 2)
     }
     
     fileprivate func gridRange() -> ClosedRange<Int> {
+        let gridFirstDay = gridFirstDay()
+
         let preexistingDays = daysInMonth - gridFirstDay + 1
         let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
         let gridLastDay = (neededDays - preexistingDays) + daysInMonth
@@ -194,7 +196,9 @@ struct ASAMiniCalendarView:  View {
 
     var body: some View {
         let canNoteWeekendDays: Bool = (regionCode == Locale.current.regionCode)
- 
+        
+        let gridFirstDay = gridFirstDay()
+
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
             ForEach(processedWeekdaySymbols, id: \.index) {
                 ASAWeekdayCell(symbol: $0.symbol)
