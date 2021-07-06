@@ -40,17 +40,17 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     } // deinit
     
     public func requestUserData() {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
         
         if WCSession.isSupported() {
             do {
                 try session?.updateApplicationContext([ASAMessageKeyType:  ASAMessageKeyRequestUserData])
-                debugPrint("\(#file) \(#function) Sent request for an update.")
+//                debugPrint("\(#file) \(#function) Sent request for an update.")
             } catch {
                 debugPrint("\(#file) \(#function) An error occurred when sending the request for an update!")
             }
         } else {
-            debugPrint(#file, #function, "WCsession is not supported")
+//            debugPrint(#file, #function, "WCsession is not supported")
         }
     } // func requestUserData()
     
@@ -58,7 +58,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
         
         if WCSession.isSupported() {
             if session == nil {
@@ -170,9 +170,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         @unknown default:
             activationStateString = "unknownDefault"
         } // switch
-        debugPrint("\(#file) \(#function) activation state:  \(activationStateString), error:  \(String(describing: error))")
+//        debugPrint("\(#file) \(#function) activation state:  \(activationStateString), error:  \(String(describing: error))")
         
-        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
+//        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
         
         requestUserData()
     } // func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)

@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         _ = ASALocationManager.shared
         
         if WCSession.isSupported() {
-            debugPrint("\(#file) \(#function) WCSession is supported.")
+//            debugPrint("\(#file) \(#function) WCSession is supported.")
             session.delegate = self
             session.activate()
         } else {
-            debugPrint("\(#file) \(#function) WCSession is not supported.")
+//            debugPrint("\(#file) \(#function) WCSession is not supported.")
         }
         return true
     }
@@ -48,27 +48,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     // MARK: -
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        debugPrint("\(#file) \(#function)")
-        
-        debugPrint("\(#file) \(#function) Paired:  \(session.isPaired ? "Yes" : "No")")
-        debugPrint("\(#file) \(#function) WatchApp installed:  \(session.isWatchAppInstalled ? "Yes" : "No")")
-        debugPrint("\(#file) \(#function) Complication installed:  \(session.isComplicationEnabled ? "Yes" : "No")")
-        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
+//        debugPrint("\(#file) \(#function)")
+//
+//        debugPrint("\(#file) \(#function) Paired:  \(session.isPaired ? "Yes" : "No")")
+//        debugPrint("\(#file) \(#function) WatchApp installed:  \(session.isWatchAppInstalled ? "Yes" : "No")")
+//        debugPrint("\(#file) \(#function) Complication installed:  \(session.isComplicationEnabled ? "Yes" : "No")")
+//        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
         debugPrint("\(#file) \(#function) Error:  \(String(describing: error))")
         
         sendUserData(session)
     } //  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)
     
     func sessionDidDeactivate(_ session: WCSession) {
-        debugPrint("\(#file) \(#function)")
+//        debugPrint("\(#file) \(#function)")
     }
     
     func sessionDidBecomeInactive(_ session: WCSession) {
-        debugPrint("\(#file) \(#function)")
+//        debugPrint("\(#file) \(#function)")
     }
     
     func sessionWatchStateDidChange(_ session: WCSession) {
-        debugPrint("\(#file) \(#function)")
+//        debugPrint("\(#file) \(#function)")
         
         if session.isReachable && session.isPaired && session.isWatchAppInstalled
 //            && session.isComplicationEnabled
@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     } // func sessionWatchStateDidChange(_ session: WCSession)
     
     func sessionReachabilityDidChange(_ session: WCSession) {
-        debugPrint("\(#file) \(#function)")
+//        debugPrint("\(#file) \(#function)")
         
         if session.isReachable && session.isPaired && session.isWatchAppInstalled
 //            && session.isComplicationEnabled
@@ -100,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     } // func rowArrayDictionary(key:  ASARowArrayKey) -> Array<Dictionary<String, Any>>
     
     public func sendUserData(_ session: WCSession) {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
                 
         let threeLineLargeTemp = self.rowArrayDictionary(key: .threeLineLarge, forComplication: true)
         let twoLineLargeTemp   = self.rowArrayDictionary(key: .twoLineLarge, forComplication: true)
@@ -136,7 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        debugPrint(#file, #function, message)
+//        debugPrint(#file, #function, message)
         
         if message[ASAMessageKeyType] as! String == ASAMessageKeyRequestUserData {
             sendUserData(session)

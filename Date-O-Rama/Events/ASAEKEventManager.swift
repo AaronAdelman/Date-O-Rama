@@ -38,7 +38,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         NotificationCenter.default.addObserver(forName: .EKEventStoreChanged, object: nil, queue: nil, using: {
             notification
             in
-            debugPrint(#file, #function, notification)
+//            debugPrint(#file, #function, notification)
             self.requestAccessToEKCalendars()
             
             self.objectWillChange.send()
@@ -72,7 +72,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     fileprivate func handleAccessGranted() {
         DispatchQueue.main.async(execute: {
-            debugPrint(#file, #function, "access granted")
+//            debugPrint(#file, #function, "access granted")
             self.userHasPermission = true
             
             self.ready = true
@@ -82,7 +82,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     fileprivate func handleAccessDenied() {
         DispatchQueue.main.async(execute: {
             //                self.needPermissionView.fadeIn()
-            debugPrint(#file, #function, "access denied")
+//            debugPrint(#file, #function, "access denied")
             self.userHasPermission = false
             self.shouldUseEKEvents = false
             self.ready = true
@@ -93,26 +93,26 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         switch EKEventStore.authorizationStatus(for: .event) {
         
         case .authorized:
-            debugPrint(#file, #function, "Authorized")
+//            debugPrint(#file, #function, "Authorized")
             self.handleAccessGranted()
             
         case .denied:
-            debugPrint(#file, #function, "Access denied")
+//            debugPrint(#file, #function, "Access denied")
             self.handleAccessDenied()
             
         case .notDetermined:
             eventStore.requestAccess(to: .event, completion:
                                         {(granted: Bool, error: Error?) -> Void in
                                             if granted {
-                                                debugPrint(#file, #function, "Access granted")
+//                                                debugPrint(#file, #function, "Access granted")
                                                 self.handleAccessGranted()
                                             } else {
-                                                debugPrint(#file, #function, "Access denied")
+//                                                debugPrint(#file, #function, "Access denied")
                                                 self.handleAccessDenied()
                                             }
                                         })
             
-            debugPrint(#file, #function, "Not Determined")
+//            debugPrint(#file, #function, "Not Determined")
         default:
             debugPrint(#file, #function, "Case Default")
         }

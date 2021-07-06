@@ -157,7 +157,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     func handleLocationDataChanged() {
         if !startingUp {
             self.clearCacheObjects()
-            debugPrint(#file, #function, "The event cache has been cleared.")
+//            debugPrint(#file, #function, "The event cache has been cleared.")
         }
     }
 

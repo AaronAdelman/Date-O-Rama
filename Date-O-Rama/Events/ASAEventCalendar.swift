@@ -486,7 +486,7 @@ extension ASAEventCalendar {
             }
         }
         let fileNames = unsortedFileNames.sorted(by: {NSLocalizedString($0, comment: "") < NSLocalizedString($1, comment: "")})
-        debugPrint(#file, #function, fileNames)
+//        debugPrint(#file, #function, fileNames)
 
         return fileNames
     } // static var builtInEventCalendarFileNames

@@ -132,7 +132,7 @@ extension Date {
             // Guarding against there being no Sunset
             result = (self.sixPM(timeZone: timeZone), sunset)
             if !(result.date >= self) {
-                debugPrint(#file, #function, result, self)
+//                debugPrint(#file, #function, result, self)
                 result.date = self
             }
             assert(result.date >= self)

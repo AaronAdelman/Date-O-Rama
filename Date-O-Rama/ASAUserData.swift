@@ -110,7 +110,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             if needToCreateContainer {
                 do {
                     try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
-//                    debugPrint(#file, #function, "Container created")
+                    debugPrint(#file, #function, "Container created")
                 } catch {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
@@ -122,7 +122,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             if needToCreateDocuments {
                 do {
                     try FileManager.default.createDirectory(at: URL(fileURLWithPath: documentsPath), withIntermediateDirectories: true, attributes: nil)
-//                    debugPrint(#file, #function, "Documents created")
+                    debugPrint(#file, #function, "Documents created")
                 }  catch {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
@@ -240,7 +240,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         if preferenceFileExists(code: .clocks) {
             let path = self.preferencesFilePath(code: .clocks)
             
-            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
+//            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
             do {
                 #if os(watchOS)
                 let data = defaults.object(forKey:  ASAPreferencesFileCode.clocks.suffix) as! Data
@@ -262,13 +262,13 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 debugPrint(#file, #function, error)
             }
         } else {
-            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
+//            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
             if preferenceFileExists(code: .complications) {
                 let path = self.preferencesFilePath(code: .complications)
-                debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
+//                debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
                 do {
                     #if os(watchOS)
                     let data = defaults.object(forKey:  ASAPreferencesFileCode.complications.suffix) as! Data
@@ -293,7 +293,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error)
                 }
             } else {
-                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .complications)))” does not exist")
+//                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .complications)))” does not exist")
             }
         }
         
@@ -344,14 +344,14 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
                     // debugPrint(#file, #function, "Preferences successfully saved")
                 } else {
-                    debugPrint(#file, #function, "Preferences file path is nil!")
+//                    debugPrint(#file, #function, "Preferences file path is nil!")
                 }
             } catch {
                 debugPrint(#file, #function, error)
             }
                 #endif
         } else {
-            debugPrint(#file, #function, "Data is nil")
+//            debugPrint(#file, #function, "Data is nil")
         }
     } // func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode)
 

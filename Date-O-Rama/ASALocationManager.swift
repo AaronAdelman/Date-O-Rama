@@ -48,14 +48,14 @@ class ASALocationManager: NSObject, ObservableObject {
         
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
-                debugPrint(#file, #function, "We’re connected!")
+//                debugPrint(#file, #function, "We’re connected!")
                 self.connectedToTheInternet = true
             } else {
-                debugPrint(#file, #function, "No connection.")
+//                debugPrint(#file, #function, "No connection.")
                 self.connectedToTheInternet = false
             }
             
-            debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
+//            debugPrint(#file, #function, "Path is expensive:", path.isExpensive)
         }
         
         let queue = DispatchQueue(label: "Monitor")
@@ -169,11 +169,11 @@ extension ASALocationManager: CLLocationManagerDelegate {
     #if os(watchOS)
     #else
     func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
     } // func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager)
 
     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
-        debugPrint(#file, #function)
+//        debugPrint(#file, #function)
 //        self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestAlwaysAuthorization()
     } // func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager)
