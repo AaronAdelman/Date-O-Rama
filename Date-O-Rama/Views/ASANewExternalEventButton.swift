@@ -17,24 +17,34 @@ struct ASANewExternalEventButton: View {
     @State private var showingEventEditView = false
 
     var body: some View {
+        #if targetEnvironment(macCatalyst)
         Button(action:
                 {
                     self.showingEventEditView = true
                 }, label:  {
-                    HStack {
-                        Image(systemName: "rectangle.badge.plus")
-                        Text(NSLocalizedString("Add external event", comment: ""))
-                    } // HStack
+                    ASANewExternalEventButtonLabel()
                 })
             .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
-//                #if targetEnvironment(macCatalyst)
-//                ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
-//                #else
                 ASANewEKEventView(startDate: now, endDate: now)
                     .frame(minWidth:  400.0, minHeight:  600.0)
-//                #endif
             }
             .foregroundColor(.accentColor)
+        #else
+        NavigationLink(destination:                 ASANewEKEventView(startDate: now, endDate: now)) {
+            ASANewExternalEventButtonLabel()
+                .foregroundColor(.accentColor)
+        }
+        #endif
+    }
+}
+
+
+struct ASANewExternalEventButtonLabel: View {
+    var body: some View {
+        HStack {
+            Image(systemName: "rectangle.badge.plus")
+            Text(NSLocalizedString("Add external event", comment: ""))
+        } // HStack
     }
 }
 
