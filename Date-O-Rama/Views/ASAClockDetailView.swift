@@ -149,7 +149,10 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
                                     selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
-                                selectedRow.builtInEventCalendars.append(ASAEventCalendar(fileName: fileName))
+                                let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
+                                if eventCalendar.eventsFile != nil {
+                                    selectedRow.builtInEventCalendars.append(eventCalendar)
+                                }
                             }
                         }
                 }

@@ -288,7 +288,9 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         if builtInEventCalendarsFileNames != nil {
             for fileName in builtInEventCalendarsFileNames! {
                 let newEventCalendar = ASAEventCalendar(fileName: fileName)
-                newRow.builtInEventCalendars.append(newEventCalendar)
+                if newEventCalendar.eventsFile != nil {
+                    newRow.builtInEventCalendars.append(newEventCalendar)
+                }
             }
         }
 
