@@ -67,10 +67,12 @@ class ASAEventCalendar {
         return self.eventsFile!.titles[localeIdentifier] ?? "???"
     }
 
-    func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar, templateDateComponents:  ASADateComponents, strong:  Bool) -> ASADateSpecification {
+    func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar, templateDateComponents:  ASADateComponents
+//               , strong:  Bool
+    ) -> ASADateSpecification {
         var tweakedDateSpecification = dateSpecification
 
-        if strong {
+//        if strong {
             if tweakedDateSpecification.era == nil && templateDateComponents.era != nil {
                 tweakedDateSpecification.era = templateDateComponents.era!
             }
@@ -83,7 +85,7 @@ class ASAEventCalendar {
             if tweakedDateSpecification.day == nil && templateDateComponents.day != nil {
                 tweakedDateSpecification.day = templateDateComponents.day!
             }
-        }
+//        }
 
         if tweakedDateSpecification.day! < 0 {
             let tweakedDate = calendar.date(dateComponents: ASADateComponents(calendar: calendar, locationData: templateDateComponents.locationData, era: tweakedDateSpecification.era, year: tweakedDateSpecification.year, yearForWeekOfYear: nil, quarter: nil, month: tweakedDateSpecification.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: tweakedDateSpecification.day, hour: nil, minute: nil, second: nil, nanosecond: nil))
@@ -116,7 +118,9 @@ class ASAEventCalendar {
             return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
-        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components, strong: true)
+        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components
+//                                                       , strong: true
+        )
 
         // All-year events
         if startDateSpecification.type == .allYear {
