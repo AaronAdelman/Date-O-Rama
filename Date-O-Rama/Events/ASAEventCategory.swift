@@ -14,6 +14,7 @@ enum ASAEventCategory: String, Codable {
     case birthday
     case deathAnniversary
     case weddingAnniversary
+    case remembrance
     
     // Sun
     case day
@@ -80,6 +81,8 @@ extension ASAEventCategory {
             return "🪦"
         case .weddingAnniversary:
             return "💍"
+        case .remembrance:
+            return "🕓"
             
         case .Sunrise:
             return "🌅"
@@ -163,88 +166,88 @@ extension ASAEventCategory {
         } // switch self
     } // var emoji
     
-    var isDarkMode: Bool {
-        switch self {
-        case .night, .civilDusk, .nauticalDusk, .astronomicalDusk,
-             .civilDawn, .nauticalDawn, .astronomicalDawn,
-             .Aries,
-             .Taurus,
-             .Gemini,
-             .Cancer,
-             .Leo,
-             .Virgo,
-             .Libra,
-             .Ophiuchus,
-             .Scorpio,
-             .Sagittarius,
-             .Capricorn,
-             .Aquarius,
-             .Pisces,
-             .Sun,
-             .Moon,
-             .Mercury,
-             .Venus,
-             .Mars,
-             .Jupiter,
-             .Saturn,
-             .Rat,
-             .Ox,
-             .Tiger,
-             .Rabbit,
-             .Dragon,
-             .Snake,
-             .Horse,
-             .Goat,
-             .Monkey,
-             .Rooster,
-             .Dog,
-             .Pig,
-             .candleLightingAfterSunset:
-            return true
-            
-        default:
-            return false
-        } // switch self
-    } // var isDarkMode
-    
-    var foregroundColor: Color {
-        switch self {
-        case .day, .candleLightingBeforeSunset, .Sunrise, .Sunset:
-            return Color("dayForeground")
-        case .night, .candleLightingAfterSunset, .civilDawn, .civilDusk, .nauticalDawn, .nauticalDusk, .astronomicalDawn, .astronomicalDusk:
-            return Color("nightForeground")
-        
-        default:
-            if self.isDarkMode {
-                return .white
-            } else {
-                return .black
-            }
-        }
-    }
-    
-    var backgroundColor: Color {
-        switch self {
-        case .day, .candleLightingBeforeSunset:
-            return Color("eventDayBackground")
-        case .night, .candleLightingAfterSunset:
-            return Color("eventNightBackground")
-        case .civilDusk, .civilDawn:
-            return Color("eventCivilBackground")
-        case .nauticalDusk, .nauticalDawn:
-            return Color("eventNauticalBackground")
-        case .astronomicalDusk, .astronomicalDawn:
-            return Color("eventAstronomicalBackground")
-        case .Sunrise, .Sunset:
-            return Color("eventRiseSetBackground")
-        
-        default:
-            if self.isDarkMode {
-                return .black
-            } else {
-                return .white
-            }
-        }
-        
-    }
+//    var isDarkMode: Bool {
+//        switch self {
+//        case .night, .civilDusk, .nauticalDusk, .astronomicalDusk,
+//             .civilDawn, .nauticalDawn, .astronomicalDawn,
+//             .Aries,
+//             .Taurus,
+//             .Gemini,
+//             .Cancer,
+//             .Leo,
+//             .Virgo,
+//             .Libra,
+//             .Ophiuchus,
+//             .Scorpio,
+//             .Sagittarius,
+//             .Capricorn,
+//             .Aquarius,
+//             .Pisces,
+//             .Sun,
+//             .Moon,
+//             .Mercury,
+//             .Venus,
+//             .Mars,
+//             .Jupiter,
+//             .Saturn,
+//             .Rat,
+//             .Ox,
+//             .Tiger,
+//             .Rabbit,
+//             .Dragon,
+//             .Snake,
+//             .Horse,
+//             .Goat,
+//             .Monkey,
+//             .Rooster,
+//             .Dog,
+//             .Pig,
+//             .candleLightingAfterSunset:
+//            return true
+//            
+//        default:
+//            return false
+//        } // switch self
+//    } // var isDarkMode
+//    
+//    var foregroundColor: Color {
+//        switch self {
+//        case .day, .candleLightingBeforeSunset, .Sunrise, .Sunset:
+//            return Color("dayForeground")
+//        case .night, .candleLightingAfterSunset, .civilDawn, .civilDusk, .nauticalDawn, .nauticalDusk, .astronomicalDawn, .astronomicalDusk:
+//            return Color("nightForeground")
+//        
+//        default:
+//            if self.isDarkMode {
+//                return .white
+//            } else {
+//                return .black
+//            }
+//        }
+//    }
+//    
+//    var backgroundColor: Color {
+//        switch self {
+//        case .day, .candleLightingBeforeSunset:
+//            return Color("eventDayBackground")
+//        case .night, .candleLightingAfterSunset:
+//            return Color("eventNightBackground")
+//        case .civilDusk, .civilDawn:
+//            return Color("eventCivilBackground")
+//        case .nauticalDusk, .nauticalDawn:
+//            return Color("eventNauticalBackground")
+//        case .astronomicalDusk, .astronomicalDawn:
+//            return Color("eventAstronomicalBackground")
+//        case .Sunrise, .Sunset:
+//            return Color("eventRiseSetBackground")
+//        
+//        default:
+//            if self.isDarkMode {
+//                return .black
+//            } else {
+//                return .white
+//            }
+//        }
+//        
+//    }
 } // extension ASAEventCategory
