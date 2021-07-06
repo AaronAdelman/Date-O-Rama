@@ -57,7 +57,7 @@ extension ASAEventSpecification {
             
             return true
         }
-    } // func match(ISOCountryCode:  String?) -> Bool
+    } // func match(regionCode:  String?) -> Bool
 
     func eventTitle(requestedLocaleIdentifier:  String, eventsFileDefaultLocaleIdentifier:  String) -> String? {
         if self.titles != nil {

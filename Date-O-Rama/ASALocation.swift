@@ -14,8 +14,8 @@ struct ASALocation:  Equatable, Identifiable {
     var location:  CLLocation = CLLocation.NullIsland
     var name:  String?
     var locality:  String?
-    var country:  String?
-    var ISOCountryCode:  String?
+    var region:  String?
+    var regionCode:  String?
     
     var postalCode: String?
     var administrativeArea: String?
@@ -33,11 +33,11 @@ struct ASALocation:  Equatable, Identifiable {
 extension ASALocation {
     static func create(placemark:  CLPlacemark?, location:  CLLocation?) -> ASALocation {
         let usedLocation = location != nil ? location! : (placemark?.location ?? CLLocation.NullIsland)
-        var country: String? = placemark?.country
-        var ISOCountryCode: String? = placemark?.isoCountryCode
+        var region: String? = placemark?.country
+        var regionCode: String? = placemark?.isoCountryCode
         var timeZone: TimeZone = placemark?.timeZone ?? TimeZone.GMT
         
-        if ISOCountryCode == nil {
+        if regionCode == nil {
             // We need to test if Apple's location server screwed up in favor of inappropriate political neutrality and fix any such problem.
             let JudeaAndSamariaNorth: CLLocationDegrees = 32.0 + 40.0 / 60.0
             let JudeaAndSamariaSouth: CLLocationDegrees = 31.0
@@ -55,17 +55,17 @@ extension ASALocation {
             let GazaStripWest: CLLocationDegrees = 34.0
 
             if usedLocation.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest) || usedLocation.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest) {
-                country = NSLocalizedString("Israel", comment: "")
-                ISOCountryCode = "IL"
+                region = NSLocalizedString("Israel", comment: "")
+                regionCode = "IL"
                 timeZone = TimeZone(identifier: "Asia/Jerusalem")!
             } else if usedLocation.isWithin(north: GazaStripNorth, south: GazaStripSouth, east: GazaStripEast, west: GazaStripWest) {
-                country = NSLocalizedString("Gaza Strip", comment: "")
-                ISOCountryCode = "PS"
+                region = NSLocalizedString("Gaza Strip", comment: "")
+                regionCode = "PS"
                 timeZone = TimeZone(identifier: "Asia/Gaza")!
             }
         }
         
-        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: country, ISOCountryCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
+        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, region: region, regionCode: regionCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocation
@@ -77,7 +77,7 @@ extension ASALocation {
             var temp: Array<String> = []
             temp.appendIfDifferentAndNotNil(string: self.locality)
             temp.appendIfDifferentAndNotNil(string: self.administrativeArea)
-            temp.appendIfDifferentAndNotNil(string: self.country)
+            temp.appendIfDifferentAndNotNil(string: self.region)
 
             if temp.count == 0 {
                 return self.location.humanInterfaceRepresentation
@@ -96,8 +96,8 @@ extension ASALocation {
             if self.administrativeArea != nil {
                 return self.administrativeArea!            }
 
-            if self.country != nil {
-                return self.country!
+            if self.region != nil {
+                return self.region!
             }
 
             if self.name != nil {
@@ -116,7 +116,7 @@ extension ASALocation {
             temp.appendIfDifferentAndNotNil(string: self.name)
             temp.appendIfDifferentAndNotNil(string: self.locality)
             temp.appendIfDifferentAndNotNil(string: self.administrativeArea)
-            temp.appendIfDifferentAndNotNil(string: self.country)
+            temp.appendIfDifferentAndNotNil(string: self.region)
 
             if temp.count == 0 {
                 return self.location.humanInterfaceRepresentation
@@ -132,7 +132,7 @@ extension ASALocation {
 
 extension ASALocation {
     static var NullIsland:  ASALocation {
-        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
+        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, region: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
     } // static var NullIsland
 } // extension ASALocation
 
@@ -140,7 +140,7 @@ extension ASALocation {
 // MARK:  -
 
 struct ASATimeZoneEntry:  Codable {
-    var ISOCountryCode:  String?
+    var regionCode:  String?
     var latitude:  CLLocationDegrees
     var longitude:  CLLocationDegrees
     var name:  String
@@ -203,14 +203,14 @@ extension ASALocation {
                 return ASALocation.NullIsland
             }
 
-            let countryCode: String = entry!.ISOCountryCode ?? ""
+            let countryCode: String = entry!.regionCode ?? ""
             let name:  String = entry!.name
             let country = countryName(countryCode: countryCode)
             let (locality, administrativeArea) = localityAndAdministrativeArea(name: name)
             let latitude: CLLocationDegrees = entry!.latitude
             let longitude: CLLocationDegrees = entry!.longitude
 
-            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, ISOCountryCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
+            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, region: country, regionCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
 
             // Store result in cache
             ASALocation.cachedCurrentTimeZoneDefaultIdentifier = currentTimeZoneIdentifier

@@ -119,7 +119,7 @@ struct ASALocaleCell: View {
     
     var body: some View {
         HStack {
-            Text(verbatim: localeString.localeCountryCodeFlag)
+            Text(verbatim: localeString.localeRegionCodeFlag)
             Text(verbatim:  localizedLocaleString)
             if row.calendar.canSplitTimeFromDate {
                 VStack(alignment: .leading) {

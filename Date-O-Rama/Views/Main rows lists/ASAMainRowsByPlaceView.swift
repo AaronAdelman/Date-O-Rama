@@ -40,7 +40,7 @@ struct ASAMainRowsByPlaceView:  View {
             here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
             #endif
         } else {
-            here = ASALocationManager.shared.deviceLocationData.country
+            here = ASALocationManager.shared.deviceLocationData.region
         }
         
         return Array(self.processedRowsByPlace.keys).sorted(by: {

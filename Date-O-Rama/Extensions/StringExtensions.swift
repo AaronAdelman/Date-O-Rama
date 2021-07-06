@@ -78,12 +78,12 @@ extension String {
         return nil
     } // var localeRegionCode
     
-    var localeCountryCodeFlag:  String {
-        let countryCode = self.localeRegionCode
-        if countryCode == nil {
+    var localeRegionCodeFlag:  String {
+        let regionCode = self.localeRegionCode
+        if regionCode == nil {
             return "🏳️"
         }
         
-        return countryCode!.flag
-    } //var localeCountryCodeFlag
+        return regionCode!.flag
+    } //var localeRegionCodeFlag
 } // extension String

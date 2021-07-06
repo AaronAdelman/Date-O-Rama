@@ -388,11 +388,11 @@ struct ASAEventDetailDateTimeSection: View {
             ASAEventRecurrenceRulesForEach(event: event, row: row)
             
             if event.regionCodes != nil {
-                ASAEventPropertyView(key: "Event countries and regions", value: event.regionCodes!.asFormattedListOfISOCountryCodes())
+                ASAEventPropertyView(key: "Event countries and regions", value: event.regionCodes!.asFormattedListOfRegionCodes())
             }
             
             if event.excludeRegionCodes != nil {
-                ASAEventPropertyView(key: "Event excluded countries and regions", value: event.excludeRegionCodes!.asFormattedListOfISOCountryCodes())
+                ASAEventPropertyView(key: "Event excluded countries and regions", value: event.excludeRegionCodes!.asFormattedListOfRegionCodes())
             }
         } // Section
     } // var body
