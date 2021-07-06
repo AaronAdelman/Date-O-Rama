@@ -157,19 +157,19 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        var activationStateString:  String
-        switch activationState {
-        case .notActivated:
-            activationStateString = "notActivated"
-            
-        case .inactive:
-            activationStateString = "inactive"
-            
-        case .activated:
-            activationStateString = "activated"
-        @unknown default:
-            activationStateString = "unknownDefault"
-        } // switch
+//        var activationStateString:  String
+//        switch activationState {
+//        case .notActivated:
+//            activationStateString = "notActivated"
+//
+//        case .inactive:
+//            activationStateString = "inactive"
+//
+//        case .activated:
+//            activationStateString = "activated"
+//        @unknown default:
+//            activationStateString = "unknownDefault"
+//        } // switch
 //        debugPrint("\(#file) \(#function) activation state:  \(activationStateString), error:  \(String(describing: error))")
         
 //        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
