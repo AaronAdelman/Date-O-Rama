@@ -5,9 +5,10 @@
     "calendarCode": "IslamicSolar",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}, "category": "Sunset"},
-        
+        {"titles": {"en": "Sunrise"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset (Maghrib)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}, "category": "Sunset"},
+        {"titles": {"en": "Dhuhr"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 6.0, "dayHalf": "day"}, "category": "day"},
+
         {"titles": {"en": "Fajr (Egyptian General Authority of Survey)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 19.5, "rising": true, "offset": 0}},
         {"titles": {"en": "Isha (Egyptian General Authority of Survey)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 17.5, "rising": false, "offset": 0}},
         
@@ -17,7 +18,6 @@
         {"titles": {"en": "Fajr (Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 12.0, "rising": true, "offset": 0}},
         {"titles": {"en": "Isha (Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 12.0, "rising": false, "offset": 0}},
 
-        
         {"titles": {"en": "Fajr (Majlis Ugama Islam Singapura)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 20.0, "rising": true, "offset": 0}},
         {"titles": {"en": "Isha (Majlis Ugama Islam Singapura; University of Islamic Sciences, Karachi; Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 18.0, "rising": false, "offset": 0}},
 
@@ -25,7 +25,7 @@
         {"titles": {"en": "Isha (Muslim World League)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 17.0, "rising": false, "offset": 0}},
         
         {"titles": {"en": "Fajr (Umm Al Qura)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 18.5, "rising": true, "offset": 0}},
+        {"titles": {"en": "Isha (Umm Al Qura)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.0, "rising": false, "offset": 5400}},
 
-        
     ]
 }
