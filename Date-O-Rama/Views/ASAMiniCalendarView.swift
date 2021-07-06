@@ -25,65 +25,54 @@ struct ASABlankCell:  View {
 
 struct ASAOrdinaryCell:  View {
     var number:  Int
-//    var font:  Font
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
     var shouldNoteAsWeekend: Bool
-
+    
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
             return number.HebrewNumeral
         }
-
+        
         return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
     } // formattedNumber() -> String
     
     var body: some View {
-        let weekendColor: Color = .blue
-        let workdayColor: Color = .primary
-        let todaysColor: Color = shouldNoteAsWeekend ? weekendColor : workdayColor
         Text(formattedNumber())
             .font(CELL_FONT)
             .padding(1.0)
-//            .foregroundColor(Color("calendarOrdinaryCellText"))
+            .foregroundColor(shouldNoteAsWeekend ? .secondary : .primary)
             .lineLimit(1)
             .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
-//            .foregroundColor(shouldNoteAsWeekEnd ? .secondary : .primary)
-            .foregroundColor(todaysColor)
-            .overlay(RoundedRectangle(cornerRadius: 2.0)
-                        .stroke((shouldNoteAsWeekend ? Color(.systemTeal) : Color.secondary).opacity(0.5), style: shouldNoteAsWeekend ? StrokeStyle(lineWidth: 0.5, dash: [2, 2]) : StrokeStyle()))
-        
     } // var body
 } // struct ASAOrdinaryCell
 
 struct ASAAccentedCell:  View {
     var number:  Int
-//    var font:  Font
+    //    var font:  Font
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
     var shouldNoteAsWeekend: Bool
-
+    
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
             return number.HebrewNumeral
         }
-
+        
         return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
     } // formattedNumber() -> String
-
+    
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 2.0, style: .circular)
-//                .foregroundColor(Color("calendarAccentedCellBackground"))
+            Circle()
                 .foregroundColor(shouldNoteAsWeekend ? . purple : .red)
-
+            
             Text(formattedNumber())
                 .font(CELL_FONT)
                 .padding(1.0)
-//                .foregroundColor(shouldNoteAsWeekEnd ? Color.yellow : Color("calendarAccentedCellText"))
                 .foregroundColor(.white)
                 .lineLimit(1)
                 .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
@@ -94,16 +83,15 @@ struct ASAAccentedCell:  View {
 
 struct ASAWeekdayCell:  View {
     var symbol:  String
-
+    var isWeekend: Bool
+    
     var body: some View {
         Text(symbol)
             .font(CELL_FONT)
             .fontWeight(.black)
             .padding(1.0)
-//            .foregroundColor(Color("calendarWeekdayCellText"))
-            .foregroundColor(.secondary)
+            .foregroundColor(isWeekend ? .secondary : .primary)
             .lineLimit(1)
-            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
 } // struct ASAWeekdayCell
@@ -128,6 +116,9 @@ struct ASAWeekdayData {
     var index:  Int
 }
 
+
+// MARK: -
+
 struct ASAMiniCalendarView:  View {
     var daysPerWeek:  Int
     var day:  Int
@@ -139,16 +130,16 @@ struct ASAMiniCalendarView:  View {
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
     var regionCode: String?
-
+    
     var weekdayOfDay1:  Int {
         get {
             assert(daysPerWeek > 0)
             assert(day > 0)
             assert(weekday > 0)
             assert(weekday <= daysPerWeek)
-
+            
             let correspondingDayInWeek1 = (day % daysPerWeek).weekdayFixed(daysPerWeek: daysPerWeek)
-
+            
             let possibility1 = (weekday - correspondingDayInWeek1 + 1).weekdayFixed(daysPerWeek: daysPerWeek)
             if possibility1 > 0 && possibility1 <= daysPerWeek {
                 return possibility1
@@ -159,7 +150,7 @@ struct ASAMiniCalendarView:  View {
             return possibility2
         } // get
     } // var weekdayOfDay1
-
+    
     private var processedWeekdaySymbols:  Array<ASAWeekdayData> {
         var result:  Array<ASAWeekdayData> = []
         for i in 0..<self.weekdaySymbols.count {
@@ -167,56 +158,57 @@ struct ASAMiniCalendarView:  View {
         } // for i
         return result
     }
-
+    
     private var gridLayout:  Array<GridItem> {
         get {
             let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerWeek)
             return temp
         } // get
     } // var gridLayout
-
-
+    
+    
     fileprivate func gridFirstDay() -> Int {
         return -(weekdayOfDay1 - 2)
     }
     
     fileprivate func gridRange() -> ClosedRange<Int> {
         let gridFirstDay = gridFirstDay()
-
+        
         let preexistingDays = daysInMonth - gridFirstDay + 1
         let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
         let gridLastDay = (neededDays - preexistingDays) + daysInMonth
-
+        
         return gridFirstDay...gridLastDay
     } // func gridRange() -> ClosedRange<Int>
-
+    
     var characterDirection:  Locale.LanguageDirection {
         return Locale.characterDirection(forLanguage: localeIdentifier)
     } // var characterDirection
-
+    
     var body: some View {
         let canNoteWeekendDays: Bool = (regionCode == Locale.current.regionCode)
         
         let gridFirstDay = gridFirstDay()
-
+        
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
-            ForEach(processedWeekdaySymbols, id: \.index) {
-                ASAWeekdayCell(symbol: $0.symbol)
+            ForEach(0..<processedWeekdaySymbols.count, id: \.self) {
+                index
+                in
+                ASAWeekdayCell(symbol: processedWeekdaySymbols[index].symbol, isWeekend: canNoteWeekendDays && weekendDays.contains(index + 1))
             }
-
+            
             let range = self.gridRange()
             ForEach(range, id: \.self) {
                 let shouldNoteAsWeekEnd: Bool = {
                     var temp = false
                     if canNoteWeekendDays {
-//                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
+                        //                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
                         if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
                             temp = true
                         }
                     }
                     return temp
                 }($0)
-
                 
                 if $0 < 1 || $0 > daysInMonth {
                     ASABlankCell()
