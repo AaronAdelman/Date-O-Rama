@@ -578,6 +578,7 @@ struct ASANewEKEventView: View {
                     
                     ASAEventURLAndNotesSection(URLString: self.$URLString, notes: self.$notes)
                 } // List
+                .foregroundColor(.primary)
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarBackButtonHidden(true)
@@ -656,6 +657,7 @@ struct ASAKeyAndValueStringsView: View {
             Spacer()
             Text(value)
         }
+        .foregroundColor(.primary)
     }
 }
 
@@ -670,6 +672,7 @@ struct ASANewEventBulletedLabel:  View {
             Text("•")
             Text(text)
         }
+        .foregroundColor(.primary)
     }
 }
 
@@ -695,7 +698,7 @@ struct ASANewEKEventLabeledIntView: View {
                         }
                     }.onAppear(perform:{self.enteredValue = "\(self.value)"})
         } // HStack
-
+        .foregroundColor(.primary)
     }
 }
 

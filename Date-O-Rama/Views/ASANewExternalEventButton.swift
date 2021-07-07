@@ -22,13 +22,12 @@ struct ASANewExternalEventButton: View {
                 {
                     self.showingEventEditView = true
                 }, label:  {
-                    ASANewExternalEventButtonLabel()
+                    ASANewExternalEventButtonLabel()            .foregroundColor(.accentColor)
                 })
             .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
                 ASANewEKEventView(startDate: now, endDate: now)
                     .frame(minWidth:  400.0, minHeight:  600.0)
             }
-            .foregroundColor(.accentColor)
         #else
         NavigationLink(destination:                 ASANewEKEventView(startDate: now, endDate: now)) {
             ASANewExternalEventButtonLabel()
