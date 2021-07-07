@@ -103,7 +103,7 @@ struct ASAClockDetailEditingSection:  View {
                 
                 if selectedRow.supportsLocales {
                     NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeRegionCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier)
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier)
                     }
                 }
                 if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {

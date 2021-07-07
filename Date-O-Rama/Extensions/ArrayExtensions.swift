@@ -262,7 +262,7 @@ extension Array where Element == String {
         }
     } // mutating func appendIfDifferentAndNotNil(string: String?)
     
-    func asFormattedListOfRegionCodes() -> String {
+    func asFormattedListOfISOCountryCodes() -> String {
         // Avoidance of politics
         if self.count == 2 && self.contains("IL") && self.contains("PS") {
             return NSLocalizedString("Land of Israel", comment: "")
@@ -274,5 +274,5 @@ extension Array where Element == String {
         let formatter = ListFormatter()
         let result = formatter.string(from: formattedStrings as [Any])
         return result ?? "???"
-    } // func asFormattedListOfregionCodes() -> String
+    } // func asFormattedListOfISOCountryCodes() -> String
 } // extension Array where Element == String

@@ -67,10 +67,10 @@ struct ASAProcessedRow {
         #endif
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
-            self.flagEmojiString = (row.locationData.regionCode ?? "").flag
+            self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
-            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.region == nil {
+            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
                 //                if row.location != nil {
                 locationString = row.locationData.location.humanInterfaceRepresentation
                 //                }
@@ -126,7 +126,7 @@ struct ASAProcessedRow {
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
         self.weekendDays = row.weekendDays
-        self.regionCode = row.locationData.regionCode
+        self.regionCode = row.locationData.ISOCountryCode
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
@@ -255,7 +255,7 @@ extension Array where Element == ASARow {
                 if processedRow.supportsLocations == false {
                 return noCountryString()
             }
-                return processedRow.row.locationData.region ?? noCountryString()
+                return processedRow.row.locationData.country ?? noCountryString()
             }()
             var value = result[key]
             if value == nil {
@@ -367,7 +367,7 @@ extension Array where Element == ASAProcessedRow {
 
         case .byCountry:
             return self.sorted {
-                $0.row.locationData.region ?? noCountryString() < $1.row.locationData.region ?? noCountryString()
+                $0.row.locationData.country ?? noCountryString() < $1.row.locationData.country ?? noCountryString()
             }
 
         case .byTimeZoneWestToEast:

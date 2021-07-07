@@ -141,8 +141,8 @@ extension ASALocationManager: CLLocationManagerDelegate {
                 tempLocationData.location              = location
                 tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
 
-                tempLocationData.region  = self.lastDevicePlacemark?.country
-                tempLocationData.regionCode = self.lastDevicePlacemark?.isoCountryCode
+                tempLocationData.country  = self.lastDevicePlacemark?.country
+                tempLocationData.ISOCountryCode = self.lastDevicePlacemark?.isoCountryCode
 
                 self.finishDidUpdateLocations(tempLocationData)
                 

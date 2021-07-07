@@ -111,9 +111,9 @@ struct ASALocationCell:  View {
 
                 HStack {
                     Spacer()
-                    if locationData.region != nil {
-                        Text(locationData.region!)
-                        Text((locationData.regionCode ?? "").flag)
+                    if locationData.country != nil {
+                        Text(locationData.country!)
+                        Text((locationData.ISOCountryCode ?? "").flag)
                     }
                 }
                 

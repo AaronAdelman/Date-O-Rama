@@ -21,7 +21,7 @@ let VERTICAL_ACCURACY_KEY:  String      = "vaccuracy"
 let PLACE_NAME_KEY:  String             = "placeName"
 let LOCALITY_KEY                        = "locality"
 let COUNTRY_KEY                         = "country"
-let ISO_COUNTRY_CODE_KEY                = "regionCode"
+let ISO_COUNTRY_CODE_KEY                = "ISOCountryCode"
 let POSTAL_CODE_KEY:  String            = "postalCode"
 let ADMINISTRATIVE_AREA_KEY:  String    = "administrativeArea"
 let SUBADMINISTRATIVE_AREA_KEY:  String = "subAdministrativeArea"
@@ -205,11 +205,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         if self.locationData.locality != nil {
             result[LOCALITY_KEY] = self.locationData.locality
         }
-        if self.locationData.region != nil {
-            result[COUNTRY_KEY] = self.locationData.region
+        if self.locationData.country != nil {
+            result[COUNTRY_KEY] = self.locationData.country
         }
-        if self.locationData.regionCode != nil {
-            result[ISO_COUNTRY_CODE_KEY] = self.locationData.regionCode
+        if self.locationData.ISOCountryCode != nil {
+            result[ISO_COUNTRY_CODE_KEY] = self.locationData.ISOCountryCode
         }
         
         if self.locationData.postalCode != nil {
@@ -313,7 +313,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         let newName = dictionary[PLACE_NAME_KEY] as? String
         let newLocality = dictionary[LOCALITY_KEY] as? String
         let newCountry = dictionary[COUNTRY_KEY] as? String
-        let newregionCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
+        let newISOCountryCode = dictionary[ISO_COUNTRY_CODE_KEY] as? String
         
         let newPostalCode = dictionary[POSTAL_CODE_KEY] as? String
         let newAdministrativeArea = dictionary[ADMINISTRATIVE_AREA_KEY] as? String
@@ -324,7 +324,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
 
-        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, region: newCountry, regionCode: newregionCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
+        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, ISOCountryCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
         newRow.locationData = newLocationData
 
         newRow.startingUp = false
@@ -348,7 +348,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         }
 
         for eventCalendar in self.builtInEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: Locale.current.identifier), calendarTitleWithoutLocation: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier), regionCode: self.locationData.regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
+            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: Locale.current.identifier), calendarTitleWithoutLocation: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier), ISOCountryCode: self.locationData.ISOCountryCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
         } // for eventCalendar in self.builtInEventCalendars
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -473,9 +473,12 @@ extension ASARow {
 } // extension ASARow
 
 extension ASARow {
-    public func regionCodeEmoji(date:  Date) -> String {
-        return (self.locationData.regionCode ?? "").flag
-    } // public func emoji(date:  Date) -> String
+    public func countryCodeEmoji(date:  Date) -> String {
+        let regionCode: String = self.locationData.ISOCountryCode ?? ""
+        let result: String = regionCode.flag
+        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
+        return result
+    } // public func countryCodeEmoji(date:  Date) -> String
 } // extension ASARow
 
 class ASAStartAndEndDateStrings {
