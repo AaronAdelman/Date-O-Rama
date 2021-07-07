@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
 //        debugPrint("\(#file) \(#function) WatchApp installed:  \(session.isWatchAppInstalled ? "Yes" : "No")")
 //        debugPrint("\(#file) \(#function) Complication installed:  \(session.isComplicationEnabled ? "Yes" : "No")")
 //        debugPrint("\(#file) \(#function) Reachable:  \(session.isReachable ? "Yes" : "No")")
-        debugPrint("\(#file) \(#function) Error:  \(String(describing: error))")
+//        debugPrint("\(#file) \(#function) Error:  \(String(describing: error))")
         
         sendUserData(session)
     } //  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?)

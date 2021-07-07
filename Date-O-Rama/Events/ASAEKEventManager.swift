@@ -72,7 +72,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     fileprivate func handleAccessGranted() {
         DispatchQueue.main.async(execute: {
-            debugPrint(#file, #function, "access granted")
+//            debugPrint(#file, #function, "access granted")
             self.userHasPermission = true
             self.shouldUseEKEvents = true
             self.ready = true
@@ -82,7 +82,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     fileprivate func handleAccessDenied() {
         DispatchQueue.main.async(execute: {
             //                self.needPermissionView.fadeIn()
-            debugPrint(#file, #function, "access denied")
+//            debugPrint(#file, #function, "access denied")
             self.userHasPermission = false
             self.shouldUseEKEvents = false
             self.ready = true
