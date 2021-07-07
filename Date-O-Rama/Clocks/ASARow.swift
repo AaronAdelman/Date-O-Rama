@@ -476,7 +476,7 @@ extension ASARow {
     public func countryCodeEmoji(date:  Date) -> String {
         let regionCode: String = self.locationData.ISOCountryCode ?? ""
         let result: String = regionCode.flag
-        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
+//        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
         return result
     } // public func countryCodeEmoji(date:  Date) -> String
 } // extension ASARow
