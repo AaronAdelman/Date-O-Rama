@@ -23,7 +23,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     @Published var eventStore = EKEventStore()
     
-    @AppStorage("USE_EXTERNAL_EVENTS") var shouldUseEKEvents: Bool = true
+    @Published var shouldUseEKEvents: Bool = true
     
     @Published var userHasPermission:  Bool = false {
         willSet {
@@ -72,9 +72,9 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     
     fileprivate func handleAccessGranted() {
         DispatchQueue.main.async(execute: {
-//            debugPrint(#file, #function, "access granted")
+            debugPrint(#file, #function, "access granted")
             self.userHasPermission = true
-            
+            self.shouldUseEKEvents = true
             self.ready = true
         })
     }
@@ -82,7 +82,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
     fileprivate func handleAccessDenied() {
         DispatchQueue.main.async(execute: {
             //                self.needPermissionView.fadeIn()
-//            debugPrint(#file, #function, "access denied")
+            debugPrint(#file, #function, "access denied")
             self.userHasPermission = false
             self.shouldUseEKEvents = false
             self.ready = true
@@ -97,7 +97,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
             self.handleAccessGranted()
             
         case .denied:
-//            debugPrint(#file, #function, "Access denied")
+            debugPrint(#file, #function, "Access denied")
             self.handleAccessDenied()
             
         case .notDetermined:
@@ -107,7 +107,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
 //                                                debugPrint(#file, #function, "Access granted")
                                                 self.handleAccessGranted()
                                             } else {
-//                                                debugPrint(#file, #function, "Access denied")
+                                                debugPrint(#file, #function, "Access denied")
                                                 self.handleAccessDenied()
                                             }
                                         })
@@ -119,7 +119,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         
         eventStore.requestAccess(to: EKEntityType.event, completion: {
             (accessGranted: Bool, error: Error?) in
-            
+            debugPrint(#file, #function, "Access granted:", accessGranted, error as Any)
             if accessGranted == true {
                 self.handleAccessGranted()
             } else {

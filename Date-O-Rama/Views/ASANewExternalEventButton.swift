@@ -29,7 +29,7 @@ struct ASANewExternalEventButton: View {
                     .frame(minWidth:  400.0, minHeight:  600.0)
             }
         #else
-        NavigationLink(destination:                 ASANewEKEventView(startDate: now, endDate: now)) {
+        NavigationLink(destination: ASANewEKEventView(startDate: now, endDate: now)) {
             ASANewExternalEventButtonLabel()
                 .foregroundColor(.accentColor)
         }
