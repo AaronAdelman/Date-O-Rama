@@ -171,7 +171,7 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
     var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
 
     var body:  some View {
-        if selectedRow.calendar.usesISOTime && (selectedRow.usesDeviceLocation ||  selectedRow.locationData.timeZone.isCurrent) {
+        if selectedRow.calendar.usesISOTime && selectedRow.isICalendarCompatible {
             Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
                 ForEach(iCalendarEventCalendars, id:
                         \.calendarIdentifier) {

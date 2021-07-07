@@ -370,7 +370,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     } // func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible>
 
     var isICalendarCompatible:  Bool {
-        return self.calendar.usesISOTime && self.usesDeviceLocation
+        return self.calendar.usesISOTime && (self.usesDeviceLocation || self.locationData.timeZone.isCurrent)
     } // var isICalendarCompatible
     
     var startAndEndDateStringsCache = NSCache<NSString, ASAStartAndEndDateStrings>()
