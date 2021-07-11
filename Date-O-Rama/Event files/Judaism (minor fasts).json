@@ -2,7 +2,7 @@
     "titles": {"en":  "Judaism (minor fasts)", "he":  "יהדות (תעניות קטנות)"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
-    "calendarCode": "HebrewSolar",
+    "calendarCode": "heb*",
     "calendarColor": {"red": 0.27, "green": 0.32, "blue": 0.80},
     "eventSpecifications": [
         {"titles": {"he": "יום שבו נתפס רבי עקיבא והייתה שעת שמד", "en": "Day of the arrest of Rabbi ‘Aqiva’ in a time of religious persecution"}, "startDateSpecification": {"type": "allDay", "month": 1, "day": 5}},

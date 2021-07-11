@@ -2,7 +2,7 @@
     "titles": {"en":  "Jewish zodiac", "he":  "גלגל המזלות יהודי"},
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "he",
-    "calendarCode":  "HebrewSolar",
+    "calendarCode":  "heb*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
     {"titles": {"en": "Aries", "he": "טלה"}, "startDateSpecification": {"type": "allMonth", "month": 8}, "category": "Aries"},

@@ -2,7 +2,7 @@
     "titles": {"en":  "Islam (general)", "he":  "אסלאם (כללי)", "ar": "الإسلام (عام)"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
-    "calendarCode":  "IslamicSolar",
+    "calendarCode":  "hiq*",
     "calendarColor": {"red":  0.0, "green":  0.97, "blue":  0.0},
     "eventSpecifications":  [
         {

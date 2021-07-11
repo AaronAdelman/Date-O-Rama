@@ -2,7 +2,7 @@
     "titles": {"en":  "Shia", "he":  "שיעה", "ar": "الشيعة"},
     "supportedLocales":  ["en", "ar", "he"],
     "defaultLocale":  "en",
-    "calendarCode":  "IslamicSolar",
+    "calendarCode":  "hiq*",
     "calendarColor": {"red":  0.05, "green":  0.95, "blue":  0.05},
     "eventSpecifications":  [
         {

@@ -2,7 +2,7 @@
     "titles": {"en":  "Islam (times)", "he":  "אסלאם (זמנים)"},
     "supportedLocales": ["en"],
     "defaultLocale": "he",
-    "calendarCode": "IslamicSolar",
+    "calendarCode": "hiq*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
         {"titles": {"en": "Sunrise"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},

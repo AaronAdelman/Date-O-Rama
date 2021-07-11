@@ -11,7 +11,8 @@ import Foundation
 // Calendar codes
 // I would prefer to use a standard, but ISO has not released one as of this writing.
 enum ASACalendarCode:  String, Codable {
-//    case None                = "  "
+    case none                = "  "
+    
     case Buddhist              = "Buddhist"
     case Chinese               = "Chinese"
     case Coptic                = "Coptic"
@@ -43,6 +44,9 @@ enum ASACalendarCode:  String, Codable {
     case IslamicTabularSolar   = "IslamicTabularSolar"
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
     case HebrewMA              = "HebrewSolarMA"
+    
+    case allHebrew             = "heb*"
+    case allIslamic            = "hiq*"
 } // enum ASACalendarCode:  String
 
 
@@ -53,6 +57,8 @@ enum ASACalendarType {
     case lunisolar
     case lunar
     case JulianDay
+    
+    case invalid
 } // enum ASACalendarType
 
 
@@ -129,6 +135,16 @@ extension ASACalendarCode {
             } // switch self
         } // get
     } // var isHebrewCalendar
+    
+    var isIslamicCalendar: Bool {
+        switch self {
+        case .Islamic, .IslamicCivil, .IslamicSolar, .IslamicTabular, .IslamicUmmAlQura, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+            return true
+            
+        default:
+            return false
+        }
+    }
 } // extension ASACalendarCode
 
 
@@ -209,7 +225,25 @@ extension ASACalendarCode {
                 
             case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
                 return .JulianDay
+                
+            default:
+                return .invalid
             } // switch self
         } // get
     } // var type
 } // extension ASACalendarCode
+
+
+extension ASACalendarCode {
+    func matches(_ otherCalendarCode: ASACalendarCode) -> Bool {
+        if self == .allHebrew && otherCalendarCode.isHebrewCalendar {
+            return true
+        }
+        
+        if self == .allIslamic && otherCalendarCode.isIslamicCalendar {
+            return true
+        }
+        
+        return self == otherCalendarCode
+    }
+}

@@ -96,7 +96,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         
         var revisedBuiltInEventCalendars: Array<ASAEventCalendar> = []
         for eventCalendar in self.builtInEventCalendars {
-            if eventCalendar.eventsFile?.calendarCode == self.calendar.calendarCode {
+            if (eventCalendar.eventsFile?.calendarCode ?? .none).matches(self.calendar.calendarCode) {
                 revisedBuiltInEventCalendars.append(eventCalendar)
             } // for eventCalendar
             self.builtInEventCalendars = revisedBuiltInEventCalendars

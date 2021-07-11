@@ -2,7 +2,7 @@
     "titles": {"en":  "Israel", "he":  "ישראל"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
-    "calendarCode": "HebrewSolar",
+    "calendarCode": "heb*",
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
     "eventSpecifications": [
         {"titles": {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, "startDateSpecification": {

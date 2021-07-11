@@ -2,7 +2,7 @@
     "titles": {"en":  "Antisemitism (Islamic)", "he":  "אנטישמיות (מוסלמי)", "ar": "معاداة السامية"},
     "supportedLocales":  ["en", "he", "ar"],
     "defaultLocale":  "en",
-    "calendarCode":  "IslamicSolar",
+    "calendarCode":  "hiq*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
         {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "startDateSpecification": {

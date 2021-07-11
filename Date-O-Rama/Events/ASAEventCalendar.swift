@@ -485,7 +485,7 @@ extension ASAEventCalendar {
         var unsortedFileNames:  Array<String> = []
         for fileName in rawFileNames {
             let (eventsFile, _) = ASAEventsFile.builtIn(fileName: fileName)
-            if eventsFile?.calendarCode == calendarCode {
+            if (eventsFile?.calendarCode ?? .none).matches(calendarCode) {
                 unsortedFileNames.append(fileName)
             }
         }
