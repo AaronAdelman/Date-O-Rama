@@ -2,7 +2,7 @@
     "titles": {"en":  "Time changes", "he": "שינויי שעון"},
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
-    "calendarCode":  "gre*",
+    "calendarCode":  "*",
     "calendarColor": {"red":  0.0, "green":  0.0, "blue":  0.0},
     "eventSpecifications":  [
         {"titles":  {"en": ""},
