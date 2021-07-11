@@ -2,7 +2,7 @@
     "titles": {"en":  "Islamic awareness"},
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
+    "calendarCode":  "gre*",
     "calendarColor": {"red":  0.1, "green":  0.9, "blue":  0.1},
     "eventSpecifications":  [
         {

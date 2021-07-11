@@ -2,7 +2,7 @@
     "titles": {"en":  "Western zodiac", "he":  "גלגל המזלות המערבי"},
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
+    "calendarCode":  "gre*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
         {"titles": {"en": "Aries", "he": "טלה"}, "startDateSpecification": {

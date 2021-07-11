@@ -47,6 +47,7 @@ enum ASACalendarCode:  String, Codable {
     
     case allHebrew             = "heb*"
     case allIslamic            = "hiq*"
+    case allGregorian          = "gre*"
 } // enum ASACalendarCode:  String
 
 
@@ -139,6 +140,16 @@ extension ASACalendarCode {
     var isIslamicCalendar: Bool {
         switch self {
         case .Islamic, .IslamicCivil, .IslamicSolar, .IslamicTabular, .IslamicUmmAlQura, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+            return true
+            
+        default:
+            return false
+        }
+    }
+    
+    var isGregorianCalendar: Bool {
+        switch self {
+        case .Gregorian, .Buddhist, .Japanese, .RepublicOfChina:
             return true
             
         default:
@@ -244,6 +255,10 @@ extension ASACalendarCode {
             return true
         }
         
+        if self == .allGregorian && otherCalendarCode.isGregorianCalendar {
+            return true
+        }
+
         return self == otherCalendarCode
     }
 }

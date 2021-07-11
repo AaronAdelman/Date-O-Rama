@@ -2,7 +2,7 @@
     "titles": {"en":  "Ahmadiyya"},
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
+    "calendarCode":  "gre*",
     "calendarColor": {"red":  0.25, "green":  0.25, "blue":  0.25},
     "eventSpecifications":  [
         {

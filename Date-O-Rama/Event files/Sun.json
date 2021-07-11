@@ -2,7 +2,7 @@
     "titles": {"en":  "Sun", "he":  "שמש"},
     "supportedLocales":  ["en", "he"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
+    "calendarCode":  "gre*",
     "calendarColor": {"red":  1.0, "green":  1.0, "blue":  0.0},
     "eventSpecifications":  [
         {

@@ -2,7 +2,7 @@
     "titles": {"en":  "Shia (Gregorian)"},
     "supportedLocales":  ["en"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
+    "calendarCode":  "gre*",
     "calendarColor": {"red":  0.3, "green":  0.7, "blue":  0.3},
     "eventSpecifications":  [
         {

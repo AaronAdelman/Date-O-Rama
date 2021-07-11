@@ -2,7 +2,7 @@
     "titles": {"en":  "Antisemitism (Gregorian)", "he":  "אנטישמיות (גרגוריני)", "ar": "معاداة السامية"},
     "supportedLocales":  ["en", "he", "ar"],
     "defaultLocale":  "en",
-    "calendarCode":  "Gregorian",
+    "calendarCode":  "gre*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
         {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "startDateSpecification": {
