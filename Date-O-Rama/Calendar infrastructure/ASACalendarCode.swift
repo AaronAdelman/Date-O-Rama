@@ -47,7 +47,9 @@ enum ASACalendarCode:  String, Codable {
     
     case all                   = "*"
     case allHebrew             = "heb*"
+    case allHebrewSolarTime    = "heb-solar*"
     case allIslamic            = "hiq*"
+    case allIslamicSolarTime   = "hiq-solar*"
     case allGregorian          = "gre*"
 } // enum ASACalendarCode:  String
 
@@ -138,9 +140,31 @@ extension ASACalendarCode {
         } // get
     } // var isHebrewCalendar
     
+    var isHebrewSolarTimeCalendar: Bool {
+        get {
+            switch self {
+            case .HebrewMA, .HebrewGRA:
+                return true
+
+            default:
+                return false
+            } // switch self
+        } // get
+    } // var isHebrewSolarTimeCalendar
+    
     var isIslamicCalendar: Bool {
         switch self {
         case .Islamic, .IslamicCivil, .IslamicSolar, .IslamicTabular, .IslamicUmmAlQura, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+            return true
+            
+        default:
+            return false
+        }
+    }
+    
+    var isIslamicSolarTimeCalendar: Bool {
+        switch self {
+        case .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
             return true
             
         default:
@@ -252,7 +276,15 @@ extension ASACalendarCode {
             return true
         }
         
+        if self == .allHebrewSolarTime && otherCalendarCode.isHebrewSolarTimeCalendar {
+            return true
+        }
+        
         if self == .allIslamic && otherCalendarCode.isIslamicCalendar {
+            return true
+        }
+
+        if self == .allIslamicSolarTime && otherCalendarCode.isIslamicSolarTimeCalendar {
             return true
         }
         

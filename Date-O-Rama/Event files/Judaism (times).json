@@ -2,7 +2,7 @@
     "titles": {"en":  "Judaism (times)", "he":  "יהדות (זמנים)"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
-    "calendarCode": "heb*",
+    "calendarCode": "heb-solar*",
     "calendarColor": {"red": 0.01, "green": 0.2, "blue": 1.0},
     "eventSpecifications": [
         {"titles": {"en": "Sunrise", "he": "נץ החמה"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},
