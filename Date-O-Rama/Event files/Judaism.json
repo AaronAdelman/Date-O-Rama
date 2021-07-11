@@ -2,8 +2,8 @@
     "titles": {"en":  "Judaism", "he":  "יהדות"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
-    "calendarCode": "HebrewSolar",
-    "otherCalendarCodes": ["Coptic", "Gregorian"],
+    "calendarCode": "heb*",
+    "otherCalendarCodes": ["Coptic"],
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 1.0},
     "eventSpecifications": [
         {"startDateSpecification": {"type": "allYear", "yearDivisor": 7, "yearRemainder": 1}, "titles": {"he": "שנה א׳ לשמיטה", "en": "Year 1 in the Shemiṭṭah Cycle"}},
@@ -639,7 +639,6 @@
         {"category": "Shabbath", "startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [383], "month": 9, "day": 24}, "titles": {"he": "פרשת בחקתי", "en": "Parashath BeḤuqqothay"}, "notes": {"he": "ראש חודש סיוון יהיה ביום שישי"}},
         {"category": "Shabbath", "startDateSpecification": {"type": "allDay", "weekdays": [7], "lengthsOfYear": [385], "month": 13, "day": 23}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim-Wayyelekh"}, "notes": {"he": "ראש השנה יהיה ביום שבת קודש וביום ראשון"}},
         {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode":  "Coptic", "startDateSpecification": {"type": "allDay", "month": 3, "day": 26}, "excludeRegionCodes": ["IL", "PS"]},
-        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode":  "Gregorian", "startDateSpecification": {"type": "allDay", "month": 12, "day": 24}},
         {"titles": {"he": "ברכת החמה", "en": "Blessing of the Sun"}, "calendarCode":  "Coptic", "startDateSpecification": {"type": "allDay", "month": 7, "day": 30, "yearDivisor": 28, "yearRemainder": 17}, "urls": {"en": "https://www.ou.org/holidays/category/birchat-hachama/"}}
     ]
 }
