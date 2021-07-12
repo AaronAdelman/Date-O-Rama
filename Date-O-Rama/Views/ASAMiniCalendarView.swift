@@ -13,7 +13,7 @@ import SwiftUI
 
 fileprivate let MINIMUM_CELL_DIMENSION: CGFloat = 17.0
 fileprivate let MINIMUM_SCALE_FACTOR: CGFloat   =  0.6
-fileprivate let CELL_FONT: Font = .system(size: 11.0, weight: .bold, design: .default)
+fileprivate let CELL_FONT: Font = .system(size: 11.0, weight: .regular, design: .default)
 
 struct ASABlankCell:  View {
     var body: some View {
