@@ -264,7 +264,7 @@ extension Array where Element == String {
     
     func asFormattedListOfISOCountryCodes() -> String {
         // Avoidance of politics
-        if self.count == 2 && self.contains("IL") && self.contains("PS") {
+        if self.count == 2 && self.contains(REGION_CODE_Israel) && self.contains(REGION_CODE_Palestine) {
             return NSLocalizedString("Land of Israel", comment: "")
         }
         

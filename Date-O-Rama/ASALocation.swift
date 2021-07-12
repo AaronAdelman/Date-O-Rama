@@ -56,11 +56,11 @@ extension ASALocation {
 
             if usedLocation.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest) || usedLocation.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest) {
                 country = NSLocalizedString("Israel", comment: "")
-                ISOCountryCode = "IL"
+                ISOCountryCode = REGION_CODE_Israel
                 timeZone = TimeZone(identifier: "Asia/Jerusalem")!
             } else if usedLocation.isWithin(north: GazaStripNorth, south: GazaStripSouth, east: GazaStripEast, west: GazaStripWest) {
                 country = NSLocalizedString("Gaza Strip", comment: "")
-                ISOCountryCode = "PS"
+                ISOCountryCode = REGION_CODE_Palestine
                 timeZone = TimeZone(identifier: "Asia/Gaza")!
             }
         }

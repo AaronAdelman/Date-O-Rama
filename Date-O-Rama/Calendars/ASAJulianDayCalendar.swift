@@ -334,11 +334,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     var daysPerWeek:  Int? = nil
     
-    var workDays: Array<Int> {
-        return [1]
-    }
-    
-    var weekendDays: Array<Int> {
+    func weekendDays(for regionCode: String?) -> Array<Int> {
         return []
     }
 } // class ASAJulianDayCalendar

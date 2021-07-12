@@ -377,11 +377,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     // MARK:  - Workdays and weekends
     var weekendDays: Array<Int> {
-        return self.calendar.weekendDays
+        return self.calendar.weekendDays(for: self.locationData.ISOCountryCode)
     }
-    var workDays: Array<Int> {
-        return self.calendar.workDays
-    }
+//    var workDays: Array<Int> {
+//        return self.calendar.workDays
+//    }
 } // class ASARow
 
 

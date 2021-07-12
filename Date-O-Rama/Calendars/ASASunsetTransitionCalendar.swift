@@ -608,11 +608,7 @@
 
     var daysPerWeek:  Int? = 7
     
-    var workDays: Array<Int> {
-        return self.ApplesCalendar.workDays
-    }
-    
-    var weekendDays: Array<Int> {
-        return self.ApplesCalendar.weekendDays
-    }
+    func weekendDays(for regionCode: String?) -> Array<Int> {
+        self.ApplesCalendar.weekendDays(for: regionCode)
+    } // func weekendDays(for regionCode: String?) -> Array<Int>
  } // class ASASunsetTransitionCalendar

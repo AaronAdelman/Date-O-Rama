@@ -186,7 +186,7 @@ struct ASAMiniCalendarView:  View {
     } // var characterDirection
     
     var body: some View {
-        let canNoteWeekendDays: Bool = (regionCode == Locale.current.regionCode)
+//        let canNoteWeekendDays: Bool = (regionCode == Locale.current.regionCode)
         
         let gridFirstDay = gridFirstDay()
         
@@ -194,19 +194,21 @@ struct ASAMiniCalendarView:  View {
             ForEach(0..<processedWeekdaySymbols.count, id: \.self) {
                 index
                 in
-                ASAWeekdayCell(symbol: processedWeekdaySymbols[index].symbol, isWeekend: canNoteWeekendDays && weekendDays.contains(index + 1))
+                ASAWeekdayCell(symbol: processedWeekdaySymbols[index].symbol, isWeekend:
+//                                canNoteWeekendDays &&
+                                weekendDays.contains(index + 1))
             }
             
             let range = self.gridRange()
             ForEach(range, id: \.self) {
                 let shouldNoteAsWeekEnd: Bool = {
                     var temp = false
-                    if canNoteWeekendDays {
+//                    if canNoteWeekendDays {
                         //                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
                         if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
                             temp = true
                         }
-                    }
+//                    }
                     return temp
                 }($0)
                 
@@ -228,6 +230,6 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], regionCode: "IL")
+        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], regionCode: REGION_CODE_Israel)
     }
 }
