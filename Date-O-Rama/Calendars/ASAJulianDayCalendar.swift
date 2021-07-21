@@ -121,13 +121,13 @@ class ASAJulianDayCalendar:  ASACalendar {
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-            return date.previousGMTNoon()
+            return date.previousGMTNoon
             
         case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
             return date.previousMidnight(timeZone: TimeZone.GMT)
             
         default:
-            return date.previousGMTNoon()
+            return date.previousGMTNoon
         } // switch self.calendarCode
     } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
     
@@ -135,13 +135,13 @@ class ASAJulianDayCalendar:  ASACalendar {
     func startOfNextDay(date: Date, locationData:  ASALocation) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-            return date.nextGMTNoon()
+            return date.nextGMTNoon
             
         case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
             return date.nextMidnight(timeZone: TimeZone.GMT)
             
         default:
-            return date.nextGMTNoon()
+            return date.nextGMTNoon
         } // switch self.calendarCode
     } // func nextTransitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
     

@@ -102,18 +102,18 @@ extension Date {
         return Date(timeIntervalSince1970: seconds)
     } // static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date
 
-    func previousGMTNoon() -> Date {
+    var previousGMTNoon: Date {
         let thisJulianDay = floor(self.JulianDate())
         let result = Date.date(JulianDate: thisJulianDay)
         return result
-    } // func previousGMTNoon() -> Date
+    } // var previousGMTNoon
 
-    func nextGMTNoon() -> Date {
+    var nextGMTNoon: Date {
         let thisJulianDay = floor(self.JulianDate())
         let nextJulianDay = thisJulianDay + 1
         let result = Date.date(JulianDate: nextJulianDay)
         return result
-    } // func nextGMTNoon() -> Date
+    } // var nextGMTNoon
 } // extension Date
 
 extension Date {
