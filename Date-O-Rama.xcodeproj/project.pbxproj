@@ -44,6 +44,8 @@
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
+		A54539DB26A8A92E0028EAD5 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
+		A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A5490F982550339D00EFB13F /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5490F972550339D00EFB13F /* WatchFace.swift */; };
 		A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
@@ -412,6 +414,7 @@
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
+		A54539DA26A8A92E0028EAD5 /* PrayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
 		A5490F972550339D00EFB13F /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPolarLighting.swift; sourceTree = "<group>"; };
@@ -797,6 +800,7 @@
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 				A5596A3D258950AD002298CE /* LocaleExtensions.swift */,
 				A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */,
+				A54539DA26A8A92E0028EAD5 /* PrayTime.swift */,
 				A53A5B0124519D04005F9876 /* SolarEvents.swift */,
 				A5C77C2C2433371700CFEE47 /* StringExtensions.swift */,
 				A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */,
@@ -1217,6 +1221,7 @@
 				A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */,
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
+				A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
 				A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
 				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
@@ -1366,6 +1371,7 @@
 				A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */,
 				A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A51D88DD2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift in Sources */,
+				A54539DB26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
 				A5B9113D268E3EF10058EA69 /* CalendarExtensions.swift in Sources */,
 				A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */,
 				A52486D4260B260700A55690 /* ASANewExternalEventButton.swift in Sources */,
