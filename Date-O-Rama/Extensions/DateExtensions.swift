@@ -35,10 +35,10 @@ extension Date {
 } // extension Date
 
 extension Date {
-    func JulianDate() -> Double {
+    var JulianDate: Double {
         let seconds = self.timeIntervalSince1970
         return ( seconds / 86400.0 ) + 2440587.5
-    } // func JulianDate() -> Double
+    } // var JulianDate
 
     static func date(JulianDate:  Double) -> Date {
         let seconds = (JulianDate - 2440587.5) * 86400.0
@@ -46,7 +46,7 @@ extension Date {
     } // static func date(JulianDate:  Double) -> Date
 
     func JulianDateWithTime(offsetFromJulianDay:  TimeInterval) -> Double {
-        return self.JulianDate() - offsetFromJulianDay
+        return self.JulianDate - offsetFromJulianDay
     } // func JulianDateWithTime(offsetFromJulianDay:  TimeInterval) -> Double
 
     func JulianDateWithoutTime(offsetFromJulianDay:  TimeInterval) -> Int {
@@ -103,13 +103,13 @@ extension Date {
     } // static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date
 
     var previousGMTNoon: Date {
-        let thisJulianDay = floor(self.JulianDate())
+        let thisJulianDay = floor(self.JulianDate)
         let result = Date.date(JulianDate: thisJulianDay)
         return result
     } // var previousGMTNoon
 
     var nextGMTNoon: Date {
-        let thisJulianDay = floor(self.JulianDate())
+        let thisJulianDay = floor(self.JulianDate)
         let nextJulianDay = thisJulianDay + 1
         let result = Date.date(JulianDate: nextJulianDay)
         return result
