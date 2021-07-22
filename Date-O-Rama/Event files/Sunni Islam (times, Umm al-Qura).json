@@ -1,0 +1,19 @@
+{
+    "titles": {"en":  "Islam (times, Umm al-Qura)", "he":  "אסלאם סוני (זמנים, אום אל־קורה)"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "IslamicUmmAlQuraSolar",
+    "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
+    "eventSpecifications": [
+        {"titles": {"en": "Sunrise"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}, "category": "Sunset"},
+        
+        {"titles": {"en": "Maghrib"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
+        {"titles": {"en": "Isha"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
+        {"titles": {"en": "Fajr"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
+        {"titles": {"en": "Dhuhr"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
+        {"titles": {"en": "Shafii Asr"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
+        {"titles": {"en": "Hanafi Asr"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
+  
+    ]
+}

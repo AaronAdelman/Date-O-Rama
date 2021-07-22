@@ -1,7 +1,7 @@
 {
     "titles": {"en":  "Islam (times)", "he":  "אסלאם סוני (זמנים)"},
     "supportedLocales": ["en"],
-    "defaultLocale": "he",
+    "defaultLocale": "en",
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
@@ -21,14 +21,7 @@
         {"titles": {"en": "Dhuhr (MWL)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "MWL"}, "emoji": "🇸🇦"},
         {"titles": {"en": "Shafii Asr (MWL)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "MWL"}, "emoji": "🇸🇦"},
         {"titles": {"en": "Hanafi Asr (MWL)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "MWL"}, "emoji": "🇸🇦"},
-        
-        {"titles": {"en": "Maghrib (Makkah)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
-        {"titles": {"en": "Isha (Makkah)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
-        {"titles": {"en": "Fajr (Makkah)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
-        {"titles": {"en": "Dhuhr (Makkah)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
-        {"titles": {"en": "Shafii Asr (Makkah)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
-        {"titles": {"en": "Hanafi Asr (Makkah)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Makkah"}, "emoji": "🇸🇦"},
-        
+
         {"titles": {"en": "Maghrib (Egypt)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Egypt"}, "emoji": "🇪🇬"},
         {"titles": {"en": "Isha (Egypt)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Egypt"}, "emoji": "🇪🇬"},
         {"titles": {"en": "Fajr (Egypt)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Egypt"}, "emoji": "🇪🇬"},

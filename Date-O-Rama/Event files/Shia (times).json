@@ -1,7 +1,7 @@
 {
     "titles": {"en":  "Shia (times)", "he":  "שיעה (זמנים)"},
     "supportedLocales": ["en"],
-    "defaultLocale": "he",
+    "defaultLocale": "en",
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
