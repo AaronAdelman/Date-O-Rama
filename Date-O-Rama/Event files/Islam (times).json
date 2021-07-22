@@ -12,8 +12,8 @@
         {"titles": {"en": "Isha (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "ISNA"}, "emoji": "🌎"},
         {"titles": {"en": "Fajr (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "ISNA"}, "emoji": "🌎"},
         {"titles": {"en": "Dhuhr (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "ISNA"}, "emoji": "🌎"},
-        {"titles": {"en": "Shafii Asr (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "ISNA"}, "emoji": "🌎"},
-        {"titles": {"en": "Hanafi Asr (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "ISNA"}, "emoji": "🌎"},
+        {"titles": {"en": "Asr (Shafii) (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "ISNA"}, "emoji": "🌎"},
+        {"titles": {"en": "Asr (Hanafi) (ISNA)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "ISNA"}, "emoji": "🌎"},
         
     ]
 }

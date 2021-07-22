@@ -12,15 +12,15 @@
         {"titles": {"en": "Isha (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Jafari"}},
         {"titles": {"en": "Fajr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Jafari"}},
         {"titles": {"en": "Dhuhr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Shafii Asr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Hanafi Asr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Jafari"}},
+        {"titles": {"en": "Asr (Shafii) (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Jafari"}},
+        {"titles": {"en": "Asr (Hanafi) (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Jafari"}},
 
         {"titles": {"en": "Maghrib (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
         {"titles": {"en": "Isha (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
         {"titles": {"en": "Fajr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
         {"titles": {"en": "Dhuhr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Shafii Asr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Hanafi Asr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Asr (Shafii) (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Asr (Hanafi) (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
     ]
 }
 
