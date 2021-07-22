@@ -175,9 +175,9 @@ extension Date {
 
 struct ASAMethodParameters {
     var fajrDegrees: Double
-    var maghribFlag: Int
+    var maghribFlag: Bool
     var maghribDegrees: Double
-    var ishaFlag: Int
+    var ishaFlag: Bool
     var ishaDegrees: Double
 } // struct ASAMethodParameters
 
@@ -194,7 +194,7 @@ extension ASACalculationMethod {
 //                14
 //            ]
 //            return Jvalues
-            return ASAMethodParameters(fajrDegrees: 16, maghribFlag: 0, maghribDegrees: 4, ishaFlag: 0, ishaDegrees: 14)
+            return ASAMethodParameters(fajrDegrees: 16, maghribFlag: false, maghribDegrees: 4, ishaFlag: false, ishaDegrees: 14)
             
         case .Karachi:
 //            let Kvalues: Array<Double> = [
@@ -205,7 +205,7 @@ extension ASACalculationMethod {
 //                18
 //            ]
 //            return Kvalues
-        return ASAMethodParameters(fajrDegrees: 18, maghribFlag: 1, maghribDegrees: 0, ishaFlag: 0, ishaDegrees: 18)
+        return ASAMethodParameters(fajrDegrees: 18, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 18)
             
         case .ISNA:
 //            let Ivalues: Array<Double> = [
@@ -216,7 +216,7 @@ extension ASACalculationMethod {
 //                15
 //            ]
 //            return Ivalues
-          return ASAMethodParameters(fajrDegrees: 15, maghribFlag: 1, maghribDegrees: 0, ishaFlag: 0, ishaDegrees: 15)
+          return ASAMethodParameters(fajrDegrees: 15, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 15)
             
         case .MWL:
 //            let Mvalues: Array<Double> = [
@@ -227,7 +227,7 @@ extension ASACalculationMethod {
 //                17
 //            ]
 //            return Mvalues
-        return ASAMethodParameters(fajrDegrees: 18, maghribFlag: 1, maghribDegrees: 0, ishaFlag: 0, ishaDegrees: 17)
+        return ASAMethodParameters(fajrDegrees: 18, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 17)
             
         case .Makkah:
 //            let Mavalues: Array<Double> = [
@@ -238,7 +238,7 @@ extension ASACalculationMethod {
 //                90
 //            ]
 //            return Mavalues
-            return ASAMethodParameters(fajrDegrees: 18.5, maghribFlag: 1, maghribDegrees: 0, ishaFlag: 1, ishaDegrees: 90)
+            return ASAMethodParameters(fajrDegrees: 18.5, maghribFlag: true, maghribDegrees: 0, ishaFlag: true, ishaDegrees: 90)
             
         case .Egypt:
 //            let Evalues: Array<Double> = [
@@ -249,7 +249,7 @@ extension ASACalculationMethod {
 //                17.5
 //            ]
 //            return Evalues
-            return ASAMethodParameters(fajrDegrees: 19, maghribFlag: 1, maghribDegrees: 0, ishaFlag: 0, ishaDegrees: 17.5)
+            return ASAMethodParameters(fajrDegrees: 19, maghribFlag: true, maghribDegrees: 0, ishaFlag: false, ishaDegrees: 17.5)
             
         case .Tehran:
 //            let Tvalues: Array<Double> = [
@@ -260,7 +260,7 @@ extension ASACalculationMethod {
 //                14
 //            ]
 //            return Tvalues
-            return ASAMethodParameters(fajrDegrees: 17.7, maghribFlag: 0, maghribDegrees: 4.5, ishaFlag: 0, ishaDegrees: 14)
+            return ASAMethodParameters(fajrDegrees: 17.7, maghribFlag: false, maghribDegrees: 4.5, ishaFlag: false, ishaDegrees: 14)
         } // return self
     } // var methodParams
 } // extension ASACalculationMethod
@@ -380,7 +380,7 @@ func timeDiff(time1:Double, andTime2 time2:Double) -> Double {
 }
 
 
-// MARK:  -  Compute Prayer Times 
+// MARK:  -  Compute Prayer Times
 
 // compute prayer times at given julian date
 func computeTime(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, JDate: Double, lat: Double, lng: Double, event: ASAIslamicPrayerTimeEvent) -> Double! {
@@ -483,16 +483,16 @@ func adjustTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>!, calcMeth
     }
     
     if result[.Maghrib] != nil {
-        let maghribFlag: Int = calcMethod.methodParams.maghribFlag
+        let maghribFlag: Bool = calcMethod.methodParams.maghribFlag
         
-        if maghribFlag == 1 { // Maghrib
+        if maghribFlag == true { // Maghrib
             Dtime1 = result[.Sunset]! + (calcMethod.methodParams.maghribDegrees / 60.0)
             result[.Maghrib] = Dtime1
         }
     }
     
     if result[.Isha] != nil {
-        if calcMethod.methodParams.ishaFlag == 1 { // Isha
+        if calcMethod.methodParams.ishaFlag == true { // Isha
             Dtime2 = result[.Maghrib]! + (calcMethod.methodParams.ishaDegrees / 60.0)
             result[.Isha] = Dtime2
         }
@@ -535,9 +535,9 @@ func adjustHighLatTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>, ca
     if result[.Isha] != nil {
         // Adjust Isha
         let ishaTime: Double = times[.Isha]!
-        let ishaFlag: Int = calcMethod.methodParams.ishaFlag
+        let ishaFlag: Bool = calcMethod.methodParams.ishaFlag
         let ishaDegrees: Double = calcMethod.methodParams.ishaDegrees
-        let IshaAngle: Double = (ishaFlag == 0) ? ishaDegrees: 18
+        let IshaAngle: Double = (ishaFlag == false) ? ishaDegrees: 18
         let IshaDiff: Double = nightPortion(angle: IshaAngle, adjustHighLats: adjustHighLats) * nightTime
         if ishaTime.isNaN || timeDiff(time1: sunsetTime, andTime2: ishaTime) > IshaDiff {
             result[.Isha] = sunsetTime + IshaDiff
@@ -547,9 +547,9 @@ func adjustHighLatTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>, ca
     if result[.Maghrib] != nil {
         // Adjust Maghrib
         let maghribTime: Double = times[.Maghrib]!
-        let maghribFlag: Int = calcMethod.methodParams.maghribFlag
+        let maghribFlag: Bool = calcMethod.methodParams.maghribFlag
         let maghribDegrees: Double = calcMethod.methodParams.maghribDegrees
-        let MaghribAngle: Double = (maghribFlag == 0) ? maghribDegrees : 4
+        let MaghribAngle: Double = (maghribFlag == false) ? maghribDegrees : 4
         let MaghribDiff: Double = nightPortion(angle: MaghribAngle, adjustHighLats: adjustHighLats) * nightTime
         if maghribTime.isNaN || timeDiff(time1: sunsetTime, andTime2: maghribTime) > MaghribDiff {
             result[.Maghrib] = sunsetTime + MaghribDiff

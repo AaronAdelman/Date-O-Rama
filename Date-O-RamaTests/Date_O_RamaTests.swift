@@ -403,5 +403,5 @@ class Date_O_RamaTests: XCTestCase {
 
         let SunsetString = transformedTimes[.Sunset]!
         XCTAssert(SunsetString == "Jul 12, 2021 at 7:48:42 PM", "Sunset:  \(SunsetString)")
-    }
+    } // func testIslamicPrayerTimes() throws
 } // class Date_O_RamaTests
