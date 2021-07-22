@@ -48,6 +48,10 @@
 		A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A54539DD26A98F930028EAD5 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
 		A54539DE26A990040028EAD5 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
+		A54539E026A9BA180028EAD5 /* Shia (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A54539DF26A9BA180028EAD5 /* Shia (times).json */; };
+		A54539E126A9BA180028EAD5 /* Shia (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A54539DF26A9BA180028EAD5 /* Shia (times).json */; };
+		A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */; };
+		A54539E426A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */; };
 		A5490F982550339D00EFB13F /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5490F972550339D00EFB13F /* WatchFace.swift */; };
 		A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
@@ -417,6 +421,8 @@
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
 		A54539DA26A8A92E0028EAD5 /* PrayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
+		A54539DF26A9BA180028EAD5 /* Shia (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Shia (times).json"; sourceTree = "<group>"; };
+		A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times).json"; sourceTree = "<group>"; };
 		A5490F972550339D00EFB13F /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPolarLighting.swift; sourceTree = "<group>"; };
@@ -648,8 +654,10 @@
 				A5E3606724C7571A0000A268 /* Lubavitch.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
+				A54539DF26A9BA180028EAD5 /* Shia (times).json */,
 				A5BDE78726679A6200F47416 /* Shia.json */,
 				A533798024B2333400340C0B /* Sun.json */,
+				A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
@@ -1117,6 +1125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5BDE7832667877E00F47416 /* Shia (Gregorian).json in Resources */,
+				A54539E126A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
 				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
 				A5BDE7A42667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
@@ -1125,6 +1134,7 @@
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
 				A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */,
+				A54539E426A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
 				A5BDE7A12667B66800F47416 /* Israel (Gregorian).json in Resources */,
 				A5769951259EDCC000757B0F /* Israel.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
@@ -1157,12 +1167,14 @@
 				A5BDE78826679A6200F47416 /* Shia.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
+				A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
 				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */,
+				A54539E026A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
