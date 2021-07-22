@@ -5,9 +5,9 @@
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}, "category": "Sunset"},
-        
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
+
         {"titles": {"en": "Maghrib (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Jafari"}},
         {"titles": {"en": "Isha (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Jafari"}},
         {"titles": {"en": "Fajr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Jafari"}},
