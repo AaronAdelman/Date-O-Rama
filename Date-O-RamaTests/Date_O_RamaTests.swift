@@ -89,7 +89,7 @@ class Date_O_RamaTests: XCTestCase {
     } // func testHebrewNumerals() throws
 
     func testJulianDates() throws {
-        XCTAssert(testDate.JulianDate() == 2459199.95625)
+        XCTAssert(testDate.JulianDate == 2459199.95625)
 
         examineJulianDayCalendar(code: .JulianDay, expectedResult: "2459199.956250")
         examineJulianDayCalendar(code: .ReducedJulianDay, expectedResult: "59199.956250")
@@ -361,4 +361,47 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(TimeZone(secondsFromGMT: 2 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎+2")
         XCTAssert(TimeZone(secondsFromGMT: -1 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎-1")
     } // func testExtremeTimeZoneAbbreviation() throws
+    
+    func testIslamicPrayerTimes() throws {
+        let timeZoneSeconds = 3 * 60 * 60
+
+        let dateComponents = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: TimeZone(secondsFromGMT: timeZoneSeconds), year: 2021, month: 7, day: 13, hour: 12, minute: 0, second: 0)
+        let calendar = Calendar(identifier: .gregorian)
+        let date: Date = calendar.date(from: dateComponents)!
+
+        let times = date.prayerTimesSunsetTransition(latitude: 32.088889, longitude: 34.886389, calcMethod: .Jafari, asrJuristic: .Shafii, dhuhrMinutes: 0.0, adjustHighLats: .midnight, events: [.Fajr, .Sunrise, .Dhuhr, .Asr, .Sunset, .Maghrib, .Isha])
+
+        let formatter1 = DateFormatter()
+        formatter1.locale = Locale(identifier: "en_US")
+
+        formatter1.dateStyle = .medium
+        formatter1.timeStyle = .medium
+        formatter1.timeZone = .current
+
+        var transformedTimes: Dictionary<ASAIslamicPrayerTimeEvent, String> = [:]
+        for (key, value) in times ?? [:] {
+            transformedTimes[key] = formatter1.string(from: value)
+        } // for (key, value) in times ?? [:]
+                
+        let SunriseString = transformedTimes[.Sunrise]!
+        XCTAssert(SunriseString == "Jul 13, 2021 at 5:43:57 AM", "Sunrise:  \(SunriseString)")
+
+        let MaghribString = transformedTimes[.Maghrib]!
+        XCTAssert(MaghribString == "Jul 12, 2021 at 8:05:36 PM", "Maghrib:  \(MaghribString)")
+
+        let FajrString = transformedTimes[.Fajr]!
+        XCTAssert(FajrString == "Jul 13, 2021 at 4:18:39 AM", "Fajr:  \(FajrString)")
+
+        let AsrString = transformedTimes[.Asr]!
+        XCTAssert(AsrString == "Jul 13, 2021 at 4:27:10 PM", "Asr:  \(AsrString)")
+
+        let DhuhrString = transformedTimes[.Dhuhr]!
+        XCTAssert(DhuhrString == "Jul 13, 2021 at 12:46:17 PM", "Dhuhr:  \(DhuhrString)")
+
+        let IshaString = transformedTimes[.Isha]!
+        XCTAssert(IshaString == "Jul 12, 2021 at 9:01:58 PM", "Isha:  \(IshaString)")
+
+        let SunsetString = transformedTimes[.Sunset]!
+        XCTAssert(SunsetString == "Jul 12, 2021 at 7:48:42 PM", "Sunset:  \(SunsetString)")
+    }
 } // class Date_O_RamaTests
