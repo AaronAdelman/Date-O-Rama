@@ -8,19 +8,19 @@
         {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": 0.0}, "category": "Sunrise"},
         {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
-        {"titles": {"en": "Maghrib (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Isha (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Fajr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Dhuhr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Asr (Shafii) (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Jafari"}},
-        {"titles": {"en": "Asr (Hanafi) (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Jafari"}},
+        {"titles": {"en": "Maghrib (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
+        {"titles": {"en": "Isha (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
+        {"titles": {"en": "Fajr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
+        {"titles": {"en": "Dhuhr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
+        {"titles": {"en": "Asr (Shafii) (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
+        {"titles": {"en": "Asr (Hanafi) (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
 
-        {"titles": {"en": "Maghrib (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Isha (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Fajr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Dhuhr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Asr (Shafii) (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
-        {"titles": {"en": "Asr (Hanafi) (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Maghrib (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Isha (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Fajr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Dhuhr (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Asr (Shafii) (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}, "emoji": "🇮🇷"},
+        {"titles": {"en": "Asr (Hanafi) (Tehran)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}, "emoji": "🇮🇷"},
     ]
 }
 
