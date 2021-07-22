@@ -15,6 +15,11 @@
         {"titles": {"en": "Shafii Asr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii"}, "category": "day"},
         {"titles": {"en": "Hanafi Asr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi"}, "category": "day"},
 
-
+        {"titles": {"en": "Maghrib (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib"}},
+        {"titles": {"en": "Isha (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha"}},
+        {"titles": {"en": "Fajr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr"}},
+        {"titles": {"en": "Dhuhr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr"}, "category": "day"},
+        {"titles": {"en": "Shafii Asr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii"}, "category": "day"},
+        {"titles": {"en": "Hanafi Asr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi"}, "category": "day"},
     ]
 }
