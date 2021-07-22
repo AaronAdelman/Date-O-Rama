@@ -31,6 +31,7 @@
  */
 
 import Foundation
+import CoreLocation
 
 // MARK:  - Public types
 
@@ -73,7 +74,7 @@ enum ASAIslamicPrayerTimeEvent: String, Codable {
 // MARK: - Public extension
 
 extension Date {
-    func prayerTimesMidnightTransition(latitude: Double, longitude: Double, calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, events: Array<ASAIslamicPrayerTimeEvent>) -> Dictionary<ASAIslamicPrayerTimeEvent, Date>! {
+    func prayerTimesMidnightTransition(latitude: CLLocationDegrees, longitude: CLLocationDegrees, calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, events: Array<ASAIslamicPrayerTimeEvent>) -> Dictionary<ASAIslamicPrayerTimeEvent, Date>! {
         //        debugPrint(#file, #function, year, month, day, latitude, longitude
         //        )
         
@@ -106,7 +107,7 @@ extension Date {
     ///   - adjustHighLats: Adjustment method for high latitudes
     ///   - events: An array of Islamic prayer times (specifications) to be calculated
     /// - Returns: A dictionary of the requested Islamic prayer times
-    func prayerTimesSunsetTransition(latitude: Double, longitude: Double, calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, events: Array<ASAIslamicPrayerTimeEvent>) -> Dictionary<ASAIslamicPrayerTimeEvent, Date>! {
+    func prayerTimesSunsetTransition(latitude: CLLocationDegrees, longitude: CLLocationDegrees, calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, events: Array<ASAIslamicPrayerTimeEvent>) -> Dictionary<ASAIslamicPrayerTimeEvent, Date>! {
         var previousDayEvents: Array<ASAIslamicPrayerTimeEvent> = []
         var thisDayEvents: Array<ASAIslamicPrayerTimeEvent> = []
         

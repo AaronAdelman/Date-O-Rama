@@ -17,6 +17,7 @@ enum ASATimeSpecificationType:  String, Codable {
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
     case timeChange                          = "timeChange" // Change from standard to daylight savings time or vice versa
+    case IslamicPrayerTime                   = "IslamicPrayerTime"
 } // enum ASATimeSpecificationType
 
 
@@ -50,6 +51,13 @@ struct ASADateSpecification:  Codable {
     // For solar time events
     var solarHours:  Double?
     var dayHalf:  ASATimeSpecificationDayHalf?
+    
+    // For Islamic prayer times
+    var event: ASAIslamicPrayerTimeEvent?
+    var calculationMethod: ASACalculationMethod?
+    var asrJuristicMethod: ASAJuristicMethodForAsr?
+    var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
+    var dhuhrMinutes: Double?
 } // struct ASADateSpecification
 
 
@@ -181,6 +189,8 @@ extension ASADateSpecification {
             return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, latitude: latitude, longitude: longitude, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
         case .timeChange:
             return Date()
+        case .IslamicPrayerTime:
+            return Date()
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
@@ -231,6 +241,8 @@ extension ASADateSpecification {
             return date
         case .timeChange:
             return Date()
+        case .IslamicPrayerTime:
+            return date // TODO:  May have to change!
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification

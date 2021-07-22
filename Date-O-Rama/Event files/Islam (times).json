@@ -6,26 +6,15 @@
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
         {"titles": {"en": "Sunrise"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "day"}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset (Maghrib)"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}, "category": "Sunset"},
-        {"titles": {"en": "Dhuhr"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 6.0, "dayHalf": "day"}, "category": "day"},
-
-        {"titles": {"en": "Fajr (Egyptian General Authority of Survey)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 19.5, "rising": true, "offset": 0}},
-        {"titles": {"en": "Isha (Egyptian General Authority of Survey)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 17.5, "rising": false, "offset": 0}},
+        {"titles": {"en": "Sunset"}, "startDateSpecification": {"type": "solarTimeSunriseSunset", "solarHours": 0.0, "dayHalf": "night"}, "category": "Sunset"},
         
-        {"titles": {"en": "Fajr (ISNA, Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 15.0, "rising": true, "offset": 0}},
-        {"titles": {"en": "Isha (ISNA, Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 15.0, "rising": false, "offset": 0}},
-        
-        {"titles": {"en": "Fajr (Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 12.0, "rising": true, "offset": 0}},
-        {"titles": {"en": "Isha (Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 12.0, "rising": false, "offset": 0}},
+        {"titles": {"en": "Maghrib (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib"}},
+        {"titles": {"en": "Isha (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha"}},
+        {"titles": {"en": "Fajr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr"}},
+        {"titles": {"en": "Dhuhr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr"}, "category": "day"},
+        {"titles": {"en": "Shafii Asr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii"}, "category": "day"},
+        {"titles": {"en": "Hanafi Asr (Jafari)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi"}, "category": "day"},
 
-        {"titles": {"en": "Fajr (Majlis Ugama Islam Singapura)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 20.0, "rising": true, "offset": 0}},
-        {"titles": {"en": "Isha (Majlis Ugama Islam Singapura; University of Islamic Sciences, Karachi; Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 18.0, "rising": false, "offset": 0}},
-
-        {"titles": {"en": "Fajr (Muslim World League; University of Islamic Sciences, Karachi; Islamic Organisations Union of France)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 18.0, "rising": true, "offset": 0}},
-        {"titles": {"en": "Isha (Muslim World League)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 17.0, "rising": false, "offset": 0}},
-        
-        {"titles": {"en": "Fajr (Umm Al Qura)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 18.5, "rising": true, "offset": 0}},
-        {"titles": {"en": "Isha (Umm Al Qura)"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.0, "rising": false, "offset": 5400}},
 
     ]
 }

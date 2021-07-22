@@ -109,7 +109,7 @@ extension ASAEvent {
             return true
         }
         
-        if self.endDate <= startDate {
+        if self.endDate != nil && self.endDate <= startDate {
             return false
         }
         

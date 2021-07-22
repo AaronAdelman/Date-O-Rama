@@ -151,7 +151,19 @@ class ASAEventCalendar {
         if endDateSpecification == nil {
             // One-day and one-instant events
             let matches = self.matchOneDayOrInstant(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
-            return (matches, nil, nil)
+            
+            if matches && tweakedStartDateSpecification.type == .IslamicPrayerTime {
+                if tweakedStartDateSpecification.event == nil {
+                    // Major error!
+                    debugPrint(#file, #function, "Missing Islamic prayer event!")
+                    return (false, nil, nil)
+                }
+                let events = date.prayerTimesSunsetTransition(latitude: locationData.location.coordinate.latitude, longitude: locationData.location.coordinate.longitude, calcMethod: tweakedStartDateSpecification.calculationMethod ?? .Jafari, asrJuristic: tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii, dhuhrMinutes: tweakedStartDateSpecification.dhuhrMinutes ?? 0.0, adjustHighLats: tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight, events: [tweakedStartDateSpecification.event!])
+                let startDate = events![tweakedStartDateSpecification.event!]
+                return (matches, startDate, startDate)
+            } else {
+                return (matches, nil, nil)
+            }
         }
         
         // Now we are clearly dealing with an event with specified start and end dates
