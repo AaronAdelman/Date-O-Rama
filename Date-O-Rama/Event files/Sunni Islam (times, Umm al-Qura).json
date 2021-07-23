@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
         {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
         {"titles": {"en": "Maghrib", "ar": "صلاة المغرب‎", "he": "צלאת אל-מגרב"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}, "emoji": "🇸🇦"},
         {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}, "emoji": "🇸🇦"},
