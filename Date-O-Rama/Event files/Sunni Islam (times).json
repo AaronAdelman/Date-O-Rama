@@ -11,7 +11,7 @@
         {"titles": {"en": "Maghrib (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Maghrib", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         {"titles": {"en": "Isha (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         {"titles": {"en": "Fajr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
-        {"titles": {"en": "Dhuhr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}},
+        {"titles": {"en": "Dhuhr (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         {"titles": {"en": "Asr (Shafii) (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         {"titles": {"en": "Asr (Hanafi) (Karachi)"}, "startDateSpecification": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         
