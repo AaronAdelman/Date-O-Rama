@@ -369,7 +369,8 @@ class Date_O_RamaTests: XCTestCase {
         let calendar = Calendar(identifier: .gregorian)
         let date: Date = calendar.date(from: dateComponents)!
 
-        let times = date.prayerTimesSunsetTransition(latitude: 32.088889, longitude: 34.886389, calcMethod: .Jafari, asrJuristic: .Shafii, dhuhrMinutes: 0.0, adjustHighLats: .midnight, events: [.Fajr, .Sunrise, .Dhuhr, .Asr, .Sunset, .Maghrib, .Isha])
+        let events: [ASAIslamicPrayerTimeEvent] = [.Fajr, .Sunrise, .Dhuhr, .Asr, .Sunset, .Maghrib, .Isha]
+        let times = date.prayerTimesSunsetTransition(latitude: 32.088889, longitude: 34.886389, calcMethod: .Jafari, asrJuristic: .Shafii, dhuhrMinutes: 0.0, adjustHighLats: .midnight, events: events)
 
         let formatter1 = DateFormatter()
         formatter1.locale = Locale(identifier: "en_US")

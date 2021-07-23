@@ -356,7 +356,7 @@ func computeMidDay(t: Double, JDate: Double) -> Double {
 }
 
 // compute time for a given angle G
-func computeTime(G: Double, andTime t: Double, JDate: Double, lat: Double, lng: Double) -> Double {
+func computeTime(G: Double, andTime t: Double, JDate: Double, lat: CLLocationDegrees, lng: CLLocationDegrees) -> Double {
     let D: Double = sunPosition(jd: (JDate + t)).declinationAngleOfSun
     let Z:Double = computeMidDay(t: t, JDate: JDate)
     let V:Double = (acos(degrees: (-sin(degrees: G) - (sin(degrees: D) * sin(degrees: lat))) / (cos(degrees: D) * cos(degrees: lat)))) / 15.0
@@ -366,7 +366,7 @@ func computeTime(G: Double, andTime t: Double, JDate: Double, lat: Double, lng: 
 
 // compute the time of Asr
 // Shafii: step=1, Hanafi: step=2
-func computeAsr(step:Double, andTime t:Double, JDate: Double, lat: Double, lng: Double) -> Double {
+func computeAsr(step:Double, andTime t:Double, JDate: Double, lat: CLLocationDegrees, lng: CLLocationDegrees) -> Double {
     let D: Double = sunPosition(jd: (JDate + t)).declinationAngleOfSun
     let G:Double = -arccot(degrees: (step + tan(degrees: abs(lat - D))))
     return computeTime(G: G, andTime:t, JDate: JDate, lat: lat, lng: lng)
@@ -384,7 +384,7 @@ func timeDiff(time1:Double, andTime2 time2:Double) -> Double {
 // MARK:  -  Compute Prayer Times
 
 // compute prayer times at given julian date
-func computeTime(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, JDate: Double, lat: Double, lng: Double, event: ASAIslamicPrayerTimeEvent) -> Double! {
+func computeTime(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, JDate: Double, lat: CLLocationDegrees, lng: CLLocationDegrees, event: ASAIslamicPrayerTimeEvent) -> Double! {
     let t: Dictionary<ASAIslamicPrayerTimeEvent, Double> =  //default times
         [
             .Fajr: 5.0 / 24.0,
@@ -430,7 +430,7 @@ func computeTime(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMetho
     } // switch event
 }
 
-func computeDates(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, JDate: Double, lat: Double, lng: Double, baseDate: Date, events: Array<ASAIslamicPrayerTimeEvent>) -> Dictionary<ASAIslamicPrayerTimeEvent, Date>! {
+func computeDates(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMethodForAsr, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, JDate: Double, lat: CLLocationDegrees, lng: CLLocationDegrees, baseDate: Date, events: Array<ASAIslamicPrayerTimeEvent>) -> Dictionary<ASAIslamicPrayerTimeEvent, Date>! {
     // We need to make sure events that are not requested but needed to compute other events are automagically included.
     var emendedEvents = events
     if emendedEvents.contains(.Isha) && !emendedEvents.contains(.Maghrib) {
@@ -466,13 +466,13 @@ func computeDates(calcMethod: ASACalculationMethod, asrJuristic: ASAJuristicMeth
 }
 
 // adjust times in a prayer time array
-func adjustTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>!, calcMethod: ASACalculationMethod, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, lat: Double, lng: Double) -> Dictionary<ASAIslamicPrayerTimeEvent, Double>! {
+func adjustTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>!, calcMethod: ASACalculationMethod, dhuhrMinutes: Double, adjustHighLats: ASAAdjustingMethodForHigherLatitudes, lat: CLLocationDegrees, lng: CLLocationDegrees) -> Dictionary<ASAIslamicPrayerTimeEvent, Double>! {
     var time: Double = 0, Dtime: Double, Dtime1: Double, Dtime2: Double
     
     var result: Dictionary<ASAIslamicPrayerTimeEvent, Double> = times
     
     for i in result.keys {
-        time = result[i]! + (0.0 - lng / 15.0)
+        time = result[i]! - lng / 15.0
         
         result[i] = time
     }
@@ -524,9 +524,9 @@ func adjustHighLatTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>, ca
     if result[.Fajr] != nil {
         // Adjust Fajr
         let fajrTime: Double = times[.Fajr]!
-        let obj0:Double = calcMethod.methodParams.fajrDegrees
+        let fajrDegrees:Double = calcMethod.methodParams.fajrDegrees
         
-        let FajrDiff:Double = nightPortion(angle: obj0, adjustHighLats: adjustHighLats) * nightTime
+        let FajrDiff:Double = nightPortion(angle: fajrDegrees, adjustHighLats: adjustHighLats) * nightTime
         
         if fajrTime.isNaN || (timeDiff(time1: fajrTime, andTime2:sunriseTime) > FajrDiff) {
             result[.Sunrise] = sunriseTime - FajrDiff

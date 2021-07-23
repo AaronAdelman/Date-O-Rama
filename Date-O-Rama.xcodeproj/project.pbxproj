@@ -323,6 +323,7 @@
 		A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
 		A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
 		A5E61C6D263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
+		A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
@@ -1467,6 +1468,7 @@
 				A557AD1425DD495400A264B6 /* EKEventExtensions.swift in Sources */,
 				A557AD5625DD4BA200A264B6 /* ASATimeFormat.swift in Sources */,
 				A557AD6825DD4F3700A264B6 /* StringExtensions.swift in Sources */,
+				A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */,
 				A557ACDF25DD488B00A264B6 /* ASAJulianDayCalendar.swift in Sources */,
 				A59D80422600C59200FD8BBF /* ASARowArrayKey.swift in Sources */,
 				A54539DE26A990040028EAD5 /* Trigonometry.swift in Sources */,
