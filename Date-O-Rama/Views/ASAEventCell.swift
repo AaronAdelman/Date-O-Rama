@@ -36,18 +36,29 @@ struct ASAEventCell:  View {
 
     var body: some View {
         let eventSymbol = event.symbol
-        let symbolPrefix = eventSymbol != nil ? eventSymbol! + " " : ""
+//        let symbolPrefix = eventSymbol != nil ? eventSymbol! + " " : ""
 
         #if os(watchOS)
         HStack {
             ASAColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
-                Text(symbolPrefix + event.title)
-                    .font(.callout)
-                    .bold()
-                    .modifier(ASAScalable(lineLimit: 2))
-                                
+//                Text(symbolPrefix + event.title)
+//                    .font(.callout)
+//                    .bold()
+//                    .modifier(ASAScalable(lineLimit: 2))
+                HStack {
+                    if eventSymbol != nil {
+                        Text(eventSymbol!)
+                            .font(.callout)
+                            .bold()
+                            .modifier(ASAScalable(lineLimit: 2))
+                    }
+                    Text(event.title)
+                        .font(.callout)
+                        .bold()
+                        .modifier(ASAScalable(lineLimit: 2))
+                }
                 if !event.isAllDay {
                     ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
                     
@@ -84,15 +95,27 @@ struct ASAEventCell:  View {
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
-                let symbolifiedTitle: String = symbolPrefix + event.title
-                if self.compact {
-                    Text(symbolifiedTitle)
-                        .font(.callout)
-                        .bold()
-                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
-                } else {
-                    Text(symbolifiedTitle)
-                        .font(.headline)
+//                let symbolifiedTitle: String = symbolPrefix + event.title
+                let TITLE_FONT: Font = self.compact ? .callout.bold() : .headline
+                
+//                if self.compact {
+//                    Text(symbolifiedTitle)
+//                        .font(.callout)
+//                        .bold()
+//                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+//                } else {
+//                    Text(symbolifiedTitle)
+//                        .font(.headline)
+//                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+//                }
+                HStack {
+                    if eventSymbol != nil {
+                        Text(eventSymbol!)
+                            .font(TITLE_FONT)
+                            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+                    }
+                    Text(event.title)
+                        .font(TITLE_FONT)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
                 
