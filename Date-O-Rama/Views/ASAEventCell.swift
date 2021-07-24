@@ -36,17 +36,12 @@ struct ASAEventCell:  View {
 
     var body: some View {
         let eventSymbol = event.symbol
-//        let symbolPrefix = eventSymbol != nil ? eventSymbol! + " " : ""
 
         #if os(watchOS)
         HStack {
             ASAColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
-//                Text(symbolPrefix + event.title)
-//                    .font(.callout)
-//                    .bold()
-//                    .modifier(ASAScalable(lineLimit: 2))
                 HStack {
                     if eventSymbol != nil {
                         Text(eventSymbol!)
@@ -70,44 +65,18 @@ struct ASAEventCell:  View {
         } // HStack
         #else
         HStack {
-//            if isForClock {
-//                #if targetEnvironment(macCatalyst)
-//                let SPACER_WIDTH: CGFloat = 16.0
-//                #else
-//                let SPACER_WIDTH: CGFloat = 8.0
-//                #endif
-//
-//                Spacer()
-//                    .frame(width: SPACER_WIDTH)
-//
-//                ASAColorCircle(color: event.color)
-//            }
-            
             ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
 
             if self.eventsViewShouldShowSecondaryDates {
                 ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
-//            if !isForClock {
-                ASAColorRectangle(color: event.color)
-//            }
+            ASAColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
-//                let symbolifiedTitle: String = symbolPrefix + event.title
                 let TITLE_FONT: Font = self.compact ? .callout.bold() : .headline
                 
-//                if self.compact {
-//                    Text(symbolifiedTitle)
-//                        .font(.callout)
-//                        .bold()
-//                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
-//                } else {
-//                    Text(symbolifiedTitle)
-//                        .font(.headline)
-//                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
-//                }
                 HStack {
                     if eventSymbol != nil {
                         Text(eventSymbol!)
@@ -126,8 +95,6 @@ struct ASAEventCell:  View {
                 }
 
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
-
-//                Rectangle().frame(height:  CGFloat(CGFloat(now.timeIntervalSince1970 - now.timeIntervalSince1970)))
             } // VStack
         } // HStack
         #endif
@@ -139,7 +106,6 @@ struct ASAEventCell:  View {
 
 struct ASAEventCellCalendarTitle:  View {
     var event:  ASAEventCompatible
-//    var color:  Color
     var isForClock:  Bool
 
     #if os(watchOS)
