@@ -514,7 +514,7 @@
             "titles":  {"en":  "Celebration:  Birth of Ali al-Hadi, 212 AH"},
             "startDateSpecification":  { "type":  "allDay",
                 "month":  12, "day":  15
-            }
+            }, "category": "birthday"
         },
         {
             "titles":  {"en":  "Mourning:  Martyrdom of Zaynab bint Ali"},

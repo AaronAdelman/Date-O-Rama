@@ -42,7 +42,7 @@ struct ASAEventCell:  View {
             ASAColorRectangle(color: event.color)
 
             VStack(alignment: .leading) {
-                HStack {
+                HStack(alignment: .top) {
                     if eventSymbol != nil {
                         Text(eventSymbol!)
                             .font(.callout)
@@ -77,7 +77,7 @@ struct ASAEventCell:  View {
                 let LINE_LIMIT = 3
                 let TITLE_FONT: Font = self.compact ? .callout.bold() : .headline
                 
-                HStack {
+                HStack(alignment: .top) {
                     if eventSymbol != nil {
                         Text(eventSymbol!)
                             .font(TITLE_FONT)
