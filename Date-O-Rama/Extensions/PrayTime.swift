@@ -506,8 +506,7 @@ func adjustTimes(times: Dictionary<ASAIslamicPrayerTimeEvent, Double>!, calcMeth
 }
 
 func adjustTimeDate(time: Double!, baseDate: Date) -> Date! {
-    let ADJUSTMENT = -15.0 // The original code had an adjustment of half a minute for rounding purposes.
-    let resultDate = baseDate.addingTimeInterval(time * 60.0 * 60.0 + ADJUSTMENT)
+    let resultDate = baseDate.addingTimeInterval(time * 60.0 * 60.0)
     return resultDate
 }
 
