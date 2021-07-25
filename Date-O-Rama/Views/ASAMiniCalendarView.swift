@@ -32,7 +32,7 @@ struct ASAOrdinaryCell:  View {
     
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
-            return number.HebrewNumeral
+            return number.shortHebrewNumeral
         }
         
         return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""
@@ -59,7 +59,7 @@ struct ASAAccentedCell:  View {
     
     fileprivate func formattedNumber() -> String {
         if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
-            return number.HebrewNumeral
+            return number.shortHebrewNumeral
         }
         
         return numberFormatter.string(from: NSNumber(integerLiteral: number)) ?? ""

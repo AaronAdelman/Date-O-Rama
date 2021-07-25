@@ -39,155 +39,161 @@ extension Int {
 // MARK:  -
 
 extension Int {
+    var shortHebrewNumeral: String {
+        if self <= 0 || self >= 999 {
+            return "\(self)"
+        }
+        var result:  String = ""
+        var temp = self
+        let t = 400
+        while temp >= t {
+            result += "ת"
+            temp -= t
+        } // while temp >= 400
+
+        let ʃ = 300
+        if temp >= ʃ {
+            result += "ש"
+            temp -= ʃ
+        }
+
+        let r = 200
+        if temp >= r {
+            result += "ר"
+            temp -= r
+        }
+
+        let q = 100
+        if temp >= q {
+            result += "ק"
+            temp -= q
+        }
+
+        let t͡s = 90
+        if temp >= t͡s {
+            result += "צ"
+            temp -= t͡s
+        }
+
+        let p = 80
+        if temp >= p {
+            result += "פ"
+            temp -= p
+        }
+
+        let ʕ = 70
+        if temp >= ʕ {
+            result += "ע"
+            temp -= ʕ
+        }
+
+        let s = 60
+        if temp >= s {
+            result += "ס"
+            temp -= s
+        }
+
+        let n = 50
+        if temp >= n {
+            result += "נ"
+            temp -= n
+        }
+
+        let m = 40
+        if temp >= m {
+            result += "מ"
+            temp -= m
+        }
+
+        let l = 30
+        if temp >= l {
+            result += "ל"
+            temp -= l
+        }
+
+        let k = 20
+        if temp >= k {
+            result += "כ"
+            temp -= k
+        }
+
+        let tʲz = 16
+        let tʲw = 15
+
+        if temp == tʲz {
+            result += "טז"
+            temp -= tʲz
+        } else if temp == tʲw {
+            result += "טו"
+            temp -= tʲw
+        } else {
+            let j = 10
+            if temp >= j {
+                result += "י"
+                temp -= j
+            }
+
+            let tʲ = 9
+            if temp >= tʲ {
+                result += "ט"
+                temp -= tʲ
+            }
+
+            let ħ = 8
+            if temp >= ħ {
+                result += "ח"
+                temp -= ħ
+            }
+
+            let z = 7
+            if temp >= z {
+                result += "ז"
+                temp -= z
+            }
+
+            let w = 6
+            if temp >= w {
+                result += "ו"
+                temp -= w
+            }
+
+            let h = 5
+            if temp >= h {
+                result += "ה"
+                temp -= h
+            }
+
+            let d = 4
+            if temp >= d {
+                result += "ד"
+                temp -= d
+            }
+
+            let g = 3
+            if temp >= g {
+                result += "ג"
+                temp -= g
+            }
+
+            let b = 2
+            if temp >= b {
+                result += "ב"
+                temp -= b
+            }
+
+            let ʔ = 1
+            if temp >= ʔ {
+                result += "א"
+                temp -= ʔ
+            }
+        }
+        
+        return result
+    } // var shortHebrewNumeral
+    
     var HebrewNumeral:  String {
         get {
-            if self <= 0 || self >= 999 {
-                return "\(self)"
-            }
-            var result:  String = ""
-            var temp = self
-            let t = 400
-            while temp >= t {
-                result += "ת"
-                temp -= t
-            } // while temp >= 400
-
-            let ʃ = 300
-            if temp >= ʃ {
-                result += "ש"
-                temp -= ʃ
-            }
-
-            let r = 200
-            if temp >= r {
-                result += "ר"
-                temp -= r
-            }
-
-            let q = 100
-            if temp >= q {
-                result += "ק"
-                temp -= q
-            }
-
-            let t͡s = 90
-            if temp >= t͡s {
-                result += "צ"
-                temp -= t͡s
-            }
-
-            let p = 80
-            if temp >= p {
-                result += "פ"
-                temp -= p
-            }
-
-            let ʕ = 70
-            if temp >= ʕ {
-                result += "ע"
-                temp -= ʕ
-            }
-
-            let s = 60
-            if temp >= s {
-                result += "ס"
-                temp -= s
-            }
-
-            let n = 50
-            if temp >= n {
-                result += "נ"
-                temp -= n
-            }
-
-            let m = 40
-            if temp >= m {
-                result += "מ"
-                temp -= m
-            }
-
-            let l = 30
-            if temp >= l {
-                result += "ל"
-                temp -= l
-            }
-
-            let k = 20
-            if temp >= k {
-                result += "כ"
-                temp -= k
-            }
-
-            let tʲz = 16
-            let tʲw = 15
-
-            if temp == tʲz {
-                result += "טז"
-                temp -= tʲz
-            } else if temp == tʲw {
-                result += "טו"
-                temp -= tʲw
-            } else {
-                let j = 10
-                if temp >= j {
-                    result += "י"
-                    temp -= j
-                }
-
-                let tʲ = 9
-                if temp >= tʲ {
-                    result += "ט"
-                    temp -= tʲ
-                }
-
-                let ħ = 8
-                if temp >= ħ {
-                    result += "ח"
-                    temp -= ħ
-                }
-
-                let z = 7
-                if temp >= z {
-                    result += "ז"
-                    temp -= z
-                }
-
-                let w = 6
-                if temp >= w {
-                    result += "ו"
-                    temp -= w
-                }
-
-                let h = 5
-                if temp >= h {
-                    result += "ה"
-                    temp -= h
-                }
-
-                let d = 4
-                if temp >= d {
-                    result += "ד"
-                    temp -= d
-                }
-
-                let g = 3
-                if temp >= g {
-                    result += "ג"
-                    temp -= g
-                }
-
-                let b = 2
-                if temp >= b {
-                    result += "ב"
-                    temp -= b
-                }
-
-                let ʔ = 1
-                if temp >= ʔ {
-                    result += "א"
-                    temp -= ʔ
-                }
-            }
+            var result = self.shortHebrewNumeral
 
             if result.count == 1 {
                 result += "׳"
