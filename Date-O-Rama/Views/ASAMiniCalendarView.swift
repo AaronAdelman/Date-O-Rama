@@ -26,8 +26,6 @@ struct ASABlankCell:  View {
 struct ASAOrdinaryCell:  View {
     var number:  Int
     var numberFormatter:  NumberFormatter
-//    var localeIdentifier:  String
-//    var calendarCode:  ASACalendarCode
     var shouldNoteAsWeekend: Bool
     var numberFormat: ASAMiniCalendarNumberFormat
     
@@ -53,8 +51,6 @@ struct ASAOrdinaryCell:  View {
 struct ASAAccentedCell:  View {
     var number:  Int
     var numberFormatter:  NumberFormatter
-//    var localeIdentifier:  String
-//    var calendarCode:  ASACalendarCode
     var shouldNoteAsWeekend: Bool
     var numberFormat: ASAMiniCalendarNumberFormat
     
@@ -127,10 +123,8 @@ struct ASAMiniCalendarView:  View {
     var daysInMonth:  Int
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
-//    var calendarCode:  ASACalendarCode
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
-//    var regionCode: String?
     var numberFormat: ASAMiniCalendarNumberFormat
     
     var weekdayOfDay1:  Int {
@@ -188,8 +182,6 @@ struct ASAMiniCalendarView:  View {
     } // var characterDirection
     
     var body: some View {
-//        let canNoteWeekendDays: Bool = (regionCode == Locale.current.regionCode)
-        
         let gridFirstDay = gridFirstDay()
         
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
@@ -197,7 +189,6 @@ struct ASAMiniCalendarView:  View {
                 index
                 in
                 ASAWeekdayCell(symbol: processedWeekdaySymbols[index].symbol, isWeekend:
-//                                canNoteWeekendDays &&
                                 weekendDays.contains(index + 1))
             }
             
@@ -205,12 +196,10 @@ struct ASAMiniCalendarView:  View {
             ForEach(range, id: \.self) {
                 let shouldNoteAsWeekEnd: Bool = {
                     var temp = false
-//                    if canNoteWeekendDays {
-                        //                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
-                        if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
-                            temp = true
-                        }
-//                    }
+                    //                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
+                    if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
+                        temp = true
+                    }
                     return temp
                 }($0)
                 
@@ -219,12 +208,10 @@ struct ASAMiniCalendarView:  View {
                 } else if $0 == day {
                     ASAAccentedCell(number: $0,
                                     numberFormatter: numberFormatter,
-//                                    localeIdentifier: localeIdentifier, calendarCode: calendarCode,
                                     shouldNoteAsWeekend: shouldNoteAsWeekEnd, numberFormat: numberFormat)
                 } else {
                     ASAOrdinaryCell(number: $0,
                                     numberFormatter: numberFormatter,
-//                                    localeIdentifier: localeIdentifier, calendarCode: calendarCode,
                                     shouldNoteAsWeekend: shouldNoteAsWeekEnd, numberFormat: numberFormat)
                 }
             }
@@ -237,9 +224,7 @@ struct ASAMiniCalendarView:  View {
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
         ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US",
-//                            calendarCode: .Gregorian,
                             weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7],
-//                            regionCode: REGION_CODE_Israel,
                             numberFormat: .system)
     }
 }

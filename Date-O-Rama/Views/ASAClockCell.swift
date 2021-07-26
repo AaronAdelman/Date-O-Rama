@@ -76,7 +76,6 @@ struct ASAClockCellBody:  View {
     
     var shouldShowTime:  Bool
     var shouldShowMiniCalendar:  Bool
-    //    var shouldShowTimeToNextDay:  Bool
     var canSplitTimeFromDate:  Bool
     
     var isForComplications:  Bool
@@ -90,8 +89,6 @@ struct ASAClockCellBody:  View {
             return self.sizeClass == .compact
         } // get
     } // var compact
-    
-//    @State private var showingEvents:  Bool = true
     #endif
     
     fileprivate func shouldShowMiniClock() -> Bool {
@@ -158,9 +155,7 @@ struct ASAClockCellBody:  View {
                 if processedRow.supportsMonths && shouldShowMiniCalendar {
                     Spacer()
                     ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier,
-//                                        calendarCode: processedRow.calendarCode,
                                         weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols, weekendDays: processedRow.weekendDays,
-//                                        regionCode: processedRow.regionCode,
                                         numberFormat: processedRow.miniCalendarNumberFormat)
                 }
                 
@@ -190,14 +185,12 @@ struct ASAClockEventsSubcell: View {
         let numberOfEvents = processedRow.events.count
         let formatString : String = NSLocalizedString("n events today", comment: "")
         let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
-//        let visibilityString = eventVisibility.emoji + " " + eventVisibility.showingText
         if numberOfEvents > 0 {
             NavigationLink(destination:             ASAClockCellEventVisibilityChooserView(selectedVisibility: $eventVisibility)) {
                 HStack {
                     Image(systemName: "rectangle.stack")
                     Text(numberOfEventsString)
                     Spacer()
-//                    Text(visibilityString)
                     Image(systemName: eventVisibility.symbolName)
                     Text(eventVisibility.showingText)
                 } // HStack
