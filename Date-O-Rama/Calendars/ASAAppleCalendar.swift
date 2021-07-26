@@ -34,7 +34,7 @@ class ASAAppleCalendar:  ASACalendar {
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier:  localeIdentifier)
+        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier)
 
         let timeZone = locationData.timeZone
         self.dateFormatter.timeZone = timeZone
@@ -252,7 +252,7 @@ class ASAAppleCalendar:  ASACalendar {
     public var transitionType:  ASATransitionType = .midnight
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier:  localeIdentifier)
+        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier)
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 

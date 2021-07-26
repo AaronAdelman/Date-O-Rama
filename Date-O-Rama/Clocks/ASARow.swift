@@ -455,7 +455,7 @@ extension ASARow {
     }
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat {
-        return self.calendar.miniCalendarNumberFormat(locale: Locale(identifier: self.localeIdentifier))
+        return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
     } // var miniCalendarNumberFormat
 } // extension ASARow
 

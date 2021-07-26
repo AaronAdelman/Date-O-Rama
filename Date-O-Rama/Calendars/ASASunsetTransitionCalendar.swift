@@ -212,7 +212,7 @@
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.minimumFractionDigits = 4
-        numberFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
+        numberFormatter.locale = Locale.desiredLocale(localeIdentifier)
         var revisedHours: Double
         let CUTOFF = 11.9999
         if hours > CUTOFF && hours < 12.0 {
@@ -251,7 +251,7 @@
         var result = ""
         let numberFormatter = NumberFormatter()
         numberFormatter.maximumFractionDigits = 0
-        numberFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
+        numberFormatter.locale = Locale.desiredLocale(localeIdentifier)
         numberFormatter.minimumIntegerDigits = minimumHourDigits
         let hourString = numberFormatter.string(from: NSNumber(value:  integralHours))
         numberFormatter.minimumIntegerDigits = minimumMinuteDigits
@@ -263,7 +263,7 @@
     } // func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String
 
     func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
-        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
+        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier)
 
         self.dateFormatter.timeZone = timeZone
 
@@ -600,7 +600,7 @@
     }
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier: localeIdentifier)
+        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier)
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 

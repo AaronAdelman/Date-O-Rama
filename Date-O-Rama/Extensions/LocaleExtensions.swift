@@ -9,11 +9,11 @@
 import Foundation
 
 extension Locale {
-    static func desiredLocale(localeIdentifier:  String) -> Locale {
-        if localeIdentifier == "" {
+    static func desiredLocale(_ identifier:  String) -> Locale {
+        if identifier == "" {
             return Locale.current // autoupdatingCurrent makes the date formatter default to the Gregorian calendar.
         } else {
-            return Locale(identifier: localeIdentifier)
+            return Locale(identifier: identifier)
         }
     }
 }
