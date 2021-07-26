@@ -246,4 +246,8 @@ class ASAISO8601Calendar:  ASACalendar {
     func weekendDays(for regionCode: String?) -> Array<Int> {
         self.ApplesCalendar.weekendDays(for: regionCode)
     } // func weekendDays(for regionCode: String?) -> Array<Int>
+    
+    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+        return .system
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
 } // class ASAISO8601Calendar

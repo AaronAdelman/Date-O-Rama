@@ -337,4 +337,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     func weekendDays(for regionCode: String?) -> Array<Int> {
         return []
     }
+    
+    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+        return .system
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
 } // class ASAJulianDayCalendar

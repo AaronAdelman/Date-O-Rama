@@ -17,6 +17,11 @@ public enum ASATransitionType {
     case noon
 } // enum ASATransitionType
 
+public enum ASAMiniCalendarNumberFormat {
+    case system
+    case shortHebrew
+} // public enum ASAMiniCalendarNumberFormat
+
 
 // MARK: -
 
@@ -63,11 +68,17 @@ protocol ASACalendar {
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
     var daysPerWeek:  Int? { get }
 
+    
     // MARK:  - Symbols
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
     
+    
     // MARK:  - Workdays and weekends
     func weekendDays(for regionCode: String?) -> Array<Int>
+    
+    
+    // MARK:  - Mini-calendars
+    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
 } // protocol ASACalendar
 
 

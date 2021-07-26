@@ -26,12 +26,13 @@ struct ASABlankCell:  View {
 struct ASAOrdinaryCell:  View {
     var number:  Int
     var numberFormatter:  NumberFormatter
-    var localeIdentifier:  String
-    var calendarCode:  ASACalendarCode
+//    var localeIdentifier:  String
+//    var calendarCode:  ASACalendarCode
     var shouldNoteAsWeekend: Bool
+    var numberFormat: ASAMiniCalendarNumberFormat
     
     fileprivate func formattedNumber() -> String {
-        if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
+        if numberFormat == .shortHebrew {
             return number.shortHebrewNumeral
         }
         
@@ -51,14 +52,14 @@ struct ASAOrdinaryCell:  View {
 
 struct ASAAccentedCell:  View {
     var number:  Int
-    //    var font:  Font
     var numberFormatter:  NumberFormatter
-    var localeIdentifier:  String
-    var calendarCode:  ASACalendarCode
+//    var localeIdentifier:  String
+//    var calendarCode:  ASACalendarCode
     var shouldNoteAsWeekend: Bool
+    var numberFormat: ASAMiniCalendarNumberFormat
     
     fileprivate func formattedNumber() -> String {
-        if calendarCode.isHebrewCalendar && localeIdentifier.hasPrefix("he") {
+        if numberFormat == .shortHebrew {
             return number.shortHebrewNumeral
         }
         
@@ -126,10 +127,11 @@ struct ASAMiniCalendarView:  View {
     var daysInMonth:  Int
     var numberFormatter:  NumberFormatter
     var localeIdentifier:  String
-    var calendarCode:  ASACalendarCode
+//    var calendarCode:  ASACalendarCode
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
-    var regionCode: String?
+//    var regionCode: String?
+    var numberFormat: ASAMiniCalendarNumberFormat
     
     var weekdayOfDay1:  Int {
         get {
@@ -216,10 +218,14 @@ struct ASAMiniCalendarView:  View {
                     ASABlankCell()
                 } else if $0 == day {
                     ASAAccentedCell(number: $0,
-                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekend: shouldNoteAsWeekEnd)
+                                    numberFormatter: numberFormatter,
+//                                    localeIdentifier: localeIdentifier, calendarCode: calendarCode,
+                                    shouldNoteAsWeekend: shouldNoteAsWeekEnd, numberFormat: numberFormat)
                 } else {
                     ASAOrdinaryCell(number: $0,
-                                    numberFormatter: numberFormatter, localeIdentifier: localeIdentifier, calendarCode: calendarCode, shouldNoteAsWeekend: shouldNoteAsWeekEnd)
+                                    numberFormatter: numberFormatter,
+//                                    localeIdentifier: localeIdentifier, calendarCode: calendarCode,
+                                    shouldNoteAsWeekend: shouldNoteAsWeekEnd, numberFormat: numberFormat)
                 }
             }
         }
@@ -230,6 +236,10 @@ struct ASAMiniCalendarView:  View {
 
 struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US", calendarCode: .Gregorian, weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7], regionCode: REGION_CODE_Israel)
+        ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US",
+//                            calendarCode: .Gregorian,
+                            weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7],
+//                            regionCode: REGION_CODE_Israel,
+                            numberFormat: .system)
     }
 }

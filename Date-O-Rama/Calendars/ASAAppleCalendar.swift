@@ -263,4 +263,12 @@ class ASAAppleCalendar:  ASACalendar {
     func weekendDays(for regionCode: String?) -> Array<Int> {
         self.ApplesCalendar.weekendDays(for: regionCode)
     } // func weekendDays(for regionCode: String?) -> Array<Int>
+    
+    func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
+        if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {
+            return .shortHebrew
+        }
+        
+        return .system
+    } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
 } // class ASAAppleCalendar

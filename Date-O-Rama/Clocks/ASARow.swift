@@ -453,6 +453,10 @@ extension ASARow {
     var daysPerWeek:  Int? {
         return self.calendar.daysPerWeek
     }
+    
+    var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat {
+        return self.calendar.miniCalendarNumberFormat(locale: Locale(identifier: self.localeIdentifier))
+    } // var miniCalendarNumberFormat
 } // extension ASARow
 
 

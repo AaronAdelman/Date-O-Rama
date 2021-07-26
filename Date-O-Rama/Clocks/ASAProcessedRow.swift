@@ -51,6 +51,8 @@ struct ASAProcessedRow {
     
     var weekendDays: Array<Int>
     var regionCode: String?
+    
+    var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
 
     init(row:  ASARow, now:  Date) {
         self.row = row
@@ -127,6 +129,7 @@ struct ASAProcessedRow {
         self.startOfNextDay   = startOfNextDay
         self.weekendDays = row.weekendDays
         self.regionCode = row.locationData.ISOCountryCode
+        self.miniCalendarNumberFormat = row.miniCalendarNumberFormat
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow
 
