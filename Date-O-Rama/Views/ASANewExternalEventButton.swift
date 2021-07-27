@@ -24,7 +24,7 @@ struct ASANewExternalEventButton: View {
                 }, label:  {
                     ASANewExternalEventButtonLabel()            .foregroundColor(.accentColor)
                 })
-            .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+            .sheet(isPresented:  $showingEventEditView) {
                 ASANewEKEventView(startDate: now, endDate: now)
                     .frame(minWidth:  400.0, minHeight:  600.0)
             }
