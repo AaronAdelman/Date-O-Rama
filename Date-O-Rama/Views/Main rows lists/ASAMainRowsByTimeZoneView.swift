@@ -48,16 +48,16 @@ struct ASAMainRowsByTimeZoneView:  View {
             Section(header:  Text(self.processedRowsByTimeZone[key]![0].timeZoneString).font(Font.headlineMonospacedDigit)
                         .minimumScaleFactor(0.5).lineLimit(1)
             ) {
-                ForEach(self.processedRowsByTimeZone[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
-                    processedRow
-                    in
+                let sortedProcessedRows: [ASAProcessedRow] = self.processedRowsByTimeZone[key]!.sorted(secondaryGroupingOption)
+                ForEach(0..<sortedProcessedRows.count) {
+                    let processedRow = sortedProcessedRows[$0]
                     
                     #if os(watchOS)
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, isForComplications: false)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: false, isForComplications: false, indexIsOdd: false)
                     #else
-                    // Hack courtesy of https://nukedbit.dev/hide-disclosure-arrow-indicator-on-swiftui-list/
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
-                    ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility)
+                    let indexIsOdd = $0 % 2 == 1
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: false, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility, indexIsOdd: indexIsOdd)
                     #endif
                 }
             }

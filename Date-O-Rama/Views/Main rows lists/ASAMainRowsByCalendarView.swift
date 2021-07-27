@@ -26,15 +26,17 @@ struct ASAMainRowsByCalendarView:  View {
             key
             in
             Section(header: Text(verbatim: key).font(Font.headlineMonospacedDigit)) {
-                ForEach(processedRows[key]!.sorted(secondaryGroupingOption), id:  \.row.uuid) {
-                    processedRow
-                    in
+                let sortedProcessedRows: [ASAProcessedRow] = processedRows[key]!.sorted(secondaryGroupingOption)
+                ForEach(0..<sortedProcessedRows.count) {
+                    let processedRow = sortedProcessedRows[$0]
                     
                     #if os(watchOS)
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
                     #else
-                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
-                    ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility)
+                    let indexIsOdd = $0 % 2 == 1
+
+                    ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: false, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility, indexIsOdd: indexIsOdd)
                     #endif
                     
                 }

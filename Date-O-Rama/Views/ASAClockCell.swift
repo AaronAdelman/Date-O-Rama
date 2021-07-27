@@ -24,6 +24,8 @@ struct ASAClockCell: View {
     var shouldShowMiniCalendar:  Bool
     
     var isForComplications:  Bool
+    
+    var indexIsOdd: Bool
         
     var body: some View {
         #if os(watchOS)
@@ -46,6 +48,8 @@ struct ASAClockCell: View {
                     .colorScheme(.dark)
             }
         } else {
+            let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
+
             NavigationLink(
                 destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
                     .onReceive(processedRow.row.objectWillChange) { _ in
@@ -58,6 +62,9 @@ struct ASAClockCell: View {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
+            .listRowBackground(backgroundColor
+                            .ignoresSafeArea(edges: .all)
+            )
         }
         #endif
     } // var body
@@ -177,11 +184,15 @@ struct ASAClockEventsSubcell: View {
     @Binding var now:  Date
     @State private var showingEvents:  Bool = true
     @State var eventVisibility: ASAClockCellEventVisibility = .next
+    
+    var indexIsOdd: Bool
 
     var body: some View {
         #if os(watchOS)
         EmptyView()
         #else
+        let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
+
         let numberOfEvents = processedRow.events.count
         let formatString : String = NSLocalizedString("n events today", comment: "")
         let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
@@ -195,10 +206,16 @@ struct ASAClockEventsSubcell: View {
                     Text(eventVisibility.showingText)
                 } // HStack
             }
+            .listRowBackground(backgroundColor
+                            .ignoresSafeArea(edges: .all)
+            )
             let VERTICAL_INSET: CGFloat   = 0.0
             let HORIZONTAL_INSET: CGFloat = 8.0
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
                 .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
+                .listRowBackground(backgroundColor
+                                .ignoresSafeArea(edges: .all)
+                )
         }
         #endif
     } // var body
@@ -238,6 +255,6 @@ struct ASAClockEventsForEach:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic, now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false)
+        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic, now: Date()), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
     }
 } // struct ASAClockCell_Previews
