@@ -45,12 +45,13 @@ enum ASACalendarCode:  String, Codable {
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
     case HebrewMA              = "HebrewSolarMA"
     
-    case all                   = "*"
-    case allHebrew             = "heb*"
-    case allHebrewSolarTime    = "heb-solar*"
-    case allIslamic            = "hiq*"
-    case allIslamicSolarTime   = "hiq-solar*"
-    case allGregorian          = "gre*"
+    case all                    = "*"
+    case allHebrew              = "heb*"
+    case allHebrewSolarTime     = "heb-solar*"
+    case allIslamic             = "hiq*"
+    case allIslamicSolarTime    = "hiq-solar*"
+    case allGregorian           = "gre*"
+    case allSupportingTimeZones = "tz*"
 } // enum ASACalendarCode:  String
 
 
@@ -289,6 +290,10 @@ extension ASACalendarCode {
         }
         
         if self == .allGregorian && otherCalendarCode.isGregorianCalendar {
+            return true
+        }
+        
+        if self == .allSupportingTimeZones && !otherCalendarCode.isJulianDayCalendar {
             return true
         }
         
