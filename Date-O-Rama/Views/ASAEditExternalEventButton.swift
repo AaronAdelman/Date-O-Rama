@@ -25,7 +25,7 @@ struct ASAEditExternalEventButton: View {
                 }, label:  {
                     Text("Event edit")
                 })
-            .popover(isPresented:  $showingEventEditView, arrowEdge: .top) {
+            .sheet(isPresented:  $showingEventEditView) {
                 ASAEKEventEditView(action: self.$action, event: event, eventStore: self.eventManager.eventStore)
             }
             .foregroundColor(.accentColor)
