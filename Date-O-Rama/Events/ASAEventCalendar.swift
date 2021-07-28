@@ -135,9 +135,34 @@ class ASAEventCalendar {
             }
         }
         
+        // Multi-year events
+        if startDateSpecification.type == .multiYear {
+            assert(endDateSpecification != nil)
+            
+            let dateEY: Array<Int?>      = components.EY
+            let startDateEY: Array<Int?> = startDateSpecification.EY
+            let endDateEY: Array<Int?>   = endDateSpecification!.EY
+            let within: Bool = dateEY.isWithin(start: startDateEY, end: endDateEY)
+            
+            if !within {
+                return (false, nil, nil)
+            }
+            
+            let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY, end: endDateEY)
+            
+            tweakedStartDateSpecification = startDateSpecification.fillIn(EY: filledInStartDateEY)
+            
+            let tweakedEndDateSpecification = endDateSpecification!.fillIn(EY: filledInEndDateEY)
+
+            let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+            let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+            return (true, startDate, endDate)
+        }
+        
         // All-month events
         if startDateSpecification.type == .allMonth {
             assert(endDateSpecification == nil)
+            
             let matches = self.matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
             if matches {
                 let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
@@ -146,6 +171,34 @@ class ASAEventCalendar {
             } else {
                 return (false, nil, nil)
             }
+        }
+        
+        // Multi-month events
+        if startDateSpecification.type == .multiMonth {
+            assert(endDateSpecification != nil)
+            
+            if !matchAllYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
+                return (false, nil, nil)
+            }
+            
+            let dateEYM: Array<Int?>      = components.EYM
+            let startDateEYM: Array<Int?> = startDateSpecification.EYM
+            let endDateEYM: Array<Int?>   = endDateSpecification!.EYM
+            let within: Bool = dateEYM.isWithin(start: startDateEYM, end: endDateEYM)
+            
+            if !within {
+                return (false, nil, nil)
+            }
+            
+            let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM, end: endDateEYM)
+            
+            tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
+            
+            let tweakedEndDateSpecification = endDateSpecification!.fillIn(EYM: filledInEndDateEYM)
+
+            let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+            let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+            return (true, startDate, endDate)
         }
 
         if endDateSpecification == nil {
@@ -193,14 +246,6 @@ class ASAEventCalendar {
         
         let eventStartComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: eventStartDate!, locationData: locationData)
         let eventEndComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: eventEndDate!, locationData: locationData)
-
-//        if !self.matchYearSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
-//            return (false, nil, nil)
-//        }
-//
-//        if !self.matchMonthSupplemental(date: date, components: components, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
-//            return (false, nil, nil)
-//        }
         
         if !self.matchYearSupplemental(date: eventStartDate!, components: eventStartComponents, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
             return (false, nil, nil)
@@ -214,7 +259,6 @@ class ASAEventCalendar {
             return (false, nil, nil)
         }
 
-        
         if !self.matchMonthSupplemental(date: eventEndDate!, components: eventEndComponents, dateSpecification: tweakedEndDateSpecification, calendar: calendar) {
             return (false, nil, nil)
         }

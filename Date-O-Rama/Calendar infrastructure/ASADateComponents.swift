@@ -240,5 +240,13 @@ extension ASADateComponents {
     var EYMD: Array<Int?> {
         return [self.era, self.year, self.month, self.day]
     } // var EYMD
+    
+    var EYM: Array<Int?> {
+        return [self.era, self.year, self.month]
+    } // var EYM
+    
+    var EY: Array<Int?> {
+        return [self.era, self.year]
+    } // var EY
 } // extension ASADateComponents
 

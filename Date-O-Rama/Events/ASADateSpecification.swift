@@ -10,7 +10,9 @@ import CoreLocation
 import Foundation
 
 enum ASATimeSpecificationType:  String, Codable {
+    case multiYear                           = "multiYear"
     case allYear                             = "allYear"
+    case multiMonth                          = "multiMonth"
     case allMonth                            = "allMonth"
     case allDay                              = "allDay"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
@@ -119,7 +121,7 @@ extension ASADateSpecification {
         let timeZone = revisedDateComponents.locationData.timeZone
         
         switch self.type {
-        case .allYear:
+        case .allYear, .multiYear:
             if isEndDate {
                 let numberOfMonthsInYear = calendar.maximumValue(of: .month, in: .year, for: baseDate)!
                 let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
@@ -140,7 +142,7 @@ extension ASADateSpecification {
             let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
             return result
             
-        case .allMonth:
+        case .allMonth, .multiMonth:
             if isEndDate {
                 let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: baseDate)!
                 revisedDateComponents.day   = numberOfDaysInMonth
@@ -237,7 +239,7 @@ extension ASADateSpecification {
         case .allDay:
             return date
             
-        case .allYear, .allMonth:
+        case .allYear, .allMonth, .multiYear, .multiMonth:
             return date
         case .timeChange:
             return Date()
@@ -263,5 +265,28 @@ extension ASADateSpecification {
         temp.day   = EYMD[3]
         return temp
     } // fillIn(EYMD: Array<Int?>) -> ASADateSpecification
+    
+    var EYM: Array<Int?> {
+        return [self.era, self.year, self.month]
+    } // var EYM
+    
+    func fillIn(EYM: Array<Int?>) -> ASADateSpecification {
+        var temp = self
+        temp.era   = EYMD[0]
+        temp.year  = EYMD[1]
+        temp.month = EYMD[2]
+        return temp
+    } // fillIn(EYM: Array<Int?>) -> ASADateSpecification
+    
+    var EY: Array<Int?> {
+        return [self.era, self.year]
+    } // var EYM
+    
+    func fillIn(EY: Array<Int?>) -> ASADateSpecification {
+        var temp = self
+        temp.era   = EYMD[0]
+        temp.year  = EYMD[1]
+        return temp
+    } // fillIn(EY: Array<Int?>) -> ASADateSpecification
 } // extension ASADateSpecification
 

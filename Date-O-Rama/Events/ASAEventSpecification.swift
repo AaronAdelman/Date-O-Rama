@@ -15,7 +15,9 @@ class ASAEventSpecification: Codable {
     
     var isAllDay:  Bool {
         get {
-            return self.startDateSpecification.type == .allDay || self.startDateSpecification.type == .allMonth || self.startDateSpecification.type == .allYear
+            return self.startDateSpecification.type == .allDay || self.startDateSpecification.type == .allMonth || self.startDateSpecification.type == .allYear ||
+                self.startDateSpecification.type == .multiYear ||
+                self.startDateSpecification.type == .multiMonth
         } // get
     } // var isAllDay
 
