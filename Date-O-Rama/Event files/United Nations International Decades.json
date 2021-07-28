@@ -44,6 +44,26 @@
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2018},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
+        },
+        {"titles":  {"en":  "Third United Nations Decade for the Eradication of Poverty"},
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
+                "year":  2018},
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2027}
+        },
+        {"titles":  {"en":  "United Nations Decade of Action on Nutrition"},
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
+                "year":  2016},
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2025}
+        },
+        {"titles":  {"en":  "Third Industrial Development Decade for Africa"},
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
+                "year":  2016},
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2025}
+        },
+        {"titles":  {"en":  "International Decade for People of African Descent"},
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
+                "year":  2015},
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2024}
         }
     ]
 }
