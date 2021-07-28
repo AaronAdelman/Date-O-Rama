@@ -296,7 +296,7 @@ struct ASANewEKEventView: View {
     } // func dismissKeyboard()
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 HStack {
                     Spacer()
@@ -586,8 +586,8 @@ struct ASANewEKEventView: View {
                     self.isNavigationBarHidden = true
                 }
             } // VStack
-        } // NavigationView
-        .navigationViewStyle(StackNavigationViewStyle())
+//        } // NavigationView
+//        .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
             ActionSheet(title: Text("Are you sure you want to delete this new event?"), buttons: [
                 .destructive(Text("Cancel Changes")) {
