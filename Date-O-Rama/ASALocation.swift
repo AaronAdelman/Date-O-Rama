@@ -36,6 +36,7 @@ extension ASALocation {
         var country: String? = placemark?.country
         var ISOCountryCode: String? = placemark?.isoCountryCode
         var timeZone: TimeZone = placemark?.timeZone ?? TimeZone.GMT
+        var locality: String? = placemark?.locality
         
         if ISOCountryCode == nil {
             // We need to test if Apple's location server screwed up in favor of inappropriate political neutrality and fix any such problem.
@@ -53,6 +54,11 @@ extension ASALocation {
             let GazaStripSouth: CLLocationDegrees = 31.0
             let GazaStripEast: CLLocationDegrees = 34.0 + 40.0 / 60.0
             let GazaStripWest: CLLocationDegrees = 34.0
+            
+            let JerusalemNorth: CLLocationDegrees = 31.0 + 58.0 / 60.0
+            let JerusalemSouth: CLLocationDegrees = 31.0 + 42.0 / 60.0
+            let JerusalemEast: CLLocationDegrees  = 35.0 + 16.0 / 60.0
+            let JerusalemWest: CLLocationDegrees  = 35.0 + 11.0 / 60.0
 
             if usedLocation.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest) || usedLocation.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest) {
                 country = NSLocalizedString("Israel", comment: "")
@@ -63,9 +69,13 @@ extension ASALocation {
                 ISOCountryCode = REGION_CODE_Palestine
                 timeZone = TimeZone(identifier: "Asia/Gaza")!
             }
+            
+            if usedLocation.isWithin(north: JerusalemNorth, south: JerusalemSouth, east: JerusalemEast, west: JerusalemWest) && locality == nil {
+                locality = NSLocalizedString("Jerusalem", comment: "")
+            }
         }
         
-        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: placemark?.locality, country: country, ISOCountryCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
+        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, ISOCountryCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocation

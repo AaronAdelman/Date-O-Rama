@@ -216,6 +216,7 @@
 "Date:" = "תאריך…";
 "Israel" = "ישראל";
 "Gaza Strip" = "פס עזה";
+"Jerusalem" = "ירושלים";
 "EKEventStatus.confirmed"        = "מאושר";
 "EKEventStatus.tentative"        = "הססני";
 "EKEventStatus.canceled"         = "מבוטל";
