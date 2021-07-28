@@ -6,44 +6,44 @@
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications":  [
         {"titles":  {"en":  "International Decade of Indigenous Languages"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2022},
-            "endDateSpecification": {"type":  "multiYear", "year":  2032}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2032}
         },
         {"titles":  {"en":  "Second Decade of Action for Road Safety"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type":  "multiYear", "year":  2030}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
         {"titles":  {"en":  "United Nations Decade of Healthy Ageing"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type":  "multiYear", "year":  2030}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
         {"titles":  {"en":  "United Nations Decade on Ecosystem Restoration"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type":  "multiYear", "year":  2030}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
         {"titles":  {"en":  "United Nations Decade of Ocean Science for Sustainable Development"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type":  "multiYear", "year":  2030}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
         {"titles":  {"en":  "Nelson Mandela Decade of Peace"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2019},
-            "endDateSpecification": {"type":  "multiYear", "year":  2028}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
         },
         {"titles":  {"en":  "United Nations Decade of Family Farming"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2019},
-            "endDateSpecification": {"type":  "multiYear", "year":  2028}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
         },
         {"titles":  {"en":  "International Decade for Action “Water for Sustainable Development”"},
-            "startDateSpecification": {"type":  "multiYear",
+            "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2018},
-            "endDateSpecification": {"type":  "multiYear", "year":  2028}
+            "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
         }
     ]
 }
