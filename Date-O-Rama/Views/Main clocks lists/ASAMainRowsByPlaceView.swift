@@ -74,13 +74,15 @@ struct ASAMainRowsByPlaceView:  View {
                     .minimumScaleFactor(0.5).lineLimit(1)
             }) {
                 let sortedProcessedRows = processedRows[key]!.sorted(secondaryGroupingOption)
-                ForEach(0..<sortedProcessedRows.count) {
-                    let processedRow = sortedProcessedRows[$0]
+                ForEach(sortedProcessedRows.indices, id: \.self) {
+                    index
+                    in
+                    let processedRow = sortedProcessedRows[index]
                     
                     #if os(watchOS)
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
                     #else
-                    let indexIsOdd = $0 % 2 == 1
+                    let indexIsOdd = index % 2 == 1
                     ASAClockCell(processedRow: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
                     ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: processedRow.row.eventVisibility, indexIsOdd: indexIsOdd)
                     #endif
