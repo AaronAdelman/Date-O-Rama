@@ -5,9 +5,9 @@
 "calendarCode": "Gregorian",
 "calendarColor": {"red":  0.2745098039, "green":  0.6117647059, "blue":  0.8392156863},
 "eventSpecifications": [
-{"titles": {"en": "International Year of Camelids"},
-"startDateSpecification": {"type": "allYear", "era": 1,
-"year":  2024}, "emoji": "🐪"
-}
+{"titles": {"en": "International Year of Camelids"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2024}, "emoji": "🐪"},
+{"titles": {"en": "International Year of Millets"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2023}, "emoji": "⿉"},
+{"titles": {"en": "International Year of Glass"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2022}, "emoji": "🥃"},
+{"titles": {"en": "International Year of Artisanal Fisheries and Aquaculture"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2022}, "emoji": "🐟"}
 ]
 }
