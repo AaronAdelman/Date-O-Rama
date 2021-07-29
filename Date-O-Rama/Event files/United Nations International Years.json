@@ -32,6 +32,10 @@
 {"titles": {"en": "International Year of Sustainable Energy for All"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2012}, "emoji": "⚡️"},
 {"titles": {"en": "International Year for People of African Descent"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🌍"},
 {"titles": {"en": "International Year of Chemistry"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🧪"},
-{"titles": {"en": "International Year of Forests"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🌲"}
+{"titles": {"en": "International Year of Forests"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🌲"},
+{"titles": {"en": "International Year of Youth"}, "startDateSpecification": {"type": "allDay", "era": 1, "year":  2010, "month": 8, "day": 12}, "endDateSpecification": {"type": "allDay", "era": 1, "year":  2011, "month": 8, "day": 11}, "emoji": "𝌑"},
+{"titles": {"en": "International Year for the Rapprochement of Cultures"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}},
+{"titles": {"en": "International Year of Biodiversity"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}, "emoji": ""},
+{"titles": {"en": "International Year of the Seafarer"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}, "emoji": "⛵️"}
 ]
 }
