@@ -254,6 +254,8 @@
 		A5BD09CB26B17DEA00738C0B /* ASADayFractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD09CA26B17DEA00738C0B /* ASADayFractionView.swift */; };
 		A5BD09CD26B1B31100738C0B /* United Nations International Decades.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */; };
 		A5BD09CE26B1B31100738C0B /* United Nations International Decades.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */; };
+		A5BD09D026B2D40D00738C0B /* United Nations International Years.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */; };
+		A5BD09D126B2D40D00738C0B /* United Nations International Years.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */; };
 		A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */; };
 		A5BDB7CD244DA9560027704F /* ASAISO8601Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */; };
 		A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE7762665594600F47416 /* Localizable.stringsdict */; };
@@ -510,6 +512,7 @@
 		A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationSymbol.swift; sourceTree = "<group>"; };
 		A5BD09CA26B17DEA00738C0B /* ASADayFractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADayFractionView.swift; sourceTree = "<group>"; };
 		A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "United Nations International Decades.json"; sourceTree = "<group>"; };
+		A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "United Nations International Years.json"; sourceTree = "<group>"; };
 		A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarFactory.swift; sourceTree = "<group>"; };
 		A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAppleCalendar.swift; sourceTree = "<group>"; };
 		A5BDB7CC244DA9560027704F /* ASAISO8601Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAISO8601Calendar.swift; sourceTree = "<group>"; };
@@ -669,6 +672,7 @@
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */,
+				A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 			);
 			path = "Event files";
@@ -1156,6 +1160,7 @@
 				A5769951259EDCC000757B0F /* Israel.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
+				A5BD09D126B2D40D00738C0B /* United Nations International Years.json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5BDE78926679A6200F47416 /* Shia.json in Resources */,
@@ -1196,6 +1201,7 @@
 				A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */,
 				A54539E026A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
+				A5BD09D026B2D40D00738C0B /* United Nations International Years.json in Resources */,
 				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
