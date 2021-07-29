@@ -15,7 +15,7 @@
                 "year":  2021}, "emoji": "🚏",
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
-        {"titles":  {"en":  "United Nations Decade of Healthy Ageing"},
+        {"titles":  {"en":  "United Nations Decade of Healthy Ageing"}, "emoji": "👴👵",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
@@ -45,7 +45,7 @@
                 "year":  2018},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
         },
-        {"titles":  {"en":  "Third United Nations Decade for the Eradication of Poverty"},
+        {"titles":  {"en":  "Third United Nations Decade for the Eradication of Poverty"}, "emoji": "🪙",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2018},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2027}

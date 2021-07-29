@@ -25,8 +25,10 @@ struct ASANewExternalEventButton: View {
                     ASANewExternalEventButtonLabel()            .foregroundColor(.accentColor)
                 })
             .sheet(isPresented:  $showingEventEditView) {
-                ASANewEKEventView(startDate: now, endDate: now)
-                    .frame(minWidth:  400.0, minHeight:  600.0)
+                NavigationView {
+                    ASANewEKEventView(startDate: now, endDate: now)
+                        .frame(minWidth:  400.0, minHeight:  600.0)
+                }
             }
         #else
         NavigationLink(destination: ASANewEKEventView(startDate: now, endDate: now)) {
