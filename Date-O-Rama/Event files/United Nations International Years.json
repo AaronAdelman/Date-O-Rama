@@ -12,6 +12,26 @@
 {"titles": {"en": "International Year of Peace and Trust"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2021}, "emoji": "☮️"},
 {"titles": {"en": "International Year of Creative Economy for Sustainable Development"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2021}, "emoji": "💰"},
 {"titles": {"en": "International Year of Fruits and Vegetables"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2021}, "emoji": "🍅"},
-{"titles": {"en": "International Year for the Elimination of Child Labour"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2021}}
+{"titles": {"en": "International Year for the Elimination of Child Labour"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2021}},
+{"titles": {"en": "International Year of Plant Health"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2020}, "emoji": "🌱"},
+{"titles": {"en": "International Year of the Nurse and the Midwife"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2020}, "emoji": "👩‍⚕️👨‍⚕️"},
+{"titles": {"en": "International Year of Indigenous Languages"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2019}},
+{"titles": {"en": "International Year of Moderation"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2019}},
+{"titles": {"en": "International Year of the Periodic Table of Chemical Elements"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2019}, "emoji": "🧪"},
+{"titles": {"en": "International Year of Sustainable Tourism for Development"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2017}},
+{"titles": {"en": "International Year of Pulses"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2016}},
+{"titles": {"en": "International Year of Light and Light-based Technologies"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2015}, "emoji": "💡"},
+{"titles": {"en": "International Year of Soils"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2015}},
+{"titles": {"en": "International Year of Promotion of Antisemitism"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2014}, "notes": {"en" : "Let us be honest.  That is what “International Year of Solidarity with the Palestinian People” effectively means."}},
+{"titles": {"en": "International Year of Small Island Developing States"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2014}, "emoji": "🏝"},
+{"titles": {"en": "International Year of Crystallography"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2014}},
+{"titles": {"en": "International Year of Family Farming"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2014}, "emoji": "🚜"},
+{"titles": {"en": "International Year of Water Cooperation"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2013}, "emoji": "🚰"},
+{"titles": {"en": "International Year of Quinoa"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2013}},
+{"titles": {"en": "International Year of Cooperatives"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2012}},
+{"titles": {"en": "International Year of Sustainable Energy for All"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2012}, "emoji": "⚡️"},
+{"titles": {"en": "International Year for People of African Descent"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🌍"},
+{"titles": {"en": "International Year of Chemistry"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🧪"},
+{"titles": {"en": "International Year of Forests"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2011}, "emoji": "🌲"}
 ]
 }
