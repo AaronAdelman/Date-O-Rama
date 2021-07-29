@@ -12,7 +12,7 @@
         },
         {"titles":  {"en":  "Second Decade of Action for Road Safety"},
             "startDateSpecification": {"type":  "multiYear", "era": 1,
-                "year":  2021},
+                "year":  2021}, "emoji": "🚏",
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
         {"titles":  {"en":  "United Nations Decade of Healthy Ageing"},
@@ -20,27 +20,27 @@
                 "year":  2021},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
-        {"titles":  {"en":  "United Nations Decade on Ecosystem Restoration"},
+        {"titles":  {"en":  "United Nations Decade on Ecosystem Restoration"}, "emoji": "🌱",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
-        {"titles":  {"en":  "United Nations Decade of Ocean Science for Sustainable Development"},
+        {"titles":  {"en":  "United Nations Decade of Ocean Science for Sustainable Development"}, "emoji": "🌊",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2021},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2030}
         },
         {"titles":  {"en":  "Nelson Mandela Decade of Peace"},
             "startDateSpecification": {"type":  "multiYear", "era": 1,
-                "year":  2019},
+                "year":  2019}, "emoji": "☮️",
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
         },
         {"titles":  {"en":  "United Nations Decade of Family Farming"},
             "startDateSpecification": {"type":  "multiYear", "era": 1,
-                "year":  2019},
+                "year":  2019}, "emoji": "🚜",
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
         },
-        {"titles":  {"en":  "International Decade for Action “Water for Sustainable Development”"},
+        {"titles":  {"en":  "International Decade for Action “Water for Sustainable Development”"}, "emoji": "🚰",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2018},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2028}
@@ -52,15 +52,15 @@
         },
         {"titles":  {"en":  "United Nations Decade of Action on Nutrition"},
             "startDateSpecification": {"type":  "multiYear", "era": 1,
-                "year":  2016},
+                "year":  2016}, "emoji": "🍲",
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2025}
         },
-        {"titles":  {"en":  "Third Industrial Development Decade for Africa"},
+        {"titles":  {"en":  "Third Industrial Development Decade for Africa"}, "emoji": "🌍",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2016},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2025}
         },
-        {"titles":  {"en":  "International Decade for People of African Descent"},
+        {"titles":  {"en":  "International Decade for People of African Descent"}, "emoji": "🌍",
             "startDateSpecification": {"type":  "multiYear", "era": 1,
                 "year":  2015},
             "endDateSpecification": {"type":  "multiYear", "era": 1, "year":  2024}
