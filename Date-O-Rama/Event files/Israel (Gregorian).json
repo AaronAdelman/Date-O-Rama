@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Israel (Gregorian)", "he":  "ישראל (גרגוריני)"},
+    "titles": {"en": "Israel (Gregorian)", "he": "ישראל (גרגוריני)"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "Gregorian",

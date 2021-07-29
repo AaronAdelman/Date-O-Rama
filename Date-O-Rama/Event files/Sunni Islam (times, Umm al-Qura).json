@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Islam (times, Umm al-Qura)", "he":  "אסלאם סוני (זמנים, אום אל־קורה)"},
+    "titles": {"en": "Islam (times, Umm al-Qura)", "he": "אסלאם סוני (זמנים, אום אל־קורה)"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "IslamicUmmAlQuraSolar",

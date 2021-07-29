@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Islam (times)", "he":  "אסלאם סוני (זמנים)"},
+    "titles": {"en": "Islam (times)", "he": "אסלאם סוני (זמנים)"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "hiq-solar*",

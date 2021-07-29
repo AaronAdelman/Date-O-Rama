@@ -1,27 +1,27 @@
 {
-    "titles": {"en":  "Ahmadiyya"},
-    "supportedLocales":  ["en"],
-    "defaultLocale":  "en",
-    "calendarCode":  "gre*",
+    "titles": {"en": "Ahmadiyya"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
     "calendarColor": {"red":  0.25, "green":  0.25, "blue":  0.25},
-    "eventSpecifications":  [
+    "eventSpecifications": [
         {
-            "titles":  {"en":  "Promised Reformer Day"},
-            "startDateSpecification": {"type":  "allDay",
+            "titles": {"en": "Promised Reformer Day"},
+            "startDateSpecification": {"type": "allDay",
                 "month":  2, "day":  20
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}
         },
         {
-            "titles":  {"en":  "Promised Messiah Day", "ur": "یوم مسیح موعود‎"},
-            "startDateSpecification": {"type":  "allDay",
+            "titles": {"en": "Promised Messiah Day", "ur": "یوم مسیح موعود‎"},
+            "startDateSpecification": {"type": "allDay",
                 "month":  3, "day":  23
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}
         },
         {
-            "titles":  {"en":  "Caliphate Day"},
-            "startDateSpecification": {"type":  "allDay",
+            "titles": {"en": "Caliphate Day"},
+            "startDateSpecification": {"type": "allDay",
                 "month":  5, "day":  27
             },
             "urls": {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}

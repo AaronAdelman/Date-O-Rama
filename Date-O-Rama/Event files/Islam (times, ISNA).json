@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Islam (times, ISNA)", "he":  "אסלאם (זמנים, ISNA)"},
+    "titles": {"en": "Islam (times, ISNA)", "he": "אסלאם (זמנים, ISNA)"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "hiq-solar*",

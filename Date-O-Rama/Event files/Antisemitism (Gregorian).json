@@ -1,10 +1,10 @@
 {
-    "titles": {"en":  "Antisemitism (Gregorian)", "he":  "אנטישמיות (גרגוריני)", "ar": "معاداة السامية"},
-    "supportedLocales":  ["en", "he", "ar"],
-    "defaultLocale":  "en",
-    "calendarCode":  "gre*",
+    "titles": {"en": "Antisemitism (Gregorian)", "he": "אנטישמיות (גרגוריני)", "ar": "معاداة السامية"},
+    "supportedLocales": ["en", "he", "ar"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
-    "eventSpecifications":  [
+    "eventSpecifications": [
         {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "startDateSpecification": {
             "type": "allDay", "month": 5, "day": 15},
             "locations": {"en": "The Palestinian Authority and the Gaza Strip", "he": "הרשות הפלסטינית ורצועת עזה", "ar": "السلطة الفلسطينية وقطاع غزة"}

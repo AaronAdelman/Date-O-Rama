@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Israel", "he":  "ישראל"},
+    "titles": {"en": "Israel", "he": "ישראל"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "heb*",

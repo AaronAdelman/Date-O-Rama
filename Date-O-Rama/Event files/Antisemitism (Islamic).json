@@ -1,10 +1,10 @@
 {
-    "titles": {"en":  "Antisemitism (Islamic)", "he":  "אנטישמיות (מוסלמי)", "ar": "معاداة السامية"},
-    "supportedLocales":  ["en", "he", "ar"],
-    "defaultLocale":  "en",
-    "calendarCode":  "hiq*",
+    "titles": {"en": "Antisemitism (Islamic)", "he": "אנטישמיות (מוסלמי)", "ar": "معاداة السامية"},
+    "supportedLocales": ["en", "he", "ar"],
+    "defaultLocale": "en",
+    "calendarCode": "hiq*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
-    "eventSpecifications":  [
+    "eventSpecifications": [
         {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "startDateSpecification": {
             "type": "allDay", "month": 9, "day": -1, "weekdays": [6]},
             "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}

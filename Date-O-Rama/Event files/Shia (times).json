@@ -1,5 +1,5 @@
 {
-    "titles": {"en":  "Shia (times)", "he":  "שיעה (זמנים)"},
+    "titles": {"en": "Shia (times)", "he": "שיעה (זמנים)"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "hiq-solar*",

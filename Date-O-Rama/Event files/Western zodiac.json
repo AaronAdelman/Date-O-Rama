@@ -1,10 +1,10 @@
 {
-    "titles": {"en":  "Western zodiac", "he":  "גלגל המזלות המערבי"},
-    "supportedLocales":  ["en", "he"],
-    "defaultLocale":  "en",
-    "calendarCode":  "gre*",
+    "titles": {"en": "Western zodiac", "he": "גלגל המזלות המערבי"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
-    "eventSpecifications":  [
+    "eventSpecifications": [
         {"titles": {"en": "Aries", "he": "טלה"}, "startDateSpecification": {
             "type": "allDay", "month": 3, "day": 21}, "endDateSpecification": {
                 "type": "allDay", "month": 4, "day": 19}, "category": "Aries"},

@@ -1,10 +1,10 @@
 {
-    "titles": {"en":  "Jewish zodiac", "he":  "גלגל המזלות יהודי"},
-    "supportedLocales":  ["en", "he"],
-    "defaultLocale":  "he",
-    "calendarCode":  "heb*",
+    "titles": {"en": "Jewish zodiac", "he": "גלגל המזלות יהודי"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "he",
+    "calendarCode": "heb*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
-    "eventSpecifications":  [
+    "eventSpecifications": [
     {"titles": {"en": "Aries", "he": "טלה"}, "startDateSpecification": {"type": "allMonth", "month": 8}, "category": "Aries"},
     {"titles": {"en": "Taurus", "he": "שור"}, "startDateSpecification": {"type": "allMonth", "month": 9}, "category": "Taurus"},
     {"titles": {"en": "Gemini", "he": "תאומים"}, "startDateSpecification": {"type": "allMonth", "month": 10}, "category": "Gemini"},

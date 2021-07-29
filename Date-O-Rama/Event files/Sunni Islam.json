@@ -1,19 +1,19 @@
 {
-    "titles": {"en":  "Sunni Islam", "he":  "אסלאם סוני", "ar": "أهل السنة والجماعة"},
-    "supportedLocales":  ["en", "ar", "he"],
-    "defaultLocale":  "en",
-    "calendarCode":  "hiq*",
+    "titles": {"en": "Sunni Islam", "he": "אסלאם סוני", "ar": "أهل السنة والجماعة"},
+    "supportedLocales": ["en", "ar", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "hiq*",
     "calendarColor": {"red":  0.15, "green":  0.85, "blue":  0.15},
-    "eventSpecifications":  [
+    "eventSpecifications": [
         {
-            "titles":  {"en":  "Mawlid (Birthday of the Prophet)", "he":  "מוולד א־נבי", "ar":  "مَولِد النَّبِي‎"},
-            "startDateSpecification": {"type":  "allDay",
+            "titles": {"en": "Mawlid (Birthday of the Prophet)", "he": "מוולד א־נבי", "ar": "مَولِد النَّبِي‎"},
+            "startDateSpecification": {"type": "allDay",
                 "month":  3, "day":  12
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Mawlid"}, "category": "birthday"
         },
         {
-            "titles":  {"en":  "Laylat al-Qadr (Night of Power)", "he":  "לילת אל־קדר", "ar":  "لیلة القدر‎"},
-            "startDateSpecification": {"type":  "allDay",
+            "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"},
+            "startDateSpecification": {"type": "allDay",
                 "month":  9, "day":  29
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}
         }

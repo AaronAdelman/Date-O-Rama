@@ -1,10 +1,10 @@
 {
-    "titles": {"en":  "Judaism (Gregorian)", "he":  "יהדות (גרגוריני)"},
+    "titles": {"en": "Judaism (Gregorian)", "he": "יהדות (גרגוריני)"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 1.0},
     "eventSpecifications": [
-        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode":  "Gregorian", "startDateSpecification": {"type": "allDay", "month": 12, "day": 24}}
+        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode": "Gregorian", "startDateSpecification": {"type": "allDay", "month": 12, "day": 24}}
     ]
 }
