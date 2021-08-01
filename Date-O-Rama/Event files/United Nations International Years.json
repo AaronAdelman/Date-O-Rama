@@ -80,6 +80,7 @@
 {"titles": {"en": "International Year of Mobilization for Sanctions Against South Africa"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1982}, "emoji": "🇿🇦"},
 {"titles": {"en": "International Year for Disabled Persons"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1981}, "emoji": "♿︎"},
 {"titles": {"en": "International Year of The Child"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1979}, "emoji": "🧒"},
-
+{"titles": {"en": "International Anti-Apartheid Year"}, "startDateSpecification": {"type": "allDay", "era": 1, "year":  1978, "month": 3, "day": 21}, "endDateSpecification": {"type": "allDay", "era": 1, "year":  1979, "month": 3, "day": 20}, "emoji": "🇿🇦"},
+{"titles": {"en": "International Women’s Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1975}, "emoji": "♀"},
 ]
 }
