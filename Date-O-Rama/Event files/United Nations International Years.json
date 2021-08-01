@@ -45,6 +45,15 @@
 {"titles": {"en": "International Year of Planet Earth"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🌍"},
 {"titles": {"en": "International Year of Languages"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}},
 {"titles": {"en": "International Year of Sanitation"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🗑"},
-{"titles": {"en": "International Year of the Potato"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🥔"}
+{"titles": {"en": "International Year of the Potato"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🥔"},
+{"titles": {"en": "International Polar Year"}, "startDateSpecification": {"type": "allDay", "era": 1, "year":  2007, "month": 3, "day": 1}, "endDateSpecification": {"type": "allDay", "era": 1, "year":  2008, "month": 2, "day": 28}, "emoji": "🐻‍❄️"},
+{"titles": {"en": "International Year of Deserts and Desertification"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2006}, "emoji": "🏜"},
+{"titles": {"en": "International Year of Microcredit"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2005}, "emoji": "💳"},
+{"titles": {"en": "International Year for Sport and Physical Education"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2005}, "emoji": "🏀"},
+{"titles": {"en": "International Year of Physics"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2005}, "emoji": "🎱"},
+{"titles": {"en": "International Year to Commemorate the Struggle against Slavery and its Abolition"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2004}},
+{"titles": {"en": "International Year of Rice"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2004}, "emoji": "🍚"},
+{"titles": {"en": "Year of Kyrgyz Statehood"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2003}, "emoji": "🇰🇬"},
+{"titles": {"en": "International Year of Freshwater"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2003}, "emoji": "💧"}
 ]
 }
