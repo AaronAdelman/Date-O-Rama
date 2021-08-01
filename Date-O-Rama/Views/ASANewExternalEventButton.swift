@@ -27,7 +27,7 @@ struct ASANewExternalEventButton: View {
             .sheet(isPresented:  $showingEventEditView) {
                 NavigationView {
                     ASANewEKEventView(startDate: now, endDate: now)
-                        .frame(minWidth:  400.0, minHeight:  600.0)
+//                        .frame(minWidth:  400.0, minHeight:  600.0)
                 }
             }
         #else

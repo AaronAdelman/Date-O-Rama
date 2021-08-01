@@ -36,6 +36,15 @@
 {"titles": {"en": "International Year of Youth"}, "startDateSpecification": {"type": "allDay", "era": 1, "year":  2010, "month": 8, "day": 12}, "endDateSpecification": {"type": "allDay", "era": 1, "year":  2011, "month": 8, "day": 11}, "emoji": "𝌑"},
 {"titles": {"en": "International Year for the Rapprochement of Cultures"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}},
 {"titles": {"en": "International Year of Biodiversity"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}, "emoji": ""},
-{"titles": {"en": "International Year of the Seafarer"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}, "emoji": "⛵️"}
+{"titles": {"en": "International Year of the Seafarer"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2010}, "emoji": "⛵️"},
+{"titles": {"en": "International Year of Reconciliation"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2009}},
+{"titles": {"en": "International Year of Natural Fibres"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2009}, "emoji": "🧵"},
+{"titles": {"en": "International Year of Human Rights Learning"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2009}, "emoji": "📚"},
+{"titles": {"en": "International Year of Astronomy"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2009}, "emoji": "🪐"},
+{"titles": {"en": "Year of the Gorilla"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2009}, "emoji": "🦍"},
+{"titles": {"en": "International Year of Planet Earth"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🌍"},
+{"titles": {"en": "International Year of Languages"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}},
+{"titles": {"en": "International Year of Sanitation"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🗑"},
+{"titles": {"en": "International Year of the Potato"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  2008}, "emoji": "🥔"}
 ]
 }
