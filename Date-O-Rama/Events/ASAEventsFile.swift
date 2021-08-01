@@ -25,31 +25,10 @@ struct ASAEventsFile: Codable {
     var titles:  Dictionary<String, String>
     var defaultLocale:  String
     
-//    var calendarColorRed:  CGFloat
-//    var calendarColorGreen:  CGFloat
-//    var calendarColorBlue:  CGFloat
-//    var calendarColorAlpha:  CGFloat
     var calendarColor: Color
     var calendarCode:  ASACalendarCode
     var otherCalendarCodes:  Array<ASACalendarCode>?
     var eventSpecifications: Array<ASAEventSpecification>
-    
-//    var calendarColor: UIColor {
-//        get {
-//            return UIColor(red: self.calendarColorRed, green: self.calendarColorGreen, blue: self.calendarColorBlue, alpha: self.calendarColorAlpha)
-//        }
-//        set {
-//            var red:  CGFloat   = 0.0
-//            var green:  CGFloat = 0.0
-//            var blue:  CGFloat  = 0.0
-//            var alpha:  CGFloat = 0.0
-//            _ = newValue.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-//            self.calendarColorRed   = red
-//            self.calendarColorGreen = green
-//            self.calendarColorBlue  = blue
-//            self.calendarColorAlpha = alpha
-//        }
-//    }
 } // struct ASAEventsFile
 
 
