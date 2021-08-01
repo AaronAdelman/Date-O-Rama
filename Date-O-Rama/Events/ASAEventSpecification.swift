@@ -33,6 +33,12 @@ class ASAEventSpecification: Codable {
     
     var category: ASAEventCategory?
     var emoji: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case startDateSpecification = "start"
+        case endDateSpecification   = "end"
+        case titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji
+    }
 } // extension ASAEventSpecification
 
 

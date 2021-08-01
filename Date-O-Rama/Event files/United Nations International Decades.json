@@ -6,254 +6,254 @@
     "calendarColor": {"red":  0.2745098039, "green":  0.6117647059, "blue":  0.8392156863},
     "eventSpecifications": [
         {"titles": {"en": "International Decade of Indigenous Languages"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2022},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2032}
+            "end": {"type": "multiYear", "era": 1, "year":  2032}
         },
         {"titles": {"en": "Second Decade of Action for Road Safety"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2021}, "emoji": "🚏",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2030}
+            "end": {"type": "multiYear", "era": 1, "year":  2030}
         },
         {"titles": {"en": "United Nations Decade of Healthy Ageing"}, "emoji": "👴👵",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2030}
+            "end": {"type": "multiYear", "era": 1, "year":  2030}
         },
         {"titles": {"en": "United Nations Decade on Ecosystem Restoration"}, "emoji": "🌱",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2030}
+            "end": {"type": "multiYear", "era": 1, "year":  2030}
         },
         {"titles": {"en": "United Nations Decade of Ocean Science for Sustainable Development"}, "emoji": "🌊",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2021},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2030}
+            "end": {"type": "multiYear", "era": 1, "year":  2030}
         },
         {"titles": {"en": "Nelson Mandela Decade of Peace"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2019}, "emoji": "☮️",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2028}
+            "end": {"type": "multiYear", "era": 1, "year":  2028}
         },
         {"titles": {"en": "United Nations Decade of Family Farming"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2019}, "emoji": "🚜",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2028}
+            "end": {"type": "multiYear", "era": 1, "year":  2028}
         },
         {"titles": {"en": "International Decade for Action “Water for Sustainable Development”"}, "emoji": "🚰",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2018},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2028}
+            "end": {"type": "multiYear", "era": 1, "year":  2028}
         },
         {"titles": {"en": "Third United Nations Decade for the Eradication of Poverty"}, "emoji": "🪙",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2018},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2027}
+            "end": {"type": "multiYear", "era": 1, "year":  2027}
         },
         {"titles": {"en": "United Nations Decade of Action on Nutrition"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2016}, "emoji": "🍲",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2025}
+            "end": {"type": "multiYear", "era": 1, "year":  2025}
         },
         {"titles": {"en": "Third Industrial Development Decade for Africa"}, "emoji": "🌍",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2016},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2025}
+            "end": {"type": "multiYear", "era": 1, "year":  2025}
         },
         {"titles": {"en": "International Decade for People of African Descent"}, "emoji": "🌍",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2015},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2024}
+            "end": {"type": "multiYear", "era": 1, "year":  2024}
         },
         {"titles": {"en": "United Nations Decade of Sustainable Energy for All"}, "emoji": "⚡️",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2014},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2024}
+            "end": {"type": "multiYear", "era": 1, "year":  2024}
         },
         {"titles": {"en": "Third International Decade for the Eradication of Colonialism"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2011},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2020}
+            "end": {"type": "multiYear", "era": 1, "year":  2020}
         },
         {"titles": {"en": "United Nations Decade on Biodiversity"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2011}, "emoji": "🌱",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2020}
+            "end": {"type": "multiYear", "era": 1, "year":  2020}
         },
         {"titles": {"en": "Decade of Action for Road Safety"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2011}, "emoji": "🚏",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2020}
+            "end": {"type": "multiYear", "era": 1, "year":  2020}
         },
         {"titles": {"en": "United Nations Decade for Deserts and the Fight against Desertification"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2010}, "emoji": "🏜",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2020}
+            "end": {"type": "multiYear", "era": 1, "year":  2020}
         },
         {"titles": {"en": "Second United Nations Decade for the Eradication of Poverty"}, "emoji": "🪙",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2008},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2017}
+            "end": {"type": "multiYear", "era": 1, "year":  2017}
         },
         {"titles": {"en": "Decade of Recovery and Sustainable Development of the Affected Regions (third decade after the Chernobyl disaster)"}, "emoji": "☢️",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2006},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2016}
+            "end": {"type": "multiYear", "era": 1, "year":  2016}
         },
         {"titles": {"en": "International Decade for Action, “Water for Life”"}, "emoji": "🚰",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2005},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2015}
+            "end": {"type": "multiYear", "era": 1, "year":  2015}
         },
         {"titles": {"en": "United Nations Decade of Education for Sustainable Development"}, "emoji": "📚",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2005},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2014}
+            "end": {"type": "multiYear", "era": 1, "year":  2014}
         },
         {"titles": {"en": "Second International Decade of the World’s Indigenous People"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2005},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2014}
+            "end": {"type": "multiYear", "era": 1, "year":  2014}
         },
         {"titles": {"en": "United Nations Literacy Decade: Education for All"}, "emoji": "📚",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2003},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2012}
+            "end": {"type": "multiYear", "era": 1, "year":  2012}
         },
         {"titles": {"en": "International Decade for a Culture of Peace and Non-violence for the Children of the World"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2001}, "emoji": "☮️",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2010}
+            "end": {"type": "multiYear", "era": 1, "year":  2010}
         },
         {"titles": {"en": "Decade to Roll Back Malaria in Developing Countries, Particularly in Africa"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2001}, "emoji": "💉",
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2010}
+            "end": {"type": "multiYear", "era": 1, "year":  2010}
         },
         {"titles": {"en": "Second International Decade for the Eradication of Colonialism"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  2001},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2010}
+            "end": {"type": "multiYear", "era": 1, "year":  2010}
         },
         {"titles": {"en": "Decade for The Eradication for Poverty"}, "emoji": "🪙",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1997},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2006}
+            "end": {"type": "multiYear", "era": 1, "year":  2006}
         },
         {"titles": {"en": "Decade for Human Rights Education"}, "emoji": "📚",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1995},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2004}
+            "end": {"type": "multiYear", "era": 1, "year":  2004}
         },
         {"titles": {"en": "Decade of the World‘s Indigenous People"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1994},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2004}
+            "end": {"type": "multiYear", "era": 1, "year":  2004}
         },
         {"titles": {"en": "Third Decade to Combat Racism and Racial Discrimination"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1993},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2003}
+            "end": {"type": "multiYear", "era": 1, "year":  2003}
         },
         {"titles": {"en": "Second Industrial Development Decade for Africa"}, "emoji": "🌍",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1991},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2000}
+            "end": {"type": "multiYear", "era": 1, "year":  2000}
         },
         {"titles": {"en": "Second Transport and Communications Decade in Africa"}, "emoji": "🌍",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1991},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2000}
+            "end": {"type": "multiYear", "era": 1, "year":  2000}
         },
         {"titles": {"en": "United Nations Decade Against Drug Abuse"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1991},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2000}
+            "end": {"type": "multiYear", "era": 1, "year":  2000}
         },
         {"titles": {"en": "Fourth United Nations Development Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1991},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2000}
+            "end": {"type": "multiYear", "era": 1, "year":  2000}
         },
         {"titles": {"en": "International Decade for the Eradification of Colonialism"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1990},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  2000}
+            "end": {"type": "multiYear", "era": 1, "year":  2000}
         },
         {"titles": {"en": "United Nations Decade of International Law"}, "emoji": "⚖️",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1990},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1999}
+            "end": {"type": "multiYear", "era": 1, "year":  1999}
         },
         {"titles": {"en": "International Decade for Natural Disaster Reduction"}, "emoji": "🌪",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1990},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1999}
+            "end": {"type": "multiYear", "era": 1, "year":  1999}
         },
         {"titles": {"en": "Third Disarmament Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1990},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1999}
+            "end": {"type": "multiYear", "era": 1, "year":  1999}
         },
         {"titles": {"en": "World Decade for Cultural Development"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1988},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1997}
+            "end": {"type": "multiYear", "era": 1, "year":  1997}
         },
         {"titles": {"en": "Second Decade to Combat Racism and Racial Discrimination"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1983},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1993}
+            "end": {"type": "multiYear", "era": 1, "year":  1993}
         },
         {"titles": {"en": "United Nations Decade for Disabled Persons"}, "emoji": "♿︎",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1983},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1992}
+            "end": {"type": "multiYear", "era": 1, "year":  1992}
         },
         {"titles": {"en": "International Drinking Water Supply and Sanitation Decade"}, "emoji": "🚰",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1981},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1990}
+            "end": {"type": "multiYear", "era": 1, "year":  1990}
         },
         {"titles": {"en": "Third United Nations Development Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1981},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1990}
+            "end": {"type": "multiYear", "era": 1, "year":  1990}
         },
         {"titles": {"en": "Second Disarmament Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1980},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1990}
+            "end": {"type": "multiYear", "era": 1, "year":  1990}
         },
         {"titles": {"en": "Industrial Development Decade for Africa"}, "emoji": "🌍",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1980},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1989}
+            "end": {"type": "multiYear", "era": 1, "year":  1989}
         },
         {"titles": {"en": "United Nations Decade for Women: Equality, Development and Peace"}, "emoji": "♀",
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1976},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1985}
+            "end": {"type": "multiYear", "era": 1, "year":  1985}
         },
         {"titles": {"en": "Decade to Combat Racism and Racial Discrimination"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1973},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1983}
+            "end": {"type": "multiYear", "era": 1, "year":  1983}
         },
         {"titles": {"en": "Second United Nations Development Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1971},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1980}
+            "end": {"type": "multiYear", "era": 1, "year":  1980}
         },
         {"titles": {"en": "Disarmament Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1970},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1979}
+            "end": {"type": "multiYear", "era": 1, "year":  1979}
         },
         {"titles": {"en": "United Nations Development Decade"},
-            "startDateSpecification": {"type": "multiYear", "era": 1,
+            "start": {"type": "multiYear", "era": 1,
                 "year":  1960},
-            "endDateSpecification": {"type": "multiYear", "era": 1, "year":  1970}
+            "end": {"type": "multiYear", "era": 1, "year":  1970}
         }
     ]
 }

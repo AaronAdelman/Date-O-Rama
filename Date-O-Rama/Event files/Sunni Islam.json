@@ -7,13 +7,13 @@
     "eventSpecifications": [
         {
             "titles": {"en": "Mawlid (Birthday of the Prophet)", "he": "מוולד א־נבי", "ar": "مَولِد النَّبِي‎"},
-            "startDateSpecification": {"type": "allDay",
+            "start": {"type": "allDay",
                 "month":  3, "day":  12
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Mawlid"}, "category": "birthday"
         },
         {
             "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"},
-            "startDateSpecification": {"type": "allDay",
+            "start": {"type": "allDay",
                 "month":  9, "day":  29
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}
         }

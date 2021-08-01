@@ -5,48 +5,48 @@
     "calendarCode": "gre*",
     "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
     "eventSpecifications": [
-        {"titles": {"en": "Aries", "he": "טלה"}, "startDateSpecification": {
-            "type": "allDay", "month": 3, "day": 21}, "endDateSpecification": {
+        {"titles": {"en": "Aries", "he": "טלה"}, "start": {
+            "type": "allDay", "month": 3, "day": 21}, "end": {
                 "type": "allDay", "month": 4, "day": 19}, "category": "Aries"},
-        {"titles": {"en": "Taurus", "he": "שור"}, "startDateSpecification": {
-            "type": "allDay", "month": 4, "day": 20}, "endDateSpecification": {
+        {"titles": {"en": "Taurus", "he": "שור"}, "start": {
+            "type": "allDay", "month": 4, "day": 20}, "end": {
                 "type": "allDay", "month": 5, "day": 20}, "category": "Taurus"},
-        {"titles": {"en": "Gemini", "he": "תאומים"}, "startDateSpecification": {
-            "type": "allDay", "month": 5, "day": 21}, "endDateSpecification": {
+        {"titles": {"en": "Gemini", "he": "תאומים"}, "start": {
+            "type": "allDay", "month": 5, "day": 21}, "end": {
                 "type": "allDay", "month": 6, "day": 20}, "category": "Gemini"},
-        {"titles": {"en": "Cancer", "he": "סרטן"}, "startDateSpecification": {
-            "type": "allDay", "month": 6, "day": 21}, "endDateSpecification": {
+        {"titles": {"en": "Cancer", "he": "סרטן"}, "start": {
+            "type": "allDay", "month": 6, "day": 21}, "end": {
                 "type": "allDay", "month": 7, "day": 22}, "category": "Cancer"},
-        {"titles": {"en": "Leo", "he": "אריה"}, "startDateSpecification": {
-            "type": "allDay", "month": 7, "day": 23}, "endDateSpecification": {
+        {"titles": {"en": "Leo", "he": "אריה"}, "start": {
+            "type": "allDay", "month": 7, "day": 23}, "end": {
                 "type": "allDay", "month": 8, "day": 22}, "category": "Leo"},
-        {"titles": {"en": "Virgo", "he": "בתולה"}, "startDateSpecification": {
-            "type": "allDay", "month": 8, "day": 23}, "endDateSpecification": {
+        {"titles": {"en": "Virgo", "he": "בתולה"}, "start": {
+            "type": "allDay", "month": 8, "day": 23}, "end": {
                 "type": "allDay", "month": 9, "day": 22}, "category": "Virgo"},
-        {"titles": {"en": "Libra", "he": "מאזניים"}, "startDateSpecification": {
-            "type": "allDay", "month": 9, "day": 23}, "endDateSpecification": {
+        {"titles": {"en": "Libra", "he": "מאזניים"}, "start": {
+            "type": "allDay", "month": 9, "day": 23}, "end": {
                 "type": "allDay", "month": 10, "day": 22}, "category": "Libra"},
-        {"titles": {"en": "Scorpio", "he": "עקרב"}, "startDateSpecification": {
-            "type": "allDay", "month": 10, "day": 23}, "endDateSpecification": {
+        {"titles": {"en": "Scorpio", "he": "עקרב"}, "start": {
+            "type": "allDay", "month": 10, "day": 23}, "end": {
                 "type": "allDay", "month": 11, "day": 22}, "category": "Scorpio"},
-        {"titles": {"en": "Sagittarius", "he": "קשת"}, "startDateSpecification": {
-            "type": "allDay", "month": 11, "day": 23}, "endDateSpecification": {
+        {"titles": {"en": "Sagittarius", "he": "קשת"}, "start": {
+            "type": "allDay", "month": 11, "day": 23}, "end": {
                 "type": "allDay", "month": 12, "day": 21}, "category": "Sagittarius"},
-        {"titles": {"en": "Capricorn", "he": "גדי"}, "startDateSpecification": {
-            "type": "allDay", "month": 12, "day": 22}, "endDateSpecification": {
+        {"titles": {"en": "Capricorn", "he": "גדי"}, "start": {
+            "type": "allDay", "month": 12, "day": 22}, "end": {
                 "type": "allDay", "month": 1, "day": 19}, "category": "Capricorn"},
-        {"titles": {"en": "Aquarius", "he": "דלי"}, "startDateSpecification": {
-            "type": "allDay", "month": 1, "day": 20}, "endDateSpecification": {
+        {"titles": {"en": "Aquarius", "he": "דלי"}, "start": {
+            "type": "allDay", "month": 1, "day": 20}, "end": {
                 "type": "allDay", "month": 2, "day": 18}, "category": "Aquarius"},
-        {"titles": {"en": "Pisces", "he": "דגים"}, "startDateSpecification": {
-            "type": "allDay", "month": 2, "day": 19}, "endDateSpecification": {
+        {"titles": {"en": "Pisces", "he": "דגים"}, "start": {
+            "type": "allDay", "month": 2, "day": 19}, "end": {
                 "type": "allDay", "month": 3, "day": 20}, "category": "Pisces"},
-        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "startDateSpecification": {"weekdays": [1], "type": "allDay"}, "category": "Sun"},
-        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "startDateSpecification": {"weekdays": [2], "type": "allDay"}, "category": "Moon"},
-        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "startDateSpecification": {"weekdays": [3], "type": "allDay"}, "category": "Mars"},
-        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "startDateSpecification": {"weekdays": [4], "type": "allDay"}, "category": "Mercury"},
-        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "startDateSpecification": {"weekdays": [5], "type": "allDay"}, "category": "Jupiter"},
-        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "startDateSpecification": {"weekdays": [6], "type": "allDay"}, "category": "Venus"},
-        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "startDateSpecification": {"weekdays": [7], "type": "allDay"}, "category": "Saturn"}
+        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"weekdays": [1], "type": "allDay"}, "category": "Sun"},
+        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"weekdays": [2], "type": "allDay"}, "category": "Moon"},
+        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"weekdays": [3], "type": "allDay"}, "category": "Mars"},
+        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "allDay"}, "category": "Mercury"},
+        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "allDay"}, "category": "Jupiter"},
+        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "allDay"}, "category": "Venus"},
+        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "allDay"}, "category": "Saturn"}
     ]
 }

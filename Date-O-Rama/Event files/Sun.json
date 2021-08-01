@@ -5,15 +5,15 @@
     "calendarCode": "gre*",
     "calendarColor": {"red":  1.0, "green":  1.0, "blue":  0.0},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "startDateSpecification": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
         {
             "titles": {
                 "en": "Civil dawn",
                 "he": "שחר אזרחי"
             },
-            "startDateSpecification": {
+            "start": {
                 "type": "degreesBelowHorizon",
                 "degreesBelowHorizon":  6.0,
                 "rising":  true,
@@ -25,7 +25,7 @@
                 "en": "Civil dusk",
                 "he": "בין הערביים אזרחי"
             },
-            "startDateSpecification": {
+            "start": {
                 "type": "degreesBelowHorizon",
                 "degreesBelowHorizon":  6.0,
                 "rising":  false,
@@ -38,7 +38,7 @@
                 "en": "Nautical dawn",
                 "he": "שחר ימי"
             },
-            "startDateSpecification": {
+            "start": {
                 "type": "degreesBelowHorizon",
                 "degreesBelowHorizon":  12.0,
                 "rising":  true,
@@ -50,7 +50,7 @@
                 "en": "Nautical dusk",
                 "he": "בין העבריים ימי"
             },
-            "startDateSpecification": {
+            "start": {
                 "type": "degreesBelowHorizon",
                 "degreesBelowHorizon":  12.0,
                 "rising":  false,
@@ -63,7 +63,7 @@
                 "en": "Astronomical dawn",
                 "he": "שחר אסטרונומי"
             },
-            "startDateSpecification": {
+            "start": {
                 "type": "degreesBelowHorizon",
                 "degreesBelowHorizon":  18.0,
                 "rising":  true,
@@ -75,7 +75,7 @@
                 "en": "Astronomical dusk",
                 "he": "בין הערביים אסטרונומי"
             },
-            "startDateSpecification": {
+            "start": {
                 "type": "degreesBelowHorizon",
                 "degreesBelowHorizon":  18.0,
                 "rising":  false,
