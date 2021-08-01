@@ -82,5 +82,13 @@
 {"titles": {"en": "International Year of The Child"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1979}, "emoji": "🧒"},
 {"titles": {"en": "International Anti-Apartheid Year"}, "startDateSpecification": {"type": "allDay", "era": 1, "year":  1978, "month": 3, "day": 21}, "endDateSpecification": {"type": "allDay", "era": 1, "year":  1979, "month": 3, "day": 20}, "emoji": "🇿🇦"},
 {"titles": {"en": "International Women’s Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1975}, "emoji": "♀"},
+{"titles": {"en": "World Population Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1974}},
+{"titles": {"en": "International Year for Action to Combat Racism and Racial Prejudice"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1971}},
+{"titles": {"en": "International Education Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1970}, "emoji": "📚"},
+{"titles": {"en": "International Year for Human Rights"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1968}},
+{"titles": {"en": "International Tourist Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1967}},
+{"titles": {"en": "International Co-operation Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1965}},
+{"titles": {"en": "International Health and Medical Research Year"}, "startDateSpecification": {"type": "allYear", "era": 1, "year":  1961}, "emoji": "⚕️"},
+{"titles": {"en": "World Refugee Year"}, "startDateSpecification": {"type": "allDay", "era": 1, "year":  1959, "month": 6, "day": 1}, "endDateSpecification": {"type": "allDay", "era": 1, "year":  1960, "month": 5, "day": 31}}
 ]
 }
