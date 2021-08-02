@@ -405,4 +405,23 @@ class Date_O_RamaTests: XCTestCase {
         let SunsetString = transformedTimes[.Sunset]!
         XCTAssert(SunsetString == "Jul 12, 2021 at 7:48:42 PM", "Sunset:  \(SunsetString)")
     } // func testIslamicPrayerTimes() throws
+    
+    func testFirst() throws {
+        let first1: Array<Int?> = [nil, nil, nil, nil]
+        let first2: Array<Int?> = [1, 2019, 1, 4]
+
+        let start1: Array<Int?> = [1, 2022, 1, 4]
+        let start2: Array<Int?> = [1, 2021, 1, 4]
+        let start3: Array<Int?> = [1, 2020, 1, 4]
+        let start4: Array<Int?> = [1, 2019, 1, 4]
+        let start5: Array<Int?> = [1, 2018, 1, 4]
+        
+        XCTAssert(start1.isAfterOrEqual(first: first1))
+    
+        XCTAssert(start1.isAfterOrEqual(first: first2))
+        XCTAssert(start2.isAfterOrEqual(first: first2))
+        XCTAssert(start3.isAfterOrEqual(first: first2))
+        XCTAssert(start4.isAfterOrEqual(first: first2))
+        XCTAssertFalse(start5.isAfterOrEqual(first: first2))
+    }
 } // class Date_O_RamaTests

@@ -283,6 +283,8 @@
 		A5BFC5AD246971030075AF58 /* ASAEventsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5AC246971030075AF58 /* ASAEventsTab.swift */; };
 		A5C4DCB02694C99B005926D1 /* Islam (times, ISNA).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */; };
 		A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */; };
+		A5C7793D26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */; };
+		A5C7793E26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
 		A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C002433361400CFEE47 /* ASAClocksTab.swift */; };
 		A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C77C022433361900CFEE47 /* Assets.xcassets */; };
@@ -532,6 +534,7 @@
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
 		A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islam (times, ISNA).json"; sourceTree = "<group>"; };
+		A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "United Nations International Days and Weeks.json"; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C77C002433361400CFEE47 /* ASAClocksTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksTab.swift; sourceTree = "<group>"; };
@@ -674,6 +677,7 @@
 				A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */,
 				A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
+				A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1162,6 +1166,7 @@
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A5BD09D126B2D40D00738C0B /* United Nations International Years.json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
+				A5C7793E26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5BDE78926679A6200F47416 /* Shia.json in Resources */,
 				A599FEEE269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
@@ -1219,6 +1224,7 @@
 				A5BDE7A32667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
 				A533798124B2333500340C0B /* Sun.json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitism (Gregorian).json in Resources */,
+				A5C7793D26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */,
 				A5BDE7A02667B66800F47416 /* Israel (Gregorian).json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,

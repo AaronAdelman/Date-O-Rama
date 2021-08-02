@@ -1,0 +1,10 @@
+{
+"titles": {"en": "United Nations International Days and Weeks"},
+"supportedLocales": ["en"],
+"defaultLocale": "en",
+"calendarCode": "gre*",
+"calendarColor": {"red":  0.2745098039, "green":  0.6117647059, "blue":  0.8392156863},
+"eventSpecifications": [
+    {"titles": {"en": "World Braille Day"}, "start": {"type" : "allDay", "month" : 1, "day" : 4}, "emoji": "⠃", "first" : {"type" : "allDay", "era" : 1, "year" : 2019}, "urls" : {"en": "https://nationaldaycalendar.com/world-braille-day-january-4/"}}
+]
+}

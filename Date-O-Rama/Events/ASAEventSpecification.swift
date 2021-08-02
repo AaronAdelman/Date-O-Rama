@@ -22,8 +22,11 @@ class ASAEventSpecification: Codable {
     } // var isAllDay
 
     var calendarCode:  ASACalendarCode?
-    var startDateSpecification:  ASADateSpecification
-    var endDateSpecification:  ASADateSpecification?
+    var startDateSpecification: ASADateSpecification
+    var endDateSpecification: ASADateSpecification?
+    
+    /// The specification for the first occurrence of this event
+    var firstDateSpecification: ASADateSpecification?
     
     var regionCodes:  Array<String>?
     var excludeRegionCodes:  Array<String>?
@@ -37,8 +40,9 @@ class ASAEventSpecification: Codable {
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
+        case firstDateSpecification = "first"
         case titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji
-    }
+    } // enum CodingKeys
 } // extension ASAEventSpecification
 
 

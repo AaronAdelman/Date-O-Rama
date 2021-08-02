@@ -112,15 +112,25 @@ class ASAEventCalendar {
         return (false, nil, nil)
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
+                    
         // Time change events
         if startDateSpecification.type == .timeChange {
             return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
-        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components
-//                                                       , strong: true
-        )
+        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
+        
+        // Check whether the event is before the first occurrence
+        if firstDateSpecification != nil {            
+            let start = tweakedStartDateSpecification.EYMD
+            let first = firstDateSpecification!.EYMD
+                        
+            if !start.isAfterOrEqual(first: first) {
+                return MATCH_FAILURE
+            }
+        }
 
         // All-year events
         if startDateSpecification.type == .allYear {
@@ -131,7 +141,7 @@ class ASAEventCalendar {
                 let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
                 return (true, startDate, endDate)
             } else {
-                return (false, nil, nil)
+                return MATCH_FAILURE
             }
         }
         
@@ -440,7 +450,7 @@ class ASAEventCalendar {
                 appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
             }
             
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay, firstDateSpecification: eventSpecification.firstDateSpecification)
             if matchesDateSpecifications {
                 let matchesRegionCode: Bool = eventSpecification.match(regionCode: ISOCountryCode)
                 if matchesRegionCode {
