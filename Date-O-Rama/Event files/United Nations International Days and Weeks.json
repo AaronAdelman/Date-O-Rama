@@ -61,5 +61,13 @@
         {"titles": {"en": "World Day for Safety and Health at Work"}, "start": {"type" : "allDay", "month" : 4, "day" : 28}, "first" : {"type" : "allDay", "era" : 1, "year" : 2003}, "urls": {"en": "https://nationaldaycalendar.com/world-day-for-safety-and-health-at-work-april-28/"}, "emoji": "🥽"},
         {"titles": {"en": "International Jazz Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 30}, "first" : {"type" : "allDay", "era" : 1, "year" : 2012}, "urls": {"en": "https://nationaldaycalendar.com/international-jazz-day-april-30/"}, "emoji": "🎷"},
 
+        {"titles": {"en": "World Tuna Day"}, "start": {"type" : "allDay", "month" : 5, "day" : 2}, "first" : {"type" : "allDay", "era" : 1, "year" : 2018}, "urls": {"en": "https://nationaldaycalendar.com/world-tuna-day-may-2/"}, "emoji": "🐟"},
+        {"titles": {"en": "World Press Freedom Day"}, "start": {"type" : "allDay", "month" : 5, "day" : 3}, "first" : {"type" : "allDay", "era" : 1, "year" : 1994}, "urls": {"en": "https://nationaldaycalendar.com/world-press-freedom-day-may-3/"}, "emoji": "📰"},
+        {"titles": {"en": "World Portuguese Language Day"}, "start": {"type" : "allDay", "month" : 5, "day" : 5}, "first" : {"type" : "allDay", "era" : 1, "year" : 2020}, "urls": {"en": "https://nationaldaycalendar.com/world-portuguese-language-day-may-5/"}, "emoji": "🇵🇹"},
+        {"titles": {"en": "World Migratory Bird Day"}, "start": {"type" : "allDay", "month" : 5, "weekdays": [7], "weekdayRecurrence": 2}, "first" : {"type" : "allDay", "era" : 1, "year" : 1993}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},
+
+
+        {"titles": {"en": "World Migratory Bird Day"}, "start": {"type" : "allDay", "month" : 10, "weekdays": [7], "weekdayRecurrence": 2}, "first" : {"type" : "allDay", "era" : 1, "year" : 1993}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},
+
     ]
 }
