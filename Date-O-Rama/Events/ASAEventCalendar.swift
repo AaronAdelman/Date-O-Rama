@@ -466,7 +466,7 @@ class ASAEventCalendar {
                             title = NSLocalizedString("Fall back", comment: "")
                         }
                     } else {
-                        title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)!
+                        title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? ""
                     }
                     let color = self.color
                     var startDate = returnedStartDate

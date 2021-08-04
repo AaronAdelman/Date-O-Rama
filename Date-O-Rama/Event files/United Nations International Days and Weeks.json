@@ -43,7 +43,10 @@
     {"titles": {"en": "International Day of Sport for Development and Peace"}, "start": {"type" : "allDay", "month" : 4, "day" : 6}, "first" : {"type" : "allDay", "era" : 1, "year" : 2014}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-sport-for-development-and-peace-april-6/"}, "emoji": "🏀"},
     {"titles": {"en": "International Day of Reflection on the 1994 Genocide against the Tutsi in Rwanda"}, "start": {"type" : "allDay", "month" : 4, "day" : 7}, "first" : {"type" : "allDay", "era" : 1, "year" : 2004}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-reflection-on-the-1994-genocide-in-rwanda-april-7/"}, "emoji": "🇷🇼"},
     {"titles": {"en": "World Health Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 7}, "first" : {"type" : "allDay", "era" : 1, "year" : 1950}, "urls": {"en": "https://nationaldaycalendar.com/world-health-day-april-7/"}, "emoji": "⚕️"},
-
+    {"titles": {"en": "International Day of Human Space Flight"}, "start": {"type" : "allDay", "month" : 4, "day" : 12}, "first" : {"type" : "allDay", "era" : 1, "year" : 2012}, "urls": {"en": "https://nationaldaycalendar.com/international-day-for-human-space-flight-april-12/"}, "emoji": "🚀"},
+    {"titles": {"en": "World Chagas Disease Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 14}, "first" : {"type" : "allDay", "era" : 1, "year" : 2020}, "urls": {"en": "https://nationaldaycalendar.com/world-chagas-disease-day-april-14/"}},
+    {"titles": {"en": "Chinese Language Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 20}, "first" : {"type" : "allDay", "era" : 1, "year" : 2011}, "urls": {"en": "https://nationaldaycalendar.com/chinese-language-day-april-20/"}, "emoji": "🇹🇼"},
+    {"titles": {"en": "World Creativity and Innovation Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 21}, "first" : {"type" : "allDay", "era" : 1, "year" : 2021}, "emoji": "💡"},
 
 ]
 }
