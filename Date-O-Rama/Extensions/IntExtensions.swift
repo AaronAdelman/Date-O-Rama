@@ -33,6 +33,31 @@ extension Int {
         
         return values!.contains(ASAWeekday(rawValue: self)!)
     } // func matches(_ values:  Array<ASAWeekday>?) -> Bool
+    
+    /// Checks whether self as day of the month matches a recurrence of the day of the week, e.g., the first Thursday of the month.
+    /// - Parameters:
+    ///   - n: The number of the recurrence.  (Day of the week itself is not passed and is actually not needed here.)
+    ///   - w: Length of the week.  (Does not need to be 7.)
+    ///   - lengthOfMonth: Length of the month.
+    /// - Returns: Whether self can be the number of the recurrence of the day of the week.
+    func matches(recurrence n: Int, lengthOfWeek w: Int, lengthOfMonth: Int) -> Bool {
+        var firstPossibleValue, lastPossibleValue: Int
+        
+        if n > 0 {
+            // Numbering is from the start of the month
+            firstPossibleValue = (n - 1) * w + 1
+            lastPossibleValue  = n * w
+            return firstPossibleValue <= self && self <= lastPossibleValue
+        } else if n < 0 {
+            // Numbering is from the end of the month
+            firstPossibleValue = (-1 + (n + 1) * w) + lengthOfMonth + 1
+            lastPossibleValue  = (n * w) + lengthOfMonth + 1
+            return firstPossibleValue >= self && self >= lastPossibleValue
+        } else {
+            debugPrint(#file, #function, "Invalid recurrence: \(n)!") // Should not see this
+            return true
+        }
+    } // func matches(recurrence n: Int, lengthOfWeek w: Int, lengthOfMonth: Int) -> Bool
 } // extension Int
 
 

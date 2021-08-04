@@ -380,8 +380,20 @@ class ASAEventCalendar {
         
         let supportsDay: Bool = calendar.supports(calendarComponent: .day)
         if supportsDay {
-            if !(components.day?.matches(value: dateSpecification.day) ?? false) {
-                return false
+            if dateSpecification.day != nil {
+                // Check specified day of month
+                if !(components.day!.matches(value: dateSpecification.day!) ) {
+                    return false
+                }
+            } else {
+                // Check for recurrence of weekday
+                assert(dateSpecification.weekdayRecurrence != nil)
+                assert(dateSpecification.weekdays != nil)
+                let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
+                
+                if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: calendar.daysPerWeek!, lengthOfMonth: daysInMonth)) {
+                    return false
+                }
             }
         }
         

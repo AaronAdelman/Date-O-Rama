@@ -47,6 +47,7 @@
     {"titles": {"en": "World Chagas Disease Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 14}, "first" : {"type" : "allDay", "era" : 1, "year" : 2020}, "urls": {"en": "https://nationaldaycalendar.com/world-chagas-disease-day-april-14/"}},
     {"titles": {"en": "Chinese Language Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 20}, "first" : {"type" : "allDay", "era" : 1, "year" : 2011}, "urls": {"en": "https://nationaldaycalendar.com/chinese-language-day-april-20/"}, "emoji": "🇹🇼"},
     {"titles": {"en": "World Creativity and Innovation Day"}, "start": {"type" : "allDay", "month" : 4, "day" : 21}, "first" : {"type" : "allDay", "era" : 1, "year" : 2021}, "emoji": "💡"},
+    {"titles": {"en": "International Girls in ICT Day"}, "start": {"type" : "allDay", "month" : 4, "weekdays": [5], "weekdayRecurrence": 4}, "first" : {"type" : "allDay", "era" : 1, "year" : 2011}, "emoji": "👧", "urls": {"en": "https://nationaldaycalendar.com/international-girls-in-ict-day-fourth-thursday-in-april/"}},
 
 ]
 }

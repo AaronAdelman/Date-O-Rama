@@ -32,16 +32,27 @@ enum ASATimeSpecificationDayHalf:  String, Codable {
 
 struct ASADateSpecification:  Codable {
     var era:  Int?
-    var year:  Int?  // Will be ignored if not relevant
-    var month:  Int? // Will be ignored if not relevant
+    
+    /// Will be ignored if not relevant
+    var year:  Int?
+    
+    /// Will be ignored if not relevant
+    var month:  Int?
+    
     var day:  Int?
+    
     var weekdays:  Array<ASAWeekday>?
+    
+    /// If non-nil, the number of the recurrence of the first weekday given in the month.  If negative, then -1 is the last recurrence, -2 is the next to last recurrence, etc.
+    var weekdayRecurrence: Int?
     var lengthsOfMonth:  Array<Int>?
     var lengthsOfYear:  Array<Int>?
     var dayOfYear:  Int?
 
     var yearDivisor:  Int?
-    var yearRemainder:  Int? // Matches if year mod yearDivisor = yearRemainder
+    
+    /// Matches if year mod yearDivisor = yearRemainder
+    var yearRemainder:  Int?
 
     var type: ASATimeSpecificationType
     
