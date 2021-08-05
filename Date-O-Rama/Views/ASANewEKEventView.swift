@@ -146,7 +146,7 @@ struct ASANewEKEventView: View {
     @State private var recurrenceMonthly: ASARecurrenceMonthly = .byDayOfMonth
     @State private var recurrenceDayOfTheWeek: Int             =  1
     @State private var recurrenceWeekNumber: ASARecurrenceWeekNumber               = .first
-    @State private var recurrenceYearly: ASARecurrenceYearly   = .onAnyDay
+    @State private var recurrenceYearly: ASARecurrenceYearly   = .byDayOfWeekAndWeekNumber
     @State private var recurrenceEndType: ASARecurrenceEndType = .none
 
     @State private var URLString: String = ""
