@@ -79,6 +79,9 @@
         {"titles": {"en": "International Day to End Obstetric Fistula"}, "start": {"type" : "allDay", "month" : 5, "day": 23}, "first" : {"type" : "allDay", "era" : 1, "year" : 2013}, "urls": {"en": "https://nationaldaycalendar.com/international-day-to-end-obstetric-fistula-may-23/"}, "emoji": "🩺"},
         {"titles": {"en": "Week of Solidarity with the Peoples of Non-Self-Governing Territories"}, "start": {"type" : "allDay", "month" : 5, "day": 25}, "end": {"type" : "allDay", "month" : 5, "day": 31}, "first" : {"type" : "allDay", "era" : 1, "year" : 2000}},
 
+        {"titles": {"en": "International Day of UN Peacekeepers"}, "start": {"type" : "allDay", "month" : 5, "day": 29}, "first" : {"type" : "allDay", "era" : 1, "year" : 2003}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-un-peacekeepers-may-29/"}, "emoji": "🇺🇳", "notes": {"en": "Celebrating an organization set up to maintain the peace which has consistently failed in its mission"}},
+        {"titles": {"en": "World No-Tobacco Day"}, "start": {"type" : "allDay", "month" : 5, "day": 31}, "first" : {"type" : "allDay", "era" : 1, "year" : 1989}, "urls": {"en": "https://nationaldaycalendar.com/world-no-tobacco-day-may-31/"}, "emoji": "🚭"},
+
 
 
         {"titles": {"en": "World Migratory Bird Day"}, "start": {"type" : "allDay", "month" : 10, "weekdays": [7], "weekdayRecurrence": 2}, "first" : {"type" : "allDay", "era" : 1, "year" : 1993}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},

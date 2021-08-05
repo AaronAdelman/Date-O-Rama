@@ -169,11 +169,16 @@ struct ASAMiniCalendarView:  View {
     }
     
     fileprivate func gridRange() -> ClosedRange<Int> {
-        let gridFirstDay = gridFirstDay()
+        var gridFirstDay = gridFirstDay()
         
         let preexistingDays = daysInMonth - gridFirstDay + 1
         let neededDays = Int(ceil(Double(preexistingDays) / (Double(daysPerWeek)))) * daysPerWeek
-        let gridLastDay = (neededDays - preexistingDays) + daysInMonth
+        var gridLastDay = (neededDays - preexistingDays) + daysInMonth
+        if gridLastDay < gridFirstDay {
+            let temp = gridLastDay
+            gridLastDay = gridFirstDay
+            gridFirstDay = temp
+        }
         
         return gridFirstDay...gridLastDay
     } // func gridRange() -> ClosedRange<Int>
