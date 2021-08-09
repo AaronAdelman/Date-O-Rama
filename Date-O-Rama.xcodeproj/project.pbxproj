@@ -674,10 +674,10 @@
 				A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
+				A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */,
 				A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */,
 				A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
-				A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
