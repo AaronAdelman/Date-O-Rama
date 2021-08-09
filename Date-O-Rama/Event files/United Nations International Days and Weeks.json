@@ -84,6 +84,7 @@
 
         {"titles": {"en": "Global Day of Parents"}, "start": {"type" : "allDay", "month" : 6, "day": 1}, "first" : {"type" : "allDay", "era" : 1, "year" : 2013}, "urls": {"en": "https://nationaldaycalendar.com/global-day-of-parents-june-1/"}, "emoji": "👨‍👩‍👧‍👦"},
         {"titles": {"en": "World Bicycle Day"}, "start": {"type" : "allDay", "month" : 6, "day": 3}, "first" : {"type" : "allDay", "era" : 1, "year" : 2019}, "urls": {"en": "https://nationaldaycalendar.com/world-bicycle-day-june-3/"}, "emoji": "🚲"},
+        {"titles": {"en": "International Day of Innocent Children Victims of Aggression"}, "start": {"type" : "allDay", "month" : 6, "day": 4}, "first" : {"type" : "allDay", "era" : 1, "year" : 1983}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-innocent-children-victims-of-aggression-june-4/"}, "emoji": "👦👧", "notes": {"en": "May have an antisemitic origin.  Needs investigation."}},
 
 
 
