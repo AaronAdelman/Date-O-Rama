@@ -117,6 +117,10 @@
         {"titles": {"en": "Nelson Mandela International Day"}, "start": {"type": "allDay", "month": 7, "day": 18}, "first": {"type": "allDay", "era": 1, "year": 2010}, "urls": {"en": "https://nationaldaycalendar.com/nelson-mandela-international-day-july-18/"}},
         {"titles": {"en": "World Chess Day"}, "start": {"type": "allDay", "month": 7, "day": 20}, "first": {"type": "allDay", "era": 1, "year": 1967}, "urls": {"en": "https://nationaldaycalendar.com/international-chess-day-july-20/"}, "emoji": "♙"},
         {"titles": {"en": "World Drowning Prevention Day"}, "start": {"type": "allDay", "month": 7, "day": 25}, "first": {"type": "allDay", "era": 1, "year": 2021}},
+        {"titles": {"en": "World Hepatitis Day"}, "start": {"type": "allDay", "month": 7, "day": 28}, "first": {"type": "allDay", "era": 1, "year": 2010}, "urls": {"en": "https://nationaldaycalendar.com/world-hepatitis-day-july-28/"}},
+        {"titles": {"en": "International Day of Friendship"}, "start": {"type": "allDay", "month": 7, "day": 30}, "first": {"type": "allDay", "era": 1, "year": 2012}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-friendship-july-30/"}},
+        {"titles": {"en": "World Day against Trafficking in Persons"}, "start": {"type": "allDay", "month": 7, "day": 30}, "first": {"type": "allDay", "era": 1, "year": 2014}, "urls": {"en": "https://nationaldaycalendar.com/world-day-against-trafficking-in-persons-july-30/"}},
+
 
 
         {"titles": {"en": "World Migratory Bird Day"}, "start": {"type": "allDay", "month": 10, "weekdays": [7], "weekdayRecurrence": 2}, "first": {"type": "allDay", "era": 1, "year": 1993}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},
