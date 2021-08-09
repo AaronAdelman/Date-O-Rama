@@ -111,6 +111,12 @@
         {"titles": {"en": "International Asteroid Day"}, "start": {"type": "allDay", "month": 6, "day": 30}, "first": {"type": "allDay", "era": 1, "year": 2016}, "urls": {"en": "https://nationaldaycalendar.com/international-asteroid-day-june-30/"}, "emoji": "☄️"},
         {"titles": {"en": "International Day of Parliamentarism"}, "start": {"type": "allDay", "month": 6, "day": 30}, "first": {"type": "allDay", "era": 1, "year": 2019}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-parliamentarism-june-30/"}},
 
+        {"titles": {"en": "International Day of Cooperatives"}, "start": {"type": "allDay", "month": 7, "weekdays": [7], "weekdayRecurrence": 1}, "first": {"type": "allDay", "era": 1, "year": 1995}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-cooperatives-first-saturday-in-july/"}},
+        {"titles": {"en": "World Population Day"}, "start": {"type": "allDay", "month": 7, "day": 11}, "first": {"type": "allDay", "era": 1, "year": 1991}, "urls": {"en": "https://nationaldaycalendar.com/world-population-day-july-11/"}},
+        {"titles": {"en": "World Youth Skills Day"}, "start": {"type": "allDay", "month": 7, "day": 15}, "first": {"type": "allDay", "era": 1, "year": 2015}, "urls": {"en": "https://nationaldaycalendar.com/world-youth-skills-day-july-15/"}, "emoji": "👦👧"},
+        {"titles": {"en": "Nelson Mandela International Day"}, "start": {"type": "allDay", "month": 7, "day": 18}, "first": {"type": "allDay", "era": 1, "year": 2010}, "urls": {"en": "https://nationaldaycalendar.com/nelson-mandela-international-day-july-18/"}},
+        {"titles": {"en": "World Chess Day"}, "start": {"type": "allDay", "month": 7, "day": 20}, "first": {"type": "allDay", "era": 1, "year": 1967}, "urls": {"en": "https://nationaldaycalendar.com/international-chess-day-july-20/"}, "emoji": "♙"},
+        {"titles": {"en": "World Drowning Prevention Day"}, "start": {"type": "allDay", "month": 7, "day": 25}, "first": {"type": "allDay", "era": 1, "year": 2021}},
 
 
         {"titles": {"en": "World Migratory Bird Day"}, "start": {"type": "allDay", "month": 10, "weekdays": [7], "weekdayRecurrence": 2}, "first": {"type": "allDay", "era": 1, "year": 1993}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},
