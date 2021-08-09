@@ -97,6 +97,6 @@
         {"titles": {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, "start": {"type": "allDay", "month": 3, "day": 17}},
         {"titles": {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, "start": {"type": "allDay", "month": 4, "day": 21}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, "start": {"type": "allDay", "month": 7, "day": 7}},
-        {"titles": {"he": "יום האם/יום המשפחה", "en": "Family Day/Mother’s Day"}, "start": {"type": "allDay", "month": 5, "day": 30}},
+        {"titles": {"he": "יום האם/יום המשפחה", "en": "Family Day/Mother’s Day"}, "start": {"type": "allDay", "month": 5, "day": 30}, "emoji": "👨‍👩‍👧‍👦"},
     ]
 }
