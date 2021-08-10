@@ -385,21 +385,30 @@ class ASAEventCalendar {
                 if !(components.day!.matches(value: dateSpecification.day!) ) {
                     return false
                 }
-            } else {
-                // Check for recurrence of weekday
-                assert(dateSpecification.weekdayRecurrence != nil)
-                assert(dateSpecification.weekdays != nil)
-                let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
-                
-                if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: calendar.daysPerWeek!, lengthOfMonth: daysInMonth)) {
-                    return false
-                }
             }
+//                else {
+//                // Check for recurrence of weekday
+//                assert(dateSpecification.weekdayRecurrence != nil)
+//                assert(dateSpecification.weekdays != nil)
+//                let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
+//
+//                if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: calendar.daysPerWeek!, lengthOfMonth: daysInMonth)) {
+//                    return false
+//                }
+//            }
         }
         
         let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
         if supportsWeekday {
             if !(components.weekday?.matches(weekdays: dateSpecification.weekdays) ?? false) {
+                return false
+            }
+        }
+        
+        if dateSpecification.weekdayRecurrence != nil && dateSpecification.weekdays != nil {
+            let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
+            
+            if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: calendar.daysPerWeek!, lengthOfMonth: daysInMonth)) {
                 return false
             }
         }

@@ -52,7 +52,11 @@ extension Int {
             // Numbering is from the end of the month
             firstPossibleValue = (-1 + (n + 1) * w) + lengthOfMonth + 1
             lastPossibleValue  = (n * w) + lengthOfMonth + 1
-            return firstPossibleValue >= self && self >= lastPossibleValue
+            let result: Bool = firstPossibleValue >= self && self >= lastPossibleValue
+//            if result {
+//                debugPrint(#file, #function, firstPossibleValue, self, lastPossibleValue)
+//            }
+            return result
         } else {
             debugPrint(#file, #function, "Invalid recurrence: \(n)!") // Should not see this
             return true
