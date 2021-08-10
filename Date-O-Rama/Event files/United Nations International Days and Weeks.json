@@ -150,11 +150,18 @@
         {"titles": {"en": "World Maritime Day"}, "start": {"type": "allDay", "month": 9, "weekdays": [5], "weekdayRecurrence": -1}, "first": {"type": "allDay", "era": 1, "year": 1978}, "urls": {"en": "https://nationaldaycalendar.com/world-maritime-day-last-thursday-in-september/"}, "emoji": "🛥"},
         {"titles": {"en": "International Translation Day"}, "start": {"type": "allDay", "month": 9, "day": 30}, "first": {"type": "allDay", "era": 1, "year": 2017}, "emoji": "🪟"},
 
+        {"titles": {"en": "International Day of Older Persons"}, "start": {"type": "allDay", "month": 10, "day": 1}, "first": {"type": "allDay", "era": 1, "year": 1991}, "emoji": "👵👴", "urls": {"en": "https://nationaldaycalendar.com/international-day-of-older-persons-october-1/"}},
+        {"titles": {"en": "International Day of Non-Violence"}, "start": {"type": "allDay", "month": 10, "day": 2}, "first": {"type": "allDay", "era": 1, "year": 2007}, "emoji": "🔫"},
+        {"titles": {"en": "World Habitat Day"}, "start": {"type": "allDay", "month": 10, "weekdays": [2], "weekdayRecurrence": 1}, "first": {"type": "allDay", "era": 1, "year": 1986}, "urls": {"en": "https://nationaldaycalendar.com/world-habitat-day-first-monday-in-october/"}, "emoji": "🏙"},
 
 
 
 
         {"titles": {"en": "World Migratory Bird Day"}, "start": {"type": "allDay", "month": 10, "weekdays": [7], "weekdayRecurrence": 2}, "first": {"type": "allDay", "era": 1, "year": 1993}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},
+        {"titles": {"en": "World Space Week"}, "start": {"type": "allDay", "month": 10, "day": 4}, "end": {"type": "allDay", "month": 10, "day": 10}, "first": {"type": "allDay", "era": 1, "year": 2000}, "emoji": "🪐", "urls": {"en": "https://nationaldaycalendar.com/world-space-week-october-4-10/"}},
+        {"titles": {"en": "World Teachers’ Day"}, "start": {"type": "allDay", "month": 10, "day": 5}, "first": {"type": "allDay", "era": 1, "year": 1995}, "urls": {"en": "https://nationaldaycalendar.com/world-teachers-day-october-5/"}, "emoji": "👨‍🏫👩‍🏫"},
+        {"titles": {"en": "World Statistics Day"}, "start": {"type": "allDay", "month": 10, "day": 20, "yearDivisor": 5, "yearRemainder": 0}, "first": {"type": "allDay", "era": 1, "year": 2010}, "emoji": "📊", "urls": {"en": "https://nationaldaycalendar.com/world-statistics-day-october-20/"}},
+
 
     ]
 }
