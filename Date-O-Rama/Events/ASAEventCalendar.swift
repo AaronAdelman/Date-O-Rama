@@ -386,16 +386,6 @@ class ASAEventCalendar {
                     return false
                 }
             }
-//                else {
-//                // Check for recurrence of weekday
-//                assert(dateSpecification.weekdayRecurrence != nil)
-//                assert(dateSpecification.weekdays != nil)
-//                let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
-//
-//                if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: calendar.daysPerWeek!, lengthOfMonth: daysInMonth)) {
-//                    return false
-//                }
-//            }
         }
         
         let supportsWeekday: Bool = calendar.supports(calendarComponent: .weekday)
