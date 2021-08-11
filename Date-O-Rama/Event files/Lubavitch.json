@@ -88,12 +88,12 @@
         {
             "titles": {"he": "יום גאולה של יוסף יצחק שניאורסאהן", "en": "Yud Beis-Yud Gimmel Tammuz"},
             "start": {
-                "type": "allDay",
+                "type": "multiDay",
                 "month":  11,
                 "day":  12
             },
             "end": {
-                "type": "allDay",
+                "type": "multiDay",
                 "month":  11,
                 "day":  13
             }, "urls": {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=4/12"}

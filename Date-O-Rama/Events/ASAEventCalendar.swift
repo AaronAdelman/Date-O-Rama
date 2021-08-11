@@ -213,6 +213,7 @@ class ASAEventCalendar {
 
         if endDateSpecification == nil {
             // One-day and one-instant events
+            assert(endDateSpecification?.type != .multiDay)
             let matches = self.matchOneDayOrInstant(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
             
             if matches && tweakedStartDateSpecification.type == .IslamicPrayerTime {

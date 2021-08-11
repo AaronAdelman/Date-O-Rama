@@ -73,10 +73,10 @@
         },
         {
             "titles": {"en": "Ḥajj", "he": "חג׳", "ar": "حَجّ‎"},
-            "start": {"type": "allDay",
+            "start": {"type": "multiDay",
                 "month":  12, "day":  8
             },
-            "end": {"type": "allDay",
+            "end": {"type": "multiDay",
                 "month":  12, "day":  13
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Hajj"}
         },

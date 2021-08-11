@@ -14,6 +14,7 @@ enum ASATimeSpecificationType:  String, Codable {
     case allYear                             = "allYear"
     case multiMonth                          = "multiMonth"
     case allMonth                            = "allMonth"
+    case multiDay                            = "multiDay"
     case allDay                              = "allDay"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
@@ -169,7 +170,7 @@ extension ASADateSpecification {
             let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
             return result
             
-        case .allDay:
+        case .allDay, .multiDay:
             if isEndDate {
                 return calendar.startOfNextDay(date: rawDate!, locationData: revisedDateComponents.locationData )
             } else {
@@ -247,7 +248,7 @@ extension ASADateSpecification {
                 return result
             } // switch dayHalf
 
-        case .allDay:
+        case .allDay, .multiDay:
             return date
             
         case .allYear, .allMonth, .multiYear, .multiMonth:
