@@ -4,6 +4,7 @@
 "defaultLocale": "en",
 "calendarCode": "Gregorian",
 "calendarColor": {"red":  0.2745098039, "green":  0.6117647059, "blue":  0.8392156863},
+"emoji": "🇺🇳",
 "eventSpecifications": [
 {"titles": {"en": "International Year of Camelids"}, "start": {"type": "1Year", "era": 1, "year":  2024}, "emoji": "🐪"},
 {"titles": {"en": "International Year of Millets"}, "start": {"type": "1Year", "era": 1, "year":  2023}, "emoji": "⿉"},

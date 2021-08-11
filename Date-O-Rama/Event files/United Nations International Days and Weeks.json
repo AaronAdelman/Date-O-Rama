@@ -4,6 +4,7 @@
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red":  0.2745098039, "green":  0.6117647059, "blue":  0.8392156863},
+    "emoji": "🇺🇳",
     "eventSpecifications": [
         {"titles": {"en": "World Braille Day"}, "start": {"type": "1Day", "month": 1, "day": 4}, "emoji": "⠃", "first": {"type": "1Day", "era": 1, "year": 2019}, "urls": {"en": "https://nationaldaycalendar.com/world-braille-day-january-4/"}},
         {"titles": {"en": "International Day of Education"}, "start": {"type": "1Day", "month": 1, "day": 24}, "emoji": "📚", "first": {"type": "1Day", "era": 1, "year": 2019}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-education-january-24/"}},

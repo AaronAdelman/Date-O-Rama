@@ -37,7 +37,6 @@ struct ASAClockCellEventVisibilityCell: View {
     
     var body: some View {
         HStack {
-//            Text(verbatim: visibility.emoji + " " + visibility.text)
             Image(systemName: visibility.symbolName)
             Text(visibility.showingText)
 

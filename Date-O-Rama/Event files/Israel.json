@@ -4,6 +4,7 @@
     "defaultLocale": "he",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
+    "emoji": "🇮🇱",
     "eventSpecifications": [
         {"titles": {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, "start": {
             "type": "1Day", "month": 2, "day": 7}},

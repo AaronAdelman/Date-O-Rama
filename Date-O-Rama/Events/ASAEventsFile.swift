@@ -28,6 +28,7 @@ struct ASAEventsFile: Codable {
     var calendarColor: Color
     var calendarCode:  ASACalendarCode
     var otherCalendarCodes:  Array<ASACalendarCode>?
+    var emoji: String?
     var eventSpecifications: Array<ASAEventSpecification>
 } // struct ASAEventsFile
 
