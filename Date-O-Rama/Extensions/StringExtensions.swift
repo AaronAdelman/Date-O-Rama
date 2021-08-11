@@ -24,10 +24,10 @@ extension String {
                 case "001": // Earth in general
                 return "🇺🇳"
                 
-                case "002", "015", "202", "014", "017", "018", "011":  // Africa
+                case "002", "015", "202", "014", "017", "018", "011": // Africa
                 return "🌍"
                 
-                case "019", "419", "029", "013", "005", "003", "021":  // Americas
+                case "019", "419", "029", "013", "005", "003", "021": // Americas
                 return "🌎"
                 
             case "142", "143", "030", "035", "034", "145": // Asia
@@ -36,7 +36,7 @@ extension String {
             case "150", "151", "154", "039", "155": // Europe
                 return "🇪🇺"
 
-            case "009", "053", "054", "057", "061":  // Oceania
+            case "009", "053", "054", "057", "061": // Oceania
                 return "🌏"
 
             default:

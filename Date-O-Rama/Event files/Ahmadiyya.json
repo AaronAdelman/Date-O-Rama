@@ -3,26 +3,26 @@
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
-    "calendarColor": {"red":  0.25, "green":  0.25, "blue":  0.25},
+    "calendarColor": {"red": 0.25, "green": 0.25, "blue": 0.25},
     "eventSpecifications": [
         {
             "titles": {"en": "Promised Reformer Day"},
             "start": {"type": "1Day",
-                "month":  2, "day":  20
+                "month": 2, "day": 20
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}
         },
         {
             "titles": {"en": "Promised Messiah Day", "ur": "یوم مسیح موعود‎"},
             "start": {"type": "1Day",
-                "month":  3, "day":  23
+                "month": 3, "day": 23
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}
         },
         {
             "titles": {"en": "Caliphate Day"},
             "start": {"type": "1Day",
-                "month":  5, "day":  27
+                "month": 5, "day": 27
             },
             "urls": {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}
         }

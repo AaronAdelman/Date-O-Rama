@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "Chinese",
-    "calendarColor": {"red":  0.87, "green":  0.16, "blue":  0.06},
+    "calendarColor": {"red": 0.87, "green": 0.16, "blue": 0.06},
     "eventSpecifications": [
         {"start": {"type": "1Year", "yearDivisor": 12, "yearRemainder": 1},  "titles": {"en": "Year of the Rat", "he": "שנת החולדה"}, "category": "Rat"},
         {"start": {"type": "1Year", "yearDivisor": 12, "yearRemainder": 2},  "titles": {"en": "Year of the Ox", "he": "שנת השור"}, "category": "Ox"},

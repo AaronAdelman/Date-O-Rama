@@ -3,7 +3,7 @@
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "tz*",
-    "calendarColor": {"red":  0.0, "green":  0.0, "blue":  0.0},
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"titles": {"en": ""},
             "start": {"type": "timeChange"},

@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he", "ar"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
-    "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
         {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "start": {
             "type": "1Day", "month": 5, "day": 15},

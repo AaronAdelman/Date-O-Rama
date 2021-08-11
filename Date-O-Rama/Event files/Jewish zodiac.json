@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "he",
     "calendarCode": "heb*",
-    "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
     {"titles": {"en": "Aries", "he": "טלה"}, "start": {"type": "1Month", "month": 8}, "category": "Aries"},
     {"titles": {"en": "Taurus", "he": "שור"}, "start": {"type": "1Month", "month": 9}, "category": "Taurus"},

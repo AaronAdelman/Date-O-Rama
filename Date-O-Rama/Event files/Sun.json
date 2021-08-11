@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
-    "calendarColor": {"red":  1.0, "green":  1.0, "blue":  0.0},
+    "calendarColor": {"red": 1.0, "green": 1.0, "blue": 0.0},
     "eventSpecifications": [
         {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": true, "offset": 0.0}, "category": "Sunrise"},
         {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.8333333333, "rising": false, "offset": 0.0}, "category": "Sunset"},
@@ -15,9 +15,9 @@
             },
             "start": {
                 "type": "degreesBelowHorizon",
-                "degreesBelowHorizon":  6.0,
-                "rising":  true,
-                "offset":  0
+                "degreesBelowHorizon": 6.0,
+                "rising": true,
+                "offset": 0
             }, "category": "civilDawn"
         },
         {
@@ -27,9 +27,9 @@
             },
             "start": {
                 "type": "degreesBelowHorizon",
-                "degreesBelowHorizon":  6.0,
-                "rising":  false,
-                "offset":  0
+                "degreesBelowHorizon": 6.0,
+                "rising": false,
+                "offset": 0
             }, "category": "civilDusk"
         },
         
@@ -40,9 +40,9 @@
             },
             "start": {
                 "type": "degreesBelowHorizon",
-                "degreesBelowHorizon":  12.0,
-                "rising":  true,
-                "offset":  0
+                "degreesBelowHorizon": 12.0,
+                "rising": true,
+                "offset": 0
             }, "category": "nauticalDawn"
         },
         {
@@ -52,9 +52,9 @@
             },
             "start": {
                 "type": "degreesBelowHorizon",
-                "degreesBelowHorizon":  12.0,
-                "rising":  false,
-                "offset":  0
+                "degreesBelowHorizon": 12.0,
+                "rising": false,
+                "offset": 0
             }, "category": "nauticalDusk"
         },
         
@@ -65,9 +65,9 @@
             },
             "start": {
                 "type": "degreesBelowHorizon",
-                "degreesBelowHorizon":  18.0,
-                "rising":  true,
-                "offset":  0
+                "degreesBelowHorizon": 18.0,
+                "rising": true,
+                "offset": 0
             }, "category": "astronomicalDawn"
         },
         {
@@ -77,9 +77,9 @@
             },
             "start": {
                 "type": "degreesBelowHorizon",
-                "degreesBelowHorizon":  18.0,
-                "rising":  false,
-                "offset":  0
+                "degreesBelowHorizon": 18.0,
+                "rising": false,
+                "offset": 0
             }, "category": "astronomicalDusk"
         }
     ]

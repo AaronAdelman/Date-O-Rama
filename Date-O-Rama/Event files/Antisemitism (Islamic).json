@@ -3,34 +3,10 @@
     "supportedLocales": ["en", "he", "ar"],
     "defaultLocale": "en",
     "calendarCode": "hiq*",
-    "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
         {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -1, "weekdays": [6]},
-            "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
-        },
-        {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -2, "weekdays": [6]},
-            "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
-        },
-        {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -3, "weekdays": [6]},
-            "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
-        },
-        {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -4, "weekdays": [6]},
-            "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
-        },
-        {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -5, "weekdays": [6]},
-            "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
-        },
-        {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -6, "weekdays": [6]},
-            "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
-        },
-        {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "day": -7, "weekdays": [6]},
+            "type": "1Day", "month": 9, "weekdayRecurrence": -1, "weekdays": [6]},
             "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
         }
     ]

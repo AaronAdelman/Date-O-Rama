@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
-    "calendarColor": {"red":  0.5, "green":  0.5, "blue":  0.5},
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
         {"titles": {"en": "Aries", "he": "טלה"}, "start": {
             "type": "multiDay", "month": 3, "day": 21}, "end": {

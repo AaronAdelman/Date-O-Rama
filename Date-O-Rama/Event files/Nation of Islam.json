@@ -3,12 +3,12 @@
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
-    "calendarColor": {"red":  0.4, "green":  0.6, "blue":  0.4},
+    "calendarColor": {"red": 0.4, "green": 0.6, "blue": 0.4},
     "eventSpecifications": [
         {
             "titles": {"en": "Saviours’ Day"},
             "start": {"type": "1Day",
-                "month":  2, "day":  28
+                "month": 2, "day": 28
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day"}
         }
