@@ -305,6 +305,8 @@
 		A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
 		A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASADateFormat.swift */; };
 		A5D8FE3825C6D77A00A29350 /* ASANewEKEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */; };
+		A5DC147126C4488E00A109B6 /* ASATimeSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASATimeSpecificationType.swift */; };
+		A5DC147226C4488E00A109B6 /* ASATimeSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASATimeSpecificationType.swift */; };
 		A5DC8765264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */; };
 		A5DC8766264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */; };
 		A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */; };
@@ -562,6 +564,7 @@
 		A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatChooserView.swift; sourceTree = "<group>"; };
 		A5D62861243B80F100F3CC19 /* ASADateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormat.swift; sourceTree = "<group>"; };
 		A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewEKEventView.swift; sourceTree = "<group>"; };
+		A5DC147026C4488E00A109B6 /* ASATimeSpecificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeSpecificationType.swift; sourceTree = "<group>"; };
 		A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
 		A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventAvailabilityExtensions.swift; sourceTree = "<group>"; };
 		A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAICalendarIndexPickerView.swift; sourceTree = "<group>"; };
@@ -870,6 +873,7 @@
 				A5790194259263A300224666 /* ASAEventCompatible.swift */,
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */,
+				A5DC147026C4488E00A109B6 /* ASATimeSpecificationType.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -1308,6 +1312,7 @@
 				A5DC8766264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */,
 				A566F47C2483D7CF000A05B5 /* ASADateFormat.swift in Sources */,
 				A5B6D01D25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */,
+				A5DC147226C4488E00A109B6 /* ASATimeSpecificationType.swift in Sources */,
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASARowArrayKey.swift in Sources */,
@@ -1380,6 +1385,7 @@
 				A59D804F2600C6F800FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A5DC8765264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */,
 				A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */,
+				A5DC147126C4488E00A109B6 /* ASATimeSpecificationType.swift in Sources */,
 				A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
 				A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */,

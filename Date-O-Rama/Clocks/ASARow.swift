@@ -542,19 +542,19 @@ extension ASARow {
             case .multiYear:
                 startDateString = self.yearOnlyDateString(now: event.startDate)
                 endDateString = self.yearOnlyDateString(now: event.endDate - 1)
-            case .allYear:
+            case .oneYear:
                 startDateString = nil
                 endDateString = self.yearOnlyDateString(now: event.startDate)
             case .multiMonth:
                 startDateString = self.yearAndMonthOnlyDateString(now: event.startDate)
                 endDateString = self.yearAndMonthOnlyDateString(now: event.endDate - 1)
-            case .allMonth:
+            case .oneMonth:
                 startDateString = nil
                 endDateString = self.yearAndMonthOnlyDateString(now: event.startDate)
             case .multiDay:
                 startDateString = self.shortenedDateString(now: event.startDate)
                 endDateString = self.shortenedDateString(now: event.endDate - 1)
-            case .allDay:
+            case .oneDay:
                 startDateString = nil
                 endDateString = self.shortenedDateString(now: event.startDate)
             default:

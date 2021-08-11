@@ -41,12 +41,12 @@
         {"titles": {"en": "Pisces", "he": "דגים"}, "start": {
             "type": "multiDay", "month": 2, "day": 19}, "end": {
                 "type": "multiDay", "month": 3, "day": 20}, "category": "Pisces"},
-        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"weekdays": [1], "type": "allDay"}, "category": "Sun"},
-        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"weekdays": [2], "type": "allDay"}, "category": "Moon"},
-        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"weekdays": [3], "type": "allDay"}, "category": "Mars"},
-        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "allDay"}, "category": "Mercury"},
-        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "allDay"}, "category": "Jupiter"},
-        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "allDay"}, "category": "Venus"},
-        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "allDay"}, "category": "Saturn"}
+        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"weekdays": [1], "type": "1Day"}, "category": "Sun"},
+        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"weekdays": [2], "type": "1Day"}, "category": "Moon"},
+        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"weekdays": [3], "type": "1Day"}, "category": "Mars"},
+        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "1Day"}, "category": "Mercury"},
+        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "1Day"}, "category": "Jupiter"},
+        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "1Day"}, "category": "Venus"},
+        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "1Day"}, "category": "Saturn"}
     ]
 }

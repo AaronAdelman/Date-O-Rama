@@ -7,69 +7,69 @@
     "eventSpecifications": [
         {
             "titles": {"en": "International Shia Day"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  6, "day":  12
             },
             "urls": {"en": "http://internationalshiaday.com"}
         },
         {
             "titles": {"en": "Muslim Women’s Day"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  3, "day":  27
             }
         },
         {
             "titles": {"en": "World Hijab Day"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  1
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/World_Hijab_Day"}, "emoji": "🧕"
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  14, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  13, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  12, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  11, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  10, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  9, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
         },
         {
             "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  8, "weekdays": [7]
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}

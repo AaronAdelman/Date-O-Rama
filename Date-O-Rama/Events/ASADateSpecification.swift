@@ -9,24 +9,6 @@
 import CoreLocation
 import Foundation
 
-enum ASATimeSpecificationType:  String, Codable {
-    case multiYear                           = "multiYear"
-    case allYear                             = "allYear"
-    case multiMonth                          = "multiMonth"
-    case allMonth                            = "allMonth"
-    case multiDay                            = "multiDay"
-    case allDay                              = "allDay"
-    case fixedTime                           = "fixedTime"
-    case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
-    case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
-    case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-    case timeChange                          = "timeChange" // Change from standard to daylight savings time or vice versa
-    case IslamicPrayerTime                   = "IslamicPrayerTime"
-} // enum ASATimeSpecificationType
-
-
-// MARK: -
-
 enum ASATimeSpecificationDayHalf:  String, Codable {
     case night = "night"
     case day   = "day"
@@ -134,7 +116,7 @@ extension ASADateSpecification {
         let timeZone = revisedDateComponents.locationData.timeZone
         
         switch self.type {
-        case .allYear, .multiYear:
+        case .oneYear, .multiYear:
             if isEndDate {
                 let numberOfMonthsInYear = calendar.maximumValue(of: .month, in: .year, for: baseDate)!
                 let tempComponents = ASADateComponents(calendar: calendar, locationData: revisedDateComponents.locationData, era: revisedDateComponents.era, year: revisedDateComponents.year, yearForWeekOfYear: nil, quarter: nil, month: numberOfMonthsInYear, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil)
@@ -155,7 +137,7 @@ extension ASADateSpecification {
             let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
             return result
             
-        case .allMonth, .multiMonth:
+        case .oneMonth, .multiMonth:
             if isEndDate {
                 let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: baseDate)!
                 revisedDateComponents.day   = numberOfDaysInMonth
@@ -171,7 +153,7 @@ extension ASADateSpecification {
             let result = isEndDate ? revisedDateComponents.calendar.startOfNextDay(date: tempResult!, locationData: revisedDateComponents.locationData) : revisedDateComponents.calendar.startOfDay(for: tempResult!, locationData: revisedDateComponents.locationData)
             return result
             
-        case .allDay, .multiDay:
+        case .oneDay, .multiDay:
             if isEndDate {
                 return calendar.startOfNextDay(date: rawDate!, locationData: revisedDateComponents.locationData )
             } else {
@@ -252,10 +234,10 @@ extension ASADateSpecification {
                 return result
             } // switch dayHalf
 
-        case .allDay, .multiDay:
+        case .oneDay, .multiDay:
             return date
             
-        case .allYear, .allMonth, .multiYear, .multiMonth:
+        case .oneYear, .oneMonth, .multiYear, .multiMonth:
             return date
         case .timeChange:
             return Date()

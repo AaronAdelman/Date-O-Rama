@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {
             "titles": {"en": "Saviours’ Day"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  2, "day":  28
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day"}

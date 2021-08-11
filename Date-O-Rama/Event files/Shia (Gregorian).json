@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {
             "titles": {"en": "Imamat Day", "ur": "یوم الامامہ", "bn": "ইমামত দিবস"},
-            "start": {"type": "allDay",
+            "start": {"type": "1Day",
                 "month":  7, "day":  11
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Imamat_Day"}

@@ -5,8 +5,8 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
     "eventSpecifications": [
-        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "start": {"type": "allDay", "month": 5, "day": 9}},
-        {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "start": {"type": "allDay", "month": 11, "day": 30}},
-        {"titles": {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, "start": {"type": "allDay", "month": 6, "day": 1}, "urls": {"en": "http://www.thefarhud.com/"}}
+        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "start": {"type": "1Day", "month": 5, "day": 9}},
+        {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "start": {"type": "1Day", "month": 11, "day": 30}},
+        {"titles": {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, "start": {"type": "1Day", "month": 6, "day": 1}, "urls": {"en": "http://www.thefarhud.com/"}}
     ]
 }

@@ -133,7 +133,7 @@ class ASAEventCalendar {
         }
 
         // All-year events
-        if startDateSpecification.type == .allYear {
+        if startDateSpecification.type == .oneYear {
             assert(endDateSpecification == nil)
             let matches = self.matchAllYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
             if matches {
@@ -170,7 +170,7 @@ class ASAEventCalendar {
         }
         
         // All-month events
-        if startDateSpecification.type == .allMonth {
+        if startDateSpecification.type == .oneMonth {
             assert(endDateSpecification == nil)
             
             let matches = self.matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
