@@ -37,4 +37,8 @@ extension DateFormatter {
     } // func apply(dateStyle:  DateFormatter.Style, template:  String)
 
     static let yearCodes:  Array<String> = ["y", "G", "Y", "U", "r"]
+    
+    static let nonYearCodes: Array<String> = ["Q", "q", "M", "L", "l", "w", "W", "d", "D", "F", "g", "E", "e", "c"]
+
+    static let nonYearNonMonthCodes: Array<String> = ["w", "W", "d", "D", "F", "g", "E", "e", "c"]
 } // extension DateFormatter

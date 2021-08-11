@@ -27,6 +27,9 @@ enum ASADateFormat:  String {
     case shortWithWeekdayWithoutYear      = "shortWithWeekdayWithoutYear"
     case mediumWithWeekdayWithoutYear     = "mediumWithWeekdayWithoutYear"
     case fullWithoutYear                  = "fullWithoutYear"
+    
+    case shortYearOnly                    = "SYO"
+    case shortYearAndMonthOnly            = "SYAMO"
 
 } // enum ASADateFormat
 
@@ -70,6 +73,10 @@ extension ASADateFormat {
             unlocalizedString = "ITEM_MediumWithWeekdayWithoutYear"
         case .fullWithoutYear:
             unlocalizedString = "ITEM_FullWithoutYear"
+        case .shortYearOnly:
+            unlocalizedString = "SYO"
+        case .shortYearAndMonthOnly:
+            unlocalizedString = "SYAMO"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // var localizedItemName

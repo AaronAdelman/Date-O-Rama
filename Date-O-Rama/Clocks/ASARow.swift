@@ -437,6 +437,16 @@ extension ASARow {
         let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: self.locationData)
         return result
     } // func shortenedDateString(now:  Date) -> String
+    
+    public func yearOnlyDateString(now:  Date) -> String {
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearOnly, timeFormat: .none, locationData: self.locationData)
+        return result
+    } // func yearOnlyDateString(now:  Date) -> String
+    
+    public func yearAndMonthOnlyDateString(now:  Date) -> String {
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearAndMonthOnly, timeFormat: .none, locationData: self.locationData)
+        return result
+    } // public func yearAndMonthOnlyDateString(now:  Date) -> String
 
     public func watchShortenedDateString(now:  Date) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.watchShortened
@@ -530,17 +540,17 @@ extension ASARow {
         } else {
             switch event.type {
             case .multiYear:
-                startDateString = self.shortenedDateString(now: event.startDate)
-                endDateString = self.shortenedDateString(now: event.endDate - 1)
+                startDateString = self.yearOnlyDateString(now: event.startDate)
+                endDateString = self.yearOnlyDateString(now: event.endDate - 1)
             case .allYear:
-                startDateString = self.shortenedDateString(now: event.startDate)
-                endDateString = self.shortenedDateString(now: event.endDate - 1)
+                startDateString = nil
+                endDateString = self.yearOnlyDateString(now: event.startDate)
             case .multiMonth:
-                startDateString = self.shortenedDateString(now: event.startDate)
-                endDateString = self.shortenedDateString(now: event.endDate - 1)
+                startDateString = self.yearAndMonthOnlyDateString(now: event.startDate)
+                endDateString = self.yearAndMonthOnlyDateString(now: event.endDate - 1)
             case .allMonth:
-                startDateString = self.shortenedDateString(now: event.startDate)
-                endDateString = self.shortenedDateString(now: event.endDate - 1)
+                startDateString = nil
+                endDateString = self.yearAndMonthOnlyDateString(now: event.startDate)
             case .multiDay:
                 startDateString = self.shortenedDateString(now: event.startDate)
                 endDateString = self.shortenedDateString(now: event.endDate - 1)

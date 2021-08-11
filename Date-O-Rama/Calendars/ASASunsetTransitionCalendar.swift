@@ -308,6 +308,12 @@
 
         case .fullWithoutYear:
             self.dateFormatter.apply(dateStyle: .full, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .shortYearOnly:
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearCodes)
+            
+        case .shortYearAndMonthOnly:
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
 
         default:
             self.dateFormatter.dateStyle = .full
