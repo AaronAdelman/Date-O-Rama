@@ -44,8 +44,8 @@ struct ASATimesSubcell:  View {
         VStack(alignment: .leading) {
             let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
                         
-            if startDateString != endDateString {
-                ASATimeText(verbatim: startDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
+            if startDateString != nil {
+                ASATimeText(verbatim: startDateString!, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
             }
             
             ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate, isForClock: isForClock)

@@ -82,4 +82,16 @@ extension EKEvent:  ASAEventCompatible {
     var emoji: String? {
         return nil
     }
+    
+    var type: ASATimeSpecificationType {
+        if self.isAllDay {
+            if self.endDate.timeIntervalSince(self.startDate) <= 24 * 60 * 60 {
+                return .allDay
+            }
+            
+            return .multiDay
+        } else {
+            return .fixedTime
+        }
+    }
 } // extension EKEvent:  ASAEventCompatible

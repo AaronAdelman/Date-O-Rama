@@ -16,6 +16,7 @@ enum ASATimeSpecificationType:  String, Codable {
     case allMonth                            = "allMonth"
     case multiDay                            = "multiDay"
     case allDay                              = "allDay"
+    case fixedTime                           = "fixedTime"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
@@ -205,6 +206,9 @@ extension ASADateSpecification {
             return Date()
         case .IslamicPrayerTime:
             return Date()
+        case .fixedTime:
+            return Date ()
+            // TODO:  NEED TO FIX THIS!
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
@@ -257,6 +261,8 @@ extension ASADateSpecification {
             return Date()
         case .IslamicPrayerTime:
             return date // TODO:  May have to change!
+        case .fixedTime:
+            return date // TODO:  May have to fix this!
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification

@@ -486,10 +486,10 @@ extension ASARow {
 } // extension ASARow
 
 class ASAStartAndEndDateStrings {
-    var startDateString: String
+    var startDateString: String?
     var endDateString: String
     
-    init(startDateString: String, endDateString: String) {
+    init(startDateString: String?, endDateString: String) {
         self.startDateString = startDateString
         self.endDateString   = endDateString
     }
@@ -500,16 +500,57 @@ extension ASARow {
         return (isPrimaryRow && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
      } // func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String
     
-    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
+    private func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
+        var startDateString: String?
+        var endDateString: String
+        
+        if event.startDate == event.endDate {
+            startDateString = nil
+        } else {
+            startDateString = self.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+        }
+        endDateString = self.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+        
+        return (startDateString, endDateString)
+    } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
+    
+    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
         // Cache code
         if let cachedVersion = startAndEndDateStringsCache.object(forKey: event.eventIdentifier! as NSString) {
             // use the cached version
             return (cachedVersion.startDateString, cachedVersion.endDateString)
         }
         
+        var startDateString: String?
+        var endDateString: String
+        
         let eventIsAllDay = event.isAllDay(for: self)
-        let startDateString = eventIsAllDay ? self.shortenedDateString(now: event.startDate) : self.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
-        let endDateString = eventIsAllDay ? self.shortenedDateString(now: event.endDate - 1) : self.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+        if !eventIsAllDay {
+            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+        } else {
+            switch event.type {
+            case .multiYear:
+                startDateString = self.shortenedDateString(now: event.startDate)
+                endDateString = self.shortenedDateString(now: event.endDate - 1)
+            case .allYear:
+                startDateString = self.shortenedDateString(now: event.startDate)
+                endDateString = self.shortenedDateString(now: event.endDate - 1)
+            case .multiMonth:
+                startDateString = self.shortenedDateString(now: event.startDate)
+                endDateString = self.shortenedDateString(now: event.endDate - 1)
+            case .allMonth:
+                startDateString = self.shortenedDateString(now: event.startDate)
+                endDateString = self.shortenedDateString(now: event.endDate - 1)
+            case .multiDay:
+                startDateString = self.shortenedDateString(now: event.startDate)
+                endDateString = self.shortenedDateString(now: event.endDate - 1)
+            case .allDay:
+                startDateString = nil
+                endDateString = self.shortenedDateString(now: event.startDate)
+            default:
+                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+            } // switch event.type
+        }
         
         // create it from scratch then store in the cache
         let myObject = ASAStartAndEndDateStrings(startDateString: startDateString, endDateString: endDateString)

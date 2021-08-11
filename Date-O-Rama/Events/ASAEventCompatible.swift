@@ -50,6 +50,8 @@ protocol ASAEventCompatible {
 
     var category: ASAEventCategory { get }
     var emoji: String? { get }
+    
+    var type: ASATimeSpecificationType { get }
 } // protocol ASAEventCompatible
 
 

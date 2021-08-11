@@ -64,6 +64,8 @@ struct ASAEvent:  ASAEventCompatible {
     
     var category: ASAEventCategory
     var emoji: String?
+    
+    var type: ASATimeSpecificationType
 } // struct ASAEvent
 
 
