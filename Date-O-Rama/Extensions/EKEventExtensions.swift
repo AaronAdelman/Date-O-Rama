@@ -83,6 +83,10 @@ extension EKEvent:  ASAEventCompatible {
         return nil
     }
     
+    var fileEmoji: String? {
+        return nil
+    }
+    
     var type: ASATimeSpecificationType {
         if self.isAllDay {
             if self.endDate.timeIntervalSince(self.startDate) <= 24 * 60 * 60 {

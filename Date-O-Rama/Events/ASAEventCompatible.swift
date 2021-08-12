@@ -50,6 +50,7 @@ protocol ASAEventCompatible {
 
     var category: ASAEventCategory { get }
     var emoji: String? { get }
+    var fileEmoji: String? { get }
     
     var type: ASATimeSpecificationType { get }
 } // protocol ASAEventCompatible
@@ -188,10 +189,16 @@ extension ASAEventCompatible {
     } // var currentUser: EKParticipant?
     
     var symbol: String? {
-        if self.emoji != nil {
-            return self.emoji!
+        let emoji: String? = self.emoji
+        if emoji != nil {
+            return emoji!
         }
         
-        return self.category.emoji
+        let categoryEmoji: String? = self.category.emoji
+        if categoryEmoji != nil {
+            return categoryEmoji!
+        }
+        
+        return self.fileEmoji
     } // var emoji
 } // extension ASAEventCompatible
