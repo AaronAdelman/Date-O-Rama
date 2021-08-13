@@ -119,7 +119,7 @@ class ASAEKEventManager:  NSObject, ObservableObject {
         
         eventStore.requestAccess(to: EKEntityType.event, completion: {
             (accessGranted: Bool, error: Error?) in
-            debugPrint(#file, #function, "Access granted:", accessGranted, error as Any)
+//            debugPrint(#file, #function, "Access granted:", accessGranted, error as Any)
             if accessGranted == true {
                 self.handleAccessGranted()
             } else {
