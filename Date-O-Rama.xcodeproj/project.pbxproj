@@ -331,6 +331,9 @@
 		A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */; };
 		A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
 		A5E61C6D263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
+		A5EE116E26C563F10050495C /* ASATimeSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASATimeSpecificationType.swift */; };
+		A5EE117826C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
+		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
@@ -389,6 +392,36 @@
 				A566F44F2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EE116D26C562C10050495C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EE117126C566EC0050495C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EE117526C566F80050495C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -580,11 +613,19 @@
 		A5E4719D2463F938002BB471 /* ASATimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormat.swift; sourceTree = "<group>"; };
 		A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormatChooserView.swift; sourceTree = "<group>"; };
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
+		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4FC534C907334B6E7028520C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A566F44B2483D6EC000A05B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -668,6 +709,7 @@
 				A584C8FF24B646210014CE2E /* Judaism (times).json */,
 				A5E3606324C71FBC0000A268 /* Judaism.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch.json */,
+				A5EE117726C573900050495C /* Moon.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
 				A54539DF26A9BA180028EAD5 /* Shia (times).json */,
@@ -764,13 +806,6 @@
 				A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */,
 			);
 			path = Choosers;
-			sourceTree = "<group>";
-		};
-		A58AE62A244C6DFF00A64B67 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A5980BBF25B8BB5400A07DBC /* About */ = {
@@ -886,7 +921,6 @@
 				A5C77C1D2433361900CFEE47 /* Date-O-RamaUITests */,
 				A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */,
 				A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */,
-				A58AE62A244C6DFF00A64B67 /* Frameworks */,
 				A5C77BFA2433361400CFEE47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1003,6 +1037,7 @@
 			buildPhases = (
 				A566F4402483D6E6000A05B5 /* Resources */,
 				A566F46A2483D6EF000A05B5 /* Embed App Extensions */,
+				4FC534C907334B6E7028520C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1021,6 +1056,7 @@
 				A566F44A2483D6EC000A05B5 /* Sources */,
 				A566F44B2483D6EC000A05B5 /* Frameworks */,
 				A566F44C2483D6EC000A05B5 /* Resources */,
+				A5EE117526C566F80050495C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1039,6 +1075,7 @@
 				A5C77BF62433361400CFEE47 /* Frameworks */,
 				A5C77BF72433361400CFEE47 /* Resources */,
 				A566F4672483D6EF000A05B5 /* Embed Watch Content */,
+				A5EE116D26C562C10050495C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1057,6 +1094,7 @@
 				A5C77C0B2433361900CFEE47 /* Sources */,
 				A5C77C0C2433361900CFEE47 /* Frameworks */,
 				A5C77C0D2433361900CFEE47 /* Resources */,
+				A5EE117126C566EC0050495C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1185,6 +1223,7 @@
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
 				A5BD09CE26B1B31100738C0B /* United Nations International Decades.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
+				A5EE117926C573910050495C /* Moon.json in Resources */,
 				A5B91141268E7C9E0058EA69 /* Time changes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1219,6 +1258,7 @@
 				A5E3606624C756FF0000A268 /* Israel.json in Resources */,
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
 				A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */,
+				A5EE117826C573910050495C /* Moon.json in Resources */,
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5E3606424C71FBC0000A268 /* Judaism.json in Resources */,
@@ -1506,6 +1546,7 @@
 				A54539DE26A990040028EAD5 /* Trigonometry.swift in Sources */,
 				A557ACE725DD48A400A264B6 /* ASALocation.swift in Sources */,
 				A59D802F2600C57A00FD8BBF /* ASACalendarFactory.swift in Sources */,
+				A5EE116E26C563F10050495C /* ASATimeSpecificationType.swift in Sources */,
 				A557ACE025DD488B00A264B6 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A557ACDE25DD488B00A264B6 /* ASAISO8601Calendar.swift in Sources */,
 				A557AD0D25DD495400A264B6 /* DateExtensions.swift in Sources */,

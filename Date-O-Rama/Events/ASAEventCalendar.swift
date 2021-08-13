@@ -59,7 +59,7 @@ class ASAEventCalendar {
         return result
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String) -> Array<ASAEvent>
     
-    var color:  Color {
+    var color:  SwiftUI.Color {
         return self.eventsFile!.calendarColor
     } // var color
 
@@ -112,12 +112,22 @@ class ASAEventCalendar {
         return (false, nil, nil)
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
+    func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        // TODO:  NEED TO FILL IN SOMETHING HERE
+        return (false, nil, nil)
+    } // func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
                     
         // Time change events
         if startDateSpecification.type == .timeChange {
             return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+        }
+        
+//         Moon phases
+        if startDateSpecification.type == .newMoon || startDateSpecification.type == .firstQuarter || startDateSpecification.type == .fullMoon || startDateSpecification.type == .lastQuarter {
+            return matchMoonPhase(type: startDateSpecification.type, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
         var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)

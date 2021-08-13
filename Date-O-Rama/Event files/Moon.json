@@ -1,0 +1,21 @@
+{
+    "titles": {"en": "Moon", "he": "ירח"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "New Moon"},
+            "start": {"type": "newMoon"},
+            "emoji": "🌑"},
+        {"titles": {"en": "First Quarter"},
+            "start": {"type": "firstQuarter"},
+            "emoji": "🌓"},
+        {"titles": {"en": "Full Moon"},
+            "start": {"type": "fullMoon"},
+            "emoji": "🌕"},
+        {"titles": {"en": "Last Quarter"},
+            "start": {"type": "lastQuarter"},
+            "emoji": "🌗"}        ]
+    }
+

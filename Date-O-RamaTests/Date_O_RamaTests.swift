@@ -123,8 +123,8 @@ class Date_O_RamaTests: XCTestCase {
         let CE = 1
         
         let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, yearForWeekOfYear: nil, quarter: nil, month: 2, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: 4, weekdayOrdinal: nil, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
-        let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.allDay)
-        let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.allDay)
+        let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.oneDay)
+        let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.oneDay)
         
         let components0EYMD = components0.EYMD
         let startDateSpecification0EMYD = startDateSpecification0.EYMD
@@ -620,4 +620,38 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(30.matches(recurrence: -1, lengthOfWeek: LENGTH_OF_WEEK, lengthOfMonth: 31))
         XCTAssert(31.matches(recurrence: -1, lengthOfWeek: LENGTH_OF_WEEK, lengthOfMonth: 31))
     } // func testNthRecurrenceOfWeekdayInMonth() throws
+    
+    func testMoon() throws {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        formatter.timeZone = .current
+
+//        let now = JulianDay(year: 2021, month: 8, day: 12)
+//        let luna = Moon(julianDay: now, highPrecision: true)
+//        
+//        let julianDayOfNextNewMoon: JulianDay = luna.time(of: .newMoon, forward: true, mean: false)
+//        let nextNewMoon = julianDayOfNextNewMoon.date
+//        let nextNewMoonString = formatter.string(from: nextNewMoon)
+//        debugPrint(#file, #function, julianDayOfNextNewMoon, nextNewMoonString)
+//
+//        let julianDayOfNextFirstQuarter: JulianDay = luna.time(of: .firstQuarter, forward: true, mean: false)
+//        let nextFirstQuarter = julianDayOfNextFirstQuarter.date
+//        let nextFirstQuarterString = formatter.string(from: nextFirstQuarter)
+//        debugPrint(#file, #function, julianDayOfNextFirstQuarter, nextFirstQuarterString)
+//
+//        let julianDayOfNextFullMoon: JulianDay = luna.time(of: .fullMoon, forward: true, mean: false)
+//        let nextFullMoon = julianDayOfNextFullMoon.date
+//        let nextFullMoonString = formatter.string(from: nextFullMoon)
+//        debugPrint(#file, #function, julianDayOfNextFullMoon, nextFullMoonString)
+//        
+//        let julianDayOfNextThirdQuarter: JulianDay = luna.time(of: .lastQuarter, forward: true, mean: false)
+//        let nextThirdQuarter = julianDayOfNextThirdQuarter.date
+//        let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
+//        debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
+
+
+    } // func testMoon() throws
 } // class Date_O_RamaTests
