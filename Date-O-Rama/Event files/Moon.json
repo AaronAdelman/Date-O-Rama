@@ -1,20 +1,20 @@
 {
     "titles": {"en": "Moon", "he": "ירח"},
-    "supportedLocales": ["en"],
+    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
     "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
     "eventSpecifications": [
-        {"titles": {"en": "New Moon"},
+        {"titles": {"en": "New Moon", "he": "מולד הלבנה"},
             "start": {"type": "newMoon"},
             "emoji": "🌑"},
-        {"titles": {"en": "First Quarter"},
+        {"titles": {"en": "First Quarter", "he": "רבע ראשון"},
             "start": {"type": "firstQuarter"},
             "emoji": "🌓"},
-        {"titles": {"en": "Full Moon"},
+        {"titles": {"en": "Full Moon", "he": "ירח מלא"},
             "start": {"type": "fullMoon"},
             "emoji": "🌕"},
-        {"titles": {"en": "Last Quarter"},
+        {"titles": {"en": "Last Quarter", "he": "רבע אחרון"},
             "start": {"type": "lastQuarter"},
             "emoji": "🌗"}        ]
     }

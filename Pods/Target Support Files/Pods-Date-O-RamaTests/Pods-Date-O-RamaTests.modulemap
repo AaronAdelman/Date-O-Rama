@@ -1,0 +1,6 @@
+framework module Pods_Date_O_RamaTests {
+  umbrella header "Pods-Date-O-RamaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

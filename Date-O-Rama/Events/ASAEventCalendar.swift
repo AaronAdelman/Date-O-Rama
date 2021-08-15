@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 import CoreLocation
+import SwiftAA
 
 class ASAEventCalendar {
     var fileName:  String
@@ -114,6 +115,34 @@ class ASAEventCalendar {
     
     func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         // TODO:  NEED TO FILL IN SOMETHING HERE
+        var phase: MoonPhase
+        switch type {
+        case .fullMoon:
+            phase = .fullMoon
+            
+        case .newMoon:
+            phase = .newMoon
+            
+        case .firstQuarter:
+            phase = .firstQuarter
+            
+        case .lastQuarter:
+            phase = .lastQuarter
+            
+        default:
+            // Should not happen!
+            return (false, nil, nil)
+        } // switch type
+        
+        let now = JulianDay(startOfDay)
+        let luna = Moon(julianDay: now, highPrecision: true)
+        
+        let julianDayOfNextPhase: JulianDay = luna.time(of: phase, forward: true, mean: false)
+        let nextPhase = julianDayOfNextPhase.date
+        if nextPhase < startOfNextDay {
+            return (true, nextPhase, nextPhase)
+        }
+        
         return (false, nil, nil)
     } // func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     

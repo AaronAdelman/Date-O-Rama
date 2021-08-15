@@ -1,0 +1,20 @@
+PODS:
+  - ObjCAA (2.3.0)
+  - SwiftAA (2.3.0):
+    - ObjCAA (~> 2.3.0)
+
+DEPENDENCIES:
+  - SwiftAA
+
+SPEC REPOS:
+  trunk:
+    - ObjCAA
+    - SwiftAA
+
+SPEC CHECKSUMS:
+  ObjCAA: b6393fcdf935f95d030b1d3d50f805c42669baa7
+  SwiftAA: b4a86f25229d50a57fde6ae83b93cf2e50ade530
+
+PODFILE CHECKSUM: 251606a84c10e8cefb8147bd93cea81ac2478ccf
+
+COCOAPODS: 1.10.2

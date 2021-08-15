@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461A4E2C00586F9E47E5DECA /* Pods_WatchDate_O_Rama_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A8FAB8933F45DDCEFCB4B4 /* Pods_WatchDate_O_Rama_Extension.framework */; };
+		49312805E8240890A4170CE9 /* Pods_Date_O_Rama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A62FF99E1109234034E868C /* Pods_Date_O_Rama.framework */; };
+		5A9809DE64D3ED070722D91A /* Pods_Date_O_RamaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16E80751115DDE2FE6B15FA /* Pods_Date_O_RamaTests.framework */; };
+		9453971E3008D60DB2E8CC88 /* Pods_WatchDate_O_Rama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A66C36288C8215A45AC86F7 /* Pods_WatchDate_O_Rama.framework */; };
 		A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */; };
 		A501B24F259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */; };
 		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
@@ -338,6 +342,7 @@
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
+		E43BF56F4156A9DE51890D8A /* Pods_Date_O_Rama_Date_O_RamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5404EBF68E036742DA31B7 /* Pods_Date_O_Rama_Date_O_RamaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -372,6 +377,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A55EAC7E26C90FE4001868E5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A566F4672483D6EF000A05B5 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,19 +429,20 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5EE117526C566F80050495C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08D07CC687BED1CCABAEAECD /* Pods-Date-O-Rama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-Rama.release.xcconfig"; path = "Target Support Files/Pods-Date-O-Rama/Pods-Date-O-Rama.release.xcconfig"; sourceTree = "<group>"; };
+		1A62FF99E1109234034E868C /* Pods_Date_O_Rama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Date_O_Rama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		252355C90003A740A62F3714 /* Pods-Date-O-Rama-Date-O-RamaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-Rama-Date-O-RamaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25C137BB262E943A66489E88 /* Pods-WatchDate-O-Rama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama.debug.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama/Pods-WatchDate-O-Rama.debug.xcconfig"; sourceTree = "<group>"; };
+		2E5404EBF68E036742DA31B7 /* Pods_Date_O_Rama_Date_O_RamaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Date_O_Rama_Date_O_RamaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		585C17D0F1F145ABDE938636 /* Pods-Date-O-Rama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-Rama.debug.xcconfig"; path = "Target Support Files/Pods-Date-O-Rama/Pods-Date-O-Rama.debug.xcconfig"; sourceTree = "<group>"; };
+		752CF1C49D9583795FFA283C /* Pods-WatchDate-O-Rama Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama Extension.release.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama Extension/Pods-WatchDate-O-Rama Extension.release.xcconfig"; sourceTree = "<group>"; };
+		89A8FAB8933F45DDCEFCB4B4 /* Pods_WatchDate_O_Rama_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDate_O_Rama_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A00A809BCE84EA3A5C4A496 /* Pods-Date-O-Rama-Date-O-RamaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-Rama-Date-O-RamaUITests.release.xcconfig"; path = "Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FB4172FA46AAD591C984B7A /* Pods-Date-O-RamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.debug.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A66C36288C8215A45AC86F7 /* Pods_WatchDate_O_Rama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDate_O_Rama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorRectangle.swift; sourceTree = "<group>"; };
 		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
@@ -616,6 +632,10 @@
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
+		B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.release.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2A7FB74C22622E280B15A95 /* Pods-WatchDate-O-Rama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama.release.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama/Pods-WatchDate-O-Rama.release.xcconfig"; sourceTree = "<group>"; };
+		E16E80751115DDE2FE6B15FA /* Pods_Date_O_RamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Date_O_RamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E875924C3E9AAA88AA9FAE1A /* Pods-WatchDate-O-Rama Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama Extension.debug.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama Extension/Pods-WatchDate-O-Rama Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -623,6 +643,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9453971E3008D60DB2E8CC88 /* Pods_WatchDate_O_Rama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +651,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461A4E2C00586F9E47E5DECA /* Pods_WatchDate_O_Rama_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +659,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49312805E8240890A4170CE9 /* Pods_Date_O_Rama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +667,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9809DE64D3ED070722D91A /* Pods_Date_O_RamaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,12 +675,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43BF56F4156A9DE51890D8A /* Pods_Date_O_Rama_Date_O_RamaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ED55F25D8D62606C7925415 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585C17D0F1F145ABDE938636 /* Pods-Date-O-Rama.debug.xcconfig */,
+				08D07CC687BED1CCABAEAECD /* Pods-Date-O-Rama.release.xcconfig */,
+				252355C90003A740A62F3714 /* Pods-Date-O-Rama-Date-O-RamaUITests.debug.xcconfig */,
+				8A00A809BCE84EA3A5C4A496 /* Pods-Date-O-Rama-Date-O-RamaUITests.release.xcconfig */,
+				8FB4172FA46AAD591C984B7A /* Pods-Date-O-RamaTests.debug.xcconfig */,
+				B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */,
+				25C137BB262E943A66489E88 /* Pods-WatchDate-O-Rama.debug.xcconfig */,
+				D2A7FB74C22622E280B15A95 /* Pods-WatchDate-O-Rama.release.xcconfig */,
+				E875924C3E9AAA88AA9FAE1A /* Pods-WatchDate-O-Rama Extension.debug.xcconfig */,
+				752CF1C49D9583795FFA283C /* Pods-WatchDate-O-Rama Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A5152A042472BE0B0098A94B /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +767,18 @@
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 			);
 			path = "Event files";
+			sourceTree = "<group>";
+		};
+		A55EAC7326C90FD5001868E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A62FF99E1109234034E868C /* Pods_Date_O_Rama.framework */,
+				2E5404EBF68E036742DA31B7 /* Pods_Date_O_Rama_Date_O_RamaUITests.framework */,
+				E16E80751115DDE2FE6B15FA /* Pods_Date_O_RamaTests.framework */,
+				9A66C36288C8215A45AC86F7 /* Pods_WatchDate_O_Rama.framework */,
+				89A8FAB8933F45DDCEFCB4B4 /* Pods_WatchDate_O_Rama_Extension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */ = {
@@ -922,6 +976,8 @@
 				A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */,
 				A566F4522483D6EC000A05B5 /* WatchDate-O-Rama Extension */,
 				A5C77BFA2433361400CFEE47 /* Products */,
+				8ED55F25D8D62606C7925415 /* Pods */,
+				A55EAC7326C90FD5001868E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1035,6 +1091,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A566F46E2483D6EF000A05B5 /* Build configuration list for PBXNativeTarget "WatchDate-O-Rama" */;
 			buildPhases = (
+				84657BFFB457D4684F80239A /* [CP] Check Pods Manifest.lock */,
 				A566F4402483D6E6000A05B5 /* Resources */,
 				A566F46A2483D6EF000A05B5 /* Embed App Extensions */,
 				4FC534C907334B6E7028520C /* Frameworks */,
@@ -1053,10 +1110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A566F46D2483D6EF000A05B5 /* Build configuration list for PBXNativeTarget "WatchDate-O-Rama Extension" */;
 			buildPhases = (
+				36DAA9C85DB918B287FF6B5B /* [CP] Check Pods Manifest.lock */,
 				A566F44A2483D6EC000A05B5 /* Sources */,
 				A566F44B2483D6EC000A05B5 /* Frameworks */,
 				A566F44C2483D6EC000A05B5 /* Resources */,
-				A5EE117526C566F80050495C /* Embed Frameworks */,
+				A55EAC7E26C90FE4001868E5 /* Embed Frameworks */,
+				71D3B26EFDA21FF23CD7BECB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1071,11 +1130,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C77C232433361900CFEE47 /* Build configuration list for PBXNativeTarget "Date-O-Rama" */;
 			buildPhases = (
+				5C3685DF836BBABA2206259B /* [CP] Check Pods Manifest.lock */,
 				A5C77BF52433361400CFEE47 /* Sources */,
 				A5C77BF62433361400CFEE47 /* Frameworks */,
 				A5C77BF72433361400CFEE47 /* Resources */,
 				A566F4672483D6EF000A05B5 /* Embed Watch Content */,
 				A5EE116D26C562C10050495C /* Embed Frameworks */,
+				F5787736A2BC656CF8251BEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1091,6 +1152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C77C262433361900CFEE47 /* Build configuration list for PBXNativeTarget "Date-O-RamaTests" */;
 			buildPhases = (
+				C07B50F48A51AAAF490600F8 /* [CP] Check Pods Manifest.lock */,
 				A5C77C0B2433361900CFEE47 /* Sources */,
 				A5C77C0C2433361900CFEE47 /* Frameworks */,
 				A5C77C0D2433361900CFEE47 /* Resources */,
@@ -1110,9 +1172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C77C292433361900CFEE47 /* Build configuration list for PBXNativeTarget "Date-O-RamaUITests" */;
 			buildPhases = (
+				BBFD8C3A3CEC356A49D50566 /* [CP] Check Pods Manifest.lock */,
 				A5C77C162433361900CFEE47 /* Sources */,
 				A5C77C172433361900CFEE47 /* Frameworks */,
 				A5C77C182433361900CFEE47 /* Resources */,
+				E09ACD807939D2CA3B818AD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1290,6 +1354,170 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36DAA9C85DB918B287FF6B5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchDate-O-Rama Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C3685DF836BBABA2206259B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Date-O-Rama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D3B26EFDA21FF23CD7BECB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchDate-O-Rama Extension/Pods-WatchDate-O-Rama Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchDate-O-Rama Extension/Pods-WatchDate-O-Rama Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchDate-O-Rama Extension/Pods-WatchDate-O-Rama Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84657BFFB457D4684F80239A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchDate-O-Rama-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFD8C3A3CEC356A49D50566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Date-O-Rama-Date-O-RamaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C07B50F48A51AAAF490600F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Date-O-RamaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E09ACD807939D2CA3B818AD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5787736A2BC656CF8251BEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama/Pods-Date-O-Rama-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama/Pods-Date-O-Rama-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama/Pods-Date-O-Rama-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A566F44A2483D6EC000A05B5 /* Sources */ = {
@@ -1684,6 +1912,7 @@
 /* Begin XCBuildConfiguration section */
 		A566F4682483D6EF000A05B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C137BB262E943A66489E88 /* Pods-WatchDate-O-Rama.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1708,6 +1937,7 @@
 		};
 		A566F4692483D6EF000A05B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A7FB74C22622E280B15A95 /* Pods-WatchDate-O-Rama.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1732,6 +1962,7 @@
 		};
 		A566F46B2483D6EF000A05B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E875924C3E9AAA88AA9FAE1A /* Pods-WatchDate-O-Rama Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
@@ -1740,6 +1971,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WatchDate-O-Rama Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1760,6 +1992,7 @@
 		};
 		A566F46C2483D6EF000A05B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752CF1C49D9583795FFA283C /* Pods-WatchDate-O-Rama Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
@@ -1768,6 +2001,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WatchDate-O-Rama Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 53M887FS75;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WatchDate-O-Rama Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1908,6 +2142,7 @@
 		};
 		A5C77C242433361900CFEE47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585C17D0F1F145ABDE938636 /* Pods-Date-O-Rama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
@@ -1938,6 +2173,7 @@
 		};
 		A5C77C252433361900CFEE47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D07CC687BED1CCABAEAECD /* Pods-Date-O-Rama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
@@ -1968,6 +2204,7 @@
 		};
 		A5C77C272433361900CFEE47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB4172FA46AAD591C984B7A /* Pods-Date-O-RamaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1990,6 +2227,7 @@
 		};
 		A5C77C282433361900CFEE47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2012,6 +2250,7 @@
 		};
 		A5C77C2A2433361900CFEE47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252355C90003A740A62F3714 /* Pods-Date-O-Rama-Date-O-RamaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2032,6 +2271,7 @@
 		};
 		A5C77C2B2433361900CFEE47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A00A809BCE84EA3A5C4A496 /* Pods-Date-O-Rama-Date-O-RamaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

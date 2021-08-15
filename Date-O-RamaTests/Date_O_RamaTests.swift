@@ -9,6 +9,7 @@
 import XCTest
 @testable import Date_O_Rama
 import CoreLocation
+import SwiftAA
 
 class Date_O_RamaTests: XCTestCase {
     let testDate:  Date = {
@@ -629,28 +630,28 @@ class Date_O_RamaTests: XCTestCase {
         formatter.timeStyle = .medium
         formatter.timeZone = .current
 
-//        let now = JulianDay(year: 2021, month: 8, day: 12)
-//        let luna = Moon(julianDay: now, highPrecision: true)
-//        
-//        let julianDayOfNextNewMoon: JulianDay = luna.time(of: .newMoon, forward: true, mean: false)
-//        let nextNewMoon = julianDayOfNextNewMoon.date
-//        let nextNewMoonString = formatter.string(from: nextNewMoon)
-//        debugPrint(#file, #function, julianDayOfNextNewMoon, nextNewMoonString)
-//
-//        let julianDayOfNextFirstQuarter: JulianDay = luna.time(of: .firstQuarter, forward: true, mean: false)
-//        let nextFirstQuarter = julianDayOfNextFirstQuarter.date
-//        let nextFirstQuarterString = formatter.string(from: nextFirstQuarter)
-//        debugPrint(#file, #function, julianDayOfNextFirstQuarter, nextFirstQuarterString)
-//
-//        let julianDayOfNextFullMoon: JulianDay = luna.time(of: .fullMoon, forward: true, mean: false)
-//        let nextFullMoon = julianDayOfNextFullMoon.date
-//        let nextFullMoonString = formatter.string(from: nextFullMoon)
-//        debugPrint(#file, #function, julianDayOfNextFullMoon, nextFullMoonString)
-//        
-//        let julianDayOfNextThirdQuarter: JulianDay = luna.time(of: .lastQuarter, forward: true, mean: false)
-//        let nextThirdQuarter = julianDayOfNextThirdQuarter.date
-//        let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
-//        debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
+        let now = JulianDay(year: 2021, month: 8, day: 12)
+        let luna = Moon(julianDay: now, highPrecision: true)
+        
+        let julianDayOfNextNewMoon: JulianDay = luna.time(of: .newMoon, forward: true, mean: false)
+        let nextNewMoon = julianDayOfNextNewMoon.date
+        let nextNewMoonString = formatter.string(from: nextNewMoon)
+        debugPrint(#file, #function, julianDayOfNextNewMoon, nextNewMoonString)
+
+        let julianDayOfNextFirstQuarter: JulianDay = luna.time(of: .firstQuarter, forward: true, mean: false)
+        let nextFirstQuarter = julianDayOfNextFirstQuarter.date
+        let nextFirstQuarterString = formatter.string(from: nextFirstQuarter)
+        debugPrint(#file, #function, julianDayOfNextFirstQuarter, nextFirstQuarterString)
+
+        let julianDayOfNextFullMoon: JulianDay = luna.time(of: .fullMoon, forward: true, mean: false)
+        let nextFullMoon = julianDayOfNextFullMoon.date
+        let nextFullMoonString = formatter.string(from: nextFullMoon)
+        debugPrint(#file, #function, julianDayOfNextFullMoon, nextFullMoonString)
+        
+        let julianDayOfNextThirdQuarter: JulianDay = luna.time(of: .lastQuarter, forward: true, mean: false)
+        let nextThirdQuarter = julianDayOfNextThirdQuarter.date
+        let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
+        debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
 
 
     } // func testMoon() throws

@@ -1,0 +1,6 @@
+framework module Pods_Date_O_Rama {
+  umbrella header "Pods-Date-O-Rama-umbrella.h"
+
+  export *
+  module * { export * }
+}
