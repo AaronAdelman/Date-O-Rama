@@ -2,7 +2,7 @@
     "titles": {"en": "United Nations International Days and Weeks"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.2745098039, "green": 0.6117647059, "blue": 0.8392156863},
     "emoji": "🇺🇳",
     "eventSpecifications": [
