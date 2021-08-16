@@ -235,7 +235,6 @@ extension ASADateComponents {
 
 // MARK:  - Start and end date specifications
 
-
 extension ASADateComponents {
     var EYMD: Array<Int?> {
         return [self.era, self.year, self.month, self.day]
@@ -248,5 +247,20 @@ extension ASADateComponents {
     var EY: Array<Int?> {
         return [self.era, self.year]
     } // var EY
+    
+    /// Seconds since the start of day.  WARNING:  The assumption is that these are ISO seconds!
+    var secondsSinceStartOfDay: Double? {
+        guard let hour = self.hour else {
+            return nil
+        }
+        guard let minute = self.minute else {
+            return nil
+        }
+        guard let second = self.second else {
+            return nil
+        }
+        let result: Double = Double((hour * 60 + minute) * 60 + second)
+        return result
+    } // var secondsSinceStartOfDay
 } // extension ASADateComponents
 

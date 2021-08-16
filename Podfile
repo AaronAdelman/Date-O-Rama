@@ -21,7 +21,7 @@ platform :ios, '14.0'
 end
 
 target 'WatchDate-O-Rama' do
-
+  platform :watchos, '7.0'
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

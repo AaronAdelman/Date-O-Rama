@@ -208,6 +208,7 @@
         {"titles": {"en": "International Human Solidarity Day"}, "start": {"type": "1Day", "month": 12, "day": 20}, "first": {"type": "1Day", "era": 1, "year": 2006}, "urls": {"en": "https://nationaldaycalendar.com/international-human-solidarity-december-20/"}, "emoji": "🖤"},
         {"titles": {"en": "International Day of Epidemic Preparedness"}, "start": {"type": "1Day", "month": 12, "day": 27}, "first": {"type": "1Day", "era": 1, "year": 2020}, "emoji": "😷"},
 
+        {"titles": {"en": "Vesak, the Day of the Full Moon"}, "start": {"type": "1stFullMoon", "month": 5}, "first": {"type": "1stFullMoon", "era": 1, "year": 2000}, "emoji": "🎂", "notes": {"en": "The birthday of the Buddha.  Whoever decided making this a UN observance did not understand that celebrating a Buddhist holiday may be taboo to adherents of other religions."}},
 
     ]
 }

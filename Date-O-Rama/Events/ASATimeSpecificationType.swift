@@ -21,8 +21,12 @@ enum ASATimeSpecificationType:  String, Codable {
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
     case timeChange                          = "timeChange" // Change from standard to daylight savings time or vice versa
     case IslamicPrayerTime                   = "IslamicPrayerTime"
+    
     case newMoon                             = "newMoon"
     case firstQuarter                        = "firstQuarter"
     case fullMoon                            = "fullMoon"
     case lastQuarter                         = "lastQuarter"
+    
+    case firstFullMoon                       = "1stFullMoon" // Requires a month
+    case secondFullMoon                      = "2ndFullMoon" // Requires a month
 } // enum ASATimeSpecificationType

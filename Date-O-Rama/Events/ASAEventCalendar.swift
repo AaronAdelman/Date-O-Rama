@@ -114,7 +114,6 @@ class ASAEventCalendar {
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        // TODO:  NEED TO FILL IN SOMETHING HERE
         var phase: MoonPhase
         switch type {
         case .fullMoon:
@@ -146,6 +145,65 @@ class ASAEventCalendar {
         return (false, nil, nil)
     } // func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
+    func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        let noMatchTuple: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
+
+        // Check if this is a full Moon
+        let fullMoonTuple = matchMoonPhase(type: .fullMoon, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+        if !fullMoonTuple.matches {
+            return noMatchTuple
+        }
+        
+        // Check the month
+        guard let componentsMonth = components.month else {
+            return noMatchTuple
+        }
+        guard let startDateSpecifiationMonth = startDateSpecification.month else {
+            return noMatchTuple
+        }
+        if componentsMonth != startDateSpecifiationMonth {
+            return noMatchTuple
+        }
+        
+        // Check which day this falls on
+        guard let componentsDay = components.day else {
+            return noMatchTuple
+        }
+        let CUTOFF = ((12.0 * 60.0) + 44.0) * 60.0 + 2.9
+        switch startDateSpecification.type {
+        case .firstFullMoon:
+            if componentsDay < 30 {
+                return (true, nil, nil)
+                
+            }
+            if componentsDay == 30 {
+                guard let secondsSinceMidnight: Double = components.secondsSinceStartOfDay else {
+                    return noMatchTuple
+                }
+                if secondsSinceMidnight < CUTOFF {
+                    return (true, nil, nil)
+                }
+            }
+            return noMatchTuple
+            
+        case.secondFullMoon:
+            if componentsDay > 30 {
+                return (true, nil, nil)
+            }
+            guard let secondsSinceMidnight: Double = components.secondsSinceStartOfDay else {
+                return noMatchTuple
+            }
+            if secondsSinceMidnight > CUTOFF {
+                return (true, nil, nil)
+            }
+            return noMatchTuple
+            
+        default:
+            // Should not happen
+            return noMatchTuple
+        } // switch startDateSpecification.type
+    } // func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
                     
@@ -157,6 +215,10 @@ class ASAEventCalendar {
 //         Moon phases
         if startDateSpecification.type == .newMoon || startDateSpecification.type == .firstQuarter || startDateSpecification.type == .fullMoon || startDateSpecification.type == .lastQuarter {
             return matchMoonPhase(type: startDateSpecification.type, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+        }
+        
+        if startDateSpecification.type == .firstFullMoon || startDateSpecification.type == .secondFullMoon {
+            return matchNumberedFullMoon(startDateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
         var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)

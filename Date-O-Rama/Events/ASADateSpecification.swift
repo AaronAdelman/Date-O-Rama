@@ -184,7 +184,7 @@ extension ASADateSpecification {
             let dayHalfStart = ASASolarEvent.dawn72Minutes
             let dayHalfEnd   = ASASolarEvent.dusk72Minutes
             return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, latitude: latitude, longitude: longitude, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
-        case .timeChange, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .IslamicPrayerTime:
+        case .timeChange, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .IslamicPrayerTime, .firstFullMoon, .secondFullMoon:
             return Date()
         case .fixedTime:
             return Date ()
@@ -244,6 +244,8 @@ extension ASADateSpecification {
         case .fixedTime:
             return date // TODO:  May have to fix this!
         case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
+            return date // TODO:  May have to fix this!
+        case .firstFullMoon, .secondFullMoon:
             return date // TODO:  May have to fix this!
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?

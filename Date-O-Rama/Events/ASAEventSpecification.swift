@@ -19,6 +19,9 @@ class ASAEventSpecification: Codable {
             case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
                 return true
                 
+            case .firstFullMoon, .secondFullMoon:
+                return true
+                
             default:
                 return false
             } // switch self.startDateSpecification.type
