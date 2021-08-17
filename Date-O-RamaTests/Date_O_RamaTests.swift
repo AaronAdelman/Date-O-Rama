@@ -652,7 +652,28 @@ class Date_O_RamaTests: XCTestCase {
         let nextThirdQuarter = julianDayOfNextThirdQuarter.date
         let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
         debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
-
-
     } // func testMoon() throws
+    
+    func testSun() throws {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        formatter.timeZone = .current
+
+        let now = JulianDay(year: 2021, month: 8, day: 16)
+        let terra = Earth(julianDay: now, highPrecision: true)
+        let sunrise_sunset = terra.twilights(forSunAltitude: TwilightSunAltitude.upperLimbOnHorizonWithRefraction.rawValue, coordinates: GeographicCoordinates(CLLocation(latitude: 32.088889, longitude: 34.886389)))
+        let sunrise = sunrise_sunset.riseTime
+        let transit = sunrise_sunset.transitTime
+        let sunset = sunrise_sunset.setTime
+        guard let sunriseDate = sunrise?.date else { return }
+        guard let transitDate = transit?.date else { return  }
+        guard let sunsetDate = sunset?.date else { return  }
+        let sunriseString = formatter.string(from: sunriseDate)
+        let transitString = formatter.string(from: transitDate)
+        let sunsetString = formatter.string(from: sunsetDate)
+        debugPrint(#file, #function, sunriseString, transitString, sunsetString)
+    }
 } // class Date_O_RamaTests

@@ -80,8 +80,6 @@
     func solarTimeComponents(now: Date, locationData:  ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool) {
         let location = locationData.location
         let timeZone = locationData.timeZone
-        let latitude  = location.coordinate.latitude
-        let longitude = location.coordinate.longitude
 
         var existsSolarTime = true
         if transition == nil {
@@ -108,7 +106,7 @@
             //            let nextDate = now.oneDayAfter
             let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
             var nextDayHalfStart:  Date
-            let nextEvents = nextDate.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone )
+            let nextEvents = nextDate.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone )
             nextDayHalfStart = nextEvents[self.dayStart]!!
             assert(nextDayHalfStart > deoptionalizedTransition)
 
@@ -119,7 +117,7 @@
         } else {
             // now < deoptionalizedTransition
             let ourTimeZone = timeZone
-            let events = now.noon(timeZone:ourTimeZone).solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: ourTimeZone)
+            let events = now.noon(timeZone:ourTimeZone).solarEvents(location: location, events: [self.dayStart], timeZone: ourTimeZone)
 
             let rawDayHalfStart: Date?? = events[self.dayStart]
 
@@ -136,7 +134,7 @@
             if dayHalfStart > deoptionalizedTransition {
                 // Uh-oh.  It found the day half start for the wrong day!
                 jiggeredNow = now - Date.SECONDS_PER_DAY
-                let events = jiggeredNow.solarEvents(latitude: latitude, longitude: longitude, events: [self.dayStart], timeZone: timeZone )
+                let events = jiggeredNow.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone )
 
                 let rawDayHalfStart: Date?? = events[self.dayStart]
 
@@ -356,7 +354,7 @@
         let timeZone = locationData.timeZone
         let yesterday: Date = date.addingTimeInterval(-Date.SECONDS_PER_DAY)
         let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
-        let events = fixedYesterday.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+        let events = fixedYesterday.solarEvents(location: location, events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
             return date.sixPMYesterday(timeZone: timeZone)
@@ -373,7 +371,7 @@
         let timeZone = locationData.timeZone
 
         let (fixedNow, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
-        let events = fixedNow.solarEvents(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude), events: [self.dayEnd], timeZone: timeZone )
+        let events = fixedNow.solarEvents(location: location, events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]
         if rawDayEnd == nil {
             return date.sixPM(timeZone: timeZone)

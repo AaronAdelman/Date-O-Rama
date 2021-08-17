@@ -118,9 +118,8 @@ extension Date {
 
 extension Date {
     func solarCorrected(locationData:  ASALocation, transitionEvent:  ASASolarEvent) -> (date:  Date, transition:  Date??) {
-        let location = locationData.location
         let timeZone = locationData.timeZone
-        let events = self.solarEvents(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, events: [transitionEvent], timeZone: timeZone)
+        let events = self.solarEvents(location: locationData.location, events: [transitionEvent], timeZone: timeZone)
 
         let sunset = events[transitionEvent]
         var result: (date:  Date, transition:  Date??)

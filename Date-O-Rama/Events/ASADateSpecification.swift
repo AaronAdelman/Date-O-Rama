@@ -61,12 +61,12 @@ struct ASADateSpecification:  Codable {
 // MARK: -
 
 extension ASADateSpecification {
-    fileprivate func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASATimeSpecificationDayHalf, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date? {
+    fileprivate func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASATimeSpecificationDayHalf, location: CLLocation, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date? {
         switch dayHalf {
         case .night:
             let previousDate = rawDate!.oneDayBefore
-            let previousEvents = previousDate.solarEvents(latitude: latitude, longitude: longitude, events: [dayHalfEnd], timeZone:  timeZone)
-            let events = rawDate!.solarEvents(latitude: latitude, longitude: longitude, events: [dayHalfStart, dayHalfEnd, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
+            let previousEvents = previousDate.solarEvents(location: location, events: [dayHalfEnd], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
             
             let previousSunset:  Date = previousEvents[dayHalfEnd]!! // שקיעה
             let sunrise:  Date = events[dayHalfStart]!! // נץ
@@ -76,7 +76,7 @@ extension ASADateSpecification {
             return result
             
         case .day:
-            let events = rawDate!.solarEvents(latitude: latitude, longitude: longitude, events: [dayHalfStart, dayHalfEnd, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
             let sunrise:  Date = events[dayHalfStart]!! // נץ
             let sunset:  Date = events[dayHalfEnd]!! // שקיעה
             let dayLength = sunset.timeIntervalSince(sunrise)
@@ -111,8 +111,6 @@ extension ASADateSpecification {
             return nil
         }
         
-        let latitude = revisedDateComponents.locationData.location.coordinate.latitude
-        let longitude = revisedDateComponents.locationData.location.coordinate.longitude
         let timeZone = revisedDateComponents.locationData.timeZone
         
         switch self.type {
@@ -161,7 +159,7 @@ extension ASADateSpecification {
             }
         case .degreesBelowHorizon:
             let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
-            let events = rawDate!.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: revisedDateComponents.locationData.location, events: [solarEvent], timeZone:  timeZone)
             let result = events[solarEvent]
             if result == nil {
                 return nil
@@ -176,14 +174,14 @@ extension ASADateSpecification {
             let dayHalf = self.dayHalf!
             let dayHalfStart = ASASolarEvent.sunrise
             let dayHalfEnd   = ASASolarEvent.sunset
-            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, latitude: latitude, longitude: longitude, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
 
         case .solarTimeDawn72MinutesDusk72Minutes:
             let hours = self.solarHours!
             let dayHalf = self.dayHalf!
             let dayHalfStart = ASASolarEvent.dawn72Minutes
             let dayHalfEnd   = ASASolarEvent.dusk72Minutes
-            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, latitude: latitude, longitude: longitude, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
         case .timeChange, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .IslamicPrayerTime, .firstFullMoon, .secondFullMoon:
             return Date()
         case .fixedTime:
@@ -192,18 +190,18 @@ extension ASADateSpecification {
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
-    func rawDegreesBelowHorizon(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone) -> Date? {
+    func rawDegreesBelowHorizon(date:  Date, location: CLLocation, timeZone:  TimeZone) -> Date? {
         let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
 
-        let events = date.solarEvents(latitude: latitude, longitude: longitude, events: [solarEvent], timeZone:  timeZone)
+        let events = date.solarEvents(location: location, events: [solarEvent], timeZone:  timeZone)
         let result = events[solarEvent]
         return result!
     }
     
-    func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
+    func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
         switch self.type {
         case .degreesBelowHorizon:
-            let result = self.rawDegreesBelowHorizon(date: date, latitude: latitude, longitude: longitude, timeZone: timeZone)
+            let result = self.rawDegreesBelowHorizon(date: date, location: location, timeZone: timeZone)
             return result!
             
         case .solarTimeSunriseSunset:
