@@ -227,6 +227,8 @@
 		A5AAA7512657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */; };
 		A5ACC3B8245ECB14006EB0D4 /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */; };
 		A5AF2C4B2636ED8900FD479D /* ASAEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */; };
+		A5B0084726CD3A0B00B63B3F /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B0084626CD3A0B00B63B3F /* Earth.json */; };
+		A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = A5B0084626CD3A0B00B63B3F /* Earth.json */; };
 		A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */; };
 		A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */; };
 		A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */ = {isa = PBXBuildFile; fileRef = A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */; };
@@ -544,6 +546,7 @@
 		A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACompactForwardChevronSymbol.swift; sourceTree = "<group>"; };
 		A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventDetailView.swift; sourceTree = "<group>"; };
+		A5B0084626CD3A0B00B63B3F /* Earth.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Earth.json; sourceTree = "<group>"; };
 		A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateORamaApp.swift; sourceTree = "<group>"; };
 		A5B4E0482625EC59005D6692 /* ASAWatchDateORamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAWatchDateORamaApp.swift; sourceTree = "<group>"; };
 		A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeZones.txt; sourceTree = "<group>"; };
@@ -740,6 +743,7 @@
 				A5CBB50F24FD54310084DF72 /* Antisemitism (Gregorian).json */,
 				A5BDE7A22667E22000F47416 /* Antisemitism (Islamic).json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
+				A5B0084626CD3A0B00B63B3F /* Earth.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */,
 				A5BDE77B26677E7900F47416 /* Islamic awareness.json */,
@@ -1261,6 +1265,7 @@
 				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
 				A5BDE7A42667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
 				A5769953259EDCC000757B0F /* Sun.json in Resources */,
+				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
@@ -1333,6 +1338,7 @@
 				A533798124B2333500340C0B /* Sun.json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitism (Gregorian).json in Resources */,
 				A5C7793D26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */,
+				A5B0084726CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5BDE7A02667B66800F47416 /* Israel (Gregorian).json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,

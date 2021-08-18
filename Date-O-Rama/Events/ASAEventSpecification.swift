@@ -19,7 +19,7 @@ class ASAEventSpecification: Codable {
             case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
                 return true
                 
-            case .firstFullMoon, .secondFullMoon:
+            case .firstFullMoonDay, .secondFullMoonDay:
                 return true
                 
             default:
@@ -55,8 +55,41 @@ class ASAEventSpecification: Codable {
 
 // MARK:  -
 
+extension Array where Element == String {
+    /// Matching for region code
+    /// - Parameters:
+    ///   - regionCode: An ISO or MARC region code.  This may include "xb" (northern hemisphere) or "xc" (southern hemisphere)
+    ///   - latitude: Latitude in degrees north of the equator
+    /// - Returns: Whether the region code is in the array.  Note that if the latitude passed is correct, "xb" and "xc" will match, too.
+    func matches(regionCode: String, latitude: CLLocationDegrees) -> Bool {
+        let result: Bool = self.contains(regionCode)
+        debugPrint(#file, #function, "Contains code:", regionCode, result)
+        if result {
+            return true
+        }
+        
+        if self.contains(REGION_CODE_Northern_Hemisphere) {
+            let result: Bool = latitude > 0.0
+            if result {
+                debugPrint(#file, #function, "Northern Hemisphere", latitude, result)
+                return true
+            }
+        }
+        
+        if self.contains(REGION_CODE_Southern_Hemisphere) {
+            let result: Bool = latitude < 0.0
+            if result {
+                debugPrint(#file, #function, "Southern Hemisphere", latitude, result)
+                return true
+            }
+        }
+        
+        return false
+    } // func matches(regionCode: String, latitude: CLLocationDegrees) -> Bool
+} // extension Array where Element == String
+
 extension ASAEventSpecification {
-    func match(regionCode:  String?) -> Bool {
+    func match(regionCode:  String?, latitude: CLLocationDegrees) -> Bool {
         if regionCode == nil {
             if self.regionCodes != nil && self.regionCodes != [] {
                 return false
@@ -65,12 +98,12 @@ extension ASAEventSpecification {
             return true
         } else {
             if self.regionCodes != nil {
-                let result = self.regionCodes!.contains(regionCode!)
+                let result = self.regionCodes!.matches(regionCode: regionCode!, latitude: latitude)
                 return result
             }
             
             if self.excludeRegionCodes != nil {
-                let result = !self.excludeRegionCodes!.contains(regionCode!)
+                let result = !self.excludeRegionCodes!.matches(regionCode: regionCode!, latitude: latitude)
                 return result
             }
             

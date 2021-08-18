@@ -150,6 +150,9 @@ extension String {
 
 let REGION_CODE_Earth = "x"
 
+let REGION_CODE_Northern_Hemisphere = "xb"
+let REGION_CODE_Southern_Hemisphere = "xc"
+
 let REGION_CODE_Afghanistan          = "AF"
 let REGION_CODE_Algeria              = "DZ"
 let REGION_CODE_Bahrain              = "BH"

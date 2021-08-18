@@ -1,0 +1,27 @@
+{
+    "titles": {"en": "Earth", "he": "כדור הארץ"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.0, "green": 0.59, "blue": 1.0},
+    "eventSpecifications": [
+        {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
+            "start": {"type": "MarEquinox"}, "regionCodes": ["xb"]},
+        {"titles": {"en": "Summer Solstice", "he": "היפוך הקיץ"},
+            "start": {"type": "JunSolstice"}, "regionCodes": ["xb"]},
+        {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"},
+            "start": {"type": "SepEquinox"}, "regionCodes": ["xb"]},
+        {"titles": {"en": "Winter Solstice", "he": "היפוך חורף"},
+            "start": {"type": "DecSolstice"}, "regionCodes": ["xb"]},
+
+        {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
+            "start": {"type": "SepEquinox"}, "regionCodes": ["xc"]},
+        {"titles": {"en": "Summer Solstice", "he": "היפוך הקיץ"},
+            "start": {"type": "DecSolstice"}, "regionCodes": ["xc"]},
+        {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"},
+            "start": {"type": "MarEquinox"}, "regionCodes": ["xc"]},
+        {"titles": {"en": "Winter Solstice", "he": "היפוך חורף"},
+            "start": {"type": "JunSolstice"}, "regionCodes": ["xc"]},
+ ]
+    }
+

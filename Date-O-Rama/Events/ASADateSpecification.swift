@@ -182,7 +182,7 @@ extension ASADateSpecification {
             let dayHalfStart = ASASolarEvent.dawn72Minutes
             let dayHalfEnd   = ASASolarEvent.dusk72Minutes
             return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
-        case .timeChange, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .IslamicPrayerTime, .firstFullMoon, .secondFullMoon:
+        case .timeChange, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .IslamicPrayerTime, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
             return Date()
         case .fixedTime:
             return Date ()
@@ -241,9 +241,9 @@ extension ASADateSpecification {
             return date // TODO:  May have to change!
         case .fixedTime:
             return date // TODO:  May have to fix this!
-        case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
+        case .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
             return date // TODO:  May have to fix this!
-        case .firstFullMoon, .secondFullMoon:
+        case .firstFullMoonDay, .secondFullMoonDay:
             return date // TODO:  May have to fix this!
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?

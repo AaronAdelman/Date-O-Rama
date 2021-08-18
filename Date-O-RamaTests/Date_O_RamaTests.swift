@@ -676,4 +676,63 @@ class Date_O_RamaTests: XCTestCase {
         let sunsetString = formatter.string(from: sunsetDate)
         debugPrint(#file, #function, sunriseString, transitString, sunsetString)
     }
+    
+    func testEquinoxesAndSolstices() throws {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        formatter.timeZone = .current
+
+        let now = JulianDay(year: 2021, month: 8, day: 16)
+        let terra = Earth(julianDay: now, highPrecision: true)
+        
+        let MarchEquinox = terra.equinox(of: .northwardSpring)
+        let MarchEquinoxDate = MarchEquinox.date
+        let MarchEquinoxString = formatter.string(from: MarchEquinoxDate)
+        
+        let JuneSolstice = terra.solstice(of: .northernSummer)
+        let JuneSolsticeDate = JuneSolstice.date
+        let JuneSolsticeString = formatter.string(from: JuneSolsticeDate)
+        
+        let SeptemberEquinox = terra.equinox(of: .southwardSpring)
+        let SeptemberEquinoxDate = SeptemberEquinox.date
+        let SeptemberEquinoxString = formatter.string(from: SeptemberEquinoxDate)
+
+        let DecemberSolstice = terra.solstice(of: .southernSummer)
+        let DecemberSolsticeDate = DecemberSolstice.date
+        let DecemberSolsticeString = formatter.string(from: DecemberSolsticeDate)
+
+        debugPrint(#file, #function, MarchEquinoxString, JuneSolsticeString, SeptemberEquinoxString, DecemberSolsticeString)
+
+    }
+    
+    func testMatchRegionCodes() throws {
+        let codes1 = ["a", "b", "c", REGION_CODE_Northern_Hemisphere]
+        let codes2 = ["a", "b", "c", REGION_CODE_Southern_Hemisphere]
+        let codes3 = [REGION_CODE_Northern_Hemisphere]
+        
+        XCTAssert(codes1.matches(regionCode: "a", latitude: 10.0))
+        XCTAssert(codes1.matches(regionCode: "b", latitude: 10.0))
+        XCTAssert(codes1.matches(regionCode: "c", latitude: 10.0))
+        XCTAssert(codes1.matches(regionCode: "d", latitude: 10.0))
+
+        XCTAssert(codes2.matches(regionCode: "a", latitude: 10.0))
+        XCTAssert(codes2.matches(regionCode: "b", latitude: 10.0))
+        XCTAssert(codes2.matches(regionCode: "c", latitude: 10.0))
+        XCTAssertFalse(codes2.matches(regionCode: "d", latitude: 10.0))
+
+        XCTAssert(codes1.matches(regionCode: "a", latitude: -10.0))
+        XCTAssert(codes1.matches(regionCode: "b", latitude: -10.0))
+        XCTAssert(codes1.matches(regionCode: "c", latitude: -10.0))
+        XCTAssertFalse(codes1.matches(regionCode: "d", latitude: -10.0))
+
+        XCTAssert(codes2.matches(regionCode: "a", latitude: -10.0))
+        XCTAssert(codes2.matches(regionCode: "b", latitude: -10.0))
+        XCTAssert(codes2.matches(regionCode: "c", latitude: -10.0))
+        XCTAssert(codes2.matches(regionCode: "d", latitude: -10.0))
+        
+        XCTAssert(codes3.matches(regionCode: "IL", latitude: 34.0))
+    }
 } // class Date_O_RamaTests

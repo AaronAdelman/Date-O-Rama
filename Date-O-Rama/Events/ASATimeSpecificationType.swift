@@ -27,6 +27,11 @@ enum ASATimeSpecificationType:  String, Codable {
     case fullMoon                            = "fullMoon"
     case lastQuarter                         = "lastQuarter"
     
-    case firstFullMoon                       = "1stFullMoon" // Requires a month
-    case secondFullMoon                      = "2ndFullMoon" // Requires a month
+    case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
+    case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
+    
+    case MarchEquinox                        = "MarEquinox"
+    case JuneSolstice                        = "JunSolstice"
+    case SeptemberEquinox                    = "SepEquinox"
+    case DecemberSolstice                    = "DecSolstice"
 } // enum ASATimeSpecificationType
