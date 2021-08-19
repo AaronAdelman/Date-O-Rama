@@ -622,7 +622,7 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(31.matches(recurrence: -1, lengthOfWeek: LENGTH_OF_WEEK, lengthOfMonth: 31))
     } // func testNthRecurrenceOfWeekdayInMonth() throws
     
-    func testMoon() throws {
+    func testMoonPhases() throws {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "en_US")
 
@@ -652,7 +652,25 @@ class Date_O_RamaTests: XCTestCase {
         let nextThirdQuarter = julianDayOfNextThirdQuarter.date
         let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
         debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
-    } // func testMoon() throws
+    } // func testMoonPhases() throws
+    
+    func testMoonRiseSet() throws {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .medium
+        formatter.timeZone = TimeZone(secondsFromGMT: 3 * 60 * 60)
+
+        let now = JulianDay(year: 2021, month: 8, day: 21)
+        let luna = Moon(julianDay: now, highPrecision: true)
+        let riseTransitSet = luna.riseTransitSetTimes(for: GeographicCoordinates(CLLocation(latitude: 32.088889, longitude: 34.886389)))
+        let rise = riseTransitSet.riseTime?.date
+        let transit = riseTransitSet.transitTime?.date
+        let set = riseTransitSet.setTime?.date
+        
+        debugPrint(#file, #function, "Rise:", rise as Any, "Transit:", transit as Any, "Transit error:", riseTransitSet.transitError as Any, "Set:", set as Any)
+    }
     
     func testSun() throws {
         let formatter = DateFormatter()

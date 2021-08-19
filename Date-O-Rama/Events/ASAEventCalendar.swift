@@ -237,7 +237,7 @@ class ASAEventCalendar {
         return possibleDate
     } // func possibleDate(for type: ASATimeSpecificationType, date: Date) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, latitude: CLLocationDegrees) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let noMatchTuple: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
         
         guard let dateThisYear = possibleDate(for: type, date: startOfDay) else {
@@ -267,7 +267,7 @@ class ASAEventCalendar {
         }
 
         return noMatchTuple
-    } // func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, latitude: CLLocationDegrees) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
@@ -290,7 +290,7 @@ class ASAEventCalendar {
         
         // Equinoxes and solstices
         if startDateSpecificationType == .MarchEquinox || startDateSpecificationType == .JuneSolstice || startDateSpecificationType == .SeptemberEquinox || startDateSpecificationType == .DecemberSolstice {
-            return matchEquinoxOrSolstice(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, latitude: locationData.location.coordinate.latitude)
+            return matchEquinoxOrSolstice(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
         var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
