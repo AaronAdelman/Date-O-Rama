@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
             "start": {"type": "MarEquinox"}, "regionCodes": ["xb"]},
-        {"titles": {"en": "Summer Solstice", "he": "היפוך הקיץ"},
+        {"titles": {"en": "Summer Solstice", "he": "היפוך קיץ"},
             "start": {"type": "JunSolstice"}, "regionCodes": ["xb"]},
         {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"},
             "start": {"type": "SepEquinox"}, "regionCodes": ["xb"]},
@@ -16,7 +16,7 @@
 
         {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
             "start": {"type": "SepEquinox"}, "regionCodes": ["xc"]},
-        {"titles": {"en": "Summer Solstice", "he": "היפוך הקיץ"},
+        {"titles": {"en": "Summer Solstice", "he": "היפוך קיץ"},
             "start": {"type": "DecSolstice"}, "regionCodes": ["xc"]},
         {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"},
             "start": {"type": "MarEquinox"}, "regionCodes": ["xc"]},
