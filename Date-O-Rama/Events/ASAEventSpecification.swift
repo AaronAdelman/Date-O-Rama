@@ -63,7 +63,7 @@ extension Array where Element == String {
     /// - Returns: Whether the region code is in the array.  Note that if the latitude passed is correct, "xb" and "xc" will match, too.
     func matches(regionCode: String, latitude: CLLocationDegrees) -> Bool {
         let result: Bool = self.contains(regionCode)
-        debugPrint(#file, #function, "Contains code:", regionCode, result)
+//        debugPrint(#file, #function, "Contains code:", regionCode, result)
         if result {
             return true
         }
@@ -71,7 +71,7 @@ extension Array where Element == String {
         if self.contains(REGION_CODE_Northern_Hemisphere) {
             let result: Bool = latitude > 0.0
             if result {
-                debugPrint(#file, #function, "Northern Hemisphere", latitude, result)
+//                debugPrint(#file, #function, "Northern Hemisphere", latitude, result)
                 return true
             }
         }
@@ -79,7 +79,7 @@ extension Array where Element == String {
         if self.contains(REGION_CODE_Southern_Hemisphere) {
             let result: Bool = latitude < 0.0
             if result {
-                debugPrint(#file, #function, "Southern Hemisphere", latitude, result)
+//                debugPrint(#file, #function, "Southern Hemisphere", latitude, result)
                 return true
             }
         }
