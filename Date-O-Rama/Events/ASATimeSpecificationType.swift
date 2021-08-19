@@ -35,3 +35,15 @@ enum ASATimeSpecificationType:  String, Codable {
     case SeptemberEquinox                    = "SepEquinox"
     case DecemberSolstice                    = "DecSolstice"
 } // enum ASATimeSpecificationType
+
+extension ASATimeSpecificationType {
+    var isAllDay: Bool {
+        switch self {
+        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .firstFullMoonDay, .secondFullMoonDay:
+            return true
+            
+        default:
+            return false
+        } // switch self
+    } // var isAllDay
+} // extension ASATimeSpecificationType

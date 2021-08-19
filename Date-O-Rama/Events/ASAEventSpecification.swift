@@ -14,18 +14,7 @@ class ASAEventSpecification: Codable {
     var locations: Dictionary<String, String>?
     
     var isAllDay:  Bool {
-        get {
-            switch self.startDateSpecification.type {
-            case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
-                return true
-                
-            case .firstFullMoonDay, .secondFullMoonDay:
-                return true
-                
-            default:
-                return false
-            } // switch self.startDateSpecification.type
-        } // get
+        return self.startDateSpecification.type.isAllDay
     } // var isAllDay
 
     var calendarCode:  ASACalendarCode?
