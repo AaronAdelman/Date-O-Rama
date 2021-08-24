@@ -102,6 +102,7 @@ extension ASADateSpecification {
         }
         
         revisedDateComponents.weekday = nil
+        revisedDateComponents.isLeapMonth = nil
         
         if !calendar.isValidDate(dateComponents: revisedDateComponents) {
             return nil
@@ -126,8 +127,8 @@ extension ASADateSpecification {
                 revisedDateComponents.month =  1
                 revisedDateComponents.day   =  1
             }
-            revisedDateComponents.weekday     = nil
-            revisedDateComponents.isLeapMonth = nil
+//            revisedDateComponents.weekday     = nil
+//            revisedDateComponents.isLeapMonth = nil
             let tempResult = calendar.date(dateComponents: revisedDateComponents)
             if tempResult == nil {
                 return nil
@@ -142,8 +143,8 @@ extension ASADateSpecification {
             } else {
                 revisedDateComponents.day   =  1
             }
-            revisedDateComponents.weekday     = nil
-            revisedDateComponents.isLeapMonth = nil
+//            revisedDateComponents.weekday     = nil
+//            revisedDateComponents.isLeapMonth = nil
             let tempResult = calendar.date(dateComponents: revisedDateComponents)
             if tempResult == nil {
                 return nil

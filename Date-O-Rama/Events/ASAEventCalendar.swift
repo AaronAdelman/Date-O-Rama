@@ -305,10 +305,10 @@ class ASAEventCalendar {
             }
         }
 
-        // All-year events
+        // One-year events
         if startDateSpecificationType == .oneYear {
             assert(endDateSpecification == nil)
-            let matches = self.matchAllYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
+            let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
             if matches {
                 let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
                 let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
@@ -342,11 +342,11 @@ class ASAEventCalendar {
             return (true, startDate, endDate)
         }
         
-        // All-month events
+        // One-month events
         if startDateSpecificationType == .oneMonth {
             assert(endDateSpecification == nil)
             
-            let matches = self.matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
+            let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
             if matches {
                 let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
                 let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
@@ -360,7 +360,7 @@ class ASAEventCalendar {
         if startDateSpecificationType == .multiMonth {
             assert(endDateSpecification != nil)
             
-            if !matchAllYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
+            if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
                 return (false, nil, nil)
             }
             
@@ -506,7 +506,7 @@ class ASAEventCalendar {
         return true
     } // func matchMonthSupplemental(date:  Date, components:  ASADateComponents, dateSpecification:  ASADateSpecification, calendar:  ASACalendar) -> Bool
     
-    func matchAllYear(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
+    func matchOneYear(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
         let supportsEra: Bool = calendar.supports(calendarComponent: .era)
         if supportsEra {
             if !(components.era?.matches(value: onlyDateSpecification.era) ?? false) {
@@ -528,8 +528,8 @@ class ASAEventCalendar {
         return true
     } // func matchAllYear(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
-    func matchAllMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
-        if !matchAllYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: onlyDateSpecification, components: components) {
+    func matchOneMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
+        if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: onlyDateSpecification, components: components) {
             return false
         }
         
@@ -548,7 +548,7 @@ class ASAEventCalendar {
     } // func matchAllMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
     func matchOneDayOrInstant(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
-        if !matchAllMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: dateSpecification, components: components) {
+        if !matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: dateSpecification, components: components) {
             return false
         }
         
