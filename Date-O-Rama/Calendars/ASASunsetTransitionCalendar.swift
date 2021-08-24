@@ -352,7 +352,7 @@
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
         let location = locationData.location
         let timeZone = locationData.timeZone
-        let yesterday: Date = date.addingTimeInterval(-Date.SECONDS_PER_DAY)
+        let yesterday: Date = date.oneDayBefore
         let (fixedYesterday, _) = yesterday.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
         let events = fixedYesterday.solarEvents(location: location, events: [self.dayEnd], timeZone: timeZone )
         let rawDayEnd: Date?? = events[self.dayEnd]

@@ -103,6 +103,8 @@ class ASAEventCalendar {
         return tweakedDateSpecification
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
+    fileprivate let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
+
     func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let oneSecondBeforeStartOfDay = startOfDay.addingTimeInterval(-1.0)
         let nextDaylightSavingTimeTransition = timeZone.nextDaylightSavingTimeTransition(after: oneSecondBeforeStartOfDay)
@@ -113,7 +115,7 @@ class ASAEventCalendar {
             }
         }
         
-        return (false, nil, nil)
+        return MATCH_FAILURE
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
@@ -133,7 +135,7 @@ class ASAEventCalendar {
             
         default:
             // Should not happen!
-            return (false, nil, nil)
+            return MATCH_FAILURE
         } // switch type
         
         let now = JulianDay(startOfDay)
@@ -145,32 +147,31 @@ class ASAEventCalendar {
             return (true, nextPhase, nextPhase)
         }
         
-        return (false, nil, nil)
+        return MATCH_FAILURE
     } // func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        let noMatchTuple: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
 
         // Check if this is a full Moon
         let fullMoonTuple = matchMoonPhase(type: .fullMoon, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         if !fullMoonTuple.matches {
-            return noMatchTuple
+            return MATCH_FAILURE
         }
         
         // Check the month
         guard let componentsMonth = components.month else {
-            return noMatchTuple
+            return MATCH_FAILURE
         }
         guard let startDateSpecifiationMonth = startDateSpecification.month else {
-            return noMatchTuple
+            return MATCH_FAILURE
         }
         if componentsMonth != startDateSpecifiationMonth {
-            return noMatchTuple
+            return MATCH_FAILURE
         }
         
         // Check which day this falls on
         guard let componentsDay = components.day else {
-            return noMatchTuple
+            return MATCH_FAILURE
         }
         let CUTOFF = ((12.0 * 60.0) + 44.0) * 60.0 + 2.9
         switch startDateSpecification.type {
@@ -181,29 +182,29 @@ class ASAEventCalendar {
             }
             if componentsDay == 30 {
                 guard let secondsSinceMidnight: Double = components.secondsSinceStartOfDay else {
-                    return noMatchTuple
+                    return MATCH_FAILURE
                 }
                 if secondsSinceMidnight < CUTOFF {
                     return (true, nil, nil)
                 }
             }
-            return noMatchTuple
+            return MATCH_FAILURE
             
         case.secondFullMoonDay:
             if componentsDay > 30 {
                 return (true, nil, nil)
             }
             guard let secondsSinceMidnight: Double = components.secondsSinceStartOfDay else {
-                return noMatchTuple
+                return MATCH_FAILURE
             }
             if secondsSinceMidnight > CUTOFF {
                 return (true, nil, nil)
             }
-            return noMatchTuple
+            return MATCH_FAILURE
             
         default:
             // Should not happen
-            return noMatchTuple
+            return MATCH_FAILURE
         } // switch startDateSpecification.type
     } // func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
@@ -238,10 +239,9 @@ class ASAEventCalendar {
     } // func possibleDate(for type: ASATimeSpecificationType, date: Date) -> Date?
     
     func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        let noMatchTuple: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
         
         guard let dateThisYear = possibleDate(for: type, date: startOfDay) else {
-            return noMatchTuple
+            return MATCH_FAILURE
         }
         
         if startOfDay <= dateThisYear && dateThisYear < startOfNextDay {
@@ -252,25 +252,24 @@ class ASAEventCalendar {
         
         if dateThisYear < startOfDay {
             guard let dateLastYear = possibleDate(for: type, date: startOfDay - NUMBER_OF_SECONDS_PER_YEAR) else {
-                return noMatchTuple
+                return MATCH_FAILURE
             }
             if startOfDay <= dateLastYear && dateThisYear < dateLastYear {
                 return (true, dateLastYear, dateLastYear)
             }
         } else if dateThisYear > startOfNextDay {
             guard let dateNextYear = possibleDate(for: type, date: startOfDay + NUMBER_OF_SECONDS_PER_YEAR) else {
-                return noMatchTuple
+                return MATCH_FAILURE
             }
             if startOfDay <= dateNextYear && dateThisYear < dateNextYear {
                 return (true, dateNextYear, dateNextYear)
             }
         }
 
-        return noMatchTuple
+        return MATCH_FAILURE
     } // func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
                     
         // Time change events
         let startDateSpecificationType: ASATimeSpecificationType = startDateSpecification.type
@@ -328,7 +327,7 @@ class ASAEventCalendar {
             let within: Bool = dateEY.isWithin(start: startDateEY, end: endDateEY)
             
             if !within {
-                return (false, nil, nil)
+                return MATCH_FAILURE
             }
             
             let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY, end: endDateEY)
@@ -352,7 +351,7 @@ class ASAEventCalendar {
                 let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
                 return (true, startDate, endDate)
             } else {
-                return (false, nil, nil)
+                return MATCH_FAILURE
             }
         }
         
@@ -361,7 +360,7 @@ class ASAEventCalendar {
             assert(endDateSpecification != nil)
             
             if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
-                return (false, nil, nil)
+                return MATCH_FAILURE
             }
             
             let dateEYM: Array<Int?>      = components.EYM
@@ -370,7 +369,7 @@ class ASAEventCalendar {
             let within: Bool = dateEYM.isWithin(start: startDateEYM, end: endDateEYM)
             
             if !within {
-                return (false, nil, nil)
+                return MATCH_FAILURE
             }
             
             let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM, end: endDateEYM)
@@ -393,7 +392,7 @@ class ASAEventCalendar {
                 if tweakedStartDateSpecification.event == nil {
                     // Major error!
                     debugPrint(#file, #function, "Missing Islamic prayer event!")
-                    return (false, nil, nil)
+                    return MATCH_FAILURE
                 }
                 let events = date.prayerTimesSunsetTransition(latitude: locationData.location.coordinate.latitude, longitude: locationData.location.coordinate.longitude, calcMethod: tweakedStartDateSpecification.calculationMethod ?? .Jafari, asrJuristic: tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii, dhuhrMinutes: tweakedStartDateSpecification.dhuhrMinutes ?? 0.0, adjustHighLats: tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight, events: [tweakedStartDateSpecification.event!])
                 let startDate = events![tweakedStartDateSpecification.event!]
@@ -410,7 +409,7 @@ class ASAEventCalendar {
         let within: Bool = dateEYMD.isWithin(start: startDateEYMD, end: endDateEYMD)
         
         if !within {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
         
         let (filledInStartDateEYMD, filledInEndDateEYMD) = dateEYMD.fillInFor(start: startDateEYMD, end: endDateEYMD)
@@ -421,30 +420,30 @@ class ASAEventCalendar {
         
         let eventStartDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
         if eventStartDate == nil {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
         let eventEndDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
         if eventEndDate == nil {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
         
         let eventStartComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: eventStartDate!, locationData: locationData)
         let eventEndComponents = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: eventEndDate!, locationData: locationData)
         
         if !self.matchYearSupplemental(date: eventStartDate!, components: eventStartComponents, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
         
         if !self.matchYearSupplemental(date: eventEndDate!, components: eventEndComponents, dateSpecification: tweakedEndDateSpecification, calendar: calendar) {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
         
         if !self.matchMonthSupplemental(date: eventStartDate!, components: eventStartComponents, dateSpecification: tweakedStartDateSpecification, calendar: calendar) {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
 
         if !self.matchMonthSupplemental(date: eventEndDate!, components: eventEndComponents, dateSpecification: tweakedEndDateSpecification, calendar: calendar) {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
 
         let dateStartOfDay = calendar.startOfDay(for: date, locationData: locationData)
@@ -455,11 +454,11 @@ class ASAEventCalendar {
         }
         
         if dateEndOfDay <= eventStartDate! {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
 
         if dateStartOfDay >= eventEndDate! {
-            return (false, nil, nil)
+            return MATCH_FAILURE
         }
         
         return (true, eventStartDate, eventEndDate)
@@ -526,7 +525,7 @@ class ASAEventCalendar {
         }
         
         return true
-    } // func matchAllYear(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
+    } // func matchOneYear(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
     func matchOneMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
         if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: onlyDateSpecification, components: components) {
@@ -545,7 +544,7 @@ class ASAEventCalendar {
         }
 
         return true
-    } // func matchAllMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
+    } // func matchOneMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
     func matchOneDayOrInstant(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
         if !matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: dateSpecification, components: components) {
@@ -667,8 +666,17 @@ class ASAEventCalendar {
                     }
                     
                     if startDate == nil {
-                        startDate = eventSpecification.isAllDay ? appropriateCalendar.startOfDay(for: date, locationData: locationData) : eventSpecification.startDateSpecification.date(date: fixedDate, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-                        endDate = eventSpecification.isAllDay ? (appropriateCalendar.startOfNextDay(date: date, locationData: locationData)) : (eventSpecification.endDateSpecification == nil ? startDate : eventSpecification.endDateSpecification!.date(date: fixedDate, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay))
+                        if eventSpecification.isAllDay {
+                            startDate = appropriateCalendar.startOfDay(for: date, locationData: locationData)
+                            endDate   = appropriateCalendar.startOfNextDay(date: date, locationData: locationData)
+                        } else {
+                            startDate = eventSpecification.startDateSpecification.date(date: fixedDate, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+                            if eventSpecification.endDateSpecification == nil {
+                                endDate = startDate
+                            } else {
+                                endDate = eventSpecification.endDateSpecification!.date(date: fixedDate, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+                            }
+                        }
                     }
                     
                     let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
