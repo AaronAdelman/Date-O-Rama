@@ -408,6 +408,9 @@ class ASAEventCalendar {
                 let startDate = events![tweakedStartDateSpecification.event!]
                 return (matches, startDate, startDate)
             } else {
+                if startDateSpecification.type == .oneDay {
+                    return (matches, startOfDay, startOfNextDay)
+                }
                 return (matches, nil, nil)
             }
         }
