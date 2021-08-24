@@ -429,7 +429,12 @@
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
 
     func date(dateComponents: ASADateComponents) -> Date? { // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS
-        let ApplesDateComponents = dateComponents.ApplesDateComponents()
+        var ApplesDateComponents = dateComponents.ApplesDateComponents()
+        // The next part is to ensure we get the right day and don't screw up Sunrise/Sunset calculations
+        ApplesDateComponents.hour       = 12
+        ApplesDateComponents.minute     =  0
+        ApplesDateComponents.second     =  0
+        ApplesDateComponents.nanosecond =  0
 
         return ApplesDateComponents.date
     } // func date(dateComponents: ASADateComponents) -> Date?
