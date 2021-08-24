@@ -40,12 +40,15 @@ class ASAEventCalendar {
         }
 
         let timeZone: TimeZone = locationData.timeZone 
-        var now:  Date = startDate.oneDayBefore
+//        var now:  Date = startDate.oneDayBefore
+        var now = startDate.addingTimeInterval(endDate.timeIntervalSince(startDate) / 2.0)
+        var startOfDay = startDate
+        var startOfNextDay = endDate
         var result:  Array<ASAEvent> = []
-        var oldNow = now
+//        var oldNow = now
         repeat {
-            let startOfDay:  Date = (calendar.startOfDay(for: now, locationData: locationData))
-            let startOfNextDay:  Date = (calendar.startOfNextDay(date: now, locationData: locationData))
+//            let startOfDay:  Date = (calendar.startOfDay(for: now, locationData: locationData))
+//            let startOfNextDay:  Date = (calendar.startOfNextDay(date: now, locationData: locationData))
             let temp = self.events(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             for event in temp {
                 if event.relevant(startDate:  startDate, endDate:  endDate) && !result.contains(event) {
@@ -53,9 +56,16 @@ class ASAEventCalendar {
                 } else {
                 }
             } // for event in tempResult
-            oldNow = now
-            now = now.oneDayAfter
-        } while oldNow < endDate
+//            oldNow = now
+            startOfDay = startOfNextDay
+            startOfNextDay = calendar.startOfNextDay(date: now, locationData: locationData)
+
+//            now = now.oneDayAfter
+            now = startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0)
+
+        } while
+//            oldNow < endDate
+        startOfDay < endDate
 
         return result
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String) -> Array<ASAEvent>

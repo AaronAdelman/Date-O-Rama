@@ -753,4 +753,26 @@ class Date_O_RamaTests: XCTestCase {
         
         XCTAssert(codes3.matches(regionCode: "IL", latitude: 34.0))
     }
+    
+    func testEventMatching() throws {
+        let calendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
+        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", ISOCountryCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
+        let calendarTitleWithoutLocation = "יהדות"
+        let calendarTitle = "יהדות · פתח תקווה"
+        let otherCalendars = [ASACalendarCode.Coptic: ASACalendarFactory.calendar(code: .Coptic)!]
+        let regionCode = "IL"
+        let localeIdentifier = "he_IL"
+        
+        let dateComponents = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: timeZone, era: 1, year: 2021, month: 9, day: 7, hour: 12, minute: 0, second: 0, nanosecond: 0, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil)
+        let date = dateComponents.date!  // Noon of ראש השנה
+        let startOfDay = calendar.startOfDay(for: date, locationData: location)
+        let startOfNextDay = calendar.startOfNextDay(date: date, locationData: location)
+        debugPrint(#file, #function, date, startOfDay, startOfNextDay)
+        
+        let eventCalendar = ASAEventCalendar(fileName: "Judaism")
+        let events = eventCalendar.events(date: date, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+        debugPrint(#file, #function, events)
+    }
+    
 } // class Date_O_RamaTests
