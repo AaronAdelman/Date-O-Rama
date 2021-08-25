@@ -42,8 +42,8 @@ class ASAEventCalendar {
         let timeZone: TimeZone = locationData.timeZone 
 //        var now:  Date = startDate.oneDayBefore
         var now = startDate.addingTimeInterval(endDate.timeIntervalSince(startDate) / 2.0)
-        var startOfDay = startDate
-        var startOfNextDay = endDate
+        var startOfDay = calendar.startOfDay(for: startDate, locationData: locationData)
+        var startOfNextDay = calendar.startOfNextDay(date: startDate, locationData: locationData)
         var result:  Array<ASAEvent> = []
 //        var oldNow = now
         repeat {
