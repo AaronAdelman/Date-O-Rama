@@ -88,13 +88,13 @@
             "titles": {"en": "Remembrance:  Abraha attacked the Kaʿbah in the Year of the Elephant"},
             "start": {"type": "1Day",
                 "month": 1, "day": 17
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Remembrance:  Changing of the Qibla, 2 AH"},
             "start": {"type": "1Day",
                 "month": 1, "day": 18
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  10th day after ʿĀshūrāʾ"},
@@ -118,7 +118,7 @@
             "titles": {"en": "Remembrance: Battle of Siffin, 37 AH, Mourning:  Prisoners of Karbalā reach Yazid's palace in Syria"},
             "start": {"type": "1Day",
                 "month": 2, "day": 1
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Remembrance: Birth of Imam Musa al-Kadhim, 128 AH"},
@@ -154,7 +154,7 @@
             "titles": {"en": "Remembrance:  Hijrah"},
             "start": {"type": "1Day",
                 "month": 3, "day": 1
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Martyrdom of Fatimah bint Musa"},
@@ -178,7 +178,7 @@
             "titles": {"en": "Remembrance:  First mosque (Quba Mosque) was established, 1 AH"},
             "start": {"type": "1Day",
                 "month": 3, "day": 15
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Celebration:  Birth of Ja'far al-Sadiq, 83 AH"},
@@ -202,7 +202,7 @@
             "titles": {"en": "Remembrance:  Battle of the Camel"},
             "start": {"type": "1Day",
                 "month": 5, "day": 10
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Martyrdom of Fatimah bint Muhammad, 11 AH"},
@@ -358,7 +358,7 @@
             "titles": {"en": "Remembrance:  Descending of the Torah (according to one narration)"},
             "start": {"type": "1Day",
                 "month": 9, "day": 4
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Death of Khadijah bint Khuwaylid"},
@@ -370,7 +370,7 @@
             "titles": {"en": "Remembrance:  Descending of the Gospel (according to one narration)"},
             "start": {"type": "1Day",
                 "month": 9, "day": 12
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Martyrdom of Mukhtar ibn Abi Ubayd Al-Thaqafi"},
@@ -388,13 +388,13 @@
             "titles": {"en": "Remembrance:  Battle of Badr"},
             "start": {"type": "1Day",
                 "month": 9, "day": 17
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Remembrance:  Descending of the Psalms (according to one narration)"},
             "start": {"type": "1Day",
                 "month": 9, "day": 18
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Day of Striking"},
@@ -406,7 +406,7 @@
             "titles": {"en": "Remembrance:  Victorious Conquest of Mecca"},
             "start": {"type": "1Day",
                 "month": 9, "day": 20
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Martyrdom of Ali, 40 AH"},
@@ -418,7 +418,7 @@
             "titles": {"en": "Remembrance:  Battle of the Trench"},
             "start": {"type": "1Day",
                 "month": 10, "day": 2
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Mourning:  Day of Sorrow"},
@@ -436,19 +436,19 @@
             "titles": {"en": "Remembrance:  Major Occultation of Muhammad al-Mahdi begins"},
             "start": {"type": "1Day",
                 "month": 10, "day": 10
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Remembrance:  Martyrdom of Hamzah in the Battle of Uhud, 3 AH"},
             "start": {"type": "1Day",
                 "month": 10, "day": 15
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Remembrance:  Birth of Abu Talib"},
             "start": {"type": "1Day",
                 "month": 10, "day": 29
-            }
+            }, "category": "remembrance"
         },
         {
             "titles": {"en": "Remembrance:  Birth of Fatimah bint Musa"},
