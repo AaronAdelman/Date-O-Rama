@@ -1,0 +1,15 @@
+{
+    "titles": {"en": "Uranus", "he": "אורנוס"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "Rise of Uranus", "he": "זריחת אורנוס"},
+            "start": {"type": "rise", "body": "zur"},
+            "emoji": "⛢↑"},
+        {"titles": {"en": "Setting of Uranus", "he": "שקיעת אורנוס"},
+            "start": {"type": "set", "body": "zur"},
+            "emoji": "⛢↓"},
+    ]
+}

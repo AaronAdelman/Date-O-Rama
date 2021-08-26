@@ -1,0 +1,15 @@
+{
+    "titles": {"en": "Saturn", "he": "שבתי"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "Rise of Saturn", "he": "זריחת שבתי"},
+            "start": {"type": "rise", "body": "zsa"},
+            "emoji": "♄↑"},
+        {"titles": {"en": "Setting of Saturn", "he": "שקיעת שבתי"},
+            "start": {"type": "set", "body": "zsa"},
+            "emoji": "♄↓"},
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "titles": {"en": "Neptune", "he": "נפטון"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "Rise of Neptune", "he": "זריחת נפטון"},
+            "start": {"type": "rise", "body": "zne"},
+            "emoji": "♆↑"},
+        {"titles": {"en": "Setting of Neptune", "he": "שקיעת נפטון"},
+            "start": {"type": "set", "body": "zne"},
+            "emoji": "♆↓"},
+    ]
+}

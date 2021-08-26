@@ -1,0 +1,15 @@
+{
+    "titles": {"en": "Jupiter", "he": "צדק"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "Rise of Jupiter", "he": "זריחת צדק"},
+            "start": {"type": "rise", "body": "zju"},
+            "emoji": "♃↑"},
+        {"titles": {"en": "Setting of Jupiter", "he": "שקיעת צדק"},
+            "start": {"type": "set", "body": "zju"},
+            "emoji": "♃↓"},
+    ]
+}
