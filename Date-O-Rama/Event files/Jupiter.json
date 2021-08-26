@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
-    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "calendarColor": {"red": 0.647, "green": 0.608, "blue": 0.576},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Jupiter", "he": "זריחת צדק"},
             "start": {"type": "rise", "body": "zju"},

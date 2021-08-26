@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
-    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "calendarColor": {"red": 0.137, "green": 0.447, "blue": 0.208},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Mars", "he": "זריחת מאדין"},
             "start": {"type": "rise", "body": "zma"},

@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
-    "calendarColor": {"red": 0.0, "green": 0.59, "blue": 1.0},
+    "calendarColor": {"red": 0.133, "green": 0.212, "blue": 0.290},
     "eventSpecifications": [
         {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
             "start": {"type": "MarEquinox"}, "regionCodes": ["xb"]},

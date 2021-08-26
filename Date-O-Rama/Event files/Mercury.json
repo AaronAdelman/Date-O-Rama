@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
-    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "calendarColor": {"red": 0.569, "green": 0.545, "blue": 0.506},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Mercury", "he": "זריחת כוכב"},
             "start": {"type": "rise", "body": "zme"},

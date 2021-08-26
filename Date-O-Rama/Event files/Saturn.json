@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
-    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "calendarColor": {"red": 0.941, "green": 0.827, "blue": 0.616},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Saturn", "he": "זריחת שבתי"},
             "start": {"type": "rise", "body": "zsa"},

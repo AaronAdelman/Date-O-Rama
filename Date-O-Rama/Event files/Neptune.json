@@ -3,7 +3,7 @@
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
-    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "calendarColor": {"red": 0.392, "green": 0.518, "blue": 0.871},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Neptune", "he": "זריחת נפטון"},
             "start": {"type": "rise", "body": "zne"},
