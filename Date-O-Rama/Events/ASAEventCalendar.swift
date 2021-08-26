@@ -213,7 +213,6 @@ class ASAEventCalendar {
     
     func possibleDate(for type: ASATimeSpecificationType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
-
         var possibleDate: Date
         
         switch type {
@@ -238,10 +237,9 @@ class ASAEventCalendar {
         } // switch type
         
         return possibleDate
-    } // func possibleDate(for type: ASATimeSpecificationType, date: Date) -> Date?
+    } // func possibleDate(for type: ASATimeSpecificationType, now: JulianDay) -> Date?
     
     func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        
         let initialDate = JulianDay(startOfDay)
         guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
             return MATCH_FAILURE
@@ -296,7 +294,7 @@ class ASAEventCalendar {
         default:
             return nil
         } // switch type
-    } // func possibleDate(for type: ASATimeSpecificationType, date: Date) -> Date?
+    } // func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date?
     
     func matchRiseOrSet(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
