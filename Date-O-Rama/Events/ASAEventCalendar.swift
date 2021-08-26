@@ -381,10 +381,116 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
+    fileprivate func matchOneYear(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        assert(endDateSpecification == nil)
+        let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
+        if matches {
+            let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+            let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+            return (true, startDate, endDate)
+        } else {
+            return MATCH_FAILURE
+        }
+    }
+    
+    fileprivate func matchMultiYear(_ endDateSpecification: ASADateSpecification?, _ components: ASADateComponents, _ startDateSpecification: ASADateSpecification, _ tweakedStartDateSpecification: inout ASADateSpecification, _ calendar: ASACalendar, _ date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        assert(endDateSpecification != nil)
+        
+        let dateEY: Array<Int?>      = components.EY
+        let startDateEY: Array<Int?> = startDateSpecification.EY
+        let endDateEY: Array<Int?>   = endDateSpecification!.EY
+        let within: Bool = dateEY.isWithin(start: startDateEY, end: endDateEY)
+        
+        if !within {
+            return MATCH_FAILURE
+        }
+        
+        let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY, end: endDateEY)
+        
+        tweakedStartDateSpecification = startDateSpecification.fillIn(EY: filledInStartDateEY)
+        
+        let tweakedEndDateSpecification = endDateSpecification!.fillIn(EY: filledInEndDateEY)
+        
+        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+        return (true, startDate, endDate)
+    }
+    
+    fileprivate func matchOneMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        assert(endDateSpecification == nil)
+        
+        let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
+        if matches {
+            let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+            let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+            return (true, startDate, endDate)
+        } else {
+            return MATCH_FAILURE
+        }
+    }
+    
+    fileprivate func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents, _ tweakedStartDateSpecification: inout ASADateSpecification) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        assert(endDateSpecification != nil)
+        
+        if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
+            return MATCH_FAILURE
+        }
+        
+        let dateEYM: Array<Int?>      = components.EYM
+        let startDateEYM: Array<Int?> = startDateSpecification.EYM
+        let endDateEYM: Array<Int?>   = endDateSpecification!.EYM
+        let within: Bool = dateEYM.isWithin(start: startDateEYM, end: endDateEYM)
+        
+        if !within {
+            return MATCH_FAILURE
+        }
+        
+        let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM, end: endDateEYM)
+        
+        tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
+        
+        let tweakedEndDateSpecification = endDateSpecification!.fillIn(EYM: filledInEndDateEYM)
+        
+        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+        return (true, startDate, endDate)
+    }
+    
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-                    
-        // Time change events
+        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
+        
+        // Check whether the event is before the first occurrence
+        if firstDateSpecification != nil {
+            let start = tweakedStartDateSpecification.EYMD
+            let first = firstDateSpecification!.EYMD
+                        
+            if !start.isAfterOrEqual(first: first) {
+                return MATCH_FAILURE
+            }
+        }
+
         let startDateSpecificationType: ASATimeSpecificationType = startDateSpecification.type
+
+        // Sunrise, Sunset, and twilight
+        if startDateSpecificationType == .degreesBelowHorizon {
+            let matchesDay = matchOneDay(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components)
+            if !matchesDay {
+                return MATCH_FAILURE
+            }
+            
+            guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
+            guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
+            let offset = startDateSpecification.offset ?? 0.0
+            return matchTwilight(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
+        }
+
+        // Planetary/Moon rise and set
+        if startDateSpecificationType == .rise || startDateSpecificationType == .set {
+            guard let body = startDateSpecification.body else { return MATCH_FAILURE }
+            return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
+        }
+        
+        // Time change events
         if startDateSpecificationType == .timeChange {
             return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
@@ -404,109 +510,24 @@ class ASAEventCalendar {
             return matchEquinoxOrSolstice(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
-        // Rise and set
-        if startDateSpecificationType == .rise || startDateSpecificationType == .set {
-            guard let body = startDateSpecification.body else { return MATCH_FAILURE }
-            return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
-        }
-        
-        // Twilight
-        if startDateSpecificationType == .degreesBelowHorizon {
-            guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
-            guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
-            let offset = startDateSpecification.offset ?? 0.0
-            return matchTwilight(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
-        }
-        
-        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
-        
-        // Check whether the event is before the first occurrence
-        if firstDateSpecification != nil {            
-            let start = tweakedStartDateSpecification.EYMD
-            let first = firstDateSpecification!.EYMD
-                        
-            if !start.isAfterOrEqual(first: first) {
-                return MATCH_FAILURE
-            }
-        }
-
         // One-year events
         if startDateSpecificationType == .oneYear {
-            assert(endDateSpecification == nil)
-            let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
-            if matches {
-                let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-                let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
-                return (true, startDate, endDate)
-            } else {
-                return MATCH_FAILURE
-            }
+            return matchOneYear(endDateSpecification, date, calendar, locationData, tweakedStartDateSpecification, components)
         }
         
         // Multi-year events
         if startDateSpecificationType == .multiYear {
-            assert(endDateSpecification != nil)
-            
-            let dateEY: Array<Int?>      = components.EY
-            let startDateEY: Array<Int?> = startDateSpecification.EY
-            let endDateEY: Array<Int?>   = endDateSpecification!.EY
-            let within: Bool = dateEY.isWithin(start: startDateEY, end: endDateEY)
-            
-            if !within {
-                return MATCH_FAILURE
-            }
-            
-            let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY, end: endDateEY)
-            
-            tweakedStartDateSpecification = startDateSpecification.fillIn(EY: filledInStartDateEY)
-            
-            let tweakedEndDateSpecification = endDateSpecification!.fillIn(EY: filledInEndDateEY)
-
-            let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-            let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
-            return (true, startDate, endDate)
+            return matchMultiYear(endDateSpecification, components, startDateSpecification, &tweakedStartDateSpecification, calendar, date)
         }
         
         // One-month events
         if startDateSpecificationType == .oneMonth {
-            assert(endDateSpecification == nil)
-            
-            let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
-            if matches {
-                let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-                let endDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
-                return (true, startDate, endDate)
-            } else {
-                return MATCH_FAILURE
-            }
+            return matchOneMonth(endDateSpecification, date, calendar, locationData, tweakedStartDateSpecification, components)
         }
         
         // Multi-month events
         if startDateSpecificationType == .multiMonth {
-            assert(endDateSpecification != nil)
-            
-            if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
-                return MATCH_FAILURE
-            }
-            
-            let dateEYM: Array<Int?>      = components.EYM
-            let startDateEYM: Array<Int?> = startDateSpecification.EYM
-            let endDateEYM: Array<Int?>   = endDateSpecification!.EYM
-            let within: Bool = dateEYM.isWithin(start: startDateEYM, end: endDateEYM)
-            
-            if !within {
-                return MATCH_FAILURE
-            }
-            
-            let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM, end: endDateEYM)
-            
-            tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
-            
-            let tweakedEndDateSpecification = endDateSpecification!.fillIn(EYM: filledInEndDateEYM)
-
-            let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-            let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
-            return (true, startDate, endDate)
+            return matchMultiMonth(endDateSpecification, date, calendar, locationData, startDateSpecification, components, &tweakedStartDateSpecification)
         }
 
         if endDateSpecification == nil {
