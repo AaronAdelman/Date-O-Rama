@@ -1,14 +1,14 @@
 {
-    "titles": {"en": "Mars", "he": "מאדין"},
+    "titles": {"en": "Mars", "he": "מאדים"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "*",
     "calendarColor": {"red": 0.137, "green": 0.447, "blue": 0.208},
     "eventSpecifications": [
-        {"titles": {"en": "Rise of Mars", "he": "זריחת מאדין"},
+        {"titles": {"en": "Rise of Mars", "he": "זריחת מאדים"},
             "start": {"type": "rise", "body": "zma"},
             "emoji": "♂↑"},
-        {"titles": {"en": "Setting of Mars", "he": "שקיעת מאדין"},
+        {"titles": {"en": "Setting of Mars", "he": "שקיעת מאדים"},
             "start": {"type": "set", "body": "zma"},
             "emoji": "♂↓"},
     ]
