@@ -49,4 +49,13 @@ extension ASATimeSpecificationType {
             return false
         } // switch self
     } // var isAllDay
+    
+    var isOneCalendarDayOrLess: Bool {
+        switch self {
+        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay:
+            return false
+        case .oneDay, .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
+            return true
+        } // switch self
+    } // var isOneCalendarDayOrLess
 } // extension ASATimeSpecificationType
