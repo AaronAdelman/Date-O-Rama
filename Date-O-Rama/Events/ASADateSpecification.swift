@@ -36,7 +36,7 @@ struct ASADateSpecification:  Codable {
     var yearDivisor:  Int?
     
     /// Matches if year mod yearDivisor = yearRemainder
-    var yearRemainder:  Int?
+    var yearRemainder: Int?
 
     var type: ASATimeSpecificationType
     
@@ -46,8 +46,11 @@ struct ASADateSpecification:  Codable {
     var offset: TimeInterval?
     
     // For solar time events
-    var solarHours:  Double?
-    var dayHalf:  ASATimeSpecificationDayHalf?
+    var solarHours: Double?
+    var dayHalf: ASATimeSpecificationDayHalf?
+    
+    // For rise and set events
+    var body: String?
     
     // For Islamic prayer times
     var event: ASAIslamicPrayerTimeEvent?
@@ -55,6 +58,7 @@ struct ASADateSpecification:  Codable {
     var asrJuristicMethod: ASAJuristicMethodForAsr?
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
+    
 } // struct ASADateSpecification
 
 
@@ -183,9 +187,7 @@ extension ASADateSpecification {
             let dayHalfStart = ASASolarEvent.dawn72Minutes
             let dayHalfEnd   = ASASolarEvent.dusk72Minutes
             return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
-        case .timeChange, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .IslamicPrayerTime, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
-            return Date()
-        case .fixedTime:
+        default:
             return Date ()
             // TODO:  NEED TO FIX THIS!
         } // switch self.type
@@ -231,20 +233,7 @@ extension ASADateSpecification {
                 return result
             } // switch dayHalf
 
-        case .oneDay, .multiDay:
-            return date
-            
-        case .oneYear, .oneMonth, .multiYear, .multiMonth:
-            return date
-        case .timeChange:
-            return Date()
-        case .IslamicPrayerTime:
-            return date // TODO:  May have to change!
-        case .fixedTime:
-            return date // TODO:  May have to fix this!
-        case .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
-            return date // TODO:  May have to fix this!
-        case .firstFullMoonDay, .secondFullMoonDay:
+        default:
             return date // TODO:  May have to fix this!
         } // switch self.type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?

@@ -7,22 +7,32 @@
 //
 
 import Foundation
+import SwiftAA
 
 extension String {
     // Based on https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode
     // Converts a country code into a Unicode emoji flag
     var flag:  String {
         let FAILURE_FLAG = "📍"
+        let EARTH_FLAG   = "🇺🇳"
         
         if self == "" {
             return FAILURE_FLAG
+        }
+        
+        if self.count == 1 {
+            if self == REGION_CODE_Earth {
+                return EARTH_FLAG
+            } else {
+                return FAILURE_FLAG
+            }
         }
         
         if self.count == 3 {
             // We are probably dealing with a UN M49 code
             switch self {
                 case "001": // Earth in general
-                return "🇺🇳"
+                return EARTH_FLAG
                 
                 case "002", "015", "202", "014", "017", "018", "011": // Africa
                 return "🌍"
@@ -38,6 +48,36 @@ extension String {
 
             case "009", "053", "054", "057", "061": // Oceania
                 return "🌏"
+                
+            case REGION_CODE_Sun:
+                return "☉"
+                
+            case REGION_CODE_Mercury:
+                return "☿"
+                
+            case REGION_CODE_Venus:
+                return "♀"
+                
+            case REGION_CODE_Moon:
+                return "☽"
+                
+            case REGION_CODE_Mars:
+                return "♂"
+                
+            case REGION_CODE_Jupiter:
+                return "♃"
+                
+            case REGION_CODE_Saturn:
+                return "♄"
+                
+            case REGION_CODE_Uranus:
+                return "⛢"
+                
+            case REGION_CODE_Neptune:
+                return "♆"
+                
+            case REGION_CODE_Pluto:
+                return "♇"
 
             default:
                 return FAILURE_FLAG
@@ -52,6 +92,44 @@ extension String {
             .joined()
     } // var flag
 } // extension String
+
+
+extension String {
+    func celestialBody(julianDay: JulianDay) -> CelestialBody? {
+        switch self {
+        case REGION_CODE_Sun:
+            return Sun(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Mercury:
+            return Mercury(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Venus:
+            return Venus(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Moon:
+            return Moon(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Mars:
+            return Mars(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Jupiter:
+            return Jupiter(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Saturn:
+            return Saturn(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Uranus:
+            return Uranus(julianDay: julianDay, highPrecision: true)
+            
+        case REGION_CODE_Neptune:
+            return Neptune(julianDay: julianDay, highPrecision: true)
+                        
+        default:
+            return nil
+        } // switch self
+    }
+} // extension String
+
 
 extension String {
     var localeLanguageCode:  String? {
@@ -148,7 +226,17 @@ extension String {
 
 // MARK:  -
 
-let REGION_CODE_Earth = "x"
+let REGION_CODE_Sun     = "zsu"
+let REGION_CODE_Mercury = "zme"
+let REGION_CODE_Venus   = "zve"
+let REGION_CODE_Earth   = "x"
+let REGION_CODE_Moon    = "zmo"
+let REGION_CODE_Mars    = "zma"
+let REGION_CODE_Jupiter = "zju"
+let REGION_CODE_Saturn  = "zsa"
+let REGION_CODE_Uranus  = "zur"
+let REGION_CODE_Neptune = "zne"
+let REGION_CODE_Pluto   = "zpl"
 
 let REGION_CODE_Northern_Hemisphere = "xb"
 let REGION_CODE_Southern_Hemisphere = "xc"

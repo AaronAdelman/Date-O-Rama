@@ -16,6 +16,13 @@
             "emoji": "🌕"},
         {"titles": {"en": "Last Quarter", "he": "רבע אחרון"},
             "start": {"type": "lastQuarter"},
-            "emoji": "🌗"}        ]
+            "emoji": "🌗"},
+        {"titles": {"en": "Moonrise", "he": "זריחת הירח"},
+            "start": {"type": "rise", "body": "zmo"},
+            "emoji": "☽↑"},
+        {"titles": {"en": "Moonset", "he": "שקיעת הירח"},
+            "start": {"type": "set", "body": "zmo"},
+            "emoji": "☽↓"},
+    ]
     }
 

@@ -34,6 +34,9 @@ enum ASATimeSpecificationType:  String, Codable {
     case JuneSolstice                        = "JunSolstice"
     case SeptemberEquinox                    = "SepEquinox"
     case DecemberSolstice                    = "DecSolstice"
+    
+    case rise                                = "rise"
+    case set                                 = "set"
 } // enum ASATimeSpecificationType
 
 extension ASATimeSpecificationType {
