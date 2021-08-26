@@ -23,9 +23,9 @@ func tan(degrees: Double) -> Double {
     return tan(degrees * Double.pi / 180.0)
 }
 
-func atan(degrees: Double) -> Double {
-    return atan(degrees) * 180.0 / Double.pi
-}
+//func atan(degrees: Double) -> Double {
+//    return atan(degrees) * 180.0 / Double.pi
+//}
 
 func asin(degrees: Double) -> Double {
     return asin(degrees) * 180.0 / Double.pi
