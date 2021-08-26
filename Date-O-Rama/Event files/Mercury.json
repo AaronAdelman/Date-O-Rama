@@ -1,0 +1,17 @@
+{
+    "titles": {"en": "Mercury", "he": "כוכב"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "Rise of Mercury", "he": "זריחת כוכב"},
+            "start": {"type": "rise", "body": "zme"},
+            "emoji": "☿↑"},
+        {"titles": {"en": "Setting of Mercury", "he": "שקיעת כוכב"},
+            "start": {"type": "set", "body": "zme"},
+            "emoji": "☿↓"},
+    ]
+}
+
+

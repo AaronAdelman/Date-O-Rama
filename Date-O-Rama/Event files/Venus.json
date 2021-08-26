@@ -1,0 +1,18 @@
+{
+    "titles": {"en": "Venus", "he": "נוגה"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "*",
+    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    "eventSpecifications": [
+        {"titles": {"en": "Rise of Venus", "he": "זריחת נוגה"},
+            "start": {"type": "rise", "body": "zve"},
+            "emoji": "♀↑"},
+        {"titles": {"en": "Setting of Venus", "he": "שקיעת נוגה"},
+            "start": {"type": "set", "body": "zve"},
+            "emoji": "♀↓"},
+    ]
+}
+
+
+
