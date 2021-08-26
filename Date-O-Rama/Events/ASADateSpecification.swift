@@ -162,17 +162,17 @@ extension ASADateSpecification {
             } else {
                 return calendar.startOfDay(for: rawDate!, locationData: revisedDateComponents.locationData )
             }
-        case .degreesBelowHorizon:
-            let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
-            let events = rawDate!.solarEvents(location: revisedDateComponents.locationData.location, events: [solarEvent], timeZone:  timeZone)
-            let result = events[solarEvent]
-            if result == nil {
-                return nil
-            }
-            if result! == nil {
-                return nil
-            }
-            return result!
+//        case .degreesBelowHorizon:
+//            let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
+//            let events = rawDate!.solarEvents(location: revisedDateComponents.locationData.location, events: [solarEvent], timeZone:  timeZone)
+//            let result = events[solarEvent]
+//            if result == nil {
+//                return nil
+//            }
+//            if result! == nil {
+//                return nil
+//            }
+//            return result!
             
         case .solarTimeSunriseSunset:
             let hours = self.solarHours!
@@ -203,9 +203,9 @@ extension ASADateSpecification {
     
     func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
         switch self.type {
-        case .degreesBelowHorizon:
-            let result = self.rawDegreesBelowHorizon(date: date, location: location, timeZone: timeZone)
-            return result!
+//        case .degreesBelowHorizon:
+//            let result = self.rawDegreesBelowHorizon(date: date, location: location, timeZone: timeZone)
+//            return result!
             
         case .solarTimeSunriseSunset:
             let hours = self.solarHours!

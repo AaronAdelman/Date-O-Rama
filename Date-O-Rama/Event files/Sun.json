@@ -2,7 +2,7 @@
     "titles": {"en": "Sun", "he": "שמש"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "*",
     "calendarColor": {"red": 1.0, "green": 1.0, "blue": 0.0},
     "eventSpecifications": [
         {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},

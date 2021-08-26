@@ -325,6 +325,62 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchRiseOrSet(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
+    func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
+        switch type {
+        case .degreesBelowHorizon:
+            let terra = Earth(julianDay: now, highPrecision: true)
+            let coordinates = GeographicCoordinates(location.location)
+
+            let twilightTimes = terra.twilights(forSunAltitude: Degree(degreesAboveHorizon), coordinates: coordinates)
+            switch rising {
+            case true:
+                guard let riseTime = twilightTimes.riseTime else {
+                    return nil
+                }
+                return riseTime.date + offset
+                
+            case false:
+                guard let setTime = twilightTimes.setTime else {
+                    return nil
+                }
+                return setTime.date + offset
+            } // switch rising
+
+        default:
+            return nil
+        } // switch type
+    } // func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date?
+    
+    func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
+        let degreesAboveHorizon = -degreesBelowHorizon
+        let dateToday = possibleDate(for: type, now: initialDate, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData)
+        
+        if dateToday != nil {
+            if startOfDay <= dateToday! && dateToday! < startOfNextDay {
+                return (true, dateToday!, dateToday!)
+            }
+        }
+                
+        if dateToday ?? Date.distantPast < startOfDay{
+            guard let dateTomorrow = possibleDate(for: type, now: initialDate + 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
+                return MATCH_FAILURE
+            }
+            if startOfDay <= dateTomorrow && dateTomorrow < startOfNextDay {
+                return (true, dateTomorrow, dateTomorrow)
+            }
+        } else if dateToday ?? Date.distantFuture >= startOfNextDay {
+            guard let dateYesterday = possibleDate(for: type, now: initialDate - 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
+                return MATCH_FAILURE
+            }
+            if startOfDay <= dateYesterday && dateYesterday < startOfNextDay {
+                return (true, dateYesterday, dateYesterday)
+            }
+        }
+
+        return MATCH_FAILURE
+    } // func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
                     
         // Time change events
@@ -352,6 +408,14 @@ class ASAEventCalendar {
         if startDateSpecificationType == .rise || startDateSpecificationType == .set {
             guard let body = startDateSpecification.body else { return MATCH_FAILURE }
             return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
+        }
+        
+        // Twilight
+        if startDateSpecificationType == .degreesBelowHorizon {
+            guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
+            guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
+            let offset = startDateSpecification.offset ?? 0.0
+            return matchTwilight(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
         }
         
         var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
@@ -448,7 +512,7 @@ class ASAEventCalendar {
         if endDateSpecification == nil {
             // One-day and one-instant events
             assert(endDateSpecification?.type != .multiDay)
-            let matches = self.matchOneDayOrInstant(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
+            let matches = self.matchOneDay(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
             
             if matches && tweakedStartDateSpecification.type == .IslamicPrayerTime {
                 if tweakedStartDateSpecification.event == nil {
@@ -611,7 +675,7 @@ class ASAEventCalendar {
         return true
     } // func matchOneMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, onlyDateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
-    func matchOneDayOrInstant(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
+    func matchOneDay(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool {
         if !matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: dateSpecification, components: components) {
             return false
         }
@@ -720,15 +784,15 @@ class ASAEventCalendar {
                     
                     // We have to make sure that solar events after Sunset happen on the correct day.  This is an issue on Sunset transition calendars.
                     var fixedDate:  Date
-                    if appropriateCalendar.transitionType == .sunset
-                        && !eventSpecification.isAllDay
-                        && eventSpecification.startDateSpecification.type == .degreesBelowHorizon
-                        && eventSpecification.startDateSpecification.rising == false
-                        && eventSpecification.startDateSpecification.offset ?? -1 >= 0 {
-                        fixedDate = date.oneDayBefore
-                    } else {
+//                    if appropriateCalendar.transitionType == .sunset
+//                        && !eventSpecification.isAllDay
+//                        && eventSpecification.startDateSpecification.type == .degreesBelowHorizon
+//                        && eventSpecification.startDateSpecification.rising == false
+//                        && eventSpecification.startDateSpecification.offset ?? -1 >= 0 {
+//                        fixedDate = date.oneDayBefore
+//                    } else {
                         fixedDate = date
-                    }
+//                    }
                     
                     if startDate == nil {
                         if eventSpecification.isAllDay {
