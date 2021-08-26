@@ -211,8 +211,7 @@ class ASAEventCalendar {
         } // switch startDateSpecification.type
     } // func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(for type: ASATimeSpecificationType, date: Date) -> Date? {
-        let now = JulianDay(date)
+    func possibleDate(for type: ASATimeSpecificationType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
 
         var possibleDate: Date
@@ -243,7 +242,8 @@ class ASAEventCalendar {
     
     func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         
-        guard let dateThisYear = possibleDate(for: type, date: startOfDay) else {
+        let initialDate = JulianDay(startOfDay)
+        guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
             return MATCH_FAILURE
         }
         
@@ -251,17 +251,17 @@ class ASAEventCalendar {
             return (true, dateThisYear, dateThisYear)
         }
         
-        let NUMBER_OF_SECONDS_PER_YEAR = 365.2425 * 24.0 * 60.0 * 60.0
+        let NUMBER_OF_DAYS_PER_YEAR = 365.2425
         
         if dateThisYear < startOfDay {
-            guard let dateLastYear = possibleDate(for: type, date: startOfDay - NUMBER_OF_SECONDS_PER_YEAR) else {
+            guard let dateLastYear = possibleDate(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateLastYear && dateThisYear < dateLastYear {
                 return (true, dateLastYear, dateLastYear)
             }
         } else if dateThisYear > startOfNextDay {
-            guard let dateNextYear = possibleDate(for: type, date: startOfDay + NUMBER_OF_SECONDS_PER_YEAR) else {
+            guard let dateNextYear = possibleDate(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateNextYear && dateThisYear < dateNextYear {
@@ -299,7 +299,6 @@ class ASAEventCalendar {
     } // func possibleDate(for type: ASATimeSpecificationType, date: Date) -> Date?
     
     func matchRiseOrSet(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
         let dateToday = possibleDate(for: type, now: initialDate, body: body, location: locationData)
         
@@ -326,7 +325,7 @@ class ASAEventCalendar {
         }
 
         return MATCH_FAILURE
-    }
+    } // func matchRiseOrSet(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
                     
