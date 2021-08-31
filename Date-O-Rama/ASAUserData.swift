@@ -37,16 +37,8 @@ enum ASAPreferencesFileCode {
 
 
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
-    private static var sharedUserData: ASAUserData = {
-        let userData = ASAUserData()
-        
-        return userData
-    }()
+    static let shared = ASAUserData()
     
-    static var shared:  ASAUserData {
-        return sharedUserData
-    } // static var shared
-
 
     // MARK:  - Model objects
     
