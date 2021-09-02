@@ -2,7 +2,7 @@
     "titles": {"en": "Mars", "he": "מאדים"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "*",
+    "calendarCode": "xloc*",
     "calendarColor": {"red": 0.137, "green": 0.447, "blue": 0.208},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Mars", "he": "זריחת מאדים"},

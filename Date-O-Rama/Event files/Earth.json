@@ -2,7 +2,7 @@
     "titles": {"en": "Earth", "he": "כדור הארץ"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "*",
+    "calendarCode": "xloc*",
     "calendarColor": {"red": 0.133, "green": 0.212, "blue": 0.290},
     "eventSpecifications": [
         {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},

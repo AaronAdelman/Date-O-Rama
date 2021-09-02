@@ -2,7 +2,7 @@
     "titles": {"en": "Moon", "he": "ירח"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "*",
+    "calendarCode": "xloc*",
     "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
     "eventSpecifications": [
         {"titles": {"en": "New Moon", "he": "מולד הלבנה"},

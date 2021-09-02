@@ -2,7 +2,7 @@
     "titles": {"en": "Venus", "he": "נוגה"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "*",
+    "calendarCode": "xloc*",
     "calendarColor": {"red": 0.784, "green": 0.471, "blue": 0.137},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Venus", "he": "זריחת נוגה"},

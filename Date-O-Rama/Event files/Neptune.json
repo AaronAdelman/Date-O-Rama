@@ -2,7 +2,7 @@
     "titles": {"en": "Neptune", "he": "נפטון"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "*",
+    "calendarCode": "xloc*",
     "calendarColor": {"red": 0.392, "green": 0.518, "blue": 0.871},
     "eventSpecifications": [
         {"titles": {"en": "Rise of Neptune", "he": "זריחת נפטון"},
