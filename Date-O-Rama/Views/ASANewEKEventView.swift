@@ -305,6 +305,14 @@ struct ASANewEKEventView: View {
                     Button("Cancel") {
                         self.showingActionSheet = true
                     }
+                    .actionSheet(isPresented: self.$showingActionSheet) {
+                        ActionSheet(title: Text("Are you sure you want to delete this new event?"), buttons: [
+                            .destructive(Text("Cancel Changes")) {
+                                self.showingActionSheet = false
+                                self.dismiss() },
+                            .default(Text("Continue Editing")) {  }
+                        ])
+                    }
                     
                     Spacer()
                     
@@ -588,14 +596,14 @@ struct ASANewEKEventView: View {
             } // VStack
 //        } // NavigationView
 //        .navigationViewStyle(StackNavigationViewStyle())
-        .actionSheet(isPresented: self.$showingActionSheet) {
-            ActionSheet(title: Text("Are you sure you want to delete this new event?"), buttons: [
-                .destructive(Text("Cancel Changes")) {
-                    self.showingActionSheet = false
-                    self.dismiss() },
-                .default(Text("Continue Editing")) {  }
-            ])
-        }
+//        .actionSheet(isPresented: self.$showingActionSheet) {
+//            ActionSheet(title: Text("Are you sure you want to delete this new event?"), buttons: [
+//                .destructive(Text("Cancel Changes")) {
+//                    self.showingActionSheet = false
+//                    self.dismiss() },
+//                .default(Text("Continue Editing")) {  }
+//            ])
+//        }
     } // var body
 } // struct ASANewEKEventView
 
