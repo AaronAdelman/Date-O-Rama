@@ -68,7 +68,7 @@ struct ASACalendarChooserView: View {
         .IslamicTabularSolar,
         .IslamicUmmAlQura,
         .IslamicUmmAlQuraSolar,
-        .ISO8601,
+//        .ISO8601,
         .Japanese,
         .JulianDay,
         .LilianDate,
@@ -95,7 +95,8 @@ struct ASACalendarChooserView: View {
                 return true
                 
             case APPLE_CALENDARS:
-                return $0.isAppleCalendar || $0.isISO8601Calendar
+                return $0.isAppleCalendar
+//                    || $0.isISO8601Calendar
                 
             case SOLAR_CALENDARS:
                 return $0.type == .solar

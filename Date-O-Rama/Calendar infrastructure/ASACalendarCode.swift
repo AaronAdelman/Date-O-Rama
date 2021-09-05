@@ -25,7 +25,7 @@ enum ASACalendarCode:  String, Codable {
     case IslamicCivil          = "IslamicCivil"
     case IslamicTabular        = "IslamicTabular"
     case IslamicUmmAlQura      = "IslamicUmmAlQura"
-    case ISO8601               = "ISO8601"
+//    case ISO8601               = "ISO8601"
     case Japanese              = "Japanese"
     case Persian               = "Persian"
     case RepublicOfChina       = "RepublicOfChina"
@@ -106,14 +106,14 @@ extension ASACalendarCode {
         } // switch self
     } // var isAppleCalendar
 
-    var isISO8601Calendar:  Bool {
-        switch self {
-        case .ISO8601:
-            return true
-        default:
-            return false
-        } // switch self
-    } // var isISO8601Calendar
+//    var isISO8601Calendar:  Bool {
+//        switch self {
+//        case .ISO8601:
+//            return true
+//        default:
+//            return false
+//        } // switch self
+//    } // var isISO8601Calendar
     
     var isJulianDayCalendar:  Bool {
         switch self {
@@ -231,8 +231,8 @@ extension ASACalendarCode {
            case ASACalendarCode.IslamicUmmAlQura, .IslamicUmmAlQuraSolar:
                identifier = .islamicUmmAlQura
                
-           case ASACalendarCode.ISO8601:
-               identifier = .gregorian
+//           case ASACalendarCode.ISO8601:
+//               identifier = .gregorian
                
            case ASACalendarCode.Japanese:
                identifier = .japanese
@@ -255,7 +255,9 @@ extension ASACalendarCode {
     var type:  ASACalendarType {
         get {
             switch self {
-            case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian, .ISO8601, .Japanese ,.Persian, .RepublicOfChina:
+            case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
+//                 .ISO8601,
+                 .Japanese ,.Persian, .RepublicOfChina:
                 return .solar
                 
             case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA:

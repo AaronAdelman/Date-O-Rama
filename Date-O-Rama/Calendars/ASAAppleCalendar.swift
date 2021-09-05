@@ -16,6 +16,8 @@ class ASAAppleCalendar:  ASACalendar {
     var calendarCode:  ASACalendarCode
     
     var dateFormatter = DateFormatter()
+    lazy var ISODateFormatter = ISO8601DateFormatter()
+
 
     private var ApplesCalendar:  Calendar
     
@@ -51,6 +53,9 @@ class ASAAppleCalendar:  ASACalendar {
         } // switch timeFormat
         
         switch dateFormat {
+        case .ISO8601YearDay, .ISO8601YearMonthDay, .ISO8601YearWeekDay:
+            return ISODateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
+        
         case .none:
             self.dateFormatter.dateStyle = .none
             
@@ -102,6 +107,39 @@ class ASAAppleCalendar:  ASACalendar {
         
         return self.dateFormatter.string(from: now)
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
+    
+    func ISODateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
+        var dateString:  String
+        
+        var formatterOptions:  ISO8601DateFormatter.Options = []
+        switch dateFormat {
+        case .none:
+            formatterOptions = []
+        case .full:
+            formatterOptions = [.withFullDate]
+        case .ISO8601YearMonthDay:
+            formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
+        case .ISO8601YearWeekDay:
+            formatterOptions = [.withYear, .withWeekOfYear, .withDay, .withDashSeparatorInDate]
+        case .ISO8601YearDay:
+            formatterOptions = [.withYear, .withDay, .withDashSeparatorInDate]
+        default:
+            formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
+        } // switch dateFormat
+        
+        if timeFormat == .medium {
+            formatterOptions.insert(.withTime)
+            formatterOptions.insert(.withColonSeparatorInTime)
+        }
+        
+        self.ISODateFormatter.formatOptions = formatterOptions
+
+        let timeZone = locationData.timeZone
+        self.ISODateFormatter.timeZone = timeZone
+
+        dateString = self.ISODateFormatter.string(from: now)
+        return dateString
+    }
 
     var supportsLocales: Bool = true
     
@@ -126,23 +164,57 @@ class ASAAppleCalendar:  ASACalendar {
 
     var supportsTimes: Bool = true
     
-    var supportedDateFormats: Array<ASADateFormat> = [
-        .full
-    ]
+    var supportedDateFormats: Array<ASADateFormat> {
+        if self.calendarCode == .Gregorian {
+            return [
+                .full,
+                .ISO8601YearMonthDay,
+                .ISO8601YearWeekDay,
+                .ISO8601YearDay
+            ]
+        } else {
+            return [
+                .full
+            ]
+        }
+    }
 
-    var supportedWatchDateFormats: Array<ASADateFormat> = [
-        .full,
-        .long,
-        .medium,
-        .mediumWithWeekday,
-        .short,
-        .shortWithWeekday,
-        .abbreviatedWeekday,
-        .dayOfMonth,
-        .abbreviatedWeekdayWithDayOfMonth,
-        .shortWithWeekdayWithoutYear,
-        .mediumWithWeekdayWithoutYear,
-        .fullWithoutYear    ]
+    var supportedWatchDateFormats: Array<ASADateFormat> {
+        if self.calendarCode == .Gregorian {
+            return [
+                .full,
+                .ISO8601YearMonthDay,
+                .ISO8601YearWeekDay,
+                .ISO8601YearDay,
+                .long,
+                .medium,
+                .mediumWithWeekday,
+                .short,
+                .shortWithWeekday,
+                .abbreviatedWeekday,
+                .dayOfMonth,
+                .abbreviatedWeekdayWithDayOfMonth,
+                .shortWithWeekdayWithoutYear,
+                .mediumWithWeekdayWithoutYear,
+                .fullWithoutYear
+            ]
+        } else {
+            return [
+                .full,
+                .long,
+                .medium,
+                .mediumWithWeekday,
+                .short,
+                .shortWithWeekday,
+                .abbreviatedWeekday,
+                .dayOfMonth,
+                .abbreviatedWeekdayWithDayOfMonth,
+                .shortWithWeekdayWithoutYear,
+                .mediumWithWeekdayWithoutYear,
+                .fullWithoutYear
+            ]
+        }
+    }
     
     var supportedTimeFormats: Array<ASATimeFormat> = [
         .medium

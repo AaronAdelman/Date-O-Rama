@@ -80,6 +80,16 @@ extension ASADateFormat {
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // var localizedItemName
+    
+    var isIOS8601: Bool {
+        switch self {
+        case .ISO8601YearDay, .ISO8601YearWeekDay, .ISO8601YearMonthDay :
+            return true
+            
+            default:
+            return false
+        } // switch self
+    } // var isIOS8601: Bool
 } // extension ASADateFormat
 
 extension ASADateFormat {
