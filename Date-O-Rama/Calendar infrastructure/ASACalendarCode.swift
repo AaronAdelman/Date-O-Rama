@@ -45,14 +45,14 @@ enum ASACalendarCode:  String, Codable {
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
     case HebrewMA              = "HebrewSolarMA"
     
-    case all                         = "*"
+    case allEarth                    = "*"
     case allHebrew                   = "heb*"
     case allHebrewSolarTime          = "heb-solar*"
     case allIslamic                  = "hiq*"
     case allIslamicSolarTime         = "hiq-solar*"
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
-    case allGregorian                = "gre*"
+    case allGregorianMonthsWeeksDays = "gre*"
     
     case allSupportingTimeZones      = "tz*"
     case allSupportingEarthLocations = "xloc*"
@@ -177,7 +177,7 @@ extension ASACalendarCode {
         }
     }
     
-    var isGregorianCalendar: Bool {
+    var isGregorianMonthWeeksDaysCalendar: Bool {
         switch self {
         case .Gregorian, .Buddhist, .Japanese, .RepublicOfChina:
             return true
@@ -293,7 +293,7 @@ extension ASACalendarCode {
             return true
         }
         
-        if self == .allGregorian && otherCalendarCode.isGregorianCalendar {
+        if self == .allGregorianMonthsWeeksDays && otherCalendarCode.isGregorianMonthWeeksDaysCalendar {
             return true
         }
         
@@ -305,8 +305,9 @@ extension ASACalendarCode {
             return true
         }
         
-        if self == .all {
+        if self == .allEarth {
             return true
+            // TODO:  Needs to be modified when adding calendars for other planets, e.g., the Darian calendar for Mars.
         }
 
         return self == otherCalendarCode
