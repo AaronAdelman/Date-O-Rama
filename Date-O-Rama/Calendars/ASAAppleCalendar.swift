@@ -127,7 +127,7 @@ class ASAAppleCalendar:  ASACalendar {
             formatterOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
         } // switch dateFormat
         
-        if timeFormat == .medium {
+        if timeFormat != .none {
             formatterOptions.insert(.withTime)
             formatterOptions.insert(.withColonSeparatorInTime)
         }
