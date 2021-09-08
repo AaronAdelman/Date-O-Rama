@@ -18,7 +18,7 @@
         {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 3}, "titles": {"he": "שנה ג׳ למחזור החמה (שנה מעוברת)", "en": "Year 3 in the Metonic Cycle (leap year)"}},
         {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 4}, "titles": {"he": "שנה ד׳ למחזור החמה (שנה רגילה)", "en": "Year 4 in the Metonic Cycle (ordinary year)"}},
         {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 5}, "titles": {"he": "שנה ה׳ למחזור החמה (שנה רגילה)", "en": "Year 5 in the Metonic Cycle (ordinary year)"}},
-        {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 6}, "titles": {"he": "שנה ו׳ למחזור החמה (שנה רגילה)", "en": "Year 6 in the Metonic Cycle (leap year)"}},
+        {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 6}, "titles": {"he": "שנה ו׳ למחזור החמה (שנה מעוברת)", "en": "Year 6 in the Metonic Cycle (leap year)"}},
         {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 7}, "titles": {"he": "שנה ז׳ למחזור החמה (שנה רגילה)", "en": "Year 7 in the Metonic Cycle (ordinary year)"}},
         {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 8}, "titles": {"he": "שנה ח׳ למחזור החמה (שנה מעוברת)", "en": "Year 8 in the Metonic Cycle (leap year)"}},
         {"start": {"type": "1Year", "yearDivisor": 19, "yearRemainder": 9}, "titles": {"he": "שנה ט׳ למחזור החמה (שנה רגילה)", "en": "Year 9 in the Metonic Cycle (ordinary year)"}},
