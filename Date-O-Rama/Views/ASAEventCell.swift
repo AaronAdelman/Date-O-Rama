@@ -33,6 +33,29 @@ struct ASAEventCell:  View {
     func eventIsTodayOnly() -> Bool {
         return rangeStart <= event.startDate && event.endDate <= rangeEnd
     }
+    
+    var titleFont: Font {
+        let duration = event.duration
+        #if os(watchOS)
+        let basicFont: Font = .callout
+        #else
+        let basicFont: Font = self.compact ? .callout : .headline
+        #endif
+        
+        if duration > Date.SECONDS_PER_DAY * 27 {
+            return basicFont.weight(.regular)
+        }
+        
+        if duration > Date.SECONDS_PER_DAY && event.type != .oneDay {
+            return basicFont.weight(.medium)
+        }
+        
+        if duration == Date.SECONDS_PER_DAY || event.type.isOneCalendarDay {
+            return basicFont.weight(.semibold)
+        }
+        
+            return basicFont.weight(.regular)
+    } // var titleFont
 
     var body: some View {
         let eventSymbol = event.symbol
@@ -45,8 +68,7 @@ struct ASAEventCell:  View {
                 HStack(alignment: .top) {
                     if eventSymbol != nil {
                         Text(eventSymbol!)
-                            .font(.callout)
-                            .bold()
+                            .font(titleFont)
                             .modifier(ASAScalable(lineLimit: 2))
                     }
                     Text(event.title)
@@ -75,16 +97,16 @@ struct ASAEventCell:  View {
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
-                let TITLE_FONT: Font = self.compact ? .callout.bold() : .headline
+//                let TITLE_FONT: Font = self.compact ? .callout.bold() : .headline
                 
                 HStack(alignment: .top) {
                     if eventSymbol != nil {
                         Text(eventSymbol!)
-                            .font(TITLE_FONT)
+                            .font(titleFont)
                             .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                     }
                     Text(event.title)
-                        .font(TITLE_FONT)
+                        .font(titleFont)
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
                 

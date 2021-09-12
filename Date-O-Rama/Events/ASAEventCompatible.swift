@@ -201,4 +201,8 @@ extension ASAEventCompatible {
         
         return self.fileEmoji
     } // var emoji
+    
+    var duration: TimeInterval {
+        return self.endDate.timeIntervalSince(self.startDate)
+    } // var duration
 } // extension ASAEventCompatible

@@ -51,11 +51,24 @@ extension ASATimeSpecificationType {
     } // var isAllDay
     
     var isOneCalendarDayOrLess: Bool {
+        return self.isOneCalendarDay || self.isLessThanOneCalendarDay
+    } // var isOneCalendarDayOrLess
+    
+    var isOneCalendarDay: Bool {
         switch self {
-        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay:
+        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
             return false
-        case .oneDay, .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
+        case .oneDay, .firstFullMoonDay, .secondFullMoonDay:
             return true
         } // switch self
-    } // var isOneCalendarDayOrLess
+    } // var isOneCalendarDay
+    
+    var isLessThanOneCalendarDay: Bool {
+        switch self {
+        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .oneDay:
+            return false
+        case .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
+            return true
+        } // switch self
+    } // var isLessThanOneCalendarDay
 } // extension ASATimeSpecificationType
