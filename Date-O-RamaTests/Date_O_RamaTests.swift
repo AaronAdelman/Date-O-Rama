@@ -783,4 +783,20 @@ class Date_O_RamaTests: XCTestCase {
         debugPrint(#file, #function, events)
     }
     
+    func testEaster() throws {
+        var year = 2020
+        let GregorianEaster2020 = calculateEaster(nYear: year, GregorianCalendar: true)
+        XCTAssert(GregorianEaster2020.month == 4)
+        XCTAssert(GregorianEaster2020.day == 12)
+        
+        year = 2021
+        let GregorianEaster2021 = calculateEaster(nYear: year, GregorianCalendar: true)
+        XCTAssert(GregorianEaster2021.month == 4)
+        XCTAssert(GregorianEaster2021.day == 4)
+        
+        let JulianEaster2021 = calculateEaster(nYear: year, GregorianCalendar: false)
+        XCTAssert(JulianEaster2021.month == 4)
+        XCTAssert(JulianEaster2021.day == 19)
+    }
+    
 } // class Date_O_RamaTests

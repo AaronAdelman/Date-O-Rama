@@ -274,6 +274,38 @@
             endingLineNumber = "54"
             landmarkName = "unknown"
             landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "90823C76-A485-47D9-B06C-7600D56941AB - 2d443ff0cc2f7d83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Date_O_Rama.ASAEventsFile.builtIn(fileName: Swift.String) -&gt; (Swift.Optional&lt;Date_O_Rama.ASAEventsFile&gt;, Swift.Optional&lt;Swift.Error&gt;)"
+                  moduleName = "Date-O-Rama"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventsFile.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "4036">
+               </Location>
+               <Location
+                  uuid = "90823C76-A485-47D9-B06C-7600D56941AB - 97a6d30ff5930801"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Date_O_RamaTests.ASAEventsFile.builtIn(fileName: Swift.String) -&gt; (Swift.Optional&lt;Date_O_RamaTests.ASAEventsFile&gt;, Swift.Optional&lt;Swift.Error&gt;)"
+                  moduleName = "Date-O-RamaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Events/ASAEventsFile.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "4036">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -306,6 +338,38 @@
             endingLineNumber = "43"
             landmarkName = "weekendDays"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B3C9A66A-C497-4931-A4A8-C3AA7D75F645 - 2345d2628f7177aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Foundation.Calendar.weekendDays.getter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "Date-O-Rama"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/CalendarExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+               <Location
+                  uuid = "B3C9A66A-C497-4931-A4A8-C3AA7D75F645 - 5d26241cb28981d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Foundation.Calendar.weekendDays.getter : Swift.Array&lt;Swift.Int&gt;"
+                  moduleName = "Date-O-RamaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/CalendarExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1188">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -466,6 +530,38 @@
             endingLineNumber = "59"
             landmarkName = "matches(recurrence:lengthOfWeek:lengthOfMonth:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB6BB6C6-EF22-493C-81E2-94CC9CA0F2F9 - 7f1e5e3d0222d5ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.Int.matches(recurrence: Swift.Int, lengthOfWeek: Swift.Int, lengthOfMonth: Swift.Int) -&gt; Swift.Bool"
+                  moduleName = "Date-O-Rama"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/IntExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1128">
+               </Location>
+               <Location
+                  uuid = "EB6BB6C6-EF22-493C-81E2-94CC9CA0F2F9 - 17da8433fda23c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swift.Int.matches(recurrence: Swift.Int, lengthOfWeek: Swift.Int, lengthOfMonth: Swift.Int) -&gt; Swift.Bool"
+                  moduleName = "Date-O-RamaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/IntExtensions.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1128">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

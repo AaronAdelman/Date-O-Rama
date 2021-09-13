@@ -43,6 +43,9 @@
 		A52486D4260B260700A55690 /* ASANewExternalEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52486D3260B260700A55690 /* ASANewExternalEventButton.swift */; };
 		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
 		A533798124B2333500340C0B /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Sun.json */; };
+		A536399A26EF43BD0083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
+		A536399B26EF43BD0083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
+		A536399C26EF44C70083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -486,6 +489,9 @@
 		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A525622E245561E3009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A533798024B2333400340C0B /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
+		A536399926EF43BD0083C571 /* ASAEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEaster.swift; sourceTree = "<group>"; };
+		A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchDate-O-Rama Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Date-O-Rama-Bridging-Header.h"; sourceTree = "<group>"; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
@@ -1027,6 +1033,7 @@
 				A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */,
 				A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */,
 				A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */,
+				A536399926EF43BD0083C571 /* ASAEaster.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A57BCCB0247BBDC20019C02C /* ASALocation.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
@@ -1035,6 +1042,7 @@
 				A5BDB7CE244DAE3E0027704F /* Calendar infrastructure */,
 				A523A40F25A72CC5007CB54B /* Calendars */,
 				A57BCCAB247BB3440019C02C /* Clocks */,
+				A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */,
 				A533798224B2425900340C0B /* Event files */,
 				A5BFC5B8246BED860075AF58 /* Events */,
 				A5BDB7C7244D9F760027704F /* Extensions */,
@@ -1047,6 +1055,7 @@
 				A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */,
 				A5B6D01A25AEEFCA005ECE8D /* View modifiers */,
 				A5C77C452434723300CFEE47 /* Views */,
+				A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */,
 			);
 			path = "Date-O-Rama";
 			sourceTree = "<group>";
@@ -1227,9 +1236,11 @@
 					};
 					A566F44D2483D6EC000A05B5 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1250;
 					};
 					A5C77BF82433361400CFEE47 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1250;
 					};
 					A5C77C0E2433361900CFEE47 = {
 						CreatedOnToolsVersion = 11.4;
@@ -1610,6 +1621,7 @@
 				A5AAA74B2656C23D000C18AC /* ASAEventDetailView.swift in Sources */,
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
 				A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */,
+				A536399B26EF43BD0083C571 /* ASAEaster.swift in Sources */,
 				A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A57CA3242483ED6F00378EA7 /* ASATimeZoneCell.swift in Sources */,
 				A5BC4DDE26494E4D00BF27F2 /* EKWeekdayExtensions.swift in Sources */,
@@ -1723,6 +1735,7 @@
 				A5490F982550339D00EFB13F /* WatchFace.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
+				A536399A26EF43BD0083C571 /* ASAEaster.swift in Sources */,
 				A59D80242600C57800FD8BBF /* ASADateComponents.swift in Sources */,
 				A5E4301E263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */,
@@ -1819,6 +1832,7 @@
 				A59D805C2600C6F900FD8BBF /* ASADateSpecification.swift in Sources */,
 				A557ACF825DD48F000A264B6 /* ASALocationManager.swift in Sources */,
 				A557AD0925DD495400A264B6 /* FontExtensions.swift in Sources */,
+				A536399C26EF44C70083C571 /* ASAEaster.swift in Sources */,
 				A54539DD26A98F930028EAD5 /* CalendarExtensions.swift in Sources */,
 				A557AD0E25DD495400A264B6 /* CLLocationExtensions.swift in Sources */,
 				A557AD1625DD495400A264B6 /* EKRecurrenceFrequencyExtensions.swift in Sources */,
@@ -1999,6 +2013,7 @@
 			baseConfigurationReference = E875924C3E9AAA88AA9FAE1A /* Pods-WatchDate-O-Rama Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
@@ -2018,6 +2033,8 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/WatchDate-O-Rama Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -2029,6 +2046,7 @@
 			baseConfigurationReference = 752CF1C49D9583795FFA283C /* Pods-WatchDate-O-Rama Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "WatchDate-O-Rama Extension/WatchDate-O-Rama Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 20;
@@ -2048,6 +2066,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/WatchDate-O-Rama Extension-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -2179,6 +2198,7 @@
 			baseConfigurationReference = 585C17D0F1F145ABDE938636 /* Pods-Date-O-Rama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -2201,6 +2221,8 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/Date-O-Rama-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -2211,6 +2233,7 @@
 			baseConfigurationReference = 08D07CC687BED1CCABAEAECD /* Pods-Date-O-Rama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Date-O-Rama/✨Date-O-Rama✨.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -2233,6 +2256,7 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/Date-O-Rama-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -2247,7 +2271,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53M887FS75;
 				INFOPLIST_FILE = "Date-O-RamaTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2270,7 +2294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53M887FS75;
 				INFOPLIST_FILE = "Date-O-RamaTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
