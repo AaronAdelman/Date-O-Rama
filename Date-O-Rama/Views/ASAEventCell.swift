@@ -50,11 +50,11 @@ struct ASAEventCell:  View {
             return basicFont.weight(.medium)
         }
         
-        if duration == Date.SECONDS_PER_DAY || event.type.isOneCalendarDay {
+//    if duration == Date.SECONDS_PER_DAY || event.type.isOneCalendarDay {
             return basicFont.weight(.semibold)
-        }
-        
-            return basicFont.weight(.regular)
+//        }
+//
+//            return basicFont.weight(.regular)
     } // var titleFont
 
     var body: some View {
@@ -72,8 +72,7 @@ struct ASAEventCell:  View {
                             .modifier(ASAScalable(lineLimit: 2))
                     }
                     Text(event.title)
-                        .font(.callout)
-                        .bold()
+                        .font(titleFont)
                         .modifier(ASAScalable(lineLimit: 2))
                 }
                 if !event.isAllDay {
