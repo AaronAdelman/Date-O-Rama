@@ -6,6 +6,34 @@
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {
+            "titles": {"en": "Palm Sunday"},
+            "start": {"type": "Easter", "offsetDays": -7}
+        },
+        {
+            "titles": {"en": "Holy Monday"},
+            "start": {"type": "Easter", "offsetDays": -6}
+        },
+        {
+            "titles": {"en": "Holy Tuesday"},
+            "start": {"type": "Easter", "offsetDays": -5}
+        },
+        {
+            "titles": {"en": "Holy Wednesday"},
+            "start": {"type": "Easter", "offsetDays": -4}
+        },
+        {
+            "titles": {"en": "Maundy Thursday"},
+            "start": {"type": "Easter", "offsetDays": -3}
+        },
+        {
+            "titles": {"en": "Good Friday"},
+            "start": {"type": "Easter", "offsetDays": -2}
+        },
+        {
+            "titles": {"en": "Holy Saturday"},
+            "start": {"type": "Easter", "offsetDays": -1}
+        },
+        {
             "titles": {"en": "Easter Sunday"},
             "start": {"type": "Easter"}, "emoji": "🥚🐇"
         },
