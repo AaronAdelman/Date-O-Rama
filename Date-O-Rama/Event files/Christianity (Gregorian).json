@@ -68,7 +68,25 @@
             "start": {"type": "1Day", "month": 12, "day": 31}
         },
         
+        {
+            "titles": {"en": "Septuagesima"},
+            "start": {"type": "Easter", "offsetDays": -63}
+        },
+        {
+            "titles": {"en": "Sexagesima"},
+            "start": {"type": "Easter", "offsetDays": -56}
+        },
+
+        {
+            "titles": {"en": "Fat Thursday"},
+            "start": {"type": "Easter", "offsetDays": -52}
+        },
+
         
+        {
+            "titles": {"en": "Quinquagesima"},
+            "start": {"type": "Easter", "offsetDays": -49}
+        },
         {
             "titles": {"en": "Shrove Monday"},
             "start": {"type": "Easter", "offsetDays": -48}
