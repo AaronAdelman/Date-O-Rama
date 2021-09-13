@@ -39,7 +39,7 @@ struct ASAEventCell:  View {
         #if os(watchOS)
         let basicFont: Font = .callout
         #else
-        let basicFont: Font = self.compact ? .callout : .body
+        let basicFont: Font = .body
         #endif
         
         if duration > Date.SECONDS_PER_DAY * 27 {
