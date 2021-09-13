@@ -6,31 +6,195 @@
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {
+            "titles": {"en": "Shrove Monday"},
+            "start": {"type": "Easter", "offsetDays": -48}
+        },
+        {
+            "titles": {"en": "Shrove Tuesday/Pancake Day"},
+            "start": {"type": "Easter", "offsetDays": -47}
+        },
+        {
+            "titles": {"en": "Ash Wednesday/Lent (day 1)"},
+            "start": {"type": "Easter", "offsetDays": -46}
+        },
+        {
+            "titles": {"en": "Lent (day 2)"},
+            "start": {"type": "Easter", "offsetDays": -45}
+        },
+        {
+            "titles": {"en": "Lent (day 3)"},
+            "start": {"type": "Easter", "offsetDays": -44}
+        },
+        {
+            "titles": {"en": "Lent (day 4)"},
+            "start": {"type": "Easter", "offsetDays": -43}
+        },
+        {
+            "titles": {"en": "Invocabit"},
+            "start": {"type": "Easter", "offsetDays": -42}
+        },
+        {
+            "titles": {"en": "Lent (day 5)"},
+            "start": {"type": "Easter", "offsetDays": -41}
+        },
+        {
+            "titles": {"en": "Lent (day 6)"},
+            "start": {"type": "Easter", "offsetDays": -40}
+        },
+        {
+            "titles": {"en": "Lent (day 7)"},
+            "start": {"type": "Easter", "offsetDays": -39}
+        },
+        {
+            "titles": {"en": "Lent (day 8)"},
+            "start": {"type": "Easter", "offsetDays": -38}
+        },
+        {
+            "titles": {"en": "Lent (day 9)"},
+            "start": {"type": "Easter", "offsetDays": -37}
+        },
+        {
+            "titles": {"en": "Lent (day 10)"},
+            "start": {"type": "Easter", "offsetDays": -36}
+        },
+        {
+            "titles": {"en": "Reminiscere"},
+            "start": {"type": "Easter", "offsetDays": -35}
+        },
+        {
+            "titles": {"en": "Lent (day 11)"},
+            "start": {"type": "Easter", "offsetDays": -34}
+        },
+        {
+            "titles": {"en": "Lent (day 12)"},
+            "start": {"type": "Easter", "offsetDays": -33}
+        },
+        {
+            "titles": {"en": "Lent (day 13)"},
+            "start": {"type": "Easter", "offsetDays": -32}
+        },
+        {
+            "titles": {"en": "Lent (day 14)"},
+            "start": {"type": "Easter", "offsetDays": -31}
+        },
+        {
+            "titles": {"en": "Lent (day 15)"},
+            "start": {"type": "Easter", "offsetDays": -30}
+        },
+        {
+            "titles": {"en": "Lent (day 16)"},
+            "start": {"type": "Easter", "offsetDays": -29}
+        },
+        {
+            "titles": {"en": "Oculi"},
+            "start": {"type": "Easter", "offsetDays": -28}
+        },
+        {
+            "titles": {"en": "Lent (day 17)"},
+            "start": {"type": "Easter", "offsetDays": -27}
+        },
+        {
+            "titles": {"en": "Lent (day 18)"},
+            "start": {"type": "Easter", "offsetDays": -26}
+        },
+        {
+            "titles": {"en": "Lent (day 19)"},
+            "start": {"type": "Easter", "offsetDays": -25}
+        },
+        {
+            "titles": {"en": "Lent (day 20)"},
+            "start": {"type": "Easter", "offsetDays": -24}
+        },
+        {
+            "titles": {"en": "Lent (day 21)"},
+            "start": {"type": "Easter", "offsetDays": -23}
+        },
+        {
+            "titles": {"en": "Lent (day 22)"},
+            "start": {"type": "Easter", "offsetDays": -22}
+        },
+        {
+            "titles": {"en": "Laetare/Mothering Sunday"},
+            "start": {"type": "Easter", "offsetDays": -21}
+        },
+        {
+            "titles": {"en": "Lent (day 23)"},
+            "start": {"type": "Easter", "offsetDays": -20}
+        },
+        {
+            "titles": {"en": "Lent (day 24)"},
+            "start": {"type": "Easter", "offsetDays": -19}
+        },
+        {
+            "titles": {"en": "Lent (day 25)"},
+            "start": {"type": "Easter", "offsetDays": -18}
+        },
+        {
+            "titles": {"en": "Lent (day 26)"},
+            "start": {"type": "Easter", "offsetDays": -17}
+        },
+        {
+            "titles": {"en": "Lent (day 27)"},
+            "start": {"type": "Easter", "offsetDays": -16}
+        },
+        {
+            "titles": {"en": "Lent (day 28)"},
+            "start": {"type": "Easter", "offsetDays": -15}
+        },
+        {
+            "titles": {"en": "Passion Sunday"},
+            "start": {"type": "Easter", "offsetDays": -14}
+        },
+        {
+            "titles": {"en": "Lent (day 29)"},
+            "start": {"type": "Easter", "offsetDays": -13}
+        },
+        {
+            "titles": {"en": "Lent (day 30)"},
+            "start": {"type": "Easter", "offsetDays": -12}
+        },
+        {
+            "titles": {"en": "Lent (day 31)"},
+            "start": {"type": "Easter", "offsetDays": -11}
+        },
+        {
+            "titles": {"en": "Lent (day 32)"},
+            "start": {"type": "Easter", "offsetDays": -10}
+        },
+        {
+            "titles": {"en": "Lent (day 33)"},
+            "start": {"type": "Easter", "offsetDays": -9}
+        },
+        {
+            "titles": {"en": "Lent (day 34)"},
+            "start": {"type": "Easter", "offsetDays": -8}
+        },
+        {
             "titles": {"en": "Palm Sunday"},
             "start": {"type": "Easter", "offsetDays": -7}
         },
         {
-            "titles": {"en": "Holy Monday"},
+            "titles": {"en": "Holy Monday/Lent (day 35)"},
             "start": {"type": "Easter", "offsetDays": -6}
         },
         {
-            "titles": {"en": "Holy Tuesday"},
+            "titles": {"en": "Holy Tuesday/Lent (day 36)"},
             "start": {"type": "Easter", "offsetDays": -5}
         },
         {
-            "titles": {"en": "Holy Wednesday"},
+            "titles": {"en": "Holy Wednesday/Lent (day 37)"},
             "start": {"type": "Easter", "offsetDays": -4}
         },
         {
-            "titles": {"en": "Maundy Thursday"},
+            "titles": {"en": "Maundy Thursday/Lent (day 38)"},
             "start": {"type": "Easter", "offsetDays": -3}
         },
         {
-            "titles": {"en": "Good Friday"},
+            "titles": {"en": "Good Friday/Lent (day 39)"},
             "start": {"type": "Easter", "offsetDays": -2}
         },
         {
-            "titles": {"en": "Holy Saturday"},
+            "titles": {"en": "Holy Saturday/Lent (day 40)"},
             "start": {"type": "Easter", "offsetDays": -1}
         },
         {
