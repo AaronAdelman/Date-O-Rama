@@ -7,12 +7,37 @@
     "eventSpecifications": [
         {
             "titles": {"en": "Easter Sunday"},
-            "start": {"type": "Easter"}
+            "start": {"type": "Easter"}, "emoji": "🥚🐇"
         },
         {
             "titles": {"en": "Easter Monday"},
             "start": {"type": "Easter", "offsetDays": 1}
         },
+        {
+            "titles": {"en": "Easter Tuesday"},
+            "start": {"type": "Easter", "offsetDays": 2}
+        },
+        {
+            "titles": {"en": "Easter Wednesday"},
+            "start": {"type": "Easter", "offsetDays": 3}
+        },
+        {
+            "titles": {"en": "Easter Thursday"},
+            "start": {"type": "Easter", "offsetDays": 4}
+        },
+        {
+            "titles": {"en": "Easter Friday"},
+            "start": {"type": "Easter", "offsetDays": 5}
+        },
+        {
+            "titles": {"en": "Easter Saturday"},
+            "start": {"type": "Easter", "offsetDays": 6}
+        },
+        {
+            "titles": {"en": "Second Sunday of Easter"},
+            "start": {"type": "Easter", "offsetDays": 7}
+        },
+
     ]
 }
 
