@@ -875,28 +875,16 @@ class ASAEventCalendar {
                     var startDate = returnedStartDate
                     var endDate = returnedEndDate
                     
-                    // We have to make sure that solar events after Sunset happen on the correct day.  This is an issue on Sunset transition calendars.
-                    var fixedDate:  Date
-//                    if appropriateCalendar.transitionType == .sunset
-//                        && !eventSpecification.isAllDay
-//                        && eventSpecification.startDateSpecification.type == .degreesBelowHorizon
-//                        && eventSpecification.startDateSpecification.rising == false
-//                        && eventSpecification.startDateSpecification.offset ?? -1 >= 0 {
-//                        fixedDate = date.oneDayBefore
-//                    } else {
-                        fixedDate = date
-//                    }
-                    
                     if startDate == nil {
                         if eventSpecification.isAllDay {
                             startDate = appropriateCalendar.startOfDay(for: date, locationData: locationData)
                             endDate   = appropriateCalendar.startOfNextDay(date: date, locationData: locationData)
                         } else {
-                            startDate = eventSpecification.startDateSpecification.date(date: fixedDate, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+                            startDate = eventSpecification.startDateSpecification.date(date: date, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
                             if eventSpecification.endDateSpecification == nil {
                                 endDate = startDate
                             } else {
-                                endDate = eventSpecification.endDateSpecification!.date(date: fixedDate, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+                                endDate = eventSpecification.endDateSpecification!.date(date: date, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
                             }
                         }
                     }
