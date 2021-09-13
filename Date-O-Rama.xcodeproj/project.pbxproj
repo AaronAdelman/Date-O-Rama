@@ -85,9 +85,6 @@
 		A557AD5525DD4BA200A264B6 /* ASADateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASADateFormat.swift */; };
 		A557AD5625DD4BA200A264B6 /* ASATimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E4719D2463F938002BB471 /* ASATimeFormat.swift */; };
 		A557AD6825DD4F3700A264B6 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77C2C2433371700CFEE47 /* StringExtensions.swift */; };
-		A557AD6F25DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */; };
-		A557AD7025DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */; };
-		A557AD7B25DD505D00A264B6 /* ASAPolarLighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */; };
 		A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A55AA4A7256FD61300D62326 /* ASAArrangementChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */; };
@@ -499,7 +496,6 @@
 		A54539E526A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times, Umm al-Qura).json"; sourceTree = "<group>"; };
 		A5490F972550339D00EFB13F /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
-		A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPolarLighting.swift; sourceTree = "<group>"; };
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAArrangementChooserView.swift; sourceTree = "<group>"; };
 		A5629CD825B8646200C6D062 /* ASAAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutTab.swift; sourceTree = "<group>"; };
@@ -1034,7 +1030,6 @@
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A57BCCB0247BBDC20019C02C /* ASALocation.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
-				A557AD6E25DD4FB800A264B6 /* ASAPolarLighting.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
 				A5BDB7CE244DAE3E0027704F /* Calendar infrastructure */,
@@ -1638,7 +1633,6 @@
 				A59322702578068400318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A593229225782AB800318BC3 /* ASAMainRowsByPlaceView.swift in Sources */,
 				A59D80392600C57D00FD8BBF /* ASACalendarFactory.swift in Sources */,
-				A557AD7B25DD505D00A264B6 /* ASAPolarLighting.swift in Sources */,
 				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
 				A59D803A2600C57D00FD8BBF /* ASACalendarComponent.swift in Sources */,
@@ -1705,7 +1699,6 @@
 				A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */,
 				A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */,
 				A55AA4A7256FD61300D62326 /* ASAArrangementChooserView.swift in Sources */,
-				A557AD6F25DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
 				A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */,
 				A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */,
@@ -1787,7 +1780,6 @@
 			files = (
 				A5DD45392683AED5008DBC22 /* ASAEventCategory.swift in Sources */,
 				A557AD1525DD495400A264B6 /* IntExtensions.swift in Sources */,
-				A557AD7025DD4FB800A264B6 /* ASAPolarLighting.swift in Sources */,
 				A59D805D2600C6F900FD8BBF /* ASAEvent.swift in Sources */,
 				A59D80412600C59200FD8BBF /* ASARow.swift in Sources */,
 				A59D805B2600C6F900FD8BBF /* ASAEventsFile.swift in Sources */,
