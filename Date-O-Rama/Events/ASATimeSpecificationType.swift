@@ -37,12 +37,14 @@ enum ASATimeSpecificationType:  String, Codable {
     
     case rise                                = "rise"
     case set                                 = "set"
+    
+    case Easter                              = "Easter"
 } // enum ASATimeSpecificationType
 
 extension ASATimeSpecificationType {
     var isAllDay: Bool {
         switch self {
-        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .firstFullMoonDay, .secondFullMoonDay:
+        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .firstFullMoonDay, .secondFullMoonDay, .Easter:
             return true
             
         default:
@@ -58,14 +60,14 @@ extension ASATimeSpecificationType {
         switch self {
         case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
             return false
-        case .oneDay, .firstFullMoonDay, .secondFullMoonDay:
+        case .oneDay, .firstFullMoonDay, .secondFullMoonDay, .Easter:
             return true
         } // switch self
     } // var isOneCalendarDay
     
     var isLessThanOneCalendarDay: Bool {
         switch self {
-        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .oneDay:
+        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .oneDay, .Easter:
             return false
         case .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
             return true

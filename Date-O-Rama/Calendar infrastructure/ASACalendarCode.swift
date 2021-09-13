@@ -45,6 +45,8 @@ enum ASACalendarCode:  String, Codable {
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
     case HebrewMA              = "HebrewSolarMA"
     
+    case Julian                = "julian" // TODO:  Implement
+    
     case allEarth                    = "*"
     case allHebrew                   = "heb*"
     case allHebrewSolarTime          = "heb-solar*"

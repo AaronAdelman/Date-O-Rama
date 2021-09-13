@@ -1,0 +1,15 @@
+{
+    "titles": {"en": "Christianity (Gregorian)"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        {
+            "titles": {"en": "Easter Sunday"},
+            "start": {"type": "Easter"}
+        },
+    ]
+}
+
+

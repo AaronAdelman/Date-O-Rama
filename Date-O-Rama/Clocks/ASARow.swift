@@ -554,7 +554,7 @@ extension ASARow {
             case .multiDay:
                 startDateString = self.shortenedDateString(now: event.startDate)
                 endDateString = self.shortenedDateString(now: event.endDate - 1)
-            case .oneDay, .firstFullMoonDay, .secondFullMoonDay:
+            case .oneDay, .firstFullMoonDay, .secondFullMoonDay, .Easter:
                 startDateString = nil
                 endDateString = self.shortenedDateString(now: event.startDate)
             default:

@@ -46,6 +46,8 @@
 		A536399A26EF43BD0083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A536399B26EF43BD0083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A536399C26EF44C70083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
+		A53639A026EF7A000083C571 /* Christianity (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Christianity (Gregorian).json */; };
+		A53639A126EF7A000083C571 /* Christianity (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Christianity (Gregorian).json */; };
 		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -492,6 +494,7 @@
 		A536399926EF43BD0083C571 /* ASAEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEaster.swift; sourceTree = "<group>"; };
 		A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchDate-O-Rama Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Date-O-Rama-Bridging-Header.h"; sourceTree = "<group>"; };
+		A536399F26EF7A000083C571 /* Christianity (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (Gregorian).json"; sourceTree = "<group>"; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
@@ -795,6 +798,7 @@
 				A5BB4BF026D7AC2A0054D841 /* Uranus.json */,
 				A5BB4BE426D79A6D0054D841 /* Venus.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
+				A536399F26EF7A000083C571 /* Christianity (Gregorian).json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1327,6 +1331,7 @@
 				A5BB4BF526D7ACD00054D841 /* Neptune.json in Resources */,
 				A5BDE77D26677E7900F47416 /* Islamic awareness.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
+				A53639A126EF7A000083C571 /* Christianity (Gregorian).json in Resources */,
 				A5BD09CE26B1B31100738C0B /* United Nations International Decades.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
 				A5EE117926C573910050495C /* Moon.json in Resources */,
@@ -1365,6 +1370,7 @@
 				A5BD09CD26B1B31100738C0B /* United Nations International Decades.json in Resources */,
 				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,
 				A5E3606624C756FF0000A268 /* Israel.json in Resources */,
+				A53639A026EF7A000083C571 /* Christianity (Gregorian).json in Resources */,
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
 				A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */,
 				A5EE117826C573910050495C /* Moon.json in Resources */,

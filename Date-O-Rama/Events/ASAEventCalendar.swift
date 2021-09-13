@@ -454,6 +454,39 @@ class ASAEventCalendar {
         let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
         let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
         return (true, startDate, endDate)
+    } // func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents, _ tweakedStartDateSpecification: inout ASADateSpecification) -> (matches: Bool, startDate: Date?, endDate: Date?)
+    
+    func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        var forGregorianCalendar: Bool
+        switch calendar.calendarCode {
+        case .Gregorian:
+            forGregorianCalendar = true
+            
+        case .Julian:
+            forGregorianCalendar = false
+            
+        default:
+            return MATCH_FAILURE // Calculating the date of Easter is currently irrelevant for other calendars
+        } // switch calendar.calendarCode
+        
+        guard let componentsYear = components.year else {
+            return MATCH_FAILURE
+        }
+        let (EasterMonth, EasterDay) = calculateEaster(nYear: componentsYear, GregorianCalendar: forGregorianCalendar)
+        guard let componentsMonth = components.month else {
+            return MATCH_FAILURE
+        }
+        guard let componentsDay = components.day else {
+            return MATCH_FAILURE
+        }
+        
+        // TODO:  Add something here to check for and deal with nonzero offset!
+        
+        if componentsMonth == EasterMonth && componentsDay == EasterDay {
+            return (true, startOfDay, startOfNextDay)
+        }
+        
+        return MATCH_FAILURE
     }
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
@@ -530,6 +563,12 @@ class ASAEventCalendar {
         // Multi-month events
         if startDateSpecificationType == .multiMonth {
             return matchMultiMonth(endDateSpecification, date, calendar, locationData, startDateSpecification, components, &tweakedStartDateSpecification)
+        }
+        
+        // Easter and related events
+        if startDateSpecificationType == .Easter {
+            assert(endDateSpecification == nil)
+           return matchEaster(date: date, calendar: calendar, startDateSpecification: tweakedStartDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
         if endDateSpecification == nil {
