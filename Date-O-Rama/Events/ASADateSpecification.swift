@@ -59,6 +59,8 @@ struct ASADateSpecification:  Codable {
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
     var dhuhrMinutes: Double?
     
+    // For Easter-related events
+    var offsetDays: Int?
 } // struct ASADateSpecification
 
 

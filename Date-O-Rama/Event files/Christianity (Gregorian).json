@@ -9,6 +9,10 @@
             "titles": {"en": "Easter Sunday"},
             "start": {"type": "Easter"}
         },
+        {
+            "titles": {"en": "Easter Monday"},
+            "start": {"type": "Easter", "offsetDays": 1}
+        },
     ]
 }
 

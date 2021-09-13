@@ -480,14 +480,40 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         }
         
-        // TODO:  Add something here to check for and deal with nonzero offset!
+        if startDateSpecification.offsetDays ?? 0 == 0 {
+            if componentsMonth == EasterMonth && componentsDay == EasterDay {
+                return (true, startOfDay, startOfNextDay)
+            } else {
+                return MATCH_FAILURE
+            }
+        }
         
-        if componentsMonth == EasterMonth && componentsDay == EasterDay {
+        // Nonzero offset from Easter events
+        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
+        let daysInYear = calendar.maximumValue(of: .day, in: .year, for: date)
+        let daysInJanuary  = 31
+        let daysInFebruary = daysInYear == 366 ? 29 : 28
+        let daysInMarch    = 31
+        var dayOfYearForEaster: Int
+        switch EasterMonth {
+        case 3:
+            dayOfYearForEaster = daysInJanuary + daysInFebruary + EasterDay
+            
+        case 4:
+            dayOfYearForEaster = daysInJanuary + daysInFebruary + daysInMarch + EasterDay
+            
+        default:
+            return MATCH_FAILURE
+        } // switch EasterMonth
+        
+        let dayOfYearForEvent = dayOfYearForEaster + startDateSpecification.offsetDays!
+        
+        if dayOfYear == dayOfYearForEvent {
             return (true, startOfDay, startOfNextDay)
         }
         
         return MATCH_FAILURE
-    }
+    } // func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
