@@ -311,7 +311,55 @@
             "titles": {"en": "Second Sunday of Easter"},
             "start": {"type": "Easter", "offsetDays": 7}
         },
-        
+        {
+            "titles": {"en": "Third Sunday of Easter"},
+            "start": {"type": "Easter", "offsetDays": 14}
+        },
+        {
+            "titles": {"en": "Fourth Sunday of Easter"},
+            "start": {"type": "Easter", "offsetDays": 21}
+        },
+        {
+            "titles": {"en": "Fifth Sunday of Easter"},
+            "start": {"type": "Easter", "offsetDays": 28}
+        },
+        {
+            "titles": {"en": "Sixth Sunday of Easter"},
+            "start": {"type": "Easter", "offsetDays": 35}
+        },
+        {
+            "titles": {"en": "Seventh Sunday of Easter"},
+            "start": {"type": "Easter", "offsetDays": 42}
+        },
+        {
+            "titles": {"en": "Pentecost/Whitsunday"},
+            "start": {"type": "Easter", "offsetDays": 49}
+        },
+        {
+            "titles": {"en": "Whit Monday/Pentecost Monday"},
+            "start": {"type": "Easter", "offsetDays": 50}
+        },
+        {
+            "titles": {"en": "Whit Tuesday"},
+            "start": {"type": "Easter", "offsetDays": 51}
+        },
+        {
+            "titles": {"en": "Whit Friday"},
+            "start": {"type": "Easter", "offsetDays": 54}
+        },
+        {
+            "titles": {"en": "Trinity Sunday"},
+            "start": {"type": "Easter", "offsetDays": 56}
+        },
+        {
+            "titles": {"en": "Corpus Christi"},
+            "start": {"type": "Easter", "offsetDays": 60}
+        },
+        {
+            "titles": {"en": "Corpus Christi (alternate date)"},
+            "start": {"type": "Easter", "offsetDays": 63}
+        },
+
     ]
         }
         
