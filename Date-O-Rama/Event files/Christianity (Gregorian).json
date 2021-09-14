@@ -6,28 +6,8 @@
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {
-            "titles": {"en": "Eighth Day of Christmas"},
-            "start": {"type": "1Day", "month": 1, "day": 1}
-        },
-        {
             "titles": {"en": "New Year’s Day"},
-            "start": {"type": "1Day", "month": 1, "day": 1}
-        },
-        {
-            "titles": {"en": "Ninth Day of Christmas"},
-            "start": {"type": "1Day", "month": 1, "day": 2}
-        },
-        {
-            "titles": {"en": "Tenth Day of Christmas"},
-            "start": {"type": "1Day", "month": 1, "day": 3}
-        },
-        {
-            "titles": {"en": "Eleventh Day of Christmas"},
-            "start": {"type": "1Day", "month": 1, "day": 4}
-        },
-        {
-            "titles": {"en": "Twelfth Day of Christmas"},
-            "start": {"type": "1Day", "month": 1, "day": 5}
+            "start": {"type": "1Day", "month": 1, "day": 1}, "emoji": "🎉"
         },
         
         
@@ -38,30 +18,6 @@
         {
             "titles": {"en": "Christmas Day"},
             "start": {"type": "1Day", "month": 12, "day": 25}, "emoji": "🎄"
-        },
-        {
-            "titles": {"en": "Second Day of Christmas"},
-            "start": {"type": "1Day", "month": 12, "day": 26}
-        },
-        {
-            "titles": {"en": "Third Day of Christmas"},
-            "start": {"type": "1Day", "month": 12, "day": 27}
-        },
-        {
-            "titles": {"en": "Fourth Day of Christmas"},
-            "start": {"type": "1Day", "month": 12, "day": 28}
-        },
-        {
-            "titles": {"en": "Fifth Day of Christmas"},
-            "start": {"type": "1Day", "month": 12, "day": 29}
-        },
-        {
-            "titles": {"en": "Sixth Day of Christmas"},
-            "start": {"type": "1Day", "month": 12, "day": 30}
-        },
-        {
-            "titles": {"en": "Seventh Day of Christmas"},
-            "start": {"type": "1Day", "month": 12, "day": 31}
         },
         {
             "titles": {"en": "New Year’s Eve"},

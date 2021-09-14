@@ -48,6 +48,8 @@
 		A536399C26EF44C70083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A53639A026EF7A000083C571 /* Christianity (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Christianity (Gregorian).json */; };
 		A53639A126EF7A000083C571 /* Christianity (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Christianity (Gregorian).json */; };
+		A538A81826F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A538A81726F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json */; };
+		A538A81926F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A538A81726F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json */; };
 		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -496,6 +498,7 @@
 		A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Date-O-Rama-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399F26EF7A000083C571 /* Christianity (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (Gregorian).json"; sourceTree = "<group>"; };
 		A538A81626F0CAE300DBB26C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		A538A81726F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (Gregorian, supplemental).json"; sourceTree = "<group>"; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
@@ -766,6 +769,7 @@
 				A5CBB50F24FD54310084DF72 /* Antisemitism (Gregorian).json */,
 				A5BDE7A22667E22000F47416 /* Antisemitism (Islamic).json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
+				A536399F26EF7A000083C571 /* Christianity (Gregorian).json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */,
@@ -799,7 +803,7 @@
 				A5BB4BF026D7AC2A0054D841 /* Uranus.json */,
 				A5BB4BE426D79A6D0054D841 /* Venus.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
-				A536399F26EF7A000083C571 /* Christianity (Gregorian).json */,
+				A538A81726F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1330,6 +1334,7 @@
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
+				A538A81926F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json in Resources */,
 				A5BB4BF526D7ACD00054D841 /* Neptune.json in Resources */,
 				A5BDE77D26677E7900F47416 /* Islamic awareness.json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
@@ -1366,6 +1371,7 @@
 				A54539E026A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A5BD09D026B2D40D00738C0B /* United Nations International Years.json in Resources */,
+				A538A81826F0ED0400DBB26C /* Christianity (Gregorian, supplemental).json in Resources */,
 				A5B91140268E7C9E0058EA69 /* Time changes.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
