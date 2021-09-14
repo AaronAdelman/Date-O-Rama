@@ -5,399 +5,137 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        {
-            "titles": {"en": "New Year’s Day/Feast of the Circumcision of Christ/Solemnity of Mary, Mother of God/Christmastide (day 8)"},
-            "start": {"type": "1Day", "month": 1, "day": 1}, "emoji": "🎉"
-        },
-        {
-            "titles": {"en": "Christmastide (day 9)"},
-            "start": {"type": "1Day", "month": 1, "day": 2}
-        },
-        {
-            "titles": {"en": "Christmastide (day 10)"},
-            "start": {"type": "1Day", "month": 1, "day": 3}
-        },
-        {
-            "titles": {"en": "Christmastide (day 11)"},
-            "start": {"type": "1Day", "month": 1, "day": 4}
-        },
-        {
-            "titles": {"en": "Epiphany Eve/Twelfth Night/Christmastide (day 12)"},
-            "start": {"type": "1Day", "month": 1, "day": 5}
-        },
-        {
-            "titles": {"en": "Epiphany"},
-            "start": {"type": "1Day", "month": 1, "day": 6}
-        },
-        {
-            "titles": {"en": "Baptism of the Lord"},
-            "start": {"type": "1Day", "month": 1, "day": 9, "weekdays": [1]}
-        },
-        {
-            "titles": {"en": "Baptism of the Lord"},
-            "start": {"type": "1Day", "month": 1, "day": 10, "weekdays": [1]}
-        },{
-            "titles": {"en": "Baptism of the Lord"},
-            "start": {"type": "1Day", "month": 1, "day": 11, "weekdays": [1]}
-        },{
-            "titles": {"en": "Baptism of the Lord"},
-            "start": {"type": "1Day", "month": 1, "day": 12, "weekdays": [1]}
-        },{
-            "titles": {"en": "Baptism of the Lord"},
-            "start": {"type": "1Day", "month": 1, "day": 13, "weekdays": [1]}
-        },
+        {"titles": {"en": "New Year’s Day/Feast of the Circumcision of Christ/Solemnity of Mary, Mother of God/Christmastide (day 8)"}, "start": {"type": "1Day", "month": 1, "day": 1}, "emoji": "🎉"},
+        {"titles": {"en": "Christmastide (day 9)"}, "start": {"type": "1Day", "month": 1, "day": 2}},
+        {"titles": {"en": "Christmastide (day 10)"}, "start": {"type": "1Day", "month": 1, "day": 3}},
+        {"titles": {"en": "Christmastide (day 11)"}, "start": {"type": "1Day", "month": 1, "day": 4}},
+        {"titles": {"en": "Epiphany Eve/Twelfth Night/Christmastide (day 12)"}, "start": {"type": "1Day", "month": 1, "day": 5}},
+        {"titles": {"en": "Epiphany"}, "start": {"type": "1Day", "month": 1, "day": 6}},
+        {"titles": {"en": "Baptism of the Lord"}, "start": {"type": "1Day", "month": 1, "day": 9, "weekdays": [1]}},
+        {"titles": {"en": "Baptism of the Lord"}, "start": {"type": "1Day", "month": 1, "day": 10, "weekdays": [1]}},
+        {"titles": {"en": "Baptism of the Lord"}, "start": {"type": "1Day", "month": 1, "day": 11, "weekdays": [1]}},
+        {"titles": {"en": "Baptism of the Lord"}, "start": {"type": "1Day", "month": 1, "day": 12, "weekdays": [1]}},
+        {"titles": {"en": "Baptism of the Lord"}, "start": {"type": "1Day", "month": 1, "day": 13, "weekdays": [1]}},
+        
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 27, "weekdays": [1]}},
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 28, "weekdays": [1]}},
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 29, "weekdays": [1]}},
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 30, "weekdays": [1]}},
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 12, "day": 1, "weekdays": [1]}},
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 12, "day": 2, "weekdays": [1]}},
+        {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 12, "day": 3, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 4, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 5, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 6, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 7, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 8, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 9, "weekdays": [1]}},
+        {"titles": {"en": "Second Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 10, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 11, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 12, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 13, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 14, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 15, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 16, "weekdays": [1]}},
+        {"titles": {"en": "Gaudete Sunday"}, "start": {"type": "1Day", "month": 12, "day": 17, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 18, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 19, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 20, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 21, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 22, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 23, "weekdays": [1]}},
+        {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 24, "weekdays": [1]}},
+        {"titles": {"en": "Saint Nicholas Day"}, "start": {"type": "1Day", "month": 12, "day": 6}},
+        {"titles": {"en": "Christmas Eve"}, "start": {"type": "1Day", "month": 12, "day": 24}},
+        {"titles": {"en": "Christmas Day/Christmastide (day 1)"}, "start": {"type": "1Day", "month": 12, "day": 25}, "emoji": "🎄"},
+        {"titles": {"en": "Saint Stephen’s Day/Christmastide (day 2)"}, "start": {"type": "1Day", "month": 12, "day": 26}},
+        {"titles": {"en": "Feast of Saint John the Apostle/Christmastide (day 3)"}, "start": {"type": "1Day", "month": 12, "day": 27}},
+        {"titles": {"en": "Feast of the Holy Innocents/Christmastide (day 4)"}, "start": {"type": "1Day", "month": 12, "day": 28}},
+        {"titles": {"en": "Feast of Saint Thomas Becket/Christmastide (day 5)"}, "start": {"type": "1Day", "month": 12, "day": 29}},
+        {"titles": {"en": "Christmastide (day 6)"}, "start": {"type": "1Day", "month": 12, "day": 30}},
+        {"titles": {"en": "Saint Sylvester’s Day/New Year’s Eve/Christmastide (day 7)"}, "start": {"type": "1Day", "month": 12, "day": 31}},
+        {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 30, "weekdays": [6, 1]}},
+        {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 31, "weekdays": [1]}},
+        {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 29, "weekdays": [1]}},
+        {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 28, "weekdays": [1]}},
+        {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 27, "weekdays": [1]}},
+        {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 26, "weekdays": [1]}},
+
+        {"titles": {"en": "Septuagesima"}, "start": {"type": "Easter", "offsetDays": -63}},
+        {"titles": {"en": "Sexagesima"}, "start": {"type": "Easter", "offsetDays": -56}},
+
+        {"titles": {"en": "Fat Thursday"}, "start": {"type": "Easter", "offsetDays": -52}},
 
         
-        {
-            "titles": {"en": "Christmas Eve"},
-            "start": {"type": "1Day", "month": 12, "day": 24}
-        },
-        {
-            "titles": {"en": "Christmas Day/Christmastide (day 1)"},
-            "start": {"type": "1Day", "month": 12, "day": 25}, "emoji": "🎄"
-        },
-        {
-            "titles": {"en": "Saint Stephen’s Day/Christmastide (day 2)"},
-            "start": {"type": "1Day", "month": 12, "day": 26}
-        },
-        {
-            "titles": {"en": "Feast of Saint John the Apostle/Christmastide (day 3)"},
-            "start": {"type": "1Day", "month": 12, "day": 27}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Innocents/Christmastide (day 4)"},
-            "start": {"type": "1Day", "month": 12, "day": 28}
-        },
-        {
-            "titles": {"en": "Feast of Saint Thomas Becket/Christmastide (day 5)"},
-            "start": {"type": "1Day", "month": 12, "day": 29}
-        },
-        {
-            "titles": {"en": "Christmastide (day 6)"},
-            "start": {"type": "1Day", "month": 12, "day": 30}
-        },
-        {
-            "titles": {"en": "Saint Sylvester’s Day/New Year’s Eve/Christmastide (day 7)"},
-            "start": {"type": "1Day", "month": 12, "day": 31}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Family"},
-            "start": {"type": "1Day", "month": 12, "day": 30, "weekdays": [6, 1]}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Family"},
-            "start": {"type": "1Day", "month": 12, "day": 31, "weekdays": [1]}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Family"},
-            "start": {"type": "1Day", "month": 12, "day": 29, "weekdays": [1]}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Family"},
-            "start": {"type": "1Day", "month": 12, "day": 28, "weekdays": [1]}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Family"},
-            "start": {"type": "1Day", "month": 12, "day": 27, "weekdays": [1]}
-        },
-        {
-            "titles": {"en": "Feast of the Holy Family"},
-            "start": {"type": "1Day", "month": 12, "day": 26, "weekdays": [1]}
-        },
-
-        
-        {
-            "titles": {"en": "Septuagesima"},
-            "start": {"type": "Easter", "offsetDays": -63}
-        },
-        {
-            "titles": {"en": "Sexagesima"},
-            "start": {"type": "Easter", "offsetDays": -56}
-        },
-
-        {
-            "titles": {"en": "Fat Thursday"},
-            "start": {"type": "Easter", "offsetDays": -52}
-        },
-
-        
-        {
-            "titles": {"en": "Quinquagesima"},
-            "start": {"type": "Easter", "offsetDays": -49}
-        },
-        {
-            "titles": {"en": "Shrove Monday"},
-            "start": {"type": "Easter", "offsetDays": -48}
-        },
-        {
-            "titles": {"en": "Shrove Tuesday/Pancake Day"},
-            "start": {"type": "Easter", "offsetDays": -47}
-        },
-        {
-            "titles": {"en": "Ash Wednesday/Lent (day 1)"},
-            "start": {"type": "Easter", "offsetDays": -46}
-        },
-        {
-            "titles": {"en": "Lent (day 2)"},
-            "start": {"type": "Easter", "offsetDays": -45}
-        },
-        {
-            "titles": {"en": "Lent (day 3)"},
-            "start": {"type": "Easter", "offsetDays": -44}
-        },
-        {
-            "titles": {"en": "Lent (day 4)"},
-            "start": {"type": "Easter", "offsetDays": -43}
-        },
-        {
-            "titles": {"en": "Invocabit"},
-            "start": {"type": "Easter", "offsetDays": -42}
-        },
-        {
-            "titles": {"en": "Lent (day 5)"},
-            "start": {"type": "Easter", "offsetDays": -41}
-        },
-        {
-            "titles": {"en": "Lent (day 6)"},
-            "start": {"type": "Easter", "offsetDays": -40}
-        },
-        {
-            "titles": {"en": "Lent (day 7)"},
-            "start": {"type": "Easter", "offsetDays": -39}
-        },
-        {
-            "titles": {"en": "Lent (day 8)"},
-            "start": {"type": "Easter", "offsetDays": -38}
-        },
-        {
-            "titles": {"en": "Lent (day 9)"},
-            "start": {"type": "Easter", "offsetDays": -37}
-        },
-        {
-            "titles": {"en": "Lent (day 10)"},
-            "start": {"type": "Easter", "offsetDays": -36}
-        },
-        {
-            "titles": {"en": "Reminiscere"},
-            "start": {"type": "Easter", "offsetDays": -35}
-        },
-        {
-            "titles": {"en": "Lent (day 11)"},
-            "start": {"type": "Easter", "offsetDays": -34}
-        },
-        {
-            "titles": {"en": "Lent (day 12)"},
-            "start": {"type": "Easter", "offsetDays": -33}
-        },
-        {
-            "titles": {"en": "Lent (day 13)"},
-            "start": {"type": "Easter", "offsetDays": -32}
-        },
-        {
-            "titles": {"en": "Lent (day 14)"},
-            "start": {"type": "Easter", "offsetDays": -31}
-        },
-        {
-            "titles": {"en": "Lent (day 15)"},
-            "start": {"type": "Easter", "offsetDays": -30}
-        },
-        {
-            "titles": {"en": "Lent (day 16)"},
-            "start": {"type": "Easter", "offsetDays": -29}
-        },
-        {
-            "titles": {"en": "Oculi"},
-            "start": {"type": "Easter", "offsetDays": -28}
-        },
-        {
-            "titles": {"en": "Lent (day 17)"},
-            "start": {"type": "Easter", "offsetDays": -27}
-        },
-        {
-            "titles": {"en": "Lent (day 18)"},
-            "start": {"type": "Easter", "offsetDays": -26}
-        },
-        {
-            "titles": {"en": "Lent (day 19)"},
-            "start": {"type": "Easter", "offsetDays": -25}
-        },
-        {
-            "titles": {"en": "Lent (day 20)"},
-            "start": {"type": "Easter", "offsetDays": -24}
-        },
-        {
-            "titles": {"en": "Lent (day 21)"},
-            "start": {"type": "Easter", "offsetDays": -23}
-        },
-        {
-            "titles": {"en": "Lent (day 22)"},
-            "start": {"type": "Easter", "offsetDays": -22}
-        },
-        {
-            "titles": {"en": "Laetare/Mothering Sunday"},
-            "start": {"type": "Easter", "offsetDays": -21}
-        },
-        {
-            "titles": {"en": "Lent (day 23)"},
-            "start": {"type": "Easter", "offsetDays": -20}
-        },
-        {
-            "titles": {"en": "Lent (day 24)"},
-            "start": {"type": "Easter", "offsetDays": -19}
-        },
-        {
-            "titles": {"en": "Lent (day 25)"},
-            "start": {"type": "Easter", "offsetDays": -18}
-        },
-        {
-            "titles": {"en": "Lent (day 26)"},
-            "start": {"type": "Easter", "offsetDays": -17}
-        },
-        {
-            "titles": {"en": "Lent (day 27)"},
-            "start": {"type": "Easter", "offsetDays": -16}
-        },
-        {
-            "titles": {"en": "Lent (day 28)"},
-            "start": {"type": "Easter", "offsetDays": -15}
-        },
-        {
-            "titles": {"en": "Passion Sunday"},
-            "start": {"type": "Easter", "offsetDays": -14}
-        },
-        {
-            "titles": {"en": "Lent (day 29)"},
-            "start": {"type": "Easter", "offsetDays": -13}
-        },
-        {
-            "titles": {"en": "Lent (day 30)"},
-            "start": {"type": "Easter", "offsetDays": -12}
-        },
-        {
-            "titles": {"en": "Lent (day 31)"},
-            "start": {"type": "Easter", "offsetDays": -11}
-        },
-        {
-            "titles": {"en": "Lent (day 32)"},
-            "start": {"type": "Easter", "offsetDays": -10}
-        },
-        {
-            "titles": {"en": "Lent (day 33)"},
-            "start": {"type": "Easter", "offsetDays": -9}
-        },
-        {
-            "titles": {"en": "Lent (day 34)"},
-            "start": {"type": "Easter", "offsetDays": -8}
-        },
-        {
-            "titles": {"en": "Palm Sunday"},
-            "start": {"type": "Easter", "offsetDays": -7}
-        },
-        {
-            "titles": {"en": "Holy Monday/Lent (day 35)"},
-            "start": {"type": "Easter", "offsetDays": -6}
-        },
-        {
-            "titles": {"en": "Holy Tuesday/Lent (day 36)"},
-            "start": {"type": "Easter", "offsetDays": -5}
-        },
-        {
-            "titles": {"en": "Holy Wednesday/Lent (day 37)"},
-            "start": {"type": "Easter", "offsetDays": -4}
-        },
-        {
-            "titles": {"en": "Maundy Thursday/Lent (day 38)"},
-            "start": {"type": "Easter", "offsetDays": -3}
-        },
-        {
-            "titles": {"en": "Good Friday/Lent (day 39)"},
-            "start": {"type": "Easter", "offsetDays": -2}
-        },
-        {
-            "titles": {"en": "Holy Saturday/Lent (day 40)"},
-            "start": {"type": "Easter", "offsetDays": -1}
-        },
-        {
-            "titles": {"en": "Easter Sunday"},
-            "start": {"type": "Easter"}, "emoji": "🥚🐇"
-        },
-        {
-            "titles": {"en": "Easter Monday"},
-            "start": {"type": "Easter", "offsetDays": 1}
-        },
-        {
-            "titles": {"en": "Easter Tuesday"},
-            "start": {"type": "Easter", "offsetDays": 2}
-        },
-        {
-            "titles": {"en": "Easter Wednesday"},
-            "start": {"type": "Easter", "offsetDays": 3}
-        },
-        {
-            "titles": {"en": "Easter Thursday"},
-            "start": {"type": "Easter", "offsetDays": 4}
-        },
-        {
-            "titles": {"en": "Easter Friday"},
-            "start": {"type": "Easter", "offsetDays": 5}
-        },
-        {
-            "titles": {"en": "Easter Saturday"},
-            "start": {"type": "Easter", "offsetDays": 6}
-        },
-        {
-            "titles": {"en": "Second Sunday of Easter"},
-            "start": {"type": "Easter", "offsetDays": 7}
-        },
-        {
-            "titles": {"en": "Third Sunday of Easter"},
-            "start": {"type": "Easter", "offsetDays": 14}
-        },
-        {
-            "titles": {"en": "Fourth Sunday of Easter"},
-            "start": {"type": "Easter", "offsetDays": 21}
-        },
-        {
-            "titles": {"en": "Fifth Sunday of Easter"},
-            "start": {"type": "Easter", "offsetDays": 28}
-        },
-        {
-            "titles": {"en": "Sixth Sunday of Easter"},
-            "start": {"type": "Easter", "offsetDays": 35}
-        },
-        {
-            "titles": {"en": "Seventh Sunday of Easter"},
-            "start": {"type": "Easter", "offsetDays": 42}
-        },
-        {
-            "titles": {"en": "Pentecost/Whitsunday"},
-            "start": {"type": "Easter", "offsetDays": 49}
-        },
-        {
-            "titles": {"en": "Whit Monday/Pentecost Monday"},
-            "start": {"type": "Easter", "offsetDays": 50}
-        },
-        {
-            "titles": {"en": "Whit Tuesday"},
-            "start": {"type": "Easter", "offsetDays": 51}
-        },
-        {
-            "titles": {"en": "Whit Friday"},
-            "start": {"type": "Easter", "offsetDays": 54}
-        },
-        {
-            "titles": {"en": "Trinity Sunday"},
-            "start": {"type": "Easter", "offsetDays": 56}
-        },
-        {
-            "titles": {"en": "Corpus Christi"},
-            "start": {"type": "Easter", "offsetDays": 60}
-        },
-        {
-            "titles": {"en": "Corpus Christi (alternate date)"},
-            "start": {"type": "Easter", "offsetDays": 63}
-        },
-
+        {"titles": {"en": "Quinquagesima"}, "start": {"type": "Easter", "offsetDays": -49}},
+        {"titles": {"en": "Shrove Monday"}, "start": {"type": "Easter", "offsetDays": -48}},
+        {"titles": {"en": "Shrove Tuesday/Pancake Day"}, "start": {"type": "Easter", "offsetDays": -47}},
+        {"titles": {"en": "Ash Wednesday/Lent (day 1)"}, "start": {"type": "Easter", "offsetDays": -46}},
+        {"titles": {"en": "Lent (day 2)"}, "start": {"type": "Easter", "offsetDays": -45}},
+        {"titles": {"en": "Lent (day 3)"}, "start": {"type": "Easter", "offsetDays": -44}},
+        {"titles": {"en": "Lent (day 4)"}, "start": {"type": "Easter", "offsetDays": -43}},
+        {"titles": {"en": "Invocabit"}, "start": {"type": "Easter", "offsetDays": -42}},
+        {"titles": {"en": "Lent (day 5)"}, "start": {"type": "Easter", "offsetDays": -41}},
+        {"titles": {"en": "Lent (day 6)"}, "start": {"type": "Easter", "offsetDays": -40}},
+        {"titles": {"en": "Lent (day 7)"}, "start": {"type": "Easter", "offsetDays": -39}},
+        {"titles": {"en": "Lent (day 8)"}, "start": {"type": "Easter", "offsetDays": -38}},
+        {"titles": {"en": "Lent (day 9)"}, "start": {"type": "Easter", "offsetDays": -37}},
+        {"titles": {"en": "Lent (day 10)"}, "start": {"type": "Easter", "offsetDays": -36}},
+        {"titles": {"en": "Reminiscere"}, "start": {"type": "Easter", "offsetDays": -35}},
+        {"titles": {"en": "Lent (day 11)"}, "start": {"type": "Easter", "offsetDays": -34}},
+        {"titles": {"en": "Lent (day 12)"}, "start": {"type": "Easter", "offsetDays": -33}},
+        {"titles": {"en": "Lent (day 13)"}, "start": {"type": "Easter", "offsetDays": -32}},
+        {"titles": {"en": "Lent (day 14)"}, "start": {"type": "Easter", "offsetDays": -31}},
+        {"titles": {"en": "Lent (day 15)"}, "start": {"type": "Easter", "offsetDays": -30}},
+        {"titles": {"en": "Lent (day 16)"}, "start": {"type": "Easter", "offsetDays": -29}},
+        {"titles": {"en": "Oculi"}, "start": {"type": "Easter", "offsetDays": -28}},
+        {"titles": {"en": "Lent (day 17)"}, "start": {"type": "Easter", "offsetDays": -27}},
+        {"titles": {"en": "Lent (day 18)"}, "start": {"type": "Easter", "offsetDays": -26}},
+        {"titles": {"en": "Lent (day 19)"}, "start": {"type": "Easter", "offsetDays": -25}},
+        {"titles": {"en": "Lent (day 20)"}, "start": {"type": "Easter", "offsetDays": -24}},
+        {"titles": {"en": "Lent (day 21)"}, "start": {"type": "Easter", "offsetDays": -23}},
+        {"titles": {"en": "Lent (day 22)"}, "start": {"type": "Easter", "offsetDays": -22}},
+        {"titles": {"en": "Laetare/Mothering Sunday"}, "start": {"type": "Easter", "offsetDays": -21}},
+        {"titles": {"en": "Lent (day 23)"}, "start": {"type": "Easter", "offsetDays": -20}},
+        {"titles": {"en": "Lent (day 24)"}, "start": {"type": "Easter", "offsetDays": -19}},
+        {"titles": {"en": "Lent (day 25)"}, "start": {"type": "Easter", "offsetDays": -18}},
+        {"titles": {"en": "Lent (day 26)"}, "start": {"type": "Easter", "offsetDays": -17}},
+        {"titles": {"en": "Lent (day 27)"}, "start": {"type": "Easter", "offsetDays": -16}},
+        {"titles": {"en": "Lent (day 28)"}, "start": {"type": "Easter", "offsetDays": -15}},
+        {"titles": {"en": "Passion Sunday"}, "start": {"type": "Easter", "offsetDays": -14}},
+        {"titles": {"en": "Lent (day 29)"}, "start": {"type": "Easter", "offsetDays": -13}},
+        {"titles": {"en": "Lent (day 30)"}, "start": {"type": "Easter", "offsetDays": -12}},
+        {"titles": {"en": "Lent (day 31)"}, "start": {"type": "Easter", "offsetDays": -11}},
+        {"titles": {"en": "Lent (day 32)"}, "start": {"type": "Easter", "offsetDays": -10}},
+        {"titles": {"en": "Lent (day 33)"}, "start": {"type": "Easter", "offsetDays": -9}},
+        {"titles": {"en": "Lent (day 34)"}, "start": {"type": "Easter", "offsetDays": -8}},
+        {"titles": {"en": "Palm Sunday"}, "start": {"type": "Easter", "offsetDays": -7}},
+        {"titles": {"en": "Holy Monday/Lent (day 35)"}, "start": {"type": "Easter", "offsetDays": -6}},
+        {"titles": {"en": "Holy Tuesday/Lent (day 36)"}, "start": {"type": "Easter", "offsetDays": -5}},
+        {"titles": {"en": "Holy Wednesday/Lent (day 37)"}, "start": {"type": "Easter", "offsetDays": -4}},
+        {"titles": {"en": "Maundy Thursday/Lent (day 38)"}, "start": {"type": "Easter", "offsetDays": -3}},
+        {"titles": {"en": "Good Friday/Lent (day 39)"}, "start": {"type": "Easter", "offsetDays": -2}},
+        {"titles": {"en": "Holy Saturday/Lent (day 40)"}, "start": {"type": "Easter", "offsetDays": -1}},
+        {"titles": {"en": "Easter Sunday"}, "start": {"type": "Easter"}, "emoji": "🥚🐇"
+        },
+        {"titles": {"en": "Easter Monday"}, "start": {"type": "Easter", "offsetDays": 1}},
+        {"titles": {"en": "Easter Tuesday"}, "start": {"type": "Easter", "offsetDays": 2}},
+        {"titles": {"en": "Easter Wednesday"}, "start": {"type": "Easter", "offsetDays": 3}},
+        {"titles": {"en": "Easter Thursday"}, "start": {"type": "Easter", "offsetDays": 4}},
+        {"titles": {"en": "Easter Friday"}, "start": {"type": "Easter", "offsetDays": 5}},
+        {"titles": {"en": "Easter Saturday"}, "start": {"type": "Easter", "offsetDays": 6}},
+        {"titles": {"en": "Second Sunday of Easter"}, "start": {"type": "Easter", "offsetDays": 7}},
+        {"titles": {"en": "Third Sunday of Easter"}, "start": {"type": "Easter", "offsetDays": 14}},
+        {"titles": {"en": "Fourth Sunday of Easter"}, "start": {"type": "Easter", "offsetDays": 21}},
+        {"titles": {"en": "Fifth Sunday of Easter"}, "start": {"type": "Easter", "offsetDays": 28}},
+        {"titles": {"en": "Sixth Sunday of Easter"}, "start": {"type": "Easter", "offsetDays": 35}},
+        {"titles": {"en": "Seventh Sunday of Easter"}, "start": {"type": "Easter", "offsetDays": 42}},
+        {"titles": {"en": "Pentecost/Whitsunday"}, "start": {"type": "Easter", "offsetDays": 49}},
+        {"titles": {"en": "Whit Monday/Pentecost Monday"}, "start": {"type": "Easter", "offsetDays": 50}},
+        {"titles": {"en": "Whit Tuesday"}, "start": {"type": "Easter", "offsetDays": 51}},
+        {"titles": {"en": "Whit Friday"}, "start": {"type": "Easter", "offsetDays": 54}},
+        {"titles": {"en": "Trinity Sunday"}, "start": {"type": "Easter", "offsetDays": 56}},
+        {"titles": {"en": "Corpus Christi"}, "start": {"type": "Easter", "offsetDays": 60}},
     ]
         }
         
