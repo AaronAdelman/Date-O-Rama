@@ -29,7 +29,24 @@
             "titles": {"en": "Epiphany"},
             "start": {"type": "1Day", "month": 1, "day": 6}
         },
-        
+        {
+            "titles": {"en": "Baptism of the Lord"},
+            "start": {"type": "1Day", "month": 1, "day": 9, "weekdays": [1]}
+        },
+        {
+            "titles": {"en": "Baptism of the Lord"},
+            "start": {"type": "1Day", "month": 1, "day": 10, "weekdays": [1]}
+        },{
+            "titles": {"en": "Baptism of the Lord"},
+            "start": {"type": "1Day", "month": 1, "day": 11, "weekdays": [1]}
+        },{
+            "titles": {"en": "Baptism of the Lord"},
+            "start": {"type": "1Day", "month": 1, "day": 12, "weekdays": [1]}
+        },{
+            "titles": {"en": "Baptism of the Lord"},
+            "start": {"type": "1Day", "month": 1, "day": 13, "weekdays": [1]}
+        },
+
         
         {
             "titles": {"en": "Christmas Eve"},
