@@ -495,6 +495,7 @@
 		A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchDate-O-Rama Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Date-O-Rama-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399F26EF7A000083C571 /* Christianity (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (Gregorian).json"; sourceTree = "<group>"; };
+		A538A81626F0CAE300DBB26C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
@@ -1055,6 +1056,7 @@
 				A525622C24556169009C2920 /* Localizable.strings */,
 				A5BDE7762665594600F47416 /* Localizable.stringsdict */,
 				A5C77C042433361900CFEE47 /* Preview Content */,
+				A538A81626F0CAE300DBB26C /* README.md */,
 				A5B6D00D25ADE3C1005ECE8D /* TimeZones.txt */,
 				A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */,
 				A5B6D01A25AEEFCA005ECE8D /* View modifiers */,
