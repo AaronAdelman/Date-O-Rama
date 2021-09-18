@@ -19,7 +19,23 @@
         {"titles": {"en": "Candlemas/Presentation of the Lord"}, "start": {"type": "1Day", "month": 2, "day": 2}},
         {"titles": {"en": "Saint Joseph’s Day"}, "start": {"type": "1Day", "month": 3, "day": 19}},
         {"titles": {"en": "Feast of the Annunciation"}, "start": {"type": "1Day", "month": 3, "day": 25}},
-        
+        {"titles": {"en": "Feast of the Visitation"}, "start": {"type": "1Day", "month": 5, "day": 31}},
+        {"titles": {"en": "Nativity of Saint John the Baptist"}, "start": {"type": "1Day", "month": 6, "day": 24}},
+        {"titles": {"en": "Feast of Saints Peter and Paul"}, "start": {"type": "1Day", "month": 6, "day": 29}},
+        {"titles": {"en": "Feast of the Transfiguration"}, "start": {"type": "1Day", "month": 8, "day": 6}},
+        {"titles": {"en": "Assumption of Mary"}, "start": {"type": "1Day", "month": 8, "day": 15}},
+        {"titles": {"en": "Nativity of Mary"}, "start": {"type": "1Day", "month": 9, "day": 8}},
+        {"titles": {"en": "Feast of the Exaltation of the Holy Cross"}, "start": {"type": "1Day", "month": 9, "day": 14}},
+        {"titles": {"en": "All Saints’ Day"}, "start": {"type": "1Day", "month": 11, "day": 1}},
+        {"titles": {"en": "All Souls’ Day"}, "start": {"type": "1Day", "month": 11, "day": 2}},
+        {"titles": {"en": "Presentation of the Blessed Virgin Mary"}, "start": {"type": "1Day", "month": 11, "day": 21}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 20, "weekdays": [1]}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 21, "weekdays": [1]}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 22, "weekdays": [1]}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 23, "weekdays": [1]}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 24, "weekdays": [1]}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 25, "weekdays": [1]}},
+        {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 26, "weekdays": [1]}},
         {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 27, "weekdays": [1]}},
         {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 28, "weekdays": [1]}},
         {"titles": {"en": "Advent Sunday"}, "start": {"type": "1Day", "month": 11, "day": 29, "weekdays": [1]}},
@@ -64,13 +80,9 @@
         {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 28, "weekdays": [1]}},
         {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 27, "weekdays": [1]}},
         {"titles": {"en": "Feast of the Holy Family"}, "start": {"type": "1Day", "month": 12, "day": 26, "weekdays": [1]}},
-
         {"titles": {"en": "Septuagesima"}, "start": {"type": "Easter", "offsetDays": -63}},
         {"titles": {"en": "Sexagesima"}, "start": {"type": "Easter", "offsetDays": -56}},
-
         {"titles": {"en": "Fat Thursday"}, "start": {"type": "Easter", "offsetDays": -52}},
-
-        
         {"titles": {"en": "Quinquagesima"}, "start": {"type": "Easter", "offsetDays": -49}},
         {"titles": {"en": "Shrove Monday"}, "start": {"type": "Easter", "offsetDays": -48}},
         {"titles": {"en": "Shrove Tuesday/Pancake Day"}, "start": {"type": "Easter", "offsetDays": -47}},
@@ -120,8 +132,7 @@
         {"titles": {"en": "Maundy Thursday/Lent (day 38)"}, "start": {"type": "Easter", "offsetDays": -3}},
         {"titles": {"en": "Good Friday/Lent (day 39)"}, "start": {"type": "Easter", "offsetDays": -2}},
         {"titles": {"en": "Holy Saturday/Lent (day 40)"}, "start": {"type": "Easter", "offsetDays": -1}},
-        {"titles": {"en": "Easter Sunday"}, "start": {"type": "Easter"}, "emoji": "🥚🐇"
-        },
+        {"titles": {"en": "Easter Sunday"}, "start": {"type": "Easter"}, "emoji": "🥚🐇"},
         {"titles": {"en": "Easter Monday"}, "start": {"type": "Easter", "offsetDays": 1}},
         {"titles": {"en": "Easter Tuesday"}, "start": {"type": "Easter", "offsetDays": 2}},
         {"titles": {"en": "Easter Wednesday"}, "start": {"type": "Easter", "offsetDays": 3}},
@@ -142,6 +153,4 @@
         {"titles": {"en": "Trinity Sunday"}, "start": {"type": "Easter", "offsetDays": 56}},
         {"titles": {"en": "Corpus Christi"}, "start": {"type": "Easter", "offsetDays": 60}},
     ]
-        }
-        
-        
+}
