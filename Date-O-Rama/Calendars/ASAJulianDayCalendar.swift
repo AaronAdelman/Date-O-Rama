@@ -82,23 +82,25 @@ class ASAJulianDayCalendar:  ASACalendar {
         components.month      = 0
 
         if self.supportsTimes {
-            let (JulianDate, day, hour, minute, second, nanosecond, fractionOfDay) = now.JulianDateWithComponents(offsetFromJulianDay: self.offsetFromJulianDay)
+            let (JulianDate, day,
+//                 hour, minute, second, nanosecond,
+                 fractionOfDay) = now.JulianDateWithComponents(offsetFromJulianDay: self.offsetFromJulianDay)
             let dateString = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             components.day        = day
-            components.hour       = hour
-            components.minute     = minute
-            components.second     = second
-            components.nanosecond = nanosecond
+//            components.hour       = hour
+//            components.minute     = minute
+//            components.second     = second
+//            components.nanosecond = nanosecond
             components.fractionalHours = fractionOfDay
             return (dateString, "", components)
         } else {
             let day = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
             let dateString = self.dateString(JulianDay: day, localeIdentifier: localeIdentifier)
             components.day        = 0
-            components.hour       = 0
-            components.minute     = 0
-            components.second     = 0
-            components.nanosecond = 0
+//            components.hour       = 0
+//            components.minute     = 0
+//            components.second     = 0
+//            components.nanosecond = 0
             components.fractionalHours = 0.0
             return (dateString, "", components)
         }

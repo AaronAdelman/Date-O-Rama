@@ -75,26 +75,30 @@ extension Date {
         return (day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond, fractionOfDay: fractionOfDay)
     } // func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionOfDay: Double)
 
-    func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionOfDay: Double) {
+    func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int,
+//                                                                          hour:  Int, minute:  Int, second:  Int, nanosecond:  Int,
+                                                                          fractionOfDay: Double) {
         let full = self.JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
-        let fullHours = fractionOfDay * 24.0
-        let integralHoursAsDouble = floor(fullHours)
-        let fullMinutes = (fullHours - integralHoursAsDouble) * 60.0
-        let integralMinutesAsDouble = floor(fullMinutes)
-        let fullSeconds = (fullMinutes - integralMinutesAsDouble) * 60.0
-        let integralSecondsAsDouble = floor(fullSeconds)
-        let fullNanoseconds = (fullSeconds - integralSecondsAsDouble) * 1000000000.0
-        let integralNanosecondsAsDouble = floor(fullNanoseconds)
+//        let fullHours = fractionOfDay * 24.0
+//        let integralHoursAsDouble = floor(fullHours)
+//        let fullMinutes = (fullHours - integralHoursAsDouble) * 60.0
+//        let integralMinutesAsDouble = floor(fullMinutes)
+//        let fullSeconds = (fullMinutes - integralMinutesAsDouble) * 60.0
+//        let integralSecondsAsDouble = floor(fullSeconds)
+//        let fullNanoseconds = (fullSeconds - integralSecondsAsDouble) * 1000000000.0
+//        let integralNanosecondsAsDouble = floor(fullNanoseconds)
 
         let day = Int(dayAsDouble)
-        let hour = Int(integralHoursAsDouble)
-        let minute = Int(integralMinutesAsDouble)
-        let second = Int(integralSecondsAsDouble)
-        let nanosecond = Int(integralNanosecondsAsDouble)
+//        let hour = Int(integralHoursAsDouble)
+//        let minute = Int(integralMinutesAsDouble)
+//        let second = Int(integralSecondsAsDouble)
+//        let nanosecond = Int(integralNanosecondsAsDouble)
 
-        return (JulianDate: full, day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond, fractionOfDay: fractionOfDay)
+        return (JulianDate: full, day:  day,
+//                hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond,
+                fractionOfDay: fractionOfDay)
     } // func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval, supportsTime: Bool) -> (JulianDate: Double, day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
 
     static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date {
