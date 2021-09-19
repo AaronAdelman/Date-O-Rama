@@ -29,9 +29,12 @@ struct ASAMiniClockView:  View {
             ASADayFractionView(progress: progress)
         } else {
             if processedRow.calendarCode.isSunsetTransitionCalendar {
-                let fractionalHours: Double = Double(processedRow.hour!) + Double(processedRow.minute!) / 60.0
+//                let fractionalHours: Double = Double(processedRow.hour!) + Double(processedRow.minute!) / 60.0
+                let fractionalHour: Double = processedRow.fractionalHour ?? 0.0
+                let dayHalf: ASATimeSpecificationDayHalf = processedRow.dayHalf ?? .night
+                let totalHours: Double = fractionalHour + (dayHalf == .night ? 0.0 : 12.0)
                 let degreesPerHour = 360.0 / 24.0
-                let degrees = fractionalHours * degreesPerHour + 180.0
+                let degrees = totalHours * degreesPerHour + 180.0
                 ASASolarTimeView(degrees: degrees, dimension: 56.0, font: .body)
             } else {
                 let hour: Int = processedRow.hour!
