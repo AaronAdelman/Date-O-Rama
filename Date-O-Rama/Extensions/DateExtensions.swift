@@ -53,7 +53,7 @@ extension Date {
         return Int(floor(JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)))
     } // func JulianDateWithoutTime(offsetFromJulianDay:  TimeInterval) -> Int
 
-    func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int) {
+    func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionOfDay: Double) {
         let full = self.JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
@@ -72,10 +72,10 @@ extension Date {
         let second = Int(integralSecondsAsDouble)
         let nanosecond = Int(integralNanosecondsAsDouble)
 
-        return (day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond)
-    } // func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
+        return (day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond, fractionOfDay: fractionOfDay)
+    } // func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionOfDay: Double)
 
-    func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int) {
+    func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionOfDay: Double) {
         let full = self.JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
@@ -94,7 +94,7 @@ extension Date {
         let second = Int(integralSecondsAsDouble)
         let nanosecond = Int(integralNanosecondsAsDouble)
 
-        return (JulianDate: full, day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond)
+        return (JulianDate: full, day:  day, hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond, fractionOfDay: fractionOfDay)
     } // func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval, supportsTime: Bool) -> (JulianDate: Double, day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
 
     static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date {

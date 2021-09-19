@@ -59,6 +59,10 @@ enum ASACalendarComponent {
     case nanosecond
 //    Identifier for the nanosecond unit.
     
+    case fractionalHour
+    
+    case dayHalf
+    
     
 //    Specifying Calendars and Time Zones
     
@@ -104,6 +108,10 @@ extension ASACalendarComponent {
             return .calendar
         case .timeZone:
             return .timeZone
+        case .fractionalHour:
+            return nil
+        case .dayHalf:
+            return nil
         } // switch self
     } // func calendarComponent() -> Calendar.Component?
 } // extension ASACalendarComponent

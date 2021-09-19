@@ -86,6 +86,9 @@ struct ASADateComponents:  Equatable {
     var nanosecond: Int?
     //    A nanosecond or count of nanoseconds.
     
+    var fractionalHours: Double?
+    var dayHalf: ASATimeSpecificationDayHalf?
+    
     
     // MARK:  - Accessing Calendar Components
 //    func value(for value: ASACalendarComponent) -> Int? {

@@ -30,9 +30,11 @@ struct ASAProcessedRow {
     var daysInMonth:  Int
     var supportsMonths:  Bool
 
-    var hour:  Int
-    var minute:  Int
-    var second:  Int
+    var hour:  Int?
+    var minute:  Int?
+    var second:  Int?
+    var fractionalHour: Double?
+    var dayHalf: ASATimeSpecificationDayHalf?
 
     var transitionType:  ASATransitionType
     var calendarType:  ASACalendarType
@@ -102,9 +104,11 @@ struct ASAProcessedRow {
             self.supportsMonths = false
         }
 
-        self.hour   = dateComponents.hour ?? 0
-        self.minute = dateComponents.minute ?? 0
-        self.second = dateComponents.second ?? 0
+        self.hour   = dateComponents.hour
+        self.minute = dateComponents.minute
+        self.second = dateComponents.second
+        self.fractionalHour = dateComponents.fractionalHours
+        self.dayHalf = dateComponents.dayHalf
 
         self.transitionType = row.calendar.transitionType
 

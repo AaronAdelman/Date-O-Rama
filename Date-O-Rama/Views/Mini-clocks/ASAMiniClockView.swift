@@ -13,7 +13,7 @@ struct ASAMiniClockView:  View {
     var numberFormatter:  NumberFormatter
 
     func progress() -> Double {
-        let secondsIntoDay:  Double = Double((processedRow.hour * 60 + processedRow.minute) * 60 + processedRow.second)
+        let secondsIntoDay:  Double = Double((processedRow.hour! * 60 + processedRow.minute!) * 60 + processedRow.second!)
         let progress: Double = secondsIntoDay / Date.SECONDS_PER_DAY
         
         assert(progress >= 0.0)
@@ -24,15 +24,16 @@ struct ASAMiniClockView:  View {
 
     var body: some View {
         if processedRow.calendarType == .JulianDay {
-             ASADayFractionView(progress: progress())
+//             ASADayFractionView(progress: progress())
+            ASADayFractionView(progress: processedRow.fractionalHour!)
         } else {
             if processedRow.calendarCode.isSunsetTransitionCalendar {
-                let fractionalHours: Double = Double(processedRow.hour) + Double(processedRow.minute) / 60.0
+                let fractionalHours: Double = Double(processedRow.hour!) + Double(processedRow.minute!) / 60.0
                 let degreesPerHour = 360.0 / 24.0
                 let degrees = fractionalHours * degreesPerHour + 180.0
                 ASASolarTimeView(degrees: degrees, dimension: 56.0, font: .body)
             } else {
-                Watch(hour:  processedRow.hour, minute:  processedRow.minute, second:  processedRow.second, isNight:  nightTime(hour:  processedRow.hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
+                Watch(hour:  processedRow.hour!, minute:  processedRow.minute!, second:  processedRow.second!, isNight:  nightTime(hour:  processedRow.hour!, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
             }
         }
     } // var body

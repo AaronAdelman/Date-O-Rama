@@ -321,6 +321,8 @@ class ASAAppleCalendar:  ASACalendar {
             
         case .calendar, .timeZone:
             return true
+        case .fractionalHour, .dayHalf:
+            return false
         } // switch calendarComponent
     } // func supports(calendarComponent:  ASACalendarComponent) -> Bool
 

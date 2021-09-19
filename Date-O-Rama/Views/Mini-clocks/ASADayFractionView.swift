@@ -29,7 +29,7 @@ struct ASADayFractionView: View {
         let verticalInset: CGFloat =  1.0
         #endif
         ProgressView(value: progress)
-            .accentColor(Color("julianDayForeground"))
+//            .accentColor(Color("julianDayForeground"))
             .frame(maxWidth:  julianDayWidth)
             .modifier(ASACapsuleBorder(topInset: verticalInset, leadingInset: 1.0, bottomInset: verticalInset, trailingInset: 1.0, color: Color("julianDayBorder"), width: 1.0))    }
 }
