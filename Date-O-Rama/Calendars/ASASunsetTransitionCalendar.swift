@@ -40,12 +40,14 @@
 
         var timeString:  String = ""
         if timeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
+            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TODO:  EXPAND ON THIS!
         }
 
         let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
 
-        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.day, .weekday, .hour, .minute, .second, .fractionalHour, .dayHalf], from: now, locationData: locationData)
+        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.day, .weekday,
+//                                                                                                           .hour, .minute, .second,
+                                                                                                           .fractionalHour, .dayHalf], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
@@ -442,14 +444,20 @@
 
     // MARK:  - Extracting Components
 
-    func timeComponents(date: Date, transition:  Date??, locationData:  ASALocation) -> (hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionalHour: Double, dayHalf: ASATimeSpecificationDayHalf) {
+    func timeComponents(date: Date, transition:  Date??, locationData:  ASALocation) -> (
+//        hour:  Int, minute:  Int, second:  Int, nanosecond:  Int,
+        fractionalHour: Double, dayHalf: ASATimeSpecificationDayHalf) {
         let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, transition: transition)
         if !solarTimeComponents.valid {
-            return (hour:  -1, minute:  -1, second:  -1, nanosecond:  -1, fractionalHour: -1.0, dayHalf: ASATimeSpecificationDayHalf.night)
+            return (
+//                hour:  -1, minute:  -1, second:  -1, nanosecond:  -1,
+                fractionalHour: -1.0, dayHalf: ASATimeSpecificationDayHalf.night)
         }
-        let processedFracitonalHours = solarTimeComponents.daytime ? solarTimeComponents.hours + 12.0 : solarTimeComponents.hours
-        let (hours, minutes, seconds, nanoseconds) = hoursMinutesSecondsComponents(hours: processedFracitonalHours, minutesPerHour: 60.0, secondsPerMinute: 60.0)
-        return (hours, minutes, seconds, nanoseconds, solarTimeComponents.hours, solarTimeComponents.daytime ? .day : .night)
+//        let processedFracitonalHours = solarTimeComponents.daytime ? solarTimeComponents.hours + 12.0 : solarTimeComponents.hours
+//        let (hours, minutes, seconds, nanoseconds) = hoursMinutesSecondsComponents(hours: processedFracitonalHours, minutesPerHour: 60.0, secondsPerMinute: 60.0)
+        return (
+//            hours, minutes, seconds, nanoseconds,
+            solarTimeComponents.hours, solarTimeComponents.daytime ? .day : .night)
     } // func hoursMinutesSecondsComponents(date: Date, transition:  Date, locationData:  ASALocation) -> (hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
 
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
@@ -457,27 +465,27 @@
 
         var calendar = self.ApplesCalendar
         calendar.timeZone = locationData.timeZone
-        let (fixedDate, transition) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+        let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
 
-        if [ASACalendarComponent.hour, ASACalendarComponent.minute, ASACalendarComponent.second, ASACalendarComponent.nanosecond].contains(component) {
-            let HMSComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
-            switch component {
-            case .hour:
-                return HMSComponents.hour
+//        if [ASACalendarComponent.hour, ASACalendarComponent.minute, ASACalendarComponent.second, ASACalendarComponent.nanosecond].contains(component) {
+//            let HMSComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
+//            switch component {
+//            case .hour:
+//                return HMSComponents.hour
+//
+//            case .minute:
+//                return HMSComponents.minute
+//
+//            case .second:
+//                return HMSComponents.second
+//
+//            case .nanosecond:
+//                return HMSComponents.nanosecond
 
-            case .minute:
-                return HMSComponents.minute
-
-            case .second:
-                return HMSComponents.second
-
-            case .nanosecond:
-                return HMSComponents.nanosecond
-
-            default:
-                return -1
-            }
-        } // switch component
+//            default:
+//                return -1
+//            }
+//        } // switch component
 
         let ApplesComponent = component.calendarComponent()
         if ApplesComponent == nil {
@@ -504,23 +512,38 @@
         for component in components {
 //            if [ASACalendarComponent.hour, ASACalendarComponent.minute, ASACalendarComponent.second, ASACalendarComponent.nanosecond].contains(component) {
                 switch component {
-                case .hour:
-                    result.hour = timeComponents.hour
-
-                case .minute:
-                    result.minute = timeComponents.minute
-
-                case .second:
-                    result.second = timeComponents.second
-
-                case .nanosecond:
-                    result.nanosecond = timeComponents.nanosecond
+//                case .hour:
+//                    result.hour = timeComponents.hour
+//
+//                case .minute:
+//                    result.minute = timeComponents.minute
+//
+//                case .second:
+//                    result.second = timeComponents.second
+//
+//                case .nanosecond:
+//                    result.nanosecond = timeComponents.nanosecond
                     
                 case .fractionalHour:
                     result.fractionalHours = timeComponents.fractionalHour
                     
                 case .dayHalf:
                     result.dayHalf = timeComponents.dayHalf
+                    
+                case .era:
+                    result.era = ApplesDateComponents.era
+                    
+                case .year:
+                    result.year = ApplesDateComponents.year
+
+                case .month:
+                    result.year = ApplesDateComponents.month
+
+                case .day:
+                    result.year = ApplesDateComponents.day
+
+                case .weekday:
+                    result.year = ApplesDateComponents.weekday
 
                 default:
                     debugPrint(#file, #function, component)
@@ -528,7 +551,7 @@
 //            }
         } // for component in components
         return result
-    }
+    } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
         // TODO:  FIX THIS TO HANDLE DIFFERENT TIME SYSTEMS

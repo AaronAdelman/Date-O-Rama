@@ -37,9 +37,9 @@ struct ASAMiniClockView:  View {
                 let degrees = totalHours * degreesPerHour + 180.0
                 ASASolarTimeView(degrees: degrees, dimension: 56.0, font: .body)
             } else {
-                let hour: Int = processedRow.hour!
-                let minute: Int = processedRow.minute!
-                let second: Int = processedRow.second!
+                let hour: Int = processedRow.hour ?? 0
+                let minute: Int = processedRow.minute ?? 0
+                let second: Int = processedRow.second ?? 0
                 Watch(hour:  hour, minute:  minute, second:  second, isNight:  nightTime(hour:  hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
             }
         }

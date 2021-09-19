@@ -100,9 +100,6 @@ class ASAAppleCalendar:  ASACalendar {
             
         case .shortYearAndMonthOnly:
             self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
-
-//        default:
-//            self.dateFormatter.dateStyle = .full
         } // switch dateFormat
         
         return self.dateFormatter.string(from: now)
