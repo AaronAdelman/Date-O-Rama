@@ -78,8 +78,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         formatter.locale = Locale(identifier: localeIdentifier)
         var components = ASADateComponents(calendar: self, locationData: locationData)
-        components.year       = 0
-        components.month      = 0
+//        components.year       = 0
+//        components.month      = 0
 
         if self.supportsTimes {
             let (JulianDate, day,
@@ -172,7 +172,6 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full
     ]
-
     
     var supportedTimeFormats: Array<ASATimeFormat> = [.medium]
     
@@ -201,9 +200,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             || dateComponents.nanosecond != nil {
             return false
         }
-        
-        // TODO:  Add something to handle fractional days!
-        
+                
         if dateComponents.day != nil {
             return true
         } else {
@@ -212,13 +209,14 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func isValidDate(dateComponents: ASADateComponents) -> Bool
     
     func date(dateComponents: ASADateComponents) -> Date? {
-        let day = dateComponents.day
-        if day == nil {
+        guard let day = dateComponents.day else {
+            return nil
+        }
+        guard let fractionOfDay = dateComponents.fractionalHours else {
             return nil
         }
         
-        // TODO:  Add something to handle fractional days!
-        return Date.date(JulianDate: Double(dateComponents.day!), offsetFromJulianDay: self.offsetFromJulianDay)
+        return Date.date(JulianDate: Double(day) + fractionOfDay, offsetFromJulianDay: self.offsetFromJulianDay)
     } // func date(dateComponents: ASADateComponents) -> Date?
     
 
@@ -232,17 +230,17 @@ class ASAJulianDayCalendar:  ASACalendar {
         case .day:
             return components.day
 
-        case .hour:
-            return components.hour
-
-        case .minute:
-            return components.minute
-
-        case .second:
-            return components.second
-
-        case .nanosecond:
-            return components.nanosecond
+//        case .hour:
+//            return components.hour
+//
+//        case .minute:
+//            return components.minute
+//
+//        case .second:
+//            return components.second
+//
+//        case .nanosecond:
+//            return components.nanosecond
             
         case .fractionalHour:
             return Int(components.fractionOfDay)
@@ -260,26 +258,26 @@ class ASAJulianDayCalendar:  ASACalendar {
             case .day:
                 result.day = JDComponents.day
                 
-            case .hour:
-                result.hour = JDComponents.hour
-                
-            case .minute:
-                result.minute = JDComponents.minute
-                
-            case .second:
-                result.second = JDComponents.second
-                
-            case .nanosecond:
-                result.nanosecond = JDComponents.nanosecond
+//            case .hour:
+//                result.hour = JDComponents.hour
+//
+//            case .minute:
+//                result.minute = JDComponents.minute
+//
+//            case .second:
+//                result.second = JDComponents.second
+//
+//            case .nanosecond:
+//                result.nanosecond = JDComponents.nanosecond
                 
             case .fractionalHour:
                 result.fractionalHours = JDComponents.fractionOfDay
 
             default:
-//                debugPrint(#file, #function, component as Any)
-                result.month   = 0
-                result.year    = 0
-                result.weekday = 0
+                debugPrint(#file, #function, component as Any)
+//                result.month   = 0
+//                result.year    = 0
+//                result.weekday = 0
             } // switch component
         }
         return result
@@ -326,7 +324,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         case .fractionalHour:
             return true
                         
-        case .calendar, .timeZone:
+        case .calendar:
             return true
             
         default:
