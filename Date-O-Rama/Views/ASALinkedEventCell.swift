@@ -68,12 +68,22 @@ struct ASALinkedEventCell:  View {
             
             Spacer()
             
-            Button(action:  {
-                self.showingEventView = true
-            }, label:  {
-                let buttonFont: Font = compact ? Font.system(.body) : Font.system(.title2)
-                Image(systemName: "info.circle.fill") .font(buttonFont)
-            })
+//            Button(action:  {
+//                self.showingEventView = true
+//            }, label:  {
+//                let buttonFont: Font = compact ? Font.system(.body) : Font.system(.title2)
+//                Image(systemName: "info.circle.fill") .font(buttonFont)
+//            })
+            Menu {
+                Button(action: {
+                    showingEventView = true
+                }) {
+                    Label("Details…", systemImage: "info.circle.fill")
+                }
+                
+            } label: {
+                Image(systemName: "arrowtriangle.down.square")
+            }
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
                 ASAEventDetailView(event: event, row: primaryRow, action: $action)
                     .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
