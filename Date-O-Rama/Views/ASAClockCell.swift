@@ -26,47 +26,96 @@ struct ASAClockCell: View {
     var isForComplications:  Bool
     
     var indexIsOdd: Bool
-        
+    
+    @State var showingDetailView: Bool = false
+    
     var body: some View {
-        #if os(watchOS)
+#if os(watchOS)
         ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  isForComplications)
-        #else
+#else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
-            NavigationLink(
-                destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
-                    .onReceive(processedRow.row.objectWillChange) { _ in
-                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                        let userData = ASAUserData.shared
-                        userData.objectWillChange.send()
-                        userData.savePreferences(code: .complications)
-                    }
-            ) {
+            HStack {
+                
+                
+                //            NavigationLink(
+                //                destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
+                //                    .onReceive(processedRow.row.objectWillChange) { _ in
+                //                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                //                        let userData = ASAUserData.shared
+                //                        userData.objectWillChange.send()
+                //                        userData.savePreferences(code: .complications)
+                //                    }
+                //            ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
+                    .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
+                        ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
+                            .onReceive(processedRow.row.objectWillChange) { _ in
+                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                let userData = ASAUserData.shared
+                                userData.objectWillChange.send()
+                                userData.savePreferences(code: .complications)
+                            }
+                    })
+                
+                Spacer()
+                
+                Menu {
+                    Button(action: {
+                        showingDetailView = true
+                    }) {
+                        Label("Details…", systemImage: "info.circle.fill")
+                    }
+                    
+                } label: {
+                    Image(systemName: "arrowtriangle.down.square")
+                }
             }
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
-
-            NavigationLink(
-                destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                    .onReceive(processedRow.row.objectWillChange) { _ in
-                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                        let userData = ASAUserData.shared
-                        userData.objectWillChange.send()
-                        userData.savePreferences(code: .clocks)
-                    }
-            ) {
+            HStack {
+                //            NavigationLink(
+                //                destination: ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                //                    .onReceive(processedRow.row.objectWillChange) { _ in
+                //                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                //                        let userData = ASAUserData.shared
+                //                        userData.objectWillChange.send()
+                //                        userData.savePreferences(code: .clocks)
+                //                    }
+                //            ) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications)
                     .frame(minHeight:  MINIMUM_HEIGHT)
+                    .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
+                        ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                            .onReceive(processedRow.row.objectWillChange) { _ in
+                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                let userData = ASAUserData.shared
+                                userData.objectWillChange.send()
+                                userData.savePreferences(code: .clocks)
+                            }
+                    })
+                
+                Spacer()
+                
+                Menu {
+                    Button(action: {
+                        showingDetailView = true
+                    }) {
+                        Label("Details…", systemImage: "info.circle.fill")
+                    }
+                    
+                } label: {
+                    Image(systemName: "arrowtriangle.down.square")
+                }
             }
             .listRowBackground(backgroundColor
-                            .ignoresSafeArea(edges: .all)
+                                .ignoresSafeArea(edges: .all)
             )
         }
-        #endif
+#endif
     } // var body
 } // struct ASAClockCell
 
@@ -87,16 +136,16 @@ struct ASAClockCellBody:  View {
     
     var isForComplications:  Bool
     
-    #if os(watchOS)
+#if os(watchOS)
     let compact = true
-    #else
+#else
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
         get {
             return self.sizeClass == .compact
         } // get
     } // var compact
-    #endif
+#endif
     
     fileprivate func shouldShowMiniClock() -> Bool {
         return !compact && shouldShowTime && processedRow.hasValidTime
@@ -117,11 +166,11 @@ struct ASAClockCellBody:  View {
                 
                 if canSplitTimeFromDate {
                     if shouldShowFormattedDate {
-                        #if os(watchOS)
+#if os(watchOS)
                         let LINE_LIMIT = 1
-                        #else
+#else
                         let LINE_LIMIT = 2
-                        #endif
+#endif
                         ASAClockCellText(string:  processedRow.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                     }
                     if shouldShowTime {
@@ -151,13 +200,13 @@ struct ASAClockCellBody:  View {
                 )
             } // VStack
             
-            #if os(watchOS)
+#if os(watchOS)
             if processedRow.events.count > 0 {
                 NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
                     ASACompactForwardChevronSymbol()
                 }
             }
-            #else
+#else
             if processedRow.supportsTimes {
                 if processedRow.supportsMonths && shouldShowMiniCalendar {
                     Spacer()
@@ -171,7 +220,7 @@ struct ASAClockCellBody:  View {
                     ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
                 }
             }
-            #endif
+#endif
         } // HStack
     } // var body
 } // struct ASAClockCellBody
@@ -186,13 +235,13 @@ struct ASAClockEventsSubcell: View {
     @State var eventVisibility: ASAClockCellEventVisibility = .next
     
     var indexIsOdd: Bool
-
+    
     var body: some View {
-        #if os(watchOS)
+#if os(watchOS)
         EmptyView()
-        #else
+#else
         let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
-
+        
         let numberOfEvents = processedRow.events.count
         let formatString : String = NSLocalizedString("n events today", comment: "")
         let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
@@ -207,17 +256,17 @@ struct ASAClockEventsSubcell: View {
                 } // HStack
             }
             .listRowBackground(backgroundColor
-                            .ignoresSafeArea(edges: .all)
+                                .ignoresSafeArea(edges: .all)
             )
             let VERTICAL_INSET: CGFloat   = 0.0
             let HORIZONTAL_INSET: CGFloat = 8.0
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
                 .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
                 .listRowBackground(backgroundColor
-                                .ignoresSafeArea(edges: .all)
+                                    .ignoresSafeArea(edges: .all)
                 )
         }
-        #endif
+#endif
     } // var body
 } // struct ASAClockEventsSubcell
 
