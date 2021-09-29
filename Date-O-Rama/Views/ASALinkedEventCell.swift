@@ -82,7 +82,7 @@ struct ASALinkedEventCell:  View {
                 }
                 
             } label: {
-                Image(systemName: "arrowtriangle.down.square")
+                Image(systemName: "arrowtriangle.down")
             }
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
                 ASAEventDetailView(event: event, row: primaryRow, action: $action)
