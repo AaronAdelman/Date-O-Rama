@@ -11,8 +11,8 @@ import SwiftUI
 
 // MARK: - Cells
 
-//fileprivate let MINIMUM_CELL_DIMENSION: CGFloat = 17.0
-fileprivate let MINIMUM_SCALE_FACTOR: CGFloat   =  0.6
+fileprivate let MINIMUM_CELL_DIMENSION: CGFloat = 17.0
+fileprivate let MINIMUM_SCALE_FACTOR: CGFloat   =  0.9
 fileprivate let CELL_FONT: Font = .caption2
 
 
@@ -44,7 +44,7 @@ struct ASAOrdinaryCell:  View {
             .padding(1.0)
             .foregroundColor(shouldNoteAsWeekend ? .secondary : .primary)
             .lineLimit(1)
-//            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
+            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
     } // var body
 } // struct ASAOrdinaryCell
@@ -73,7 +73,7 @@ struct ASAAccentedCell:  View {
                 .padding(1.0)
                 .foregroundColor(.white)
                 .lineLimit(1)
-//                .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
+                .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
                 .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
         } // ZStack
     } // var body

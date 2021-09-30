@@ -41,72 +41,12 @@ struct ASAClockCell: View {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, showingDetailView: $showingDetailView)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
-//                    .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-//                        ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
-//                            .onReceive(processedRow.row.objectWillChange) { _ in
-//                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-//                                let userData = ASAUserData.shared
-//                                userData.objectWillChange.send()
-//                                userData.savePreferences(code: .complications)
-//                            }
-//                    })
-                
-//                Spacer()
-//
-//                Menu {
-//                    Button(action: {
-//                        showingDetailView = true
-//                    }) {
-//                        Label("Details…", systemImage: "info.circle.fill")
-//                    }
-//                } label: {
-//                    Image(systemName: "arrowtriangle.down.fill")
-//                        .imageScale(.large)
-//                }
             }
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
                 ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, showingDetailView: $showingDetailView)
                     .frame(minHeight:  MINIMUM_HEIGHT)
-//                    .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-//                        ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-//                            .onReceive(processedRow.row.objectWillChange) { _ in
-//                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-//                                let userData = ASAUserData.shared
-//                                userData.objectWillChange.send()
-//                                userData.savePreferences(code: .clocks)
-//                            }
-//                    })
-                
-//                Spacer()
-//
-//                Menu {
-//                    Button(action: {
-//                        showingDetailView = true
-//                    }) {
-//                        Label("Details…", systemImage: "arrowtriangle.down")
-//                            .imageScale(.large)
-//                    }
-//
-//                    let numberOfEvents = processedRow.events.count
-//                    if numberOfEvents > 0 {
-//                        Divider()
-//
-//                        ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
-//                            visibility
-//                            in
-//                            Button(action: {
-//                                eventVisibility = visibility
-//                            }) {
-//                                Label(visibility.showingText, systemImage: visibility == eventVisibility ? "checkmark" : "")
-//                            }
-//                        } // ForEach
-//                    }
-//                } label: {
-//                    Image(systemName: "arrowtriangle.down.fill")
-//                        .imageScale(.large)
-//                }
             }
             .listRowBackground(backgroundColor
                                 .ignoresSafeArea(edges: .all)
@@ -211,6 +151,7 @@ struct ASAClockCellBody:  View {
                 if processedRow.supportsTimes {
                     if processedRow.supportsMonths && shouldShowMiniCalendar {
                         Spacer()
+
                         ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier,
                                             weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols, weekendDays: processedRow.weekendDays,
                                             numberFormat: processedRow.miniCalendarNumberFormat)
@@ -218,6 +159,7 @@ struct ASAClockCellBody:  View {
                     
                     if shouldShowMiniClock() {
                         Spacer()
+
                         ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
                     }
                 }
