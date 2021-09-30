@@ -12,7 +12,7 @@ import SwiftUI
 // MARK: - Cells
 
 fileprivate let MINIMUM_CELL_DIMENSION: CGFloat = 17.0
-fileprivate let MINIMUM_SCALE_FACTOR: CGFloat   =  0.9
+fileprivate let MINIMUM_SCALE_FACTOR: CGFloat   =  0.7
 fileprivate let CELL_FONT: Font = .caption2
 
 
@@ -86,11 +86,12 @@ struct ASAWeekdayCell:  View {
     var body: some View {
         Text(symbol)
             .font(CELL_FONT)
-            .fontWeight(.black)
+            .fontWeight(.bold)
             .padding(1.0)
             .foregroundColor(isWeekend ? .secondary : .primary)
             .lineLimit(1)
             .minimumScaleFactor(MINIMUM_SCALE_FACTOR)
+            .frame(minWidth:  MINIMUM_CELL_DIMENSION, minHeight: MINIMUM_CELL_DIMENSION)
     } // var body
 } // struct ASAWeekdayCell
 
