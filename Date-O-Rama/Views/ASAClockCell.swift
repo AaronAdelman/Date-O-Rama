@@ -233,7 +233,6 @@ struct ASAClockCellBody:  View {
                         }
                     } label: {
                         Image(systemName: "arrowtriangle.down.fill")
-                            .font(.largeTitle)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
@@ -250,8 +249,7 @@ struct ASAClockCellBody:  View {
                             showingDetailView = true
                         }) {
                             Label("Details…", systemImage: "info.circle.fill")
-                                .font(.largeTitle)
-                        }
+                            }
                         
                         let numberOfEvents = processedRow.events.count
                         if numberOfEvents > 0 {
@@ -269,7 +267,6 @@ struct ASAClockCellBody:  View {
                         }
                     } label: {
                         Image(systemName: "arrowtriangle.down.fill")
-                            .font(.largeTitle)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
