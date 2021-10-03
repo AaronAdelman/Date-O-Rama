@@ -1,0 +1,13 @@
+{
+    "titles": {"en": "Christianity (supplemental)"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        {"titles": {"en": "National Love People Day"}, "start": {"type": "1Day", "month": 9, "day": 30}, "first": {"type": "1Day", "year": 2017}, "emoji": "❤️", "urls": {"en": "https://nationaldaycalendar.com/national-love-people-day-september-30/"}},
+        {"titles": {"en": "Christmas Seal Campaign"}, "start": {"type": "multiDay", "month": 10, "day": 1}, "end": {"type": "1Day", "month": 12, "day": 31}, "emoji": "🎅", "urls": {"en": "https://nationaldaycalendar.com/christmas-seal-campaign-october/"}},
+        {"titles": {"en": "Church Library Month"}, "start": {"type": "1Month", "month": 10}, "emoji": "📚", "urls": {"en": "https://nationaldaycalendar.com/church-library-month-october/"}},
+        {"titles": {"en": "Church Safety and Security Month"}, "start": {"type": "1Month", "month": 10}, "emoji": "🧯🔒", "urls": {"en": "https://nationaldaycalendar.com/church-safety-and-security-month-october/"}},
+    ]
+}
