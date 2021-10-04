@@ -209,6 +209,8 @@
 		A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BFC5B6246B29600075AF58 /* ASAEvent.swift */; };
 		A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */; };
 		A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */; };
+		A59FB18D270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
+		A59FB18E270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A5A3D5FE267226D000C1BE65 /* ASAEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */; };
 		A5A3D5FF267226D000C1BE65 /* ASAEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
@@ -554,6 +556,7 @@
 		A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKCalendarExtensions.swift; sourceTree = "<group>"; };
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
 		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
+		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
 		A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCategory.swift; sourceTree = "<group>"; };
 		A5A9666225A31DA200CF158F /* ASADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePicker.swift; sourceTree = "<group>"; };
 		A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALinkedEventCell.swift; sourceTree = "<group>"; };
@@ -770,6 +773,7 @@
 				A536399F26EF7A000083C571 /* Christianity (Gregorian).json */,
 				A5BC61452709B11800888611 /* Christianity (supplemental).json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
+				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */,
 				A5BDE77B26677E7900F47416 /* Islamic awareness.json */,
@@ -1308,6 +1312,7 @@
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
+				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
 				A5BB4BE626D79A6D0054D841 /* Venus.json in Resources */,
 				A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */,
 				A54539E426A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
@@ -1386,6 +1391,7 @@
 				A5BB4BF426D7ACD00054D841 /* Neptune.json in Resources */,
 				A5BDE77C26677E7900F47416 /* Islamic awareness.json in Resources */,
 				A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */,
+				A59FB18D270B783E0044B530 /* Interfaith.json in Resources */,
 				A5BDE78526678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5BDE7A32667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
 				A533798124B2333500340C0B /* Sun.json in Resources */,
