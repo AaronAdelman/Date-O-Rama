@@ -151,7 +151,7 @@ struct ASAClockCellBody:  View {
                 if processedRow.supportsTimes {
                     if processedRow.supportsMonths && shouldShowMiniCalendar {
                         Spacer()
-
+                        
                         ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier,
                                             weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols, weekendDays: processedRow.weekendDays,
                                             numberFormat: processedRow.miniCalendarNumberFormat)
@@ -159,7 +159,7 @@ struct ASAClockCellBody:  View {
                     
                     if shouldShowMiniClock() {
                         Spacer()
-
+                        
                         ASAMiniClockView(processedRow:  processedRow, numberFormatter: numberFormatter())
                     }
                 }
@@ -174,7 +174,7 @@ struct ASAClockCellBody:  View {
                             Label("Details…", systemImage: "info.circle.fill")
                         }
                     } label: {
-                        Image(systemName: "arrowtriangle.down.fill")
+                        Image(systemName: "arrowtriangle.down.circle.fill")
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
@@ -191,7 +191,7 @@ struct ASAClockCellBody:  View {
                             showingDetailView = true
                         }) {
                             Label("Details…", systemImage: "info.circle.fill")
-                            }
+                        }
                         
                         let numberOfEvents = processedRow.events.count
                         if numberOfEvents > 0 {
@@ -208,7 +208,7 @@ struct ASAClockCellBody:  View {
                             } // ForEach
                         }
                     } label: {
-                        Image(systemName: "arrowtriangle.down.fill")
+                        Image(systemName: "arrowtriangle.down.circle.fill")
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
@@ -242,37 +242,37 @@ struct ASAClockEventsSubcell: View {
     @State private var showingEvents:  Bool = true
     @Binding var eventVisibility: ASAClockCellEventVisibility
     
-//    var indexIsOdd: Bool
+    //    var indexIsOdd: Bool
     
     var body: some View {
 #if os(watchOS)
         EmptyView()
 #else
-//        let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
+        //        let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
         
         let numberOfEvents = processedRow.events.count
-//        let formatString : String = NSLocalizedString("n events today", comment: "")
-//        let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
+        let formatString : String = NSLocalizedString("n events today", comment: "")
+        let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
         if numberOfEvents > 0 {
-//            NavigationLink(destination:             ASAClockCellEventVisibilityChooserView(selectedVisibility: $eventVisibility)) {
-//                HStack {
-//                    Image(systemName: "rectangle.stack")
-//                    Text(numberOfEventsString)
-//                    Spacer()
-//                    Image(systemName: eventVisibility.symbolName)
-//                    Text(eventVisibility.showingText)
-//                } // HStack
-//            }
-//            .listRowBackground(backgroundColor
-//                                .ignoresSafeArea(edges: .all)
-//            )
+            //            NavigationLink(destination:             ASAClockCellEventVisibilityChooserView(selectedVisibility: $eventVisibility)) {
+            HStack {
+                Image(systemName: "rectangle.stack")
+                Text(numberOfEventsString)
+                Spacer()
+                Image(systemName: eventVisibility.symbolName)
+                Text(eventVisibility.showingText)
+            } // HStack
+            //            }
+            //            .listRowBackground(backgroundColor
+            //                                .ignoresSafeArea(edges: .all)
+            //            )
             let VERTICAL_INSET: CGFloat   = 0.0
             let HORIZONTAL_INSET: CGFloat = 8.0
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
                 .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
-//                .listRowBackground(backgroundColor
-//                                    .ignoresSafeArea(edges: .all)
-//                )
+            //                .listRowBackground(backgroundColor
+            //                                    .ignoresSafeArea(edges: .all)
+            //                )
         }
 #endif
     } // var body
