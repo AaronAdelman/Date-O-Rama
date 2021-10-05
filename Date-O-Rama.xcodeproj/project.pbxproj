@@ -359,6 +359,8 @@
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
+		A5FA5A6A270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
+		A5FA5A6B270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		E43BF56F4156A9DE51890D8A /* Pods_Date_O_Rama_Date_O_RamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5404EBF68E036742DA31B7 /* Pods_Date_O_Rama_Date_O_RamaUITests.framework */; };
@@ -662,6 +664,7 @@
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
+		A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellAllDayEventVisibility.swift; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
 		B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.release.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2A7FB74C22622E280B15A95 /* Pods-WatchDate-O-Rama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama.release.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama/Pods-WatchDate-O-Rama.release.xcconfig"; sourceTree = "<group>"; };
@@ -1039,6 +1042,7 @@
 				A5C77C362433383D00CFEE47 /* ✨Date-O-Rama✨.entitlements */,
 				A5980BBF25B8BB5400A07DBC /* About */,
 				A5C77BFC2433361400CFEE47 /* AppDelegate.swift */,
+				A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */,
 				A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */,
 				A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */,
 				A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */,
@@ -1626,6 +1630,7 @@
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
 				A5DC8769264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
+				A5FA5A6B270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */,
 				A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */,
 				A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
@@ -1694,6 +1699,7 @@
 				A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */,
 				A5B8163E2541A37500E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */,
+				A5FA5A6A270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASARow.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,

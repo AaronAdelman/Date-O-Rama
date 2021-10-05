@@ -348,6 +348,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode)
 
     public func savePreferences(code:  ASAPreferencesFileCode) {
+        self.objectWillChange.send()
+        
         if code == .clocks {
             let processedMainRows = self.processedRowArray(rowArray: self.mainRows, forComplication: false)
 

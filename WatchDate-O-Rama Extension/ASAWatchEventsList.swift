@@ -10,13 +10,14 @@ import SwiftUI
 
 struct ASAWatchEventsList: View {
     var processedRow:  ASAProcessedRow
-    @State var shouldShowEvents:  ASAClockCellEventVisibility = .next
+    @State var eventVisibility:  ASAClockCellEventVisibility = .next
+    @State var allDayEventVisibility: ASAClockCellAllDayEventVisibility = .oneDay
     @State var now:  Date
 
     var body: some View {
         List {
-            Picker(selection: $shouldShowEvents, label: Text("Show Events")) {
-                ForEach(ASAClockCellEventVisibility.watchCases, id: \.self) {
+            Picker(selection: $eventVisibility, label: Text("Show Events")) {
+                ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
                     possibility
                     in
                     HStack {
@@ -25,8 +26,20 @@ struct ASAWatchEventsList: View {
                     } // HStack
                 } // ForEach
             }
+            
+            Picker(selection: $allDayEventVisibility, label: Text("Show All-Day Events")) {
+                ForEach(ASAClockCellAllDayEventVisibility.allCases, id: \.self) {
+                    possibility
+                    in
+                    HStack {
+//                        Image(systemName: possibility.symbolName)
+                        Text(possibility.showingText)
+                    } // HStack
+                } // ForEach
+            }
 
-            ASAClockEventsForEach(processedRow: processedRow, visibility: shouldShowEvents, now: $now)
+
+            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, allDayEventVisibility: allDayEventVisibility, now: $now)
         } // List
     } // var body
 } // struct ASAWatchEventsList

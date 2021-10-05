@@ -149,9 +149,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         } // didset
     } // var iCalendarEventCalendars
     
-    @Published var eventVisibility: ASAClockCellEventVisibility = .next
-    
-    
+
     // MARK:  -
 
     func handleLocationDataChanged() {

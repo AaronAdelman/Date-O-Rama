@@ -28,24 +28,25 @@ struct ASAClockCell: View {
     var indexIsOdd: Bool
     
     @State var showingDetailView: Bool = false
-    @State var eventVisibility: ASAClockCellEventVisibility = .next
+    @State var eventVisibility: ASAClockCellEventVisibility = .defaultValue
+    @State var allDayEventVisibility: ASAClockCellAllDayEventVisibility = .defaultValue
     
     var body: some View {
 #if os(watchOS)
-        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, showingDetailView: $showingDetailView)
+        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, showingDetailView: $showingDetailView)
+                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
             }
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, showingDetailView: $showingDetailView)
+                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
             .listRowBackground(backgroundColor
@@ -74,6 +75,8 @@ struct ASAClockCellBody:  View {
     var isForComplications:  Bool
     
     @Binding var eventVisibility: ASAClockCellEventVisibility
+    @Binding var allDayEventVisibility: ASAClockCellAllDayEventVisibility
+
     @Binding var showingDetailView: Bool
     
 #if os(watchOS)
@@ -143,17 +146,17 @@ struct ASAClockCellBody:  View {
                     #if os(watchOS)
                     #else
                     let numberOfEvents = processedRow.events.count
-                    let formatString : String = NSLocalizedString("n events today", comment: "")
-                    let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
                     if numberOfEvents > 0 {
                         let SMALL_FONT: Font = .callout
+                        let numberOfAllDayEvents = processedRow.events.filter {
+                            $0.isAllDay
+                        }.count
+                        let numberOfNonAllDayEvents: Int = numberOfEvents - numberOfAllDayEvents
                         HStack {
-                            Image(systemName: "rectangle.stack")
-                            Text(numberOfEventsString).font(SMALL_FONT)
-                        } // HStack
-                        HStack {
-                            Image(systemName: eventVisibility.symbolName)
-                            Text(eventVisibility.showingText).font(SMALL_FONT)
+                            Image(systemName: "calendar")
+                            Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
+                            Image(systemName: "rectangle")
+                            Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
                         } // HStack
                     }
                     #endif
@@ -191,7 +194,7 @@ struct ASAClockCellBody:  View {
                         Button(action: {
                             showingDetailView = true
                         }) {
-                            Label("Details…", systemImage: "info.circle.fill")
+                            ASAClockMenuDetailLabel()
                         }
                     } label: {
                         Image(systemName: ARROW_SYMBOL_NAME)
@@ -200,9 +203,7 @@ struct ASAClockCellBody:  View {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
                             .onReceive(processedRow.row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                let userData = ASAUserData.shared
-                                userData.objectWillChange.send()
-                                userData.savePreferences(code: .complications)
+                                ASAUserData.shared.savePreferences(code: .complications)
                             }
                     })
                 } else {
@@ -210,22 +211,18 @@ struct ASAClockCellBody:  View {
                         Button(action: {
                             showingDetailView = true
                         }) {
-                            Label("Details…", systemImage: "info.circle.fill")
+                            ASAClockMenuDetailLabel()
                         }
                         
                         let numberOfEvents = processedRow.events.count
                         if numberOfEvents > 0 {
                             Divider()
                             
-                            ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
-                                visibility
-                                in
-                                Button(action: {
-                                    eventVisibility = visibility
-                                }) {
-                                    Label(visibility.showingText, systemImage: visibility == eventVisibility ? "checkmark" : "")
-                                }
-                            } // ForEach
+                            ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
+
+                            Divider()
+                            
+                            ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
                         }
                     } label: {
                         Image(systemName: ARROW_SYMBOL_NAME)
@@ -234,9 +231,7 @@ struct ASAClockCellBody:  View {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
                             .onReceive(processedRow.row.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                let userData = ASAUserData.shared
-                                userData.objectWillChange.send()
-                                userData.savePreferences(code: .clocks)
+                                ASAUserData.shared.savePreferences(code: .clocks)
                             }
                     })
                 }
@@ -245,11 +240,60 @@ struct ASAClockCellBody:  View {
             
 #if os(watchOS)
 #else
-            ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: $eventVisibility)
+            ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
 #endif
         } // VStack
     } // var body
 } // struct ASAClockCellBody
+
+
+struct ASAClockEventVisibilityForEach: View {
+    @Binding var eventVisibility: ASAClockCellEventVisibility
+    
+    var body: some View {
+        ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+            visibility
+            in
+            Button(action: {
+                eventVisibility = visibility
+            }) {
+                ASAClockMenuVisibilityLabel(text: visibility.showingText, shouldShowCheckmark: visibility == eventVisibility)
+            }
+        } // ForEach
+    }
+}
+
+struct ASAClockAllDayEventVisibilityForEach: View {
+    @Binding var eventVisibility: ASAClockCellAllDayEventVisibility
+    
+    var body: some View {
+        ForEach(ASAClockCellAllDayEventVisibility.allCases, id: \.self) {
+            visibility
+            in
+            Button(action: {
+                eventVisibility = visibility
+            }) {
+                ASAClockMenuVisibilityLabel(text: visibility.showingText, shouldShowCheckmark: visibility == eventVisibility)
+            }
+        } // ForEach
+    }
+}
+
+
+struct ASAClockMenuDetailLabel: View {
+    var body: some View {
+        Label("Details…", systemImage: "info.circle.fill")
+    }
+}
+
+struct ASAClockMenuVisibilityLabel: View {
+    var text: String
+    var shouldShowCheckmark: Bool
+    
+    var body: some View {
+        Label(text, systemImage: shouldShowCheckmark ? "checkmark" : "")
+    }
+}
 
 
 // MARK:  -
@@ -259,25 +303,17 @@ struct ASAClockEventsSubcell: View {
     @Binding var now:  Date
     @State private var showingEvents:  Bool = true
     @Binding var eventVisibility: ASAClockCellEventVisibility
+    @Binding var allDayEventVisibility: ASAClockCellAllDayEventVisibility
     
     var body: some View {
 #if os(watchOS)
         EmptyView()
 #else
         let numberOfEvents = processedRow.events.count
-//        let formatString : String = NSLocalizedString("n events today", comment: "")
-//        let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
         if numberOfEvents > 0 {
-//            HStack {
-//                Image(systemName: "rectangle.stack")
-//                Text(numberOfEventsString)
-//                Spacer()
-//                Image(systemName: eventVisibility.symbolName)
-//                Text(eventVisibility.showingText)
-//            } // HStack
             let VERTICAL_INSET: CGFloat   = 0.0
             let HORIZONTAL_INSET: CGFloat = 8.0
-            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
+            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, allDayEventVisibility: allDayEventVisibility, now: $now)
                 .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
         }
 #endif
@@ -290,13 +326,14 @@ struct ASAClockEventsSubcell: View {
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedRow
     var visibility:  ASAClockCellEventVisibility
+    var allDayEventVisibility: ASAClockCellAllDayEventVisibility
     @Binding var now:  Date
     
     static let genericRow = ASARow.generic
     
     var body: some View {
         let events:  Array<ASAEventCompatible> = {
-            return processedRow.events.forVisibility(self.visibility, now: now)
+            return processedRow.events.trimmed(visibility: self.visibility, allDayEventVisibility: self.allDayEventVisibility, now: now)
         }()
         
         ForEach(events, id: \.eventIdentifier) {
