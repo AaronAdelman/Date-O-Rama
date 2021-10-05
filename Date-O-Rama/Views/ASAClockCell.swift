@@ -139,6 +139,24 @@ struct ASAClockCellBody:  View {
                     
                     ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
                     )
+                    
+                    #if os(watchOS)
+                    #else
+                    let numberOfEvents = processedRow.events.count
+                    let formatString : String = NSLocalizedString("n events today", comment: "")
+                    let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
+                    if numberOfEvents > 0 {
+                        let SMALL_FONT: Font = .callout
+                        HStack {
+                            Image(systemName: "rectangle.stack")
+                            Text(numberOfEventsString).font(SMALL_FONT)
+                        } // HStack
+                        HStack {
+                            Image(systemName: eventVisibility.symbolName)
+                            Text(eventVisibility.showingText).font(SMALL_FONT)
+                        } // HStack
+                    }
+                    #endif
                 } // VStack
                 
 #if os(watchOS)
@@ -227,9 +245,7 @@ struct ASAClockCellBody:  View {
             
 #if os(watchOS)
 #else
-            ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: $eventVisibility
-                                  //                                  , indexIsOdd: false
-            )
+            ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: $eventVisibility)
 #endif
         } // VStack
     } // var body
@@ -244,37 +260,25 @@ struct ASAClockEventsSubcell: View {
     @State private var showingEvents:  Bool = true
     @Binding var eventVisibility: ASAClockCellEventVisibility
     
-    //    var indexIsOdd: Bool
-    
     var body: some View {
 #if os(watchOS)
         EmptyView()
 #else
-        //        let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
-        
         let numberOfEvents = processedRow.events.count
-        let formatString : String = NSLocalizedString("n events today", comment: "")
-        let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
+//        let formatString : String = NSLocalizedString("n events today", comment: "")
+//        let numberOfEventsString: String =  String.localizedStringWithFormat(formatString, numberOfEvents)
         if numberOfEvents > 0 {
-            //            NavigationLink(destination:             ASAClockCellEventVisibilityChooserView(selectedVisibility: $eventVisibility)) {
-            HStack {
-                Image(systemName: "rectangle.stack")
-                Text(numberOfEventsString)
-                Spacer()
-                Image(systemName: eventVisibility.symbolName)
-                Text(eventVisibility.showingText)
-            } // HStack
-            //            }
-            //            .listRowBackground(backgroundColor
-            //                                .ignoresSafeArea(edges: .all)
-            //            )
+//            HStack {
+//                Image(systemName: "rectangle.stack")
+//                Text(numberOfEventsString)
+//                Spacer()
+//                Image(systemName: eventVisibility.symbolName)
+//                Text(eventVisibility.showingText)
+//            } // HStack
             let VERTICAL_INSET: CGFloat   = 0.0
             let HORIZONTAL_INSET: CGFloat = 8.0
             ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, now: $now)
                 .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
-            //                .listRowBackground(backgroundColor
-            //                                    .ignoresSafeArea(edges: .all)
-            //                )
         }
 #endif
     } // var body
