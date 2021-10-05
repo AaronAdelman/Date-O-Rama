@@ -166,6 +166,8 @@ struct ASAClockCellBody:  View {
                 
                 Spacer()
                 
+                let ARROW_SYMBOL_NAME = "arrow.down.circle.fill"
+                
                 if isForComplications {
                     Menu {
                         Button(action: {
@@ -174,7 +176,7 @@ struct ASAClockCellBody:  View {
                             Label("Details…", systemImage: "info.circle.fill")
                         }
                     } label: {
-                        Image(systemName: "arrowtriangle.down.circle.fill")
+                        Image(systemName: ARROW_SYMBOL_NAME)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
@@ -208,7 +210,7 @@ struct ASAClockCellBody:  View {
                             } // ForEach
                         }
                     } label: {
-                        Image(systemName: "arrowtriangle.down.circle.fill")
+                        Image(systemName: ARROW_SYMBOL_NAME)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
