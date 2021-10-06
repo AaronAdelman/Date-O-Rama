@@ -71,7 +71,7 @@ struct ASAProcessedRow {
         #endif
         self.supportsLocations = row.calendar.supportsLocations
         if self.supportsLocations {
-            self.flagEmojiString = (row.locationData.ISOCountryCode ?? "").flag
+            self.flagEmojiString = (row.locationData.regionCode ?? "").flag
             self.usesDeviceLocation = row.usesDeviceLocation
             var locationString = ""
             if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
@@ -132,7 +132,7 @@ struct ASAProcessedRow {
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
         self.weekendDays = row.weekendDays
-        self.regionCode = row.locationData.ISOCountryCode
+        self.regionCode = row.locationData.regionCode
         self.miniCalendarNumberFormat = row.miniCalendarNumberFormat
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedRow

@@ -15,7 +15,7 @@ struct ASALocation:  Equatable, Identifiable {
     var name:  String?
     var locality:  String?
     var country:  String?
-    var ISOCountryCode:  String?
+    var regionCode:  String?
     
     var postalCode: String?
     var administrativeArea: String?
@@ -75,7 +75,7 @@ extension ASALocation {
             }
         }
         
-        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, ISOCountryCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
+        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, regionCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocation
@@ -142,7 +142,7 @@ extension ASALocation {
 
 extension ASALocation {
     static var NullIsland:  ASALocation {
-        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, ISOCountryCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
+        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
     } // static var NullIsland
 } // extension ASALocation
 
@@ -220,7 +220,7 @@ extension ASALocation {
             let latitude: CLLocationDegrees = entry!.latitude
             let longitude: CLLocationDegrees = entry!.longitude
 
-            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, ISOCountryCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
+            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, regionCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
 
             // Store result in cache
             ASALocation.cachedCurrentTimeZoneDefaultIdentifier = currentTimeZoneIdentifier

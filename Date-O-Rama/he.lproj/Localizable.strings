@@ -280,3 +280,9 @@
 "ASAClockCellAllDayEventVisibility.oneMonthOrLess" = "חודש 1 או פחות";
 "ASAClockCellAllDayEventVisibility.oneYearOrLess"  = "שנה 1 או פחות";
 "ASAClockCellAllDayEventVisibility.all"            = "הכול";
+"Showing ASAClockCellAllDayEventVisibility.none"           = "מראה אין";
+"Showing ASAClockCellAllDayEventVisibility.oneDay"         = "מראה יום 1";
+"Showing ASAClockCellAllDayEventVisibility.oneWeekOrLess"  = "מראה שבוע 1 או פחות";
+"Showing ASAClockCellAllDayEventVisibility.oneMonthOrLess" = "מראה חודש 1 או פחות";
+"Showing ASAClockCellAllDayEventVisibility.oneYearOrLess"  = "מראה שנה 1 או פחות";
+"Showing ASAClockCellAllDayEventVisibility.all"            = "מראה הכול";

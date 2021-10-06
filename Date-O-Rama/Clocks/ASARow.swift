@@ -206,8 +206,8 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         if self.locationData.country != nil {
             result[COUNTRY_KEY] = self.locationData.country
         }
-        if self.locationData.ISOCountryCode != nil {
-            result[ISO_COUNTRY_CODE_KEY] = self.locationData.ISOCountryCode
+        if self.locationData.regionCode != nil {
+            result[ISO_COUNTRY_CODE_KEY] = self.locationData.regionCode
         }
         
         if self.locationData.postalCode != nil {
@@ -322,7 +322,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
 
-        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, ISOCountryCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
+        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
         newRow.locationData = newLocationData
 
         newRow.startingUp = false
@@ -346,7 +346,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
         }
 
         for eventCalendar in self.builtInEventCalendars {
-            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: Locale.current.identifier), calendarTitleWithoutLocation: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier), regionCode: self.locationData.ISOCountryCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
+            let currentLocaleIdentifier: String = Locale.current.identifier
+            let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
+            let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
+            let regionCode = self.locationData.regionCode
+            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
         } // for eventCalendar in self.builtInEventCalendars
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -375,7 +379,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
     
     // MARK:  - Workdays and weekends
     var weekendDays: Array<Int> {
-        return self.calendar.weekendDays(for: self.locationData.ISOCountryCode)
+        return self.calendar.weekendDays(for: self.locationData.regionCode)
     }
 //    var workDays: Array<Int> {
 //        return self.calendar.workDays
@@ -486,7 +490,7 @@ extension ASARow {
 
 extension ASARow {
     public func countryCodeEmoji(date:  Date) -> String {
-        let regionCode: String = self.locationData.ISOCountryCode ?? ""
+        let regionCode: String = self.locationData.regionCode ?? ""
         let result: String = regionCode.flag
 //        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
         return result
