@@ -13,55 +13,57 @@ import EventKit
 struct ASAClockDetailView: View {
     @ObservedObject var selectedRow:  ASARow
     var now:  Date
-
+    
     var shouldShowTime:  Bool
-
+    
     @EnvironmentObject var userData:  ASAUserData
-
+    
     @State private var showingActionSheet = false
-
+    
     @Environment(\.presentationMode) var presentationMode
-
+    
     var deleteable:  Bool
-
+    
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
-
+    
     var forAppleWatch:  Bool
     
     var body: some View {
-        List {
-            ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
-
-            if deleteable {
-                Section(header:  Text("")){
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            self.showingActionSheet = true
-                        }) {
-                            Text("Delete This Clock").foregroundColor(Color.red).frame(alignment: .center)
+        NavigationView {
+            List {
+                ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
+                
+                if deleteable {
+                    Section(header:  Text("")){
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                self.showingActionSheet = true
+                            }) {
+                                Text("Delete This Clock").foregroundColor(Color.red).frame(alignment: .center)
+                            }
+                            Spacer()
+                        } // HStack
+                        .actionSheet(isPresented: self.$showingActionSheet) {
+                            ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
+                                .destructive(Text("Delete This Clock")) {
+                                    let index = self.userData.mainRows.firstIndex(where: {$0.uuid == selectedRow.uuid})
+                                    if index != nil {
+                                        self.userData.mainRows.remove(at: index!)
+                                        self.userData.savePreferences(code: .clocks)
+                                        self.dismiss()
+                                    }
+                                },
+                                .cancel()
+                            ])
                         }
-                        Spacer()
-                    } // HStack
-                    .actionSheet(isPresented: self.$showingActionSheet) {
-                        ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
-                            .destructive(Text("Delete This Clock")) {
-                                let index = self.userData.mainRows.firstIndex(where: {$0.uuid == selectedRow.uuid})
-                                if index != nil {
-                                    self.userData.mainRows.remove(at: index!)
-                                    self.userData.savePreferences(code: .clocks)
-                                    self.dismiss()
-                                }
-                            },
-                            .cancel()
-                        ])
-                    }
-                } // Section
+                    } // Section
+                }
             }
         }
-//        .navigationBarTitle(Text(selectedRow.dateString(now: self.now)))
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 } // struct ASAClockDetailView
 
