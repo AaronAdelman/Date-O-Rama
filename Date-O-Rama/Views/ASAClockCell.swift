@@ -76,7 +76,7 @@ struct ASAClockCellBody:  View {
     
     @Binding var eventVisibility: ASAClockCellEventVisibility
     @Binding var allDayEventVisibility: ASAClockCellAllDayEventVisibility
-
+    
     @Binding var showingDetailView: Bool
     
 #if os(watchOS)
@@ -143,23 +143,25 @@ struct ASAClockCellBody:  View {
                     ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
                     )
                     
-                    #if os(watchOS)
-                    #else
-                    let numberOfEvents = processedRow.events.count
-                    if numberOfEvents > 0 {
-                        let SMALL_FONT: Font = .callout
-                        let numberOfAllDayEvents = processedRow.events.filter {
-                            $0.isAllDay
-                        }.count
-                        let numberOfNonAllDayEvents: Int = numberOfEvents - numberOfAllDayEvents
-                        HStack {
-                            Image(systemName: "calendar")
-                            Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
-                            Image(systemName: "rectangle")
-                            Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
-                        } // HStack
+#if os(watchOS)
+#else
+                    if !isForComplications {
+                        let numberOfEvents = processedRow.events.count
+                        if numberOfEvents > 0 {
+                            let SMALL_FONT: Font = .callout
+                            let numberOfAllDayEvents = processedRow.events.filter {
+                                $0.isAllDay
+                            }.count
+                            let numberOfNonAllDayEvents: Int = numberOfEvents - numberOfAllDayEvents
+                            HStack {
+                                Image(systemName: "calendar")
+                                Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
+                                Image(systemName: "rectangle")
+                                Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
+                            } // HStack
+                        }
                     }
-                    #endif
+#endif
                 } // VStack
                 
 #if os(watchOS)
@@ -219,7 +221,7 @@ struct ASAClockCellBody:  View {
                             Divider()
                             
                             ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
-
+                            
                             Divider()
                             
                             ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
@@ -240,7 +242,9 @@ struct ASAClockCellBody:  View {
             
 #if os(watchOS)
 #else
-            ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+            if !isForComplications {
+                ASAClockEventsSubcell(processedRow: processedRow, now: $now, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+            }
 #endif
         } // VStack
     } // var body
