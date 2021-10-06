@@ -56,7 +56,7 @@ struct ASAProcessedRow {
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
 
-    init(row:  ASARow, now:  Date) {
+    init(row:  ASARow, now:  Date, isForComplications: Bool) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = row.dateStringTimeStringDateComponents(now: now)
@@ -128,7 +128,7 @@ struct ASAProcessedRow {
 
         let startOfDay: Date = row.startOfDay(date: now)
         let startOfNextDay: Date   = row.startOfNextDay(date: now)
-        self.events     = row.events(startDate: startOfDay, endDate: startOfNextDay)
+        self.events = isForComplications ? [] : row.events(startDate: startOfDay, endDate: startOfNextDay)
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
         self.weekendDays = row.weekendDays
@@ -185,7 +185,7 @@ extension Array where Element == ASARow {
         var result:  Array<ASAProcessedRow> = []
 
         for row in self {
-            let processedRow = ASAProcessedRow(row: row, now: now)
+            let processedRow = ASAProcessedRow(row: row, now: now, isForComplications: false)
             result.append(processedRow)
         }
 
