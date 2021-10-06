@@ -50,6 +50,25 @@ enum ASAClockCellAllDayEventVisibility: Int, CaseIterable {
             raw = "Showing ASAClockCellAllDayEventVisibility.all"
         } // switch self
         return NSLocalizedString(raw, comment: "")
+    } // var showingText
+    
+    var text: String {
+        var raw: String
+        switch self {
+        case .none:
+            raw = "ASAClockCellAllDayEventVisibility.none"
+        case .oneDay:
+            raw = "ASAClockCellAllDayEventVisibility.oneDay"
+        case .oneWeekOrLess:
+            raw = "ASAClockCellAllDayEventVisibility.oneWeekOrLess"
+        case .oneMonthOrLess:
+            raw = "ASAClockCellAllDayEventVisibility.oneMonthOrLess"
+        case .oneYearOrLess:
+            raw = "ASAClockCellAllDayEventVisibility.oneYearOrLess"
+        case .all:
+            raw = "ASAClockCellAllDayEventVisibility.all"
+        } // switch self
+        return NSLocalizedString(raw, comment: "")
     } // var text
     
     static var defaultValue = ASAClockCellAllDayEventVisibility.oneWeekOrLess

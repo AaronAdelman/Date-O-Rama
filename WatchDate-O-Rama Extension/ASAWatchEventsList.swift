@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ASAWatchEventsList: View {
     var processedRow:  ASAProcessedRow
-    @State var eventVisibility:  ASAClockCellEventVisibility = .next
-    @State var allDayEventVisibility: ASAClockCellAllDayEventVisibility = .oneDay
+    @State var eventVisibility:  ASAClockCellEventVisibility = .defaultValue
+    @State var allDayEventVisibility: ASAClockCellAllDayEventVisibility = .defaultValue
     @State var now:  Date
 
     var body: some View {
@@ -33,7 +33,7 @@ struct ASAWatchEventsList: View {
                     in
                     HStack {
 //                        Image(systemName: possibility.symbolName)
-                        Text(possibility.showingText)
+                        Text(possibility.text)
                     } // HStack
                 } // ForEach
             }

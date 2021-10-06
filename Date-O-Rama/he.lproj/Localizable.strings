@@ -274,9 +274,9 @@
 "Spring ahead" = "תחילת שעון קיץ";
 "Fall back"    = "תחילת שעון חורף";
 "Details…" = "פרטים…";
-"Showing ASAClockCellAllDayEventVisibility.none"           = "לא מראה אירועי יום שלם";
-"Showing ASAClockCellAllDayEventVisibility.oneDay"         = "מראה אירועי יום שלם של יום אחד";
-"Showing ASAClockCellAllDayEventVisibility.oneWeekOrLess"  = "מראה אירועי יום שלם של שבוע או פחות";
-"Showing ASAClockCellAllDayEventVisibility.oneMonthOrLess" = "מראה אירועי יום שלם של חודש או פחות";
-"Showing ASAClockCellAllDayEventVisibility.oneYearOrLess"  = "מראה אירועי יום שלם של שנה או פחות";
-"Showing ASAClockCellAllDayEventVisibility.all"            = "מראה כל אירועי יום שלם ";
+"ASAClockCellAllDayEventVisibility.none"           = "אין";
+"ASAClockCellAllDayEventVisibility.oneDay"         = "יום 1";
+"ASAClockCellAllDayEventVisibility.oneWeekOrLess"  = "שבוע 1 או פחות";
+"ASAClockCellAllDayEventVisibility.oneMonthOrLess" = "חודש 1 או פחות";
+"ASAClockCellAllDayEventVisibility.oneYearOrLess"  = "שנה 1 או פחות";
+"ASAClockCellAllDayEventVisibility.all"            = "הכול";
