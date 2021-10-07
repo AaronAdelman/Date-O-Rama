@@ -393,7 +393,7 @@ class ASAEventCalendar {
         }
     }
     
-    fileprivate func matchMultiYear(_ endDateSpecification: ASADateSpecification?, _ components: ASADateComponents, _ startDateSpecification: ASADateSpecification, _ tweakedStartDateSpecification: inout ASADateSpecification, _ calendar: ASACalendar, _ date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchMultiYear(_ endDateSpecification: ASADateSpecification?, _ components: ASADateComponents, _ startDateSpecification: ASADateSpecification, _ calendar: ASACalendar, _ date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         assert(endDateSpecification != nil)
         
         let dateEY: Array<Int?>      = components.EY
@@ -407,7 +407,7 @@ class ASAEventCalendar {
         
         let (filledInStartDateEY, filledInEndDateEY) = dateEY.fillInFor(start: startDateEY, end: endDateEY)
         
-        tweakedStartDateSpecification = startDateSpecification.fillIn(EY: filledInStartDateEY)
+        let tweakedStartDateSpecification = startDateSpecification.fillIn(EY: filledInStartDateEY)
         
         let tweakedEndDateSpecification = endDateSpecification!.fillIn(EY: filledInEndDateEY)
         
@@ -429,7 +429,7 @@ class ASAEventCalendar {
         }
     }
     
-    fileprivate func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents, _ tweakedStartDateSpecification: inout ASADateSpecification) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         assert(endDateSpecification != nil)
         
         if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
@@ -447,14 +447,14 @@ class ASAEventCalendar {
         
         let (filledInStartDateEYM, filledInEndDateEYM) = dateEYM.fillInFor(start: startDateEYM, end: endDateEYM)
         
-        tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
+        let tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
         
         let tweakedEndDateSpecification = endDateSpecification!.fillIn(EYM: filledInEndDateEYM)
         
         let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
         let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
         return (true, startDate, endDate)
-    } // func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents, _ tweakedStartDateSpecification: inout ASADateSpecification) -> (matches: Bool, startDate: Date?, endDate: Date?)
+    } // func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         var forGregorianCalendar: Bool
@@ -578,7 +578,7 @@ class ASAEventCalendar {
         
         // Multi-year events
         if startDateSpecificationType == .multiYear {
-            return matchMultiYear(endDateSpecification, components, startDateSpecification, &tweakedStartDateSpecification, calendar, date)
+            return matchMultiYear(endDateSpecification, components, startDateSpecification, calendar, date)
         }
         
         // One-month events
@@ -588,7 +588,7 @@ class ASAEventCalendar {
         
         // Multi-month events
         if startDateSpecificationType == .multiMonth {
-            return matchMultiMonth(endDateSpecification, date, calendar, locationData, startDateSpecification, components, &tweakedStartDateSpecification)
+            return matchMultiMonth(endDateSpecification, date, calendar, locationData, startDateSpecification, components)
         }
         
         // Easter and related events
