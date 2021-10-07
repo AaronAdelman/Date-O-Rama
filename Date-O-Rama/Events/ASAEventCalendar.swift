@@ -381,8 +381,7 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    fileprivate func matchOneYear(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
-        assert(endDateSpecification == nil)
+    fileprivate func matchOneYear(_ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
         if matches {
             let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
@@ -416,9 +415,7 @@ class ASAEventCalendar {
         return (true, startDate, endDate)
     }
     
-    fileprivate func matchOneMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
-        assert(endDateSpecification == nil)
-        
+    fileprivate func matchOneMonth(_ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
         if matches {
             let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
@@ -573,7 +570,8 @@ class ASAEventCalendar {
         
         // One-year events
         if startDateSpecificationType == .oneYear {
-            return matchOneYear(endDateSpecification, date, calendar, locationData, tweakedStartDateSpecification, components)
+            assert(endDateSpecification == nil)
+            return matchOneYear(date, calendar, locationData, tweakedStartDateSpecification, components)
         }
         
         // Multi-year events
@@ -583,7 +581,8 @@ class ASAEventCalendar {
         
         // One-month events
         if startDateSpecificationType == .oneMonth {
-            return matchOneMonth(endDateSpecification, date, calendar, locationData, tweakedStartDateSpecification, components)
+            assert(endDateSpecification == nil)
+            return matchOneMonth(date, calendar, locationData, tweakedStartDateSpecification, components)
         }
         
         // Multi-month events
@@ -600,11 +599,8 @@ class ASAEventCalendar {
         if endDateSpecification == nil {
             // One-day and one-instant events
             assert(endDateSpecification?.type != .multiDay)
-            //            let matches = self.matchOneDay(date: date, calendar: calendar, locationData: locationData, dateSpecification: tweakedStartDateSpecification, components: components)
             
-            if
-                //                matches &&
-                tweakedStartDateSpecification.type == .IslamicPrayerTime {
+            if tweakedStartDateSpecification.type == .IslamicPrayerTime {
                 if tweakedStartDateSpecification.event == nil {
                     // Major error!
                     debugPrint(#file, #function, "Missing Islamic prayer event!")
@@ -612,14 +608,11 @@ class ASAEventCalendar {
                 }
                 let events = date.prayerTimesSunsetTransition(latitude: locationData.location.coordinate.latitude, longitude: locationData.location.coordinate.longitude, calcMethod: tweakedStartDateSpecification.calculationMethod ?? .Jafari, asrJuristic: tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii, dhuhrMinutes: tweakedStartDateSpecification.dhuhrMinutes ?? 0.0, adjustHighLats: tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight, events: [tweakedStartDateSpecification.event!])
                 let startDate = events![tweakedStartDateSpecification.event!]
-                //                return (matches, startDate, startDate)
                 return (true, startDate, startDate)
             } else {
                 if startDateSpecification.type == .oneDay {
-                    //                    return (matches, startOfDay, startOfNextDay)
                     return (true, startOfDay, startOfNextDay)
                 }
-                //                return (matches, nil, nil)
                 return (true, nil, nil)
             }
         }
