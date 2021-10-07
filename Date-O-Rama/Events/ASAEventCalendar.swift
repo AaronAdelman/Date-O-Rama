@@ -596,28 +596,35 @@ class ASAEventCalendar {
            return matchEaster(date: date, calendar: calendar, startDateSpecification: tweakedStartDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         }
         
-        if endDateSpecification == nil {
-            // One-day and one-instant events
+        // Islamic prayer times
+        if startDateSpecificationType == .IslamicPrayerTime {
+            if tweakedStartDateSpecification.event == nil {
+                // Major error!
+                debugPrint(#file, #function, "Missing Islamic prayer event!")
+                return MATCH_FAILURE
+            }
+            let events = date.prayerTimesSunsetTransition(latitude: locationData.location.coordinate.latitude, longitude: locationData.location.coordinate.longitude, calcMethod: tweakedStartDateSpecification.calculationMethod ?? .Jafari, asrJuristic: tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii, dhuhrMinutes: tweakedStartDateSpecification.dhuhrMinutes ?? 0.0, adjustHighLats: tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight, events: [tweakedStartDateSpecification.event!])
+            let startDate = events![tweakedStartDateSpecification.event!]
+            return (true, startDate, startDate)
+        }
+        
+        // One-day events
+        if startDateSpecificationType == .oneDay {
+            return (true, startOfDay, startOfNextDay)
+        }
+
+        // One-instant events
+        if startDateSpecificationType == .degreesBelowHorizon
+            || startDateSpecificationType == .solarTimeSunriseSunset
+            || startDateSpecificationType == .solarTimeDawn72MinutesDusk72Minutes
+            || startDateSpecificationType == .fixedTime {
             assert(endDateSpecification?.type != .multiDay)
             
-            if tweakedStartDateSpecification.type == .IslamicPrayerTime {
-                if tweakedStartDateSpecification.event == nil {
-                    // Major error!
-                    debugPrint(#file, #function, "Missing Islamic prayer event!")
-                    return MATCH_FAILURE
-                }
-                let events = date.prayerTimesSunsetTransition(latitude: locationData.location.coordinate.latitude, longitude: locationData.location.coordinate.longitude, calcMethod: tweakedStartDateSpecification.calculationMethod ?? .Jafari, asrJuristic: tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii, dhuhrMinutes: tweakedStartDateSpecification.dhuhrMinutes ?? 0.0, adjustHighLats: tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight, events: [tweakedStartDateSpecification.event!])
-                let startDate = events![tweakedStartDateSpecification.event!]
-                return (true, startDate, startDate)
-            } else {
-                if startDateSpecification.type == .oneDay {
-                    return (true, startOfDay, startOfNextDay)
-                }
-                return (true, nil, nil)
-            }
+            return (true, nil, nil)
         }
         
         // Now we are clearly dealing with an event with specified start and end dates
+        assert(startDateSpecificationType == .multiDay)
         let dateEYMD: Array<Int?>      = components.EYMD
         let startDateEYMD: Array<Int?> = startDateSpecification.EYMD
         let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD
