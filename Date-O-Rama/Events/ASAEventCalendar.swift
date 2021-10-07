@@ -381,7 +381,7 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    fileprivate func matchOneYear(_ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchOneYear(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
         if matches {
             let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
@@ -392,7 +392,7 @@ class ASAEventCalendar {
         }
     }
     
-    fileprivate func matchMultiYear(_ endDateSpecification: ASADateSpecification?, _ components: ASADateComponents, _ startDateSpecification: ASADateSpecification, _ calendar: ASACalendar, _ date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchMultiYear(endDateSpecification: ASADateSpecification?, components: ASADateComponents, startDateSpecification: ASADateSpecification, calendar: ASACalendar, date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         assert(endDateSpecification != nil)
         
         let dateEY: Array<Int?>      = components.EY
@@ -415,7 +415,7 @@ class ASAEventCalendar {
         return (true, startDate, endDate)
     }
     
-    fileprivate func matchOneMonth(_ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ tweakedStartDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchOneMonth(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
         if matches {
             let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
@@ -426,7 +426,7 @@ class ASAEventCalendar {
         }
     }
     
-    fileprivate func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchMultiMonth(endDateSpecification: ASADateSpecification?, date: Date, calendar: ASACalendar, locationData: ASALocation, startDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         assert(endDateSpecification != nil)
         
         if !matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: startDateSpecification, components: components) {
@@ -524,7 +524,7 @@ class ASAEventCalendar {
         return (true, startDate, startDate)
     }
     
-    fileprivate func matchMultiDay(_ components: ASADateComponents, _ startDateSpecification: ASADateSpecification, _ endDateSpecification: ASADateSpecification?, _ calendar: ASACalendar, _ date: Date, _ locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?, calendar: ASACalendar, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let dateEYMD: Array<Int?>      = components.EYMD
         let startDateEYMD: Array<Int?> = startDateSpecification.EYMD
         let endDateEYMD: Array<Int?>   = endDateSpecification!.EYMD
@@ -587,7 +587,7 @@ class ASAEventCalendar {
     }
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        var tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
+        let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
         
         // Check whether the event is before the first occurrence
         if firstDateSpecification != nil {
@@ -611,25 +611,25 @@ class ASAEventCalendar {
         switch startDateSpecificationType {
         case .multiYear:
             // Multi-year events
-            return matchMultiYear(endDateSpecification, components, startDateSpecification, calendar, date)
+            return matchMultiYear(endDateSpecification: endDateSpecification, components: components, startDateSpecification: startDateSpecification, calendar: calendar, date: date)
 
         case .oneYear:
             // One-year events
             assert(endDateSpecification == nil)
-            return matchOneYear(date, calendar, locationData, tweakedStartDateSpecification, components)
+            return matchOneYear(date: date, calendar: calendar, locationData: locationData, tweakedStartDateSpecification: tweakedStartDateSpecification, components: components)
             
         case .multiMonth:
             // Multi-month events
-            return matchMultiMonth(endDateSpecification, date, calendar, locationData, startDateSpecification, components)
+            return matchMultiMonth(endDateSpecification: endDateSpecification, date: date, calendar: calendar, locationData: locationData, startDateSpecification: startDateSpecification, components: components)
             
         case .oneMonth:
             // One-month events
             assert(endDateSpecification == nil)
-            return matchOneMonth(date, calendar, locationData, tweakedStartDateSpecification, components)
+            return matchOneMonth(date: date, calendar: calendar, locationData: locationData, tweakedStartDateSpecification: tweakedStartDateSpecification, components: components)
 
         case .multiDay:
             // Multi-day events
-            return matchMultiDay(components, startDateSpecification, endDateSpecification, calendar, date, locationData)
+            return matchMultiDay(components: components, startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification, calendar: calendar, date: date, locationData: locationData)
             
         case .oneDay:
             // One-day events
@@ -651,6 +651,7 @@ class ASAEventCalendar {
             return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
 
         case .IslamicPrayerTime:
+            // Islamic prayer times
             return matchIslamicPrayerTime(tweakedStartDateSpecification, date, locationData)
             
         case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
