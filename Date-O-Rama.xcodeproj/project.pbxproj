@@ -18,6 +18,8 @@
 		A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
 		A506E3DF252C93DF009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
 		A506E3E5252C9405009345A0 /* ASAProcessedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */; };
+		A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
+		A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
 		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -469,6 +471,7 @@
 		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedRow.swift; sourceTree = "<group>"; };
+		A507B0AE270ECCCF00BDAE06 /* Mormonism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mormonism.json; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
 		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
@@ -792,6 +795,7 @@
 				A5BB4BE726D79AFD0054D841 /* Mars.json */,
 				A5BB4BE126D799580054D841 /* Mercury.json */,
 				A5EE117726C573900050495C /* Moon.json */,
+				A507B0AE270ECCCF00BDAE06 /* Mormonism.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5BB4BF326D7ACD00054D841 /* Neptune.json */,
 				A5BB4BED26D7AB780054D841 /* Saturn.json */,
@@ -1315,6 +1319,7 @@
 				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
+				A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
 				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
 				A5BB4BE626D79A6D0054D841 /* Venus.json in Resources */,
@@ -1371,6 +1376,7 @@
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
 				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
+				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */,
 				A5BB4BEB26D7AA9E0054D841 /* Jupiter.json in Resources */,
 				A5BB4BEE26D7AB780054D841 /* Saturn.json in Resources */,

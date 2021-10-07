@@ -11,5 +11,8 @@
         {"titles": {"en": "Church Safety and Security Month"}, "start": {"type": "1Month", "month": 10}, "emoji": "🧯🔒", "urls": {"en": "https://nationaldaycalendar.com/church-safety-and-security-month-october/"}},
         {"titles": {"en": "World Communion Sunday"}, "start": {"type": "1Day", "month": 10, "weekdays": [1], "weekdayRecurrence": 1}, "first": {"type": "1Day", "era": 1, "year": 1933}, "urls": {"en": "https://nationaldaycalendar.com/world-communion-sunday-first-sunday-in-october/"}},
         {"titles": {"en": "Bring Your Bible to School Day"}, "start": {"type": "1Day", "month": 10, "weekdays": [5], "weekdayRecurrence": 1}, "first": {"type": "1Day", "era": 1, "year": 2014}, "urls": {"en": "https://www.daysoftheyear.com/days/bring-bible-school-day/"}, "emoji": "📖"},
+        {"titles": {"en": "Christmas Card Day"}, "start": {"type": "1Day", "month": 12, "day": 9}, "urls": {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
+        {"titles": {"en": "Genealogy Day"}, "start": {"type": "1Day", "month": 3, "weekdays": [7], "weekdayRecurrence": 2}, "first": {"type": "1Day", "era": 1, "year": 2013}, "urls": {"en": "https://www.daysoftheyear.com/days/genealogy-day/"}, "emoji": "👨‍👩‍👧‍👦"},
+        {"titles": {"en": "Global Forgiveness Day"}, "start": {"type": "1Day", "month": 7, "day": 7}, "urls": {"en": "https://www.daysoftheyear.com/days/forgiveness-day/"}, "first": {"type": "1Day", "era": 1, "year": 1994}},
     ]
 }
