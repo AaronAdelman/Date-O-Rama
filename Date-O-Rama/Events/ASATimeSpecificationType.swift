@@ -58,19 +58,19 @@ extension ASATimeSpecificationType {
     
     var isOneCalendarDay: Bool {
         switch self {
-        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
-            return false
         case .oneDay, .firstFullMoonDay, .secondFullMoonDay, .Easter:
             return true
+        default:
+            return false
         } // switch self
     } // var isOneCalendarDay
     
     var isLessThanOneCalendarDay: Bool {
         switch self {
-        case .multiYear, .oneYear, .multiMonth, .oneMonth,  .multiDay, .oneDay, .Easter:
-            return false
-        case .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .firstFullMoonDay, .secondFullMoonDay, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
+        case .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
             return true
+        default:
+            return false
         } // switch self
     } // var isLessThanOneCalendarDay
 } // extension ASATimeSpecificationType
