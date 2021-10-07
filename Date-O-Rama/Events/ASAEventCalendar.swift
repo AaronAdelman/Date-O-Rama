@@ -512,17 +512,22 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
-    fileprivate func matchIslamicPrayerTime(_ tweakedStartDateSpecification: ASADateSpecification, _ date: Date, _ locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
-        // Islamic prayer times
-        if tweakedStartDateSpecification.event == nil {
+    fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+        guard let event = tweakedStartDateSpecification.event else {
             // Major error!
             debugPrint(#file, #function, "Missing Islamic prayer event!")
             return MATCH_FAILURE
         }
-        let events = date.prayerTimesSunsetTransition(latitude: locationData.location.coordinate.latitude, longitude: locationData.location.coordinate.longitude, calcMethod: tweakedStartDateSpecification.calculationMethod ?? .Jafari, asrJuristic: tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii, dhuhrMinutes: tweakedStartDateSpecification.dhuhrMinutes ?? 0.0, adjustHighLats: tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight, events: [tweakedStartDateSpecification.event!])
-        let startDate = events![tweakedStartDateSpecification.event!]
+        let latitude: CLLocationDegrees = locationData.location.coordinate.latitude
+        let longitude: CLLocationDegrees = locationData.location.coordinate.longitude
+        let calcMethod: ASACalculationMethod = tweakedStartDateSpecification.calculationMethod ?? .Jafari
+        let asrJuristic: ASAJuristicMethodForAsr = tweakedStartDateSpecification.asrJuristicMethod ?? .Shafii
+        let dhuhrMinutes: Double = tweakedStartDateSpecification.dhuhrMinutes ?? 0.0
+        let adjustHighLats: ASAAdjustingMethodForHigherLatitudes = tweakedStartDateSpecification.adjustingMethodForHigherLatitudes ?? .midnight
+        let events = date.prayerTimesSunsetTransition(latitude: latitude, longitude: longitude, calcMethod: calcMethod, asrJuristic: asrJuristic, dhuhrMinutes: dhuhrMinutes, adjustHighLats: adjustHighLats, events: [event])
+        let startDate = events![event]
         return (true, startDate, startDate)
-    }
+    } // func matchIslamicPrayerTime(_ tweakedStartDateSpecification: ASADateSpecification, _ date: Date, _ locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?, calendar: ASACalendar, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let dateEYMD: Array<Int?>      = components.EYMD
@@ -584,7 +589,7 @@ class ASAEventCalendar {
         }
         
         return (true, eventStartDate, eventEndDate)
-    }
+    } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?, calendar: ASACalendar, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
@@ -652,7 +657,7 @@ class ASAEventCalendar {
 
         case .IslamicPrayerTime:
             // Islamic prayer times
-            return matchIslamicPrayerTime(tweakedStartDateSpecification, date, locationData)
+            return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
             
         case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
             // Moon phases
