@@ -17,7 +17,7 @@ struct ASANewExternalEventButton: View {
     @State private var showingEventEditView = false
 
     var body: some View {
-        #if targetEnvironment(macCatalyst)
+//        #if targetEnvironment(macCatalyst)
         Button(action:
                 {
                     self.showingEventEditView = true
@@ -27,15 +27,14 @@ struct ASANewExternalEventButton: View {
             .sheet(isPresented:  $showingEventEditView) {
                 NavigationView {
                     ASANewEKEventView(startDate: now, endDate: now)
-//                        .frame(minWidth:  400.0, minHeight:  600.0)
                 }
             }
-        #else
-        NavigationLink(destination: ASANewEKEventView(startDate: now, endDate: now)) {
-            ASANewExternalEventButtonLabel()
-                .foregroundColor(.accentColor)
-        }
-        #endif
+//        #else
+//        NavigationLink(destination: ASANewEKEventView(startDate: now, endDate: now)) {
+//            ASANewExternalEventButtonLabel()
+//                .foregroundColor(.accentColor)
+//        }
+//        #endif
     }
 }
 
