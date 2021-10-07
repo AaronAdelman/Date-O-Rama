@@ -61,7 +61,8 @@ struct ASAClockDetailView: View {
                         }
                     } // Section
                 }
-            }
+            } // List
+            .navigationTitle("Clock Details")
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
