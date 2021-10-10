@@ -14,5 +14,7 @@
         {"titles": {"en": "Christmas Card Day"}, "start": {"type": "1Day", "month": 12, "day": 9}, "urls": {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
         {"titles": {"en": "Genealogy Day"}, "start": {"type": "1Day", "month": 3, "weekdays": [7], "weekdayRecurrence": 2}, "first": {"type": "1Day", "era": 1, "year": 2013}, "urls": {"en": "https://www.daysoftheyear.com/days/genealogy-day/"}, "emoji": "👨‍👩‍👧‍👦"},
         {"titles": {"en": "Global Forgiveness Day"}, "start": {"type": "1Day", "month": 7, "day": 7}, "urls": {"en": "https://www.daysoftheyear.com/days/forgiveness-day/"}, "first": {"type": "1Day", "era": 1, "year": 1994}},
+        {"titles": {"en": "Clergy Appreciation Month"}, "start": {"type": "1Month", "month": 10}, "urls": {"en": "https://corporate.hallmark.com/holidays-occasions/clergy-appreciation-month/"}, "emoji": "👩‍💼👨‍💼", "first": {"type": "1Day", "era": 1, "year": 2002}},
+        {"titles": {"en": "Clergy Appreciation Day"}, "start": {"type": "1Day", "month": 10, "weekdays": [1], "weekdayRecurrence": 2}, "first": {"type": "1Day", "era": 1, "year": 1992}, "urls": {"en": "https://nationaldaycalendar.com/clergy-appreciation-day-second-sunday-in-october/"}, "emoji": "👩‍💼👨‍💼"},
     ]
 }

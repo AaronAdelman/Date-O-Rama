@@ -345,11 +345,11 @@ class ASARow: NSObject, ObservableObject, Identifiable {
             unsortedEvents = unsortedEvents + ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
         }
 
+        let currentLocaleIdentifier: String = Locale.current.identifier
+        let regionCode = self.locationData.regionCode
         for eventCalendar in self.builtInEventCalendars {
-            let currentLocaleIdentifier: String = Locale.current.identifier
             let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
-            let regionCode = self.locationData.regionCode
             unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
         } // for eventCalendar in self.builtInEventCalendars
 
@@ -362,6 +362,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
+        assert(events.count == unsortedEvents.count)
 
         self.eventCacheStartDate = startDate
         self.eventCacheEndDate   = endDate
