@@ -61,6 +61,20 @@ enum ASACalendarCode:  String, Codable {
 } // enum ASACalendarCode:  String
 
 
+extension ASACalendarCode {
+    /// An “abstract” calendar code represents a group of calendars, not an individual calendar which can be manifested.
+    var isAbstract: Bool {
+        switch self {
+        case .allEarth, .allHebrew, .allHebrewSolarTime, .allIslamic, .allIslamicSolarTime, .allGregorianMonthsWeeksDays, .allSupportingTimeZones, .allSupportingEarthLocations:
+            return true
+            
+        default:
+            return false
+        }
+    }
+}
+
+
 // MARK:  -
 
 enum ASACalendarType {

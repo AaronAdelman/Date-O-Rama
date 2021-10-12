@@ -12,6 +12,8 @@ import CoreLocation
 
 class ASACalendarFactory {
     class func calendar(code:  ASACalendarCode) -> ASACalendar? {
+        assert(!code.isAbstract)
+        
         if code.isAppleCalendar {
             return ASAAppleCalendar(calendarCode:  code)
 //        } else if code.isISO8601Calendar {
