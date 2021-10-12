@@ -1,0 +1,10 @@
+{
+    "titles": {"en": "Atheism", "he": "אתאיזם"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.95, "green": 0.87, "blue": 0.72},
+    "eventSpecifications": [
+        {"titles": {"en": "Freethought Day"}, "start": {"type": "1Day", "month": 10, "day": 12}, "first": {"type": "1Day", "era": 1, "year": 1997}, "urls": {"en": "https://nationaldaycalendar.com/national-freethought-day-october-12/"}},
+    ]
+}
