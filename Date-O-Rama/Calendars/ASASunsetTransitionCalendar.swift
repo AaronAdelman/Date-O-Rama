@@ -45,7 +45,7 @@
 
         let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
 
-        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.day, .weekday,
+        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.era, .year, .month, .day, .weekday,
 //                                                                                                           .hour, .minute, .second,
                                                                                                            .fractionalHour, .dayHalf], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
@@ -508,48 +508,14 @@
         var result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
         //                debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
         let timeComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
+        
+        if components.contains(.fractionalHour) {
+            result.fractionalHours = timeComponents.fractionalHour
+        }
+        if components.contains(.dayHalf) {
+            result.dayHalf = timeComponents.dayHalf
+        }
 
-        for component in components {
-//            if [ASACalendarComponent.hour, ASACalendarComponent.minute, ASACalendarComponent.second, ASACalendarComponent.nanosecond].contains(component) {
-                switch component {
-//                case .hour:
-//                    result.hour = timeComponents.hour
-//
-//                case .minute:
-//                    result.minute = timeComponents.minute
-//
-//                case .second:
-//                    result.second = timeComponents.second
-//
-//                case .nanosecond:
-//                    result.nanosecond = timeComponents.nanosecond
-                    
-                case .fractionalHour:
-                    result.fractionalHours = timeComponents.fractionalHour
-                    
-                case .dayHalf:
-                    result.dayHalf = timeComponents.dayHalf
-                    
-                case .era:
-                    result.era = ApplesDateComponents.era
-                    
-                case .year:
-                    result.year = ApplesDateComponents.year
-
-                case .month:
-                    result.year = ApplesDateComponents.month
-
-                case .day:
-                    result.year = ApplesDateComponents.day
-
-                case .weekday:
-                    result.year = ApplesDateComponents.weekday
-
-                default:
-                    debugPrint(#file, #function, component)
-                } // switch component
-//            }
-        } // for component in components
         return result
     } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
 
