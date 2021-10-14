@@ -133,12 +133,14 @@ extension Date {
         var result: (date:  Date, transition:  Date??)
         if sunset == nil {
             // Guarding against there being no Sunset
-            result = (self.sixPM(timeZone: timeZone), sunset)
+            let sixPM: Date = self.sixPM(timeZone: timeZone)
+            result = (sixPM, sixPM)
             assert(result.date >= self)
         } else if sunset! == nil {
             // Guarding against there being no Sunset
-            result = (self.sixPM(timeZone: timeZone), sunset)
-            if !(result.date >= self) {
+            let sixPM: Date = self.sixPM(timeZone: timeZone)
+            result = (sixPM, sixPM)
+            if self < sixPM {
 //                debugPrint(#file, #function, result, self)
                 result.date = self
             }

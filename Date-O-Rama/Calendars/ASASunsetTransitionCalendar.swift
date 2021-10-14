@@ -515,7 +515,6 @@
         if components.contains(.dayHalf) {
             result.dayHalf = timeComponents.dayHalf
         }
-
         return result
     } // func dateComponents(fixedDate: Date, transition: Date??, components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
 

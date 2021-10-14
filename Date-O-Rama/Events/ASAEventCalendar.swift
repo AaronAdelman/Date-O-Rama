@@ -803,32 +803,43 @@ class ASAEventCalendar {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
-        let previousDate = date.oneDayBefore
-        let previousEvents = previousDate.solarEvents(location: location, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
-        let previousSunset:  Date = previousEvents[.sunset]!! // שקיעה
-        let previousOtherDusk:  Date = previousEvents[.dusk72Minutes]!!
+        var previousSunset                     = date
+        var nightHourLength: TimeInterval      = 0
+        var sunrise                            = date
+        var hourLength: TimeInterval           = 0
+        var previousOtherDusk                  = date
+        var otherNightHourLength: TimeInterval = 0
+        var otherDawn                          = date
+        var otherHourLength: TimeInterval      = 0
         
-        let events = date.solarEvents(location: location, events: [.sunrise, .sunset, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
-        
-        // According to the גר״א
-        let sunrise:  Date = events[.sunrise]!! // נץ
-        let sunset:  Date = events[.sunset]!! // שקיעה
-        
-        let nightLength = sunrise.timeIntervalSince(previousSunset)
-        let nightHourLength = nightLength / 12.0
-        
-        let dayLength = sunset.timeIntervalSince(sunrise)
-        let hourLength = dayLength / 12.0
-        
-        // According to the מגן אברהם
-        let otherDawn = events[.dawn72Minutes]!! // עלות השחר
-        let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
-        
-        let otherNightLength = otherDawn.timeIntervalSince(previousOtherDusk)
-        let otherNightHourLength = otherNightLength / 12.0
-        
-        let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
-        let otherHourLength = otherDayLength / 12.0
+        if calendar.calendarCode.isSunsetTransitionCalendar {
+            let previousDate = date.oneDayBefore
+            let previousEvents = previousDate.solarEvents(location: location, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
+            previousSunset = previousEvents[.sunset]!! // שקיעה
+            previousOtherDusk = previousEvents[.dusk72Minutes]!!
+            
+            let events = date.solarEvents(location: location, events: [.sunrise, .sunset, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
+            
+            // According to the גר״א
+            sunrise = events[.sunrise]!! // נץ
+            let sunset:  Date = events[.sunset]!! // שקיעה
+            
+            let nightLength = sunrise.timeIntervalSince(previousSunset)
+            nightHourLength = nightLength / 12.0
+            
+            let dayLength = sunset.timeIntervalSince(sunrise)
+            hourLength = dayLength / 12.0
+            
+            // According to the מגן אברהם
+            otherDawn = events[.dawn72Minutes]!! // עלות השחר
+            let otherDusk = events[.dusk72Minutes]!! // צאת הכוכבים
+            
+            let otherNightLength = otherDawn.timeIntervalSince(previousOtherDusk)
+            otherNightHourLength = otherNightLength / 12.0
+            
+            let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
+            otherHourLength = otherDayLength / 12.0
+        }
         
         var result:  Array<ASAEvent> = []
         
