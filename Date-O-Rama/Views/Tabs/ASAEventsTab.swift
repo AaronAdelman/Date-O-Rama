@@ -161,7 +161,7 @@ struct ASAEventsTab: View {
                         } // ForEach
                     } // Section
                 } // List
-
+                Spacer()
             } // VStack
             .navigationBarHidden(self.isNavigationBarHidden)
             .navigationBarTitle("", displayMode: .inline)
