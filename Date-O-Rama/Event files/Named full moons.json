@@ -1,0 +1,23 @@
+{
+"titles": {"en": "Named full moons"},
+"supportedLocales": ["en"],
+"defaultLocale": "en",
+"calendarCode": "Gregorian",
+"calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+"emoji": "🌕",
+"eventSpecifications": [
+{"titles": {"en": "Blue Moon"}, "start": {"type": "2ndFullMoonDay"}, "emoji": "🔵"},
+{"titles": {"en": "Wolf Moon"}, "start": {"type": "1stFullMoonDay", "month": 1}, "emoji": "🐺"},
+{"titles": {"en": "Snow Moon"}, "start": {"type": "1stFullMoonDay", "month": 2}, "emoji": "❄️"},
+{"titles": {"en": "Worm Moon"}, "start": {"type": "1stFullMoonDay", "month": 3}, "emoji": "🪱"},
+{"titles": {"en": "Pink Moon"}, "start": {"type": "1stFullMoonDay", "month": 4}, "emoji": "🍬"},
+{"titles": {"en": "Flower Moon"}, "start": {"type": "1stFullMoonDay", "month": 5}, "emoji": "🌼"},
+{"titles": {"en": "Strawberry Moon"}, "start": {"type": "1stFullMoonDay", "month": 6}, "emoji": "🍓"},
+{"titles": {"en": "Buck Moon"}, "start": {"type": "1stFullMoonDay", "month": 7}, "emoji": "🦌"},
+{"titles": {"en": "Sturgeon Moon"}, "start": {"type": "1stFullMoonDay", "month": 8}, "emoji": "🐟"},
+{"titles": {"en": "Harvest Moon"}, "start": {"type": "1stFullMoonDay", "month": 9}, "emoji": "🌾"},
+{"titles": {"en": "Hunter’s Moon"}, "start": {"type": "1stFullMoonDay", "month": 10}, "emoji": "🏹"},
+{"titles": {"en": "Beaver Moon"}, "start": {"type": "1stFullMoonDay", "month": 11}, "emoji": "🦫"},
+{"titles": {"en": "Cold Moon"}, "start": {"type": "1stFullMoonDay", "month": 12}, "emoji": "🥶"},
+]
+}

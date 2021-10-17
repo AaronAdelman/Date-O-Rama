@@ -157,6 +157,8 @@
 		A57CA32F24864C3A00378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */; };
 		A5832B88254ED124008E8A97 /* ASAMiniCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */; };
+		A5837BE1271C139700047475 /* Named full moons.json in Resources */ = {isa = PBXBuildFile; fileRef = A5837BE0271C139700047475 /* Named full moons.json */; };
+		A5837BE2271C139700047475 /* Named full moons.json in Resources */ = {isa = PBXBuildFile; fileRef = A5837BE0271C139700047475 /* Named full moons.json */; };
 		A584C90024B646210014CE2E /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
 		A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
 		A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
@@ -552,6 +554,7 @@
 		A57F441C24BC5908005261EE /* ASADateComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateComponents.swift; sourceTree = "<group>"; };
 		A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarComponent.swift; sourceTree = "<group>"; };
 		A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMiniCalendarView.swift; sourceTree = "<group>"; };
+		A5837BE0271C139700047475 /* Named full moons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Named full moons.json"; sourceTree = "<group>"; };
 		A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Judaism (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (times).json"; sourceTree = "<group>"; };
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
@@ -800,6 +803,7 @@
 				A5BB4BE126D799580054D841 /* Mercury.json */,
 				A5EE117726C573900050495C /* Moon.json */,
 				A507B0AE270ECCCF00BDAE06 /* Mormonism.json */,
+				A5837BE0271C139700047475 /* Named full moons.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5BB4BF326D7ACD00054D841 /* Neptune.json */,
 				A5BB4BED26D7AB780054D841 /* Saturn.json */,
@@ -1348,6 +1352,7 @@
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5769955259EDCC000757B0F /* Judaism (times).json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
+				A5837BE2271C139700047475 /* Named full moons.json in Resources */,
 				A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
@@ -1372,6 +1377,7 @@
 				A56F0DA125F1705200301969 /* Jewish zodiac.json in Resources */,
 				A5C4DCB02694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5BDE78826679A6200F47416 /* Shia.json in Resources */,
+				A5837BE1271C139700047475 /* Named full moons.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
