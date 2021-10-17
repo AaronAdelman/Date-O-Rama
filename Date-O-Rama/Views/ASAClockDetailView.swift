@@ -214,16 +214,27 @@ struct ASABuiltInEventCalendarCell:  View {
 
     var body: some View {
         let eventCalendar = ASAEventCalendar(fileName: fileName)
+        let eventSpecifications = eventCalendar.eventsFile?.eventSpecifications ?? []
+        let defaultLocaleIdentifier = Locale.current.identifier
+        let eventsFileDefaultLocaleIdentifier = eventCalendar.eventsFile?.defaultLocale ?? defaultLocaleIdentifier
+        let eventTitles = eventSpecifications.map {
+            $0.eventTitle(requestedLocaleIdentifier: defaultLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier) ?? ""
+        }
+        let joinedEventTitles = ListFormatter.localizedString(byJoining: eventTitles)
 
-        HStack {
+        HStack(alignment: .top) {
             ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventCalendar.color)
-            VStack {
+            VStack(alignment: .leading) {
                 Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
                 if eventCalendar.error != nil {
                     Text(verbatim: eventCalendar.error!.localizedDescription)
                         .font(.headline)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.secondary)
                 }
+                Text(joinedEventTitles)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                    .lineLimit(10)
             } // VStack
             Spacer()
             
