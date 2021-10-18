@@ -66,7 +66,7 @@
         {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 22, "weekdays": [1]}},
         {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 23, "weekdays": [1]}},
         {"titles": {"en": "Fourth Sunday of Advent"}, "start": {"type": "1Day", "month": 12, "day": 24, "weekdays": [1]}},
-        {"titles": {"en": "Saint Nicholas Day"}, "start": {"type": "1Day", "month": 12, "day": 6}},
+        {"titles": {"en": "Saint Nicholas Day"}, "start": {"type": "1Day", "month": 12, "day": 6}, "urls": {"en": "https://www.daysoftheyear.com/days/st-nicholas-day/"}, "emoji": "🎅"},
         {"titles": {"en": "Feast of the Immaculate Conception"}, "start": {"type": "1Day", "month": 12, "day": 8}},
         {"titles": {"en": "Christmas Eve"}, "start": {"type": "1Day", "month": 12, "day": 24}},
         {"titles": {"en": "Christmas Day/Christmastide (day 1)"}, "start": {"type": "1Day", "month": 12, "day": 25}, "emoji": "🎄"},
