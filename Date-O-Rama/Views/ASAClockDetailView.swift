@@ -225,7 +225,8 @@ struct ASABuiltInEventCalendarCell:  View {
         HStack(alignment: .top) {
             ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventCalendar.color)
             VStack(alignment: .leading) {
-                Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier)).font(.headline)
+                Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier))
+                    .font(.headline)
                 if eventCalendar.error != nil {
                     Text(verbatim: eventCalendar.error!.localizedDescription)
                         .font(.headline)
@@ -235,6 +236,7 @@ struct ASABuiltInEventCalendarCell:  View {
                     .font(.caption2)
                     .foregroundColor(.secondary)
                     .lineLimit(10)
+                    .truncationMode(.tail)
             } // VStack
             Spacer()
             
