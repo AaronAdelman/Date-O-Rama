@@ -101,7 +101,7 @@ struct ASAClockCellBody:  View {
     } // func numberFormatter() -> NumberFormatter
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0.0) {
             HStack {
                 VStack(alignment: .leading) {
                     if shouldShowCalendar {
