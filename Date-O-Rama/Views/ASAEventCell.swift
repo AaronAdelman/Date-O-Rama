@@ -96,7 +96,6 @@ struct ASAEventCell:  View {
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3
-//                let TITLE_FONT: Font = self.compact ? .callout.bold() : .headline
                 
                 HStack(alignment: .top) {
                     if eventSymbol != nil {
@@ -109,8 +108,10 @@ struct ASAEventCell:  View {
                         .modifier(ASAScalable(lineLimit: LINE_LIMIT))
                 }
                 
-                if event.location != nil {
-                    Text(event.location!).font(.callout)
+                let location = event.location
+                if !(location?.isEmpty ?? true) {
+                    Text(location!)
+                        .font(.callout)
                         .foregroundColor(.secondary)
                         .modifier(ASAScalable(lineLimit: 1))
                 }
