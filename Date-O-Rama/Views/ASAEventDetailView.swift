@@ -102,7 +102,6 @@ struct ASAEventDetailView: View {
             }
             #endif
             
-            
             let currentUser: EKParticipant? = event.currentUser
             if currentUser != nil {
                 Section {
