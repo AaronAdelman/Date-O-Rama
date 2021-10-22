@@ -108,7 +108,7 @@
         {"titles": {"en": "Feast of St. Aloysius Gonzaga"}, "start": {"type": "1Day", "month": 6, "day": 21}},
         {"titles": {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, "start": {"type": "1Day", "month": 6, "day": 22}},
 
-        {"titles": {"en": "Nativity of St. John the Baptist"}, "start": {"type": "1Day", "month": 6, "day": 24}},
+        {"titles": {"en": "Nativity of St. John the Baptist"}, "start": {"type": "1Day", "month": 6, "day": 24}, "category": "birthday"},
         
         {"titles": {"en": "Feast of St. Cyril of Alexandria"}, "start": {"type": "1Day", "month": 6, "day": 27}},
         {"titles": {"en": "Feast of St. Irenaeus"}, "start": {"type": "1Day", "month": 6, "day": 28}},
@@ -119,9 +119,10 @@
 
         {"titles": {"en": "Feast of the Transfiguration"}, "start": {"type": "1Day", "month": 8, "day": 6}},
         {"titles": {"en": "Assumption of Mary"}, "start": {"type": "1Day", "month": 8, "day": 15}},
-        {"titles": {"en": "Nativity of Mary"}, "start": {"type": "1Day", "month": 9, "day": 8}},
+        {"titles": {"en": "Nativity of Mary"}, "start": {"type": "1Day", "month": 9, "day": 8}, "category": "birthday"},
         {"titles": {"en": "Feast of the Exaltation of the Holy Cross"}, "start": {"type": "1Day", "month": 9, "day": 14}},
-        {"titles": {"en": "All Saints’ Day"}, "start": {"type": "1Day", "month": 11, "day": 1}},
+        {"titles": {"en": "All Hallows’ Eve"}, "start": {"type": "1Day", "month": 10, "day": 31}},
+        {"titles": {"en": "All Hallows’ Day/All Saints’ Day"}, "start": {"type": "1Day", "month": 11, "day": 1}},
         {"titles": {"en": "All Souls’ Day"}, "start": {"type": "1Day", "month": 11, "day": 2}},
         {"titles": {"en": "Presentation of the Blessed Virgin Mary"}, "start": {"type": "1Day", "month": 11, "day": 21}},
         {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 20, "weekdays": [1]}},
@@ -247,7 +248,7 @@
         {"titles": {"en": "Whit Friday"}, "start": {"type": "Easter", "offsetDays": 54}},
         {"titles": {"en": "Trinity Sunday"}, "start": {"type": "Easter", "offsetDays": 56}},
         {"titles": {"en": "Corpus Christi"}, "start": {"type": "Easter", "offsetDays": 60}},
-        {"titles": {"en": "Feast of the Sacred Heart"}, "start": {"type": "Easter", "offsetDays": 68}},
-        {"titles": {"en": "Feast of the Immaculate Heart of Mary"}, "start": {"type": "Easter", "offsetDays": 69}},
+        {"titles": {"en": "Feast of the Sacred Heart"}, "start": {"type": "Easter", "offsetDays": 68}, "emoji": "❤️"},
+        {"titles": {"en": "Feast of the Immaculate Heart of Mary"}, "start": {"type": "Easter", "offsetDays": 69}, "emoji": "❤️"},
     ]
 }
