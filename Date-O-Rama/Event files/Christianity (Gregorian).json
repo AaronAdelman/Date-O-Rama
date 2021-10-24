@@ -138,8 +138,37 @@
         {"titles": {"en": "Feast of St. Peter Chrysologus"}, "start": {"type": "1Day", "month": 7, "day": 30}},
         {"titles": {"en": "Feast of St. Ignatius of Loyola"}, "start": {"type": "1Day", "month": 7, "day": 31}},
 
+        {"titles": {"en": "Feast of St. Alphonsus Maria de Liguori"}, "start": {"type": "1Day", "month": 8, "day": 1}},
+        {"titles": {"en": "Feast of St. Eusebius of Vercelli or St. Peter Julian Eymard"}, "start": {"type": "1Day", "month": 8, "day": 2}},
+        {"titles": {"en": "Feast of St. Jean Vianney (the Curé of Ars)"}, "start": {"type": "1Day", "month": 8, "day": 4}},
+        {"titles": {"en": "Dedication of the Basilica of St. Mary Major"}, "start": {"type": "1Day", "month": 8, "day": 5}},
+
         {"titles": {"en": "Feast of the Transfiguration"}, "start": {"type": "1Day", "month": 8, "day": 6}},
+        
+        {"titles": {"en": "Feast of St. Sixtus II and companions or St. Cajetan"}, "start": {"type": "1Day", "month": 8, "day": 7}},
+        {"titles": {"en": "Feast of St. Dominic"}, "start": {"type": "1Day", "month": 8, "day": 8}},
+        {"titles": {"en": "Feast of St. Teresa Benedicta of the Cross (Edith Stein)"}, "start": {"type": "1Day", "month": 8, "day": 9}},
+        {"titles": {"en": "Feast of St. Lawrence"}, "start": {"type": "1Day", "month": 8, "day": 10}},
+        {"titles": {"en": "Feast of St. Clare"}, "start": {"type": "1Day", "month": 8, "day": 11}},
+        {"titles": {"en": "Feast of St. Jane Frances de Chantal"}, "start": {"type": "1Day", "month": 8, "day": 12}},
+        {"titles": {"en": "Feast of Saints Pontian and Hippolytus"}, "start": {"type": "1Day", "month": 8, "day": 13}},
+        {"titles": {"en": "Feast of St. Maximilian Mary Kolbe"}, "start": {"type": "1Day", "month": 8, "day": 14}},
+        
         {"titles": {"en": "Assumption of Mary"}, "start": {"type": "1Day", "month": 8, "day": 15}},
+        
+        {"titles": {"en": "Feast of St. Stephen of Hungary"}, "start": {"type": "1Day", "month": 8, "day": 16}},
+        {"titles": {"en": "Feast of St. John Eudes"}, "start": {"type": "1Day", "month": 8, "day": 19}},
+        {"titles": {"en": "Feast of St. Bernard of Clairvaux"}, "start": {"type": "1Day", "month": 8, "day": 20}},
+        {"titles": {"en": "Feast of St. Pius X"}, "start": {"type": "1Day", "month": 8, "day": 21}},
+        {"titles": {"en": "Queenship of Blessed Virgin Mary"}, "start": {"type": "1Day", "month": 8, "day": 22}},
+        {"titles": {"en": "Feast of St. Rose of Lima"}, "start": {"type": "1Day", "month": 8, "day": 23}},
+        {"titles": {"en": "Feast of St. Bartholomew the Apostle"}, "start": {"type": "1Day", "month": 8, "day": 24}},
+        {"titles": {"en": "Feast of St. Louis or St. Joseph of Calasanz"}, "start": {"type": "1Day", "month": 8, "day": 25}},
+        {"titles": {"en": "Feast of St. Monica"}, "start": {"type": "1Day", "month": 8, "day": 27}},
+        {"titles": {"en": "Feast of St. Augustine of Hippo"}, "start": {"type": "1Day", "month": 8, "day": 28}},
+        {"titles": {"en": "Beheading of Saint John the Baptist"}, "start": {"type": "1Day", "month": 8, "day": 29}},
+
+        
         {"titles": {"en": "Nativity of Mary"}, "start": {"type": "1Day", "month": 9, "day": 8}, "category": "birthday"},
         {"titles": {"en": "Feast of the Exaltation of the Holy Cross"}, "start": {"type": "1Day", "month": 9, "day": 14}},
         {"titles": {"en": "All Hallows’ Eve"}, "start": {"type": "1Day", "month": 10, "day": 31}},
