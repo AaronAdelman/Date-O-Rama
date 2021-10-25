@@ -214,7 +214,26 @@
         
         {"titles": {"en": "All Hallows’ Day/All Saints’ Day"}, "start": {"type": "1Day", "month": 11, "day": 1}},
         {"titles": {"en": "All Souls’ Day"}, "start": {"type": "1Day", "month": 11, "day": 2}},
+
+        {"titles": {"en": "Feast of St. Martin de Porres"}, "start": {"type": "1Day", "month": 11, "day": 3}},
+        {"titles": {"en": "Feast of St. Charles Borromeo"}, "start": {"type": "1Day", "month": 11, "day": 4}},
+        {"titles": {"en": "Dedication of the Lateran Basilica"}, "start": {"type": "1Day", "month": 11, "day": 9}},
+        {"titles": {"en": "Feast of St. Leo the Great"}, "start": {"type": "1Day", "month": 11, "day": 10}},
+        {"titles": {"en": "Feast of St. Martin of Tours"}, "start": {"type": "1Day", "month": 11, "day": 11}},
+        {"titles": {"en": "Feast of St. Josaphat"}, "start": {"type": "1Day", "month": 11, "day": 12}},
+        {"titles": {"en": "Feast of St. Albert the Great"}, "start": {"type": "1Day", "month": 11, "day": 15}},
+        {"titles": {"en": "Feast of St. Margaret of Scotland or St. Gertrude the Great"}, "start": {"type": "1Day", "month": 11, "day": 16}},
+        {"titles": {"en": "Feast of St. Elizabeth of Hungary"}, "start": {"type": "1Day", "month": 11, "day": 17}},
+        {"titles": {"en": "Dedication of the Basilicas of Saints Peter and Paul"}, "start": {"type": "1Day", "month": 11, "day": 18}},
+        
         {"titles": {"en": "Presentation of the Blessed Virgin Mary"}, "start": {"type": "1Day", "month": 11, "day": 21}},
+        
+        {"titles": {"en": "Feast of St. Cecilia"}, "start": {"type": "1Day", "month": 11, "day": 22}},
+        {"titles": {"en": "Feast of St. Clement I or St. Columban"}, "start": {"type": "1Day", "month": 11, "day": 23}},
+        {"titles": {"en": "Feast of St. Andrew Dung-Lac and his companions"}, "start": {"type": "1Day", "month": 11, "day": 24}},
+        {"titles": {"en": "Feast of St. Catherine of Alexandria"}, "start": {"type": "1Day", "month": 11, "day": 25}},
+        {"titles": {"en": "Feast of St. Andrew the Apostle"}, "start": {"type": "1Day", "month": 11, "day": 30}},
+        
         {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 20, "weekdays": [1]}},
         {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 21, "weekdays": [1]}},
         {"titles": {"en": "Feast of Christ the King"}, "start": {"type": "1Day", "month": 11, "day": 22, "weekdays": [1]}},
