@@ -168,9 +168,28 @@
         {"titles": {"en": "Feast of St. Augustine of Hippo"}, "start": {"type": "1Day", "month": 8, "day": 28}},
         {"titles": {"en": "Beheading of Saint John the Baptist"}, "start": {"type": "1Day", "month": 8, "day": 29}},
 
-        
+        {"titles": {"en": "Feast of St. Gregory the Great"}, "start": {"type": "1Day", "month": 9, "day": 3}},
+
         {"titles": {"en": "Nativity of Mary"}, "start": {"type": "1Day", "month": 9, "day": 8}, "category": "birthday"},
+        
+        {"titles": {"en": "Feast of St. Peter Claver"}, "start": {"type": "1Day", "month": 9, "day": 9}},
+        {"titles": {"en": "Holy Name of the Blessed Virgin Mary"}, "start": {"type": "1Day", "month": 9, "day": 12}},
+        {"titles": {"en": "Feast of St. John Chrysostom"}, "start": {"type": "1Day", "month": 9, "day": 13}},
+
         {"titles": {"en": "Feast of the Exaltation of the Holy Cross"}, "start": {"type": "1Day", "month": 9, "day": 14}},
+        
+        {"titles": {"en": "Our Lady of Sorrows"}, "start": {"type": "1Day", "month": 9, "day": 15}},
+        {"titles": {"en": "Feast of Saints Cornelius and Cyprian"}, "start": {"type": "1Day", "month": 9, "day": 16}},
+        {"titles": {"en": "Feast of St. Robert Bellarmine or St. Hildegard of Bingen"}, "start": {"type": "1Day", "month": 9, "day": 17}},
+        {"titles": {"en": "Feast of St. Januarius"}, "start": {"type": "1Day", "month": 9, "day": 19}},
+        {"titles": {"en": "Feast of Saints Andrew Kim Taegon and companions"}, "start": {"type": "1Day", "month": 9, "day": 20}},
+        {"titles": {"en": "Feast of St. Matthew the Evangelist"}, "start": {"type": "1Day", "month": 9, "day": 21}},
+        {"titles": {"en": "Feast of St. Pio of Pietrelcina (Padre Pio)"}, "start": {"type": "1Day", "month": 9, "day": 23}},
+        {"titles": {"en": "Feast of Saints Cosmas and Damian"}, "start": {"type": "1Day", "month": 9, "day": 26}},
+        {"titles": {"en": "Feast of St. Vincent de Paul"}, "start": {"type": "1Day", "month": 9, "day": 27}},
+        {"titles": {"en": "Feast of St. Wenceslaus or St. Lorenzo Ruiz and companions"}, "start": {"type": "1Day", "month": 9, "day": 28}},
+        {"titles": {"en": "Feast of Saints Michael, Gabriel and Raphael/Michaelmas"}, "start": {"type": "1Day", "month": 9, "day": 29}},
+        {"titles": {"en": "Feast of St. Jerome"}, "start": {"type": "1Day", "month": 9, "day": 30}},
         
         {"titles": {"en": "All Hallows’ Eve"}, "start": {"type": "1Day", "month": 10, "day": 31}},
         
