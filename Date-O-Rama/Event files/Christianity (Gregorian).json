@@ -55,7 +55,7 @@
         {"titles": {"en": "Feast of Saints Perpetua and Felicity"}, "start": {"type": "1Day", "month": 3, "day": 7}},
         {"titles": {"en": "Feast of St. John of God"}, "start": {"type": "1Day", "month": 3, "day": 8}},
         {"titles": {"en": "Feast of St. Frances of Rome"}, "start": {"type": "1Day", "month": 3, "day": 9}},
-        {"titles": {"en": "St. Patrick’s Day"}, "start": {"type": "1Day", "month": 3, "day": 17}},
+        {"titles": {"en": "St. Patrick’s Day"}, "start": {"type": "1Day", "month": 3, "day": 17}, "emoji": "🍀"},
         {"titles": {"en": "Feast of St. Cyril of Jerusalem"}, "start": {"type": "1Day", "month": 3, "day": 18}},
 
         {"titles": {"en": "St. Joseph’s Day"}, "start": {"type": "1Day", "month": 3, "day": 19}},
