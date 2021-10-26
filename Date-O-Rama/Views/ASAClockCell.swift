@@ -218,25 +218,21 @@ struct ASAClockCellBody:  View {
                         
                         let numberOfEvents = processedRow.events.count
                         if numberOfEvents > 0 {
-                            //                            Divider()
-                            
                             Menu {
                                 ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
                             } label: {
                                 Text("Show Events")
                             }
-                            
-                            //                            Divider()
-                            
+                                                    
                             Menu {
                                 ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
                             } label: {
                                 Text("Show All-Day Events")
                             }
-                            
                         }
                     } label: {
                         Image(systemName: ARROW_SYMBOL_NAME)
+                            .font(.title)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
