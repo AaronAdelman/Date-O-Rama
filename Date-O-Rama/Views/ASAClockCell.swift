@@ -264,8 +264,9 @@ struct ASAClockEventVisibilityForEach: View {
                 ASAClockMenuVisibilityLabel(text: visibility.showingText, shouldShowCheckmark: visibility == eventVisibility)
             }
         } // ForEach
-    }
-}
+    } // var body
+} // struct ASAClockEventVisibilityForEach
+
 
 struct ASAClockAllDayEventVisibilityForEach: View {
     @Binding var eventVisibility: ASAClockCellAllDayEventVisibility
@@ -280,24 +281,29 @@ struct ASAClockAllDayEventVisibilityForEach: View {
                 ASAClockMenuVisibilityLabel(text: visibility.showingText, shouldShowCheckmark: visibility == eventVisibility)
             }
         } // ForEach
-    }
-}
+    } // var body
+} // struct ASAClockAllDayEventVisibilityForEach
 
 
 struct ASAClockMenuDetailLabel: View {
     var body: some View {
         Label("Details…", systemImage: "info.circle.fill")
-    }
-}
+    } // var body
+} // struct ASAClockMenuDetailLabel
+
 
 struct ASAClockMenuVisibilityLabel: View {
     var text: String
     var shouldShowCheckmark: Bool
     
     var body: some View {
-        Label(text, systemImage: shouldShowCheckmark ? "checkmark" : "")
-    }
-}
+        if shouldShowCheckmark {
+            Label(text, systemImage: "checkmark")
+        } else {
+            Text(text)
+        }
+    } // var body
+} // struct ASAClockMenuVisibilityLabel
 
 
 // MARK:  -
