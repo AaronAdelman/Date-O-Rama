@@ -218,13 +218,22 @@ struct ASAClockCellBody:  View {
                         
                         let numberOfEvents = processedRow.events.count
                         if numberOfEvents > 0 {
-                            Divider()
+                            //                            Divider()
                             
-                            ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
+                            Menu {
+                                ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
+                            } label: {
+                                Text("Show Events")
+                            }
                             
-                            Divider()
+                            //                            Divider()
                             
-                            ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
+                            Menu {
+                                ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
+                            } label: {
+                                Text("Show All-Day Events")
+                            }
+                            
                         }
                     } label: {
                         Image(systemName: ARROW_SYMBOL_NAME)
@@ -261,7 +270,7 @@ struct ASAClockEventVisibilityForEach: View {
             Button(action: {
                 eventVisibility = visibility
             }) {
-                ASAClockMenuVisibilityLabel(text: visibility.showingText, shouldShowCheckmark: visibility == eventVisibility)
+                ASAClockMenuVisibilityLabel(text: visibility.text, shouldShowCheckmark: visibility == eventVisibility)
             }
         } // ForEach
     } // var body
@@ -278,7 +287,7 @@ struct ASAClockAllDayEventVisibilityForEach: View {
             Button(action: {
                 eventVisibility = visibility
             }) {
-                ASAClockMenuVisibilityLabel(text: visibility.showingText, shouldShowCheckmark: visibility == eventVisibility)
+                ASAClockMenuVisibilityLabel(text: visibility.text, shouldShowCheckmark: visibility == eventVisibility)
             }
         } // ForEach
     } // var body
