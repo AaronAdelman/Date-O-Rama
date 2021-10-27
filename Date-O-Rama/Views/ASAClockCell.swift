@@ -221,13 +221,13 @@ struct ASAClockCellBody:  View {
                             Menu {
                                 ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
                             } label: {
-                                Text("Show Events")
+                                Text("Show All-Day Events")
                             }
                                                     
                             Menu {
                                 ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
                             } label: {
-                                Text("Show All-Day Events")
+                                Text("Show Events")
                             }
                         }
                     } label: {
