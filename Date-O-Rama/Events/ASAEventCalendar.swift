@@ -41,14 +41,13 @@ class ASAEventCalendar {
 
         let timeZone: TimeZone = locationData.timeZone 
         var now = startDate.addingTimeInterval(endDate.timeIntervalSince(startDate) / 2.0)
-//        var startOfDay = calendar.startOfDay(for: startDate, locationData: locationData)
         var startOfDay = startDate
         var startOfNextDay = calendar.startOfNextDay(date: startDate, locationData: locationData)
         var result:  Array<ASAEvent> = []
         repeat {
             let temp = self.events(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             for event in temp {
-                if event.relevant(startDate:  startDate, endDate:  endDate) && !result.contains(event) {
+                if event.relevant(startDate:  startDate, endDate:  endDate) && !result.containsDuplicate(of: event) {
                     result.append(event)
                 } else {
                 }
@@ -993,5 +992,15 @@ extension Array where Element == ASAEventCompatible {
         } // for i
 
         return result
-    } // func nextEvent(now:  Date) -> ASAEventCompatible?
+    } // func nextEvents(now:  Date) -> Array<ASAEventCompatible>
 } // extension Array where Element == ASAEventCompatible
+
+
+extension Array where Element == ASAEvent {
+    func containsDuplicate(of event: ASAEvent) -> Bool {
+        let firstIndex = self.firstIndex(where: { $0.title == event.title && $0.startDate == event.startDate && $0.calendarTitleWithLocation == event.calendarTitleWithLocation })
+        // NOTE:  We do not check the end date, as the switch to daylight savings time can screw that up.
+        return firstIndex != nil
+    } // func containsDuplicate(of event: ASAEvent) -> Bool
+} // extension Array where Element == ASAEventCompatible
+
