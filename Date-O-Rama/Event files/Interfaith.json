@@ -7,6 +7,6 @@
 "eventSpecifications": [
 {"titles": {"en": "World Religion Day"}, "start": {"type": "1Day", "month": 1, "weekdays": [1], "weekdayRecurrence": 3}, "first": {"type": "1Day", "era": 1, "year": 1950}, "emoji": "📚", "urls": {"en": "https://nationaldaycalendar.com/world-religion-day-third-sunday-in-january/"}},
 {"titles": {"en": "Spiritual Literacy Month"}, "start": {"type": "1Month", "month": 12}, "emoji": "🙏", "urls": {"en": "https://nationaldaycalendar.com/spiritual-literacy-month-december/"}, "first": {"type": "1Day", "era": 1, "year": 1996}},
-
+{"titles": {"en": "International Religious Freedom Day"}, "start": {"type": "1Day", "month": 10, "day": 27}},
 ]
 }
