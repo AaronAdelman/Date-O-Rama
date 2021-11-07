@@ -96,6 +96,8 @@
 		A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A55AA4A7256FD61300D62326 /* ASAArrangementChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */; };
 		A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5629CD825B8646200C6D062 /* ASAAboutTab.swift */; };
+		A563702027382A92008DE963 /* New Age.json in Resources */ = {isa = PBXBuildFile; fileRef = A563701F27382A91008DE963 /* New Age.json */; };
+		A563702127382A92008DE963 /* New Age.json in Resources */ = {isa = PBXBuildFile; fileRef = A563701F27382A91008DE963 /* New Age.json */; };
 		A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566F4442483D6E6000A05B5 /* Interface.storyboard */; };
@@ -509,6 +511,7 @@
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		A55AA4A6256FD61300D62326 /* ASAArrangementChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAArrangementChooserView.swift; sourceTree = "<group>"; };
 		A5629CD825B8646200C6D062 /* ASAAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutTab.swift; sourceTree = "<group>"; };
+		A563701F27382A91008DE963 /* New Age.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "New Age.json"; sourceTree = "<group>"; };
 		A564C13F2548731B000F2CDF /* ASAClockCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellText.swift; sourceTree = "<group>"; };
 		A566F4422483D6E6000A05B5 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -784,6 +787,7 @@
 				A507B0AE270ECCCF00BDAE06 /* Mormonism.json */,
 				A5837BE0271C139700047475 /* Named full moons.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
+				A563701F27382A91008DE963 /* New Age.json */,
 				A5DC9C7D27285D2100047F64 /* Planets.json */,
 				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
 				A54539DF26A9BA180028EAD5 /* Shia (times).json */,
@@ -1310,6 +1314,7 @@
 				A5769951259EDCC000757B0F /* Israel.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
+				A563702127382A92008DE963 /* New Age.json in Resources */,
 				A5BD09D126B2D40D00738C0B /* United Nations International Years.json in Resources */,
 				A5BC61472709B11800888611 /* Christianity (supplemental).json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
@@ -1343,6 +1348,7 @@
 			files = (
 				A599FEED269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
 				A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */,
+				A563702027382A92008DE963 /* New Age.json in Resources */,
 				A56F0DA125F1705200301969 /* Jewish zodiac.json in Resources */,
 				A5C4DCB02694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5BDE78826679A6200F47416 /* Shia.json in Resources */,
