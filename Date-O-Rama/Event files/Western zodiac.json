@@ -47,6 +47,7 @@
         {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "1Day"}, "category": "Mercury"},
         {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "1Day"}, "category": "Jupiter"},
         {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "1Day"}, "category": "Venus"},
-        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "1Day"}, "category": "Saturn"}
+        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "1Day"}, "category": "Saturn"},
+        {"titles": {"en": "Married to a Scorpio Support Day"}, "start": {"type": "1Day", "month": 11, "day": 18}, "emoji": "💍♏️"},
     ]
 }
