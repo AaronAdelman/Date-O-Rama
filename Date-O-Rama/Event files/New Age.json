@@ -6,5 +6,7 @@
 "calendarColor": {"red": 0.98, "green": 0.8, "blue": 0.8},
 "eventSpecifications": [
     {"titles": {"en": "Chicken Soup for the Soul Day"}, "start": {"type": "1Day", "month": 11, "day": 12}, "urls": {"en": "https://www.daysoftheyear.com/days/chicken-soup-for-the-soul-day/"}, "emoji": "🥣"},
+    {"titles": {"en": "Occult Day"}, "start": {"type": "1Day", "month": 11, "day": 18}, "urls": {"en": "https://www.skeptic.com/"}, "emoji": "🧙‍♀️🧙‍♂️"},
+    {"titles": {"en": "Aura Awareness Day"}, "start": {"type": "1Day", "month": 11, "weekdays": [7], "weekdayRecurrence": 4}, "first": {"type": "1Day", "era": 1, "year": 2002}, "emoji": "✨"},
 ]
 }
