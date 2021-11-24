@@ -975,22 +975,32 @@ extension ASAEventCalendar {
 
 extension Array where Element == ASAEventCompatible {
     func nextEvents(now:  Date) -> Array<ASAEventCompatible> {
-        let firstIndex = self.firstIndex(where: { $0.startDate > now })
-        if firstIndex == nil {
-            return []
-        }
-        let firstItemStartDate = self[firstIndex!].startDate
-
-        var result:  Array<ASAEventCompatible> = []
-        for i in firstIndex!..<self.count {
-            let item_i: ASAEventCompatible = self[i]
-            if item_i.startDate == firstItemStartDate {
-                result.append(item_i)
-            } else {
-                break
+        var eventCalendarTitles: Array<String> = []
+        for event in self {
+            let eventCalendarTitle: String = event.calendarTitleWithoutLocation
+            if !eventCalendarTitles.contains(eventCalendarTitle) {
+                eventCalendarTitles.append(eventCalendarTitle)
             }
-        } // for i
+        }
+        
+        var result:  Array<ASAEventCompatible> = []
 
+        for eventCalendarTitle in eventCalendarTitles {
+            let firstIndex = self.firstIndex(where: { $0.startDate > now && $0.calendarTitleWithoutLocation == eventCalendarTitle })
+            if firstIndex != nil {
+                let firstItemStartDate = self[firstIndex!].startDate
+
+                for i in firstIndex!..<self.count {
+                    let item_i: ASAEventCompatible = self[i]
+                    if item_i.startDate == firstItemStartDate && item_i.calendarTitleWithoutLocation == eventCalendarTitle {
+                        result.append(item_i)
+                    } else {
+                        break
+                    }
+                } // for i
+            }
+        }
+        
         return result
     } // func nextEvents(now:  Date) -> Array<ASAEventCompatible>
 } // extension Array where Element == ASAEventCompatible

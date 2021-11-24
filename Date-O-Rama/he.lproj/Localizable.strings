@@ -153,7 +153,7 @@
 "ASAClockCellEventVisibility.none"      = "אפס";
 "ASAClockCellEventVisibility.allDay"    = "יום שלם";
 "ASAClockCellEventVisibility.nonAllDay" = "לא יום שלם";
-"ASAClockCellEventVisibility.next"      = "הבא";
+"ASAClockCellEventVisibility.next"      = "הבאים";
 "ASAClockCellEventVisibility.future"    = "עתידיים";
 "ASAClockCellEventVisibility.present"   = "עכשיוויים";
 "ASAClockCellEventVisibility.past"      = "עבריים";
@@ -266,7 +266,7 @@
 "Showing ASAClockCellEventVisibility.none"      = "מראה אפס";
 //"Showing ASAClockCellEventVisibility.allDay"    = "מראה אירועי יום שלם";
 //"Showing ASAClockCellEventVisibility.nonAllDay" = "מראה אירועי לא יום שלם";
-"Showing ASAClockCellEventVisibility.next"      = "מראה הבא";
+"Showing ASAClockCellEventVisibility.next"      = "מראה הבאים";
 "Showing ASAClockCellEventVisibility.future"    = "מראה עתידיים";
 "Showing ASAClockCellEventVisibility.present"   = "מראה עכשיווים";
 "Showing ASAClockCellEventVisibility.past"      = "מראה עבריים";
