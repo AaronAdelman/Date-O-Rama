@@ -28,7 +28,7 @@
         {"titles": {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, "start": {
             "type": "1Day", "month": 3, "day": 8, "weekdays": [1]
         }},
-        {"titles": {"he": "יום המורה", "en": "Teacher’s Day"}, "start": {
+        {"titles": {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم"}, "start": {
             "type": "1Day", "month": 3, "day": 23}, "urls": {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
         {"titles": {"he": "יום העליה", "en": "‘Aliyyah Day"}, "start": {
             "type": "1Day", "month": 8, "day": 10}},
