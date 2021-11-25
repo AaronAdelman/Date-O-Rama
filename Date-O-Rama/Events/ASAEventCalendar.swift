@@ -1001,6 +1001,8 @@ extension Array where Element == ASAEventCompatible {
             }
         }
         
+        result.sort(by: {$0.startDate < $1.startDate})
+        
         return result
     } // func nextEvents(now:  Date) -> Array<ASAEventCompatible>
 } // extension Array where Element == ASAEventCompatible
