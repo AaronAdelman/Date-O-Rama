@@ -1,0 +1,11 @@
+{
+    "titles": {"en": "Israel (Gregorian, supplemental)", "he": "ישראל (גרגוריני, נוספים)"},
+    "supportedLocales": ["he", "en"],
+    "defaultLocale": "he",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
+    "eventSpecifications": [
+        {"titles": {"he": "יום המחזור", "en": "Recycling Day"}, "start": {"type": "1Day", "month": 12, "day": 8}, "emoji": "♻️", "urls": {"he": "https://b.tmir.org.il/recycle-day/"}},
+        {"titles": {"he": "סילבסטר", "en": "Sylvester"}, "start": {"type": "1Day", "month": 12, "day": 31}, "emoji": "🎄"},
+    ]
+}
