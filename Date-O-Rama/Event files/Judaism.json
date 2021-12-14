@@ -244,7 +244,7 @@
             "end": {"type": "multiDay", "month": 12, "day": 9}, "urls": {"en": "https://www.ou.org/holidays/category/the-three-weeks/"}},
         {"titles": {"he": "ראש חודש אב", "en": "Ro’sh Ḥodhesh ’Av"}, "start": {"type": "1Day", "month": 12, "day": 1}},
         {"titles": {"he": "יום הריקודים בכרם", "en": "Vineyard Dancing Day (Ṭu be’Av)"}, "start": {"type": "1Day", "month": 12, "day": 15}, "urls": {"en": "https://www.ou.org/holidays/category/tu-bav/"}},
-        {"titles": {"he": "עשר נטיעות", "en": "‘Eser Neṭi‘oth"}, "start": {"type": "1Day", "month": 12, "day": 30, "yearDivisor": 7, "yearRemainder": 6}},
+        {"titles": {"he": "עשר נטיעות", "en": "‘Eser Neṭi‘oth"}, "start": {"type": "1Day", "month": 12, "day": 30, "yearDivisor": 7, "yearRemainder": 6}, "notes": {"he": "סוכה ל״ד ע״א, סוכה מ״ד ע״א, תענית ג׳ ע״א"}},
         {"titles": {"he": "ראש חודש אלול", "en": "Ro’sh Ḥodhesh ’Elul"}, "start": {"type": "multiDay", "month": 12, "day": 30},
             "end": {"type": "multiDay", "month": 13, "day": 1}, "urls": {"en": "https://www.ou.org/holidays/category/months/elul/"}},
         {"titles": {"he": "ראש השנה למעשר בהמה", "en": "Ro’sh hashShanah (New Year) for Animal Tithes"}, "start": {"type": "1Day", "month": 13, "day": 1}},
