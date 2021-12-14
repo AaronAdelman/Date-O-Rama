@@ -26,7 +26,6 @@
         {"titles": {"he": "יום טוב של בני סנאב (או:  סנאה) בן בנימין", "en": "Festival of Sena’av (or:  Sena’ah) ben Binyamin"}, "start": {"type": "1Day", "month": 12, "day": 10}, "notes": {"he": "תענית י״ב ע״א, תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב של בני זתוא בן יהודה ועמהם כהנים ולוים וכל מי שטעה בשבטו ובני גונבי עלי ובני קוצעי קציעות", "en": "Festival of Bene Zattu’ ben Yehudhah and with Them Kohanim and Lewiyyim and All Who Wandered with His Tribe and Bene Goneve ‘Eli and Bene Qoṣe‘e Qeṣi‘oth"}, "start": {"type": "1Day", "month": 12, "day": 15}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב של בני פחת מואב בן יהודה", "en": "Festival of Bene Paḥath Mo’av ben Yehudhah"}, "start": {"type": "1Day", "month": 12, "day": 20}, "notes": {"he": "תענית כ״ו ע״א"}},
-        {"titles": {"he": "יום טוב של בני עדין בן יהודה", "en": "Festival of Bene ‘Adhin ben Yehudhah"}, "start": {"type": "1Day", "month": 13, "day": 20}, "notes": {"he": "תענית כ״ו ע״א"}},
-
+        {"titles": {"he": "יום טוב של בני עדין בן יהודה", "en": "Festival of Bene ‘Adhin ben Yehudhah"}, "start": {"type": "1Day", "month": 13, "day": 20}, "notes": {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},
     ]
 }
