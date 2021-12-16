@@ -9,5 +9,11 @@
         {"titles": {"en": "Atheist Day"}, "start": {"type": "1Day", "month": 3, "day": 23}, "first": {"type": "1Day", "era": 1, "year": 2004}, "urls": {"en": "https://www.daysoftheyear.com/days/atheist-day/"}},
         {"titles": {"en": "World Humanist Day"}, "start": {"type": "1Day", "month": 6, "day": 21}, "first": {"type": "1Day", "era": 1, "year": 1989}, "urls": {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}},
         {"titles": {"en": "Ingersoll Day"}, "start": {"type": "1Day", "month": 8, "day": 11}, "urls": {"en": "https://www.daysoftheyear.com/days/ingersoll-day/"}},
+        {"titles": {"en": "HumanLight"}, "start": {"type": "1Day", "month": 12, "day": 23}, "first": {"type": "1Day", "era": 1, "year": 2001}, "urls": {"en": "https://humanlight.org/"}, "emoji": "🕯"},
+        {"titles": {"en": "National Day of Reason"}, "start": {"type": "1Day", "month": 5, "weekdays": [5], "weekdayRecurrence": 1}, "first": {"type": "1Day", "era": 1, "year": 2003}, "emoji": "⍰", "urls": {"en": "https://nationaldaycalendar.com/national-day-of-reason-first-thursday-in-may/"}},
+        {"titles": {"en": "New Year Reality Revival"}, "start": {"type": "1Month", "month": 1}, "urls": {"en": "https://secularseasons.org/january/reality_revival.html"}},
+        {"titles": {"en": "Freethinkers Day"}, "start": {"type": "1Day", "month": 1, "day": 29}, "first": {"type": "1Day", "era": 1, "year": 1990}, "urls": {"en": "https://www.daysoftheyear.com/days/freethinkers-day/"}},
+        {"titles": {"en": "Chevalier de la Barre Day"}, "start": {"type": "1Day", "month": 7, "day": 1}, "urls": {"en": "https://secularseasons.org/july/barre_day.html"}},
+        {"titles": {"en": "Freethought Month"}, "start": {"type": "1Month", "month": 10}, "urls": {"en": "https://secularseasons.org/october/freethought_month.html"}},
     ]
 }
