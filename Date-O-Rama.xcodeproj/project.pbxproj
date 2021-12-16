@@ -364,6 +364,8 @@
 		A5FA5A6B270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
+		A5FED7E9276BA65100BB11C9 /* Scientology.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FED7E8276BA65100BB11C9 /* Scientology.json */; };
+		A5FED7EA276BA65100BB11C9 /* Scientology.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FED7E8276BA65100BB11C9 /* Scientology.json */; };
 		E43BF56F4156A9DE51890D8A /* Pods_Date_O_Rama_Date_O_RamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5404EBF68E036742DA31B7 /* Pods_Date_O_Rama_Date_O_RamaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -668,6 +670,7 @@
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
 		A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellAllDayEventVisibility.swift; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
+		A5FED7E8276BA65100BB11C9 /* Scientology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scientology.json; sourceTree = "<group>"; };
 		B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.release.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2A7FB74C22622E280B15A95 /* Pods-WatchDate-O-Rama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama.release.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama/Pods-WatchDate-O-Rama.release.xcconfig"; sourceTree = "<group>"; };
 		E16E80751115DDE2FE6B15FA /* Pods_Date_O_RamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Date_O_RamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -800,6 +803,7 @@
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A563701F27382A91008DE963 /* New Age.json */,
 				A5DC9C7D27285D2100047F64 /* Planets.json */,
+				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
 				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
 				A54539DF26A9BA180028EAD5 /* Shia (times).json */,
 				A5BDE78726679A6200F47416 /* Shia.json */,
@@ -1339,6 +1343,7 @@
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5769955259EDCC000757B0F /* Judaism (times).json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
+				A5FED7EA276BA65100BB11C9 /* Scientology.json in Resources */,
 				A5837BE2271C139700047475 /* Named full moons.json in Resources */,
 				A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
@@ -1409,6 +1414,7 @@
 				A5DC9C7E27285D2100047F64 /* Planets.json in Resources */,
 				A5B0084726CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5BDE7A02667B66800F47416 /* Israel (Gregorian).json in Resources */,
+				A5FED7E9276BA65100BB11C9 /* Scientology.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 			);
