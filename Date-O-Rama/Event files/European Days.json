@@ -1,0 +1,19 @@
+{
+    "titles": {"en": "European Days"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.16, "green": 0.27, "blue": 0.52},
+    "emoji": "🇪🇺",
+    "eventSpecifications": [
+        {"titles": {"en": "Data Protection Day"}, "start": {"type": "1Day", "month": 1, "day": 28}, "first": {"type": "1Day", "era": 1, "year": 2006}, "emoji": "📀"},
+        {"titles": {"en": "Europe Day (Committee of Ministers)"}, "start": {"type": "1Day", "month": 5, "day": 5}, "first": {"type": "1Day", "era": 1, "year": 1964}, "emoji": "🇪🇺"},
+        {"titles": {"en": "Europe Day (European Union)"}, "start": {"type": "1Day", "month": 5, "day": 9}, "emoji": "🇪🇺"},
+        {"titles": {"en": "Europe Month"}, "start": {"type": "1Month", "month": 5}, "emoji": "🇪🇺"},
+        {"titles": {"en": "International Day against Homophobia"}, "start": {"type": "1Day", "month": 5, "day": 17}},
+        {"titles": {"en": "European Day of Languages"}, "start": {"type": "1Day", "month": 9, "day": 26}, "emoji": "🗣", "first": {"type": "1Day", "era": 1, "year": 2001}},
+        {"titles": {"en": "European Day against Death Penalty"}, "start": {"type": "1Day", "month": 10, "day": 10}, "first": {"type": "1Day", "era": 1, "year": 2007}},
+        {"titles": {"en": "European Day of Justice"}, "start": {"type": "1Day", "month": 10, "day": 25}, "emoji": "⚖️", "first": {"type": "1Day", "era": 1, "year": 2003}},
+        {"titles": {"en": "European Day on the Protection of Children against Sexual Exploitation and Sexual Abuse"}, "start": {"type": "1Day", "month": 11, "day": 18}, "first": {"type": "1Day", "era": 1, "year": 2015}},
+    ]
+}
