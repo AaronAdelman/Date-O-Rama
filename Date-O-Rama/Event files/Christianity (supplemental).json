@@ -45,5 +45,6 @@
         {"titles": {"en": "Fruitcake Toss Day"}, "start": {"type": "1Day", "month": 1, "weekdays": [7], "weekdayRecurrence": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/fruitcake-toss-day/"}},
         {"titles": {"en": "Answer the Telephone Like Buddy the Elf Day"}, "start": {"type": "1Day", "month": 12, "day": 18}, "urls": {"en": "https://nationaldaycalendar.com/answer-the-telephone-like-buddy-the-elf-day-december-18/"}, "first": {"type": "1Day", "era": 1, "year": 2004}},
         {"titles": {"en": "National Candy Cane Day"}, "start": {"type": "1Day", "month": 12, "day": 26}, "urls": {"en": "https://www.daysoftheyear.com/days/candy-cane-day/"}},
+        {"titles": {"en": "National Coquito Day"}, "start": {"type": "1Day", "month": 12, "day": 21}, "urls": {"en": "https://www.daysoftheyear.com/days/coquito-day/"}, "emoji": "🥛"},
     ]
 }
