@@ -26,13 +26,17 @@
         {"titles": {"he": "יום טוב של בני פחת מואב בן יהודה", "en": "Festival of Bene Paḥath Mo’av ben Yehudhah"}, "start": {"type": "1Day", "month": 12, "day": 20}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב של בני עדין בן יהודה", "en": "Festival of Bene ‘Adhin ben Yehudhah"}, "start": {"type": "1Day", "month": 13, "day": 20}, "notes": {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},
         
-        {"titles": {"he": "חנוכת שיר ירושלם", "en": "Dedication of the Song of Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 7}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "חנוכת שיר ירושלם", "en": "Song of Yerushalayim Dedication Day"}, "start": {"type": "1Day", "month": 9, "day": 7}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה נפקו בני חקרא מירושלם", "en": "Day in Which Bene Ḥaqra’ Went Out of Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 23}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה איתנטילו כלילאי מיהודה ומירושלם", "en": "Day in Which the Coronation Tax Was Remitted from Yehudhah and Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 27}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "אחידת מגדל צור", "en": "Conquest of the Tower of Ṣur"}, "start": {"type": "1Day", "month": 10, "day": 17}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "ימים שבהם גלו אנשי בית שאן ואנשי בקעתא", "en": "Days in Which Were Exiles the People of Beth She’an and Baq‘atha’"}, "start": {"type": "multiDay", "month": 10, "day": 15}, "end": {"type": "multiDay", "month": 10, "day": 16}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה איתנטילו דימסנאי מיהודה וירושלים", "en": "Day in Which Public Revenue Farmers Were Removed from Yehudhah and Yerushalayim"}, "start": {"type": "1Day", "month": 10, "day": 25}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה עדא ספר גזרתא", "en": "Book of Enactments Nullification Day"}, "start": {"type": "1Day", "month": 11, "day": 14}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה תבנא לדיננא", "en": "Reestablishment of Jewish Law Day"}, "start": {"type": "1Day", "month": 12, "day": 24}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "חנוכת שיר ירושלם", "en": "Song of Yerushalayim Dedication Day"}, "start": {"type": "1Day", "month": 13, "day": 4}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה נפקו רומאי מן ירושלם", "en": "Romans Leave Yerushalayim  Day"}, "start": {"type": "1Day", "month": 13, "day": 17}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה תבו לקטלא משמדיא", "en": "Death Penalty Restoration Day"}, "start": {"type": "1Day", "month": 13, "day": 22}, "notes": {"he": "מגילת תענית"}},
 
     ]
 }
