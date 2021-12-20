@@ -32,6 +32,7 @@
         {"titles": {"he": "אחידת מגדל צור", "en": "Conquest of the Tower of Ṣur"}, "start": {"type": "1Day", "month": 10, "day": 17}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "ימים שבהם גלו אנשי בית שאן ואנשי בקעתא", "en": "Days in Which Were Exiles the People of Beth She’an and Baq‘atha’"}, "start": {"type": "multiDay", "month": 10, "day": 15}, "end": {"type": "multiDay", "month": 10, "day": 16}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה איתנטילו דימסנאי מיהודה וירושלים", "en": "Day in Which Public Revenue Farmers Were Removed from Yehudhah and Yerushalayim"}, "start": {"type": "1Day", "month": 10, "day": 25}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה עדא ספר גזרתא", "en": "Book of Enactments Nullification Day"}, "start": {"type": "1Day", "month": 11, "day": 14}, "notes": {"he": "מגילת תענית"}},
 
     ]
 }
