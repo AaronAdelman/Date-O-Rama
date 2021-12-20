@@ -14,10 +14,8 @@
         {"titles": {"he": "יום ניקנור", "en": "Niqanor Day"}, "start": {"type": "1Day", "month": 7, "day": 13}, "notes": {"he": "תענית י״ח ע״ב"}},
         {"titles": {"he": "יומא דביה אתת בשורתא טבתא ליהודאי דלא יעידון מן אורייתא", "en": "Day in Which Came Good News to the Jews That They Should Not Deviate from the Torah"}, "start": {"type": "1Day", "month": 7, "day": 28}, "notes": {"he": "ראש השנה י״ט ע״א, תענית י״ח ע״א"}},
         {"titles": {"he": "יום טוב של בני ארח בן יהודה", "en": "Festival of Bene ’Araḥ ben Yehudhah"}, "start": {"type": "1Day", "month": 8, "day": 1}, "notes": {"he": "תענית כ״ו ע״א"}},
-        {"titles": {"he": "יומיא דבהו איתוקם תמידא", "en": "Days in Which the Tamidh Was Established"}, "start": {"type": "multiDay", "month": 8, "day": 1},
-            "end": {"type": "multiDay", "month": 8, "day": 8}, "notes": {"he": "תענית י״ז ע״ב־י״ח ע״א"}},
-        {"titles": {"he": "יומיא דבהו איתוקם חגא דשבועיא", "en": "Days in Which Shavu‘oth Was Established"}, "start": {"type": "multiDay", "month": 8, "day": 8},
-            "end": {"type": "multiDay", "month": 8, "day": 21}, "notes": {"he": "תענית י״ז ע״ב, תענית י״ח ע״א"}},
+        {"titles": {"he": "יומיא דבהו איתוקם תמידא", "en": "Days in Which the Tamidh Was Established"}, "start": {"type": "multiDay", "month": 8, "day": 1}, "end": {"type": "multiDay", "month": 8, "day": 8}, "notes": {"he": "תענית י״ז ע״ב־י״ח ע״א"}},
+        {"titles": {"he": "יומיא דבהו איתוקם חגא דשבועיא", "en": "Days in Which Shavu‘oth Was Established"}, "start": {"type": "multiDay", "month": 8, "day": 8}, "end": {"type": "multiDay", "month": 8, "day": 21}, "notes": {"he": "תענית י״ז ע״ב, תענית י״ח ע״א"}},
         {"titles": {"he": "ראש השנה לעומר", "en": "New Year for the ‘Omer (day 1)"}, "start": {"type": "1Day", "month": 8, "day": 16}, "urls": {"en": "https://www.ou.org/holidays/category/sefirat-haomer/"}, "notes": {"he": "ראש השנה ז׳ ע״ב"}},
         {"titles": {"he": "ראש השנה לשתי הלחם", "en": "New Year for the Two Loaves"}, "start": {"type": "1Day", "month": 10, "day": 6}, "notes": {"he": "ראש השנה ז׳ ע״ב"}},
         {"titles": {"he": "יום טוב של בני דוד בן יהודה", "en": "Festival of Bene Dawidh be Yehudhah"}, "start": {"type": "1Day", "month": 10, "day": 20}, "notes": {"he": "תענית כ״ו ע״א"}},
@@ -27,5 +25,10 @@
         {"titles": {"he": "יום טוב של בני זתוא בן יהודה ועמהם כהנים ולוים וכל מי שטעה בשבטו ובני גונבי עלי ובני קוצעי קציעות", "en": "Festival of Bene Zattu’ ben Yehudhah and with Them Kohanim and Lewiyyim and All Who Wandered with His Tribe and Bene Goneve ‘Eli and Bene Qoṣe‘e Qeṣi‘oth"}, "start": {"type": "1Day", "month": 12, "day": 15}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב של בני פחת מואב בן יהודה", "en": "Festival of Bene Paḥath Mo’av ben Yehudhah"}, "start": {"type": "1Day", "month": 12, "day": 20}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב של בני עדין בן יהודה", "en": "Festival of Bene ‘Adhin ben Yehudhah"}, "start": {"type": "1Day", "month": 13, "day": 20}, "notes": {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},
+        
+        {"titles": {"he": "חנוכת שיר ירושלם", "en": "Dedication of the Song of Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 7}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה נפקו בני חקרא מירושלם", "en": "Day in Which Bene Ḥaqra’ Went Out of Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 23}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה איתנטילו כלילאי מיהודה ומירושלם", "en": "Day in Which the Coronation Tax Was Remitted from Yehudhah and Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 27}, "notes": {"he": "מגילת תענית"}},
+
     ]
 }
