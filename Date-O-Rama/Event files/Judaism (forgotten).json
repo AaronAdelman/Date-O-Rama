@@ -29,6 +29,9 @@
         {"titles": {"he": "חנוכת שיר ירושלם", "en": "Dedication of the Song of Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 7}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה נפקו בני חקרא מירושלם", "en": "Day in Which Bene Ḥaqra’ Went Out of Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 23}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה איתנטילו כלילאי מיהודה ומירושלם", "en": "Day in Which the Coronation Tax Was Remitted from Yehudhah and Yerushalayim"}, "start": {"type": "1Day", "month": 9, "day": 27}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "אחידת מגדל צור", "en": "Conquest of the Tower of Ṣur"}, "start": {"type": "1Day", "month": 10, "day": 17}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "ימים שבהם גלו אנשי בית שאן ואנשי בקעתא", "en": "Days in Which Were Exiles the People of Beth She’an and Baq‘atha’"}, "start": {"type": "multiDay", "month": 10, "day": 15}, "end": {"type": "multiDay", "month": 10, "day": 16}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה איתנטילו דימסנאי מיהודה וירושלים", "en": "Day in Which Public Revenue Farmers Were Removed from Yehudhah and Yerushalayim"}, "start": {"type": "1Day", "month": 10, "day": 25}, "notes": {"he": "מגילת תענית"}},
 
     ]
 }
