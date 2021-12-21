@@ -8,8 +8,7 @@
         {"titles": {"he": "שמחת כהן", "en": "Simḥath Kohen"}, "start": {"type": "1Day", "month": 1, "day": 11}, "notes": {"he": "עיונים של רבן שטיינזלץ על יומא ע׳ ע״א"}},
         {"titles": {"he": "יום טוב שני של יום כיפור", "en": "Yom Kippur (yom ṭov sheni)"}, "start": {"type": "1Day", "month": 1, "day": 11}, "excludeRegionCodes": ["IL", "PS"], "notes": {"he": "ראש השנה כ״א ע״א"}},
         {"titles": {"he": "יום טוב שני של בני פרעוש בן יהודה", "en": "Second Festival of Bene Par‘osh ben Yehudhah"}, "start": {"type": "1Day", "month": 4, "day": 1}, "notes": {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},
-        {"titles": {"he": "יום הר גריזים?", "en": "Mount Gerizim Day?"}, "start": {"type": "1Day", "month": 4, "day": 25}, "notes": {"he": "יומא ס״ט ע״א"}},
-        {"titles": {"he": "יום הר גריזים?", "en": "Mount Gerizim Day?"}, "start": {"type": "1Day", "month": 4, "day": 21}, "notes": {"he": "יומא ס״ט ע״א"}},
+        {"titles": {"he": "יום הר גריזים (לפי תלמוד בבלי)", "en": "Mount Gerizim Day (according to Talmudh Bavli)"}, "start": {"type": "1Day", "month": 4, "day": 25}, "notes": {"he": "יומא ס״ט ע״א"}},
         {"titles": {"he": "יום טוריינוס", "en": "Ṭuryanus Day"}, "start": {"type": "1Day", "month": 7, "day": 12}, "notes": {"he": "תענית י״ח ע״ב"}},
         {"titles": {"he": "יום ניקנור", "en": "Niqanor Day"}, "start": {"type": "1Day", "month": 7, "day": 13}, "notes": {"he": "תענית י״ח ע״ב"}},
         {"titles": {"he": "יומא דביה אתת בשורתא טבתא ליהודאי דלא יעידון מן אורייתא", "en": "Day in Which Came Good News to the Jews That They Should Not Deviate from the Torah"}, "start": {"type": "1Day", "month": 7, "day": 28}, "notes": {"he": "ראש השנה י״ט ע״א, תענית י״ח ע״א"}},
@@ -37,6 +36,13 @@
         {"titles": {"he": "חנוכת שיר ירושלם", "en": "Song of Yerushalayim Dedication Day"}, "start": {"type": "1Day", "month": 13, "day": 4}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה נפקו רומאי מן ירושלם", "en": "Romans Leave Yerushalayim  Day"}, "start": {"type": "1Day", "month": 13, "day": 17}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה תבו לקטלא משמדיא", "en": "Death Penalty Restoration Day"}, "start": {"type": "1Day", "month": 13, "day": 22}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "בטילת אדכרתא מן שטריא", "en": "Cancellation of Use of the Tetragrammaton in Documents Day"}, "start": {"type": "1Day", "month": 1, "day": 3}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה אסתתר סוריגא מן עזרתא", "en": "Tearing Down of the Soregh Day"}, "start": {"type": "1Day", "month": 2, "day": 23}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה אחידת שומרון שורא", "en": "Capture of Samaria Day"}, "start": {"type": "1Day", "month": 2, "day": 25}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה תבת סולתא למיסק על מדבחא", "en": "Resumption of Offering Fine Flour on the Altar Day"}, "start": {"type": "1Day", "month": 2, "day": 27}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה אתנטילו סימותא מן דרתא", "en": "Removal of Idols from the Temple Courtyard Day"}, "start": {"type": "1Day", "month": 3, "day": 3}},
+        {"titles": {"he": "יום־שנה של הורדוס", "en": "Yohrtsayt of Herod"}, "start": {"type": "1Day", "month": 3, "day": 7}, "emoji": "🥳"},
+        {"titles": {"he": "יום הר גריזים (לפי מגילת תענית)", "en": "Mount Gerizim Day (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 3, "day": 21}, "notes": {"he": "מגילת תענית"}},
 
     ]
 }
