@@ -9,9 +9,9 @@
         {"titles": {"he": "יום טוב שני של יום כיפור", "en": "Yom Kippur (yom ṭov sheni)"}, "start": {"type": "1Day", "month": 1, "day": 11}, "excludeRegionCodes": ["IL", "PS"], "notes": {"he": "ראש השנה כ״א ע״א"}},
         {"titles": {"he": "יום טוב שני של בני פרעוש בן יהודה", "en": "Second Festival of Bene Par‘osh ben Yehudhah"}, "start": {"type": "1Day", "month": 4, "day": 1}, "notes": {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},
         {"titles": {"he": "יום הר גריזים (לפי תלמוד בבלי)", "en": "Mount Gerizim Day (according to Talmudh Bavli)"}, "start": {"type": "1Day", "month": 4, "day": 25}, "notes": {"he": "יומא ס״ט ע״א"}},
-        {"titles": {"he": "יום טוריינוס", "en": "Ṭuryanus Day"}, "start": {"type": "1Day", "month": 7, "day": 12}, "notes": {"he": "תענית י״ח ע״ב"}},
-        {"titles": {"he": "יום ניקנור", "en": "Niqanor Day"}, "start": {"type": "1Day", "month": 7, "day": 13}, "notes": {"he": "תענית י״ח ע״ב"}},
-        {"titles": {"he": "יומא דביה אתת בשורתא טבתא ליהודאי דלא יעידון מן אורייתא", "en": "Day in Which Came Good News to the Jews That They Should Not Deviate from the Torah"}, "start": {"type": "1Day", "month": 7, "day": 28}, "notes": {"he": "ראש השנה י״ט ע״א, תענית י״ח ע״א"}},
+        {"titles": {"he": "יום טוריינוס", "en": "Ṭuryanus Day"}, "start": {"type": "1Day", "month": 7, "day": 12}, "notes": {"he": "תענית י״ח ע״ב, מגילת תענית"}},
+        {"titles": {"he": "יום ניקנור", "en": "Niqanor Day"}, "start": {"type": "1Day", "month": 7, "day": 13}, "notes": {"he": "תענית י״ח ע״ב, מגילת תענית"}},
+        {"titles": {"he": "יומא דביה אתת בשורתא טבתא ליהודאי דלא יעידון מן אורייתא", "en": "Day in Which Came Good News to the Jews That They Should Not Deviate from the Torah"}, "start": {"type": "1Day", "month": 7, "day": 28}, "notes": {"he": "ראש השנה י״ט ע״א, תענית י״ח ע״א, מגילת תענית"}},
         {"titles": {"he": "יום טוב של בני ארח בן יהודה", "en": "Festival of Bene ’Araḥ ben Yehudhah"}, "start": {"type": "1Day", "month": 8, "day": 1}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יומיא דבהו איתוקם תמידא", "en": "Days in Which the Tamidh Was Established"}, "start": {"type": "multiDay", "month": 8, "day": 1}, "end": {"type": "multiDay", "month": 8, "day": 8}, "notes": {"he": "תענית י״ז ע״ב־י״ח ע״א"}},
         {"titles": {"he": "יומיא דבהו איתוקם חגא דשבועיא", "en": "Days in Which Shavu‘oth Was Established"}, "start": {"type": "multiDay", "month": 8, "day": 8}, "end": {"type": "multiDay", "month": 8, "day": 21}, "notes": {"he": "תענית י״ז ע״ב, תענית י״ח ע״א"}},
@@ -43,6 +43,14 @@
         {"titles": {"he": "יומא דביה אתנטילו סימותא מן דרתא", "en": "Removal of Idols from the Temple Courtyard Day"}, "start": {"type": "1Day", "month": 3, "day": 3}},
         {"titles": {"he": "יום־שנה של הורדוס", "en": "Yohrtsayt of Herod"}, "start": {"type": "1Day", "month": 3, "day": 7}, "emoji": "🥳"},
         {"titles": {"he": "יום הר גריזים (לפי מגילת תענית)", "en": "Mount Gerizim Day (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 3, "day": 21}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יתיבא כנישתא על דינא", "en": "Sanhedhrin Sitting in Judgement Day"}, "start": {"type": "1Day", "month": 4, "day": 28}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום־שנה של ינאי המלך", "en": "Yohrtsayt of King Yanna’y"}, "start": {"type": "1Day", "month": 5, "day": 2}, "emoji": "🥳", "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה בטילת עבידתא דאמר סנאה להיתאה להיכלא", "en": "Cancellation of the Work the Enemy Said to Bring into the Temple Day"}, "start": {"type": "1Day", "month": 5, "day": 22}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יומא דביה אינטיל אנטיוכוס מלכא מן ירושלם", "en": "King Antiochus Leaves Yerushalayim Day"}, "start": {"type": "1Day", "month": 5, "day": 28}},
+        {"titles": {"he": "יום תרועת מיטרא", "en": "Blowing the Shofar for Rain Day"}, "start": {"type": "multiDay", "month": 7, "day": 8}, "end": {"type": "multiDay", "month": 7, "day":9}, "notes": {"he": "מגילת תענית"}, "emoji": "🌧"},
+        {"titles": {"he":  "יומא דביה שריו למבני שורא דירושלם", "en": "City Wall of Yerushalayim Building Day"}, "start": {"type": "1Day", "month": 7, "day": 16}},
+        {"titles": {"he":  "יומא דביה קמו עממיא על פלטת ספריא במדינת כלקיס בבית זבדי והוה פורקן", "en": "Day of Salvation of the Refugees of Safriyya’ in Kalqis and Beth Zavdi from the Gentiles"}, "start": {"type": "1Day", "month": 7, "day": 17}},
+        {"titles": {"he":  "יומא דביה צמון עמא על מטרא ונחת להון", "en": "Fasting for Rain Day"}, "start": {"type": "1Day", "month": 7, "day": 20}, "emoji": "🌧"},
 
     ]
 }
