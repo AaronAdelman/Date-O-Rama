@@ -78,6 +78,13 @@
         {"titles": {"he": "יום כיפור קטן (מוקדם)", "en": "Yom Kippur Qaṭan (brought forward)"}, "start": {"type": "1Day", "month": 11, "day": 28, "weekdays": [5]}},
         {"titles": {"he": "יום כיפור קטן", "en": "Yom Kippur Qaṭan"}, "start": {"type": "1Day", "month": 12, "day": 29, "weekdays": [1, 2, 3, 4, 5]}},
         {"titles": {"he": "יום כיפור קטן (מוקדם)", "en": "Yom Kippur Qaṭan (brought forward)"}, "start": {"type": "1Day", "month": 12, "day": 27, "weekdays": [5]}},
-        {"titles": {"he": "יום כיפור קטן (מוקדם)", "en": "Yom Kippur Qaṭan (brought forward)"}, "start": {"type": "1Day", "month": 12, "day": 28, "weekdays": [5]}}
+        {"titles": {"he": "יום כיפור קטן (מוקדם)", "en": "Yom Kippur Qaṭan (brought forward)"}, "start": {"type": "1Day", "month": 12, "day": 28, "weekdays": [5]}},
+        
+        {"titles": {"he": "יום־שנה של שמואל הנביא (על פי מגילת תענית)", "en": "Yohrtsayt of Shemu’el the Prophet (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 9, "day": 29}, "category": "deathAnniversary", "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום־שנה של עשרת המרגלים (על פי מגילת תענית)", "en": "Yohrtsayt of the Ten Spies (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 13, "day": 7}, "category": "deathAnniversary", "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום שבו עוורו את המלך צדקיהו והמיתו את בניו (על פי מגילת תענית)", "en": "Day Ṣidhqiyyahu was blinded and they killed his children (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 2, "day": 6}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום שבו שרף המלך יהויקים את המגילה שכתב ברוך בן נריה בשם ירמיהו (על פי מגילת תענית)", "en": "Day King Yehoyaqim burnt the scroll Barukh ben Neriyyah wrote for Yirmeyahu (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 3, "day": 7}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום שבו לא כתבו רבותינו על מה", "en": "Day in Which Our Rabbanim Did Not Write on What"}, "start": {"type": "1Day", "month": 4, "day": 9}, "category": "deathAnniversary", "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום־שנה של הזקנים שהיו בימי יהושע בן נון (על פי מגילת תענית)", "en": "Yohrtsayt of Yehoshua‘ ben Nun and the Elders (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 5, "day": 8}, "category": "deathAnniversary", "notes": {"he": "מגילת תענית"}},
     ]
 }
