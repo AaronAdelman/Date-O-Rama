@@ -49,6 +49,7 @@
         {"titles": {"en": "A’Phabet Day or No “L” Day"}, "start": {"type": "1Day", "month": 12, "day": 25}, "urls": {"en": "https://nationaldaycalendar.com/aphabet-day-or-no-l-day-december-25/"}, "emoji": "Ł"},
         {"titles": {"en": "National Christmas Lights Day"}, "start": {"type": "1Day", "month": 12, "day": 1}, "urls": {"en": "https://nationaltoday.com/national-christmas-lights-day/"}, "emoji": "🎄"},
         {"titles": {"en": "National Whiners Day"}, "start": {"type": "1Day", "month": 12, "day": 26}, "urls": {"en": "https://nationaldaycalendar.com/national-whiners-day-december-26/"}, "emoji": "☹️"},
+        {"titles": {"en": "Falling Needles Family Fest Day"}, "start": {"type": "1Day", "month": 12, "day": 30}, "urls": {"en": "https://nationaldaycalendar.com/falling-needles-family-fest-day-december-30/"}, "emoji": "🌲"},
         {"titles": {"en": "National Champagne Day"}, "start": {"type": "1Day", "month": 12, "day": 31}, "urls": {"en": "https://www.daysoftheyear.com/days/champagne-day/"}, "emoji": "🥂"},
         {"titles": {"en": "Ring a Bell Day"}, "start": {"type": "1Day", "month": 1, "day": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/ring-a-bell-day/"}, "emoji": "🔔"},
         {"titles": {"en": "Commitment Day"}, "start": {"type": "1Day", "month": 1, "day": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/commitment-day/"}, "first": {"type": "1Day", "era": 1, "year": 1960}, "emoji": "👩‍❤️‍👨"},
