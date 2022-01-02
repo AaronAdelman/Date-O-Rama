@@ -43,7 +43,7 @@
         {"titles": {"he": "יומא דביה אתנטילו סימותא מן דרתא", "en": "Removal of Idols from the Temple Courtyard Day"}, "start": {"type": "1Day", "month": 3, "day": 3}},
         {"titles": {"he": "יום־שנה של הורדוס", "en": "Yohrtsayt of Herod"}, "start": {"type": "1Day", "month": 3, "day": 7}, "emoji": "🥳"},
         {"titles": {"he": "יום הר גריזים (לפי מגילת תענית)", "en": "Mount Gerizim Day (according to Meghillath Ta‘anith)"}, "start": {"type": "1Day", "month": 3, "day": 21}, "notes": {"he": "מגילת תענית"}},
-        {"titles": {"he": "יתיבא כנישתא על דינא", "en": "Sanhedhrin Sitting in Judgement Day"}, "start": {"type": "1Day", "month": 4, "day": 28}, "notes": {"he": "מגילת תענית"}},
+        {"titles": {"he": "יום שמעון בן שטח (יתיבא כנישתא על דינא)", "en": "Shim‘on ben Sheṭaḥ Day (Sanhedhrin Sitting in Judgement Day)"}, "start": {"type": "1Day", "month": 4, "day": 28}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יום־שנה של ינאי המלך", "en": "Yohrtsayt of King Yanna’y"}, "start": {"type": "1Day", "month": 5, "day": 2}, "emoji": "🥳", "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה בטילת עבידתא דאמר סנאה להיתאה להיכלא", "en": "Cancellation of the Work the Enemy Said to Bring into the Temple Day"}, "start": {"type": "1Day", "month": 5, "day": 22}, "notes": {"he": "מגילת תענית"}},
         {"titles": {"he": "יומא דביה אינטיל אנטיוכוס מלכא מן ירושלם", "en": "King Antiochus Leaves Yerushalayim Day"}, "start": {"type": "1Day", "month": 5, "day": 28}},

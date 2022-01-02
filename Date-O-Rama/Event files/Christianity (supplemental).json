@@ -54,5 +54,6 @@
         {"titles": {"en": "Ring a Bell Day"}, "start": {"type": "1Day", "month": 1, "day": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/ring-a-bell-day/"}, "emoji": "🔔"},
         {"titles": {"en": "Commitment Day"}, "start": {"type": "1Day", "month": 1, "day": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/commitment-day/"}, "first": {"type": "1Day", "era": 1, "year": 1960}, "emoji": "👩‍❤️‍👨"},
         {"titles": {"en": "National Bloody Mary Day"}, "start": {"type": "1Day", "month": 1, "day": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/bloody-mary-day/"}, "emoji": "🍅"},
+        {"titles": {"en": "National Hangover Day"}, "start": {"type": "1Day", "month": 1, "day": 1}, "urls": {"en": "https://nationaldaycalendar.com/national-hang-over-day-january-1/"}, "emoji": "🥴", "first": {"type": "1Day", "era": 1, "year": 2016}},
     ]
 }
