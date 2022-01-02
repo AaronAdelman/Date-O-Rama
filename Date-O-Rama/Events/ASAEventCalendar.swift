@@ -120,7 +120,7 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         var phase: MoonPhase
         switch type {
         case .fullMoon:
@@ -150,7 +150,7 @@ class ASAEventCalendar {
         }
         
         return MATCH_FAILURE
-    } // func matchMoonPhase(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
 
@@ -210,7 +210,7 @@ class ASAEventCalendar {
         } // switch startDateSpecification.type
     } // func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(for type: ASATimeSpecificationType, now: JulianDay) -> Date? {
+    func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
         var possibleDate: Date
         
@@ -236,9 +236,9 @@ class ASAEventCalendar {
         } // switch type
         
         return possibleDate
-    } // func possibleDate(for type: ASATimeSpecificationType, now: JulianDay) -> Date?
+    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate = JulianDay(startOfDay)
         guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
             return MATCH_FAILURE
@@ -267,9 +267,9 @@ class ASAEventCalendar {
         }
 
         return MATCH_FAILURE
-    } // func matchEquinoxOrSolstice(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date? {
+    func possibleDate(for type: ASADateSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date? {
         switch type {
         case .rise, .set:
             guard let body = body else {
@@ -293,9 +293,9 @@ class ASAEventCalendar {
         default:
             return nil
         } // switch type
-    } // func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date?
+    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date?
     
-    func matchRiseOrSet(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchRiseOrSet(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
         let dateToday = possibleDate(for: type, now: initialDate, body: body, location: locationData)
         
@@ -322,9 +322,9 @@ class ASAEventCalendar {
         }
 
         return MATCH_FAILURE
-    } // func matchRiseOrSet(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchRiseOrSet(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
+    func possibleDate(for type: ASADateSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
         switch type {
         case .degreesBelowHorizon:
             let terra = Earth(julianDay: now, highPrecision: true)
@@ -348,9 +348,9 @@ class ASAEventCalendar {
         default:
             return nil
         } // switch type
-    } // func possibleDate(for type: ASATimeSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date?
+    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date?
     
-    func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchTwilight(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
         let degreesAboveHorizon = -degreesBelowHorizon
         let dateToday = possibleDate(for: type, now: initialDate, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData)
@@ -378,7 +378,7 @@ class ASAEventCalendar {
         }
 
         return MATCH_FAILURE
-    } // func matchTwilight(type: ASATimeSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchTwilight(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     fileprivate func matchOneYear(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
@@ -603,7 +603,7 @@ class ASAEventCalendar {
             }
         }
         
-        let startDateSpecificationType: ASATimeSpecificationType = startDateSpecification.type
+        let startDateSpecificationType: ASADateSpecificationType = startDateSpecification.type
         
         if startDateSpecificationType.isOneCalendarDayOrLess {
             let matchesDay = matchOneDay(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components)

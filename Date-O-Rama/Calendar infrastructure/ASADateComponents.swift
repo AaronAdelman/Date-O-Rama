@@ -87,7 +87,7 @@ struct ASADateComponents:  Equatable {
     //    A nanosecond or count of nanoseconds.
     
     var fractionalHours: Double?
-    var dayHalf: ASATimeSpecificationDayHalf?
+    var dayHalf: ASADayHalf?
     
     
     // MARK:  - Accessing Calendar Components

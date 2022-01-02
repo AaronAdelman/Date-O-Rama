@@ -34,7 +34,7 @@ struct ASAProcessedRow {
     var minute:  Int?
     var second:  Int?
     var fractionalHour: Double?
-    var dayHalf: ASATimeSpecificationDayHalf?
+    var dayHalf: ASADayHalf?
 
     var transitionType:  ASATransitionType
     var calendarType:  ASACalendarType

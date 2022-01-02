@@ -446,12 +446,12 @@
 
     func timeComponents(date: Date, transition:  Date??, locationData:  ASALocation) -> (
 //        hour:  Int, minute:  Int, second:  Int, nanosecond:  Int,
-        fractionalHour: Double, dayHalf: ASATimeSpecificationDayHalf) {
+        fractionalHour: Double, dayHalf: ASADayHalf) {
         let solarTimeComponents = self.solarTimeComponents(now: date, locationData: locationData, transition: transition)
         if !solarTimeComponents.valid {
             return (
 //                hour:  -1, minute:  -1, second:  -1, nanosecond:  -1,
-                fractionalHour: -1.0, dayHalf: ASATimeSpecificationDayHalf.night)
+                fractionalHour: -1.0, dayHalf: ASADayHalf.night)
         }
 //        let processedFracitonalHours = solarTimeComponents.daytime ? solarTimeComponents.hours + 12.0 : solarTimeComponents.hours
 //        let (hours, minutes, seconds, nanoseconds) = hoursMinutesSecondsComponents(hours: processedFracitonalHours, minutesPerHour: 60.0, secondsPerMinute: 60.0)

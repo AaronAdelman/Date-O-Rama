@@ -87,7 +87,7 @@ extension EKEvent:  ASAEventCompatible {
         return nil
     }
     
-    var type: ASATimeSpecificationType {
+    var type: ASADateSpecificationType {
         if self.isAllDay {
             if self.endDate.timeIntervalSince(self.startDate) <= 24 * 60 * 60 {
                 return .oneDay

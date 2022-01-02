@@ -9,10 +9,10 @@
 import CoreLocation
 import Foundation
 
-enum ASATimeSpecificationDayHalf:  String, Codable {
+enum ASADayHalf:  String, Codable {
     case night = "night"
     case day   = "day"
-} // enum ASATimeSpecificationDayHalf
+} // enum ASADayHalf
 
 struct ASADateSpecification:  Codable {
     var era:  Int?
@@ -38,7 +38,7 @@ struct ASADateSpecification:  Codable {
     /// Matches if year mod yearDivisor = yearRemainder
     var yearRemainder: Int?
 
-    var type: ASATimeSpecificationType
+    var type: ASADateSpecificationType
     
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
@@ -47,7 +47,7 @@ struct ASADateSpecification:  Codable {
     
     // For solar time events
     var solarHours: Double?
-    var dayHalf: ASATimeSpecificationDayHalf?
+    var dayHalf: ASADayHalf?
     
     // For rise and set events
     var body: String?
@@ -67,7 +67,7 @@ struct ASADateSpecification:  Codable {
 // MARK: -
 
 extension ASADateSpecification {
-    fileprivate func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASATimeSpecificationDayHalf, location: CLLocation, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date? {
+    fileprivate func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASADayHalf, location: CLLocation, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date? {
         switch dayHalf {
         case .night:
             let previousDate = rawDate!.oneDayBefore

@@ -66,7 +66,7 @@ struct ASAEvent:  ASAEventCompatible {
     var emoji: String?
     var fileEmoji: String?
     
-    var type: ASATimeSpecificationType
+    var type: ASADateSpecificationType
 } // struct ASAEvent
 
 
