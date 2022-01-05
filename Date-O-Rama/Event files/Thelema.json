@@ -6,13 +6,15 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.75},
     "eventSpecifications": [
         {"titles": {"en": "Feast of the Supreme Ritual"}, "start": {"type": "1Day", "month": 3, "day": 20}},
-        {"titles": {"en": "Equinox of the Gods"}, "start": {"type": "1Day", "equinoxOrSolstice": "MarEquinox"}},
+        {"titles": {"en": "Equinox of the Gods"}, "start": {"type": "1Day", "equinoxOrSolstice": "MarEquinox"}, "first": {"type": "1Day", "era": 1, "year": 1904}},
         {"titles": {"en": "Feast of the Three Days of the Writing of the Book of the Law"}, "start": {"type": "multiDay", "month": 4, "day": 8}, "end": {"type": "1Day", "month": 4, "day": 10}, "first": {"type": "1Day", "era": 1, "year": 1904}},
         {"titles": {"en": "Summer Solstice"}, "start": {"type": "1Day", "equinoxOrSolstice": "JunSolstice"}, "regionCodes": ["xb"]},
         {"titles": {"en": "Winter Solstice"}, "start": {"type": "1Day", "equinoxOrSolstice": "JunSolstice"}, "regionCodes": ["xc"]},
-        {"titles": {"en": "FeastFeast of the Prophet and His Bride"}, "start": {"type": "1Day", "month": 8, "day": 12}},
-        {"titles": {"en": "Autumnal Equinox"}, "start": {"type": "1Day", "equinoxOrSolstice": "SepEquinox"}, "regionCodes": ["xb"]},
+        {"titles": {"en": "Feast of the Prophet and His Bride"}, "start": {"type": "1Day", "month": 8, "day": 12}},
+        {"titles": {"en": "Autumnal Equinox"}, "start": {"type": "1Day", "equinoxOrSolstice": "SepEquinox"}, "first": {"type": "1Day", "era": 1, "year": 1903}, "regionCodes": ["xb"]},
         {"titles": {"en": "Vernal Equinox"}, "start": {"type": "1Day", "equinoxOrSolstice": "SepEquinox"}, "regionCodes": ["xc"]},
+        {"titles": {"en": "Crowleymas"}, "start": {"type": "1Day", "month": 10, "day": 12}, "first": {"type": "1Day", "era": 1, "year": 1875}},
+        {"titles": {"en": "Crowley’s Greater Feast"}, "start": {"type": "1Day", "month": 12, "day": 1}, "first": {"type": "1Day", "era": 1, "year": 1947}},
         {"titles": {"en": "Winter Solstice"}, "start": {"type": "1Day", "equinoxOrSolstice": "DecSolstice"}, "regionCodes": ["xb"]},
         {"titles": {"en": "Summer Solstice"}, "start": {"type": "1Day", "equinoxOrSolstice": "DecSolstice"}, "regionCodes": ["xc"]},
     ]
