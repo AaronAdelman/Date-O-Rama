@@ -366,6 +366,8 @@
 		A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E232785D7DE00FCDB88 /* Neopaganism.json */; };
 		A5F43E272786113400FCDB88 /* Thelema.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E262786113400FCDB88 /* Thelema.json */; };
 		A5F43E282786113400FCDB88 /* Thelema.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E262786113400FCDB88 /* Thelema.json */; };
+		A5F43E2A278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
+		A5F43E2B278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
 		A5FA5A6A270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
 		A5FA5A6B270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
@@ -677,6 +679,7 @@
 		A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEquinoxOrSolsticeType.swift; sourceTree = "<group>"; };
 		A5F43E232785D7DE00FCDB88 /* Neopaganism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Neopaganism.json; sourceTree = "<group>"; };
 		A5F43E262786113400FCDB88 /* Thelema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Thelema.json; sourceTree = "<group>"; };
+		A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeChangeType.swift; sourceTree = "<group>"; };
 		A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellAllDayEventVisibility.swift; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
 		A5FED7E8276BA65100BB11C9 /* Scientology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scientology.json; sourceTree = "<group>"; };
@@ -1025,6 +1028,7 @@
 				A5790194259263A300224666 /* ASAEventCompatible.swift */,
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */,
+				A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -1712,6 +1716,7 @@
 				A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
 				A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */,
 				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
+				A5F43E2B278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */,
 				A566F4882483D7CF000A05B5 /* CLLocationExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1810,6 +1815,7 @@
 				A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */,
 				A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */,
 				A57C59AD246C5D4B00D7F0BD /* ASARowChooser.swift in Sources */,
+				A5F43E2A278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASARowArrayKey.swift in Sources */,
 				A5AAA7502657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */,
 				A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */,

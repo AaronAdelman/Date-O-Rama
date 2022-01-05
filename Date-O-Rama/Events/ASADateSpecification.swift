@@ -64,6 +64,9 @@ struct ASADateSpecification:  Codable {
     
     // For equinox and solstice events
     var equinoxOrSolstice:  ASAEquinoxOrSolsticeType?
+    
+    // For time change events
+    var timeChange: ASATimeChangeType?
 } // struct ASADateSpecification
 
 
