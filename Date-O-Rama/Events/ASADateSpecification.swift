@@ -61,6 +61,9 @@ struct ASADateSpecification:  Codable {
     
     // For Easter-related events
     var offsetDays: Int?
+    
+    // For equinox and solstice events
+    var equinoxOrSolstice:  ASAEquinoxOrSolsticeType?
 } // struct ASADateSpecification
 
 

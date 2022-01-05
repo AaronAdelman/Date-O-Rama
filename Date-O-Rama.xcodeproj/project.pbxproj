@@ -360,6 +360,10 @@
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
+		A5F43E212785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */; };
+		A5F43E222785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */; };
+		A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E232785D7DE00FCDB88 /* Neopaganism.json */; };
+		A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E232785D7DE00FCDB88 /* Neopaganism.json */; };
 		A5FA5A6A270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
 		A5FA5A6B270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
@@ -668,6 +672,8 @@
 		A5E759102768D0F8008D7D57 /* European Days.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "European Days.json"; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
+		A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEquinoxOrSolsticeType.swift; sourceTree = "<group>"; };
+		A5F43E232785D7DE00FCDB88 /* Neopaganism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Neopaganism.json; sourceTree = "<group>"; };
 		A5FA5A69270C495C006147D0 /* ASAClockCellAllDayEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellAllDayEventVisibility.swift; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
 		A5FED7E8276BA65100BB11C9 /* Scientology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scientology.json; sourceTree = "<group>"; };
@@ -816,6 +822,7 @@
 				A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */,
 				A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
+				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -1007,6 +1014,7 @@
 				A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */,
 				A5DC147026C4488E00A109B6 /* ASADateSpecificationType.swift */,
 				A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */,
+				A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */,
 				A5BFC5B6246B29600075AF58 /* ASAEvent.swift */,
 				A57BCCBD247D8A700019C02C /* ASAEventCalendar.swift */,
 				A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */,
@@ -1348,6 +1356,7 @@
 				A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
+				A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */,
 				A5BDE77D26677E7900F47416 /* Islam (supplemental).json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
 				A5E759122768D0F8008D7D57 /* European Days.json in Resources */,
@@ -1374,6 +1383,7 @@
 				A5837BE1271C139700047475 /* Named full moons.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
+				A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */,
 				A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
@@ -1623,6 +1633,7 @@
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
+				A5F43E222785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
 				A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
 				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
@@ -1751,6 +1762,7 @@
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */,
 				A5B6D03825AF294E005ECE8D /* ASAScalable.swift in Sources */,
+				A5F43E212785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
 				A5932277257808D600318BC3 /* ASAMainRowsByTimeZoneView.swift in Sources */,
 				A56BDB33257660270037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */,
