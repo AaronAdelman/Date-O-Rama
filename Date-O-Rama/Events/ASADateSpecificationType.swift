@@ -15,7 +15,7 @@ enum ASADateSpecificationType:  String, Codable {
     case oneMonth                            = "1Month"
     case multiDay                            = "multiDay"
     case oneDay                              = "1Day"
-    case fixedTime                           = "fixedTime"
+    case point                               = "pt"
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
@@ -30,10 +30,10 @@ enum ASADateSpecificationType:  String, Codable {
     case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
     case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
     
-    case MarchEquinox                        = "MarEquinox"
-    case JuneSolstice                        = "JunSolstice"
-    case SeptemberEquinox                    = "SepEquinox"
-    case DecemberSolstice                    = "DecSolstice"
+//    case MarchEquinox                        = "MarEquinox"
+//    case JuneSolstice                        = "JunSolstice"
+//    case SeptemberEquinox                    = "SepEquinox"
+//    case DecemberSolstice                    = "DecSolstice"
     
     case rise                                = "rise"
     case set                                 = "set"
@@ -67,7 +67,9 @@ extension ASADateSpecificationType {
     
     var isLessThanOneCalendarDay: Bool {
         switch self {
-        case .fixedTime, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter, .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice, .rise, .set:
+        case .point, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .timeChange, .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter,
+//                .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice,
+                .rise, .set:
             return true
         default:
             return false

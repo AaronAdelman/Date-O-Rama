@@ -210,33 +210,33 @@ class ASAEventCalendar {
         } // switch startDateSpecification.type
     } // func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date? {
-        let terra = Earth(julianDay: now, highPrecision: true)
-        var possibleDate: Date
-        
-        switch type {
-        case .MarchEquinox:
-            let MarchEquinox = terra.equinox(of: .northwardSpring)
-            possibleDate = MarchEquinox.date
-            
-        case .JuneSolstice:
-            let JuneSolstice = terra.solstice(of: .northernSummer)
-            possibleDate = JuneSolstice.date
-            
-        case .SeptemberEquinox:
-            let SeptemberEquinox = terra.equinox(of: .southwardSpring)
-            possibleDate = SeptemberEquinox.date
-            
-        case .DecemberSolstice:
-            let DecemberSolstice = terra.solstice(of: .southernSummer)
-            possibleDate = DecemberSolstice.date
-
-        default:
-            return nil
-        } // switch type
-        
-        return possibleDate
-    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date?
+//    func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date? {
+//        let terra = Earth(julianDay: now, highPrecision: true)
+//        var possibleDate: Date
+//
+//        switch type {
+//        case .MarchEquinox:
+//            let MarchEquinox = terra.equinox(of: .northwardSpring)
+//            possibleDate = MarchEquinox.date
+//
+//        case .JuneSolstice:
+//            let JuneSolstice = terra.solstice(of: .northernSummer)
+//            possibleDate = JuneSolstice.date
+//
+//        case .SeptemberEquinox:
+//            let SeptemberEquinox = terra.equinox(of: .southwardSpring)
+//            possibleDate = SeptemberEquinox.date
+//
+//        case .DecemberSolstice:
+//            let DecemberSolstice = terra.solstice(of: .southernSummer)
+//            possibleDate = DecemberSolstice.date
+//
+//        default:
+//            return nil
+//        } // switch type
+//
+//        return possibleDate
+//    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date?
 
     func possibleDate(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
@@ -266,36 +266,36 @@ class ASAEventCalendar {
         return possibleDate
     } // func possibleDate(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
     
-    func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-        let initialDate = JulianDay(startOfDay)
-        guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
-            return MATCH_FAILURE
-        }
-        
-        if startOfDay <= dateThisYear && dateThisYear < startOfNextDay {
-            return (true, dateThisYear, dateThisYear)
-        }
-        
-        let NUMBER_OF_DAYS_PER_YEAR = 365.2425
-        
-        if dateThisYear < startOfDay {
-            guard let dateLastYear = possibleDate(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
-                return MATCH_FAILURE
-            }
-            if startOfDay <= dateLastYear && dateThisYear < dateLastYear {
-                return (true, dateLastYear, dateLastYear)
-            }
-        } else if dateThisYear > startOfNextDay {
-            guard let dateNextYear = possibleDate(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
-                return MATCH_FAILURE
-            }
-            if startOfDay <= dateNextYear && dateThisYear < dateNextYear {
-                return (true, dateNextYear, dateNextYear)
-            }
-        }
-
-        return MATCH_FAILURE
-    } // func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+//    func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+//        let initialDate = JulianDay(startOfDay)
+//        guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
+//            return MATCH_FAILURE
+//        }
+//
+//        if startOfDay <= dateThisYear && dateThisYear < startOfNextDay {
+//            return (true, dateThisYear, dateThisYear)
+//        }
+//
+//        let NUMBER_OF_DAYS_PER_YEAR = 365.2425
+//
+//        if dateThisYear < startOfDay {
+//            guard let dateLastYear = possibleDate(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
+//                return MATCH_FAILURE
+//            }
+//            if startOfDay <= dateLastYear && dateThisYear < dateLastYear {
+//                return (true, dateLastYear, dateLastYear)
+//            }
+//        } else if dateThisYear > startOfNextDay {
+//            guard let dateNextYear = possibleDate(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
+//                return MATCH_FAILURE
+//            }
+//            if startOfDay <= dateNextYear && dateThisYear < dateNextYear {
+//                return (true, dateNextYear, dateNextYear)
+//            }
+//        }
+//
+//        return MATCH_FAILURE
+//    } // func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate = JulianDay(startOfDay)
@@ -705,7 +705,7 @@ class ASAEventCalendar {
             let offset = startDateSpecification.offset ?? 0.0
             return matchTwilight(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
 
-        case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .fixedTime:
+        case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes, .point:
             // One-instant events
             return (true, nil, nil)
 
@@ -725,9 +725,9 @@ class ASAEventCalendar {
             // Numbered full moon days
             return matchNumberedFullMoon(startDateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
 
-        case .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
-            // Equinoxes and solstices
-            return matchEquinoxOrSolstice(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+//        case .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
+//            // Equinoxes and solstices
+//            return matchEquinoxOrSolstice(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
 
         case .rise, .set:
             // Planetary/Moon rise and set

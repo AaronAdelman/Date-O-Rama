@@ -95,7 +95,7 @@ extension EKEvent:  ASAEventCompatible {
             
             return .multiDay
         } else {
-            return .fixedTime
+            return .point
         }
     }
 } // extension EKEvent:  ASAEventCompatible

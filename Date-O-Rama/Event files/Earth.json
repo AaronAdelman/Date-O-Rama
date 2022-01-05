@@ -6,22 +6,22 @@
     "calendarColor": {"red": 0.133, "green": 0.212, "blue": 0.290},
     "eventSpecifications": [
         {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
-            "start": {"type": "MarEquinox"}, "regionCodes": ["xb"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "MarEquinox"}, "regionCodes": ["xb"]},
         {"titles": {"en": "Summer Solstice", "he": "היפוך קיץ"},
-            "start": {"type": "JunSolstice"}, "regionCodes": ["xb"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "JunSolstice"}, "regionCodes": ["xb"]},
         {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"},
-            "start": {"type": "SepEquinox"}, "regionCodes": ["xb"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "SepEquinox"}, "regionCodes": ["xb"]},
         {"titles": {"en": "Winter Solstice", "he": "היפוך חורף"},
-            "start": {"type": "DecSolstice"}, "regionCodes": ["xb"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "DecSolstice"}, "regionCodes": ["xb"]},
 
         {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"},
-            "start": {"type": "SepEquinox"}, "regionCodes": ["xc"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "SepEquinox"}, "regionCodes": ["xc"]},
         {"titles": {"en": "Summer Solstice", "he": "היפוך קיץ"},
-            "start": {"type": "DecSolstice"}, "regionCodes": ["xc"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "DecSolstice"}, "regionCodes": ["xc"]},
         {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"},
-            "start": {"type": "MarEquinox"}, "regionCodes": ["xc"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "MarEquinox"}, "regionCodes": ["xc"]},
         {"titles": {"en": "Winter Solstice", "he": "היפוך חורף"},
-            "start": {"type": "JunSolstice"}, "regionCodes": ["xc"]},
+            "start": {"type": "pt", "equinoxOrSolstice": "JunSolstice"}, "regionCodes": ["xc"]},
  ]
     }
 
