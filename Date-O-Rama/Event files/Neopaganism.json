@@ -2,7 +2,7 @@
     "titles": {"en": "Neopaganism", "he": "נאו־פגניות"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "xloc*",
+    "calendarCode": "gre*",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.25},
     "eventSpecifications": [
         {"titles": {"en": "Ostara", "he": "אוסטרה"}, "start": {"type": "1Day", "equinoxOrSolstice": "MarEquinox"}, "regionCodes": ["xb"]},
