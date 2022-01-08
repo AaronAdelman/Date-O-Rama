@@ -11,5 +11,6 @@
         {"start": {"type": "1Month", "month": 1},  "titles": {"en": "National Black Diamond Month"}, "emoji": "◆", "urls": {"en": "http://skepdic.com/fengshui.html"}},
         {"titles": {"en": "Holistic Therapy Day"}, "start": {"type": "1Day", "month": 7, "day": 26}, "urls": {"en": "http://skepdic.com/holistic.html"}, "emoji": "💀"},
         {"titles": {"en": "National Holistic Pet Day"}, "start": {"type": "1Day", "month": 8, "day": 30}, "urls": {"en": "http://skepdic.com/holistic.html"}, "emoji": "💀"},
+        {"titles": {"en": "National Vision Board Day"}, "start": {"type": "1Day", "month": 1, "weekdays": [7], "weekdayRecurrence": 2}, "first": {"type": "1Day", "era": 1, "year": 2015}, "urls": {"en": "http://skepdic.com/lawofattraction.html"}}
     ]
 }
