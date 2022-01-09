@@ -10,8 +10,8 @@ import Foundation
 
 enum ASAEquinoxOrSolsticeType:  String, Codable {
     case none             = "none"
-    case MarchEquinox     = "MarEquinox"
-    case JuneSolstice     = "JunSolstice"
-    case SeptemberEquinox = "SepEquinox"
-    case DecemberSolstice = "DecSolstice"
+    case MarchEquinox     = "Mar"
+    case JuneSolstice     = "Jun"
+    case SeptemberEquinox = "Sep"
+    case DecemberSolstice = "Dec"
 } // enum ASAEquinoxOrSolsticeType

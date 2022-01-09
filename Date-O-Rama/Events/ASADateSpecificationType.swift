@@ -30,10 +30,10 @@ enum ASADateSpecificationType:  String, Codable {
     case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
     case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
     
-//    case MarchEquinox                        = "MarEquinox"
-//    case JuneSolstice                        = "JunSolstice"
-//    case SeptemberEquinox                    = "SepEquinox"
-//    case DecemberSolstice                    = "DecSolstice"
+//    case MarchEquinox                        = "Mar"
+//    case JuneSolstice                        = "Jun"
+//    case SeptemberEquinox                    = "Sep"
+//    case DecemberSolstice                    = "Dec"
     
     case rise                                = "rise"
     case set                                 = "set"
