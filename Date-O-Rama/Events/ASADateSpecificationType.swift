@@ -55,19 +55,19 @@ extension ASADateSpecificationType {
     } // var isAllDay
     
     var isOneCalendarDayOrLess: Bool {
-        return self.isOneCalendarDay || self.isLessThanOneCalendarDay
+        return self == .oneDay || self.isLessThanOneCalendarDay
     } // var isOneCalendarDayOrLess
     
-    var isOneCalendarDay: Bool {
-        switch self {
-        case .oneDay
-//            , .firstFullMoonDay, .secondFullMoonDay, .Easter
-            :
-            return true
-        default:
-            return false
-        } // switch self
-    } // var isOneCalendarDay
+//    var isOneCalendarDay: Bool {
+//        switch self {
+//        case .oneDay
+////            , .firstFullMoonDay, .secondFullMoonDay, .Easter
+//            :
+//            return true
+//        default:
+//            return false
+//        } // switch self
+//    } // var isOneCalendarDay
     
     var isLessThanOneCalendarDay: Bool {
         switch self {
