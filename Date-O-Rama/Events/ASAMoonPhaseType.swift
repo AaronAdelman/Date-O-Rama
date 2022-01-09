@@ -11,7 +11,7 @@ import Foundation
 enum ASAMoonPhaseType: String, Codable {
     case none           = "none"
     case newMoon        = "newMoon"
-    case firstQuarter   = "firstQuarter"
+    case firstQuarter   = "1stQuarter"
     case fullMoon       = "fullMoon"
     case lastQuarter    = "lastQuarter"
     case firstFullMoon  = "1stFullMoon" // Requires a month

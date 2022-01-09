@@ -36,7 +36,7 @@ class ASAEventSpecification: Codable {
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
-        case firstDateSpecification = "first"
+        case firstDateSpecification = "1st"
         case titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji
     } // enum CodingKeys
 } // extension ASAEventSpecification

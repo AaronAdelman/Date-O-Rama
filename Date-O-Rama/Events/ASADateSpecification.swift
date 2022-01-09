@@ -9,11 +9,6 @@
 import CoreLocation
 import Foundation
 
-enum ASADayHalf:  String, Codable {
-    case night = "night"
-    case day   = "day"
-} // enum ASADayHalf
-
 struct ASADateSpecification:  Codable {
     var era:  Int?
     

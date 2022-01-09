@@ -41,7 +41,7 @@
         {"titles": {"en": "Feast of St. Scholastica"}, "start": {"type": "1Day", "month": 2, "day": 10}},
         
         {"titles": {"en": "Feast of Our Lady of Lourdes"}, "start": {"type": "1Day", "month": 2, "day": 11}},
-        {"titles": {"en": "World Day of the Sick"}, "start": {"type": "1Day", "month": 2, "day": 11}, "first": {"type": "1Day", "era": 1, "year": 1992}, "urls": {"en": "https://nationaldaycalendar.com/world-day-of-the-sick-february-11/"}},
+        {"titles": {"en": "World Day of the Sick"}, "start": {"type": "1Day", "month": 2, "day": 11}, "1st": {"type": "1Day", "era": 1, "year": 1992}, "urls": {"en": "https://nationaldaycalendar.com/world-day-of-the-sick-february-11/"}},
         
         {"titles": {"en": "Feast of Saints Cyril and Methodius"}, "start": {"type": "1Day", "month": 2, "day": 14}},
         {"titles": {"en": "Feast of the Seven Holy Founders of the Servite Order"}, "start": {"type": "1Day", "month": 2, "day": 17}},

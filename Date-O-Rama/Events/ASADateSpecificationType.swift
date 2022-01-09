@@ -23,7 +23,7 @@ enum ASADateSpecificationType:  String, Codable {
     case IslamicPrayerTime                   = "IslamicPrayerTime"
     
 //    case newMoon                             = "newMoon"
-//    case firstQuarter                        = "firstQuarter"
+//    case firstQuarter                        = "1stQuarter"
 //    case fullMoon                            = "fullMoon"
 //    case lastQuarter                         = "lastQuarter"
     

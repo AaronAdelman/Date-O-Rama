@@ -9,7 +9,7 @@
             "start": {"type": "pt", "MoonPhase": "newMoon"},
             "emoji": "🌑"},
         {"titles": {"en": "First Quarter", "he": "רבע ראשון"},
-            "start": {"type": "pt", "MoonPhase": "firstQuarter"},
+            "start": {"type": "pt", "MoonPhase": "1stQuarter"},
             "emoji": "🌓"},
         {"titles": {"en": "Full Moon", "he": "ירח מלא"},
             "start": {"type": "pt", "MoonPhase": "fullMoon"},

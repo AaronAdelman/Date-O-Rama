@@ -327,6 +327,8 @@
 		A5DB52D6278B144B001562C1 /* ASAEasterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D4278B144B001562C1 /* ASAEasterType.swift */; };
 		A5DB52D8278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */; };
 		A5DB52D9278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */; };
+		A5DB52DB278B23EB001562C1 /* ASADayHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */; };
+		A5DB52DC278B23EB001562C1 /* ASADayHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */; };
 		A5DC147126C4488E00A109B6 /* ASADateSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASADateSpecificationType.swift */; };
 		A5DC147226C4488E00A109B6 /* ASADateSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASADateSpecificationType.swift */; };
 		A5DC8765264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */; };
@@ -661,6 +663,7 @@
 		A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewEKEventView.swift; sourceTree = "<group>"; };
 		A5DB52D4278B144B001562C1 /* ASAEasterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEasterType.swift; sourceTree = "<group>"; };
 		A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMoonPhaseType.swift; sourceTree = "<group>"; };
+		A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADayHalf.swift; sourceTree = "<group>"; };
 		A5DC147026C4488E00A109B6 /* ASADateSpecificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateSpecificationType.swift; sourceTree = "<group>"; };
 		A5DC8764264A7DC300A8B9B5 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
 		A5DC8767264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventAvailabilityExtensions.swift; sourceTree = "<group>"; };
@@ -1026,6 +1029,7 @@
 			children = (
 				A56EA58C25EFB40500D46610 /* ASADateSpecification.swift */,
 				A5DC147026C4488E00A109B6 /* ASADateSpecificationType.swift */,
+				A5DB52DA278B23EB001562C1 /* ASADayHalf.swift */,
 				A5DB52D4278B144B001562C1 /* ASAEasterType.swift */,
 				A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */,
 				A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */,
@@ -1638,6 +1642,7 @@
 				A5E61C6D263EC21200254AF6 /* EKEventStatus.swift in Sources */,
 				A5CA532524979D1D008EEE2F /* ASARowChooser.swift in Sources */,
 				A506E3BF252C9075009345A0 /* ASALocationSymbol.swift in Sources */,
+				A5DB52DC278B23EB001562C1 /* ASADayHalf.swift in Sources */,
 				A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */,
 				A5AAA74D2656D669000C18AC /* ASALinkedEventCell.swift in Sources */,
 				A566F47D2483D7CF000A05B5 /* ASATimeFormat.swift in Sources */,
@@ -1838,6 +1843,7 @@
 				A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
 				A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */,
 				A5AA3D6C25D1685C0043FF9F /* ArrayExtensions.swift in Sources */,
+				A5DB52DB278B23EB001562C1 /* ASADayHalf.swift in Sources */,
 				A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
 				A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */,

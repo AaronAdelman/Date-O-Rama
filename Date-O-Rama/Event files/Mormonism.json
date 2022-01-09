@@ -5,6 +5,6 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.06, "green": 0.18, "blue": 0.34},
     "eventSpecifications": [
-        {"titles": {"en": "Pioneer Day"}, "start": {"type": "1Day", "month": 7, "day": 24}, "first": {"type": "1Day", "era": 1, "year": 1949}, "urls": {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
+        {"titles": {"en": "Pioneer Day"}, "start": {"type": "1Day", "month": 7, "day": 24}, "1st": {"type": "1Day", "era": 1, "year": 1949}, "urls": {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
     ]
 }
