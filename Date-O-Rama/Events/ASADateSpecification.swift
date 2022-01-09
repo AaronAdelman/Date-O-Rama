@@ -68,6 +68,9 @@ struct ASADateSpecification:  Codable {
     
     // For time change events
     var timeChange: ASATimeChangeType?
+    
+    // For Moon phase events
+    var MoonPhase: ASAMoonPhaseType?
 } // struct ASADateSpecification
 
 

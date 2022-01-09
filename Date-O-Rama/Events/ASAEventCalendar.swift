@@ -120,7 +120,39 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+//    func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+//        var phase: MoonPhase
+//        switch type {
+//        case .fullMoon:
+//            phase = .fullMoon
+//
+//        case .newMoon:
+//            phase = .newMoon
+//
+//        case .firstQuarter:
+//            phase = .firstQuarter
+//
+//        case .lastQuarter:
+//            phase = .lastQuarter
+//
+//        default:
+//            // Should not happen!
+//            return MATCH_FAILURE
+//        } // switch type
+//
+//        let now = JulianDay(startOfDay)
+//        let luna = Moon(julianDay: now, highPrecision: true)
+//
+//        let julianDayOfNextPhase: JulianDay = luna.time(of: phase, forward: true, mean: false)
+//        let nextPhase = julianDayOfNextPhase.date
+//        if nextPhase < startOfNextDay {
+//            return (true, nextPhase, nextPhase)
+//        }
+//
+//        return MATCH_FAILURE
+//    } // func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    
+    func matchMoonPhase(type: ASAMoonPhaseType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         var phase: MoonPhase
         switch type {
         case .fullMoon:
@@ -150,7 +182,7 @@ class ASAEventCalendar {
         }
         
         return MATCH_FAILURE
-    } // func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchMoonPhase(type: ASAMoonPhaseType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
 
@@ -726,9 +758,9 @@ class ASAEventCalendar {
             // Islamic prayer times
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
             
-        case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
-            // Moon phases
-            return matchMoonPhase(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+//        case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
+//            // Moon phases
+//            return matchMoonPhase(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             
         case .firstFullMoonDay, .secondFullMoonDay:
             // Numbered full moon days
@@ -894,6 +926,17 @@ class ASAEventCalendar {
             let matchesAndStartAndEndDates = matchEaster(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if !matchesAndStartAndEndDates.matches {
                 return NO_MATCH
+            }
+        }
+        
+        let MoonPhase = dateSpecification.MoonPhase
+        if MoonPhase != nil && MoonPhase! != .none {
+            let matchesAndStartAndEndDates = matchMoonPhase(type: MoonPhase!, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesAndStartAndEndDates.matches {
+                return NO_MATCH
+            } else {
+                start = matchesAndStartAndEndDates.startDate!
+                end = matchesAndStartAndEndDates.endDate!
             }
         }
 

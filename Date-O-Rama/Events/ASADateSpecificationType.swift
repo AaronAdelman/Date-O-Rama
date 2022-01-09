@@ -22,10 +22,10 @@ enum ASADateSpecificationType:  String, Codable {
 //    case timeChange                          = "timeChange" // Change from standard to daylight savings time or vice versa
     case IslamicPrayerTime                   = "IslamicPrayerTime"
     
-    case newMoon                             = "newMoon"
-    case firstQuarter                        = "firstQuarter"
-    case fullMoon                            = "fullMoon"
-    case lastQuarter                         = "lastQuarter"
+//    case newMoon                             = "newMoon"
+//    case firstQuarter                        = "firstQuarter"
+//    case fullMoon                            = "fullMoon"
+//    case lastQuarter                         = "lastQuarter"
     
     case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
     case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
@@ -73,7 +73,8 @@ extension ASADateSpecificationType {
         switch self {
         case .point, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes,
 //                .timeChange,
-                .IslamicPrayerTime, .newMoon, .firstQuarter, .fullMoon, .lastQuarter,
+                .IslamicPrayerTime,
+//                .newMoon, .firstQuarter, .fullMoon, .lastQuarter,
 //                .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice,
                 .rise, .set:
             return true
