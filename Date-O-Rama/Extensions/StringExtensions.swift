@@ -210,7 +210,6 @@ extension String {
              REGION_CODE_Sudan,
              REGION_CODE_Syria,
              REGION_CODE_Yemen,
-             REGION_CODE_United_Arab_Emirates,
              REGION_CODE_Malaysia:
             return [6, 7]
             
