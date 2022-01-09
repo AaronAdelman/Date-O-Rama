@@ -27,8 +27,8 @@ enum ASADateSpecificationType:  String, Codable {
 //    case fullMoon                            = "fullMoon"
 //    case lastQuarter                         = "lastQuarter"
     
-    case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
-    case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
+//    case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
+//    case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
     
 //    case MarchEquinox                        = "Mar"
 //    case JuneSolstice                        = "Jun"
@@ -44,8 +44,8 @@ enum ASADateSpecificationType:  String, Codable {
 extension ASADateSpecificationType {
     var isAllDay: Bool {
         switch self {
-        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .firstFullMoonDay, .secondFullMoonDay
-//            , .Easter
+        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear
+//            , .firstFullMoonDay, .secondFullMoonDay, .Easter
             :
             return true
             
@@ -60,8 +60,8 @@ extension ASADateSpecificationType {
     
     var isOneCalendarDay: Bool {
         switch self {
-        case .oneDay, .firstFullMoonDay, .secondFullMoonDay
-//            , .Easter
+        case .oneDay
+//            , .firstFullMoonDay, .secondFullMoonDay, .Easter
             :
             return true
         default:
