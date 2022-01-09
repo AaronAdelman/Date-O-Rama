@@ -38,13 +38,15 @@ enum ASADateSpecificationType:  String, Codable {
     case rise                                = "rise"
     case set                                 = "set"
     
-    case Easter                              = "Easter"
+//    case Easter                              = "Easter"
 } // enum ASADateSpecificationType
 
 extension ASADateSpecificationType {
     var isAllDay: Bool {
         switch self {
-        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .firstFullMoonDay, .secondFullMoonDay, .Easter:
+        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear, .firstFullMoonDay, .secondFullMoonDay
+//            , .Easter
+            :
             return true
             
         default:
@@ -58,7 +60,9 @@ extension ASADateSpecificationType {
     
     var isOneCalendarDay: Bool {
         switch self {
-        case .oneDay, .firstFullMoonDay, .secondFullMoonDay, .Easter:
+        case .oneDay, .firstFullMoonDay, .secondFullMoonDay
+//            , .Easter
+            :
             return true
         default:
             return false

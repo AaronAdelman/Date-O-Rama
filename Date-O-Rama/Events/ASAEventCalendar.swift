@@ -743,10 +743,10 @@ class ASAEventCalendar {
             guard let body = startDateSpecification.body else { return MATCH_FAILURE }
             return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
             
-        case .Easter:
-            // Easter and related events
-            assert(endDateSpecification == nil)
-            return matchEaster(date: date, calendar: calendar, startDateSpecification: tweakedStartDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+//        case .Easter:
+//            // Easter and related events
+//            assert(endDateSpecification == nil)
+//            return matchEaster(date: date, calendar: calendar, startDateSpecification: tweakedStartDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
 
         } // switch startDateSpecificationType
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
@@ -886,6 +886,14 @@ class ASAEventCalendar {
             } else {
                 start = matchesAndStartAndEndDates.startDate!
                 end = matchesAndStartAndEndDates.endDate!
+            }
+        }
+        
+        let Easter = dateSpecification.Easter
+        if Easter != nil && Easter! != .none {
+            let matchesAndStartAndEndDates = matchEaster(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesAndStartAndEndDates.matches {
+                return NO_MATCH
             }
         }
 

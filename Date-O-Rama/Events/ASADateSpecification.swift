@@ -60,6 +60,7 @@ struct ASADateSpecification:  Codable {
     var dhuhrMinutes: Double?
     
     // For Easter-related events
+    var Easter: ASAEasterType?
     var offsetDays: Int?
     
     // For equinox and solstice events
