@@ -589,6 +589,10 @@ class ASAEventCalendar {
         return (true, eventStartDate, eventEndDate)
     } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?, calendar: ASACalendar, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
+    fileprivate func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, start: Date?, end: Date?) {
+        return matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+    } // func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, start: Date?, end: Date?)
+    
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, eventSpecification: ASAEventSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let startDateSpecification = eventSpecification.startDateSpecification
         let endDateSpecification = eventSpecification.endDateSpecification
@@ -640,7 +644,7 @@ class ASAEventCalendar {
             
         case .point:
             // Point events
-            let matchesDay = matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if !matchesDay.matches {
                 return MATCH_FAILURE
             } else {
@@ -867,7 +871,15 @@ class ASAEventCalendar {
         if calendar.calendarCode.isSunsetTransitionCalendar {
             let previousDate = date.oneDayBefore
             let previousEvents = previousDate.solarEvents(location: location, events: [.sunset, .dusk72Minutes], timeZone:  timeZone)
-            previousSunset = previousEvents[.sunset]!! // שקיעה
+            let previousSunsetDoubleOptional = previousEvents[.sunset]
+            if previousSunsetDoubleOptional == nil {
+                return []
+            }
+            let previousSunsetOptional = previousSunsetDoubleOptional!
+            if previousSunsetOptional == nil {
+                return []
+            }
+            previousSunset = previousSunsetOptional! // שקיעה
             previousOtherDusk = previousEvents[.dusk72Minutes]!!
             
             let events = date.solarEvents(location: location, events: [.sunrise, .sunset, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)

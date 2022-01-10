@@ -135,7 +135,7 @@ extension Date {
             // Guarding against there being no Sunset
             let sixPM: Date = self.sixPM(timeZone: timeZone)
             result = (sixPM, sixPM)
-            assert(result.date >= self)
+//            assert(result.date >= self)
         } else if sunset! == nil {
             // Guarding against there being no Sunset
             let sixPM: Date = self.sixPM(timeZone: timeZone)
