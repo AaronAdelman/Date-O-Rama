@@ -120,38 +120,6 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-//    func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-//        var phase: MoonPhase
-//        switch type {
-//        case .fullMoon:
-//            phase = .fullMoon
-//
-//        case .newMoon:
-//            phase = .newMoon
-//
-//        case .firstQuarter:
-//            phase = .firstQuarter
-//
-//        case .lastQuarter:
-//            phase = .lastQuarter
-//
-//        default:
-//            // Should not happen!
-//            return MATCH_FAILURE
-//        } // switch type
-//
-//        let now = JulianDay(startOfDay)
-//        let luna = Moon(julianDay: now, highPrecision: true)
-//
-//        let julianDayOfNextPhase: JulianDay = luna.time(of: phase, forward: true, mean: false)
-//        let nextPhase = julianDayOfNextPhase.date
-//        if nextPhase < startOfNextDay {
-//            return (true, nextPhase, nextPhase)
-//        }
-//
-//        return MATCH_FAILURE
-//    } // func matchMoonPhase(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
-    
     func matchMoonPhase(type: ASAMoonPhaseType, startOfDay:  Date, startOfNextDay:  Date, dateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         if type == .firstFullMoon || type == .secondFullMoon {
             let matchesDayNumber = matchNumberedMoonPhaseNumbering(startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
@@ -190,64 +158,6 @@ class ASAEventCalendar {
         
         return MATCH_FAILURE
     } // func matchMoonPhase(type: ASAMoonPhaseType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
-    
-//    func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-//
-//        // Check if this is a full Moon
-//        let fullMoonTuple = matchMoonPhase(type: .fullMoon, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-//        if !fullMoonTuple.matches {
-//            return MATCH_FAILURE
-//        }
-//        
-//        // Check the month
-//        guard let componentsMonth = components.month else {
-//            return MATCH_FAILURE
-//        }
-//        guard let startDateSpecifiationMonth = startDateSpecification.month else {
-//            return MATCH_FAILURE
-//        }
-//        if componentsMonth != startDateSpecifiationMonth {
-//            return MATCH_FAILURE
-//        }
-//        
-//        // Check which day this falls on
-//        guard let componentsDay = components.day else {
-//            return MATCH_FAILURE
-//        }
-//        let CUTOFF = ((12.0 * 60.0) + 44.0) * 60.0 + 2.9
-//        switch startDateSpecification.type {
-//        case .firstFullMoonDay:
-//            if componentsDay < 30 {
-//                return (true, nil, nil)
-//                
-//            }
-//            if componentsDay == 30 {
-//                guard let secondsSinceMidnight: Double = components.secondsSinceStartOfDay else {
-//                    return MATCH_FAILURE
-//                }
-//                if secondsSinceMidnight < CUTOFF {
-//                    return (true, nil, nil)
-//                }
-//            }
-//            return MATCH_FAILURE
-//            
-//        case.secondFullMoonDay:
-//            if componentsDay > 30 {
-//                return (true, nil, nil)
-//            }
-//            guard let secondsSinceMidnight: Double = components.secondsSinceStartOfDay else {
-//                return MATCH_FAILURE
-//            }
-//            if secondsSinceMidnight > CUTOFF {
-//                return (true, nil, nil)
-//            }
-//            return MATCH_FAILURE
-//            
-//        default:
-//            // Should not happen
-//            return MATCH_FAILURE
-//        } // switch startDateSpecification.type
-//    } // func matchNumberedFullMoon(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         // Check the month
@@ -297,35 +207,7 @@ class ASAEventCalendar {
             // Should not happen
             return MATCH_FAILURE
         } // switch startDateSpecification.type
-    } //
-    
-//    func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date? {
-//        let terra = Earth(julianDay: now, highPrecision: true)
-//        var possibleDate: Date
-//
-//        switch type {
-//        case .MarchEquinox:
-//            let MarchEquinox = terra.equinox(of: .northwardSpring)
-//            possibleDate = MarchEquinox.date
-//
-//        case .JuneSolstice:
-//            let JuneSolstice = terra.solstice(of: .northernSummer)
-//            possibleDate = JuneSolstice.date
-//
-//        case .SeptemberEquinox:
-//            let SeptemberEquinox = terra.equinox(of: .southwardSpring)
-//            possibleDate = SeptemberEquinox.date
-//
-//        case .DecemberSolstice:
-//            let DecemberSolstice = terra.solstice(of: .southernSummer)
-//            possibleDate = DecemberSolstice.date
-//
-//        default:
-//            return nil
-//        } // switch type
-//
-//        return possibleDate
-//    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay) -> Date?
+    } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
 
     func possibleDate(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
@@ -354,37 +236,6 @@ class ASAEventCalendar {
         
         return possibleDate
     } // func possibleDate(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
-    
-//    func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-//        let initialDate = JulianDay(startOfDay)
-//        guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
-//            return MATCH_FAILURE
-//        }
-//
-//        if startOfDay <= dateThisYear && dateThisYear < startOfNextDay {
-//            return (true, dateThisYear, dateThisYear)
-//        }
-//
-//        let NUMBER_OF_DAYS_PER_YEAR = 365.2425
-//
-//        if dateThisYear < startOfDay {
-//            guard let dateLastYear = possibleDate(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
-//                return MATCH_FAILURE
-//            }
-//            if startOfDay <= dateLastYear && dateThisYear < dateLastYear {
-//                return (true, dateLastYear, dateLastYear)
-//            }
-//        } else if dateThisYear > startOfNextDay {
-//            guard let dateNextYear = possibleDate(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
-//                return MATCH_FAILURE
-//            }
-//            if startOfDay <= dateNextYear && dateThisYear < dateNextYear {
-//                return (true, dateNextYear, dateNextYear)
-//            }
-//        }
-//
-//        return MATCH_FAILURE
-//    } // func matchEquinoxOrSolstice(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate = JulianDay(startOfDay)
@@ -537,7 +388,7 @@ class ASAEventCalendar {
         } else {
             return MATCH_FAILURE
         }
-    }
+    } // func matchOneYear(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchMultiYear(endDateSpecification: ASADateSpecification?, components: ASADateComponents, startDateSpecification: ASADateSpecification, calendar: ASACalendar, date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         assert(endDateSpecification != nil)
@@ -560,7 +411,7 @@ class ASAEventCalendar {
         let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
         let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
         return (true, startDate, endDate)
-    }
+    } // func matchMultiYear(endDateSpecification: ASADateSpecification?, components: ASADateComponents, startDateSpecification: ASADateSpecification, calendar: ASACalendar, date: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchOneMonth(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneMonth(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
@@ -571,7 +422,7 @@ class ASAEventCalendar {
         } else {
             return MATCH_FAILURE
         }
-    }
+    } // func matchOneMonth(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchMultiMonth(endDateSpecification: ASADateSpecification?, date: Date, calendar: ASACalendar, locationData: ASALocation, startDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         assert(endDateSpecification != nil)
@@ -811,36 +662,14 @@ class ASAEventCalendar {
             let (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             return (true, startDate!, endDate!)
 
-//        case .timeChange:
-//            // Time change events
-//            return matchTimeChange(timeZone: locationData.timeZone, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-
         case .IslamicPrayerTime:
             // Islamic prayer times
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
             
-//        case .newMoon, .firstQuarter, .fullMoon, .lastQuarter:
-//            // Moon phases
-//            return matchMoonPhase(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-            
-//        case .firstFullMoonDay, .secondFullMoonDay:
-//            // Numbered full moon days
-//            return matchNumberedFullMoon(startDateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-
-//        case .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice:
-//            // Equinoxes and solstices
-//            return matchEquinoxOrSolstice(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-
         case .rise, .set:
             // Planetary/Moon rise and set
             guard let body = startDateSpecification.body else { return MATCH_FAILURE }
             return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
-            
-//        case .Easter:
-//            // Easter and related events
-//            assert(endDateSpecification == nil)
-//            return matchEaster(date: date, calendar: calendar, startDateSpecification: tweakedStartDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-
         } // switch startDateSpecificationType
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
@@ -1107,19 +936,12 @@ class ASAEventCalendar {
                         title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? ""
                     }
                     let color = self.color
-                    var startDate = returnedStartDate
-                    var endDate = returnedEndDate
-                    
-//                    if startDate == nil {
-//                        (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: appropriateCalendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-//                    }
-                    
                     let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     let url: URL? = eventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     let notes: String? = eventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     let category: ASAEventCategory = eventSpecification.category ?? .generic
                     
-                    let newEvent = ASAEvent(title:  title, location: location, startDate: startDate, endDate: endDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: eventSpecification.emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.startDateSpecification.type)
+                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: eventSpecification.emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.startDateSpecification.type)
                     result.append(newEvent)
                 }
             }
