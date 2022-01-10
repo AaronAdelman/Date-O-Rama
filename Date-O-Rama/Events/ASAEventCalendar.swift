@@ -738,7 +738,10 @@ class ASAEventCalendar {
         return (true, eventStartDate, eventEndDate)
     } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?, calendar: ASACalendar, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
-    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, eventSpecification: ASAEventSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+        let startDateSpecification = eventSpecification.startDateSpecification
+        let endDateSpecification = eventSpecification.endDateSpecification
+        let firstDateSpecification = eventSpecification.firstDateSpecification
         let tweakedStartDateSpecification = self.tweak(dateSpecification: startDateSpecification, date: date, calendar: calendar, templateDateComponents: components)
         
         // Check whether the event is before the first occurrence
@@ -1000,6 +1003,27 @@ class ASAEventCalendar {
         return (true, start, end)
     } // func matchOneDayOrLess(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, start: Date?, end: Date?)
     
+    fileprivate func startAndEndDates(eventSpecification: ASAEventSpecification, appropriateCalendar: ASACalendar, date: Date, locationData: ASALocation, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, startOfDay: Date, startOfNextDay: Date) -> (startDate: Date?, endDate: Date?) {
+        let location = locationData.location
+        let timeZone = locationData.timeZone
+        
+        var startDate: Date?
+        var endDate: Date?
+        
+        if eventSpecification.isAllDay {
+            startDate = appropriateCalendar.startOfDay(for: date, locationData: locationData)
+            endDate   = appropriateCalendar.startOfNextDay(date: date, locationData: locationData)
+        } else {
+            startDate = eventSpecification.startDateSpecification.date(date: date, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if eventSpecification.endDateSpecification == nil {
+                endDate = startDate
+            } else {
+                endDate = eventSpecification.endDateSpecification!.date(date: date, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            }
+        }
+        return (startDate, endDate)
+    }
+    
     func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> Array<ASAEvent> {
         let location = locationData.location
         let timeZone = locationData.timeZone
@@ -1063,7 +1087,7 @@ class ASAEventCalendar {
                 appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
             }
             
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, startDateSpecification: eventSpecification.startDateSpecification, endDateSpecification: eventSpecification.endDateSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay, firstDateSpecification: eventSpecification.firstDateSpecification)
+            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, eventSpecification: eventSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             if matchesDateSpecifications {
                 let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
                 if matchesRegionCode {
@@ -1086,17 +1110,7 @@ class ASAEventCalendar {
                     var endDate = returnedEndDate
                     
                     if startDate == nil {
-                        if eventSpecification.isAllDay {
-                            startDate = appropriateCalendar.startOfDay(for: date, locationData: locationData)
-                            endDate   = appropriateCalendar.startOfNextDay(date: date, locationData: locationData)
-                        } else {
-                            startDate = eventSpecification.startDateSpecification.date(date: date, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-                            if eventSpecification.endDateSpecification == nil {
-                                endDate = startDate
-                            } else {
-                                endDate = eventSpecification.endDateSpecification!.date(date: date, location: location, timeZone: timeZone, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-                            }
-                        }
+                        (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: appropriateCalendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
                     }
                     
                     let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
