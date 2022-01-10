@@ -19,34 +19,16 @@ enum ASADateSpecificationType:  String, Codable {
     case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-//    case timeChange                          = "timeChange" // Change from standard to daylight savings time or vice versa
     case IslamicPrayerTime                   = "IslamicPrayerTime"
-    
-//    case newMoon                             = "newMoon"
-//    case firstQuarter                        = "1stQuarter"
-//    case fullMoon                            = "fullMoon"
-//    case lastQuarter                         = "lastQuarter"
-    
-//    case firstFullMoonDay                    = "1stFullMoonDay" // Requires a month
-//    case secondFullMoonDay                   = "2ndFullMoonDay" // Requires a month
-    
-//    case MarchEquinox                        = "Mar"
-//    case JuneSolstice                        = "Jun"
-//    case SeptemberEquinox                    = "Sep"
-//    case DecemberSolstice                    = "Dec"
     
     case rise                                = "rise"
     case set                                 = "set"
-    
-//    case Easter                              = "Easter"
 } // enum ASADateSpecificationType
 
 extension ASADateSpecificationType {
     var isAllDay: Bool {
         switch self {
-        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear
-//            , .firstFullMoonDay, .secondFullMoonDay, .Easter
-            :
+        case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
             return true
             
         default:
@@ -58,24 +40,10 @@ extension ASADateSpecificationType {
         return self == .oneDay || self.isLessThanOneCalendarDay
     } // var isOneCalendarDayOrLess
     
-//    var isOneCalendarDay: Bool {
-//        switch self {
-//        case .oneDay
-////            , .firstFullMoonDay, .secondFullMoonDay, .Easter
-//            :
-//            return true
-//        default:
-//            return false
-//        } // switch self
-//    } // var isOneCalendarDay
-    
     var isLessThanOneCalendarDay: Bool {
         switch self {
         case .point, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes,
-//                .timeChange,
                 .IslamicPrayerTime,
-//                .newMoon, .firstQuarter, .fullMoon, .lastQuarter,
-//                .MarchEquinox, .JuneSolstice, .SeptemberEquinox, .DecemberSolstice,
                 .rise, .set:
             return true
         default:
