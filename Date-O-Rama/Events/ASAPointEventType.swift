@@ -22,5 +22,7 @@ case twilight = "twilight"
 
 case IslamicPrayerTime = "IslamicPrayerTime"
 
-    
+case rise = "rise"
+case set  = "set"
+
 } // enum ASAPointEventType

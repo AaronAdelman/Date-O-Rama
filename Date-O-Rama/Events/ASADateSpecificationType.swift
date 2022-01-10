@@ -21,8 +21,8 @@ enum ASADateSpecificationType:  String, Codable {
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
 //    case IslamicPrayerTime                   = "IslamicPrayerTime"
     
-    case rise                                = "rise"
-    case set                                 = "set"
+//    case rise                                = "rise"
+//    case set                                 = "set"
 } // enum ASADateSpecificationType
 
 extension ASADateSpecificationType {
@@ -44,9 +44,10 @@ extension ASADateSpecificationType {
         switch self {
         case .point,
 //                .degreesBelowHorizon,
-                .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes,
-//                .IslamicPrayerTime,
-                .rise, .set:
+                .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes
+//            , .IslamicPrayerTime,
+//                .rise, .set
+            :
             return true
         default:
             return false

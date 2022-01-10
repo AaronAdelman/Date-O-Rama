@@ -18,10 +18,10 @@
             "start": {"type": "pt", "MoonPhase": "lastQuarter"},
             "emoji": "🌗"},
         {"titles": {"en": "Moonrise", "he": "זריחת הירח"},
-            "start": {"type": "rise", "body": "zmo"},
+            "start": {"type": "pt", "pointEventType": "rise", "body": "zmo"},
             "emoji": "☽↑"},
         {"titles": {"en": "Moonset", "he": "שקיעת הירח"},
-            "start": {"type": "set", "body": "zmo"},
+            "start": {"type": "pt", "pointEventType": "set", "body": "zmo"},
             "emoji": "☽↓"},
     ]
 }
