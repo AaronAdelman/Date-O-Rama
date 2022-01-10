@@ -209,7 +209,7 @@ class ASAEventCalendar {
         } // switch startDateSpecification.type
     } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
 
-    func possibleDate(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
+    func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
         var possibleDate: Date
         
@@ -239,7 +239,7 @@ class ASAEventCalendar {
     
     func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate = JulianDay(startOfDay)
-        guard let dateThisYear = possibleDate(for: type, now: initialDate) else {
+        guard let dateThisYear = possibleDateEquinoxOrSolstice(for: type, now: initialDate) else {
             return MATCH_FAILURE
         }
         
@@ -250,14 +250,14 @@ class ASAEventCalendar {
         let NUMBER_OF_DAYS_PER_YEAR = 365.2425
         
         if dateThisYear < startOfDay {
-            guard let dateLastYear = possibleDate(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
+            guard let dateLastYear = possibleDateEquinoxOrSolstice(for: type, now: JulianDay(initialDate.value - NUMBER_OF_DAYS_PER_YEAR)) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateLastYear && dateLastYear < startOfNextDay {
                 return (true, dateLastYear, dateLastYear)
             }
         } else if dateThisYear > startOfNextDay {
-            guard let dateNextYear = possibleDate(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
+            guard let dateNextYear = possibleDateEquinoxOrSolstice(for: type, now: JulianDay(initialDate.value + NUMBER_OF_DAYS_PER_YEAR)) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateNextYear && dateNextYear < startOfNextDay {
@@ -268,33 +268,7 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-//    func possibleDate(for type: ASADateSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date? {
-//        switch type {
-//        case .rise, .set:
-//            guard let body = body else {
-//                return nil
-//            }
-//            guard let celestialBody = body.celestialBody(julianDay: now) else {
-//                return nil
-//            }
-//            let riseSetTimes = celestialBody.riseTransitSetTimes(for: GeographicCoordinates(location!.location))
-//            switch type {
-//            case .rise:
-//                return riseSetTimes.riseTime?.date
-//
-//            case .set:
-//                return riseSetTimes.setTime?.date
-//
-//            default:
-//                return nil
-//            }
-//
-//        default:
-//            return nil
-//        } // switch type
-//    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay, body: String?, location: ASALocation?) -> Date?
-    
-    func possibleDate(for type: ASAPointEventType, now: JulianDay, body: String?, location: ASALocation?) -> Date? {
+    func possibleDateForRiseOrSet(for type: ASAPointEventType, now: JulianDay, body: String?, location: ASALocation?) -> Date? {
         switch type {
         case .rise, .set:
             guard let body = body else {
@@ -318,40 +292,11 @@ class ASAEventCalendar {
         default:
             return nil
         } // switch type
-    }
-    
-//    func matchRiseOrSet(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
-//        let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
-//        let dateToday = possibleDate(for: type, now: initialDate, body: body, location: locationData)
-//        
-//        if dateToday != nil {
-//            if startOfDay <= dateToday! && dateToday! < startOfNextDay {
-//                return (true, dateToday!, dateToday!)
-//            }
-//        }
-//                
-//        if dateToday ?? Date.distantPast < startOfDay{
-//            guard let dateTomorrow = possibleDate(for: type, now: initialDate + 1, body: body, location: locationData) else {
-//                return MATCH_FAILURE
-//            }
-//            if startOfDay <= dateTomorrow && dateTomorrow < startOfNextDay {
-//                return (true, dateTomorrow, dateTomorrow)
-//            }
-//        } else if dateToday ?? Date.distantFuture >= startOfNextDay {
-//            guard let dateYesterday = possibleDate(for: type, now: initialDate - 1, body: body, location: locationData) else {
-//                return MATCH_FAILURE
-//            }
-//            if startOfDay <= dateYesterday && dateYesterday < startOfNextDay {
-//                return (true, dateYesterday, dateYesterday)
-//            }
-//        }
-//
-//        return MATCH_FAILURE
-//    } // func matchRiseOrSet(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func possibleDateForRiseOrSet(for type: ASAPointEventType, now: JulianDay, body: String?, location: ASALocation?) -> Date?
     
     func matchRiseOrSet(type: ASAPointEventType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
-        let dateToday = possibleDate(for: type, now: initialDate, body: body, location: locationData)
+        let dateToday = possibleDateForRiseOrSet(for: type, now: initialDate, body: body, location: locationData)
         
         if dateToday != nil {
             if startOfDay <= dateToday! && dateToday! < startOfNextDay {
@@ -360,14 +305,14 @@ class ASAEventCalendar {
         }
                 
         if dateToday ?? Date.distantPast < startOfDay{
-            guard let dateTomorrow = possibleDate(for: type, now: initialDate + 1, body: body, location: locationData) else {
+            guard let dateTomorrow = possibleDateForRiseOrSet(for: type, now: initialDate + 1, body: body, location: locationData) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateTomorrow && dateTomorrow < startOfNextDay {
                 return (true, dateTomorrow, dateTomorrow)
             }
         } else if dateToday ?? Date.distantFuture >= startOfNextDay {
-            guard let dateYesterday = possibleDate(for: type, now: initialDate - 1, body: body, location: locationData) else {
+            guard let dateYesterday = possibleDateForRiseOrSet(for: type, now: initialDate - 1, body: body, location: locationData) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateYesterday && dateYesterday < startOfNextDay {
@@ -376,44 +321,32 @@ class ASAEventCalendar {
         }
 
         return MATCH_FAILURE
-    }
+    } // func matchRiseOrSet(type: ASAPointEventType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(
-//        for type: ASADateSpecificationType,
-        now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
-//        switch type {
-//        case .degreesBelowHorizon:
-            let terra = Earth(julianDay: now, highPrecision: true)
-            let coordinates = GeographicCoordinates(location.location)
-
-            let twilightTimes = terra.twilights(forSunAltitude: Degree(degreesAboveHorizon), coordinates: coordinates)
-            switch rising {
-            case true:
-                guard let riseTime = twilightTimes.riseTime else {
-                    return nil
-                }
-                return riseTime.date + offset
-                
-            case false:
-                guard let setTime = twilightTimes.setTime else {
-                    return nil
-                }
-                return setTime.date + offset
-            } // switch rising
-
-//        default:
-//            return nil
-//        } // switch type
-    } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date?
+    func possibleDateForTwilight(now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
+        let terra = Earth(julianDay: now, highPrecision: true)
+        let coordinates = GeographicCoordinates(location.location)
+        
+        let twilightTimes = terra.twilights(forSunAltitude: Degree(degreesAboveHorizon), coordinates: coordinates)
+        switch rising {
+        case true:
+            guard let riseTime = twilightTimes.riseTime else {
+                return nil
+            }
+            return riseTime.date + offset
+            
+        case false:
+            guard let setTime = twilightTimes.setTime else {
+                return nil
+            }
+            return setTime.date + offset
+        } // switch rising
+    } // func possibleDateForTwilight(now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date?
     
-    func matchTwilight(
-//        type: ASADateSpecificationType,
-        startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchTwilight(startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
         let degreesAboveHorizon = -degreesBelowHorizon
-        let dateToday = possibleDate(
-//            for: type,
-               now: initialDate, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData)
+        let dateToday = possibleDateForTwilight(now: initialDate, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData)
         
         if dateToday != nil {
             if startOfDay <= dateToday! && dateToday! < startOfNextDay {
@@ -422,18 +355,14 @@ class ASAEventCalendar {
         }
                 
         if dateToday ?? Date.distantPast < startOfDay{
-            guard let dateTomorrow = possibleDate(
-//                for: type,
-                   now: initialDate + 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
+            guard let dateTomorrow = possibleDateForTwilight(now: initialDate + 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateTomorrow && dateTomorrow < startOfNextDay {
                 return (true, dateTomorrow, dateTomorrow)
             }
         } else if dateToday ?? Date.distantFuture >= startOfNextDay {
-            guard let dateYesterday = possibleDate(
-//                for: type,
-                   now: initialDate - 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
+            guard let dateYesterday = possibleDateForTwilight(now: initialDate - 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateYesterday && dateYesterday < startOfNextDay {
@@ -442,7 +371,7 @@ class ASAEventCalendar {
         }
 
         return MATCH_FAILURE
-    } // func matchTwilight(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
+    } // func matchTwilight(startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
     fileprivate func matchOneYear(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let matches = self.matchOneYear(date: date, calendar: calendar, locationData: locationData, onlyDateSpecification: tweakedStartDateSpecification, components: components)
@@ -760,23 +689,6 @@ class ASAEventCalendar {
             }
             let (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             return (true, startDate!, endDate!)
-
-//        case .IslamicPrayerTime:
-//            // Islamic prayer times
-//            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification)
-//            if !matchesDay.matches {
-//                return MATCH_FAILURE
-//            }
-//            return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
-            
-//        case .rise, .set:
-//            // Planetary/Moon rise and set
-//            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification)
-//            if !matchesDay.matches {
-//                return MATCH_FAILURE
-//            }
-//            guard let body = startDateSpecification.body else { return MATCH_FAILURE }
-//            return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
         } // switch startDateSpecificationType
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
