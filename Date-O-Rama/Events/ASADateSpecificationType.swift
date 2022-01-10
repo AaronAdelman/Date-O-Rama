@@ -19,7 +19,7 @@ enum ASADateSpecificationType:  String, Codable {
 //    case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-    case IslamicPrayerTime                   = "IslamicPrayerTime"
+//    case IslamicPrayerTime                   = "IslamicPrayerTime"
     
     case rise                                = "rise"
     case set                                 = "set"
@@ -45,7 +45,7 @@ extension ASADateSpecificationType {
         case .point,
 //                .degreesBelowHorizon,
                 .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes,
-                .IslamicPrayerTime,
+//                .IslamicPrayerTime,
                 .rise, .set:
             return true
         default:

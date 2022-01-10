@@ -599,7 +599,7 @@ class ASAEventCalendar {
         return (true, eventStartDate, eventEndDate)
     } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?, calendar: ASACalendar, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
-    fileprivate func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    fileprivate func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date, tweakedDateSpecification: ASADateSpecification) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let genericMatch: (matches: Bool, startDate: Date?, endDate: Date?) = matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
         if !genericMatch.matches {
             return MATCH_FAILURE
@@ -608,6 +608,7 @@ class ASAEventCalendar {
         switch dateSpecification.pointEventType ?? .generic {
         case .generic:
             return genericMatch
+            
         case .twilight:
             guard let degreesBelowHorizon = dateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
             guard let rising = dateSpecification.rising else { return MATCH_FAILURE }
@@ -615,6 +616,10 @@ class ASAEventCalendar {
             return matchTwilight(
 //                type: .degreesBelowHorizon,
                 startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
+            
+        case .IslamicPrayerTime:
+            return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
+
         } // switch dateSpecification.pointEventType ?? .generic
     } // func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
@@ -669,7 +674,7 @@ class ASAEventCalendar {
             
         case .point:
             // Point events
-            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification)
             if !matchesDay.matches {
                 return MATCH_FAILURE
             } else {
@@ -691,24 +696,24 @@ class ASAEventCalendar {
 
         case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
             // One-instant events
-            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification)
             if !matchesDay.matches {
                 return MATCH_FAILURE
             }
             let (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             return (true, startDate!, endDate!)
 
-        case .IslamicPrayerTime:
-            // Islamic prayer times
-            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-            if !matchesDay.matches {
-                return MATCH_FAILURE
-            }
-            return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
+//        case .IslamicPrayerTime:
+//            // Islamic prayer times
+//            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification)
+//            if !matchesDay.matches {
+//                return MATCH_FAILURE
+//            }
+//            return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
             
         case .rise, .set:
             // Planetary/Moon rise and set
-            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification)
             if !matchesDay.matches {
                 return MATCH_FAILURE
             }

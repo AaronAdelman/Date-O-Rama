@@ -9,11 +9,11 @@
         {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
         {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
-        {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "start": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Fajr", "ar": "صلاة الفجر‎", "he": "פג׳ר"}, "start": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, "start": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "start": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "start": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "start": {"type": "pt", "pointEventType": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"titles": {"en": "Fajr", "ar": "صلاة الفجر‎", "he": "פג׳ר"}, "start": {"type": "pt", "pointEventType": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"titles": {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, "start": {"type": "pt", "pointEventType": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "start": {"type": "pt", "pointEventType": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "start": {"type": "pt", "pointEventType": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Hanafi", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
         
     ]
 }
