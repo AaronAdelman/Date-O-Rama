@@ -9,15 +9,15 @@
 import Foundation
 
 enum ASADateSpecificationType:  String, Codable {
-    case multiYear                           = "multiYear"
-    case oneYear                             = "1Year"
-    case multiMonth                          = "multiMonth"
-    case oneMonth                            = "1Month"
-    case multiDay                            = "multiDay"
-    case oneDay                              = "1Day"
+    case multiYear                           = "nY"
+    case oneYear                             = "1Y"
+    case multiMonth                          = "nM"
+    case oneMonth                            = "1M"
+    case multiDay                            = "nD"
+    case oneDay                              = "1D"
     case point                               = "pt"
-    case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
-    case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
+    case solarTimeSunriseSunset              = "SunriseToSunsetTime" // Solar time, day lasts from sunrise to sunset
+    case solarTimeDawn72MinutesDusk72Minutes = "dawnToDuskTime" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
 } // enum ASADateSpecificationType
 
 extension ASADateSpecificationType {

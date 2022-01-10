@@ -15,10 +15,10 @@ case generic  = "generic"
 case twilight = "twilight"
     
 //    /// Solar time, day lasts from sunrise to sunset
-//case solarTimeSunriseSunset              = "solarTimeSunriseSunset"
+//case solarTimeSunriseSunset              = "SunriseToSunsetTime"
 //    
 //    /// Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-//case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes"
+//case solarTimeDawn72MinutesDusk72Minutes = "dawnToDuskTime"
 
 case IslamicPrayerTime = "IslamicPrayerTime"
 

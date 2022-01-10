@@ -7,97 +7,97 @@
     "emoji": "🇮🇱",
     "eventSpecifications": [
         {"titles": {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, "start": {
-            "type": "1Day", "month": 2, "day": 7}},
+            "type": "1D", "month": 2, "day": 7}},
         {"titles": {"he": "יום הזיכרון ליצחק רבין", "en": "Yiṣḥaq Rabbin Memorial Day"}, "start": {
-            "type": "1Day", "month": 2, "day": 12, "weekdays": [1, 2, 3, 4, 5]
+            "type": "1D", "month": 2, "day": 12, "weekdays": [1, 2, 3, 4, 5]
         }},
         {"titles": {"he": "יום הזיכרון ליצחק רבין (מוקדם)", "en": "Yiṣḥaq Rabbin Memorial Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 2, "day": 10, "weekdays": [5]
+            "type": "1D", "month": 2, "day": 10, "weekdays": [5]
         }},
         {"titles": {"he": "יום הזיכרון ליצחק רבין (מוקדם)", "en": "Yiṣḥaq Rabbin Memorial Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 2, "day": 11, "weekdays": [5]
+            "type": "1D", "month": 2, "day": 11, "weekdays": [5]
         }},
         {"titles": {"he": "סיגד", "en": "Sighdh"}, "start": {
-            "type": "1Day", "month": 2, "day": 29}},
+            "type": "1D", "month": 2, "day": 29}},
         {"titles": {"he": "יום בן־גוריון", "en": "Ben Gureyon Day"}, "start": {
-            "type": "1Day", "month": 3, "day": 6, "weekdays": [1, 2, 3, 4, 5]
+            "type": "1D", "month": 3, "day": 6, "weekdays": [1, 2, 3, 4, 5]
         }},
         {"titles": {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, "start": {
-            "type": "1Day", "month": 3, "day": 7, "weekdays": [1]
+            "type": "1D", "month": 3, "day": 7, "weekdays": [1]
         }},
         {"titles": {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, "start": {
-            "type": "1Day", "month": 3, "day": 8, "weekdays": [1]
+            "type": "1D", "month": 3, "day": 8, "weekdays": [1]
         }},
         {"titles": {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم"}, "start": {
-            "type": "1Day", "month": 3, "day": 23}, "urls": {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
+            "type": "1D", "month": 3, "day": 23}, "urls": {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
         {"titles": {"he": "יום העליה", "en": "‘Aliyyah Day"}, "start": {
-            "type": "1Day", "month": 8, "day": 10}},
+            "type": "1D", "month": 8, "day": 10}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה", "en": "Holocaust Day"}, "start": {
-            "type": "1Day", "month": 8, "day": 27, "weekdays": [2, 3, 4, 5]
+            "type": "1D", "month": 8, "day": 27, "weekdays": [2, 3, 4, 5]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה (נדחה)", "en": "Holocaust Day (postponed)"}, "start": {
-            "type": "1Day", "month": 8, "day": 28, "weekdays": [2]
+            "type": "1D", "month": 8, "day": 28, "weekdays": [2]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (postponed)"}, "start": {
-            "type": "1Day", "month": 8, "day": 26, "weekdays": [5]
+            "type": "1D", "month": 8, "day": 26, "weekdays": [5]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, "start": {
-            "type": "1Day", "month": 9, "day": 4, "weekdays": [2, 3, 4, 7]
+            "type": "1D", "month": 9, "day": 4, "weekdays": [2, 3, 4, 7]
         }},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, "start": {
-            "type": "1Day", "month": 9, "day": 5, "weekdays": [2]
+            "type": "1D", "month": 9, "day": 5, "weekdays": [2]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 9, "day": 2, "weekdays": [4]
+            "type": "1D", "month": 9, "day": 2, "weekdays": [4]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 9, "day": 3, "weekdays": [4]
+            "type": "1D", "month": 9, "day": 3, "weekdays": [4]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {"titles": {"he": "יום העצמאות", "en": "Independence Day"}, "start": {
-            "type": "1Day", "month": 9, "day": 5, "weekdays": [3, 4, 5, 1]
+            "type": "1D", "month": 9, "day": 5, "weekdays": [3, 4, 5, 1]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, "emoji": "🇮🇱"},
         {"titles": {"he": "יום העצמאות (נדחה)", "en": "Independence Day (postponed)"}, "start": {
-            "type": "1Day", "month": 9, "day": 6, "weekdays": [3]
+            "type": "1D", "month": 9, "day": 6, "weekdays": [3]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, "emoji": "🇮🇱"},
         {"titles": {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 9, "day": 3, "weekdays": [5]
+            "type": "1D", "month": 9, "day": 3, "weekdays": [5]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}},
         {"titles": {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 9, "day": 4, "weekdays": [5]
+            "type": "1D", "month": 9, "day": 4, "weekdays": [5]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, "emoji": "🇮🇱"},
         {"itles": {"he": "יום הרצל", "en": "Herṣel Day"}, "start": {
-            "type": "1Day", "month": 9, "day": 10, "weekdays": [1, 2, 3, 4, 5, 6]
+            "type": "1D", "month": 9, "day": 10, "weekdays": [1, 2, 3, 4, 5, 6]
         }},
         {"titles": {"he": "יום הרצל (נדחה)", "en": "Herṣel Day (postponed)"}, "start": {
-            "type": "1Day", "month": 9, "day": 11, "weekdays": [1]
+            "type": "1D", "month": 9, "day": 11, "weekdays": [1]
         }},
         {"titles": {"he": "יום ירושלים", "en": "Yerushalayim Day"}, "start": {
-            "type": "1Day", "month": 9, "day": 28, "weekdays": [2, 3, 4, 5, 7]
+            "type": "1D", "month": 9, "day": 28, "weekdays": [2, 3, 4, 5, 7]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {"titles": {"he": "יום ירושלים (נדחה)", "en": "Yerushalayim Day (postponed)"}, "start": {
-            "type": "1Day", "month": 9, "day": 29, "weekdays": [2]
+            "type": "1D", "month": 9, "day": 29, "weekdays": [2]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {"titles": {"he": "יום ירושלים (מוקדם)", "en": "Yerushalayim Day (brought forward)"}, "start": {
-            "type": "1Day", "month": 9, "day": 27, "weekdays": [5]
+            "type": "1D", "month": 9, "day": 27, "weekdays": [5]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {"titles": {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel"}, "start": {
-            "type": "1Day", "month": 9, "day": 28, "weekdays": [2, 3, 4, 5, 7]
+            "type": "1D", "month": 9, "day": 28, "weekdays": [2, 3, 4, 5, 7]
         }},
         {"titles": {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (נדחה)", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (postponed)"}, "start": {
-            "type": "1Day", "month": 9, "day": 29, "weekdays": [2]
+            "type": "1D", "month": 9, "day": 29, "weekdays": [2]
         }},
         {"titles": {"he": "יום הזיכרון ליהודי אתיופיה שנספו בדרכם לישראל (מוקדם)", "en": "Memorial Day for Ethiopian Jews who Died on Their Way to Israel (brought forward)"}, "start": {
-            "type": "1Day", "month": 9, "day": 27, "weekdays": [5]
+            "type": "1D", "month": 9, "day": 27, "weekdays": [5]
         }},
-        {"titles": {"he": "יום ז׳בוטינסקי", "en": "Zhabboṭinsqi Day"}, "start": {"type": "1Day", "month": 11, "day": 29, "weekdays": [1, 2, 3, 4, 5, 6]
+        {"titles": {"he": "יום ז׳בוטינסקי", "en": "Zhabboṭinsqi Day"}, "start": {"type": "1D", "month": 11, "day": 29, "weekdays": [1, 2, 3, 4, 5, 6]
         }},
-        {"titles": {"he": "יום ז׳בוטינסקי (נדחה)", "en": "Zhabboṭinsqi Day (postponed)"}, "start": {"type": "1Day", "month": 12, "day": 1, "weekdays": [1]
+        {"titles": {"he": "יום ז׳בוטינסקי (נדחה)", "en": "Zhabboṭinsqi Day (postponed)"}, "start": {"type": "1D", "month": 12, "day": 1, "weekdays": [1]
         }},
-        {"titles": {"he": "יום השחרור וההצלה", "en": "Liberation and Rescue Day"}, "start": {"type": "1Day", "month": 9, "day": 26}},
-        {"titles": {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}, "start": {"type": "1Day", "month": 1, "day": 30}},
-        {"titles": {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, "start": {"type": "1Day", "month": 3, "day": 17}},
-        {"titles": {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, "start": {"type": "1Day", "month": 4, "day": 21}},
-        {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, "start": {"type": "1Day", "month": 7, "day": 7}},
-        {"titles": {"he": "יום האם/יום המשפחה", "en": "Family Day/Mother’s Day"}, "start": {"type": "1Day", "month": 5, "day": 30}, "emoji": "👨‍👩‍👧‍👦"},
+        {"titles": {"he": "יום השחרור וההצלה", "en": "Liberation and Rescue Day"}, "start": {"type": "1D", "month": 9, "day": 26}},
+        {"titles": {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}, "start": {"type": "1D", "month": 1, "day": 30}},
+        {"titles": {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, "start": {"type": "1D", "month": 3, "day": 17}},
+        {"titles": {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, "start": {"type": "1D", "month": 4, "day": 21}},
+        {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, "start": {"type": "1D", "month": 7, "day": 7}},
+        {"titles": {"he": "יום האם/יום המשפחה", "en": "Family Day/Mother’s Day"}, "start": {"type": "1D", "month": 5, "day": 30}, "emoji": "👨‍👩‍👧‍👦"},
     ]
 }

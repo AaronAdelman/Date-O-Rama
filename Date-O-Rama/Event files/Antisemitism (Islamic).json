@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
         {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "start": {
-            "type": "1Day", "month": 9, "weekdayRecurrence": -1, "weekdays": [6]},
+            "type": "1D", "month": 9, "weekdayRecurrence": -1, "weekdays": [6]},
             "locations": {"en": "Iran", "he": "איראן", "ar": "إيران"}
         }
     ]

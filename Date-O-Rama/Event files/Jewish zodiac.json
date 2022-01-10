@@ -5,18 +5,18 @@
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
-    {"titles": {"en": "Aries", "he": "טלה"}, "start": {"type": "1Month", "month": 8}, "category": "Aries"},
-    {"titles": {"en": "Taurus", "he": "שור"}, "start": {"type": "1Month", "month": 9}, "category": "Taurus"},
-    {"titles": {"en": "Gemini", "he": "תאומים"}, "start": {"type": "1Month", "month": 10}, "category": "Gemini"},
-    {"titles": {"en": "Cancer", "he": "סרטן"}, "start": {"type": "1Month", "month": 11}, "category": "Cancer"},
-    {"titles": {"en": "Leo", "he": "אריה"}, "start": {"type": "1Month", "month": 12}, "category": "Leo"},
-    {"titles": {"en": "Virgo", "he": "בתולה"}, "start": {"type": "1Month", "month": 13}, "category": "Virgo"},
-    {"titles": {"en": "Libra", "he": "מאזניים"}, "start": {"type": "1Month", "month": 1}, "category": "Libra"},
-    {"titles": {"en": "Scorpio", "he": "עקרב"}, "start": {"type": "1Month", "month": 2}, "category": "Scorpio"},
-    {"titles": {"en": "Sagittarius", "he": "קשת"}, "start": {"type": "1Month", "month": 3}, "category": "Sagittarius"},
-    {"titles": {"en": "Capricorn", "he": "גדי"}, "start": {"type": "1Month", "month": 4}, "category": "Capricorn"},
-    {"titles": {"en": "Aquarius", "he": "דלי"}, "start": {"type": "1Month", "month": 5}, "category": "Aquarius"},
-    {"titles": {"en": "Pisces", "he": "דגים"}, "start": {"type": "1Month", "month": 7, "lengthsOfYear": [353, 354, 355]}, "category": "Pisces"},
-    {"titles": {"en": "Pisces", "he": "דגים"}, "start": {"type": "multiMonth", "month": 6, "lengthsOfYear": [383, 384, 385]}, "end": {"type": "multiMonth", "month": 7}, "category": "Pisces"}
+    {"titles": {"en": "Aries", "he": "טלה"}, "start": {"type": "1M", "month": 8}, "category": "Aries"},
+    {"titles": {"en": "Taurus", "he": "שור"}, "start": {"type": "1M", "month": 9}, "category": "Taurus"},
+    {"titles": {"en": "Gemini", "he": "תאומים"}, "start": {"type": "1M", "month": 10}, "category": "Gemini"},
+    {"titles": {"en": "Cancer", "he": "סרטן"}, "start": {"type": "1M", "month": 11}, "category": "Cancer"},
+    {"titles": {"en": "Leo", "he": "אריה"}, "start": {"type": "1M", "month": 12}, "category": "Leo"},
+    {"titles": {"en": "Virgo", "he": "בתולה"}, "start": {"type": "1M", "month": 13}, "category": "Virgo"},
+    {"titles": {"en": "Libra", "he": "מאזניים"}, "start": {"type": "1M", "month": 1}, "category": "Libra"},
+    {"titles": {"en": "Scorpio", "he": "עקרב"}, "start": {"type": "1M", "month": 2}, "category": "Scorpio"},
+    {"titles": {"en": "Sagittarius", "he": "קשת"}, "start": {"type": "1M", "month": 3}, "category": "Sagittarius"},
+    {"titles": {"en": "Capricorn", "he": "גדי"}, "start": {"type": "1M", "month": 4}, "category": "Capricorn"},
+    {"titles": {"en": "Aquarius", "he": "דלי"}, "start": {"type": "1M", "month": 5}, "category": "Aquarius"},
+    {"titles": {"en": "Pisces", "he": "דגים"}, "start": {"type": "1M", "month": 7, "lengthsOfYear": [353, 354, 355]}, "category": "Pisces"},
+    {"titles": {"en": "Pisces", "he": "דגים"}, "start": {"type": "nM", "month": 6, "lengthsOfYear": [383, 384, 385]}, "end": {"type": "nM", "month": 7}, "category": "Pisces"}
     ]
 }

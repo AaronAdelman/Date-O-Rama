@@ -7,21 +7,21 @@
     "eventSpecifications": [
         {
             "titles": {"en": "Promised Reformer Day"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 2, "day": 20
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}
         },
         {
             "titles": {"en": "Promised Messiah Day", "ur": "یوم مسیح موعود‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 3, "day": 23
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}
         },
         {
             "titles": {"en": "Caliphate Day"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 5, "day": 27
             },
             "urls": {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}

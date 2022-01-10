@@ -7,100 +7,100 @@
     "eventSpecifications": [
         {
             "titles": {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 1, "day": 1
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Islamic_New_Year"}
         },
         {
             "titles": {"en": "ʿĀshūrāʾ", "he": "עאשוראא", "ar": "عَاشُورَاء‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 1, "day": 10
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Ashura"}
         },
         {
             "titles": {"en": "Lailatu 'l-Miʿrāj", "he": "לילת אל־מעראג׳", "ar": "لیلة المعراج‎", "bn": "শবে মেরাজ", "fa": "شب معراج‎", "tr": "Miraç Kandili"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 7, "day": 27
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Isra_and_Mi%27raj#Modern_Muslim_observance"}
         },
         {
             "titles": {"en": "Niṣf Sha‘bān", "he": "חצי שעבאן", "ar": "نصف شعبان‎", "ms": "نصف شعبان", "fa": "نيم شعبان‎", "ur": "شبِ براة‎", "hi": "शब-ए-बरात", "bn": "শবে বরাত"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 8, "day": 15
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Mid-Sha%27ban"}
         },
         {
             "titles": {"en": "Ramaḍān", "he": "רמצֿאן", "ar": "رَمَضَان‎", "az": "Ramazan", "bn": "রমজান", "ckb": "ڕەمەزان‎", "so": "Rabadaan", "tr": "Ramazan", "zza": "Remezan"},
-            "start": {"type": "1Month",
+            "start": {"type": "1M",
                 "month": 9
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Ramadan"}
         },
         {
             "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 9, "day": 21
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}
         },
         {
             "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 9, "day": 23
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}
         },
         {
             "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 9, "day": 25
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}
         },
         {
             "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 9, "day": 27
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}
         },
         {
             "titles": {"en": "Chaand Raat", "he": "ליל הלבנה", "bn": "চাঁদ রাত", "ur": "چاند رات‎", "hi": "चाँद रात", "ar": "جاند رات"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 9, "day": -1
             } , "urls": {"en": "https://en.wikipedia.org/wiki/Chaand_Raat"}
         },
         {
             "titles": {"en": "ʻĪd al-Fiṭr (Festival of Breaking the Fast)", "he": "עיד אלפטר", "ar": "عيد الفطر‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 10, "day": 1
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Eid_al-Fitr"}
         },
         {
             "titles": {"en": "Ḥajj", "he": "חג׳", "ar": "حَجّ‎"},
-            "start": {"type": "multiDay",
+            "start": {"type": "nD",
                 "month": 12, "day": 8
             },
-            "end": {"type": "multiDay",
+            "end": {"type": "nD",
                 "month": 12, "day": 13
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Hajj"}
         },
         {
             "titles": {"en": "Day of ‘Arafah", "he": "יום ערפה", "ar": "يوم عرفة‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 12, "day": 9
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Arafah"}
         },
         {
             "titles": {"en": "ʿĪd al-ʾAḍḥā (Feast of the Sacrifice)", "he": "חג הקורבן", "ar": "عيد الأضحى‎"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 12, "day": 10
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Eid_al-Adha"}
         },
         
         {
             "titles": {"en": "Laylat al-Raghaib (Night of Wishes)", "ar": "ليلة الرغيب", "he": "ליל המשאלות"},
-            "start": {"type": "1Day",
+            "start": {"type": "1D",
                 "month": 7, "weekdayRecurrence": 1, "weekdays": [6]
             }, "urls": {"en": "https://en.wikipedia.org/wiki/Laylat_al-Raghaib"}
         },
         {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "start": {
-            "type": "1Day", "month": 9, "weekdayRecurrence": -1, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
+            "type": "1D", "month": 9, "weekdayRecurrence": -1, "weekdays": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}
         },
     ]
 }

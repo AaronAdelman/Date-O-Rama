@@ -6,48 +6,48 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
         {"titles": {"en": "Aries", "he": "טלה"}, "start": {
-            "type": "multiDay", "month": 3, "day": 21}, "end": {
-                "type": "multiDay", "month": 4, "day": 19}, "category": "Aries"},
+            "type": "nD", "month": 3, "day": 21}, "end": {
+                "type": "nD", "month": 4, "day": 19}, "category": "Aries"},
         {"titles": {"en": "Taurus", "he": "שור"}, "start": {
-            "type": "multiDay", "month": 4, "day": 20}, "end": {
-                "type": "multiDay", "month": 5, "day": 20}, "category": "Taurus"},
+            "type": "nD", "month": 4, "day": 20}, "end": {
+                "type": "nD", "month": 5, "day": 20}, "category": "Taurus"},
         {"titles": {"en": "Gemini", "he": "תאומים"}, "start": {
-            "type": "multiDay", "month": 5, "day": 21}, "end": {
-                "type": "multiDay", "month": 6, "day": 20}, "category": "Gemini"},
+            "type": "nD", "month": 5, "day": 21}, "end": {
+                "type": "nD", "month": 6, "day": 20}, "category": "Gemini"},
         {"titles": {"en": "Cancer", "he": "סרטן"}, "start": {
-            "type": "multiDay", "month": 6, "day": 21}, "end": {
-                "type": "multiDay", "month": 7, "day": 22}, "category": "Cancer"},
+            "type": "nD", "month": 6, "day": 21}, "end": {
+                "type": "nD", "month": 7, "day": 22}, "category": "Cancer"},
         {"titles": {"en": "Leo", "he": "אריה"}, "start": {
-            "type": "multiDay", "month": 7, "day": 23}, "end": {
-                "type": "multiDay", "month": 8, "day": 22}, "category": "Leo"},
+            "type": "nD", "month": 7, "day": 23}, "end": {
+                "type": "nD", "month": 8, "day": 22}, "category": "Leo"},
         {"titles": {"en": "Virgo", "he": "בתולה"}, "start": {
-            "type": "multiDay", "month": 8, "day": 23}, "end": {
-                "type": "multiDay", "month": 9, "day": 22}, "category": "Virgo"},
+            "type": "nD", "month": 8, "day": 23}, "end": {
+                "type": "nD", "month": 9, "day": 22}, "category": "Virgo"},
         {"titles": {"en": "Libra", "he": "מאזניים"}, "start": {
-            "type": "multiDay", "month": 9, "day": 23}, "end": {
-                "type": "multiDay", "month": 10, "day": 22}, "category": "Libra"},
+            "type": "nD", "month": 9, "day": 23}, "end": {
+                "type": "nD", "month": 10, "day": 22}, "category": "Libra"},
         {"titles": {"en": "Scorpio", "he": "עקרב"}, "start": {
-            "type": "multiDay", "month": 10, "day": 23}, "end": {
-                "type": "multiDay", "month": 11, "day": 22}, "category": "Scorpio"},
+            "type": "nD", "month": 10, "day": 23}, "end": {
+                "type": "nD", "month": 11, "day": 22}, "category": "Scorpio"},
         {"titles": {"en": "Sagittarius", "he": "קשת"}, "start": {
-            "type": "multiDay", "month": 11, "day": 23}, "end": {
-                "type": "multiDay", "month": 12, "day": 21}, "category": "Sagittarius"},
+            "type": "nD", "month": 11, "day": 23}, "end": {
+                "type": "nD", "month": 12, "day": 21}, "category": "Sagittarius"},
         {"titles": {"en": "Capricorn", "he": "גדי"}, "start": {
-            "type": "multiDay", "month": 12, "day": 22}, "end": {
-                "type": "multiDay", "month": 1, "day": 19}, "category": "Capricorn"},
+            "type": "nD", "month": 12, "day": 22}, "end": {
+                "type": "nD", "month": 1, "day": 19}, "category": "Capricorn"},
         {"titles": {"en": "Aquarius", "he": "דלי"}, "start": {
-            "type": "multiDay", "month": 1, "day": 20}, "end": {
-                "type": "multiDay", "month": 2, "day": 18}, "category": "Aquarius"},
+            "type": "nD", "month": 1, "day": 20}, "end": {
+                "type": "nD", "month": 2, "day": 18}, "category": "Aquarius"},
         {"titles": {"en": "Pisces", "he": "דגים"}, "start": {
-            "type": "multiDay", "month": 2, "day": 19}, "end": {
-                "type": "multiDay", "month": 3, "day": 20}, "category": "Pisces"},
-        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"weekdays": [1], "type": "1Day"}, "category": "Sun"},
-        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"weekdays": [2], "type": "1Day"}, "category": "Moon"},
-        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"weekdays": [3], "type": "1Day"}, "category": "Mars"},
-        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "1Day"}, "category": "Mercury"},
-        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "1Day"}, "category": "Jupiter"},
-        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "1Day"}, "category": "Venus"},
-        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "1Day"}, "category": "Saturn"},
-        {"titles": {"en": "Married to a Scorpio Support Day"}, "start": {"type": "1Day", "month": 11, "day": 18}, "emoji": "💍♏️"},
+            "type": "nD", "month": 2, "day": 19}, "end": {
+                "type": "nD", "month": 3, "day": 20}, "category": "Pisces"},
+        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"weekdays": [1], "type": "1D"}, "category": "Sun"},
+        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"weekdays": [2], "type": "1D"}, "category": "Moon"},
+        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"weekdays": [3], "type": "1D"}, "category": "Mars"},
+        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "1D"}, "category": "Mercury"},
+        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "1D"}, "category": "Jupiter"},
+        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "1D"}, "category": "Venus"},
+        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "1D"}, "category": "Saturn"},
+        {"titles": {"en": "Married to a Scorpio Support Day"}, "start": {"type": "1D", "month": 11, "day": 18}, "emoji": "💍♏️"},
     ]
 }
