@@ -607,18 +607,6 @@ class ASAEventCalendar {
         
         let startDateSpecificationType: ASADateSpecificationType = startDateSpecification.type
         
-        var start = startOfDay
-        var end = startOfNextDay
-        if startDateSpecificationType.isOneCalendarDayOrLess {
-            let matchesDay = matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-            if !matchesDay.matches {
-                return MATCH_FAILURE
-            } else {
-                start = matchesDay.start!
-                end = matchesDay.end!
-            }
-        }
-        
         switch startDateSpecificationType {
         case .multiYear:
             // Multi-year events
@@ -644,11 +632,20 @@ class ASAEventCalendar {
             
         case .oneDay:
             // One-day events
+            let matchesDay = matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesDay.matches {
+                return MATCH_FAILURE
+            }
             return (true, startOfDay, startOfNextDay)
             
         case .point:
             // Point events
-            return (true, start, end)
+            let matchesDay = matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesDay.matches {
+                return MATCH_FAILURE
+            } else {
+                return (true, matchesDay.start!, matchesDay.end!)
+            }
 
         case .degreesBelowHorizon:
             // Sunrise, Sunset, and twilight
