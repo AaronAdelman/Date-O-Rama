@@ -653,6 +653,10 @@ class ASAEventCalendar {
 
         case .degreesBelowHorizon:
             // Sunrise, Sunset, and twilight
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesDay.matches {
+                return MATCH_FAILURE
+            }
             guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
             guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
             let offset = startDateSpecification.offset ?? 0.0
@@ -660,15 +664,27 @@ class ASAEventCalendar {
 
         case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
             // One-instant events
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesDay.matches {
+                return MATCH_FAILURE
+            }
             let (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             return (true, startDate!, endDate!)
 
         case .IslamicPrayerTime:
             // Islamic prayer times
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesDay.matches {
+                return MATCH_FAILURE
+            }
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedStartDateSpecification, date: date, locationData: locationData)
             
         case .rise, .set:
             // Planetary/Moon rise and set
+            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            if !matchesDay.matches {
+                return MATCH_FAILURE
+            }
             guard let body = startDateSpecification.body else { return MATCH_FAILURE }
             return matchRiseOrSet(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
         } // switch startDateSpecificationType
