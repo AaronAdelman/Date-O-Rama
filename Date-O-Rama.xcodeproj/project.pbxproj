@@ -50,6 +50,8 @@
 		A536399C26EF44C70083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A53639A026EF7A000083C571 /* Christianity (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Christianity (Gregorian).json */; };
 		A53639A126EF7A000083C571 /* Christianity (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A536399F26EF7A000083C571 /* Christianity (Gregorian).json */; };
+		A5365A7D278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
+		A5365A7E278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
@@ -518,6 +520,7 @@
 		A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchDate-O-Rama Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Date-O-Rama-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399F26EF7A000083C571 /* Christianity (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (Gregorian).json"; sourceTree = "<group>"; };
+		A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPointEventType.swift; sourceTree = "<group>"; };
 		A538A81626F0CAE300DBB26C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
@@ -1041,6 +1044,7 @@
 				A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */,
 				A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */,
 				A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */,
+				A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -1659,6 +1663,7 @@
 				A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
 				A5F43E222785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
 				A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
+				A5365A7E278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */,
 				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5B816542541A3DD00E309E0 /* ASAMainRowsByCalendarView.swift in Sources */,
 				A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
@@ -1766,6 +1771,7 @@
 				A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */,
 				A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */,
 				A5E3B041248FDCEA00283513 /* ASAComplicationClocksTab.swift in Sources */,
+				A5365A7D278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */,
 				A5DC8EC0267A75A4000B1184 /* ASAAlarmTypeChooserView.swift in Sources */,
 				A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */,

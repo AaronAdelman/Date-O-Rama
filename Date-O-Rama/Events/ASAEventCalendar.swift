@@ -323,9 +323,11 @@ class ASAEventCalendar {
         return MATCH_FAILURE
     } // func matchRiseOrSet(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
-    func possibleDate(for type: ASADateSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
-        switch type {
-        case .degreesBelowHorizon:
+    func possibleDate(
+//        for type: ASADateSpecificationType,
+        now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date? {
+//        switch type {
+//        case .degreesBelowHorizon:
             let terra = Earth(julianDay: now, highPrecision: true)
             let coordinates = GeographicCoordinates(location.location)
 
@@ -344,15 +346,19 @@ class ASAEventCalendar {
                 return setTime.date + offset
             } // switch rising
 
-        default:
-            return nil
-        } // switch type
+//        default:
+//            return nil
+//        } // switch type
     } // func possibleDate(for type: ASADateSpecificationType, now: JulianDay, degreesAboveHorizon: Double, rising: Bool, offset: TimeInterval, location: ASALocation) -> Date?
     
-    func matchTwilight(type: ASADateSpecificationType, startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
+    func matchTwilight(
+//        type: ASADateSpecificationType,
+        startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate: JulianDay = JulianDay(startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0).noon(timeZone: locationData.timeZone))
         let degreesAboveHorizon = -degreesBelowHorizon
-        let dateToday = possibleDate(for: type, now: initialDate, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData)
+        let dateToday = possibleDate(
+//            for: type,
+               now: initialDate, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData)
         
         if dateToday != nil {
             if startOfDay <= dateToday! && dateToday! < startOfNextDay {
@@ -361,14 +367,18 @@ class ASAEventCalendar {
         }
                 
         if dateToday ?? Date.distantPast < startOfDay{
-            guard let dateTomorrow = possibleDate(for: type, now: initialDate + 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
+            guard let dateTomorrow = possibleDate(
+//                for: type,
+                   now: initialDate + 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateTomorrow && dateTomorrow < startOfNextDay {
                 return (true, dateTomorrow, dateTomorrow)
             }
         } else if dateToday ?? Date.distantFuture >= startOfNextDay {
-            guard let dateYesterday = possibleDate(for: type, now: initialDate - 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
+            guard let dateYesterday = possibleDate(
+//                for: type,
+                   now: initialDate - 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
                 return MATCH_FAILURE
             }
             if startOfDay <= dateYesterday && dateYesterday < startOfNextDay {
@@ -591,7 +601,21 @@ class ASAEventCalendar {
     
     fileprivate func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         let genericMatch: (matches: Bool, startDate: Date?, endDate: Date?) = matchOneDayOrLess(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-        return genericMatch
+        if !genericMatch.matches {
+            return MATCH_FAILURE
+        }
+        
+        switch dateSpecification.pointEventType ?? .generic {
+        case .generic:
+            return genericMatch
+        case .twilight:
+            guard let degreesBelowHorizon = dateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
+            guard let rising = dateSpecification.rising else { return MATCH_FAILURE }
+            let offset = dateSpecification.offset ?? 0.0
+            return matchTwilight(
+//                type: .degreesBelowHorizon,
+                startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
+        } // switch dateSpecification.pointEventType ?? .generic
     } // func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, eventSpecification: ASAEventSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
@@ -652,16 +676,18 @@ class ASAEventCalendar {
                 return (true, matchesDay.startDate!, matchesDay.endDate!)
             }
 
-        case .degreesBelowHorizon:
-            // Sunrise, Sunset, and twilight
-            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-            if !matchesDay.matches {
-                return MATCH_FAILURE
-            }
-            guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
-            guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
-            let offset = startDateSpecification.offset ?? 0.0
-            return matchTwilight(type: startDateSpecificationType, startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
+//        case .degreesBelowHorizon:
+//            // Sunrise, Sunset, and twilight
+//            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+//            if !matchesDay.matches {
+//                return MATCH_FAILURE
+//            }
+//            guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
+//            guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
+//            let offset = startDateSpecification.offset ?? 0.0
+//            return matchTwilight(
+////                type: startDateSpecificationType,
+//                startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
 
         case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
             // One-instant events

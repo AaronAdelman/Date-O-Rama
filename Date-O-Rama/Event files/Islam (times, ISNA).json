@@ -6,8 +6,8 @@
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "emoji": "🌎",
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
         {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "start": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
         {"titles": {"en": "Fajr", "ar": "صلاة الفجر‎", "he": "פג׳ר"}, "start": {"type": "IslamicPrayerTime", "event": "Fajr", "calculationMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},

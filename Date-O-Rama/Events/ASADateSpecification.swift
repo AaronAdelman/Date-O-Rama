@@ -10,6 +10,9 @@ import CoreLocation
 import Foundation
 
 struct ASADateSpecification:  Codable {
+    var type: ASADateSpecificationType
+    var pointEventType: ASAPointEventType?
+    
     var era:  Int?
     
     /// Will be ignored if not relevant
@@ -32,8 +35,6 @@ struct ASADateSpecification:  Codable {
     
     /// Matches if year mod yearDivisor = yearRemainder
     var yearRemainder: Int?
-
-    var type: ASADateSpecificationType
     
     // For degrees below horizon events
     var degreesBelowHorizon: Double?

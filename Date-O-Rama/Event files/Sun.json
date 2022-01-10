@@ -5,8 +5,8 @@
     "calendarCode": "xloc*",
     "calendarColor": {"red": 1.0, "green": 1.0, "blue": 0.0},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
         {
             "titles": {
@@ -14,7 +14,7 @@
                 "he": "שחר אזרחי"
             },
             "start": {
-                "type": "degreesBelowHorizon",
+                "type": "pt", "pointEventType": "twilight",
                 "degreesBelowHorizon": 6.0,
                 "rising": true,
                 "offset": 0
@@ -26,7 +26,7 @@
                 "he": "בין הערביים אזרחי"
             },
             "start": {
-                "type": "degreesBelowHorizon",
+                "type": "pt", "pointEventType": "twilight",
                 "degreesBelowHorizon": 6.0,
                 "rising": false,
                 "offset": 0
@@ -39,7 +39,7 @@
                 "he": "שחר ימי"
             },
             "start": {
-                "type": "degreesBelowHorizon",
+                "type": "pt", "pointEventType": "twilight",
                 "degreesBelowHorizon": 12.0,
                 "rising": true,
                 "offset": 0
@@ -51,7 +51,7 @@
                 "he": "בין העבריים ימי"
             },
             "start": {
-                "type": "degreesBelowHorizon",
+                "type": "pt", "pointEventType": "twilight",
                 "degreesBelowHorizon": 12.0,
                 "rising": false,
                 "offset": 0
@@ -64,7 +64,7 @@
                 "he": "שחר אסטרונומי"
             },
             "start": {
-                "type": "degreesBelowHorizon",
+                "type": "pt", "pointEventType": "twilight",
                 "degreesBelowHorizon": 18.0,
                 "rising": true,
                 "offset": 0
@@ -76,7 +76,7 @@
                 "he": "בין הערביים אסטרונומי"
             },
             "start": {
-                "type": "degreesBelowHorizon",
+                "type": "pt", "pointEventType": "twilight",
                 "degreesBelowHorizon": 18.0,
                 "rising": false,
                 "offset": 0

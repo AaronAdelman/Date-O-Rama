@@ -5,8 +5,8 @@
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "degreesBelowHorizon", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
         {"titles": {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, "start": {"type": "IslamicPrayerTime", "event": "Dhuhr", "calculationMethod": "ISNA"}},
         {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "start": {"type": "IslamicPrayerTime", "event": "Isha", "calculationMethod": "Jafari"}},
         {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "start": {"type": "IslamicPrayerTime", "event": "Asr", "asrJuristicMethod": "Shafii", "calculationMethod": "Jafari"}},

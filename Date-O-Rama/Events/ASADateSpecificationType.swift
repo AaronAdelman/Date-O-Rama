@@ -16,7 +16,7 @@ enum ASADateSpecificationType:  String, Codable {
     case multiDay                            = "multiDay"
     case oneDay                              = "1Day"
     case point                               = "pt"
-    case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
+//    case degreesBelowHorizon                 = "degreesBelowHorizon" // Event is when the center of the Sun is a specific number of degrees below the horizon
     case solarTimeSunriseSunset              = "solarTimeSunriseSunset" // Solar time, day lasts from sunrise to sunset
     case solarTimeDawn72MinutesDusk72Minutes = "solarTimeDawn72MinutesDusk72Minutes" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
     case IslamicPrayerTime                   = "IslamicPrayerTime"
@@ -42,7 +42,9 @@ extension ASADateSpecificationType {
     
     var isLessThanOneCalendarDay: Bool {
         switch self {
-        case .point, .degreesBelowHorizon, .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes,
+        case .point,
+//                .degreesBelowHorizon,
+                .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes,
                 .IslamicPrayerTime,
                 .rise, .set:
             return true
