@@ -14,11 +14,11 @@ case generic  = "generic"
     /// Event is when the center of the Sun is a specific number of degrees below the horizon
 case twilight = "twilight"
     
-//    /// Solar time, day lasts from sunrise to sunset
-//case solarTimeSunriseSunset              = "R2ST"
-//    
-//    /// Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
-//case solarTimeDawn72MinutesDusk72Minutes = "D2DT"
+    /// Solar time, day lasts from sunrise to sunset
+case solarTimeSunriseSunset              = "R2ST"
+    
+    /// Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
+case solarTimeDawn72MinutesDusk72Minutes = "D2DT"
 
 case IslamicPrayerTime = "IslamicPrayerTime"
 

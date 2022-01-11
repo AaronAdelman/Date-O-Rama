@@ -16,8 +16,8 @@ enum ASADateSpecificationType:  String, Codable {
     case multiDay                            = "nD"
     case oneDay                              = "1D"
     case point                               = "pt"
-    case solarTimeSunriseSunset              = "R2ST" // Solar time, day lasts from sunrise to sunset
-    case solarTimeDawn72MinutesDusk72Minutes = "D2DT" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
+//    case solarTimeSunriseSunset              = "R2ST" // Solar time, day lasts from sunrise to sunset
+//    case solarTimeDawn72MinutesDusk72Minutes = "D2DT" // Solar time, day lasts from dawn (sunrise - 72 minutes) to dusk (sunset + 72 minutes)
 } // enum ASADateSpecificationType
 
 extension ASADateSpecificationType {
@@ -32,16 +32,6 @@ extension ASADateSpecificationType {
     } // var isAllDay
     
     var isOneCalendarDayOrLess: Bool {
-        return self == .oneDay || self.isLessThanOneCalendarDay
+        return self == .oneDay || self == .point
     } // var isOneCalendarDayOrLess
-    
-    var isLessThanOneCalendarDay: Bool {
-        switch self {
-        case .point,
-                .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
-            return true
-        default:
-            return false
-        } // switch self
-    } // var isLessThanOneCalendarDay
 } // extension ASADateSpecificationType

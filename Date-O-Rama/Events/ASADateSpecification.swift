@@ -170,34 +170,43 @@ extension ASADateSpecification {
             } else {
                 return calendar.startOfDay(for: rawDate!, locationData: revisedDateComponents.locationData )
             }
-//        case .degreesBelowHorizon:
-//            let solarEvent = ASASolarEvent(degreesBelowHorizon: self.degreesBelowHorizon!, rising: self.rising!, offset: self.offset!)
-//            let events = rawDate!.solarEvents(location: revisedDateComponents.locationData.location, events: [solarEvent], timeZone:  timeZone)
-//            let result = events[solarEvent]
-//            if result == nil {
-//                return nil
-//            }
-//            if result! == nil {
-//                return nil
-//            }
-//            return result!
             
-        case .solarTimeSunriseSunset:
-            let hours = self.solarHours!
-            let dayHalf = self.dayHalf!
-            let dayHalfStart = ASASolarEvent.sunrise
-            let dayHalfEnd   = ASASolarEvent.sunset
-            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+        case .point:
+            switch self.pointEventType {
+            case .solarTimeSunriseSunset:
+                let hours = self.solarHours!
+                let dayHalf = self.dayHalf!
+                let dayHalfStart = ASASolarEvent.sunrise
+                let dayHalfEnd   = ASASolarEvent.sunset
+                return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
 
-        case .solarTimeDawn72MinutesDusk72Minutes:
-            let hours = self.solarHours!
-            let dayHalf = self.dayHalf!
-            let dayHalfStart = ASASolarEvent.dawn72Minutes
-            let dayHalfEnd   = ASASolarEvent.dusk72Minutes
-            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
-        default:
-            return Date ()
-            // TODO:  NEED TO FIX THIS!
+            case .solarTimeDawn72MinutesDusk72Minutes:
+                let hours = self.solarHours!
+                let dayHalf = self.dayHalf!
+                let dayHalfStart = ASASolarEvent.dawn72Minutes
+                let dayHalfEnd   = ASASolarEvent.dusk72Minutes
+                return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+                
+            default:
+                return Date() // TODO:  Fix this?
+            }
+            
+//        case .solarTimeSunriseSunset:
+//            let hours = self.solarHours!
+//            let dayHalf = self.dayHalf!
+//            let dayHalfStart = ASASolarEvent.sunrise
+//            let dayHalfEnd   = ASASolarEvent.sunset
+//            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+//
+//        case .solarTimeDawn72MinutesDusk72Minutes:
+//            let hours = self.solarHours!
+//            let dayHalf = self.dayHalf!
+//            let dayHalfStart = ASASolarEvent.dawn72Minutes
+//            let dayHalfEnd   = ASASolarEvent.dusk72Minutes
+//            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+            
+//        default:
+//            return Date () // TODO:  NEED TO FIX THIS!
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
@@ -211,35 +220,63 @@ extension ASADateSpecification {
     
     func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
         switch self.type {
-//        case .degreesBelowHorizon:
-//            let result = self.rawDegreesBelowHorizon(date: date, location: location, timeZone: timeZone)
-//            return result!
-            
-        case .solarTimeSunriseSunset:
-            let hours = self.solarHours!
-            let dayHalf = self.dayHalf!
-            switch dayHalf {
-            case .night:
-                let result = previousSunset + hours * nightHourLength
-                return result
-                
-            case .day:
-                let result = sunrise + hours * hourLength
-                return result
-            } // switch dayHalf
+        case .point:
+            switch self.pointEventType {
+            case .solarTimeSunriseSunset:
+                let hours = self.solarHours!
+                let dayHalf = self.dayHalf!
+                switch dayHalf {
+                case .night:
+                    let result = previousSunset + hours * nightHourLength
+                    return result
+                    
+                case .day:
+                    let result = sunrise + hours * hourLength
+                    return result
+                } // switch dayHalf
 
-        case .solarTimeDawn72MinutesDusk72Minutes:
-            let hours = self.solarHours!
-            let dayHalf = self.dayHalf!
-            switch dayHalf {
-            case .night:
-                let result = previousOtherDusk + hours * otherNightHourLength
-                return result
-                
-            case .day:
-                let result = otherDawn + hours * otherHourLength
-                return result
-            } // switch dayHalf
+            case .solarTimeDawn72MinutesDusk72Minutes:
+                let hours = self.solarHours!
+                let dayHalf = self.dayHalf!
+                switch dayHalf {
+                case .night:
+                    let result = previousOtherDusk + hours * otherNightHourLength
+                    return result
+                    
+                case .day:
+                    let result = otherDawn + hours * otherHourLength
+                    return result
+                } // switch dayHalf
+
+            default:
+                return date // TODO:  May have to fix this!
+            }
+            
+//        case .solarTimeSunriseSunset:
+//            let hours = self.solarHours!
+//            let dayHalf = self.dayHalf!
+//            switch dayHalf {
+//            case .night:
+//                let result = previousSunset + hours * nightHourLength
+//                return result
+//                
+//            case .day:
+//                let result = sunrise + hours * hourLength
+//                return result
+//            } // switch dayHalf
+//
+//        case .solarTimeDawn72MinutesDusk72Minutes:
+//            let hours = self.solarHours!
+//            let dayHalf = self.dayHalf!
+//            switch dayHalf {
+//            case .night:
+//                let result = previousOtherDusk + hours * otherNightHourLength
+//                return result
+//                
+//            case .day:
+//                let result = otherDawn + hours * otherHourLength
+//                return result
+//            } // switch dayHalf
 
         default:
             return date // TODO:  May have to fix this!
