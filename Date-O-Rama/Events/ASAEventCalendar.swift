@@ -506,11 +506,27 @@ class ASAEventCalendar {
     } // func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
-        guard let event = tweakedStartDateSpecification.event else {
-            // Major error!
-            debugPrint(#file, #function, "Missing Islamic prayer event!")
+        var event: ASAIslamicPrayerTimeEvent
+        switch tweakedStartDateSpecification.pointEventType {
+        case .Fajr:
+            event = .Fajr
+            
+        case .Dhuhr:
+            event = .Dhuhr
+            
+        case .Asr:
+            event = .Asr
+            
+        case .Maghrib:
+            event = .Maghrib
+            
+        case .Isha:
+            event = .Isha
+            
+        default:
             return MATCH_FAILURE
-        }
+        } // switch tweakedStartDateSpecification.pointEventType
+        
         let latitude: CLLocationDegrees = locationData.location.coordinate.latitude
         let longitude: CLLocationDegrees = locationData.location.coordinate.longitude
         let calcMethod: ASACalculationMethod = tweakedStartDateSpecification.calculationMethod ?? .Jafari
@@ -602,7 +618,7 @@ class ASAEventCalendar {
             let offset = dateSpecification.offset ?? 0.0
             return matchTwilight(startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
             
-        case .IslamicPrayerTime:
+        case .Isha, .Maghrib, .Asr, .Dhuhr, .Fajr:
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
 
         case .rise, .set:
