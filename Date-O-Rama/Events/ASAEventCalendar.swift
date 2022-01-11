@@ -671,15 +671,6 @@ class ASAEventCalendar {
             } else {
                 return (true, matchesDay.startDate!, matchesDay.endDate!)
             }
-
-//        case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
-//            // One-instant events
-//            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, eventSpecification: eventSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, tweakedDateSpecification: tweakedStartDateSpecification, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength)
-//            if !matchesDay.matches {
-//                return MATCH_FAILURE
-//            }
-//            let (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-//            return (true, startDate!, endDate!)
         } // switch startDateSpecificationType
     } // func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, startDateSpecification:  ASADateSpecification, endDateSpecification:  ASADateSpecification?, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, firstDateSpecification: ASADateSpecification?) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     

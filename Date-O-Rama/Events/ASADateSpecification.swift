@@ -189,24 +189,7 @@ extension ASADateSpecification {
                 
             default:
                 return Date() // TODO:  Fix this?
-            }
-            
-//        case .solarTimeSunriseSunset:
-//            let hours = self.solarHours!
-//            let dayHalf = self.dayHalf!
-//            let dayHalfStart = ASASolarEvent.sunrise
-//            let dayHalfEnd   = ASASolarEvent.sunset
-//            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
-//
-//        case .solarTimeDawn72MinutesDusk72Minutes:
-//            let hours = self.solarHours!
-//            let dayHalf = self.dayHalf!
-//            let dayHalfStart = ASASolarEvent.dawn72Minutes
-//            let dayHalfEnd   = ASASolarEvent.dusk72Minutes
-//            return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
-            
-//        default:
-//            return Date () // TODO:  NEED TO FIX THIS!
+            } // switch self.pointEventType
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
@@ -251,32 +234,6 @@ extension ASADateSpecification {
             default:
                 return date // TODO:  May have to fix this!
             }
-            
-//        case .solarTimeSunriseSunset:
-//            let hours = self.solarHours!
-//            let dayHalf = self.dayHalf!
-//            switch dayHalf {
-//            case .night:
-//                let result = previousSunset + hours * nightHourLength
-//                return result
-//                
-//            case .day:
-//                let result = sunrise + hours * hourLength
-//                return result
-//            } // switch dayHalf
-//
-//        case .solarTimeDawn72MinutesDusk72Minutes:
-//            let hours = self.solarHours!
-//            let dayHalf = self.dayHalf!
-//            switch dayHalf {
-//            case .night:
-//                let result = previousOtherDusk + hours * otherNightHourLength
-//                return result
-//                
-//            case .day:
-//                let result = otherDawn + hours * otherHourLength
-//                return result
-//            } // switch dayHalf
 
         default:
             return date // TODO:  May have to fix this!
