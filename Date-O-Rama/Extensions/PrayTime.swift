@@ -60,7 +60,7 @@ enum ASAAdjustingMethodForHigherLatitudes: String, Codable {
     case angleBased    // angle/60th of night
 } // enum ASAAdjustingMethodForHigherLatitudes
 
-enum ASAIslamicPrayerTimeEvent: String, Codable {
+enum ASAIslamicPrayerTimeEvent {
     case Fajr
     case Sunrise
     case Dhuhr

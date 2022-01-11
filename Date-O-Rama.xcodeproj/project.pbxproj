@@ -1043,8 +1043,8 @@
 				A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */,
 				A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */,
 				A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */,
-				A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */,
 				A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */,
+				A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";

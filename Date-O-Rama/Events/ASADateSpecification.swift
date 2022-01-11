@@ -49,7 +49,6 @@ struct ASADateSpecification:  Codable {
     var body: String?
     
     // For Islamic prayer times
-    var event: ASAIslamicPrayerTimeEvent?
     var calculationMethod: ASACalculationMethod?
     var asrJuristicMethod: ASAJuristicMethodForAsr?
     var adjustingMethodForHigherLatitudes: ASAAdjustingMethodForHigherLatitudes?
