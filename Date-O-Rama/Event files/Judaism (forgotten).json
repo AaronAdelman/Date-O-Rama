@@ -52,5 +52,20 @@
         {"titles": {"he":  "יומא דביה קמו עממיא על פלטת ספריא במדינת כלקיס בבית זבדי והוה פורקן", "en": "Day of Salvation of the Refugees of Safriyya’ in Kalqis and Beth Zavdi from the Gentiles"}, "start": {"type": "1D", "month": 7, "day": 17}},
         {"titles": {"he":  "יומא דביה צמון עמא על מטרא ונחת להון", "en": "Fasting for Rain Day"}, "start": {"type": "1D", "month": 7, "day": 20}, "emoji": "🌧"},
 
+        {"titles": {"he":  "פורים מועד קטן/אבן אלחסן", "en": "Purim of Shiraz/Purim of Mo‘edh Qaṭan)"}, "start": {"type": "1D", "month": 2, "day": 2}},
+        {"titles": {"he":  "פורים נרבונה", "en": "Purim of Narbonne)"}, "start": {"type": "1D", "month": 7, "day": 21}},
+        {"titles": {"he":  "פורים קסטיליה", "en": "Purim of Castille)"}, "start": {"type": "1D", "month": 7, "day": 21}},
+        {"titles": {"he":  "פורים סרגוסה", "en": "Purim of Saragossa)"}, "start": {"type": "1D", "month": 5, "day": 18}},
+        {"titles": {"he":  "פורים קנדיה", "en": "Purim of Candia)"}, "start": {"type": "1D", "month": 11, "day": 18}},
+        {"titles": {"he":  "פורים אנאצרא/פורים הנוצרים", "en": "Purim ’Anaṣara’"}, "start": {"type": "1D", "month": 2, "day": 4}},
+        {"titles": {"he":  "פורים שני דרומא", "en": "Second Purim of Rome"}, "start": {"type": "1D", "month": 9, "day": 3}},
+        {"titles": {"he":  "פורים של הנוצרים/פורים דה לוס כריסטיאנוס/פורים דה לאס בומבאס", "en": "Purim de los Christianos/Purim de las Bombas"}, "start": {"type": "1D", "month": 13, "day": 1}},
+        {"titles": {"he":  "פורים וינץ", "en": "Purim Winz/Purim Frankfurt)"}, "start": {"type": "1D", "month": 7, "day": 20}},
+        {"titles": {"he":  "פורים די בודה", "en": "Purim of Buda/Purim di Buda"}, "start": {"type": "1D", "month": 13, "day": 10}},
+        {"titles": {"he":  "פורים ל״ג בעומר", "en": "Purim Lagh ba‘Omer"}, "start": {"type": "1D", "month": 9, "day": 18}},
+        {"titles": {"he":  "פורים אנקונה", "en": "Purim of Ancona"}, "start": {"type": "1D", "month": 4, "day": 21}},
+        {"titles": {"he":  "פורים של לונדענבורג", "en": "Purim of Lundenburg"}, "start": {"type": "1D", "month": 4, "day": 11}},
+
+
     ]
 }
