@@ -597,9 +597,7 @@ class ASAEventCalendar {
             guard let degreesBelowHorizon = dateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
             guard let rising = dateSpecification.rising else { return MATCH_FAILURE }
             let offset = dateSpecification.offset ?? 0.0
-            return matchTwilight(
-//                type: .degreesBelowHorizon,
-                startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
+            return matchTwilight(startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
             
         case .IslamicPrayerTime:
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
@@ -667,19 +665,6 @@ class ASAEventCalendar {
             } else {
                 return (true, matchesDay.startDate!, matchesDay.endDate!)
             }
-
-//        case .degreesBelowHorizon:
-//            // Sunrise, Sunset, and twilight
-//            let matchesDay = matchPoint(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-//            if !matchesDay.matches {
-//                return MATCH_FAILURE
-//            }
-//            guard let degreesBelowHorizon = startDateSpecification.degreesBelowHorizon else { return MATCH_FAILURE }
-//            guard let rising = startDateSpecification.rising else { return MATCH_FAILURE }
-//            let offset = startDateSpecification.offset ?? 0.0
-//            return matchTwilight(
-////                type: startDateSpecificationType,
-//                startOfDay: startOfDay, startOfNextDay: startOfNextDay, degreesBelowHorizon: degreesBelowHorizon, rising: rising, offset: offset, locationData: locationData)
 
         case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
             // One-instant events
