@@ -104,7 +104,7 @@ struct ASADateSpecification:  Codable {
         case offsetDays          = "offsetD"
         case equinoxOrSolstice
         case timeChange
-        case MoonPhase           = "xmoPhase"
+        case MoonPhase           = "zmoPhase"
     } // enum CodingKeys
 } // struct ASADateSpecification
 
