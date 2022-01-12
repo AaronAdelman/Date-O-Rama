@@ -13,23 +13,28 @@ struct ASADateSpecification:  Codable {
     var type: ASADateSpecificationType
     var pointEventType: ASAPointEventType?
     
-    var era:  Int?
+    var era: Int?
     
     /// Will be ignored if not relevant
-    var year:  Int?
+    var year: Int?
     
     /// Will be ignored if not relevant
-    var month:  Int?
+    var month: Int?
     
-    var day:  Int?
+    var day: Int?
+    
+    var hour: Int?
+    var minute: Int?
+    var second: Int?
+    var nanosecond: Int?
     
     var weekdays:  Array<ASAWeekday>?
     
     /// If non-nil, the number of the recurrence of the first weekday given in the month.  If negative, then -1 is the last recurrence, -2 is the next to last recurrence, etc.
     var weekdayRecurrence: Int?
-    var lengthsOfMonth:  Array<Int>?
-    var lengthsOfYear:  Array<Int>?
-    var dayOfYear:  Int?
+    var lengthsOfMonth: Array<Int>?
+    var lengthsOfYear: Array<Int>?
+    var dayOfYear: Int?
 
     var yearDivisor:  Int?
     
@@ -111,7 +116,23 @@ extension ASADateSpecification {
         if self.day != nil {
             revisedDateComponents.day = self.day
         }
-        
+
+        if self.hour != nil {
+            revisedDateComponents.hour = self.hour
+        }
+
+        if self.minute != nil {
+            revisedDateComponents.minute = self.minute
+        }
+
+        if self.second != nil {
+            revisedDateComponents.second = self.second
+        }
+
+        if self.nanosecond != nil {
+            revisedDateComponents.nanosecond = self.nanosecond
+        }
+
         revisedDateComponents.weekday = nil
         revisedDateComponents.isLeapMonth = nil
         

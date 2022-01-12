@@ -610,6 +610,15 @@ class ASAEventCalendar {
         
         switch dateSpecification.pointEventType ?? .generic {
         case .generic:
+            if dateSpecification.hour != nil {
+                var filledInDateComponents = components
+                filledInDateComponents.hour = dateSpecification.hour
+                filledInDateComponents.minute = dateSpecification.minute
+                filledInDateComponents.second = dateSpecification.second
+                filledInDateComponents.nanosecond = dateSpecification.nanosecond
+                let date = calendar.date(dateComponents: filledInDateComponents)
+                return (true, date, date)
+            }
             return genericMatch
             
         case .twilight:
@@ -625,7 +634,7 @@ class ASAEventCalendar {
             guard let body = dateSpecification.body else { return MATCH_FAILURE }
             return matchRiseOrSet(type: dateSpecification.pointEventType!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
         case .solarTimeSunriseSunset, .solarTimeDawn72MinutesDusk72Minutes:
-            let (startDate, endDate) = startAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+            let (startDate, endDate) = solarStartAndEndDates(eventSpecification: eventSpecification, appropriateCalendar: calendar, date: date, locationData: locationData, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
             return (true, startDate!, endDate!)
         } // switch dateSpecification.pointEventType ?? .generic
     } // func matchPoint(date: Date, calendar: ASACalendar, locationData: ASALocation, dateSpecification: ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
@@ -850,7 +859,7 @@ class ASAEventCalendar {
         return (true, start, end)
     } // func matchOneDayOrLess(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
-    fileprivate func startAndEndDates(eventSpecification: ASAEventSpecification, appropriateCalendar: ASACalendar, date: Date, locationData: ASALocation, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, startOfDay: Date, startOfNextDay: Date) -> (startDate: Date?, endDate: Date?) {
+    fileprivate func solarStartAndEndDates(eventSpecification: ASAEventSpecification, appropriateCalendar: ASACalendar, date: Date, locationData: ASALocation, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, startOfDay: Date, startOfNextDay: Date) -> (startDate: Date?, endDate: Date?) {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -923,7 +932,7 @@ class ASAEventCalendar {
         
         var result:  Array<ASAEvent> = []
         
-        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+        let components = calendar.dateComponents([.era, .year, .month, .day, .weekday, .hour, .minute, .second, .nanosecond], from: date, locationData: locationData)
         
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)

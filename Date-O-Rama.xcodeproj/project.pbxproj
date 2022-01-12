@@ -349,6 +349,8 @@
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5E2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
 		A5E1CC5F2631A10C00D55B00 /* ASAClockCellEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */; };
+		A5E35A35278F23C400F726EA /* Adelsoft.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E35A34278F23C400F726EA /* Adelsoft.json */; };
+		A5E35A36278F23C400F726EA /* Adelsoft.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E35A34278F23C400F726EA /* Adelsoft.json */; };
 		A5E3606424C71FBC0000A268 /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
 		A5E3606624C756FF0000A268 /* Israel.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* Israel.json */; };
 		A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch.json */; };
@@ -676,6 +678,7 @@
 		A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarTimeView.swift; sourceTree = "<group>"; };
 		A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorCircle.swift; sourceTree = "<group>"; };
 		A5E1CC5C2631A10C00D55B00 /* ASAClockCellEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellEventVisibility.swift; sourceTree = "<group>"; };
+		A5E35A34278F23C400F726EA /* Adelsoft.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Adelsoft.json; sourceTree = "<group>"; };
 		A5E3606324C71FBC0000A268 /* Judaism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Judaism.json; sourceTree = "<group>"; };
 		A5E3606524C756FF0000A268 /* Israel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Israel.json; sourceTree = "<group>"; };
 		A5E3606724C7571A0000A268 /* Lubavitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Lubavitch.json; sourceTree = "<group>"; };
@@ -798,6 +801,7 @@
 		A533798224B2425900340C0B /* Event files */ = {
 			isa = PBXGroup;
 			children = (
+				A5E35A34278F23C400F726EA /* Adelsoft.json */,
 				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
 				A5CBB50F24FD54310084DF72 /* Antisemitism (Gregorian).json */,
 				A5BDE7A22667E22000F47416 /* Antisemitism (Islamic).json */,
@@ -1379,6 +1383,7 @@
 				A5837BE2271C139700047475 /* Named full moons.json in Resources */,
 				A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
+				A5E35A36278F23C400F726EA /* Adelsoft.json in Resources */,
 				A5F43E282786113400FCDB88 /* Thelema.json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */,
@@ -1413,6 +1418,7 @@
 				A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
+				A5E35A35278F23C400F726EA /* Adelsoft.json in Resources */,
 				A5AE5C2327661C4200EBB2E3 /* Israel (Gregorian, supplemental).json in Resources */,
 				A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */,
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
