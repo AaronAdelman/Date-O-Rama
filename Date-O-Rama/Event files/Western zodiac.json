@@ -6,48 +6,48 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
         {"titles": {"en": "Aries", "he": "טלה"}, "start": {
-            "type": "nD", "month": 3, "day": 21}, "end": {
-                "type": "nD", "month": 4, "day": 19}, "category": "Aries"},
+            "type": "nD", "mon": 3, "d": 21}, "end": {
+                "type": "nD", "mon": 4, "d": 19}, "category": "Aries"},
         {"titles": {"en": "Taurus", "he": "שור"}, "start": {
-            "type": "nD", "month": 4, "day": 20}, "end": {
-                "type": "nD", "month": 5, "day": 20}, "category": "Taurus"},
+            "type": "nD", "mon": 4, "d": 20}, "end": {
+                "type": "nD", "mon": 5, "d": 20}, "category": "Taurus"},
         {"titles": {"en": "Gemini", "he": "תאומים"}, "start": {
-            "type": "nD", "month": 5, "day": 21}, "end": {
-                "type": "nD", "month": 6, "day": 20}, "category": "Gemini"},
+            "type": "nD", "mon": 5, "d": 21}, "end": {
+                "type": "nD", "mon": 6, "d": 20}, "category": "Gemini"},
         {"titles": {"en": "Cancer", "he": "סרטן"}, "start": {
-            "type": "nD", "month": 6, "day": 21}, "end": {
-                "type": "nD", "month": 7, "day": 22}, "category": "Cancer"},
+            "type": "nD", "mon": 6, "d": 21}, "end": {
+                "type": "nD", "mon": 7, "d": 22}, "category": "Cancer"},
         {"titles": {"en": "Leo", "he": "אריה"}, "start": {
-            "type": "nD", "month": 7, "day": 23}, "end": {
-                "type": "nD", "month": 8, "day": 22}, "category": "Leo"},
+            "type": "nD", "mon": 7, "d": 23}, "end": {
+                "type": "nD", "mon": 8, "d": 22}, "category": "Leo"},
         {"titles": {"en": "Virgo", "he": "בתולה"}, "start": {
-            "type": "nD", "month": 8, "day": 23}, "end": {
-                "type": "nD", "month": 9, "day": 22}, "category": "Virgo"},
+            "type": "nD", "mon": 8, "d": 23}, "end": {
+                "type": "nD", "mon": 9, "d": 22}, "category": "Virgo"},
         {"titles": {"en": "Libra", "he": "מאזניים"}, "start": {
-            "type": "nD", "month": 9, "day": 23}, "end": {
-                "type": "nD", "month": 10, "day": 22}, "category": "Libra"},
+            "type": "nD", "mon": 9, "d": 23}, "end": {
+                "type": "nD", "mon": 10, "d": 22}, "category": "Libra"},
         {"titles": {"en": "Scorpio", "he": "עקרב"}, "start": {
-            "type": "nD", "month": 10, "day": 23}, "end": {
-                "type": "nD", "month": 11, "day": 22}, "category": "Scorpio"},
+            "type": "nD", "mon": 10, "d": 23}, "end": {
+                "type": "nD", "mon": 11, "d": 22}, "category": "Scorpio"},
         {"titles": {"en": "Sagittarius", "he": "קשת"}, "start": {
-            "type": "nD", "month": 11, "day": 23}, "end": {
-                "type": "nD", "month": 12, "day": 21}, "category": "Sagittarius"},
+            "type": "nD", "mon": 11, "d": 23}, "end": {
+                "type": "nD", "mon": 12, "d": 21}, "category": "Sagittarius"},
         {"titles": {"en": "Capricorn", "he": "גדי"}, "start": {
-            "type": "nD", "month": 12, "day": 22}, "end": {
-                "type": "nD", "month": 1, "day": 19}, "category": "Capricorn"},
+            "type": "nD", "mon": 12, "d": 22}, "end": {
+                "type": "nD", "mon": 1, "d": 19}, "category": "Capricorn"},
         {"titles": {"en": "Aquarius", "he": "דלי"}, "start": {
-            "type": "nD", "month": 1, "day": 20}, "end": {
-                "type": "nD", "month": 2, "day": 18}, "category": "Aquarius"},
+            "type": "nD", "mon": 1, "d": 20}, "end": {
+                "type": "nD", "mon": 2, "d": 18}, "category": "Aquarius"},
         {"titles": {"en": "Pisces", "he": "דגים"}, "start": {
-            "type": "nD", "month": 2, "day": 19}, "end": {
-                "type": "nD", "month": 3, "day": 20}, "category": "Pisces"},
-        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"weekdays": [1], "type": "1D"}, "category": "Sun"},
-        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"weekdays": [2], "type": "1D"}, "category": "Moon"},
-        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"weekdays": [3], "type": "1D"}, "category": "Mars"},
-        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"weekdays": [4], "type": "1D"}, "category": "Mercury"},
-        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"weekdays": [5], "type": "1D"}, "category": "Jupiter"},
-        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"weekdays": [6], "type": "1D"}, "category": "Venus"},
-        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"weekdays": [7], "type": "1D"}, "category": "Saturn"},
-        {"titles": {"en": "Married to a Scorpio Support Day"}, "start": {"type": "1D", "month": 11, "day": 18}, "emoji": "💍♏️"},
+            "type": "nD", "mon": 2, "d": 19}, "end": {
+                "type": "nD", "mon": 3, "d": 20}, "category": "Pisces"},
+        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"wkd": [1], "type": "1D"}, "category": "Sun"},
+        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"wkd": [2], "type": "1D"}, "category": "Moon"},
+        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"wkd": [3], "type": "1D"}, "category": "Mars"},
+        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"wkd": [4], "type": "1D"}, "category": "Mercury"},
+        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"wkd": [5], "type": "1D"}, "category": "Jupiter"},
+        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"wkd": [6], "type": "1D"}, "category": "Venus"},
+        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"wkd": [7], "type": "1D"}, "category": "Saturn"},
+        {"titles": {"en": "Married to a Scorpio Support Day"}, "start": {"type": "1D", "mon": 11, "d": 18}, "emoji": "💍♏️"},
     ]
 }

@@ -5,12 +5,12 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.98, "green": 0.8, "blue": 0.8},
     "eventSpecifications": [
-        {"titles": {"en": "Chicken Soup for the Soul Day"}, "start": {"type": "1D", "month": 11, "day": 12}, "urls": {"en": "https://www.daysoftheyear.com/days/chicken-soup-for-the-soul-day/"}, "emoji": "🥣"},
-        {"titles": {"en": "Occult Day"}, "start": {"type": "1D", "month": 11, "day": 18}, "urls": {"en": "http://skepdic.com/occult.html"}, "emoji": "🧙‍♀️🧙‍♂️"},
-        {"titles": {"en": "Aura Awareness Day"}, "start": {"type": "1D", "month": 11, "weekdays": [7], "weekdayRecurrence": 4}, "1st": {"type": "1D", "era": 1, "year": 2002}, "emoji": "✨", "urls": {"en": "http://skepdic.com/auras.html"}},
-        {"start": {"type": "1M", "month": 1},  "titles": {"en": "National Black Diamond Month"}, "emoji": "◆", "urls": {"en": "http://skepdic.com/fengshui.html"}},
-        {"titles": {"en": "Holistic Therapy Day"}, "start": {"type": "1D", "month": 7, "day": 26}, "urls": {"en": "http://skepdic.com/holistic.html"}, "emoji": "💀"},
-        {"titles": {"en": "National Holistic Pet Day"}, "start": {"type": "1D", "month": 8, "day": 30}, "urls": {"en": "http://skepdic.com/holistic.html"}, "emoji": "💀"},
-        {"titles": {"en": "National Vision Board Day"}, "start": {"type": "1D", "month": 1, "weekdays": [7], "weekdayRecurrence": 2}, "1st": {"type": "1D", "era": 1, "year": 2015}, "urls": {"en": "http://skepdic.com/lawofattraction.html"}}
+        {"titles": {"en": "Chicken Soup for the Soul Day"}, "start": {"type": "1D", "mon": 11, "d": 12}, "urls": {"en": "https://www.daysoftheyear.com/days/chicken-soup-for-the-soul-day/"}, "emoji": "🥣"},
+        {"titles": {"en": "Occult Day"}, "start": {"type": "1D", "mon": 11, "d": 18}, "urls": {"en": "http://skepdic.com/occult.html"}, "emoji": "🧙‍♀️🧙‍♂️"},
+        {"titles": {"en": "Aura Awareness Day"}, "start": {"type": "1D", "mon": 11, "wkd": [7], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 2002}, "emoji": "✨", "urls": {"en": "http://skepdic.com/auras.html"}},
+        {"start": {"type": "1M", "mon": 1},  "titles": {"en": "National Black Diamond Month"}, "emoji": "◆", "urls": {"en": "http://skepdic.com/fengshui.html"}},
+        {"titles": {"en": "Holistic Therapy Day"}, "start": {"type": "1D", "mon": 7, "d": 26}, "urls": {"en": "http://skepdic.com/holistic.html"}, "emoji": "💀"},
+        {"titles": {"en": "National Holistic Pet Day"}, "start": {"type": "1D", "mon": 8, "d": 30}, "urls": {"en": "http://skepdic.com/holistic.html"}, "emoji": "💀"},
+        {"titles": {"en": "National Vision Board Day"}, "start": {"type": "1D", "mon": 1, "wkd": [7], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 2015}, "urls": {"en": "http://skepdic.com/lawofattraction.html"}}
     ]
 }

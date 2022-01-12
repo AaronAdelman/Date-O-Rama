@@ -8,7 +8,7 @@
         {
             "titles": {"en": "Saviours’ Day"},
             "start": {"type": "1D",
-                "month": 2, "day": 28
+                "mon": 2, "d": 28
             },
             "urls": {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day"}
         }

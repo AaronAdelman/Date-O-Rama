@@ -5,8 +5,8 @@
     "calendarCode": "xloc*",
     "calendarColor": {"red": 1.0, "green": 1.0, "blue": 0.0},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "pointEventType": "twilight", "degreesBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
         {
             "titles": {
@@ -14,8 +14,8 @@
                 "he": "שחר אזרחי"
             },
             "start": {
-                "type": "pt", "pointEventType": "twilight",
-                "degreesBelowHorizon": 6.0,
+                "type": "pt", "ptType": "twilight",
+                "degBelowHorizon": 6.0,
                 "rising": true,
                 "offset": 0
             }, "category": "civilDawn"
@@ -26,8 +26,8 @@
                 "he": "בין הערביים אזרחי"
             },
             "start": {
-                "type": "pt", "pointEventType": "twilight",
-                "degreesBelowHorizon": 6.0,
+                "type": "pt", "ptType": "twilight",
+                "degBelowHorizon": 6.0,
                 "rising": false,
                 "offset": 0
             }, "category": "civilDusk"
@@ -39,8 +39,8 @@
                 "he": "שחר ימי"
             },
             "start": {
-                "type": "pt", "pointEventType": "twilight",
-                "degreesBelowHorizon": 12.0,
+                "type": "pt", "ptType": "twilight",
+                "degBelowHorizon": 12.0,
                 "rising": true,
                 "offset": 0
             }, "category": "nauticalDawn"
@@ -51,8 +51,8 @@
                 "he": "בין העבריים ימי"
             },
             "start": {
-                "type": "pt", "pointEventType": "twilight",
-                "degreesBelowHorizon": 12.0,
+                "type": "pt", "ptType": "twilight",
+                "degBelowHorizon": 12.0,
                 "rising": false,
                 "offset": 0
             }, "category": "nauticalDusk"
@@ -64,8 +64,8 @@
                 "he": "שחר אסטרונומי"
             },
             "start": {
-                "type": "pt", "pointEventType": "twilight",
-                "degreesBelowHorizon": 18.0,
+                "type": "pt", "ptType": "twilight",
+                "degBelowHorizon": 18.0,
                 "rising": true,
                 "offset": 0
             }, "category": "astronomicalDawn"
@@ -76,8 +76,8 @@
                 "he": "בין הערביים אסטרונומי"
             },
             "start": {
-                "type": "pt", "pointEventType": "twilight",
-                "degreesBelowHorizon": 18.0,
+                "type": "pt", "ptType": "twilight",
+                "degBelowHorizon": 18.0,
                 "rising": false,
                 "offset": 0
             }, "category": "astronomicalDusk"

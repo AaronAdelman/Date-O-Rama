@@ -71,6 +71,41 @@ struct ASADateSpecification:  Codable {
     
     // For Moon phase events
     var MoonPhase: ASAMoonPhaseType?
+    
+    enum CodingKeys: String, CodingKey {
+        case type
+        case pointEventType      = "ptType"
+        case era
+        case year                = "y"
+        case month               = "mon"
+        case day                 = "d"
+        case hour                = "h"
+        case minute              = "min"
+        case second              = "s"
+        case nanosecond          = "ns"
+        case weekdays            = "wkd"
+        case weekdayRecurrence   = "wkdRecurrence"
+        case lengthsOfMonth      = "monLengths"
+        case lengthsOfYear       = "yLengths"
+        case dayOfYear           = "dOfY"
+        case yearDivisor         = "yDiv"
+        case yearRemainder       = "yRem"
+        case degreesBelowHorizon = "degBelowHorizon"
+        case rising
+        case offset
+        case solarHours          = "zsuH"
+        case dayHalf             = "dHalf"
+        case body
+        case calculationMethod   = "calcMethod"
+        case asrJuristicMethod
+        case adjustingMethodForHigherLatitudes
+        case dhuhrMinutes        = "dhuhrMin"
+        case Easter
+        case offsetDays          = "offsetD"
+        case equinoxOrSolstice
+        case timeChange
+        case MoonPhase           = "xmoPhase"
+    } // enum CodingKeys
 } // struct ASADateSpecification
 
 

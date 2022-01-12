@@ -6,14 +6,14 @@
     "calendarColor": {"red": 0.16, "green": 0.27, "blue": 0.52},
     "emoji": "🇪🇺",
     "eventSpecifications": [
-        {"titles": {"en": "Data Protection Day"}, "start": {"type": "1D", "month": 1, "day": 28}, "1st": {"type": "1D", "era": 1, "year": 2006}, "emoji": "📀"},
-        {"titles": {"en": "Europe Day (Committee of Ministers)"}, "start": {"type": "1D", "month": 5, "day": 5}, "1st": {"type": "1D", "era": 1, "year": 1964}, "emoji": "🇪🇺"},
-        {"titles": {"en": "Europe Day (European Union)"}, "start": {"type": "1D", "month": 5, "day": 9}, "emoji": "🇪🇺"},
-        {"titles": {"en": "Europe Month"}, "start": {"type": "1M", "month": 5}, "emoji": "🇪🇺"},
-        {"titles": {"en": "International Day against Homophobia"}, "start": {"type": "1D", "month": 5, "day": 17}},
-        {"titles": {"en": "European Day of Languages"}, "start": {"type": "1D", "month": 9, "day": 26}, "emoji": "🗣", "1st": {"type": "1D", "era": 1, "year": 2001}},
-        {"titles": {"en": "European Day against Death Penalty"}, "start": {"type": "1D", "month": 10, "day": 10}, "1st": {"type": "1D", "era": 1, "year": 2007}},
-        {"titles": {"en": "European Day of Justice"}, "start": {"type": "1D", "month": 10, "day": 25}, "emoji": "⚖️", "1st": {"type": "1D", "era": 1, "year": 2003}},
-        {"titles": {"en": "European Day on the Protection of Children against Sexual Exploitation and Sexual Abuse"}, "start": {"type": "1D", "month": 11, "day": 18}, "1st": {"type": "1D", "era": 1, "year": 2015}},
+        {"titles": {"en": "Data Protection Day"}, "start": {"type": "1D", "mon": 1, "d": 28}, "1st": {"type": "1D", "era": 1, "y": 2006}, "emoji": "📀"},
+        {"titles": {"en": "Europe Day (Committee of Ministers)"}, "start": {"type": "1D", "mon": 5, "d": 5}, "1st": {"type": "1D", "era": 1, "y": 1964}, "emoji": "🇪🇺"},
+        {"titles": {"en": "Europe Day (European Union)"}, "start": {"type": "1D", "mon": 5, "d": 9}, "emoji": "🇪🇺"},
+        {"titles": {"en": "Europe Month"}, "start": {"type": "1M", "mon": 5}, "emoji": "🇪🇺"},
+        {"titles": {"en": "International Day against Homophobia"}, "start": {"type": "1D", "mon": 5, "d": 17}},
+        {"titles": {"en": "European Day of Languages"}, "start": {"type": "1D", "mon": 9, "d": 26}, "emoji": "🗣", "1st": {"type": "1D", "era": 1, "y": 2001}},
+        {"titles": {"en": "European Day against Death Penalty"}, "start": {"type": "1D", "mon": 10, "d": 10}, "1st": {"type": "1D", "era": 1, "y": 2007}},
+        {"titles": {"en": "European Day of Justice"}, "start": {"type": "1D", "mon": 10, "d": 25}, "emoji": "⚖️", "1st": {"type": "1D", "era": 1, "y": 2003}},
+        {"titles": {"en": "European Day on the Protection of Children against Sexual Exploitation and Sexual Abuse"}, "start": {"type": "1D", "mon": 11, "d": 18}, "1st": {"type": "1D", "era": 1, "y": 2015}},
     ]
 }

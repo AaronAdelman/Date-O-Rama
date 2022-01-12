@@ -17,7 +17,7 @@ enum ASAEventCategory: String, Codable {
     case remembrance
     
     // Sun
-    case day
+    case day = "d"
     case night
     case Sunrise
     case Sunset
