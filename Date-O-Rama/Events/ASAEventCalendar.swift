@@ -236,7 +236,7 @@ class ASAEventCalendar {
         } // switch type
         
         return possibleDate
-    } // func possibleDate(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
+    } // func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date?
     
     func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let initialDate = JulianDay(startOfDay)
@@ -807,6 +807,14 @@ class ASAEventCalendar {
             }
         }
         
+        let Easter = dateSpecification.Easter
+        if Easter != nil && Easter! != .none {
+            let matchesAndStartAndEndDates = matchEaster(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
+            if !matchesAndStartAndEndDates.matches {
+                return NO_MATCH
+            }
+        }
+        
         let equinoxOrSolstice = dateSpecification.equinoxOrSolstice
         if equinoxOrSolstice != nil && equinoxOrSolstice! != .none {
             let matchesAndStartAndEndDates = matchEquinoxOrSolstice(type: equinoxOrSolstice!, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
@@ -826,14 +834,6 @@ class ASAEventCalendar {
             } else {
                 start = matchesAndStartAndEndDates.startDate!
                 end = matchesAndStartAndEndDates.endDate!
-            }
-        }
-        
-        let Easter = dateSpecification.Easter
-        if Easter != nil && Easter! != .none {
-            let matchesAndStartAndEndDates = matchEaster(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
-            if !matchesAndStartAndEndDates.matches {
-                return NO_MATCH
             }
         }
         
