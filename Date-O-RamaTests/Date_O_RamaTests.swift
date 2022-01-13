@@ -123,9 +123,9 @@ class Date_O_RamaTests: XCTestCase {
         //        let BCE = 0
         let CE = 1
         
-        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, yearForWeekOfYear: nil, quarter: nil, month: 2, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: 4, weekdayOrdinal: nil, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
-        let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.oneDay)
-        let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday], type: ASATimeSpecificationType.oneDay)
+        let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, month: 2, weekday: 4, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
+        let startDateSpecification0 = ASADateSpecification(type: ASADateSpecificationType.oneDay, month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
+        let endDateSpecification0 = ASADateSpecification(type: ASADateSpecificationType.oneDay, month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
         
         let components0EYMD = components0.EYMD
         let startDateSpecification0EMYD = startDateSpecification0.EYMD
@@ -757,7 +757,7 @@ class Date_O_RamaTests: XCTestCase {
     func testEventMatching() throws {
         let calendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
         let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
-        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", ISOCountryCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
+        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
 //        let calendarTitleWithoutLocation = "יהדות"
 //        let calendarTitle = "יהדות · פתח תקווה"
 //        let otherCalendars = [ASACalendarCode.Coptic: ASACalendarFactory.calendar(code: .Coptic)!]
