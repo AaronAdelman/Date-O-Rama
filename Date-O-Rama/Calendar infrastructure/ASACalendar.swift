@@ -67,6 +67,13 @@ protocol ASACalendar {
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
     var daysPerWeek:  Int? { get }
+    
+    
+    // MARK:  -
+    
+    /// Calculates time zone-dependent modified Julian day for a date in a specified time zone
+    /// - Returns: A time zone-dependent modified Julian day as an integer
+    func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int
 
     
     // MARK:  - Symbols

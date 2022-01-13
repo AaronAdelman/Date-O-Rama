@@ -10,6 +10,8 @@ import Foundation
 import CoreLocation
 import UIKit
 
+let MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY = 2400000.5
+
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
     var defaultDateFormat:  ASADateFormat = .full
@@ -24,7 +26,7 @@ class ASAJulianDayCalendar:  ASACalendar {
                 return 2400000.0
                 
             case .ModifiedJulianDay:
-                return 2400000.5
+                return MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY
                 
             case .TruncatedJulianDay:
                 return 2440000.5
@@ -352,4 +354,8 @@ class ASAJulianDayCalendar:  ASACalendar {
     func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
         return .system
     } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+        
+    func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
+        return date.localModifiedJulianDay(timeZone: locationData.timeZone)
+    } // func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int
 } // class ASAJulianDayCalendar

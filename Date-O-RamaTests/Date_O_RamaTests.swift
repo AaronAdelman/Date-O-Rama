@@ -11,19 +11,26 @@ import XCTest
 import CoreLocation
 import SwiftAA
 
+func GregorianDate(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, secondsFromGMT: Int) -> Date {
+    var dateComponents = DateComponents()
+    dateComponents.era      = era
+    dateComponents.year     = year
+    dateComponents.month    = month
+    dateComponents.day      = day
+    dateComponents.timeZone = TimeZone(secondsFromGMT: secondsFromGMT)
+    dateComponents.hour     = hour
+    dateComponents.minute   = minute
+    dateComponents.second   = second
+
+    // Create date from components
+    let userCalendar = Calendar(identifier: .gregorian) // since the components above (like year 1980) are for Gregorian
+    return userCalendar.date(from: dateComponents)!
+} // func GregorianDate(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, secondsFromGMT: Int) -> Date
+
+
 class Date_O_RamaTests: XCTestCase {
     let testDate:  Date = {
-        var dateComponents = DateComponents()
-        dateComponents.year = 2020
-        dateComponents.month = 12
-        dateComponents.day = 16
-        dateComponents.timeZone = TimeZone(secondsFromGMT: 0)
-        dateComponents.hour = 10
-        dateComponents.minute = 57
-
-        // Create date from components
-        let userCalendar = Calendar(identifier: .gregorian) // since the components above (like year 1980) are for Gregorian
-        return userCalendar.date(from: dateComponents)!
+        return GregorianDate(era: 1, year: 2020, month: 12, day: 16, hour: 10, minute: 57, second: 0, secondsFromGMT: 0)
     }()
 
     override func setUpWithError() throws {
@@ -810,4 +817,88 @@ class Date_O_RamaTests: XCTestCase {
         subtestEaster(year: 2021, month: 4, day: 19, GregorianCalendar: false)
     } // func testEaster() throws
     
+    func testLocalModifiedJulianDay() throws {
+        let era   =    1
+        let year  = 2020
+        let month =   12
+        let day   =   16
+        let secondsFromGMT = 2 * 60 * 60
+        
+        let date0 = GregorianDate(era: era, year: year, month: month, day: day, hour: 0, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date1 = GregorianDate(era: era, year: year, month: month, day: day, hour: 1, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date2 = GregorianDate(era: era, year: year, month: month, day: day, hour: 2, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date3 = GregorianDate(era: era, year: year, month: month, day: day, hour: 3, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date4 = GregorianDate(era: era, year: year, month: month, day: day, hour: 4, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date5 = GregorianDate(era: era, year: year, month: month, day: day, hour: 5, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date6 = GregorianDate(era: era, year: year, month: month, day: day, hour: 6, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date7 = GregorianDate(era: era, year: year, month: month, day: day, hour: 7, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date8 = GregorianDate(era: era, year: year, month: month, day: day, hour: 8, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date9 = GregorianDate(era: era, year: year, month: month, day: day, hour: 9, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date10 = GregorianDate(era: era, year: year, month: month, day: day, hour: 10, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date11 = GregorianDate(era: era, year: year, month: month, day: day, hour: 11, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date12 = GregorianDate(era: era, year: year, month: month, day: day, hour: 12, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date13 = GregorianDate(era: era, year: year, month: month, day: day, hour: 13, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date14 = GregorianDate(era: era, year: year, month: month, day: day, hour: 14, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date15 = GregorianDate(era: era, year: year, month: month, day: day, hour: 15, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date16 = GregorianDate(era: era, year: year, month: month, day: day, hour: 16, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date17 = GregorianDate(era: era, year: year, month: month, day: day, hour: 17, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date18 = GregorianDate(era: era, year: year, month: month, day: day, hour: 18, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date19 = GregorianDate(era: era, year: year, month: month, day: day, hour: 19, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date20 = GregorianDate(era: era, year: year, month: month, day: day, hour: 20, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date21 = GregorianDate(era: era, year: year, month: month, day: day, hour: 21, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date22 = GregorianDate(era: era, year: year, month: month, day: day, hour: 22, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+        let date23 = GregorianDate(era: era, year: year, month: month, day: day, hour: 23, minute: 0, second: 0, secondsFromGMT: secondsFromGMT)
+
+        let timeZone = TimeZone(secondsFromGMT: secondsFromGMT)!
+        let LMDJ0 = date0.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ1 = date1.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ2 = date2.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ3 = date3.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ4 = date4.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ5 = date5.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ6 = date6.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ7 = date7.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ8 = date8.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ9 = date9.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ10 = date10.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ11 = date11.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ12 = date12.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ13 = date13.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ14 = date14.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ15 = date15.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ16 = date16.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ17 = date17.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ18 = date18.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ19 = date19.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ20 = date20.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ21 = date21.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ22 = date22.localModifiedJulianDay(timeZone: timeZone)
+        let LMDJ23 = date23.localModifiedJulianDay(timeZone: timeZone)
+        
+        debugPrint(#file, #function, LMDJ0, LMDJ1, LMDJ2, LMDJ3, LMDJ4, LMDJ5, LMDJ6, LMDJ7, LMDJ8, LMDJ9, LMDJ10, LMDJ11, LMDJ12, LMDJ13, LMDJ14, LMDJ15, LMDJ16, LMDJ17, LMDJ18, LMDJ19, LMDJ20, LMDJ21, LMDJ22, LMDJ23)
+
+        XCTAssert(LMDJ0 == LMDJ1)
+        XCTAssert(LMDJ0 == LMDJ2)
+        XCTAssert(LMDJ0 == LMDJ3)
+        XCTAssert(LMDJ0 == LMDJ4)
+        XCTAssert(LMDJ0 == LMDJ5)
+        XCTAssert(LMDJ0 == LMDJ6)
+        XCTAssert(LMDJ0 == LMDJ7)
+        XCTAssert(LMDJ0 == LMDJ8)
+        XCTAssert(LMDJ0 == LMDJ9)
+        XCTAssert(LMDJ0 == LMDJ10)
+        XCTAssert(LMDJ0 == LMDJ11)
+        XCTAssert(LMDJ0 == LMDJ12)
+        XCTAssert(LMDJ0 == LMDJ13)
+        XCTAssert(LMDJ0 == LMDJ14)
+        XCTAssert(LMDJ0 == LMDJ15)
+        XCTAssert(LMDJ0 == LMDJ16)
+        XCTAssert(LMDJ0 == LMDJ17)
+        XCTAssert(LMDJ0 == LMDJ18)
+        XCTAssert(LMDJ0 == LMDJ19)
+        XCTAssert(LMDJ0 == LMDJ20)
+        XCTAssert(LMDJ0 == LMDJ21)
+        XCTAssert(LMDJ0 == LMDJ22)
+        XCTAssert(LMDJ0 == LMDJ23)
+    }
 } // class Date_O_RamaTests

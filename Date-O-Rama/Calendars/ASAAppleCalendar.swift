@@ -348,4 +348,12 @@ class ASAAppleCalendar:  ASACalendar {
         
         return .system
     } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    
+    
+    // MARK:  - Time zone-dependent modified Julian day
+    
+    func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
+        let timeZone = locationData.timeZone
+        return date.localModifiedJulianDay(timeZone: timeZone)
+    } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
 } // class ASAAppleCalendar

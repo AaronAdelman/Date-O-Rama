@@ -470,7 +470,8 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         }
         
-        if startDateSpecification.offsetDays ?? 0 == 0 {
+        let offsetDays = startDateSpecification.offsetDays ?? 0
+        if offsetDays == 0 {
             if componentsMonth == EasterMonth && componentsDay == EasterDay {
                 return (true, startOfDay, startOfNextDay)
             } else {
@@ -479,30 +480,46 @@ class ASAEventCalendar {
         }
         
         // Nonzero offset from Easter events
-        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
-        let daysInYear = calendar.maximumValue(of: .day, in: .year, for: date)
-        let daysInJanuary  = 31
-        let daysInFebruary = daysInYear == 366 ? 29 : 28
-        let daysInMarch    = 31
-        var dayOfYearForEaster: Int
-        switch EasterMonth {
-        case 3:
-            dayOfYearForEaster = daysInJanuary + daysInFebruary + EasterDay
-            
-        case 4:
-            dayOfYearForEaster = daysInJanuary + daysInFebruary + daysInMarch + EasterDay
-            
-        default:
-            return MATCH_FAILURE
-        } // switch EasterMonth
+        let locationData = components.locationData
+        let timeZone: TimeZone = locationData.timeZone
+
+        let EasterDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: components.era, year: components.year, yearForWeekOfYear: nil, quarter: nil, month: EasterMonth, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: EasterDay)
+        let EasterDate = EasterDateComponents.date
+        let EasterMJD = EasterDate!.localModifiedJulianDay(timeZone: timeZone)
+        let EasterEventMJD = EasterMJD + offsetDays
         
-        let dayOfYearForEvent = dayOfYearForEaster + startDateSpecification.offsetDays!
+        let dateMJD = date.localModifiedJulianDay(timeZone: timeZone)
         
-        if dayOfYear == dayOfYearForEvent {
+        if dateMJD == EasterEventMJD {
             return (true, startOfDay, startOfNextDay)
+        } else {
+            return MATCH_FAILURE
         }
         
-        return MATCH_FAILURE
+//        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: date)
+//        let daysInYear = calendar.maximumValue(of: .day, in: .year, for: date)
+//        let daysInJanuary  = 31
+//        let daysInFebruary = daysInYear == 366 ? 29 : 28
+//        let daysInMarch    = 31
+//        var dayOfYearForEaster: Int
+//        switch EasterMonth {
+//        case 3:
+//            dayOfYearForEaster = daysInJanuary + daysInFebruary + EasterDay
+//            
+//        case 4:
+//            dayOfYearForEaster = daysInJanuary + daysInFebruary + daysInMarch + EasterDay
+//            
+//        default:
+//            return MATCH_FAILURE
+//        } // switch EasterMonth
+//               
+//        let dayOfYearForEvent = dayOfYearForEaster + startDateSpecification.offsetDays!
+//        
+//        if dayOfYear == dayOfYearForEvent {
+//            return (true, startOfDay, startOfNextDay)
+//        }
+//        
+//        return MATCH_FAILURE
     } // func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {

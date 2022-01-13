@@ -625,4 +625,15 @@
         
         return .system
     } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+     
+     
+     // MARK:  - Time zone-dependent modified Julian day
+     
+     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int {
+         let timeZone = locationData.timeZone
+         let (fixedDate, _) = date.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
+         assert(fixedDate >= date)
+
+         return fixedDate.localModifiedJulianDay(timeZone: timeZone)
+     } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
  } // class ASASunsetTransitionCalendar
