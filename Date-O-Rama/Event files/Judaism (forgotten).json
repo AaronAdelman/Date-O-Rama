@@ -16,7 +16,7 @@
         {"titles": {"he": "יומיא דבהו איתוקם תמידא", "en": "Days in Which the Tamidh Was Established"}, "start": {"type": "nD", "mon": 8, "d": 1}, "end": {"type": "nD", "mon": 8, "d": 8}, "notes": {"he": "תענית י״ז ע״ב־י״ח ע״א"}},
         {"titles": {"he": "יומיא דבהו איתוקם חגא דשבועיא", "en": "Days in Which Shavu‘oth Was Established"}, "start": {"type": "nD", "mon": 8, "d": 8}, "end": {"type": "nD", "mon": 8, "d": 21}, "notes": {"he": "תענית י״ז ע״ב, תענית י״ח ע״א"}},
         {"titles": {"he": "ראש השנה לעומר", "en": "New Year for the ‘Omer"}, "start": {"type": "1D", "mon": 8, "d": 16}, "urls": {"en": "https://www.ou.org/holidays/category/sefirat-haomer/"}, "notes": {"he": "ראש השנה ז׳ ע״ב"}},
-        {"titles": {"he": "ראש השנה לשתי הלחם", "en": "New Year for the Two Loaves"}, "start": {"type": "1D", "mon": 10, "d": 6}, "notes": {"he": "ראש השנה ז׳ ע״ב"}},
+        {"titles": {"he": "ראש השנה לשתי הלחם", "en": "New Year for the Two Loaves"}, "start": {"type": "1D", "mon": 10, "d": 6}, "notes": {"he": "ראש השנה ז׳ ע״ב, מגילה ל״א ע״ב"}},
         {"titles": {"he": "יום טוב של בני דוד בן יהודה", "en": "Festival of Bene Dawidh be Yehudhah"}, "start": {"type": "1D", "mon": 10, "d": 20}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב ראשון של בני פרעוש בן יהודה", "en": "First Festival of Bene Par‘osh ben Yehudhah"}, "start": {"type": "1D", "mon": 12, "d": 5}, "notes": {"he": "תענית כ״ו ע״א"}},
         {"titles": {"he": "יום טוב של יונדב בן רכב", "en": "Festival of Yonadhav ben Rekhav"}, "start": {"type": "1D", "mon": 12, "d": 7}, "notes": {"he": "תענית כ״ו ע״א"}},
