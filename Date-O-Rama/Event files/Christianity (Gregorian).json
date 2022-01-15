@@ -107,7 +107,7 @@
         {"titles": {"en": "Feast of St. Romuald"}, "start": {"type": "1D", "mon": 6, "d": 19}},
         {"titles": {"en": "Feast of St. Aloysius Gonzaga"}, "start": {"type": "1D", "mon": 6, "d": 21}},
         {"titles": {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, "start": {"type": "1D", "mon": 6, "d": 22}},
-
+        {"titles": {"en": "St. John’s Eve"}, "start": {"type": "1D", "mon": 6, "d": 23}},
         {"titles": {"en": "Nativity of St. John the Baptist"}, "start": {"type": "1D", "mon": 6, "d": 24}, "category": "birthday"},
         
         {"titles": {"en": "Feast of St. Cyril of Alexandria"}, "start": {"type": "1D", "mon": 6, "d": 27}},
