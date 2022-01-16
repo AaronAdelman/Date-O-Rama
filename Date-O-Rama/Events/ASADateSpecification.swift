@@ -41,6 +41,11 @@ struct ASADateSpecification:  Codable {
     /// Matches if year mod yearDivisor = yearRemainder
     var yearRemainder: Int?
     
+    // For date-specified and Easter-related events
+    var offsetDays: Int?
+    
+    var throughDay: Int?
+    
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
     var rising: Bool?
@@ -61,7 +66,6 @@ struct ASADateSpecification:  Codable {
     
     // For Easter-related events
     var Easter: ASAEasterType?
-    var offsetDays: Int?
     
     // For equinox and solstice events
     var equinoxOrSolstice:  ASAEquinoxOrSolsticeType?
@@ -105,6 +109,7 @@ struct ASADateSpecification:  Codable {
         case equinoxOrSolstice
         case timeChange
         case MoonPhase           = "zmoPhase"
+        case throughDay          = "thruD"
     } // enum CodingKeys
 } // struct ASADateSpecification
 

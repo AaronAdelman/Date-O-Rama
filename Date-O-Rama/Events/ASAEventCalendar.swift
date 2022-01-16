@@ -799,10 +799,20 @@ class ASAEventCalendar {
             
             let supportsDay: Bool = calendar.supports(calendarComponent: .day)
             if supportsDay {
-                if dateSpecification.day != nil {
+                let dateSpecificationDay = dateSpecification.day
+                if dateSpecificationDay != nil {
+                    let componentsDay = components.day!
+
                     // Check specified day of month
-                    if !(components.day!.matches(value: dateSpecification.day!) ) {
-                        return NO_MATCH
+                    let throughDay = dateSpecification.throughDay
+                    if throughDay == nil {
+                        if !(componentsDay.matches(value: dateSpecificationDay!) ) {
+                            return NO_MATCH
+                        }
+                    } else {
+                        if !(dateSpecificationDay! <=  componentsDay && componentsDay <= throughDay!) {
+                            return NO_MATCH
+                        }
                     }
                 }
             }
