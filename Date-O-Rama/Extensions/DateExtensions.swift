@@ -58,6 +58,13 @@ extension Date {
         let adjustedDate = self.addingTimeInterval(Double(seconds))
         return adjustedDate.JulianDateWithoutTime(offsetFromJulianDay: MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY)
     }
+    
+    static func date(localModifiedJulianDay: Int, timeZone: TimeZone) -> Date {
+        let rawDate = Date.date(JulianDate: Double(localModifiedJulianDay), offsetFromJulianDay: MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY)
+        let seconds = timeZone.secondsFromGMT(for: rawDate)
+        let adjustedDate = rawDate.addingTimeInterval(-Double(seconds))
+        return adjustedDate
+    } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
 
     func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int,
 //                                                                      hour:  Int, minute:  Int, second:  Int, nanosecond:  Int,
