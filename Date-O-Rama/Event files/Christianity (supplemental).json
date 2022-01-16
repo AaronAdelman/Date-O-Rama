@@ -57,5 +57,6 @@
         {"titles": {"en": "National Bloody Mary Day"}, "start": {"type": "1D", "mon": 1, "d": 1}, "urls": {"en": "https://www.daysoftheyear.com/days/bloody-mary-day/"}, "emoji": "🍅"},
         {"titles": {"en": "National Hangover Day"}, "start": {"type": "1D", "mon": 1, "d": 1}, "urls": {"en": "https://nationaldaycalendar.com/national-hang-over-day-january-1/"}, "emoji": "🥴", "1st": {"type": "1D", "era": 1, "y": 2016}},
         {"titles": {"en": "Distaff Day/Roc Day/Rock Day/Saint Distaff’s Day"}, "start": {"type": "1D", "mon": 1, "d": 7}, "urls": {"en": "https://en.wikipedia.org/wiki/Distaff_Day"}},
+        {"titles": {"en": "Ditch New Year’s Resolutions Day"}, "start": {"type": "1D", "mon": 1, "d": 17}, "urls": {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
     ]
 }
