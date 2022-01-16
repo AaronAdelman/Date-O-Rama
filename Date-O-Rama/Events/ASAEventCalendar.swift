@@ -446,7 +446,7 @@ class ASAEventCalendar {
         return (true, startDate, endDate)
     } // func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
-    func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+    func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         var forGregorianCalendar: Bool
         switch calendar.calendarCode {
         case .Gregorian:
@@ -487,13 +487,13 @@ class ASAEventCalendar {
         let EasterDate = EasterDateComponents.date
         let EasterMJD = EasterDate!.localModifiedJulianDay(timeZone: timeZone)
         let EasterEventMJD = EasterMJD + offsetDays
-        
+
         if dateMJD == EasterEventMJD {
             return (true, startOfDay, startOfNextDay)
         } else {
             return MATCH_FAILURE
         }
-    } // func matchEaster(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
+    } // func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     fileprivate func matchIslamicPrayerTime(tweakedStartDateSpecification: ASADateSpecification, date: Date, locationData: ASALocation) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         var event: ASAIslamicPrayerTimeEvent
@@ -777,17 +777,33 @@ class ASAEventCalendar {
         let NO_MATCH: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
         var start = startOfDay
         var end = startOfNextDay
-        
-        if !matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components) {
-            return NO_MATCH
-        }
-        
-        let supportsDay: Bool = calendar.supports(calendarComponent: .day)
-        if supportsDay {
-            if dateSpecification.day != nil {
-                // Check specified day of month
-                if !(components.day!.matches(value: dateSpecification.day!) ) {
-                    return NO_MATCH
+                
+        let offsetDays = dateSpecification.offsetDays ?? 0
+        if offsetDays != 0 && dateSpecification.Easter == nil {
+            let specifiedEra = dateSpecification.era ?? components.era
+            let specifiedYear = dateSpecification.year ?? components.year
+            let specifiedMonth = dateSpecification.month ?? components.month
+            let specifiedDay = dateSpecification.day ?? components.day
+            let specifiedComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: specifiedEra, year: specifiedYear, month: specifiedMonth, day: specifiedDay)
+            let unoffsetDate = specifiedComponents.date
+            let unoffsetMJD = unoffsetDate!.localModifiedJulianDay(timeZone: locationData.timeZone)
+            let offsetMJD = unoffsetMJD + offsetDays
+            if dateMJD != offsetMJD {
+                return NO_MATCH
+            }
+        } else {
+            // offsetDays == 0
+            if !matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components) {
+                return NO_MATCH
+            }
+            
+            let supportsDay: Bool = calendar.supports(calendarComponent: .day)
+            if supportsDay {
+                if dateSpecification.day != nil {
+                    // Check specified day of month
+                    if !(components.day!.matches(value: dateSpecification.day!) ) {
+                        return NO_MATCH
+                    }
                 }
             }
         }
@@ -808,8 +824,8 @@ class ASAEventCalendar {
         }
         
         let Easter = dateSpecification.Easter
-        if Easter != nil && Easter! != .none {
-            let matchesAndStartAndEndDates = matchEaster(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
+        if Easter ?? .none != .none {
+            let matchesAndStartAndEndDates = matchEasterEvent(date: date, calendar: calendar, startDateSpecification: dateSpecification, components: components, startOfDay: startOfDay, startOfNextDay: startOfNextDay, dateMJD: dateMJD)
             if !matchesAndStartAndEndDates.matches {
                 return NO_MATCH
             }

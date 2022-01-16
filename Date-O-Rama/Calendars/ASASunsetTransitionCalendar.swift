@@ -510,7 +510,7 @@
         let timeComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
         
         if components.contains(.fractionalHour) {
-            result.fractionalHours = timeComponents.fractionalHour
+            result.solarHours = timeComponents.fractionalHour
         }
         if components.contains(.dayHalf) {
             result.dayHalf = timeComponents.dayHalf

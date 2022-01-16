@@ -107,7 +107,7 @@ struct ASAProcessedRow {
         self.hour   = dateComponents.hour
         self.minute = dateComponents.minute
         self.second = dateComponents.second
-        self.fractionalHour = dateComponents.fractionalHours
+        self.fractionalHour = dateComponents.solarHours
         self.dayHalf = dateComponents.dayHalf
 
         self.transitionType = row.calendar.transitionType

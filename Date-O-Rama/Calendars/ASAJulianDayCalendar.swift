@@ -93,7 +93,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 //            components.minute     = minute
 //            components.second     = second
 //            components.nanosecond = nanosecond
-            components.fractionalHours = fractionOfDay
+            components.solarHours = fractionOfDay
             return (dateString, "", components)
         } else {
             let day = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
@@ -103,7 +103,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 //            components.minute     = 0
 //            components.second     = 0
 //            components.nanosecond = 0
-            components.fractionalHours = 0.0
+            components.solarHours = 0.0
             return (dateString, "", components)
         }
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
@@ -214,7 +214,7 @@ class ASAJulianDayCalendar:  ASACalendar {
         guard let day = dateComponents.day else {
             return nil
         }
-        guard let fractionOfDay = dateComponents.fractionalHours else {
+        guard let fractionOfDay = dateComponents.solarHours else {
             return nil
         }
         
@@ -273,7 +273,7 @@ class ASAJulianDayCalendar:  ASACalendar {
 //                result.nanosecond = JDComponents.nanosecond
                 
             case .fractionalHour:
-                result.fractionalHours = JDComponents.fractionOfDay
+                result.solarHours = JDComponents.fractionOfDay
 
             default:
                 debugPrint(#file, #function, component as Any)
