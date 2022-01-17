@@ -375,6 +375,10 @@
 		A5EE116E26C563F10050495C /* ASADateSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASADateSpecificationType.swift */; };
 		A5EE117826C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
+		A5EF523827959D37000012AC /* Druzism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EF523727959D37000012AC /* Druzism (Gregorian).json */; };
+		A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EF523727959D37000012AC /* Druzism (Gregorian).json */; };
+		A5EF523B2795A44F000012AC /* Druzism (Islamic).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EF523A2795A44E000012AC /* Druzism (Islamic).json */; };
+		A5EF523C2795A44F000012AC /* Druzism (Islamic).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EF523A2795A44E000012AC /* Druzism (Islamic).json */; };
 		A5EFB82B26AABE1300C4D31A /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EFE4232436045B00861979 /* ASAUserData.swift */; };
 		A5F43E212785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */; };
@@ -697,6 +701,8 @@
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
 		A5E759102768D0F8008D7D57 /* European Days.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "European Days.json"; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
+		A5EF523727959D37000012AC /* Druzism (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Druzism (Gregorian).json"; sourceTree = "<group>"; };
+		A5EF523A2795A44E000012AC /* Druzism (Islamic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Druzism (Islamic).json"; sourceTree = "<group>"; };
 		A5EFE4232436045B00861979 /* ASAUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAUserData.swift; sourceTree = "<group>"; };
 		A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEquinoxOrSolsticeType.swift; sourceTree = "<group>"; };
 		A5F43E232785D7DE00FCDB88 /* Neopaganism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Neopaganism.json; sourceTree = "<group>"; };
@@ -816,6 +822,8 @@
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
 				A536399F26EF7A000083C571 /* Christianity (Gregorian).json */,
 				A5BC61452709B11800888611 /* Christianity (supplemental).json */,
+				A5EF523727959D37000012AC /* Druzism (Gregorian).json */,
+				A5EF523A2795A44E000012AC /* Druzism (Islamic).json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
 				A5E759102768D0F8008D7D57 /* European Days.json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
@@ -1358,6 +1366,7 @@
 				A54539E126A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
 				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
+				A5EF523C2795A44F000012AC /* Druzism (Islamic).json in Resources */,
 				A5BDE7A42667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
 				A5769953259EDCC000757B0F /* Sun.json in Resources */,
 				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
@@ -1374,6 +1383,7 @@
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A563702127382A92008DE963 /* New Age.json in Resources */,
+				A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5BD09D126B2D40D00738C0B /* United Nations International Years.json in Resources */,
 				A5BC61472709B11800888611 /* Christianity (supplemental).json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
@@ -1420,8 +1430,10 @@
 				A5837BE1271C139700047475 /* Named full moons.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
+				A5EF523827959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5F43E272786113400FCDB88 /* Thelema.json in Resources */,
 				A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */,
+				A5EF523B2795A44F000012AC /* Druzism (Islamic).json in Resources */,
 				A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,

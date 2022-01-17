@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Judaism (Gregorian)", "he": "יהדות (גרגוריני)"},
+    "titles": {"en": "Judaism (Gregorian)", "he": "יהדות (גרגוריאני)"},
     "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "gre*",
