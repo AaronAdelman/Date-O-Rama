@@ -231,7 +231,7 @@ extension ASADateSpecification {
                 return calendar.startOfDay(for: rawDate!, locationData: revisedDateComponents.locationData )
             }
             
-        case .point:
+        case .point, .span:
             switch self.pointEventType {
             case .solarTimeSunriseSunset:
                 let hours = self.solarHours!
@@ -248,7 +248,8 @@ extension ASADateSpecification {
                 return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
                 
             default:
-                return Date() // TODO:  Fix this?
+                let tempDate = (calendar.date(dateComponents: revisedDateComponents))!
+                return tempDate
             } // switch self.pointEventType
         } // switch self.type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
