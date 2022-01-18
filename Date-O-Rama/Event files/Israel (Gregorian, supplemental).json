@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"titles": {"he": "יום המחזור", "en": "Recycling Day"}, "start": {"type": "1D", "mon": 12, "d": 8}, "emoji": "♻️", "urls": {"he": "https://b.tmir.org.il/recycle-day/"}},
         {"titles": {"he": "סילבסטר", "en": "Sylvester"}, "start": {"type": "1D", "mon": 12, "d": 31}, "emoji": "🎄"},
+        {"titles": {"he": "מבצע דוגו", "en": "Operation Dugo"}, "start": {"type": "1D", "mon": 1, "d": 18}, "emoji": "🧆", "urls": {"he": "https://he.wikipedia.org/wiki/%D7%9E%D7%91%D7%A6%D7%A2_%D7%93%D7%95%D7%92%D7%95"}},
     ]
 }
