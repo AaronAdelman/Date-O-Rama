@@ -522,7 +522,7 @@ extension ASARow {
         } else {
             startDateString = self.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
         }
-        endDateString = self.properlyShortenedString(date: event.endDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
         
         return (startDateString, endDateString)
     } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)

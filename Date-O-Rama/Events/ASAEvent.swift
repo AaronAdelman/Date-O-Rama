@@ -108,6 +108,10 @@ extension ASAEvent:  Equatable {
 
 extension ASAEvent {
     func relevant(startDate: Date, endDate: Date) -> Bool {
+        if self.startDate == nil {
+            return false
+        }
+        
         if self.startDate == self.endDate && self.startDate == startDate {
             return true
         }

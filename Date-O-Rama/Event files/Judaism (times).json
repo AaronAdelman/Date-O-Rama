@@ -12,7 +12,7 @@
         {"localizableTitle": "otherDawn", "titles": {"en": "‘Aloth hashshaḥar (72 minutes)", "he": "עלות השחר (72 דקות)"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": -4320.0}, "category": "astronomicalDawn"},
         {"titles": {"en": "Ṣe’th hakkokhavim (72 minutes)", "he": "צאת הכוכבים (72 דקות)"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 4320.0}, "emoji": "🌌", "category": "astronomicalDusk"},
         {"titles": {"en": "Candlelighting (18 minutes)", "he": "הדלקת נרות (18 דקות)"}, "start": {"wkd": [6], "type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}, "category": "candleLightingBeforeSunset"},
-        {"titles": {"en": "Midnight", "he": "חצות הלילה"}, "start": {"type": "pt", "ptType": "R2ST", "zsuH": 6.0, "dHalf": "night"}, "category": "night"},
+        {"titles": {"en": "Midnight", "he": "חצות הלילה"}, "start": {"type": "pt", "ptType": "R2ST", "zsuH": 6.0, "dHalf": "n"}, "category": "n"},
         {"titles": {"en": "End time for Qeri’ath Shema‘ (Vilna Ga’on)", "he": "סוף זמן קריאת שמע (גר״א)"}, "start": {"type": "pt", "ptType": "R2ST", "zsuH": 3.0, "dHalf": "d"}, "category": "d"},
         {"titles": {"en": "End time for Tefillah (Vilna Ga’on)", "he": "סוף זמן תפילה (גר״א)"}, "start": {"type": "pt", "ptType": "R2ST", "zsuH": 4.0, "dHalf": "d"}, "category": "d"},
         {"titles": {"en": "Noon", "he": "חצות היום"}, "start": {"type": "pt", "ptType": "R2ST", "zsuH": 6.0, "dHalf": "d"}, "category": "d"},

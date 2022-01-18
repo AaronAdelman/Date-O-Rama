@@ -17,8 +17,8 @@ enum ASAEventCategory: String, Codable {
     case remembrance
     
     // Sun
-    case day = "d"
-    case night
+    case day   = "d"
+    case night = "n"
     case Sunrise
     case Sunset
     case civilDawn
@@ -44,13 +44,13 @@ enum ASAEventCategory: String, Codable {
     case Pisces
     
     // Classical planets
-    case Sun
-    case Moon
-    case Mercury
-    case Venus
-    case Mars
-    case Jupiter
-    case Saturn
+    case Sun     = "zsu"
+    case Moon    = "zmo"
+    case Mercury = "zme"
+    case Venus   = "zve"
+    case Mars    = "zma"
+    case Jupiter = "zju"
+    case Saturn  = "zsa"
     
     // Chinese Zodiac signs
     case Rat

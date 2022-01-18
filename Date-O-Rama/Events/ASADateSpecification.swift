@@ -173,7 +173,11 @@ extension ASADateSpecification {
             revisedDateComponents.nanosecond = self.nanosecond
         }
 
-        revisedDateComponents.weekday = nil
+//        if self.weekdays?.count == 1 {
+//            revisedDateComponents.weekday = self.weekdays![0].rawValue
+//        } else {
+            revisedDateComponents.weekday = nil
+//        }
         revisedDateComponents.isLeapMonth = nil
         
         if !calendar.isValidDate(dateComponents: revisedDateComponents) {

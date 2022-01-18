@@ -544,6 +544,8 @@ class ASAEventCalendar {
         
         let filledInEndDateSpecification = endDateSpecification!.fillIn(EYMD: filledInEndDateEYMD)
         
+        assert(filledInStartDateSpecification != nil)
+        assert(filledInEndDateSpecification != nil)
         return (true, filledInStartDateSpecification, filledInEndDateSpecification)
     } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?)
     
@@ -648,11 +650,69 @@ class ASAEventCalendar {
         let (matches, filledInStartDateSpecification, filledInEndDateSpecification) = matchMultiDay(components: components, startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification)
         if !matches {
             return MATCH_FAILURE
-        } else {
-            let startDate = filledInStartDateSpecification!.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-            let endDate = filledInEndDateSpecification!.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-            return (true, startDate, endDate)
         }
+        assert(filledInStartDateSpecification != nil)
+        assert(filledInEndDateSpecification != nil)
+        
+        let startDate = filledInStartDateSpecification!.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+        if startDate == nil {
+            debugPrint(#file, #function, "Invalid start date specification:", filledInStartDateSpecification as Any)
+            return MATCH_FAILURE
+        }
+        var endDate = filledInEndDateSpecification!.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+        
+        let startDateComponents = calendar.dateComponents([.weekday], from: startDate!, locationData: components.locationData)
+        let endDateComponents = calendar.dateComponents([.weekday], from: endDate!, locationData: components.locationData)
+        let matchingStartDateWeekDay = startDateComponents.weekday!.matches(weekdays: startDateSpecification.weekdays)
+        let matchingEndDateWeekDay = endDateComponents.weekday!.matches(weekdays: endDateSpecification!.weekdays)
+        if !matchingStartDateWeekDay {
+            return MATCH_FAILURE
+        }
+
+//        let startHour = filledInStartDateSpecification?.hour
+//        let endHour = filledInEndDateSpecification?.hour
+//        var questionableHours = false
+//        if startHour != nil && endHour != nil {
+//            if startHour! < endHour! {
+//                questionableHours = true
+//            }
+//        }
+//        var startSolarHours: Double? = filledInStartDateSpecification?.solarHours
+//        var endSolarHours: Double? = filledInEndDateSpecification?.solarHours
+//        if filledInStartDateSpecification?.dayHalf == .day {
+//            startSolarHours! += 12.0
+//        }
+//        if filledInEndDateSpecification?.dayHalf == .day {
+//            endSolarHours! += 12.0
+//        }
+//        var questionableSolarHours = false
+//        if startSolarHours != nil && endSolarHours != nil {
+//            if startSolarHours! < endSolarHours! {
+//                questionableSolarHours = true
+//            }
+//        }
+//        var weekdayMatch = true
+//        if filledInEndDateSpecification?.weekdays != nil && components.weekday != nil {
+//            weekdayMatch = filledInEndDateSpecification!.weekdays!.contains(ASAWeekday(rawValue: components.weekday!)!)
+//        }
+        if
+//            questionableHours || questionableSolarHours || !weekdayMatch
+        !matchingEndDateWeekDay
+        {
+            let locationData = components.locationData
+            let newRawEndDate = calendar.startOfNextDay(date: startDate!, locationData: locationData)
+            let newRawEndDateComponents = calendar.dateComponents([.era, .year, .month, .day], from: newRawEndDate, locationData: locationData)
+            var newFilledInEndDateSpecification = endDateSpecification
+            newFilledInEndDateSpecification?.era = newRawEndDateComponents.era
+            newFilledInEndDateSpecification?.year = newRawEndDateComponents.year
+            newFilledInEndDateSpecification?.month = newRawEndDateComponents.month
+            newFilledInEndDateSpecification?.day = newRawEndDateComponents.day
+            endDate = newFilledInEndDateSpecification!.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+        }
+        if endDate == nil {
+            return MATCH_FAILURE
+        }
+        return (true, startDate, endDate)
     }
     
     func match(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, eventSpecification: ASAEventSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {

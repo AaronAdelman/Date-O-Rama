@@ -9,6 +9,6 @@
 import Foundation
 
 enum ASADayHalf:  String, Codable {
-    case night = "night"
+    case night = "n"
     case day   = "d"
 } // enum ASADayHalf

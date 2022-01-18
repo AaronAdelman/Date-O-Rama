@@ -229,6 +229,10 @@ extension ASAEventCompatible {
     } // var emoji
     
     var duration: TimeInterval {
+        if self.endDate == nil {
+            return 0.0
+        }
+        
         return self.endDate.timeIntervalSince(self.startDate)
     } // var duration
 } // extension ASAEventCompatible

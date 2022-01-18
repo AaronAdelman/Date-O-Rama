@@ -31,7 +31,7 @@ struct ASAEventCell:  View {
     var rangeEnd:  Date
 
     func eventIsTodayOnly() -> Bool {
-        return rangeStart <= event.startDate && event.endDate <= rangeEnd
+        return rangeStart <= event.startDate && (event.endDate ?? event.startDate) <= rangeEnd
     }
     
     var titleFont: Font {

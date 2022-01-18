@@ -41,13 +41,13 @@
         {"titles": {"en": "Pisces", "he": "דגים"}, "start": {
             "type": "nD", "mon": 2, "d": 19}, "end": {
                 "type": "nD", "mon": 3, "d": 20}, "category": "Pisces"},
-        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"wkd": [1], "type": "1D"}, "category": "Sun"},
-        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"wkd": [2], "type": "1D"}, "category": "Moon"},
-        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"wkd": [3], "type": "1D"}, "category": "Mars"},
-        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"wkd": [4], "type": "1D"}, "category": "Mercury"},
-        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"wkd": [5], "type": "1D"}, "category": "Jupiter"},
-        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"wkd": [6], "type": "1D"}, "category": "Venus"},
-        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"wkd": [7], "type": "1D"}, "category": "Saturn"},
+        {"titles": {"en": "Day of the Sun", "he": "יום השמש"}, "start": {"wkd": [1], "type": "1D"}, "category": "zsu"},
+        {"titles": {"en": "Day of the Moon", "he": "יום הירח"}, "start": {"wkd": [2], "type": "1D"}, "category": "zmo"},
+        {"titles": {"en": "Day of Mars", "he": "יום מאדין"}, "start": {"wkd": [3], "type": "1D"}, "category": "zma"},
+        {"titles": {"en": "Day of Mercury", "he": "יום כוכב"}, "start": {"wkd": [4], "type": "1D"}, "category": "zme"},
+        {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "start": {"wkd": [5], "type": "1D"}, "category": "zju"},
+        {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "start": {"wkd": [6], "type": "1D"}, "category": "zve"},
+        {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "start": {"wkd": [7], "type": "1D"}, "category": "zsa"},
         {"titles": {"en": "Married to a Scorpio Support Day"}, "start": {"type": "1D", "mon": 11, "d": 18}, "emoji": "💍♏️"},
     ]
 }
