@@ -158,6 +158,7 @@
 "ASAClockCellEventVisibility.present"   = "עכשיוויים";
 "ASAClockCellEventVisibility.past"      = "עבריים";
 "ASAClockCellEventVisibility.all"       = "הכול";
+"ASAClockCellEventVisibility.nextAndPresent" = "הבאים ועכשוויים";
 "ABOUT_TAB" = "אודות";
 "by Aaron Solomon Adelman" = "מאת אַהֲרֹן שְׁלֹמֹה אֵדֶלְמָן (״אֵדֶלְסוֹפְט״)";
 "Thanks to…" = "מי שראוי לומר להם תודה";
@@ -271,6 +272,7 @@
 "Showing ASAClockCellEventVisibility.present"   = "מראה עכשיווים";
 "Showing ASAClockCellEventVisibility.past"      = "מראה עבריים";
 "Showing ASAClockCellEventVisibility.all"       = "מראה הכול";
+"Showing ASAClockCellEventVisibility.nextAndPresent" = "מראה הבאים ועכשוויים";
 "Spring ahead" = "תחילת שעון קיץ";
 "Fall back"    = "תחילת שעון חורף";
 "Details…" = "פרטים…";

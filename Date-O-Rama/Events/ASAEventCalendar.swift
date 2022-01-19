@@ -1150,44 +1150,6 @@ extension ASAEventCalendar {
     } // static var builtInEventCalendarFileNames
 } // extension ASAEventCalendar
 
-
-// MARK:  -
-
-extension Array where Element == ASAEventCompatible {
-    func nextEvents(now:  Date) -> Array<ASAEventCompatible> {
-        var eventCalendarTitles: Array<String> = []
-        for event in self {
-            let eventCalendarTitle: String = event.calendarTitleWithoutLocation
-            if !eventCalendarTitles.contains(eventCalendarTitle) {
-                eventCalendarTitles.append(eventCalendarTitle)
-            }
-        }
-        
-        var result:  Array<ASAEventCompatible> = []
-
-        for eventCalendarTitle in eventCalendarTitles {
-            let firstIndex = self.firstIndex(where: { $0.startDate > now && $0.calendarTitleWithoutLocation == eventCalendarTitle })
-            if firstIndex != nil {
-                let firstItemStartDate = self[firstIndex!].startDate
-
-                for i in firstIndex!..<self.count {
-                    let item_i: ASAEventCompatible = self[i]
-                    if item_i.startDate == firstItemStartDate && item_i.calendarTitleWithoutLocation == eventCalendarTitle {
-                        result.append(item_i)
-                    } else {
-                        break
-                    }
-                } // for i
-            }
-        }
-        
-        result.sort(by: {$0.startDate < $1.startDate})
-        
-        return result
-    } // func nextEvents(now:  Date) -> Array<ASAEventCompatible>
-} // extension Array where Element == ASAEventCompatible
-
-
 extension Array where Element == ASAEvent {
     func containsDuplicate(of event: ASAEvent) -> Bool {
         let firstIndex = self.firstIndex(where: { $0.title == event.title && $0.startDate == event.startDate && $0.calendarTitleWithLocation == event.calendarTitleWithLocation })

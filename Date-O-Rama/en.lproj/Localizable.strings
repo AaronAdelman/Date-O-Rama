@@ -158,6 +158,7 @@
 "ASAClockCellEventVisibility.present"    = "Present";
 "ASAClockCellEventVisibility.past"       = "Past";
 "ASAClockCellEventVisibility.all"        = "All";
+"ASAClockCellEventVisibility.nextAndPresent" = "Next and present";
 "ABOUT_TAB" = "About";
 "by Aaron Solomon Adelman" = "by Aaron Solomon Adelman (“Adelsoft”)";
 "Thanks to…"      = "Credit well-deserved";
@@ -271,6 +272,7 @@
 "Showing ASAClockCellEventVisibility.present"   = "Showing present events";
 "Showing ASAClockCellEventVisibility.past"      = "Showing past events";
 "Showing ASAClockCellEventVisibility.all"       = "Showing all";
+"Showing ASAClockCellEventVisibility.nextAndPresent" = "Showing next and present";
 "Spring ahead" = "Start of Daylight Savings Time";
 "Fall back"    = "Start of Standard Time";
 "Details…" = "Details…";

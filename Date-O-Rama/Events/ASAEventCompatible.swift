@@ -73,9 +73,9 @@ extension Array where Element == ASAEventCompatible {
         switch visibility {
         case .none:
             nonAllDayTemp = []
-
-//        case .allDay:
-//            return self.allDayOnly
+            
+            //        case .allDay:
+            //            return self.allDayOnly
             
         case .next:
             nonAllDayTemp = nonAllDayTemp.nextEvents(now: now)
@@ -92,14 +92,16 @@ extension Array where Element == ASAEventCompatible {
         case .all:
             debugPrint(#file, #function, "Ignore this.")
             
-//        case .nonAllDay:
-//            return self.nonAllDayOnly
+            //        case .nonAllDay:
+            //            return self.nonAllDayOnly
+        case .nextAndPresent:
+            nonAllDayTemp = nonAllDayTemp.nextAndPresentEvents(now: now)
         } // switch visibility
         
         switch allDayEventVisibility {
         case .none:
             allDayTemp = []
-        
+            
         case .all:
             debugPrint(#file, #function, "Ignore this.")
             
@@ -132,10 +134,10 @@ extension Array where Element == ASAEventCompatible {
         } // for event in self
         return selectedEvents
     } // var nonAllDayOnly
-
+    
     func futureOnly(now: Date) -> Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
-
+        
         for event in self {
             if event.startDate >= now {
                 selectedEvents.append(event)
@@ -146,9 +148,9 @@ extension Array where Element == ASAEventCompatible {
     
     func presentOnly(now: Date) -> Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
-
+        
         for event in self {
-            if event.startDate <= now && now < event.endDate {
+            if event.contains(now: now) {
                 selectedEvents.append(event)
             }
         } // for event in self
@@ -157,20 +159,80 @@ extension Array where Element == ASAEventCompatible {
     
     func pastOnly(now: Date) -> Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
-
+        
         for event in self {
             if event.endDate <= now {
                 selectedEvents.append(event)
             }
         } // for event in self
         return selectedEvents
-    } //
+    } // func pastOnly(now: Date) -> Array<ASAEventCompatible>
+    
+    func nextEvents(now:  Date) -> Array<ASAEventCompatible> {
+        var eventCalendarTitles: Array<String> = []
+        for event in self {
+            let eventCalendarTitle: String = event.calendarTitleWithoutLocation
+            if !eventCalendarTitles.contains(eventCalendarTitle) {
+                eventCalendarTitles.append(eventCalendarTitle)
+            }
+        }
+        
+        let nextEvents = self.nextEvents(eventCalendarTitles: eventCalendarTitles, now: now)
+        return nextEvents
+    } // func nextEvents(now:  Date) -> Array<ASAEventCompatible>
+    
+    fileprivate func nextEvents(eventCalendarTitles: Array<String>, now: Date) -> Array<ASAEventCompatible> {
+        var nextEvents:  Array<ASAEventCompatible> = []
+        
+        for eventCalendarTitle in eventCalendarTitles {
+            let firstIndex = self.firstIndex(where: { $0.startDate > now && $0.calendarTitleWithoutLocation == eventCalendarTitle })
+            if firstIndex != nil {
+                let firstItemStartDate = self[firstIndex!].startDate
+                
+                for i in firstIndex!..<self.count {
+                    let item_i: ASAEventCompatible = self[i]
+                    if item_i.startDate == firstItemStartDate && item_i.calendarTitleWithoutLocation == eventCalendarTitle {
+                        nextEvents.append(item_i)
+                    } else {
+                        break
+                    }
+                } // for i
+            }
+        }
+        
+        nextEvents.sort(by: {$0.startDate < $1.startDate})
+        
+        return nextEvents
+    } // func nextEvents(eventCalendarTitles: Array<String>, now: Date)
+    
+    func nextAndPresentEvents(now: Date) -> Array<ASAEventCompatible> {
+        var presentEvents: Array<ASAEventCompatible> = []
+        var eventCalendarTitles: Array<String> = []
+        for event in self {
+            let eventCalendarTitle: String = event.calendarTitleWithoutLocation
+            if !eventCalendarTitles.contains(eventCalendarTitle) {
+                eventCalendarTitles.append(eventCalendarTitle)
+            }
+            
+            if event.contains(now: now) {
+                presentEvents.append(event)
+            }
+        } // for event in self
+        
+        let nextEvents = self.nextEvents(eventCalendarTitles: eventCalendarTitles, now: now)
+        return presentEvents + nextEvents
+    } // func nextAndPresentEvents(now: Date) -> Array<ASAEventCompatible>
 } // extension Array where Element == ASAEventCompatible
+
 
 
 // MARK:  -
 
 extension ASAEventCompatible {
+     func contains(now: Date) -> Bool {
+        return self.startDate <= now && now < self.endDate
+    } // func contains(now: Date) -> Bool
+
     func isAllDay(for row: ASAClock) -> Bool {
         return self.isAllDay && row.calendar.calendarCode == self.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: self.startDate) == self.timeZone?.secondsFromGMT(for: self.startDate) || self.timeZone == nil)
     } // func isAllDay(for row: ASARow) -> Bool

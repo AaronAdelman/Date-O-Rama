@@ -13,7 +13,7 @@ import UIKit
 // MARK:  -
 
 struct ASAClockCell: View {
-    var processedRow:  ASAProcessedClock
+    var processedClock:  ASAProcessedClock
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
@@ -33,20 +33,20 @@ struct ASAClockCell: View {
     
     var body: some View {
 #if os(watchOS)
-        ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
+        ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
+                ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
             }
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedRow: processedRow, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedRow.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
+                ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowPlaceName: shouldShowPlaceName, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility, showingDetailView: $showingDetailView)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
             .listRowBackground(backgroundColor
@@ -156,7 +156,7 @@ struct ASAClockCellBody:  View {
                             HStack {
                                 Image(systemName: "calendar")
                                 Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
-                                Image(systemName: "rectangle")
+                                Image(systemName: "calendar.day.timeline.leading")
                                 Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
                             } // HStack
                         }
@@ -370,6 +370,6 @@ struct ASAClockEventsForEach:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedRow: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
+        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
     }
 } // struct ASAClockCell_Previews
