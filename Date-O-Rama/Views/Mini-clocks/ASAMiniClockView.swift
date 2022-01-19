@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASAMiniClockView:  View {
-    var processedRow:  ASAProcessedRow
+    var processedRow:  ASAProcessedClock
     var numberFormatter:  NumberFormatter
 
 //    func progress() -> Double {

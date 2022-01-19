@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct ASAMainRowsByPlaceView:  View {
+struct ASAMainClocksByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
     var primaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASAClock>
-    var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>> {
+    var processedRowsByPlace: Dictionary<String, Array<ASAProcessedClock>> {
         get {
             switch primaryGroupingOption {
             case .byPlaceName:
@@ -63,7 +63,7 @@ struct ASAMainRowsByPlaceView:  View {
     }
     
     var body:  some View {
-        let processedRows: [String : [ASAProcessedRow]] = self.processedRowsByPlace
+        let processedRows: [String : [ASAProcessedClock]] = self.processedRowsByPlace
         let keys: [String] = self.keys()
         ForEach(keys, id: \.self) {
             key
@@ -94,6 +94,6 @@ struct ASAMainRowsByPlaceView:  View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASAClock.generic]), now: .constant(Date()))
+        ASAMainClocksByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASAClock.generic]), now: .constant(Date()))
     }
 }

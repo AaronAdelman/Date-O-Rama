@@ -1,5 +1,5 @@
 //
-//  ASAProcessedRow.swift
+//  ASAProcessedClock.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 06/10/2020.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct ASAProcessedRow {
+struct ASAProcessedClock {
     var row:  ASAClock
     var calendarString:  String
     var dateString:  String
@@ -135,12 +135,12 @@ struct ASAProcessedRow {
         self.regionCode = row.locationData.regionCode
         self.miniCalendarNumberFormat = row.miniCalendarNumberFormat
     } // init(row:  ASARow, now:  Date)
-} // struct ASAProcessedRow
+} // struct ASAProcessedClock
 
 
 // MARK:  -
 
-extension ASAProcessedRow {
+extension ASAProcessedClock {
     var latitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
@@ -166,7 +166,7 @@ extension ASAProcessedRow {
             return self.hour != -1
         } // get
     } // var hasValidTime
-} // extension ASAProcessedRow
+} // extension ASAProcessedClock
 
 
 // MARK:  -
@@ -181,19 +181,19 @@ struct ASAProcessedRowsDictionaryKey {
 // MARK:  -
 
 extension Array where Element == ASAClock {
-    func processed(now:  Date) -> Array<ASAProcessedRow> {
-        var result:  Array<ASAProcessedRow> = []
+    func processed(now:  Date) -> Array<ASAProcessedClock> {
+        var result:  Array<ASAProcessedClock> = []
 
         for row in self {
-            let processedRow = ASAProcessedRow(row: row, now: now, isForComplications: false)
+            let processedRow = ASAProcessedClock(row: row, now: now, isForComplications: false)
             result.append(processedRow)
         }
 
         return result
-    } // func processed(now:  Date) -> Array<ASAProcessedRow>
+    } // func processed(now:  Date) -> Array<ASAProcessedClock>
 
-    func processedByFormattedDate(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+    func processedByFormattedDate(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>> {
+        var result:  Dictionary<String, Array<ASAProcessedClock>> = [:]
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
@@ -211,10 +211,10 @@ extension Array where Element == ASAClock {
         //        debugPrint("-----------")
 
         return result
-    } // func processedByFormattedDate(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+    } // func processedByFormattedDate(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>>
 
-    func processedRowsByCalendar(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+    func processedRowsByCalendar(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>> {
+        var result:  Dictionary<String, Array<ASAProcessedClock>> = [:]
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
@@ -229,10 +229,10 @@ extension Array where Element == ASAClock {
         } // for processedRow in processedRows
 
         return result
-    } // func processedRowsByCalendar(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+    } // func processedRowsByCalendar(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>>
 
-    func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+    func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>> {
+        var result:  Dictionary<String, Array<ASAProcessedClock>> = [:]
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
@@ -247,14 +247,14 @@ extension Array where Element == ASAClock {
         } // for processedRow in processedRows
 
         return result
-    } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+    } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>>
 
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
     }
 
-    func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>> {
-        var result:  Dictionary<String, Array<ASAProcessedRow>> = [:]
+    func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>> {
+        var result:  Dictionary<String, Array<ASAProcessedClock>> = [:]
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
@@ -274,10 +274,10 @@ extension Array where Element == ASAClock {
         } // for processedRow in processedRows
 
         return result
-    } // func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedRow>>
+    } // func processedRowsByCountry(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>>
 
-    func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedRow>> {
-        var result:  Dictionary<Int, Array<ASAProcessedRow>> = [:]
+    func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedClock>> {
+        var result:  Dictionary<Int, Array<ASAProcessedClock>> = [:]
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
@@ -292,25 +292,25 @@ extension Array where Element == ASAClock {
         } // for processedRow in processedRows
 
         return result
-    } // func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedRow>>
+    } // func processedRowsByTimeZone(now:  Date) -> Dictionary<Int, Array<ASAProcessedClock>>
 
-    func processedWestToEast(now:  Date) -> Array<ASAProcessedRow> {
+    func processedWestToEast(now:  Date) -> Array<ASAProcessedClock> {
         let processedRows = self.processed(now: now).sorted {
             $0.longitude < $1.longitude
         }
 
         return processedRows
-    } // func processedWestToEast(now:  Date) -> Array<ASAProcessedRow>
+    } // func processedWestToEast(now:  Date) -> Array<ASAProcessedClock>
 
-    func processedEastToWest(now:  Date) -> Array<ASAProcessedRow> {
+    func processedEastToWest(now:  Date) -> Array<ASAProcessedClock> {
         let processedRows = self.processed(now: now).sorted {
             $0.longitude > $1.longitude
         }
 
         return processedRows
-    } // func processedEastToWest(now:  Date) -> Array<ASAProcessedRow>
+    } // func processedEastToWest(now:  Date) -> Array<ASAProcessedClock>
 
-    func processedNorthToSouth(now:  Date) -> Array<ASAProcessedRow> {
+    func processedNorthToSouth(now:  Date) -> Array<ASAProcessedClock> {
         let processedRows = self.processed(now: now).sorted {
             $0.latitude > $1.latitude
         }
@@ -318,24 +318,24 @@ extension Array where Element == ASAClock {
         return processedRows
     } // func processedNorthToSouth(now:  Date) -> Array<ASAProcessedRow>
 
-    func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow> {
+    func processedSouthToNorth(now:  Date) -> Array<ASAProcessedClock> {
         let processedRows = self.processed(now: now).sorted {
             $0.latitude < $1.latitude
         }
 
         return processedRows
-    } // func processedSouthToNorth(now:  Date) -> Array<ASAProcessedRow>
+    } // func processedSouthToNorth(now:  Date) -> Array<ASAProcessedClock>
 } // extension Array where Element == ASARow
 
 
 // MARK: -
 
-extension Array where Element == ASAProcessedRow {
+extension Array where Element == ASAProcessedClock {
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
     }
 
-    func sorted(_ groupingOption:  ASAClocksViewGroupingOption) -> Array<ASAProcessedRow> {
+    func sorted(_ groupingOption:  ASAClocksViewGroupingOption) -> Array<ASAProcessedClock> {
         switch groupingOption {
         case .eastToWest:
             return self.sorted {
@@ -386,5 +386,5 @@ extension Array where Element == ASAProcessedRow {
                 $0.row.locationData.timeZone.secondsFromGMT() > $1.row.locationData.timeZone.secondsFromGMT() 
             }
         } // switch groupingOption
-    } // func sorted(_ groupingOption:  ASAClocksViewGroupingOption, now:  Date) -> Array<ASAProcessedRow>
+    } // func sorted(_ groupingOption:  ASAClocksViewGroupingOption, now:  Date) -> Array<ASAProcessedClock>
 }

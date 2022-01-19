@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByCalendarView.swift
+//  ASAMainClocksByCalendarView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAMainRowsByCalendarView:  View {
+struct ASAMainClocksByCalendarView:  View {
     @EnvironmentObject var userData:  ASAUserData
     
     @Binding var rows:  Array<ASAClock>
@@ -19,14 +19,14 @@ struct ASAMainRowsByCalendarView:  View {
 //    var isForComplications:  Bool
     
     var body:  some View {
-        let processedRows: [String : [ASAProcessedRow]] = self.rows.processedRowsByCalendar(now: now)
+        let processedRows: [String : [ASAProcessedClock]] = self.rows.processedRowsByCalendar(now: now)
         let keys: [String] = Array(processedRows.keys).sorted()
 
         ForEach(keys, id: \.self) {
             key
             in
             Section(header: Text(verbatim: key).font(Font.headlineMonospacedDigit)) {
-                let sortedProcessedRows: [ASAProcessedRow] = processedRows[key]!.sorted(secondaryGroupingOption)
+                let sortedProcessedRows: [ASAProcessedClock] = processedRows[key]!.sorted(secondaryGroupingOption)
                 ForEach(sortedProcessedRows.indices, id: \.self) {
                     index
                     in
@@ -48,6 +48,6 @@ struct ASAMainRowsByCalendarView:  View {
 
 struct ASAMainRowsByCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByCalendarView(rows: .constant([ASAClock.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
+        ASAMainClocksByCalendarView(rows: .constant([ASAClock.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }

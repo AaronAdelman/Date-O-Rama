@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASAPlaceSubcell:  View {
-    var processedRow:  ASAProcessedRow
+    var processedRow:  ASAProcessedClock
     var shouldShowPlaceName:  Bool
 
     var body: some View {

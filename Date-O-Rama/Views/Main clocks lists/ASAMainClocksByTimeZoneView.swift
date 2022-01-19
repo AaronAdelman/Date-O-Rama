@@ -1,5 +1,5 @@
 //
-//  ASAMainRowsByTimeZoneView.swift
+//  ASAMainClocksByTimeZoneView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 02/12/2020.
@@ -10,17 +10,17 @@ import Foundation
 import SwiftUI
 
 
-struct ASAMainRowsByTimeZoneView:  View {
+struct ASAMainClocksByTimeZoneView:  View {
     @EnvironmentObject var userData:  ASAUserData
     var primaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASAClock>
     
-    var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>> {
+    var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedClock>> {
         get {
             return self.rows.processedRowsByTimeZone(now: now)
         } // get
-    } // var processedRowsByFormattedDate: Dictionary<Int, Array<ASAProcessedRow>>
+    } // var processedRowsByFormattedDate: Dictionary<Int, Array<ASAProcessedClock>>
     
     @Binding var now:  Date
     //    var shouldShowTimeToNextDay:  Bool
@@ -48,7 +48,7 @@ struct ASAMainRowsByTimeZoneView:  View {
             Section(header:  Text(self.processedRowsByTimeZone[key]![0].timeZoneString).font(Font.headlineMonospacedDigit)
                         .minimumScaleFactor(0.5).lineLimit(1)
             ) {
-                let sortedProcessedRows: [ASAProcessedRow] = self.processedRowsByTimeZone[key]!.sorted(secondaryGroupingOption)
+                let sortedProcessedRows: [ASAProcessedClock] = self.processedRowsByTimeZone[key]!.sorted(secondaryGroupingOption)
                 ForEach(sortedProcessedRows.indices, id: \.self) {
                     index
                     in

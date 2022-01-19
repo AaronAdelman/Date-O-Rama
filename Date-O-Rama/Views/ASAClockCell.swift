@@ -13,7 +13,7 @@ import UIKit
 // MARK:  -
 
 struct ASAClockCell: View {
-    var processedRow:  ASAProcessedRow
+    var processedRow:  ASAProcessedClock
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
@@ -61,7 +61,7 @@ struct ASAClockCell: View {
 // MARK: -
 
 struct ASAClockCellBody:  View {
-    var processedRow:  ASAProcessedRow
+    var processedRow:  ASAProcessedClock
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
@@ -314,7 +314,7 @@ struct ASAClockMenuVisibilityLabel: View {
 // MARK:  -
 
 struct ASAClockEventsSubcell: View {
-    var processedRow:  ASAProcessedRow
+    var processedRow:  ASAProcessedClock
     @Binding var now:  Date
     @State private var showingEvents:  Bool = true
     @Binding var eventVisibility: ASAClockCellEventVisibility
@@ -339,7 +339,7 @@ struct ASAClockEventsSubcell: View {
 // MARK:  -
 
 struct ASAClockEventsForEach:  View {
-    var processedRow:  ASAProcessedRow
+    var processedRow:  ASAProcessedClock
     var visibility:  ASAClockCellEventVisibility
     var allDayEventVisibility: ASAClockCellAllDayEventVisibility
     @Binding var now:  Date
@@ -370,6 +370,6 @@ struct ASAClockEventsForEach:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedRow: ASAProcessedRow(row: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
+        ASAClockCell(processedRow: ASAProcessedClock(row: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
     }
 } // struct ASAClockCell_Previews
