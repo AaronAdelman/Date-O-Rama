@@ -153,7 +153,7 @@ struct ASAEventsTab: View {
                     let rangeStart = self.primaryRow.startOfDay(date: date)
                     let rangeEnd = self.primaryRow.startOfNextDay(date: date)
                     Section {
-                        ForEach(ASAUserData.shared.events(startDate: rangeStart, endDate: rangeEnd, clock: self.primaryRow), id: \.eventIdentifier) {
+                        ForEach(ASAUserData.shared.mainClocksEvents(startDate: rangeStart, endDate: rangeEnd), id: \.eventIdentifier) {
                             event
                             in
                             ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: false)

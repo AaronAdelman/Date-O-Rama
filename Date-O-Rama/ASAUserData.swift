@@ -474,18 +474,18 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     // MARK:  - Events
 
-    func events(startDate:  Date, endDate:  Date, clock:  ASAClock) ->  Array<ASAEventCompatible> {
+    func mainClocksEvents(startDate:  Date, endDate:  Date) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         for clock in self.mainClocks {
             unsortedEvents = unsortedEvents + clock.events(startDate:  startDate, endDate:  endDate)
-        } // for row in userData.mainRows
+        } // for for clock in self.mainClocks
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
         return events
-    } // func events(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
+    } // func mainClocksEvents(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
 } // class ASAUserData
 
 extension ASAUserData {
