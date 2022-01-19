@@ -171,7 +171,7 @@ extension Array where Element == ASAEventCompatible {
 // MARK:  -
 
 extension ASAEventCompatible {
-    func isAllDay(for row: ASARow) -> Bool {
+    func isAllDay(for row: ASAClock) -> Bool {
         return self.isAllDay && row.calendar.calendarCode == self.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: self.startDate) == self.timeZone?.secondsFromGMT(for: self.startDate) || self.timeZone == nil)
     } // func isAllDay(for row: ASARow) -> Bool
     

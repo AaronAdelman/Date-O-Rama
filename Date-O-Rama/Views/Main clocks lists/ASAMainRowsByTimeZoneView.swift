@@ -14,7 +14,7 @@ struct ASAMainRowsByTimeZoneView:  View {
     @EnvironmentObject var userData:  ASAUserData
     var primaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    @Binding var rows:  Array<ASARow>
+    @Binding var rows:  Array<ASAClock>
     
     var processedRowsByTimeZone: Dictionary<Int, Array<ASAProcessedRow>> {
         get {

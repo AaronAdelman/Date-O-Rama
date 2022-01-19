@@ -11,7 +11,7 @@ import WatchKit
 import SwiftUI
 
 extension ASAUserData {
-    func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>? {
+    func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASAClock>? {
         switch complicationFamily {
         case .modularLarge, .graphicRectangular:
             return self.threeLineLargeRows
@@ -95,7 +95,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler(entry)
     } // func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void)
 
-    func earliestStartOfNextDay(when:  Date, rowArray:  Array<ASARow>) -> Date {
+    func earliestStartOfNextDay(when:  Date, rowArray:  Array<ASAClock>) -> Date {
         var result = Date.distantFuture
         
         for row in rowArray {
@@ -360,17 +360,17 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let threeLineLargeRowsDescriptor = CLKComplicationDescriptor(
-            identifier: ASARowArrayKey.threeLineLarge.rawValue,
+            identifier: ASAClockArrayKey.threeLineLarge.rawValue,
             displayName: NSLocalizedString("3-line large", comment: ""),
             supportedFamilies: [.modularLarge, .graphicRectangular])
 
-        let twoLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineSmall.rawValue, displayName: NSLocalizedString("2-line small", comment: ""), supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
+        let twoLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.twoLineSmall.rawValue, displayName: NSLocalizedString("2-line small", comment: ""), supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
 
-        let twoLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.twoLineLarge.rawValue, displayName: NSLocalizedString("2-line large", comment: ""), supportedFamilies: [.extraLarge])
+        let twoLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.twoLineLarge.rawValue, displayName: NSLocalizedString("2-line large", comment: ""), supportedFamilies: [.extraLarge])
 
-        let oneLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineSmall.rawValue, displayName: NSLocalizedString("1-line small", comment: ""), supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
+        let oneLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.oneLineSmall.rawValue, displayName: NSLocalizedString("1-line small", comment: ""), supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
 
-        let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASARowArrayKey.oneLineLarge.rawValue, displayName: NSLocalizedString("1-line large", comment: ""), supportedFamilies: [.utilitarianLarge])
+        let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.oneLineLarge.rawValue, displayName: NSLocalizedString("1-line large", comment: ""), supportedFamilies: [.utilitarianLarge])
 
         handler([threeLineLargeRowsDescriptor, twoLineSmallRowsDescriptor, twoLineLargeRowsDescriptor, oneLineSmallRowsDescriptor, oneLineLargeRowsDescriptor])
     } // func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void)

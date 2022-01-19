@@ -1,5 +1,5 @@
 //
-//  ASARow.swift
+//  ASAClock.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2018-01-04.
@@ -40,7 +40,7 @@ let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 
 // MARK:  -
 
-class ASARow: NSObject, ObservableObject, Identifiable {
+class ASAClock: NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
     @Published var usesDeviceLocation:  Bool = true
@@ -240,10 +240,10 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 
     private var startingUp = true
     
-    public class func newRow(dictionary:  Dictionary<String, Any>) -> ASARow {
+    public class func newRow(dictionary:  Dictionary<String, Any>) -> ASAClock {
         //        debugPrint(#file, #function, dictionary)
         
-        let newRow = ASARow()
+        let newRow = ASAClock()
         
         let UUIDString = dictionary[UUID_KEY] as? String
         if UUIDString != nil {
@@ -327,7 +327,7 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 
         newRow.startingUp = false
         return newRow
-    } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASARow
+    } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASAClock
 
 
     // MARK:  -
@@ -385,12 +385,12 @@ class ASARow: NSObject, ObservableObject, Identifiable {
 //    var workDays: Array<Int> {
 //        return self.calendar.workDays
 //    }
-} // class ASARow
+} // class ASAClock
 
 
 // MARK:  -
 
-extension ASARow {
+extension ASAClock {
     public func dateStringTimeStringDateComponents(now: Date) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
         #if os(watchOS)
         let properDateFormat = self.dateFormat.watchShortened
@@ -470,33 +470,33 @@ extension ASARow {
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat {
         return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))
     } // var miniCalendarNumberFormat
-} // extension ASARow
+} // extension ASAClock
 
 
 // MARK:  -
 
-extension ASARow {
-    static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASARow {
-        let temp = ASARow()
+extension ASAClock {
+    static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASAClock {
+        let temp = ASAClock()
         temp.calendar = ASAAppleCalendar(calendarCode: calendarCode)
         temp.localeIdentifier = ""
         temp.dateFormat = dateFormat
         return temp
-    } // static func generic(calendarCode:  ASACalendarCode) ->  ASARow
+    } // static func generic(calendarCode:  ASACalendarCode) ->  ASAClock
 
-    static var generic:  ASARow {
-        return ASARow.generic(calendarCode: .Gregorian, dateFormat: .full)
-    } // static var generic:  ASARow
-} // extension ASARow
+    static var generic:  ASAClock {
+        return ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
+    } // static var generic:  ASAClock
+} // extension ASAClock
 
-extension ASARow {
+extension ASAClock {
     public func countryCodeEmoji(date:  Date) -> String {
         let regionCode: String = self.locationData.regionCode ?? ""
         let result: String = regionCode.flag
 //        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
         return result
     } // public func countryCodeEmoji(date:  Date) -> String
-} // extension ASARow
+} // extension ASAClock
 
 class ASAStartAndEndDateStrings {
     var startDateString: String?
@@ -508,7 +508,7 @@ class ASAStartAndEndDateStrings {
     }
 }
 
-extension ASARow {
+extension ASAClock {
     func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool, eventIsAllDay: Bool) -> String {
         return (isPrimaryRow && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
      } // func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String
@@ -586,4 +586,4 @@ extension ASARow {
     var isGregorian: Bool {
         return self.calendar.calendarCode == .Gregorian
     } // var isGregorian
-} // extension ASARow
+} // extension ASAClock

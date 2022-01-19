@@ -87,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
-    func rowArrayDictionary(key:  ASARowArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
+    func rowArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
         let rowArray = ASAUserData.shared.rowArray(key: key)
         
         var temp:  Array<Dictionary<String, Any>> = []
@@ -97,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         }
         
         return temp
-    } // func rowArrayDictionary(key:  ASARowArrayKey) -> Array<Dictionary<String, Any>>
+    } // func rowArrayDictionary(key:  ASAClockArrayKey) -> Array<Dictionary<String, Any>>
     
     public func sendUserData(_ session: WCSession) {
 //        debugPrint(#file, #function)
@@ -112,12 +112,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
 
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,
-            ASARowArrayKey.threeLineLarge.rawValue:  threeLineLargeTemp,
-            ASARowArrayKey.twoLineLarge.rawValue:  twoLineLargeTemp,
-            ASARowArrayKey.twoLineSmall.rawValue:  twoLineSmallTemp,
-            ASARowArrayKey.oneLineLarge.rawValue:  oneLineLargeTemp,
-            ASARowArrayKey.oneLineSmall.rawValue:  oneLineSmallTemp,
-            ASARowArrayKey.app.rawValue:  mainRowsTemp
+            ASAClockArrayKey.threeLineLarge.rawValue:  threeLineLargeTemp,
+            ASAClockArrayKey.twoLineLarge.rawValue:  twoLineLargeTemp,
+            ASAClockArrayKey.twoLineSmall.rawValue:  twoLineSmallTemp,
+            ASAClockArrayKey.oneLineLarge.rawValue:  oneLineLargeTemp,
+            ASAClockArrayKey.oneLineSmall.rawValue:  oneLineSmallTemp,
+            ASAClockArrayKey.app.rawValue:  mainRowsTemp
             ] as [String : Any]
         
 //        session.sendMessage(updateMessage, replyHandler: nil, errorHandler: nil)

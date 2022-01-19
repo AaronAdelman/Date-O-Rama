@@ -20,7 +20,7 @@ let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
 
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
-    var row:  ASARow
+    var row:  ASAClock
     @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
     @State var showingEventEditView = false
@@ -255,7 +255,7 @@ struct ASAEventFrequencyView: View {
 
 struct ASAEventRecurrenceRulesForEach: View {
     var event: ASAEventCompatible
-    var row: ASARow
+    var row: ASAClock
 
     let GregorianCalendar: Calendar = {
         var calendar = Calendar(identifier: .gregorian)
@@ -338,7 +338,7 @@ struct ASAEventRecurrenceRulesForEach: View {
 // MARK:  -
 
 struct ASAEventDetailDateTimeSection: View {
-    var row: ASARow
+    var row: ASAClock
     var event: ASAEventCompatible
 
     func dateFormatter() -> DateFormatter {
@@ -402,7 +402,7 @@ struct ASAEventDetailDateTimeSection: View {
 
 struct ASAEventAlarmView: View {
     var alarm: EKAlarm
-    var row: ASARow
+    var row: ASAClock
     
     func value() -> String {
 //        var strings: Array<String> = []

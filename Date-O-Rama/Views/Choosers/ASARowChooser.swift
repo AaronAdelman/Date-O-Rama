@@ -36,7 +36,7 @@ struct ASARowChooser: View {
 struct ASARowCell: View {
     @Binding var selectedUUIDString:  String
 
-    var row:  ASARow
+    var row:  ASAClock
     
     var body: some View {
         HStack {

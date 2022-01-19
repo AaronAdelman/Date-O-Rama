@@ -41,7 +41,7 @@ fileprivate extension Int {
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
-    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASAClock
     
     @State var tempLocaleIdentifier:  String
     
@@ -115,7 +115,7 @@ struct ASALocaleCell: View {
     
     @Binding var tempLocaleIdentifier:  String
 
-    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASAClock
     
     var body: some View {
         HStack {
@@ -148,7 +148,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocaleChooserView(row: ASARow.generic, tempLocaleIdentifier: "en_US")
+        ASALocaleChooserView(row: ASAClock.generic, tempLocaleIdentifier: "en_US")
     }
 }
 

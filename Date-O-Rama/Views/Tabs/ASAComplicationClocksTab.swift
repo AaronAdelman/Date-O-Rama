@@ -14,7 +14,7 @@ struct ASAComplicationClocksTab: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var isNavigationBarHidden:  Bool = true
     
-    func row(with key:  ASARowArrayKey) -> Array<ASARow> {
+    func row(with key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .threeLineLarge:
             return self.userData.threeLineLargeRows
@@ -29,14 +29,14 @@ struct ASAComplicationClocksTab: View {
         case .oneLineSmall:
             return self.userData.oneLineSmallRows
         } // switch key
-    } // func row(with key:  ASARowArrayKey) -> Array<ASARow>
+    } // func row(with key:  ASAClockArrayKey) -> Array<ASARow>
     
     var body: some View {
         NavigationView {
             VStack {
                 Rectangle().frame(height:  0.0) // Prevents content from showing through the status bar.
                 List {
-                    ForEach(ASARowArrayKey.complicationSections, id:  \.self) {complicationKey in
+                    ForEach(ASAClockArrayKey.complicationSections, id:  \.self) {complicationKey in
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
                                 ASAClockCell(processedRow: ASAProcessedRow(row: row, now: now, isForComplications: true), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false)

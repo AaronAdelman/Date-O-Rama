@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 struct ASATimeFormatChooserView: View {
-    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASAClock
 
     @State var tempTimeFormat:  ASATimeFormat
     @State var calendarCode:  ASACalendarCode
@@ -64,7 +64,7 @@ struct ASATimeFormatCell: View {
     
     @Binding var selectedTimeFormat:  ASATimeFormat
 
-    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASAClock
 
     var body: some View {
         HStack {
@@ -89,6 +89,6 @@ struct ASATimeFormatCell: View {
 
 struct ASATimeFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASATimeFormatChooserView(row: ASARow.generic, tempTimeFormat: .medium, calendarCode: .Gregorian)
+        ASATimeFormatChooserView(row: ASAClock.generic, tempTimeFormat: .medium, calendarCode: .Gregorian)
     }
 }

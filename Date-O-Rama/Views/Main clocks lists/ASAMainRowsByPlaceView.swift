@@ -12,7 +12,7 @@ struct ASAMainRowsByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
     var primaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
-    @Binding var rows:  Array<ASARow>
+    @Binding var rows:  Array<ASAClock>
     var processedRowsByPlace: Dictionary<String, Array<ASAProcessedRow>> {
         get {
             switch primaryGroupingOption {
@@ -94,6 +94,6 @@ struct ASAMainRowsByPlaceView:  View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASARow.generic]), now: .constant(Date()))
+        ASAMainRowsByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASAClock.generic]), now: .constant(Date()))
     }
 }

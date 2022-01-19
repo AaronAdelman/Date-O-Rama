@@ -344,7 +344,7 @@ struct ASAClockEventsForEach:  View {
     var allDayEventVisibility: ASAClockCellAllDayEventVisibility
     @Binding var now:  Date
     
-    static let genericRow = ASARow.generic
+    static let genericRow = ASAClock.generic
     
     var body: some View {
         let events:  Array<ASAEventCompatible> = {
@@ -354,7 +354,7 @@ struct ASAClockEventsForEach:  View {
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            let primaryRow: ASARow = processedRow.row
+            let primaryRow: ASAClock = processedRow.row
             let secondaryRow = ASAClockEventsForEach.genericRow
             let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
             let rangeStart: Date = processedRow.startOfDay
@@ -370,6 +370,6 @@ struct ASAClockEventsForEach:  View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedRow: ASAProcessedRow(row: ASARow.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
+        ASAClockCell(processedRow: ASAProcessedRow(row: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
     }
 } // struct ASAClockCell_Previews

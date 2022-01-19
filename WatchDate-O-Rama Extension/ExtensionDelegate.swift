@@ -116,13 +116,13 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         //        debugPrint(#file, #function, message)
         
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
-            for key in ASARowArrayKey.complicationSections {
+            for key in ASAClockArrayKey.complicationSections {
                 let value = message[key.rawValue]
                 var rowArray = self.userData.rowArray(key: key)
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
                     for i in 0..<key.minimumNumberOfRows {
-                        let newRow: ASARow = ASARow.newRow(dictionary: valueAsArray[i])
+                        let newRow: ASAClock = ASAClock.newRow(dictionary: valueAsArray[i])
                         rowArray[i] = newRow
                     } // for i in 0..<key.minimumNumberOfRows()
                 }
@@ -139,12 +139,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
 //            }
             //             TODO:  Figure out what went wrong
             
-            let mainRowsTemp = message[ASARowArrayKey.app.rawValue]
+            let mainRowsTemp = message[ASAClockArrayKey.app.rawValue]
             if mainRowsTemp != nil {
                 let tempAsArray = mainRowsTemp! as! Array<Dictionary<String, Any>>
-                var mainRows:  Array<ASARow> = []
+                var mainRows:  Array<ASAClock> = []
                 for item in tempAsArray {
-                    let itemAsRow = ASARow.newRow(dictionary: item)
+                    let itemAsRow = ASAClock.newRow(dictionary: item)
                     mainRows.append(itemAsRow)
                 }
                 DispatchQueue.main.async {

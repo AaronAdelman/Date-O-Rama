@@ -544,8 +544,8 @@ class ASAEventCalendar {
         
         let filledInEndDateSpecification = endDateSpecification!.fillIn(EYMD: filledInEndDateEYMD)
         
-        assert(filledInStartDateSpecification != nil)
-        assert(filledInEndDateSpecification != nil)
+//        assert(filledInStartDateSpecification != nil)
+//        assert(filledInEndDateSpecification != nil)
         return (true, filledInStartDateSpecification, filledInEndDateSpecification)
     } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?)
     

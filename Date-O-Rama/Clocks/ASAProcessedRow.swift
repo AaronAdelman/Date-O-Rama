@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 struct ASAProcessedRow {
-    var row:  ASARow
+    var row:  ASAClock
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
@@ -56,7 +56,7 @@ struct ASAProcessedRow {
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
 
-    init(row:  ASARow, now:  Date, isForComplications: Bool) {
+    init(row:  ASAClock, now:  Date, isForComplications: Bool) {
         self.row = row
         self.calendarString = row.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = row.dateStringTimeStringDateComponents(now: now)
@@ -180,7 +180,7 @@ struct ASAProcessedRowsDictionaryKey {
 
 // MARK:  -
 
-extension Array where Element == ASARow {
+extension Array where Element == ASAClock {
     func processed(now:  Date) -> Array<ASAProcessedRow> {
         var result:  Array<ASAProcessedRow> = []
 

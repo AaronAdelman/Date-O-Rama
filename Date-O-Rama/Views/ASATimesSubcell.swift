@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
-    var row:  ASARow
+    var row:  ASAClock
     
     #if os(watchOS)
     #else

@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ASAEventCell:  View {
     var event:  ASAEventCompatible
-    var primaryRow:  ASARow
-    var secondaryRow:  ASARow
+    var primaryRow:  ASAClock
+    var secondaryRow:  ASAClock
     var eventsViewShouldShowSecondaryDates: Bool
     var isForClock:  Bool
     @Binding var now:  Date

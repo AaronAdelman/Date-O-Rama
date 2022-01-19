@@ -20,9 +20,9 @@ struct ASAEventsTab: View {
     @State private var showingPreferences:  Bool = false
     @State private var showingEventCalendarChooserView = false
     
-    var primaryRow:  ASARow {
+    var primaryRow:  ASAClock {
         get {
-            let result: ASARow = ASAUserData.shared.row(uuidString: primaryRowUUIDString, backupIndex: 0)
+            let result: ASAClock = ASAUserData.shared.row(uuidString: primaryRowUUIDString, backupIndex: 0)
             
             self.primaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)
@@ -33,13 +33,13 @@ struct ASAEventsTab: View {
         } // set
     } // var primaryRow:  ASARow
     
-    var secondaryRow:  ASARow {
+    var secondaryRow:  ASAClock {
         get {
             if self.userData.mainRows.count < 2 {
-                return ASARow.generic
+                return ASAClock.generic
             }
             
-            let result: ASARow = ASAUserData.shared.row(uuidString: secondaryRowUUIDString, backupIndex: 1)
+            let result: ASAClock = ASAUserData.shared.row(uuidString: secondaryRowUUIDString, backupIndex: 1)
             
             self.secondaryRowUUIDString = result.uuid.uuidString
             //            debugPrint(#file, #function, result, result.calendar.calendarCode, result.locationData.formattedOneLineAddress)

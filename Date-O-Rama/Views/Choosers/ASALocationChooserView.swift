@@ -11,7 +11,7 @@ import CoreLocation
 import MapKit
 
 struct ASALocationChooserView: View {
-    @ObservedObject var clock:  ASARow
+    @ObservedObject var clock:  ASAClock
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
     @State var tempLocationData:  ASALocation = ASALocation()
@@ -146,6 +146,6 @@ struct ASALocationChooserViewCell:  View {
 
 struct LocationChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationChooserView(clock: ASARow.generic, tempLocationData: ASALocation())
+        ASALocationChooserView(clock: ASAClock.generic, tempLocationData: ASALocation())
     }
 }

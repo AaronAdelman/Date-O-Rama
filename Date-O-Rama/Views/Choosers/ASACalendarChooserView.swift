@@ -80,7 +80,7 @@ struct ASACalendarChooserView: View {
         .TruncatedJulianDay
     ]
     
-    @ObservedObject var row:  ASARow
+    @ObservedObject var row:  ASAClock
     @State var tempCalendarCode:  ASACalendarCode
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -178,6 +178,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarChooserView(row: ASARow.generic, tempCalendarCode: .Gregorian)
+        ASACalendarChooserView(row: ASAClock.generic, tempCalendarCode: .Gregorian)
     }
 }

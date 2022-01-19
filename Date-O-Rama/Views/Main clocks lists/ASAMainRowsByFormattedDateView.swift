@@ -11,7 +11,7 @@ import SwiftUI
 struct ASAMainRowsByFormattedDateView:  View {
     @EnvironmentObject var userData:  ASAUserData
     
-    @Binding var rows:  Array<ASARow>
+    @Binding var rows:  Array<ASAClock>
     @Binding var now:  Date
     @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     //    var shouldShowTimeToNextDay:  Bool
@@ -48,6 +48,6 @@ struct ASAMainRowsByFormattedDateView:  View {
 
 struct ASAMainRowsByFormattedDateView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainRowsByFormattedDateView(rows: .constant([ASARow.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
+        ASAMainRowsByFormattedDateView(rows: .constant([ASAClock.generic]), now: .constant(Date()), secondaryGroupingOption: .constant(.eastToWest))
     }
 }

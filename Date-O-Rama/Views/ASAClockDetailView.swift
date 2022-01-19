@@ -11,7 +11,7 @@ import CoreLocation
 import EventKit
 
 struct ASAClockDetailView: View {
-    @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASAClock
     var now:  Date
     
     var shouldShowTime:  Bool
@@ -72,7 +72,7 @@ struct ASAClockDetailView: View {
 // MARK:  -
 
 struct ASAClockDetailEditingSection:  View {
-    @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASAClock
     var now:  Date
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
@@ -134,7 +134,7 @@ struct ASAClockDetailEditingSection:  View {
 // MARK:  -
 
 struct ASABuiltInEventCalendarsEditingSection:  View {
-    @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASAClock
     var builtInEventCalendarFileNames:  Array<String>
 
     var body:  some View {
@@ -170,7 +170,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 // MARK:  -
 
 struct ASAICalendarEventCalendarsEditingSection:  View {
-    @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASAClock
     var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
 
     var body:  some View {
@@ -208,7 +208,7 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
 // MARK:  -
 
 struct ASABuiltInEventCalendarCell:  View {
-    @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASAClock
 
     var fileName:  String
 
@@ -252,7 +252,7 @@ struct ASABuiltInEventCalendarCell:  View {
 // MARK:  -
 
 struct ASAICalendarEventCalendarCell:  View {
-    @ObservedObject var selectedRow:  ASARow
+    @ObservedObject var selectedRow:  ASAClock
 
     var title:  String
     var color:  Color
@@ -271,6 +271,6 @@ struct ASAICalendarEventCalendarCell:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASARow.generic, now: Date(), shouldShowTime: true, deleteable: true, forAppleWatch: true)
+        ASAClockDetailView(selectedRow: ASAClock.generic, now: Date(), shouldShowTime: true, deleteable: true, forAppleWatch: true)
     }
 }

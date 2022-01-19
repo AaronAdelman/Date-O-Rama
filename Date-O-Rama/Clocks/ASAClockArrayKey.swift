@@ -1,5 +1,5 @@
 //
-//  ASARowArrayKey.swift
+//  ASAClockArrayKey.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2018-08-17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ASARowArrayKey:  String {
+enum ASAClockArrayKey:  String {
     case app            = "app"
     case threeLineLarge = "modularLarge"
     case twoLineSmall   = "modularSmall"
@@ -17,7 +17,7 @@ enum ASARowArrayKey:  String {
     case oneLineSmall   = "utilitarian"
 } // enum ASARowArrayKeys:  String
 
-extension ASARowArrayKey {
+extension ASAClockArrayKey {
     var minimumNumberOfRows:  Int {
         switch self {
         case .app:
@@ -40,7 +40,7 @@ extension ASARowArrayKey {
         } // switch self
     } // var minimumNumberOfRows
     
-    static var complicationSections:  Array<ASARowArrayKey> {
+    static var complicationSections:  Array<ASAClockArrayKey> {
         return [
             .threeLineLarge,
             .twoLineSmall,
@@ -49,4 +49,4 @@ extension ASARowArrayKey {
             .oneLineSmall
         ]
     } // static var complicationSections
-} // extension ASARowArrayKey
+} // extension ASAClockArrayKey
