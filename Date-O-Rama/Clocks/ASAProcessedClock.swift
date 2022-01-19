@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 
 struct ASAProcessedClock {
-    var row:  ASAClock
+    var clock:  ASAClock
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
@@ -57,7 +57,7 @@ struct ASAProcessedClock {
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool) {
-        self.row = clock
+        self.clock = clock
         self.calendarString = clock.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now)
         self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
@@ -75,12 +75,10 @@ struct ASAProcessedClock {
             self.usesDeviceLocation = clock.usesDeviceLocation
             var locationString = ""
             if clock.locationData.name == nil && clock.locationData.locality == nil && clock.locationData.country == nil {
-                //                if row.location != nil {
                 locationString = clock.locationData.location.humanInterfaceRepresentation
-                //                }
             } else {
                 #if os(watchOS)
-                locationString = row.locationData.shortFormattedOneLineAddress
+                locationString = clock.locationData.shortFormattedOneLineAddress
                 #else
                 locationString = clock.locationData.formattedOneLineAddress
                 #endif
@@ -144,7 +142,7 @@ extension ASAProcessedClock {
     var latitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
-                return self.row.locationData.location.coordinate.latitude 
+                return self.clock.locationData.location.coordinate.latitude 
             } else {
                 return 0.0
             }
@@ -154,7 +152,7 @@ extension ASAProcessedClock {
     var longitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
-                return self.row.locationData.location.coordinate.longitude 
+                return self.clock.locationData.location.coordinate.longitude 
             } else {
                 return 0.0
             }
@@ -167,15 +165,6 @@ extension ASAProcessedClock {
         } // get
     } // var hasValidTime
 } // extension ASAProcessedClock
-
-
-// MARK:  -
-
-struct ASAProcessedRowsDictionaryKey {
-    var text:  String
-    var emoji:  String?
-} // struct ASAProcessedRowsDictionaryKey
-
 
 
 // MARK:  -
@@ -262,7 +251,7 @@ extension Array where Element == ASAClock {
                 if processedRow.supportsLocations == false {
                 return noCountryString()
             }
-                return processedRow.row.locationData.country ?? noCountryString()
+                return processedRow.clock.locationData.country ?? noCountryString()
             }()
             var value = result[key]
             if value == nil {
@@ -281,7 +270,7 @@ extension Array where Element == ASAClock {
         let processedRows = self.processed(now: now)
 
         for processedRow in processedRows {
-            let key = processedRow.row.locationData.timeZone.secondsFromGMT(for: now) 
+            let key = processedRow.clock.locationData.timeZone.secondsFromGMT(for: now) 
             var value = result[key]
             if value == nil {
                 result[key] = [processedRow]
@@ -374,16 +363,16 @@ extension Array where Element == ASAProcessedClock {
 
         case .byCountry:
             return self.sorted {
-                $0.row.locationData.country ?? noCountryString() < $1.row.locationData.country ?? noCountryString()
+                $0.clock.locationData.country ?? noCountryString() < $1.clock.locationData.country ?? noCountryString()
             }
 
         case .byTimeZoneWestToEast:
             return self.sorted {
-                $0.row.locationData.timeZone.secondsFromGMT() < $1.row.locationData.timeZone.secondsFromGMT() 
+                $0.clock.locationData.timeZone.secondsFromGMT() < $1.clock.locationData.timeZone.secondsFromGMT() 
             }
         case .byTimeZoneEastToWest:
             return self.sorted {
-                $0.row.locationData.timeZone.secondsFromGMT() > $1.row.locationData.timeZone.secondsFromGMT() 
+                $0.clock.locationData.timeZone.secondsFromGMT() > $1.clock.locationData.timeZone.secondsFromGMT() 
             }
         } // switch groupingOption
     } // func sorted(_ groupingOption:  ASAClocksViewGroupingOption, now:  Date) -> Array<ASAProcessedClock>

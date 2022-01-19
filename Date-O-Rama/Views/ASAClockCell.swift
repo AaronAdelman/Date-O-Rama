@@ -96,7 +96,7 @@ struct ASAClockCellBody:  View {
     
     fileprivate func numberFormatter() -> NumberFormatter {
         let temp = NumberFormatter()
-        temp.locale = Locale(identifier: processedRow.row.localeIdentifier)
+        temp.locale = Locale(identifier: processedRow.clock.localeIdentifier)
         return temp
     } // func numberFormatter() -> NumberFormatter
     
@@ -202,8 +202,8 @@ struct ASAClockCellBody:  View {
                         Image(systemName: ARROW_SYMBOL_NAME)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-                        ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
-                            .onReceive(processedRow.row.objectWillChange) { _ in
+                        ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
+                            .onReceive(processedRow.clock.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 ASAUserData.shared.savePreferences(code: .complications)
                             }
@@ -235,8 +235,8 @@ struct ASAClockCellBody:  View {
                             .font(.title)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-                        ASAClockDetailView(selectedRow: processedRow.row, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                            .onReceive(processedRow.row.objectWillChange) { _ in
+                        ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                            .onReceive(processedRow.clock.objectWillChange) { _ in
                                 // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                 ASAUserData.shared.savePreferences(code: .clocks)
                             }
@@ -354,7 +354,7 @@ struct ASAClockEventsForEach:  View {
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            let primaryRow: ASAClock = processedRow.row
+            let primaryRow: ASAClock = processedRow.clock
             let secondaryRow = ASAClockEventsForEach.genericRow
             let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
             let rangeStart: Date = processedRow.startOfDay
