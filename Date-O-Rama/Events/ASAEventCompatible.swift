@@ -296,8 +296,4 @@ extension ASAEventCompatible {
         
         return self.endDate.timeIntervalSince(self.startDate)
     } // var duration
-    
-    var isEKEvent:  Bool {
-        return self is EKEvent
-    } // var isEKEvent
 } // extension ASAEventCompatible

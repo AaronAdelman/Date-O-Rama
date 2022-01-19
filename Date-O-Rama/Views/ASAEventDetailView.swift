@@ -34,7 +34,7 @@ struct ASAEventDetailView: View {
         List {
             #if os(watchOS)
             #else
-            if event.isEKEvent && !event.isReadOnly {
+            if event is EKEvent && !event.isReadOnly {
                 let eventAsEKEvent = event as! EKEvent
                 
                 HStack {
