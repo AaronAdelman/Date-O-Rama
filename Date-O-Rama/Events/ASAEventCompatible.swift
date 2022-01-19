@@ -41,7 +41,6 @@ protocol ASAEventCompatible {
     var calendarTitleWithLocation:  String { get }
     var calendarTitleWithoutLocation:  String { get }
     var calendarCode:  ASACalendarCode { get }
-    var isEKEvent:  Bool { get }
     var geoLocation: CLLocation? { get }
     var isReadOnly: Bool { get }
     
@@ -297,4 +296,8 @@ extension ASAEventCompatible {
         
         return self.endDate.timeIntervalSince(self.startDate)
     } // var duration
+    
+    var isEKEvent:  Bool {
+        return self is EKEvent
+    } // var isEKEvent
 } // extension ASAEventCompatible

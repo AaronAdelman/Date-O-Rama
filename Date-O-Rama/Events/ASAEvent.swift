@@ -28,7 +28,6 @@ struct ASAEvent:  ASAEventCompatible {
     var uuid = UUID()
     var calendarTitleWithLocation:  String
     var calendarTitleWithoutLocation: String
-    var isEKEvent: Bool = false
     var calendarCode: ASACalendarCode
     var locationData:  ASALocation
     

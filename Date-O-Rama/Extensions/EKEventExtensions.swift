@@ -15,12 +15,6 @@ extension EKEvent:  ASAEventCompatible {
         return self.calendar.title
     }
 
-    var isEKEvent: Bool {
-        get {
-            return true
-        } // get
-    } // var isEKEvent
-
     var color: Color {
         get {
             let calendarColor = self.calendar.cgColor
