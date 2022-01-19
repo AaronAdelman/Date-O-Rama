@@ -42,7 +42,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     // MARK:  - Model objects
     
-    @Published var mainRows:  Array<ASAClock> = [ASAClock.generic]
+    @Published var mainClocks:  Array<ASAClock> = [ASAClock.generic]
     
     private func reloadComplicationTimelines() {
         #if os(watchOS)
@@ -54,27 +54,27 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         #endif
     }
     
-    @Published var threeLineLargeRows:  Array<ASAClock> = [] {
+    @Published var threeLineLargeClocks:  Array<ASAClock> = [] {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineSmallRows:    Array<ASAClock> = [] {
+    @Published var twoLineSmallClocks:    Array<ASAClock> = [] {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineLargeRows:    Array<ASAClock> = [] {
+    @Published var twoLineLargeClocks:    Array<ASAClock> = [] {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineLargeRows:    Array<ASAClock> = [] {
+    @Published var oneLineLargeClocks:    Array<ASAClock> = [] {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineSmallRows:    Array<ASAClock> = [] {
+    @Published var oneLineSmallClocks:    Array<ASAClock> = [] {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
@@ -169,22 +169,22 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
      func rowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .app:
-            return self.mainRows
+            return self.mainClocks
 
         case .threeLineLarge:
-            return self.threeLineLargeRows
+            return self.threeLineLargeClocks
 
         case .twoLineSmall:
-            return self.twoLineSmallRows
+            return self.twoLineSmallClocks
 
         case .twoLineLarge:
-            return self.twoLineLargeRows
+            return self.twoLineLargeClocks
 
         case .oneLineLarge:
-            return self.oneLineLargeRows
+            return self.oneLineLargeClocks
 
         case .oneLineSmall:
-            return self.oneLineSmallRows
+            return self.oneLineSmallClocks
         } // switch key
     } // func rowArray(key:  ASAClockArrayKey) -> Array<ASARow>
 
@@ -245,7 +245,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
                     //                    debugPrint(#file, #function, jsonResult)
-                    self.mainRows = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
+                    self.mainClocks = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
                     
                     genericSuccess = true
                 }
@@ -273,11 +273,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
                         //                        debugPrint(#file, #function, jsonResult)
-                        self.threeLineLargeRows = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
-                        self.twoLineLargeRows = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
-                        self.twoLineSmallRows = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult)
-                        self.oneLineLargeRows = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult)
-                        self.oneLineSmallRows = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult)
+                        self.threeLineLargeClocks = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult)
+                        self.twoLineLargeClocks = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult)
+                        self.twoLineSmallClocks = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult)
+                        self.oneLineLargeClocks = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult)
+                        self.oneLineSmallClocks = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult)
                         complicationsSuccess = true
                     }
                 } catch {
@@ -290,16 +290,16 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         if !genericSuccess {
-            mainRows               = self.emptyRowArray(key: .app)
+            mainClocks               = self.emptyRowArray(key: .app)
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
             if !complicationsSuccess {
-                threeLineLargeRows     = self.emptyRowArray(key: .threeLineLarge)
-                twoLineSmallRows       = self.emptyRowArray(key: .twoLineSmall)
-                twoLineLargeRows       = self.emptyRowArray(key: .twoLineLarge)
-                oneLineLargeRows       = self.emptyRowArray(key: .oneLineLarge)
-                oneLineSmallRows       = self.emptyRowArray(key: .oneLineSmall)
+                threeLineLargeClocks     = self.emptyRowArray(key: .threeLineLarge)
+                twoLineSmallClocks       = self.emptyRowArray(key: .twoLineSmall)
+                twoLineLargeClocks       = self.emptyRowArray(key: .twoLineLarge)
+                oneLineLargeClocks       = self.emptyRowArray(key: .oneLineLarge)
+                oneLineSmallClocks       = self.emptyRowArray(key: .oneLineSmall)
             }
         }
     } // func loadPreferences()
@@ -351,7 +351,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         self.objectWillChange.send()
         
         if code == .clocks {
-            let processedMainRows = self.processedRowArray(rowArray: self.mainRows, forComplication: false)
+            let processedMainRows = self.processedRowArray(rowArray: self.mainClocks, forComplication: false)
 
             let temp1a: Dictionary<String, Any> = [
                 ASAClockArrayKey.app.rawValue:  processedMainRows
@@ -362,18 +362,18 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
-                let processedThreeLargeRows = self.processedRowArray(rowArray: self.threeLineLargeRows, forComplication: true)
-                let processedTwoLineLargeRows = self.processedRowArray(rowArray: self.twoLineLargeRows, forComplication: true)
-                let processedTwoLineSmallRows = self.processedRowArray(rowArray: self.twoLineSmallRows, forComplication: true)
-                let processedOneLineLargeRows = self.processedRowArray(rowArray: self.oneLineLargeRows, forComplication: true)
-                let processedOneLineSmallRows = self.processedRowArray(rowArray: self.oneLineSmallRows, forComplication: true)
+                let processedThreeLargeClocks = self.processedRowArray(rowArray: self.threeLineLargeClocks, forComplication: true)
+                let processedTwoLineLargeClocks = self.processedRowArray(rowArray: self.twoLineLargeClocks, forComplication: true)
+                let processedTwoLineSmallClocks = self.processedRowArray(rowArray: self.twoLineSmallClocks, forComplication: true)
+                let processedOneLineLargeClocks = self.processedRowArray(rowArray: self.oneLineLargeClocks, forComplication: true)
+                let processedOneLineSmallClocks = self.processedRowArray(rowArray: self.oneLineSmallClocks, forComplication: true)
 
                 let temp2: Dictionary<String, Any> = [
-                    ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeRows,
-                    ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeRows,
-                    ASAClockArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallRows,
-                    ASAClockArrayKey.oneLineLarge.rawValue:  processedOneLineLargeRows,
-                    ASAClockArrayKey.oneLineSmall.rawValue:  processedOneLineSmallRows
+                    ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
+                    ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeClocks,
+                    ASAClockArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallClocks,
+                    ASAClockArrayKey.oneLineLarge.rawValue:  processedOneLineLargeClocks,
+                    ASAClockArrayKey.oneLineSmall.rawValue:  processedOneLineSmallClocks
                 ]
 
                 writePreferences(temp2, code: .complications)
@@ -405,22 +405,22 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     public func setRowArray(rowArray: Array<ASAClock>, key: ASAClockArrayKey) {
         switch key {
         case .app:
-            self.mainRows = rowArray
+            self.mainClocks = rowArray
 
         case .threeLineLarge:
-            self.threeLineLargeRows = rowArray
+            self.threeLineLargeClocks = rowArray
 
         case .twoLineSmall:
-            self.twoLineSmallRows = rowArray
+            self.twoLineSmallClocks = rowArray
 
         case .twoLineLarge:
-            self.twoLineLargeRows = rowArray
+            self.twoLineLargeClocks = rowArray
 
         case .oneLineLarge:
-            self.oneLineLargeRows = rowArray
+            self.oneLineLargeClocks = rowArray
 
         case .oneLineSmall:
-            self.oneLineSmallRows = rowArray
+            self.oneLineSmallClocks = rowArray
         } // switch key
     } // func setRowArray(rowArray: Array<ASARow>, key: ASAClockArrayKey)
 
@@ -474,10 +474,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     // MARK:  - Events
 
-    func events(startDate:  Date, endDate:  Date, row:  ASAClock) ->  Array<ASAEventCompatible> {
+    func events(startDate:  Date, endDate:  Date, clock:  ASAClock) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        for row in self.mainRows {
-            unsortedEvents = unsortedEvents + row.events(startDate:  startDate, endDate:  endDate)
+        for clock in self.mainClocks {
+            unsortedEvents = unsortedEvents + clock.events(startDate:  startDate, endDate:  endDate)
         } // for row in userData.mainRows
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
@@ -495,13 +495,13 @@ extension ASAUserData {
             return ASAClock.generic
         }
         
-        let temp = self.mainRows.first(where: {$0.uuid == tempUUID!})
+        let temp = self.mainClocks.first(where: {$0.uuid == tempUUID!})
         if temp != nil {
             return temp!
         }
         
-        if self.mainRows.count >= backupIndex + 1 {
-            return self.mainRows[backupIndex]
+        if self.mainClocks.count >= backupIndex + 1 {
+            return self.mainClocks[backupIndex]
         }
         
         return ASAClock.generic

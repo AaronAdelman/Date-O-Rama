@@ -56,33 +56,33 @@ struct ASAProcessedClock {
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
 
-    init(row:  ASAClock, now:  Date, isForComplications: Bool) {
-        self.row = row
-        self.calendarString = row.calendar.calendarCode.localizedName
-        let (dateString, timeString, dateComponents) = row.dateStringTimeStringDateComponents(now: now)
-        self.canSplitTimeFromDate = row.calendar.canSplitTimeFromDate
+    init(clock:  ASAClock, now:  Date, isForComplications: Bool) {
+        self.row = clock
+        self.calendarString = clock.calendar.calendarCode.localizedName
+        let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now)
+        self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
-        let timeZone = row.locationData.timeZone
+        let timeZone = clock.locationData.timeZone
         #if os(watchOS)
         self.timeZoneString = timeZone.extremeAbbreviation(for: now)
         #else
         self.timeZoneString = timeZone.abbreviation(for:  now) ?? ""
         #endif
-        self.supportsLocations = row.calendar.supportsLocations
+        self.supportsLocations = clock.calendar.supportsLocations
         if self.supportsLocations {
-            self.flagEmojiString = (row.locationData.regionCode ?? "").flag
-            self.usesDeviceLocation = row.usesDeviceLocation
+            self.flagEmojiString = (clock.locationData.regionCode ?? "").flag
+            self.usesDeviceLocation = clock.usesDeviceLocation
             var locationString = ""
-            if row.locationData.name == nil && row.locationData.locality == nil && row.locationData.country == nil {
+            if clock.locationData.name == nil && clock.locationData.locality == nil && clock.locationData.country == nil {
                 //                if row.location != nil {
-                locationString = row.locationData.location.humanInterfaceRepresentation
+                locationString = clock.locationData.location.humanInterfaceRepresentation
                 //                }
             } else {
                 #if os(watchOS)
                 locationString = row.locationData.shortFormattedOneLineAddress
                 #else
-                locationString = row.locationData.formattedOneLineAddress
+                locationString = clock.locationData.formattedOneLineAddress
                 #endif
             }
             self.locationString = locationString
@@ -91,13 +91,13 @@ struct ASAProcessedClock {
             self.usesDeviceLocation = false
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
-        self.supportsTimeZones = row.calendar.supportsTimeZones
+        self.supportsTimeZones = clock.calendar.supportsTimeZones
 
-        self.daysPerWeek = row.daysPerWeek
+        self.daysPerWeek = clock.daysPerWeek
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
-        if row.calendar.supports(calendarComponent: .month) {
-            self.daysInMonth = row.calendar.maximumValue(of: .day, in: .month, for: now) ?? 1
+        if clock.calendar.supports(calendarComponent: .month) {
+            self.daysInMonth = clock.calendar.maximumValue(of: .day, in: .month, for: now) ?? 1
             self.supportsMonths = true
         } else {
             self.daysInMonth = 1
@@ -110,30 +110,30 @@ struct ASAProcessedClock {
         self.fractionalHour = dateComponents.solarHours
         self.dayHalf = dateComponents.dayHalf
 
-        self.transitionType = row.calendar.transitionType
+        self.transitionType = clock.calendar.transitionType
 
-        if row.localeIdentifier == "" {
+        if clock.localeIdentifier == "" {
             self.localeIdentifier = Locale.current.identifier
         } else {
-            self.localeIdentifier = row.localeIdentifier
+            self.localeIdentifier = clock.localeIdentifier
         }
-        self.calendarCode = row.calendar.calendarCode
+        self.calendarCode = clock.calendar.calendarCode
 
-        self.calendarType = row.calendar.calendarCode.type
-        self.supportsTimes = row.calendar.supportsTimes
+        self.calendarType = clock.calendar.calendarCode.type
+        self.supportsTimes = clock.calendar.supportsTimes
 
-        self.veryShortStandaloneWeekdaySymbols = row.calendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: row.localeIdentifier)
+        self.veryShortStandaloneWeekdaySymbols = clock.calendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: clock.localeIdentifier)
 
         self.month = dateComponents.month ?? 0
 
-        let startOfDay: Date = row.startOfDay(date: now)
-        let startOfNextDay: Date   = row.startOfNextDay(date: now)
-        self.events = isForComplications ? [] : row.events(startDate: startOfDay, endDate: startOfNextDay)
+        let startOfDay: Date = clock.startOfDay(date: now)
+        let startOfNextDay: Date   = clock.startOfNextDay(date: now)
+        self.events = isForComplications ? [] : clock.events(startDate: startOfDay, endDate: startOfNextDay)
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
-        self.weekendDays = row.weekendDays
-        self.regionCode = row.locationData.regionCode
-        self.miniCalendarNumberFormat = row.miniCalendarNumberFormat
+        self.weekendDays = clock.weekendDays
+        self.regionCode = clock.locationData.regionCode
+        self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedClock
 
@@ -185,7 +185,7 @@ extension Array where Element == ASAClock {
         var result:  Array<ASAProcessedClock> = []
 
         for row in self {
-            let processedRow = ASAProcessedClock(row: row, now: now, isForComplications: false)
+            let processedRow = ASAProcessedClock(clock: row, now: now, isForComplications: false)
             result.append(processedRow)
         }
 

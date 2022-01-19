@@ -14,19 +14,19 @@ extension ASAUserData {
     func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASAClock>? {
         switch complicationFamily {
         case .modularLarge, .graphicRectangular:
-            return self.threeLineLargeRows
+            return self.threeLineLargeClocks
             
         case .modularSmall, .circularSmall, .graphicCircular:
-            return self.twoLineSmallRows
+            return self.twoLineSmallClocks
             
         case .utilitarianSmall, .utilitarianSmallFlat:
-            return self.oneLineSmallRows
+            return self.oneLineSmallClocks
             
         case .utilitarianLarge:
-            return self.oneLineLargeRows
+            return self.oneLineLargeClocks
             
         case .extraLarge:
-            return self.twoLineLargeRows
+            return self.twoLineLargeClocks
             
         default:
             return nil
@@ -186,7 +186,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK:  -
     
     func oneLineSmallRowString(now:  Date) -> String {
-        let headerRow = self.userData.oneLineSmallRows[0]
+        let headerRow = self.userData.oneLineSmallClocks[0]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -196,7 +196,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func oneLineSmallRowString(now:  Date) -> String
 
     func oneLineLargeRowString(now:  Date) -> String {
-        let headerRow = self.userData.oneLineLargeRows[0]
+        let headerRow = self.userData.oneLineLargeClocks[0]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -206,8 +206,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func oneLineLargeRowString(now:  Date) -> String
 
     func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String) {
-        let headerRow = self.userData.twoLineSmallRows[0]
-        let body1Row  = self.userData.twoLineSmallRows[1]
+        let headerRow = self.userData.twoLineSmallClocks[0]
+        let body1Row  = self.userData.twoLineSmallClocks[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -220,8 +220,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String)
     
     func twoLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String) {
-        let headerRow = self.userData.twoLineLargeRows[0]
-        let body1Row  = self.userData.twoLineLargeRows[1]
+        let headerRow = self.userData.twoLineLargeClocks[0]
+        let body1Row  = self.userData.twoLineLargeClocks[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -235,9 +235,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     
     func threeLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String, body2String:  String) {
-        let headerRow = self.userData.threeLineLargeRows[0]
-        let body1Row  = self.userData.threeLineLargeRows[1]
-        let body2Row  = self.userData.threeLineLargeRows[2]
+        let headerRow = self.userData.threeLineLargeClocks[0]
+        let body1Row  = self.userData.threeLineLargeClocks[1]
+        let body2Row  = self.userData.threeLineLargeClocks[2]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -359,20 +359,20 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK:  -
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
-        let threeLineLargeRowsDescriptor = CLKComplicationDescriptor(
+        let threeLineLargeClocksDescriptor = CLKComplicationDescriptor(
             identifier: ASAClockArrayKey.threeLineLarge.rawValue,
             displayName: NSLocalizedString("3-line large", comment: ""),
             supportedFamilies: [.modularLarge, .graphicRectangular])
 
-        let twoLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.twoLineSmall.rawValue, displayName: NSLocalizedString("2-line small", comment: ""), supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
+        let twoLineSmallClocksDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.twoLineSmall.rawValue, displayName: NSLocalizedString("2-line small", comment: ""), supportedFamilies: [.modularSmall, .circularSmall, .graphicCircular])
 
-        let twoLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.twoLineLarge.rawValue, displayName: NSLocalizedString("2-line large", comment: ""), supportedFamilies: [.extraLarge])
+        let twoLineLargeClocksDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.twoLineLarge.rawValue, displayName: NSLocalizedString("2-line large", comment: ""), supportedFamilies: [.extraLarge])
 
-        let oneLineSmallRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.oneLineSmall.rawValue, displayName: NSLocalizedString("1-line small", comment: ""), supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
+        let oneLineSmallClocksDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.oneLineSmall.rawValue, displayName: NSLocalizedString("1-line small", comment: ""), supportedFamilies: [.utilitarianSmall, .utilitarianSmallFlat])
 
-        let oneLineLargeRowsDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.oneLineLarge.rawValue, displayName: NSLocalizedString("1-line large", comment: ""), supportedFamilies: [.utilitarianLarge])
+        let oneLineLargeClocksDescriptor = CLKComplicationDescriptor(identifier: ASAClockArrayKey.oneLineLarge.rawValue, displayName: NSLocalizedString("1-line large", comment: ""), supportedFamilies: [.utilitarianLarge])
 
-        handler([threeLineLargeRowsDescriptor, twoLineSmallRowsDescriptor, twoLineLargeRowsDescriptor, oneLineSmallRowsDescriptor, oneLineLargeRowsDescriptor])
+        handler([threeLineLargeClocksDescriptor, twoLineSmallClocksDescriptor, twoLineLargeClocksDescriptor, oneLineSmallClocksDescriptor, oneLineLargeClocksDescriptor])
     } // func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void)
 } // class ComplicationController: NSObject, CLKComplicationDataSource
 

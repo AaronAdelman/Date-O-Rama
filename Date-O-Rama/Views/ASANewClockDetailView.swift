@@ -42,7 +42,7 @@ struct ASANewClockDetailView: View {
 
                     Button("Add") {
                         let userData = ASAUserData.shared
-                        userData.mainRows.insert(self.selectedRow, at: 0)
+                        userData.mainClocks.insert(self.selectedRow, at: 0)
                         userData.savePreferences(code: .clocks)
 
                         self.dismiss()

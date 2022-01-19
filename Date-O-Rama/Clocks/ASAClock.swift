@@ -243,43 +243,43 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     public class func new(dictionary:  Dictionary<String, Any>) -> ASAClock {
         //        debugPrint(#file, #function, dictionary)
         
-        let newRow = ASAClock()
+        let newClock = ASAClock()
         
         let UUIDString = dictionary[UUID_KEY] as? String
         if UUIDString != nil {
             let tempUUID: UUID? = UUID(uuidString: UUIDString!)
             if tempUUID != nil {
-                newRow.uuid = tempUUID!
+                newClock.uuid = tempUUID!
             } else {
-                newRow.uuid = UUID()
+                newClock.uuid = UUID()
             }
         } else {
-            newRow.uuid = UUID()
+            newClock.uuid = UUID()
         }
         
         let localeIdentifier = dictionary[LOCALE_KEY] as? String
         if localeIdentifier != nil {
-            newRow.localeIdentifier = localeIdentifier!
+            newClock.localeIdentifier = localeIdentifier!
         }
 
         let calendarCode = dictionary[CALENDAR_KEY] as? String
         if calendarCode != nil {
             let code = ASACalendarCode(rawValue: calendarCode!)
             if code == nil {
-                newRow.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
+                newClock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
             } else {
-                newRow.calendar = ASACalendarFactory.calendar(code: code!)!
+                newClock.calendar = ASACalendarFactory.calendar(code: code!)!
             }
         }
         
         let dateFormat = dictionary[DATE_FORMAT_KEY] as? String
         if dateFormat != nil {
-            newRow.dateFormat = ASADateFormat(rawValue: dateFormat! )!
+            newClock.dateFormat = ASADateFormat(rawValue: dateFormat! )!
         }
 
         let timeFormat = dictionary[TIME_FORMAT_KEY] as? String
         if timeFormat != nil {
-            newRow.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
+            newClock.timeFormat = ASATimeFormat(rawValue: timeFormat! ) ?? .medium
         }
 
         let builtInEventCalendarsFileNames = dictionary[BUILT_IN_EVENT_CALENDARS_KEY] as? Array<String>
@@ -287,14 +287,14 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             for fileName in builtInEventCalendarsFileNames! {
                 let newEventCalendar = ASAEventCalendar(fileName: fileName)
                 if newEventCalendar.eventsFile != nil {
-                    newRow.builtInEventCalendars.append(newEventCalendar)
+                    newClock.builtInEventCalendars.append(newEventCalendar)
                 }
             }
         }
 
-        if newRow.calendar.usesISOTime {
+        if newClock.calendar.usesISOTime {
             let iCalendarEventCalendarsTitles = dictionary[ICALENDAR_EVENT_CALENDARS_KEY] as? Array<String>
-            newRow.iCalendarEventCalendars = ASAEKEventManager.shared.EKCalendars(titles: iCalendarEventCalendarsTitles)
+            newClock.iCalendarEventCalendars = ASAEKEventManager.shared.EKCalendars(titles: iCalendarEventCalendarsTitles)
         }
         
         let usesDeviceLocation = dictionary[USES_DEVICE_LOCATION_KEY] as? Bool
@@ -303,7 +303,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let altitude = dictionary[ALTITUDE_KEY] as? Double
         let horizontalAccuracy = dictionary[HORIZONTAL_ACCURACY_KEY] as? Double
         let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
-        newRow.usesDeviceLocation = usesDeviceLocation ?? true
+        newClock.usesDeviceLocation = usesDeviceLocation ?? true
         var newLocation = CLLocation()
         if latitude != nil && longitude != nil {
             newLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
@@ -323,10 +323,10 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
 
         let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
-        newRow.locationData = newLocationData
+        newClock.locationData = newLocationData
 
-        newRow.startingUp = false
-        return newRow
+        newClock.startingUp = false
+        return newClock
     } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASAClock
 
 

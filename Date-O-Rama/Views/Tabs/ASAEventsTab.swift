@@ -35,7 +35,7 @@ struct ASAEventsTab: View {
     
     var secondaryRow:  ASAClock {
         get {
-            if self.userData.mainRows.count < 2 {
+            if self.userData.mainClocks.count < 2 {
                 return ASAClock.generic
             }
             
@@ -71,7 +71,7 @@ struct ASAEventsTab: View {
     @State var isNavigationBarHidden:  Bool = true
     
     fileprivate func enoughRowsToShowSecondaryDates() -> Bool {
-        return self.userData.mainRows.count > 1
+        return self.userData.mainClocks.count > 1
     }
 
     let SECONDARY_ROW_FONT_SIZE:  CGFloat = 22.0
@@ -153,7 +153,7 @@ struct ASAEventsTab: View {
                     let rangeStart = self.primaryRow.startOfDay(date: date)
                     let rangeEnd = self.primaryRow.startOfNextDay(date: date)
                     Section {
-                        ForEach(ASAUserData.shared.events(startDate: rangeStart, endDate: rangeEnd, row: self.primaryRow), id: \.eventIdentifier) {
+                        ForEach(ASAUserData.shared.events(startDate: rangeStart, endDate: rangeEnd, clock: self.primaryRow), id: \.eventIdentifier) {
                             event
                             in
                             ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: false)

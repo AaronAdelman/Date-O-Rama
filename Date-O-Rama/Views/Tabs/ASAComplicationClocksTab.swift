@@ -17,17 +17,17 @@ struct ASAComplicationClocksTab: View {
     func row(with key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .threeLineLarge:
-            return self.userData.threeLineLargeRows
+            return self.userData.threeLineLargeClocks
         case .twoLineLarge:
-            return self.userData.twoLineLargeRows
+            return self.userData.twoLineLargeClocks
         case .app:
-            return self.userData.mainRows
+            return self.userData.mainClocks
         case .twoLineSmall:
-            return self.userData.twoLineSmallRows
+            return self.userData.twoLineSmallClocks
         case .oneLineLarge:
-            return self.userData.oneLineLargeRows
+            return self.userData.oneLineLargeClocks
         case .oneLineSmall:
-            return self.userData.oneLineSmallRows
+            return self.userData.oneLineSmallClocks
         } // switch key
     } // func row(with key:  ASAClockArrayKey) -> Array<ASARow>
     
@@ -39,7 +39,7 @@ struct ASAComplicationClocksTab: View {
                     ForEach(ASAClockArrayKey.complicationSections, id:  \.self) {complicationKey in
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
-                                ASAClockCell(processedRow: ASAProcessedClock(row: row, now: now, isForComplications: true), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false)
+                                ASAClockCell(processedRow: ASAProcessedClock(clock: row, now: now, isForComplications: true), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false)
                             }
                         }
                     }
