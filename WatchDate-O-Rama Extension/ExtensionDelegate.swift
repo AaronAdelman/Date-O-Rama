@@ -122,7 +122,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
                     for i in 0..<key.minimumNumberOfRows {
-                        let newRow: ASAClock = ASAClock.newRow(dictionary: valueAsArray[i])
+                        let newRow: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
                         rowArray[i] = newRow
                     } // for i in 0..<key.minimumNumberOfRows()
                 }
@@ -144,7 +144,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 let tempAsArray = mainRowsTemp! as! Array<Dictionary<String, Any>>
                 var mainRows:  Array<ASAClock> = []
                 for item in tempAsArray {
-                    let itemAsRow = ASAClock.newRow(dictionary: item)
+                    let itemAsRow = ASAClock.new(dictionary: item)
                     mainRows.append(itemAsRow)
                 }
                 DispatchQueue.main.async {

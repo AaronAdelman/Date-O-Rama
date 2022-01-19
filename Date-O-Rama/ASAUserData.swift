@@ -436,7 +436,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
         if temp != nil {
             for dictionary in temp! {
-                let row = ASAClock.newRow(dictionary: dictionary)
+                let row = ASAClock.new(dictionary: dictionary)
                 tempArray.append(row)
             } // for dictionary in temp!
         } else {

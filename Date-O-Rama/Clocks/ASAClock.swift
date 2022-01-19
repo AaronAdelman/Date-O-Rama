@@ -240,7 +240,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     private var startingUp = true
     
-    public class func newRow(dictionary:  Dictionary<String, Any>) -> ASAClock {
+    public class func new(dictionary:  Dictionary<String, Any>) -> ASAClock {
         //        debugPrint(#file, #function, dictionary)
         
         let newRow = ASAClock()
