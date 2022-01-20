@@ -17,12 +17,14 @@ struct ASAMultiEventView: View {
     var rangeEnd: Date
 
     var body: some View {
-        VStack {
-        ASAEventsForEach(events: multiEvent.events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
+        List {
+            ASAEventDetailsTitleSection(event: multiEvent)
+
+            ASAEventsForEach(events: multiEvent.events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
+            
+            Spacer()
+                .frame(minHeight: 0.0)
         }
-        
-        Spacer()
-            .frame(minHeight: 0.0)
     }
 }
 

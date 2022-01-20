@@ -45,24 +45,7 @@ struct ASAEventDetailView: View {
             }
             #endif
             
-            Section {
-                #if os(watchOS)
-                let titleFont: Font = .headline
-                #else
-                let titleFont: Font = .title
-                #endif
-                let eventEmoji = event.symbol
-                let emojiPrefix = eventEmoji != nil ? eventEmoji! + " " : ""
-                Text(emojiPrefix + event.title)
-                    .font(titleFont)
-                if event.location != nil {
-                    Text(event.location!)
-                }
-                HStack {
-                    ASAColorRectangle(colors: event.colors)
-                    Text(event.calendarTitleWithLocation)
-                } // HStack
-            } // Section
+            ASAEventDetailsTitleSection(event: event)
             
             ASAEventDetailDateTimeSection(row: row, event: event)
             
@@ -131,6 +114,34 @@ struct ASAEventDetailView: View {
         }
     } // body
 } // struct ASAEventDetailView
+
+
+// MARK:  -
+
+struct ASAEventDetailsTitleSection: View {
+    var event: ASAEventCompatible
+    
+    var body: some View {
+        Section {
+            #if os(watchOS)
+            let titleFont: Font = .headline
+            #else
+            let titleFont: Font = .title
+            #endif
+            let eventEmoji = event.symbol
+            let emojiPrefix = eventEmoji != nil ? eventEmoji! + " " : ""
+            Text(emojiPrefix + event.title)
+                .font(titleFont)
+            if event.location != nil {
+                Text(event.location!)
+            }
+            HStack {
+                ASAColorRectangle(colors: event.colors)
+                Text(event.calendarTitleWithLocation)
+            } // HStack
+        } // Section
+    }
+}
 
 
 // MARK:  -
