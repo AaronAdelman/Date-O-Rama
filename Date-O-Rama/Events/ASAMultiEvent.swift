@@ -29,10 +29,16 @@ struct ASAMultiEvent:  ASAEventCompatible {
     }
     
     var location: String? {
-        let locations = self.events.map{ $0.location }
+        let locations = self.events.map { $0.location }
+        var reducedLocations: Array<String> = []
+        for location in locations {
+            if location != nil {
+                reducedLocations.append(location!)
+            }
+        }
         
         let formatter = ListFormatter()
-        let result = formatter.string(from: locations as [Any])
+        let result = formatter.string(from: reducedLocations as [Any])
         return result
     }
     
