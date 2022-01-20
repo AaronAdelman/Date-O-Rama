@@ -349,8 +349,9 @@ struct ASAClockEventsForEach:  View {
     
     var body: some View {
         let events:  Array<ASAEventCompatible> = {
-            let allEvents = processedRow.dateEvents + processedRow.timeEvents
-            return allEvents.trimmed(visibility: self.visibility, allDayEventVisibility: self.allDayEventVisibility, now: now)
+            let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
+            let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: visibility, now: now)
+            return dateEvents + timeEvents
         }()
         
         ForEach(events, id: \.eventIdentifier) {

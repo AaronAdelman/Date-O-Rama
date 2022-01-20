@@ -58,61 +58,54 @@ protocol ASAEventCompatible {
 // MARK:  -
 
 extension Array where Element == ASAEventCompatible {
-    func trimmed(visibility: ASAClockCellTimeEventVisibility, allDayEventVisibility: ASAClockCellDateEventVisibility, now: Date) -> Array<ASAEventCompatible> {
-        var allDayTemp: Array<ASAEventCompatible> = []
-        var nonAllDayTemp: Array<ASAEventCompatible> = []
-        for event in self {
-            if event.isAllDay {
-                allDayTemp.append(event)
-            } else {
-                nonAllDayTemp.append(event)
-            }
-        }
-        
-        switch visibility {
+    func trimmed(dateEventVisibility: ASAClockCellDateEventVisibility, now: Date) -> Array<ASAEventCompatible> {
+        var temp: Array<ASAEventCompatible> = self
+
+        switch dateEventVisibility {
         case .none:
-            nonAllDayTemp = []
-            
-            //        case .allDay:
-            //            return self.allDayOnly
-            
-        case .next:
-            nonAllDayTemp = nonAllDayTemp.nextEvents(now: now)
-            
-        case .future:
-            nonAllDayTemp = nonAllDayTemp.futureOnly(now: now)
-            
-        case .present:
-            nonAllDayTemp = nonAllDayTemp.presentOnly(now: now)
-            
-        case .past:
-            nonAllDayTemp = nonAllDayTemp.pastOnly(now: now)
-            
-        case .all:
-            debugPrint(#file, #function, "Ignore this.")
-            
-            //        case .nonAllDay:
-            //            return self.nonAllDayOnly
-        case .nextAndPresent:
-            nonAllDayTemp = nonAllDayTemp.nextAndPresentEvents(now: now)
-        } // switch visibility
-        
-        switch allDayEventVisibility {
-        case .none:
-            allDayTemp = []
+            temp = []
             
         case .all:
             debugPrint(#file, #function, "Ignore this.")
             
         default:
-            let maximumDuration = allDayEventVisibility.cutoff
-            allDayTemp = allDayTemp.filter {
+            let maximumDuration = dateEventVisibility.cutoff
+            temp = temp.filter {
                 $0.duration <= maximumDuration
             }
-        } // switch allDayEventVisibility
+        } // switch dateEventVisibility
         
-        return allDayTemp + nonAllDayTemp
-    } // func forVisibility(visibility: ASAClockCellTimeEventVisibility, now: Date) -> Array<ASAEventCompatible>
+        return temp
+    } // func trimmed(dateEventVisibility: ASAClockCellDateEventVisibility, now: Date) -> Array<ASAEventCompatible>
+    
+    func trimmed(timeEventVisibility: ASAClockCellTimeEventVisibility, now: Date) -> Array<ASAEventCompatible> {
+        var temp: Array<ASAEventCompatible> = self
+ 
+        switch timeEventVisibility {
+        case .none:
+            temp = []
+             
+        case .next:
+            temp = temp.nextEvents(now: now)
+            
+        case .future:
+            temp = temp.futureOnly(now: now)
+            
+        case .present:
+            temp = temp.presentOnly(now: now)
+            
+        case .past:
+            temp = temp.pastOnly(now: now)
+            
+        case .all:
+            debugPrint(#file, #function, "Ignore this.")
+            
+        case .nextAndPresent:
+            temp = temp.nextAndPresentEvents(now: now)
+        } // switch visibility
+        
+        return temp
+    } // func trimmed(timeEventVisibility: ASAClockCellTimeEventVisibility, now: Date) -> Array<ASAEventCompatible>
     
     var allDayOnly:  Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
