@@ -346,9 +346,9 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let EventKitEvents = ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
             for event in EventKitEvents {
                 if event.isAllDay {
-                    unsortedDateEvents.append(event)
+                    unsortedDateEvents.add(event: event)
                 } else {
-                    unsortedTimeEvents.append(event)
+                    unsortedTimeEvents.add(event: event)
                 }
             } // for event in EventKitEvents
         }
@@ -359,8 +359,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
             let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
-            unsortedDateEvents += eventCalendarEvents.dateEvents
-            unsortedTimeEvents += eventCalendarEvents.timeEvents
+            unsortedDateEvents.add(events: eventCalendarEvents.dateEvents)
+            unsortedTimeEvents.add(events: eventCalendarEvents.timeEvents)
         } // for eventCalendar in self.builtInEventCalendars
         
         let dateEvents = unsortedDateEvents.sorted(by: {

@@ -194,8 +194,30 @@ extension Array where Element == ASAEventCompatible {
         let nextEvents = self.nextEvents(eventCalendarTitles: eventCalendarTitles, now: now)
         return presentEvents + nextEvents
     } // func nextAndPresentEvents(now: Date) -> Array<ASAEventCompatible>
+    
+    mutating func add(event: ASAEventCompatible) {
+        let index = self.firstIndex(where: {$0.title == event.title && $0.startDate == event.startDate && $0.endDate == event.endDate})
+        if index == nil {
+            self.append(event)
+        } else {
+            let preexistingEvent = self[index!]
+            var multiEvent: ASAMultiEvent
+            if !(preexistingEvent is ASAMultiEvent) {
+                multiEvent = ASAMultiEvent(event: preexistingEvent)
+            } else {
+                multiEvent = preexistingEvent as! ASAMultiEvent
+            }
+            multiEvent.append(event: event)
+            self[index!] = multiEvent
+        }
+    } // mutating func add(event: ASAEventCompatible)
+    
+    mutating func add(events: Array<ASAEventCompatible>) {
+        for event in events {
+            add(event: event)
+        } // for event in events
+    } // mutating func add(events: Array<ASAEventCompatible>)
 } // extension Array where Element == ASAEventCompatible
-
 
 
 // MARK:  -
