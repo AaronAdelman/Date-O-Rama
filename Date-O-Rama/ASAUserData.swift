@@ -477,7 +477,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     func mainClocksEvents(startDate:  Date, endDate:  Date) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         for clock in self.mainClocks {
-            unsortedEvents = unsortedEvents + clock.events(startDate:  startDate, endDate:  endDate)
+            let clockEvents = clock.events(startDate:  startDate, endDate:  endDate)
+            unsortedEvents = unsortedEvents + clockEvents.dateEvents + clockEvents.timeEvents
         } // for for clock in self.mainClocks
 
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {

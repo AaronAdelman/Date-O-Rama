@@ -146,13 +146,11 @@ struct ASAClockCellBody:  View {
 #if os(watchOS)
 #else
                     if !isForComplications {
-                        let numberOfEvents = processedRow.events.count
+                        let numberOfAllDayEvents = processedRow.dateEvents.count
+                        let numberOfNonAllDayEvents: Int = processedRow.timeEvents.count
+                        let numberOfEvents = numberOfAllDayEvents + numberOfNonAllDayEvents
                         if numberOfEvents > 0 {
                             let SMALL_FONT: Font = .callout
-                            let numberOfAllDayEvents = processedRow.events.filter {
-                                $0.isAllDay
-                            }.count
-                            let numberOfNonAllDayEvents: Int = numberOfEvents - numberOfAllDayEvents
                             HStack {
                                 Image(systemName: "calendar")
                                 Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
@@ -165,7 +163,7 @@ struct ASAClockCellBody:  View {
                 } // VStack
                 
 #if os(watchOS)
-                if processedRow.events.count > 0 {
+                if processedRow.dateEvents.count > 0 || processedRow.timeEvents.count > 0 {
                     NavigationLink(destination:  ASAWatchEventsList(processedRow:  processedRow, now: now)) {
                         ASACompactForwardChevronSymbol()
                     }
@@ -216,14 +214,17 @@ struct ASAClockCellBody:  View {
                             ASAClockMenuDetailLabel()
                         }
                         
-                        let numberOfEvents = processedRow.events.count
-                        if numberOfEvents > 0 {
+                        let numberOfDateEvents = processedRow.dateEvents.count
+                        let numberOfTimeEvents = processedRow.timeEvents.count
+                        if numberOfDateEvents > 0 {
                             Menu {
                                 ASAClockAllDayEventVisibilityForEach(eventVisibility: $allDayEventVisibility)
                             } label: {
                                 Text("Show All-Day Events")
                             }
-                                                    
+                        }
+                        if numberOfTimeEvents > 0 {
+                            
                             Menu {
                                 ASAClockEventVisibilityForEach(eventVisibility: $eventVisibility)
                             } label: {
@@ -324,7 +325,7 @@ struct ASAClockEventsSubcell: View {
 #if os(watchOS)
         EmptyView()
 #else
-        let numberOfEvents = processedRow.events.count
+        let numberOfEvents = processedRow.dateEvents.count + processedRow.timeEvents.count
         if numberOfEvents > 0 {
             let VERTICAL_INSET: CGFloat   = 0.0
             let HORIZONTAL_INSET: CGFloat = 8.0
@@ -348,7 +349,8 @@ struct ASAClockEventsForEach:  View {
     
     var body: some View {
         let events:  Array<ASAEventCompatible> = {
-            return processedRow.events.trimmed(visibility: self.visibility, allDayEventVisibility: self.allDayEventVisibility, now: now)
+            let allEvents = processedRow.dateEvents + processedRow.timeEvents
+            return allEvents.trimmed(visibility: self.visibility, allDayEventVisibility: self.allDayEventVisibility, now: now)
         }()
         
         ForEach(events, id: \.eventIdentifier) {

@@ -161,12 +161,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     private var eventCacheStartDate:  Date = Date.distantPast
     private var eventCacheEndDate:  Date = Date.distantPast
-    private var eventCacheValue:  Array<ASAEventCompatible> = []
+    private var eventCacheValue:  (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>) = ([], [])
 
     private func clearCacheObjects() {
         self.eventCacheStartDate = Date.distantPast
         self.eventCacheEndDate   = Date.distantPast
-        self.eventCacheValue     = []
+        self.eventCacheValue     = ([], [])
         self.startAndEndDateStringsCache.removeAllObjects()
     } // func clearCacheObjects()
 
@@ -332,17 +332,25 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     // MARK:  -
 
-    func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible> {
+    func events(startDate:  Date, endDate:  Date) -> (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>) {
         if self.eventCacheStartDate == startDate && self.eventCacheEndDate == endDate {
             return self.eventCacheValue
         }
 
 //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Did not find events in cache")
 
-        var unsortedEvents: [ASAEventCompatible] = []
-
+        var unsortedDateEvents: [ASAEventCompatible] = []
+        var unsortedTimeEvents: [ASAEventCompatible] = []
+        
         if self.isICalendarCompatible && self.iCalendarEventCalendars.count > 0 {
-            unsortedEvents = unsortedEvents + ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
+            let EventKitEvents = ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
+            for event in EventKitEvents {
+                if event.isAllDay {
+                    unsortedDateEvents.append(event)
+                } else {
+                    unsortedTimeEvents.append(event)
+                }
+            } // for event in EventKitEvents
         }
 
         let currentLocaleIdentifier: String = Locale.current.identifier
@@ -350,27 +358,33 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         for eventCalendar in self.builtInEventCalendars {
             let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
-            unsortedEvents = unsortedEvents + eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
+            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
+            unsortedDateEvents += eventCalendarEvents.dateEvents
+            unsortedTimeEvents += eventCalendarEvents.timeEvents
         } // for eventCalendar in self.builtInEventCalendars
-
-        let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
+        
+        let dateEvents = unsortedDateEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool
             in
-            if e1.isAllDay && !e2.isAllDay {
-                return true
-            }
-
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
         })
-        assert(events.count == unsortedEvents.count)
+        let timeEvents = unsortedTimeEvents.sorted(by: {
+            (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool
+            in
+            return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
+        })
+        
+        assert(dateEvents.count == unsortedDateEvents.count)
+        assert(timeEvents.count == unsortedTimeEvents.count)
 
         self.eventCacheStartDate = startDate
         self.eventCacheEndDate   = endDate
-        self.eventCacheValue     = events
+        let result = (dateEvents, timeEvents)
+        self.eventCacheValue     = result
 //        debugPrint(#file, #function, self.calendar.calendarCode, self.locationData.formattedOneLineAddress, "Number of events written to cache:", events.count, "Start date:", startDate, "End date:", endDate)
 
-        return events
-    } // func events(startDate:  Date, endDate:  Date) -> Array<ASAEventCompatible>
+        return result
+    } // func events(startDate:  Date, endDate:  Date) -> (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>)
 
     var isICalendarCompatible:  Bool {
         return self.calendar.usesISOTime && (self.usesDeviceLocation || self.locationData.timeZone.isCurrent)

@@ -46,8 +46,9 @@ struct ASAProcessedClock {
 
     var month:  Int
 
-    var events:  Array<ASAEventCompatible>
-
+    var dateEvents:  Array<ASAEventCompatible>
+    var timeEvents:  Array<ASAEventCompatible>
+    
     var startOfDay:  Date
     var startOfNextDay:  Date
     
@@ -126,7 +127,10 @@ struct ASAProcessedClock {
 
         let startOfDay: Date = clock.startOfDay(date: now)
         let startOfNextDay: Date   = clock.startOfNextDay(date: now)
-        self.events = isForComplications ? [] : clock.events(startDate: startOfDay, endDate: startOfNextDay)
+        let clockEvents = clock.events(startDate: startOfDay, endDate: startOfNextDay)
+        self.dateEvents = isForComplications ? [] : clockEvents.dateEvents
+        self.timeEvents = isForComplications ? [] : clockEvents.timeEvents
+
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
         self.weekendDays = clock.weekendDays
