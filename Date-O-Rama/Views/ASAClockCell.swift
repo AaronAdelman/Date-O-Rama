@@ -325,11 +325,18 @@ struct ASAClockEventsSubcell: View {
 #if os(watchOS)
         EmptyView()
 #else
-        let numberOfEvents = processedRow.dateEvents.count + processedRow.timeEvents.count
-        if numberOfEvents > 0 {
-            let VERTICAL_INSET: CGFloat   = 0.0
-            let HORIZONTAL_INSET: CGFloat = 8.0
-            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, allDayEventVisibility: allDayEventVisibility, now: $now)
+        let VERTICAL_INSET: CGFloat   = 0.0
+        let HORIZONTAL_INSET: CGFloat = 8.0
+        let numberOfDateEvents: Int = processedRow.dateEvents.count
+        if numberOfDateEvents > 0 {
+            let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
+            ASAClockEventsForEach(processedRow: processedRow, events: dateEvents, now: $now)
+                .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
+        }
+        let numberOfTimeEvents: Int = processedRow.timeEvents.count
+        if numberOfTimeEvents > 0 {
+            let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: eventVisibility, now: now)
+            ASAClockEventsForEach(processedRow: processedRow, events: timeEvents, now: $now)
                 .listRowInsets(EdgeInsets(top: VERTICAL_INSET, leading: HORIZONTAL_INSET, bottom: VERTICAL_INSET, trailing: HORIZONTAL_INSET))
         }
 #endif
@@ -341,18 +348,19 @@ struct ASAClockEventsSubcell: View {
 
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedClock
-    var visibility:  ASAClockCellTimeEventVisibility
-    var allDayEventVisibility: ASAClockCellDateEventVisibility
+//    var visibility:  ASAClockCellTimeEventVisibility
+//    var allDayEventVisibility: ASAClockCellDateEventVisibility
+    var events:  Array<ASAEventCompatible>
     @Binding var now:  Date
     
     static let genericRow = ASAClock.generic
     
     var body: some View {
-        let events:  Array<ASAEventCompatible> = {
-            let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
-            let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: visibility, now: now)
-            return dateEvents + timeEvents
-        }()
+//        let events:  Array<ASAEventCompatible> = {
+//            let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
+//            let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: visibility, now: now)
+//            return dateEvents + timeEvents
+//        }()
         
         ForEach(events, id: \.eventIdentifier) {
             event

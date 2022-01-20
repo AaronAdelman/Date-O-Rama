@@ -32,14 +32,21 @@ struct ASAWatchEventsList: View {
                     possibility
                     in
                     HStack {
-//                        Image(systemName: possibility.symbolName)
+                        //                        Image(systemName: possibility.symbolName)
                         Text(possibility.text)
                     } // HStack
                 } // ForEach
             }
-
-
-            ASAClockEventsForEach(processedRow: processedRow, visibility: eventVisibility, allDayEventVisibility: allDayEventVisibility, now: $now)
+            let numberOfDateEvents: Int = processedRow.dateEvents.count
+            if numberOfDateEvents > 0 {
+                let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
+                ASAClockEventsForEach(processedRow: processedRow, events: dateEvents, now: $now)
+            }
+            let numberOfTimeEvents: Int = processedRow.timeEvents.count
+            if numberOfTimeEvents > 0 {
+                let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: eventVisibility, now: now)
+                ASAClockEventsForEach(processedRow: processedRow, events: timeEvents, now: $now)
+            }
         } // List
     } // var body
 } // struct ASAWatchEventsList
