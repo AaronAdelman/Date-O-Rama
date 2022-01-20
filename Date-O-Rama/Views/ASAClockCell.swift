@@ -348,33 +348,38 @@ struct ASAClockEventsSubcell: View {
 
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedClock
-//    var visibility:  ASAClockCellTimeEventVisibility
-//    var allDayEventVisibility: ASAClockCellDateEventVisibility
     var events:  Array<ASAEventCompatible>
     @Binding var now:  Date
     
-    static let genericRow = ASAClock.generic
-    
     var body: some View {
-//        let events:  Array<ASAEventCompatible> = {
-//            let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
-//            let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: visibility, now: now)
-//            return dateEvents + timeEvents
-//        }()
-        
+        let primaryClock: ASAClock = processedRow.clock
+        let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
+        let rangeStart: Date = processedRow.startOfDay
+        let rangeEnd: Date = processedRow.startOfNextDay
+
+        ASAEventsForEach(events: events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
+    } // var body
+} // struct ASAClockEventsForEach
+
+struct ASAEventsForEach: View {
+    var events:  Array<ASAEventCompatible>
+    @Binding var now:  Date
+    var primaryClock: ASAClock
+    var shouldShowSecondaryDates: Bool
+    var rangeStart: Date
+    var rangeEnd: Date
+
+    var body: some View {
+        let secondaryClock = ASAClock.generic
+
         ForEach(events, id: \.eventIdentifier) {
             event
             in
-            let primaryRow: ASAClock = processedRow.clock
-            let secondaryRow = ASAClockEventsForEach.genericRow
-            let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
-            let rangeStart: Date = processedRow.startOfDay
-            let rangeEnd: Date = processedRow.startOfNextDay
             
-            ASALinkedEventCell(event: event, primaryRow: primaryRow, secondaryRow: secondaryRow, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: true)
+            ASALinkedEventCell(event: event, primaryRow: primaryClock, secondaryRow: secondaryClock, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: true)
         } // ForEach
-    } // var body
-} // struct ASAClockEventsForEach
+    }
+}
 
 
 // MARK:  -

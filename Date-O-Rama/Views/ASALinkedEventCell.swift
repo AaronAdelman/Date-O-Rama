@@ -47,7 +47,7 @@ struct ASALinkedEventCell:  View {
     
     var body: some View {
         #if os(watchOS)
-        NavigationLink(destination: ASAEventDetailView(event: event, row: primaryRow), label: {
+        NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd), label: {
             HStack {
                 ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, rangeStart: rangeStart, rangeEnd:  rangeEnd)
                 Spacer()
@@ -81,7 +81,7 @@ struct ASALinkedEventCell:  View {
                     .font(.title)
             }
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                ASAEventDetailView(event: event, row: primaryRow, action: $action)
+                ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, action: $action)
                     .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
             }
             .foregroundColor(.accentColor)
