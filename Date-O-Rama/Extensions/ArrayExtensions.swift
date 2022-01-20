@@ -292,4 +292,10 @@ extension Array where Element == String {
         let result = formatter.string(from: formattedStrings as [Any])
         return result ?? "???"
     } // func asFormattedListOfISOCountryCodes() -> String
+    
+    var asFormattedList: String? {
+        let formatter = ListFormatter()
+        let result = formatter.string(from: self as [Any])
+        return result
+    }
 } // extension Array where Element == String

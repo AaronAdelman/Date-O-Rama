@@ -30,16 +30,14 @@ struct ASAMultiEvent:  ASAEventCompatible {
     
     var location: String? {
         let locations = self.events.map { $0.location }
-        var reducedLocations: Array<String> = []
+        var reduced: Array<String> = []
         for location in locations {
             if location != nil {
-                reducedLocations.append(location!)
+                reduced.append(location!)
             }
         }
         
-        let formatter = ListFormatter()
-        let result = formatter.string(from: reducedLocations as [Any])
-        return result
+        return reduced.asFormattedList
     }
     
     var availability: EKEventAvailability = .notSupported
@@ -80,9 +78,13 @@ struct ASAMultiEvent:  ASAEventCompatible {
     
     var color: Color = .primary
     
-    var calendarTitleWithLocation: String = "*"
+    var calendarTitleWithLocation: String {
+        return self.events.map { $0.calendarTitleWithLocation }.asFormattedList ?? ""
+    }
     
-    var calendarTitleWithoutLocation: String = "*"
+    var calendarTitleWithoutLocation: String {
+        return self.events.map { $0.calendarTitleWithoutLocation }.asFormattedList ?? ""
+    }
     
     var calendarCode: ASACalendarCode {
         return self.events[0].calendarCode
@@ -98,9 +100,29 @@ struct ASAMultiEvent:  ASAEventCompatible {
     
     var category: ASAEventCategory = .generic
     
-    var emoji: String? = nil
+    var emoji: String? {
+        let emojis = self.events.map { $0.emoji }
+        var reduced: Array<String> = []
+        for emoji in emojis {
+            if emoji != nil {
+                reduced.append(emoji!)
+            }
+        }
+        
+        return reduced.asFormattedList
+    }
     
-    var fileEmoji: String? = nil
+    var fileEmoji: String? {
+        let fileEmojis = self.events.map { $0.fileEmoji }
+        var reduced: Array<String> = []
+        for fileEmoji in fileEmojis {
+            if fileEmoji != nil {
+                reduced.append(fileEmoji!)
+            }
+        }
+        
+        return reduced.asFormattedList
+    }
     
     var type: ASADateSpecificationType {
         self.events[0].type
