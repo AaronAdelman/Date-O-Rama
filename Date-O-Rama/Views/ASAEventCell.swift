@@ -62,7 +62,7 @@ struct ASAEventCell:  View {
 
         #if os(watchOS)
         HStack {
-            ASAColorRectangle(color: event.color)
+            ASAColorRectangle(colors: [event.color])
 
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
@@ -92,7 +92,7 @@ struct ASAEventCell:  View {
                 ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
             }
 
-            ASAColorRectangle(color: event.color)
+            ASAColorRectangle(colors: event.colors)
 
             VStack(alignment: .leading) {
                 let LINE_LIMIT = 3

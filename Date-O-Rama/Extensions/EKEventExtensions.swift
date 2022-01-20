@@ -25,6 +25,10 @@ extension EKEvent:  ASAEventCompatible {
             return Color(UIColor(cgColor: calendarColor!))
         } // get
     } // var color
+    
+    var colors: Array<Color> {
+        return [self.color]
+    }
 
     var calendarTitleWithLocation:  String {
         get {

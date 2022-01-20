@@ -78,6 +78,10 @@ struct ASAMultiEvent:  ASAEventCompatible {
     
     var color: Color = .primary
     
+    var colors: Array<Color> {
+        return self.events.map { $0.color }
+    }
+
     var calendarTitleWithLocation: String {
         return self.events.map { $0.calendarTitleWithLocation }.asFormattedList ?? ""
     }

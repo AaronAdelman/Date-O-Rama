@@ -25,6 +25,9 @@ struct ASAEvent:  ASAEventCompatible {
     }
     var notes: String?
     var color:  Color
+    var colors: Array<Color> {
+        return [self.color]
+    }
     var uuid = UUID()
     var calendarTitleWithLocation:  String
     var calendarTitleWithoutLocation: String

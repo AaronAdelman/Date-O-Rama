@@ -38,6 +38,7 @@ protocol ASAEventCompatible {
     var hasNotes: Bool { get } // A Boolean value that indicates whether the calendar item has notes.
     var notes: String? { get } // The notes associated with the calendar item.
     var color:  Color { get }
+    var colors:  Array<Color> { get }
     var calendarTitleWithLocation:  String { get }
     var calendarTitleWithoutLocation:  String { get }
     var calendarCode:  ASACalendarCode { get }

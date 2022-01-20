@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct ASAColorRectangle: View {
-    var color:  Color
+    var colors:  Array<Color>
 
     var body: some View {
-        Rectangle().frame(width:  2.0).foregroundColor(color)
+        Rectangle()
+            .fill(LinearGradient(colors: colors, startPoint: .top, endPoint: .bottom))
+            .frame(width:  2.0)
+            
     }
 }
 
 struct ASAEventColorRectangle_Previews: PreviewProvider {
     static var previews: some View {
-        ASAColorRectangle(color: .green)
+        ASAColorRectangle(colors: [.green])
     }
 }
