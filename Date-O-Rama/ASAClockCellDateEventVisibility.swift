@@ -1,5 +1,5 @@
 //
-//  ASAClockCellAllDayEventVisibility.swift
+//  ASAClockCellDateEventVisibility.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 05/10/2021.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ASAClockCellAllDayEventVisibility: Int, CaseIterable {
+enum ASAClockCellDateEventVisibility: Int, CaseIterable {
     case none           = 0
     case oneDay         = 1
     case oneWeekOrLess  = 7
@@ -37,17 +37,17 @@ enum ASAClockCellAllDayEventVisibility: Int, CaseIterable {
         var raw: String
         switch self {
         case .none:
-            raw = "Showing ASAClockCellAllDayEventVisibility.none"
+            raw = "Showing ASAClockCellDateEventVisibility.none"
         case .oneDay:
-            raw = "Showing ASAClockCellAllDayEventVisibility.oneDay"
+            raw = "Showing ASAClockCellDateEventVisibility.oneDay"
         case .oneWeekOrLess:
-            raw = "Showing ASAClockCellAllDayEventVisibility.oneWeekOrLess"
+            raw = "Showing ASAClockCellDateEventVisibility.oneWeekOrLess"
         case .oneMonthOrLess:
-            raw = "Showing ASAClockCellAllDayEventVisibility.oneMonthOrLess"
+            raw = "Showing ASAClockCellDateEventVisibility.oneMonthOrLess"
         case .oneYearOrLess:
-            raw = "Showing ASAClockCellAllDayEventVisibility.oneYearOrLess"
+            raw = "Showing ASAClockCellDateEventVisibility.oneYearOrLess"
         case .all:
-            raw = "Showing ASAClockCellAllDayEventVisibility.all"
+            raw = "Showing ASAClockCellDateEventVisibility.all"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } // var showingText
@@ -56,20 +56,20 @@ enum ASAClockCellAllDayEventVisibility: Int, CaseIterable {
         var raw: String
         switch self {
         case .none:
-            raw = "ASAClockCellAllDayEventVisibility.none"
+            raw = "ASAClockCellDateEventVisibility.none"
         case .oneDay:
-            raw = "ASAClockCellAllDayEventVisibility.oneDay"
+            raw = "ASAClockCellDateEventVisibility.oneDay"
         case .oneWeekOrLess:
-            raw = "ASAClockCellAllDayEventVisibility.oneWeekOrLess"
+            raw = "ASAClockCellDateEventVisibility.oneWeekOrLess"
         case .oneMonthOrLess:
-            raw = "ASAClockCellAllDayEventVisibility.oneMonthOrLess"
+            raw = "ASAClockCellDateEventVisibility.oneMonthOrLess"
         case .oneYearOrLess:
-            raw = "ASAClockCellAllDayEventVisibility.oneYearOrLess"
+            raw = "ASAClockCellDateEventVisibility.oneYearOrLess"
         case .all:
-            raw = "ASAClockCellAllDayEventVisibility.all"
+            raw = "ASAClockCellDateEventVisibility.all"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } // var text
     
-    static var defaultValue = ASAClockCellAllDayEventVisibility.oneWeekOrLess
-} // enum ASAClockCellAllDayEventVisibility
+    static var defaultValue = ASAClockCellDateEventVisibility.oneWeekOrLess
+} // enum ASAClockCellDateEventVisibility

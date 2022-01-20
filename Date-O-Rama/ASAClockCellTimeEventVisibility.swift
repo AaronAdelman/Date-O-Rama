@@ -1,5 +1,5 @@
 //
-//  ASAClockCellEventVisibility.swift
+//  ASAClockCellTimeEventVisibility.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/04/2021.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ASAClockCellEventVisibility:  String, CaseIterable {
+enum ASAClockCellTimeEventVisibility:  String, CaseIterable {
     case none
 //    case allDay
 //    case nonAllDay
@@ -23,23 +23,23 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
         var raw:  String = ""
         switch self {
         case .none:
-            raw = "ASAClockCellEventVisibility.none"
+            raw = "ASAClockCellTimeEventVisibility.none"
 //        case .allDay:
-//            raw = "ASAClockCellEventVisibility.allDay"
+//            raw = "ASAClockCellTimeEventVisibility.allDay"
         case .next:
-            raw = "ASAClockCellEventVisibility.next"
+            raw = "ASAClockCellTimeEventVisibility.next"
         case .future:
-            raw = "ASAClockCellEventVisibility.future"
+            raw = "ASAClockCellTimeEventVisibility.future"
         case .all:
-            raw = "ASAClockCellEventVisibility.all"
+            raw = "ASAClockCellTimeEventVisibility.all"
         case .present:
-            raw = "ASAClockCellEventVisibility.present"
+            raw = "ASAClockCellTimeEventVisibility.present"
         case .past:
-            raw = "ASAClockCellEventVisibility.past"
+            raw = "ASAClockCellTimeEventVisibility.past"
 //        case .nonAllDay:
-//            raw = "ASAClockCellEventVisibility.nonAllDay"
+//            raw = "ASAClockCellTimeEventVisibility.nonAllDay"
         case .nextAndPresent:
-            raw = "ASAClockCellEventVisibility.nextAndPresent"
+            raw = "ASAClockCellTimeEventVisibility.nextAndPresent"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } // var text
@@ -48,29 +48,29 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
         var raw:  String = ""
         switch self {
         case .none:
-            raw = "Showing ASAClockCellEventVisibility.none"
+            raw = "Showing ASAClockCellTimeEventVisibility.none"
 //        case .allDay:
-//            raw = "Showing ASAClockCellEventVisibility.allDay"
+//            raw = "Showing ASAClockCellTimeEventVisibility.allDay"
         case .next:
-            raw = "Showing ASAClockCellEventVisibility.next"
+            raw = "Showing ASAClockCellTimeEventVisibility.next"
         case .future:
-            raw = "Showing ASAClockCellEventVisibility.future"
+            raw = "Showing ASAClockCellTimeEventVisibility.future"
         case .all:
-            raw = "Showing ASAClockCellEventVisibility.all"
+            raw = "Showing ASAClockCellTimeEventVisibility.all"
         case .present:
-            raw = "Showing ASAClockCellEventVisibility.present"
+            raw = "Showing ASAClockCellTimeEventVisibility.present"
         case .past:
-            raw = "Showing ASAClockCellEventVisibility.past"
+            raw = "Showing ASAClockCellTimeEventVisibility.past"
 //        case .nonAllDay:
-//            raw = "Showing ASAClockCellEventVisibility.nonAllDay"
+//            raw = "Showing ASAClockCellTimeEventVisibility.nonAllDay"
         case .nextAndPresent:
-            raw = "Showing ASAClockCellEventVisibility.nextAndPresent"
+            raw = "Showing ASAClockCellTimeEventVisibility.nextAndPresent"
         } // switch self
         return NSLocalizedString(raw, comment: "")
     } //
     
 //    #if os(watchOS)
-//    static var watchCases:  Array<ASAClockCellEventVisibility> = [
+//    static var watchCases:  Array<ASAClockCellTimeEventVisibility> = [
 ////        allDay, nonAllDay,
 //        next, future, present, past, all]
 //    #endif
@@ -98,5 +98,5 @@ enum ASAClockCellEventVisibility:  String, CaseIterable {
         } // switch self
     } // var symbolName
     
-    static var defaultValue = ASAClockCellEventVisibility.nextAndPresent
-} // enum ASAClockCellEventVisibility
+    static var defaultValue = ASAClockCellTimeEventVisibility.nextAndPresent
+} // enum ASAClockCellTimeEventVisibility

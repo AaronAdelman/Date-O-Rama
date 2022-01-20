@@ -28,8 +28,8 @@ struct ASAClockCell: View {
     var indexIsOdd: Bool
     
     @State var showingDetailView: Bool = false
-    @State var eventVisibility: ASAClockCellEventVisibility = .defaultValue
-    @State var allDayEventVisibility: ASAClockCellAllDayEventVisibility = .defaultValue
+    @State var eventVisibility: ASAClockCellTimeEventVisibility = .defaultValue
+    @State var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
     
     var body: some View {
 #if os(watchOS)
@@ -74,8 +74,8 @@ struct ASAClockCellBody:  View {
     
     var isForComplications:  Bool
     
-    @Binding var eventVisibility: ASAClockCellEventVisibility
-    @Binding var allDayEventVisibility: ASAClockCellAllDayEventVisibility
+    @Binding var eventVisibility: ASAClockCellTimeEventVisibility
+    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     
     @Binding var showingDetailView: Bool
     
@@ -258,10 +258,10 @@ struct ASAClockCellBody:  View {
 
 
 struct ASAClockEventVisibilityForEach: View {
-    @Binding var eventVisibility: ASAClockCellEventVisibility
+    @Binding var eventVisibility: ASAClockCellTimeEventVisibility
     
     var body: some View {
-        ForEach(ASAClockCellEventVisibility.allCases, id: \.self) {
+        ForEach(ASAClockCellTimeEventVisibility.allCases, id: \.self) {
             visibility
             in
             Button(action: {
@@ -275,10 +275,10 @@ struct ASAClockEventVisibilityForEach: View {
 
 
 struct ASAClockAllDayEventVisibilityForEach: View {
-    @Binding var eventVisibility: ASAClockCellAllDayEventVisibility
+    @Binding var eventVisibility: ASAClockCellDateEventVisibility
     
     var body: some View {
-        ForEach(ASAClockCellAllDayEventVisibility.allCases, id: \.self) {
+        ForEach(ASAClockCellDateEventVisibility.allCases, id: \.self) {
             visibility
             in
             Button(action: {
@@ -318,8 +318,8 @@ struct ASAClockEventsSubcell: View {
     var processedRow:  ASAProcessedClock
     @Binding var now:  Date
     @State private var showingEvents:  Bool = true
-    @Binding var eventVisibility: ASAClockCellEventVisibility
-    @Binding var allDayEventVisibility: ASAClockCellAllDayEventVisibility
+    @Binding var eventVisibility: ASAClockCellTimeEventVisibility
+    @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     
     var body: some View {
 #if os(watchOS)
@@ -341,8 +341,8 @@ struct ASAClockEventsSubcell: View {
 
 struct ASAClockEventsForEach:  View {
     var processedRow:  ASAProcessedClock
-    var visibility:  ASAClockCellEventVisibility
-    var allDayEventVisibility: ASAClockCellAllDayEventVisibility
+    var visibility:  ASAClockCellTimeEventVisibility
+    var allDayEventVisibility: ASAClockCellDateEventVisibility
     @Binding var now:  Date
     
     static let genericRow = ASAClock.generic

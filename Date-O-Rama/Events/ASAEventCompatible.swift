@@ -58,7 +58,7 @@ protocol ASAEventCompatible {
 // MARK:  -
 
 extension Array where Element == ASAEventCompatible {
-    func trimmed(visibility: ASAClockCellEventVisibility, allDayEventVisibility: ASAClockCellAllDayEventVisibility, now: Date) -> Array<ASAEventCompatible> {
+    func trimmed(visibility: ASAClockCellTimeEventVisibility, allDayEventVisibility: ASAClockCellDateEventVisibility, now: Date) -> Array<ASAEventCompatible> {
         var allDayTemp: Array<ASAEventCompatible> = []
         var nonAllDayTemp: Array<ASAEventCompatible> = []
         for event in self {
@@ -112,7 +112,7 @@ extension Array where Element == ASAEventCompatible {
         } // switch allDayEventVisibility
         
         return allDayTemp + nonAllDayTemp
-    } // func forVisibility(visibility: ASAClockCellEventVisibility, now: Date) -> Array<ASAEventCompatible>
+    } // func forVisibility(visibility: ASAClockCellTimeEventVisibility, now: Date) -> Array<ASAEventCompatible>
     
     var allDayOnly:  Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
