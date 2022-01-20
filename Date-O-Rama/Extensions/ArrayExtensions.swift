@@ -10,6 +10,7 @@ import EventKit
 import Foundation
 
 
+// MARK:  - Array where Element == EKRecurrenceDayOfWeek
 extension Array where Element == EKRecurrenceDayOfWeek {
     mutating func remove(_ element:  Element) {
         let index = self.firstIndex(of: element)
@@ -17,6 +18,8 @@ extension Array where Element == EKRecurrenceDayOfWeek {
     }
 }
 
+
+// MARK:  - Array where Element == NSNumber
 extension Array where Element == NSNumber {
     mutating func remove(_ element:  Element) {
         let index = self.firstIndex(of: element)
@@ -25,7 +28,7 @@ extension Array where Element == NSNumber {
 }
 
 
-// MARK:  -
+// MARK:  - Array where Element == Int?
 
 fileprivate enum ASAMatchingResult {
     case propogateLeading
@@ -264,7 +267,7 @@ extension Array where Element == Int? {
 } // extension Array where Element == Int
 
 
-// MARK:  -
+// MARK:  - Array where Element == String
 
 extension Array where Element == String {
     mutating func appendIfDifferentAndNotNil(string: String?) {

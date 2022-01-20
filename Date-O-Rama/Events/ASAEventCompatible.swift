@@ -107,26 +107,6 @@ extension Array where Element == ASAEventCompatible {
         return temp
     } // func trimmed(timeEventVisibility: ASAClockCellTimeEventVisibility, now: Date) -> Array<ASAEventCompatible>
     
-    var allDayOnly:  Array<ASAEventCompatible> {
-        var selectedEvents:  Array<ASAEventCompatible> = []
-        for event in self {
-            if event.isAllDay {
-                selectedEvents.append(event)
-            }
-        } // for event in self
-        return selectedEvents
-    } // var allDayOnly
-    
-    var nonAllDayOnly:  Array<ASAEventCompatible> {
-        var selectedEvents:  Array<ASAEventCompatible> = []
-        for event in self {
-            if !event.isAllDay {
-                selectedEvents.append(event)
-            }
-        } // for event in self
-        return selectedEvents
-    } // var nonAllDayOnly
-    
     func futureOnly(now: Date) -> Array<ASAEventCompatible> {
         var selectedEvents:  Array<ASAEventCompatible> = []
         
