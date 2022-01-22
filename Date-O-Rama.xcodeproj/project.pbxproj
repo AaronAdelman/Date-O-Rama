@@ -282,8 +282,8 @@
 		A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DDF26494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift */; };
 		A5BC4DE326495F3500BF27F2 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */; };
 		A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */; };
-		A5BC61462709B11800888611 /* Christianity (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BC61452709B11800888611 /* Christianity (supplemental).json */; };
-		A5BC61472709B11800888611 /* Christianity (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BC61452709B11800888611 /* Christianity (supplemental).json */; };
+		A5BC61462709B11800888611 /* Christianity (Gregorian, supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */; };
+		A5BC61472709B11800888611 /* Christianity (Gregorian, supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */; };
 		A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */; };
 		A5BD09CB26B17DEA00738C0B /* ASADayFractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BD09CA26B17DEA00738C0B /* ASADayFractionView.swift */; };
 		A5BD09CD26B1B31100738C0B /* United Nations International Decades.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */; };
@@ -637,7 +637,7 @@
 		A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWeekdayExtensions.swift; sourceTree = "<group>"; };
 		A5BC4DDF26494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKRecurrenceDayOfWeekExtensions.swift; sourceTree = "<group>"; };
 		A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumberExtensions.swift; sourceTree = "<group>"; };
-		A5BC61452709B11800888611 /* Christianity (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (supplemental).json"; sourceTree = "<group>"; };
+		A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Christianity (Gregorian, supplemental).json"; sourceTree = "<group>"; };
 		A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationSymbol.swift; sourceTree = "<group>"; };
 		A5BD09CA26B17DEA00738C0B /* ASADayFractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADayFractionView.swift; sourceTree = "<group>"; };
 		A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "United Nations International Decades.json"; sourceTree = "<group>"; };
@@ -832,8 +832,8 @@
 				A5BDE7A22667E22000F47416 /* Antisemitism (Islamic).json */,
 				A5ABBA2C27155A2100ED7D5F /* Atheism.json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
+				A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */,
 				A536399F26EF7A000083C571 /* Christianity (Gregorian).json */,
-				A5BC61452709B11800888611 /* Christianity (supplemental).json */,
 				A5EF523727959D37000012AC /* Druzism (Gregorian).json */,
 				A5EF523A2795A44E000012AC /* Druzism (Islamic).json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
@@ -1402,7 +1402,7 @@
 				A563702127382A92008DE963 /* New Age.json in Resources */,
 				A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5BD09D126B2D40D00738C0B /* United Nations International Years.json in Resources */,
-				A5BC61472709B11800888611 /* Christianity (supplemental).json in Resources */,
+				A5BC61472709B11800888611 /* Christianity (Gregorian, supplemental).json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
 				A5C7793E26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
@@ -1487,7 +1487,7 @@
 				A5BC24C02796EABE00D14B21 /* Jewish planetary hours.json in Resources */,
 				A5BDE7A32667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
 				A533798124B2333500340C0B /* Sun.json in Resources */,
-				A5BC61462709B11800888611 /* Christianity (supplemental).json in Resources */,
+				A5BC61462709B11800888611 /* Christianity (Gregorian, supplemental).json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitism (Gregorian).json in Resources */,
 				A5C7793D26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */,
 				A5DC9C7E27285D2100047F64 /* Planets.json in Resources */,
