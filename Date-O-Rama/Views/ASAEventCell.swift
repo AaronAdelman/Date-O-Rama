@@ -29,10 +29,6 @@ struct ASAEventCell:  View {
 
     var rangeStart:  Date
     var rangeEnd:  Date
-
-    func eventIsTodayOnly() -> Bool {
-        return rangeStart <= event.startDate && (event.endDate ?? event.startDate) <= rangeEnd
-    }
     
     var titleFont: Font {
         let duration = event.duration
@@ -72,20 +68,23 @@ struct ASAEventCell:  View {
                         .modifier(ASAScalable(lineLimit: 2))
                 }
                 if !event.isAllDay {
-                    ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
+                    let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
+                    ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly)
                     
                     if self.eventsViewShouldShowSecondaryDates {
-                        ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
+                        ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly)
                     }
                 }
             } // VStack
         } // HStack
         #else
         HStack {
-            ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly())
+            let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
+
+            ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly)
 
             if self.eventsViewShouldShowSecondaryDates {
-                ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly())
+                ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly)
             }
 
             ASAColorRectangle(colors: event.colors)

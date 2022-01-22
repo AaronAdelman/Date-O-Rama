@@ -292,4 +292,8 @@ extension ASAEventCompatible {
         
         return self.endDate.timeIntervalSince(self.startDate)
     } // var duration
+    
+    func isOnlyForRange(rangeStart: Date, rangeEnd: Date) -> Bool {
+        return rangeStart <= self.startDate && (self.endDate ?? self.startDate) <= rangeEnd
+    } // func isOnlyForRange(rangeStart: Date, rangeEnd: Date) -> Bool
 } // extension ASAEventCompatible
