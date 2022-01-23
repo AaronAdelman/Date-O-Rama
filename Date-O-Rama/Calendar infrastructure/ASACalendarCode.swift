@@ -44,6 +44,7 @@ enum ASACalendarCode:  String, Codable {
     case IslamicTabularSolar   = "IslamicTabularSolar"
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
     case HebrewMA              = "HebrewSolarMA"
+    case FrenchRepublican      = "frc"
     
     case Julian                = "julian" // TODO:  Implement
     
@@ -121,15 +122,6 @@ extension ASACalendarCode {
             return false
         } // switch self
     } // var isAppleCalendar
-
-//    var isISO8601Calendar:  Bool {
-//        switch self {
-//        case .ISO8601:
-//            return true
-//        default:
-//            return false
-//        } // switch self
-//    } // var isISO8601Calendar
     
     var isJulianDayCalendar:  Bool {
         switch self {
@@ -200,8 +192,18 @@ extension ASACalendarCode {
             
         default:
             return false
-        }
-    }
+        } // switch self
+    } // var isGregorianMonthWeeksDaysCalendar: Bool
+    
+    var isFrenchRepublicanCalendar: Bool {
+        switch self {
+        case .FrenchRepublican:
+            return true
+            
+        default:
+            return false
+        } // switch self
+    } // var isFrenchRepublicanCalendar: Bool
 } // extension ASACalendarCode
 
 
@@ -247,9 +249,6 @@ extension ASACalendarCode {
            case ASACalendarCode.IslamicUmmAlQura, .IslamicUmmAlQuraSolar:
                identifier = .islamicUmmAlQura
                
-//           case ASACalendarCode.ISO8601:
-//               identifier = .gregorian
-               
            case ASACalendarCode.Japanese:
                identifier = .japanese
                
@@ -272,8 +271,7 @@ extension ASACalendarCode {
         get {
             switch self {
             case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-//                 .ISO8601,
-                 .Japanese ,.Persian, .RepublicOfChina:
+                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican:
                 return .solar
                 
             case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA:

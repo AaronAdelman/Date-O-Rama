@@ -38,6 +38,7 @@
 "IslamicTabularSolar"   = "מוסלמי טבלאי";
 "IslamicUmmAlQuraSolar" = "מוסלמי אום אל־קורה";
 "HebrewSolarMA"         = "עברי (מגן אברהם)";
+"frc"                   = "הרפובליקה הצרפתית";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
 "HEADER_Row" = "שעון";

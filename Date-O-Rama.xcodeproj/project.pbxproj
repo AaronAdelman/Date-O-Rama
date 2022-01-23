@@ -51,6 +51,12 @@
 		A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A40325A72889007CB54B /* ASAWatchEventsList.swift */; };
 		A52486D4260B260700A55690 /* ASANewExternalEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52486D3260B260700A55690 /* ASANewExternalEventButton.swift */; };
 		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
+		A52A2385279D8D4700540D8D /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A52A2384279D8D4700540D8D /* FrenchRepublicanCalendarCore */; };
+		A52A2387279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */; };
+		A52A2388279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */; };
+		A52A238A279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */; };
+		A52A238B279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */; };
+		A52A238D279DBAFD00540D8D /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A52A238C279DBAFD00540D8D /* FrenchRepublicanCalendarCore */; };
 		A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
 		A5307025279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
 		A53070272799C43E004A5B37 /* ASAMultiEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53070262799C43D004A5B37 /* ASAMultiEventView.swift */; };
@@ -536,6 +542,8 @@
 		A525622B24556169009C2920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A525622E245561E3009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAFrenchRepublicanCalendar.swift; sourceTree = "<group>"; };
+		A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchRepublicanDateExtensions.swift; sourceTree = "<group>"; };
 		A5307023279867E4004A5B37 /* ASAMultiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEvent.swift; sourceTree = "<group>"; };
 		A53070262799C43D004A5B37 /* ASAMultiEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEventView.swift; sourceTree = "<group>"; };
 		A533798024B2333400340C0B /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
@@ -742,6 +750,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52A238D279DBAFD00540D8D /* FrenchRepublicanCalendarCore in Frameworks */,
 				461A4E2C00586F9E47E5DECA /* Pods_WatchDate_O_Rama_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -750,6 +759,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52A2385279D8D4700540D8D /* FrenchRepublicanCalendarCore in Frameworks */,
 				49312805E8240890A4170CE9 /* Pods_Date_O_Rama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,6 +827,7 @@
 			isa = PBXGroup;
 			children = (
 				A5BDB7CA244DA4FB0027704F /* ASAAppleCalendar.swift */,
+				A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */,
 				A5BB7EE7244EF22800932AF2 /* ASAJulianDayCalendar.swift */,
 				A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */,
 			);
@@ -1035,6 +1046,7 @@
 				A5AA3D5D25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift */,
 				A5BC4DDC26494E4D00BF27F2 /* EKWeekdayExtensions.swift */,
 				A593225C2577F4B900318BC3 /* FontExtensions.swift */,
+				A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */,
 				A56BDB492577B7A20037F833 /* IntExtensions.swift */,
 				A5596A3D258950AD002298CE /* LocaleExtensions.swift */,
 				A5BC4DE226495F3500BF27F2 /* NSNumberExtensions.swift */,
@@ -1243,6 +1255,9 @@
 			dependencies = (
 			);
 			name = "WatchDate-O-Rama Extension";
+			packageProductDependencies = (
+				A52A238C279DBAFD00540D8D /* FrenchRepublicanCalendarCore */,
+			);
 			productName = "WatchDate-O-Rama Extension";
 			productReference = A566F44E2483D6EC000A05B5 /* WatchDate-O-Rama Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -1265,6 +1280,9 @@
 				A566F4652483D6EF000A05B5 /* PBXTargetDependency */,
 			);
 			name = "Date-O-Rama";
+			packageProductDependencies = (
+				A52A2384279D8D4700540D8D /* FrenchRepublicanCalendarCore */,
+			);
 			productName = "Date-O-Rama";
 			productReference = A5C77BF92433361400CFEE47 /* Date-O-Rama.app */;
 			productType = "com.apple.product-type.application";
@@ -1351,6 +1369,9 @@
 				he,
 			);
 			mainGroup = A5C77BF02433361400CFEE47;
+			packageReferences = (
+				A52A2383279D8D4700540D8D /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */,
+			);
 			productRefGroup = A5C77BFA2433361400CFEE47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1758,7 +1779,9 @@
 				A5DB52D9278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */,
 				A566F47A2483D7CF000A05B5 /* ASAJulianDayCalendar.swift in Sources */,
 				A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */,
+				A52A238B279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */,
 				A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */,
+				A52A2388279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */,
 				A59D80692600C6FB00FD8BBF /* ASAEventCompatible.swift in Sources */,
 				A59322702578068400318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A593229225782AB800318BC3 /* ASAMainClocksByPlaceView.swift in Sources */,
@@ -1827,6 +1850,7 @@
 				A59D804F2600C6F800FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A5DC8765264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */,
 				A5E1CC5D2631A10C00D55B00 /* ASAClockCellTimeEventVisibility.swift in Sources */,
+				A52A2387279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */,
 				A5DC147126C4488E00A109B6 /* ASADateSpecificationType.swift in Sources */,
 				A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */,
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
@@ -1838,6 +1862,7 @@
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
 				A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */,
 				A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */,
+				A52A238A279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */,
 				A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */,
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A59D80502600C6F800FD8BBF /* ASAEventsFile.swift in Sources */,
@@ -2544,6 +2569,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A52A2383279D8D4700540D8D /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Snowy1803/FrenchRepublicanCalendarCore";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A52A2384279D8D4700540D8D /* FrenchRepublicanCalendarCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52A2383279D8D4700540D8D /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */;
+			productName = FrenchRepublicanCalendarCore;
+		};
+		A52A238C279DBAFD00540D8D /* FrenchRepublicanCalendarCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A52A2383279D8D4700540D8D /* XCRemoteSwiftPackageReference "FrenchRepublicanCalendarCore" */;
+			productName = FrenchRepublicanCalendarCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5C77BF12433361400CFEE47 /* Project object */;
 }
