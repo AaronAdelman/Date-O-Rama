@@ -33,6 +33,9 @@ struct ASALinkedEventCell:  View {
     let FRAME_MIN_HEIGHT:  CGFloat = 500.0
     
     var isForClock: Bool
+    var eventIsTodayOnly: Bool
+    var startDateString: String?
+    var endDateString: String
     
     #if os(watchOS)
     let compact = true
@@ -46,8 +49,8 @@ struct ASALinkedEventCell:  View {
     #endif
     
     var body: some View {
-        let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
-        let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
+//        let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
+//        let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
 
         #if os(watchOS)
         NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd), label: {

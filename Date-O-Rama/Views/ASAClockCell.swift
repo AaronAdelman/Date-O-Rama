@@ -376,7 +376,10 @@ struct ASAEventsForEach: View {
             event
             in
             
-            ASALinkedEventCell(event: event, primaryRow: primaryClock, secondaryRow: secondaryClock, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: true)
+            let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
+            let (startDateString, endDateString) = self.primaryClock.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
+
+            ASALinkedEventCell(event: event, primaryRow: primaryClock, secondaryRow: secondaryClock, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
         } // ForEach
     }
 }

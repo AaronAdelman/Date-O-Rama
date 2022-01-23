@@ -156,7 +156,11 @@ struct ASAEventsTab: View {
                         ForEach(ASAUserData.shared.mainClocksEvents(startDate: rangeStart, endDate: rangeEnd), id: \.eventIdentifier) {
                             event
                             in
-                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: false)
+                            
+                            let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
+                            let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
+
+                            ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString:  endDateString)
                                 .listRowInsets(.zero)
                         } // ForEach
                     } // Section
