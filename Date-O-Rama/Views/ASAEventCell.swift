@@ -71,8 +71,6 @@ struct ASAEventCell:  View {
                         .modifier(ASAScalable(lineLimit: 2))
                 }
                 if !event.isAllDay {
-//                    let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
-//                    let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
                     ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
                     
                     if self.eventsViewShouldShowSecondaryDates {
@@ -84,9 +82,6 @@ struct ASAEventCell:  View {
         } // HStack
         #else
         HStack {
-//            let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
-//            let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
-
             ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
 
             if self.eventsViewShouldShowSecondaryDates {
