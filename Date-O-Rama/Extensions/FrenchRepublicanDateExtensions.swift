@@ -12,7 +12,9 @@ import FrenchRepublicanCalendarCore
 extension FrenchRepublicanDate {
     func dateComponents(locationData: ASALocation, calendar: ASAFrenchRepublicanCalendar) -> ASADateComponents {
         let ApplesComponents = self.components
-        let components = ASADateComponents(calendar: calendar, locationData: locationData, era: ApplesComponents?.era, year: ApplesComponents?.year, yearForWeekOfYear: ApplesComponents?.yearForWeekOfYear, quarter: ApplesComponents?.quarter, month: ApplesComponents?.month, isLeapMonth: ApplesComponents?.isLeapMonth, weekOfMonth: ApplesComponents?.weekOfMonth, weekOfYear: ApplesComponents?.weekOfYear, weekday: ApplesComponents?.weekday, weekdayOrdinal: ApplesComponents?.weekdayOrdinal, day: ApplesComponents?.day, hour: ApplesComponents?.hour, minute: ApplesComponents?.minute, second: ApplesComponents?.second, nanosecond: ApplesComponents?.nanosecond, solarHours: nil, dayHalf: nil)
+        let month: Int? = ApplesComponents?.month
+        let weekday: Int? = month == 13 ? 0 : ApplesComponents?.weekday
+        let components = ASADateComponents(calendar: calendar, locationData: locationData, era: ApplesComponents?.era, year: ApplesComponents?.year, yearForWeekOfYear: ApplesComponents?.yearForWeekOfYear, quarter: ApplesComponents?.quarter, month: month, isLeapMonth: ApplesComponents?.isLeapMonth, weekOfMonth: ApplesComponents?.weekOfMonth, weekOfYear: ApplesComponents?.weekOfYear, weekday: weekday, weekdayOrdinal: ApplesComponents?.weekdayOrdinal, day: ApplesComponents?.day, hour: ApplesComponents?.hour, minute: ApplesComponents?.minute, second: ApplesComponents?.second, nanosecond: ApplesComponents?.nanosecond, solarHours: nil, dayHalf: nil)
         return components
     }
 }

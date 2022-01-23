@@ -170,7 +170,7 @@ struct ASAClockCellBody:  View {
                 }
 #else
                 if processedRow.supportsTimes {
-                    if processedRow.supportsMonths && shouldShowMiniCalendar {
+                    if processedRow.supportsMonths && shouldShowMiniCalendar && processedRow.weekday != 0 {
                         Spacer()
                         
                         ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier,
