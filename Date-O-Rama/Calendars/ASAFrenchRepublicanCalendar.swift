@@ -26,17 +26,6 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full,
-        .long,
-        .medium,
-        .mediumWithWeekday,
-        .short,
-        .shortWithWeekday,
-        .abbreviatedWeekday,
-        .dayOfMonth,
-        .abbreviatedWeekdayWithDayOfMonth,
-        .shortWithWeekdayWithoutYear,
-        .mediumWithWeekdayWithoutYear,
-        .fullWithoutYear
     ]
     
     var supportedTimeFormats: Array<ASATimeFormat> = [.medium]
@@ -58,7 +47,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     var usesISOTime: Bool = true
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
-        let (dateString, timeString, components) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
+        let (dateString, _, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
         return dateString
     }
     
@@ -129,8 +118,11 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
             }
             
         case 13:
-            if day < 1 || day > 6 {
-                // TODO:  Account for leap years!
+            let dayInYear = (dateComponents.month! - 1) * 30 + (dateComponents.day! - 1)
+            let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: dateComponents.year!, hour: 0, minute: 0, second: 0, nanosecond: 0, options: nil)
+            let isSextilYear = FRCDate.isYearSextil
+            
+            if day < 1 || day > (isSextilYear ? 6 : 5) {
                 return false
             }
             
@@ -291,6 +283,44 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
     
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
+         let FRCDate = FrenchRepublicanDate(date: date, options: nil)
+        let isSextilYear = FRCDate.isYearSextil
+        switch larger {
+        case .year:
+            switch smaller {
+            case .month:
+                return Range(1...13)
+                
+            case .day:
+                return isSextilYear ? Range(1...366) : Range(1...365)
+
+                
+            default:
+                return nil
+            } // switch smaller
+            
+        case .month:
+            switch smaller {
+            case .day:
+                let day = FRCDate.components.day ?? -1
+                if 1 <= day && day <= 12 {
+                    return Range(1...30)
+                } else if day == 13 {
+                    return isSextilYear ? Range(1...6) : Range(1...5)
+                } else {
+                    return nil
+                }
+                
+            default:
+                return nil
+            } // switch smaller
+            
+        
+            
+        default:
+            return nil
+        } // switch larger
+        
         return nil // TODO:  Fill in?
     }
     
