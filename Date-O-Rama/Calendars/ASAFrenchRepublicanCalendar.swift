@@ -34,13 +34,13 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var supportsDateFormats: Bool = false
     
-    var supportsLocations: Bool = true
+    var supportsLocations: Bool = false
     
     var supportsTimeFormats: Bool = false
     
     var supportsTimes: Bool = true
     
-    var supportsTimeZones: Bool = true
+    var supportsTimeZones: Bool = false
     
     var transitionType: ASATransitionType = .midnight
     
