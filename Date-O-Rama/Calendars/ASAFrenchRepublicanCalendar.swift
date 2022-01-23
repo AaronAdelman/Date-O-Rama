@@ -9,6 +9,16 @@
 import Foundation
 import FrenchRepublicanCalendarCore
 
+fileprivate let DAYS_PER_WEEK                       =  10
+fileprivate let DAYS_PER_MONTH                      =  30
+fileprivate let DAYS_IN_SANSCULOTTIDES              =   5
+fileprivate let DAYS_IN_SANSCULOTTIDES_IN_LEAP_YEAR =   6
+fileprivate let DAYS_IN_YEAR                        = 365
+fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
+
+fileprivate let MONTHS_PER_YEAR = 13
+
+
 public class ASAFrenchRepublicanCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode
     
@@ -106,23 +116,23 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     func isValidDate(dateComponents: ASADateComponents) -> Bool {
         let month = dateComponents.month ?? -1
-        if month < 1 || month > 13 {
+        if month < 1 || month > MONTHS_PER_YEAR {
             return false
         }
         
         let day = dateComponents.day ?? -1
         switch month {
         case 1...12:
-            if day < 1 || day > 30 {
+            if day < 1 || day > DAYS_PER_MONTH {
                 return false
             }
             
         case 13:
-            let dayInYear = (dateComponents.month! - 1) * 30 + (dateComponents.day! - 1)
+            let dayInYear = (dateComponents.month! - 1) * DAYS_PER_MONTH + (dateComponents.day! - 1)
             let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: dateComponents.year!, hour: 0, minute: 0, second: 0, nanosecond: 0, options: nil)
             let isSextilYear = FRCDate.isYearSextil
             
-            if day < 1 || day > (isSextilYear ? 6 : 5) {
+            if day < 1 || day > (isSextilYear ? DAYS_IN_SANSCULOTTIDES_IN_LEAP_YEAR : DAYS_IN_SANSCULOTTIDES) {
                 return false
             }
             
@@ -145,7 +155,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         guard let day = dateComponents.day else {
             return nil
         }
-        let dayInYear = (month - 1) * 30 + (day - 1)
+        let dayInYear = (month - 1) * DAYS_PER_MONTH + (day - 1)
         
         let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: year, hour: dateComponents.hour, minute: dateComponents.minute, second: dateComponents.second, nanosecond: dateComponents.nanosecond, options: nil)
         return FRCDate.date
@@ -219,17 +229,17 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         case .quarter:
             return Range(5...5)
         case .month:
-            return Range(13...13)
+            return Range(MONTHS_PER_YEAR...MONTHS_PER_YEAR)
         case .weekOfYear:
             return Range(53...53)
         case .weekOfMonth:
             return Range(4...4)
         case .weekday:
-            return Range(10...10)
+            return Range(DAYS_PER_WEEK...DAYS_PER_WEEK)
         case .weekdayOrdinal:
             return Range(9...9)
         case .day:
-            return Range(30...30)
+            return Range(DAYS_PER_MONTH...DAYS_PER_MONTH)
         case .hour:
             return Range(23...23)
         case .minute:
@@ -289,10 +299,10 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         case .year:
             switch smaller {
             case .month:
-                return Range(1...13)
+                return Range(1...MONTHS_PER_YEAR)
                 
             case .day:
-                return isSextilYear ? Range(1...366) : Range(1...365)
+                return isSextilYear ? Range(1...DAYS_IN_YEAR_IN_LEAP_YEAR) : Range(1...DAYS_IN_YEAR)
 
                 
             default:
@@ -302,11 +312,12 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         case .month:
             switch smaller {
             case .day:
+                let month = FRCDate.components.month ?? -1
                 let day = FRCDate.components.day ?? -1
-                if 1 <= day && day <= 12 {
-                    return Range(1...30)
+                if 1 <= month && month <= 12 {
+                    return Range(1...DAYS_PER_MONTH)
                 } else if day == 13 {
-                    return isSextilYear ? Range(1...6) : Range(1...5)
+                    return isSextilYear ? Range(1...DAYS_IN_SANSCULOTTIDES_IN_LEAP_YEAR) : Range(1...DAYS_IN_SANSCULOTTIDES)
                 } else {
                     return nil
                 }
@@ -320,11 +331,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         default:
             return nil
         } // switch larger
-        
-        return nil // TODO:  Fill in?
     }
     
-    var daysPerWeek: Int? = 10
+    var daysPerWeek: Int? = DAYS_PER_WEEK
     
     
     // MARK:  - Time zone-dependent modified Julian day
