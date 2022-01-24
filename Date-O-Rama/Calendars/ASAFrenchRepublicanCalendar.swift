@@ -30,7 +30,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var defaultDateFormat: ASADateFormat = .full
     
-    var defaultTimeFormat: ASATimeFormat = .medium
+    var defaultTimeFormat: ASATimeFormat = .decimal
     
     var supportedDateFormats: Array<ASADateFormat> = [.full]
     
@@ -38,15 +38,15 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         .full,
     ]
     
-    var supportedTimeFormats: Array<ASATimeFormat> = [.medium]
+    var supportedTimeFormats: Array<ASATimeFormat> = [.decimal, .medium]
     
-    var supportsLocales: Bool = false
+    var supportsLocales: Bool = true
     
     var supportsDateFormats: Bool = false
     
     var supportsLocations: Bool = false
     
-    var supportsTimeFormats: Bool = false
+    var supportsTimeFormats: Bool = true
     
     var supportsTimes: Bool = true
     
@@ -57,9 +57,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     var usesISOTime: Bool = true
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
-        let (dateString, _, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
-        return dateString
-    }
+        let (dateString, timeString, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
+        return dateString + " " + timeString
+    } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
     
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         let FRCDate = FrenchRepublicanDate(date: date)
@@ -102,14 +102,33 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         } // switch calendarComponent
     } // func supports(calendarComponent: ASACalendarComponent) -> Bool
     
+    private var dateFormatter = DateFormatter()
+
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let FRCDate = FrenchRepublicanDate(date: now, options: nil)
         let components = FRCDate.dateComponents(locationData: locationData, calendar: self)
         
         let dateString = FRCDate.toVeryLongString()
         
-        let decimalTime = DecimalTime(base: now)
-        let timeString = decimalTime.hourMinuteSecondsFormatted
+        var timeString: String
+        switch timeFormat {
+        case .none:
+            timeString = ""
+        case .medium:
+            self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier)
+            let timeZone = locationData.timeZone
+            self.dateFormatter.timeZone = timeZone
+            self.dateFormatter.timeStyle = .medium
+            self.dateFormatter.dateStyle = .none
+            timeString = self.dateFormatter.string(from: now)
+
+        case .decimal:
+            let decimalTime = DecimalTime(base: now)
+            timeString = decimalTime.hourMinuteSecondsFormatted
+
+            default:
+            timeString = ""
+        } // switch timeFormat
         
         return (dateString, timeString, components)
     } // func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
