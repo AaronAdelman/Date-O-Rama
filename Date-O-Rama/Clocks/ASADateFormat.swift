@@ -31,6 +31,7 @@ enum ASADateFormat:  String {
     case shortYearOnly                    = "SYO"
     case shortYearAndMonthOnly            = "SYAMO"
 
+    case fullWithRomanYear                = "FWRY"
 } // enum ASADateFormat
 
 extension ASADateFormat {
@@ -77,6 +78,8 @@ extension ASADateFormat {
             unlocalizedString = "SYO"
         case .shortYearAndMonthOnly:
             unlocalizedString = "SYAMO"
+        case .fullWithRomanYear:
+            unlocalizedString = "ITEM_FullWithRomanYear"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // var localizedItemName

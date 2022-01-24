@@ -32,7 +32,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var defaultTimeFormat: ASATimeFormat = .decimal
     
-    var supportedDateFormats: Array<ASADateFormat> = [.full]
+    var supportedDateFormats: Array<ASADateFormat> = [.full, .fullWithRomanYear]
     
     var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full,
@@ -42,7 +42,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var supportsLocales: Bool = true
     
-    var supportsDateFormats: Bool = false
+    var supportsDateFormats: Bool = true
     
     var supportsLocations: Bool = false
     
@@ -105,10 +105,18 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     private var dateFormatter = DateFormatter()
 
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
-        let FRCDate = FrenchRepublicanDate(date: now, options: nil)
+        let options = FrenchRepublicanDateOptions(romanYear: (dateFormat == .fullWithRomanYear), variant: .original)
+        let FRCDate = FrenchRepublicanDate(date: now, options: options)
         let components = FRCDate.dateComponents(locationData: locationData, calendar: self)
         
-        let dateString = FRCDate.toVeryLongString()
+        var dateString: String
+        switch dateFormat {
+        case .none:
+            dateString = ""
+
+        default:
+            dateString = FRCDate.toVeryLongString()
+        } // switch dateFormat
         
         var timeString: String
         switch timeFormat {

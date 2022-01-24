@@ -59,7 +59,7 @@ class ASAAppleCalendar:  ASACalendar {
         case .none:
             self.dateFormatter.dateStyle = .none
             
-        case .full:
+        case .full, .fullWithRomanYear:
             self.dateFormatter.dateStyle = .full
             
         case .long:
