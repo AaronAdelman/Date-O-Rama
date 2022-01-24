@@ -121,9 +121,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
     
     var supportsLocales: Bool = true
-    
-    var supportsDateFormats: Bool = false
-    
+        
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
         switch self.calendarCode {
         case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
@@ -176,9 +174,7 @@ class ASAJulianDayCalendar:  ASACalendar {
     ]
     
     var supportedTimeFormats: Array<ASATimeFormat> = [.medium]
-    
-    var supportsTimeFormats: Bool = false
-    
+        
     var canSplitTimeFromDate:  Bool = false
     
     var defaultTimeFormat:  ASATimeFormat = .medium

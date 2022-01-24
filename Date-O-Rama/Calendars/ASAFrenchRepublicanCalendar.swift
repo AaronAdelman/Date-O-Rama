@@ -28,26 +28,20 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var canSplitTimeFromDate: Bool = true
     
-    var defaultDateFormat: ASADateFormat = .full
+    var defaultDateFormat: ASADateFormat = .fullWithRomanYear
     
     var defaultTimeFormat: ASATimeFormat = .decimal
     
     var supportedDateFormats: Array<ASADateFormat> = [.full, .fullWithRomanYear]
     
-    var supportedWatchDateFormats: Array<ASADateFormat> = [
-        .full,
-    ]
+    var supportedWatchDateFormats: Array<ASADateFormat> = [.full, .fullWithRomanYear]
     
     var supportedTimeFormats: Array<ASATimeFormat> = [.decimal, .medium]
     
     var supportsLocales: Bool = true
-    
-    var supportsDateFormats: Bool = true
-    
+        
     var supportsLocations: Bool = false
-    
-    var supportsTimeFormats: Bool = true
-    
+        
     var supportsTimes: Bool = true
     
     var supportsTimeZones: Bool = false

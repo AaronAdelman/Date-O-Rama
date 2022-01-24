@@ -347,8 +347,6 @@
 
     public var supportsLocales: Bool = true
 
-    public var supportsDateFormats: Bool = true
-
     public var supportsTimeZones: Bool = false
 
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
@@ -409,14 +407,9 @@
     ]
 
     var supportedTimeFormats: Array<ASATimeFormat> = [
-//        .full, .long,
         .medium,
-//        .short,
         .decimalTwelveHour
-//                                                                , .JewishCalendricalCalculation
     ]
-
-    public var supportsTimeFormats: Bool = true
 
     public var canSplitTimeFromDate:  Bool = true
 

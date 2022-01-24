@@ -152,9 +152,7 @@ class ASAAppleCalendar:  ASACalendar {
         self.ApplesCalendar.timeZone = locationData.timeZone
         return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
     } // func startOfNextDay(now:  Date, locationData:  ASALocation) -> Date
-    
-    var supportsDateFormats: Bool = true
-    
+        
     var supportsTimeZones: Bool = true
     
     var supportsLocations: Bool = true
@@ -216,9 +214,7 @@ class ASAAppleCalendar:  ASACalendar {
     var supportedTimeFormats: Array<ASATimeFormat> = [
         .medium
     ]
-    
-    var supportsTimeFormats: Bool = true
-    
+        
     var canSplitTimeFromDate:  Bool = true
     
     var defaultTimeFormat:  ASATimeFormat = .medium

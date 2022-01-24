@@ -34,9 +34,7 @@ protocol ASACalendar {
     var supportedWatchDateFormats: Array<ASADateFormat> { get }
     var supportedTimeFormats: Array<ASATimeFormat> { get }
     var supportsLocales: Bool { get }
-    var supportsDateFormats: Bool { get }
     var supportsLocations: Bool { get }
-    var supportsTimeFormats: Bool { get }
     var supportsTimes: Bool { get }
     var supportsTimeZones: Bool { get }
     var transitionType:  ASATransitionType { get }
@@ -92,6 +90,14 @@ protocol ASACalendar {
 // MARK:  -
 
 extension ASACalendar {
+    var supportsDateFormats: Bool {
+        return self.supportedDateFormats.count > 1
+    }
+    
+    var supportsTimeFormats: Bool {
+        return self.supportedTimeFormats.count > 1
+    }
+
     func maximumValue(of smallComponent: ASACalendarComponent, in largeComponent: ASACalendarComponent, for now: Date) -> Int? {
         let range = self.range(of: smallComponent, in: largeComponent, for: now)
         let result = range?.count
