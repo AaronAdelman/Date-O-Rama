@@ -72,7 +72,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     func supports(calendarComponent: ASACalendarComponent) -> Bool {
         switch calendarComponent {
         case .era:
-            return true
+            return false
         case .year:
             return true
         case .yearForWeekOfYear:

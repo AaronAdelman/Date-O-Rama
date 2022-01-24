@@ -887,7 +887,8 @@ class ASAEventCalendar {
             }
         } else {
             // offsetDays == 0
-            if !matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components) {
+            let matchesMonth: Bool = matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components)
+            if !matchesMonth {
                 return NO_MATCH
             }
             
