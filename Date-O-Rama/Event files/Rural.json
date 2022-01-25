@@ -1,9 +1,9 @@
 {
-    "titles": {"en": "Rural"},
-    "supportedLocales": ["fr", "en"],
+    "titles": {"en": "Rural", "he": "כפרי", "fr": "Rural"},
+    "supportedLocales": ["fr", "en", "he"],
     "defaultLocale": "en",
     "calendarCode": "frc",
-    "calendarColor": {"red": 1.0, "green": 0.0, "blue": 1.0},
+    "calendarColor": {"red": 0.67, "green": 0.33, "blue": 0.67},
     "eventSpecifications": [
         {"titles": {"fr": "Raisin", "en": "Grape Day"}, "start": {"type": "1D", "mon": 1, "d": 1}, "emoji": "🍇"},
         {"titles": {"fr": "Safran", "en": "Saffron Day"}, "start": {"type": "1D", "mon": 1, "d": 2}},
@@ -365,11 +365,11 @@
         {"titles": {"fr": "Maïs", "en": "Maize Day"}, "start": {"type": "1D", "mon": 12, "d": 28}, "emoji": "🌽"},
         {"titles": {"fr": "Marron", "en": "Sweet Chestnut Day"}, "start": {"type": "1D", "mon": 12, "d": 29}, "emoji": "🌰"},
         {"titles": {"fr": "Panier", "en": "Pack Basket Day"}, "start": {"type": "1D", "mon": 12, "d": 30}, "emoji": "🧺"},
-        {"titles": {"fr": "Vertu", "en": "Celebration of Virtue"}, "start": {"type": "1D", "mon": 13, "d": 1}},
-        {"titles": {"fr": "Génie", "en": "Celebration of Talent"}, "start": {"type": "1D", "mon": 13, "d": 2}, "emoji": "🎤"},
-        {"titles": {"fr": "Travail", "en": "Celebration of Labour"}, "start": {"type": "1D", "mon": 13, "d": 3}, "emoji": "㊘"},
-        {"titles": {"fr": "Opinion", "en": "Celebration of Convictions"}, "start": {"type": "1D", "mon": 13, "d": 4}},
-        {"titles": {"fr": "Récompenses", "en": "Celebration of Honors"}, "start": {"type": "1D", "mon": 13, "d": 5}, "emoji": "🎖"},
-        {"titles": {"fr": "Révolution", "en": "Celebration of the Revolution"}, "start": {"type": "1D", "mon": 13, "d": 6}, "emoji": "䷰"},
+        {"titles": {"fr": "Vertu", "en": "Celebration of Virtue", "he": "יום המידה הטובה"}, "start": {"type": "1D", "mon": 13, "d": 1}},
+        {"titles": {"fr": "Génie", "en": "Celebration of Talent", "he": "יום הכישרון"}, "start": {"type": "1D", "mon": 13, "d": 2}, "emoji": "🎤"},
+        {"titles": {"fr": "Travail", "en": "Celebration of Labour", "he": "יום העבודה"}, "start": {"type": "1D", "mon": 13, "d": 3}, "emoji": "㊘"},
+        {"titles": {"fr": "Opinion", "en": "Celebration of Convictions", "he": "יום הדעה"}, "start": {"type": "1D", "mon": 13, "d": 4}},
+        {"titles": {"fr": "Récompenses", "en": "Celebration of Honors", "he": "יום ההצטיינות"}, "start": {"type": "1D", "mon": 13, "d": 5}, "emoji": "🎖"},
+        {"titles": {"fr": "Révolution", "en": "Celebration of the Revolution", "he": "יום המהפכה"}, "start": {"type": "1D", "mon": 13, "d": 6}, "emoji": "䷰"},
     ]
 }

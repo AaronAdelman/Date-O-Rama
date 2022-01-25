@@ -875,6 +875,7 @@
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
 				A563701F27382A91008DE963 /* New Age.json */,
 				A5DC9C7D27285D2100047F64 /* Planets.json */,
+				A5765A37279ED15900BF1F7E /* Rural.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
 				A5BDE7812667877E00F47416 /* Shia (Gregorian).json */,
 				A54539DF26A9BA180028EAD5 /* Shia (times).json */,
@@ -889,7 +890,6 @@
 				A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */,
 				A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
-				A5765A37279ED15900BF1F7E /* Rural.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
