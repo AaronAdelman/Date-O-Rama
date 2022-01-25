@@ -63,6 +63,9 @@
 "ITEM_ShortWithWeekdayWithoutYear"      = "מקוצר עם יום־השבוע בלי שנה";
 "ITEM_MediumWithWeekdayWithoutYear"     = "בינוני עם יום־השבוע בלי שנה";
 "ITEM_FullWithoutYear"                  = "מלא בלי שנה";
+"ITEM_LongWithoutYear"                  = "ארוך בלי שנה";
+"ITEM_MediumWithoutYear"                = "בינוני בלי שנה";
+"ITEM_ShortWithoutYear"                 = "מקוצר בלי שנה";
 "ITEM_FullWithRomanYear"                = "מלא עם שנה רומנית";
 "ITEM_LongWithRomanYear"                = "ארוך עם שנה רומנית";
 "ITEM_ShortWithRomanYear"               = "מקוצר עם שנה רומנית";

@@ -309,6 +309,15 @@
         case .fullWithoutYear:
             self.dateFormatter.apply(dateStyle: .full, LDMLExtension: "", removing:  DateFormatter.yearCodes)
             
+        case .longWithoutYear:
+            self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .mediumWithoutYear:
+            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .shortWithoutYear:
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
         case .shortYearOnly:
             self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearCodes)
             
@@ -391,7 +400,7 @@
         .full
     ]
 
-    var supportedWatchDateFormats: Array<ASADateFormat> = [
+     var supportedWatchDateFormats: Array<ASADateFormat> = [
         .full,
         .long,
         .medium,
@@ -403,8 +412,11 @@
         .abbreviatedWeekdayWithDayOfMonth,
         .shortWithWeekdayWithoutYear,
         .mediumWithWeekdayWithoutYear,
-        .fullWithoutYear
-    ]
+        .fullWithoutYear,
+        .longWithoutYear,
+        .mediumWithoutYear,
+        .shortWithoutYear
+     ]
 
     var supportedTimeFormats: Array<ASATimeFormat> = [
         .medium,

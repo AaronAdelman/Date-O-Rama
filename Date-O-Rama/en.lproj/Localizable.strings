@@ -63,6 +63,9 @@
 "ITEM_ShortWithWeekdayWithoutYear"      = "Short with Weekday without Year";
 "ITEM_MediumWithWeekdayWithoutYear"     = "Medium with Weekday without Year";
 "ITEM_FullWithoutYear"                  = "Full without Year";
+"ITEM_LongWithoutYear"                  = "Long without Year";
+"ITEM_MediumWithoutYear"                = "Medium without Year";
+"ITEM_ShortWithoutYear"                 = "Short without Year";
 "ITEM_FullWithRomanYear"                = "Full with Roman Year";
 "ITEM_LongWithRomanYear"                = "Long with Roman Year";
 "ITEM_ShortWithRomanYear"               = "Short with Roman Year";

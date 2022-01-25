@@ -34,7 +34,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var supportedDateFormats: Array<ASADateFormat> = [.full, .fullWithRomanYear, .long, .longWithRomanYear, .short, .shortWithRomanYear]
     
-    var supportedWatchDateFormats: Array<ASADateFormat> = [.full, .fullWithRomanYear, .long, .longWithRomanYear, .short, .shortWithRomanYear]
+    var supportedWatchDateFormats: Array<ASADateFormat> = [.full, .fullWithRomanYear, .long, .longWithRomanYear, .short, .shortWithRomanYear, .longWithoutYear, .mediumWithoutYear]
     
     var supportedTimeFormats: Array<ASATimeFormat> = [.decimal, .medium]
     
@@ -111,6 +111,12 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
             
         case .long, .longWithRomanYear:
             dateString = FRCDate.toLongString()
+            
+        case .longWithoutYear:
+            dateString = FRCDate.toLongStringNoYear()
+            
+        case .mediumWithoutYear:
+            dateString = FRCDate.toShortString()
 
         default:
             dateString = FRCDate.toVeryLongString()

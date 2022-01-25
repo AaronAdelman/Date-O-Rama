@@ -27,6 +27,9 @@ enum ASADateFormat:  String {
     case shortWithWeekdayWithoutYear      = "shortWithWeekdayWithoutYear"
     case mediumWithWeekdayWithoutYear     = "mediumWithWeekdayWithoutYear"
     case fullWithoutYear                  = "fullWithoutYear"
+    case longWithoutYear                  = "longWithoutYear"
+    case mediumWithoutYear                = "mediumWithoutYear"
+    case shortWithoutYear                 = "shortWithoutYear"
     
     case shortYearOnly                    = "SYO"
     case shortYearAndMonthOnly            = "SYAMO"
@@ -86,6 +89,12 @@ extension ASADateFormat {
             unlocalizedString = "ITEM_LongWithRomanYear"
         case .shortWithRomanYear:
             unlocalizedString = "ITEM_ShortWithRomanYear"
+        case .longWithoutYear:
+            unlocalizedString = "ITEM_LongWithoutYear"
+        case .mediumWithoutYear:
+            unlocalizedString = "ITEM_MediumWithoutYear"
+        case .shortWithoutYear:
+            unlocalizedString = "ITEM_ShortWithoutYear"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // var localizedItemName
@@ -99,9 +108,7 @@ extension ASADateFormat {
             return false
         } // switch self
     } // var isIOS8601: Bool
-} // extension ASADateFormat
 
-extension ASADateFormat {
     var shortened:  ASADateFormat {
         get {
             switch self {
@@ -123,6 +130,12 @@ extension ASADateFormat {
             case .long, .medium:
                 return .short
                 
+            case .fullWithoutYear:
+                return .shortWithWeekdayWithoutYear
+                
+            case .longWithoutYear, .mediumWithoutYear:
+                return .shortWithoutYear
+                
             case .fullWithRomanYear, .longWithRomanYear:
                 return .shortWithRomanYear
 
@@ -131,4 +144,14 @@ extension ASADateFormat {
             } // switch self
         } // get
     } // var watchShortened
+    
+    var isRomanYear: Bool {
+        switch self {
+        case .fullWithRomanYear, .longWithRomanYear, .shortWithRomanYear:
+            return true
+            
+        default:
+            return false
+        } // switch self
+    } // var isRomanYear
 } // extension ASADateFormat

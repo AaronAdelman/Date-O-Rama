@@ -91,7 +91,7 @@ protocol ASACalendar {
 
 extension ASACalendar {
     var supportsDateFormats: Bool {
-        return self.supportedDateFormats.count > 1
+        return self.supportedDateFormats.count > 1 || self.supportedWatchDateFormats.count > 1
     }
     
     var supportsTimeFormats: Bool {

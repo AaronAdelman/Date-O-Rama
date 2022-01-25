@@ -100,6 +100,14 @@ class ASAAppleCalendar:  ASACalendar {
             
         case .shortYearAndMonthOnly:
             self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
+        case .longWithoutYear:
+            self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .mediumWithoutYear:
+            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .shortWithoutYear:
+            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing:  DateFormatter.yearCodes)
         } // switch dateFormat
         
         return self.dateFormatter.string(from: now)
@@ -191,7 +199,10 @@ class ASAAppleCalendar:  ASACalendar {
                 .abbreviatedWeekdayWithDayOfMonth,
                 .shortWithWeekdayWithoutYear,
                 .mediumWithWeekdayWithoutYear,
-                .fullWithoutYear
+                .fullWithoutYear,
+                .longWithoutYear,
+                .mediumWithoutYear,
+                .shortWithoutYear
             ]
         } else {
             return [
@@ -206,7 +217,10 @@ class ASAAppleCalendar:  ASACalendar {
                 .abbreviatedWeekdayWithDayOfMonth,
                 .shortWithWeekdayWithoutYear,
                 .mediumWithWeekdayWithoutYear,
-                .fullWithoutYear
+                .fullWithoutYear,
+                .longWithoutYear,
+                .mediumWithoutYear,
+                .shortWithoutYear
             ]
         }
     }
