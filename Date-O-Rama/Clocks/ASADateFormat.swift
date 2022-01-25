@@ -32,6 +32,8 @@ enum ASADateFormat:  String {
     case shortYearAndMonthOnly            = "SYAMO"
 
     case fullWithRomanYear                = "FWRY"
+    case longWithRomanYear                = "LWRY"
+    case shortWithRomanYear               = "SWRY"
 } // enum ASADateFormat
 
 extension ASADateFormat {
@@ -80,6 +82,10 @@ extension ASADateFormat {
             unlocalizedString = "SYAMO"
         case .fullWithRomanYear:
             unlocalizedString = "ITEM_FullWithRomanYear"
+        case .longWithRomanYear:
+            unlocalizedString = "ITEM_LongWithRomanYear"
+        case .shortWithRomanYear:
+            unlocalizedString = "ITEM_ShortWithRomanYear"
         } // switch self
         return NSLocalizedString(unlocalizedString, comment: "")
     } // var localizedItemName
@@ -116,6 +122,9 @@ extension ASADateFormat {
 
             case .long, .medium:
                 return .short
+                
+            case .fullWithRomanYear, .longWithRomanYear:
+                return .shortWithRomanYear
 
             default:
                 return self

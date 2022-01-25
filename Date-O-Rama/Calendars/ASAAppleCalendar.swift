@@ -62,13 +62,13 @@ class ASAAppleCalendar:  ASACalendar {
         case .full, .fullWithRomanYear:
             self.dateFormatter.dateStyle = .full
             
-        case .long:
+        case .long, .longWithRomanYear:
             self.dateFormatter.dateStyle = .long
             
         case .medium:
             self.dateFormatter.dateStyle = .medium
             
-        case .short:
+        case .short, .shortWithRomanYear:
             self.dateFormatter.dateStyle = .short
 
         case .shortWithWeekday:

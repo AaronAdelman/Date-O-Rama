@@ -64,6 +64,8 @@
 "ITEM_MediumWithWeekdayWithoutYear"     = "בינוני עם יום־השבוע בלי שנה";
 "ITEM_FullWithoutYear"                  = "מלא בלי שנה";
 "ITEM_FullWithRomanYear"                = "מלא עם שנה רומנית";
+"ITEM_LongWithRomanYear"                = "ארוך עם שנה רומנית";
+"ITEM_ShortWithRomanYear"               = "מקוצר עם שנה רומנית";
 "ITEM_decimalTwelveHour"            = "עשרוני 12 שעות";
 "ITEM_JewishCalendricalCalculation" = "יהודי, חישוב הלוח";
 "ITEM_decimal"                      = "עשרוני";
