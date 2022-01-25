@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "FrenchRepublicanCalendarCore",
-        "repositoryURL": "https://github.com/Snowy1803/FrenchRepublicanCalendarCore",
+        "repositoryURL": "https://github.com/AaronAdelman/FrenchRepublicanCalendarCore",
         "state": {
           "branch": "main",
           "revision": "2878b5cdc33ed3c3283a8f066bb5f082ae542ea7",
