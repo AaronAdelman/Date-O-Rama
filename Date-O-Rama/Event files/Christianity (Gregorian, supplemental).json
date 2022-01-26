@@ -59,5 +59,7 @@
         {"titles": {"en": "Distaff Day/Roc Day/Rock Day/Saint Distaff’s Day"}, "start": {"type": "1D", "mon": 1, "d": 7}, "urls": {"en": "https://en.wikipedia.org/wiki/Distaff_Day"}, "emoji": "🪨"},
         {"titles": {"en": "Ditch New Year’s Resolutions Day"}, "start": {"type": "1D", "mon": 1, "d": 17}, "urls": {"en": "https://www.daysoftheyear.com/days/ditch-new-years-resolutions-day/"}},
         {"titles": {"en": "National Re-gifting Day"}, "start": {"type": "1D", "mon": 12, "d": 18, "thruD": 24, "wkd": [5]}, "urls": {"en": "https://nationaldaycalendar.com/national-re-gifting-day-thursday-before-christmas/"}, "emoji": "🎁"},
+        {"titles": {"en": "National Green Juice Day"}, "start": {"type": "1D", "mon": 1, "d": 26}, "1st": {"type": "1D", "era": 1, "y": 2016}, "urls": {"en": "https://nationaldaycalendar.com/national-green-juice-day-january-26/"}, "emoji": "🧃"},
+        {"titles": {"en": "New Year’s Resolutions Week"}, "start": {"type": "nD", "mon": 1, "d": 1}, "1st": {"type": "1D", "era": 1, "y": 2005}, "end": {"type": "1D", "mon": 1, "d": 7}, "urls": {"en": "https://nationaldaycalendar.com/new-years-resolutions-week-first-week-in-january/"}}
     ]
 }
