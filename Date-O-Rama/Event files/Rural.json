@@ -128,7 +128,7 @@
         {"titles": {"fr": "Crible", "en": "Sieve Day", "he": "יום המסננת"}, "start": {"type": "1D", "mon": 4, "d": 30}},
         {"titles": {"fr": "Lauréole", "en": "Spurge-Laurel Day"}, "start": {"type": "1D", "mon": 5, "d": 1}},
         {"titles": {"fr": "Mousse", "en": "Moss Day"}, "start": {"type": "1D", "mon": 5, "d": 2}},
-        {"titles": {"fr": "Fragon", "en": "Butcher’s Broom Day"}, "start": {"type": "1D", "mon": 5, "d": 3}, "emoji": "🧹"},
+        {"titles": {"fr": "Fragon", "en": "Butcher’s Broom Day"}, "start": {"type": "1D", "mon": 5, "d": 3}},
         {"titles": {"fr": "Perce Neige", "en": "Snowdrop Day"}, "start": {"type": "1D", "mon": 5, "d": 4}},
         {"titles": {"fr": "Taureau", "en": "Bull Day"}, "start": {"type": "1D", "mon": 5, "d": 5}, "emoji": "🐂"},
         {"titles": {"fr": "Laurier-thym", "en": "Laurustinus Day"}, "start": {"type": "1D", "mon": 5, "d": 6}},
