@@ -18,10 +18,19 @@ extension FrenchRepublicanDate {
         return components
     } // func dateComponents(locationData: ASALocation, calendar: ASAFrenchRepublicanCalendar) -> ASADateComponents
     
-    init(now: Date, dateFormat: ASADateFormat, timeZone: TimeZone?) {
+    init(now: Date, dateFormat: ASADateFormat, timeZone: TimeZone?, calendarCode: ASACalendarCode) {
         let RomanYear: Bool = dateFormat.isRomanYear
         
-        let options = FrenchRepublicanDateOptions(romanYear: RomanYear, variant: .original)
+        var variant: FrenchRepublicanDateOptions.Variant
+        switch calendarCode {
+        case .FrenchRepublicanRomme:
+            variant = .romme
+            
+        default:
+            variant = .original
+        } // switch calendarCode
+        
+        let options = FrenchRepublicanDateOptions(romanYear: RomanYear, variant: variant)
          self = FrenchRepublicanDate(date: now, options: options, timeZone: timeZone)
     } // init(now: Date, dateFormat: ASADateFormat)
 } // extension FrenchRepublicanDate

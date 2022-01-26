@@ -57,6 +57,7 @@ struct ASACalendarChooserView: View {
         .EthiopicAmeteAlem,
         .EthiopicAmeteMihret,
         .FrenchRepublican,
+        .FrenchRepublicanRomme,
         .Hebrew,
         .HebrewGRA,
         .HebrewMA,

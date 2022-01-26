@@ -45,7 +45,8 @@ enum ASACalendarCode:  String, Codable {
     case IslamicUmmAlQuraSolar = "IslamicUmmAlQuraSolar"
     case HebrewMA              = "HebrewSolarMA"
     case FrenchRepublican      = "frc"
-    
+    case FrenchRepublicanRomme = "frc-r"
+
     case Julian                = "julian" // TODO:  Implement
     
     case allEarth                    = "*"
@@ -53,6 +54,7 @@ enum ASACalendarCode:  String, Codable {
     case allHebrewSolarTime          = "heb-solar*"
     case allIslamic                  = "hiq*"
     case allIslamicSolarTime         = "hiq-solar*"
+    case allFrenchRepublican         = "frc*"
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
     case allGregorianMonthsWeeksDays = "gre*"
@@ -197,7 +199,7 @@ extension ASACalendarCode {
     
     var isFrenchRepublicanCalendar: Bool {
         switch self {
-        case .FrenchRepublican:
+        case .FrenchRepublican, .FrenchRepublicanRomme:
             return true
             
         default:
@@ -271,7 +273,7 @@ extension ASACalendarCode {
         get {
             switch self {
             case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican:
+                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme:
                 return .solar
                 
             case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA:
@@ -306,6 +308,10 @@ extension ASACalendarCode {
         }
 
         if self == .allIslamicSolarTime && otherCalendarCode.isIslamicSolarTimeCalendar {
+            return true
+        }
+        
+        if self == .allFrenchRepublican && otherCalendarCode.isFrenchRepublicanCalendar {
             return true
         }
         

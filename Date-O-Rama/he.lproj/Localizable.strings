@@ -39,6 +39,7 @@
 "IslamicUmmAlQuraSolar" = "מוסלמי אום אל־קורה";
 "HebrewSolarMA"         = "עברי (מגן אברהם)";
 "frc"                   = "הרפובליקה הצרפתית";
+"frc-r"                 = "הרפובליקה הצרפתית (רום)";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
 "HEADER_Row" = "שעון";

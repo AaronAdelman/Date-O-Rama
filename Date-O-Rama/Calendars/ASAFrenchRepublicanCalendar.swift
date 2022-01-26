@@ -51,11 +51,16 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     var usesISOTime: Bool = true
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
-        let FRCDate = FrenchRepublicanDate(now: now, dateFormat: dateFormat, timeZone: locationData.timeZone)
+        let FRCDate = FrenchRepublicanDate(now: now, dateFormat: dateFormat, timeZone: locationData.timeZone, calendarCode: self.calendarCode)
         
         let (dateString, timeString) = dateStringTimeString(now: now, FRCDate: FRCDate, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
         return dateString + " " + timeString
     } // func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
+    
+    var genericOptions: FrenchRepublicanDateOptions {
+        let variant: FrenchRepublicanDateOptions.Variant = self.calendarCode == .FrenchRepublicanRomme ? .romme : .original
+        return FrenchRepublicanDateOptions(romanYear: true, variant: variant)
+    }
     
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
         let FRCDate = FrenchRepublicanDate(date: date, timeZone: locationData.timeZone)
@@ -146,7 +151,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     } // func dateStringTimeStringDate(now: Date, FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String)
 
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
-        let FRCDate = FrenchRepublicanDate(now: now, dateFormat: dateFormat, timeZone: locationData.timeZone)
+        let FRCDate = FrenchRepublicanDate(now: now, dateFormat: dateFormat, timeZone: locationData.timeZone, calendarCode: self.calendarCode)
 
         let components = FRCDate.dateComponents(locationData: locationData, calendar: self)
         
@@ -170,7 +175,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
             
         case 13:
             let dayInYear = (dateComponents.month! - 1) * DAYS_PER_MONTH + (dateComponents.day! - 1)
-            let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: dateComponents.year!, hour: 0, minute: 0, second: 0, nanosecond: 0, options: nil, timeZone: nil)
+            let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: dateComponents.year!, hour: 0, minute: 0, second: 0, nanosecond: 0, options: genericOptions, timeZone: nil)
             let isSextilYear = FRCDate.isYearSextil
             
             if day < 1 || day > (isSextilYear ? DAYS_IN_SANSCULOTTIDES_IN_LEAP_YEAR : DAYS_IN_SANSCULOTTIDES) {
@@ -198,7 +203,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
         }
         let dayInYear = (month - 1) * DAYS_PER_MONTH + (day - 1)
         
-        let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: year, hour: dateComponents.hour, minute: dateComponents.minute, second: dateComponents.second, nanosecond: dateComponents.nanosecond, options: nil, timeZone: dateComponents.locationData.timeZone)
+        let FRCDate = FrenchRepublicanDate(dayInYear: dayInYear, year: year, hour: dateComponents.hour, minute: dateComponents.minute, second: dateComponents.second, nanosecond: dateComponents.nanosecond, options: genericOptions, timeZone: dateComponents.locationData.timeZone)
         return FRCDate.date
     } // func date(dateComponents: ASADateComponents) -> Date?
     
@@ -254,7 +259,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData: ASALocation) -> Int
     
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents {
-        let FRCDate = FrenchRepublicanDate(date: date, options: nil, timeZone: locationData.timeZone)
+        let FRCDate = FrenchRepublicanDate(date: date, options: genericOptions, timeZone: locationData.timeZone)
         let components = FRCDate.dateComponents(locationData: locationData, calendar: self)
         return components // TODO:  Cleanup!
     } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData: ASALocation) -> ASADateComponents
@@ -334,7 +339,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     } // func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int?
     
     func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? {
-        let FRCDate = FrenchRepublicanDate(date: date, options: nil, timeZone: nil)
+        let FRCDate = FrenchRepublicanDate(date: date, options: genericOptions, timeZone: nil)
         let isSextilYear = FRCDate.isYearSextil
         switch larger {
         case .year:

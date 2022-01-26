@@ -2,7 +2,7 @@
     "titles": {"en": "Rural", "he": "כפרי", "fr": "Rural"},
     "supportedLocales": ["fr", "en", "he"],
     "defaultLocale": "en",
-    "calendarCode": "frc",
+    "calendarCode": "frc*",
     "calendarColor": {"red": 0.88, "green": 0.66, "blue": 0.38},
     "eventSpecifications": [
         {"titles": {"fr": "Raisin", "en": "Grape Day"}, "start": {"type": "1D", "mon": 1, "d": 1}, "emoji": "🍇"},

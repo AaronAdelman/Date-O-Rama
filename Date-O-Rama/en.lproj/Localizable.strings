@@ -39,6 +39,7 @@
 "IslamicUmmAlQuraSolar" = "Islamic Umm Al-Qura";
 "HebrewSolarMA"         = "Hebrew (Maghen ’Avraham)";
 "frc"                   = "French Republican";
+"frc-r"                 = "French Republican (Romme)";
 
 "DEFAULT_LOCALE" = "Default";
 "HEADER_Row" = "Clock";
