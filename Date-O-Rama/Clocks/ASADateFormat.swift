@@ -115,6 +115,9 @@ extension ASADateFormat {
             case .long, .full, .medium:
                 return .short
                 
+            case .fullWithRomanYear, .longWithRomanYear:
+                return .shortWithRomanYear
+                
             default:
                 return self
             } // switch self
