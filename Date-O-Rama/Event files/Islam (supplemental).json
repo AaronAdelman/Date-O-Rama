@@ -5,32 +5,10 @@
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.1, "green": 0.9, "blue": 0.1},
     "eventSpecifications": [
-        {
-            "titles": {"en": "International Shia Day"},
-            "start": {"type": "1D",
-                "mon": 6, "d": 12
-            },
-            "urls": {"en": "http://internationalshiaday.com"}
-        },
-        {
-            "titles": {"en": "Muslim Women’s Day"},
-            "start": {"type": "1D",
-                "mon": 3, "d": 27
-            }
-        },
-        {
-            "titles": {"en": "World Hijab Day"},
-            "start": {"type": "1D",
-                "mon": 2, "d": 1
-            },
-            "urls": {"en": "https://en.wikipedia.org/wiki/World_Hijab_Day"}, "emoji": "🧕"
-        },
-        {
-            "titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"},
-            "start": {"type": "1D",
-                "mon": 2, "wkdRecurrence": 2, "wkd": [7]
-            },
-            "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}
-        },
+        {"titles": {"en": "International Shia Day"}, "start": {"type": "1D", "mon": 6, "d": 12}, "urls": {"en": "http://internationalshiaday.com"}},
+        {"titles": {"en": "Muslim Women’s Day"}, "start": {"type": "1D", "mon": 3, "d": 27}},
+        {"titles": {"en": "World Hijab Day"}, "start": {"type": "1D", "mon": 2, "d": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/World_Hijab_Day"}, "emoji": "🧕"},
+        {"titles": {"en": "No Hijab Day"}, "start": {"type": "1D", "mon": 2, "d": 1}, "urls": {"en": "https://exmuslims.org/support-nohijabday-on-february-1st/"}, "emoji": "👩"},
+        {"titles": {"en": "International Purple Hijab Day", "ar": "اليوم العالمي للحجاب البنفسجي", "bn": "আন্তর্জাতিক বেগুনি হিজাব দিবস", "uk": "Міжнародний день фіолетового хіджаба"}, "start": {"type": "1D", "mon": 2, "wkdRecurrence": 2, "wkd": [7]}, "urls": {"en": "https://en.wikipedia.org/wiki/International_Purple_Hijab_Day"}},
     ]
 }
