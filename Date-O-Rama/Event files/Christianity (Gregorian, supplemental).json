@@ -62,5 +62,6 @@
         {"titles": {"en": "National Green Juice Day"}, "start": {"type": "1D", "mon": 1, "d": 26}, "1st": {"type": "1D", "era": 1, "y": 2016}, "urls": {"en": "https://nationaldaycalendar.com/national-green-juice-day-january-26/"}, "emoji": "🧃"},
         {"titles": {"en": "New Year’s Resolutions Week"}, "start": {"type": "nD", "mon": 1, "d": 1}, "1st": {"type": "1D", "era": 1, "y": 2005}, "end": {"type": "1D", "mon": 1, "d": 7}, "urls": {"en": "https://nationaldaycalendar.com/new-years-resolutions-week-first-week-in-january/"}},
         {"titles": {"en": "National Crepe Day"}, "start": {"type": "1D", "mon": 2, "d": 2}, "1st": {"type": "1D", "era": 1, "y": 472}, "urls": {"en": "https://www.daysoftheyear.com/days/crepe-day/"}, "emoji": "🥞"},
+        {"titles": {"en": "World Marriage Day"}, "start": {"type": "1D", "mon": 2, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1983}, "urls": {"en": "https://www.daysoftheyear.com/days/marriage-day/"}, "emoji": "⚭"},
     ]
 }
