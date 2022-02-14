@@ -30,7 +30,7 @@ extension FrenchRepublicanDate {
             variant = .original
         } // switch calendarCode
         
-        let options = FrenchRepublicanDateOptions(romanYear: RomanYear, variant: variant)
+        let options = FrenchRepublicanDateOptions(romanYear: RomanYear, variant: variant, treatSansculottidesAsAMonth: true)
          self = FrenchRepublicanDate(date: now, options: options, timeZone: timeZone)
     } // init(now: Date, dateFormat: ASADateFormat)
 } // extension FrenchRepublicanDate

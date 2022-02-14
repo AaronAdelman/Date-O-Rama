@@ -59,7 +59,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     
     var genericOptions: FrenchRepublicanDateOptions {
         let variant: FrenchRepublicanDateOptions.Variant = self.calendarCode == .FrenchRepublicanRomme ? .romme : .original
-        return FrenchRepublicanDateOptions(romanYear: true, variant: variant)
+        return FrenchRepublicanDateOptions(romanYear: true, variant: variant, treatSansculottidesAsAMonth: true)
     }
     
     func startOfDay(for date: Date, locationData: ASALocation) -> Date {
