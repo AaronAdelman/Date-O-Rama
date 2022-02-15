@@ -56,6 +56,9 @@ struct ASAProcessedClock {
     var regionCode: String?
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
+    
+    var monthIsBlank: Bool
+    var blankWeekdaySymbol: String?
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool) {
         self.clock = clock
@@ -136,6 +139,16 @@ struct ASAProcessedClock {
         self.weekendDays = clock.weekendDays
         self.regionCode = clock.locationData.regionCode
         self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
+        
+        if self.clock.calendar is ASASupportsBlankMonths {
+            let cal = self.clock.calendar as! ASASupportsBlankMonths
+            self.monthIsBlank = cal.blankMonths.contains(month)
+            self.blankWeekdaySymbol = cal.blankWeekdaySymbol
+        } else {
+            self.monthIsBlank = false
+            self.blankWeekdaySymbol = nil
+        }
+ 
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedClock
 

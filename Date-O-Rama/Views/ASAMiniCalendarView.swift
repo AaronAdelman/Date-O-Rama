@@ -128,6 +128,8 @@ struct ASAMiniCalendarView:  View {
     var weekdaySymbols:  Array<String>
     var weekendDays: Array<Int>
     var numberFormat: ASAMiniCalendarNumberFormat
+    var monthIsBlank: Bool
+    var blankWeekdaySymbol: String?
     
     var weekdayOfDay1:  Int {
         get {
@@ -159,17 +161,28 @@ struct ASAMiniCalendarView:  View {
     
     private var gridLayout:  Array<GridItem> {
         get {
-            let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerWeek)
+            let daysPerRow = monthIsBlank ? daysInMonth : daysPerWeek
+            let temp:  Array<GridItem> = Array(repeating: GridItem(), count: daysPerRow)
             return temp
         } // get
     } // var gridLayout
     
     
     fileprivate func gridFirstDay() -> Int {
+        if monthIsBlank {
+            return 1
+        }
+        
         return -(weekdayOfDay1 - 2)
     }
     
     fileprivate func gridRange() -> ClosedRange<Int> {
+        if monthIsBlank {
+            assert(5 <= daysInMonth)
+            assert(daysInMonth <= 6)
+            return 1...daysInMonth
+        }
+        
         var gridFirstDay = gridFirstDay()
         
         let preexistingDays = daysInMonth - gridFirstDay + 1
@@ -192,16 +205,23 @@ struct ASAMiniCalendarView:  View {
         let gridFirstDay = gridFirstDay()
         
         LazyVGrid(columns: gridLayout, spacing: 0.0) {
-            ForEach(0..<processedWeekdaySymbols.count, id: \.self) {
-                index
-                in
-                ASAWeekdayCell(symbol: processedWeekdaySymbols[index].symbol, isWeekend:
-                                weekendDays.contains(index + 1))
-            }
+            let weekdayCellRange = monthIsBlank ? self.gridRange() : 0...(processedWeekdaySymbols.count - 1)
+                ForEach(weekdayCellRange, id: \.self) {
+                    index
+                    in
+                    let symbol: String = monthIsBlank ? self.blankWeekdaySymbol! : processedWeekdaySymbols[index].symbol
+                    let isWeekend: Bool = monthIsBlank ? true : weekendDays.contains(index + 1)
+                    ASAWeekdayCell(symbol: symbol, isWeekend:
+                                    isWeekend)
+                }
+        
             
-            let range = self.gridRange()
-            ForEach(range, id: \.self) {
+            ForEach(self.gridRange(), id: \.self) {
                 let shouldNoteAsWeekEnd: Bool = {
+                    if monthIsBlank {
+                        return true
+                    }
+                    
                     var temp = false
                     //                        debugPrint(#file, #function, $0, daysPerWeek, weekendDays)
                     if weekendDays.contains(($0 - gridFirstDay) % daysPerWeek + 1) {
@@ -232,6 +252,6 @@ struct ASAMiniCalendarView_Previews: PreviewProvider {
     static var previews: some View {
         ASAMiniCalendarView(daysPerWeek: 7, day: 3, weekday: 4, daysInMonth: 31, numberFormatter: NumberFormatter(), localeIdentifier: "en_US",
                             weekdaySymbols: Calendar(identifier: .gregorian).veryShortStandaloneWeekdaySymbols, weekendDays: [6, 7],
-                            numberFormat: .system)
+                            numberFormat: .system, monthIsBlank: false)
     }
 }

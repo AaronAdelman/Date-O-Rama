@@ -242,6 +242,8 @@
 		A5A3D5FF267226D000C1BE65 /* ASAEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
 		A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
+		A5A6FD4D27BBF1BB003595D5 /* ASASupportsBlankMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6FD4C27BBF1BB003595D5 /* ASASupportsBlankMonths.swift */; };
+		A5A6FD4E27BBF1BB003595D5 /* ASASupportsBlankMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6FD4C27BBF1BB003595D5 /* ASASupportsBlankMonths.swift */; };
 		A5A9666325A31DA200CF158F /* ASADatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666225A31DA200CF158F /* ASADatePicker.swift */; };
 		A5A9666A25A31E2A00CF158F /* ASALinkedEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */; };
 		A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
@@ -618,6 +620,7 @@
 		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
 		A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCategory.swift; sourceTree = "<group>"; };
+		A5A6FD4C27BBF1BB003595D5 /* ASASupportsBlankMonths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASupportsBlankMonths.swift; sourceTree = "<group>"; };
 		A5A9666225A31DA200CF158F /* ASADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePicker.swift; sourceTree = "<group>"; };
 		A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALinkedEventCell.swift; sourceTree = "<group>"; };
 		A5A9667B25A31EC900CF158F /* ASAEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCell.swift; sourceTree = "<group>"; };
@@ -1072,6 +1075,7 @@
 				A57F441E24BC5DD1005261EE /* ASACalendarComponent.swift */,
 				A5BDB7C8244DA0D70027704F /* ASACalendarFactory.swift */,
 				A57F441C24BC5908005261EE /* ASADateComponents.swift */,
+				A5A6FD4C27BBF1BB003595D5 /* ASASupportsBlankMonths.swift */,
 			);
 			path = "Calendar infrastructure";
 			sourceTree = "<group>";
@@ -1793,6 +1797,7 @@
 				A59D80692600C6FB00FD8BBF /* ASAEventCompatible.swift in Sources */,
 				A59322702578068400318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
 				A593229225782AB800318BC3 /* ASAMainClocksByPlaceView.swift in Sources */,
+				A5A6FD4E27BBF1BB003595D5 /* ASASupportsBlankMonths.swift in Sources */,
 				A59D80392600C57D00FD8BBF /* ASACalendarFactory.swift in Sources */,
 				A57CA31F2483ECF800378EA7 /* ASAClockDetailCell.swift in Sources */,
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
@@ -1891,6 +1896,7 @@
 				A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */,
 				A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */,
 				A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */,
+				A5A6FD4D27BBF1BB003595D5 /* ASASupportsBlankMonths.swift in Sources */,
 				A5490F982550339D00EFB13F /* WatchFace.swift in Sources */,
 				A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */,
 				A523A3EF25A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,

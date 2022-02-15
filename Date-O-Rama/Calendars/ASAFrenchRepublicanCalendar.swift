@@ -19,7 +19,8 @@ fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
 fileprivate let MONTHS_PER_YEAR = 13
 
 
-public class ASAFrenchRepublicanCalendar:  ASACalendar {
+public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths {
+        
     var calendarCode: ASACalendarCode
     
     init(calendarCode:  ASACalendarCode) {
@@ -359,10 +360,10 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
             switch smaller {
             case .day:
                 let month = FRCDate.components.month ?? -1
-                let day = FRCDate.components.day ?? -1
+//                let day = FRCDate.components.day ?? -1
                 if 1 <= month && month <= 12 {
                     return Range(1...DAYS_PER_MONTH)
-                } else if day == 13 {
+                } else if month == 13 {
                     return isSextilYear ? Range(1...DAYS_IN_SANSCULOTTIDES_IN_LEAP_YEAR) : Range(1...DAYS_IN_SANSCULOTTIDES)
                 } else {
                     return nil
@@ -405,4 +406,11 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar {
     func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
         return .system
     } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
+    
+    
+    // MARK: - ASASupportsBlankMonths
+    
+    var blankMonths: Array<Int> = [13]
+    
+    var blankWeekdaySymbol: String = "∅"
 } // class ASAFrenchRepublicanCalendar
