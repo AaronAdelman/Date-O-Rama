@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import FrenchRepublicanCalendarCore
 
 struct ASAProcessedClock {
     var clock:  ASAClock
@@ -59,6 +60,7 @@ struct ASAProcessedClock {
     
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
+    var timeFormat: ASATimeFormat
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool) {
         self.clock = clock
@@ -106,11 +108,18 @@ struct ASAProcessedClock {
             self.supportsMonths = false
         }
 
-        self.hour   = dateComponents.hour
-        self.minute = dateComponents.minute
-        self.second = dateComponents.second
-        self.fractionalHour = dateComponents.solarHours
-        self.dayHalf = dateComponents.dayHalf
+        if clock.timeFormat == .decimal {
+            let decimalTime = DecimalTime(base: now, timeZone: timeZone)
+            self.hour   = decimalTime.hour
+            self.minute = decimalTime.minute
+            self.second = decimalTime.second
+        } else {
+            self.hour   = dateComponents.hour
+            self.minute = dateComponents.minute
+            self.second = dateComponents.second
+            self.fractionalHour = dateComponents.solarHours
+            self.dayHalf = dateComponents.dayHalf
+        }
 
         self.transitionType = clock.calendar.transitionType
 
@@ -149,6 +158,7 @@ struct ASAProcessedClock {
             self.blankWeekdaySymbol = nil
         }
  
+        self.timeFormat = clock.timeFormat
     } // init(row:  ASARow, now:  Date)
 } // struct ASAProcessedClock
 

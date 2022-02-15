@@ -12,24 +12,12 @@ struct ASAMiniClockView:  View {
     var processedRow:  ASAProcessedClock
     var numberFormatter:  NumberFormatter
 
-//    func progress() -> Double {
-//        let secondsIntoDay:  Double = Double((processedRow.hour! * 60 + processedRow.minute!) * 60 + processedRow.second!)
-//        let progress: Double = secondsIntoDay / Date.SECONDS_PER_DAY
-//
-//        assert(progress >= 0.0)
-//        assert(progress <= 1.0)
-//
-//        return progress
-//    } // func progress() -> Double
-
     var body: some View {
         if processedRow.calendarType == .JulianDay {
-//             ASADayFractionView(progress: progress())
             let progress: Double = processedRow.fractionalHour ?? 0.0
             ASADayFractionView(progress: progress)
         } else {
             if processedRow.calendarCode.isSunsetTransitionCalendar {
-//                let fractionalHours: Double = Double(processedRow.hour!) + Double(processedRow.minute!) / 60.0
                 let fractionalHour: Double = processedRow.fractionalHour ?? 0.0
                 let dayHalf: ASADayHalf = processedRow.dayHalf ?? .night
                 let totalHours: Double = fractionalHour + (dayHalf == .night ? 0.0 : 12.0)
@@ -40,7 +28,10 @@ struct ASAMiniClockView:  View {
                 let hour: Int = processedRow.hour ?? 0
                 let minute: Int = processedRow.minute ?? 0
                 let second: Int = processedRow.second ?? 0
-                Watch(hour:  hour, minute:  minute, second:  second, isNight:  nightTime(hour:  hour, transitionType:  processedRow.transitionType), numberFormatter: numberFormatter)
+                let totalHours: Int = processedRow.timeFormat == .decimal ? 10 : 12
+                let minutesPerHour: Int = processedRow.timeFormat == .decimal ? 100 : 60
+                
+                Watch(hour:  hour, minute:  minute, second:  second, isNight:  nightTime(hour:  hour, transitionType:  processedRow.transitionType), totalHours: totalHours, minutesPerHour: minutesPerHour, numberFormatter: numberFormatter)
             }
         }
     } // var body
