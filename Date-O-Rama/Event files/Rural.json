@@ -371,5 +371,10 @@
         {"titles": {"fr": "Jour de l’opinion", "en": "Convictions Day", "he": "יום הדעה"}, "start": {"type": "1D", "mon": 13, "d": 4}, "urls": {"fr": "https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire", "en": "https://en.wikipedia.org/wiki/Sansculottides"}},
         {"titles": {"fr": "Jour des récompenses", "en": "Honors Day", "he": "יום ההצטיינות"}, "start": {"type": "1D", "mon": 13, "d": 5}, "emoji": "🎖", "urls": {"fr": "https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire", "en": "https://en.wikipedia.org/wiki/Sansculottides"}},
         {"titles": {"fr": "Jour de la révolution", "en": "Revolution Day", "he": "יום המהפכה"}, "start": {"type": "1D", "mon": 13, "d": 6}, "emoji": "䷰", "urls": {"fr": "https://fr.wikipedia.org/wiki/Jour_compl%C3%A9mentaire", "en": "https://en.wikipedia.org/wiki/Sansculottides"}},
+        {"titles": {"en": "Autumn", "he": "סתיו", "fr": "Automne"}, "start": {"type": "nM", "mon": 1}, "end": {"type": "nM", "mon": 3}, "emoji": "🍁"},
+        {"titles": {"en": "Winter", "he": "חורף", "fr": "Hiver"}, "start": {"type": "nM", "mon": 4}, "end": {"type": "nM", "mon": 6}, "emoji": "❄️"},
+        {"titles": {"en": "Spring", "he": "אביב", "fr": "Printemps"}, "start": {"type": "nM", "mon": 7}, "end": {"type": "nM", "mon": 9}, "emoji": "🌷"},
+        {"titles": {"en": "Summer", "he": "קיץ", "fr": "Été"}, "start": {"type": "nM", "mon": 10}, "end": {"type": "nM", "mon": 12}, "emoji": "🕶"},
+        {"titles": {"en": "Sansculottides", "he": "עיבור השנה", "fr": "Sansculottides"}, "start": {"type": "1M", "mon": 13}, "emoji": "🎉"},
     ]
 }
