@@ -272,3 +272,77 @@ let REGION_CODE_Syria                = "SY"
 let REGION_CODE_Uganda               = "UG"
 let REGION_CODE_United_Arab_Emirates = "AE"
 let REGION_CODE_Yemen                = "YE"
+
+
+// MARK:  -
+
+extension Character {
+    var isSyntaxCharacter: Bool {
+        switch self {
+        case "A"..."Z", "a"..."z":
+            return true
+            
+        default:
+            return false
+        }
+    }
+}
+
+extension String {
+    private enum ComponentizationMode {
+        case symbol
+        case literal
+    } // enum ComponentizationMode
+    
+    // TODO:  Modify to handle single quotes!
+    var dateFormatPatternComponents: Array<ASADateFormatPatternComponent> {
+        var buffer: String = ""
+        var lastCharacter: Character? = nil
+        var mode = ComponentizationMode.symbol
+        var components: Array<ASADateFormatPatternComponent> = []
+        
+        self.forEach {
+            character
+            in
+
+            if buffer.isEmpty {
+                buffer.append(character)
+                debugPrint(#file, #function, "Buffer is now ", buffer)
+                mode = character.isSyntaxCharacter ? .symbol : .literal
+//                debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
+            } else if mode == .symbol {
+                if character == lastCharacter {
+                    buffer.append(character)
+//                    debugPrint(#file, #function, "Buffer is now ", buffer)
+                } else {
+                    let newComponent = ASADateFormatPatternComponent(type: .symbol, string: buffer)
+                    components.append(newComponent)
+//                    debugPrint(#file, #function, "Appending symbol component ", buffer)
+                    buffer = "\(character)"
+                    mode = character.isSyntaxCharacter ? .symbol : .literal
+//                    debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
+                }
+            } else if mode == .literal {
+                if character.isSyntaxCharacter {
+                    let newComponent = ASADateFormatPatternComponent(type: .literal, string: buffer)
+                    components.append(newComponent)
+//                    debugPrint(#file, #function, "Appending literal component ", buffer)
+                    buffer = "\(character)"
+                    mode = .symbol
+//                    debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
+                } else {
+                    buffer.append(character)
+                    debugPrint(#file, #function, "Buffer is now ", buffer)
+                }
+            }
+            
+            lastCharacter = character
+        } // self.forEach
+        
+        let newComponent = ASADateFormatPatternComponent(type: mode == .literal ? .literal : .symbol, string: buffer)
+        components.append(newComponent)
+        //                    debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
+
+        return components
+    }
+}

@@ -52,7 +52,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths {
     var usesISOTime: Bool = true
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
-        let FRCDate = FrenchRepublicanDate(now: now, dateFormat: dateFormat, timeZone: locationData.timeZone, calendarCode: self.calendarCode)
+        let FRCDate = FrenchRepublicanDate(date: now, dateFormat: dateFormat, timeZone: locationData.timeZone, calendarCode: self.calendarCode)
         
         let (dateString, timeString) = dateStringTimeString(now: now, FRCDate: FRCDate, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
         return dateString + " " + timeString
@@ -152,7 +152,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths {
     } // func dateStringTimeStringDate(now: Date, FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String)
 
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
-        let FRCDate = FrenchRepublicanDate(now: now, dateFormat: dateFormat, timeZone: locationData.timeZone, calendarCode: self.calendarCode)
+        let FRCDate = FrenchRepublicanDate(date: now, dateFormat: dateFormat, timeZone: locationData.timeZone, calendarCode: self.calendarCode)
 
         let components = FRCDate.dateComponents(locationData: locationData, calendar: self)
         
