@@ -92,4 +92,9 @@ extension Calendar {
             return (regionCode ?? REGION_CODE_Earth).backupWeekendDays
         }
     } // func weekendDays(for regionCode: String?) -> Array<Int>
+    
+    mutating func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.veryShortStandaloneWeekdaySymbols
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 } // extension Calendar

@@ -611,8 +611,7 @@
     }
 
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
-        self.ApplesCalendar.locale = Locale.desiredLocale(localeIdentifier)
-        return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols
+        return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 
     var usesISOTime:  Bool = false
