@@ -392,13 +392,43 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     
     var startAndEndDateStringsCache = NSCache<NSString, ASAStartAndEndDateStrings>()
     
-    // MARK:  - Workdays and weekends
-    var weekendDays: Array<Int> {
-        return self.calendar.weekendDays(for: self.locationData.regionCode)
-    }
+    
+    // MARK:  - Weeks
+    
+    func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>? {
+        if self.calendar is ASASupportsWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASASupportsWeeks
+            let result = calendarSupportingWeeks.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+            return result
+        }
+        
+        return nil
+    } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>?
+    
+    var weekendDays: Array<Int>? {
+        if self.calendar is ASASupportsWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASASupportsWeeks
+            return calendarSupportingWeeks.weekendDays(for: self.locationData.regionCode)
+
+        } else {
+            return nil
+        }
+    } // var weekendDays
+    
 //    var workDays: Array<Int> {
 //        return self.calendar.workDays
 //    }
+    
+    var daysPerWeek: Int? {
+        if self.calendar is ASASupportsWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASASupportsWeeks
+            
+            return calendarSupportingWeeks.daysPerWeek
+        }
+        
+        return nil
+    } // var daysPerWeek
+    
 } // class ASAClock
 
 
@@ -477,9 +507,6 @@ extension ASAClock {
         return result
     } // func watchShortenedTimeString(now:  Date) -> String
 
-    var daysPerWeek:  Int? {
-        return self.calendar.daysPerWeek
-    }
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat {
         return self.calendar.miniCalendarNumberFormat(locale: Locale.desiredLocale(self.localeIdentifier))

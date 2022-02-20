@@ -19,7 +19,7 @@ fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
 fileprivate let MONTHS_PER_YEAR = 13
 
 
-public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths {
+public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths, ASASupportsWeeks {
         
     var calendarCode: ASACalendarCode
     
@@ -380,7 +380,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths {
         } // switch larger
     }
     
-    var daysPerWeek: Int? = DAYS_PER_WEEK
+    var daysPerWeek: Int = DAYS_PER_WEEK
     
     
     // MARK:  - Time zone-dependent modified Julian day

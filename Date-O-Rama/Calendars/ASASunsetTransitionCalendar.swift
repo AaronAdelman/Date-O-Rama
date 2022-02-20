@@ -13,7 +13,7 @@
 
  // MARK: -
 
- public class ASASunsetTransitionCalendar:  ASACalendar {
+ public class ASASunsetTransitionCalendar:  ASACalendar, ASASupportsWeeks {
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
@@ -616,7 +616,7 @@
 
     var usesISOTime:  Bool = false
 
-    var daysPerWeek:  Int? = 7
+    var daysPerWeek: Int = 7
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
         self.ApplesCalendar.weekendDays(for: regionCode)

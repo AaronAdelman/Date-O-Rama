@@ -340,8 +340,6 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 
     var usesISOTime:  Bool = false
-
-    var daysPerWeek:  Int? = nil
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
         return []

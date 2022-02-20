@@ -175,9 +175,7 @@ struct ASAClockCellBody:  View {
                     {
                         Spacer()
                         
-                        ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 1, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier,
-                                            weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols, weekendDays: processedRow.weekendDays,
-                                            numberFormat: processedRow.miniCalendarNumberFormat, monthIsBlank: processedRow.monthIsBlank, blankWeekdaySymbol: processedRow.blankWeekdaySymbol)
+                        ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 7, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedRow.weekendDays ?? [], numberFormat: processedRow.miniCalendarNumberFormat, monthIsBlank: processedRow.monthIsBlank, blankWeekdaySymbol: processedRow.blankWeekdaySymbol)
                     }
                     
                     if shouldShowMiniClock() {

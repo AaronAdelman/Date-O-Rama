@@ -25,7 +25,7 @@ struct ASAProcessedClock {
     var supportsLocations:  Bool
     var supportsTimes:  Bool
 
-    var daysPerWeek:  Int?
+    var daysPerWeek: Int?
     var day:  Int
     var weekday:  Int
     var daysInMonth:  Int
@@ -43,7 +43,7 @@ struct ASAProcessedClock {
     var localeIdentifier:  String
     var calendarCode:  ASACalendarCode
 
-    var veryShortStandaloneWeekdaySymbols:  Array<String>
+    var veryShortStandaloneWeekdaySymbols:  Array<String>?
 
     var month:  Int
 
@@ -53,7 +53,7 @@ struct ASAProcessedClock {
     var startOfDay:  Date
     var startOfNextDay:  Date
     
-    var weekendDays: Array<Int>
+    var weekendDays: Array<Int>?
     var regionCode: String?
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat
@@ -96,8 +96,13 @@ struct ASAProcessedClock {
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
         self.supportsTimeZones = clock.calendar.supportsTimeZones
-
+        
         self.daysPerWeek = clock.daysPerWeek
+        
+        self.veryShortStandaloneWeekdaySymbols = clock.veryShortStandaloneWeekdaySymbols(localeIdentifier: clock.localeIdentifier)
+        
+        self.weekendDays = clock.weekendDays
+        
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
         if clock.calendar.supports(calendarComponent: .month) {
@@ -133,8 +138,6 @@ struct ASAProcessedClock {
         self.calendarType = clock.calendar.calendarCode.type
         self.supportsTimes = clock.calendar.supportsTimes
 
-        self.veryShortStandaloneWeekdaySymbols = clock.calendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: clock.localeIdentifier)
-
         self.month = dateComponents.month ?? 0
 
         let startOfDay: Date = clock.startOfDay(date: now)
@@ -145,7 +148,6 @@ struct ASAProcessedClock {
 
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
-        self.weekendDays = clock.weekendDays
         self.regionCode = clock.locationData.regionCode
         self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
         

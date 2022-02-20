@@ -63,9 +63,7 @@ protocol ASACalendar {
     func maximumRange(of component: ASACalendarComponent) -> Range<Int>? // The maximum range limits of the values that a given component can take on.
     func minimumRange(of component: ASACalendarComponent) -> Range<Int>? // Returns the minimum range limits of the values that a given component can take on.
     func ordinality(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Int? // Returns, for a given absolute time, the ordinal number of a smaller calendar component (such as a day) within a specified larger calendar component (such as a week).
-    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.
-    var daysPerWeek:  Int? { get }
-    
+    func range(of smaller: ASACalendarComponent, in larger: ASACalendarComponent, for date: Date) -> Range<Int>? // Returns the range of absolute time values that a smaller calendar component (such as a day) can take on in a larger calendar component (such as a month) that includes a specified absolute time.    
     
     // MARK:  -
     
@@ -73,14 +71,6 @@ protocol ASACalendar {
     /// - Returns: A time zone-dependent modified Julian day as an integer
     func localModifiedJulianDay(date: Date, locationData:  ASALocation) -> Int
 
-    
-    // MARK:  - Symbols
-    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
-    
-    
-    // MARK:  - Workdays and weekends
-    func weekendDays(for regionCode: String?) -> Array<Int>
-    
     
     // MARK:  - Mini-calendars
     func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat

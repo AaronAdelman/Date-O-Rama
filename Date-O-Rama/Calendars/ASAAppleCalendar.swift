@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-class ASAAppleCalendar:  ASACalendar {
+class ASAAppleCalendar:  ASACalendar, ASASupportsWeeks {
     var defaultDateFormat:  ASADateFormat = .full
     
     var calendarCode:  ASACalendarCode
@@ -344,7 +344,7 @@ class ASAAppleCalendar:  ASACalendar {
 
     var usesISOTime:  Bool = true
 
-    var daysPerWeek:  Int? = 7
+    var daysPerWeek: Int = 7
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
         self.ApplesCalendar.weekendDays(for: regionCode)
