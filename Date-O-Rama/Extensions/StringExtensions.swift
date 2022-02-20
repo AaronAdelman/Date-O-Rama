@@ -294,12 +294,12 @@ extension String {
         case literal
     } // enum ComponentizationMode
     
-    // TODO:  Modify to handle single quotes!
     var dateFormatPatternComponents: Array<ASADateFormatPatternComponent> {
         var buffer: String = ""
         var lastCharacter: Character? = nil
         var mode = ComponentizationMode.symbol
         var components: Array<ASADateFormatPatternComponent> = []
+        var quoteMode = false
         
         self.forEach {
             character
@@ -307,9 +307,14 @@ extension String {
 
             if buffer.isEmpty {
                 buffer.append(character)
-                debugPrint(#file, #function, "Buffer is now ", buffer)
+//                debugPrint(#file, #function, "Buffer is now ", buffer)
                 mode = character.isSyntaxCharacter ? .symbol : .literal
 //                debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
+            } else if character == "'" {
+                quoteMode = !quoteMode
+                if lastCharacter == "'" {
+                    buffer.append(character)
+                }
             } else if mode == .symbol {
                 if character == lastCharacter {
                     buffer.append(character)
@@ -323,7 +328,7 @@ extension String {
 //                    debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
                 }
             } else if mode == .literal {
-                if character.isSyntaxCharacter {
+                if character.isSyntaxCharacter && !quoteMode {
                     let newComponent = ASADateFormatPatternComponent(type: .literal, string: buffer)
                     components.append(newComponent)
 //                    debugPrint(#file, #function, "Appending literal component ", buffer)

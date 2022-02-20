@@ -953,9 +953,60 @@ class Date_O_RamaTests: XCTestCase {
         debugPrint(#file, #function, reverseDate0, reverseDate1, reverseDate2, reverseDate3, reverseDate4, reverseDate5, reverseDate6, reverseDate7, reverseDate8, reverseDate9, reverseDate10, reverseDate11, reverseDate12, reverseDate13, reverseDate14, reverseDate15, reverseDate16, reverseDate17, reverseDate18, reverseDate19, reverseDate20, reverseDate21, reverseDate22, reverseDate23)
     } // func testLocalModifiedJulianDay() throws
     
-    
+    // Based on the examples in https://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
     func testDateFormatPatterns() throws {
+        let pattern1 = "yyyy.MM.dd G 'at' HH:mm:ss zzz"
+        let pattern1Components = pattern1.dateFormatPatternComponents
+        XCTAssert(pattern1Components.count == 15)
+        XCTAssert(pattern1Components[0].type == .symbol)
+        XCTAssert(pattern1Components[0].string == "yyyy")
+        XCTAssert(pattern1Components[1].type == .literal)
+        XCTAssert(pattern1Components[1].string == ".")
+        XCTAssert(pattern1Components[2].type == .symbol)
+        XCTAssert(pattern1Components[2].string == "MM")
+        XCTAssert(pattern1Components[3].type == .literal)
+        XCTAssert(pattern1Components[3].string == ".")
+        XCTAssert(pattern1Components[4].type == .symbol)
+        XCTAssert(pattern1Components[4].string == "dd")
+        XCTAssert(pattern1Components[5].type == .literal)
+        XCTAssert(pattern1Components[5].string == " ")
+        XCTAssert(pattern1Components[6].type == .symbol)
+        XCTAssert(pattern1Components[6].string == "G")
+        XCTAssert(pattern1Components[7].type == .literal)
+        XCTAssert(pattern1Components[7].string == " at ")
+        XCTAssert(pattern1Components[8].type == .symbol)
+        XCTAssert(pattern1Components[8].string == "HH")
+        XCTAssert(pattern1Components[9].type == .literal)
+        XCTAssert(pattern1Components[9].string == ":")
+        XCTAssert(pattern1Components[10].type == .symbol)
+        XCTAssert(pattern1Components[10].string == "mm")
+        XCTAssert(pattern1Components[11].type == .literal)
+        XCTAssert(pattern1Components[11].string == ":")
+        XCTAssert(pattern1Components[12].type == .symbol)
+        XCTAssert(pattern1Components[12].string == "ss")
+        XCTAssert(pattern1Components[13].type == .literal)
+        XCTAssert(pattern1Components[13].string == " ")
+        XCTAssert(pattern1Components[14].type == .symbol)
+        XCTAssert(pattern1Components[14].string == "zzz")
         
+        let pattern2 = "EEE, MMM d, ''yy"
+        let pattern2Components = pattern2.dateFormatPatternComponents
+        XCTAssert(pattern2Components.count == 7)
+        XCTAssert(pattern2Components[0].type == .symbol)
+        XCTAssert(pattern2Components[0].string == "EEE")
+        XCTAssert(pattern2Components[1].type == .literal)
+        XCTAssert(pattern2Components[1].string == ", ")
+        XCTAssert(pattern2Components[2].type == .symbol)
+        XCTAssert(pattern2Components[2].string == "MMM")
+        XCTAssert(pattern2Components[3].type == .literal)
+        XCTAssert(pattern2Components[3].string == " ")
+        XCTAssert(pattern2Components[4].type == .symbol)
+        XCTAssert(pattern2Components[4].string == "d")
+        XCTAssert(pattern2Components[5].type == .literal)
+        XCTAssert(pattern2Components[5].string == ", '")
+        XCTAssert(pattern2Components[6].type == .symbol)
+        XCTAssert(pattern2Components[6].string == "yy")
+
         let pattern3 = "h:mm a"
         let pattern3Components = pattern3.dateFormatPatternComponents
 //        debugPrint(#file, #function, pattern3, pattern3Components)
@@ -970,6 +1021,20 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(pattern3Components[3].string == " ")
         XCTAssert(pattern3Components[4].type == .symbol)
         XCTAssert(pattern3Components[4].string == "a")
+        
+        let pattern4 = "hh 'o''clock' a, zzzz"
+        let pattern4Components = pattern4.dateFormatPatternComponents
+        XCTAssert(pattern4Components.count == 5)
+        XCTAssert(pattern4Components[0].type == .symbol)
+        XCTAssert(pattern4Components[0].string == "hh")
+        XCTAssert(pattern4Components[1].type == .literal)
+        XCTAssert(pattern4Components[1].string == " o'clock ")
+        XCTAssert(pattern4Components[2].type == .symbol)
+        XCTAssert(pattern4Components[2].string == "a")
+        XCTAssert(pattern4Components[3].type == .literal)
+        XCTAssert(pattern4Components[3].string == ", ")
+        XCTAssert(pattern4Components[4].type == .symbol)
+        XCTAssert(pattern4Components[4].string == "zzzz")
         
         let pattern5 = "K:mm a, z"
         let pattern5Components = pattern5.dateFormatPatternComponents
