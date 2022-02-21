@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-class ASAAppleCalendar:  ASACalendar, ASASupportsWeeks {
+class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks {
     var defaultDateFormat:  ASADateFormat = .full
     
     var calendarCode:  ASACalendarCode
@@ -338,6 +338,26 @@ class ASAAppleCalendar:  ASACalendar, ASASupportsWeeks {
 
     public var transitionType:  ASATransitionType = .midnight
 
+    func weekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>

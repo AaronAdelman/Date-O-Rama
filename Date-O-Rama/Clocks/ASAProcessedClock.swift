@@ -151,8 +151,8 @@ struct ASAProcessedClock {
         self.regionCode = clock.locationData.regionCode
         self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
         
-        if self.clock.calendar is ASASupportsBlankMonths {
-            let cal = self.clock.calendar as! ASASupportsBlankMonths
+        if self.clock.calendar is ASACalendarSupportingBlankMonths {
+            let cal = self.clock.calendar as! ASACalendarSupportingBlankMonths
             self.monthIsBlank = cal.blankMonths.contains(month)
             self.blankWeekdaySymbol = cal.blankWeekdaySymbol
         } else {

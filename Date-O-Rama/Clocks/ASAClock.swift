@@ -396,8 +396,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     // MARK:  - Weeks
     
     func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>? {
-        if self.calendar is ASASupportsWeeks {
-            let calendarSupportingWeeks = self.calendar as! ASASupportsWeeks
+        if self.calendar is ASACalendarSupportingWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
             let result = calendarSupportingWeeks.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
             return result
         }
@@ -406,8 +406,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>?
     
     var weekendDays: Array<Int>? {
-        if self.calendar is ASASupportsWeeks {
-            let calendarSupportingWeeks = self.calendar as! ASASupportsWeeks
+        if self.calendar is ASACalendarSupportingWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
             return calendarSupportingWeeks.weekendDays(for: self.locationData.regionCode)
 
         } else {
@@ -420,8 +420,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 //    }
     
     var daysPerWeek: Int? {
-        if self.calendar is ASASupportsWeeks {
-            let calendarSupportingWeeks = self.calendar as! ASASupportsWeeks
+        if self.calendar is ASACalendarSupportingWeeks {
+            let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
             
             return calendarSupportingWeeks.daysPerWeek
         }

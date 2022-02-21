@@ -19,8 +19,7 @@ fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
 fileprivate let MONTHS_PER_YEAR = 13
 
 
-public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths, ASASupportsWeeks {
-        
+public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingBlankMonths, ASACalendarSupportingWeeks {
     var calendarCode: ASACalendarCode
     
     init(calendarCode:  ASACalendarCode) {
@@ -395,6 +394,26 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths, 
     
     // MARK:  -
     
+    func weekdaySymbols(localeIdentifier: String) -> Array<String> {
+       return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
+    }
+    
+    func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.weekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+        return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+    }
+    
     func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
         return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
@@ -408,7 +427,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASASupportsBlankMonths, 
     } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
     
     
-    // MARK: - ASASupportsBlankMonths
+    // MARK: - ASACalendarSupportingBlankMonths
     
     var blankMonths: Array<Int> = [13]
     

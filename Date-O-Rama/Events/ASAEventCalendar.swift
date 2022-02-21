@@ -923,8 +923,8 @@ class ASAEventCalendar {
         if dateSpecification.weekdayRecurrence != nil && dateSpecification.weekdays != nil {
             let daysInMonth = calendar.maximumValue(of: .day, in: .month, for: date) ?? 1
             
-            if calendar is ASASupportsWeeks {
-                let calendarSupportingWeeks = calendar as! ASASupportsWeeks
+            if calendar is ASACalendarSupportingWeeks {
+                let calendarSupportingWeeks = calendar as! ASACalendarSupportingWeeks
                 let daysPerWeek = calendarSupportingWeeks.daysPerWeek
                 
                 if !(components.day!.matches(recurrence: dateSpecification.weekdayRecurrence!, lengthOfWeek: daysPerWeek, lengthOfMonth: daysInMonth)) {

@@ -13,7 +13,7 @@
 
  // MARK: -
 
- public class ASASunsetTransitionCalendar:  ASACalendar, ASASupportsWeeks {
+ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks {
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
@@ -610,7 +610,27 @@
         }
     }
 
-    func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.weekdaySymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
         return self.ApplesCalendar.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
 

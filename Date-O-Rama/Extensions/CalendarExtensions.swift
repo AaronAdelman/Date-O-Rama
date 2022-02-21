@@ -93,6 +93,31 @@ extension Calendar {
         }
     } // func weekendDays(for regionCode: String?) -> Array<Int>
     
+    mutating func weekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.weekdaySymbols
+    } // func weekdaySymbols(localeIdentifier:  String) -> Array<String>
+
+    mutating func shortWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.shortWeekdaySymbols
+    } // func shortWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func veryShortWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.veryShortWeekdaySymbols
+    } // func veryShortWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func standaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.standaloneWeekdaySymbols
+    } // func standaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func shortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.shortStandaloneWeekdaySymbols
+    } // func shortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
     mutating func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String> {
         self.locale = Locale.desiredLocale(localeIdentifier)
         return self.veryShortStandaloneWeekdaySymbols

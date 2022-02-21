@@ -1,5 +1,5 @@
 //
-//  ASASupportsBlankMonths.swift
+//  ASACalendarSupportingBlankMonths.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 15/02/2022.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ASASupportsBlankMonths: ASACalendar {
+protocol ASACalendarSupportingBlankMonths: ASACalendar {
     var blankMonths: Array<Int> { get }
     var blankWeekdaySymbol: String { get }
 }
