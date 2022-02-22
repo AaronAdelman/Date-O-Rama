@@ -152,5 +152,25 @@ extension Calendar {
         self.locale = Locale.desiredLocale(localeIdentifier)
         return self.veryShortStandaloneMonthSymbols
     } // func veryShortStandaloneMonthSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func quarterSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.quarterSymbols
+    } // func quarterSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func shortQuarterSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.shortQuarterSymbols
+    } // func shortQuarterSymbols(localeIdentifier:  String) -> Array<String>
+        
+    mutating func standaloneQuarterSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.standaloneQuarterSymbols
+    } // func standaloneQuarterSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func shortStandaloneQuarterSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.shortStandaloneQuarterSymbols
+    } // func shortStandaloneQuarterSymbols(localeIdentifier:  String) -> Array<String>
 
 } // extension Calendar

@@ -13,7 +13,7 @@
 
  // MARK: -
 
- public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths {
+ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingQuarters {
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
@@ -670,7 +670,26 @@
      }
   
      
-     // MARK: --
+     // MARK:  - ASACalendarSupportingQuarters
+     
+     func quarterSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+     }
+  
+     
+     // MARK: -
     
     func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
         if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {

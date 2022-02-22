@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths {
+class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingQuarters {
     var defaultDateFormat:  ASADateFormat = .full
     
     var calendarCode:  ASACalendarCode
@@ -396,6 +396,25 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     
     func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
         return self.ApplesCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    
+    // MARK:  - ASACalendarSupportingQuarters
+    
+    func quarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.ApplesCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
     }
  
     

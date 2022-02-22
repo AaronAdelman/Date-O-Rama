@@ -454,6 +454,24 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     
+    // MARK:  - ASACalendarSupportingQuarters
+    
+    func quarterSymbols(localeIdentifier: String) -> Array<String> {
+        return ["Automne", "Hiver", "Printemps", "Été", "Sansculottides"]
+    }
+    
+    func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return ["Q1", "Q2", "Q3", "Q4", "Q5"]
+    }
+    
+    func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.quarterSymbols(localeIdentifier: localeIdentifier)    }
+    
+    func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+    }
+ 
+    
     // MARK:  - ASACalendarSupportingBlankMonths
     
     var blankMonths: Array<Int> = [13]
