@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol ASACalendarSupportingBlankMonths: ASACalendar {
+protocol ASACalendarSupportingBlankMonths: ASACalendarSupportingMonths {
     var blankMonths: Array<Int> { get }
     var blankWeekdaySymbol: String { get }
-}
+} // protocol ASACalendarSupportingBlankMonths
 

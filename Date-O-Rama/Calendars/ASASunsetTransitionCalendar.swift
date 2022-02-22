@@ -13,7 +13,7 @@
 
  // MARK: -
 
- public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks {
+ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths {
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
@@ -641,6 +641,36 @@
     func weekendDays(for regionCode: String?) -> Array<Int> {
         self.ApplesCalendar.weekendDays(for: regionCode)
     } // func weekendDays(for regionCode: String?) -> Array<Int>
+     
+     
+     // MARK:  - ASACalendarSupportingMonths
+     
+     func monthSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.monthSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.shortMonthSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+     }
+  
+     
+     // MARK: --
     
     func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
         if self.calendarCode.isHebrewCalendar && locale.languageCode == "he" {

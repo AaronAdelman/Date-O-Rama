@@ -19,7 +19,7 @@ fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
 fileprivate let MONTHS_PER_YEAR = 13
 
 
-public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingBlankMonths, ASACalendarSupportingWeeks {
+public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingBlankMonths {
     var calendarCode: ASACalendarCode
     
     init(calendarCode:  ASACalendarCode) {
@@ -427,7 +427,34 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingBla
     } // func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat
     
     
-    // MARK: - ASACalendarSupportingBlankMonths
+    // MARK:  - ASACalendarSupportingMonths
+    
+    func monthSymbols(localeIdentifier: String) -> Array<String> {
+        return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
+    }
+    
+    func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
+        return ["Vend.r", "Brum.r", "Frim.r", "Niv.ô", "Pluv.ô", "Vent.ô", "Germ.l", "Flo.l", "Prai.l", "Mes.or", "Ther.or", "Fru.or", "Ss.cu"]
+    }
+    
+    func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
+        return ["V", "B", "F", "N", "P", "V", "G", "F", "P", "M", "T", "F", "S"]
+    }
+    
+    func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
+        return self.monthSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
+        return self.shortMonthSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func veryShortStandaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
+        return self.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    
+    // MARK:  - ASACalendarSupportingBlankMonths
     
     var blankMonths: Array<Int> = [13]
     

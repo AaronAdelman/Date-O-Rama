@@ -122,4 +122,35 @@ extension Calendar {
         self.locale = Locale.desiredLocale(localeIdentifier)
         return self.veryShortStandaloneWeekdaySymbols
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func monthSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.monthSymbols
+    } // func monthSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func shortMonthSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.shortMonthSymbols
+    } // func shortMonthSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func veryShortMonthSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.veryShortMonthSymbols
+    } // func veryShortMonthSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func standaloneMonthSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.standaloneMonthSymbols
+    } // func standaloneMonthSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func shortStandaloneMonthSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.shortStandaloneMonthSymbols
+    } // func shortStandaloneMonthSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func veryShortStandaloneMonthSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.veryShortStandaloneMonthSymbols
+    } // func veryShortStandaloneMonthSymbols(localeIdentifier:  String) -> Array<String>
+
 } // extension Calendar
