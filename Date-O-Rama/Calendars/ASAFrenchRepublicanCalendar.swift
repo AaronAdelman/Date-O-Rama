@@ -19,7 +19,7 @@ fileprivate let DAYS_IN_YEAR_IN_LEAP_YEAR           = 366
 fileprivate let MONTHS_PER_YEAR = 13
 
 
-public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingBlankMonths {
+public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingBlankMonths, ASACalendarSupportingEras {
     var calendarCode: ASACalendarCode
     
     init(calendarCode:  ASACalendarCode) {
@@ -470,6 +470,18 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
         return self.shortQuarterSymbols(localeIdentifier: localeIdentifier)
     }
+    
+    
+    // MARK:  - ASACalendarSupportingEras
+    
+    func eraSymbols(localeIdentifier: String) -> Array<String> {
+        return [""]
+    }
+    
+    func longEraSymbols(localeIdentifier: String) -> Array<String> {
+        return [""]
+    }
+
  
     
     // MARK:  - ASACalendarSupportingBlankMonths

@@ -173,4 +173,13 @@ extension Calendar {
         return self.shortStandaloneQuarterSymbols
     } // func shortStandaloneQuarterSymbols(localeIdentifier:  String) -> Array<String>
 
+    mutating func eraSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.eraSymbols
+    } // func eraSymbols(localeIdentifier:  String) -> Array<String>
+    
+    mutating func longEraSymbols(localeIdentifier:  String) -> Array<String> {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+        return self.longEraSymbols
+    } // func longEraSymbols(localeIdentifier:  String) -> Array<String>
 } // extension Calendar

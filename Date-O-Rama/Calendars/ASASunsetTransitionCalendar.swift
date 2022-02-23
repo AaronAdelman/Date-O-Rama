@@ -13,7 +13,7 @@
 
  // MARK: -
 
- public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingQuarters {
+ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSupportingMonths, ASACalendarSupportingQuarters, ASACalendarSupportingEras {
     var calendarCode: ASACalendarCode
 
     #if os(watchOS)
@@ -686,6 +686,17 @@
      
      func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
          return self.ApplesCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     
+     // MARK:  - ASACalendarSupportingEras
+     
+     func eraSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.eraSymbols(localeIdentifier: localeIdentifier)
+     }
+     
+     func longEraSymbols(localeIdentifier: String) -> Array<String> {
+         return self.ApplesCalendar.longEraSymbols(localeIdentifier: localeIdentifier)
      }
   
      
