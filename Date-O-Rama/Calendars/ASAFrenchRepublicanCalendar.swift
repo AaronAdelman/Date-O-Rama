@@ -614,15 +614,33 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     // MARK:  - ASACalendarSupportingWeeks
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
-       return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["יום ראשון", "יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי", "יום שביעי", "יום שמיני", "יום תשעי", "יום עשירי"]
+            
+        default:
+            return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
+        } // switch localeIdentifier.localeLanguageCode
     }
     
     func shortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["יום א׳", "יום ב׳", "יום ג׳", "יום ד׳", "יום ה׳", "יום ו׳", "יום ז׳", "יום ח׳", "יום ט׳", "יום י׳"]
+            
+        default:
+            return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+        } // switch localeIdentifier.localeLanguageCode
     }
     
     func veryShortWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["א׳", "ב׳", "ג׳", "ד׳", "ה׳", "ו׳", "ז׳", "ח׳", "ט׳", "י׳"]
+            
+        default:
+            return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+        } // switch localeIdentifier.localeLanguageCode
     }
     
     func standaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
@@ -630,11 +648,11 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
     func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+        return self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>
     
     func weekendDays(for regionCode: String?) -> Array<Int> {
@@ -652,15 +670,33 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     // MARK:  - ASACalendarSupportingMonths
     
     func monthSymbols(localeIdentifier: String) -> Array<String> {
-        return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["ונדמייר", "בּרויּמֶר", "פרִימֶר", "ניבוז", "פּלויּביוז", "ונטוז", "ז׳רמינאל", "פלוראל", "פּרריאל", "מסידור", "תרמידור", "פרוקטידור", "עיבור השנה"]
+
+        default:
+            return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
+        } // case localeIdentifier.localeLanguageCode
     }
     
     func shortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return ["Vend.r", "Brum.r", "Frim.r", "Niv.ô", "Pluv.ô", "Vent.ô", "Germ.l", "Flo.l", "Prai.l", "Mes.or", "Ther.or", "Fru.or", "Ss.cu"]
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["ונד׳", "בּרו׳", "פרִי׳", "ניב׳", "פּלו׳", "ונט׳", "ז׳רמ׳", "פלו׳", "פּרר׳", "מסי׳", "תרמ׳", "פרו׳", "עה״ש"]
+
+        default:
+            return ["Vend.r", "Brum.r", "Frim.r", "Niv.ô", "Pluv.ô", "Vent.ô", "Germ.l", "Flo.l", "Prai.l", "Mes.or", "Ther.or", "Fru.or", "Ss.cu"]
+        } // case localeIdentifier.localeLanguageCode
     }
     
     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        return ["V", "B", "F", "N", "P", "V", "G", "F", "P", "M", "T", "F", "S"]
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["ונד׳", "בּרו׳", "פרִי׳", "ניב׳", "פּלו׳", "ונט׳", "ז׳רמ׳", "פלו׳", "פּרר׳", "מסי׳", "תרמ׳", "פרו׳", "עה״ש"]
+
+        default:
+            return ["V", "B", "F", "N", "P", "V", "G", "F", "P", "M", "T", "F", "S"]
+        } // case localeIdentifier.localeLanguageCode
     }
     
     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
@@ -679,7 +715,16 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     // MARK:  - ASACalendarSupportingQuarters
     
     func quarterSymbols(localeIdentifier: String) -> Array<String> {
+        switch localeIdentifier.localeLanguageCode {
+        case "he":
+            return ["סתיו", "חורף", "אביב", "קיץ", "עיבור השנה"]
+            
+        case "en":
+            return ["Autumn", "Winter", "Spring", "Summer", "Sansculottides"]
+        
+        default:
         return ["Automne", "Hiver", "Printemps", "Été", "Sansculottides"]
+        } // switch localeIdentifier.localeLanguageCode
     }
     
     func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
