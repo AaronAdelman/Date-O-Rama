@@ -1084,6 +1084,9 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(pattern6Components[12].type == .symbol)
         XCTAssert(pattern6Components[12].string == "aaa")
 
-
+        let clock = ASAClock()
+        clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
+        clock.localeIdentifier = "en_US"
+        
     } // func testDateFormatPatterns() throws
 } // class Date_O_RamaTests

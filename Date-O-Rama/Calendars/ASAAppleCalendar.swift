@@ -100,6 +100,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
             
         case .shortYearAndMonthOnly:
             self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
+            
         case .longWithoutYear:
             self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
             

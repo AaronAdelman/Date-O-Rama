@@ -231,94 +231,94 @@ extension Int {
         } // get
     } // var HebrewNumeral
 
-//    var RomanNumeral:  String {
-//        get {
-//            if self < 1 {
-//                return "\(self)"
-//            }
-//
-//            var result = ""
-//            var temp = self
-//
-//            let m = 1000
-//            while temp >= m {
-//                result += "M"
-//                temp -= m
-//            }
-//
-//            let cm = 900
-//            if temp >= cm {
-//                result += "CM"
-//                temp -= cm
-//            }
-//
-//            let d = 500
-//            if temp >= d {
-//                result += "D"
-//                temp -= d
-//            }
-//
-//            let cd = 400
-//            if temp >= cd {
-//                result += "CD"
-//                temp -= cd
-//            }
-//
-//            let c = 100
-//            while temp >= c {
-//                result += "C"
-//                temp -= c
-//            }
-//
-//            let xc = 90
-//            if temp >= xc {
-//                result += "XC"
-//                temp -= xc
-//            }
-//
-//            let l = 50
-//            if temp >= l {
-//                result += "L"
-//                temp -= l
-//            }
-//
-//            let xl = 40
-//            if temp >= xl {
-//                result += "XL"
-//                temp -= xl
-//            }
-//
-//            let x = 10
-//            while temp >= x {
-//                result += "X"
-//                temp -= x
-//            }
-//
-//            let ix = 9
-//            if temp >= ix {
-//                result += "IX"
-//                temp -= ix
-//            }
-//
-//            let v = 5
-//            if temp >= v {
-//                result += "V"
-//                temp -= v
-//            }
-//
-//            let iv = 4
-//            if temp >= iv {
-//                result += "IV"
-//                temp -= iv
-//            }
-//
-//            let i = 1
-//            while temp >= i {
-//                result += "I"
-//                temp -= i
-//            }
-//
-//            return result
-//        } // get
-//    }
+    var RomanNumeral:  String {
+        get {
+            if self < 1 {
+                return "\(self)"
+            }
+
+            var result = ""
+            var temp = self
+
+            let m = 1000
+            while temp >= m {
+                result += "M"
+                temp -= m
+            }
+
+            let cm = 900
+            if temp >= cm {
+                result += "CM"
+                temp -= cm
+            }
+
+            let d = 500
+            if temp >= d {
+                result += "D"
+                temp -= d
+            }
+
+            let cd = 400
+            if temp >= cd {
+                result += "CD"
+                temp -= cd
+            }
+
+            let c = 100
+            while temp >= c {
+                result += "C"
+                temp -= c
+            }
+
+            let xc = 90
+            if temp >= xc {
+                result += "XC"
+                temp -= xc
+            }
+
+            let l = 50
+            if temp >= l {
+                result += "L"
+                temp -= l
+            }
+
+            let xl = 40
+            if temp >= xl {
+                result += "XL"
+                temp -= xl
+            }
+
+            let x = 10
+            while temp >= x {
+                result += "X"
+                temp -= x
+            }
+
+            let ix = 9
+            if temp >= ix {
+                result += "IX"
+                temp -= ix
+            }
+
+            let v = 5
+            if temp >= v {
+                result += "V"
+                temp -= v
+            }
+
+            let iv = 4
+            if temp >= iv {
+                result += "IV"
+                temp -= iv
+            }
+
+            let i = 1
+            while temp >= i {
+                result += "I"
+                temp -= i
+            }
+
+            return result
+        } // get
+    }
 } // extension Int

@@ -337,7 +337,7 @@ extension String {
 //                    debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
                 } else {
                     buffer.append(character)
-                    debugPrint(#file, #function, "Buffer is now ", buffer)
+//                    debugPrint(#file, #function, "Buffer is now ", buffer)
                 }
             }
             

@@ -104,28 +104,247 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     } // func supports(calendarComponent: ASACalendarComponent) -> Bool
     
     private var dateFormatter = DateFormatter()
+    private var formatter = NumberFormatter()
+
+    fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int, isRoman: Bool) -> String {
+        if isRoman {
+            return integerValue.RomanNumeral
+        }
+        
+        formatter.minimumIntegerDigits = minimumIntegerDigits
+        let symbol = self.formatter.string(from: NSNumber(value: integerValue))!
+        return symbol
+    }
+    
+    fileprivate func dateString(FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat) -> String {
+        var dateFormatPattern: String
+        let languageCode = localeIdentifier.localeLanguageCode
+        
+        if languageCode == "fr" || languageCode == nil {
+            switch dateFormat {
+            case .none:
+                dateFormatPattern = ""
+                
+            case .short, .shortWithRomanYear, .shortWithWeekday:
+                dateFormatPattern = FRCDate.toShortenedString()
+                
+            case .long, .longWithRomanYear:
+                dateFormatPattern = FRCDate.toLongString()
+                
+            case .longWithoutYear:
+                dateFormatPattern = FRCDate.toLongStringNoYear()
+                
+            case .mediumWithoutYear:
+                dateFormatPattern = FRCDate.toShortString()
+                
+            default:
+                dateFormatPattern = FRCDate.toVeryLongString()
+            }  // switch dateFormat
+            
+            return dateFormatPattern
+        } else {
+            switch dateFormat {
+            case .none:
+                return ""
+                
+            case .short, .shortWithRomanYear:
+                self.dateFormatter.dateStyle = .short
+                
+            case .shortWithWeekday:
+                self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "eee")
+                
+            case .medium:
+                self.dateFormatter.dateStyle = .medium
+                
+            case .mediumWithoutYear:
+                self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+                
+            case .long, .longWithRomanYear:
+                self.dateFormatter.dateStyle = .long
+                
+            case .longWithoutYear:
+                self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+                
+            default:
+                self.dateFormatter.dateStyle = .full
+            }
+            let rawDateFormat = self.dateFormatter.dateFormat ?? ""
+            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
+            
+            dateFormatPattern = rawDateFormat
+        }
+        
+        let components = dateFormatPattern.dateFormatPatternComponents
+        var result = ""
+        formatter.locale = Locale(identifier: localeIdentifier)
+        
+        for component in components {
+            switch component.type {
+            case .literal:
+                result.append(component.string)
+                
+            case .symbol:
+                var symbol = ""
+                switch component.string {
+                case "G", "GG", "GGG":
+                    let symbols = self.eraSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[0]
+
+                case "GGGG":
+                    let symbols = self.longEraSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[0]
+                    
+                case "GGGGG":
+                    let symbols = self.eraSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[0]
+                    
+                case "y", "Y", "u", "U":
+                    let year = FRCDate.components.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 1, isRoman: dateFormat.isRomanYear)
+                    
+                case "yy", "YY", "uu", "UU":
+                    let year = FRCDate.components.year!
+                    let revisedYear = year % 100
+                    symbol = stringFromInteger(revisedYear, minimumIntegerDigits: 2, isRoman: dateFormat.isRomanYear)
+
+                case "yyy", "YYY", "uuu", "UUU":
+                    let year = FRCDate.components.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 3, isRoman: dateFormat.isRomanYear)
+                    
+                case "yyyy", "YYYY", "uuuu", "UUUU":
+                    let year = FRCDate.components.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 4, isRoman: dateFormat.isRomanYear)
+
+                case "yyyyy", "YYYYY", "uuuuu", "UUUUU":
+                    let year = FRCDate.components.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 5, isRoman: dateFormat.isRomanYear)
+                    
+                case "Q", "QQ", "q", "qq":
+                    let quarter = FRCDate.components.quarter!
+                    symbol = stringFromInteger(quarter, minimumIntegerDigits: 2, isRoman: false)
+                    
+                case "QQQ":
+                    let quarter = FRCDate.components.quarter!
+                    let symbols = self.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "QQQQ":
+                    let quarter = FRCDate.components.quarter!
+                    let symbols = self.quarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "qqq":
+                    let quarter = FRCDate.components.quarter!
+                    let symbols = self.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "qqqq":
+                    let quarter = FRCDate.components.quarter!
+                    let symbols = self.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "M", "MM":
+                    let month = FRCDate.components.month!
+                    symbol = stringFromInteger(month, minimumIntegerDigits: 2, isRoman: false)
+                    
+                case "MMM":
+                    let symbols = self.shortMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.month! - 1]
+
+                case "MMMM":
+                    let symbols = self.monthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.month! - 1]
+
+                case "MMMMM":
+                    let symbols = self.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.month! - 1]
+                    
+                case "L", "LL":
+                    let month = FRCDate.components.month!
+                    symbol = stringFromInteger(month, minimumIntegerDigits: 2, isRoman: false)
+                    
+                case "LLL":
+                    let symbols = self.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.month! - 1]
+
+                case "LLLL":
+                    let symbols = self.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.month! - 1]
+
+                case "LLLLL":
+                    let symbols = self.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.month! - 1]
+                    
+                case "l":
+                    symbol = "" // Really.  That’s what the spec says.
+                    
+                case "d":
+                    let day = FRCDate.components.day!
+                    symbol = stringFromInteger(day, minimumIntegerDigits: 1, isRoman: false)
+
+                case "dd":
+                    let day = FRCDate.components.day!
+                    symbol = stringFromInteger(day, minimumIntegerDigits: 2, isRoman: false)
+                    
+                case "D":
+                    let dayInYear = FRCDate.dayInYear
+                    symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 1, isRoman: false)
+
+                case "DD":
+                    let dayInYear = FRCDate.dayInYear
+                    symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 2, isRoman: false)
+
+                case "DDD":
+                    let dayInYear = FRCDate.dayInYear
+                    symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 3, isRoman: false)
+
+                case "E", "EE", "EEE", "eee":
+                    let symbols = self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.weekday! - 1]
+
+                case "EEEE", "eeee":
+                    let symbols = self.weekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.weekday! - 1]
+
+                case "EEEEE", "eeeee":
+                    let symbols = self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.weekday! - 1]
+                    
+                case "e", "c":
+                    let dayOfWeek = FRCDate.components.weekday!
+                    symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 1, isRoman: false)
+
+                case "ee", "cc":
+                    let dayOfWeek = FRCDate.components.weekday!
+                    symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 2, isRoman: false)
+                    
+                case "ccc":
+                    let symbols = self.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.weekday! - 1]
+
+                case "cccc":
+                    let symbols = self.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.weekday! - 1]
+
+                case "ccccc":
+                    let symbols = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[FRCDate.components.weekday! - 1]
+
+                case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg": // TODO:  Implement these!
+                    symbol = "*"
+
+                default:
+                    symbol = "*"
+                }
+                result.append(symbol)
+            }
+        }
+        
+        return result
+    } // func dateString(FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
     func dateStringTimeString(now: Date, FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String) {
-        var dateString: String
-        switch dateFormat {
-        case .none:
-            dateString = ""
-            
-        case .short, .shortWithRomanYear, .shortWithWeekday:
-            dateString = FRCDate.toShortenedString()
-            
-        case .long, .longWithRomanYear:
-            dateString = FRCDate.toLongString()
-            
-        case .longWithoutYear:
-            dateString = FRCDate.toLongStringNoYear()
-            
-        case .mediumWithoutYear:
-            dateString = FRCDate.toShortString()
-
-        default:
-            dateString = FRCDate.toVeryLongString()
-        } // switch dateFormat
+        let dateString: String = dateString(FRCDate: FRCDate, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
         
         var timeString: String
         switch timeFormat {
@@ -392,7 +611,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     } // func localModifiedJulianDay(date: Date, timeZone: TimeZone) -> Int
     
     
-    // MARK:  -
+    // MARK:  - ASACalendarSupportingWeeks
     
     func weekdaySymbols(localeIdentifier: String) -> Array<String> {
        return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
@@ -421,6 +640,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     func weekendDays(for regionCode: String?) -> Array<Int> {
         [5, 10]
     } // func weekendDays(for regionCode: String?) -> Array<Int>
+    
+    
+    // MARK:  -
     
     func miniCalendarNumberFormat(locale: Locale) -> ASAMiniCalendarNumberFormat {
         return .system
