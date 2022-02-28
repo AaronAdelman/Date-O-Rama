@@ -168,10 +168,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             default:
                 self.dateFormatter.dateStyle = .full
             }
-            let rawDateFormat = self.dateFormatter.dateFormat ?? ""
             self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-            
-            dateFormatPattern = rawDateFormat
+            self.dateFormatter.timeStyle = .none
+            dateFormatPattern = self.dateFormatter.dateFormat ?? ""
         }
         
         let components = dateFormatPattern.dateFormatPatternComponents
@@ -337,15 +336,13 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
                     symbol = "*"
                 }
                 result.append(symbol)
-            }
-        }
+            } // switch component.type
+        } // for component in components
         
         return result
     } // func dateString(FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
-    func dateStringTimeString(now: Date, FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String) {
-        let dateString: String = dateString(FRCDate: FRCDate, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
-        
+    fileprivate func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
         var timeString: String
         switch timeFormat {
         case .none:
@@ -360,11 +357,74 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
 
         case .decimal:
             let decimalTime = DecimalTime(base: now, timeZone: locationData.timeZone)
-            timeString = decimalTime.hourMinuteSecondsFormatted
+            let languageCode = localeIdentifier.localeLanguageCode
+            if languageCode == "fr" || languageCode == nil {
+                timeString = decimalTime.hourMinuteSecondsFormatted
+            } else {
+                self.dateFormatter.timeStyle = .medium // As of this writing, only the medium time style (more or less) is supported.
+                self.dateFormatter.dateStyle = .none
+                let timeFormatPattern = self.dateFormatter.dateFormat ?? ""
+                let components = timeFormatPattern.dateFormatPatternComponents
+                        var result = ""
+                        formatter.locale = Locale(identifier: localeIdentifier)
+
+                for component in components {
+                    switch component.type {
+                    case .literal:
+                        result.append(component.string)
+                        
+                    case .symbol:
+                        var symbol = ""
+                        switch component.string {
+                        case "a":
+                            symbol = "" // The French Republican Calendar does not divide the day into two periods.
+                            
+                        case "h", "hh", "H", "HH", "k", "kk", "K", "KK", "j", "jj":
+                            let hour = decimalTime.hour
+                            symbol = stringFromInteger(hour, minimumIntegerDigits: 1, isRoman: false)
+                            
+                        case "m":
+                            let minute = decimalTime.minute
+                            symbol = stringFromInteger(minute, minimumIntegerDigits: 1, isRoman: false)
+
+                        case "mm":
+                            let minute = decimalTime.minute
+                            symbol = stringFromInteger(minute, minimumIntegerDigits: 2, isRoman: false)
+
+                        case "s":
+                            let second = decimalTime.second
+                            symbol = stringFromInteger(second, minimumIntegerDigits: 1, isRoman: false)
+
+                        case "ss":
+                            let second = decimalTime.second
+                            symbol = stringFromInteger(second, minimumIntegerDigits: 2, isRoman: false)
+                            
+                        case "S", "SS", "SSS", "SSSS", "A", "AA", "AAA", "AAAA":
+                            symbol = "*" // TODO:  Implement these?
+                            
+                        case "z", "zz", "zzz", "zzzz", "Z", "ZZ", "ZZZ", "ZZZZ", "ZZZZZ", "O", "OOOO", "v", "vvvv", "V", "VV", "VVV", "VVVV", "X", "XX", "XXX", "XXXX", "XXXXX", "x", "xx", "xxx", "xxxx", "xxxxx":
+                            symbol = "" // Time zone is not handled here.
+
+                        default:
+                            symbol = "*"
+                        }
+                        result.append(symbol)
+                    } // switch component.type
+                } // for component in components
+                
+                return result
+            }
 
             default:
             timeString = ""
         } // switch timeFormat
+        
+        return timeString
+    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation) -> String
+    
+    func dateStringTimeString(now: Date, FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String) {
+        let dateString: String = dateString(FRCDate: FRCDate, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
+        let timeString: String = timeString(now: now, localeIdentifier: localeIdentifier, timeFormat: timeFormat, locationData: locationData)
         
         return (dateString, timeString)
     } // func dateStringTimeStringDate(now: Date, FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String)
