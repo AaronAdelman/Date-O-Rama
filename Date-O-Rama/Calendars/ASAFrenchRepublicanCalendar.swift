@@ -218,7 +218,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
                     let year = FRCDate.components.year!
                     symbol = stringFromInteger(year, minimumIntegerDigits: 5, isRoman: dateFormat.isRomanYear)
                     
-                case "Q", "QQ", "q", "qq":
+                case "Q", "QQ", "q", "qq", "QQQQQ", "qqqqq":
                     let quarter = FRCDate.components.quarter!
                     symbol = stringFromInteger(quarter, minimumIntegerDigits: 2, isRoman: false)
                     
@@ -329,11 +329,11 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
                     let symbols = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[FRCDate.components.weekday! - 1]
 
-                case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg": // TODO:  Implement these!
-                    symbol = "*"
+                case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg", "r", "rr", "rrr", "rrrr", "rrrrr": // TODO:  Implement these!
+                    symbol = "<\(component.string)>"
 
                 default:
-                    symbol = "*"
+                    symbol = "<\(component.string)>"
                 }
                 result.append(symbol)
             } // switch component.type
@@ -376,10 +376,10 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
                     case .symbol:
                         var symbol = ""
                         switch component.string {
-                        case "a":
+                        case "a", "aa", "aaa", "aaaa", "aaaaa", "b", "bb", "bbb", "bbbb", "bbbbb", "B", "BB", "BBB", "BBBB", "BBBBB":
                             symbol = "" // The French Republican Calendar does not divide the day into two periods.
                             
-                        case "h", "hh", "H", "HH", "k", "kk", "K", "KK", "j", "jj":
+                        case "h", "hh", "H", "HH", "k", "kk", "K", "KK", "j", "jj", "jjj", "jjjj", "jjjjj", "jjjjjj", "J", "JJ", "C", "CC", "CCC", "CCCC", "CCCCC", "CCCCCC":
                             let hour = decimalTime.hour
                             symbol = stringFromInteger(hour, minimumIntegerDigits: 1, isRoman: false)
                             
@@ -400,13 +400,13 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
                             symbol = stringFromInteger(second, minimumIntegerDigits: 2, isRoman: false)
                             
                         case "S", "SS", "SSS", "SSSS", "A", "AA", "AAA", "AAAA":
-                            symbol = "*" // TODO:  Implement these?
+                            symbol = component.string // TODO:  Implement these?
                             
                         case "z", "zz", "zzz", "zzzz", "Z", "ZZ", "ZZZ", "ZZZZ", "ZZZZZ", "O", "OOOO", "v", "vvvv", "V", "VV", "VVV", "VVVV", "X", "XX", "XXX", "XXXX", "XXXXX", "x", "xx", "xxx", "xxxx", "xxxxx":
                             symbol = "" // Time zone is not handled here.
 
                         default:
-                            symbol = "*"
+                            symbol = component.string
                         }
                         result.append(symbol)
                     } // switch component.type
