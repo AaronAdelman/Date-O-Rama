@@ -680,7 +680,10 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
         switch localeIdentifier.localeLanguageCode {
         case "he":
             return ["יום ראשון", "יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי", "יום שביעי", "יום שמיני", "יום תשעי", "יום עשירי"]
-            
+
+        case "ar":
+            return ["بريميد", "توديدي", "تريدي", "كارتيدي", "كارتيدي", "سكستيدي", "ستيدي", "أوكتيدي", "نونيدي", "ديكادي"]
+
         default:
             return ["Primidi", "Duodi", "Tridi", "Quartidi", "Quintidi", "Sextidi", "Septidi", "Octidi", "Nonidi", "Décadi"]
         } // switch localeIdentifier.localeLanguageCode
@@ -690,6 +693,10 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
         switch localeIdentifier.localeLanguageCode {
         case "he":
             return ["יום א׳", "יום ב׳", "יום ג׳", "יום ד׳", "יום ה׳", "יום ו׳", "יום ז׳", "יום ח׳", "יום ט׳", "יום י׳"]
+            
+        case "ar":
+            return ["بريميد", "توديدي", "تريدي", "كارتيدي", "كارتيدي", "سكستيدي", "ستيدي", "أوكتيدي", "نونيدي", "ديكادي"]
+
             
         default:
             return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
@@ -736,6 +743,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
         switch localeIdentifier.localeLanguageCode {
         case "he":
             return ["ונדמייר", "בּרויּמֶר", "פרִימֶר", "ניבוז", "פּלויּביוז", "ונטוז", "ז׳רמינאל", "פלוראל", "פּרריאל", "מסידור", "תרמידור", "פרוקטידור", "עיבור השנה"]
+            
+        case "ar":
+            return ["فنديميير", "برومير", "فريمير", "نيفوز", "بلوفيوز", "فنتوز", "جرمينال", "فلوريال", "بريريال", "ميسيدور", "تيرميدور", "فروكتيدور", "الأيام الستة في نهاية السنة"]
 
         default:
             return ["Vendémiaire", "Brumaire", "Frimaire", "Nivôse", "Pluviôse", "Ventôse", "Germinal", "Floréal", "Prairial", "Messidor", "Thermidor", "Fructidor", "Sansculottides"]
@@ -781,7 +791,10 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
         switch localeIdentifier.localeLanguageCode {
         case "he":
             return ["סתיו", "חורף", "אביב", "קיץ", "עיבור השנה"]
-            
+          
+        case "ar":
+            return ["الخريف", "الشتاء", "الربيع", "الصيف", "الأيام الستة في نهاية السنة"]
+
         case "en":
             return ["Autumn", "Winter", "Spring", "Summer", "Sansculottides"]
         
