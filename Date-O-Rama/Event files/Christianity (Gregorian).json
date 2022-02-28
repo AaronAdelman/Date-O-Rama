@@ -272,7 +272,7 @@
         {"titles": {"en": "Fat Thursday"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -52}, "emoji": "🍩", "urls": {"en": "https://www.daysoftheyear.com/days/fat-thursday/"}},
         {"titles": {"en": "Quinquagesima"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -49}},
         {"titles": {"en": "Shrove Monday"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -48}},
-        {"titles": {"en": "Shrove Tuesday/Pancake Day/Mardi Gras/Fat Tuesday"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -47}, "emoji": "🥞"},
+        {"titles": {"en": "Shrove Tuesday/Pancake Day/Mardi Gras/Fat Tuesday"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -47}, "emoji": "🥞", "urls": {"en": "https://www.daysoftheyear.com/days/pancake-day/"}},
         {"titles": {"en": "Ash Wednesday/Lent (day 1)"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -46}},
         {"titles": {"en": "Lent (day 2)"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -45}},
         {"titles": {"en": "Lent (day 3)"}, "start": {"type": "1D", "Easter": "Easter", "offsetD": -44}},
