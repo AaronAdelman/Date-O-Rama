@@ -298,4 +298,9 @@ extension Array where Element == String {
         let result = formatter.string(from: self as [Any])
         return result
     }
+    
+    var firstCharacterOfEachElement: Array<String> {
+        return self.map {String($0.first ?? "?")}
+
+    }
 } // extension Array where Element == String

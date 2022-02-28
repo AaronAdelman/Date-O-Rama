@@ -709,7 +709,8 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             return ["א׳", "ב׳", "ג׳", "ד׳", "ה׳", "ו׳", "ז׳", "ח׳", "ט׳", "י׳"]
             
         default:
-            return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+//            return ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+            return self.weekdaySymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
         } // switch localeIdentifier.localeLanguageCode
     }
     
@@ -763,13 +764,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     func veryShortMonthSymbols(localeIdentifier: String) -> Array<String> {
-        switch localeIdentifier.localeLanguageCode {
-        case "he":
-            return ["ונד׳", "בּרו׳", "פרִי׳", "ניב׳", "פּלו׳", "ונט׳", "ז׳רמ׳", "פלו׳", "פּרר׳", "מסי׳", "תרמ׳", "פרו׳", "עה״ש"]
-
-        default:
-            return ["V", "B", "F", "N", "P", "V", "G", "F", "P", "M", "T", "F", "S"]
-        } // case localeIdentifier.localeLanguageCode
+        return monthSymbols(localeIdentifier: localeIdentifier).firstCharacterOfEachElement
     }
     
     func standaloneMonthSymbols(localeIdentifier: String) -> Array<String> {
