@@ -305,12 +305,12 @@ extension String {
             let character = Character(scalar)
             if buffer.isEmpty {
                 buffer.append(character)
-                debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+//                debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
             } else if character == "'" {
                 if mode == .symbol {
                     let newComponent = ASADateFormatPatternComponent(type: .symbol, string: buffer)
                     components.append(newComponent)
-                    debugPrint(#file, #function, "Appending symbol component “\(buffer)”")
+//                    debugPrint(#file, #function, "Appending symbol component “\(buffer)”")
                     buffer = ""
                 } else {
                     assert(mode == .literal)
@@ -321,30 +321,30 @@ extension String {
                 
                 mode = .literal
                 quoteMode = !quoteMode
-                debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+//                debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
             } else if mode == .symbol {
                 if character == lastCharacter {
                     buffer.append(character)
-                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+//                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 } else {
                     let newComponent = ASADateFormatPatternComponent(type: .symbol, string: buffer)
                     components.append(newComponent)
-                    debugPrint(#file, #function, "Appending symbol component “\(buffer)”")
+//                    debugPrint(#file, #function, "Appending symbol component “\(buffer)”")
                     buffer = String(character)
                     mode = character.isSyntaxCharacter ? .symbol : .literal
-                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+//                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 }
             } else if mode == .literal {
                 if character.isSyntaxCharacter && !quoteMode {
                     let newComponent = ASADateFormatPatternComponent(type: .literal, string: buffer)
                     components.append(newComponent)
-                    debugPrint(#file, #function, "Appending literal component “\(buffer)”")
+//                    debugPrint(#file, #function, "Appending literal component “\(buffer)”")
                     buffer = String(character)
                     mode = .symbol
-                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+//                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 } else {
                     buffer.append(character)
-                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+//                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 }
             }
             
@@ -353,7 +353,7 @@ extension String {
         
         let newComponent = ASADateFormatPatternComponent(type: mode == .literal ? .literal : .symbol, string: buffer)
         components.append(newComponent)
-                            debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
+//                            debugPrint(#file, #function, "Mode is now ", mode == .literal ? "literal" : "symbol")
 
         return components
     } // var dateFormatPatternComponents

@@ -96,6 +96,7 @@ extension Date {
                     result[event] = rise! + event.offset
                 }
             } else {
+                // !event.rising
                 var tempResult: Date? = set
                 if tempResult != nil {
                     let midnightToday = Date.solarEventsGregorianCalendar.startOfDay(for:self)
@@ -108,6 +109,16 @@ extension Date {
                         //                    debugPrint(#file, #function, "Reset tempResult:", tempResult as Any)
                     }
                     result[event] = tempResult! + event.offset
+                } else {
+                    // tempResult == nil
+                    let tomorrow = JulianDay(self.oneDayAfter)
+                    let terraTommorow = Earth(julianDay: tomorrow, highPrecision: true)
+                    let twilights = terraTommorow.twilights(forSunAltitude: Degree(0 - event.degreesBelowHorizon), coordinates: coordinates)
+                    set = twilights.setTime?.date
+                    if set != nil {
+                        sets[event.degreesBelowHorizon] = set
+                        result[event] = set! + event.offset
+                    }
                 }
             }
         } // for event in events

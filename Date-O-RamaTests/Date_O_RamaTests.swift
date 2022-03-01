@@ -629,109 +629,109 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(31.matches(recurrence: -1, lengthOfWeek: LENGTH_OF_WEEK, lengthOfMonth: 31))
     } // func testNthRecurrenceOfWeekdayInMonth() throws
     
-    func testMoonPhases() throws {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
-        formatter.timeZone = .current
-
-        let now = JulianDay(year: 2021, month: 8, day: 12)
-        let luna = Moon(julianDay: now, highPrecision: true)
-        
-        let julianDayOfNextNewMoon: JulianDay = luna.time(of: .newMoon, forward: true, mean: false)
-        let nextNewMoon = julianDayOfNextNewMoon.date
-        let nextNewMoonString = formatter.string(from: nextNewMoon)
-        debugPrint(#file, #function, julianDayOfNextNewMoon, nextNewMoonString)
-
-        let julianDayOfNextFirstQuarter: JulianDay = luna.time(of: .firstQuarter, forward: true, mean: false)
-        let nextFirstQuarter = julianDayOfNextFirstQuarter.date
-        let nextFirstQuarterString = formatter.string(from: nextFirstQuarter)
-        debugPrint(#file, #function, julianDayOfNextFirstQuarter, nextFirstQuarterString)
-
-        let julianDayOfNextFullMoon: JulianDay = luna.time(of: .fullMoon, forward: true, mean: false)
-        let nextFullMoon = julianDayOfNextFullMoon.date
-        let nextFullMoonString = formatter.string(from: nextFullMoon)
-        debugPrint(#file, #function, julianDayOfNextFullMoon, nextFullMoonString)
-        
-        let julianDayOfNextThirdQuarter: JulianDay = luna.time(of: .lastQuarter, forward: true, mean: false)
-        let nextThirdQuarter = julianDayOfNextThirdQuarter.date
-        let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
-        debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
-    } // func testMoonPhases() throws
+//    func testMoonPhases() throws {
+//        let formatter = DateFormatter()
+//        formatter.locale = Locale(identifier: "en_US")
+//
+//        formatter.dateStyle = .medium
+//        formatter.timeStyle = .medium
+//        formatter.timeZone = .current
+//
+//        let now = JulianDay(year: 2021, month: 8, day: 12)
+//        let luna = Moon(julianDay: now, highPrecision: true)
+//
+//        let julianDayOfNextNewMoon: JulianDay = luna.time(of: .newMoon, forward: true, mean: false)
+//        let nextNewMoon = julianDayOfNextNewMoon.date
+//        let nextNewMoonString = formatter.string(from: nextNewMoon)
+//        debugPrint(#file, #function, julianDayOfNextNewMoon, nextNewMoonString)
+//
+//        let julianDayOfNextFirstQuarter: JulianDay = luna.time(of: .firstQuarter, forward: true, mean: false)
+//        let nextFirstQuarter = julianDayOfNextFirstQuarter.date
+//        let nextFirstQuarterString = formatter.string(from: nextFirstQuarter)
+//        debugPrint(#file, #function, julianDayOfNextFirstQuarter, nextFirstQuarterString)
+//
+//        let julianDayOfNextFullMoon: JulianDay = luna.time(of: .fullMoon, forward: true, mean: false)
+//        let nextFullMoon = julianDayOfNextFullMoon.date
+//        let nextFullMoonString = formatter.string(from: nextFullMoon)
+//        debugPrint(#file, #function, julianDayOfNextFullMoon, nextFullMoonString)
+//
+//        let julianDayOfNextThirdQuarter: JulianDay = luna.time(of: .lastQuarter, forward: true, mean: false)
+//        let nextThirdQuarter = julianDayOfNextThirdQuarter.date
+//        let nextThirdQuarterString = formatter.string(from: nextThirdQuarter)
+//        debugPrint(#file, #function, julianDayOfNextThirdQuarter, nextThirdQuarterString)
+//    } // func testMoonPhases() throws
     
-    func testMoonRiseSet() throws {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
-        formatter.timeZone = TimeZone(secondsFromGMT: 3 * 60 * 60)
-
-        let now = JulianDay(year: 2021, month: 8, day: 21)
-        let luna = Moon(julianDay: now, highPrecision: true)
-        let riseTransitSet = luna.riseTransitSetTimes(for: GeographicCoordinates(CLLocation(latitude: 32.088889, longitude: 34.886389)))
-        let rise = riseTransitSet.riseTime?.date
-        let transit = riseTransitSet.transitTime?.date
-        let set = riseTransitSet.setTime?.date
-        
-        debugPrint(#file, #function, "Rise:", rise as Any, "Transit:", transit as Any, "Transit error:", riseTransitSet.transitError as Any, "Set:", set as Any)
-    }
+//    func testMoonRiseSet() throws {
+//        let formatter = DateFormatter()
+//        formatter.locale = Locale(identifier: "en_US")
+//
+//        formatter.dateStyle = .medium
+//        formatter.timeStyle = .medium
+//        formatter.timeZone = TimeZone(secondsFromGMT: 3 * 60 * 60)
+//
+//        let now = JulianDay(year: 2021, month: 8, day: 21)
+//        let luna = Moon(julianDay: now, highPrecision: true)
+//        let riseTransitSet = luna.riseTransitSetTimes(for: GeographicCoordinates(CLLocation(latitude: 32.088889, longitude: 34.886389)))
+//        let rise = riseTransitSet.riseTime?.date
+//        let transit = riseTransitSet.transitTime?.date
+//        let set = riseTransitSet.setTime?.date
+//
+//        debugPrint(#file, #function, "Rise:", rise as Any, "Transit:", transit as Any, "Transit error:", riseTransitSet.transitError as Any, "Set:", set as Any)
+//    }
     
-    func testSun() throws {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
-        formatter.timeZone = .current
-
-        let now = JulianDay(year: 2021, month: 8, day: 16)
-        let terra = Earth(julianDay: now, highPrecision: true)
-        let sunrise_sunset = terra.twilights(forSunAltitude: TwilightSunAltitude.upperLimbOnHorizonWithRefraction.rawValue, coordinates: GeographicCoordinates(CLLocation(latitude: 32.088889, longitude: 34.886389)))
-        let sunrise = sunrise_sunset.riseTime
-        let transit = sunrise_sunset.transitTime
-        let sunset = sunrise_sunset.setTime
-        guard let sunriseDate = sunrise?.date else { return }
-        guard let transitDate = transit?.date else { return  }
-        guard let sunsetDate = sunset?.date else { return  }
-        let sunriseString = formatter.string(from: sunriseDate)
-        let transitString = formatter.string(from: transitDate)
-        let sunsetString = formatter.string(from: sunsetDate)
-        debugPrint(#file, #function, sunriseString, transitString, sunsetString)
-    }
+//    func testSun() throws {
+//        let formatter = DateFormatter()
+//        formatter.locale = Locale(identifier: "en_US")
+//
+//        formatter.dateStyle = .medium
+//        formatter.timeStyle = .medium
+//        formatter.timeZone = .current
+//
+//        let now = JulianDay(year: 2021, month: 8, day: 16)
+//        let terra = Earth(julianDay: now, highPrecision: true)
+//        let sunrise_sunset = terra.twilights(forSunAltitude: TwilightSunAltitude.upperLimbOnHorizonWithRefraction.rawValue, coordinates: GeographicCoordinates(CLLocation(latitude: 32.088889, longitude: 34.886389)))
+//        let sunrise = sunrise_sunset.riseTime
+//        let transit = sunrise_sunset.transitTime
+//        let sunset = sunrise_sunset.setTime
+//        guard let sunriseDate = sunrise?.date else { return }
+//        guard let transitDate = transit?.date else { return  }
+//        guard let sunsetDate = sunset?.date else { return  }
+//        let sunriseString = formatter.string(from: sunriseDate)
+//        let transitString = formatter.string(from: transitDate)
+//        let sunsetString = formatter.string(from: sunsetDate)
+//        debugPrint(#file, #function, sunriseString, transitString, sunsetString)
+//    }
     
-    func testEquinoxesAndSolstices() throws {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .medium
-        formatter.timeZone = .current
-
-        let now = JulianDay(year: 2021, month: 8, day: 16)
-        let terra = Earth(julianDay: now, highPrecision: true)
-        
-        let MarchEquinox = terra.equinox(of: .northwardSpring)
-        let MarchEquinoxDate = MarchEquinox.date
-        let MarchEquinoxString = formatter.string(from: MarchEquinoxDate)
-        
-        let JuneSolstice = terra.solstice(of: .northernSummer)
-        let JuneSolsticeDate = JuneSolstice.date
-        let JuneSolsticeString = formatter.string(from: JuneSolsticeDate)
-        
-        let SeptemberEquinox = terra.equinox(of: .southwardSpring)
-        let SeptemberEquinoxDate = SeptemberEquinox.date
-        let SeptemberEquinoxString = formatter.string(from: SeptemberEquinoxDate)
-
-        let DecemberSolstice = terra.solstice(of: .southernSummer)
-        let DecemberSolsticeDate = DecemberSolstice.date
-        let DecemberSolsticeString = formatter.string(from: DecemberSolsticeDate)
-
-        debugPrint(#file, #function, MarchEquinoxString, JuneSolsticeString, SeptemberEquinoxString, DecemberSolsticeString)
-
-    }
+//    func testEquinoxesAndSolstices() throws {
+//        let formatter = DateFormatter()
+//        formatter.locale = Locale(identifier: "en_US")
+//
+//        formatter.dateStyle = .medium
+//        formatter.timeStyle = .medium
+//        formatter.timeZone = .current
+//
+//        let now = JulianDay(year: 2021, month: 8, day: 16)
+//        let terra = Earth(julianDay: now, highPrecision: true)
+//        
+//        let MarchEquinox = terra.equinox(of: .northwardSpring)
+//        let MarchEquinoxDate = MarchEquinox.date
+//        let MarchEquinoxString = formatter.string(from: MarchEquinoxDate)
+//        
+//        let JuneSolstice = terra.solstice(of: .northernSummer)
+//        let JuneSolsticeDate = JuneSolstice.date
+//        let JuneSolsticeString = formatter.string(from: JuneSolsticeDate)
+//        
+//        let SeptemberEquinox = terra.equinox(of: .southwardSpring)
+//        let SeptemberEquinoxDate = SeptemberEquinox.date
+//        let SeptemberEquinoxString = formatter.string(from: SeptemberEquinoxDate)
+//
+//        let DecemberSolstice = terra.solstice(of: .southernSummer)
+//        let DecemberSolsticeDate = DecemberSolstice.date
+//        let DecemberSolsticeString = formatter.string(from: DecemberSolsticeDate)
+//
+//        debugPrint(#file, #function, MarchEquinoxString, JuneSolsticeString, SeptemberEquinoxString, DecemberSolsticeString)
+//
+//    }
     
     func testMatchRegionCodes() throws {
         let codes1 = ["a", "b", "c", REGION_CODE_Northern_Hemisphere]
@@ -1126,4 +1126,20 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(pattern8Components[6].type == .symbol)
         XCTAssert(pattern8Components[6].string == "EEEE")
     } // func testDateFormatPatterns2() throws
+    
+    func testApril29ToMay2() throws {
+        let CharlestonLocation = CLLocation(latitude: 32.783333, longitude: -79.933333)
+        let CharlestonTimeZone = TimeZone(identifier: "America/New_York")!
+        let events: Array<ASASolarEvent> = [.sunrise, .sunset]
+        
+        let April30 = GregorianDate(era: 1, year: 2021, month: 4, day: 30, hour: 16, minute: 0, second: 0, secondsFromGMT: 0)
+        let April30Events = April30.solarEvents(location: CharlestonLocation, events: events, timeZone: CharlestonTimeZone)
+        debugPrint(#file, #function, April30, April30Events)
+        XCTAssert(April30Events.count == 2)
+
+        let May1 = GregorianDate(era: 1, year: 2021, month: 5, day: 1, hour: 16, minute: 0, second: 0, secondsFromGMT: 0)
+        let May1Events = May1.solarEvents(location: CharlestonLocation, events: events, timeZone: CharlestonTimeZone)
+        debugPrint(#file, #function, May1, May1Events)
+        XCTAssert(May1Events.count == 2)
+    }
 } // class Date_O_RamaTests
