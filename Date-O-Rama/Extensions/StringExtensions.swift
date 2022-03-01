@@ -301,10 +301,8 @@ extension String {
         var components: Array<ASADateFormatPatternComponent> = []
         var quoteMode = false
         
-        self.forEach {
-            character
-            in
-
+        for scalar in self.unicodeScalars { // We are doing this slightly weird thing, because at least one date format pattern puts a combining accent immediately after a quote symbol, and we need to make sure that we get the quote and the combining accent separately.
+            let character = Character(scalar)
             if buffer.isEmpty {
                 buffer.append(character)
                 debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
@@ -327,12 +325,12 @@ extension String {
             } else if mode == .symbol {
                 if character == lastCharacter {
                     buffer.append(character)
-                    debugPrint(#file, #function, "Buffer is now “\(buffer)”")
+                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 } else {
                     let newComponent = ASADateFormatPatternComponent(type: .symbol, string: buffer)
                     components.append(newComponent)
                     debugPrint(#file, #function, "Appending symbol component “\(buffer)”")
-                    buffer = "\(character)"
+                    buffer = String(character)
                     mode = character.isSyntaxCharacter ? .symbol : .literal
                     debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 }
@@ -341,12 +339,12 @@ extension String {
                     let newComponent = ASADateFormatPatternComponent(type: .literal, string: buffer)
                     components.append(newComponent)
                     debugPrint(#file, #function, "Appending literal component “\(buffer)”")
-                    buffer = "\(character)"
+                    buffer = String(character)
                     mode = .symbol
                     debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 } else {
                     buffer.append(character)
-                    debugPrint(#file, #function, "Buffer is now “\(buffer)”")
+                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 }
             }
             
