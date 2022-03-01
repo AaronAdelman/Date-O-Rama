@@ -1083,10 +1083,38 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(pattern6Components[11].string == " ")
         XCTAssert(pattern6Components[12].type == .symbol)
         XCTAssert(pattern6Components[12].string == "aaa")
-
-        let clock = ASAClock()
-        clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
-        clock.localeIdentifier = "en_US"
-        
     } // func testDateFormatPatterns() throws
+    
+    func testDateFormatPatterns2() throws {
+//        let pattern7 = "EEEE , \'lyɛ\'̌ʼ d \'na\' MMMM, y"
+//        let pattern7Components = pattern7.dateFormatPatternComponents
+//        debugPrint(#file, #function, pattern7, pattern7Components)
+//        XCTAssert(pattern7Components.count == 7)
+//        XCTAssert(pattern7Components[0].type == .symbol)
+//        XCTAssert(pattern7Components[0].string == "EEEE")
+//        XCTAssert(pattern7Components[1].type == .literal)
+//        XCTAssert(pattern7Components[1].string == " , lyɛ'̌ʼ ")
+//        XCTAssert(pattern7Components[2].type == .symbol)
+//        XCTAssert(pattern7Components[2].string == "d")
+
+        // Basque (euskara)
+        let pattern8 = "y(\'e\')\'ko\' MMMM\'ren\' d(\'a\'), EEEE"
+        let pattern8Components = pattern8.dateFormatPatternComponents
+        debugPrint(#file, #function, pattern8, pattern8Components)
+        XCTAssert(pattern8Components.count == 7)
+        XCTAssert(pattern8Components[0].type == .symbol)
+        XCTAssert(pattern8Components[0].string == "y")
+        XCTAssert(pattern8Components[1].type == .literal)
+        XCTAssert(pattern8Components[1].string == "(e)ko ")
+        XCTAssert(pattern8Components[2].type == .symbol)
+        XCTAssert(pattern8Components[2].string == "MMMM")
+        XCTAssert(pattern8Components[3].type == .literal)
+        XCTAssert(pattern8Components[3].string == "ren ")
+        XCTAssert(pattern8Components[4].type == .symbol)
+        XCTAssert(pattern8Components[4].string == "d")
+        XCTAssert(pattern8Components[5].type == .literal)
+        XCTAssert(pattern8Components[5].string == "(a), ")
+        XCTAssert(pattern8Components[6].type == .symbol)
+        XCTAssert(pattern8Components[6].string == "EEEE")
+    } // func testDateFormatPatterns2() throws
 } // class Date_O_RamaTests

@@ -329,12 +329,9 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
                     let symbols = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
                     symbol = symbols[FRCDate.components.weekday! - 1]
 
-                case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg", "rr", "rrr", "rrrr", "rrrrr": // TODO:  Implement these!
+                case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg", "r", "rr", "rrr", "rrrr", "rrrrr": // TODO:  Implement these!
                     symbol = "<\(component.string)>"
                     
-                case "n", "a", "r":
-                    symbol = "" // Hack to deal with symbols which have irrelevant definitions or are undefined.
-
                 default:
                     symbol = "<\(component.string)>"
                 }
