@@ -223,5 +223,7 @@
 
         {"titles": {"en": "Vesak, the Day of the Full Moon"}, "start": {"type": "1D", "zmoPhase": "1stFull", "mon": 5}, "1st": {"type": "1D", "zmoPhase": "1stFull", "era": 1, "y": 2000}, "emoji": "🎂", "notes": {"en": "The birthday of the Buddha.  Whoever decided making this a UN observance did not understand that celebrating a Buddhist holiday may be taboo to adherents of other religions."}},
 
+        {"titles": {"en": "World Book Day"}, "start": {"type": "1D", "mon": 3, "wkd": [5], "wkdRecurrence": 1}, "1st": {"type": "1D", "era": 1, "y": 1996}, "emoji": "📕", "urls": {"en": "https://www.daysoftheyear.com/days/world-book-day/"}},
+
     ]
 }
