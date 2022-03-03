@@ -16,6 +16,5 @@
         {"titles": {"en": "World Human Spirit Day"}, "start": {"type": "1D", "mon": 2, "d": 17}, "1st": {"type": "1D", "era": 1, "y": 2003}, "urls": {"en": "https://www.daysoftheyear.com/days/world-human-spirit-day/"}, "emoji": "⽰"},
         {"titles": {"en": "International Day of Radiant Peace"}, "start": {"type": "1D", "mon": 9, "d": 22}, "1st": {"type": "1D", "era": 1, "y": 2000}, "urls": {"en": "http://www.giftypedia.com/International_Day_of_Radiant_Peace"}, "emoji": "☮️"},
         {"titles": {"en": "Day Out of Time Day"}, "start": {"type": "1D", "mon": 7, "d": 25}, "urls": {"en": "http://www.giftypedia.com/Day_Out_of_Time_Day"}, "emoji": "⏳"},
-
     ]
 }

@@ -11,7 +11,6 @@
         {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "start": {"type": "pt", "ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Karachi"}},
         {"titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "start": {"type": "pt", "ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Karachi"}},
 
-
         {"titles": {"en": "Isha (Karachi)", "ar": "صلاة العشاء‎ (كراتشي)", "he": "צלאת אל-עִשאא (קראצ׳י)"}, "start": {"type": "pt", "ptType": "Isha", "calcMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         {"titles": {"en": "Fajr (Karachi)", "ar": "صلاة الفجر‎ (كراتشي)", "he": "פג׳ר (קראצ׳י)"}, "start": {"type": "pt", "ptType": "Fajr", "calcMethod": "Karachi"}, "notes": {"en": "University of Islamic Sciences, Karachi"}, "emoji": "🇵🇰"},
         

@@ -13,6 +13,5 @@
         {"titles": {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, "start": {"type": "pt", "ptType": "Dhuhr", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}, "emoji": "🇸🇦"},
         {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "start": {"type": "pt", "ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}, "emoji": "🇸🇦"},
         {"titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "start": {"type": "pt", "ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}, "emoji": "🇸🇦"},
-  
     ]
 }

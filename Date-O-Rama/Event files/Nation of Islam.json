@@ -5,13 +5,6 @@
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.4, "green": 0.6, "blue": 0.4},
     "eventSpecifications": [
-        {
-            "titles": {"en": "Saviours’ Day"},
-            "start": {"type": "1D",
-                "mon": 2, "d": 28
-            },
-            "urls": {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day"}
-        }
+        {"titles": {"en": "Saviours’ Day"}, "start": {"type": "1D", "mon": 2, "d": 28}, "urls": {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day"}},
     ]
 }
-

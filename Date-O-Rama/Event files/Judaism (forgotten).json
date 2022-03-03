@@ -109,7 +109,5 @@
         {"titles": {"he":  "פורים לפנטו", "en": "Purim of Lepanto"}, "start": {"type": "1D", "mon": 4, "d": 11}, "urls": {"en": "https://www.jewishencyclopedia.com/articles/12450-purims-special#anchor16"}},
         {"titles": {"he":  "פורים ריבת שזיפים", "en": "Purim Povidl/Plum-Jam Purim"}, "start": {"type": "1D", "mon": 7, "d": 10}, "urls": {"en": "https://www.jewishencyclopedia.com/articles/12450-purims-special#anchor19"}},
         {"titles": {"he":  "פורים טריפולי", "en": "Purim of Tripoli"}, "start": {"type": "1D", "mon": 5, "d": 15}, "urls": {"en": "https://www.jewishencyclopedia.com/articles/12450-purims-special#anchor26"}},
-
-
     ]
 }

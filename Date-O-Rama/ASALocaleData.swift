@@ -44,46 +44,7 @@ struct ASALocaleData {
 
     init() {
         let standardLocaleIdentifiers = [
-            "ar_001",
-            "ca_ES",
-            "cs_CZ",
-            "da_DK",
-            "de_DE",
-            "el_GR",
-            "en_AU",
-            "en_CA",
-            "en_GB",
-            "en_US",
-            "es_419",
-            "es_ES",
-            "fi_FI",
-            "fr_CA",
-            "fr_FR",
-            "he_IL",
-            "hi_IN",
-            "hr_HR",
-            "hu_HU",
-            "id_ID",
-            "it_IT",
-            "ja_JP",
-            "ko_KR",
-            "ms_MY",
-            "nl_NL",
-            "no_NO",
-            "pl_PL",
-            "pt_PT",
-            "pt_BR",
-            "ro_RO",
-            "ru_RU",
-            "sk_SK",
-            "sv_SE",
-            "th_TH",
-            "tr_TR",
-            "uk_UA",
-            "vi_VN",
-            "zh_CN",
-            "zh_HK",
-            "zh_TW"
+            "ar_001", "ca_ES", "cs_CZ", "da_DK", "de_DE", "el_GR", "en_AU", "en_CA", "en_GB", "en_US", "es_419", "es_ES", "fi_FI", "fr_CA", "fr_FR", "he_IL", "hi_IN", "hr_HR", "hu_HU", "id_ID", "it_IT", "ja_JP", "ko_KR", "ms_MY", "nl_NL", "no_NO", "pl_PL", "pt_PT", "pt_BR", "ro_RO", "ru_RU", "sk_SK", "sv_SE", "th_TH", "tr_TR", "uk_UA", "vi_VN", "zh_CN", "zh_HK", "zh_TW"
         ]
         let sortedStandardLocaleRecords = self.sortedLocalizedRecords(identifiers: standardLocaleIdentifiers)
         
