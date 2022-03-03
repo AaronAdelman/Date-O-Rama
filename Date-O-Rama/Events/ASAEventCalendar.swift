@@ -212,7 +212,7 @@ class ASAEventCalendar {
         default:
             // Should not happen
             return MATCH_FAILURE
-        } // switch startDateSpecification.type
+        } // switch startDateSpecification.MoonPhase
     } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
 
     func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
@@ -740,9 +740,9 @@ class ASAEventCalendar {
             }
         }
         
-        let startDateSpecificationType: ASADateSpecificationType = startDateSpecification.type
+        let dateSpecificationType: ASADateSpecificationType = eventSpecification.type
         
-        switch startDateSpecificationType {
+        switch dateSpecificationType {
         case .multiYear:
             // Multi-year events
             return matchMultiYear(endDateSpecification: endDateSpecification, components: components, startDateSpecification: startDateSpecification, calendar: calendar, date: date)
@@ -1081,7 +1081,7 @@ class ASAEventCalendar {
                 let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
                 if matchesRegionCode {
                     var title: String
-                    if eventSpecification.startDateSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
+                    if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
                         let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
                         let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
                         let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)
@@ -1100,7 +1100,7 @@ class ASAEventCalendar {
                     let notes: String? = eventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
                     let category: ASAEventCategory = eventSpecification.category ?? .generic
                     
-                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: eventSpecification.emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.startDateSpecification.type)
+                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: eventSpecification.emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.type)
                     if newEvent.isAllDay {
                         dateEvents.append(newEvent)
                     } else {

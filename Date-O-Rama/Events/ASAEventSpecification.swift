@@ -14,7 +14,7 @@ class ASAEventSpecification: Codable {
     var locations: Dictionary<String, String>?
     
     var isAllDay:  Bool {
-        return self.startDateSpecification.type.isAllDay
+        return self.type.isAllDay
     } // var isAllDay
 
     var calendarCode:  ASACalendarCode?
@@ -32,6 +32,10 @@ class ASAEventSpecification: Codable {
     
     var category: ASAEventCategory?
     var emoji: String?
+    
+    var type: ASADateSpecificationType {
+        return self.startDateSpecification.type
+    }
     
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
