@@ -10,7 +10,7 @@ import CoreLocation
 import Foundation
 
 struct ASADateSpecification:  Codable {
-    var type: ASADateSpecificationType
+//    var type: ASADateSpecificationType
     var pointEventType: ASAPointEventType?
     
     var era: Int?
@@ -77,7 +77,7 @@ struct ASADateSpecification:  Codable {
     var MoonPhase: ASAMoonPhaseType?
     
     enum CodingKeys: String, CodingKey {
-        case type
+//        case type
         case pointEventType      = "ptType"
         case era
         case year                = "y"
@@ -142,7 +142,7 @@ extension ASADateSpecification {
         }
     }
     
-    func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool, baseDate: Date) -> Date? {
+    func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool, baseDate: Date, type: ASADateSpecificationType) -> Date? {
         var revisedDateComponents = dateComponents
         if self.era != nil {
             revisedDateComponents.era = self.era
@@ -186,7 +186,7 @@ extension ASADateSpecification {
         
         let timeZone = revisedDateComponents.locationData.timeZone
         
-        switch self.type {
+        switch type {
         case .oneYear, .multiYear:
             if isEndDate {
                 let numberOfMonthsInYear = calendar.maximumValue(of: .month, in: .year, for: baseDate)!
@@ -252,7 +252,7 @@ extension ASADateSpecification {
                 let tempDate = (calendar.date(dateComponents: revisedDateComponents))!
                 return tempDate
             } // switch self.pointEventType
-        } // switch self.type
+        } // switch type
     } //func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool) -> Date?
 
     func rawDegreesBelowHorizon(date:  Date, location: CLLocation, timeZone:  TimeZone) -> Date? {
@@ -263,8 +263,8 @@ extension ASADateSpecification {
         return result!
     }
     
-    func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date) -> Date? {
-        switch self.type {
+    func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date, type: ASADateSpecificationType) -> Date? {
+        switch type {
         case .point:
             switch self.pointEventType {
             case .solarTimeSunriseSunset:
@@ -299,7 +299,7 @@ extension ASADateSpecification {
 
         default:
             return date // TODO:  May have to fix this!
-        } // switch self.type
+        } // switch type
     } // func date(date:  Date, latitude: CLLocationDegrees, longitude: CLLocationDegrees, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double) -> Date?
 } // extension ASADateSpecification
 

@@ -5,6 +5,6 @@
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.25, "green": 0.50, "blue": 0.75},
     "eventSpecifications": [
-        {"titles": {"en": "Brillig"}, "start": {"type": "pt", "h": 16, "min": 0, "s": 0, "ns": 0}}
+        {"titles": {"en": "Brillig"}, "type": "pt", "start": {"h": 16, "min": 0, "s": 0, "ns": 0}}
     ]
 }

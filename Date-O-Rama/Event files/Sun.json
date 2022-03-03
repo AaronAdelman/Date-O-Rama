@@ -5,16 +5,16 @@
     "calendarCode": "xloc*",
     "calendarColor": {"red": 1.0, "green": 1.0, "blue": 0.0},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
+        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
 
-        {"titles": {"en": "Civil dawn", "he": "שחר אזרחי"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 6.0, "rising": true, "offset": 0}, "category": "civilDawn"},
-        {"titles": {"en": "Civil dusk", "he": "בין הערביים אזרחי"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 6.0, "rising": false, "offset": 0}, "category": "civilDusk"},
+        {"titles": {"en": "Civil dawn", "he": "שחר אזרחי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 6.0, "rising": true, "offset": 0}, "category": "civilDawn"},
+        {"titles": {"en": "Civil dusk", "he": "בין הערביים אזרחי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 6.0, "rising": false, "offset": 0}, "category": "civilDusk"},
         
-        {"titles": {"en": "Nautical dawn", "he": "שחר ימי"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 12.0, "rising": true, "offset": 0}, "category": "nauticalDawn"},
-        {"titles": {"en": "Nautical dusk", "he": "בין העבריים ימי"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 12.0, "rising": false, "offset": 0}, "category": "nauticalDusk"},
+        {"titles": {"en": "Nautical dawn", "he": "שחר ימי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 12.0, "rising": true, "offset": 0}, "category": "nauticalDawn"},
+        {"titles": {"en": "Nautical dusk", "he": "בין העבריים ימי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 12.0, "rising": false, "offset": 0}, "category": "nauticalDusk"},
         
-        {"titles": {"en": "Astronomical dawn", "he": "שחר אסטרונומי"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 18.0, "rising": true, "offset": 0}, "category": "astronomicalDawn"},
-        {"titles": {"en": "Astronomical dusk", "he": "בין הערביים אסטרונומי"}, "start": {"type": "pt", "ptType": "twilight", "degBelowHorizon": 18.0, "rising": false, "offset": 0}, "category": "astronomicalDusk"},
+        {"titles": {"en": "Astronomical dawn", "he": "שחר אסטרונומי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 18.0, "rising": true, "offset": 0}, "category": "astronomicalDawn"},
+        {"titles": {"en": "Astronomical dusk", "he": "בין הערביים אסטרונומי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 18.0, "rising": false, "offset": 0}, "category": "astronomicalDusk"},
     ]
 }

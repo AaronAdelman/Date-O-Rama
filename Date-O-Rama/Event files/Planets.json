@@ -5,25 +5,25 @@
     "calendarCode": "xloc*",
     "calendarColor": {"red": 0.941, "green": 0.827, "blue": 0.616},
     "eventSpecifications": [
-        {"titles": {"en": "Rise of Mercury", "he": "זריחת כוכב"}, "start": {"type": "pt", "ptType": "rise", "body": "zme"}, "emoji": "☿↑"},
-        {"titles": {"en": "Setting of Mercury", "he": "שקיעת כוכב"}, "start": {"type": "pt", "ptType": "set", "body": "zme"}, "emoji": "☿↓"},
+        {"titles": {"en": "Rise of Mercury", "he": "זריחת כוכב"}, "type": "pt", "start": {"ptType": "rise", "body": "zme"}, "emoji": "☿↑"},
+        {"titles": {"en": "Setting of Mercury", "he": "שקיעת כוכב"}, "type": "pt", "start": {"ptType": "set", "body": "zme"}, "emoji": "☿↓"},
         
-        {"titles": {"en": "Rise of Venus", "he": "זריחת נוגה"}, "start": {"type": "pt", "ptType": "rise", "body": "zve"}, "emoji": "♀↑"},
-        {"titles": {"en": "Setting of Venus", "he": "שקיעת נוגה"}, "start": {"type": "pt", "ptType": "set", "body": "zve"}, "emoji": "♀↓"},
+        {"titles": {"en": "Rise of Venus", "he": "זריחת נוגה"}, "type": "pt", "start": {"ptType": "rise", "body": "zve"}, "emoji": "♀↑"},
+        {"titles": {"en": "Setting of Venus", "he": "שקיעת נוגה"}, "type": "pt", "start": {"ptType": "set", "body": "zve"}, "emoji": "♀↓"},
         
-        {"titles": {"en": "Rise of Mars", "he": "זריחת מאדים"}, "start": {"type": "pt", "ptType": "rise", "body": "zma"}, "emoji": "♂↑"},
-        {"titles": {"en": "Setting of Mars", "he": "שקיעת מאדים"}, "start": {"type": "pt", "ptType": "set", "body": "zma"}, "emoji": "♂↓"},
+        {"titles": {"en": "Rise of Mars", "he": "זריחת מאדים"}, "type": "pt", "start": {"ptType": "rise", "body": "zma"}, "emoji": "♂↑"},
+        {"titles": {"en": "Setting of Mars", "he": "שקיעת מאדים"}, "type": "pt", "start": {"ptType": "set", "body": "zma"}, "emoji": "♂↓"},
 
-        {"titles": {"en": "Rise of Jupiter", "he": "זריחת צדק"}, "start": {"type": "pt", "ptType": "rise", "body": "zju"}, "emoji": "♃↑"},
-        {"titles": {"en": "Setting of Jupiter", "he": "שקיעת צדק"}, "start": {"type": "pt", "ptType": "set", "body": "zju"}, "emoji": "♃↓"},
+        {"titles": {"en": "Rise of Jupiter", "he": "זריחת צדק"}, "type": "pt", "start": {"ptType": "rise", "body": "zju"}, "emoji": "♃↑"},
+        {"titles": {"en": "Setting of Jupiter", "he": "שקיעת צדק"}, "type": "pt", "start": {"ptType": "set", "body": "zju"}, "emoji": "♃↓"},
 
-        {"titles": {"en": "Rise of Saturn", "he": "זריחת שבתי"}, "start": {"type": "pt", "ptType": "rise", "body": "zsa"}, "emoji": "♄↑"},
-        {"titles": {"en": "Setting of Saturn", "he": "שקיעת שבתי"}, "start": {"type": "pt", "ptType": "set", "body": "zsa"}, "emoji": "♄↓"},
+        {"titles": {"en": "Rise of Saturn", "he": "זריחת שבתי"}, "type": "pt", "start": {"ptType": "rise", "body": "zsa"}, "emoji": "♄↑"},
+        {"titles": {"en": "Setting of Saturn", "he": "שקיעת שבתי"}, "type": "pt", "start": {"ptType": "set", "body": "zsa"}, "emoji": "♄↓"},
 
-        {"titles": {"en": "Rise of Uranus", "he": "זריחת אורנוס"}, "start": {"type": "pt", "ptType": "rise", "body": "zur"}, "emoji": "⛢↑"},
-        {"titles": {"en": "Setting of Uranus", "he": "שקיעת אורנוס"}, "start": {"type": "pt", "ptType": "set", "body": "zur"}, "emoji": "⛢↓"},
+        {"titles": {"en": "Rise of Uranus", "he": "זריחת אורנוס"}, "type": "pt", "start": {"ptType": "rise", "body": "zur"}, "emoji": "⛢↑"},
+        {"titles": {"en": "Setting of Uranus", "he": "שקיעת אורנוס"}, "type": "pt", "start": {"ptType": "set", "body": "zur"}, "emoji": "⛢↓"},
 
-        {"titles": {"en": "Rise of Neptune", "he": "זריחת נפטון"}, "start": {"type": "pt", "ptType": "rise", "body": "zne"}, "emoji": "♆↑"},
-        {"titles": {"en": "Setting of Neptune", "he": "שקיעת נפטון"}, "start": {"type": "pt", "ptType": "set", "body": "zne"}, "emoji": "♆↓"},
+        {"titles": {"en": "Rise of Neptune", "he": "זריחת נפטון"}, "type": "pt", "start": {"ptType": "rise", "body": "zne"}, "emoji": "♆↑"},
+        {"titles": {"en": "Setting of Neptune", "he": "שקיעת נפטון"}, "type": "pt", "start": {"ptType": "set", "body": "zne"}, "emoji": "♆↓"},
     ]
 }

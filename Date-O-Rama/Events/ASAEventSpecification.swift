@@ -33,15 +33,13 @@ class ASAEventSpecification: Codable {
     var category: ASAEventCategory?
     var emoji: String?
     
-    var type: ASADateSpecificationType {
-        return self.startDateSpecification.type
-    }
-    
+    var type: ASADateSpecificationType
+
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "1st"
-        case titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji
+        case titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji, type
     } // enum CodingKeys
 } // extension ASAEventSpecification
 

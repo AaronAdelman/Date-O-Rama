@@ -6,8 +6,8 @@
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
     "emoji": "🇮🇱",
    "eventSpecifications": [
-        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "start": {"type": "1D", "mon": 5, "d": 9}},
-        {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "start": {"type": "1D", "mon": 11, "d": 30}, "urls": {"en": "https://yomhagirush.com/index.php"}},
-        {"titles": {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, "start": {"type": "1D", "mon": 6, "d": 1}, "urls": {"en": "http://www.thefarhud.com/"}}
+        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 9}},
+        {"titles": {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "type": "1D", "start": {"mon": 11, "d": 30}, "urls": {"en": "https://yomhagirush.com/index.php"}},
+        {"titles": {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, "type": "1D", "start": {"mon": 6, "d": 1}, "urls": {"en": "http://www.thefarhud.com/"}}
     ]
 }
