@@ -173,16 +173,12 @@ extension ASADateSpecification {
             revisedDateComponents.nanosecond = self.nanosecond
         }
 
-//        if self.weekdays?.count == 1 {
-//            revisedDateComponents.weekday = self.weekdays![0].rawValue
-//        } else {
-            revisedDateComponents.weekday = nil
-//        }
+        revisedDateComponents.weekday = nil
         revisedDateComponents.isLeapMonth = nil
         
-        if !calendar.isValidDate(dateComponents: revisedDateComponents) {
-            return nil
-        }
+//        if !calendar.isValidDate(dateComponents: revisedDateComponents) {
+//            return nil
+//        }
         let rawDate = calendar.date(dateComponents: revisedDateComponents)
         if rawDate == nil {
             return nil
@@ -203,8 +199,6 @@ extension ASADateSpecification {
                 revisedDateComponents.month =  1
                 revisedDateComponents.day   =  1
             }
-//            revisedDateComponents.weekday     = nil
-//            revisedDateComponents.isLeapMonth = nil
             let tempResult = calendar.date(dateComponents: revisedDateComponents)
             if tempResult == nil {
                 return nil
@@ -214,13 +208,16 @@ extension ASADateSpecification {
             
         case .oneMonth, .multiMonth:
             if isEndDate {
-                let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: baseDate)!
+//                if self.type == .multiMonth && dateComponents.calendar.calendarCode.isHebrewCalendar {
+//                debugPrint(#file, #function, "Debugging")
+//            }
+                let dateComponentsForFirstDayOfMonth = ASADateComponents(calendar: calendar, locationData: dateComponents.locationData, era: self.era, year: self.year, yearForWeekOfYear: nil, quarter: nil, month: self.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
+                let dateOfFirstDayOfMonth = calendar.date(dateComponents: dateComponentsForFirstDayOfMonth)
+                let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: dateOfFirstDayOfMonth!)!
                 revisedDateComponents.day   = numberOfDaysInMonth
             } else {
                 revisedDateComponents.day   =  1
             }
-//            revisedDateComponents.weekday     = nil
-//            revisedDateComponents.isLeapMonth = nil
             let tempResult = calendar.date(dateComponents: revisedDateComponents)
             if tempResult == nil {
                 return nil
@@ -315,12 +312,12 @@ extension ASADateSpecification {
     } // var EYMD
     
     func fillIn(EYMD: Array<Int?>) -> ASADateSpecification {
-        var temp = self
-        temp.era   = EYMD[0]
-        temp.year  = EYMD[1]
-        temp.month = EYMD[2]
-        temp.day   = EYMD[3]
-        return temp
+        var result = self
+        result.era   = EYMD[0]
+        result.year  = EYMD[1]
+        result.month = EYMD[2]
+        result.day   = EYMD[3]
+        return result
     } // fillIn(EYMD: Array<Int?>) -> ASADateSpecification
     
     var EYM: Array<Int?> {
@@ -328,11 +325,12 @@ extension ASADateSpecification {
     } // var EYM
     
     func fillIn(EYM: Array<Int?>) -> ASADateSpecification {
-        var temp = self
-        temp.era   = EYMD[0]
-        temp.year  = EYMD[1]
-        temp.month = EYMD[2]
-        return temp
+        var result = self
+        result.era   = EYM[0]
+        result.year  = EYM[1]
+        result.month = EYM[2]
+//        debugPrint(#file, #function, "self:", self, "EYM:", EYM, "result:", result)
+        return result
     } // fillIn(EYM: Array<Int?>) -> ASADateSpecification
     
     var EY: Array<Int?> {
@@ -341,8 +339,8 @@ extension ASADateSpecification {
     
     func fillIn(EY: Array<Int?>) -> ASADateSpecification {
         var temp = self
-        temp.era   = EYMD[0]
-        temp.year  = EYMD[1]
+        temp.era   = EY[0]
+        temp.year  = EY[1]
         return temp
     } // fillIn(EY: Array<Int?>) -> ASADateSpecification
 } // extension ASADateSpecification

@@ -424,8 +424,10 @@ class ASAEventCalendar {
         }
     } // func matchOneMonth(date: Date, calendar: ASACalendar, locationData: ASALocation, tweakedStartDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
-    fileprivate func matchMultiMonth(endDateSpecification: ASADateSpecification?, date: Date, calendar: ASACalendar, locationData: ASALocation, startDateSpecification: ASADateSpecification, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
-        assert(endDateSpecification != nil)
+    fileprivate func matchMultiMonth(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification, date: Date, calendar: ASACalendar, locationData: ASALocation, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?) {
+//        if startDateSpecification.month == 6 && endDateSpecification.month == 7 {
+//            debugPrint(#file, #function, "Debugging")
+//        }
         
         if !matchOneYear(date: date, calendar: calendar, locationData: locationData, dateSpecification: startDateSpecification, components: components) {
             return MATCH_FAILURE
@@ -433,7 +435,7 @@ class ASAEventCalendar {
         
         let dateEYM: Array<Int?>      = components.EYM
         let startDateEYM: Array<Int?> = startDateSpecification.EYM
-        let endDateEYM: Array<Int?>   = endDateSpecification!.EYM
+        let endDateEYM: Array<Int?>   = endDateSpecification.EYM
         let within: Bool = dateEYM.isWithin(start: startDateEYM, end: endDateEYM)
         
         if !within {
@@ -444,12 +446,12 @@ class ASAEventCalendar {
         
         let tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
         
-        let tweakedEndDateSpecification = endDateSpecification!.fillIn(EYM: filledInEndDateEYM)
+        let tweakedEndDateSpecification = endDateSpecification.fillIn(EYM: filledInEndDateEYM)
         
         let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
         let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
         return (true, startDate, endDate)
-    } // func matchMultiMonth(_ endDateSpecification: ASADateSpecification?, _ date: Date, _ calendar: ASACalendar, _ locationData: ASALocation, _ startDateSpecification: ASADateSpecification, _ components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
+    } // func matchMultiMonth(startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification, date: Date, calendar: ASACalendar, locationData: ASALocation, components: ASADateComponents) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
     func matchEasterEvent(date:  Date, calendar:  ASACalendar, startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date, dateMJD: Int) -> (matches: Bool, startDate: Date?, endDate: Date?) {
         var forGregorianCalendar: Bool
@@ -752,7 +754,11 @@ class ASAEventCalendar {
             
         case .multiMonth:
             // Multi-month events
-            return matchMultiMonth(endDateSpecification: endDateSpecification, date: date, calendar: calendar, locationData: locationData, startDateSpecification: startDateSpecification, components: components)
+            guard let nonOptionalEndDateSpecification = endDateSpecification
+                else {
+                    return MATCH_FAILURE
+                }
+            return matchMultiMonth(startDateSpecification: startDateSpecification, endDateSpecification: nonOptionalEndDateSpecification, date: date, calendar: calendar, locationData: locationData, components: components)
             
         case .oneMonth:
             // One-month events

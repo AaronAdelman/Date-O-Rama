@@ -1127,7 +1127,8 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(pattern8Components[6].string == "EEEE")
     } // func testDateFormatPatterns2() throws
     
-    func testApril29ToMay2() throws {
+    func testApril30ToMay1() throws {
+        // This test checks whether on April 30, 2021 and May 1, 2021 in Charleston, SC the code correctly reports there being both Sunrise and Sunset
         let CharlestonLocation = CLLocation(latitude: 32.783333, longitude: -79.933333)
         let CharlestonTimeZone = TimeZone(identifier: "America/New_York")!
         let events: Array<ASASolarEvent> = [.sunrise, .sunset]
@@ -1141,5 +1142,40 @@ class Date_O_RamaTests: XCTestCase {
         let May1Events = May1.solarEvents(location: CharlestonLocation, events: events, timeZone: CharlestonTimeZone)
         debugPrint(#file, #function, May1, May1Events)
         XCTAssert(May1Events.count == 2)
+    } // func testApril30ToMay1() throws
+    
+    func testPisces() throws {
+        // This test checks whether multi-months are working right.  The Pisces event for the Jewish zodiac event calendars was reporting no end date, leading to a debugging session to find and fix the problem.
+        let startDateSpecification = ASADateSpecification(type: .multiMonth, pointEventType: nil, era: nil, year: nil, month: 6, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
+        let endDateSpecification: ASADateSpecification = ASADateSpecification(type: .multiMonth, pointEventType: nil, era: nil, year: nil, month: 7, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
+        let filledInStartDateEYM: Array<Int?> = [0, 5782, 6]
+        let filledInEndDateEYM: Array<Int?> = [0, 5782, 7]
+        
+        let tweakedStartDateSpecification = startDateSpecification.fillIn(EYM: filledInStartDateEYM)
+        
+        let tweakedEndDateSpecification = endDateSpecification.fillIn(EYM: filledInEndDateEYM)
+
+        XCTAssert(tweakedStartDateSpecification.era == 0)
+        XCTAssert(tweakedStartDateSpecification.year == 5782)
+        XCTAssert(tweakedStartDateSpecification.month == 6)
+        XCTAssert(tweakedEndDateSpecification.era == 0)
+        XCTAssert(tweakedEndDateSpecification.year == 5782)
+        XCTAssert(tweakedEndDateSpecification.month == 7)
+        
+        let calendar: ASACalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+        let date = GregorianDate(era: 1, year: 2021, month: 3, day: 3, hour: 16, minute: 8, second: 31, secondsFromGMT: 2 * 60 * 60)
+        let timeZone = TimeZone(identifier: "Asia/Jerusalem")!
+        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
+
+        let components: ASADateComponents = ASADateComponents(calendar: calendar, locationData: location, era: 0, year: 5782, yearForWeekOfYear: nil, quarter: nil, month: 6, isLeapMonth: false, weekOfMonth: nil, weekOfYear: nil, weekday: 5, weekdayOrdinal: nil, day: 30, hour: 12, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
+
+        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
+        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+        
+        debugPrint(#file, #function, startDate as Any, endDate as Any)
+        XCTAssert(startDate != nil)
+        XCTAssert(endDate != nil)
     }
+    
+    
 } // class Date_O_RamaTests
