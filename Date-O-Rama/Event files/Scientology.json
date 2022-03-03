@@ -26,5 +26,8 @@
         {"titles": {"en": "Narconon Day"}, "start": {"type": "1D", "mon": 2, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 1966}},
         {"titles": {"en": "Founding of the Church of Scientology Vienna"}, "start": {"type": "1D", "mon": 3, "d": 31}, "category": "remembrance", "1st": {"type": "1D", "era": 1, "y": 1971}},
         {"titles": {"en": "Opening of the first Scientology and Dianetics College in Tel Aviv, Israel"}, "start": {"type": "1D", "mon": 9, "d": 25}, "category": "remembrance", "1st": {"type": "1D", "era": 1, "y": 1980}},
+        
+        {"titles": {"en": "National Set a Good Example Day"}, "start": {"type": "1D", "mon": 2, "d": 26}, "1st": {"type": "1D", "era": 1, "y": 2022}, "notes": {"en": "This is an observance in which the Church of Scientology sets a very bad example by hiding itself behind the pseudonym “The Way to Happiness® Foundation International”."}},
+
     ]
 }
