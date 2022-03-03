@@ -1,5 +1,5 @@
 //
-//  ASADateSpecificationType.swift
+//  ASAEventSpecificationType.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 11/08/2021.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ASADateSpecificationType:  String, Codable {
+enum ASAEventSpecificationType:  String, Codable {
     case multiYear  = "nY"
     case oneYear    = "1Y"
     case multiMonth = "nM"
@@ -17,9 +17,9 @@ enum ASADateSpecificationType:  String, Codable {
     case oneDay     = "1D"
     case span       = "span"
     case point      = "pt"
-} // enum ASADateSpecificationType
+} // enum ASAEventSpecificationType
 
-extension ASADateSpecificationType {
+extension ASAEventSpecificationType {
     var isAllDay: Bool {
         switch self {
         case .oneDay, .oneMonth, .oneYear, .multiDay, .multiMonth, .multiYear:
@@ -33,4 +33,4 @@ extension ASADateSpecificationType {
     var isOneCalendarDayOrLess: Bool {
         return self == .oneDay || self == .point
     } // var isOneCalendarDayOrLess
-} // extension ASADateSpecificationType
+} // extension ASAEventSpecificationType

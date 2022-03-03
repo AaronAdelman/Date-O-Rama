@@ -52,7 +52,7 @@ protocol ASAEventCompatible {
     var emoji: String? { get }
     var fileEmoji: String? { get }
     
-    var type: ASADateSpecificationType { get }
+    var type: ASAEventSpecificationType { get }
 } // protocol ASAEventCompatible
 
 

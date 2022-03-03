@@ -17,7 +17,7 @@
         {"titles": {"en": "Chaand Raat", "he": "ליל הלבנה", "bn": "চাঁদ রাত", "ur": "چاند رات‎", "hi": "चाँद रात", "ar": "جاند رات"}, "type": "1D", "start": {"mon": 9, "d": -1
             } , "urls": {"en": "https://en.wikipedia.org/wiki/Chaand_Raat"}},
         {"titles": {"en": "ʻĪd al-Fiṭr (Festival of Breaking the Fast)", "he": "עיד אלפטר", "ar": "عيد الفطر‎"}, "type": "1D", "start": {"mon": 10, "d": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Eid_al-Fitr"}},
-        {"titles": {"en": "Ḥajj", "he": "חג׳", "ar": "حَجّ‎"}, "type": "nD", "start": {"mon": 12, "d": 8}, "end": {"type": "nD", "mon": 12, "d": 13}, "urls": {"en": "https://en.wikipedia.org/wiki/Hajj"}},
+        {"titles": {"en": "Ḥajj", "he": "חג׳", "ar": "حَجّ‎"}, "type": "nD", "start": {"mon": 12, "d": 8}, "end": {"mon": 12, "d": 13}, "urls": {"en": "https://en.wikipedia.org/wiki/Hajj"}},
         {"titles": {"en": "Day of ‘Arafah", "he": "יום ערפה", "ar": "يوم عرفة‎"}, "type": "1D", "start": {"mon": 12, "d": 9}, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Arafah"}},
         {"titles": {"en": "ʿĪd al-ʾAḍḥā (Feast of the Sacrifice)", "he": "חג הקורבן", "ar": "عيد الأضحى‎"}, "type": "1D", "start": {"mon": 12, "d": 10}, "urls": {"en": "https://en.wikipedia.org/wiki/Eid_al-Adha"}},
         

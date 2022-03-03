@@ -34,7 +34,7 @@
         {"titles": {"en": "International Year for People of African Descent"}, "type": "1Y", "start": {"era": 1, "y": 2011}, "emoji": "🌍"},
         {"titles": {"en": "International Year of Chemistry"}, "type": "1Y", "start": {"era": 1, "y": 2011}, "emoji": "🧪"},
         {"titles": {"en": "International Year of Forests"}, "type": "1Y", "start": {"era": 1, "y": 2011}, "emoji": "🌲"},
-        {"titles": {"en": "International Year of Youth"}, "type": "1D", "start": {"era": 1, "y": 2010, "mon": 8, "d": 12}, "end": {"type": "1D", "era": 1, "y": 2011, "mon": 8, "d": 11}, "emoji": "𝌑"},
+        {"titles": {"en": "International Year of Youth"}, "type": "1D", "start": {"era": 1, "y": 2010, "mon": 8, "d": 12}, "end": {"era": 1, "y": 2011, "mon": 8, "d": 11}, "emoji": "𝌑"},
         {"titles": {"en": "International Year for the Rapprochement of Cultures"}, "type": "1Y", "start": {"era": 1, "y": 2010}},
         {"titles": {"en": "International Year of Biodiversity"}, "type": "1Y", "start": {"era": 1, "y": 2010}, "emoji": ""},
         {"titles": {"en": "International Year of the Seafarer"}, "type": "1Y", "start": {"era": 1, "y": 2010}, "emoji": "⛵️"},
@@ -47,7 +47,7 @@
         {"titles": {"en": "International Year of Languages"}, "type": "1Y", "start": {"era": 1, "y": 2008}},
         {"titles": {"en": "International Year of Sanitation"}, "type": "1Y", "start": {"era": 1, "y": 2008}, "emoji": "🗑"},
         {"titles": {"en": "International Year of the Potato"}, "type": "1Y", "start": {"era": 1, "y": 2008}, "emoji": "🥔"},
-        {"titles": {"en": "International Polar Year"}, "type": "1D", "start": {"era": 1, "y": 2007, "mon": 3, "d": 1}, "end": {"type": "1D", "era": 1, "y": 2008, "mon": 2, "d": 28}, "emoji": "🐻‍❄️"},
+        {"titles": {"en": "International Polar Year"}, "type": "1D", "start": {"era": 1, "y": 2007, "mon": 3, "d": 1}, "end": {"era": 1, "y": 2008, "mon": 2, "d": 28}, "emoji": "🐻‍❄️"},
         {"titles": {"en": "International Year of Deserts and Desertification"}, "type": "1Y", "start": {"era": 1, "y": 2006}, "emoji": "🏜"},
         {"titles": {"en": "International Year of Microcredit"}, "type": "1Y", "start": {"era": 1, "y": 2005}, "emoji": "💳"},
         {"titles": {"en": "International Year for Sport and Physical Education"}, "type": "1Y", "start": {"era": 1, "y": 2005}, "emoji": "🏀"},
@@ -81,7 +81,7 @@
         {"titles": {"en": "International Year of Mobilization for Sanctions Against South Africa"}, "type": "1Y", "start": {"era": 1, "y": 1982}, "emoji": "🇿🇦"},
         {"titles": {"en": "International Year for Disabled Persons"}, "type": "1Y", "start": {"era": 1, "y": 1981}, "emoji": "♿︎"},
         {"titles": {"en": "International Year of The Child"}, "type": "1Y", "start": {"era": 1, "y": 1979}, "emoji": "🧒"},
-        {"titles": {"en": "International Anti-Apartheid Year"}, "type": "1D", "start": {"era": 1, "y": 1978, "mon": 3, "d": 21}, "end": {"type": "1D", "era": 1, "y": 1979, "mon": 3, "d": 20}, "emoji": "🇿🇦"},
+        {"titles": {"en": "International Anti-Apartheid Year"}, "type": "1D", "start": {"era": 1, "y": 1978, "mon": 3, "d": 21}, "end": {"era": 1, "y": 1979, "mon": 3, "d": 20}, "emoji": "🇿🇦"},
         {"titles": {"en": "International Women’s Year"}, "type": "1Y", "start": {"era": 1, "y": 1975}, "emoji": "♀"},
         {"titles": {"en": "World Population Year"}, "type": "1Y", "start": {"era": 1, "y": 1974}},
         {"titles": {"en": "International Year for Action to Combat Racism and Racial Prejudice"}, "type": "1Y", "start": {"era": 1, "y": 1971}},
@@ -90,6 +90,6 @@
         {"titles": {"en": "International Tourist Year"}, "type": "1Y", "start": {"era": 1, "y": 1967}},
         {"titles": {"en": "International Co-operation Year"}, "type": "1Y", "start": {"era": 1, "y": 1965}},
         {"titles": {"en": "International Health and Medical Research Year"}, "type": "1Y", "start": {"era": 1, "y": 1961}, "emoji": "⚕️"},
-        {"titles": {"en": "World Refugee Year"}, "type": "1D", "start": {"era": 1, "y": 1959, "mon": 6, "d": 1}, "end": {"type": "1D", "era": 1, "y": 1960, "mon": 5, "d": 31}}
+        {"titles": {"en": "World Refugee Year"}, "type": "1D", "start": {"era": 1, "y": 1959, "mon": 6, "d": 1}, "end": {"era": 1, "y": 1960, "mon": 5, "d": 31}}
     ]
 }

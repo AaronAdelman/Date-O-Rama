@@ -128,7 +128,7 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return reduced.asFormattedList
     }
     
-    var type: ASADateSpecificationType {
+    var type: ASAEventSpecificationType {
         self.events[0].type
     }
     

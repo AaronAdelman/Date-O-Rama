@@ -17,6 +17,6 @@
     {"titles": {"en": "Capricorn", "he": "גדי"}, "type": "1M", "start": {"mon": 4}, "category": "Capricorn"},
     {"titles": {"en": "Aquarius", "he": "דלי"}, "type": "1M", "start": {"mon": 5}, "category": "Aquarius"},
     {"titles": {"en": "Pisces", "he": "דגים"}, "type": "1M", "start": {"mon": 7, "yLengths": [353, 354, 355]}, "category": "Pisces"},
-    {"titles": {"en": "Pisces", "he": "דגים"}, "type": "nM", "start": {"mon": 6, "yLengths": [383, 384, 385]}, "end": {"type": "nM", "mon": 7}, "category": "Pisces"}
+    {"titles": {"en": "Pisces", "he": "דגים"}, "type": "nM", "start": {"mon": 6, "yLengths": [383, 384, 385]}, "end": {"mon": 7}, "category": "Pisces"}
     ]
 }

@@ -33,7 +33,7 @@ class ASAEventSpecification: Codable {
     var category: ASAEventCategory?
     var emoji: String?
     
-    var type: ASADateSpecificationType
+    var type: ASAEventSpecificationType
 
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"

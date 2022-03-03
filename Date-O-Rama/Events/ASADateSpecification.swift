@@ -10,7 +10,6 @@ import CoreLocation
 import Foundation
 
 struct ASADateSpecification:  Codable {
-//    var type: ASADateSpecificationType
     var pointEventType: ASAPointEventType?
     
     var era: Int?
@@ -142,7 +141,7 @@ extension ASADateSpecification {
         }
     }
     
-    func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool, baseDate: Date, type: ASADateSpecificationType) -> Date? {
+    func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool, baseDate: Date, type: ASAEventSpecificationType) -> Date? {
         var revisedDateComponents = dateComponents
         if self.era != nil {
             revisedDateComponents.era = self.era
@@ -263,7 +262,7 @@ extension ASADateSpecification {
         return result!
     }
     
-    func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date, type: ASADateSpecificationType) -> Date? {
+    func date(date:  Date, location: CLLocation, timeZone:  TimeZone, previousSunset:  Date, nightHourLength:  Double, sunrise:  Date, hourLength:  Double, previousOtherDusk:  Date, otherNightHourLength:  Double, otherDawn:  Date, otherHourLength:  Double, startOfDay:  Date, startOfNextDay:  Date, type: ASAEventSpecificationType) -> Date? {
         switch type {
         case .point:
             switch self.pointEventType {
