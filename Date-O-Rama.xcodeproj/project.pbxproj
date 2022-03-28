@@ -183,6 +183,8 @@
 		A584C90024B646210014CE2E /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
 		A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
 		A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
+		A58C8D9427F1DEC900596F34 /* Pastafarianism.json in Resources */ = {isa = PBXBuildFile; fileRef = A58C8D9327F1DEC900596F34 /* Pastafarianism.json */; };
+		A58C8D9527F1DEC900596F34 /* Pastafarianism.json in Resources */ = {isa = PBXBuildFile; fileRef = A58C8D9327F1DEC900596F34 /* Pastafarianism.json */; };
 		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593226A2578067E00318BC3 /* ASAClocksViewGroupingOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */; };
@@ -629,6 +631,7 @@
 		A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Judaism (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (times).json"; sourceTree = "<group>"; };
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
+		A58C8D9327F1DEC900596F34 /* Pastafarianism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pastafarianism.json; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A59322692578067E00318BC3 /* ASAClocksViewGroupingOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClocksViewGroupingOption.swift; sourceTree = "<group>"; };
 		A5932276257808D600318BC3 /* ASAMainClocksByTimeZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainClocksByTimeZoneView.swift; sourceTree = "<group>"; };
@@ -874,8 +877,8 @@
 				A5BDE7A22667E22000F47416 /* Antisemitism (Islamic).json */,
 				A5ABBA2C27155A2100ED7D5F /* Atheism.json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
-				A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */,
 				A536399F26EF7A000083C571 /* Christianity (Gregorian, general).json */,
+				A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */,
 				A5EF523727959D37000012AC /* Druzism (Gregorian).json */,
 				A5EF523A2795A44E000012AC /* Druzism (Islamic).json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
@@ -901,6 +904,7 @@
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
 				A563701F27382A91008DE963 /* New Age.json */,
+				A58C8D9327F1DEC900596F34 /* Pastafarianism.json */,
 				A5DC9C7D27285D2100047F64 /* Planets.json */,
 				A5765A37279ED15900BF1F7E /* Rural.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
@@ -1449,6 +1453,7 @@
 				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
+				A58C8D9527F1DEC900596F34 /* Pastafarianism.json in Resources */,
 				A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
 				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
@@ -1523,6 +1528,7 @@
 				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
 				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
 				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
+				A58C8D9427F1DEC900596F34 /* Pastafarianism.json in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */,
 				A54539E026A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
