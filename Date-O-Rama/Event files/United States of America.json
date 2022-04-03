@@ -1,0 +1,16 @@
+{
+    "titles": {"en": "United States of America", "he": "ארצות הברית"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
+    "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 2, "mon": 1}, "titles": {"en": "National Motivation and Inspiration Day"}, "notes": {"en": "Motivation and Inspiration Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/motivation-and-inspiration-day/"}, "1st": {"era": 1, "y": 2002}},
+        {"type": "1D", "start": {"d": 13, "mon": 1}, "titles": {"en": "Korean American Day"}, "1st": {"era": 1, "y": 2003}, "urls": {"en": "https://nationaldaycalendar.com/korean-american-day-january-13/"}},
+        {"type": "1D", "start": {"d": 13, "mon": 1}, "titles": {"en": "Stephen Foster Memorial Day"}, "1st": {"era": 1, "y": 1952}, "urls": {"en": "https://nationaldaycalendar.com/stephen-foster-memorial-day-january-13/"}},
+        {"type": "1D", "start": {"d": 14, "mon": 1}, "titles": {"en": "Ratification Day"}, "urls": {"en": "https://nationaldaycalendar.com/ratification-day-january-14/"}, "1st": {"era": 1, "y": 1784}},
+        {"type": "1D", "start": {"d": 16, "mon": 1}, "titles": {"en": "National Religious Freedom Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/"}, "1st": {"era": 1, "y": 1786}},
+        {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Freedom Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-freedom-day-february-1/"}, "1st": {"era": 1, "y": 1949}},
+
+    ]
+}
