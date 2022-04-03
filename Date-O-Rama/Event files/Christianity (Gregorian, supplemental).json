@@ -64,6 +64,7 @@
         {"titles": {"en": "National Crepe Day"}, "type": "1D", "start": {"mon": 2, "d": 2}, "1st": {"type": "1D", "era": 1, "y": 472}, "urls": {"en": "https://www.daysoftheyear.com/days/crepe-day/"}, "emoji": "🥞"},
         {"titles": {"en": "World Marriage Day"}, "type": "1D", "start": {"mon": 2, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1983}, "urls": {"en": "https://www.daysoftheyear.com/days/marriage-day/"}, "emoji": "⚭"},
         {"titles": {"en": "National Corned Beef and Cabbage Day"}, "type": "1D", "start": {"mon": 3, "d": 17}, "emoji": "🥩🥬", "urls": {"en": "https://nationaldaycalendar.com/national-corned-beef-and-cabbage-day-march-17/"}},
+        {"titles": {"en": "Halloween"}, "type": "1D", "start": {"mon": 10, "d": 31}, "emoji": "🎃", "urls": {"en": "https://en.wikipedia.org/wiki/Halloween"}},
 
         
         {"titles": {"en": "Valentine’s Day"}, "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}, "emoji": "❤️", "urls": {"en": "https://www.daysoftheyear.com/days/valentines-day/"}},
