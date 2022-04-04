@@ -376,6 +376,8 @@
 		A5D3D7E227FA18460099718A /* India.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E027FA18460099718A /* India.json */; };
 		A5D3D7E427FA20CC0099718A /* Australia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E327FA20CC0099718A /* Australia.json */; };
 		A5D3D7E527FA20CC0099718A /* Australia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E327FA20CC0099718A /* Australia.json */; };
+		A5D3D7E727FA2C7E0099718A /* Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E627FA2C7E0099718A /* Canada.json */; };
+		A5D3D7E827FA2C7E0099718A /* Canada.json in Resources */ = {isa = PBXBuildFile; fileRef = A5D3D7E627FA2C7E0099718A /* Canada.json */; };
 		A5D62860243B79F300F3CC19 /* ASADateFormatChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */; };
 		A5D62862243B80F100F3CC19 /* ASADateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D62861243B80F100F3CC19 /* ASADateFormat.swift */; };
 		A5D8FE3825C6D77A00A29350 /* ASANewEKEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */; };
@@ -740,6 +742,7 @@
 		A5D3D7DD27FA14640099718A /* United States of America.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "United States of America.json"; sourceTree = "<group>"; };
 		A5D3D7E027FA18460099718A /* India.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = India.json; sourceTree = "<group>"; };
 		A5D3D7E327FA20CC0099718A /* Australia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Australia.json; sourceTree = "<group>"; };
+		A5D3D7E627FA2C7E0099718A /* Canada.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Canada.json; sourceTree = "<group>"; };
 		A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatChooserView.swift; sourceTree = "<group>"; };
 		A5D62861243B80F100F3CC19 /* ASADateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormat.swift; sourceTree = "<group>"; };
 		A5D8FE3725C6D77A00A29350 /* ASANewEKEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewEKEventView.swift; sourceTree = "<group>"; };
@@ -889,6 +892,7 @@
 				A5BDE7A22667E22000F47416 /* Antisemitism (Islamic).json */,
 				A5ABBA2C27155A2100ED7D5F /* Atheism.json */,
 				A5D3D7E327FA20CC0099718A /* Australia.json */,
+				A5D3D7E627FA2C7E0099718A /* Canada.json */,
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
 				A536399F26EF7A000083C571 /* Christianity (Gregorian, general).json */,
 				A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */,
@@ -1491,6 +1495,7 @@
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
 				A5C7793E26B8382600DD6009 /* United Nations International Days and Weeks.json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
+				A5D3D7E827FA2C7E0099718A /* Canada.json in Resources */,
 				A5BDE78926679A6200F47416 /* Shia.json in Resources */,
 				A599FEEE269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
 				A576994D259EDCC000757B0F /* Islam (general).json in Resources */,
@@ -1552,6 +1557,7 @@
 				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A58C8D9427F1DEC900596F34 /* Pastafarianism.json in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */,
+				A5D3D7E727FA2C7E0099718A /* Canada.json in Resources */,
 				A54539E026A9BA180028EAD5 /* Shia (times).json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A5BD09D026B2D40D00738C0B /* United Nations International Years.json in Resources */,

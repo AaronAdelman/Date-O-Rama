@@ -1,0 +1,12 @@
+{
+    "titles": {"en": "Canada", "he": "קנדה"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
+    "calendarColor": {"red": 0.77, "green": 0.24, "blue": 0.17},
+    "eventSpecifications": [
+        {"type": "nD", "start": {"d": 3, "mon": 2}, "end": {"d": 13, "mon": 2}, "titles": {"en": "Quebec Winter Carnival"}, "emoji": "❄️"},
+        {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "National Tartan Day"}, "1st": {"era": 1, "year": 1985}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
+
+    ]
+}
