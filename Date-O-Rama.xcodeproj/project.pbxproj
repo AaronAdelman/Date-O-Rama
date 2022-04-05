@@ -421,6 +421,10 @@
 		A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */; };
 		A5E759112768D0F8008D7D57 /* European Days.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E759102768D0F8008D7D57 /* European Days.json */; };
 		A5E759122768D0F8008D7D57 /* European Days.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E759102768D0F8008D7D57 /* European Days.json */; };
+		A5E8BADA27FCADC30018CD36 /* Tunisia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAD927FCADC30018CD36 /* Tunisia.json */; };
+		A5E8BADB27FCADC30018CD36 /* Tunisia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAD927FCADC30018CD36 /* Tunisia.json */; };
+		A5E8BADD27FCAF700018CD36 /* Philippines.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BADC27FCAF700018CD36 /* Philippines.json */; };
+		A5E8BADE27FCAF700018CD36 /* Philippines.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BADC27FCAF700018CD36 /* Philippines.json */; };
 		A5EE116E26C563F10050495C /* ASAEventSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASAEventSpecificationType.swift */; };
 		A5EE117826C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
@@ -769,6 +773,8 @@
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
 		A5E759102768D0F8008D7D57 /* European Days.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "European Days.json"; sourceTree = "<group>"; };
+		A5E8BAD927FCADC30018CD36 /* Tunisia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tunisia.json; sourceTree = "<group>"; };
+		A5E8BADC27FCAF700018CD36 /* Philippines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Philippines.json; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EF523727959D37000012AC /* Druzism (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Druzism (Gregorian).json"; sourceTree = "<group>"; };
 		A5EF523A2795A44E000012AC /* Druzism (Islamic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Druzism (Islamic).json"; sourceTree = "<group>"; };
@@ -924,6 +930,7 @@
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
 				A563701F27382A91008DE963 /* New Age.json */,
 				A58C8D9327F1DEC900596F34 /* Pastafarianism.json */,
+				A5E8BADC27FCAF700018CD36 /* Philippines.json */,
 				A5DC9C7D27285D2100047F64 /* Planets.json */,
 				A5765A37279ED15900BF1F7E /* Rural.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
@@ -936,6 +943,7 @@
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
 				A5F43E262786113400FCDB88 /* Thelema.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
+				A5E8BAD927FCADC30018CD36 /* Tunisia.json */,
 				A5C7793C26B8382600DD6009 /* United Nations International Days and Weeks.json */,
 				A5BD09CC26B1B31100738C0B /* United Nations International Decades.json */,
 				A5BD09CF26B2D40D00738C0B /* United Nations International Years.json */,
@@ -1479,6 +1487,7 @@
 				A576994C259EDCC000757B0F /* Judaism.json in Resources */,
 				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
 				A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */,
+				A5E8BADE27FCAF700018CD36 /* Philippines.json in Resources */,
 				A54539E426A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
 				A5D3D7E527FA20CC0099718A /* Australia.json in Resources */,
 				A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */,
@@ -1519,6 +1528,7 @@
 				A53639A126EF7A000083C571 /* Christianity (Gregorian, general).json in Resources */,
 				A5BD09CE26B1B31100738C0B /* United Nations International Decades.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
+				A5E8BADB27FCADC30018CD36 /* Tunisia.json in Resources */,
 				A5EE117926C573910050495C /* Moon.json in Resources */,
 				A5B91141268E7C9E0058EA69 /* Time changes.json in Resources */,
 			);
@@ -1539,6 +1549,7 @@
 				A5837BE1271C139700047475 /* Named full moons.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
+				A5E8BADA27FCADC30018CD36 /* Tunisia.json in Resources */,
 				A5EF523827959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5F43E272786113400FCDB88 /* Thelema.json in Resources */,
 				A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */,
@@ -1584,6 +1595,7 @@
 				A5BC24C02796EABE00D14B21 /* Jewish planetary hours.json in Resources */,
 				A5D3D7DE27FA14640099718A /* United States of America.json in Resources */,
 				A5BDE7A32667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
+				A5E8BADD27FCAF700018CD36 /* Philippines.json in Resources */,
 				A533798124B2333500340C0B /* Sun.json in Resources */,
 				A5BC61462709B11800888611 /* Christianity (Gregorian, supplemental).json in Resources */,
 				A5CBB51024FD54310084DF72 /* Antisemitism (Gregorian).json in Resources */,

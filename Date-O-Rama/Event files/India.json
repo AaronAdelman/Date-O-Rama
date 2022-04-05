@@ -4,6 +4,7 @@
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.95, "green": 0.62, "blue": 0.29},
+    "emoji": "🇮🇳",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 1}, "titles": {"en": "Pravasi Bharatiya Diwas/NRI (Non-Resident Indian) Day"}, "1st": {"era": 1, "y": 2003}, "urls": {"en": "https://en.wikipedia.org/wiki/Pravasi_Bharatiya_Divas"}},
         {"type": "1D", "start": {"d": 10, "mon": 1}, "titles": {"en": "World Hindi Day"}},
@@ -34,6 +35,9 @@
         {"type": "1D", "start": {"d": 26, "mon": 11}, "titles": {"en": "Indian Constitution Day"}},
         {"type": "1D", "start": {"d": 27, "mon": 11}, "titles": {"en": "Indian Organ Donation Day"}},
         {"type": "1D", "start": {"d": 4, "mon": 12}, "titles": {"en": "Indian Navy Day"}},
-
+        {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "Jallianwala Bagh Massacre Day"}},
+        {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "37th Siachen Day"}},
+        {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "B.R. Ambedkar Remembrance Day"}},
+        {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "Mahavir Janma Kalyanak"}},
     ]
 }
