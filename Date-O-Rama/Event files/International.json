@@ -267,6 +267,7 @@
         {"type": "1D", "start": {"d": 4, "mon": 4}, "titles": {"en": "International Pillow Fight Day"}},
         {"type": "1D", "start": {"d": 4, "mon": 4}, "titles": {"en": "World Rat Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-rat-day/"}, "1st": {"era": 1, "y": 2002}, "emoji": "🐀"},
         {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "National Maritime Day"}},
+        {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "National Nebraska Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-nebraska-day-april-5/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "Bohring-Opitz Syndrome Awareness Day"}},
         {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "National Carbonara Day"}},
         {"type": "1D", "start": {"d": 7, "mon": 4}, "titles": {"en": "Equal Pay Day"}},
