@@ -23,5 +23,8 @@
         {"titles": {"en": "Mother’s Day"}, "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1914}, "urls": {"en": "https://www.daysoftheyear.com/days/mothers-day/"}, "emoji": "👩‍👧‍👧"},
         {"titles": {"en": "Father’s Day"}, "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}, "urls": {"en": "https://en.wikipedia.org/wiki/Father%27s_Day_(United_States)"}, "emoji": "👨‍👦‍👦"},
 
+
+        {"type": "1D", "start": {"d": 4, "mon": 1}, "titles": {"en": "National Missouri Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, "1st": {"era": 1, "y": 2017}},
+
     ]
 }
