@@ -11,6 +11,7 @@
         {"type": "1D", "start": {"d": 13, "mon": 1}, "titles": {"en": "Stephen Foster Memorial Day"}, "1st": {"era": 1, "y": 1952}, "urls": {"en": "https://nationaldaycalendar.com/stephen-foster-memorial-day-january-13/"}},
         {"type": "1D", "start": {"d": 14, "mon": 1}, "titles": {"en": "Ratification Day"}, "urls": {"en": "https://nationaldaycalendar.com/ratification-day-january-14/"}, "1st": {"era": 1, "y": 1784}},
         {"type": "1D", "start": {"d": 16, "mon": 1}, "titles": {"en": "National Religious Freedom Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/"}, "1st": {"era": 1, "y": 1786}},
+        {"type": "1D", "start": {"d": 22, "mon": 1}, "titles": {"en": "National Sanctity of Human Life Day"}, "1st": {"type": "1D", "era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, "emoji": "👶"},
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Freedom Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-freedom-day-february-1/"}, "1st": {"era": 1, "y": 1949}},
         {"type": "1D", "start": {"d": 2, "mon": 4}, "titles": {"en": "Pascua Florida"}},
         {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "National Tartan Day"}, "1st": {"era": 1, "year": 1998}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},

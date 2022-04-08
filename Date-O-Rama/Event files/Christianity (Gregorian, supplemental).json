@@ -71,6 +71,7 @@
         {"titles": {"en": "White Day"}, "type": "1D", "start": {"mon": 3, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 1978}, "emoji": "🤍", "urls": {"en": "https://www.daysoftheyear.com/days/white-day/"}},
         {"titles": {"en": "Black Day"}, "type": "1D", "start": {"mon": 4, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 1978}, "emoji": "🖤", "urls": {"en": "https://en.wikipedia.org/wiki/Black_Day_(South_Korea)"}},
 
-
+        {"type": "1D", "start": {"d": 22, "mon": 1}, "titles": {"en": "National Sanctity of Human Life Day"}, "1st": {"type": "1D", "era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, "emoji": "👶"},
+        {"type": "1D", "start": {"mon": 1, "wkd": [1], "wkdRecurrence": 3}, "titles": {"en": "National Sanctity of Human Life Sunday"}, "1st": {"type": "1D", "era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, "emoji": "👶"},
     ]
 }
