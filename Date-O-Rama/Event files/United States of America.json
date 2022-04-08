@@ -25,6 +25,15 @@
 
 
         {"type": "1D", "start": {"d": 4, "mon": 1}, "titles": {"en": "National Missouri Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, "1st": {"era": 1, "y": 2017}},
+        {"type": "1D", "start": {"d": 11, "mon": 1}, "titles": {"en": "National Arkansas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-arkansas-day-january-11/"}, "1st": {"era": 1, "y": 2017}},
+        {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "National Florida Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-florida-day-january-25/"}, "1st": {"era": 1, "y": 2017}},
+        {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
+        {"type": "1D", "start": {"d": 8, "mon": 2}, "titles": {"en": "National Iowa Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-iowa-day-february-8/"}},
+        {"type": "1D", "start": {"d": 15, "mon": 2}, "titles": {"en": "National Wisconsin Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-wisconsin-day-february-15/"}},
+        {"type": "1D", "start": {"d": 22, "mon": 2}, "titles": {"en": "National California Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-california-day-february-22/"}},
+        {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "National Nebraska Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-nebraska-day-april-5/"}, "1st": {"era": 1, "y": 2017}},
+        {"type": "1D", "start": {"d": 9, "mon": 11}, "titles": {"en": "National Louisiana Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-louisiana-day-november-9/"}},
+
 
     ]
 }

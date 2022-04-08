@@ -40,5 +40,14 @@
         {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "37th Siachen Day"}},
         {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "B.R. Ambedkar Remembrance Day"}},
         {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "Mahavir Janma Kalyanak"}},
+        {"type": "1D", "start": {"d": 5, "mon": 2}, "titles": {"en": "Basant Panchami"}},
+        {"type": "1D", "start": {"d": 20, "mon": 2}, "titles": {"en": "Arunachal Pradesh Statehood Day"}},
+        {"type": "1D", "start": {"d": 21, "mon": 2}, "titles": {"en": "Mizoram Statehood Day"}},
+        {"type": "1D", "start": {"d": 24, "mon": 4}, "titles": {"en": "National Panchayati Raj Day"}},
+        {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda day"}},
+        {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},
+        {"type": "1D", "start": {"d": 23, "mon": 12}, "titles": {"en": "Kisan Diwas"}},
+        {"type": "1D", "start": {"d": 13, "mon": 2}, "titles": {"en": "Sarojini Naidu’s Birth Anniversary"}},
+
     ]
 }

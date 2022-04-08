@@ -8,5 +8,7 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 23, "mon": 3}, "titles": {"en": "Pakistan Day"}},
         {"type": "1D", "start": {"d": 14, "mon": 8}, "titles": {"en": "Independence Day"}},
+        {"type": "1D", "start": {"d": 9, "mon": 11}, "titles": {"en": "Iqbal Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Iqbal_Day"}},
+
     ]
     }
