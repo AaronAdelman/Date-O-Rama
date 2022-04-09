@@ -16,6 +16,7 @@
         {"type": "1D", "start": {"d": 21, "mon": 1}, "titles": {"en": "Meghalaya Statehood Day"}},
         {"type": "1D", "start": {"d": 21, "mon": 1}, "titles": {"en": "Manipur Statehood Day"}},
         {"type": "1D", "start": {"d": 23, "mon": 1}, "titles": {"en": "Netaji Subhas Chandra Bose Jayanti"}},
+        {"type": "1D", "start": {"d": 24, "mon": 1}, "titles": {"en": "National Girl Child Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Girl_Child_Day"}, "emoji": "👧", "1st": {"era": 1, "y": 2008}},
         {"type": "1D", "start": {"d": 24, "mon": 1}, "titles": {"en": "Uttar Pradesh Foundation Day"}},
         {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "National Voters Day"}},
         {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "National Tourism Day"}},
