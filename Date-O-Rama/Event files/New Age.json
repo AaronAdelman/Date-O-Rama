@@ -17,6 +17,7 @@
         {"titles": {"en": "International Day of Radiant Peace"}, "type": "1D", "start": {"mon": 9, "d": 22}, "1st": {"type": "1D", "era": 1, "y": 2000}, "urls": {"en": "http://www.giftypedia.com/International_Day_of_Radiant_Peace"}, "emoji": "☮️"},
         {"titles": {"en": "Day Out of Time Day"}, "type": "1D", "start": {"mon": 7, "d": 25}, "urls": {"en": "http://www.giftypedia.com/Day_Out_of_Time_Day"}, "emoji": "⏳"},
         {"titles": {"en": "Tangible Karma Day"}, "type": "1D", "start": {"mon": 4, "wkd": [7], "wkdRecurrence": 1}, "1st": {"type": "1D", "era": 1, "y": 2005}, "urls": {"en": "https://www.daysoftheyear.com/days/tangible-karma-day/"}, "emoji": "🪷"},
+        {"type": "1D", "start": {"d": 10, "mon": 4}, "titles": {"en": "World Homeopathy Day"}, "urls": {"en": "http://skepdic.com/homeo.html"}},
 
     ]
 }

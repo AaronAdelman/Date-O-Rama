@@ -429,6 +429,8 @@
 		A5E8BAE127FCCDD00018CD36 /* Pakistan.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BADF27FCCDD00018CD36 /* Pakistan.json */; };
 		A5E8BAE327FCCF0B0018CD36 /* Bangladesh.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE227FCCF0B0018CD36 /* Bangladesh.json */; };
 		A5E8BAE427FCCF0B0018CD36 /* Bangladesh.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE227FCCF0B0018CD36 /* Bangladesh.json */; };
+		A5E8BAE628047B9E0018CD36 /* Liberia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE528047B9E0018CD36 /* Liberia.json */; };
+		A5E8BAE728047B9E0018CD36 /* Liberia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE528047B9E0018CD36 /* Liberia.json */; };
 		A5EE116E26C563F10050495C /* ASAEventSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASAEventSpecificationType.swift */; };
 		A5EE117826C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
@@ -781,6 +783,7 @@
 		A5E8BADC27FCAF700018CD36 /* Philippines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Philippines.json; sourceTree = "<group>"; };
 		A5E8BADF27FCCDD00018CD36 /* Pakistan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pakistan.json; sourceTree = "<group>"; };
 		A5E8BAE227FCCF0B0018CD36 /* Bangladesh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Bangladesh.json; sourceTree = "<group>"; };
+		A5E8BAE528047B9E0018CD36 /* Liberia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Liberia.json; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EF523727959D37000012AC /* Druzism (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Druzism (Gregorian).json"; sourceTree = "<group>"; };
 		A5EF523A2795A44E000012AC /* Druzism (Islamic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Druzism (Islamic).json"; sourceTree = "<group>"; };
@@ -929,6 +932,7 @@
 				A56CE62924C43BED00865E95 /* Judaism (minor fasts).json */,
 				A584C8FF24B646210014CE2E /* Judaism (times).json */,
 				A5E3606324C71FBC0000A268 /* Judaism.json */,
+				A5E8BAE528047B9E0018CD36 /* Liberia.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch.json */,
 				A5EE117726C573900050495C /* Moon.json */,
 				A507B0AE270ECCCF00BDAE06 /* Mormonism.json */,
@@ -1522,6 +1526,7 @@
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5769955259EDCC000757B0F /* Judaism (times).json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
+				A5E8BAE728047B9E0018CD36 /* Liberia.json in Resources */,
 				A5FED7EA276BA65100BB11C9 /* Scientology.json in Resources */,
 				A5837BE2271C139700047475 /* Named full moons.json in Resources */,
 				A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */,
@@ -1592,6 +1597,7 @@
 				A53639A026EF7A000083C571 /* Christianity (Gregorian, general).json in Resources */,
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
 				A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */,
+				A5E8BAE628047B9E0018CD36 /* Liberia.json in Resources */,
 				A5EE117826C573910050495C /* Moon.json in Resources */,
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */,

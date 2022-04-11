@@ -7,6 +7,7 @@
     "emoji": "🇧🇩",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 26, "mon": 3}, "titles": {"en": "Independence Day"}},
+        {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "Bengali New Year (Pôhela Boishakh)", "bn": "পহেলা বৈশাখ"}},
         {"type": "1D", "start": {"d": 14, "mon": 12}, "titles": {"en": "Martyred Intellectuals Day"}},
     ]
     }

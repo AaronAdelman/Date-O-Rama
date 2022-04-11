@@ -1,0 +1,11 @@
+{
+    "titles": {"en": "Liberia", "he": "ליבריה"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
+    "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
+    "emoji": "🇱🇷",
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 12, "mon": 4}, "titles": {"en": "National Redemption Day"}},
+    ]
+}
