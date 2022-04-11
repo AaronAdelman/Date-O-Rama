@@ -1,0 +1,11 @@
+{
+    "titles": {"en": "United Kingdom", "he": "בריטניה"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
+    "calendarColor": {"red": 0.72, "green": 0.17, "blue": 0.21},
+    "emoji": "🇬🇧",
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "Burns Night"}, "urls": {"en": "https://www.scotland.org/events/burns-night/the-ultimate-guide-to-burns-night"}, "emoji": "🥃", "notes": {"en": "Robert Burns Day\nRabbie Burns Day"}, "1st": {"era": 1, "y": 1801}},
+    ]
+}
