@@ -1,0 +1,10 @@
+{
+    "titles": {"en": "Sikhism (supplemental)"},
+    "supportedLocales": ["en"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.96, "green": 0.78, "blue": 0.27},
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "International Turban Day"}, "urls": {"en": "https://www.sikhiwiki.org/index.php/International_Turban_Day"}, "1st": {"era": 1, "y": 2004}, "emoji": "👳‍♂️👳‍♀️"},
+    ]
+}

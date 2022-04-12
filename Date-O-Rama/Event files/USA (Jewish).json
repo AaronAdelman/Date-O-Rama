@@ -1,0 +1,11 @@
+{
+    "titles": {"en": "United States (Jewish)", "he": "ארצות הברית (יהודי)"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "heb*",
+    "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
+    "emoji": "🇺🇸",
+    "eventSpecifications": [
+        {"titles": {"en": "National Education and Sharing Day"}, "type": "1D", "start": {"mon": 8, "d": 11}, "urls": {"en": "https://nationaldaycalendar.com/national-education-and-sharing-day-changes-annually/"}, "1st": {"era": 0, "y": 5783}},
+    ]
+}
