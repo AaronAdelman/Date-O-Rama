@@ -17,7 +17,10 @@
         {"type": "1D", "start": {"d": 2, "mon": 4}, "titles": {"en": "Pascua Florida"}},
         {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "National Tartan Day"}, "1st": {"era": 1, "year": 1998}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Former Prisoner of War Recognition Day"}, "1st": {"era": 1, "y": 1988}, "urls": {"en": "https://nationaldaycalendar.com/national-former-prisoner-of-war-recognition-day-april-9/"}},
-
+        {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "National Borinqueneers Day"}, "1st": {"era": 1, "y": 2021}, "urls": {"en": "https://nationaldaycalendar.com/national-borinqueneers-day-april-13/"}, "emoji": "🇵🇷"},
+        {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "National Pan American Day"}, "1st": {"era": 1, "y": 1931}, "urls": {"en": "https://nationaldaycalendar.com/national-pan-american-day-april-14/"}, "emoji": "🌎"},
+        {"type": "1D", "start": {"d": 16, "mon": 4}, "titles": {"en": "Emancipation Day"}, "locations": {"en": "District of Columbia"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#District_of_Columbia"}, "1st": {"era": 1, "y": 2005}},
+        
         {"type": "1D", "start": {"d": 4, "mon": 7}, "titles": {"en": "Independence Day"}, "1st": {"era": 1, "y": 1776}},
         {"type": "1D", "start": {"d": 2, "thruD": 8, "mon": 11, "wkd": [3]}, "titles": {"en": "Election Day"}},
         {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "Gold Star Spouses Day"}, "1st": {"era": 1, "y": 2011}, "urls": {"en": "https://nationaldaycalendar.com/gold-star-spouses-day-april-5/"}, "emoji": "⭐️"},
