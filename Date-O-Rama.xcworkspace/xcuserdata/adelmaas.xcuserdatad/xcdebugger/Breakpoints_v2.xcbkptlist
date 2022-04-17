@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "741"
             endingLineNumber = "741"
-            landmarkName = "match(date:calendar:locationData:eventSpecification:components:startOfDay:startOfNextDay:previousSunset:nightHourLength:sunrise:hourLength:previousOtherDusk:otherNightHourLength:otherDawn:otherHourLength:)"
+            landmarkName = "match(date:calendar:locationData:eventSpecification:components:startOfDay:startOfNextDay:previousSunset:nightHourLength:sunrise:hourLength:previousOtherDusk:otherNightHourLength:otherDawn:otherHourLength:type:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

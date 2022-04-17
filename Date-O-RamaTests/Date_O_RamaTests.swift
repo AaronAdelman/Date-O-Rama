@@ -1179,5 +1179,16 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(endDate != nil)
     }
     
+    func testEventRelevance() throws {
+        let startDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 50, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
+        let endDate = GregorianDate(era: 1, year: 2022, month: 5, day: 27, hour: 3, minute: 17, second: 50, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
+        
+        let eventStartDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 11, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
+        let eventEndDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 50, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
+        
+        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitleWithoutLocation: "Foo", calendarCode: .HebrewGRA, locationData: ASALocation.NullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, category: .generic, type: .oneDay)
+        
+        XCTAssertFalse(event.relevant(startDate: startDate, endDate: endDate))
+    }
     
 } // class Date_O_RamaTests
