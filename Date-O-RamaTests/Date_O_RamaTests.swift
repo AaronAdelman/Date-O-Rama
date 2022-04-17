@@ -131,8 +131,8 @@ class Date_O_RamaTests: XCTestCase {
         let CE = 1
         
         let components0 = ASADateComponents(calendar: ASACalendarFactory.calendar(code: .Gregorian)!, locationData: ASALocation.NullIsland, era: CE, year: 2021, month: 2, weekday: 4, day: 17, hour: 14, minute: 32, second: 15, nanosecond: 123)
-        let startDateSpecification0 = ASADateSpecification(type: ASADateSpecificationType.oneDay, month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
-        let endDateSpecification0 = ASADateSpecification(type: ASADateSpecificationType.oneDay, month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
+        let startDateSpecification0 = ASADateSpecification(month: 01, day: 01, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
+        let endDateSpecification0 = ASADateSpecification(month: 12, day: 31, weekdays: [ASAWeekday.sunday, ASAWeekday.monday, ASAWeekday.tuesday, ASAWeekday.wednesday, ASAWeekday.thursday, ASAWeekday.friday, ASAWeekday.saturday])
         
         let components0EYMD = components0.EYMD
         let startDateSpecification0EMYD = startDateSpecification0.EYMD
@@ -1146,8 +1146,8 @@ class Date_O_RamaTests: XCTestCase {
     
     func testPisces() throws {
         // This test checks whether multi-months are working right.  The Pisces event for the Jewish zodiac event calendars was reporting no end date, leading to a debugging session to find and fix the problem.
-        let startDateSpecification = ASADateSpecification(type: .multiMonth, pointEventType: nil, era: nil, year: nil, month: 6, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
-        let endDateSpecification: ASADateSpecification = ASADateSpecification(type: .multiMonth, pointEventType: nil, era: nil, year: nil, month: 7, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
+        let startDateSpecification = ASADateSpecification(pointEventType: nil, era: nil, year: nil, month: 6, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
+        let endDateSpecification: ASADateSpecification = ASADateSpecification(pointEventType: nil, era: nil, year: nil, month: 7, day: nil, hour: nil, minute: nil, second: nil, nanosecond: nil, weekdays: nil, weekdayRecurrence: nil, lengthsOfMonth: nil, lengthsOfYear: [383, 384, 385], dayOfYear: nil, yearDivisor: nil, yearRemainder: nil, offsetDays: nil, throughDay: nil, degreesBelowHorizon: nil, rising: nil, offset: nil, solarHours: nil, dayHalf: nil, body: nil, calculationMethod: nil, asrJuristicMethod: nil, adjustingMethodForHigherLatitudes: nil, dhuhrMinutes: nil, Easter: nil, equinoxOrSolstice: nil, timeChange: nil, MoonPhase: nil)
         let filledInStartDateEYM: Array<Int?> = [0, 5782, 6]
         let filledInEndDateEYM: Array<Int?> = [0, 5782, 7]
         
@@ -1169,8 +1169,8 @@ class Date_O_RamaTests: XCTestCase {
 
         let components: ASADateComponents = ASADateComponents(calendar: calendar, locationData: location, era: 0, year: 5782, yearForWeekOfYear: nil, quarter: nil, month: 6, isLeapMonth: false, weekOfMonth: nil, weekOfYear: nil, weekday: 5, weekdayOrdinal: nil, day: 30, hour: 12, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
 
-        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date)
-        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date)
+        let startDate = tweakedStartDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: false, baseDate: date, type: .multiMonth)
+        let endDate = tweakedEndDateSpecification.date(dateComponents: components, calendar: calendar, isEndDate: true, baseDate: date, type: .multiMonth)
         
         debugPrint(#file, #function, startDate as Any, endDate as Any)
         XCTAssert(startDate != nil)
