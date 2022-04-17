@@ -29,6 +29,10 @@ func GregorianDate(era: Int, year: Int, month: Int, day: Int, hour: Int, minute:
 
 
 class Date_O_RamaTests: XCTestCase {
+    
+    let CharlestonLocation = CLLocation(latitude: 32.783333, longitude: -79.933333)
+    let CharlestonTimeZone = TimeZone(identifier: "America/New_York")!
+    
     let testDate:  Date = {
         return GregorianDate(era: 1, year: 2020, month: 12, day: 16, hour: 10, minute: 57, second: 0, secondsFromGMT: 0)
     }()
@@ -1129,8 +1133,6 @@ class Date_O_RamaTests: XCTestCase {
     
     func testApril30ToMay1() throws {
         // This test checks whether on April 30, 2021 and May 1, 2021 in Charleston, SC the code correctly reports there being both Sunrise and Sunset
-        let CharlestonLocation = CLLocation(latitude: 32.783333, longitude: -79.933333)
-        let CharlestonTimeZone = TimeZone(identifier: "America/New_York")!
         let events: Array<ASASolarEvent> = [.sunrise, .sunset]
         
         let April30 = GregorianDate(era: 1, year: 2021, month: 4, day: 30, hour: 16, minute: 0, second: 0, secondsFromGMT: 0)
