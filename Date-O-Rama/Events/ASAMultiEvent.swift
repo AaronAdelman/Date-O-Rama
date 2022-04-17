@@ -105,15 +105,11 @@ struct ASAMultiEvent:  ASAEventCompatible {
     var category: ASAEventCategory = .generic
     
     var emoji: String? {
-        let emojis = self.events.map { $0.emoji }
-        var reduced: Array<String> = []
-        for emoji in emojis {
-            if emoji != nil {
-                reduced.append(emoji!)
-            }
+        if self.events.count == 0 {
+            return nil
         }
         
-        return reduced.asFormattedList
+        return self.events[0].emoji
     }
     
     var fileEmoji: String? {
