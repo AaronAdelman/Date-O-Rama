@@ -48,6 +48,7 @@
         {"type": "1D", "start": {"d": 2, "mon": 3}, "titles": {"en": "Texas Independence Day"}},
         {"type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Tax Day"}},
         {"type": "1D", "start": {"d": 14, "mon": 6}, "titles": {"en": "Flag Day"}},
+        {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Veterans Day"}},
 
     ]
 }

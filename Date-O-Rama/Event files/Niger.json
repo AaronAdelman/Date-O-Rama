@@ -1,0 +1,13 @@
+{
+    "titles": {"en": "Niger", "he": "ניז׳ר"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "emoji": "🇳🇪",
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 3, "mon": 8}, "titles": {"en": "Independence Day"}},
+    ]
+}
+
+

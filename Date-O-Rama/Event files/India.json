@@ -64,6 +64,10 @@
         {"type": "1D", "start": {"d": 4, "mon": 3}, "titles": {"en": "Ramakrishna Jayanti"}},
         {"type": "1D", "start": {"d": 31, "mon": 3}, "titles": {"en": "Memorial Day of Phra Nangklao Chaoyuhua"}},
         {"type": "1D", "start": {"d": 1, "mon": 4}, "titles": {"en": "Odisha Foundation Day"}},
+        {"type": "1D", "start": {"d": 14, "mon": 9}, "titles": {"en": "Hindi Day"}},
+        {"type": "1D", "start": {"d": 15, "mon": 9}, "titles": {"en": "Sanchayika Day"}},
+        {"type": "nD", "start": {"d": 1, "mon": 12}, "end": {"d": 10, "mon": 12}, "titles": {"en": "Hornbill Festival (Nagaland)"}},
+        {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa’s Liberation Day"}},
 
         {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda day"}},
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},
