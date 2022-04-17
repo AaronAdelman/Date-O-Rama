@@ -75,5 +75,6 @@
         {"type": "1D", "start": {"mon": 1, "wkd": [1], "wkdRecurrence": 3}, "titles": {"en": "National Sanctity of Human Life Sunday"}, "1st": {"type": "1D", "era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, "emoji": "👶"},
         
         {"type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Father Damien Day"}},
+        {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "St. David’s Day"}},
     ]
 }

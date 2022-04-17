@@ -14,6 +14,7 @@
         {"type": "1D", "start": {"d": 22, "mon": 1}, "titles": {"en": "National Sanctity of Human Life Day"}, "1st": {"type": "1D", "era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, "emoji": "👶"},
         {"titles": {"en": "Data Protection Day"}, "type": "1D", "start": {"mon": 1, "d": 28}, "1st": {"type": "1D", "era": 1, "y": 2009}, "emoji": "📀", "urls": {"en": "https://nationaldaycalendar.com/data-privacy-day-january-28/"}},
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Freedom Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-freedom-day-february-1/"}, "1st": {"era": 1, "y": 1949}},
+        {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Presidents’ Day"}},
         {"type": "1D", "start": {"d": 2, "mon": 4}, "titles": {"en": "Pascua Florida"}},
         {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "National Tartan Day"}, "1st": {"era": 1, "year": 1998}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Former Prisoner of War Recognition Day"}, "1st": {"era": 1, "y": 1988}, "urls": {"en": "https://nationaldaycalendar.com/national-former-prisoner-of-war-recognition-day-april-9/"}},
@@ -40,5 +41,13 @@
         {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "National Nebraska Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-nebraska-day-april-5/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 9, "mon": 11}, "titles": {"en": "National Louisiana Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-louisiana-day-november-9/"}},
         {"type": "1D", "start": {"d": 12, "mon": 4}, "titles": {"en": "National Colorado Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-colorado-day-april-12/"}},
+        
+        {"type": "1D", "start": {"d": 17, "mon": 1}, "titles": {"en": "Benjamin Franklin Day"}, "urls": {"en": "https://nationaltoday.com/benjamin-franklin-day/"}},
+       {"type": "1D", "start": {"d": 12, "mon": 2}, "titles": {"en": "Abraham Lincoln’s Birthday"}},
+        {"type": "1D", "start": {"d": 12, "mon": 2}, "titles": {"en": "George Washington’s Birthday"}},
+        {"type": "1D", "start": {"d": 2, "mon": 3}, "titles": {"en": "Texas Independence Day"}},
+        {"type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Tax Day"}},
+        {"type": "1D", "start": {"d": 14, "mon": 6}, "titles": {"en": "Flag Day"}},
+
     ]
 }

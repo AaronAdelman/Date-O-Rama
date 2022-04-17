@@ -59,6 +59,11 @@
         {"type": "1D", "start": {"d": 25, "mon": 9}, "titles": {"en": "Antyodaya Diwas"}},
         {"type": "1D", "start": {"d": 2, "mon": 10}, "titles": {"en": "Gandhi Jayanti"}},
         {"type": "1D", "start": {"d": 24, "mon": 10}, "titles": {"en": "Raising Day of Indo-Tibetan Border Police"}},
+        {"type": "1D", "start": {"d": 5, "mon": 2}, "titles": {"en": "Kashmir Solidarity Day"}},
+        {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "Maha Shivratri"}},
+        {"type": "1D", "start": {"d": 4, "mon": 3}, "titles": {"en": "Ramakrishna Jayanti"}},
+        {"type": "1D", "start": {"d": 31, "mon": 3}, "titles": {"en": "Memorial Day of Phra Nangklao Chaoyuhua"}},
+        {"type": "1D", "start": {"d": 1, "mon": 4}, "titles": {"en": "Odisha Foundation Day"}},
 
         {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda day"}},
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},

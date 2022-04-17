@@ -1,0 +1,13 @@
+{
+    "titles": {"en": "France", "he": "צרפת"},
+    "supportedLocales": ["en", "he"],
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "emoji": "🇫🇷",
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}},
+    ]
+}
+
+

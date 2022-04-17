@@ -44,5 +44,7 @@
         {"titles": {"en": "National Day of Poland"}, "type": "1D", "start": {"mon": 11, "d": 11}, "emoji": "🇵🇱"},
         {"titles": {"en": "National Day of Latvia"}, "type": "1D", "start": {"mon": 11, "d": 18}, "emoji": "🇱🇻"},
         {"titles": {"en": "National Day of Monaco"}, "type": "1D", "start": {"mon": 11, "d": 19}, "emoji": "🇲🇨"},
+        
+        {"type": "1D", "start": {"d": 6, "mon": 3}, "titles": {"en": "European Day of the Righteous"}},
     ]
 }
