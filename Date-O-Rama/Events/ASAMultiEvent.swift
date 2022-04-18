@@ -109,7 +109,14 @@ struct ASAMultiEvent:  ASAEventCompatible {
             return nil
         }
         
-        return self.events[0].emoji
+        for event in self.events {
+            let emoji = event.emoji
+            if emoji != nil {
+                return emoji
+            }
+        }
+        
+        return nil
     }
     
     var fileEmoji: String? {
