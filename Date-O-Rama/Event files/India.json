@@ -68,6 +68,7 @@
         {"type": "1D", "start": {"d": 15, "mon": 9}, "titles": {"en": "Sanchayika Day"}},
         {"type": "nD", "start": {"d": 1, "mon": 12}, "end": {"d": 10, "mon": 12}, "titles": {"en": "Hornbill Festival (Nagaland)"}},
         {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa’s Liberation Day"}},
+        {"type": "1D", "start": {"d": 21, "mon": 4}, "titles": {"en": "National Civil Service Day"}},
 
         {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda day"}},
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},

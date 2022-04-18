@@ -7,5 +7,6 @@
     "emoji": "🇬🇧",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "Burns Night"}, "urls": {"en": "https://www.scotland.org/events/burns-night/the-ultimate-guide-to-burns-night"}, "emoji": "🥃", "notes": {"en": "Robert Burns Day\nRabbie Burns Day"}, "1st": {"era": 1, "y": 1801}},
+        {"type": "1D", "start": {"d": 21, "mon": 4}, "titles": {"en": "National Tea Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tea-day/"}, "emoji": "☕️"},
     ]
 }
