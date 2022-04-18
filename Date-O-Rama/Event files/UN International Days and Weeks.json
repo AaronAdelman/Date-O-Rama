@@ -227,5 +227,7 @@
         {"titles": {"en": "World Hearing Day"}, "type": "1D", "start": {"mon": 3, "d": 3}, "1st": {"type": "1D", "era": 1, "y": 2016}, "emoji": "👂", "urls": {"en": "https://en.wikipedia.org/wiki/World_Hearing_Day"}},
         {"type": "1D", "start": {"mon": 1, "wkd": [1], "wkdRecurrence": -1}, "titles": {"en": "World Leprosy Day"}, "notes": {"en": "World Leprosy Eradication Day\nWLD"}, "urls": {"en": "https://www.timeanddate.com/holidays/world/world-leprosy-day"}},
         {"type": "1D", "start": {"d": 30, "mon": 1}, "titles": {"en": "World Neglected Tropical Diseases Day"}, "notes": {"en": "World NTD Day"}, "urls": {"en": "https://www.neglecteddiseases.gov/resources/events/world-ntd-day/"}, "1st": {"era": 1, "y": 2020}},
+        {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "International Day For Monuments and Sites"}, "notes": {"en": "World Heritage Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-heritage-day/"}, "1st": {"era": 1, "y": 1982}},
+
     ]
 }
