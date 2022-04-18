@@ -252,7 +252,7 @@
         {"type": "1D", "start": {"d": 17, "mon": 4}, "titles": {"en": "World Hemophilia Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-hemophilia-day/"}, "emoji": "🩸", "1st": {"era": 1, "y": 1989}},
         {"type": "1D", "start": {"d": 17, "mon": 4}, "titles": {"en": "International Bat Appreciation Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/bat-appreciation-day/"}, "emoji": "🦇"},
         {"type": "1D", "start": {"mon": 4, "d": 17}, "titles": {"en": "International Haiku Poetry Day"}, "notes": {"en": "National Haiku Poetry Day\nHaiku Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/haiku-poetry-day/"}},
-        {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "International Amateur Radio Day"}},
+        {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "International Amateur Radio Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/amateur-radio-day/"}, "emoji": "📻"},
         {"type": "1D", "start": {"d": 19, "mon": 4}, "titles": {"en": "Dutch-American Friendship Day"}},
         {"type": "1D", "start": {"d": 20, "mon": 4}, "titles": {"en": "Volunteer Recognition Day "}},
         {"type": "1D", "start": {"d": 21, "mon": 4}, "titles": {"en": "National Civil Service Day"}},

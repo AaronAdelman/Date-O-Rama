@@ -48,7 +48,7 @@
         {"type": "1D", "start": {"d": 2, "mon": 3}, "titles": {"en": "Texas Independence Day"}},
         {"type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Tax Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-tax-day-april-15/"}},
         {"type": "1D", "start": {"d": 17, "mon": 4}, "titles": {"en": "National Ellis Island Family History Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-ellis-island-family-history-day-april-17/"}, "1st": {"era": 1, "y": 2001}, "emoji": "🗽"},
-        {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "National Lineman Appreciation Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-lineman-appreciation-day-april-18/"}, "1st": {"era": 1, "y": 2013}},
+        {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "National Lineman Appreciation Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/lineman-appreciation-day/"}, "1st": {"era": 1, "y": 2013}},
 
         {"type": "1D", "start": {"d": 14, "mon": 6}, "titles": {"en": "Flag Day"}},
         {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Veterans Day"}},
