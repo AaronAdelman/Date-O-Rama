@@ -117,7 +117,7 @@
 {"type": "1D", "start": {"mon": 4, "d": 19}, "titles": {"en": "Lager Day"}, "emoji": "🍻"},
 {"type": "1D", "start": {"mon": 4, "d": 20}, "titles": {"en": "Intergalactic Alien Solidarity Day"}, "emoji": "👾"},
 {"type": "1D", "start": {"mon": 4, "d": 21}, "titles": {"en": "Eggnog Avoidance Day"}},
-{"type": "1D", "start": {"mon": 4, "d": 22}, "titles": {"en": "Earth Day"}, "emoji": "🌎"},
+{"type": "1D", "start": {"mon": 4, "d": 22}, "titles": {"en": "Earth Day"}, "emoji": "🌎", "urls": {"en": "https://www.earthday.org/"}, "1st": {"era": 1, "y": 1970}},
 {"type": "1D", "start": {"mon": 4, "d": 23}, "titles": {"en": "Cynical Bastards Day"}},
 {"type": "1D", "start": {"mon": 4, "d": 24}, "titles": {"en": "Hairball Awareness Day"}},
 {"type": "1D", "start": {"mon": 4, "d": 25}, "titles": {"en": "World Penguin Day"}, "emoji": "🐧"},
