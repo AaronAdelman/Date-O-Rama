@@ -12,10 +12,16 @@ struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
     var row:  ASAClock
     
-    #if os(watchOS)
-    #else
-    @Environment(\.horizontalSizeClass) var sizeClass
-    #endif
+#if os(watchOS)
+let compact = true
+#else
+@Environment(\.horizontalSizeClass) var sizeClass
+var compact:  Bool {
+    get {
+        return self.sizeClass == .compact
+    } // get
+} // var compact
+#endif
     
     var timeWidth:  CGFloat {
         get {
@@ -26,7 +32,7 @@ struct ASATimesSubcell:  View {
                 return 82.5
             }
             
-            if self.sizeClass! == .compact {
+            if compact {
                 return  90.00
             } else {
                 return 120.00
@@ -42,16 +48,32 @@ struct ASATimesSubcell:  View {
     var startDateString: String?
     var endDateString: String
     
+    fileprivate func startDateView() -> ASATimeText {
+        return ASATimeText(verbatim: startDateString!, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
+    }
+    
+    fileprivate func endDateView() -> ASATimeText {
+        return ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate ?? event.startDate, isForClock: isForClock)
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
-//            let (startDateString, endDateString) = row.startAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
-                        
-            if startDateString != nil {
-                ASATimeText(verbatim: startDateString!, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
-            }
-            
-            ASATimeText(verbatim: endDateString, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.endDate ?? event.startDate, isForClock: isForClock)
-        } // VStack
+        if compact {
+            VStack(alignment: .leading) {
+                if startDateString != nil {
+                    startDateView()
+                }
+                
+                endDateView()
+            } // VStack
+        } else {
+            HStack(alignment: .center) {
+                if startDateString != nil {
+                    startDateView()
+                }
+                
+                endDateView()
+            } // HStack
+        }
     } // var body
 } // struct ASATimesSubcell
 

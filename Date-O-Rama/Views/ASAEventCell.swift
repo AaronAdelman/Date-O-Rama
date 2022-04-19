@@ -27,8 +27,6 @@ struct ASAEventCell:  View {
     } // var compact
     #endif
 
-//    var rangeStart:  Date
-//    var rangeEnd:  Date
     var eventIsTodayOnly: Bool
     var startDateString: String?
     var endDateString: String
@@ -51,7 +49,28 @@ struct ASAEventCell:  View {
         
         return basicFont.weight(.semibold)
     } // var titleFont
+    
+    let LINE_LIMIT = 3
 
+    fileprivate func eventSymbolView() -> ModifiedContent<Text, ASAScalable> {
+        return Text(event.symbol!)
+            .font(titleFont)
+            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+    }
+    
+    fileprivate func eventTitleView() -> ModifiedContent<Text, ASAScalable> {
+        return Text(event.title)
+            .font(titleFont)
+            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+    }
+    
+    fileprivate func eventLocationView(_ location: String?) -> ModifiedContent<Text, ASAScalable> {
+        return Text(location!)
+            .font(.callout)
+            .foregroundColor(.secondary)
+            .modifier(ASAScalable(lineLimit: 1))
+    }
+        
     var body: some View {
         let eventSymbol = event.symbol
 
@@ -83,39 +102,47 @@ struct ASAEventCell:  View {
         #else
         HStack {
             ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
-
+            
             if self.eventsViewShouldShowSecondaryDates {
                 let (startDateString, endDateString) = self.secondaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
-
+                
                 ASATimesSubcell(event: event, row: self.secondaryRow, isForClock: isForClock, isPrimaryRow:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
             }
-
+            
             ASAColorRectangle(colors: event.colors)
-
-            VStack(alignment: .leading) {
-                let LINE_LIMIT = 3
-                
+            
+            if compact {
+                VStack(alignment: .leading) {
+                    
+                    HStack(alignment: .top) {
+                        if eventSymbol != nil {
+                            eventSymbolView()
+                        }
+                        eventTitleView()
+                    }
+                    
+                    let location = event.location
+                    if !(location?.isEmpty ?? true) {
+                        eventLocationView(location)
+                    }
+                    
+                    ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
+                } // VStack
+            } else {
                 HStack(alignment: .top) {
                     if eventSymbol != nil {
-                        Text(eventSymbol!)
-                            .font(titleFont)
-                            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+                        eventSymbolView()
                     }
-                    Text(event.title)
-                        .font(titleFont)
-                        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+                    eventTitleView()
                 }
                 
                 let location = event.location
                 if !(location?.isEmpty ?? true) {
-                    Text(location!)
-                        .font(.callout)
-                        .foregroundColor(.secondary)
-                        .modifier(ASAScalable(lineLimit: 1))
+                    eventLocationView(location)
                 }
-
+                
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
-            } // VStack
+            }
         } // HStack
         #endif
     } // var body
