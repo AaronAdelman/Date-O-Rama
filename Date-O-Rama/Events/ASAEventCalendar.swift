@@ -742,6 +742,12 @@ class ASAEventCalendar {
             if !matchesDay.matches {
                 return MATCH_FAILURE
             }
+            
+            // Weird bug-squashing condition
+            if startOfNextDay.timeIntervalSince(startOfDay) < 23.0 * Date.SECONDS_PER_HOUR {
+                return (false, nil, nil)
+            }
+            
             return (true, startOfDay, startOfNextDay)
             
         case .point:
