@@ -120,7 +120,7 @@
 {"type": "1D", "start": {"mon": 4, "d": 22}, "titles": {"en": "Earth Day"}, "emoji": "🌎", "urls": {"en": "https://www.earthday.org/"}, "1st": {"era": 1, "y": 1970}},
 {"type": "1D", "start": {"mon": 4, "d": 23}, "titles": {"en": "Cynical Bastards Day"}},
 {"type": "1D", "start": {"mon": 4, "d": 24}, "titles": {"en": "Hairball Awareness Day"}},
-{"type": "1D", "start": {"mon": 4, "d": 25}, "titles": {"en": "World Penguin Day"}, "emoji": "🐧"},
+{"type": "1D", "start": {"d": 25, "mon": 4}, "titles": {"en": "World Penguin Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-penguin-day/"}, "emoji": "🐧"},
 {"type": "1D", "start": {"mon": 4, "d": 26}, "titles": {"en": "Hug an Australian Day"}, "emoji": "🇦🇺"},
 {"type": "1D", "start": {"mon": 4, "d": 27}, "titles": {"en": "8640 Seconds Day"}},
 {"type": "1D", "start": {"mon": 4, "d": 28}, "titles": {"en": "Blueberry Pie Day"}, "emoji": "🥧"},
