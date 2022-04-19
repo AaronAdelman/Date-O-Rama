@@ -355,6 +355,7 @@
 		A5CA532524979D1D008EEE2F /* ASARowChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C59AC246C5D4B00D7F0BD /* ASARowChooser.swift */; };
 		A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB86402448E03F00DB27A9 /* DateExtensions.swift */; };
 		A5CBB51024FD54310084DF72 /* Antisemitism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5CBB50F24FD54310084DF72 /* Antisemitism (Gregorian).json */; };
+		A5CF4653280F2E3F0088738D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF4652280F2E3F0088738D /* Line.swift */; };
 		A5D135B527C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D135B427C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift */; };
 		A5D135B627C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D135B427C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift */; };
 		A5D135B727C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D135B427C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift */; };
@@ -779,6 +780,7 @@
 		A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarChooserView.swift; sourceTree = "<group>"; };
 		A5CB86402448E03F00DB27A9 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		A5CBB50F24FD54310084DF72 /* Antisemitism (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Antisemitism (Gregorian).json"; sourceTree = "<group>"; };
+		A5CF4652280F2E3F0088738D /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		A5D135B427C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSupportingWeeks.swift; sourceTree = "<group>"; };
 		A5D135B827C41C2200A1A525 /* ASACalendarSupportingMonths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSupportingMonths.swift; sourceTree = "<group>"; };
 		A5D135BC27C537C500A1A525 /* ASACalendarSupportingQuarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSupportingQuarters.swift; sourceTree = "<group>"; };
@@ -1368,6 +1370,7 @@
 				A523A3DE25A70AB2007CB54B /* Symbols */,
 				A57BCCAA247AA9290019C02C /* Tabs */,
 				A5152A042472BE0B0098A94B /* Wrappers */,
+				A5CF4652280F2E3F0088738D /* Line.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2040,6 +2043,7 @@
 				A5B8AE44268C933000371BD9 /* ASARecurrenceEndTypeChooserView.swift in Sources */,
 				A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */,
 				A5B8163E2541A37500E309E0 /* ASAMainClocksByCalendarView.swift in Sources */,
+				A5CF4653280F2E3F0088738D /* Line.swift in Sources */,
 				A5DB52D5278B144B001562C1 /* ASAEasterType.swift in Sources */,
 				A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */,
 				A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */,

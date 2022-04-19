@@ -15,29 +15,29 @@ struct ASAEventCell:  View {
     var eventsViewShouldShowSecondaryDates: Bool
     var isForClock:  Bool
     @Binding var now:  Date
-
-    #if os(watchOS)
+    
+#if os(watchOS)
     let compact = true
-    #else
+#else
     @Environment(\.horizontalSizeClass) var sizeClass
     var compact:  Bool {
         get {
             return self.sizeClass == .compact
         } // get
     } // var compact
-    #endif
-
+#endif
+    
     var eventIsTodayOnly: Bool
     var startDateString: String?
     var endDateString: String
     
     var titleFont: Font {
         let duration = event.duration
-        #if os(watchOS)
+#if os(watchOS)
         let basicFont: Font = .callout
-        #else
+#else
         let basicFont: Font = .body
-        #endif
+#endif
         
         if duration > Date.SECONDS_PER_DAY * 27 {
             return basicFont.weight(.regular)
@@ -51,7 +51,7 @@ struct ASAEventCell:  View {
     } // var titleFont
     
     let LINE_LIMIT = 3
-
+    
     fileprivate func eventSymbolView() -> ModifiedContent<Text, ASAScalable> {
         return Text(event.symbol!)
             .font(titleFont)
@@ -70,14 +70,14 @@ struct ASAEventCell:  View {
             .foregroundColor(.secondary)
             .modifier(ASAScalable(lineLimit: 1))
     }
-        
+    
     var body: some View {
         let eventSymbol = event.symbol
-
-        #if os(watchOS)
+        
+#if os(watchOS)
         HStack {
             ASAColorRectangle(colors: [event.color])
-
+            
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
                     if eventSymbol != nil {
@@ -99,7 +99,7 @@ struct ASAEventCell:  View {
                 }
             } // VStack
         } // HStack
-        #else
+#else
         HStack {
             ASATimesSubcell(event: event, row: self.primaryRow, isForClock: isForClock, isPrimaryRow:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
             
@@ -142,9 +142,14 @@ struct ASAEventCell:  View {
                 }
                 
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
+                
+                Line()
+                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [4]))
+                    .frame(height: 1)
+                    .foregroundColor(.secondary)
             }
         } // HStack
-        #endif
+#endif
     } // var body
 } // struct ASAEventCell
 
