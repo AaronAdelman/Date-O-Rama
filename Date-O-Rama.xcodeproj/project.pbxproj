@@ -1365,12 +1365,12 @@
 				A59C436425A33E5B009C7F7C /* ASATimeText.swift */,
 				A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */,
 				A57BCCBA247D81A80019C02C /* Choosers */,
+				A5CF4652280F2E3F0088738D /* Line.swift */,
 				A5B8164B2541A3C500E309E0 /* Main clocks lists */,
 				A5BD09C926B17CA600738C0B /* Mini-clocks */,
 				A523A3DE25A70AB2007CB54B /* Symbols */,
 				A57BCCAA247AA9290019C02C /* Tabs */,
 				A5152A042472BE0B0098A94B /* Wrappers */,
-				A5CF4652280F2E3F0088738D /* Line.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

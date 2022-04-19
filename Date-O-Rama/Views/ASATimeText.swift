@@ -36,12 +36,20 @@ struct ASATimeText:  View {
             .foregroundColor(foregroundColor)
             .modifier(ASAScalable(lineLimit: 1))
         #else
+        if compact {
         Text(verbatim:  verbatim)
             .frame(width:  timeWidth)
             .font(timeFontSize)
             .foregroundColor(foregroundColor)
             .modifier(ASAScalable(lineLimit: 2))
             .multilineTextAlignment(.leading)
+        } else {
+            Text(verbatim:  verbatim)
+                .font(timeFontSize)
+                .foregroundColor(foregroundColor)
+                .modifier(ASAScalable(lineLimit: 2))
+                .multilineTextAlignment(.leading)
+        }
         #endif
     } // var body
 } // struct ASATimesText
