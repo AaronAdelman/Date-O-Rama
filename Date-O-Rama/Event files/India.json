@@ -69,6 +69,11 @@
         {"type": "nD", "start": {"d": 1, "mon": 12}, "end": {"d": 10, "mon": 12}, "titles": {"en": "Hornbill Festival (Nagaland)"}},
         {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa’s Liberation Day"}},
         {"type": "1D", "start": {"d": 21, "mon": 4}, "titles": {"en": "National Civil Service Day"}},
+        {"type": "1D", "start": {"d": 10, "mon": 2}, "titles": {"en": "National Deworming Day"}},
+        {"type": "1D", "start": {"d": 11, "mon": 2}, "titles": {"en": "World Unani Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Unani_medicine"}, "1st": {"era": 1, "y": 2017}},
+        {"type": "1D", "start": {"d": 12, "mon": 2}, "titles": {"en": "National Productivity Day"}},
+        {"type": "1D", "start": {"d": 24, "mon": 2}, "titles": {"en": "Central Excise Day"}},
+        {"type": "1D", "start": {"d": 27, "mon": 2}, "titles": {"en": "National Protein Day"}, "1st": {"era": 1, "y": 2020}, "emoji": "🥑🫘", "urls": {"en": "https://nationaldaycalendar.com/national-protein-day-february-27-india/"}},
 
         {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda day"}},
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},
