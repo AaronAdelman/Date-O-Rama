@@ -170,9 +170,7 @@ struct ASAClockCellBody:  View {
                 }
 #else
                 if processedRow.supportsTimes {
-                    if processedRow.supportsMonths && shouldShowMiniCalendar
-//                        && processedRow.weekday != 0
-                    {
+                    if processedRow.supportsMonths && shouldShowMiniCalendar {
                         Spacer()
                         
                         ASAMiniCalendarView(daysPerWeek:  processedRow.daysPerWeek ?? 7, day:  processedRow.day, weekday:  processedRow.weekday, daysInMonth:  processedRow.daysInMonth, numberFormatter:  numberFormatter(), localeIdentifier: processedRow.localeIdentifier, weekdaySymbols: processedRow.veryShortStandaloneWeekdaySymbols ?? [], weekendDays: processedRow.weekendDays ?? [], numberFormat: processedRow.miniCalendarNumberFormat, monthIsBlank: processedRow.monthIsBlank, blankWeekdaySymbol: processedRow.blankWeekdaySymbol)
@@ -186,6 +184,7 @@ struct ASAClockCellBody:  View {
                 }
                 
                 Spacer()
+                    .frame(width: 32.0)
                 
                 let ARROW_SYMBOL_NAME = "arrow.down.circle.fill"
                 
