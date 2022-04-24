@@ -124,7 +124,7 @@
 {"type": "1D", "start": {"mon": 4, "d": 26}, "titles": {"en": "Hug an Australian Day"}, "emoji": "🇦🇺"},
 {"type": "1D", "start": {"mon": 4, "d": 27}, "titles": {"en": "8640 Seconds Day"}},
 {"type": "1D", "start": {"mon": 4, "d": 28}, "titles": {"en": "Blueberry Pie Day"}, "emoji": "🥧"},
-{"type": "1D", "start": {"mon": 4, "d": 29}, "titles": {"en": "Dance Day"}, "emoji": "🩰"},
+{"type": "1D", "start": {"d": 29, "mon": 4}, "titles": {"en": "Dance Day"}, "notes": {"en": "International Dance Day"}, "1st": {"era": 1, "y": 1982}, "emoji": "🩰", "urls": {"en": "https://www.daysoftheyear.com/days/dance-day/"}},
 {"type": "1D", "start": {"mon": 4, "d": 30}, "titles": {"en": "Achieve Enlightenment Day"}},
 {"type": "1D", "start": {"mon": 4, "d": 31}, "titles": {"en": "Masturbating Yak Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 1}, "titles": {"en": "No Pants Day"}},
