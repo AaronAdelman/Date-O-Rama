@@ -80,6 +80,7 @@
         {"type": "1D", "start": {"d": 18, "mon": 3}, "titles": {"en": "Ordnance Factories’ Day"}},
         {"type": "1D", "start": {"d": 23, "mon": 3}, "titles": {"en": "Martyrs Day"}},
         {"type": "1D", "start": {"d": 30, "mon": 3}, "titles": {"en": "World Idli Day"}},
+        {"type": "1D", "start": {"d": 3, "mon": 4}, "titles": {"en": "Army Medical Corps Establishment Day"}},
 
         {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda day"}},
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},
