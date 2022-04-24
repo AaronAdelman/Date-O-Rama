@@ -49,26 +49,28 @@ struct ASAEventCell:  View {
         
         return basicFont.weight(.semibold)
     } // var titleFont
-    
-    let LINE_LIMIT = 3
-    
+        
     fileprivate func eventSymbolView() -> ModifiedContent<Text, ASAScalable> {
         return Text(event.symbol!)
             .font(titleFont)
-            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+            .modifier(ASAScalable(lineLimit: 1))
     }
     
     fileprivate func eventTitleView() -> ModifiedContent<Text, ASAScalable> {
+        let LINE_LIMIT = compact ? 3 : 2
+        
         return Text(event.title)
             .font(titleFont)
             .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
     
     fileprivate func eventLocationView(_ location: String?) -> ModifiedContent<Text, ASAScalable> {
+        let LINE_LIMIT = compact ? 3 : 2
+        
         return Text(location!)
             .font(.callout)
             .foregroundColor(.secondary)
-            .modifier(ASAScalable(lineLimit: 1))
+            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
     
     var body: some View {
@@ -144,8 +146,8 @@ struct ASAEventCell:  View {
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 
                 Line()
-                    .stroke(style: StrokeStyle(lineWidth: 1, dash: [4]))
-                    .frame(height: 1)
+                    .stroke(style: StrokeStyle(lineWidth: 1.0, dash: [4.0]))
+                    .frame(minWidth: 0.0, minHeight: 1.0, idealHeight: 1.0, maxHeight: 1.0, alignment: .center)
                     .foregroundColor(.secondary)
             }
         } // HStack
@@ -160,17 +162,22 @@ struct ASAEventCellCalendarTitle:  View {
     var event:  ASAEventCompatible
     var isForClock:  Bool
 
-    #if os(watchOS)
-    let LINE_LIMIT = 1
-    #else
-    let LINE_LIMIT = 2
-    #endif
-
+#if os(watchOS)
+    let compact = true
+#else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+#endif
+    
     var body: some View {
         let title: String = isForClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
         Text(title).font(.subheadlineMonospacedDigit)
             .foregroundColor(.secondary)
-        .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+            .modifier(ASAScalable(lineLimit: compact ? 2 : 1))
     }
 }
 
