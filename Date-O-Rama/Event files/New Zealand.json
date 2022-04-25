@@ -1,13 +1,13 @@
 {
-    "titles": {"en": "Australia", "he": "אוסטרליה"},
+    "titles": {"en": "New Zealand", "he": "ניו זילנד"},
     "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
-    "emoji": "🇦🇺",
+    "emoji": "🇳🇿",
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 26, "mon": 1}, "titles": {"en": "Australia Day"}, "urls": {"en": "https://www.australiaday.org.au/"}, "1st": {"era": 1, "y": 1808}},
         {"type": "1D", "start": {"d": 25, "mon": 4}, "titles": {"en": "Anzac Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/anzac-day/"}, "1st": {"era": 1, "y": 1916}},
 
         ]
     }
+
