@@ -60,6 +60,7 @@
         {"type": "1D", "start": {"d": 31, "mon": 3}, "titles": {"en": "Cesar Chavez Day", "es": "Día de César Chávez"}, "1st": {"era": 1, "y": 2014}, "urls": {"en": "https://en.wikipedia.org/wiki/Cesar_Chavez_Day"}},
         {"type": "1D", "start": {"d": 31, "mon": 3}, "titles": {"en": "Transfer Day"}, "1st": {"era": 1, "y": 1917}, "emoji": "🇻🇮", "urls": {"en": "https://nationaltoday.com/transfer-day/"}},
         {"type": "1D", "start": {"d": 31, "mon": 3}, "titles": {"en": "Thomas Mundy Peterson Day"}, "1st": {"era": 1, "y": 1998}, "urls": {"en": "https://en.wikipedia.org/wiki/Thomas_Mundy_Peterson"}},
+        {"type": "1D", "start": {"d": 1, "mon": 5}, "titles": {"en": "Law Day"}, "1st": {"era": 1, "y": 1958}, "emoji": "👨‍⚖️👩‍⚖️", "urls": {"en": "https://en.wikipedia.org/wiki/Law_Day_(United_States)"}},
         
         {"type": "1D", "start": {"d": 14, "mon": 6}, "titles": {"en": "Flag Day"}},
         {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Veterans Day"}},
