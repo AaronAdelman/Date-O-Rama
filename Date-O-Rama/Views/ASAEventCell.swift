@@ -131,7 +131,7 @@ struct ASAEventCell:  View {
                     ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 } // VStack
             } else {
-                HStack(alignment: .top) {
+                HStack(alignment: .top) {     
                     if eventSymbol != nil {
                         eventSymbolView()
                     }
@@ -140,20 +140,32 @@ struct ASAEventCell:  View {
                 
                 let location = event.location
                 if !(location?.isEmpty ?? true) {
+                    ASADottedLine()
+                    
                     eventLocationView(location)
                 }
                 
+                ASADottedLine()
+                
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 
-                Line()
-                    .stroke(style: StrokeStyle(lineWidth: 1.0, dash: [4.0]))
-                    .frame(minWidth: 0.0, minHeight: 1.0, idealHeight: 1.0, maxHeight: 1.0, alignment: .center)
-                    .foregroundColor(.secondary)
+                Spacer()
+                    .frame(width: 32.0)
             }
         } // HStack
 #endif
     } // var body
 } // struct ASAEventCell
+
+
+struct ASADottedLine: View {
+    var body: some View {
+        Line()
+            .stroke(style: StrokeStyle(lineWidth: 1.0, dash: [2.0]))
+            .frame(minWidth: 0.0, minHeight: 1.0, idealHeight: 1.0, maxHeight: 1.0, alignment: .center)
+            .foregroundColor(.secondary)
+    }
+}
 
 
 // MARK:  -

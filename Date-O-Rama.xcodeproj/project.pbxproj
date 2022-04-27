@@ -167,6 +167,7 @@
 		A5769955259EDCC000757B0F /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
 		A576C39328171F96005AC73D /* New Zealand.json in Resources */ = {isa = PBXBuildFile; fileRef = A576C39228171F96005AC73D /* New Zealand.json */; };
 		A576C39428171F96005AC73D /* New Zealand.json in Resources */ = {isa = PBXBuildFile; fileRef = A576C39228171F96005AC73D /* New Zealand.json */; };
+		A576C3952819762E005AC73D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF4652280F2E3F0088738D /* Line.swift */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A579019E259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57BCCB0247BBDC20019C02C /* ASALocation.swift */; };
@@ -2029,6 +2030,7 @@
 				A5B6D01D25AEEFF3005ECE8D /* ASACapsuleBorder.swift in Sources */,
 				A5DC147226C4488E00A109B6 /* ASAEventSpecificationType.swift in Sources */,
 				A566F46F2483D7CF000A05B5 /* ASALocaleData.swift in Sources */,
+				A576C3952819762E005AC73D /* Line.swift in Sources */,
 				A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */,
 				A566F47F2483D7CF000A05B5 /* ASAClockArrayKey.swift in Sources */,
 				A5A6FD5827BEC981003595D5 /* StringExtensions.swift in Sources */,
