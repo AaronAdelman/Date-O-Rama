@@ -42,11 +42,12 @@ var compact:  Bool {
     } // var timeWidth
     let timeFontSize = Font.subheadlineMonospacedDigit
     
-    var isForClock:  Bool
-    var isPrimaryRow:  Bool
-    var eventIsTodayOnly:  Bool
+    var isForClock: Bool
+    var isPrimaryRow: Bool
+    var eventIsTodayOnly: Bool
     var startDateString: String?
     var endDateString: String
+    var isSecondary: Bool
     
     fileprivate func startDateView() -> ASATimeText {
         return ASATimeText(verbatim: startDateString!, timeWidth:  timeWidth, timeFontSize:  timeFontSize, cutoffDate:  event.startDate, isForClock: isForClock)
@@ -66,13 +67,23 @@ var compact:  Bool {
                 endDateView()
             } // VStack
         } else {
-            HStack(alignment: .center) {
-                if startDateString != nil {
-                    startDateView()
-                }
-                
-                endDateView()
-            } // HStack
+//            HStack(alignment: .center) {
+//                if startDateString != nil {
+//                    startDateView()
+//                }
+//
+//                endDateView()
+//            } // HStack
+            
+            let string = (isSecondary ? "(" : "") + (startDateString ?? "") + (startDateString != nil ? "—" : "") + endDateString + (isSecondary ? ")" : "")
+            let cutoffDate = event.endDate ?? event.startDate!
+            let pastCutoffDate: Bool = cutoffDate < Date()
+            let foregroundColor: Color = pastCutoffDate ? .secondary : .primary
+            Text(verbatim:  string)
+                .font(timeFontSize)
+                .foregroundColor(foregroundColor)
+                .modifier(ASAScalable(lineLimit: 1))
+                .multilineTextAlignment(.leading)
         }
     } // var body
 } // struct ASATimesSubcell
