@@ -246,6 +246,7 @@
         {"type": "1D", "start": {"d": 30, "mon": 4}, "titles": {"en": "World Sarcoidosis Awareness Day"}},
         {"type": "1D", "start": {"d": 1, "mon": 5}, "titles": {"en": "Labor Day"}, "emoji": "👩‍🔧👨‍🔧", "urls": {"en": "https://en.wikipedia.org/wiki/Labour_Day"}},
         {"type": "1D", "start": {"d": 1, "mon": 5}, "titles": {"en": "International Workers’ Day"}, "emoji": "👷‍♀️👷‍♂️", "urls": {"en": "https://www.daysoftheyear.com/days/international-workers-day/"}},
+        {"type": "1D", "start": {"mon": 5, "d": 1}, "titles": {"en": "May Day"}, "urls": {"en": "https://nationaldaycalendar.com/may-day-may-1-2/"}, "emoji": "💐"},
 
         {"type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}, "titles": {"en": "World Laughter Day"}, "1st": {"era": 1, "y": 1998}, "emoji": "🤭", "urls": {"en": "https://www.worldlaughterday.com/"}},
         {"type": "1D", "start": {"mon": 5, "d": 4}, "titles": {"en": "Star Wars Day"}},
