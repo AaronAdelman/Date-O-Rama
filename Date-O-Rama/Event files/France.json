@@ -7,6 +7,8 @@
     "emoji": "🇫🇷",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}},
+        {"type": "1D", "start": {"d": 24, "mon": 4}, "titles": {"en": "Armenian Genocide Remembrance Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Armenian_Genocide_Remembrance_Day"}, "emoji": "🇦🇲", "1st": {"era": 1, "y": 2019}},
+
     ]
 }
 

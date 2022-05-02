@@ -73,7 +73,7 @@
         {"type": "1D", "start": {"mon": 4, "d": 30}, "titles": {"en": "National PrepareAthon! Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-prepareathon-day-april-30/"}, "1st": {"era": 1, "y": 2014}},
         {"type": "1D", "start": {"mon": 5, "d": 1}, "titles": {"en": "National Loyalty Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-loyalty-day-may-1/"}, "1st": {"era": 1, "y": 1959}},
         {"type": "1D", "start": {"mon": 5, "d": 1}, "titles": {"en": "Silver Star Service Banner Day"}, "1st": {"era": 1, "y": 2010}, "urls": {"en": "https://nationaldaycalendar.com/silver-star-service-banner-day-may-1/"}, "emoji": "☆"},
-
+        {"type": "1D", "start": {"d": 24, "mon": 4}, "titles": {"en": "Armenian Genocide Remembrance Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Armenian_Genocide_Remembrance_Day"}, "emoji": "🇦🇲", "1st": {"era": 1, "y": 1997}},
 
     ]
 }

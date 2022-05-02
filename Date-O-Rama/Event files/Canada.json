@@ -10,6 +10,7 @@
         {"type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "National Tartan Day"}, "1st": {"era": 1, "year": 1985}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "Canada Day", "fr": "Fête du Canada"}, "1st": {"era": 1, "y": 1982}},
         {"titles": {"en": "Thanksgiving"}, "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1957}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)"}, "emoji": "🦃"},
+        {"type": "1D", "start": {"d": 24, "mon": 4}, "titles": {"en": "Armenian Genocide Remembrance Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Armenian_Genocide_Remembrance_Day"}, "emoji": "🇦🇲", "1st": {"era": 1, "y": 2015}},
 
     ]
 }
