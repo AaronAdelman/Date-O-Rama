@@ -442,6 +442,10 @@
 		A5DD45392683AED5008DBC22 /* ASAEventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D5FD267226D000C1BE65 /* ASAEventCategory.swift */; };
 		A5DD453A2683AF4B008DBC22 /* ASAEventSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE77826661F7500F47416 /* ASAEventSpecification.swift */; };
 		A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
+		A5DEFE8B2822FE9600EF1651 /* South Korea.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8A2822FE9600EF1651 /* South Korea.json */; };
+		A5DEFE8C2822FE9600EF1651 /* South Korea.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8A2822FE9600EF1651 /* South Korea.json */; };
+		A5DEFE8E2822FF4900EF1651 /* North Korea.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8D2822FF4900EF1651 /* North Korea.json */; };
+		A5DEFE8F2822FF4900EF1651 /* North Korea.json in Resources */ = {isa = PBXBuildFile; fileRef = A5DEFE8D2822FF4900EF1651 /* North Korea.json */; };
 		A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */; };
 		A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */; };
 		A5E1CC5D2631A10C00D55B00 /* ASAClockCellTimeEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E1CC5C2631A10C00D55B00 /* ASAClockCellTimeEventVisibility.swift */; };
@@ -836,6 +840,8 @@
 		A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAICalendarIndexPickerView.swift; sourceTree = "<group>"; };
 		A5DC8EBF267A75A4000B1184 /* ASAAlarmTypeChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAlarmTypeChooserView.swift; sourceTree = "<group>"; };
 		A5DC9C7D27285D2100047F64 /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
+		A5DEFE8A2822FE9600EF1651 /* South Korea.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "South Korea.json"; sourceTree = "<group>"; };
+		A5DEFE8D2822FF4900EF1651 /* North Korea.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "North Korea.json"; sourceTree = "<group>"; };
 		A5DFD52C26823CB80013189E /* ASASolarTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASolarTimeView.swift; sourceTree = "<group>"; };
 		A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorCircle.swift; sourceTree = "<group>"; };
 		A5E1CC5C2631A10C00D55B00 /* ASAClockCellTimeEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellTimeEventVisibility.swift; sourceTree = "<group>"; };
@@ -1032,6 +1038,7 @@
 				A563701F27382A91008DE963 /* New Age.json */,
 				A576C39228171F96005AC73D /* New Zealand.json */,
 				A5D850B3280C9823005247BD /* Niger.json */,
+				A5DEFE8D2822FF4900EF1651 /* North Korea.json */,
 				A5E8BADF27FCCDD00018CD36 /* Pakistan.json */,
 				A58C8D9327F1DEC900596F34 /* Pastafarianism.json */,
 				A5E8BADC27FCAF700018CD36 /* Philippines.json */,
@@ -1044,6 +1051,7 @@
 				A5BDE78726679A6200F47416 /* Shia.json */,
 				A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */,
 				A5D850AD280C95F6005247BD /* South Africa.json */,
+				A5DEFE8A2822FE9600EF1651 /* South Korea.json */,
 				A5D85095280C8A1A005247BD /* Sri Lanka.json */,
 				A533798024B2333400340C0B /* Sun.json */,
 				A54539E526A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json */,
@@ -1618,6 +1626,7 @@
 				A5769951259EDCC000757B0F /* Israel.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
+				A5DEFE8C2822FE9600EF1651 /* South Korea.json in Resources */,
 				A563702127382A92008DE963 /* New Age.json in Resources */,
 				A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5D8509A280C8E7A005247BD /* Bosnia and Herzegovina.json in Resources */,
@@ -1646,6 +1655,7 @@
 				A5D8509D280C8F9D005247BD /* Bulgaria.json in Resources */,
 				A5D850AF280C95F6005247BD /* South Africa.json in Resources */,
 				A5837BE2271C139700047475 /* Named full moons.json in Resources */,
+				A5DEFE8F2822FF4900EF1651 /* North Korea.json in Resources */,
 				A5ABBA2E27155A2100ED7D5F /* Atheism.json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5E35A36278F23C400F726EA /* Adelsoft.json in Resources */,
@@ -1687,6 +1697,7 @@
 				A5C4DCB02694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5E7590E2768BC23008D7D57 /* Judaism (forgotten).json in Resources */,
 				A5BDE78826679A6200F47416 /* Shia.json in Resources */,
+				A5DEFE8E2822FF4900EF1651 /* North Korea.json in Resources */,
 				A5837BE1271C139700047475 /* Named full moons.json in Resources */,
 				A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */,
 				A5BDE77F266784EE00F47416 /* Ahmadiyya.json in Resources */,
@@ -1738,6 +1749,7 @@
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
 				A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */,
 				A5CF465B2810D29A0088738D /* Poland.json in Resources */,
+				A5DEFE8B2822FE9600EF1651 /* South Korea.json in Resources */,
 				A5E8BAE628047B9E0018CD36 /* Liberia.json in Resources */,
 				A5EE117826C573910050495C /* Moon.json in Resources */,
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,

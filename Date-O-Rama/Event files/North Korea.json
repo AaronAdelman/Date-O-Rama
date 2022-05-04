@@ -1,0 +1,11 @@
+{
+    "titles": {"en": "North Korea", "he": "צפון קוריאה"},
+    "defaultLocale": "en",
+    "supportedLocales": ["en", "he"],
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "emoji": "🇰🇵",
+    "eventSpecifications": [
+        {"type": "1D", "start": {"d": 15, "mon": 8}, "titles": {"en": "National Liberation Day", "ko": "조국해방의 날"}, "1st": {"era": 1, "y": 1950}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Liberation_Day_of_Korea"}},
+    ]
+}

@@ -7,6 +7,7 @@
     "emoji": "🇲🇾",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 16, "mon": 9}, "titles": {"en": "Malaysia Day"}},
+        {"type": "1D", "start": {"d": 31, "mon": 8}, "titles": {"en": "Malaysia National Day"}},
     ]
 }
 
