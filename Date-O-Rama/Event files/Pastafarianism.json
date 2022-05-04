@@ -37,7 +37,7 @@
 {"type": "1D", "start": {"mon": 1, "d": 30}, "titles": {"en": "Exercise Your Brain Day"}, "emoji": "🧠"},
 {"type": "1D", "start": {"mon": 1, "d": 31}, "titles": {"en": "Honey Badger Avoidance Day"}},
 {"type": "1D", "start": {"mon": 2, "d": 1}, "titles": {"en": "Fettuccine February"}},
-{"type": "1D", "start": {"mon": 2, "d": 2}, "titles": {"en": "Groundhog Day"}},
+{"type": "1D", "start": {"mon": 2, "d": 2}, "titles": {"en": "Groundhog Day"}, "urls": {"en": "https://nationaltoday.com/groundhog-day/"}},
 {"type": "1D", "start": {"mon": 2, "d": 3}, "titles": {"en": "Ewok Day"}},
 {"type": "1D", "start": {"mon": 2, "d": 4}, "titles": {"en": "Annoy the Neighbors Day"}},
 {"type": "1D", "start": {"mon": 2, "d": 5}, "titles": {"en": "Doodle Day"}},
