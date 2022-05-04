@@ -62,6 +62,10 @@
         {"type": "1D", "start": {"mon": 5, "d": 1}, "titles": {"en": "Silver Star Service Banner Day"}, "1st": {"era": 1, "y": 2010}, "urls": {"en": "https://nationaldaycalendar.com/silver-star-service-banner-day-may-1/"}, "emoji": "☆"},
         {"type": "1D", "start": {"d": 24, "mon": 4}, "titles": {"en": "Armenian Genocide Remembrance Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Armenian_Genocide_Remembrance_Day"}, "emoji": "🇦🇲", "1st": {"era": 1, "y": 1997}},
         {"type": "1D", "start": {"mon": 5, "d": 3, "thruD": 9, "wkd": [3]}, "titles": {"en": "National Teacher Day"}, "notes": {"en": "National Teacher Appreciation Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/teacher-appreciation-day/"}, "emoji": "👨‍🏫👩‍🏫"},
+        {"type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": 3}, "titles": {"en": "National Ice Cream Day"}, "1st": {"era": 1, "y": 1984}, "emoji": "🍨", "urls": {"en": "https://www.daysoftheyear.com/days/ice-cream-day/"}},
+        {"type": "1M", "start": {"mon": 7}, "titles": {"en": "National Ice Cream Month"}, "1st": {"era": 1, "y": 1984}, "emoji": "🍨", "urls": {"en": "https://en.wikipedia.org/wiki/National_Ice_Cream_Month"}},
+        {"type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": 4}, "titles": {"en": "National Parents’ Day"}, "notes": {"en": "National Parents Day"}, "emoji": "👨‍👩‍👧‍👦", "urls": {"en": "https://www.daysoftheyear.com/days/parents-day/"}, "1st": {"era": 1, "y": 1994}},
+
 
         {"type": "1D", "start": {"d": 4, "mon": 1}, "titles": {"en": "National Missouri Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 11, "mon": 1}, "titles": {"en": "National Arkansas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-arkansas-day-january-11/"}, "1st": {"era": 1, "y": 2017}},

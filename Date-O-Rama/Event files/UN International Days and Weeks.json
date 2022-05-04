@@ -229,5 +229,6 @@
         {"type": "1D", "start": {"d": 30, "mon": 1}, "titles": {"en": "World Neglected Tropical Diseases Day"}, "notes": {"en": "World NTD Day"}, "urls": {"en": "https://www.neglecteddiseases.gov/resources/events/world-ntd-day/"}, "1st": {"era": 1, "y": 2020}},
         {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "International Day For Monuments and Sites"}, "notes": {"en": "World Heritage Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-heritage-day/"}, "1st": {"era": 1, "y": 1982}},
         {"type": "1D", "start": {"d": 2, "mon": 2}, "titles": {"en": "World Wetlands Day"}, "1st": {"era": 1, "y": 2022}, "urls": {"en": "https://www.worldwetlandsday.org/"}},
+        {"type": "1D", "start": {"d": 12, "mon": 7}, "titles": {"en": "Malala Day"}, "1st": {"era": 1, "y": 2013}, "urls": {"en": "https://nationaldaycalendar.com/malala-day-july-12/"}},
     ]
 }
