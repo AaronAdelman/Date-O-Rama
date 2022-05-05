@@ -99,6 +99,7 @@
         {"type": "1D", "start": {"d": 7, "mon": 8}, "titles": {"en": "National Handloom Day"}},
         {"type": "1D", "start": {"d": 13, "mon": 8}, "titles": {"en": "World Organ Donation Day"}},
         {"type": "1D", "start": {"d": 30, "mon": 8}, "titles": {"en": "Small Industry Day"}},
+        {"type": "1D", "start": {"d": 11, "mon": 9}, "titles": {"en": "National Forest Martyrs Day"}},
 
     ]
 }
