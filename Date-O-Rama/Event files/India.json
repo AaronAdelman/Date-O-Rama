@@ -100,6 +100,7 @@
         {"type": "1D", "start": {"d": 13, "mon": 8}, "titles": {"en": "World Organ Donation Day"}},
         {"type": "1D", "start": {"d": 30, "mon": 8}, "titles": {"en": "Small Industry Day"}},
         {"type": "1D", "start": {"d": 11, "mon": 9}, "titles": {"en": "National Forest Martyrs Day"}},
+        {"type": "1D", "start": {"d": 15, "mon": 9}, "titles": {"en": "Engineer’s Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Engineer%27s_Day"}},
 
     ]
 }

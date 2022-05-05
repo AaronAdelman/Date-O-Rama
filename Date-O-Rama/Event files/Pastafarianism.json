@@ -268,7 +268,7 @@
 {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Cynicism Appreciation Day"}},
 {"type": "1D", "start": {"mon": 9, "d": 17}, "titles": {"en": "Wear Purple Day"}, "emoji": "💜"},
 {"type": "1D", "start": {"mon": 9, "d": 18}, "titles": {"en": "Sophia Loren’s Appreciation Day"}},
-{"type": "1D", "start": {"mon": 9, "d": 19}, "titles": {"en": "International Talk Like a Pirate Day"}, "emoji": "🏴‍☠️"},
+{"type": "1D", "start": {"d": 19, "mon": 9}, "titles": {"en": "International Talk Like a Pirate Day", "emoji": "🏴‍☠️"}, "1st": {"era": 1, "y": 1995}, "urls": {"en": "https://nationaldaycalendar.com/international-talk-like-a-pirate-day-september-19/"}},
 {"type": "1D", "start": {"mon": 9, "d": 20}, "titles": {"en": "Amoeba Assimilation Day"}},
 {"type": "1D", "start": {"mon": 9, "d": 21}, "titles": {"en": "Sarcasm Day"}, "emoji": "¡"},
 {"type": "1D", "start": {"mon": 9, "d": 22}, "titles": {"en": "Believe the Impossible Day"}},
