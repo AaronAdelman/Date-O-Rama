@@ -70,7 +70,8 @@
         {"type": "1D", "start": {"d": 16, "mon": 8}, "titles": {"en": "Bennington Battle Day"}, "1st": {"era": 1, "y": 1977}, "urls": {"en": "https://en.wikipedia.org/wiki/Bennington_Battle_Day"}},
         {"type": "1D", "start": {"d": 21, "mon": 8}, "titles": {"en": "World Senior Citizen Day"}, "1st": {"era": 1, "y": 1997}, "emoji": "👴👵", "urls": {"en": "https://en.wikipedia.org/wiki/World_Senior_Citizen%27s_Day"}},
         {"titles": {"en": "Black Ribbon Day"}, "type": "1D", "start": {"mon": 8, "d": 23}, "notes": {"en": "European Day of Remembrance for Victims of Stalinism and Nazism\nEurope-wide Day of Remembrance for the victims of all totalitarian and authoritarian regimes"}, "notes": {"en": "https://en.wikipedia.org/wiki/Black_Ribbon_Day"}, "1st": {"era": 1, "y": 2014}},
-
+        {"type": "1D", "start": {"mon": 5, "wkd": [5], "wkdRecurrence": 1}, "titles": {"en": "National Day of Prayer"}, "emoji": "🛐", "urls": {"en": "https://nationaldaycalendar.com/national-day-of-prayer-first-thursday-in-may/"}, "1st": {"era": 1, "y": 1984}},
+        {"type": "1D", "start": {"d": 5, "mon": 5}, "titles": {"en": "Cinco de Mayo"}, "1st": {"era": 1, "y": 2006}, "emoji": "🇲🇽🇺🇸", "urls": {"en": "https://nationaldaycalendar.com/cinco-de-mayo-may-5/"}},
 
         {"type": "1D", "start": {"d": 4, "mon": 1}, "titles": {"en": "National Missouri Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 11, "mon": 1}, "titles": {"en": "National Arkansas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-arkansas-day-january-11/"}, "1st": {"era": 1, "y": 2017}},
