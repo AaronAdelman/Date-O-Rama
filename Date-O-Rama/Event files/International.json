@@ -256,7 +256,10 @@
         {"type": "1D", "start": {"mon": 5, "d": 6}, "titles": {"en": "National Beverage Day"}, "emoji": "🍵", "urls": {"en": "https://www.daysoftheyear.com/days/beverage-day/"}, "notes": {"en": "Beverage Day"}},
         {"type": "1D", "start": {"d": 5, "wkd": [3], "wkdRecurrence": 1}, "titles": {"en": "World Asthma Day"}, "1st": {"era": 1, "y": 1998}, "urls": {"en": "https://www.daysoftheyear.com/days/asthma-day/"}},
         {"type": "1D", "start": {"d": 8, "mon": 5}, "titles": {"en": "World Red Cross and Red Crescent Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/World_Red_Cross_and_Red_Crescent_Day"}, "1st": {"era": 1, "y": 1984}},
-        {"type": "1D", "start": {"mon": 5, "d": 9}, "titles": {"en": "National bLost Sock Memorial Day"}, "notes": {"en": "Lost Sock Memorial Day"}, "emoji": "🧦", "urls": {"en": "https://www.daysoftheyear.com/days/lost-sock-memorial-day/"}},
+        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
+        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory Day"}, "type": "1D", "start": {"mon": 5, "d": 9}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_Day_(9_May)"}, "emoji": "🎆"},
+
+        {"type": "1D", "start": {"mon": 5, "d": 9}, "titles": {"en": "National Lost Sock Memorial Day"}, "notes": {"en": "Lost Sock Memorial Day"}, "emoji": "🧦", "urls": {"en": "https://www.daysoftheyear.com/days/lost-sock-memorial-day/"}},
         {"type": "1D", "start": {"mon": 5, "d": 12}, "titles": {"en": "National Limerick Day"}, "emoji": "🖋", "notes": {"en": "Limerick Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/limerick-day/"}},
 
         {"type": "1D", "start": {"d": 18, "mon": 5}, "titles": {"en": "International Museum Day"}, "1st": {"era": 1, "y": 1977}, "urls": {"en": "https://icom.museum/en/our-actions/events/international-museum-day/"}},

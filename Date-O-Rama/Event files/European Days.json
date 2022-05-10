@@ -47,6 +47,8 @@
         
         {"type": "1D", "start": {"d": 6, "mon": 3}, "titles": {"en": "European Day of the Righteous"}},
         {"titles": {"en": "Black Ribbon Day"}, "type": "1D", "start": {"mon": 8, "d": 23}, "notes": {"en": "European Day of Remembrance for Victims of Stalinism and Nazism\nEurope-wide Day of Remembrance for the victims of all totalitarian and authoritarian regimes"}, "notes": {"en": "https://en.wikipedia.org/wiki/Black_Ribbon_Day"}, "1st": {"era": 1, "y": 2009}},
+        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
+
         
     ]
 }

@@ -7,5 +7,7 @@
     "emoji": "🇵🇱",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 19, "mon": 3}, "titles": {"en": "Kashubian Unity Day"}, "1st": {"era": 1, "y": 2005}, "urls": {"en": "https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},
+        {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
+
     ]
 }
