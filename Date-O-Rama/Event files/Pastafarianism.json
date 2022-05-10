@@ -138,7 +138,7 @@
 {"type": "1D", "start": {"mon": 5, "d": 9}, "titles": {"en": "Lost Sock Memorial Day"}, "notes": {"en": "National Lost Sock Memorial Day"}, "emoji": "🧦", "urls": {"en": "https://www.daysoftheyear.com/days/lost-sock-memorial-day/"}},
 {"type": "1D", "start": {"mon": 5, "d": 10}, "titles": {"en": "Wolverine Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 11}, "titles": {"en": "Salvador Dali Day"}},
-{"type": "1D", "start": {"mon": 5, "d": 12}, "titles": {"en": "Limerick Day"}},
+{"type": "1D", "start": {"mon": 5, "d": 12}, "titles": {"en": "Limerick Day"}, "emoji": "🖋", "notes": {"en": "National Limerick Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/limerick-day/"}},
 {"type": "1D", "start": {"mon": 5, "d": 13}, "titles": {"en": "Buttocks Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 14}, "titles": {"en": "International Monty Python Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 15}, "titles": {"en": "Bike to Work Day"}, "emoji": "🚲"},

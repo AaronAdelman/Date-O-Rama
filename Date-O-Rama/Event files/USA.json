@@ -91,5 +91,7 @@
         {"type": "1D", "start": {"d": 19, "mon": 4}, "titles": {"en": "National North Dakota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-north-dakota-day-april-19/"}},
         {"type": "1D", "start": {"d": 26, "mon": 4}, "titles": {"en": "National South Dakota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-south-dakota-day-april-26/"}},
         {"type": "1D", "start": {"d": 3, "mon": 5}, "titles": {"en": "National Montana Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-montana-day-may-3/"}},
+        {"type": "1D", "start": {"d": 10, "mon": 5}, "titles": {"en": "National Washington Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-washington-day-may-10/"}},
+
     ]
 }
