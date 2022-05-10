@@ -77,7 +77,7 @@
         {"titles": {"en": "Feast of St. Joseph the Worker"}, "type": "1D", "start": {"mon": 5, "d": 1}},
         {"titles": {"en": "Feast of St. Athanasius"}, "type": "1D", "start": {"mon": 5, "d": 2}},
         {"titles": {"en": "Feast of Saints Philip and James"}, "type": "1D", "start": {"mon": 5, "d": 3}},
-        {"titles": {"en": "Feast of St. Saint John of Ávila"}, "type": "1D", "start": {"mon": 5, "d": 10}},
+        {"titles": {"en": "Feast of St. John of Ávila"}, "type": "1D", "start": {"mon": 5, "d": 10}},
         {"titles": {"en": "Feast of Saints Nereus and Achilleus or St. Pancras"}, "type": "1D", "start": {"mon": 5, "d": 12}},
         {"titles": {"en": "Feast of Our Lady of Fatima"}, "type": "1D", "start": {"mon": 5, "d": 13}},
         {"titles": {"en": "Feast of St. Matthias the Apostle"}, "type": "1D", "start": {"mon": 5, "d": 14}},

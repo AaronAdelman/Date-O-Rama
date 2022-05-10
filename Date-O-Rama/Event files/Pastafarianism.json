@@ -135,7 +135,7 @@
 {"type": "1D", "start": {"mon": 5, "d": 6}, "titles": {"en": "Beverage Day"}, "emoji": "🍵", "urls": {"en": "https://www.daysoftheyear.com/days/beverage-day/"}, "notes": {"en": "National Beverage Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 7}, "titles": {"en": "Scurvy Awareness Day"}, "emoji": "🍋"},
 {"type": "1D", "start": {"mon": 5, "d": 8}, "titles": {"en": "Back Scratching Day"}},
-{"type": "1D", "start": {"mon": 5, "d": 9}, "titles": {"en": "Lost Sock Memorial Day"}, "emoji": "🧦"},
+{"type": "1D", "start": {"mon": 5, "d": 9}, "titles": {"en": "Lost Sock Memorial Day"}, "notes": {"en": "National Lost Sock Memorial Day"}, "emoji": "🧦", "urls": {"en": "https://www.daysoftheyear.com/days/lost-sock-memorial-day/"}},
 {"type": "1D", "start": {"mon": 5, "d": 10}, "titles": {"en": "Wolverine Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 11}, "titles": {"en": "Salvador Dali Day"}},
 {"type": "1D", "start": {"mon": 5, "d": 12}, "titles": {"en": "Limerick Day"}},
