@@ -112,6 +112,7 @@
         {"type": "1D", "start": {"d": 27, "mon": 10}, "titles": {"en": "Infantry Day"}},
         {"type": "1D", "start": {"d": 7, "mon": 11}, "titles": {"en": "Infant Protection Day"}},
         {"type": "1D", "start": {"d": 7, "mon": 11}, "titles": {"en": "National Cancer Awareness Day"}},
+        {"type": "1D", "start": {"d": 9, "mon": 11}, "titles": {"en": "Legal Services Day"}},
 
     ]
 }
