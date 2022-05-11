@@ -110,6 +110,8 @@
         {"type": "1D", "start": {"d": 20, "mon": 10}, "titles": {"en": "National Solidarity Day"}},
         {"type": "1D", "start": {"d": 21, "mon": 10}, "titles": {"en": "Police Commemoration Day"}, "1st": {"era": 1, "y": 1960}, "emoji": "👮‍♂️👮‍♀️", "urls": {"en": "https://nationaltoday.com/police-commemoration-day/"}},
         {"type": "1D", "start": {"d": 27, "mon": 10}, "titles": {"en": "Infantry Day"}},
+        {"type": "1D", "start": {"d": 7, "mon": 11}, "titles": {"en": "Infant Protection Day"}},
+        {"type": "1D", "start": {"d": 7, "mon": 11}, "titles": {"en": "National Cancer Awareness Day"}},
 
     ]
 }
