@@ -81,6 +81,7 @@
         {"type": "1D", "start": {"d": 6, "mon": 10}, "titles": {"en": "German-American Day"}, "1st": {"era": 1, "y": 1983}, "emoji": "🇩🇪🇺🇸", "urls": {"en": "https://nationaldaycalendar.com/national-german-american-day-october-6/"}},
         {"type": "1M", "start": {"mon": 10}, "titles": {"en": "Pregnancy and Infant Loss Remembrance Month"}, "1st": {"era": 1, "y": 1988}, "urls": {"en": "https://en.wikipedia.org/wiki/Pregnancy_and_Infant_Loss_Remembrance_Day"}},
         {"type": "1D", "start": {"d": 15, "mon": 10}, "titles": {"en": "Pregnancy and Infant Loss Remembrance Day"}, "1st": {"era": 1, "y": 2006}, "urls": {"en": "https://en.wikipedia.org/wiki/Pregnancy_and_Infant_Loss_Remembrance_Day"}},
+        {"type": "1D", "start": {"d": 15, "mon": 10}, "titles": {"en": "White Cane Safety Day"}, "notes": {"en": "Blind Americans Equality Day"}, "1st": {"era": 1, "y": 1964}, "emoji": "🦯", "urls": {"en": "https://en.wikipedia.org/wiki/White_Cane_Safety_Day"}},
 
 
 
