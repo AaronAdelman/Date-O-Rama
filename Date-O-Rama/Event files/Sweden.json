@@ -1,0 +1,11 @@
+{
+    "titles": {"en": "Sweden", "he": "שוודיה"},
+    "defaultLocale": "en",
+    "supportedLocales": ["en", "he"],
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "emoji": "🇸🇪",
+    "eventSpecifications": [
+        {"titles": {"en": "Constitution Day"}, "type": "1D", "start": {"mon": 6, "d": 6}, "emoji": "🇸🇪"},
+    ]
+}

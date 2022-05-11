@@ -153,6 +153,18 @@
 		A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
+		A575913E282BE18400675058 /* Ireland.json in Resources */ = {isa = PBXBuildFile; fileRef = A575913D282BE18400675058 /* Ireland.json */; };
+		A575913F282BE18400675058 /* Ireland.json in Resources */ = {isa = PBXBuildFile; fileRef = A575913D282BE18400675058 /* Ireland.json */; };
+		A5759141282BE28800675058 /* Norway.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759140282BE28800675058 /* Norway.json */; };
+		A5759142282BE28800675058 /* Norway.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759140282BE28800675058 /* Norway.json */; };
+		A5759144282BE30700675058 /* Denmark.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759143282BE30700675058 /* Denmark.json */; };
+		A5759145282BE30700675058 /* Denmark.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759143282BE30700675058 /* Denmark.json */; };
+		A5759147282BE36500675058 /* Sweden.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759146282BE36500675058 /* Sweden.json */; };
+		A5759148282BE36500675058 /* Sweden.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759146282BE36500675058 /* Sweden.json */; };
+		A575914A282BE3BE00675058 /* Luxembourg.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759149282BE3BE00675058 /* Luxembourg.json */; };
+		A575914B282BE3BE00675058 /* Luxembourg.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759149282BE3BE00675058 /* Luxembourg.json */; };
+		A575914D282BE43900675058 /* Slovakia.json in Resources */ = {isa = PBXBuildFile; fileRef = A575914C282BE43900675058 /* Slovakia.json */; };
+		A575914E282BE43900675058 /* Slovakia.json in Resources */ = {isa = PBXBuildFile; fileRef = A575914C282BE43900675058 /* Slovakia.json */; };
 		A5765A38279ED15900BF1F7E /* Rural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5765A37279ED15900BF1F7E /* Rural.json */; };
 		A5765A39279ED15900BF1F7E /* Rural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5765A37279ED15900BF1F7E /* Rural.json */; };
 		A5765A3C27A02BE400BF1F7E /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A5765A3B27A02BE400BF1F7E /* FrenchRepublicanCalendarCore */; };
@@ -465,8 +477,8 @@
 		A5E61C6D263EC21200254AF6 /* EKEventStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */; };
 		A5E7590E2768BC23008D7D57 /* Judaism (forgotten).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */; };
 		A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */; };
-		A5E759112768D0F8008D7D57 /* European Days.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E759102768D0F8008D7D57 /* European Days.json */; };
-		A5E759122768D0F8008D7D57 /* European Days.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E759102768D0F8008D7D57 /* European Days.json */; };
+		A5E759112768D0F8008D7D57 /* EU.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E759102768D0F8008D7D57 /* EU.json */; };
+		A5E759122768D0F8008D7D57 /* EU.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E759102768D0F8008D7D57 /* EU.json */; };
 		A5E8BADA27FCADC30018CD36 /* Tunisia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAD927FCADC30018CD36 /* Tunisia.json */; };
 		A5E8BADB27FCADC30018CD36 /* Tunisia.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAD927FCADC30018CD36 /* Tunisia.json */; };
 		A5E8BADD27FCAF700018CD36 /* Philippines.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BADC27FCAF700018CD36 /* Philippines.json */; };
@@ -689,6 +701,12 @@
 		A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
 		A56F0DA025F1705200301969 /* Jewish zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish zodiac.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		A575913D282BE18400675058 /* Ireland.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ireland.json; sourceTree = "<group>"; };
+		A5759140282BE28800675058 /* Norway.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Norway.json; sourceTree = "<group>"; };
+		A5759143282BE30700675058 /* Denmark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Denmark.json; sourceTree = "<group>"; };
+		A5759146282BE36500675058 /* Sweden.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sweden.json; sourceTree = "<group>"; };
+		A5759149282BE3BE00675058 /* Luxembourg.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Luxembourg.json; sourceTree = "<group>"; };
+		A575914C282BE43900675058 /* Slovakia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Slovakia.json; sourceTree = "<group>"; };
 		A5765A37279ED15900BF1F7E /* Rural.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rural.json; sourceTree = "<group>"; };
 		A576C39228171F96005AC73D /* New Zealand.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "New Zealand.json"; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
@@ -855,7 +873,7 @@
 		A5E4719F24646C50002BB471 /* ASATimeFormatChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeFormatChooserView.swift; sourceTree = "<group>"; };
 		A5E61C6B263EC21200254AF6 /* EKEventStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventStatus.swift; sourceTree = "<group>"; };
 		A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (forgotten).json"; sourceTree = "<group>"; };
-		A5E759102768D0F8008D7D57 /* European Days.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "European Days.json"; sourceTree = "<group>"; };
+		A5E759102768D0F8008D7D57 /* EU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EU.json; sourceTree = "<group>"; };
 		A5E8BAD927FCADC30018CD36 /* Tunisia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Tunisia.json; sourceTree = "<group>"; };
 		A5E8BADC27FCAF700018CD36 /* Philippines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Philippines.json; sourceTree = "<group>"; };
 		A5E8BADF27FCCDD00018CD36 /* Pakistan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pakistan.json; sourceTree = "<group>"; };
@@ -997,10 +1015,11 @@
 				A568DBBA25232E3200500419 /* Chinese zodiac.json */,
 				A536399F26EF7A000083C571 /* Christianity (Gregorian, general).json */,
 				A5BC61452709B11800888611 /* Christianity (Gregorian, supplemental).json */,
+				A5759143282BE30700675058 /* Denmark.json */,
 				A5EF523727959D37000012AC /* Druzism (Gregorian).json */,
 				A5EF523A2795A44E000012AC /* Druzism (Islamic).json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
-				A5E759102768D0F8008D7D57 /* European Days.json */,
+				A5E759102768D0F8008D7D57 /* EU.json */,
 				A5D850B0280C96FE005247BD /* France.json */,
 				A5D850BF280C9B5F005247BD /* Germany.json */,
 				A5D8509E280C9139005247BD /* Ghana.json */,
@@ -1008,6 +1027,7 @@
 				A5D850B6280C98FD005247BD /* Indonesia.json */,
 				A59FB18C270B783E0044B530 /* Interfaith.json */,
 				A5D3D7DA27F8DB940099718A /* International.json */,
+				A575913D282BE18400675058 /* Ireland.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5BDE77B26677E7900F47416 /* Islam (supplemental).json */,
 				A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */,
@@ -1026,6 +1046,7 @@
 				A5CF46572810C9780088738D /* Lesotho.json */,
 				A5E8BAE528047B9E0018CD36 /* Liberia.json */,
 				A5E3606724C7571A0000A268 /* Lubavitch.json */,
+				A5759149282BE3BE00675058 /* Luxembourg.json */,
 				A5D850BC280C9A69005247BD /* Malaysia.json */,
 				A5D850A1280C9250005247BD /* Mauritius.json */,
 				A5EE117726C573900050495C /* Moon.json */,
@@ -1039,6 +1060,7 @@
 				A576C39228171F96005AC73D /* New Zealand.json */,
 				A5D850B3280C9823005247BD /* Niger.json */,
 				A5DEFE8D2822FF4900EF1651 /* North Korea.json */,
+				A5759140282BE28800675058 /* Norway.json */,
 				A5E8BADF27FCCDD00018CD36 /* Pakistan.json */,
 				A58C8D9327F1DEC900596F34 /* Pastafarianism.json */,
 				A5E8BADC27FCAF700018CD36 /* Philippines.json */,
@@ -1050,6 +1072,7 @@
 				A54539DF26A9BA180028EAD5 /* Shia (times).json */,
 				A5BDE78726679A6200F47416 /* Shia.json */,
 				A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */,
+				A575914C282BE43900675058 /* Slovakia.json */,
 				A5D850AD280C95F6005247BD /* South Africa.json */,
 				A5DEFE8A2822FE9600EF1651 /* South Korea.json */,
 				A5D85095280C8A1A005247BD /* Sri Lanka.json */,
@@ -1057,6 +1080,7 @@
 				A54539E526A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json */,
 				A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
+				A5759146282BE36500675058 /* Sweden.json */,
 				A5F43E262786113400FCDB88 /* Thelema.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A5E8BAD927FCADC30018CD36 /* Tunisia.json */,
@@ -1623,6 +1647,7 @@
 				A5D3D7E527FA20CC0099718A /* Australia.json in Resources */,
 				A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */,
 				A5BDE7A12667B66800F47416 /* Israel (Gregorian).json in Resources */,
+				A5759145282BE30700675058 /* Denmark.json in Resources */,
 				A5769951259EDCC000757B0F /* Israel.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
@@ -1638,6 +1663,7 @@
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
 				A5E8BAE427FCCF0B0018CD36 /* Bangladesh.json in Resources */,
 				A5C7793E26B8382600DD6009 /* UN International Days and Weeks.json in Resources */,
+				A5759148282BE36500675058 /* Sweden.json in Resources */,
 				A5CF46592810C9780088738D /* Lesotho.json in Resources */,
 				A5BDE780266784EE00F47416 /* Ahmadiyya.json in Resources */,
 				A5D3D7E827FA2C7E0099718A /* Canada.json in Resources */,
@@ -1664,22 +1690,26 @@
 				A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */,
 				A5BDE77D26677E7900F47416 /* Islam (supplemental).json in Resources */,
 				A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */,
-				A5E759122768D0F8008D7D57 /* European Days.json in Resources */,
+				A5E759122768D0F8008D7D57 /* EU.json in Resources */,
 				A576C39428171F96005AC73D /* New Zealand.json in Resources */,
 				A5CF465F2810D82E0088738D /* China.json in Resources */,
+				A575914E282BE43900675058 /* Slovakia.json in Resources */,
 				A5E8BAE127FCCDD00018CD36 /* Pakistan.json in Resources */,
 				A5DC9C7F27285D2100047F64 /* Planets.json in Resources */,
 				A5D850A6280C932A005247BD /* Myanmar.json in Resources */,
 				A53639A126EF7A000083C571 /* Christianity (Gregorian, general).json in Resources */,
+				A575913F282BE18400675058 /* Ireland.json in Resources */,
 				A5BD09CE26B1B31100738C0B /* UN International Decades.json in Resources */,
 				A566F45E2483D6EF000A05B5 /* Assets.xcassets in Resources */,
 				A5E8BADB27FCADC30018CD36 /* Tunisia.json in Resources */,
 				A5D850AC280C9565005247BD /* Netherlands.json in Resources */,
 				A5EE117926C573910050495C /* Moon.json in Resources */,
+				A575914B282BE3BE00675058 /* Luxembourg.json in Resources */,
 				A5D850B2280C96FE005247BD /* France.json in Resources */,
 				A5B91141268E7C9E0058EA69 /* Time changes.json in Resources */,
 				A5EE19E92805FFC700B0B9C2 /* USA (Jewish).json in Resources */,
 				A5EE2FA22815DB9800B6E81E /* Japan.json in Resources */,
+				A5759142282BE28800675058 /* Norway.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1688,6 +1718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A599FEED269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
+				A5759147282BE36500675058 /* Sweden.json in Resources */,
 				A576C39328171F96005AC73D /* New Zealand.json in Resources */,
 				A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */,
 				A5EE2FA12815DB9800B6E81E /* Japan.json in Resources */,
@@ -1711,6 +1742,7 @@
 				A5EF523B2795A44F000012AC /* Druzism (Islamic).json in Resources */,
 				A5D850B1280C96FE005247BD /* France.json in Resources */,
 				A54539E326A9BAAC0028EAD5 /* Sunni Islam (times).json in Resources */,
+				A5759141282BE28800675058 /* Norway.json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5E35A35278F23C400F726EA /* Adelsoft.json in Resources */,
@@ -1726,6 +1758,7 @@
 				A5EE19E82805FFC700B0B9C2 /* USA (Jewish).json in Resources */,
 				A5D850AE280C95F6005247BD /* South Africa.json in Resources */,
 				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
+				A575913E282BE18400675058 /* Ireland.json in Resources */,
 				A58C8D9427F1DEC900596F34 /* Pastafarianism.json in Resources */,
 				A5D3015E24EBDFF8003E79E9 /* Islam (general).json in Resources */,
 				A5D3D7E727FA2C7E0099718A /* Canada.json in Resources */,
@@ -1741,6 +1774,7 @@
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
 				A5D850B7280C98FD005247BD /* Indonesia.json in Resources */,
 				A5BD09CD26B1B31100738C0B /* UN International Decades.json in Resources */,
+				A575914A282BE3BE00675058 /* Luxembourg.json in Resources */,
 				A5EE19E52804A92600B0B9C2 /* UK.json in Resources */,
 				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,
 				A5D850A5280C932A005247BD /* Myanmar.json in Resources */,
@@ -1760,7 +1794,8 @@
 				A5E3606424C71FBC0000A268 /* Judaism.json in Resources */,
 				A5BDE77C26677E7900F47416 /* Islam (supplemental).json in Resources */,
 				A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */,
-				A5E759112768D0F8008D7D57 /* European Days.json in Resources */,
+				A5E759112768D0F8008D7D57 /* EU.json in Resources */,
+				A575914D282BE43900675058 /* Slovakia.json in Resources */,
 				A5D850A8280C94A8005247BD /* Italy.json in Resources */,
 				A5D8509C280C8F9D005247BD /* Bulgaria.json in Resources */,
 				A59FB18D270B783E0044B530 /* Interfaith.json in Resources */,
@@ -1783,6 +1818,7 @@
 				A5BDE7A02667B66800F47416 /* Israel (Gregorian).json in Resources */,
 				A5FED7E9276BA65100BB11C9 /* Scientology.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
+				A5759144282BE30700675058 /* Denmark.json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

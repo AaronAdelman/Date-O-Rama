@@ -231,6 +231,7 @@
         {"type": "1D", "start": {"d": 2, "mon": 2}, "titles": {"en": "World Wetlands Day"}, "1st": {"era": 1, "y": 2022}, "urls": {"en": "https://www.worldwetlandsday.org/"}},
         {"type": "1D", "start": {"d": 12, "mon": 7}, "titles": {"en": "Malala Day"}, "1st": {"era": 1, "y": 2013}, "urls": {"en": "https://nationaldaycalendar.com/malala-day-july-12/"}},
         {"type": "1D", "start": {"d": 26, "mon": 9}, "titles": {"en": "World Contraception Day"}},
+        {"type": "1D", "start": {"d": 7, "mon": 10}, "titles": {"en": "World Cotton Day"}, "1st": {"era": 1, "y": 2019}, "urls": {"en": "https://www.worldcottonday.com/"}},
 
     ]
 }
