@@ -104,6 +104,7 @@
         {"type": "1D", "start": {"d": 21, "mon": 9}, "titles": {"en": "Biosphere Day"}},
         {"type": "1D", "start": {"d": 22, "mon": 9}, "titles": {"en": "World Rose Day"}, "emoji": "🌹"},
         {"type": "1D", "start": {"d": 26, "mon": 9}, "titles": {"en": "Council of Scientific and Industrial Research Day"}},
+        {"type": "1D", "start": {"d": 28, "mon": 9}, "titles": {"en": "Gunners Day"}},
 
     ]
 }
