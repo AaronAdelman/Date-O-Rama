@@ -77,6 +77,8 @@
         {"type": "1D", "start": {"d": 6, "thruD": 12, "mon": 5, "wkd": [4]}, "titles": {"en": "National School Nurse Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/school-nurse-day/"}, "emoji": "👩‍⚕️👨‍⚕️"},
         {"type": "1D", "start": {"d": 6, "thruD": 12, "mon": 5, "wkd": [6]}, "titles": {"en": "National Military Spouse Appreciation Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-military-spouse-appreciation-day-friday-before-mothers-day/"}, "1st": {"era": 1, "y": 1984}},
         {"type": "1D", "start": {"d": 6, "thruD": 12, "mon": 5, "wkd": [6]}, "titles": {"en": "National Provider Appreciation Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-military-spouse-appreciation-day-friday-before-mothers-day/"}, "1st": {"era": 1, "y": 1996}},
+        {"type": "1M", "start": {"mon": 5}, "titles": {"en": "Clean Air Month"}, "urls": {"en": "https://www.whathealth.com/awareness/event/cleanairmonth.html"}, "1st": {"era": 1, "y": 1972}},
+
 
         {"type": "1D", "start": {"d": 4, "mon": 1}, "titles": {"en": "National Missouri Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 11, "mon": 1}, "titles": {"en": "National Arkansas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-arkansas-day-january-11/"}, "1st": {"era": 1, "y": 2017}},
