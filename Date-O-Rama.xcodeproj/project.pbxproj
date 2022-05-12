@@ -43,6 +43,8 @@
 		A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
 		A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */; };
 		A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASALocationCell.swift */; };
+		A51C8578282D64A00081A11B /* Buddhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A51C8577282D64A00081A11B /* Buddhism.json */; };
+		A51C8579282D64A00081A11B /* Buddhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A51C8577282D64A00081A11B /* Buddhism.json */; };
 		A51D88DD2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D88DC2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift */; };
 		A523A3CC25A7090A007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
 		A523A3D825A70A73007CB54B /* ASACheckmarkSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */; };
@@ -645,6 +647,7 @@
 		A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailCell.swift; sourceTree = "<group>"; };
 		A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeZoneCell.swift; sourceTree = "<group>"; };
 		A51A083A245B079A00135AA6 /* ASALocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationCell.swift; sourceTree = "<group>"; };
+		A51C8577282D64A00081A11B /* Buddhism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Buddhism.json; sourceTree = "<group>"; };
 		A51D88DC2678BF580000EF2C /* ASARecurrenceTypeChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASARecurrenceTypeChooserView.swift; sourceTree = "<group>"; };
 		A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkSymbol.swift; sourceTree = "<group>"; };
 		A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACheckmarkCircleSymbol.swift; sourceTree = "<group>"; };
@@ -1009,6 +1012,7 @@
 				A5E8BAE227FCCF0B0018CD36 /* Bangladesh.json */,
 				A5D85098280C8E7A005247BD /* Bosnia and Herzegovina.json */,
 				A5D850B9280C99B4005247BD /* Brazil.json */,
+				A51C8577282D64A00081A11B /* Buddhism.json */,
 				A5D8509B280C8F9D005247BD /* Bulgaria.json */,
 				A5D3D7E627FA2C7E0099718A /* Canada.json */,
 				A5CF465D2810D82E0088738D /* China.json */,
@@ -1617,6 +1621,7 @@
 				A5BDE7832667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5D850A3280C9250005247BD /* Mauritius.json in Resources */,
 				A54539E126A9BA180028EAD5 /* Shia (times).json in Resources */,
+				A51C8579282D64A00081A11B /* Buddhism.json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
 				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
 				A5EF523C2795A44F000012AC /* Druzism (Islamic).json in Resources */,
@@ -1813,6 +1818,7 @@
 				A5D850A2280C9250005247BD /* Mauritius.json in Resources */,
 				A5D85099280C8E7A005247BD /* Bosnia and Herzegovina.json in Resources */,
 				A5DC9C7E27285D2100047F64 /* Planets.json in Resources */,
+				A51C8578282D64A00081A11B /* Buddhism.json in Resources */,
 				A5E8BAE027FCCDD00018CD36 /* Pakistan.json in Resources */,
 				A5B0084726CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5BDE7A02667B66800F47416 /* Israel (Gregorian).json in Resources */,
