@@ -106,6 +106,8 @@
         {"type": "1D", "start": {"d": 9, "mon": 11}, "titles": {"en": "World Freedom Day"}, "1st": {"era": 1, "y": 2001}, "urls": {"en": "https://www.daysoftheyear.com/days/world-freedom-day/"}},
         {"type": "1D", "start": {"d": 4, "mon": 12}, "titles": {"en": "World Wildlife Conservation Day"}, "1st": {"era": 1, "y": 2012}, "emoji": "🏞", "urls": {"en": "https://www.daysoftheyear.com/days/world-wildlife-conservation-day/"}},
         {"type": "1D", "start": {"d": 17, "mon": 12}, "titles": {"en": "Wright Brothers Day"}, "1st": {"era": 1, "y": 1959}, "emoji": "🛩", "urls": {"en": "https://www.daysoftheyear.com/days/wright-brothers-day/"}},
+        {"type": "1D", "start": {"d": 15, "mon": 5}, "titles": {"en": "Peace Officers Memorial Day"}, "1st": {"era": 1, "y": 1962}, "emoji": "👮‍♂️👮‍♀️", "urls": {"en": "https://www.timesofisrael.com/secret-uk-propaganda-campaign-stoked-israel-hatred-to-appear-authentic-documents/"}},
+
 
         {"type": "1D", "start": {"d": 4, "mon": 1}, "titles": {"en": "National Missouri Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-missouri-day-january-4/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 11, "mon": 1}, "titles": {"en": "National Arkansas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-arkansas-day-january-11/"}, "1st": {"era": 1, "y": 2017}},
