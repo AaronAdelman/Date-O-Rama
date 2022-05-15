@@ -440,6 +440,14 @@
         {"type": "1D", "start": {"mon": 1, "d": 13}, "titles": {"en": "International Skeptics Day"}, "notes": {"en": "Skeptics Day"}, "emoji": "🫤", "urls": {"en": "https://www.daysoftheyear.com/days/skeptics-day/"}},
         {"type": "1D", "start": {"mon": 2, "wkd": [3], "wkdRecurrence": 2}, "titles": {"en": "Extraterrestrial Culture Day"}, "emoji": "👽", "urls": {"en": "https://www.daysoftheyear.com/days/extraterrestrial-culture-day/"}},
         {"type": "1D", "start": {"mon": 2, "d": 13}, "titles": {"en": "National Tortellini Day"}, "notes": {"en": "Tortellini Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tortellini-day/"}},
+        {"type": "1D", "start": {"mon": 3, "d": 3}, "titles": {"en": "National Mulled Wine Day"}, "notes": {"en": "Mulled Wine Day"}, "emoji": "🍷", "urls": {"en": "https://www.daysoftheyear.com/days/mulled-wine-day/"}},
+        {"type": "1D", "start": {"d": 9, "mon": 3}, "titles": {"en": "Meatball Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/meatball-day/"}, "notes": {"en": "National Meatball Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/meatball-day/"}},
+        {"type": "1D", "start": {"mon": 3, "d": 20}, "titles": {"en": "Extraterrestrial Abductions Day"}, "emoji": "🛸", "urls": {"en": "https://holidayinsights.com/moreholidays/March/extabductday.htm"}},
+        {"type": "1D", "start": {"mon": 3, "d": 21}, "titles": {"en": "French Bread Day"}, "emoji": "🥖", "urls": {"en": "https://www.daysoftheyear.com/days/french-bread-day/"}},
+        {"type": "1D", "start": {"mon": 3, "wkd": [4], "wkdRecurrence": -1}, "titles": {"en": "Manatee Appreciation Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/manatee-appreciation-day/"}},
+        {"type": "1D", "start": {"mon": 3, "d": 26}, "titles": {"en": "Make Up Your Own Holiday Day"}, "emoji": "🎉", "urls": {"en": "https://www.daysoftheyear.com/days/make-up-your-own-holiday-day/"}},
+        {"type": "1D", "start": {"mon": 3, "d": 27}, "titles": {"en": "National Spanish Paella Day"}, "notes": {"en": "Paella Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/spanish-paella-day/"}},
+        {"type": "1D", "start": {"mon": 4, "wkd": [4], "wkdRecurrence": 3}, "titles": {"en": "National Banana Day"}, "emoji": "🍌", "notes": {"en": "Banana Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/banana-day/"}},
 
     ]
 }
