@@ -433,5 +433,13 @@
         {"type": "1D", "start": {"d": 29, "mon": 12}, "titles": {"en": "Tick Tock Day"}, "emoji": "🕰", "urls": {"en": "https://www.daysoftheyear.com/days/tick-tock-day/"}},
         {"type": "1D", "start": {"d": 30, "mon": 12}, "titles": {"en": "National Bacon Day"}, "emoji": "🥓", "urls": {"en": "https://www.daysoftheyear.com/days/bacon-day/"}},
         {"type": "1D", "start": {"d": 31, "mon": 12}, "titles": {"en": "Make Up Your Mind Day"}, "emoji": "🤷‍♀️", "urls": {"en": "https://www.daysoftheyear.com/days/make-up-your-mind-day/"}},
+        {"type": "1D", "start": {"mon": 5, "wkd": [6], "wkdRecurrence": 3}, "titles": {"en": "National Bike to Work Day"}, "notes": {"en": "Bike to Work Day"}, "emoji": "🚲", "urls": {"en": "https://www.daysoftheyear.com/days/bike-to-work-day/"}, "1st": {"era": 1, "y": 1956}},
+        {"type": "1D", "start": {"mon": 1, "d": 2}, "titles": {"en": "Swiss Cheese Day"}, "emoji": "🧀", "urls": {"en": "https://nationaltoday.com/swiss-cheese-day/"}},
+        {"type": "1D", "start": {"mon": 1, "d": 4}, "titles": {"en": "Spaghetti Day"}, "emoji": "🍝", "urls": {"en": "https://www.daysoftheyear.com/days/spaghetti-day/"}, "emoji": "🍝"},
+        {"type": "1D", "start": {"mon": 1, "d": 8}, "titles": {"en": "Bubble Bath Day"}, "emoji": "🛁", "urls": {"en": "https://www.daysoftheyear.com/days/bubble-bath-day/"}},
+        {"type": "1D", "start": {"mon": 1, "d": 13}, "titles": {"en": "International Skeptics Day"}, "notes": {"en": "Skeptics Day"}, "emoji": "🫤", "urls": {"en": "https://www.daysoftheyear.com/days/skeptics-day/"}},
+        {"type": "1D", "start": {"mon": 2, "wkd": [3], "wkdRecurrence": 2}, "titles": {"en": "Extraterrestrial Culture Day"}, "emoji": "👽", "urls": {"en": "https://www.daysoftheyear.com/days/extraterrestrial-culture-day/"}},
+        {"type": "1D", "start": {"mon": 2, "d": 13}, "titles": {"en": "National Tortellini Day"}, "notes": {"en": "Tortellini Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tortellini-day/"}},
+
     ]
 }
