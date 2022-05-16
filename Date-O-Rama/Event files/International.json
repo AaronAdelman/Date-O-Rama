@@ -448,6 +448,7 @@
         {"type": "1D", "start": {"mon": 3, "d": 26}, "titles": {"en": "Make Up Your Own Holiday Day"}, "emoji": "🎉", "urls": {"en": "https://www.daysoftheyear.com/days/make-up-your-own-holiday-day/"}},
         {"type": "1D", "start": {"mon": 3, "d": 27}, "titles": {"en": "National Spanish Paella Day"}, "notes": {"en": "Paella Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/spanish-paella-day/"}},
         {"type": "1D", "start": {"mon": 4, "wkd": [4], "wkdRecurrence": 3}, "titles": {"en": "National Banana Day"}, "emoji": "🍌", "notes": {"en": "Banana Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/banana-day/"}},
+        {"titles": {"en": "International Day Against Homophobia, Transphobia, and Biphobia"}, "type": "1D", "start": {"mon": 5, "d": 17}},
 
     ]
 }

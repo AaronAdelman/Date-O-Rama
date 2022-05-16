@@ -121,14 +121,14 @@ struct ASAMultiEvent:  ASAEventCompatible {
     
     var fileEmoji: String? {
         let fileEmojis = self.events.map { $0.fileEmoji }
-        var reduced: Array<String> = []
+        var reduced: String?
         for fileEmoji in fileEmojis {
             if fileEmoji != nil {
-                reduced.append(fileEmoji!)
+                reduced = reduced == nil ? fileEmoji! : reduced! + fileEmoji!
             }
         }
         
-        return reduced.asFormattedList
+        return reduced
     }
     
     var type: ASAEventSpecificationType {
