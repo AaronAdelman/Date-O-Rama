@@ -78,6 +78,7 @@
         {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "St. David’s Day"}},
         {"type": "1D", "start": {"d": 25, "mon": 3}, "titles": {"en": "International Day of the Unborn Child"}, "1st": {"era": 1, "y": 1993}, "urls": {"en": "https://en.wikipedia.org/wiki/International_Day_of_the_Unborn_Child"}},
         {"type": "1D", "start": {"d": 29, "mon": 3}, "titles": {"en": "Taiwan Youth Day"}, "notes": {"en": "TYD"}, "1st": {"era": 1, "y": 2008}, "emoji": "🇹🇼", "urls": {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
+        {"type": "1D", "start": {"d": 21, "mon": 5}, "titles": {"en": "Rapture Party Day"}, "notes": {"en": "TYD"}, "1st": {"era": 1, "y": 2012}, "emoji": "🥳", "urls": {"en": "https://www.daysoftheyear.com/days/rapture-party-day/"}},
 
     ]
 }

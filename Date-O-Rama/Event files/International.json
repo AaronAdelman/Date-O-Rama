@@ -449,6 +449,8 @@
         {"type": "1D", "start": {"mon": 3, "d": 27}, "titles": {"en": "National Spanish Paella Day"}, "notes": {"en": "Paella Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/spanish-paella-day/"}},
         {"type": "1D", "start": {"mon": 4, "wkd": [4], "wkdRecurrence": 3}, "titles": {"en": "National Banana Day"}, "emoji": "🍌", "notes": {"en": "Banana Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/banana-day/"}},
         {"titles": {"en": "International Day Against Homophobia, Transphobia, and Biphobia"}, "type": "1D", "start": {"mon": 5, "d": 17}},
+        {"titles": {"en": "World Telecommunications Day"}, "notes": {"en": "WTD"}, "type": "1D", "start": {"mon": 5, "d": 17}, "1st": {"type": "1D", "era": 1, "y": 1969}, "urls": {"en": "https://www.daysoftheyear.com/days/world-telecommunications-day/"}, "emoji": "📡"},
+        {"type": "1D", "start": {"mon": 4, "d": 9}, "titles": {"en": "Unicorn Day"}, "emoji": "🦄", "urls": {"en": "https://www.daysoftheyear.com/days/unicorn-day/"}},
 
     ]
 }
