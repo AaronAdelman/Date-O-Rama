@@ -70,7 +70,6 @@
         {"type": "1D", "start": {"d": 31, "mon": 3}, "titles": {"en": "Thomas Mundy Peterson Day"}, "1st": {"era": 1, "y": 1998}, "urls": {"en": "https://en.wikipedia.org/wiki/Thomas_Mundy_Peterson"}},
         {"type": "1D", "start": {"d": 1, "mon": 5}, "titles": {"en": "Law Day"}, "1st": {"era": 1, "y": 1958}, "emoji": "👨‍⚖️👩‍⚖️", "urls": {"en": "https://en.wikipedia.org/wiki/Law_Day_(United_States)"}},
         {"type": "1D", "start": {"d": 1, "mon": 5}, "titles": {"en": "School Bus Drivers Day"}, "1st": {"era": 1, "y": 2009}, "emoji": "🚌", "urls": {"en": "https://www.daysoftheyear.com/days/school-bus-drivers-day/"}},
-        
         {"type": "1D", "start": {"d": 14, "mon": 6}, "titles": {"en": "Flag Day"}},
         {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Veterans Day"}},
         {"type": "1D", "start": {"mon": 4, "wkd": [6], "wkdRecurrence": -1}, "titles": {"en": "Arbor Day"}, "1st": {"era": 1, "y": 1872}, "emoji": "🌳", "urls": {"en": "https://nationaldaycalendar.com/national-arbor-day-last-friday-in-april/"}},
@@ -111,6 +110,16 @@
         {"type": "1D", "start": {"d": 22, "mon": 3}, "titles": {"en": "Emancipation Day", "es": "Día de la Abolición de Esclavitud"}, "locations": {"en": "Puerto Rico", "es": "Puerto Rico"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#Puerto_Rico"}, "1st": {"era": 1, "y": 1873}, "emoji": "🇵🇷"},
         {"type": "1D", "start": {"mon": 5, "d": 22}, "titles": {"en": "National Maritime Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/maritime-day/"}, "1st": {"era": 1, "y": 1933}, "emoji": "🚢"},
         {"type": "1D", "start": {"mon": 5, "d": 17}, "titles": {"en": "National Walnut Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-walnut-day-may-17/"}, "1st": {"era": 1, "y": 1958}},
+        {"titles": {"en": "Confederate Memorial Day"}, "type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1866}, "urls": {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, "locations": {"en": "Alabama and Georgia"}},
+        {"titles": {"en": "Confederate Memorial Day"}, "type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": -1}, "1st": {"type": "1D", "era": 1, "y": 1866}, "urls": {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, "locations": {"en": "Mississippi"}},
+        {"titles": {"en": "Confederate Memorial Day"}, "type": "1D", "start": {"mon": 4, "d": 10}, "1st": {"type": "1D", "era": 1, "y": 1866}, "urls": {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, "locations": {"en": "North Carolina and South Carolina"}},
+        {"titles": {"en": "Confederate Decoration Day"}, "type": "1D", "start": {"mon": 6, "d": 3}, "1st": {"type": "1D", "era": 1, "y": 1866}, "urls": {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, "locations": {"en": "Tennessee"}},
+        {"titles": {"en": "Confederate Heroes Day"}, "type": "1D", "start": {"mon": 1, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 1931}, "urls": {"en": "https://en.wikipedia.org/wiki/Confederate_Memorial_Day"}, "locations": {"en": "Texas"}},
+        {"titles": {"en": "Confederate History Month"}, "notes": {"en": "April Confederate Heritage Month"}, "type": "1M", "start": {"mon": 4}, "1st": {"type": "1D", "era": 1, "y": 1994}, "urls": {"en": "https://en.wikipedia.org/wiki/Confederate_History_Month"}, "locations": {"en": "Southern USA"}},
+        {"titles": {"en": "Robert E. Lee Day"}, "notes": {"en": "Lee’s Birthday"}, "type": "1D", "start": {"mon": 1, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 1931}, "urls": {"en": "https://en.wikipedia.org/wiki/Robert_E._Lee_Day"}, "locations": {"en": "Florida"}},
+        {"titles": {"en": "Robert E. Lee Day"}, "notes": {"en": "Lee’s Birthday"}, "type": "1D", "start": {"mon": 1, "wkd": [2], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1931}, "urls": {"en": "https://en.wikipedia.org/wiki/Robert_E._Lee_Day"}, "locations": {"en": "Alabama and Mississippi"}},
+        {"titles": {"en": "Martin Luther King Jr. Day"}, "notes": {"en": "Birthday of Martin Luther King, Jr.\nMLK Day"}, "type": "1D", "start": {"mon": 1, "wkd": [2], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1986}, "urls": {"en": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr._Day"}},
+
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "National Minnesota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
