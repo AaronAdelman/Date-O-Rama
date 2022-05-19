@@ -116,6 +116,8 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
         return symbol
     }
     
+    let datePatternComponentCache = NSCache<NSString, NSArray>()
+    
     fileprivate func dateString(FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat) -> String {
         var dateFormatPattern: String
         let languageCode = localeIdentifier.localeLanguageCode
@@ -173,7 +175,15 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             dateFormatPattern = self.dateFormatter.dateFormat ?? ""
         }
         
-        let components = dateFormatPattern.dateFormatPatternComponents
+        var components: Array<ASADateFormatPatternComponent>
+        let candidateComponents = self.datePatternComponentCache.object(forKey: dateFormatPattern as NSString)
+        if candidateComponents == nil {
+            components = dateFormatPattern.dateFormatPatternComponents
+            datePatternComponentCache.setObject(components as NSArray, forKey: dateFormatPattern as NSString)
+        } else {
+            components = candidateComponents as! Array<ASADateFormatPatternComponent>
+        }
+        
         var result = ""
         formatter.locale = Locale(identifier: localeIdentifier)
         
