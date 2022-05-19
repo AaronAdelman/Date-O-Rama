@@ -7,5 +7,6 @@
     "emoji": "🇮🇪",
     "eventSpecifications": [
         {"titles": {"en": "St. Patrick’s Day"}, "type": "1D", "start": {"mon": 3, "d": 17}, "emoji": "🍀", "urls": {"en": "https://www.daysoftheyear.com/days/saint-patricks-day/"}},
+        {"type": "1M", "start": {"mon": 2}, "titles": {"en": "Black History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Black_History_Month"}, "1st": {"era": 1, "y": 2010}},
     ]
 }
