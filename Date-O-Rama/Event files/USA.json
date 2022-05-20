@@ -41,7 +41,6 @@
         {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "National Borinqueneers Day"}, "1st": {"era": 1, "y": 2021}, "urls": {"en": "https://nationaldaycalendar.com/national-borinqueneers-day-april-13/"}, "emoji": "🇵🇷"},
         {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "National Pan American Day"}, "1st": {"era": 1, "y": 1931}, "urls": {"en": "https://nationaldaycalendar.com/national-pan-american-day-april-14/"}, "emoji": "🌎"},
         {"type": "1D", "start": {"d": 16, "mon": 4}, "titles": {"en": "Emancipation Day"}, "locations": {"en": "District of Columbia"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#District_of_Columbia"}, "1st": {"era": 1, "y": 2005}},
-        
         {"type": "1D", "start": {"d": 4, "mon": 7}, "titles": {"en": "Independence Day"}, "1st": {"era": 1, "y": 1776}, "emoji": "🎆", "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_(United_States)"}},
         {"type": "1D", "start": {"d": 2, "thruD": 8, "mon": 11, "wkd": [3]}, "titles": {"en": "Election Day"}},
         {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "Gold Star Spouses Day"}, "1st": {"era": 1, "y": 2011}, "urls": {"en": "https://nationaldaycalendar.com/gold-star-spouses-day-april-5/"}, "emoji": "⭐️"},
@@ -150,6 +149,9 @@
         {"titles": {"en": "Native American Day"}, "type": "1D", "start": {"mon": 9, "wkd": [6], "wkdRecurrence": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Native_American_Day"}, "1st": {"era": 1, "y": 1997}, "locations": {"en": "California and Nevada"}},
         {"titles": {"en": "Native American Day"}, "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "urls": {"en": "https://en.wikipedia.org/wiki/Native_American_Day"}, "1st": {"era": 1, "y": 1990}, "locations": {"en": "South Dakota"}},
         {"titles": {"en": "Native American Day"}, "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Native_American_Day"}, "1st": {"era": 1, "y": 1994}, "locations": {"en": "Tennessee"}},
+        {"titles": {"en": "National Defense Transportation Day"}, "type": "1D", "start": {"mon": 5, "wkd": [6], "wkdRecurrence": 3}, "urls": {"en": "https://nationaldaycalendar.com/national-defense-transportation-day-third-friday-in-may/"}, "1st": {"era": 1, "y": 1957}, "emoji": "🛣"},
+        {"type": "1D", "start": {"d": 20, "mon": 5}, "titles": {"en": "Emancipation Day"}, "locations": {"en": "Florida"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#Florida"}, "1st": {"era": 1, "y": 1865}},
+
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "National Minnesota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
