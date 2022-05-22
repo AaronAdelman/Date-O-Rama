@@ -21,6 +21,7 @@
         {"type": "1D", "start": {"d": 1, "mon": 5}, "titles": {"en": "Therapeutic Massage Awareness Day"}, "urls": {"en": "http://skepdic.com/ayurvedic.html"}, "1st": {"era": 1, "y": 2014}},
         {"type": "1D", "start": {"d": 4, "mon": 5}, "titles": {"en": "National Paranormal Day"}, "urls": {"en": "http://skepdic.com/paranormal.html"}, "1st": {"era": 1, "y": 2013}, "emoji": "👻"},
         {"type": "1D", "start": {"d": 2, "mon": 7}, "titles": {"en": "World UFO Day"}, "1st": {"era": 1, "y": 2001}, "emoji": "🛸", "urls": {"en": "http://skepdic.com/ufos_ets.html"}},
+        {"type": "1D", "start": {"d": 22, "mon": 5}, "titles": {"en": "International Being You Day"}, "1st": {"era": 1, "y": 2021}, "urls": {"en": "https://rationalwiki.org/wiki/Access_Consciousness"}},
 
 
     ]
