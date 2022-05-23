@@ -461,5 +461,7 @@
         {"titles": {"en": "Kwanzaa (day 6:  Kuumba)"}, "type": "1D", "start": {"mon": 12, "d": 31}, "1st": {"type": "1D", "era": 1, "y": 1966}, "urls": {"en": "https://www.officialkwanzaawebsite.org/"}},
         {"titles": {"en": "Kwanzaa (day 7:  Imani)"}, "type": "1D", "start": {"mon": 1, "d": 1}, "1st": {"type": "1D", "era": 1, "y": 1966}, "urls": {"en": "https://www.officialkwanzaawebsite.org/"}},
         {"type": "1D", "start": {"mon": 5, "d": 26}, "titles": {"en": "World Hunger Day"}, "1st": {"era": 1, "y": 2011}, "urls": {"en": "https://www.thereisadayforthat.com/holidays/various/world-hunger-day"}},
+        {"type": "1M", "start": {"mon": 4}, "titles": {"en": "Dalit History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, "1st": {"era": 1, "y": 2022}},
+
     ]
 }
