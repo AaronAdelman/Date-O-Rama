@@ -324,7 +324,7 @@
         {"titles": {"en": "Fourth Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 21}},
         {"titles": {"en": "Fifth Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 28}},
         {"titles": {"en": "Sixth Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 35}},
-        {"titles": {"en": "Feast of the Ascension"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"titles": {"en": "Ascension Day"}, "notes": {"en": "Feast of the Ascension"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"titles": {"en": "Seventh Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 42}},
         {"titles": {"en": "Pentecost"}, "notes": {"en": "Whitsunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
         {"titles": {"en": "Whit Monday"}, "notes": {"en": "Pentecost Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
