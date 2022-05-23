@@ -84,7 +84,7 @@
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Vijay Diwas"}},
         {"type": "1D", "start": {"d": 23, "mon": 12}, "titles": {"en": "Kisan Diwas"}},
         {"type": "1D", "start": {"d": 13, "mon": 2}, "titles": {"en": "Sarojini Naidu’s Birth Anniversary"}},
-        {"type": "1D", "start": {"d": 29, "mon": 5}, "titles": {"en": "International Mount Everest Day"}},
+        {"type": "1D", "start": {"d": 29, "mon": 5}, "titles": {"en": "International Mount Everest Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/mount-everest-day/"}, "1st": {"era": 1, "y": 2008}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "National Doctors’ Day"}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "National Chartered Accountants Day"}},
         {"type": "1D", "start": {"mon": 5, "d": 24}, "titles": {"en": "Commonwealth Day"}},

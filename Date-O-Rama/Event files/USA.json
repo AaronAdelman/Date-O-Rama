@@ -151,7 +151,7 @@
         {"titles": {"en": "Native American Day"}, "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Native_American_Day"}, "1st": {"era": 1, "y": 1994}, "locations": {"en": "Tennessee"}},
         {"titles": {"en": "National Defense Transportation Day"}, "type": "1D", "start": {"mon": 5, "wkd": [6], "wkdRecurrence": 3}, "urls": {"en": "https://nationaldaycalendar.com/national-defense-transportation-day-third-friday-in-may/"}, "1st": {"era": 1, "y": 1957}, "emoji": "🛣"},
         {"type": "1D", "start": {"d": 20, "mon": 5}, "titles": {"en": "Emancipation Day"}, "locations": {"en": "Florida"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#Florida"}, "1st": {"era": 1, "y": 1865}},
-
+        {"type": "1D", "start": {"d": 24, "mon": 5}, "titles": {"en": "Aviation Maintenance Technician Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/aviation-maintenance-technician-day/"}, "1st": {"era": 1, "y": 2001}, "emoji": "👨‍🔧👩‍🔧"},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "National Minnesota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
