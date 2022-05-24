@@ -1,5 +1,5 @@
 {
-"titles": {"en": "Interfaith"},
+"titles": {"en": "Interfaith", "he": "בין־דתיות"},
 "supportedLocales": ["en"],
 "defaultLocale": "en",
 "calendarCode": "Gregorian",

@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Shia (Gregorian)"},
+    "titles": {"en": "Shia (Gregorian)", "he": "שיעה (גרגוריאני)"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",

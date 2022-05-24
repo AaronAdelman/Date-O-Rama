@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Mormonism"},
+    "titles": {"en": "Mormonism", "he": "מורמוניזם"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",

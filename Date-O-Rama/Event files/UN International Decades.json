@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "United Nations International Decades"},
+    "titles": {"en": "United Nations International Decades", "he": "עשורים בינלאומיים של האו״ם"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",

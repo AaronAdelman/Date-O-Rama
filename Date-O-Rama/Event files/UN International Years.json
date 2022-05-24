@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "United Nations International Years"},
+    "titles": {"en": "United Nations International Years", "he": "שנים בינלאומיים של האו״ם"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",

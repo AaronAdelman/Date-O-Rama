@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Ahmadiyya"},
+    "titles": {"en": "Ahmadiyya", "he": "אחמדים", "ar": "الجماعة الأحمدية"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",

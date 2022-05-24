@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Sikhism (supplemental)"},
+    "titles": {"en": "Sikhism (supplemental)", "he": "סיקיזם (נוספים)"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",

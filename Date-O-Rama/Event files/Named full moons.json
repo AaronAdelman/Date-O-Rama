@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Named full moons"},
+    "titles": {"en": "Named full moons", "he": "ירחים מלאים עם שמות"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",

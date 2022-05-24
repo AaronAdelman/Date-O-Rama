@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "United Nations International Days and Weeks"},
+    "titles": {"en": "United Nations International Days and Weeks", "he": "ימים ושבועות בינלאומיים של האו״ם"},
     "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
