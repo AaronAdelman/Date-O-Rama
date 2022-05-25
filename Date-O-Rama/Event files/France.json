@@ -6,9 +6,9 @@
     "emoji": "🇫🇷",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}},
-        {"templateID": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2019}},
+        {"template": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2019}},
         {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
-        {"templateID": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
+        {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
 
     ]
 }

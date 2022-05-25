@@ -6,16 +6,16 @@
     "emoji": "🇨🇦",
     "eventSpecifications": [
         {"type": "nD", "start": {"d": 3, "mon": 2}, "end": {"d": 13, "mon": 2}, "titles": {"en": "Quebec Winter Carnival"}, "emoji": "❄️"},
-        {"templateID": "Tartan Day", "type": "1D", "start": {"d": 6, "mon": 4}, "1st": {"era": 1, "year": 1985}},
+        {"template": "Tartan Day", "type": "1D", "start": {"d": 6, "mon": 4}, "1st": {"era": 1, "year": 1985}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "Canada Day", "fr": "Fête du Canada"}, "1st": {"era": 1, "y": 1982}},
-        {"templateID": "Thanksgiving Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1957}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)"}},
-        {"templateID": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2015}},
+        {"template": "Thanksgiving Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1957}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)"}},
+        {"template": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2015}},
         {"type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "titles": {"en": "Commonwealth Day"}, "1st": {"era": 1, "y": 1958}, "urls": {"en": "https://thecommonwealth.org/commonwealth-day"}},
-        {"templateID": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"d": 15, "mon": 10}, "1st": {"era": 1, "y": 2005}},
+        {"template": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"d": 15, "mon": 10}, "1st": {"era": 1, "y": 2005}},
         {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Remembrance Day"}, "1st": {"era": 1, "y": 1919}, "urls": {"en": "https://nationaltoday.com/remembrance-day/"}},
-        {"templateID": "Labor Day", "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Labour_Day_(Canada)"}},
-        {"templateID": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1995}},
-        {"type": "1M", "start": {"mon": 10}, "titles": {"en": "Women’s History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Women%27s_History_Month"}, "1st": {"era": 1, "y": 1992}, "emoji": "👩"},
+        {"template": "Labor Day", "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Labour_Day_(Canada)"}},
+        {"template": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1995}},
+        {"template": "Women’s History Month", "type": "1M", "start": {"mon": 10}, "1st": {"era": 1, "y": 1992}},
         {"type": "1M", "start": {"mon": 4}, "titles": {"en": "Dalit History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, "1st": {"era": 1, "y": 2022}},
 
     ]

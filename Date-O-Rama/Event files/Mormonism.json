@@ -4,14 +4,14 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.06, "green": 0.18, "blue": 0.34},
     "eventSpecifications": [
-        {"templateID": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
-        {"templateID": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}},
-        {"templateID": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
-        {"templateID": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1914}},
-        {"templateID": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}},
-        {"templateID": "Pioneer Day", "type": "1D", "start": {"mon": 7, "d": 24}, "1st": {"type": "1D", "era": 1, "y": 1949}},
-        {"templateID": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
-        {"templateID": "Thanksgiving Day", "titles": {"en": "Thanksgiving Day"}, "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
-        {"templateID": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"template": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"template": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}},
+        {"template": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        {"template": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1914}},
+        {"template": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}},
+        {"template": "Pioneer Day", "type": "1D", "start": {"mon": 7, "d": 24}, "1st": {"type": "1D", "era": 1, "y": 1949}},
+        {"template": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
+        {"template": "Thanksgiving Day", "titles": {"en": "Thanksgiving Day"}, "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
+        {"template": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
     ]
 }

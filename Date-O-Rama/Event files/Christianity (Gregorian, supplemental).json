@@ -63,13 +63,13 @@
         {"titles": {"en": "National Crepe Day"}, "type": "1D", "start": {"mon": 2, "d": 2}, "1st": {"type": "1D", "era": 1, "y": 472}, "urls": {"en": "https://www.daysoftheyear.com/days/crepe-day/"}, "emoji": "🥞"},
         {"titles": {"en": "World Marriage Day"}, "type": "1D", "start": {"mon": 2, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1983}, "urls": {"en": "https://www.daysoftheyear.com/days/marriage-day/"}, "emoji": "⚭"},
         {"titles": {"en": "National Corned Beef and Cabbage Day"}, "type": "1D", "start": {"mon": 3, "d": 17}, "emoji": "🥩🥬", "urls": {"en": "https://nationaldaycalendar.com/national-corned-beef-and-cabbage-day-march-17/"}},
-        {"templateID": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
+        {"template": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
         
-        {"templateID": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}},
+        {"template": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}},
         {"titles": {"en": "White Day"}, "type": "1D", "start": {"mon": 3, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 1978}, "emoji": "🤍", "urls": {"en": "https://www.daysoftheyear.com/days/white-day/"}},
         {"titles": {"en": "Black Day"}, "type": "1D", "start": {"mon": 4, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 1978}, "emoji": "🖤", "urls": {"en": "https://en.wikipedia.org/wiki/Black_Day_(South_Korea)"}},
 
-        {"templateID": "National Sanctity of Human Life Day", "type": "1D", "start": {"d": 22, "mon": 1}, "titles": {"en": "National Sanctity of Human Life Day"}, "1st": {"type": "1D", "era": 1, "y": 1984}},
+        {"template": "National Sanctity of Human Life Day", "type": "1D", "start": {"d": 22, "mon": 1}, "titles": {"en": "National Sanctity of Human Life Day"}, "1st": {"type": "1D", "era": 1, "y": 1984}},
         {"type": "1D", "start": {"mon": 1, "wkd": [1], "wkdRecurrence": 3}, "titles": {"en": "National Sanctity of Human Life Sunday"}, "1st": {"type": "1D", "era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, "emoji": "👶"},
         
         {"type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Father Damien Day"}},

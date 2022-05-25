@@ -8,14 +8,14 @@
         {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "Burns Night"}, "urls": {"en": "https://www.scotland.org/events/burns-night/the-ultimate-guide-to-burns-night"}, "emoji": "🥃", "notes": {"en": "Robert Burns Day\nRabbie Burns Day"}, "1st": {"era": 1, "y": 1801}},
         {"type": "1D", "start": {"d": 21, "mon": 4}, "titles": {"en": "National Tea Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tea-day/"}, "emoji": "☕️"},
         {"type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "titles": {"en": "Commonwealth Day"}, "1st": {"era": 1, "y": 1958}, "urls": {"en": "https://thecommonwealth.org/commonwealth-day"}},
-        {"templateID": "Victory Over Japan Day", "type": "1D", "start": {"d": 15, "mon": 8}, "1st": {"era": 1, "y": 1945}},
+        {"template": "Victory Over Japan Day", "type": "1D", "start": {"d": 15, "mon": 8}, "1st": {"era": 1, "y": 1945}},
         {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
         {"type": "1D", "start": {"d": 15, "mon": 10}, "titles": {"en": "Baby Loss Awareness Day"}, "1st": {"era": 1, "y": 2002}, "urls": {"en": "https://en.wikipedia.org/wiki/Pregnancy_and_Infant_Loss_Remembrance_Day"}},
         {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Remembrance Day"}, "1st": {"era": 1, "y": 1919}, "urls": {"en": "https://nationaltoday.com/remembrance-day/"}},
-        {"templateID": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1987}},
-        {"type": "1M", "start": {"mon": 3}, "titles": {"en": "Women’s History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Women%27s_History_Month"}, "emoji": "👩"},
-        {"type": "nD", "start": {"mon": 11, "d": 22}, "end": {"mon": 12, "d": 22}, "titles": {"en": "Disability History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Disability_History_Month"}, "1st": {"era": 1, "y": 2010}, "emoji": "🩼"},
-        {"templateID": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
+        {"template": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1987}},
+        {"template": "Women’s History Month", "type": "1M", "start": {"mon": 3}},
+        {"template": "Disability History Month", "type": "nD", "start": {"mon": 11, "d": 22}, "end": {"mon": 12, "d": 22}, "1st": {"era": 1, "y": 2010}},
+        {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
 
     ]
 }

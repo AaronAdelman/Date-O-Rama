@@ -1054,10 +1054,10 @@ class ASAEventCalendar {
                 let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
                 if matchesRegionCode {
                     var templateEventSpecification: ASAEventSpecification?
-                    if eventSpecification.templateID != nil {
+                    if eventSpecification.template != nil {
                         if ASAUserData.shared.templateEventsFile != nil {
                             let templatesEventFile: ASAEventsFile = ASAUserData.shared.templateEventsFile!
-                            let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.templateID == eventSpecification.templateID})
+                            let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.template == eventSpecification.template})
                             if index != nil {
                                 templateEventSpecification = templatesEventFile.eventSpecifications[index!]
                             }

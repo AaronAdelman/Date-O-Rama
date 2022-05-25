@@ -10,7 +10,7 @@ import Foundation
 import EventKit
 
 class ASAEventSpecification: Codable {
-    var templateID: String?
+    var template: String?
     var titles:  Dictionary<String, String>?
     var locations: Dictionary<String, String>?
     
@@ -40,7 +40,7 @@ class ASAEventSpecification: Codable {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "1st"
-        case templateID, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji, type
+        case template, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji, type
     } // enum CodingKeys
 } // extension ASAEventSpecification
 

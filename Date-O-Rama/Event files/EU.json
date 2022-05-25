@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.16, "green": 0.27, "blue": 0.52},
     "emoji": "🇪🇺",
     "eventSpecifications": [
-        {"templateID": "Data Protection Day", "type": "1D", "start": {"mon": 1, "d": 28}, "1st": {"type": "1D", "era": 1, "y": 2007}},
+        {"template": "Data Protection Day", "type": "1D", "start": {"mon": 1, "d": 28}, "1st": {"type": "1D", "era": 1, "y": 2007}},
         {"titles": {"en": "Europe Day (Committee of Ministers)"}, "type": "1D", "start": {"mon": 5, "d": 5}, "1st": {"type": "1D", "era": 1, "y": 1964}, "emoji": "🇪🇺"},
         {"titles": {"en": "Europe Day (European Union)"}, "type": "1D", "start": {"mon": 5, "d": 9}, "emoji": "🇪🇺"},
         {"titles": {"en": "Europe Month"}, "type": "1M", "start": {"mon": 5}, "emoji": "🇪🇺"},
@@ -45,7 +45,7 @@
         {"titles": {"en": "National Day of Monaco"}, "type": "1D", "start": {"mon": 11, "d": 19}, "emoji": "🇲🇨"},
         
         {"type": "1D", "start": {"d": 6, "mon": 3}, "titles": {"en": "European Day of the Righteous"}},
-        {"templateID": "Black Ribbon Day", "type": "1D", "start": {"mon": 8, "d": 23}, "1st": {"era": 1, "y": 2009}},
+        {"template": "Black Ribbon Day", "type": "1D", "start": {"mon": 8, "d": 23}, "1st": {"era": 1, "y": 2009}},
         {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
 
         
