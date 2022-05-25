@@ -6,7 +6,7 @@
     "emoji": "🇹🇳",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Martyrs’ Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day#Tunisia"}},
-        {"type": "1D", "start": {"d": 20, "mon": 3}, "titles": {"en": "Independence Day"}},
+        {"templateID": "Independence Day", "type": "1D", "start": {"d": 20, "mon": 3}},
 
         ]
     }

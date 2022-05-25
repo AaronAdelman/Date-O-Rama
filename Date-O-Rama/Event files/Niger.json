@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "emoji": "🇳🇪",
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 3, "mon": 8}, "titles": {"en": "Independence Day"}},
+        {"templateID": "Independence Day", "type": "1D", "start": {"d": 3, "mon": 8}},
     ]
 }
 

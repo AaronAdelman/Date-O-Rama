@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "emoji": "🇸🇰",
     "eventSpecifications": [
-        {"titles": {"en": "Constitution Day"}, "type": "1D", "start": {"mon": 9, "d": 1}, "emoji": "🇸🇰"},
+        {"templateID": "Constitution Day", "type": "1D", "start": {"mon": 9, "d": 1}, "emoji": "🇸🇰"},
     ]
 }
 

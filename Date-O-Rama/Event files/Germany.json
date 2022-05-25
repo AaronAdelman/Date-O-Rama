@@ -7,7 +7,8 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 3, "mon": 10}, "titles": {"en": "Unity Day"}},
         {"titles": {"he": "יום הניצחון על גרמניה הנאצית", "en": "Victory in Europe Day"}, "type": "1D", "start": {"mon": 5, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day"}, "notes": {"en": "VE Day\nV-E Day"}, "emoji": "🎆"},
-        {"type": "1M", "start": {"mon": 2}, "titles": {"en": "Black History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Black_History_Month"}, "1st": {"era": 1, "y": 1990}},
+        {"templateID": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1990}},
+        {"templateID": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
 
     ]
 }
