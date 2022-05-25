@@ -1053,6 +1053,17 @@ class ASAEventCalendar {
             if matchesDateSpecifications {
                 let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
                 if matchesRegionCode {
+                    var templateEventSpecification: ASAEventSpecification?
+                    if eventSpecification.templateID != nil {
+                        if ASAUserData.shared.templateEventsFile != nil {
+                            let templatesEventFile: ASAEventsFile = ASAUserData.shared.templateEventsFile!
+                            let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.templateID == eventSpecification.templateID})
+                            if index != nil {
+                                templateEventSpecification = templatesEventFile.eventSpecifications[index!]
+                            }
+                        }
+                    }
+                    
                     var title: String
                     if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
                         let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
@@ -1065,15 +1076,37 @@ class ASAEventCalendar {
                             title = NSLocalizedString("Fall back", comment: "")
                         }
                     } else {
-                        title = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? ""
+                        let titleAttempt1: String? = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                        let NO_TITLE = ""
+                        if titleAttempt1 != nil {
+                            title = titleAttempt1!
+                        } else if templateEventSpecification != nil {
+                            title = templateEventSpecification!.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? NO_TITLE
+                        } else {
+                            title = NO_TITLE
+                        }
                     }
                     let color = self.color
                     let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    let url: URL? = eventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    let notes: String? = eventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    let category: ASAEventCategory = eventSpecification.category ?? .generic
+                    var url: URL?
+                    let urlAttempt1: URL? = eventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                    if urlAttempt1 != nil {
+                        url = urlAttempt1
+                    } else if templateEventSpecification != nil && templateEventSpecification!.urls != nil {
+                        url = templateEventSpecification!.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                    }
+                    var notes: String?
+                    let notesAttempt1: String? = eventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                    if notesAttempt1 != nil {
+                    notes = notesAttempt1
+                    } else if templateEventSpecification != nil && templateEventSpecification!.notes != nil {
+                        notes = templateEventSpecification!.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                    }
+                    let category: ASAEventCategory = eventSpecification.category ?? (templateEventSpecification?.category ?? .generic)
                     
-                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: eventSpecification.emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.type)
+                    let emoji = eventSpecification.emoji ?? templateEventSpecification?.emoji
+                    
+                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.type)
                     if newEvent.isAllDay {
                         dateEvents.append(newEvent)
                     } else {

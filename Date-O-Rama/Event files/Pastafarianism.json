@@ -307,7 +307,7 @@
 {"type": "1D", "start": {"mon": 10, "d": 27}, "titles": {"en": "Clam Sauce Day"}, "emoji": "🥫"},
 {"type": "1D", "start": {"mon": 10, "d": 28}, "titles": {"en": "Extra Kinky Day"}},
 {"type": "1D", "start": {"mon": 10, "d": 29}, "titles": {"en": "Nut Day"}, "emoji": "🌰"},
-{"type": "1D", "start": {"mon": 10, "d": 30}, "titles": {"en": "Halloween"}, "emoji": "🎃"},
+{"templateID": "Halloween", "type": "1D", "start": {"mon": 10, "d": 30}},
 {"type": "1D", "start": {"mon": 10, "d": 31}, "titles": {"en": "Gerbil Caressing Day"}},
 {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Moustache Appreciation Day"}},
 {"type": "1D", "start": {"mon": 11, "d": 2}, "titles": {"en": "Rigatoni Day"}},

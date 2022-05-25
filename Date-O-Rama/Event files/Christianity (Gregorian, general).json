@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        {"titles": {"en": "New Year’s Day"}, "notes": {"en": "Feast of the Circumcision of Christ\nSolemnity of Mary, Mother of God\nChristmastide (day 8)"}, "type": "1D", "start": {"mon": 1, "d": 1}, "emoji": "🎉", "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"templateID": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"titles": {"en": "Feast of St. Basil the Great and St. Gregory Nazianzen"}, "notes": {"en": "Christmastide (day 9)"}, "type": "1D", "start": {"mon": 1, "d": 2}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Feast of the Holy Name of Jesus"}, "notes": {"en": "Christmastide (day 10)"}, "type": "1D", "start": {"mon": 1, "d": 3}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Feast of St. Elizabeth Ann Seton"}, "notes": {"en": "Christmastide (day 11)"}, "type": "1D", "start": {"mon": 1, "d": 4}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
@@ -249,7 +249,7 @@
         {"titles": {"en": "Feast of St. John of Kanty"}, "type": "1D", "start": {"mon": 12, "d": 23}},
 
         {"titles": {"en": "Christmas Eve"}, "type": "1D", "start": {"mon": 12, "d": 24}},
-        {"titles": {"en": "Christmas Day"}, "notes": {"en": "Christmastide (day 1)"}, "type": "1D", "start": {"mon": 12, "d": 25}, "emoji": "🎄", "urls": {"en": "https://nationaldaycalendar.com/christmas-december-25/"}},
+        {"templateID": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"titles": {"en": "St. Stephen’s Day"}, "notes": {"en": "Christmastide (day 2)"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Feast of St. John the Apostle"}, "notes": {"en": "Christmastide (day 3)"}, "type": "1D", "start": {"mon": 12, "d": 27}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Holy Innocents Day"}, "notes": {"en": "Christmastide (day 4)"}, "type": "1D", "start": {"mon": 12, "d": 28}, "urls": {"en": "https://nationaldaycalendar.com/holy-innocents-day-december-28/"}, "emoji": "🌌"},
@@ -311,7 +311,7 @@
         {"titles": {"en": "Maundy Thursday"}, "notes": {"en": "Lent (day 38)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -3}},
         {"titles": {"en": "Good Friday"}, "notes": {"en": "Lent (day 39)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}, "urls": {"en": "https://nationaldaycalendar.com/good-friday-friday-before-easter/"}},
         {"titles": {"en": "Holy Saturday"}, "notes": {"en": "Lent (day 40)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -1}},
-        {"titles": {"en": "Easter Sunday"}, "type": "1D", "start": {"Easter": "Easter"}, "emoji": "🥚🐇", "urls": {"en": "https://nationaldaycalendar.com/easter-changes-annually/"}},
+        {"templateID": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"titles": {"en": "Easter Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
         {"titles": {"en": "Easter Tuesday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 2}},
         {"titles": {"en": "Easter Wednesday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 3}},

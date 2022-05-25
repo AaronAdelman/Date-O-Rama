@@ -1,0 +1,18 @@
+{
+    "titles": {"en": "Templates"},
+    "defaultLocale": "en",
+    "calendarCode": "  ",
+    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "eventSpecifications": [
+        {"templateID": "New Year’s Day", "titles": {"en": "New Year’s Day"}, "type": "1D", "start": {"mon": 1, "d": 1}, "emoji": "🎉", "urls": {"en": "https://nationaldaycalendar.com/new-years-day-january-1/"}, "notes": {"en": "Feast of the Circumcision of Christ\nSolemnity of Mary, Mother of God\nChristmastide (day 8)"}},
+        {"templateID": "Valentine’s Day", "titles": {"en": "Valentine’s Day"}, "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}, "emoji": "❤️", "urls": {"en": "https://www.daysoftheyear.com/days/valentines-day/"}},
+        {"templateID": "Easter Sunday", "titles": {"en": "Easter Sunday"}, "type": "1D", "start": {"Easter": "Easter"}, "emoji": "🥚🐇", "urls": {"en": "https://nationaldaycalendar.com/easter-changes-annually/"}},
+        {"templateID": "Mother’s Day", "titles": {"en": "Mother’s Day"}, "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1914}, "urls": {"en": "https://www.daysoftheyear.com/days/mothers-day/"}, "emoji": "👩‍👧‍👧"},
+        {"templateID": "Father’s Day", "titles": {"en": "Father’s Day"}, "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}, "urls": {"en": "https://en.wikipedia.org/wiki/Father%27s_Day_(United_States)"}, "emoji": "👨‍👦‍👦"},
+        {"templateID": "Pioneer Day", "titles": {"en": "Pioneer Day"}, "type": "1D", "start": {"mon": 7, "d": 24}, "1st": {"type": "1D", "era": 1, "y": 1949}, "urls": {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
+        {"templateID": "Halloween", "titles": {"en": "Halloween"}, "type": "1D", "start": {"mon": 10, "d": 31}, "emoji": "🎃", "urls": {"en": "https://en.wikipedia.org/wiki/Halloween"}},
+        {"templateID": "Thanksgiving Day", "titles": {"en": "Thanksgiving Day"}, "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"}, "emoji": "🦃"},
+        {"templateID": "Christmas Day", "titles": {"en": "Christmas Day"}, "type": "1D", "start": {"mon": 12, "d": 25}, "emoji": "🎄", "urls": {"en": "https://nationaldaycalendar.com/christmas-december-25/"}, "notes": {"en": "Christmastide (day 1)"}},
+    ]
+}
+

@@ -27,6 +27,8 @@
 		A506E3E5252C9405009345A0 /* ASAProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */; };
 		A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
 		A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
+		A508C7F5283E244E00D96947 /* Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* Templates.json */; };
+		A508C7F6283E244E00D96947 /* Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* Templates.json */; };
 		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -629,6 +631,7 @@
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
 		A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedClock.swift; sourceTree = "<group>"; };
 		A507B0AE270ECCCF00BDAE06 /* Mormonism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mormonism.json; sourceTree = "<group>"; };
+		A508C7F4283E244E00D96947 /* Templates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Templates.json; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
 		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
@@ -1085,6 +1088,7 @@
 				A54539E226A9BAAC0028EAD5 /* Sunni Islam (times).json */,
 				A5BDE78A26679DAA00F47416 /* Sunni Islam.json */,
 				A5759146282BE36500675058 /* Sweden.json */,
+				A508C7F4283E244E00D96947 /* Templates.json */,
 				A5F43E262786113400FCDB88 /* Thelema.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A5E8BAD927FCADC30018CD36 /* Tunisia.json */,
@@ -1679,6 +1683,7 @@
 				A5D3D7DC27F8DB950099718A /* International.json in Resources */,
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5769955259EDCC000757B0F /* Judaism (times).json in Resources */,
+				A508C7F6283E244E00D96947 /* Templates.json in Resources */,
 				A5769954259EDCC000757B0F /* Lubavitch.json in Resources */,
 				A5EE19EC2806019500B0B9C2 /* Sikhism (supplemental).json in Resources */,
 				A5E8BAE728047B9E0018CD36 /* Liberia.json in Resources */,
@@ -1762,6 +1767,7 @@
 				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5EE19E82805FFC700B0B9C2 /* USA (Jewish).json in Resources */,
 				A5D850AE280C95F6005247BD /* South Africa.json in Resources */,
+				A508C7F5283E244E00D96947 /* Templates.json in Resources */,
 				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A575913E282BE18400675058 /* Ireland.json in Resources */,
 				A58C8D9427F1DEC900596F34 /* Pastafarianism.json in Resources */,
