@@ -47,7 +47,7 @@
         {"titles": {"en": "Feast of Saints Perpetua and Felicity"}, "type": "1D", "start": {"mon": 3, "d": 7}},
         {"titles": {"en": "Feast of St. John of God"}, "type": "1D", "start": {"mon": 3, "d": 8}},
         {"titles": {"en": "Feast of St. Frances of Rome"}, "type": "1D", "start": {"mon": 3, "d": 9}},
-        {"titles": {"en": "St. Patrick’s Day"}, "type": "1D", "start": {"mon": 3, "d": 17}, "emoji": "🍀", "urls": {"en": "https://www.daysoftheyear.com/days/saint-patricks-day/"}},
+        {"templateID": "St. Patrick’s Day", "type": "1D", "start": {"mon": 3, "d": 17}},
         {"titles": {"en": "Feast of St. Cyril of Jerusalem"}, "type": "1D", "start": {"mon": 3, "d": 18}},
 
         {"titles": {"en": "St. Joseph’s Day"}, "type": "1D", "start": {"mon": 3, "d": 19}},
@@ -248,14 +248,14 @@
         {"titles": {"en": "Feast of St. Peter Canisius"}, "type": "1D", "start": {"mon": 12, "d": 21}},
         {"titles": {"en": "Feast of St. John of Kanty"}, "type": "1D", "start": {"mon": 12, "d": 23}},
 
-        {"titles": {"en": "Christmas Eve"}, "type": "1D", "start": {"mon": 12, "d": 24}},
+        {"templateID": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"templateID": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"titles": {"en": "St. Stephen’s Day"}, "notes": {"en": "Christmastide (day 2)"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Feast of St. John the Apostle"}, "notes": {"en": "Christmastide (day 3)"}, "type": "1D", "start": {"mon": 12, "d": 27}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Holy Innocents Day"}, "notes": {"en": "Christmastide (day 4)"}, "type": "1D", "start": {"mon": 12, "d": 28}, "urls": {"en": "https://nationaldaycalendar.com/holy-innocents-day-december-28/"}, "emoji": "🌌"},
         {"titles": {"en": "Feast of St. Thomas Becket"}, "notes": {"en": "Christmastide (day 5)"}, "type": "1D", "start": {"mon": 12, "d": 29}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"titles": {"en": "Feast of St. Egwin of Worcester"}, "notes": {"en": "Christmastide (day 6)"}, "type": "1D", "start": {"mon": 12, "d": 30}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {"titles": {"en": "New Year’s Eve"}, "notes": {"en": "St. Sylvester’s Day\nChristmastide (day 7)"}, "type": "1D", "start": {"mon": 12, "d": 31}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"templateID": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
         {"titles": {"en": "Feast of the Holy Family"}, "type": "1D", "start": {"mon": 12, "d": 30, "wkd": [6]}},
         {"titles": {"en": "Feast of the Holy Family"}, "type": "1D", "start": {"mon": 12, "d": 26, "thruD": 31, "wkd": [1]}},
         
