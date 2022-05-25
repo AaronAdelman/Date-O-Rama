@@ -1,7 +1,6 @@
 {
     "titles": {"en": "Luxembourg", "he": "לוקסמבורג"},
     "defaultLocale": "en",
-    "supportedLocales": ["en", "he"],
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "emoji": "🇱🇺",

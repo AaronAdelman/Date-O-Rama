@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Mormonism", "he": "מורמוניזם"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.06, "green": 0.18, "blue": 0.34},

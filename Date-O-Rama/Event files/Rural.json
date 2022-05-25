@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Rural", "he": "כפרי", "fr": "Rural"},
-    "supportedLocales": ["fr", "en", "he"],
     "defaultLocale": "en",
     "calendarCode": "frc*",
     "calendarColor": {"red": 0.88, "green": 0.66, "blue": 0.38},

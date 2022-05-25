@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Thelema", "he": "תלמה"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.75},

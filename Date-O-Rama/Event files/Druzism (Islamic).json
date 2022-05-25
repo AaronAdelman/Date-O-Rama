@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Druzism (Islamic)", "he": "דרוזים (אסלאמי)", "ar": "دروز (إسلامي)"},
-    "supportedLocales": ["en", "he", "ar"],
     "defaultLocale": "en",
     "calendarCode": "hiq*",
     "calendarColor": {"red": 0.21, "green": 0.49, "blue": 0.31},

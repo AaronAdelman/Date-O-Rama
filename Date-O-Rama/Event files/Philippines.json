@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Philippines", "he": "פיליפינים"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.96, "green": 0.83, "blue": 0.29},

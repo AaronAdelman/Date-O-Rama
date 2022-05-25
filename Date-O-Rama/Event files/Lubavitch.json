@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Lubavitch", "he": "חב״ד"},
-    "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.0, "green": 0.58, "blue": 1.0},

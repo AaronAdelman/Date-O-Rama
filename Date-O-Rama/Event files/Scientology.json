@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Scientology", "he": "סיינטולוגיה"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.56, "green": 0.56, "blue": 0.56},

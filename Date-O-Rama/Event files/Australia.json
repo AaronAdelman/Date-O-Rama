@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Australia", "he": "אוסטרליה"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},

@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Judaism", "he": "יהדות"},
-    "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "heb*",
     "otherCalendarCodes": ["Coptic"],

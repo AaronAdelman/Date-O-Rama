@@ -1,6 +1,5 @@
 {
     "titles": {"en": "India", "he": "הודו"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.95, "green": 0.62, "blue": 0.29},

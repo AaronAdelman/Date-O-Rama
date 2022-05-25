@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Ahmadiyya", "he": "אחמדים", "ar": "الجماعة الأحمدية"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.25, "green": 0.25, "blue": 0.25},

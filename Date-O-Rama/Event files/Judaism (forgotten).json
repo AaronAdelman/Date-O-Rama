@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Judaism (forgotten)", "he": "יהדות (נשכחים)"},
-    "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.27, "green": 0.32, "blue": 0.80},

@@ -1,6 +1,5 @@
 {
     "titles": {"en": "International", "he": "בינלאומי"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.35, "green": 0.60, "blue": 0.85},
@@ -452,7 +451,7 @@
         {"type": "1D", "start": {"mon": 4, "d": 9}, "titles": {"en": "Unicorn Day"}, "emoji": "🦄", "urls": {"en": "https://www.daysoftheyear.com/days/unicorn-day/"}},
         {"type": "1D", "start": {"mon": 5, "d": 2}, "titles": {"en": "Scurvy Awareness Day"}, "emoji": "🍋", "urls": {"en": "https://www.wikidates.org/holiday/international-scurvy-awareness-day_1459.html"}},
         {"type": "1D", "start": {"mon": 5, "d": 23}, "titles": {"en": "World Turtle Day"}, "notes": {"en": "Turtle Day"}, "emoji": "🐢", "urls": {"en": "https://www.worldturtleday.org/"}, "1st": {"era": 1, "y": 1990}},
-        {"type": "1D", "start": {"mon": 5, "d": 25}, "titles": {"en": "Towel Day"}, "urls": {"en": "http://towelday.org/"}, "1st": {"era": 1, "y": 2001}},
+        {"type": "1D", "start": {"mon": 5, "d": 25}, "titles": {"en": "Towel Day"}, "urls": {"en": "http://towelday.org/"}, "1st": {"era": 1, "y": 2001}, "emoji": "㊷"},
         {"titles": {"en": "Kwanzaa (day 1:  Umoja)"}, "type": "1D", "start": {"mon": 12, "d": 26}, "1st": {"type": "1D", "era": 1, "y": 1966}, "urls": {"en": "https://www.officialkwanzaawebsite.org/"}},
         {"titles": {"en": "Kwanzaa (day 2:  Kujichagulia)"}, "type": "1D", "start": {"mon": 12, "d": 27}, "1st": {"type": "1D", "era": 1, "y": 1966}, "urls": {"en": "https://www.officialkwanzaawebsite.org/"}},
         {"titles": {"en": "Kwanzaa (day 3:  Ujima)"}, "type": "1D", "start": {"mon": 12, "d": 28}, "1st": {"type": "1D", "era": 1, "y": 1966}, "urls": {"en": "https://www.officialkwanzaawebsite.org/"}},

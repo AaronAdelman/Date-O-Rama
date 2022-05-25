@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Islam (supplemental)", "he": "אסלאם (נוספים)"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.1, "green": 0.9, "blue": 0.1},

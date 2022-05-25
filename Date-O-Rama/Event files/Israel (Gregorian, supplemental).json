@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Israel (Gregorian, supplemental)", "he": "ישראל (גרגוריאני, נוספים)"},
-    "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},

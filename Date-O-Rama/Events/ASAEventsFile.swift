@@ -21,7 +21,6 @@ import SwiftUI
 // MARK: - ASAEventsFile
 
 struct ASAEventsFile: Codable {
-    var supportedLocales:  Array<String>
     var titles:  Dictionary<String, String>
     var defaultLocale:  String
     

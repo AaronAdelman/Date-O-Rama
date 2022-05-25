@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Time changes", "he": "שינויי שעון"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "tz*",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},

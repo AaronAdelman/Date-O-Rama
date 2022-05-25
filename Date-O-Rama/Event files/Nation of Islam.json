@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Nation of Islam", "he": "אומת האסלאם", "ar": "حركة أمة الإسلام"},
-    "supportedLocales": ["en", "ar"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.4, "green": 0.6, "blue": 0.4},

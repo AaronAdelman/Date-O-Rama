@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Chinese zodiac", "he": "גלגל המזלות הסיני"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "Chinese",
     "calendarColor": {"red": 0.87, "green": 0.16, "blue": 0.06},

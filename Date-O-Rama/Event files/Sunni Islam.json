@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Sunni Islam", "he": "אסלאם סוני", "ar": "أهل السنة والجماعة"},
-    "supportedLocales": ["en", "ar", "he"],
     "defaultLocale": "en",
     "calendarCode": "hiq*",
     "calendarColor": {"red": 0.15, "green": 0.85, "blue": 0.15},

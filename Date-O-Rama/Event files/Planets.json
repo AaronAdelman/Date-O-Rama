@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Planets", "he": "כוכבי־לכת"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "xloc*",
     "calendarColor": {"red": 0.941, "green": 0.827, "blue": 0.616},

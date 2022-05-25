@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Canada", "he": "קנדה"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.77, "green": 0.24, "blue": 0.17},

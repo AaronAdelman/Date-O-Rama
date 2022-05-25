@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Antisemitism (Gregorian)", "he": "אנטישמיות (גרגוריאני)", "ar": "معاداة السامية"},
-    "supportedLocales": ["en", "he", "ar"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},

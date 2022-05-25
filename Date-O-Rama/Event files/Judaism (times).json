@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Judaism (times)", "he": "יהדות (זמנים)"},
-    "supportedLocales": ["he", "en"],
     "defaultLocale": "he",
     "calendarCode": "heb-solar*",
     "calendarColor": {"red": 0.01, "green": 0.2, "blue": 1.0},

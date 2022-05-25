@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Antisemitism (Islamic)", "he": "אנטישמיות (מוסלמי)", "ar": "معاداة السامية"},
-    "supportedLocales": ["en", "he", "ar"],
     "defaultLocale": "en",
     "calendarCode": "hiq*",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},

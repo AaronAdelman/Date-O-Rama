@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Neopaganism", "he": "נאו־פגניות"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.25},

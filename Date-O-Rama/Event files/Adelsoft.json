@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Adelsoft"},
-    "supportedLocales": ["en"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.25, "green": 0.50, "blue": 0.75},

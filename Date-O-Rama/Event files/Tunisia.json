@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Tunisia", "he": "תוניסיה"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.80, "green": 0.17, "blue": 0.15},

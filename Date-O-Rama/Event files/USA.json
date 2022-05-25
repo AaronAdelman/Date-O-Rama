@@ -1,6 +1,5 @@
 {
     "titles": {"en": "United States", "he": "ארצות הברית"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
@@ -176,6 +175,7 @@
         {"titles": {"en": "National Grandparents’ Day"}, "type": "1D", "start": {"mon": 9, "d": 7, "thruD": 13, "wkd": [1]}, "urls": {"en": "https://holidayinsights.com/other/grand.htm"}, "emoji": "👴👵", "1st": {"era": 1, "y": 1978}},
         {"type": "1M", "start": {"mon": 2}, "titles": {"en": "American Heart Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/American_Heart_Month"}, "1st": {"era": 1, "y": 2009}, "emoji": "🫀"},
         {"type": "1M", "start": {"mon": 4}, "titles": {"en": "Cancer Control Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Cancer_Control_Month"}, "1st": {"era": 1, "y": 2009}},
+        {"type": "1D", "start": {"d": 25, "mon": 5}, "titles": {"en": "National Missing Children’s Day "}, "urls": {"en": "https://nationaldaycalendar.com/national-missing-childrens-day-may-25/"}, "1st": {"era": 1, "y": 1983}, "emoji": "👟"},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "National Minnesota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

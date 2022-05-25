@@ -1,6 +1,5 @@
 {
     "titles": {"en": "Bangladesh", "he": "בנגלדש"},
-    "supportedLocales": ["en", "he"],
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.17, "green": 0.41, "blue": 0.31},

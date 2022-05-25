@@ -1,7 +1,6 @@
 {
 "titles": {"en": "Buddhism", "he": "בודהיזם"},
 "defaultLocale": "en",
-"supportedLocales": ["en", "he"],
 "calendarCode": "Gregorian",
 "calendarColor": {"red": 1.0, "green": 0.82, "blue": 0.41},
 "eventSpecifications": [

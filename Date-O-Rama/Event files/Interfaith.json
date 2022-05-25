@@ -1,6 +1,5 @@
 {
 "titles": {"en": "Interfaith", "he": "בין־דתיות"},
-"supportedLocales": ["en"],
 "defaultLocale": "en",
 "calendarCode": "Gregorian",
 "calendarColor": {"red": 0.8, "green": 0.8, "blue": 0.98},
