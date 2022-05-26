@@ -86,7 +86,7 @@
         {"type": "1D", "start": {"d": 29, "mon": 5}, "titles": {"en": "International Mount Everest Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/mount-everest-day/"}, "1st": {"era": 1, "y": 2008}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "National Doctors’ Day"}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "National Chartered Accountants Day"}},
-        {"type": "1D", "start": {"mon": 5, "d": 24}, "titles": {"en": "Commonwealth Day"}},
+        {"template": "Commonwealth Day", "type": "1D", "start": {"mon": 5, "d": 24}},
         {"type": "1D", "start": {"d": 1, "mon": 7}, "titles": {"en": "GST Day"}},
         {"type": "1D", "start": {"d": 2, "mon": 7}, "titles": {"en": "World Sports Journalists Day"}},
         {"type": "1D", "start": {"d": 10, "mon": 7}, "titles": {"en": "National Fish Farmers’ Day"}},

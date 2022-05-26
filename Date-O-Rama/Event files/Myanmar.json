@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "emoji": "🇲🇲",
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 27, "mon": 3}, "titles": {"en": "Armed Forces Day"}},
+        {"template": "Armed Forces Day", "type": "1D", "start": {"d": 27, "mon": 3}},
         {"type": "1D", "start": {"d": 2, "mon": 3}, "titles": {"en": "Peasants’ Day"}},
     ]
 }

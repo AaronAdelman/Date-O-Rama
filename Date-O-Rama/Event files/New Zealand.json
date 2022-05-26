@@ -5,8 +5,8 @@
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
     "emoji": "🇳🇿",
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 25, "mon": 4}, "titles": {"en": "Anzac Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/anzac-day/"}, "1st": {"era": 1, "y": 1916}},
-        {"type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "titles": {"en": "Commonwealth Day"}, "1st": {"era": 1, "y": 1958}, "urls": {"en": "https://thecommonwealth.org/commonwealth-day"}},
+        {"template": "Anzac Day", "type": "1D", "start": {"d": 25, "mon": 4}, "1st": {"era": 1, "y": 1916}},
+        {"template": "Commonwealth Day", "type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1958}},
 
         ]
     }
