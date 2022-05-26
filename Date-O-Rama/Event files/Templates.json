@@ -72,7 +72,25 @@
         {"template": "Women’s Equality Day", "type": "1D", "start": {"d": 26, "mon": 8}, "titles": {"en": "Women’s Equality Day", "he": "יום השוויון לנשים"}, "emoji": "👩", "urls": {"en": "https://www.daysoftheyear.com/days/womens-equality-day/", "he": "https://he.wikipedia.org%2Fwiki%2F%D7%99%D7%95%D7%9D_%D7%94%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F_%D7%9C%D7%A0%D7%A9%D7%99%D7%9D"}},
         {"template": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "titles": {"en": "Women’s History Month"}, "urls": {"en": "https://www.daysoftheyear.com/days/womens-history-month/"}, "emoji": "👩"},
         {"template": "World Hunger Day", "type": "1D", "start": {"mon": 5, "d": 28}, "titles": {"en": "World Hunger Day"}, "urls": {"en": "http://www.worldhungerday.org/"}, "emoji": "🍽"},
-
+        {"template": "Aries", "titles": {"en": "Aries", "he": "טלה"}, "type": "1M", "start": {"mon": 8}, "category": "Aries", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Taurus", "titles": {"en": "Taurus", "he": "שור"}, "type": "1M", "start": {"mon": 9}, "category": "Taurus", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Gemini", "titles": {"en": "Gemini", "he": "תאומים"}, "type": "1M", "start": {"mon": 10}, "category": "Gemini", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Cancer", "titles": {"en": "Cancer", "he": "סרטן"}, "type": "1M", "start": {"mon": 11}, "category": "Cancer", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Leo", "titles": {"en": "Leo", "he": "אריה"}, "type": "1M", "start": {"mon": 12}, "category": "Leo", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Virgo", "titles": {"en": "Virgo", "he": "בתולה"}, "type": "1M", "start": {"mon": 13}, "category": "Virgo", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Libra", "titles": {"en": "Libra", "he": "מאזניים"}, "type": "1M", "start": {"mon": 1}, "category": "Libra", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Scorpio", "titles": {"en": "Scorpio", "he": "עקרב"}, "type": "1M", "start": {"mon": 2}, "category": "Scorpio", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Sagittarius", "titles": {"en": "Sagittarius", "he": "קשת"}, "type": "1M", "start": {"mon": 3}, "category": "Sagittarius", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Capricorn", "titles": {"en": "Capricorn", "he": "גדי"}, "type": "1M", "start": {"mon": 4}, "category": "Capricorn", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Aquarius", "titles": {"en": "Aquarius", "he": "דלי"}, "type": "1M", "start": {"mon": 5}, "category": "Aquarius", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Pisces", "titles": {"en": "Pisces", "he": "דגים"}, "type": "1M", "start": {"mon": 7, "yLengths": [353, 354, 355]}, "category": "Pisces", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of Mercury", "titles": {"he":  "שעת כוכב", "en": "Hour of Mercury"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 0.0, "dHalf": "n"}, "category": "zme", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of the Moon", "titles": {"he":  "שעת לבנה", "en": "Hour of the Moon"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 1.0, "dHalf": "n"}, "category": "zmo", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of Saturn", "titles": {"he":  "שעת שבתאי", "en": "Hour of Saturn"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 2.0, "dHalf": "n"}, "category": "zsa", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of Jupiter", "titles": {"he":  "שעת צדק", "en": "Hour of Jupiter"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 3.0, "dHalf": "n"}, "category": "zju", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of Mars", "titles": {"he":  "שעת מאדים", "en": "Hour of Mars"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 4.0, "dHalf": "n"}, "category": "zma", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of the Sun", "titles": {"he":  "שעת חמה", "en": "Hour of the Sun"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 5.0, "dHalf": "n"}, "category": "zsu", "urls": {"en": "http://skepdic.com/astrology.html"}},
+        {"template": "Hour of Venus", "titles": {"he":  "שעת נוגה", "en": "Hour of Venus"}, "type": "span", "start": {"wkd": [1], "ptType": "R2ST", "zsuH": 6.0, "dHalf": "n"}, "category": "zve", "urls": {"en": "http://skepdic.com/astrology.html"}},
     ]
 }
 
