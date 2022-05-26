@@ -7,6 +7,7 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Martyrs’ Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day#Tunisia"}},
         {"template": "Independence Day", "type": "1D", "start": {"d": 20, "mon": 3}},
+        {"template": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
 
         ]
     }

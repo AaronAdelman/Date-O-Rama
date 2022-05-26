@@ -6,6 +6,8 @@
     "emoji": "🇳🇪",
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 3, "mon": 8}},
+        {"template": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
+
     ]
 }
 

@@ -17,6 +17,7 @@
         {"template": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1995}},
         {"template": "Women’s History Month", "type": "1M", "start": {"mon": 10}, "1st": {"era": 1, "y": 1992}},
         {"type": "1M", "start": {"mon": 4}, "titles": {"en": "Dalit History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, "1st": {"era": 1, "y": 2022}},
+        {"template": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
 
     ]
 }
