@@ -214,13 +214,13 @@ struct ASABuiltInEventCalendarCell:  View {
 
     var body: some View {
         let eventCalendar = ASAEventCalendar(fileName: fileName)
-        let eventSpecifications = eventCalendar.eventsFile?.eventSpecifications ?? []
-        let defaultLocaleIdentifier = Locale.current.identifier
-        let eventsFileDefaultLocaleIdentifier = eventCalendar.eventsFile?.defaultLocale ?? defaultLocaleIdentifier
-        let eventTitles = eventSpecifications.map {
-            $0.eventTitle(requestedLocaleIdentifier: defaultLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier) ?? ""
-        }
-        let joinedEventTitles = ListFormatter.localizedString(byJoining: eventTitles)
+//        let eventSpecifications = eventCalendar.eventsFile?.eventSpecifications ?? []
+//        let defaultLocaleIdentifier = Locale.current.identifier
+//        let eventsFileDefaultLocaleIdentifier = eventCalendar.eventsFile?.defaultLocale ?? defaultLocaleIdentifier
+//        let eventTitles = eventSpecifications.map {
+//            $0.eventTitle(requestedLocaleIdentifier: defaultLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier) ?? ""
+//        }
+//        let joinedEventTitles = ListFormatter.localizedString(byJoining: eventTitles)
 
         HStack(alignment: .top) {
             ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventCalendar.color)
@@ -232,11 +232,11 @@ struct ASABuiltInEventCalendarCell:  View {
                         .font(.headline)
                         .foregroundColor(.secondary)
                 }
-                Text(joinedEventTitles)
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-                    .lineLimit(10)
-                    .truncationMode(.tail)
+//                Text(joinedEventTitles)
+//                    .font(.caption2)
+//                    .foregroundColor(.secondary)
+//                    .lineLimit(10)
+//                    .truncationMode(.tail)
             } // VStack
             Spacer()
             
