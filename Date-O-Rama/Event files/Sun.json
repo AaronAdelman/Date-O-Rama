@@ -4,8 +4,8 @@
     "calendarCode": "xloc*",
     "calendarColor": {"red": 1.0, "green": 1.0, "blue": 0.0},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"template": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {"template": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
 
         {"titles": {"en": "Civil dawn", "he": "שחר אזרחי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 6.0, "rising": true, "offset": 0}, "category": "civilDawn"},
         {"titles": {"en": "Civil dusk", "he": "בין הערביים אזרחי"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 6.0, "rising": false, "offset": 0}, "category": "civilDusk"},

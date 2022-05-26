@@ -5,14 +5,14 @@
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "emoji": "🌎",
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"template": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {"template": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
 
-        {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "type": "pt", "start": {"ptType": "Isha", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Fajr", "ar": "صلاة الفجر‎", "he": "פג׳ר"}, "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"template": "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"template": "Fajr", "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"template": "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"template": "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"template": "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
         
     ]
 }

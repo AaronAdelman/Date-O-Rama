@@ -4,8 +4,8 @@
     "calendarCode": "heb-solar*",
     "calendarColor": {"red": 0.01, "green": 0.2, "blue": 1.0},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
+        {"template": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {"template": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
         {"titles": {"en": "Mishsheyyakir (11°)", "he": "משיכיר (11°)"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 11.0, "rising": true, "offset": 0}, "category": "nauticalDawn"},
         {"titles": {"en": "Ṣe’th hakkokhavim (8.5°)", "he": "צאת הכוכבים (8.5°)"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}, "emoji": "🌌", "category": "nauticalDusk"},
         {"localizableTitle": "otherDawn", "titles": {"en": "‘Aloth hashshaḥar (72 minutes)", "he": "עלות השחר (72 דקות)"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": -4320.0}, "category": "astronomicalDawn"},

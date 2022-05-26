@@ -4,12 +4,12 @@
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
-        {"titles": {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, "category": "Sunrise"},
-        {"titles": {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, "category": "Sunset"},
-        {"titles": {"en": "Dhuhr", "ar": "صَلَاة ٱلظُّهْر‎", "he": "צלאת א־ט׳הר"}, "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
-        {"titles": {"en": "Isha", "ar": "صلاة العشاء‎", "he": "צלאת אל-עִשאא"}, "type": "pt", "start": {"ptType": "Isha", "calcMethod": "Jafari"}},
-        {"titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Jafari"}},
-        {"titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Jafari"}},
+        {"template": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {"template": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
+        {"template": "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
+        {"template": "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "Jafari"}},
+        {"template": "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Jafari"}},
+        {"template": "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Jafari"}},
 
         {"titles": {"en": "Maghrib (Jafari)", "ar": "صلاة المغرب‎ (الجعفريون)", "he": "צלאת אל-מגרב (ג׳עפארי)"}, "type": "pt", "start": {"ptType": "Maghrib", "calcMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
         {"titles": {"en": "Fajr (Jafari)", "ar": "صلاة الفجر‎ (الجعفريون)", "he": "פג׳ר (ג׳עפארי)"}, "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
