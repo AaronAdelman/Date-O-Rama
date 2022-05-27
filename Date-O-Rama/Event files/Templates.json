@@ -123,6 +123,15 @@
         {"template": "World Hunger Day", "type": "1D", "start": {"mon": 5, "d": 28}, "titles": {"en": "World Hunger Day"}, "urls": {"en": "http://www.worldhungerday.org/"}, "emoji": "🍽"},
         {"template": "World Penguin Day", "type": "1D", "start": {"d": 25, "mon": 4}, "titles": {"en": "World Penguin Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-penguin-day/"}, "emoji": "🐧"},
         {"template": "World Wetlands Day", "type": "1D", "start": {"d": 2, "mon": 2}, "titles": {"en": "World Wetlands Day", "he": "יום הביצות הבינלאומי", "fr": "Journée mondiale des zones humides", "es": "Día Mundial de los Humedales"}, "urls": {"en": "https://www.worldwetlandsday.org/", "fr": "https://www.worldwetlandsday.org/fr/", "es": "https://www.worldwetlandsday.org/es/"}},
+        {"template": "National Spaghetti Day", "type": "1D", "start": {"mon": 1, "d": 4}, "titles": {"en": "National Spaghetti Day"}, "notes": {"en": "Spaghetti Day"}, "emoji": "🍝", "urls": {"en": "https://www.daysoftheyear.com/days/spaghetti-day/"}},
+        {"template": "National Bubble Bath Day", "type": "1D", "start": {"mon": 1, "d": 8}, "titles": {"en": "National Bubble Bath Day"}, "notes": {"en": "Bubble Bath Day"}, "emoji": "🛁", "urls": {"en": "https://www.daysoftheyear.com/days/bubble-bath-day/"}},
+        {"template": "International Skeptics Day", "type": "1D", "start": {"mon": 1, "d": 13}, "titles": {"en": "International Skeptics Day"}, "notes": {"en": "Skeptics Day"}, "emoji": "🫤", "urls": {"en": "https://www.daysoftheyear.com/days/skeptics-day/"}},
+        {"template": "Extraterrestrial Abductions Day", "type": "1D", "start": {"mon": 3, "d": 20}, "titles": {"en": "Extraterrestrial Abductions Day"}, "emoji": "🛸", "urls": {"en": "https://holidayinsights.com/moreholidays/March/extabductday.htm"}},
+        {"template": "National French Bread Day", "type": "1D", "start": {"mon": 3, "d": 21}, "titles": {"en": "National French Bread Day"}, "notes": {"en": "French Bread Day"}, "emoji": "🥖", "urls": {"en": "https://www.daysoftheyear.com/days/french-bread-day/"}},
+        {"template": "Manatee Appreciation Day", "type": "1D", "start": {"mon": 3, "wkd": [4], "wkdRecurrence": -1}, "titles": {"en": "Manatee Appreciation Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/manatee-appreciation-day/"}},
+        {"template": "Make Up Your Own Holiday Day", "type": "1D", "start": {"mon": 3, "d": 26}, "titles": {"en": "Make Up Your Own Holiday Day"}, "emoji": "🎉", "urls": {"en": "https://www.daysoftheyear.com/days/make-up-your-own-holiday-day/"}},
+        {"template": "National Spanish Paella Day", "type": "1D", "start": {"mon": 3, "d": 27}, "titles": {"en": "National Spanish Paella Day"}, "notes": {"en": "Paella Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/spanish-paella-day/"}},
+
     ]
 }
 
