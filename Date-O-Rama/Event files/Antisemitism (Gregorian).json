@@ -7,6 +7,6 @@
         {"titles": {"he": "יום הנכבה", "en": "Nakba Day", "ar": "ذكرى النكبة‎"}, "type": "1D", "start": {"mon": 5, "d": 15}, "locations": {"en": "The Palestinian Authority and the Gaza Strip", "he": "הרשות הפלסטינית ורצועת עזה", "ar": "السلطة الفلسطينية وقطاع غزة"}, "1st": {"era": 1, "y": 1998}},
         {"titles": {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, "type": "1D", "start": {"mon": 6, "d": 5}, "locations": {"en": "The Palestinian Authority and the Gaza Strip", "he": "הרשות הפלסטינית ורצועת עזה", "ar": "السلطة الفلسطينية وقطاع غزة"}},
         {"titles": {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎"}, "type": "1D", "start": {"mon": 3, "d": 30}, "locations": {"en": "Israel, the Palestinian Authority, and the Gaza Strip", "he": "ישראל, הרשות הפלסטינית ורצועת עזה", "ar": "إسرائيل والسلطة الفلسطينية وقطاع غزة"}},
-        {"type": "1D", "start": {"mon": 5, "d": 28}, "titles": {"en": "Amnesty International Day"}, "1st": {"era": 1, "y": 1961}, "urls": {"en": "https://www.ngo-monitor.org/ngos/amnesty_international/"}},
+        {"template": "Amnesty International Day", "type": "1D", "start": {"mon": 5, "d": 28}, "1st": {"era": 1, "y": 1961}},
     ]
 }

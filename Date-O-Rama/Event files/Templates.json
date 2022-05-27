@@ -139,5 +139,8 @@
         {"template": "World Penguin Day", "type": "1D", "start": {"d": 25, "mon": 4}, "titles": {"en": "World Penguin Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-penguin-day/"}, "emoji": "🐧"},
         {"template": "World Turtle Day", "type": "1D", "start": {"mon": 5, "d": 23}, "titles": {"en": "World Turtle Day", "he": "יום הצב העולמי"}, "notes": {"en": "Turtle Day"}, "emoji": "🐢", "urls": {"en": "https://www.worldturtleday.org/"}},
         {"template": "World Wetlands Day", "type": "1D", "start": {"d": 2, "mon": 2}, "titles": {"en": "World Wetlands Day", "he": "יום הביצות הבינלאומי", "fr": "Journée mondiale des zones humides", "es": "Día Mundial de los Humedales"}, "urls": {"en": "https://www.worldwetlandsday.org/", "fr": "https://www.worldwetlandsday.org/fr/", "es": "https://www.worldwetlandsday.org/es/"}, "emoji": "🪷"},
+        {"template": "National Go Barefoot Day", "type": "1D", "start": {"mon": 6, "d": 1}, "titles": {"en": "National Go Barefoot Day"}, "emoji": "🦶", "urls": {"en": "https://www.daysoftheyear.com/days/go-barefoot-day/"}},
+        {"template": "National Cougar Day", "type": "1D", "start": {"mon": 6, "d": 12}, "titles": {"en": "National Cougar Day"}, "urls": {"en": "https://whatnationaldayisit.com/day/Cougar/"}},
+
     ]
 }
