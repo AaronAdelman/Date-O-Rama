@@ -118,7 +118,7 @@
         {"titles": {"en": "International Day of Parliamentarism"}, "type": "1D", "start": {"mon": 6, "d": 30}, "1st": {"type": "1D", "era": 1, "y": 2019}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-parliamentarism-june-30/"}},
 
         {"titles": {"en": "International Day of Cooperatives"}, "type": "1D", "start": {"mon": 7, "wkd": [7], "wkdRecurrence": 1}, "1st": {"type": "1D", "era": 1, "y": 1995}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-cooperatives-first-saturday-in-july/"}},
-        {"titles": {"en": "World Population Day"}, "type": "1D", "start": {"mon": 7, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1991}, "urls": {"en": "https://nationaldaycalendar.com/world-population-day-july-11/"}},
+        {"template": "World Population Day", "type": "1D", "start": {"mon": 7, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1991}},
         {"titles": {"en": "World Youth Skills Day"}, "type": "1D", "start": {"mon": 7, "d": 15}, "1st": {"type": "1D", "era": 1, "y": 2015}, "urls": {"en": "https://nationaldaycalendar.com/world-youth-skills-day-july-15/"}, "emoji": "👦👧"},
         {"titles": {"en": "Nelson Mandela International Day"}, "type": "1D", "start": {"mon": 7, "d": 18}, "1st": {"type": "1D", "era": 1, "y": 2010}, "urls": {"en": "https://nationaldaycalendar.com/nelson-mandela-international-day-july-18/"}},
         {"titles": {"en": "World Chess Day"}, "type": "1D", "start": {"mon": 7, "d": 20}, "1st": {"type": "1D", "era": 1, "y": 1967}, "urls": {"en": "https://nationaldaycalendar.com/international-chess-day-july-20/"}, "emoji": "♙"},

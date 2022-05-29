@@ -463,6 +463,10 @@
         {"template": "International Day for Biological Diversity", "type": "1D", "start": {"mon": 5, "d": 22}, "1st": {"type": "1D", "era": 1, "y": 2001}},
         {"template": "National Go Barefoot Day", "type": "1D", "start": {"mon": 6, "d": 1}},
         {"template": "National Cougar Day", "type": "1D", "start": {"mon": 6, "d": 12}},
+        {"template": "National Doughnut Day", "type": "1D", "start": {"mon": 11, "d": 5}, "urls": {"en": "https://nationaldaycalendar.com/national-donut-day-november-5/"}},
+        {"template": "World Gin Day", "type": "1D", "start": {"mon": 6, "wkd": [7], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 2009}},
+        {"template": "National Bourbon Day", "type": "1D", "start": {"mon": 6, "d": 14}},
+        {"template": "World Meat Free Day", "type": "1D", "start": {"mon": 6, "d": 15}},
 
     ]
 }

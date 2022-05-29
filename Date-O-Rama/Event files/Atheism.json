@@ -6,7 +6,7 @@
     "eventSpecifications": [
         {"titles": {"en": "Freethought Day"}, "type": "1D", "start": {"mon": 10, "d": 12}, "1st": {"type": "1D", "era": 1, "y": 1997}, "urls": {"en": "https://nationaldaycalendar.com/national-freethought-day-october-12/"}},
         {"titles": {"en": "Atheist Day"}, "type": "1D", "start": {"mon": 3, "d": 23}, "1st": {"type": "1D", "era": 1, "y": 2004}, "urls": {"en": "https://www.daysoftheyear.com/days/atheist-day/"}},
-        {"titles": {"en": "World Humanist Day"}, "type": "1D", "start": {"mon": 6, "d": 21}, "1st": {"type": "1D", "era": 1, "y": 1989}, "urls": {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}},
+        {"template": "World Humanist Day", "type": "1D", "start": {"mon": 6, "d": 21}, "1st": {"type": "1D", "era": 1, "y": 1989}},
         {"titles": {"en": "Ingersoll Day"}, "type": "1D", "start": {"mon": 8, "d": 11}, "urls": {"en": "https://www.daysoftheyear.com/days/ingersoll-day/"}},
         {"titles": {"en": "HumanLight"}, "type": "1D", "start": {"mon": 12, "d": 23}, "1st": {"type": "1D", "era": 1, "y": 2001}, "urls": {"en": "https://humanlight.org/"}, "emoji": "🕯"},
         {"titles": {"en": "National Day of Reason"}, "type": "1D", "start": {"mon": 5, "wkd": [5], "wkdRecurrence": 1}, "1st": {"type": "1D", "era": 1, "y": 2003}, "emoji": "⍰", "urls": {"en": "https://nationaldaycalendar.com/national-day-of-reason-first-thursday-in-may/"}},

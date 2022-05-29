@@ -141,6 +141,12 @@
         {"template": "World Wetlands Day", "type": "1D", "start": {"d": 2, "mon": 2}, "titles": {"en": "World Wetlands Day", "he": "יום הביצות הבינלאומי", "fr": "Journée mondiale des zones humides", "es": "Día Mundial de los Humedales"}, "urls": {"en": "https://www.worldwetlandsday.org/", "fr": "https://www.worldwetlandsday.org/fr/", "es": "https://www.worldwetlandsday.org/es/"}, "emoji": "🪷"},
         {"template": "National Go Barefoot Day", "type": "1D", "start": {"mon": 6, "d": 1}, "titles": {"en": "National Go Barefoot Day"}, "emoji": "🦶", "urls": {"en": "https://www.daysoftheyear.com/days/go-barefoot-day/"}},
         {"template": "National Cougar Day", "type": "1D", "start": {"mon": 6, "d": 12}, "titles": {"en": "National Cougar Day"}, "urls": {"en": "https://whatnationaldayisit.com/day/Cougar/"}},
+        {"template": "National Doughnut Day", "type": "1D", "start": {"mon": 6, "wkd": [6], "wkdRecurrence": 1}, "titles": {"en": "National Doughnut Day"}, "notes": {"en": "National Donut Day"}, "emoji": "🍩", "urls": {"en": "https://en.wikipedia.org/wiki/National_Doughnut_Day"}},
+        {"template": "World Gin Day", "type": "1D", "start": {"mon": 6, "wkd": [7], "wkdRecurrence": 2}, "titles": {"en": "World Gin Day"}, "notes": {"en": "Gin Day"}, "emoji": "🥃", "urls": {"en": "https://worldginday.com/"}},
+        {"template": "National Bourbon Day", "type": "1D", "start": {"mon": 6, "d": 14}, "titles": {"en": "National Bourbon Day"}, "notes": {"en": "Bourbon Day"}, "emoji": "🥃", "urls": {"en": "http://www.nationalbourbonday.com/"}},
+        {"template": "World Meat Free Day", "type": "1D", "start": {"mon": 6, "d": 15}, "titles": {"en": "World Meat Free Day"}, "notes": {"en": "World Meat-free Day"}, "emoji": "🥦", "urls": {"en": "https://happydays365.org/world-meat-free-day/world-meat-free-day-june-15/"}},
+        {"template": "World Humanist Day", "titles": {"en": "World Humanist Day"}, "type": "1D", "start": {"mon": 6, "d": 21}, "urls": {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}},
+        {"template": "World Population Day", "titles": {"en": "World Population Day", "he": "יום האוכלוסייה הבינלאומי"}, "type": "1D", "start": {"mon": 7, "d": 11}, "urls": {"en": "https://nationaldaycalendar.com/world-population-day-july-11/"}, "emoji": "🗺"},
 
     ]
 }
