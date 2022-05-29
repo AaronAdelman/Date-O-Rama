@@ -480,6 +480,10 @@
         {"template": "National Hot Fudge Sundae Day", "type": "1D", "start": {"mon": 7, "d": 25}},
         {"template": "Mead Day", "type": "1D", "start": {"mon": 8, "wkd": [7], "wkdRecurrence": 1}, "1st": {"era": 1, "y": 2002}},
         {"template": "National Lazy Day", "type": "1D", "start": {"mon": 8, "d": 10}},
+        {"template": "National Rum Day", "type": "1D", "start": {"mon": 8, "d": 16}},
+        {"template": "Surveillance Day", "type": "1D", "start": {"mon": 8, "d": 16}, "1st": {"era": 1, "y": 2017}},
+        {"template": "National Noodle Day", "type": "1D", "start": {"mon": 10, "d": 6}},
+        {"template": "World Pasta Day", "type": "1D", "start": {"mon": 10, "d": 25}, "1st": {"era": 1, "y": 1995}},
 
     ]
 }
