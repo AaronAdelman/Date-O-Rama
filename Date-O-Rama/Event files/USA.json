@@ -15,7 +15,7 @@
         {"template": "St. Patrick’s Day", "type": "1D", "start": {"mon": 3, "d": 17}},
         {"template": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
         {"template": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
-        {"template": "Memorial Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": -1}, "urls": {"en": "https://en.wikipedia.org/wiki/Memorial_Day", "he": "https://he.wikipedia.org/wiki%2F%D7%99%D7%95%D7%9D_%D7%94%D7%96%D7%99%D7%9B%D7%A8%D7%95%D7%9F_(%D7%90%D7%A8%D7%A6%D7%95%D7%AA_%D7%94%D7%91%D7%A8%D7%99%D7%AA)"}},
+        {"template": "Memorial Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": -1}, "urls": {"en": "https://nationaldaycalendar.com/memorial-day-last-monday-in-may/"}, "1st": {"era": 1, "y": 1971}},
         {"template": "Labor Day", "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Labor_Day"}},
         {"template": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}},
         {"template": "Shrove Tuesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -47}},
