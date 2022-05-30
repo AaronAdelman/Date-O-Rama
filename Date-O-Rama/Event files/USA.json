@@ -148,7 +148,7 @@
         {"template": "Emancipation Day", "type": "1D", "start": {"d": 20, "mon": 5}, "locations": {"en": "Florida"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#Florida"}, "1st": {"era": 1, "y": 1865}},
         {"type": "1D", "start": {"d": 24, "mon": 5}, "titles": {"en": "Aviation Maintenance Technician Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/aviation-maintenance-technician-day/"}, "1st": {"era": 1, "y": 2001}, "emoji": "👨‍🔧👩‍🔧"},
         {"type": "1M", "start": {"mon": 10}, "titles": {"en": "Filipino American History Month"}, "urls": {"en": "https://nationaldaycalendar.com/filipino-american-history-month-october/"}, "1st": {"era": 1, "y": 2006}, "emoji": "🇵🇭🇺🇸", "notes": {"en": "FAHM"}},
-        {"type": "1M", "start": {"mon": 6}, "titles": {"en": "LGBT Pride Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Gay_pride#LGBT_Pride_Month"}, "1st": {"era": 1, "y": 1999}, "notes": {"en": "LGBTQ+ Pride Month"}},
+        {"type": "1M", "start": {"mon": 6}, "titles": {"en": "LGBT Pride Month"}, "urls": {"en": "https://www.daysoftheyear.com/days/pride-month/"}, "1st": {"era": 1, "y": 1999}, "notes": {"en": "LGBTQ+ Pride Month"}},
         {"template": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "1st": {"era": 1, "y": 1986}},
         {"template": "Disability History Month", "type": "1M", "start": {"mon": 10}, "1st": {"era": 1, "y": 2007}},
         {"type": "1M", "start": {"mon": 10}, "titles": {"en": "National Disability Employment Awareness Month"}, "urls": {"en": "https://nationaldaycalendar.com/national-disability-employment-awareness-month-october/"}, "1st": {"era": 1, "y": 1988}, "emoji": "🩼"},
