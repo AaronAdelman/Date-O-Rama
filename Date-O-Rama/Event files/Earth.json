@@ -4,15 +4,15 @@
     "calendarCode": "xloc*",
     "calendarColor": {"red": 0.133, "green": 0.212, "blue": 0.290},
     "eventSpecifications": [
-        {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"}, "type": "pt", "start": {"equinoxOrSolstice": "Mar"}, "regionCodes": ["xb"]},
-        {"titles": {"en": "Summer Solstice", "he": "היפוך קיץ"}, "type": "pt", "start": {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xb"]},
-        {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"}, "type": "pt", "start": {"equinoxOrSolstice": "Sep"}, "regionCodes": ["xb"]},
-        {"titles": {"en": "Winter Solstice", "he": "היפוך חורף"}, "type": "pt", "start": {"equinoxOrSolstice": "Dec"}, "regionCodes": ["xb"]},
+        {"template": "Vernal Equinox", "type": "pt", "start": {"equinoxOrSolstice": "Mar"}, "regionCodes": ["xb"]},
+        {"template": "Summer Solstice", "type": "pt", "start": {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xb"]},
+        {"template": "Autumnal Equinox", "type": "pt", "start": {"equinoxOrSolstice": "Sep"}, "regionCodes": ["xb"]},
+        {"template": "Winter Solstice", "type": "pt", "start": {"equinoxOrSolstice": "Dec"}, "regionCodes": ["xb"]},
         
-        {"titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"}, "type": "pt", "start": {"equinoxOrSolstice": "Sep"}, "regionCodes": ["xc"]},
-        {"titles": {"en": "Summer Solstice", "he": "היפוך קיץ"}, "type": "pt", "start": {"equinoxOrSolstice": "Dec"}, "regionCodes": ["xc"]},
-        {"titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"}, "type": "pt", "start": {"equinoxOrSolstice": "Mar"}, "regionCodes": ["xc"]},
-        {"titles": {"en": "Winter Solstice", "he": "היפוך חורף"}, "type": "pt", "start": {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xc"]},
+        {"template": "Vernal Equinox", "type": "pt", "start": {"equinoxOrSolstice": "Sep"}, "regionCodes": ["xc"]},
+        {"template": "Summer Solstice", "type": "pt", "start": {"equinoxOrSolstice": "Dec"}, "regionCodes": ["xc"]},
+        {"template": "Autumnal Equinox", "type": "pt", "start": {"equinoxOrSolstice": "Mar"}, "regionCodes": ["xc"]},
+        {"template": "Winter Solstice", "type": "pt", "start": {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xc"]},
     ]
 }
 

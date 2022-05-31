@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 25, "mon": 4}, "titles": {"en": "Liberation Day"}},
+        {"template": "Liberation Day", "type": "1D", "start": {"d": 25, "mon": 4}},
         {"titles": {"en": "Republic Day"}, "type": "1D", "start": {"mon": 6, "d": 2}, "emoji": "🇮🇹"},
         {"template": "Columbus Day", "type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 1}, "1st": {"era": 1, "y": 1971}},
         {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},

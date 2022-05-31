@@ -18,7 +18,7 @@
         {"titles": {"en": "IAS Anniversary"}, "type": "1D", "start": {"mon": 10, "d": 7}, "category": "remembrance"},
         {"titles": {"en": "Publications Day"}, "type": "1D", "start": {"mon": 11, "d": 27}, "emoji": "📚", "1st": {"type": "1D", "era": 1, "y": 1967}},
         {"titles": {"en": "Flag Land Base Day"}, "type": "1D", "start": {"mon": 12, "d": 7}, "emoji": "🏨", "1st": {"type": "1D", "era": 1, "y": 1975}},
-        {"titles": {"en": "Freedom Day"}, "type": "1D", "start": {"mon": 12, "d": 30}, "category": "remembrance", "1st": {"type": "1D", "era": 1, "y": 1974}},
+        {"template": "Freedom Day", "type": "1D", "start": {"mon": 12, "d": 30}, "category": "remembrance", "1st": {"type": "1D", "era": 1, "y": 1974}},
         {"template": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
         {"titles": {"en": "Criminon Day"}, "type": "1D", "start": {"mon": 1, "d": 25}, "1st": {"type": "1D", "era": 1, "y": 1970}},
         {"titles": {"en": "Founding of the Church in New Zealand"}, "type": "1D", "start": {"mon": 1, "d": 28}, "category": "remembrance"},
