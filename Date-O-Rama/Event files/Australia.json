@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Australia", "he": "אוסטרליה"},
+    "titles": {"*": "AU"},
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
-    "emoji": "🇦🇺",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 26, "mon": 1}, "titles": {"en": "Australia Day"}, "urls": {"en": "https://www.australiaday.org.au/"}, "1st": {"era": 1, "y": 1808}},
         {"template": "Anzac Day", "type": "1D", "start": {"d": 25, "mon": 4}, "1st": {"era": 1, "y": 1916}},

@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "France", "he": "צרפת"},
+    "titles": {"*": "FR"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇫🇷",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}},
         {"template": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2019}},

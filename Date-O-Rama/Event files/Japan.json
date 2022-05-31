@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Japan", "he": "יפן"},
+    "titles": {"*": "JP"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇯🇵",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 29, "mon": 4}, "titles": {"en": "Shōwa Day"}},
     ]

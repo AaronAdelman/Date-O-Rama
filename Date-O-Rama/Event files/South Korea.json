@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "South Korea", "he": "דרום קוריאה"},
+    "titles": {"*": "KR"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇰🇷",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 15, "mon": 8}, "titles": {"en": "National Liberation Day", "ko": "광복절"}, "1st": {"era": 1, "y": 1950}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Liberation_Day_of_Korea"}},
     ]

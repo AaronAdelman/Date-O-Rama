@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Pakistan", "he": "פקיסטן"},
+    "titles": {"*": "PK"},
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.10, "green": 0.25, "blue": 0.13},
-    "emoji": "🇵🇰",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 23, "mon": 3}, "titles": {"en": "Pakistan Day"}},
         {"template": "Independence Day", "type": "1D", "start": {"d": 14, "mon": 8}},

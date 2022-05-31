@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Indonesia", "he": "אינדונזיה"},
+    "titles": {"*": "ID"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇮🇩",
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 17, "mon": 8}},
     ]

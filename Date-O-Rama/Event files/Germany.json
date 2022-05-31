@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Germany", "he": "גרמניה"},
+    "titles": {"*": "DE"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇩🇪",
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 3, "mon": 10}, "titles": {"en": "Unity Day"}},
         {"template": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},

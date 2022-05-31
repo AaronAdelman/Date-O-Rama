@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Bangladesh", "he": "בנגלדש"},
+    "titles": {"*": "BD"},
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.17, "green": 0.41, "blue": 0.31},
-    "emoji": "🇧🇩",
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 26, "mon": 3}},
         {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "Bengali New Year (Pôhela Boishakh)", "bn": "পহেলা বৈশাখ"}},

@@ -977,6 +977,15 @@ class ASAEventCalendar {
         return (startDate, endDate)
     }
     
+    func fileEmoji() -> String? {
+        let regionCode = autolocalizableRegionCode()
+        if regionCode != nil {
+            return regionCode!.flag
+        }
+        
+        return eventsFile?.emoji
+    }
+    
     func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
         let location = locationData.location
         let timeZone = locationData.timeZone
@@ -1106,7 +1115,7 @@ class ASAEventCalendar {
                     
                     let emoji = eventSpecification.emoji ?? templateEventSpecification?.emoji
                     
-                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: emoji, fileEmoji: eventsFile?.emoji, type: eventSpecification.type)
+                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
                     if newEvent.isAllDay {
                         dateEvents.append(newEvent)
                     } else {
@@ -1124,14 +1133,29 @@ class ASAEventCalendar {
         return "\(NSLocalizedString(localizableTitle, comment: "")) • \(oneLineAddress)"
     } // func eventCalendarName(locationData:  ASALocation) -> String
     
+    func autolocalizableRegionCode() -> String? {
+        let titles = self.eventsFile!.titles
+
+        let LOCALIZED_KEY = "*"
+        let regionCode = titles[LOCALIZED_KEY]
+        return regionCode
+    }
+    
     func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
         if self.eventsFile == nil {
             return self.fileName
         }
         
-        let titles = self.eventsFile!.titles
-
         let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
+
+        let regionCode = autolocalizableRegionCode()
+        if regionCode != nil {
+            let locale = Locale(identifier: userLocaleIdentifier)
+            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
+        }
+        
+        let titles = self.eventsFile!.titles
+        
         let firstAttempt = titles[userLocaleIdentifier]
         if firstAttempt != nil {
             return firstAttempt!

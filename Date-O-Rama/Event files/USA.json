@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "United States", "he": "ארצות הברית"},
+    "titles": {"*": "US"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
-    "emoji": "🇺🇸",
     "eventSpecifications": [
         {"template": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"template": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}},

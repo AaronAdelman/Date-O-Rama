@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Israel", "he": "ישראל"},
+    "titles": {"*": "IL"},
     "defaultLocale": "he",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
-    "emoji": "🇮🇱",
     "eventSpecifications": [
         {"titles": {"he": "יום העליה לבתי ספר", "en": "‘Aliyyah Day for schools"}, "type": "1D", "start": {"mon": 2, "d": 7}},
         {"titles": {"he": "יום הזיכרון ליצחק רבין", "en": "Yiṣḥaq Rabbin Memorial Day"}, "type": "1D", "start": {"mon": 2, "d": 12, "wkd": [1, 2, 3, 4, 5]}},

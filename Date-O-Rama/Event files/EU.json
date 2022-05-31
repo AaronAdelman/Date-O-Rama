@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "European Days", "he": "ימים אירופיים"},
+    "titles": {"*": "EU"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.16, "green": 0.27, "blue": 0.52},
-    "emoji": "🇪🇺",
     "eventSpecifications": [
         {"template": "Data Protection Day", "type": "1D", "start": {"mon": 1, "d": 28}, "1st": {"type": "1D", "era": 1, "y": 2007}},
         {"titles": {"en": "Europe Day (Committee of Ministers)"}, "type": "1D", "start": {"mon": 5, "d": 5}, "1st": {"type": "1D", "era": 1, "y": 1964}, "emoji": "🇪🇺"},

@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Norway", "he": "נורווגיה"},
+    "titles": {"*": "NO"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇳🇴",
     "eventSpecifications": [
         {"template": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},
 

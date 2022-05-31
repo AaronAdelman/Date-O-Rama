@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Canada", "he": "קנדה"},
+    "titles": {"*": "CA"},
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.77, "green": 0.24, "blue": 0.17},
-    "emoji": "🇨🇦",
     "eventSpecifications": [
         {"type": "nD", "start": {"d": 3, "mon": 2}, "end": {"d": 13, "mon": 2}, "titles": {"en": "Quebec Winter Carnival"}, "emoji": "❄️"},
         {"template": "Tartan Day", "type": "1D", "start": {"d": 6, "mon": 4}, "1st": {"era": 1, "year": 1985}},

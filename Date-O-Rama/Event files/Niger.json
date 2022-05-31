@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Niger", "he": "ניז׳ר"},
+    "titles": {"*": "NE"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇳🇪",
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 3, "mon": 8}},
         {"template": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},

@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "Slovakia", "he": "סלובקיה"},
+    "titles": {"*": "SK"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
-    "emoji": "🇸🇰",
     "eventSpecifications": [
         {"template": "Constitution Day", "type": "1D", "start": {"mon": 9, "d": 1}, "emoji": "🇸🇰"},
     ]

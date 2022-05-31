@@ -1,9 +1,8 @@
 {
-    "titles": {"en": "United Kingdom", "he": "בריטניה"},
+    "titles": {"*": "GB"},
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.72, "green": 0.17, "blue": 0.21},
-    "emoji": "🇬🇧",
     "eventSpecifications": [
         {"template": "Burns Night", "type": "1D", "start": {"d": 25, "mon": 1}, "1st": {"era": 1, "y": 1801}},
         {"type": "1D", "start": {"d": 21, "mon": 4}, "titles": {"en": "National Tea Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tea-day/"}, "emoji": "☕️"},
