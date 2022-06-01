@@ -263,11 +263,7 @@
     } // func hoursMinutesSecondsTimeString(hours:  Double, symbol:  String, localeIdentifier:  String, minutesPerHour:  Double, secondsPerMinutes:  Double, minimumHourDigits:  Int, minimumMinuteDigits:  Int, minimumSecondDigits:  Int) -> String
 
     func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
-        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier)
-
-        self.dateFormatter.timeZone = timeZone
-
-        self.dateFormatter.timeStyle = .none
+        self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: timeZone)
 
         switch dateFormat {
         case .none:

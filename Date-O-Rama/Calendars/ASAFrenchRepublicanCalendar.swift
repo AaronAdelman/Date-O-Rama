@@ -170,8 +170,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             default:
                 self.dateFormatter.dateStyle = .full
             }
-            self.dateFormatter.locale = Locale(identifier: localeIdentifier)
-            self.dateFormatter.timeStyle = .none
+            self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: TimeZone.current)
             dateFormatPattern = self.dateFormatter.dateFormat ?? ""
         }
         
@@ -358,10 +357,8 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
         case .none:
             timeString = ""
         case .medium:
-            self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier)
             let timeZone = locationData.timeZone
-            self.dateFormatter.timeZone = timeZone
-            self.dateFormatter.timeStyle = .medium
+            self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: timeFormat, timeZone: timeZone)
             self.dateFormatter.dateStyle = .none
             timeString = self.dateFormatter.string(from: now)
 

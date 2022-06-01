@@ -36,21 +36,7 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
-        self.dateFormatter.locale = Locale.desiredLocale(localeIdentifier)
-
-        let timeZone = locationData.timeZone
-        self.dateFormatter.timeZone = timeZone
-
-        switch timeFormat {
-        case .none:
-            self.dateFormatter.timeStyle = .none
-            
-        case .medium:
-            self.dateFormatter.timeStyle = .medium
-
-        default:
-            self.dateFormatter.timeStyle = .medium
-        } // switch timeFormat
+        self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: timeFormat, timeZone: locationData.timeZone)
         
         switch dateFormat {
         case .ISO8601YearDay, .ISO8601YearMonthDay, .ISO8601YearWeekDay:

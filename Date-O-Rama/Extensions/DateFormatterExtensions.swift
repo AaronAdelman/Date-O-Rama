@@ -41,4 +41,21 @@ extension DateFormatter {
     static let nonYearCodes: Array<String> = ["Q", "q", "M", "L", "l", "w", "W", "d", "D", "F", "g", "E", "e", "c"]
 
     static let nonYearNonMonthCodes: Array<String> = ["w", "W", "d", "D", "F", "g", "E", "e", "c"]
+    
+    func apply(localeIdentifier: String, timeFormat: ASATimeFormat, timeZone: TimeZone) {
+        self.locale = Locale.desiredLocale(localeIdentifier)
+
+        self.timeZone = timeZone
+
+        switch timeFormat {
+        case .none:
+            self.timeStyle = .none
+            
+        case .medium:
+            self.timeStyle = .medium
+
+        default:
+            self.timeStyle = .medium
+        } // switch timeFormat
+    }
 } // extension DateFormatter
