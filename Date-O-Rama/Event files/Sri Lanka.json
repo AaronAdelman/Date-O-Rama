@@ -2,7 +2,7 @@
     "titles": {"*": "LK"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "calendarColor": {"red": 1.00, "green": 0.82, "blue": 0.00},
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 4, "mon": 2}},
     ]

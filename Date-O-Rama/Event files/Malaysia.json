@@ -2,7 +2,7 @@
     "titles": {"*": "MY"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "calendarColor": {"red": 0.00, "green": 0.2, "blue": 0.63},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 16, "mon": 9}, "titles": {"en": "Malaysia Day"}},
         {"type": "1D", "start": {"d": 31, "mon": 8}, "titles": {"en": "Malaysia National Day"}},

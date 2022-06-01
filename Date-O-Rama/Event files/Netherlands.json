@@ -2,7 +2,7 @@
     "titles": {"*": "NL"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 27, "mon": 4}, "titles": {"en": "King’s Day"}},
         {"titles": {"en": "Queen’s Day"}, "type": "1D", "start": {"mon": 4, "d": 30}},

@@ -2,7 +2,7 @@
     "titles": {"*": "SE"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "calendarColor": {"red": 0.00, "green": 0.29, "blue": 0.53},
     "eventSpecifications": [
         {"template": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 6}},
         {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},

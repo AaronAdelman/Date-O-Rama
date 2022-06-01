@@ -2,7 +2,7 @@
     "titles": {"*": "NE"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "calendarColor": {"red": 1.00, "green": 0.70, "blue": 0.36},
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 3, "mon": 8}},
         {"template": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
