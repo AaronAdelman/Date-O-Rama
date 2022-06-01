@@ -145,32 +145,8 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             
             return dateFormatPattern
         } else {
-            switch dateFormat {
-            case .none:
-                return ""
-                
-            case .short, .shortWithRomanYear:
-                self.dateFormatter.dateStyle = .short
-                
-            case .shortWithWeekday:
-                self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "eee")
-                
-            case .medium:
-                self.dateFormatter.dateStyle = .medium
-                
-            case .mediumWithoutYear:
-                self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-                
-            case .long, .longWithRomanYear:
-                self.dateFormatter.dateStyle = .long
-                
-            case .longWithoutYear:
-                self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-                
-            default:
-                self.dateFormatter.dateStyle = .full
-            }
             self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: TimeZone.current)
+            self.dateFormatter.apply(dateFormat: dateFormat)
             dateFormatPattern = self.dateFormatter.dateFormat ?? ""
         }
         

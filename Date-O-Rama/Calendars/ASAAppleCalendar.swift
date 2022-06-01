@@ -42,59 +42,8 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
         case .ISO8601YearDay, .ISO8601YearMonthDay, .ISO8601YearWeekDay:
             return ISODateTimeString(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
         
-        case .none:
-            self.dateFormatter.dateStyle = .none
-            
-        case .full, .fullWithRomanYear:
-            self.dateFormatter.dateStyle = .full
-            
-        case .long, .longWithRomanYear:
-            self.dateFormatter.dateStyle = .long
-            
-        case .medium:
-            self.dateFormatter.dateStyle = .medium
-            
-        case .short, .shortWithRomanYear:
-            self.dateFormatter.dateStyle = .short
-
-        case .shortWithWeekday:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "eee")
-
-        case .mediumWithWeekday:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "eee")
-
-        case .abbreviatedWeekday:
-            self.dateFormatter.apply(dateStyle: .short, template: "eee")
-
-        case .dayOfMonth:
-            self.dateFormatter.apply(dateStyle: .short, template: "d")
-
-        case .abbreviatedWeekdayWithDayOfMonth:
-            self.dateFormatter.apply(dateStyle: .short, template: "eeed")
-
-        case .shortWithWeekdayWithoutYear:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
-
-        case .mediumWithWeekdayWithoutYear:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
-
-        case .fullWithoutYear:
-            self.dateFormatter.apply(dateStyle: .full, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .shortYearOnly:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearCodes)
-            
-        case .shortYearAndMonthOnly:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
-            
-        case .longWithoutYear:
-            self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .mediumWithoutYear:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .shortWithoutYear:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+        default:
+            self.dateFormatter.apply(dateFormat: dateFormat)
         } // switch dateFormat
         
         return self.dateFormatter.string(from: now)

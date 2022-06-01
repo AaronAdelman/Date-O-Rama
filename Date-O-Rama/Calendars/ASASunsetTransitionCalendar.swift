@@ -265,64 +265,7 @@
     func dateString(fixedNow: Date, localeIdentifier: String, timeZone: TimeZone, dateFormat: ASADateFormat) -> String {
         self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: timeZone)
 
-        switch dateFormat {
-        case .none:
-            self.dateFormatter.dateStyle = .none
-
-        case .full:
-            self.dateFormatter.dateStyle = .full
-
-        case .long:
-            self.dateFormatter.dateStyle = .long
-
-        case .medium:
-            self.dateFormatter.dateStyle = .medium
-
-        case .short:
-            self.dateFormatter.dateStyle = .short
-
-        case .shortWithWeekday:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "eee")
-
-        case .mediumWithWeekday:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "eee")
-
-        case .abbreviatedWeekday:
-            self.dateFormatter.apply(dateStyle: .short, template: "eee")
-
-        case .dayOfMonth:
-            self.dateFormatter.apply(dateStyle: .short, template: "d")
-
-        case .abbreviatedWeekdayWithDayOfMonth:
-            self.dateFormatter.apply(dateStyle: .short, template: "eeed")
-
-        case .shortWithWeekdayWithoutYear:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
-
-        case .mediumWithWeekdayWithoutYear:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
-
-        case .fullWithoutYear:
-            self.dateFormatter.apply(dateStyle: .full, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .longWithoutYear:
-            self.dateFormatter.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .mediumWithoutYear:
-            self.dateFormatter.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .shortWithoutYear:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing:  DateFormatter.yearCodes)
-            
-        case .shortYearOnly:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearCodes)
-            
-        case .shortYearAndMonthOnly:
-            self.dateFormatter.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
-
-        default:
-            self.dateFormatter.dateStyle = .full
-        } // switch dateFormat
+        self.dateFormatter.apply(dateFormat: dateFormat)
 
         let dateString = self.dateFormatter.string(from: fixedNow)
         return dateString

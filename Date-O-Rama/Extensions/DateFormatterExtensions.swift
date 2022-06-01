@@ -58,4 +58,65 @@ extension DateFormatter {
             self.timeStyle = .medium
         } // switch timeFormat
     }
+    
+    func apply(dateFormat: ASADateFormat) {
+        switch dateFormat {
+        case .ISO8601YearDay, .ISO8601YearMonthDay, .ISO8601YearWeekDay:
+            self.dateStyle = .none // Had to fill in something.  Don’t handle ISO 8601 here!
+        
+        case .none:
+            self.dateStyle = .none
+            
+        case .full, .fullWithRomanYear:
+            self.dateStyle = .full
+            
+        case .long, .longWithRomanYear:
+            self.dateStyle = .long
+            
+        case .medium:
+            self.dateStyle = .medium
+            
+        case .short, .shortWithRomanYear:
+            self.dateStyle = .short
+
+        case .shortWithWeekday:
+            self.apply(dateStyle: .short, LDMLExtension: "eee")
+
+        case .mediumWithWeekday:
+            self.apply(dateStyle: .medium, LDMLExtension: "eee")
+
+        case .abbreviatedWeekday:
+            self.apply(dateStyle: .short, template: "eee")
+
+        case .dayOfMonth:
+            self.apply(dateStyle: .short, template: "d")
+
+        case .abbreviatedWeekdayWithDayOfMonth:
+            self.apply(dateStyle: .short, template: "eeed")
+
+        case .shortWithWeekdayWithoutYear:
+            self.apply(dateStyle: .short, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
+
+        case .mediumWithWeekdayWithoutYear:
+            self.apply(dateStyle: .medium, LDMLExtension: "E", removing:  DateFormatter.yearCodes)
+
+        case .fullWithoutYear:
+            self.apply(dateStyle: .full, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .shortYearOnly:
+            self.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearCodes)
+            
+        case .shortYearAndMonthOnly:
+            self.apply(dateStyle: .short, LDMLExtension: "", removing: DateFormatter.nonYearNonMonthCodes)
+            
+        case .longWithoutYear:
+            self.apply(dateStyle: .long, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .mediumWithoutYear:
+            self.apply(dateStyle: .medium, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+            
+        case .shortWithoutYear:
+            self.apply(dateStyle: .short, LDMLExtension: "", removing:  DateFormatter.yearCodes)
+        } // switch dateFormat
+    }
 } // extension DateFormatter
