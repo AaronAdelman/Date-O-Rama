@@ -15,7 +15,7 @@
         {"titles": {"en": "Santa’s List Day"}, "type": "1D", "start": {"mon": 12, "d": 4}, "urls": {"en": "https://nationaldaycalendar.com/santas-list-day-december-4/"}, "emoji": "🎅"},
         {"titles": {"en": "Krampus Night/Krampusnacht"}, "type": "1D", "start": {"mon": 12, "d": 5}, "urls": {"en": "https://nationaldaycalendar.com/krampusnacht-december-5/"}},
         {"titles": {"en": "Christmas Card Day"}, "type": "1D", "start": {"mon": 12, "d": 9}, "urls": {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
-        {"titles": {"en": "Boxing Day"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/boxing-day-december-26/"}},
+        {"template": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"titles": {"en": "Genealogy Day"}, "type": "1D", "start": {"mon": 3, "wkd": [7], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 2013}, "urls": {"en": "https://www.daysoftheyear.com/days/genealogy-day/"}, "emoji": "👨‍👩‍👧‍👦"},
         {"titles": {"en": "Global Forgiveness Day"}, "type": "1D", "start": {"mon": 7, "d": 7}, "urls": {"en": "https://www.daysoftheyear.com/days/forgiveness-day/"}, "1st": {"type": "1D", "era": 1, "y": 1994}},
         {"titles": {"en": "Clergy Appreciation Month"}, "type": "1M", "start": {"mon": 10}, "urls": {"en": "https://corporate.hallmark.com/holidays-occasions/clergy-appreciation-month/"}, "emoji": "👩‍💼👨‍💼", "1st": {"type": "1D", "era": 1, "y": 2002}},

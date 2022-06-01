@@ -16,5 +16,17 @@
         {"template": "Disability History Month", "type": "nD", "start": {"mon": 11, "d": 22}, "end": {"mon": 12, "d": 22}, "1st": {"era": 1, "y": 2010}},
         {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
 
+        {"template": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"template": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
+        {"template": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"titles": {"en": "Easter Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
+        {"titles": {"en": "Whit Monday"}, "notes": {"en": "Pentecost Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
+        {"template": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
+        {"template": "St. Patrick’s Day", "type": "1D", "start": {"mon": 3, "d": 17}},
+        {"template": "May Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"template": "St. Andrew’s Day", "type": "1D", "start": {"mon": 11, "d": 30}},
+        {"template": "Labor Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}},
+        {"template": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+
     ]
 }

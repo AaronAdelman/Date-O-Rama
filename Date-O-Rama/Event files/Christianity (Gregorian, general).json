@@ -63,7 +63,7 @@
         {"titles": {"en": "Feast of St. Stanislaus"}, "type": "1D", "start": {"mon": 4, "d": 11}},
         {"titles": {"en": "Feast of St. Martin I"}, "type": "1D", "start": {"mon": 4, "d": 13}},
         {"titles": {"en": "Feast of St. Anselm of Canterbury"}, "type": "1D", "start": {"mon": 4, "d": 21}},
-        {"titles": {"en": "Feast of St. George or St. Adalbert"}, "type": "1D", "start": {"mon": 4, "d": 23}},
+        {"template": "St. George’s Day", "type": "1D", "start": {"mon": 4, "d": 23}},
         {"titles": {"en": "Feast of St. Fidelis of Sigmaringen"}, "type": "1D", "start": {"mon": 4, "d": 24}},
         {"titles": {"en": "Feast of St. Mark the Evangelist"}, "type": "1D", "start": {"mon": 4, "d": 25}},
         {"titles": {"en": "Feast of St. Peter Chanel"}, "type": "1D", "start": {"mon": 4, "d": 28}},
@@ -224,7 +224,7 @@
         {"titles": {"en": "Feast of St. Clement I or St. Columban"}, "type": "1D", "start": {"mon": 11, "d": 23}},
         {"titles": {"en": "Feast of St. Andrew Dung-Lac and his companions"}, "type": "1D", "start": {"mon": 11, "d": 24}},
         {"titles": {"en": "Feast of St. Catherine of Alexandria"}, "type": "1D", "start": {"mon": 11, "d": 25}},
-        {"titles": {"en": "St. Andrew’s Day"}, "type": "1D", "start": {"mon": 11, "d": 30}},
+        {"template": "St. Andrew’s Day", "type": "1D", "start": {"mon": 11, "d": 30}},
         
         {"titles": {"en": "Feast of Christ the King"}, "type": "1D", "start": {"mon": 11, "d": 20, "thruD": 26, "wkd": [1]}},
         {"titles": {"en": "Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruD": 30, "wkd": [1]}},
