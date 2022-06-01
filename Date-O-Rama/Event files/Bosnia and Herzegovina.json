@@ -2,7 +2,7 @@
     "titles": {"*": "BA"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
+    "calendarColor": {"red": 0.00, "green": 0.18, "blue": 0.42},
     "eventSpecifications": [
         {"template": "Independence Day", "type": "1D", "start": {"d": 1, "mon": 3}},
     ]
