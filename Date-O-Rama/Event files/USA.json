@@ -174,7 +174,14 @@
         {"type": "1M", "start": {"mon": 2}, "titles": {"en": "American Heart Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/American_Heart_Month"}, "1st": {"era": 1, "y": 2009}, "emoji": "🫀"},
         {"type": "1M", "start": {"mon": 4}, "titles": {"en": "Cancer Control Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Cancer_Control_Month"}, "1st": {"era": 1, "y": 2009}},
         {"type": "1D", "start": {"d": 25, "mon": 5}, "titles": {"en": "National Missing Children’s Day "}, "urls": {"en": "https://nationaldaycalendar.com/national-missing-childrens-day-may-25/"}, "1st": {"era": 1, "y": 1983}, "emoji": "👟"},
-        
+        {"type": "1D", "start": {"d": 18, "mon": 10}, "titles": {"en": " Alaska Day", "he": "יום אלסקה", "es": "Día de Alaska"}, "1st": {"era": 1, "y": 1917}, "urls": {"en": "https://en.wikipedia.org/wiki/Alaska_Day"}},
+        {"type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Casimir Pulaski Day"}, "1st": {"era": 1, "y": 1978}, "urls": {"en": "https://en.wikipedia.org/wiki/Casimir_Pulaski_Day"}},
+        {"type": "1D", "start": {"mon": 10, "d": 11}, "titles": {"en": "General Pulaski Memorial Day"}, "1st": {"era": 1, "y": 2002}, "urls": {"en": "https://nationaldaycalendar.com/general-pulaski-memorial-day-october-11/"}},
+        {"template": "Evacuation Day", "type": "1D", "start": {"mon": 3, "d": 17}, "locations": {"en": "Massachusetts"}, "1st": {"era": 1, "y": 1901}, "urls": {"en": "https://en.wikipedia.org/wiki/Evacuation_Day_(Massachusetts)"}},
+        {"template": "Evacuation Day", "type": "1D", "start": {"mon": 11, "d": 25}, "locations": {"en": "New York"}, "1st": {"era": 1, "y": 1787}, "urls": {"en": "https://en.wikipedia.org/wiki/Evacuation_Day_(New_York)"}},
+        {"type": "1D", "start": {"mon": 6, "d": 11}, "titles": {"en": "King Kamehameha I Day"}, "1st": {"era": 1, "y": 1871}, "urls": {"en": "https://en.wikipedia.org/wiki/King_Kamehameha_I_Day"}},
+
+    
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"d": 1, "mon": 3}, "titles": {"en": "National Minnesota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
         {"type": "1D", "start": {"d": 10, "mon": 5}, "titles": {"en": "National Washington Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-washington-day-may-10/"}},
