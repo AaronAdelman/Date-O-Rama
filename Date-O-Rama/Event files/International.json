@@ -250,7 +250,6 @@
         {"template": "Star Wars Day", "type": "1D", "start": {"mon": 5, "d": 4}, "1st": {"era": 1, "y": 2001}},
         {"type": "1D", "start": {"mon": 5, "d": 5}, "titles": {"en": "Revenge of the Fifth"}, "1st": {"era": 1, "y": 2011}, "urls": {"en": "https://revengeofthe5th.com/"}, "emoji": "🪐"},
         {"type": "1D", "start": {"mon": 5, "d": 6  }, "titles": {"en": "Revenge of the Sixth"}, "urls": {"en": "https://en.wiktionary.org/wiki/Revenge_of_the_Sixth"}, "emoji": "🪐"},
-        {"template": "National No Pants Day", "type": "1D", "start": {"mon": 5, "wkd": [6], "wkdRecurrence": 1}, "1st": {"era": 1, "y": 2002}},
         {"template": "National Beverage Day", "type": "1D", "start": {"mon": 5, "d": 6}},
         {"type": "1D", "start": {"d": 5, "wkd": [3], "wkdRecurrence": 1}, "titles": {"en": "World Asthma Day"}, "1st": {"era": 1, "y": 1998}, "urls": {"en": "https://www.daysoftheyear.com/days/asthma-day/"}},
         {"type": "1D", "start": {"d": 8, "mon": 5}, "titles": {"en": "World Red Cross and Red Crescent Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/World_Red_Cross_and_Red_Crescent_Day"}, "1st": {"era": 1, "y": 1984}},
