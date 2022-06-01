@@ -20,7 +20,7 @@
         {"template": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
         {"template": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"titles": {"en": "Easter Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
-        {"titles": {"en": "Whit Monday"}, "notes": {"en": "Pentecost Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
+        {"template": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
         {"template": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"template": "St. Patrick’s Day", "type": "1D", "start": {"mon": 3, "d": 17}},
         {"template": "May Day", "type": "1D", "start": {"mon": 5, "d": 1}},

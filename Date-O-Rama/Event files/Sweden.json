@@ -7,5 +7,6 @@
         {"template": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 6}},
         {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
         {"template": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"template": "Whit Saturday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 48}},
     ]
 }
