@@ -227,12 +227,10 @@
         {"template": "St. Andrew’s Day", "type": "1D", "start": {"mon": 11, "d": 30}},
         
         {"titles": {"en": "Feast of Christ the King"}, "type": "1D", "start": {"mon": 11, "d": 20, "thruD": 26, "wkd": [1]}},
-        {"titles": {"en": "Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruD": 30, "wkd": [1]}},
-        
-        {"titles": {"en": "Advent Sunday"}, "type": "1D", "start": {"mon": 12, "d": 1, "thruD": 3, "wkd": [1]}},
-        {"titles": {"en": "Second Sunday of Advent"}, "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}},
-        {"titles": {"en": "Gaudete Sunday/Third Sunday of Advent"}, "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
-        {"titles": {"en": "Fourth Sunday of Advent"}, "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
+        {"template": "1st Advent Sunday", "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}},
+        {"template": "2nd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}},
+        {"template": "3rd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
+        {"template": "4th Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
         
         {"titles": {"en": "Feast of St. Francis Xavier"}, "type": "1D", "start": {"mon": 12, "d": 3}},
         {"titles": {"en": "Feast of St. John Damascene"}, "type": "1D", "start": {"mon": 12, "d": 4}},

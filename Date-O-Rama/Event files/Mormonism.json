@@ -11,7 +11,7 @@
         {"template": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}},
         {"template": "Pioneer Day", "type": "1D", "start": {"mon": 7, "d": 24}, "1st": {"type": "1D", "era": 1, "y": 1949}},
         {"template": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
-        {"template": "Thanksgiving Day", "titles": {"en": "Thanksgiving Day"}, "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
+        {"template": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
         {"template": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
     ]
 }

@@ -1211,4 +1211,12 @@ class Date_O_RamaTests: XCTestCase {
         reportOn(name: "Los Angeles", location: LosAngelesLocation, timeZone: LosAngelesTimeZone)
     }
     
+    func testFirstAdventSunday() throws {
+        let startMD: Array<Int?> = [11, 27]
+        let endMD: Array<Int?> = [12, 3]
+        let componentsMD: Array<Int?> = [12, 3]
+        
+        XCTAssert(componentsMD.isWithin(start: startMD, end: endMD))
+    }
+    
 } // class Date_O_RamaTests

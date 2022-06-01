@@ -487,16 +487,6 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         })
         return events
     } // func mainClocksEvents(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
-    
-    // MARK:  -
-    
-    public let templateEventsFile: ASAEventsFile? = {
-        let (file, error) = ASAEventsFile.builtIn(fileName: "Templates")
-        if error != nil {
-            debugPrint(#file, #function, error as Any)
-        }
-        return file
-    }()
 } // class ASAUserData
 
 extension ASAUserData {

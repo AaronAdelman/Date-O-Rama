@@ -17,6 +17,14 @@ class ASAEventCalendar {
     var eventsFile:  ASAEventsFile?
     var error:  Error?
     var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
+    
+    static var templateEventsFile: ASAEventsFile? = {
+        let (file, error) = ASAEventsFile.builtIn(fileName: "Templates")
+        if error != nil {
+            debugPrint(#file, #function, error as Any)
+        }
+        return file
+    }()
 
 
     init(fileName:  String) {
@@ -866,9 +874,11 @@ class ASAEventCalendar {
             }
         } else {
             // offsetDays == 0
-            let matchesMonth: Bool = matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components)
-            if !matchesMonth {
-                return NO_MATCH
+            if dateSpecification.throughMonth == nil {
+                let matchesMonth: Bool = matchOneMonth(date: date, calendar: calendar, locationData: locationData, dateSpecification: dateSpecification, components: components)
+                if !matchesMonth {
+                    return NO_MATCH
+                }
             }
             
             let supportsDay: Bool = calendar.supports(calendarComponent: .day)
@@ -1079,8 +1089,8 @@ class ASAEventCalendar {
                 if matchesRegionCode {
                     var templateEventSpecification: ASAEventSpecification?
                     if eventSpecification.template != nil {
-                        if ASAUserData.shared.templateEventsFile != nil {
-                            let templatesEventFile: ASAEventsFile = ASAUserData.shared.templateEventsFile!
+                        if ASAEventCalendar.templateEventsFile != nil {
+                            let templatesEventFile: ASAEventsFile = ASAEventCalendar.templateEventsFile!
                             let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.template == eventSpecification.template})
                             if index != nil {
                                 templateEventSpecification = templatesEventFile.eventSpecifications[index!]
