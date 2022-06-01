@@ -2,9 +2,9 @@
     "titles": {"*": "UN"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
-    "calendarColor": {"red": 0.2745098039, "green": 0.6117647059, "blue": 0.8392156863},
+    "calendarColor": {"red": 0.27, "green": 0.61, "blue": 0.84},
     "eventSpecifications": [
-        {"titles": {"en": "World Braille Day", "he": "יום הברייל העולמי"}, "type": "1D", "start": {"mon": 1, "d": 4}, "emoji": "⠃", "1st": {"type": "1D", "era": 1, "y": 2019}, "urls": {"en": "https://nationaldaycalendar.com/world-braille-day-january-4/"}},
+        {"titles": {"en": "World Braille Day", "he": "יום הברייל העולמי", "es": "Día Mundial del Braille", "fr": "Journée mondiale du braille", "ar": "اليوم العالمي للغة بريل"}, "type": "1D", "start": {"mon": 1, "d": 4}, "emoji": "⠃", "1st": {"type": "1D", "era": 1, "y": 2019}, "urls": {"en": "https://nationaldaycalendar.com/world-braille-day-january-4/"}},
         {"titles": {"en": "World Logic Day", "he": "יום ההיגיון העולמי"}, "type": "1D", "start": {"mon": 1, "d": 14}, "emoji": "🧩", "1st": {"type": "1D", "era": 1, "y": 2020}, "urls": {"en": "https://nationaldaycalendar.com/world-logic-day-january-14/"}},
         {"titles": {"en": "International Day of Education", "he": "יום החינוך הבינלאומי"}, "type": "1D", "start": {"mon": 1, "d": 24}, "emoji": "📚", "1st": {"type": "1D", "era": 1, "y": 2019}, "urls": {"en": "https://nationaldaycalendar.com/international-day-of-education-january-24/"}},
         {"titles": {"en": "World Day for African and Afrodescendant Culture", "he": "היום העולמי לתרבות אפריקה ותרבות צאצאי אפריקאים"}, "type": "1D", "start": {"mon": 1, "d": 24}, "emoji": "🌍", "1st": {"type": "1D", "era": 1, "y": 2020}},
