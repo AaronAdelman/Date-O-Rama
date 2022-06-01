@@ -44,7 +44,8 @@ struct ASADateSpecification:  Codable {
     var offsetDays: Int?
     
     var throughDay: Int?
-    
+    var throughMonth: Int?
+
     // For degrees below horizon events
     var degreesBelowHorizon: Double?
     var rising: Bool?
@@ -109,6 +110,7 @@ struct ASADateSpecification:  Codable {
         case timeChange
         case MoonPhase           = "zmoPhase"
         case throughDay          = "thruD"
+        case throughMonth        = "thruMon"
     } // enum CodingKeys
 } // struct ASADateSpecification
 

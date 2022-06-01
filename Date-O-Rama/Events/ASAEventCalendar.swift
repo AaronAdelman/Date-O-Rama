@@ -878,14 +878,29 @@ class ASAEventCalendar {
                     let componentsDay = components.day!
 
                     // Check specified day of month
-                    let throughDay = dateSpecification.throughDay
-                    if throughDay == nil {
+                    
+                    let dateSpecificationThroughDay = dateSpecification.throughDay
+                    if dateSpecificationThroughDay == nil {
                         if !(componentsDay.matches(value: dateSpecificationDay!) ) {
                             return NO_MATCH
                         }
                     } else {
-                        if !(dateSpecificationDay! <=  componentsDay && componentsDay <= throughDay!) {
-                            return NO_MATCH
+                        // Check specified day of month in range that crosses month boundary
+                        let dateSpecificationMonth = dateSpecification.month
+                        let dateSpecificationThroughMonth = dateSpecification.throughMonth
+                        let componentsMonth = components.month
+                        if componentsMonth != nil && dateSpecificationMonth != nil && dateSpecificationThroughMonth != nil {
+                            let startMD = [dateSpecificationMonth, dateSpecificationDay]
+                            let endMD = [dateSpecificationThroughMonth, dateSpecificationThroughDay]
+                            let componentsMD = [componentsMonth, componentsDay]
+                            if !componentsMD.isWithin(start: startMD, end: endMD) {
+                                return NO_MATCH
+                            }
+                        } else {
+                            // No crossing month boundary
+                            if !(dateSpecificationDay! <=  componentsDay && componentsDay <= dateSpecificationThroughDay!) {
+                                return NO_MATCH
+                            }
                         }
                     }
                 }
