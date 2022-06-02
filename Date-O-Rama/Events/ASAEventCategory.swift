@@ -27,21 +27,6 @@ enum ASAEventCategory: String, Codable {
     case nauticalDusk
     case astronomicalDawn
     case astronomicalDusk
-
-    // Western Zodiac signs
-    case Aries
-    case Taurus
-    case Gemini
-    case Cancer
-    case Leo
-    case Virgo
-    case Libra
-    case Ophiuchus
-    case Scorpio
-    case Sagittarius
-    case Capricorn
-    case Aquarius
-    case Pisces
     
     // Classical planets
     case Sun     = "zsu"
@@ -88,33 +73,6 @@ extension ASAEventCategory {
             return "🌅"
         case .Sunset:
             return "🌇"
-            
-        case .Aries:
-            return "♈️"
-        case .Taurus:
-            return "♉️"
-        case .Gemini:
-            return "♊️"
-        case .Cancer:
-            return "♋️"
-        case .Leo:
-            return "♌️"
-        case .Virgo:
-            return "♍️"
-        case .Libra:
-            return "♎️"
-        case .Ophiuchus:
-            return "⛎"
-        case .Scorpio:
-            return "♏️"
-        case .Sagittarius:
-            return "♐️"
-        case .Capricorn:
-            return "♑️"
-        case .Aquarius:
-            return "♒️"
-        case .Pisces:
-            return "♓️"
             
         case .Sun:
             return "☉"
