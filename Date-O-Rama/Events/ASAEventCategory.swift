@@ -16,18 +16,6 @@ enum ASAEventCategory: String, Codable {
     case weddingAnniversary
     case remembrance
     
-    // Sun
-    case day   = "d"
-    case night = "n"
-    case Sunrise
-    case Sunset
-    case civilDawn
-    case civilDusk
-    case nauticalDawn
-    case nauticalDusk
-    case astronomicalDawn
-    case astronomicalDusk
-    
     // Classical planets
     case Sun     = "zsu"
     case Moon    = "zmo"
@@ -51,8 +39,7 @@ enum ASAEventCategory: String, Codable {
     case Dog
     case Pig
     
-    case candleLightingBeforeSunset
-    case candleLightingAfterSunset
+    case candleLighting
     case Shabbath
 } // enum ASAEventCategory
 
@@ -68,12 +55,7 @@ extension ASAEventCategory {
             return "💍"
         case .remembrance:
             return "🕓"
-            
-        case .Sunrise:
-            return "🌅"
-        case .Sunset:
-            return "🌇"
-            
+                        
         case .Sun:
             return "☉"
         case .Moon:
@@ -114,7 +96,7 @@ extension ASAEventCategory {
         case .Pig:
             return "🐖"
             
-        case .candleLightingBeforeSunset, .candleLightingAfterSunset:
+        case .candleLighting:
             return "🕯"
         case .Shabbath:
             return "🍷"
@@ -160,7 +142,7 @@ extension ASAEventCategory {
 //             .Rooster,
 //             .Dog,
 //             .Pig,
-//             .candleLightingAfterSunset:
+//             .candleLighting:
 //            return true
 //            
 //        default:
@@ -170,9 +152,9 @@ extension ASAEventCategory {
 //    
 //    var foregroundColor: Color {
 //        switch self {
-//        case .day, .candleLightingBeforeSunset, .Sunrise, .Sunset:
+//        case .day, .candleLighting, .Sunrise, .Sunset:
 //            return Color("dayForeground")
-//        case .night, .candleLightingAfterSunset, .civilDawn, .civilDusk, .nauticalDawn, .nauticalDusk, .astronomicalDawn, .astronomicalDusk:
+//        case .night, .candleLighting, .civilDawn, .civilDusk, .nauticalDawn, .nauticalDusk, .astronomicalDawn, .astronomicalDusk:
 //            return Color("nightForeground")
 //        
 //        default:
@@ -186,9 +168,9 @@ extension ASAEventCategory {
 //    
 //    var backgroundColor: Color {
 //        switch self {
-//        case .day, .candleLightingBeforeSunset:
+//        case .day, .candleLighting:
 //            return Color("eventDayBackground")
-//        case .night, .candleLightingAfterSunset:
+//        case .night, .candleLighting:
 //            return Color("eventNightBackground")
 //        case .civilDusk, .civilDawn:
 //            return Color("eventCivilBackground")
