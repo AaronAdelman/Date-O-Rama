@@ -5,10 +5,10 @@
     "calendarColor": {"red": 0.05, "green": 0.95, "blue": 0.05},
     "eventSpecifications": [
         {"titles": {"en": "al-Arba‘īn", "he": "ארבעין", "ar": "الأربعين‎", "fa": "چهلم‎"}, "type": "1D", "start": {"dOfY": 50}, "urls": {"en": "https://en.wikipedia.org/wiki/Arba'een"}},
-        {"titles": {"en": "Mawlid (Birthday of the Prophet)", "he": "מוולד א־נבי", "ar": "مَولِد النَّبِي‎"}, "type": "1D", "start": {"mon": 3, "d": 17}, "urls": {"en": "https://en.wikipedia.org/wiki/Mawlid"}, "category": "birthday"},
+        {"template": "Mawlid", "type": "1D", "start": {"mon": 3, "d": 17}},
         {"titles": {"en": "Eid al-Ghadeer (Event of Ghadir Khumm)", "he": "חדית׳ ע׳דיר ח׳ם", "ar": "حَدِيْث ٱلْغَدِيْر‎", "fa": "رویداد غدیر خم‎"}, "type": "1D", "start": {"mon": 12, "d": 18}, "urls": {"en": "https://en.wikipedia.org/wiki/Event_of_Ghadir_Khumm"}},
         {"titles": {"en": "Eid al-Mubahalah (Event of Mubahala)", "he": "חג הקללה", "ar": "عِيْد ٱلْمُبَاهَلَة‎"}, "type": "1D", "start": {"mon": 12, "d": 24}, "urls": {"en": "https://en.wikipedia.org/wiki/Event_of_Mubahala"}},
-        {"titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"}, "type": "1D", "start": {"mon": 9, "d": 19}, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}},
+        {"template": "Laylat al-Qadr", "type": "1D", "start": {"mon": 9, "d": 19}},
         {"titles": {"en": "Eid-e-Shuja' (Eid-e-Zahra)", "he": "עיד־אי־שוג׳ה", "ar": "فرحة الزهراء"}, "type": "1D", "start": {"mon": 3, "d": 9}, "urls": {"en": "https://en.wikipedia.org/wiki/Eid-e-Shuja%27"}},
         {"titles": {"en": "Birthday of ‘Alī ibn Abī Ṭālib", "he": "יום הולדת של עלי אבן אבי טאלב", "ar": "عيد ميلاد علي بن أبي طالب"}, "type": "1D", "start": {"mon": 7, "d": 13}, "urls": {"en": "https://en.wikipedia.org/wiki/Shia_view_of_Ali"}, "category": "birthday"},
         {"titles": {"en": "Birthday of Ḥujjat Allāh al-Mahdī", "he": "יום הולדת של חוג׳ת־אללה אל־מהדי", "ar": "عيد ميلاد حجة الله المهدي"}, "type": "1D", "start": {"mon": 8, "d": 15}, "urls": {"en": "https://en.wikipedia.org/wiki/Muhammad_al-Mahdi"}, "category": "birthday"},
