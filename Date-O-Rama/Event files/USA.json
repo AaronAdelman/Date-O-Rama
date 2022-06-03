@@ -133,7 +133,7 @@
         {"template": "May Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"type": "1D", "start": {"mon": 6, "d": 27}, "titles": {"en": "Helen Keller Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Helen_Keller_Day"}, "1st": {"era": 1, "y": 2006}},
         {"template": "Pioneer Day", "type": "1D", "start": {"mon": 7, "d": 24}, "1st": {"type": "1D", "era": 1, "y": 1949}},
-        {"template": "Women’s Equality Day", "type": "1D", "start": {"d": 26, "mon": 8}, "1st": {"era": 1, "y": 1973}},
+        {"type": "1D", "start": {"d": 26, "mon": 8}, "titles": {"en": "Women’s Equality Day", "he": "יום השוויון לנשים"}, "emoji": "👩", "urls": {"en": "https://www.daysoftheyear.com/days/womens-equality-day/", "he": "https://he.wikipedia.org%2Fwiki%2F%D7%99%D7%95%D7%9D_%D7%94%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F_%D7%9C%D7%A0%D7%A9%D7%99%D7%9D"}, "1st": {"era": 1, "y": 1973}},
         {"type": "1D", "start": {"mon": 9, "d": 11}, "titles": {"en": "Patriot Day"}, "urls": {"en": "https://nationaldaycalendar.com/patriot-day-and-national-day-of-service-and-remberance-september-11/"}, "1st": {"era": 1, "y": 2002}},
         {"template": "Constitution Day", "notes": {"en": "Citizenship Day"}, "type": "1D", "start": {"mon": 9, "d": 17}, "urls": {"en": "https://en.wikipedia.org/wiki/Constitution_Day_(United_States)"}, "1st": {"era": 1, "y": 2004}},
         {"template": "Black Friday", "type": "1D", "start": {"d": 23, "thruD": 29, "mon": 11, "wkd": [6]}, "1st": {"type": "1D", "era": 1, "y": 1951}},
