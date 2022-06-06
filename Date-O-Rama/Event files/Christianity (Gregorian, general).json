@@ -148,7 +148,7 @@
         
         {"titles": {"en": "Assumption of Mary"}, "type": "1D", "start": {"mon": 8, "d": 15}},
         
-        {"titles": {"en": "Feast of St. Stephen of Hungary"}, "type": "1D", "start": {"mon": 8, "d": 16}},
+        {"template": "Feast of St. Stephen of Hungary", "type": "1D", "start": {"mon": 8, "d": 16}},
         {"titles": {"en": "Feast of St. John Eudes"}, "type": "1D", "start": {"mon": 8, "d": 19}},
         {"titles": {"en": "Feast of St. Bernard of Clairvaux"}, "type": "1D", "start": {"mon": 8, "d": 20}},
         {"titles": {"en": "Feast of St. Pius X"}, "type": "1D", "start": {"mon": 8, "d": 21}},

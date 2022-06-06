@@ -5,6 +5,8 @@
     "calendarColor": {"red": 0.00, "green": 0.24, "blue": 0.65},
     "eventSpecifications": [
         {"template": "Constitution Day", "type": "1D", "start": {"mon": 9, "d": 1}, "emoji": "🇸🇰"},
+        {"titles": {"en": "Day of the Establishment of the Slovak Republic"}, "type": "1D", "start": {"mon": 1, "d": 1}},
+        
     ]
 }
 

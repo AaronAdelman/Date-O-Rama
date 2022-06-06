@@ -6,8 +6,9 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 19, "mon": 3}, "titles": {"en": "Kashubian Unity Day"}, "1st": {"era": 1, "y": 2005}, "urls": {"en": "https://en.wikipedia.org/wiki/Kashubian_Unity_Day"}},
         {"template": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
-        {"template": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 3}, "emoji": "🇳🇱"},
+        {"template": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 3}},
         {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
+        {"template": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 11}},
 
     ]
 }
