@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "PT"},
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.02, "green": 0.42, "blue": 0.22},
+    "eventSpecifications": [
+        {"titles": {"en": "Portugal Day"}, "type": "1D", "start": {"mon": 6, "d": 10}},
+
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "AD"},
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.06, "green": 0.02, "blue": 0.62},
+    "eventSpecifications": [
+        {"titles": {"en": "Our Lady of Meritxell Day"}, "type": "1D", "start": {"mon": 9, "d": 8}},
+        
+    ]
+}

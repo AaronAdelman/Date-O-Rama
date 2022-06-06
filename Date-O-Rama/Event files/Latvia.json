@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "LV"},
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.64, "green": 0.20, "blue": 0.23},
+    "eventSpecifications": [
+        {"titles": {"en": "Proclamation Day of the Republic of Latvia"}, "type": "1D", "start": {"mon": 11, "d": 18}},
+
+    ]
+}

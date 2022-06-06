@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "CZ"},
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.00, "green": 0.19, "blue": 0.53},
+    "eventSpecifications": [
+        {"template": "National Day", "type": "1D", "start": {"mon": 10, "d": 28}},
+
+    ]
+}
+
