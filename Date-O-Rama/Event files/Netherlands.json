@@ -7,5 +7,7 @@
         {"type": "1D", "start": {"d": 27, "mon": 4}, "titles": {"en": "King’s Day"}},
         {"titles": {"en": "Queen’s Day"}, "type": "1D", "start": {"mon": 4, "d": 30}},
         {"template": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"template": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
+        {"template": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
     ]
 }
