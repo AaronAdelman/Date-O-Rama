@@ -173,6 +173,13 @@ extension ASAEventSpecification {
         
         return result
     } // var recurrenceRules
+    
+    func matchesTemplateEventSpecification(templateEventSpecification: ASAEventSpecification) -> Bool {
+        assert(self.template != nil)
+        assert(templateEventSpecification.template != nil)
+        
+        return self.template == templateEventSpecification.template
+    }
 } // extension ASAEventSpecification
 
 

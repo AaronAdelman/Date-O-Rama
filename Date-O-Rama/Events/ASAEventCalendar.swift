@@ -1009,9 +1009,25 @@ class ASAEventCalendar {
         }
         
         return eventsFile?.emoji
-    }
+    } // func fileEmoji() -> String?
     
-    fileprivate func extractedFunc(_ calendar: ASACalendar, _ eventSpecification: ASAEventSpecification, _ otherCalendars: [ASACalendarCode : ASACalendar], _ components: ASADateComponents, _ date: Date, _ locationData: ASALocation, _ startOfDay: Date, _ startOfNextDay: Date, _ previousSunset: Date, _ nightHourLength: TimeInterval, _ sunrise: Date, _ hourLength: TimeInterval, _ previousOtherDusk: Date, _ otherNightHourLength: TimeInterval, _ otherDawn: Date, _ otherHourLength: TimeInterval, _ regionCode: String?, _ location: CLLocation, _ timeZone: TimeZone, _ requestedLocaleIdentifier: String, _ eventCalendarName: String, _ calendarTitleWithoutLocation: String, _ dateEvents: inout [ASAEvent], _ timeEvents: inout [ASAEvent]) {
+    fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification) -> ASAEventSpecification? {
+        if eventSpecification.template == nil || ASAEventCalendar.templateEventsFile == nil {
+            return nil
+        }
+        
+        let templatesEventFile: ASAEventsFile = ASAEventCalendar.templateEventsFile!
+        let index = templatesEventFile.eventSpecifications.firstIndex(where: {
+            eventSpecification.matchesTemplateEventSpecification(templateEventSpecification: $0)
+        })
+        if index != nil {
+            return templatesEventFile.eventSpecifications[index!]
+        }
+        
+        return nil
+    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification)
+    
+    fileprivate func createAndAppendNewEvent(_ calendar: ASACalendar, _ eventSpecification: ASAEventSpecification, _ otherCalendars: [ASACalendarCode : ASACalendar], _ components: ASADateComponents, _ date: Date, _ locationData: ASALocation, _ startOfDay: Date, _ startOfNextDay: Date, _ previousSunset: Date, _ nightHourLength: TimeInterval, _ sunrise: Date, _ hourLength: TimeInterval, _ previousOtherDusk: Date, _ otherNightHourLength: TimeInterval, _ otherDawn: Date, _ otherHourLength: TimeInterval, _ regionCode: String?, _ location: CLLocation, _ timeZone: TimeZone, _ requestedLocaleIdentifier: String, _ eventCalendarName: String, _ calendarTitleWithoutLocation: String, _ dateEvents: inout [ASAEvent], _ timeEvents: inout [ASAEvent]) {
         var appropriateCalendar:  ASACalendar = calendar
         if eventSpecification.calendarCode != nil {
             let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
@@ -1030,16 +1046,7 @@ class ASAEventCalendar {
         if matchesDateSpecifications {
             let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
             if matchesRegionCode {
-                var templateEventSpecification: ASAEventSpecification?
-                if eventSpecification.template != nil {
-                    if ASAEventCalendar.templateEventsFile != nil {
-                        let templatesEventFile: ASAEventsFile = ASAEventCalendar.templateEventsFile!
-                        let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.template == eventSpecification.template})
-                        if index != nil {
-                            templateEventSpecification = templatesEventFile.eventSpecifications[index!]
-                        }
-                    }
-                }
+               let templateEventSpecification = templateEventSpecification(for: eventSpecification)
                 
                 var title: String
                 if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
@@ -1151,7 +1158,7 @@ class ASAEventCalendar {
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)
             
-            extractedFunc(calendar, eventSpecification, otherCalendars, components, date, locationData, startOfDay, startOfNextDay, previousSunset, nightHourLength, sunrise, hourLength, previousOtherDusk, otherNightHourLength, otherDawn, otherHourLength, regionCode, location, timeZone, requestedLocaleIdentifier, eventCalendarName, calendarTitleWithoutLocation, &dateEvents, &timeEvents)
+            createAndAppendNewEvent(calendar, eventSpecification, otherCalendars, components, date, locationData, startOfDay, startOfNextDay, previousSunset, nightHourLength, sunrise, hourLength, previousOtherDusk, otherNightHourLength, otherDawn, otherHourLength, regionCode, location, timeZone, requestedLocaleIdentifier, eventCalendarName, calendarTitleWithoutLocation, &dateEvents, &timeEvents)
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return (dateEvents, timeEvents)
     } // func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>)
