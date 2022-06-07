@@ -4,6 +4,6 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
-        {"template": "National Liberation Day of Korea", "type": "1D", "start": {"d": 15, "mon": 8}, "1st": {"era": 1, "y": 1950}},
+        {"inherits": "National Liberation Day of Korea", "type": "1D", "start": {"d": 15, "mon": 8}, "1st": {"era": 1, "y": 1950}},
     ]
 }

@@ -4,6 +4,6 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.00, "green": 0.69, "blue": 0.40},
     "eventSpecifications": [
-        {"template": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}},
+        {"inherits": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}},
     ]
 }

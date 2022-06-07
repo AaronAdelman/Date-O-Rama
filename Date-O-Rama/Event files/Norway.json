@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.73, "green": 0.05, "blue": 0.18},
     "eventSpecifications": [
-        {"template": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},
 
     ]
 }

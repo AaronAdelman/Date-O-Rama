@@ -5,11 +5,11 @@
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 26, "mon": 1}, "titles": {"en": "Australia Day"}, "urls": {"en": "https://www.australiaday.org.au/"}, "1st": {"era": 1, "y": 1808}},
-        {"template": "Anzac Day", "type": "1D", "start": {"d": 25, "mon": 4}, "1st": {"era": 1, "y": 1916}},
-        {"template": "Commonwealth Day", "type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1958}},
-        {"template": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"d": 15, "mon": 10}, "1st": {"era": 1, "y": 2014}},
-        {"template": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "1st": {"era": 1, "y": 2000}},
-        {"template": "Tartan Day", "type": "1D", "start": {"d": 1, "mon": 7}, "1st": {"era": 1, "year": 1989}},
+        {"inherits": "Anzac Day", "type": "1D", "start": {"d": 25, "mon": 4}, "1st": {"era": 1, "y": 1916}},
+        {"inherits": "Commonwealth Day", "type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1958}},
+        {"inherits": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"d": 15, "mon": 10}, "1st": {"era": 1, "y": 2014}},
+        {"inherits": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "1st": {"era": 1, "y": 2000}},
+        {"inherits": "Tartan Day", "type": "1D", "start": {"d": 1, "mon": 7}, "1st": {"era": 1, "year": 1989}},
 
         ]
     }

@@ -4,12 +4,12 @@
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "eventSpecifications": [
-        {"template": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
-        {"template": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
-        {"template": "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
-        {"template": "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "Jafari"}},
-        {"template": "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Jafari"}},
-        {"template": "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Jafari"}},
+        {"inherits": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {"inherits": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
+        {"inherits": "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
+        {"inherits": "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "Jafari"}},
+        {"inherits": "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Jafari"}},
+        {"inherits": "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Jafari"}},
 
         {"titles": {"en": "Maghrib (Jafari)", "ar": "صلاة المغرب‎ (الجعفريون)", "he": "צלאת אל-מגרב (ג׳עפארי)"}, "type": "pt", "start": {"ptType": "Maghrib", "calcMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},
         {"titles": {"en": "Fajr (Jafari)", "ar": "صلاة الفجر‎ (الجعفريون)", "he": "פג׳ר (ג׳עפארי)"}, "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "Jafari"}, "notes": {"en": "Ithna Ashari"}},

@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.10, "green": 0.25, "blue": 0.13},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 23, "mon": 3}, "titles": {"en": "Pakistan Day"}},
-        {"template": "Independence Day", "type": "1D", "start": {"d": 14, "mon": 8}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"d": 14, "mon": 8}},
         {"type": "1D", "start": {"d": 9, "mon": 11}, "titles": {"en": "Iqbal Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Iqbal_Day"}},
 
     ]

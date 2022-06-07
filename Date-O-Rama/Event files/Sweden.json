@@ -4,13 +4,13 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.00, "green": 0.29, "blue": 0.53},
     "eventSpecifications": [
-        {"template": "National Day", "type": "1D", "start": {"mon": 6, "d": 6}},
-        {"template": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
-        {"template": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
-        {"template": "Whit Saturday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 48}},
-        {"template": "1st Advent Sunday", "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}},
-        {"template": "2nd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}},
-        {"template": "3rd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
-        {"template": "4th Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 6, "d": 6}},
+        {"inherits": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
+        {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"inherits": "Whit Saturday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 48}},
+        {"inherits": "1st Advent Sunday", "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}},
+        {"inherits": "2nd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}},
+        {"inherits": "3rd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
+        {"inherits": "4th Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
     ]
 }

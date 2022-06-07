@@ -11,6 +11,8 @@ import EventKit
 
 class ASAEventSpecification: Codable {
     var template: String?
+    var inherits: String?
+    
     var titles:  Dictionary<String, String>?
     var locations: Dictionary<String, String>?
     
@@ -40,7 +42,7 @@ class ASAEventSpecification: Codable {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "1st"
-        case template, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji, type
+        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji, type
     } // enum CodingKeys
 } // extension ASAEventSpecification
 
@@ -175,10 +177,10 @@ extension ASAEventSpecification {
     } // var recurrenceRules
     
     func matchesTemplateEventSpecification(templateEventSpecification: ASAEventSpecification) -> Bool {
-        assert(self.template != nil)
+        assert(self.inherits != nil)
         assert(templateEventSpecification.template != nil)
         
-        return self.template == templateEventSpecification.template
+        return self.inherits == templateEventSpecification.template
     }
 } // extension ASAEventSpecification
 

@@ -5,14 +5,14 @@
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
     "emoji": "🌎",
     "eventSpecifications": [
-        {"template": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
-        {"template": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
+        {"inherits": "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {"inherits": "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
 
-        {"template": "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"template": "Fajr", "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"template": "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"template": "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
-        {"template": "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"inherits": "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"inherits": "Fajr", "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"inherits": "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"inherits": "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
+        {"inherits": "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "ISNA"}, "notes": {"en": "Islamic Society of North America"}},
         
     ]
 }

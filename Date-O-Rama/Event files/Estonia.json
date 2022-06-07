@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.00, "green": 0.45, "blue": 0.81},
     "eventSpecifications": [
-        {"template": "Independence Day", "type": "1D", "start": {"mon": 2, "d": 24}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 2, "d": 24}},
 
     ]
 }

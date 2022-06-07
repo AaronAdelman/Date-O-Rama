@@ -5,7 +5,7 @@
     "calendarColor": {"red": 1.00, "green": 0.82, "blue": 0.00},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 12, "mon": 3}, "titles": {"en": "Mauritius Day"}},
-        {"template": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
+        {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
 
     ]
 }

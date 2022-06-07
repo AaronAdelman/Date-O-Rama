@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.88, "green": 0.24, "blue": 0.19},
     "eventSpecifications": [
-        {"template": "Freedom Day", "type": "1D", "start": {"d": 27, "mon": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)"}},
+        {"inherits": "Freedom Day", "type": "1D", "start": {"d": 27, "mon": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)"}},
         {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Day of Reconciliation"}, "1st": {"era": 1, "y": 1994}, "urls": {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, "emoji": "🫶"},
     ]
 }

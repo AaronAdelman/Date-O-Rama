@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"template": "National Day", "type": "1D", "start": {"mon": 8, "d": 1}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 1}},
 
     ]
 }

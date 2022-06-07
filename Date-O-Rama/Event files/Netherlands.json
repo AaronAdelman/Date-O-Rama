@@ -6,10 +6,10 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 27, "mon": 4}, "titles": {"en": "King’s Day"}, "emoji": "🤴"},
         {"titles": {"en": "Queen’s Day"}, "type": "1D", "start": {"mon": 4, "d": 30}, "emoji": "👸"},
-        {"template": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
-        {"template": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
-        {"template": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
-        {"template": "Liberation Day", "type": "1D", "start": {"mon": 5, "d": 5}},
+        {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
+        {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
+        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 5, "d": 5}},
 
     ]
 }
