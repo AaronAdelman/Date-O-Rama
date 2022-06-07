@@ -27,6 +27,8 @@
         {"inherits": "St. Andrew’s Day", "type": "1D", "start": {"mon": 11, "d": 30}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        {"type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": -1}, "titles": {"en": "Spring Holiday"}},
+        {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Summer Holiday"}},
 
     ]
 }
