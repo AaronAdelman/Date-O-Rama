@@ -310,7 +310,7 @@
         {"template": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
         {"titles": {"en": "Holy Saturday"}, "notes": {"en": "Lent (day 40)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -1}},
         {"template": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
-        {"titles": {"en": "Easter Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
+        {"template": "Easter Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
         {"titles": {"en": "Easter Tuesday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 2}},
         {"titles": {"en": "Easter Wednesday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 3}},
         {"titles": {"en": "Easter Thursday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 4}},

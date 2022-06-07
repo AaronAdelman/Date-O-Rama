@@ -1011,6 +1011,88 @@ class ASAEventCalendar {
         return eventsFile?.emoji
     }
     
+    fileprivate func extractedFunc(_ calendar: ASACalendar, _ eventSpecification: ASAEventSpecification, _ otherCalendars: [ASACalendarCode : ASACalendar], _ components: ASADateComponents, _ date: Date, _ locationData: ASALocation, _ startOfDay: Date, _ startOfNextDay: Date, _ previousSunset: Date, _ nightHourLength: TimeInterval, _ sunrise: Date, _ hourLength: TimeInterval, _ previousOtherDusk: Date, _ otherNightHourLength: TimeInterval, _ otherDawn: Date, _ otherHourLength: TimeInterval, _ regionCode: String?, _ location: CLLocation, _ timeZone: TimeZone, _ requestedLocaleIdentifier: String, _ eventCalendarName: String, _ calendarTitleWithoutLocation: String, _ dateEvents: inout [ASAEvent], _ timeEvents: inout [ASAEvent]) {
+        var appropriateCalendar:  ASACalendar = calendar
+        if eventSpecification.calendarCode != nil {
+            let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
+            if probableAppropriateCalendar != nil {
+                appropriateCalendar = probableAppropriateCalendar!
+            }
+        }
+        var appropriateComponents: ASADateComponents
+        if calendar.calendarCode == appropriateCalendar.calendarCode {
+            appropriateComponents = components
+        } else {
+            appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
+        }
+        
+        let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, eventSpecification: eventSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, type: eventSpecification.type)
+        if matchesDateSpecifications {
+            let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
+            if matchesRegionCode {
+                var templateEventSpecification: ASAEventSpecification?
+                if eventSpecification.template != nil {
+                    if ASAEventCalendar.templateEventsFile != nil {
+                        let templatesEventFile: ASAEventsFile = ASAEventCalendar.templateEventsFile!
+                        let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.template == eventSpecification.template})
+                        if index != nil {
+                            templateEventSpecification = templatesEventFile.eventSpecifications[index!]
+                        }
+                    }
+                }
+                
+                var title: String
+                if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
+                    let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
+                    let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
+                    let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)
+                    let offsetAfterChange = timeZone.daylightSavingTimeOffset(for: oneSecondAfterChange)
+                    if offsetBeforeChange < offsetAfterChange {
+                        title = NSLocalizedString("Spring ahead", comment: "")
+                    } else {
+                        title = NSLocalizedString("Fall back", comment: "")
+                    }
+                } else {
+                    let titleAttempt1: String? = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                    let NO_TITLE = ""
+                    if titleAttempt1 != nil {
+                        title = titleAttempt1!
+                    } else if templateEventSpecification != nil {
+                        title = templateEventSpecification!.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? NO_TITLE
+                    } else {
+                        title = NO_TITLE
+                    }
+                }
+                let color = self.color
+                let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                var url: URL?
+                let urlAttempt1: URL? = eventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                if urlAttempt1 != nil {
+                    url = urlAttempt1
+                } else if templateEventSpecification != nil && templateEventSpecification!.urls != nil {
+                    url = templateEventSpecification!.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                }
+                var notes: String?
+                let notesAttempt1: String? = eventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                if notesAttempt1 != nil {
+                    notes = notesAttempt1
+                } else if templateEventSpecification != nil && templateEventSpecification!.notes != nil {
+                    notes = templateEventSpecification!.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+                }
+                let category: ASAEventCategory = eventSpecification.category ?? (templateEventSpecification?.category ?? .generic)
+                
+                let emoji = eventSpecification.emoji ?? templateEventSpecification?.emoji
+                
+                let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
+                if newEvent.isAllDay {
+                    dateEvents.append(newEvent)
+                } else {
+                    timeEvents.append(newEvent)
+                }
+            }
+        }
+    }
+    
     func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
         let location = locationData.location
         let timeZone = locationData.timeZone
@@ -1069,85 +1151,7 @@ class ASAEventCalendar {
         for eventSpecification in self.eventsFile!.eventSpecifications {
             assert(previousSunset.oneDayAfter > date)
             
-            var appropriateCalendar:  ASACalendar = calendar
-            if eventSpecification.calendarCode != nil {
-                let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
-                if probableAppropriateCalendar != nil {
-                    appropriateCalendar = probableAppropriateCalendar!
-                }
-            }
-            var appropriateComponents: ASADateComponents
-            if calendar.calendarCode == appropriateCalendar.calendarCode {
-                appropriateComponents = components
-            } else {
-                appropriateComponents = appropriateCalendar.dateComponents([.era, .year, .month, .day, .weekday], from: date, locationData: locationData)
-            }
-            
-            let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, eventSpecification: eventSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, type: eventSpecification.type)
-            if matchesDateSpecifications {
-                let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
-                if matchesRegionCode {
-                    var templateEventSpecification: ASAEventSpecification?
-                    if eventSpecification.template != nil {
-                        if ASAEventCalendar.templateEventsFile != nil {
-                            let templatesEventFile: ASAEventsFile = ASAEventCalendar.templateEventsFile!
-                            let index = templatesEventFile.eventSpecifications.firstIndex(where: {$0.template == eventSpecification.template})
-                            if index != nil {
-                                templateEventSpecification = templatesEventFile.eventSpecifications[index!]
-                            }
-                        }
-                    }
-                    
-                    var title: String
-                    if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
-                        let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
-                        let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
-                        let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)
-                        let offsetAfterChange = timeZone.daylightSavingTimeOffset(for: oneSecondAfterChange)
-                        if offsetBeforeChange < offsetAfterChange {
-                            title = NSLocalizedString("Spring ahead", comment: "")
-                        } else {
-                            title = NSLocalizedString("Fall back", comment: "")
-                        }
-                    } else {
-                        let titleAttempt1: String? = eventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                        let NO_TITLE = ""
-                        if titleAttempt1 != nil {
-                            title = titleAttempt1!
-                        } else if templateEventSpecification != nil {
-                            title = templateEventSpecification!.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? NO_TITLE
-                        } else {
-                            title = NO_TITLE
-                        }
-                    }
-                    let color = self.color
-                    let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    var url: URL?
-                    let urlAttempt1: URL? = eventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    if urlAttempt1 != nil {
-                        url = urlAttempt1
-                    } else if templateEventSpecification != nil && templateEventSpecification!.urls != nil {
-                        url = templateEventSpecification!.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    }
-                    var notes: String?
-                    let notesAttempt1: String? = eventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    if notesAttempt1 != nil {
-                    notes = notesAttempt1
-                    } else if templateEventSpecification != nil && templateEventSpecification!.notes != nil {
-                        notes = templateEventSpecification!.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                    }
-                    let category: ASAEventCategory = eventSpecification.category ?? (templateEventSpecification?.category ?? .generic)
-                    
-                    let emoji = eventSpecification.emoji ?? templateEventSpecification?.emoji
-                    
-                    let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
-                    if newEvent.isAllDay {
-                        dateEvents.append(newEvent)
-                    } else {
-                        timeEvents.append(newEvent)
-                    }
-                }
-            }
+            extractedFunc(calendar, eventSpecification, otherCalendars, components, date, locationData, startOfDay, startOfNextDay, previousSunset, nightHourLength, sunrise, hourLength, previousOtherDusk, otherNightHourLength, otherDawn, otherHourLength, regionCode, location, timeZone, requestedLocaleIdentifier, eventCalendarName, calendarTitleWithoutLocation, &dateEvents, &timeEvents)
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return (dateEvents, timeEvents)
     } // func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>)
