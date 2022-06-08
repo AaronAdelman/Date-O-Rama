@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "United States (Jewish)", "he": "ארצות הברית (יהודי)"},
+    "titles": {"*": "US"},
     "defaultLocale": "en",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
