@@ -199,11 +199,19 @@ struct ASAClockCellBody:  View {
                         Image(systemName: ARROW_SYMBOL_NAME)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-                        ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
-                            .onReceive(processedRow.clock.objectWillChange) { _ in
-                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                ASAUserData.shared.savePreferences(code: .complications)
-                            }
+                        VStack {
+                            HStack {
+                                Button(action: {showingDetailView = false}) {
+                                    ASACloseBoxImage()
+                                }
+                                Spacer()
+                            } // HStack
+                            ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: false, deleteable: false, forAppleWatch: true)
+                                .onReceive(processedRow.clock.objectWillChange) { _ in
+                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                    ASAUserData.shared.savePreferences(code: .complications)
+                                }
+                        }
                     })
                 } else {
                     Menu {
@@ -235,11 +243,19 @@ struct ASAClockCellBody:  View {
                             .font(.title)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-                        ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
-                            .onReceive(processedRow.clock.objectWillChange) { _ in
-                                // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                ASAUserData.shared.savePreferences(code: .clocks)
-                            }
+                        VStack {
+                            HStack {
+                                Button(action: {showingDetailView = false}) {
+                                    ASACloseBoxImage()
+                                }
+                                Spacer()
+                            } // HStack
+                            ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: true, deleteable: true, forAppleWatch: false)
+                                .onReceive(processedRow.clock.objectWillChange) { _ in
+                                    // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                                    ASAUserData.shared.savePreferences(code: .clocks)
+                                }
+                        }
                     })
                 }
 #endif

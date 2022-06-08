@@ -87,8 +87,16 @@ struct ASALinkedEventCell:  View {
                     .font(.title)
             }
             .popover(isPresented: $showingEventView, arrowEdge: .leading) {
-                ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, action: $action)
-                    .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                VStack {
+                    HStack {
+                        Button(action: {showingEventView = false}) {
+                            ASACloseBoxImage()
+                        }
+                        Spacer()
+                    } // HStack
+                    ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, action: $action)
+                        .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
+                }
             }
             .foregroundColor(.accentColor)
             .onChange(of: action, perform: {
