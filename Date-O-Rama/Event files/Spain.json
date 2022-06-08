@@ -7,5 +7,6 @@
         {"titles": {"en": "Fiesta Nacional de España", "es": "Fiesta Nacional de España"}, "type": "1D", "start": {"mon": 10, "d": 12}},
         {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
+        {"titles": {"en": "Day of La Rioja"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://nationaltoday.com/day-of-la-rioja/"}},
     ]
 }
