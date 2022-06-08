@@ -4,8 +4,16 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 21}},
-
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"inherits": "Easter Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Belgian_National_Day"}},
+        {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
+        {"inherits": "All Hallows’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
     ]
 }
 
