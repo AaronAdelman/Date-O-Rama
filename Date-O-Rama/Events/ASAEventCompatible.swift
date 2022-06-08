@@ -197,7 +197,11 @@ extension Array where Element == ASAEventCompatible {
     } // func nextAndPresentEvents(now: Date) -> Array<ASAEventCompatible>
     
     mutating func add(event: ASAEventCompatible) {
-        let index = self.firstIndex(where: {$0.title.compare(event.title, options: [.caseInsensitive, .diacriticInsensitive]) == ComparisonResult.orderedSame && $0.startDate == event.startDate && abs($0.endDate.timeIntervalSince(event.endDate)) <= 1.0 })
+        let index = self.firstIndex(where: {
+            let titlesAreCloseEnough: Bool = ($0.title.withStraightenedCurlyQuotes.compare(event.title.withStraightenedCurlyQuotes, options: [.caseInsensitive, .diacriticInsensitive]) == ComparisonResult.orderedSame)
+            let startDatesAreTheSame: Bool = $0.startDate == event.startDate
+            let endDatesAreCloseEnough: Bool = abs($0.endDate.timeIntervalSince(event.endDate)) <= 1.0
+            return titlesAreCloseEnough && startDatesAreTheSame && endDatesAreCloseEnough })
         if index == nil {
             self.append(event)
         } else {

@@ -358,3 +358,9 @@ extension String {
         return components
     } // var dateFormatPatternComponents
 } // extension String
+
+extension String {
+    var withStraightenedCurlyQuotes: String {
+        return self.replacingOccurrences(of: "‘", with: "'").replacingOccurrences(of: "’", with: "'").replacingOccurrences(of: "“", with: "").replacingOccurrences(of: "”", with: "")
+    }
+}
