@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.00, "green": 0.29, "blue": 0.53},
     "eventSpecifications": [
         {"inherits": "National Day", "type": "1D", "start": {"mon": 6, "d": 6}},
-        {"inherits": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
+        {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Whit Saturday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 48}},
         {"inherits": "1st Advent Sunday", "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}},

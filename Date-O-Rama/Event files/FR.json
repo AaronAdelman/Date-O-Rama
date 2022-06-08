@@ -7,7 +7,7 @@
         {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}},
         {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2019}},
         {"inherits": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
-        {"inherits": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
+        {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
 

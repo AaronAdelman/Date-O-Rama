@@ -4,11 +4,10 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 3, "mon": 10}, "titles": {"en": "Unity Day"}},
+        {"type": "1D", "start": {"mon": 10, "d": 3}, "titles": {"en": "Unity Day"}},
         {"inherits": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
         {"inherits": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1990}},
-        {"inherits": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
-
+        {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
     ]
 }
 

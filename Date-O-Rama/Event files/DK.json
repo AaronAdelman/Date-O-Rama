@@ -5,7 +5,7 @@
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 5}},
-        {"inherits": "April Fools’ Day", "type": "1D", "start": {"d": 1, "mon": 4}},
-
+        {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
+        {"type": "1D", "start": {"mon": 6, "d": 7}, "titles": {"en": "Birthday of Prince Joachim"}, "category": "birthday", "urls": {"en": "https://webplus.info/index.php?page=340&event=56335"}},
     ]
 }
