@@ -90,6 +90,7 @@
         {"template": "Litha", "titles": {"en": "Litha", "he": "לית׳א"}, "type": "1D", "start": {"equinoxOrSolstice": "Jun"}},
         {"template": "Lughnasadh", "titles": {"en": "Lughnasadh", "he": "לונאסה"}, "type": "1D", "start": {"mon": 8, "d": 1}},
         {"template": "Mabon", "titles": {"en": "Mabon", "he": "מאבון"}, "type": "1D", "start": {"equinoxOrSolstice": "Sep"}},
+        {"template": "Maghrib", "titles": {"en": "Maghrib", "ar": "صلاة المغرب‎", "he": "צלאת אל-מגרב"}, "type": "pt", "start": {"ptType": "Maghrib", "calcMethod": "Jafari"}},
         {"template": "Malcolm X Day", "titles": {"en": "Malcolm X Day"}, "type": "1D", "start": {"mon": 5, "d": 19}, "urls": {"en": "https://en.wikipedia.org/wiki/Malcolm_X_Day"}},
         {"template": "Maundy Thursday", "titles": {"en": "Maundy Thursday"}, "notes": {"en": "Lent (day 38)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -3}},
         {"template": "Mawlid", "titles": {"en": "Mawlid (Birthday of the Prophet)", "he": "מוולד א־נבי", "ar": "مَولِد النَّبِي‎"}, "type": "1D", "start": {"mon": 3, "d": 12}, "urls": {"en": "https://en.wikipedia.org/wiki/Mawlid"}, "category": "birthday"},
