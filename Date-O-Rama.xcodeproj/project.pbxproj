@@ -73,6 +73,8 @@
 		A5364D992850F9EE00054BC2 /* Sunni Islam (times, Egypt).json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D982850F9EE00054BC2 /* Sunni Islam (times, Egypt).json */; };
 		A5364D9B2850FC7E00054BC2 /* Shia (times, Tehran).json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D9A2850FC7E00054BC2 /* Shia (times, Tehran).json */; };
 		A5364D9C2850FC7E00054BC2 /* Shia (times, Tehran).json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D9A2850FC7E00054BC2 /* Shia (times, Tehran).json */; };
+		A5364D9E2851001500054BC2 /* VI.json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D9D2851001500054BC2 /* VI.json */; };
+		A5364D9F2851001500054BC2 /* VI.json in Resources */ = {isa = PBXBuildFile; fileRef = A5364D9D2851001500054BC2 /* VI.json */; };
 		A5365A7D278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A5365A7E278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5AFF24519859005F9876 /* ASALocationManager.swift */; };
@@ -703,6 +705,7 @@
 		A5364D962850F9D500054BC2 /* Sunni Islam (times, MWL).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times, MWL).json"; sourceTree = "<group>"; };
 		A5364D982850F9EE00054BC2 /* Sunni Islam (times, Egypt).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times, Egypt).json"; sourceTree = "<group>"; };
 		A5364D9A2850FC7E00054BC2 /* Shia (times, Tehran).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Shia (times, Tehran).json"; sourceTree = "<group>"; };
+		A5364D9D2851001500054BC2 /* VI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VI.json; sourceTree = "<group>"; };
 		A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAPointEventType.swift; sourceTree = "<group>"; };
 		A538A81626F0CAE300DBB26C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A53A5AFF24519859005F9876 /* ASALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationManager.swift; sourceTree = "<group>"; };
@@ -1162,6 +1165,7 @@
 				A5C7793C26B8382600DD6009 /* UN.json */,
 				A5EE19E72805FFC700B0B9C2 /* US (Jewish).json */,
 				A5D3D7DD27FA14640099718A /* US.json */,
+				A5364D9D2851001500054BC2 /* VI.json */,
 				A5CF46542810C4EB0088738D /* VU.json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 				A5D850AD280C95F6005247BD /* ZA.json */,
@@ -1706,6 +1710,7 @@
 				A5EB4F902850D5DF00A32FB1 /* PS (Gregorian).json in Resources */,
 				A5D850A0280C9139005247BD /* GH.json in Resources */,
 				A5D850B5280C9823005247BD /* NE.json in Resources */,
+				A5364D9F2851001500054BC2 /* VI.json in Resources */,
 				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5D3D7DF27FA14640099718A /* US.json in Resources */,
 				A5BDE78C26679DAA00F47416 /* Sunni Islam.json in Resources */,
@@ -1838,6 +1843,7 @@
 				A581B87F284E55E500407D68 /* GR.json in Resources */,
 				A5EF523B2795A44F000012AC /* Druzism (Islamic).json in Resources */,
 				A5D850B1280C96FE005247BD /* FR.json in Resources */,
+				A5364D9E2851001500054BC2 /* VI.json in Resources */,
 				A5759141282BE28800675058 /* NO.json in Resources */,
 				A54539E626A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
