@@ -146,7 +146,7 @@
         {"titles": {"en": "Feast of Saints Pontian and Hippolytus"}, "type": "1D", "start": {"mon": 8, "d": 13}},
         {"titles": {"en": "Feast of St. Maximilian Mary Kolbe"}, "type": "1D", "start": {"mon": 8, "d": 14}},
         
-        {"titles": {"en": "Assumption of Mary"}, "type": "1D", "start": {"mon": 8, "d": 15}},
+        {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
         
         {"inherits": "Feast of St. Stephen of Hungary", "type": "1D", "start": {"mon": 8, "d": 16}},
         {"titles": {"en": "Feast of St. John Eudes"}, "type": "1D", "start": {"mon": 8, "d": 19}},
@@ -204,8 +204,8 @@
         
         {"titles": {"en": "All Hallows’ Eve"}, "type": "1D", "start": {"mon": 10, "d": 31}},
         
-        {"titles": {"en": "All Hallows’ Day"}, "notes": {"en": "All Saints’ Day"}, "type": "1D", "start": {"mon": 11, "d": 1}},
-        {"titles": {"en": "All Souls’ Day"}, "notes": {"en": "All Souls Day"}, "type": "1D", "start": {"mon": 11, "d": 2}},
+        {"inherits": "All Hallows’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+        {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}},
 
         {"titles": {"en": "Feast of St. Martin de Porres"}, "type": "1D", "start": {"mon": 11, "d": 3}},
         {"titles": {"en": "Feast of St. Charles Borromeo"}, "type": "1D", "start": {"mon": 11, "d": 4}},
@@ -248,11 +248,11 @@
 
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
-        {"titles": {"en": "St. Stephen’s Day"}, "notes": {"en": "Christmastide (day 2)"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {"titles": {"en": "Feast of St. John the Apostle"}, "notes": {"en": "Christmastide (day 3)"}, "type": "1D", "start": {"mon": 12, "d": 27}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {"titles": {"en": "Holy Innocents Day"}, "notes": {"en": "Christmastide (day 4)"}, "type": "1D", "start": {"mon": 12, "d": 28}, "urls": {"en": "https://nationaldaycalendar.com/holy-innocents-day-december-28/"}, "emoji": "🌌"},
-        {"titles": {"en": "Feast of St. Thomas Becket"}, "notes": {"en": "Christmastide (day 5)"}, "type": "1D", "start": {"mon": 12, "d": 29}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
-        {"titles": {"en": "Feast of St. Egwin of Worcester"}, "notes": {"en": "Christmastide (day 6)"}, "type": "1D", "start": {"mon": 12, "d": 30}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"inherits": "St. Stephen’s Day", "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"inherits": "Feast of St. John the Apostle", "type": "1D", "start": {"mon": 12, "d": 27}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"inherits": "Holy Innocents Day", "type": "1D", "start": {"mon": 12, "d": 28}, "urls": {"en": "https://nationaldaycalendar.com/holy-innocents-day-december-28/"}, "emoji": "🌌"},
+        {"inherits": "Feast of St. Thomas Becket", "type": "1D", "start": {"mon": 12, "d": 29}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"inherits": "Feast of St. Egwin of Worcester", "type": "1D", "start": {"mon": 12, "d": 30}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
         {"titles": {"en": "Feast of the Holy Family"}, "type": "1D", "start": {"mon": 12, "d": 30, "wkd": [6]}},
         {"titles": {"en": "Feast of the Holy Family"}, "type": "1D", "start": {"mon": 12, "d": 26, "thruD": 31, "wkd": [1]}},
@@ -306,7 +306,7 @@
         {"titles": {"en": "Holy Monday"}, "notes": {"en": "Lent (day 35)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -6}},
         {"titles": {"en": "Holy Tuesday"}, "notes": {"en": "Lent (day 36)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -5}},
         {"titles": {"en": "Holy Wednesday"}, "notes": {"en": "Lent (day 37)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -4}},
-        {"titles": {"en": "Maundy Thursday"}, "notes": {"en": "Lent (day 38)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -3}},
+        {"inherits": "Maundy Thursday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -3}},
         {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
         {"titles": {"en": "Holy Saturday"}, "notes": {"en": "Lent (day 40)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -1}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},

@@ -516,6 +516,8 @@
 		A5E8BAE628047B9E0018CD36 /* LR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE528047B9E0018CD36 /* LR.json */; };
 		A5E8BAE728047B9E0018CD36 /* LR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE528047B9E0018CD36 /* LR.json */; };
 		A5EB4F8D2850980500A32FB1 /* ASACloseBoxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */; };
+		A5EB4F8F2850D5DF00A32FB1 /* PS (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB4F8E2850D5DE00A32FB1 /* PS (Gregorian).json */; };
+		A5EB4F902850D5DF00A32FB1 /* PS (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB4F8E2850D5DE00A32FB1 /* PS (Gregorian).json */; };
 		A5EE116E26C563F10050495C /* ASAEventSpecificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC147026C4488E00A109B6 /* ASAEventSpecificationType.swift */; };
 		A5EE117826C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
@@ -920,6 +922,7 @@
 		A5E8BAE227FCCF0B0018CD36 /* BD.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BD.json; sourceTree = "<group>"; };
 		A5E8BAE528047B9E0018CD36 /* LR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LR.json; sourceTree = "<group>"; };
 		A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACloseBoxImage.swift; sourceTree = "<group>"; };
+		A5EB4F8E2850D5DE00A32FB1 /* PS (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "PS (Gregorian).json"; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EE19E42804A92600B0B9C2 /* GB.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GB.json; sourceTree = "<group>"; };
 		A5EE19E72805FFC700B0B9C2 /* US (Jewish).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "US (Jewish).json"; sourceTree = "<group>"; };
@@ -1122,6 +1125,7 @@
 				A5E8BADF27FCCDD00018CD36 /* PK.json */,
 				A5CF465A2810D29A0088738D /* PL.json */,
 				A5DC9C7D27285D2100047F64 /* Planets.json */,
+				A5EB4F8E2850D5DE00A32FB1 /* PS (Gregorian).json */,
 				A581B881284E570500407D68 /* PT.json */,
 				A5765A37279ED15900BF1F7E /* Rural.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
@@ -1684,6 +1688,7 @@
 				A5BC24C12796EABE00D14B21 /* Jewish planetary hours.json in Resources */,
 				A5D850B8280C98FD005247BD /* ID.json in Resources */,
 				A5769953259EDCC000757B0F /* Sun.json in Resources */,
+				A5EB4F902850D5DF00A32FB1 /* PS (Gregorian).json in Resources */,
 				A5D850A0280C9139005247BD /* GH.json in Resources */,
 				A5D850B5280C9823005247BD /* NE.json in Resources */,
 				A5B0084826CD3A0B00B63B3F /* Earth.json in Resources */,
@@ -1858,6 +1863,7 @@
 				A53639A026EF7A000083C571 /* Christianity (Gregorian, general).json in Resources */,
 				A5C77C092433361900CFEE47 /* LaunchScreen.storyboard in Resources */,
 				A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */,
+				A5EB4F8F2850D5DF00A32FB1 /* PS (Gregorian).json in Resources */,
 				A5CF465B2810D29A0088738D /* PL.json in Resources */,
 				A5DEFE8B2822FE9600EF1651 /* KR.json in Resources */,
 				A5E8BAE628047B9E0018CD36 /* LR.json in Resources */,
