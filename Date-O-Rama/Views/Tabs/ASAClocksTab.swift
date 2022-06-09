@@ -121,12 +121,6 @@ struct ASAClocksTab: View {
                 }
                 .listStyle(GroupedListStyle())
                 .sheet(isPresented: self.$showingNewClockDetailView) {
-                    HStack {
-                        Button(action: {showingNewClockDetailView = false}) {
-                            ASACloseBoxImage()
-                        }
-                        Spacer()
-                    } // HStack
                     ASANewClockDetailView(now:  now)
                 }
                 .navigationBarHidden(self.isNavigationBarHidden)
