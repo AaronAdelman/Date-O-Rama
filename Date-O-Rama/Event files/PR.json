@@ -27,5 +27,12 @@
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
 
+        {"inherits": "Epiphany Eve", "type": "1D", "start": {"mon": 1, "d": 5}},
+        {"inherits": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}},
+        {"inherits": "Ash Wednesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -46}},
+        {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
+        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
+        {"inherits": "Holy Innocents Day", "type": "1D", "start": {"mon": 12, "d": 28}},
     ]
 }
