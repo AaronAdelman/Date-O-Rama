@@ -72,7 +72,7 @@ class ASAEventCalendar {
     } // var color
 
     func title(localeIdentifier:  String) -> String {
-        return self.eventsFile!.titles[localeIdentifier] ?? "???"
+        return self.eventsFile!.title(localeIdentifier: localeIdentifier)
     }
 
     /// Fills in nil fields in one date specification with information from another.
@@ -1145,11 +1145,7 @@ class ASAEventCalendar {
     } // func eventCalendarName(locationData:  ASALocation) -> String
     
     func autolocalizableRegionCode() -> String? {
-        let titles = self.eventsFile!.titles
-
-        let LOCALIZED_KEY = "*"
-        let regionCode = titles[LOCALIZED_KEY]
-        return regionCode
+        return self.eventsFile!.autolocalizableRegionCode()
     }
     
     func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
@@ -1157,36 +1153,37 @@ class ASAEventCalendar {
             return self.fileName
         }
         
-        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
-
-        let regionCode = autolocalizableRegionCode()
-        if regionCode != nil {
-            let locale = Locale(identifier: userLocaleIdentifier)
-            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
-        }
-        
-        let titles = self.eventsFile!.titles
-        
-        let firstAttempt = titles[userLocaleIdentifier]
-        if firstAttempt != nil {
-            return firstAttempt!
-        }
-
-        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
-        if userLanguageCode != nil {
-            let secondAttempt = titles[userLanguageCode!]
-            if secondAttempt != nil {
-                return secondAttempt!
-            }
-        }
-
-        let thirdAttempt = titles["en"]
-        if thirdAttempt != nil {
-            return thirdAttempt!
-        }
-
-        return "???"
-    } // func eventSourceName() -> String
+//        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
+//
+//        let regionCode = autolocalizableRegionCode()
+//        if regionCode != nil {
+//            let locale = Locale(identifier: userLocaleIdentifier)
+//            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
+//        }
+//
+//        let titles = self.eventsFile!.titles
+//
+//        let firstAttempt = titles[userLocaleIdentifier]
+//        if firstAttempt != nil {
+//            return firstAttempt!
+//        }
+//
+//        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
+//        if userLanguageCode != nil {
+//            let secondAttempt = titles[userLanguageCode!]
+//            if secondAttempt != nil {
+//                return secondAttempt!
+//            }
+//        }
+//
+//        let thirdAttempt = titles["en"]
+//        if thirdAttempt != nil {
+//            return thirdAttempt!
+//        }
+//
+//        return "???"
+        return self.eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)
+    } // func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String
 } // class ASAEventCalendar
 
 
@@ -1199,17 +1196,17 @@ extension ASAEventCalendar {
         let rawFileNames: Array<String> = URLs!.map {
             $0.deletingPathExtension().lastPathComponent
         }
-        var unsortedFileNames:  Array<String> = []
+        
+        var unsortedFileNameTuples: Array<(fileName: String, localizedTitle: String)> = []
+        let localeIdentifier: String = Locale.current.identifier
         for fileName in rawFileNames {
             let (eventsFile, _) = ASAEventsFile.builtIn(fileName: fileName)
             if (eventsFile?.calendarCode ?? .none).matches(calendarCode) {
-                unsortedFileNames.append(fileName)
+                unsortedFileNameTuples.append((fileName: fileName, localizedTitle: eventsFile?.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier) ?? "???"))
             }
         }
-        let fileNames = unsortedFileNames.sorted(by: {NSLocalizedString($0, comment: "") < NSLocalizedString($1, comment: "")})
-//        debugPrint(#file, #function, fileNames)
-
-        return fileNames
+        let fileNameTuples = unsortedFileNameTuples.sorted(by: {$0.localizedTitle < $1.localizedTitle})
+        return fileNameTuples.map {$0.fileName}
     } // static var builtInEventCalendarFileNames
 } // extension ASAEventCalendar
 

@@ -53,4 +53,48 @@ extension ASAEventsFile {
             return (nil, error)
         }
     } // static func builtIn(fileName: String) -> ASAEventsFile?
+    
+    func title(localeIdentifier:  String) -> String {
+        return self.titles[localeIdentifier] ?? "???"
+    }
+    
+    func autolocalizableRegionCode() -> String? {
+        let titles = self.titles
+
+        let LOCALIZED_KEY = "*"
+        let regionCode = titles[LOCALIZED_KEY]
+        return regionCode
+    }
+    
+    func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
+        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
+
+        let regionCode = autolocalizableRegionCode()
+        if regionCode != nil {
+            let locale = Locale(identifier: userLocaleIdentifier)
+            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
+        }
+        
+        let titles = self.titles
+        
+        let firstAttempt = titles[userLocaleIdentifier]
+        if firstAttempt != nil {
+            return firstAttempt!
+        }
+
+        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
+        if userLanguageCode != nil {
+            let secondAttempt = titles[userLanguageCode!]
+            if secondAttempt != nil {
+                return secondAttempt!
+            }
+        }
+
+        let thirdAttempt = titles["en"]
+        if thirdAttempt != nil {
+            return thirdAttempt!
+        }
+
+        return "???"
+    } // func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String
 } // extension ASAEventsFile
