@@ -202,7 +202,7 @@
         {"titles": {"en": "Feast of St. Anthony Mary Claret"}, "type": "1D", "start": {"mon": 10, "d": 24}},
         {"titles": {"en": "Feast of St. Simon and St. Jude"}, "type": "1D", "start": {"mon": 10, "d": 28}},
         
-        {"titles": {"en": "All Hallows’ Eve"}, "type": "1D", "start": {"mon": 10, "d": 31}},
+        {"inherits": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
         
         {"inherits": "All Hallows’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}},
