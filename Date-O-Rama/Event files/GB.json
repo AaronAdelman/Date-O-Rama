@@ -17,19 +17,27 @@
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
 
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"titles": {"en": "New Year’s Day Observed"}, "type": "1D", "start": {"mon": 1, "d": 2, "thruD": 3, "wkd": [2]}},
+        {"titles": {"en": "New Year Holiday"}, "type": "1D", "start": {"mon": 1, "d": 2}},
+        {"titles": {"en": "New Year Holiday Observed"}, "type": "1D", "start": {"mon": 1, "d": 3, "thruD": 4, "wkd": [3]}},
         {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Easter Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"inherits": "St. Patrick’s Day", "type": "1D", "start": {"mon": 3, "d": 17}},
+        {"titles": {"en": "St. Patrick’s Day Observed"}, "type": "1D", "start": {"mon": 3, "d": 18, "thruD": 19, "wkd": [2]}},
         {"inherits": "May Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "St. Andrew’s Day", "type": "1D", "start": {"mon": 11, "d": 30}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
-        {"type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": -1}, "titles": {"en": "Spring Holiday"}},
-        {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Summer Holiday"}},
+        {"type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": -1}, "titles": {"en": "Spring Holiday"}},
+        {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Late Summer Bank Holiday"}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
-
+        {"type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Early May Bank Holiday"}},
+        {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
+        {"type": "1D", "start": {"mon": 7, "d": 13, "thruD": 14, "wkd": [2]}, "titles": {"en": "Orangemen’s Day Holiday"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
+        {"type": "1D", "start": {"mon": 12, "d": 27, "thruD": 29, "wkd": [2]}, "titles": {"en": "Substitute Bank Holiday for Christmas Day"}},
+        
     ]
 }
