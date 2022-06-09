@@ -489,6 +489,6 @@
         {"type": "1D", "start": {"mon": 12, "wkd": [6], "wkdRecurrence": 3}, "titles": {"en": "National Underdog Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/underdog-day/"}, "1st": {"era": 1, "y": 1976}},
         {"type": "1D", "start": {"mon": 12, "d": 21}, "titles": {"en": "International Dalek Remembrance Day"}, "1st": {"era": 1, "y": 1963}, "urls": {"en": "https://www.daysoftheyear.com/days/dalek-remembrance-day/"}},
         {"type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Odd Socks Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaltoday.com/odd-socks-day/"}, "emoji": "🧦"},
-
+        {"inherits": "Antarctica Day", "type": "1D", "start": {"mon": 12, "d": 1}, "1st": {"era": 1, "y": 2010}},
     ]
 }
