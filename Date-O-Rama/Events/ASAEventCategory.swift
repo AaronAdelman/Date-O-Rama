@@ -17,13 +17,13 @@ enum ASAEventCategory: String, Codable {
 //    case remembrance
     
     // Classical planets
-    case Sun     = "zsu"
-    case Moon    = "zmo"
-    case Mercury = "zme"
-    case Venus   = "zve"
-    case Mars    = "zma"
-    case Jupiter = "zju"
-    case Saturn  = "zsa"
+//    case Sun     = "zsu"
+//    case Moon    = "zmo"
+//    case Mercury = "zme"
+//    case Venus   = "zve"
+//    case Mars    = "zma"
+//    case Jupiter = "zju"
+//    case Saturn  = "zsa"
     
     // Chinese Zodiac signs
     case Rat
@@ -56,20 +56,20 @@ extension ASAEventCategory {
 //        case .remembrance:
 //            return "🕓"
                         
-        case .Sun:
-            return "☉"
-        case .Moon:
-            return "☾"
-        case .Mercury:
-            return "☿"
-        case .Venus:
-            return "♀︎"
-        case .Mars:
-            return "♂︎"
-        case .Jupiter:
-            return "♃"
-        case .Saturn:
-            return "♄"
+//        case .Sun:
+//            return "☉"
+//        case .Moon:
+//            return "☾"
+//        case .Mercury:
+//            return "☿"
+//        case .Venus:
+//            return "♀︎"
+//        case .Mars:
+//            return "♂︎"
+//        case .Jupiter:
+//            return "♃"
+//        case .Saturn:
+//            return "♄"
             
         case .Rat:
             return "🐀"
