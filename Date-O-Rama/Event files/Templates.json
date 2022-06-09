@@ -17,6 +17,18 @@
         {"template": "*zma*", "type": "1D", "start": {}, "emoji": "♂︎"},
         {"template": "*zju*", "type": "1D", "start": {}, "emoji": "♃"},
         {"template": "*zsa*", "type": "1D", "start": {}, "emoji": "♄"},
+        {"template": "*Rat*", "type": "1D", "start": {}, "emoji": "🐀"},
+        {"template": "*Ox*", "type": "1D", "start": {}, "emoji": "🐂"},
+        {"template": "*Tiger*", "type": "1D", "start": {}, "emoji": "🐅", "inherits": "*Astrology*"},
+        {"template": "*Rabbit*", "type": "1D", "start": {}, "emoji": "🐇", "inherits": "*Astrology*"},
+        {"template": "*Dragon*", "type": "1D", "start": {}, "emoji": "🐉", "inherits": "*Astrology*"},
+        {"template": "*Snake*", "type": "1D", "start": {}, "emoji": "🐍", "inherits": "*Astrology*"},
+        {"template": "*Horse*", "type": "1D", "start": {}, "emoji": "🐎", "inherits": "*Astrology*"},
+        {"template": "*Goat*", "type": "1D", "start": {}, "emoji": "🐐", "inherits": "*Astrology*"},
+        {"template": "*Monkey*", "type": "1D", "start": {}, "emoji": "🐒", "inherits": "*Astrology*"},
+        {"template": "*Rooster*", "type": "1D", "start": {}, "emoji": "🐓", "inherits": "*Astrology*"},
+        {"template": "*Dog*", "type": "1D", "start": {}, "emoji": "🐕", "inherits": "*Astrology*"},
+        {"template": "*Pig*", "type": "1D", "start": {}, "emoji": "🐖", "inherits": "*Astrology*"},
 
         {"template": "*Astrology*", "type": "1M", "start": {}, "urls": {"en": "http://skepdic.com/astrology.html"}},
         

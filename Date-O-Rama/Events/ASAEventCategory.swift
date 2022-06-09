@@ -26,18 +26,18 @@ enum ASAEventCategory: String, Codable {
 //    case Saturn  = "zsa"
     
     // Chinese Zodiac signs
-    case Rat
-    case Ox
-    case Tiger
-    case Rabbit
-    case Dragon
-    case Snake
-    case Horse
-    case Goat
-    case Monkey
-    case Rooster
-    case Dog
-    case Pig
+//    case Rat
+//    case Ox
+//    case Tiger
+//    case Rabbit
+//    case Dragon
+//    case Snake
+//    case Horse
+//    case Goat
+//    case Monkey
+//    case Rooster
+//    case Dog
+//    case Pig
     
 //    case candleLighting
 //    case Shabbath
@@ -71,30 +71,30 @@ extension ASAEventCategory {
 //        case .Saturn:
 //            return "♄"
             
-        case .Rat:
-            return "🐀"
-        case .Ox:
-            return "🐂"
-        case .Tiger:
-            return "🐅"
-        case .Rabbit:
-            return "🐇"
-        case .Dragon:
-            return "🐉"
-        case .Snake:
-            return "🐍"
-        case .Horse:
-            return "🐎"
-        case .Goat:
-            return "🐐"
-        case .Monkey:
-            return "🐒"
-        case .Rooster:
-            return "🐓"
-        case .Dog:
-            return "🐕"
-        case .Pig:
-            return "🐖"
+//        case .Rat:
+//            return "🐀"
+//        case .Ox:
+//            return "🐂"
+//        case .Tiger:
+//            return "🐅"
+//        case .Rabbit:
+//            return "🐇"
+//        case .Dragon:
+//            return "🐉"
+//        case .Snake:
+//            return "🐍"
+//        case .Horse:
+//            return "🐎"
+//        case .Goat:
+//            return "🐐"
+//        case .Monkey:
+//            return "🐒"
+//        case .Rooster:
+//            return "🐓"
+//        case .Dog:
+//            return "🐕"
+//        case .Pig:
+//            return "🐖"
             
 //        case .candleLighting:
 //            return "🕯"
