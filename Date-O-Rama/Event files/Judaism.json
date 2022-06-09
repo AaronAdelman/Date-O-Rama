@@ -82,7 +82,7 @@
         {"titles": {"he": "ראש חודש אדר ב׳", "en": "Ro’sh Ḥodhesh ’Adhar Sheni"}, "type": "nD", "start": {"mon": 6, "d": 30, "yLengths": [383, 384, 385]
         }, "end": {"mon": 7, "d": 1}},
         {"titles": {"he": "יום־שנה של משה רבנו", "en": "Yohrtsayt of Mosheh Rabbenu"}, "type": "1D", "start": {"mon": 7, "d": 7,
-        }, "category": "deathAnniversary"},
+        }, "inherits": "*Death Anniv*"},
         {"titles": {"he": "פורים קטן", "en": "Purim Qaṭan"}, "type": "1D", "start": {"mon": 6, "d": 14,
         }},
         {"titles": {"he": "שושן פורים קטן", "en": "Shushan Purim Qaṭan"}, "type": "1D", "start": {"mon": 6, "d": 15,

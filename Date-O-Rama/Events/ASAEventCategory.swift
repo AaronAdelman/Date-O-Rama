@@ -12,9 +12,9 @@ import SwiftUI
 enum ASAEventCategory: String, Codable {
     case generic
     case birthday
-    case deathAnniversary
-    case weddingAnniversary
-    case remembrance
+//    case deathAnniversary
+//    case weddingAnniversary
+//    case remembrance
     
     // Classical planets
     case Sun     = "zsu"
@@ -49,12 +49,12 @@ extension ASAEventCategory {
         switch self {
         case .birthday:
             return "🎂"
-        case .deathAnniversary:
-            return "🪦"
-        case .weddingAnniversary:
-            return "💍"
-        case .remembrance:
-            return "🕓"
+//        case .deathAnniversary:
+//            return "🪦"
+//        case .weddingAnniversary:
+//            return "💍"
+//        case .remembrance:
+//            return "🕓"
                         
         case .Sun:
             return "☉"

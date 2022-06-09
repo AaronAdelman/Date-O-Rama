@@ -6,6 +6,6 @@
     "eventSpecifications": [
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 5}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
-        {"type": "1D", "start": {"mon": 6, "d": 7}, "titles": {"en": "Birthday of Prince Joachim"}, "inherits": "Birthday", "urls": {"en": "https://webplus.info/index.php?page=340&event=56335"}},
+        {"type": "1D", "start": {"mon": 6, "d": 7}, "titles": {"en": "Birthday of Prince Joachim"}, "inherits": "*BDay*", "urls": {"en": "https://webplus.info/index.php?page=340&event=56335"}},
     ]
 }
