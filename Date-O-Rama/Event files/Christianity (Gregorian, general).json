@@ -100,7 +100,7 @@
         {"titles": {"en": "Feast of St. Aloysius Gonzaga"}, "type": "1D", "start": {"mon": 6, "d": 21}},
         {"titles": {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, "type": "1D", "start": {"mon": 6, "d": 22}},
         {"titles": {"en": "St. John’s Eve"}, "type": "1D", "start": {"mon": 6, "d": 23}},
-        {"titles": {"en": "Nativity of St. John the Baptist"}, "type": "1D", "start": {"mon": 6, "d": 24}, "category": "birthday"},
+        {"titles": {"en": "Nativity of St. John the Baptist"}, "type": "1D", "start": {"mon": 6, "d": 24}, "inherits": "Birthday"},
         
         {"titles": {"en": "Feast of St. Cyril of Alexandria"}, "type": "1D", "start": {"mon": 6, "d": 27}},
         {"titles": {"en": "Feast of St. Irenaeus"}, "type": "1D", "start": {"mon": 6, "d": 28}},
@@ -162,7 +162,7 @@
 
         {"titles": {"en": "Feast of St. Gregory the Great"}, "type": "1D", "start": {"mon": 9, "d": 3}},
 
-        {"titles": {"en": "Nativity of Mary"}, "type": "1D", "start": {"mon": 9, "d": 8}, "category": "birthday"},
+        {"titles": {"en": "Nativity of Mary"}, "type": "1D", "start": {"mon": 9, "d": 8}, "inherits": "Birthday"},
         
         {"titles": {"en": "Feast of St. Peter Claver"}, "type": "1D", "start": {"mon": 9, "d": 9}},
         {"titles": {"en": "Holy Name of the Blessed Virgin Mary"}, "type": "1D", "start": {"mon": 9, "d": 12}},

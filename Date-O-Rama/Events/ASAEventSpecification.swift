@@ -9,7 +9,7 @@
 import Foundation
 import EventKit
 
-class ASAEventSpecification: Codable {
+struct ASAEventSpecification: Codable {
     var template: String?
     var inherits: String?
     
@@ -181,6 +181,57 @@ extension ASAEventSpecification {
         assert(templateEventSpecification.template != nil)
         
         return self.inherits == templateEventSpecification.template
+    }
+    
+    static var templateEventsFile: ASAEventsFile? = {
+        let (file, error) = ASAEventsFile.builtIn(fileName: "Templates")
+        if error != nil {
+            debugPrint(#file, #function, error as Any)
+        }
+        return file
+    }()
+    
+    fileprivate func templateEventSpecification(for eventSpecification: ASAEventSpecification) -> ASAEventSpecification? {
+        if eventSpecification.inherits == nil || ASAEventSpecification.templateEventsFile == nil {
+            return nil
+        }
+        
+        let templatesEventFile: ASAEventsFile = ASAEventSpecification.templateEventsFile!
+        let index = templatesEventFile.eventSpecifications.firstIndex(where: {
+            eventSpecification.matchesTemplateEventSpecification(templateEventSpecification: $0)
+        })
+        if index != nil {
+            return templatesEventFile.eventSpecifications[index!].filledIn
+        }
+        
+        return nil
+    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification)
+    
+    var filledIn: ASAEventSpecification {
+        let template = templateEventSpecification(for: self)
+        
+        if template == nil {
+            return self
+        }
+        
+        var temp = self
+        if temp.titles == nil {
+            temp.titles = template?.titles
+        }
+        if temp.notes == nil {
+            temp.notes = template?.notes
+        }
+        if temp.urls == nil {
+            temp.urls = template?.urls
+        }
+        if temp.category == nil {
+            temp.category = template?.category
+        }
+        if temp.emoji == nil {
+            temp.emoji = template?.emoji
+        }
+        
+        return temp
     }
 } // extension ASAEventSpecification
 
