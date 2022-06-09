@@ -8,6 +8,8 @@
         {"template": "*Death Anniv*", "type": "1D", "start": {}, "emoji": "🪦"},
         {"template": "*Wedding Anniv*", "type": "1D", "start": {}, "emoji": "💍"},
         {"template": "*Remembrance*", "type": "1D", "start": {}, "emoji": "🕓"},
+        {"template": "*Candle LTG*", "type": "1D", "start": {}, "emoji": "🕯"},
+        {"template": "*Shabbath*", "type": "1D", "start": {}, "emoji": "🍷"},
 
         {"template": "*Astrology*", "type": "1M", "start": {}, "urls": {"en": "http://skepdic.com/astrology.html"}},
         
@@ -38,8 +40,8 @@
         {"template": "Boxing Day", "titles": {"en": "Boxing Day", "fr": "Lendemain de Noël"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/boxing-day-december-26/"}},
         {"template": "Burns Night", "type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "Burns Night"}, "urls": {"en": "https://www.scotland.org/events/burns-night/the-ultimate-guide-to-burns-night"}, "emoji": "🥃", "notes": {"en": "Robert Burns Day\nRabbie Burns Day"}},
         {"template": "Cancer", "titles": {"en": "Cancer", "he": "סרטן"}, "type": "1M", "start": {"mon": 11}, "emoji": "♋️", "inherits": "*Astrology*"},
-        {"template": "Candlelighting (18 minutes)", "titles": {"en": "Candlelighting (18 minutes)", "he": "הדלקת נרות (18 דקות)"}, "type": "pt", "start": {"wkd": [6], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}, "category": "candleLighting"},
-        {"template": "Candlelighting (8.5°)", "titles": {"en": "Candlelighting (8.5°)", "he": "הדלקת נרות (8.5°)"}, "type": "pt", "start": {"mon": 1, "d": 2, "wkd": [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}, "category": "candleLighting"},
+        {"template": "Candlelighting (18 minutes)", "titles": {"en": "Candlelighting (18 minutes)", "he": "הדלקת נרות (18 דקות)"}, "type": "pt", "start": {"wkd": [6], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}, "inherits": "*Candle LTG*"},
+        {"template": "Candlelighting (8.5°)", "titles": {"en": "Candlelighting (8.5°)", "he": "הדלקת נרות (8.5°)"}, "type": "pt", "start": {"mon": 1, "d": 2, "wkd": [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}, "inherits": "*Candle LTG*"},
         {"template": "Capricorn", "titles": {"en": "Capricorn", "he": "גדי"}, "type": "1M", "start": {"mon": 4}, "emoji": "♑️", "inherits": "*Astrology*"},
         {"template": "Christmas Day", "titles": {"en": "Christmas Day", "he": "חג המולד", "fr": "Noël", "nl": "Kerstmis", "de": "Weihnachten", "es": "Día de Navidad"}, "type": "1D", "start": {"mon": 12, "d": 25}, "emoji": "🎄", "urls": {"en": "https://nationaldaycalendar.com/christmas-december-25/"}, "notes": {"en": "Christmastide (day 1)"}},
         {"template": "Christmas Eve", "titles": {"en": "Christmas Eve", "he": "ערב חג המולד", "fr": "Réveillon de Noël", "es": "Noche Buena"}, "type": "1D", "start": {"mon": 12, "d": 24}},
@@ -55,7 +57,7 @@
         {"template": "Easter Monday", "titles": {"en": "Easter Monday", "fr": "Lundi de Pâques", "nl": "Paasmaandag", "de": "Ostermontag"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
         {"template": "Easter Sunday", "titles": {"en": "Easter Sunday", "he": "פסחא"}, "type": "1D", "start": {"Easter": "Easter"}, "emoji": "🥚🐇", "urls": {"en": "https://nationaldaycalendar.com/easter-changes-annually/"}},
         {"template": "Emancipation Day", "type": "1D", "start": {"mon":3, "d": 22}, "titles": {"en": "Emancipation Day", "es": "Día de la Abolición de Esclavitud"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day"}},
-        {"template": "End of time for lighting Ḥanukkah candles with a berakhah (Vilna Ga’on)", "titles": {"he": "סוף זמן הדלקת נרות חנוכה עם ברכה (גר״א)", "en": "End of time for lighting Ḥanukkah candles with a berakhah (Vilna Ga’on)"}, "type": "pt", "start": {"mon": 3, "d": 25, "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 3600, "wkd": [1, 2, 3, 4, 5, 6]}, "category": "candleLighting"},
+        {"template": "End of time for lighting Ḥanukkah candles with a berakhah (Vilna Ga’on)", "titles": {"he": "סוף זמן הדלקת נרות חנוכה עם ברכה (גר״א)", "en": "End of time for lighting Ḥanukkah candles with a berakhah (Vilna Ga’on)"}, "type": "pt", "start": {"mon": 3, "d": 25, "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 3600, "wkd": [1, 2, 3, 4, 5, 6]}, "inherits": "*Candle LTG*"},
         {"template": "Epiphany", "titles": {"en": "Epiphany", "he": "חת ההתגלות", "es": "Día de Reyes"}, "notes": {"en": "Three Kings Day", "he": "הלילה ה־12"}, "type": "1D", "start": {"mon": 1, "d": 6}, "urls": {"en": "https://www.daysoftheyear.com/days/three-kings-day/", "he": "https://he.wikipedia.org/wiki%2F%D7%97%D7%92_%D7%94%D7%94%D7%AA%D7%92%D7%9C%D7%95%D7%AA"}, "emoji": "🤴🤴🤴"},
         {"template": "Evacuation Day", "type": "1D", "start": {"mon": 3, "d": 17}, "titles": {"en": "Evacuation Day", "es": "Día de la evacuación", "fr": "Jour de l'Évacuation"}, "urls": {"en": "https://en.wikipedia.org/wiki/Evacuation_Day"}},
         {"template": "Fajr", "titles": {"en": "Fajr", "ar": "صلاة الفجر‎", "he": "פג׳ר"}, "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "ISNA"}},

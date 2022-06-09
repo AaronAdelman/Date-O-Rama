@@ -39,8 +39,8 @@ enum ASAEventCategory: String, Codable {
     case Dog
     case Pig
     
-    case candleLighting
-    case Shabbath
+//    case candleLighting
+//    case Shabbath
 } // enum ASAEventCategory
 
 
@@ -96,10 +96,10 @@ extension ASAEventCategory {
         case .Pig:
             return "🐖"
             
-        case .candleLighting:
-            return "🕯"
-        case .Shabbath:
-            return "🍷"
+//        case .candleLighting:
+//            return "🕯"
+//        case .Shabbath:
+//            return "🍷"
         
         default:
             return nil
