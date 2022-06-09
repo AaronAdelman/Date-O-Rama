@@ -1058,11 +1058,9 @@ class ASAEventCalendar {
 
                 let notes: String? = filledInEventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
 
-                let category: ASAEventCategory = filledInEventSpecification.category ?? .generic
-
                 let emoji = filledInEventSpecification.emoji
 
-                let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, category: category, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
+                let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
                 return newEvent
             }
         }

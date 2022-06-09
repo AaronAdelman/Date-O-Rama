@@ -101,9 +101,7 @@ struct ASAMultiEvent:  ASAEventCompatible {
     var regionCodes: Array<String>? = nil
     
     var excludeRegionCodes: Array<String>? = nil
-    
-    var category: ASAEventCategory = .generic
-    
+        
     var emoji: String? {
         if self.events.count == 0 {
             return nil

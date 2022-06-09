@@ -64,7 +64,6 @@ struct ASAEvent:  ASAEventCompatible {
     var regionCodes: Array<String>?
     var excludeRegionCodes: Array<String>?
     
-    var category: ASAEventCategory
     var emoji: String?
     var fileEmoji: String?
     

@@ -4,7 +4,7 @@
     "calendarCode": "  ",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
-        {"template": "*BDay*", "type": "1D", "start": {}, "category": "birthday"},
+        {"template": "*BDay*", "type": "1D", "start": {}, "emoji": "🎂"},
         {"template": "*Death Anniv*", "type": "1D", "start": {}, "emoji": "🪦"},
         {"template": "*Wedding Anniv*", "type": "1D", "start": {}, "emoji": "💍"},
         {"template": "*Remembrance*", "type": "1D", "start": {}, "emoji": "🕓"},

@@ -68,16 +68,18 @@ extension EKEvent:  ASAEventCompatible {
     var excludeRegionCodes: Array<String>? {
         return nil
     } // var excludeRegionCodes
-    
-    var category: ASAEventCategory {
-        if self.birthdayContactIdentifier != nil {
-            return .birthday
-        } else {
-            return .generic
-        }
-    } // var category
-    
+        
     var emoji: String? {
+        if self.birthdayContactIdentifier != nil {
+            let templatesFile = ASAEventSpecification.templateEventsFile
+            if templatesFile != nil {
+                let birthdayTemplate = templatesFile!.eventSpecifications.first(where: {$0.template == "*BDay*"})
+                if birthdayTemplate != nil {
+                    return birthdayTemplate?.emoji
+                }
+            }
+        }
+        
         return nil
     }
     

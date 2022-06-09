@@ -48,7 +48,6 @@ protocol ASAEventCompatible {
     var regionCodes:  Array<String>? { get }
     var excludeRegionCodes:  Array<String>? { get }
 
-    var category: ASAEventCategory { get }
     var emoji: String? { get }
     var fileEmoji: String? { get }
     
@@ -279,11 +278,6 @@ extension ASAEventCompatible {
         let emoji: String? = self.emoji
         if emoji != nil {
             return emoji!
-        }
-        
-        let categoryEmoji: String? = self.category.emoji
-        if categoryEmoji != nil {
-            return categoryEmoji!
         }
         
         return self.fileEmoji

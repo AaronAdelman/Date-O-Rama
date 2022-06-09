@@ -33,7 +33,6 @@ struct ASAEventSpecification: Codable {
     var urls: Dictionary<String, URL>? // URLs for the calendar item, indexed by locale code.
     var notes: Dictionary<String, String>? // The notes associated with the calendar item, indexed by locale code.
     
-    var category: ASAEventCategory?
     var emoji: String?
     
     var type: ASAEventSpecificationType
@@ -42,7 +41,7 @@ struct ASAEventSpecification: Codable {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
         case firstDateSpecification = "1st"
-        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, category, emoji, type
+        case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type
     } // enum CodingKeys
 } // extension ASAEventSpecification
 
@@ -223,9 +222,6 @@ extension ASAEventSpecification {
         }
         if temp.urls == nil {
             temp.urls = template?.urls
-        }
-        if temp.category == nil {
-            temp.category = template?.category
         }
         if temp.emoji == nil {
             temp.emoji = template?.emoji
