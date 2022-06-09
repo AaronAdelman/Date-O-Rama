@@ -22,7 +22,7 @@
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Labor_Day"}},
         {"inherits": "Columbus Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 2004}},
         {"inherits": "Veterans Day", "type": "1D", "start": {"d": 11, "mon": 11}},
-        {"titles": {"en": "Discovery of Puerto Rico", "es": "Día del Descubrimiento de Puerto Rico"}, "type": "1D", "start": {"mon": 11, "d": 19}, "urls": {"en": "https://en.wikipedia.org/wiki/History_of_Puerto_Rico#Spanish_rule_(1493–1898)"}},
+        {"titles": {"en": "Discovery of Puerto Rico", "es": "Día del Descubrimiento de Puerto Rico"}, "type": "1D", "start": {"mon": 11, "d": 19}, "urls": {"en": "https://en.wikipedia.org/wiki/History_of_Puerto_Rico#Spanish_rule_(1493%E2%80%931898)"}},
         {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
