@@ -225,8 +225,14 @@ struct ASABuiltInEventCalendarCell:  View {
         HStack(alignment: .top) {
             ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventCalendar.color)
             VStack(alignment: .leading) {
-                Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier))
-                    .font(.headline)
+                HStack {
+                    let emoji: String? = eventCalendar.eventsFile?.symbol
+                    if emoji != nil {
+                        Text(verbatim: emoji!)
+                    }
+                    Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier))
+                        .font(.headline)
+                }
                 if eventCalendar.error != nil {
                     Text(verbatim: eventCalendar.error!.localizedDescription)
                         .font(.headline)

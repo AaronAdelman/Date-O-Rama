@@ -66,6 +66,19 @@ extension ASAEventsFile {
         return regionCode
     }
     
+    var symbol: String? {
+        let emoji = self.emoji
+        if emoji != nil {
+            return self.emoji
+        }
+       
+        let regionCode = self.autolocalizableRegionCode()
+        if regionCode != nil {
+            return regionCode!.flag
+        }
+        return nil
+    }
+    
     func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String {
         let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
 

@@ -994,27 +994,8 @@ class ASAEventCalendar {
     }
     
     func fileEmoji() -> String? {
-        let regionCode = autolocalizableRegionCode()
-        if regionCode != nil {
-            return regionCode!.flag
-        }
-        
-        return eventsFile?.emoji
+        return self.eventsFile?.symbol
     } // func fileEmoji() -> String?
-    
-//            return nil
-//        }
-//        
-//        let templatesEventFile: ASAEventsFile = ASAEventCalendar.templateEventsFile!
-//        let index = templatesEventFile.eventSpecifications.firstIndex(where: {
-//            eventSpecification.matchesTemplateEventSpecification(templateEventSpecification: $0)
-//        })
-//        if index != nil {
-//            return templatesEventFile.eventSpecifications[index!]
-//        }
-//        
-//        return nil
-//    } // func templateEventSpecification(for eventSpecification: ASAEventSpecification)
     
     fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitleWithoutLocation: String) -> ASAEvent? {
         var appropriateCalendar:  ASACalendar = calendar
