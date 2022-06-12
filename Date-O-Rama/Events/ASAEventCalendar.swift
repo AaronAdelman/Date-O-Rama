@@ -17,11 +17,11 @@ class ASAEventCalendar {
     var eventsFile:  ASAEventsFile?
     var error:  Error?
     var otherCalendars:  Dictionary<ASACalendarCode, ASACalendar> = [:]
-
+    
     init(fileName:  String) {
         self.fileName = fileName
         (self.eventsFile, self.error) = ASAEventsFile.builtIn(fileName: fileName)
-
+        
         if eventsFile != nil {
             if eventsFile!.otherCalendarCodes != nil {
                 for calendarCode in eventsFile!.otherCalendarCodes! {
@@ -30,16 +30,16 @@ class ASAEventCalendar {
             }
         }
     } // init(fileName:  String)
-
+    
     func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, regionCode:  String?, requestedLocaleIdentifier:  String, calendar:  ASACalendar) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
-
+        
         if self.eventsFile == nil {
             // Something went wrong
             return ([], [])
         }
-
-        let timeZone: TimeZone = locationData.timeZone 
+        
+        let timeZone: TimeZone = locationData.timeZone
         var now = startDate.addingTimeInterval(endDate.timeIntervalSince(startDate) / 2.0)
         var startOfDay = startDate
         var startOfNextDay = calendar.startOfNextDay(date: startDate, locationData: locationData)
@@ -59,22 +59,22 @@ class ASAEventCalendar {
             } // for event in tempTimeEvents
             startOfDay = startOfNextDay
             startOfNextDay = calendar.startOfNextDay(date: now, locationData: locationData)
-
+            
             now = startOfDay.addingTimeInterval(startOfNextDay.timeIntervalSince(startOfDay) / 2.0)
-
+            
         } while startOfDay < endDate
-
+        
         return (dateEvents, timeEvents)
     } // func eventDetails(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String) -> Array<ASAEvent>
     
     var color:  SwiftUI.Color {
         return self.eventsFile!.calendarColor
     } // var color
-
+    
     func title(localeIdentifier:  String) -> String {
         return self.eventsFile!.title(localeIdentifier: localeIdentifier)
     }
-
+    
     /// Fills in nil fields in one date specification with information from another.
     /// - Parameters:
     ///   - dateSpecification: The date specification which may need information filled in
@@ -111,14 +111,14 @@ class ASAEventCalendar {
     } // func tweak(dateSpecification:  ASADateSpecification, date:  Date, calendar:  ASACalendar) -> ASADateSpecification
     
     fileprivate let MATCH_FAILURE: (matches:  Bool, startDate:  Date?, endDate:  Date?) = (false, nil, nil)
-
+    
     func matchTimeChange(timeZone: TimeZone, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?) {
         let oneSecondBeforeStartOfDay = startOfDay.addingTimeInterval(-1.0)
         let nextDaylightSavingTimeTransition = timeZone.nextDaylightSavingTimeTransition(after: oneSecondBeforeStartOfDay)
         if nextDaylightSavingTimeTransition != nil {
             let nextTransition: Date = nextDaylightSavingTimeTransition!
             if startOfDay <= nextTransition && nextTransition < startOfNextDay {
-               return (true, nextTransition, nextTransition)
+                return (true, nextTransition, nextTransition)
             }
         }
         
@@ -213,7 +213,7 @@ class ASAEventCalendar {
             return MATCH_FAILURE
         } // switch startDateSpecification.MoonPhase
     } // func matchNumberedMoonPhaseNumbering(startDateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
-
+    
     func possibleDateEquinoxOrSolstice(for type: ASAEquinoxOrSolsticeType, now: JulianDay) -> Date? {
         let terra = Earth(julianDay: now, highPrecision: true)
         var possibleDate: Date
@@ -234,7 +234,7 @@ class ASAEventCalendar {
         case .DecemberSolstice:
             let DecemberSolstice = terra.solstice(of: .southernSummer)
             possibleDate = DecemberSolstice.date
-
+            
         default:
             return nil
         } // switch type
@@ -269,7 +269,7 @@ class ASAEventCalendar {
                 return (true, dateNextYear, dateNextYear)
             }
         }
-
+        
         return MATCH_FAILURE
     } // func matchEquinoxOrSolstice(type: ASAEquinoxOrSolsticeType, startOfDay:  Date, startOfNextDay:  Date) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
@@ -293,7 +293,7 @@ class ASAEventCalendar {
             default:
                 return nil
             }
-
+            
         default:
             return nil
         } // switch type
@@ -308,7 +308,7 @@ class ASAEventCalendar {
                 return (true, dateToday!, dateToday!)
             }
         }
-                
+        
         if dateToday ?? Date.distantPast < startOfDay{
             guard let dateTomorrow = possibleDateForRiseOrSet(for: type, now: initialDate + 1, body: body, location: locationData) else {
                 return MATCH_FAILURE
@@ -324,7 +324,7 @@ class ASAEventCalendar {
                 return (true, dateYesterday, dateYesterday)
             }
         }
-
+        
         return MATCH_FAILURE
     } // func matchRiseOrSet(type: ASAPointEventType, startOfDay:  Date, startOfNextDay:  Date, body: String, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
@@ -358,7 +358,7 @@ class ASAEventCalendar {
                 return (true, dateToday!, dateToday!)
             }
         }
-                
+        
         if dateToday ?? Date.distantPast < startOfDay{
             guard let dateTomorrow = possibleDateForTwilight(now: initialDate + 1, degreesAboveHorizon: degreesAboveHorizon, rising: rising, offset: offset, location: locationData) else {
                 return MATCH_FAILURE
@@ -374,7 +374,7 @@ class ASAEventCalendar {
                 return (true, dateYesterday, dateYesterday)
             }
         }
-
+        
         return MATCH_FAILURE
     } // func matchTwilight(startOfDay:  Date, startOfNextDay:  Date, degreesBelowHorizon: Double, rising: Bool, offset: TimeInterval, locationData: ASALocation) -> (matches:  Bool, startDate:  Date?, endDate:  Date?)
     
@@ -484,12 +484,12 @@ class ASAEventCalendar {
         // Nonzero offset from Easter events
         let locationData = components.locationData
         let timeZone: TimeZone = locationData.timeZone
-
+        
         let EasterDateComponents = ASADateComponents(calendar: calendar, locationData: locationData, era: components.era, year: components.year, yearForWeekOfYear: nil, quarter: nil, month: EasterMonth, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: EasterDay)
         let EasterDate = EasterDateComponents.date
         let EasterMJD = EasterDate!.localModifiedJulianDay(timeZone: timeZone)
         let EasterEventMJD = EasterMJD + offsetDays
-
+        
         if dateMJD == EasterEventMJD {
             return (true, startOfDay, startOfNextDay)
         } else {
@@ -546,8 +546,8 @@ class ASAEventCalendar {
         
         let filledInEndDateSpecification = endDateSpecification!.fillIn(EYMD: filledInEndDateEYMD)
         
-//        assert(filledInStartDateSpecification != nil)
-//        assert(filledInEndDateSpecification != nil)
+        //        assert(filledInStartDateSpecification != nil)
+        //        assert(filledInEndDateSpecification != nil)
         return (true, filledInStartDateSpecification, filledInEndDateSpecification)
     } // func matchMultiDay(components: ASADateComponents, startDateSpecification: ASADateSpecification, endDateSpecification: ASADateSpecification?) -> (matches: Bool, startDateSpecification: ASADateSpecification?, endDateSpecification: ASADateSpecification?)
     
@@ -638,7 +638,7 @@ class ASAEventCalendar {
             
         case .Isha, .Maghrib, .Asr, .Dhuhr, .Fajr:
             return matchIslamicPrayerTime(tweakedStartDateSpecification: tweakedDateSpecification, date: date, locationData: locationData)
-
+            
         case .rise, .set:
             guard let body = dateSpecification.body else { return MATCH_FAILURE }
             return matchRiseOrSet(type: dateSpecification.pointEventType!, startOfDay: startOfDay, startOfNextDay: startOfNextDay, body: body, locationData: locationData)
@@ -670,7 +670,7 @@ class ASAEventCalendar {
         if !matchingStartDateWeekDay {
             return MATCH_FAILURE
         }
-
+        
         if !matchingEndDateWeekDay {
             let locationData = components.locationData
             let newRawEndDate = calendar.startOfNextDay(date: startDate!, locationData: locationData)
@@ -712,7 +712,7 @@ class ASAEventCalendar {
         case .multiYear:
             // Multi-year events
             return matchMultiYear(endDateSpecification: endDateSpecification, components: components, startDateSpecification: startDateSpecification, calendar: calendar, date: date, type: type)
-
+            
         case .oneYear:
             // One-year events
             assert(endDateSpecification == nil)
@@ -721,16 +721,16 @@ class ASAEventCalendar {
         case .multiMonth:
             // Multi-month events
             guard let nonOptionalEndDateSpecification = endDateSpecification
-                else {
-                    return MATCH_FAILURE
-                }
+            else {
+                return MATCH_FAILURE
+            }
             return matchMultiMonth(startDateSpecification: startDateSpecification, endDateSpecification: nonOptionalEndDateSpecification, date: date, calendar: calendar, locationData: locationData, components: components, type: type)
             
         case .oneMonth:
             // One-month events
             assert(endDateSpecification == nil)
             return matchOneMonth(date: date, calendar: calendar, locationData: locationData, tweakedStartDateSpecification: tweakedStartDateSpecification, components: components, type: type)
-
+            
         case .multiDay:
             // Multi-day events
             return matchMultiDay(components: components, startDateSpecification: startDateSpecification, endDateSpecification: endDateSpecification, calendar: calendar, date: date, locationData: locationData, type: type)
@@ -781,7 +781,7 @@ class ASAEventCalendar {
                 return false
             }
         }
-
+        
         if dateSpecification.yearDivisor != nil && dateSpecification.yearRemainder != nil {
             let year = components.year
             let (_, remainder) = year!.quotientAndRemainder(dividingBy:  dateSpecification.yearDivisor!)
@@ -811,7 +811,7 @@ class ASAEventCalendar {
                 return false
             }
         }
-
+        
         let supportsYear: Bool = calendar.supports(calendarComponent: .year)
         if supportsYear {
             if !(components.year?.matches(value: dateSpecification.year) ?? false) {
@@ -841,7 +841,7 @@ class ASAEventCalendar {
                 return false
             }
         }
-
+        
         return true
     } // func matchOneMonth(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents) -> Bool
     
@@ -849,7 +849,7 @@ class ASAEventCalendar {
         let NO_MATCH: (matches: Bool, startDate: Date?, endDate: Date?) = (false, nil, nil)
         var start = startOfDay
         var end = startOfNextDay
-                
+        
         let offsetDays = dateSpecification.offsetDays ?? 0
         if offsetDays != 0 && dateSpecification.Easter == nil {
             let specifiedEra = dateSpecification.era ?? components.era
@@ -877,7 +877,7 @@ class ASAEventCalendar {
                 let dateSpecificationDay = dateSpecification.day
                 if dateSpecificationDay != nil {
                     let componentsDay = components.day!
-
+                    
                     // Check specified day of month
                     
                     let dateSpecificationThroughDay = dateSpecification.throughDay
@@ -968,7 +968,7 @@ class ASAEventCalendar {
                 end = matchesAndStartAndEndDates.endDate!
             }
         }
-
+        
         return (true, start, end)
     } // func matchOneDayOrLess(date:  Date, calendar:  ASACalendar, locationData:  ASALocation, dateSpecification:  ASADateSpecification, components: ASADateComponents, startOfDay: Date, startOfNextDay: Date) -> (matches: Bool, startDate: Date?, endDate: Date?)
     
@@ -1013,39 +1013,42 @@ class ASAEventCalendar {
         }
         
         let (matchesDateSpecifications, returnedStartDate, returnedEndDate) = self.match(date: date, calendar: appropriateCalendar, locationData: locationData, eventSpecification: eventSpecification, components: appropriateComponents, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, type: eventSpecification.type)
-        if matchesDateSpecifications {
-            let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
-            if matchesRegionCode {
-                let filledInEventSpecification = eventSpecification.filledIn
-                                
-                var title: String
-                if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
-                    let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
-                    let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
-                    let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)
-                    let offsetAfterChange = timeZone.daylightSavingTimeOffset(for: oneSecondAfterChange)
-                    if offsetBeforeChange < offsetAfterChange {
-                        title = NSLocalizedString("Spring ahead", comment: "")
-                    } else {
-                        title = NSLocalizedString("Fall back", comment: "")
-                    }
-                } else {
-                    let NO_TITLE = ""
-                    title = filledInEventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? NO_TITLE
-                }
-                let color = self.color
-                let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-                let url: URL? = filledInEventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-
-                let notes: String? = filledInEventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
-
-                let emoji = filledInEventSpecification.emoji
-
-                let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
-                return newEvent
-            }
+        if !matchesDateSpecifications {
+            return nil
         }
-        return nil
+        
+        let matchesRegionCode: Bool = eventSpecification.match(regionCode: regionCode, latitude: location.coordinate.latitude)
+        if !matchesRegionCode {
+            return nil
+        }
+        
+        let filledInEventSpecification = eventSpecification.filledIn
+        
+        var title: String
+        if eventSpecification.type == .point && eventSpecification.startDateSpecification.timeChange == .timeChange {
+            let oneSecondBeforeChange = returnedStartDate!.addingTimeInterval(-1.0)
+            let oneSecondAfterChange = returnedStartDate!.addingTimeInterval(1.0)
+            let offsetBeforeChange = timeZone.daylightSavingTimeOffset(for: oneSecondBeforeChange)
+            let offsetAfterChange = timeZone.daylightSavingTimeOffset(for: oneSecondAfterChange)
+            if offsetBeforeChange < offsetAfterChange {
+                title = NSLocalizedString("Spring ahead", comment: "")
+            } else {
+                title = NSLocalizedString("Fall back", comment: "")
+            }
+        } else {
+            let NO_TITLE = ""
+            title = filledInEventSpecification.eventTitle(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale) ?? NO_TITLE
+        }
+        let color = self.color
+        let location: String? = eventSpecification.eventLocation(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+        let url: URL? = filledInEventSpecification.eventURL(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+        
+        let notes: String? = filledInEventSpecification.eventNotes(requestedLocaleIdentifier: requestedLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFile!.defaultLocale)
+        
+        let emoji = filledInEventSpecification.emoji
+        
+        let newEvent = ASAEvent(title:  title, location: location, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
+        return newEvent
     }
     
     func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
@@ -1134,35 +1137,35 @@ class ASAEventCalendar {
             return self.fileName
         }
         
-//        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
-//
-//        let regionCode = autolocalizableRegionCode()
-//        if regionCode != nil {
-//            let locale = Locale(identifier: userLocaleIdentifier)
-//            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
-//        }
-//
-//        let titles = self.eventsFile!.titles
-//
-//        let firstAttempt = titles[userLocaleIdentifier]
-//        if firstAttempt != nil {
-//            return firstAttempt!
-//        }
-//
-//        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
-//        if userLanguageCode != nil {
-//            let secondAttempt = titles[userLanguageCode!]
-//            if secondAttempt != nil {
-//                return secondAttempt!
-//            }
-//        }
-//
-//        let thirdAttempt = titles["en"]
-//        if thirdAttempt != nil {
-//            return thirdAttempt!
-//        }
-//
-//        return "???"
+        //        let userLocaleIdentifier = localeIdentifier == "" ? Locale.autoupdatingCurrent.identifier : localeIdentifier
+        //
+        //        let regionCode = autolocalizableRegionCode()
+        //        if regionCode != nil {
+        //            let locale = Locale(identifier: userLocaleIdentifier)
+        //            return locale.localizedString(forRegionCode: regionCode!) ?? "???"
+        //        }
+        //
+        //        let titles = self.eventsFile!.titles
+        //
+        //        let firstAttempt = titles[userLocaleIdentifier]
+        //        if firstAttempt != nil {
+        //            return firstAttempt!
+        //        }
+        //
+        //        let userLanguageCode = userLocaleIdentifier.localeLanguageCode
+        //        if userLanguageCode != nil {
+        //            let secondAttempt = titles[userLanguageCode!]
+        //            if secondAttempt != nil {
+        //                return secondAttempt!
+        //            }
+        //        }
+        //
+        //        let thirdAttempt = titles["en"]
+        //        if thirdAttempt != nil {
+        //            return thirdAttempt!
+        //        }
+        //
+        //        return "???"
         return self.eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)
     } // func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String
 } // class ASAEventCalendar
