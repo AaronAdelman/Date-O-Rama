@@ -5,7 +5,8 @@
     "calendarColor": {"red": 0.00, "green": 0.2, "blue": 0.63},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 16, "mon": 9}, "titles": {"en": "Malaysia Day"}},
-        {"type": "1D", "start": {"d": 31, "mon": 8}, "titles": {"en": "Malaysia National Day"}},
+        {"inherits": "National Day", "type": "1D", "start": {"d": 31, "mon": 8}},
+        {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
     ]
 }
 

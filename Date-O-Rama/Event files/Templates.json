@@ -86,6 +86,7 @@
         {"template": "Feast of St. Stephen of Hungary", "titles": {"en": "Feast of St. Stephen of Hungary"}, "type": "1D", "start": {"mon": 8, "d": 16}},
         {"template": "Feast of the Immaculate Conception", "titles": {"en": "Feast of the Immaculate Conception"}, "type": "1D", "start": {"mon": 12, "d": 8}},
         {"template": "Freedom Day", "type": "1D", "start": {"d": 27, "mon": 4}, "titles": {"en": "Freedom Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day"}},
+        {"template": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}, "titles": {"en": "Gawai Dayak"}, "urls": {"en": "https://nationaltoday.com/gawai-dayak/"}},
         {"template": "Gemini", "titles": {"en": "Gemini", "he": "תאומים"}, "type": "1M", "start": {"mon": 10}, "emoji": "♊️", "inherits": "*Astrology*"},
         {"template": "Good Friday", "titles": {"en": "Good Friday", "he": "יום שישי הטוב", "fr": "Vendredi saint", "es": "Viernes Santo"}, "notes": {"en": "Lent (day 39)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}, "urls": {"en": "https://nationaldaycalendar.com/good-friday-friday-before-easter/"}},
         {"template": "Grand Duke’s Official Birthday", "titles": {"en": "Grand Duke’s Official Birthday"}, "type": "1D", "start": {"mon": 6, "d": 23}, "inherits": "*BDay*"},

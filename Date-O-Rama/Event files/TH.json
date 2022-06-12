@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "TH"},
+    "defaultLocale": "en",
+    "calendarCode": "Gregorian",
+    "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
+    "eventSpecifications": [
+        {"inherits": "*BDay*", "type": "1D", "start": {"mon": 6, "d": 3}, "titles": {"en": "H.M. Queen’s Birthday"}, "urls": {"en": "https://nationaltoday.com/h-m-queens-birthday/"}, "1st": {"era": 1, "y": 2019}},
+    ]
+}
+
