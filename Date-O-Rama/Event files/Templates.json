@@ -9,7 +9,7 @@
         {"template": "*Wedding Anniv*", "type": "1D", "start": {}, "emoji": "💍"},
         {"template": "*Remembrance*", "type": "1D", "start": {}, "emoji": "🕓"},
         {"template": "*Candle LTG*", "type": "1D", "start": {}, "emoji": "🕯"},
-        {"template": "*Shabbath*", "type": "1D", "start": {}, "emoji": "🍷"},
+        {"template": "*שבת*", "type": "1D", "start": {}, "emoji": "🍷"},
         {"template": "*zsu*", "type": "1D", "start": {}, "emoji": "☉"},
         {"template": "*zmo*", "type": "1D", "start": {}, "emoji": "☾"},
         {"template": "*zme*", "type": "1D", "start": {}, "emoji": "☿"},
@@ -32,6 +32,14 @@
 
         {"template": "*Astrology*", "type": "1M", "start": {}, "urls": {"en": "http://skepdic.com/astrology.html"}},
         
+        {"template": "צום גדליה", "titles": {"he": "צום גדליה", "en": "Fast of Gedhalyah"}, "type": "1D", "start": {"mon": 1, "d": 3, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/tzom-gedaliah/"}},
+        {"template": "ראש חודש כסלו", "titles": {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, "type": "nD", "start": {"mon": 2, "d": 30, "yLengths": [355, 385]}, "end": {"mon": 3, "d": 1}},
+        {"template": "ראש חודש טבת", "titles": {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, "type": "1D", "start": {"mon": 4, "d": 1, "yLengths": [353, 383]}},
+        {"template": "תענית אסתר", "titles": {"he": "תענית אסתר", "en": "Fast of ’Ester"}, "type": "1D", "start": {"mon": 7, "d": 13, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-esther/"}},
+
+        {"template": "צום אב", "titles": {"he": "צום אב", "en": "Fast of ’Av"}, "type": "1D", "start": {"mon": 12, "d": 9, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-tisha-bav/"}},
+
+
         {"template": "1st Advent Sunday", "titles": {"en": "First Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}, "emoji": "🕯"},
         {"template": "2nd Advent Sunday", "titles": {"en": "Second Advent Sunday"}, "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}, "emoji": "🕯"},
         {"template": "3rd Advent Sunday", "titles": {"en": "Third Advent Sunday"}, "notes": {"en": "Gaudete Sunday"}, "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}, "emoji": "🕯"},
@@ -143,7 +151,7 @@
         {"template": "Ostara", "titles": {"en": "Ostara", "he": "אוסטרה"}, "type": "1D", "start": {"equinoxOrSolstice": "Mar"}},
         {"template": "Palm Sunday", "titles": {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
         {"template": "Patriots’ Day", "type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Patriots’ Day", "fr": "Journée des patriotes"}, "urls": {"en": "https://en.wikipedia.org/wiki/Patriots%27_Day"}},
-        {"template": "Pentecost", "titles": {"en": "Pentecost"}, "notes": {"en": "Whitsunday\nWhit Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}, "emoji": "⚪️"},
+        {"template": "Pentecost", "titles": {"en": "Pentecost"}, "notes": {"en": "Whitsunday\nWhit Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}, "emoji": "⚪️", "urls": {"en": "https://nationaltoday.com/pentecost/"}},
         {"template": "Pi Day", "type": "1D", "start": {"d": 14, "mon": 3}, "titles": {"en": "Pi Day", "he": "יום פאי"}, "emoji": "π", "urls": {"en": "https://www.piday.org/"}},
         {"template": "Pioneer Day", "titles": {"en": "Pioneer Day"}, "type": "1D", "start": {"mon": 7, "d": 24}, "urls": {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
         {"template": "Pisces", "titles": {"en": "Pisces", "he": "דגים"}, "type": "1M", "start": {"mon": 7, "yLengths": [353, 354, 355]}, "emoji": "♓️", "inherits": "*Astrology*"},

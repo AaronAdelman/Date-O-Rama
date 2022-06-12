@@ -553,6 +553,8 @@
 		A5F3B01C28563CB000865CEB /* WS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B01A28563CB000865CEB /* WS.json */; };
 		A5F3B01E285644A100865CEB /* TH.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B01D285644A100865CEB /* TH.json */; };
 		A5F3B01F285644A100865CEB /* TH.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B01D285644A100865CEB /* TH.json */; };
+		A5F3B02128565F8100865CEB /* BS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B02028565F8000865CEB /* BS.json */; };
+		A5F3B02228565F8100865CEB /* BS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B02028565F8000865CEB /* BS.json */; };
 		A5F43E212785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */; };
 		A5F43E222785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */; };
 		A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F43E232785D7DE00FCDB88 /* Neopaganism.json */; };
@@ -958,6 +960,7 @@
 		A5F3B0172855FEC700865CEB /* RU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RU.json; sourceTree = "<group>"; };
 		A5F3B01A28563CB000865CEB /* WS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WS.json; sourceTree = "<group>"; };
 		A5F3B01D285644A100865CEB /* TH.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TH.json; sourceTree = "<group>"; };
+		A5F3B02028565F8000865CEB /* BS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BS.json; sourceTree = "<group>"; };
 		A5F43E202785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEquinoxOrSolsticeType.swift; sourceTree = "<group>"; };
 		A5F43E232785D7DE00FCDB88 /* Neopaganism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Neopaganism.json; sourceTree = "<group>"; };
 		A5F43E262786113400FCDB88 /* Thelema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Thelema.json; sourceTree = "<group>"; };
@@ -1085,6 +1088,7 @@
 				A581B884284E580A00407D68 /* BE.json */,
 				A5D8509B280C8F9D005247BD /* BG.json */,
 				A5D850B9280C99B4005247BD /* BR.json */,
+				A5F3B02028565F8000865CEB /* BS.json */,
 				A51C8577282D64A00081A11B /* Buddhism.json */,
 				A5D3D7E627FA2C7E0099718A /* CA.json */,
 				A581B887284E592000407D68 /* CH.json */,
@@ -1717,6 +1721,7 @@
 				A51C8579282D64A00081A11B /* Buddhism.json in Resources */,
 				A566F4612483D6EF000A05B5 /* Preview Assets.xcassets in Resources */,
 				A5769950259EDCC000757B0F /* Chinese zodiac.json in Resources */,
+				A5F3B02228565F8100865CEB /* BS.json in Resources */,
 				A5EF523C2795A44F000012AC /* Druzism (Islamic).json in Resources */,
 				A5CF46562810C4EB0088738D /* VU.json in Resources */,
 				A5BDE7A42667E22000F47416 /* Antisemitism (Islamic).json in Resources */,
@@ -1841,6 +1846,7 @@
 				A5759147282BE36500675058 /* SE.json in Resources */,
 				A5EB4F922850EF0B00A32FB1 /* RS.json in Resources */,
 				A576C39328171F96005AC73D /* NZ.json in Resources */,
+				A5F3B02128565F8100865CEB /* BS.json in Resources */,
 				A581B876284E452400407D68 /* LT.json in Resources */,
 				A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */,
 				A5EE2FA12815DB9800B6E81E /* JP.json in Resources */,

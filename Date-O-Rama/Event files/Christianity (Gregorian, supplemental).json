@@ -79,6 +79,7 @@
         {"type": "1D", "start": {"d": 29, "mon": 3}, "titles": {"en": "Taiwan Youth Day"}, "notes": {"en": "TYD"}, "1st": {"era": 1, "y": 2008}, "emoji": "🇹🇼", "urls": {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
         {"type": "1D", "start": {"d": 21, "mon": 5}, "titles": {"en": "Rapture Party Day"}, "notes": {"en": "TYD"}, "1st": {"era": 1, "y": 2012}, "emoji": "🥳", "urls": {"en": "https://www.daysoftheyear.com/days/rapture-party-day/"}},
         {"inherits": "National Doughnut Day", "type": "1D", "start": {"mon": 6, "wkd": [6], "wkdRecurrence": 1}},
+        {"type": "1D", "start": {"mon": 6, "d": 3}, "titles": {"en": "Uganda Martyrs Day"}, "notes": {"en": "TYD"}, "1st": {"era": 1, "y": 1975}, "emoji": "🇺🇬", "urls": {"en": "https://nationaltoday.com/uganda-martyrs-day/"}},
 
     ]
 }

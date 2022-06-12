@@ -4,7 +4,7 @@
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 5}},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 5}, "urls": {"en": "https://nationaltoday.com/constitution-day-denmark/"}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"type": "1D", "start": {"mon": 6, "d": 7}, "titles": {"en": "Birthday of Prince Joachim"}, "inherits": "*BDay*", "urls": {"en": "https://webplus.info/index.php?page=340&event=56335"}},
     ]
