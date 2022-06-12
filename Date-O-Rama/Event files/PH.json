@@ -6,6 +6,7 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Day of Valor"}, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Valor"}},
         {"type": "1D", "start": {"d": 30, "mon": 11}, "titles": {"en": "Bonifacio Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Bonifacio_Day"}, "1st": {"era": 1, "y": 1901}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 6, "d": 12}},
         ]
     }
 
