@@ -95,7 +95,7 @@
         {"titles": {"en": "Feast of St. Norbert"}, "type": "1D", "start": {"mon": 6, "d": 6}},
         {"titles": {"en": "Feast of St. Ephrem"}, "type": "1D", "start": {"mon": 6, "d": 9}},
         {"titles": {"en": "Feast of St. Barnabas the Apostle"}, "type": "1D", "start": {"mon": 6, "d": 11}},
-        {"titles": {"en": "Feast of St. Anthony of Padua"}, "type": "1D", "start": {"mon": 6, "d": 13}},
+        {"inherits": "Feast of St. Anthony of Padua", "type": "1D", "start": {"mon": 6, "d": 13}},
         {"titles": {"en": "Feast of St. Romuald"}, "type": "1D", "start": {"mon": 6, "d": 19}},
         {"titles": {"en": "Feast of St. Aloysius Gonzaga"}, "type": "1D", "start": {"mon": 6, "d": 21}},
         {"titles": {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, "type": "1D", "start": {"mon": 6, "d": 22}},
