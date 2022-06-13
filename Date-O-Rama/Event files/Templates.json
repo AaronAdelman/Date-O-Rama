@@ -8,8 +8,8 @@
         {"template": "*Death Anniv*", "type": "1D", "start": {}, "emoji": "🪦"},
         {"template": "*Wedding Anniv*", "type": "1D", "start": {}, "emoji": "💍"},
         {"template": "*Remembrance*", "type": "1D", "start": {}, "emoji": "🕓"},
-        {"template": "*Candle LTG*", "type": "1D", "start": {}, "emoji": "🕯"},
-        {"template": "*שבת*", "type": "1D", "start": {}, "emoji": "🍷"},
+        
+        {"template": "*Astrology*", "type": "1M", "start": {}, "urls": {"en": "http://skepdic.com/astrology.html"}},
         {"template": "*zsu*", "type": "1D", "start": {}, "emoji": "☉"},
         {"template": "*zmo*", "type": "1D", "start": {}, "emoji": "☾"},
         {"template": "*zme*", "type": "1D", "start": {}, "emoji": "☿"},
@@ -29,17 +29,24 @@
         {"template": "*Rooster*", "type": "1D", "start": {}, "emoji": "🐓", "inherits": "*Astrology*"},
         {"template": "*Dog*", "type": "1D", "start": {}, "emoji": "🐕", "inherits": "*Astrology*"},
         {"template": "*Pig*", "type": "1D", "start": {}, "emoji": "🐖", "inherits": "*Astrology*"},
-
-        {"template": "*Astrology*", "type": "1M", "start": {}, "urls": {"en": "http://skepdic.com/astrology.html"}},
         
+        {"template": "*Candle LTG*", "type": "1D", "start": {}, "emoji": "🕯"},
+        {"template": "*שבת*", "type": "1D", "start": {}, "emoji": "🍷"},
+        
+        {"template": "*ראש השנה*", "type": "1D", "start": {"mon": 1, "d": 1}, "urls": {"en": "https://www.ou.org/holidays/category/rosh-hashanah/"}, "emoji": "🍎🍯"},
         {"template": "צום גדליה", "titles": {"he": "צום גדליה", "en": "Fast of Gedhalyah"}, "type": "1D", "start": {"mon": 1, "d": 3, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/tzom-gedaliah/"}},
+        {"template": "*סוכות*", "type": "1D", "start": {"mon": 1, "d": 15}, "urls": {"en": "https://www.ou.org/holidays/category/sukkot/"}},
+        {"template": "סוכות (חול המועד, יום א׳)", "inherits": "*סוכות*", "titles": {"he": "סוכות (חול המועד, יום א׳)", "en": "Sukkoth (ḥol hammo‘edh, day 1)"}, "type": "1D", "start": {"mon": 1, "d": 16}},
+        {"template": "סוכות (חול המועד, יום ב׳)", "inherits": "*סוכות*", "titles": {"he": "סוכות (חול המועד, יום ב׳)", "en": "Sukkoth (ḥol hammo‘edh, day 2)"}, "type": "1D", "start": {"mon": 1, "d": 17}},
+        {"template": "סוכות (חול המועד, יום ג׳)", "inherits": "*סוכות*", "titles": {"he": "סוכות (חול המועד, יום ג׳)", "en": "Sukkoth (ḥol hammo‘edh, day 3)"}, "type": "1D", "start": {"mon": 1, "d": 18}},
+        {"template": "סוכות (חול המועד, יום ד׳)", "inherits": "*סוכות*", "titles": {"he": "סוכות (חול המועד, יום ד׳)", "en": "Sukkoth (ḥol hammo‘edh, day 4)"}, "type": "1D", "start": {"mon": 1, "d": 19}},
+
         {"template": "ראש חודש כסלו", "titles": {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, "type": "nD", "start": {"mon": 2, "d": 30, "yLengths": [355, 385]}, "end": {"mon": 3, "d": 1}},
         {"template": "ראש חודש טבת", "titles": {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, "type": "1D", "start": {"mon": 4, "d": 1, "yLengths": [353, 383]}},
         {"template": "תענית אסתר", "titles": {"he": "תענית אסתר", "en": "Fast of ’Ester"}, "type": "1D", "start": {"mon": 7, "d": 13, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-esther/"}},
-
         {"template": "צום אב", "titles": {"he": "צום אב", "en": "Fast of ’Av"}, "type": "1D", "start": {"mon": 12, "d": 9, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-tisha-bav/"}},
-
-
+        
+        
         {"template": "1st Advent Sunday", "titles": {"en": "First Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}, "emoji": "🕯"},
         {"template": "2nd Advent Sunday", "titles": {"en": "Second Advent Sunday"}, "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}, "emoji": "🕯"},
         {"template": "3rd Advent Sunday", "titles": {"en": "Third Advent Sunday"}, "notes": {"en": "Gaudete Sunday"}, "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}, "emoji": "🕯"},
