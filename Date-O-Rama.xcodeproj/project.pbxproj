@@ -64,6 +64,9 @@
 		A53070272799C43E004A5B37 /* ASAMultiEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53070262799C43D004A5B37 /* ASAMultiEventView.swift */; };
 		A53070282799C43E004A5B37 /* ASAMultiEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53070262799C43D004A5B37 /* ASAMultiEventView.swift */; };
 		A533798124B2333500340C0B /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Sun.json */; };
+		A534374D28576D8500F8E8AF /* ASAJulian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534374C28576D8500F8E8AF /* ASAJulian.swift */; };
+		A534374E28576D8500F8E8AF /* ASAJulian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534374C28576D8500F8E8AF /* ASAJulian.swift */; };
+		A534374F28576D8500F8E8AF /* ASAJulian.swift in Sources */ = {isa = PBXBuildFile; fileRef = A534374C28576D8500F8E8AF /* ASAJulian.swift */; };
 		A536399A26EF43BD0083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A536399B26EF43BD0083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
 		A536399C26EF44C70083C571 /* ASAEaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A536399926EF43BD0083C571 /* ASAEaster.swift */; };
@@ -709,6 +712,7 @@
 		A5307023279867E4004A5B37 /* ASAMultiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEvent.swift; sourceTree = "<group>"; };
 		A53070262799C43D004A5B37 /* ASAMultiEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEventView.swift; sourceTree = "<group>"; };
 		A533798024B2333400340C0B /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
+		A534374C28576D8500F8E8AF /* ASAJulian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulian.swift; sourceTree = "<group>"; };
 		A536399926EF43BD0083C571 /* ASAEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEaster.swift; sourceTree = "<group>"; };
 		A536399D26EF4D950083C571 /* WatchDate-O-Rama Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchDate-O-Rama Extension-Bridging-Header.h"; sourceTree = "<group>"; };
 		A536399E26EF4D950083C571 /* Date-O-Rama-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Date-O-Rama-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1444,6 +1448,7 @@
 				A57CA32E24864C3A00378EA7 /* ASAConfiguration.swift */,
 				A5B4E02D2625E688005D6692 /* ASADateORamaApp.swift */,
 				A536399926EF43BD0083C571 /* ASAEaster.swift */,
+				A534374C28576D8500F8E8AF /* ASAJulian.swift */,
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A57BCCB0247BBDC20019C02C /* ASALocation.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
@@ -2241,6 +2246,7 @@
 				A52A2388279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */,
 				A59D80692600C6FB00FD8BBF /* ASAEventCompatible.swift in Sources */,
 				A59322702578068400318BC3 /* ASAClocksViewGroupingOption.swift in Sources */,
+				A534374F28576D8500F8E8AF /* ASAJulian.swift in Sources */,
 				A593229225782AB800318BC3 /* ASAMainClocksByPlaceView.swift in Sources */,
 				A5A6FD4E27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift in Sources */,
 				A59D80392600C57D00FD8BBF /* ASACalendarFactory.swift in Sources */,
@@ -2283,6 +2289,7 @@
 				A57BCCB1247BBDC20019C02C /* ASALocation.swift in Sources */,
 				A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */,
 				A5C77C332433371800CFEE47 /* ASAClock.swift in Sources */,
+				A534374D28576D8500F8E8AF /* ASAJulian.swift in Sources */,
 				A5DC8768264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A5BDE77926661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A59D80522600C6F800FD8BBF /* ASAEvent.swift in Sources */,
@@ -2421,6 +2428,7 @@
 				A59D805B2600C6F900FD8BBF /* ASAEventsFile.swift in Sources */,
 				A557AD1025DD495400A264B6 /* SolarEvents.swift in Sources */,
 				A557AD2925DD49A900A264B6 /* ASAConfiguration.swift in Sources */,
+				A534374E28576D8500F8E8AF /* ASAJulian.swift in Sources */,
 				A5C77C142433361900CFEE47 /* Date_O_RamaTests.swift in Sources */,
 				A5A6FD5A27BECB88003595D5 /* FrenchRepublicanDateExtensions.swift in Sources */,
 				A59D80592600C6F900FD8BBF /* ASAEventCompatible.swift in Sources */,

@@ -1219,4 +1219,54 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(componentsMD.isWithin(start: startMD, end: endMD))
     }
     
+//    func debugPrintJulianComponents(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, timeZone: TimeZone) {
+//        let date = GregorianDate(era: era, year: year, month: month, day: day, hour: hour, minute: minute, second: second, secondsFromGMT: timeZone.secondsFromGMT())
+//        let components = JulianComponents(date: date, timeZone: timeZone)
+//        debugPrint(#file, #function, hour, components)
+//    }
+    
+    func testJulianCalendarAlgorithms() throws {
+        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
+
+        let June13NS_0 = GregorianDate(era: 1, year: 2022, month: 6, day: 13, hour: 0, minute: 0, second: 0, secondsFromGMT: timeZone.secondsFromGMT())
+        let June13NS_0Components = JulianComponents(date: June13NS_0, timeZone: timeZone)
+//        debugPrint(#file, #function, June13NS_0Components)
+        assert(June13NS_0Components.year    == 2022)
+        assert(June13NS_0Components.month   ==    5)
+        assert(June13NS_0Components.day     ==   31)
+        assert(June13NS_0Components.weekday ==    2)
+
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 12, hour: 23, minute: 0, second: 0, timeZone: timeZone)
+//
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 0, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 1, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 2, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 3, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 4, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 5, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 6, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 7, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 8, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 9, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 10, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 11, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 12, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 13, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 14, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 15, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 16, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 17, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 18, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 19, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 20, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 21, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 22, minute: 0, second: 0, timeZone: timeZone)
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 23, minute: 0, second: 0, timeZone: timeZone)
+//
+//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 14, hour: 0, minute: 0, second: 0, timeZone: timeZone)
+
+        let May31OS = dateFromJulianComponents(year: 2022, month: 5, day: 31, timeZone: timeZone)
+        debugPrint(#file, #function, May31OS as Any)
+    }
+    
 } // class Date_O_RamaTests
