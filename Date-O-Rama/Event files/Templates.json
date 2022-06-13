@@ -42,10 +42,20 @@
         {"template": "סוכות (חול המועד, יום ד׳)", "inherits": "*סוכות*", "titles": {"he": "סוכות (חול המועד, יום ד׳)", "en": "Sukkoth (ḥol hammo‘edh, day 4)"}, "type": "1D", "start": {"mon": 1, "d": 19}},
 
         {"template": "ראש חודש כסלו", "titles": {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, "type": "nD", "start": {"mon": 2, "d": 30, "yLengths": [355, 385]}, "end": {"mon": 3, "d": 1}},
+        {"template": "*חנוכה*", "type": "1D", "start": {"mon": 3, "d": 25}, "urls": {"en": "https://www.ou.org/holidays/category/chanukah/"}, "emoji": "🕎"},
         {"template": "ראש חודש טבת", "titles": {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, "type": "1D", "start": {"mon": 4, "d": 1, "yLengths": [353, 383]}},
         {"template": "תענית אסתר", "titles": {"he": "תענית אסתר", "en": "Fast of ’Ester"}, "type": "1D", "start": {"mon": 7, "d": 13, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-esther/"}},
+        {"template": "תענית בכורות", "titles": {"he": "תענית בכורות", "en": "Fast of the Firstborn"}, "type": "1D", "start": {"mon": 8, "d": 14, "wkd": [1, 2, 3, 4, 5, 6]}},
+        {"template": "*פסח*", "type": "1D", "start": {"mon": 8, "d": 15}, "urls": {"en": "https://www.ou.org/holidays/category/passover/"}},
+        {"template": "פסח (חול המועד, יום א׳)", "titles": {"he": "פסח (חול המועד, יום א׳)", "en": "Pesaḥ (Passover) (ḥol hammo‘edh, day 1)"}, "type": "1D", "start": {"mon": 8, "d": 16}, "inherits": "*פסח*"},
+        {"template": "פסח (חול המועד, יום ב׳)", "titles": {"he": "פסח (חול המועד, יום ב׳)", "en": "Pesaḥ (Passover) (ḥol hammo‘edh, day 2)"}, "regionCodes": ["IL", "PS"], "type": "1D", "start": {"mon": 8, "d": 17}, "inherits": "*פסח*"},
+        {"template": "פסח (חול המועד, יום ג׳)", "titles": {"he": "פסח (חול המועד, יום ג׳)", "en": "Pesaḥ (Passover) (ḥol hammo‘edh, day 3)"}, "regionCodes": ["IL", "PS"], "type": "1D", "start": {"mon": 8, "d": 18}, "inherits": "*פסח*"},
+        {"template": "פסח (חול המועד, יום ד׳)", "titles": {"he": "פסח (חול המועד, יום ד׳)", "en": "Pesaḥ (Passover) (ḥol hammo‘edh, day 4)"}, "regionCodes": ["IL", "PS"], "type": "1D", "start": {"mon": 8, "d": 19}, "inherits": "*פסח*"},
+        {"template": "מימונה/אסרו חג פסח", "titles": {"he": "מימונה/אסרו חג פסח", "en": "Mimunah/’Isru Ḥagh Pesaḥ (Passover)"}, "type": "1D", "start": {"mon": 8, "d": 22}},
+        {"template": "*ספירת העומר*", "type": "1D", "start": {"mon": 8, "d": 16}, "urls": {"en": "https://www.ou.org/holidays/category/sefirat-haomer/"}},
+
+
         {"template": "צום אב", "titles": {"he": "צום אב", "en": "Fast of ’Av"}, "type": "1D", "start": {"mon": 12, "d": 9, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-tisha-bav/"}},
-        
         
         {"template": "1st Advent Sunday", "titles": {"en": "First Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}, "emoji": "🕯"},
         {"template": "2nd Advent Sunday", "titles": {"en": "Second Advent Sunday"}, "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}, "emoji": "🕯"},
