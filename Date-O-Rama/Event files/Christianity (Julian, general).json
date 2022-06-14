@@ -1,0 +1,27 @@
+{
+    "titles": {"en": "Christianity (Julian, general)", "he": "נצרות (יוליאני, כללי)"},
+    "defaultLocale": "en",
+    "calendarCode": "julian",
+    "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        {"inherits": "Nativity of Mary", "type": "1D", "start": {"mon": 9, "d": 8}},
+        {"inherits": "Feast of the Exaltation of the Holy Cross", "type": "1D", "start": {"mon": 9, "d": 14}},
+        {"inherits": "Presentation of the Blessed Virgin Mary", "type": "1D", "start": {"mon": 11, "d": 21}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"inherits": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}},
+        {"inherits": "Candlemas", "type": "1D", "start": {"mon": 2, "d": 2}},
+        {"inherits": "Feast of the Annunciation", "type": "1D", "start": {"mon": 3, "d": 25}},
+        {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
+        {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
+        {"inherits": "Feast of the Transfiguration", "type": "1D", "start": {"mon": 8, "d": 6}},
+        {"titles": {"en": "Dormition of the Mother of God"}, "type": "1D", "start": {"mon": 8, "d": 15}},
+
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"titles": {"en": "Nativity of John the Baptist"}, "type": "1D", "start": {"mon": 6, "d": 24}},
+        {"inherits": "Feast of Saints Peter and Paul", "type": "1D", "start": {"mon": 6, "d": 29}},
+        {"inherits": "Beheading of St. John the Baptist", "type": "1D", "start": {"mon": 8, "d": 29}},
+        {"titles": {"en": "Intercession of the Theotokos"}, "type": "1D", "start": {"mon": 10, "d": 1}},
+    ]
+}

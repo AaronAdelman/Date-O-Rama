@@ -24,7 +24,7 @@
         {"titles": {"en": "Feast of St. Thomas Aquinas"}, "type": "1D", "start": {"mon": 1, "d": 28}},
         {"titles": {"en": "Feast of St. John Bosco"}, "type": "1D", "start": {"mon": 1, "d": 31}},
 
-        {"titles": {"en": "Candlemas"}, "notes": {"en": "Presentation of the Lord"}, "type": "1D", "start": {"mon": 2, "d": 2}, "urls": {"en": "https://www.daysoftheyear.com/days/candlemas-day/"}, "emoji": "🕯"},
+        {"inherits": "Candlemas", "type": "1D", "start": {"mon": 2, "d": 2}},
         
         {"titles": {"en": "Feast of St. Blaise or St. Ansgar"}, "type": "1D", "start": {"mon": 2, "d": 3}},
         {"titles": {"en": "Feast of St. Agatha"}, "type": "1D", "start": {"mon": 2, "d": 5}},
@@ -54,7 +54,7 @@
 
         {"titles": {"en": "Feast of St. Turibius of Mogrovejo"}, "type": "1D", "start": {"mon": 3, "d": 23}},
 
-        {"titles": {"en": "Feast of the Annunciation"}, "type": "1D", "start": {"mon": 3, "d": 25}},
+        {"inherits": "Feast of the Annunciation", "type": "1D", "start": {"mon": 3, "d": 25}},
         
         {"titles": {"en": "Feast of St. Francis of Paola"}, "type": "1D", "start": {"mon": 4, "d": 2}},
         {"titles": {"en": "Feast of St. Isidore"}, "type": "1D", "start": {"mon": 4, "d": 4}},
@@ -105,7 +105,7 @@
         {"titles": {"en": "Feast of St. Cyril of Alexandria"}, "type": "1D", "start": {"mon": 6, "d": 27}},
         {"titles": {"en": "Feast of St. Irenaeus"}, "type": "1D", "start": {"mon": 6, "d": 28}},
 
-        {"titles": {"en": "Feast of Saints Peter and Paul"}, "type": "1D", "start": {"mon": 6, "d": 29}},
+        {"inherits": "Feast of Saints Peter and Paul", "type": "1D", "start": {"mon": 6, "d": 29}},
 
         {"titles": {"en": "Feast of the First Martyrs of the Church of Rome"}, "type": "1D", "start": {"mon": 6, "d": 30}},
         
@@ -135,7 +135,7 @@
         {"titles": {"en": "Feast of St. Jean Vianney (the Curé of Ars)"}, "type": "1D", "start": {"mon": 8, "d": 4}},
         {"titles": {"en": "Dedication of the Basilica of St. Mary Major"}, "type": "1D", "start": {"mon": 8, "d": 5}},
 
-        {"titles": {"en": "Feast of the Transfiguration"}, "type": "1D", "start": {"mon": 8, "d": 6}},
+        {"inherits": "Feast of the Transfiguration", "type": "1D", "start": {"mon": 8, "d": 6}},
         
         {"titles": {"en": "Feast of St. Sixtus II and companions or St. Cajetan"}, "type": "1D", "start": {"mon": 8, "d": 7}},
         {"titles": {"en": "Feast of St. Dominic"}, "type": "1D", "start": {"mon": 8, "d": 8}},
@@ -158,17 +158,17 @@
         {"titles": {"en": "Feast of St. Louis or St. Joseph of Calasanz"}, "type": "1D", "start": {"mon": 8, "d": 25}},
         {"titles": {"en": "Feast of St. Monica"}, "type": "1D", "start": {"mon": 8, "d": 27}},
         {"titles": {"en": "Feast of St. Augustine of Hippo"}, "type": "1D", "start": {"mon": 8, "d": 28}},
-        {"titles": {"en": "Beheading of Saint John the Baptist"}, "type": "1D", "start": {"mon": 8, "d": 29}},
+        {"inherits": "Beheading of St. John the Baptist", "type": "1D", "start": {"mon": 8, "d": 29}},
 
         {"titles": {"en": "Feast of St. Gregory the Great"}, "type": "1D", "start": {"mon": 9, "d": 3}},
 
-        {"titles": {"en": "Nativity of Mary"}, "type": "1D", "start": {"mon": 9, "d": 8}, "inherits": "*BDay*"},
-        
+        {"inherits": "Nativity of Mary", "type": "1D", "start": {"mon": 9, "d": 8}},
+
         {"titles": {"en": "Feast of St. Peter Claver"}, "type": "1D", "start": {"mon": 9, "d": 9}},
         {"titles": {"en": "Holy Name of the Blessed Virgin Mary"}, "type": "1D", "start": {"mon": 9, "d": 12}},
         {"titles": {"en": "Feast of St. John Chrysostom"}, "type": "1D", "start": {"mon": 9, "d": 13}},
 
-        {"titles": {"en": "Feast of the Exaltation of the Holy Cross"}, "type": "1D", "start": {"mon": 9, "d": 14}},
+        {"inherits": "Feast of the Exaltation of the Holy Cross", "type": "1D", "start": {"mon": 9, "d": 14}},
         
         {"titles": {"en": "Our Lady of Sorrows"}, "type": "1D", "start": {"mon": 9, "d": 15}},
         {"titles": {"en": "Feast of Saints Cornelius and Cyprian"}, "type": "1D", "start": {"mon": 9, "d": 16}},
@@ -218,8 +218,8 @@
         {"titles": {"en": "Feast of St. Elizabeth of Hungary"}, "type": "1D", "start": {"mon": 11, "d": 17}},
         {"titles": {"en": "Dedication of the Basilicas of Saints Peter and Paul"}, "type": "1D", "start": {"mon": 11, "d": 18}},
         
-        {"titles": {"en": "Presentation of the Blessed Virgin Mary"}, "type": "1D", "start": {"mon": 11, "d": 21}},
-        
+        {"inherits": "Presentation of the Blessed Virgin Mary", "type": "1D", "start": {"mon": 11, "d": 21}},
+
         {"titles": {"en": "Feast of St. Cecilia"}, "type": "1D", "start": {"mon": 11, "d": 22}},
         {"titles": {"en": "Feast of St. Clement I or St. Columban"}, "type": "1D", "start": {"mon": 11, "d": 23}},
         {"titles": {"en": "Feast of St. Andrew Dung-Lac and his companions"}, "type": "1D", "start": {"mon": 11, "d": 24}},

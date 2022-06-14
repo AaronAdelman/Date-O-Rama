@@ -718,6 +718,17 @@ func julian_ymd(jd: Double) -> (yr: Int, mo: Int, day: Double) {
             mo += 1
         }
     }
+    
+    if mo > 12 {
+        mo -= 12
+        yr +=  1
+    }
+    
+    if mo == 9 && Int(ceil(day)) == 31 {
+        mo  = 10
+        day =  1.0
+    }
+    
     return (yr, mo, day)
 } // func julian_ymd(jd: Double) -> (yr: Int, mo: Int, day: Double)
 
@@ -800,7 +811,9 @@ func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, m
     let astronomicalYear: Int = JulianComponents.yr
     let JulianDayOfWeek = day_of_week(year: astronomicalYear, mo: JulianComponents.mo, day: day)
     let (era, year) = astronomicalYear.eraAndYearFromAstronomicalYear
-    return (era, year, JulianComponents.mo, Int(ceil(JulianComponents.day)), JulianDayOfWeek, GregorianComponents.hour!, GregorianComponents.minute!, GregorianComponents.second!, GregorianComponents.nanosecond!)
+    let month: Int = JulianComponents.mo
+    assert(isValidJulianDate(era: era, year: year, month: month, day: day))
+    return (era, year, month, day, JulianDayOfWeek, GregorianComponents.hour!, GregorianComponents.minute!, GregorianComponents.second!, GregorianComponents.nanosecond!)
 } // func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int)
 
 func daysForMonthInJulianDate(era: Int, year: Int, month: Int) -> Int {
