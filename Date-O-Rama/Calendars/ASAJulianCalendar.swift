@@ -724,9 +724,9 @@ func julian_ymd(jd: Double) -> (yr: Int, mo: Int, day: Double) {
         yr +=  1
     }
     
-    if mo == 9 && Int(ceil(day)) == 31 {
-        mo  = 10
-        day =  1.0
+    if mo.is30DayMonth && day >= 30.0 {
+        mo  = mo  +  1
+        day = day - 30.0
     }
     
     return (yr, mo, day)
