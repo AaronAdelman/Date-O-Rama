@@ -612,7 +612,6 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             case .day:
                 return isSextilYear ? Range(1...DAYS_IN_YEAR_IN_LEAP_YEAR) : Range(1...DAYS_IN_YEAR)
 
-                
             default:
                 return nil
             } // switch smaller
@@ -621,7 +620,6 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             switch smaller {
             case .day:
                 let month = FRCDate.components.month ?? -1
-//                let day = FRCDate.components.day ?? -1
                 if 1 <= month && month <= 12 {
                     return Range(1...DAYS_PER_MONTH)
                 } else if month == 13 {
@@ -633,8 +631,6 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
             default:
                 return nil
             } // switch smaller
-            
-        
             
         default:
             return nil

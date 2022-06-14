@@ -1265,7 +1265,7 @@ class Date_O_RamaTests: XCTestCase {
 //
 //        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 14, hour: 0, minute: 0, second: 0, timeZone: timeZone)
 
-        let May31OS = dateFromJulianComponents(year: 2022, month: 5, day: 31, timeZone: timeZone)
+        let May31OS = dateFromJulianComponents(era: 1, year: 2022, month: 5, day: 31, timeZone: timeZone)
         debugPrint(#file, #function, May31OS as Any)
     }
     

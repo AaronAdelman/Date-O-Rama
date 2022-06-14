@@ -24,6 +24,7 @@
 "Persian"               = "Persian (Solar Hijri)";
 "RepublicOfChina"       = "Republic of China (Minguo)";
 "JulianDay"             = "Julian Date";
+"julian"             = "Julian";
 "ReducedJulianDay"      = "Reduced Julian Date";
 "DublinJulianDay"       = "Dublin Julian Date";
 "ModifiedJulianDay"     = "Modified Julian Date";

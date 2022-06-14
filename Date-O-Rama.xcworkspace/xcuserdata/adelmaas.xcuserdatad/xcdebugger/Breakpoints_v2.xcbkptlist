@@ -34,38 +34,6 @@
             endingLineNumber = "65"
             landmarkName = "apply(dateFormat:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "31BB478D-3D3B-4748-B37C-29252ACD64FF - 8f39c70b7dcdedf4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__C.NSDateFormatter.apply(dateFormat: Date_O_Rama.ASADateFormat) -&gt; ()"
-                  moduleName = "Date-O-Rama"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/DateFormatterExtensions.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "100">
-               </Location>
-               <Location
-                  uuid = "31BB478D-3D3B-4748-B37C-29252ACD64FF - 8e6b7fa2aeff9d94"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__C.NSDateFormatter.apply(dateFormat: Date_O_RamaTests.ASADateFormat) -&gt; ()"
-                  moduleName = "Date-O-RamaTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adelmaas/Documents/Q%20%D7%9E%D7%93%D7%A2/%D7%A4%D7%A8%D7%95%D7%99%D7%A7%D7%98%D7%99%20%D7%AA%D7%9B%D7%A0%D7%95%D7%AA/Date-O-Rama/Date-O-Rama/Extensions/DateFormatterExtensions.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "100">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

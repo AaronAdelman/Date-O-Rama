@@ -47,7 +47,7 @@ enum ASACalendarCode:  String, Codable {
     case FrenchRepublican      = "frc"
     case FrenchRepublicanRomme = "frc-r"
 
-    case Julian                = "julian" // TODO:  Implement
+    case Julian                = "julian"
     
     case allEarth                    = "*"
     case allHebrew                   = "heb*"
@@ -273,7 +273,7 @@ extension ASACalendarCode {
         get {
             switch self {
             case .Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
-                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme:
+                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian:
                 return .solar
                 
             case .Chinese, .Hebrew, .HebrewGRA, .HebrewMA:

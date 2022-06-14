@@ -24,6 +24,7 @@
 "Persian"               = "פרסי";
 "RepublicOfChina"       = "טאיוואני";
 "JulianDay"             = "יום יוליאני";
+"julian"                = "יוליאני";
 "ReducedJulianDay"      = "Reduced Julian Date";
 "DublinJulianDay"       = "Dublin Julian Date";
 "ModifiedJulianDay"     = "Modified Julian Date";

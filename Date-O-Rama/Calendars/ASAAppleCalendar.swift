@@ -18,7 +18,6 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     var dateFormatter = DateFormatter()
     lazy var ISODateFormatter = ISO8601DateFormatter()
 
-
     private var ApplesCalendar:  Calendar
     
     init(calendarCode:  ASACalendarCode) {

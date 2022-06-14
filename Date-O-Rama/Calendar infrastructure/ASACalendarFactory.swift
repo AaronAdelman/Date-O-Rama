@@ -22,6 +22,8 @@ class ASACalendarFactory {
             return ASASunsetTransitionCalendar(calendarCode: code)
         } else if code.isFrenchRepublicanCalendar {
             return ASAFrenchRepublicanCalendar(calendarCode: code)
+        } else if code == .Julian {
+            return ASAJulianCalendar()
         }
      
         return nil
