@@ -792,14 +792,11 @@ func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, m
 } // func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int)
 
 func daysForMonthInJulianDate(year: Int, month: Int) -> Int {
-    switch month {
-    case 9, 4, 6, 11:
+    if month.is30DayMonth {
         return 30
-        
-    case 2:
+    } else if month == 2 {
         return year.isLeapYear ? 29 : 28
-        
-    default:
+    } else {
         return 31
     }
 }
