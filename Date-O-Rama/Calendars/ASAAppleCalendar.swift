@@ -91,7 +91,6 @@ class ASAAppleCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACalendarSup
     } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
     
     func startOfNextDay(date:  Date, locationData:  ASALocation) -> Date {
-        //        return date.nextMidnight(timeZone:  timeZone)
         self.ApplesCalendar.timeZone = locationData.timeZone
         return self.ApplesCalendar.startOfDay(for: date.oneDayAfter)
     } // func startOfNextDay(now:  Date, locationData:  ASALocation) -> Date

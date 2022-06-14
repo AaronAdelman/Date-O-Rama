@@ -13,7 +13,7 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
         self.calendarCode = .Julian
     } // init(calendarCode:  ASACalendarCode)
     
-    var canSplitTimeFromDate: Bool = false
+    var canSplitTimeFromDate: Bool = true
     
     var defaultDateFormat: ASADateFormat = .full
     
@@ -254,6 +254,13 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
         return result
     } // func dateString(FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
+    fileprivate func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
+        self.dateFormatter.calendar = GregorianCalendar
+        self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: timeFormat, timeZone: locationData.timeZone)
+        self.dateFormatter.apply(dateFormat: .none)
+        return self.dateFormatter.string(from: now)
+    } // func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String
+    
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let rawComponents = JulianComponents(date: now, timeZone: locationData.timeZone)
         
@@ -285,7 +292,8 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
         let nanosecond = rawComponents.nanosecond
         let components: ASADateComponents = ASADateComponents(calendar: self, locationData: locationData, era: rawComponents.era, year: year, quarter: quarter, month: month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: hour, minute: minute, second: second, nanosecond: nanosecond)
         let dateString = dateString(dateComponents: components, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
-        return (dateString, "", components)
+        let timeString = timeString(now: now, localeIdentifier: localeIdentifier, timeFormat: timeFormat, locationData: locationData)
+        return (dateString, timeString, components)
     }
     
     private lazy var GregorianCalendar = Calendar.gregorian
