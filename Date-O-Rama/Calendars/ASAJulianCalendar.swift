@@ -55,8 +55,205 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
         let (dateString, timeString, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
-        return dateString + " • " + timeString
+        return dateString + " · " + timeString
     }
+    
+    private var dateFormatter = DateFormatter()
+    private var formatter = NumberFormatter()
+
+    fileprivate func stringFromInteger(_ integerValue: Int, minimumIntegerDigits: Int) -> String {
+        
+        formatter.minimumIntegerDigits = minimumIntegerDigits
+        let symbol = self.formatter.string(from: NSNumber(value: integerValue))!
+        return symbol
+    }
+    
+    let datePatternComponentCache = NSCache<NSString, NSArray>()
+    
+    fileprivate func dateString(dateComponents: ASADateComponents, localeIdentifier: String, dateFormat: ASADateFormat) -> String {
+        var dateFormatPattern: String
+        let languageCode = localeIdentifier.localeLanguageCode
+        
+        self.dateFormatter.apply(localeIdentifier: localeIdentifier, timeFormat: .none, timeZone: TimeZone.current)
+        self.dateFormatter.apply(dateFormat: dateFormat)
+        dateFormatPattern = self.dateFormatter.dateFormat ?? ""
+        
+        var components: Array<ASADateFormatPatternComponent>
+        let candidateComponents = self.datePatternComponentCache.object(forKey: dateFormatPattern as NSString)
+        if candidateComponents == nil {
+            components = dateFormatPattern.dateFormatPatternComponents
+            datePatternComponentCache.setObject(components as NSArray, forKey: dateFormatPattern as NSString)
+        } else {
+            components = candidateComponents as! Array<ASADateFormatPatternComponent>
+        }
+        
+        var result = ""
+        formatter.locale = Locale(identifier: localeIdentifier)
+        
+        for component in components {
+            switch component.type {
+            case .literal:
+                result.append(component.string)
+                
+            case .symbol:
+                var symbol = ""
+                switch component.string {
+                case "G", "GG", "GGG":
+                    let symbols = self.eraSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[0]
+
+                case "GGGG":
+                    let symbols = self.longEraSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[0]
+                    
+                case "GGGGG":
+                    let symbols = self.eraSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[0]
+                    
+                case "y", "Y", "u", "U":
+                    let year = dateComponents.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 1)
+                    
+                case "yy", "YY", "uu", "UU":
+                    let year = dateComponents.year!
+                    let revisedYear = year % 100
+                    symbol = stringFromInteger(revisedYear, minimumIntegerDigits: 2)
+
+                case "yyy", "YYY", "uuu", "UUU":
+                    let year = dateComponents.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 3)
+                    
+                case "yyyy", "YYYY", "uuuu", "UUUU":
+                    let year = dateComponents.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 4)
+
+                case "yyyyy", "YYYYY", "uuuuu", "UUUUU":
+                    let year = dateComponents.year!
+                    symbol = stringFromInteger(year, minimumIntegerDigits: 5)
+                    
+                case "Q", "QQ", "q", "qq", "QQQQQ", "qqqqq":
+                    let quarter = dateComponents.quarter!
+                    symbol = stringFromInteger(quarter, minimumIntegerDigits: 2)
+                    
+                case "QQQ":
+                    let quarter = dateComponents.quarter!
+                    let symbols = self.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "QQQQ":
+                    let quarter = dateComponents.quarter!
+                    let symbols = self.quarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "qqq":
+                    let quarter = dateComponents.quarter!
+                    let symbols = self.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "qqqq":
+                    let quarter = dateComponents.quarter!
+                    let symbols = self.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[quarter - 1]
+
+                case "M", "MM":
+                    let month = dateComponents.month!
+                    symbol = stringFromInteger(month, minimumIntegerDigits: 2)
+                    
+                case "MMM":
+                    let symbols = self.shortMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.month! - 1]
+
+                case "MMMM":
+                    let symbols = self.monthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.month! - 1]
+
+                case "MMMMM":
+                    let symbols = self.veryShortMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.month! - 1]
+                    
+                case "L", "LL":
+                    let month = dateComponents.month!
+                    symbol = stringFromInteger(month, minimumIntegerDigits: 2)
+                    
+                case "LLL":
+                    let symbols = self.shortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.month! - 1]
+
+                case "LLLL":
+                    let symbols = self.standaloneMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.month! - 1]
+
+                case "LLLLL":
+                    let symbols = self.veryShortStandaloneMonthSymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.month! - 1]
+                    
+                case "l":
+                    symbol = "" // Really.  That’s what the spec says.
+                    
+                case "d":
+                    let day = dateComponents.day!
+                    symbol = stringFromInteger(day, minimumIntegerDigits: 1)
+
+                case "dd":
+                    let day = dateComponents.day!
+                    symbol = stringFromInteger(day, minimumIntegerDigits: 2)
+                    
+                case "D":
+                    let dayInYear = dayOfYear(year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
+                    symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 1)
+
+                case "DD":
+                    let dayInYear = dayOfYear(year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
+                    symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 2)
+
+                case "DDD":
+                    let dayInYear = dayOfYear(year: dateComponents.year!, month: dateComponents.month!, day: dateComponents.day!)
+                    symbol = stringFromInteger(dayInYear, minimumIntegerDigits: 3)
+
+                case "E", "EE", "EEE", "eee":
+                    let symbols = self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.weekday! - 1]
+
+                case "EEEE", "eeee":
+                    let symbols = self.weekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.weekday! - 1]
+
+                case "EEEEE", "eeeee":
+                    let symbols = self.veryShortWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.weekday! - 1]
+                    
+                case "e", "c":
+                    let dayOfWeek = dateComponents.weekday!
+                    symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 1)
+
+                case "ee", "cc":
+                    let dayOfWeek = dateComponents.weekday!
+                    symbol = stringFromInteger(dayOfWeek, minimumIntegerDigits: 2)
+                    
+                case "ccc":
+                    let symbols = self.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.weekday! - 1]
+
+                case "cccc":
+                    let symbols = self.standaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.weekday! - 1]
+
+                case "ccccc":
+                    let symbols = self.veryShortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+                    symbol = symbols[dateComponents.weekday! - 1]
+
+                case "w", "ww", "W", "WW", "F", "g", "gg", "ggg", "gggg", "ggggg", "r", "rr", "rrr", "rrrr", "rrrrr": // TODO:  Implement these!
+                    symbol = "<\(component.string)>"
+                    
+                default:
+                    symbol = "<\(component.string)>"
+                }
+                result.append(symbol)
+            } // switch component.type
+        } // for component in components
+        
+        return result
+    } // func dateString(FRCDate: FrenchRepublicanDate, localeIdentifier: String, dateFormat: ASADateFormat) -> String
     
     func dateStringTimeStringDateComponents(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         let rawComponents = JulianComponents(date: now, timeZone: locationData.timeZone)
@@ -66,15 +263,31 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
         let day: Int    = rawComponents.day
         let weekday: Int = rawComponents.weekday
         let isLeapMonth  = isLeapMonth(month: month, year: year)
+        var quarter: Int?
+        switch month {
+        case 1, 2, 3:
+            quarter = 1
+            
+        case 4, 5, 6:
+            quarter = 2
+            
+        case 7, 8, 9:
+            quarter = 3
+            
+        case 10, 11, 12:
+            quarter = 4
+            
+        default:
+            quarter = nil
+        }
         let hour         = 0  // TODO:  Fix the time components
         let minute       = 0
         let second       = 0
         let nanosecond   = 0
-        let components: ASADateComponents = ASADateComponents(calendar: self, locationData: locationData, era: rawComponents.era, year: year, month: month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: hour, minute: minute, second: second, nanosecond: nanosecond)
-        return ("", "", components)
+        let components: ASADateComponents = ASADateComponents(calendar: self, locationData: locationData, era: rawComponents.era, year: year, quarter: quarter, month: month, isLeapMonth: isLeapMonth, weekday: weekday, day: day, hour: hour, minute: minute, second: second, nanosecond: nanosecond)
+        let dateString = dateString(dateComponents: components, localeIdentifier: localeIdentifier, dateFormat: dateFormat)
+        return (dateString, "", components)
     }
-    
-
     
     private lazy var GregorianCalendar = Calendar.gregorian
     
@@ -373,6 +586,22 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
     }
     
     var calendarCode: ASACalendarCode
+    
+    func quarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.GregorianCalendar.quarterSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.GregorianCalendar.shortQuarterSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func standaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.GregorianCalendar.standaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+    }
+    
+    func shortStandaloneQuarterSymbols(localeIdentifier: String) -> Array<String> {
+        return self.GregorianCalendar.shortStandaloneQuarterSymbols(localeIdentifier: localeIdentifier)
+    }
 } // class ASAJulianCalendar
 
 
@@ -594,3 +823,14 @@ func dateFromJulianComponents(era: Int, year: Int, month: Int, day: Int, timeZon
     let date = Date.date(JulianDate: JulianDate).addingTimeInterval(TimeInterval(secondsFromGMT))
     return date
 } // func dateFromJulianComponents(year: Int, month: Int, day: Int, timeZone: TimeZone) -> Date?
+
+fileprivate func dayOfYear(year: Int, month: Int, day: Int) -> Int {
+    var dayOfYear = day
+    if month > 1 {
+        for m in 1..<month {
+            let daysInMonth = daysForMonthInJulianDate(year: year, month: m)
+            dayOfYear += daysInMonth
+        }
+    }
+    return dayOfYear
+}
