@@ -1,7 +1,7 @@
 {
     "titles": {"en": "Buddhism", "he": "בודהיזם"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 1.0, "green": 0.82, "blue": 0.41},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 8, "mon": 12}, "titles": {"en": "Bodhi Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Bodhi_Day"}},

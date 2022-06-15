@@ -1,7 +1,7 @@
 {
     "titles": {"*": "NO"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.73, "green": 0.05, "blue": 0.18},
     "eventSpecifications": [
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},

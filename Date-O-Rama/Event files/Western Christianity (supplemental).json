@@ -1,7 +1,7 @@
 {
     "titles": {"en": "Western Christianity (supplemental)", "he": "נצרות מערבית (נוספים)"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"titles": {"en": "National Love People Day"}, "type": "1D", "start": {"mon": 9, "d": 30}, "1st": {"type": "1D", "era": 1, "y": 2017}, "emoji": "❤️", "urls": {"en": "https://nationaldaycalendar.com/national-love-people-day-september-30/"}},

@@ -1,7 +1,7 @@
 {
     "titles": {"*": "KR"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
         {"inherits": "National Liberation Day of Korea", "type": "1D", "start": {"d": 15, "mon": 8}, "1st": {"era": 1, "y": 1950}},

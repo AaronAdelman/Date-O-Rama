@@ -1,7 +1,7 @@
 {
     "titles": {"*": "UN"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.27, "green": 0.61, "blue": 0.84},
     "eventSpecifications": [
         {"titles": {"en": "World Braille Day", "he": "יום הברייל העולמי", "es": "Día Mundial del Braille", "fr": "Journée mondiale du braille", "ar": "اليوم العالمي للغة بريل"}, "type": "1D", "start": {"mon": 1, "d": 4}, "emoji": "⠃", "1st": {"type": "1D", "era": 1, "y": 2019}, "urls": {"en": "https://nationaldaycalendar.com/world-braille-day-january-4/"}},

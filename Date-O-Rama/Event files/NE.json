@@ -1,7 +1,7 @@
 {
     "titles": {"*": "NE"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.70, "blue": 0.36},
     "eventSpecifications": [
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 3, "mon": 8}},

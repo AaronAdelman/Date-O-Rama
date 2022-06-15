@@ -1,7 +1,7 @@
 {
     "titles": {"*": "SM"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.61, "green": 0.80, "blue": 0.92},
     "eventSpecifications": [
         {"inherits": "National Day", "type": "1D", "start": {"mon": 9, "d": 3}, "emoji": "🇸🇲"},

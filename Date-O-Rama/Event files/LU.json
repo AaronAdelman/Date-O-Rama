@@ -1,7 +1,7 @@
 {
     "titles": {"*": "LU"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
         {"inherits": "Grand Duke’s Official Birthday", "type": "1D", "start": {"mon": 6, "d": 23}},

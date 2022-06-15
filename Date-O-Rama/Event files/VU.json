@@ -1,7 +1,7 @@
 {
     "titles": {"*": "VU"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.96, "green": 0.82, "blue": 0.29},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 5, "mon": 3}, "titles": {"en": "Custom Chief’s Day"}, "urls": {"en": "https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}},

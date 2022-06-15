@@ -1,7 +1,7 @@
 {
     "titles": {"*": "SE"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.29, "blue": 0.53},
     "eventSpecifications": [
         {"inherits": "National Day", "type": "1D", "start": {"mon": 6, "d": 6}},

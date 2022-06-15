@@ -2,7 +2,7 @@
     "titles": {"en": "Judaism", "he": "יהדות"},
     "defaultLocale": "he",
     "calendarCode": "heb*",
-    "otherCalendarCodes": ["Coptic"],
+    "otherCalendarCodes": ["cop"],
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 1.0},
     "eventSpecifications": [
         {"type": "1Y", "start": {"yDiv": 7, "yRem": 1}, "titles": {"he": "שנה א׳ לשמיטה", "en": "Year 1 in the Shemiṭṭah Cycle"}},
@@ -571,7 +571,7 @@
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [383], "mon": 9, "d": 17}, "titles": {"he": "פרשת בהר", "en": "Parashath BeHar"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [383], "mon": 9, "d": 24}, "titles": {"he": "פרשת בחקתי", "en": "Parashath BeḤuqqothay"}, "notes": {"he": "ראש חודש סיוון יהיה ביום שישי"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [385], "mon": 13, "d": 23}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim-Wayyelekh"}, "notes": {"he": "ראש השנה יהיה ביום שבת קודש וביום ראשון"}},
-        {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode": "Coptic", "type": "1D", "start": {"mon": 3, "d": 26}, "excludeRegionCodes": ["IL", "PS"]},
-        {"titles": {"he": "ברכת החמה", "en": "Blessing of the Sun"}, "calendarCode": "Coptic", "type": "1D", "start": {"mon": 7, "d": 30, "yDiv": 28, "yRem": 17}, "urls": {"en": "https://www.ou.org/holidays/category/birchat-hachama/"}}
+        {"titles": {"he": "תחילת אמירת ״ותן טל ומטר״", "en": "Start of saying “wethen ṭal umaṭar”"}, "calendarCode": "cop", "type": "1D", "start": {"mon": 3, "d": 26}, "excludeRegionCodes": ["IL", "PS"]},
+        {"titles": {"he": "ברכת החמה", "en": "Blessing of the Sun"}, "calendarCode": "cop", "type": "1D", "start": {"mon": 7, "d": 30, "yDiv": 28, "yRem": 17}, "urls": {"en": "https://www.ou.org/holidays/category/birchat-hachama/"}}
     ]
 }

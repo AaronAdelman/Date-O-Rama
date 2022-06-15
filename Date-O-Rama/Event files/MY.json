@@ -1,7 +1,7 @@
 {
     "titles": {"*": "MY"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.2, "blue": 0.63},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 16, "mon": 9}, "titles": {"en": "Malaysia Day"}},

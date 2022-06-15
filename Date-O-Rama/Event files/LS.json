@@ -1,7 +1,7 @@
 {
     "titles": {"*": "LS"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.08, "blue": 0.54},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 11, "mon": 3}, "titles": {"en": "Moshoeshoe Day"}, "1st": {"era": 1, "y": 1870}, "urls": {"en": "https://www.officeholidays.com/holidays/lesotho/moshoeshoes-day"}},

@@ -1,7 +1,7 @@
 {
     "titles": {"*": "ZA"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.88, "green": 0.24, "blue": 0.19},
     "eventSpecifications": [
         {"inherits": "Freedom Day", "type": "1D", "start": {"d": 27, "mon": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)"}},

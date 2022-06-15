@@ -1,7 +1,7 @@
 {
     "titles": {"*": "NL"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 27, "mon": 4}, "titles": {"en": "King’s Day"}, "emoji": "🤴"},

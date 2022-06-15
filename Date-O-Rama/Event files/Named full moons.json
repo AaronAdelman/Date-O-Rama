@@ -1,7 +1,7 @@
 {
     "titles": {"en": "Named full moons", "he": "ירחים מלאים עם שמות"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
     "emoji": "🌕",
     "eventSpecifications": [

@@ -1,7 +1,7 @@
 {
     "titles": {"*": "BG"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.69, "blue": 0.40},
     "eventSpecifications": [
         {"inherits": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}},

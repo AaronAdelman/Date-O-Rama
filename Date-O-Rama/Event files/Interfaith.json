@@ -1,7 +1,7 @@
 {
 "titles": {"en": "Interfaith", "he": "בין־דתיות"},
 "defaultLocale": "en",
-"calendarCode": "Gregorian",
+"calendarCode": "gre",
 "calendarColor": {"red": 0.8, "green": 0.8, "blue": 0.98},
 "eventSpecifications": [
 {"titles": {"en": "World Religion Day"}, "type": "1D", "start": {"mon": 1, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1950}, "emoji": "📚", "urls": {"en": "https://nationaldaycalendar.com/world-religion-day-third-sunday-in-january/"}},

@@ -1,7 +1,7 @@
 {
     "titles": {"*": "MM"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.80, "blue": 0.00},
     "eventSpecifications": [
         {"inherits": "Armed Forces Day", "type": "1D", "start": {"d": 27, "mon": 3}},

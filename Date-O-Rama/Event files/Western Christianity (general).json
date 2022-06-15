@@ -1,7 +1,7 @@
 {
     "titles": {"en": "Western Christianity (general)", "he": "נצרות מערבית (כללי)"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},

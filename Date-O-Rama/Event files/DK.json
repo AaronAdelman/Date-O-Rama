@@ -1,7 +1,7 @@
 {
     "titles": {"*": "DK"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 5}, "urls": {"en": "https://nationaltoday.com/constitution-day-denmark/"}},

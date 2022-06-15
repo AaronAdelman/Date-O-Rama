@@ -1,7 +1,7 @@
 {
     "titles": {"*": "RU"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
         {"titles": {"en": "Russia Day"}, "type": "1D", "start": {"mon": 6, "d": 12}},

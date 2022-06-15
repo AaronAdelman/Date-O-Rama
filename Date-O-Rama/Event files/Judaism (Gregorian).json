@@ -4,6 +4,6 @@
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 1.0},
     "eventSpecifications": [
-        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode": "Gregorian", "type": "1D", "start": {"mon": 12, "d": 24}}
+        {"titles": {"he": "ניטל", "en": "Niṭl"}, "calendarCode": "gre", "type": "1D", "start": {"mon": 12, "d": 24}}
     ]
 }

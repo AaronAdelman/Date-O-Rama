@@ -1,7 +1,7 @@
 {
     "titles": {"en": "Scientology", "he": "סיינטולוגיה"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.56, "green": 0.56, "blue": 0.56},
     "eventSpecifications": [
         {"titles": {"en": "Celebrity Day"}, "type": "1D", "start": {"mon": 2, "d": 22}, "emoji": "😎", "1st": {"type": "1D", "era": 1, "y": 1970}},

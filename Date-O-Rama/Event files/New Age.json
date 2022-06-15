@@ -1,7 +1,7 @@
 {
     "titles": {"en": "New Age", "he": "העידן החדש", "ar": "العصر الجديد"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.98, "green": 0.8, "blue": 0.8},
     "eventSpecifications": [
         {"titles": {"en": "Chicken Soup for the Soul Day"}, "type": "1D", "start": {"mon": 11, "d": 12}, "urls": {"en": "https://www.daysoftheyear.com/days/chicken-soup-for-the-soul-day/"}, "emoji": "🥣"},

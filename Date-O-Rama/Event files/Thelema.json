@@ -1,7 +1,7 @@
 {
     "titles": {"en": "Thelema", "he": "תלמה"},
     "defaultLocale": "en",
-    "calendarCode": "Gregorian",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.75},
     "eventSpecifications": [
         {"titles": {"en": "Feast of the Supreme Ritual"}, "type": "1D", "start": {"mon": 3, "d": 20}},
