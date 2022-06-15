@@ -11,7 +11,7 @@
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
         {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Belgian_National_Day"}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
-        {"inherits": "All Hallows’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
     ]

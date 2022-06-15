@@ -204,7 +204,7 @@
         
         {"inherits": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
         
-        {"inherits": "All Hallows’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}},
 
         {"titles": {"en": "Feast of St. Martin de Porres"}, "type": "1D", "start": {"mon": 11, "d": 3}},
@@ -316,7 +316,7 @@
         {"titles": {"en": "Easter Thursday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 4}},
         {"titles": {"en": "Easter Friday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 5}},
         {"titles": {"en": "Easter Saturday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 6}},
-        {"titles": {"en": "Second Sunday of Easter"}, "notes": {"en": "Divine Mercy Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 7}},
+        {"inherits": "2nd Sunday of Easter", "type": "1D", "start": {"Easter": "Easter", "offsetD": 7}},
         {"titles": {"en": "Third Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 14}},
         {"titles": {"en": "Fourth Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 21}},
         {"titles": {"en": "Fifth Sunday of Easter"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 28}},
