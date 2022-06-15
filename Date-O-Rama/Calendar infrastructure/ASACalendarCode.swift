@@ -55,6 +55,7 @@ enum ASACalendarCode:  String, Codable {
     case allIslamic                  = "hiq*"
     case allIslamicSolarTime         = "hiq-solar*"
     case allFrenchRepublican         = "frc*"
+    case GregorianOrJulian           = "greOrJulian"
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
     case allGregorianMonthsWeeksDays = "gre*"
@@ -330,6 +331,10 @@ extension ASACalendarCode {
         if self == .allEarth {
             return true
             // TODO:  Needs to be modified when adding calendars for other planets, e.g., the Darian calendar for Mars.
+        }
+        
+        if self == .GregorianOrJulian && (otherCalendarCode == .Gregorian || otherCalendarCode == .Julian) {
+            return true
         }
 
         return self == otherCalendarCode

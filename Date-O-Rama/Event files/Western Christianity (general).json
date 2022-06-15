@@ -1,5 +1,5 @@
 {
-    "titles": {"en": "Christianity (Gregorian, general)", "he": "נצרות (גרגוריאני, כללי)"},
+    "titles": {"en": "Western Christianity (general)", "he": "נצרות מערבית (כללי)"},
     "defaultLocale": "en",
     "calendarCode": "Gregorian",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},

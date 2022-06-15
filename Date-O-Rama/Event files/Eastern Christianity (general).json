@@ -1,7 +1,7 @@
 {
-    "titles": {"en": "Christianity (Julian, general)", "he": "נצרות (יוליאני, כללי)"},
+    "titles": {"en": "Eastern Christianity (general)", "he": "נצרות מזרחית (כללי)"},
     "defaultLocale": "en",
-    "calendarCode": "julian",
+    "calendarCode": "greOrJulian",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
