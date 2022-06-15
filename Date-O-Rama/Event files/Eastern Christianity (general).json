@@ -4,7 +4,16 @@
     "calendarCode": "greOrJul",
     "calendarColor": {"red": 1.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
+        {"titles": {"en": "Lazarus Saturday"}, "notes": {"en": "Lent (day 34)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -8}},
+        {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
+        {"inherits": "Holy Monday", "titles": {"en": "Holy Monday"}, "notes": {"en": "Lent (day 35)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -6}},
+        {"inherits": "Holy Tuesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -5}},
+        {"inherits": "Holy Wednesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -4}},
+        {"inherits": "Maundy Thursday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -3}},
+        {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
+        {"inherits": "Holy Saturday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -1}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        
         {"inherits": "Nativity of Mary", "type": "1D", "start": {"mon": 9, "d": 8}},
         {"inherits": "Feast of the Exaltation of the Holy Cross", "type": "1D", "start": {"mon": 9, "d": 14}},
         {"inherits": "Presentation of the Blessed Virgin Mary", "type": "1D", "start": {"mon": 11, "d": 21}},
