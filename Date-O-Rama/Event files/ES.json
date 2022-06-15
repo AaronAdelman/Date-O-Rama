@@ -1,5 +1,6 @@
 {
     "titles": {"*": "ES"},
+    "//": "Spain",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
@@ -10,5 +11,7 @@
         {"titles": {"en": "Day of La Rioja", "es": "Día de La Rioja"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://nationaltoday.com/day-of-la-rioja/"}, "1st": {"era": 1, "y": 1983}},
         {"titles": {"en": "Day of Murcia", "es": "Día de Murcia"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://www.timeanddate.com/holidays/spain/murcia-day"}, "1st": {"era": 1, "y": 1983}},
         {"inherits": "Feast of St. Anthony of Padua", "type": "1D", "start": {"mon": 6, "d": 13}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
+
     ]
 }

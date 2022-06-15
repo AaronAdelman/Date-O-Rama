@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "AO"},
+    "//": "Angola",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
+    "eventSpecifications": [
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
+    ]
+}
