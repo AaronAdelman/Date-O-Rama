@@ -55,7 +55,7 @@ enum ASACalendarCode:  String, Codable {
     case allIslamic            = "hiq*"
     case allIslamicSolarTime   = "hiq-solar*"
     case allFrenchRepublican   = "fre*"
-    case GregorianOrJulian     = "greOrJulian"
+    case GregorianOrJulian     = "greOrJul"
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
     case allGregorianMonthsWeeksDays = "gre*"
