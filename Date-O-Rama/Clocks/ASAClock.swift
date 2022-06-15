@@ -627,4 +627,8 @@ extension ASAClock {
     var isGregorian: Bool {
         return self.calendar.calendarCode == .Gregorian
     } // var isGregorian
+    
+    var supportsExternalEvents: Bool {
+        return self.calendar.usesISOTime && self.isICalendarCompatible
+    }
 } // extension ASAClock

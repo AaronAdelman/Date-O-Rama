@@ -22,7 +22,7 @@ struct ASAClockDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    var deleteable:  Bool
+    var deletable:  Bool
     
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
@@ -35,7 +35,7 @@ struct ASAClockDetailView: View {
             List {
                 ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
                 
-                if deleteable {
+                if deletable {
                     Section(header:  Text("")){
                         HStack {
                             Spacer()
@@ -124,7 +124,7 @@ struct ASAClockDetailEditingSection:  View {
             if !forAppleWatch {
                 ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
                 
-                ASAICalendarEventCalendarsEditingSection(selectedRow: selectedRow)
+                ASAICalendarEventCalendarsEditingSection(selectedClock: selectedRow)
             }
         } // Group
     } // var body
@@ -170,29 +170,30 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 // MARK:  -
 
 struct ASAICalendarEventCalendarsEditingSection:  View {
-    @ObservedObject var selectedRow:  ASAClock
+    @ObservedObject var selectedClock:  ASAClock
     var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
 
     var body:  some View {
-        if selectedRow.calendar.usesISOTime && selectedRow.isICalendarCompatible {
-            Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
+//        if selectedClock.calendar.usesISOTime && selectedClock.isICalendarCompatible {
+        if selectedClock.supportsExternalEvents {
+          Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
                 ForEach(iCalendarEventCalendars, id:
                         \.calendarIdentifier) {
                     calendar
                     in
-                    ASAICalendarEventCalendarCell(selectedRow: selectedRow, title: calendar.title, color: calendar.color)
+                    ASAICalendarEventCalendarCell(selectedRow: selectedClock, title: calendar.title, color: calendar.color)
                         .onTapGesture {
-                            if selectedRow.iCalendarEventCalendars.map({$0.title}).contains(calendar.title) {
-                                let fileNameIndex = selectedRow.iCalendarEventCalendars.firstIndex(where: {$0.title == calendar.title})
+                            if selectedClock.iCalendarEventCalendars.map({$0.title}).contains(calendar.title) {
+                                let fileNameIndex = selectedClock.iCalendarEventCalendars.firstIndex(where: {$0.title == calendar.title})
                                 if fileNameIndex != nil {
-                                    selectedRow.iCalendarEventCalendars.remove(at: fileNameIndex!)
+                                    selectedClock.iCalendarEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
                                 let desiredEventCalendar: EKCalendar? = ASAEKEventManager.shared.allEventCalendars().first(where: {eventCalendar
                                                                                                                                     in
                                                                                                                             eventCalendar.title == calendar.title})
                                 if desiredEventCalendar != nil {
-                                    selectedRow.iCalendarEventCalendars.append(desiredEventCalendar!)
+                                    selectedClock.iCalendarEventCalendars.append(desiredEventCalendar!)
                                 }
                             }
                         }
@@ -277,6 +278,6 @@ struct ASAICalendarEventCalendarCell:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASAClock.generic, now: Date(), shouldShowTime: true, deleteable: true, forAppleWatch: true)
+        ASAClockDetailView(selectedRow: ASAClock.generic, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true)
     }
 }

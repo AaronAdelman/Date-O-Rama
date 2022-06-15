@@ -98,9 +98,9 @@ struct ASAClocksTab: View {
                         //                        Toggle("Show time to next day", isOn: $shouldShowTimeToNextDay)
                     } // DisclosureGroup
                     
-                    if ASAEKEventManager.shared.shouldUseEKEvents {
-                        ASANewExternalEventButton(now: now)
-                    }
+//                    if ASAEKEventManager.shared.shouldUseEKEvents {
+//                        ASANewExternalEventButton(now: now)
+//                    }
                     
                     switch self.primaryMainRowsGroupingOption {
                     case .byFormattedDate:
