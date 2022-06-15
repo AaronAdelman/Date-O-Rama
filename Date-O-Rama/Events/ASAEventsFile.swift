@@ -21,7 +21,7 @@ import SwiftUI
 // MARK: - ASAEventsFile
 
 struct ASAEventsFile: Codable {
-    var titles:  Dictionary<String, String>
+    var titles:  Dictionary<String, String> // A key is a language code, the corresponding value being the title in that language.  If a key is "*", then the corresponding value is a country/region code which is automatically localized to the appropriate name of the country/region.
     var defaultLocale:  String
     
     var calendarColor: Color
