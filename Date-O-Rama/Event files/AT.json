@@ -1,10 +1,12 @@
 {
     "titles": {"*": "AT"},
+    "//": "Austria",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
         {"inherits": "National Day", "type": "1D", "start": {"mon": 10, "d": 26}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 2}},
 
     ]
 }

@@ -5,5 +5,6 @@
     "calendarColor": {"red": 0.00, "green": 0.66, "blue": 0.81},
     "eventSpecifications": [
         {"type": "1D", "start": {"mon": 6, "wkd": [6], "wkdRecurrence": 1}, "titles": {"en": "Randol Fawkes Labor Day"}, "urls": {"en": "https://nationaltoday.com/randol-fawkes-labour-day/"}, "1st": {"era": 1, "y": 2013}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}},
     ]
 }

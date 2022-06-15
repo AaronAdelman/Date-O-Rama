@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "AR"},
+    "//": "Argentina",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.42, "green": 0.64, "blue": 0.89},
+    "eventSpecifications": [
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}},
+    ]
+}
+

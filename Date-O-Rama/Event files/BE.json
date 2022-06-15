@@ -1,5 +1,6 @@
 {
     "titles": {"*": "BE"},
+    "//": "Belgium",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
@@ -14,6 +15,8 @@
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 2}},
+
     ]
 }
 

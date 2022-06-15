@@ -1,5 +1,6 @@
 {
     "titles": {"*": "US"},
+    "//": "United States of America",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},

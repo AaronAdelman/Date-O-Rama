@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "DZ"},
+    "//": "Algeria",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.0, "green": 0.48, "blue": 0.2},
+    "eventSpecifications": [
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}},
+    ]
+}
+

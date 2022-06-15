@@ -63,6 +63,7 @@ struct ASAClockCell: View {
 // MARK: -
 
 enum ASAClockCellBodyDetailType {
+    case none
     case clockDetail
     case newEvent
 }
@@ -85,7 +86,7 @@ struct ASAClockCellBody:  View {
     @Binding var allDayEventVisibility: ASAClockCellDateEventVisibility
     
     @State var showingDetailView: Bool = false
-    @State var detailType = ASAClockCellBodyDetailType.newEvent
+    @State var detailType = ASAClockCellBodyDetailType.none
 
 #if os(watchOS)
     let compact = true
@@ -213,7 +214,10 @@ struct ASAClockCellBody:  View {
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         VStack {
                             HStack {
-                                Button(action: {showingDetailView = false}) {
+                                Button(action: {
+                                    showingDetailView = false
+                                    detailType = .none
+                                }) {
                                     ASACloseBoxImage()
                                 }
                                 Spacer()
@@ -269,7 +273,9 @@ struct ASAClockCellBody:  View {
                             VStack {
                                 HStack {
                                     Button(action: {
-                                        showingDetailView = false}) {
+                                        showingDetailView = false
+                                        detailType = .none
+                                    }) {
                                         ASACloseBoxImage()
                                     }
                                     Spacer()

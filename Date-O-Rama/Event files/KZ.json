@@ -1,0 +1,12 @@
+{
+    "titles": {"*": "KZ"},
+    "//": "Kazakhstan",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.00, "green": 0.68, "blue": 0.78},
+    "eventSpecifications": [
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 5, "d": 7}},
+    ]
+}
+
+

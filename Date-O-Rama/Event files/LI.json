@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "LI"},
+    "//": "Liechtenstein",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.00, "green": 0.24, "blue": 0.65},
+    "eventSpecifications": [
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
+    ]
+}
+
