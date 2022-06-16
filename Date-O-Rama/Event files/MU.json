@@ -6,6 +6,6 @@
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 12, "mon": 3}, "titles": {"en": "Mauritius Day"}},
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
-
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
     ]
 }

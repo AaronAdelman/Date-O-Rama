@@ -8,6 +8,7 @@
         {"inherits": "Freedom Day", "type": "1D", "start": {"mon": 4, "d": 27}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)"}},
         {"type": "1D", "start": {"mon": 12, "d": 16}, "titles": {"en": "Day of Reconciliation"}, "1st": {"era": 1, "y": 1994}, "urls": {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, "emoji": "🫶"},
         {"type": "1D", "start": {"mon": 6, "d": 16}, "titles": {"en": "Youth Day"}, "1st": {"era": 1, "y": 1976}, "urls": {"en": "https://www.gov.za/youth-day"}, "emoji": "👦👧"},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
     ]
 }
 

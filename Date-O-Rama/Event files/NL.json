@@ -1,5 +1,6 @@
 {
     "titles": {"*": "NL"},
+    "//": "Netherlands",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
@@ -10,6 +11,7 @@
         {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
         {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 5, "d": 5}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
 
     ]
 }

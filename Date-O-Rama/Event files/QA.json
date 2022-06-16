@@ -1,11 +1,10 @@
 {
-    "titles": {"*": "LK"},
-    "//": "Sri Lanka",
+    "titles": {"*": "QA"},
+    "//": "Qatar",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 1.00, "green": 0.82, "blue": 0.00},
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        {"inherits": "Independence Day", "type": "1D", "start": {"d": 4, "mon": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
     ]
 }

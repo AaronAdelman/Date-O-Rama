@@ -38,6 +38,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
         {"type": "1D", "start": {"mon": 7, "d": 13, "thruD": 14, "wkd": [2]}, "titles": {"en": "Orangemen’s Day Holiday"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
         {"type": "1D", "start": {"mon": 12, "d": 27, "thruD": 29, "wkd": [2]}, "titles": {"en": "Substitute Bank Holiday for Christmas Day"}},
-        
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
     ]
 }
