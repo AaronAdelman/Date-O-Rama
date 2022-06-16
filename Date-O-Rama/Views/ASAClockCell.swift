@@ -98,7 +98,7 @@ struct ASAClockCellBody:  View {
         } // get
     } // var compact
     
-    @State private var action:  EKEventEditViewAction?
+    @State private var action:  EKEventEditViewAction? = nil
     @ObservedObject var eventManager = ASAEKEventManager.shared
 #endif
     

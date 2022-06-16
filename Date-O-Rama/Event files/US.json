@@ -126,7 +126,7 @@
         {"titles": {"en": "Harriet Tubman Day"}, "type": "1D", "start": {"mon": 3, "d": 10}, "1st": {"type": "1D", "era": 1, "y": 1990}, "urls": {"en": "https://en.wikipedia.org/wiki/Harriet_Tubman_Day"}},
         {"inherits": "Malcolm X Day", "type": "1D", "start": {"mon": 5, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 2015}},
         {"inherits": "Malcolm X Day", "type": "1D", "start": {"mon": 5, "wkd": [6], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1979}, "locations": {"en": "Berkeley, California", "he": "ברקלי (קליפורניה)"}},
-        {"titles": {"en": "Juneteenth", "fr": "Juin-dix-neuvième"}, "notes": {"en": "Juneteenth National Independence Day\nJubilee Day\nEmancipation Day\nFreedom Day\nBlack Independence Day"}, "type": "1D", "start": {"mon": 6, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 1886}, "urls": {"en": "https://en.wikipedia.org/wiki/Juneteenth"}},
+        {"titles": {"en": "Juneteenth", "fr": "Juin-dix-neuvième"}, "notes": {"en": "Juneteenth National Independence Day\nJubilee Day\nEmancipation Day\nFreedom Day\nBlack Independence Day"}, "type": "1D", "start": {"mon": 6, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 1886}, "urls": {"en": "https://www.daysoftheyear.com/days/juneteenth/"}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "Earth Day", "type": "1D", "start": {"mon": 4, "d": 22}, "1st": {"era": 1, "y": 1970}},
         {"inherits": "May Day", "type": "1D", "start": {"mon": 5, "d": 1}},
