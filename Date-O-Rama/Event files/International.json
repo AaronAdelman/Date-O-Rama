@@ -491,5 +491,6 @@
         {"type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Odd Socks Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaltoday.com/odd-socks-day/"}, "emoji": "🧦"},
         {"inherits": "Antarctica Day", "type": "1D", "start": {"mon": 12, "d": 1}, "1st": {"era": 1, "y": 2010}},
         {"inherits": "Nowruz", "type": "1D", "start": {"equinoxOrSolstice": "Mar"}},
+        {"type": "1D", "start": {"mon": 5, "d": 28}, "1st": {"era": 1, "y": 1961}, "titles": {"en": "Amnesty International Day"}, "urls": {"en": "https://www.ngo-monitor.org/ngos/amnesty_international/"}},
     ]
 }

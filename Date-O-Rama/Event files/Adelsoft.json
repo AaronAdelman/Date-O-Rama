@@ -1,9 +1,0 @@
-{
-    "titles": {"en": "Adelsoft"},
-    "defaultLocale": "en",
-    "calendarCode": "gre*",
-    "calendarColor": {"red": 0.25, "green": 0.50, "blue": 0.75},
-    "eventSpecifications": [
-        {"titles": {"en": "Brillig"}, "type": "pt", "start": {"h": 16, "min": 0, "s": 0, "ns": 0}}
-    ]
-}
