@@ -52,7 +52,7 @@ struct ASAClockCell: View {
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
             .listRowBackground(backgroundColor
-                                .ignoresSafeArea(edges: .all)
+                .ignoresSafeArea(edges: .all)
             )
         }
 #endif
@@ -87,7 +87,7 @@ struct ASAClockCellBody:  View {
     
     @State var showingDetailView: Bool = false
     @State var detailType = ASAClockCellBodyDetailType.none
-
+    
 #if os(watchOS)
     let compact = true
 #else
@@ -269,29 +269,7 @@ struct ASAClockCellBody:  View {
                             .font(.title)
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
-                        if detailType == .clockDetail {
-                            VStack {
-                                HStack {
-                                    Button(action: {
-                                        showingDetailView = false
-                                        detailType = .none
-                                    }) {
-                                        ASACloseBoxImage()
-                                    }
-                                    Spacer()
-                                } // HStack
-                                ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false)
-                                    .onReceive(processedRow.clock.objectWillChange) { _ in
-                                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
-                                        ASAUserData.shared.savePreferences(code: .clocks)
-                                    }
-                            }
-                        } else if detailType == .newEvent {
-                            ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
-                        } else {
-                            EmptyView()
-                        }
-                        
+                        ASAClockCellMenuView(processedRow: processedRow, now: $now, showingDetailView: $showingDetailView, detailType: $detailType)
                     })
                 }
 #endif
@@ -306,6 +284,45 @@ struct ASAClockCellBody:  View {
         } // VStack
     } // var body
 } // struct ASAClockCellBody
+
+
+#if os(watchOS)
+#else
+struct ASAClockCellMenuView: View {
+    var processedRow:  ASAProcessedClock
+    @Binding var now:  Date
+    @Binding var showingDetailView: Bool
+    @Binding var detailType: ASAClockCellBodyDetailType
+    
+    @State private var action:  EKEventEditViewAction? = nil
+    @ObservedObject var eventManager = ASAEKEventManager.shared
+    
+    var body: some View {
+        if detailType == .clockDetail {
+            VStack {
+                HStack {
+                    Button(action: {
+                        showingDetailView = false
+                        detailType = .none
+                    }) {
+                        ASACloseBoxImage()
+                    }
+                    Spacer()
+                } // HStack
+                ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false)
+                    .onReceive(processedRow.clock.objectWillChange) { _ in
+                        // Clause based on https://troz.net/post/2019/swiftui-data-flow/
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }
+            }
+        } else if detailType == .newEvent {
+            ASAEKEventEditView(action: self.$action, event: nil, eventStore: self.eventManager.eventStore)
+        } else {
+            EmptyView()
+        }
+    }
+}
+#endif
 
 
 struct ASAClockEventVisibilityForEach: View {
@@ -407,7 +424,7 @@ struct ASAClockEventsForEach:  View {
         let shouldShowSecondaryDates = processedRow.calendarCode != .Gregorian
         let rangeStart: Date = processedRow.startOfDay
         let rangeEnd: Date = processedRow.startOfNextDay
-
+        
         ASAEventsForEach(events: events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
     } // var body
 } // struct ASAClockEventsForEach
@@ -419,17 +436,17 @@ struct ASAEventsForEach: View {
     var shouldShowSecondaryDates: Bool
     var rangeStart: Date
     var rangeEnd: Date
-
+    
     var body: some View {
         let secondaryClock = ASAClock.generic
-
+        
         ForEach(events, id: \.eventIdentifier) {
             event
             in
             
             let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
             let (startDateString, endDateString) = self.primaryClock.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
-
+            
             ASALinkedEventCell(event: event, primaryRow: primaryClock, secondaryRow: secondaryClock, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
         } // ForEach
     }

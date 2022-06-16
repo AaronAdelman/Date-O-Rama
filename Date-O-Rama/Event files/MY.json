@@ -5,10 +5,11 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.2, "blue": 0.63},
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 16, "mon": 9}, "titles": {"en": "Malaysia Day"}},
-        {"inherits": "National Day", "type": "1D", "start": {"d": 31, "mon": 8}},
+        {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Malaysia Day"}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 31}},
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"inherits": "*BDay*", "type": "1D", "start": {"mon": 6, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Yang di-Pertuan Agong’s Birthday"}, "urls": {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}},
     ]
 }
 

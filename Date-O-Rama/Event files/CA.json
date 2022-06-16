@@ -41,7 +41,7 @@
         {"inherits": "Tartan Day", "type": "1D", "start": {"d": 6, "mon": 4}, "1st": {"era": 1, "year": 1985}},
         {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2015}},
         {"inherits": "Commonwealth Day", "type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1958}},
-        {"inherits": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"d": 15, "mon": 10}, "1st": {"era": 1, "y": 2005}},
+        {"inherits": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"mon": 10, "d": 15}, "1st": {"era": 1, "y": 2005}},
         {"inherits": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 1995}},
         {"inherits": "Women’s History Month", "type": "1M", "start": {"mon": 10}, "1st": {"era": 1, "y": 1992}},
         {"type": "1M", "start": {"mon": 4}, "titles": {"en": "Dalit History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, "1st": {"era": 1, "y": 2022}},

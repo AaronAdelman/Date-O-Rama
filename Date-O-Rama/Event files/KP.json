@@ -1,5 +1,6 @@
 {
     "titles": {"*": "KP"},
+    "//": "North Korea",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.75, "green": 0.06, "blue": 0.24},
