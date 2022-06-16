@@ -5,6 +5,7 @@
     "calendarColor": {"red": 0.00, "green": 0.19, "blue": 0.53},
     "eventSpecifications": [
         {"inherits": "National Day", "type": "1D", "start": {"mon": 10, "d": 28}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
 
     ]
 }

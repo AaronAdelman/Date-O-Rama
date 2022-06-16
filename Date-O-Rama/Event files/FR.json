@@ -1,5 +1,6 @@
 {
     "titles": {"*": "FR"},
+    "//": "France",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.33, "blue": 0.64},
@@ -10,6 +11,7 @@
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
 
     ]
 }
