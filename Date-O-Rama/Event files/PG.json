@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "PG"},
+    "//": "Papua New Guinea",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 1}},
+    ]
+}

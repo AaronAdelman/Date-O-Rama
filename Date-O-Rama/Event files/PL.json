@@ -1,5 +1,6 @@
 {
     "titles": {"*": "PL"},
+    "//": "Poland",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.82, "green": 0.15, "blue": 0.19},
@@ -9,6 +10,7 @@
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 3}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 11}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 23}},
 
     ]
 }

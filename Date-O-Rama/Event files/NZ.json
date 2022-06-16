@@ -1,5 +1,6 @@
 {
     "titles": {"*": "NZ"},
+    "//": "New Zealand",
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
@@ -7,6 +8,7 @@
         {"inherits": "Anzac Day", "type": "1D", "start": {"d": 25, "mon": 4}, "1st": {"era": 1, "y": 1916}},
         {"inherits": "Commonwealth Day", "type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1958}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 1}},
 
         ]
     }

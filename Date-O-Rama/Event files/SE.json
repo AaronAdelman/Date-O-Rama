@@ -1,5 +1,6 @@
 {
     "titles": {"*": "SE"},
+    "//": "Sweden",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.29, "blue": 0.53},
@@ -12,5 +13,6 @@
         {"inherits": "2nd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}},
         {"inherits": "3rd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
         {"inherits": "4th Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
     ]
 }

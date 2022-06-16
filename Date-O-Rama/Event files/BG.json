@@ -1,10 +1,12 @@
 {
     "titles": {"*": "BG"},
+    "//": "Bulgaria",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.69, "blue": 0.40},
     "eventSpecifications": [
         {"inherits": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 12, "d": 26}},
     ]
 }

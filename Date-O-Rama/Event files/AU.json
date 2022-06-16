@@ -1,5 +1,6 @@
 {
     "titles": {"*": "AU"},
+    "//": "Australia",
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
@@ -11,6 +12,6 @@
         {"inherits": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "1st": {"era": 1, "y": 2000}},
         {"inherits": "Tartan Day", "type": "1D", "start": {"d": 1, "mon": 7}, "1st": {"era": 1, "year": 1989}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
-
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 1}},
         ]
     }

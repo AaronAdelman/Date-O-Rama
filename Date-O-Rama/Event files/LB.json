@@ -1,11 +1,10 @@
 {
-    "titles": {"*": "EG"},
-    "//": "Egypt",
+    "titles": {"*": "LB"},
+    "//": "Lebanon",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
     "eventSpecifications": [
-        {"titles": {"en": "Evacuation Day (Eid el-Galaa)"}, "type": "1D", "start": {"mon": 6, "d": 18}, "1st": {"era": 1, "y": 1956}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 21}},
     ]
 }
