@@ -1,11 +1,13 @@
 {
     "titles": {"*": "ZA"},
+    "//": "South Africa",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.88, "green": 0.24, "blue": 0.19},
     "eventSpecifications": [
-        {"inherits": "Freedom Day", "type": "1D", "start": {"d": 27, "mon": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)"}},
-        {"type": "1D", "start": {"d": 16, "mon": 12}, "titles": {"en": "Day of Reconciliation"}, "1st": {"era": 1, "y": 1994}, "urls": {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, "emoji": "🫶"},
+        {"inherits": "Freedom Day", "type": "1D", "start": {"mon": 4, "d": 27}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_Day_(South_Africa)"}},
+        {"type": "1D", "start": {"mon": 12, "d": 16}, "titles": {"en": "Day of Reconciliation"}, "1st": {"era": 1, "y": 1994}, "urls": {"en": "https://www.daysoftheyear.com/days/day-of-reconciliation/"}, "emoji": "🫶"},
+        {"type": "1D", "start": {"mon": 6, "d": 16}, "titles": {"en": "Youth Day"}, "1st": {"era": 1, "y": 1976}, "urls": {"en": "https://www.gov.za/youth-day"}, "emoji": "👦👧"},
     ]
 }
 
