@@ -370,14 +370,16 @@ struct ASAEventDetailDateTimeSection: View {
 
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)
-                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
-                    Text(dateFormatter().string(from: event.startDate))
+//                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
+                if !(row.isICalendarCompatible && row.locationData.timeZone.isCurrent) {
+                  Text(dateFormatter().string(from: event.startDate))
                 }
             } else {
                 let DASH = " — "
                 Text(startDateString + DASH + endDateString)
-                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
-                    let dateFormatter = dateFormatter()
+//                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
+                if !(row.isICalendarCompatible && row.locationData.timeZone.isCurrent) {
+                  let dateFormatter = dateFormatter()
                     let startDateString = dateFormatter.string(from: event.startDate)
                     let endDateString = dateFormatter.string(from: event.endDate)
 
