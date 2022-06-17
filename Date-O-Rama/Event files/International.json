@@ -394,8 +394,8 @@
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "National Play Monopoly Day"}, "emoji": "🏠🏨", "urls": {"en": "https://www.daysoftheyear.com/days/play-monopoly-day/"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "Women’s Entrepreneurship Day"}, "notes": {"en": "WED"}, "1st": {"era": 1, "y": 2014}, "emoji": "👩‍💼", "urls": {"en": "https://nationaltoday.com/womens-entrepreneurship-day/"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "World Day for Prevention of Child Abuse"}, "1st": {"era": 1, "y": 2000}, "urls": {"en": "https://www.apa.org/pi/prevent-violence/programs/international-day"}},
-        {"type": "1D", "start": {"d": 20, "mon": 11}, "titles": {"en": "Transgender Day of Remembrance"}, "notes": {"en": "TDoR\nInternational Transgender Day of Remembrance"}, "1st": {"era": 1, "y": 1999}, "emoji": "🏳️‍⚧️", "urls": {"en": "https://en.wikipedia.org/wiki/Transgender_Day_of_Remembrance"}},
-        {"type": "1D", "start": {"d": 20, "mon": 11}, "titles": {"en": "National Beautiful Day"}},
+        {"type": "1D", "start": {"mon": 11, "d": 20}, "titles": {"en": "Transgender Day of Remembrance"}, "notes": {"en": "TDoR\nInternational Transgender Day of Remembrance"}, "1st": {"era": 1, "y": 1999}, "emoji": "🏳️‍⚧️", "urls": {"en": "https://en.wikipedia.org/wiki/Transgender_Day_of_Remembrance"}},
+        {"type": "1D", "start": {"mon": 11, "d": 20}, "titles": {"en": "National Beautiful Day"}},
         {"type": "1D", "start": {"d": 21, "mon": 11}, "titles": {"en": "National Stuffing Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/stuffing-day/"}},
         {"type": "1D", "start": {"d": 21, "mon": 11}, "titles": {"en": "National Red Mitten Day"}, "1st": {"era": 1, "y": 2011}, "emoji": "🇨🇦", "urls": {"en": "https://www.daysoftheyear.com/days/red-mitten-day/"}},
         {"type": "1D", "start": {"d": 21, "mon": 11}, "titles": {"en": "World Hello Day"}, "1st": {"era": 1, "y": 1973}, "emoji": "🙋‍♂️🙋‍♀️", "notes": {"en": "This observance is meant to promote peace through communication.  Sadly, some people prefer to communicate clearly that they are interested in war and violence."}, "urls": {"en": "https://www.daysoftheyear.com/days/hello-day/"}},
@@ -492,5 +492,7 @@
         {"inherits": "Antarctica Day", "type": "1D", "start": {"mon": 12, "d": 1}, "1st": {"era": 1, "y": 2010}},
         {"inherits": "Nowruz", "type": "1D", "start": {"equinoxOrSolstice": "Mar"}},
         {"type": "1D", "start": {"mon": 5, "d": 28}, "1st": {"era": 1, "y": 1961}, "titles": {"en": "Amnesty International Day"}, "urls": {"en": "https://www.ngo-monitor.org/ngos/amnesty_international/"}},
+        {"type": "1D", "start": {"mon": 6, "d": 16}, "titles": {"en": "International Day of the African Child"}, "1st": {"era": 1, "y": 1976}, "urls": {"en": "https://nationaltoday.com/international-day-of-the-african-child/"}, "emoji": "👦👧"},
+
     ]
 }

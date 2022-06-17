@@ -1,0 +1,9 @@
+{
+    "titles": {"en": "Bahá’í", "he": "האמונה הבהאית"},
+    "defaultLocale": "en",
+    "calendarCode": "gre*",
+    "calendarColor": {"red": 0.96, "green": 0.76, "blue": 0.79},
+    "eventSpecifications": [
+        {"type": "1D", "start": {"mon": 6, "d": 12}, "1st": {"era": 1, "y": 1957}, "titles": {"en": "Race Unity Day"}, "notes": {"en": "Race Unity Day"}, "urls": {"en": "https://nationaltoday.com/race-unity-day/"}, "emoji": "🫶"},
+    ]
+}

@@ -130,5 +130,7 @@
         {"type": "1D", "start": {"d": 25, "mon": 12}, "titles": {"en": "Good Governance Day"}, "1st": {"era": 1, "y": 2014}, "urls": {"en": "https://en.wikipedia.org/wiki/Good_Governance_Day"}},
         {"type": "1D", "start": {"d": 31, "mon": 12}, "titles": {"en": "National Unity Day"}, "1st": {"era": 1, "y": 2014}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Unity_Day_(India)"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"type": "1D", "start": {"mon": 6, "d": 13}, "titles": {"en": "Maharana Pratap Jayanti"}, "urls": {"en": "https://nationaltoday.com/maharana-pratap-jayanti/"}},
+
     ]
 }

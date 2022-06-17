@@ -41,7 +41,7 @@
         {"titles": {"en": "The Leave-Taking of Pascha"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 38}},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"titles": {"en": "The Fathers of the First Ecumenical Council"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 42}},
-        {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
+        {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}, "urls": {"en": "https://nationaltoday.com/orthodox-pentecost-sunday/"}},
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 56}},
         
         {"inherits": "Nativity of Mary", "type": "1D", "start": {"mon": 9, "d": 8}},
@@ -62,5 +62,8 @@
         {"inherits": "Feast of Saints Peter and Paul", "type": "1D", "start": {"mon": 6, "d": 29}},
         {"inherits": "Beheading of St. John the Baptist", "type": "1D", "start": {"mon": 8, "d": 29}},
         {"titles": {"en": "Intercession of the Theotokos"}, "type": "1D", "start": {"mon": 10, "d": 1}},
+        
+        {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}, "urls": {"en": "https://nationaltoday.com/holy-spirit-monday/"}},
+
     ]
 }

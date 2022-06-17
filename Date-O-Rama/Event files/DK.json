@@ -9,5 +9,7 @@
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"type": "1D", "start": {"mon": 6, "d": 7}, "titles": {"en": "Birthday of Prince Joachim"}, "inherits": "*BDay*", "urls": {"en": "https://webplus.info/index.php?page=340&event=56335"}},
         {"type": "1D", "start": {"mon": 6, "d": 15}, "titles": {"en": "Day of Valdemar and Reunion Day"}, "urls": {"en": "https://www.andtodayis.com/en/event/Day-of-Valdemar-and-Reunion-Day-in-Denmark"}, "1st": {"era": 1, "y": 1219}},
+        {"type": "1D", "start": {"mon": 6, "d": 11}, "titles": {"en": "Birthday of Prince Henrik"}, "inherits": "*BDay*", "urls": {"en": "https://webplus.info/index.php?page=340&event=57737"}},
+
     ]
 }

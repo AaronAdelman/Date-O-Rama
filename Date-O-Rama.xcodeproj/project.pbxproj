@@ -293,6 +293,8 @@
 		A59FB18E270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
 		A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
+		A5A6405B285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */; };
+		A5A6405C285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */; };
 		A5A6FD4D27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6FD4C27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift */; };
 		A5A6FD4E27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6FD4C27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift */; };
 		A5A6FD5027BEC504003595D5 /* ASADateFormatPatternComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A6FD4F27BEC504003595D5 /* ASADateFormatPatternComponent.swift */; };
@@ -998,6 +1000,7 @@
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
 		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
+		A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Bahá’í Faith (Gregorian).json"; sourceTree = "<group>"; };
 		A5A6FD4C27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSupportingBlankMonths.swift; sourceTree = "<group>"; };
 		A5A6FD4F27BEC504003595D5 /* ASADateFormatPatternComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatPatternComponent.swift; sourceTree = "<group>"; };
 		A5A9666225A31DA200CF158F /* ASADatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADatePicker.swift; sourceTree = "<group>"; };
@@ -1381,6 +1384,7 @@
 				A5D3D7E327FA20CC0099718A /* AU.json */,
 				A5E292EB285A62B600925EBD /* AW.json */,
 				A5D85098280C8E7A005247BD /* BA.json */,
+				A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */,
 				A5E292F1285A650100925EBD /* BB.json */,
 				A5E8BAE227FCCF0B0018CD36 /* BD.json */,
 				A581B884284E580A00407D68 /* BE.json */,
@@ -2105,6 +2109,7 @@
 				A5EFFFA7285B7F2E00F2205F /* LC.json in Resources */,
 				A5EFFFF4285B895500F2205F /* FJ.json in Resources */,
 				A5E292D3285A59BB00925EBD /* HN.json in Resources */,
+				A5A6405C285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */,
 				A5EFFF5C285B5F9B00F2205F /* GY.json in Resources */,
 				A581B87D284E487200407D68 /* HU.json in Resources */,
 				A5EFFFBF285B811A00F2205F /* UG.json in Resources */,
@@ -2390,6 +2395,7 @@
 				A5EFFF42285B5CE800F2205F /* CR.json in Resources */,
 				A5EB4F982850F6A200A32FB1 /* Sunni Islam (times, Karachi).json in Resources */,
 				A5EFFF59285B5F9B00F2205F /* GG.json in Resources */,
+				A5A6405B285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */,
 				A5EFFFA8285B7F2E00F2205F /* SG.json in Resources */,
 				A5B6D00E25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A581B87C284E487200407D68 /* HU.json in Resources */,
