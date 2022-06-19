@@ -20,7 +20,7 @@ struct ASAClockCell: View {
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
-//    var shouldShowPlaceName:  Bool
+    //    var shouldShowPlaceName:  Bool
     var shouldShowTimeZone:  Bool
     
     var shouldShowTime:  Bool
@@ -35,26 +35,20 @@ struct ASAClockCell: View {
     
     var body: some View {
 #if os(watchOS)
-        ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar,
-//                         shouldShowPlaceName: shouldShowPlaceName,
-                         shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+        ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
         if isForComplications {
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar,
-//                                 shouldShowPlaceName: shouldShowPlaceName,
-                                 shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+                ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  true, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
                     .frame(minHeight:  MINIMUM_HEIGHT)
                     .colorScheme(.dark)
             }
         } else {
             let backgroundColor = indexIsOdd ? Color("oddBackground") : Color("evenBackground")
             HStack(alignment: .firstTextBaseline) {
-                ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar,
-//                                 shouldShowPlaceName: shouldShowPlaceName,
-                                 shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+                ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowFormattedDate: shouldShowFormattedDate, shouldShowCalendar: shouldShowCalendar, shouldShowTimeZone: shouldShowTimeZone, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications: isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
                     .frame(minHeight:  MINIMUM_HEIGHT)
             }
             .listRowBackground(backgroundColor
@@ -79,7 +73,7 @@ struct ASAClockCellBody:  View {
     @Binding var now:  Date
     var shouldShowFormattedDate:  Bool
     var shouldShowCalendar:  Bool
-//    var shouldShowPlaceName:  Bool
+    //    var shouldShowPlaceName:  Bool
     var shouldShowTimeZone:  Bool
     
     var shouldShowTime:  Bool
@@ -138,8 +132,8 @@ struct ASAClockCellBody:  View {
                         if shouldShowTime {
                             HStack {
                                 if
-//                                    !shouldShowPlaceName &&
-                                        processedRow.usesDeviceLocation {
+                                    //                                    !shouldShowPlaceName &&
+                                    processedRow.usesDeviceLocation {
                                     ASALocationSymbol()
                                 }
                                 
@@ -151,8 +145,8 @@ struct ASAClockCellBody:  View {
                     } else {
                         HStack {
                             if
-//                                !shouldShowPlaceName &&
-                                    processedRow.usesDeviceLocation {
+                                //                                !shouldShowPlaceName &&
+                                processedRow.usesDeviceLocation {
                                 ASALocationSymbol()
                             }
                             
@@ -162,8 +156,8 @@ struct ASAClockCellBody:  View {
                         }
                     }
                     
-//                    ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
-//                    )
+                    //                    ASAPlaceSubcell(processedRow:  processedRow, shouldShowPlaceName:  shouldShowPlaceName
+                    //                    )
                     
 #if os(watchOS)
 #else
@@ -467,8 +461,6 @@ struct ASAEventsForEach: View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true,
-//                     shouldShowPlaceName: true,
-                     shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
+        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
     }
 } // struct ASAClockCell_Previews

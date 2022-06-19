@@ -14,9 +14,9 @@ import EventKitUI
 struct ASAEventsTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var date = Date()
-
+    
     @Environment(\.horizontalSizeClass) var sizeClass
-
+    
     @State private var showingPreferences:  Bool = false
     @State private var showingEventCalendarChooserView = false
     
@@ -49,38 +49,38 @@ struct ASAEventsTab: View {
             secondaryRowUUIDString = newValue.uuid.uuidString
         } // set
     } // var secondaryRow
-
+    
     var shouldHideTimesInSecondaryRow:  Bool {
         get {
             let primaryRowStartOfDay = self.primaryRow.startOfDay(date: date)
             let primaryRowStartOfNextDay = self.primaryRow.startOfNextDay(date: date)
             let secondaryRowStartOfDay = self.secondaryRow.startOfDay(date: date)
             let secondaryRowStartOfNextDay = self.secondaryRow.startOfNextDay(date: date)
-
+            
             let result: Bool = primaryRowStartOfDay == secondaryRowStartOfDay && primaryRowStartOfNextDay == secondaryRowStartOfNextDay
             //            debugPrint(#file, #function, "Primary row:", primaryRowStartOfDay, primaryRowStartOfNextDay, "Secondary row:", secondaryRowStartOfDay, secondaryRowStartOfNextDay)
             return result
         }
     }
-
+    
     @AppStorage("SHOULD_SHOW_SECONDARY_DATES_KEY") var eventsViewShouldShowSecondaryDates: Bool = true
-
+    
     @AppStorage("PRIMARY_ROW_UUID_KEY") var primaryRowUUIDString: String = UUID().uuidString
     @AppStorage("SECONDARY_ROW_UUID_KEY") var secondaryRowUUIDString: String = UUID().uuidString
-
+    
     @State var isNavigationBarHidden:  Bool = true
     
     fileprivate func enoughRowsToShowSecondaryDates() -> Bool {
         return self.userData.numberOfMainClocks > 1
     }
-
+    
     let SECONDARY_ROW_FONT_SIZE:  CGFloat = 22.0
-
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0.0) {
                 ASADatePicker(date: $date, primaryRow: self.primaryRow)
-
+                
                 List {
                     Section {
                         NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $primaryRowUUIDString)) {
@@ -99,7 +99,7 @@ struct ASAEventsTab: View {
                                 }
                             }
                         }
-
+                        
                         if eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
                             NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $secondaryRowUUIDString)) {
                                 VStack(alignment:  .leading) {
@@ -120,11 +120,11 @@ struct ASAEventsTab: View {
                                 }
                             }
                         }
-
+                        
                         if ASAEKEventManager.shared.shouldUseEKEvents {
                             ASANewExternalEventButton(now: self.date)
                         }
-
+                        
                         DisclosureGroup("Show event preferences", isExpanded: $showingPreferences) {
                             Button(action: {
                                 let tempRowUUIDString = self.primaryRowUUIDString
@@ -143,13 +143,13 @@ struct ASAEventsTab: View {
                                     Text("Show secondary dates")
                                 }
                             }
-
+                            
                             if !ASAEKEventManager.shared.userHasPermission {
                                 Text("NO_EXTERNAL_EVENTS_PERMISSION").foregroundColor(.gray)
                             }
                         } // if showingPreferences
                     } // Section
-
+                    
                     let rangeStart = self.primaryRow.startOfDay(date: date)
                     let rangeEnd = self.primaryRow.startOfNextDay(date: date)
                     Section {
@@ -159,7 +159,7 @@ struct ASAEventsTab: View {
                             
                             let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
                             let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
-
+                            
                             ASALinkedEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, now: $date, rangeStart: rangeStart, rangeEnd: rangeEnd, isForClock: false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString:  endDateString)
                                 .listRowInsets(.zero)
                         } // ForEach

@@ -352,59 +352,6 @@ extension Array where Element == ASAProcessedClock {
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
     }
-
-//    func sorted(_ groupingOption:  ASAClocksViewGroupingOption) -> Array<ASAProcessedClock> {
-//        switch groupingOption {
-////        case .eastToWest:
-////            return self.sorted {
-////                $0.longitude > $1.longitude
-////            }
-////
-////        case .westToEast:
-////            return self.sorted {
-////                $0.longitude < $1.longitude
-////            }
-////
-////        case .northToSouth:
-////            return self.sorted {
-////                $0.latitude > $1.latitude
-////            }
-////
-////        case .southToNorth:
-////            return self.sorted {
-////                $0.latitude < $1.latitude
-////            }
-//
-////        case .byFormattedDate:
-////            return self.sorted {
-////                $0.dateString < $1.dateString
-////            }
-//
-//        case .byCalendar:
-//            return self.sorted {
-//                $0.calendarString < $1.calendarString
-//            }
-//
-//        case .byPlaceName:
-//            return self.sorted {
-//                $0.locationString < $1.locationString
-//            }
-//
-////        case .byCountry:
-////            return self.sorted {
-////                $0.clock.locationData.country ?? noCountryString() < $1.clock.locationData.country ?? noCountryString()
-////            }
-////
-////        case .byTimeZoneWestToEast:
-////            return self.sorted {
-////                $0.clock.locationData.timeZone.secondsFromGMT() < $1.clock.locationData.timeZone.secondsFromGMT()
-////            }
-////        case .byTimeZoneEastToWest:
-////            return self.sorted {
-////                $0.clock.locationData.timeZone.secondsFromGMT() > $1.clock.locationData.timeZone.secondsFromGMT()
-////            }
-//        } // switch groupingOption
-//    } // func sorted(_ groupingOption:  ASAClocksViewGroupingOption, now:  Date) -> Array<ASAProcessedClock>
     
     var sortedByCalendar: Array<ASAProcessedClock> {
         return self.sorted {
