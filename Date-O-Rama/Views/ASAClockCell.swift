@@ -31,7 +31,7 @@ struct ASAClockCell: View {
     
     var body: some View {
 #if os(watchOS)
-        ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
+        ASAClockCellBody(processedRow: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar,  canSplitTimeFromDate: processedClock.canSplitTimeFromDate, isForComplications:  isForComplications, eventVisibility: $eventVisibility, allDayEventVisibility: $allDayEventVisibility)
 #else
         let MINIMUM_HEIGHT: CGFloat = 40.0
         
