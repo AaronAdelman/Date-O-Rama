@@ -6,5 +6,8 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"titles": {"en": "Farmer Day", "es": "Dia del Campesino"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/farmer-day/"}, "emoji": "👨‍🌾👩‍🌾", "start": {"era": 1, "y": 1969}},
+        {"titles": {"en": "Inti Raymi"}, "notes": {"en": "Festival of the Sun"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/inti-raymi/"}, "start": {"era": 1, "y": 1944}},
+
     ]
 }
