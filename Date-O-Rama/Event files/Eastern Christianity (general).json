@@ -58,7 +58,7 @@
         {"titles": {"en": "Dormition of the Mother of God"}, "type": "1D", "start": {"mon": 8, "d": 15}},
 
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
-        {"titles": {"en": "Nativity of John the Baptist"}, "type": "1D", "start": {"mon": 6, "d": 24}},
+        {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
         {"inherits": "Feast of Saints Peter and Paul", "type": "1D", "start": {"mon": 6, "d": 29}},
         {"inherits": "Beheading of St. John the Baptist", "type": "1D", "start": {"mon": 8, "d": 29}},
         {"titles": {"en": "Intercession of the Theotokos"}, "type": "1D", "start": {"mon": 10, "d": 1}},

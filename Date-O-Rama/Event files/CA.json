@@ -48,7 +48,7 @@
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
+        {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, "1st": {"era": 1, "y": 1925}},
 
     ]
 }

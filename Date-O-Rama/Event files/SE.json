@@ -14,5 +14,7 @@
         {"inherits": "3rd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
         {"inherits": "4th Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
+        {"titles": {"en": "Midsummer Eve"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/midsummer/"}},
+
     ]
 }

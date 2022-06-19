@@ -7,6 +7,7 @@
     "eventSpecifications": [
         {"titles": {"en": "Proclamation Day of the Republic of Latvia"}, "type": "1D", "start": {"mon": 11, "d": 18}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 2}},
+        {"titles": {"en": "Jani"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/jani/"}, "1st": {"era": 1, "y": 1990}},
 
     ]
 }
