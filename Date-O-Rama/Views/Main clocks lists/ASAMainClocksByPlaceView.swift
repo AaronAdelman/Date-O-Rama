@@ -10,21 +10,21 @@ import SwiftUI
 
 struct ASAMainClocksByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
-    var primaryGroupingOption:  ASAClocksViewGroupingOption
-    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
+//    var primaryGroupingOption:  ASAClocksViewGroupingOption
+//    @Binding var secondaryGroupingOption:  ASAClocksViewGroupingOption
     @Binding var rows:  Array<ASAClock>
     var processedRowsByPlace: Dictionary<String, Array<ASAProcessedClock>> {
         get {
-            switch primaryGroupingOption {
-            case .byPlaceName:
+//            switch primaryGroupingOption {
+//            case .byPlaceName:
                 return self.rows.processedRowsByPlaceName(now: now)
-                
-            case .byCountry:
-                return self.rows.processedRowsByCountry(now: now)
-                
-            default:
-                return [:]
-            }
+//
+//            case .byCountry:
+//                return self.rows.processedRowsByCountry(now: now)
+//
+//            default:
+//                return [:]
+//            }
         } // get
     }
     @Binding var now:  Date
@@ -33,15 +33,15 @@ struct ASAMainClocksByPlaceView:  View {
     
     func keys() -> Array<String> {
         var here: String?
-        if primaryGroupingOption == .byPlaceName {
+//        if primaryGroupingOption == .byPlaceName {
             #if os(watchOS)
             here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
             #else
             here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
             #endif
-        } else {
-            here = ASALocationManager.shared.deviceLocationData.country
-        }
+//        } else {
+//            here = ASALocationManager.shared.deviceLocationData.country
+//        }
         
         return Array(self.processedRowsByPlace.keys).sorted(by: {
             element1, element2
@@ -58,10 +58,6 @@ struct ASAMainClocksByPlaceView:  View {
         })
     } // func keys() -> Array<String>
     
-    fileprivate func shouldShowPlaceName() -> Bool {
-        return self.primaryGroupingOption != .byPlaceName
-    }
-    
     var body:  some View {
         let processedRows: [String : [ASAProcessedClock]] = self.processedRowsByPlace
         let keys: [String] = self.keys()
@@ -73,17 +69,21 @@ struct ASAMainClocksByPlaceView:  View {
                 Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
             }) {
-                let sortedProcessedRows = processedRows[key]!.sorted(secondaryGroupingOption)
+                let sortedProcessedRows = processedRows[key]!.sortedByCalendar
                 ForEach(sortedProcessedRows.indices, id: \.self) {
                     index
                     in
                     let processedRow = sortedProcessedRows[index]
                     
                     #if os(watchOS)
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
+                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true,
+//                                 shouldShowPlaceName: false,
+                                 shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
                     #else
                     let indexIsOdd = index % 2 == 1
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: shouldShowPlaceName(), shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true,
+//                                 shouldShowPlaceName: false,
+                                 shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
                     #endif
                 }
             }
@@ -94,6 +94,8 @@ struct ASAMainClocksByPlaceView:  View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainClocksByPlaceView(primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.eastToWest), rows: .constant([ASAClock.generic]), now: .constant(Date()))
+        ASAMainClocksByPlaceView(
+//            primaryGroupingOption: .byPlaceName, secondaryGroupingOption: .constant(.byCalendar),
+            rows: .constant([ASAClock.generic]), now: .constant(Date()))
     }
 }

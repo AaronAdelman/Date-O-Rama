@@ -39,7 +39,9 @@ struct ASAComplicationClocksTab: View {
                     ForEach(ASAClockArrayKey.complicationSections, id:  \.self) {complicationKey in
                         Section(header:  Text(NSLocalizedString(complicationKey.rawValue, comment: ""))) {
                             ForEach(self.row(with: complicationKey), id:  \.uuid) { row in
-                                ASAClockCell(processedClock: ASAProcessedClock(clock: row, now: now, isForComplications: true), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowPlaceName: true, shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false)
+                                ASAClockCell(processedClock: ASAProcessedClock(clock: row, now: now, isForComplications: true), now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true,
+//                                             shouldShowPlaceName: true,
+                                             shouldShowTimeZone: true, shouldShowTime: false, shouldShowMiniCalendar: false, isForComplications: true, indexIsOdd: false)
                             }
                         }
                     }
