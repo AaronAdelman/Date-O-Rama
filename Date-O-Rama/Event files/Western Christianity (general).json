@@ -99,7 +99,7 @@
         {"titles": {"en": "Feast of St. Romuald"}, "type": "1D", "start": {"mon": 6, "d": 19}},
         {"titles": {"en": "Feast of St. Aloysius Gonzaga"}, "type": "1D", "start": {"mon": 6, "d": 21}},
         {"titles": {"en": "Feast of St. Paulinus of Nola or Saints John Fisher and Thomas More"}, "type": "1D", "start": {"mon": 6, "d": 22}},
-        {"titles": {"en": "St. John’s Eve"}, "type": "1D", "start": {"mon": 6, "d": 23}},
+        {"inherits": "St. John’s Eve", "type": "1D", "start": {"mon": 6, "d": 23}},
         {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
         
         {"titles": {"en": "Feast of St. Cyril of Alexandria"}, "type": "1D", "start": {"mon": 6, "d": 27}},

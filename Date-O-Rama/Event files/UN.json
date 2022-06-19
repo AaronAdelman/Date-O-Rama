@@ -233,6 +233,7 @@
         {"type": "1D", "start": {"mon": 5, "d": 12}, "titles": {"en": "International Nurses Day", "he": "יום האחות הבין־לאומי"}, "1st": {"era": 1, "y": 1965}, "urls": {"en": "https://en.wikipedia.org/wiki/International_Nurses_Day"}, "emoji": "👨‍⚕️👩‍⚕️"},
         {"type": "1D", "start": {"mon": 6, "d": 1}, "titles": {"en": "World Milk Day", "he": "יום החלב הבינלאומי"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-milk-day/"}, "emoji": "🥛", "1st": {"era": 1, "y": 1915}},
         {"type": "1D", "start": {"mon": 6, "d": 18}, "titles": {"en": "International Day for Countering Hate Speech"}, "urls": {"en": "https://nationaltoday.com/international-day-for-countering-hate-speech/"}},
+        {"type": "1D", "start": {"mon": 6, "d": 23}, "titles": {"en": "International Women in Engineering Day"}, "urls": {"en": "https://nationaltoday.com/women-in-engineering-day/"}, "1st": {"era": 1, "y": 2014}, "emoji": "👷‍♀️"},
 
         {"titles": {"en": "International Decade of Indigenous Languages"}, "type": "nY", "start": {"era": 1, "y": 2022}, "end": {"era": 1, "y": 2032}},
         {"titles": {"en": "Second Decade of Action for Road Safety"}, "type": "nY", "start": {"era": 1, "y": 2021}, "emoji": "🚏", "end": {"era": 1, "y": 2030}},

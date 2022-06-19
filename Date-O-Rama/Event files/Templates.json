@@ -204,6 +204,7 @@
         {"template": "St. Andrew’s Day", "titles": {"en": "St. Andrew’s Day"}, "type": "1D", "start": {"mon": 11, "d": 30}},
         {"template": "St. George’s Day", "titles": {"en": "St. George’s Day"}, "notes": {"en": "Feast of St. George or St. Adalbert"}, "type": "1D", "start": {"mon": 4, "d": 23}, "emoji": "🐉"},
         {"template": "St. John’s Day", "titles": {"en": "Nativity of St. John the Baptist", "es": "Día de San Juan Bautista"}, "type": "1D", "start": {"mon": 6, "d": 24}, "inherits": "*BDay*"},
+        {"template": "St. John’s Eve", "titles": {"en": "St. John’s Eve"}, "type": "1D", "start": {"mon": 6, "d": 23}},
         {"template": "St. Patrick’s Day", "titles": {"en": "St. Patrick’s Day", "he": "יום פטריק הקדוש"}, "type": "1D", "start": {"mon": 3, "d": 17}, "emoji": "🍀", "urls": {"en": "https://www.daysoftheyear.com/days/saint-patricks-day/"}},
         {"template": "St. Stephen’s Day", "titles": {"en": "St. Stephen’s Day"}, "notes": {"en": "Christmastide (day 2)"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"template": "Statehood Day", "type": "1D", "start": {"mon": 8, "wkd": [6], "wkdRecurrence": 3}, "titles": {"en": "Statehood Day", "fr": "Journée d’État"}, "urls": {"en": "https://en.wikipedia.org/wiki/Statehood_Day"}},
