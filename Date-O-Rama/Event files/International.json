@@ -493,6 +493,7 @@
         {"inherits": "Nowruz", "type": "1D", "start": {"equinoxOrSolstice": "Mar"}},
         {"type": "1D", "start": {"mon": 5, "d": 28}, "1st": {"era": 1, "y": 1961}, "titles": {"en": "Amnesty International Day"}, "urls": {"en": "https://www.ngo-monitor.org/ngos/amnesty_international/"}},
         {"type": "1D", "start": {"mon": 6, "d": 16}, "titles": {"en": "International Day of the African Child"}, "1st": {"era": 1, "y": 1976}, "urls": {"en": "https://nationaltoday.com/international-day-of-the-african-child/"}, "emoji": "👦👧"},
+        {"type": "1D", "start": {"mon": 6, "d": 21}, "titles": {"en": "World Giraffe Day"}, "urls": {"en": "https://nationaltoday.com/world-giraffe-day/"}, "emoji": "🦒"},
 
     ]
 }

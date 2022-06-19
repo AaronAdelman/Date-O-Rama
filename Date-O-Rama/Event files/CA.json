@@ -20,7 +20,7 @@
         {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Louis Riel Day", "fr": "Journée Louis Riel"}},
         {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Islander Day", "fr": "Fête des Insulaires"}},
         {"inherits": "Heritage Day", "type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}},
-        {"type": "1D", "start": {"mon": 6, "d": 21}, "titles": {"en": "National Aboriginal Day", "fr": "Journée nationale des Autochthones"}},
+        {"type": "1D", "start": {"mon": 6, "d": 21}, "titles": {"en": "National Indigenous Peoples Day", "fr": "Journée nationale des Autochthones"}, "notes": {"en": "National Aboriginal Day"}, "urls": {"en": "https://nationaltoday.com/canada-national-indigenous-peoples-day/"}, "1st": {"era": 1, "y": 1996}},
         {"inherits": "Discovery Day", "type": "1D", "start": {"mon": 6, "d": 24}},
         {"type": "1D", "start": {"mon": 6, "d": 24}, "titles": {"en": "National Holiday of Quebec", "fr": "Fête nationale du Québec / Saint-Jean-Baptiste"}},
         {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day", "fr": "Fête des orangistes"}},

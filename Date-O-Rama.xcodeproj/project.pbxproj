@@ -13,6 +13,10 @@
 		9453971E3008D60DB2E8CC88 /* Pods_WatchDate_O_Rama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A66C36288C8215A45AC86F7 /* Pods_WatchDate_O_Rama.framework */; };
 		A501B24E259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */; };
 		A501B24F259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */; };
+		A501C7FD285F75D100211E33 /* SC.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FC285F75D100211E33 /* SC.json */; };
+		A501C7FE285F75D100211E33 /* SC.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FC285F75D100211E33 /* SC.json */; };
+		A501C800285F7F4200211E33 /* TG.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FF285F7F4200211E33 /* TG.json */; };
+		A501C801285F7F4200211E33 /* TG.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FF285F7F4200211E33 /* TG.json */; };
 		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
 		A505E6DA27903D7F00D09A74 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A505E6DB27903D7F00D09A74 /* ASAMoonPhaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */; };
@@ -856,6 +860,8 @@
 		8FB4172FA46AAD591C984B7A /* Pods-Date-O-RamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.debug.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A66C36288C8215A45AC86F7 /* Pods_WatchDate_O_Rama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchDate_O_Rama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorRectangle.swift; sourceTree = "<group>"; };
+		A501C7FC285F75D100211E33 /* SC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SC.json; sourceTree = "<group>"; };
+		A501C7FF285F7F4200211E33 /* TG.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TG.json; sourceTree = "<group>"; };
 		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
@@ -1511,6 +1517,7 @@
 				A5F3B0172855FEC700865CEB /* RU.json */,
 				A5765A37279ED15900BF1F7E /* Rural.json */,
 				A5EFFF9A285B7F2E00F2205F /* SA.json */,
+				A501C7FC285F75D100211E33 /* SC.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
 				A5EF0004285B8EEA00F2205F /* SD (Muslim).json */,
 				A5759146282BE36500675058 /* SE.json */,
@@ -1539,6 +1546,7 @@
 				A5EFFF38285B5C5B00F2205F /* TD.json */,
 				A508C7F4283E244E00D96947 /* Templates.json */,
 				A5F3B01D285644A100865CEB /* TH.json */,
+				A501C7FF285F7F4200211E33 /* TG.json */,
 				A5F43E262786113400FCDB88 /* Thelema.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A5E8BAD927FCADC30018CD36 /* TN.json */,
@@ -2155,6 +2163,7 @@
 				A5EFFFE2285B85B500F2205F /* NI.json in Resources */,
 				A5E292ED285A62B600925EBD /* AW.json in Resources */,
 				A5D850BE280C9A69005247BD /* MY.json in Resources */,
+				A501C7FE285F75D100211E33 /* SC.json in Resources */,
 				A5D3D7E527FA20CC0099718A /* AU.json in Resources */,
 				A5E7590F2768BC23008D7D57 /* Judaism (forgotten).json in Resources */,
 				A5E292C9285A456600925EBD /* BO.json in Resources */,
@@ -2244,6 +2253,7 @@
 				A5F43E282786113400FCDB88 /* Thelema.json in Resources */,
 				A5EFFFCB285B81BD00F2205F /* ZM.json in Resources */,
 				A5E292E1285A60E000925EBD /* DZ.json in Resources */,
+				A501C801285F7F4200211E33 /* TG.json in Resources */,
 				A5E292E4285A616500925EBD /* AL.json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5F43E252785D7DE00FCDB88 /* Neopaganism.json in Resources */,
@@ -2411,6 +2421,7 @@
 				A5E292C2285A420400925EBD /* EG.json in Resources */,
 				A5EFFF66285B61E500F2205F /* CI.json in Resources */,
 				A5EF0016285B8EEB00F2205F /* KW (Muslim).json in Resources */,
+				A501C800285F7F4200211E33 /* TG.json in Resources */,
 				A5E8BAE327FCCF0B0018CD36 /* BD.json in Resources */,
 				A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */,
 				A5EFFF96285B7DB700F2205F /* PA.json in Resources */,
@@ -2447,6 +2458,7 @@
 				A5EFFFF6285B89B300F2205F /* PG.json in Resources */,
 				A5E292DA285A5D7D00925EBD /* TO.json in Resources */,
 				A5EFFFC6285B81BD00F2205F /* VE.json in Resources */,
+				A501C7FD285F75D100211E33 /* SC.json in Resources */,
 				A5EFFFDA285B855E00F2205F /* SY.json in Resources */,
 				A5E292EC285A62B600925EBD /* AW.json in Resources */,
 				A5CF465B2810D29A0088738D /* PL.json in Resources */,

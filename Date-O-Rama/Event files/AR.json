@@ -6,7 +6,9 @@
     "calendarColor": {"red": 0.42, "green": 0.64, "blue": 0.89},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"type": "1D", "start": {"mon": 6, "d": 17}, "titles": {"en": "Commemoration of General Don Martín Miguel de Güemes"}, "urls": {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, "1st": {"era": 1, "y": 1900}}
+        {"type": "1D", "start": {"mon": 6, "d": 17}, "titles": {"en": "Commemoration of General Don Martín Miguel de Güemes"}, "urls": {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, "1st": {"era": 1, "y": 1900}},
+        {"type": "1D", "start": {"mon": 6, "d": 20}, "titles": {"en": "National Flag Day", "es": "Día de la Bandera Nacional"}, "urls": {"en": "https://nationaltoday.com/national-flag-day-in-argentina/"}},
+
     ]
 }
 
