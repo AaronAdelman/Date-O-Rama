@@ -35,7 +35,7 @@ struct ASAEventsTab: View {
     
     var secondaryRow:  ASAClock {
         get {
-            if self.userData.mainClocks.count < 2 {
+            if self.userData.numberOfMainClocks < 2 {
                 return ASAClock.generic
             }
             
@@ -71,7 +71,7 @@ struct ASAEventsTab: View {
     @State var isNavigationBarHidden:  Bool = true
     
     fileprivate func enoughRowsToShowSecondaryDates() -> Bool {
-        return self.userData.mainClocks.count > 1
+        return self.userData.numberOfMainClocks > 1
     }
 
     let SECONDARY_ROW_FONT_SIZE:  CGFloat = 22.0

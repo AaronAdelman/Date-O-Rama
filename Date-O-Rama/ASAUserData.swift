@@ -501,10 +501,15 @@ extension ASAUserData {
             return temp!
         }
         
-        if self.mainClocks.count >= backupIndex + 1 {
+        if self.numberOfMainClocks >= backupIndex + 1 {
             return self.mainClocks[backupIndex]
         }
         
         return ASAClock.generic
     } // func row(backupIndex:  Int) -> ASARow
+    
+    var numberOfMainClocks: Int {
+        return self.mainClocks.count
+    }
+    
 } // extension ASAUserData
