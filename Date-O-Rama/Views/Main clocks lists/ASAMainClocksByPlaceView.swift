@@ -59,10 +59,10 @@ struct ASAMainClocksByPlaceView:  View {
                     let processedRow = sortedProcessedRows[index]
                     
 #if os(watchOS)
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
+                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
 #else
                     let indexIsOdd = index % 2 == 1
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowFormattedDate: true, shouldShowCalendar: true, shouldShowTimeZone: true, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
 #endif
                 }
             }
