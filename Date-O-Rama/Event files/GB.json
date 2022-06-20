@@ -42,6 +42,6 @@
         {"type": "1D", "start": {"mon": 6, "d": 11}, "titles": {"en": "Queen’s Birthday"}, "inherits": "*BDay*", "urls": {"en": "https://en.wikipedia.org/wiki/Queen%27s_Official_Birthday"}},
         
         {"type": "1D", "start": {"mon": 6, "d": 22}, "titles": {"en": "Windrush Day"}, "urls": {"en": "https://nationaltoday.com/windrush-day/"}, "1st": {"era": 1, "y": 2018}},
-
+        {"inherits": "Armed Forces Day", "type": "1D", "start": {"mon": 6, "wkd": [7], "wkdRecurrence": -1}, "urls": {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}},
     ]
 }
