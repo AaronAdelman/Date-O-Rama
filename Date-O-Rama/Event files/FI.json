@@ -6,6 +6,7 @@
     "calendarColor": {"red": 0.00, "green": 0.45, "blue": 0.81},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
+        {"inherits": "Midsummer Day", "type": "1D", "start": {"mon": 6, "d": 25}},
 
     ]
 }

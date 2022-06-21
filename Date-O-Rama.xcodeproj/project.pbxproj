@@ -17,6 +17,10 @@
 		A501C7FE285F75D100211E33 /* SC.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FC285F75D100211E33 /* SC.json */; };
 		A501C800285F7F4200211E33 /* TG.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FF285F7F4200211E33 /* TG.json */; };
 		A501C801285F7F4200211E33 /* TG.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C7FF285F7F4200211E33 /* TG.json */; };
+		A501C8032861F97A00211E33 /* AZ.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8022861F97900211E33 /* AZ.json */; };
+		A501C8042861F97A00211E33 /* AZ.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8022861F97900211E33 /* AZ.json */; };
+		A501C8062861FA9C00211E33 /* SO.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8052861FA9C00211E33 /* SO.json */; };
+		A501C8072861FA9C00211E33 /* SO.json in Resources */ = {isa = PBXBuildFile; fileRef = A501C8052861FA9C00211E33 /* SO.json */; };
 		A502275C25F65DA700FA47B8 /* I have a suggestion or request.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A502275A25F65DA600FA47B8 /* I have a suggestion or request.pdf */; };
 		A505E6DA27903D7F00D09A74 /* ASAPointEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */; };
 		A505E6DB27903D7F00D09A74 /* ASAMoonPhaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */; };
@@ -862,6 +866,8 @@
 		A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAColorRectangle.swift; sourceTree = "<group>"; };
 		A501C7FC285F75D100211E33 /* SC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SC.json; sourceTree = "<group>"; };
 		A501C7FF285F7F4200211E33 /* TG.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TG.json; sourceTree = "<group>"; };
+		A501C8022861F97900211E33 /* AZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AZ.json; sourceTree = "<group>"; };
+		A501C8052861FA9C00211E33 /* SO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SO.json; sourceTree = "<group>"; };
 		A502275B25F65DA600FA47B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A502276225F65DAE00FA47B8 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/I have a suggestion or request.pdf"; sourceTree = "<group>"; };
 		A506E3D7252C9378009345A0 /* ASAClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCell.swift; sourceTree = "<group>"; };
@@ -1372,6 +1378,7 @@
 				A5D3D7E327FA20CC0099718A /* AU.json */,
 				A5E292EB285A62B600925EBD /* AW.json */,
 				A5D85098280C8E7A005247BD /* BA.json */,
+				A501C8022861F97900211E33 /* AZ.json */,
 				A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */,
 				A5E292F1285A650100925EBD /* BB.json */,
 				A5E8BAE227FCCF0B0018CD36 /* BD.json */,
@@ -1532,6 +1539,7 @@
 				A581B88A284E5B9C00407D68 /* SM.json */,
 				A5EFFF99285B7F2E00F2205F /* SN.json */,
 				A5EF0005285B8EEA00F2205F /* SO (Muslim).json */,
+				A501C8052861FA9C00211E33 /* SO.json */,
 				A5EFFFB1285B808E00F2205F /* SR.json */,
 				A5EFFFEF285B88C200F2205F /* SS.json */,
 				A533798024B2333400340C0B /* Sun.json */,
@@ -2102,6 +2110,7 @@
 				A5D850A3280C9250005247BD /* MU.json in Resources */,
 				A581B889284E592000407D68 /* CH.json in Resources */,
 				A5EFFF79285B7B1300F2205F /* JE.json in Resources */,
+				A501C8042861F97A00211E33 /* AZ.json in Resources */,
 				A5EFFFBD285B811A00F2205F /* TR.json in Resources */,
 				A5EF000B285B8EEB00F2205F /* YE (Muslim).json in Resources */,
 				A5E292CF285A58E200925EBD /* LI.json in Resources */,
@@ -2273,6 +2282,7 @@
 				A5EFFF45285B5CE800F2205F /* CY.json in Resources */,
 				A5EFFFE5285B86D000F2205F /* HT.json in Resources */,
 				A5E292F0285A644000925EBD /* BH.json in Resources */,
+				A501C8072861FA9C00211E33 /* SO.json in Resources */,
 				A5EFFF83285B7BF500F2205F /* MV.json in Resources */,
 				A5EFFF63285B61E500F2205F /* JM.json in Resources */,
 				A5CF465F2810D82E0088738D /* CN.json in Resources */,
@@ -2372,6 +2382,7 @@
 				A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */,
 				A5EFFF4F285B5D7E00F2205F /* ET.json in Resources */,
 				A5D850BA280C99B4005247BD /* BR.json in Resources */,
+				A501C8032861F97A00211E33 /* AZ.json in Resources */,
 				A5EFFF84285B7BF500F2205F /* MT.json in Resources */,
 				A5EFFFCF285B845700F2205F /* SV.json in Resources */,
 				A5EFFF7C285B7B1300F2205F /* MG.json in Resources */,
@@ -2484,6 +2495,7 @@
 				A5D3D7E427FA20CC0099718A /* AU.json in Resources */,
 				A5EFFFC0285B811A00F2205F /* UA.json in Resources */,
 				A5EFFFA2285B7F2E00F2205F /* SN.json in Resources */,
+				A501C8062861FA9C00211E33 /* SO.json in Resources */,
 				A5F5B08D2858D8BA003E313D /* Eastern Christianity (general).json in Resources */,
 				A5E3606424C71FBC0000A268 /* Judaism.json in Resources */,
 				A5EFFFD5285B851300F2205F /* JO.json in Resources */,

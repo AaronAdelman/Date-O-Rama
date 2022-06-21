@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "AZ"},
+    "//": "Azerbaijan",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.00, "green": 0.18, "blue": 0.42},
+    "eventSpecifications": [
+        {"inherits": "Armed Forces Day", "type": "1D", "start": {"d": 26, "mon": 6}, "urls": {"en": "https://nationaltoday.com/azerbaijan-armed-forces-day/"}, "1st": {"era": 1, "y": 1998}},
+
+    ]
+}

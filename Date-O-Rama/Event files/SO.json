@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "SO"},
+    "//": "Somalia",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
+    "eventSpecifications": [
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 6, "d": 26}, "urls": {"en": "https://nationaltoday.com/somalia-independence-day/"}, "1st": {"era": 1, "y": 1991}},
+    ]
+}
