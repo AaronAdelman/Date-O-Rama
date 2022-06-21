@@ -47,12 +47,15 @@ struct ASAMainClocksByPlaceView:  View {
         ForEach(keys, id: \.self) {
             key
             in
+            let processedRowsForKey: [ASAProcessedClock] = processedRows[key]!
+            let sectionHeaderEmoji = processedRowsForKey[0].flagEmojiString
+            let sortedProcessedRows = processedRowsForKey.sortedByCalendar
+
             Section(header: HStack {
-                Text(processedRows[key]![0].flagEmojiString)
+                Text(sectionHeaderEmoji)
                 Text("\(key)").font(Font.headlineMonospacedDigit)
                     .minimumScaleFactor(0.5).lineLimit(1)
             }) {
-                let sortedProcessedRows = processedRows[key]!.sortedByCalendar
                 ForEach(sortedProcessedRows.indices, id: \.self) {
                     index
                     in
