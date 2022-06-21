@@ -11,44 +11,21 @@ import SwiftUI
 struct ASAMainClocksByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
     @Binding var clocks:  Array<ASAClock>
-    var processedClocksByPlace: Dictionary<ASALocation, Array<ASAProcessedClock>> {
-        get {
-            return self.clocks.processedRowsByPlaceName(now: now)
-        } // get
-    }
     @Binding var now:  Date
     
-    func keys() -> Array<ASALocation> {
-        let here: ASALocation = ASALocationManager.shared.deviceLocationData
-        
-        return Array(self.processedClocksByPlace.keys).sorted(by: {
-            element1, element2
-            in
-            if element1 == here {
-                return true
-            }
-            
-            if element2 == here {
-                return false
-            }
-            
-            return element1.shortFormattedOneLineAddress < element2.shortFormattedOneLineAddress
-        })
-    } // func keys() -> Array<String>
-    
     var body:  some View {
-        let processedClocks: [ASALocation : [ASAProcessedClock]] = self.processedClocksByPlace
-        let keys: [ASALocation] = self.keys()
-        ForEach(keys, id: \.self) {
-            key
+        let sections: Array<ASALocationWithProcessedClocks> = self.clocks.processedRowsByPlaceName(now: now)
+        ForEach(sections, id: \.self.location.id) {
+            section
             in
-            let processedClocksForKey: [ASAProcessedClock] = processedClocks[key]!
-            let sectionHeaderEmoji = processedClocksForKey[0].flagEmojiString
-            let sortedProcessedClocks = processedClocksForKey.sortedByCalendar
+            let processedClocks: [ASAProcessedClock] = section.processedClocks
+            let location = section.location
+            let sectionHeaderEmoji = (location.regionCode ?? "").flag
+            let sortedProcessedClocks = processedClocks.sortedByCalendar
 #if os(watchOS)
-            let sectionHeaderTitle = key.shortFormattedOneLineAddress
+            let sectionHeaderTitle = location.shortFormattedOneLineAddress
 #else
-            let sectionHeaderTitle = key.formattedOneLineAddress
+            let sectionHeaderTitle = location.formattedOneLineAddress
 #endif
             
             ASAMainClocksByPlaceSectionView(now: $now, sectionHeaderTitle: sectionHeaderTitle, sectionHeaderEmoji: sectionHeaderEmoji, processedClocks: sortedProcessedClocks)
