@@ -19,14 +19,7 @@ struct ASAMainClocksByPlaceView:  View {
     @Binding var now:  Date
     
     func keys() -> Array<ASALocation> {
-        var here: ASALocation
-        //#if os(watchOS)
-        //        here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
-        //#else
-        //        here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
-        //#endif
-        
-        here = ASALocationManager.shared.deviceLocationData
+        let here: ASALocation = ASALocationManager.shared.deviceLocationData
         
         return Array(self.processedClocksByPlace.keys).sorted(by: {
             element1, element2
