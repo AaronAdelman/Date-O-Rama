@@ -1,5 +1,6 @@
 {
     "titles": {"*": "CZ"},
+    "//": "Czechia",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.19, "blue": 0.53},

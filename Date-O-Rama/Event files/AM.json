@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "AM"},
+    "//": "Armenia",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2015}},
+
+    ]
+}

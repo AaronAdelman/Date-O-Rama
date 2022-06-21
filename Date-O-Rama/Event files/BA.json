@@ -1,5 +1,6 @@
 {
     "titles": {"*": "BA"},
+    "//": "Bosnia and Herzegovina",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.18, "blue": 0.42},

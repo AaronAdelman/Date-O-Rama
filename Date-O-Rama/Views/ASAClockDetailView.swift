@@ -140,25 +140,34 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     var body:  some View {
         if builtInEventCalendarFileNames.count > 0 {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
-                ForEach(builtInEventCalendarFileNames, id:
-                            \.self) {
-                    fileName
-                    in
-                    ASABuiltInEventCalendarCell(selectedRow: selectedRow, fileName: fileName)
-                        .onTapGesture {
-                            if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
-                                let fileNameIndex = selectedRow.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
-                                if fileNameIndex != nil {
-                                    selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
+                let chunks = builtInEventCalendarFileNames.chunked(into: 20)
+                
+                ForEach(0..<chunks.count, id: \.self) {
+                    let group = chunks[$0]
+                    Group {
+                        ForEach(group, id:
+                                    \.self) {
+                            fileName
+                            in
+                            ASABuiltInEventCalendarCell(selectedRow: selectedRow, fileName: fileName)
+                                .onTapGesture {
+                                    if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
+                                        let fileNameIndex = selectedRow.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
+                                        if fileNameIndex != nil {
+                                            selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
+                                        }
+                                    } else {
+                                        let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
+                                        if eventCalendar.eventsFile != nil {
+                                            selectedRow.builtInEventCalendars.append(eventCalendar)
+                                        }
+                                    }
                                 }
-                            } else {
-                                let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
-                                if eventCalendar.eventsFile != nil {
-                                    selectedRow.builtInEventCalendars.append(eventCalendar)
-                                }
-                            }
                         }
+                    }
                 }
+                
+                
             } // Section
         } else {
             EmptyView()
@@ -214,43 +223,44 @@ struct ASABuiltInEventCalendarCell:  View {
     var fileName:  String
 
     var body: some View {
-        let eventCalendar = ASAEventCalendar(fileName: fileName)
-//        let eventSpecifications = eventCalendar.eventsFile?.eventSpecifications ?? []
-//        let defaultLocaleIdentifier = Locale.current.identifier
-//        let eventsFileDefaultLocaleIdentifier = eventCalendar.eventsFile?.defaultLocale ?? defaultLocaleIdentifier
-//        let eventTitles = eventSpecifications.map {
-//            $0.eventTitle(requestedLocaleIdentifier: defaultLocaleIdentifier, eventsFileDefaultLocaleIdentifier: eventsFileDefaultLocaleIdentifier) ?? ""
-//        }
-//        let joinedEventTitles = ListFormatter.localizedString(byJoining: eventTitles)
-
         HStack(alignment: .top) {
-            ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))                    .foregroundColor(eventCalendar.color)
+            ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))
+//                .foregroundColor(eventCalendar.color)
             VStack(alignment: .leading) {
-                HStack {
-                    let emoji: String? = eventCalendar.eventsFile?.symbol
-                    if emoji != nil {
-                        Text(verbatim: emoji!)
+                if fileName.count == 2 {
+                    HStack {
+                        let locale = Locale.current
+                        let title = locale.localizedString(forRegionCode: fileName) ?? "???"
+                        let emoji: String? = fileName.flag
+                        if emoji != nil {
+                            Text(verbatim: emoji!)
+                        }
+                        Text(verbatim: title)
+                            .font(.headline)
                     }
-                    Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier))
-                        .font(.headline)
+                } else {
+                    let eventCalendar = ASAEventCalendar(fileName: fileName)
+                    HStack {
+                        let emoji: String? = eventCalendar.eventsFile?.symbol
+                        if emoji != nil {
+                            Text(verbatim: emoji!)
+                        }
+                        Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier))
+                            .font(.headline)
+                    }
+                    if eventCalendar.error != nil {
+                        Text(verbatim: eventCalendar.error!.localizedDescription)
+                            .font(.headline)
+                            .foregroundColor(.secondary)
+                    }
                 }
-                if eventCalendar.error != nil {
-                    Text(verbatim: eventCalendar.error!.localizedDescription)
-                        .font(.headline)
-                        .foregroundColor(.secondary)
-                }
-//                Text(joinedEventTitles)
-//                    .font(.caption2)
-//                    .foregroundColor(.secondary)
-//                    .lineLimit(10)
-//                    .truncationMode(.tail)
             } // VStack
             Spacer()
             
-            let formatString : String = NSLocalizedString("n events", comment: "")
-            let resultString : String = String.localizedStringWithFormat(formatString, eventCalendar.eventsFile!.eventSpecifications.count)
-            Text(resultString)
-                .foregroundColor(.secondary)
+//            let formatString : String = NSLocalizedString("n events", comment: "")
+//            let resultString : String = String.localizedStringWithFormat(formatString, eventCalendar.eventsFile!.eventSpecifications.count)
+//            Text(resultString)
+//                .foregroundColor(.secondary)
         } // HStack
     } //var body
 } // struct ASABuiltInEventCalendarCell
