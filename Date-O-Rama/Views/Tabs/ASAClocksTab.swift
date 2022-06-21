@@ -17,12 +17,7 @@ struct ASAClocksTab: View {
     @State var usingRealTime = true
     
     @State private var showingNewClockDetailView = false
-    
-//    @AppStorage("mainRowsGroupingOption") var primaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byPlaceName
-//    @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byFormattedDate
-//    @AppStorage("secondaryMainRowsGroupingOption") var secondaryMainRowsGroupingOption:  ASAClocksViewGroupingOption = .byCalendar
-  //    @AppStorage("showTimeToNextDay") var shouldShowTimeToNextDay = false
-    
+        
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State var isNavigationBarHidden:  Bool = true
@@ -66,24 +61,6 @@ struct ASAClocksTab: View {
                 
                 List {
                     DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
-//                        NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$primaryMainRowsGroupingOption, groupingOptions: ASAClocksViewGroupingOption.primaryOptions, otherGroupingOption: self.$secondaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: true)) {
-//                            HStack {
-//                                Text("Arrangement")
-//                                Spacer()
-//                                Text(self.primaryMainRowsGroupingOption.text())
-//                            }
-//                            .foregroundColor(.accentColor)
-//                        } // NavigationLink
-//                        
-//                        NavigationLink(destination:  ASAArrangementChooserView(selectedGroupingOption:  self.$secondaryMainRowsGroupingOption, groupingOptions: self.primaryMainRowsGroupingOption.compatibleOptions, otherGroupingOption: self.$primaryMainRowsGroupingOption, otherGroupingOptionIsSecondary: false)) {
-//                            HStack {
-//                                Text("Secondary arrangement")
-//                                Spacer()
-//                                Text(self.secondaryMainRowsGroupingOption.text())
-//                            }
-//                            .foregroundColor(.accentColor)
-//                        } // NavigationLink
-                        
                         Button(
                             action: {
                                 self.showingNewClockDetailView = true
@@ -95,13 +72,9 @@ struct ASAClocksTab: View {
                             } // HStack
                         }
                         .foregroundColor(.accentColor)
-                        
-                        //                        Toggle("Show time to next day", isOn: $shouldShowTimeToNextDay)
                     } // DisclosureGroup
                     
-                    ASAMainClocksByPlaceView(
-//                        primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption,
-                        clocks: $userData.mainClocks, now: $now)
+                    ASAMainClocksByPlaceView(clocks: $userData.mainClocks, now: $now)
                 }
                 .listStyle(GroupedListStyle())
                 .sheet(isPresented: self.$showingNewClockDetailView) {
