@@ -59,11 +59,15 @@ struct ASAMainClocksByPlaceView:  View {
                     let processedRow = sortedProcessedRows[index]
                     
 #if os(watchOS)
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: false)
+                    let shouldShowTime         = false
+                    let shouldShowMiniCalendar = false
+                    let indexIsOdd             = false
 #else
-                    let indexIsOdd = index % 2 == 1
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: indexIsOdd)
+                    let shouldShowTime         = true
+                    let shouldShowMiniCalendar = true
+                    let indexIsOdd             = index % 2 == 1
 #endif
+                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
                 }
             }
         }
