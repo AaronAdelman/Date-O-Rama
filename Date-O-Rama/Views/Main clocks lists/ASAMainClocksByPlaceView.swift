@@ -11,20 +11,22 @@ import SwiftUI
 struct ASAMainClocksByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
     @Binding var clocks:  Array<ASAClock>
-    var processedClocksByPlace: Dictionary<String, Array<ASAProcessedClock>> {
+    var processedClocksByPlace: Dictionary<ASALocation, Array<ASAProcessedClock>> {
         get {
             return self.clocks.processedRowsByPlaceName(now: now)
         } // get
     }
     @Binding var now:  Date
     
-    func keys() -> Array<String> {
-        var here: String?
-#if os(watchOS)
-        here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
-#else
-        here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
-#endif
+    func keys() -> Array<ASALocation> {
+        var here: ASALocation
+        //#if os(watchOS)
+        //        here = ASALocationManager.shared.deviceLocationData.shortFormattedOneLineAddress
+        //#else
+        //        here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
+        //#endif
+        
+        here = ASALocationManager.shared.deviceLocationData
         
         return Array(self.processedClocksByPlace.keys).sorted(by: {
             element1, element2
@@ -37,21 +39,26 @@ struct ASAMainClocksByPlaceView:  View {
                 return false
             }
             
-            return element1 < element2
+            return element1.shortFormattedOneLineAddress < element2.shortFormattedOneLineAddress
         })
     } // func keys() -> Array<String>
     
     var body:  some View {
-        let processedClocks: [String : [ASAProcessedClock]] = self.processedClocksByPlace
-        let keys: [String] = self.keys()
+        let processedClocks: [ASALocation : [ASAProcessedClock]] = self.processedClocksByPlace
+        let keys: [ASALocation] = self.keys()
         ForEach(keys, id: \.self) {
             key
             in
             let processedClocksForKey: [ASAProcessedClock] = processedClocks[key]!
             let sectionHeaderEmoji = processedClocksForKey[0].flagEmojiString
             let sortedProcessedClocks = processedClocksForKey.sortedByCalendar
-
-            ASAMainClocksByPlaceSectionView(now: $now, sectionHeaderTitle: key, sectionHeaderEmoji: sectionHeaderEmoji, processedClocks: sortedProcessedClocks)
+#if os(watchOS)
+            let sectionHeaderTitle = key.shortFormattedOneLineAddress
+#else
+            let sectionHeaderTitle = key.formattedOneLineAddress
+#endif
+            
+            ASAMainClocksByPlaceSectionView(now: $now, sectionHeaderTitle: sectionHeaderTitle, sectionHeaderEmoji: sectionHeaderEmoji, processedClocks: sortedProcessedClocks)
         }
     }
 }
