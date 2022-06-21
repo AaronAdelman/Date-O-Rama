@@ -10,10 +10,10 @@ import SwiftUI
 
 struct ASAMainClocksByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
-    @Binding var rows:  Array<ASAClock>
+    @Binding var clocks:  Array<ASAClock>
     var processedClocksByPlace: Dictionary<String, Array<ASAProcessedClock>> {
         get {
-            return self.rows.processedRowsByPlaceName(now: now)
+            return self.clocks.processedRowsByPlaceName(now: now)
         } // get
     }
     @Binding var now:  Date
@@ -93,6 +93,6 @@ struct ASAMainClocksByPlaceSectionView: View {
 
 struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAMainClocksByPlaceView(rows: .constant([ASAClock.generic]), now: .constant(Date()))
+        ASAMainClocksByPlaceView(clocks: .constant([ASAClock.generic]), now: .constant(Date()))
     }
 }

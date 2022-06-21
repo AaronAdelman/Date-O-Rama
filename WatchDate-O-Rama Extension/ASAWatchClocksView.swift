@@ -51,7 +51,7 @@ struct ASAWatchClocksView: View {
 //                    :
                     ASAMainClocksByPlaceView(
 //                        primaryGroupingOption: primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption,
-                        rows: $userData.mainClocks, now: $now)
+                        clocks: $userData.mainClocks, now: $now)
 //
 ////                case .byTimeZoneWestToEast, .byTimeZoneEastToWest:
 ////                    ASAMainClocksByTimeZoneView(primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption, rows: $userData.mainClocks, now: $now)

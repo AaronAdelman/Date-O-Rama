@@ -101,7 +101,7 @@ struct ASAClocksTab: View {
                     
                     ASAMainClocksByPlaceView(
 //                        primaryGroupingOption: self.primaryMainRowsGroupingOption, secondaryGroupingOption: $secondaryMainRowsGroupingOption,
-                        rows: $userData.mainClocks, now: $now)
+                        clocks: $userData.mainClocks, now: $now)
                 }
                 .listStyle(GroupedListStyle())
                 .sheet(isPresented: self.$showingNewClockDetailView) {
