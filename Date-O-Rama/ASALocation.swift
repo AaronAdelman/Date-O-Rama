@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-struct ASALocation:  Equatable, Identifiable {
+struct ASALocation:  Equatable, Identifiable, Hashable {
     var id = UUID()
     var location:  CLLocation = CLLocation.NullIsland
     var name:  String?
@@ -25,6 +25,15 @@ struct ASALocation:  Equatable, Identifiable {
     var subThoroughfare: String?
     
     var timeZone:  TimeZone = TimeZone.GMT
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(location.coordinate.latitude)
+        hasher.combine(location.coordinate.longitude)
+    }
+    
+    static func ==(lhs: ASALocation, rhs: ASALocation) -> Bool {
+        return lhs.location.coordinate.latitude == rhs.location.coordinate.latitude && lhs.location.coordinate.longitude == rhs.location.coordinate.longitude && lhs.location.altitude == rhs.location.altitude
+    }
 } // struct ASALocation
 
 
