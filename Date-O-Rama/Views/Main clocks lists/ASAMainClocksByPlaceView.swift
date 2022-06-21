@@ -11,7 +11,7 @@ import SwiftUI
 struct ASAMainClocksByPlaceView:  View {
     @EnvironmentObject var userData:  ASAUserData
     @Binding var rows:  Array<ASAClock>
-    var processedRowsByPlace: Dictionary<String, Array<ASAProcessedClock>> {
+    var processedClocksByPlace: Dictionary<String, Array<ASAProcessedClock>> {
         get {
             return self.rows.processedRowsByPlaceName(now: now)
         } // get
@@ -26,7 +26,7 @@ struct ASAMainClocksByPlaceView:  View {
         here = ASALocationManager.shared.deviceLocationData.formattedOneLineAddress
 #endif
         
-        return Array(self.processedRowsByPlace.keys).sorted(by: {
+        return Array(self.processedClocksByPlace.keys).sorted(by: {
             element1, element2
             in
             if element1 == here {
@@ -42,36 +42,49 @@ struct ASAMainClocksByPlaceView:  View {
     } // func keys() -> Array<String>
     
     var body:  some View {
-        let processedRows: [String : [ASAProcessedClock]] = self.processedRowsByPlace
+        let processedClocks: [String : [ASAProcessedClock]] = self.processedClocksByPlace
         let keys: [String] = self.keys()
         ForEach(keys, id: \.self) {
             key
             in
-            let processedRowsForKey: [ASAProcessedClock] = processedRows[key]!
-            let sectionHeaderEmoji = processedRowsForKey[0].flagEmojiString
-            let sortedProcessedRows = processedRowsForKey.sortedByCalendar
+            let processedClocksForKey: [ASAProcessedClock] = processedClocks[key]!
+            let sectionHeaderEmoji = processedClocksForKey[0].flagEmojiString
+            let sortedProcessedClocks = processedClocksForKey.sortedByCalendar
 
-            Section(header: HStack {
-                Text(sectionHeaderEmoji)
-                Text("\(key)").font(Font.headlineMonospacedDigit)
-                    .minimumScaleFactor(0.5).lineLimit(1)
-            }) {
-                ForEach(sortedProcessedRows.indices, id: \.self) {
-                    index
-                    in
-                    let processedRow = sortedProcessedRows[index]
-                    
+            ASAMainClocksByPlaceSectionView(now: $now, sectionHeaderTitle: key, sectionHeaderEmoji: sectionHeaderEmoji, processedClocks: sortedProcessedClocks)
+        }
+    }
+}
+
+struct ASAMainClocksByPlaceSectionView: View {
+    @Binding var now:  Date
+    var sectionHeaderTitle: String
+    var sectionHeaderEmoji: String
+    var processedClocks: Array<ASAProcessedClock>
+    
+    var body: some View {
+        Section(header: HStack {
+            Text(sectionHeaderEmoji)
+            Text(sectionHeaderTitle)
+                .font(Font.headlineMonospacedDigit)
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
+        }) {
+            ForEach(processedClocks.indices, id: \.self) {
+                index
+                in
+                let processedRow = processedClocks[index]
+                
 #if os(watchOS)
-                    let shouldShowTime         = false
-                    let shouldShowMiniCalendar = false
-                    let indexIsOdd             = false
+                let shouldShowTime         = false
+                let shouldShowMiniCalendar = false
+                let indexIsOdd             = false
 #else
-                    let shouldShowTime         = true
-                    let shouldShowMiniCalendar = true
-                    let indexIsOdd             = index % 2 == 1
+                let shouldShowTime         = true
+                let shouldShowMiniCalendar = true
+                let indexIsOdd             = index % 2 == 1
 #endif
-                    ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
-                }
+                ASAClockCell(processedClock: processedRow, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
             }
         }
     }
