@@ -205,7 +205,7 @@ struct ASAClockCellBody:  View {
                                 }
                                 Spacer()
                             } // HStack
-                            ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true)
+                            ASAClockDetailView(selectedClock: processedRow.clock, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true)
                                 .onReceive(processedRow.clock.objectWillChange) { _ in
                                     // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                     ASAUserData.shared.savePreferences(code: .complications)
@@ -292,7 +292,7 @@ struct ASAClockCellMenuView: View {
                     }
                     Spacer()
                 } // HStack
-                ASAClockDetailView(selectedRow: processedRow.clock, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false)
+                ASAClockDetailView(selectedClock: processedRow.clock, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false)
                     .onReceive(processedRow.clock.objectWillChange) { _ in
                         // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                         ASAUserData.shared.savePreferences(code: .clocks)

@@ -1,7 +1,7 @@
 {
     "titles": {"*": "AF"},
     "//": "Afghanistan",
-    "TODO": "Public holidays on the Muslim calendar?"
+    "TODO": "Public holidays on the Muslim calendar?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},

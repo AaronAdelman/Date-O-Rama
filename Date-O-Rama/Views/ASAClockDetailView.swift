@@ -11,7 +11,7 @@ import CoreLocation
 import EventKit
 
 struct ASAClockDetailView: View {
-    @ObservedObject var selectedRow:  ASAClock
+    @ObservedObject var selectedClock:  ASAClock
     var now:  Date
     
     var shouldShowTime:  Bool
@@ -33,7 +33,7 @@ struct ASAClockDetailView: View {
     var body: some View {
         NavigationView {
             List {
-                ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
+                ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
                 
                 if deletable {
                     Section(header:  Text("")){
@@ -49,7 +49,7 @@ struct ASAClockDetailView: View {
                         .actionSheet(isPresented: self.$showingActionSheet) {
                             ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
                                 .destructive(Text("Delete This Clock")) {
-                                    let index = self.userData.mainClocks.firstIndex(where: {$0.uuid == selectedRow.uuid})
+                                    let index = self.userData.mainClocks.firstIndex(where: {$0.uuid == selectedClock.uuid})
                                     if index != nil {
                                         self.userData.mainClocks.remove(at: index!)
                                         self.userData.savePreferences(code: .clocks)
@@ -72,57 +72,57 @@ struct ASAClockDetailView: View {
 // MARK:  -
 
 struct ASAClockDetailEditingSection:  View {
-    @ObservedObject var selectedRow:  ASAClock
+    @ObservedObject var selectedClock:  ASAClock
     var now:  Date
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
     
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
-            return selectedRow.calendar.supportedWatchDateFormats
+            return selectedClock.calendar.supportedWatchDateFormats
         }
         
-        return selectedRow.calendar.supportedDateFormats
+        return selectedClock.calendar.supportedDateFormats
     }
     
     var body: some View {
         Group {
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
-                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName)
+                NavigationLink(destination: ASACalendarChooserView(row: self.selectedClock, tempCalendarCode: self.selectedClock.calendar.calendarCode)) {
+                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedClock.calendar.calendarCode.localizedName)
                 }
                 
-                if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
-                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedRow, tempLocationData: ASALocation())) {
+                if selectedClock.calendar.supportsTimeZones || selectedClock.calendar.supportsLocations {
+                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: ASALocation())) {
                         VStack {
-                            ASALocationCell(usesDeviceLocation: self.selectedRow.usesDeviceLocation, locationData: self.selectedRow.locationData)
+                            ASALocationCell(usesDeviceLocation: self.selectedClock.usesDeviceLocation, locationData: self.selectedClock.locationData)
                             Spacer()
-                            ASATimeZoneCell(timeZone: selectedRow.locationData.timeZone, now: now)
+                            ASATimeZoneCell(timeZone: selectedClock.locationData.timeZone, now: now)
                         } // VStack
                     }
                 }
                 
-                if selectedRow.supportsLocales {
-                    NavigationLink(destination: ASALocaleChooserView(row: selectedRow, tempLocaleIdentifier: selectedRow.localeIdentifier)) {
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedRow.localeIdentifier.localeCountryCodeFlag + " " + selectedRow.localeIdentifier.asSelfLocalizedLocaleIdentifier)
+                if selectedClock.supportsLocales {
+                    NavigationLink(destination: ASALocaleChooserView(row: selectedClock, tempLocaleIdentifier: selectedClock.localeIdentifier)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedClock.localeIdentifier.localeCountryCodeFlag + " " + selectedClock.localeIdentifier.asSelfLocalizedLocaleIdentifier)
                     }
                 }
-                if selectedRow.calendar.supportsDateFormats && dateFormats().count > 1 {
-                    NavigationLink(destination: ASADateFormatChooserView(row: selectedRow, tempDateFormat: selectedRow.dateFormat, calendarCode: selectedRow.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedRow.dateFormat.localizedItemName)
+                if selectedClock.calendar.supportsDateFormats && dateFormats().count > 1 {
+                    NavigationLink(destination: ASADateFormatChooserView(row: selectedClock, tempDateFormat: selectedClock.dateFormat, calendarCode: selectedClock.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedClock.dateFormat.localizedItemName)
                     }
                 }
-                if selectedRow.calendar.supportsTimeFormats && shouldShowTime && selectedRow.calendar.supportedTimeFormats.count > 1 {
-                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedRow, tempTimeFormat: selectedRow.timeFormat, calendarCode: selectedRow.calendar.calendarCode)) {
-                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedRow.timeFormat.localizedItemName)
+                if selectedClock.calendar.supportsTimeFormats && shouldShowTime && selectedClock.calendar.supportedTimeFormats.count > 1 {
+                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedClock, tempTimeFormat: selectedClock.timeFormat, calendarCode: selectedClock.calendar.calendarCode)) {
+                        ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedClock.timeFormat.localizedItemName)
                     }
                 }
             } // Section
             
             if !forAppleWatch {
-                ASABuiltInEventCalendarsEditingSection(selectedRow: selectedRow, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedRow.calendar.calendarCode))
+                ASABuiltInEventCalendarsEditingSection(selectedClock: selectedClock, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedClock.calendar.calendarCode))
                 
-                ASAICalendarEventCalendarsEditingSection(selectedClock: selectedRow)
+                ASAICalendarEventCalendarsEditingSection(selectedClock: selectedClock)
             }
         } // Group
     } // var body
@@ -132,7 +132,7 @@ struct ASAClockDetailEditingSection:  View {
 // MARK:  -
 
 struct ASABuiltInEventCalendarsEditingSection:  View {
-    @ObservedObject var selectedRow:  ASAClock
+    @ObservedObject var selectedClock:  ASAClock
     var builtInEventCalendarFileNames:  Array<String>
     
     @State var selection = ASARegionCodeRegion.allRegions
@@ -140,7 +140,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     var body:  some View {
         if builtInEventCalendarFileNames.count > 0 {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
-                if selectedRow.calendar.calendarCode == .Gregorian {
+                if selectedClock.calendar.calendarCode == .Gregorian {
                     Picker(selection: $selection, label:
                             Text("Show built-in event calendars:"), content: {
                         ForEach(ASARegionCodeRegion.allCases) {
@@ -149,21 +149,21 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
                     })
                 }
                 
-                let fileNames = selectedRow.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileNames.filter({$0.regionCodeRegion == selection}) : builtInEventCalendarFileNames
+                let fileNames = selectedClock.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileNames.filter({$0.regionCodeRegion == selection}) : builtInEventCalendarFileNames
                 ForEach(fileNames, id: \.self) {
                     fileName
                     in
-                    ASABuiltInEventCalendarCell(selectedRow: selectedRow, fileName: fileName)
+                    ASABuiltInEventCalendarCell(selectedClock: selectedClock, fileName: fileName)
                         .onTapGesture {
-                            if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
-                                let fileNameIndex = selectedRow.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
+                            if selectedClock.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
+                                let fileNameIndex = selectedClock.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
                                 if fileNameIndex != nil {
-                                    selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
+                                    selectedClock.builtInEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
                                 let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
                                 if eventCalendar.eventsFile != nil {
-                                    selectedRow.builtInEventCalendars.append(eventCalendar)
+                                    selectedClock.builtInEventCalendars.append(eventCalendar)
                                 }
                             }
                         }
@@ -190,7 +190,7 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
                         \.calendarIdentifier) {
                     calendar
                     in
-                    ASAICalendarEventCalendarCell(selectedRow: selectedClock, title: calendar.title, color: calendar.color)
+                    ASAICalendarEventCalendarCell(selectedClock: selectedClock, title: calendar.title, color: calendar.color)
                         .onTapGesture {
                             if selectedClock.iCalendarEventCalendars.map({$0.title}).contains(calendar.title) {
                                 let fileNameIndex = selectedClock.iCalendarEventCalendars.firstIndex(where: {$0.title == calendar.title})
@@ -218,13 +218,13 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
 // MARK:  -
 
 struct ASABuiltInEventCalendarCell:  View {
-    @ObservedObject var selectedRow:  ASAClock
+    @ObservedObject var selectedClock:  ASAClock
 
     var fileName:  String
 
     var body: some View {
         HStack(alignment: .top) {
-            ASACheckmarkCircleSymbol(on: selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName))
+            ASACheckmarkCircleSymbol(on: selectedClock.builtInEventCalendars.map({$0.fileName}).contains(fileName))
 //                .foregroundColor(eventCalendar.color)
             VStack(alignment: .leading) {
                 if fileName.count == 2 {
@@ -269,14 +269,14 @@ struct ASABuiltInEventCalendarCell:  View {
 // MARK:  -
 
 struct ASAICalendarEventCalendarCell:  View {
-    @ObservedObject var selectedRow:  ASAClock
+    @ObservedObject var selectedClock:  ASAClock
 
     var title:  String
     var color:  Color
 
     var body: some View {
         HStack {
-            ASACheckmarkCircleSymbol(on: selectedRow.iCalendarEventCalendars.map({$0.title}).contains(title))
+            ASACheckmarkCircleSymbol(on: selectedClock.iCalendarEventCalendars.map({$0.title}).contains(title))
                 .foregroundColor(color)
             Text(verbatim: NSLocalizedString(title, comment: "")).font(.headline)
         }
@@ -288,6 +288,6 @@ struct ASAICalendarEventCalendarCell:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedRow: ASAClock.generic, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true)
+        ASAClockDetailView(selectedClock: ASAClock.generic, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true)
     }
 }

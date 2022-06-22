@@ -52,7 +52,7 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedRow: selectedRow, now: now, shouldShowTime: true, forAppleWatch: false)
+                    ASAClockDetailEditingSection(selectedClock: selectedRow, now: now, shouldShowTime: true, forAppleWatch: false)
                 } // List
             } // VStack
         } // NavigationView
