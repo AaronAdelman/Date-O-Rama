@@ -26,6 +26,7 @@
         {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"inherits": "Juneteenth", "type": "1D", "start": {"mon": 6, "d": 19}, "1st": {"type": "1D", "era": 1, "y": 1886}},
 
         {"inherits": "Epiphany Eve", "type": "1D", "start": {"mon": 1, "d": 5}},
         {"inherits": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}},
