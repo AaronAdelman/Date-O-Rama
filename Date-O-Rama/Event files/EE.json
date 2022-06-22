@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 2, "d": 24}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
-        {"titles": {"en": "Victory Day"}, "type": "1D", "start": {"mon": 6, "d": 23}, "urls": {"en": "https://nationaltoday.com/estonia-victory-day/"}, "1st": {"era": 1, "y": 1934}},
+        {"inherits": "Victory Day", "type": "1D", "start": {"mon": 6, "d": 23}, "urls": {"en": "https://nationaltoday.com/estonia-victory-day/"}, "1st": {"era": 1, "y": 1934}},
 
     ]
 }
