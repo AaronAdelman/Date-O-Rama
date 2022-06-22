@@ -1,5 +1,6 @@
 {
     "titles": {"*": "SM"},
+    "//": "San Marino",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.61, "green": 0.80, "blue": 0.92},

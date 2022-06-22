@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "ST"},
+    "//": "Sao Tome and Principe",
+    "defaultLocale": "en",
+    "calendarCode": "gre",
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        
+    ]
+}

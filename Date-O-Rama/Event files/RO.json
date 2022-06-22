@@ -1,5 +1,6 @@
 {
     "titles": {"*": "RO"},
+    "//": "Romania",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.13, "blue": 0.41},
