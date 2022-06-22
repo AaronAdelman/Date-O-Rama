@@ -1,5 +1,6 @@
 {
     "titles": {"*": "NO"},
+    "//": "Norway",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.73, "green": 0.05, "blue": 0.18},

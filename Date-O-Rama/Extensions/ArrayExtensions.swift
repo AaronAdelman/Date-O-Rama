@@ -39,9 +39,9 @@ extension Array where Element == NSNumber {
 // MARK:  - Array where Element == Int?
 
 fileprivate enum ASAMatchingResult {
-    case propogateLeading
-    case propogateDown
-    case propogateTrailing
+    case propagateLeading
+    case propagateDown
+    case propagateTrailing
     case allEqualOneLevelUp
     case startAndEndEqualOneLevelUp
 } // enum ASAMatchingResult
@@ -55,7 +55,7 @@ extension Array where Element == Int? {
 
 //        debugPrint("🍎 start:", start, "end:", end, "self:", self)
         
-        var state: ASAMatchingResult = .propogateDown
+        var state: ASAMatchingResult = .propagateDown
         
         for i in 0..<start.count {
             let start_i = start[i]
@@ -69,7 +69,7 @@ extension Array where Element == Int? {
 //            debugPrint("🍏 start:", start_i ?? "nil", "end:", end_i ?? "nil", "self:", self_i, "state:", state)
             
             switch state {
-            case .propogateLeading:
+            case .propagateLeading:
                 if start_i != nil {
                     if self_i < start_i! {
 //                        debugPrint("🍌 \(self_i) < \(start_i!), return false")
@@ -80,7 +80,7 @@ extension Array where Element == Int? {
                     }
                 }
                 
-            case .propogateDown:
+            case .propagateDown:
                 if start_i != nil {
                     if start_i! == end_i! {
 //                        debugPrint("🥒 \(start_i!) = \(end_i!)")
@@ -97,13 +97,13 @@ extension Array where Element == Int? {
                             return false
                         } else if start_i! == self_i {
 //                            debugPrint("🍇 \(start_i!) == \(self_i)")
-                            state = .propogateLeading
+                            state = .propagateLeading
                         } else if start_i! < self_i && self_i < end_i! {
 //                            debugPrint("🍉 \(start_i!) < \(self_i) && \(self_i) < \(end_i!), return true")
                             return true
                         } else if self_i == end_i! {
 //                            debugPrint("🍒 \(self_i) == \(end_i!)")
-                            state = .propogateTrailing
+                            state = .propagateTrailing
                         } else if end_i! < self_i {
 //                            debugPrint("🍈 \(end_i!) < \(self_i), return false")
                             return false
@@ -137,7 +137,7 @@ extension Array where Element == Int? {
                         
                     }
                 }
-            case .propogateTrailing:
+            case .propagateTrailing:
                 if end_i != nil {
                     if end_i! < self_i {
 //                        debugPrint("🥑 \(end_i!) < \(self_i), return false")

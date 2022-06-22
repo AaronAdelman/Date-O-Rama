@@ -1,5 +1,6 @@
 {
     "titles": {"*": "MU"},
+    "//": "Mauritius",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.82, "blue": 0.00},

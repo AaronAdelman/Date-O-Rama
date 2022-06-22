@@ -89,9 +89,7 @@ struct ASAClockDetailEditingSection:  View {
         Group {
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
                 NavigationLink(destination: ASACalendarChooserView(row: self.selectedRow, tempCalendarCode: self.selectedRow.calendar.calendarCode)) {
-                    HStack {
-                        ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName)
-                    }
+                    ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedRow.calendar.calendarCode.localizedName)
                 }
                 
                 if selectedRow.calendar.supportsTimeZones || selectedRow.calendar.supportsLocations {
@@ -136,38 +134,40 @@ struct ASAClockDetailEditingSection:  View {
 struct ASABuiltInEventCalendarsEditingSection:  View {
     @ObservedObject var selectedRow:  ASAClock
     var builtInEventCalendarFileNames:  Array<String>
-
+    
+    @State var selection = ASARegionCodeRegion.allRegions
+    
     var body:  some View {
         if builtInEventCalendarFileNames.count > 0 {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
-                let chunks = builtInEventCalendarFileNames.chunked(into: 20)
-                
-                ForEach(0..<chunks.count, id: \.self) {
-                    let group = chunks[$0]
-                    Group {
-                        ForEach(group, id:
-                                    \.self) {
-                            fileName
-                            in
-                            ASABuiltInEventCalendarCell(selectedRow: selectedRow, fileName: fileName)
-                                .onTapGesture {
-                                    if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
-                                        let fileNameIndex = selectedRow.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
-                                        if fileNameIndex != nil {
-                                            selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
-                                        }
-                                    } else {
-                                        let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
-                                        if eventCalendar.eventsFile != nil {
-                                            selectedRow.builtInEventCalendars.append(eventCalendar)
-                                        }
-                                    }
-                                }
+                if selectedRow.calendar.calendarCode == .Gregorian {
+                    Picker(selection: $selection, label:
+                            Text("Show built-in event calendars:"), content: {
+                        ForEach(ASARegionCodeRegion.allCases) {
+                            Text($0.text).tag($0)
                         }
-                    }
+                    })
                 }
                 
-                
+                let fileNames = selectedRow.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileNames.filter({$0.regionCodeRegion == selection}) : builtInEventCalendarFileNames
+                ForEach(fileNames, id: \.self) {
+                    fileName
+                    in
+                    ASABuiltInEventCalendarCell(selectedRow: selectedRow, fileName: fileName)
+                        .onTapGesture {
+                            if selectedRow.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
+                                let fileNameIndex = selectedRow.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
+                                if fileNameIndex != nil {
+                                    selectedRow.builtInEventCalendars.remove(at: fileNameIndex!)
+                                }
+                            } else {
+                                let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
+                                if eventCalendar.eventsFile != nil {
+                                    selectedRow.builtInEventCalendars.append(eventCalendar)
+                                }
+                            }
+                        }
+                }
             } // Section
         } else {
             EmptyView()

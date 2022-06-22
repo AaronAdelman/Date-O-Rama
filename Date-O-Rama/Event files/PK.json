@@ -1,5 +1,6 @@
 {
     "titles": {"*": "PK"},
+    "//": "Pakistan",
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.10, "green": 0.25, "blue": 0.13},

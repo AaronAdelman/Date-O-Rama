@@ -1,5 +1,6 @@
 {
     "titles": {"*": "NE"},
+    "//": "Niger",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.70, "blue": 0.36},

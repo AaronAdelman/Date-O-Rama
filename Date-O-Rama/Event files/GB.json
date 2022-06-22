@@ -1,5 +1,6 @@
 {
     "titles": {"*": "GB"},
+    "//": "United Kingdom",
     "defaultLocale": "en",
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.72, "green": 0.17, "blue": 0.21},
