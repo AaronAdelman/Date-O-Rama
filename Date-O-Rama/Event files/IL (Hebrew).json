@@ -11,7 +11,7 @@
         {"titles": {"he": "סיגד", "en": "Sighdh"}, "type": "1D", "start": {"mon": 2, "d": 29}},
         {"titles": {"he": "יום בן־גוריון", "en": "Ben Gureyon Day"}, "type": "1D", "start": {"mon": 3, "d": 6, "wkd": [1, 2, 3, 4, 5]}},
         {"titles": {"he": "יום בן־גוריון (נדחה)", "en": "Ben Gureyon Day (postponed)"}, "type": "1D", "start": {"mon": 3, "d": 7, "thruD": 8, "wkd": [1]}},
-        {"titles": {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم"}, "type": "1D", "start": {"mon": 3, "d": 23}, "urls": {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
+        {"inherits": "Teacher’s Day", "type": "1D", "start": {"mon": 3, "d": 23}, "urls": {"he": "http://www.teachersday.org.il?lang=he", "en": "http://www.teachersday.org.il/?lang=en", "ar": "http://www.teachersday.org.il/?lang=ar"}},
         {"titles": {"he": "יום העליה", "en": "‘Aliyyah Day"}, "type": "1D", "start": {"mon": 8, "d": 10}},
         {"titles": {"he": "יום הזיכרון לשואה ולגבורה", "en": "Holocaust Day"}, "type": "1D", "start": {"mon": 8, "d": 27, "wkd": [2, 3, 4, 5]
         }, "urls": {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},

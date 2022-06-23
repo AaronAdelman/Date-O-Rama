@@ -234,7 +234,7 @@
         
         {"titles": {"en": "Feast of St. Francis Xavier"}, "type": "1D", "start": {"mon": 12, "d": 3}},
         {"titles": {"en": "Feast of St. John Damascene"}, "type": "1D", "start": {"mon": 12, "d": 4}},
-        {"titles": {"en": "St. Nicholas Day"}, "type": "1D", "start": {"mon": 12, "d": 6}, "urls": {"en": "https://www.daysoftheyear.com/days/st-nicholas-day/"}, "emoji": "🎅"},
+        {"inherits": "St. Nicholas Day", "type": "1D", "start": {"mon": 12, "d": 6}},
         {"titles": {"en": "Feast of St. Ambrose"}, "type": "1D", "start": {"mon": 12, "d": 7}},
         {"inherits": "Feast of the Immaculate Conception", "type": "1D", "start": {"mon": 12, "d": 8}},
         {"titles": {"en": "Feast of St. Juan Diego"}, "type": "1D", "start": {"mon": 12, "d": 9}},

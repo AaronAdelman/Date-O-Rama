@@ -942,6 +942,8 @@
 		A5FB22D72863910C00B5042B /* YE.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22D52863910C00B5042B /* YE.json */; };
 		A5FB22D92863912500B5042B /* YT.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22D82863912500B5042B /* YT.json */; };
 		A5FB22DA2863912500B5042B /* YT.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22D82863912500B5042B /* YT.json */; };
+		A5FB22DC286462FB00B5042B /* AL (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22DB286462FB00B5042B /* AL (Julian).json */; };
+		A5FB22DD286462FB00B5042B /* AL (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22DB286462FB00B5042B /* AL (Julian).json */; };
 		A5FDBCBC26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FED7E9276BA65100BB11C9 /* Scientology.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FED7E8276BA65100BB11C9 /* Scientology.json */; };
@@ -1531,6 +1533,7 @@
 		A5FB22D2286390E500B5042B /* WF.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WF.json; sourceTree = "<group>"; };
 		A5FB22D52863910C00B5042B /* YE.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YE.json; sourceTree = "<group>"; };
 		A5FB22D82863912500B5042B /* YT.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YT.json; sourceTree = "<group>"; };
+		A5FB22DB286462FB00B5042B /* AL (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AL (Julian).json"; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
 		A5FED7E8276BA65100BB11C9 /* Scientology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scientology.json; sourceTree = "<group>"; };
 		B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.release.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1646,6 +1649,7 @@
 				A5E292E5285A61D900925EBD /* AG.json */,
 				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
 				A5B9999B2862289000072FD5 /* AI.json */,
+				A5FB22DB286462FB00B5042B /* AL (Julian).json */,
 				A5E292E2285A616500925EBD /* AL.json */,
 				A5B9999E286228DF00072FD5 /* AM.json */,
 				A5E292C4285A446000925EBD /* AO.json */,
@@ -2643,6 +2647,7 @@
 				A599FEEE269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */,
 				A576994D259EDCC000757B0F /* Islam (general).json in Resources */,
 				A5D3D7DC27F8DB950099718A /* International.json in Resources */,
+				A5FB22DD286462FB00B5042B /* AL (Julian).json in Resources */,
 				A5BDE7742665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5E4963A2862535D001BF40C /* MK.json in Resources */,
 				A5E49634286252EC001BF40C /* ME.json in Resources */,
@@ -3041,6 +3046,7 @@
 				A5D850A8280C94A8005247BD /* IT.json in Resources */,
 				A5D8509C280C8F9D005247BD /* BG.json in Resources */,
 				A5EFFF5D285B5F9B00F2205F /* HK.json in Resources */,
+				A5FB22DC286462FB00B5042B /* AL (Julian).json in Resources */,
 				A59FB18D270B783E0044B530 /* Interfaith.json in Resources */,
 				A5BDE78526678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5EFFFED285B878900F2205F /* TW.json in Resources */,
