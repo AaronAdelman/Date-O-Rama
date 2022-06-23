@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"titles": {"en": "National Heroes Day"}, "type": "1D", "start": {"mon": 6, "d": 9}, "1st": {"era": 1, "y": 2009}, "urls": {"en": "https://nationaltoday.com/national-heroes-day-of-uganda/"}},
+        {"inherits": "National Heroes Day", "type": "1D", "start": {"mon": 6, "d": 9}, "1st": {"era": 1, "y": 2009}, "urls": {"en": "https://nationaltoday.com/national-heroes-day-of-uganda/"}},
 
     ]
 }
