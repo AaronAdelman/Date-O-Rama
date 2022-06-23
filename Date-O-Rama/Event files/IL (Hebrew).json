@@ -45,6 +45,8 @@
         {"titles": {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, "type": "1D", "start": {"mon": 3, "d": 17}},
         {"titles": {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, "type": "1D", "start": {"mon": 4, "d": 21}},
         {"titles": {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, "type": "1D", "start": {"mon": 7, "d": 7}},
-        {"titles": {"he": "יום האם/יום המשפחה", "en": "Family Day/Mother’s Day"}, "type": "1D", "start": {"mon": 5, "d": 30}, "emoji": "👨‍👩‍👧‍👦"},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 30}, "1st": {"era": 0, "y": 5730}},
+        {"inherits": "Family Day", "type": "1D", "start": {"mon": 5, "d": 30}, "1st": {"era": 0, "y": 5750}},
+
     ]
 }

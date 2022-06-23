@@ -5,7 +5,29 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
+        {"inherits": "New Year’s Day", "type": "nD", "start": {"mon": 1, "d": 1}, "end": {"mon": 1, "d": 2}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 1, "d": 6}},
+        {"type": "1D", "start": {"mon": 1, "d": 28}, "titles": {"en": "Army Day", "hy": "Բանակի օր"}, "urls": {"en": "https://en.wikipedia.org/wiki/Army_Day_(Armenia)"}, "1st": {"era": 1, "y": 2001}},
+        {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}, "1st": {"type": "1D", "era": 1, "y": 2021}},
         {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2015}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"inherits": "Victory Day (May 9)", "type": "1D", "start": {"mon": 5, "d": 9}},
+        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 5, "d": 28}, "urls": {"en": "https://en.wikipedia.org/wiki/Republic_Day_(Armenia)"}, "1st": {"era": 1, "y": 1988}},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 7, "d": 5}, "1st": {"era": 1, "y": 1995}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 9, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Armenia)"}, "1st": {"era": 1, "y": 1991}},
+        {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
+
+        {"inherits": "International Mother Language Day", "type": "1D", "start": {"mon": 2, "d": 21}, "1st": {"type": "1D", "era": 1, "y": 2000}},
+        {"titles": {"en": "Saint Vardanian’s Day", "hy": "Սուրբ Վարդանանց տոն՝ բարի գործի և ազգային տուրքի օր"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}, "urls": {"en": "https://en.wikipedia.org/wiki/Vardan_Mamikonian"}},
+        {"type": "1D", "start": {"mon": 2, "d": 28}, "titles": {"en": "Day of remembrance for victims of massacres organized in Azerbaijan SSR and protection of rights of Armenian refugees", "hy": "Ադրբեջանական ԽՍՀ-ում կազմակերպված ջարդերի զոհերի հիշատակի և բռնագաղթված հայ բնակչության իրավունքների պաշտպանության օր"}},
+        {"type": "1D", "start": {"mon": 4, "d": 7}, "titles": {"en": "Motherhood and Beauty Day", "hy": "Մայրության և գեղեցկության օր"}, "urls": {"en": "https://en.wikipedia.org/wiki/Motherhood_and_Beauty_Day"}, "emoji": "👩‍👧‍👧"},
+        {"type": "1D", "start": {"mon": 4, "d": 16}, "titles": {"en": "Day of Armenian Cinema", "hy": "Հայ կինոյի օր"}, "emoji": "🎞"},
+        {"type": "1D", "start": {"mon": 4, "d": 25, "thruD": 30, "wkd": [7]}, "inherits": "Day of the Citizen of the Republic of Armenia", "1st": {"era": 1, "y": 2018}},
+        {"type": "1D", "start": {"mon": 4, "d": 25, "wkd": [1]}, "inherits": "Day of the Citizen of the Republic of Armenia", "1st": {"era": 1, "y": 2018}},
+        {"type": "1D", "start": {"mon": 5, "d": 8}, "titles": {"en": "Defenders of the Country Day", "hy": "Երկրապահի օր"}, "emoji": "🛡"},
+        {"type": "1D", "start": {"mon": 5, "d": 15}, "inherits": "Family Day"},
+        {"type": "1D", "start": {"mon": 5, "d": 16}, "titles": {"en": "Students and Youth Day", "hy": "Ուսանողների եւ երիտասարդների օր"}, "emoji": "👨‍🎓👩‍🎓"},
+        {"type": "1D", "start": {"mon": 6, "d": 1}, "titles": {"en": "Protection of Children’s Rights Day", "hy": "Երեխաների իրավունքների պաշտպանության օր"}, "emoji": "👦👧"},
 
     ]
 }

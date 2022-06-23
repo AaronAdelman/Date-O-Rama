@@ -17,7 +17,7 @@
         {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1957}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)"}},
         {"inherits": "Remembrance Day", "type": "1D", "start": {"d": 11, "mon": 11}, "1st": {"era": 1, "y": 1919}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
-        {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Family Day", "fr": "Fête de la famille"}, "1st": {"era": 1, "y": 1990}, "urls": {"en": "https://en.wikipedia.org/wiki/Family_Day_(Canada)"}},
+        {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "inherits": "Family Day", "1st": {"era": 1, "y": 1990}, "urls": {"en": "https://en.wikipedia.org/wiki/Family_Day_(Canada)"}},
         {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Louis Riel Day", "fr": "Journée Louis Riel"}},
         {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Islander Day", "fr": "Fête des Insulaires"}},
         {"inherits": "Heritage Day", "type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}},
