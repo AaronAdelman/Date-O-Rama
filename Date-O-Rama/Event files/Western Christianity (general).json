@@ -261,7 +261,7 @@
         {"titles": {"en": "Sexagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -56}},
         {"titles": {"en": "Fat Thursday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}, "emoji": "🍩", "urls": {"en": "https://www.daysoftheyear.com/days/fat-thursday/"}},
         {"titles": {"en": "Quinquagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -49}},
-        {"titles": {"en": "Shrove Monday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -48}},
+        {"inherits": "Shrove Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -48}},
         {"inherits": "Shrove Tuesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -47}},
         {"inherits": "Ash Wednesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -46}},
         {"titles": {"en": "Lent (day 2)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -45}},
