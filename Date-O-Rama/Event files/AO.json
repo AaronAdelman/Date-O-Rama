@@ -16,6 +16,7 @@
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}, "1st": {"type": "1D", "era": 1, "y": 2021}},
         {"type": "1D", "start": {"mon": 3, "d": 23}, "titles": {"en": "Day of Southern Africa Liberation", "pt": "Dia da Libertação da África Austral"}},
         {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
+        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"type": "1D", "start": {"mon": 4, "d": 4}, "titles": {"en": "Day of Peace and Reconciliation", "pt": "Dia da Paz e Reconciliação"}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "National Heroes Day", "type": "1D", "start": {"mon": 9, "d": 17}},
