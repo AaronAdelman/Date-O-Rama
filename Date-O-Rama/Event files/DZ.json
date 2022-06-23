@@ -1,11 +1,17 @@
 {
     "titles": {"*": "DZ"},
     "//": "Algeria",
+    "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.48, "blue": 0.2},
     "eventSpecifications": [
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"type": "1D", "start": {"mon": 1, "d": 12}, "titles": {"en": "Amazigh New Year"}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 5}},
+        {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
     ]
 }
-

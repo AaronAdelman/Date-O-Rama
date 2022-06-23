@@ -9,6 +9,7 @@
         {"type": "1D", "start": {"d": 30, "mon": 11}, "titles": {"en": "Bonifacio Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Bonifacio_Day"}, "1st": {"era": 1, "y": 1901}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 6, "d": 12}, "urls": {"en": "https://nationaltoday.com/philippines-independence-day/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         ]
     }
 

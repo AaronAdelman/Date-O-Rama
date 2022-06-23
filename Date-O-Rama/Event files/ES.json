@@ -14,6 +14,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
         {"inherits": "Corpus Christi", "type": "1D", "start": {"Easter": "Easter", "offsetD": 60}},
         {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
-
+        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
     ]
 }
