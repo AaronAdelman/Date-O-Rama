@@ -77,6 +77,7 @@
         {"template": "Asr (Hanafi)", "titles": {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "ISNA"}},
         {"template": "Asr (Shafii)", "titles": {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "ISNA"}},
         {"template": "Assumption of Mary", "titles": {"en": "Assumption of Mary", "nl": "Onze Lieve Vrouw hemelvaart", "fr": "Assomption", "de": "Mariä Himmelfahrt", "sq": "Dita Shën Marisë or Pashka e Vogël", "ca": "Assumpció"}, "type": "1D", "start": {"mon": 8, "d": 15}},
+        {"template": "Australia Day", "type": "1D", "start": {"mon": 1, "d": 26}, "titles": {"en": "Australia Day"}, "urls": {"en": "https://www.australiaday.org.au/"}},
         {"template": "Autumnal Equinox", "titles": {"en": "Autumnal Equinox", "he": "שוויון סתווי"}, "type": "pt", "start": {"equinoxOrSolstice": "Sep"}},
         {"template": "Beheading of St. John the Baptist", "titles": {"en": "Beheading of St. John the Baptist"}, "type": "1D", "start": {"mon": 8, "d": 29}},
         {"template": "Beltane", "titles": {"en": "Beltane", "he": "בלטיין"}, "type": "1D", "start": {"mon": 5, "d": 1}},
