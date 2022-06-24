@@ -18,8 +18,8 @@
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
 
         {"inherits": "International Mother Language Day", "type": "1D", "start": {"mon": 2, "d": 21}, "1st": {"type": "1D", "era": 1, "y": 2000}},
-        {"titles": {"en": "Saint Vardanian’s Day", "hy": "Սուրբ Վարդանանց տոն՝ բարի գործի և ազգային տուրքի օր"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}, "urls": {"en": "https://en.wikipedia.org/wiki/Vardan_Mamikonian"}},
-        {"type": "1D", "start": {"mon": 2, "d": 28}, "titles": {"en": "Day of remembrance for victims of massacres organized in Azerbaijan SSR and protection of rights of Armenian refugees", "hy": "Ադրբեջանական ԽՍՀ-ում կազմակերպված ջարդերի զոհերի հիշատակի և բռնագաղթված հայ բնակչության իրավունքների պաշտպանության օր"}},
+        {"titles": {"en": "St. Vardanian’s Day", "hy": "Սուրբ Վարդանանց տոն՝ բարի գործի և ազգային տուրքի օր"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}, "urls": {"en": "https://en.wikipedia.org/wiki/Vardan_Mamikonian"}},
+        {"type": "1D", "start": {"mon": 2, "d": 28}, "titles": {"en": "Day of Remembrance for Victims of Massacres Organized in Azerbaijan SSR and Protection of Rights of Armenian Refugees", "hy": "Ադրբեջանական ԽՍՀ-ում կազմակերպված ջարդերի զոհերի հիշատակի և բռնագաղթված հայ բնակչության իրավունքների պաշտպանության օր"}},
         {"type": "1D", "start": {"mon": 4, "d": 7}, "titles": {"en": "Motherhood and Beauty Day", "hy": "Մայրության և գեղեցկության օր"}, "urls": {"en": "https://en.wikipedia.org/wiki/Motherhood_and_Beauty_Day"}, "emoji": "👩‍👧‍👧"},
         {"type": "1D", "start": {"mon": 4, "d": 16}, "titles": {"en": "Day of Armenian Cinema", "hy": "Հայ կինոյի օր"}, "emoji": "🎞"},
         {"type": "1D", "start": {"mon": 4, "d": 25, "thruD": 30, "wkd": [7]}, "inherits": "Day of the Citizen of the Republic of Armenia", "1st": {"era": 1, "y": 2018}},
@@ -28,6 +28,15 @@
         {"type": "1D", "start": {"mon": 5, "d": 15}, "inherits": "Family Day"},
         {"type": "1D", "start": {"mon": 5, "d": 16}, "titles": {"en": "Students and Youth Day", "hy": "Ուսանողների եւ երիտասարդների օր"}, "emoji": "👨‍🎓👩‍🎓"},
         {"type": "1D", "start": {"mon": 6, "d": 1}, "titles": {"en": "Protection of Children’s Rights Day", "hy": "Երեխաների իրավունքների պաշտպանության օր"}, "emoji": "👦👧"},
-
+        {"type": "1D", "start": {"mon": 6, "d": 14}, "titles": {"en": "Day of Remembrance for the Oppressed", "hy": "Բռնադատվածների հիշատակի օր"}},
+        {"titles": {"en": "Holiday of St. Etchmiadzin", "hy": "Սուրբ Էջմիածնի տոն"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 64}},
+        {"type": "1D", "start": {"mon": 9, "d": 1}, "titles": {"en": "Knowledge and School Day", "hy": "Գիտելիքի և դպրության օր"}, "emoji": "👨‍🏫👩‍🏫"},
+        {"type": "1D", "start": {"mon": 9, "d": 12}, "titles": {"en": "Sparapet Day", "hy": "Սպարապետի օր"}, "urls": {"en": "https://en.wikipedia.org/wiki/Mkhitar_Sparapet#Sparapet_Day"}},
+        {"inherits": "Teacher’s Day", "type": "1D", "start": {"mon": 10, "d": 5}},
+        {"type": "1D", "start": {"mon": 10, "wkd": [7], "wkdRecurrence": 2}, "titles": {"en": "Translators’ Day", "hy": "Թարգմանչաց տոն"}},
+        {"type": "1D", "start": {"mon": 11, "d": 10}, "titles": {"en": "Day of Local Self-Governance", "hy": "Տեղական ինքնակառավարման օր"}},
+        {"type": "1D", "start": {"mon": 12, "d": 7}, "titles": {"en": "Day of Remembrance for Earthquake Victims and Disaster Resistance", "hy": "Երկրաշարժի զոհերի հիշատակի օր"}},
+        {"type": "1D", "start": {"mon": 12, "d": 9}, "titles": {"en": "Day of Condemning and Preventing Genocides", "hy": "Ցեղասպանությունների դատապարտման եւ կանխարգելման օր"}},
+        {"inherits": "Vardavar", "type": "1D", "start": {"Easter": "Easter", "offsetD": 98}},
     ]
 }

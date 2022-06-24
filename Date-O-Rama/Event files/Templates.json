@@ -230,9 +230,11 @@
         {"template": "Talk Like Shakespeare Day", "titles": {"en": "Talk Like Shakespeare Day"}, "type": "1D", "start": {"mon": 4, "d": 23}, "urls": {"en": "http://www.talklikeshakespeare.org/"}, "emoji": "🎭"},
         {"template": "Tartan Day", "type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "Tartan Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
         {"template": "Taurus", "titles": {"en": "Taurus", "he": "שור"}, "type": "1M", "start": {"mon": 9}, "emoji": "♉️", "inherits": "*Astrology*"},
-        {"template": "Teacher’s Day", "titles": {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم", "sq": "Dita e Mësuesit"}, "type": "1D", "start": {"mon": 3, "d": 23}, "emoji": "👨‍🏫👩‍🏫"},
+        {"template": "Teacher’s Day", "titles": {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم", "sq": "Dita e Mësuesit", "hy": "Ուսուցչի օր"}, "type": "1D", "start": {"mon": 3, "d": 23}, "emoji": "👨‍🏫👩‍🏫"},
         {"template": "Thanksgiving Day", "titles": {"en": "Thanksgiving Day", "he": "חג ההודיה", "fr": "Action de grâce", "es": "Acción de Gracias"}, "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"}, "emoji": "🦃"},
         {"template": "Valentine’s Day", "titles": {"en": "Valentine’s Day", "he": "יום ולנטיין", "ar": "عيد الحب", "es": "Día de San Valentín", "fr": "Jour de la Saint-Valentin"}, "type": "1D", "start": {"mon": 2, "d": 14}, "emoji": "❤️", "urls": {"en": "https://www.daysoftheyear.com/days/valentines-day/"}},
+        {"template": "Vardavar", "titles": {"en": "Vardavar", "hy": "Վարդավառ"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 98}, "urls": {"en": "https://en.wikipedia.org/wiki/Vardavar"}, "emoji": "💦"},
+
         {"template": "Vernal Equinox", "titles": {"en": "Vernal Equinox", "he": "שוויון אביבי"}, "type": "pt", "start": {"equinoxOrSolstice": "Mar"}},
         {"template": "Vesak", "titles": {"en": "Vesak", "he": "ווסק"}, "type": "1D", "start": {"zmoPhase": "1stFull", "mon": 5}, "urls": {"en": "https://en.wikipedia.org/wiki/Vesak"}, "emoji": "🎂", "notes": {"en": "Buddha Jayanti\nBuddha Purnima\nBuddha Day\nBuddha’s Birthday"}},
         {"template": "Veterans Day", "type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Veterans Day", "fr": "Journée des anciens combattants", "es": "Día del Veterano"}},
