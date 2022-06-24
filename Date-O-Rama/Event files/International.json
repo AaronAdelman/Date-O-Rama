@@ -1,7 +1,7 @@
 {
     "titles": {"en": "International", "he": "בינלאומי"},
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.35, "green": 0.60, "blue": 0.85},
     "emoji": "🇺🇳",
     "eventSpecifications": [

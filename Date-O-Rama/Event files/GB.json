@@ -2,7 +2,7 @@
     "titles": {"*": "GB"},
     "//": "United Kingdom",
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.72, "green": 0.17, "blue": 0.21},
     "eventSpecifications": [
         {"inherits": "Burns Night", "type": "1D", "start": {"d": 25, "mon": 1}, "1st": {"era": 1, "y": 1801}},
@@ -40,7 +40,7 @@
         {"type": "1D", "start": {"mon": 7, "d": 13, "thruD": 14, "wkd": [2]}, "titles": {"en": "Orangemen’s Day Holiday"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
         {"type": "1D", "start": {"mon": 12, "d": 27, "thruD": 29, "wkd": [2]}, "titles": {"en": "Substitute Bank Holiday for Christmas Day"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"type": "1D", "start": {"mon": 6, "d": 11}, "titles": {"en": "Queen’s Birthday"}, "inherits": "*BDay*", "urls": {"en": "https://en.wikipedia.org/wiki/Queen%27s_Official_Birthday"}},
+        {"type": "1D", "start": {"mon": 6, "d": 11}, "inherits": "Queen’s Birthday"},
         
         {"type": "1D", "start": {"mon": 6, "d": 22}, "titles": {"en": "Windrush Day"}, "urls": {"en": "https://nationaltoday.com/windrush-day/"}, "1st": {"era": 1, "y": 2018}},
         {"inherits": "Armed Forces Day", "type": "1D", "start": {"mon": 6, "wkd": [7], "wkdRecurrence": -1}, "urls": {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}},

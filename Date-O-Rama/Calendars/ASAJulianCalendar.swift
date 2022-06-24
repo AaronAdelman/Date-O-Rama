@@ -812,7 +812,7 @@ func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, m
     let JulianDayOfWeek = day_of_week(year: astronomicalYear, mo: JulianComponents.mo, day: day)
     let (era, year) = astronomicalYear.eraAndYearFromAstronomicalYear
     let month: Int = JulianComponents.mo
-    assert(isValidJulianDate(era: era, year: year, month: month, day: day))
+//    assert(isValidJulianDate(era: era, year: year, month: month, day: day))
     return (era, year, month, day, JulianDayOfWeek, GregorianComponents.hour!, GregorianComponents.minute!, GregorianComponents.second!, GregorianComponents.nanosecond!)
 } // func JulianComponents(date: Date, timeZone: TimeZone) -> (era: Int, year: Int, month: Int, day: Int, weekday: Int)
 

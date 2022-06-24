@@ -2,7 +2,7 @@
     "titles": {"*": "BD"},
     "//": "Bangladesh",
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.17, "green": 0.41, "blue": 0.31},
     "eventSpecifications": [
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 26, "mon": 3}},

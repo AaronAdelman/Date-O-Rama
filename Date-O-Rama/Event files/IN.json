@@ -2,7 +2,7 @@
     "titles": {"*": "IN"},
     "//": "India",
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.95, "green": 0.62, "blue": 0.29},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 1}, "titles": {"en": "Pravasi Bharatiya Diwas/NRI (Non-Resident Indian) Day"}, "1st": {"era": 1, "y": 2003}, "urls": {"en": "https://en.wikipedia.org/wiki/Pravasi_Bharatiya_Divas"}},

@@ -2,7 +2,7 @@
     "titles": {"*": "CA"},
     "//": "Canada",
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.77, "green": 0.24, "blue": 0.17},
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},

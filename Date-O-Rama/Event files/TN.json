@@ -2,7 +2,7 @@
     "titles": {"*": "TN"},
     "//": "Tunisia",
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.80, "green": 0.17, "blue": 0.15},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Martyrs’ Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day#Tunisia"}},

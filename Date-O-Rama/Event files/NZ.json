@@ -2,7 +2,7 @@
     "titles": {"*": "NZ"},
     "//": "New Zealand",
     "defaultLocale": "en",
-    "calendarCode": "gre*",
+    "calendarCode": "gre",
     "calendarColor": {"red": 0.14, "green": 0.34, "blue": 0.48},
     "eventSpecifications": [
         {"inherits": "Anzac Day", "type": "1D", "start": {"mon": 4, "d": 25}, "1st": {"era": 1, "y": 1916}},
