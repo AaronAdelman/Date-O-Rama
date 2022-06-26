@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASANewClockDetailView: View {
-    @State var selectedRow:  ASAClock = ASAClock.generic
+    @State var selectedClock:  ASAClock = ASAClock.generic
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -42,9 +42,7 @@ struct ASANewClockDetailView: View {
 
                     Button("Add") {
                         let userData = ASAUserData.shared
-                        userData.mainClocks.insert(self.selectedRow, at: 0)
-                        userData.savePreferences(code: .clocks)
-
+                        userData.addMainClock(clock: self.selectedClock)
                         self.dismiss()
                     }
 
@@ -52,7 +50,7 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedClock: selectedRow, now: now, shouldShowTime: true, forAppleWatch: false)
+                    ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: true, forAppleWatch: false)
                 } // List
             } // VStack
         } // NavigationView
@@ -68,6 +66,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedRow: ASAClock.generic, now: Date())
+        ASANewClockDetailView(selectedClock: ASAClock.generic, now: Date())
     }
 }

@@ -519,4 +519,9 @@ extension ASAUserData {
             self.savePreferences(code: .clocks)
         }
     } // func removeMainClock(uuid: UUID)
+    
+    func addMainClock(clock: ASAClock) {
+        self.mainClocks.insert(clock, at: 0)
+        self.savePreferences(code: .clocks)
+    } // func addMainClock(clock: ASAClock)
 } // extension ASAUserData
