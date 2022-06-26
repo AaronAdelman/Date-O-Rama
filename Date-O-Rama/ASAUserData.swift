@@ -351,10 +351,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         self.objectWillChange.send()
         
         if code == .clocks {
-            let processedMainRows = self.processedRowArray(rowArray: self.mainClocks, forComplication: false)
+            let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks, forComplication: false)
 
             let temp1a: Dictionary<String, Any> = [
-                ASAClockArrayKey.app.rawValue:  processedMainRows
+                ASAClockArrayKey.app.rawValue:  processedMainClocks
             ]
 
             writePreferences(temp1a, code: .clocks)
@@ -362,11 +362,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
-                let processedThreeLargeClocks = self.processedRowArray(rowArray: self.threeLineLargeClocks, forComplication: true)
-                let processedTwoLineLargeClocks = self.processedRowArray(rowArray: self.twoLineLargeClocks, forComplication: true)
-                let processedTwoLineSmallClocks = self.processedRowArray(rowArray: self.twoLineSmallClocks, forComplication: true)
-                let processedOneLineLargeClocks = self.processedRowArray(rowArray: self.oneLineLargeClocks, forComplication: true)
-                let processedOneLineSmallClocks = self.processedRowArray(rowArray: self.oneLineSmallClocks, forComplication: true)
+                let processedThreeLargeClocks = self.processedClocksArray(clocksArray: self.threeLineLargeClocks, forComplication: true)
+                let processedTwoLineLargeClocks = self.processedClocksArray(clocksArray: self.twoLineLargeClocks, forComplication: true)
+                let processedTwoLineSmallClocks = self.processedClocksArray(clocksArray: self.twoLineSmallClocks, forComplication: true)
+                let processedOneLineLargeClocks = self.processedClocksArray(clocksArray: self.oneLineLargeClocks, forComplication: true)
+                let processedOneLineSmallClocks = self.processedClocksArray(clocksArray: self.oneLineSmallClocks, forComplication: true)
 
                 let temp2: Dictionary<String, Any> = [
                     ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
@@ -393,9 +393,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK: - Translation between JSON and model objects
 
-    private func processedRowArray(rowArray:  Array<ASAClock>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
+    private func processedClocksArray(clocksArray:  Array<ASAClock>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
-        for row in rowArray {
+        for row in clocksArray {
             let dictionary = row.dictionary(forComplication: forComplication)
             temp.append(dictionary)
         }

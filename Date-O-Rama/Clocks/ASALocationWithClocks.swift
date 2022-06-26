@@ -28,5 +28,13 @@ extension Array where Element == ASALocationWithClocks {
         } // for locationWithClocks in self
         return result
     } // func processed(now:  Date) -> Array<ASALocationWithProcessedClocks>
+    
+    var clocks: Array<ASAClock> {
+        var result: Array<ASAClock> = []
+        for entry in self {
+            result.append(contentsOf: entry.clocks)
+        } // for entry in self
+        return result
+    } // var clocks: Array<ASAClock>
 } // extension Array where Element == ASALocationWithClocks
 
