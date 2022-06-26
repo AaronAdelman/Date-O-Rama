@@ -510,6 +510,13 @@ extension ASAUserData {
     
     var numberOfMainClocks: Int {
         return self.mainClocks.count
-    }
+    } // var numberOfMainClocks: Int
     
+    func removeMainClock(uuid: UUID) {
+        let index = self.mainClocks.firstIndex(where: {$0.uuid == uuid})
+        if index != nil {
+            self.mainClocks.remove(at: index!)
+            self.savePreferences(code: .clocks)
+        }
+    } // func removeMainClock(uuid: UUID)
 } // extension ASAUserData

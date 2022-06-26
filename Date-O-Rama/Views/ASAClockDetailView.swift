@@ -49,12 +49,8 @@ struct ASAClockDetailView: View {
                         .actionSheet(isPresented: self.$showingActionSheet) {
                             ActionSheet(title: Text("Are you sure you want to delete this clock?"), buttons: [
                                 .destructive(Text("Delete This Clock")) {
-                                    let index = self.userData.mainClocks.firstIndex(where: {$0.uuid == selectedClock.uuid})
-                                    if index != nil {
-                                        self.userData.mainClocks.remove(at: index!)
-                                        self.userData.savePreferences(code: .clocks)
-                                        self.dismiss()
-                                    }
+                                    self.userData.removeMainClock(uuid: selectedClock.uuid)
+                                    self.dismiss()
                                 },
                                 .cancel()
                             ])
