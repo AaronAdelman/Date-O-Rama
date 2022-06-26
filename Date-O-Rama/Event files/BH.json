@@ -1,10 +1,16 @@
 {
     "titles": {"*": "BH"},
     "//": "Bahrain",
+    "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 12, "d": 16}},
+        {"type": "1D", "start": {"mon": 12, "d": 17}, "titles": {"en": "Accession Day", "ar": "يوم الجلوس"}},
+
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
     ]
 }
