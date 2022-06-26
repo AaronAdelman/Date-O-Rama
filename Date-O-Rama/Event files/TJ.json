@@ -5,6 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        
+        {"type": "1D", "start": {"mon": 6, "d": 27}, "1st": {"era": 1, "y": 1998}, "titles": {"en": "Day of National Unity"}, "urls": {"en": "https://nationaltoday.com/day-of-national-unity-tajikistan/"}},
+
     ]
 }
