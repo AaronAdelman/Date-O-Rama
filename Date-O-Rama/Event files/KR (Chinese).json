@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "KR"},
+    "//": "South Korea",
+    "defaultLocale": "en",
+    "calendarCode": "chi",
+    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "eventSpecifications": [
+        {"type": "nD", "start": {"mon": 1, "d": 1}, "end": {"mon": 1, "d": 3}, "inherits": "Chinese New Year"},
+    ]
+}

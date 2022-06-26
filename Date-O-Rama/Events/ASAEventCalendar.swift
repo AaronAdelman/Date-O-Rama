@@ -1173,24 +1173,50 @@ class ASAEventCalendar {
 
 // MARK: -
 
+struct ASABuiltInEventCalendarFileRecord {
+    var fileName: String
+    var emoji: String?
+    var eventCalendarNameWithoutPlaceName: String
+    var numberOfEventSpecifications: Int
+    var color: SwiftUI.Color
+}
+
+class ASABuiltInEventCalendarFileData {
+    var records: Array<ASABuiltInEventCalendarFileRecord> = []
+}
+
 extension ASAEventCalendar {
-    class func builtInEventCalendarFileNames(calendarCode:  ASACalendarCode) -> Array<String> {
+    fileprivate static var builtInEventCalendarFileNamesCache = NSCache<NSString, ASABuiltInEventCalendarFileData>()
+
+    class func builtInEventCalendarFileRecords(calendarCode:  ASACalendarCode) -> ASABuiltInEventCalendarFileData {
+        let temp = ASAEventCalendar.builtInEventCalendarFileNamesCache.object(forKey: NSString(string: calendarCode.rawValue))
+        if temp != nil {
+            return temp!
+        }
+        
         let mainBundle = Bundle.main
         let URLs = mainBundle.urls(forResourcesWithExtension: "json", subdirectory: nil)
         let rawFileNames: Array<String> = URLs!.map {
             $0.deletingPathExtension().lastPathComponent
         }
         
-        var unsortedFileNameTuples: Array<(fileName: String, localizedTitle: String)> = []
+        var unsortedRecords: Array<ASABuiltInEventCalendarFileRecord> = []
         let localeIdentifier: String = Locale.current.identifier
         for fileName in rawFileNames {
             let (eventsFile, _) = ASAEventsFile.builtIn(fileName: fileName)
-            if (eventsFile?.calendarCode ?? .none).matches(calendarCode) {
-                unsortedFileNameTuples.append((fileName: fileName, localizedTitle: eventsFile?.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier) ?? "???"))
+            if eventsFile != nil {
+                if eventsFile!.calendarCode.matches(calendarCode) {
+                    unsortedRecords.append(ASABuiltInEventCalendarFileRecord(fileName: fileName, emoji: eventsFile!.symbol, eventCalendarNameWithoutPlaceName: eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier) ?? "???", numberOfEventSpecifications: eventsFile!.eventSpecifications.count ?? 0, color: eventsFile!.calendarColor))
+                }
             }
         }
-        let fileNameTuples = unsortedFileNameTuples.sorted(by: {$0.localizedTitle < $1.localizedTitle})
-        return fileNameTuples.map {$0.fileName}
+        let records = unsortedRecords.sorted(by: {$0.eventCalendarNameWithoutPlaceName < $1.eventCalendarNameWithoutPlaceName})
+        let result = ASABuiltInEventCalendarFileData()
+        result.records = records
+        
+        ASAEventCalendar.builtInEventCalendarFileNamesCache.setObject(result, forKey: NSString(string: calendarCode.rawValue))
+        
+        return result
     } // static var builtInEventCalendarFileNames
 } // extension ASAEventCalendar
 

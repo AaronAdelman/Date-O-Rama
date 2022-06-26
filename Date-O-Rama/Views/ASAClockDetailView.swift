@@ -120,7 +120,7 @@ struct ASAClockDetailEditingSection:  View {
             } // Section
             
             if !forAppleWatch {
-                ASABuiltInEventCalendarsEditingSection(selectedClock: selectedClock, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileNames(calendarCode: selectedClock.calendar.calendarCode))
+                ASABuiltInEventCalendarsEditingSection(selectedClock: selectedClock, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileRecords(calendarCode: selectedClock.calendar.calendarCode))
                 
                 ASAICalendarEventCalendarsEditingSection(selectedClock: selectedClock)
             }
@@ -133,12 +133,12 @@ struct ASAClockDetailEditingSection:  View {
 
 struct ASABuiltInEventCalendarsEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
-    var builtInEventCalendarFileNames:  Array<String>
+    var builtInEventCalendarFileNames:  ASABuiltInEventCalendarFileData
     
     @State var selection = ASARegionCodeRegion.allRegions
     
     var body:  some View {
-        if builtInEventCalendarFileNames.count > 0 {
+        if builtInEventCalendarFileNames.records.count > 0 {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
                 if selectedClock.calendar.calendarCode == .Gregorian {
                     Picker(selection: $selection, label:
@@ -149,19 +149,19 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
                     })
                 }
                 
-                let fileNames = selectedClock.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileNames.filter({$0.regionCodeRegion == selection}) : builtInEventCalendarFileNames
-                ForEach(fileNames, id: \.self) {
-                    fileName
+                let records = selectedClock.calendar.calendarCode == .Gregorian ? builtInEventCalendarFileNames.records.filter({$0.fileName.regionCodeRegion == selection}) : builtInEventCalendarFileNames.records
+                ForEach(records, id: \.fileName) {
+                    record
                     in
-                    ASABuiltInEventCalendarCell(selectedClock: selectedClock, fileName: fileName)
+                    ASABuiltInEventCalendarCell(selectedClock: selectedClock, record: record)
                         .onTapGesture {
-                            if selectedClock.builtInEventCalendars.map({$0.fileName}).contains(fileName) {
-                                let fileNameIndex = selectedClock.builtInEventCalendars.firstIndex(where: {$0.fileName == fileName})
+                            if selectedClock.builtInEventCalendars.map({$0.fileName}).contains(record.fileName) {
+                                let fileNameIndex = selectedClock.builtInEventCalendars.firstIndex(where: {$0.fileName == record.fileName})
                                 if fileNameIndex != nil {
                                     selectedClock.builtInEventCalendars.remove(at: fileNameIndex!)
                                 }
                             } else {
-                                let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: fileName)
+                                let eventCalendar: ASAEventCalendar = ASAEventCalendar(fileName: record.fileName)
                                 if eventCalendar.eventsFile != nil {
                                     selectedClock.builtInEventCalendars.append(eventCalendar)
                                 }
@@ -181,13 +181,13 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 struct ASAICalendarEventCalendarsEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
     var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
-
+    
     var body:  some View {
-//        if selectedClock.calendar.usesISOTime && selectedClock.isICalendarCompatible {
+        //        if selectedClock.calendar.usesISOTime && selectedClock.isICalendarCompatible {
         if selectedClock.supportsExternalEvents {
-          Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
+            Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
                 ForEach(iCalendarEventCalendars, id:
-                        \.calendarIdentifier) {
+                            \.calendarIdentifier) {
                     calendar
                     in
                     ASAICalendarEventCalendarCell(selectedClock: selectedClock, title: calendar.title, color: calendar.color)
@@ -199,8 +199,8 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
                                 }
                             } else {
                                 let desiredEventCalendar: EKCalendar? = ASAEKEventManager.shared.allEventCalendars().first(where: {eventCalendar
-                                                                                                                                    in
-                                                                                                                            eventCalendar.title == calendar.title})
+                                    in
+                                    eventCalendar.title == calendar.title})
                                 if desiredEventCalendar != nil {
                                     selectedClock.iCalendarEventCalendars.append(desiredEventCalendar!)
                                 }
@@ -219,48 +219,29 @@ struct ASAICalendarEventCalendarsEditingSection:  View {
 
 struct ASABuiltInEventCalendarCell:  View {
     @ObservedObject var selectedClock:  ASAClock
-
-    var fileName:  String
-
+    
+    var record: ASABuiltInEventCalendarFileRecord
+    
     var body: some View {
         HStack(alignment: .top) {
-            ASACheckmarkCircleSymbol(on: selectedClock.builtInEventCalendars.map({$0.fileName}).contains(fileName))
-//                .foregroundColor(eventCalendar.color)
+            ASACheckmarkCircleSymbol(on: selectedClock.builtInEventCalendars.map({$0.fileName}).contains(record.fileName))
+                            .foregroundColor(record.color)
             VStack(alignment: .leading) {
-                if fileName.count == 2 {
-                    HStack {
-                        let locale = Locale.current
-                        let title = locale.localizedString(forRegionCode: fileName) ?? "???"
-                        let emoji: String? = fileName.flag
-                        if emoji != nil {
-                            Text(verbatim: emoji!)
-                        }
-                        Text(verbatim: title)
-                            .font(.headline)
+                HStack {
+                    let emoji: String? = record.emoji
+                    if emoji != nil {
+                        Text(verbatim: emoji!)
                     }
-                } else {
-                    let eventCalendar = ASAEventCalendar(fileName: fileName)
-                    HStack {
-                        let emoji: String? = eventCalendar.eventsFile?.symbol
-                        if emoji != nil {
-                            Text(verbatim: emoji!)
-                        }
-                        Text(verbatim: eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: Locale.current.identifier))
-                            .font(.headline)
-                    }
-                    if eventCalendar.error != nil {
-                        Text(verbatim: eventCalendar.error!.localizedDescription)
-                            .font(.headline)
-                            .foregroundColor(.secondary)
-                    }
+                    Text(verbatim: record.eventCalendarNameWithoutPlaceName)
+                        .font(.headline)
                 }
             } // VStack
             Spacer()
             
-//            let formatString : String = NSLocalizedString("n events", comment: "")
-//            let resultString : String = String.localizedStringWithFormat(formatString, eventCalendar.eventsFile!.eventSpecifications.count)
-//            Text(resultString)
-//                .foregroundColor(.secondary)
+            let formatString : String = NSLocalizedString("n events", comment: "")
+            let resultString : String = String.localizedStringWithFormat(formatString, record.numberOfEventSpecifications)
+            Text(resultString)
+                .foregroundColor(.secondary)
         } // HStack
     } //var body
 } // struct ASABuiltInEventCalendarCell
@@ -270,10 +251,10 @@ struct ASABuiltInEventCalendarCell:  View {
 
 struct ASAICalendarEventCalendarCell:  View {
     @ObservedObject var selectedClock:  ASAClock
-
+    
     var title:  String
     var color:  Color
-
+    
     var body: some View {
         HStack {
             ASACheckmarkCircleSymbol(on: selectedClock.iCalendarEventCalendars.map({$0.title}).contains(title))
