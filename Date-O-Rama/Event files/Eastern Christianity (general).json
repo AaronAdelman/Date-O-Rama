@@ -65,5 +65,8 @@
         
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}, "urls": {"en": "https://nationaltoday.com/holy-spirit-monday/"}},
 
+        {"inherits": "St. Florian’s Day", "type": "1D", "start": {"mon": 5, "d": 4}},
+        {"inherits": "St. Rupert’s Day", "type": "1D", "start": {"mon": 3, "d": 27}},        {"inherits": "Feast of St. Martin of Tours", "type": "1D", "start": {"mon": 10, "d": 12}},
+
     ]
 }
