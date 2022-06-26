@@ -108,7 +108,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         let oneLineLargeTemp   = self.rowArrayDictionary(key: .oneLineLarge, forComplication: true)
         let oneLineSmallTemp   = self.rowArrayDictionary(key: .oneLineSmall, forComplication: true)
   
-        let mainRowsTemp = self.rowArrayDictionary(key: .app, forComplication: false)
+        let mainClocksTemp = self.rowArrayDictionary(key: .app, forComplication: false)
 
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,
@@ -117,7 +117,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
             ASAClockArrayKey.twoLineSmall.rawValue:  twoLineSmallTemp,
             ASAClockArrayKey.oneLineLarge.rawValue:  oneLineLargeTemp,
             ASAClockArrayKey.oneLineSmall.rawValue:  oneLineSmallTemp,
-            ASAClockArrayKey.app.rawValue:  mainRowsTemp
+            ASAClockArrayKey.app.rawValue:  mainClocksTemp
             ] as [String : Any]
         
 //        session.sendMessage(updateMessage, replyHandler: nil, errorHandler: nil)

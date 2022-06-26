@@ -630,7 +630,39 @@ extension ASAClock {
 } // extension ASAClock
 
 
-struct ASALocationWithClocks {
-    var location: ASALocation
-    var clocks: Array<ASAClock>
-}
+// MARK:  -
+
+extension Array where Element == ASAClock {
+    func processed(now:  Date) -> Array<ASAProcessedClock> {
+        var result:  Array<ASAProcessedClock> = []
+
+        for row in self {
+            let processedRow = ASAProcessedClock(clock: row, now: now, isForComplications: false)
+            result.append(processedRow)
+        }
+
+        return result
+    } // func processed(now:  Date) -> Array<ASAProcessedClock>
+
+    var clocksByPlaceName: Array<ASALocationWithClocks> {
+        var result:  Array<ASALocationWithClocks> = []
+
+        for clock in self {
+            let key = clock.locationData
+            let index = result.firstIndex(where: {$0.location == key})
+            if index == nil {
+                result.append(ASALocationWithClocks(location: key, clocks: [clock]))
+            } else {
+                var itemAtIndex = result[index!]
+                itemAtIndex.clocks.append(clock)
+                result[index!] = itemAtIndex
+            }
+        } // for for clock in self
+
+        return result
+    } // func clocksByPlaceName(now:  Date) -> Array<ASALocationWithClocks>
+
+    fileprivate func noCountryString() -> String {
+        return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
+    }
+} // extension Array where Element == ASAClock

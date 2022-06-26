@@ -80,6 +80,10 @@
 		A50DA52B28686272008D54AE /* MO (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA51228686272008D54AE /* MO (Chinese).json */; };
 		A50DA52C28686272008D54AE /* TW (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA51328686272008D54AE /* TW (Chinese).json */; };
 		A50DA52D28686272008D54AE /* TW (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA51328686272008D54AE /* TW (Chinese).json */; };
+		A50DA52F28688BE7008D54AE /* ASALocationWithClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */; };
+		A50DA53028688BE7008D54AE /* ASALocationWithClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */; };
+		A50DA53228688CBC008D54AE /* ASALocationWithProcessedClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA53128688CBC008D54AE /* ASALocationWithProcessedClocks.swift */; };
+		A50DA53328688CBC008D54AE /* ASALocationWithProcessedClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA53128688CBC008D54AE /* ASALocationWithProcessedClocks.swift */; };
 		A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150EF525C0237300BC62C4 /* PDFKitView.swift */; };
 		A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */; };
 		A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */; };
@@ -1111,6 +1115,8 @@
 		A50DA51128686272008D54AE /* KR (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "KR (Chinese).json"; sourceTree = "<group>"; };
 		A50DA51228686272008D54AE /* MO (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MO (Chinese).json"; sourceTree = "<group>"; };
 		A50DA51328686272008D54AE /* TW (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TW (Chinese).json"; sourceTree = "<group>"; };
+		A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocks.swift; sourceTree = "<group>"; };
+		A50DA53128688CBC008D54AE /* ASALocationWithProcessedClocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithProcessedClocks.swift; sourceTree = "<group>"; };
 		A5150EF525C0237300BC62C4 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		A5150F0425C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
 		A5150F0625C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
@@ -2081,6 +2087,8 @@
 				A5C77C2E2433371700CFEE47 /* ASAClock.swift */,
 				A5C77C302433371800CFEE47 /* ASAClockArrayKey.swift */,
 				A5D62861243B80F100F3CC19 /* ASADateFormat.swift */,
+				A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */,
+				A50DA53128688CBC008D54AE /* ASALocationWithProcessedClocks.swift */,
 				A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */,
 				A5E4719D2463F938002BB471 /* ASATimeFormat.swift */,
 			);
@@ -3419,6 +3427,7 @@
 				A5DC8769264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
 				A5FA5A6B270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */,
 				A59D806C2600C6FB00FD8BBF /* ASADateSpecification.swift in Sources */,
+				A50DA53028688BE7008D54AE /* ASALocationWithClocks.swift in Sources */,
 				A59D806D2600C6FB00FD8BBF /* ASAEvent.swift in Sources */,
 				A57CA3262483EE1D00378EA7 /* ASALocationCell.swift in Sources */,
 				A5AAA7512657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */,
@@ -3478,6 +3487,7 @@
 				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
 				A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */,
 				A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
+				A50DA53328688CBC008D54AE /* ASALocationWithProcessedClocks.swift in Sources */,
 				A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */,
 				A53437532857971800F8E8AF /* ASAJulianCalendar.swift in Sources */,
 				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
@@ -3522,6 +3532,7 @@
 				A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */,
 				A5D8FE3825C6D77A00A29350 /* ASANewEKEventView.swift in Sources */,
 				A59D804E2600C6F800FD8BBF /* ASAEventCompatible.swift in Sources */,
+				A50DA52F28688BE7008D54AE /* ASALocationWithClocks.swift in Sources */,
 				A5D135C127C545AE00A1A525 /* ASACalendarSupportingEras.swift in Sources */,
 				A59D804F2600C6F800FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A5DC8765264A7DC300A8B9B5 /* TimeIntervalExtensions.swift in Sources */,
@@ -3537,6 +3548,7 @@
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,
 				A5AAA74926568452000C18AC /* ASAEditExternalEventButton.swift in Sources */,
 				A5DFD52F26824AEF0013189E /* ASAColorCircle.swift in Sources */,
+				A50DA53228688CBC008D54AE /* ASALocationWithProcessedClocks.swift in Sources */,
 				A52A238A279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */,
 				A5DFD52D26823CB80013189E /* ASASolarTimeView.swift in Sources */,
 				A59D80262600C57800FD8BBF /* ASACalendarComponent.swift in Sources */,

@@ -21,7 +21,7 @@ struct ASAComplicationClocksTab: View {
         case .twoLineLarge:
             return self.userData.twoLineLargeClocks
         case .app:
-            return self.userData.mainClocks
+            return []
         case .twoLineSmall:
             return self.userData.twoLineSmallClocks
         case .oneLineLarge:
