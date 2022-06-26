@@ -623,12 +623,14 @@ extension ASAClock {
         
         return (startDateString, endDateString)
     } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
-    
-//    var isGregorian: Bool {
-//        return self.calendar.calendarCode == .Gregorian
-//    } // var isGregorian
-    
+        
     var supportsExternalEvents: Bool {
         return self.calendar.usesISOTime && self.isICalendarCompatible
     }
 } // extension ASAClock
+
+
+struct ASALocationWithClocks {
+    var location: ASALocation
+    var clocks: Array<ASAClock>
+}

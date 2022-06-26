@@ -210,29 +210,61 @@ extension Array where Element == ASAClock {
         return result
     } // func processed(now:  Date) -> Array<ASAProcessedClock>
 
-    func processedRowsByPlaceName(now:  Date) -> Array<ASALocationWithProcessedClocks> {
-        var result:  Array<ASALocationWithProcessedClocks> = []
-        let processedRows = self.processed(now: now)
+    var clocksByPlaceName: Array<ASALocationWithClocks> {
+        var result:  Array<ASALocationWithClocks> = []
 
-        for processedRow in processedRows {
-            let key = processedRow.clock.locationData
+        for clock in self {
+            let key = clock.locationData
             let index = result.firstIndex(where: {$0.location == key})
             if index == nil {
-                result.append(ASALocationWithProcessedClocks(location: key, processedClocks: [processedRow]))
+                result.append(ASALocationWithClocks(location: key, clocks: [clock]))
             } else {
                 var itemAtIndex = result[index!]
-                itemAtIndex.processedClocks.append(processedRow)
+                itemAtIndex.clocks.append(clock)
                 result[index!] = itemAtIndex
             }
-        } // for processedRow in processedRows
+        } // for for clock in self
 
         return result
-    } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>>
+    } // func clocksByPlaceName(now:  Date) -> Array<ASALocationWithClocks>
+    
+//    func processedRowsByPlaceName(now:  Date) -> Array<ASALocationWithProcessedClocks> {
+//        var result:  Array<ASALocationWithProcessedClocks> = []
+//        let processedRows = self.processed(now: now)
+//
+//        for processedRow in processedRows {
+//            let key = processedRow.clock.locationData
+//            let index = result.firstIndex(where: {$0.location == key})
+//            if index == nil {
+//                result.append(ASALocationWithProcessedClocks(location: key, processedClocks: [processedRow]))
+//            } else {
+//                var itemAtIndex = result[index!]
+//                itemAtIndex.processedClocks.append(processedRow)
+//                result[index!] = itemAtIndex
+//            }
+//        } // for processedRow in processedRows
+//
+//        return result
+//    } // func processedRowsByPlaceName(now:  Date) -> Dictionary<String, Array<ASAProcessedClock>>
 
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
     }
 } // extension Array where Element == ASARow
+
+extension Array where Element == ASALocationWithClocks {
+    func processed(now:  Date) -> Array<ASALocationWithProcessedClocks> {
+        var result: Array<ASALocationWithProcessedClocks> = []
+        
+        for locationWithClocks in self {
+            let location = locationWithClocks.location
+            let processedClocks = locationWithClocks.clocks.processed(now: now)
+            let locationWithProcessedClocks = ASALocationWithProcessedClocks(location: location, processedClocks: processedClocks)
+            result.append(locationWithProcessedClocks)
+        } // for locationWithClocks in self
+        return result
+    } // func processed(now:  Date) -> Array<ASALocationWithProcessedClocks>
+} // extension Array where Element == ASALocationWithClocks
 
 
 // MARK: -

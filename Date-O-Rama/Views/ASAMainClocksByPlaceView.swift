@@ -14,7 +14,7 @@ struct ASAMainClocksByPlaceView:  View {
     @Binding var now:  Date
     
     var body:  some View {
-        let sections: Array<ASALocationWithProcessedClocks> = self.clocks.processedRowsByPlaceName(now: now)
+        let sections: Array<ASALocationWithProcessedClocks> = clocks.clocksByPlaceName.processed(now: now)
         ForEach(sections, id: \.self.location.id) {
             section
             in
