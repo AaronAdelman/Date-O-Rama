@@ -42,7 +42,7 @@
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 4}, "1st": {"era": 1, "y": 1776}, "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_(United_States)"}},
         {"type": "1D", "start": {"d": 2, "thruD": 8, "mon": 11, "wkd": [3]}, "titles": {"en": "Election Day", "he": "יום הבחירות", "ar": "يوم الانتخابات"}},
         {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "Gold Star Spouses Day"}, "1st": {"era": 1, "y": 2011}, "urls": {"en": "https://nationaldaycalendar.com/gold-star-spouses-day-april-5/"}, "emoji": "⭐️"},
-        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
+        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"}},
         {"type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "titles": {"en": "National Day of Mourning", "he": "יום אבל לאומי", "ar": "حداد وطني", "es": "Duelo nacional", "fr": "Deuil national"}, "1st": {"era": 1, "y": 1970}, "urls": {"en": "https://nationaldaycalendar.com/national-day-of-mourning-fourth-thursday-in-november/"}},
         {"type": "1D", "start": {"d": 23, "thruD": 29, "mon": 11, "wkd": [6]}, "titles": {"en": "Native American Heritage Day"}, "1st": {"type": "1D", "era": 1, "y": 2008}, "urls": {"en": "https://en.wikipedia.org/wiki/Native_American_Heritage_Day"}},
         {"type": "1D", "start": {"d": 17, "mon": 1}, "titles": {"en": "Benjamin Franklin Day"}, "urls": {"en": "https://nationaltoday.com/benjamin-franklin-day/"}, "inherits": "*BDay*"},

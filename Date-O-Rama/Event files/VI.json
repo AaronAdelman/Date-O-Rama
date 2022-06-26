@@ -24,7 +24,7 @@
         {"inherits": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Liberty Day"}, "emoji": "🗽"},
         {"inherits": "Veterans Day", "type": "1D", "start": {"d": 11, "mon": 11}},
-        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}},
+        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
