@@ -56,6 +56,7 @@ struct ASANewClockDetailView: View {
                 } // List
             } // VStack
             .font(Font.body)
+            .foregroundColor(.primary)
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
