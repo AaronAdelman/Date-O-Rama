@@ -6,6 +6,6 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 14}, "1st": {"era": 1, "y": 1996}},
     ]
 }

@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 4, "mon": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
     ]
 }

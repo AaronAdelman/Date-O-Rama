@@ -8,7 +8,8 @@
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 17, "mon": 8}},
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "d": 12}},
-    ]
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 12, "d": 22}},
+   ]
 }
 
 

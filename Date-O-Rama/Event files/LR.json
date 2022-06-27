@@ -6,5 +6,6 @@
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 12, "mon": 4}, "titles": {"en": "National Redemption Day"}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
     ]
 }

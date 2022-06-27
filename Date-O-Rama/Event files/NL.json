@@ -12,6 +12,6 @@
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
         {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 5, "d": 5}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
     ]
 }
