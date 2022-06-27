@@ -1,0 +1,13 @@
+{
+    "titles": {"*": "LB"},
+    "//": "Lebanon",
+    "defaultLocale": "en",
+    "calendarCode": "jul",
+    "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
+    "eventSpecifications": [
+        {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
+        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        
+    ]
+}
+
