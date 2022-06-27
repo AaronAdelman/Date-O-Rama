@@ -1,0 +1,11 @@
+{
+    "titles": {"*": "SY"},
+    "//": "Syria",
+    "defaultLocale": "en",
+    "calendarCode": "jul",
+    "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
+    "eventSpecifications": [
+        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+
+    ]
+}
