@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASAWatchEventsList: View {
-    var processedRow:  ASAProcessedClock
+    var processedClock:  ASAProcessedClock
     @State var eventVisibility:  ASAClockCellTimeEventVisibility = .defaultValue
     @State var allDayEventVisibility: ASAClockCellDateEventVisibility = .defaultValue
     @State var now:  Date
@@ -37,15 +37,15 @@ struct ASAWatchEventsList: View {
                     } // HStack
                 } // ForEach
             }
-            let numberOfDateEvents: Int = processedRow.dateEvents.count
+            let numberOfDateEvents: Int = processedClock.dateEvents.count
             if numberOfDateEvents > 0 {
-                let dateEvents = processedRow.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
-                ASAClockEventsForEach(processedRow: processedRow, events: dateEvents, now: $now)
+                let dateEvents = processedClock.dateEvents.trimmed(dateEventVisibility: allDayEventVisibility, now: now)
+                ASAClockEventsForEach(processedClock: processedClock, events: dateEvents, now: $now)
             }
-            let numberOfTimeEvents: Int = processedRow.timeEvents.count
+            let numberOfTimeEvents: Int = processedClock.timeEvents.count
             if numberOfTimeEvents > 0 {
-                let timeEvents = processedRow.timeEvents.trimmed(timeEventVisibility: eventVisibility, now: now)
-                ASAClockEventsForEach(processedRow: processedRow, events: timeEvents, now: $now)
+                let timeEvents = processedClock.timeEvents.trimmed(timeEventVisibility: eventVisibility, now: now)
+                ASAClockEventsForEach(processedClock: processedClock, events: timeEvents, now: $now)
             }
         } // List
     } // var body

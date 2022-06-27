@@ -83,7 +83,7 @@ struct ASAEventsTab: View {
                 
                 List {
                     Section {
-                        NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $primaryRowUUIDString)) {
+                        NavigationLink(destination:  ASAClocksChooser(selectedUUIDString:  $primaryRowUUIDString)) {
                             VStack(alignment:  .leading) {
                                 Text(verbatim: primaryRow.dateString(now: date))
                                     .font(.title)
@@ -101,7 +101,7 @@ struct ASAEventsTab: View {
                         }
                         
                         if eventsViewShouldShowSecondaryDates && self.enoughRowsToShowSecondaryDates() {
-                            NavigationLink(destination:  ASARowChooser(selectedUUIDString:  $secondaryRowUUIDString)) {
+                            NavigationLink(destination:  ASAClocksChooser(selectedUUIDString:  $secondaryRowUUIDString)) {
                                 VStack(alignment:  .leading) {
                                     if self.shouldHideTimesInSecondaryRow {
                                         Text(verbatim: secondaryRow.dateString(now: date)).font(.system(size: SECONDARY_ROW_FONT_SIZE))

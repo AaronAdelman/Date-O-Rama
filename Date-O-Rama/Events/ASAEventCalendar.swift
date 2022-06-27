@@ -1206,7 +1206,7 @@ extension ASAEventCalendar {
             let (eventsFile, _) = ASAEventsFile.builtIn(fileName: fileName)
             if eventsFile != nil {
                 if eventsFile!.calendarCode.matches(calendarCode) {
-                    unsortedRecords.append(ASABuiltInEventCalendarFileRecord(fileName: fileName, emoji: eventsFile!.symbol, eventCalendarNameWithoutPlaceName: eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier) ?? "???", numberOfEventSpecifications: eventsFile!.eventSpecifications.count ?? 0, color: eventsFile!.calendarColor))
+                    unsortedRecords.append(ASABuiltInEventCalendarFileRecord(fileName: fileName, emoji: eventsFile!.symbol, eventCalendarNameWithoutPlaceName: eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier), numberOfEventSpecifications: eventsFile!.eventSpecifications.count, color: eventsFile!.calendarColor))
                 }
             }
         }

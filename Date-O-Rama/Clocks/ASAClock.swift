@@ -637,14 +637,14 @@ extension Array where Element == ASAClock {
         var result:  Array<ASAProcessedClock> = []
 
         for row in self {
-            let processedRow = ASAProcessedClock(clock: row, now: now, isForComplications: false)
-            result.append(processedRow)
+            let processedClock = ASAProcessedClock(clock: row, now: now, isForComplications: false)
+            result.append(processedClock)
         }
 
         return result
     } // func processed(now:  Date) -> Array<ASAProcessedClock>
 
-    var clocksByPlaceName: Array<ASALocationWithClocks> {
+    var byLocation: Array<ASALocationWithClocks> {
         var result:  Array<ASALocationWithClocks> = []
 
         for clock in self {

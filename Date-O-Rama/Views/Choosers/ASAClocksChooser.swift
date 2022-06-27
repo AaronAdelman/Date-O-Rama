@@ -1,5 +1,5 @@
 //
-//  ASARowChooser.swift
+//  ASAClocksChooser.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 2020-05-13.
@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct ASARowChooser: View {
+struct ASAClocksChooser: View {
     @Binding var selectedUUIDString:  String
-    let mainRows = ASAUserData.shared.mainClocks
+    let clocks = ASAUserData.shared.mainClocks.clocks
     
     @Environment(\.presentationMode) var presentationMode
 
@@ -20,7 +20,7 @@ struct ASARowChooser: View {
     
     var body: some View {
         List {
-            ForEach(mainRows) {
+            ForEach(clocks) {
                 row
                 in
                 ASARowCell(selectedUUIDString: self.$selectedUUIDString, row: row)
@@ -61,6 +61,6 @@ struct ASARowCell: View {
 
 struct ASARowChooser_Previews: PreviewProvider {
     static var previews: some View {
-        ASARowChooser(selectedUUIDString: .constant(UUID().uuidString))
+        ASAClocksChooser(selectedUUIDString: .constant(UUID().uuidString))
     }
 }

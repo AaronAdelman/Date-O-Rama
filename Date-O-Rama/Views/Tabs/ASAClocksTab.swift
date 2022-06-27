@@ -16,7 +16,7 @@ struct ASAClocksTab: View {
     @State var now = Date()
     @State var usingRealTime = true
     
-    @State private var showingNewClockDetailView = false
+//    @State private var showingNewClockDetailView = false
         
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -61,25 +61,25 @@ struct ASAClocksTab: View {
                 
                 List {
                     DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
-                        Button(
-                            action: {
-                                self.showingNewClockDetailView = true
-                            }
-                        ) {
-                            HStack {
-                                Image(systemName: "plus.circle.fill")
-                                Text("Add clock")
-                            } // HStack
-                        }
-                        .foregroundColor(.accentColor)
+//                        Button(
+//                            action: {
+//                                self.showingNewClockDetailView = true
+//                            }
+//                        ) {
+//                            HStack {
+//                                Image(systemName: "plus.circle.fill")
+//                                Text("Add clock")
+//                            } // HStack
+//                        }
+//                        .foregroundColor(.accentColor)
                     } // DisclosureGroup
                     
-                    ASAMainClocksByPlaceView(clocks: $userData.mainClocks, now: $now)
+                    ASAMainClocksByLocationView(mainClocks: $userData.mainClocks, now: $now)
                 }
                 .listStyle(GroupedListStyle())
-                .sheet(isPresented: self.$showingNewClockDetailView) {
-                    ASANewClockDetailView(now:  now)
-                }
+//                .sheet(isPresented: self.$showingNewClockDetailView) {
+//                    ASANewClockDetailView(now:  now)
+//                }
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarBackButtonHidden(true)

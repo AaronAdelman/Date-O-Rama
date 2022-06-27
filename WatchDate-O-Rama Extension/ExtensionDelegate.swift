@@ -148,7 +148,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                     mainRows.append(itemAsRow)
                 }
                 DispatchQueue.main.async {
-                    ASAUserData.shared.mainClocks = mainRows
+                    ASAUserData.shared.mainClocks = mainRows.byLocation
                     ASAUserData.shared.savePreferences(code: .clocks)
                 }
             }

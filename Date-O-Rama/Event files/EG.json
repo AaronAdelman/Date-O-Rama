@@ -5,6 +5,16 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
     "eventSpecifications": [
+        {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 1, "d": 25}, "1st": {"era": 1, "y": 2012}, "titles": {"en": "Revolution Day 2011", "ar": "عيد ثورة 25 يناير"}},
+        {"titles": {"en": "National Police Day", "ar": "عيد الشرطة"}, "type": "1D", "start": {"mon": 1, "d": 25}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"}, "1st": {"era": 1, "y": 2009}},
+        {"titles": {"en": "Sinai Liberation Day", "ar": "عيد تحرير سيناء"}, "type": "1D", "start": {"mon": 4, "d": 25}, "1st": {"era": 1, "y": 1989}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"titles": {"en": "30 June Day", "ar": "عيد ثورة 30 يونيو"}, "type": "1D", "start": {"mon": 6, "d": 30}, "1st": {"era": 1, "y": 2014}},
+        {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 7, "d": 23}, "1st": {"era": 1, "y": 2012}, "titles": {"en": "Revolution Day", "ar": "عيد ثورة 23 يوليو"}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 23}},
+
+        {"inherits": "Armed Forces Day", "type": "1D", "start": {"mon": 10, "d": 6}, "1st": {"era": 1, "y": 1974}},
+
         {"titles": {"en": "Evacuation Day (Eid el-Galaa)"}, "type": "1D", "start": {"mon": 6, "d": 18}, "1st": {"era": 1, "y": 1956}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 21}},
     ]

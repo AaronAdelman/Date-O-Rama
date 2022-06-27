@@ -16,6 +16,8 @@ struct ASANewClockDetailView: View {
     @State private var showingActionSheet = false
 
     var now:  Date
+    
+    var tempLocation: ASALocation
 
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
@@ -33,12 +35,12 @@ struct ASANewClockDetailView: View {
                         self.showingActionSheet = true
                     }
 
-                    Spacer()
+                    Spacer().frame(minWidth: 0.0)
 
                     Text("New Clock")
                         .bold()
 
-                    Spacer()
+                    Spacer().frame(minWidth: 0.0)
 
                     Button("Add") {
                         let userData = ASAUserData.shared
@@ -50,9 +52,10 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: true, forAppleWatch: false)
+                    ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation)
                 } // List
             } // VStack
+            .font(Font.body)
         } // NavigationView
         .navigationViewStyle(StackNavigationViewStyle())
         .actionSheet(isPresented: self.$showingActionSheet) {
@@ -66,6 +69,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedClock: ASAClock.generic, now: Date())
+        ASANewClockDetailView(selectedClock: ASAClock.generic, now: Date(), tempLocation: ASALocation.NullIsland)
     }
 }

@@ -30,10 +30,12 @@ struct ASAClockDetailView: View {
     
     var forAppleWatch:  Bool
     
+    var tempLocation: ASALocation
+    
     var body: some View {
         NavigationView {
             List {
-                ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch)
+                ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch, tempLocation: tempLocation)
                 
                 if deletable {
                     Section(header:  Text("")){
@@ -72,6 +74,7 @@ struct ASAClockDetailEditingSection:  View {
     var now:  Date
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
+    var tempLocation: ASALocation
     
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
@@ -89,7 +92,7 @@ struct ASAClockDetailEditingSection:  View {
                 }
                 
                 if selectedClock.calendar.supportsTimeZones || selectedClock.calendar.supportsLocations {
-                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: ASALocation())) {
+                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
                         VStack {
                             ASALocationCell(usesDeviceLocation: self.selectedClock.usesDeviceLocation, locationData: self.selectedClock.locationData)
                             Spacer()
@@ -265,6 +268,6 @@ struct ASAICalendarEventCalendarCell:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedClock: ASAClock.generic, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true)
+        ASAClockDetailView(selectedClock: ASAClock.generic, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true, tempLocation: ASALocation.NullIsland)
     }
 }

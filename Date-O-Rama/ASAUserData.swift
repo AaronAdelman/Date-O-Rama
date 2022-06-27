@@ -42,7 +42,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     // MARK:  - Model objects
     
-    @Published var mainClocks:  Array<ASAClock> = [ASAClock.generic]
+    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])]
     
     private func reloadComplicationTimelines() {
         #if os(watchOS)
@@ -169,7 +169,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
      func rowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .app:
-            return self.mainClocks
+            return self.mainClocks.clocks
 
         case .threeLineLarge:
             return self.threeLineLargeClocks
@@ -245,7 +245,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
                     //                    debugPrint(#file, #function, jsonResult)
-                    self.mainClocks = ASAUserData.rowArray(key: .app, dictionary: jsonResult)
+                    self.mainClocks = ASAUserData.rowArray(key: .app, dictionary: jsonResult).byLocation
                     
                     genericSuccess = true
                 }
@@ -290,7 +290,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         if !genericSuccess {
-            mainClocks               = self.emptyRowArray(key: .app)
+            mainClocks               = self.emptyRowArray(key: .app).byLocation
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
@@ -351,7 +351,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         self.objectWillChange.send()
         
         if code == .clocks {
-            let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks, forComplication: false)
+            let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks.clocks, forComplication: false)
 
             let temp1a: Dictionary<String, Any> = [
                 ASAClockArrayKey.app.rawValue:  processedMainClocks
@@ -400,12 +400,12 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             temp.append(dictionary)
         }
         return temp
-    } // func processedRowArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
+    } // func processedClockArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
 
     public func setRowArray(rowArray: Array<ASAClock>, key: ASAClockArrayKey) {
         switch key {
         case .app:
-            self.mainClocks = rowArray
+            self.mainClocks = rowArray.byLocation
 
         case .threeLineLarge:
             self.threeLineLargeClocks = rowArray
@@ -476,7 +476,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 
     func mainClocksEvents(startDate:  Date, endDate:  Date) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
-        for clock in self.mainClocks {
+        for clock in self.mainClocks.clocks {
             let clockEvents = clock.events(startDate:  startDate, endDate:  endDate)
             unsortedEvents = unsortedEvents + clockEvents.dateEvents + clockEvents.timeEvents
         } // for for clock in self.mainClocks
@@ -496,13 +496,15 @@ extension ASAUserData {
             return ASAClock.generic
         }
         
-        let temp = self.mainClocks.first(where: {$0.uuid == tempUUID!})
-        if temp != nil {
-            return temp!
+        for locationWithClocks in self.mainClocks {
+            let temp = locationWithClocks.clocks.first(where: {$0.uuid == tempUUID!})
+            if temp != nil {
+                return temp!
+            }
         }
         
         if self.numberOfMainClocks >= backupIndex + 1 {
-            return self.mainClocks[backupIndex]
+            return self.mainClocks.clocks[backupIndex]
         }
         
         return ASAClock.generic
@@ -513,15 +515,27 @@ extension ASAUserData {
     } // var numberOfMainClocks: Int
     
     func removeMainClock(uuid: UUID) {
-        let index = self.mainClocks.firstIndex(where: {$0.uuid == uuid})
-        if index != nil {
-            self.mainClocks.remove(at: index!)
-            self.savePreferences(code: .clocks)
-        }
+        for i in 0..<self.mainClocks.count {
+            let index = self.mainClocks[i].clocks.firstIndex(where: {$0.uuid == uuid})
+            if index != nil {
+                self.mainClocks[i].clocks.remove(at: index!)
+                self.savePreferences(code: .clocks)
+                return
+            }
+        } // for i in 0..<self.mainClocks.count
     } // func removeMainClock(uuid: UUID)
     
     func addMainClock(clock: ASAClock) {
-        self.mainClocks.insert(clock, at: 0)
+        for i in 0..<self.mainClocks.count {
+            if self.mainClocks[i].location == clock.locationData {
+                self.mainClocks[i].clocks.insert(clock, at: 0)
+                self.savePreferences(code: .clocks)
+                return
+            }
+        } // for i in 0..<self.mainClocks.count
+        
+        let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock])
+        self.mainClocks.append(newLocationWithClocks)
         self.savePreferences(code: .clocks)
-    } // func addMainClock(clock: ASAClock)
+            } // func addMainClock(clock: ASAClock)
 } // extension ASAUserData

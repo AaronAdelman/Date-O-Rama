@@ -109,7 +109,7 @@
         {"template": "Disability History Month", "type": "1M", "start": {"mon": 10}, "titles": {"en": "Disability History Month"}, "urls": {"en": "https://en.wikipedia.org/wiki/Disability_History_Month"}, "emoji": "🩼"},
         {"template": "Discovery Day", "type": "1D", "start": {"mon": 6, "d": 24}, "titles": {"en": "Discovery Day", "fr": "Journée découverte"}},
         {"template": "Earth Day", "type": "1D", "start": {"mon": 4, "d": 22}, "titles": {"en": "Earth Day", "he": "יום כדור הארץ"}, "emoji": "🌎", "urls": {"en": "https://www.earthday.org/"}},
-        {"template": "Easter Monday", "titles": {"en": "Easter Monday", "fr": "Lundi de Pâques", "nl": "Paasmaandag", "de": "Ostermontag", "ca": "Dilluns de Pasqua"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
+        {"template": "Easter Monday", "titles": {"en": "Easter Monday", "fr": "Lundi de Pâques", "nl": "Paasmaandag", "de": "Ostermontag", "ca": "Dilluns de Pasqua", "ar": "شم النسيم"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
         {"template": "Easter Saturday", "titles": {"en": "Easter Saturday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 6}},
         {"template": "Easter Sunday", "titles": {"en": "Easter Sunday", "he": "פסחא", "es": "Domingo de la Resurrección", "sq": "Pashkët", "ar": "الفصح المجيد", "fr": "Pâques"}, "type": "1D", "start": {"Easter": "Easter"}, "emoji": "🥚🐇", "urls": {"en": "https://nationaldaycalendar.com/easter-changes-annually/"}},
         {"template": "Easter Tuesday", "titles": {"en": "Easter Tuesday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 2}},
