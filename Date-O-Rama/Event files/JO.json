@@ -1,10 +1,16 @@
 {
     "titles": {"*": "JO"},
     "//": "Jordan",
+    "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
     "eventSpecifications": [
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 5, "d": 25}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 21}},
     ]
 }
