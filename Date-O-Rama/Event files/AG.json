@@ -22,5 +22,6 @@
         {"titles": {"en": "Day off for Christmas"}, "type": "1D", "start": {"mon": 12, "d": 27, "wkd": [2, 3]}},
 
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
     ]
 }

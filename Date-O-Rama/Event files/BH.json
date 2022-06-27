@@ -12,6 +12,7 @@
         {"type": "1D", "start": {"mon": 12, "d": 17}, "titles": {"en": "Accession Day", "ar": "يوم الجلوس"}},
 
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}}
     ]
 }
 

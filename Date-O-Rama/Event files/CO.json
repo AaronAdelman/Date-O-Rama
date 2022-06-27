@@ -1,11 +1,12 @@
 {
     "titles": {"*": "CO"},
-    "//": "Columbia",
+    "//": "Colombia",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"titles": {"en": "Feast of the Sacred Heart (observed)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 71}, "emoji": "❤️", "urls": {"en": "https://nationaltoday.com/sacred-heart/"}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+       {"titles": {"en": "Feast of the Sacred Heart (observed)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 71}, "emoji": "❤️", "urls": {"en": "https://nationaltoday.com/sacred-heart/"}},
     ]
 }

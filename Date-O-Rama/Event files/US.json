@@ -6,10 +6,10 @@
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
-        {"inherits": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"type": "1D", "era": 1, "y": 496}},
+        {"inherits": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, "1st": {"era": 1, "y": 496}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}, "1st": {"type": "1D", "era": 1, "y": 1914}},
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"type": "1D", "era": 1, "y": 1910}, "urls": {"en": "https://nationaldaycalendar.com/fathers-day-third-sunday-in-june/"}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1914}},
+        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, "1st": {"era": 1, "y": 1910}, "urls": {"en": "https://nationaldaycalendar.com/fathers-day-third-sunday-in-june/"}},
         {"inherits": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "St. Patrick’s Day", "type": "1D", "start": {"mon": 3, "d": 17}},

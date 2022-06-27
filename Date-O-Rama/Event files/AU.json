@@ -39,6 +39,7 @@
         {"inherits": "Tartan Day", "type": "1D", "start": {"d": 1, "mon": 7}, "1st": {"era": 1, "year": 1989}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 1}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 6, "d": 6}, "titles": {"en": "Queensland Day"}, "urls": {"en": "https://nationaltoday.com/queensland-day/"}, "1st": {"era": 1, "y": 1981}},
     ]
 }

@@ -7,6 +7,7 @@
     "eventSpecifications": [
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 2, "wkd": [1], "wkdRecurrence": 2}},
 
     ]
 }

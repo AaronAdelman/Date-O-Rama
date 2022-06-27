@@ -9,5 +9,6 @@
         {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "Bengali New Year (Pôhela Boishakh)", "bn": "পহেলা বৈশাখ"}},
         {"type": "1D", "start": {"d": 14, "mon": 12}, "titles": {"en": "Martyred Intellectuals Day"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
     ]
 }
