@@ -5,6 +5,9 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
     "eventSpecifications": [
+        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 5, "d": 6}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, "1st": {"era": 1, "y": 1916}},
+
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 21}},
+        {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
     ]
 }

@@ -18,7 +18,7 @@
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
 
         {"inherits": "International Mother Language Day", "type": "1D", "start": {"mon": 2, "d": 21}, "1st": {"type": "1D", "era": 1, "y": 2000}},
-        {"titles": {"en": "St. Vardanian’s Day", "hy": "Սուրբ Վարդանանց տոն՝ բարի գործի և ազգային տուրքի օր"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}, "urls": {"en": "https://en.wikipedia.org/wiki/Vardan_Mamikonian"}},
+        {"inherits": "St. Vardanian’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}},
         {"type": "1D", "start": {"mon": 2, "d": 28}, "titles": {"en": "Day of Remembrance for Victims of Massacres Organized in Azerbaijan SSR and Protection of Rights of Armenian Refugees", "hy": "Ադրբեջանական ԽՍՀ-ում կազմակերպված ջարդերի զոհերի հիշատակի և բռնագաղթված հայ բնակչության իրավունքների պաշտպանության օր"}},
         {"type": "1D", "start": {"mon": 4, "d": 7}, "titles": {"en": "Motherhood and Beauty Day", "hy": "Մայրության և գեղեցկության օր"}, "urls": {"en": "https://en.wikipedia.org/wiki/Motherhood_and_Beauty_Day"}, "inherits": "Mother’s Day"},
         {"type": "1D", "start": {"mon": 4, "d": 16}, "titles": {"en": "Day of Armenian Cinema", "hy": "Հայ կինոյի օր"}, "emoji": "🎞"},

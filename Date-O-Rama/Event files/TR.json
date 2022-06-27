@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Vardavar", "type": "1D", "start": {"Easter": "Easter", "offsetD": 98}},
+        {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
     ]
 }

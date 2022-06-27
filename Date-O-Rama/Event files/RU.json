@@ -9,5 +9,6 @@
         {"titles": {"en": "Day off for Russia Day"}, "type": "1D", "start": {"mon": 6, "d": 13, "wkd": [2]}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 10, "wkd": [1], "wkdRecurrence": 3}},
 
+        {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
     ]
 }

@@ -259,6 +259,7 @@
         
         {"inherits": "St. Florian’s Day", "type": "1D", "start": {"mon": 5, "d": 4}},
         {"template": "St. Leopold’s Day", "type": "1D", "start": {"mon": 11, "d": 15}},
+        {"inherits": "St. Maroun Day", "type": "1D", "start": {"mon": 2, "d": 9}},
 
         {"titles": {"en": "Septuagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -63}},
         {"titles": {"en": "Sexagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -56}},
