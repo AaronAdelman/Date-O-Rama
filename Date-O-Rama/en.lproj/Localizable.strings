@@ -320,5 +320,12 @@
 "ASARegionCodeRegion.westernAsia" = "Western Asia";
 "ASARegionCodeRegion.westernEurope" = "Western Europe";
 
-"Sort by calendar name ascending" = "Sort by calendar name ascending";
+"Sort by calendar name ascending"  = "Sort by calendar name ascending";
 "Sort by calendar name descending" = "Sort by calendar name descending";
+
+"Sort locations by name ascending"  = "Sort locations by name ascending";
+"Sort locations by name descending" = "Sort locations by name descending";
+"Sort locations west to east"       = "Sort locations west to east";
+"Sort locations east to west"       = "Sort locations east to west";
+"Sort locations south to north"     = "Sort locations south to north";
+"Sort locations north to south"     = "Sort locations north to south";

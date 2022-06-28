@@ -15,9 +15,7 @@ struct ASAClocksTab: View {
     @EnvironmentObject var userData:  ASAUserData
     @State var now = Date()
     @State var usingRealTime = true
-    
-//    @State private var showingNewClockDetailView = false
-        
+            
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State var isNavigationBarHidden:  Bool = true
@@ -28,6 +26,59 @@ struct ASAClocksTab: View {
         NavigationView {
             VStack(spacing: 0.0) {
                 HStack {
+                    Spacer()
+                    
+                    Menu {
+                        Button(action: {
+                            userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
+                            userData.savePreferences(code: .clocks)
+                        }, label: {
+                            Text("Sort locations by name ascending")
+                        })
+                        
+                        Button(action: {
+                            userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress})
+                            userData.savePreferences(code: .clocks)
+                        }, label: {
+                            Text("Sort locations by name descending")
+                        })
+                        
+                        Button(action: {
+                            userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude})
+                            userData.savePreferences(code: .clocks)
+                        }, label: {
+                            Text("Sort locations west to east")
+                        })
+                        
+                        Button(action: {
+                            userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude})
+                            userData.savePreferences(code: .clocks)
+                        }, label: {
+                            Text("Sort locations east to west")
+                        })
+                        
+                        Button(action: {
+                            userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude})
+                            userData.savePreferences(code: .clocks)
+                        }, label: {
+                            Text("Sort locations south to north")
+                        })
+                        
+                        Button(action: {
+                            userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude})
+                            userData.savePreferences(code: .clocks)
+                        }, label: {
+                            Text("Sort locations north to south")
+                        })
+                    } label: {
+                        Image(systemName: "gearshape.fill")
+                    }
+                    
+                    Spacer()
+                    
+                    Rectangle().frame(minWidth: 1.0, idealWidth: 1.0, maxWidth: 1.0, maxHeight: 32.0)
+                        .foregroundColor(.secondary)
+                    
                     Spacer()
                     
                     Button(action: {
@@ -60,26 +111,9 @@ struct ASAClocksTab: View {
                 .zIndex(1.0) // This line from https://stackoverflow.com/questions/63934037/swiftui-navigationlink-cell-in-a-form-stays-highlighted-after-detail-pop to get rid of unwanted highlighting.
                 
                 List {
-//                    DisclosureGroup("Show clock preferences", isExpanded: $showingPreferences) {
-////                        Button(
-////                            action: {
-////                                self.showingNewClockDetailView = true
-////                            }
-////                        ) {
-////                            HStack {
-////                                Image(systemName: "plus.circle.fill")
-////                                Text("Add clock")
-////                            } // HStack
-////                        }
-////                        .foregroundColor(.accentColor)
-//                    } // DisclosureGroup
-                    
                     ASAMainClocksByLocationView(mainClocks: $userData.mainClocks, now: $now)
                 }
                 .listStyle(GroupedListStyle())
-//                .sheet(isPresented: self.$showingNewClockDetailView) {
-//                    ASANewClockDetailView(now:  now)
-//                }
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarBackButtonHidden(true)

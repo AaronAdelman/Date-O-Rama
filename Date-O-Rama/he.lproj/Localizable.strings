@@ -321,3 +321,10 @@
 
 "Sort by calendar name ascending" = "מיין לפי שם לוח שנה עולה";
 "Sort by calendar name descending" = "מיין לפי שם לוח השנה יורד";
+
+"Sort locations by name ascending"  = "מיין מיקומים לפי שם עולה";
+"Sort locations by name descending" = "מיין מיקומים לפי שם יורד";
+"Sort locations west to east"       = "מיין מיקומים ממערב למזרח";
+"Sort locations east to west"       = "מיין מיקומים ממזרח למערב";
+"Sort locations south to north"     = "מיין מיקומים מדרום לצפון";
+"Sort locations north to south"     = "מיין מיקומים מצפון לדרום";

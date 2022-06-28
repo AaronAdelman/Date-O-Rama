@@ -61,11 +61,7 @@ struct ASALocationCell:  View {
                 }
                 HStack {
                     Spacer()
-                    Text(verbatim:
-//                            locationData.location != nil ?
-                            locationData.location.humanInterfaceRepresentation
-//                            : ""
-                    ).multilineTextAlignment(.trailing)
+                    Text(verbatim: locationData.location.humanInterfaceRepresentation).multilineTextAlignment(.trailing)
                 }
                 if locationData.name != nil {
                     HStack {
