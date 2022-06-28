@@ -9,7 +9,7 @@
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"type": "1D", "start": {"mon": 1, "d": 12}, "titles": {"en": "Amazigh New Year"}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 5}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 5}, "urls": {"en": "https://nationaltoday.com/independence-day-in-algeria/"}},
         {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 11, "d": 1}},
 
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},

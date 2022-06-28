@@ -34,7 +34,7 @@
         {"type": "1D", "start": {"d": 29, "mon": 8}, "titles": {"en": "National Sports Day"}},
         {"type": "1D", "start": {"d": 8, "mon": 10}, "titles": {"en": "Indian Air Force Day"}},
         {"type": "1D", "start": {"d": 9, "mon": 10}, "titles": {"en": "Indian Foreign Service Day"}},
-        {"type": "1D", "start": {"d": 31, "mon": 10}, "titles": {"en": "National Unity Day"}},
+        {"type": "1D", "start": {"d": 31, "mon": 10}, "titles": {"en": "National Unity Day"}, "inherits": "Unity Day"},
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 1, "d": 261}},
         {"type": "1D", "start": {"d": 27, "mon": 11}, "titles": {"en": "Indian Organ Donation Day"}},
         {"type": "1D", "start": {"d": 4, "mon": 12}, "titles": {"en": "Indian Navy Day"}},
