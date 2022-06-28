@@ -13,6 +13,6 @@
         {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 5, "d": 5}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"titles": {"en": "Keti Koti"}, "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Ketikoti"}, "emoji": "⛓"},
+        {"titles": {"en": "Keti Koti"}, "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/keti-koti/"}, "emoji": "⛓"},
     ]
 }

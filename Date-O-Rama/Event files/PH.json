@@ -11,6 +11,10 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+       {"type": "nD", "start": {"mon": 7, "d": 1}, "end": {"mon": 7, "d": 7}, "titles": {"en": "National Culture Consciousness Week"}, "urls": {"en": "https://nationaltoday.com/national-culture-consciousness-week/"}},
+       {"type": "1M", "start": {"mon": 7}, "titles": {"en": "Nutrition Month Philippines"}, "urls": {"en": "https://nationaltoday.com/nutrition-month-philippines/"}},
+       {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Filipino-American Friendship Day"}, "urls": {"en": "https://nationaltoday.com/filipino-american-friendship-day/"}, "1st": {"era": 1, "y": 1984}, "emoji": "🇵🇭🇺🇸"},
+
         ]
     }
 

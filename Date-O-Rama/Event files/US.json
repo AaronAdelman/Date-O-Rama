@@ -39,7 +39,7 @@
         {"type": "1D", "start": {"d": 13, "mon": 4}, "titles": {"en": "National Borinqueneers Day"}, "1st": {"era": 1, "y": 2021}, "urls": {"en": "https://nationaldaycalendar.com/national-borinqueneers-day-april-13/"}, "emoji": "🇵🇷"},
         {"type": "1D", "start": {"d": 14, "mon": 4}, "titles": {"en": "National Pan American Day"}, "1st": {"era": 1, "y": 1931}, "urls": {"en": "https://nationaldaycalendar.com/national-pan-american-day-april-14/"}, "emoji": "🌎"},
         {"inherits": "Emancipation Day", "type": "1D", "start": {"d": 16, "mon": 4}, "locations": {"en": "District of Columbia"}, "urls": {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#District_of_Columbia"}, "1st": {"era": 1, "y": 2005}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 4}, "1st": {"era": 1, "y": 1776}, "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_(United_States)"}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 4}, "1st": {"era": 1, "y": 1776}, "urls": {"en": "https://nationaltoday.com/independence-day/"}},
         {"type": "1D", "start": {"d": 2, "thruD": 8, "mon": 11, "wkd": [3]}, "titles": {"en": "Election Day", "he": "יום הבחירות", "ar": "يوم الانتخابات"}},
         {"type": "1D", "start": {"d": 5, "mon": 4}, "titles": {"en": "Gold Star Spouses Day"}, "1st": {"era": 1, "y": 2011}, "urls": {"en": "https://nationaldaycalendar.com/gold-star-spouses-day-april-5/"}, "emoji": "⭐️"},
         {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "1st": {"type": "1D", "era": 1, "y": 1942}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"}},

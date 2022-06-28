@@ -109,7 +109,7 @@
 
         {"titles": {"en": "Feast of the First Martyrs of the Church of Rome"}, "type": "1D", "start": {"mon": 6, "d": 30}},
         
-        {"titles": {"en": "Feast of St. Thomas the Apostle"}, "type": "1D", "start": {"mon": 7, "d": 3}},
+        {"titles": {"en": "Feast of St. Thomas the Apostle"}, "type": "1D", "start": {"mon": 7, "d": 3}, "urls": {"en": "https://nationaltoday.com/st-thomas-history/"}, "1st": {"era": 1, "y": 1969}},
         {"titles": {"en": "Feast of St. Elizabeth of Portugal"}, "type": "1D", "start": {"mon": 7, "d": 4}},
         {"titles": {"en": "Feast of St. Anthony Zaccaria"}, "type": "1D", "start": {"mon": 7, "d": 5}},
         {"titles": {"en": "Feast of St. Maria Goretti"}, "type": "1D", "start": {"mon": 7, "d": 6}},

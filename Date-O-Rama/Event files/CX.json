@@ -12,7 +12,7 @@
         {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"inherits": "Anzac Day", "type": "1D", "start": {"mon": 4, "d": 25}, "1st": {"era": 1, "y": 1916}},
-        {"titles": {"en": "Territory Day"}, "type": "1D", "start": {"mon": 10, "d": 6}},
+        {"inherits": "Territory Day", "type": "1D", "start": {"mon": 10, "d": 6}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
 
