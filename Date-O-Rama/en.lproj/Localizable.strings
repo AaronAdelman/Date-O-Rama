@@ -319,3 +319,6 @@
 "ASARegionCodeRegion.subSaharanAfrica" = "Sub-Saharan Africa";
 "ASARegionCodeRegion.westernAsia" = "Western Asia";
 "ASARegionCodeRegion.westernEurope" = "Western Europe";
+
+"Sort by calendar name ascending" = "Sort by calendar name ascending";
+"Sort by calendar name descending" = "Sort by calendar name descending";

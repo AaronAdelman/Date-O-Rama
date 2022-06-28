@@ -203,9 +203,9 @@ extension Array where Element == ASAProcessedClock {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
     }
     
-    var sortedByCalendar: Array<ASAProcessedClock> {
-        return self.sorted {
-            $0.calendarString < $1.calendarString
-        }
-    }
+//    var sortedByCalendar: Array<ASAProcessedClock> {
+//        return self.sorted {
+//            $0.calendarString < $1.calendarString
+//        }
+//    }
 }

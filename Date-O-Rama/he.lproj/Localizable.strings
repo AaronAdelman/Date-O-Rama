@@ -318,3 +318,6 @@
 "ASARegionCodeRegion.subSaharanAfrica" = "אפריקה שמדרום לסהרה";
 "ASARegionCodeRegion.westernAsia" = "מערב אסיה";
 "ASARegionCodeRegion.westernEurope" = "מערב אירופה";
+
+"Sort by calendar name ascending" = "מיין לפי שם לוח שנה עולה";
+"Sort by calendar name descending" = "מיין לפי שם לוח השנה יורד";

@@ -14,27 +14,24 @@ struct ASAMainClocksByLocationView:  View {
     @Binding var now:  Date
     
     var body:  some View {
-        let sections: Array<ASALocationWithProcessedClocks> = mainClocks.processed(now: now)
-        ForEach(sections, id: \.self.location.id) {
+        ForEach($mainClocks, id: \.self.location.id) {
             section
             in
-            let processedClocks: [ASAProcessedClock] = section.processedClocks
-            let sortedProcessedClocks = processedClocks.sortedByCalendar
-            let location = section.location
-            
-            ASAMainClocksByLocationSectionView(now: $now, location: location, processedClocks: sortedProcessedClocks)
+            ASAMainClocksByLocationSectionView(now: $now, locationWithClocks: section)
         }
     }
 } // struct ASAMainClocksByLocationView:  View
 
 struct ASAMainClocksByLocationSectionView: View {
     @Binding var now:  Date
-    var location: ASALocation
-    var processedClocks: Array<ASAProcessedClock>
+    @Binding var locationWithClocks: ASALocationWithClocks
     
     @State private var showingNewClockDetailView = false
     
     var body: some View {
+        let location = locationWithClocks.location
+        let locationWithProcessedClocks = locationWithClocks.processed(now: now)
+        
         let sectionHeaderEmoji = (location.regionCode ?? "").flag
 #if os(watchOS)
         let sectionHeaderTitle = location.shortFormattedOneLineAddress
@@ -42,37 +39,57 @@ struct ASAMainClocksByLocationSectionView: View {
         let sectionHeaderTitle = location.formattedOneLineAddress
 #endif
         
+        let sectionHeaderFont: Font = Font.title
         Section(header: HStack {
             Text(sectionHeaderEmoji)
             Text(sectionHeaderTitle)
-                .font(Font.headlineMonospacedDigit)
-                .minimumScaleFactor(0.5)
-                .lineLimit(1)
+            //.minimumScaleFactor(0.5)
+            //                .lineLimit(1)
 #if os(watchOS)
 #else
             Spacer()
-            Button(
-                action: {
-                    self.showingNewClockDetailView = true
-                    
+            Menu {
+                Button(
+                    action: {
+                        self.showingNewClockDetailView = true
+                        
+                    }
+                ) {
+                    HStack {
+                        Image(systemName: "plus.circle.fill")
+                        Text("Add clock")
+                    } // HStack
                 }
-            ) {
-                HStack {
-                    Image(systemName: "plus.circle.fill")
-                        .font(Font.headlineMonospacedDigit)
-                    //                    Text("Add clock")
-                } // HStack
+                
+                Divider()
+                
+                Button(action: {
+                    locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
+                    ASAUserData.shared.savePreferences(code: .clocks)
+                }, label: {
+                    Text("Sort by calendar name ascending")
+                })
+                
+                Button(action: {
+                    locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName > $1.calendar.calendarCode.localizedName})
+                    ASAUserData.shared.savePreferences(code: .clocks)
+                }, label: {
+                    Text("Sort by calendar name descending")
+                })
+            } label: {
+                Image(systemName: "arrow.down.square.fill")
             }
-            .foregroundColor(.accentColor)
             .sheet(isPresented: self.$showingNewClockDetailView) {
                 ASANewClockDetailView(now:  now, tempLocation: location)
             }
 #endif
-        }) {
-            ForEach(processedClocks.indices, id: \.self) {
+        }
+            .font(sectionHeaderFont)
+        ) {
+            ForEach( 0..<locationWithProcessedClocks.processedClocks.count) {
                 index
                 in
-                let processedClock = processedClocks[index]
+                let processedClock = locationWithProcessedClocks.processedClocks[index]
                 
 #if os(watchOS)
                 let shouldShowTime         = false

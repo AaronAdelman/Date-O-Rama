@@ -11,24 +11,19 @@ import Foundation
 struct ASALocationWithClocks {
     var location: ASALocation
     var clocks: Array<ASAClock>
+    
+    func processed(now: Date) -> ASALocationWithProcessedClocks {
+        let location = self.location
+        let processedClocks = self.clocks.processed(now: now)
+        let locationWithProcessedClocks = ASALocationWithProcessedClocks(location: location, processedClocks: processedClocks)
+        return locationWithProcessedClocks
+    } // func processed(now: Date) -> ASALocationWithProcessedClocks
 } // struct ASALocationWithClocks
 
 
 // MARK:  -
 
 extension Array where Element == ASALocationWithClocks {
-    func processed(now:  Date) -> Array<ASALocationWithProcessedClocks> {
-        var result: Array<ASALocationWithProcessedClocks> = []
-        
-        for locationWithClocks in self {
-            let location = locationWithClocks.location
-            let processedClocks = locationWithClocks.clocks.processed(now: now)
-            let locationWithProcessedClocks = ASALocationWithProcessedClocks(location: location, processedClocks: processedClocks)
-            result.append(locationWithProcessedClocks)
-        } // for locationWithClocks in self
-        return result
-    } // func processed(now:  Date) -> Array<ASALocationWithProcessedClocks>
-    
     var clocks: Array<ASAClock> {
         var result: Array<ASAClock> = []
         for entry in self {
