@@ -35,16 +35,16 @@ struct ASAMainClocksByLocationSectionView: View {
         let sectionHeaderEmoji = (location.regionCode ?? "").flag
 #if os(watchOS)
         let sectionHeaderTitle = location.shortFormattedOneLineAddress
+        let sectionHeaderFont: Font = Font.title3
 #else
         let sectionHeaderTitle = location.formattedOneLineAddress
+        let sectionHeaderFont: Font = Font.title2
 #endif
         
-        let sectionHeaderFont: Font = Font.title
         Section(header: HStack {
             Text(sectionHeaderEmoji)
             Text(sectionHeaderTitle)
-            //.minimumScaleFactor(0.5)
-            //                .lineLimit(1)
+                .lineLimit(2)
 #if os(watchOS)
 #else
             Spacer()
