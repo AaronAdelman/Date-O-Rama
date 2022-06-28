@@ -7,6 +7,9 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {"titles": {"en": "Official Birthday of His Majesty King Tupou VI"}, "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, "1st": {"era": 1, "y": 2015}, "inherits": "*BDay*"},
+        {"titles": {"en": "Public holiday"}, "type": "1D", "start": {"mon": 7, "d": 5, "wkd": [2]}, "urls": {"en": "https://nationaltoday.com/official-birthday-of-hm-king-tupou/"}, "1st": {"era": 1, "y": 2015}},
+
     ]
 }
 

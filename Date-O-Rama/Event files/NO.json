@@ -8,6 +8,6 @@
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 2, "wkd": [1], "wkdRecurrence": 2}},
-
+        {"titles": {"en": "Queen Sonja’s Day"}, "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/queen-sonjas-day/"}, "1st": {"era": 1, "y": 1991}, "inherits": "*BDay*"},
     ]
 }

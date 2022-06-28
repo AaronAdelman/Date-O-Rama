@@ -16,5 +16,6 @@
         {"titles": {"en": "Freethought Month"}, "type": "1M", "start": {"mon": 10}, "urls": {"en": "https://secularseasons.org/october/freethought_month.html"}},
         {"type": "1D", "start": {"d": 8, "mon": 8}, "titles": {"en": "International Infinity Day"}, "1st": {"era": 1, "y": 1987}, "emoji": "∞", "urls": {"en": "https://nationaldaycalendar.com/international-infinity-day-august-8/"}},
         {"titles": {"en": "Thomas Paine Day"}, "type": "1D", "start": {"mon": 6, "d": 8}, "urls": {"en": "https://nationaltoday.com/thomas-paine-day/"}},
+        {"titles": {"en": "Indivisible Day"}, "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/indivisible-day/"}, "1st": {"era": 1, "y": 2002}},
     ]
 }

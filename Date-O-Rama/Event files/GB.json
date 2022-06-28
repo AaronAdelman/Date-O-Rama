@@ -44,5 +44,6 @@
         {"type": "1D", "start": {"mon": 6, "d": 11}, "inherits": "Queen’s Birthday"},        
         {"type": "1D", "start": {"mon": 6, "d": 22}, "titles": {"en": "Windrush Day"}, "urls": {"en": "https://nationaltoday.com/windrush-day/"}, "1st": {"era": 1, "y": 2018}},
         {"inherits": "Armed Forces Day", "type": "1D", "start": {"mon": 6, "wkd": [7], "wkdRecurrence": -1}, "urls": {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}},
+        {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Thank You Day"}, "urls": {"en": "https://nationaltoday.com/thank-you-day/"}, "1st": {"era": 1, "y": 2021}},
     ]
 }
