@@ -89,18 +89,21 @@ struct ASAMainClocksByLocationSectionView: View {
             ForEach( 0..<locationWithProcessedClocks.processedClocks.count) {
                 index
                 in
-                let processedClock = locationWithProcessedClocks.processedClocks[index]
                 
+                if index < locationWithProcessedClocks.processedClocks.count {
+                    let processedClock = locationWithProcessedClocks.processedClocks[index]
+                    
 #if os(watchOS)
-                let shouldShowTime         = false
-                let shouldShowMiniCalendar = false
-                let indexIsOdd             = false
+                    let shouldShowTime         = false
+                    let shouldShowMiniCalendar = false
+                    let indexIsOdd             = false
 #else
-                let shouldShowTime         = true
-                let shouldShowMiniCalendar = true
-                let indexIsOdd             = index % 2 == 1
+                    let shouldShowTime         = true
+                    let shouldShowMiniCalendar = true
+                    let indexIsOdd             = index % 2 == 1
 #endif
-                ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
+                }
             }
         }
     }
