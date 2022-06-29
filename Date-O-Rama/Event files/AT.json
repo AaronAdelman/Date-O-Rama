@@ -26,7 +26,7 @@
         {"inherits": "St. Rupert’s Day", "type": "1D", "start": {"mon": 9, "d": 24}},
         {"titles": {"en": "Plebiscite Day", "de": "Tag der Volksabstimmung"}, "type": "1D", "start": {"mon": 10, "d": 10}, "urls": {"en": "https://en.wikipedia.org/wiki/1920_Carinthian_plebiscite"}},
         {"inherits": "Feast of St. Martin of Tours", "type": "1D", "start": {"mon": 11, "d": 11}},
-        {"template": "St. Leopold’s Day", "type": "1D", "start": {"mon": 11, "d": 15}},
+        {"inherits": "St. Leopold’s Day", "type": "1D", "start": {"mon": 11, "d": 15}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
         

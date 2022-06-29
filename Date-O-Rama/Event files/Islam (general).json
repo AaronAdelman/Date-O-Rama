@@ -17,9 +17,9 @@
             } , "urls": {"en": "https://en.wikipedia.org/wiki/Chaand_Raat"}},
         {"titles": {"en": "ʻĪd al-Fiṭr (Festival of Breaking the Fast)", "he": "עיד אלפטר", "ar": "عيد الفطر‎", "es": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán"}, "type": "1D", "start": {"mon": 10, "d": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Eid_al-Fitr"}},
         {"titles": {"en": "Ḥajj", "he": "חג׳", "ar": "حَجّ‎"}, "type": "nD", "start": {"mon": 12, "d": 8}, "end": {"mon": 12, "d": 13}, "urls": {"en": "https://en.wikipedia.org/wiki/Hajj"}},
-        {"titles": {"en": "Day of ‘Arafah", "he": "יום ערפה", "ar": "يوم عرفة‎"}, "type": "1D", "start": {"mon": 12, "d": 9}, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Arafah"}},
-        {"titles": {"en": "ʿĪd al-ʾAḍḥā (Feast of the Sacrifice)", "he": "חג הקורבן", "ar": "عيد الأضحى‎", "es": "Fiesta del Sacrificio"}, "type": "1D", "start": {"mon": 12, "d": 10}, "urls": {"en": "https://en.wikipedia.org/wiki/Eid_al-Adha"}},
-        
+        {"titles": {"en": "Day of ‘Arafah", "he": "יום ערפה", "ar": "يوم عرفة‎"}, "type": "1D", "start": {"mon": 12, "d": 9}, "urls": {"en": "https://nationaltoday.com/day-arafah/"}},
+        {"inherits": "ʿĪd al-ʾAḍḥā", "type": "1D", "start": {"mon": 12, "d": 10}},
+
         {"titles": {"en": "Laylat al-Raghaib (Night of Wishes)", "ar": "ليلة الرغيب", "he": "ליל המשאלות"}, "type": "1D", "start": {"mon": 7, "wkdRecurrence": 1, "wkd": [6]}, "urls": {"en": "https://en.wikipedia.org/wiki/Laylat_al-Raghaib"}},
         {"titles": {"en": "Jumu'atul-Wida", "ar": " جمعة الوداع", "ur": "الوداع جمعہ", "he": "יום שישי להתראות"}, "type": "1D", "start": {"mon": 9, "wkdRecurrence": -1, "wkd": [6], "urls": {"en": "https://en.wikipedia.org/wiki/Jumu%27atul-Wida"}}},
     ]

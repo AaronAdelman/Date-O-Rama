@@ -5,6 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 7, "d": 9}, "urls": {"en": "https://nationaltoday.com/palau-constitution-day/"}, "1st": {"era": 1, "y": 1981}},
+
     ]
 }
