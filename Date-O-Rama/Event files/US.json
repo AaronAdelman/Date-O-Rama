@@ -190,7 +190,9 @@
         {"type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 1}, "titles": {"en": "National Child’s Day"}, "1st": {"era": 1, "y": 2001}, "emoji": "👦👧", "urls": {"en": "https://nationaldaycalendar.com/childrens-day-second-sunday-in-june/"}},
         {"type": "1D", "start": {"mon": 6, "d": 14}, "titles": {"en": "Army Birthday"}, "1st": {"era": 1, "y": 1775}, "emoji": "䷆", "urls": {"en": "https://nationaldaycalendar.com/army-birthday-june-14/"}},
         {"type": "1D", "start": {"mon": 6, "d": 30}, "titles": {"en": "National Corvette Day"}, "1st": {"era": 1, "y": 2008}, "urls": {"en": "https://nationaltoday.com/national-corvette-day/"}},
-        
+        {"titles": {"en": "National Air Traffic Control Day"}, "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/national-air-traffic-control-day/"}, "1st": {"era": 1, "y": 1986}},
+
+
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, "1st": {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
         {"type": "1D", "start": {"d": 10, "mon": 5}, "titles": {"en": "National Washington Day"}, "1st": {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-washington-day-may-10/"}},

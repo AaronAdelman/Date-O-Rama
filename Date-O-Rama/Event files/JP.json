@@ -8,5 +8,7 @@
         {"type": "1D", "start": {"d": 29, "mon": 4}, "titles": {"en": "Shōwa Day"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {"type": "1D", "start": {"mon": 7, "d": 7}, "titles": {"en": "Star Festival", "ja": "星祭り"}, "notes": {"en": "Tanabata", "ja": "たなばた\n七夕"}, "urls": {"en": "https://nationaltoday.com/star-festival/"}},
+
     ]
 }

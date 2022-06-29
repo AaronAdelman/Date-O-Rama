@@ -10,7 +10,7 @@
         {"titles": {"en": "Anniversary of the Memorandum of the Slovak Nation"}, "type": "1D", "start": {"mon": 6, "d": 7}, "1st": {"era": 1, "y": 1861}, "urls": {"en": "https://nationaltoday.com/anniversary-of-the-memorandum-of-the-slovak-nation/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-
+        {"inherits": "Kupala Night", "type": "1D", "start": {"mon": 6, "d": 23}},
     ]
 }
 
