@@ -327,7 +327,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
         newClock.startingUp = false
         return newClock
-    } // func newRowFromDictionary(dictionary:  Dictionary<String, String?>) -> ASAClock
+    } // class func new(dictionary:  Dictionary<String, Any>) -> ASAClock
 
 
     // MARK:  -
@@ -550,25 +550,25 @@ class ASAStartAndEndDateStrings {
 }
 
 extension ASAClock {
-    func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool, eventIsAllDay: Bool) -> String {
-        return (isPrimaryRow && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
-     } // func properlyShortenedString(date:  Date, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> String
+    func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool, eventIsAllDay: Bool) -> String {
+        return (isPrimaryClock && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
+     } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
     
-    private func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
+    private func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
         var startDateString: String?
         var endDateString: String
         
         if event.startDate == event.endDate {
             startDateString = nil
         } else {
-            startDateString = self.properlyShortenedString(date: event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+            startDateString = self.properlyShortenedString(date: event.startDate, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
         }
-        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
         
         return (startDateString, endDateString)
-    } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
+    } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
     
-    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
+    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
         // Cache code
         if let cachedVersion = startAndEndDateStringsCache.object(forKey: event.eventIdentifier! as NSString) {
             // use the cached version
@@ -580,7 +580,7 @@ extension ASAClock {
         
         let eventIsAllDay = event.isAllDay(for: self)
         if !eventIsAllDay {
-            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly)
         } else {
             switch event.type {
             case .multiYear:
@@ -604,7 +604,7 @@ extension ASAClock {
                 startDateString = nil
                 endDateString = self.shortenedDateString(now: event.startDate)
             default:
-                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryRow: isPrimaryRow, eventIsTodayOnly: eventIsTodayOnly)
+                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly)
             } // switch event.type
         }
         
@@ -613,16 +613,16 @@ extension ASAClock {
         startAndEndDateStringsCache.setObject(myObject, forKey: event.eventIdentifier! as NSString)
 
         return (startDateString, endDateString)
-    } // func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
+    } // func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
     
-    public func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
+    public func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
         let eventIsAllDay = event.isAllDay(for: self)
         let startDateString = eventIsAllDay ? self.dateString(now: event.startDate) : self.dateTimeString(now: event.startDate)
         let endDate: Date = event.endDate - 1
         let endDateString = eventIsAllDay ? self.dateString(now: endDate) : self.dateTimeString(now: endDate)
         
         return (startDateString, endDateString)
-    } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryRow: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
+    } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
         
     var supportsExternalEvents: Bool {
         return self.calendar.usesISOTime && self.isICalendarCompatible

@@ -18,7 +18,7 @@ enum ASAClockArrayKey:  String {
 } // enum ASARowArrayKeys:  String
 
 extension ASAClockArrayKey {
-    var minimumNumberOfRows:  Int {
+    var minimumNumberOfClocks:  Int {
         switch self {
         case .app:
             return 1

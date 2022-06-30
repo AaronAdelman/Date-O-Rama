@@ -118,15 +118,15 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
             for key in ASAClockArrayKey.complicationSections {
                 let value = message[key.rawValue]
-                var rowArray = self.userData.rowArray(key: key)
+                var clockArray = self.userData.rowArray(key: key)
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
-                    for i in 0..<key.minimumNumberOfRows {
-                        let newRow: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
-                        rowArray[i] = newRow
-                    } // for i in 0..<key.minimumNumberOfRows()
+                    for i in 0..<key.minimumNumberOfClocks {
+                        let newClock: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
+                        clockArray[i] = newClock
+                    } // for i in 0..<key.minimumNumberOfClocks
                 }
-                userData.setRowArray(rowArray:  rowArray, key:  key)
+                userData.setClockArray(clockArray:  clockArray, key:  key)
             } // for
             ASAUserData.shared.savePreferences(code: .clocks)
             ASAUserData.shared.savePreferences(code: .complications)
@@ -139,16 +139,16 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
 //            }
             //             TODO:  Figure out what went wrong
             
-            let mainRowsTemp = message[ASAClockArrayKey.app.rawValue]
-            if mainRowsTemp != nil {
-                let tempAsArray = mainRowsTemp! as! Array<Dictionary<String, Any>>
-                var mainRows:  Array<ASAClock> = []
+            let mainClocksTemp = message[ASAClockArrayKey.app.rawValue]
+            if mainClocksTemp != nil {
+                let tempAsArray = mainClocksTemp! as! Array<Dictionary<String, Any>>
+                var mainClocks:  Array<ASAClock> = []
                 for item in tempAsArray {
-                    let itemAsRow = ASAClock.new(dictionary: item)
-                    mainRows.append(itemAsRow)
+                    let itemAsClock = ASAClock.new(dictionary: item)
+                    mainClocks.append(itemAsClock)
                 }
                 DispatchQueue.main.async {
-                    ASAUserData.shared.mainClocks = mainRows.byLocation
+                    ASAUserData.shared.mainClocks = mainClocks.byLocation
                     ASAUserData.shared.savePreferences(code: .clocks)
                 }
             }

@@ -20,7 +20,7 @@ let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
 
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
-    var row:  ASAClock
+    var clock:  ASAClock
     @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
     @State var showingEventEditView = false
@@ -47,7 +47,7 @@ struct ASAEventDetailView: View {
             
             ASAEventDetailsTitleSection(event: event)
             
-            ASAEventDetailDateTimeSection(row: row, event: event)
+            ASAEventDetailDateTimeSection(row: clock, event: event)
             
             let eventHasAlarms: Bool = event.hasAlarms
             let eventAvailabilityIsSupported: Bool = event.availability != .notSupported
@@ -60,7 +60,7 @@ struct ASAEventDetailView: View {
                             in
                             let alarm = event.alarms![i]
                             
-                            ASAEventAlarmView(alarm: alarm, row: row)
+                            ASAEventAlarmView(alarm: alarm, row: clock)
                         } // ForEach(0..<numberOfAlarms, id: \.self)
                     }
                     
@@ -366,7 +366,7 @@ struct ASAEventDetailDateTimeSection: View {
         Section {
             ASAEventPropertyView(key: "Event calendar", value: event.calendarCode.localizedName)
             
-            let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: false)
+            let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: false)
 
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)

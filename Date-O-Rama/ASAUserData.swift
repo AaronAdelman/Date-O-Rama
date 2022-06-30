@@ -402,25 +402,25 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         return temp
     } // func processedClockArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
 
-    public func setRowArray(rowArray: Array<ASAClock>, key: ASAClockArrayKey) {
+    public func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey) {
         switch key {
         case .app:
-            self.mainClocks = rowArray.byLocation
+            self.mainClocks = clockArray.byLocation
 
         case .threeLineLarge:
-            self.threeLineLargeClocks = rowArray
+            self.threeLineLargeClocks = clockArray
 
         case .twoLineSmall:
-            self.twoLineSmallClocks = rowArray
+            self.twoLineSmallClocks = clockArray
 
         case .twoLineLarge:
-            self.twoLineLargeClocks = rowArray
+            self.twoLineLargeClocks = clockArray
 
         case .oneLineLarge:
-            self.oneLineLargeClocks = rowArray
+            self.oneLineLargeClocks = clockArray
 
         case .oneLineSmall:
-            self.oneLineSmallClocks = rowArray
+            self.oneLineSmallClocks = clockArray
         } // switch key
     } // func setRowArray(rowArray: Array<ASARow>, key: ASAClockArrayKey)
 
@@ -444,7 +444,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
 
         let numberOfRows = tempArray.count
-        let minimumNumberOfRows = key.minimumNumberOfRows
+        let minimumNumberOfRows = key.minimumNumberOfClocks
         if numberOfRows < minimumNumberOfRows {
 
             tempArray += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfRows - numberOfRows))

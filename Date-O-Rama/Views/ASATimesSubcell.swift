@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ASATimesSubcell:  View {
     var event:  ASAEventCompatible
-    var row:  ASAClock
+    var clock:  ASAClock
     
 #if os(watchOS)
 let compact = true
@@ -43,7 +43,7 @@ var compact:  Bool {
     let timeFontSize = Font.subheadlineMonospacedDigit
     
     var isForClock: Bool
-    var isPrimaryRow: Bool
+    var isPrimaryClock: Bool
     var eventIsTodayOnly: Bool
     var startDateString: String?
     var endDateString: String

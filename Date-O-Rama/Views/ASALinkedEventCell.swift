@@ -15,8 +15,8 @@ import SwiftUI
 
 struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
-    var primaryRow:  ASAClock
-    var secondaryRow:  ASAClock
+    var primaryClock:  ASAClock
+    var secondaryClock:  ASAClock
     var eventsViewShouldShowSecondaryDates: Bool
     #if os(watchOS)
     #else
@@ -49,13 +49,10 @@ struct ASALinkedEventCell:  View {
     #endif
     
     var body: some View {
-//        let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
-//        let (startDateString, endDateString) = self.primaryRow.startAndEndDateStrings(event: event, isPrimaryRow: true, eventIsTodayOnly: eventIsTodayOnly)
-
         #if os(watchOS)
-        NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd), label: {
+        NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd), label: {
             HStack {
-                ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+                ASAEventCell(event: event, primaryClock: self.primaryClock, secondaryClock: self.secondaryClock, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
                 Spacer()
                 ASACompactForwardChevronSymbol()
             } // HStack
@@ -70,7 +67,7 @@ struct ASALinkedEventCell:  View {
                 #endif
             }
             
-            ASAEventCell(event: event, primaryRow: self.primaryRow, secondaryRow: self.secondaryRow, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: isForClock, now: $now, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+            ASAEventCell(event: event, primaryClock: self.primaryClock, secondaryClock: self.secondaryClock, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: isForClock, now: $now, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
             
             Spacer()
             
@@ -94,7 +91,7 @@ struct ASALinkedEventCell:  View {
                         }
                         Spacer()
                     } // HStack
-                    ASAEventDetailDispatchView(event: event, clock: primaryRow, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, action: $action)
+                    ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, action: $action)
                         .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                 }
             }

@@ -161,7 +161,7 @@ struct ASAProcessedClock {
         }
  
         self.timeFormat = clock.timeFormat
-    } // init(row:  ASARow, now:  Date)
+    } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
 } // struct ASAProcessedClock
 
 

@@ -16,11 +16,11 @@ struct ASADatePicker:  View {
 
         } // didSet
     } // var date
-    @ObservedObject var primaryRow:  ASAClock {
+    @ObservedObject var primaryClock:  ASAClock {
         didSet {
 
         } // didSet
-    } // var primaryRow
+    } // var primaryClock
 
     var body: some View {
         HStack {
@@ -59,6 +59,6 @@ struct ASADatePicker:  View {
 
 struct ASADatePicker_Previews: PreviewProvider {
     static var previews: some View {
-        ASADatePicker(date: .constant(Date()), primaryRow: ASAClock.generic)
+        ASADatePicker(date: .constant(Date()), primaryClock: ASAClock.generic)
     }
 }

@@ -30,9 +30,9 @@ struct ASAEventDetailDispatchView: View {
             ASAMultiEventView(multiEvent: event as! ASAMultiEvent, now: $now, primaryClock: clock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
         } else {
 #if os(watchOS)
-            ASAEventDetailView(event: event, row: clock)
+            ASAEventDetailView(event: event, clock: clock)
 #else
-            ASAEventDetailView(event: event, row: clock, action: $action)
+            ASAEventDetailView(event: event, clock: clock, action: $action)
 #endif
         }
         

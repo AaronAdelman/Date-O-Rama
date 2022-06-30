@@ -23,7 +23,7 @@ struct ASAClocksChooser: View {
             ForEach(clocks) {
                 row
                 in
-                ASARowCell(selectedUUIDString: self.$selectedUUIDString, row: row)
+                ASAClocksChooserClockCell(selectedUUIDString: self.$selectedUUIDString, clock: row)
                     .onTapGesture {
                         self.selectedUUIDString = row.uuid.uuidString
                         self.dismiss()
@@ -33,25 +33,25 @@ struct ASAClocksChooser: View {
     }
 }
 
-struct ASARowCell: View {
+struct ASAClocksChooserClockCell: View {
     @Binding var selectedUUIDString:  String
 
-    var row:  ASAClock
+    var clock:  ASAClock
     
     var body: some View {
         HStack {
             VStack(alignment:  .leading) {
-                Text(verbatim:  row.calendar.calendarCode.localizedName).font(.headline)
+                Text(verbatim:  clock.calendar.calendarCode.localizedName).font(.headline)
                 HStack {
-                    if row.usesDeviceLocation {
+                    if clock.usesDeviceLocation {
                         ASALocationSymbol()
                     }
-                    Text(verbatim:  row.countryCodeEmoji(date:  Date()))
-                    Text(verbatim: row.locationData.formattedOneLineAddress).font(.subheadlineMonospacedDigit)
+                    Text(verbatim:  clock.countryCodeEmoji(date:  Date()))
+                    Text(verbatim: clock.locationData.formattedOneLineAddress).font(.subheadlineMonospacedDigit)
                 }
             }
             Spacer()
-            if selectedUUIDString == self.row.uuid.uuidString {
+            if selectedUUIDString == self.clock.uuid.uuidString {
                 ASACheckmarkSymbol()
             }
         }
