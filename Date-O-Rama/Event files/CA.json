@@ -24,7 +24,7 @@
         {"type": "1D", "start": {"mon": 6, "d": 21}, "titles": {"en": "National Indigenous Peoples Day", "fr": "Journée nationale des Autochthones"}, "notes": {"en": "National Aboriginal Day"}, "urls": {"en": "https://nationaltoday.com/canada-national-indigenous-peoples-day/"}, "1st": {"era": 1, "y": 1996}},
         {"type": "1D", "start": {"mon": 6, "d": 21, "thruD": 27, "wkd": [2]}, "titles": {"en": "June Holiday"}, "locations": {"en": "Newfoundland and Labrador"}, "1st": {"era": 1, "y": 2020}},
         {"type": "1D", "start": {"mon": 6, "d": 24}, "titles": {"en": "National Holiday of Quebec", "fr": "Fête nationale du Québec / Saint-Jean-Baptiste"}},
-        {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day", "fr": "Fête des orangistes"}},
+        {"type": "1D", "start": {"mon": 7, "d": 12}, "inherits": "Orangemen’s Day"},
         {"inherits": "Heritage Day", "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}},
         {"titles": {"en": "British Columbia Day", "fr": "Jour de la Colombie-Britannique"}, "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}},
         {"titles": {"en": "Saskatchewan Day", "fr": "Jour de Saskatchewan"}, "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}},

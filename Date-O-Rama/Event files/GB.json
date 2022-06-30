@@ -36,7 +36,7 @@
         {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Late Summer Bank Holiday"}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
         {"type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Early May Bank Holiday"}},
-        {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
+        {"type": "1D", "start": {"mon": 7, "d": 12}, "inherits": "Orangemen’s Day"},
         {"type": "1D", "start": {"mon": 7, "d": 13, "thruD": 14, "wkd": [2]}, "titles": {"en": "Orangemen’s Day Holiday"}, "urls": {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
         {"type": "1D", "start": {"mon": 12, "d": 27, "thruD": 29, "wkd": [2]}, "titles": {"en": "Substitute Bank Holiday for Christmas Day"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
@@ -45,5 +45,7 @@
         {"type": "1D", "start": {"mon": 6, "d": 22}, "titles": {"en": "Windrush Day"}, "urls": {"en": "https://nationaltoday.com/windrush-day/"}, "1st": {"era": 1, "y": 2018}},
         {"inherits": "Armed Forces Day", "type": "1D", "start": {"mon": 6, "wkd": [7], "wkdRecurrence": -1}, "urls": {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}},
         {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Thank You Day"}, "urls": {"en": "https://nationaltoday.com/thank-you-day/"}, "1st": {"era": 1, "y": 2021}},
+        {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Battle of the Boyne"}, "urls": {"en": "https://nationaltoday.com/battle-of-the-boyne/"}, "1st": {"era": 1, "y": 1690}},
+
     ]
 }

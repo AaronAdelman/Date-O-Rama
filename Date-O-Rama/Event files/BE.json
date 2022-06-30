@@ -13,11 +13,12 @@
         {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Belgian_National_Day"}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
-        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"era": 1, "y": 1919}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 8, "d": 15}, "locations": {"en": "Antwerp"}},
+        {"titles": {"en": "Day of the Flemish Community"}, "type": "1D", "start": {"mon": 7, "d": 11}, "urls": {"en": "https://nationaltoday.com/day-flemish-community/"}, "1st": {"era": 1, "y": 1973}},
     ]
 }
 

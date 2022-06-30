@@ -9,5 +9,7 @@
         {"inherits": "Black History Month", "type": "1M", "start": {"mon": 2}, "1st": {"era": 1, "y": 2010}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": -21}}    ]
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": -21}},
+        {"type": "1D", "start": {"mon": 7, "d": 12}, "inherits": "Orangemen’s Day"},
+    ]
 }
