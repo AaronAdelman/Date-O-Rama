@@ -27,8 +27,9 @@ struct ASAClocksTab: View {
                     Spacer()
                     
                     Menu {
-                        EditButton()
-                        
+                        Text("Locations")
+                            .foregroundColor(.secondary)
+
                         Button(action: {
                             userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
                             userData.savePreferences(code: .clocks)
@@ -70,6 +71,13 @@ struct ASAClocksTab: View {
                         }, label: {
                             Text("Sort locations north to south")
                         })
+                        
+                        Divider()
+                        
+                        Text("Clocks")
+                            .foregroundColor(.secondary)
+
+                        EditButton()
                     } label: {
                         Image(systemName: "gearshape.fill")
                     }
