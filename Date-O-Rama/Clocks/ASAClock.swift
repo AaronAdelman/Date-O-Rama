@@ -52,24 +52,25 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     @Published var localeIdentifier:  String = ""
     
-    var locationManager = ASALocationManager.shared
-    let notificationCenter = NotificationCenter.default
-
+    
     // MARK: -
     
     override init() {
         super.init()
+        let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(handleLocationChanged(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(handleStoreChanged(notification:)), name: .EKEventStoreChanged, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(handleStoreChanged(notification:)), name: .EKEventStoreChanged, object: nil)
     } // override init()
     
     deinit {
+        let notificationCenter = NotificationCenter.default
         notificationCenter.removeObserver(self)
     } // deinit
     
     @objc func handleLocationChanged(notification:  Notification) -> Void {
         if self.usesDeviceLocation {
-            self.locationData = self.locationManager.deviceLocationData
+            let locationManager = ASALocationManager.shared
+            self.locationData = locationManager.deviceLocationData
         }
     } // func handle(notification:  Notification) -> Void
     

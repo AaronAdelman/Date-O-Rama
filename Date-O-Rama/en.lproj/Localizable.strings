@@ -225,8 +225,6 @@
 "ASAAlarmType_minutesBefore" = "Minutes before";
 "Now"   = "Now";
 "Date:" = "Date…";
-"Israel" = "Israel";
-"Gaza Strip" = "Gaza Strip";
 "Jerusalem" = "Jerusalem";
 "EKEventStatus.confirmed"        = "Confirmed";
 "EKEventStatus.tentative"        = "Tentative";

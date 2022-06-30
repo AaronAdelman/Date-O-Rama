@@ -39,6 +39,40 @@ struct ASALocation:  Equatable, Identifiable, Hashable {
 
 // MARK:  -
 
+private extension CLLocation {
+    var isWithinJudeaAndSamaria: Bool {
+        let JudeaAndSamariaNorth: CLLocationDegrees = 32.0 + 40.0 / 60.0
+        let JudeaAndSamariaSouth: CLLocationDegrees = 31.0
+        let JudeaAndSamariaEast: CLLocationDegrees = 35.0 + 40.0 / 60.0
+        let JudeaAndSamariaWest: CLLocationDegrees = 35.0
+        return self.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest)
+    }
+    
+    var isWithinGolan: Bool {
+        let GolanNorth: CLLocationDegrees = 33.0 + 20.0 / 60.0
+        let GolanSouth: CLLocationDegrees = 32.0 + 30.0 / 60.0
+        let GolanEast: CLLocationDegrees = 36.0
+        let GolanWest: CLLocationDegrees = 35.0 + 20.0 / 60.0
+        return self.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest)
+    }
+    
+    var isWithinGazaStrip: Bool {
+        let GazaStripNorth: CLLocationDegrees = 31.0 + 40.0 / 60.0
+        let GazaStripSouth: CLLocationDegrees = 31.0
+        let GazaStripEast: CLLocationDegrees = 34.0 + 40.0 / 60.0
+        let GazaStripWest: CLLocationDegrees = 34.0
+        return self.isWithin(north: GazaStripNorth, south: GazaStripSouth, east: GazaStripEast, west: GazaStripWest)
+    }
+    
+    var isWithinJerusalem: Bool {
+        let JerusalemNorth: CLLocationDegrees = 31.0 + 58.0 / 60.0
+        let JerusalemSouth: CLLocationDegrees = 31.0 + 42.0 / 60.0
+        let JerusalemEast: CLLocationDegrees  = 35.0 + 16.0 / 60.0
+        let JerusalemWest: CLLocationDegrees  = 35.0 + 11.0 / 60.0
+        return self.isWithin(north: JerusalemNorth, south: JerusalemSouth, east: JerusalemEast, west: JerusalemWest)
+    }
+}
+
 extension ASALocation {
     static func create(placemark:  CLPlacemark?, location:  CLLocation?) -> ASALocation {
         let usedLocation = location != nil ? location! : (placemark?.location ?? CLLocation.NullIsland)
@@ -49,37 +83,18 @@ extension ASALocation {
         
         if ISOCountryCode == nil {
             // We need to test if Apple's location server screwed up in favor of inappropriate political neutrality and fix any such problem.
-            let JudeaAndSamariaNorth: CLLocationDegrees = 32.0 + 40.0 / 60.0
-            let JudeaAndSamariaSouth: CLLocationDegrees = 31.0
-            let JudeaAndSamariaEast: CLLocationDegrees = 35.0 + 40.0 / 60.0
-            let JudeaAndSamariaWest: CLLocationDegrees = 35.0
-            
-            let GolanNorth: CLLocationDegrees = 33.0 + 20.0 / 60.0
-            let GolanSouth: CLLocationDegrees = 32.0 + 30.0 / 60.0
-            let GolanEast: CLLocationDegrees = 36.0
-            let GolanWest: CLLocationDegrees = 35.0 + 20.0 / 60.0
-            
-            let GazaStripNorth: CLLocationDegrees = 31.0 + 40.0 / 60.0
-            let GazaStripSouth: CLLocationDegrees = 31.0
-            let GazaStripEast: CLLocationDegrees = 34.0 + 40.0 / 60.0
-            let GazaStripWest: CLLocationDegrees = 34.0
-            
-            let JerusalemNorth: CLLocationDegrees = 31.0 + 58.0 / 60.0
-            let JerusalemSouth: CLLocationDegrees = 31.0 + 42.0 / 60.0
-            let JerusalemEast: CLLocationDegrees  = 35.0 + 16.0 / 60.0
-            let JerusalemWest: CLLocationDegrees  = 35.0 + 11.0 / 60.0
-
-            if usedLocation.isWithin(north: JudeaAndSamariaNorth, south: JudeaAndSamariaSouth, east: JudeaAndSamariaEast, west: JudeaAndSamariaWest) || usedLocation.isWithin(north: GolanNorth, south: GolanSouth, east: GolanEast, west: GolanWest) {
-                country = NSLocalizedString("Israel", comment: "")
+              
+            if usedLocation.isWithinJudeaAndSamaria || usedLocation.isWithinGolan {
                 ISOCountryCode = REGION_CODE_Israel
+                country = Locale.current.localizedString(forRegionCode: ISOCountryCode!)
                 timeZone = TimeZone(identifier: "Asia/Jerusalem")!
-            } else if usedLocation.isWithin(north: GazaStripNorth, south: GazaStripSouth, east: GazaStripEast, west: GazaStripWest) {
-                country = NSLocalizedString("Gaza Strip", comment: "")
+            } else if usedLocation.isWithinGazaStrip {
                 ISOCountryCode = REGION_CODE_Palestine
+                country = Locale.current.localizedString(forRegionCode: ISOCountryCode!)
                 timeZone = TimeZone(identifier: "Asia/Gaza")!
             }
             
-            if usedLocation.isWithin(north: JerusalemNorth, south: JerusalemSouth, east: JerusalemEast, west: JerusalemWest) && locality == nil {
+            if usedLocation.isWithinJerusalem && locality == nil {
                 locality = NSLocalizedString("Jerusalem", comment: "")
             }
         }
