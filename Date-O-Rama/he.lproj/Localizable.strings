@@ -326,3 +326,6 @@
 "Sort locations east to west"       = "מיין מיקומים ממזרח למערב";
 "Sort locations south to north"     = "מיין מיקומים מדרום לצפון";
 "Sort locations north to south"     = "מיין מיקומים מצפון לדרום";
+
+"Locations" = "מיקומים";
+"Clocks"    = "שעונים";
