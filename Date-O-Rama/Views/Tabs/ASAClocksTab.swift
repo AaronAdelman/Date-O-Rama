@@ -20,8 +20,6 @@ struct ASAClocksTab: View {
     
     @State var isNavigationBarHidden:  Bool = true
     
-    @State private var showingPreferences:  Bool = false
-    
     var body: some View {
         NavigationView {
             VStack(spacing: 0.0) {
