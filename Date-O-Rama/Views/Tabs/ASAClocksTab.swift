@@ -27,6 +27,8 @@ struct ASAClocksTab: View {
                     Spacer()
                     
                     Menu {
+                        EditButton()
+                        
                         Button(action: {
                             userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
                             userData.savePreferences(code: .clocks)
@@ -114,7 +116,8 @@ struct ASAClocksTab: View {
                 .listStyle(GroupedListStyle())
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
-                .navigationBarBackButtonHidden(true)
+//                .navigationBarBackButtonHidden(true)
+                .navigationBarItems(trailing: EditButton())
                 .onAppear {
                     self.isNavigationBarHidden = true
                 }

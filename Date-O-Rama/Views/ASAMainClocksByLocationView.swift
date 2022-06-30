@@ -63,6 +63,12 @@ struct ASAMainClocksByLocationSectionView: View {
                 
                 Divider()
                 
+//#if os(watchOS)
+//#else
+//
+//                EditButton()
+//#endif
+                
                 Button(action: {
                     locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
                     ASAUserData.shared.savePreferences(code: .clocks)
@@ -105,8 +111,28 @@ struct ASAMainClocksByLocationSectionView: View {
                     ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
                 }
             }
+            .onDelete(perform: onDelete)
+            .onMove(perform: onMove)
         }
     }
+    
+    private func onDelete(offsets: IndexSet) {
+        let relevantUUID = self.locationWithClocks.location.id
+        let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
+        if relevantLocationWithClocksIndex != nil {
+            ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.remove(atOffsets: offsets)
+            ASAUserData.shared.savePreferences(code: .clocks)
+        }
+    }
+
+        private func onMove(source: IndexSet, destination: Int) {
+            let relevantUUID = self.locationWithClocks.location.id
+            let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
+            if relevantLocationWithClocksIndex != nil {
+                ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.move(fromOffsets: source, toOffset: destination)
+                ASAUserData.shared.savePreferences(code: .clocks)
+            }
+        }
 }
 
 
