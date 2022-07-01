@@ -47,5 +47,7 @@
         {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Thank You Day"}, "urls": {"en": "https://nationaltoday.com/thank-you-day/"}, "1st": {"era": 1, "y": 2021}},
         {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Battle of the Boyne"}, "urls": {"en": "https://nationaltoday.com/battle-of-the-boyne/"}, "1st": {"era": 1, "y": 1690}},
         {"type": "1D", "start": {"mon": 7, "d": 15}, "inherits": "St. Swithin’s Day", "1st": {"era": 1, "y": 990}},
+        {"type": "nD", "start": {"mon": 7, "d": 16}, "end": {"mon": 7, "d": 31}, "titles": {"en": "Festival of British Archaeology"}, "urls": {"en": "https://nationaltoday.com/festival-of-british-archaeology/"}, "1st": {"era": 1, "y": 2003}},
+
     ]
 }
