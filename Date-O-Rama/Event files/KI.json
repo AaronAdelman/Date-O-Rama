@@ -7,6 +7,7 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 12}},
+        {"titles": {"en": "Unimwane Day"}, "type": "1D", "start": {"mon": 7, "d": 15}, "urls": {"en": "https://nationaltoday.com/unimwane-day/"}, "emoji": "👴"},
 
     ]
 }

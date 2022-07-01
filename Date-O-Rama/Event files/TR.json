@@ -9,5 +9,7 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Vardavar", "type": "1D", "start": {"Easter": "Easter", "offsetD": 98}},
         {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
+        {"inherits": "Unity Day", "type": "1D", "start": {"mon": 7, "d": 15}, "titles": {"en": "Democracy and National Unity Day of Turkey"}, "urls": {"en": "https://nationaltoday.com/the-democracy-and-national-unity-day-of-turkey/"}, "1st": {"era": 1, "y": 2016}},
+
     ]
 }
