@@ -132,5 +132,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 6, "d": 13}, "titles": {"en": "Maharana Pratap Jayanti"}, "urls": {"en": "https://nationaltoday.com/maharana-pratap-jayanti/"}},
         {"titles": {"en": "MHIP Day"}, "locations": {"en": "Mizoram"}, "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/mhip-day-in-mizoram/"}, "1st": {"era": 1, "y": 1974}},
+        {"titles": {"en": "U Tirot Sing Day"}, "locations": {"en": "Meghalaya"}, "type": "1D", "start": {"mon": 7, "d": 17}, "urls": {"en": "https://nationaltoday.com/u-tirot-sing-day/"}, "1st": {"era": 1, "y": 1835}},
     ]
 }

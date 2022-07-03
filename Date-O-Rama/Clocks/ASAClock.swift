@@ -343,6 +343,16 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         var unsortedDateEvents: [ASAEventCompatible] = []
         var unsortedTimeEvents: [ASAEventCompatible] = []
         
+        let currentLocaleIdentifier: String = Locale.current.identifier
+        let regionCode = self.locationData.regionCode
+        for eventCalendar in self.builtInEventCalendars {
+            let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
+            let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
+            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
+            unsortedDateEvents.add(events: eventCalendarEvents.dateEvents)
+            unsortedTimeEvents.add(events: eventCalendarEvents.timeEvents)
+        } // for eventCalendar in self.builtInEventCalendars
+        
         if self.isICalendarCompatible && self.iCalendarEventCalendars.count > 0 {
             let EventKitEvents = ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
             for event in EventKitEvents {
@@ -353,16 +363,6 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
                 }
             } // for event in EventKitEvents
         }
-
-        let currentLocaleIdentifier: String = Locale.current.identifier
-        let regionCode = self.locationData.regionCode
-        for eventCalendar in self.builtInEventCalendars {
-            let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
-            let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
-            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
-            unsortedDateEvents.add(events: eventCalendarEvents.dateEvents)
-            unsortedTimeEvents.add(events: eventCalendarEvents.timeEvents)
-        } // for eventCalendar in self.builtInEventCalendars
         
         let dateEvents = unsortedDateEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool
