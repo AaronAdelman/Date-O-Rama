@@ -11,13 +11,6 @@ import Foundation
 struct ASALocationWithClocks {
     var location: ASALocation
     var clocks: Array<ASAClock>
-    
-    func processed(now: Date) -> ASALocationWithProcessedClocks {
-        let location = self.location
-        let processedClocks = self.clocks.processed(now: now)
-        let locationWithProcessedClocks = ASALocationWithProcessedClocks(location: location, processedClocks: processedClocks)
-        return locationWithProcessedClocks
-    } // func processed(now: Date) -> ASALocationWithProcessedClocks
 } // struct ASALocationWithClocks
 
 

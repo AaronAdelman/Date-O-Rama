@@ -184,6 +184,8 @@ struct ASAClockCellBody:  View {
                 let ARROW_SYMBOL_NAME = "arrow.down.circle.fill"
                 
                 if isForComplications {
+                    Spacer()
+                    
                     Menu {
                         Button(action: {
                             detailType = .clockDetail

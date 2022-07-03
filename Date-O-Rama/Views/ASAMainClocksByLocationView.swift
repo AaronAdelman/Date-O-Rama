@@ -30,7 +30,6 @@ struct ASAMainClocksByLocationSectionView: View {
     
     var body: some View {
         let location = locationWithClocks.location
-        let locationWithProcessedClocks = locationWithClocks.processed(now: now)
         
         let sectionHeaderEmoji = (location.regionCode ?? "").flag
 #if os(watchOS)
@@ -86,12 +85,13 @@ struct ASAMainClocksByLocationSectionView: View {
         }
             .font(sectionHeaderFont)
         ) {
-            ForEach( 0..<locationWithProcessedClocks.processedClocks.count) {
+            ForEach( 0..<locationWithClocks.clocks.count) {
                 index
                 in
                 
-                if index < locationWithProcessedClocks.processedClocks.count {
-                    let processedClock = locationWithProcessedClocks.processedClocks[index]
+                if index < locationWithClocks.clocks.count {
+                    let clock = locationWithClocks.clocks[index]
+                    let processedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: false)
                     
 #if os(watchOS)
                     let shouldShowMiniCalendar = false
