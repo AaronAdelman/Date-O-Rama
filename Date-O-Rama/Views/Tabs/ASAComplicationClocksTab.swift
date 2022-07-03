@@ -17,17 +17,17 @@ struct ASAComplicationClocksTab: View {
     func row(with key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .threeLineLarge:
-            return self.userData.threeLineLargeClocks
+            return self.userData.threeLineLargeClocks.clocks
         case .twoLineLarge:
-            return self.userData.twoLineLargeClocks
+            return self.userData.twoLineLargeClocks.clocks
         case .app:
             return []
         case .twoLineSmall:
-            return self.userData.twoLineSmallClocks
+            return self.userData.twoLineSmallClocks.clocks
         case .oneLineLarge:
-            return self.userData.oneLineLargeClocks
+            return self.userData.oneLineLargeClocks.clocks
         case .oneLineSmall:
-            return self.userData.oneLineSmallClocks
+            return self.userData.oneLineSmallClocks.clocks
         } // switch key
     } // func row(with key:  ASAClockArrayKey) -> Array<ASARow>
     
