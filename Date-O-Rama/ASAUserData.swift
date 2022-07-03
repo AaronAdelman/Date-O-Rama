@@ -186,7 +186,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         case .oneLineSmall:
             return self.oneLineSmallClocks.clocks
         } // switch key
-    } // func rowArray(key:  ASAClockArrayKey) -> Array<ASARow>
+    } // func clockArray(key:  ASAClockArrayKey) -> Array<ASARow>
     
     func emptyRowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
@@ -245,7 +245,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
                     //                    debugPrint(#file, #function, jsonResult)
-                    self.mainClocks = ASAUserData.rowArray(key: .app, dictionary: jsonResult).byLocation
+                    self.mainClocks = ASAUserData.clockArray(key: .app, dictionary: jsonResult).byLocation
                     
                     genericSuccess = true
                 }
@@ -273,11 +273,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
                         //                        debugPrint(#file, #function, jsonResult)
-                        self.threeLineLargeClocks = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult).byLocation[0]
-                        self.twoLineLargeClocks = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult).byLocation[0]
-                        self.twoLineSmallClocks = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult).byLocation[0]
-                        self.oneLineLargeClocks = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult).byLocation[0]
-                        self.oneLineSmallClocks = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult).byLocation[0]
+                        self.threeLineLargeClocks = ASAUserData.clockArray(key: .threeLineLarge, dictionary: jsonResult).byLocation[0]
+                        self.twoLineLargeClocks = ASAUserData.clockArray(key: .twoLineLarge, dictionary: jsonResult).byLocation[0]
+                        self.twoLineSmallClocks = ASAUserData.clockArray(key: .twoLineSmall, dictionary: jsonResult).byLocation[0]
+                        self.oneLineLargeClocks = ASAUserData.clockArray(key: .oneLineLarge, dictionary: jsonResult).byLocation[0]
+                        self.oneLineSmallClocks = ASAUserData.clockArray(key: .oneLineSmall, dictionary: jsonResult).byLocation[0]
                         complicationsSuccess = true
                     }
                 } catch {
@@ -422,9 +422,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         case .oneLineSmall:
             self.oneLineSmallClocks = clockArray.byLocation[0]
         } // switch key
-    } // func setRowArray(rowArray: Array<ASARow>, key: ASAClockArrayKey)
+    } // func func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey)
     
-    private class func rowArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASAClock> {
+    private class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASAClock> {
         //        debugPrint(#file, #function, key)
         
         if dictionary == nil {
@@ -436,23 +436,22 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         if temp != nil {
             for dictionary in temp! {
-                let row = ASAClock.new(dictionary: dictionary)
-                tempArray.append(row)
+                let clock = ASAClock.new(dictionary: dictionary)
+                tempArray.append(clock)
             } // for dictionary in temp!
         } else {
             return []
         }
         
-        let numberOfRows = tempArray.count
-        let minimumNumberOfRows = key.minimumNumberOfClocks
-        if numberOfRows < minimumNumberOfRows {
-            
-            tempArray += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfRows - numberOfRows))
+        let numberOfClocks = tempArray.count
+        let minimumNumberOfClocks = key.minimumNumberOfClocks
+        if numberOfClocks < minimumNumberOfClocks {
+            tempArray += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfClocks - numberOfClocks))
         }
         
         //        debugPrint(#file, #function, tempArray)
         return tempArray
-    } // class func rowArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow>
+    } // class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASAClock>
     
     
     // MARK: - NSFilePresenter
