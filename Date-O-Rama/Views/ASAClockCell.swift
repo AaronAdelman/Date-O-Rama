@@ -111,11 +111,11 @@ struct ASAClockCellBody:  View {
                     ASAClockCellText(string:  processedClock.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
                     
                     if canSplitTimeFromDate {
-#if os(watchOS)
-                        let LINE_LIMIT = 1
-#else
+//#if os(watchOS)
+//                        let LINE_LIMIT = 1
+//#else
                         let LINE_LIMIT = 2
-#endif
+//#endif
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                         if shouldShowTime {
                             HStack {

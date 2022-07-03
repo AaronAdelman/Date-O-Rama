@@ -437,11 +437,11 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
 extension ASAClock {
     public func dateStringTimeStringDateComponents(now: Date) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
-        #if os(watchOS)
-        let properDateFormat = self.dateFormat.watchShortened
-        #else
+//        #if os(watchOS)
+//        let properDateFormat = self.dateFormat.watchShortened
+//        #else
         let properDateFormat = self.dateFormat
-        #endif
+//        #endif
         return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: self.locationData)
     }
 
@@ -496,17 +496,17 @@ extension ASAClock {
         return result
     } // public func yearAndMonthOnlyDateString(now:  Date) -> String
 
-    public func watchShortenedDateString(now:  Date) -> String {
-        let dateFormat: ASADateFormat = self.dateFormat.watchShortened
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: self.locationData)
-        return result
-    } // func watchShortenedDateString(now:  Date) -> String
+//    public func watchShortenedDateString(now:  Date) -> String {
+//        let dateFormat: ASADateFormat = self.dateFormat.watchShortened
+//        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: self.locationData)
+//        return result
+//    } // func watchShortenedDateString(now:  Date) -> String
 
-    public func watchShortenedTimeString(now:  Date) -> String {
-        let timeFormat: ASATimeFormat = self.timeFormat
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: self.locationData)
-        return result
-    } // func watchShortenedTimeString(now:  Date) -> String
+//    public func watchShortenedTimeString(now:  Date) -> String {
+//        let timeFormat: ASATimeFormat = self.timeFormat
+//        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: self.locationData)
+//        return result
+//    } // func watchShortenedTimeString(now:  Date) -> String
 
     
     var miniCalendarNumberFormat: ASAMiniCalendarNumberFormat {

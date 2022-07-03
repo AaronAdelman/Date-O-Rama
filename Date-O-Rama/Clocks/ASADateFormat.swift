@@ -124,29 +124,29 @@ extension ASADateFormat {
         } // get
     } // var shortened
 
-    var watchShortened:  ASADateFormat {
-        get {
-            switch self {
-            case .full, .mediumWithWeekday:
-                return .shortWithWeekday
-
-            case .long, .medium:
-                return .short
-                
-            case .fullWithoutYear:
-                return .shortWithWeekdayWithoutYear
-                
-            case .longWithoutYear, .mediumWithoutYear:
-                return .shortWithoutYear
-                
-            case .fullWithRomanYear, .longWithRomanYear:
-                return .shortWithRomanYear
-
-            default:
-                return self
-            } // switch self
-        } // get
-    } // var watchShortened
+//    var watchShortened:  ASADateFormat {
+//        get {
+//            switch self {
+//            case .full, .mediumWithWeekday:
+//                return .shortWithWeekday
+//
+//            case .long, .medium:
+//                return .short
+//                
+//            case .fullWithoutYear:
+//                return .shortWithWeekdayWithoutYear
+//                
+//            case .longWithoutYear, .mediumWithoutYear:
+//                return .shortWithoutYear
+//                
+//            case .fullWithRomanYear, .longWithRomanYear:
+//                return .shortWithRomanYear
+//
+//            default:
+//                return self
+//            } // switch self
+//        } // get
+//    } // var watchShortened
     
     var isRomanYear: Bool {
         switch self {
