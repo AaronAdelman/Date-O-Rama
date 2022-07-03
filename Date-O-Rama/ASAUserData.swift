@@ -18,13 +18,13 @@ import ClockKit
 enum ASAPreferencesFileCode {
     case clocks
     case complications
-
+    
     var suffix:  String {
         get {
             switch self {
             case .clocks:
                 return "/Documents/Clock Preferences.json"
-
+                
             case .complications:
                 return "/Documents/Complication Preferences.json"
             } // switch self
@@ -39,66 +39,66 @@ enum ASAPreferencesFileCode {
 final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     static let shared = ASAUserData()
     
-
+    
     // MARK:  - Model objects
     
     @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])]
     
     private func reloadComplicationTimelines() {
-        #if os(watchOS)
+#if os(watchOS)
         // Update any complications on active watch faces.
         let server = CLKComplicationServer.sharedInstance()
         for complication in server.activeComplications ?? [] {
             server.reloadTimeline(for: complication)
         }
-        #endif
+#endif
     }
     
-    @Published var threeLineLargeClocks: Array<ASALocationWithClocks> = [] {
+    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineSmallClocks:   Array<ASALocationWithClocks> = [] {
+    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineLargeClocks:   Array<ASALocationWithClocks> = [] {
+    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineLargeClocks:   Array<ASALocationWithClocks> = [] {
+    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineSmallClocks:   Array<ASALocationWithClocks> = [] {
+    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-
-
+    
+    
     // MARK:  -
-
+    
     var containerURL:  URL?
-
-
+    
+    
     // MARK:  -
-
+    
     class func ubiquityContainerURL() -> URL? {
         let result: URL? = FileManager.default.url(forUbiquityContainerIdentifier: nil)
-//        debugPrint(#file, #function, result as Any)
+        //        debugPrint(#file, #function, result as Any)
         return result
     }
-
+    
     private class func checkForContainerExistence() -> URL? {
         // check for container existence
         if let url = ubiquityContainerURL() {
             let needToCreateContainer = !FileManager.default.fileExists(atPath: url.path)
-//            debugPrint(#file, #function, "Need to create container:", needToCreateContainer)
+            //            debugPrint(#file, #function, "Need to create container:", needToCreateContainer)
             if needToCreateContainer {
                 do {
                     try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
@@ -107,10 +107,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
             }
-
+            
             let documentsPath = url.path + "/Documents"
             let needToCreateDocuments = !FileManager.default.fileExists(atPath: documentsPath)
-//            debugPrint(#file, #function, "Need to create documents:", needToCreateDocuments)
+            //            debugPrint(#file, #function, "Need to create documents:", needToCreateDocuments)
             if needToCreateDocuments {
                 do {
                     try FileManager.default.createDirectory(at: URL(fileURLWithPath: documentsPath), withIntermediateDirectories: true, attributes: nil)
@@ -119,23 +119,23 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error.localizedDescription)
                 }
             }
-
+            
             return url
         } else {
-//            debugPrint(#file, #function, "Something else happened")
+            //            debugPrint(#file, #function, "Something else happened")
         }
-
+        
         return nil
     } // func checkForContainerExistence()
-
+    
     fileprivate func preferencesFilePath(code:  ASAPreferencesFileCode) -> String? {
         if self.containerURL == nil {
             return nil
         }
-
+        
         let possibilityPath = self.containerURL!.path + code.suffix
         do {
-        try FileManager.default.startDownloadingUbiquitousItem(at: URL(fileURLWithPath: possibilityPath))
+            try FileManager.default.startDownloadingUbiquitousItem(at: URL(fileURLWithPath: possibilityPath))
         } catch {
             debugPrint(#file, #function, "startDownloadingUbiquitousItem error:", error)
             return nil
@@ -144,101 +144,101 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         if exists {
             return possibilityPath
         }
-
+        
         return possibilityPath
     } // func func preferencesFilePath(code:  ASAPreferencesFileCode) -> String?
-
+    
     private func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool {
-        #if os(watchOS)
+#if os(watchOS)
         let defaults = UserDefaults.standard
         return defaults.object(forKey: code.suffix) != nil
-        #else
+#else
         if self.containerURL == nil {
             return false
         }
-
+        
         let path = self.preferencesFilePath(code: code)
         if path == nil {
             return false
         }
         let result = FileManager.default.fileExists(atPath: path!)
         return result
-        #endif
+#endif
     } // func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool
     
-     func rowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
+    func rowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .app:
             return self.mainClocks.clocks
-
+            
         case .threeLineLarge:
             return self.threeLineLargeClocks.clocks
-
+            
         case .twoLineSmall:
             return self.twoLineSmallClocks.clocks
-
+            
         case .twoLineLarge:
             return self.twoLineLargeClocks.clocks
-
+            
         case .oneLineLarge:
             return self.oneLineLargeClocks.clocks
-
+            
         case .oneLineSmall:
             return self.oneLineSmallClocks.clocks
         } // switch key
     } // func rowArray(key:  ASAClockArrayKey) -> Array<ASARow>
-
+    
     func emptyRowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
         switch key {
         case .app:
             return [ASAClock.generic]
-
+            
         case .threeLineLarge:
             return [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full),
                 ASAClock.generic(calendarCode: .HebrewGRA, dateFormat: .full),
                 ASAClock.generic(calendarCode: .IslamicSolar, dateFormat: .full)
             ]
-
+            
         case .twoLineSmall:
             return [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekday),
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .dayOfMonth)
             ]
-
+            
         case .twoLineLarge:
             return [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekdayWithDayOfMonth),
                 ASAClock.generic(calendarCode: .HebrewGRA, dateFormat:  .abbreviatedWeekdayWithDayOfMonth)
             ]
-
+            
         case .oneLineSmall:
             return [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
             ]
-
+            
         case .oneLineLarge:
             return [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
             ]
         } // switch key
     } // func emptyRowArray(key:  ASAClockArrayKey) -> Array<ASARow>
-
+    
     fileprivate func loadPreferences() {
         var genericSuccess = false
         var complicationsSuccess = false
-        #if os(watchOS)
+#if os(watchOS)
         let defaults = UserDefaults.standard
-        #endif
-
+#endif
+        
         if preferenceFileExists(code: .clocks) {
             let path = self.preferencesFilePath(code: .clocks)
             
-//            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
+            //            debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
             do {
-                #if os(watchOS)
+#if os(watchOS)
                 let data = defaults.object(forKey:  ASAPreferencesFileCode.clocks.suffix) as! Data
-                #else
+#else
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-                #endif
+#endif
                 //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
                 //                debugPrint(#file, #function, jsonResult)
@@ -254,30 +254,30 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 debugPrint(#file, #function, error)
             }
         } else {
-//            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
+            //            debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .clocks)))” does not exist")
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
             if preferenceFileExists(code: .complications) {
                 let path = self.preferencesFilePath(code: .complications)
-//                debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
+                //                debugPrint(#file, #function, "Preference file “\(String(describing: path))” exists")
                 do {
-                    #if os(watchOS)
+#if os(watchOS)
                     let data = defaults.object(forKey:  ASAPreferencesFileCode.complications.suffix) as! Data
-                    #else
+#else
                     let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
-                    #endif
+#endif
                     //                    debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
                     let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
                     //                    debugPrint(#file, #function, jsonResult)
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
                         //                        debugPrint(#file, #function, jsonResult)
-                        self.threeLineLargeClocks = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult).byLocation
-                        self.twoLineLargeClocks = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult).byLocation
-                        self.twoLineSmallClocks = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult).byLocation
-                        self.oneLineLargeClocks = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult).byLocation
-                        self.oneLineSmallClocks = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult).byLocation
+                        self.threeLineLargeClocks = ASAUserData.rowArray(key: .threeLineLarge, dictionary: jsonResult).byLocation[0]
+                        self.twoLineLargeClocks = ASAUserData.rowArray(key: .twoLineLarge, dictionary: jsonResult).byLocation[0]
+                        self.twoLineSmallClocks = ASAUserData.rowArray(key: .twoLineSmall, dictionary: jsonResult).byLocation[0]
+                        self.oneLineLargeClocks = ASAUserData.rowArray(key: .oneLineLarge, dictionary: jsonResult).byLocation[0]
+                        self.oneLineSmallClocks = ASAUserData.rowArray(key: .oneLineSmall, dictionary: jsonResult).byLocation[0]
                         complicationsSuccess = true
                     }
                 } catch {
@@ -285,7 +285,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     debugPrint(#file, #function, error)
                 }
             } else {
-//                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .complications)))” does not exist")
+                //                debugPrint(#file, #function, "Preference file “\(String(describing: self.preferencesFilePath(code: .complications)))” does not exist")
             }
         }
         
@@ -295,26 +295,26 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         if #available(iOS 13.0, watchOS 6.0, *) {
             if !complicationsSuccess {
-                threeLineLargeClocks = self.emptyRowArray(key: .threeLineLarge).byLocation
-                twoLineSmallClocks   = self.emptyRowArray(key: .twoLineSmall).byLocation
-                twoLineLargeClocks   = self.emptyRowArray(key: .twoLineLarge).byLocation
-                oneLineLargeClocks   = self.emptyRowArray(key: .oneLineLarge).byLocation
-                oneLineSmallClocks   = self.emptyRowArray(key: .oneLineSmall).byLocation
+                threeLineLargeClocks = self.emptyRowArray(key: .threeLineLarge).byLocation[0]
+                twoLineSmallClocks   = self.emptyRowArray(key: .twoLineSmall).byLocation[0]
+                twoLineLargeClocks   = self.emptyRowArray(key: .twoLineLarge).byLocation[0]
+                oneLineLargeClocks   = self.emptyRowArray(key: .oneLineLarge).byLocation[0]
+                oneLineSmallClocks   = self.emptyRowArray(key: .oneLineSmall).byLocation[0]
             }
         }
     } // func loadPreferences()
-
+    
     override init() {
         super.init()
-
+        
         self.containerURL = ASAUserData.checkForContainerExistence()
         self.presentedItemURL = self.containerURL
-
+        
         NSFileCoordinator.addFilePresenter(self)
-
+        
         self.loadPreferences()
     } // init()
-
+    
     deinit {
         NSFileCoordinator.removeFilePresenter(self)
     } // deinit
@@ -323,43 +323,43 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         let data = (try? JSONSerialization.data(withJSONObject: dictionary, options: []))
         //        debugPrint(#file, #function, String(data: data!, encoding: .utf8) as Any)
         if data != nil {
-                #if os(watchOS)
-                let defaults = UserDefaults.standard
-                defaults.setValue(data, forKey: code.suffix)
-                #else
-                do {
+#if os(watchOS)
+            let defaults = UserDefaults.standard
+            defaults.setValue(data, forKey: code.suffix)
+#else
+            do {
                 let preferencesFilePath: String? = self.preferencesFilePath(code: code)
                 if preferencesFilePath != nil {
                     let url: URL = URL(fileURLWithPath: preferencesFilePath!)
-
+                    
                     try data!.write(to: url, options: .atomic)
-
+                    
                     // debugPrint(#file, #function, "Preferences successfully saved")
                 } else {
-//                    debugPrint(#file, #function, "Preferences file path is nil!")
+                    //                    debugPrint(#file, #function, "Preferences file path is nil!")
                 }
             } catch {
                 debugPrint(#file, #function, error)
             }
-                #endif
+#endif
         } else {
-//            debugPrint(#file, #function, "Data is nil")
+            //            debugPrint(#file, #function, "Data is nil")
         }
     } // func writePreferences(_ dictionary: [String : Any], code:  ASAPreferencesFileCode)
-
+    
     public func savePreferences(code:  ASAPreferencesFileCode) {
         self.objectWillChange.send()
         
         if code == .clocks {
             let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks.clocks, forComplication: false)
-
+            
             let temp1a: Dictionary<String, Any> = [
                 ASAClockArrayKey.app.rawValue:  processedMainClocks
             ]
-
+            
             writePreferences(temp1a, code: .clocks)
         }
-
+        
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
                 let processedThreeLargeClocks = self.processedClocksArray(clocksArray: self.threeLineLargeClocks.clocks, forComplication: true)
@@ -367,7 +367,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 let processedTwoLineSmallClocks = self.processedClocksArray(clocksArray: self.twoLineSmallClocks.clocks, forComplication: true)
                 let processedOneLineLargeClocks = self.processedClocksArray(clocksArray: self.oneLineLargeClocks.clocks, forComplication: true)
                 let processedOneLineSmallClocks = self.processedClocksArray(clocksArray: self.oneLineSmallClocks.clocks, forComplication: true)
-
+                
                 let temp2: Dictionary<String, Any> = [
                     ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
                     ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeClocks,
@@ -375,24 +375,24 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     ASAClockArrayKey.oneLineLarge.rawValue:  processedOneLineLargeClocks,
                     ASAClockArrayKey.oneLineSmall.rawValue:  processedOneLineSmallClocks
                 ]
-
+                
                 writePreferences(temp2, code: .complications)
             }
         }
-
-        #if os(iOS)
-        #if targetEnvironment(macCatalyst)
         
-        #else
+#if os(iOS)
+#if targetEnvironment(macCatalyst)
+        
+#else
         let appDelegate: AppDelegate = AppDelegate.shared
         appDelegate.sendUserData(appDelegate.session)
-        #endif
-        #endif
+#endif
+#endif
     } // func savePreferences()
     
     
     // MARK: - Translation between JSON and model objects
-
+    
     private func processedClocksArray(clocksArray:  Array<ASAClock>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
         for row in clocksArray {
@@ -401,39 +401,39 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         return temp
     } // func processedClockArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
-
+    
     public func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey) {
         switch key {
         case .app:
             self.mainClocks = clockArray.byLocation
-
+            
         case .threeLineLarge:
-            self.threeLineLargeClocks = clockArray.byLocation
-
+            self.threeLineLargeClocks = clockArray.byLocation[0]
+            
         case .twoLineSmall:
-            self.twoLineSmallClocks = clockArray.byLocation
-
+            self.twoLineSmallClocks = clockArray.byLocation[0]
+            
         case .twoLineLarge:
-            self.twoLineLargeClocks = clockArray.byLocation
-
+            self.twoLineLargeClocks = clockArray.byLocation[0]
+            
         case .oneLineLarge:
-            self.oneLineLargeClocks = clockArray.byLocation
-
+            self.oneLineLargeClocks = clockArray.byLocation[0]
+            
         case .oneLineSmall:
-            self.oneLineSmallClocks = clockArray.byLocation
+            self.oneLineSmallClocks = clockArray.byLocation[0]
         } // switch key
     } // func setRowArray(rowArray: Array<ASARow>, key: ASAClockArrayKey)
-
+    
     private class func rowArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASAClock> {
         //        debugPrint(#file, #function, key)
-
+        
         if dictionary == nil {
             return []
         }
-
+        
         let temp = dictionary![key.rawValue] as! Array<Dictionary<String, Any>>?
         var tempArray:  Array<ASAClock> = []
-
+        
         if temp != nil {
             for dictionary in temp! {
                 let row = ASAClock.new(dictionary: dictionary)
@@ -442,45 +442,45 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } else {
             return []
         }
-
+        
         let numberOfRows = tempArray.count
         let minimumNumberOfRows = key.minimumNumberOfClocks
         if numberOfRows < minimumNumberOfRows {
-
+            
             tempArray += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfRows - numberOfRows))
         }
-
+        
         //        debugPrint(#file, #function, tempArray)
         return tempArray
     } // class func rowArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASARow>
-
-
+    
+    
     // MARK: - NSFilePresenter
-
+    
     var presentedItemURL: URL?
-
+    
     var presentedItemOperationQueue: OperationQueue = OperationQueue.main
-
+    
     func presentedSubitemDidChange(at url: URL) {
-//        debugPrint(#file, #function, url)
+        //        debugPrint(#file, #function, url)
         self.loadPreferences()
     } // func presentedSubitemDidChange(at url: URL)
-
+    
     func presentedItemDidChange() {
-//        debugPrint(#file, #function)
+        //        debugPrint(#file, #function)
         self.loadPreferences()
     } // func presentedItemDidChange()
-
-
+    
+    
     // MARK:  - Events
-
+    
     func mainClocksEvents(startDate:  Date, endDate:  Date) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         for clock in self.mainClocks.clocks {
             let clockEvents = clock.events(startDate:  startDate, endDate:  endDate)
             unsortedEvents = unsortedEvents + clockEvents.dateEvents + clockEvents.timeEvents
         } // for for clock in self.mainClocks
-
+        
         let events: [ASAEventCompatible] = unsortedEvents.sorted(by: {
             (e1: ASAEventCompatible, e2: ASAEventCompatible) -> Bool in
             return e1.startDate.compare(e2.startDate) == ComparisonResult.orderedAscending
@@ -537,5 +537,5 @@ extension ASAUserData {
         let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock])
         self.mainClocks.append(newLocationWithClocks)
         self.savePreferences(code: .clocks)
-            } // func addMainClock(clock: ASAClock)
+    } // func addMainClock(clock: ASAClock)
 } // extension ASAUserData

@@ -186,7 +186,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK:  -
     
     func oneLineSmallRowString(now:  Date) -> String {
-        let headerRow = self.userData.oneLineSmallClocks[0].clocks[0]
+        let headerRow = self.userData.oneLineSmallClocks.clocks[0]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -196,7 +196,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func oneLineSmallRowString(now:  Date) -> String
 
     func oneLineLargeRowString(now:  Date) -> String {
-        let headerRow = self.userData.oneLineLargeClocks[0].clocks[0]
+        let headerRow = self.userData.oneLineLargeClocks.clocks[0]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -206,8 +206,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func oneLineLargeRowString(now:  Date) -> String
 
     func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String) {
-        let headerRow = self.userData.twoLineSmallClocks[0].clocks[0]
-        let body1Row  = self.userData.twoLineSmallClocks[1].clocks[0]
+        let headerRow = self.userData.twoLineSmallClocks.clocks[0]
+        let body1Row  = self.userData.twoLineSmallClocks.clocks[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -220,8 +220,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     } // func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String)
     
     func twoLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String) {
-        let headerRow = self.userData.twoLineLargeClocks[0].clocks[0]
-        let body1Row  = self.userData.twoLineLargeClocks[1].clocks[0]
+        let headerRow = self.userData.twoLineLargeClocks.clocks[0]
+        let body1Row  = self.userData.twoLineLargeClocks.clocks[1]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
@@ -235,9 +235,9 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     
     func threeLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String, body2String:  String) {
-        let headerRow = self.userData.threeLineLargeClocks[0].clocks[0]
-        let body1Row  = self.userData.threeLineLargeClocks[1].clocks[0]
-        let body2Row  = self.userData.threeLineLargeClocks[2].clocks[0]
+        let headerRow = self.userData.threeLineLargeClocks.clocks[0]
+        let body1Row  = self.userData.threeLineLargeClocks.clocks[1]
+        let body2Row  = self.userData.threeLineLargeClocks.clocks[2]
         
         // Header date
         let headerString = headerRow.dateString(now: now)
