@@ -13,7 +13,7 @@
         {"titles": {"en": "Europe Day (European Union)"}, "type": "1D", "start": {"mon": 5, "d": 9}, "emoji": "🇪🇺"},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
-        {"inherits": "National Day", "titles": {"en": "Belgian National Day", "fr": "Fête nationale belge", "de": "Belgischer Nationalfeiertag", "nl": "Nationale feestdag van België"}, "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Belgian_National_Day"}},
+        {"inherits": "National Day", "titles": {"en": "Belgian National Day", "fr": "Fête nationale belge", "de": "Belgischer Nationalfeiertag", "nl": "Nationale feestdag van België"}, "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://nationaltoday.com/belgium-independence-day/"}},
         {"inherits": "Grand Duke’s Official Birthday", "type": "1D", "start": {"mon": 6, "d": 23}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},

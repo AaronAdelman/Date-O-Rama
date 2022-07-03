@@ -178,6 +178,7 @@
         {"template": "Laylat al-Qadr", "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"}, "type": "1D", "start": {"mon": 9, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}},
         {"template": "Leo", "titles": {"en": "Leo", "he": "אריה"}, "type": "1M", "start": {"mon": 12}, "emoji": "♌️", "inherits": "*Astrology*"},
         {"template": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}, "titles": {"en": "Liberation Day", "sq": "Dita e Çlirimit"}, "urls": {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},
+        {"template": "Liberation Day (day off)", "type": "1D", "start": {"d": 3, "mon": 3}, "titles": {"en": "Liberation Day (day off)"}, "urls": {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},
         {"template": "Libra", "titles": {"en": "Libra", "he": "מאזניים"}, "type": "1M", "start": {"mon": 1}, "emoji": "♎️", "inherits": "*Astrology*"},
         {"template": "Litha", "titles": {"en": "Litha", "he": "לית׳א"}, "type": "1D", "start": {"equinoxOrSolstice": "Jun"}},
         {"template": "Lughnasadh", "titles": {"en": "Lughnasadh", "he": "לונאסה"}, "type": "1D", "start": {"mon": 8, "d": 1}},
