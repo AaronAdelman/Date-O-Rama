@@ -63,12 +63,6 @@ struct ASAMainClocksByLocationSectionView: View {
                 
                 Divider()
                 
-//#if os(watchOS)
-//#else
-//
-//                EditButton()
-//#endif
-                
                 Button(action: {
                     locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
                     ASAUserData.shared.savePreferences(code: .clocks)
@@ -100,15 +94,13 @@ struct ASAMainClocksByLocationSectionView: View {
                     let processedClock = locationWithProcessedClocks.processedClocks[index]
                     
 #if os(watchOS)
-                    let shouldShowTime         = false
                     let shouldShowMiniCalendar = false
                     let indexIsOdd             = false
 #else
-                    let shouldShowTime         = true
                     let shouldShowMiniCalendar = true
                     let indexIsOdd             = index % 2 == 1
 #endif
-                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: shouldShowTime, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
+                    ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
                 }
             }
             .onDelete(perform: onDelete)
