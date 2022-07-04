@@ -751,8 +751,8 @@
 		A5EE117926C573910050495C /* Moon.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE117726C573900050495C /* Moon.json */; };
 		A5EE19E52804A92600B0B9C2 /* GB.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19E42804A92600B0B9C2 /* GB.json */; };
 		A5EE19E62804A92600B0B9C2 /* GB.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19E42804A92600B0B9C2 /* GB.json */; };
-		A5EE19E82805FFC700B0B9C2 /* US (Jewish).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19E72805FFC700B0B9C2 /* US (Jewish).json */; };
-		A5EE19E92805FFC700B0B9C2 /* US (Jewish).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19E72805FFC700B0B9C2 /* US (Jewish).json */; };
+		A5EE19E82805FFC700B0B9C2 /* US (Hebrew).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19E72805FFC700B0B9C2 /* US (Hebrew).json */; };
+		A5EE19E92805FFC700B0B9C2 /* US (Hebrew).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19E72805FFC700B0B9C2 /* US (Hebrew).json */; };
 		A5EE19EB2806019500B0B9C2 /* Sikhism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */; };
 		A5EE19EC2806019500B0B9C2 /* Sikhism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */; };
 		A5EE2FA12815DB9800B6E81E /* JP.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EE2FA02815DB9800B6E81E /* JP.json */; };
@@ -1474,7 +1474,7 @@
 		A5EB8520286A08A800C9321A /* UZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UZ.json; sourceTree = "<group>"; };
 		A5EE117726C573900050495C /* Moon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Moon.json; sourceTree = "<group>"; };
 		A5EE19E42804A92600B0B9C2 /* GB.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GB.json; sourceTree = "<group>"; };
-		A5EE19E72805FFC700B0B9C2 /* US (Jewish).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "US (Jewish).json"; sourceTree = "<group>"; };
+		A5EE19E72805FFC700B0B9C2 /* US (Hebrew).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "US (Hebrew).json"; sourceTree = "<group>"; };
 		A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sikhism (supplemental).json"; sourceTree = "<group>"; };
 		A5EE2FA02815DB9800B6E81E /* JP.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JP.json; sourceTree = "<group>"; };
 		A5EF0001285B8EEA00F2205F /* YE (Muslim).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "YE (Muslim).json"; sourceTree = "<group>"; };
@@ -2005,7 +2005,7 @@
 				A5EFFFBA285B811A00F2205F /* UG.json */,
 				A5FB22C92863903600B5042B /* UM.json */,
 				A5C7793C26B8382600DD6009 /* UN.json */,
-				A5EE19E72805FFC700B0B9C2 /* US (Jewish).json */,
+				A5EE19E72805FFC700B0B9C2 /* US (Hebrew).json */,
 				A5D3D7DD27FA14640099718A /* US.json */,
 				A5EFFFE6285B870A00F2205F /* UY.json */,
 				A5EB8520286A08A800C9321A /* UZ.json */,
@@ -2856,7 +2856,7 @@
 				A5EF0011285B8EEB00F2205F /* SD (Muslim).json in Resources */,
 				A5B999CE28622D4800072FD5 /* CU.json in Resources */,
 				A5E49636286252EC001BF40C /* MA.json in Resources */,
-				A5EE19E92805FFC700B0B9C2 /* US (Jewish).json in Resources */,
+				A5EE19E92805FFC700B0B9C2 /* US (Hebrew).json in Resources */,
 				A581B880284E55E500407D68 /* GR.json in Resources */,
 				A5F3B0192855FEC700865CEB /* RU.json in Resources */,
 				A5E495FA28624EFE001BF40C /* GI.json in Resources */,
@@ -3002,7 +3002,7 @@
 				A5E4961D28625142001BF40C /* KI.json in Resources */,
 				A5BDE7732665594600F47416 /* Localizable.stringsdict in Resources */,
 				A5EFFF5B285B5F9B00F2205F /* GY.json in Resources */,
-				A5EE19E82805FFC700B0B9C2 /* US (Jewish).json in Resources */,
+				A5EE19E82805FFC700B0B9C2 /* US (Hebrew).json in Resources */,
 				A5E4965028625479001BF40C /* NC.json in Resources */,
 				A5B999C128622BBA00072FD5 /* CC.json in Resources */,
 				A5D850AE280C95F6005247BD /* ZA.json in Resources */,

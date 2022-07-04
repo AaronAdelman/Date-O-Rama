@@ -48,6 +48,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Battle of the Boyne"}, "urls": {"en": "https://nationaltoday.com/battle-of-the-boyne/"}, "1st": {"era": 1, "y": 1690}},
         {"type": "1D", "start": {"mon": 7, "d": 15}, "inherits": "St. Swithin’s Day", "1st": {"era": 1, "y": 990}},
         {"type": "nD", "start": {"mon": 7, "d": 16}, "end": {"mon": 7, "d": 31}, "titles": {"en": "Festival of British Archaeology"}, "urls": {"en": "https://nationaltoday.com/festival-of-british-archaeology/"}, "1st": {"era": 1, "y": 2003}},
-
+        {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Norfolk Day"}, "urls": {"en": "https://nationaltoday.com/norfolk-day/"}},
     ]
 }

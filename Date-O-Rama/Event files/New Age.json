@@ -22,5 +22,7 @@
         {"type": "1D", "start": {"d": 2, "mon": 7}, "titles": {"en": "World UFO Day"}, "1st": {"era": 1, "y": 2001}, "emoji": "🛸", "urls": {"en": "http://skepdic.com/ufos_ets.html"}},
         {"type": "1D", "start": {"d": 22, "mon": 5}, "titles": {"en": "International Being You Day"}, "1st": {"era": 1, "y": 2021}, "urls": {"en": "https://rationalwiki.org/wiki/Access_Consciousness"}},
         {"titles": {"en": "International Essential Oils Day"}, "type": "1D", "start": {"mon": 7, "d": 11}, "urls": {"en": "https://skepdic.com/aroma.html"}, "1st": {"era": 1, "y": 2018}, "emoji": "🝆"},
+        {"titles": {"en": "One Voice Day"}, "type": "1D", "start": {"mon": 7, "d": 26}, "emoji": "🌎", "1st": {"era": 1, "y": 1996}, "notes": {"en": "An attempt at World peace in the name of metaphysics."}},
+
     ]
 }

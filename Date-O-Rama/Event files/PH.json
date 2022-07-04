@@ -15,6 +15,7 @@
        {"type": "1M", "start": {"mon": 7}, "titles": {"en": "Nutrition Month Philippines"}, "urls": {"en": "https://nationaltoday.com/nutrition-month-philippines/"}},
        {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Filipino-American Friendship Day"}, "urls": {"en": "https://nationaltoday.com/filipino-american-friendship-day/"}, "1st": {"era": 1, "y": 1984}, "emoji": "🇵🇭🇺🇸"},
        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/philippines-republic-day/"}, "1st": {"era": 1, "y": 1996}},
+       {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, "1st": {"era": 1, "y": 1914}},
         ]
     }
 

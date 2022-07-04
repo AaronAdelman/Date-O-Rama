@@ -124,6 +124,7 @@
         {"template": "Feast of Saints Peter and Paul", "titles": {"en": "Feast of Saints Peter and Paul"}, "type": "1D", "start": {"mon": 6, "d": 29}},
         {"template": "Feast of St. Anthony of Padua", "titles": {"en": "Feast of St. Anthony of Padua", "es": "San Antonio"}, "type": "1D", "start": {"mon": 6, "d": 13}},
         {"template": "Feast of St. Egwin of Worcester", "titles": {"en": "Feast of St. Egwin of Worcester"}, "notes": {"en": "Christmastide (day 6)"}, "type": "1D", "start": {"mon": 12, "d": 30}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"template": "Feast of St. James", "titles": {"en": "Feast of St. James"}, "type": "1D", "start": {"mon": 7, "d": 25}, "urls": {"en": "https://nationaltoday.com/st-james-tg/"}},
         {"template": "Feast of St. John the Apostle", "titles": {"en": "Feast of St. John the Apostle"}, "notes": {"en": "Christmastide (day 3)"}, "type": "1D", "start": {"mon": 12, "d": 27}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"template": "Feast of St. Martin of Tours", "titles": {"en": "Feast of St. Martin of Tours", "de": "Martin"}, "type": "1D", "start": {"mon": 11, "d": 11}},
         {"template": "Feast of St. Stephen of Hungary", "titles": {"en": "Feast of St. Stephen of Hungary"}, "type": "1D", "start": {"mon": 8, "d": 16}},

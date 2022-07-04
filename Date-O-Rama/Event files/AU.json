@@ -32,7 +32,7 @@
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"titles": {"en": "Proclamation Day"}, "type": "1D", "start": {"mon": 12, "d": 26}, "urls": {"en": "https://en.wikipedia.org/wiki/Proclamation_Day#South_Australia"}},
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
-
+        
         {"inherits": "Commonwealth Day", "type": "1D", "start": {"mon": 3, "wkd": [2], "wkdRecurrence": 2}, "1st": {"era": 1, "y": 1958}},
         {"inherits": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"mon": 10, "d": 15}, "1st": {"era": 1, "y": 2014}},
         {"inherits": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "1st": {"era": 1, "y": 2000}},
@@ -41,5 +41,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 1}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 6, "d": 6}, "titles": {"en": "Queensland Day"}, "urls": {"en": "https://nationaltoday.com/queensland-day/"}, "1st": {"era": 1, "y": 1981}},
+        {"inherits": "Feast of St. James", "type": "1D", "start": {"mon": 7, "d": 25}},
     ]
 }

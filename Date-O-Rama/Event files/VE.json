@@ -7,5 +7,7 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {"type": "1D", "start": {"mon": 7, "d": 24}, "titles": {"en": "Simon Bolivar’s Birthday", "es": "Natalicio del Libertador"}, "inherits": "*BDay*", "urls": {"en": "https://nationaltoday.com/simon-bolivars-birthday/"}, "1st": {"era": 1, "y": 1783}},
+
    ]
 }
