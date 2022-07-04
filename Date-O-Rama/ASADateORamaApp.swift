@@ -23,11 +23,11 @@ struct ASADateORamaApp: App {
                         Text("CLOCKS_TAB")
                     }
                 
-                ASAEventsTab().environmentObject(userData)
-                    .tabItem {
-                        Image(systemName: "rectangle.stack")
-                        Text("EVENTS_TAB")
-                    }
+//                ASAEventsTab().environmentObject(userData)
+//                    .tabItem {
+//                        Image(systemName: "rectangle.stack")
+//                        Text("EVENTS_TAB")
+//                    }
                 
                 if self.appDelegate.session.isPaired {
                     ASAComplicationClocksTab().environmentObject(userData)
