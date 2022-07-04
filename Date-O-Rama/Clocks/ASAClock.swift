@@ -58,7 +58,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     override init() {
         super.init()
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(handleLocationChanged(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
+//        notificationCenter.addObserver(self, selector: #selector(handleLocationChanged(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
         notificationCenter.addObserver(self, selector: #selector(handleStoreChanged(notification:)), name: .EKEventStoreChanged, object: nil)
     } // override init()
     
@@ -67,12 +67,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         notificationCenter.removeObserver(self)
     } // deinit
     
-    @objc func handleLocationChanged(notification:  Notification) -> Void {
-        if self.usesDeviceLocation {
-            let locationManager = ASALocationManager.shared
-            self.locationData = locationManager.deviceLocationData
-        }
-    } // func handle(notification:  Notification) -> Void
+//    @objc func handleLocationChanged(notification:  Notification) -> Void {
+//        if self.usesDeviceLocation {
+//            let locationManager = ASALocationManager.shared
+//            self.locationData = locationManager.deviceLocationData
+//        }
+//    } // func handle(notification:  Notification) -> Void
     
     @objc func handleStoreChanged(notification:  Notification) -> Void {
         self.clearCacheObjects()
@@ -652,9 +652,9 @@ extension Array where Element == ASAClock {
             let key = clock.locationData
             let index = result.firstIndex(where: {$0.location == key})
             if index == nil {
-                result.append(ASALocationWithClocks(location: key, clocks: [clock]))
+                result.append(ASALocationWithClocks(location: key, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation))
             } else {
-                var itemAtIndex = result[index!]
+                let itemAtIndex = result[index!]
                 itemAtIndex.clocks.append(clock)
                 result[index!] = itemAtIndex
             }

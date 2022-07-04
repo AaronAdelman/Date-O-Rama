@@ -41,6 +41,9 @@ struct ASAMainClocksByLocationSectionView: View {
 #endif
         
         Section(header: HStack {
+            if locationWithClocks.usesDeviceLocation {
+                ASALocationSymbol()
+            }
             Text(sectionHeaderEmoji)
             Text(sectionHeaderTitle)
                 .lineLimit(2)

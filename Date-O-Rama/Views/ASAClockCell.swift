@@ -119,9 +119,9 @@ struct ASAClockCellBody:  View {
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                         if shouldShowTime {
                             HStack {
-                                if processedClock.usesDeviceLocation {
-                                    ASALocationSymbol()
-                                }
+//                                if processedClock.usesDeviceLocation {
+//                                    ASALocationSymbol()
+//                                }
                                 
                                 let timeString: String = processedClock.timeString ?? ""
                                 let string = processedClock.supportsTimeZones ? timeString + " · " + processedClock.timeZoneString : timeString
@@ -130,9 +130,9 @@ struct ASAClockCellBody:  View {
                         }
                     } else {
                         HStack {
-                            if processedClock.usesDeviceLocation {
-                                ASALocationSymbol()
-                            }
+//                            if processedClock.usesDeviceLocation {
+//                                ASALocationSymbol()
+//                            }
                             
                             ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                         }

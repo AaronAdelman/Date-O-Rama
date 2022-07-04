@@ -42,7 +42,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK:  - Model objects
     
-    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])]
+    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic], usesDeviceLocation: false)]
     
     private func reloadComplicationTimelines() {
 #if os(watchOS)
@@ -54,27 +54,27 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 #endif
     }
     
-    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
+    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
+    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
+    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
+    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: []) {
+    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
@@ -533,7 +533,7 @@ extension ASAUserData {
             }
         } // for i in 0..<self.mainClocks.count
         
-        let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock])
+        let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation)
         self.mainClocks.append(newLocationWithClocks)
         self.savePreferences(code: .clocks)
     } // func addMainClock(clock: ASAClock)

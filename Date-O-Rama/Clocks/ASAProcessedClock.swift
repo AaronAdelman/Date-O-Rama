@@ -18,7 +18,7 @@ struct ASAProcessedClock {
     var flagEmojiString:  String
     var timeZoneString:  String
 
-    var usesDeviceLocation:  Bool
+//    var usesDeviceLocation:  Bool
     var locationString:  String
     var canSplitTimeFromDate:  Bool
     var supportsTimeZones:  Bool
@@ -78,7 +78,7 @@ struct ASAProcessedClock {
         self.supportsLocations = clock.calendar.supportsLocations
         if self.supportsLocations {
             self.flagEmojiString = (clock.locationData.regionCode ?? "").flag
-            self.usesDeviceLocation = clock.usesDeviceLocation
+//            self.usesDeviceLocation = clock.usesDeviceLocation
             var locationString = ""
             if clock.locationData.name == nil && clock.locationData.locality == nil && clock.locationData.country == nil {
                 locationString = clock.locationData.location.humanInterfaceRepresentation
@@ -92,7 +92,7 @@ struct ASAProcessedClock {
             self.locationString = locationString
         } else {
             self.flagEmojiString = "🇺🇳"
-            self.usesDeviceLocation = false
+//            self.usesDeviceLocation = false
             self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
         }
         self.supportsTimeZones = clock.calendar.supportsTimeZones

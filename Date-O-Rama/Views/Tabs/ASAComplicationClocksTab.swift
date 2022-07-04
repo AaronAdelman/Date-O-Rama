@@ -44,14 +44,18 @@ struct ASAComplicationClocksTab: View {
                         let sectionHeaderTitle = location.formattedOneLineAddress
                         let sectionHeaderFont: Font = Font.title2
                         
-                        Section(header:  HStack {
+                        Section(header: VStack {
                             Text(NSLocalizedString(complicationKey.rawValue, comment: ""))
-                                .lineLimit(3)
-                            Text(" • ")
-                            Text(sectionHeaderEmoji)
-                            Text(sectionHeaderTitle)
-                                .lineLimit(3)
-                        }
+                                .lineLimit(2)
+                            HStack {
+                                if locationWithClocks.usesDeviceLocation {
+                                    ASALocationSymbol()
+                                }
+                                Text(sectionHeaderEmoji)
+                                Text(sectionHeaderTitle)
+                                    .lineLimit(2)
+                            } // HStack
+                        } // VStack
                             .font(sectionHeaderFont)
                                 , content: {
                             ForEach(locationWithClocks.clocks, id:  \.uuid) {
