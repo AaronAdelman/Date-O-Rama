@@ -17,7 +17,14 @@ class ASALocationWithClocks: NSObject, ObservableObject {
         }
     }
     @Published var clocks: Array<ASAClock>
-    @Published var usesDeviceLocation:  Bool
+    
+    @Published var usesDeviceLocation:  Bool {
+        didSet {
+            for clock in clocks {
+                clock.usesDeviceLocation = usesDeviceLocation
+            }
+        }
+    }
     
     init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool) {
         self.location           = location
