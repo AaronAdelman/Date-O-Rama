@@ -261,6 +261,7 @@
         {"inherits": "St. Leopold’s Day", "type": "1D", "start": {"mon": 11, "d": 15}},
         {"inherits": "St. Maroun Day", "type": "1D", "start": {"mon": 2, "d": 9}},
         {"titles": {"en": "Feast of St. Rosalia"}, "type": "1D", "start": {"mon": 7, "d": 14}, "urls": {"en": "https://nationaltoday.com/feast-of-st-rosalia/"}},
+        {"inherits": "Feast of St. Vladimir", "type": "1D", "start": {"mon": 7, "d": 15}},
 
         {"titles": {"en": "Septuagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -63}},
         {"titles": {"en": "Sexagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -56}},

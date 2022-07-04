@@ -17,5 +17,7 @@
         {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "Feast of St. James", "type": "1D", "start": {"mon": 7, "d": 25}},
+        {"titles": {"en": "Day of Cantabria Institutions"}, "type": "1D", "start": {"mon": 7, "d": 28}, "urls": {"en": "https://nationaltoday.com/day-of-cantabria-institutions/"}, "1st": {"era": 1, "y": 1993}},
+
     ]
 }

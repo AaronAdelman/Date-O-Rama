@@ -129,6 +129,7 @@
         {"template": "Feast of St. Martin of Tours", "titles": {"en": "Feast of St. Martin of Tours", "de": "Martin"}, "type": "1D", "start": {"mon": 11, "d": 11}},
         {"template": "Feast of St. Stephen of Hungary", "titles": {"en": "Feast of St. Stephen of Hungary"}, "type": "1D", "start": {"mon": 8, "d": 16}},
         {"template": "Feast of St. Thomas Becket", "titles": {"en": "Feast of St. Thomas Becket"}, "notes": {"en": "Christmastide (day 5)"}, "type": "1D", "start": {"mon": 12, "d": 29}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
+        {"template": "Feast of St. Vladimir", "titles": {"en": "Feast of St. Vladimir"}, "type": "1D", "start": {"mon": 7, "d": 15}, "urls": {"en": "https://nationaltoday.com/baptism-day-of-kyivan-rus/"}},
         {"template": "Feast of the Annunciation", "titles": {"en": "Feast of the Annunciation", "ar": "عيد البشارة", "fr": "Fête de l’Annonciation"}, "type": "1D", "start": {"mon": 3, "d": 25}},
         {"template": "Feast of the Exaltation of the Holy Cross", "titles": {"en": "Feast of the Exaltation of the Holy Cross"}, "type": "1D", "start": {"mon": 9, "d": 14}},
         {"template": "Feast of the Immaculate Conception", "titles": {"en": "Feast of the Immaculate Conception", "ca": "Immaculada Concepció", "es": "Día de la Inmaculada Concepción de María", "de": "Mariä Empfängnis"}, "type": "1D", "start": {"mon": 12, "d": 8}},
