@@ -3,7 +3,7 @@
     "//": "Iran",
     "defaultLocale": "en",
     "calendarCode": "hiq*",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
         {"titles": {"he": "יום ירושלים", "en": "Quds Day", "ar": "يوم القدس"}, "type": "1D", "start": {"mon": 9, "wkdRecurrence": -1, "wkd": [6]}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 7, "d": 13}},
