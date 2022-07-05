@@ -6,5 +6,6 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
+        {"titles": {"en": "Throne Day"}, "type": "1D", "start": {"mon": 7, "d": 30}, "urls": {"en": "https://nationaltoday.com/enthronement-in-morocco/"}, "1st": {"era": 1, "y": 1999}},
     ]
 }

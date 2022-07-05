@@ -81,6 +81,6 @@
         {"inherits": "National Doughnut Day", "type": "1D", "start": {"mon": 6, "wkd": [6], "wkdRecurrence": 1}},
         {"type": "1D", "start": {"mon": 6, "d": 3}, "titles": {"en": "Uganda Martyrs Day"}, "1st": {"era": 1, "y": 1975}, "emoji": "🇺🇬", "urls": {"en": "https://nationaltoday.com/uganda-martyrs-day/"}},
         {"type": "1D", "start": {"mon": 6, "d": 25}, "titles": {"en": "National Leon Day"}, "1st": {"era": 1, "y": 1975}, "emoji": "🧸", "urls": {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},
-
+        {"inherits": "Nakba Day", "type": "1D", "start": {"mon": 5, "d": 15}, "1st": {"era": 1, "y": 2023}, "notes": {"en": "Thank the US Presbyterian Church for adopting an antisemitic hate-fest."}, "titles": {"en": "Nakba Remembrance Day"}},
     ]
 }

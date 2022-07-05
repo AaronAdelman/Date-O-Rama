@@ -24,7 +24,7 @@
         {"type": "1D", "start": {"mon": 6, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Western Australia Day"}, "urls": {"en": "https://nationaltoday.com/western-australia-day/"}},
         {"type": "1D", "start": {"mon": 6, "wkd": [2], "wkdRecurrence": 2}, "inherits": "Queen’s Birthday", "locations": {"en": "Australian Captial Territory, New South Wales, South Australia, Tasmania, and Victoria"}},
         {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Picnic Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Picnic_Day_(Australian_holiday)"}, "emoji": "🧺"},
-        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 1}, "locations": {"en": "Australian Captial Territory and South Australia"}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 1}, "locations": {"en": "Australian Capital Territory and South Australia"}},
         {"inherits": "Queen’s Birthday", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 1}, "locations": {"en": "Queensland"}},
         {"type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Recreation Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Recreation_Day_holiday"}, "emoji": "🤿"},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
@@ -42,5 +42,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 6, "d": 6}, "titles": {"en": "Queensland Day"}, "urls": {"en": "https://nationaltoday.com/queensland-day/"}, "1st": {"era": 1, "y": 1981}},
         {"inherits": "Feast of St. James", "type": "1D", "start": {"mon": 7, "d": 25}},
+        {"type": "1D", "start": {"mon": 7, "d": 31}, "inherits": "Arbor Day", "1st": {"era": 1, "y": 1996}, "titles": {"en": "National Tree Day"}, "urls": {"en": "https://nationaltoday.com/national-tree-day/"}},
     ]
 }
