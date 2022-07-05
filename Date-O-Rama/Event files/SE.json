@@ -17,6 +17,7 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
         {"titles": {"en": "Midsummer Eve"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/midsummer/"}},
         {"inherits": "Midsummer Day", "type": "1D", "start": {"mon": 6, "d": 25}},
+        {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
 
     ]
 }
