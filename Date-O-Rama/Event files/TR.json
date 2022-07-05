@@ -1,15 +1,25 @@
 {
     "titles": {"*": "TR"},
     "//": "Turkey",
+    "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"type": "1D", "start": {"mon": 4, "d": 23}, "titles": {"en": "National Sovereignty and Children's Day", "tr": "Ulusal Egemenlik ve Çocuk Bayramı"}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Sovereignty_and_Children%27s_Day"}, "1st": {"era": 1, "y": 1981}, "emoji": "👦👧"},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"type": "1D", "start": {"mon": 5, "d": 19}, "titles": {"en": "Commemoration of Atatürk, Youth and Sports Day", "tr": "Atatürk'ü Anma, Gençlik ve Spor Bayramı"}, "urls": {"en": "https://en.wikipedia.org/wiki/Commemoration_of_Atat%C3%BCrk%2C_Youth_and_Sports_Day"}, "1st": {"era": 1, "y": 1938}, "emoji": "⚽️"},
+        {"type": "1D", "start": {"mon": 7, "d": 15}, "titles": {"en": "Democracy and National Unity Day", "tr": "Demokrasi ve Milli Birlik Günü"}, "urls": {"en": "https://nationaltoday.com/the-democracy-and-national-unity-day-of-turkey/"}, "1st": {"era": 1, "y": 2016}, "emoji": "15☪"},
+        {"inherits": "Victory Day", "type": "1D", "start": {"mon": 8, "d": 30}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_Day_(Turkey)"}, "1st": {"era": 1, "y": 1923}},
+        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 10, "d": 29}, "urls": {"en": "https://en.wikipedia.org/wiki/Republic_Day_(Turkey)"}, "1st": {"era": 1, "y": 1923}},
+
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Vardavar", "type": "1D", "start": {"Easter": "Easter", "offsetD": 98}},
         {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
-        {"inherits": "Unity Day", "type": "1D", "start": {"mon": 7, "d": 15}, "titles": {"en": "Democracy and National Unity Day of Turkey"}, "urls": {"en": "https://nationaltoday.com/the-democracy-and-national-unity-day-of-turkey/"}, "1st": {"era": 1, "y": 2016}},
 
+        {"type": "1D", "start": {"mon": 5, "d": 27}, "titles": {"en": "Freedom and Constitution Day", "tr": "Mayıs Hürriyet ve Anayasa Bayramı"}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_and_Constitution_Day"}, "1st": {"era": 1, "y": 1963}},
+        {"type": "1D", "start": {"mon": 7, "d": 23}, "titles": {"en": "İyd-i Millî", "tr": "İyd-i Millî"}, "urls": {"en": "https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%C4%B0yd-i_Mill%C3%AE"}, "1st": {"era": 1, "y": 1909}},
     ]
 }

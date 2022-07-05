@@ -3,7 +3,7 @@
     "//": "Egypt",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.00},
+    "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
         {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 1, "d": 25}, "1st": {"era": 1, "y": 2012}, "titles": {"en": "Revolution Day 2011", "ar": "عيد ثورة 25 يناير"}},
         {"titles": {"en": "National Police Day", "ar": "عيد الشرطة"}, "type": "1D", "start": {"mon": 1, "d": 25}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"}, "1st": {"era": 1, "y": 2009}},

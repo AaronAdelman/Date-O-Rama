@@ -37,7 +37,7 @@
         {"inherits": "צום גדליה", "type": "1D", "start": {"mon": 1, "d": 3, "wkd": [1, 2, 3, 4, 5, 6]}},
         {"inherits": "צום גדליה", "type": "1D", "start": {"mon": 1, "d": 4, "wkd": [1]}},
         {"titles": {"he": "ערב יום כיפור", "en": "Eve of Yom Kippur (Day of Atonement)"}, "type": "1D", "start": {"mon": 1, "d": 9}, "urls": {"en": "https://www.ou.org/holidays/category/yom-kippur/"}},
-        {"titles": {"he": "יום כיפור", "en": "Yom Kippur (Day of Atonement)", "es": "Día del Perdón"}, "type": "1D", "start": {"mon": 1, "d": 10}, "urls": {"en": "https://www.ou.org/holidays/category/yom-kippur/"}},
+        {"titles": {"he": "יום כיפור", "en": "Yom Kippur (Day of Atonement)", "es": "Día del Perdón", "tr": "Yom Kipur"}, "type": "1D", "start": {"mon": 1, "d": 10}, "urls": {"en": "https://www.ou.org/holidays/category/yom-kippur/"}},
         {"titles": {"he": "ערב סוכות", "en": "Eve of Sukkoth"}, "type": "1D", "start": {"mon": 1, "d": 14}, "urls": {"en": "https://www.ou.org/holidays/category/sukkot/"}},
         {"inherits": "*סוכות*", "titles": {"he": "סוכות (יום טוב)", "en": "Sukkoth (yom ṭov)"}, "type": "1D", "start": {"mon": 1, "d": 15}},
         {"inherits": "סוכות (חול המועד, יום א׳)", "regionCodes": ["IL", "PS"], "type": "1D", "start": {"mon": 1, "d": 16}},
