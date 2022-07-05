@@ -132,6 +132,8 @@
 		A53A5B0224519D04005F9876 /* SolarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B0124519D04005F9876 /* SolarEvents.swift */; };
 		A53A5B042451AFDC005F9876 /* ASASunsetTransitionCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */; };
 		A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A5B052451E945005F9876 /* CLLocationExtensions.swift */; };
+		A541945728749D5200C93496 /* IR (Persian).json in Resources */ = {isa = PBXBuildFile; fileRef = A541945628749D5200C93496 /* IR (Persian).json */; };
+		A541945828749D5200C93496 /* IR (Persian).json in Resources */ = {isa = PBXBuildFile; fileRef = A541945628749D5200C93496 /* IR (Persian).json */; };
 		A54539DB26A8A92E0028EAD5 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54539DA26A8A92E0028EAD5 /* PrayTime.swift */; };
 		A54539DD26A98F930028EAD5 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
@@ -1164,6 +1166,7 @@
 		A53A5B0124519D04005F9876 /* SolarEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarEvents.swift; sourceTree = "<group>"; };
 		A53A5B032451AFDC005F9876 /* ASASunsetTransitionCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASunsetTransitionCalendar.swift; sourceTree = "<group>"; };
 		A53A5B052451E945005F9876 /* CLLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtensions.swift; sourceTree = "<group>"; };
+		A541945628749D5200C93496 /* IR (Persian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IR (Persian).json"; sourceTree = "<group>"; };
 		A54539DA26A8A92E0028EAD5 /* PrayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
 		A54539DF26A9BA180028EAD5 /* Shia (times, Jafari).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Shia (times, Jafari).json"; sourceTree = "<group>"; };
 		A54539E526A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times, Umm al-Qura).json"; sourceTree = "<group>"; };
@@ -1829,6 +1832,7 @@
 				A5E4960E2862505C001BF40C /* IQ.json */,
 				A5EFFF68285B63BB00F2205F /* IR (Muslim).json */,
 				A5E4960F2862505C001BF40C /* IR.json */,
+				A541945628749D5200C93496 /* IR (Persian).json */,
 				A5EFFFF9285B8AF700F2205F /* IS.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5BDE77B26677E7900F47416 /* Islam (supplemental).json */,
@@ -2718,6 +2722,7 @@
 				A5EB8522286A08AA00C9321A /* UZ.json in Resources */,
 				A5FB22A828638D2B00B5042B /* SJ.json in Resources */,
 				A5D3D7E827FA2C7E0099718A /* CA.json in Resources */,
+				A541945828749D5200C93496 /* IR (Persian).json in Resources */,
 				A581B88F284E5CB800407D68 /* AD.json in Resources */,
 				A5EFFFF1285B88C200F2205F /* SS.json in Resources */,
 				A5E495D928624D7A001BF40C /* ER.json in Resources */,
@@ -3150,6 +3155,7 @@
 				A5E49635286252EC001BF40C /* MA.json in Resources */,
 				A5EFFFE7285B870A00F2205F /* UY.json in Resources */,
 				A5D850A8280C94A8005247BD /* IT.json in Resources */,
+				A541945728749D5200C93496 /* IR (Persian).json in Resources */,
 				A5D8509C280C8F9D005247BD /* BG.json in Resources */,
 				A5EFFF5D285B5F9B00F2205F /* HK.json in Resources */,
 				A5FB22DC286462FB00B5042B /* AL (Julian).json in Resources */,
