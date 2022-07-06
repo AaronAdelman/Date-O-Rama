@@ -544,4 +544,12 @@ extension ASAUserData {
         let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation)
         addLocationWithClocks(newLocationWithClocks)
     } // func addMainClock(clock: ASAClock)
+    
+    func removeLocationWithClocks(_ locationWithClocks: ASALocationWithClocks) {
+        let index = self.mainClocks.firstIndex(of: locationWithClocks)
+        if index != nil {
+            self.mainClocks.remove(at: index!)
+            self.savePreferences(code: .clocks)
+        }
+    }
 } // extension ASAUserData

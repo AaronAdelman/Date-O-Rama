@@ -37,6 +37,8 @@ struct ASAMainClocksByLocationSectionView: View {
     @State private var showingDetailView = false
     @State private var detail: ASAMainClocksByLocationSectionDetail = .none
     
+    @State private var showingActionSheet = false
+    
     var body: some View {
         let location = locationWithClocks.location
         
@@ -70,6 +72,17 @@ struct ASAMainClocksByLocationSectionView: View {
                     HStack {
                         Image(systemName: "pencil")
                         Text("Edit location")
+                    } // HStack
+                }
+                
+                Button(
+                    action: {
+                        self.showingActionSheet = true
+                    }
+                ) {
+                    HStack {
+                        Image(systemName: "minus.circle.fill")
+                        Text("Delete location")
                     } // HStack
                 }
                 
@@ -114,10 +127,18 @@ struct ASAMainClocksByLocationSectionView: View {
                     Text("Programmer error!  Replace programmer and try again!")
                 case .newClock:
                     ASANewClockDetailView(now:  now, tempLocation: location)
-
+                    
                 case .editLocation:
                     ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
                 } // switch detail
+            }
+            .actionSheet(isPresented: self.$showingActionSheet) {
+                ActionSheet(title: Text("Are you sure you want to delete this location?"), buttons: [
+                    .destructive(Text("Delete this location")) {
+                        ASAUserData.shared.removeLocationWithClocks(locationWithClocks)
+                    },
+                    .default(Text("Cancel")) {  }
+                ])
             }
 #endif
         }
@@ -154,15 +175,15 @@ struct ASAMainClocksByLocationSectionView: View {
             ASAUserData.shared.savePreferences(code: .clocks)
         }
     }
-
-        private func onMove(source: IndexSet, destination: Int) {
-            let relevantUUID = self.locationWithClocks.location.id
-            let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
-            if relevantLocationWithClocksIndex != nil {
-                ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.move(fromOffsets: source, toOffset: destination)
-                ASAUserData.shared.savePreferences(code: .clocks)
-            }
+    
+    private func onMove(source: IndexSet, destination: Int) {
+        let relevantUUID = self.locationWithClocks.location.id
+        let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
+        if relevantLocationWithClocksIndex != nil {
+            ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.move(fromOffsets: source, toOffset: destination)
+            ASAUserData.shared.savePreferences(code: .clocks)
         }
+    }
 }
 
 
