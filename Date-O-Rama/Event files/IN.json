@@ -31,7 +31,7 @@
         {"type": "1D", "start": {"d": 11, "mon": 4}, "titles": {"en": "National Safe Motherhood Day"}, "urls": {"en": "https://newsonair.gov.in/News?title=National-Safe-Motherhood-Day-is-being-observed-today&id=438954"}, "emoji": "🤰"},
         {"type": "1D", "start": {"d": 8, "mon": 8}, "titles": {"en": "Quit India Movement Day"}},
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 15, "mon": 8}},
-        {"type": "1D", "start": {"d": 29, "mon": 8}, "titles": {"en": "National Sports Day"}},
+        {"type": "1D", "start": {"d": 29, "mon": 8}, inherits: "National Sports Day"},
         {"type": "1D", "start": {"d": 8, "mon": 10}, "titles": {"en": "Indian Air Force Day"}},
         {"type": "1D", "start": {"d": 9, "mon": 10}, "titles": {"en": "Indian Foreign Service Day"}},
         {"type": "1D", "start": {"d": 31, "mon": 10}, "titles": {"en": "National Unity Day"}, "inherits": "Unity Day"},
