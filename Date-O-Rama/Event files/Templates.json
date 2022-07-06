@@ -276,6 +276,7 @@
         {"template": "Women’s History Month", "type": "1M", "start": {"mon": 3}, "titles": {"en": "Women’s History Month"}, "urls": {"en": "https://www.daysoftheyear.com/days/womens-history-month/"}, "emoji": "👩"},
         {"template": "World Migratory Bird Day", "titles": {"en": "World Migratory Bird Day", "he": "יום הציפורים הנודדות העולמי"}, "type": "1D", "start": {"mon": 5, "wkd": [7], "wkdRecurrence": 2}, "urls": {"en": "https://nationaldaycalendar.com/world-migratory-bird-day-second-saturday-in-may-and-october/"}, "emoji": "🦆"},
         {"template": "World Wetlands Day", "type": "1D", "start": {"d": 2, "mon": 2}, "titles": {"en": "World Wetlands Day", "he": "יום הביצות הבינלאומי", "fr": "Journée mondiale des zones humides", "es": "Día Mundial de los Humedales"}, "urls": {"en": "https://www.worldwetlandsday.org/", "fr": "https://www.worldwetlandsday.org/fr/", "es": "https://www.worldwetlandsday.org/es/"}, "emoji": "🪷"},
+        {template: "Youth Day", "type": "1D", "start": {"mon": 6, "d": 16}, "titles": {"en": "Youth Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Youth_Day"}},
         {"template": "Yule", "titles": {"en": "Yule", "he": "יוּל"}, "type": "1D", "start": {"equinoxOrSolstice": "Dec"}},
     ]
 }

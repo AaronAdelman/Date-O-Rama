@@ -1,11 +1,21 @@
 {
     "titles": {"*": "MA"},
     "//": "Morocco",
+    "TODO": "Public holidays on the Muslim calendar?",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.75, "green": 0.05, "blue": 0.24},
     "eventSpecifications": [
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"titles": {"en": "Proclamation of Independence Day"}, "type": "1D", "start": {"mon": 1, "d": 11}, "1st": {"era": 1, "y": 1994}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"titles": {"en": "Throne Day"}, "type": "1D", "start": {"mon": 7, "d": 30}, "urls": {"en": "https://nationaltoday.com/enthronement-in-morocco/"}, "1st": {"era": 1, "y": 1999}},
+        {"titles": {"en": "Oued Ed-Dahab Day"}, "type": "1D", "start": {"mon": 8, "d": 14}},
+        {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 8, "d": 20}},
+        {"type": "1D", "start": {"mon": 8, "d": 21}, "inherits": "Youth Day"},
+        {"titles": {"en": "Green March Day"}, "type": "1D", "start": {"mon": 11, "d": 6}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 18}},
+
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
     ]
 }
