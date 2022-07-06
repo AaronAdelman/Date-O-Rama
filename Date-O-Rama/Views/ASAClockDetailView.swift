@@ -92,13 +92,13 @@ struct ASAClockDetailEditingSection:  View {
                 }
                 
                 if selectedClock.calendar.supportsTimeZones || selectedClock.calendar.supportsLocations {
-                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
+//                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
                         VStack {
                             ASALocationCell(usesDeviceLocation: self.selectedClock.usesDeviceLocation, locationData: self.selectedClock.locationData)
                             Spacer()
                             ASATimeZoneCell(timeZone: selectedClock.locationData.timeZone, now: now)
                         } // VStack
-                    }
+//                    }
                 }
                 
                 if selectedClock.supportsLocales {

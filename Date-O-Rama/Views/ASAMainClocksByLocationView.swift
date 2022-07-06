@@ -116,7 +116,7 @@ struct ASAMainClocksByLocationSectionView: View {
                     ASANewClockDetailView(now:  now, tempLocation: location)
 
                 case .editLocation:
-                    ASAEditLocationView(locationWithClocks: locationWithClocks, shouldCreateNewLocation: false)
+                    ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
                 } // switch detail
             }
 #endif

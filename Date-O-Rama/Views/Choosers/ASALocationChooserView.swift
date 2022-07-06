@@ -2,16 +2,18 @@
 //  ASALocationChooserView.swift
 //  Date-O-Rama
 //
-//  Created by אהרן שלמה אדלמן on 2020-05-03.
-//  Copyright © 2020 Adelsoft. All rights reserved.
+//  Created by אהרן שלמה אדלמן on 06/07/2022.
+//  Copyright © 2022 Adelsoft. All rights reserved.
 //
 
+import Foundation
 import SwiftUI
-import CoreLocation
 import MapKit
 
 struct ASALocationChooserView: View {
-    @ObservedObject var clock:  ASAClock
+    @ObservedObject var locationWithClocks: ASALocationWithClocks
+    var shouldCreateNewLocationWithClocks: Bool
+
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
     @State var tempLocationData:  ASALocation = ASALocation()
@@ -24,81 +26,119 @@ struct ASALocationChooserView: View {
     } // var tempUsesDeviceLocation
     @ObservedObject var locationManager = ASALocationManager.shared
 
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State var didCancel = false
+    @Environment(\.dismiss) var dismiss
+//    @State var didCancel = false
+    
+    fileprivate func propagateInfoBackToParent() {
+        debugPrint(#file, #function, "Propagate info back to parent")
+        self.locationWithClocks.usesDeviceLocation = self.tempUsesDeviceLocation
+        if self.tempUsesDeviceLocation {
+            self.locationWithClocks.location = ASALocationManager.shared.deviceLocation
+        } else {
+            self.locationWithClocks.location = self.tempLocationData
+        }
+    }
+    
+    fileprivate func createNewLocationWithClocks() {
+        debugPrint(#file, #function, "Create new location with clocks")
+        let userData: ASAUserData = ASAUserData.shared
+        let newLocationWithClocks = ASALocationWithClocks(location: tempLocationData, clocks: [ASAClock.generic], usesDeviceLocation: tempUsesDeviceLocation)
+        userData.addLocationWithClocks(newLocationWithClocks)
+    }
     
     var body: some View {
-        Form {
-            Section {
-                ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
-                ASATimeZoneCell(timeZone: tempLocationData.timeZone, now: Date())
-            }
-            Section {
-                if !locationManager.connectedToTheInternet {
-                    Text("CANNOT_GEOLOCATE").foregroundColor(.gray)
-                }
-
-                if locationManager.connectedToTheInternet {
-                    Toggle(isOn: $tempUsesDeviceLocation) {
-                        Text("Use device location")
+        let SIDE_SPACER_WIDTH = 20.0
+        
+        VStack {
+            Spacer()
+                .frame(height: 10.0)
+            
+            HStack {
+                Spacer()
+                    .frame(width: SIDE_SPACER_WIDTH)
+                
+                Button("OK", action: {
+                    debugPrint(#file, #function, "OK button")
+//                    self.didCancel = false
+                    if shouldCreateNewLocationWithClocks {
+                        createNewLocationWithClocks()
+                    } else {
+                        propagateInfoBackToParent()
                     }
-                }
-            } // Section
-
-            if !tempUsesDeviceLocation && locationManager.connectedToTheInternet {
-                HStack {
-                    TextField("Requested address", text: $enteredAddress)
-                    Button(action: {
-                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                        self.geolocate()
-                    }) {
-                        Text("🔍")
-                            .foregroundColor(.accentColor)
-                            .bold()
-                    }
-                    .keyboardShortcut(.defaultAction)
+                    self.dismiss()
+                })
+                .font(Font.body)
+                
+                Spacer()
+                
+                Button("Cancel", action: {
+                    debugPrint(#file, #function, "Cancel button")
+//                    self.didCancel = true
+                    self.dismiss()
+                })
+                .font(Font.body)
+                
+                Spacer()
+                    .frame(width: SIDE_SPACER_WIDTH)
+            } // HStack
+            
+            Form {
+                Section {
+                    ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
+                    ASATimeZoneCell(timeZone: tempLocationData.timeZone, now: Date())
                 }
                 Section {
-                    ForEach(self.locationDataArray, id: \.id) {
-                        locationData
-                        in
-                        ASALocationChooserViewCell(locationData: locationData, selectedLocationData: self.$tempLocationData)
-                            .onTapGesture {
-                                self.tempLocationData = locationData
-                            }
+                    if !locationManager.connectedToTheInternet {
+                        Text("CANNOT_GEOLOCATE").foregroundColor(.gray)
+                    }
+                    
+                    if locationManager.connectedToTheInternet {
+                        Toggle(isOn: $tempUsesDeviceLocation) {
+                            Text("Use device location")
+                        }
                     }
                 } // Section
+                
+                if !tempUsesDeviceLocation && locationManager.connectedToTheInternet {
+                    HStack {
+                        TextField("Requested address", text: $enteredAddress)
+                        Button(action: {
+                            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                            self.geolocate()
+                        }) {
+                            Text("🔍")
+                                .foregroundColor(.accentColor)
+                                .bold()
+                        }
+                        .keyboardShortcut(.defaultAction)
+                    }
+                    Section {
+                        ForEach(self.locationDataArray, id: \.id) {
+                            locationData
+                            in
+                            ASALocationChooserViewCell(location: locationData, selectedLocation: self.$tempLocationData)
+                                .onTapGesture {
+                                    self.tempLocationData = locationData
+                                }
+                        }
+                    } // Section
+                }
+                Section {
+                    Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
+                        tempLocationData
+                        in
+                        MapPin(coordinate: tempLocationData.location.coordinate )
+                    }
+                    .aspectRatio(1.0, contentMode: .fit)
+                } // Section
             }
-            Section {
-                Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
-                    tempLocationData
-                    in
-                    MapPin(coordinate: tempLocationData.location.coordinate )
-                }
-                .aspectRatio(1.0, contentMode: .fit)
-            } // Section
-        }
-        .navigationBarItems(trailing:
-                                Button("Cancel", action: {
-                                    self.didCancel = true
-                                    self.presentationMode.wrappedValue.dismiss()
-                                })
-        )
-        .onAppear() {
-            self.tempUsesDeviceLocation = self.clock.usesDeviceLocation
-            self.tempLocationData = self.clock.locationData
-        }
-        .onDisappear() {
-            if !self.didCancel {
-                //                debugPrint(#file, #function, "Before row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
-                //                debugPrint(#file, #function, "Before temp", self.tempUsesDeviceLocation, self.tempLocationData)
-                self.clock.usesDeviceLocation = self.tempUsesDeviceLocation
-                if self.tempUsesDeviceLocation {
-                    self.clock.locationData = ASALocationManager.shared.deviceLocation
-                } else {
-                    self.clock.locationData = self.tempLocationData
-                }
-                //                debugPrint(#file, #function, "After row", self.locatedObject.usesDeviceLocation, self.locatedObject.locationData)
+            .font(Font.body)
+            .onAppear() {
+                self.tempUsesDeviceLocation = self.locationWithClocks.usesDeviceLocation
+                self.tempLocationData = self.locationWithClocks.location
+            }
+            .onDisappear() {
+//                handleDisappearance()
             }
         }
     }
@@ -120,32 +160,23 @@ struct ASALocationChooserView: View {
             }
         }
     } // func geolocate()
-} // struct ASALocationChooserView
-
-
-// MARK:  -
-
-struct ASALocationChooserViewCell:  View {
-    var locationData:  ASALocation
-    
-    @Binding var selectedLocationData:  ASALocation
-    
-    var body: some View {
-        HStack {
-            Text(locationData.longFormattedOneLineAddress)
-            Spacer()
-            if self.locationData == self.selectedLocationData {
-                ASACheckmarkSymbol()
-            }
-        }
-    }
 }
 
 
 // MARK:  -
 
-struct LocationChooserView_Previews: PreviewProvider {
-    static var previews: some View {
-        ASALocationChooserView(clock: ASAClock.generic, tempLocationData: ASALocation())
+struct ASALocationChooserViewCell:  View {
+    var location: ASALocation
+    
+    @Binding var selectedLocation: ASALocation
+    
+    var body: some View {
+        HStack {
+            Text(location.longFormattedOneLineAddress)
+            Spacer()
+            if self.location == self.selectedLocation {
+                ASACheckmarkSymbol()
+            }
+        }
     }
 }
