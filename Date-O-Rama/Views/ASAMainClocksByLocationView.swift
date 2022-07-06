@@ -22,11 +22,20 @@ struct ASAMainClocksByLocationView:  View {
     }
 } // struct ASAMainClocksByLocationView:  View
 
+
+enum ASAMainClocksByLocationSectionDetail {
+    case none
+    case newClock
+    case editLocation
+} // enum ASAMainClocksByLocationSectionDetail
+
+
 struct ASAMainClocksByLocationSectionView: View {
     @Binding var now:  Date
     @Binding var locationWithClocks: ASALocationWithClocks
     
-    @State private var showingNewClockDetailView = false
+    @State private var showingDetailView = false
+    @State private var detail: ASAMainClocksByLocationSectionDetail = .none
     
     var body: some View {
         let location = locationWithClocks.location
@@ -53,7 +62,23 @@ struct ASAMainClocksByLocationSectionView: View {
             Menu {
                 Button(
                     action: {
-                        self.showingNewClockDetailView = true
+                        self.detail = .editLocation
+                        self.showingDetailView = true
+                        
+                    }
+                ) {
+                    HStack {
+                        Image(systemName: "pencil")
+                        Text("Edit location")
+                    } // HStack
+                }
+                
+                Divider()
+                
+                Button(
+                    action: {
+                        self.detail = .newClock
+                        self.showingDetailView = true
                         
                     }
                 ) {
@@ -81,8 +106,18 @@ struct ASAMainClocksByLocationSectionView: View {
             } label: {
                 Image(systemName: "arrow.down.square.fill")
             }
-            .sheet(isPresented: self.$showingNewClockDetailView) {
-                ASANewClockDetailView(now:  now, tempLocation: location)
+            .sheet(isPresented: self.$showingDetailView, onDismiss: {
+                detail = .none
+            }) {
+                switch detail {
+                case .none:
+                    Text("Programmer error!  Replace programmer and try again!")
+                case .newClock:
+                    ASANewClockDetailView(now:  now, tempLocation: location)
+
+                case .editLocation:
+                    ASAEditLocationView(locationWithClocks: locationWithClocks)
+                } // switch detail
             }
 #endif
         }

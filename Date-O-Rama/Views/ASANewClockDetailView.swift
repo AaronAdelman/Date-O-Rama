@@ -54,6 +54,8 @@ struct ASANewClockDetailView: View {
                 List {
                     ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation)
                 } // List
+                Spacer()
+                    .frame(minHeight: 0.0)
             } // VStack
             .font(Font.body)
             .foregroundColor(.primary)

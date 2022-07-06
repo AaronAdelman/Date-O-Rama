@@ -83,6 +83,7 @@
 		A50DA52D28686272008D54AE /* TW (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA51328686272008D54AE /* TW (Chinese).json */; };
 		A50DA52F28688BE7008D54AE /* ASALocationWithClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */; };
 		A50DA53028688BE7008D54AE /* ASALocationWithClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */; };
+		A513896C2875A8630069F2AB /* ASAEditLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513896B2875A8630069F2AB /* ASAEditLocationView.swift */; };
 		A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150EF525C0237300BC62C4 /* PDFKitView.swift */; };
 		A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */; };
 		A5150F0C25C026AA00BC62C4 /* What should I do if I have a.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0525C026AA00BC62C4 /* What should I do if I have a.pdf */; };
@@ -1124,6 +1125,7 @@
 		A50DA51228686272008D54AE /* MO (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MO (Chinese).json"; sourceTree = "<group>"; };
 		A50DA51328686272008D54AE /* TW (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TW (Chinese).json"; sourceTree = "<group>"; };
 		A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocks.swift; sourceTree = "<group>"; };
+		A513896B2875A8630069F2AB /* ASAEditLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEditLocationView.swift; sourceTree = "<group>"; };
 		A5150EF525C0237300BC62C4 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		A5150F0425C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
 		A5150F0625C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
@@ -2116,6 +2118,7 @@
 				A5C77C3F24339E0600CFEE47 /* ASACalendarChooserView.swift */,
 				A5D6285F243B79F300F3CC19 /* ASADateFormatChooserView.swift */,
 				A5A9666225A31DA200CF158F /* ASADatePicker.swift */,
+				A513896B2875A8630069F2AB /* ASAEditLocationView.swift */,
 				A5DC8EBD2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift */,
 				A5C77C372433596A00CFEE47 /* ASALocaleChooserView.swift */,
 				A5ACC3B7245ECB14006EB0D4 /* ASALocationChooserView.swift */,
@@ -3620,6 +3623,7 @@
 				A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */,
 				A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */,
 				A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */,
+				A513896C2875A8630069F2AB /* ASAEditLocationView.swift in Sources */,
 				A5F43E2A278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */,
 				A5C77C352433371800CFEE47 /* ASAClockArrayKey.swift in Sources */,
 				A5AAA7502657775C000C18AC /* ASACompactForwardChevronSymbol.swift in Sources */,
@@ -4088,7 +4092,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4123,7 +4127,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Date-O-Rama/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

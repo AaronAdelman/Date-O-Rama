@@ -73,7 +73,7 @@ class ASALocationManager: NSObject, ObservableObject {
     
     private var lastDevicePlacemark: CLPlacemark?
     
-    @Published var deviceLocationData: ASALocation = ASALocation.currentTimeZoneDefault {
+    @Published var deviceLocation: ASALocation = ASALocation.currentTimeZoneDefault {
         willSet {
             objectWillChange.send()
         } // willSet
@@ -152,7 +152,7 @@ extension ASALocationManager: CLLocationManagerDelegate {
     } // fileprivate func reverseGeocode(_ location: CLLocation)
 
     fileprivate func finishDidUpdateLocations(_ tempLocationData: ASALocation) {
-        self.deviceLocationData = tempLocationData
+        self.deviceLocation = tempLocationData
         self.notificationCenter.post(name: Notification.Name(UPDATED_LOCATION_NAME), object: nil)
         
 //        debugPrint(#file, #function, tempLocationData.location ?? "nil location")

@@ -48,7 +48,7 @@ class ASALocationWithClocks: NSObject, ObservableObject {
         if self.usesDeviceLocation {
             let locationManager = ASALocationManager.shared
             for clock in clocks {
-                clock.locationData = locationManager.deviceLocationData
+                clock.locationData = locationManager.deviceLocation
             } // for clock in clocks
         }
     } // func handle(notification:  Notification) -> Void

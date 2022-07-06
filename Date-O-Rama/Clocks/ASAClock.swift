@@ -44,7 +44,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
     @Published var usesDeviceLocation:  Bool = true
-    @Published var locationData:  ASALocation = ASALocationManager.shared.deviceLocationData {
+    @Published var locationData:  ASALocation = ASALocationManager.shared.deviceLocation {
         didSet {
             self.handleLocationDataChanged()
         }
@@ -70,7 +70,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 //    @objc func handleLocationChanged(notification:  Notification) -> Void {
 //        if self.usesDeviceLocation {
 //            let locationManager = ASALocationManager.shared
-//            self.locationData = locationManager.deviceLocationData
+//            self.locationData = locationManager.deviceLocation
 //        }
 //    } // func handle(notification:  Notification) -> Void
     
