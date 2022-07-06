@@ -45,6 +45,7 @@ extension ASAEventsFile {
 
             let jsonData = (try? Data(contentsOf: fileURL!))!
             let newJSONDecoder = JSONDecoder()
+            newJSONDecoder.allowsJSON5 = true
 
             let eventsFile = try newJSONDecoder.decode(ASAEventsFile.self, from: jsonData)
             return (eventsFile, nil)

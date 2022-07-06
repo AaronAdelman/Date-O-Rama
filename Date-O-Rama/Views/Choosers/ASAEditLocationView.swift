@@ -12,6 +12,7 @@ import MapKit
 
 struct ASAEditLocationView: View {
     @ObservedObject var locationWithClocks: ASALocationWithClocks
+    var shouldCreateNewLocation: Bool
 
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
@@ -29,12 +30,20 @@ struct ASAEditLocationView: View {
 //    @State var didCancel = false
     
     fileprivate func propagateInfoBackToParent() {
+        debugPrint(#file, #function, "Propagate info back to parent")
         self.locationWithClocks.usesDeviceLocation = self.tempUsesDeviceLocation
         if self.tempUsesDeviceLocation {
             self.locationWithClocks.location = ASALocationManager.shared.deviceLocation
         } else {
             self.locationWithClocks.location = self.tempLocationData
         }
+    }
+    
+    fileprivate func createNewLocationWithClocks() {
+        debugPrint(#file, #function, "Create new location with clocks")
+        let userData: ASAUserData = ASAUserData.shared
+        let newLocationWithClocks = ASALocationWithClocks(location: tempLocationData, clocks: [ASAClock.generic], usesDeviceLocation: tempUsesDeviceLocation)
+        userData.addLocationWithClocks(newLocationWithClocks)
     }
     
     var body: some View {
@@ -51,7 +60,11 @@ struct ASAEditLocationView: View {
                 Button("OK", action: {
                     debugPrint(#file, #function, "OK button")
 //                    self.didCancel = false
-                    propagateInfoBackToParent()
+                    if shouldCreateNewLocation {
+                        createNewLocationWithClocks()
+                    } else {
+                        propagateInfoBackToParent()
+                    }
                     self.dismiss()
                 })
                 .font(Font.body)

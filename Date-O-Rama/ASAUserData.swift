@@ -42,7 +42,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK:  - Model objects
     
-    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic], usesDeviceLocation: false)]
+    @Published var mainClocks:  Array<ASALocationWithClocks> = [ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)]
     
     private func reloadComplicationTimelines() {
 #if os(watchOS)
@@ -240,7 +240,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
 #endif
                 //                debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: [.json5Allowed])
                 //                debugPrint(#file, #function, jsonResult)
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
@@ -268,7 +268,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: [])
 #endif
                     //                    debugPrint(#file, #function, data, String(bytes: data, encoding: .utf8) as Any)
-                    let jsonResult = try JSONSerialization.jsonObject(with: data, options: [])
+                    let jsonResult = try JSONSerialization.jsonObject(with: data, options: [.json5Allowed])
                     //                    debugPrint(#file, #function, jsonResult)
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
@@ -488,6 +488,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // func mainClocksEvents(startDate:  Date, endDate:  Date, row:  ASARow) ->  Array<ASAEventCompatible>
 } // class ASAUserData
 
+
+// MARK:  -
+
 extension ASAUserData {
     func row(uuidString: String, backupIndex:  Int) -> ASAClock {
         let tempUUID = UUID(uuidString: uuidString)
@@ -524,6 +527,11 @@ extension ASAUserData {
         } // for i in 0..<self.mainClocks.count
     } // func removeMainClock(uuid: UUID)
     
+    func addLocationWithClocks(_ newLocationWithClocks: ASALocationWithClocks) {
+        self.mainClocks.insert(newLocationWithClocks, at: 0)
+        self.savePreferences(code: .clocks)
+    }
+    
     func addMainClock(clock: ASAClock) {
         for i in 0..<self.mainClocks.count {
             if self.mainClocks[i].location == clock.locationData {
@@ -534,7 +542,6 @@ extension ASAUserData {
         } // for i in 0..<self.mainClocks.count
         
         let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation)
-        self.mainClocks.append(newLocationWithClocks)
-        self.savePreferences(code: .clocks)
+        addLocationWithClocks(newLocationWithClocks)
     } // func addMainClock(clock: ASAClock)
 } // extension ASAUserData

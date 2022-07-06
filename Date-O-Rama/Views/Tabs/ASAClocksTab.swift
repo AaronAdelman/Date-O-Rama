@@ -18,7 +18,9 @@ struct ASAClocksTab: View {
             
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    @State var isNavigationBarHidden:  Bool = true
+    @State var isNavigationBarHidden: Bool = true
+    
+    @State var isShowingNewLocationView = false
     
     var body: some View {
         NavigationView {
@@ -29,48 +31,56 @@ struct ASAClocksTab: View {
                     Menu {
                         Text("Locations")
                             .foregroundColor(.secondary)
-
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Text("Sort locations by name ascending")
-                        })
                         
                         Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress})
-                            userData.savePreferences(code: .clocks)
+                            self.isShowingNewLocationView = true
                         }, label: {
-                            Text("Sort locations by name descending")
+                            Text("New location")
                         })
                         
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Text("Sort locations west to east")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Text("Sort locations east to west")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Text("Sort locations south to north")
-                        })
-                        
-                        Button(action: {
-                            userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude})
-                            userData.savePreferences(code: .clocks)
-                        }, label: {
-                            Text("Sort locations north to south")
-                        })
+                        Group {
+                            Button(action: {
+                                userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
+                                userData.savePreferences(code: .clocks)
+                            }, label: {
+                                Text("Sort locations by name ascending")
+                            })
+                            
+                            Button(action: {
+                                userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress})
+                                userData.savePreferences(code: .clocks)
+                            }, label: {
+                                Text("Sort locations by name descending")
+                            })
+                            
+                            Button(action: {
+                                userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude})
+                                userData.savePreferences(code: .clocks)
+                            }, label: {
+                                Text("Sort locations west to east")
+                            })
+                            
+                            Button(action: {
+                                userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude})
+                                userData.savePreferences(code: .clocks)
+                            }, label: {
+                                Text("Sort locations east to west")
+                            })
+                            
+                            Button(action: {
+                                userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude})
+                                userData.savePreferences(code: .clocks)
+                            }, label: {
+                                Text("Sort locations south to north")
+                            })
+                            
+                            Button(action: {
+                                userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude})
+                                userData.savePreferences(code: .clocks)
+                            }, label: {
+                                Text("Sort locations north to south")
+                            })
+                        }
                         
                         Divider()
                         
@@ -79,8 +89,13 @@ struct ASAClocksTab: View {
 
                         EditButton()
                     } label: {
-                        Image(systemName: "gearshape.fill")
+                        Image(systemName: "gear")
+                        Text("Settings")
                     }
+                    .sheet(isPresented: $isShowingNewLocationView, content: {
+                        let locationWithClocks = ASALocationWithClocks(location: ASALocationManager.shared.deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
+                        ASAEditLocationView(locationWithClocks: locationWithClocks, shouldCreateNewLocation: true)
+                    })
                     
                     Spacer()
                     

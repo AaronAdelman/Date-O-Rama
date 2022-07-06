@@ -30,6 +30,10 @@ class ASALocationWithClocks: NSObject, ObservableObject {
         self.location           = location
         self.clocks             = clocks
         self.usesDeviceLocation = usesDeviceLocation
+        for clock in clocks {
+            clock.locationData       = location
+            clock.usesDeviceLocation = usesDeviceLocation
+        }
         super.init()
         registerForLocationChangedNotifications()
     }

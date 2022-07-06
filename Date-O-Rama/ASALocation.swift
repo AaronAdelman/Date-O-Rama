@@ -229,6 +229,7 @@ extension ASALocation {
 
             let jsonData = (try? Data(contentsOf: fileURL!))!
             let newJSONDecoder = JSONDecoder()
+            newJSONDecoder.allowsJSON5 = true
 
             let timeZoneDatabase = try newJSONDecoder.decode(ASATimeZoneDatabase.self, from: jsonData)
             let entry:  ASATimeZoneEntry? = timeZoneDatabase.entries.first(where: { $0.name == currentTimeZoneIdentifier })
