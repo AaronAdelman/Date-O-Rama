@@ -77,7 +77,7 @@ class ASALocationManager: NSObject, ObservableObject {
         willSet {
             objectWillChange.send()
         } // willSet
-    } // var deviceLocationData
+    } // var deviceLocation
 
     let objectWillChange = PassthroughSubject<Void, Never>()
 
@@ -114,11 +114,11 @@ extension ASALocationManager: CLLocationManagerDelegate {
 //        print(#file, #function, location)
         self.lastError = nil
         
-        let Δ = self.lastDeviceLocation?.distance(from: location)
-
-        if Δ == nil || Δ! >= 10.0 {
+//        let Δ = self.lastDeviceLocation?.distance(from: location)
+//
+//        if Δ == nil || Δ! >= 10.0 {
             self.reverseGeocode(location)
-        }
+//        }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     
     fileprivate func reverseGeocode(_ location: CLLocation) {

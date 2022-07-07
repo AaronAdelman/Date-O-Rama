@@ -7,9 +7,16 @@
 //
 
 import Foundation
+import Combine
 
-class ASALocationWithClocks: NSObject, ObservableObject {
+class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
+    var id = UUID()
+
     @Published var location: ASALocation {
+        willSet {
+            objectWillChange.send()
+        } // willSet
+        
         didSet {
             for clock in clocks {
                 clock.locationData = location
@@ -19,12 +26,18 @@ class ASALocationWithClocks: NSObject, ObservableObject {
     @Published var clocks: Array<ASAClock>
     
     @Published var usesDeviceLocation:  Bool {
+        willSet {
+            objectWillChange.send()
+        } // willSet
+        
         didSet {
             for clock in clocks {
                 clock.usesDeviceLocation = usesDeviceLocation
             }
         }
     }
+    
+    let objectWillChange = PassthroughSubject<Void, Never>()
     
     init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool) {
         self.location           = location
