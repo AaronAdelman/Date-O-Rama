@@ -33,6 +33,9 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         didSet {
             for clock in clocks {
                 clock.usesDeviceLocation = usesDeviceLocation
+                if usesDeviceLocation {
+                    clock.locationData = ASALocationManager.shared.deviceLocation
+                }
             }
         }
     }
