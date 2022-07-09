@@ -245,7 +245,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
                     //                    debugPrint(#file, #function, jsonResult)
-                    self.mainClocks = ASAUserData.clockArray(key: .app, dictionary: jsonResult).byLocation
+                    self.mainClocks = ASAUserData.clockArray(key: .app, dictionary: jsonResult)
                     
                     genericSuccess = true
                 }
@@ -273,11 +273,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
                         //                        debugPrint(#file, #function, jsonResult)
-                        self.threeLineLargeClocks = ASAUserData.clockArray(key: .threeLineLarge, dictionary: jsonResult).byLocation[0]
-                        self.twoLineLargeClocks = ASAUserData.clockArray(key: .twoLineLarge, dictionary: jsonResult).byLocation[0]
-                        self.twoLineSmallClocks = ASAUserData.clockArray(key: .twoLineSmall, dictionary: jsonResult).byLocation[0]
-                        self.oneLineLargeClocks = ASAUserData.clockArray(key: .oneLineLarge, dictionary: jsonResult).byLocation[0]
-                        self.oneLineSmallClocks = ASAUserData.clockArray(key: .oneLineSmall, dictionary: jsonResult).byLocation[0]
+                        self.threeLineLargeClocks = ASAUserData.clockArray(key: .threeLineLarge, dictionary: jsonResult)[0]
+                        self.twoLineLargeClocks = ASAUserData.clockArray(key: .twoLineLarge, dictionary: jsonResult)[0]
+                        self.twoLineSmallClocks = ASAUserData.clockArray(key: .twoLineSmall, dictionary: jsonResult)[0]
+                        self.oneLineLargeClocks = ASAUserData.clockArray(key: .oneLineLarge, dictionary: jsonResult)[0]
+                        self.oneLineSmallClocks = ASAUserData.clockArray(key: .oneLineSmall, dictionary: jsonResult)[0]
                         complicationsSuccess = true
                     }
                 } catch {
@@ -351,7 +351,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         self.objectWillChange.send()
         
         if code == .clocks {
-            let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks.clocks, forComplication: false)
+            let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks, forComplication: false)
             
             let temp1a: Dictionary<String, Any> = [
                 ASAClockArrayKey.app.rawValue:  processedMainClocks
@@ -362,11 +362,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
-                let processedThreeLargeClocks = self.processedClocksArray(clocksArray: self.threeLineLargeClocks.clocks, forComplication: true)
-                let processedTwoLineLargeClocks = self.processedClocksArray(clocksArray: self.twoLineLargeClocks.clocks, forComplication: true)
-                let processedTwoLineSmallClocks = self.processedClocksArray(clocksArray: self.twoLineSmallClocks.clocks, forComplication: true)
-                let processedOneLineLargeClocks = self.processedClocksArray(clocksArray: self.oneLineLargeClocks.clocks, forComplication: true)
-                let processedOneLineSmallClocks = self.processedClocksArray(clocksArray: self.oneLineSmallClocks.clocks, forComplication: true)
+                let processedThreeLargeClocks = self.processedClocksArray(clocksArray: [self.threeLineLargeClocks], forComplication: true)
+                let processedTwoLineLargeClocks = self.processedClocksArray(clocksArray: [self.twoLineLargeClocks], forComplication: true)
+                let processedTwoLineSmallClocks = self.processedClocksArray(clocksArray: [self.twoLineSmallClocks], forComplication: true)
+                let processedOneLineLargeClocks = self.processedClocksArray(clocksArray: [self.oneLineLargeClocks], forComplication: true)
+                let processedOneLineSmallClocks = self.processedClocksArray(clocksArray: [self.oneLineSmallClocks], forComplication: true)
                 
                 let temp2: Dictionary<String, Any> = [
                     ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
@@ -393,14 +393,14 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK: - Translation between JSON and model objects
     
-    private func processedClocksArray(clocksArray:  Array<ASAClock>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
+    private func processedClocksArray(clocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
-        for row in clocksArray {
-            let dictionary = row.dictionary(forComplication: forComplication)
+        for clock in clocksArray.clocks {
+            let dictionary = clock.dictionary(forComplication: forComplication)
             temp.append(dictionary)
         }
         return temp
-    } // func processedClockArray(rowArray:  Array<ASARow>) ->  Array<Dictionary<String, Any>>
+    } // private func processedClocksArray(clocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>>
     
     public func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey) {
         switch key {
@@ -424,7 +424,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // switch key
     } // func func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey)
     
-    private class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASAClock> {
+    private class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks> {
         //        debugPrint(#file, #function, key)
         
         if dictionary == nil {
@@ -450,8 +450,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         //        debugPrint(#file, #function, tempArray)
-        return tempArray
-    } // class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASAClock>
+        return tempArray.byLocation
+    } // private class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks>
     
     
     // MARK: - NSFilePresenter
