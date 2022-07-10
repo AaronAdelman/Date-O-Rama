@@ -231,8 +231,8 @@ extension ASAEventCompatible {
         return self.startDate <= now && now < self.endDate
     } // func contains(now: Date) -> Bool
 
-    func isAllDay(for row: ASAClock) -> Bool {
-        return self.isAllDay && row.calendar.calendarCode == self.calendarCode && (row.locationData.timeZone.secondsFromGMT(for: self.startDate) == self.timeZone?.secondsFromGMT(for: self.startDate) || self.timeZone == nil)
+    func isAllDay(for clock: ASAClock, location: ASALocation) -> Bool {
+        return self.isAllDay && clock.calendar.calendarCode == self.calendarCode && (location.timeZone.secondsFromGMT(for: self.startDate) == self.timeZone?.secondsFromGMT(for: self.startDate) || self.timeZone == nil)
     } // func isAllDay(for row: ASAClock) -> Bool
     
     var hasParticipants: Bool {

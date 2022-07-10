@@ -19,6 +19,7 @@ struct ASAEventDetailDispatchView: View {
     var shouldShowSecondaryDates: Bool
     var rangeStart: Date
     var rangeEnd: Date
+    var location: ASALocation
 
 #if os(watchOS)
 #else
@@ -27,12 +28,12 @@ struct ASAEventDetailDispatchView: View {
 
     var body: some View {
         if event is ASAMultiEvent {
-            ASAMultiEventView(multiEvent: event as! ASAMultiEvent, now: $now, primaryClock: clock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd)
+            ASAMultiEventView(multiEvent: event as! ASAMultiEvent, now: $now, primaryClock: clock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location)
         } else {
 #if os(watchOS)
-            ASAEventDetailView(event: event, clock: clock)
+            ASAEventDetailView(event: event, clock: clock, location: location)
 #else
-            ASAEventDetailView(event: event, clock: clock, action: $action)
+            ASAEventDetailView(event: event, clock: clock, location: location, action: $action)
 #endif
         }
         

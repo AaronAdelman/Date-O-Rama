@@ -569,7 +569,7 @@ extension ASAClock {
         return (startDateString, endDateString)
     } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
     
-    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
+    public func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         // Cache code
         if let cachedVersion = startAndEndDateStringsCache.object(forKey: event.eventIdentifier! as NSString) {
             // use the cached version
@@ -579,7 +579,7 @@ extension ASAClock {
         var startDateString: String?
         var endDateString: String
         
-        let eventIsAllDay = event.isAllDay(for: self)
+        let eventIsAllDay = event.isAllDay(for: self, location: location)
         if !eventIsAllDay {
             (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly)
         } else {
@@ -616,8 +616,8 @@ extension ASAClock {
         return (startDateString, endDateString)
     } // func startAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
     
-    public func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String) {
-        let eventIsAllDay = event.isAllDay(for: self)
+    public func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String, endDateString: String) {
+        let eventIsAllDay = event.isAllDay(for: self, location: location)
         let startDateString = eventIsAllDay ? self.dateString(now: event.startDate) : self.dateTimeString(now: event.startDate)
         let endDate: Date = event.endDate - 1
         let endDateString = eventIsAllDay ? self.dateString(now: endDate) : self.dateTimeString(now: endDate)

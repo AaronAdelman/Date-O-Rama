@@ -21,6 +21,7 @@ let OPEN_IN_CONTACTS_STRING = "Open in Contacts"
 struct ASAEventDetailView: View {
     var event: ASAEventCompatible
     var clock:  ASAClock
+    var location: ASALocation
     @State private var region: MKCoordinateRegion = MKCoordinateRegion()
     
     @State var showingEventEditView = false
@@ -47,7 +48,7 @@ struct ASAEventDetailView: View {
             
             ASAEventDetailsTitleSection(event: event)
             
-            ASAEventDetailDateTimeSection(row: clock, event: event)
+            ASAEventDetailDateTimeSection(clock: clock, event: event, location: location)
             
             let eventHasAlarms: Bool = event.hasAlarms
             let eventAvailabilityIsSupported: Bool = event.availability != .notSupported
@@ -349,8 +350,9 @@ struct ASAEventRecurrenceRulesForEach: View {
 // MARK:  -
 
 struct ASAEventDetailDateTimeSection: View {
-    var row: ASAClock
+    var clock: ASAClock
     var event: ASAEventCompatible
+    var location: ASALocation
 
     func dateFormatter() -> DateFormatter {
         let dateFormatter = DateFormatter()
@@ -366,19 +368,19 @@ struct ASAEventDetailDateTimeSection: View {
         Section {
             ASAEventPropertyView(key: "Event calendar", value: event.calendarCode.localizedName)
             
-            let (startDateString, endDateString) = row.longStartAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: false)
+            let (startDateString, endDateString) = clock.longStartAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: false, location: location)
 
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)
 //                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
-                if !(row.isICalendarCompatible && row.locationData.timeZone.isCurrent) {
+                if !(clock.isICalendarCompatible && location.timeZone.isCurrent) {
                   Text(dateFormatter().string(from: event.startDate))
                 }
             } else {
                 let DASH = " — "
                 Text(startDateString + DASH + endDateString)
 //                if !(row.isGregorian && row.locationData.timeZone.isCurrent) {
-                if !(row.isICalendarCompatible && row.locationData.timeZone.isCurrent) {
+                if !(clock.isICalendarCompatible && location.timeZone.isCurrent) {
                   let dateFormatter = dateFormatter()
                     let startDateString = dateFormatter.string(from: event.startDate)
                     let endDateString = dateFormatter.string(from: event.endDate)
@@ -397,7 +399,7 @@ struct ASAEventDetailDateTimeSection: View {
                 } // HStack
             }
 
-            ASAEventRecurrenceRulesForEach(event: event, row: row)
+            ASAEventRecurrenceRulesForEach(event: event, row: clock)
             
             if event.regionCodes != nil {
                 ASAEventPropertyView(key: "Event countries and regions", value: event.regionCodes!.asFormattedListOfISOCountryCodes())

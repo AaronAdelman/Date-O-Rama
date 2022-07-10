@@ -41,7 +41,8 @@ fileprivate extension Int {
 struct ASALocaleChooserView: View {
     let localeData = ASALocaleData()
     
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
     
     @State var tempLocaleIdentifier:  String
     
@@ -89,7 +90,7 @@ struct ASALocaleChooserView: View {
             }
             
             ForEach(self.locales(option: selection)) { item in
-                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier, row: row)
+                ASALocaleCell(localeString: item.id, localizedLocaleString: item.nativeName, tempLocaleIdentifier: self.$tempLocaleIdentifier, clock: clock, location: location)
             } // ForEach(localeData.records)
         } // List
         .navigationBarItems(trailing:
@@ -99,11 +100,11 @@ struct ASALocaleChooserView: View {
                                 })
         )
         .onAppear() {
-            self.tempLocaleIdentifier = self.row.localeIdentifier
+            self.tempLocaleIdentifier = self.clock.localeIdentifier
         }
         .onDisappear() {
             if !self.didCancel {
-                self.row.localeIdentifier = self.tempLocaleIdentifier
+                self.clock.localeIdentifier = self.tempLocaleIdentifier
             }
         }
     } // var body
@@ -115,23 +116,24 @@ struct ASALocaleCell: View {
     
     @Binding var tempLocaleIdentifier:  String
 
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
     
     var body: some View {
         HStack {
             Text(verbatim: localeString.localeCountryCodeFlag)
             Text(verbatim:  localizedLocaleString)
-            if row.calendar.canSplitTimeFromDate {
+            if clock.calendar.canSplitTimeFromDate {
                 VStack(alignment: .leading) {
-                    Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: row.dateFormat, timeFormat: .none, locationData: row.locationData))
+                    Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: clock.dateFormat, timeFormat: .none, locationData: location))
                         .foregroundColor(Color.secondary)
                         .modifier(ASAScalable(lineLimit: 1))
-                    Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: row.timeFormat, locationData: row.locationData))
+                    Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: .none, timeFormat: clock.timeFormat, locationData: location))
                         .foregroundColor(Color.secondary)
                         .modifier(ASAScalable(lineLimit: 1))
                 } // VStack
             } else {
-                Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: row.dateFormat, timeFormat: row.timeFormat, locationData: row.locationData))
+                Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: localeString, dateFormat: clock.dateFormat, timeFormat: clock.timeFormat, locationData: location))
                     .foregroundColor(Color.secondary)
                     .modifier(ASAScalable(lineLimit: 1))
             }
@@ -148,7 +150,7 @@ struct ASALocaleCell: View {
 
 struct ASALocalePickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocaleChooserView(row: ASAClock.generic, tempLocaleIdentifier: "en_US")
+        ASALocaleChooserView(clock: ASAClock.generic, location: .NullIsland, tempLocaleIdentifier: "en_US")
     }
 }
 

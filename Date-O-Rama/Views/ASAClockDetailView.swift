@@ -106,7 +106,7 @@ struct ASAClockDetailEditingSection:  View {
                 }
                 
                 if selectedClock.supportsLocales {
-                    NavigationLink(destination: ASALocaleChooserView(row: selectedClock, tempLocaleIdentifier: selectedClock.localeIdentifier)) {
+                    NavigationLink(destination: ASALocaleChooserView(clock: selectedClock, location: location, tempLocaleIdentifier: selectedClock.localeIdentifier)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Locale", comment: ""), detail:  selectedClock.localeIdentifier.localeCountryCodeFlag + " " + selectedClock.localeIdentifier.asSelfLocalizedLocaleIdentifier)
                     }
                 }
