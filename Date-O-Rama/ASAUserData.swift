@@ -430,7 +430,13 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         if array != nil {
             for dictionary in array! {
                 let (clock, location, usesDeviceLocation) = ASAClock.new(dictionary: dictionary)
-                let index = tempArray.firstIndex(where: {$0.location == location && $0.usesDeviceLocation == usesDeviceLocation})
+                let index = tempArray.firstIndex(where: {
+                    if $0.usesDeviceLocation && usesDeviceLocation {
+                        return true
+                    }
+                    
+                    return $0.location == location && $0.usesDeviceLocation == usesDeviceLocation
+                })
                 if index == nil {
                     tempArray.append(ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: usesDeviceLocation))
                 } else {
