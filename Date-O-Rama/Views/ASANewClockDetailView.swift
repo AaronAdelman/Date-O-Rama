@@ -46,7 +46,7 @@ struct ASANewClockDetailView: View {
 
                     Button("Add") {
                         let userData = ASAUserData.shared
-                        userData.addMainClock(clock: self.selectedClock)
+                        userData.addMainClock(clock: self.selectedClock, location: location)
                         self.dismiss()
                     }
 

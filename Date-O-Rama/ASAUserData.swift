@@ -536,16 +536,16 @@ extension ASAUserData {
         self.savePreferences(code: .clocks)
     }
     
-    func addMainClock(clock: ASAClock) {
+    func addMainClock(clock: ASAClock, location: ASALocation) {
         for i in 0..<self.mainClocks.count {
-            if self.mainClocks[i].location == clock.locationData {
+            if self.mainClocks[i].location == location {
                 self.mainClocks[i].clocks.insert(clock, at: 0)
                 self.savePreferences(code: .clocks)
                 return
             }
         } // for i in 0..<self.mainClocks.count
         
-        let newLocationWithClocks = ASALocationWithClocks(location: clock.locationData, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation)
+        let newLocationWithClocks = ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation)
         addLocationWithClocks(newLocationWithClocks)
     } // func addMainClock(clock: ASAClock)
     
