@@ -425,25 +425,33 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     } // func setLocationsWithClocksArray(locationsWithClocksArray: Array<ASALocationWithClocks>, key: ASAClockArrayKey)
     
     public static func arrayOfDictionariesToArrayOfLocationsWithClocks(_ temp: [[String : Any]]?, _ key: ASAClockArrayKey) -> [ASALocationWithClocks] {
-        var tempArray:  Array<ASAClock> = []
+        var tempArray:  Array<ASALocationWithClocks> = []
         
         if temp != nil {
             for dictionary in temp! {
-                let clock = ASAClock.new(dictionary: dictionary)
-                tempArray.append(clock)
+                let (clock, location, usesDeviceLocation) = ASAClock.new(dictionary: dictionary)
+                let index = tempArray.firstIndex(where: {$0.location == location && $0.usesDeviceLocation == usesDeviceLocation})
+                if index == nil {
+                    tempArray.append(ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: usesDeviceLocation))
+                } else {
+                    tempArray[index!].clocks.append(clock)
+                }
             } // for dictionary in temp!
         } else {
             return []
         }
+        if key == .app {
+            return tempArray
+        }
         
-        let numberOfClocks = tempArray.count
+        let numberOfClocks = tempArray[0].clocks.count
         let minimumNumberOfClocks = key.minimumNumberOfClocks
         if numberOfClocks < minimumNumberOfClocks {
-            tempArray += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfClocks - numberOfClocks))
+            tempArray[0].clocks += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfClocks - numberOfClocks))
         }
         
         //        debugPrint(#file, #function, tempArray)
-        return tempArray.byLocation
+        return tempArray
     }
     
     private class func locationsWithClocksArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks> {

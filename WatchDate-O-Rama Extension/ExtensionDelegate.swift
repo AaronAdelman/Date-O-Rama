@@ -145,7 +145,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                 let tempAsArray = mainClocksTemp! as! Array<Dictionary<String, Any>>
                 var mainClocks:  Array<ASAClock> = []
                 for item in tempAsArray {
-                    let itemAsClock = ASAClock.new(dictionary: item)
+                    let (itemAsClock, location, usesDeviceLocation) = ASAClock.new(dictionary: item)
                     mainClocks.append(itemAsClock)
                 }
                 DispatchQueue.main.async {

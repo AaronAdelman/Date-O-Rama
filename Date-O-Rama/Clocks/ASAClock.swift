@@ -241,7 +241,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     private var startingUp = true
     
-    public class func new(dictionary:  Dictionary<String, Any>) -> ASAClock {
+    public class func new(dictionary:  Dictionary<String, Any>) -> (clock: ASAClock, location: ASALocation, usesDeviceLocation: Bool) {
         //        debugPrint(#file, #function, dictionary)
         
         let newClock = ASAClock()
@@ -327,8 +327,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         newClock.locationData = newLocationData
 
         newClock.startingUp = false
-        return newClock
-    } // class func new(dictionary:  Dictionary<String, Any>) -> ASAClock
+        return (newClock, newLocationData, usesDeviceLocation ?? false)
+    } // class func new(dictionary:  Dictionary<String, Any>) -> (clock: ASAClock, location: ASALocation, usesDeviceLocation: Bool)
 
 
     // MARK:  -
