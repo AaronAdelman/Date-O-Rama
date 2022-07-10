@@ -404,27 +404,27 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         return temp
     } // private func processedClocksArray(clocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>>
     
-    public func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey) {
+    public func setLocationsWithClocksArray(locationsWithClocksArray: Array<ASALocationWithClocks>, key: ASAClockArrayKey) {
         switch key {
         case .app:
-            self.mainClocks = clockArray.byLocation
+            self.mainClocks = locationsWithClocksArray
             
         case .threeLineLarge:
-            self.threeLineLargeClocks = clockArray.byLocation[0]
+            self.threeLineLargeClocks = locationsWithClocksArray[0]
             
         case .twoLineSmall:
-            self.twoLineSmallClocks = clockArray.byLocation[0]
+            self.twoLineSmallClocks = locationsWithClocksArray[0]
             
         case .twoLineLarge:
-            self.twoLineLargeClocks = clockArray.byLocation[0]
+            self.twoLineLargeClocks = locationsWithClocksArray[0]
             
         case .oneLineLarge:
-            self.oneLineLargeClocks = clockArray.byLocation[0]
+            self.oneLineLargeClocks = locationsWithClocksArray[0]
             
         case .oneLineSmall:
-            self.oneLineSmallClocks = clockArray.byLocation[0]
+            self.oneLineSmallClocks = locationsWithClocksArray[0]
         } // switch key
-    } // func func setClockArray(clockArray: Array<ASAClock>, key: ASAClockArrayKey)
+    } // func setLocationsWithClocksArray(locationsWithClocksArray: Array<ASALocationWithClocks>, key: ASAClockArrayKey)
     
     private class func locationsWithClocksArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks> {
         //        debugPrint(#file, #function, key)

@@ -126,7 +126,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                         clockArray[i] = newClock
                     } // for i in 0..<key.minimumNumberOfClocks
                 }
-                userData.setClockArray(clockArray:  clockArray, key:  key)
+                userData.setLocationsWithClocksArray(locationsWithClocksArray: clockArray.byLocation, key:  key)
             } // for
             ASAUserData.shared.savePreferences(code: .clocks)
             ASAUserData.shared.savePreferences(code: .complications)
