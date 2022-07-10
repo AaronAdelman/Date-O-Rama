@@ -10,7 +10,8 @@ import SwiftUI
 import CoreLocation
 
 struct ASATimeFormatChooserView: View {
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
 
     @State var tempTimeFormat:  ASATimeFormat
     @State var calendarCode:  ASACalendarCode
@@ -26,10 +27,10 @@ struct ASATimeFormatChooserView: View {
     var body: some View {
         List {
             Section(header:  Text("HEADER_Time_format")) {
-                ForEach(row.calendar.supportedTimeFormats, id: \.self) {
+                ForEach(clock.calendar.supportedTimeFormats, id: \.self) {
                     format
                     in
-                    ASATimeFormatCell(timeFormat: format, selectedTimeFormat: self.$tempTimeFormat, row: row)
+                    ASATimeFormatCell(timeFormat: format, selectedTimeFormat: self.$tempTimeFormat, clock: clock, location: location)
                         .onTapGesture {
                             self.tempTimeFormat = format
                             
@@ -45,12 +46,12 @@ struct ASATimeFormatChooserView: View {
 //                })
 //        )
             .onAppear() {
-                self.tempTimeFormat = self.row.timeFormat
-                self.calendarCode        = self.row.calendar.calendarCode
+                self.tempTimeFormat = self.clock.timeFormat
+                self.calendarCode        = self.clock.calendar.calendarCode
         }
         .onDisappear() {
 //            if !self.didCancel {
-                self.row.timeFormat = self.tempTimeFormat
+                self.clock.timeFormat = self.tempTimeFormat
 //            }
         }
     }
@@ -64,14 +65,15 @@ struct ASATimeFormatCell: View {
     
     @Binding var selectedTimeFormat:  ASATimeFormat
 
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
 
     var body: some View {
         HStack {
             Text(verbatim:  timeFormat.localizedItemName)
             Spacer()
                 .frame(width: 20.0)
-            Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: row.locationData))
+            Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: clock.localeIdentifier, dateFormat: .none, timeFormat: timeFormat, locationData: location))
                 .foregroundColor(Color.secondary)
             Spacer()
             if timeFormat == self.selectedTimeFormat {
@@ -89,6 +91,6 @@ struct ASATimeFormatCell: View {
 
 struct ASATimeFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASATimeFormatChooserView(row: ASAClock.generic, tempTimeFormat: .medium, calendarCode: .Gregorian)
+        ASATimeFormatChooserView(clock: ASAClock.generic, location: .NullIsland, tempTimeFormat: .medium, calendarCode: .Gregorian)
     }
 }

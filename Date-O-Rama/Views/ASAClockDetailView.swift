@@ -111,12 +111,12 @@ struct ASAClockDetailEditingSection:  View {
                     }
                 }
                 if selectedClock.calendar.supportsDateFormats && dateFormats().count > 1 {
-                    NavigationLink(destination: ASADateFormatChooserView(row: selectedClock, tempDateFormat: selectedClock.dateFormat, calendarCode: selectedClock.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
+                    NavigationLink(destination: ASADateFormatChooserView(clock: selectedClock, location: location, tempDateFormat: selectedClock.dateFormat, calendarCode: selectedClock.calendar.calendarCode, forAppleWatch: forAppleWatch)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Date_format", comment: ""), detail: selectedClock.dateFormat.localizedItemName)
                     }
                 }
                 if selectedClock.calendar.supportsTimeFormats && shouldShowTime && selectedClock.calendar.supportedTimeFormats.count > 1 {
-                    NavigationLink(destination: ASATimeFormatChooserView(row: selectedClock, tempTimeFormat: selectedClock.timeFormat, calendarCode: selectedClock.calendar.calendarCode)) {
+                    NavigationLink(destination: ASATimeFormatChooserView(clock: selectedClock, location: location, tempTimeFormat: selectedClock.timeFormat, calendarCode: selectedClock.calendar.calendarCode)) {
                         ASAClockDetailCell(title:  NSLocalizedString("HEADER_Time_format", comment: ""), detail: selectedClock.timeFormat.localizedItemName)
                     }
                 }

@@ -10,7 +10,8 @@ import SwiftUI
 import CoreLocation
 
 struct ASADateFormatChooserView: View {
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
 
     @State var tempDateFormat:  ASADateFormat
     @State var calendarCode:  ASACalendarCode
@@ -21,10 +22,10 @@ struct ASADateFormatChooserView: View {
 
     fileprivate func dateFormats() -> [ASADateFormat] {
         if forAppleWatch {
-            return row.calendar.supportedWatchDateFormats
+            return clock.calendar.supportedWatchDateFormats
         }
         
-        return row.calendar.supportedDateFormats
+        return clock.calendar.supportedDateFormats
     }
     
     fileprivate func dismiss() {
@@ -38,7 +39,7 @@ struct ASADateFormatChooserView: View {
                 ForEach(dateFormats(), id: \.self) {
                     format
                     in
-                    ASADateFormatCell(dateFormat: format, selectedDateFormat: self.$tempDateFormat, row: row)
+                    ASADateFormatCell(dateFormat: format, selectedDateFormat: self.$tempDateFormat, clock: clock, location: location)
                         .onTapGesture {
                             self.tempDateFormat = format
                             
@@ -54,12 +55,12 @@ struct ASADateFormatChooserView: View {
 //                })
 //        )
             .onAppear() {
-                self.tempDateFormat = self.row.dateFormat
-                self.calendarCode        = self.row.calendar.calendarCode
+                self.tempDateFormat = self.clock.dateFormat
+                self.calendarCode        = self.clock.calendar.calendarCode
         }
         .onDisappear() {
 //            if !self.didCancel {
-                self.row.dateFormat = self.tempDateFormat
+                self.clock.dateFormat = self.tempDateFormat
 //            }
         }
     }
@@ -73,14 +74,15 @@ struct ASADateFormatCell: View {
     
     @Binding var selectedDateFormat:  ASADateFormat
 
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
     
     var body: some View {
         HStack {
             Text(verbatim:  dateFormat.localizedItemName)
             Spacer()
                 .frame(width: 20.0)
-            Text(verbatim: row.calendar.dateTimeString(now: Date(), localeIdentifier: row.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: row.locationData))
+            Text(verbatim: clock.calendar.dateTimeString(now: Date(), localeIdentifier: clock.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: location))
                 .foregroundColor(Color.secondary)
 
             Spacer()
@@ -99,6 +101,6 @@ struct ASADateFormatCell: View {
 
 struct ASADateFormatChooserView_Previews: PreviewProvider {
     static var previews: some View {
-        ASADateFormatChooserView(row: ASAClock.generic, tempDateFormat: .full, calendarCode: .Gregorian, forAppleWatch: true)
+        ASADateFormatChooserView(clock: ASAClock.generic, location: .NullIsland, tempDateFormat: .full, calendarCode: .Gregorian, forAppleWatch: true)
     }
 }
