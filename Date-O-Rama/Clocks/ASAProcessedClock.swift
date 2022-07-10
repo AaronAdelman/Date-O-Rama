@@ -147,7 +147,7 @@ struct ASAProcessedClock {
 
         let startOfDay: Date = clock.startOfDay(date: now)
         let startOfNextDay: Date   = clock.startOfNextDay(date: now)
-        let clockEvents = clock.events(startDate: startOfDay, endDate: startOfNextDay)
+        let clockEvents = clock.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, usesDeviceLocation: usesDeviceLocation)
         self.dateEvents = isForComplications ? [] : clockEvents.dateEvents
         self.timeEvents = isForComplications ? [] : clockEvents.timeEvents
 

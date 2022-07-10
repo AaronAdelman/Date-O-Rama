@@ -78,20 +78,20 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         self.clearCacheObjects()
     } // func handleStoreChanged(notification:  Notification) -> Void
 
-    fileprivate func enforceSelfConsistency() {
+    fileprivate func enforceSelfConsistency(location: ASALocation, usesDeviceLocation: Bool) {
         if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
             self.dateFormat = self.calendar.defaultDateFormat
         }
-        if !self.calendar.supportsLocations {
-            self.usesDeviceLocation = false
-            
-            if !self.calendar.supportsTimeZones {
-                self.locationData = ASALocation.NullIsland
-                self.usesDeviceLocation = false
-            }
-        }
+//        if !self.calendar.supportsLocations {
+//            self.usesDeviceLocation = false
+//
+//            if !self.calendar.supportsTimeZones {
+//                self.locationData = ASALocation.NullIsland
+//                self.usesDeviceLocation = false
+//            }
+//        }
         
-        if !self.isICalendarCompatible {
+        if !self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) {
             self.iCalendarEventCalendars = []
         }
         
@@ -106,7 +106,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
-            enforceSelfConsistency()
+            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
 
             if !startingUp {
                 self.clearCacheObjects()
@@ -116,7 +116,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
-            enforceSelfConsistency()
+            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
 
             if !startingUp {
                 self.clearCacheObjects()
@@ -126,7 +126,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
-            enforceSelfConsistency()
+            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
 
             if !startingUp {
                 self.clearCacheObjects()
@@ -188,7 +188,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             USES_DEVICE_LOCATION_KEY:  usesDeviceLocation
         ] as [String : Any]
 
-        if self.isICalendarCompatible && !forComplication {
+        if self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) && !forComplication {
             result[ICALENDAR_EVENT_CALENDARS_KEY] =  self.iCalendarEventCalendars.map{ $0.title }
         }
         
@@ -304,7 +304,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let altitude = dictionary[ALTITUDE_KEY] as? Double
         let horizontalAccuracy = dictionary[HORIZONTAL_ACCURACY_KEY] as? Double
         let verticalAccuracy = dictionary[VERTICAL_ACCURACY_KEY] as? Double
-        newClock.usesDeviceLocation = usesDeviceLocation ?? true
+//        newClock.usesDeviceLocation = usesDeviceLocation ?? true
         var newLocation = CLLocation()
         if latitude != nil && longitude != nil {
             newLocation = CLLocation(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), altitude: altitude ?? 0.0, horizontalAccuracy: horizontalAccuracy ?? 0.0, verticalAccuracy: verticalAccuracy ?? 0.0, timestamp: Date())
@@ -324,7 +324,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
 
         let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
-        newClock.locationData = newLocationData
+//        newClock.locationData = newLocationData
 
         newClock.startingUp = false
         return (newClock, newLocationData, usesDeviceLocation ?? false)
@@ -333,7 +333,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     // MARK:  -
 
-    func events(startDate:  Date, endDate:  Date) -> (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>) {
+    func events(startDate:  Date, endDate:  Date, locationData: ASALocation, usesDeviceLocation: Bool) -> (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>) {
         if self.eventCacheStartDate == startDate && self.eventCacheEndDate == endDate {
             return self.eventCacheValue
         }
@@ -344,16 +344,16 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         var unsortedTimeEvents: [ASAEventCompatible] = []
         
         let currentLocaleIdentifier: String = Locale.current.identifier
-        let regionCode = self.locationData.regionCode
+        let regionCode = locationData.regionCode
         for eventCalendar in self.builtInEventCalendars {
-            let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: self.locationData, localeIdentifier: currentLocaleIdentifier)
+            let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
-            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: self.locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
+            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar)
             unsortedDateEvents.add(events: eventCalendarEvents.dateEvents)
             unsortedTimeEvents.add(events: eventCalendarEvents.timeEvents)
         } // for eventCalendar in self.builtInEventCalendars
         
-        if self.isICalendarCompatible && self.iCalendarEventCalendars.count > 0 {
+        if self.isICalendarCompatible(location: locationData, usesDeviceLocation: usesDeviceLocation) && self.iCalendarEventCalendars.count > 0 {
             let EventKitEvents = ASAEKEventManager.shared.eventsFor(startDate: startDate, endDate: endDate, calendars: self.iCalendarEventCalendars)
             for event in EventKitEvents {
                 if event.isAllDay {
@@ -387,9 +387,9 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         return result
     } // func events(startDate:  Date, endDate:  Date) -> (dateEvents: Array<ASAEventCompatible>, timeEvents: Array<ASAEventCompatible>)
 
-    var isICalendarCompatible:  Bool {
-        return self.calendar.usesISOTime && (self.usesDeviceLocation || self.locationData.timeZone.isCurrent)
-    } // var isICalendarCompatible
+    func isICalendarCompatible(location: ASALocation, usesDeviceLocation: Bool) -> Bool {
+        return self.calendar.usesISOTime && (usesDeviceLocation || location.timeZone.isCurrent)
+    }
     
     var startAndEndDateStringsCache = NSCache<NSString, ASAStartAndEndDateStrings>()
     
@@ -625,8 +625,8 @@ extension ASAClock {
         return (startDateString, endDateString)
     } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)
         
-    var supportsExternalEvents: Bool {
-        return self.calendar.usesISOTime && self.isICalendarCompatible
+    func supportsExternalEvents(location: ASALocation, usesDeviceLocation: Bool) -> Bool {
+        return self.calendar.usesISOTime && self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation)
     }
 } // extension ASAClock
 
@@ -645,23 +645,23 @@ extension Array where Element == ASAClock {
         return result
     } // func processed(now:  Date) -> Array<ASAProcessedClock>
 
-    var byLocation: Array<ASALocationWithClocks> {
-        var result:  Array<ASALocationWithClocks> = []
-
-        for clock in self {
-            let key = clock.locationData
-            let index = result.firstIndex(where: {$0.location == key})
-            if index == nil {
-                result.append(ASALocationWithClocks(location: key, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation))
-            } else {
-                let itemAtIndex = result[index!]
-                itemAtIndex.clocks.append(clock)
-                result[index!] = itemAtIndex
-            }
-        } // for for clock in self
-
-        return result
-    } // func clocksByPlaceName(now:  Date) -> Array<ASALocationWithClocks>
+//    var byLocation: Array<ASALocationWithClocks> {
+//        var result:  Array<ASALocationWithClocks> = []
+//
+//        for clock in self {
+//            let key = clock.locationData
+//            let index = result.firstIndex(where: {$0.location == key})
+//            if index == nil {
+//                result.append(ASALocationWithClocks(location: key, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation))
+//            } else {
+//                let itemAtIndex = result[index!]
+//                itemAtIndex.clocks.append(clock)
+//                result[index!] = itemAtIndex
+//            }
+//        } // for for clock in self
+//
+//        return result
+//    } // func clocksByPlaceName(now:  Date) -> Array<ASALocationWithClocks>
 
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")

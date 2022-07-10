@@ -485,10 +485,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK:  - Events
     
-    func mainClocksEvents(startDate:  Date, endDate:  Date) ->  Array<ASAEventCompatible> {
+    func mainClocksEvents(startDate:  Date, endDate:  Date, location: ASALocation, usesDeviceLocation: Bool) ->  Array<ASAEventCompatible> {
         var unsortedEvents: [ASAEventCompatible] = []
         for clock in self.mainClocks.clocks {
-            let clockEvents = clock.events(startDate:  startDate, endDate:  endDate)
+            let clockEvents = clock.events(startDate:  startDate, endDate:  endDate, locationData: location, usesDeviceLocation: usesDeviceLocation)
             unsortedEvents = unsortedEvents + clockEvents.dateEvents + clockEvents.timeEvents
         } // for for clock in self.mainClocks
         

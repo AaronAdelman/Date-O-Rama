@@ -125,7 +125,7 @@ struct ASAClockDetailEditingSection:  View {
             if !forAppleWatch {
                 ASABuiltInEventCalendarsEditingSection(selectedClock: selectedClock, builtInEventCalendarFileNames: ASAEventCalendar.builtInEventCalendarFileRecords(calendarCode: selectedClock.calendar.calendarCode))
                 
-                ASAICalendarEventCalendarsEditingSection(selectedClock: selectedClock)
+                ASAICalendarEventCalendarsEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation)
             }
         } // Group
     } // var body
@@ -183,11 +183,12 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
 
 struct ASAICalendarEventCalendarsEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
+    var location: ASALocation
+    var usesDeviceLocation: Bool
     var iCalendarEventCalendars:  Array<EKCalendar> = ASAEKEventManager.shared.allEventCalendars().sorted(by: {$0.title < $1.title})
     
-    var body:  some View {
-        //        if selectedClock.calendar.usesISOTime && selectedClock.isICalendarCompatible {
-        if selectedClock.supportsExternalEvents {
+    var body: some View {
+        if selectedClock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation) {
             Section(header:  Text(NSLocalizedString("HEADER_iCalendarEventCalendars", comment: ""))) {
                 ForEach(iCalendarEventCalendars, id:
                             \.calendarIdentifier) {

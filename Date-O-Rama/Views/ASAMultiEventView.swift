@@ -16,12 +16,13 @@ struct ASAMultiEventView: View {
     var rangeStart: Date
     var rangeEnd: Date
     var location: ASALocation
+    var usesDeviceLocation: Bool
 
     var body: some View {
         List {
             ASAEventDetailsTitleSection(event: multiEvent)
 
-            ASAEventsForEach(events: multiEvent.events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location)
+            ASAEventsForEach(events: multiEvent.events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, usesDeviceLocation: usesDeviceLocation)
             
             Spacer()
                 .frame(minHeight: 0.0)

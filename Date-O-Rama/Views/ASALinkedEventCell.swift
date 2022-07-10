@@ -27,6 +27,7 @@ struct ASALinkedEventCell:  View {
     var rangeStart:  Date
     var rangeEnd:  Date
     var location: ASALocation
+    var usesDeviceLocation: Bool
     
     let CLOSE_BUTTON_TITLE = "Done"
     
@@ -51,7 +52,7 @@ struct ASALinkedEventCell:  View {
     
     var body: some View {
         #if os(watchOS)
-        NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location), label: {
+        NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, usesDeviceLocation: usesDeviceLocation), label: {
             HStack {
                 ASAEventCell(event: event, primaryClock: self.primaryClock, secondaryClock: self.secondaryClock, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
                 Spacer()
@@ -92,7 +93,7 @@ struct ASALinkedEventCell:  View {
                         }
                         Spacer()
                     } // HStack
-                    ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, action: $action)
+                    ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, usesDeviceLocation: usesDeviceLocation, action: $action)
                         .frame(minWidth:  FRAME_MIN_WIDTH, minHeight:  FRAME_MIN_HEIGHT)
                 }
             }

@@ -241,7 +241,7 @@ struct ASAClockCellBody:  View {
                             }
                         }
                         
-                        if processedClock.clock.supportsExternalEvents {
+                        if processedClock.clock.supportsExternalEvents(location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation) {
                             Button(action:
                                     {
                                 detailType = .newEvent
@@ -410,7 +410,7 @@ struct ASAClockEventsForEach:  View {
         let rangeStart: Date = processedClock.startOfDay
         let rangeEnd: Date = processedClock.startOfNextDay
         
-        ASAEventsForEach(events: events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd, location: processedClock.location)
+        ASAEventsForEach(events: events, now: $now, primaryClock: primaryClock, shouldShowSecondaryDates: shouldShowSecondaryDates, rangeStart: rangeStart, rangeEnd: rangeEnd, location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation)
     } // var body
 } // struct ASAClockEventsForEach
 
@@ -422,6 +422,7 @@ struct ASAEventsForEach: View {
     var rangeStart: Date
     var rangeEnd: Date
     var location: ASALocation
+    var usesDeviceLocation: Bool
     
     var body: some View {
         let secondaryClock = ASAClock.generic
@@ -433,7 +434,7 @@ struct ASAEventsForEach: View {
             let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
             let (startDateString, endDateString) = self.primaryClock.startAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: eventIsTodayOnly, location: location)
             
-            ASALinkedEventCell(event: event, primaryClock: primaryClock, secondaryClock: secondaryClock, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+            ASALinkedEventCell(event: event, primaryClock: primaryClock, secondaryClock: secondaryClock, eventsViewShouldShowSecondaryDates: shouldShowSecondaryDates, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
         } // ForEach
     }
 }
