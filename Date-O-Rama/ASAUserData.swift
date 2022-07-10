@@ -426,14 +426,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // switch key
     } // func setLocationsWithClocksArray(locationsWithClocksArray: Array<ASALocationWithClocks>, key: ASAClockArrayKey)
     
-    private class func locationsWithClocksArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks> {
-        //        debugPrint(#file, #function, key)
-        
-        if dictionary == nil {
-            return []
-        }
-        
-        let temp = dictionary![key.rawValue] as! Array<Dictionary<String, Any>>?
+    public static func arrayOfDictionariesToArrayOfLocationsWithClocks(_ temp: [[String : Any]]?, _ key: ASAClockArrayKey) -> [ASALocationWithClocks] {
         var tempArray:  Array<ASAClock> = []
         
         if temp != nil {
@@ -453,6 +446,17 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         //        debugPrint(#file, #function, tempArray)
         return tempArray.byLocation
+    }
+    
+    private class func locationsWithClocksArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks> {
+        //        debugPrint(#file, #function, key)
+        
+        if dictionary == nil {
+            return []
+        }
+        
+        let temp = dictionary![key.rawValue] as! Array<Dictionary<String, Any>>?
+        return arrayOfDictionariesToArrayOfLocationsWithClocks(temp, key)
     } // private class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks>
     
     

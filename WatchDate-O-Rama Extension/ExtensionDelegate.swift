@@ -118,15 +118,16 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
             for key in ASAClockArrayKey.complicationSections {
                 let value = message[key.rawValue]
-                var clockArray = self.userData.locationsWithClocksArray(key: key).clocks
+                var locationsWithClocks: Array<ASALocationWithClocks> = self.userData.locationsWithClocksArray(key: key)
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
-                    for i in 0..<key.minimumNumberOfClocks {
-                        let newClock: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
-                        clockArray[i] = newClock
-                    } // for i in 0..<key.minimumNumberOfClocks
+                    //                    for i in 0..<key.minimumNumberOfClocks {
+                    //                        let newClock: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
+                    //                        clockArray[i] = newClock
+                    //                    } // for i in 0..<key.minimumNumberOfClocks
+                    locationsWithClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(valueAsArray, key)
                 }
-                userData.setLocationsWithClocksArray(locationsWithClocksArray: clockArray.byLocation, key:  key)
+                userData.setLocationsWithClocksArray(locationsWithClocksArray: locationsWithClocks, key: key)
             } // for
             ASAUserData.shared.savePreferences(code: .clocks)
             ASAUserData.shared.savePreferences(code: .complications)
