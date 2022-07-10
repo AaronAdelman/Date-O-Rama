@@ -424,11 +424,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // switch key
     } // func setLocationsWithClocksArray(locationsWithClocksArray: Array<ASALocationWithClocks>, key: ASAClockArrayKey)
     
-    public static func arrayOfDictionariesToArrayOfLocationsWithClocks(_ temp: [[String : Any]]?, _ key: ASAClockArrayKey) -> [ASALocationWithClocks] {
+    public static func arrayOfDictionariesToArrayOfLocationsWithClocks(array: [[String : Any]]?, key: ASAClockArrayKey) -> [ASALocationWithClocks] {
         var tempArray:  Array<ASALocationWithClocks> = []
         
-        if temp != nil {
-            for dictionary in temp! {
+        if array != nil {
+            for dictionary in array! {
                 let (clock, location, usesDeviceLocation) = ASAClock.new(dictionary: dictionary)
                 let index = tempArray.firstIndex(where: {$0.location == location && $0.usesDeviceLocation == usesDeviceLocation})
                 if index == nil {
@@ -462,7 +462,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         let temp = dictionary![key.rawValue] as! Array<Dictionary<String, Any>>?
-        return arrayOfDictionariesToArrayOfLocationsWithClocks(temp, key)
+        return arrayOfDictionariesToArrayOfLocationsWithClocks(array: temp, key: key)
     } // private class func clockArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks>
     
     

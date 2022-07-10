@@ -125,7 +125,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
                     //                        let newClock: ASAClock = ASAClock.new(dictionary: valueAsArray[i])
                     //                        clockArray[i] = newClock
                     //                    } // for i in 0..<key.minimumNumberOfClocks
-                    locationsWithClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(valueAsArray, key)
+                    locationsWithClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(array: valueAsArray, key: key)
                 }
                 userData.setLocationsWithClocksArray(locationsWithClocksArray: locationsWithClocks, key: key)
             } // for
@@ -143,13 +143,14 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
             let mainClocksTemp = message[ASAClockArrayKey.app.rawValue]
             if mainClocksTemp != nil {
                 let tempAsArray = mainClocksTemp! as! Array<Dictionary<String, Any>>
-                var mainClocks:  Array<ASAClock> = []
-                for item in tempAsArray {
-                    let (itemAsClock, location, usesDeviceLocation) = ASAClock.new(dictionary: item)
-                    mainClocks.append(itemAsClock)
-                }
+//                var mainClocks:  Array<ASAClock> = []
+//                for item in tempAsArray {
+//                    let (itemAsClock, location, usesDeviceLocation) = ASAClock.new(dictionary: item)
+//                    mainClocks.append(itemAsClock)
+//                }
+                let mainClocks = ASAUserData.arrayOfDictionariesToArrayOfLocationsWithClocks(array: tempAsArray, key: .app)
                 DispatchQueue.main.async {
-                    ASAUserData.shared.mainClocks = mainClocks.byLocation
+                    ASAUserData.shared.mainClocks = mainClocks
                     ASAUserData.shared.savePreferences(code: .clocks)
                 }
             }
