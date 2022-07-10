@@ -188,39 +188,41 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // switch key
     } // func clockArray(key:  ASAClockArrayKey) -> Array<ASARow>
     
-    func emptyRowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
+    func defaultLocationWithClocks(key:  ASAClockArrayKey) -> ASALocationWithClocks {
+        let deviceLocation = ASALocationManager.shared.deviceLocation
+        
         switch key {
         case .app:
-            return [ASAClock.generic]
+            return ASALocationWithClocks(location: deviceLocation, clocks: [ASAClock.generic], usesDeviceLocation: true)
             
         case .threeLineLarge:
-            return [
+            return ASALocationWithClocks(location: deviceLocation, clocks: [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full),
                 ASAClock.generic(calendarCode: .HebrewGRA, dateFormat: .full),
                 ASAClock.generic(calendarCode: .IslamicSolar, dateFormat: .full)
-            ]
+            ], usesDeviceLocation: true)
             
         case .twoLineSmall:
-            return [
+            return ASALocationWithClocks(location: deviceLocation, clocks: [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekday),
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .dayOfMonth)
-            ]
+            ], usesDeviceLocation: true)
             
         case .twoLineLarge:
-            return [
+            return ASALocationWithClocks(location: deviceLocation, clocks: [
                 ASAClock.generic(calendarCode: .Gregorian, dateFormat:  .abbreviatedWeekdayWithDayOfMonth),
                 ASAClock.generic(calendarCode: .HebrewGRA, dateFormat:  .abbreviatedWeekdayWithDayOfMonth)
-            ]
+            ], usesDeviceLocation: true)
             
         case .oneLineSmall:
-            return [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
-            ]
+            return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .abbreviatedWeekdayWithDayOfMonth)
+            ], usesDeviceLocation: true)
             
         case .oneLineLarge:
-            return [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
-            ]
+            return ASALocationWithClocks(location: deviceLocation, clocks: [                ASAClock.generic(calendarCode: .Gregorian, dateFormat: .mediumWithWeekday)
+            ], usesDeviceLocation: true)
         } // switch key
-    } // func emptyRowArray(key:  ASAClockArrayKey) -> Array<ASARow>
+    } // func defaultLocationWithClocks(key:  ASAClockArrayKey) -> ASALocationWithClocks
     
     fileprivate func loadPreferences() {
         var genericSuccess = false
@@ -290,16 +292,16 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         if !genericSuccess {
-            mainClocks               = self.emptyRowArray(key: .app).byLocation
+            mainClocks               = [self.defaultLocationWithClocks(key: .app)]
         }
         
         if #available(iOS 13.0, watchOS 6.0, *) {
             if !complicationsSuccess {
-                threeLineLargeClocks = self.emptyRowArray(key: .threeLineLarge).byLocation[0]
-                twoLineSmallClocks   = self.emptyRowArray(key: .twoLineSmall).byLocation[0]
-                twoLineLargeClocks   = self.emptyRowArray(key: .twoLineLarge).byLocation[0]
-                oneLineLargeClocks   = self.emptyRowArray(key: .oneLineLarge).byLocation[0]
-                oneLineSmallClocks   = self.emptyRowArray(key: .oneLineSmall).byLocation[0]
+                threeLineLargeClocks = self.defaultLocationWithClocks(key: .threeLineLarge)
+                twoLineSmallClocks   = self.defaultLocationWithClocks(key: .twoLineSmall)
+                twoLineLargeClocks   = self.defaultLocationWithClocks(key: .twoLineLarge)
+                oneLineLargeClocks   = self.defaultLocationWithClocks(key: .oneLineLarge)
+                oneLineSmallClocks   = self.defaultLocationWithClocks(key: .oneLineSmall)
             }
         }
     } // func loadPreferences()
