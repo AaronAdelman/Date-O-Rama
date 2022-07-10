@@ -79,9 +79,9 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     } // func handleStoreChanged(notification:  Notification) -> Void
 
     fileprivate func enforceSelfConsistency(location: ASALocation, usesDeviceLocation: Bool) {
-        if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
-            self.dateFormat = self.calendar.defaultDateFormat
-        }
+//        if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
+//            self.dateFormat = self.calendar.defaultDateFormat
+//        }
 //        if !self.calendar.supportsLocations {
 //            self.usesDeviceLocation = false
 //
@@ -116,8 +116,10 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
-            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
-
+            if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
+                self.dateFormat = self.calendar.defaultDateFormat
+            }
+            
             if !startingUp {
                 self.clearCacheObjects()
             }
@@ -126,7 +128,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
-            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
+//            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
 
             if !startingUp {
                 self.clearCacheObjects()
