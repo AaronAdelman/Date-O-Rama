@@ -14,23 +14,6 @@ struct ASAComplicationClocksTab: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var isNavigationBarHidden:  Bool = true
     
-    //    func clockArray(with key: ASAClockArrayKey) -> ASALocationWithClocks {
-    //        switch key {
-    //        case .threeLineLarge:
-    //            return self.userData.threeLineLargeClocks
-    //        case .twoLineLarge:
-    //            return self.userData.twoLineLargeClocks
-    //        case .app:
-    //            return self.userData.mainClocks[0]
-    //        case .twoLineSmall:
-    //            return self.userData.twoLineSmallClocks
-    //        case .oneLineLarge:
-    //            return self.userData.oneLineLargeClocks
-    //        case .oneLineSmall:
-    //            return self.userData.oneLineSmallClocks
-    //        } // switch key
-    //    } // func clockArray(with key: ASAClockArrayKey) -> ASALocationWithClocks
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -67,7 +50,7 @@ struct ASAComplicationSectionView: View {
     
     let userData = ASAUserData.shared
     
-    func clockArray(with key: ASAClockArrayKey) -> ASALocationWithClocks {
+    func locationWithClocksArray(with key: ASAClockArrayKey) -> ASALocationWithClocks {
         switch key {
         case .threeLineLarge:
             return self.userData.threeLineLargeClocks
@@ -87,7 +70,7 @@ struct ASAComplicationSectionView: View {
     @State private var showingDetailView = false
     
     var body: some View {
-        let locationWithClocks = self.clockArray(with: complicationKey)
+        let locationWithClocks = self.locationWithClocksArray(with: complicationKey)
         let location = locationWithClocks.location
         
         let sectionHeaderEmoji = (location.regionCode ?? "").flag

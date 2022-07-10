@@ -87,13 +87,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         }
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
-    func rowArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
-        let rowArray = ASAUserData.shared.locationsWithClocksArray(key: key).clocks
+    func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
+        let locationsWithClocksArray: Array<ASALocationWithClocks> = ASAUserData.shared.locationsWithClocksArray(key: key)
         
         var temp:  Array<Dictionary<String, Any>> = []
-        for row in rowArray {
-            let dictionary = row.dictionary(forComplication: forComplication, location: row.locationData, usesDeviceLocation: row.usesDeviceLocation)
-            temp.append(dictionary)
+        for locationWithClocks in locationsWithClocksArray {
+            for clock in locationWithClocks.clocks {
+                let dictionary = clock.dictionary(forComplication: forComplication, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
+                temp.append(dictionary)
+            }
         }
         
         return temp
@@ -102,13 +104,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     public func sendUserData(_ session: WCSession) {
 //        debugPrint(#file, #function)
                 
-        let threeLineLargeTemp = self.rowArrayDictionary(key: .threeLineLarge, forComplication: true)
-        let twoLineLargeTemp   = self.rowArrayDictionary(key: .twoLineLarge, forComplication: true)
-        let twoLineSmallTemp   = self.rowArrayDictionary(key: .twoLineSmall, forComplication: true)
-        let oneLineLargeTemp   = self.rowArrayDictionary(key: .oneLineLarge, forComplication: true)
-        let oneLineSmallTemp   = self.rowArrayDictionary(key: .oneLineSmall, forComplication: true)
+        let threeLineLargeTemp = self.locationsWithClocksArrayDictionary(key: .threeLineLarge, forComplication: true)
+        let twoLineLargeTemp   = self.locationsWithClocksArrayDictionary(key: .twoLineLarge, forComplication: true)
+        let twoLineSmallTemp   = self.locationsWithClocksArrayDictionary(key: .twoLineSmall, forComplication: true)
+        let oneLineLargeTemp   = self.locationsWithClocksArrayDictionary(key: .oneLineLarge, forComplication: true)
+        let oneLineSmallTemp   = self.locationsWithClocksArrayDictionary(key: .oneLineSmall, forComplication: true)
   
-        let mainClocksTemp = self.rowArrayDictionary(key: .app, forComplication: false)
+        let mainClocksTemp = self.locationsWithClocksArrayDictionary(key: .app, forComplication: false)
 
         let updateMessage = [
             ASAMessageKeyType:  ASAMessageKeyUpdateUserData,
