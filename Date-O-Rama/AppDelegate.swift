@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
         }
         
         return temp
-    } // func rowArrayDictionary(key:  ASAClockArrayKey) -> Array<Dictionary<String, Any>>
+    } // func locationsWithClocksArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>>
     
     public func sendUserData(_ session: WCSession) {
 //        debugPrint(#file, #function)

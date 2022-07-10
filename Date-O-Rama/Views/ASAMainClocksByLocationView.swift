@@ -14,7 +14,7 @@ struct ASAMainClocksByLocationView:  View {
     @Binding var now:  Date
     
     var body:  some View {
-        ForEach($mainClocks, id: \.self.location.id) {
+        ForEach($mainClocks, id: \.self.id) {
             section
             in
             ASAMainClocksByLocationSectionView(now: $now, locationWithClocks: section)
@@ -126,7 +126,7 @@ struct ASAMainClocksByLocationSectionView: View {
                 case .none:
                     Text("Programmer error!  Replace programmer and try again!")
                 case .newClock:
-                    ASANewClockDetailView(now:  now, tempLocation: location)
+                    ASANewClockDetailView(location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation, now:  now, tempLocation: location)
                     
                 case .editLocation:
                     ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
@@ -144,13 +144,15 @@ struct ASAMainClocksByLocationSectionView: View {
         }
             .font(sectionHeaderFont)
         ) {
+            let location = locationWithClocks.location
+            let usesDeviceLocation = locationWithClocks.usesDeviceLocation
             ForEach( 0..<locationWithClocks.clocks.count) {
                 index
                 in
                 
                 if index < locationWithClocks.clocks.count {
                     let clock = locationWithClocks.clocks[index]
-                    let processedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: false)
+                    let processedClock = ASAProcessedClock(clock: clock, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
                     
 #if os(watchOS)
                     let shouldShowMiniCalendar = false

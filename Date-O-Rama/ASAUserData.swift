@@ -363,23 +363,21 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         if code == .complications {
-            if #available(iOS 13.0, watchOS 6.0, *) {
-                let processedThreeLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.threeLineLargeClocks], forComplication: true)
-                let processedTwoLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineLargeClocks], forComplication: true)
-                let processedTwoLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineSmallClocks], forComplication: true)
-                let processedOneLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineLargeClocks], forComplication: true)
-                let processedOneLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineSmallClocks], forComplication: true)
-                
-                let temp2: Dictionary<String, Any> = [
-                    ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
-                    ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeClocks,
-                    ASAClockArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallClocks,
-                    ASAClockArrayKey.oneLineLarge.rawValue:  processedOneLineLargeClocks,
-                    ASAClockArrayKey.oneLineSmall.rawValue:  processedOneLineSmallClocks
-                ]
-                
-                writePreferences(temp2, code: .complications)
-            }
+            let processedThreeLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.threeLineLargeClocks], forComplication: true)
+            let processedTwoLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineLargeClocks], forComplication: true)
+            let processedTwoLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineSmallClocks], forComplication: true)
+            let processedOneLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineLargeClocks], forComplication: true)
+            let processedOneLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineSmallClocks], forComplication: true)
+            
+            let temp2: Dictionary<String, Any> = [
+                ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
+                ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeClocks,
+                ASAClockArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallClocks,
+                ASAClockArrayKey.oneLineLarge.rawValue:  processedOneLineLargeClocks,
+                ASAClockArrayKey.oneLineSmall.rawValue:  processedOneLineSmallClocks
+            ]
+            
+            writePreferences(temp2, code: .complications)
         }
         
 #if os(iOS)

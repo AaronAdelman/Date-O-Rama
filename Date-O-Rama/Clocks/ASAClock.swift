@@ -634,11 +634,11 @@ extension ASAClock {
 // MARK:  -
 
 extension Array where Element == ASAClock {
-    func processed(now:  Date) -> Array<ASAProcessedClock> {
+    func processed(now:  Date, location: ASALocation, usesDeviceLocation: Bool) -> Array<ASAProcessedClock> {
         var result:  Array<ASAProcessedClock> = []
 
         for row in self {
-            let processedClock = ASAProcessedClock(clock: row, now: now, isForComplications: false)
+            let processedClock = ASAProcessedClock(clock: row, now: now, isForComplications: false, location: location, usesDeviceLocation: usesDeviceLocation)
             result.append(processedClock)
         }
 

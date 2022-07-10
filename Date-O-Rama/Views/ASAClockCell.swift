@@ -207,7 +207,7 @@ struct ASAClockCellBody:  View {
                                 }
                                 Spacer()
                             } // HStack
-                            ASAClockDetailView(selectedClock: processedClock.clock, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true, tempLocation: processedClock.clock.locationData)
+                            ASAClockDetailView(selectedClock: processedClock.clock, location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: false, deletable: false, forAppleWatch: true, tempLocation: processedClock.location)
                                 .onReceive(processedClock.clock.objectWillChange) { _ in
                                     // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                                     ASAUserData.shared.savePreferences(code: .complications)
@@ -294,7 +294,7 @@ struct ASAClockCellMenuView: View {
                     }
                     Spacer()
                 } // HStack
-                ASAClockDetailView(selectedClock: processedClock.clock, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false, tempLocation: processedClock.clock.locationData)
+                ASAClockDetailView(selectedClock: processedClock.clock, location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation, now: self.now, shouldShowTime: true, deletable: true, forAppleWatch: false, tempLocation: processedClock.location)
                     .onReceive(processedClock.clock.objectWillChange) { _ in
                         // Clause based on https://troz.net/post/2019/swiftui-data-flow/
                         ASAUserData.shared.savePreferences(code: .clocks)
@@ -442,6 +442,6 @@ struct ASAEventsForEach: View {
 
 struct ASAClockCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
+        ASAClockCell(processedClock: ASAProcessedClock(clock: ASAClock.generic, now: Date(), isForComplications: false, location: .NullIsland, usesDeviceLocation: false), now: .constant(Date()), shouldShowTime: true, shouldShowMiniCalendar: true, isForComplications: false, indexIsOdd: true)
     }
 } // struct ASAClockCell_Previews

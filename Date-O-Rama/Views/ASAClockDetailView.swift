@@ -12,6 +12,8 @@ import EventKit
 
 struct ASAClockDetailView: View {
     @ObservedObject var selectedClock:  ASAClock
+    var location: ASALocation
+    var usesDeviceLocation: Bool
     var now:  Date
     
     var shouldShowTime:  Bool
@@ -35,7 +37,7 @@ struct ASAClockDetailView: View {
     var body: some View {
         NavigationView {
             List {
-                ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch, tempLocation: tempLocation)
+                ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch, tempLocation: tempLocation)
                 
                 if deletable {
                     Section(header:  Text("")){
@@ -71,6 +73,8 @@ struct ASAClockDetailView: View {
 
 struct ASAClockDetailEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
+    var location: ASALocation
+    var usesDeviceLocation: Bool
     var now:  Date
     var shouldShowTime:  Bool
     var forAppleWatch:  Bool
@@ -94,9 +98,9 @@ struct ASAClockDetailEditingSection:  View {
                 if selectedClock.calendar.supportsTimeZones || selectedClock.calendar.supportsLocations {
 //                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
                         VStack {
-                            ASALocationCell(usesDeviceLocation: self.selectedClock.usesDeviceLocation, locationData: self.selectedClock.locationData)
+                            ASALocationCell(usesDeviceLocation: usesDeviceLocation, locationData: location)
                             Spacer()
-                            ASATimeZoneCell(timeZone: selectedClock.locationData.timeZone, now: now)
+                            ASATimeZoneCell(timeZone: location.timeZone, now: now)
                         } // VStack
 //                    }
                 }
@@ -268,6 +272,6 @@ struct ASAICalendarEventCalendarCell:  View {
 
 struct ASAClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASAClockDetailView(selectedClock: ASAClock.generic, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true, tempLocation: ASALocation.NullIsland)
+        ASAClockDetailView(selectedClock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, now: Date(), shouldShowTime: true, deletable: true, forAppleWatch: true, tempLocation: ASALocation.NullIsland)
     }
 }

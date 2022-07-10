@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ASANewClockDetailView: View {
     @State var selectedClock:  ASAClock = ASAClock.generic
+    var location: ASALocation
+    var usesDeviceLocation: Bool
 
     @Environment(\.presentationMode) var presentationMode
 
@@ -52,7 +54,7 @@ struct ASANewClockDetailView: View {
                 } // HStack
 
                 List {
-                    ASAClockDetailEditingSection(selectedClock: selectedClock, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation)
+                    ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation)
                 } // List
                 Spacer()
                     .frame(minHeight: 0.0)
@@ -72,6 +74,6 @@ struct ASANewClockDetailView: View {
 
 struct ASANewClockDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ASANewClockDetailView(selectedClock: ASAClock.generic, now: Date(), tempLocation: ASALocation.NullIsland)
+        ASANewClockDetailView(selectedClock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, now: Date(), tempLocation: ASALocation.NullIsland)
     }
 }

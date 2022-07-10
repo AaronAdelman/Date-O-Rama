@@ -61,15 +61,20 @@ struct ASAProcessedClock {
     var monthIsBlank: Bool
     var blankWeekdaySymbol: String?
     var timeFormat: ASATimeFormat
+    
+    var location: ASALocation
+    var usesDeviceLocation: Bool
 
-    init(clock:  ASAClock, now:  Date, isForComplications: Bool) {
+    init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
         self.clock = clock
+        self.location = location
+        self.usesDeviceLocation = usesDeviceLocation
         self.calendarString = clock.calendar.calendarCode.localizedName
         let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now)
         self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
-        let timeZone = clock.locationData.timeZone
+        let timeZone = location.timeZone
         #if os(watchOS)
         self.timeZoneString = timeZone.extremeAbbreviation(for: now)
         #else
@@ -77,16 +82,16 @@ struct ASAProcessedClock {
         #endif
         self.supportsLocations = clock.calendar.supportsLocations
         if self.supportsLocations {
-            self.flagEmojiString = (clock.locationData.regionCode ?? "").flag
+            self.flagEmojiString = (location.regionCode ?? "").flag
 //            self.usesDeviceLocation = clock.usesDeviceLocation
             var locationString = ""
-            if clock.locationData.name == nil && clock.locationData.locality == nil && clock.locationData.country == nil {
-                locationString = clock.locationData.location.humanInterfaceRepresentation
+            if location.name == nil && location.locality == nil && location.country == nil {
+                locationString = location.location.humanInterfaceRepresentation
             } else {
                 #if os(watchOS)
-                locationString = clock.locationData.shortFormattedOneLineAddress
+                locationString = location.shortFormattedOneLineAddress
                 #else
-                locationString = clock.locationData.formattedOneLineAddress
+                locationString = location.formattedOneLineAddress
                 #endif
             }
             self.locationString = locationString
@@ -148,7 +153,7 @@ struct ASAProcessedClock {
 
         self.startOfDay = startOfDay
         self.startOfNextDay   = startOfNextDay
-        self.regionCode = clock.locationData.regionCode
+        self.regionCode = location.regionCode
         self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
         
         if self.clock.calendar is ASACalendarSupportingBlankMonths {
@@ -171,7 +176,7 @@ extension ASAProcessedClock {
     var latitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
-                return self.clock.locationData.location.coordinate.latitude 
+                return self.location.location.coordinate.latitude
             } else {
                 return 0.0
             }
@@ -181,7 +186,7 @@ extension ASAProcessedClock {
     var longitude:  CLLocationDegrees {
         get {
             if self.supportsLocations {
-                return self.clock.locationData.location.coordinate.longitude 
+                return self.location.location.coordinate.longitude
             } else {
                 return 0.0
             }
