@@ -174,7 +174,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     
     // MARK:  -
         
-    public func dictionary(forComplication:  Bool) ->  Dictionary<String, Any> {
+    public func dictionary(forComplication:  Bool, location: ASALocation, usesDeviceLocation: Bool) ->  Dictionary<String, Any> {
         //        debugPrint(#file, #function)
 
         var result = [
@@ -183,61 +183,61 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             CALENDAR_KEY:  calendar.calendarCode.rawValue,
             DATE_FORMAT_KEY:  dateFormat.rawValue ,
             TIME_FORMAT_KEY:  timeFormat.rawValue ,
-            TIME_ZONE_KEY:  locationData.timeZone.identifier,
+            TIME_ZONE_KEY:  location.timeZone.identifier,
             BUILT_IN_EVENT_CALENDARS_KEY:  self.builtInEventCalendars.map{ $0.fileName },
-            USES_DEVICE_LOCATION_KEY:  self.usesDeviceLocation
+            USES_DEVICE_LOCATION_KEY:  usesDeviceLocation
         ] as [String : Any]
 
         if self.isICalendarCompatible && !forComplication {
             result[ICALENDAR_EVENT_CALENDARS_KEY] =  self.iCalendarEventCalendars.map{ $0.title }
         }
         
-        result[LATITUDE_KEY] = self.locationData.location.coordinate.latitude
-        result[LONGITUDE_KEY] = self.locationData.location.coordinate.longitude
-        result[ALTITUDE_KEY] = self.locationData.location.altitude
-        result[HORIZONTAL_ACCURACY_KEY] = self.locationData.location.horizontalAccuracy
-        result[VERTICAL_ACCURACY_KEY] = self.locationData.location.verticalAccuracy
+        result[LATITUDE_KEY] = location.location.coordinate.latitude
+        result[LONGITUDE_KEY] = location.location.coordinate.longitude
+        result[ALTITUDE_KEY] = location.location.altitude
+        result[HORIZONTAL_ACCURACY_KEY] = location.location.horizontalAccuracy
+        result[VERTICAL_ACCURACY_KEY] = location.location.verticalAccuracy
 
-        if self.locationData.name != nil {
-            result[PLACE_NAME_KEY] = self.locationData.name
+        if location.name != nil {
+            result[PLACE_NAME_KEY] = location.name
         }
-        if self.locationData.locality != nil {
-            result[LOCALITY_KEY] = self.locationData.locality
+        if location.locality != nil {
+            result[LOCALITY_KEY] = location.locality
         }
-        if self.locationData.country != nil {
-            result[COUNTRY_KEY] = self.locationData.country
+        if location.country != nil {
+            result[COUNTRY_KEY] = location.country
         }
-        if self.locationData.regionCode != nil {
-            result[ISO_COUNTRY_CODE_KEY] = self.locationData.regionCode
+        if location.regionCode != nil {
+            result[ISO_COUNTRY_CODE_KEY] = location.regionCode
         }
         
-        if self.locationData.postalCode != nil {
-            result[POSTAL_CODE_KEY] = self.locationData.postalCode
+        if location.postalCode != nil {
+            result[POSTAL_CODE_KEY] = location.postalCode
         }
         
-        if self.locationData.administrativeArea != nil {
-            result[ADMINISTRATIVE_AREA_KEY] = self.locationData.administrativeArea
+        if location.administrativeArea != nil {
+            result[ADMINISTRATIVE_AREA_KEY] = location.administrativeArea
         }
 
-        if self.locationData.subAdministrativeArea != nil {
-            result[SUBADMINISTRATIVE_AREA_KEY] = self.locationData.subAdministrativeArea
+        if location.subAdministrativeArea != nil {
+            result[SUBADMINISTRATIVE_AREA_KEY] = location.subAdministrativeArea
         }
 
-        if self.locationData.subLocality != nil {
-            result[SUBLOCALITY_KEY] = self.locationData.subLocality
+        if location.subLocality != nil {
+            result[SUBLOCALITY_KEY] = location.subLocality
         }
 
-        if self.locationData.thoroughfare != nil {
-            result[THOROUGHFARE_KEY] = self.locationData.thoroughfare
+        if location.thoroughfare != nil {
+            result[THOROUGHFARE_KEY] = location.thoroughfare
         }
 
-        if self.locationData.subThoroughfare != nil {
-            result[SUBTHOROUGHFARE_KEY] = self.locationData.subThoroughfare
+        if location.subThoroughfare != nil {
+            result[SUBTHOROUGHFARE_KEY] = location.subThoroughfare
         }
 
         //        debugPrint(#file, #function, result)
         return result
-    } // var dictionary:  Dictionary<String, Any>
+    } // func dictionary(forComplication:  Bool, location: ASALocation, usesDeviceLocation: Bool) ->  Dictionary<String, Any>
 
     private var startingUp = true
     

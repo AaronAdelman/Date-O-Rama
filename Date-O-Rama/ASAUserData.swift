@@ -166,27 +166,27 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 #endif
     } // func preferenceFileExists(code:  ASAPreferencesFileCode) -> Bool
     
-    func rowArray(key:  ASAClockArrayKey) -> Array<ASAClock> {
+    func locationsWithClocksArray(key:  ASAClockArrayKey) -> Array<ASALocationWithClocks> {
         switch key {
         case .app:
-            return self.mainClocks.clocks
+            return self.mainClocks
             
         case .threeLineLarge:
-            return self.threeLineLargeClocks.clocks
+            return [self.threeLineLargeClocks]
             
         case .twoLineSmall:
-            return self.twoLineSmallClocks.clocks
+            return [self.twoLineSmallClocks]
             
         case .twoLineLarge:
-            return self.twoLineLargeClocks.clocks
+            return [self.twoLineLargeClocks]
             
         case .oneLineLarge:
-            return self.oneLineLargeClocks.clocks
+            return [self.oneLineLargeClocks]
             
         case .oneLineSmall:
-            return self.oneLineSmallClocks.clocks
+            return [self.oneLineSmallClocks]
         } // switch key
-    } // func clockArray(key:  ASAClockArrayKey) -> Array<ASARow>
+    } // func locationsWithClocksArray(key:  ASAClockArrayKey) -> Array<ASALocationWithClocks>
     
     func defaultLocationWithClocks(key:  ASAClockArrayKey) -> ASALocationWithClocks {
         let deviceLocation = ASALocationManager.shared.deviceLocation
@@ -353,7 +353,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         self.objectWillChange.send()
         
         if code == .clocks {
-            let processedMainClocks = self.processedClocksArray(clocksArray: self.mainClocks, forComplication: false)
+            let processedMainClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: self.mainClocks, forComplication: false)
             
             let temp1a: Dictionary<String, Any> = [
                 ASAClockArrayKey.app.rawValue:  processedMainClocks
@@ -364,11 +364,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         if code == .complications {
             if #available(iOS 13.0, watchOS 6.0, *) {
-                let processedThreeLargeClocks = self.processedClocksArray(clocksArray: [self.threeLineLargeClocks], forComplication: true)
-                let processedTwoLineLargeClocks = self.processedClocksArray(clocksArray: [self.twoLineLargeClocks], forComplication: true)
-                let processedTwoLineSmallClocks = self.processedClocksArray(clocksArray: [self.twoLineSmallClocks], forComplication: true)
-                let processedOneLineLargeClocks = self.processedClocksArray(clocksArray: [self.oneLineLargeClocks], forComplication: true)
-                let processedOneLineSmallClocks = self.processedClocksArray(clocksArray: [self.oneLineSmallClocks], forComplication: true)
+                let processedThreeLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.threeLineLargeClocks], forComplication: true)
+                let processedTwoLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineLargeClocks], forComplication: true)
+                let processedTwoLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineSmallClocks], forComplication: true)
+                let processedOneLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineLargeClocks], forComplication: true)
+                let processedOneLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineSmallClocks], forComplication: true)
                 
                 let temp2: Dictionary<String, Any> = [
                     ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
@@ -395,10 +395,10 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     // MARK: - Translation between JSON and model objects
     
-    private func processedClocksArray(clocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
+    private func locationsWithClocksArrayAsJSON(locationsWithClocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
-        for clock in clocksArray.clocks {
-            let dictionary = clock.dictionary(forComplication: forComplication)
+        for locationWithClocks in locationsWithClocksArray.clocks {
+            let dictionary = locationWithClocks.dictionary(forComplication: forComplication, location: locationWithClocks.locationData, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
             temp.append(dictionary)
         }
         return temp

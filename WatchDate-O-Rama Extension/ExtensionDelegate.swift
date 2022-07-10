@@ -118,7 +118,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         if (message[ASAMessageKeyType] as! String) == ASAMessageKeyUpdateUserData {
             for key in ASAClockArrayKey.complicationSections {
                 let value = message[key.rawValue]
-                var clockArray = self.userData.rowArray(key: key)
+                var clockArray = self.userData.locationsWithClocksArray(key: key).clocks
                 if value != nil {
                     let valueAsArray = value! as! Array<Dictionary<String, Any>>
                     for i in 0..<key.minimumNumberOfClocks {

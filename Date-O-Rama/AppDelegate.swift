@@ -88,11 +88,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate, Observ
     } // func sessionReachabilityDidChange(_ session: WCSession)
     
     func rowArrayDictionary(key:  ASAClockArrayKey, forComplication:  Bool) -> Array<Dictionary<String, Any>> {
-        let rowArray = ASAUserData.shared.rowArray(key: key)
+        let rowArray = ASAUserData.shared.locationsWithClocksArray(key: key).clocks
         
         var temp:  Array<Dictionary<String, Any>> = []
         for row in rowArray {
-            let dictionary = row.dictionary(forComplication: forComplication)
+            let dictionary = row.dictionary(forComplication: forComplication, location: row.locationData, usesDeviceLocation: row.usesDeviceLocation)
             temp.append(dictionary)
         }
         
