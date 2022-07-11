@@ -91,7 +91,7 @@ struct ASAClockDetailEditingSection:  View {
     var body: some View {
         Group {
             Section(header:  Text(NSLocalizedString("HEADER_Row", comment: ""))) {
-                NavigationLink(destination: ASACalendarChooserView(row: self.selectedClock, tempCalendarCode: self.selectedClock.calendar.calendarCode)) {
+                NavigationLink(destination: ASACalendarChooserView(clock: self.selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, tempCalendarCode: self.selectedClock.calendar.calendarCode)) {
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedClock.calendar.calendarCode.localizedName)
                 }
                 

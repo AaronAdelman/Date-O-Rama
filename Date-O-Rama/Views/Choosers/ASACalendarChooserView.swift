@@ -82,7 +82,9 @@ struct ASACalendarChooserView: View {
         .TruncatedJulianDay
     ]
     
-    @ObservedObject var row:  ASAClock
+    @ObservedObject var clock:  ASAClock
+    var location: ASALocation
+    var usesDeviceLocation: Bool
     @State var tempCalendarCode:  ASACalendarCode
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
@@ -151,11 +153,12 @@ struct ASACalendarChooserView: View {
                                 })
         )
         .onAppear() {
-            self.tempCalendarCode = self.row.calendar.calendarCode
+            self.tempCalendarCode = self.clock.calendar.calendarCode
         }
         .onDisappear() {
             if !self.didCancel {
-                self.row.calendar = ASACalendarFactory.calendar(code: self.tempCalendarCode)!
+                self.clock.calendar = ASACalendarFactory.calendar(code: self.tempCalendarCode)!
+                self.clock.enforceSelfConsistency(location: location, usesDeviceLocation: usesDeviceLocation)
             }
         }
     }
@@ -180,6 +183,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarChooserView(row: ASAClock.generic, tempCalendarCode: .Gregorian)
+        ASACalendarChooserView(clock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, tempCalendarCode: .Gregorian)
     }
 }

@@ -62,7 +62,7 @@ struct ASAEventDetailView: View {
                             in
                             let alarm = event.alarms![i]
                             
-                            ASAEventAlarmView(alarm: alarm, row: clock)
+                            ASAEventAlarmView(alarm: alarm, row: clock, location: location)
                         } // ForEach(0..<numberOfAlarms, id: \.self)
                     }
                     
@@ -269,6 +269,7 @@ struct ASAEventFrequencyView: View {
 struct ASAEventRecurrenceRulesForEach: View {
     var event: ASAEventCompatible
     var row: ASAClock
+    var location: ASALocation
 
     let GregorianCalendar: Calendar = {
         var calendar = Calendar(identifier: .gregorian)
@@ -338,7 +339,7 @@ struct ASAEventRecurrenceRulesForEach: View {
                 let occurrenceCount = recurrenceEnd!.occurrenceCount
                 if occurrenceCount == 0 {
                     // Date-based
-                    ASAEventPropertyView(key: "Event Recurrence end date", value: row.dateTimeString(now:  recurrenceEnd!.endDate!))
+                    ASAEventPropertyView(key: "Event Recurrence end date", value: row.dateTimeString(now:  recurrenceEnd!.endDate!, location: location))
                 } else {
                     ASAEventPropertyView(key: "Event Recurrence count", value: "\(occurrenceCount)")
                 }
@@ -401,7 +402,7 @@ struct ASAEventDetailDateTimeSection: View {
                 } // HStack
             }
 
-            ASAEventRecurrenceRulesForEach(event: event, row: clock)
+            ASAEventRecurrenceRulesForEach(event: event, row: clock, location: location)
             
             if event.regionCodes != nil {
                 ASAEventPropertyView(key: "Event countries and regions", value: event.regionCodes!.asFormattedListOfISOCountryCodes())
@@ -420,12 +421,13 @@ struct ASAEventDetailDateTimeSection: View {
 struct ASAEventAlarmView: View {
     var alarm: EKAlarm
     var row: ASAClock
+    var location: ASALocation
     
     func value() -> String {
 //        var strings: Array<String> = []
         
         if alarm.absoluteDate != nil {
-            let absoluteDateString: String = row.dateTimeString(now:  alarm.absoluteDate!)
+            let absoluteDateString: String = row.dateTimeString(now:  alarm.absoluteDate!, location: location)
 //            strings.append(absoluteDateString)
             return absoluteDateString
         } else {

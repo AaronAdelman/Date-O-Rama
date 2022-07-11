@@ -78,7 +78,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         self.clearCacheObjects()
     } // func handleStoreChanged(notification:  Notification) -> Void
 
-    fileprivate func enforceSelfConsistency(location: ASALocation, usesDeviceLocation: Bool) {
+    public func enforceSelfConsistency(location: ASALocation, usesDeviceLocation: Bool) {
 //        if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
 //            self.dateFormat = self.calendar.defaultDateFormat
 //        }
@@ -106,7 +106,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
-            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
+//            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
             enforceDateAndTimeFormatSelfConsistency()
 
             if !startingUp {
@@ -338,6 +338,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 //        newClock.locationData = newLocationData
 
         newClock.startingUp = false
+        newClock.enforceSelfConsistency(location: newLocationData, usesDeviceLocation: usesDeviceLocation ?? false)
         return (newClock, newLocationData, usesDeviceLocation ?? false)
     } // class func new(dictionary:  Dictionary<String, Any>) -> (clock: ASAClock, location: ASALocation, usesDeviceLocation: Bool)
 
@@ -417,15 +418,15 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         return nil
     } // func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String>?
     
-    var weekendDays: Array<Int>? {
+    func weekendDays(location: ASALocation) -> Array<Int>? {
         if self.calendar is ASACalendarSupportingWeeks {
             let calendarSupportingWeeks = self.calendar as! ASACalendarSupportingWeeks
-            return calendarSupportingWeeks.weekendDays(for: self.locationData.regionCode)
+            return calendarSupportingWeeks.weekendDays(for: location.regionCode)
 
         } else {
             return nil
         }
-    } // var weekendDays
+    } // func weekendDays(location: ASALocation) -> Array<Int>?
     
 //    var workDays: Array<Int> {
 //        return self.calendar.workDays
@@ -456,24 +457,24 @@ extension ASAClock {
         return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: self.locationData)
     }
 
-    public func dateString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: self.locationData)
+    public func dateString(now:  Date, location: ASALocation) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: .none, locationData: location)
     } // func dateTimeString(now:  Date) -> String
 
-    public func dateTimeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: self.timeFormat, locationData: self.locationData)
+    public func dateTimeString(now:  Date, location: ASALocation) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: self.dateFormat, timeFormat: self.timeFormat, locationData: location)
     } // func dateTimeString(now:  Date) -> String
     
-    func startOfDay(date:  Date) -> Date {
-        return self.calendar.startOfDay(for: date, locationData: self.locationData)
+    func startOfDay(date:  Date, location: ASALocation) -> Date {
+        return self.calendar.startOfDay(for: date, locationData: location)
     } // func startODay(date:  Date) -> Date
 
-    func startOfNextDay(date:  Date) -> Date {
-        return self.calendar.startOfNextDay(date: date, locationData: self.locationData)
+    func startOfNextDay(date:  Date, location: ASALocation) -> Date {
+        return self.calendar.startOfNextDay(date: date, locationData: location)
     } // func startOfNextDay(now:  Date) -> Date
 
-    public func timeString(now:  Date) -> String {
-        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: self.timeFormat, locationData: self.locationData)
+    public func timeString(now:  Date, location: ASALocation) -> String {
+        return self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .none, timeFormat: self.timeFormat, locationData: location)
     } // func timeString(now:  Date) -> String
     
     public var supportsLocales:  Bool {
@@ -562,20 +563,20 @@ class ASAStartAndEndDateStrings {
 }
 
 extension ASAClock {
-    func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool, eventIsAllDay: Bool) -> String {
-        return (isPrimaryClock && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date) : self.shortenedDateTimeString(now: date)
+    func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool, eventIsAllDay: Bool, location: ASALocation) -> String {
+        return (isPrimaryClock && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date)
      } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
     
-    private func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String) {
+    private func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         var startDateString: String?
         var endDateString: String
         
         if event.startDate == event.endDate {
             startDateString = nil
         } else {
-            startDateString = self.properlyShortenedString(date: event.startDate, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+            startDateString = self.properlyShortenedString(date: event.startDate, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
         }
-        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay)
+        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
         
         return (startDateString, endDateString)
     } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
@@ -592,7 +593,7 @@ extension ASAClock {
         
         let eventIsAllDay = event.isAllDay(for: self, location: location)
         if !eventIsAllDay {
-            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly)
+            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, location: location)
         } else {
             switch event.type {
             case .multiYear:
@@ -616,7 +617,7 @@ extension ASAClock {
                 startDateString = nil
                 endDateString = self.shortenedDateString(now: event.startDate)
             default:
-                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly)
+                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, location: location)
             } // switch event.type
         }
         
@@ -629,9 +630,9 @@ extension ASAClock {
     
     public func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String, endDateString: String) {
         let eventIsAllDay = event.isAllDay(for: self, location: location)
-        let startDateString = eventIsAllDay ? self.dateString(now: event.startDate) : self.dateTimeString(now: event.startDate)
+        let startDateString = eventIsAllDay ? self.dateString(now: event.startDate, location: location) : self.dateTimeString(now: event.startDate, location: location)
         let endDate: Date = event.endDate - 1
-        let endDateString = eventIsAllDay ? self.dateString(now: endDate) : self.dateTimeString(now: endDate)
+        let endDateString = eventIsAllDay ? self.dateString(now: endDate, location: location) : self.dateTimeString(now: endDate, location: location)
         
         return (startDateString, endDateString)
     } // func longStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String, endDateString: String)

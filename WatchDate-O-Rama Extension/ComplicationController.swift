@@ -11,27 +11,27 @@ import WatchKit
 import SwiftUI
 
 extension ASAUserData {
-    func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASAClock>? {
+    func locationWithClocks(for complicationFamily:  CLKComplicationFamily) -> ASALocationWithClocks? {
         switch complicationFamily {
         case .modularLarge, .graphicRectangular:
-            return self.threeLineLargeClocks.clocks
+            return self.threeLineLargeClocks
             
         case .modularSmall, .circularSmall, .graphicCircular:
-            return self.twoLineSmallClocks.clocks
+            return self.twoLineSmallClocks
             
         case .utilitarianSmall, .utilitarianSmallFlat:
-            return self.oneLineSmallClocks.clocks
+            return self.oneLineSmallClocks
             
         case .utilitarianLarge:
-            return self.oneLineLargeClocks.clocks
+            return self.oneLineLargeClocks
             
         case .extraLarge:
-            return self.twoLineLargeClocks.clocks
+            return self.twoLineLargeClocks
             
         default:
             return nil
         } // switch complicationFamily
-    } // func rowArray(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>?
+    } // func locationWithClocks(for complicationFamily:  CLKComplicationFamily) -> Array<ASARow>?
 } // extension ASAUserData
 
 
@@ -95,31 +95,31 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler(entry)
     } // func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void)
 
-    func earliestStartOfNextDay(when:  Date, rowArray:  Array<ASAClock>) -> Date {
+    func earliestStartOfNextDay(when:  Date, locationWithClocks:  ASALocationWithClocks) -> Date {
         var result = Date.distantFuture
         
-        for row in rowArray {
-            let startOfNextDay = row.startOfNextDay(date: when)
+        for clock in locationWithClocks.clocks {
+            let startOfNextDay = clock.startOfNextDay(date: when, location: locationWithClocks.location)
             if startOfNextDay < result {
                 result = startOfNextDay
             }
-        } // for row in rowArray
+        } // for clock in locationWithClocks.clocks
         
         return result
-    } // func earliestStartOfNextDay(when:  Date, rowArray:  Array<ASARow>) -> Date
+    } // func earliestStartOfNextDay(when:  Date, locationWithClocks:  ASALocationWithClocks) -> Date
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
 //        debugPrint("\(#file) \(#function) after \(date), limit = \(limit)")
         
         var entries: [CLKComplicationTimelineEntry]? = []
         var when = date
-        let rowArray = self.userData.rowArray(for: complication.family)
+        let rowArray = self.userData.locationWithClocks(for: complication.family)
         if rowArray == nil {
             return
         }
         
         for _ in 1...limit {
-            when = self.earliestStartOfNextDay(when: when, rowArray: rowArray!)
+            when = self.earliestStartOfNextDay(when: when, locationWithClocks: rowArray!)
             entries?.append(self.getTimelineEntryForComplication(complication: complication, now: when)!)
         } // for i
 //        debugPrint("\(#file) \(#function) entries = \(String(describing: entries))")
@@ -186,48 +186,56 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK:  -
     
     func oneLineSmallRowString(now:  Date) -> String {
-        let headerRow = self.userData.oneLineSmallClocks.clocks[0]
+        let locationWithClocks = self.userData.oneLineSmallClocks
+        let headerRow = locationWithClocks.clocks[0]
         
         // Header date
-        let headerString = headerRow.dateString(now: now)
+        let headerString = headerRow.dateString(now: now, location: locationWithClocks.location)
 
 //        debugPrint(#file, #function, headerString)
         return headerString
     } // func oneLineSmallRowString(now:  Date) -> String
 
     func oneLineLargeRowString(now:  Date) -> String {
-        let headerRow = self.userData.oneLineLargeClocks.clocks[0]
+        let locationWithClocks = self.userData.oneLineLargeClocks
+        let headerRow = locationWithClocks.clocks[0]
         
         // Header date
-        let headerString = headerRow.dateString(now: now)
+        let headerString = headerRow.dateString(now: now, location: locationWithClocks.location)
 
 //        debugPrint(#file, #function, headerString)
         return headerString
     } // func oneLineLargeRowString(now:  Date) -> String
 
     func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String) {
-        let headerRow = self.userData.twoLineSmallClocks.clocks[0]
-        let body1Row  = self.userData.twoLineSmallClocks.clocks[1]
+        let locationWithClocks = self.userData.twoLineSmallClocks
+        let clocks = locationWithClocks.clocks
+        let location = locationWithClocks.location
+        let headerRow = clocks[0]
+        let body1Row  = clocks[1]
         
         // Header date
-        let headerString = headerRow.dateString(now: now)
+        let headerString = headerRow.dateString(now: now, location: location)
         
         // Body 1 date
-        let body1String = body1Row.dateString(now: now)
+        let body1String = body1Row.dateString(now: now, location: location)
 
 //        debugPrint(#file, #function, headerString, body1String)
         return (headerString, body1String)
     } // func twoLineSmallRowStrings(now:  Date) -> (headerString:  String, body1String:  String)
     
     func twoLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String) {
-        let headerRow = self.userData.twoLineLargeClocks.clocks[0]
-        let body1Row  = self.userData.twoLineLargeClocks.clocks[1]
+        let locationWithClocks = self.userData.twoLineLargeClocks
+        let clocks = locationWithClocks.clocks
+        let location = locationWithClocks.location
+        let headerRow = clocks[0]
+        let body1Row  = clocks[1]
         
         // Header date
-        let headerString = headerRow.dateString(now: now)
+        let headerString = headerRow.dateString(now: now, location: location)
         
         // Body 1 date
-        let body1String = body1Row.dateString(now: now)
+        let body1String = body1Row.dateString(now: now, location: location)
 
 //        debugPrint(#file, #function, headerString, body1String)
         return (headerString, body1String)
@@ -235,18 +243,21 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     
     func threeLineLargeRowStrings(now:  Date) -> (headerString:  String, body1String:  String, body2String:  String) {
-        let headerRow = self.userData.threeLineLargeClocks.clocks[0]
-        let body1Row  = self.userData.threeLineLargeClocks.clocks[1]
-        let body2Row  = self.userData.threeLineLargeClocks.clocks[2]
+        let locationWithClocks = self.userData.threeLineLargeClocks
+        let clocks = locationWithClocks.clocks
+        let location = locationWithClocks.location
+        let headerRow = clocks[0]
+        let body1Row  = clocks[1]
+        let body2Row  = clocks[2]
         
         // Header date
-        let headerString = headerRow.dateString(now: now)
+        let headerString = headerRow.dateString(now: now, location: location)
         
         // Body 1 date
-        let body1String = body1Row.dateString(now: now)
+        let body1String = body1Row.dateString(now: now, location: location)
         
         // Body 2 date
-        let body2String = body2Row.dateString(now: now)
+        let body2String = body2Row.dateString(now: now, location: location)
 
 //        debugPrint(#file, #function, headerString, body1String, body2String)
         return (headerString, body1String, body2String)

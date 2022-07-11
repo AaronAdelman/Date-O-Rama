@@ -106,7 +106,7 @@ struct ASAProcessedClock {
         
         self.veryShortStandaloneWeekdaySymbols = clock.veryShortStandaloneWeekdaySymbols(localeIdentifier: clock.localeIdentifier)
         
-        self.weekendDays = clock.weekendDays
+        self.weekendDays = clock.weekendDays(location: location)
         
         self.day = dateComponents.day ?? 1
         self.weekday = dateComponents.weekday ?? 1
@@ -145,8 +145,8 @@ struct ASAProcessedClock {
 
         self.month = dateComponents.month ?? 0
 
-        let startOfDay: Date = clock.startOfDay(date: now)
-        let startOfNextDay: Date   = clock.startOfNextDay(date: now)
+        let startOfDay: Date = clock.startOfDay(date: now, location: location)
+        let startOfNextDay: Date   = clock.startOfNextDay(date: now, location: location)
         let clockEvents = clock.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, usesDeviceLocation: usesDeviceLocation)
         self.dateEvents = isForComplications ? [] : clockEvents.dateEvents
         self.timeEvents = isForComplications ? [] : clockEvents.timeEvents
