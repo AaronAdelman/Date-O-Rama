@@ -64,6 +64,8 @@ struct ASAProcessedClock {
     
     var location: ASALocation
     var usesDeviceLocation: Bool
+    
+    var supportsExternalEvents: Bool
 
     init(clock:  ASAClock, now:  Date, isForComplications: Bool, location: ASALocation, usesDeviceLocation: Bool) {
         self.clock = clock
@@ -166,6 +168,8 @@ struct ASAProcessedClock {
         }
  
         self.timeFormat = clock.timeFormat
+        
+        self.supportsExternalEvents = clock.supportsExternalEvents(location: location, usesDeviceLocation: usesDeviceLocation)
     } // init(clock:  ASAClock, now:  Date, isForComplications: Bool)
 } // struct ASAProcessedClock
 

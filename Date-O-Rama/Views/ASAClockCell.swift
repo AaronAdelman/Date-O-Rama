@@ -241,7 +241,7 @@ struct ASAClockCellBody:  View {
                             }
                         }
                         
-                        if processedClock.clock.supportsExternalEvents(location: processedClock.location, usesDeviceLocation: processedClock.usesDeviceLocation) {
+                        if processedClock.supportsExternalEvents {
                             Button(action:
                                     {
                                 detailType = .newEvent
