@@ -395,9 +395,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
     
     private func locationsWithClocksArrayAsJSON(locationsWithClocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>> {
         var temp:  Array<Dictionary<String, Any>> = []
-        for locationWithClocks in locationsWithClocksArray.clocks {
-            let dictionary = locationWithClocks.dictionary(forComplication: forComplication, location: locationWithClocks.locationData, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
-            temp.append(dictionary)
+        for locationWithClocks in locationsWithClocksArray {
+            for clock in locationWithClocks.clocks {
+                let dictionary = clock.dictionary(forComplication: forComplication, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
+                temp.append(dictionary)
+            }
         }
         return temp
     } // private func processedClocksArray(clocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>>
@@ -559,7 +561,7 @@ extension ASAUserData {
             }
         } // for i in 0..<self.mainClocks.count
         
-        let newLocationWithClocks = ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation)
+        let newLocationWithClocks = ASALocationWithClocks(location: location, clocks: [clock], usesDeviceLocation: false)
         addLocationWithClocks(newLocationWithClocks)
     } // func addMainClock(clock: ASAClock)
     

@@ -17,11 +17,11 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
             objectWillChange.send()
         } // willSet
         
-        didSet {
-            for clock in clocks {
-                clock.locationData = location
-            }
-        }
+//        didSet {
+//            for clock in clocks {
+//                clock.locationData = location
+//            }
+//        }
     }
     @Published var clocks: Array<ASAClock>
     
@@ -30,14 +30,14 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
             objectWillChange.send()
         } // willSet
         
-        didSet {
-            for clock in clocks {
-                clock.usesDeviceLocation = usesDeviceLocation
-                if usesDeviceLocation {
-                    clock.locationData = ASALocationManager.shared.deviceLocation
-                }
-            }
-        }
+//        didSet {
+//            for clock in clocks {
+//                clock.usesDeviceLocation = usesDeviceLocation
+//                if usesDeviceLocation {
+//                    clock.locationData = ASALocationManager.shared.deviceLocation
+//                }
+//            }
+//        }
     }
     
     let objectWillChange = PassthroughSubject<Void, Never>()
@@ -46,10 +46,10 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         self.location           = location
         self.clocks             = clocks
         self.usesDeviceLocation = usesDeviceLocation
-        for clock in clocks {
-            clock.locationData       = location
-            clock.usesDeviceLocation = usesDeviceLocation
-        }
+//        for clock in clocks {
+//            clock.locationData       = location
+//            clock.usesDeviceLocation = usesDeviceLocation
+//        }
         super.init()
         registerForLocationChangedNotifications()
     }

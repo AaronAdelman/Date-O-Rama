@@ -43,12 +43,12 @@ let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
 class ASAClock: NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
-    @Published var usesDeviceLocation:  Bool = true
-    @Published var locationData:  ASALocation = ASALocationManager.shared.deviceLocation {
-        didSet {
-            self.handleLocationDataChanged()
-        }
-    }
+//    @Published var usesDeviceLocation:  Bool = true
+//    @Published var locationData:  ASALocation = ASALocationManager.shared.deviceLocation {
+//        didSet {
+//            self.handleLocationDataChanged()
+//        }
+//    }
 
     @Published var localeIdentifier:  String = ""
     
