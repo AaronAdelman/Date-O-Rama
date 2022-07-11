@@ -923,6 +923,8 @@
 		A5EFFFFC285B8AF700F2205F /* IS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EFFFF9285B8AF700F2205F /* IS.json */; };
 		A5EFFFFD285B8AF700F2205F /* IS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5EFFFF9285B8AF700F2205F /* IS.json */; };
 		A5EFFFFF285B8DF900F2205F /* BH (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EFFFFE285B8DF800F2205F /* BH (Muslim).json */; };
+		A5F2BE8C287C803E00E7ED0F /* SD (Coptic).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */; };
+		A5F2BE8D287C803E00E7ED0F /* SD (Coptic).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */; };
 		A5F3B0182855FEC700865CEB /* RU.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B0172855FEC700865CEB /* RU.json */; };
 		A5F3B0192855FEC700865CEB /* RU.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B0172855FEC700865CEB /* RU.json */; };
 		A5F3B01B28563CB000865CEB /* WS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5F3B01A28563CB000865CEB /* WS.json */; };
@@ -1562,6 +1564,7 @@
 		A5EFFFF8285B8AF700F2205F /* FI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FI.json; sourceTree = "<group>"; };
 		A5EFFFF9285B8AF700F2205F /* IS.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IS.json; sourceTree = "<group>"; };
 		A5EFFFFE285B8DF800F2205F /* BH (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BH (Muslim).json"; sourceTree = "<group>"; };
+		A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "SD (Coptic).json"; sourceTree = "<group>"; };
 		A5F3B0172855FEC700865CEB /* RU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RU.json; sourceTree = "<group>"; };
 		A5F3B01A28563CB000865CEB /* WS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WS.json; sourceTree = "<group>"; };
 		A5F3B01D285644A100865CEB /* TH.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TH.json; sourceTree = "<group>"; };
@@ -1831,8 +1834,8 @@
 				A5EF0003285B8EEA00F2205F /* IQ (Muslim).json */,
 				A5E4960E2862505C001BF40C /* IQ.json */,
 				A5EFFF68285B63BB00F2205F /* IR (Muslim).json */,
-				A5E4960F2862505C001BF40C /* IR.json */,
 				A541945628749D5200C93496 /* IR (Persian).json */,
+				A5E4960F2862505C001BF40C /* IR.json */,
 				A5EFFFF9285B8AF700F2205F /* IS.json */,
 				A5D3015A24EBDFF8003E79E9 /* Islam (general).json */,
 				A5BDE77B26677E7900F47416 /* Islam (supplemental).json */,
@@ -1949,6 +1952,7 @@
 				A502D3E728637F5000A625A9 /* SB.json */,
 				A501C7FC285F75D100211E33 /* SC.json */,
 				A5FED7E8276BA65100BB11C9 /* Scientology.json */,
+				A5F2BE8B287C803E00E7ED0F /* SD (Coptic).json */,
 				A5EF0004285B8EEA00F2205F /* SD (Muslim).json */,
 				A502D3EA286380E700A625A9 /* SD.json */,
 				A5759146282BE36500675058 /* SE.json */,
@@ -2612,6 +2616,7 @@
 				A5EFFFDF285B855E00F2205F /* LB.json in Resources */,
 				A57CA3292484E61800378EA7 /* Localizable.strings in Resources */,
 				A5E4962C286252EC001BF40C /* MC.json in Resources */,
+				A5F2BE8D287C803E00E7ED0F /* SD (Coptic).json in Resources */,
 				A5E4960028624EFE001BF40C /* GQ.json in Resources */,
 				A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A5E4966628625585001BF40C /* PM.json in Resources */,
@@ -3061,6 +3066,7 @@
 				A584C90024B646210014CE2E /* Judaism (times).json in Resources */,
 				A5D850B7280C98FD005247BD /* ID.json in Resources */,
 				A575914A282BE3BE00675058 /* LU.json in Resources */,
+				A5F2BE8C287C803E00E7ED0F /* SD (Coptic).json in Resources */,
 				A5EFFF33285B5B9E00F2205F /* BF.json in Resources */,
 				A5EE19E52804A92600B0B9C2 /* GB.json in Resources */,
 				A56CE62A24C43BED00865E95 /* Judaism (minor fasts).json in Resources */,
