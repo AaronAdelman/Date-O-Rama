@@ -96,7 +96,7 @@ struct ASAEventCell:  View {
                     ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
                     
                     if self.eventsViewShouldShowSecondaryDates {
-                        let (startDateString, endDateString) = self.secondaryClock.startAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: eventIsTodayOnly, location: location)
+                        let (startDateString, endDateString) = self.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
                         ASATimesSubcell(event: event, clock: self.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
                     }
                 }
@@ -107,7 +107,7 @@ struct ASAEventCell:  View {
             ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
             
             if self.eventsViewShouldShowSecondaryDates {
-                let (startDateString, endDateString) = self.secondaryClock.startAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: eventIsTodayOnly, location: location)
+                let (startDateString, endDateString) = self.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
                 
                 ASATimesSubcell(event: event, clock: self.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
             }

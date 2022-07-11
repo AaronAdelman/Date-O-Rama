@@ -371,7 +371,7 @@ struct ASAEventDetailDateTimeSection: View {
         Section {
             ASAEventPropertyView(key: "Event calendar", value: event.calendarCode.localizedName)
             
-            let (startDateString, endDateString) = clock.longStartAndEndDateStrings(event: event, isPrimaryClock: true, eventIsTodayOnly: false, location: location)
+            let (startDateString, endDateString) = clock.longStartAndEndDateStrings(event: event, eventIsTodayOnly: false, location: location)
 
             if event.startDate == event.endDate || startDateString == endDateString {
                 Text(startDateString)
