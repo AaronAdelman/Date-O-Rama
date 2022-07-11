@@ -18,7 +18,6 @@ struct ASAProcessedClock {
     var flagEmojiString:  String
     var timeZoneString:  String
 
-//    var usesDeviceLocation:  Bool
     var locationString:  String
     var canSplitTimeFromDate:  Bool
     var supportsTimeZones:  Bool
