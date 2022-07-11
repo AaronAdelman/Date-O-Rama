@@ -62,6 +62,7 @@
         {"template": "2nd Sunday of Easter", "titles": {"en": "Second Sunday of Easter"}, "notes": {"en": "Divine Mercy Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 7}},
         {"template": "3rd Advent Sunday", "titles": {"en": "Third Advent Sunday"}, "notes": {"en": "Gaudete Sunday"}, "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}, "emoji": "🕯"},
         {"template": "4th Advent Sunday", "titles": {"en": "Fourth Advent Sunday"}, "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}, "emoji": "🕯"},
+        {template: "Accession Day", "type": "1D", "start": {"mon": 12, "d": 17}, "titles": {"en": "Accession Day", "ar": "يوم الجلوس"}},
         {"template": "All Saints’ Day", "notes": {"en": "All Hallows’ Day"}, "titles": {"en": "All Saints’ Day", "nl": "Allerheiligen", "fr": "Toussaint", "de": "Allerheiligen", "ca": "Tots Sants", "ar": "عيد جميع القديسين"}, "type": "1D", "start": {"mon": 11, "d": 1}},
         {"template": "All Souls’ Day", "titles": {"en": "All Souls’ Day"}, "notes": {"en": "All Souls Day"}, "type": "1D", "start": {"mon": 11, "d": 2}},
         {"template": "Antarctica Day", "titles": {"en": "Antarctica Day"}, "type": "1D", "start": {"mon": 12, "d": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Antarctica_Day"}, "emoji": "🇦🇶"},
