@@ -107,6 +107,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
             enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
+            enforceDateAndTimeFormatSelfConsistency()
 
             if !startingUp {
                 self.clearCacheObjects()
@@ -114,11 +115,19 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         } // didSet
     } // var calendar
 
+    public func enforceDateAndTimeFormatSelfConsistency() {
+        if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
+            self.dateFormat = self.calendar.defaultDateFormat
+        }
+        
+        if !self.calendar.supportedTimeFormats.contains(self.timeFormat) {
+            self.timeFormat = self.calendar.defaultTimeFormat
+        }
+    }
+    
     @Published var dateFormat:  ASADateFormat = .full {
         didSet {
-            if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
-                self.dateFormat = self.calendar.defaultDateFormat
-            }
+            enforceDateAndTimeFormatSelfConsistency()
             
             if !startingUp {
                 self.clearCacheObjects()
@@ -128,7 +137,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
     @Published var timeFormat:  ASATimeFormat = .medium {
         didSet {
-//            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
+            enforceDateAndTimeFormatSelfConsistency()
 
             if !startingUp {
                 self.clearCacheObjects()
