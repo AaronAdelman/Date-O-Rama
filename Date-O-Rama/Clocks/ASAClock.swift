@@ -448,13 +448,13 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 // MARK:  -
 
 extension ASAClock {
-    public func dateStringTimeStringDateComponents(now: Date) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
+    public func dateStringTimeStringDateComponents(now: Date, location: ASALocation) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
 //        #if os(watchOS)
 //        let properDateFormat = self.dateFormat.watchShortened
 //        #else
         let properDateFormat = self.dateFormat
 //        #endif
-        return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: self.locationData)
+        return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: location)
     }
 
     public func dateString(now:  Date, location: ASALocation) -> String {
@@ -481,30 +481,30 @@ extension ASAClock {
         return self.calendar.supportsLocales
     } // var supportsLocales:  Bool
 
-    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date) -> ASADateComponents {
-        self.calendar.dateComponents(components, from: date, locationData: self.locationData)
-    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
+//    public func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, location: ASALocation) -> ASADateComponents {
+//        self.calendar.dateComponents(components, from: date, locationData: location)
+//    } // func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents
 
-    public func shortenedDateTimeString(now:  Date) -> String {
+    public func shortenedDateTimeString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
         let timeFormat: ASATimeFormat = self.timeFormat
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: self.locationData)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: location)
         return result
     } // func shortenedDateTimeString(now:  Date) -> String
 
-    public func shortenedDateString(now:  Date) -> String {
+    public func shortenedDateString(now:  Date, location: ASALocation) -> String {
         let dateFormat: ASADateFormat = self.dateFormat.shortened
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: self.locationData)
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: dateFormat, timeFormat: .none, locationData: location)
         return result
     } // func shortenedDateString(now:  Date) -> String
     
-    public func yearOnlyDateString(now:  Date) -> String {
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearOnly, timeFormat: .none, locationData: self.locationData)
+    public func yearOnlyDateString(now:  Date, location: ASALocation) -> String {
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearOnly, timeFormat: .none, locationData: location)
         return result
-    } // func yearOnlyDateString(now:  Date) -> String
+    } // func yearOnlyDateString(now:  Date, location: ASALocation) -> String
     
-    public func yearAndMonthOnlyDateString(now:  Date) -> String {
-        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearAndMonthOnly, timeFormat: .none, locationData: self.locationData)
+    public func yearAndMonthOnlyDateString(now:  Date, location: ASALocation) -> String {
+        let result: String = self.calendar.dateTimeString(now: now, localeIdentifier: self.localeIdentifier, dateFormat: .shortYearAndMonthOnly, timeFormat: .none, locationData: location)
         return result
     } // public func yearAndMonthOnlyDateString(now:  Date) -> String
 
@@ -543,14 +543,14 @@ extension ASAClock {
     } // static var generic:  ASAClock
 } // extension ASAClock
 
-extension ASAClock {
-    public func countryCodeEmoji(date:  Date) -> String {
-        let regionCode: String = self.locationData.regionCode ?? ""
-        let result: String = regionCode.flag
-//        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
-        return result
-    } // public func countryCodeEmoji(date:  Date) -> String
-} // extension ASAClock
+//extension ASAClock {
+//    public func countryCodeEmoji(date:  Date) -> String {
+//        let regionCode: String = self.locationData.regionCode ?? ""
+//        let result: String = regionCode.flag
+////        debugPrint(#file, #function, "Region code:", regionCode, "Flag:", result)
+//        return result
+//    } // public func countryCodeEmoji(date:  Date) -> String
+//} // extension ASAClock
 
 class ASAStartAndEndDateStrings {
     var startDateString: String?
@@ -564,7 +564,7 @@ class ASAStartAndEndDateStrings {
 
 extension ASAClock {
     func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool, eventIsAllDay: Bool, location: ASALocation) -> String {
-        return (isPrimaryClock && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date)
+        return (isPrimaryClock && eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date, location: location)
      } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
     
     private func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
@@ -597,25 +597,25 @@ extension ASAClock {
         } else {
             switch event.type {
             case .multiYear:
-                startDateString = self.yearOnlyDateString(now: event.startDate)
-                endDateString = self.yearOnlyDateString(now: event.endDate - 1)
+                startDateString = self.yearOnlyDateString(now: event.startDate, location: location)
+                endDateString = self.yearOnlyDateString(now: event.endDate - 1, location: location)
             case .oneYear:
                 startDateString = nil
-                endDateString = self.yearOnlyDateString(now: event.startDate)
+                endDateString = self.yearOnlyDateString(now: event.startDate, location: location)
             case .multiMonth:
-                startDateString = self.yearAndMonthOnlyDateString(now: event.startDate)
-                endDateString = event.endDate == nil ? "???" : self.yearAndMonthOnlyDateString(now: event.endDate - 1)
+                startDateString = self.yearAndMonthOnlyDateString(now: event.startDate, location: location)
+                endDateString = event.endDate == nil ? "???" : self.yearAndMonthOnlyDateString(now: event.endDate - 1, location: location)
             case .oneMonth:
                 startDateString = nil
-                endDateString = self.yearAndMonthOnlyDateString(now: event.startDate)
+                endDateString = self.yearAndMonthOnlyDateString(now: event.startDate, location: location)
             case .multiDay:
-                startDateString = self.shortenedDateString(now: event.startDate)
-                endDateString = event.endDate == nil ? "???" : self.shortenedDateString(now: event.endDate - 1)
+                startDateString = self.shortenedDateString(now: event.startDate, location: location)
+                endDateString = event.endDate == nil ? "???" : self.shortenedDateString(now: event.endDate - 1, location: location)
             case .oneDay
 //                , .firstFullMoonDay, .secondFullMoonDay, .Easter
                 :
                 startDateString = nil
-                endDateString = self.shortenedDateString(now: event.startDate)
+                endDateString = self.shortenedDateString(now: event.startDate, location: location)
             default:
                 (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, isPrimaryClock: isPrimaryClock, eventIsTodayOnly: eventIsTodayOnly, location: location)
             } // switch event.type

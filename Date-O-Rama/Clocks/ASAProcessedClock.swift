@@ -70,7 +70,7 @@ struct ASAProcessedClock {
         self.location = location
         self.usesDeviceLocation = usesDeviceLocation
         self.calendarString = clock.calendar.calendarCode.localizedName
-        let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now)
+        let (dateString, timeString, dateComponents) = clock.dateStringTimeStringDateComponents(now: now, location: location)
         self.canSplitTimeFromDate = clock.calendar.canSplitTimeFromDate
         self.dateString = dateString
         self.timeString = timeString
