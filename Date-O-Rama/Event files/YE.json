@@ -1,10 +1,16 @@
 {
     "titles": {"*": "YE"},
     "//": "Yemen",
+    "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {"type": "1D", "start": {"mon": 5, "d": 22}, "inherits": "Unity Day", titles: {"en": "Yemen Unity Day", "ar": "اليوم الوطني للجمهورية اليمنية"}, urls: {"en": "https://en.wikipedia.org/wiki/Unity_Day_(Yemen)"}, "1st": {era: 1, y: 1990}},
+        {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 9, "d": 26}, titles: {"en": "Yemen Revolution Day"}, "ar": "ثورة 26 سبتمبر المجيدة"},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 30}},
+
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}}
     ]
 }
