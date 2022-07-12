@@ -27,11 +27,11 @@ extension Date {
         return previousMidnight(timeZoneOffset: timeZoneOffset)
     } // func previousMidnight(timeZone:  TimeZone) -> Date
 
-    func nextMidnight(timeZone:  TimeZone) -> Date {
-        let previousMidnight = self.previousMidnight(timeZone: timeZone)
-        let nextMidnight =  previousMidnight.addingTimeInterval(Date.SECONDS_PER_DAY)
-        return nextMidnight
-    } // func nextMidnight(timeZone:  TimeZone) -> Date
+//    func nextMidnight(timeZone:  TimeZone) -> Date {
+//        let previousMidnight = self.previousMidnight(timeZone: timeZone)
+//        let nextMidnight =  previousMidnight.addingTimeInterval(Date.SECONDS_PER_DAY)
+//        return nextMidnight
+//    } // func nextMidnight(timeZone:  TimeZone) -> Date
 } // extension Date
 
 extension Date {
@@ -66,57 +66,23 @@ extension Date {
         return adjustedDate
     } // static func date(localModifiedJulianDay: Double, timeZone: TimeZone) -> Date
 
-    func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int,
-//                                                                      hour:  Int, minute:  Int, second:  Int, nanosecond:  Int,
-                                                                      fractionOfDay: Double) {
+    func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, fractionOfDay: Double) {
         let full = self.JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
-//        let fullHours = fractionOfDay * 24.0
-//        let integralHoursAsDouble = floor(fullHours)
-//        let fullMinutes = (fullHours - integralHoursAsDouble) * 60.0
-//        let integralMinutesAsDouble = floor(fullMinutes)
-//        let fullSeconds = (fullMinutes - integralMinutesAsDouble) * 60.0
-//        let integralSecondsAsDouble = floor(fullSeconds)
-//        let fullNanoseconds = (fullSeconds - integralSecondsAsDouble) * 1000000000.0
-//        let integralNanosecondsAsDouble = floor(fullNanoseconds)
-//
-//        let day = Int(dayAsDouble)
-//        let hour = Int(integralHoursAsDouble)
-//        let minute = Int(integralMinutesAsDouble)
-//        let second = Int(integralSecondsAsDouble)
-//        let nanosecond = Int(integralNanosecondsAsDouble)
+        
+        return (day: day, fractionOfDay: fractionOfDay)
+    } // func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, fractionOfDay: Double)
 
-        return (day:  day,
-//                hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond,
-                fractionOfDay: fractionOfDay)
-    } // func JulianDateComponents(offsetFromJulianDay:  TimeInterval) -> (day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int, fractionOfDay: Double)
-
-    func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int,
-//                                                                          hour:  Int, minute:  Int, second:  Int, nanosecond:  Int,
-                                                                          fractionOfDay: Double) {
+    func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int, fractionOfDay: Double) {
         let full = self.JulianDateWithTime(offsetFromJulianDay: offsetFromJulianDay)
         let dayAsDouble: TimeInterval = floor(full)
         let fractionOfDay = full - dayAsDouble
-//        let fullHours = fractionOfDay * 24.0
-//        let integralHoursAsDouble = floor(fullHours)
-//        let fullMinutes = (fullHours - integralHoursAsDouble) * 60.0
-//        let integralMinutesAsDouble = floor(fullMinutes)
-//        let fullSeconds = (fullMinutes - integralMinutesAsDouble) * 60.0
-//        let integralSecondsAsDouble = floor(fullSeconds)
-//        let fullNanoseconds = (fullSeconds - integralSecondsAsDouble) * 1000000000.0
-//        let integralNanosecondsAsDouble = floor(fullNanoseconds)
 
         let day = Int(dayAsDouble)
-//        let hour = Int(integralHoursAsDouble)
-//        let minute = Int(integralMinutesAsDouble)
-//        let second = Int(integralSecondsAsDouble)
-//        let nanosecond = Int(integralNanosecondsAsDouble)
 
-        return (JulianDate: full, day:  day,
-//                hour:  hour, minute:  minute, second:  second, nanosecond:  nanosecond,
-                fractionOfDay: fractionOfDay)
-    } // func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval, supportsTime: Bool) -> (JulianDate: Double, day:  Int, hour:  Int, minute:  Int, second:  Int, nanosecond:  Int)
+        return (JulianDate: full, day:  day, fractionOfDay: fractionOfDay)
+    } // func JulianDateWithComponents(offsetFromJulianDay:  TimeInterval) -> (JulianDate: Double, day:  Int, fractionOfDay: Double)
 
     static func date(JulianDate:  Double, offsetFromJulianDay:  TimeInterval) -> Date {
         let seconds = ((JulianDate + offsetFromJulianDay) - 2440587.5) * 86400.0
@@ -129,12 +95,12 @@ extension Date {
         return result
     } // var previousGMTNoon
 
-    var nextGMTNoon: Date {
-        let thisJulianDay = floor(self.JulianDate)
-        let nextJulianDay = thisJulianDay + 1
-        let result = Date.date(JulianDate: nextJulianDay)
-        return result
-    } // var nextGMTNoon
+//    var nextGMTNoon: Date {
+//        let thisJulianDay = floor(self.JulianDate)
+//        let nextJulianDay = thisJulianDay + 1
+//        let result = Date.date(JulianDate: nextJulianDay)
+//        return result
+//    } // var nextGMTNoon
 } // extension Date
 
 extension Date {
