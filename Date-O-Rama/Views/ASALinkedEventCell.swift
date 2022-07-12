@@ -16,7 +16,6 @@ import SwiftUI
 struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
     var primaryClock:  ASAClock
-    var secondaryClock:  ASAClock
     var eventsViewShouldShowSecondaryDates: Bool
     #if os(watchOS)
     #else
@@ -54,7 +53,7 @@ struct ASALinkedEventCell:  View {
         #if os(watchOS)
         NavigationLink(destination: ASAEventDetailDispatchView(event: event, clock: primaryClock, now: $now, shouldShowSecondaryDates: false, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, usesDeviceLocation: usesDeviceLocation), label: {
             HStack {
-                ASAEventCell(event: event, primaryClock: self.primaryClock, secondaryClock: self.secondaryClock, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: false, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+                ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: false, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
                 Spacer()
                 ASACompactForwardChevronSymbol()
             } // HStack
@@ -69,7 +68,7 @@ struct ASALinkedEventCell:  View {
                 #endif
             }
             
-            ASAEventCell(event: event, primaryClock: self.primaryClock, secondaryClock: self.secondaryClock, eventsViewShouldShowSecondaryDates: self.eventsViewShouldShowSecondaryDates, isForClock: isForClock, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
+            ASAEventCell(event: event, primaryClock: self.primaryClock, isForClock: isForClock, now: $now, location: location, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString)
             
             Spacer()
             
