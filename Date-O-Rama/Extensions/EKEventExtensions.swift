@@ -98,4 +98,12 @@ extension EKEvent:  ASAEventCompatible {
             return .point
         }
     }
+    
+    var startDateString: String? {
+        return nil
+    }
+    
+    var endDateString: String? {
+        return nil
+    }
 } // extension EKEvent:  ASAEventCompatible

@@ -17,6 +17,8 @@ struct ASAEvent:  ASAEventCompatible {
     var location: String?
     var startDate: Date!
     var endDate: Date!
+    var startDateString: String?
+    var endDateString: String?
     var isAllDay: Bool
     var timeZone: TimeZone?
     var url: URL?

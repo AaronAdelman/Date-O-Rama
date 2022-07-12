@@ -50,6 +50,24 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return self.events[0].endDate
     }
     
+    var startDateString: String? {
+        let index = self.events.firstIndex(where: {$0.startDateString != nil})
+        if index != nil {
+            return self.events[index!].startDateString
+        } else {
+            return nil
+        }
+    }
+    
+    var endDateString: String? {
+        let index = self.events.firstIndex(where: {$0.endDateString != nil})
+        if index != nil {
+            return self.events[index!].endDateString
+        } else {
+            return nil
+        }
+    }
+    
     var organizer: EKParticipant? = nil
     
     var hasAttendees: Bool = false

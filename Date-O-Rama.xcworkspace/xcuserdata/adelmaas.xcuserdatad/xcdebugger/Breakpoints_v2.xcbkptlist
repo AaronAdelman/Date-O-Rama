@@ -66,5 +66,21 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0860D57C-44AA-4868-A08C-6ACF09A3D536"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Date-O-Rama/Events/ASAEventCalendar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1054"
+            endingLineNumber = "1054"
+            landmarkName = "processEventSpecification(calendar:eventSpecification:otherCalendars:components:date:locationData:startOfDay:startOfNextDay:previousSunset:nightHourLength:sunrise:hourLength:previousOtherDusk:otherNightHourLength:otherDawn:otherHourLength:regionCode:location:timeZone:requestedLocaleIdentifier:eventCalendarName:calendarTitleWithoutLocation:clock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

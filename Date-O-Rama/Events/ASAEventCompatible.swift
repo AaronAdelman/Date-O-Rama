@@ -21,6 +21,9 @@ protocol ASAEventCompatible {
     var startDate:  Date! { get }
     var endDate: Date! { get }
     var isAllDay: Bool { get }
+
+    var startDateString: String? { get }
+    var endDateString: String? { get }
     
     var organizer: EKParticipant? { get } // The organizer associated with the event.
     var hasAttendees: Bool { get } // A Boolean value that indicates whether the calendar item has attendees.
