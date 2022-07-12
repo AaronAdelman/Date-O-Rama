@@ -123,30 +123,38 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsLocales: Bool = true
         
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
-        switch self.calendarCode {
-        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-            return date.previousGMTNoon
-            
-        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-            return date.previousMidnight(timeZone: TimeZone.GMT)
-            
-        default:
-            return date.previousGMTNoon
-        } // switch self.calendarCode
+//        switch self.calendarCode {
+//        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
+//            return date.previousGMTNoon
+//
+//        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+//            return date.previousMidnight(timeZone: TimeZone.GMT)
+//
+//        default:
+//            return date.previousGMTNoon
+//        } // switch self.calendarCode
+        
+        let JulianDate = date.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
+        let startAsJulianDate = floor(JulianDate)
+        return Date.date(JulianDate: startAsJulianDate, offsetFromJulianDay: self.offsetFromJulianDay)
     } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
     
     
     func startOfNextDay(date: Date, locationData:  ASALocation) -> Date {
-        switch self.calendarCode {
-        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-            return date.nextGMTNoon
-            
-        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-            return date.nextMidnight(timeZone: TimeZone.GMT)
-            
-        default:
-            return date.nextGMTNoon
-        } // switch self.calendarCode
+//        switch self.calendarCode {
+//        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
+//            return date.nextGMTNoon
+//
+//        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+//            return date.nextMidnight(timeZone: TimeZone.GMT)
+//
+//        default:
+//            return date.nextGMTNoon
+//        } // switch self.calendarCode
+        
+        let JulianDate = date.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
+        let startAsJulianDate = floor(JulianDate)
+        return Date.date(JulianDate: startAsJulianDate + 1.0, offsetFromJulianDay: self.offsetFromJulianDay)
     } // func nextTransitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
     
     var supportsTimeZones: Bool = false

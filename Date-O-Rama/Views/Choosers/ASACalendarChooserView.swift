@@ -146,6 +146,7 @@ struct ASACalendarChooserView: View {
                     }
             }
         }
+        .font(.body)
         .navigationBarItems(trailing:
                                 Button("Cancel", action: {
                                     self.didCancel = true
