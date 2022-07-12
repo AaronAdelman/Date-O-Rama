@@ -54,27 +54,27 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
 #endif
     }
     
-    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
+    @Published var threeLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
+    @Published var twoLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
+    @Published var twoLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
+    @Published var oneLineLargeClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
     }
-    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: false) {
+    @Published var oneLineSmallClocks: ASALocationWithClocks = ASALocationWithClocks(location: .NullIsland, clocks: [], usesDeviceLocation: true) {
         didSet {
             self.reloadComplicationTimelines()
         } // didSet
@@ -363,14 +363,14 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         }
         
         if code == .complications {
-            let processedThreeLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.threeLineLargeClocks], forComplication: true)
+            let processedThreeLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.threeLineLargeClocks], forComplication: true)
             let processedTwoLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineLargeClocks], forComplication: true)
             let processedTwoLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineSmallClocks], forComplication: true)
             let processedOneLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineLargeClocks], forComplication: true)
             let processedOneLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineSmallClocks], forComplication: true)
             
             let temp2: Dictionary<String, Any> = [
-                ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLargeClocks,
+                ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLineLargeClocks,
                 ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeClocks,
                 ASAClockArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallClocks,
                 ASAClockArrayKey.oneLineLarge.rawValue:  processedOneLineLargeClocks,
@@ -399,8 +399,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
             for clock in locationWithClocks.clocks {
                 let dictionary = clock.dictionary(forComplication: forComplication, location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation)
                 temp.append(dictionary)
-            }
-        }
+            } // for clock in locationWithClocks.clocks
+        } // for locationWithClocks in locationsWithClocksArray
         return temp
     } // private func processedClocksArray(clocksArray:  Array<ASALocationWithClocks>, forComplication:  Bool) ->  Array<Dictionary<String, Any>>
     
@@ -460,7 +460,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         
         //        debugPrint(#file, #function, tempArray)
         return tempArray
-    }
+    } // public static func arrayOfDictionariesToArrayOfLocationsWithClocks(array: [[String : Any]]?, key: ASAClockArrayKey) -> [ASALocationWithClocks]
     
     private class func locationsWithClocksArray(key:  ASAClockArrayKey, dictionary:  Dictionary<String, Any>?) -> Array<ASALocationWithClocks> {
         //        debugPrint(#file, #function, key)

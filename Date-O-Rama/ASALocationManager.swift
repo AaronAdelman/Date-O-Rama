@@ -111,14 +111,14 @@ extension ASALocationManager: CLLocationManagerDelegate {
             self.locationManager.requestAlwaysAuthorization()
             return
         }
-//        print(#file, #function, location)
+        //        print(#file, #function, location)
         self.lastError = nil
         
-//        let Δ = self.lastDeviceLocation?.distance(from: location)
-//
-//        if Δ == nil || Δ! >= 10.0 {
+        let Δ = self.lastDeviceLocation?.distance(from: location)
+        
+        if Δ == nil || Δ! >= 10.0 {
             self.reverseGeocode(location)
-//        }
+        }
     } // func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     
     fileprivate func reverseGeocode(_ location: CLLocation) {

@@ -96,13 +96,13 @@ struct ASAClockDetailEditingSection:  View {
                 }
                 
                 if selectedClock.calendar.supportsTimeZones || selectedClock.calendar.supportsLocations {
-//                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
-                        VStack {
-                            ASALocationCell(usesDeviceLocation: usesDeviceLocation, locationData: location)
-                            Spacer()
-                            ASATimeZoneCell(timeZone: location.timeZone, now: now)
-                        } // VStack
-//                    }
+                    //                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
+                    VStack {
+                        ASALocationCell(usesDeviceLocation: usesDeviceLocation, locationData: location)
+                        Spacer()
+                        ASATimeZoneCell(timeZone: location.timeZone, now: now)
+                    } // VStack
+                    //                    }
                 }
                 
                 if selectedClock.supportsLocales {
@@ -229,7 +229,7 @@ struct ASABuiltInEventCalendarCell:  View {
     var body: some View {
         HStack(alignment: .top) {
             ASACheckmarkCircleSymbol(on: selectedClock.builtInEventCalendars.map({$0.fileName}).contains(record.fileName))
-                            .foregroundColor(record.color)
+                .foregroundColor(record.color)
             VStack(alignment: .leading) {
                 HStack {
                     let emoji: String? = record.emoji

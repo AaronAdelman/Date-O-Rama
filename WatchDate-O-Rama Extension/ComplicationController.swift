@@ -278,11 +278,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         return template
     } // func modularLargeTemplate(now:  Date) -> CLKComplicationTemplateModularLargeStandardBody
     
-    func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularFullView<ASAThreeLinesLargeView> {
+    func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularFullView<ASAThreeLineLargeView> {
         let (headerString, body1String, body2String) = self.threeLineLargeRowStrings(now: now)
-        let template = CLKComplicationTemplateGraphicRectangularFullView(ASAThreeLinesLargeView(line0: headerString, line1: body1String, line2: body2String))
+        let template = CLKComplicationTemplateGraphicRectangularFullView(ASAThreeLineLargeView(line0: headerString, line1: body1String, line2: body2String))
         return template
-    } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularFullView<ASAThreeLinesLargeView>
+    } // func graphicRectangularTemplate(now:  Date) -> CLKComplicationTemplateGraphicRectangularFullView<ASAThreeLineLargeView>
     
     func circularSmallTemplate(now:  Date) -> CLKComplicationTemplateCircularSmallStackText {
         let (headerString, body1String) = self.twoLineSmallRowStrings(now: now)
@@ -390,7 +390,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
 // MARK:  -
 
-struct ASAThreeLinesLargeView:  View {
+struct ASAThreeLineLargeView:  View {
     var line0:  String
     var line1:  String
     var line2:  String
@@ -402,4 +402,4 @@ struct ASAThreeLinesLargeView:  View {
             ASAClockCellText(string: line2, font: .headline, lineLimit: 1)
         } // VStack
     } // var body
-} // struct ASAThreeLinesLargeView
+} // struct ASAThreeLineLargeView
