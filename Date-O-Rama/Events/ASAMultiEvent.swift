@@ -68,6 +68,24 @@ struct ASAMultiEvent:  ASAEventCompatible {
         }
     }
     
+    var secondaryStartDateString: String? {
+        let index = self.events.firstIndex(where: {$0.secondaryStartDateString != nil})
+        if index != nil {
+            return self.events[index!].secondaryStartDateString
+        } else {
+            return nil
+        }
+    }
+    
+    var secondaryEndDateString: String? {
+        let index = self.events.firstIndex(where: {$0.secondaryEndDateString != nil})
+        if index != nil {
+            return self.events[index!].secondaryEndDateString
+        } else {
+            return nil
+        }
+    }
+    
     var organizer: EKParticipant? = nil
     
     var hasAttendees: Bool = false

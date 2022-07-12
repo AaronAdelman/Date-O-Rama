@@ -106,4 +106,12 @@ extension EKEvent:  ASAEventCompatible {
     var endDateString: String? {
         return nil
     }
+    
+    var secondaryStartDateString: String? {
+        return nil
+    }
+    
+    var secondaryEndDateString: String? {
+        return nil
+    }
 } // extension EKEvent:  ASAEventCompatible

@@ -1051,8 +1051,15 @@ class ASAEventCalendar {
         
         let eventIsTodayOnly = newEvent.isOnlyForRange(rangeStart: startOfDay, rangeEnd: startOfNextDay)
         let (startDateString, endDateString) = clock.startAndEndDateStrings(event: newEvent, eventIsTodayOnly: eventIsTodayOnly, location: locationData)
+
         newEvent.startDateString = startDateString
         newEvent.endDateString = endDateString
+        
+        if clock.calendar.calendarCode != .Gregorian {
+            let (secondaryStartDateString, secondaryEndDateString) =  ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: newEvent, eventIsTodayOnly: eventIsTodayOnly, location: locationData)
+            newEvent.secondaryStartDateString = secondaryStartDateString
+            newEvent.secondaryEndDateString = secondaryEndDateString
+        }
 
         return newEvent
     }
@@ -1174,6 +1181,8 @@ class ASAEventCalendar {
         //        return "???"
         return self.eventsFile!.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)
     } // func eventCalendarNameWithoutPlaceName(localeIdentifier:  String) -> String
+    
+    static let secondaryClock = ASAClock.generic
 } // class ASAEventCalendar
 
 

@@ -16,7 +16,6 @@ import SwiftUI
 struct ASALinkedEventCell:  View {
     var event:  ASAEventCompatible
     var primaryClock:  ASAClock
-    var eventsViewShouldShowSecondaryDates: Bool
     #if os(watchOS)
     #else
     @State private var action:  EKEventEditViewAction?

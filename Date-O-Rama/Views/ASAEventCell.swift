@@ -8,12 +8,9 @@
 
 import SwiftUI
 
-fileprivate let secondaryClock = ASAClock.generic
-
 struct ASAEventCell:  View {
     var event:  ASAEventCompatible
     var primaryClock:  ASAClock
-//    var eventsViewShouldShowSecondaryDates: Bool
     var isForClock:  Bool
     @Binding var now:  Date
     var location: ASALocation
@@ -98,8 +95,8 @@ struct ASAEventCell:  View {
                     ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
                     
                     if eventsViewShouldShowSecondaryDates {
-                        let (startDateString, endDateString) = secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
-                        ASATimesSubcell(event: event, clock: secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
+                        let (startDateString, endDateString) = (event.secondaryStartDateString == nil && event.secondaryEndDateString == nil) ? ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.secondaryStartDateString, event.secondaryEndDateString)
+                        ASATimesSubcell(event: event, clock: ASAEventCalendar.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString ?? startDateString!, isSecondary: true)
                     }
                 }
             } // VStack
@@ -109,9 +106,9 @@ struct ASAEventCell:  View {
             ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
             
             if eventsViewShouldShowSecondaryDates {
-                let (startDateString, endDateString) = secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
+                let (startDateString, endDateString) = ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
                 
-                ASATimesSubcell(event: event, clock: secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
+                ASATimesSubcell(event: event, clock: ASAEventCalendar.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
             }
             
             ASAColorRectangle(colors: event.colors)
