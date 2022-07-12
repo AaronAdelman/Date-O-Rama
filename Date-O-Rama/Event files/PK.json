@@ -16,8 +16,8 @@
         {"type": "1D", "start": {"d": 5, "mon": 2}, "titles": {"en": "Kashmir Solidarity Day", "ur": "یوم یکجحتی کشمیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Kashmir_Solidarity_Day"}, "1st": {era: 1, y: 2004}},
         {"type": "1D", "start": {"mon": 5, "d": 28}, "titles": {"en": "Day of Greatness", "ur": "یوم تکبیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Youm-e-Takbir"}, "1st": {era: 1, y: 1998}},
         {"type": "1D", "start": {"mon": 9, "d": 6}, "titles": {"en": "Defense Day", "ur": "یومِ دفاع"}, urls: {"en": "https://en.wikipedia.org/wiki/Defence_Day"}, "1st": {era: 1, y: 1965}},
-        {"type": "1D", "start": {"mon": 9, "d": 7}, "titles": {"en": "Air Force Day", "ur": "یوم فضائیه"}, urls: {"en": "https://en.wikipedia.org/wiki/Air_Force_Day_(Pakistan)"}, "1st": {era: 1, y: 1965}},
-        {"type": "1D", "start": {"mon": 9, "d": 8}, "titles": {"en": "Navy Day"}, "1st": {era: 1, y: 1965}},
+        {"type": "1D", "start": {"mon": 9, "d": 7}, inherits: "Air Force Day", urls: {"en": "https://en.wikipedia.org/wiki/Air_Force_Day_(Pakistan)"}, "1st": {era: 1, y: 1965}},
+        {"type": "1D", "start": {"mon": 9, "d": 8}, inherits: "Navy Day", "1st": {era: 1, y: 1965}},
         {"type": "1D", "start": {"d": 10, "mon": 24}, "titles": {"en": "Azad Kashmir Day", "ur": "یومِ تاسیس آزاد کشمیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Azad_Kashmir_Day"}, "1st": {era: 1, y: 1947}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Gilgit-Baltistan Day", "ur": "یومِ تاسیس گِلگِت بَلتِسْتان"}},
 
