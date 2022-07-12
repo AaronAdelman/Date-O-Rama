@@ -1055,7 +1055,7 @@ class ASAEventCalendar {
         newEvent.startDateString = startDateString
         newEvent.endDateString = endDateString
         
-        if clock.calendar.calendarCode != .Gregorian {
+        if clock.eventsShouldShowSecondaryDates {
             let (secondaryStartDateString, secondaryEndDateString) =  ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: newEvent, eventIsTodayOnly: eventIsTodayOnly, location: locationData)
             newEvent.secondaryStartDateString = secondaryStartDateString
             newEvent.secondaryEndDateString = secondaryEndDateString

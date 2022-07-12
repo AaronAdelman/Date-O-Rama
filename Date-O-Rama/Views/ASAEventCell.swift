@@ -74,7 +74,7 @@ struct ASAEventCell:  View {
     
     var body: some View {
         let eventSymbol = event.symbol
-        let eventsViewShouldShowSecondaryDates = primaryClock.calendar.calendarCode != .Gregorian
+        let eventsViewShouldShowSecondaryDates = primaryClock.eventsShouldShowSecondaryDates
         
 #if os(watchOS)
         HStack {

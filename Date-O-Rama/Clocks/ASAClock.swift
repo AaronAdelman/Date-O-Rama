@@ -656,6 +656,10 @@ extension ASAClock {
     func supportsExternalEvents(location: ASALocation, usesDeviceLocation: Bool) -> Bool {
         return self.calendar.usesISOTime && self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation)
     }
+    
+    var eventsShouldShowSecondaryDates: Bool {
+        return self.calendar.calendarCode != .Gregorian
+    }
 } // extension ASAClock
 
 
@@ -672,24 +676,6 @@ extension Array where Element == ASAClock {
 
         return result
     } // func processed(now:  Date) -> Array<ASAProcessedClock>
-
-//    var byLocation: Array<ASALocationWithClocks> {
-//        var result:  Array<ASALocationWithClocks> = []
-//
-//        for clock in self {
-//            let key = clock.locationData
-//            let index = result.firstIndex(where: {$0.location == key})
-//            if index == nil {
-//                result.append(ASALocationWithClocks(location: key, clocks: [clock], usesDeviceLocation: clock.usesDeviceLocation))
-//            } else {
-//                let itemAtIndex = result[index!]
-//                itemAtIndex.clocks.append(clock)
-//                result[index!] = itemAtIndex
-//            }
-//        } // for for clock in self
-//
-//        return result
-//    } // func clocksByPlaceName(now:  Date) -> Array<ASALocationWithClocks>
 
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
