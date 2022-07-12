@@ -232,7 +232,7 @@
         {"inherits": "3rd Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}},
         {"inherits": "4th Advent Sunday", "type": "1D", "start": {"mon": 12, "d": 18, "thruD": 24, "wkd": [1]}},
         
-        {"titles": {"en": "Feast of St. Francis Xavier"}, "type": "1D", "start": {"mon": 12, "d": 3}},
+        {inherits: "Feast of St. Francis Xavier", "type": "1D", "start": {"mon": 12, "d": 3}},
         {"titles": {"en": "Feast of St. John Damascene"}, "type": "1D", "start": {"mon": 12, "d": 4}},
         {"inherits": "St. Nicholas Day", "type": "1D", "start": {"mon": 12, "d": 6}},
         {"titles": {"en": "Feast of St. Ambrose"}, "type": "1D", "start": {"mon": 12, "d": 7}},
@@ -254,14 +254,15 @@
         {"inherits": "Feast of St. Thomas Becket", "type": "1D", "start": {"mon": 12, "d": 29}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"inherits": "Feast of St. Egwin of Worcester", "type": "1D", "start": {"mon": 12, "d": 30}, "urls": {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
-        {"titles": {"en": "Feast of the Holy Family"}, "type": "1D", "start": {"mon": 12, "d": 30, "wkd": [6]}},
-        {"titles": {"en": "Feast of the Holy Family"}, "type": "1D", "start": {"mon": 12, "d": 26, "thruD": 31, "wkd": [1]}},
+        {inherits: "Feast of the Holy Family", "type": "1D", "start": {"mon": 12, "d": 30, "wkd": [6]}},
+        {inherits: "Feast of the Holy Family", "type": "1D", "start": {"mon": 12, "d": 26, "thruD": 31, "wkd": [1]}},
         
         {"inherits": "St. Florian’s Day", "type": "1D", "start": {"mon": 5, "d": 4}},
         {"inherits": "St. Leopold’s Day", "type": "1D", "start": {"mon": 11, "d": 15}},
         {"inherits": "St. Maroun Day", "type": "1D", "start": {"mon": 2, "d": 9}},
         {"titles": {"en": "Feast of St. Rosalia"}, "type": "1D", "start": {"mon": 7, "d": 14}, "urls": {"en": "https://nationaltoday.com/feast-of-st-rosalia/"}},
         {"inherits": "Feast of St. Vladimir", "type": "1D", "start": {"mon": 7, "d": 15}},
+        {"type": "1D", "start": {"mon": 9, "d": 5}, inherits: "Feast of St. Teresa of Calcutta", "1st": {"era": 1, "y": 2016}},
 
         {"titles": {"en": "Septuagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -63}},
         {"titles": {"en": "Sexagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -56}},

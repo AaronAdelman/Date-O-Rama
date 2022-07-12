@@ -1,7 +1,7 @@
 {
     "titles": {"*": "IN"},
     "//": "India",
-    "TODO": "Hindu, Muslim, Sikh, Buddist, Jain, Zoroastrian, Ravidassia, and Ayyavaszhi holidays?",
+    "TODO": "Hindu, Muslim, Sikh, Buddhist, Jain, Zoroastrian, Ravidassia, and Ayyavazhi holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.95, "green": 0.62, "blue": 0.29},
@@ -39,7 +39,22 @@
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Chhattisgarh Foundation Day"}},
         {"type": "1D", "start": {"d": 7, "mon": 12}, "titles": {"en": "Armed Forces Flag Day"}, "1st": {"era": 1, "y": 1949}, "notes": {"en": "Flag Day of India"}, "urls": {"en": "https://en.wikipedia.org/wiki/Armed_Forces_Flag_Day"}},
         {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa Liberation Day", "pt": "Dia da libertação de Goa", "kok": "गोंय मुक्ति दिस", "hi": "गोवा मुक्ति दिवस"}, notes: {"en": "Goa, Daman and Diu Liberation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Goa_Liberation_Day"}, "1st": {"era": 1, "y": 1961}},
-
+        
+        {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
+        {"inherits": "Maundy Thursday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -3}},
+        {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
+        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
+        {"titles": {"en": "Feast of St. Thomas the Apostle"}, "type": "1D", "start": {"mon": 7, "d": 3}, "urls": {"en": "https://nationaltoday.com/st-thomas-history/"}, "1st": {"era": 1, "y": 1969}},
+        {"type": "1D", "start": {"mon": 9, "d": 5}, inherits: "Feast of St. Teresa of Calcutta", "1st": {"era": 1, "y": 2016}},
+        {"inherits": "Nativity of Mary", "type": "1D", "start": {"mon": 9, "d": 8}},
+        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
+        {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}},
+        {inherits: "Feast of St. Francis Xavier", "type": "1D", "start": {"mon": 12, "d": 3}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
+        {inherits: "Feast of the Holy Family", "type": "1D", "start": {"mon": 12, "d": 30, "wkd": [6]}},
+        {inherits: "Feast of the Holy Family", "type": "1D", "start": {"mon": 12, "d": 26, "thruD": 31, "wkd": [1]}},
 
         {"type": "1D", "start": {"d": 9, "mon": 1}, "titles": {"en": "Pravasi Bharatiya Diwas/NRI (Non-Resident Indian) Day"}, "1st": {"era": 1, "y": 2003}, "urls": {"en": "https://en.wikipedia.org/wiki/Pravasi_Bharatiya_Divas"}},
         {"type": "1D", "start": {"d": 10, "mon": 1}, "titles": {"en": "World Hindi Day"}},
