@@ -455,7 +455,9 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         let numberOfClocks = tempArray[0].clocks.count
         let minimumNumberOfClocks = key.minimumNumberOfClocks
         if numberOfClocks < minimumNumberOfClocks {
-            tempArray[0].clocks += Array.init(repeatElement(ASAClock.generic, count: minimumNumberOfClocks - numberOfClocks))
+            while tempArray[0].clocks.count < minimumNumberOfClocks {
+                tempArray[0].clocks.append(ASAClock.generic)
+            }
         }
         
         //        debugPrint(#file, #function, tempArray)
