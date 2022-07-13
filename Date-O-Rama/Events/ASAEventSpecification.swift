@@ -40,7 +40,7 @@ struct ASAEventSpecification: Codable {
     enum CodingKeys: String, CodingKey {
         case startDateSpecification = "start"
         case endDateSpecification   = "end"
-        case firstDateSpecification = "1st"
+        case firstDateSpecification = "first"
         case template, inherits, titles, locations, calendarCode, regionCodes, excludeRegionCodes, urls, notes, emoji, type
     } // enum CodingKeys
 } // extension ASAEventSpecification

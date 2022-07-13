@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"type": "1D", "start": {"mon": 6, "d": 28}, "inherits": "Family Day", "1st": {"era": 1, "y": 2001}, "urls": {"en": "https://nationaltoday.com/vietnamese-family-day/?fbclid=IwAR023TEkC288f_daLBmGA6cw0dgpQmVY0n2W2Lp_denpIgZd84XSUhwMZPs"}},
+        {"type": "1D", "start": {"mon": 6, "d": 28}, "inherits": "Family Day", first: {"era": 1, "y": 2001}, "urls": {"en": "https://nationaltoday.com/vietnamese-family-day/?fbclid=IwAR023TEkC288f_daLBmGA6cw0dgpQmVY0n2W2Lp_denpIgZd84XSUhwMZPs"}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 15}, "titles": {"en": "Vietnamese Women’s Day"}},
     ]
 }

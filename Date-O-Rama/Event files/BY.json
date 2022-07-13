@@ -5,9 +5,9 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-    {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 3}, "urls": {"en": "https://nationaltoday.com/belarus-independence-day/"}, "1st": {"era": 1, "y": 1990}},
+    {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 3}, "urls": {"en": "https://nationaltoday.com/belarus-independence-day/"}, first: {"era": 1, "y": 1990}},
        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 14}, "1st": {"era": 1, "y": 1996}},
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 14}, first: {"era": 1, "y": 1996}},
         {"inherits": "Kupala Night", "type": "1D", "start": {"mon": 7, "d": 6}},
     ]
 }

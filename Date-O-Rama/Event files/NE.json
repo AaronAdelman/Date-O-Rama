@@ -6,7 +6,7 @@
     "calendarColor": {"red": 1.00, "green": 0.70, "blue": 0.36},
     "eventSpecifications": [
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 3, "mon": 8}},
-        {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
+        {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
     ]
 }

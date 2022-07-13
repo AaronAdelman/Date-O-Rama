@@ -5,6 +5,6 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 18}, "urls": {"en": "https://nationaltoday.com/seychelles-constitution-day/"}, "1st": {"era": 1, "y": 1993}},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 18}, "urls": {"en": "https://nationaltoday.com/seychelles-constitution-day/"}, first: {"era": 1, "y": 1993}},
     ]
 }

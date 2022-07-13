@@ -14,8 +14,8 @@
         {"type": "1D", "start": {"mon": 11, "d": 22}, "titles": {"en": "Anniversary of Islamic Revolution", "fa": "انقلاب اسلامی پنجاه و هفت"}, "urls": {"en": "https://en.wikipedia.org/wiki/Anniversary_of_the_Iranian_Revolution"}},
         {"type": "1D", "start": {"mon": 12, "d": 29}, "titles": {"en": "Nationalization of the Iranian oil industry", "fa": "ملی شدن صنعت نفت"}, "urls": {"en": "https://en.wikipedia.org/wiki/Nationalization_of_the_Iranian_oil_industry"}},
 
-        {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Student Day", "fa": "روز دانشجو"}, "urls": {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, "1st": {"era": 0, "y": 1332}, "emoji": "👨‍🎓👩‍🎓"},
-        {"type": "1D", "start": {"mon": 8, "d": 13}, "titles": {"en": "Pupil Day", "fa": "روز دانش آموز"}, "urls": {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, "1st": {"era": 0, "y": 1357}, "emoji": "👨‍🎓👩‍🎓"},
+        {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Student Day", "fa": "روز دانشجو"}, "urls": {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {"era": 0, "y": 1332}, "emoji": "👨‍🎓👩‍🎓"},
+        {"type": "1D", "start": {"mon": 8, "d": 13}, "titles": {"en": "Pupil Day", "fa": "روز دانش آموز"}, "urls": {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {"era": 0, "y": 1357}, "emoji": "👨‍🎓👩‍🎓"},
 
     ]
 }

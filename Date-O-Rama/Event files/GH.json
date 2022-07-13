@@ -5,10 +5,10 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
-        {"inherits": "Independence Day", "type": "1D", "start": {"d": 6, "mon": 3}, "1st": {"era": 1, "y": 1957}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"d": 6, "mon": 3}, first: {"era": 1, "y": 1957}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/ghana-republic-day/"}, "1st": {"era": 1, "y": 1960}},
+        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/ghana-republic-day/"}, first: {"era": 1, "y": 1960}},
 
    ]
 }

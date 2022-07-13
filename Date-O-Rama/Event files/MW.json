@@ -6,6 +6,6 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 15}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/malawi-independence-day/"}, "1st": {"era": 1, "y": 1964}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/malawi-independence-day/"}, first: {"era": 1, "y": 1964}},
     ]
 }

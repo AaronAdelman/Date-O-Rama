@@ -6,16 +6,16 @@
     "calendarColor": {"red": 0.96, "green": 0.83, "blue": 0.29},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 9, "mon": 4}, "titles": {"en": "Day of Valor"}, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Valor"}},
-        {"type": "1D", "start": {"d": 30, "mon": 11}, "titles": {"en": "Bonifacio Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Bonifacio_Day"}, "1st": {"era": 1, "y": 1901}},
+        {"type": "1D", "start": {"d": 30, "mon": 11}, "titles": {"en": "Bonifacio Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Bonifacio_Day"}, first: {"era": 1, "y": 1901}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 6, "d": 12}, "urls": {"en": "https://nationaltoday.com/philippines-independence-day/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
        {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
        {"type": "nD", "start": {"mon": 7, "d": 1}, "end": {"mon": 7, "d": 7}, "titles": {"en": "National Culture Consciousness Week"}, "urls": {"en": "https://nationaltoday.com/national-culture-consciousness-week/"}},
        {"type": "1M", "start": {"mon": 7}, "titles": {"en": "Nutrition Month Philippines"}, "urls": {"en": "https://nationaltoday.com/nutrition-month-philippines/"}},
-       {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Filipino-American Friendship Day"}, "urls": {"en": "https://nationaltoday.com/filipino-american-friendship-day/"}, "1st": {"era": 1, "y": 1984}, "emoji": "🇵🇭🇺🇸"},
-       {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/philippines-republic-day/"}, "1st": {"era": 1, "y": 1996}},
-       {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, "1st": {"era": 1, "y": 1914}},
+       {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Filipino-American Friendship Day"}, "urls": {"en": "https://nationaltoday.com/filipino-american-friendship-day/"}, first: {"era": 1, "y": 1984}, "emoji": "🇵🇭🇺🇸"},
+       {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/philippines-republic-day/"}, first: {"era": 1, "y": 1996}},
+       {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {"era": 1, "y": 1914}},
         ]
     }
 

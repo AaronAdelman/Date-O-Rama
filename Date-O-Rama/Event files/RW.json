@@ -5,7 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, "1st": {"era": 1, "y": 1994}},
+        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, first: {"era": 1, "y": 1994}},
 
     ]
 }

@@ -5,8 +5,9 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.13, "blue": 0.41},
     "eventSpecifications": [
-        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, first: {"type": "1D", "era": 1, "y": 1919}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}}
-    ]
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}},
+        {"type": "1D", "start": {"mon": 9, "d": 14}, inherits: "Engineer’s Day"},
+   ]
 }

@@ -5,14 +5,14 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.33, "blue": 0.64},
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}, "urls": {"en": "https://nationaltoday.com/bastille-day/"}, "1st": {"era": 1, "y": 1789}},
-        {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2019}},
+        {"type": "1D", "start": {"d": 14, "mon": 7}, "titles": {"en": "Bastille Day"}, "urls": {"en": "https://nationaltoday.com/bastille-day/"}, first: {"era": 1, "y": 1789}},
+        {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, first: {"era": 1, "y": 2019}},
         {"inherits": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
-        {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, "1st": {"era": 1, "y": 1988}},
-        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1919}},
+        {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
+        {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, first: {"type": "1D", "era": 1, "y": 1919}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-
+        {"type": "1D", "start": {"mon": 3, "d": 4}, inherits: "Engineer’s Day"},
     ]
 }
 

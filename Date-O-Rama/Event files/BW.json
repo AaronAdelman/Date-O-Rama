@@ -7,6 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Presidents’ Day", "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 3}, "urls": {"en": "https://nationaltoday.com/presidents-day-in-botswana/"}, "1st": {"era": 1, "y": 2006}},
+        {"inherits": "Presidents’ Day", "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 3}, "urls": {"en": "https://nationaltoday.com/presidents-day-in-botswana/"}, first: {"era": 1, "y": 2006}},
     ]
 }

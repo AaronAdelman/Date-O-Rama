@@ -33,7 +33,7 @@
         {"titles": {"en": "Feast of St. Scholastica"}, "type": "1D", "start": {"mon": 2, "d": 10}},
         
         {"titles": {"en": "Feast of Our Lady of Lourdes"}, "type": "1D", "start": {"mon": 2, "d": 11}},
-        {"titles": {"en": "World Day of the Sick"}, "type": "1D", "start": {"mon": 2, "d": 11}, "1st": {"type": "1D", "era": 1, "y": 1992}, "urls": {"en": "https://nationaldaycalendar.com/world-day-of-the-sick-february-11/"}},
+        {"titles": {"en": "World Day of the Sick"}, "type": "1D", "start": {"mon": 2, "d": 11}, first: {"type": "1D", "era": 1, "y": 1992}, "urls": {"en": "https://nationaldaycalendar.com/world-day-of-the-sick-february-11/"}},
         
         {"titles": {"en": "Feast of Saints Cyril and Methodius"}, "type": "1D", "start": {"mon": 2, "d": 14}},
         {"titles": {"en": "Feast of the Seven Holy Founders of the Servite Order"}, "type": "1D", "start": {"mon": 2, "d": 17}},
@@ -109,7 +109,7 @@
 
         {"titles": {"en": "Feast of the First Martyrs of the Church of Rome"}, "type": "1D", "start": {"mon": 6, "d": 30}},
         
-        {"titles": {"en": "Feast of St. Thomas the Apostle"}, "type": "1D", "start": {"mon": 7, "d": 3}, "urls": {"en": "https://nationaltoday.com/st-thomas-history/"}, "1st": {"era": 1, "y": 1969}},
+        {"titles": {"en": "Feast of St. Thomas the Apostle"}, "type": "1D", "start": {"mon": 7, "d": 3}, "urls": {"en": "https://nationaltoday.com/st-thomas-history/"}, first: {"era": 1, "y": 1969}},
         {"titles": {"en": "Feast of St. Elizabeth of Portugal"}, "type": "1D", "start": {"mon": 7, "d": 4}},
         {"titles": {"en": "Feast of St. Anthony Zaccaria"}, "type": "1D", "start": {"mon": 7, "d": 5}},
         {"titles": {"en": "Feast of St. Maria Goretti"}, "type": "1D", "start": {"mon": 7, "d": 6}},
@@ -118,7 +118,7 @@
         {"titles": {"en": "Feast of St. Henry"}, "type": "1D", "start": {"mon": 7, "d": 13}},
         {"titles": {"en": "Feast of St. Camillus de Lellis"}, "type": "1D", "start": {"mon": 7, "d": 14}},
         {"titles": {"en": "Feast of St. Bonaventure"}, "type": "1D", "start": {"mon": 7, "d": 15}},
-        {"titles": {"en": "Feast of Our Lady of Mount Carmel"}, "type": "1D", "start": {"mon": 7, "d": 16}, "urls": {"en": "https://nationaltoday.com/our-lady-of-mount-carmel/"}, "1st": {"era": 1, "y": 1726}},
+        {"titles": {"en": "Feast of Our Lady of Mount Carmel"}, "type": "1D", "start": {"mon": 7, "d": 16}, "urls": {"en": "https://nationaltoday.com/our-lady-of-mount-carmel/"}, first: {"era": 1, "y": 1726}},
         {"titles": {"en": "Feast of St. Apollinaris"}, "type": "1D", "start": {"mon": 7, "d": 20}},
         {"titles": {"en": "Feast of St. Lawrence of Brindisi"}, "type": "1D", "start": {"mon": 7, "d": 21}},
         {"titles": {"en": "Feast of St. Mary Magdalene"}, "type": "1D", "start": {"mon": 7, "d": 22}},
@@ -262,7 +262,7 @@
         {"inherits": "St. Maroun Day", "type": "1D", "start": {"mon": 2, "d": 9}},
         {"titles": {"en": "Feast of St. Rosalia"}, "type": "1D", "start": {"mon": 7, "d": 14}, "urls": {"en": "https://nationaltoday.com/feast-of-st-rosalia/"}},
         {"inherits": "Feast of St. Vladimir", "type": "1D", "start": {"mon": 7, "d": 15}},
-        {"type": "1D", "start": {"mon": 9, "d": 5}, inherits: "Feast of St. Teresa of Calcutta", "1st": {"era": 1, "y": 2016}},
+        {"type": "1D", "start": {"mon": 9, "d": 5}, inherits: "Feast of St. Teresa of Calcutta", first: {"era": 1, "y": 2016}},
 
         {"titles": {"en": "Septuagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -63}},
         {"titles": {"en": "Sexagesima"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -56}},

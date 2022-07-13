@@ -8,8 +8,8 @@
         {"titles": {"en": "Fiesta Nacional de España", "es": "Fiesta Nacional de España"}, "type": "1D", "start": {"mon": 10, "d": 12}},
         {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
-        {"titles": {"en": "Day of La Rioja", "es": "Día de La Rioja"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://nationaltoday.com/day-of-la-rioja/"}, "1st": {"era": 1, "y": 1983}},
-        {"titles": {"en": "Day of Murcia", "es": "Día de Murcia"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://www.timeanddate.com/holidays/spain/murcia-day"}, "1st": {"era": 1, "y": 1983}},
+        {"titles": {"en": "Day of La Rioja", "es": "Día de La Rioja"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://nationaltoday.com/day-of-la-rioja/"}, first: {"era": 1, "y": 1983}},
+        {"titles": {"en": "Day of Murcia", "es": "Día de Murcia"}, "type": "1D", "start": {"mon": 6, "d": 9}, "urls": {"en": "https://www.timeanddate.com/holidays/spain/murcia-day"}, first: {"era": 1, "y": 1983}},
         {"inherits": "Feast of St. Anthony of Padua", "type": "1D", "start": {"mon": 6, "d": 13}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}},
@@ -17,8 +17,9 @@
         {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "Feast of St. James", "type": "1D", "start": {"mon": 7, "d": 25}},
-        {"titles": {"en": "Day of Cantabria Institutions"}, "type": "1D", "start": {"mon": 7, "d": 28}, "urls": {"en": "https://nationaltoday.com/day-of-cantabria-institutions/"}, "1st": {"era": 1, "y": 1993}},
+        {"titles": {"en": "Day of Cantabria Institutions"}, "type": "1D", "start": {"mon": 7, "d": 28}, "urls": {"en": "https://nationaltoday.com/day-of-cantabria-institutions/"}, first: {"era": 1, "y": 1993}},
         {"titles": {"en": "Festival of the Vaquillas"}, "type": "1D", "start": {"mon": 7, "d": 13}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
-    ]
+        {"type": "1D", "start": {"mon": 3, "d": 19}, inherits: "Engineer’s Day"},
+   ]
 }

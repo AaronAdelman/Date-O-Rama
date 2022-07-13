@@ -5,9 +5,9 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
-        {"inherits": "National Liberation Day of Korea", "type": "1D", "start": {"d": 15, "mon": 8}, "1st": {"era": 1, "y": 1950}},
+        {"inherits": "National Liberation Day of Korea", "type": "1D", "start": {"d": 15, "mon": 8}, first: {"era": 1, "y": 1950}},
         {"inherits": "Memorial Day", "type": "1D", "start": {"mon": 6, "d": 6}, "urls": {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(South_Korea)"}},
-        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 7, "d": 17}, "1st": {"era": 1, "y": 1949}, "urls": {"en": "https://nationaltoday.com/korean-constitution-day/"}},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 7, "d": 17}, first: {"era": 1, "y": 1949}, "urls": {"en": "https://nationaltoday.com/korean-constitution-day/"}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
     ]
 }

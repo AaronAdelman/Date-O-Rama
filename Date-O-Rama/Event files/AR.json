@@ -9,15 +9,15 @@
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"inherits": "Shrove Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -48}},
         {"inherits": "Shrove Tuesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -47}},
-        {"type": "1D", "start": {"mon": 3, "d": 24}, "titles": {"en": "Day of Remembrance for Truth and Justice", "es": "Día Nacional de la Memoria por la Verdad y la Justicia"}, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Remembrance_for_Truth_and_Justice"}, "1st": {"era": 1, "y": 2006}},
-        {"type": "1D", "start": {"mon": 4, "d": 2}, "titles": {"en": "Day of the Veterans and Fallen of the Falklands War", "es": "Día del Veterano y de los Caídos en la Guerra de Malvinas"}, "urls": {"en": "https://en.wikipedia.org/wiki/Malvinas_Day"}, "1st": {"era": 1, "y": 2001}},
+        {"type": "1D", "start": {"mon": 3, "d": 24}, "titles": {"en": "Day of Remembrance for Truth and Justice", "es": "Día Nacional de la Memoria por la Verdad y la Justicia"}, "urls": {"en": "https://en.wikipedia.org/wiki/Day_of_Remembrance_for_Truth_and_Justice"}, first: {"era": 1, "y": 2006}},
+        {"type": "1D", "start": {"mon": 4, "d": 2}, "titles": {"en": "Day of the Veterans and Fallen of the Falklands War", "es": "Día del Veterano y de los Caídos en la Guerra de Malvinas"}, "urls": {"en": "https://en.wikipedia.org/wiki/Malvinas_Day"}, first: {"era": 1, "y": 2001}},
         {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"type": "1D", "start": {"mon": 5, "d": 25}, "titles": {"en": "May Revolution", "es": "Día de la Revolución de Mayo"}, "urls": {"en": "https://en.wikipedia.org/wiki/First_National_Government"}},
-        {"type": "1D", "start": {"mon": 6, "d": 15, "thruD": 21, "wkd": [2]}, "titles": {"en": "Commemoration of General Don Martín Miguel de Güemes", "es": "Paso a la Inmortalidad del General Martín Miguel de Güemes"}, "urls": {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, "1st": {"era": 1, "y": 1900}, "inherits": "*Death Anniv*"},
+        {"type": "1D", "start": {"mon": 6, "d": 15, "thruD": 21, "wkd": [2]}, "titles": {"en": "Commemoration of General Don Martín Miguel de Güemes", "es": "Paso a la Inmortalidad del General Martín Miguel de Güemes"}, "urls": {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, first: {"era": 1, "y": 1900}, "inherits": "*Death Anniv*"},
         {"type": "1D", "start": {"mon": 6, "d": 20}, "titles": {"en": "National Flag Day", "es": "Día de la Bandera Nacional"}, "urls": {"en": "https://nationaltoday.com/national-flag-day-in-argentina/"}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 9}, "1st": {"era": 1, "y": 1816}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 9}, first: {"era": 1, "y": 1816}},
         {"type": "1D", "start": {"mon": 8, "d": 15, "thruD": 21, "wkd": [2]}, "titles": {"en": "General José de San Martín Memorial Day", "es": "Paso a la Inmortalidad del General José de San Martín"}, "inherits": "*Death Anniv*"},
         {"type": "1D", "start": {"mon": 10, "d": 10, "thruD": 16, "wkd": [2]}, "titles": {"en": "Day of Respect for Cultural Diversity", "es": "Día del Respeto a la Diversidad Cultural"}},
         {"type": "1D", "start": {"mon": 11, "d": 18, "thruD": 24, "wkd": [2]}, "titles": {"en": "National Sovereignty Day", "es": "Día de la Soberanía Nacional"}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Sovereignty_Day"}},
@@ -25,10 +25,11 @@
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
 
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
-        {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, "1st": {"era": 1, "y": 2015}},
+        {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, first: {"era": 1, "y": 2015}},
 
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "wkd": [1], "wkdRecurrence": 3}},
+        {"type": "1D", "start": {"mon": 6, "d": 16}, inherits: "Engineer’s Day"},
    ]
 }
 

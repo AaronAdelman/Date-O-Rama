@@ -7,8 +7,8 @@
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 6, "d": 1}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, "d": 1}},
-        {"inherits": "Flag Day", "type": "1D", "start": {"mon": 7, "d": 10}, "titles": {"en": "Political Flag Day"}, "urls": {"en": "https://nationaltoday.com/political-flag-day/"}, "1st": {"era": 1, "y": 2009}},
-        {"titles": {"en": "Naadam Holiday"}, "type": "nD", "start": {"mon": 7, "d": 11}, "end": {"mon": 7, "d": 15}, "urls": {"en": "https://nationaltoday.com/naadam-holiday/"}, "1st": {"era": 1, "y": 1921}},
+        {"inherits": "Flag Day", "type": "1D", "start": {"mon": 7, "d": 10}, "titles": {"en": "Political Flag Day"}, "urls": {"en": "https://nationaltoday.com/political-flag-day/"}, first: {"era": 1, "y": 2009}},
+        {"titles": {"en": "Naadam Holiday"}, "type": "nD", "start": {"mon": 7, "d": 11}, "end": {"mon": 7, "d": 15}, "urls": {"en": "https://nationaltoday.com/naadam-holiday/"}, first: {"era": 1, "y": 1921}},
 
     ]
 }

@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.61, "green": 0.80, "blue": 0.92},
     "eventSpecifications": [
         {"inherits": "National Day", "type": "1D", "start": {"mon": 9, "d": 3}, "emoji": "🇸🇲"},
-        {"type": "1D", "start": {"mon": 7, "d": 28}, "titles": {"en": "Anniversary of the Fall of Fascism and Freedom Day"}, "urls": {"en": "https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, "1st": {"era": 1, "y": 1943}},
+        {"type": "1D", "start": {"mon": 7, "d": 28}, "titles": {"en": "Anniversary of the Fall of Fascism and Freedom Day"}, "urls": {"en": "https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, first: {"era": 1, "y": 1943}},
 
         
     ]
