@@ -16,41 +16,41 @@ class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
     var defaultDateFormat:  ASADateFormat = .full
     
-    private var offsetFromJulianDay:  Double {
-        get {
-            switch calendarCode {
-            case .JulianDay:
-                return 0.0
-                
-            case .ReducedJulianDay:
-                return 2400000.0
-                
-            case .ModifiedJulianDay:
-                return MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY
-                
-            case .TruncatedJulianDay:
-                return 2440000.5
-                
-            case .DublinJulianDay:
-                return 2415020.0
-                
-            case .CNESJulianDay:
-                return 2433282.5
-                
-            case .CCSDSJulianDay:
-                return 2436204.5
-                
-            case .LilianDate:
-                return 2299159.5
-                
-            case .RataDie:
-                return 1721424.5
-                
-            default:
-                return 0.0
-            } // switch calendarCode
-        } // get
-    } // var offsetFromJulianDay
+//    private var offsetFromJulianDay:  Double {
+//        get {
+//            switch calendarCode {
+//            case .JulianDay:
+//                return 0.0
+//                
+//            case .ReducedJulianDay:
+//                return 2400000.0
+//                
+//            case .ModifiedJulianDay:
+//                return MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY
+//                
+//            case .TruncatedJulianDay:
+//                return 2440000.5
+//                
+//            case .DublinJulianDay:
+//                return 2415020.0
+//                
+//            case .CNESJulianDay:
+//                return 2433282.5
+//                
+//            case .CCSDSJulianDay:
+//                return 2436204.5
+//                
+//            case .LilianDate:
+//                return 2299159.5
+//                
+//            case .RataDie:
+//                return 1721424.5
+//                
+//            default:
+//                return 0.0
+//            } // switch calendarCode
+//        } // get
+//    } // var offsetFromJulianDay
     
     init(calendarCode: ASACalendarCode) {
         self.calendarCode = calendarCode

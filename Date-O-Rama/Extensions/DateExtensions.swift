@@ -9,8 +9,6 @@
 import Foundation
 import CoreLocation
 
-public let MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY = 2400000.5
-
 fileprivate extension ASACalendarCode {
     var offsetFromJulianDay:  Double {
         switch self {
@@ -21,7 +19,7 @@ fileprivate extension ASACalendarCode {
             return 2400000.0
             
         case .ModifiedJulianDay:
-            return MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY
+            return 2400000.5
             
         case .TruncatedJulianDay:
             return 2440000.5
@@ -251,17 +249,18 @@ extension Date {
 // -  Mars Sol Date
 
 fileprivate let MarsSolDateOffset  = 2405522.0
-fileprivate let MarsSolDateDivisor = 1.02749125
+fileprivate let MarsSolDateDivisor =       1.027491252
+fileprivate let MarsSolDateFudge   =       0.00200 // Fudged to get the same value, more or less as https://marsclock.com/
 
 extension Date {
     var MarsSolDate: Double {
         let JD: Double = self.JulianDate
-        let result = (JD - MarsSolDateOffset) / MarsSolDateDivisor
+        let result = (JD - MarsSolDateOffset) / MarsSolDateDivisor - MarsSolDateFudge
         return result
     }
     
     static func date(MarsSolDate: Double) -> Date {
-        let JD = MarsSolDateDivisor * MarsSolDate + MarsSolDateOffset
+        let JD = MarsSolDateDivisor * (MarsSolDate + MarsSolDateFudge) + MarsSolDateOffset
         return Date.date(JulianDate: JD)
     }
 }
