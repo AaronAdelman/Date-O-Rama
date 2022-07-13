@@ -765,34 +765,34 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(codes3.matches(regionCode: "IL", latitude: 34.0))
     }
     
-    func testEventMatching() throws {
-        let calendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
-        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
-        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
-//        let calendarTitleWithoutLocation = "יהדות"
-//        let calendarTitle = "יהדות · פתח תקווה"
-//        let otherCalendars = [ASACalendarCode.Coptic: ASACalendarFactory.calendar(code: .Coptic)!]
-        let calendarTitleWithoutLocation = "ירח"
-        let calendarTitle = "ירח · פתח תקווה"
-//        let otherCalendars: Dictionary<ASACalendarCode, ASACalendar> = [:]
-        let regionCode = "IL"
-        let localeIdentifier = "he_IL"
-        
-//        let dateComponents = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: timeZone, era: 1, year: 2021, month: 9, day: 7, hour: 12, minute: 0, second: 0, nanosecond: 0, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil)
-        let dateComponents = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: timeZone, era: 1, year: 2021, month: 8, day:26, hour: 12, minute: 0, second: 0, nanosecond: 0, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil)
-
-        let date = dateComponents.date!
-        let startOfDay = calendar.startOfDay(for: date, locationData: location)
-        let startOfNextDay = calendar.startOfNextDay(date: date, locationData: location)
-        debugPrint(#file, #function, date, startOfDay, startOfNextDay)
-        
-//        let eventCalendar = ASAEventCalendar(fileName: "Judaism")
-        let eventCalendar = ASAEventCalendar(fileName: "Moon")
-//        let events = eventCalendar.events(date: date, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-        let events = eventCalendar.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, calendar: calendar)
-
-        debugPrint(#file, #function, events)
-    }
+//    func testEventMatching() throws {
+//        let calendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+//        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
+//        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
+////        let calendarTitleWithoutLocation = "יהדות"
+////        let calendarTitle = "יהדות · פתח תקווה"
+////        let otherCalendars = [ASACalendarCode.Coptic: ASACalendarFactory.calendar(code: .Coptic)!]
+//        let calendarTitleWithoutLocation = "ירח"
+//        let calendarTitle = "ירח · פתח תקווה"
+////        let otherCalendars: Dictionary<ASACalendarCode, ASACalendar> = [:]
+//        let regionCode = "IL"
+//        let localeIdentifier = "he_IL"
+//
+////        let dateComponents = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: timeZone, era: 1, year: 2021, month: 9, day: 7, hour: 12, minute: 0, second: 0, nanosecond: 0, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil)
+//        let dateComponents = DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: timeZone, era: 1, year: 2021, month: 8, day:26, hour: 12, minute: 0, second: 0, nanosecond: 0, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil)
+//
+//        let date = dateComponents.date!
+//        let startOfDay = calendar.startOfDay(for: date, locationData: location)
+//        let startOfNextDay = calendar.startOfNextDay(date: date, locationData: location)
+//        debugPrint(#file, #function, date, startOfDay, startOfNextDay)
+//
+////        let eventCalendar = ASAEventCalendar(fileName: "Judaism")
+//        let eventCalendar = ASAEventCalendar(fileName: "Moon")
+////        let events = eventCalendar.events(date: date, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+//        let events = eventCalendar.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, calendar: calendar)
+//
+//        debugPrint(#file, #function, events)
+//    }
     
     fileprivate func subtestEaster(year: Int, month: Int, day: Int, GregorianCalendar: Bool) {
         let Easter = calculateEaster(nYear: year, GregorianCalendar: GregorianCalendar)
@@ -1225,48 +1225,57 @@ class Date_O_RamaTests: XCTestCase {
 //        debugPrint(#file, #function, hour, components)
 //    }
     
-    func testJulianCalendarAlgorithms() throws {
-        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
-
-        let June13NS_0 = GregorianDate(era: 1, year: 2022, month: 6, day: 13, hour: 0, minute: 0, second: 0, secondsFromGMT: timeZone.secondsFromGMT())
-        let June13NS_0Components = JulianComponents(date: June13NS_0, timeZone: timeZone)
-//        debugPrint(#file, #function, June13NS_0Components)
-        assert(June13NS_0Components.year    == 2022)
-        assert(June13NS_0Components.month   ==    5)
-        assert(June13NS_0Components.day     ==   31)
-        assert(June13NS_0Components.weekday ==    2)
-
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 12, hour: 23, minute: 0, second: 0, timeZone: timeZone)
+//    func testJulianCalendarAlgorithms() throws {
+//        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
 //
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 0, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 1, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 2, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 3, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 4, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 5, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 6, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 7, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 8, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 9, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 10, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 11, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 12, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 13, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 14, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 15, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 16, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 17, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 18, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 19, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 20, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 21, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 22, minute: 0, second: 0, timeZone: timeZone)
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 23, minute: 0, second: 0, timeZone: timeZone)
+//        let June13NS_0 = GregorianDate(era: 1, year: 2022, month: 6, day: 13, hour: 0, minute: 0, second: 0, secondsFromGMT: timeZone.secondsFromGMT())
+//        let June13NS_0Components = JulianComponents(date: June13NS_0, timeZone: timeZone)
+////        debugPrint(#file, #function, June13NS_0Components)
+//        assert(June13NS_0Components.year    == 2022)
+//        assert(June13NS_0Components.month   ==    5)
+//        assert(June13NS_0Components.day     ==   31)
+//        assert(June13NS_0Components.weekday ==    2)
 //
-//        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 14, hour: 0, minute: 0, second: 0, timeZone: timeZone)
-
-        let May31OS = dateFromJulianComponents(era: 1, year: 2022, month: 5, day: 31, timeZone: timeZone)
-        debugPrint(#file, #function, May31OS as Any)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 12, hour: 23, minute: 0, second: 0, timeZone: timeZone)
+////
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 0, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 1, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 2, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 3, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 4, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 5, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 6, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 7, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 8, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 9, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 10, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 11, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 12, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 13, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 14, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 15, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 16, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 17, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 18, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 19, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 20, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 21, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 22, minute: 0, second: 0, timeZone: timeZone)
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 13, hour: 23, minute: 0, second: 0, timeZone: timeZone)
+////
+////        debugPrintJulianComponents(era: 1, year: 2022, month: 6, day: 14, hour: 0, minute: 0, second: 0, timeZone: timeZone)
+//
+//        let May31OS = dateFromJulianComponents(era: 1, year: 2022, month: 5, day: 31, timeZone: timeZone)
+//        debugPrint(#file, #function, May31OS as Any)
+//    }
+    
+    func testMarsSolDate() throws {
+        let date = GregorianDate(era: 1, year: 2022, month: 7, day: 13, hour: 13, minute: 39, second: 0, secondsFromGMT: 0)
+        let MSD: Double = date.MarsSolDate
+        let reverseDate = Date.date(MarsSolDate: MSD)
+        let error: TimeInterval = date.timeIntervalSince(reverseDate)
+        debugPrint(#file, #function, date, MSD, reverseDate, error)
+        assert(abs(error) < 1.0e-5)
     }
     
 } // class Date_O_RamaTests

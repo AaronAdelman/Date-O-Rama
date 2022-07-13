@@ -41,6 +41,7 @@
 "HebrewSolarMA"         = "עברי (מגן אברהם)";
 "fre"                   = "הרפובליקה הצרפתית";
 "fre-r"                 = "הרפובליקה הצרפתית (רום)";
+"mar"                   = "Mars Sol Date";
 
 "DEFAULT_LOCALE" = "בחירת מחדל";
 "HEADER_Row" = "שעון";

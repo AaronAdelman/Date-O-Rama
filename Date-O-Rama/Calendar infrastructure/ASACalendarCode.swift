@@ -48,6 +48,7 @@ enum ASACalendarCode:  String, Codable {
     case FrenchRepublican      = "fre"
     case FrenchRepublicanRomme = "fre-r"
     case Julian                = "jul"
+    case MarsSolDate           = "mar"
     
     case allEarth              = "*"
     case allHebrew             = "heb*"
@@ -128,7 +129,7 @@ extension ASACalendarCode {
     
     var isJulianDayCalendar:  Bool {
         switch self {
-        case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+        case .JulianDay, .ReducedJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .DublinJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate:
             return true
         default:
             return false
@@ -283,7 +284,7 @@ extension ASACalendarCode {
             case .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
                 return .lunar
                 
-            case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+            case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie, .MarsSolDate:
                 return .JulianDay
                 
             default:

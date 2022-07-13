@@ -41,6 +41,7 @@
 "HebrewSolarMA"         = "Hebrew (Maghen ’Avraham)";
 "fre"                   = "French Republican";
 "fre-r"                 = "French Republican (Romme)";
+"mar"                   = "Mars Sol Date";
 
 "DEFAULT_LOCALE" = "Default";
 "HEADER_Row" = "Clock";

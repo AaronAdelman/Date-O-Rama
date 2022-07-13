@@ -74,6 +74,7 @@ struct ASACalendarChooserView: View {
         .Julian,
         .JulianDay,
         .LilianDate,
+        .MarsSolDate,
         .ModifiedJulianDay,
         .Persian,
         .RataDie,

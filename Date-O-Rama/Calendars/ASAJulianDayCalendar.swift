@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import UIKit
 
-let MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY = 2400000.5
+//let MODIFIED_JULIAN_DAY_OFFSET_FROM_JULIAN_DAY = 2400000.5
 
 class ASAJulianDayCalendar:  ASACalendar {
     var calendarCode: ASACalendarCode = .JulianDay
@@ -80,29 +80,17 @@ class ASAJulianDayCalendar:  ASACalendar {
     func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents) {
         formatter.locale = Locale(identifier: localeIdentifier)
         var components = ASADateComponents(calendar: self, locationData: locationData)
-//        components.year       = 0
-//        components.month      = 0
 
         if self.supportsTimes {
-            let (JulianDate, day,
-//                 hour, minute, second, nanosecond,
-                 fractionOfDay) = now.JulianDateWithComponents(offsetFromJulianDay: self.offsetFromJulianDay)
+            let (JulianDate, day, fractionOfDay) = now.JulianDateWithComponents(calendarCode: self.calendarCode)
             let dateString = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             components.day        = day
-//            components.hour       = hour
-//            components.minute     = minute
-//            components.second     = second
-//            components.nanosecond = nanosecond
             components.solarHours = fractionOfDay
             return (dateString, "", components)
         } else {
-            let day = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
+            let day = now.JulianDateWithoutTime(calendarCode: self.calendarCode)
             let dateString = self.dateString(JulianDay: day, localeIdentifier: localeIdentifier)
             components.day        = 0
-//            components.hour       = 0
-//            components.minute     = 0
-//            components.second     = 0
-//            components.nanosecond = 0
             components.solarHours = 0.0
             return (dateString, "", components)
         }
@@ -110,11 +98,11 @@ class ASAJulianDayCalendar:  ASACalendar {
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> String {
         if self.supportsTimes && timeFormat != .none {
-            let JulianDate = now.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
+            let JulianDate = now.JulianDateWithTime(calendarCode: self.calendarCode)
             let result = self.dateString(JulianDate: JulianDate, timeFormat: timeFormat, localeIdentifier: localeIdentifier)
             return result
         } else {
-            let JulianDay = now.JulianDateWithoutTime(offsetFromJulianDay: self.offsetFromJulianDay)
+            let JulianDay = now.JulianDateWithoutTime(calendarCode: self.calendarCode)
             let result = self.dateString(JulianDay: JulianDay, localeIdentifier: localeIdentifier)
             return result
         }
@@ -123,38 +111,16 @@ class ASAJulianDayCalendar:  ASACalendar {
     var supportsLocales: Bool = true
         
     func startOfDay(for date: Date, locationData:  ASALocation) -> Date {
-//        switch self.calendarCode {
-//        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-//            return date.previousGMTNoon
-//
-//        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-//            return date.previousMidnight(timeZone: TimeZone.GMT)
-//
-//        default:
-//            return date.previousGMTNoon
-//        } // switch self.calendarCode
-        
-        let JulianDate = date.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
+        let JulianDate = date.JulianDateWithTime(calendarCode: self.calendarCode)
         let startAsJulianDate = floor(JulianDate)
-        return Date.date(JulianDate: startAsJulianDate, offsetFromJulianDay: self.offsetFromJulianDay)
+        return Date.date(JulianDate: startAsJulianDate, calendarCode: self.calendarCode)
     } // func startOfDay(for date: Date, locationData:  ASALocation) -> Date
     
     
     func startOfNextDay(date: Date, locationData:  ASALocation) -> Date {
-//        switch self.calendarCode {
-//        case .JulianDay, .ReducedJulianDay, .DublinJulianDay:
-//            return date.nextGMTNoon
-//
-//        case .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
-//            return date.nextMidnight(timeZone: TimeZone.GMT)
-//
-//        default:
-//            return date.nextGMTNoon
-//        } // switch self.calendarCode
-        
-        let JulianDate = date.JulianDateWithTime(offsetFromJulianDay: self.offsetFromJulianDay)
+        let JulianDate = date.JulianDateWithTime(calendarCode: self.calendarCode)
         let startAsJulianDate = floor(JulianDate)
-        return Date.date(JulianDate: startAsJulianDate + 1.0, offsetFromJulianDay: self.offsetFromJulianDay)
+        return Date.date(JulianDate: startAsJulianDate + 1.0, calendarCode: self.calendarCode)
     } // func nextTransitionToNextDay(now: Date, location: CLLocation, timeZone:  TimeZone) -> Date
     
     var supportsTimeZones: Bool = false
@@ -222,7 +188,7 @@ class ASAJulianDayCalendar:  ASACalendar {
             return nil
         }
         
-        return Date.date(JulianDate: Double(day) + fractionOfDay, offsetFromJulianDay: self.offsetFromJulianDay)
+        return Date.date(JulianDate: Double(day) + fractionOfDay, calendarCode: self.calendarCode)
     } // func date(dateComponents: ASADateComponents) -> Date?
     
 
@@ -230,23 +196,11 @@ class ASAJulianDayCalendar:  ASACalendar {
 
     func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int {
          // Returns the value for one component of a date.
-        let components = date.JulianDateComponents(offsetFromJulianDay: self.offsetFromJulianDay)
+        let components = date.JulianDateComponents(calendarCode: self.calendarCode)
 
         switch component {
         case .day:
             return components.day
-
-//        case .hour:
-//            return components.hour
-//
-//        case .minute:
-//            return components.minute
-//
-//        case .second:
-//            return components.second
-//
-//        case .nanosecond:
-//            return components.nanosecond
             
         case .fractionalHour:
             return Int(components.fractionOfDay)
@@ -257,33 +211,18 @@ class ASAJulianDayCalendar:  ASACalendar {
     } // func component(_ component: ASACalendarComponent, from date: Date, locationData:  ASALocation) -> Int
 
     func dateComponents(_ components: Set<ASACalendarComponent>, from date: Date, locationData:  ASALocation) -> ASADateComponents {
-        let JDComponents = date.JulianDateComponents(offsetFromJulianDay: self.offsetFromJulianDay)
+        let JDComponents = date.JulianDateComponents(calendarCode: self.calendarCode)
         var result = ASADateComponents(calendar: self, locationData: locationData)
         for component in components {
             switch component {
             case .day:
                 result.day = JDComponents.day
                 
-//            case .hour:
-//                result.hour = JDComponents.hour
-//
-//            case .minute:
-//                result.minute = JDComponents.minute
-//
-//            case .second:
-//                result.second = JDComponents.second
-//
-//            case .nanosecond:
-//                result.nanosecond = JDComponents.nanosecond
-                
             case .fractionalHour:
                 result.solarHours = JDComponents.fractionOfDay
 
             default:
                 debugPrint(#file, #function, component as Any)
-//                result.month   = 0
-//                result.year    = 0
-//                result.weekday = 0
             } // switch component
         }
         return result
