@@ -1,15 +1,22 @@
 {
     "titles": {"*": "ID"},
     "//": "Indonesia",
+    "TODO": "Hindu and Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
+        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {"inherits": "Good Friday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -2}},
+        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}, first: {era: 1, y: 1953}},
+        {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+        {"inherits": "Vesak", "type": "1D", "start": {"zmoPhase": "1stFull", "mon": 5}, first: {era: 1, y: 1983}},
+        
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 17, "mon": 8}},
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "d": 12}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 12, "d": 22}},
-   ]
+    ]
 }
 
 
