@@ -54,5 +54,7 @@
         {"inherits": "Memorial Day", "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, "1st": {"era": 1, "y": 1917}, "locations": {"en": "Newfoundland and Labrador"}},
         {"type": "1D", "start": {"mon": 7, "d": 9}, "titles": {"en": "Nunavut Day"}, "1st": {"era": 1, "y": 2001}, "urls": {"en": "https://nationaltoday.com/nunavut-day/"}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
+        
+        {"type": "1D", "start": {"d": 21, "mon": 11}, "titles": {"en": "National Red Mitten Day"}, "1st": {"era": 1, "y": 2011}, "emoji": "🇨🇦", "urls": {"en": "https://www.daysoftheyear.com/days/red-mitten-day/"}},
     ]
 }

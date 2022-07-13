@@ -172,8 +172,6 @@
 		A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5596A3D258950AD002298CE /* LocaleExtensions.swift */; };
 		A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5629CD825B8646200C6D062 /* ASAAboutTab.swift */; };
-		A563702027382A92008DE963 /* New Age.json in Resources */ = {isa = PBXBuildFile; fileRef = A563701F27382A91008DE963 /* New Age.json */; };
-		A563702127382A92008DE963 /* New Age.json in Resources */ = {isa = PBXBuildFile; fileRef = A563701F27382A91008DE963 /* New Age.json */; };
 		A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566F4442483D6E6000A05B5 /* Interface.storyboard */; };
@@ -1177,7 +1175,6 @@
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
 		A5629CD825B8646200C6D062 /* ASAAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutTab.swift; sourceTree = "<group>"; };
-		A563701F27382A91008DE963 /* New Age.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "New Age.json"; sourceTree = "<group>"; };
 		A564C13F2548731B000F2CDF /* ASAClockCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellText.swift; sourceTree = "<group>"; };
 		A566F4422483D6E6000A05B5 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -1912,7 +1909,6 @@
 				A5E4964F28625479001BF40C /* NC.json */,
 				A5D850B3280C9823005247BD /* NE.json */,
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
-				A563701F27382A91008DE963 /* New Age.json */,
 				A5E49652286254AC001BF40C /* NF.json */,
 				A5EFFF8D285B7D4600F2205F /* NG.json */,
 				A5EFFFE0285B85B500F2205F /* NI.json */,
@@ -2685,7 +2681,6 @@
 				A5DEFE8C2822FE9600EF1651 /* KR.json in Resources */,
 				A5EFFFAD285B7F2E00F2205F /* QA.json in Resources */,
 				A5EFFF5A285B5F9B00F2205F /* GG.json in Resources */,
-				A563702127382A92008DE963 /* New Age.json in Resources */,
 				A5EF523927959D37000012AC /* Druzism (Gregorian).json in Resources */,
 				A5EFFF5E285B5F9B00F2205F /* HK.json in Resources */,
 				A5EFFF32285B5B9E00F2205F /* BN.json in Resources */,
@@ -2901,7 +2896,6 @@
 				A5B999B228622B1800072FD5 /* BV.json in Resources */,
 				A568DBBB25232E3200500419 /* Chinese zodiac.json in Resources */,
 				A5EE2FA12815DB9800B6E81E /* JP.json in Resources */,
-				A563702027382A92008DE963 /* New Age.json in Resources */,
 				A5765A38279ED15900BF1F7E /* Rural.json in Resources */,
 				A5EFFFF0285B88C200F2205F /* SS.json in Resources */,
 				A5EFFFCA285B81BD00F2205F /* ZM.json in Resources */,

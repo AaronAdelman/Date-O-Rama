@@ -23,6 +23,5 @@
         {"titles": {"en": "Day of Jupiter", "he": "יום צדק"}, "type": "1D", "start": {"wkd": [5]}, "inherits": "*zju*", "inherits": "*Astrology*"},
         {"titles": {"en": "Day of Venus", "he": "יום נוגה"}, "type": "1D", "start": {"wkd": [6]}, "inherits": "*zve*", "inherits": "*Astrology*"},
         {"titles": {"en": "Day of Saturn", "he": "יום שבתי"}, "type": "1D", "start": {"wkd": [7]}, "inherits": "*zsa*", "inherits": "*Astrology*"},
-        {"titles": {"en": "Married to a Scorpio Support Day"}, "type": "1D", "start": {"mon": 11, "d": 18}, "emoji": "💍♏️", "inherits": "*Astrology*"},
     ]
 }
