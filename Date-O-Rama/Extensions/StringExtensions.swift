@@ -14,7 +14,7 @@ extension String {
     // Converts a country code into a Unicode emoji flag
     var flag:  String {
         let FAILURE_FLAG = "📍"
-        let EARTH_FLAG   = "🇺🇳"
+        let EARTH_FLAG   = "🌐"
         
         if self == "" {
             return FAILURE_FLAG

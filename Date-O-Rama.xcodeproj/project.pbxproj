@@ -90,6 +90,9 @@
 		A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */; };
 		A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0925C026AA00BC62C4 /* Thanks to.pdf */; };
 		A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */; };
+		A516D4F228805B0500DF7639 /* ASALocationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516D4F128805B0500DF7639 /* ASALocationType.swift */; };
+		A516D4F328805B0500DF7639 /* ASALocationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516D4F128805B0500DF7639 /* ASALocationType.swift */; };
+		A516D4F428805B0500DF7639 /* ASALocationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A516D4F128805B0500DF7639 /* ASALocationType.swift */; };
 		A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
 		A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */; };
 		A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASALocationCell.swift */; };
@@ -1135,6 +1138,7 @@
 		A5150F1625C026BB00BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
 		A5150F1725C026C200BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
 		A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAForwardChevronSymbol.swift; sourceTree = "<group>"; };
+		A516D4F128805B0500DF7639 /* ASALocationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ASALocationType.swift; path = "Date-O-Rama/ASALocationType.swift"; sourceTree = SOURCE_ROOT; };
 		A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailCell.swift; sourceTree = "<group>"; };
 		A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeZoneCell.swift; sourceTree = "<group>"; };
 		A51A083A245B079A00135AA6 /* ASALocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationCell.swift; sourceTree = "<group>"; };
@@ -2274,6 +2278,7 @@
 				A5C77C3B2433603F00CFEE47 /* ASALocaleData.swift */,
 				A57BCCB0247BBDC20019C02C /* ASALocation.swift */,
 				A53A5AFF24519859005F9876 /* ASALocationManager.swift */,
+				A516D4F128805B0500DF7639 /* ASALocationType.swift */,
 				A5EFE4232436045B00861979 /* ASAUserData.swift */,
 				A5C77C022433361900CFEE47 /* Assets.xcassets */,
 				A5BDB7CE244DAE3E0027704F /* Calendar infrastructure */,
@@ -3437,6 +3442,7 @@
 				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */,
 				A566F48A2483D7CF000A05B5 /* SolarEvents.swift in Sources */,
+				A516D4F428805B0500DF7639 /* ASALocationType.swift in Sources */,
 				A5A6FD5127BEC504003595D5 /* ASADateFormatPatternComponent.swift in Sources */,
 				A5BDE77A26661F7500F47416 /* ASAEventSpecification.swift in Sources */,
 				A5D135BF27C537C500A1A525 /* ASACalendarSupportingQuarters.swift in Sources */,
@@ -3635,6 +3641,7 @@
 				A56F0D7E25F1634700301969 /* ASAEKEventEditView.swift in Sources */,
 				A5D135B527C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift in Sources */,
 				A5CB86412448E04000DB27A9 /* DateExtensions.swift in Sources */,
+				A516D4F228805B0500DF7639 /* ASALocationType.swift in Sources */,
 				A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */,
 				A579019D259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A50CD63425541B3F00B781EC /* ASAMiniClockView.swift in Sources */,
@@ -3704,6 +3711,7 @@
 				A557AD1125DD495400A264B6 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A5DD453A2683AF4B008DBC22 /* ASAEventSpecification.swift in Sources */,
 				A5DD453B2683AFA3008DBC22 /* DictionaryExtensions.swift in Sources */,
+				A516D4F328805B0500DF7639 /* ASALocationType.swift in Sources */,
 				A59D802D2600C57A00FD8BBF /* ASACalendarCode.swift in Sources */,
 				A59D805C2600C6F900FD8BBF /* ASADateSpecification.swift in Sources */,
 				A5D135B627C2C2A100A1A525 /* ASACalendarSupportingWeeks.swift in Sources */,

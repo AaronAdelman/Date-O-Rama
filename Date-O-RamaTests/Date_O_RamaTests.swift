@@ -1167,7 +1167,7 @@ class Date_O_RamaTests: XCTestCase {
         let calendar: ASACalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
         let date = GregorianDate(era: 1, year: 2021, month: 3, day: 3, hour: 16, minute: 8, second: 31, secondsFromGMT: 2 * 60 * 60)
         let timeZone = TimeZone(identifier: "Asia/Jerusalem")!
-        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
+        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone, type: .EarthLocation)
 
         let components: ASADateComponents = ASADateComponents(calendar: calendar, locationData: location, era: 0, year: 5782, yearForWeekOfYear: nil, quarter: nil, month: 6, isLeapMonth: false, weekOfMonth: nil, weekOfYear: nil, weekday: 5, weekdayOrdinal: nil, day: 30, hour: 12, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
 

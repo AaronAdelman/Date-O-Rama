@@ -49,11 +49,11 @@ struct ASACalendarChooserView: View {
     let calendarCodes:  Array<ASACalendarCode> = [
         .Gregorian,
         .Buddhist,
-        .CCSDSJulianDay,
+//        .CCSDSJulianDay,
         .Chinese,
-        .CNESJulianDay,
+//        .CNESJulianDay,
         .Coptic,
-        .DublinJulianDay,
+//        .DublinJulianDay,
         .EthiopicAmeteAlem,
         .EthiopicAmeteMihret,
         .FrenchRepublican,
@@ -72,15 +72,15 @@ struct ASACalendarChooserView: View {
         .IslamicUmmAlQuraSolar,
         .Japanese,
         .Julian,
-        .JulianDay,
-        .LilianDate,
-        .MarsSolDate,
-        .ModifiedJulianDay,
+//        .JulianDay,
+//        .LilianDate,
+//        .MarsSolDate,
+//        .ModifiedJulianDay,
         .Persian,
-        .RataDie,
-        .ReducedJulianDay,
+//        .RataDie,
+//        .ReducedJulianDay,
         .RepublicOfChina,
-        .TruncatedJulianDay
+//        .TruncatedJulianDay
     ]
     
     @ObservedObject var clock:  ASAClock
@@ -135,7 +135,7 @@ struct ASACalendarChooserView: View {
                     Text("Solar calendars").tag(SOLAR_CALENDARS)
                     Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
                     Text("Lunar calendars").tag(LUNAR_CALENDARS)
-                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
+//                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
                    })
 
             ForEach(self.calendarCodes(option: selection), id: \.self) {

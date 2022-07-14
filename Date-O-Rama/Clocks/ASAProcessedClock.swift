@@ -83,7 +83,7 @@ struct ASAProcessedClock {
         #endif
         self.supportsLocations = clock.calendar.supportsLocations
         if self.supportsLocations {
-            self.flagEmojiString = (location.regionCode ?? "").flag
+            self.flagEmojiString = location.flag
 //            self.usesDeviceLocation = clock.usesDeviceLocation
             var locationString = ""
             if location.name == nil && location.locality == nil && location.country == nil {

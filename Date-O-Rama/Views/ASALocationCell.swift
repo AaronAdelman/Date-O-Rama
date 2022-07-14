@@ -121,6 +121,6 @@ struct ASALocationCell:  View {
 
 struct ASALocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationCell(usesDeviceLocation: true, locationData: ASALocation())
+        ASALocationCell(usesDeviceLocation: true, locationData: ASALocation(type: .EarthLocation))
     }
 }

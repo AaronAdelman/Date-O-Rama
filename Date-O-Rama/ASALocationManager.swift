@@ -129,14 +129,14 @@ extension ASALocationManager: CLLocationManagerDelegate {
             if place == nil || error != nil {
 //                debugPrint(#file, #function, place ?? "nil place", error ?? "nil error")
                 
-                var tempLocationData = ASALocation()
-                tempLocationData.location              = location
-                tempLocationData.timeZone              = TimeZone.autoupdatingCurrent
+                var tempLocation = ASALocation(type: .EarthLocation)
+                tempLocation.location  = location
+                tempLocation.timeZone  = TimeZone.autoupdatingCurrent
 
-                tempLocationData.country  = self.lastDevicePlacemark?.country
-                tempLocationData.regionCode = self.lastDevicePlacemark?.isoCountryCode
+                tempLocation.country    = self.lastDevicePlacemark?.country
+                tempLocation.regionCode = self.lastDevicePlacemark?.isoCountryCode
 
-                self.finishDidUpdateLocations(tempLocationData)
+                self.finishDidUpdateLocations(tempLocation)
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
                     self.reverseGeocode(location)

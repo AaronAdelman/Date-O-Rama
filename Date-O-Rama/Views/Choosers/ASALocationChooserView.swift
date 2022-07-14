@@ -16,7 +16,7 @@ struct ASALocationChooserView: View {
 
     @State var enteredAddress:  String = ""
     @State var locationDataArray:  Array<ASALocation> = []
-    @State var tempLocationData:  ASALocation = ASALocation()
+    @State var tempLocationData:  ASALocation = ASALocation(type: .EarthLocation)
     @State var tempUsesDeviceLocation: Bool = false {
         didSet {
             if tempUsesDeviceLocation == true {

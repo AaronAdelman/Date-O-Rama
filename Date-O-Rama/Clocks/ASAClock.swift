@@ -11,31 +11,32 @@ import CoreLocation
 import EventKit
 import Foundation
 
-let TIME_ZONE_KEY:  String              = "timeZone"
-let USES_DEVICE_LOCATION_KEY:  String   = "usesDeviceLocation"
-let LATITUDE_KEY:  String               = "latitude"
-let LONGITUDE_KEY:  String              = "longitude"
-let ALTITUDE_KEY:  String               = "altitude"
-let HORIZONTAL_ACCURACY_KEY:  String    = "haccuracy"
-let VERTICAL_ACCURACY_KEY:  String      = "vaccuracy"
-let PLACE_NAME_KEY:  String             = "placeName"
-let LOCALITY_KEY                        = "locality"
-let COUNTRY_KEY                         = "country"
-let ISO_COUNTRY_CODE_KEY                = "ISOCountryCode"
-let POSTAL_CODE_KEY:  String            = "postalCode"
-let ADMINISTRATIVE_AREA_KEY:  String    = "administrativeArea"
-let SUBADMINISTRATIVE_AREA_KEY:  String = "subAdministrativeArea"
-let SUBLOCALITY_KEY:  String            = "subLocality"
-let THOROUGHFARE_KEY:  String           = "thoroughfare"
-let SUBTHOROUGHFARE_KEY:  String        = "subThoroughfare"
+let TIME_ZONE_KEY: String              = "timeZone"
+let USES_DEVICE_LOCATION_KEY: String   = "usesDeviceLocation"
+let LATITUDE_KEY: String               = "latitude"
+let LONGITUDE_KEY: String              = "longitude"
+let ALTITUDE_KEY: String               = "altitude"
+let HORIZONTAL_ACCURACY_KEY: String    = "haccuracy"
+let VERTICAL_ACCURACY_KEY: String      = "vaccuracy"
+let PLACE_NAME_KEY: String             = "placeName"
+let LOCALITY_KEY                       = "locality"
+let COUNTRY_KEY                        = "country"
+let ISO_COUNTRY_CODE_KEY               = "ISOCountryCode"
+let POSTAL_CODE_KEY: String            = "postalCode"
+let ADMINISTRATIVE_AREA_KEY: String    = "administrativeArea"
+let SUBADMINISTRATIVE_AREA_KEY: String = "subAdministrativeArea"
+let SUBLOCALITY_KEY: String            = "subLocality"
+let THOROUGHFARE_KEY: String           = "thoroughfare"
+let SUBTHOROUGHFARE_KEY: String        = "subThoroughfare"
+let TYPE_KEY: String                   = "type"
 
-let UUID_KEY:  String                      = "UUID"
-let LOCALE_KEY:  String                    = "locale"
-let CALENDAR_KEY:  String                  = "calendar"
-let DATE_FORMAT_KEY:  String               = "dateFormat"
-let TIME_FORMAT_KEY:  String               = "timeFormat"
-let BUILT_IN_EVENT_CALENDARS_KEY:  String  = "builtInEventCalendars"
-let ICALENDAR_EVENT_CALENDARS_KEY:  String = "iCalendarEventCalendars"
+let UUID_KEY: String                      = "UUID"
+let LOCALE_KEY: String                    = "locale"
+let CALENDAR_KEY: String                  = "calendar"
+let DATE_FORMAT_KEY: String               = "dateFormat"
+let TIME_FORMAT_KEY: String               = "timeFormat"
+let BUILT_IN_EVENT_CALENDARS_KEY: String  = "builtInEventCalendars"
+let ICALENDAR_EVENT_CALENDARS_KEY: String = "iCalendarEventCalendars"
 
 
 // MARK:  -
@@ -245,6 +246,8 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         if location.subThoroughfare != nil {
             result[SUBTHOROUGHFARE_KEY] = location.subThoroughfare
         }
+        
+        result[TYPE_KEY] = location.type.rawValue
 
         //        debugPrint(#file, #function, result)
         return result
@@ -333,8 +336,11 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let newSubThoroughfare = dictionary[SUBTHOROUGHFARE_KEY] as? String
 
         let timeZoneIdentifier = dictionary[TIME_ZONE_KEY] as? String
+        
+        let rawType = dictionary[TYPE_KEY] as? String
+        let type: ASALocationType = (rawType == nil) ? .EarthLocation : ASALocationType(rawValue: rawType!)!
 
-        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT)
+        let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT, type: type)
 //        newClock.locationData = newLocationData
 
         newClock.startingUp = false

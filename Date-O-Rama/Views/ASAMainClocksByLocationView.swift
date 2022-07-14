@@ -42,7 +42,7 @@ struct ASAMainClocksByLocationSectionView: View {
     var body: some View {
         let location = locationWithClocks.location
         
-        let sectionHeaderEmoji = (location.regionCode ?? "").flag
+        let sectionHeaderEmoji = location.flag
 #if os(watchOS)
         let sectionHeaderTitle = location.shortFormattedOneLineAddress
         let sectionHeaderFont: Font = Font.title3

@@ -73,7 +73,7 @@ struct ASAComplicationSectionView: View {
         let locationWithClocks = self.locationWithClocksArray(with: complicationKey)
         let location = locationWithClocks.location
         
-        let sectionHeaderEmoji = (location.regionCode ?? "").flag
+        let sectionHeaderEmoji = location.flag
         let sectionHeaderTitle = location.formattedOneLineAddress
         let sectionHeaderFont: Font = Font.title2
         

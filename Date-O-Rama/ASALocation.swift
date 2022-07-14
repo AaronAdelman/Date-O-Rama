@@ -26,14 +26,25 @@ struct ASALocation:  Equatable, Identifiable, Hashable {
     
     var timeZone:  TimeZone = TimeZone.GMT
     
+    var type: ASALocationType
+    
     func hash(into hasher: inout Hasher) {
         hasher.combine(location.coordinate.latitude)
         hasher.combine(location.coordinate.longitude)
-    }
+        hasher.combine(type)
+    } // func hash(into hasher: inout Hasher)
     
     static func ==(lhs: ASALocation, rhs: ASALocation) -> Bool {
+        if lhs.type != rhs.type {
+            return false
+        }
+        
+        if lhs.type == .EarthLocation {
         return lhs.location.coordinate.latitude == rhs.location.coordinate.latitude && lhs.location.coordinate.longitude == rhs.location.coordinate.longitude && lhs.location.altitude == rhs.location.altitude
-    }
+        }
+        
+        return true
+    } // static func ==(lhs: ASALocation, rhs: ASALocation) -> Bool
 } // struct ASALocation
 
 
@@ -99,51 +110,66 @@ extension ASALocation {
             }
         }
         
-        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, regionCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone)
+        let temp = ASALocation(id: UUID(), location: usedLocation, name: placemark?.name, locality: locality, country: country, regionCode: ISOCountryCode, postalCode: placemark?.postalCode, administrativeArea: placemark?.administrativeArea, subAdministrativeArea: placemark?.subAdministrativeArea, subLocality: placemark?.subLocality, thoroughfare: placemark?.thoroughfare, subThoroughfare: placemark?.subThoroughfare, timeZone: timeZone, type: .EarthLocation)
         //        debugPrint(#file, #function, placemark as Any, temp)
         return temp
     } // static func create(placemark:  CLPlacemark?) -> ASALocation
     
     var formattedOneLineAddress:  String {
-        get {
+        switch self.type {
+        case .EarthUniversal:
+            return NSLocalizedString("Earth (all locations)", comment: "")
+            
+        case .MarsUniversal:
+            return NSLocalizedString("Mars (all locations)", comment: "")
+            
+        case .EarthLocation:
             let SEPARATOR = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
-
+            
             var temp: Array<String> = []
             temp.appendIfDifferentAndNotNil(string: self.locality)
             temp.appendIfDifferentAndNotNil(string: self.administrativeArea)
             temp.appendIfDifferentAndNotNil(string: self.country)
-
+            
             if temp.count == 0 {
                 return self.location.humanInterfaceRepresentation
             }
-
+            
             return temp.joined(separator: SEPARATOR)
-        } // get
+        } // switch self.type
     } // var formattedOneLineAddress
 
     var shortFormattedOneLineAddress:  String {
-        get {
+        switch self.type {
+        case .EarthUniversal, .MarsUniversal:
+            return self.formattedOneLineAddress
+            
+        case .EarthLocation:
             if self.locality != nil {
                 return self.locality!
             }
-
+            
             if self.administrativeArea != nil {
                 return self.administrativeArea!            }
-
+            
             if self.country != nil {
                 return self.country!
             }
-
+            
             if self.name != nil {
                 return self.name!
             } else {
                 return self.location.humanInterfaceRepresentation
             }
-        } // get
+        } // switch self.type
     } // var shortFormattedOneLineAddress
 
     var longFormattedOneLineAddress:  String {
-        get {
+        switch self.type {
+        case .EarthUniversal, .MarsUniversal:
+            return self.formattedOneLineAddress
+            
+        case .EarthLocation:
             let SEPARATOR = NSLocalizedString("ADDRESS_SEPARATOR", comment: "")
 
             var temp: Array<String> = []
@@ -157,17 +183,35 @@ extension ASALocation {
             }
 
             return temp.joined(separator: SEPARATOR)
-        } // get
+        } // switch self.type
     } // var longFormattedOneLineAddress
-} // extension ASALocation
 
-
-// MARK:  -
-
-extension ASALocation {
-    static var NullIsland:  ASALocation {
-        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT)
-    } // static var NullIsland
+    static var NullIsland: ASALocation {
+        return ASALocation(id: UUID(), location: CLLocation.NullIsland, name: nil, locality: nil, country: nil, regionCode: nil, postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: TimeZone.GMT, type: .EarthLocation)
+    } // static var NullIsland: ASALocation
+    
+    static var EarthUniversal: ASALocation {
+        return ASALocation(id: UUID(), location: .NullIsland, timeZone: .GMT, type: .EarthUniversal)
+    } // static var EarthUniversal: ASALocation
+    
+    static var MarsUniversal: ASALocation {
+        return ASALocation(id: UUID(), location: .NullIsland, timeZone: .GMT, type: .MarsUniversal)
+    } // static var MarsUniversal: ASALocation
+    
+    var flag: String {
+        var code: String
+        switch self.type {
+        case .EarthUniversal:
+            code = REGION_CODE_Earth
+            
+        case .MarsUniversal:
+            code = REGION_CODE_Mars
+        
+        case .EarthLocation:
+            code = (self.regionCode ?? "")
+        }
+        return code.flag
+    } // switch self.type
 } // extension ASALocation
 
 
@@ -245,7 +289,7 @@ extension ASALocation {
             let latitude: CLLocationDegrees = entry!.latitude
             let longitude: CLLocationDegrees = entry!.longitude
 
-            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, regionCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone)
+            let result: ASALocation = ASALocation(id: UUID(), location: CLLocation(latitude: latitude, longitude: longitude), name: nil, locality: locality, country: country, regionCode: countryCode, postalCode: nil, administrativeArea: administrativeArea, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: currentTimeZone, type: .EarthLocation)
 
             // Store result in cache
             ASALocation.cachedCurrentTimeZoneDefaultIdentifier = currentTimeZoneIdentifier

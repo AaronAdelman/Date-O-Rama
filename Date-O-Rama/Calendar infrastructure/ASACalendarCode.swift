@@ -98,12 +98,7 @@ extension ASACalendarCode {
     var localizedName:  String {
         return NSLocalizedString(self.rawValue, comment: "")
     } // var localizedName
-} // extension ASACalendarCode
 
-
-// MARK:  -
-
-extension ASACalendarCode {
     var isAppleCalendar:  Bool {
         switch self {
         case .Buddhist,
@@ -208,12 +203,7 @@ extension ASACalendarCode {
             return false
         } // switch self
     } // var isFrenchRepublicanCalendar: Bool
-} // extension ASACalendarCode
 
-
-// MARK:  -
-
-extension ASACalendarCode {
     var equivalentCalendarIdentifier:  Calendar.Identifier {
            var identifier:  Calendar.Identifier
            switch self {
@@ -292,10 +282,7 @@ extension ASACalendarCode {
             } // switch self
         } // get
     } // var type
-} // extension ASACalendarCode
 
-
-extension ASACalendarCode {
     func matches(_ otherCalendarCode: ASACalendarCode) -> Bool {
         if self == .allHebrew && otherCalendarCode.isHebrewCalendar {
             return true
@@ -339,5 +326,18 @@ extension ASACalendarCode {
         }
 
         return self == otherCalendarCode
-    }
-}
+    } // func matches(_ otherCalendarCode: ASACalendarCode) -> Bool
+    
+    var locationType: ASALocationType {
+        switch self {
+        case .JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie:
+            return .EarthUniversal
+            
+        case .MarsSolDate:
+            return .MarsUniversal
+            
+        default:
+            return .EarthLocation
+        }
+    } // var locationType
+} // extension ASACalendarCode
