@@ -62,17 +62,18 @@ struct ASAMainClocksByLocationSectionView: View {
 #else
             Spacer()
             Menu {
-                Button(
-                    action: {
-                        self.detail = .editLocation
-                        self.showingDetailView = true
-                        
+                if location.type == .EarthLocation {
+                    Button(
+                        action: {
+                            self.detail = .editLocation
+                            self.showingDetailView = true
+                        }
+                    ) {
+                        HStack {
+                            Image(systemName: "pencil")
+                            Text("Edit location")
+                        } // HStack
                     }
-                ) {
-                    HStack {
-                        Image(systemName: "pencil")
-                        Text("Edit location")
-                    } // HStack
                 }
                 
                 Button(

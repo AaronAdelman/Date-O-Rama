@@ -88,25 +88,27 @@ struct ASAComplicationSectionView: View {
                 Text(sectionHeaderTitle)
                     .lineLimit(2)
                 
-                Spacer()
-                Menu {
-                    Button(
-                        action: {
-                            self.showingDetailView = true
-                            
+                if location.type == .EarthLocation {
+                    Spacer()
+                    Menu {
+                        Button(
+                            action: {
+                                self.showingDetailView = true
+                                
+                            }
+                        ) {
+                            HStack {
+                                Image(systemName: "pencil")
+                                Text("Edit location")
+                            } // HStack
                         }
-                    ) {
-                        HStack {
-                            Image(systemName: "pencil")
-                            Text("Edit location")
-                        } // HStack
+                    } label: {
+                        Image(systemName: "arrow.down.square.fill")
                     }
-                } label: {
-                    Image(systemName: "arrow.down.square.fill")
-                }
-                .sheet(isPresented: self.$showingDetailView, onDismiss: {
-                }) {
-                    ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
+                    .sheet(isPresented: self.$showingDetailView, onDismiss: {
+                    }) {
+                        ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
+                    }
                 }
             } // HStack
         } // VStack
