@@ -49,7 +49,7 @@
         {"type": "1D", "start": {"d": 12, "mon": 2}, "titles": {"en": "Abraham Lincoln’s Birthday", "fr": "Anniversaire de Lincoln"}, "inherits": "*BDay*"},
         {"type": "1D", "start": {"d": 22, "mon": 2}, "titles": {"en": "George Washington’s Birthday", "es": "Natalicio de Washington"}, "inherits": "*BDay*"},
         {"inherits": "Independence Day", "type": "1D", "start": {"d": 2, "mon": 3}, "titles": {"en": "Texas Independence Day"}},
-        {"type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Tax Day", "ar": "يوم الضرائب"}, "urls": {"en": "https://nationaldaycalendar.com/national-tax-day-april-15/"}},
+        {"type": "1D", "start": {"d": 15, "mon": 4}, inherits: "Tax Day", "urls": {"en": "https://nationaldaycalendar.com/national-tax-day-april-15/"}},
         {"type": "1D", "start": {"d": 17, "mon": 4}, "titles": {"en": "National Ellis Island Family History Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-ellis-island-family-history-day-april-17/"}, first: {"era": 1, "y": 2001}, "emoji": "🗽"},
         {"type": "1D", "start": {"d": 18, "mon": 4}, "titles": {"en": "National Lineman Appreciation Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/lineman-appreciation-day/"}, first: {"era": 1, "y": 2013}},
         {"type": "1D", "start": {"d": 19, "mon": 4}, "titles": {"en": "Dutch-American Friendship Day"}, "urls": {"en": "https://nlintheusa.com/dutch-american-friendship-day/"}, first: {"era": 1, "y": 1982}, "emoji": "🇳🇱🇺🇸"},

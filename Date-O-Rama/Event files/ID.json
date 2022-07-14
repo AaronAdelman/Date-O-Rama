@@ -30,6 +30,18 @@
         {"inherits": "Earth Day", "type": "1D", "start": {"mon": 4, "d": 22}, first: {"era": 1, "y": 1970}},
         {titles: {"en": "Regional Autonomy Day", "id": "Hari Otonomi Daerah"}, "type": "1D", "start": {"mon": 4, "d": 25}, first: {era: 1, y: 1996}},
         {titles: {"en": "National Poetry Day", "id": "Hari Puisi Nasional"}, notes: {"en": "National Literature Day"}, "type": "1D", "start": {"mon": 4, "d": 28}, emoji: "🖋"},
+        {"type": "1D", "start": {"mon": 5, "d": 2}, inherits: "National Education Day", first: {"era": 1, "y": 1959}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Education_Day_(Indonesia)"}},
+        {titles: {"en": "Day of the Military Police of the Indonesian National Armed Forces", "id": "Hari POM TNI"}, "type": "1D", "start": {"mon": 5, "d": 11}},
+        {titles: {"en": "National Book Day", "id": "Hari Buku Nasional"}, "type": "1D", "start": {"mon": 5, "d": 17}, emoji: "📚", first: {"era": 1, "y": 2002}},
+        {titles: {"en": "National Awakening Day", "id": "Hari Kebangkitan Nasional"}, "type": "1D", "start": {"mon": 5, "d": 20}, first: {"era": 1, "y": 1985}},
+        {titles: {"en": "National Elderly Day", "id": "Hari Lanjut Usia Nasional"}, "type": "1D", "start": {"mon": 5, "d": 29}, first: {"era": 1, "y": 1996}, emoji: "👴👵"},
+        {titles: {"en": "Agricultural Activity Day", "id": "Hari Krida Pertanian"}, "type": "1D", "start": {"mon": 6, "d": 21}, first: {"era": 1, "y": 1972}, emoji: "🌾"},
+        {titles: {"en": "National Midwife Day", "id": "Hari Bidan Nasional"}, "type": "1D", "start": {"mon": 6, "d": 24}, first: {"era": 1, "y": 1951}},
+        {inherits: "International Day Against Drug Abuse and Illicit Trafficking", "type": "1D", "start": {"mon": 6, "d": 26}, first: {"type": "1D", "era": 1, "y": 1989}},
+        {"type": "1D", "start": {"mon": 6, "d": 29}, "inherits": "Family Day", titles: {"en": "National Family Day", "id": "Hari Keluarga Nasional"}, first: {"type": "1D", "era": 1, "y": 2014}},
+        {titles: {"en": "Bhayangkara Day", "id": "Hari Bhayangkara"}, "type": "1D", "start": {"mon": 7, "d": 1}, emoji: "👮‍♂️👮‍♀️"},
+        {titles: {"en": "Bank Indonesia Day", "id": "Hari Bank Indonesia"}, "type": "1D", "start": {"mon": 7, "d": 5}, emoji: "🏦"},
+        {"type": "1D", "start": {"mon": 7, "d": 14}, inherits: "Tax Day"},
 
 
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
