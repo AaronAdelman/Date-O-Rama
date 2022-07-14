@@ -89,34 +89,38 @@ struct ASAMainClocksByLocationSectionView: View {
                 
                 Divider()
                 
-                Button(
-                    action: {
-                        self.detail = .newClock
-                        self.showingDetailView = true
-                        
+                if location.type == .EarthLocation {
+                    Button(
+                        action: {
+                            self.detail = .newClock
+                            self.showingDetailView = true
+                            
+                        }
+                    ) {
+                        HStack {
+                            Image(systemName: "plus.circle.fill")
+                            Text("Add clock")
+                        } // HStack
                     }
-                ) {
-                    HStack {
-                        Image(systemName: "plus.circle.fill")
-                        Text("Add clock")
-                    } // HStack
                 }
                 
-                Divider()
-                
-                Button(action: {
-                    locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
-                    ASAUserData.shared.savePreferences(code: .clocks)
-                }, label: {
-                    Text("Sort by calendar name ascending")
-                })
-                
-                Button(action: {
-                    locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName > $1.calendar.calendarCode.localizedName})
-                    ASAUserData.shared.savePreferences(code: .clocks)
-                }, label: {
-                    Text("Sort by calendar name descending")
-                })
+                if locationWithClocks.clocks.count > 1 {
+                    Divider()
+                    
+                    Button(action: {
+                        locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }, label: {
+                        Text("Sort by calendar name ascending")
+                    })
+                    
+                    Button(action: {
+                        locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName > $1.calendar.calendarCode.localizedName})
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }, label: {
+                        Text("Sort by calendar name descending")
+                    })
+                }
             } label: {
                 Image(systemName: "arrow.down.square.fill")
             }
