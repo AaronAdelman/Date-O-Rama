@@ -18,6 +18,18 @@
         {titles: {"en": "Ministry of Religious Affairs Day", "id": "Hari Kementerian Agama Republik Indonesia"}, "type": "1D", "start": {"mon": 1, "d": 3}, first: {era: 1, y: 1946}},
         {titles: {"en": "Ocean Duty Day", "id": "Hari Dharma Samudera"}, notes: {"en": "Day of the Sea and Ocean Event", "id": "Hari Peristiwa Laut dan Samudera"}, "type": "1D", "start": {"mon": 1, "d": 15}, first: {era: 1, y: 1962}},
         {titles: {"en": "Food and Nutrition Day", "id": "Hari Gizi dan Makanan"}, notes: {"en": "National Nutrition Day", "id": "Hari Gizi Nasional"}, "type": "1D", "start": {"mon": 1, "d": 25}, first: {era: 1, y: 1951}},
+        {titles: {"en": "National Press Day", "id": "Hari Pers Nasional"}, "type": "1D", "start": {"mon": 2, "d": 9}, first: {era: 1, y: 1985}},
+        {titles: {"en": "State Sovereignty Enforcement Day", "id": "Hari Penegakan Kedaulatan Negara"}, "type": "1D", "start": {"mon": 3, "d": 1}, first: {era: 1, y: 2022}},
+        {titles: {"en": "National Music Day", "id": "Hari Musik Nasional"}, "type": "1D", "start": {"mon": 3, "d": 9}, first: {era: 1, y: 2013}, emoji: "🎶"},
+        {titles: {"en": "National Film Day", "id": "Hari Film Nasional"}, "type": "1D", "start": {"mon": 3, "d": 30}, first: {era: 1, y: 1999}, emoji: "🎞"},
+        {inherits: "National Broadcasting Day", "type": "1D", "start": {"mon": 4, "d": 1}, first: {era: 1, y: 2019}},
+        {titles: {"en": "National Fisherman Day", "id": "Hari Nelayan Nasional"}, "type": "1D", "start": {"mon": 4, "d": 6}, emoji: "🎣"},
+        {"type": "1D", "start": {mon: 4, d: 9}, inherits: "Air Force Day", first: {era: 1, y: 1950}},
+        {inherits: "National Consumer Day", "type": "1D", "start": {"mon": 4, "d": 20}, first: {era: 1, y: 2012}},
+        {titles: {"en": "Kartini Day", "id": "Hari Kartini"}, "type": "1D", "start": {"mon": 4, "d": 21}},
+        {"inherits": "Earth Day", "type": "1D", "start": {"mon": 4, "d": 22}, first: {"era": 1, "y": 1970}},
+        {titles: {"en": "Regional Autonomy Day", "id": "Hari Otonomi Daerah"}, "type": "1D", "start": {"mon": 4, "d": 25}, first: {era: 1, y: 1996}},
+        {titles: {"en": "National Poetry Day", "id": "Hari Puisi Nasional"}, notes: {"en": "National Literature Day"}, "type": "1D", "start": {"mon": 4, "d": 28}, emoji: "🖋"},
 
 
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
