@@ -11,8 +11,15 @@
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}, first: {era: 1, y: 1953}},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Vesak", "type": "1D", "start": {"zmoPhase": "1stFull", "mon": 5}, first: {era: 1, y: 1983}},
-        
-        {"inherits": "Independence Day", "type": "1D", "start": {"d": 17, "mon": 8}},
+        {titles: {"en": "Pancasila Day", "id": "Hari Lahir Pancasila"}, "type": "1D", "start": {"mon": 6, "d": 1}, first: {era: 1, y: 2017}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"d": 17, "mon": 8}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Indonesia)"}, first: {era: 1, y: 1945}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+
+        {titles: {"en": "Ministry of Religious Affairs Day", "id": "Hari Kementerian Agama Republik Indonesia"}, "type": "1D", "start": {"mon": 1, "d": 3}, first: {era: 1, y: 1946}},
+        {titles: {"en": "Ocean Duty Day", "id": "Hari Dharma Samudera"}, notes: {"en": "Day of the Sea and Ocean Event", "id": "Hari Peristiwa Laut dan Samudera"}, "type": "1D", "start": {"mon": 1, "d": 15}, first: {era: 1, y: 1962}},
+        {titles: {"en": "Food and Nutrition Day", "id": "Hari Gizi dan Makanan"}, notes: {"en": "National Nutrition Day", "id": "Hari Gizi Nasional"}, "type": "1D", "start": {"mon": 1, "d": 25}, first: {era: 1, y: 1951}},
+
+
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "d": 12}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 12, "d": 22}},

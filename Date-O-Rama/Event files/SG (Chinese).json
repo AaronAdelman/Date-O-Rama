@@ -6,5 +6,6 @@
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
         {"type": "nD", "start": {"mon": 1, "d": 1}, "end": {"mon": 1, "d": 2}, "inherits": "Chinese New Year"},
+        {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
     ]
 }
