@@ -42,6 +42,13 @@
         {titles: {"en": "Bhayangkara Day", "id": "Hari Bhayangkara"}, "type": "1D", "start": {"mon": 7, "d": 1}, emoji: "👮‍♂️👮‍♀️"},
         {titles: {"en": "Bank Indonesia Day", "id": "Hari Bank Indonesia"}, "type": "1D", "start": {"mon": 7, "d": 5}, emoji: "🏦"},
         {"type": "1D", "start": {"mon": 7, "d": 14}, inherits: "Tax Day"},
+        {titles: {"en": "Attorney Day", "id": "Hari Kejaksaan"}, "type": "1D", "start": {"mon": 7, "d": 22}, emoji: "👨‍💼👩‍💼", notes: {"id": "Hari Bhakti Adhyaksa"}, first: {era: 1, y: 1961}},
+        {"type": "1D", "start": {"mon": 7, "d": 23}, inherits: "National Children’s Day", first: {"era": 1, "y": 1964}},
+        {titles: {"en": "National Space Day", "id": "Hari Keantariksaan Nasional"}, "type": "1D", "start": {"mon": 8, "d": 6}, emoji: "🚀", notes: {"id": "Hari Bhakti Adhyaksa"}, first: {era: 1, y: 2013}},
+        {"inherits": "Veterans Day", "type": "1D", "start": {"mon": 8, "d": 10}, titles: {"en": "National Veterans Day", "id": "Hari Veteran Nasional"}, first: {era: 1, y: 2014}},
+        {"type": "1D", "start": {"mon": 8, "d": 10}, titles: {"en": "National Technology Uprising Day", "id": "Hari Kebangkitan Teknologi Nasional"}, first: {era: 1, y: 1995}},
+        {"type": "1D", "start": {"mon": 8, "d": 14}, titles: {"en": "Gerakan Pramuka Indonesia Day", "id": "Hari Pramuka"}, first: {era: 1, y: 1961}},
+        {"titles": {"en": "Television Day", "he": "יום הטלוויזיה", "id": "Hari Televisi"}, notes: {"en": "Anniversary of TVRI", "id": "Hari Ulang Tahun Televisi Republik Indonesia"}, "type": "1D", "start": {"mon": 8, "d": 24}, first: {"type": "1D", "era": 1, "y": 1962}, "emoji": "📺"},
 
 
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
