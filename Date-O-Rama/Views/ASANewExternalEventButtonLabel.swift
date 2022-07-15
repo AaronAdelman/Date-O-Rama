@@ -13,6 +13,7 @@ struct ASANewExternalEventButtonLabel: View {
     var body: some View {
         HStack {
             Image(systemName: "rectangle.badge.plus")
+                .renderingMode(.original)
             Text(NSLocalizedString("Add external event", comment: ""))
         } // HStack
     }

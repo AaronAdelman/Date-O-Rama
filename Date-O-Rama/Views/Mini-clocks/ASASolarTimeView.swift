@@ -33,6 +33,7 @@ struct ASASolarTimeView: View {
                     .frame(width:   dimension, height: dimension)
                 
                 Image(systemName: "sun.max.fill")  // Sun symbol
+                    .renderingMode(.original)
                     .font(font)
                     .offset(x: -dimension / 2.0)
                     .rotationEffect(.degrees(degrees))

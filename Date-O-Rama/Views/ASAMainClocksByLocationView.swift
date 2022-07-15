@@ -88,6 +88,7 @@ struct ASAMainClocksByLocationSectionView: View {
                 ) {
                     HStack {
                         Image(systemName: "minus.circle.fill")
+                            .renderingMode(.original)
                         Text("Delete location")
                     } // HStack
                 }
@@ -104,6 +105,7 @@ struct ASAMainClocksByLocationSectionView: View {
                     ) {
                         HStack {
                             Image(systemName: "plus.circle.fill")
+                                .renderingMode(.original)
                             Text("Add clock")
                         } // HStack
                     }

@@ -148,8 +148,10 @@ struct ASAClockCellBody:  View {
                             let SMALL_FONT: Font = .callout
                             HStack {
                                 Image(systemName: "calendar")
+                                    .renderingMode(.original)
                                 Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
                                 Image(systemName: "calendar.day.timeline.leading")
+                                    .renderingMode(.original)
                                 Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
                             } // HStack
                         }

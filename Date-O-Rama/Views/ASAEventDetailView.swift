@@ -96,7 +96,8 @@ struct ASAEventDetailView: View {
                             .foregroundColor(Color.secondary)
                         Spacer()
                         Image(systemName: status.systemName)
-                            .foregroundColor(status.color)
+//                            .foregroundColor(status.color)
+                            .renderingMode(.original)
                         Text(status.text)
                     } // HStack
                 } // Section
@@ -534,7 +535,8 @@ struct ASAEKParticipantView: View {
             let contact = self.contactWithPredicate(predicate: participant.contactPredicate)
             
             Image(systemName: status.systemName)
-                .foregroundColor(status.color)
+//                .foregroundColor(status.color)
+                .renderingMode(.original)
             let name: String = participant.name ?? "???"
             #if os(watchOS)
             Text(name)
@@ -581,6 +583,7 @@ struct ASAEKParticipantView: View {
                         }, label: {
                             HStack {
                                 Image(systemName: "phone.circle.fill")
+                                    .renderingMode(.original)
                                 Text(CNLabeledValue<CNPhoneNumber>.localizedString(forLabel: labeledPhoneNumber.label!) + " " + phoneNumber)
                             } // HStack
                         })
