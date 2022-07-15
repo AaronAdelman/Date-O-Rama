@@ -47,12 +47,12 @@ struct ASAMainClocksByLocationSectionView: View {
         let sectionHeaderTitle = location.shortFormattedOneLineAddress
         let sectionHeaderFont: Font = Font.title3
         let sectionHeaderLineLimit = 1
-        let sectionHeaderMinimumScaleFactor = 0.75
+        let sectionHeaderMinimumScaleFactor = 0.50
 #else
         let sectionHeaderTitle = location.formattedOneLineAddress
         let sectionHeaderFont: Font = Font.title2
         let sectionHeaderLineLimit = 2
-        let sectionHeaderMinimumScaleFactor = 0.25
+        let sectionHeaderMinimumScaleFactor = 1.0
 #endif
         
         Section(header: HStack {
