@@ -272,7 +272,7 @@
         {"template": "Talk Like Shakespeare Day", "titles": {"en": "Talk Like Shakespeare Day"}, "type": "1D", "start": {"mon": 4, "d": 23}, "urls": {"en": "http://www.talklikeshakespeare.org/"}, "emoji": "🎭"},
         {"template": "Tartan Day", "type": "1D", "start": {"d": 6, "mon": 4}, "titles": {"en": "Tartan Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
         {"template": "Taurus", "titles": {"en": "Taurus", "he": "שור"}, "type": "1M", "start": {"mon": 9}, "emoji": "♉️", "inherits": "*Astrology*"},
-        {template: "Tax Day", "type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Tax Day", "ar": "يوم الضرائب", "id": "Hari Pajak", "he": "יום המס"}},
+        {template: "Tax Day", "type": "1D", "start": {"d": 15, "mon": 4}, "titles": {"en": "Tax Day", "ar": "يوم الضرائب", "id": "Hari Pajak", "he": "יום המיסים"}},
         {"template": "Teacher’s Day", "titles": {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم", "sq": "Dita e Mësuesit", "hy": "Ուսուցչի օր"}, "type": "1D", "start": {"mon": 3, "d": 23}, "emoji": "👨‍🏫👩‍🏫"},
         {"template": "Territory Day", "titles": {"en": "Territory Day", "he": "יום הטריטוריה"}, "type": "1D", "start": {"mon": 10, "d": 6}},
         {"template": "Thanksgiving Day", "titles": {"en": "Thanksgiving Day", "he": "חג ההודיה", "fr": "Action de grâce", "es": "Acción de Gracias"}, "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving"}, "emoji": "🦃"},
