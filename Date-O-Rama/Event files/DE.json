@@ -11,6 +11,7 @@
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
    ]
 }
 

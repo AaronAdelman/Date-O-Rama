@@ -21,5 +21,6 @@
         {"titles": {"en": "Festival of the Vaquillas"}, "type": "1D", "start": {"mon": 7, "d": 13}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"type": "1D", "start": {"mon": 3, "d": 19}, inherits: "Engineer’s Day"},
-   ]
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, wkd: [1], wkdRecurrence: 2}},
+  ]
 }

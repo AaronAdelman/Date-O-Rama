@@ -13,5 +13,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 23}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 26}},
         {"inherits": "Kupala Night", "type": "1D", "start": {"mon": 6, "d": 23}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
     ]
 }

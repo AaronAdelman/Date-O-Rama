@@ -9,7 +9,8 @@
         {"inherits": "Feast of St. Stephen of Hungary", "type": "1D", "start": {"mon": 8, "d": 20}},
         {"titles": {"en": "1956 Revolution Memorial Day"}, "type": "1D", "start": {"mon": 10, "d": 23}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}}
-    ]
+        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, wkd: [1], wkdRecurrence: -1}},
+   ]
 }
 

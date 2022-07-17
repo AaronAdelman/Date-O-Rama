@@ -19,5 +19,6 @@
         {"titles": {"en": "International Solidarity Day of Azerbaijanis", "az": "Dünya Azərbaycanlılarının Həmrəyliyi günü"}, "type": "1D", "start": {"mon": 12, "d": 31}, "urls": {"en": "https://en.wikipedia.org/wiki/International_Solidarity_Day_of_Azerbaijanis"}, first: {"era": 1, "y": 1991}},
         {"inherits": "Memorial Day", "type": "1D", "start": {"mon": 9, "d": 27}, "urls": {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Azerbaijan)"}, "titles": {"en": "Memorial Day in Azerbaijan", "az": "Azərbaycanda Anım Günü"}, first: {"era": 1, "y": 2021}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
-    ]
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+   ]
 }

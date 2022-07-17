@@ -49,5 +49,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 15}, "inherits": "St. Swithin’s Day", first: {"era": 1, "y": 990}},
         {"type": "nD", "start": {"mon": 7, "d": 16}, "end": {"mon": 7, "d": 31}, "titles": {"en": "Festival of British Archaeology"}, "urls": {"en": "https://nationaltoday.com/festival-of-british-archaeology/"}, first: {"era": 1, "y": 2003}},
         {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Norfolk Day"}, "urls": {"en": "https://nationaltoday.com/norfolk-day/"}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, wkd: [1], wkdRecurrence: 2}},
     ]
 }

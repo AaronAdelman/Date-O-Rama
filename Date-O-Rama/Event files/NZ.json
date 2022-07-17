@@ -12,6 +12,7 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         
         {"titles": {"en": "National Disco Day"}, "type": "1D", "start": {"mon": 7, "d": 2}, "urls": {"en": "https://nationaltoday.com/national-disco-day/"}, "emoji": "🪩"},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 3, wkd: [1], wkdRecurrence: 1}},
         ]
     }
 

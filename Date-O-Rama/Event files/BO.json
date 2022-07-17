@@ -9,5 +9,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 27}},
         {"type": "1D", "start": {"mon": 7, "d": 16}, "titles": {"en": "La Paz Day", "es": "Día del departamento de La Paz"}, "urls": {"en": "https://nationaltoday.com/la-paz-day/"}},
         {"type": "1D", "start": {"mon": 10, "d": 16}, inherits: "Engineer’s Day"},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, d: 12}},
     ]
 }

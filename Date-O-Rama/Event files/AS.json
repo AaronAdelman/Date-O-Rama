@@ -18,5 +18,6 @@
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         
         {"type": "1D", "start": {"mon": 7, "d": 16}, "titles": {"en": "Manu’a Cession Day (in lieu)"}, "urls": {"en": "https://nationaltoday.com/manua-cession-day-in-lieu/"}, first: {"era": 1, "y": 1983}},
-    ]
+        {"inherits": "Children’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
+   ]
 }
