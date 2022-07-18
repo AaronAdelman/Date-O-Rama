@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ASALocationDetailView: View {
     @Binding var locationWithClocks:  ASALocationWithClocks
@@ -34,7 +35,17 @@ struct ASALocationDetailView: View {
                     })
                     
                     ASATimeZoneCell(timeZone: locationWithClocks.location.timeZone, now: now)
-                }
+                } // Section
+                
+                Section {
+                    Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [locationWithClocks.location]) {
+                        tempLocationData
+                        in
+                        MapPin(coordinate: tempLocationData.location.coordinate )
+                    }
+                    .aspectRatio(1.0, contentMode: .fit)
+                    .padding()
+                } // Section
                 
                 Section(header:  Text("")) {
                     HStack {
