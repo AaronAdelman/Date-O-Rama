@@ -75,8 +75,9 @@ struct ASAMainClocksByLocationSectionView: View {
                         }
                     ) {
                         HStack {
-                            Image(systemName: "pencil")
-                            Text("Edit location")
+                            Image(systemName: "info.circle.fill")
+                                .renderingMode(.original)
+                            Text("Details…")
                         } // HStack
                     }
                 }
@@ -141,7 +142,25 @@ struct ASAMainClocksByLocationSectionView: View {
                     ASANewClockDetailView(location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation, now:  now, tempLocation: location)
                     
                 case .editLocation:
-                    ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false)
+//                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
+//                        VStack {
+//                            ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: location)
+//                            Spacer()
+//                            ASATimeZoneCell(timeZone: location.timeZone, now: now)
+//                        }
+//                    })
+                    VStack {
+                        HStack {
+                            Button(action: {
+                                showingDetailView = false
+                                detail = .none
+                            }) {
+                                ASACloseBoxImage()
+                            }
+                            Spacer()
+                        } // HStack
+                    ASALocationDetailView(locationWithClocks: $locationWithClocks, now: $now)
+                    }
                 } // switch detail
             }
             .actionSheet(isPresented: self.$showingActionSheet) {

@@ -990,6 +990,8 @@
 		A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */; };
 		A5FED7E9276BA65100BB11C9 /* Scientology.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FED7E8276BA65100BB11C9 /* Scientology.json */; };
 		A5FED7EA276BA65100BB11C9 /* Scientology.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FED7E8276BA65100BB11C9 /* Scientology.json */; };
+		A5FFBD3A2885A4AD00564D98 /* ASALocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */; };
+		A5FFBD3B2885A4AD00564D98 /* ASALocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */; };
 		E43BF56F4156A9DE51890D8A /* Pods_Date_O_Rama_Date_O_RamaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5404EBF68E036742DA31B7 /* Pods_Date_O_Rama_Date_O_RamaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -1598,6 +1600,7 @@
 		A5FB22DB286462FB00B5042B /* AL (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AL (Julian).json"; sourceTree = "<group>"; };
 		A5FDBCBB26A709C8002AF8F0 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
 		A5FED7E8276BA65100BB11C9 /* Scientology.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Scientology.json; sourceTree = "<group>"; };
+		A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationDetailView.swift; sourceTree = "<group>"; };
 		B3C447BA93A76A917B4BE743 /* Pods-Date-O-RamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Date-O-RamaTests.release.xcconfig"; path = "Target Support Files/Pods-Date-O-RamaTests/Pods-Date-O-RamaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2A7FB74C22622E280B15A95 /* Pods-WatchDate-O-Rama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchDate-O-Rama.release.xcconfig"; path = "Target Support Files/Pods-WatchDate-O-Rama/Pods-WatchDate-O-Rama.release.xcconfig"; sourceTree = "<group>"; };
 		E16E80751115DDE2FE6B15FA /* Pods_Date_O_RamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Date_O_RamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2358,6 +2361,7 @@
 				A523A3DE25A70AB2007CB54B /* Symbols */,
 				A57BCCAA247AA9290019C02C /* Tabs */,
 				A5152A042472BE0B0098A94B /* Wrappers */,
+				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -3503,6 +3507,7 @@
 				A566F4722483D7CF000A05B5 /* ASALocationManager.swift in Sources */,
 				A59D803A2600C57D00FD8BBF /* ASACalendarComponent.swift in Sources */,
 				A5307025279867E4004A5B37 /* ASAMultiEvent.swift in Sources */,
+				A5FFBD3B2885A4AD00564D98 /* ASALocationDetailView.swift in Sources */,
 				A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */,
 				A501B24F259A32AC00A005E4 /* ASAColorRectangle.swift in Sources */,
 				A5596A3F258950AD002298CE /* LocaleExtensions.swift in Sources */,
@@ -3622,6 +3627,7 @@
 				A53437512857971800F8E8AF /* ASAJulianCalendar.swift in Sources */,
 				A5D135B927C41C2200A1A525 /* ASACalendarSupportingMonths.swift in Sources */,
 				A5C77C382433596A00CFEE47 /* ASALocaleChooserView.swift in Sources */,
+				A5FFBD3A2885A4AD00564D98 /* ASALocationDetailView.swift in Sources */,
 				A5DB52D8278B1880001562C1 /* ASAMoonPhaseType.swift in Sources */,
 				A53A5B0024519859005F9876 /* ASALocationManager.swift in Sources */,
 				A59C436525A33E5B009C7F7C /* ASATimeText.swift in Sources */,

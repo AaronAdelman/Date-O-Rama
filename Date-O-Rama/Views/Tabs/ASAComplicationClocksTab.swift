@@ -99,7 +99,7 @@ struct ASAComplicationSectionView: View {
                         ) {
                             HStack {
                                 Image(systemName: "pencil")
-                                Text("Edit location")
+                                Text("Details…")
                             } // HStack
                         }
                     } label: {
