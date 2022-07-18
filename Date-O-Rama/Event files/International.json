@@ -486,7 +486,7 @@
         {"type": "1D", "start": {"mon": 12, "d": 21}, "titles": {"en": "International Dalek Remembrance Day"}, first: {"era": 1, "y": 1963}, "urls": {"en": "https://www.daysoftheyear.com/days/dalek-remembrance-day/"}},
         {"type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Odd Socks Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaltoday.com/odd-socks-day/"}, "emoji": "🧦"},
         {"inherits": "Antarctica Day", "type": "1D", "start": {"mon": 12, "d": 1}, first: {"era": 1, "y": 2010}},
-        {"type": "1D", "start": {"mon": 6, "d": 16}, "titles": {"en": "International Day of the African Child"}, first: {"era": 1, "y": 1976}, "urls": {"en": "https://nationaltoday.com/international-day-of-the-african-child/"}, "emoji": "👦👧"},
+        {"type": "1D", "start": {"mon": 6, "d": 16}, inherits: "International Day of the African Child", first: {"era": 1, "y": 1976}},
         {"type": "1D", "start": {"mon": 6, "d": 21}, "titles": {"en": "World Giraffe Day"}, "urls": {"en": "https://nationaltoday.com/world-giraffe-day/"}, "emoji": "🦒"},
         {"type": "1D", "start": {"d": 2, "mon": 7}, "titles": {"en": "World Sports Journalists Day"}, "urls": {"en": "https://nationaltoday.com/world-sports-journalists-day/"}, "emoji": "🎤", first: {"era": 1, "y": 1994}},
         {"type": "1D", "start": {"d": 24, "mon": 7}, "titles": {"en": "National Thermal Engineer Day"}, "urls": {"en": "https://nationaltoday.com/national-thermal-engineer-day/"}, first: {"era": 1, "y": 2014}, "emoji": "👷‍♂️👷‍♀️"},

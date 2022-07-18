@@ -9,5 +9,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 8, "d": 15}},
         {"type": "1D", "start": {"mon": 7, "d": 25}, "titles": {"en": "Annexation of the Party of Nicoya Day", "es": "La Anexión del Partido de Nicoya"}, "notes": {"en": "Annexation of Guanacaste Day\nAnnexation of Nicoya Day\nGuanacaste Day"}, "urls": {"en": "https://nationaltoday.com/annexation-of-guanacaste/"}, first: {"era": 1, "y": 1824}},
         {"type": "1D", "start": {"mon": 7, "d": 20}, inherits: "Engineer’s Day"},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 9, d: 9}},
     ]
 }

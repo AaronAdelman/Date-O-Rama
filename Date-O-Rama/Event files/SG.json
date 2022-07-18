@@ -8,6 +8,7 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://nationaltoday.com/racial-harmony-day/"}, "titles": {"en": "Racial Harmony Day"}, first: {"era": 1, "y": 1997}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, wkd: [7], wkdRecurrence: 1}},
 
     ]
 }

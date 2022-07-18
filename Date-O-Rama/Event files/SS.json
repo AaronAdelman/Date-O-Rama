@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": -1}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://nationaltoday.com/mothers-day-south-sudan/"}, first: {"era": 1, "y": 2012}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 23}},
    ]
 }

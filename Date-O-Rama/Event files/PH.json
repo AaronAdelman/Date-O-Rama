@@ -16,6 +16,7 @@
        {"type": "1D", "start": {"mon": 7, "d": 4}, "titles": {"en": "Filipino-American Friendship Day"}, "urls": {"en": "https://nationaltoday.com/filipino-american-friendship-day/"}, first: {"era": 1, "y": 1984}, "emoji": "🇵🇭🇺🇸"},
        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/philippines-republic-day/"}, first: {"era": 1, "y": 1996}},
        {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {"era": 1, "y": 1914}},
-        ]
+       {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
+       ]
     }
 

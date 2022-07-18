@@ -12,5 +12,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": -21}},
         {"type": "1D", "start": {"mon": 7, "d": 12}, "inherits": "Orangemen’s Day"},
         {"type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": -1}, "titles": {"en": "Reek Sunday"}, "notes": {"en": "Garland Sunday"}, "urls": {"en": "https://nationaltoday.com/reek-sunday/"}, "emoji": "⛰"},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
     ]
 }

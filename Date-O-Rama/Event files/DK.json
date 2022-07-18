@@ -13,5 +13,6 @@
         {"type": "1D", "start": {"mon": 6, "d": 15}, "titles": {"en": "Day of Valdemar and Reunion Day"}, "urls": {"en": "https://www.andtodayis.com/en/event/Day-of-Valdemar-and-Reunion-Day-in-Denmark"}, first: {"era": 1, "y": 1219}},
         {"type": "1D", "start": {"mon": 6, "d": 11}, "titles": {"en": "Birthday of Prince Henrik"}, "inherits": "*BDay*", "urls": {"en": "https://webplus.info/index.php?page=340&event=57737"}},
         {"inherits": "St. John’s Eve", "type": "1D", "start": {"mon": 6, "d": 23}},
-    ]
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
+   ]
 }

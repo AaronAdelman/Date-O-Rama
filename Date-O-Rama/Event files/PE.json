@@ -11,5 +11,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 28}, "urls": {"en": "https://nationaltoday.com/peru-independence-day/"}, "start": {"era": 1, "y": 1821}},
         {"type": "1D", "start": {"mon": 6, "d": 8}, inherits: "Engineer’s Day"},
-    ]
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [1], wkdRecurrence: 3}},
+   ]
 }

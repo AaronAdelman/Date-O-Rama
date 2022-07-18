@@ -18,6 +18,6 @@
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 1, "d": 11}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 1, "d": 11}, first: {"era": 1, "y": 1995}},
        ]
     }
