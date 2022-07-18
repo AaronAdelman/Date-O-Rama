@@ -33,6 +33,9 @@ enum ASAPreferencesFileCode {
 } // enum ASAPreferencesFileCode
 
 
+fileprivate let TIMESTAMP_KEY = "timestamp"
+
+
 // MARK: -
 
 
@@ -80,6 +83,8 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         } // didSet
     }
     
+    var clocksTimestamp: Date        = .distantPast
+    var complicationsTimestamp: Date = .distantPast
     
     // MARK:  -
     
@@ -247,7 +252,11 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                     // do stuff
                     //                    debugPrint(#file, #function, jsonResult)
-                    self.mainClocks = ASAUserData.locationsWithClocksArray(key: .app, dictionary: jsonResult)
+                    
+                    let timestamp: Date? = Date.date(timeIntervalSince1970: jsonResult[TIMESTAMP_KEY] as? TimeInterval)
+                    if timestamp == nil || timestamp! > self.clocksTimestamp {
+                        self.mainClocks = ASAUserData.locationsWithClocksArray(key: .app, dictionary: jsonResult)
+                    }
                     
                     genericSuccess = true
                 }
@@ -275,11 +284,14 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                     if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
                         // do stuff
                         //                        debugPrint(#file, #function, jsonResult)
+                        let timestamp: Date? = Date.date(timeIntervalSince1970: jsonResult[TIMESTAMP_KEY] as? TimeInterval)
+                        if timestamp == nil || timestamp! > self.complicationsTimestamp {
                         self.threeLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .threeLineLarge, dictionary: jsonResult)[0]
                         self.twoLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .twoLineLarge, dictionary: jsonResult)[0]
                         self.twoLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .twoLineSmall, dictionary: jsonResult)[0]
                         self.oneLineLargeClocks = ASAUserData.locationsWithClocksArray(key: .oneLineLarge, dictionary: jsonResult)[0]
                         self.oneLineSmallClocks = ASAUserData.locationsWithClocksArray(key: .oneLineSmall, dictionary: jsonResult)[0]
+                        }
                         complicationsSuccess = true
                     }
                 } catch {
@@ -355,21 +367,24 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
         if code == .clocks {
             let processedMainClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: self.mainClocks, forComplication: false)
             
+            let timestamp: Date = Date()
             let temp1a: Dictionary<String, Any> = [
+                TIMESTAMP_KEY: timestamp.timeIntervalSince1970,
                 ASAClockArrayKey.app.rawValue:  processedMainClocks
             ]
             
+            self.clocksTimestamp = timestamp
             writePreferences(temp1a, code: .clocks)
-        }
-        
-        if code == .complications {
+        } else if code == .complications {
             let processedThreeLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.threeLineLargeClocks], forComplication: true)
             let processedTwoLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineLargeClocks], forComplication: true)
             let processedTwoLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.twoLineSmallClocks], forComplication: true)
             let processedOneLineLargeClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineLargeClocks], forComplication: true)
             let processedOneLineSmallClocks = self.locationsWithClocksArrayAsJSON(locationsWithClocksArray: [self.oneLineSmallClocks], forComplication: true)
             
+            let timestamp: Date = Date()
             let temp2: Dictionary<String, Any> = [
+                TIMESTAMP_KEY: timestamp.timeIntervalSince1970,
                 ASAClockArrayKey.threeLineLarge.rawValue:  processedThreeLineLargeClocks,
                 ASAClockArrayKey.twoLineLarge.rawValue:  processedTwoLineLargeClocks,
                 ASAClockArrayKey.twoLineSmall.rawValue:  processedTwoLineSmallClocks,
@@ -377,6 +392,7 @@ final class ASAUserData:  NSObject, ObservableObject, NSFilePresenter {
                 ASAClockArrayKey.oneLineSmall.rawValue:  processedOneLineSmallClocks
             ]
             
+            self.complicationsTimestamp = timestamp
             writePreferences(temp2, code: .complications)
         }
         

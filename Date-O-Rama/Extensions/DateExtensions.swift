@@ -264,3 +264,16 @@ extension Date {
         return Date.date(JulianDate: JD)
     }
 }
+
+
+// -
+
+extension Date {
+    static func date(timeIntervalSince1970: TimeInterval?) -> Date? {
+        if timeIntervalSince1970 == nil {
+            return nil
+        }
+        
+        return Date(timeIntervalSince1970: timeIntervalSince1970!)
+    }
+}
