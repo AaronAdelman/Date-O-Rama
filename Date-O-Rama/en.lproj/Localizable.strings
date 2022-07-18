@@ -345,3 +345,6 @@
 "Add clock for Julian date calendar" = "Add clock for Julian date calendar";
 
 "Location Details" = "Location Details";
+"EarthUniversal description" = "The entire planet Earth";
+"MarsUniversal description"  = "The entire planet Mars";
+

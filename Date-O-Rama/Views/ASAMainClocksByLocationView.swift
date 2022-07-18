@@ -26,7 +26,7 @@ struct ASAMainClocksByLocationView:  View {
 enum ASAMainClocksByLocationSectionDetail {
     case none
     case newClock
-    case editLocation
+    case locationDetail
 } // enum ASAMainClocksByLocationSectionDetail
 
 
@@ -67,10 +67,10 @@ struct ASAMainClocksByLocationSectionView: View {
 #else
             Spacer()
             Menu {
-                if location.type == .EarthLocation {
+//                if location.type == .EarthLocation {
                     Button(
                         action: {
-                            self.detail = .editLocation
+                            self.detail = .locationDetail
                             self.showingDetailView = true
                         }
                     ) {
@@ -80,7 +80,7 @@ struct ASAMainClocksByLocationSectionView: View {
                             Text("Details…")
                         } // HStack
                     }
-                }
+//                }
                 
                 Button(
                     action: {
@@ -141,7 +141,7 @@ struct ASAMainClocksByLocationSectionView: View {
                 case .newClock:
                     ASANewClockDetailView(location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation, now:  now, tempLocation: location)
                     
-                case .editLocation:
+                case .locationDetail:
 //                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
 //                        VStack {
 //                            ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: location)
