@@ -83,6 +83,8 @@
 		A50DA52D28686272008D54AE /* TW (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A50DA51328686272008D54AE /* TW (Chinese).json */; };
 		A50DA52F28688BE7008D54AE /* ASALocationWithClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */; };
 		A50DA53028688BE7008D54AE /* ASALocationWithClocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */; };
+		A51128072887381100476792 /* AF (Persian).json in Resources */ = {isa = PBXBuildFile; fileRef = A51128062887381000476792 /* AF (Persian).json */; };
+		A51128082887381100476792 /* AF (Persian).json in Resources */ = {isa = PBXBuildFile; fileRef = A51128062887381000476792 /* AF (Persian).json */; };
 		A513896C2875A8630069F2AB /* ASALocationChooserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A513896B2875A8630069F2AB /* ASALocationChooserView.swift */; };
 		A5150EF625C0237300BC62C4 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150EF525C0237300BC62C4 /* PDFKitView.swift */; };
 		A5150F0B25C026AA00BC62C4 /* What calendar systems are.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0325C026AA00BC62C4 /* What calendar systems are.pdf */; };
@@ -1125,6 +1127,7 @@
 		A50DA51228686272008D54AE /* MO (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "MO (Chinese).json"; sourceTree = "<group>"; };
 		A50DA51328686272008D54AE /* TW (Chinese).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "TW (Chinese).json"; sourceTree = "<group>"; };
 		A50DA52E28688BE6008D54AE /* ASALocationWithClocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationWithClocks.swift; sourceTree = "<group>"; };
+		A51128062887381000476792 /* AF (Persian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AF (Persian).json"; sourceTree = "<group>"; };
 		A513896B2875A8630069F2AB /* ASALocationChooserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationChooserView.swift; sourceTree = "<group>"; };
 		A5150EF525C0237300BC62C4 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		A5150F0425C026AA00BC62C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = "en.lproj/What calendar systems are.pdf"; sourceTree = "<group>"; };
@@ -1702,6 +1705,7 @@
 			children = (
 				A581B88D284E5CB800407D68 /* AD.json */,
 				A5EFFFD8285B855E00F2205F /* AE.json */,
+				A51128062887381000476792 /* AF (Persian).json */,
 				A5E292DC285A606E00925EBD /* AF.json */,
 				A5E292E5285A61D900925EBD /* AG.json */,
 				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
@@ -2774,6 +2778,7 @@
 				A5E496242862525C001BF40C /* KY.json in Resources */,
 				A5B999CA28622CB900072FD5 /* CM.json in Resources */,
 				A5364DA22851066200054BC2 /* PR.json in Resources */,
+				A51128082887381100476792 /* AF (Persian).json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5EFFF88285B7CA200F2205F /* MX.json in Resources */,
 				A5F3B01F285644A100865CEB /* TH.json in Resources */,
@@ -3064,6 +3069,7 @@
 				A5FB22D3286390E500B5042B /* WF.json in Resources */,
 				A581B888284E592000407D68 /* CH.json in Resources */,
 				A5FB22CA2863903600B5042B /* UM.json in Resources */,
+				A51128072887381100476792 /* AF (Persian).json in Resources */,
 				A5D850A5280C932A005247BD /* MM.json in Resources */,
 				A5EFFF69285B63BB00F2205F /* IR (Muslim).json in Resources */,
 				A5E49633286252EC001BF40C /* ME.json in Resources */,

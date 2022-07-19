@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "AF"},
+    "//": "Afghanistan",
+    "defaultLocale": "en",
+    "calendarCode": "his",
+    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
+    "eventSpecifications": [
+           {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 6, "d": 18}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Afghanistan)"}},
+    ]
+}

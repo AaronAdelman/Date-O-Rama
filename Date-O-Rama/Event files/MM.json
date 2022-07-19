@@ -1,6 +1,6 @@
 {
     "titles": {"*": "MM"},
-    "//": "Myanmar",
+    "//": "Myanmar, AKA Burma",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.80, "blue": 0.00},
