@@ -490,5 +490,6 @@
         {"type": "1D", "start": {"mon": 6, "d": 21}, "titles": {"en": "World Giraffe Day"}, "urls": {"en": "https://nationaltoday.com/world-giraffe-day/"}, "emoji": "🦒"},
         {"type": "1D", "start": {"d": 2, "mon": 7}, "titles": {"en": "World Sports Journalists Day"}, "urls": {"en": "https://nationaltoday.com/world-sports-journalists-day/"}, "emoji": "🎤", first: {"era": 1, "y": 1994}},
         {"type": "1D", "start": {"d": 24, "mon": 7}, "titles": {"en": "National Thermal Engineer Day"}, "urls": {"en": "https://nationaltoday.com/national-thermal-engineer-day/"}, first: {"era": 1, "y": 2014}, "emoji": "👷‍♂️👷‍♀️"},
+        {"type": "1D", "start": {"mon": 5, "d": 14}, "titles": {"en": "International Chihuahua Appreciation Day"}, "urls": {"en": "https://nationaltoday.com/international-chihuahua-appreciation-day/"}, first: {"era": 1, "y": 2020}},
     ]
 }
