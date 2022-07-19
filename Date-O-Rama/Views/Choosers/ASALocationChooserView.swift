@@ -42,7 +42,7 @@ struct ASALocationChooserView: View {
     fileprivate func createNewLocationWithClocks() {
         debugPrint(#file, #function, "Create new location with clocks")
         let userData: ASAUserData = ASAUserData.shared
-        let newLocationWithClocks = ASALocationWithClocks(location: tempLocationData, clocks: [ASAClock.generic], usesDeviceLocation: tempUsesDeviceLocation)
+        let newLocationWithClocks = ASALocationWithClocks.generic(location: tempLocationData, usesDeviceLocation: tempUsesDeviceLocation)
         userData.addLocationWithClocks(newLocationWithClocks)
     }
     

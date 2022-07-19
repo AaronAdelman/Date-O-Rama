@@ -12,4 +12,17 @@ enum ASALocationType: String {
     case EarthLocation  = "xl"
     case EarthUniversal = "xj"
     case MarsUniversal  = "zmaj"
+    
+    var defaultCalendarCode: ASACalendarCode {
+        switch self {
+        case .EarthLocation:
+            return .Gregorian
+            
+        case .EarthUniversal:
+            return .JulianDay
+            
+        case .MarsUniversal:
+            return .MarsSolDate
+        } // switch self
+    } // var defaultCalendarCode
 } // enum ASALocationType

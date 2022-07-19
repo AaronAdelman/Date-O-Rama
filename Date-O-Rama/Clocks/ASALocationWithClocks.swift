@@ -52,6 +52,20 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
 //        }
         super.init()
         registerForLocationChangedNotifications()
+    } // init(location: ASALocation, clocks: Array<ASAClock>, usesDeviceLocation: Bool)
+    
+    static func generic(location: ASALocation, usesDeviceLocation: Bool) -> ASALocationWithClocks {
+        let locationType = location.type
+        switch location.type {
+        case .EarthUniversal, .MarsUniversal:
+            return ASALocationWithClocks(location: location, clocks: [ASAClock.generic(calendarCode: locationType.defaultCalendarCode, dateFormat: .full)], usesDeviceLocation: false)
+            
+        case .EarthLocation:
+            let clocks: Array<ASAClock> = (location.regionCode ?? "").defaultCalendarCodes.map {
+                ASAClock.generic(calendarCode: $0, dateFormat: .full)
+            }
+            return ASALocationWithClocks(location: location, clocks: clocks, usesDeviceLocation: usesDeviceLocation)
+        }
     }
     
     fileprivate func registerForLocationChangedNotifications() {
