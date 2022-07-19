@@ -5,6 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
     "eventSpecifications": [
-        
+        {"inherits": "National Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [2], wkdRecurrence: 1}},
+
     ]
 }

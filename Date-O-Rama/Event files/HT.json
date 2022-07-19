@@ -7,6 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": -1}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, d: 12}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 12}},
    ]
 }

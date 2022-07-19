@@ -18,7 +18,6 @@
         {"titles": {"en": "Midsummer Eve"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/midsummer/"}},
         {"inherits": "Midsummer Day", "type": "1D", "start": {"mon": 6, "d": 25}},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
-
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, wkd: [2], wkdRecurrence: 1}},
     ]
 }

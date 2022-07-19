@@ -8,6 +8,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Kupala Night", "type": "1D", "start": {"mon": 7, "d": 6}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}, titles: {"en": "Day of Children’s Protection", "uk": "День захисту дітей"}, first: {era: 1, y: 1998}},
    ]
 }

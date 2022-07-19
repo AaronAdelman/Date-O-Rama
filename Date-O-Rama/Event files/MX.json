@@ -10,6 +10,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Lawyer’s Day"}, "urls": {"en": "https://nationaltoday.com/mexico-lawyers-day/"}, first: {"era": 1, "y": 1960}, "emoji": "👨‍💼👩‍💼"},
         {"type": "1D", "start": {"d": 12, "mon": 3}, "titles": {"en": "Aztec New Year"}, "urls": {"en": "https://nationaltoday.com/aztec-new-year/"}},
         {"type": "1D", "start": {"mon": 7, "d": 1}, inherits: "Engineer’s Day"},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, d: 30}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, d: 30}, first: {era: 1, y: 1925}},
    ]
 }

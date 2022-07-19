@@ -13,6 +13,6 @@
         {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
         {"inherits": "Kupala Night", "type": "1D", "start": {"mon": 7, "d": 6}},
         {"type": "1D", "start": {"mon": 12, "d": 22}, inherits: "Engineer’s Day", titles: {"en": "Power Engineer’s Day"}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}, first: {era: 1, y: 1949}},
    ]
 }

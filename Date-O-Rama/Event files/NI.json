@@ -8,6 +8,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 23}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 30}},
         {"titles": {"en": "Sandinista Revolution Day"}, "type": "1D", "start": {"mon": 7, "d": 19}, "urls": {"en": "https://nationaltoday.com/the-sandinista-revolution-day/"}, first: {"era": 1, "y": 1990}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
    ]
 }
