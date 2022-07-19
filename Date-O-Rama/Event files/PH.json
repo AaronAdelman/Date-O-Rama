@@ -17,6 +17,6 @@
        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/philippines-republic-day/"}, first: {"era": 1, "y": 1996}},
        {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {"era": 1, "y": 1914}},
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
+       {type: "1M", start: {mon: 11}, titles: {"en": "Children’s Month"}, inherits: "Children’s Day"}
        ]
     }
-

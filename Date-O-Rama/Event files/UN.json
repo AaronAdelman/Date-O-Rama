@@ -234,6 +234,7 @@
         {"type": "1D", "start": {"mon": 6, "d": 1}, "titles": {"en": "World Milk Day", "he": "יום החלב הבינלאומי"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-milk-day/"}, "emoji": "🥛", first: {"era": 1, "y": 1915}},
         {"type": "1D", "start": {"mon": 6, "d": 18}, "titles": {"en": "International Day for Countering Hate Speech"}, "urls": {"en": "https://nationaltoday.com/international-day-for-countering-hate-speech/"}},
         {"type": "1D", "start": {"mon": 6, "d": 23}, "titles": {"en": "International Women in Engineering Day"}, "urls": {"en": "https://nationaltoday.com/women-in-engineering-day/"}, first: {"era": 1, "y": 2014}, "emoji": "👷‍♀️"},
+        {type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1954}, inherits: "Universal Children’s Day"},
 
         {"titles": {"en": "International Decade of Indigenous Languages"}, "type": "nY", "start": {"era": 1, "y": 2022}, "end": {"era": 1, "y": 2032}},
         {"titles": {"en": "Second Decade of Action for Road Safety"}, "type": "nY", "start": {"era": 1, "y": 2021}, "emoji": "🚏", "end": {"era": 1, "y": 2030}},
