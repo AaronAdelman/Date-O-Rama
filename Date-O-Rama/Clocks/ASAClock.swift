@@ -536,6 +536,18 @@ extension ASAClock {
 // MARK:  -
 
 extension ASAClock {
+    static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat, regionCode: String) ->  ASAClock {
+        let clock = ASAClock.generic(calendarCode: calendarCode, dateFormat: .full)
+        let builtInCalendarNames = calendarCode.genericBuiltInEventCalendarNames(regionCode: regionCode)
+        for fileName in builtInCalendarNames {
+            let newEventCalendar = ASAEventCalendar(fileName: fileName)
+            if newEventCalendar.eventsFile != nil {
+                clock.builtInEventCalendars.append(newEventCalendar)
+            }
+        } // for fileName in builtInCalendarNames
+        return clock
+    } // static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat, regionCode: String) ->  ASAClock
+    
     static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASAClock {
         let temp = ASAClock()
         temp.calendar = ASAAppleCalendar(calendarCode: calendarCode)

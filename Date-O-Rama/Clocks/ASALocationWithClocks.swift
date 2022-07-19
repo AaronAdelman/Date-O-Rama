@@ -63,14 +63,15 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         case .EarthLocation:
             let regionCode: (String) = (location.regionCode ?? "")
             let clocks: Array<ASAClock> = regionCode.defaultCalendarCodes.map {
-                let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full)
-                let builtInCalendarNames = $0.genericBuiltInEventCalendarNames(regionCode: regionCode)
-                for fileName in builtInCalendarNames {
-                    let newEventCalendar = ASAEventCalendar(fileName: fileName)
-                    if newEventCalendar.eventsFile != nil {
-                        clock.builtInEventCalendars.append(newEventCalendar)
-                    }
-                } // for fileName in builtInCalendarNames
+//                let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full)
+//                let builtInCalendarNames = $0.genericBuiltInEventCalendarNames(regionCode: regionCode)
+//                for fileName in builtInCalendarNames {
+//                    let newEventCalendar = ASAEventCalendar(fileName: fileName)
+//                    if newEventCalendar.eventsFile != nil {
+//                        clock.builtInEventCalendars.append(newEventCalendar)
+//                    }
+//                } // for fileName in builtInCalendarNames
+                let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full, regionCode: regionCode)
                 return clock
             }
             return ASALocationWithClocks(location: location, clocks: clocks, usesDeviceLocation: usesDeviceLocation)

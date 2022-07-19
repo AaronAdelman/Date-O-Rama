@@ -12,63 +12,54 @@ struct ASANewClockDetailView: View {
     @State var selectedClock:  ASAClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
     var location: ASALocation
     var usesDeviceLocation: Bool
-
+    
     @Environment(\.presentationMode) var presentationMode
-
+    
     @State private var showingActionSheet = false
-
+    
     var now:  Date
     
     var tempLocation: ASALocation
-
+        
     fileprivate func dismiss() {
         self.presentationMode.wrappedValue.dismiss()
     } // func dismiss()
-
-    let HORIZONTAL_PADDING:  CGFloat = 20.0
-
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                HStack {
-                    Spacer().frame(width:  HORIZONTAL_PADDING)
-
-                    Button("Cancel") {
-                        self.showingActionSheet = true
-                    }
-
-                    Spacer().frame(minWidth: 0.0)
-
-                    Text("New Clock")
-                        .bold()
-
-                    Spacer().frame(minWidth: 0.0)
-
-                    Button("Add") {
-                        let userData = ASAUserData.shared
-                        userData.addMainClock(clock: self.selectedClock, location: location)
-                        self.dismiss()
-                    }
-
-                    Spacer().frame(width:  HORIZONTAL_PADDING)
-                } // HStack
-
+        VStack {
+            NavigationView {
                 List {
                     ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: true, forAppleWatch: false, tempLocation: tempLocation)
                 } // List
-                Spacer()
-                    .frame(minHeight: 0.0)
-            } // VStack
-            .font(Font.body)
-            .foregroundColor(.primary)
-        } // NavigationView
-        .navigationViewStyle(StackNavigationViewStyle())
-        .actionSheet(isPresented: self.$showingActionSheet) {
-            ActionSheet(title: Text("Are you sure you want to delete this new clock?"), buttons: [
-                .destructive(Text("Cancel Changes")) { self.dismiss() },
-                .default(Text("Continue Editing")) {  }
-            ])
-        }
+                .onAppear() {
+                    self.selectedClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full, regionCode: location.regionCode ?? "")
+                }
+                .navigationTitle("New Clock Details")
+                .toolbar(content: {
+                    ToolbarItemGroup(placement: .cancellationAction) {
+                        Button("Cancel") {
+                            self.showingActionSheet = true
+                        }
+                        .actionSheet(isPresented: self.$showingActionSheet) {
+                            ActionSheet(title: Text("Are you sure you want to delete this new clock?"), buttons: [
+                                .destructive(Text("Cancel Changes")) { self.dismiss() },
+                                .default(Text("Continue Editing")) {  }
+                            ])
+                        }
+                    }
+                    ToolbarItemGroup(placement: .confirmationAction) {
+                        Button("Add") {
+                            let userData = ASAUserData.shared
+                            userData.addMainClock(clock: self.selectedClock, location: location)
+                            self.dismiss()
+                        }
+                    }
+                })
+            } // NavigationView
+            .navigationViewStyle(StackNavigationViewStyle())
+        } // VStack
+        .font(Font.body)
+        .foregroundColor(.primary)
     } // var body
 } // struct ASANewClockDetailView
 
