@@ -15,10 +15,10 @@ struct ASAProcessedClock {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
-    var flagEmojiString:  String
+//    var flagEmojiString:  String
     var timeZoneString:  String
 
-    var locationString:  String
+//    var locationString:  String
     var canSplitTimeFromDate:  Bool
     var supportsTimeZones:  Bool
     var supportsLocations:  Bool
@@ -82,25 +82,25 @@ struct ASAProcessedClock {
         self.timeZoneString = timeZone.abbreviation(for:  now) ?? ""
         #endif
         self.supportsLocations = clock.calendar.supportsLocations
-        if self.supportsLocations {
-            self.flagEmojiString = location.flag
-//            self.usesDeviceLocation = clock.usesDeviceLocation
-            var locationString = ""
-            if location.name == nil && location.locality == nil && location.country == nil {
-                locationString = location.location.humanInterfaceRepresentation
-            } else {
-                #if os(watchOS)
-                locationString = location.shortFormattedOneLineAddress
-                #else
-                locationString = location.formattedOneLineAddress
-                #endif
-            }
-            self.locationString = locationString
-        } else {
-            self.flagEmojiString = "🇺🇳"
-//            self.usesDeviceLocation = false
-            self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
-        }
+//        if self.supportsLocations {
+//            self.flagEmojiString = location.flag
+////            self.usesDeviceLocation = clock.usesDeviceLocation
+//            var locationString = ""
+//            if location.name == nil && location.locality == nil && location.country == nil {
+//                locationString = location.location.humanInterfaceRepresentation
+//            } else {
+//                #if os(watchOS)
+//                locationString = location.shortFormattedOneLineAddress
+//                #else
+//                locationString = location.formattedOneLineAddress
+//                #endif
+//            }
+//            self.locationString = locationString
+//        } else {
+//            self.flagEmojiString = "🇺🇳"
+////            self.usesDeviceLocation = false
+//            self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
+//        }
         self.supportsTimeZones = clock.calendar.supportsTimeZones
         
         self.daysPerWeek = clock.daysPerWeek
