@@ -13,5 +13,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 3, d: 15}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1954}, inherits: "Universal Children’s Day"},
+        {"type": "1D", "start": {"mon": 2, wkd: [3], wkdRecurrence: 2}, inherits: "National Sports Day", first: {"era": 1, "y": 2012}},
    ]
 }
