@@ -121,7 +121,7 @@
         {"titles": {"en": "Celebration:  Birth of Ali al-Hadi, 212 AH"}, "type": "1D", "start": {"mon": 12, "d": 15}, "inherits": "*BDay*"},
         {"titles": {"en": "Mourning:  Martyrdom of Zaynab bint Ali"}, "type": "1D", "start": {"mon": 12, "d": 16
             }},
-        {"titles": {"en": "Remembrance:  Fatimah went to Ali's house after their marriage"}, "type": "1D", "start": {"mon": 12, "d": 19}, "inherits": "*Remembrance*"},
+        {"titles": {"en": "Remembrance:  Fatimah went to Ali’s house after their marriage"}, "type": "1D", "start": {"mon": 12, "d": 19}, "inherits": "*Remembrance*"},
         {"titles": {"en": "Remembrance:  Martyrdom of the children of Muslim ibn Aqeel, 60 AH"}, "type": "1D", "start": {"mon": 12, "d": 23}, "inherits": "*Remembrance*"},
         {"titles": {"en": "Remembrance:  Martyrdom of Maytham al-Tammar, 60 AH"}, "type": "1D", "start": {"mon": 12, "d": 27}, "inherits": "*Remembrance*"},
     ]
