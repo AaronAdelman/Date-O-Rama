@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASANewClockDetailView: View {
-    @State var selectedClock:  ASAClock = ASAClock.generic
+    @State var selectedClock:  ASAClock = ASAClock.generic(calendarCode: .Gregorian, dateFormat: .full)
     var location: ASALocation
     var usesDeviceLocation: Bool
 

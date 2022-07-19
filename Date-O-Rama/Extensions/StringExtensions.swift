@@ -974,47 +974,47 @@ extension String {
     var withStraightenedCurlyQuotes: String {
         return self.replacingOccurrences(of: "‘", with: "'").replacingOccurrences(of: "’", with: "'").replacingOccurrences(of: "“", with: "").replacingOccurrences(of: "”", with: "")
     }
-}
+} // extension String
 
 
-// MARK:  -
+// MARK:  - Defaults for region codes
 
 // TODO:  As of this writing, not all calendars in official use are implemented yet.
 extension String {
     var defaultCalendarCodes: Array<ASACalendarCode> {
-    switch self {
-    case REGION_CODE_Afghanistan, REGION_CODE_Iran:
-        return [.Gregorian, .Persian]
-        
-    case REGION_CODE_Ethiopia:
-        return [.Gregorian, .EthiopicAmeteMihret]
-        
-    case REGION_CODE_Japan:
-        return [.Gregorian, .Japanese]
-        
-    case REGION_CODE_Taiwan:
-        return [.Gregorian, .RepublicOfChina]
-        
-    case REGION_CODE_Thailand:
-        return [.Gregorian, .Buddhist]
-        
-    case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Libya, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen:
-        return [.Gregorian, .IslamicSolar]
-        
-    case REGION_CODE_Egypt:
-        return [.Gregorian, .IslamicSolar, .Coptic]
-        
-    case REGION_CODE_India:
-        return [.Gregorian, .Indian]
-        
-    case REGION_CODE_Israel:
-        return [.Gregorian, .HebrewGRA]
-        
-    case REGION_CODE_Saudi_Arabia:
-        return [.Gregorian, .IslamicUmmAlQuraSolar]
-
-    default:
-        return [.Gregorian]
-    }
-}
-}
+        switch self {
+        case REGION_CODE_Afghanistan, REGION_CODE_Iran:
+            return [.Gregorian, .Persian]
+            
+        case REGION_CODE_Ethiopia:
+            return [.Gregorian, .EthiopicAmeteMihret]
+            
+        case REGION_CODE_Japan:
+            return [.Gregorian, .Japanese]
+            
+        case REGION_CODE_Taiwan:
+            return [.Gregorian, .RepublicOfChina]
+            
+        case REGION_CODE_Thailand:
+            return [.Gregorian, .Buddhist]
+            
+        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Libya, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen:
+            return [.Gregorian, .IslamicSolar]
+            
+        case REGION_CODE_Egypt:
+            return [.Gregorian, .IslamicSolar, .Coptic]
+            
+        case REGION_CODE_India:
+            return [.Gregorian, .Indian]
+            
+        case REGION_CODE_Israel:
+            return [.Gregorian, .HebrewGRA]
+            
+        case REGION_CODE_Saudi_Arabia:
+            return [.Gregorian, .IslamicUmmAlQuraSolar]
+            
+        default:
+            return [.Gregorian]
+        } // switch self
+    } // var defaultCalendarCodes
+} // extension String

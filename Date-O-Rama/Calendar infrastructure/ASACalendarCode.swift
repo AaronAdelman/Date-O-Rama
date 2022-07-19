@@ -340,4 +340,54 @@ extension ASACalendarCode {
             return .EarthLocation
         }
     } // var locationType
+    
+    func genericBuiltInEventCalendarNames(regionCode: String) -> Array<String> {
+        switch self {
+        case .Buddhist:
+            return [regionCode + " (Buddhist)"]
+
+        case .Chinese:
+            return [regionCode + " (Chinese)"]
+            
+        case .Coptic:
+            return [regionCode + " (Coptic)"]
+            
+        case .EthiopicAmeteAlem, .EthiopicAmeteMihret:
+            return [regionCode + " (Ethiopic)"]
+            
+        case .Gregorian:
+            return [regionCode]
+
+        case .Indian:
+            return [regionCode + " (Indian)"]
+            
+        case .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar:
+            return [regionCode + " (Muslim)", "Islam (general)"]
+            
+        case .Japanese:
+            return [regionCode + " (Japanese)"]
+            
+        case .Persian:
+            return [regionCode + " (Persian)"]
+            
+        case .RepublicOfChina:
+            return [regionCode + " (ROC)"]
+
+        case .HebrewGRA, .HebrewMA, .Hebrew:
+            var result: [String] = [regionCode + " (Hebrew)", "Judaism"]
+            if regionCode != REGION_CODE_Israel {
+                result.append("IL (Hebrew)")
+            }
+            return result
+
+        case .FrenchRepublican, .FrenchRepublicanRomme:
+            return ["Rural"]
+            
+        case .Julian:
+            return [regionCode + " (Julian)"]
+            
+        default:
+            return []
+        } // switch self
+    } // func genericBuiltInEventCalendarNames(regionCode: String) -> Array<String>
 } // extension ASACalendarCode
