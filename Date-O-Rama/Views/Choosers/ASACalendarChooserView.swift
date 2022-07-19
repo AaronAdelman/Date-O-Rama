@@ -22,22 +22,22 @@ fileprivate extension Int {
             switch self {
             case ALL_CALENDARS:
                 return NSLocalizedString("All calendars", comment: "")
-
+                
             case APPLE_CALENDARS:
                 return NSLocalizedString("Apple calendars", comment: "")
-
+                
             case SOLAR_CALENDARS:
                 return NSLocalizedString("Solar calendars", comment: "")
-
+                
             case LUNISOLAR_CALENDARS:
                 return NSLocalizedString("Lunisolar calendars", comment: "")
-
+                
             case LUNAR_CALENDARS:
                 return NSLocalizedString("Lunar calendars", comment: "")
-
+                
             case JULIAN_DAY_CALENDARS:
                 return NSLocalizedString("Julian day calendars", comment: "")
-
+                
             default:
                 return ""
             }
@@ -49,11 +49,11 @@ struct ASACalendarChooserView: View {
     let calendarCodes:  Array<ASACalendarCode> = [
         .Gregorian,
         .Buddhist,
-//        .CCSDSJulianDay,
+        //        .CCSDSJulianDay,
         .Chinese,
-//        .CNESJulianDay,
+        //        .CNESJulianDay,
         .Coptic,
-//        .DublinJulianDay,
+        //        .DublinJulianDay,
         .EthiopicAmeteAlem,
         .EthiopicAmeteMihret,
         .FrenchRepublican,
@@ -72,25 +72,25 @@ struct ASACalendarChooserView: View {
         .IslamicUmmAlQuraSolar,
         .Japanese,
         .Julian,
-//        .JulianDay,
-//        .LilianDate,
-//        .MarsSolDate,
-//        .ModifiedJulianDay,
-        .Persian,
-//        .RataDie,
-//        .ReducedJulianDay,
-        .RepublicOfChina,
-//        .TruncatedJulianDay
+        //        .JulianDay,
+        //        .LilianDate,
+        //        .MarsSolDate,
+        //        .ModifiedJulianDay,
+            .Persian,
+        //        .RataDie,
+        //        .ReducedJulianDay,
+            .RepublicOfChina,
+        //        .TruncatedJulianDay
     ]
     
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
     var usesDeviceLocation: Bool
     @State var tempCalendarCode:  ASACalendarCode
-
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var didCancel = false
-
+    
     @State var selection = 0 // All calendars
     
     func calendarCodes(option:  Int) -> Array<ASACalendarCode> {
@@ -101,7 +101,7 @@ struct ASACalendarChooserView: View {
                 
             case APPLE_CALENDARS:
                 return $0.isAppleCalendar
-//                    || $0.isISO8601Calendar
+                //                    || $0.isISO8601Calendar
                 
             case SOLAR_CALENDARS:
                 return $0.type == .solar
@@ -124,20 +124,20 @@ struct ASACalendarChooserView: View {
         }
         return result
     } // func calendarCodes(option:  Int) -> Array<ASACalendarCode>
-
+    
     var body: some View {
         List {
             Picker(selection: $selection, label:
                     Text("Show calendars:")
                    , content: {
-                    Text("All calendars").tag(ALL_CALENDARS)
-                    Text("Apple calendars").tag(APPLE_CALENDARS)
-                    Text("Solar calendars").tag(SOLAR_CALENDARS)
-                    Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
-                    Text("Lunar calendars").tag(LUNAR_CALENDARS)
-//                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
-                   })
-
+                Text("All calendars").tag(ALL_CALENDARS)
+                Text("Apple calendars").tag(APPLE_CALENDARS)
+                Text("Solar calendars").tag(SOLAR_CALENDARS)
+                Text("Lunisolar calendars").tag(LUNISOLAR_CALENDARS)
+                Text("Lunar calendars").tag(LUNAR_CALENDARS)
+                //                    Text("Julian day calendars").tag(JULIAN_DAY_CALENDARS)
+            })
+            
             ForEach(self.calendarCodes(option: selection), id: \.self) {
                 calendarCode
                 in
@@ -150,9 +150,9 @@ struct ASACalendarChooserView: View {
         .font(.body)
         .navigationBarItems(trailing:
                                 Button("Cancel", action: {
-                                    self.didCancel = true
-                                    self.presentationMode.wrappedValue.dismiss()
-                                })
+            self.didCancel = true
+            self.presentationMode.wrappedValue.dismiss()
+        })
         )
         .onAppear() {
             self.tempCalendarCode = self.clock.calendar.calendarCode
@@ -160,6 +160,7 @@ struct ASACalendarChooserView: View {
         .onDisappear() {
             if !self.didCancel {
                 self.clock.calendar = ASACalendarFactory.calendar(code: self.tempCalendarCode)!
+                self.clock.updateWithGenericBuiltInEventCalendars(regionCode: location.regionCode ?? "")
                 self.clock.enforceSelfConsistency(location: location, usesDeviceLocation: usesDeviceLocation)
             }
         }
@@ -169,7 +170,7 @@ struct ASACalendarChooserView: View {
 
 struct ASACalendarCell: View {
     let calendarCode: ASACalendarCode
-
+    
     @Binding var selectedCalendarCode: ASACalendarCode
     
     var body: some View {
