@@ -3,9 +3,10 @@
     "//": "Benin",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.13, "green": 0.53, "blue": 0.28},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 14}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 1}, first: {era: 1, y: 1960}},
    ]
 }

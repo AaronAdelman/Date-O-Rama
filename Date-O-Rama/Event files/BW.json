@@ -3,10 +3,11 @@
     "//": "Botswana",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.67, "green": 0.79, "blue": 0.91},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Presidents’ Day", "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 3}, "urls": {"en": "https://nationaltoday.com/presidents-day-in-botswana/"}, first: {"era": 1, "y": 2006}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 9, "d": 30}, first: {era: 1, y: 1966}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Botswana)"}},
     ]
 }

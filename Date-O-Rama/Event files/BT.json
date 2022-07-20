@@ -3,8 +3,9 @@
     "//": "Bhutan",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 1.00, "green": 0.40, "blue": 0.12},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-    ]
+        {inherits: "National Day", type: "1D", start: {mon: 12, d: 17}, first: {era: 1, y: 1907}},
+  ]
 }

@@ -3,7 +3,7 @@
     "//": "Armenia",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "nD", "start": {"mon": 1, "d": 1}, "end": {"mon": 1, "d": 2}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 1, "d": 6}},
@@ -12,7 +12,7 @@
         {"inherits": "Armenian Genocide Remembrance Day", "type": "1D", "start": {"d": 24, "mon": 4}, first: {"era": 1, "y": 2015}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "Victory Day (May 9)", "type": "1D", "start": {"mon": 5, "d": 9}},
-        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 5, "d": 28}, "urls": {"en": "https://en.wikipedia.org/wiki/Republic_Day_(Armenia)"}, first: {"era": 1, "y": 1988}},
+        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 5, "d": 28}, "urls": {"en": "https://en.wikipedia.org/wiki/Republic_Day_(Armenia)"}, first: {"era": 1, "y": 1918}},
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 7, "d": 5}, first: {"era": 1, "y": 1995}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 9, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Armenia)"}, first: {"era": 1, "y": 1991}},
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},

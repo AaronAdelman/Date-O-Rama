@@ -10,7 +10,7 @@
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://nationaltoday.com/belgium-independence-day/"}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://nationaltoday.com/belgium-independence-day/"}, first: {era: 1, y: 1831}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
         {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 1}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, first: {"era": 1, "y": 1919}},

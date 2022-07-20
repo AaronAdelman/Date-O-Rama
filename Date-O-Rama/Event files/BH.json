@@ -14,6 +14,7 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
         {"type": "1D", "start": {"mon": 7, "d": 1}, inherits: "Engineer’s Day"},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 12, "d": 16}, first: {"era": 1, "y": 1971}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Bahrain)"}},
     ]
 }
 
