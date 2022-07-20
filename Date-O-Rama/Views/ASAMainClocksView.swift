@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-struct ASAMainClocksView:  View {
+struct ASAMainClocksView: View {
     @EnvironmentObject var userData:  ASAUserData
     @Binding var mainClocks:  Array<ASALocationWithClocks>
     @Binding var now:  Date
     
-    var body:  some View {
+    var body: some View {
         ForEach($mainClocks, id: \.self.id) {
             section
             in
-            ASAMainClocksByLocationSectionView(now: $now, locationWithClocks: section)
+            ASAMainClocksSectionView(now: $now, locationWithClocks: section)
         }
     }
-} // struct ASAMainClocksByLocationView:  View
+} // struct ASAMainClocksView
 
 
 enum ASAMainClocksSectionDetail {
@@ -30,7 +30,7 @@ enum ASAMainClocksSectionDetail {
 } // enum ASAMainClocksSectionDetail
 
 
-struct ASAMainClocksByLocationSectionView: View {
+struct ASAMainClocksSectionView: View {
     @Binding var now:  Date
     @Binding var locationWithClocks: ASALocationWithClocks
     
@@ -177,7 +177,7 @@ struct ASAMainClocksByLocationSectionView: View {
         ) {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation
-            ForEach( 0..<locationWithClocks.clocks.count) {
+            ForEach(0..<locationWithClocks.clocks.count) {
                 index
                 in
                 
