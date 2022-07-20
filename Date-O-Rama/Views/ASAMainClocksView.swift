@@ -1,5 +1,5 @@
 //
-//  ASAMainClocksByLocationView.swift
+//  ASAMainClocksView.swift
 //  Date-O-Rama
 //
 //  Created by אהרן שלמה אדלמן on 22/10/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ASAMainClocksByLocationView:  View {
+struct ASAMainClocksView:  View {
     @EnvironmentObject var userData:  ASAUserData
     @Binding var mainClocks:  Array<ASALocationWithClocks>
     @Binding var now:  Date
@@ -23,11 +23,11 @@ struct ASAMainClocksByLocationView:  View {
 } // struct ASAMainClocksByLocationView:  View
 
 
-enum ASAMainClocksByLocationSectionDetail {
+enum ASAMainClocksSectionDetail {
     case none
     case newClock
-    case locationDetail
-} // enum ASAMainClocksByLocationSectionDetail
+    case locationInfo
+} // enum ASAMainClocksSectionDetail
 
 
 struct ASAMainClocksByLocationSectionView: View {
@@ -35,7 +35,7 @@ struct ASAMainClocksByLocationSectionView: View {
     @Binding var locationWithClocks: ASALocationWithClocks
     
     @State private var showingDetailView = false
-    @State private var detail: ASAMainClocksByLocationSectionDetail = .none
+    @State private var detail: ASAMainClocksSectionDetail = .none
     
     @State private var showingActionSheet = false
     
@@ -70,7 +70,7 @@ struct ASAMainClocksByLocationSectionView: View {
 //                if location.type == .EarthLocation {
                     Button(
                         action: {
-                            self.detail = .locationDetail
+                            self.detail = .locationInfo
                             self.showingDetailView = true
                         }
                     ) {
@@ -141,7 +141,7 @@ struct ASAMainClocksByLocationSectionView: View {
                 case .newClock:
                     ASANewClockDetailView(location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation, now:  now, tempLocation: location)
                     
-                case .locationDetail:
+                case .locationInfo:
 //                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
 //                        VStack {
 //                            ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: location)
@@ -222,6 +222,6 @@ struct ASAMainClocksByLocationSectionView: View {
 
 //struct ASAMainRowsByPlaceView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAMainClocksByLocationView(mainClocks: .constant(ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])), now: .constant(Date()))
+//        ASAMainClocksView(mainClocks: .constant(ASALocationWithClocks(location: ASALocation.NullIsland, clocks: [ASAClock.generic])), now: .constant(Date()))
 //    }
 //}

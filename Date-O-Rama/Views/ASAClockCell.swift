@@ -111,17 +111,17 @@ struct ASAClockCellBody:  View {
                     ASAClockCellText(string:  processedClock.calendarString, font:  .subheadlineMonospacedDigit, lineLimit:  1)
                     
                     if canSplitTimeFromDate {
-//#if os(watchOS)
-//                        let LINE_LIMIT = 1
-//#else
+                        //#if os(watchOS)
+                        //                        let LINE_LIMIT = 1
+                        //#else
                         let LINE_LIMIT = 2
-//#endif
+                        //#endif
                         ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  LINE_LIMIT)
                         if shouldShowTime {
                             HStack {
-//                                if processedClock.usesDeviceLocation {
-//                                    ASALocationSymbol()
-//                                }
+                                //                                if processedClock.usesDeviceLocation {
+                                //                                    ASALocationSymbol()
+                                //                                }
                                 
                                 let timeString: String = processedClock.timeString ?? ""
                                 let string = processedClock.supportsTimeZones ? timeString + " · " + processedClock.timeZoneString : timeString
@@ -130,9 +130,9 @@ struct ASAClockCellBody:  View {
                         }
                     } else {
                         HStack {
-//                            if processedClock.usesDeviceLocation {
-//                                ASALocationSymbol()
-//                            }
+                            //                            if processedClock.usesDeviceLocation {
+                            //                                ASALocationSymbol()
+                            //                            }
                             
                             ASAClockCellText(string:  processedClock.dateString, font:  Font.headlineMonospacedDigit, lineLimit:  1)
                         }
@@ -247,9 +247,15 @@ struct ASAClockCellBody:  View {
                             Button(action:
                                     {
                                 detailType = .newEvent
-                                showingDetailView = true                                }, label:  {
-                                    ASANewExternalEventButtonLabel()            .foregroundColor(.accentColor)
-                                })
+                                showingDetailView = true
+                            }, label:  {
+                                HStack {
+                                    Image(systemName: "rectangle.badge.plus")
+                                        .renderingMode(.original)
+                                    Text(NSLocalizedString("Add external event", comment: ""))
+                                } // HStack
+                                .foregroundColor(.accentColor)
+                            })
                         }
                     } label: {
                         Image(systemName: ARROW_SYMBOL_NAME)
