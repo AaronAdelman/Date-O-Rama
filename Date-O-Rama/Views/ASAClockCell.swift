@@ -124,8 +124,9 @@ struct ASAClockCellBody:  View {
                                 //                                }
                                 
                                 let timeString: String = processedClock.timeString ?? ""
-                                let string = processedClock.supportsTimeZones ? timeString + " · " + processedClock.timeZoneString : timeString
-                                ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  2)
+//                                let string = processedClock.supportsTimeZones ? timeString + " · " + processedClock.timeZoneString : timeString
+//                                ASAClockCellText(string:  string, font:  Font.headlineMonospacedDigit, lineLimit:  2)
+                                ASAClockCellText(string: timeString, font:  Font.headlineMonospacedDigit, lineLimit:  2)
                             }
                         }
                     } else {

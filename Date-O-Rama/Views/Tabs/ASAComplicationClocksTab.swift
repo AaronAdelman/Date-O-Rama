@@ -73,21 +73,22 @@ struct ASAComplicationSectionView: View {
         let locationWithClocks = self.locationWithClocksArray(with: complicationKey)
         let location = locationWithClocks.location
         
-        let sectionHeaderEmoji = location.flag
-        let sectionHeaderTitle = location.formattedOneLineAddress
-        let sectionHeaderFont: Font = Font.title2
+//        let sectionHeaderEmoji = location.flag
+//        let sectionHeaderTitle = location.formattedOneLineAddress
+//        let sectionHeaderFont: Font = Font.title2
         
         Section(header: VStack {
             Text(NSLocalizedString(complicationKey.rawValue, comment: ""))
                 .lineLimit(2)
             HStack {
-                if locationWithClocks.usesDeviceLocation {
-                    ASALocationSymbol()
-                }
-                Text(sectionHeaderEmoji)
-                Text(sectionHeaderTitle)
-                    .lineLimit(2)
-                
+//                if locationWithClocks.usesDeviceLocation {
+//                    ASALocationSymbol()
+//                }
+//                Text(sectionHeaderEmoji)
+//                Text(sectionHeaderTitle)
+//                    .lineLimit(2)
+                ASAMainClocksViewSectionHeader(locationWithClocks: locationWithClocks, now: now)
+
                 if location.type == .EarthLocation {
                     Spacer()
                     Menu {
@@ -111,7 +112,7 @@ struct ASAComplicationSectionView: View {
                     }
                 }
             } // HStack
-            .font(sectionHeaderFont)
+//            .font(sectionHeaderFont)
         }, content: {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation

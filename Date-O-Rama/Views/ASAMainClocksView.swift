@@ -41,28 +41,29 @@ struct ASAMainClocksSectionView: View {
     
     var body: some View {
         let location = locationWithClocks.location
-        
-        let sectionHeaderEmoji = location.flag
-#if os(watchOS)
-        let sectionHeaderTitle = location.shortFormattedOneLineAddress
-        let sectionHeaderFont: Font = Font.title3
-        let sectionHeaderLineLimit = 1
-        let sectionHeaderMinimumScaleFactor = 0.50
-#else
-        let sectionHeaderTitle = location.formattedOneLineAddress
-        let sectionHeaderFont: Font = Font.title2
-        let sectionHeaderLineLimit = 2
-        let sectionHeaderMinimumScaleFactor = 1.0
-#endif
+//
+//        let sectionHeaderEmoji = location.flag
+//#if os(watchOS)
+//        let sectionHeaderTitle = location.shortFormattedOneLineAddress
+//        let sectionHeaderFont: Font = Font.title3
+//        let sectionHeaderLineLimit = 1
+//        let sectionHeaderMinimumScaleFactor = 0.50
+//#else
+//        let sectionHeaderTitle = location.formattedOneLineAddress
+//        let sectionHeaderFont: Font = Font.title2
+//        let sectionHeaderLineLimit = 2
+//        let sectionHeaderMinimumScaleFactor = 1.0
+//#endif
         
         Section(header: HStack {
-            if locationWithClocks.usesDeviceLocation {
-                ASALocationSymbol()
-            }
-            Text(sectionHeaderEmoji)
-            Text(sectionHeaderTitle)
-                .lineLimit(sectionHeaderLineLimit)
-                .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
+//            if locationWithClocks.usesDeviceLocation {
+//                ASALocationSymbol()
+//            }
+//            Text(sectionHeaderEmoji)
+//            Text(sectionHeaderTitle)
+//                .lineLimit(sectionHeaderLineLimit)
+//                .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
+            ASAMainClocksViewSectionHeader(locationWithClocks: locationWithClocks, now: now)
 #if os(watchOS)
 #else
             Spacer()
@@ -236,7 +237,7 @@ struct ASAMainClocksSectionView: View {
             }
 #endif
         }
-            .font(sectionHeaderFont)
+//            .font(sectionHeaderFont)
         ) {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation

@@ -16,11 +16,11 @@ struct ASAProcessedClock {
     var dateString:  String
     var timeString:  String?
 //    var flagEmojiString:  String
-    var timeZoneString:  String
+//    var timeZoneString:  String
 
 //    var locationString:  String
     var canSplitTimeFromDate:  Bool
-    var supportsTimeZones:  Bool
+//    var supportsTimeZones:  Bool
     var supportsLocations:  Bool
     var supportsTimes:  Bool
 
@@ -76,11 +76,11 @@ struct ASAProcessedClock {
         self.dateString = dateString
         self.timeString = timeString
         let timeZone = location.timeZone
-        #if os(watchOS)
-        self.timeZoneString = timeZone.extremeAbbreviation(for: now)
-        #else
-        self.timeZoneString = timeZone.abbreviation(for:  now) ?? ""
-        #endif
+//        #if os(watchOS)
+//        self.timeZoneString = timeZone.extremeAbbreviation(for: now)
+//        #else
+//        self.timeZoneString = timeZone.abbreviation(for:  now) ?? ""
+//        #endif
         self.supportsLocations = clock.calendar.supportsLocations
 //        if self.supportsLocations {
 //            self.flagEmojiString = location.flag
@@ -101,7 +101,7 @@ struct ASAProcessedClock {
 ////            self.usesDeviceLocation = false
 //            self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
 //        }
-        self.supportsTimeZones = clock.calendar.supportsTimeZones
+//        self.supportsTimeZones = clock.calendar.supportsTimeZones
         
         self.daysPerWeek = clock.daysPerWeek
         

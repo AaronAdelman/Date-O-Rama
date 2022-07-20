@@ -362,17 +362,17 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssert(clock.builtInEventCalendars.count == 0)
     } // func testChangingTheCalendarOfAClock() throws
     
-    func testExtremeTimeZoneAbbreviation() throws {
-        let now = Date(timeIntervalSinceNow: 0.0)
-        let SECONDS_PER_HOUR = 60 * 60
-        
-        XCTAssert(TimeZone(secondsFromGMT: 0)!.extremeAbbreviation(for: now) == "0")
-        XCTAssert(TimeZone(secondsFromGMT: 1 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎+1")
-        XCTAssert(TimeZone(secondsFromGMT: Int(1.25 * Double(SECONDS_PER_HOUR)))!.extremeAbbreviation(for: now) == "‎+1.25")
-        XCTAssert(TimeZone(secondsFromGMT: Int(1.5 * Double(SECONDS_PER_HOUR)))!.extremeAbbreviation(for: now) == "‎+1.5")
-        XCTAssert(TimeZone(secondsFromGMT: 2 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎+2")
-        XCTAssert(TimeZone(secondsFromGMT: -1 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎-1")
-    } // func testExtremeTimeZoneAbbreviation() throws
+//    func testExtremeTimeZoneAbbreviation() throws {
+//        let now = Date(timeIntervalSinceNow: 0.0)
+//        let SECONDS_PER_HOUR = 60 * 60
+//        
+//        XCTAssert(TimeZone(secondsFromGMT: 0)!.extremeAbbreviation(for: now) == "0")
+//        XCTAssert(TimeZone(secondsFromGMT: 1 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎+1")
+//        XCTAssert(TimeZone(secondsFromGMT: Int(1.25 * Double(SECONDS_PER_HOUR)))!.extremeAbbreviation(for: now) == "‎+1.25")
+//        XCTAssert(TimeZone(secondsFromGMT: Int(1.5 * Double(SECONDS_PER_HOUR)))!.extremeAbbreviation(for: now) == "‎+1.5")
+//        XCTAssert(TimeZone(secondsFromGMT: 2 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎+2")
+//        XCTAssert(TimeZone(secondsFromGMT: -1 * SECONDS_PER_HOUR)!.extremeAbbreviation(for: now) == "‎-1")
+//    } // func testExtremeTimeZoneAbbreviation() throws
     
     func testIslamicPrayerTimes() throws {
         let timeZoneSeconds = 3 * 60 * 60

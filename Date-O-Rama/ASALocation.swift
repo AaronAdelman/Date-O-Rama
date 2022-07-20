@@ -212,6 +212,19 @@ extension ASALocation {
         }
         return code.flag
     } // switch self.type
+    
+    func abbreviatedTimeZoneString(for now: Date) -> String {
+        switch self.type {
+        case .EarthLocation:
+            return self.timeZone.abbreviation(for: now) ?? ""
+            
+        case .EarthUniversal:
+            return TimeZone.GMT.abbreviation() ?? ""
+            
+        case .MarsUniversal:
+            return "MTC"
+        } // switch self.type
+    } // func abbreviatedTimeZoneString(for now: Date) -> String
 } // extension ASALocation
 
 
