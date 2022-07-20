@@ -349,3 +349,8 @@
 "MarsUniversal description"  = "The entire planet Mars";
 
 "New Clock Details" = "New Clock Details";
+
+"Move to top"    = "Move to top";
+"Move to bottom" = "Move to bottom";
+"Move up"        = "Move up";
+"Move down"      = "Move down";

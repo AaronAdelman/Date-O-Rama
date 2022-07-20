@@ -67,20 +67,18 @@ struct ASAMainClocksSectionView: View {
 #else
             Spacer()
             Menu {
-//                if location.type == .EarthLocation {
-                    Button(
-                        action: {
-                            self.detail = .locationInfo
-                            self.showingDetailView = true
-                        }
-                    ) {
-                        HStack {
-                            Image(systemName: "info.circle.fill")
-                                .renderingMode(.original)
-                            Text("Details…")
-                        } // HStack
+                Button(
+                    action: {
+                        self.detail = .locationInfo
+                        self.showingDetailView = true
                     }
-//                }
+                ) {
+                    HStack {
+                        Image(systemName: "info.circle.fill")
+                            .renderingMode(.original)
+                        Text("Details…")
+                    } // HStack
+                }
                 
                 Button(
                     action: {
@@ -112,6 +110,69 @@ struct ASAMainClocksSectionView: View {
                     }
                 }
                 
+                if ASAUserData.shared.mainClocks.count > 1 {
+                    Divider()
+                    
+                    Button(action: {
+                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        guard index != nil else { return }
+                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
+                        ASAUserData.shared.mainClocks.insert(item, at: 0)
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }, label: {
+                        Label {
+                            Text("Move to top")
+                        } icon: {
+                            Image(systemName: "arrow.up.to.line")
+                        }
+                    })
+                    
+                    Button(action: {
+                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        guard index != nil else { return }
+                        guard index! != 0 else { return }
+                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
+                        ASAUserData.shared.mainClocks.insert(item, at: index! - 1)
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }, label: {
+                        Label {
+                            Text("Move up")
+                        } icon: {
+                            Image(systemName: "arrow.up")
+                        }
+                    })
+                    
+                    Button(action: {
+                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        guard index != nil else { return }
+                        guard index! != ASAUserData.shared.mainClocks.count - 1 else { return }
+                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
+                        ASAUserData.shared.mainClocks.insert(item, at: index! + 1)
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }, label: {
+                        Label {
+                            Text("Move down")
+                        } icon: {
+                            Image(systemName: "arrow.down")
+                        }
+                    })
+                    
+                    Button(action: {
+                        let index = ASAUserData.shared.mainClocks.firstIndex(of: locationWithClocks)
+                        guard index != nil else { return }
+                        let item = ASAUserData.shared.mainClocks.remove(at: index!)
+                        ASAUserData.shared.mainClocks.append(item)
+                        ASAUserData.shared.savePreferences(code: .clocks)
+                    }, label: {
+                        Label {
+                            Text("Move to bottom")
+                        } icon: {
+                            Image(systemName: "arrow.down.to.line")
+                        }
+                    })
+
+                }
+                
                 if locationWithClocks.clocks.count > 1 {
                     Divider()
                     
@@ -132,6 +193,7 @@ struct ASAMainClocksSectionView: View {
             } label: {
                 Image(systemName: "arrow.down.square.fill")
             }
+            .font(.body)
             .sheet(isPresented: self.$showingDetailView, onDismiss: {
                 detail = .none
             }) {
