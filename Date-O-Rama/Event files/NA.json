@@ -1,11 +1,12 @@
 {
     "titles": {"*": "NA"},
-    "//": "Nambia",
+    "//": "Namibia",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 1.00, "green": 0.78, "blue": 0.17},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-    ]
+        {inherits: "Heroes’ Day", type: "1D", start: {mon: 8, d: 26}, urls: {"en": "https://en.wikipedia.org/wiki/Heroes%27_Day_(Namibia)"}},
+  ]
 }

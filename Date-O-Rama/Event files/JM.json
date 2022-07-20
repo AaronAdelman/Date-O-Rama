@@ -3,9 +3,10 @@
     "//": "Jamaica",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {"inherits": "Heroes’ Day", "type": "1D", "start": {mon: 10, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 1969}},
    ]
 }

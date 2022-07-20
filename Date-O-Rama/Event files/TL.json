@@ -1,11 +1,12 @@
 {
     "titles": {"*": "TL"},
-    "//": "Timor-Leste",
+    "//": "Timor-Leste, AKA East Timor",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 11, "d": 3}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 12, d: 31}},
     ]
 }

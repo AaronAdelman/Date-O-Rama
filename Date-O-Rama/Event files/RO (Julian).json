@@ -1,0 +1,10 @@
+{
+    "titles": {"*": "RO"},
+    "//": "Romania",
+    "defaultLocale": "en",
+    "calendarCode": "jul",
+    "calendarColor": {"red": 0.00, "green": 0.13, "blue": 0.41},
+    "eventSpecifications": [
+        {inherits: "Heroes’ Day", type: "1D", start: {Easter: "Easter", offsetD: 39}},
+    ]
+}

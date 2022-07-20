@@ -3,9 +3,10 @@
     "//": "Cayman Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.16, "blue": 0.41},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 2, wkd: [1], wkdRecurrence: 2}},
+        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 1, wkd: [2], wkdRecurrence: 4}},
     ]
 }

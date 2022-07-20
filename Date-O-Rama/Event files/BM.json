@@ -8,6 +8,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"titles": {"en": "Mary Prince Day"}, "type": "1D", "start": {"mon": 7, "d": 29, "thruMon": 8, "thruD": 4, "wkd": [6]}, "urls": {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {"era": 1, "y": 2018}},
-
+        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}},
    ]
 }
