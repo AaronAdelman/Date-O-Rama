@@ -111,8 +111,8 @@ struct ASAComplicationSectionView: View {
                     }
                 }
             } // HStack
-        } // VStack
-            .font(sectionHeaderFont), content: {
+            .font(sectionHeaderFont)
+        }, content: {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation
             ForEach(locationWithClocks.clocks, id:  \.uuid) {
