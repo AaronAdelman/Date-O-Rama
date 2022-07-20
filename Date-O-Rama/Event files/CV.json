@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}},
         {"inherits": "Heroes’ Day", "type": "1D", "start": {"mon": 1, d: 20}},
-]
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 5}, first: {"era": 1, "y": 1975}},
+    ]
 }

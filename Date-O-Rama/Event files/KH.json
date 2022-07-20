@@ -3,11 +3,12 @@
     "//": "Cambodia",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.98, "green": 0.88, "blue": 0.13},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"titles": {"en": "King Mother’s Birthday"}, "type": "1D", "start": {"mon": 6, "d": 18}, "urls": {"en": "https://nationaltoday.com/kings-mothers-birthday/"}, first: {"era": 1, "y": 2004}, "inherits": "*BDay*"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 9}, "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_of_Cambodia"}, first: {"era": 1, "y": 1953}},
     ]
 }
