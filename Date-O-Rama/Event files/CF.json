@@ -3,7 +3,7 @@
     "//": "Central African Republic",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.19, "blue": 0.53},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 25}},

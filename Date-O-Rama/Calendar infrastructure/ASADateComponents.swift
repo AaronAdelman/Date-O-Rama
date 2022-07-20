@@ -18,11 +18,11 @@ struct ASADateComponents:  Equatable {
     // MARK:  - Validating a Date
     // WARNING:  Do not call these methods from any variation on ASACalendar!
     
-    var isValidDate: Bool {
-        get {
-            return self.calendar.isValidDate(dateComponents: self)
-        } // get
-    } // var isValidDate
+//    var isValidDate: Bool {
+//        get {
+//            return self.calendar.isValidDate(dateComponents: self)
+//        } // get
+//    } // var isValidDate
     // Indicates whether the current combination of properties represents a date which exists in the current calendar.
     
     var date: Date? {
