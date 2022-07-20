@@ -24,5 +24,6 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 15}, first: {era: 1, y: 2015}},
-    ]
+        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 4, "d": 30}},
+   ]
 }

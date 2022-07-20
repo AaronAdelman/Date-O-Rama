@@ -11,7 +11,7 @@ import SwiftUI
 struct ASACloseBoxImage: View {
     var body: some View {
         Image(systemName: "xmark.circle.fill")
-            .renderingMode(.original)
+            .symbolRenderingMode(.multicolor)
             .font(.title)
 //            .foregroundColor(.secondary)
     }

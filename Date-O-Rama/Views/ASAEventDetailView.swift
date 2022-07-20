@@ -97,7 +97,7 @@ struct ASAEventDetailView: View {
                         Spacer()
                         Image(systemName: status.systemName)
 //                            .foregroundColor(status.color)
-                            .renderingMode(.original)
+                            .symbolRenderingMode(.multicolor)
                         Text(status.text)
                     } // HStack
                 } // Section
@@ -536,7 +536,7 @@ struct ASAEKParticipantView: View {
             
             Image(systemName: status.systemName)
 //                .foregroundColor(status.color)
-                .renderingMode(.original)
+                .symbolRenderingMode(.multicolor)
             let name: String = participant.name ?? "???"
             #if os(watchOS)
             Text(name)
@@ -583,7 +583,7 @@ struct ASAEKParticipantView: View {
                         }, label: {
                             HStack {
                                 Image(systemName: "phone.circle.fill")
-                                    .renderingMode(.original)
+                                    .symbolRenderingMode(.multicolor)
                                 Text(CNLabeledValue<CNPhoneNumber>.localizedString(forLabel: labeledPhoneNumber.label!) + " " + phoneNumber)
                             } // HStack
                         })

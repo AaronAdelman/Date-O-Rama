@@ -120,7 +120,7 @@ struct ASAClocksTab: View {
                         EditButton()
                     } label: {
                         Image(systemName: "gear")
-                            .renderingMode(.original)
+                            .symbolRenderingMode(.multicolor)
                         Text("Settings")
                     }
                     .sheet(isPresented: $isShowingNewLocationView, content: {

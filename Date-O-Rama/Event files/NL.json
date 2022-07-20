@@ -18,5 +18,6 @@
         {"type": "1D", "start": {"mon": 3, wkd: [4], wkdRecurrence: 3}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 9, d: 25}, locations: {"en": "Oosterhout"}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
+        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 5, "d": 4}, titles: {"en": "Remembrance of the Dead", "nl": "Dodenherdenking", "he": "יום הזיכרון למתים"}},
    ]
 }

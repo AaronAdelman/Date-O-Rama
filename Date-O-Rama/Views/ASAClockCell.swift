@@ -148,10 +148,10 @@ struct ASAClockCellBody:  View {
                             let SMALL_FONT: Font = .callout
                             HStack {
                                 Image(systemName: "calendar")
-                                    .renderingMode(.original)
+                                    .symbolRenderingMode(.multicolor)
                                 Text("\(numberOfAllDayEvents)").font(SMALL_FONT)
                                 Image(systemName: "calendar.day.timeline.leading")
-                                    .renderingMode(.original)
+                                    .symbolRenderingMode(.multicolor)
                                 Text("\(numberOfNonAllDayEvents)").font(SMALL_FONT)
                             } // HStack
                         }
@@ -251,7 +251,7 @@ struct ASAClockCellBody:  View {
                             }, label:  {
                                 HStack {
                                     Image(systemName: "rectangle.badge.plus")
-                                        .renderingMode(.original)
+                                        .symbolRenderingMode(.multicolor)
                                     Text(NSLocalizedString("Add external event", comment: ""))
                                 } // HStack
                                 .foregroundColor(.accentColor)

@@ -75,7 +75,7 @@ struct ASAMainClocksSectionView: View {
                 ) {
                     HStack {
                         Image(systemName: "info.circle.fill")
-                            .renderingMode(.original)
+                            .symbolRenderingMode(.multicolor)
                         Text("Details…")
                     } // HStack
                 }
@@ -85,11 +85,12 @@ struct ASAMainClocksSectionView: View {
                         self.showingActionSheet = true
                     }
                 ) {
-                    HStack {
-                        Image(systemName: "minus.circle.fill")
-                            .renderingMode(.original)
+                    Label {
                         Text("Delete location")
-                    } // HStack
+                    } icon: {
+                        Image(systemName: "minus.circle.fill")
+                            .symbolRenderingMode(.multicolor)
+                    }
                 }
                 
                 Divider()
@@ -104,7 +105,7 @@ struct ASAMainClocksSectionView: View {
                     ) {
                         HStack {
                             Image(systemName: "plus.circle.fill")
-                                .renderingMode(.original)
+                                .symbolRenderingMode(.multicolor)
                             Text("Add clock")
                         } // HStack
                     }

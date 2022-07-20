@@ -3,7 +3,7 @@
     "//": "Malaysia",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.2, "blue": 0.63},
+    "calendarColor": {"red": 0.00, "green": 0.20, "blue": 0.63},
     "eventSpecifications": [
         {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Malaysia Day"}},
         {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 31}},

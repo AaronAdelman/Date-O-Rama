@@ -3,10 +3,11 @@
     "//": "South Sudan",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": -1}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://nationaltoday.com/mothers-day-south-sudan/"}, first: {"era": 1, "y": 2012}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 23}},
+        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 7, "d": 30}},
    ]
 }
