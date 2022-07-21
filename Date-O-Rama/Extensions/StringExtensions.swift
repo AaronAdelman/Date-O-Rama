@@ -984,7 +984,7 @@ extension String {
     var defaultCalendarCodes: Array<ASACalendarCode> {
         switch self {
         case REGION_CODE_Afghanistan, REGION_CODE_Iran:
-            return [.Gregorian, .Persian]
+            return [.Gregorian, .Persian, .IslamicSolar]
             
         case REGION_CODE_Ethiopia:
             return [.Gregorian, .EthiopicAmeteMihret]
@@ -993,15 +993,18 @@ extension String {
             return [.Gregorian, .Japanese]
             
         case REGION_CODE_Taiwan:
-            return [.Gregorian, .RepublicOfChina]
+            return [.Gregorian, .RepublicOfChina, .Chinese]
             
         case REGION_CODE_Thailand:
             return [.Gregorian, .Buddhist]
             
-        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Libya, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen:
+        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine:
             return [.Gregorian, .IslamicSolar]
             
-        case REGION_CODE_Egypt:
+        case REGION_CODE_Libya, REGION_CODE_Lebanon:
+            return [.Gregorian, .IslamicSolar, .Julian]
+
+        case REGION_CODE_Egypt, REGION_CODE_Sudan:
             return [.Gregorian, .IslamicSolar, .Coptic]
             
         case REGION_CODE_India:
@@ -1013,6 +1016,16 @@ extension String {
         case REGION_CODE_Saudi_Arabia:
             return [.Gregorian, .IslamicUmmAlQuraSolar]
             
+        case REGION_CODE_Albania, REGION_CODE_Romania:
+            return [.Gregorian, .Julian]
+            
+        case REGION_CODE_Brunei_Darussalam, REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Philippines, REGION_CODE_Singapore, REGION_CODE_Vietnam:
+            return [.Gregorian, .Chinese]
+            
+        case REGION_CODE_Indonesia, REGION_CODE_Malaysia:
+            return [.Gregorian, .Chinese, .IslamicSolar]
+
+
         default:
             return [.Gregorian]
         } // switch self
