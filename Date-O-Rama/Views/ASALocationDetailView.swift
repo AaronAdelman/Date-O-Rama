@@ -52,7 +52,11 @@ struct ASALocationDetailView: View {
                         .aspectRatio(1.0, contentMode: .fit)
                         .padding()
                     } else {
-                        ASAQuasiLocationImage(locationType: locationWithClocks.location.type)
+                        HStack(alignment: .center) {
+                            Spacer()
+                            ASAQuasiLocationImage(locationType: locationWithClocks.location.type)
+                            Spacer()
+                        }
                     }
                 } // Section
                 
@@ -109,9 +113,11 @@ struct ASAQuasiLocationImage: View {
     var locationType: ASALocationType
     
     var body: some View {
+        let DIMENSION = 350.0
         (locationType.image ?? Image(systemName: "photo"))
             .resizable()
             .scaledToFit()
+            .frame(width: DIMENSION, height: DIMENSION, alignment: .center)
     }
 }
 
