@@ -27,7 +27,6 @@ struct ASALocationChooserView: View {
     @ObservedObject var locationManager = ASALocationManager.shared
 
     @Environment(\.dismiss) var dismiss
-//    @State var didCancel = false
     
     fileprivate func propagateInfoBackToParent() {
         debugPrint(#file, #function, "Propagate info back to parent")
@@ -59,7 +58,6 @@ struct ASALocationChooserView: View {
                 
                 Button("OK", action: {
                     debugPrint(#file, #function, "OK button")
-//                    self.didCancel = false
                     if shouldCreateNewLocationWithClocks {
                         createNewLocationWithClocks()
                     } else {
@@ -73,7 +71,6 @@ struct ASALocationChooserView: View {
                 
                 Button("Cancel", action: {
                     debugPrint(#file, #function, "Cancel button")
-//                    self.didCancel = true
                     self.dismiss()
                 })
                 .font(Font.body)
@@ -138,7 +135,6 @@ struct ASALocationChooserView: View {
                 self.tempLocationData = self.locationWithClocks.location
             }
             .onDisappear() {
-//                handleDisappearance()
             }
         }
     }

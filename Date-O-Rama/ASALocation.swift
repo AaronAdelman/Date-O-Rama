@@ -225,6 +225,32 @@ extension ASALocation {
             return "MTC"
         } // switch self.type
     } // func abbreviatedTimeZoneString(for now: Date) -> String
+    
+    func localizedTimeZoneName(for now: Date) -> String {
+        switch self.type {
+        case .EarthLocation:
+            return self.timeZone.localizedName(for: now) 
+            
+        case .EarthUniversal:
+            return TimeZone.GMT.localizedName(for: now) 
+            
+        case .MarsUniversal:
+            return "Coordinated Martian Time"
+        } // switch self.type
+    } // func localizedTimeZoneName(for now: Date) -> String
+    
+    var properName: String? {
+        switch self.type {
+        case .EarthLocation:
+            return name
+
+        case .EarthUniversal:
+            return NSLocalizedString("Earth (all locations)", comment: "")
+            
+        case .MarsUniversal:
+            return NSLocalizedString("Mars (all locations)", comment: "")
+        } // switch self.type
+    } // var properName
 } // extension ASALocation
 
 

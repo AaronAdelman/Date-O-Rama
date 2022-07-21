@@ -40,7 +40,7 @@ struct ASAClockDetailView: View {
                 ASAClockDetailEditingSection(selectedClock: selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, now: now, shouldShowTime: shouldShowTime, forAppleWatch: forAppleWatch, tempLocation: tempLocation)
                 
                 if deletable {
-                    Section(header:  Text("")) {
+                    Section {
                         HStack {
                             Spacer()
                             Button(action: {
@@ -94,16 +94,6 @@ struct ASAClockDetailEditingSection:  View {
                 NavigationLink(destination: ASACalendarChooserView(clock: self.selectedClock, location: location, usesDeviceLocation: usesDeviceLocation, tempCalendarCode: self.selectedClock.calendar.calendarCode)) {
                     ASAClockDetailCell(title: NSLocalizedString("HEADER_Calendar", comment: ""), detail: self.selectedClock.calendar.calendarCode.localizedName)
                 }
-                
-//                if selectedClock.calendar.supportsTimeZones || selectedClock.calendar.supportsLocations {
-//                    //                    NavigationLink(destination:  ASALocationChooserView(clock:  selectedClock, tempLocationData: tempLocation)) {
-//                    VStack {
-//                        ASALocationCell(usesDeviceLocation: usesDeviceLocation, locationData: location)
-//                        Spacer()
-//                        ASATimeZoneCell(timeZone: location.timeZone, now: now)
-//                    } // VStack
-//                    //                    }
-//                }
                 
                 if selectedClock.supportsLocales {
                     NavigationLink(destination: ASALocaleChooserView(clock: selectedClock, location: location, tempLocaleIdentifier: selectedClock.localeIdentifier)) {

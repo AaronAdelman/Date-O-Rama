@@ -59,14 +59,17 @@ struct ASALocationCell:  View {
                         }
                     }
                 }
-                HStack {
-                    Spacer()
-                    Text(verbatim: locationData.location.humanInterfaceRepresentation).multilineTextAlignment(.trailing)
-                }
-                if locationData.name != nil {
+                if locationData.type == .EarthLocation {
                     HStack {
                         Spacer()
-                        Text(locationData.name!)
+                        Text(verbatim: locationData.location.humanInterfaceRepresentation).multilineTextAlignment(.trailing)
+                    }
+                }
+                let name = locationData.properName
+                if name != nil {
+                    HStack {
+                        Spacer()
+                        Text(name!)
                     }
                 }
                 

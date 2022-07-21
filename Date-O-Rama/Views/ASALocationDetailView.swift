@@ -29,29 +29,34 @@ struct ASALocationDetailView: View {
 #else
         NavigationView {
             List {
-                if locationWithClocks.location.type == .EarthLocation {
-                    Section(header:  Text("")) {
+                Section {
+                    if locationWithClocks.location.type == .EarthLocation {
                         NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
                             ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location)
                         })
-                        
-                        ASATimeZoneCell(timeZone: locationWithClocks.location.timeZone, now: now)
-                    } // Section
+                    } else {
+                        ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location)
+                    }
                     
-                    Section {
-                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [locationWithClocks.location]) {
+                    ASATimeZoneCell(timeZone: locationWithClocks.location.timeZone, now: now)
+                } // Section
+                
+                Section {
+                    if locationWithClocks.location.type == .EarthLocation {
+                        let METERS = 1000000.0
+                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: locationWithClocks.location.location.coordinate , latitudinalMeters: METERS, longitudinalMeters: METERS)), annotationItems:  [locationWithClocks.location]) {
                             tempLocationData
                             in
                             MapPin(coordinate: tempLocationData.location.coordinate )
                         }
                         .aspectRatio(1.0, contentMode: .fit)
                         .padding()
-                    } // Section
-                } else {
-                    ASAQuasiLocationSection(locationType: locationWithClocks.location.type)
-                }
+                    } else {
+                        ASAQuasiLocationImage(locationType: locationWithClocks.location.type)
+                    }
+                } // Section
                 
-                Section(header:  Text("")) {
+                Section {
                     HStack {
                         Spacer()
                         Button(action: {
@@ -85,17 +90,6 @@ struct ASALocationDetailView: View {
 //  -
 
 extension ASALocationType {
-    var rawText: String? {
-        switch self {
-        case .EarthLocation:
-            return nil
-        case .EarthUniversal:
-            return "EarthUniversal description"
-        case .MarsUniversal:
-            return "MarsUniversal description"
-        }
-    }
-
     var image: Image? {
         switch self {
         case .EarthLocation:
@@ -111,16 +105,13 @@ extension ASALocationType {
 
 //  -
 
-struct ASAQuasiLocationSection: View {
+struct ASAQuasiLocationImage: View {
     var locationType: ASALocationType
     
     var body: some View {
-        Section(header:  Text(NSLocalizedString(locationType.rawText ?? "", comment: ""))
-            .font(.title)) {
-            (locationType.image ?? Image(systemName: "photo"))
-                .resizable()
-                .scaledToFit()
-        }
+        (locationType.image ?? Image(systemName: "photo"))
+            .resizable()
+            .scaledToFit()
     }
 }
 

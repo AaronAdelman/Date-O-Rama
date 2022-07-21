@@ -41,28 +41,8 @@ struct ASAMainClocksSectionView: View {
     
     var body: some View {
         let location = locationWithClocks.location
-//
-//        let sectionHeaderEmoji = location.flag
-//#if os(watchOS)
-//        let sectionHeaderTitle = location.shortFormattedOneLineAddress
-//        let sectionHeaderFont: Font = Font.title3
-//        let sectionHeaderLineLimit = 1
-//        let sectionHeaderMinimumScaleFactor = 0.50
-//#else
-//        let sectionHeaderTitle = location.formattedOneLineAddress
-//        let sectionHeaderFont: Font = Font.title2
-//        let sectionHeaderLineLimit = 2
-//        let sectionHeaderMinimumScaleFactor = 1.0
-//#endif
         
         Section(header: HStack {
-//            if locationWithClocks.usesDeviceLocation {
-//                ASALocationSymbol()
-//            }
-//            Text(sectionHeaderEmoji)
-//            Text(sectionHeaderTitle)
-//                .lineLimit(sectionHeaderLineLimit)
-//                .minimumScaleFactor(sectionHeaderMinimumScaleFactor)
             ASAMainClocksViewSectionHeader(locationWithClocks: locationWithClocks, now: now)
 #if os(watchOS)
 #else
@@ -193,9 +173,8 @@ struct ASAMainClocksSectionView: View {
                     })
                 }
             } label: {
-                Image(systemName: "arrow.down.square.fill")
+                Image(systemName: "arrow.down.square.fill").font(.title)
             }
-            .font(.body)
             .sheet(isPresented: self.$showingDetailView, onDismiss: {
                 detail = .none
             }) {
@@ -206,13 +185,6 @@ struct ASAMainClocksSectionView: View {
                     ASANewClockDetailView(location: locationWithClocks.location, usesDeviceLocation: locationWithClocks.usesDeviceLocation, now:  now, tempLocation: location)
                     
                 case .locationInfo:
-//                    NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
-//                        VStack {
-//                            ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: location)
-//                            Spacer()
-//                            ASATimeZoneCell(timeZone: location.timeZone, now: now)
-//                        }
-//                    })
                     VStack {
                         HStack {
                             Button(action: {
@@ -225,6 +197,7 @@ struct ASAMainClocksSectionView: View {
                         } // HStack
                     ASALocationDetailView(locationWithClocks: $locationWithClocks, now: $now)
                     }
+                    .font(.body)
                 } // switch detail
             }
             .actionSheet(isPresented: self.$showingActionSheet) {
@@ -237,7 +210,6 @@ struct ASAMainClocksSectionView: View {
             }
 #endif
         }
-//            .font(sectionHeaderFont)
         ) {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation
