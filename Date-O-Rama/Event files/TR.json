@@ -20,7 +20,7 @@
         {"inherits": "St. Barbara’s Day", "type": "1D", "start": {"mon": 12, "d": 17}},
 
         {"type": "1D", "start": {"mon": 5, "d": 27}, "titles": {"en": "Freedom and Constitution Day", "tr": "Mayıs Hürriyet ve Anayasa Bayramı"}, "urls": {"en": "https://en.wikipedia.org/wiki/Freedom_and_Constitution_Day"}, first: {"era": 1, "y": 1963}},
-        {"type": "1D", "start": {"mon": 7, "d": 23}, "titles": {"en": "İyd-i Millî", "tr": "İyd-i Millî"}, "urls": {"en": "https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%C4%B0yd-i_Mill%C3%AE"}, first: {"era": 1, "y": 1909}},
+        {"type": "1D", "start": {"mon": 7, "d": 23}, "titles": {"en": "İyd-i Millî", "tr": "İyd-i Millî"}, "urls": {"en": "https://en.wikipedia.org/wiki/%C4%B0yd-i_Mill%C3%AE"}, first: {"era": 1, "y": 1909}},
         {"type": "1D", "start": {"mon": 9, "d": 19}, inherits: "Engineer’s Day"},
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 3, "d": 18}},
     ]
