@@ -238,7 +238,7 @@
         {"template": "Patriots’ Day", "type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Patriots’ Day", "fr": "Journée des patriotes"}, "urls": {"en": "https://en.wikipedia.org/wiki/Patriots%27_Day"}},
         {"template": "Pentecost", "titles": {"en": "Pentecost"}, "notes": {"en": "Whitsunday\nWhit Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}, "emoji": "⚪️", "urls": {"en": "https://nationaltoday.com/pentecost/"}},
         {"template": "Pi Day", "type": "1D", "start": {"d": 14, "mon": 3}, "titles": {"en": "Pi Day", "he": "יום פאי"}, "emoji": "π", "urls": {"en": "https://www.piday.org/"}},
-        {"template": "Pioneer Day", "titles": {"en": "Pioneer Day"}, "type": "1D", "start": {"mon": 7, "d": 24}, "urls": {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
+        {"template": "Pioneer Day", "titles": {"en": "Pioneer Day", "he": "יום החלוץ"}, "type": "1D", "start": {"mon": 7, "d": 24}, "urls": {"en": "https://www.daysoftheyear.com/days/pioneer-day/"}},
         {"template": "Pisces", "titles": {"en": "Pisces", "he": "דגים"}, "type": "1M", "start": {"mon": 7, "yLengths": [353, 354, 355]}, "emoji": "♓️", "inherits": "*Astrology*"},
         {"template": "Pregnancy and Infant Loss Remembrance Day", "type": "1D", "start": {"mon": 10, "d": 15}, "titles": {"en": "Pregnancy and Infant Loss Remembrance Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-pregnancy-and-infant-loss-remembrance-day-october-15/"}, "emoji": "🕯"},
         {"template": "Presentation of the Blessed Virgin Mary", "titles": {"en": "Presentation of the Blessed Virgin Mary"}, "type": "1D", "start": {"mon": 11, "d": 21}},
