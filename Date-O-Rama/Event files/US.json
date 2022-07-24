@@ -192,7 +192,7 @@
         {"type": "1D", "start": {"mon": 6, "d": 30}, "titles": {"en": "National Corvette Day"}, first: {"era": 1, "y": 2008}, "urls": {"en": "https://nationaltoday.com/national-corvette-day/"}},
         {"titles": {"en": "National Air Traffic Control Day"}, "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/national-air-traffic-control-day/"}, first: {"era": 1, "y": 1986}},
         {"titles": {"en": "National Atomic Veterans’ Day"}, "type": "1D", "start": {"mon": 7, "d": 16}, "urls": {"en": "https://nationaltoday.com/national-atomic-veterans-day/"}, first: {"era": 1, "y": 1983}},
-        {"titles": {"en": "National Day of the Cowboy"}, "type": "1D", "start": {"mon": 7, "wkd": [7], "wkdRecurrence": 4}, "urls": {"en": "https://nationaltoday.com/national-day-of-the-cowboy/"}, first: {"era": 1, "y": 2005}, "emoji": "🤠"},
+        {"titles": {"en": "National Day of the Cowboy", "he": "יום הקאובוי הלאומי"}, "type": "1D", "start": {"mon": 7, "wkd": [7], "wkdRecurrence": 4}, "urls": {"en": "https://nationaltoday.com/national-day-of-the-cowboy/"}, first: {"era": 1, "y": 2005}, "emoji": "🤠"},
         {"type": "1D", "start": {"mon": 7, "d": 31}, "inherits": "Flag Day", "urls": {"en": "https://nationaltoday.com/hawaii-flag-day/"}, first: {"era": 1, "y": 1990}, "titles": {"en": "Hawaii Flag Day"}},
         {titles: {"en": "National Fragile X Awareness Day"}, type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaldaycalendar.com/national-fragile-x-awareness-day-july-22/"}, first: {era: 1, y: 2000}, emoji: "🧬"},
 
