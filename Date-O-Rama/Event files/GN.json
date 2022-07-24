@@ -3,8 +3,8 @@
     "//": "Guinea",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.81, "green": 0.07, "blue": 0.15},
     "eventSpecifications": [
-        
+    {inherits: "Independence Day", type: "1D", start: {d: 2, mon: 10}, first: {era: 1, y: 1958}},
     ]
 }
