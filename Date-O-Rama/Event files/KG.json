@@ -3,9 +3,10 @@
     "//": "Kyrgyzstan",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 19}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {inherits: "Independence Day", type: "1D", start: {d: 31, mon: 8}, first: {era: 1, y: 1991}},
     ]
 }

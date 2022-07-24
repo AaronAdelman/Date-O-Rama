@@ -3,11 +3,12 @@
     "//": "Nigeria",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": -21}},
        {"type": "1D", "start": {"mon": 6, "d": 12}, "titles": {"en": "Democracy Day"}, "urls": {"en": "https://nationaltoday.com/democracy-day/"}, first: {"era": 1, "y": 2019}, emoji: "🗳"},
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, d: 27}, first: {"era": 1, "y": 1964}},
+       {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 10}, first: {era: 1, y: 1960}},
     ]
 }

@@ -7,7 +7,7 @@
     "calendarColor": {"red": 0.10, "green": 0.25, "blue": 0.13},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 23, "mon": 3}, "titles": {"en": "Pakistan Day", "ur": "یوم پاکستان"}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"d": 14, "mon": 8}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"d": 14, "mon": 8}, first: {era: 1, y: 1947}},
         {"type": "1D", "start": {"mon": 12, "d": 25}, "titles": {"en": "Quaid-e-Azam Day", "ur": "یوم ولادت قائداعظم"}, urls: {"en": "https://en.wikipedia.org/wiki/Jinnah%27s_Birthday"}, first: {era: 1, y: 1942}, "inherits": "*BDay*"},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
 

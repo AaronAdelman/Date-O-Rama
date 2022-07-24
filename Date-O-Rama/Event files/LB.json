@@ -17,7 +17,7 @@
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 5, "d": 6}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, first: {"era": 1, "y": 1916}},
         {"titles": {"en": "Liberation and Resistance Day", "ar": "عيد المقاومة و التحرير", "fr": "Fête de la Libération et Résistance"}, "type": "1D", "start": {"mon": 5, "d": 25}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 22}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 22}, first: {era: 1, y: 1943}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         
         {"inherits": "St. Vardanian’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": -52}},

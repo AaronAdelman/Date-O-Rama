@@ -12,5 +12,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 1}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, wkd: [1], wkdRecurrence: -1}, first: {era: 1, y: 1950}},
         {"inherits": "Heroes’ Day", "type": "1D", "start": {"mon": 5, d: 31}, first: {era: 1, y: 2001}},
+        {inherits: "Independence Day", type: "1D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], wkdRecurrence: -1, mon: 6}, first: {era: 1, y: 1991}},
    ]
 }
