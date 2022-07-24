@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, first: {"era": 1, "y": 1994}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 2, d: 1}},
+        {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 7}, first: {era: 1, y: 1962}},
     ]
 }

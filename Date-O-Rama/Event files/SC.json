@@ -3,8 +3,9 @@
     "//": "Seychelles",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.18, "blue": 0.42},
     "eventSpecifications": [
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 6, "d": 18}, "urls": {"en": "https://nationaltoday.com/seychelles-constitution-day/"}, first: {"era": 1, "y": 1993}},
+        {inherits: "Independence Day", type: "1D", start: {d: 29, mon: 6}, first: {era: 1, y: 1976}},
     ]
 }

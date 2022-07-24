@@ -8,7 +8,7 @@
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 5, "d": 25}, first: {era: 1, y: 1946}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 5, "d": 25}, first: {era: 1, y: 1946}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Jordan)"}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 21}},

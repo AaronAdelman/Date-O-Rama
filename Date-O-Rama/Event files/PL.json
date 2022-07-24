@@ -9,7 +9,7 @@
         {"inherits": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 3}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 11}},
+        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 11}, first: {era: 1, y: 1918}, urls: {"en": "https://en.wikipedia.org/wiki/National_Independence_Day_(Poland)"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 23}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 26}},
         {"inherits": "Kupala Night", "type": "1D", "start": {"mon": 6, "d": 23}},

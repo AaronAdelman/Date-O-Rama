@@ -6,6 +6,6 @@
     "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 2}, first: {era: 1, y: 1974}},
+        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 2}, first: {era: 1, y: 1974}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Grenada)"}},
     ]
 }

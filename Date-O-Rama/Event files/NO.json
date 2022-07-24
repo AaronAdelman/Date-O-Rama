@@ -5,13 +5,14 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.73, "green": 0.05, "blue": 0.18},
     "eventSpecifications": [
-        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, "emoji": "🇳🇴"},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 5, "d": 17}, urls: {"en": "https://en.wikipedia.org/wiki/Constitution_Day_(Norway)"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 2, "wkd": [1], "wkdRecurrence": 2}},
         {"titles": {"en": "Queen Sonja’s Day"}, "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/queen-sonjas-day/"}, first: {"era": 1, "y": 1991}, "inherits": "*BDay*"},
         {"type": "1D", "start": {"mon": 7, "d": 2}, "inherits": "St. Swithin’s Day", first: {"era": 1, "y": 990}},
         {"titles": {"en": "Crown Prince Haakon’s Day"}, "type": "1D", "start": {"mon": 7, "d": 20}, "urls": {"en": "https://nationaltoday.com/crown-prince-haakons-day/"}, first: {"era": 1, "y": 1973}, "inherits": "*BDay*"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, d: 17}},
+        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 6}, first: {era: 1, y: 1905}, urls: {"en": "https://en.wikipedia.org/wiki/Union_Dissolution_Day"}},
 
     ]
 }

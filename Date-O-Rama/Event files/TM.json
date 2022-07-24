@@ -3,8 +3,9 @@
     "//": "Turkmenistan",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {inherits: "Independence Day", type: "1D", start: {d: 27, mon: 9}, first: {era: 1, y: 1991}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Turkmenistan)"}},
     ]
 }

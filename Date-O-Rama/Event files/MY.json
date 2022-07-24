@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.00, "green": 0.20, "blue": 0.63},
     "eventSpecifications": [
         {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Malaysia Day"}},
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 31}, first: {era: 1, y: 1957}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 31}, first: {era: 1, y: 1957}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Malaysia)"}},
         {"inherits": "Gawai Dayak", "type": "nD", "start": {"mon": 6, "d": 1}, "end": {"mon": 6, "d": 2}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},

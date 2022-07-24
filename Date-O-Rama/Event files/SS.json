@@ -9,5 +9,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://nationaltoday.com/mothers-day-south-sudan/"}, first: {"era": 1, "y": 2012}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 23}},
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 7, "d": 30}},
-   ]
+        {inherits: "Independence Day", type: "1D", start: {d: 9, mon: 7}, first: {era: 1, y: 2011}},
+    ]
 }

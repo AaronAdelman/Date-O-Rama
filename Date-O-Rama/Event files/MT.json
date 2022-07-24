@@ -7,6 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {inherits: "Independence Day", type: "1D", start: {d: 21, mon: 9}, first: {era: 1, y: 1964}},
+        {inherits: "Independence Day", type: "1D", start: {d: 21, mon: 9}, first: {era: 1, y: 1964}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Malta)"}},
     ]
 }
