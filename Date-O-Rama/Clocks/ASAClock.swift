@@ -548,7 +548,11 @@ extension ASAClock {
     
     static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat, regionCode: String) ->  ASAClock {
         let clock = ASAClock.generic(calendarCode: calendarCode, dateFormat: .full)
-        clock.updateWithGenericBuiltInEventCalendars(regionCode: regionCode)
+        var code: String? = regionCode
+        repeat {
+        clock.updateWithGenericBuiltInEventCalendars(regionCode: code!)
+        code = code!.superregionCode
+        } while code != nil
         return clock
     } // static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat, regionCode: String) ->  ASAClock
     

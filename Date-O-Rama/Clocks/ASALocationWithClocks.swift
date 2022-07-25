@@ -62,17 +62,11 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
             
         case .EarthLocation:
             let regionCode: (String) = (location.regionCode ?? "")
-            var clocks: Array<ASAClock> = []
-            
-            var code: String? = regionCode
-            while code != nil {
-                let moreClocks: Array<ASAClock> = regionCode.defaultCalendarCodes.map {
-                    let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full, regionCode: regionCode)
-                    return clock
-                }
-                clocks.append(contentsOf: moreClocks)
-                code = code?.superregionCode
+            let clocks: Array<ASAClock> = regionCode.defaultCalendarCodes.map {
+                let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full, regionCode: regionCode)
+                return clock
             }
+            
             return ASALocationWithClocks(location: location, clocks: clocks, usesDeviceLocation: usesDeviceLocation)
         }
     }
