@@ -9,6 +9,8 @@
 import Foundation
 import SwiftAA
 
+// MARK:  - ISO 3166 country/region codes.  Mostly ISO 3166-1 with some MARC codes for locations off Earth.
+
 extension String {
     // Based on https://stackoverflow.com/questions/30402435/swift-turn-a-country-code-into-a-emoji-flag-via-unicode
     // Converts a country code into a Unicode emoji flag
@@ -91,6 +93,100 @@ extension String {
             .map(String.init)
             .joined()
     } // var flag
+
+// TODO:  As of this writing, not all calendars in official use are implemented yet.
+
+    var defaultCalendarCodes: Array<ASACalendarCode> {
+        switch self {
+        case REGION_CODE_Afghanistan, REGION_CODE_Iran:
+            return [.Gregorian, .Persian, .IslamicSolar]
+            
+        case REGION_CODE_Ethiopia:
+            return [.Gregorian, .EthiopicAmeteMihret]
+            
+        case REGION_CODE_Japan:
+            return [.Gregorian, .Japanese]
+            
+        case REGION_CODE_Taiwan:
+            return [.Gregorian, .RepublicOfChina, .Chinese]
+            
+        case REGION_CODE_Thailand:
+            return [.Gregorian, .Buddhist]
+            
+        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine:
+            return [.Gregorian, .IslamicSolar]
+            
+        case REGION_CODE_Libya, REGION_CODE_Lebanon:
+            return [.Gregorian, .IslamicSolar, .Julian]
+
+        case REGION_CODE_Egypt, REGION_CODE_Sudan:
+            return [.Gregorian, .IslamicSolar, .Coptic]
+            
+        case REGION_CODE_India:
+            return [.Gregorian, .Indian]
+            
+        case REGION_CODE_Israel:
+            return [.Gregorian, .HebrewGRA]
+            
+        case REGION_CODE_Saudi_Arabia:
+            return [.Gregorian, .IslamicUmmAlQuraSolar]
+            
+        case REGION_CODE_Albania, REGION_CODE_Romania:
+            return [.Gregorian, .Julian]
+            
+        case REGION_CODE_Brunei_Darussalam, REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Philippines, REGION_CODE_Singapore, REGION_CODE_Vietnam:
+            return [.Gregorian, .Chinese]
+            
+        case REGION_CODE_Indonesia, REGION_CODE_Malaysia:
+            return [.Gregorian, .Chinese, .IslamicSolar]
+
+        default:
+            return [.Gregorian]
+        } // switch self
+    } // var defaultCalendarCodes
+    
+    var superregionCode: String? {
+        switch self {
+        case REGION_CODE_Hong_Kong, REGION_CODE_Macao: // Taiwan is not part of Mainland China, no matter how much the illegal government of the rebel mainland provinces wants us to believe it is
+            return REGION_CODE_China
+            
+        case REGION_CODE_Aland_Islands:
+            return REGION_CODE_Finland
+            
+        case REGION_CODE_Saint_Barthelemy, REGION_CODE_French_Guiana, REGION_CODE_Guadeloupe, REGION_CODE_Saint_Martin, REGION_CODE_Martinique, REGION_CODE_New_Caledonia, REGION_CODE_French_Polynesia, REGION_CODE_Saint_Pierre_and_Miquelon, REGION_CODE_Reunion, REGION_CODE_French_Southern_Territories, REGION_CODE_Wallis_and_Futuna, REGION_CODE_Mayotte:
+            return REGION_CODE_France
+            
+        case REGION_CODE_Aruba, REGION_CODE_Bonaire_Sint_Eustatius_and_Saba, REGION_CODE_Curacao, REGION_CODE_Sint_Maarten:
+            return REGION_CODE_Netherlands
+            
+        case REGION_CODE_Svalbard_and_Jan_Mayen, REGION_CODE_Bouvet_Island:
+            return REGION_CODE_Norway
+            
+        case REGION_CODE_American_Samoa, REGION_CODE_Guam, REGION_CODE_Northern_Mariana_Islands, REGION_CODE_Puerto_Rico, REGION_CODE_United_States_Minor_Outlying_Islands, REGION_CODE_United_States_Virgin_Islands:
+            return REGION_CODE_United_States
+            
+        case REGION_CODE_Cook_Islands, REGION_CODE_Niue, REGION_CODE_Tokelau:
+            return REGION_CODE_New_Zealand
+            
+        case REGION_CODE_Anguilla, REGION_CODE_Bermuda, REGION_CODE_British_Indian_Ocean_Territory, REGION_CODE_Cayman_Islands, REGION_CODE_Gibraltar, REGION_CODE_Guernsey, REGION_CODE_Norfolk_Island, REGION_CODE_British_Virgin_Islands:
+            return REGION_CODE_United_Kingdom
+            
+        case REGION_CODE_Christmas_Island, REGION_CODE_Cocos_Islands, REGION_CODE_Falkland_Islands, REGION_CODE_Heard_Island_and_McDonald_Islands, REGION_CODE_Isle_of_Man, REGION_CODE_Jersey, REGION_CODE_Montserrat, REGION_CODE_Pitcairn, REGION_CODE_Saint_Helena_Ascension_and_Tristan_da_Cunha, REGION_CODE_South_Georgia_and_the_South_Sandwich_Islands, REGION_CODE_Turks_and_Caicos_Islands:
+            return REGION_CODE_Australia
+            
+        case REGION_CODE_Faroe_Islands, REGION_CODE_Greenland:
+            return REGION_CODE_Denmark
+            
+        case REGION_CODE_Western_Sahara:
+            return REGION_CODE_Morocco
+            
+        case REGION_CODE_Austria, REGION_CODE_Belgium, REGION_CODE_Bulgaria, REGION_CODE_Croatia, REGION_CODE_Cyprus, REGION_CODE_Czechia, REGION_CODE_Denmark, REGION_CODE_Estonia, REGION_CODE_Finland, REGION_CODE_France, REGION_CODE_Germany, REGION_CODE_Greece, REGION_CODE_Hungary, REGION_CODE_Ireland, REGION_CODE_Italy, REGION_CODE_Latvia, REGION_CODE_Lithuania, REGION_CODE_Luxembourg, REGION_CODE_Malta, REGION_CODE_Netherlands, REGION_CODE_Poland, REGION_CODE_Portugal, REGION_CODE_Romania, REGION_CODE_Slovakia, REGION_CODE_Slovenia, REGION_CODE_Spain, REGION_CODE_Sweden:
+            return REGION_CODE_European_Union
+            
+        default:
+            return nil
+        } // switch self
+    } // var superregionCode
 } // extension String
 
 
@@ -974,60 +1070,4 @@ extension String {
     var withStraightenedCurlyQuotes: String {
         return self.replacingOccurrences(of: "‘", with: "'").replacingOccurrences(of: "’", with: "'").replacingOccurrences(of: "“", with: "").replacingOccurrences(of: "”", with: "")
     }
-} // extension String
-
-
-// MARK:  - Defaults for region codes
-
-// TODO:  As of this writing, not all calendars in official use are implemented yet.
-extension String {
-    var defaultCalendarCodes: Array<ASACalendarCode> {
-        switch self {
-        case REGION_CODE_Afghanistan, REGION_CODE_Iran:
-            return [.Gregorian, .Persian, .IslamicSolar]
-            
-        case REGION_CODE_Ethiopia:
-            return [.Gregorian, .EthiopicAmeteMihret]
-            
-        case REGION_CODE_Japan:
-            return [.Gregorian, .Japanese]
-            
-        case REGION_CODE_Taiwan:
-            return [.Gregorian, .RepublicOfChina, .Chinese]
-            
-        case REGION_CODE_Thailand:
-            return [.Gregorian, .Buddhist]
-            
-        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine:
-            return [.Gregorian, .IslamicSolar]
-            
-        case REGION_CODE_Libya, REGION_CODE_Lebanon:
-            return [.Gregorian, .IslamicSolar, .Julian]
-
-        case REGION_CODE_Egypt, REGION_CODE_Sudan:
-            return [.Gregorian, .IslamicSolar, .Coptic]
-            
-        case REGION_CODE_India:
-            return [.Gregorian, .Indian]
-            
-        case REGION_CODE_Israel:
-            return [.Gregorian, .HebrewGRA]
-            
-        case REGION_CODE_Saudi_Arabia:
-            return [.Gregorian, .IslamicUmmAlQuraSolar]
-            
-        case REGION_CODE_Albania, REGION_CODE_Romania:
-            return [.Gregorian, .Julian]
-            
-        case REGION_CODE_Brunei_Darussalam, REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Philippines, REGION_CODE_Singapore, REGION_CODE_Vietnam:
-            return [.Gregorian, .Chinese]
-            
-        case REGION_CODE_Indonesia, REGION_CODE_Malaysia:
-            return [.Gregorian, .Chinese, .IslamicSolar]
-
-
-        default:
-            return [.Gregorian]
-        } // switch self
-    } // var defaultCalendarCodes
 } // extension String
