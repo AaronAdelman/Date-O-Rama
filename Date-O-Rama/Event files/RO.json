@@ -11,6 +11,6 @@
         {"type": "1D", "start": {"mon": 9, "d": 14}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}, first: {era: 1, y: 2017}},
         {"inherits": "Independence Day", "type": "1D", "start": {d: 9, mon: 5}, first: {era: 1, y: 1877}, titles: {"en": "State Independence Day of Romania", "ro": "Ziua Independenței de Stat a României"}},
-
+        {"type": "1D", "start": {mon: 12, d: 1}, inherits: "Unity Day", titles: {"en": "Great Union Day", "ro": "Ziua Marii Uniri"}, urls: {"en": "https://en.wikipedia.org/wiki/Great_Union_Day"}, first: {era: 1, y: 1990}},
    ]
 }

@@ -14,5 +14,6 @@
         {"inherits": "Heroes’ Day", "type": "1D", "start": {"mon": 5, d: 31}, first: {era: 1, y: 2001}},
         {inherits: "Independence Day", type: "1D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], wkdRecurrence: -1, mon: 6}, first: {era: 1, y: 1991}},
         {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 4, "d": 4}, first: {era: 1, y: 1945}},
+        {"type": "1D", "start": {mon: 6, d: 4}, inherits: "National Unity Day"},
   ]
 }

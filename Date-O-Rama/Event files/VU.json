@@ -9,5 +9,6 @@
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 7, "d": 24}, "urls": {"en": "https://nationaltoday.com/childrens-day-in-vanuatu/"}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 30}, first: {"era": 1, "y": 1980}, "urls": {"en": "https://nationaltoday.com/vanuatu-independence-day/"}},
+        {"type": "1D", "start": {mon: 11, d: 29}, inherits: "Unity Day"},
     ]
 }
