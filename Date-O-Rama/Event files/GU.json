@@ -6,9 +6,9 @@
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
     "eventSpecifications": [
         {"titles": {"en": "Guam History and Chamorro Heritage Day"}, "type": "1D", "start": {"mon": 3, "d": 7}},
-        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}},
-        {"inherits": "Liberation Day (day off)", "type": "1D", "start": {"mon": 7, "d": 20, "wkd": [6]}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}},
-        {"inherits": "Liberation Day (day off)", "type": "1D", "start": {"mon": 7, "d": 21, "wkd": [2]}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}},
+        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 7, "d": 21}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}, first: {era: 1, y: 1944}},
+        {"inherits": "Liberation Day (day off)", "type": "1D", "start": {"mon": 7, "d": 20, "wkd": [6]}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}, first: {era: 1, y: 1945}},
+        {"inherits": "Liberation Day (day off)", "type": "1D", "start": {"mon": 7, "d": 21, "wkd": [2]}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}, first: {era: 1, y: 1945}},
         {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}},
         {"inherits": "Feast of the Immaculate Conception", "type": "1D", "start": {"mon": 12, "d": 8}, "titles": {"en": "Lady of Camarin Day"}},
 

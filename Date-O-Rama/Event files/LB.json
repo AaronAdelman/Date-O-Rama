@@ -15,7 +15,7 @@
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"type": "1D", "start": {"mon": 5, "d": 1}, "inherits": "International Workers’ Day"},
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 5, "d": 6}, "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, first: {"era": 1, "y": 1916}},
-        {"titles": {"en": "Liberation and Resistance Day", "ar": "عيد المقاومة و التحرير", "fr": "Fête de la Libération et Résistance"}, "type": "1D", "start": {"mon": 5, "d": 25}},
+        {"titles": {"en": "Liberation and Resistance Day", "ar": "عيد المقاومة و التحرير", "fr": "Fête de la Libération et Résistance"}, "type": "1D", "start": {"mon": 5, "d": 25}, first: {era: 1, y: 2000}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 22}, first: {era: 1, y: 1943}, urls: {"en": "https://en.wikipedia.org/wiki/Lebanese_Independence_Day"}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},

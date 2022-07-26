@@ -199,7 +199,7 @@
         {template: "Lantern Festival", type: "1D", start: {mon: 1, d: 15}, titles: {"en": "Lantern Festival", "zh": "元宵節", "zh_CN": "元宵节", "he": "פסטיבל עששיות"}, "urls": {"en": "https://en.wikipedia.org/wiki/Lantern_Festival"}, emoji: "🏮"},
         {"template": "Laylat al-Qadr", "titles": {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"}, "type": "1D", "start": {"mon": 9, "d": 21}, "urls": {"en": "https://en.wikipedia.org/wiki/Qadr_Night"}},
         {"template": "Leo", "titles": {"en": "Leo", "he": "אריה"}, "type": "1M", "start": {"mon": 12}, "emoji": "♌️", "inherits": "*Astrology*"},
-        {"template": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}, "titles": {"en": "Liberation Day", "sq": "Dita e Çlirimit", "he": "יום השחרור"}, "urls": {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},
+        {"template": "Liberation Day", "type": "1D", "start": {"d": 3, "mon": 3}, "titles": {"en": "Liberation Day", "sq": "Dita e Çlirimit", "he": "יום השחרור", "it": "Liberazione"}, "urls": {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},
         {"template": "Liberation Day (day off)", "type": "1D", "start": {"d": 3, "mon": 3}, "titles": {"en": "Liberation Day (day off)"}, "urls": {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},
         {"template": "Libra", "titles": {"en": "Libra", "he": "מאזניים"}, "type": "1M", "start": {"mon": 1}, "emoji": "♎️", "inherits": "*Astrology*"},
         {"template": "Litha", "titles": {"en": "Litha", "he": "לית׳א"}, "type": "1D", "start": {"equinoxOrSolstice": "Jun"}},

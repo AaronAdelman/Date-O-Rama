@@ -8,5 +8,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 25}},
         {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 30}, first: {era: 1, y: 1960}},
+        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 5, "d": 17}, first: {era: 1, y: 1997}},
    ]
 }
