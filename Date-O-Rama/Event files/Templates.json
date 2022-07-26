@@ -240,6 +240,7 @@
         {"template": "Orangemen’s Day", "type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day", "fr": "Fête des orangistes"}, "urls": {"en": "https://nationaltoday.com/orangemens-day/"}, "emoji": "🔥"},
         {"template": "Ostara", "titles": {"en": "Ostara", "he": "אוסטרה"}, "type": "1D", "start": {"equinoxOrSolstice": "Mar"}},
         {"template": "Palm Sunday", "titles": {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
+        {template: "Parents’ Day", "type": "1D", "start": {"mon": 5, d: 8}, "titles": {"en": "Parents’ Day", "he": "יום ההורים", "ko": "어버이날"}, "emoji": "👨‍👩‍👧‍👦", "urls": {"en": "https://en.wikipedia.org/wiki/Parents%27_Day"}},
         {"template": "Patriots’ Day", "type": "1D", "start": {"mon": 4, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Patriots’ Day", "fr": "Journée des patriotes"}, "urls": {"en": "https://en.wikipedia.org/wiki/Patriots%27_Day"}},
         {"template": "Pentecost", "titles": {"en": "Pentecost"}, "notes": {"en": "Whitsunday\nWhit Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}, "emoji": "⚪️", "urls": {"en": "https://nationaltoday.com/pentecost/"}},
         {"template": "Pi Day", "type": "1D", "start": {"d": 14, "mon": 3}, "titles": {"en": "Pi Day", "he": "יום פאי"}, "emoji": "π", "urls": {"en": "https://www.piday.org/"}},

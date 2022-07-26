@@ -20,5 +20,6 @@
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, wkd: [2], wkdRecurrence: 1}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {"inherits": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, first: {"type": "1D", "era": 1, "y": 496}},
     ]
 }

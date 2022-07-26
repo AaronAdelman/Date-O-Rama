@@ -11,5 +11,6 @@
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, d: 5}, first: {"era": 1, "y": 1961}},
         {inherits: "Independence Day", type: "1D", titles: {"en": "March 1st Movement Day"}, start: {d: 1, mon: 3}, first: {era: 1, y: 1919}},
+        {"type": "1D", "start": {"mon": 5, d: 8}, inherits: "Parents’ Day", first: {"era": 1, "y": 1973}},
   ]
 }

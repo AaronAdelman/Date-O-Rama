@@ -282,7 +282,7 @@
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "Yorkshire Day"}, first: {"era": 1, "y": 1975}, "urls": {"en": "https://www.daysoftheyear.com/days/yorkshire-day/"}},
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "International Mahjong Day"}, first: {"era": 1, "y": 2018}, "emoji": "🀄️", "urls": {"en": "https://nationaldaycalendar.com/international-mahjong-day-august-1/"}},
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "World Wide Web Day"}, "emoji": "🌎", "urls": {"en": "https://www.daysoftheyear.com/days/world-wide-web-day/"}},
-        {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "Respect For Parents Day"}, "emoji": "👨‍👩‍👧‍👦", "urls": {"en": "https://www.daysoftheyear.com/days/respect-for-parents-day/"}},
+        {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "Respect For Parents Day"}, inherits: "Parents’ Day", "urls": {"en": "https://www.daysoftheyear.com/days/respect-for-parents-day/"}},
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "World Lung Cancer Day"}, "emoji": "🫁", "urls": {"en": "https://www.lung.org/lung-force/about-lung-force/featured-campaigns/world-lung-cancer-day"}},
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "National Minority Donor Awareness Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-minority-donor-awareness-day/"}},
         {"type": "1D", "start": {"d": 2, "mon": 8}, "titles": {"en": "National Coloring Book Day"}, "emoji": "✍️", "urls": {"en": "https://www.coloringbookday.com/"}},
