@@ -12,5 +12,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 1}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, d: 30}, first: {era: 1, y: 1925}},
         {inherits: "Independence Day", type: "1D", start: {d: 16, mon: 9}, first: {era: 1, y: 1810}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}},
    ]
 }

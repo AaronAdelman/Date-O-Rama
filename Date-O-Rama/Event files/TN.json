@@ -13,7 +13,7 @@
         {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 25}, "urls": {"en": "https://nationaltoday.com/tunisia-republic-day/"}, first: {"era": 1, "y": 1957}},
         {"type": "1D", "start": {"mon": 8, "d": 13}, titles: {"en": "Women’s Day"}, emoji: "👩"},
         {"inherits": "Evacuation Day", "type": "1D", "start": {"mon": 10, "d": 15}},
-        {"type": "1D", "start": {"mon": 12, "d": 17}, titles: {"en": "Revolution and Youth Day"}, emoji: "䷰👦👧"},
+        {"type": "1D", "start": {"mon": 12, "d": 17}, titles: {"en": "Revolution and Youth Day"}, emoji: "䷰👦👧", first: {era: 1, y: 2010}},
 
         {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},

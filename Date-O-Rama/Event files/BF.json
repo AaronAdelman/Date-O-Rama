@@ -10,5 +10,6 @@
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 10, "d": 31}},
         {inherits: "Proclamation of Independence Day", "type": "1D", "start": {"mon": 12, "d": 11}, first: {"era": 1, "y": 1958}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 8, "d": 5}, first: {"era": 1, "y": 1960}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 3}, first: {era: 1, y: 1966}},
     ]
 }
