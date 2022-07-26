@@ -387,7 +387,6 @@
         {"type": "1D", "start": {"d": 17, "mon": 11}, "titles": {"en": "International Happy Gose Day"}, "emoji": "🍻", "urls": {"en": "https://www.daysoftheyear.com/days/international-happy-gose-day/"}},
         {"type": "1D", "start": {"d": 17, "mon": 11}, "titles": {"en": "World Prematurity Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/world-prematurity-day/"}},
         {"type": "1D", "start": {"d": 18, "mon": 11}, "titles": {"en": "National Vichyssoise Day"}, "emoji": "🥣", "urls": {"en": "https://www.daysoftheyear.com/days/vichyssoise-day/"}},
-        {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "International Men’s Day"}, "notes": {"en": "IMD"}, first: {"era": 1, "y": 1999}, "emoji": "👨", "urls": {"en": "https://nationaltoday.com/international-mens-day/"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "National Play Monopoly Day"}, "emoji": "🏠🏨", "urls": {"en": "https://www.daysoftheyear.com/days/play-monopoly-day/"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "Women’s Entrepreneurship Day"}, "notes": {"en": "WED"}, first: {"era": 1, "y": 2014}, "emoji": "👩‍💼", "urls": {"en": "https://nationaltoday.com/womens-entrepreneurship-day/"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "World Day for Prevention of Child Abuse"}, first: {"era": 1, "y": 2000}, "urls": {"en": "https://www.apa.org/pi/prevent-violence/programs/international-day"}},

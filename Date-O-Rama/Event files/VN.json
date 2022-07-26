@@ -13,5 +13,6 @@
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 7, "d": 27}, titles: {"en": "Memorial Day for War Martyrs"}},
         {inherits: "Independence Day", type: "1D", start: {d: 2, mon: 9}, first: {era: 1, y: 1945}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_(Vietnam)"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 8, d: 19}, first: {era: 1, y: 1945}},
+        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
    ]
 }

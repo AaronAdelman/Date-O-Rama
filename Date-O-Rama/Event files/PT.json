@@ -11,6 +11,6 @@
         {"titles": {"en": "Madeira Day"}, "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/madeira-day/"}, first: {"era": 1, "y": 1976}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {inherits: "Day of Restoration of Independence", type: "1D", start: {d: 1, mon: 12}, first: {era: 1, y: 1640}, titles: {"en": "Restoration of Independence Day"}},
-
+        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
     ]
 }

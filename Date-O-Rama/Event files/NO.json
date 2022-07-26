@@ -13,6 +13,6 @@
         {"titles": {"en": "Crown Prince Haakon’s Day"}, "type": "1D", "start": {"mon": 7, "d": 20}, "urls": {"en": "https://nationaltoday.com/crown-prince-haakons-day/"}, first: {"era": 1, "y": 1973}, "inherits": "*BDay*"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, d: 17}},
         {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 6}, first: {era: 1, y: 1905}, urls: {"en": "https://en.wikipedia.org/wiki/Union_Dissolution_Day"}},
-
+        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
     ]
 }

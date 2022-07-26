@@ -11,5 +11,6 @@
         {"titles": {"en": "Jani"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/jani/"}, first: {"era": 1, "y": 1990}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {"titles": {"en": "Day of the Restoration of Latvian Independence"}, "type": "1D", "start": {"mon": 5, "d": 4}, first: {era: 1, y: 1990}, urls: {"en": "https://en.wikipedia.org/wiki/Day_of_the_Restoration_of_Latvian_Independence"}},
-    ]
+        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+   ]
 }

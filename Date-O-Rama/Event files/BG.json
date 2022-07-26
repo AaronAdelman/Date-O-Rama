@@ -12,5 +12,6 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 9, "d": 22}, first: {"era": 1, "y": 1908}},
         {"type": "1D", "start": {mon: 9, d: 6}, titles: {"en": "Unification Day", "bg": "Ден на Съединението"}, inherits: "National Unity Day", urls: {"en": "https://en.wikipedia.org/wiki/Unification_Day_(Bulgaria)"}, first: {era: 1, y: 1885}},
+        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
   ]
 }

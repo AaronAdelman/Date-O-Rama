@@ -9,5 +9,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Cyprus)"}, first: {era: 1, y: 1979}},
+        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
    ]
 }
