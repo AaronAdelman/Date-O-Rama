@@ -9,5 +9,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Heroes’ Day", "type": "1D", "start": {mon: 10, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 1969}},
         {inherits: "Independence Day", type: "1D", start: {d: 6, mon: 8}, first: {era: 1, y: 1962}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Jamaica)"}},
+        {"inherits": "Emancipation Day", "type": "1D", "start": {"mon": 8, d: 1}},
     ]
 }

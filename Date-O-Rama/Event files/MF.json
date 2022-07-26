@@ -3,7 +3,7 @@
     "//": "St. Martin",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.15, "blue": 0.33},
     "eventSpecifications": [
         
     ]

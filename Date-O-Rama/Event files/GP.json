@@ -3,8 +3,8 @@
     "//": "Guadeloupe",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 1.00, "green": 0.95, "blue": 0.0},
     "eventSpecifications": [
-        
+        {"inherits": "Emancipation Day", "type": "1D", "start": {"mon": 5, d: 27}},
     ]
 }

@@ -12,7 +12,7 @@
         {"inherits": "Easter Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 1}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
-        {"titles": {"en": "August Monday "}, "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}},
+        {inherits: "August Monday", "type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}},
         {"titles": {"en": "August Tuesday "}, "type": "1D", "start": {"mon": 8, "wkd": [3], "d": 2, "thruD": 8}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 1}, first: {era: 1, y: 1981}},
         {"titles": {"en": "Independence Day (observed)"}, "type": "1D", "start": {"mon": 11, "d": 2, "thruD": 3, "wkd": [2]}},
