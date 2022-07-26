@@ -46,5 +46,6 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, wkd: [4], wkdRecurrence: 4}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 8, d: 4}, titles: {"en": "National Aboriginal and Torres Strait Islander Children’s Day"}, first: {"era": 1, "y": 1988}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2003}},
+        {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
     ]
 }

@@ -11,5 +11,6 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, wkd: [4], wkdRecurrence: 1}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [7], wkdRecurrence: 2}},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 18}, first: {era: 1, y: 1810}},
+        {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
   ]
 }

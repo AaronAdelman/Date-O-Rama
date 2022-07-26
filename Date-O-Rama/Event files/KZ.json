@@ -10,6 +10,7 @@
         {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 16, mon: 12}, first: {era: 1, y: 1991}, "urls": {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Kazakhstan)"}},
         {"type": "1D", "start": {mon: 5, d: 1}, inherits: "Unity Day", urls: {"en": "https://en.wikipedia.org/wiki/Kazakhstan_People%27s_Unity_Day"}, first: {era: 1, y: 1996}},
+        {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
     ]
 }
 

@@ -201,6 +201,7 @@
         {"type": "1D", "start": {"mon": 7, "d": 31}, "inherits": "Flag Day", "urls": {"en": "https://nationaltoday.com/hawaii-flag-day/"}, first: {"era": 1, "y": 1990}, "titles": {"en": "Hawaii Flag Day"}},
         {titles: {"en": "National Fragile X Awareness Day"}, type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaldaycalendar.com/national-fragile-x-awareness-day-july-22/"}, first: {era: 1, y: 2000}, emoji: "🧬"},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2011}},
+        {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}, first: {"era": 1, "y": 2011}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
