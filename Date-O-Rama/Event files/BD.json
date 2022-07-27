@@ -17,5 +17,6 @@
         {"inherits": "Victory Day", "type": "1D", "start": {"mon": 12, "d": 16}, urls: {"en": "https://en.wikipedia.org/wiki/Victory_Day_(Bangladesh)"}, first: {era: 1, y: 1971}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 11, d: 7}, first: {era: 1, y: 1975}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {type: "1D", start: {mon: 3, d: 26}, inherits: "Navy Day"},
     ]
 }

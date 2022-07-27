@@ -13,5 +13,6 @@
         {"type": "1D", "start": {"mon": 6, "d": 8}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, wkd: [1], wkdRecurrence: 2}},
         {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [1], wkdRecurrence: 3}},
+        {type: "1D", start: {mon: 10, d: 8}, inherits: "Navy Day"},
    ]
 }

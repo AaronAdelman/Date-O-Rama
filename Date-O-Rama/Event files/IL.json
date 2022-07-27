@@ -15,5 +15,6 @@
         {"type": "1D", "start": {"mon": 1, "d": 22}, inherits: "Engineer’s Day", titles: {"en": "Israeli Engineer’s Day", "he": "יום המהנדס/ת הישראלי/ת"}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {type: "1D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
    ]
 }

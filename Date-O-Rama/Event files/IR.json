@@ -9,5 +9,6 @@
         {"type": "1D", "start": {"mon": 10, "d": 17}, inherits: "National Sports Day", titles: {"en": "Physical Education and Sports Day"}},
         {"type": "nD", "start": {"mon": 10, "d": 17}, end: {"mon": 10, "d": 23}, inherits: "National Sports Day", titles: {"en": "Physical Education and Sports Week"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {type: "1D", start: {mon: 11, d: 28}, inherits: "Navy Day"},
     ]
 }

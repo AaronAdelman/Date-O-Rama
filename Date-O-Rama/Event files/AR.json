@@ -32,5 +32,6 @@
         {"type": "1D", "start": {"mon": 6, "d": 16}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [1], wkdRecurrence: 3}, first: {era: 1, y: 2013}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {type: "1D", start: {mon: 5, d: 17}, inherits: "Navy Day"},
   ]
 }

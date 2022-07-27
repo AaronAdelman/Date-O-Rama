@@ -14,5 +14,7 @@
         {inherits: "Independence Day", type: "1D", start: {d: 16, mon: 9}, first: {era: 1, y: 1810}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {type: "1D", start: {mon: 11, d: 23}, inherits: "Navy Day"},
+        {inherits: "National Maritime Day", type: "1D", start: {mon: 6, d: 1}},
    ]
 }

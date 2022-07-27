@@ -14,6 +14,7 @@
         {"type": "1D", "start": {"mon": 6, "d": 15}, inherits: "Engineer’s Day"},
         {"inherits": "National Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}, first: {era: 1, y: 1997}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2009}},
+        {type: "1D", start: {mon: 6, d: 10}, inherits: "Navy Day"},
    ]
 }
 
