@@ -298,8 +298,8 @@
 "Showing ASAClockCellDateEventVisibility.all"            = "מראה הכול";
 "Clock Details" = "פרטי שעון";
 "Show built-in event calendars:" = "אזורים";
-"ASARegionCodeRegion.allRegions" = "כל אזורים";
-"ASARegionCodeRegion.international" = "בינלאומי";
+"ASARegionCodeRegion.allRegions" = "שייכים לכל אזורים";
+"ASARegionCodeRegion.international" = "ארגונים ואזורים בינלאומיים";
 "ASARegionCodeRegion.AustraliaAndNewZealand" = "אוסטרליה וניו זילנד";
 "ASARegionCodeRegion.centralAsia" = "מרכז אסיה";
 "ASARegionCodeRegion.easternAsia" = "מזרח אסיה";

@@ -596,33 +596,33 @@ let REGION_CODE_United_Nations    = "UN"
 enum ASARegionCodeRegion: Int, CaseIterable, Identifiable {
     var id: Self { self }
     
-    case allRegions                  =  0
-    case international               =  1
-    case AustraliaAndNewZealand      =  2
-    case centralAsia                 =  3
-    case easternAsia                 =  4
-    case easternEurope               =  5
-    case LatinAmericaAndTheCaribbean =  6
-    case Melanesia                   =  7
-    case Micronesia                  =  8
-    case northernAfrica              =  9
-    case northernAmerica             = 10
-    case northernEurope              = 11
-    case Polynesia                   = 12
-    case southEasternAsia            = 13
-    case southernAsia                = 14
-    case southernEurope              = 15
-    case subSaharanAfrica            = 16
-    case westernAsia                 = 17
-    case westernEurope               = 18
+    case regionNeutral                        =  0
+    case internationalOrganizationsAndRegions =  1
+    case AustraliaAndNewZealand               =  2
+    case centralAsia                          =  3
+    case easternAsia                          =  4
+    case easternEurope                        =  5
+    case LatinAmericaAndTheCaribbean          =  6
+    case Melanesia                            =  7
+    case Micronesia                           =  8
+    case northernAfrica                       =  9
+    case northernAmerica                      = 10
+    case northernEurope                       = 11
+    case Polynesia                            = 12
+    case southEasternAsia                     = 13
+    case southernAsia                         = 14
+    case southernEurope                       = 15
+    case subSaharanAfrica                     = 16
+    case westernAsia                          = 17
+    case westernEurope                        = 18
     
     var text: String {
         var raw = ""
         switch self {
-            case .allRegions:
+            case .regionNeutral:
             raw = "ASARegionCodeRegion.allRegions"
             
-        case .international:
+        case .internationalOrganizationsAndRegions:
             raw = "ASARegionCodeRegion.international"
             
         case .AustraliaAndNewZealand:
@@ -685,7 +685,7 @@ extension String {
         switch self {
         case REGION_CODE_United_Nations,
         REGION_CODE_European_Union:
-            return .international
+            return .internationalOrganizationsAndRegions
             
         case REGION_CODE_Afghanistan,
             REGION_CODE_Bangladesh,
@@ -865,7 +865,7 @@ extension String {
             return .LatinAmericaAndTheCaribbean
             
         case REGION_CODE_Antarctica:
-            return .international
+            return .internationalOrganizationsAndRegions
             
         case REGION_CODE_Armenia,
             REGION_CODE_Azerbaijan,
@@ -972,7 +972,7 @@ extension String {
         REGION_CODE_Uzbekistan:
             return .centralAsia
             
-        default: return .allRegions
+        default: return .regionNeutral
         }
     }
 }

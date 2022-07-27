@@ -299,8 +299,8 @@
 "Clock Details" = "Clock Details";
 
 "Show built-in event calendars:" = "Regions";
-"ASARegionCodeRegion.allRegions" = "All regions";
-"ASARegionCodeRegion.international" = "International";
+"ASARegionCodeRegion.allRegions" = "Region-neutral";
+"ASARegionCodeRegion.international" = "International organizations and regions";
 "ASARegionCodeRegion.AustraliaAndNewZealand" = "Australia and New Zealand";
 "ASARegionCodeRegion.centralAsia" = "Central Asia";
 "ASARegionCodeRegion.easternAsia" = "Eastern Asia";

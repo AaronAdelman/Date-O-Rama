@@ -128,7 +128,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
     @ObservedObject var selectedClock:  ASAClock
     var builtInEventCalendarFileNames:  ASABuiltInEventCalendarFileData
     
-    @State var selection = ASARegionCodeRegion.allRegions
+    @State var selection = ASARegionCodeRegion.regionNeutral
     
     var body:  some View {
         if builtInEventCalendarFileNames.records.count > 0 {
