@@ -30,7 +30,7 @@ struct ASALocationDetailView: View {
         NavigationView {
             List {
                 Section {
-                    ASALocationTypeCell(locationWithClocks: locationWithClocks)
+                    ASALocationTypeCell(type: locationWithClocks.location.type)
                     
                     if locationWithClocks.location.type == .EarthLocation {
                         NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {

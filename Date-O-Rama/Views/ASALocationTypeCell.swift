@@ -9,20 +9,20 @@
 import SwiftUI
 
 struct ASALocationTypeCell: View {
-    var locationWithClocks: ASALocationWithClocks
+    var type: ASALocationType
     
     var body: some View {
         HStack {
             Text("Location Type")
                 .bold()
             Spacer()
-            Text(locationWithClocks.location.type.localizedName)
+            Text(type.localizedName)
         } // HStack
     }
 }
 
 struct ASALocationTypeCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationTypeCell(locationWithClocks: ASALocationWithClocks.generic(location: .NullIsland, usesDeviceLocation: true))
+        ASALocationTypeCell(type: .EarthLocation)
     }
 }
