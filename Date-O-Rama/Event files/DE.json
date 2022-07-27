@@ -14,6 +14,7 @@
         {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {"inherits": "Universal Children’s Day", "type": "1D", "start": {"mon": 9, d: 20}},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {type: "1D", start: {mon: 1, d: 9}, inherits: "Air Force Day"},
     ]
 }
 

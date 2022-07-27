@@ -11,5 +11,6 @@
         {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 7, d: 19}, first: {era: 1, y: 1979}},
+        {type: "1D", start: {mon: 2, d: 1}, inherits: "Air Force Day"},
    ]
 }

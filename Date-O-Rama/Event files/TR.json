@@ -23,5 +23,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 23}, "titles": {"en": "İyd-i Millî", "tr": "İyd-i Millî"}, "urls": {"en": "https://en.wikipedia.org/wiki/%C4%B0yd-i_Mill%C3%AE"}, first: {"era": 1, "y": 1909}},
         {"type": "1D", "start": {"mon": 9, "d": 19}, inherits: "Engineer’s Day"},
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 3, "d": 18}},
+        {type: "1D", start: {mon: 6, d: 1}, inherits: "Air Force Day", first: {era: 1, y: 1911}},
     ]
 }

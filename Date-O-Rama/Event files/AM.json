@@ -40,5 +40,6 @@
         {"inherits": "Vardavar", "type": "1D", "start": {"Easter": "Easter", "offsetD": 98}},
         
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {type: "1D", start: {mon: 6, d: 26}, inherits: "Air Force Day"},
     ]
 }

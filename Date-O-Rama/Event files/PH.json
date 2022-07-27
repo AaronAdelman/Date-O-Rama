@@ -19,5 +19,6 @@
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
        {type: "1M", start: {mon: 11}, titles: {"en": "Children’s Month"}, inherits: "Children’s Day"},
        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}},
+       {type: "1D", start: {mon: 7, d: 1}, inherits: "Air Force Day"},
        ]
     }
