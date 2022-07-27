@@ -340,8 +340,10 @@
 "Delete location" = "Delete location…";
 "Delete this location" = "Delete this location";
 
-"Earth (all locations)" = "Earth (all locations)";
-"Mars (all locations)"  = "Mars (all locations)";
+"Location Type"             = "Location Type";
+"Earth (specific location)" = "Earth (specific location)";
+"Earth (all locations)"     = "Earth (all locations)";
+"Mars (all locations)"      = "Mars (all locations)";
 "Add clock for Julian date calendar" = "Add clock for Julian date calendar";
 
 "Location Details" = "Location Details";

@@ -103,5 +103,14 @@ extension Array where Element == ASALocationWithClocks {
         } // for entry in self
         return result
     } // var clocks: Array<ASAClock>
+    
+    func containsLocationOfType(_ type: ASALocationType) -> Bool {
+        for locationWithClocks in self {
+            if locationWithClocks.location.type == type {
+                return true
+            }
+        }
+        
+        return false
+    } // func containsLocationOfType(_ type: ASALocationType) -> Bool
 } // extension Array where Element == ASALocationWithClocks
-

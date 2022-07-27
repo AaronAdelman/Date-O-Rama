@@ -25,4 +25,18 @@ enum ASALocationType: String {
             return .MarsSolDate
         } // switch self
     } // var defaultCalendarCode
+    
+    var localizedName: String {
+        var rawName: String
+        switch self {
+        case .EarthLocation:
+            rawName = "Earth (specific location)"
+        case .EarthUniversal:
+            rawName = "Earth (all locations)"
+        case .MarsUniversal:
+            rawName = "Mars (all locations)"
+        }
+        
+        return NSLocalizedString(rawName, comment: "")
+    }
 } // enum ASALocationType

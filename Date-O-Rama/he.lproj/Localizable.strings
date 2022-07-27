@@ -339,6 +339,8 @@
 "Delete location" = "מחק מיקום…";
 "Delete this location" = "מחק מיקום זה";
 
+"Location Type"             = "סוג מיקום";
+"Earth (specific location)" = "כדור הארץ (מיקום ספציפי)";
 "Earth (all locations)" = "כדור הארץ (כל מיקומים)";
 "Mars (all locations)"  = "מאדים (כל מיקומים)";
 "Add clock for Julian date calendar" = "הוסף שעון ללוח יוליאני";

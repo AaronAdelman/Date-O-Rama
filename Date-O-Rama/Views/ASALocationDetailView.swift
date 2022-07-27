@@ -30,12 +30,12 @@ struct ASALocationDetailView: View {
         NavigationView {
             List {
                 Section {
+                    ASALocationTypeCell(locationWithClocks: locationWithClocks)
+                    
                     if locationWithClocks.location.type == .EarthLocation {
                         NavigationLink(destination:  ASALocationChooserView(locationWithClocks: locationWithClocks, shouldCreateNewLocationWithClocks: false), label: {
                             ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location)
                         })
-                    } else {
-                        ASALocationCell(usesDeviceLocation: locationWithClocks.usesDeviceLocation, locationData: locationWithClocks.location)
                     }
                     
                     ASATimeZoneCell(timeZone: locationWithClocks.location.timeZone, now: now)
