@@ -81,54 +81,58 @@ struct ASALocationChooserView: View {
             
             Form {
                 Section {
-                    ASALocationTypeCell(type: tempLocationData.type)
                     ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
                     ASATimeZoneCell(timeZone: tempLocationData.timeZone, now: Date())
                 }
-                Section {
-                    if !locationManager.connectedToTheInternet {
-                        Text("CANNOT_GEOLOCATE").foregroundColor(.gray)
-                    }
-                    
-                    if locationManager.connectedToTheInternet {
-                        Toggle(isOn: $tempUsesDeviceLocation) {
-                            Text("Use device location")
-                        }
-                    }
-                } // Section
                 
-                if !tempUsesDeviceLocation && locationManager.connectedToTheInternet {
-                    HStack {
-                        TextField("Requested address", text: $enteredAddress)
-                        Button(action: {
-                            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                            self.geolocate()
-                        }) {
-                            Text("🔍")
-                                .foregroundColor(.accentColor)
-                                .bold()
-                        }
-                        .keyboardShortcut(.defaultAction)
-                    }
+                if tempLocationData.type == .EarthLocation {
                     Section {
-                        ForEach(self.locationDataArray, id: \.id) {
-                            locationData
-                            in
-                            ASALocationChooserViewCell(location: locationData, selectedLocation: self.$tempLocationData)
-                                .onTapGesture {
-                                    self.tempLocationData = locationData
-                                }
+                        if !locationManager.connectedToTheInternet {
+                            Text("CANNOT_GEOLOCATE").foregroundColor(.gray)
+                        }
+                        
+                        if locationManager.connectedToTheInternet {
+                            Toggle(isOn: $tempUsesDeviceLocation) {
+                                Text("Use device location")
+                            }
                         }
                     } // Section
-                }
-                Section {
-                    Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
-                        tempLocationData
-                        in
-                        MapPin(coordinate: tempLocationData.location.coordinate )
+                    
+                    if !tempUsesDeviceLocation && locationManager.connectedToTheInternet {
+                        HStack {
+                            TextField("Requested address", text: $enteredAddress)
+                            Button(action: {
+                                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                                self.geolocate()
+                            }) {
+                                Text("🔍")
+                                    .foregroundColor(.accentColor)
+                                    .bold()
+                            }
+                            .keyboardShortcut(.defaultAction)
+                        }
+                        
+                        Section {
+                            ForEach(self.locationDataArray, id: \.id) {
+                                locationData
+                                in
+                                ASALocationChooserViewCell(location: locationData, selectedLocation: self.$tempLocationData)
+                                    .onTapGesture {
+                                        self.tempLocationData = locationData
+                                    }
+                            }
+                        } // Section
                     }
-                    .aspectRatio(1.0, contentMode: .fit)
-                } // Section
+                    
+                    Section {
+                        Map(coordinateRegion: .constant(MKCoordinateRegion(center: self.tempLocationData.location.coordinate , latitudinalMeters: 1000.0, longitudinalMeters: 1000.0)), annotationItems:  [self.tempLocationData]) {
+                            tempLocationData
+                            in
+                            MapPin(coordinate: tempLocationData.location.coordinate )
+                        }
+                        .aspectRatio(1.0, contentMode: .fit)
+                    } // Section
+                }
             }
             .font(Font.body)
             .onAppear() {

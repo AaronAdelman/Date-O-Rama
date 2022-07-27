@@ -46,6 +46,7 @@
 		A506E3DF252C93DF009345A0 /* ASAProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */; };
 		A506E3E5252C9405009345A0 /* ASAProcessedClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */; };
 		A507794228915A0700A98D01 /* ASALocationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507794128915A0700A98D01 /* ASALocationTypeCell.swift */; };
+		A507794428919E8B00A98D01 /* ASALocationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507794128915A0700A98D01 /* ASALocationTypeCell.swift */; };
 		A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
 		A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
 		A508C7F5283E244E00D96947 /* Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* Templates.json */; };
@@ -3502,6 +3503,7 @@
 				A57CA33024864C6300378EA7 /* ASAConfiguration.swift in Sources */,
 				A52A238B279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */,
 				A56EA59A25EFBB3500D46610 /* ArrayExtensions.swift in Sources */,
+				A507794428919E8B00A98D01 /* ASALocationTypeCell.swift in Sources */,
 				A52A2388279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */,
 				A59D80692600C6FB00FD8BBF /* ASAEventCompatible.swift in Sources */,
 				A593229225782AB800318BC3 /* ASAMainClocksView.swift in Sources */,
