@@ -81,6 +81,7 @@ struct ASALocationChooserView: View {
             
             Form {
                 Section {
+                    ASALocationTypeCell(type: tempLocationData.type)
                     ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
                     ASATimeZoneCell(timeZone: tempLocationData.timeZone, now: Date())
                 }
