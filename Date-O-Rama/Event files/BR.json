@@ -12,5 +12,10 @@
         {"type": "1D", "start": {"mon": 6, "d": 12}, "titles": {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados"}, "urls": {"en": "https://nationaltoday.com/brazilian-valentines-day/"}, first: {"era": 1, "y": 1948}, "inherits": "Valentine’s Day"},
         {"type": "1D", "start": {"mon": 12, "d": 11}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, d: 12}},
+        {type: "1D", start: {mon: 6, d: 11}, inherits: "Navy Day"},
+        {type: "1D", start: {mon: 12, d: 13}, titles: {"en": "Sailor’s Day", "pt": "Dia do Marinheiro"}},
+        {type: "1D", start: {mon: 4, d: 19}, inherits: "Army Day"},
+        {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "Soldier’s Day", "pt": "Dia do Soldado"}},
+        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Aviator’s Day", "pt": "Dia do Aviador"}},
     ]
 }

@@ -60,5 +60,6 @@
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2010}},
         {"inherits": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, first: {"type": "1D", "era": 1, "y": 496}},
         {type: "1D", start: {mon: 6, d: 4}, inherits: "Air Force Day", first: {era: 1, y: 2006}},
+        {inherits: "Armed Forces Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 1}, first: {era: 1, y: 2002}},
     ]
 }

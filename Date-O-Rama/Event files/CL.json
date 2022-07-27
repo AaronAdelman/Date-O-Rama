@@ -13,5 +13,7 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 18}, first: {era: 1, y: 1810}},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {type: "1D", start: {mon: 5, d: 21}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Chile)"}},
+        {type: "1D", start: {mon: 9, d: 19}, inherits: "Army Day"},
+
   ]
 }
