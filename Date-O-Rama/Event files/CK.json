@@ -3,7 +3,7 @@
     "//": "Cook Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.13, "blue": 0.41},
     "eventSpecifications": [
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 2, wkd: [1], wkdRecurrence: 2}},
 

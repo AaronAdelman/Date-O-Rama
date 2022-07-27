@@ -2,7 +2,7 @@
     "titles": {"en": "Time changes", "he": "שינויי שעון"},
     "defaultLocale": "en",
     "calendarCode": "tz*",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.46, "green": 0.84, "blue": 1.00},
     "eventSpecifications": [
         {"titles": {"en": ""}, "type": "pt", "start": {"timeChange": "timeChange"}, "emoji": "⏰"},
         ]

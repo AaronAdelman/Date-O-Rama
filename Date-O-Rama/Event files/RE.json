@@ -3,7 +3,7 @@
     "//": "Réunion",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.98, "green": 0.83, "blue": 0.31},
     "eventSpecifications": [
         
     ]

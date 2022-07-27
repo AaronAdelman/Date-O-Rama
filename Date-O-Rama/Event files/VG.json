@@ -3,7 +3,7 @@
     "//": "British Virgin Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.07, "green": 0.36, "blue": 0.14},
     "eventSpecifications": [
         {"inherits": "Territory Day", "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/territory-day/"}, first: {"era": 1, "y": 1956}},
         {"inherits": "Emancipation Day", "type": "1D", "start": {"mon": 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "August Festival (day 1)"}},

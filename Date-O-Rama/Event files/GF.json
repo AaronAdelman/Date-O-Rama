@@ -3,7 +3,7 @@
     "//": "French Guiana",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.91, "green": 0.56, "blue": 0.30},
     "eventSpecifications": [
         
     ]

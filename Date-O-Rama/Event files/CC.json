@@ -3,7 +3,7 @@
     "//": "Cocos (Keeling) Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.50, "blue": 0.00},
     "eventSpecifications": [
         
     ]

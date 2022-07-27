@@ -3,7 +3,7 @@
     "//": "French Polynesia",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 1.00, "green": 0.61, "blue": 0.06},
     "eventSpecifications": [
         
     ]

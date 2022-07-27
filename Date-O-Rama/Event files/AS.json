@@ -3,7 +3,7 @@
     "//": "American Samoa",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.00, "green": 0.00, "blue": 0.40},
     "eventSpecifications": [
         {"type": "1D", "start": {"mon": 7, "d": 16}, "titles": {"en": "Manu’a Cession Day (in lieu)"}, "urls": {"en": "https://nationaltoday.com/manua-cession-day-in-lieu/"}, first: {"era": 1, "y": 1983}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},

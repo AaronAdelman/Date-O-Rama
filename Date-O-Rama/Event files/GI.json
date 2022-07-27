@@ -3,7 +3,7 @@
     "//": "Gibraltar",
     "defaultLocale": "en",
     "calendarCode": "gre",
-    "calendarColor": {"red": 0.0, "green": 0.0, "blue": 0.0},
+    "calendarColor": {"red": 0.85, "green": 0.00, "blue": 0.05},
     "eventSpecifications": [
         
     ]
