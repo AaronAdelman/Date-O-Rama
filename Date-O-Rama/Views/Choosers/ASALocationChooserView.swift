@@ -28,6 +28,17 @@ struct ASALocationChooserView: View {
 
     @Environment(\.dismiss) var dismiss
     
+#if os(watchOS)
+    let compact = true
+#else
+    @Environment(\.horizontalSizeClass) var sizeClass
+    var compact:  Bool {
+        get {
+            return self.sizeClass == .compact
+        } // get
+    } // var compact
+#endif
+    
     fileprivate func propagateInfoBackToParent() {
         debugPrint(#file, #function, "Propagate info back to parent")
         let changingLocationType = (self.tempLocationData.type != self.locationWithClocks.location.type)
@@ -91,14 +102,15 @@ struct ASALocationChooserView: View {
                     ASATimeZoneCell(timeZone: $tempLocationData.timeZone, now: Date())
                 }
                 
+                let pickerStyle: Any = compact ? WheelPickerStyle() : SegmentedPickerStyle()
                 Section {
                     Picker(selection: $tempLocationData.type, label:
-                            Text("Location Type").bold(), content: {
+                            Text("Location Type").bold().lineLimit(2), content: {
                         ForEach(ASALocationType.allCases) {
                             Text($0.localizedName).tag($0.rawValue)
                         }
                     })
-                    .pickerStyle(SegmentedPickerStyle())
+                    .modifier(ASAPicker(compact: compact))
                 }
                 
                 if tempLocationData.type == .EarthLocation {
