@@ -12,7 +12,9 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 7, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Independence Day", type: "1D", start: {d: 5, mon: 7}, first: {era: 1, y: 1811}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Venezuela)"}},
         {type: "1D", start: {mon: 7, d: 24}, inherits: "Navy Day"},
-        {"type": "1D", "start": {"mon": 6, "d": 24}, inherits: "Army Day"},
-
+        {type: "1D", start: {mon: 6, d: 24}, inherits: "Army Day"},
+        {type: "1D", start: {mon: 7, d: 24}, inherits: "Navy Day"},
+        {type: "1D", start: {mon: 11, d: 27}, inherits: "Air Force Day"},
+        {inherits: "National Guard Day", type: "1D", start: {mon: 8, d: 3}},
     ]
 }

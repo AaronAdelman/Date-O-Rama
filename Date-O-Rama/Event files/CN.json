@@ -17,5 +17,6 @@
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {type: "1D", start: {mon: 4, d: 23}, inherits: "Navy Day"},
+        {type: "1D", start: {mon: 8, d: 1}, inherits: "Army Day", first: {era: 1, y: 1933}, urls: {"en": "https://en.wikipedia.org/wiki/PLA_Day"}},
   ]
 }

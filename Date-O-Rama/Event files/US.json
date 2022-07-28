@@ -206,7 +206,7 @@
         {type: "1D", start: {mon: 9, d: 18}, inherits: "Air Force Day", urls: {"en": "https://nationaldaycalendar.com/air-force-birthday-september-18/"}},
         {type: "1D", start: {mon: 10, d: 27}, inherits: "Navy Day", first: {era: 1, y: 1922}},
         {titles: {"en": "Marine Corps Birthday"}, type: "1D", start: {mon: 11, d: 10}},
-        {titles: {"en": "National Guard Day"}, type: "1D", start: {mon: 12, d: 13}},
+        {inherits: "National Guard Day", type: "1D", start: {mon: 12, d: 13}},
         {titles: {"en": "Space Force Birthday"}, type: "1D", start: {mon: 12, d: 20}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
