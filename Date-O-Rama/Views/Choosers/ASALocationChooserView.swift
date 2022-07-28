@@ -30,11 +30,17 @@ struct ASALocationChooserView: View {
     
     fileprivate func propagateInfoBackToParent() {
         debugPrint(#file, #function, "Propagate info back to parent")
-        self.locationWithClocks.usesDeviceLocation = self.tempUsesDeviceLocation
-        if self.tempUsesDeviceLocation {
+        let changingLocationType = (self.tempLocationData.type != self.locationWithClocks.location.type)
+        
+        let usesDeviceLocation = self.tempUsesDeviceLocation && tempLocationData.type == .EarthLocation
+        self.locationWithClocks.usesDeviceLocation = usesDeviceLocation
+        if usesDeviceLocation {
             self.locationWithClocks.location = ASALocationManager.shared.deviceLocation
         } else {
             self.locationWithClocks.location = self.tempLocationData
+        }
+        if changingLocationType {
+            self.locationWithClocks.clocks = locationWithClocks.location.genericClocks
         }
     }
     
@@ -81,8 +87,18 @@ struct ASALocationChooserView: View {
             
             Form {
                 Section {
-                    ASALocationCell(usesDeviceLocation: tempUsesDeviceLocation, locationData: tempLocationData)
-                    ASATimeZoneCell(timeZone: tempLocationData.timeZone, now: Date())
+                    ASALocationCell(usesDeviceLocation: $tempUsesDeviceLocation, locationData: $tempLocationData)
+                    ASATimeZoneCell(timeZone: $tempLocationData.timeZone, now: Date())
+                }
+                
+                Section {
+                    Picker(selection: $tempLocationData.type, label:
+                            Text("Location Type").bold(), content: {
+                        ForEach(ASALocationType.allCases) {
+                            Text($0.localizedName).tag($0.rawValue)
+                        }
+                    })
+                    .pickerStyle(SegmentedPickerStyle())
                 }
                 
                 if tempLocationData.type == .EarthLocation {

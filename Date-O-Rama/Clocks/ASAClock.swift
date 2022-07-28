@@ -558,7 +558,7 @@ extension ASAClock {
     
     static func generic(calendarCode:  ASACalendarCode, dateFormat:  ASADateFormat) ->  ASAClock {
         let temp = ASAClock()
-        temp.calendar = ASAAppleCalendar(calendarCode: calendarCode)
+        temp.calendar = ASACalendarFactory.calendar(code: calendarCode)!
         temp.localeIdentifier = ""
         temp.dateFormat = dateFormat
         return temp

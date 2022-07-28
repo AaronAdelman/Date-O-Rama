@@ -251,6 +251,23 @@ extension ASALocation {
             return NSLocalizedString("Mars (all locations)", comment: "")
         } // switch self.type
     } // var properName
+    
+    var genericClocks: Array<ASAClock> {
+        let locationType = self.type
+
+        switch locationType {
+        case .EarthLocation:
+            let regionCode: (String) = (self.regionCode ?? "")
+            let clocks: Array<ASAClock> = regionCode.defaultCalendarCodes.map {
+                let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full, regionCode: regionCode)
+                return clock
+            }
+            return clocks
+
+        case .EarthUniversal, .MarsUniversal:
+            return [ASAClock.generic(calendarCode: locationType.defaultCalendarCode, dateFormat: .full)]
+        }
+    }
 } // extension ASALocation
 
 

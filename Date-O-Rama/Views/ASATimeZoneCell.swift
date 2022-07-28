@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ASATimeZoneCell:  View {
-    var timeZone:  TimeZone
+    @Binding var timeZone:  TimeZone
     var now:  Date
 
     var body:  some View {
@@ -39,6 +39,6 @@ struct ASATimeZoneCell:  View {
 
 struct ASATimeZoneCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASATimeZoneCell(timeZone: TimeZone.autoupdatingCurrent, now: Date())
+        ASATimeZoneCell(timeZone: .constant(TimeZone.autoupdatingCurrent) , now: Date())
     }
 }

@@ -135,7 +135,7 @@ struct ASABuiltInEventCalendarsEditingSection:  View {
             Section(header:  Text(NSLocalizedString("HEADER_BuiltInEventCalendars", comment: ""))) {
                 if selectedClock.calendar.calendarCode == .Gregorian {
                     Picker(selection: $selection, label:
-                            Text("Show built-in event calendars:"), content: {
+                            Text("Show built-in event calendars:").bold().underline(), content: {
                         ForEach(ASARegionCodeRegion.allCases) {
                             Text($0.text).tag($0)
                         }

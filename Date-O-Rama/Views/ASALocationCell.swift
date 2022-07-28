@@ -10,8 +10,8 @@ import SwiftUI
 import CoreLocation
 
 struct ASALocationCell:  View {
-    var usesDeviceLocation:  Bool
-    var locationData:  ASALocation
+    @Binding var usesDeviceLocation:  Bool
+    @Binding var locationData:  ASALocation
     @ObservedObject var locationManager = ASALocationManager.shared
     
     func rawDeviceLocationString(authorizationStatus:  CLAuthorizationStatus?) -> String {
@@ -129,6 +129,6 @@ struct ASALocationCell:  View {
 
 struct ASALocationCell_Previews: PreviewProvider {
     static var previews: some View {
-        ASALocationCell(usesDeviceLocation: true, locationData: ASALocation(type: .EarthLocation))
+        ASALocationCell(usesDeviceLocation: .constant(true), locationData: .constant(ASALocation(type: .EarthLocation)))
     }
 }

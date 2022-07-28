@@ -8,7 +8,9 @@
 
 import Foundation
 
-enum ASALocationType: String {
+enum ASALocationType: String, CaseIterable, Identifiable {
+    var id: Self { self }
+    
     case EarthLocation  = "xl"
     case EarthUniversal = "xj"
     case MarsUniversal  = "zmaj"

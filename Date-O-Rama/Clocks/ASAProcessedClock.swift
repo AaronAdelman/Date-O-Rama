@@ -118,6 +118,8 @@ struct ASAProcessedClock {
             self.daysInMonth = 1
             self.supportsMonths = false
         }
+        
+        assert(!(location.type != .EarthLocation && self.supportsMonths))
 
         if clock.timeFormat == .decimal {
             let decimalTime = DecimalTime(base: now, timeZone: timeZone)

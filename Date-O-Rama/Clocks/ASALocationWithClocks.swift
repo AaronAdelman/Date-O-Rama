@@ -58,16 +58,10 @@ class ASALocationWithClocks: NSObject, ObservableObject, Identifiable {
         let locationType = location.type
         switch locationType {
         case .EarthUniversal, .MarsUniversal:
-            return ASALocationWithClocks(location: location, clocks: [ASAClock.generic(calendarCode: locationType.defaultCalendarCode, dateFormat: .full)], usesDeviceLocation: false)
+            return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: false)
             
         case .EarthLocation:
-            let regionCode: (String) = (location.regionCode ?? "")
-            let clocks: Array<ASAClock> = regionCode.defaultCalendarCodes.map {
-                let clock = ASAClock.generic(calendarCode: $0, dateFormat: .full, regionCode: regionCode)
-                return clock
-            }
-            
-            return ASALocationWithClocks(location: location, clocks: clocks, usesDeviceLocation: usesDeviceLocation)
+            return ASALocationWithClocks(location: location, clocks: location.genericClocks, usesDeviceLocation: usesDeviceLocation)
         }
     }
     
