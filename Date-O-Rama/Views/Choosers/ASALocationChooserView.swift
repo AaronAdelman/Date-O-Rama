@@ -102,7 +102,6 @@ struct ASALocationChooserView: View {
                     ASATimeZoneCell(timeZone: $tempLocationData.timeZone, now: Date())
                 }
                 
-                let pickerStyle: Any = compact ? WheelPickerStyle() : SegmentedPickerStyle()
                 Section {
                     Picker(selection: $tempLocationData.type, label:
                             Text("Location Type").bold().lineLimit(2), content: {
