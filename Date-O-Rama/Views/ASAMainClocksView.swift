@@ -54,11 +54,7 @@ struct ASAMainClocksSectionView: View {
                         self.showingDetailView = true
                     }
                 ) {
-                    HStack {
-                        Image(systemName: "info.circle.fill")
-                            .symbolRenderingMode(.multicolor)
-                        Text("Details…")
-                    } // HStack
+                    ASAGetInfoLabel()
                 }
                 
                 Button(

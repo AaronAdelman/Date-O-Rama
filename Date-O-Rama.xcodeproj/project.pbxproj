@@ -240,6 +240,10 @@
 		A576C3952819762E005AC73D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF4652280F2E3F0088738D /* Line.swift */; };
 		A577066A2896B642000AA963 /* ASALocationMenuSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57706692896B642000AA963 /* ASALocationMenuSymbol.swift */; };
 		A577066B2896B642000AA963 /* ASALocationMenuSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57706692896B642000AA963 /* ASALocationMenuSymbol.swift */; };
+		A577066D2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */; };
+		A577066E2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */; };
+		A57706702896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */; };
+		A57706712896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */; };
 		A579019D259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A579019E259263F900224666 /* EKEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579019C259263F900224666 /* EKEventExtensions.swift */; };
 		A57CA3122483E9E000378EA7 /* ASAWatchClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CA3112483E9E000378EA7 /* ASAWatchClocksView.swift */; };
@@ -1222,6 +1226,8 @@
 		A5765A37279ED15900BF1F7E /* Rural.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rural.json; sourceTree = "<group>"; };
 		A576C39228171F96005AC73D /* NZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NZ.json; sourceTree = "<group>"; };
 		A57706692896B642000AA963 /* ASALocationMenuSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationMenuSymbol.swift; sourceTree = "<group>"; };
+		A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAGetInfoLabel.swift; sourceTree = "<group>"; };
+		A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockMenuSymbol.swift; sourceTree = "<group>"; };
 		A5790194259263A300224666 /* ASAEventCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventCompatible.swift; sourceTree = "<group>"; };
 		A579019C259263F900224666 /* EKEventExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKEventExtensions.swift; sourceTree = "<group>"; };
 		A57BCCB0247BBDC20019C02C /* ASALocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocation.swift; sourceTree = "<group>"; };
@@ -1692,12 +1698,13 @@
 			children = (
 				A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */,
 				A523A3CB25A7090A007CB54B /* ASACheckmarkSymbol.swift */,
+				A577066F2896BAA8000AA963 /* ASAClockMenuSymbol.swift */,
 				A5DFD52E26824AEF0013189E /* ASAColorCircle.swift */,
 				A501B24D259A32AB00A005E4 /* ASAColorRectangle.swift */,
 				A5AAA74F2657775B000C18AC /* ASACompactForwardChevronSymbol.swift */,
 				A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */,
-				A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */,
 				A57706692896B642000AA963 /* ASALocationMenuSymbol.swift */,
+				A5BCED0F252C8E8C008B8339 /* ASALocationSymbol.swift */,
 			);
 			path = Symbols;
 			sourceTree = "<group>";
@@ -2353,6 +2360,7 @@
 				A5A9667B25A31EC900CF158F /* ASAEventCell.swift */,
 				A5C170BF2799C72A006C3B88 /* ASAEventDetailDispatchView.swift */,
 				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
+				A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */,
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
 				A51A083A245B079A00135AA6 /* ASALocationCell.swift */,
 				A5FFBD392885A4AD00564D98 /* ASALocationDetailView.swift */,
@@ -3468,6 +3476,7 @@
 				A59322632577F61100318BC3 /* FontExtensions.swift in Sources */,
 				A59D806B2600C6FB00FD8BBF /* ASAEventsFile.swift in Sources */,
 				A59B54FD25A5CEC80076CCE7 /* EKCalendarExtensions.swift in Sources */,
+				A577066E2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */,
 				A566F45A2483D6EC000A05B5 /* NotificationController.swift in Sources */,
 				A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */,
 				A5DC8769264AA7FB00A8B9B5 /* EKEventAvailabilityExtensions.swift in Sources */,
@@ -3482,6 +3491,7 @@
 				A5AAA74C2656C4C4000C18AC /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A56BDB3E257662030037F833 /* CLAuthorizationStatusExtensions.swift in Sources */,
 				A59D80362600C57D00FD8BBF /* ASACalendar.swift in Sources */,
+				A57706712896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */,
 				A579019E259263F900224666 /* EKEventExtensions.swift in Sources */,
 				A5AAA74B2656C23D000C18AC /* ASAEventDetailView.swift in Sources */,
 				A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */,
@@ -3614,6 +3624,7 @@
 				A5E61C6C263EC21200254AF6 /* EKEventStatus.swift in Sources */,
 				A5A6FD5727BEC97C003595D5 /* StringExtensions.swift in Sources */,
 				A5596A3E258950AD002298CE /* LocaleExtensions.swift in Sources */,
+				A57706702896BAA8000AA963 /* ASAClockMenuSymbol.swift in Sources */,
 				A5A9669525A31F6400CF158F /* ASATimesSubcell.swift in Sources */,
 				A5A6FD4D27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift in Sources */,
 				A577066A2896B642000AA963 /* ASALocationMenuSymbol.swift in Sources */,
@@ -3672,6 +3683,7 @@
 				A5D135BD27C537C500A1A525 /* ASACalendarSupportingQuarters.swift in Sources */,
 				A59D80232600C57800FD8BBF /* ASACalendarCode.swift in Sources */,
 				A5C77C012433361400CFEE47 /* ASAClocksTab.swift in Sources */,
+				A577066D2896B801000AA963 /* ASAGetInfoLabel.swift in Sources */,
 				A5BC4DE326495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
 				A5EB60EB2892E4EC006009AF /* ASALocation.swift in Sources */,
 				A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */,

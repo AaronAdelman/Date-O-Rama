@@ -183,9 +183,7 @@ struct ASAClockCellBody:  View {
                 
                 Spacer()
                     .frame(width: 32.0)
-                
-                let ARROW_SYMBOL_NAME = "arrow.down.circle.fill"
-                
+                                
                 if isForComplications {
                     Spacer()
                     
@@ -194,10 +192,10 @@ struct ASAClockCellBody:  View {
                             detailType = .clockDetail
                             showingDetailView = true
                         }) {
-                            ASAClockMenuDetailLabel()
+                            ASAGetInfoLabel()
                         }
                     } label: {
-                        Image(systemName: ARROW_SYMBOL_NAME)
+                        ASAClockMenuSymbol()
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         VStack {
@@ -223,7 +221,7 @@ struct ASAClockCellBody:  View {
                             detailType = .clockDetail
                             showingDetailView = true
                         }) {
-                            ASAClockMenuDetailLabel()
+                            ASAGetInfoLabel()
                         }
                         
                         let numberOfDateEvents = processedClock.dateEvents.count
@@ -259,8 +257,7 @@ struct ASAClockCellBody:  View {
                             })
                         }
                     } label: {
-                        Image(systemName: ARROW_SYMBOL_NAME)
-                            .font(.title)
+                        ASAClockMenuSymbol()
                     }
                     .sheet(isPresented: $showingDetailView, onDismiss: {}, content: {
                         ASAClockCellMenuView(processedClock: processedClock, now: $now, showingDetailView: $showingDetailView, detailType: $detailType)
@@ -351,14 +348,6 @@ struct ASAClockAllDayEventVisibilityForEach: View {
         } // ForEach
     } // var body
 } // struct ASAClockAllDayEventVisibilityForEach
-
-
-struct ASAClockMenuDetailLabel: View {
-    var body: some View {
-        Label("Details…", systemImage: "info.circle.fill")
-    } // var body
-} // struct ASAClockMenuDetailLabel
-
 
 struct ASAClockMenuVisibilityLabel: View {
     var text: String

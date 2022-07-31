@@ -283,7 +283,7 @@
 "Showing ASAClockCellTimeEventVisibility.nextAndPresent" = "Showing next and present";
 "Spring ahead" = "Start of Daylight Savings Time";
 "Fall back"    = "Start of Standard Time";
-"Details…" = "Details…";
+"Details…" = "Get Info…";
 "ASAClockCellDateEventVisibility.none"           = "None";
 "ASAClockCellDateEventVisibility.oneDay"         = "One-day";
 "ASAClockCellDateEventVisibility.oneWeekOrLess"  = "One week or less";

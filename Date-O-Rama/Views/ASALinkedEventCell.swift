@@ -75,7 +75,7 @@ struct ASALinkedEventCell:  View {
                 Button(action: {
                     showingEventView = true
                 }) {
-                    Label("Details…", systemImage: "info.circle.fill")
+                    ASAGetInfoLabel()
                 }
                 
             } label: {
