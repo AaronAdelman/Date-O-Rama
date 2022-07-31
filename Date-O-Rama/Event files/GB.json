@@ -33,7 +33,7 @@
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}},
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": -1}, "titles": {"en": "Spring Holiday"}, "urls": {"en": "https://nationaltoday.com/spring-bank-holiday/"}},
-        {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Late Summer Bank Holiday"}},
+        {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Summer Bank Holiday"}, emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿", locations: {"en": "Scotland"}, urls: {"en": "https://nationaltoday.com/festival-monday/"}},
         {"inherits": "Armistice Day", "type": "1D", "start": {"mon": 11, "d": 11}, first: {"type": "1D", "era": 1, "y": 1919}},
         {"type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Early May Bank Holiday"}},
         {"type": "1D", "start": {"mon": 7, "d": 12}, "inherits": "Orangemen’s Day"},

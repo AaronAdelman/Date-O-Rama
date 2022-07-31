@@ -208,6 +208,10 @@
         {titles: {"en": "Marine Corps Birthday"}, type: "1D", start: {mon: 11, d: 10}},
         {inherits: "National Guard Day", type: "1D", start: {mon: 12, d: 13}},
         {titles: {"en": "Space Force Birthday"}, type: "1D", start: {mon: 12, d: 20}},
+        {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Colorado Day"}, first: {"era": 1, "y": 1907}, "urls": {"en": "https://nationaltoday.com/colorado-day/"}},
+        {"type": "1M", "start": {"mon": 8}, "titles": {"en": "National Child Support Awareness Month"}, first: {"era": 1, "y": 1995}, "emoji": "👨‍👩‍👧‍👦", "urls": {"en": "https://nationaltoday.com/child-support-awareness-month/"}},
+        {"type": "1M", "start": {"mon": 8}, "titles": {"en": "National MedicAlert Awareness Month"}, first: {"era": 1, "y": 1996}, "emoji": "☤", "urls": {"en": "https://nationaltoday.com/medicalert-awareness-month/"}},
+        {"type": "1M", "start": {"mon": 8}, "titles": {"en": "National Breastfeeding Month"}, first: {"era": 1, "y": 1995}, "urls": {"en": "https://nationaltoday.com/national-breastfeeding-month/"}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
