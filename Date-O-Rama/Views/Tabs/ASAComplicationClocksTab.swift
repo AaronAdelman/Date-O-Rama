@@ -104,7 +104,7 @@ struct ASAComplicationSectionView: View {
                             } // HStack
                         }
                     } label: {
-                        Image(systemName: "arrow.down.square.fill")
+                        ASALocationMenuSymbol()
                     }
                     .sheet(isPresented: self.$showingDetailView, onDismiss: {
                     }) {

@@ -173,7 +173,7 @@ struct ASAMainClocksSectionView: View {
                     })
                 }
             } label: {
-                Image(systemName: "arrow.down.square.fill").font(.title)
+                ASALocationMenuSymbol()
             }
             .sheet(isPresented: self.$showingDetailView, onDismiss: {
                 detail = .none
