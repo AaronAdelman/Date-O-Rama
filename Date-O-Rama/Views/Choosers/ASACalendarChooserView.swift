@@ -46,42 +46,42 @@ fileprivate extension Int {
 } // extension Int
 
 struct ASACalendarChooserView: View {
-    let calendarCodes:  Array<ASACalendarCode> = [
-        .Gregorian,
-        .Buddhist,
-        //        .CCSDSJulianDay,
-        .Chinese,
-        //        .CNESJulianDay,
-        .Coptic,
-        //        .DublinJulianDay,
-        .EthiopicAmeteAlem,
-        .EthiopicAmeteMihret,
-        .FrenchRepublican,
-        .FrenchRepublicanRomme,
-        .Hebrew,
-        .HebrewGRA,
-        .HebrewMA,
-        .Indian,
-        .Islamic,
-        .IslamicSolar,
-        .IslamicCivil,
-        .IslamicCivilSolar,
-        .IslamicTabular,
-        .IslamicTabularSolar,
-        .IslamicUmmAlQura,
-        .IslamicUmmAlQuraSolar,
-        .Japanese,
-        .Julian,
-        //        .JulianDay,
-        //        .LilianDate,
-        //        .MarsSolDate,
-        //        .ModifiedJulianDay,
-            .Persian,
-        //        .RataDie,
-        //        .ReducedJulianDay,
-            .RepublicOfChina,
-        //        .TruncatedJulianDay
-    ]
+//    let calendarCodes:  Array<ASACalendarCode> = [
+//        .Gregorian,
+//        .Buddhist,
+//        //        .CCSDSJulianDay,
+//        .Chinese,
+//        //        .CNESJulianDay,
+//        .Coptic,
+//        //        .DublinJulianDay,
+//        .EthiopicAmeteAlem,
+//        .EthiopicAmeteMihret,
+//        .FrenchRepublican,
+//        .FrenchRepublicanRomme,
+//        .Hebrew,
+//        .HebrewGRA,
+//        .HebrewMA,
+//        .Indian,
+//        .Islamic,
+//        .IslamicSolar,
+//        .IslamicCivil,
+//        .IslamicCivilSolar,
+//        .IslamicTabular,
+//        .IslamicTabularSolar,
+//        .IslamicUmmAlQura,
+//        .IslamicUmmAlQuraSolar,
+//        .Japanese,
+//        .Julian,
+//        //        .JulianDay,
+//        //        .LilianDate,
+//        //        .MarsSolDate,
+//        //        .ModifiedJulianDay,
+//            .Persian,
+//        //        .RataDie,
+//        //        .ReducedJulianDay,
+//            .RepublicOfChina,
+//        //        .TruncatedJulianDay
+//    ]
     
     @ObservedObject var clock:  ASAClock
     var location: ASALocation
@@ -92,6 +92,12 @@ struct ASACalendarChooserView: View {
     @State var didCancel = false
     
     @State var selection = 0 // All calendars
+    
+    var locationType: ASALocationType
+    
+    var calendarCodes: Array<ASACalendarCode> {
+        return ASACalendarCode.allForLocationType(self.locationType)
+    }
     
     func calendarCodes(option:  Int) -> Array<ASACalendarCode> {
         let rawResult: [ASACalendarCode] = self.calendarCodes.filter {
@@ -186,6 +192,6 @@ struct ASACalendarCell: View {
 
 struct ASACalendarPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        ASACalendarChooserView(clock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, tempCalendarCode: .Gregorian)
+        ASACalendarChooserView(clock: ASAClock.generic, location: .NullIsland, usesDeviceLocation: false, tempCalendarCode: .Gregorian, locationType: .EarthLocation)
     }
 }

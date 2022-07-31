@@ -86,36 +86,6 @@ struct ASAClocksTab: View {
                         
                         Text("Clocks")
                             .foregroundColor(.secondary)
-                        
-//                        let JulianDateCalendarCodes: Array<ASACalendarCode> = [
-//                            .CCSDSJulianDay,
-//                            .CNESJulianDay,
-//                            .DublinJulianDay,
-//                            .JulianDay,
-//                            .LilianDate,
-//                            .MarsSolDate,
-//                            .ModifiedJulianDay,
-//                            .RataDie,
-//                            .ReducedJulianDay,
-//                            .TruncatedJulianDay,
-//                        ].sorted(by: {$0.localizedName < $1.localizedName})
-//                        Menu(content: {
-//                            ForEach(JulianDateCalendarCodes, id: \.rawValue) {
-//                                code
-//                                in
-//                                
-//                                Button(action: {
-//                                    let location = code == .MarsSolDate ? ASALocation.MarsUniversal : .EarthUniversal
-//                                    let clock = ASAClock()
-//                                    clock.calendar = ASACalendarFactory.calendar(code: code)!
-//                                    ASAUserData.shared.addMainClock(clock: clock, location: location)
-//                                }, label: {
-//                                    Text(code.localizedName)
-//                                })
-//                            }
-//                        }, label: {
-//                            Text("Add clock for Julian date calendar")
-//                        })
 
                         EditButton()
                     } label: {

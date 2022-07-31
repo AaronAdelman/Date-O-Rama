@@ -72,7 +72,7 @@ struct ASAMainClocksSectionView: View {
                 
                 Divider()
                 
-                if location.type == .EarthLocation {
+//                if location.type == .EarthLocation {
                     Button(
                         action: {
                             self.detail = .newClock
@@ -86,7 +86,7 @@ struct ASAMainClocksSectionView: View {
                             Text("Add clock")
                         } // HStack
                     }
-                }
+//                }
                 
                 if ASAUserData.shared.mainClocks.count > 1 {
                     Divider()

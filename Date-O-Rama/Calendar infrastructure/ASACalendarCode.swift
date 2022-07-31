@@ -282,6 +282,18 @@ extension ASACalendarCode {
             } // switch self
         } // get
     } // var type
+    
+    static func allForLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode> {
+        switch locationType {
+        case .EarthLocation:
+            return [.Buddhist, .Coptic, .EthiopicAmeteAlem, .EthiopicAmeteMihret, .Gregorian, .Indian,
+                    .Japanese ,.Persian, .RepublicOfChina, .FrenchRepublican, .FrenchRepublicanRomme, .Julian, .Chinese, .Hebrew, .HebrewGRA, .HebrewMA, .Islamic, .IslamicCivil, .IslamicTabular, .IslamicUmmAlQura, .IslamicSolar, .IslamicCivilSolar, .IslamicTabularSolar, .IslamicUmmAlQuraSolar]
+        case .EarthUniversal:
+            return [.JulianDay, .ReducedJulianDay, .DublinJulianDay, .ModifiedJulianDay, .TruncatedJulianDay, .CNESJulianDay, .CCSDSJulianDay, .LilianDate, .RataDie]
+        case .MarsUniversal:
+            return [.MarsSolDate]
+        } // switch locationType
+    } // static func allForLocationType(_ locationType: ASALocationType) -> Array<ASACalendarCode>
 
     func matches(_ otherCalendarCode: ASACalendarCode) -> Bool {
         if self == .allHebrew && otherCalendarCode.isHebrewCalendar {
