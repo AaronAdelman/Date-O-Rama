@@ -256,6 +256,8 @@
         {"inherits": "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}},
         {inherits: "Feast of the Holy Family", "type": "1D", "start": {"mon": 12, "d": 30, "wkd": [6]}},
         {inherits: "Feast of the Holy Family", "type": "1D", "start": {"mon": 12, "d": 26, "thruD": 31, "wkd": [1]}},
+        {titles: {"en": "Lammas Day"}, type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lammas-day/"}, emoji: "🌾"},
+
         
         {"inherits": "St. Florian’s Day", "type": "1D", "start": {"mon": 5, "d": 4}},
         {"inherits": "St. Leopold’s Day", "type": "1D", "start": {"mon": 11, "d": 15}},
