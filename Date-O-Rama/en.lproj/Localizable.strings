@@ -329,8 +329,8 @@
 "Sort locations south to north"     = "Sort locations south to north";
 "Sort locations north to south"     = "Sort locations north to south";
 
-"Locations" = "Locations";
-"Clocks"    = "Clocks";
+//"Locations" = "Locations";
+//"Clocks"    = "Clocks";
 "Edit location" = "Edit location";
 "OK" = "OK";
 
@@ -344,7 +344,7 @@
 "Earth (specific location)" = "Earth (specific location)";
 "Earth (all locations)"     = "Earth (all locations)";
 "Mars (all locations)"      = "Mars (all locations)";
-"Add clock for Julian date calendar" = "Add clock for Julian date calendar";
+//"Add clock for Julian date calendar" = "Add clock for Julian date calendar";
 
 "Location Details" = "Location Details";
 
@@ -354,3 +354,6 @@
 "Move to bottom" = "Move to bottom";
 "Move up"        = "Move up";
 "Move down"      = "Move down";
+
+"Reorder"         = "Reorder";
+"Done Reordering" = "Done Reordering";

@@ -39,6 +39,11 @@ struct ASAMainClocksSectionView: View {
     
     @State private var showingActionSheet = false
     
+    #if os(watchOS)
+    #else
+    @Environment(\.editMode) var editMode
+    #endif
+    
     var body: some View {
         let location = locationWithClocks.location
         
@@ -87,6 +92,18 @@ struct ASAMainClocksSectionView: View {
                         } // HStack
                     }
 //                }
+                
+#if os(watchOS)
+#else
+                // Based on https://developer.apple.com/forums/thread/662860
+                Button(action: {
+                    editMode?.wrappedValue = editMode?.wrappedValue == .active ? .inactive : .active
+                }) {
+                    let editingNow: Bool = editMode?.wrappedValue == .active
+                    Image(systemName: editingNow ? "xmark" : "arrow.triangle.swap")
+                    Text(editingNow ? "Done Reordering" : "Reorder")
+                }
+#endif
                 
                 if ASAUserData.shared.mainClocks.count > 1 {
                     Divider()
@@ -158,6 +175,7 @@ struct ASAMainClocksSectionView: View {
                         locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName < $1.calendar.calendarCode.localizedName})
                         ASAUserData.shared.savePreferences(code: .clocks)
                     }, label: {
+                        Image(systemName: "arrow.down")
                         Text("Sort by calendar name ascending")
                     })
                     
@@ -165,6 +183,7 @@ struct ASAMainClocksSectionView: View {
                         locationWithClocks.clocks.sort(by: {$0.calendar.calendarCode.localizedName > $1.calendar.calendarCode.localizedName})
                         ASAUserData.shared.savePreferences(code: .clocks)
                     }, label: {
+                        Image(systemName: "arrow.up")
                         Text("Sort by calendar name descending")
                     })
                 }

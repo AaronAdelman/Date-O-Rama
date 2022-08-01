@@ -29,20 +29,24 @@ struct ASAClocksTab: View {
                     Spacer()
                     
                     Menu {
-                        Text("Locations")
-                            .foregroundColor(.secondary)
+//                        Text("Locations")
+//                            .foregroundColor(.secondary)
                         
                         Button(action: {
                             self.isShowingNewLocationView = true
                         }, label: {
+                            Image(systemName: "plus.circle.fill")
                             Text("New location")
                         })
+                        
+                        Divider()
                         
                         Group {
                             Button(action: {
                                 userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress < $1.location.shortFormattedOneLineAddress})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
+                                Image(systemName: "arrow.down")
                                 Text("Sort locations by name ascending")
                             })
                             
@@ -50,6 +54,7 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.shortFormattedOneLineAddress > $1.location.shortFormattedOneLineAddress})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
+                                Image(systemName: "arrow.up")
                                 Text("Sort locations by name descending")
                             })
                             
@@ -57,6 +62,7 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude < $1.location.location.coordinate.longitude})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
+                                Image(systemName: "arrow.left")
                                 Text("Sort locations west to east")
                             })
                             
@@ -64,6 +70,7 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.location.coordinate.longitude > $1.location.location.coordinate.longitude})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
+                                Image(systemName: "arrow.right")
                                 Text("Sort locations east to west")
                             })
                             
@@ -71,6 +78,7 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude < $1.location.location.coordinate.latitude})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
+                                Image(systemName: "arrow.up")
                                 Text("Sort locations south to north")
                             })
                             
@@ -78,16 +86,17 @@ struct ASAClocksTab: View {
                                 userData.mainClocks.sort(by: {$0.location.location.coordinate.latitude > $1.location.location.coordinate.latitude})
                                 userData.savePreferences(code: .clocks)
                             }, label: {
+                                Image(systemName: "arrow.down")
                                 Text("Sort locations north to south")
                             })
                         }
                         
-                        Divider()
-                        
-                        Text("Clocks")
-                            .foregroundColor(.secondary)
-
-                        EditButton()
+//                        Divider()
+//
+//                        Text("Clocks")
+//                            .foregroundColor(.secondary)
+//
+//                        EditButton()
                     } label: {
                         Image(systemName: "gear")
                             .symbolRenderingMode(.multicolor)

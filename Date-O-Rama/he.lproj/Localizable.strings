@@ -328,8 +328,8 @@
 "Sort locations south to north"     = "מיין מיקומים מדרום לצפון";
 "Sort locations north to south"     = "מיין מיקומים מצפון לדרום";
 
-"Locations" = "מיקומים";
-"Clocks"    = "שעונים";
+//"Locations" = "מיקומים";
+//"Clocks"    = "שעונים";
 "Edit location" = "ערוך מיקום";
 "OK" = "אישור";
 
@@ -343,7 +343,7 @@
 "Earth (specific location)" = "כדור הארץ (מיקום ספציפי)";
 "Earth (all locations)" = "כדור הארץ (כל מיקומים)";
 "Mars (all locations)"  = "מאדים (כל מיקומים)";
-"Add clock for Julian date calendar" = "הוסף שעון ללוח יוליאני";
+//"Add clock for Julian date calendar" = "הוסף שעון ללוח יוליאני";
 
 "Location Details" = "פרטי מיקום";
 
@@ -353,3 +353,6 @@
 "Move to bottom" = "עבור לסוף";
 "Move up"        = "עבור למעלה";
 "Move down"      = "עבור למטה";
+
+"Reorder"         = "סדר מחדש";
+"Done Reordering" = "סיום הסדר מחדש";
