@@ -9,5 +9,6 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "d": 10}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}},
+        {titles: {"en": "Celebrations of San Salvador", "es": "Fiesta de San Salvador"}, type: "1D", start: {mon: 8, d: 6}, first: {era: 1, y: 1525}, urls: {"en": "https://nationaltoday.com/celebrations-of-san-salvador/"}},
    ]
 }

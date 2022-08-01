@@ -27,5 +27,8 @@
         {"inherits": "Valentine’s Day", "type": "1D", "start": {"mon": 2, "d": 14}, first: {"type": "1D", "era": 1, "y": 496}},
         {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Albariño Day"}, urls: {"en": "https://nationaltoday.com/albarino-day/"}, emoji: "🍷"},
         {"type": "1D", "start": {"mon": 7, d: 20}, inherits: "Friendship Day"},
+        {type: "1D", start: {mon: 8, d: 5}, titles: {"en": "Day of Our Lady of Africa", "es": "Dia de Nuestra Señora de África"}, urls: {"en": "https://nationaltoday.com/our-lady-of-africa/"}, locations: {"en": "Ceuta"}},
+        {type: "1D", start: {mon: 8, d: 5}, titles: {"en": "Feast of the White Virgin"}, urls: {"en": "https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locations: {"en": "Álava"}},
+
     ]
 }

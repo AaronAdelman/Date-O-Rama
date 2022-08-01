@@ -12,5 +12,6 @@
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, wkd: [7], wkdRecurrence: -1}, first: {era: 1, y: 2001}},
        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 20}, first: {era: 1, y: 1810}},
        {type: "1D", start: {mon: 7, d: 24}, inherits: "Navy Day"},
+       {type: "1D", start: {mon: 8, d: 7}, titles: {"en": "Battle of Boyacá Day"}, urls: {"en": "https://nationaltoday.com/battle-of-boyaca/"}, first: {era: 1, y: 1819}}
   ]
 }
