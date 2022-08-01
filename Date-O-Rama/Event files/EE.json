@@ -12,6 +12,7 @@
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}, first: {era: 1, y: 2021}, titles: {"en": "Day for Protection of Children", "et": "lastekaitsepäev"}},
        {inherits: "Independence Day", type: "1D", start: {d: 24, mon: 2}, first: {era: 1, y: 1918}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Estonia)"}},
        {inherits: "Day of Restoration of Independence", type: "1D", start: {d: 20, mon: 8}, first: {era: 1, y: 1991}},
+       {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
     ]
 }
 

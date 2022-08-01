@@ -18,6 +18,7 @@
         {"inherits": "Emancipation Day", "type": "1D", "start": {"mon": 12, d: 1}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2009}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 21}, first: {era: 1, y: 1993}},
+        {"type": "1D", "start": {"mon": 4, d: 16}, inherits: "Friendship Day"},
    ]
 }
 

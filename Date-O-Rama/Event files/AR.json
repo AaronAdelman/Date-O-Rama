@@ -35,5 +35,6 @@
         {type: "1D", start: {mon: 5, d: 17}, inherits: "Navy Day"},
         {type: "1D", start: {mon: 5, d: 29}, inherits: "Army Day"},
         {type: "1D", start: {mon: 8, d: 10}, inherits: "Air Force Day"},
+        {"type": "1D", "start": {"mon": 7, d: 20}, inherits: "Friendship Day"},
   ]
 }

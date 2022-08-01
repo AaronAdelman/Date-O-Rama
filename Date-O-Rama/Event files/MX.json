@@ -17,5 +17,6 @@
         {type: "1D", start: {mon: 11, d: 23}, inherits: "Navy Day"},
         {inherits: "National Maritime Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 19}, first: {era: 1, y: 1950}},
-   ]
+        {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
+  ]
 }
