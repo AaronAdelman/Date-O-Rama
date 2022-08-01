@@ -9,5 +9,6 @@
         {"inherits": "Heroes’ Day", "type": "1D", "start": {"mon": 1, d: 20}},
         {inherits: "Independence Day", type: "1D", start: {d: 24, mon: 9}, first: {era: 1, y: 1973}},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {type: "1D", start: {mon: 8, d: 3}, titles: {"en": "Pidjiguiti Day"}, urls: {"en": "https://nationaltoday.com/pidjiguiti-day/"}}
     ]
 }
