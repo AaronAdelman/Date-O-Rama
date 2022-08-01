@@ -6,6 +6,7 @@
     "calendarColor": {"red": 0.00, "green": 0.13, "blue": 0.41},
     "eventSpecifications": [
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 2, wkd: [1], wkdRecurrence: 2}},
+        {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 8, "d": 4}, urls: {"en": "https://nationaltoday.com/cook-islands-constitution-day/"}},
 
     ]
 }
