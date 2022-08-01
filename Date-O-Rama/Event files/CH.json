@@ -5,7 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 1}, first: {era: 1, y: 1291}, urls: {"en": "https://en.wikipedia.org/wiki/Swiss_National_Day"}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 8, "d": 1}, first: {era: 1, y: 1899}, urls: {"en": "https://nationaltoday.com/switzerland-national-day/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 1}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 3, "d": 4}, inherits: "Engineer’s Day", first: {era: 1, y: 2018}},
