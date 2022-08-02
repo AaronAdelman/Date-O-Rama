@@ -291,7 +291,7 @@
         {"type": "1D", "start": {"d": 6, "mon": 8}, "titles": {"en": "Hiroshima Day"}, first: {"era": 1, "y": 1945}, "urls": {"en": "https://nationaltoday.com/hiroshima-day/"}},
         {"type": "1D", "start": {"d": 7, "mon": 8}, "titles": {"en": "Professional Speakers Day"}, "emoji": "🎤", "urls": {"en": "https://www.daysoftheyear.com/days/professional-speakers-day/"}},
         {"type": "1D", "start": {"d": 8, "mon": 8}, "titles": {"en": "International Cat Day", "he": "יום החתול הבינלאומי"}, "emoji": "🐈", "urls": {"en": "https://www.daysoftheyear.com/days/international-cat-day/"}},
-        {"type": "1D", "start": {"d": 9, "mon": 8}, "titles": {"en": "Nagasaki Day"}, first: {"era": 1, "y": 1945}},
+        {"type": "1D", "start": {"d": 9, "mon": 8}, "titles": {"en": "Nagasaki Day"}, first: {"era": 1, "y": 1945}, urls: {"en": "https://nationaltoday.com/nagasaki-memorial-day/"}},
         {"type": "1D", "start": {"d": 9, "mon": 8}, "titles": {"en": "International Coworking Day"}, first: {"era": 1, "y": 2010}, "emoji": "👩‍💻", "urls": {"en": "https://nationaldaycalendar.com/international-coworking-day-august-9/"}},
         {"type": "1D", "start": {"d": 10, "mon": 8}, "titles": {"en": "World Lion Day"}, first: {"era": 1, "y": 2013}, "emoji": "🦁", "urls": {"en": "https://www.daysoftheyear.com/days/lion-day/"}},
         {"type": "1D", "start": {"d": 11, "mon": 8}, "titles": {"en": "National Son and Daughter Day"}, first: {"era": 1, "y": 2944}, "emoji": "👦👧", "urls": {"en": "https://www.daysoftheyear.com/days/son-and-daughter-day/"}},
