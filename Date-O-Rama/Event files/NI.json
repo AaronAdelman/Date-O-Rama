@@ -13,5 +13,6 @@
         {inherits: "Revolution Day", type: "1D", start: {mon: 7, d: 19}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 2, d: 1}, inherits: "Air Force Day"},
         {"titles": {"en": "Santo Domingo Celebration Start"}, "type": "1D", "start": {"mon": 8, "d": 1}, "urls": {"en": "https://nationaltoday.com/santo-domingo-celebrations-start/"}, first: {"era": 1, "y": 1885}},
+        {titles: {"en": "Ascent of Saint Dominic"}, start: {mon: 8, d: 10}, type: "1D", urls: {"en": "https://nationaltoday.com/ascent-of-saint-dominic/"}},
    ]
 }
