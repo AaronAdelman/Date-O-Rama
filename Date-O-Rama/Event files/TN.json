@@ -11,7 +11,7 @@
         {"type": "1D", "start": {"mon": 4, "d": 9}, "inherits": "Martyrs’ Day", "urls": {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day#Tunisia"}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 25}, "urls": {"en": "https://nationaltoday.com/tunisia-republic-day/"}, first: {"era": 1, "y": 1957}},
-        {"type": "1D", "start": {"mon": 8, "d": 13}, titles: {"en": "Women’s Day"}, emoji: "👩"},
+        {"type": "1D", "start": {"mon": 8, "d": 13}, titles: {"en": "Women’s Day"}, emoji: "👩", urls: {"en": "https://nationaltoday.com/womens-and-family-day/"}},
         {"inherits": "Evacuation Day", "type": "1D", "start": {"mon": 10, "d": 15}},
         {"type": "1D", "start": {"mon": 12, "d": 17}, titles: {"en": "Revolution and Youth Day"}, emoji: "䷰👦👧", first: {era: 1, y: 2010}},
 
