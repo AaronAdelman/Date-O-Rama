@@ -183,5 +183,6 @@
         {"titles": {"en": "U Tirot Sing Day"}, "locations": {"en": "Meghalaya"}, "type": "1D", "start": {"mon": 7, "d": 17}, "urls": {"en": "https://nationaltoday.com/u-tirot-sing-day/"}, first: {"era": 1, "y": 1835}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2007}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Parents’ Day", first: {"era": 1, "y": 2007}, titles: {"en": "Parents’ Worship Day", "hi": "मातृ-पितृ पूजन दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Parents%27_Worship_Day"}},
+        {inherits: "International Day of the World’s Indigenous Peoples", "type": "1D", "start": {"mon": 8, "d": 9}, titles: {"en": "Adivasi Divas"}},
     ]
 }
