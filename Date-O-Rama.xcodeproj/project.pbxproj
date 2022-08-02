@@ -93,6 +93,10 @@
 		A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0725C026AA00BC62C4 /* Personal information policy.pdf */; };
 		A5150F0E25C026AA00BC62C4 /* Thanks to.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A5150F0925C026AA00BC62C4 /* Thanks to.pdf */; };
 		A5150F3C25C0929800BC62C4 /* ASAForwardChevronSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */; };
+		A5171A5F2899A81600CCA91A /* Buddhism (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */; };
+		A5171A602899A81600CCA91A /* Buddhism (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */; };
+		A5171A622899A83B00CCA91A /* Taoism (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5171A612899A83B00CCA91A /* Taoism (Chinese).json */; };
+		A5171A632899A83B00CCA91A /* Taoism (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5171A612899A83B00CCA91A /* Taoism (Chinese).json */; };
 		A51A0837245B06B500135AA6 /* ASAClockDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */; };
 		A51A0839245B071B00135AA6 /* ASATimeZoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */; };
 		A51A083B245B079A00135AA6 /* ASALocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51A083A245B079A00135AA6 /* ASALocationCell.swift */; };
@@ -1153,6 +1157,8 @@
 		A5150F1725C026C200BC62C4 /* he */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = he; path = "he.lproj/What should I do if I have a.pdf"; sourceTree = "<group>"; };
 		A5150F3B25C0929800BC62C4 /* ASAForwardChevronSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAForwardChevronSymbol.swift; sourceTree = "<group>"; };
 		A516D4F128805B0500DF7639 /* ASALocationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ASALocationType.swift; path = "Date-O-Rama/ASALocationType.swift"; sourceTree = SOURCE_ROOT; };
+		A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Buddhism (Chinese).json"; sourceTree = "<group>"; };
+		A5171A612899A83B00CCA91A /* Taoism (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Taoism (Chinese).json"; sourceTree = "<group>"; };
 		A51A0836245B06B500135AA6 /* ASAClockDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockDetailCell.swift; sourceTree = "<group>"; };
 		A51A0838245B071B00135AA6 /* ASATimeZoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeZoneCell.swift; sourceTree = "<group>"; };
 		A51A083A245B079A00135AA6 /* ASALocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationCell.swift; sourceTree = "<group>"; };
@@ -1764,6 +1770,7 @@
 				A5D850B9280C99B4005247BD /* BR.json */,
 				A5F3B02028565F8000865CEB /* BS.json */,
 				A5B999B128622B1700072FD5 /* BT.json */,
+				A5171A5E2899A81600CCA91A /* Buddhism (Chinese).json */,
 				A51C8577282D64A00081A11B /* Buddhism.json */,
 				A5B999B028622B1700072FD5 /* BV.json */,
 				A5EFFF2C285B5B9E00F2205F /* BW.json */,
@@ -1963,8 +1970,8 @@
 				A5EF0006285B8EEA00F2205F /* QA (Muslim).json */,
 				A5EFFF9E285B7F2E00F2205F /* QA.json */,
 				A502D3E128637E2800A625A9 /* RE.json */,
-				A5EB4F942850EFC700A32FB1 /* RO.json */,
 				A53D608B288844020094B3F7 /* RO (Julian).json */,
+				A5EB4F942850EFC700A32FB1 /* RO.json */,
 				A5EB4F912850EF0B00A32FB1 /* RS.json */,
 				A5F3B0172855FEC700865CEB /* RU.json */,
 				A5765A37279ED15900BF1F7E /* Rural.json */,
@@ -2009,6 +2016,7 @@
 				A5EF0009285B8EEA00F2205F /* SY (Muslim).json */,
 				A5EFFFD7285B855E00F2205F /* SY.json */,
 				A5FB22B128638E9200B5042B /* SZ.json */,
+				A5171A612899A83B00CCA91A /* Taoism (Chinese).json */,
 				A5FB22B228638E9200B5042B /* TC.json */,
 				A5EFFF38285B5C5B00F2205F /* TD.json */,
 				A508C7F4283E244E00D96947 /* Templates.json */,
@@ -2703,6 +2711,7 @@
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
 				A5FB22D4286390E500B5042B /* WF.json in Resources */,
 				A5EF000F285B8EEB00F2205F /* IQ (Muslim).json in Resources */,
+				A5171A632899A83B00CCA91A /* Taoism (Chinese).json in Resources */,
 				A54539E726A9CB610028EAD5 /* Sunni Islam (times, Umm al-Qura).json in Resources */,
 				A50DA51D28686272008D54AE /* TH (Chinese).json in Resources */,
 				A5DEFE8C2822FE9600EF1651 /* KR.json in Resources */,
@@ -2718,6 +2727,7 @@
 				A5EE19E62804A92600B0B9C2 /* GB.json in Resources */,
 				A5EFFFAB285B7F2E00F2205F /* SL.json in Resources */,
 				A5EFFFB8285B808E00F2205F /* TT.json in Resources */,
+				A5171A602899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5E495F828624EFE001BF40C /* GL.json in Resources */,
 				A5765A39279ED15900BF1F7E /* Rural.json in Resources */,
 				A5BC61472709B11800888611 /* Western Christianity (supplemental).json in Resources */,
@@ -3212,6 +3222,7 @@
 				A5E8BADD27FCAF700018CD36 /* PH.json in Resources */,
 				A502D3DC28637D7D00A625A9 /* PW.json in Resources */,
 				A5D85096280C8A1A005247BD /* LK.json in Resources */,
+				A5171A622899A83B00CCA91A /* Taoism (Chinese).json in Resources */,
 				A533798124B2333500340C0B /* Sun.json in Resources */,
 				A5E292C5285A446000925EBD /* AO.json in Resources */,
 				A5EB851B2869E9F700C9321A /* SY (Julian).json in Resources */,
@@ -3249,6 +3260,7 @@
 				A5EFFF64285B61E500F2205F /* IM.json in Resources */,
 				A502D3DE28637DA900A625A9 /* PY.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
+				A5171A5F2899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5759144282BE30700675058 /* DK.json in Resources */,
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 				A50DA52428686272008D54AE /* PH (Chinese).json in Resources */,

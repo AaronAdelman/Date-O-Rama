@@ -12,5 +12,6 @@
         {"type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Marine Day"}, "urls": {"en": "https://nationaltoday.com/marine-day-in-japan/"}, first: {"era": 1, "y": 2003}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, d: 5}, urls: {"en": "https://en.wikipedia.org/wiki/Children%27s_Day_(Japan)"}, first: {"era": 1, "y": 1984}},
         {"type": "1D", "start": {"mon": 10, wkd: [2], wkdRecurrence: 2}, inherits: "National Sports Day", titles: {"en": "Sports Day", "ja": "スポーツの日"}, first: {"era": 1, "y": 2000}, urls: {"en": "https://en.wikipedia.org/wiki/Sports_Day_(Japan)"}},
+        {"titles": {"en": "Mountain Day", "he": "יום ההר"}, "type": "1D", "start": {"mon": 8, "d": 11}, first: {"era": 1, "y": 2016}, "urls": {"en": "https://nationaltoday.com/mountain-day/"}, "emoji": "🗻"},
     ]
 }

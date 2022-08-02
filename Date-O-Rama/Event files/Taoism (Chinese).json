@@ -1,0 +1,9 @@
+{
+    "titles": {"en": "Taoism", "he": "דאואיזם"},
+    "defaultLocale": "en",
+    "calendarCode": "chi",
+    "calendarColor": {"red": 1.0, "green": 0.82, "blue": 0.41},
+    "eventSpecifications": [
+        {"type": "1D", "start": {mon: 7, d: 15}, "titles": {"en": "Ghost Festival", "zh": "中元節", "zh_CN": "中元节"}, "urls": {"en": "https://nationaltoday.com/spirit-festival/"}},
+    ]
+}
