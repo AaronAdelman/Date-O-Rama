@@ -47,7 +47,7 @@
         {titles: {"en": "National Space Day", "id": "Hari Keantariksaan Nasional"}, "type": "1D", "start": {"mon": 8, "d": 6}, emoji: "🚀", notes: {"id": "Hari Bhakti Adhyaksa"}, first: {era: 1, y: 2013}},
         {"inherits": "Veterans Day", "type": "1D", "start": {"mon": 8, "d": 10}, titles: {"en": "National Veterans Day", "id": "Hari Veteran Nasional"}, first: {era: 1, y: 2014}},
         {"type": "1D", "start": {"mon": 8, "d": 10}, titles: {"en": "National Technology Uprising Day", "id": "Hari Kebangkitan Teknologi Nasional"}, first: {era: 1, y: 1995}},
-        {"type": "1D", "start": {"mon": 8, "d": 14}, titles: {"en": "Gerakan Pramuka Indonesia Day", "id": "Hari Pramuka"}, first: {era: 1, y: 1961}},
+        {"type": "1D", "start": {"mon": 8, "d": 14}, titles: {"en": "Gerakan Pramuka Indonesia Day", "id": "Hari Pramuka"}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/pramuka-day/"}},
         {"titles": {"en": "Television Day", "he": "יום הטלוויזיה", "id": "Hari Televisi"}, notes: {"en": "Anniversary of TVRI", "id": "Hari Ulang Tahun Televisi Republik Indonesia"}, "type": "1D", "start": {"mon": 8, "d": 24}, first: {"type": "1D", "era": 1, "y": 1962}, "emoji": "📺"},
         {"type": "1D", "start": {"mon": 9, "d": 4}, titles: {"en": "National Customer Day", "id": "Hari Pelanggan Nasional"}, first: {era: 1, y: 2003}},
         {"type": "1D", "start": {"mon": 9, "d": 9}, inherits: "National Sports Day", first: {"type": "1D", "era": 1, "y": 1983}},

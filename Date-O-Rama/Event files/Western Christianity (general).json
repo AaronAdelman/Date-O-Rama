@@ -145,9 +145,8 @@
         {"titles": {"en": "Feast of St. Jane Frances de Chantal"}, "type": "1D", "start": {"mon": 8, "d": 12}},
         {"titles": {"en": "Feast of Saints Pontian and Hippolytus"}, "type": "1D", "start": {"mon": 8, "d": 13}},
         {"titles": {"en": "Feast of St. Maximilian Mary Kolbe"}, "type": "1D", "start": {"mon": 8, "d": 14}},
-        
+        {titles: {"en": "Vigil of Assumption Day"}, "type": "1D", "start": {"mon": 8, "d": 14}, urls: {"en": "https://nationaltoday.com/vigil-of-assumption-day/"}},
         {"inherits": "Assumption of Mary", "type": "1D", "start": {"mon": 8, "d": 15}},
-        
         {"inherits": "Feast of St. Stephen of Hungary", "type": "1D", "start": {"mon": 8, "d": 16}},
         {"titles": {"en": "Feast of St. John Eudes"}, "type": "1D", "start": {"mon": 8, "d": 19}},
         {"titles": {"en": "Feast of St. Bernard of Clairvaux"}, "type": "1D", "start": {"mon": 8, "d": 20}},
