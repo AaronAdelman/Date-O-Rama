@@ -55,7 +55,7 @@
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
         {"inherits": "Feast of the Transfiguration", "type": "1D", "start": {"mon": 8, "d": 6}},
-        {"titles": {"en": "Dormition of the Mother of God"}, "type": "1D", "start": {"mon": 8, "d": 15}},
+        {"titles": {"en": "Dormition of the Mother of God"}, "type": "1D", "start": {"mon": 8, "d": 15}, inherits: "Assumption of Mary"},
 
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},

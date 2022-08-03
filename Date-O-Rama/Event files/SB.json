@@ -9,6 +9,6 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Guadalcanal Province Day"}, "urls": {"en": "https://nationaltoday.com/guadalcanal-province-day/"}},
         {type: "1D", start: {mon: 8, d: 3}, titles: {"en": "Makira-Ulawa Province Day"}, "urls": {"en": "https://nationaltoday.com/makira-ulawa-province-day/"}},
-
+        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Malatia Province Day"}, notes: {"en": "Second Appointed Day"}, "urls": {"en": "https://nationaltoday.com/malaita-province-day/"}},
     ]
 }

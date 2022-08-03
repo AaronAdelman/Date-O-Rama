@@ -80,7 +80,7 @@
         {"type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": 4}, "titles": {"en": "National Parents’ Day", "he": "יום ההורים הלאומי"}, "notes": {"en": "National Parents Day"}, inherits: "Parents’ Day", "urls": {"en": "https://www.daysoftheyear.com/days/parents-day/"}, first: {"era": 1, "y": 1994}},
         {"type": "1D", "start": {"d": 4, "mon": 8}, inherits: "Coast Guard Day", "urls": {"en": "https://nationaldaycalendar.com/national-coast-guard-day-august-4/"}},
         {"inherits": "Victory Over Japan Day", "type": "1D", "start": {"d": 2, "mon": 9}, first: {"era": 1, "y": 1945}},
-        {"type": "1D", "start": {"d": 16, "mon": 8}, "titles": {"en": "Bennington Battle Day"}, first: {"era": 1, "y": 1977}, "urls": {"en": "https://en.wikipedia.org/wiki/Bennington_Battle_Day"}},
+        {"type": "1D", "start": {"d": 16, "mon": 8}, "titles": {"en": "Bennington Battle Day"}, first: {"era": 1, "y": 1977}, "urls": {"en": "https://nationaltoday.com/bennington-battle-day/"}},
         {"type": "1D", "start": {"d": 21, "mon": 8}, "titles": {"en": "World Senior Citizen Day"}, first: {"era": 1, "y": 1997}, "emoji": "👴👵", "urls": {"en": "https://en.wikipedia.org/wiki/World_Senior_Citizen%27s_Day"}},
         {"inherits": "Black Ribbon Day", "type": "1D", "start": {"mon": 8, "d": 23}, first: {"era": 1, "y": 2014}},
         {"type": "1D", "start": {"mon": 5, "wkd": [5], "wkdRecurrence": 1}, "titles": {"en": "National Day of Prayer"}, "emoji": "🛐", "urls": {"en": "https://nationaldaycalendar.com/national-day-of-prayer-first-thursday-in-may/"}, first: {"era": 1, "y": 1984}},

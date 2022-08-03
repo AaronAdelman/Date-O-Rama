@@ -12,5 +12,6 @@
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 1, "d": 9}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Panama)"}},
         {inherits: "Independence Day", type: "1D", start: {d: 28, mon: 11}, first: {era: 1, y: 1821}},
         {inherits: "Independence Day", type: "1D", start: {d: 3, mon: 11}, first: {era: 1, y: 1903}, titles: {"en": "Separation Day"}},
+        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Foundation of Old Panama City"}, urls: {"en": "https://nationaltoday.com/foundation-of-old-panama-city/"}, first: {era: 1, y: 1519}}
     ]
 }
