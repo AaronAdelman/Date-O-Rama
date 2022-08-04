@@ -18,9 +18,10 @@
        {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {"era": 1, "y": 1914}},
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
        {type: "1M", start: {mon: 11}, titles: {"en": "Children’s Month"}, inherits: "Children’s Day"},
-       {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}},
+       {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-heroes-day-philippines/"}},
        {type: "1D", start: {mon: 7, d: 1}, inherits: "Air Force Day"},
        {"type": "1M", "start": {"mon": 8}, "titles": {"en": "National Language Month", "fil": "Buwan ng Wikang Pambansa"}, "urls": {"en": "https://nationaltoday.com/national-language-month/"}, emoji: "🗣", first: {era: 1, y: 1997}},
        {"type": "nD", "start": {"mon": 8, "d": 17}, "end": {"mon": 8, "d": 23}, "titles": {"en": "Made in the Philippines Product Week"}, "urls": {"en": "https://nationaltoday.com/made-in-the-philippines-product-week/"}, first: {era: 1, y: 1997}},
+       {type: "1D", titles: {"en": "Ninoy Aquino Day"}, start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/ninoy-aquino-day/"}, first: {era: 1, y: 2004}},
        ]
     }
