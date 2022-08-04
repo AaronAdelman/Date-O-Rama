@@ -206,6 +206,7 @@
         {"template": "Liberation Day (day off)", "type": "1D", "start": {"d": 3, "mon": 3}, "titles": {"en": "Liberation Day (day off)"}, "urls": {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},
         {"template": "Libra", "titles": {"en": "Libra", "he": "מאזניים"}, "type": "1M", "start": {"mon": 1}, "emoji": "♎️", "inherits": "*Astrology*"},
         {"template": "Litha", "titles": {"en": "Litha", "he": "לית׳א"}, "type": "1D", "start": {"equinoxOrSolstice": "Jun"}},
+        {template: "Long Tan Day", type: "1D", titles: {"en": "Long Tan Day"}, start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/long-tan-day/"}, emoji: "🪖"},
         {"template": "Lughnasadh", "titles": {"en": "Lughnasadh", "he": "לונאסה"}, "type": "1D", "start": {"mon": 8, "d": 1}, urls: {"en": "https://nationaltoday.com/lughnasadh/"}},
         {"template": "Mabon", "titles": {"en": "Mabon", "he": "מאבון"}, "type": "1D", "start": {"equinoxOrSolstice": "Sep"}},
         {"template": "Maghrib", "titles": {"en": "Maghrib", "ar": "صلاة المغرب‎", "he": "צלאת אל-מגרב"}, "type": "pt", "start": {"ptType": "Maghrib", "calcMethod": "Jafari"}},

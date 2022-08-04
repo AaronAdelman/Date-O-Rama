@@ -14,5 +14,6 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 5, d: 17}},
         {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 6}, first: {era: 1, y: 1905}, urls: {"en": "https://en.wikipedia.org/wiki/Union_Dissolution_Day"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {"titles": {"en": "Crown Princess Mette-Marit’s Day"}, "type": "1D", "start": {"mon": 8, "d": 19}, "urls": {"en": "https://nationaltoday.com/crown-princess-mette-marits-day/"}, first: {"era": 1, "y": 2002}, "inherits": "*BDay*"},
     ]
 }

@@ -54,7 +54,7 @@
         {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
         {"inherits": "Ascension Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
         {"inherits": "Pentecost", "type": "1D", "start": {"Easter": "Easter", "offsetD": 49}},
-        {"inherits": "Feast of the Transfiguration", "type": "1D", "start": {"mon": 8, "d": 6}},
+        {"inherits": "Feast of the Transfiguration", "type": "1D", "start": {"mon": 8, "d": 6}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, emoji: "🍏"},
         {"titles": {"en": "Dormition of the Mother of God"}, "type": "1D", "start": {"mon": 8, "d": 15}, inherits: "Assumption of Mary"},
 
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
