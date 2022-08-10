@@ -23,5 +23,6 @@
        {"type": "1M", "start": {"mon": 8}, "titles": {"en": "National Language Month", "fil": "Buwan ng Wikang Pambansa"}, "urls": {"en": "https://nationaltoday.com/national-language-month/"}, emoji: "🗣", first: {era: 1, y: 1997}},
        {"type": "nD", "start": {"mon": 8, "d": 17}, "end": {"mon": 8, "d": 23}, "titles": {"en": "Made in the Philippines Product Week"}, "urls": {"en": "https://nationaltoday.com/made-in-the-philippines-product-week/"}, first: {era: 1, y: 1997}},
        {type: "1D", titles: {"en": "Ninoy Aquino Day"}, start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/ninoy-aquino-day/"}, first: {era: 1, y: 2004}},
+       {"type": "nD", "start": {"mon": 8, "d": 23}, "end": {"mon": 8, "d": 30}, "titles": {"en": "National Coconut Week"}, "urls": {"en": "https://nationaltoday.com/national-coconut-week/"}},
        ]
     }

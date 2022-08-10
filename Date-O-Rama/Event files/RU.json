@@ -19,5 +19,6 @@
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {type: "1D", start: {mon: 8, d: 12}, inherits: "Air Force Day", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: -1}, inherits: "Navy Day", first: {era: 1, y: 2013}, urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Russia)"}},
+        {"inherits": "National Flag Day", "type": "1D", "start": {"mon": 8, "d": 22}, urls: {"en": "https://nationaltoday.com/russia-national-flag-day/"}},
    ]
 }
