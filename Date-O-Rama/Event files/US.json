@@ -215,6 +215,7 @@
         {"type": "1D", "start": {"mon": 8, "wkd": [1], "wkdRecurrence": 1}, inherits: "Friendship Day", titles: {"en": "National Friendship Day"}, "urls": {"en": "https://nationaltoday.com/friendship-day/"}, first: {era: 1, y: 1935}},
         {"inherits": "Victory Day", "type": "1D", "start": {"mon": 8, wkd: [2], wkdRecurrence: 2}, titles: {"en": "U.S. Victory Day"}, locations: {"en": "Rhode Island"}, urls: {"en": "https://nationaltoday.com/us-victory-day/"}, first: {era: 1, y: 1966}},
         {titles: {"en": "Navajo Code Talkers Day"}, "type": "1D", "start": {"mon": 8, d: 14}, titles: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}},
+        {"type": "1D", "start": {"mon": 8, "d": 27}, "titles": {"en": "Lyndon Baines Johnson Day"}, "urls": {"en": "https://nationaltoday.com/lyndon-baines-johnson-day/"}, "inherits": "*BDay*", first: {era: 1, y: 1908}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
