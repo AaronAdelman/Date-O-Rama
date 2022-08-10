@@ -11,7 +11,7 @@ import XCTest
 import CoreLocation
 import SwiftAA
 
-func GregorianDate(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, secondsFromGMT: Int) -> Date {
+fileprivate func GregorianDate(era: Int, year: Int, month: Int, day: Int, hour: Int, minute: Int, second: Int, secondsFromGMT: Int) -> Date {
     var dateComponents = DateComponents()
     dateComponents.era      = era
     dateComponents.year     = year
