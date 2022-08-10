@@ -14,6 +14,6 @@
         {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 17, mon: 7}, first: {era: 1, y: 1992}},
         {"titles": {"en": "Matica Slovenská Day"}, "type": "1D", "start": {"mon": 8, "d": 4}, urls: {"en": "https://nationaltoday.com/matice-slovenska-day/"}},
+        {"titles": {"en": "National Uprising Day"}, "type": "1D", "start": {"mon": 8, "d": 29}, urls: {"en": "https://nationaltoday.com/national-uprising-day/"}, first: {era: 1, y: 2003}},
     ]
 }
-

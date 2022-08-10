@@ -93,7 +93,7 @@
         {"type": "1D", "start": {"d": 28, "mon": 2}, "titles": {"en": "National Science Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Science_Day"}, first: {"era": 1, "y": 1999}},
         {"type": "1D", "start": {"d": 11, "mon": 4}, "titles": {"en": "National Safe Motherhood Day"}, "urls": {"en": "https://newsonair.gov.in/News?title=National-Safe-Motherhood-Day-is-being-observed-today&id=438954"}, "emoji": "🤰"},
         {"type": "1D", "start": {"d": 8, "mon": 8}, "titles": {"en": "Quit India Movement Day"}},
-        {"type": "1D", "start": {"d": 29, "mon": 8}, inherits: "National Sports Day"},
+        {"type": "1D", "start": {"d": 29, "mon": 8}, inherits: "National Sports Day", urls: {"en": "https://nationaltoday.com/national-sports-day/"}, first: {"era": 1, "y": 2012}},
         {"type": "1D", "start": {"d": 8, "mon": 10}, inherits: "Air Force Day"},
         {"type": "1D", "start": {"d": 9, "mon": 10}, "titles": {"en": "Foreign Service Day"}},
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 11, "d": 26}, urls: {"en": "https://en.wikipedia.org/wiki/Constitution_Day_(India)"}, first: {"era": 1, "y": 1950}},
