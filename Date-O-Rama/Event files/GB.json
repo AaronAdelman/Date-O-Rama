@@ -58,5 +58,6 @@
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "Yorkshire Day"}, first: {"era": 1, "y": 1975}, "urls": {"en": "https://www.daysoftheyear.com/days/yorkshire-day/"}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {titles: {"en": "National Bakewell Tart Day"}, start: {mon: 8, d: 11}, type: "1D", urls: {"en": "https://nationaltoday.com/national-bakewell-tart-day/"}, first: {"era": 1, "y": 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {titles: {"en": "The Glorious Twelfth"}, start: {mon: 8, d: 12}, type: "1D", urls: {"en": "https://nationaltoday.com/the-glorious-twelfth/"}, first: {"era": 1, "y": 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
+        {type: "1D", titles: {"en": "Remembrance Sunday", "he": "יום הזיכרון"}, start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://en.wikipedia.org/wiki/Remembrance_Sunday"}},
     ]
 }
