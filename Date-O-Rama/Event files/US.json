@@ -218,6 +218,10 @@
         {"type": "1D", "start": {"mon": 8, "d": 27}, "titles": {"en": "Lyndon Baines Johnson Day"}, "urls": {"en": "https://nationaltoday.com/lyndon-baines-johnson-day/"}, "inherits": "*BDay*", first: {era: 1, y: 1908}},
         {type: "nD", titles: {"en": "National Crime Prevention Week"}, start: {mon: 9, d: 1}, end: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-crime-prevention-week/"}, first: {era: 1, y: 1984}, emoji: "🐶"},
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Blood Cancer Awareness Month"}, "urls": {"en": "https://nationaltoday.com/blood-cancer-awareness-month/"}, first: {"era": 1, "y": 2010}, "emoji": "🩸"},
+        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "National Bourbon Heritage Month"}, "urls": {"en": "https://nationaltoday.com/bourbon-heritage-month/"}, first: {"era": 1, "y": 2007}, "emoji": "🥃"},
+        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Classical Music Month"}, "urls": {"en": "https://nationaltoday.com/classical-music-month/"}, first: {"era": 1, "y": 1994}, "emoji": "🎻"},
+        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Disaster Preparedness Month"}, "urls": {"en": "https://nationaltoday.com/disaster-preparedness-month/"}, first: {"era": 1, "y": 2004}, "emoji": "⛑"},
+        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Leukemia and Lymphoma Awareness Month"}, "urls": {"en": "https://nationaltoday.com/leukemia-and-lymphoma-awareness-month/"}, first: {"era": 1, "y": 2017}, "emoji": "🩸"},
 
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
