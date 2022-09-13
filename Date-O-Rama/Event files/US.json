@@ -79,7 +79,7 @@
         {"type": "1M", "start": {"mon": 7}, "titles": {"en": "National Ice Cream Month"}, first: {"era": 1, "y": 1984}, "emoji": "🍨", "urls": {"en": "https://en.wikipedia.org/wiki/National_Ice_Cream_Month"}},
         {"type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": 4}, "titles": {"en": "National Parents’ Day", "he": "יום ההורים הלאומי"}, "notes": {"en": "National Parents Day"}, inherits: "Parents’ Day", "urls": {"en": "https://www.daysoftheyear.com/days/parents-day/"}, first: {"era": 1, "y": 1994}},
         {"type": "1D", "start": {"d": 4, "mon": 8}, inherits: "Coast Guard Day", "urls": {"en": "https://nationaldaycalendar.com/national-coast-guard-day-august-4/"}},
-        {"inherits": "Victory Over Japan Day", "type": "1D", "start": {"d": 2, "mon": 9}, first: {"era": 1, "y": 1945}},
+        {"inherits": "Victory Over Japan Day", "type": "1D", "start": {"d": 2, "mon": 9}, first: {"era": 1, "y": 1945}, urls: {"en": "https://nationaltoday.com/vj-day/"}},
         {"type": "1D", "start": {"d": 16, "mon": 8}, "titles": {"en": "Bennington Battle Day"}, first: {"era": 1, "y": 1977}, "urls": {"en": "https://nationaltoday.com/bennington-battle-day/"}},
         {"type": "1D", "start": {"d": 21, "mon": 8}, "titles": {"en": "World Senior Citizen Day"}, first: {"era": 1, "y": 1997}, "emoji": "👴👵", "urls": {"en": "https://en.wikipedia.org/wiki/World_Senior_Citizen%27s_Day"}},
         {"inherits": "Black Ribbon Day", "type": "1D", "start": {"mon": 8, "d": 23}, first: {"era": 1, "y": 2014}},
@@ -222,7 +222,7 @@
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Classical Music Month"}, "urls": {"en": "https://nationaltoday.com/classical-music-month/"}, first: {"era": 1, "y": 1994}, "emoji": "🎻"},
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Disaster Preparedness Month"}, "urls": {"en": "https://nationaltoday.com/disaster-preparedness-month/"}, first: {"era": 1, "y": 2004}, "emoji": "⛑"},
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Leukemia and Lymphoma Awareness Month"}, "urls": {"en": "https://nationaltoday.com/leukemia-and-lymphoma-awareness-month/"}, first: {"era": 1, "y": 2017}, "emoji": "🩸"},
-
+        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "National Sickle Cell Awareness Month"}, "urls": {"en": "https://nationaltoday.com/national-sickle-cell-awareness-month/"}, first: {"era": 1, "y": 1975}, "emoji": "🩸"},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
