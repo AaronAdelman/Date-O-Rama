@@ -59,5 +59,6 @@
         {titles: {"en": "National Bakewell Tart Day"}, start: {mon: 8, d: 11}, type: "1D", urls: {"en": "https://nationaltoday.com/national-bakewell-tart-day/"}, first: {"era": 1, "y": 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {titles: {"en": "The Glorious Twelfth"}, start: {mon: 8, d: 12}, type: "1D", urls: {"en": "https://nationaltoday.com/the-glorious-twelfth/"}, first: {"era": 1, "y": 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {type: "1D", titles: {"en": "Remembrance Sunday", "he": "יום הזיכרון"}, start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://en.wikipedia.org/wiki/Remembrance_Sunday"}},
+        {type: "1D", titles: {"en": "Merchant Navy Day"}, start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/merchant-navy-day/"}, first: {era: 1, y: 2000}},
     ]
 }
