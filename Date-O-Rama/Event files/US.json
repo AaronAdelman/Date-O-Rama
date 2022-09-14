@@ -223,6 +223,7 @@
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Disaster Preparedness Month"}, "urls": {"en": "https://nationaltoday.com/disaster-preparedness-month/"}, first: {"era": 1, "y": 2004}, "emoji": "⛑"},
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Leukemia and Lymphoma Awareness Month"}, "urls": {"en": "https://nationaltoday.com/leukemia-and-lymphoma-awareness-month/"}, first: {"era": 1, "y": 2017}, "emoji": "🩸"},
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "National Sickle Cell Awareness Month"}, "urls": {"en": "https://nationaltoday.com/national-sickle-cell-awareness-month/"}, first: {"era": 1, "y": 1975}, "emoji": "🩸"},
+        {"type": "1D", "start": {"mon": 9, "d": 7}, "titles": {"en": "Grandma Moses Day"}, first: {"era": 1, "y": 1960}, "emoji": "🎨", "urls": {"en": "https://nationaltoday.com/grandma-moses-day/"}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
