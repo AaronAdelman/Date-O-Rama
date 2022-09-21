@@ -16,7 +16,8 @@
         {"type": "1D", "start": {"d": 6, "mon": 3}, "titles": {"en": "European Day of the Righteous"}},
         {"inherits": "Black Ribbon Day", "type": "1D", "start": {"mon": 8, "d": 23}, first: {"era": 1, "y": 2009}},
         {"inherits": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
-        
+        {"titles": {"en": "European Mobility Week"}, "type": "nD", "start": {"mon": 9, "d": 16}, end: {"mon": 9, "d": 22}, first: {"era": 1, "y": 2002}},
+
         {type: "1Y", start: {era: 1, y: 2022}, titles: {"en": "European Year of Youth"}, urls: {"en": "https://europa.eu/youth/year-of-youth_en"}, emoji: "👦👧"},
         {type: "1Y", start: {era: 1, y: 2021}, titles: {"en": "European Year of Rail"}, emoji: "🛤"},
         {type: "1Y", start: {era: 1, y: 2018}, titles: {"en": "European Year of Cultural Heritage"}, urls: {"en": "https://en.wikipedia.org/wiki/European_Year_of_Cultural_Heritage"}},

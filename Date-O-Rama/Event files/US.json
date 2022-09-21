@@ -135,7 +135,7 @@
         {"inherits": "Pioneer Day", "type": "1D", "start": {"mon": 7, "d": 24}, first: {"type": "1D", "era": 1, "y": 1949}},
         {"type": "1D", "start": {"d": 26, "mon": 8}, "titles": {"en": "Women’s Equality Day", "he": "יום השוויון לנשים"}, "emoji": "👩", "urls": {"en": "https://www.daysoftheyear.com/days/womens-equality-day/", "he": "https://he.wikipedia.org%2Fwiki%2F%D7%99%D7%95%D7%9D_%D7%94%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F_%D7%9C%D7%A0%D7%A9%D7%99%D7%9D"}, first: {"era": 1, "y": 1973}},
         {"type": "1D", "start": {"mon": 9, "d": 11}, "titles": {"en": "Patriot Day"}, "urls": {"en": "https://nationaldaycalendar.com/patriot-day-and-national-day-of-service-and-remberance-september-11/"}, first: {"era": 1, "y": 2002}},
-        {"inherits": "Constitution Day", "notes": {"en": "Citizenship Day"}, "type": "1D", "start": {"mon": 9, "d": 17}, "urls": {"en": "https://en.wikipedia.org/wiki/Constitution_Day_(United_States)"}, first: {"era": 1, "y": 2004}},
+        {"inherits": "Constitution Day", "notes": {"en": "Citizenship Day"}, "type": "1D", "start": {"mon": 9, "d": 17}, "urls": {"en": "https://nationaltoday.com/constitution-day/"}, first: {"era": 1, "y": 2004}},
         {"inherits": "Black Friday", "type": "1D", "start": {"d": 23, "thruD": 29, "mon": 11, "wkd": [6]}, first: {"type": "1D", "era": 1, "y": 1951}},
         {"inherits": "Cyber Monday", "type": "1D", "start": {"mon": 11, "d": 26, "thruMon": 12, "thruD": 2, "wkd": [2]}, first: {"type": "1D", "era": 1, "y": 2005}},
         {"titles": {"en": "National Pearl Harbor Remembrance Day"}, "notes": {"en": "Pearl Harbor Remembrance Day\nPearl Harbor Day"}, "type": "1D", "start": {"mon": 12, "d": 7}, "urls": {"en": "https://en.wikipedia.org/wiki/National_Pearl_Harbor_Remembrance_Day"}, first: {"era": 1, "y": 1994}},
@@ -226,6 +226,9 @@
         {"type": "1D", "start": {"mon": 9, "d": 7}, "titles": {"en": "Grandma Moses Day"}, first: {"era": 1, "y": 1960}, "emoji": "🎨", "urls": {"en": "https://nationaltoday.com/grandma-moses-day/"}},
         {type: "1D", titles: {"en": "Restless Legs Awareness Day"}, start: {mon: 9, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/restless-legs-awareness-day/"}, first: {era: 1, y: 2013}},
         {type: "1D", titles: {"en": "National Hunting and Fishing Day"}, start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://www.daysoftheyear.com/days/national-hunting-and-fishing-day/"}, first: {era: 1, y: 2017}},
+        {type: "1D", titles: {"en": "National Voter Registration Day"}, start: {mon: 9, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationalvoterregistrationday.org/"}, first: {era: 1, y: 2014}, emoji: "🗳"},
+        {titles: {"en": "National D.A.R.E. Day"}, type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1988}, urls: {"en": "https://nationaltoday.com/national-d-a-r-e-day/"}, emoji: "🚫"},
+        {titles: {"en": "National Trail of Tears Commemoration Day"}, type: "1D", start: {mon: 9, d: 16}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaltoday.com/national-trail-of-tears-commemoration-day/"}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

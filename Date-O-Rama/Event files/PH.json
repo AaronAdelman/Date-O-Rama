@@ -30,5 +30,6 @@
        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "National Peace Consciousness Month"}, "urls": {"en": "https://nationaltoday.com/national-peace-consciousness-month/"}, emoji: "🕊", first: {era: 1, y: 2004}},
        {"type": "1M", "start": {"mon": 9}, "titles": {"en": "Rule of Law Month"}, "urls": {"en": "https://nationaltoday.com/rule-of-law-month/"}, emoji: "👨‍⚖️👩‍⚖️", first: {era: 1, y: 2004}},
        {type: "1D", titles: {"en": "Yamashita Surrender Day"}, start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/yamashita-surrender-day/"}, first: {era: 1, y: 1945}},
+       {"type": "nD", "start": {"mon": 9, "d": 17}, "end": {"mon": 9, "d": 23}, "titles": {"en": "World Clean and Green Week"}, "urls": {"en": "https://nationaltoday.com/world-clean-and-green-week/"}, first: {era: 1, y: 1993}},
        ]
     }

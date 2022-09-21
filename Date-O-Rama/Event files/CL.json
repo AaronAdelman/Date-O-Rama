@@ -10,10 +10,9 @@
         {"type": "1D", "start": {"mon": 5, "d": 14}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, wkd: [4], wkdRecurrence: 1}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [7], wkdRecurrence: 2}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 18}, first: {era: 1, y: 1810}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 18}, first: {era: 1, y: 1810}, urls: {"en": "https://nationaltoday.com/independence-day-chile/"}},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {type: "1D", start: {mon: 5, d: 21}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Chile)"}},
-        {type: "1D", start: {mon: 9, d: 19}, inherits: "Army Day"},
-
+        {type: "1D", start: {mon: 9, d: 19}, inherits: "Army Day", urls: {"en": "https://nationaltoday.com/day-of-the-glories-of-the-army/"}},
   ]
 }
