@@ -402,7 +402,7 @@
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [354, 385, 384], "mon": 13, "d": 7}, "titles": {"he": "פרשת שופטים", "en": "Parashath Shofeṭim"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [354, 385, 384], "mon": 13, "d": 14}, "titles": {"he": "פרשת כי תצא", "en": "Parashath Ki Theṣe’"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [354, 385, 384], "mon": 13, "d": 21}, "titles": {"he": "פרשת כי תבא", "en": "Parashath Ki Thavo’"}},
-        {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [354, 385, 384], "mon": 13, "d": 28}, "titles": {"he": "פרשת נצבים־וילך", "en": "Parashath Niṣṣavim"}, "notes": {"he": "ראש השנה יהיה ביום שני וביום שלישי"}},
+        {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [354, 385, 384], "mon": 13, "d": 28}, "titles": {"he": "פרשת נצבים", "en": "Parashath Niṣṣavim"}, "notes": {"he": "ראש השנה יהיה ביום שני וביום שלישי"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [353, 355, 383, 385], "mon": 1, "d": 8}, "titles": {"he": "פרשת האזינו/שבת שובה", "en": "Parashath Ha’azinu/Shabbath Shuvah"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [353, 355, 383, 385], "mon": 1, "d": 29}, "titles": {"he": "פרשת בראשית/שבת מחר חודש", "en": "Parashath Bere’shith/Shabbath Maḥar Ḥodhesh"}, "notes": {"he": "ראש חודש חשוון יהיה ביום ראשון וביום שני"}},
         {"inherits": "*שבת*", "type": "1D", "start": {"wkd": [7], "yLengths": [353, 355, 383, 385], "mon": 2, "d": 6}, "titles": {"he": "פרשת נח", "en": "Parashath Noaḥ"}},
