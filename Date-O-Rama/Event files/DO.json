@@ -10,5 +10,6 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 27}, first: {era: 1, y: 1844}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 25}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
+        {"titles": {"en": "Our Lady of Mercedes Day"}, "type": "1D", "start": {"mon": 9, "d": 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}},
   ]
 }

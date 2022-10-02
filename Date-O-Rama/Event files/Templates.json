@@ -209,7 +209,7 @@
         {"template": "Litha", "titles": {"en": "Litha", "he": "לית׳א"}, "type": "1D", "start": {"equinoxOrSolstice": "Jun"}},
         {template: "Long Tan Day", type: "1D", titles: {"en": "Long Tan Day"}, start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/long-tan-day/"}, emoji: "🪖"},
         {"template": "Lughnasadh", "titles": {"en": "Lughnasadh", "he": "לונאסה"}, "type": "1D", "start": {"mon": 8, "d": 1}, urls: {"en": "https://nationaltoday.com/lughnasadh/"}},
-        {"template": "Mabon", "titles": {"en": "Mabon", "he": "מאבון"}, "type": "1D", "start": {"equinoxOrSolstice": "Sep"}},
+        {"template": "Mabon", "titles": {"en": "Mabon", "he": "מאבון"}, "type": "1D", "start": {"equinoxOrSolstice": "Sep"}, urls: {"en": "https://nationaltoday.com/mabon-day/"}},
         {"template": "Maghrib", "titles": {"en": "Maghrib", "ar": "صلاة المغرب‎", "he": "צלאת אל-מגרב"}, "type": "pt", "start": {"ptType": "Maghrib", "calcMethod": "Jafari"}},
         {"template": "Malcolm X Day", "titles": {"en": "Malcolm X Day"}, "type": "1D", "start": {"mon": 5, "d": 19}, "urls": {"en": "https://en.wikipedia.org/wiki/Malcolm_X_Day"}},
         {"template": "Martin Luther King Jr. Day", "titles": {"en": "Martin Luther King Jr. Day", "fr": "Journée de Marthin Luther King", "es": "Natalicio de Martin Luther King, Jr."}, "notes": {"en": "Birthday of Martin Luther King, Jr.\nMLK Day"}, "type": "1D", "start": {"mon": 1, "wkd": [2], "wkdRecurrence": 3}, "urls": {"en": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr._Day"}, "inherits": "*BDay*"},

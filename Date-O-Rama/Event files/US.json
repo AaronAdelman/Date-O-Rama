@@ -225,10 +225,14 @@
         {"type": "1M", "start": {"mon": 9}, "titles": {"en": "National Sickle Cell Awareness Month"}, "urls": {"en": "https://nationaltoday.com/national-sickle-cell-awareness-month/"}, first: {"era": 1, "y": 1975}, "emoji": "🩸"},
         {"type": "1D", "start": {"mon": 9, "d": 7}, "titles": {"en": "Grandma Moses Day"}, first: {"era": 1, "y": 1960}, "emoji": "🎨", "urls": {"en": "https://nationaltoday.com/grandma-moses-day/"}},
         {type: "1D", titles: {"en": "Restless Legs Awareness Day"}, start: {mon: 9, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/restless-legs-awareness-day/"}, first: {era: 1, y: 2013}},
-        {type: "1D", titles: {"en": "National Hunting and Fishing Day"}, start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://www.daysoftheyear.com/days/national-hunting-and-fishing-day/"}, first: {era: 1, y: 2017}},
+        {type: "1D", titles: {"en": "National Hunting and Fishing Day"}, start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://www.daysoftheyear.com/days/national-hunting-and-fishing-day/"}, first: {era: 1, y: 1972}, emoji: "🎣"},
+
         {type: "1D", titles: {"en": "National Voter Registration Day"}, start: {mon: 9, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationalvoterregistrationday.org/"}, first: {era: 1, y: 2014}, emoji: "🗳"},
         {titles: {"en": "National D.A.R.E. Day"}, type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1988}, urls: {"en": "https://nationaltoday.com/national-d-a-r-e-day/"}, emoji: "🚫"},
         {titles: {"en": "National Trail of Tears Commemoration Day"}, type: "1D", start: {mon: 9, d: 16}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaltoday.com/national-trail-of-tears-commemoration-day/"}},
+        {titles: {"en": "Urban National Wildlife Refuge Day"}, type: "1D", start: {mon: 9, d: 29}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaldaycalendar.com/urban-national-wildlife-refuge-day-september-29/"}, emoji: "🦌"},
+        {titles: {"en": "National Lobster Day"}, type: "1D", start: {mon: 9, d: 25}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaldaycalendar.com/national-lobster-day-september-25/"}, emoji: "🦞"},
+        {titles: {"en": "Michigan Indian Day"}, type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 4}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaltoday.com/michigan-indian-day/"}, first: {era: 1, y: 1974}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
