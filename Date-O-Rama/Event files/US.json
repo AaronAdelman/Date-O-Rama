@@ -233,6 +233,8 @@
         {titles: {"en": "Urban National Wildlife Refuge Day"}, type: "1D", start: {mon: 9, d: 29}, first: {era: 1, y: 2018}, urls: {"en": "https://nationaldaycalendar.com/urban-national-wildlife-refuge-day-september-29/"}, emoji: "🦌"},
         {titles: {"en": "National Lobster Day"}, type: "1D", start: {mon: 9, d: 25}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaldaycalendar.com/national-lobster-day-september-25/"}, emoji: "🦞"},
         {titles: {"en": "Michigan Indian Day"}, type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 4}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaltoday.com/michigan-indian-day/"}, first: {era: 1, y: 1974}},
+        {"type": "1D", "start": {"mon": 9, d: 26}, titles: {"en": "National Mesothelioma Awareness Day"}, first: {"era": 1, "y": 2010}, urls: {"en": "https://nationaltoday.com/national-mesothelioma-awareness-day/"}},
+        {"type": "1D", "start": {"mon": 9, d: 26}, titles: {"en": "National Voter Registration Day"}, first: {"era": 1, "y": 2001}, urls: {"en": "https://nationaltoday.com/national-voter-registration-day/"}, emoji: "🗳"},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

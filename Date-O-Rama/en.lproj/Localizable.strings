@@ -184,7 +184,7 @@
 //"Event End"                   = "End";
 //"Event Calendar"              = "Calendar";
 //"Event Recurrence"            = "Recurrence";
-//"Event Frequency"             = "Frequency";
+"Event Frequency"             = "Frequency";
 //"Event Every how many days"   = "Every how many days";
 //"Event Every how many weeks"  = "Every how many weeks";
 //"Event Every how many months" = "Every how many months";

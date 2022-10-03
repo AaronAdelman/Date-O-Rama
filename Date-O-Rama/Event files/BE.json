@@ -21,6 +21,7 @@
         {"titles": {"en": "Day of the Flemish Community"}, "type": "1D", "start": {"mon": 7, "d": 11}, "urls": {"en": "https://nationaltoday.com/day-flemish-community/"}, first: {"era": 1, "y": 1973}},
         {"type": "1D", "start": {"mon": 3, "d": 20}, inherits: "Engineer’s Day"},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {"titles": {"en": "Day of the French Community"}, "type": "1D", "start": {"mon": 9, "d": 27}, "urls": {"en": "https://nationaltoday.com/day-of-the-french-community-belgium/"}, first: {"era": 1, "y": 1975}},
     ]
 }
 
