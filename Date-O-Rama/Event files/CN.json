@@ -13,7 +13,7 @@
         {"inherits": "Hong Kong Special Administrative Region Establishment Day", "type": "1D", "start": {"mon": 7, "d": 1}, first: {"era": 1, "y": 1997}},
         {"inherits": "International Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 9, "d": 30}, first: {"era": 1, "y": 2014}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(China)"}},
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 10, "d": 1}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_the_People%27s_Republic_of_China"}, first: {"era": 1, "y": 1949}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 10, "d": 1}, urls: {"en": "https://nationaltoday.com/chinese-national-day/"}, first: {"era": 1, "y": 1949}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {type: "1D", start: {mon: 4, d: 23}, inherits: "Navy Day"},
