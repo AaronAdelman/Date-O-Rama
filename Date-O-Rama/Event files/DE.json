@@ -5,7 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"type": "1D", "start": {"mon": 10, "d": 3}, "inherits": "Unity Day", first: {era: 1, y: 1990}, urls: {"en": "https://en.wikipedia.org/wiki/German_Unity_Day"}},
+        {"type": "1D", "start": {"mon": 10, "d": 3}, "inherits": "Unity Day", first: {era: 1, y: 1990}, urls: {"en": "https://nationaltoday.com/national-unity-day/"}},
         {"inherits": "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 8}},
         {"inherits": "Black History Month", "type": "1M", "start": {"mon": 2}, first: {"era": 1, "y": 1990}},
         {"inherits": "April Fools’ Day", "type": "1D", "start": {"mon": 4, "d": 1}},

@@ -10,5 +10,6 @@
         {"type": "1D", "start": {"mon": 7, "d": 16}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 9, d: 10}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/honduras-independence-day/"}},
+        {"type": "1D", "start": {"mon": 10, d: 3}, titles: {"en": "Francisco Morazán’s Day"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, first: {era: 1, y: 1792}},
     ]
 }

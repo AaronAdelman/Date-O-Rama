@@ -31,7 +31,7 @@
         {"titles": {"en": "Mourning:  Martyrdom of Muhammad, 11 AH, Mourning:  Martyrdom of Hasan ibn Ali, 50 AH"}, "type": "1D", "start": {"mon": 2, "d": 28}},
         {"titles": {"en": "Remembrance:  Hijrah"}, "type": "1D", "start": {"mon": 3, "d": 1}, "inherits": "*Remembrance*"},
         {"titles": {"en": "Mourning:  Martyrdom of Fatimah bint Musa"}, "type": "1D", "start": {"mon": 3, "d": 4}},
-        {"titles": {"en": "Mourning:  Martyrdom of Hasan al-Askari, 260 AH"}, "type": "1D", "start": {"mon": 3, "d": 8}},
+        {"titles": {"en": "Mourning:  Martyrdom of Hasan al-Askari, 260 AH"}, "type": "1D", "start": {"mon": 3, "d": 8}, urls: {"en": "https://nationaltoday.com/martyrdom-of-imam-hassan-asgari/"}},
         {"titles": {"en": "Celebration:  Death of Yazid"}, "type": "1D", "start": {"mon": 3, "d": 14}, "inherits": "*Death Anniv*"},
         {"titles": {"en": "Remembrance:  First mosque (Quba Mosque) was established, 1 AH"}, "type": "1D", "start": {"mon": 3, "d": 15}, "inherits": "*Remembrance*"},
         {"titles": {"en": "Celebration:  Birth of Ja'far al-Sadiq, 83 AH"}, "type": "1D", "start": {"mon": 3, "d": 17}, "inherits": "*BDay*"},
