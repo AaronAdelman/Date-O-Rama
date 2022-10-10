@@ -9,5 +9,7 @@
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Qixi Festival"}, emoji: "❤️"},
         {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Mid-Autumn Festival"}, notes: {"en": "Harvest Moon Festival"}, urls: {"en": "https://nationaltoday.com/mid-autumn-festival/"}},
+        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Chung Yeung Festival"}, notes: {"en": "Double Ninth\nAutumn Remembrance\nFestival of High Places"}, urls: {"en": "https://nationaltoday.com/international-chung-yeung-festival/"}},
+
     ]
 }
