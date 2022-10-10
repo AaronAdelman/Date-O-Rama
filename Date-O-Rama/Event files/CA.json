@@ -14,7 +14,7 @@
         {"type": "1D", "start": {"mon": 5, "d": 18, "thruD": 24, "wkd": [2]}, "titles": {"en": "Victoria Day", "fr": "Fête de la Reine"}, first: {"era": 1, "y": 1952}, "urls": {"en": "https://en.wikipedia.org/wiki/Victoria_Day"}},
         {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Civic Holiday", "fr": "Premier lundi d'août"}, first: {"era": 1, "y": 1875}, "urls": {"en": "https://nationaltoday.com/civic-holiday-canada/"}},
         {"type": "1D", "start": {"mon": 9, "d": 30}, "titles": {"en": "National Day for Truth and Reconciliation", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {"era": 1, "y": 2013}, "urls": {"en": "https://www.orangeshirtday.org/"}},
-        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, first: {"type": "1D", "era": 1, "y": 1957}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(Canada)"}},
+        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, first: {"type": "1D", "era": 1, "y": 1957}, "urls": {"en": "https://www.daysoftheyear.com/days/canadian-thanksgiving/"}},
         {"inherits": "Remembrance Day", "type": "1D", "start": {"d": 11, "mon": 11}, first: {"era": 1, "y": 1919}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "inherits": "Family Day", first: {"era": 1, "y": 1990}, "urls": {"en": "https://en.wikipedia.org/wiki/Family_Day_(Canada)"}},
