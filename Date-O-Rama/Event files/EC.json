@@ -15,5 +15,6 @@
         {type: "1D", start: {mon: 10, d: 27}, inherits: "Air Force Day"},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
         {"type": "1D", "start": {"mon": 7, d: 14}, inherits: "Friendship Day"},
+        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 9}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/independence-of-guayaquil/"}, titles: {"en": "Independence of Guayaquil"}},
    ]
 }
