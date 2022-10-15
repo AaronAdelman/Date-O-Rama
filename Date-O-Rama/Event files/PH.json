@@ -33,5 +33,6 @@
        {"type": "nD", "start": {"mon": 9, "d": 17}, "end": {"mon": 9, "d": 23}, "titles": {"en": "World Clean and Green Week"}, "urls": {"en": "https://nationaltoday.com/world-clean-and-green-week/"}, first: {era: 1, y: 1993}},
        {"type": "nD", "start": {"mon": 10, "d": 1}, "end": {"mon": 10, "d": 7}, "titles": {"en": "Elderly Filipino Week"}, "urls": {"en": "https://nationaltoday.com/elderly-filipino-week/"}, first: {era: 1, y: 1994}, emoji: "👴🧓"},
        {"type": "1D", "start": {"d": 4, "mon": 10}, "titles": {"en": "Kindness to Animals Day"}, first: {"era": 1, "y": 1958}, "emoji": "🦮", "urls": {"en": "https://nationaltoday.com/kindness-to-animal-day/"}},
-       ]
-    }
+       {"type": "1D", "start": {"mon": 10, "d": 10}, "titles": {"en": "Local Government Day"}, urls: {"en": "https://nationaltoday.com/local-government-day/"}, first: {"era": 1, "y": 1992}},
+    ]
+}
