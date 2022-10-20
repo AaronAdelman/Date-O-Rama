@@ -12,5 +12,6 @@
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
         {inherits: "Independence Day", type: "1D", start: {d: 24, mon: 10}, first: {era: 1, y: 1964}},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "National Prayer Day"}, urls: {"en": "https://nationaltoday.com/national-prayer-day/"}, first: {era: 1, y: 2015}},
   ]
 }

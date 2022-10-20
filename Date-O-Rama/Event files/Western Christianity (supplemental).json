@@ -89,5 +89,6 @@
         {"type": "1D", "start": {"mon": 9, d: 26}, titles: {"en": "World Day of Migrants and Refugees"}, first: {"era": 1, "y": 1914}, urls: {"en": "https://nationaltoday.com/world-day-of-migrants-and-refugees/"}},
         {"type": "1D", "start": {"mon": 10, wkd: [1], wkdRecurrence: 1}, titles: {"en": "International Blessings of The Fishing Fleet Day"}, first: {"era": 1, "y": 1917}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, emoji: "🚤"},
         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 3}, titles: {"en": "Sunday School Teacher Appreciation Day"}, urls: {"en": "https://nationaltoday.com/sunday-school-teacher-appreciation-day/"}, first: {era: 1, y: 1993}},
+        {type: "1D", start: {mon: 10, d: 17}, titles: {"en": "National Catholic Men’s Conference Day"}, urls: {"en": "https://nationaltoday.com/national-catholic-mens-conference-day/"}, first: {era: 1, y: 2020}},
     ]
 }

@@ -10,5 +10,6 @@
         {"titles": {"en": "Mary Prince Day"}, "type": "1D", "start": {"mon": 7, "d": 29, "thruMon": 8, "thruD": 4, "wkd": [6]}, "urls": {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {"era": 1, "y": 2018}},
         {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}},
         {"inherits": "Emancipation Day", "type": "1D", "start": {mon: 7, d: 28, thruMon: 8, thruD: 3, wkd: [5]}},
+        {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "Flora Duffy Day"}, urls: {"en": "https://nationaltoday.com/flora-duffy-day/"}, first: {"era": 1, "y": 2021}},
    ]
 }
