@@ -18,5 +18,6 @@
         {inherits: "National Guard Day", type: "1D", start: {mon: 8, d: 3}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
         {"type": "1D", "start": {"mon": 7, d: 14}, inherits: "Friendship Day"},
+        {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Indigenous Resistance Day"}, urls: {"en": "https://nationaltoday.com/indigenous-resistance-day/"}, first: {era: 1, y: 2002}},
    ]
 }

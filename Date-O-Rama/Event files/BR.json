@@ -19,5 +19,6 @@
         {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Aviator’s Day", "pt": "Dia do Aviador"}},
         {"type": "1D", "start": {"mon": 7, d: 20}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
+        {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida"}, urls: {"en": "https://nationaltoday.com/lady-of-aparecida-2/"}, first: {era: 1, y: 1717}},
     ]
 }

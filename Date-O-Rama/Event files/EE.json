@@ -13,6 +13,6 @@
        {inherits: "Independence Day", type: "1D", start: {d: 24, mon: 2}, first: {era: 1, y: 1918}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Estonia)"}},
        {inherits: "Day of Restoration of Independence", type: "1D", start: {d: 20, mon: 8}, first: {era: 1, y: 1991}},
        {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
+       {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 3}, titles: {"en": "Ethnicity Day"}, urls: {"en": "https://nationaltoday.com/ethnicity-day/"}, first: {era: 1, y: 2011}},
     ]
 }
-
