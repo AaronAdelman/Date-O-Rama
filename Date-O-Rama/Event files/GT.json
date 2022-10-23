@@ -10,7 +10,7 @@
         {"type": "1D", "start": {"mon": 1, "d": 30}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, d: 1}, first: {era: 1, y: 1990}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/guatemala-independence-day/"}},
-        {inherits: "Revolution Day", type: "1D", start: {mon: 10, d: 20}, first: {era: 1, y: 1944}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 10, d: 20}, first: {era: 1, y: 1944}, urls: {"en": "https://nationaltoday.com/revolution-day-guatemala/"}},
         {type: "1D", start: {mon: 6, d: 30}, inherits: "Army Day"},
    ]
 }
