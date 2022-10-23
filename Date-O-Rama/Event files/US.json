@@ -204,7 +204,7 @@
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2011}},
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}, first: {"era": 1, "y": 2011}},
         {type: "1D", start: {mon: 9, d: 18}, inherits: "Air Force Day", urls: {"en": "https://nationaldaycalendar.com/air-force-birthday-september-18/"}},
-        {type: "1D", start: {mon: 10, d: 27}, inherits: "Navy Day", first: {era: 1, y: 1922}},
+        {type: "1D", start: {mon: 10, d: 27}, inherits: "Navy Day", first: {era: 1, y: 1922}, urls: {"en": "https://www.daysoftheyear.com/days/navy-day/"}},
         {titles: {"en": "Marine Corps Birthday"}, type: "1D", start: {mon: 11, d: 10}},
         {inherits: "National Guard Day", type: "1D", start: {mon: 12, d: 13}},
         {titles: {"en": "Space Force Birthday"}, type: "1D", start: {mon: 12, d: 20}},
