@@ -236,6 +236,7 @@
         {"type": "1D", "start": {"mon": 9, d: 26}, titles: {"en": "National Mesothelioma Awareness Day"}, first: {"era": 1, "y": 2010}, urls: {"en": "https://nationaltoday.com/national-mesothelioma-awareness-day/"}},
         {"type": "1D", "start": {"mon": 9, d: 26}, titles: {"en": "National Voter Registration Day"}, first: {"era": 1, "y": 2001}, urls: {"en": "https://nationaltoday.com/national-voter-registration-day/"}, emoji: "🗳"},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Check Your Meds Day"}, first: {"era": 1, "y": 2017}, emoji: "💊"},
+        {"titles": {"en": "Respiratory Care Week"}, "type": "nD", "start": {"mon": 10, "d": 23}, "end": {"mon": 10, "d": 30}, "emoji": "🫁", "urls": {"en": "https://nationaltoday.com/respiratory-care-week/"}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

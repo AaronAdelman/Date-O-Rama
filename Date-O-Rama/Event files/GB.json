@@ -54,7 +54,7 @@
         {"inherits": "National Children’s Day", "type": "1D", "start": {"mon": 5, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1954}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 10, d: 21}, first: {era: 1, y: 2011}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2008}},
-        {type: "1D", start: {mon: 10, d: 21}, inherits: "Navy Day", titles: {"en": "Trafalgar Day"}, first: {era: 1, y: 1896}},
+        {type: "1D", start: {mon: 10, d: 21}, inherits: "Navy Day", titles: {"en": "Trafalgar Day"}, first: {era: 1, y: 1896}, urls: {"en": "https://nationaltoday.com/trafalgar-day/"}},
         {"type": "1D", "start": {"d": 1, "mon": 8}, "titles": {"en": "Yorkshire Day"}, first: {"era": 1, "y": 1975}, "urls": {"en": "https://www.daysoftheyear.com/days/yorkshire-day/"}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {titles: {"en": "National Bakewell Tart Day"}, start: {mon: 8, d: 11}, type: "1D", urls: {"en": "https://nationaltoday.com/national-bakewell-tart-day/"}, first: {"era": 1, "y": 2020}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},
         {titles: {"en": "The Glorious Twelfth"}, start: {mon: 8, d: 12}, type: "1D", urls: {"en": "https://nationaltoday.com/the-glorious-twelfth/"}, first: {"era": 1, "y": 1831}, emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"},

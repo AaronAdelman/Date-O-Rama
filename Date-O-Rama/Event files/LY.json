@@ -9,7 +9,7 @@
         {"inherits": "Revolution Day", "type": "1D", "start": {"mon": 2, "d": 17}, first: {"era": 1, "y": 2012}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 9, "d": 16}, first: {"era": 1, "y": 2012}},
-        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 10, "d": 23}, first: {"era": 1, "y": 2012}},
+        {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 10, "d": 23}, first: {"era": 1, "y": 2012}, urls: {"en": "https://nationaltoday.com/libya-liberation-day/"}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 12, "d": 24}, first: {"era": 1, "y": 1951}},
 
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
