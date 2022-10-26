@@ -266,7 +266,7 @@
         {"type": "1D", "start": {"d": 24, "mon": 5}, "titles": {"en": "National Wyoming Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-wyoming-day-may-24/"}},
         {"type": "1D", "start": {"d": 24, "mon": 8}, "titles": {"en": "National Maryland Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-maryland-day-august-24/"}},
         {"type": "1D", "start": {"d": 25, "mon": 1}, "titles": {"en": "National Florida Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-florida-day-january-25/"}, first: {"era": 1, "y": 2017}},
-        {"type": "1D", "start": {"mon": 1, "d": 260}, "titles": {"en": "National Tennessee Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-tennessee-day-october-26/"}},
+        {type: "1D", start: {mon: 10, d: 26}, titles: {"en": "National Tennessee Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-tennessee-day-october-26/"}},
         {"type": "1D", "start": {"d": 26, "mon": 4}, "titles": {"en": "National South Dakota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-south-dakota-day-april-26/"}},
         {"type": "1D", "start": {"d": 27, "mon": 7}, "titles": {"en": "National New Jersey Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-new-jersey-day-july-27/"}},
         {"type": "1D", "start": {"d": 28, "mon": 6}, "titles": {"en": "National Alaska Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-alaska-day-june-28/"}},
