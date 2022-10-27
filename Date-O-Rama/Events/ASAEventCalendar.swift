@@ -1097,21 +1097,23 @@ class ASAEventCalendar {
             sunrise = solarEvents[.sunrise]!! // נץ
             let sunset:  Date = solarEvents[.sunset]!! // שקיעה
             
+            let HOURS_PER_DAY_HALF = 12.0
+            
             let nightLength = sunrise.timeIntervalSince(previousSunset)
-            nightHourLength = nightLength / 12.0
+            nightHourLength = nightLength / HOURS_PER_DAY_HALF
             
             let dayLength = sunset.timeIntervalSince(sunrise)
-            hourLength = dayLength / 12.0
+            hourLength = dayLength / HOURS_PER_DAY_HALF
             
             // According to the מגן אברהם
             otherDawn = solarEvents[.dawn72Minutes]!! // עלות השחר
             let otherDusk = solarEvents[.dusk72Minutes]!! // צאת הכוכבים
             
             let otherNightLength = otherDawn.timeIntervalSince(previousOtherDusk)
-            otherNightHourLength = otherNightLength / 12.0
+            otherNightHourLength = otherNightLength / HOURS_PER_DAY_HALF
             
             let otherDayLength = otherDusk.timeIntervalSince(otherDawn)
-            otherHourLength = otherDayLength / 12.0
+            otherHourLength = otherDayLength / HOURS_PER_DAY_HALF
         }
         
         var dateEvents:  Array<ASAEvent> = []
