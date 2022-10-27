@@ -123,7 +123,9 @@ extension ASADateSpecification {
         case .night:
             let previousDate = rawDate!.oneDayBefore
             let previousEvents = previousDate.solarEvents(location: location, events: [dayHalfEnd], timeZone:  timeZone)
-            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd
+//                                                                           , .dawn72Minutes, .dusk72Minutes
+                                                                          ], timeZone:  timeZone)
             
             let previousSunset:  Date = previousEvents[dayHalfEnd]!! // שקיעה
             let sunrise:  Date = events[dayHalfStart]!! // נץ
@@ -133,7 +135,9 @@ extension ASADateSpecification {
             return result
             
         case .day:
-            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd, .dawn72Minutes, .dusk72Minutes], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd
+//                                                                           , .dawn72Minutes, .dusk72Minutes
+                                                                          ], timeZone:  timeZone)
             let sunrise:  Date = events[dayHalfStart]!! // נץ
             let sunset:  Date = events[dayHalfEnd]!! // שקיעה
             let dayLength = sunset.timeIntervalSince(sunrise)
@@ -141,7 +145,7 @@ extension ASADateSpecification {
             let result = sunrise + hours * hourLength
             return result
         }
-    }
+    } // func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASADayHalf, location: CLLocation, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date?
     
     func date(dateComponents:  ASADateComponents, calendar:  ASACalendar, isEndDate:  Bool, baseDate: Date, type: ASAEventSpecificationType) -> Date? {
         var revisedDateComponents = dateComponents
@@ -240,14 +244,14 @@ extension ASADateSpecification {
                 let dayHalf = self.dayHalf!
                 let dayHalfStart = ASASolarEvent.sunrise
                 let dayHalfEnd   = ASASolarEvent.sunset
-                return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+                return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone, dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
 
             case .solarTimeDawn72MinutesDusk72Minutes:
                 let hours = self.solarHours!
                 let dayHalf = self.dayHalf!
                 let dayHalfStart = ASASolarEvent.dawn72Minutes
                 let dayHalfEnd   = ASASolarEvent.dusk72Minutes
-                return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone , dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
+                return dateWithAddedSolarTime(rawDate: rawDate, hours: hours, dayHalf: dayHalf, location: revisedDateComponents.locationData.location, timeZone:  timeZone, dayHalfStart:  dayHalfStart, dayHalfEnd:  dayHalfEnd)
                 
             default:
                 let tempDate = (calendar.date(dateComponents: revisedDateComponents))!
