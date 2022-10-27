@@ -263,6 +263,7 @@
         {"template": "Presidents’ Day", "type": "1D", "start": {"mon": 2, "wkd": [2], "wkdRecurrence": 3}, "titles": {"en": "Presidents’ Day", "he": "יום הנשיאים", "ar": "يوم الرؤساء", "es": "Día de los Presidentes", "fr": "Journée de la Présidence"}},
         {template: "Proclamation of Independence Day", "titles": {"en": "Proclamation of Independence Day"}, "type": "1D", "start": {"mon": 1, "d": 11}},
         {"template": "Queen’s Birthday", "type": "1D", "start": {"mon": 6, "d": 11}, "titles": {"en": "Queen’s Birthday"}, "inherits": "*BDay*", "urls": {"en": "https://en.wikipedia.org/wiki/Queen%27s_Official_Birthday"}},
+        {template: "Reformation Day", type: "1D" , start: {mon: 10, d: 31}, titles: {"en": "Reformation Day"}, urls: {"en": "https://nationaltoday.com/reformation-day/"}},
         {"template": "Remembrance Day", "type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Remembrance Day", "fr": "Jour du Souvenir"}, "urls": {"en": "https://nationaltoday.com/remembrance-day/"}},
         {"template": "Revolution Day", "titles": {"fr": "Jour de la révolution", "en": "Revolution Day", "he": "יום המהפכה", "ar": "ثورة الثامن من اذار"}, "type": "1D", "start": {"mon": 13, "d": 6}, "emoji": "䷰", "urls": {"en": "https://en.wikipedia.org/wiki/Revolution_Day"}},
         {"template": "Republic Day", "titles": {"en": "Republic Day", "it": "Festa della Repubblica", "hy": "Հանրապետության օր", "az": "Respublika günü", "tr": "Cumhuriyet Bayramı", "he": "יום הרפובליקה"}, "type": "1D", "start": {"mon": 6, "d": 2}},
