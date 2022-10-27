@@ -125,9 +125,7 @@ extension ASADateSpecification {
         case .night:
             let previousDate = rawDate!.oneDayBefore
             let previousEvents = previousDate.solarEvents(location: location, events: [dayHalfEnd], timeZone:  timeZone)
-            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart
-//                                                                           , dayHalfEnd, .dawn72Minutes, .dusk72Minutes
-                                                                          ], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart], timeZone:  timeZone)
             
             let previousSunset:  Date = previousEvents[dayHalfEnd]!! // שקיעה
             let sunrise:  Date = events[dayHalfStart]!! // נץ
@@ -137,9 +135,7 @@ extension ASADateSpecification {
             return result
             
         case .day:
-            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd
-//                                                                           , .dawn72Minutes, .dusk72Minutes
-                                                                          ], timeZone:  timeZone)
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd], timeZone:  timeZone)
             let sunrise:  Date = events[dayHalfStart]!! // נץ
             let sunset:  Date = events[dayHalfEnd]!! // שקיעה
             let dayLength = sunset.timeIntervalSince(sunrise)
@@ -183,9 +179,6 @@ extension ASADateSpecification {
         revisedDateComponents.weekday = nil
         revisedDateComponents.isLeapMonth = nil
         
-//        if !calendar.isValidDate(dateComponents: revisedDateComponents) {
-//            return nil
-//        }
         let rawDate = calendar.date(dateComponents: revisedDateComponents)
         if rawDate == nil {
             return nil
@@ -215,9 +208,6 @@ extension ASADateSpecification {
             
         case .oneMonth, .multiMonth:
             if isEndDate {
-//                if self.type == .multiMonth && dateComponents.calendar.calendarCode.isHebrewCalendar {
-//                debugPrint(#file, #function, "Debugging")
-//            }
                 let dateComponentsForFirstDayOfMonth = ASADateComponents(calendar: calendar, locationData: dateComponents.locationData, era: self.era, year: self.year, yearForWeekOfYear: nil, quarter: nil, month: self.month, isLeapMonth: nil, weekOfMonth: nil, weekOfYear: nil, weekday: nil, weekdayOrdinal: nil, day: 1, hour: nil, minute: nil, second: nil, nanosecond: nil, solarHours: nil, dayHalf: nil)
                 let dateOfFirstDayOfMonth = calendar.date(dateComponents: dateComponentsForFirstDayOfMonth)
                 let numberOfDaysInMonth = calendar.maximumValue(of: .day, in: .month, for: dateOfFirstDayOfMonth!)!
