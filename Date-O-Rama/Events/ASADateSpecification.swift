@@ -119,18 +119,20 @@ struct ASADateSpecification:  Codable {
 
 extension ASADateSpecification {
     fileprivate func dateWithAddedSolarTime(rawDate: Date?, hours: Double, dayHalf: ASADayHalf, location: CLLocation, timeZone: TimeZone, dayHalfStart: ASASolarEvent, dayHalfEnd: ASASolarEvent) -> Date? {
+        let HOURS_PER_DAY_HALF = 12.0
+        
         switch dayHalf {
         case .night:
             let previousDate = rawDate!.oneDayBefore
             let previousEvents = previousDate.solarEvents(location: location, events: [dayHalfEnd], timeZone:  timeZone)
-            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart, dayHalfEnd
-//                                                                           , .dawn72Minutes, .dusk72Minutes
+            let events = rawDate!.solarEvents(location: location, events: [dayHalfStart
+//                                                                           , dayHalfEnd, .dawn72Minutes, .dusk72Minutes
                                                                           ], timeZone:  timeZone)
             
             let previousSunset:  Date = previousEvents[dayHalfEnd]!! // שקיעה
             let sunrise:  Date = events[dayHalfStart]!! // נץ
             let nightLength = sunrise.timeIntervalSince(previousSunset)
-            let nightHourLength = nightLength / 12.0
+            let nightHourLength = nightLength / HOURS_PER_DAY_HALF
             let result = previousSunset + hours * nightHourLength
             return result
             
@@ -141,7 +143,7 @@ extension ASADateSpecification {
             let sunrise:  Date = events[dayHalfStart]!! // נץ
             let sunset:  Date = events[dayHalfEnd]!! // שקיעה
             let dayLength = sunset.timeIntervalSince(sunrise)
-            let hourLength = dayLength / 12.0
+            let hourLength = dayLength / HOURS_PER_DAY_HALF
             let result = sunrise + hours * hourLength
             return result
         }
