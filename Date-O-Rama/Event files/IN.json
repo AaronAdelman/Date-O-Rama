@@ -29,7 +29,7 @@
         {"type": "1D", "start": {"mon": 5, "d": 16}, "titles": {"en": "Annexation Day"}},
         {"type": "1D", "start": {"mon": 6, "d": 2}, "titles": {"en": "Telangana Day"}, notes: {"en": "Telangana Formation Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://en.wikipedia.org/wiki/Telangana_Day"}},
         {"type": "1D", "start": {"mon": 6, "d": 13}, "titles": {"en": "Maharana Pratap Jayanti"}, "urls": {"en": "https://nationaltoday.com/maharana-pratap-jayanti/"}},
-        {"type": "1D", "start": {"mon": 10, "d": 26}, inherits: "Accession Day", first: {era: 1, y: 2020}, urls: {"en": "https://en.wikipedia.org/wiki/Accession_Day_(Jammu_and_Kashmir)"}},
+        {"type": "1D", "start": {"mon": 10, "d": 26}, inherits: "Accession Day", first: {era: 1, y: 2020}, urls: {"en": "https://nationaltoday.com/accession-day/"}},
         {"type": "1D", "start": {"d": 31, "mon": 10}, inherits: "National Unity Day", urls: {"en": "https://en.wikipedia.org/wiki/National_Unity_Day_(India)"}, first: {era: 1, y: 2014}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Kannada Rajyotsava"}, notes: {"en": "Karnataka Formation Day\nKarnataka Day"}, first: {era: 1, y: 1973}, urls: {"en": "https://en.wikipedia.org/wiki/Karnataka_Rajyotsava"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Andhra Pradesh Day", "te": "ఆంధ్రప్రదేశ్ అవతరణ దినోత్సవము"}, notes: {"en": "Andhra Pradesh State Formation Day\nAndhra Pradesh Rashtra Avatarana Dinotsavamu"}, urls: {"en": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Day"}},

@@ -36,5 +36,7 @@
        {"type": "1D", "start": {"mon": 10, "d": 10}, "titles": {"en": "Local Government Day"}, urls: {"en": "https://nationaltoday.com/local-government-day/"}, first: {"era": 1, "y": 1992}},
        {type: "1D", start: {mon: 10, d: 20}, titles: {"en": "Philippine-British Friendship Day"}, emoji: "🇵🇭🇬🇧", urls: {"en": "https://nationaltoday.com/philippine-british-friendship-day/"}, first: {"era": 1, "y": 2008}},
        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Archives Day"}, first: {"era": 1, "y": 1995}, urls: {"en": "https://nationaltoday.com/national-archives-day/"}, emoji: "🗂️"},
+       {type: "1D", start: {mon: 10, d: 25}, titles: {"en": "Anniversary of Philippine Military Academy"}, urls: {"en": "https://nationaltoday.com/anniversary-of-philippine-military-academy/"}, first: {"era": 1, "y": 1998}},
+       {type: "1D", start: {mon: 10, d: 29}, titles: {"en": "National Indigenous People’s Thanksgiving Day"}, inherits: "Thanksgiving Day", urls: {"en": "https://nationaltoday.com/national-indigenous-peoples-thanksgiving-day/"}, first: {"era": 1, "y": 2003}},
     ]
 }

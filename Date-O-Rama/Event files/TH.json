@@ -12,5 +12,7 @@
         {"type": "1D", "start": {"mon":3, "d": 31}, "titles": {"en": "Memorial Day of Phra Nangklao Chaoyuhua"}},
         {"inherits": "National Children’s Day", "type": "1D", "start": {"mon": 1, wkd: [7], wkdRecurrence: 2}, first: {"era": 1, "y": 1955}},
         {type: "1D", start: {mon: 11, d: 20}, inherits: "Navy Day"},
+        {type: "1D", start: {mon: 10, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Chulalongkorn Day", first: {"era": 1, "y": 1868}},
+        {type: "1D", start: {mon: 10, d: 24, wkd: [2]}, inherits: "Chulalongkorn Day", first: {"era": 1, "y": 1868}},
     ]
 }
