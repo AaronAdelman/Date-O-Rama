@@ -58,28 +58,25 @@ var compact:  Bool {
     }
     
     var body: some View {
+        let shouldShowEndDate = (startDateString != endDateString)
+
         if compact {
             VStack(alignment: .leading) {
                 if startDateString != nil {
                     startDateView()
                 }
                 
-                endDateView()
+                if shouldShowEndDate {
+                    endDateView()
+                }
             } // VStack
         } else {
-//            HStack(alignment: .center) {
-//                if startDateString != nil {
-//                    startDateView()
-//                }
-//
-//                endDateView()
-//            } // HStack
-            
-            let string = (isSecondary ? "(" : "") + (startDateString ?? "") + (startDateString != nil ? "—" : "") + endDateString + (isSecondary ? ")" : "")
+
+            let string = shouldShowEndDate ? ((isSecondary ? "(" : "") + (startDateString ?? "") + (startDateString != nil ? "—" : "") + endDateString + (isSecondary ? ")" : "")) : startDateString
             let cutoffDate = event.endDate ?? event.startDate!
             let pastCutoffDate: Bool = cutoffDate < Date()
             let foregroundColor: Color = pastCutoffDate ? .secondary : .primary
-            Text(verbatim:  string)
+            Text(verbatim:  string ?? "")
                 .font(timeFontSize)
                 .foregroundColor(foregroundColor)
                 .modifier(ASAScalable(lineLimit: 1))
