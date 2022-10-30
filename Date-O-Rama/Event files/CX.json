@@ -15,6 +15,5 @@
         {"inherits": "Territory Day", "type": "1D", "start": {"mon": 10, "d": 6}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
-
     ]
 }
