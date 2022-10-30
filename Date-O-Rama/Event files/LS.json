@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.00, "green": 0.08, "blue": 0.54},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 11, "mon": 3}, "titles": {"en": "Moshoeshoe Day"}, first: {"era": 1, "y": 1870}, "urls": {"en": "https://www.officeholidays.com/holidays/lesotho/moshoeshoes-day"}},
-        {"type": "1D", "start": {"mon": 7, "d": 17}, "titles": {"en": "King’s Birthday"}, "inherits": "*BDay*", "urls": {"en": "https://nationaltoday.com/kings-birthday-in-lesotho/"}, first: {"era": 1, "y": 1997}},
+        {"type": "1D", "start": {"mon": 7, "d": 17}, inherits: "King’s Birthday", "urls": {"en": "https://nationaltoday.com/kings-birthday-in-lesotho/"}, first: {"era": 1, "y": 1997}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 4}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/lesotho-independence-day/"}},
     ]
 }
