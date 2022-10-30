@@ -15,7 +15,7 @@
         {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
         {"inherits": "May Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"type": "1D", "start": {"mon": 9, "d": 5}, "titles": {"en": "Mother Teresa Day", "sq": "Dita e Nënë Terezës"}, urls: {"en": "https://nationaltoday.com/saint-teresa-canonisation-day-in-albania/"}},
-        {"inherits": "Flag Day", "type": "1D", "start": {"mon": 11, "d": 28}, first: {era: 1, y: 1912}},
+        {"inherits": "Flag Day", "type": "1D", "start": {"mon": 11, "d": 28}, first: {era: 1, y: 1912}, urls: {"en": "https://en.wikipedia.org/wiki/Flag_Day_(Albania)"}},
         {"inherits": "Liberation Day", "type": "1D", "start": {"mon": 11, "d": 29}, first: {era: 1, y: 1944}},
         {"inherits":"National Youth Day", "type": "1D", "start": {"d": 12, "mon": 8}, first: {"era": 1, "y": 2010}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
