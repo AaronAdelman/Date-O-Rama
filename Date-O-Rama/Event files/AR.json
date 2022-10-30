@@ -16,7 +16,7 @@
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
         {"type": "1D", "start": {"mon": 5, "d": 25}, "titles": {"en": "May Revolution", "es": "Día de la Revolución de Mayo"}, "urls": {"en": "https://en.wikipedia.org/wiki/First_National_Government"}},
         {"type": "1D", "start": {"mon": 6, "d": 15, "thruD": 21, "wkd": [2]}, "titles": {"en": "Commemoration of General Don Martín Miguel de Güemes", "es": "Paso a la Inmortalidad del General Martín Miguel de Güemes"}, "urls": {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, first: {"era": 1, "y": 1900}, "inherits": "*Death Anniv*"},
-        {"type": "1D", "start": {"mon": 6, "d": 20}, inherits: "National Flag Day", "urls": {"en": "https://nationaltoday.com/national-flag-day-in-argentina/"}, inherits: "Flag Day"},
+        {"type": "1D", "start": {"mon": 6, "d": 20}, "urls": {"en": "https://nationaltoday.com/national-flag-day-in-argentina/"}, inherits: "Flag Day"},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 9}, first: {"era": 1, "y": 1816}},
         {"type": "1D", "start": {"mon": 8, "d": 15, "thruD": 21, "wkd": [2]}, "titles": {"en": "General José de San Martín Memorial Day", "es": "Paso a la Inmortalidad del General José de San Martín"}, "inherits": "*Death Anniv*", urls: {"en": "https://nationaltoday.com/san-martin-day/"}},
         {"type": "1D", "start": {"mon": 10, wkd: [2], wkdRecurrence: 2}, "titles": {"en": "Day of Respect for Cultural Diversity", "es": "Día del Respeto a la Diversidad Cultural"}, urls: {"en": "https://nationaltoday.com/international-day-of-respect-for-cultural-diversity/"}},
