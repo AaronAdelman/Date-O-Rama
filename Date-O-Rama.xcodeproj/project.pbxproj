@@ -108,6 +108,8 @@
 		A523A3F025A72000007CB54B /* ASACheckmarkCircleSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A3EE25A72000007CB54B /* ASACheckmarkCircleSymbol.swift */; };
 		A523A40425A72889007CB54B /* ASAWatchEventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523A40325A72889007CB54B /* ASAWatchEventsList.swift */; };
 		A525622A24556169009C2920 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A525622C24556169009C2920 /* Localizable.strings */; };
+		A5278B1E290FE06700834674 /* BY (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5278B1D290FE06700834674 /* BY (Julian).json */; };
+		A5278B1F290FE06700834674 /* BY (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5278B1D290FE06700834674 /* BY (Julian).json */; };
 		A52A2387279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */; };
 		A52A2388279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */; };
 		A52A238A279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */; };
@@ -1169,6 +1171,7 @@
 		A525622B24556169009C2920 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A525622D245561E2009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A525622E245561E3009C2920 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5278B1D290FE06700834674 /* BY (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BY (Julian).json"; sourceTree = "<group>"; };
 		A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAFrenchRepublicanCalendar.swift; sourceTree = "<group>"; };
 		A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchRepublicanDateExtensions.swift; sourceTree = "<group>"; };
 		A5307023279867E4004A5B37 /* ASAMultiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEvent.swift; sourceTree = "<group>"; };
@@ -1774,6 +1777,7 @@
 				A51C8577282D64A00081A11B /* Buddhism.json */,
 				A5B999B028622B1700072FD5 /* BV.json */,
 				A5EFFF2C285B5B9E00F2205F /* BW.json */,
+				A5278B1D290FE06700834674 /* BY (Julian).json */,
 				A5B999B628622B4F00072FD5 /* BY.json */,
 				A5E292F4285A658200925EBD /* BZ.json */,
 				A5D3D7E627FA2C7E0099718A /* CA.json */,
@@ -2896,6 +2900,7 @@
 				A5EFFF67285B61E500F2205F /* CI.json in Resources */,
 				A5D850B2280C96FE005247BD /* FR.json in Resources */,
 				A5B91141268E7C9E0058EA69 /* Time changes.json in Resources */,
+				A5278B1F290FE06700834674 /* BY (Julian).json in Resources */,
 				A5EF0011285B8EEB00F2205F /* SD (Muslim).json in Resources */,
 				A5B999CE28622D4800072FD5 /* CU.json in Resources */,
 				A5E49636286252EC001BF40C /* MA.json in Resources */,
@@ -3195,6 +3200,7 @@
 				A5E49635286252EC001BF40C /* MA.json in Resources */,
 				A5EFFFE7285B870A00F2205F /* UY.json in Resources */,
 				A5D850A8280C94A8005247BD /* IT.json in Resources */,
+				A5278B1E290FE06700834674 /* BY (Julian).json in Resources */,
 				A541945728749D5200C93496 /* IR (Persian).json in Resources */,
 				A5D8509C280C8F9D005247BD /* BG.json in Resources */,
 				A5EFFF5D285B5F9B00F2205F /* HK.json in Resources */,
