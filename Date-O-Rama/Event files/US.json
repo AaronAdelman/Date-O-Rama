@@ -243,6 +243,7 @@
         {"type": "1M", "start": {"mon": 11}, "titles": {"en": "National Epilepsy Awareness Month"}, "urls": {"en": "https://www.daysoftheyear.com/days/epilepsy-awareness-month/"}, first: {"era": 1, "y": 2003}},
         {"type": "1M", "start": {"mon": 11}, "titles": {"en": "National Adoption Month"}, "urls": {"en": "https://www.daysoftheyear.com/days/adoption-month/"}, first: {"era": 1, "y": 1995}},
         {"type": "1M", "start": {"mon": 11}, "titles": {"en": "National Native American Heritage Month"}, "urls": {"en": "https://www.daysoftheyear.com/days/native-american-heritage-month/"}, first: {"era": 1, "y": 1990}},
+        {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://nationaldaycalendar.com/national-family-literacy-day-november-1/"}, first: {"era": 1, "y": 1994}, emoji: "📖"},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
