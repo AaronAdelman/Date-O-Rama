@@ -20,5 +20,8 @@
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
         {titles: {"en": "Shout of Dolores", "es": "Grito de Dolores"}, type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1825}, urls: {"en": "https://nationaltoday.com/shout-of-dolores/"}, emoji: "🔔"},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Day of the Pluricultural Nation", "es": "Día de la Raza"}, urls: {"en": "https://nationaltoday.com/mexico-day-of-the-pluricultural-nation/"}, first: {era: 1, y: 2020}},
-  ]
+        {type: "1D", start: {mon: 10, d: 31}, titles: {"es": "Día de las Brujas"}},
+        {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "Day of the Little Angels", "es": "Día de los Inocentes"}},
+        {type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/day-of-the-dead/"}, titles: {"en": "Day of the Dead", "es": "Día de los Muertos"}},
+    ]
 }
