@@ -53,7 +53,7 @@
         {"type": "1D", "start": {"mon": 10, "d": 31}, "titles": {"en": "Jammu and Kashmir Day"}, first: {era: 1, y: 2019}},
         {"type": "1D", "start": {"mon": 10, "d": 31}, "titles": {"en": "Ladakh Day"}, first: {era: 1, y: 2019}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Lakshadweep Day"}, first: {era: 1, y: 1956}},
-        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Jour de la libération"}, first: {era: 1, y: 1954}, locations: {"en": "Puducherry"}},
+        {"type": "1D", "start": {"mon": 11, "d": 1}, urls: {"en": "https://nationaltoday.com/puducherry-liberation-day/"}, titles: {"en": "Puducherry Liberation Day"}, first: {era: 1, y: 1954}},
         {"type": "1D", "start": {"mon": 2, "d": 9}, "titles": {"en": "Bodoland Day"}, first: {era: 1, y: 2003}},
 
         {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},

@@ -17,7 +17,7 @@
        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 7, "d": 4}, "urls": {"en": "https://nationaltoday.com/philippines-republic-day/"}, first: {"era": 1, "y": 1946}},
        {"type": "1D", "start": {"mon": 7, "d": 27}, "titles": {"en": "Iglesia ni Cristo Day"}, "urls": {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {"era": 1, "y": 1914}},
        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
-       {type: "1M", start: {mon: 11}, titles: {"en": "Children’s Month"}, inherits: "Children’s Day"},
+       {type: "1M", start: {mon: 11}, titles: {"en": "Children’s Month"}, inherits: "Children’s Day", urls: {"en": "https://nationaltoday.com/national-childrens-month/"}, first: {"era": 1, "y": 2015}},
        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-heroes-day-philippines/"}},
        {type: "1D", start: {mon: 7, d: 1}, inherits: "Air Force Day"},
        {"type": "1M", "start": {"mon": 8}, "titles": {"en": "National Language Month", "fil": "Buwan ng Wikang Pambansa"}, "urls": {"en": "https://nationaltoday.com/national-language-month/"}, emoji: "🗣", first: {era: 1, y: 1997}},
@@ -38,5 +38,11 @@
        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "National Archives Day"}, first: {"era": 1, "y": 1995}, urls: {"en": "https://nationaltoday.com/national-archives-day/"}, emoji: "🗂️"},
        {type: "1D", start: {mon: 10, d: 25}, titles: {"en": "Anniversary of Philippine Military Academy"}, urls: {"en": "https://nationaltoday.com/anniversary-of-philippine-military-academy/"}, first: {"era": 1, "y": 1998}},
        {type: "1D", start: {mon: 10, d: 29}, titles: {"en": "National Indigenous People’s Thanksgiving Day"}, inherits: "Thanksgiving Day", urls: {"en": "https://nationaltoday.com/national-indigenous-peoples-thanksgiving-day/"}, first: {"era": 1, "y": 2003}},
+       {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/filipino-values-month/"}, titles: {"en": "Filipino Values Month"}, first: {era: 1, y: 1992}},
+       {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/library-and-information-services-month/"}, titles: {"en": "Library and Information Services Month"}, first: {era: 1, y: 1991}},
+    {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/national-consciousness-month-for-punctuality-and-civility/"}, titles: {"en": "National Consciousness Month for Punctuality and Civility"}, first: {"era": 1, "y": 2008}},
+    {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/national-rice-awareness-month/"}, titles: {"en": "National Rice Awareness Month"}},
+    {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/philippine-book-development-month/"}, titles: {"en": "Philippine Book Development Month"}, first: {era: 1, y: 2011}},
+    {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/traditional-and-alternative-health-month/"}, titles: {"en": "Traditional and Alternative Health Month"}, urls: {"en": "https://skepdic.com/tialtmed.html"}},
     ]
 }
