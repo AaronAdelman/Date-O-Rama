@@ -31,9 +31,9 @@
         {"type": "1D", "start": {"mon": 6, "d": 13}, "titles": {"en": "Maharana Pratap Jayanti"}, "urls": {"en": "https://nationaltoday.com/maharana-pratap-jayanti/"}},
         {"type": "1D", "start": {"mon": 10, "d": 26}, inherits: "Accession Day", first: {era: 1, y: 2020}, urls: {"en": "https://nationaltoday.com/accession-day/"}},
         {"type": "1D", "start": {"d": 31, "mon": 10}, inherits: "National Unity Day", urls: {"en": "https://nationaltoday.com/rashtriya-ekta-diwas/"}, first: {era: 1, y: 2014}},
-        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Kannada Rajyotsava"}, notes: {"en": "Karnataka Formation Day\nKarnataka Day"}, first: {era: 1, y: 1973}, urls: {"en": "https://en.wikipedia.org/wiki/Karnataka_Rajyotsava"}},
+        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Kannada Rajyotsava"}, notes: {"en": "Karnataka Formation Day\nKarnataka Day"}, first: {era: 1, y: 1973}, urls: {"en": "https://nationaltoday.com/kannada-rajyothsava/"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Andhra Pradesh Day", "te": "ఆంధ్రప్రదేశ్ అవతరణ దినోత్సవము"}, notes: {"en": "Andhra Pradesh State Formation Day\nAndhra Pradesh Rashtra Avatarana Dinotsavamu"}, urls: {"en": "https://en.wikipedia.org/wiki/Andhra_Pradesh_Day"}},
-        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Haryana Day"}, first: {era: 1, y: 1966}},
+        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Haryana Day"}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/haryana-day/"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Madhya Pradesh Day"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Kerala Day"}, notes: {"en": "Kerala Foundation Day\nKerala Piravi"}, first: {era: 1, y: 1956}, urls: {"en": "https://en.wikipedia.org/wiki/Kerala_Day"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Chhattisgarh Day"}},
@@ -184,5 +184,6 @@
         {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2007}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Parents’ Day", first: {"era": 1, "y": 2007}, titles: {"en": "Parents’ Worship Day", "hi": "मातृ-पितृ पूजन दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Parents%27_Worship_Day"}},
         {inherits: "International Day of the World’s Indigenous Peoples", "type": "1D", "start": {"mon": 8, "d": 9}, titles: {"en": "Adivasi Divas"}},
+        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/kut/"}, titles: {"en": "Kut"}},
     ]
 }

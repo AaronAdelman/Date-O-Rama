@@ -12,7 +12,7 @@
         {"type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 4}, "titles": {"en": "Hurricane Supplication Day"}},
         {"type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 2}, "titles": {"en": "Virgin Islands–Puerto Rico Friendship Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Virgin_Islands-Puerto_Rico_Friendship_Day"}, "emoji": "🇻🇮🇵🇷", first: {"era": 1, "y": 1964}},
         {"type": "1D", "start": {"mon": 10, "d": 25}, "titles": {"en": "Hurricane Thanksgiving"}, "emoji": "🦃🌀"},
-        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Liberty Day"}, "emoji": "🗽"},
+        {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Liberty Day"}, "emoji": "🗽", urls: {"en": "https://nationaltoday.com/d-hamilton-jackson-day/"}, notes: {"en": "D. Hamilton Jackson Day"}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
     ]
 }

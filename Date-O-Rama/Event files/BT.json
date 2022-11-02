@@ -7,5 +7,6 @@
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {inherits: "National Day", type: "1D", start: {mon: 12, d: 17}, first: {era: 1, y: 1907}},
+        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/coronation-day-of-his-majesty-the-king/"}, titles: {"en": "Coronation Day of His Majesty the King"}, first: {era: 1, y: 2008}},
   ]
 }
