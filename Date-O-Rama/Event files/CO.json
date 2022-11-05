@@ -14,5 +14,6 @@
        {type: "1D", start: {mon: 7, d: 24}, inherits: "Navy Day"},
        {type: "1D", start: {mon: 8, d: 7}, titles: {"en": "Battle of Boyacá Day"}, urls: {"en": "https://nationaltoday.com/battle-of-boyaca/"}, first: {era: 1, y: 1819}},
        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 3}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/day-of-the-races/"}},
+       {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/all-saints-day-colombia/"}},
   ]
 }

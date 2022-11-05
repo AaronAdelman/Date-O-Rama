@@ -27,7 +27,7 @@
         {"type": "1D", "start": {"mon": 8, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "New South Wales Bank Holiday"}, "urls": {"en": "https://nationaltoday.com/new-south-wales-bank-holiday/"}, first: {era: 1, y: 1875}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 1}, "locations": {"en": "Australian Capital Territory and South Australia"}, urls: {"en": "https://nationaltoday.com/labour-day/"}},
         {"inherits": "King’s Birthday", "type": "1D", "start": {"mon": 10, "wkd": [2], "wkdRecurrence": 1}, "locations": {"en": "Queensland"}, first: {era: 1, y: 2022}},
-        {"type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Recreation Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Recreation_Day_holiday"}, "emoji": "🤿"},
+        {"type": "1D", "start": {"mon": 11, "wkd": [2], "wkdRecurrence": 1}, "titles": {"en": "Recreation Day"}, "urls": {"en": "https://nationaltoday.com/recreation-day/"}, "emoji": "🤿"},
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},

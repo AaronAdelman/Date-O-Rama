@@ -17,5 +17,7 @@
         {"titles": {"en": "Dominion Status Day"}, "type": "1D", "start": {"mon": 9, "d": 26}, "urls": {"en": "https://nationaltoday.com/dominion-status-day/"}, first: {"era": 1, "y": 1907}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 4}, inherits: "Labor Day", urls: {"en": "https://nationaltoday.com/new-zealand-labour-day/"}, first: {"era": 1, "y": 1890}},
         {type: "1D", start: {mon: 10, d: 29, thruMon: 11, thruD: 4, wkd: [2]}, urls: {"en": "https://nationaltoday.com/marlborough-anniversary-day/"}, titles: {"en": "Marlborough Anniversary Day"}, first: {"era": 1, "y": 1859}},
+        {type: "1D", start: {mon: 11, d: 11, thruD: 17, wkd: [6]}, urls: {"en": "https://nationaltoday.com/canterbury-anniversary-day/"}, titles: {"en": "Canterbury Anniversary Day"}, first: {"era": 1, "y": 1955}},
+        {type: "1D", start: {mon: 11, d: 11, thruD: 17, wkd: [6]}, urls: {"en": "https://nationaltoday.com/christchurch-show-day/"}, titles: {"en": "Christchurch Show Day"}, first: {"era": 1, "y": 1862}},
         ]
     }

@@ -6,5 +6,6 @@
     "calendarColor": {"red": 0.00, "green": 0.15, "blue": 0.33},
     "eventSpecifications": [
         {type: "1D", start: {mon: 10, d: 9}, first: {era: 1, y: 1847}, urls: {"en": "https://nationaltoday.com/saint-barthelemy-abolition-day/"}, titles: {"en": "Abolition Day"}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/armistice-day-saint-barthelemy/"}, inherits: "Armistice Day", first: {"era": 1, "y": 1918}},
     ]
 }
