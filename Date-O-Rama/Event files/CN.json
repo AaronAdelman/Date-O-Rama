@@ -6,7 +6,7 @@
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
         {"type": "1D", "start": {"d": 28, "mon": 3}, "titles": {"en": "Serfs’ Emancipation Day"}},
-        {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Singles’ Day"}},
+        {"type": "1D", "start": {"d": 11, "mon": 11}, "titles": {"en": "Singles Day"}, urls: {"en": "https://nationaltoday.com/singles-day/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"titles": {"en": "C.P.C. Founding Day"}, "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/cpc-founding-day/"}, first: {"era": 1, "y": 1921}},

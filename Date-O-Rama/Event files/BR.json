@@ -21,5 +21,6 @@
         {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida"}, urls: {"en": "https://nationaltoday.com/lady-of-aparecida-2/"}, first: {era: 1, y: 1717}},
         {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
+        {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
     ]
 }
