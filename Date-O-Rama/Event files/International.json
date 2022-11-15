@@ -490,5 +490,6 @@
         {"type": "1D", "start": {"mon": 5, "d": 14}, "titles": {"en": "International Chihuahua Appreciation Day"}, "urls": {"en": "https://nationaltoday.com/international-chihuahua-appreciation-day/"}, first: {"era": 1, "y": 2020}},
         {type: "1D", start: {mon: 7, d: 14}, first: {era: 1, y: 2012}, titles: {"en": "International Non-Binary People’s Day"}, urls: {"en": "https://en.wikipedia.org/wiki/International_Non-Binary_People%27s_Day"}},
         {type: "1D", start: {mon: 10, d: 12}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/dia-de-la-raza/"}, first: {era: 1, y: 1917}},
+        {type: "1D", start: {mon: 11, d: 3}, titles: {"en": "Godzilla Day"}, urls: {"en": "https://godzilla.com/godzilla-day-celebration/"}, first: {era: 1, y: 2022}},
     ]
 }

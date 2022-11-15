@@ -80,7 +80,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 //        debugPrint("\(#file) \(#function)")
         
         // TODO:  Is this section needed?
-//        let myDelegate = WKExtension.shared().delegate as! ExtensionDelegate
+//        let myDelegate = WKApplication.shared().delegate as! ExtensionDelegate
 //        myDelegate.complicationController = self
 //        self.complication = complication
         // End of questionable section.

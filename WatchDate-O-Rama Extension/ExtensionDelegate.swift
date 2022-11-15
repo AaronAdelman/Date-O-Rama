@@ -10,7 +10,7 @@ import WatchKit
 import WatchConnectivity
 import ClockKit
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
+class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate {
     var session:  WCSession?
     public var complicationController = ComplicationController()
     
@@ -194,4 +194,4 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         self.handleMessage(applicationContext)
     } // func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any])
-} // class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate
+} // class ExtensionDelegate: NSObject, WKApplicationDelegate, WCSessionDelegate

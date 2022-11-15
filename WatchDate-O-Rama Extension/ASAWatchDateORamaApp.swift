@@ -16,6 +16,6 @@ struct ASAWatchDateORamaApp: App {
         }
     }
     
-@WKExtensionDelegateAdaptor(ExtensionDelegate.self) var delegate
+@WKApplicationDelegateAdaptor(ExtensionDelegate.self) var delegate
 // code
 }

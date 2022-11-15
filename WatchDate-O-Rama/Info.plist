@@ -20,14 +20,41 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CLKComplicationPrincipalClass</key>
+	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
+	<key>CLKComplicationSupportedFamilies</key>
+	<array>
+		<string>CLKComplicationFamilyCircularSmall</string>
+		<string>CLKComplicationFamilyExtraLarge</string>
+		<string>CLKComplicationFamilyGraphicCircular</string>
+		<string>CLKComplicationFamilyGraphicRectangular</string>
+		<string>CLKComplicationFamilyModularLarge</string>
+		<string>CLKComplicationFamilyModularSmall</string>
+		<string>CLKComplicationFamilyUtilitarianLarge</string>
+		<string>CLKComplicationFamilyUtilitarianSmall</string>
+		<string>CLKComplicationFamilyUtilitarianSmallFlat</string>
+	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your location.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Date-O-Rama needs authorization to access your location.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>WKApplication</key>
+	<true/>
 	<key>WKCompanionAppBundleIdentifier</key>
 	<string>com.Adelsoft.Date-O-Rama</string>
-	<key>WKWatchKitApp</key>
-	<true/>
+	<key>WKRunsIndependentlyOfCompanionApp</key>
+	<false/>
 </dict>
 </plist>

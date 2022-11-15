@@ -1,6 +1,0 @@
-framework module ObjCAA {
-  umbrella header "ObjCAA-watchOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
