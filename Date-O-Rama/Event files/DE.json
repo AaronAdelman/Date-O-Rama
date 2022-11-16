@@ -18,5 +18,6 @@
         {type: "1D", titles: {"en": "Day of the Homeland"}, start: {mon: 9, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/day-of-the-homeland/"}, first: {era: 1, y: 1949}},
         {type: "1D", start: {mon: 10, d: 31}, inherits: "Reformation Day", first: {era: 1, y: 1717}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
+        {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/day-of-mourning/"}, titles: {"en": "Day of Mourning", "de": "Volkstrauertag"}, first: {era: 1, y: 1922}},
     ]
 }
