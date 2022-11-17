@@ -246,6 +246,8 @@
         {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://nationaldaycalendar.com/national-family-literacy-day-november-1/"}, first: {"era": 1, "y": 1994}, emoji: "📖"},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/military-family-month/"}, titles: {"en": "Military Family Month"}, first: {"era": 1, "y": 1996}},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/national-entrepreneurship-month/"}, titles: {"en": "National Entrepreneurship Month"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/america-recycles-day/"}, titles: {"en": "America Recycles Day"}, first: {era: 1, y: 1997}, emoji: "♻️"},
+
         
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
