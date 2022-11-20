@@ -5,7 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.64, "green": 0.20, "blue": 0.23},
     "eventSpecifications": [
-        {"titles": {"en": "Proclamation Day of the Republic of Latvia"}, "type": "1D", "start": {"mon": 11, "d": 18}, first: {era: 1, y: 1918}, urls: {"en": "https://en.wikipedia.org/wiki/Proclamation_Day_of_the_Republic_of_Latvia"}},
+        {"titles": {"en": "Proclamation Day of the Republic of Latvia"}, "type": "1D", "start": {"mon": 11, "d": 18}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 9, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"titles": {"en": "Jani"}, "type": "1D", "start": {"mon": 6, "d": 24}, "urls": {"en": "https://nationaltoday.com/jani/"}, first: {"era": 1, "y": 1990}},

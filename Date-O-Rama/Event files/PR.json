@@ -12,7 +12,7 @@
         {"titles": {"en": "Birthday of Don Luis Muñoz Rivera", "es": "Natalicio de Don Luis Muñoz Rivera"}, "type": "1D", "start": {"mon": 7, "wkd": [2], "wkdRecurrence": 3}, "urls": {"en": "https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Rivera"}, "inherits": "*BDay*"},
         {"inherits": "Constitution Day", "type": "1D", "start": {"mon": 7, "d": 25}, first: {"era": 1, "y": 1953}, "urls": {"en": "https://en.wikipedia.org/wiki/Puerto_Rico_Constitution_Day"}},
         {"titles": {"en": "Birthday of Dr. José Celso Barbosa", "es": "Natalicio de Dr. José Celso Barbosa"}, "type": "1D", "start": {"mon": 7, "d": 27}, "urls": {"en": "https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, "inherits": "*BDay*"},
-        {"titles": {"en": "Discovery of Puerto Rico", "es": "Día del Descubrimiento de Puerto Rico"}, "type": "1D", "start": {"mon": 11, "d": 19}, "urls": {"en": "https://en.wikipedia.org/wiki/History_of_Puerto_Rico#Spanish_rule_(1493%E2%80%931898)"}},
+        {"titles": {"en": "Discovery of Puerto Rico", "es": "Día del Descubrimiento de Puerto Rico"}, "type": "1D", "start": {"mon": 11, "d": 19}, "urls": {"en": "https://nationaltoday.com/discovery-of-puerto-rico-day/"}},
 
         {"inherits": "Epiphany Eve", "type": "1D", "start": {"mon": 1, "d": 5}},
         {"inherits": "St. John’s Day", "type": "1D", "start": {"mon": 6, "d": 24}},
