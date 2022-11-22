@@ -8,7 +8,7 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 5}},
-        {inherits: "Independence Day", type: "1D", start: {d: 25, mon: 11}, first: {era: 1, y: 1975}},
+        {inherits: "Independence Day", type: "1D", start: {d: 25, mon: 11}, first: {era: 1, y: 1975}, urls: {"en": "https://nationaltoday.com/suriname-independence-day/"}},
         {"titles": {"en": "Keti Koti"}, "type": "1D", "start": {"mon": 7, "d": 1}, "urls": {"en": "https://nationaltoday.com/keti-koti/"}, inherits: "Emancipation Day"},
         {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Maroons Day"}, urls: {"en": "https://nationaltoday.com/maroons-day/"}, first: {era: 1, y: 2011}},
    ]

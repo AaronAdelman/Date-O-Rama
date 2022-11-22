@@ -44,5 +44,6 @@
     {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/national-rice-awareness-month/"}, titles: {"en": "National Rice Awareness Month"}},
     {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/philippine-book-development-month/"}, titles: {"en": "Philippine Book Development Month"}, first: {era: 1, y: 2011}},
     {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/traditional-and-alternative-health-month/"}, titles: {"en": "Traditional and Alternative Health Month"}, urls: {"en": "https://skepdic.com/tialtmed.html"}},
+    {type: "nD", start: {mon: 11, d: 25}, end: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/18-day-campaign-to-end-violence-against-women/"}, titles: {"en": "18-Day Campaign to End Violence against Women"}, first: {era: 1, y: 2006}},
     ]
 }
