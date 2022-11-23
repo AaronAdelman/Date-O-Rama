@@ -65,5 +65,6 @@
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/calan-gaeaf/"}, titles: {"en": "Calan Gaeaf"}},
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/guy-fawkes-night/"}, titles: {"en": "Guy Fawke’s Night"}, first: {era: 1, y: 1604}},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/remembrance-sunday/"}, titles: {"en": "Remembrance Sunday"}, first: {era: 1, y: 1946}},
+        {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/lancashire-day/"}, titles: {"en": "Lancashire Day"}},
     ]
 }

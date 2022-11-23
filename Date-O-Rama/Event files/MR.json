@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
         {"type": "1D", "start": {"mon": 6, "d": 16}, inherits: "International Day of the African Child", first: {"era": 1, "y": 1991}},
-        {inherits: "Independence Day", type: "1D", start: {d: 28, mon: 11}, first: {era: 1, y: 1960}},
+        {inherits: "Independence Day", type: "1D", start: {d: 28, mon: 11}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/mauritania-independence-day/"}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 7, d: 10}, first: {era: 1, y: 1960}},
     ]
 }

@@ -57,7 +57,7 @@
         
         {"template": "צום אב", "titles": {"he": "צום אב", "en": "Fast of ’Av"}, "type": "1D", "start": {"mon": 12, "d": 9, "wkd": [1, 2, 3, 4, 5, 6]}, "urls": {"en": "https://www.ou.org/holidays/category/fast-of-tisha-bav/"}},
         
-        {"template": "1st Advent Sunday", "titles": {"en": "First Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}, "emoji": "🕯"},
+        {"template": "1st Advent Sunday", "titles": {"en": "First Advent Sunday"}, "type": "1D", "start": {"mon": 11, "d": 27, "thruMon": 12, "thruD": 3, "wkd": [1]}, "emoji": "🕯", urls: {"en": "https://nationaltoday.com/first-sunday-of-advent/"}},
         {"template": "2nd Advent Sunday", "titles": {"en": "Second Advent Sunday"}, "type": "1D", "start": {"mon": 12, "d": 4, "thruD": 10, "wkd": [1]}, "emoji": "🕯"},
         {"template": "2nd Sunday of Easter", "titles": {"en": "Second Sunday of Easter"}, "notes": {"en": "Divine Mercy Sunday"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 7}},
         {"template": "3rd Advent Sunday", "titles": {"en": "Third Advent Sunday"}, "notes": {"en": "Gaudete Sunday"}, "type": "1D", "start": {"mon": 12, "d": 11, "thruD": 17, "wkd": [1]}, "emoji": "🕯"},
