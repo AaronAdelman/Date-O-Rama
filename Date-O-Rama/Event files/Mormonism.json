@@ -11,7 +11,7 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}, first: {"type": "1D", "era": 1, "y": 1910}, "urls": {"en": "https://nationaldaycalendar.com/fathers-day-third-sunday-in-june/"}},
         {"inherits": "Pioneer Day", "type": "1D", "start": {"mon": 7, "d": 24}, first: {"type": "1D", "era": 1, "y": 1949}},
         {"inherits": "Halloween", "type": "1D", "start": {"mon": 10, "d": 31}},
-        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, first: {"type": "1D", "era": 1, "y": 1942}, "urls": {"en": "https://en.wikipedia.org/wiki/Thanksgiving_(United_States)"}},
+        {"inherits": "Thanksgiving Day", "type": "1D", "start": {"mon": 11, "wkd": [5], "wkdRecurrence": 4}, first: {"type": "1D", "era": 1, "y": 1942}, "urls": {"en": "https://nationaltoday.com/thanksgiving/?fbclid=IwAR2Sel052eQXH92eZmopEvqmaB_FwURJbP9OSAzw9V9_1BBbGgVDQAdLoMY"}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
     ]
 }

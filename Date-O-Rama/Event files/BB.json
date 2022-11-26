@@ -15,7 +15,7 @@
         {"inherits": "Whit Monday", "type": "1D", "start": {"Easter": "Easter", "offsetD": 50}},
         {"inherits": "Emancipation Day", "type": "1D", "start": {"mon": 8, d: 1}},
         {titles: {"en": "Kadooment Day"}, "type": "1D", "start": {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/kadooment-day/"}},
-        {"inherits": "Independence Day", "type": "1D", "start": {mon: 11, d: 30}, first: {era: 1, y: 1966}},
+        {"inherits": "Independence Day", "type": "1D", "start": {mon: 11, d: 30}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/barbados-independence-day/"}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
 
