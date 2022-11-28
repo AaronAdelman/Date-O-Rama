@@ -1,6 +1,7 @@
 {
     "titles": {"*": "BT"},
     "//": "Bhutan",
+    "TODO": "Traditional Day of Offering, Losar",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.40, "blue": 0.12},
@@ -8,5 +9,7 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {inherits: "National Day", type: "1D", start: {mon: 12, d: 17}, first: {era: 1, y: 1907}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/coronation-day-of-his-majesty-the-king/"}, titles: {"en": "Coronation Day of His Majesty the King"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 1, d: 2}, titles: {"en": "Nyinlong", "dz": "ཉིན་ལོང"}},
+        {type: "nD", start: {mon: 2, d: 21}, end: {mon: 2, d: 23}, titles: {"en": "Birthday of King Jigme Khesar Namgyel Wangchuck", inherits: "*BDay*"}}
   ]
 }
