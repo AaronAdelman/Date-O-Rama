@@ -31,5 +31,6 @@
         {type: "1D", start: {mon: 8, d: 5}, titles: {"en": "Feast of the White Virgin"}, urls: {"en": "https://en.wikipedia.org/wiki/Virgen_Blanca_Festivities"}, locations: {"en": "Álava"}},
         {"titles": {"en": "Day of Cantabria"}, "type": "1D", "start": {"mon": 8, wkd: [1], wkdRecurrence: 2}, "urls": {"en": "https://nationaltoday.com/the-day-of-cantabria/"}, first: {"era": 1, "y": 1981}},
         {"titles": {"en": "Day of the Independent City of Ceuta", "es": "Dia de Ceuta"}, "type": "1D", "start": {"mon": 9, d: 2}, "urls": {"en": "https://nationaltoday.com/ceuta-day/"}},
+        {type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/day-of-navarre/"}, titles: {"en": "Day of Navarre"}},
     ]
 }

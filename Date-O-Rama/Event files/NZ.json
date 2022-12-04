@@ -20,5 +20,6 @@
         {type: "1D", start: {mon: 11, d: 11, thruD: 17, wkd: [6]}, urls: {"en": "https://nationaltoday.com/canterbury-anniversary-day/"}, titles: {"en": "Canterbury Anniversary Day"}, first: {"era": 1, "y": 1955}},
         {type: "1D", start: {mon: 11, d: 11, thruD: 17, wkd: [6]}, urls: {"en": "https://nationaltoday.com/christchurch-show-day/"}, titles: {"en": "Christchurch Show Day"}, first: {"era": 1, "y": 1862}},
         {type: "1D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [2]}, urls: {"en": "https://nationaltoday.com/chatham-islands-anniversary-day/"}, titles: {"en": "Chatham Islands Anniversary Day"}},
+        {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/crate-day/"}, titles: {"en": "Crate Day"}, emoji: "🍺"},
         ]
     }

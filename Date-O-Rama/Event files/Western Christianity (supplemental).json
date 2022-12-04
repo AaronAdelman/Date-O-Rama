@@ -96,5 +96,6 @@
     {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/cities-for-life-day/"}, titles: {"en": "Cities for Life Day"}, first: {era: 1, y: 2002}},
     {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/peppermint-bark-day/"}, titles: {"en": "National Peppermint Bark Day"}},
     {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/month-giving/"}, titles: {"en": "Month of Giving"}},
+    {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/coats-and-toys-for-kids-day/"}, titles: {"en": "Coats and Toys for Kids Day"}, first: {era: 1, y: 1983}, emoji: "🧥🧸"},
     ]
 }
