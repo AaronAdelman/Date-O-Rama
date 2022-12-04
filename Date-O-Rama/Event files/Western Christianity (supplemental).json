@@ -94,5 +94,7 @@
     {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-advent-calendar-day/"}, titles: {"en": "National Advent Calendar Day"}, first: {era: 1, y: 2020}},
     {type: "1D", start: {mon: 11, d: 19, thruD: 26, wkd: [1]}, urls: {"en": "https://nationaltoday.com/stir-sunday/"}, titles: {"en": "Stir-Up Sunday"}},
     {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/cities-for-life-day/"}, titles: {"en": "Cities for Life Day"}, first: {era: 1, y: 2002}},
+    {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/peppermint-bark-day/"}, titles: {"en": "National Peppermint Bark Day"}},
+    {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/month-giving/"}, titles: {"en": "Month of Giving"}},
     ]
 }

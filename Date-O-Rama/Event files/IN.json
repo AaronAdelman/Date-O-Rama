@@ -170,7 +170,7 @@
         {"type": "1D", "start": {"d": 18, "mon": 11}, "titles": {"en": "National Naturopathy Day"}, "urls": {"en": "http://skepdic.com/natpathy.html"}},
         {"type": "1D", "start": {"d": 19, "mon": 11}, "titles": {"en": "National Integration Day"}, "notes": {"en": "Quami Ekta Divas"}, first: {"era": 1, "y": 1984}, "urls": {"en": "https://nationaltoday.com/national-integration-day/"}},
         {"type": "1D", "start": {"d": 21, "mon": 11}, "titles": {"en": "World Fisheries Day"}, "emoji": "🎣", "urls": {"en": "https://nationaltoday.com/world-fisheries-day/"}},
-        {"type": "1D", "start": {"d": 1, "mon": 12}, "titles": {"en": "Nagaland Day"}, first: {era: 1, y: 1963}},
+        {"type": "1D", "start": {"d": 1, "mon": 12}, "titles": {"en": "Nagaland Day"}, first: {era: 1, y: 1963}, urls: {"en": "https://nationaltoday.com/state-inauguration-day-in-nagaland/"}},
         {"type": "1D", "start": {"d": 2, "mon": 12}, "titles": {"en": "National Pollution Control Day"}},
         {"type": "1D", "start": {"d": 14, "mon": 12}, "titles": {"en": "National Energy Conservation Day"}, first: {"era": 1, "y": 1991}, "emoji": "⚡️", "urls": {"en": "https://nationaltoday.com/national-energy-conservation-day/"}},
         {"type": "1D", "start": {"d": 18, "mon": 12}, "titles": {"en": "Minorities Rights Day"}},
@@ -185,5 +185,7 @@
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Parents’ Day", first: {"era": 1, "y": 2007}, titles: {"en": "Parents’ Worship Day", "hi": "मातृ-पितृ पूजन दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Parents%27_Worship_Day"}},
         {inherits: "International Day of the World’s Indigenous Peoples", "type": "1D", "start": {"mon": 8, "d": 9}, titles: {"en": "Adivasi Divas"}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/kut/"}, titles: {"en": "Kut"}},
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/indigenous-faith-day-in-arunachal-pradesh/"}, titles: {"en": "Indigenous Faith Day"}, locations: {"en": "Arunachal Pradesh"}},
+        {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/asom-divas/"}, titles: {"en": "Asom Divas"}, first: {era: 1, y: 1996}},
     ]
 }

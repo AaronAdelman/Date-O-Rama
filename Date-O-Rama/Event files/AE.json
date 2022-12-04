@@ -7,8 +7,8 @@
     "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
-        {titles: {"en": "Commemoration Day", "ar": "يوم الشهيد"}, "type": "1D", "start": {"mon": 11, "d": 30}, urls: {"en": "https://en.wikipedia.org/wiki/Commemoration_Day"}, inherits: "Martyrs’ Day"},
-        {"inherits": "National Day", "type": "nD", "start": {"mon": 12, "d": 2}, end: {"mon": 12, "d": 3}, first: {era: 1, y: 1971}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_(United_Arab_Emirates)"}},
+        {titles: {"en": "Commemoration Day", "ar": "يوم الشهيد"}, "type": "nD", "start": {"mon": 11, "d": 30}, end: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/commemoration-day/"}, inherits: "Martyrs’ Day"},
+        {"inherits": "National Day", "type": "nD", "start": {"mon": 12, "d": 2}, end: {"mon": 12, "d": 3}, first: {era: 1, y: 1971}, urls: {"en": "https://nationaltoday.com/national-day-uae/"}},
 
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "d": 21}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
