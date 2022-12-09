@@ -9,7 +9,7 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"inherits": "Midsummer Day", "type": "1D", "start": {"mon": 6, "d": 25}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}, titles: {"en": "Day of Children’s Rights"}},
-        {inherits: "Independence Day", type: "1D", start: {d: 6, mon: 12}, first: {era: 1, y: 1917}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Finland)"}},
+        {inherits: "Independence Day", type: "1D", start: {d: 6, mon: 12}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/"}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
 ]
 }

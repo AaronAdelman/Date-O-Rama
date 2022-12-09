@@ -250,6 +250,7 @@
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-meth-awareness-day/"}, titles: {"en": "National Meth Awareness Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/national-anytime-hawaiian-day/"}, titles: {"en": "National Anytime Hawaiian Day"}},
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/miners-day/"}, titles: {"en": "National Miners Day"}, first: {era: 1, y: 2009}},
+        {type: "nD", start: {mon: 12, d: 6}, end: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/national-influenza-vaccination-week/"}, titles: {"en": "National Influenza Vaccination Week"}, first: {era: 1, y: 2005}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

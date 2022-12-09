@@ -37,7 +37,7 @@
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Madhya Pradesh Day"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Kerala Day"}, notes: {"en": "Kerala Foundation Day\nKerala Piravi"}, first: {era: 1, y: 1956}, urls: {"en": "https://en.wikipedia.org/wiki/Kerala_Day"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Chhattisgarh Day"}},
-        {"type": "1D", "start": {"d": 7, "mon": 12}, "titles": {"en": "Armed Forces Flag Day"}, first: {"era": 1, "y": 1949}, "notes": {"en": "Flag Day of India"}, "urls": {"en": "https://en.wikipedia.org/wiki/Armed_Forces_Flag_Day"}},
+        {"type": "1D", "start": {"d": 7, "mon": 12}, "titles": {"en": "Armed Forces Flag Day"}, first: {"era": 1, "y": 1949}, "notes": {"en": "Flag Day of India"}, "urls": {"en": "https://nationaltoday.com/flag-day-of-india/"}, inherits: "Flag Day"},
         {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa Liberation Day", "pt": "Dia da libertação de Goa", "kok": "गोंय मुक्ति दिस", "hi": "गोवा मुक्ति दिवस"}, notes: {"en": "Goa, Daman and Diu Liberation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Goa_Liberation_Day"}, first: {"era": 1, "y": 1961}},
         {"type": "1D", "start": {"mon": 5, "d": 30}, "titles": {"en": "Goa Day"}, first: {era: 1, y: 1987}},
         {"type": "1D", "start": {"mon": 11, "d": 15}, "titles": {"en": "Jharkhand Day"}, first: {era: 1, y: 2000}},
