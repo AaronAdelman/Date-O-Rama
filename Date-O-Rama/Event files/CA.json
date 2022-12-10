@@ -63,5 +63,6 @@
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 1}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "Health Care Aide Day"}, urls: {"en": "https://nationaltoday.com/health-care-aide-day/"}},
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-day-of-remembrance-and-action-on-violence-against-women-canada/"}, titles: {"en": "National Day of Remembrance and Action on Violence Against Women"}, first: {era: 1, y: 1991}},
+        {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-statute-of-westminster/"}, titles: {"en": "Anniversary of the Statute of Westminster"}},
     ]
 }

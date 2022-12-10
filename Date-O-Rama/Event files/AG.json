@@ -16,7 +16,7 @@
         {"titles": {"en": "August Tuesday "}, "type": "1D", "start": {"mon": 8, "wkd": [3], "d": 2, "thruD": 8}},
         {"inherits": "Independence Day", "type": "1D", "start": {"mon": 11, "d": 1}, first: {era: 1, y: 1981}, urls: {"en": "https://nationaltoday.com/antigua-independence-day/"}},
         {"titles": {"en": "Independence Day (observed)"}, "type": "1D", "start": {"mon": 11, "d": 2, "thruD": 3, "wkd": [2]}, urls: {"en": "https://nationaltoday.com/antigua-independence-day/"}},
-        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 12, "d": 9}},
+        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 12, "d": 9}, urls: {"en": "https://nationaltoday.com/v-c-bird-day/"}, notes: {"en": "V.C. Bird Day"}},
         {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
         {"inherits": "Boxing Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {"titles": {"en": "Day off for Christmas"}, "type": "1D", "start": {"mon": 12, "d": 27, "wkd": [2, 3]}},
