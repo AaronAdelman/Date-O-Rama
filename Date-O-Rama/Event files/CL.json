@@ -14,5 +14,6 @@
         {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {type: "1D", start: {mon: 5, d: 21}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Chile)"}},
         {type: "1D", start: {mon: 9, d: 19}, inherits: "Army Day", urls: {"en": "https://nationaltoday.com/day-of-the-glories-of-the-army/"}},
+        {"inherits": "Feast of the Immaculate Conception", "type": "1D", "start": {"mon": 12, "d": 8}, urls: {"en": "https://nationaltoday.com/feast-of-the-immaculate-conception-chile/"}},
   ]
 }

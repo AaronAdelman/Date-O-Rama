@@ -16,5 +16,6 @@
         {"titles": {"en": "Respect for the Aged Day"}, "type": "1D", "start": {"mon": 9, wkd: [2], wkdRecurrence: 3}, first: {"era": 1, "y": 2003}, "urls": {"en": "https://nationaltoday.com/respect-aged-day/"}, "emoji": "👴🧓"},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/japanese-culture-day/"}, titles: {"en": "Culture Day"}},
         {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/labor-appreciation-day/"}, titles: {"en": "Labor Appreciation Day"}, first: {"era": 1, "y": 1948}, emoji: "㊘"},
+        {"type": "1D", "start": {"d": 8, "mon": 12}, inherits: "Bodhi Day"},
     ]
 }

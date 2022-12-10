@@ -10,7 +10,7 @@
         {"inherits": "Liberation Day (day off)", "type": "1D", "start": {"mon": 7, "d": 20, "wkd": [6]}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}, first: {era: 1, y: 1945}},
         {"inherits": "Liberation Day (day off)", "type": "1D", "start": {"mon": 7, "d": 21, "wkd": [2]}, "urls": {"en": "https://nationaltoday.com/guam-liberation-day/"}, first: {era: 1, y: 1945}},
         {"inherits": "All Souls’ Day", "type": "1D", "start": {"mon": 11, "d": 2}},
-        {"inherits": "Feast of the Immaculate Conception", "type": "1D", "start": {"mon": 12, "d": 8}, "titles": {"en": "Lady of Camarin Day"}},
+        {"inherits": "Feast of the Immaculate Conception", "type": "1D", "start": {"mon": 12, "d": 8}, "titles": {"en": "Lady of Camarin Day"}, urls: {"en": "https://nationaltoday.com/santa-marian-kamalen-day/"}, notes: {"en": "Santa Marian Kamalen Day"}},
 
     ]
 }
