@@ -240,6 +240,7 @@
         {"inherits": "Nakba Day", "type": "1D", "start": {"mon": 5, "d": 15}, first: {"era": 1, "y": 2023}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/international-volunteer-day/"}, titles: {"en": "International Volunteer Day"}, first: {"era": 1, "y": 1985}},
         {type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaldaycalendar.com/human-rights-day-december-10/"}, titles: {"en": "Human Rights Day"}, first: {"era": 1, "y": 1948}},
+        {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/unicef-day-for-change/"}, titles: {"en": "UNICEF Day for Change"}},
 
         {"titles": {"en": "International Decade of Indigenous Languages"}, "type": "nY", "start": {"era": 1, "y": 2022}, "end": {"era": 1, "y": 2032}},
         {"titles": {"en": "Second Decade of Action for Road Safety"}, "type": "nY", "start": {"era": 1, "y": 2021}, "emoji": "🚏", "end": {"era": 1, "y": 2030}},

@@ -11,7 +11,7 @@
         {"inherits": "Heroes’ Day (Kenya)", "type": "1D", "start": {mon: 10, d: 20, wkd: [2, 3, 4, 5, 6]}, first: {era: 1, y: 2010}},
         {"inherits": "Heroes’ Day (Kenya)", "type": "1D", "start": {mon: 10, d: 21, wkd: [2]}, first: {era: 1, y: 2010}},
         {"inherits": "Heroes’ Day (Kenya)", "type": "1D", "start": {mon: 10, d: 22, wkd: [2]}, first: {era: 1, y: 2010}},
-        {inherits: "Republic Day", type: "1D", titles: {"en": "Jamhuri Day"}, start: {d: 12, mon: 12}, first: {era: 1, y: 1963}, urls: {"en": "https://en.wikipedia.org/wiki/Jamhuri_Day"}},
+        {inherits: "Republic Day", type: "1D", titles: {"en": "Jamhuri Day"}, start: {d: 12, mon: 12}, first: {era: 1, y: 1963}, urls: {"en": "https://nationaltoday.com/jamhuri-day/"}},
         {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Huduma Day"}, urls: {"en": "https://nationaltoday.com/huduma-day/"}, notes: {"en": "Moi Day"}, first: {era: 1, y: 2017}},
    ]
 }

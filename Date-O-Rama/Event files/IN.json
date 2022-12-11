@@ -187,5 +187,6 @@
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/kut/"}, titles: {"en": "Kut"}},
         {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/indigenous-faith-day-in-arunachal-pradesh/"}, titles: {"en": "Indigenous Faith Day"}, locations: {"en": "Arunachal Pradesh"}},
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/asom-divas/"}, titles: {"en": "Asom Divas"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/pa-togan-nengminza-sangma/"}, titles: {"en": "Pa Togan Nengminza Sangma"}, first: {era: 1, y: 1872}},
     ]
 }

@@ -261,6 +261,7 @@
         {template: "Ohi Day", type: "1D", start: {mon: 10, d: 28}, titles: {"en": "Ohi Day"}, notes: {"en": "Oxi Day\nOchi Day"}, urls: {"en": "https://nationaltoday.com/ohi-day/"}},
         {"template": "Orangemen’s Day", "type": "1D", "start": {"mon": 7, "d": 12}, "titles": {"en": "Orangemen’s Day", "fr": "Fête des orangistes"}, "urls": {"en": "https://nationaltoday.com/orangemens-day/"}, "emoji": "🔥"},
         {"template": "Ostara", "titles": {"en": "Ostara", "he": "אוסטרה"}, "type": "1D", "start": {"equinoxOrSolstice": "Mar"}},
+        {template: "Our Lady of Guadalupe Day", type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/lady-guadalupe-day/"}, titles: {"en": "Our Lady of Guadalupe Day"}, first: {era: 1, y: 1531}},
         {"template": "Palm Sunday", "titles": {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
         {template: "Pan American Day", "type": "1D", "start": {"mon": 10, "d": 12}, "titles": {"en": "Pan American Day"}, "urls": {"en": "https://en.wikipedia.org/wiki/Pan_American_Day"}, "emoji": "🌎"},
         {template: "Parents’ Day", "type": "1D", "start": {"mon": 5, d: 8}, "titles": {"en": "Parents’ Day", "he": "יום ההורים", "ko": "어버이날"}, "emoji": "👨‍👩‍👧‍👦", "urls": {"en": "https://en.wikipedia.org/wiki/Parents%27_Day"}},

@@ -13,7 +13,7 @@
         {"type": "1D", "start": {"mon": 8, d: 15}, inherits: "National Day of Mourning"},
         {"inherits": "Victory Day", "type": "1D", "start": {"mon": 12, "d": 16}, urls: {"en": "https://en.wikipedia.org/wiki/Victory_Day_(Bangladesh)"}, first: {era: 1, y: 1971}},
 
-        {"type": "1D", "start": {"d": 14, "mon": 12}, "titles": {"en": "Martyred Intellectuals Day"}, "inherits": "Martyrs’ Day"},
+        {"type": "1D", "start": {"d": 14, "mon": 12}, "titles": {"en": "Martyred Intellectuals Day"}, "inherits": "Martyrs’ Day", urls: {"en": "https://nationaltoday.com/martyred-intellectuals-day/"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 5, "d": 7}, inherits: "Engineer’s Day"},
