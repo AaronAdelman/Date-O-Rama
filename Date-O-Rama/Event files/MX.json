@@ -24,5 +24,6 @@
         {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "Day of the Little Angels", "es": "Día de los Inocentes"}},
         {type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/day-of-the-dead/"}, titles: {"en": "Day of the Dead", "es": "Día de los Muertos"}},
         {type: "1D", start: {mon: 12, d: 12}, inherits: "Our Lady of Guadalupe Day", first: {era: 1, y: 1531}},
+        {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas"}},
     ]
 }

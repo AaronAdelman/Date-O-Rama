@@ -8,7 +8,7 @@
     "eventSpecifications": [
         {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 12, "d": 16}},
+        {"inherits": "National Day", "type": "1D", "start": {"mon": 12, "d": 16}, urls: {"en": "https://nationaltoday.com/bahrain-national-day/"}},
         {"type": "1D", "start": {"mon": 12, "d": 17}, inherits: "Accession Day"},
 
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},

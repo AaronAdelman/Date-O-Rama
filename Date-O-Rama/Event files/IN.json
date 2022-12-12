@@ -132,7 +132,7 @@
         {"type": "1D", "start": {"d": 30, "mon": 3}, "titles": {"en": "World Idli Day"}, urls: {"en": "https://www.internationaldays.co/item-detail/world-idli-day-2022/r/recoHmTibV5xEak19"}},
         {"type": "1D", "start": {"d": 3, "mon": 4}, "titles": {"en": "Army Medical Corps Establishment Day"}},
         {"type": "1D", "start": {"d": 2, "mon": 11}, "titles": {"en": "National Ayurveda Day"}, "urls": {"en": "http://skepdic.com/ayurvedic.html"}},
-        {"type": "1D", "start": {"mon": 12, "d": 16}, "titles": {"en": "Vijay Diwas"}},
+        {"type": "1D", "start": {"mon": 12, "d": 16}, "titles": {"en": "Vijay Diwas"}, urls: {"en": "https://nationaltoday.com/vijay-diwas/"}},
         {"type": "1D", "start": {"d": 23, "mon": 12}, "titles": {"en": "Kisan Diwas"}, urls: {"en": "https://nationaltoday.com/kisan-diwas/"}, first: {era: 1, y: 2001}, inherits: "Farmer Day"},
         {"type": "1D", "start": {"d": 13, "mon": 2}, "titles": {"en": "Sarojini Naidu’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1879}},
         {"type": "1D", "start": {"d": 29, "mon": 5}, "titles": {"en": "International Mount Everest Day"}, "urls": {"en": "https://www.daysoftheyear.com/days/mount-everest-day/"}, first: {"era": 1, "y": 2008}, emoji: "🏔"},
