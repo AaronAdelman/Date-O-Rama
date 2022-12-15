@@ -38,7 +38,7 @@
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Kerala Day"}, notes: {"en": "Kerala Foundation Day\nKerala Piravi"}, first: {era: 1, y: 1956}, urls: {"en": "https://en.wikipedia.org/wiki/Kerala_Day"}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Chhattisgarh Day"}},
         {"type": "1D", "start": {"d": 7, "mon": 12}, "titles": {"en": "Armed Forces Flag Day"}, first: {"era": 1, "y": 1949}, "notes": {"en": "Flag Day of India"}, "urls": {"en": "https://nationaltoday.com/flag-day-of-india/"}, inherits: "Flag Day"},
-        {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa Liberation Day", "pt": "Dia da libertação de Goa", "kok": "गोंय मुक्ति दिस", "hi": "गोवा मुक्ति दिवस"}, notes: {"en": "Goa, Daman and Diu Liberation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Goa_Liberation_Day"}, first: {"era": 1, "y": 1961}},
+        {"type": "1D", "start": {"d": 19, "mon": 12}, "titles": {"en": "Goa Liberation Day", "pt": "Dia da libertação de Goa", "kok": "गोंय मुक्ति दिस", "hi": "गोवा मुक्ति दिवस"}, notes: {"en": "Goa, Daman and Diu Liberation Day"}, urls: {"en": "https://nationaltoday.com/goa-liberation-day/"}, first: {"era": 1, "y": 1961}},
         {"type": "1D", "start": {"mon": 5, "d": 30}, "titles": {"en": "Goa Day"}, first: {era: 1, y: 1987}},
         {"type": "1D", "start": {"mon": 11, "d": 15}, "titles": {"en": "Jharkhand Day"}, first: {era: 1, y: 2000}},
         {"type": "1D", "start": {"mon": 11, "d": 1}, "titles": {"en": "Punjab Day"}, first: {era: 1, y: 1966}},
@@ -175,7 +175,7 @@
         {"type": "1D", "start": {"d": 14, "mon": 12}, "titles": {"en": "National Energy Conservation Day"}, first: {"era": 1, "y": 1991}, "emoji": "⚡️", "urls": {"en": "https://nationaltoday.com/national-energy-conservation-day/"}},
         {"type": "1D", "start": {"d": 18, "mon": 12}, "titles": {"en": "Minorities Rights Day"}},
         {"type": "1D", "start": {"d": 22, "mon": 12}, "titles": {"en": "National Mathematics Day"}, first: {"era": 1, "y": 2012}, "emoji": "🧮", "urls": {"en": "https://nationaltoday.com/mathematics-day/"}},
-        {"type": "1D", "start": {"d": 24, "mon": 12}, inherits: "National Consumer Day", urls: {"en": "https://vikaspedia.in/social-welfare/social-awareness/consumer-education/national-consumer-day"}},
+        {"type": "1D", "start": {"d": 24, "mon": 12}, inherits: "National Consumer Day", urls: {"en": "https://nationaltoday.com/national-consumer-rights-day/"}},
         {"type": "1D", "start": {"d": 25, "mon": 12}, "titles": {"en": "Good Governance Day"}, first: {"era": 1, "y": 2014}, "urls": {"en": "https://en.wikipedia.org/wiki/Good_Governance_Day"}},
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
@@ -188,5 +188,6 @@
         {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/indigenous-faith-day-in-arunachal-pradesh/"}, titles: {"en": "Indigenous Faith Day"}, locations: {"en": "Arunachal Pradesh"}},
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/asom-divas/"}, titles: {"en": "Asom Divas"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/pa-togan-nengminza-sangma/"}, titles: {"en": "Pa Togan Nengminza Sangma"}, first: {era: 1, y: 1872}},
+        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/guru-ghasidas-jayanti-in-chhattisgarh/"}, titles: {"en": "Guru Ghasidas Jayanti"}, locations: {"en": "Chhattisgarh"}},
     ]
 }

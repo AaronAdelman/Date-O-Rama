@@ -6,5 +6,6 @@
     "calendarColor": {"red": 1.00, "green": 0.60, "blue": 0.00},
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-heroes-and-heroines-day/"}, titles: {"en": "National Heroes and Heroines Day"}, first: {era: 1, y: 1967}},
     ]
 }
