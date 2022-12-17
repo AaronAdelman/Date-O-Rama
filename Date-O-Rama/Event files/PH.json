@@ -48,5 +48,6 @@
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/national-volunteers-month/"}, titles: {"en": "National Volunteers Month"}, first: {era: 1, y: 1998}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/the-month-of-overseas-filipinos/"}, titles: {"en": "Month of Overseas Filipinos"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 12, d: 4}, end: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-human-rights-consciousness-week/"}, titles: {"en": "National Human Rights Consciousness Week"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/rizal-day/"}, titles: {"en": "Rizal Day"}, first: {era: 1, y: 1902}},
     ]
 }

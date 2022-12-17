@@ -7,7 +7,7 @@
     "eventSpecifications": [
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 11, "d": 3}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
-        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 12, d: 31}},
+        {"inherits": "National Heroes’ Day", "type": "1D", "start": {"mon": 12, d: 31}, urls: {"en": "https://nationaltoday.com/national-heroes-day-timor-leste/"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1991}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(East_Timor)"}},
         {titles: {"en": "Popular Consultation Day"}, type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/popular-consultation-day/"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/memorial-day-in-east-timor/"}, inherits: "Memorial Day", first: {era: 1, y: 1975}},

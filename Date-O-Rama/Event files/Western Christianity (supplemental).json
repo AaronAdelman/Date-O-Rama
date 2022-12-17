@@ -106,5 +106,7 @@
     {type: "1D", start: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/national-christmas-movie-marathon-day/"}, titles: {"en": "National Christmas Movie Marathon Day"}},
     {type: "1D", start: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/national-pfeffernusse-day/"}, titles: {"en": "National Pfeffernusse Day"}},
     {type: "1D", start: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/last-minute-shoppers-day/"}, titles: {"en": "Last-Minute Shopper's Day"}},
+    {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/still-need-day/"}, titles: {"en": "Still Need To Do Day"}},
+    {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/national-resolution-planning-day/"}, titles: {"en": "National Resolution Planning Day"}},
     ]
 }

@@ -16,7 +16,7 @@
         {"inherits": "Armed Forces Day", "type": "1D", "start": {"mon": 6, "d": 26}, "urls": {"en": "https://nationaltoday.com/azerbaijan-armed-forces-day/"}, first: {"era": 1, "y": 1998}, "titles": {"en": "Azerbaijan Armed Forces Day", "az": "Azərbaycan Respublikasının Silahlı Qüvvələri günü"}},
         {"inherits": "Victory Day", "type": "1D", "start": {"mon": 11, "d": 8}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_Day_(Azerbaijan)"}},
         {"type": "1D", "start": {"mon": 11, "d": 9}, "inherits": "Flag Day", "urls": {"en": "https://en.wikipedia.org/wiki/State_Flag_Day_(Azerbaijan)"}, first: {"era": 1, "y": 2009}},
-        {"titles": {"en": "International Solidarity Day of Azerbaijanis", "az": "Dünya Azərbaycanlılarının Həmrəyliyi günü"}, "type": "1D", "start": {"mon": 12, "d": 31}, "urls": {"en": "https://en.wikipedia.org/wiki/International_Solidarity_Day_of_Azerbaijanis"}, first: {"era": 1, "y": 1991}},
+        {"titles": {"en": "International Solidarity Day of Azerbaijanis", "az": "Dünya Azərbaycanlılarının Həmrəyliyi günü"}, "type": "1D", "start": {"mon": 12, "d": 31}, "urls": {"en": "https://nationaltoday.com/world-azerbaijanis-solidarity-day/"}, first: {"era": 1, "y": 1991}},
         {"inherits": "Memorial Day", "type": "1D", "start": {"mon": 9, "d": 27}, "urls": {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Azerbaijan)"}, "titles": {"en": "Memorial Day in Azerbaijan", "az": "Azərbaycanda Anım Günü"}, first: {"era": 1, "y": 2021}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 3, d: 17}},
