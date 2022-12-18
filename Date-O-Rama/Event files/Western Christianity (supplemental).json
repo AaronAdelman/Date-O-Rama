@@ -24,7 +24,7 @@
         {"titles": {"en": "Make A Gift Day"}, "type": "1D", "start": {"mon": 12, "d": 3}, "urls": {"en": "https://www.daysoftheyear.com/days/make-a-gift-day/"}, "emoji": "🎁"},
         {"titles": {"en": "National Ambrosia Day"}, "type": "1D", "start": {"mon": 12, "d": 12}, "urls": {"en": "https://nationaldaycalendar.com/national-ambrosia-day-december-12/"}},
         {"titles": {"en": "Ugly Christmas Sweater Day"}, "type": "1D", "start": {"mon": 12, "wkd": [6], "wkdRecurrence": 3}, first: {"type": "1D", "era": 1, "y": 2011}, "urls": {"en": "https://www.daysoftheyear.com/days/ugly-christmas-sweater-day/"}, "emoji": "🦺"},
-        {"titles": {"en": "Roast Chestnuts Day"}, "type": "1D", "start": {"mon": 12, "d": 14}, "urls": {"en": "https://www.daysoftheyear.com/days/roast-chestnuts-day/"}, "emoji": "🌰"},
+        {"titles": {"en": "Roast Chestnuts Day", "he": "יום הערמונים הקלויים"}, "type": "1D", "start": {"mon": 12, "d": 14}, "urls": {"en": "https://www.daysoftheyear.com/days/roast-chestnuts-day/", "he": "https://www.daysoftheyear.co.il/2017/12/roast-chestnuts-day.html"}, "emoji": "🌰"},
         {"titles": {"en": "National Re-Gifting Day"}, "type": "1D", "start": {"mon": 12, "wkd": [5], "wkdRecurrence": 3}, "urls": {"en": "https://www.daysoftheyear.com/days/re-gifting-day/"}, "emoji": "🎁"},
         {"titles": {"en": "Humbug Day"}, "type": "1D", "start": {"mon": 12, "d": 21}, "urls": {"en": "https://www.daysoftheyear.com/days/humbug-day/"}, first: {"type": "1D", "era": 1, "y": 2019}, "emoji": "😾"},
         {"titles": {"en": "Ribbon Candy Day"}, "type": "1D", "start": {"mon": 12, "d": 21}, "urls": {"en": "https://www.daysoftheyear.com/days/ribbon-candy-day/"}},
