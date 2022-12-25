@@ -17,5 +17,6 @@
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: -1}, titles: {"en": "October Bank Holiday"}, urls: {"en": "https://nationaltoday.com/october-bank-holiday/"}, first: {"era": 1, "y": 1977}},
         {"inherits": "St. Stephen’s Day", "type": "1D", "start": {"mon": 12, "d": 26}},
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/constitution-of-ireland/"}, titles: {"en": "Constitution of Ireland"}, first: {era: 1, y: 1937}},
+        {type: "1M", start: {mon: 1}, inherits: "START Child Health Campaign", first: {era: 1, y: 2017}},
     ]
 }
