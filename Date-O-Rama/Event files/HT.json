@@ -8,7 +8,7 @@
         {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": -1}},
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 12}},
-        {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 1}, first: {era: 1, y: 1804}},
+        {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 1}, first: {era: 1, y: 1804}, urls: {"en": "https://nationaltoday.com/haiti-independence-day/"}},
         {type: "1D", start: {mon: 11, d: 18}, inherits: "Army Day", titles: {"fr": "Le Jour de la Battaille des Vertières", "en": "Battle of Vertières Day"}, urls: {"en": "https://nationaltoday.com/battle-of-vertieres-day/"}},
         {type: "1D", start: {mon: 10, d: 17}, titles: {"en": "Dessalines Day"}, urls: {"en": "https://nationaltoday.com/dessalines-day/"}, first: {era: 1, y: 1806}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/army-abolition-day/"}, inherits: "Discovery Day"},

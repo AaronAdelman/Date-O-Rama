@@ -49,5 +49,6 @@
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/the-month-of-overseas-filipinos/"}, titles: {"en": "Month of Overseas Filipinos"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 12, d: 4}, end: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-human-rights-consciousness-week/"}, titles: {"en": "National Human Rights Consciousness Week"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/rizal-day/"}, titles: {"en": "Rizal Day"}, first: {era: 1, y: 1902}},
+        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 7}, urls: {"en": "https://nationaltoday.com/national-time-consciousness-week/"}, titles: {"en": "National Time Consciousness Week"}, first: {era: 1, y: 2013}, emoji: "⏰"},
     ]
 }
