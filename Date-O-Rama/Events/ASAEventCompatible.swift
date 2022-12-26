@@ -280,12 +280,26 @@ extension ASAEventCompatible {
     } // var currentUser: EKParticipant?
     
     var symbol: String? {
+        var rawSymbol: String?
         let emoji: String? = self.emoji
         if emoji != nil {
-            return emoji!
+            rawSymbol = emoji!
+        } else {
+            rawSymbol = self.fileEmoji
         }
         
-        return self.fileEmoji
+        if rawSymbol != nil {
+            let count: Int = rawSymbol!.count
+            if count <= 4 {
+                return rawSymbol
+            } else {
+                let subrawSymbol: String = String(rawSymbol!.prefix(3))
+                let extraCount = count - 3
+                rawSymbol = String.localizedStringWithFormat("%@+%d", subrawSymbol, extraCount)
+            }
+        }
+        
+        return rawSymbol
     } // var emoji
     
     var duration: TimeInterval {
