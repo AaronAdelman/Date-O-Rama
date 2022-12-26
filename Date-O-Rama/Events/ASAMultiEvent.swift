@@ -123,7 +123,14 @@ struct ASAMultiEvent:  ASAEventCompatible {
     }
     
     var calendarTitleWithoutLocation: String {
-        return self.events.map { $0.calendarTitleWithoutLocation }.asFormattedList ?? ""
+        let numberOfEvents = self.events.count
+        if numberOfEvents >= 4 {
+            let firstEventTitle = self.events[0].calendarTitleWithoutLocation
+            let numberOfExtraEvents = numberOfEvents - 1
+            return String.localizedStringWithFormat("%@ + %d", firstEventTitle, numberOfExtraEvents)
+        } else {
+            return self.events.map { $0.calendarTitleWithoutLocation }.asFormattedList ?? ""
+        }
     }
     
     var calendarCode: ASACalendarCode {

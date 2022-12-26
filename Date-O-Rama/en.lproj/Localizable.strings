@@ -358,4 +358,4 @@
 "Reorder"         = "Reorder";
 "Done Reordering" = "Done Reordering";
 
-"%@+%d" = "%@+%d";
+"%@ + %d" = "%@ + %d";

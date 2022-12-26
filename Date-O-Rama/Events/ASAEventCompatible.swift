@@ -295,7 +295,7 @@ extension ASAEventCompatible {
             } else {
                 let subrawSymbol: String = String(rawSymbol!.prefix(3))
                 let extraCount = count - 3
-                rawSymbol = String.localizedStringWithFormat("%@+%d", subrawSymbol, extraCount)
+                rawSymbol = String.localizedStringWithFormat("%@ + %d", subrawSymbol, extraCount)
             }
         }
         
