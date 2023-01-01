@@ -50,5 +50,7 @@
         {type: "1Y", start: {era: 1, y: 1985}, titles: {"en": "European Year of Music"}, emoji: "🎶"},
         {type: "1Y", start: {era: 1, y: 1984}, titles: {"en": "European Year for a People’s Europe"}},
         {type: "1Y", start: {era: 1, y: 1983}, titles: {"en": "European Year of SMEs and the Craft Industry"}, emoji: "🧶"},
+        
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/euro-day/", "he": "https://www.daysoftheyear.co.il/2019/01/euro-day.html"}, titles: {"en": "Euro Day", "he": "יום האירו"}, emoji: "💶"},
     ]
 }
