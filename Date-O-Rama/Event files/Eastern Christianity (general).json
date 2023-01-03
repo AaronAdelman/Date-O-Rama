@@ -47,7 +47,7 @@
         {"inherits": "Nativity of Mary", "type": "1D", "start": {"mon": 9, "d": 8}},
         {"inherits": "Feast of the Exaltation of the Holy Cross", "type": "1D", "start": {"mon": 9, "d": 14}},
         {"inherits": "Presentation of the Blessed Virgin Mary", "type": "1D", "start": {"mon": 11, "d": 21}},
-        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}},
+        {"inherits": "Christmas Day", "type": "1D", "start": {"mon": 12, "d": 25}, urls: {"en": "https://nationaltoday.com/orthodox-christmas-day/"}},
         {"inherits": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}},
         {"inherits": "Candlemas", "type": "1D", "start": {"mon": 2, "d": 2}},
         {"inherits": "Feast of the Annunciation", "type": "1D", "start": {"mon": 3, "d": 25}},

@@ -17,7 +17,7 @@
         {"inherits": "Christmas Eve", "type": "1D", "start": {"mon": 12, "d": 24}},
         {"inherits": "Memorial Day", "type": "1D", "start": {"mon": 5, "wkd": [2], "wkdRecurrence": -1}, "urls": {"en": "https://nationaldaycalendar.com/memorial-day-last-monday-in-may/"}, first: {"era": 1, "y": 1971}},
         {"inherits": "Labor Day", "type": "1D", "start": {"mon": 9, "wkd": [2], "wkdRecurrence": 1}, "urls": {"en": "https://en.wikipedia.org/wiki/Labor_Day"}},
-        {"inherits": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}},
+        {"inherits": "Epiphany", "type": "1D", "start": {"mon": 1, "d": 6}, urls: {"en": "https://nationaltoday.com/three-kings-day/"}},
         {"inherits": "Shrove Tuesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -47}},
         {"inherits": "Ash Wednesday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -46}},
         {"inherits": "Palm Sunday", "type": "1D", "start": {"Easter": "Easter", "offsetD": -7}},
@@ -254,6 +254,7 @@
         {type: "1D", start: {mon: 12, d: 15}, urls: {"en": "https://nationaltoday.com/bill-rights-day/"}, titles: {"en": "Bill of Rights Day"}, first: {era: 1, y: 1952}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-repeal-day/", "he": "https://www.daysoftheyear.co.il/2021/12/repealday.html"}, titles: {"en": "National Repeal Day", "he": "יום הביטול"}},
         {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/national-write-to-congress-day/"}, titles: {"en": "National Write to Congress Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/carver-day/"}, titles: {"en": "Carver Day"}, first: {era: 1, y: 1943}},
 
         {"type": "1D", "start": {"d": 1, "mon": 2}, "titles": {"en": "National Texas Day"}, "urls": {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {"type": "1D", "start": {"mon": 3, "d": 1}, "titles": {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, "urls": {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
