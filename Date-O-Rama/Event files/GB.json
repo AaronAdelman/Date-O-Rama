@@ -68,5 +68,7 @@
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/lancashire-day/"}, titles: {"en": "Lancashire Day"}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/hogmanay/"}, titles: {"en": "Hogmanay"}},
         {type: "1M", start: {mon: 1}, inherits: "START Child Health Campaign", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 1, d: 7, thruD: 13, wkd: [2]}, urls: {"en": "https://nationaltoday.com/plough-monday/"}, titles: {"en": "Plough Monday"}},
+        {type: "1D", start: {mon: 1, d: 7, thruD: 13, wkd: [1]}, urls: {"en": "https://en.wikipedia.org/wiki/Plough_Sunday"}, titles: {"en": "Plough Sunday"}},
     ]
 }

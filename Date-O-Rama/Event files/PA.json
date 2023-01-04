@@ -9,7 +9,7 @@
         {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 12, "d": 8}, urls: {"en": "https://nationaltoday.com/panama-mothers-day/"}, first: {era: 1, y: 1930}},
         {"type": "1D", "start": {"mon": 1, "d": 26}, inherits: "Engineer’s Day"},
         {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 7, wkd: [1], wkdRecurrence: 3}},
-        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 1, "d": 9}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Panama)"}},
+        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 1, "d": 9}, urls: {"en": "https://nationaltoday.com/panamas-martyrs-day/"}},
         {inherits: "Independence Day", type: "1D", start: {d: 28, mon: 11}, first: {era: 1, y: 1821}},
         {inherits: "Independence Day", type: "1D", start: {d: 3, mon: 11}, first: {era: 1, y: 1903}, titles: {"en": "Separation Day"}},
         {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Foundation of Old Panama City"}, urls: {"en": "https://nationaltoday.com/foundation-of-old-panama-city/"}, first: {era: 1, y: 1519}},
