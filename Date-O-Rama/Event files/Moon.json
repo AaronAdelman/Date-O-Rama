@@ -1,15 +1,15 @@
 {
-    "titles": {"en": "Moon", "he": "ירח"},
+    titles: {"en": "Moon", "he": "ירח"},
     "defaultLocale": "en",
     "calendarCode": "xloc*",
     "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
     "eventSpecifications": [
-        {"titles": {"en": "New Moon", "he": "מולד הלבנה"}, "type": "pt", "start": {"zmoPhase": "new"}, "emoji": "🌑"},
-        {"titles": {"en": "First Quarter", "he": "רבע ראשון"}, "type": "pt", "start": {"zmoPhase": "1stQuarter"}, "emoji": "🌓"},
-        {"titles": {"en": "Full Moon", "he": "ירח מלא"}, "type": "pt", "start": {"zmoPhase": "full"}, "emoji": "🌕"},
-        {"titles": {"en": "Last Quarter", "he": "רבע אחרון"}, "type": "pt", "start": {"zmoPhase": "lastQuarter"}, "emoji": "🌗"},
-        {"titles": {"en": "Moonrise", "he": "זריחת הירח"}, "type": "pt", "start": {"ptType": "rise", "body": "zmo"}, "emoji": "☽↑"},
-        {"titles": {"en": "Moonset", "he": "שקיעת הירח"}, "type": "pt", "start": {"ptType": "set", "body": "zmo"}, "emoji": "☽↓"},
+        {titles: {"en": "New Moon", "he": "מולד הלבנה"}, "type": "pt", "start": {"zmoPhase": "new"}, "emoji": "🌑"},
+        {titles: {"en": "First Quarter", "he": "רבע ראשון"}, "type": "pt", "start": {"zmoPhase": "1stQuarter"}, "emoji": "🌓"},
+        {titles: {"en": "Full Moon", "he": "ירח מלא"}, "type": "pt", "start": {"zmoPhase": "full"}, "emoji": "🌕"},
+        {titles: {"en": "Last Quarter", "he": "רבע אחרון"}, "type": "pt", "start": {"zmoPhase": "lastQuarter"}, "emoji": "🌗"},
+        {titles: {"en": "Moonrise", "he": "זריחת הירח"}, "type": "pt", "start": {"ptType": "rise", "body": "zmo"}, "emoji": "☽↑"},
+        {titles: {"en": "Moonset", "he": "שקיעת הירח"}, "type": "pt", "start": {"ptType": "set", "body": "zmo"}, "emoji": "☽↓"},
     ]
 }
 

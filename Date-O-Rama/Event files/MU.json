@@ -1,14 +1,14 @@
 {
-    "titles": {"*": "MU"},
+    titles: {"*": "MU"},
     "//": "Mauritius",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.82, "blue": 0.00},
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 12, "mon": 3}, "titles": {"en": "Mauritius Day"}, first: {era: 1, y: 1968}, inherits: "Independence Day"},
-        {"inherits": "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
+        {"type": "1D", "start": {"d": 12, "mon": 3}, titles: {"en": "Mauritius Day"}, first: {era: 1, y: 1968}, inherits: "Independence Day"},
+        {inherits: "International Francophonie Day", "type": "1D", "start": {"d": 20, "mon": 3}, first: {"era": 1, "y": 1988}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
         {"type": "1D", "start": {"mon": 9, "d": 13}, inherits: "Engineer’s Day"},
         {type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/arrival-of-indentured-labourers/"}, titles: {"en": "Arrival of Indentured Labourers"}},
     ]

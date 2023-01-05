@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "IR"},
+    titles: {"*": "IR"},
     "//": "Iran",
     "defaultLocale": "en",
     "calendarCode": "gre",

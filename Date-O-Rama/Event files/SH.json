@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "SH"},
+    titles: {"*": "SH"},
     "//": "Saint Helena, Ascension and Tristan da Cunha",
     "defaultLocale": "en",
     "calendarCode": "gre",

@@ -1,10 +1,10 @@
 {
-    "titles": {"en": "Shia (Gregorian)", "he": "שיעה (גרגוריאני)"},
+    titles: {"en": "Shia (Gregorian)", "he": "שיעה (גרגוריאני)"},
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.3, "green": 0.7, "blue": 0.3},
     "eventSpecifications": [
-        {"titles": {"en": "Imamat Day", "ur": "یوم الامامہ", "bn": "ইমামত দিবস"}, "type": "1D", "start": {"mon": 7, "d": 11}, "urls": {"en": "https://en.wikipedia.org/wiki/Imamat_Day"},
+        {titles: {"en": "Imamat Day", "ur": "یوم الامامہ", "bn": "ইমামত দিবস"}, "type": "1D", "start": {"mon": 7, "d": 11}, "urls": {"en": "https://en.wikipedia.org/wiki/Imamat_Day"},
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "RO"},
+    titles: {"*": "RO"},
     "//": "Romania",
     "defaultLocale": "en",
     "calendarCode": "jul",

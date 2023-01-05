@@ -1,11 +1,11 @@
 {
-    "titles": {"*": "IQ"},
+    titles: {"*": "IQ"},
     "//": "Iraq",
     "defaultLocale": "en",
     "calendarCode": "hiq*",
     "calendarColor": {"red": 0.89, "green": 0.00, "blue": 0.17},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 7, "d": 13}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 7, "d": 13}},
     ]
 }
 

@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "MF"},
+    titles: {"*": "MF"},
     "//": "St. Martin",
     "defaultLocale": "en",
     "calendarCode": "gre",

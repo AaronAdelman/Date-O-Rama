@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "PF"},
+    titles: {"*": "PF"},
     "//": "French Polynesia",
     "defaultLocale": "en",
     "calendarCode": "gre",

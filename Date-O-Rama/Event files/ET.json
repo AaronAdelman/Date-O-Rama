@@ -1,13 +1,13 @@
 {
-    "titles": {"*": "ET"},
+    titles: {"*": "ET"},
     "//": "Ethiopia",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.06, "green": 0.28, "blue": 0.69},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
  ]
 }

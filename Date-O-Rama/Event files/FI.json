@@ -1,14 +1,14 @@
 {
-    "titles": {"*": "FI"},
+    titles: {"*": "FI"},
     "//": "Finland",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.45, "blue": 0.81},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Midsummer Day", "type": "1D", "start": {"mon": 6, "d": 25}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}, titles: {"en": "Day of Children’s Rights"}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 11, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Midsummer Day", "type": "1D", "start": {"mon": 6, "d": 25}},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}, titles: {"en": "Day of Children’s Rights"}},
         {inherits: "Independence Day", type: "1D", start: {d: 6, mon: 12}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/independence-day-finland/", "he": "https://www.daysoftheyear.co.il/2021/12/finland-independence-day.html"}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
 ]

@@ -1,11 +1,11 @@
 {
-    "titles": {"*": "SZ"},
+    titles: {"*": "SZ"},
     "//": "Eswatini, AKA Swaziland",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.24, "green": 0.52, "blue": 0.69},
     "eventSpecifications": [
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 9, "d": 6}, urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}},
+        {inherits: "Independence Day", "type": "1D", "start": {"mon": 9, "d": 6}, urls: {"en": "https://nationaltoday.com/swaziland-independence-day/"}, first: {era: 1, y: 1968}},
 
     ]
 }

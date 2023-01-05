@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "GS"},
+    titles: {"*": "GS"},
     "//": "South Georgia and the South Sandwich Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",

@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "VA"},
+    titles: {"*": "VA"},
     "//": "Holy See, AKA Vatican City",
     "defaultLocale": "en",
     "calendarCode": "gre",

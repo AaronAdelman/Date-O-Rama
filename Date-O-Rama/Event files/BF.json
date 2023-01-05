@@ -1,16 +1,16 @@
 {
-    "titles": {"*": "BF"},
+    titles: {"*": "BF"},
     "//": "Burkina Faso",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
-        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 10, "d": 31}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {inherits: "Martyrs’ Day", "type": "1D", "start": {"mon": 10, "d": 31}},
         {inherits: "Proclamation of Independence Day", "type": "1D", "start": {"mon": 12, "d": 11}, first: {"era": 1, "y": 1958}, urls: {"en": "https://nationaltoday.com/burkina-faso-republic-day/"}, notes: {"en": "Burkina Faso Republic Day"}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 8, "d": 5}, first: {"era": 1, "y": 1960}, urls: {"en": "https://nationaltoday.com/burkina-faso-independence-day/"}},
+        {inherits: "Independence Day", "type": "1D", "start": {"mon": 8, "d": 5}, first: {"era": 1, "y": 1960}, urls: {"en": "https://nationaltoday.com/burkina-faso-independence-day/"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 3}, first: {era: 1, y: 1966}},
-        {"inherits": "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {inherits: "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
     ]
 }

@@ -1,10 +1,10 @@
 {
-    "titles": {"*": "WF"},
+    titles: {"*": "WF"},
     "//": "Wallis and Futuna",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.90, "green": 0.25, "blue": 0.25},
     "eventSpecifications": [
-        {"inherits": "Territory Day", "type": "1D", "start": {"mon": 7, "d": 29}, "urls": {"en": "https://nationaltoday.com/wallis-and-futuna-territory-day/"}, first: {"era": 1, "y": 1961}},
+        {inherits: "Territory Day", "type": "1D", "start": {"mon": 7, "d": 29}, "urls": {"en": "https://nationaltoday.com/wallis-and-futuna-territory-day/"}, first: {"era": 1, "y": 1961}},
     ]
 }

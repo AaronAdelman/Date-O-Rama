@@ -1,20 +1,20 @@
 {
-    "titles": {"*": "BH"},
+    titles: {"*": "BH"},
     "//": "Bahrain",
     "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"inherits": "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
-        {"inherits": "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
-        {"inherits": "National Day", "type": "1D", "start": {"mon": 12, "d": 16}, urls: {"en": "https://nationaltoday.com/bahrain-national-day/"}},
+        {inherits: "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
+        {inherits: "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
+        {inherits: "National Day", "type": "1D", "start": {"mon": 12, "d": 16}, urls: {"en": "https://nationaltoday.com/bahrain-national-day/"}},
         {"type": "1D", "start": {"mon": 12, "d": 17}, inherits: "Accession Day"},
 
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
         {"type": "1D", "start": {"mon": 7, "d": 1}, inherits: "Engineer’s Day"},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 12, "d": 16}, first: {"era": 1, "y": 1971}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Bahrain)"}},
+        {inherits: "Independence Day", "type": "1D", "start": {"mon": 12, "d": 16}, first: {"era": 1, "y": 1971}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Bahrain)"}},
         {type: "1D", start: {mon: 2, d: 18}, inherits: "Navy Day", titles: {"en": "Royal Bahrain Naval Force Day"}},
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "HM"},
+    titles: {"*": "HM"},
     "//": "Heard Island and McDonald Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",

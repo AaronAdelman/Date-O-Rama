@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "RE"},
+    titles: {"*": "RE"},
     "//": "Réunion",
     "defaultLocale": "en",
     "calendarCode": "gre",

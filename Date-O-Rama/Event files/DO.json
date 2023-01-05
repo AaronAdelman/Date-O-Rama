@@ -1,16 +1,16 @@
 {
-    "titles": {"*": "DO"},
+    titles: {"*": "DO"},
     "//": "Dominican Republic",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.18, "blue": 0.38},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": -1}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 7, "wkd": [1], "wkdRecurrence": -1}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": -1}},
         {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 27}, first: {era: 1, y: 1844}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 25}},
         {"type": "1D", "start": {"mon": 2, d: 14}, inherits: "Friendship Day"},
-        {"titles": {"en": "Our Lady of Mercedes Day"}, "type": "1D", "start": {"mon": 9, "d": 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}},
+        {titles: {"en": "Our Lady of Mercedes Day"}, "type": "1D", "start": {"mon": 9, "d": 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, inherits: "Constitution Day"},
         {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-larimar-day/"}, titles: {"en": "National Larimar Day"}, first: {era: 1, y: 2018}},
     ]

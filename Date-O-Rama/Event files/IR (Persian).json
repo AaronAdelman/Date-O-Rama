@@ -1,22 +1,22 @@
 {
-    "titles": {"*": "IR"},
+    titles: {"*": "IR"},
     "//": "Iran",
     "TODO": "Muslim holidays?",
     "defaultLocale": "en",
     "calendarCode": "his",
     "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
     "eventSpecifications": [
-        {"inherits": "Nowruz", "type": "nD", "start": {"mon": 1, "d": 1}, "end": {"mon": 1, "d": 4}},
-        {"inherits": "Republic Day", "type": "1D", "start": {"mon": 1, "d": 12}, "urls": {"en": "https://en.wikipedia.org/wiki/Iranian_Islamic_Republic_Day"}, "titles": {"en": "Islamic Republic Day", "fa": "روز جمهوری اسلامی"}, first: {era: 1, y: 1979}},
-        {"type": "1D", "start": {"mon": 1, "d": 13}, "urls": {"en": "https://en.wikipedia.org/wiki/Sizdah_Be-dar"}, "titles": {"en": "Sizdah Bedar", "fa": "سیزده بدر"}},
-        {"type": "1D", "start": {"mon": 3, "d": 14}, "titles": {"en": "Death of Khomeini", "fa": "رحلت آیت الله خمینی"}, "inherits": "*Death Anniv*"},
-        {"type": "1D", "start": {"mon": 3, "d": 15}, "titles": {"en": "Revolt of Khordad 15", "fa": "قیام ۱۵ خرداد"}},
-        {"type": "1D", "start": {"mon": 11, "d": 22}, "titles": {"en": "Anniversary of Islamic Revolution", "fa": "انقلاب اسلامی پنجاه و هفت"}, "urls": {"en": "https://en.wikipedia.org/wiki/Anniversary_of_the_Iranian_Revolution"}},
-        {"type": "1D", "start": {"mon": 12, "d": 29}, "titles": {"en": "Nationalization of the Iranian oil industry", "fa": "ملی شدن صنعت نفت"}, "urls": {"en": "https://en.wikipedia.org/wiki/Nationalization_of_the_Iranian_oil_industry"}},
+        {inherits: "Nowruz", "type": "nD", "start": {"mon": 1, "d": 1}, "end": {"mon": 1, "d": 4}},
+        {inherits: "Republic Day", "type": "1D", "start": {"mon": 1, "d": 12}, "urls": {"en": "https://en.wikipedia.org/wiki/Iranian_Islamic_Republic_Day"}, titles: {"en": "Islamic Republic Day", "fa": "روز جمهوری اسلامی"}, first: {era: 1, y: 1979}},
+        {"type": "1D", "start": {"mon": 1, "d": 13}, "urls": {"en": "https://en.wikipedia.org/wiki/Sizdah_Be-dar"}, titles: {"en": "Sizdah Bedar", "fa": "سیزده بدر"}},
+        {"type": "1D", "start": {"mon": 3, "d": 14}, titles: {"en": "Death of Khomeini", "fa": "رحلت آیت الله خمینی"}, inherits: "*Death Anniv*"},
+        {"type": "1D", "start": {"mon": 3, "d": 15}, titles: {"en": "Revolt of Khordad 15", "fa": "قیام ۱۵ خرداد"}},
+        {"type": "1D", "start": {"mon": 11, "d": 22}, titles: {"en": "Anniversary of Islamic Revolution", "fa": "انقلاب اسلامی پنجاه و هفت"}, "urls": {"en": "https://en.wikipedia.org/wiki/Anniversary_of_the_Iranian_Revolution"}},
+        {"type": "1D", "start": {"mon": 12, "d": 29}, titles: {"en": "Nationalization of the Iranian oil industry", "fa": "ملی شدن صنعت نفت"}, "urls": {"en": "https://en.wikipedia.org/wiki/Nationalization_of_the_Iranian_oil_industry"}},
 
-        {"type": "1D", "start": {"mon": 9, "d": 16}, "titles": {"en": "Student Day", "fa": "روز دانشجو"}, "urls": {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {"era": 0, "y": 1332}, "emoji": "👨‍🎓👩‍🎓"},
-        {"type": "1D", "start": {"mon": 8, "d": 13}, "titles": {"en": "Pupil Day", "fa": "روز دانش آموز"}, "urls": {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {"era": 0, "y": 1357}, "emoji": "👨‍🎓👩‍🎓"},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 10, d: 8}},
+        {"type": "1D", "start": {"mon": 9, "d": 16}, titles: {"en": "Student Day", "fa": "روز دانشجو"}, "urls": {"en": "https://en.wikipedia.org/wiki/Student_Day_(Iran)"}, first: {"era": 0, "y": 1332}, "emoji": "👨‍🎓👩‍🎓"},
+        {"type": "1D", "start": {"mon": 8, "d": 13}, titles: {"en": "Pupil Day", "fa": "روز دانش آموز"}, "urls": {"en": "https://en.wikipedia.org/wiki/Pupil_Day_(Iran)"}, first: {"era": 0, "y": 1357}, "emoji": "👨‍🎓👩‍🎓"},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 10, d: 8}},
     ]
 }
 

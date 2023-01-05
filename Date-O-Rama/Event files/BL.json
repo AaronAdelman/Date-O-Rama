@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "BL"},
+    titles: {"*": "BL"},
     "//": "Saint Barthélemy",
     "defaultLocale": "en",
     "calendarCode": "gre",

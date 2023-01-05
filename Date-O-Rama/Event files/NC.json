@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "NC"},
+    titles: {"*": "NC"},
     "//": "New Caledonia",
     "defaultLocale": "en",
     "calendarCode": "gre",

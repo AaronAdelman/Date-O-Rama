@@ -1,12 +1,12 @@
 {
-    "titles": {"*": "MW"},
+    titles: {"*": "MW"},
     "//": "Malawi",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.81, "green": 0.07, "blue": 0.15},
     "eventSpecifications": [
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 15}, urls: {"en": "https://nationaltoday.com/mothers-day-in-malawi/"}},
-        {"inherits": "Independence Day", "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/malawi-independence-day/"}, first: {"era": 1, "y": 1964}},
-        {"inherits": "Martyrs’ Day", "type": "1D", "start": {"mon": 3, "d": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 10, "d": 15}, urls: {"en": "https://nationaltoday.com/mothers-day-in-malawi/"}},
+        {inherits: "Independence Day", "type": "1D", "start": {"mon": 7, "d": 6}, "urls": {"en": "https://nationaltoday.com/malawi-independence-day/"}, first: {"era": 1, "y": 1964}},
+        {inherits: "Martyrs’ Day", "type": "1D", "start": {"mon": 3, "d": 3}},
     ]
 }

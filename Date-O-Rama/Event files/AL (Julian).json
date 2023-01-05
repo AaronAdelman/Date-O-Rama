@@ -1,10 +1,10 @@
 {
-    "titles": {"*": "AL"},
+    titles: {"*": "AL"},
     "//": "Albania",
     "defaultLocale": "en",
     "calendarCode": "jul",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {"inherits": "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
+        {inherits: "Easter Sunday", "type": "1D", "start": {"Easter": "Easter"}},
     ]
 }

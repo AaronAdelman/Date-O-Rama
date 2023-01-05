@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "GF"},
+    titles: {"*": "GF"},
     "//": "French Guiana",
     "defaultLocale": "en",
     "calendarCode": "gre",

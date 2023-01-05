@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "PM"},
+    titles: {"*": "PM"},
     "//": "St. Pierre and Miquelon",
     "defaultLocale": "en",
     "calendarCode": "gre",

@@ -1,21 +1,21 @@
 {
-    "titles": {"en": "Jewish zodiac", "he": "גלגל המזלות יהודי"},
+    titles: {"en": "Jewish zodiac", "he": "גלגל המזלות יהודי"},
     "defaultLocale": "he",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.5, "green": 0.5, "blue": 0.5},
     "eventSpecifications": [
-    {"inherits": "Aries", "type": "1M", "start": {"mon": 8}},
-    {"inherits": "Taurus", "type": "1M", "start": {"mon": 9}},
-    {"inherits": "Gemini", "type": "1M", "start": {"mon": 10}},
-    {"inherits": "Cancer", "type": "1M", "start": {"mon": 11}},
-    {"inherits": "Leo", "type": "1M", "start": {"mon": 12}},
-    {"inherits": "Virgo", "type": "1M", "start": {"mon": 13}},
-    {"inherits": "Libra", "type": "1M", "start": {"mon": 1}},
-    {"inherits": "Scorpio", "type": "1M", "start": {"mon": 2}},
-    {"inherits": "Sagittarius", "type": "1M", "start": {"mon": 3}},
-    {"inherits": "Capricorn", "type": "1M", "start": {"mon": 4}},
-    {"inherits": "Aquarius", "type": "1M", "start": {"mon": 5}},
-    {"inherits": "Pisces", "type": "1M", "start": {"mon": 7, "yLengths": [353, 354, 355]}},
-    {"inherits": "Pisces", "type": "nM", "start": {"mon": 6, "yLengths": [383, 384, 385]}, "end": {"mon": 7}}
+    {inherits: "Aries", "type": "1M", "start": {"mon": 8}},
+    {inherits: "Taurus", "type": "1M", "start": {"mon": 9}},
+    {inherits: "Gemini", "type": "1M", "start": {"mon": 10}},
+    {inherits: "Cancer", "type": "1M", "start": {"mon": 11}},
+    {inherits: "Leo", "type": "1M", "start": {"mon": 12}},
+    {inherits: "Virgo", "type": "1M", "start": {"mon": 13}},
+    {inherits: "Libra", "type": "1M", "start": {"mon": 1}},
+    {inherits: "Scorpio", "type": "1M", "start": {"mon": 2}},
+    {inherits: "Sagittarius", "type": "1M", "start": {"mon": 3}},
+    {inherits: "Capricorn", "type": "1M", "start": {"mon": 4}},
+    {inherits: "Aquarius", "type": "1M", "start": {"mon": 5}},
+    {inherits: "Pisces", "type": "1M", "start": {"mon": 7, "yLengths": [353, 354, 355]}},
+    {inherits: "Pisces", "type": "nM", "start": {"mon": 6, "yLengths": [383, 384, 385]}, "end": {"mon": 7}}
     ]
 }

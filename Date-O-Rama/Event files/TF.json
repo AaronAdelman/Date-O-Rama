@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "TF"},
+    titles: {"*": "TF"},
     "//": "French Southern Territories",
     "defaultLocale": "en",
     "calendarCode": "gre",

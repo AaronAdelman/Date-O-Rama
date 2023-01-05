@@ -1,9 +1,9 @@
 {
-    "titles": {"*": "US"},
+    titles: {"*": "US"},
     "defaultLocale": "en",
     "calendarCode": "heb*",
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
     "eventSpecifications": [
-        {"titles": {"en": "National Education and Sharing Day"}, "type": "1D", "start": {"mon": 8, "d": 11}, "urls": {"en": "https://nationaldaycalendar.com/national-education-and-sharing-day-changes-annually/"}, first: {"era": 0, "y": 5783}},
+        {titles: {"en": "National Education and Sharing Day"}, "type": "1D", "start": {"mon": 8, "d": 11}, "urls": {"en": "https://nationaldaycalendar.com/national-education-and-sharing-day-changes-annually/"}, first: {"era": 0, "y": 5783}},
     ]
 }

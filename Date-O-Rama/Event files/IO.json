@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "IO"},
+    titles: {"*": "IO"},
     "//": "British Indian Ocean Territory",
     "defaultLocale": "en",
     "calendarCode": "gre",

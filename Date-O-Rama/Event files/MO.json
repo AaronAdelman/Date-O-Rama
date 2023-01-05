@@ -1,13 +1,13 @@
 {
-    "titles": {"*": "MO"},
+    titles: {"*": "MO"},
     "//": "Macau, AKA Macao",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.06, "green": 0.46, "blue": 0.38},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {type: "1D", start: {mon: 12, d: 20}, urls: {"en": "https://nationaltoday.com/macao-sare-day/"}, titles: {"en": "Macao SARE Day", "pt": "Dia Comemorativo do estabelecimento da Região Administrativa Especial de Macau"}, first: {era: 1, y: 1999}},
    ]
 }

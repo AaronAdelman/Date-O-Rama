@@ -1,12 +1,12 @@
 {
-    "titles": {"*": "AW"},
+    titles: {"*": "AW"},
     "//": "Aruba",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 0.25, "green": 0.56, "blue": 0.87},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
    ]
 }
 

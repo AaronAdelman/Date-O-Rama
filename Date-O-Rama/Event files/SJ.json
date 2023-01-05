@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "SJ"},
+    titles: {"*": "SJ"},
     "//": "Svalbard and Jan Mayen",
     "defaultLocale": "en",
     "calendarCode": "gre",

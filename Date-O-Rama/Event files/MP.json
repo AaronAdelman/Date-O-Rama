@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "MP"},
+    titles: {"*": "MP"},
     "//": "Northern Mariana Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",

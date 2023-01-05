@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "YT"},
+    titles: {"*": "YT"},
     "//": "Mayotte",
     "defaultLocale": "en",
     "calendarCode": "gre",

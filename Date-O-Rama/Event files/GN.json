@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "GN"},
+    titles: {"*": "GN"},
     "//": "Guinea",
     "defaultLocale": "en",
     "calendarCode": "gre",

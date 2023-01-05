@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "AX"},
+    titles: {"*": "AX"},
     "//": "Åland Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",

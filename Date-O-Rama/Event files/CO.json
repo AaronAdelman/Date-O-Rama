@@ -1,19 +1,19 @@
 {
-    "titles": {"*": "CO"},
+    titles: {"*": "CO"},
     "//": "Colombia",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.80, "blue": 0.00},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-       {"titles": {"en": "Feast of the Sacred Heart (observed)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 71}, "emoji": "❤️", "urls": {"en": "https://nationaltoday.com/sacred-heart/"}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+       {titles: {"en": "Feast of the Sacred Heart (observed)"}, "type": "1D", "start": {"Easter": "Easter", "offsetD": 71}, "emoji": "❤️", "urls": {"en": "https://nationaltoday.com/sacred-heart/"}},
        {"type": "1D", "start": {"mon": 5, "d": 29}, inherits: "Engineer’s Day"},
-       {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 4, wkd: [7], wkdRecurrence: -1}, first: {era: 1, y: 2001}},
+       {inherits: "Children’s Day", "type": "1D", "start": {"mon": 4, wkd: [7], wkdRecurrence: -1}, first: {era: 1, y: 2001}},
        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 20}, first: {era: 1, y: 1810}},
        {type: "1D", start: {mon: 7, d: 24}, inherits: "Navy Day"},
        {type: "1D", start: {mon: 8, d: 7}, titles: {"en": "Battle of Boyacá Day"}, urls: {"en": "https://nationaltoday.com/battle-of-boyaca/"}, first: {era: 1, y: 1819}},
        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 3}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/day-of-the-races/"}},
-       {"inherits": "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/all-saints-day-colombia/"}},
+       {inherits: "All Saints’ Day", "type": "1D", "start": {"mon": 11, "d": 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/all-saints-day-colombia/"}},
   ]
 }

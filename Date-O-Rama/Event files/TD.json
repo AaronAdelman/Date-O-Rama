@@ -1,13 +1,13 @@
 {
-    "titles": {"*": "TD"},
+    titles: {"*": "TD"},
     "//": "Chad",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.80, "blue": 0.00},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 12, d: 25}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 12, d: 25}},
         {inherits: "Republic Day", type: "1D", start: {mon: 11, d: 28}, first: {era: 1, y: 1958}},
         {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 11}, first: {era: 1, y: 1960}, urls: {"en": "https://nationaltoday.com/chad-independence-day/"}},
         {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/freedom-and-democracy-day-in-chad/"}, titles: {"en": "Freedom and Democracy Day"}, first: {era: 1, y: 1990}},

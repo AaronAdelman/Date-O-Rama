@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "TC"},
+    titles: {"*": "TC"},
     "//": "Turks and Caicos Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",

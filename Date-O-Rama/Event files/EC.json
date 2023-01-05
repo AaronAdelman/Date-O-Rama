@@ -1,14 +1,14 @@
 {
-    "titles": {"*": "EC"},
+    titles: {"*": "EC"},
     "//": "Ecuador",
     "defaultLocale": "en",
     "calendarCode": "gre",
     "calendarColor": {"red": 1.00, "green": 0.82, "blue": 0.00},
     "eventSpecifications": [
-        {"inherits": "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
-        {"inherits": "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
+        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 6, "wkd": [1], "wkdRecurrence": 3}},
+        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
         {"type": "1D", "start": {"mon": 6, "d": 29}, inherits: "Engineer’s Day"},
-        {"inherits": "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
+        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 10}, first: {era: 1, y: 1809}, urls: {"en": "https://nationaltoday.com/ecuador-independence-day/"}},
         {type: "1D", start: {mon: 7, d: 25}, inherits: "Navy Day"},
         {type: "1D", start: {mon: 2, d: 27}, inherits: "Army Day"},

@@ -1,5 +1,5 @@
 {
-    "titles": {"*": "MH"},
+    titles: {"*": "MH"},
     "//": "Marshall Islands",
     "defaultLocale": "en",
     "calendarCode": "gre",
