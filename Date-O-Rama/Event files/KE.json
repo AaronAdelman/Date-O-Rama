@@ -1,10 +1,10 @@
 {
     titles: {"*": "KE"},
     "//": "Kenya",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.59, "green": 0.23, "blue": 0.20},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.59, "green": 0.23, "blue": 0.20},
+    eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},

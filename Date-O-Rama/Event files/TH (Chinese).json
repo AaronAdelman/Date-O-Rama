@@ -1,11 +1,11 @@
 {
     titles: {"*": "TH"},
     "//": "Thailand",
-    "defaultLocale": "en",
-    "calendarCode": "chi",
-    "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
-    "eventSpecifications": [
-        {type: "nD", start: {mon: 1, "d": 1}, "end": {mon: 1, "d": 3}, inherits: "Chinese New Year"},
+    defaultLocale: "en",
+    calendarCode: "chi",
+    calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
+    eventSpecifications: [
+        {type: "nD", start: {mon: 1, d: 1}, "end": {mon: 1, d: 3}, inherits: "Chinese New Year"},
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
    ]
 }

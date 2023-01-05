@@ -1,10 +1,10 @@
 {
     titles: {"*": "AX"},
     "//": "Åland Islands",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.39, "blue": 0.68},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.39, "blue": 0.68},
+    eventSpecifications: [
         
     ]
 }

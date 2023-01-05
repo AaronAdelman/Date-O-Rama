@@ -1,12 +1,12 @@
 {
     titles: {"*": "FO"},
     "//": "Faroe Islands",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.13, "green": 0.25, "blue": 0.60},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.13, "green": 0.25, "blue": 0.60},
+    eventSpecifications: [
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {titles: {"en": "St. Olav’s Eve"}, type: "1D", start: {mon: 7, "d": 28}, urls: {"en": "https://nationaltoday.com/st-olavs-eve-in-faroe-islands/"}, start: {"era": 1, "y": 1031}},
-        {titles: {"en": "St. Olav’s Day"}, type: "1D", start: {mon: 7, "d": 29}, start: {"era": 1, "y": 1031}}
+        {titles: {"en": "St. Olav’s Eve"}, type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/st-olavs-eve-in-faroe-islands/"}, start: {"era": 1, "y": 1031}},
+        {titles: {"en": "St. Olav’s Day"}, type: "1D", start: {mon: 7, d: 29}, start: {"era": 1, "y": 1031}}
     ]
 }

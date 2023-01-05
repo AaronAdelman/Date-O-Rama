@@ -1,11 +1,11 @@
 {
     titles: {"*": "TG"},
     "//": "Togo",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.94, "green": 0.20, "blue": 0.25},
-    "eventSpecifications": [
-        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 6, "d": 21}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
+    eventSpecifications: [
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 6, d: 21}},
         {inherits: "Independence Day", type: "1D", start: {d: 27, mon: 4}, first: {era: 1, y: 1960}},
     ]
 }

@@ -1,14 +1,14 @@
 {
     titles: {"*": "BI"},
     "//": "Burundi",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.26, "green": 0.69, "blue": 0.16},
-    "eventSpecifications": [
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, "d": 8}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, "d": 1}, urls: {"en": "https://nationaltoday.com/burundi-independence-day/"}, first: {"era": 1, "y": 1962}},
-        {type: "1D", start: {mon: 2, "d": 5}, inherits: "Unity Day"},
-        {type: "1D", start: {"d": 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2012}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.26, "green": 0.69, "blue": 0.16},
+    eventSpecifications: [
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/burundi-independence-day/"}, first: {"era": 1, "y": 1962}},
+        {type: "1D", start: {mon: 2, d: 5}, inherits: "Unity Day"},
+        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2012}},
         {type: "1D", start: {mon: 10, d: 13}, titles: {"en": "Prince Louis Rwagasore Day"}, urls: {"en": "https://nationaltoday.com/prince-louis-rwagasore-day/"}, first: {"era": 1, "y": 1961}},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "President Ndadaye’s Day"}, urls: {"en": "https://nationaltoday.com/president-ndadayes-day/"}, first: {"era": 1, "y": 1993}},
     ]

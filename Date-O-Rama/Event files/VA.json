@@ -1,10 +1,10 @@
 {
     titles: {"*": "VA"},
     "//": "Holy See, AKA Vatican City",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 1.00, "green": 0.88, "blue": 0.000},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 1.00, "green": 0.88, "blue": 0.000},
+    eventSpecifications: [
         {inherits: "Independence Day", type: "1D", start: {d: 11, mon: 2}, first: {era: 1, y: 1929}},
     ]
 }

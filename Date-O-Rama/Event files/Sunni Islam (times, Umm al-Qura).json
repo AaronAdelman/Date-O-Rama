@@ -1,10 +1,10 @@
 {
     titles: {"en": "Islam (times, Umm al-Qura)", "he": "אסלאם סוני (זמנים, אום אל־קורה)"},
-    "defaultLocale": "en",
-    "calendarCode": "IslamicUmmAlQuraSolar",
-    "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
+    defaultLocale: "en",
+    calendarCode: "IslamicUmmAlQuraSolar",
+    calendarColor: {"red": 0.01, "green": 1.0, "blue": 0.2},
     emoji: "🇸🇦",
-    "eventSpecifications": [
+    eventSpecifications: [
         {inherits: "Sunrise", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
         {inherits: "Sunset", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
 

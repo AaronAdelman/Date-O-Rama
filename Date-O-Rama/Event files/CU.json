@@ -1,16 +1,16 @@
 {
     titles: {"*": "CU"},
     "//": "Cuba",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.29, "blue": 0.53},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.29, "blue": 0.53},
+    eventSpecifications: [
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 10}, first: {era: 1, y: 1868}, urls: {"en": "https://nationaltoday.com/cuba-independence-day/"}},
-        {type: "1D", start: {"d": 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2011}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, "d": 8}},
+        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2011}},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 12, d: 2}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/triumph-of-the-revolution/"}, titles: {"en": "Triumph of the Revolution"}, first: {era: 1, y: 1959}},
     ]

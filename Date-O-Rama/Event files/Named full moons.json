@@ -1,10 +1,10 @@
 {
     titles: {"en": "Named full moons", "he": "ירחים מלאים עם שמות"},
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.89, "green": 0.89, "blue": 0.89},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.89, "green": 0.89, "blue": 0.89},
     emoji: "🌕",
-    "eventSpecifications": [
+    eventSpecifications: [
         {titles: {"en": "Blue Moon"}, type: "1D", start: {"zmoPhase": "2ndFull"}, emoji: "🔵"},
         {titles: {"en": "Wolf Moon"}, type: "1D", start: {"zmoPhase": "1stFull", mon: 1}, emoji: "🐺"},
         {titles: {"en": "Snow Moon"}, type: "1D", start: {"zmoPhase": "1stFull", mon: 2}, emoji: "❄️"},

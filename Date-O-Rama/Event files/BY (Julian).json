@@ -1,11 +1,11 @@
 {
     titles: {"*": "BY"},
     "//": "Belarus",
-    "defaultLocale": "en",
-    "calendarCode": "jul",
-    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
-    "eventSpecifications": [
-        {inherits: "Christmas Day", type: "1D", start: {mon: 12, "d": 25}},
+    defaultLocale: "en",
+    calendarCode: "jul",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {titles: {"en": "Radonitsa", "be": "Радунiца"}, type: "1D", start: {"Easter": "Easter", "offsetD": 9}, urls: {"en": "https://en.wikipedia.org/wiki/Radonitsa"}, emoji: "🪦"},
 
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},

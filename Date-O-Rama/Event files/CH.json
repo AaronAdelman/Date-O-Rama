@@ -1,14 +1,14 @@
 {
     titles: {"*": "CH"},
     "//": "Switzerland",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
-    "eventSpecifications": [
-        {inherits: "National Day", type: "1D", start: {mon: 8, "d": 1}, first: {era: 1, y: 1899}, urls: {"en": "https://nationaltoday.com/switzerland-national-day/"}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "National Day", type: "1D", start: {mon: 8, d: 1}, first: {era: 1, y: 1899}, urls: {"en": "https://nationaltoday.com/switzerland-national-day/"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 1}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {type: "1D", start: {mon: 3, "d": 4}, inherits: "Engineer’s Day", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day", first: {era: 1, y: 2018}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1925}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/restoration-day-in-geneva/"}, titles: {"en": "Restoration Day"}, locations: {"en": "Geneva"}},

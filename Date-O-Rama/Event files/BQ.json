@@ -1,12 +1,12 @@
 {
     titles: {"*": "BQ"},
     "//": "Bonaire, Sint Eustatius, and Saba",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.68, "green": 0.11, "blue": 0.16},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.68, "green": 0.11, "blue": 0.16},
+    eventSpecifications: [
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Flag Day", type: "1D", start: {mon: 9, "d": 6}, first: {era: 1, y: 1981}, titles: {"en": "Bonaire Flag Day"}, urls: {"en": "https://nationaltoday.com/bonaire-flag-day/"}},
+        {inherits: "Flag Day", type: "1D", start: {mon: 9, d: 6}, first: {era: 1, y: 1981}, titles: {"en": "Bonaire Flag Day"}, urls: {"en": "https://nationaltoday.com/bonaire-flag-day/"}},
         {type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/saba-day-in-saba/"}, titles: {"en": "Saba Day"}},
     ]
 }

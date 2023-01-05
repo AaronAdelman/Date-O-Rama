@@ -1,10 +1,10 @@
 {
     titles: {"en": "Shia (times, Tehran)", "he": "שיעה (זמנים, טהראן)"},
-    "defaultLocale": "en",
-    "calendarCode": "hiq-solar*",
-    "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
+    defaultLocale: "en",
+    calendarCode: "hiq-solar*",
+    calendarColor: {"red": 0.01, "green": 1.0, "blue": 0.2},
     emoji: "🇮🇷",
-    "eventSpecifications": [
+    eventSpecifications: [
         {inherits: "Sunrise", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
         {inherits: "Sunset", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
         {inherits: "Dhuhr", type: "pt", start: {"ptType": "Dhuhr", "calcMethod": "ISNA"}},

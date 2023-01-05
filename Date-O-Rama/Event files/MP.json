@@ -1,10 +1,10 @@
 {
     titles: {"*": "MP"},
     "//": "Northern Mariana Islands",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.20, "blue": 0.63},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.20, "blue": 0.63},
+    eventSpecifications: [
         
     ]
 }

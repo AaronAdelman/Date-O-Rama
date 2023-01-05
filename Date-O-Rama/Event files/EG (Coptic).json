@@ -1,14 +1,14 @@
 {
     titles: {"*": "EG"},
     "//": "Egypt",
-    "defaultLocale": "en",
-    "calendarCode": "cop",
+    defaultLocale: "en",
+    calendarCode: "cop",
     "otherCalendarCodes": ["jul"],
-    "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
-    "eventSpecifications": [
-        {inherits: "Christmas Day", type: "1D", start: {mon: 4, "d": 29}},
-        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, "calendarCode": "jul"},
-        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, "calendarCode": "jul"},
-        {inherits: "Epiphany", type: "1D", start: {mon: 1, "d": 6}},
+    calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
+    eventSpecifications: [
+        {inherits: "Christmas Day", type: "1D", start: {mon: 4, d: 29}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, calendarCode: "jul"},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}, calendarCode: "jul"},
+        {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
     ]
 }

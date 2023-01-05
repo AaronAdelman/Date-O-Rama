@@ -1,13 +1,13 @@
 {
     titles: {"*": "NP"},
     "//": "Nepal",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.86, "green": 0.08, "blue": 0.24},
-    "eventSpecifications": [
-        {type: "1D", start: {mon: 6, "d": 27}, titles: {"en": "Attwari"}, urls: {"en": "https://nationaltoday.com/attwari/"}, first: {"era": 1, "y": 2021}},
-        {type: "1D", start: {"d": 19, mon: 11}, inherits: "International Men’s Day"},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, "d": 8}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.86, "green": 0.08, "blue": 0.24},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 6, d: 27}, titles: {"en": "Attwari"}, urls: {"en": "https://nationaltoday.com/attwari/"}, first: {"era": 1, "y": 2021}},
+        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 7, d: 30}, inherits: "Friendship Day"},
    ]
 }

@@ -1,10 +1,10 @@
 {
     titles: {"*": "NU"},
     "//": "Niue",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 1.00, "green": 0.87, "blue": 0.00},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 1.00, "green": 0.87, "blue": 0.00},
+    eventSpecifications: [
         {inherits: "Children’s Day", type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}},
 
     ]

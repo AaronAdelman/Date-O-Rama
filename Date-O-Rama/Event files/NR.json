@@ -1,10 +1,10 @@
 {
     titles: {"*": "NR"},
     "//": "Nauru",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.14, "blue": 0.41},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.14, "blue": 0.41},
+    eventSpecifications: [
         {inherits: "Children’s Day", type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}},
     {inherits: "Independence Day", type: "1D", start: {d: 31, mon: 1}, first: {era: 1, y: 1968}},
     ]

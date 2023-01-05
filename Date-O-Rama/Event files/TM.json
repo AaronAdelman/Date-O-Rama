@@ -1,13 +1,13 @@
 {
     titles: {"*": "TM"},
     "//": "Turkmenistan",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
+    eventSpecifications: [
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 27, mon: 9}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/turkmenistan-independence-day/"}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, "d": 8}},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 10, d: 9}, inherits: "Navy Day"},
         {inherits: "Melon Day", type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/melon-day/"}},
         {type: "1D", start: {mon: 10, d: 6}, titles: {"en": "Earthquake Memorial Day"}, urls: {"en": "https://nationaltoday.com/turkmenistan-earthquake-memorial-day/"}, first: {era: 1, y: 1995}, emoji: "🐂"},

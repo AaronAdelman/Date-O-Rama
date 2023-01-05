@@ -1,10 +1,10 @@
 {
     titles: {"*": "FJ"},
     "//": "Fiji",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.38, "green": 0.71, "blue": 0.90},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.38, "green": 0.71, "blue": 0.90},
+    eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 1}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Independence Day", titles: {"en": "Fiji Day"}, type: "1D", start: {d: 10, mon: 10}, first: {era: 1, y: 1970}, urls: {"en": "https://nationaltoday.com/fiji-day/"}},

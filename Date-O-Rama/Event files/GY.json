@@ -1,10 +1,10 @@
 {
     titles: {"*": "GY"},
     "//": "Guyana",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 94, "green": 0.20, "blue": 0.25},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 94, "green": 0.20, "blue": 0.25},
+    eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Independence Day", type: "1D", start: {d: 26, mon: 5}, first: {era: 1, y: 1966}},

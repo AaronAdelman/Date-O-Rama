@@ -1,10 +1,10 @@
 {
     titles: {"*": "SL"},
     "//": "Sierra Leone",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.26, "green": 0.69, "blue": 0.16},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.26, "green": 0.69, "blue": 0.16},
+    eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Independence Day", type: "1D", start: {d: 27, mon: 4}, first: {era: 1, y: 1961}},
     ]

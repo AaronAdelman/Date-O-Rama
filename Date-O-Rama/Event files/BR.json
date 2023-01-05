@@ -1,16 +1,16 @@
 {
     titles: {"*": "BR"},
     "//": "Brazil",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.59, "blue": 0.22},
-    "eventSpecifications": [
-        {inherits: "Independence Day", type: "1D", start: {"d": 7, mon: 9}, first: {"era": 1, "y": 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/"}},
-        {type: "1D", start: {mon: 11, "d": 20}, titles: {"en": "Black Awareness Day", "pt": "Dia da Consciência Negra"}, urls: {"en": "https://nationaltoday.com/black-consciousness-day-brazil/", "pt": "https://pt.wikipedia.org/wiki/Dia_da_Consci%C3%AAncia_Negra"}, first: {"era": 1, "y": 1960}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
+    eventSpecifications: [
+        {inherits: "Independence Day", type: "1D", start: {d: 7, mon: 9}, first: {"era": 1, "y": 1822}, urls: {"en": "https://nationaltoday.com/brazil-independence-day/"}},
+        {type: "1D", start: {mon: 11, d: 20}, titles: {"en": "Black Awareness Day", "pt": "Dia da Consciência Negra"}, urls: {"en": "https://nationaltoday.com/black-consciousness-day-brazil/", "pt": "https://pt.wikipedia.org/wiki/Dia_da_Consci%C3%AAncia_Negra"}, first: {"era": 1, "y": 1960}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {type: "1D", start: {mon: 6, "d": 12}, titles: {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados"}, urls: {"en": "https://nationaltoday.com/brazilian-valentines-day/"}, first: {"era": 1, "y": 1948}, inherits: "Valentine’s Day"},
-        {type: "1D", start: {mon: 12, "d": 11}, inherits: "Engineer’s Day"},
+        {type: "1D", start: {mon: 6, d: 12}, titles: {"en": "Brazilian Valentine’s Day", "pt": "Dia dos Namorados"}, urls: {"en": "https://nationaltoday.com/brazilian-valentines-day/"}, first: {"era": 1, "y": 1948}, inherits: "Valentine’s Day"},
+        {type: "1D", start: {mon: 12, d: 11}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 10, d: 12}},
         {type: "1D", start: {mon: 6, d: 11}, inherits: "Navy Day"},
         {type: "1D", start: {mon: 12, d: 13}, titles: {"en": "Sailor’s Day", "pt": "Dia do Marinheiro"}},
@@ -20,7 +20,7 @@
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Lady of Aparecida"}, urls: {"en": "https://nationaltoday.com/lady-of-aparecida-2/"}, first: {era: 1, y: 1717}},
-        {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, "d": 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
+        {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/all-souls-day-brazil/"}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/republic-proclamation-day/"}, titles: {"en": "Republic Proclamation Day"}, first: {era: 1, y: 1889}},
     ]

@@ -1,11 +1,11 @@
 {
     titles: {"*": "TL"},
     "//": "Timor-Leste, AKA East Timor",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
-    "eventSpecifications": [
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 11, "d": 3}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 11, d: 3}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/national-heroes-day-timor-leste/"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1991}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(East_Timor)"}},

@@ -1,10 +1,10 @@
 {
     titles: {"*": "DM"},
     "//": "Dominica",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.00, "green": 0.60, "blue": 0.27},
-    "eventSpecifications": [
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.60, "blue": 0.27},
+    eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 3}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},

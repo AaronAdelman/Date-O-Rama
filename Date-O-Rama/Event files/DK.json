@@ -1,19 +1,19 @@
 {
     titles: {"*": "DK"},
     "//": "Denmark",
-    "defaultLocale": "en",
-    "calendarCode": "gre",
-    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
-    "eventSpecifications": [
-        {inherits: "Constitution Day", type: "1D", start: {mon: 6, "d": 5}, urls: {"en": "https://nationaltoday.com/constitution-day-denmark/"}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, "d": 5}},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "Constitution Day", type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/constitution-day-denmark/"}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, d: 5}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-      {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, "d": 1}},
-        {type: "1D", start: {mon: 6, "d": 7}, titles: {"en": "Birthday of Prince Joachim"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=56335"}},
-        {type: "1D", start: {mon: 6, "d": 15}, titles: {"en": "Day of Valdemar and Reunion Day"}, urls: {"en": "https://www.andtodayis.com/en/event/Day-of-Valdemar-and-Reunion-Day-in-Denmark"}, first: {"era": 1, "y": 1219}},
-        {type: "1D", start: {mon: 6, "d": 11}, titles: {"en": "Birthday of Prince Henrik"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=57737"}},
-        {inherits: "St. John’s Eve", type: "1D", start: {mon: 6, "d": 23}},
+      {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
+        {type: "1D", start: {mon: 6, d: 7}, titles: {"en": "Birthday of Prince Joachim"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=56335"}},
+        {type: "1D", start: {mon: 6, d: 15}, titles: {"en": "Day of Valdemar and Reunion Day"}, urls: {"en": "https://www.andtodayis.com/en/event/Day-of-Valdemar-and-Reunion-Day-in-Denmark"}, first: {"era": 1, "y": 1219}},
+        {type: "1D", start: {mon: 6, d: 11}, titles: {"en": "Birthday of Prince Henrik"}, inherits: "*BDay*", urls: {"en": "https://webplus.info/index.php?page=340&event=57737"}},
+        {inherits: "St. John’s Eve", type: "1D", start: {mon: 6, d: 23}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
-        {type: "1D", start: {"d": 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2010}},
+        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2010}},
    ]
 }

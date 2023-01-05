@@ -1,12 +1,12 @@
 {
     titles: {"*": "SD"},
     "//": "Sudan",
-    "defaultLocale": "en",
-    "calendarCode": "cop",
+    defaultLocale: "en",
+    calendarCode: "cop",
     "otherCalendarCodes": ["jul"],
-    "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
-    "eventSpecifications": [
-        {inherits: "Christmas Day", type: "1D", start: {mon: 4, "d": 29}},
-        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, "calendarCode": "jul"},
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "Christmas Day", type: "1D", start: {mon: 4, d: 29}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}, calendarCode: "jul"},
     ]
 }
