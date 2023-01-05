@@ -6,12 +6,12 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.85, "green": 0.16, "blue": 0.11},
     "eventSpecifications": [
-        {inherits: "New Year’s Day", "type": "1D", "start": {"mon": 1, "d": 1}},
-        {inherits: "Labor Day", "type": "1D", "start": {"mon": 5, "d": 1}},
-        {inherits: "Independence Day", "type": "1D", "start": {"mon": 6, "d": 26}, "urls": {"en": "https://nationaltoday.com/somalia-independence-day/"}, first: {"era": 1, "y": 1991}},
-        {inherits: "Republic Day", "type": "1D", "start": {"mon": 7, "d": 1}, first: {"era": 1, "y": 1960}},
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, "d": 1}},
+        {inherits: "Labor Day", type: "1D", start: {mon: 5, "d": 1}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 6, "d": 26}, urls: {"en": "https://nationaltoday.com/somalia-independence-day/"}, first: {"era": 1, "y": 1991}},
+        {inherits: "Republic Day", type: "1D", start: {mon: 7, "d": 1}, first: {"era": 1, "y": 1960}},
 
-        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 3, "d": 21}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, "d": 21}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 4, d: 12}, titles: {"en": "Somali Armed Forces Anniversary"}, first: {era: 1, y: 1961}},
    ]
 }

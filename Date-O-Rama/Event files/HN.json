@@ -5,14 +5,14 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.45, "blue": 0.81},
     "eventSpecifications": [
-        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
-        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {"type": "1D", "start": {"mon": 7, "d": 16}, inherits: "Engineer’s Day"},
-        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 9, d: 10}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 3, "d": 19}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {type: "1D", start: {mon: 7, "d": 16}, inherits: "Engineer’s Day"},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 9, d: 10}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/honduras-independence-day/"}},
-        {"type": "1D", "start": {"mon": 10, d: 3}, titles: {"en": "Francisco Morazán’s Day"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, first: {era: 1, y: 1792}},
-        {"type": "nD", "start": {"mon": 10, d: 4}, end: {"mon": 10, d: 7}, titles: {"en": "Morazánica Week", "es": "Semana Morazánica"}, urls: {"en": "https://nationaltoday.com/semana-morazanica-in-honduras/"}, first: {era: 1, y: 2014}},
-        {"type": "1D", "start": {"mon": 10, d: 8}, titles: {"en": "Discovery of America Day"}, urls: {"en": "https://nationaltoday.com/honduras-discovery-of-america-day/"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Francisco Morazán’s Day"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, first: {era: 1, y: 1792}},
+        {type: "nD", start: {mon: 10, d: 4}, end: {mon: 10, d: 7}, titles: {"en": "Morazánica Week", "es": "Semana Morazánica"}, urls: {"en": "https://nationaltoday.com/semana-morazanica-in-honduras/"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 10, d: 8}, titles: {"en": "Discovery of America Day"}, urls: {"en": "https://nationaltoday.com/honduras-discovery-of-america-day/"}, first: {era: 1, y: 2015}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/armed-forces-day-in-honduras/"}},
     ]
 }

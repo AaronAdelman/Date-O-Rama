@@ -5,14 +5,14 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.78, "green": 0.06, "blue": 0.18},
     "eventSpecifications": [
-        {inherits: "Father’s Day", "type": "1D", "start": {"mon": 3, "d": 19}},
-        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {inherits: "Independence Day", "type": "1D", "start": {"mon": 6, "d": 25}, "urls": {"en": "https://nationaltoday.com/croatia-independence-day/?fbclid=IwAR3BRZZZ0t1VD58BFmvHyMmyP0hTzlpt6uAqDgmssO1QZsZiwxbs8-6nALU"}, first: {"era": 1, "y": 2002}},
-        {"type": "1D", "start": {"mon": 3, "d": 2}, inherits: "Engineer’s Day"},
-        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
-        {inherits: "Statehood Day", "type": "1D", "start": {"mon": 5, d: 30}, "urls": {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Croatia)"}, first: {"era": 1, "y": 1990}},
-        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
-        {inherits: "International Women’s Day", "type": "1D", "start": {"mon": 3, "d": 8}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 3, "d": 19}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 6, "d": 25}, urls: {"en": "https://nationaltoday.com/croatia-independence-day/?fbclid=IwAR3BRZZZ0t1VD58BFmvHyMmyP0hTzlpt6uAqDgmssO1QZsZiwxbs8-6nALU"}, first: {"era": 1, "y": 2002}},
+        {type: "1D", start: {mon: 3, "d": 2}, inherits: "Engineer’s Day"},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
+        {inherits: "Statehood Day", type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Croatia)"}, first: {"era": 1, "y": 1990}},
+        {type: "1D", start: {"d": 19, mon: 11}, inherits: "International Men’s Day"},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, "d": 8}},
         {type: "1D", start: {mon: 9, d: 18}, inherits: "Navy Day", titles: {"en": "Day of the Croatian Navy"}},
     ]
 }

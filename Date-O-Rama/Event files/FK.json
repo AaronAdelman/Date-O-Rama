@@ -5,7 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.16, "green": 0.50, "blue": 1.00},
     "eventSpecifications": [
-        {inherits: "Children’s Day", "type": "1D", "start": {"Easter": "Easter", "offsetD": 39}},
-        {inherits: "Liberation Day", "type": "1D", "start": {"mon": 6, "d": 14}, first: {era: 1, y: 1982}},
+        {inherits: "Children’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Liberation Day", type: "1D", start: {mon: 6, "d": 14}, first: {era: 1, y: 1982}},
     ]
 }

@@ -5,7 +5,7 @@
     "calendarCode": "chi",
     "calendarColor": {"red": 0.96, "green": 0.83, "blue": 0.29},
     "eventSpecifications": [
-        {"type": "1D", "start": {"mon": 1, "d": 1}, inherits: "Chinese New Year"},
+        {type: "1D", start: {mon: 1, "d": 1}, inherits: "Chinese New Year"},
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
     ]
 }

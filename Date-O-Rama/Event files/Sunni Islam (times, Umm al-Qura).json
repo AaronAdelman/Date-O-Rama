@@ -3,15 +3,15 @@
     "defaultLocale": "en",
     "calendarCode": "IslamicUmmAlQuraSolar",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
-    "emoji": "🇸🇦",
+    emoji: "🇸🇦",
     "eventSpecifications": [
-        {inherits: "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
-        {inherits: "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
+        {inherits: "Sunrise", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {inherits: "Sunset", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
 
-        {inherits: "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Fajr", "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}},
-        {inherits: "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Makkah"}, "notes": {"en": "Umm al-Qura, Makkah"}},
+        {inherits: "Isha", type: "pt", start: {"ptType": "Isha", "calcMethod": "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
+        {inherits: "Fajr", type: "pt", start: {"ptType": "Fajr", "calcMethod": "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
+        {inherits: "Dhuhr", type: "pt", start: {"ptType": "Dhuhr", "calcMethod": "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Makkah"}, notes: {"en": "Umm al-Qura, Makkah"}},
     ]
 }

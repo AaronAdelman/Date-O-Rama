@@ -4,6 +4,6 @@
     "calendarCode": "tz*",
     "calendarColor": {"red": 0.46, "green": 0.84, "blue": 1.00},
     "eventSpecifications": [
-        {titles: {"en": ""}, "type": "pt", "start": {"timeChange": "timeChange"}, "emoji": "⏰"},
+        {titles: {"en": ""}, type: "pt", start: {"timeChange": "timeChange"}, emoji: "⏰"},
         ]
     }

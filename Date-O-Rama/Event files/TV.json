@@ -5,7 +5,7 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.00, "green": 0.65, "blue": 0.87},
     "eventSpecifications": [
-        {inherits: "National Children’s Day", "type": "1D", "start": {"mon": 8, wkd: [2], wkdRecurrence: 1}},
+        {inherits: "National Children’s Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 10}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/tuvalu-independence-day/"}},
     ]
 }

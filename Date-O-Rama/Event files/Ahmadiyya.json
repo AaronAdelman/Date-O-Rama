@@ -4,9 +4,9 @@
     "calendarCode": "gre*",
     "calendarColor": {"red": 0.25, "green": 0.25, "blue": 0.25},
     "eventSpecifications": [
-        {titles: {"en": "Promised Reformer Day"}, "type": "1D", "start": {"mon": 2, "d": 20}, "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}},
-        {titles: {"en": "Promised Messiah Day", "ur": "یوم مسیح موعود‎"}, "type": "1D", "start": {"mon": 3, "d": 23}, "urls": {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}},
-        {titles: {"en": "Caliphate Day"}, "type": "1D", "start": {"mon": 5, "d": 27}, "urls": {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}
+        {titles: {"en": "Promised Reformer Day"}, type: "1D", start: {mon: 2, "d": 20}, urls: {"en": "https://en.wikipedia.org/wiki/Promised_Reformer_Day"}},
+        {titles: {"en": "Promised Messiah Day", "ur": "یوم مسیح موعود‎"}, type: "1D", start: {mon: 3, "d": 23}, urls: {"en": "https://en.wikipedia.org/wiki/Promised_Messiah_Day"}},
+        {titles: {"en": "Caliphate Day"}, type: "1D", start: {mon: 5, "d": 27}, urls: {"en":"https://en.wikipedia.org/wiki/Caliphate_Day"}
         }
     ]
 }

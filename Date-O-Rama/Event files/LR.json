@@ -5,11 +5,11 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.10, "green": 0.22, "blue": 0.36},
     "eventSpecifications": [
-        {"type": "1D", "start": {"d": 12, "mon": 4}, titles: {"en": "National Redemption Day"}},
-        {inherits: "Mother’s Day", "type": "1D", "start": {"mon": 5, "wkd": [1], "wkdRecurrence": 2}},
-        {inherits: "Independence Day", "type": "1D", "start": {"mon": 7, "d": 26}, "urls": {"en": "https://nationaltoday.com/liberia-independence-day/"}, first: {"era": 1, "y": 1847}},
+        {type: "1D", start: {"d": 12, mon: 4}, titles: {"en": "National Redemption Day"}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, "d": 26}, urls: {"en": "https://nationaltoday.com/liberia-independence-day/"}, first: {"era": 1, "y": 1847}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 11}},
-        {inherits: "National Flag Day", "type": "1D", "start": {"mon": 8, "d": 24}, first: {era: 1, y: 1915}, urls: {"en": "https://nationaltoday.com/national-flag-day-in-liberia/"}},
+        {inherits: "National Flag Day", type: "1D", start: {mon: 8, "d": 24}, first: {era: 1, y: 1915}, urls: {"en": "https://nationaltoday.com/national-flag-day-in-liberia/"}},
     {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/thanksgiving-liberia/"}, inherits: "Thanksgiving Day", first: {era: 1, y: 1883}},
     ]
 }

@@ -3,17 +3,17 @@
     "defaultLocale": "en",
     "calendarCode": "hiq-solar*",
     "calendarColor": {"red": 0.01, "green": 1.0, "blue": 0.2},
-    "emoji": "🇮🇷",
+    emoji: "🇮🇷",
     "eventSpecifications": [
-        {inherits: "Sunrise", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
-        {inherits: "Sunset", "type": "pt", "start": {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
-        {inherits: "Dhuhr", "type": "pt", "start": {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
-        {inherits: "Isha", "type": "pt", "start": {"ptType": "Isha", "calcMethod": "Jafari"}},
-        {inherits: "Asr (Shafii)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Jafari"}},
-        {inherits: "Asr (Hanafi)", "type": "pt", "start": {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Jafari"}},
+        {inherits: "Sunrise", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}},
+        {inherits: "Sunset", type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}},
+        {inherits: "Dhuhr", type: "pt", start: {"ptType": "Dhuhr", "calcMethod": "ISNA"}},
+        {inherits: "Isha", type: "pt", start: {"ptType": "Isha", "calcMethod": "Jafari"}},
+        {inherits: "Asr (Shafii)", type: "pt", start: {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "Jafari"}},
+        {inherits: "Asr (Hanafi)", type: "pt", start: {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "Jafari"}},
 
-        {inherits: "Maghrib", "type": "pt", "start": {"ptType": "Maghrib", "calcMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}},
-        {inherits: "Fajr", "type": "pt", "start": {"ptType": "Fajr", "calcMethod": "Tehran"}, "notes": {"en": "Institute of Geophysics, University of Tehran"}},
+        {inherits: "Maghrib", type: "pt", start: {"ptType": "Maghrib", "calcMethod": "Tehran"}, notes: {"en": "Institute of Geophysics, University of Tehran"}},
+        {inherits: "Fajr", type: "pt", start: {"ptType": "Fajr", "calcMethod": "Tehran"}, notes: {"en": "Institute of Geophysics, University of Tehran"}},
     ]
 }
 

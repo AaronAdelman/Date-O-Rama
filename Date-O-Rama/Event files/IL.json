@@ -5,16 +5,16 @@
     "calendarCode": "gre",
     "calendarColor": {"red": 0.31, "green": 0.67, "blue": 0.8},
     "eventSpecifications": [
-        {inherits: "Victory in Europe Day", "type": "1D", "start": {"mon": 5, "d": 9}, "urls": {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day_(Israel)", "he": "https://he.wikipedia.org/wiki/%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA_%D7%99%D7%95%D7%9D_%D7%94%D7%A0%D7%99%D7%A6%D7%97%D7%95%D7%9F_%D7%91%D7%90%D7%A8%D7%A5_%D7%99%D7%A9%D7%A8%D7%90%D7%9C"}},
-        {titles: {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, "type": "1D", "start": {"mon": 11, "d": 30}, "urls": {"en": "https://yomhagirush.com/index.php"}},
-        {titles: {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, "type": "1D", "start": {"mon": 6, "d": 1}, "urls": {"en": "http://www.thefarhud.com/"}},
+        {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, "d": 9}, urls: {"en": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day_(Israel)", "he": "https://he.wikipedia.org/wiki/%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA_%D7%99%D7%95%D7%9D_%D7%94%D7%A0%D7%99%D7%A6%D7%97%D7%95%D7%9F_%D7%91%D7%90%D7%A8%D7%A5_%D7%99%D7%A9%D7%A8%D7%90%D7%9C"}},
+        {titles: {"he": "יום לציון היציאה והגירוש של היהודים מארצות ערב ומאיראן", "en": "Day to Mark the Departure and Expulsion of Jews from the Arab Countries and Iran"}, type: "1D", start: {mon: 11, "d": 30}, urls: {"en": "https://yomhagirush.com/index.php"}},
+        {titles: {"he": "יום הפרהוד הבינלאומי", "en": "International Farhud Day"}, type: "1D", start: {mon: 6, "d": 1}, urls: {"en": "http://www.thefarhud.com/"}},
         
-        {titles: {"he": "יום המחזור", "en": "Recycling Day"}, "type": "1D", "start": {"mon": 12, "d": 8}, "emoji": "♻️", "urls": {"he": "https://b.tmir.org.il/recycle-day/"}},
-        {inherits: "New Year’s Eve", "type": "1D", "start": {"mon": 12, "d": 31}, "emoji": "🎄"},
-        {titles: {"he": "מבצע דוגו", "en": "Operation Dogo"}, "type": "1D", "start": {"mon": 1, "d": 18}, "emoji": "🧆", "urls": {"he": "https://brave-together.com/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F", "en": "https://brave-together.com/en/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F"}},
-        {"type": "1D", "start": {"mon": 1, "d": 22}, inherits: "Engineer’s Day", titles: {"en": "Israeli Engineer’s Day", "he": "יום המהנדס/ת הישראלי/ת"}},
-        {inherits: "Children’s Day", "type": "1D", "start": {"mon": 11, d: 20}},
-        {"type": "1D", "start": {"d": 19, "mon": 11}, inherits: "International Men’s Day"},
+        {titles: {"he": "יום המחזור", "en": "Recycling Day"}, type: "1D", start: {mon: 12, "d": 8}, emoji: "♻️", urls: {"he": "https://b.tmir.org.il/recycle-day/"}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, "d": 31}, emoji: "🎄"},
+        {titles: {"he": "מבצע דוגו", "en": "Operation Dogo"}, type: "1D", start: {mon: 1, "d": 18}, emoji: "🧆", urls: {"he": "https://brave-together.com/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F", "en": "https://brave-together.com/en/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F"}},
+        {type: "1D", start: {mon: 1, "d": 22}, inherits: "Engineer’s Day", titles: {"en": "Israeli Engineer’s Day", "he": "יום המהנדס/ת הישראלי/ת"}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
+        {type: "1D", start: {"d": 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
    ]
 }
