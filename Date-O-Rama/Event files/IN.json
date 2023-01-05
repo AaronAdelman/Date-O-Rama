@@ -189,5 +189,7 @@
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/asom-divas/"}, titles: {"en": "Asom Divas"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/pa-togan-nengminza-sangma/"}, titles: {"en": "Pa Togan Nengminza Sangma"}, first: {era: 1, y: 1872}},
         {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/guru-ghasidas-jayanti-in-chhattisgarh/"}, titles: {"en": "Guru Ghasidas Jayanti"}, locations: {"en": "Chhattisgarh"}},
+        {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/lohri/"}, titles: {"en": "Lohri"}, emoji: "🔥"},
+        {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/national-undhiyu-day/"}, titles: {"en": "National Undhiyu Day"}},
     ]
 }

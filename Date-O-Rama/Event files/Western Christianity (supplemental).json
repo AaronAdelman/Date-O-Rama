@@ -113,6 +113,7 @@
     {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/national-take-down-the-christmas-tree-day/"}, titles: {"en": "National Take Down the Christmas Tree Day"}, emoji: "🎄"},
     {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/no-longer-new-years-day/"}, titles: {"en": "No Longer New Year’s Day"}, emoji: "✨"},
     {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/stick-to-your-new-years-resolution-day/"}, titles: {"en": "Stick to Your New Year's Resolution Day"}, emoji: "📝"},
-
+    {type: "1D", start: {mon: 1, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/quitters-day/"}, titles: {"en": "Quitters Day"}},
+    {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/take-a-missionary-to-lunch-day/"}, titles: {"en": "Take a Missionary to Lunch Day"}},
     ]
 }

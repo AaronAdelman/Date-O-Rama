@@ -58,7 +58,7 @@
         {titles: {"en": "Dormition of the Mother of God"}, type: "1D", start: {mon: 8, d: 15}, inherits: "Assumption of Mary"},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {"era": 1, "y": 935}},
 
-        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/orthodox-new-year/"}},
         {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
         {inherits: "Feast of Saints Peter and Paul", type: "1D", start: {mon: 6, d: 29}},
         {inherits: "Beheading of St. John the Baptist", type: "1D", start: {mon: 8, d: 29}},
