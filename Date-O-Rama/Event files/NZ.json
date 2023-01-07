@@ -24,5 +24,6 @@
         {type: "1D", start: {mon: 1, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Day after New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 3, wkd: [2]}, inherits: "Day after New Year’s Day"},
         {type: "1D", start: {mon: 1, d: 4, wkd: [2]}, inherits: "Day after New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 23, thruD: 29, wkd: [2]}, urls: {"en": "https://nationaltoday.com/wellington-anniversary-day/"}, titles: {"en": "Wellington Anniversary Day"}, first: {era: 1, y: 1865}},
         ]
     }

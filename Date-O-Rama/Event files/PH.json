@@ -53,5 +53,6 @@
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/unknown-citizens-day/"}, titles: {"en": "Unknown Citizens’ Day"}, first: {era: 1, y: 1936}},
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-atang-de-la-rama/"}, titles: {"en": "Birth Anniversary of National Artist Atang de la Rama"}, first: {era: 1, y: 1902}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/james-leonard-tagle-gordon-day/"}, titles: {"en": "James Leonard Tagle Gordon Day"}, first: {era: 1, y: 1917}},
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/first-philippine-republic-day/"}, titles: {"en": "First Philippine Republic Day"}, first: {era: 1, y: 1899}},
     ]
 }
