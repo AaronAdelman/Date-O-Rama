@@ -29,7 +29,7 @@
         {type: "1D", start: {d: 6, mon: 1}, titles: {"en": "National Shortbread Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shortbread-day/"}},
         {type: "1D", start: {d: 6, mon: 1}, titles: {"en": "National Cuddle Up Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cuddle-up-day/"}, emoji: "👨👩"},
         {type: "1D", start: {d: 6, mon: 1}, titles: {"en": "Apple Tree Day"}, urls: {"en": "https://www.daysoftheyear.com/days/apple-tree-day/"}, emoji: "🍎"},
-        {type: "1D", start: {d: 7, mon: 1}, titles: {"en": "National Tempura Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tempura-day/"}},
+        {type: "1D", start: {d: 7, mon: 1}, titles: {"en": "National Tempura Day", "he": "יום הטמפורה"}, urls: {"en": "https://www.daysoftheyear.com/days/tempura-day/", "he": "https://www.daysoftheyear.co.il/2019/01/tempura-day.html"}},
         {type: "1D", start: {d: 7, mon: 1}, titles: {"en": "Old Rock Day"}, urls: {"en": "https://www.daysoftheyear.com/days/old-rock-day/"}, emoji: "🪨"},
         {type: "1D", start: {d: 7, mon: 1}, titles: {"en": "Harlem Globetrotter’s Day"}, notes: {"en": "Harlem Globetrotters Day"}, urls: {"en": "https://www.daysoftheyear.com/days/harlem-globetrotters-day/"}, emoji: "🏀"},
         {type: "1D", start: {d: 8, mon: 1}, titles: {"en": "African National Congress Foundation Day"}, urls: {"en": "https://en.wikipedia.org/wiki/African_National_Congress"}, first: {"era": 1, "y": 1912}},

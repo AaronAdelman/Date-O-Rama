@@ -257,6 +257,8 @@
         {type: "1D", start: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/carver-day/"}, titles: {"en": "Carver Day"}, first: {era: 1, y: 1943}},
         {type: "1D", start: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/war-on-poverty-day/"}, titles: {"en": "War on Poverty Day"}, first: {era: 1, y: 1964}},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/idaho-human-rights-day/"}, titles: {"en": "Idaho Human Rights Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 1, d: 20, yDiv: 4, yRem: 1}, urls: {"en": "https://nationaltoday.com/inauguration-day/"}, titles: {"en": "Inauguration Day"}, first: {era: 1, y: 1933}},
+        {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/celebration-life-day/"}, titles: {"en": "Celebration of Life Day"}, first: {era: 1, y: 1984}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

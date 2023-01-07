@@ -1,0 +1,9 @@
+{
+    titles: {"en": "Sikhism", "he": "סיקיזם"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.96, "green": 0.78, "blue": 0.27},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/guru-gobind-singh-jayanti/"}, titles: {"en": "Guru Gobind Singh Jayanti"}},
+    ]
+}

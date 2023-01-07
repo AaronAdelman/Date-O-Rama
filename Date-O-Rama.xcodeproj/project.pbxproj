@@ -473,6 +473,8 @@
 		A5C72A0C2967633100B8442A /* GB (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A0A2967633100B8442A /* GB (Julian).json */; };
 		A5C72A0E2967681700B8442A /* RU (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A0D2967681700B8442A /* RU (Julian).json */; };
 		A5C72A0F2967681700B8442A /* RU (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A0D2967681700B8442A /* RU (Julian).json */; };
+		A5C72A112969EE6600B8442A /* Sikhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A102969EE6600B8442A /* Sikhism.json */; };
+		A5C72A122969EE6600B8442A /* Sikhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A102969EE6600B8442A /* Sikhism.json */; };
 		A5C7793D26B8382600DD6009 /* UN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* UN.json */; };
 		A5C7793E26B8382600DD6009 /* UN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* UN.json */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
@@ -1321,6 +1323,7 @@
 		A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islam (times, ISNA).json"; sourceTree = "<group>"; };
 		A5C72A0A2967633100B8442A /* GB (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GB (Julian).json"; sourceTree = "<group>"; };
 		A5C72A0D2967681700B8442A /* RU (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "RU (Julian).json"; sourceTree = "<group>"; };
+		A5C72A102969EE6600B8442A /* Sikhism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sikhism.json; sourceTree = "<group>"; };
 		A5C7793C26B8382600DD6009 /* UN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UN.json; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -1951,6 +1954,7 @@
 				A5BDE78726679A6200F47416 /* Shia.json */,
 				A5FB22A228638D2B00B5042B /* SI.json */,
 				A5EE19EA2806019500B0B9C2 /* Sikhism (supplemental).json */,
+				A5C72A102969EE6600B8442A /* Sikhism.json */,
 				A5FB22A328638D2B00B5042B /* SJ.json */,
 				A575914C282BE43900675058 /* SK.json */,
 				A5EFFF9D285B7F2E00F2205F /* SL.json */,
@@ -2667,6 +2671,7 @@
 				A50DA51F28686272008D54AE /* SR (Chinese).json in Resources */,
 				A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */,
 				A5EB291A2865F98500A1FBF4 /* CX (Chinese).json in Resources */,
+				A5C72A122969EE6600B8442A /* Sikhism.json in Resources */,
 				A5EF0011285B8EEB00F2205F /* SD (Muslim).json in Resources */,
 				A502D3DF28637DA900A625A9 /* PY.json in Resources */,
 				A5B6D00F25ADE3C1005ECE8D /* TimeZones.txt in Resources */,
@@ -3192,6 +3197,7 @@
 				A5C77C032433361900CFEE47 /* Assets.xcassets in Resources */,
 				A50DA52428686272008D54AE /* PH (Chinese).json in Resources */,
 				A5E495FF28624EFE001BF40C /* GQ.json in Resources */,
+				A5C72A112969EE6600B8442A /* Sikhism.json in Resources */,
 				A5E495F928624EFE001BF40C /* GI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
