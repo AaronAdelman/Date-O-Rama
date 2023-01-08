@@ -315,6 +315,7 @@
         {template: "Synaxis of the Mother of God", type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/synaxis-of-the-mother-of-god/"}, titles: {"en": "Synaxis of the Mother of God"}},
         {template: "Talk Like Shakespeare Day", titles: {"en": "Talk Like Shakespeare Day"}, type: "1D", start: {mon: 4, d: 23}, urls: {"en": "http://www.talklikeshakespeare.org/"}, emoji: "🎭"},
         {template: "Tartan Day", type: "1D", start: {d: 6, mon: 4}, titles: {"en": "Tartan Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
+        {template: "Tatiana Day", type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/tatiana-day/"}, titles: {"en": "Tatiana Day"}},
         {template: "Taurus", titles: {"en": "Taurus", "he": "שור"}, type: "1M", start: {mon: 9}, emoji: "♉️", inherits: "*Astrology*"},
         {template: "Tax Day", type: "1D", start: {d: 15, mon: 4}, titles: {"en": "Tax Day", "ar": "يوم الضرائب", "id": "Hari Pajak", "he": "יום המיסים"}},
         {template: "Teacher’s Day", titles: {"he": "יום המורה", "en": "Teacher’s Day", "ar": "يوم المعلم", "sq": "Dita e Mësuesit", "hy": "Ուսուցչի օր", "id": "Hari Guru"}, type: "1D", start: {mon: 3, d: 23}, emoji: "👨‍🏫👩‍🏫", urls: {"en": "https://en.wikipedia.org/wiki/List_of_Teachers%27_Days"}},

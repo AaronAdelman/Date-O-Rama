@@ -6,7 +6,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.95, "green": 0.62, "blue": 0.29},
     eventSpecifications: [
-        {type: "1D", start: {mon: 1, d: 26}, inherits: "Republic Day", urls: {"en": "https://en.wikipedia.org/wiki/Republic_Day_(India)"}, first: {era: 1, y: 1950}},
+        {type: "1D", start: {mon: 1, d: 26}, inherits: "Republic Day", urls: {"en": "https://nationaltoday.com/republic-day-india/"}, first: {era: 1, y: 1950}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 8}, urls: {"en": "https://nationaltoday.com/indian-independence-day/"}, first: {era: 1, y: 1947}},
         {type: "1D", start: {d: 2, mon: 10}, titles: {"en": "Gandhi Jayanti"}, first: {era: 1, y: 1869}, urls: {"en": "https://en.wikipedia.org/wiki/Gandhi_Jayanti"}, inherits: "*BDay*"},
         
@@ -122,7 +122,7 @@
         {type: "1D", start: {d: 16, mon: 3}, titles: {"en": "National Vaccination Day"}, urls: {"en": "https://nationaltoday.com/national-vaccination-day/"}, emoji: "💉", first: {era: 1, y: 1995}},
         {type: "1D", start: {d: 18, mon: 3}, titles: {"en": "Ordnance Factories’ Day"}},
 
-        {inherits: "Martyrs’ Day", type: "1D", start: {d: 30, mon: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {d: 30, mon: 1}, urls: {"en": "https://nationaltoday.com/martyrs-day/"}},
         {inherits: "Martyrs’ Day", type: "1D", start: {d: 23, mon: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}, locations: {"en": "Lahore"}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27"}, locations: {"en": "Mizoram"}},
         {inherits: "Martyrs’ Day", type: "1D", start: {d: 19, mon: 5}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(India)"}, locations: {"en": "Assam"}, titles: {"en": "Language Martyrs Day"}},

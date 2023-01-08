@@ -71,5 +71,6 @@
         {type: "1D", start: {mon: 1, d: 7, thruD: 13, wkd: [2]}, urls: {"en": "https://nationaltoday.com/plough-monday/"}, titles: {"en": "Plough Monday"}},
         {type: "1D", start: {mon: 1, d: 7, thruD: 13, wkd: [1]}, urls: {"en": "https://en.wikipedia.org/wiki/Plough_Sunday"}, titles: {"en": "Plough Sunday"}},
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/paul-pitcher-day/"}, titles: {"en": "Paul Pitcher Day"}},
+        {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/st-dwynwens-day/"}, titles: {"en": "St. Dwynwen’s Day"}, first: {era: 1, y: 1960}},
     ]
 }

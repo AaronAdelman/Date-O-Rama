@@ -54,5 +54,8 @@
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-atang-de-la-rama/"}, titles: {"en": "Birth Anniversary of National Artist Atang de la Rama"}, first: {era: 1, y: 1902}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/james-leonard-tagle-gordon-day/"}, titles: {"en": "James Leonard Tagle Gordon Day"}, first: {era: 1, y: 1917}},
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/first-philippine-republic-day/"}, titles: {"en": "First Philippine Republic Day"}, first: {era: 1, y: 1899}},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-napoleon-abueva/"}, titles: {"en": "Birth Anniversary of National Artist Napoleon Abueva"}, inherits: "*BDay*", first: {era: 1, y: 1930}},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/julian-felipe-day/"}, titles: {"en": "Julian Felipe Day"}, first: {era: 1, y: 1861}},
+        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day"}, first: {era: 1, y: 1982}},
     ]
 }

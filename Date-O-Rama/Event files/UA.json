@@ -19,5 +19,6 @@
         {type: "1D", start: {mon: 6, d: 9}, inherits: "Friendship Day"},
         {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/day-of-the-national-flag/"}},
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Day of the Defender"}, urls: {"en": "https://nationaltoday.com/day-of-the-defender/"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 1, d: 25}, inherits: "Tatiana Day"},
   ]
 }
