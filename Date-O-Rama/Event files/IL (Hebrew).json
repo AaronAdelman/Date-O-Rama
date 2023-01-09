@@ -43,7 +43,7 @@
         {titles: {"he": "יום השחרור וההצלה", "en": "Liberation and Rescue Day"}, type: "1D", start: {mon: 9, d: 26}},
         {titles: {"he": "יום הזיכרון לרחבעם זאבי", "en": "Reḥav‘am Ze’evi Memorial Day"}, type: "1D", start: {mon: 1, d: 30}},
         {titles: {"he": "יום ההוקרה לפצועי מערכות ישראל", "en": "Day of Recognition for the Wounded in Israeli Wars"}, type: "1D", start: {mon: 3, d: 17}, urls: {"he": "https://www.daysoftheyear.co.il/2016/12/honor-day.html"}},
-        {titles: {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, type: "1D", start: {mon: 4, d: 21}},
+        {titles: {"he": "יום הלשון העברית", "en": "Hebrew Language Day"}, type: "1D", start: {mon: 4, d: 21}, urls: {"he": "https://www.daysoftheyear.co.il/2018/12/ivrit.html"}},
         {titles: {"he": "יום הזיכרון לחללי מערכות ישראל שמקום קבורתם לא נודע", "en": "Memorial Day for Those Killed in Israeli Wars Whose Burial Place is Unknown"}, type: "1D", start: {mon: 7, d: 7}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 30}, first: {"era": 0, "y": 5730}},
         {inherits: "Family Day", type: "1D", start: {mon: 5, d: 30}, first: {"era": 0, "y": 5750}},
