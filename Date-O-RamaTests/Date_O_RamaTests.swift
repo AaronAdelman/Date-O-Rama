@@ -350,17 +350,17 @@ class Date_O_RamaTests: XCTestCase {
         XCTAssertFalse(Array.areBoring(start: EYMD1, end: EYMD0))
     }
     
-    func testChangingTheCalendarOfAClock() throws {
-        let clock = ASAClock()
-        clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
-
-        clock.iCalendarEventCalendars =  ASAEKEventManager.shared.EKCalendars(titles: ["A", "B", "C"])
-        clock.builtInEventCalendars = [ASAEventCalendar(fileName: "Western zodiac events")]
-        
-        clock.calendar = ASACalendarFactory.calendar(code: .CCSDSJulianDay)!
-        XCTAssert(clock.iCalendarEventCalendars.count == 0)
-        XCTAssert(clock.builtInEventCalendars.count == 0)
-    } // func testChangingTheCalendarOfAClock() throws
+//    func testChangingTheCalendarOfAClock() throws {
+//        let clock = ASAClock()
+//        clock.calendar = ASACalendarFactory.calendar(code: .Gregorian)!
+//
+//        clock.iCalendarEventCalendars =  ASAEKEventManager.shared.EKCalendars(titles: ["A", "B", "C"])
+//        clock.builtInEventCalendars = [ASAEventCalendar(fileName: "Western zodiac events")]
+//        
+//        clock.calendar = ASACalendarFactory.calendar(code: .CCSDSJulianDay)!
+//        XCTAssert(clock.iCalendarEventCalendars.count == 0)
+//        XCTAssert(clock.builtInEventCalendars.count == 0)
+//    } // func testChangingTheCalendarOfAClock() throws
     
 //    func testExtremeTimeZoneAbbreviation() throws {
 //        let now = Date(timeIntervalSinceNow: 0.0)

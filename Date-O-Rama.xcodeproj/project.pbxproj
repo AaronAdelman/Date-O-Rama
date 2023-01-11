@@ -2031,13 +2031,6 @@
 			path = "Event files";
 			sourceTree = "<group>";
 		};
-		A55EAC7326C90FD5001868E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */ = {
 			isa = PBXGroup;
 			children = (
@@ -2227,7 +2220,6 @@
 				A5C77BFB2433361400CFEE47 /* Date-O-Rama */,
 				A5C77C122433361900CFEE47 /* Date-O-RamaTests */,
 				A5C77C1D2433361900CFEE47 /* Date-O-RamaUITests */,
-				A55EAC7326C90FD5001868E5 /* Frameworks */,
 				A567C0EB27A02F370008C69A /* FrenchRepublicanCalendarCore */,
 				A5C77BFA2433361400CFEE47 /* Products */,
 				A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */,
@@ -2420,11 +2412,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C77C292433361900CFEE47 /* Build configuration list for PBXNativeTarget "Date-O-RamaUITests" */;
 			buildPhases = (
-				BBFD8C3A3CEC356A49D50566 /* [CP] Check Pods Manifest.lock */,
 				A5C77C162433361900CFEE47 /* Sources */,
 				A5C77C172433361900CFEE47 /* Frameworks */,
 				A5C77C182433361900CFEE47 /* Resources */,
-				E09ACD807939D2CA3B818AD6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3217,48 +3207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BBFD8C3A3CEC356A49D50566 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Date-O-Rama-Date-O-RamaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E09ACD807939D2CA3B818AD6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Date-O-Rama-Date-O-RamaUITests/Pods-Date-O-Rama-Date-O-RamaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A566F44A2483D6EC000A05B5 /* Sources */ = {
