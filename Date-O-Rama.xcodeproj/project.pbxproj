@@ -186,7 +186,6 @@
 		A5629CD925B8646200C6D062 /* ASAAboutTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5629CD825B8646200C6D062 /* ASAAboutTab.swift */; };
 		A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
 		A564C14625487358000F2CDF /* ASAClockCellText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A564C13F2548731B000F2CDF /* ASAClockCellText.swift */; };
-		A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A566F4442483D6E6000A05B5 /* Interface.storyboard */; };
 		A566F4482483D6EB000A05B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A566F4472483D6EB000A05B5 /* Assets.xcassets */; };
 		A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4532483D6EC000A05B5 /* ContentView.swift */; };
 		A566F4582483D6EC000A05B5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566F4572483D6EC000A05B5 /* ExtensionDelegate.swift */; };
@@ -475,6 +474,7 @@
 		A5C72A0F2967681700B8442A /* RU (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A0D2967681700B8442A /* RU (Julian).json */; };
 		A5C72A112969EE6600B8442A /* Sikhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A102969EE6600B8442A /* Sikhism.json */; };
 		A5C72A122969EE6600B8442A /* Sikhism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A102969EE6600B8442A /* Sikhism.json */; };
+		A5C72A14296F0F4900B8442A /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C72A13296F0F4900B8442A /* HostingController.swift */; };
 		A5C7793D26B8382600DD6009 /* UN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* UN.json */; };
 		A5C7793E26B8382600DD6009 /* UN.json in Resources */ = {isa = PBXBuildFile; fileRef = A5C7793C26B8382600DD6009 /* UN.json */; };
 		A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C77BFC2433361400CFEE47 /* AppDelegate.swift */; };
@@ -1187,7 +1187,6 @@
 		A5629CD825B8646200C6D062 /* ASAAboutTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAAboutTab.swift; sourceTree = "<group>"; };
 		A564C13F2548731B000F2CDF /* ASAClockCellText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellText.swift; sourceTree = "<group>"; };
 		A566F4422483D6E6000A05B5 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A566F4452483D6E6000A05B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A566F4472483D6EB000A05B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A566F4492483D6EB000A05B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A566F4532483D6EC000A05B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -1324,6 +1323,7 @@
 		A5C72A0A2967633100B8442A /* GB (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GB (Julian).json"; sourceTree = "<group>"; };
 		A5C72A0D2967681700B8442A /* RU (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "RU (Julian).json"; sourceTree = "<group>"; };
 		A5C72A102969EE6600B8442A /* Sikhism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sikhism.json; sourceTree = "<group>"; };
+		A5C72A13296F0F4900B8442A /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		A5C7793C26B8382600DD6009 /* UN.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UN.json; sourceTree = "<group>"; };
 		A5C77BF92433361400CFEE47 /* Date-O-Rama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Date-O-Rama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C77BFC2433361400CFEE47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -2041,8 +2041,8 @@
 		A566F4432483D6E6000A05B5 /* WatchDate-O-Rama */ = {
 			isa = PBXGroup;
 			children = (
-				A566F4442483D6E6000A05B5 /* Interface.storyboard */,
 				A566F4472483D6EB000A05B5 /* Assets.xcassets */,
+				A5C72A13296F0F4900B8442A /* HostingController.swift */,
 				A566F4492483D6EB000A05B5 /* Info.plist */,
 			);
 			path = "WatchDate-O-Rama";
@@ -2839,7 +2839,6 @@
 				A5EFFFEB285B874C00F2205F /* DO.json in Resources */,
 				A5BDE78626678B1600F47416 /* Nation of Islam.json in Resources */,
 				A5D850A6280C932A005247BD /* MM.json in Resources */,
-				A566F4462483D6E6000A05B5 /* Interface.storyboard in Resources */,
 				A5F5B08E2858D8BA003E313D /* Eastern Christianity (general).json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3284,6 +3283,7 @@
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
 				A54539DC26A8A92E0028EAD5 /* PrayTime.swift in Sources */,
 				A5F43E222785D2FE00FCDB88 /* ASAEquinoxOrSolsticeType.swift in Sources */,
+				A5C72A14296F0F4900B8442A /* HostingController.swift in Sources */,
 				A5FDBCBD26A709C8002AF8F0 /* Trigonometry.swift in Sources */,
 				A5365A7E278C8E5A0090AFB3 /* ASAPointEventType.swift in Sources */,
 				A5BC4DE426495F3500BF27F2 /* NSNumberExtensions.swift in Sources */,
@@ -3668,14 +3668,6 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		A566F4442483D6E6000A05B5 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A566F4452483D6E6000A05B5 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		A5BDE7762665594600F47416 /* Localizable.stringsdict */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3904,8 +3896,9 @@
 				PRODUCT_NAME = "Date-O-Rama";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/Date-O-Rama-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3938,8 +3931,9 @@
 				PRODUCT_NAME = "Date-O-Rama";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Date-O-Rama/Date-O-Rama-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
