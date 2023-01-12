@@ -154,9 +154,11 @@ struct ASAProcessedClock {
         self.dateEvents = isForComplications ? [] : clockEvents.dateEvents
         self.timeEvents = isForComplications ? [] : clockEvents.timeEvents
 
-        self.startOfDay = startOfDay
-        self.startOfNextDay   = startOfNextDay
-        self.regionCode = location.regionCode
+        self.startOfDay               = startOfDay
+        self.startOfNextDay           = startOfNextDay
+        assert(startOfDay <= now)
+        assert(now <= startOfNextDay)
+        self.regionCode               = location.regionCode
         self.miniCalendarNumberFormat = clock.miniCalendarNumberFormat
         
         if self.clock.calendar is ASACalendarSupportingBlankMonths {
