@@ -51,7 +51,7 @@
         {type: "1D", start: {d: 11, mon: 1}, titles: {"en": "Learn Your Name In Morse Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/learn-your-name-in-morse-code-day/"}, emoji: "·-"},
         {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: 2}, titles: {"en": "Poetry At Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/poetry-at-work-day/"}, emoji: "📖"},
         {type: "1D", start: {d: 12, mon: 1}, titles: {"en": "National Marzipan Day", "he": "יום המרציפן"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-day/", "he": "https://www.daysoftheyear.co.il/2018/01/12.html"}},
-        {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/kiss-a-ginger-day/", "he": "https://www.daysoftheyear.co.il/2019/01/kiss-a-ginger-day.html"}, titles: {"en": "Kiss a Ginger Day", "he": "יום נשק ג׳ינג׳י"}},
+        {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/kiss-a-ginger-day/", "he": "https://www.daysoftheyear.co.il/2019/01/kiss-a-ginger-day.html"}, titles: {"en": "Kiss a Ginger Day", "he": "יום נשק ג׳ינג׳י"}, emoji: "👨‍🦰👩‍🦰"},
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "National Rubber Ducky Day"}, notes: {"en": "National Rubber Duckie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rubber-duckie-day/"}, emoji: "🐤"},
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "National Sticker Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sticker-day/"}},
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "Public Radio Broadcasting Day"}, urls: {"en": "https://www.daysoftheyear.com/days/public-radio-broadcasting-day/"}, emoji: "🎙"},
