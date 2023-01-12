@@ -63,7 +63,7 @@
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 10, d: 5}, first: {"era": 1, "y": 1945}, titles: {"en": "Indonesian National Armed Forces Day", "id": "Hari Tentara Nasional Indonesia"}},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "National Museum Day", "he": "יום המוזיאונים הלאומי", "id": "Hari Museum Nasional"}, first: {"era": 1, "y": 2015}, emoji: "🏛"},
         {type: "1D", start: {mon: 10, d: 22}, titles: {"en": "National Santri Day", "id": "Hari Santri Nasional"}, first: {era: 1, y: 2015}},
-        {type: "1D", start: {mon: 10, d: 24}, titles: {"en": "National Doctors Day", "id": "Hari Dokter Nasional"}, first: {"era": 1, "y": 1950}, emoji: "👨‍⚕️👩‍⚕️"},
+        {type: "1D", start: {mon: 10, d: 24}, titles: {"en": "National Doctors Day", "id": "Hari Dokter Nasional"}, first: {"era": 1, "y": 1950}, inherits: "Doctor’s Day"},
         {type: "1D", start: {mon: 10, d: 27}, titles: {"en": "National Electricity Day", "id": "Hari Listrik Nasional"}, emoji: "🔋"},
         {inherits: "National Youth Day", type: "1D", start: {mon: 10, d: 28}, titles: {"en": "Youth Pledge Day", "id": "Hari Sumpah Pemuda"}, urls: {"en": "https://en.wikipedia.org/wiki/Youth_Pledge"}},
         {type: "1D", start: {mon: 10, d: 30}, titles: {"en": "Indonesian Finance Day", "id": "Hari Oeang"}, notes: {"id": "Hari Keuangan Republik Indonesia"}, emoji: "🏦"},

@@ -136,7 +136,7 @@
         {type: "1D", start: {d: 23, mon: 12}, titles: {"en": "Kisan Diwas"}, urls: {"en": "https://nationaltoday.com/kisan-diwas/"}, first: {era: 1, y: 2001}, inherits: "Farmer Day"},
         {type: "1D", start: {d: 13, mon: 2}, titles: {"en": "Sarojini Naidu’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1879}},
         {type: "1D", start: {d: 29, mon: 5}, titles: {"en": "International Mount Everest Day"}, urls: {"en": "https://www.daysoftheyear.com/days/mount-everest-day/"}, first: {"era": 1, "y": 2008}, emoji: "🏔"},
-        {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "Doctor’s Day"}, urls: {"en": "https://nationaltoday.com/doctors-day-india/"}, first: {"era": 1, "y": 1991}, emoji: "👨‍⚕️👩‍⚕️"},
+        {type: "1D", start: {d: 1, mon: 7}, inherits: "Doctor’s Day", urls: {"en": "https://nationaltoday.com/doctors-day-india/"}, first: {"era": 1, "y": 1991}},
         {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "National Chartered Accountants Day"}},
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 5, d: 24}},
         {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "GST Day"}},

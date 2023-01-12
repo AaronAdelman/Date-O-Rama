@@ -16,6 +16,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
-        {type: "1D", start: {mon: 1, d: 11}, titles: {"en": "Israeli Doctor’s Day", "he": "יום הרופא והרופאה הישראלי"}, urls: {"he": "https://www.daysoftheyear.co.il/2018/01/11.html"}, first: {"era": 1, "y": 1912}, emoji: "👨‍⚕️👩‍⚕️"},
+        {type: "1D", start: {mon: 1, d: 11}, inherits: "Doctor’s Day", urls: {"he": "https://www.daysoftheyear.co.il/2018/01/11.html"}, first: {"era": 1, "y": 1912}, emoji: "👨‍⚕️👩‍⚕️"},
    ]
 }
