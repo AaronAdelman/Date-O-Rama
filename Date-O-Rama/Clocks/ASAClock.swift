@@ -589,37 +589,25 @@ class ASAStartAndEndDateStrings {
 }
 
 extension ASAClock {
-    func properlyShortenedString(date:  Date,
-//                                 isPrimaryClock: Bool,
-                                 eventIsTodayOnly: Bool, eventIsAllDay: Bool, location: ASALocation) -> String {
-        return (
-//            isPrimaryClock &&
-            eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date, location: location)
+    func properlyShortenedString(date:  Date, eventIsTodayOnly: Bool, eventIsAllDay: Bool, location: ASALocation) -> String {
+        return (eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date, location: location)
      } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
     
-    private func genericStartAndEndDateStrings(event: ASAEventCompatible,
-//                                               isPrimaryClock: Bool,
-                                               eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
+    private func genericStartAndEndDateStrings(event: ASAEventCompatible,                                               eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         var startDateString: String?
         var endDateString: String
         
         if event.startDate == event.endDate {
             startDateString = nil
         } else {
-            startDateString = self.properlyShortenedString(date: event.startDate,
-//                                                           isPrimaryClock: isPrimaryClock,
-                                                           eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
+            startDateString = self.properlyShortenedString(date: event.startDate, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
         }
-        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate,
-//                                                     isPrimaryClock: isPrimaryClock,
-                                                     eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
+        endDateString = self.properlyShortenedString(date: event.endDate ?? event.startDate, eventIsTodayOnly: eventIsTodayOnly, eventIsAllDay: event.isAllDay, location: location)
         
         return (startDateString, endDateString)
     } // func genericStartAndEndDateStrings(event: ASAEventCompatible, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> (startDateString: String?, endDateString: String)
     
-    public func startAndEndDateStrings(event: ASAEventCompatible,
-//                                       isPrimaryClock: Bool,
-                                       eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
+    public func startAndEndDateStrings(event: ASAEventCompatible, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         // Cache code
         if let cachedVersion = startAndEndDateStringsCache.object(forKey: event.eventIdentifier! as NSString) {
             // use the cached version
@@ -631,9 +619,7 @@ extension ASAClock {
         
         let eventIsAllDay = event.isAllDay(for: self, location: location)
         if !eventIsAllDay {
-            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event,
-//                                                                             isPrimaryClock: isPrimaryClock,
-                                                                             eventIsTodayOnly: eventIsTodayOnly, location: location)
+            (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
         } else {
             switch event.type {
             case .multiYear:
