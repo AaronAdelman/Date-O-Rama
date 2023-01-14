@@ -637,15 +637,11 @@ extension ASAClock {
             case .multiDay:
                 startDateString = self.shortenedDateString(now: event.startDate, location: location)
                 endDateString = event.endDate == nil ? "???" : self.shortenedDateString(now: event.endDate - 1, location: location)
-            case .oneDay
-//                , .firstFullMoonDay, .secondFullMoonDay, .Easter
-                :
+            case .oneDay:
                 startDateString = nil
                 endDateString = self.shortenedDateString(now: event.startDate, location: location)
             default:
-                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event,
-//                                                                                 isPrimaryClock: isPrimaryClock,
-                                                                                 eventIsTodayOnly: eventIsTodayOnly, location: location)
+                (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
             } // switch event.type
         }
         
