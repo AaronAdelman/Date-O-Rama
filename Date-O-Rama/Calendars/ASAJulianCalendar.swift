@@ -55,6 +55,12 @@ public class ASAJulianCalendar:  ASACalendar, ASACalendarSupportingWeeks, ASACal
     
     func dateTimeString(now: Date, localeIdentifier: String, dateFormat: ASADateFormat, timeFormat: ASATimeFormat, locationData: ASALocation) -> String {
         let (dateString, timeString, _) = dateStringTimeStringDateComponents(now: now, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: locationData)
+        if dateString.isEmpty {
+            return timeString
+        }
+        if timeString.isEmpty {
+            return dateString
+        }
         return dateString + " · " + timeString
     }
     
