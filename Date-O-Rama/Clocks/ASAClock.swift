@@ -639,7 +639,7 @@ extension ASAClock {
                 endDateString = event.endDate == nil ? "???" : self.shortenedDateString(now: event.endDate - 1, location: location)
             case .oneDay:
                 startDateString = nil
-                endDateString = self.shortenedDateString(now: event.startDate, location: location)
+                endDateString = self.shortenedDateString(now: event.startDate + (event.endDate.timeIntervalSince(event.startDate) / 2), location: location)
             default:
                 (startDateString, endDateString) = genericStartAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
             } // switch event.type
