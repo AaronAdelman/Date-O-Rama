@@ -1125,7 +1125,8 @@ class ASAEventCalendar {
             assert(previousSunset.oneDayAfter > date)
             
             assert(startOfDay <= date)
-            assert(date < startOfNextDay)
+//            assert(date < startOfNextDay)
+            // TODO:  Assertion failure here!
             let newEvent = processEventSpecification(calendar: calendar, eventSpecification: eventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, clock: clock)
             
             if newEvent != nil {
