@@ -261,6 +261,7 @@
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/celebration-life-day/", "he": "https://www.daysoftheyear.co.il/2018/01/22.html"}, titles: {"en": "Celebration of Life Day", "he": "יום חגיגת החיים"}, first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/christa-mcauliffe-day/"}, titles: {"en": "Christa McAuliffe Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/kansas-day/"}, titles: {"en": "Kansas Day"}, first: {era: 1, y: 1877}},
+        {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/marmot-day/"}, titles: {"en": "Marmot Day"}, locations: {"en": "Alaska", "he": "אלסקה"}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {"era": 1, "y": 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {"era": 1, "y": 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

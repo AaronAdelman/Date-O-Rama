@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
     eventSpecifications: [
-        {inherits: "Independence Day", type: "1D", start: {d: 4, mon: 2}, first: {era: 1, y: 1948}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Sri_Lanka)"}},
+        {inherits: "Independence Day", type: "1D", start: {d: 4, mon: 2}, first: {era: 1, y: 1948}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Sri_Lanka)", "he": "https://www.daysoftheyear.co.il/2019/10/srilanka-independenceday.html"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
