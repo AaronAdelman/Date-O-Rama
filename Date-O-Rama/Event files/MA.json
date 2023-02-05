@@ -7,9 +7,9 @@
     calendarColor: {"red": 0.75, "green": 0.05, "blue": 0.24},
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
-        {inherits: "Proclamation of Independence Day", type: "1D", start: {mon: 1, d: 11}, first: {"era": 1, "y": 1944}},
+        {inherits: "Proclamation of Independence Day", type: "1D", start: {mon: 1, d: 11}, first: {era: 1, y: 1944}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
-        {titles: {"en": "Throne Day"}, type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/enthronement-in-morocco/"}, first: {"era": 1, "y": 1999}},
+        {titles: {"en": "Throne Day"}, type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/enthronement-in-morocco/"}, first: {era: 1, y: 1999}},
         {titles: {"en": "Oued Ed-Dahab Day"}, type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-recovery-oued-ed-dahab/"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-revolution-of-the-king-and-the-people/"}, first: {era: 1, y: 1955}},
         {type: "1D", start: {mon: 8, d: 21}, inherits: "Youth Day"},

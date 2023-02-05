@@ -12,7 +12,7 @@
         {inherits: "Independence Day", type: "1D", start: {d: 24, mon: 8}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/ukraine-independence-day/"}},
         {type: "1D", start: {mon: 1, d: 22}, inherits: "Unity Day", first: {era: 1, y: 1971}, titles: {"en": "Day of Unity"}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 10, d: 28}, first: {era: 1, y: 1944}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2012}},
+        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2012}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 8, d: 6}, inherits: "Air Force Day", first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 1}, inherits: "Navy Day", first: {era: 1, y: 2016}},

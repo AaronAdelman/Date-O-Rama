@@ -8,7 +8,7 @@
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
-        {titles: {"en": "Bermuda Day"}, type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://en.wikipedia.org/wiki/Bermuda_Day"}, first: {"era": 1, "y": 2018}},
+        {titles: {"en": "Bermuda Day"}, type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://en.wikipedia.org/wiki/Bermuda_Day"}, first: {era: 1, y: 2018}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 28, thruMon: 8, thruD: 3, wkd: [5]}},
         {titles: {"en": "Somers’ Day"}, type: "1D", start: {mon: 7, d: 29, thruMon: 8, thruD: 4, wkd: [6]}},
@@ -19,7 +19,7 @@
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {titles: {"en": "Mary Prince Day"}, type: "1D", start: {mon: 7, d: 29, "thruMon": 8, "thruD": 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {"era": 1, "y": 2018}},
-        {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "Flora Duffy Day"}, urls: {"en": "https://nationaltoday.com/flora-duffy-day/"}, first: {"era": 1, "y": 2021}},
+        {titles: {"en": "Mary Prince Day"}, type: "1D", start: {mon: 7, d: 29, "thruMon": 8, "thruD": 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "Flora Duffy Day"}, urls: {"en": "https://nationaltoday.com/flora-duffy-day/"}, first: {era: 1, y: 2021}},
    ]
 }

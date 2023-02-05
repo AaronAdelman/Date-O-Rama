@@ -7,9 +7,9 @@
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Hong Kong Special Administrative Region Establishment Day", type: "1D", start: {mon: 7, d: 1}, first: {"era": 1, "y": 1997}},
+        {inherits: "Hong Kong Special Administrative Region Establishment Day", type: "1D", start: {mon: 7, d: 1}, first: {era: 1, y: 1997}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 4, d: 4}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, first: {era: 1, y: 1945}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {"era": 1, "y": 2010}},
+        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2010}},
     ]
 }

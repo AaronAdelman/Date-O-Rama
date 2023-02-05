@@ -9,7 +9,7 @@
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/belarus-independence-day/"}, first: {"era": 1, "y": 1991}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/belarus-independence-day/"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "October Revolution Day", "be": "Дзень Кастрычніцкай рэвалюцыі", "ru": "День Великой Октябрьской социалистической революции"}, urls: {"en": "https://en.wikipedia.org/wiki/October_Revolution_Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
@@ -20,7 +20,7 @@
         {inherits: "Flag Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, titles: {"en": "State Flag and State Emblem Day", "be": "Дзень Дзяржаўнага Сцяга i Дзяржаўнага Герба"}},
         {type: "1D", start: {mon: 9, d: 17}, inherits: "National Unity Day", urls: {"en": "https://en.wikipedia.org/wiki/National_Unity_Day_(Belarus)"}, first: {era: 1, y: 2021}},
         {inherits: "Veterans Day", type: "1D", start: {mon: 2, d: 15}, titles: {"en": "Afghan War Veterans Day", "be": "Дзень памяці воінаў-інтэрнацыяналістаў "}},
-        {inherits: "International Chernobyl Disaster Remembrance Day", type: "1D", start: {mon: 4, d: 26}, first: {type: "1D", "era": 1, "y": 2017}},
+        {inherits: "International Chernobyl Disaster Remembrance Day", type: "1D", start: {mon: 4, d: 26}, first: {type: "1D", era: 1, y: 2017}},
         {type: "1D", start: {mon: 6, d: 22}, titles: {"en": "Day of Remembrance of the Victims of the Great Patriotic War", "be": "Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны"}},
 
         {inherits: "Kupala Night", type: "1D", start: {mon: 7, d: 6}},
@@ -28,7 +28,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 10, d: 14}, first: {"era": 1, "y": 1996}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 10, d: 14}, first: {era: 1, y: 1996}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 3}, inherits: "Air Force Day"},
     ]

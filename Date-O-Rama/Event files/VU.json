@@ -6,10 +6,10 @@
     calendarColor: {"red": 0.96, "green": 0.82, "blue": 0.29},
     eventSpecifications: [
         {type: "1D", start: {d: 5, mon: 3}, titles: {"en": "Custom Chief’s Day"}, urls: {"en": "https://www.timeanddate.com/holidays/vanuatu/custom-chiefs-day"}},
-        {inherits: "International Francophonie Day", type: "1D", start: {d: 20, mon: 3}, first: {"era": 1, "y": 1988}},
+        {inherits: "International Francophonie Day", type: "1D", start: {d: 20, mon: 3}, first: {era: 1, y: 1988}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 7, d: 24}, urls: {"en": "https://nationaltoday.com/childrens-day-in-vanuatu/"}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 30}, first: {"era": 1, "y": 1980}, urls: {"en": "https://nationaltoday.com/vanuatu-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 30}, first: {era: 1, y: 1980}, urls: {"en": "https://nationaltoday.com/vanuatu-independence-day/"}},
         {type: "1D", start: {mon: 11, d: 29}, inherits: "Unity Day"},
-        {inherits: "Constitution Day", type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/vanuatu-constitution-day/"}, first: {"era": 1, "y": 1979}},
+        {inherits: "Constitution Day", type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/vanuatu-constitution-day/"}, first: {era: 1, y: 1979}},
     ]
 }

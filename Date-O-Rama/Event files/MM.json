@@ -8,7 +8,7 @@
         {inherits: "Armed Forces Day", type: "1D", start: {d: 27, mon: 3}},
         {type: "1D", start: {d: 2, mon: 3}, titles: {"en": "Peasants’ Day"}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-myanmar/"}, first: {"era": 1, "y": 1947}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-myanmar/"}, first: {era: 1, y: 1947}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 2, d: 13}},
         {inherits: "Independence Day", type: "1D", start: {d: 4, mon: 1}, first: {era: 1, y: 1948}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Myanmar)"}},
     ]

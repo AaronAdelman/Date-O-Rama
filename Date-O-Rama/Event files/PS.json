@@ -10,7 +10,7 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 15}, first: {era: 1, y: 1988}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
-        {inherits: "Nakba Day", type: "1D", start: {mon: 5, d: 15}, first: {"era": 1, "y": 1998}},
+        {inherits: "Nakba Day", type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 1998}},
         {titles: {"he": "יום הנכסה", "en": "Naksa Day", "ar": "يوم النكسة‎"}, type: "1D", start: {mon: 6, d: 5}},
         {titles: {"he": "יום האדמה", "en": "Land Day", "ar": "يوم الأرض‎"}, type: "1D", start: {mon: 3, d: 30}},
         

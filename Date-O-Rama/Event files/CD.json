@@ -9,6 +9,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 30}, first: {era: 1, y: 1960}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 5, d: 17}, first: {era: 1, y: 1997}},
-        {type: "1D", start: {mon: 8, d: 1}, inherits: "Parents’ Day", first: {"era": 1, "y": 1979}},
+        {type: "1D", start: {mon: 8, d: 1}, inherits: "Parents’ Day", first: {era: 1, y: 1979}},
    ]
 }

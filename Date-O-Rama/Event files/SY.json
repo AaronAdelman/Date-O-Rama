@@ -12,7 +12,7 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 4, d: 17}, first: {era: 1, y: 1946}, urls: {"en": "https://en.wikipedia.org/wiki/Evacuation_Day_(Syria)"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
-        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, first: {"era": 1, "y": 1916}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, first: {era: 1, y: 1916}},
         {titles: {"en": "October Liberatory War Day", "ar": "حرب تشرين التحريرية"}, type: "1D", start: {mon: 10, d: 6}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 

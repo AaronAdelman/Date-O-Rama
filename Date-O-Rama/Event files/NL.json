@@ -20,6 +20,6 @@
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 5, d: 4}, titles: {"en": "Remembrance of the Dead", "nl": "Dodenherdenking", "he": "יום הזיכרון למתים"}},
         {inherits: "Independence Day", type: "1D", start: {d: 26, mon: 7}, first: {era: 1, y: 1581}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
-        {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {type: "1D", "era": 1, "y": 496}},
+        {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {type: "1D", era: 1, y: 496}},
    ]
 }

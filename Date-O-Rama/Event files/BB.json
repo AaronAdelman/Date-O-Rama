@@ -25,6 +25,6 @@
         {titles: {"en": "Africa Day"}, type: "1D", start: {mon: 5, d: 25}, emoji: "🌍"},
         {titles: {"en": "Day of National Significance"}, type: "1D", start: {mon: 7, d: 26}},
         {type: "1D", start: {mon: 8, d: 17}, titles: {"en": "Birthday of Marcus Garvey"}, inherits: "*BDay*"},
-        {inherits: "International Day for the Remembrance of the Slave Trade and Its Abolition", type: "1D", start: {mon: 8, d: 23}, first: {"era": 1, "y": 1998}},
+        {inherits: "International Day for the Remembrance of the Slave Trade and Its Abolition", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},
     ]
 }
