@@ -64,5 +64,6 @@
         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "Health Care Aide Day"}, urls: {"en": "https://nationaltoday.com/health-care-aide-day/"}},
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-day-of-remembrance-and-action-on-violence-against-women-canada/"}, titles: {"en": "National Day of Remembrance and Action on Violence Against Women"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-statute-of-westminster/"}, titles: {"en": "Anniversary of the Statute of Westminster"}},
+        {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/la-poutine-week/"}, titles: {"en": "La Poutine Week"}},
     ]
 }

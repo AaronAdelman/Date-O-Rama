@@ -57,5 +57,6 @@
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-napoleon-abueva/"}, titles: {"en": "Birth Anniversary of National Artist Napoleon Abueva"}, inherits: "*BDay*", first: {era: 1, y: 1930}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/julian-felipe-day/"}, titles: {"en": "Julian Felipe Day"}, first: {era: 1, y: 1861}},
         {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day"}, first: {era: 1, y: 1982}},
+        {inherits: "World Hijab Day", type: "1D", start: {mon: 2, d: 1}, first: {era: 1, y: 2021}},
     ]
 }
