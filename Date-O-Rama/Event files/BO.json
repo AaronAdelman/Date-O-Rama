@@ -8,7 +8,7 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 22}, titles: {"en": "Plurinational State of Bolivia Anniversary", "es": "Nacimiento del Estado Plurinacional de Bolivia"}, urls: {"en": "https://nationaltoday.com/plurinational-state-foundation-day/"}},
-        {type: "1D", start: {mon: 2, d: 2}, titles: {"en": "Feast of the Virgin of Candelaria", "es": "Fiesta de la Virgen de Candelaria", "qu": "Mamacha Candelaria"}},
+        {type: "1D", start: {mon: 2, d: 2}, titles: {"en": "Feast of the Virgin of Candelaria", "es": "Fiesta de la Virgen de Candelaria", "qu": "Mamacha Candelaria"}, urls: {"en": "https://nationaltoday.com/feast-of-candelaria/"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
