@@ -59,5 +59,7 @@
         {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day"}, first: {era: 1, y: 1982}},
         {inherits: "World Hijab Day", type: "1D", start: {mon: 2, d: 1}, first: {era: 1, y: 2021}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/womens-role-in-history-month/"}, titles: {"en": "Women’s Role in History Month"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-liberation-of-the-battle-of-manila/"}, titles: {"en": "Anniversary of the Liberation of the Battle of Manila"}, first: {era: 1, y: 1945}},
+
     ]
 }
