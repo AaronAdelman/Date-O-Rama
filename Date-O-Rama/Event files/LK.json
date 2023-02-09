@@ -11,5 +11,6 @@
         {type: "1D", start: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 10, d: 1}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 5, d: 22}, first: {era: 1, y: 1819}},
+        {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-sri-lanka/"}, inherits: "National Day"},
     ]
 }
