@@ -141,7 +141,7 @@
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/opera-day/", "he": "https://www.daysoftheyear.co.il/2020/02/opera-day.html"}, titles: {"en": "Opera Day", "he": "יום האופרה"}},
         {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Cut the Cord Day"}, urls: {"en": "https://nationaldaycalendar.com/national-cut-the-cord-day-february-9/"}, first: {era: 1, y: 2020}, emoji: "📺"},
         {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Bagel and Lox Day", "he": "יום הבייגל"}, emoji: "🥯", urls: {"en": "https://nationaldaycalendar.com/national-bagel-and-lox-day-february-9/", "he": "https://www.daysoftheyear.co.il/2019/02/bagel-day.html"}},
-        {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Pizza Day", "he": "יום הפיצה הבינלאומי"}, emoji: "🍕", urls: {"en": "https://www.daysoftheyear.com/days/pizza-day/", "he": "https://www.daysoftheyear.co.il/2017/02/9.html"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Pizza Day", "he": "יום הפיצה הבינלאומי"}, notes: {"en": "Pizza Pie Day"}, emoji: "🍕", urls: {"en": "https://www.daysoftheyear.com/days/pizza-day/", "he": "https://www.daysoftheyear.co.il/2017/02/9.html"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Toothache Day"}, urls: {"en": "https://www.daysoftheyear.com/days/toothache-day/"}, emoji: "🦷"},
         {type: "1D", start: {d: 10, mon: 2}, titles: {"en": "National Umbrella Day", "he": "יום המטריה"}, urls: {"en": "https://www.daysoftheyear.com/days/umbrella-day/", "he": "https://www.daysoftheyear.co.il/2018/02/10.html"}, emoji: "☂️"},
         {type: "1D", start: {d: 11, mon: 2}, titles: {"en": "National Peppermint Patty Day"}, urls: {"en": "https://www.daysoftheyear.com/days/peppermint-patty-day/"}},
@@ -715,5 +715,8 @@
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-marriage-week/"}, titles: {"en": "National Marriage Week"}},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/molasses-bar-day/"}, titles: {"en": "Molasses Bar Day"}},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/national-boy-scout-day/"}, titles: {"en": "National Boy Scout Day"}, first: {era: 1, y: 1910}},
+        {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/giving-hearts-day-second-thursday-in-february/"}, titles: {"en": "Giving Hearts Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/national-owen-day/"}, titles: {"en": "National Owen Day"}},
+        {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/read-in-the-bathtub-day/"}, titles: {"en": "Read In The Bathtub Day"}},
     ]
 }
