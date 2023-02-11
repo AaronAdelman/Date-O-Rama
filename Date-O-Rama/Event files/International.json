@@ -697,5 +697,10 @@
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/national-pork-rind-day/"}, titles: {"en": "National Pork Rind Day"}},
         {type: "1D", start: {mon: 2, d: 1, thruD: 7, wkd: [1]}, urls: {"en": "https://nationaltoday.com/scout-sunday/"}, titles: {"en": "Scout Sunday"}},
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/western-monarch-day/"}, titles: {"en": "Western Monarch Day"}},
+        {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/national-ashley-day-2/"}, titles: {"en": "National Ashley Day"}},
+        {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/national-lame-duck-day/"}, titles: {"en": "National Lame Duck Day"}},
+        {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/pay-a-compliment-day/"}, titles: {"en": "Pay a Compliment Day"}, first: {era: 1, y: 1995}},
+        {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/reclaim-social-day/"}, titles: {"en": "Reclaim Social Day"}},
+        {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/time-to-talk-day/"}, titles: {"en": "Time to Talk Day"}},
     ]
 }
