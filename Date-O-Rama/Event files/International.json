@@ -726,6 +726,5 @@
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-julio-day/"}, titles: {"en": "National Julio Day"}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-louis-day/"}, titles: {"en": "National Louis Day"}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/plimsoll-day/"}, titles: {"en": "Plimsoll Day"}},
-        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/teddy-day/"}, titles: {"en": "Teddy Day"}},
     ]
 }
