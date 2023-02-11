@@ -13,7 +13,7 @@
 
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "Iqbal Day", "ur": "یوم اقبال"}, urls: {"en": "https://en.wikipedia.org/wiki/Iqbal_Day"}, inherits: "*BDay*", first: {era: 1, y: 1938}},
-        {type: "1D", start: {d: 5, mon: 2}, titles: {"en": "Kashmir Solidarity Day", "ur": "یوم یکجحتی کشمیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Kashmir_Solidarity_Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 2, d: 5}, titles: {"en": "Kashmir Solidarity Day", "ur": "یوم یکجحتی کشمیر"}, urls: {"en": "https://nationaltoday.com/kashmir-solidarity-day/"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 5, d: 28}, titles: {"en": "Day of Greatness", "ur": "یوم تکبیر"}, urls: {"en": "https://en.wikipedia.org/wiki/Youm-e-Takbir"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 9, d: 6}, titles: {"en": "Defense Day", "ur": "یومِ دفاع"}, urls: {"en": "https://en.wikipedia.org/wiki/Defence_Day"}, first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 9, d: 7}, inherits: "Air Force Day", urls: {"en": "https://en.wikipedia.org/wiki/Air_Force_Day_(Pakistan)"}, first: {era: 1, y: 1965}},

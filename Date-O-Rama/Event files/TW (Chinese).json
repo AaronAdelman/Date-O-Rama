@@ -7,5 +7,6 @@
     eventSpecifications: [
         {type: "nD", start: {mon: 1, d: 1}, "end": {mon: 1, d: 3}, inherits: "Chinese New Year"},
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"}
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/tourism-day/"}, titles: {"en": "Tourism Day"}},
    ]
 }
