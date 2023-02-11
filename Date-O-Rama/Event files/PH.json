@@ -61,5 +61,6 @@
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/womens-role-in-history-month/"}, titles: {"en": "Women’s Role in History Month"}, first: {era: 1, y: 1989}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-liberation-of-the-battle-of-manila/"}, titles: {"en": "Anniversary of the Liberation of the Battle of Manila"}, first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/philippine-american-war-memorial-day/"}, titles: {"en": "Philippine-American War Memorial Day"}, emoji: "🇵🇭🇺🇸", first: {era: 1, y: 1902}},
+        {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/philippine-industry-and-made-in-the-philippines-products-week/"}, titles: {"en": "Philippine Industry and Made-in-the-Philippines Products Week"}, first: {era: 1, y: 1948}},
     ]
 }

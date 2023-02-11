@@ -118,6 +118,7 @@
     {type: "nD", start: {mon: 1, d: 18}, end: {mon: 1, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/week-of-prayer-for-christian-unity/"}, titles: {"en": "Week of Prayer for Christian Unity"}, first: {era: 1, y: 1941}},
     {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/holiday-hugs-day/"}, titles: {"en": "Holiday Hugs Day"}, first: {era: 1, y: 2021}},
     {type: "1D", start: {mon: 2, d: 6}, inherits: "National Valentine Shopping Reminder Day"},
+    {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/rose-day/"}, inherits: "Rose Day"},
     {type: "1D", start: {mon: 2, d: 13}, inherits: "National Valentine Shopping Reminder Day"},
     ]
 }
