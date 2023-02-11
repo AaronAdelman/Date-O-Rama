@@ -718,5 +718,14 @@
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/giving-hearts-day-second-thursday-in-february/"}, titles: {"en": "Giving Hearts Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/national-owen-day/"}, titles: {"en": "National Owen Day"}},
         {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/read-in-the-bathtub-day/"}, titles: {"en": "Read In The Bathtub Day"}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/all-the-news-thats-fit-to-print-day/"}, titles: {"en": "All the News That's Fit to Print Day"}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/international-cribbage-day/"}, titles: {"en": "International Cribbage Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 2, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-winter-bike-to-work-day/"}, titles: {"en": "International Winter Bike to Work Day"}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-cream-cheese-brownie-day/"}, titles: {"en": "National Cream Cheese Brownie Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-home-warranty-day/"}, titles: {"en": "National Home Warranty Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-julio-day/"}, titles: {"en": "National Julio Day"}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-louis-day/"}, titles: {"en": "National Louis Day"}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/plimsoll-day/"}, titles: {"en": "Plimsoll Day"}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/teddy-day/"}, titles: {"en": "Teddy Day"}},
     ]
 }

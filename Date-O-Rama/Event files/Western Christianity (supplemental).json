@@ -121,7 +121,8 @@
     {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/rose-day/"}, inherits: "Rose Day"},
     {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/propose-day/"}, titles: {"en": "Propose Day"}},
     {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/chocolate-day/"}, titles: {"en": "Chocolate Day"}},
-    
+    {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/valentismas/"}, titles: {"en": "Valentismas"}, first: {era: 1, y: 2019}},
+
     {type: "1D", start: {mon: 2, d: 13}, inherits: "National Valentine Shopping Reminder Day"},
     ]
 }
