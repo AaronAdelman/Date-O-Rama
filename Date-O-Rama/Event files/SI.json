@@ -10,5 +10,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {inherits: "Independence Day", type: "1D", start: {mon: 12, d: 26}, first: {era: 1, y: 1991}, titles: {"en": "Independence and Unity Day"}, urls: {"en": "https://nationaltoday.com/slovenia-independence-and-unity-day/"}},
         {type: "1D", titles: {"en": "Slovenians in Prekmurje Incorporated into the Mother Nation Day"}, start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/slovenians-in-prekmurje-incorporated-into-the-mother-nation-day/"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/preseren-day/"}, titles: {"en": "Prešeren Day"}, first: {era: 1, y: 1945}},
   ]
 }

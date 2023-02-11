@@ -713,5 +713,7 @@
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-week-of-black-women-in-the-arts/"}, titles: {"en": "International Week of Black Women In the Arts"}},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/love-a-mensch-week/"}, titles: {"en": "Love a Mensch Week"}},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-marriage-week/"}, titles: {"en": "National Marriage Week"}},
+        {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/molasses-bar-day/"}, titles: {"en": "Molasses Bar Day"}},
+        {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/national-boy-scout-day/"}, titles: {"en": "National Boy Scout Day"}, first: {era: 1, y: 1910}},
     ]
 }
