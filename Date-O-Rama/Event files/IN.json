@@ -192,5 +192,6 @@
         {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/lohri/"}, titles: {"en": "Lohri"}, emoji: "🔥"},
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/national-undhiyu-day/"}, titles: {"en": "National Undhiyu Day"}},
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/parakram-diwas/"}, titles: {"en": "Parakram Diwas"}},
+        {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/lui-ngai-ni/"}, titles: {"en": "Lui-Ngai-Ni"}},
     ]
 }

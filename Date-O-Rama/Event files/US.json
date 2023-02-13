@@ -283,6 +283,10 @@
         {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/georgia-day/"}, titles: {"en": "Georgia Day"}, notes: {"en": "Oglethorpe Day"}, first: {era: 1, y: 1909}},
         {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/naacp-day/"}, titles: {"en": "NAACP Day"}, first: {era: 1, y: 1909}},
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/black-love-day/"}, titles: {"en": "Black Love Day"}, first: {era: 1, y: 1993}},
+        {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/frederick-douglass-day/"}, titles: {"en": "Frederick Douglass Day"}, first: {era: 1, y: 1897}},
+        {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/league-of-women-voters-day/"}, titles: {"en": "League of Women Voters Day"}, first: {era: 1, y: 1920}},
+        {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-black-literacy-day/"}, titles: {"en": "National Black Literacy Day"}},
+        {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/statehood-day-in-arizona/"}, inherits: "Statehood Day", locations: {"en": "Arizona"}, first: {era: 1, y: 1912}},
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
