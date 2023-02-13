@@ -281,6 +281,7 @@
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/ronald-reagan-day/"}, titles: {"en": "Ronald Reagan Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 2, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/african-american-coaches-day/"}, titles: {"en": "African American Coaches Day"}},
         {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/georgia-day/"}, titles: {"en": "Georgia Day"}, notes: {"en": "Oglethorpe Day"}, first: {era: 1, y: 1909}},
+        {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/naacp-day/"}, titles: {"en": "NAACP Day"}, first: {era: 1, y: 1909}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
