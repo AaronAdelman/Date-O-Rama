@@ -124,9 +124,13 @@
     {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/teddy-day/"}, titles: {"en": "Teddy Day"}},
     {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/promise-day/"}, titles: {"en": "Promise Day"}},
     {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/hug-day/"}, titles: {"en": "Hug Day"}},
+    {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/kiss-day/"}, titles: {"en": "Kiss Day"}},
     {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/autism-sunday/"}, titles: {"en": "Autism Sunday"}, first: {era: 1, y: 2002}},
     {type: "1D", start: {mon: 2, d: 13}, inherits: "National Valentine Shopping Reminder Day"},
     {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/valentismas/"}, titles: {"en": "Valentismas"}, first: {era: 1, y: 2019}},
-
+    {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/desperation-day/"}, titles: {"en": "Desperation Day"}, first: {era: 1, y: 2011}},
+    {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/dream-your-sweet-day/"}, titles: {"en": "Dream Your Sweet Day"}},
+    {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/self-love-day/", "he": "https://www.daysoftheyear.co.il/2021/02/love-me-day.html"}, titles: {"en": "Self-Love Day", "he": "יום מאוהב/ת בעצמי בטירוף"}, notes: {"en": "International Natural Day"}, first: {era: 1, y: 2008}},
+    {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-wingman-day/"}, titles: {"en": "National Wingman Day"}, first: {era: 1, y: 2016}},
     ]
 }

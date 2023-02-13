@@ -151,7 +151,6 @@
         {type: "1D", start: {d: 12, mon: 2}, titles: {"en": "National Plum Pudding Day"}, urls: {urls: "https://www.daysoftheyear.com/days/plum-pudding-day/"}},
         {type: "1D", start: {d: 13, mon: 2}, titles: {"en": "Galentine’s Day"}, urls: {"en": "https://nationaltoday.com/galentines-day/"}, emoji: "💛"},
         {type: "1D", start: {d: 13, mon: 2}, titles: {"en": "National Cheddar Day"}, urls: {"en": "https://nationaldaycalendar.com/national-cheddar-day-february-13/"}, emoji: "🧀", first: {era: 1, y: 2019}},
-        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/self-love-day/", "he": "https://www.daysoftheyear.co.il/2021/02/love-me-day.html"}, titles: {"en": "Self-Love Day", "he": "יום מאוהב/ת בעצמי בטירוף"}},
         {type: "1D", start: {d: 14, mon: 2}, titles: {"en": "National Ferris Wheel Day", "he": "יום הגלגל הענק"}, urls: {"en": "https://www.daysoftheyear.com/days/ferris-wheel-day/", "he": "https://www.daysoftheyear.co.il/2018/02/14.html"}, emoji: "🎡"},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-pet-theft-awareness-day/", "he": "https://www.daysoftheyear.co.il/2021/02/pet-theft-day.html"}, titles: {"en": "National Pet Theft Awareness Day", "he": "יום המודעות לגניבת חיות מחמד"}, emoji: "🐈‍⬛🦮🐇"},
         {type: "1D", start: {d: 15, mon: 2}, titles: {"en": "National Gumdrop Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gumdrop-day/"}},
@@ -743,6 +742,15 @@
         {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/national-lost-penny-day/"}, titles: {"en": "National Lost Penny Day"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/safety-pup-day/"}, titles: {"en": "Safety Pup Day"}, first: {era: 1, y: 1985}},
         {type: "1D", start: {mon: 2, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/super-chicken-wing-day/"}, titles: {"en": "Super Chicken Wing Day"}},
-
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/employee-legal-awareness-day/"}, titles: {"en": "Employee Legal Awareness Day"}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/get-different-name-day/"}, titles: {"en": "Get a Different Name Day"}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/international-epilepsy-day/"}, titles: {"en": "International Epilepsy Day"}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-break-up-with-your-carrier-day/"}, titles: {"en": "National Break Up With Your Carrier Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-clean-out-your-computer-day/"}, titles: {"en": "National Clean Out Your Computer Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-crab-rangoon-day/"}, titles: {"en": "National Crab Rangoon Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-derrick-day/"}, titles: {"en": "National Derrick Day"}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-internet-friends-day/"}, titles: {"en": "National Internet Friends Day"}},
+        {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-jamie-day/"}, titles: {"en": "National Jamie Day"}},
+        {type: "1D", start: {mon: 2, d: 13}, end: {mon: 2, d: 19}, urls: {"en": "https://nationaltoday.com/duchenne-muscular-dystrophy-awareness-week/"}, titles: {"en": "Duchenne Muscular Dystrophy Awareness Week"}},
     ]
 }
