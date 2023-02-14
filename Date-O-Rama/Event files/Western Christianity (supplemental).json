@@ -134,5 +134,7 @@
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-wingman-day/"}, titles: {"en": "National Wingman Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/international-book-giving-day/"}, titles: {"en": "International Book Giving Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-cream-filled-chocolates-day/"}, titles: {"en": "National Cream-Filled Chocolates Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/love-reset-day/"}, titles: {"en": "Love Reset Day"}},
+        {type: "nD", start: {mon: 2, d: 15}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/make-mine-chocolate/"}, titles: {"en": "Make Mine Chocolate"}, first: {era: 1, y: 2002}},
     ]
 }

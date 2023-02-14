@@ -141,7 +141,7 @@
         {titles: {"en": "National Pearl Harbor Remembrance Day", "he": "יום פרל הארבור"}, notes: {"en": "Pearl Harbor Remembrance Day\nPearl Harbor Day"}, type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://en.wikipedia.org/wiki/National_Pearl_Harbor_Remembrance_Day", "he": "https://www.daysoftheyear.co.il/2018/12/pearlharbor-day.html"}, first: {era: 1, y: 1994}},
         {inherits: "Columbus Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, first: {type: "1D", era: 1, y: 2004}, urls: {"en": "https://www.daysoftheyear.com/days/columbus-day/"}},
         {titles: {"en": "Indigenous Peoples’ Day"}, type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/indigenous-peoples-day/"}, first: {era: 1, y: 1989}},
-        {titles: {"en": "Susan B. Anthony Day"}, type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://en.wikipedia.org/wiki/Susan_B._Anthony_Day"}, first: {era: 1, y: 1977}},
+        {titles: {"en": "Susan B. Anthony Day"}, type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/susan-b-anthony-day/"}, first: {era: 1, y: 1977}},
         {inherits: "Native American Day", type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 4}, first: {era: 1, y: 1997}, "locations": {"en": "California and Nevada"}},
         {inherits: "Native American Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 1990}, "locations": {"en": "South Dakota"}, urls: {"en": "https://nationaldaycalendar.com/native-american-day-second-monday-in-october/"}},
         {inherits: "Native American Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 4}, first: {era: 1, y: 1994}, "locations": {"en": "Tennessee"}},
@@ -287,6 +287,7 @@
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/league-of-women-voters-day/"}, titles: {"en": "League of Women Voters Day"}, first: {era: 1, y: 1920}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-black-literacy-day/"}, titles: {"en": "National Black Literacy Day"}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/statehood-day-in-arizona/"}, inherits: "Statehood Day", locations: {"en": "Arizona"}, first: {era: 1, y: 1912}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/remember-the-maine-day/"}, titles: {"en": "Remember the Maine Day"}, first: {era: 1, y: 1898}},
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

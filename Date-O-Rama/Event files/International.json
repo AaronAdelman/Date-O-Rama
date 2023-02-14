@@ -764,5 +764,15 @@
         {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/love-teaching-week/"}, titles: {"en": "Love Teaching Week"}, first: {era: 1, y: 2015}},
         {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/nest-box-week/"}, titles: {"en": "Nest Box Week"}, first: {era: 1, y: 1997}},
         {type: "nD", start: {mon: 2, d: 14}, end: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/random-acts-of-kindness-week/"}, titles: {"en": "Random Acts of Kindness Week"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-angelman-day/"}, titles: {"en": "International Angelman Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-childhood-cancer-day/"}, titles: {"en": "International Childhood Cancer Day"}, first: {era: 1, y: 2002}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/lui-ngai-ni-2/"}, titles: {"en": "Lui-Ngai-Ni"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-black-girl-magic-day/"}, titles: {"en": "National Black Girl Magic Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-gumdrop-day/"}, titles: {"en": "National Gumdrop Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-i-want-butterscotch-day/"}, titles: {"en": "National I Want Butterscotch Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-marcus-day/"}, titles: {"en": "National Marcus Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/single-awareness-day/"}, titles: {"en": "Single Awareness Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/singles-awareness-day/"}, titles: {"en": "Singles Awareness Day"}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/st-skeletors-day/"}, titles: {"en": "St. Skeletor’s Day"}, first: {era: 1, y: 1998}},
     ]
 }

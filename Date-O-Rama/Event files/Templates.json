@@ -269,6 +269,7 @@
         {template: "Palm Sunday", titles: {"en": "Palm Sunday", "he": "יום ראשון של הדקלים", "es": "Domingo de Ramas"}, type: "1D", start: {"Easter": "Easter", "offsetD": -7}},
         {template: "Pan American Day", type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Pan American Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Pan_American_Day"}, emoji: "🌎"},
         {template: "Parents’ Day", type: "1D", start: {mon: 5, d: 8}, titles: {"en": "Parents’ Day", "he": "יום ההורים", "ko": "어버이날"}, emoji: "👨‍👩‍👧‍👦", urls: {"en": "https://en.wikipedia.org/wiki/Parents%27_Day"}},
+        {template: "Parinirvana Day", type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/parinirvana-day-nirvana-day/"}, titles: {"en": "Parinirvana Day"}, notes: {"en": "Nirvana Day"}},
         {template: "Patriots’ Day", type: "1D", start: {mon: 4, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Patriots’ Day", "fr": "Journée des patriotes"}, urls: {"en": "https://en.wikipedia.org/wiki/Patriots%27_Day"}},
         {template: "Pentecost", titles: {"en": "Pentecost"}, notes: {"en": "Whitsunday\nWhit Sunday"}, type: "1D", start: {"Easter": "Easter", "offsetD": 49}, emoji: "⚪️", urls: {"en": "https://nationaltoday.com/pentecost/"}},
         {template: "Pi Day", type: "1D", start: {d: 14, mon: 3}, titles: {"en": "Pi Day", "he": "יום פאי"}, emoji: "π", urls: {"en": "https://www.piday.org/"}},

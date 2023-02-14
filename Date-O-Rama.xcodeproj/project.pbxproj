@@ -219,6 +219,8 @@
 		A56F0DA225F1705200301969 /* Jewish zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A56F0DA025F1705200301969 /* Jewish zodiac.json */; };
 		A57083F3254818B200904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
+		A5746303299C23A600896FC7 /* XK.json in Resources */ = {isa = PBXBuildFile; fileRef = A5746302299C23A600896FC7 /* XK.json */; };
+		A5746304299C23A600896FC7 /* XK.json in Resources */ = {isa = PBXBuildFile; fileRef = A5746302299C23A600896FC7 /* XK.json */; };
 		A575913E282BE18400675058 /* IE.json in Resources */ = {isa = PBXBuildFile; fileRef = A575913D282BE18400675058 /* IE.json */; };
 		A575913F282BE18400675058 /* IE.json in Resources */ = {isa = PBXBuildFile; fileRef = A575913D282BE18400675058 /* IE.json */; };
 		A5759141282BE28800675058 /* NO.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759140282BE28800675058 /* NO.json */; };
@@ -1206,6 +1208,7 @@
 		A56F0D7D25F1634700301969 /* ASAEKEventEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAEKEventEditView.swift; sourceTree = "<group>"; };
 		A56F0DA025F1705200301969 /* Jewish zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish zodiac.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		A5746302299C23A600896FC7 /* XK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = XK.json; sourceTree = "<group>"; };
 		A575913D282BE18400675058 /* IE.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IE.json; sourceTree = "<group>"; };
 		A5759140282BE28800675058 /* NO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NO.json; sourceTree = "<group>"; };
 		A5759143282BE30700675058 /* DK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DK.json; sourceTree = "<group>"; };
@@ -2027,6 +2030,7 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
+				A5746302299C23A600896FC7 /* XK.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -2691,6 +2695,7 @@
 				A5BDE77D26677E7900F47416 /* Islam (supplemental).json in Resources */,
 				A502D3E628637E7000A625A9 /* RW.json in Resources */,
 				A5B999BE28622BBA00072FD5 /* CD.json in Resources */,
+				A5746304299C23A600896FC7 /* XK.json in Resources */,
 				A5EFFFCD285B81BD00F2205F /* VN.json in Resources */,
 				A5EFFFBD285B811A00F2205F /* TR.json in Resources */,
 				A5E4960028624EFE001BF40C /* GQ.json in Resources */,
@@ -3079,6 +3084,7 @@
 				A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */,
 				A5C77C062433361900CFEE47 /* Preview Assets.xcassets in Resources */,
 				A5E496232862525C001BF40C /* KY.json in Resources */,
+				A5746303299C23A600896FC7 /* XK.json in Resources */,
 				A5E292D2285A59BB00925EBD /* HN.json in Resources */,
 				A5C72A0E2967681700B8442A /* RU (Julian).json in Resources */,
 				A5E04AB02851CA5F001A4911 /* AQ.json in Resources */,
