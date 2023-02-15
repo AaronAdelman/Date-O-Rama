@@ -6,7 +6,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
     eventSpecifications: [
-        {inherits: "Revolution Day", type: "1D", start: {mon: 2, d: 17}, first: {era: 1, y: 2012}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 2, d: 17}, first: {era: 1, y: 2012}, notes: {"en": "February 17th Revolution"}, urls: {"en": "https://nationaltoday.com/february-17th-revolution/"}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 9, d: 16}, first: {era: 1, y: 2012}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 10, d: 23}, first: {era: 1, y: 2012}, urls: {"en": "https://nationaltoday.com/libya-liberation-day/"}},

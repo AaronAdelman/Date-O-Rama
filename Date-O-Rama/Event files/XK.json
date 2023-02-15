@@ -6,5 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.00, "blue": 0.50},
     eventSpecifications: [
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/day-of-ashakalia/"}, titles: {"en": "Day of Ashakalia"}},
+        {type: "1D", start: {mon: 2, d: 17}, urls: {"en": "https://nationaltoday.com/kosovo-independence-day/"}, inherits: "Independence Day", first: {era: 1, y: 2008}},
+
     ]
 }
