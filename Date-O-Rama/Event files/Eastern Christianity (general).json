@@ -7,7 +7,7 @@
         {titles: {"en": "Zacchaeus Sunday"}, notes: {"en": "Sunday of the Canaanite"}, type: "1D", start: {"Easter": "Easter", "offsetD": -77}},
         {titles: {"en": "The Publican and the Pharisee"}, type: "1D", start: {"Easter": "Easter", "offsetD": -70}},
         {titles: {"en": "The Prodigal Son"}, type: "1D", start: {"Easter": "Easter", "offsetD": -63}},
-        {titles: {"en": "The Last Judgment"}, notes: {"en": "Meat-Fare Sunday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -49}},
+        {titles: {"en": "The Last Judgment"}, notes: {"en": "Meat-Fare Sunday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -56}, urls: {"en": "https://nationaltoday.com/orthodox-meatfare-sunday/"}},
         {titles: {"en": "Sunday of Forgiveness"}, notes: {"en": "Cheese-Fare Sunday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -49}},
         {titles: {"en": "Clean Monday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
         {titles: {"en": "Theodore Saturday"}, notes: {"en": "Lent (day 4)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -43}},

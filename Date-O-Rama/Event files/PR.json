@@ -13,6 +13,7 @@
         {inherits: "Constitution Day", type: "1D", start: {mon: 7, d: 25}, first: {era: 1, y: 1953}, urls: {"en": "https://en.wikipedia.org/wiki/Puerto_Rico_Constitution_Day"}},
         {titles: {"en": "Birthday of Dr. José Celso Barbosa", "es": "Natalicio de Dr. José Celso Barbosa"}, type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Jos%C3%A9_Celso_Barbosa"}, inherits: "*BDay*"},
         {titles: {"en": "Discovery of Puerto Rico", "es": "Día del Descubrimiento de Puerto Rico"}, type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/discovery-of-puerto-rico-day/"}},
+        {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/the-day-of-illustrious-puerto-ricans/"}, titles: {"en": "The Day of Illustrious Puerto Ricans"}},
 
         {inherits: "Epiphany Eve", type: "1D", start: {mon: 1, d: 5}},
         {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
