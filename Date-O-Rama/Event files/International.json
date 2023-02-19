@@ -808,6 +808,5 @@
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/supermarket-employee-day/"}, titles: {"en": "Supermarket Employee Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/tex-avery-day/"}, titles: {"en": "Tex Avery Day"}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/woolworths-day/"}, titles: {"en": "Woolworth’s Day"}},
-        {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/hong-kong-arts-festival/"}, titles: {"en": "Hong Kong Arts Festival"}},
     ]
 }
