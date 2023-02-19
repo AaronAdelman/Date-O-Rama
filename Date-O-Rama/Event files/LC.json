@@ -7,7 +7,8 @@
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Independence Day", type: "1D", start: {d: 22, mon: 2}, first: {era: 1, y: 1979}},
+        {inherits: "Independence Day", type: "1D", start: {d: 22, mon: 2}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/independence-day-saint-lucia/"}},
+        
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-day-of-saint-lucia/"}, inherits: "National Day", first: {era: 1, y: 1979}},
     ]

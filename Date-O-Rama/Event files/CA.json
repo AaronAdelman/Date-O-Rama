@@ -68,5 +68,6 @@
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-have-a-heart-day/"}, titles: {"en": "National Have a Heart Day"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/canadas-agriculture-day/"}, titles: {"en": "Agriculture Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-flag-of-canada-day/"}, titles: {"en": "National Flag of Canada Day"}, first: {era: 1, y: 1965}},
+        {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/pink-shirt-day/"}, titles: {"en": "Pink Shirt Day"}, first: {era: 1, y: 2007}},
     ]
 }

@@ -53,5 +53,6 @@
         
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/euro-day/", "he": "https://www.daysoftheyear.co.il/2019/01/euro-day.html"}, titles: {"en": "Euro Day", "he": "יום האירו"}, emoji: "💶"},
         {inherits: "Safer Internet Day", type: "1D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/european-day-for-victims-of-crime/"}, titles: {"en": "European Day for Victims of Crime"}},
     ]
 }
