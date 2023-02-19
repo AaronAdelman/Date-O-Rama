@@ -795,6 +795,6 @@
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-student-volunteer-day/"}, titles: {"en": "National Student Volunteer Day"}},
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-whistleblower-reward-day/"}, titles: {"en": "National Whistleblower Reward Day"}},
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/no-politics-day/"}, titles: {"en": "No Politics Day"}, first: {era: 1, y: 2021}},
-
+        {type: "1D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/card-reading-day/"}, titles: {"en": "Card Reading Day"}},
     ]
 }

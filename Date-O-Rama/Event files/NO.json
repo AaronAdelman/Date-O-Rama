@@ -17,5 +17,6 @@
         {titles: {"en": "Crown Princess Mette-Marit’s Day"}, type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/crown-princess-mette-marits-day/"}, first: {era: 1, y: 2002}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/sami-national-day/"}, titles: {"en": "Sámi National Day"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "1D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/king-harald-vs-day/"}, titles: {"en": "King Harald V’s Day"}, first: {era: 1, y: 1999}},
     ]
 }

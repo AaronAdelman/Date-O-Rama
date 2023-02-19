@@ -11,5 +11,6 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 30}, first: {era: 1, y: 1980}, urls: {"en": "https://nationaltoday.com/vanuatu-independence-day/"}},
         {type: "1D", start: {mon: 11, d: 29}, inherits: "Unity Day"},
         {inherits: "Constitution Day", type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/vanuatu-constitution-day/"}, first: {era: 1, y: 1979}},
+        {type: "1D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/father-lini-day/"}, titles: {"en": "Father Lini Day"}, first: {era: 1, y: 1999}},
     ]
 }
