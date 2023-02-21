@@ -796,7 +796,6 @@
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-whistleblower-reward-day/"}, titles: {"en": "National Whistleblower Reward Day"}},
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/no-politics-day/"}, titles: {"en": "No Politics Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/card-reading-day/"}, titles: {"en": "Card Reading Day"}},
-        {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/be-humble-day/"}, titles: {"en": "Be Humble Day"}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/cook-a-sweet-potato-day/"}, titles: {"en": "Cook a Sweet Potato Day"}},
         {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/inconvenience-yourself-day/"}, titles: {"en": "Inconvenience Yourself Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/national-heart-valve-disease-awareness-day/"}, titles: {"en": "National Heart Valve Disease Awareness Day"}},
@@ -805,7 +804,6 @@
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/recreational-sports-fitness-day/"}, titles: {"en": "Recreational Sports & Fitness Day"}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/scouts-founders-day/"}, titles: {"en": "Scouts Founder’s Day"}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/single-tasking-day/"}, titles: {"en": "Single Tasking Day"}},
-        {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/supermarket-employee-day/"}, titles: {"en": "Supermarket Employee Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/tex-avery-day/"}, titles: {"en": "Tex Avery Day"}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/woolworths-day/"}, titles: {"en": "Woolworth’s Day"}},
     ]
