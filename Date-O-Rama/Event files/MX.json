@@ -26,5 +26,6 @@
         {type: "1D", start: {mon: 12, d: 12}, inherits: "Our Lady of Guadalupe Day", first: {era: 1, y: 1531}},
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas"}},
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}, titles: {"en": "Mariachi Day"}},
+        {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/flag-day-mexico/"}, inherits: "Flag Day", first: {era: 1, y: 1935}},
     ]
 }

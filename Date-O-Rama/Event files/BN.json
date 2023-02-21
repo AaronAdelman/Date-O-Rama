@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "National Day", type: "1D", start: {mon: 2, d: 23}, first: {era: 1, y: 1984}},
+        {inherits: "National Day", type: "1D", start: {mon: 2, d: 23}, first: {era: 1, y: 1984}, urls: {"en": "https://nationaltoday.com/national-day-brunei/"}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 5, d: 31}},
     ]
 }

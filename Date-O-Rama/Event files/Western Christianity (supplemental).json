@@ -136,5 +136,7 @@
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-cream-filled-chocolates-day/"}, titles: {"en": "National Cream-Filled Chocolates Day"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/love-reset-day/"}, titles: {"en": "Love Reset Day"}},
         {type: "nD", start: {mon: 2, d: 15}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/make-mine-chocolate/"}, titles: {"en": "Make Mine Chocolate"}, first: {era: 1, y: 2002}},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://nationaltoday.com/friday-fish-fry-day/"}, titles: {"en": "Friday Fish Fry Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://nationaltoday.com/national-tartar-sauce-day/"}, titles: {"en": "National Tartar Sauce Day"}, first: {era: 1, y: 2017}},
     ]
 }
