@@ -1,0 +1,10 @@
+{
+    titles: {"*": "GR"},
+    "//": "Greece",
+    defaultLocale: "en",
+    calendarCode: "jul",
+    calendarColor: {"red": 0.00, "green": 0.08, "blue": 0.54},
+    eventSpecifications: [
+        {inherits: "Clean Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
+    ]
+}

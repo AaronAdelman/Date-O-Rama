@@ -293,6 +293,8 @@
 		A5837BE1271C139700047475 /* Named full moons.json in Resources */ = {isa = PBXBuildFile; fileRef = A5837BE0271C139700047475 /* Named full moons.json */; };
 		A5837BE2271C139700047475 /* Named full moons.json in Resources */ = {isa = PBXBuildFile; fileRef = A5837BE0271C139700047475 /* Named full moons.json */; };
 		A584C90024B646210014CE2E /* Judaism (times).json in Resources */ = {isa = PBXBuildFile; fileRef = A584C8FF24B646210014CE2E /* Judaism (times).json */; };
+		A585D6D229A6B3290033BCB9 /* GR (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A585D6D129A6B3290033BCB9 /* GR (Julian).json */; };
+		A585D6D329A6B3290033BCB9 /* GR (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A585D6D129A6B3290033BCB9 /* GR (Julian).json */; };
 		A58BA9C725EFCD9D0082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
 		A58BA9CD25EFCDA60082DA64 /* Western zodiac.json in Resources */ = {isa = PBXBuildFile; fileRef = A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */; };
 		A593225D2577F4B900318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
@@ -1246,6 +1248,7 @@
 		A5837BE0271C139700047475 /* Named full moons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Named full moons.json"; sourceTree = "<group>"; };
 		A584C8FC24B4FDC10014CE2E /* ASAEventsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventsFile.swift; sourceTree = "<group>"; };
 		A584C8FF24B646210014CE2E /* Judaism (times).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (times).json"; sourceTree = "<group>"; };
+		A585D6D129A6B3290033BCB9 /* GR (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GR (Julian).json"; sourceTree = "<group>"; };
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
@@ -1799,6 +1802,7 @@
 				A5E495F328624EFE001BF40C /* GN.json */,
 				A5E495EF28624EFD001BF40C /* GP.json */,
 				A5E495F428624EFE001BF40C /* GQ.json */,
+				A585D6D129A6B3290033BCB9 /* GR (Julian).json */,
 				A581B87E284E55E500407D68 /* GR.json */,
 				A5E4960128624F55001BF40C /* GS.json */,
 				A5EFFFD1285B849900F2205F /* GT.json */,
@@ -2024,13 +2028,13 @@
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
 				A5FB22D2286390E500B5042B /* WF.json */,
 				A5F3B01A28563CB000865CEB /* WS.json */,
+				A5746302299C23A600896FC7 /* XK.json */,
 				A5EF0001285B8EEA00F2205F /* YE (Muslim).json */,
 				A5FB22D52863910C00B5042B /* YE.json */,
 				A5FB22D82863912500B5042B /* YT.json */,
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
-				A5746302299C23A600896FC7 /* XK.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -2556,6 +2560,7 @@
 				A5EFFFD3285B849900F2205F /* GT.json in Resources */,
 				A5B999D628622E0F00072FD5 /* DJ.json in Resources */,
 				A5BC61472709B11800888611 /* Western Christianity (supplemental).json in Resources */,
+				A585D6D329A6B3290033BCB9 /* GR (Julian).json in Resources */,
 				A5E495FA28624EFE001BF40C /* GI.json in Resources */,
 				A5E04AB22851CA6D001A4911 /* Sunni Islam (times, MWL).json in Resources */,
 				A5EB851C2869E9F700C9321A /* SY (Julian).json in Resources */,
@@ -3133,6 +3138,7 @@
 				A5EB85182869DBB900C9321A /* LB (Julian).json in Resources */,
 				A5EFFFBE285B811A00F2205F /* UG.json in Resources */,
 				A5BC24C02796EABE00D14B21 /* Jewish planetary hours.json in Resources */,
+				A585D6D229A6B3290033BCB9 /* GR (Julian).json in Resources */,
 				A5EFFFE4285B86D000F2205F /* HT.json in Resources */,
 				A5FB22A728638D2B00B5042B /* SJ.json in Resources */,
 				A5F3B0182855FEC700865CEB /* RU.json in Resources */,

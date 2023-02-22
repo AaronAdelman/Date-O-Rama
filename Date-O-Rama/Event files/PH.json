@@ -63,5 +63,6 @@
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/philippine-american-war-memorial-day/"}, titles: {"en": "Philippine-American War Memorial Day"}, emoji: "🇵🇭🇺🇸", first: {era: 1, y: 1902}},
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/philippine-industry-and-made-in-the-philippines-products-week/"}, titles: {"en": "Philippine Industry and Made-in-the-Philippines Products Week"}, first: {era: 1, y: 1948}},
         {type: "nD", start: {mon: 2, d: 22}, end: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/edsa-people-power-commemoration-week/"}, titles: {"en": "EDSA People Power Commemoration Week"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/people-power-anniversary/"}, titles: {"en": "People Power Anniversary"}, notes: {"en": "EDSA Revolution Anniversary"}, first: {era: 1, y: 1986}},
     ]
 }

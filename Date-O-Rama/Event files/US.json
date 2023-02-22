@@ -299,6 +299,8 @@
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/edward-dickinson-baker-day/"}, titles: {"en": "Edward Dickinson Baker Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/twin-peaks-day/"}, titles: {"en": "Twin Peaks Day"}, first: {era: 1, y: 2018}},
         {type: "nD", start: {mon: 2, d: 24}, end: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/whooping-crane-festival/"}, titles: {"en": "Whooping Crane Festival"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/black-lives-matter-day/"}, titles: {"en": "Black Lives Matter Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/carnival-day/"}, titles: {"en": "Carnival Day"}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
