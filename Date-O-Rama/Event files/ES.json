@@ -35,5 +35,6 @@
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/dia-de-la-constitucion/", "he": "https://www.daysoftheyear.co.il/2018/12/constitution-day-in-spain.html"}, inherits: "Constitution Day", first: {era: 1, y: 1978}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/immaculate-conception-day-spain/"}},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/reconquest-day/"}, titles: {"en": "Reconquest Day"}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/andalusia-day/"}, titles: {"en": "Andalusia Day"}, first: {era: 1, y: 1980}},
     ]
 }

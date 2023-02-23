@@ -841,5 +841,12 @@
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/no-brainer-day/"}, titles: {"en": "No Brainer Day"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/the-big-breakfast-day/"}, titles: {"en": "The Big Breakfast Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/world-ngo-day/"}, titles: {"en": "World NGO Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/car-keys-and-small-change-day/"}, titles: {"en": "Car Keys and Small Change Day"}},
+        {type: "1D", start: {mon: 2, d: -1}, urls: {"en": "https://nationaltoday.com/international-repetitive-strain-injury-awareness-day/"}, titles: {"en": "International Repetitive Strain Injury Awareness Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/linus-pauling-day/"}, titles: {"en": "Linus Pauling Day"}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-customized-wheel-and-tire-day/"}, titles: {"en": "National Customized Wheel and Tire Day"}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-essay-day/"}, titles: {"en": "National Essay Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 2, d: 29}, urls: {"en": "https://nationaltoday.com/national-time-refund-day/"}, titles: {"en": "National Time Refund Day"}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/rare-disease-day/"}, titles: {"en": "Rare Disease Day"}, first: {era: 1, y: 2008}},
     ]
 }
