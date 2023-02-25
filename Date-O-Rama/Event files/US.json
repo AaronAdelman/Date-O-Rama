@@ -301,6 +301,11 @@
         {type: "nD", start: {mon: 2, d: 24}, end: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/whooping-crane-festival/"}, titles: {"en": "Whooping Crane Festival"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/black-lives-matter-day/"}, titles: {"en": "Black Lives Matter Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/carnival-day/"}, titles: {"en": "Carnival Day"}},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/california-dried-plum-digestive-month/"}, titles: {"en": "California Dried Plum Digestive Month"}, first: {era: 1, y: 2007}},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/california-restaurant-month/"}, titles: {"en": "California Restaurant Month"}},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-poverty-in-america-awareness-month/"}, titles: {"en": "National Poverty in America Awareness Month"}},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/prune-breakfast-month/"}, titles: {"en": "Prune Breakfast Month"}},
+        {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/shape-up-us-month/"}, titles: {"en": "Shape Up US Month"}, first: {era: 1, y: 2010}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
