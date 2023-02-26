@@ -29,9 +29,6 @@ struct ASAClocksTab: View {
                     Spacer()
                     
                     Menu {
-//                        Text("Locations")
-//                            .foregroundColor(.secondary)
-                        
                         Button(action: {
                             self.isShowingNewLocationView = true
                         }, label: {
@@ -90,13 +87,6 @@ struct ASAClocksTab: View {
                                 Text("Sort locations north to south")
                             })
                         }
-                        
-//                        Divider()
-//
-//                        Text("Clocks")
-//                            .foregroundColor(.secondary)
-//
-//                        EditButton()
                     } label: {
                         Image(systemName: "gear")
                             .symbolRenderingMode(.multicolor)
@@ -149,7 +139,6 @@ struct ASAClocksTab: View {
                 .listStyle(GroupedListStyle())
                 .navigationBarHidden(self.isNavigationBarHidden)
                 .navigationBarTitle("", displayMode: .inline)
-//                .navigationBarBackButtonHidden(true)
                 .navigationBarItems(trailing: EditButton())
                 .onAppear {
                     self.isNavigationBarHidden = true
@@ -164,6 +153,8 @@ struct ASAClocksTab: View {
     } // var body
 } // struct ASAClocksTab
 
+
+// MARK:  -
 
 struct ASARadioButtonLabel: View {
     var on: Bool

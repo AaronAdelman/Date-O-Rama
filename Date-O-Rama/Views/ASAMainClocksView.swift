@@ -39,10 +39,10 @@ struct ASAMainClocksSectionView: View {
     
     @State private var showingActionSheet = false
     
-    #if os(watchOS)
-    #else
+#if os(watchOS)
+#else
     @Environment(\.editMode) var editMode
-    #endif
+#endif
     
     var body: some View {
         let location = locationWithClocks.location
@@ -77,21 +77,19 @@ struct ASAMainClocksSectionView: View {
                 
                 Divider()
                 
-//                if location.type == .EarthLocation {
-                    Button(
-                        action: {
-                            self.detail = .newClock
-                            self.showingDetailView = true
-                            
-                        }
-                    ) {
-                        HStack {
-                            Image(systemName: "plus.circle.fill")
-                                .symbolRenderingMode(.multicolor)
-                            Text("Add clock")
-                        } // HStack
+                Button(
+                    action: {
+                        self.detail = .newClock
+                        self.showingDetailView = true
+                        
                     }
-//                }
+                ) {
+                    HStack {
+                        Image(systemName: "plus.circle.fill")
+                            .symbolRenderingMode(.multicolor)
+                        Text("Add clock")
+                    } // HStack
+                }
                 
 #if os(watchOS)
 #else
@@ -165,7 +163,7 @@ struct ASAMainClocksSectionView: View {
                             Image(systemName: "arrow.down.to.line")
                         }
                     })
-
+                    
                 }
                 
                 if locationWithClocks.clocks.count > 1 {
@@ -210,7 +208,7 @@ struct ASAMainClocksSectionView: View {
                             }
                             Spacer()
                         } // HStack
-                    ASALocationDetailView(locationWithClocks: $locationWithClocks, now: $now)
+                        ASALocationDetailView(locationWithClocks: $locationWithClocks, now: $now)
                     }
                     .font(.body)
                 } // switch detail

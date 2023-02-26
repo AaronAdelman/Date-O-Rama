@@ -76,32 +76,7 @@ struct ASAProcessedClock {
         self.dateString = dateString
         self.timeString = timeString
         let timeZone = location.timeZone
-//        #if os(watchOS)
-//        self.timeZoneString = timeZone.extremeAbbreviation(for: now)
-//        #else
-//        self.timeZoneString = timeZone.abbreviation(for:  now) ?? ""
-//        #endif
         self.supportsLocations = clock.calendar.supportsLocations
-//        if self.supportsLocations {
-//            self.flagEmojiString = location.flag
-////            self.usesDeviceLocation = clock.usesDeviceLocation
-//            var locationString = ""
-//            if location.name == nil && location.locality == nil && location.country == nil {
-//                locationString = location.location.humanInterfaceRepresentation
-//            } else {
-//                #if os(watchOS)
-//                locationString = location.shortFormattedOneLineAddress
-//                #else
-//                locationString = location.formattedOneLineAddress
-//                #endif
-//            }
-//            self.locationString = locationString
-//        } else {
-//            self.flagEmojiString = "🇺🇳"
-////            self.usesDeviceLocation = false
-//            self.locationString = NSLocalizedString("NO_PLACE_NAME", comment: "")
-//        }
-//        self.supportsTimeZones = clock.calendar.supportsTimeZones
         
         self.daysPerWeek = clock.daysPerWeek
         

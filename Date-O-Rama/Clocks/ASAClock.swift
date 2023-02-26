@@ -44,13 +44,6 @@ let ICALENDAR_EVENT_CALENDARS_KEY: String = "iCalendarEventCalendars"
 class ASAClock: NSObject, ObservableObject, Identifiable {
     var uuid = UUID()
 
-//    @Published var usesDeviceLocation:  Bool = true
-//    @Published var locationData:  ASALocation = ASALocationManager.shared.deviceLocation {
-//        didSet {
-//            self.handleLocationDataChanged()
-//        }
-//    }
-
     @Published var localeIdentifier:  String = ""
     
     
@@ -59,7 +52,6 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     override init() {
         super.init()
         let notificationCenter = NotificationCenter.default
-//        notificationCenter.addObserver(self, selector: #selector(handleLocationChanged(notification:)), name: NSNotification.Name(rawValue: UPDATED_LOCATION_NAME), object: nil)
         notificationCenter.addObserver(self, selector: #selector(handleStoreChanged(notification:)), name: .EKEventStoreChanged, object: nil)
     } // override init()
     
@@ -68,30 +60,12 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         notificationCenter.removeObserver(self)
     } // deinit
     
-//    @objc func handleLocationChanged(notification:  Notification) -> Void {
-//        if self.usesDeviceLocation {
-//            let locationManager = ASALocationManager.shared
-//            self.locationData = locationManager.deviceLocation
-//        }
-//    } // func handle(notification:  Notification) -> Void
     
     @objc func handleStoreChanged(notification:  Notification) -> Void {
         self.clearCacheObjects()
     } // func handleStoreChanged(notification:  Notification) -> Void
 
     public func enforceSelfConsistency(location: ASALocation, usesDeviceLocation: Bool) {
-//        if !self.calendar.supportedDateFormats.contains(self.dateFormat) && !self.calendar.supportedWatchDateFormats.contains(self.dateFormat) {
-//            self.dateFormat = self.calendar.defaultDateFormat
-//        }
-//        if !self.calendar.supportsLocations {
-//            self.usesDeviceLocation = false
-//
-//            if !self.calendar.supportsTimeZones {
-//                self.locationData = ASALocation.NullIsland
-//                self.usesDeviceLocation = false
-//            }
-//        }
-        
         if !self.isICalendarCompatible(location: location, usesDeviceLocation: usesDeviceLocation) {
             self.iCalendarEventCalendars = []
         }
@@ -107,7 +81,6 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
     
     @Published var calendar:  ASACalendar = ASAAppleCalendar(calendarCode: .Gregorian) {
         didSet {
-//            enforceSelfConsistency(location: self.locationData, usesDeviceLocation: self.usesDeviceLocation)
             enforceDateAndTimeFormatSelfConsistency()
 
             if !startingUp {
@@ -133,7 +106,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             if !startingUp {
                 self.clearCacheObjects()
             }
-        } // didset
+        } // didSet
     } // var dateFormat
 
     @Published var timeFormat:  ASATimeFormat = .medium {
@@ -143,7 +116,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             if !startingUp {
                 self.clearCacheObjects()
             }
-        } // didset
+        } // didSet
     } // var timeFormat
 
     @Published var builtInEventCalendars:  Array<ASAEventCalendar> = [] {
@@ -151,7 +124,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             if !startingUp {
                 self.clearCacheObjects()
             }
-        } // didset
+        } // didSet
     } // var builtInEventCalendars
 
     @Published var iCalendarEventCalendars:  Array<EKCalendar> = [] {
@@ -159,7 +132,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
             if !startingUp {
                 self.clearCacheObjects()
             }
-        } // didset
+        } // didSet
     } // var iCalendarEventCalendars
     
 
@@ -341,7 +314,6 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         let type: ASALocationType = (rawType == nil) ? .EarthLocation : ASALocationType(rawValue: rawType!)!
 
         let newLocationData = ASALocation(id: UUID(), location: newLocation, name: newName, locality: newLocality, country: newCountry, regionCode: newISOCountryCode, postalCode: newPostalCode, administrativeArea: newAdministrativeArea, subAdministrativeArea: newSubAdministrativeArea, subLocality: newSubLocality, thoroughfare: newThoroughfare, subThoroughfare: newSubThoroughfare, timeZone: TimeZone(identifier: timeZoneIdentifier!) ?? TimeZone.GMT, type: type)
-//        newClock.locationData = newLocationData
 
         newClock.startingUp = false
         newClock.enforceSelfConsistency(location: newLocationData, usesDeviceLocation: usesDeviceLocation ?? false)
@@ -455,11 +427,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
 
 extension ASAClock {
     public func dateStringTimeStringDateComponents(now: Date, location: ASALocation) -> (dateString: String, timeString: String?, dateComponents: ASADateComponents) {
-//        #if os(watchOS)
-//        let properDateFormat = self.dateFormat.watchShortened
-//        #else
         let properDateFormat = self.dateFormat
-//        #endif
         return self.calendar.dateStringTimeStringDateComponents(now: now, localeIdentifier: self.localeIdentifier, dateFormat: properDateFormat, timeFormat: self.timeFormat, locationData: location)
     }
 
