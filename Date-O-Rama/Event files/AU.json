@@ -57,5 +57,6 @@
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/genocide-prevention-day/"}, titles: {"en": "Genocide Prevention Day"}},
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-apology-day/"}, titles: {"en": "National Apology Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/library-lovers-day-february/"}, titles: {"en": "Library Lovers’ Day"}, first: {era: 1, y: 2006}},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/hearing-awareness-week/"}, titles: {"en": "Hearing Awareness Week"}},
     ]
 }

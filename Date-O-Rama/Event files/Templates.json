@@ -299,6 +299,7 @@
         {template: "Shrove Tuesday", titles: {"en": "Shrove Tuesday", "fr": "Mardi gras", "he": "מרדי גרא"}, notes: {"en": "Pancake Day\nMardi Gras\nFat Tuesday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -47}, emoji: "🥞", urls: {"en": "https://www.daysoftheyear.com/days/pancake-day/", "he": "https://www.daysoftheyear.co.il/2018/02/blog-post.html"}},
         {template: "St. Andrew’s Day", titles: {"en": "St. Andrew’s Day"}, type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/st-andrews-day/"}},
         {template: "St. Barbara’s Day", titles: {"en": "St. Barbara’s Day", "ar": "عيد البربارة", "fr": "Jour de Barbara", "ka": "ბარბარობა"}, type: "1D", start: {mon: 12, d: 17}},
+        {template: "St. David’s Day", type: "1D", start: {mon: 3, d: 1}, titles: {"en": "St. David’s Day"}, urls: {"en": "https://nationaltoday.com/st-davids-day/"}},
         {template: "St. Florian’s Day", titles: {"en": "St. Florian’s Day", "de": "Florian"}, type: "1D", start: {mon: 5, d: 4}},
         {template: "St. George’s Day", titles: {"en": "St. George’s Day"}, notes: {"en": "Feast of St. George or St. Adalbert"}, type: "1D", start: {mon: 4, d: 23}, emoji: "🐉"},
         {template: "St. George’s Caye Day", titles: {"en": "St. George’s Caye Day"}, type: "1D", start: {mon: 9, d: 10, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "National Day"},

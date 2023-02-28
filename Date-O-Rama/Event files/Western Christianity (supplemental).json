@@ -74,7 +74,7 @@
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, titles: {"en": "National Sanctity of Human Life Sunday"}, first: {type: "1D", era: 1, y: 1984}, urls: {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, emoji: "👶"},
         
         {type: "1D", start: {d: 15, mon: 4}, titles: {"en": "Father Damien Day"}},
-        {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "St. David’s Day"}},
+        {type: "1D", start: {mon: 3, d: 1}, inherits: "St. David’s Day"},
         {type: "1D", start: {d: 25, mon: 3}, titles: {"en": "International Day of the Unborn Child"}, first: {era: 1, y: 1993}, urls: {"en": "https://en.wikipedia.org/wiki/International_Day_of_the_Unborn_Child"}},
         {type: "1D", start: {d: 29, mon: 3}, titles: {"en": "Taiwan Youth Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2008}, emoji: "🇹🇼", urls: {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
         {type: "1D", start: {d: 21, mon: 5}, titles: {"en": "Rapture Party Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2012}, emoji: "🥳", urls: {"en": "https://www.daysoftheyear.com/days/rapture-party-day/"}},
@@ -138,5 +138,6 @@
         {type: "nD", start: {mon: 2, d: 15}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/make-mine-chocolate/"}, titles: {"en": "Make Mine Chocolate"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://nationaltoday.com/friday-fish-fry-day/"}, titles: {"en": "Friday Fish Fry Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://nationaltoday.com/national-tartar-sauce-day/"}, titles: {"en": "National Tartar Sauce Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-march-first-day/"}, titles: {"en": "National March First Day"}, first: {era: 1, y: 2020}},
     ]
 }

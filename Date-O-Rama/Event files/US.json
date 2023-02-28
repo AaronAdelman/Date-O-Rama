@@ -306,6 +306,11 @@
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-poverty-in-america-awareness-month/"}, titles: {"en": "National Poverty in America Awareness Month"}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/prune-breakfast-month/"}, titles: {"en": "Prune Breakfast Month"}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/shape-up-us-month/"}, titles: {"en": "Shape Up US Month"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/asiatic-fleet-memorial-day/"}, titles: {"en": "Asiatic Fleet Memorial Day"}, first: {era: 1, y: 2002}},
+        {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-black-women-in-jazz-and-the-arts-day/"}, titles: {"en": "National Black Women in Jazz and the Arts Day"}},
+        {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-horse-protection-day/"}, titles: {"en": "National Horse Protection Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-texas-stress-day/"}, titles: {"en": "National Texas Stress Day"}, first: {era: 1, y: 2021}},
+        {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-invest-in-veterans-week/"}, titles: {"en": "National Invest in Veterans Week"}, first: {era: 1, y: 2019}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
