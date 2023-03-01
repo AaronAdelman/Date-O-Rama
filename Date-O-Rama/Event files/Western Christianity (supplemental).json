@@ -139,5 +139,6 @@
         {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://nationaltoday.com/friday-fish-fry-day/"}, titles: {"en": "Friday Fish Fry Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -44}, urls: {"en": "https://nationaltoday.com/national-tartar-sauce-day/"}, titles: {"en": "National Tartar Sauce Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-march-first-day/"}, titles: {"en": "National March First Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/world-day-of-prayer/"}, titles: {"en": "World Day of Prayer"}, first: {era: 1, y: 1887}},
     ]
 }

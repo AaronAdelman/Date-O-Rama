@@ -21,5 +21,6 @@
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/coming-of-age-day/"}, titles: {"en": "Coming of Age Day"}, first: {era: 1, y: 1948}},
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-foundation-day/"}, titles: {"en": "National Foundation Day"}, notes: {"en": "Kenkoku Kinen no Hi"}},
         {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/the-emperors-birthday/"}, titles: {"en": "The Emperor’s Birthday"}, first: {era: 1, y: 1886}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/japan-dolls-festival/"}, titles: {"en": "Japan Dolls Festival"}, first: {era: 1, y: 1868}},
     ]
 }

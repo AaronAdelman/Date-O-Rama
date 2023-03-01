@@ -322,7 +322,10 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-social-work-month/"}, titles: {"en": "National Social Work Month"}, first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 3, d: 2}, titles: {"en": "National Read Across America Day"}, urls: {"en": "https://nationaltoday.com/national-read-across-america-day/"}, first: {era: 1, y: 1998}},
         {type: "nD", start: {mon: 3, d: 2}, end: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/read-across-america-week/"}, titles: {"en": "Read Across America Week"}},
-        {type: "1D", start: {mon: 3, d: 2}, titles: {"en": "Dr. Seuss Day"}, notes: {"en": "Dr. Seuss’s Birthday"}, urls: {"en": "https://www.daysoftheyear.com/days/dr-seuss-day/"}, first: {era: 1, y: 1904}},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/missouri-compromise-day/"}, titles: {"en": "Missouri Compromise Day"}, first: {era: 1, y: 1820}},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-anthem-day/"}, titles: {"en": "National Anthem Day"}, first: {era: 1, y: 1931}},
+        {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-speech-and-debate-education-day/"}, titles: {"en": "National Speech and Debate Education Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/navy-reserves-birthday/"}, titles: {"en": "Navy Reserves Birthday"}, first: {era: 1, y: 1915}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

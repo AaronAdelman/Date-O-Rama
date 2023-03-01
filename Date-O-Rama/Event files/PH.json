@@ -65,5 +65,6 @@
         {type: "nD", start: {mon: 2, d: 22}, end: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/edsa-people-power-commemoration-week/"}, titles: {"en": "EDSA People Power Commemoration Week"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/people-power-anniversary/"}, titles: {"en": "People Power Anniversary"}, notes: {"en": "EDSA Revolution Anniversary"}, first: {era: 1, y: 1986}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/womens-month-philippines/"}, titles: {"en": "Women’s Month"}, first: {era: 1, y: 1988}},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-samaon-sulaiman/"}, titles: {"en": "Birth Anniversary of Samaon Sulaiman"}, inherits: "*BDay*", first: {era: 1, y: 1953}},
     ]
 }
