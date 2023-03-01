@@ -210,7 +210,6 @@
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "Self-Injury Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/self-injury-awareness-day-march-1/"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Pig Day"}, first: {era: 1, y: 1972}, emoji: "🐖", urls: {"en": "https://www.daysoftheyear.com/days/pig-day/"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Peanut Butter Lover’s Day"}, first: {era: 1, y: 1990}, emoji: "🥜", urls: {"en": "https://nationaldaycalendar.com/national-peanut-butter-lovers-day-march-1/"}},
-        {type: "1D", start: {d: 2, mon: 3}, titles: {"en": "National Read Across America Day"}},
         {type: "1D", start: {d: 3, mon: 3}, titles: {"en": "National Canadian Bacon Day"}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-bacon-day/"}},
         {type: "1D", start: {d: 4, mon: 3}, titles: {"en": "World Day of the Fight Against Sexual Exploitation"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, titles: {"en": "Employee Appreciation Day"}, first: {era: 1, y: 1995}, emoji: "✍️", urls: {"en": "https://nationaldaycalendar.com/national-employee-appreciation-day-first-friday-in-march/"}},
@@ -992,5 +991,13 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/vascular-anomalies-awareness-month/"}, titles: {"en": "Vascular Anomalies Awareness Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/workplace-eye-wellness-month/"}, titles: {"en": "Workplace Eye Wellness Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/youth-art-month/"}, titles: {"en": "Youth Art Month"}, first: {era: 1, y: 1969}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/international-rescue-cat-day/"}, titles: {"en": "International Rescue Cat Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-banana-cream-pie-day/"}, titles: {"en": "National Banana Cream Pie Day"}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-egg-mcmuffin-day/"}, titles: {"en": "National Egg McMuffin Day"}},
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-hospitalist-day/"}, titles: {"en": "National Hospitalist Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-old-stuff-day/"}, titles: {"en": "National Old Stuff Day"}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-walter-day/"}, titles: {"en": "National Walter Day"}},
+        {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/world-teen-mental-wellness-day/"}, titles: {"en": "World Teen Mental Wellness Day"}},
+
     ]
 }
