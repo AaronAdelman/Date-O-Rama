@@ -326,6 +326,10 @@
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-anthem-day/"}, titles: {"en": "National Anthem Day"}, first: {era: 1, y: 1931}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-speech-and-debate-education-day/"}, titles: {"en": "National Speech and Debate Education Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/navy-reserves-birthday/"}, titles: {"en": "Navy Reserves Birthday"}, first: {era: 1, y: 1915}},
+        {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/benjamin-harrison-day/"}, titles: {"en": "Benjamin Harrison Day"}},
+        {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/brain-injury-awareness-day/"}, titles: {"en": "Brain Injury Awareness Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-hug-a-gi-day/"}, titles: {"en": "National Hug a G.I. Day"}},
+        {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/old-inauguration-day/"}, titles: {"en": "Old Inauguration Day"}, first: {era: 1, y: 1793}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
