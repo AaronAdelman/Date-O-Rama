@@ -6,7 +6,7 @@
     eventSpecifications: [
         {titles: {"en": "Birthday of Eugenio María de Hostos", "es": "Natalicio de Eugenio María de Hostos"}, type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://en.wikipedia.org/wiki/Eugenio_Mar%C3%ADa_de_Hostos"}, inherits: "*BDay*"},
         {titles: {"en": "Birthday of Luis Muñoz Marín", "es": "Natalicio de Luis Muñoz Marín"}, type: "1D", start: {mon: 2, d: 18}, urls: {"en": "https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Mar%C3%ADn"}, inherits: "*BDay*"},
-        {titles: {"en": "American Citizenship Day", "es": "Día de la Ciudadanía Americana"}, type: "1D", start: {mon: 3, d: 2}, first: {era: 1, y: 1917}, inherits: "*BDay*"},
+        {titles: {"en": "American Citizenship Day", "es": "Día de la Ciudadanía Americana"}, type: "1D", start: {mon: 3, d: 2}, first: {era: 1, y: 1917}},
         {inherits: "Emancipation Day", type: "1D", start: {mon:3, d: 22}, urls: {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#Puerto_Rico"}, first: {era: 1, y: 1873}},
         {titles: {"en": "Birthday of José de Diego", "es": "Natalicio de José de Diego"}, type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_Diego"}, inherits: "*BDay*"},
         {titles: {"en": "Birthday of Don Luis Muñoz Rivera", "es": "Natalicio de Don Luis Muñoz Rivera"}, type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Luis_Mu%C3%B1oz_Rivera"}, inherits: "*BDay*"},
