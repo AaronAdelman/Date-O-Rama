@@ -11,5 +11,6 @@
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 8, d: 18}, inherits: "Air Force Day", titles: {"en": "Aviation Day"}},
         {type: "1D", start: {mon: 7, d: 27}, inherits: "Air Force Day"},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/kyrgyzstan-national-hat-day/"}, inherits: "National Hat Day", first: {era: 1, y: 2017}},
    ]
 }

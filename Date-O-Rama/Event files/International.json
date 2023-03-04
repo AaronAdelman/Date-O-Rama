@@ -60,7 +60,7 @@
         {type: "1D", start: {d: 14, mon: 1}, titles: {"en": "International Kite Day", "he": "יום העפיפון הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-kite-day/", "he": "https://www.daysoftheyear.co.il/2017/01/14.html"}, emoji: "🪁"},
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/organize-your-home-day/", "he": "https://www.daysoftheyear.co.il/2019/01/organize-your-home-day.html"}, titles: {"en": "Organize Your Home Day", "he": "יום סידור הבית"}, emoji: "🧹"},
         {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Bagel Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bagel-day/"}, first: {era: 1, y: 2000}, emoji: "🥯"},
-        {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Hat Day", "he": "יום הכובע"}, urls: {"en": "https://www.daysoftheyear.com/days/hat-day/", "he": "https://www.daysoftheyear.co.il/2018/01/15.html"}, emoji: "🎩"},
+        {inherits: "National Hat Day", type: "1D", start: {d: 15, mon: 1}},
         {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Strawberry Ice Cream Day", "he": "יום גלידת התות"}, urls: {"en": "https://www.daysoftheyear.com/days/strawberry-ice-cream-day/", "he": "https://www.daysoftheyear.co.il/2020/01/strawberry-icecream-day.html"}, emoji: "🍨", first: {era: 1, y: 1932}},
         {type: "1D", start: {d: 16, mon: 1}, titles: {"en": "National Fig Newton Day"}, urls: {"en": "https://nationaldaycalendar.com/national-fig-newton-day-january-16/"}},
         {type: "1D", start: {d: 16, mon: 1}, titles: {"en": "National Nothing Day", "he": "יום הלא כלום"}, urls: {"en": "https://www.daysoftheyear.com/days/nothing-day/", "he": "https://www.daysoftheyear.co.il/2018/01/16.html"}, emoji: "0️⃣", first: {era: 1, y: 1956}},
@@ -1032,5 +1032,14 @@
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/toy-soldier-day/"}, titles: {"en": "Toy Soldier Day"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/world-obesity-day/"}, titles: {"en": "World Obesity Day"}},
         {type: "nD", start: {mon: 3, d: 4}, end: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-endometriosis-awareness-week/"}, titles: {"en": "National Endometriosis Awareness Week"}},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/dissociative-identity-disorder-awareness-day/"}, titles: {"en": "Dissociative Identity Disorder Awareness Day"}},
+        {type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/finishers-medal-day/"}, titles: {"en": "Finisher’s Medal Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/international-open-data-day/"}, titles: {"en": "International Open Data Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/multiple-personality-day/"}, titles: {"en": "Multiple Personality Day"}},
+        {type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/namesake-day/"}, titles: {"en": "Namesake Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/national-scott-day/"}, titles: {"en": "National Scott Day"}},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/reel-film-day/"}, titles: {"en": "Reel Film Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/world-information-architecture-day/"}, titles: {"en": "World Information Architecture Day"}, first: {era: 1, y: 2012}},
+
     ]
 }
