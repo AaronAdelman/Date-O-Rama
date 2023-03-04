@@ -1040,6 +1040,18 @@
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/national-scott-day/"}, titles: {"en": "National Scott Day"}},
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/reel-film-day/"}, titles: {"en": "Reel Film Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/world-information-architecture-day/"}, titles: {"en": "World Information Architecture Day"}, first: {era: 1, y: 2012}},
-
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/casimir-pulaski-day/"}, titles: {"en": "Casimir Pulaski Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/dentist-day/"}, titles: {"en": "Dentist Day"}, notes: {"en": "National Dentist’s Day"}},
+        {type: "1D", start: {mon: 3, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/fun-facts-about-names-day/"}, titles: {"en": "Fun Facts About Names Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-brian-day/"}, titles: {"en": "National Brian Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-damien-day/"}, titles: {"en": "National Damien Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-ford-day/"}, titles: {"en": "National Ford Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-heroes-and-benefactors-day/"}, titles: {"en": "National Heroes and Benefactors Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-oreo-cookie-day/"}, titles: {"en": "National Oreo Cookie Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-shirley-day/"}, titles: {"en": "National Shirley Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-white-chocolate-cheesecake-day/"}, titles: {"en": "National White Chocolate Cheesecake Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/no-homework-day/"}, titles: {"en": "No Homework Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/world-tennis-day/"}, titles: {"en": "World Tennis Day"}, first: {era: 1, y: 2013}},
+        {type: "nD", start: {mon: 3, d: 6}, end: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-groundwater-awareness-week/"}, titles: {"en": "National Groundwater Awareness Week"}, first: {era: 1, y: 1999}},
     ]
 }

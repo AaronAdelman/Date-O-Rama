@@ -221,6 +221,8 @@
 		A570840825481BB900904E7C /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57083F2254818B200904E7C /* DateFormatterExtensions.swift */; };
 		A5746303299C23A600896FC7 /* XK.json in Resources */ = {isa = PBXBuildFile; fileRef = A5746302299C23A600896FC7 /* XK.json */; };
 		A5746304299C23A600896FC7 /* XK.json in Resources */ = {isa = PBXBuildFile; fileRef = A5746302299C23A600896FC7 /* XK.json */; };
+		A574648129B3D734008A664D /* Dudeism.json in Resources */ = {isa = PBXBuildFile; fileRef = A574648029B3D734008A664D /* Dudeism.json */; };
+		A574648229B3D734008A664D /* Dudeism.json in Resources */ = {isa = PBXBuildFile; fileRef = A574648029B3D734008A664D /* Dudeism.json */; };
 		A575913E282BE18400675058 /* IE.json in Resources */ = {isa = PBXBuildFile; fileRef = A575913D282BE18400675058 /* IE.json */; };
 		A575913F282BE18400675058 /* IE.json in Resources */ = {isa = PBXBuildFile; fileRef = A575913D282BE18400675058 /* IE.json */; };
 		A5759141282BE28800675058 /* NO.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759140282BE28800675058 /* NO.json */; };
@@ -1211,6 +1213,7 @@
 		A56F0DA025F1705200301969 /* Jewish zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Jewish zodiac.json"; sourceTree = "<group>"; };
 		A57083F2254818B200904E7C /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		A5746302299C23A600896FC7 /* XK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = XK.json; sourceTree = "<group>"; };
+		A574648029B3D734008A664D /* Dudeism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Dudeism.json; sourceTree = "<group>"; };
 		A575913D282BE18400675058 /* IE.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IE.json; sourceTree = "<group>"; };
 		A5759140282BE28800675058 /* NO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NO.json; sourceTree = "<group>"; };
 		A5759143282BE30700675058 /* DK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DK.json; sourceTree = "<group>"; };
@@ -1770,6 +1773,7 @@
 				A5EFFFE9285B874C00F2205F /* DO.json */,
 				A5EF523727959D37000012AC /* Druzism (Gregorian).json */,
 				A5EF523A2795A44E000012AC /* Druzism (Muslim).json */,
+				A574648029B3D734008A664D /* Dudeism.json */,
 				A5E292DF285A60E000925EBD /* DZ.json */,
 				A5B0084626CD3A0B00B63B3F /* Earth.json */,
 				A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */,
@@ -2540,6 +2544,7 @@
 				A5FB22DD286462FB00B5042B /* AL (Julian).json in Resources */,
 				A5E4966428625585001BF40C /* PN.json in Resources */,
 				A5D3D7E227FA18460099718A /* IN.json in Resources */,
+				A574648229B3D734008A664D /* Dudeism.json in Resources */,
 				A581B889284E592000407D68 /* CH.json in Resources */,
 				A5B999A628622A1200072FD5 /* BI.json in Resources */,
 				A5769955259EDCC000757B0F /* Judaism (times).json in Resources */,
@@ -2912,6 +2917,7 @@
 				A5EFFF76285B7B1300F2205F /* KW.json in Resources */,
 				A5B999A928622A4000072FD5 /* BJ.json in Resources */,
 				A5F43E242785D7DE00FCDB88 /* Neopaganism.json in Resources */,
+				A574648129B3D734008A664D /* Dudeism.json in Resources */,
 				A5D3D7DB27F8DB950099718A /* International.json in Resources */,
 				A5EFFFAA285B7F2E00F2205F /* SL.json in Resources */,
 				A581B87F284E55E500407D68 /* GR.json in Resources */,
