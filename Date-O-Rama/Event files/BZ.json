@@ -8,9 +8,7 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "New Year’s Day (observed)", type: "1D", start: {mon: 1, d: 2, wkd: [2]}},
-        {type: "1D", start: {mon: 3, d: 9, wkd: [7]}, inherits: "National Heroes & Benefactors Day"},
-        {type: "1D", start: {mon: 3, d: 6, thruD: 10, wkd: [2]}, inherits: "National Heroes & Benefactors Day"},
-        {type: "1D", start: {mon: 3, d: 12, wkd: [2]}, inherits: "National Heroes & Benefactors Day"},
+        {type: "1D", start: {mon: 3, d: 9}, inherits: "National Heroes & Benefactors Day"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},

@@ -1075,6 +1075,18 @@
         {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-retro-video-game-day/"}, titles: {"en": "National Retro Video Game Day"}},
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/registered-dietitian-nutritionist-day/"}, titles: {"en": "Registered Dietitian Nutritionist Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/world-maths-day/"}, titles: {"en": "World Maths Day"}, first: {era: 1, y: 2007}},
-
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-school-meals-day/"}, titles: {"en": "International School Meals Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/joe-franklin-day/"}, titles: {"en": "Joe Franklin Day"}, first: {era: 1, y: 1926}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 3, d: 5, thruD: 11, wkd: [5]}, urls: {"en": "https://nationaltoday.com/nametag-day/"}, titles: {"en": "Nametag Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-barbie-day/"}, titles: {"en": "National Barbie Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-crab-meat-day/"}, titles: {"en": "National Crab Meat Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-dish-washer-appreciation-day/"}, titles: {"en": "National Dish Washer Appreciation Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-false-teeth-day/"}, titles: {"en": "National False Teeth Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-get-over-it-day/"}, titles: {"en": "National Get Over It Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-lina-day/"}, titles: {"en": "National Lina Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-marcia-day/"}, titles: {"en": "National Marcia Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-shane-day/"}, titles: {"en": "National Shane Day"}},
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/popcorn-lovers-day/"}, titles: {"en": "Popcorn Lover’s Day"}},
+        {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/world-kidney-day/"}, titles: {"en": "World Kidney Day"}, first: {era: 1, y: 2006}},
     ]
 }

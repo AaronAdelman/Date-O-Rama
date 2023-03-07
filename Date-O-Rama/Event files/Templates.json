@@ -250,7 +250,7 @@
         {template: "National Flag Day", type: "1D", start: {mon: 6, d: 20}, titles: {"en": "National Flag Day", "es": "Día de la Bandera Nacional", "he": "יום הדגל הלאומי"}, inherits: "Flag Day"},
         {template: "National Hat Day", type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Hat Day", "he": "יום הכובע"}, urls: {"en": "https://www.daysoftheyear.com/days/hat-day/", "he": "https://www.daysoftheyear.co.il/2018/01/15.html"}, emoji: "🎩"},
         {template: "National Heroes’ Day", titles: {"en": "National Heroes’ Day", "pt": "Dia Nacional dos Heróis", "he": "יום הגיבורים הלאומי", "fil": "Araw ng mga Bayani"}, type: "1D", start: {mon: 6, d: 9}, inherits: "Heroes’ Day"},
-        {template: "National Heroes & Benefactors Day", type: "1D", start: {mon: 3, d: 9, wkd: [7]}, titles: {"en": "National Heroes & Benefactors Day"}},
+        {template: "National Heroes & Benefactors Day", type: "1D", start: {mon: 3, d: 9, wkd: [7]}, titles: {"en": "National Heroes and Benefactors Day"}, urls: {"en": "https://nationaltoday.com/national-heroes-and-benefactors-day-2/"}},
         {template: "National Guard Day", titles: {"en": "National Guard Day"}, type: "1D", start: {mon: 12, d: 13}},
         {template: "National Liberation Day of Korea", type: "1D", start: {d: 15, mon: 8}, titles: {"en": "Liberation Day", "ko_KR": "광복절", "ko_KP": "조국해방의 날"}, urls: {"en": "https://nationaltoday.com/liberation-day-south-korea/"}},
         {template: "National Maritime Day", type: "1D", start: {mon: 5, d: 22}, titles: {"en": "National Maritime Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Maritime_Day"}, emoji: "🚢"},
