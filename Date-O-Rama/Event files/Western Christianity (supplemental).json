@@ -143,5 +143,6 @@
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/march-forth/"}, titles: {"en": "March Forth"}},
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/cinco-de-marcho/"}, titles: {"en": "Cinco de Marcho"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 3, d: 8}, end: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-catholic-sisters-week/"}, titles: {"en": "Catholic Sisters Week"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/salvation-army-day/"}, titles: {"en": "Salvation Army Day"}},
     ]
 }

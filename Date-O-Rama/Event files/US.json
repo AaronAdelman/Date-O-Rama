@@ -337,6 +337,8 @@
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/amerigo-vespucci-day/"}, titles: {"en": "Amerigo Vespucci Day"}, first: {era: 1, y: 1959}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/bang-clang-day/"}, titles: {"en": "Bang Clang Day"}, first: {era: 1, y: 1862}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-american-paddlefish-day/"}, titles: {"en": "National American Paddlefish Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/paper-money-day/"}, titles: {"en": "Paper Money Day"}},
+
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
