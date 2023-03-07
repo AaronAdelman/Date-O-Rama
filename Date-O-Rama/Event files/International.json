@@ -1066,5 +1066,15 @@
         {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/plant-power-day/"}, titles: {"en": "Plant Power Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/sock-monkey-day/"}, titles: {"en": "Sock Monkey Day"}},
         {type: "1D", start: {mon: 3, wkd: [3], d: 3, thruD: 9}, urls: {"en": "https://nationaltoday.com/unique-names-day/"}, titles: {"en": "Unique Names Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/be-nasty-day/"}, titles: {"en": "Be Nasty Day"}},
+        {type: "1D", start: {mon: 3, d: 4, thruD: 10, wkd: [4]}, urls: {"en": "https://nationaltoday.com/discover-what-your-name-means-day/"}, titles: {"en": "Discover What Your Name Means Day"}, first: {era: 1, y: 1997}, notes: {"en": "Learn What Your Name Means Day"}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-august-day/"}, titles: {"en": "National August Day"}},
+        {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-no-smoking-day/"}, titles: {"en": "National No Smoking Day"}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-peanut-cluster-day/"}, titles: {"en": "National Peanut Cluster Day"}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-proofreading-day/"}, titles: {"en": "National Proofreading Day"}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-retro-video-game-day/"}, titles: {"en": "National Retro Video Game Day"}},
+        {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/registered-dietitian-nutritionist-day/"}, titles: {"en": "Registered Dietitian Nutritionist Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/world-maths-day/"}, titles: {"en": "World Maths Day"}, first: {era: 1, y: 2007}},
+
     ]
 }
