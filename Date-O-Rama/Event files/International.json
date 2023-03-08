@@ -1122,5 +1122,10 @@
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-ruth-day/"}, titles: {"en": "National Ruth Day"}},
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/world-day-against-cyber-censorship/"}, titles: {"en": "World Day Against Cyber Censorship"}},
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/world-glaucoma-day/"}, titles: {"en": "World Glaucoma Day"}},
+        {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/international-every-girls-wins-day/"}, titles: {"en": "International Every Girls Wins Day"}},
+        {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/ken-day/"}, titles: {"en": "Ken Day"}},
+        {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/national-napping-day/"}, titles: {"en": "National Napping Day"}},
+        {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/national-open-an-umbrella-indoors-day/"}, titles: {"en": "National Open An Umbrella Indoors Day"}},
+        {type: "nD", start: {mon: 3, d: 13}, end: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-deaf-history-month/"}, titles: {"en": "National Deaf History Month"}, first: {era: 1, y: 1997}},
     ]
 }
