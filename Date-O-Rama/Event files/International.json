@@ -1112,5 +1112,15 @@
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-urban-ballroom-dancing-day/"}, titles: {"en": "National Urban Ballroom Dancing Day"}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/world-plumbing-day/"}, titles: {"en": "World Plumbing Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/worship-of-tools-day/"}, titles: {"en": "Worship of Tools Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/alfred-hitchcock-day/"}, titles: {"en": "Alfred Hitchcock Day"}},
+        {type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/check-your-batteries-day/"}, titles: {"en": "Check Your Batteries Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/iugr-awareness-day/"}, titles: {"en": "IUGR Awareness Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-baked-scallops-day/"}, titles: {"en": "National Baked Scallops Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-christian-day/"}, titles: {"en": "National Christian Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-girl-scout-day/"}, titles: {"en": "National Girl Scout Day"}, first: {era: 1, y: 1912}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-plant-a-flower-day/"}, titles: {"en": "National Plant a Flower Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-ruth-day/"}, titles: {"en": "National Ruth Day"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/world-day-against-cyber-censorship/"}, titles: {"en": "World Day Against Cyber Censorship"}},
+        {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/world-glaucoma-day/"}, titles: {"en": "World Glaucoma Day"}},
     ]
 }
