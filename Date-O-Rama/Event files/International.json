@@ -1101,5 +1101,16 @@
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-ranch-day/"}, titles: {"en": "National Ranch Day"}},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-sending-day/"}, titles: {"en": "National Sending Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-women-and-girls-hiv-aids-awareness-day/"}, titles: {"en": "National Women and Girls HIV/AIDS Awareness Day"}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/international-fanny-pack-day/"}, titles: {"en": "International Fanny Pack Day"}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-covid-19-day/"}, titles: {"en": "National COVID-19 Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-dream-day/"}, titles: {"en": "National Dream Day"}, first: {era: 1, y: 1995}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-no-code-day/"}, titles: {"en": "National No-Code Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-oatmeal-nut-waffles-day/"}, titles: {"en": "National Oatmeal Nut Waffles Day"}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-payton-slaymaker-day/"}, titles: {"en": "National Payton Slaymaker Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-promposal-day/"}, titles: {"en": "National Promposal Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-sofrito-day/"}, titles: {"en": "National Sofrito Day"}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-urban-ballroom-dancing-day/"}, titles: {"en": "National Urban Ballroom Dancing Day"}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/world-plumbing-day/"}, titles: {"en": "World Plumbing Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/worship-of-tools-day/"}, titles: {"en": "Worship of Tools Day"}},
     ]
 }
