@@ -269,6 +269,7 @@
         {type: "1D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/solemnity-of-mary/"}, titles: {"en": "Solemnity of Mary"}},
+        {type: "1D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/saint-gertrude-of-nivelles-day/"}, titles: {"en": "St. Gertrude of Nivelles Day"}, first: {era: 1, y: 1677}},
 
         {titles: {"en": "Septuagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -63}},
         {titles: {"en": "Sexagesima"}, type: "1D", start: {"Easter": "Easter", "offsetD": -56}},

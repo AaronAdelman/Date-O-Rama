@@ -22,5 +22,6 @@
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 3, d: 26}, inherits: "Navy Day"},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 11, d: 21}},
+        {type: "1D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/sheikh-mujibur-rahman-birthday/"}, titles: {"en": "Sheikh Mujibur Rahman Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1920}},
     ]
 }
