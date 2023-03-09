@@ -1161,5 +1161,19 @@
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/world-essential-workers-day/"}, titles: {"en": "World Essential Workers Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/world-speech-day/"}, titles: {"en": "World Speech Day"}, first: {era: 1, y: 2015}},
         {type: "nD", start: {mon: 3, d: 15}, end: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/downs-syndrome-awareness-week/"}, titles: {"en": "Down’s Syndrome Awareness Week"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/absolutely-incredible-kid-day/"}, titles: {"en": "Absolutely Incredible Kid Day®"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/black-press-day/"}, titles: {"en": "Black Press Day"}},
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/companies-that-care-day/"}, titles: {"en": "Companies That Care Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/everything-you-do-is-right-day/"}, titles: {"en": "Everything You Do is Right Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-archer-day/"}, titles: {"en": "National Archer Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-artichoke-hearts-day/"}, titles: {"en": "National Artichoke Hearts Day"}},
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-close-gap-day/"}, titles: {"en": "National Close the Gap Day"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-farm-rescuer-day/"}, titles: {"en": "National Farm Rescuer Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-panda-day/"}, titles: {"en": "National Panda Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-vaccination-day/"}, titles: {"en": "National Vaccination Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/no-selfies-day/"}, titles: {"en": "No Selfies Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/robert-goddard-day/"}, titles: {"en": "Robert Goddard Day"}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/young-carers-action-day/"}, titles: {"en": "Young Carers Action Day"}, first: {era: 1, y: 2021}},
+
     ]
 }

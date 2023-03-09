@@ -144,5 +144,7 @@
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/cinco-de-marcho/"}, titles: {"en": "Cinco de Marcho"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 3, d: 8}, end: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-catholic-sisters-week/"}, titles: {"en": "Catholic Sisters Week"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/salvation-army-day/"}, titles: {"en": "Salvation Army Day"}},
+        {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/orange-and-lemons-day/"}, titles: {"en": "Orange And Lemons Day"}, first: {era: 1, y: 1919}},
+        {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/st-urhos-day/"}, titles: {"en": "St. Urho’s Day"}, first: {era: 1, y: 1950}},
     ]
 }
