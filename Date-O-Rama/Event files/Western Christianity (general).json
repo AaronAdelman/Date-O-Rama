@@ -302,7 +302,7 @@
         {titles: {"en": "Lent (day 20)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -24}},
         {titles: {"en": "Lent (day 21)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -23}},
         {titles: {"en": "Lent (day 22)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -22}},
-        {titles: {"en": "Laetare"}, notes: {"en": "Mothering Sunday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
+        {inherits: "Laetare", type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
         {titles: {"en": "Lent (day 23)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -20}},
         {titles: {"en": "Lent (day 24)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -19}},
         {titles: {"en": "Lent (day 25)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -18}},

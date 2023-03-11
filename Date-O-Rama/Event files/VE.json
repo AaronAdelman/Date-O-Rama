@@ -20,5 +20,6 @@
         {type: "1D", start: {mon: 7, d: 14}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Indigenous Resistance Day"}, urls: {"en": "https://nationaltoday.com/indigenous-resistance-day/"}, first: {era: 1, y: 2002}},
         {inherits: "Carnival", type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://nationaltoday.com/venezuela-carnival/"}},
+        {inherits: "St. Joseph’s Day", type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/st-josephs-day-venezuela/"}},
     ]
 }
