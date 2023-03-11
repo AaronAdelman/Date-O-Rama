@@ -27,5 +27,6 @@
         {type: "nD", start: {mon: 12, d: 16}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/las-posadas/"}, titles: {"en": "Las Posadas"}},
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/mariachi-day/"}, titles: {"en": "Mariachi Day"}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/flag-day-mexico/"}, inherits: "Flag Day", first: {era: 1, y: 1935}},
+        {type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/benito-juarez-birthday-memorial/"}, titles: {"en": "Benito Juarez Birthday Memorial"}, inherits: "*BDay*"},
     ]
 }
