@@ -1178,5 +1178,17 @@
         {type: "1D", start: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/doctor-patient-trust-day/"}, titles: {"en": "Doctor Patient Trust Day"}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-day-of-action-against-bullying-and-violence/"}, titles: {"en": "National Day of Action Against Bullying and Violence"}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-preschool-teachers-appreciation-day/"}, titles: {"en": "National Preschool Teachers Appreciation Day"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/awkward-moments-day/"}, titles: {"en": "Awkward Moments Day"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/forgive-mom-dad-day/"}, titles: {"en": "Forgive Mom and Dad Day"}},
+        {type: "1D", start: {mon: 3, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-sports-car-racing-day/"}, titles: {"en": "International Sports Car Racing Day"}},
+        {type: "1D", start: {mon: 3, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/maple-syrup-saturday/"}, titles: {"en": "Maple Syrup Saturday"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-biodiesel-day/"}, titles: {"en": "National Biodiesel Day"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-corn-dog-day/"}, titles: {"en": "National Corn Dog Day"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-lacy-oatmeal-cookie-day/"}, titles: {"en": "National Lacy Oatmeal Cookie Day"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-quilting-day/"}, titles: {"en": "National Quilting Day"}, first: {era: 1, y: 1991}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-sloppy-joe-day/"}, titles: {"en": "National Sloppy Joe Day"}},
+        {type: "1D", start: {mon: 3, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/play-the-recorder-day/"}, titles: {"en": "Play the Recorder Day"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/transit-driver-appreciation-day/"}, titles: {"en": "Transit Driver Appreciation Day"}, first: {era: 1, y: 2009}},
+
     ]
 }
