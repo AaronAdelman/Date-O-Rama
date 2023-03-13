@@ -153,7 +153,7 @@
         {template: "Feast of St. Teresa of Calcutta", type: "1D", start: {mon: 9, d: 5}, titles: {"en": "Feast of St. Teresa of Calcutta"}},
         {template: "Feast of St. Thomas Becket", titles: {"en": "Feast of St. Thomas Becket"}, notes: {"en": "Christmastide (day 5)"}, type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {template: "Feast of St. Vladimir", titles: {"en": "Feast of St. Vladimir"}, type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/baptism-day-of-kyivan-rus/"}},
-        {template: "Feast of the Annunciation", titles: {"en": "Feast of the Annunciation", "ar": "عيد البشارة", "fr": "Fête de l’Annonciation"}, type: "1D", start: {mon: 3, d: 25}},
+        {template: "Feast of the Annunciation", titles: {"en": "Feast of the Annunciation", "ar": "عيد البشارة", "fr": "Fête de l’Annonciation"}, type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/feast-of-the-annunciation/"}},
         {template: "Feast of the Exaltation of the Holy Cross", titles: {"en": "Feast of the Exaltation of the Holy Cross"}, type: "1D", start: {mon: 9, d: 14}},
         {template: "Feast of the Holy Family", titles: {"en": "Feast of the Holy Family"}, type: "1D", start: {mon: 12, d: 30, wkd: [6]}},
         {template: "Feast of the Immaculate Conception", titles: {"en": "Feast of the Immaculate Conception", "ca": "Immaculada Concepció", "es": "Día de la Inmaculada Concepción de María", "de": "Mariä Empfängnis"}, type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/feast-immaculate-conception/"}},

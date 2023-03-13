@@ -1272,5 +1272,12 @@
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-each-person-is-a-person-of-worth-day/"}, titles: {"en": "National Each Person Is a Person of Worth Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-stephanie-day/"}, titles: {"en": "National Stephanie Day"}},
         {type: "nD", start: {mon: 3, d: 24}, end: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/tick-bite-prevention-week/"}, titles: {"en": "Tick Bite Prevention Week"}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-guadalupe-day/"}, titles: {"en": "National Guadalupe Day"}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-lobster-newburg-day/"}, titles: {"en": "National Lobster Newburg Day"}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-michelle-shafer-half-moon-cookie-day/"}, titles: {"en": "National Michelle Shafer Half-Moon Cookie Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-omazingyou-day/"}, titles: {"en": "National OmazingYou Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/old-new-years-day/"}, titles: {"en": "Old New Year’s Day"}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/tolkien-reading-day/"}, titles: {"en": "Tolkien Reading Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/world-retrospective-day/"}, titles: {"en": "World Retrospective Day"}},
     ]
 }

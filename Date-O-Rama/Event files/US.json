@@ -239,6 +239,9 @@
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/american-red-cross-giving-day/"}, titles: {"en": "American Red Cross Giving Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/commonwealth-covenant-day/"}, titles: {"en": "Commonwealth Covenant Day"}, first: {era: 1, y: 1976}},
         {type: "nD", start: {mon: 3, d: 24}, end: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-tsunami-awareness-week/"}, titles: {"en": "National Tsunami Awareness Week"}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/bed-in-for-peace-day/"}, titles: {"en": "Bed-in for Peace Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/%e2%80%8bmaryland-day/"}, titles: {"en": "​Maryland Day"}, first: {era: 1, y: 1916}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-medal-honor-day/"}, titles: {"en": "National Medal of Honor Day"}},
 
         {type: "1D", titles: {"en": "National Voter Registration Day"}, start: {mon: 9, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationalvoterregistrationday.org/"}, first: {era: 1, y: 2014}, emoji: "🗳"},
         {titles: {"en": "National D.A.R.E. Day"}, type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1988}, urls: {"en": "https://nationaltoday.com/national-d-a-r-e-day/"}, emoji: "🚫"},
