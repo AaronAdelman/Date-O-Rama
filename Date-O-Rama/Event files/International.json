@@ -1241,5 +1241,15 @@
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/world-puppetry-day/"}, titles: {"en": "World Puppetry Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 3, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-social-work-day/"}, titles: {"en": "World Social Work Day"}, first: {era: 1, y: 1983}},
         {type: "nD", start: {mon: 3, d: 21}, end: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/shakespeare-week/"}, titles: {"en": "Shakespeare Week"}, first: {era: 1, y: 1900}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/as-young-as-you-feel-day/"}, titles: {"en": "As Young As You Feel Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/bavarian-crepes-day/"}, titles: {"en": "Bavarian Crepes Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/gryffindor-pride-day/"}, titles: {"en": "Gryffindor Pride Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/international-day-of-the-seal/"}, titles: {"en": "International Day Of The Seal"}, first: {era: 1, y: 1982}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/international-goof-off-day/"}, titles: {"en": "International Goof-Off Day"}, first: {era: 1, y: 1976}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/international-talk-like-william-shatner-day/"}, titles: {"en": "International Talk Like William Shatner Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/national-donald-day/"}, titles: {"en": "National Donald Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/national-goof-off-day/"}, titles: {"en": "National Goof Off Day"}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/talk-like-william-shakespeare-day/"}, titles: {"en": "Talk Like William Shakespeare Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/world-cloud-security-day/"}, titles: {"en": "World Cloud Security Day "}},
     ]
 }

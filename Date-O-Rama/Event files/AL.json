@@ -11,7 +11,7 @@
         {type: "1D", start: {mon: 1, d: 2, "thruD": 3, wkd: [2]}, inherits: "New Year’s Day (observed)"},
         {type: "1D", start: {mon: 1, d: 3, "thruD": 4, wkd: [3]}, titles: {"en": "New Year’s Day (day 2, observed)"}},
         {type: "1D", start: {mon: 3, d: 14}, titles: {"en": "Summer Day", "sq": "Dita e Verës"}},
-        {inherits: "Nowruz", type: "1D", start: {mon: 3, d: 22}, first: {era: 1, y: 2004}},
+        {inherits: "Nowruz", type: "1D", start: {mon: 3, d: 22}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/nevruz-day/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "May Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", start: {mon: 9, d: 5}, titles: {"en": "Mother Teresa Day", "sq": "Dita e Nënë Terezës"}, urls: {"en": "https://nationaltoday.com/saint-teresa-canonisation-day-in-albania/"}},
