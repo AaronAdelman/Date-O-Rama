@@ -34,5 +34,6 @@
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/arrival-of-the-first-missionaries/"}, titles: {"en": "Arrival of the First Missionaries"}},
         {type: "nD", start: {mon: 3, d: 5}, end: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/sea-week/"}, titles: {"en": "Sea Week"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/race-relations-day/"}, titles: {"en": "Race Relations Day"}},
+        {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/otago-anniversary-day/"}, titles: {"en": "Otago Anniversary Day"}, first: {era: 1, y: 1981}},
         ]
     }
