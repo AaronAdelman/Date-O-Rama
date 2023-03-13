@@ -12,7 +12,7 @@
         {titles: {"en": "Carnival (day 3)", "pt": "Carnaval (dia 3)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -50}},
         {titles: {"en": "Carnival (day 4)", "pt": "Carnaval (dia 4)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -49}},
         {titles: {"en": "Carnival (day 5)", "pt": "Carnaval (dia 5)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
-        {titles: {"en": "Carnival (day 6)", "pt": "Carnaval (dia 6)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -47}},
+        {titles: {"en": "Carnival (day 6)", "pt": "Carnaval (dia 6)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -47}, urls: {"en": "https://nationaltoday.com/angola-carnival-day/"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, first: {type: "1D", era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 23}, titles: {"en": "Day of Southern Africa Liberation", "pt": "Dia da Libertação da África Austral"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},

@@ -22,5 +22,6 @@
         {type: "1D", start: {mon: 8, d: 9}, titles: {"en": "National Women’s Day"}, emoji: "👩", first: {era: 1, y: 1995}, urls: {"en": "https://nationaltoday.com/national-womens-day/"}},
         {inherits: "Heritage Day", type: "1D", start: {mon: 9, d: 24}, first: {era: 1, y: 1996}, urls: {"en": "https://www.daysoftheyear.com/days/heritage-day/"}},
         {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/day-of-goodwill/"}, titles: {"en": "Day of Goodwill"}, first: {era: 1, y: 1994}},
+        {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/south-africa-human-rights-day/"}, inherits: "Human Rights Day"},
    ]
 }

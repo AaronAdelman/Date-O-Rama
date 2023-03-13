@@ -59,5 +59,6 @@
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/library-lovers-day-february/"}, titles: {"en": "Library Lovers’ Day"}, first: {era: 1, y: 2006}},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/hearing-awareness-week/"}, titles: {"en": "Hearing Awareness Week"}},
         {type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/clean-up-australia-day/"}, titles: {"en": "Clean Up Australia Day"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/harmony-day/"}, titles: {"en": "Harmony Day"}, first: {era: 1, y: 1999}},
     ]
 }
