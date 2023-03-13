@@ -1263,5 +1263,14 @@
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/ok-day/"}, titles: {"en": "OK Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/ravenclaw-pride-day/"}, titles: {"en": "Ravenclaw Pride Day"}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/world-math-day/"}, titles: {"en": "World Math Day"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/flatmates-day/"}, titles: {"en": "Flatmates Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/international-day-for-achievers/"}, titles: {"en": "International Day For Achievers"}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-adverse-drug-event-awareness-day/"}, titles: {"en": "National Adverse Drug Event Awareness Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-cheesesteak-day/"}, titles: {"en": "National Cheesesteak Day"}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-chocolate-covered-raisin-day/"}, titles: {"en": "National Chocolate Covered Raisin Day"}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-cocktail-day/"}, titles: {"en": "National Cocktail Day"}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-each-person-is-a-person-of-worth-day/"}, titles: {"en": "National Each Person Is a Person of Worth Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-stephanie-day/"}, titles: {"en": "National Stephanie Day"}},
+        {type: "nD", start: {mon: 3, d: 24}, end: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/tick-bite-prevention-week/"}, titles: {"en": "Tick Bite Prevention Week"}},
     ]
 }
