@@ -11,5 +11,6 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/el-salvador-independence-day/"}},
         {titles: {"en": "Celebrations of San Salvador", "es": "Fiesta de San Salvador"}, type: "1D", start: {mon: 8, d: 6}, first: {era: 1, y: 1525}, urls: {"en": "https://nationaltoday.com/celebrations-of-san-salvador/"}},
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/signing-of-the-peace-accords/"}, titles: {"en": "Signing of the Peace Accords"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/national-day-of-life-peace-and-justice/"}, titles: {"en": "National Day of Life, Peace and Justice"}, first: {era: 1, y: 2015}},
    ]
 }

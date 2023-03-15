@@ -57,7 +57,7 @@
         {type: "1D", start: {d: 11, mon: 2}, titles: {"en": "National Inventors’ Day"}, urls: {"en": "https://nationaldaycalendar.com/national-inventors-day-february-11/"}, emoji: "⚙️", first: {era: 1, y: 1983}},
         {type: "1D", start: {d: 28, mon: 2}, titles: {"en": "National Floral Design Day"}, first: {era: 1, y: 1995}, emoji: "💐", urls: {"en": "https://www.daysoftheyear.com/days/floral-design-day/"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, first: {era: 1, y: 1961}, emoji: "🕊", urls: {"en": "https://www.holidayinsights.com/moreholidays/March/peace-corps-day.htm"}},
-        {type: "1D", start: {d: 26, mon: 3}, titles: {"en": "Prince Kūhiō Day", "fr": "Journée du prince Kūhiō"}, first: {era: 1, y: 1949}, urls: {"en": "https://en.wikipedia.org/wiki/Prince_Kuhio_Day"}},
+        {type: "1D", start: {d: 26, mon: 3}, titles: {"en": "Prince Kūhiō Day", "fr": "Journée du prince Kūhiō"}, first: {era: 1, y: 1949}, urls: {"en": "https://nationaltoday.com/prince-kuhio-day/"}, notes: {"en": "Prince Kuhio Day"}},
         {type: "1D", start: {mon:3, d: 31}, titles: {"en": "Cesar Chavez Day", "es": "Día de César Chávez", "fr": "Jour de Cesar Chavez"}, first: {era: 1, y: 2014}, urls: {"en": "https://en.wikipedia.org/wiki/Cesar_Chavez_Day"}},
         {type: "1D", start: {mon:3, d: 31}, titles: {"en": "Thomas Mundy Peterson Day"}, first: {era: 1, y: 1998}, urls: {"en": "https://en.wikipedia.org/wiki/Thomas_Mundy_Peterson"}},
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "Law Day"}, first: {era: 1, y: 1958}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://en.wikipedia.org/wiki/Law_Day_(United_States)"}},
@@ -242,6 +242,7 @@
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/bed-in-for-peace-day/"}, titles: {"en": "Bed-in for Peace Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/%e2%80%8bmaryland-day/"}, titles: {"en": "​Maryland Day"}, first: {era: 1, y: 1916}},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-medal-honor-day/"}, titles: {"en": "National Medal of Honor Day"}},
+        {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/black-marriage-day/"}, titles: {"en": "Black Marriage Day"}, first: {era: 1, y: 2003}},
 
         {type: "1D", titles: {"en": "National Voter Registration Day"}, start: {mon: 9, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationalvoterregistrationday.org/"}, first: {era: 1, y: 2014}, emoji: "🗳"},
         {titles: {"en": "National D.A.R.E. Day"}, type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1988}, urls: {"en": "https://nationaltoday.com/national-d-a-r-e-day/"}, emoji: "🚫"},
