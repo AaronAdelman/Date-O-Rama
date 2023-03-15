@@ -1286,5 +1286,12 @@
         {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/national-wayne-day/"}, titles: {"en": "National Wayne Day"}},
         {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/nike-air-max-day/"}, titles: {"en": "Nike Air Max Day"}, first: {era: 1, y: 1987}},
         {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/solitude-day/"}, titles: {"en": "Solitude Day"}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/celebrate-exchange-day/"}, titles: {"en": "Celebrate Exchange Day"}, first: {era: 1, y: 1911}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/international-scribble-day/"}, titles: {"en": "International Scribble Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/international-whiskey-day/"}, titles: {"en": "International Whiskey Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-acoustic-soul-day/"}, titles: {"en": "National Acoustic Soul Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-joe-day/"}, titles: {"en": "National Joe Day"}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-medical-science-liaison-awareness-and-appreciation-day/"}, titles: {"en": "National Medical Science Liaison Awareness and Appreciation Day"}, first: {era: 1, y: 1967}},
+        {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/quirky-country-music-song-titles-day/"}, titles: {"en": "Quirky Country Music Song Titles Day"}},
     ]
 }
