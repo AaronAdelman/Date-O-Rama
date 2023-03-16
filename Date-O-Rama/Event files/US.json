@@ -360,6 +360,7 @@
         {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/k-9-veterans-day/"}, titles: {"en": "K-9 Veterans Day"}, notes: {"en": "National K9 Veterans Day"}},
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-sbdc-day/"}, titles: {"en": "National SBDC Day"}, notes: {"en": "Small Business Development Centers Day"}},
         {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/freedom-of-information-day/"}, titles: {"en": "Freedom of Information Day"}},
+        {type: "nD", start: {mon: 3, d: 28}, end: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-protocol-officers-week/"}, titles: {"en": "National Protocol Officer's Week"}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

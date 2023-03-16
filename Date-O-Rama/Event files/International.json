@@ -1293,5 +1293,16 @@
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-joe-day/"}, titles: {"en": "National Joe Day"}},
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-medical-science-liaison-awareness-and-appreciation-day/"}, titles: {"en": "National Medical Science Liaison Awareness and Appreciation Day"}, first: {era: 1, y: 1967}},
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/quirky-country-music-song-titles-day/"}, titles: {"en": "Quirky Country Music Song Titles Day"}},
+        {type: "1D", start: {mon: 3, wkd: [3], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/american-diabetes-alert-day/"}, titles: {"en": "American Diabetes Alert Day"}, first: {era: 1, y: 1988}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/barnum-bailey-day/"}, titles: {"en": "Barnum & Bailey Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/eat-an-eskimo-pie-day/"}, titles: {"en": "Eat an Eskimo Pie Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-amber-day/"}, titles: {"en": "National Amber Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-black-forest-cake-day/"}, titles: {"en": "National Black Forest Cake Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-ram-day/"}, titles: {"en": "National Ram Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-something-stick-day/"}, titles: {"en": "National Something On a Stick Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-triglycerides-day/"}, titles: {"en": "National Triglycerides Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-weed-appreciation-day/"}, titles: {"en": "National Weed Appreciation Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/respect-your-cat-day/"}, titles: {"en": "Respect Your Cat Day"}},
+        {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/virtual-advocacy-day/"}, titles: {"en": "Virtual Advocacy Day"}},
     ]
 }
