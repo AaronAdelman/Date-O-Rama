@@ -58,7 +58,7 @@
         {type: "1D", start: {d: 28, mon: 2}, titles: {"en": "National Floral Design Day"}, first: {era: 1, y: 1995}, emoji: "💐", urls: {"en": "https://www.daysoftheyear.com/days/floral-design-day/"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, first: {era: 1, y: 1961}, emoji: "🕊", urls: {"en": "https://www.holidayinsights.com/moreholidays/March/peace-corps-day.htm"}},
         {type: "1D", start: {d: 26, mon: 3}, titles: {"en": "Prince Kūhiō Day", "fr": "Journée du prince Kūhiō"}, first: {era: 1, y: 1949}, urls: {"en": "https://nationaltoday.com/prince-kuhio-day/"}, notes: {"en": "Prince Kuhio Day"}},
-        {type: "1D", start: {mon:3, d: 31}, titles: {"en": "Cesar Chavez Day", "es": "Día de César Chávez", "fr": "Jour de Cesar Chavez"}, first: {era: 1, y: 2014}, urls: {"en": "https://en.wikipedia.org/wiki/Cesar_Chavez_Day"}},
+        {type: "1D", start: {mon:3, d: 31}, titles: {"en": "Cesar Chavez Day", "es": "Día de César Chávez", "fr": "Jour de Cesar Chavez"}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaltoday.com/cesar-chavez-day/"}},
         {type: "1D", start: {mon:3, d: 31}, titles: {"en": "Thomas Mundy Peterson Day"}, first: {era: 1, y: 1998}, urls: {"en": "https://en.wikipedia.org/wiki/Thomas_Mundy_Peterson"}},
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "Law Day"}, first: {era: 1, y: 1958}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://en.wikipedia.org/wiki/Law_Day_(United_States)"}},
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "School Bus Drivers Day"}, first: {era: 1, y: 2009}, emoji: "🚌", urls: {"en": "https://www.daysoftheyear.com/days/school-bus-drivers-day/"}},
