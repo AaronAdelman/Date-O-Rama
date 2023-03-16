@@ -1304,5 +1304,13 @@
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-weed-appreciation-day/"}, titles: {"en": "National Weed Appreciation Day"}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/respect-your-cat-day/"}, titles: {"en": "Respect Your Cat Day"}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/virtual-advocacy-day/"}, titles: {"en": "Virtual Advocacy Day"}},
+        {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/little-red-wagon-day/"}, titles: {"en": "Little Red Wagon Day"}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/national-lemon-chiffon-cake-day/"}, titles: {"en": "National Lemon Chiffon Cake Day"}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/national-mom-pop-business-owners-day/"}, titles: {"en": "National Mom and Pop Business Owners Day"}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/national-smoke-mirrors-day/"}, titles: {"en": "National Smoke and Mirrors Day"}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/niagara-falls-runs-dry-day/"}, titles: {"en": "Niagara Falls Runs Dry Day"}, first: {era: 1, y: 1848}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/payday-it-forward/"}, titles: {"en": "Payday It Forward"}},
+        {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/whole-grain-sampling-day/"}, titles: {"en": "Whole Grain Sampling Day"}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/world-piano-day/"}, titles: {"en": "World Piano Day"}},
     ]
 }

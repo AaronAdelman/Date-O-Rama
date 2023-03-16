@@ -146,5 +146,6 @@
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/salvation-army-day/"}, titles: {"en": "Salvation Army Day"}},
         {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/orange-and-lemons-day/"}, titles: {"en": "Orange And Lemons Day"}, first: {era: 1, y: 1919}},
         {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/st-urhos-day/"}, titles: {"en": "St. Urho’s Day"}, first: {era: 1, y: 1950}},
+        {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/knights-of-columbus-founders-day/"}, titles: {"en": "Knights of Columbus Founders Day"}},
     ]
 }
