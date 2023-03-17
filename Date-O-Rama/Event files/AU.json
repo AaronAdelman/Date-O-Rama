@@ -10,7 +10,7 @@
         {inherits: "Labor Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 1}, "locations": {"en": "Western Australia"}},
         {titles: {"en": "Canberra Day"}, type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/canberra-day/"}, first: {era: 1, y: 2008}},
         {titles: {"en": "March Public Holiday"}, type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, "locations": {"en": "South Australia"}},
-        {titles: {"en": "Eight Hours Day Day"}, type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/eight-hours-day/"}},
+        {titles: {"en": "Eight Hours Day"}, type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/eight-hours-day/"}},
         {inherits: "Labor Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, "locations": {"en": "Victoria"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
