@@ -364,6 +364,10 @@
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/texas-loves-the-children-day/"}, titles: {"en": "Texas Loves the Children Day"}},
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/vietnam-veterans-day/"}, titles: {"en": "Vietnam Veterans Day"}, first: {era: 1, y: 1973}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-control-day/", "he": "https://www.daysoftheyear.co.il/2018/03/30.html"}, titles: {"en": "National I Am In Control Day", "he": "יום ה״אני בשליטה״"}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/mathematics-and-statistics-awareness-month/"}, titles: {"en": "Mathematics and Statistics Awareness Month"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-one-cent-day/"}, titles: {"en": "National One Cent Day"}},
+        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/st-stupid-day/"}, titles: {"en": "St. Stupid Day"}, first: {era: 1, y: 1979}},
+        {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/u-s-air-force-academy-day/"}, titles: {"en": "U.S. Air Force Academy Day"}, first: {era: 1, y: 1954}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

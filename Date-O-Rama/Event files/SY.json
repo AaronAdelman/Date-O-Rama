@@ -19,5 +19,6 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, d: 21}},
         {inherits: "St. Barbara’s Day", type: "1D", start: {mon: 12, d: 17}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 25}},
+        {inherits: "Assyrian New Year", type: "1D", start: {mon: 4, d: 1}},
     ]
 }

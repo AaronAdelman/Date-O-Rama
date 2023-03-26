@@ -81,6 +81,7 @@
         {template: "Asr (Hanafi)", titles: {"en": "Asr (Hanafi)", "ar": "صلاة العصر‎ (حَنَفِي‎)", "he": "צאלת אל־עצר (חנפי)"}, type: "pt", start: {"ptType": "Asr", "asrJuristicMethod": "Hanafi", "calcMethod": "ISNA"}},
         {template: "Asr (Shafii)", titles: {"en": "Asr (Shafii)", "ar": "صلاة العصر‎ (شَافِعِي‎)", "he": "צאלת אל־עצר (שאפעי)"}, type: "pt", start: {"ptType": "Asr", "asrJuristicMethod": "Shafii", "calcMethod": "ISNA"}},
         {template: "Assumption of Mary", titles: {"en": "Assumption of Mary", "nl": "Onze Lieve Vrouw hemelvaart", "fr": "Assomption", "de": "Mariä Himmelfahrt", "sq": "Dita Shën Marisë or Pashka e Vogël", "ca": "Assumpció", "ar": "عيد إنتقال العذراء"}, type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/feast-assumption/"}},
+        {template: "Assyrian New Year", titles: {"en": "Assyrian New Year"}, type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/assyrian-new-year/"}},
         {template: "August Monday", titles: {"en": "August Monday"}, type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
         {template: "Australia Day", type: "1D", start: {mon: 1, d: 26}, titles: {"en": "Australia Day", "he": "יום אוסטרליה"}, urls: {"en": "https://www.australiaday.org.au/", "he": "https://www.daysoftheyear.co.il/2018/01/26.html"}},
         {template: "Autumnal Equinox", titles: {"en": "Autumnal Equinox", "he": "שוויון סתווי"}, type: "pt", start: {"equinoxOrSolstice": "Sep"}},
