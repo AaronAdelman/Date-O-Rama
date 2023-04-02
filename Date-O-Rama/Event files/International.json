@@ -235,7 +235,7 @@
         {type: "1D", start: {d: 27, mon: 3}, titles: {"en": "World Theatre Day", "he": "יום הקולנוע העולמי"}, notes: {"en": "World Theater Day\nWTD"}, first: {era: 1, y: 1961}, emoji: "🎭", urls: {"en": "https://www.world-theatre-day.org/", "he": "https://www.daysoftheyear.co.il/2017/03/27.html"}},
         {type: "1D", start: {mon:3, d: 31}, titles: {"en": "World Backup Day"}, emoji: "⟲", urls: {"en": "https://www.worldbackupday.com/en", "cn": "https://www.worldbackupday.com/cn", "de": "https://www.worldbackupday.com/de", "es": "https://www.worldbackupday.com/es", "fr": "https://www.worldbackupday.com/fr", "it": "https://www.worldbackupday.com/it", "ja": "https://www.worldbackupday.com/ja", "nl": "https://www.worldbackupday.com/nl", "pl": "https://www.worldbackupday.com/pl", "pt": "https://www.worldbackupday.com/pt"}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
-        {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "International Children’s Book Day"}, first: {era: 1, y: 1967}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/childrens-book-day/"}},
+        {type: "1D", start: {mon: 4, d: 2}, titles: {"en": "International Children’s Book Day"}, first: {era: 1, y: 1967}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/childrens-book-day/"}, notes: {"en": "National Children’s Picture Book Day"}},
         {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "National Peanut Butter and Jelly Day"}, emoji: "🥪", urls: {"en": "https://www.daysoftheyear.com/days/peanut-butter-and-jelly-day/"}},
         {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "National Ferret Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/ferret-day/"}},
         {type: "1D", start: {mon: 4, wkd: [1], wkdRecurrence: 1}, titles: {"en": "Geologists Day"}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaldaycalendar.com/geologists-day-first-sunday-in-april/"}, emoji: "🪨"},
@@ -1439,5 +1439,10 @@
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/workplace-conflict-awareness-month/"}, titles: {"en": "Workplace Conflict Awareness Month"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/world-landscape-architecture-month/"}, titles: {"en": "World Landscape Architecture Month"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/worldwide-bereaved-spouses-awareness-month/"}, titles: {"en": "Worldwide Bereaved Spouses Awareness Month"}},
+        {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/international-fact-checking-day/"}, titles: {"en": "International Fact-Checking Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-diy-day/"}, titles: {"en": "National DIY Day"}},
+        {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-love-your-produce-manager-day/"}, titles: {"en": "National Love Your Produce Manager Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-reconciliation-day/"}, titles: {"en": "National Reconciliation Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-ride-your-horse-to-a-bar-day/"}, titles: {"en": "National Ride Your Horse to a Bar Day"}, first: {era: 1, y: 2021}},
     ]
 }
