@@ -175,7 +175,7 @@
         {template: "Holy Innocents Day", titles: {"en": "Holy Innocents Day", "es": "Día de los Innocentes"}, notes: {"en": "Christmastide (day 4)"}, type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaldaycalendar.com/holy-innocents-day-december-28/"}, emoji: "🌌"},
         {template: "Holy Monday", titles: {"en": "Holy Monday"}, notes: {"en": "Lent (day 35)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -6}, urls: {"en": "https://nationaltoday.com/holy-monday/"}},
         {template: "Holy Saturday", titles: {"en": "Holy Saturday"}, notes: {"en": "Lent (day 40)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
-        {template: "Holy Tuesday", titles: {"en": "Holy Tuesday"}, notes: {"en": "Lent (day 36)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -5}},
+        {template: "Holy Tuesday", titles: {"en": "Holy Tuesday"}, notes: {"en": "Lent (day 36)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -5}, urls: {"en": "https://nationaltoday.com/holy-tuesday/"}},
         {template: "Holy Wednesday", titles: {"en": "Holy Wednesday"}, notes: {"en": "Lent (day 37)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -4}},
         {template: "Hong Kong Special Administrative Region Establishment Day", titles: {"en": "Hong Kong Special Administrative Region Establishment Day"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/hong-kong-special-administrative-region-establishment-day/"}, first: {era: 1, y: 1997}, emoji: "🇭🇰"},
         {template: "Hour of Jupiter", titles: {"he":  "שעת צדק", "en": "Hour of Jupiter"}, type: "span", start: {wkd: [1], "ptType": "R2ST", "zsuH": 3.0, "dHalf": "n"}, inherits: "*zju*", inherits: "*Astrology*"},

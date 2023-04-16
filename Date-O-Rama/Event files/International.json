@@ -1456,5 +1456,17 @@
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/weed-out-hate-day/"}, titles: {"en": "Weed Out Hate Day"}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/world-cloud-security-day/"}, titles: {"en": "World Cloud Security Day"}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/world-party-day/"}, titles: {"en": "World Party Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/404-day/"}, titles: {"en": "404 Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/international-carrot-day/"}, titles: {"en": "International Carrot Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/jeep-4x4-day/"}, titles: {"en": "Jeep 4×4 Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-cordon-bleu-day/"}, titles: {"en": "National Cordon Bleu Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-dillon-day/"}, titles: {"en": "National Dillon Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-hug-newsperson-day/"}, titles: {"en": "National Hug a Newsperson Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-school-librarian-day/"}, titles: {"en": "National School Librarian Day"}},
+        {type: "1D", start: {mon: 4, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-sexual-assault-awareness-months-day-of-action/"}, titles: {"en": "National Sexual Assault Awareness Month’s Day of Action"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-vitamin-c-day/"}, titles: {"en": "National Vitamin C Day"}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-walk-around-things-day/"}, titles: {"en": "National Walk Around Things Day"}},
+        {type: "1D", start: {mon: 4, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/saam-day-of-action/"}, titles: {"en": "SAAM Day of Action"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/victims-of-violence-wholly-day/"}, titles: {"en": "Victims of Violence Wholly Day"}, first: {era: 1, y: 1984}},
     ]
 }
