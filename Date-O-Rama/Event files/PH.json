@@ -73,5 +73,7 @@
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/filipino-food-month/"}, titles: {"en": "Filipino Food Month"}, first: {era: 1, y: 2018}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-literature-month/"}, titles: {"en": "National Literature Month"}, first: {era: 1, y: 2021}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/panagyaman-rice-festival/"}, titles: {"en": "Panagyaman Rice Festival"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-lino-brocka/"}, titles: {"en": "Birth Anniversary of National Artist Lino Brocka"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/ncca-anniversary/"}, titles: {"en": "NCCA Anniversary"}, first: {era: 1, y: 1992}},
     ]
 }

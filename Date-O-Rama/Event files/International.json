@@ -1444,5 +1444,17 @@
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-love-your-produce-manager-day/"}, titles: {"en": "National Love Your Produce Manager Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-reconciliation-day/"}, titles: {"en": "National Reconciliation Day"}, first: {era: 1, y: 1989}},
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-ride-your-horse-to-a-bar-day/"}, titles: {"en": "National Ride Your Horse to a Bar Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/dont-go-to-work-unless-its-fun-day/"}, titles: {"en": "Don’t Go to Work Unless It’s Fun Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/fish-fingers-and-custard-day/"}, titles: {"en": "Fish Fingers and Custard Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/independent-artist-day/"}, titles: {"en": "Independent Artist Day™"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-mousse-day/"}, titles: {"en": "National Chocolate Mousse Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-film-score-day/"}, titles: {"en": "National Film Score Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-find-a-rainbow-day/"}, titles: {"en": "National Find a Rainbow Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-grey-day/"}, titles: {"en": "National Grey Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-inspiring-joy-day/"}, titles: {"en": "National Inspiring Joy Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/paraprofessional-appreciation-day/"}, titles: {"en": "Paraprofessional Appreciation Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/weed-out-hate-day/"}, titles: {"en": "Weed Out Hate Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/world-cloud-security-day/"}, titles: {"en": "World Cloud Security Day"}},
+        {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/world-party-day/"}, titles: {"en": "World Party Day"}, first: {era: 1, y: 1996}},
     ]
 }

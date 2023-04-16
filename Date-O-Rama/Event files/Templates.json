@@ -173,7 +173,7 @@
         {template: "Heroes’ Day", titles: {"en": "Heroes’ Day", "pt": "Dia dos Heróis", "he": "יום הגיבורים", "id": "Hari Pahlawan", "hu": "Hősök napja"}, type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://en.wikipedia.org/wiki/Heroes%27_Day"}},
         {template: "Heroes’ Day (Kenya)", inherits: "Heroes’ Day", type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/kenya-mashujaa-day/"}, notes: {"en": "Mashujaa Day"}},
         {template: "Holy Innocents Day", titles: {"en": "Holy Innocents Day", "es": "Día de los Innocentes"}, notes: {"en": "Christmastide (day 4)"}, type: "1D", start: {mon: 12, d: 28}, urls: {"en": "https://nationaldaycalendar.com/holy-innocents-day-december-28/"}, emoji: "🌌"},
-        {template: "Holy Monday", titles: {"en": "Holy Monday"}, notes: {"en": "Lent (day 35)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -6}},
+        {template: "Holy Monday", titles: {"en": "Holy Monday"}, notes: {"en": "Lent (day 35)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -6}, urls: {"en": "https://nationaltoday.com/holy-monday/"}},
         {template: "Holy Saturday", titles: {"en": "Holy Saturday"}, notes: {"en": "Lent (day 40)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
         {template: "Holy Tuesday", titles: {"en": "Holy Tuesday"}, notes: {"en": "Lent (day 36)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -5}},
         {template: "Holy Wednesday", titles: {"en": "Holy Wednesday"}, notes: {"en": "Lent (day 37)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -4}},
