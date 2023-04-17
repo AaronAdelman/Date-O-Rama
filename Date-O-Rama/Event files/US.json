@@ -394,6 +394,9 @@
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/american-circus-day/"}, titles: {"en": "American Circus Day"}, first: {era: 1, y: 1793}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/pony-express-day/"}, titles: {"en": "Pony Express Day"}},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/go-for-broke-day/"}, titles: {"en": "Go For Broke Day"}},
+        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/army-day/"}, inherits: "Army Day"},
+        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/california-poppy-day/"}, titles: {"en": "California Poppy Day"}},
+        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/national-acai-bowl-day/"}, titles: {"en": "National Acai Bowl Day"}, first: {era: 1, y: 2013}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

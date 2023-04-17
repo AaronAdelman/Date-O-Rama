@@ -12,5 +12,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1925}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/restoration-day-in-geneva/"}, titles: {"en": "Restoration Day"}, locations: {"en": "Geneva"}},
+        {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/nafelser-fahrt/"}, titles: {"en": "Näfelser Fahrt"}},
   ]
 }
