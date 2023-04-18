@@ -11,6 +11,7 @@
        {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
        {inherits: "Heroes’ Day", type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/mozambican-heroes-day/"}},
        {inherits: "Revolution Day", type: "1D", start: {mon: 9, d: 25}, first: {era: 1, y: 1964}},
+       {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/mozambican-national-womens-day/"}, inherits: "National Women’s Day"},
     ]
 }
 
