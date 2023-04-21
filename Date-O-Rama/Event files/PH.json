@@ -75,5 +75,6 @@
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/panagyaman-rice-festival/"}, titles: {"en": "Panagyaman Rice Festival"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-lino-brocka/"}, titles: {"en": "Birth Anniversary of National Artist Lino Brocka"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/ncca-anniversary/"}, titles: {"en": "NCCA Anniversary"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/black-saturday/"}, titles: {"en": "Black Saturday"}, inherits: "Holy Saturday"},
     ]
 }

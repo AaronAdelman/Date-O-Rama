@@ -13,7 +13,7 @@
         {titles: {"en": "Eight Hours Day"}, type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/eight-hours-day/"}},
         {inherits: "Labor Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, "locations": {"en": "Victoria"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
+        {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/easter-saturday/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Easter Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": 2}},

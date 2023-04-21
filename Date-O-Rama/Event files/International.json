@@ -245,7 +245,7 @@
         {type: "1D", start: {d: 6, mon: 4}, titles: {"en": "Bohring-Opitz Syndrome Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/bohring-opitz-syndrome-bos-awareness-day-april-6/"}, emoji: "🧬", notes: {"en": "BOS Awareness Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {d: 6, mon: 4}, titles: {"en": "National Carbonara Day"}, urls: {"en": "https://nationaldaycalendar.com/national-carbonara-day-april-6/"}, first: {era: 1, y: 2017}, emoji: "🍝"},
         {type: "1D", start: {d: 7, mon: 4}, titles: {"en": "International Beaver Day"}, urls: {"en": "https://www.daysoftheyear.com/days/beaver-day/"}, emoji: "🦫", first: {era: 1, y: 2008}},
-        {type: "1D", start: {d: 8, mon: 4}, titles: {"en": "International Romani Day"}, urls: {"en": "https://nationaldaycalendar.com/international-romani-day-april-8/"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/international-romani-day/"}, inherits: "International Romani Day", first: {era: 1, y: 1990}},
         {type: "1D", start: {d: 8, mon: 4}, titles: {"en": "World Pageant Day"}, urls: {"en": "https://nationaldaycalendar.com/international-pageant-day-april-8/"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 4, d: 8}, titles: {"en": "National Zoo Lovers Day"}, emoji: "🦘", urls: {"en": "https://www.daysoftheyear.com/days/zoo-lovers-day/"}},
         {type: "1D", start: {d: 9, mon: 4}, titles: {"en": "International ASMR Day"}, urls: {"en": "https://www.daysoftheyear.com/days/asmr-day/"}, first: {era: 1, y: 2012}},
@@ -1516,5 +1516,13 @@
         {type: "1D", start: {mon: 4, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/walk-to-work-day/"}, titles: {"en": "Walk to Work Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -2}, urls: {"en": "https://nationaltoday.com/world-marbles-day/"}, titles: {"en": "World Marbles Day"}},
         {type: "nD", start: {mon: 4, d: 7}, end: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-integrated-respiratory-care-week/"}, titles: {"en": "National Integrated Respiratory Care Week"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/baby-massage-day/"}, titles: {"en": "Baby Massage Day"}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/draw-a-bird-day/"}, titles: {"en": "Draw a Bird Day"}, first: {era: 1, y: 1947}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-all-is-ours-day/"}, titles: {"en": "National All is Ours Day"}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-dog-fighting-awareness-day/"}, titles: {"en": "National Dog Fighting Awareness Day"}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-empanada-day/"}, titles: {"en": "National Empanada Day"}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/pygmy-hippo-day/"}, titles: {"en": "Pygmy Hippo Day"}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/step-into-the-spotlight-day/"}, titles: {"en": "Step Into the Spotlight Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/trading-cards-for-grown-ups-day/"}, titles: {"en": "Trading Cards for Grown-ups Day"}},
     ]
 }
