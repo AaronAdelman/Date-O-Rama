@@ -19,6 +19,6 @@
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/grandpas-day/"}, titles: {"en": "Grandpa’s Day"}, emoji: "👴", first: {era: 1, y: 1964}},
         {inherits: "Fat Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -52}, emoji: "🍩", urls: {"en": "https://www.daysoftheyear.com/days/fat-thursday/"}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -52}, urls: {"en": "https://nationaltoday.com/paczki-day/"}, titles: {"en": "Paczki Day"}},
-        {type: "1D", start: {Easter: Easter, offsetD: 1}, urls: {"en": "https://nationaltoday.com/dyngus-day/"}, titles: {"en": "Dyngus Day"}},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://nationaltoday.com/dyngus-day/"}, titles: {"en": "Dyngus Day"}},
     ]
 }

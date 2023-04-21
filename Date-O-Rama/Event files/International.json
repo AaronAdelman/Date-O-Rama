@@ -1543,5 +1543,15 @@
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-siblings-day/"}, titles: {"en": "National Siblings Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-tamara-day/"}, titles: {"en": "National Tamara Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-youth-hiv-and-aids-awareness-day/"}, titles: {"en": "National Youth HIV and AIDS Awareness Day"}},
-    ]
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/dog-therapy-appreciation-day/"}, titles: {"en": "Dog Therapy Appreciation Day"}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/global-day-to-end-child-sexual-abuse/"}, titles: {"en": "Global Day to End Child Sexual Abuse"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/international-be-kind-to-lawyers-day/"}, titles: {"en": "International Be Kind to Lawyers Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-barbershop-quartet-day/"}, titles: {"en": "National Barbershop Quartet Day"}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-clean-up-your-pantry-day/"}, titles: {"en": "National Clean Up Your Pantry Day"}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-eight-track-tape-day/"}, titles: {"en": "National Eight Track Tape Day"}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-james-day/"}, titles: {"en": "National James Day"}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-marketing-operations-appreciation-day/"}, titles: {"en": "National Marketing Operations Appreciation Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-poutine-day/"}, titles: {"en": "National Poutine Day"}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-ranch-water-day/"}, titles: {"en": "National Ranch Water Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/world-parkinsons-day/"}, titles: {"en": "World Parkinson’s Day"}},    ]
 }
