@@ -1524,5 +1524,13 @@
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/pygmy-hippo-day/"}, titles: {"en": "Pygmy Hippo Day"}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/step-into-the-spotlight-day/"}, titles: {"en": "Step Into the Spotlight Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/trading-cards-for-grown-ups-day/"}, titles: {"en": "Trading Cards for Grown-ups Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/jumbo-day/"}, titles: {"en": "Jumbo Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-bodhi-day/"}, titles: {"en": "National Bodhi Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-cherish-an-antique-day/"}, titles: {"en": "National Cherish an Antique Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-chicken-little-awareness-day/"}, titles: {"en": "National Chicken Little Awareness Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-chinese-almond-cookie-day/"}, titles: {"en": "National Chinese Almond Cookie Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-gin-and-tonic-day/"}, titles: {"en": "National Gin and Tonic Day"}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-mature-womens-day/"}, titles: {"en": "National Mature Women’s Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-name-yourself-day/"}, titles: {"en": "National Name Yourself Day"}},
     ]
 }

@@ -71,5 +71,6 @@
         {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/pink-shirt-day/"}, titles: {"en": "Pink Shirt Day"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/yukon-heritage-day/"}, titles: {"en": "Yukon Heritage Day"}, first: {era: 1, y: 1976}},
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-governance-professionals-day/"}, titles: {"en": "National Governance Professionals Day"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/vimy-ridge-day/"}, titles: {"en": "Vimy Ridge Day"}, first: {era: 1, y: 2003}},
     ]
 }
