@@ -72,7 +72,7 @@
         {titles: {"en": "Remembrance:  Descending of the Psalms (according to one narration)"}, type: "1D", start: {mon: 9, d: 18}, inherits: "*Remembrance*"},
         {titles: {"en": "Mourning:  Day of Striking"}, type: "1D", start: {mon: 9, d: 19}},
         {titles: {"en": "Remembrance:  Victorious Conquest of Mecca"}, type: "1D", start: {mon: 9, d: 20}, inherits: "*Remembrance*"},
-        {titles: {"en": "Mourning:  Martyrdom of Ali, 40 AH"}, type: "1D", start: {mon: 9, d: 21}},
+        {titles: {"en": "Mourning:  Martyrdom of Ali, 40 AH"}, type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/martyrdom-of-imam-ali/"}},
         {titles: {"en": "Remembrance:  Battle of the Trench"}, type: "1D", start: {mon: 10, d: 2}, inherits: "*Remembrance*"},
         {titles: {"en": "Mourning:  Day of Sorrow"}, type: "1D", start: {mon: 10, d: 8}},
         {titles: {"en": "Remembrance:  Marriage of Khadijah bint Khuwaylid to Muhammad"}, type: "1D", start: {mon: 10, d: 9}, inherits: "*Wedding Anniv*"},
