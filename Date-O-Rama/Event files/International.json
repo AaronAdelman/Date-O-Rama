@@ -1532,5 +1532,16 @@
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-gin-and-tonic-day/"}, titles: {"en": "National Gin and Tonic Day"}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-mature-womens-day/"}, titles: {"en": "National Mature Women’s Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-name-yourself-day/"}, titles: {"en": "National Name Yourself Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/global-work-from-home-day/"}, titles: {"en": "Global Work From Home Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/golfers-day/"}, titles: {"en": "Golfer’s Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-calvin-day/"}, titles: {"en": "National Calvin Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-cinnamon-crescent-day/"}, titles: {"en": "National Cinnamon Crescent Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-encourage-a-young-writer-day/"}, titles: {"en": "National Encourage a Young Writer Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-farm-animals-day/"}, titles: {"en": "National Farm Animals Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-hug-your-dog-day/"}, titles: {"en": "National Hug Your Dog Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-nana-day/"}, titles: {"en": "National Nana Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-siblings-day/"}, titles: {"en": "National Siblings Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-tamara-day/"}, titles: {"en": "National Tamara Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-youth-hiv-and-aids-awareness-day/"}, titles: {"en": "National Youth HIV and AIDS Awareness Day"}},
     ]
 }

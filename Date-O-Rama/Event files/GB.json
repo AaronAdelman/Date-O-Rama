@@ -89,5 +89,6 @@
         {inherits: "Laetare", type: "1D", start: {"Easter": "Easter", "offsetD": -21}, urls: {"en": "https://nationaltoday.com/mothering-sunday-in-the-uk/"}},
         {type: "nD", start: {mon: 4, d: 4}, end: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/discover-national-parks-fortnight/"}, titles: {"en": "Discover National Parks Fortnight"}},
         {type: "nD", start: {mon: 4, d: 5}, end: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/bee-active-bee-healthy-bee-happy-week/"}, titles: {"en": "Bee Active Bee Healthy Bee Happy Week"}, first: {era: 1, y: 2018}},
+        {type: "nD", start: {mon: 4, d: 11}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/parkinsons-awareness-week/"}, titles: {"en": "Parkinson's Awareness Week"}, first: {era: 1, y: 1997}},
     ]
 }
