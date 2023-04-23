@@ -1579,5 +1579,15 @@
         {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/thomas-jefferson-day/"}, titles: {"en": "Thomas Jefferson Day"}},
         {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/consumer-awareness-week/"}, titles: {"en": "Consumer Awareness Week"}},
         {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/global-days-of-action-on-military-spending/"}, titles: {"en": "Global Days of Action on Military Spending"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/children-with-alopecia-day/"}, titles: {"en": "Children with Alopecia Day"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/dreams-of-reason-feast-day/"}, titles: {"en": "Dreams of Reason Feast Day"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-dolphin-day/"}, titles: {"en": "National Dolphin Day"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-donate-a-book-day/"}, titles: {"en": "National Donate a Book Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-ex-spouse-day/"}, titles: {"en": "National Ex-Spouse Day"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-gardening-day/"}, titles: {"en": "National Gardening Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-pecan-day/"}, titles: {"en": "National Pecan Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-reach-as-high-as-you-can-day/"}, titles: {"en": "National Reach As High As You Can Day"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/pathologists-assistants-day/"}, titles: {"en": "Pathologists’ Assistants Day"}},
+        {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/rainn-day/"}, titles: {"en": "RAINN Day"}},
     ]
 }
