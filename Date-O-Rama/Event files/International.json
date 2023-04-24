@@ -1605,6 +1605,21 @@
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/titanic-remembrance-day/"}, titles: {"en": "Titanic Remembrance Day"}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/type-1-diabetes-day-in-honor-of-jakya-monique-furtick/"}, titles: {"en": "Type 1 Diabetes Day in Honor of Jakya Monique Furtick"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/universal-day-of-culture/"}, titles: {"en": "Universal Day of Culture"}, first: {era: 1, y: 2009}},
-
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/day-of-the-mushroom/"}, titles: {"en": "Day of the Mushroom"}},
+        {type: "1D", start: {mon: 4, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/go-fly-a-kite-day/"}, titles: {"en": "Go Fly a Kite Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-angel-day/"}, titles: {"en": "National Angel Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-bean-counter-day/"}, titles: {"en": "National Bean Counter Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-cash-day/"}, titles: {"en": "National Cash Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-eggs-benedict-day/"}, titles: {"en": "National Eggs Benedict Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-healthcare-decisions-day/"}, titles: {"en": "National Healthcare Decisions Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-joseph-day/"}, titles: {"en": "National Joseph Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-librarian-day/"}, titles: {"en": "National Librarian Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-orchid-day/"}, titles: {"en": "National Orchid Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-reveal-the-genius-within-day/"}, titles: {"en": "National Reveal the Genius Within Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/save-the-elephant-day/"}, titles: {"en": "Save the Elephant Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/selena-day/"}, titles: {"en": "Selena Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/teach-your-daughter-to-volunteer-day/"}, titles: {"en": "Teach Your Daughter to Volunteer Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/wear-pajamas-to-work-day/"}, titles: {"en": "Wear Pajamas to Work Day"}},
+        {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/world-semicolon-day/"}, titles: {"en": "World Semicolon Day"}, first: {era: 1, y: 2016}},
     ]
 }
