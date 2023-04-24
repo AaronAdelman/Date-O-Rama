@@ -1589,5 +1589,22 @@
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-reach-as-high-as-you-can-day/"}, titles: {"en": "National Reach As High As You Can Day"}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/pathologists-assistants-day/"}, titles: {"en": "Pathologists’ Assistants Day"}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/rainn-day/"}, titles: {"en": "RAINN Day"}},
+        {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/husband-appreciation-day/"}, titles: {"en": "Husband Appreciation Day"}, notes: {"en": "National Husband Day\nWorld Husband Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/jackie-robinson-day/"}, titles: {"en": "Jackie Robinson Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/mcdonalds-day/"}, titles: {"en": "McDonald’s Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/micro-volunteering-day/"}, titles: {"en": "Micro-volunteering Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-anime-day/"}, titles: {"en": "National Anime Day"}, first: {era: 1, y: 1975}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-asl-day/"}, titles: {"en": "National ASL Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-glazed-spiral-ham-day/"}, titles: {"en": "National Glazed Spiral Ham Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-gripers-day/"}, titles: {"en": "National Griper’s Day"}, first: {era: 1, y: 1984}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-keaton-day/"}, titles: {"en": "National Keaton Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-laundry-day/"}, titles: {"en": "National Laundry Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-rubber-eraser-day/"}, titles: {"en": "National Rubber Eraser Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-take-a-wild-guess-day/"}, titles: {"en": "Take A Wild Guess Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/purple-up-day/"}, titles: {"en": "Purple Up Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/titanic-remembrance-day/"}, titles: {"en": "Titanic Remembrance Day"}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/type-1-diabetes-day-in-honor-of-jakya-monique-furtick/"}, titles: {"en": "Type 1 Diabetes Day in Honor of Jakya Monique Furtick"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/universal-day-of-culture/"}, titles: {"en": "Universal Day of Culture"}, first: {era: 1, y: 2009}},
+
     ]
 }
