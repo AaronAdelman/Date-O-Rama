@@ -1621,5 +1621,15 @@
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/teach-your-daughter-to-volunteer-day/"}, titles: {"en": "Teach Your Daughter to Volunteer Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/wear-pajamas-to-work-day/"}, titles: {"en": "Wear Pajamas to Work Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/world-semicolon-day/"}, titles: {"en": "World Semicolon Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/blah-blah-blah-day/"}, titles: {"en": "Blah Blah Blah Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/ford-mustang-day/"}, titles: {"en": "Ford Mustang Day"}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/international-day-of-mastering-conversations-that-matter/"}, titles: {"en": "International Day of Mastering Conversations That Matter"}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/malbec-world-day/"}, titles: {"en": "Malbec World Day", "es": "Día Mundial del Malbec"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/national-cheeseball-day/"}, titles: {"en": "National Cheese Ball Day"}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/national-crawfish-day/"}, titles: {"en": "National Crawfish Day"}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/national-kickball-day/"}, titles: {"en": "National Kickball Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/no-limits-for-deaf-children-day/"}, titles: {"en": "No Limits for Deaf Children Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/theres-nothing-like-a-dame-day/"}, titles: {"en": "There’s Nothing Like a Dame Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/world-circus-day/"}, titles: {"en": "World Circus Day"}},
     ]
 }
