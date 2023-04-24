@@ -18,6 +18,6 @@
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Day of Cultural Diversity"}, notes: {"en": "Day of the Races"}, urls: {"en": "https://nationaltoday.com/uruguay-day-of-cultural-diversity-day-of-the-races/"}, first: {era: 1, y: 1828}},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/day-of-los-reyes/"}},
         {inherits: "Carnival", type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://nationaltoday.com/uruguay-carnival/"}},
-        {type: "1D", start: {mon: 4, d: 16, thruD: 22, wkd: [2]}, urls: {"en": "https://nationaltoday.com/landing-of-the-33-patriots-day-2/"}, titles: {"en": "Landing of the 33 Patriots Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/landing-of-the-33-patriots-day/"}, titles: {"en": "Landing of the 33 Patriots Day"}},
     ]
 }

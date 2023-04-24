@@ -1643,5 +1643,18 @@
         {type: "nD", start: {mon: 4, d: 18}, end: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/cleaning-for-a-reason-week/"}, titles: {"en": "Cleaning for a Reason Week"}},
         {type: "nD", start: {mon: 4, d: 18}, end: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/fibroid-awareness-week/"}, titles: {"en": "Fibroid Awareness Week"}},
         {type: "nD", start: {mon: 4, d: 18}, end: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/health-information-professionals-week/"}, titles: {"en": "Health Information Professionals Week"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/congenital-diaphragmatic-hernia-action-day/"}, titles: {"en": "Congenital Diaphragmatic Hernia Action Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/humorous-day/"}, titles: {"en": "Humorous Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-amaretto-day/"}, titles: {"en": "National Amaretto Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-cat-lady-day/"}, titles: {"en": "National Cat Lady Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-dog-parent-appreciation-day/"}, titles: {"en": "National Dog Parent Appreciation Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-garlic-day/"}, titles: {"en": "National Garlic Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-hanging-out-day/"}, titles: {"en": "National Hanging Out Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-hayden-day/"}, titles: {"en": "National Hayden Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/poetry-the-creative-mind-day/"}, titles: {"en": "Poetry & The Creative Mind Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/refresh-your-goals-day/"}, titles: {"en": "Refresh Your Goals Day"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/rice-ball-day/"}, titles: {"en": "Rice Ball Day"}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/sylvester-the-cats-birthday/"}, titles: {"en": "Sylvester the Cat’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1939}},
+        {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/youth-homelessness-matters-day/"}, titles: {"en": "Youth Homelessness Matters Day"}, first: {era: 1, y: 1990}},
     ]
 }
