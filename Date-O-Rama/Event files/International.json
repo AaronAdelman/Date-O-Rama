@@ -1704,5 +1704,10 @@
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/world-laboratory-day/"}, titles: {"en": "World Laboratory Day"}},
         {type: "nD", start: {mon: 4, d: 23}, end: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/international-wildlife-film-week/"}, titles: {"en": "International Wildlife Film Week"}},
         {type: "nD", start: {mon: 4, d: 23}, end: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/national-library-week/"}, titles: {"en": "National Library Week"}},
+        {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/national-brandon-day/"}, titles: {"en": "National Brandon Day"}},
+        {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/national-pigs-blanket-day/"}, titles: {"en": "National Pigs in a Blanket Day"}},
+        {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/national-skipping-day/"}, titles: {"en": "National Skipping Day"}},
+        {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/new-kids-on-the-block-day/"}, titles: {"en": "New Kids on the Block Day"}},
+        {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/scream-day/"}, titles: {"en": "Scream Day"}},
     ]
 }
