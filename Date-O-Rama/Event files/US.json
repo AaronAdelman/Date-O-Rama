@@ -53,7 +53,7 @@
         {type: "1D", start: {d: 17, mon: 4}, titles: {"en": "National Ellis Island Family History Day"}, urls: {"en": "https://nationaldaycalendar.com/national-ellis-island-family-history-day-april-17/"}, first: {era: 1, y: 2001}, emoji: "🗽"},
         {type: "1D", start: {d: 18, mon: 4}, titles: {"en": "National Lineman Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lineman-appreciation-day/"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {d: 19, mon: 4}, titles: {"en": "Dutch-American Friendship Day"}, urls: {"en": "https://nlintheusa.com/dutch-american-friendship-day/"}, first: {era: 1, y: 1982}, emoji: "🇳🇱🇺🇸"},
-        {type: "1D", start: {d: 21, mon: 4}, titles: {"en": "San Jacinto Day"}, urls: {"en": "https://en.wikipedia.org/wiki/San_Jacinto_Day"}, first: {era: 1, y: 1836}},
+        {type: "1D", start: {d: 21, mon: 4}, titles: {"en": "San Jacinto Day"}, urls: {"en": "https://nationaltoday.com/san-jacinto-day/"}, first: {era: 1, y: 1836}, notes: {"en": "Battle of San Jacinto"}},
         {type: "1D", start: {d: 11, mon: 2}, titles: {"en": "National Inventors’ Day"}, urls: {"en": "https://nationaldaycalendar.com/national-inventors-day-february-11/"}, emoji: "⚙️", first: {era: 1, y: 1983}},
         {type: "1D", start: {d: 28, mon: 2}, titles: {"en": "National Floral Design Day"}, first: {era: 1, y: 1995}, emoji: "💐", urls: {"en": "https://www.daysoftheyear.com/days/floral-design-day/"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "Peace Corps Day"}, first: {era: 1, y: 1961}, emoji: "🕊", urls: {"en": "https://www.holidayinsights.com/moreholidays/March/peace-corps-day.htm"}},
@@ -408,6 +408,7 @@
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/2a-day/"}, titles: {"en": "2A Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/john-parker-day/"}, titles: {"en": "John Parker Day"}},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-oklahoma-city-bombing-commemoration-day/"}, titles: {"en": "National Oklahoma City Bombing Commemoration Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-yellow-bat-day/"}, titles: {"en": "National Yellow Bat Day"}, first: {era: 1, y: 2016}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

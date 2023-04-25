@@ -1667,5 +1667,16 @@
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/national-high-five-day/"}, titles: {"en": "National High Five Day"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/national-pineapple-upside-cake-day/"}, titles: {"en": "National Pineapple Upside-Down Cake Day"}},
         {type: "nD", start: {mon: 4, d: 15}, end: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-stationery-week/"}, titles: {"en": "National Stationery Week"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/advisor-appreciation-day/"}, titles: {"en": "Advisor Appreciation Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/big-word-day/"}, titles: {"en": "Big Word Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/keep-off-the-grass-day/"}, titles: {"en": "Keep Off the Grass Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-alex-day/"}, titles: {"en": "National Alex Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-bulldogs-beautiful-day/"}, titles: {"en": "National Bulldogs Are Beautiful Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-chickpea-day/"}, titles: {"en": "National Chickpea Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-chocolate-covered-cashews-day/"}, titles: {"en": "National Chocolate Covered Cashews Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-javier-day/"}, titles: {"en": "National Javier Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-kindergarten-day/"}, titles: {"en": "National Kindergarten Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/thank-you-for-libraries-day/"}, titles: {"en": "Thank You for Libraries Day"}},
+        {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/world-curlew-day/"}, titles: {"en": "World Curlew Day"}, first: {era: 1, y: 2017}},
     ]
 }
