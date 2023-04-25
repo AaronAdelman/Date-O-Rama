@@ -149,5 +149,7 @@
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-pro-life-t-shirt-day/"}, titles: {"en": "National Pro-Life T Shirt Day"}},
         {type: "1D", start: {"Easter": "Easter"}, urls: {"en": "https://nationaltoday.com/national-baked-ham-with-pineapple-day/"}, titles: {"en": "National Baked Ham with Pineapple Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/salvation-army-founders-day/"}, titles: {"en": "Salvation Army Founder’s Day"}},
+        {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-lovers-day/"}, titles: {"en": "National Lover’s Day"}},
+        {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/slay-a-dragon-day/"}, titles: {"en": "Slay a Dragon Day"}},
     ]
 }
