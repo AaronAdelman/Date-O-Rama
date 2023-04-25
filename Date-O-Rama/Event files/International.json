@@ -1678,5 +1678,14 @@
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-kindergarten-day/"}, titles: {"en": "National Kindergarten Day"}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/thank-you-for-libraries-day/"}, titles: {"en": "Thank You for Libraries Day"}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/world-curlew-day/"}, titles: {"en": "World Curlew Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/april-showers-day/"}, titles: {"en": "April Showers Day"}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/barista-day/"}, titles: {"en": "Girl Scout Leader Appreciation Day"}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/global-selfie-earth-day/"}, titles: {"en": "Global Selfie Earth Day"}},
+        {type: "1D", start: {mon: 4, d: 22, thruD: 28, wkd: [7]}, urls: {"en": "https://nationaltoday.com/international-marconi-day/"}, titles: {"en": "International Marconi Day"}, first: {era: 1, y: 1998}},
+        {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-day-of-puppetry/"}, titles: {"en": "National Day of Puppetry"}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/national-i-t-service-provider-day/"}, titles: {"en": "National I.T. Service Provider Day"}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/national-jelly-bean-day/"}, titles: {"en": "National Jelly Bean Day"}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/national-terry-day/"}, titles: {"en": "National Terry Day"}},
+        {type: "nD", start: {mon: 4, d: 22}, end: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/world-pi-week/"}, titles: {"en": "World PI Week"}, first: {era: 1, y: 2010}},
     ]
 }

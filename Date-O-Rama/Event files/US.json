@@ -409,6 +409,8 @@
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/john-parker-day/"}, titles: {"en": "John Parker Day"}},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-oklahoma-city-bombing-commemoration-day/"}, titles: {"en": "National Oklahoma City Bombing Commemoration Day"}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-yellow-bat-day/"}, titles: {"en": "National Yellow Bat Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/in-god-we-trust-day/"}, titles: {"en": "In God We Trust Day"}},
+        {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/oklahoma-day/"}, titles: {"en": "Oklahoma Day"}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
