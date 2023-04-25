@@ -16,5 +16,6 @@
        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 3}, inherits: "Day of the Races", urls: {"en": "https://nationaltoday.com/day-of-the-races/"}},
        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/all-saints-day-colombia/"}},
        {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/secretaries-day-colombia/"}, titles: {"en": "Secretaries’ Day"}},
+       {type: "1D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/day-of-trees/"}, titles: {"en": "Day of Trees"}, inherits: "Arbor Day"},
   ]
 }
