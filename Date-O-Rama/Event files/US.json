@@ -414,6 +414,11 @@
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/army-reserves-birthday/"}, titles: {"en": "Army Reserves Birthday"}},
         {type: "nD", start: {mon: 4, d: 24}, end: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/american-camp-week/"}, titles: {"en": "American Camp Week"}, first: {era: 1, y: 1950}},
         {type: "nD", start: {mon: 4, d: 24}, end: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-student-leadership-week/"}, titles: {"en": "National Student Leadership Week"}, first: {era: 1, y: 1975}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/east-meets-west-day/"}, titles: {"en": "East Meets West Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/license-plates-day/"}, titles: {"en": "License Plates Day"}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-dna-day/"}, titles: {"en": "National DNA Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-drug-take-back-day/"}, titles: {"en": "​National Drug Take Back Day"}},
+        {type: "1D", start: {mon: 4, wkd: [3], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/school-bus-drivers-day/"}, titles: {"en": "School Bus Drivers’ Day"}, first: {era: 1, y: 2009}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

@@ -1709,5 +1709,12 @@
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/national-skipping-day/"}, titles: {"en": "National Skipping Day"}},
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/new-kids-on-the-block-day/"}, titles: {"en": "New Kids on the Block Day"}},
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/scream-day/"}, titles: {"en": "Scream Day"}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/international-financial-independence-awareness-day/"}, titles: {"en": "International Financial Independence Awareness Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/international-noise-awareness-day/"}, titles: {"en": "International Noise Awareness Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-hug-a-plumber-day/"}, titles: {"en": "National Hug a Plumber Day"}, notes: {"en": "National Plumbers Day"}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-telephone-day/"}, titles: {"en": "National Telephone Day"}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-zucchini-bread-day/"}, titles: {"en": "National Zucchini Bread Day"}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/parental-alienation-awareness-day/"}, titles: {"en": "Parental Alienation Awareness Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/red-hat-society-day/"}, titles: {"en": "Red Hat Society Day"}},
     ]
 }

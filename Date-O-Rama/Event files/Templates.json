@@ -149,6 +149,7 @@
         {template: "Feast of St. Francis Xavier", titles: {"en": "Feast of St. Francis Xavier"}, type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/feast-of-st-francis-xavier/"}},
         {template: "Feast of St. James", titles: {"en": "Feast of St. James"}, type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/st-james-tg/"}},
         {template: "Feast of St. John the Apostle", titles: {"en": "Feast of St. John the Apostle"}, notes: {"en": "Christmastide (day 3)"}, type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/st-john-history/"}},
+        {template: "Feast of St. Mark the Evangelist", titles: {"en": "Feast of St. Mark the Evangelist"}, type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/the-feast-of-st-mark-italy/"}},
         {template: "Feast of St. Martin of Tours", titles: {"en": "Feast of St. Martin of Tours", "de": "Martin"}, type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/saint-martins-day/"}},
         {template: "Feast of St. Rose of Lima", titles: {"en": "Feast of St. Rose of Lima"}, type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/santa-rosa-de-lima/"}},
         {template: "Feast of St. Stephen of Hungary", titles: {"en": "Feast of St. Stephen of Hungary"}, type: "1D", start: {mon: 8, d: 16}},
