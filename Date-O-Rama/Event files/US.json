@@ -427,6 +427,10 @@
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-support-teen-literature-day/"}, titles: {"en": "National Support Teen Literature Day"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 4, d: 27}, end: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/american-quilters-society-week/"}, titles: {"en": "American Quilters Society Week"}},
         {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/workers-memorial-day/"}, titles: {"en": "Workers’ Memorial Day"}, notes: {"en": "Workers Memorial Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-military-brats-day/"}, titles: {"en": "National Military Brats Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-sarcoidosis-day/"}, titles: {"en": "National Sarcoidosis Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-therapy-animal-day/"}, titles: {"en": "National Therapy Animal Day"}},
+        {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/spank-out-day/"}, titles: {"en": "Spank Out Day"}, first: {era: 1, y: 1998}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
