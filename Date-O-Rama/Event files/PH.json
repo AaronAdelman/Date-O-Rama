@@ -78,5 +78,6 @@
         {type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/black-saturday/"}, titles: {"en": "Black Saturday"}, inherits: "Holy Saturday"},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/bataan-day/"}, titles: {"en": "Bataan Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-manlilikha-ng-bayan-masino-intaray/"}, titles: {"en": "Birth anniversary of Manlilikha ng Bayan Masino Intaray"}, inherits: "*BDay*", first: {era: 1, y: 1943}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/lapu-lapu-day/"}, titles: {"en": "Lapu Lapu Day"}, first: {era: 1, y: 1961}},
     ]
 }

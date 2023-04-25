@@ -420,6 +420,12 @@
         {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-drug-take-back-day/"}, titles: {"en": "​National Drug Take Back Day"}},
         {type: "1D", start: {mon: 4, wkd: [3], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/school-bus-drivers-day/"}, titles: {"en": "School Bus Drivers’ Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/confederate-heroes-day/"}, titles: {"en": "Confederate Heroes’ Day"}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/american-immigration-lawyers-association-day-of-action/"}, titles: {"en": "American Immigration Lawyers Association Day of Action"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/mantanzas-mule-day/"}, titles: {"en": "Mantanzas Mule Day"}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/marine-mammal-rescue-day/"}, titles: {"en": "Marine Mammal Rescue Day"}, first: {era: 1, y: 2017}},
+        {type: "nD", start: {mon: 4, d: 23}, end: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/national-library-week/"}, titles: {"en": "National Library Week"}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-support-teen-literature-day/"}, titles: {"en": "National Support Teen Literature Day"}, first: {era: 1, y: 2007}},
+        {type: "nD", start: {mon: 4, d: 27}, end: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/american-quilters-society-week/"}, titles: {"en": "American Quilters Society Week"}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
