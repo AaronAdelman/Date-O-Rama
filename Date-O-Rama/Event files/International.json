@@ -1746,5 +1746,14 @@
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/woody-woodpecker-day/"}, titles: {"en": "Woody Woodpecker Day"}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/world-design-day/"}, titles: {"en": "World Design Day"}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/world-tapir-day/"}, titles: {"en": "World Tapir Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/biological-clock-day/"}, titles: {"en": "Biological Clock Day"}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/clean-comedy-day/"}, titles: {"en": "Clean Comedy Day"}, first: {era: 1, y: 1995}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/great-poetry-reading-day/"}, titles: {"en": "Great Poetry Reading Day"}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-bravehearts-day/"}, titles: {"en": "National BraveHearts Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-cubicle-day/"}, titles: {"en": "National Cubicle Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-franklin-day/"}, titles: {"en": "National Franklin Day"}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-superhero-day/"}, titles: {"en": "National Superhero Day"}, first: {era: 1, y: 1995}},
+        {type: "1D", start: {mon: 4, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/undiagnosed-childrens-awareness-day/"}, titles: {"en": "Undiagnosed Children’s Awareness Day"}},
+        {type: "1D", start: {mon: 4, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/world-womens-wellness-day/"}, titles: {"en": "World Women’s Wellness Day"}, first: {era: 1, y: 2021}},
     ]
 }
