@@ -5,7 +5,7 @@
     calendarColor: {"red": 0.95, "green": 0.87, "blue": 0.72},
     eventSpecifications: [
         {titles: {"en": "Freethought Day"}, type: "1D", start: {mon: 10, d: 12}, first: {type: "1D", era: 1, y: 1997}, urls: {"en": "https://nationaldaycalendar.com/national-freethought-day-october-12/"}},
-        {titles: {"en": "Atheist Day"}, type: "1D", start: {mon: 3, d: 23}, first: {type: "1D", era: 1, y: 2004}, urls: {"en": "https://www.daysoftheyear.com/days/atheist-day/"}},
+        {titles: {"en": "Atheist Day", "he": "יום האתאיסטים"}, type: "1D", start: {mon: 3, d: 23}, first: {type: "1D", era: 1, y: 2004}, urls: {"en": "https://www.daysoftheyear.com/days/atheist-day/"}},
         {titles: {"en": "World Humanist Day"}, type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/world-humanist-day/"}, first: {type: "1D", era: 1, y: 1989}},
         {titles: {"en": "Ingersoll Day"}, type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/ingersoll-day/"}},
         {titles: {"en": "HumanLight", "he": "חג האור האנושי"}, type: "1D", start: {mon: 12, d: 23}, first: {type: "1D", era: 1, y: 2001}, urls: {"en": "https://humanlight.org/"}, emoji: "🕯"},
