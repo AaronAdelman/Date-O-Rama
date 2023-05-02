@@ -14,5 +14,6 @@
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/army-abolition-day/"}, inherits: "Discovery Day"},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/ancestry-day/"}, titles: {"en": "Ancestry Day"}},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/remembrance-day-2/"}, inherits: "Remembrance Day", first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/labour-and-agriculture-day/"}, titles: {"en": "Labour and Agriculture Day"}, first: {era: 1, y: 1890}},
   ]
 }

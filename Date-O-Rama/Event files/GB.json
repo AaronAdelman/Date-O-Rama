@@ -37,7 +37,7 @@
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}},
 
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {type: "1D", era: 1, y: 1919}},
-        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Early May Bank Holiday"}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Early May Bank Holiday"}, urls: {"en": "https://nationaltoday.com/early-may-bank-holiday/"}, first: {type: "1D", era: 1, y: 1978}},
         {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day"},
         {type: "1D", start: {mon: 7, d: 13, "thruD": 14, wkd: [2]}, titles: {"en": "Orangemen’s Day Holiday"}, urls: {"en": "https://en.wikipedia.org/wiki/The_Twelfth"}},
         {type: "1D", start: {mon: 12, d: 27, "thruD": 29, wkd: [2]}, titles: {"en": "Substitute Bank Holiday for Christmas Day"}},
@@ -89,7 +89,8 @@
         {inherits: "Laetare", type: "1D", start: {"Easter": "Easter", "offsetD": -21}, urls: {"en": "https://nationaltoday.com/mothering-sunday-in-the-uk/"}},
         {type: "nD", start: {mon: 4, d: 4}, end: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/discover-national-parks-fortnight/"}, titles: {"en": "Discover National Parks Fortnight"}},
         {type: "nD", start: {mon: 4, d: 5}, end: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/bee-active-bee-healthy-bee-happy-week/"}, titles: {"en": "Bee Active Bee Healthy Bee Happy Week"}, first: {era: 1, y: 2018}},
-        {type: "nD", start: {mon: 4, d: 11}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/parkinsons-awareness-week/"}, titles: {"en": "Parkinson's Awareness Week"}, first: {era: 1, y: 1997}},
+        {type: "nD", start: {mon: 4, d: 11}, end: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/parkinsons-awareness-week/"}, titles: {"en": "Parkinson’s Awareness Week"}, first: {era: 1, y: 1997}},
         {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/stephen-lawrence-day/"}, titles: {"en": "Stephen Lawrence Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/calan-mai/"}, titles: {"en": "Calan Mai"}, notes: {"en": "Calan Haf"}},
     ]
 }
