@@ -20,5 +20,6 @@
         {inherits: "Fat Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -52}, emoji: "🍩", urls: {"en": "https://www.daysoftheyear.com/days/fat-thursday/"}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -52}, urls: {"en": "https://nationaltoday.com/paczki-day/"}, titles: {"en": "Paczki Day"}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": 1}, urls: {"en": "https://nationaltoday.com/dyngus-day/"}, titles: {"en": "Dyngus Day"}},
+        {type: "1D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/polish-national-flag-day/"}, inherits: "National Flag Day"},
     ]
 }
