@@ -35,7 +35,7 @@
         {inherits: "2nd Sunday of Easter", type: "1D", start: {"Easter": "Easter", "offsetD": 7}, notes: {"en": "Thomas Sunday\nSunday of St. Thomas"}},
         {titles: {"en": "The Holy Myrrhbearers"}, type: "1D", start: {"Easter": "Easter", "offsetD": 14}},
         {titles: {"en": "The Paralytic"}, type: "1D", start: {"Easter": "Easter", "offsetD": 21}},
-        {titles: {"en": "Mid-Pentecost:"}, type: "1D", start: {"Easter": "Easter", "offsetD": 24}},
+        {titles: {"en": "Mid-Pentecost"}, type: "1D", start: {"Easter": "Easter", "offsetD": 24}},
         {titles: {"en": "The Samaritan Woman (Photini)"}, type: "1D", start: {"Easter": "Easter", "offsetD": 28}},
         {titles: {"en": "The Blind Man"}, type: "1D", start: {"Easter": "Easter", "offsetD": 35}},
         {titles: {"en": "The Leave-Taking of Pascha"}, type: "1D", start: {"Easter": "Easter", "offsetD": 38}},
