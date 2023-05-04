@@ -1919,5 +1919,18 @@
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/sun-day/"}, titles: {"en": "Sun Day"}, notes: {"en": "International Sun Day"}, first: {era: 1, y: 1978}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/wordsmith-day/"}, titles: {"en": "Wordsmith Day"}},
         {type: "nD", start: {mon: 5, d: 3}, end: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/dystonia-awareness-week/"}, titles: {"en": "Dystonia Awareness Week"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/45-day/"}, titles: {"en": "45 Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/anti-bullying-day/"}, titles: {"en": "Anti-Bullying Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/international-firefighters-day/"}, titles: {"en": "International Firefighters Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/international-respect-for-chickens-day/"}, titles: {"en": "International Respect for Chickens Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/k-i-n-d-day/"}, titles: {"en": "K.I.N.D. Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-candied-orange-peel-day/"}, titles: {"en": "National Candied Orange Peel Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-orange-juice-day/"}, titles: {"en": "National Orange Juice Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-renewal-day/"}, titles: {"en": "National Renewal Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/petite-and-proud-day/"}, titles: {"en": "Petite and Proud Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/relationship-renewal-day/"}, titles: {"en": "Relationship Renewal Day"}, notes: {"en": "Renewal Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/world-give-day/"}, titles: {"en": "World Give Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/world-password-day/"}, titles: {"en": "World Password Day"}},
+        {type: "nD", start: {mon: 5, d: 4}, end: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/red-cross-week/"}, titles: {"en": "Red Cross Week"}, first: {era: 1, y: 2022}},
     ]
 }

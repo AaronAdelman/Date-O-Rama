@@ -469,6 +469,11 @@
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/great-american-grump-out/"}, titles: {"en": "Great American Grump Out"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-skilled-trades-day/"}, titles: {"en": "National Skilled Trades Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/project-aces-day/"}, titles: {"en": "Project ACES Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/dave-brubeck-day/"}, titles: {"en": "Dave Brubeck Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/kent-state-shootings-remembrance/"}, titles: {"en": "Kent State Shootings Remembrance"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/hug-a-friend-day/"}, titles: {"en": "National Kids Fitness Day"}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-weather-observers-day/"}, titles: {"en": "National Weather Observers Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/rhode-island-independence-day/"}, titles: {"en": "Rhode Island Independence Day"}, inherits: "Independence Day"},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
