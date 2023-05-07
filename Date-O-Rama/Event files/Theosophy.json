@@ -1,0 +1,9 @@
+{
+titles: {"en": "Theosophy", "he": "תאוסופיה"},
+defaultLocale: "en",
+calendarCode: "gre",
+calendarColor: {"red": 0.75, "green": 0.5, "blue": 0.5},
+eventSpecifications: [
+{type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/white-lotus-day/"}, titles: {"en": "White Lotus Day"}, emoji: "🪷"},
+]
+}

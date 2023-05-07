@@ -1972,5 +1972,21 @@
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-paste-up-day/"}, titles: {"en": "National Paste Up Day"}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-roast-leg-of-lamb-day/"}, titles: {"en": "National Roast Leg of Lamb Day"}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/world-laughter-day/"}, titles: {"en": "World Laughter Day"}},
-        {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-holiday-week/"}, titles: {"en": "National Hug Holiday Week"}, first: {era: 1, y: 1986}},]
+        {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-holiday-week/"}, titles: {"en": "National Hug Holiday Week"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/free-trade-day/"}, titles: {"en": "Free Trade Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-amyloidosis-day/"}, titles: {"en": "National Amyloidosis Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-coconut-cream-pie-day/"}, titles: {"en": "National Coconut Cream Pie Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-dakota-day/"}, titles: {"en": "National Dakota Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-give-someone-a-cupcake-day/"}, titles: {"en": "National Give Someone a Cupcake Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-have-a-coke-day/"}, titles: {"en": "National Have a Coke Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-maria-day/"}, titles: {"en": "National Maria Day"}},
+        {type: "1D", start: {mon: 5, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/national-meeting-planners-appreciation-day/"}, titles: {"en": "National Meeting Planners Appreciation Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-nova-day/"}, titles: {"en": "National Nova Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-student-nurse-day/"}, titles: {"en": "National Student Nurse Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/reward-yourself-day/"}, titles: {"en": "Reward Yourself Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/world-donkey-day/"}, titles: {"en": "World Donkey Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/world-ovarian-cancer-day/"}, titles: {"en": "World Ovarian Cancer Day"}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/world-red-cross-and-red-crescent-day/"}, titles: {"en": "World Red Cross and Red Crescent Day"}, first: {era: 1, y: 1910}},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/sign-language-week/"}, titles: {"en": "Sign Language Week"}},
+    ]
 }

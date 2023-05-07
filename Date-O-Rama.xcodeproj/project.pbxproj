@@ -303,6 +303,8 @@
 		A59322632577F61100318BC3 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593225C2577F4B900318BC3 /* FontExtensions.swift */; };
 		A593229225782AB800318BC3 /* ASAMainClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */; };
 		A593E25B250A1D0600C93F96 /* ASANewClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */; };
+		A5987C4F2A083337008A9E90 /* Theosophy.json in Resources */ = {isa = PBXBuildFile; fileRef = A5987C4E2A083337008A9E90 /* Theosophy.json */; };
+		A5987C502A083338008A9E90 /* Theosophy.json in Resources */ = {isa = PBXBuildFile; fileRef = A5987C4E2A083337008A9E90 /* Theosophy.json */; };
 		A599FEED269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */; };
 		A599FEEE269AD0CF00DB3124 /* Judaism (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */; };
 		A59B54F725A5CEC20076CCE7 /* EKCalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */; };
@@ -1255,6 +1257,7 @@
 		A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western zodiac.json"; sourceTree = "<group>"; };
 		A593225C2577F4B900318BC3 /* FontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
 		A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASANewClockDetailView.swift; sourceTree = "<group>"; };
+		A5987C4E2A083337008A9E90 /* Theosophy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Theosophy.json; sourceTree = "<group>"; };
 		A599FEEC269AD0CF00DB3124 /* Judaism (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Judaism (Gregorian).json"; sourceTree = "<group>"; };
 		A59B54F625A5CEC20076CCE7 /* EKCalendarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKCalendarExtensions.swift; sourceTree = "<group>"; };
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
@@ -1998,6 +2001,7 @@
 				A50DA50B28686271008D54AE /* TH (Chinese).json */,
 				A5F3B01D285644A100865CEB /* TH.json */,
 				A5F43E262786113400FCDB88 /* Thelema.json */,
+				A5987C4E2A083337008A9E90 /* Theosophy.json */,
 				A5B9113F268E7C9E0058EA69 /* Time changes.json */,
 				A5FB22BA28638F2900B5042B /* TJ.json */,
 				A5FB22BD28638F7700B5042B /* TK.json */,
@@ -2643,6 +2647,7 @@
 				A5EF0017285B8EEB00F2205F /* KW (Muslim).json in Resources */,
 				A5E04AB32851CA6D001A4911 /* Sunni Islam (times, Egypt).json in Resources */,
 				A5C72A0F2967681700B8442A /* RU (Julian).json in Resources */,
+				A5987C502A083338008A9E90 /* Theosophy.json in Resources */,
 				A5EFFF5E285B5F9B00F2205F /* HK.json in Resources */,
 				A5E4963C2862535D001BF40C /* MH.json in Resources */,
 				A5E49636286252EC001BF40C /* MA.json in Resources */,
@@ -3198,6 +3203,7 @@
 				A5FED7E9276BA65100BB11C9 /* Scientology.json in Resources */,
 				A5EFFF64285B61E500F2205F /* IM.json in Resources */,
 				A502D3DE28637DA900A625A9 /* PY.json in Resources */,
+				A5987C4F2A083337008A9E90 /* Theosophy.json in Resources */,
 				A5BDE7822667877E00F47416 /* Shia (Gregorian).json in Resources */,
 				A5171A5F2899A81600CCA91A /* Buddhism (Chinese).json in Resources */,
 				A5759144282BE30700675058 /* DK.json in Resources */,
