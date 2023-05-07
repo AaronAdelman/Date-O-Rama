@@ -83,7 +83,7 @@
         {type: "1D", start: {d: 24, mon: 1}, titles: {"en": "National Girl Child Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Girl_Child_Day"}, emoji: "👧", first: {era: 1, y: 2008}},
         {type: "1D", start: {d: 24, mon: 1}, titles: {"en": "Uttar Pradesh Day", "hi": "प्रदेश दिवस"}, first: {era: 1, y: 1950}, urls: {"en": "https://en.wikipedia.org/wiki/Uttar_Pradesh_Day"}, notes: {"en": "UP Diwas\nUttar Pradesh Diwas"}},
         {type: "1D", start: {d: 25, mon: 1}, titles: {"en": "National Voters’ Day"}, first: {era: 1, y: 2011}, urls: {"en": "https://en.wikipedia.org/wiki/National_Voters%27_Day"}, emoji: "🗳"},
-        {type: "1D", start: {d: 25, mon: 1}, titles: {"en": "National Tourism Day"}},
+        {type: "1D", start: {d: 25, mon: 1}, inherits: "National Tourism Day"},
         {type: "1D", start: {d: 25, mon: 1}, titles: {"en": "Himachal Pradesh Day"}, first: {era: 1, y: 1948}},
         {type: "1D", start: {mon: 1, d: 26}, titles: {"en": "Assam Day"}, first: {era: 1, y: 1928}},
         {type: "1D", start: {d: 28, mon: 1}, titles: {"en": "Lala Lajpat Rai’s Birthday"}, first: {era: 1, y: 1865}, inherits: "*BDay*"},

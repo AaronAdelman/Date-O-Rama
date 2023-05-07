@@ -1960,5 +1960,17 @@
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/pilates-day/"}, titles: {"en": "Pilates Day"}},
         {type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://nationaltoday.com/sauvignon-blanc-day/"}, titles: {"en": "Sauvignon Blanc Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 5, d: 2, thruD: 8, wkd: [7]}, urls: {"en": "https://nationaltoday.com/world-ankylosing-spondylitis-day/"}, titles: {"en": "World Ankylosing Spondylitis Day"}},
-    ]
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/beaufort-scale-day/"}, titles: {"en": "Beaufort Scale Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/bladder-cancer-awareness-day/"}, titles: {"en": "Bladder Cancer Awareness Day"}},
+        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-bereaved-mothers-day/"}, titles: {"en": "International Bereaved Mother’s Day"}},
+        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-dawn-chorus-day/"}, titles: {"en": "International Dawn Chorus Day"}, first: {era: 1, y: 1980}},
+        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-permaculture-day/"}, titles: {"en": "International Permaculture Day"}},
+        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/mayday-for-mutts/"}, titles: {"en": "Mayday for Mutts"}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-avery-day/"}, titles: {"en": "National Avery Day"}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-cosmopolitan-day/"}, titles: {"en": "National Cosmopolitan Day"}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-packaging-design-day/"}, titles: {"en": "National Packaging Design Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-paste-up-day/"}, titles: {"en": "National Paste Up Day"}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-roast-leg-of-lamb-day/"}, titles: {"en": "National Roast Leg of Lamb Day"}},
+        {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/world-laughter-day/"}, titles: {"en": "World Laughter Day"}},
+        {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-holiday-week/"}, titles: {"en": "National Hug Holiday Week"}, first: {era: 1, y: 1986}},]
 }
