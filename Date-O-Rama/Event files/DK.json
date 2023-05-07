@@ -16,5 +16,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}},
    ]
 }

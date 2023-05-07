@@ -9,5 +9,6 @@
         {titles: {"en": "St. Olav’s Eve"}, type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/st-olavs-eve-in-faroe-islands/"}, start: {era: 1, y: 1031}},
         {titles: {"en": "St. Olav’s Day"}, type: "1D", start: {mon: 7, d: 29}, start: {era: 1, y: 1031}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}},
     ]
 }

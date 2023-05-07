@@ -62,5 +62,6 @@
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/harmony-day/"}, titles: {"en": "Harmony Day"}, first: {era: 1, y: 1999}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/sunsmart-skin-cancer-prevention/"}, titles: {"en": "SunSmart Skin Cancer Prevention"}, first: {era: 1, y: 1988}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/lung-health-awareness-month/"}, titles: {"en": "Lung Health Awareness Month"}},
+        {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/sleep-apnea-awareness-day/"}, titles: {"en": "Sleep Apnea Awareness Day"}, first: {era: 1, y: 2019}},
     ]
 }
