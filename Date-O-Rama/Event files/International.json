@@ -1988,5 +1988,14 @@
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/world-ovarian-cancer-day/"}, titles: {"en": "World Ovarian Cancer Day"}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/world-red-cross-and-red-crescent-day/"}, titles: {"en": "World Red Cross and Red Crescent Day"}, first: {era: 1, y: 1910}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/sign-language-week/"}, titles: {"en": "Sign Language Week"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/alphabet-magnet-day/"}, titles: {"en": "Alphabet Magnet Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/hurray-for-buttons-day/"}, titles: {"en": "Hurray for Buttons Day"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/lag-baomer-day/"}, titles: {"en": "Lag BaOmer"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-butterscotch-brownie-day/"}, titles: {"en": "National Butterscotch Brownie Day"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-christina-day/"}, titles: {"en": "National Christina Day"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-lost-sock-memorial-day/"}, titles: {"en": "National Lost Sock Memorial Day"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-moscato-day/"}, titles: {"en": "National Moscato Day"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-sleepover-day/"}, titles: {"en": "National Sleepover Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/tear-the-tags-off-the-mattress-day/"}, titles: {"en": "Tear the Tags Off The Mattress Day"}},
     ]
 }
