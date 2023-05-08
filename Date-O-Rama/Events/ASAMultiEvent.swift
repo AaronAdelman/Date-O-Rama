@@ -29,15 +29,8 @@ struct ASAMultiEvent:  ASAEventCompatible {
     }
     
     var location: String? {
-        let locations = self.events.map { $0.location }
-        var reduced: Array<String> = []
-        for location in locations {
-            if location != nil {
-                reduced.append(location!)
-            }
-        }
-        
-        return reduced.asFormattedList
+        let locations = self.events.compactMap { $0.location }
+        return locations.asFormattedList
     }
     
     var availability: EKEventAvailability = .notSupported
