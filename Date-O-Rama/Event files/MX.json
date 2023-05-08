@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.39, "blue": 0.25},
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 10}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/mothers-day-mexico/"}, first: {era: 1, y: 1922}},
         {type: "1D", start: {mon: 7, d: 12}, titles: {"en": "Lawyer’s Day"}, urls: {"en": "https://nationaltoday.com/mexico-lawyers-day/"}, first: {era: 1, y: 1960}, emoji: "👨‍💼👩‍💼"},
         {type: "1D", start: {d: 12, mon: 3}, titles: {"en": "Aztec New Year"}, urls: {"en": "https://nationaltoday.com/aztec-new-year/"}},
         {type: "1D", start: {mon: 7, d: 1}, inherits: "Engineer’s Day"},

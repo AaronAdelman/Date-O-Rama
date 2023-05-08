@@ -1997,5 +1997,18 @@
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-moscato-day/"}, titles: {"en": "National Moscato Day"}},
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-sleepover-day/"}, titles: {"en": "National Sleepover Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/tear-the-tags-off-the-mattress-day/"}, titles: {"en": "Tear the Tags Off The Mattress Day"}},
-    ]
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/mother-ocean-day/"}, titles: {"en": "Mother Ocean Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-clean-your-room-day/"}, titles: {"en": "National Clean Your Room Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-golf-day/"}, titles: {"en": "National Golf Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-lipid-day/"}, titles: {"en": "National Lipid Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-night-shift-workers-day/"}, titles: {"en": "National Night Shift Workers Day"}, notes: {"en": "National Third Shift Workers Day"}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-receptionists-day/"}, titles: {"en": "National Receptionists Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-ship-via-rail-day/"}, titles: {"en": "National Ship Via Rail Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-shrimp-day/"}, titles: {"en": "National Shrimp Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-small-business-day/"}, titles: {"en": "National Small Business Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/one-day-without-shoes/"}, titles: {"en": "One Day Without Shoes"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/trust-your-intuition-day/"}, titles: {"en": "Trust Your Intuition Day"}},
+        {type: "1D", start: {mon: 5, d: 10, thruD: 16, wkd: [4]}, urls: {"en": "https://nationaltoday.com/world-facilities-management-day/"}, titles: {"en": "World Facilities Management Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/world-lupus-day/"}, titles: {"en": "World Lupus Day"}, first: {era: 1, y: 2004}},
+        ]
 }

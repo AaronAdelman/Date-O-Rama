@@ -16,7 +16,7 @@
         {inherits: "Women’s History Month", type: "1M", start: {mon: 3}},
         {inherits: "Disability History Month", type: "nD", start: {mon: 11, d: 22}, "end": {mon: 12, d: 22}, first: {era: 1, y: 2010}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
-
+        
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {titles: {"en": "New Year’s Day Observed"}, type: "1D", start: {mon: 1, d: 2, "thruD": 3, wkd: [2]}},
         {titles: {"en": "New Year Holiday"}, type: "1D", start: {mon: 1, d: 2}},
@@ -35,7 +35,7 @@
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, titles: {"en": "Spring Holiday"}, urls: {"en": "https://nationaltoday.com/spring-bank-holiday/"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, inherits: "Summer Bank Holiday", emoji: "🏴󠁧󠁢󠁳󠁣󠁴󠁿", locations: {"en": "Scotland"}, urls: {"en": "https://nationaltoday.com/festival-monday/"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", emoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿🏴󠁧󠁢󠁷󠁬󠁳󠁿", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}},
-
+        
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {type: "1D", era: 1, y: 1919}},
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Early May Bank Holiday"}, urls: {"en": "https://nationaltoday.com/early-may-bank-holiday/"}, first: {type: "1D", era: 1, y: 1978}},
         {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day"},
@@ -43,7 +43,7 @@
         {type: "1D", start: {mon: 12, d: 27, "thruD": 29, wkd: [2]}, titles: {"en": "Substitute Bank Holiday for Christmas Day"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
-        {type: "1D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},        
+        {type: "1D", start: {mon: 6, d: 11}, inherits: "Queen’s Birthday"},
         {type: "1D", start: {mon: 6, d: 22}, titles: {"en": "Windrush Day"}, urls: {"en": "https://nationaltoday.com/windrush-day/"}, first: {era: 1, y: 2018}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/armed-forces-day/"}},
         {type: "1D", start: {mon: 7, d: 4}, titles: {"en": "Thank You Day"}, urls: {"en": "https://nationaltoday.com/thank-you-day/"}, first: {era: 1, y: 2021}},
@@ -95,5 +95,6 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/local-and-community-history-month/"}, titles: {"en": "Local and Community History Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-share-a-story-month/"}, titles: {"en": "National Share a Story Month"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/firefighters-memorial-day/"}, titles: {"en": "Firefighters’ Memorial Day"}},
+        {type: "nD", start: {mon: 5, d: 10}, end: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-mental-health-awareness-week/"}, titles: {"en": "National Mental Health Awareness Week"}},
     ]
 }

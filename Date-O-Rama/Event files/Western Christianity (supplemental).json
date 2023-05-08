@@ -154,5 +154,6 @@
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/coronation-day-of-pope-benedict-xvi/"}, titles: {"en": "Coronation Day of Pope Benedict XVI"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/walpurgis-night/"}, titles: {"en": "Walpurgis Night"}},
         {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/motorcycle-mass-and-blessing-of-the-bikes-day/"}, titles: {"en": "Motorcycle Mass and Blessing of the Bikes Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/donate-a-days-wages-to-charity-day/"}, titles: {"en": "Donate a Day’s Wages To Charity Day"}, first: {era: 1, y: 2006}},
     ]
 }
