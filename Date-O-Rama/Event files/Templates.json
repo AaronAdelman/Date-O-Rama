@@ -369,5 +369,19 @@
         {template: "World Wetlands Day", type: "1D", start: {d: 2, mon: 2}, titles: {"en": "World Wetlands Day", "he": "יום הביצות הבינלאומי", "fr": "Journée mondiale des zones humides", "es": "Día Mundial de los Humedales"}, urls: {"en": "https://www.worldwetlandsday.org/", "fr": "https://www.worldwetlandsday.org/fr/", "es": "https://www.worldwetlandsday.org/es/", "he": "https://www.daysoftheyear.co.il/2018/02/2.html"}, emoji: "🪷"},
         {template: "Youth Day", type: "1D", start: {mon: 6, d: 16}, titles: {"en": "Youth Day", "he": "יום הנוער"}, urls: {"en": "https://en.wikipedia.org/wiki/Youth_Day"}},
         {template: "Yule", titles: {"en": "Yule", "he": "יוּל"}, type: "1D", start: {"equinoxOrSolstice": "Dec"}, urls: {"en": "https://nationaltoday.com/yule/"}},
+        {template: "פרשת וילך/שבת שובה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 1, d: 6}, titles: {"he": "פרשת וילך/שבת שובה", "en": "Parashath Wayyelekh/Shabbath Shuvah"}},
+        {template: "פרשת האזינו", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 1, d: 13}, titles: {"he": "פרשת האזינו", "en": "Parashath Ha’azinu"}},
+        {template: "פרשת בראשית", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 1, d: 27}, titles: {"he": "פרשת בראשית", "en": "Parashath Bere’shith"}},
+        {template: "פרשת נח", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 2, d: 4}, titles: {"he": "פרשת נח", "en": "Parashath Noaḥ"}},
+        {template: "פרשת לך לך", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 2, d: 11}, titles: {"he": "פרשת לך לך", "en": "Parashath Lekh Lekha"}},
+        {template: "פרשת וירא", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 2, d: 18}, titles: {"he": "פרשת וירא", "en": "Parashath Wayyera’"}},
+        {template: "פרשת חיי שרה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 383], mon: 2, d: 25}, titles: {"he": "פרשת חיי שרה", "en": "Parashath Ḥayye Sarah"}},
+        {template: "פרשת תולדות", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 383], mon: 3, d: 3}, titles: {"he": "פרשת תולדות", "en": "Parashath Toledhoth"}},
+        {template: "פרשת וישלח", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 383], mon: 3, d: 17}, titles: {"he": "פרשת וישלח", "en": "Parashath Wayyishlaḥ"}},
+        {template: "פרשת וישב", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 383], mon: 3, d: 24}, titles: {"he": "פרשת וישב", "en": "Parashath Wayyeshev"}, notes: {"he": "ראש חודש טבת יהיה ביום שישי"}},
+        {template: "פרשת מקץ", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 2}, titles: {"he": "פרשת מקץ", "en": "Parashath MiqQeṣ"}},
+        {template: "פרשת ויגש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 9}, titles: {"he": "פרשת ויגש", "en": "Parashath Wayyiggash"}},
+        {template: "פרשת ויחי", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 16}, titles: {"he": "פרשת ויחי", "en": "Parashath Wayḥi"}},
+
     ]
 }
