@@ -17,7 +17,7 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, inherits: "National Sports Day", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/federal-territory-day/"}, titles: {"en": "Federal Territory Day"}, first: {era: 1, y: 1974}},
-        {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-coronation-of-the-sultan-of-terengganu/"}, titles: {"en": "Anniversary of The Coronation of The Sultan of Terengganu"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-coronation-of-the-sultan-of-terengganu/"}, titles: {"en": "Anniversary of the Coronation of the Sultan of Terengganu"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/declaration-of-malacca-as-a-historical-city/"}, titles: {"en": "Declaration of Malacca as a Historical City"}, first: {era: 1, y: 2006}},
     ]
 }
