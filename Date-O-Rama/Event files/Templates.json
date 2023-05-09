@@ -392,6 +392,13 @@
         {template: "פרשת תצוה/שבת זכור", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 13}, titles: {"he": "פרשת תצוה/שבת זכור", "en": "Parashath Teṣawweh"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
         {template: "פרשת כי תשא/שבת פרה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 20}, titles: {"he": "פרשת כי תשא/שבת פרה", "en": "Parashath Ki Thissa’/Shabbath Parah"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
         {template: "פרשת ויקהל־פקודי/שבת החודש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 27}, titles: {"he": "פרשת ויקהל־פקודי/שבת החודש", "en": "Parashath Wayyaqhel-Fequdhe/Shabbath HaḤodhesh"}, notes: {"he": "ראש חודש ניסן יהיה ביום שלישי"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת ויקרא", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 8, d: 5}, titles: {"he": "פרשת ויקרא", "en": "Parashath Wayyiqra’"}},
+        {template: "פרשת צו/שבת הגדול", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 8, d: 12}, titles: {"he": "פרשת צו/שבת הגדול", "en": "Parashath Ṣaw/Shabbath HagGadhol"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת שמיני", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 8, d: 26}, titles: {"he": "פרשת שמיני", "en": "Parashath Shemini"}},
+        {template: "פרשת תזריע־מצורע", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 9, d: 3}, titles: {"he": "פרשת תזריע־מצורע", "en": "Parashath Thazria‘-Meṣora‘"}},
+        {template: "פרשת אחרי מות־קדושים", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 9, d: 10}, titles: {"he": "פרשת אחרי מות־קדושים", "en": "Parashath ’Aḥare Moth-Qedhoshim"}},
+        {template: "פרשת אמור", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 9, d: 17}, titles: {"he": "פרשת אמור", "en": "Parashath ’Emor"}},
+        {template: "פרשת בהר־בחקתי", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 9, d: 24}, titles: {"he": "פרשת בהר־בחקתי", "en": "Parashath BeHar-BeḤuqqothay"}},
 
     ]
 }
