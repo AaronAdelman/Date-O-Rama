@@ -382,6 +382,16 @@
         {template: "פרשת מקץ", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 2}, titles: {"he": "פרשת מקץ", "en": "Parashath MiqQeṣ"}},
         {template: "פרשת ויגש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 9}, titles: {"he": "פרשת ויגש", "en": "Parashath Wayyiggash"}},
         {template: "פרשת ויחי", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 16}, titles: {"he": "פרשת ויחי", "en": "Parashath Wayḥi"}},
+        {template: "פרשת שמות", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 4, d: 23}, titles: {"he": "פרשת שמות", "en": "Parashath Shemoth"}},
+        {template: "פרשת וארא", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 5, d: 1}, titles: {"he": "פרשת וארא", "en": "Parashath Wa’era’"}},
+        {template: "פרשת בא", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 5, d: 8}, titles: {"he": "פרשת בא", "en": "Parashath Bo’"}},
+        {template: "פרשת בשלח/שבת שירה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 5, d: 15}, titles: {"he": "פרשת בשלח/שבת שירה", "en": "Parashath BeShallaḥ/Shabbath Shirah"}},
+        {template: "פרשת יתרו", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355, 383, 385], mon: 5, d: 22}, titles: {"he": "פרשת יתרו", "en": "Parashath Yithro"}},
+        {template: "פרשת משפטים/שבת שקלים", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 5, d: 29}, titles: {"he": "פרשת משפטים/שבת שקלים", "en": "Parashath Mishpaṭim/Shabbath Sheqalim"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת תרומה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 6}, titles: {"he": "פרשת תרומה", "en": "Parashath Terumah"}},
+        {template: "פרשת תצוה/שבת זכור", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 13}, titles: {"he": "פרשת תצוה/שבת זכור", "en": "Parashath Teṣawweh"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת כי תשא/שבת פרה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 20}, titles: {"he": "פרשת כי תשא/שבת פרה", "en": "Parashath Ki Thissa’/Shabbath Parah"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת ויקהל־פקודי/שבת החודש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [353, 355], mon: 7, d: 27}, titles: {"he": "פרשת ויקהל־פקודי/שבת החודש", "en": "Parashath Wayyaqhel-Fequdhe/Shabbath HaḤodhesh"}, notes: {"he": "ראש חודש ניסן יהיה ביום שלישי"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
 
     ]
 }
