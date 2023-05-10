@@ -430,6 +430,18 @@
         {template: "פרשת קדושים", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [383], mon: 9, d: 3}, titles: {"he": "פרשת קדושים", "en": "Parashath Qedhoshim"}},
         {template: "פרשת בהר", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [383], mon: 9, d: 17}, titles: {"he": "פרשת בהר", "en": "Parashath BeHar"}},
         {template: "פרשת בחקתי", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [383], mon: 9, d: 24}, titles: {"he": "פרשת בחקתי", "en": "Parashath BeḤuqqothay"}},
+        {template: "פרשת האזינו/שבת שובה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [355, 354, 383, 385], mon: 1, d: 3}, titles: {"he": "פרשת האזינו/שבת שובה", "en": "Parashath Ha’azinu/Shabbath Shuvah"}},
+        {template: "פרשת תולדות/שבת מחר חודש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [355, 385], mon: 2, d: 29}, titles: {"he": "פרשת תולדות/שבת מחר חודש", "en": "Parashath Toledhoth/Shabbath Maḥar Ḥodhesh"}},
+        {template: "פרשת משפטים", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [355], mon: 5, d: 24}, titles: {"he": "פרשת משפטים", "en": "Parashath Mishpaṭim"}},
+        {template: "פרשת נצבים", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [355, 353, 383], mon: 13, d: 27}, titles: {"he": "פרשת נצבים", "en": "Parashath Niṣṣavim"}},
+        {template: "פרשת מטות", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 11, d: 21}, titles: {"he": "פרשת מטות", "en": "Parashath Maṭṭoth"}},
+        {template: "פרשת מסעי", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 11, d: 28}, titles: {"he": "פרשת מסעי", "en": "Parashath Mas‘e"}},
+        {template: "פרשת אחרי מות/שבת הגדול", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 8, d: 12}, titles: {"he": "פרשת אחרי מות/שבת הגדול", "en": "Parashath ’Aḥare Moth/Shabbath HagGadhol"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת מצורע", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 8, d: 5}, titles: {"he": "פרשת מצורע", "en": "Parashath Meṣora‘"}},
+        {template: "פרשת שמיני/שבת פרה", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 7, d: 20}, titles: {"he": "פרשת שמיני/שבת פרה", "en": "Parashath Shemini/Shabbath Parah"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת תזריע/שבת החודש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 7, d: 27}, titles: {"he": "פרשת תזריע/שבת החודש", "en": "Parashath Tazria‘/Shabbath HaḤodhesh"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת פקודי/שבת שקלים", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [385], mon: 6, d: 29}, titles: {"he": "פרשת פקודי/שבת שקלים", "en": "Parashath Fequdhe/Shabbath Sheqalim"}, urls: {"en": "https://www.ou.org/holidays/category/four-shabbatot/"}},
+        {template: "פרשת אחרי מות/שבת מחר חודש", inherits: "*שבת*", type: "1D", start: {wkd: [7], "yLengths": [384], mon: 8, d: 29}, titles: {"he": "פרשת אחרי מות/שבת מחר חודש", "en": "Parashath ’Aḥare Moth/Shabbath Maḥar Ḥodhesh"}},
 
     ]
 }
