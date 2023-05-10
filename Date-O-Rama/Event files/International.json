@@ -2008,5 +2008,13 @@
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/trust-your-intuition-day/"}, titles: {"en": "Trust Your Intuition Day"}},
         {type: "1D", start: {mon: 5, d: 10, thruD: 16, wkd: [4]}, urls: {"en": "https://nationaltoday.com/world-facilities-management-day/"}, titles: {"en": "World Facilities Management Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/world-lupus-day/"}, titles: {"en": "World Lupus Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/hostess-cupcake-day/"}, titles: {"en": "Hostess CupCake Day"}},
+        {type: "1D", start: {mon: 5, d: 5, thruD: 11, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-childrens-mental-health-awareness-day/"}, titles: {"en": "National Children's Mental Health Awareness Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/national-eat-what-you-want-day/"}, titles: {"en": "National Eat What You Want Day"}},
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/national-foam-rolling-day/"}, titles: {"en": "National Foam Rolling Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/national-twilight-zone-day/"}, titles: {"en": "National Twilight Zone Day"}},
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/world-ego-awareness-day/"}, titles: {"en": "World Ego Awareness Day"}, first: {era: 1, y: 2018}},
+        {type: "nD", start: {mon: 5, d: 11}, end: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/brain-injury-awareness-week/"}, titles: {"en": "Brain Injury Awareness Week"}},
+        {type: "nD", start: {mon: 5, d: 11}, end: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/m-e-awareness-week/"}, titles: {"en": "M.E. Awareness Week"}, first: {era: 1, y: 1992}},
         ]
 }
