@@ -10,7 +10,7 @@
         {type: "1D", start: {mon: 7, d: 23}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 8, d: 16}},
         {inherits: "Heroes’ Day", type: "1D", start: {mon: 3, d: 1}},
-        {inherits: "Independence Day", type: "nD", start: {d: 14, mon: 5}, end: {mon: 5, d: 15}, first: {era: 1, y: 1811}},
+        {inherits: "Independence Day", type: "nD", start: {mon: 5, d: 14}, end: {mon: 5, d: 15}, first: {era: 1, y: 1811}, urls: {"en": "https://nationaltoday.com/paraguay-independence-day/"}},
         {type: "1D", start: {mon: 8, d: 7}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Boquerón Battle Victory Day"}, urls: {"en": "https://nationaltoday.com/boqueron-battle-victory-day/"}, first: {era: 1, y: 1932}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/virgin-of-caacupe-day/"}, titles: {"en": "Virgin of Caacupé Day"}},

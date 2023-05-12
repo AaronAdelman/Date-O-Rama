@@ -2045,5 +2045,14 @@
         {type: "1D", start: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/top-gun-day/"}, titles: {"en": "Top Gun Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/tulip-day/"}, titles: {"en": "Tulip Day"}},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/world-buckfast-day/"}, titles: {"en": "World Buckfast Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/bond-with-your-dog-day/"}, titles: {"en": "Bond With Your Dog Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/international-dylan-thomas-day/"}, titles: {"en": "International Dylan Thomas Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-bruce-day/"}, titles: {"en": "National Bruce Day"}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-buttermilk-biscuit-day/"}, titles: {"en": "National Buttermilk Biscuit Day"}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-dance-like-a-chicken-day/"}, titles: {"en": "National Dance Like a Chicken Day"}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-om-day/"}, titles: {"en": "National Om Day"}},
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/online-romance-day/"}, titles: {"en": "Online Romance Day"}},
+        {type: "1D", start: {mon: 5, d: 13, thruD: 19, wkd: [1]}, urls: {"en": "https://nationaltoday.com/world-topiary-day/"}, titles: {"en": "World Topiary Day"}, first: {era: 1, y: 2022}},
+        {type: "nD", start: {mon: 5, d: 14}, end: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/be-nice-to-nettles-week/"}, titles: {"en": "Be Nice to Nettles Week"}},
         ]
 }

@@ -51,7 +51,7 @@
         {type: "1D", start: {mon: 7, d: 15}, inherits: "St. Swithin’s Day", first: {era: 1, y: 990}},
         {type: "nD", start: {mon: 7, d: 16}, "end": {mon: 7, d: 31}, titles: {"en": "Festival of British Archaeology"}, urls: {"en": "https://nationaltoday.com/festival-of-british-archaeology/"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Norfolk Day"}, urls: {"en": "https://nationaltoday.com/norfolk-day/"}},
-        {inherits: "National Children’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1954}},
+        {inherits: "National Children’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1954}, urls: {"en": "https://nationaltoday.com/national-childrens-day-uk/"}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 10, d: 21}, first: {era: 1, y: 2011}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 10, d: 21}, inherits: "Navy Day", titles: {"en": "Trafalgar Day"}, first: {era: 1, y: 1896}, urls: {"en": "https://nationaltoday.com/trafalgar-day/"}},
@@ -98,6 +98,6 @@
         {type: "nD", start: {mon: 5, d: 10}, end: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-mental-health-awareness-week/"}, titles: {"en": "National Mental Health Awareness Week"}},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/somerset-day/"}, titles: {"en": "Somerset Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 12, thruD: 18, wkd: [6]}, urls: {"en": "https://nationaltoday.com/shades-day/"}, titles: {"en": "Shades Day"}},
-
+        {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/spinal-cord-injury-awareness-day/"}, titles: {"en": "Spinal Cord Injury Awareness Day"}},
     ]
 }
