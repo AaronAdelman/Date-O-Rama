@@ -497,6 +497,9 @@
         {type: "1D", start: {mon: 5, d: 4, thruD: 10, wkd: [4]}, urls: {"en": "https://nationaltoday.com/occupational-safety-and-health-professional-day/"}, titles: {"en": "Occupational Safety and Health Professional Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/root-canal-appreciation-day/"}, titles: {"en": "Root Canal Appreciation Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/data-innovation-day-data-innovation-summit/"}, titles: {"en": "Data Innovation Day (Data Innovation Summit)"}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-hospital-day/"}, titles: {"en": "National Hospital Day"}, first: {era: 1, y: 1921}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-mental-health-provider-appreciation-day/"}, titles: {"en": "National Mental Health Provider Appreciation Day"}},
+        {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/public-gardens-day/"}, titles: {"en": "Public Gardens Day"}, first: {era: 1, y: 2009}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

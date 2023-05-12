@@ -1857,7 +1857,6 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-barbecue-month/"}, titles: {"en": "National Barbecue Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-blood-pressure-month/"}, titles: {"en": "National Blood Pressure Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-chocolate-custard-month/"}, titles: {"en": "National Chocolate Custard Month"}},
-        {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-chronic-fatigue-syndrome-awareness-month/"}, titles: {"en": "National Chronic Fatigue Syndrome Awareness Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-comfort-month/"}, titles: {"en": "National Comfort Month"}, first: {era: 1, y: 2015}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-cystic-fibrosis-awareness-month/"}, titles: {"en": "National Cystic Fibrosis Awareness Month"}, first: {era: 1, y: 1990}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-egg-month/"}, titles: {"en": "National Egg Month"}},
@@ -2016,5 +2015,15 @@
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/world-ego-awareness-day/"}, titles: {"en": "World Ego Awareness Day"}, first: {era: 1, y: 2018}},
         {type: "nD", start: {mon: 5, d: 11}, end: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/brain-injury-awareness-week/"}, titles: {"en": "Brain Injury Awareness Week"}},
         {type: "nD", start: {mon: 5, d: 11}, end: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/m-e-awareness-week/"}, titles: {"en": "M.E. Awareness Week"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 5, d: 6, thruD: 12, wkd: [6]}, urls: {"en": "https://nationaltoday.com/child-care-provider-day/"}, titles: {"en": "Child Care Provider Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/fintastic-friday/"}, titles: {"en": "Fintastic Friday"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/international-awareness-day-for-chronic-immunological-and-neurological-diseases/"}, titles: {"en": "International Awareness Day for Chronic Immunological and Neurological Diseases"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/international-chronic-fatigue-syndrome-awareness-day/"}, titles: {"en": "International Chronic Fatigue Syndrome Awareness Day"}, first: {era: 1, y: 1993}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/international-myalgic-encephalomyelitis-awareness-day/"}, titles: {"en": "International Myalgic Encephalomyelitis Awareness Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-anthony-day/"}, titles: {"en": "National Anthony Day"}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-fibromyalgia-awareness-day/"}, titles: {"en": "National Fibromyalgia Awareness Day"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-nutty-fudge-day/"}, titles: {"en": "National Nutty Fudge Day"}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-odometer-day/"}, titles: {"en": "National Odometer Day"}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-ya-dig-day/"}, titles: {"en": "National YA DIG Day"}, first: {era: 1, y: 2020}},
         ]
 }

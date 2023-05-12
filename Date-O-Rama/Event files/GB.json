@@ -97,5 +97,7 @@
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/firefighters-memorial-day/"}, titles: {"en": "Firefighters’ Memorial Day"}},
         {type: "nD", start: {mon: 5, d: 10}, end: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-mental-health-awareness-week/"}, titles: {"en": "National Mental Health Awareness Week"}},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/somerset-day/"}, titles: {"en": "Somerset Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 5, d: 12, thruD: 18, wkd: [6]}, urls: {"en": "https://nationaltoday.com/shades-day/"}, titles: {"en": "Shades Day"}},
+
     ]
 }
