@@ -100,5 +100,7 @@
         {type: "1D", start: {mon: 5, d: 12, thruD: 18, wkd: [6]}, urls: {"en": "https://nationaltoday.com/shades-day/"}, titles: {"en": "Shades Day"}},
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/spinal-cord-injury-awareness-day/"}, titles: {"en": "Spinal Cord Injury Awareness Day"}},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/waiters-day/"}, titles: {"en": "National Waiters’ Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-numeracy-day-uk/"}, titles: {"en": "National Numeracy Day"}, first: {era: 1, y: 2018}},
+        {type: "nD", start: {mon: 5, d: 17}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-smile-month/"}, titles: {"en": "National Smile Month"}},
     ]
 }
