@@ -2054,5 +2054,18 @@
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/online-romance-day/"}, titles: {"en": "Online Romance Day"}},
         {type: "1D", start: {mon: 5, d: 13, thruD: 19, wkd: [1]}, urls: {"en": "https://nationaltoday.com/world-topiary-day/"}, titles: {"en": "World Topiary Day"}, first: {era: 1, y: 2022}},
         {type: "nD", start: {mon: 5, d: 14}, end: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/be-nice-to-nettles-week/"}, titles: {"en": "Be Nice to Nettles Week"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/bring-flowers-to-someone-day/"}, titles: {"en": "Bring Flowers To Someone Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/hyperemesis-gravidarum-awareness-day/"}, titles: {"en": "Hyperemesis Gravidarum Awareness Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/international-conscientious-objectors-day/"}, titles: {"en": "International Conscientious Objectors Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/international-kangaroo-care-awareness-day/"}, titles: {"en": "International Kangaroo Care Awareness Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/international-mps-awareness-day/"}, titles: {"en": "International MPS Awareness Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-chocolate-chip-day/"}, titles: {"en": "National Chocolate Chip Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-safety-dose-day/"}, titles: {"en": "National Safety Dose Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-tuberous-sclerosis-day/"}, titles: {"en": "National Tuberous Sclerosis Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/tsc-global-awareness-day/"}, titles: {"en": "TSC Global Awareness Day"}},
+        {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/vascular-birthmarks-awareness-day/"}, titles: {"en": "Vascular Birthmarks Awareness Day"}, notes: {"en": "VBF Day of Awareness"}},
+        {type: "nD", start: {mon: 5, d: 15}, end: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-stationery-week/"}, titles: {"en": "National Stationery Week"}, first: {era: 1, y: 2013}},
+        {type: "nD", start: {mon: 5, d: 15}, end: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/tourette-syndrome-awareness-month/"}, titles: {"en": "Tourette Syndrome Awareness Month"}},
+
         ]
 }
