@@ -2066,6 +2066,13 @@
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/vascular-birthmarks-awareness-day/"}, titles: {"en": "Vascular Birthmarks Awareness Day"}, notes: {"en": "VBF Day of Awareness"}},
         {type: "nD", start: {mon: 5, d: 15}, end: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-stationery-week/"}, titles: {"en": "National Stationery Week"}, first: {era: 1, y: 2013}},
         {type: "nD", start: {mon: 5, d: 15}, end: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/tourette-syndrome-awareness-month/"}, titles: {"en": "Tourette Syndrome Awareness Month"}},
-
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/drawing-day/"}, titles: {"en": "Drawing Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/international-day-of-light/"}, titles: {"en": "International Day of Light"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-coquilles-saint-jacques-day/"}, titles: {"en": "National Coquilles Saint Jacques Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-love-tree-day/"}, titles: {"en": "National Love a Tree Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-mimosa-day/"}, titles: {"en": "National Mimosa Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-sea-monkey-day/"}, titles: {"en": "National Sea Monkey Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/nickel-day/"}, titles: {"en": "Nickel Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/ride-a-unicycle-day/"}, titles: {"en": "Ride a Unicycle Day"}},
         ]
 }

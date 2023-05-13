@@ -74,5 +74,6 @@
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/vimy-ridge-day/"}, titles: {"en": "Vimy Ridge Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/canada-book-day/"}, titles: {"en": "Canada Book Day"}, first: {era: 1, y: 1995}},
         {type: "1M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 5, d: 16}, inherits: "National Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
     ]
 }

@@ -515,6 +515,11 @@
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-underground-america-day/"}, titles: {"en": "National Underground America Day"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/the-stars-and-stripes-forever-day/"}, titles: {"en": "The Stars and Stripes Forever Day"}, first: {era: 1, y: 1987}},
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-senior-fraud-awareness-day/"}, titles: {"en": "National Senior Fraud Awareness Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-barbecue-day/"}, titles: {"en": "National Barbecue Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-biographers-day/"}, titles: {"en": "National Biographer’s Day"}},
+        {type: "1D", start: {mon: 5, d: 16}, inherits: "National Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 5, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-stop-nausea-day/"}, titles: {"en": "National Stop Nausea Day"}, first: {era: 1, y: 2018}},
+        {type: "nD", start: {mon: 5, d: 16}, end: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-american-craft-beer-week/"}, titles: {"en": "National American Craft Beer Week"}, first: {era: 1, y: 2006}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
