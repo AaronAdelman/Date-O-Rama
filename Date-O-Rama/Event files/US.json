@@ -522,6 +522,8 @@
         {type: "nD", start: {mon: 5, d: 16}, end: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-american-craft-beer-week/"}, titles: {"en": "National American Craft Beer Week"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-bike-to-school-day/"}, titles: {"en": "National Bike To School Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-walnut-day/"}, titles: {"en": "National Walnut Day"}, first: {era: 1, y: 1958}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/mother-whistler-day/"}, titles: {"en": "Mother Whistler Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-hiv-vaccine-awareness-day/"}, titles: {"en": "National HIV Vaccine Awareness Day"}, first: {era: 1, y: 1998}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

@@ -2087,6 +2087,16 @@
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/pinot-grigio-day/"}, titles: {"en": "Pinot Grigio Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/turn-beauty-inside-out-day/"}, titles: {"en": "Turn Beauty Inside Out Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/world-hypertension-day/"}, titles: {"en": "World Hypertension Day"}, first: {era: 1, y: 2006}},
-        {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/international-coaching-week/"}, titles: {"en": "International Coaching Week"}},
+        {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/global-accessibility-awareness-day/"}, titles: {"en": "Global Accessibility Awareness Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/i-love-reeses-day/"}, titles: {"en": "I Love Reese’s Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-aperitif-day/"}, titles: {"en": "National Aperitif Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-brock-day/"}, titles: {"en": "National Brock Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-cheese-souffle-day/"}, titles: {"en": "National Cheese Soufflé Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-marvin-day/"}, titles: {"en": "National Marvin Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-no-dirty-dishes-day/"}, titles: {"en": "National No Dirty Dishes Day"}},
+        {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-notebook-day/"}, titles: {"en": "National Notebook Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-visit-relatives-day/"}, titles: {"en": "National Visit Your Relatives Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/send-an-electronic-greeting-card-day/"}, titles: {"en": "Send an Electronic Greeting Card Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/world-aids-vaccine-day/"}, titles: {"en": "World AIDS Vaccine Day"}, notes: {"en": "H.I.V. Vaccine Knowledge Day"}, first: {era: 1, y: 1998}},
         ]
 }

@@ -5,6 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.15, "blue": 0.33},
     eventSpecifications: [
-        
+        {type: "1D", start: {"Easter": "Easter", "offsetD": 39}, urls: {"en": "https://nationaltoday.com/ascencion-day-saint-martin/"}, inherits: "Ascension Day"},
+
     ]
 }

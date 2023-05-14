@@ -19,5 +19,6 @@
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/day-of-los-reyes/"}},
         {inherits: "Carnival", type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://nationaltoday.com/uruguay-carnival/"}},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/landing-of-the-33-patriots-day/"}, titles: {"en": "Landing of the 33 Patriots Day"}},
+        {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/battle-of-las-piedras/"}, titles: {"en": "Battle of Las Piedras"}},
     ]
 }
