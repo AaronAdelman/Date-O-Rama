@@ -166,7 +166,7 @@
         {type: "1M", start: {mon: 10}, titles: {"en": "Polish American Heritage Month"}, urls: {"en": "https://nationaldaycalendar.com/polish-american-heritage-month-october/"}, first: {era: 1, y: 1986}, emoji: "🇵🇱🇺🇸"},
         {type: "1M", start: {mon: 5}, titles: {"en": "Haitian Heritage Month"}, urls: {"en": "https://nationaltoday.com/haitian-heritage-month/"}, first: {era: 1, y: 1998}, emoji: "🇭🇹🇺🇸"},
         {type: "1D", start: {d: 13, mon: 4}, titles: {"en": "Thomas Jefferson’s Birthday"}, notes: {"en": "National Thomas Jefferson Day"}, inherits: "*BDay*", first: {era: 1, y: 1743}, urls: {"en": "https://www.daysoftheyear.com/days/thomas-jefferson-day/"}},
-        {inherits: "Armed Forces Day", type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Armed_Forces_Day#United_States"}, first: {era: 1, y: 1950}},
+        {inherits: "Armed Forces Day", type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/armed-forces-day/"}, first: {era: 1, y: 1950}},
         {inherits: "Veterans Day", type: "1D", start: {mon: 3, d: 29}, titles: {"en": "Vietnam Veterans Day"}},
         {type: "nD", start: {mon: 6, d: 14}, "end": {mon: 7, d: 4}, titles: {"en": "Honor America Days"}, urls: {"en": "https://en.wikipedia.org/wiki/Honor_America_Days"}, first: {era: 1, y: 1998}},
         {titles: {"en": "National Aviation Day"}, type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://en.wikipedia.org/wiki/National_Aviation_Day"}, first: {era: 1, y: 1939}, emoji: "👨‍✈️👩‍✈️"},
@@ -529,6 +529,10 @@
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/hepatitis-testing-day/"}, titles: {"en": "Hepatitis Testing Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-asian-and-pacific-islander-hiv-aids-awareness-day/"}, titles: {"en": "National Asian and Pacific Islander HIV/AIDS Awareness Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/plant-something-day/"}, titles: {"en": "Plant Something Day"}},
+        {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-learn-to-swim-day/"}, titles: {"en": "National Learn to Swim Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-river-cleanup-day/"}, titles: {"en": "National River Cleanup Day"}},
+        {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-women-in-aerospace-day/"}, titles: {"en": "National Women In Aerospace Day"}, first: {era: 1, y: 2022}},
+
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
