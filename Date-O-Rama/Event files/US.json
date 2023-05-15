@@ -538,6 +538,8 @@
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/harvey-milk-day/"}, titles: {"en": "Harvey Milk Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/endless-breakfast-day/"}, titles: {"en": "Denny’s Endless Breakfast Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-asparagus-day/"}, titles: {"en": "National Asparagus Day"}, first: {era: 1, y: 1973}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-missing-childrens-day/"}, titles: {"en": "National Missing Children’s Day"}, first: {era: 1, y: 1983}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-tap-dance-day/"}, titles: {"en": "National Tap Dance Day"}, first: {era: 1, y: 1989}},
 
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},

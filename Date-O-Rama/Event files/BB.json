@@ -22,7 +22,7 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {titles: {"en": "Anniversary of Bussa’s Rebellion"}, type: "1D", start: {mon: 4, d: 14}},
-        {titles: {"en": "Africa Day"}, type: "1D", start: {mon: 5, d: 25}, emoji: "🌍"},
+        {inherits: "Africa Day", type: "1D", start: {mon: 5, d: 25}},
         {titles: {"en": "Day of National Significance"}, type: "1D", start: {mon: 7, d: 26}},
         {type: "1D", start: {mon: 8, d: 17}, titles: {"en": "Birthday of Marcus Garvey"}, inherits: "*BDay*"},
         {inherits: "International Day for the Remembrance of the Slave Trade and Its Abolition", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},

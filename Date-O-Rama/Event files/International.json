@@ -2160,5 +2160,19 @@
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-mike-day/"}, titles: {"en": "National Mike Day"}},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-scavenger-hunt-day/"}, titles: {"en": "National Scavenger Hunt Day"}},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/world-schizophrenia-awareness-day/"}, titles: {"en": "World Schizophrenia Awareness Day"}},
+        {inherits: "Africa Day", type: "1D", start: {mon: 5, d: 25}},
+        {type: "1D", start: {mon: 5, wkd: [5], d: 21, thruD: 27}, urls: {"en": "https://nationaltoday.com/chardonnay-day/"}, titles: {"en": "Chardonnay Day"}, emoji: "🍷", first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/geek-pride-day/"}, titles: {"en": "Geek Pride Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/international-skin-pigmentation-day/"}, titles: {"en": "International Skin Pigmentation Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-bath-bomb-day/"}, titles: {"en": "National Bath Bomb Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-brown-bag-day/"}, titles: {"en": "National Brown-Bag It Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-cody-day/"}, titles: {"en": "National Cody Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-enzo-day/"}, titles: {"en": "National Enzo Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-george-day/"}, titles: {"en": "National George Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-sing-out-day/"}, titles: {"en": "National Sing Out Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-vtuber-day/"}, titles: {"en": "National VTuber Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-wine-day/"}, titles: {"en": "National Wine Day"}},
+        {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/world-thyroid-day/"}, titles: {"en": "World Thyroid Day"}, first: {era: 1, y: 2007}},
+
     ]
 }
