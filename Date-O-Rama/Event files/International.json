@@ -2152,6 +2152,13 @@
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-medical-coder-day/"}, titles: {"en": "National Medical Coder Day"}},
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-reed-day/"}, titles: {"en": "National Reed Day"}},
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-taffy-day/"}, titles: {"en": "National Taffy Day"}},
-        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/world-crohns-and-colitis-day/"}, titles: {"en": "World Crohn's and Colitis Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/world-crohns-and-colitis-day/"}, titles: {"en": "World Crohn’s and Colitis Day"}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/international-womens-day-for-peace-and-disarmament/"}, titles: {"en": "International Women’s Day for Peace and Disarmament"}, first: {era: 1, y: 1980}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-brothers-day/"}, titles: {"en": "National Brother’s Day"}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-caterers-appreciation-day/"}, titles: {"en": "National Caterers Appreciation Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-escargot-day/"}, titles: {"en": "National Escargot Day"}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-mike-day/"}, titles: {"en": "National Mike Day"}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-scavenger-hunt-day/"}, titles: {"en": "National Scavenger Hunt Day"}},
+        {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/world-schizophrenia-awareness-day/"}, titles: {"en": "World Schizophrenia Awareness Day"}},
     ]
 }
