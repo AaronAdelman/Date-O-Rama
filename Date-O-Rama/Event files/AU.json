@@ -65,5 +65,6 @@
         {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/sleep-apnea-awareness-day/"}, titles: {"en": "Sleep Apnea Awareness Day"}, first: {era: 1, y: 2019}},
         {type: "nD", start: {mon: 5, d: 16}, end: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-law-week/"}, titles: {"en": "National Law Week"}, first: {era: 1, y: 1980}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/walk-safely-to-school-day/"}, titles: {"en": "Walk Safely to School Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 5, d: 26}, urls: {"en": "https://nationaltoday.com/national-sorry-day/"}, titles: {"en": "National Sorry Day"}, first: {era: 1, y: 1998}},
     ]
 }
