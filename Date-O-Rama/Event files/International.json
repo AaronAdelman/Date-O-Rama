@@ -2190,5 +2190,12 @@
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-italian-beef-day/"}, titles: {"en": "National Italian Beef Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/national-jordan-day/"}, titles: {"en": "National Jordan Day"}},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/national-melissa-day/"}, titles: {"en": "National Melissa Day"}},
+        {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/international-burger-day/"}, titles: {"en": "International Burger Day"}, emoji: "🍔"},
+        {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-brisket-day/"}, titles: {"en": "National Brisket Day"}},
+        {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-jake-day/"}, titles: {"en": "National Jake Day"}},
+        {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/slugs-return-from-capistrano-day/"}, titles: {"en": "Slugs Return From Capistrano Day"}},
+        {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/whooping-crane-day/"}, titles: {"en": "Whooping Crane Day"}},
+        {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/world-passion-fruit-martini-day/"}, titles: {"en": "World Passion Fruit Martini Day"}, first: {era: 1, y: 2021}, emoji: "🍹"},
+
     ]
 }
