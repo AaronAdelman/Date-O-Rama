@@ -11,7 +11,7 @@
         {inherits: "Labor Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Labour_Day_(Canada)"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {type: "1D", start: {mon: 5, d: 18, "thruD": 24, wkd: [2]}, titles: {"en": "Victoria Day", "fr": "Fête de la Reine"}, first: {era: 1, y: 1952}, urls: {"en": "https://en.wikipedia.org/wiki/Victoria_Day"}},
+        {type: "1D", start: {mon: 5, d: 18, "thruD": 24, wkd: [2]}, titles: {"en": "Victoria Day", "fr": "Fête de la Reine"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaltoday.com/victoria-day/"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Civic Holiday", "fr": "Premier lundi d'août"}, first: {era: 1, y: 1875}, urls: {"en": "https://nationaltoday.com/civic-holiday-canada/"}},
         {type: "1D", start: {mon: 9, d: 30}, titles: {"en": "National Day for Truth and Reconciliation", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.orangeshirtday.org/"}},
         {inherits: "Thanksgiving Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, first: {type: "1D", era: 1, y: 1957}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-thanksgiving/"}},
@@ -75,5 +75,6 @@
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/canada-book-day/"}, titles: {"en": "Canada Book Day"}, first: {era: 1, y: 1995}},
         {type: "1M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 5, d: 16}, inherits: "National Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/canadian-immigrants-day/"}, titles: {"en": "Canadian Immigrants Day"}},
     ]
 }

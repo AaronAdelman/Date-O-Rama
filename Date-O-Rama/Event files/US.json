@@ -535,6 +535,7 @@
         {type: "1D", start: {mon: 5, d: 15, thruD: 21, wkd: [1]}, urls: {"en": "https://nationaltoday.com/emergency-medical-services-day/"}, titles: {"en": "Emergency Medical Services Day"}},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/red-cross-founders-day/"}, titles: {"en": "National American Red Cross Founder’s Day"}},
         {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/stepmothers-day/"}, titles: {"en": "Stepmother’s Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/harvey-milk-day/"}, titles: {"en": "Harvey Milk Day"}, first: {era: 1, y: 2009}},
 
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
