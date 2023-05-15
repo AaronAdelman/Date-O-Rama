@@ -546,6 +546,8 @@
         {type: "1D", start: {mon: 5, d: 22, thruD: 28, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-heat-awareness-day/"}, titles: {"en": "National Heat Awareness Day"}},
         {type: "1D", start: {mon: 5, d: 22, thruD: 28, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-road-trip-day/"}, titles: {"en": "National Road Trip Day"}, first: {era: 1, y: 2019}, emoji: "🛣️"},
         {type: "1D", start: {mon: 5, d: 26}, urls: {"en": "https://nationaltoday.com/sally-ride-day/"}, titles: {"en": "Sally Ride Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/nothing-to-fear-day/"}, titles: {"en": "Nothing to Fear Day"}, emoji: "😨"},
+        {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/old-time-player-piano-day/"}, titles: {"en": "Old Time Player Piano Day"}, emoji: "🎹", first: {era: 1, y: 2011}},
 
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},

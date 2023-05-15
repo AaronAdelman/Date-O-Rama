@@ -310,6 +310,7 @@
         {template: "Scorpio", titles: {"en": "Scorpio", "he": "עקרב"}, type: "1M", start: {mon: 2}, emoji: "♏️", inherits: "*Astrology*"},
         {template: "Shrove Monday", titles: {"en": "Shrove Monday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
         {template: "Shrove Tuesday", titles: {"en": "Shrove Tuesday", "fr": "Mardi gras", "he": "מרדי גרא"}, notes: {"en": "Pancake Day\nMardi Gras\nFat Tuesday", "he": "יום הפנקייק"}, type: "1D", start: {"Easter": "Easter", "offsetD": -47}, emoji: "🥞", urls: {"en": "https://www.daysoftheyear.com/days/pancake-day/", "he": "https://www.daysoftheyear.co.il/2018/02/blog-post.html"}},
+        {template: "Slavery Abolition Day", type: "1D", start: {mon: 5, d: 27}, titles: {"en": "Slavery Abolition Day"}},
         {template: "St. Andrew’s Day", titles: {"en": "St. Andrew’s Day"}, type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/st-andrews-day/"}},
         {template: "St. Barbara’s Day", titles: {"en": "St. Barbara’s Day", "ar": "عيد البربارة", "fr": "Jour de Barbara", "ka": "ბარბარობა"}, type: "1D", start: {mon: 12, d: 17}},
         {template: "St. David’s Day", type: "1D", start: {mon: 3, d: 1}, titles: {"en": "St. David’s Day"}, urls: {"en": "https://nationaltoday.com/st-davids-day/"}},
