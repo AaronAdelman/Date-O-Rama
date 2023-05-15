@@ -2147,5 +2147,11 @@
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/sherlock-holmes-day/"}, titles: {"en": "Sherlock Holmes Day"}, first: {era: 1, y: 2013}, emoji: "🔍"},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/world-paloma-day/"}, titles: {"en": "World Paloma Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/world-preeclampsia-day/"}, titles: {"en": "World Preeclampsia Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-drinking-with-chickens-day/"}, titles: {"en": "National Drinking with Chickens Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-ethan-day/"}, titles: {"en": "National Ethan Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-medical-coder-day/"}, titles: {"en": "National Medical Coder Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-reed-day/"}, titles: {"en": "National Reed Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-taffy-day/"}, titles: {"en": "National Taffy Day"}},
+        {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/world-crohns-and-colitis-day/"}, titles: {"en": "World Crohn's and Colitis Day"}},
     ]
 }
