@@ -156,5 +156,7 @@
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/donate-a-days-wages-to-charity-day/"}, titles: {"en": "Donate a Day’s Wages To Charity Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/rural-life-sunday/"}, titles: {"en": "Rural Life Sunday"}},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/sister-maria-hummel-day/"}, titles: {"en": "Sister Maria Hummel Day"}},
+        {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaldaycalendar.com/national-sapphire-segulah-day-may-12/"}, titles: {"en": "National Sapphire Segulah Day"}, first: {era: 1, y: 2022}, notes: {"en": "Whoever named this observance clearly does not know Hebrew."}},
+
     ]
 }
