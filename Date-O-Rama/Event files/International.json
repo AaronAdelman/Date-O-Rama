@@ -2210,5 +2210,14 @@
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-mint-julep-day/"}, titles: {"en": "National Mint Julep Day"}, emoji: "🥃"},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-sofia-day/"}, titles: {"en": "National Sofia Day"}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/world-multiple-sclerosis-day/"}, titles: {"en": "World Multiple Sclerosis Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/autonomous-vehicle-day/"}, titles: {"en": "Autonomous Vehicle Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-macaroon-day/"}, titles: {"en": "National Macaroon Day"}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-save-your-hearing-day/"}, titles: {"en": "National Save Your Hearing Day"}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-speak-in-complete-sentences-day/"}, titles: {"en": "National Speak in Complete Sentences Day"}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/necrotizing-fasciitis-awareness-day/"}, titles: {"en": "Necrotizing Fasciitis Awareness Day"}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/web-designer-day/"}, titles: {"en": "Web Designer Day"}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/world-otter-day/"}, titles: {"en": "World Otter Day"}, emoji: "🦦", first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/world-parrot-day/"}, titles: {"en": "World Parrot Day"}, emoji: "🦜"},
+        {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-patient-participation-week/"}, titles: {"en": "National Patient Participation Week"}},
     ]
 }

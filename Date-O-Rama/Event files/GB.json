@@ -106,5 +106,6 @@
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-biscuit-day-uk/"}, titles: {"en": "National Biscuit Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/oak-apple-day/"}, titles: {"en": "Oak Apple Day"}, first: {era: 1, y: 1660}, emoji: "🌳"},
         {type: "nD", end: {mon: 6, d: 4}, start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-bbq-week/"}, titles: {"en": "National BBQ Week"}, emoji: "🍖"},
+        {type: "nD", start: {mon: 5, d: 31}, end: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/garden-wildlife-week/"}, titles: {"en": "Garden Wildlife Week"}, emoji: "🪴"},
     ]
 }
