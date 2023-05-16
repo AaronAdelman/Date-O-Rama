@@ -105,6 +105,6 @@
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/gloucestershire-cheese-rolling/"}, titles: {"en": "Gloucestershire Cheese Rolling"}, notes: {"en": "Cooper’s Hill Cheese Rolling and Wake"}, first: {era: 1, y: 2011}, emoji: "🧀"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-biscuit-day-uk/"}, titles: {"en": "National Biscuit Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/oak-apple-day/"}, titles: {"en": "Oak Apple Day"}, first: {era: 1, y: 1660}, emoji: "🌳"},
-        {type: "nD", start: {mon: 6, d: 4}, end: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-bbq-week/"}, titles: {"en": "National BBQ Week"}, emoji: "🍖"},
+        {type: "nD", end: {mon: 6, d: 4}, start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-bbq-week/"}, titles: {"en": "National BBQ Week"}, emoji: "🍖"},
     ]
 }

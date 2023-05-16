@@ -2203,5 +2203,12 @@
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-snail-day/"}, titles: {"en": "National Snail Day"}, emoji: "🐌"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/paper-clip-day/"}, titles: {"en": "Paper Clip Day"}, notes: {"en": "National Paperclip Day"}, emoji: "📎"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/world-digestive-health-day/"}, titles: {"en": "World Digestive Health Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/international-hug-your-cat-day/"}, titles: {"en": "International Hug Your Cat Day"}, first: {era: 1, y: 2018}, emoji: "🐱"},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-creativity-day/"}, titles: {"en": "National Creativity Day"}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-hole-in-my-bucket-day/"}, titles: {"en": "National Hole In My Bucket Day"}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-jennifer-day/"}, titles: {"en": "National Jennifer Day"}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-mint-julep-day/"}, titles: {"en": "National Mint Julep Day"}, emoji: "🥃"},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-sofia-day/"}, titles: {"en": "National Sofia Day"}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/world-multiple-sclerosis-day/"}, titles: {"en": "World Multiple Sclerosis Day"}, first: {era: 1, y: 2009}},
     ]
 }
