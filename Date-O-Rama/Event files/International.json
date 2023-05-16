@@ -2195,6 +2195,13 @@
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/slugs-return-from-capistrano-day/"}, titles: {"en": "Slugs Return From Capistrano Day"}},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/whooping-crane-day/"}, titles: {"en": "Whooping Crane Day"}},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/world-passion-fruit-martini-day/"}, titles: {"en": "World Passion Fruit Martini Day"}, first: {era: 1, y: 2021}, emoji: "🍹"},
-
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/end-of-the-middle-ages-day/"}, titles: {"en": "End of the Middle Ages Day"}, first: {era: 1, y: 1453}},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/learn-about-composting-day/"}, titles: {"en": "Learn About Composting Day"}},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-coq-au-vin-day/"}, titles: {"en": "National Coq Au Vin Day"}, emoji: "🍗"},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-edison-day/"}, titles: {"en": "National Edison Day"}},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-hydroxyapatite-day/"}, titles: {"en": "National Hydroxyapatite Day"}},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-snail-day/"}, titles: {"en": "National Snail Day"}, emoji: "🐌"},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/paper-clip-day/"}, titles: {"en": "Paper Clip Day"}, notes: {"en": "National Paperclip Day"}, emoji: "📎"},
+        {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/world-digestive-health-day/"}, titles: {"en": "World Digestive Health Day"}, first: {era: 1, y: 2004}},
     ]
 }
