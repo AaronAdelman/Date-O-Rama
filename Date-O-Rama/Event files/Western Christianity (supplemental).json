@@ -76,7 +76,6 @@
         {type: "1D", start: {mon: 3, d: 1}, inherits: "St. David’s Day"},
         {type: "1D", start: {d: 25, mon: 3}, titles: {"en": "International Day of the Unborn Child"}, first: {era: 1, y: 1993}, urls: {"en": "https://nationaltoday.com/international-day-of-the-unborn-child/"}},
         {type: "1D", start: {d: 29, mon: 3}, titles: {"en": "Taiwan Youth Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2008}, emoji: "🇹🇼", urls: {"en": "https://en.wikipedia.org/wiki/Taiwan_Youth_Day"}},
-        {type: "1D", start: {d: 21, mon: 5}, titles: {"en": "Rapture Party Day"}, notes: {"en": "TYD"}, first: {era: 1, y: 2012}, emoji: "🥳", urls: {"en": "https://www.daysoftheyear.com/days/rapture-party-day/"}, notes: {"en": "End of the World Day"}},
         {inherits: "National Doughnut Day", type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 1}},
         {type: "1D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}},
         {type: "1D", start: {mon: 6, d: 25}, titles: {"en": "National Leon Day"}, first: {era: 1, y: 1975}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},

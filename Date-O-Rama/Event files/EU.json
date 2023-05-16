@@ -6,8 +6,8 @@
     calendarColor: {"red": 0.16, "green": 0.27, "blue": 0.52},
     eventSpecifications: [
         {inherits: "Data Protection Day", type: "1D", start: {mon: 1, d: 28}, first: {type: "1D", era: 1, y: 2007}},
-        {titles: {"en": "Europe Day (Committee of Ministers)"}, type: "1D", start: {mon: 5, d: 5}, first: {type: "1D", era: 1, y: 1964}, emoji: "🇪🇺", urls: {"en": "https://nationaltoday.com/europe-day/"}},
-        {titles: {"en": "Europe Day (European Union)"}, type: "1D", start: {mon: 5, d: 9}, first: {type: "1D", era: 1, y: 2019}, emoji: "🇪🇺", urls: {"en": "https://nationaltoday.com/europe-day/"}},
+        {titles: {"en": "Europe Day (Committee of Ministers)", "he": "יום אירופה (ועדת השרים)"}, type: "1D", start: {mon: 5, d: 5}, first: {type: "1D", era: 1, y: 1964}, emoji: "🇪🇺", urls: {"en": "https://nationaltoday.com/europe-day/", "he": "https://www.daysoftheyear.co.il/2018/05/9.html"}},
+        {titles: {"en": "Europe Day (European Union)", "he": "יום אירופה (האיחוד האירופי)"}, type: "1D", start: {mon: 5, d: 9}, first: {type: "1D", era: 1, y: 2019}, emoji: "🇪🇺", urls: {"en": "https://nationaltoday.com/europe-day/", "he": "https://www.daysoftheyear.co.il/2018/05/9.html"}},
         {titles: {"en": "Europe Month"}, type: "1M", start: {mon: 5}, emoji: "🇪🇺"},
         {inherits: "International Day Against Homophobia, Transphobia, and Biphobia", type: "1D", start: {mon: 5, d: 17}},
         {titles: {"en": "European Day of Languages"}, type: "1D", start: {mon: 9, d: 26}, emoji: "🗣", first: {type: "1D", era: 1, y: 2001}},
