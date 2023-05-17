@@ -8,7 +8,8 @@
         {template: "*Death Anniv*", type: "1D", start: {}, emoji: "🪦"},
         {template: "*Wedding Anniv*", type: "1D", start: {}, emoji: "💍"},
         {template: "*Remembrance*", type: "1D", start: {}, emoji: "🕓"},
-        
+        {template: "*Wellcat*", type: "1D", start: {}, emoji: "🐈‍⬛", urls: {"en": "https://markusharris.com/wellcat/holidays.html"}},
+
         {template: "*Astrology*", type: "1M", start: {}, urls: {"en": "http://skepdic.com/astrology.html"}},
         {template: "*zsu*", type: "1D", start: {}, emoji: "☉"},
         {template: "*zmo*", type: "1D", start: {}, emoji: "☾"},
