@@ -1278,4 +1278,23 @@ class Date_O_RamaTests: XCTestCase {
         assert(abs(error) < 1.0e-5)
     }
     
+    func testMidnightSun() throws {
+        let saintLouisSecondsFromGMT: Int = -6 * Int(Date.SECONDS_PER_HOUR)
+        let date = GregorianDate(era: 1, year: 2023, month: 1, day: 15, hour: 23, minute: 56, second: 0, secondsFromGMT: saintLouisSecondsFromGMT)
+        
+        let saintLouisCLLocation = CLLocation(latitude: 38.627222, longitude: -90.197778)
+        let saintLouisTimeZone: TimeZone = TimeZone(secondsFromGMT: saintLouisSecondsFromGMT)!
+        let saintLouisLocation = ASALocation(id: UUID(), location: saintLouisCLLocation, name: "Saint Louis", locality: "Missouri", country: "United States", regionCode: "US", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: saintLouisTimeZone, type: .EarthLocation)
+        
+        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+        let localeIdentifier = "he_IL"
+        let dateFormat = ASADateFormat.full
+        let timeFormat = ASATimeFormat.decimalTwelveHour
+        
+        let stringsAndComponents = hebrewCalendar.dateStringTimeStringDateComponents(now: date, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: saintLouisLocation)
+        debugPrint("🕛", #file, #function, stringsAndComponents as Any)
+        
+
+    } // func testMidnightSun() throws
+    
 } // class Date_O_RamaTests
