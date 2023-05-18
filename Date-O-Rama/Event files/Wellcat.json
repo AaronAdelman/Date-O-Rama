@@ -17,7 +17,7 @@
         {type: "1D", start: {mon: 1, d: 4}, titles: {"en": "Dimpled Chad Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 8}, titles: {"en": "Show & Tell Day at Work"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 17}, titles: {"en": "Judgement Day"}, inherits: "*Wellcat*"},
-        {type: "1D", start: {mon: 1, d: 22}, titles: {"en": "Answer Your Cat’s Question Day"}, inherits: "*Wellcat*"},
+        {type: "1D", start: {mon: 1, d: 22}, titles: {"en": "Answer Your Cat’s Question Day", "he": "יום ענה על השאלה של החתול שלך"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 23}, titles: {"en": "Snow Plow Mailbox Hockey Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 25}, titles: {"en": "A Room of One’s Own Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 1, d: 30}, titles: {"en": "National Inane Answering Message Day", "he": "יום המענה הקולי המטופש בטלפון"}, inherits: "*Wellcat*"},

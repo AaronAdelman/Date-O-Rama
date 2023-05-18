@@ -96,7 +96,7 @@
         {type: "1D", start: {d: 29, mon: 8}, inherits: "National Sports Day", urls: {"en": "https://nationaltoday.com/national-sports-day/"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {d: 8, mon: 10}, inherits: "Air Force Day", urls: {"en": "https://nationaltoday.com/indian-air-force-day/"}},
         {type: "1D", start: {d: 9, mon: 10}, titles: {"en": "Foreign Service Day"}},
-        {inherits: "Constitution Day", type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-law-day/"}, first: {era: 1, y: 1950}},
+        {inherits: "Constitution Day", type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-law-day/"}, first: {era: 1, y: 1950}, emoji: "⚖️"},
         {type: "1D", start: {d: 27, mon: 11}, titles: {"en": "Organ Donation Day"}},
         {type: "1D", start: {d: 4, mon: 12}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(India)"}, first: {era: 1, y: 1971}},
         {type: "1D", start: {d: 13, mon: 4}, titles: {"en": "Jallianwala Bagh Massacre Day"}, first: {era: 1, y: 1919}},
