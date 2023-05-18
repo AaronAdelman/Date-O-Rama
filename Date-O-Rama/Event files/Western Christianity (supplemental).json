@@ -155,6 +155,7 @@
         {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/rural-life-sunday/"}, titles: {"en": "Rural Life Sunday"}},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/sister-maria-hummel-day/"}, titles: {"en": "Sister Maria Hummel Day"}},
         {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaldaycalendar.com/national-sapphire-segulah-day-may-12/"}, titles: {"en": "National Sapphire Segulah Day"}, first: {era: 1, y: 2022}, notes: {"en": "Whoever named this observance clearly does not know Hebrew."}},
-
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/apple-gifting-day/"}, titles: {"en": "Apple Gifting Day"}},
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/new-years-dishonor-list-day/"}, titles: {"en": "New Year’s Dishonor List Day"}, first: {era: 1, y: 1976}},
     ]
 }

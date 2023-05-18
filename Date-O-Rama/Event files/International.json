@@ -6,7 +6,7 @@
     emoji: "🌐",
     eventSpecifications: [
         {type: "1D", start: {d: 1, mon: 1}, titles: {"en": "Global Family Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Global_Family_Day"}, inherits: "Family Day"},
-        {type: "1D", start: {d: 1, mon: 1}, titles: {"en": "Polar Bear Swim Day", "he": "יום טבילת דוב הקוטב"}, urls: {"en": "https://www.daysoftheyear.com/days/polar-bear-swim-day/", "he": "https://www.daysoftheyear.co.il/2018/01/1.html"}, emoji: "🐻‍❄️"},
+        {type: "1D", start: {d: 1, mon: 1}, titles: {"en": "Polar Bear Swim Day", "he": "יום טבילת דוב הקוטב"}, urls: {"en": "https://www.daysoftheyear.com/days/polar-bear-swim-day/", "he": "https://www.daysoftheyear.co.il/2018/01/1.html"}, emoji: "🐻‍❄️", notes: {"en": "Polar Bear Plunge Day"}},
         {type: "1D", start: {d: 1, mon: 1}, titles: {"en": "Copyright Law Day"}, urls: {"en": "https://www.daysoftheyear.com/days/copyright-law-day/"}, emoji: "©️"},
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Buffet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/buffet-day/"}},
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Cream Puff Day"}, urls: {"en": "https://www.daysoftheyear.com/days/creampuff-day/"}, notes: {"en": "National Creampuff Day"}},
@@ -2191,5 +2191,14 @@
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/world-otter-day/"}, titles: {"en": "World Otter Day"}, emoji: "🦦", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/world-parrot-day/", "he": "https://www.daysoftheyear.co.il/2017/05/31.html"}, titles: {"en": "World Parrot Day", "he": "יום התוכי העולמי"}, emoji: "🦜"},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-patient-participation-week/"}, titles: {"en": "National Patient Participation Week"}},
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/international-public-domain-day/"}, titles: {"en": "International Public Domain Day"}, notes: {"en": "Public Domain Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/national-shepherd-day/"}, titles: {"en": "National Shepherd Day"}},
+        {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-thank-god-monday-day/"}, titles: {"en": "Thank God It’s Monday Day"}},
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/z-day/"}, titles: {"en": "Z Day"}},
+        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 7}, urls: {"en": "https://nationaltoday.com/national-silent-record-week/"}, titles: {"en": "National Silent Record Week"}, first: {era: 1, y: 1960}},
+        {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/national-erika-day/"}, titles: {"en": "National Erika Day"}},
+        {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/national-pet-travel-safety-day/"}, titles: {"en": "National Pet Travel Safety Day"}},
+        {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/run-up-the-flagpole-and-see-if-anyone-salutes-day/"}, titles: {"en": "Run Up the Flagpole and See If Anyone Salutes Day"}},
+        {type: "nD", start: {mon: 1, d: 2}, end: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/someday-well-laugh-about-this-week/"}, titles: {"en": "Someday We’ll Laugh About This Week"}, first: {era: 1, y: 2005}},
     ]
 }
