@@ -37,7 +37,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         let timeZone = locationData.timeZone
         let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
-        debugPrint("📅", #file, #function, "fixedNow:", fixedNow, "transition:", transition as Any)
+//        debugPrint("📅", #file, #function, "fixedNow:", fixedNow, "transition:", transition as Any)
         
         var timeString:  String = ""
         if timeFormat != .none {
@@ -92,7 +92,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         if !existsSolarTime {
             return (hours:  -1.0, daytime:  false, valid:  false)
         }
-        debugPrint(#file, #function, "Now:", now, location, timeZone, "Transition:", transition as Any)
+//        debugPrint(#file, #function, "Now:", now, location, timeZone, "Transition:", transition as Any)
         
         var dayHalfStart:  Date
         
@@ -102,9 +102,9 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         
         let deoptionalizedTransition: Date = transition!!
         if deoptionalizedTransition <= now  {
-            debugPrint(#file, #function, "deoptionalizedTransition <= now")
+//            debugPrint(#file, #function, "deoptionalizedTransition <= now")
             // Nighttime, transition is at the start of the nighttime
-            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
+//            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
             //            let nextDate = now.oneDayAfter
             let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
             var nextDayHalfStart:  Date
@@ -112,16 +112,16 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
             nextDayHalfStart = nextEvents[self.dayStart]!!
             assert(nextDayHalfStart > deoptionalizedTransition)
             
-            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition, "Nighttime end:", nextDayHalfStart)
+//            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition, "Nighttime end:", nextDayHalfStart)
             
             hours = now.fractionalHours(startDate:  deoptionalizedTransition, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             daytime = false
         } else {
-            debugPrint(#file, #function, "deoptionalizedTransition > now")
+//            debugPrint(#file, #function, "deoptionalizedTransition > now")
             // now < deoptionalizedTransition
 //            let events = now.noon(timeZone: timeZone).solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
             let events = now.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
-            debugPrint(#file, #function, events)
+//            debugPrint(#file, #function, events)
 
             let rawDayHalfStart: Date?? = events[self.dayStart]
             
@@ -136,7 +136,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
             
             var jiggeredNow = now
             if dayHalfStart > deoptionalizedTransition {
-                debugPrint(#file, #function, "Need to jigger")
+//                debugPrint(#file, #function, "Need to jigger")
                 // Uh-oh.  It found the day half start for the wrong day!
                 jiggeredNow = now - Date.SECONDS_PER_DAY
                 let events = jiggeredNow.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone )
@@ -153,21 +153,21 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
                 dayHalfStart = rawDayHalfStart!!
             }
             
-            debugPrint(#file, #function, "Day half start:", dayHalfStart)
+//            debugPrint(#file, #function, "Day half start:", dayHalfStart)
             
             if dayHalfStart <= now && now < deoptionalizedTransition {
                 // Daytime
-                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Daytime")
+//                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Daytime")
                 assert(deoptionalizedTransition > dayHalfStart)
                 hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
                 daytime = true
             } else {
                 // Previous nighttime
-                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Previous nighttime")
+//                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Previous nighttime")
                 var previousDayHalfEnd:  Date
                 previousDayHalfEnd = self.startOfDay(for: jiggeredNow, locationData: locationData)
                 assert(dayHalfStart > previousDayHalfEnd)
-                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
+//                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
                 hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
                 daytime = false
             }
@@ -182,7 +182,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         let DAY_SYMBOL      = "☼"
         
         let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
-        debugPrint("⌛️", #file, #function, "hours:", hours, "daytime:", daytime as Any, "valid:", valid)
+//        debugPrint("⌛️", #file, #function, "hours:", hours, "daytime:", daytime as Any, "valid:", valid)
         if !valid {
             return invalidTimeString()
         }
@@ -426,7 +426,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         
         let ApplesDateComponents = ApplesCalendar.dateComponents(ApplesComponents, from: fixedDate)
         var result = ASADateComponents.new(with: ApplesDateComponents, calendar: self, locationData: locationData)
-        //                debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
+//                        debugPrint(#file, #function, "• Date:", date, "• Fixed date:", fixedDate, "• Result:", result)
         let timeComponents = self.timeComponents(date: date, transition: transition, locationData: locationData)
         
         if components.contains(.fractionalHour) {

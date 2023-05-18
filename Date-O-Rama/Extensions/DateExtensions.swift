@@ -156,7 +156,7 @@ extension Date {
         let events = self.solarEvents(location: locationData.location, events: [transitionEvent], timeZone: timeZone)
 
         let sunset = events[transitionEvent]
-        debugPrint("🔧", #file, #function, "self:", self, "sunset:", sunset as Any)
+//        debugPrint("🔧", #file, #function, "self:", self, "sunset:", sunset as Any)
         var result: (date:  Date, transition:  Date??)
         if sunset == nil {
             // Guarding against there being no Sunset
