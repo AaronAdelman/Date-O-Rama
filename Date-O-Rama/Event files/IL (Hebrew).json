@@ -19,17 +19,17 @@
         }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
         {titles: {"he": "יום הזיכרון לשואה ולגבורה (מוקדם)", "en": "Holocaust Day (brought forward)"}, type: "1D", start: {mon: 8, d: 26, wkd: [5]
         }, urls: {"en": "https://www.ou.org/holidays/category/yom-hashoah/"}},
-        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, type: "1D", start: {mon: 9, d: 4, wkd: [2, 3, 4, 7]}},
+        {titles: {"he": "יום הזיכרון לחללי מערכות ישראל", "en": "Memorial Day"}, type: "1D", start: {mon: 9, d: 4}},
         {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (נדחה)", "en": "Memorial Day (postposed)"}, type: "1D", start: {mon: 9, d: 5, wkd: [2]
         }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
         {titles: {"he": "יום הזיכרון לחללי מערכות ישראל (מוקדם)", "en": "Memorial Day (brought forward)"}, type: "1D", start: {mon: 9, d: 2, "thruD": 3, wkd: [4]
         }, urls: {"en": "https://www.ou.org/holidays/category/yom-hazikaron/"}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 5, wkd: [3, 4, 5, 1]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
         {inherits: "Independence Day", titles: {"he": "יום העצמאות (נדחה)", "en": "Independence Day (postponed)"}, type: "1D", start: {mon: 9, d: 6, wkd: [3]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
         {inherits: "Independence Day", titles: {"he": "יום העצמאות (מוקדם)", "en": "Independence Day (brought forward)"}, type: "1D", start: {mon: 9, d: 3, "thruD": 4, wkd: [5]}, urls: {"en": "https://www.ou.org/holidays/category/yom-haatzmaut/"}, first: {era: 0, y: 5708}},
         {titles: {"he": "יום הרצל", "en": "Herṣel Day"}, type: "1D", start: {mon: 9, d: 10, wkd: [1, 2, 3, 4, 5, 6]}},
         {titles: {"he": "יום הרצל (נדחה)", "en": "Herṣel Day (postponed)"}, type: "1D", start: {mon: 9, d: 11, wkd: [1]}},
-        {titles: {"he": "יום ירושלים", "en": "Yerushalayim Day"}, type: "1D", start: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 7]
+        {titles: {"he": "יום ירושלים", "en": "Yerushalayim Day"}, type: "1D", start: {mon: 9, d: 28
         }, urls: {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
         {titles: {"he": "יום ירושלים (נדחה)", "en": "Yerushalayim Day (postponed)"}, type: "1D", start: {mon: 9, d: 29, wkd: [2]
         }, urls: {"en": "https://www.ou.org/holidays/category/yom-yerushalayim/"}},
