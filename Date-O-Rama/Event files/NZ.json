@@ -28,7 +28,7 @@
         {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/auckland-anniversary-day/"}, titles: {"en": "Auckland Anniversary Day"}},
         {type: "1D", start: {mon: 1, d: 29, thruMon: 2, thruD: 4, wkd: [2]}, urls: {"en": "https://nationaltoday.com/nelson-anniversary-day/"}, titles: {"en": "Nelson Anniversary Day"}},
         {type: "1D", start: {mon: 1, d: 26, thruMon: 2, thruD: 1, wkd: [2]}, urls: {"en": "https://nationaltoday.com/northland-anniversary-day/"}, titles: {"en": "Northland Anniversary Day"}},
-        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/bike-to-work-month/"}, titles: {"en": "Bike To Work Month"}},
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/bike-to-work-month/"}, titles: {"en": "Bike to Work Month"}, emoji: "🚲"},
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/waitangi-day/"}, titles: {"en": "Waitangi Day"}, first: {era: 1, y: 1934}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/nz-book-month/"}, titles: {"en": "NZ Book Month"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 3, d: 5}, urls: {"en": "https://nationaltoday.com/arrival-of-the-first-missionaries/"}, titles: {"en": "Arrival of the First Missionaries"}},
