@@ -2199,5 +2199,14 @@
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/national-pet-travel-safety-day/"}, titles: {"en": "National Pet Travel Safety Day"}},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/run-up-the-flagpole-and-see-if-anyone-salutes-day/"}, titles: {"en": "Run Up the Flagpole and See If Anyone Salutes Day"}},
         {type: "nD", start: {mon: 1, d: 2}, end: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/someday-well-laugh-about-this-week/"}, titles: {"en": "Someday We’ll Laugh About This Week"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/jrr-tolkien-day/"}, titles: {"en": "J.R.R. Tolkien Day"}, inherits: "*BDay*", first: {era: 1, y: 1892}},
+        {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/women-rock-day/"}, titles: {"en": "Women Rock! Day"}},
+        {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/free-flower-basket-day/"}, titles: {"en": "Free Flower Basket Day"}, emoji: "🌸"},
+        {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/national-cando-day/"}, titles: {"en": "National CanDo Day"}},
+        {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/national-clara-day/"}, titles: {"en": "National Clara Day"}},
+        {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/national-rachel-day/"}, titles: {"en": "National Rachel Day"}},
+        {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/tom-thumb-day/"}, titles: {"en": "Tom Thumb Day"}, inherits: "*BDay*", first: {era: 1, y: 1838}},
+        {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/weigh-in-day/"}, titles: {"en": "Weigh-In Day"}},
+        {type: "1D", start: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/national-ellen-day/"}, titles: {"en": "National Ellen Day"}},
     ]
 }
