@@ -561,6 +561,7 @@
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/55-mph-speed-limit-day/"}, titles: {"en": "55 mph Speed Limit Day"}, first: {era: 1, y: 1973}},
         {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/humiliation-day/"}, titles: {"en": "Humiliation Day"}, first: {era: 1, y: 1863}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-wonk-day/"}, titles: {"en": "National WONK Day"}},
+        {type: "1D", start: {mon: 1, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-take-the-stairs-day/"}, titles: {"en": "National Take the Stairs Day"}, first: {era: 1, y: 2016}},
 
         
         

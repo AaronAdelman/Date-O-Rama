@@ -2227,5 +2227,9 @@
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-fourth-graders-day/"}, titles: {"en": "National Fourth Graders Day"}},
         {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-shop-for-travel-day/"}, titles: {"en": "National Shop For Travel Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/play-god-day/"}, titles: {"en": "Play God Day"}},
+        {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/league-of-nations-day/"}, titles: {"en": "League of Nations Day"}, emoji: "✮", first: {era: 1, y: 1920}},
+        {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-cut-energy-costs-day/"}, titles: {"en": "National Cut Your Energy Costs Day"}},
+        {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-oysters-rockefeller-day/"}, titles: {"en": "National Oysters Rockefeller Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-shareholders-day/"}, titles: {"en": "National Shareholders Day"}},
     ]
 }
