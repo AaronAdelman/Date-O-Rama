@@ -979,6 +979,8 @@
 		A5F43E2B278639DD00FCDB88 /* ASATimeChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */; };
 		A5F5B08D2858D8BA003E313D /* Eastern Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */; };
 		A5F5B08E2858D8BA003E313D /* Eastern Christianity (general).json in Resources */ = {isa = PBXBuildFile; fileRef = A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */; };
+		A5FA44C72A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */; };
+		A5FA44C82A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */; };
 		A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */; };
 		A5FA5A6B270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */; };
 		A5FB22A528638D2B00B5042B /* SI.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22A228638D2B00B5042B /* SI.json */; };
@@ -1599,6 +1601,7 @@
 		A5F43E262786113400FCDB88 /* Thelema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Thelema.json; sourceTree = "<group>"; };
 		A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeChangeType.swift; sourceTree = "<group>"; };
 		A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Eastern Christianity (general).json"; sourceTree = "<group>"; };
+		A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Hinduism (supplemental).json"; sourceTree = "<group>"; };
 		A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellDateEventVisibility.swift; sourceTree = "<group>"; };
 		A5FB22A228638D2B00B5042B /* SI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SI.json; sourceTree = "<group>"; };
 		A5FB22A328638D2B00B5042B /* SJ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SJ.json; sourceTree = "<group>"; };
@@ -1819,6 +1822,7 @@
 				A5E4960428624F9A001BF40C /* GU.json */,
 				A5E4960528624F9A001BF40C /* GW.json */,
 				A5EFFF57285B5F9B00F2205F /* GY.json */,
+				A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */,
 				A50DA50728686271008D54AE /* HK (Chinese).json */,
 				A5EFFF58285B5F9B00F2205F /* HK.json */,
 				A5E4960A28624FDC001BF40C /* HM.json */,
@@ -2781,6 +2785,7 @@
 				A529D3532A1514B1004D8799 /* Wellcat.json in Resources */,
 				A5E495FC28624EFE001BF40C /* GM.json in Resources */,
 				A5D3D7DF27FA14640099718A /* US.json in Resources */,
+				A5FA44C82A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */,
 				A5EE117926C573910050495C /* Moon.json in Resources */,
 				A5E292E4285A616500925EBD /* AL.json in Resources */,
 				A5EFFFE2285B85B500F2205F /* NI.json in Resources */,
@@ -3102,6 +3107,7 @@
 				A5E495D828624D7A001BF40C /* ER.json in Resources */,
 				A5EE117826C573910050495C /* Moon.json in Resources */,
 				A5EFFF8A285B7CBD00F2205F /* NA.json in Resources */,
+				A5FA44C72A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */,
 				A5EB851E2869EC7E00C9321A /* EG (Coptic).json in Resources */,
 				A525622A24556169009C2920 /* Localizable.strings in Resources */,
 				A5ABBA2D27155A2100ED7D5F /* Atheism.json in Resources */,
