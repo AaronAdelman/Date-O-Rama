@@ -562,8 +562,9 @@
         {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/humiliation-day/"}, titles: {"en": "Humiliation Day"}, first: {era: 1, y: 1863}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-wonk-day/"}, titles: {"en": "National WONK Day"}},
         {type: "1D", start: {mon: 1, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-take-the-stairs-day/"}, titles: {"en": "National Take the Stairs Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-boston-day/"}, titles: {"en": "National Boston Day"}},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/prohibition-remembrance-day/"}, titles: {"en": "Prohibition Remembrance Day"}},
 
-        
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

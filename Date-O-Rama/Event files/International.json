@@ -2262,5 +2262,13 @@
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-pothole-day/"}, titles: {"en": "National Pothole Day"}},
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/wikipedia-day/"}, titles: {"en": "Wikipedia Day"}, first: {era: 1, y: 2001}, emoji: "🌐"},
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-snow-day/"}, titles: {"en": "World Snow Day"}, first: {era: 1, y: 2012}, emoji: "❄️"},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/book-publishers-day/"}, titles: {"en": "Book Publishers Day"}, emoji: "📚"},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/international-hot-and-spicy-food-day/"}, titles: {"en": "International Hot and Spicy Food Day"}, emoji: "🌶️"},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-good-teen-day/"}, titles: {"en": "National Good Teen Day"}},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-quinoa-day/"}, titles: {"en": "National Quinoa Day"}},
+        {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-without-a-scalpel-day/"}, titles: {"en": "National Without a Scalpel Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 1, wkd: [3], d: 13, thruD: 19}, urls: {"en": "https://nationaltoday.com/printing-ink-day/"}, titles: {"en": "Printing Ink Day"}, first: {era: 1, y: 1977}},
+        {type: "1D", start: {mon: 1, d: 17, thruD: 23, wkd: [3]}, urls: {"en": "https://nationaltoday.com/rid-the-world-of-fad-diets-gimmicks-day/"}, titles: {"en": "Rid the World of Fad Diets & Gimmicks Day"}},
+
     ]
 }
