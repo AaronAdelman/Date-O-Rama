@@ -42,9 +42,10 @@
         {template: "סוכות (חול המועד, יום ג׳)", inherits: "*סוכות*", titles: {"he": "סוכות (חול המועד, יום ג׳)", "en": "Sukkoth (ḥol hammo‘edh, day 3)"}, type: "1D", start: {mon: 1, d: 18}},
         {template: "סוכות (חול המועד, יום ד׳)", inherits: "*סוכות*", titles: {"he": "סוכות (חול המועד, יום ד׳)", "en": "Sukkoth (ḥol hammo‘edh, day 4)"}, type: "1D", start: {mon: 1, d: 19}},
         
-        {template: "ראש חודש כסלו", titles: {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, type: "nD", start: {mon: 2, d: 30, "yLengths": [355, 385]}, "end": {mon: 3, d: 1}},
+        {template: "*ראש חודש*", type: "1D", start: {}, emoji: "🔥"},
+        {template: "ראש חודש כסלו", titles: {"he": "ראש חודש כסלו", "en": "Ro’sh Ḥodhesh Kislew"}, type: "nD", start: {mon: 2, d: 30, "yLengths": [355, 385]}, "end": {mon: 3, d: 1}, inherits: "*ראש חודש*"},
         {template: "*חנוכה*", type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://www.ou.org/holidays/category/chanukah/"}, emoji: "🕎"},
-        {template: "ראש חודש טבת", titles: {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, type: "1D", start: {mon: 4, d: 1, "yLengths": [353, 383]}},
+        {template: "ראש חודש טבת", titles: {"he": "ראש חודש טבת", "en": "Ro’sh Ḥodhesh Ṭeveth"}, type: "1D", start: {mon: 4, d: 1, "yLengths": [353, 383]}, inherits: "*ראש חודש*"},
         {template: "תענית אסתר", titles: {"he": "תענית אסתר", "en": "Fast of ’Ester"}, type: "1D", start: {mon: 7, d: 13, wkd: [1, 2, 3, 4, 5, 6]}, urls: {"en": "https://www.ou.org/holidays/category/fast-of-esther/"}},
         {template: "תענית בכורות", titles: {"he": "תענית בכורות", "en": "Fast of the Firstborn"}, type: "1D", start: {mon: 8, d: 14, wkd: [1, 2, 3, 4, 5, 6]}},
         {template: "*פסח*", type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://www.ou.org/holidays/category/passover/"}},
