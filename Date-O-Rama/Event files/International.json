@@ -2269,6 +2269,14 @@
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-without-a-scalpel-day/"}, titles: {"en": "National Without a Scalpel Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 1, wkd: [3], d: 13, thruD: 19}, urls: {"en": "https://nationaltoday.com/printing-ink-day/"}, titles: {"en": "Printing Ink Day"}, first: {era: 1, y: 1977}},
         {type: "1D", start: {mon: 1, d: 17, thruD: 23, wkd: [3]}, urls: {"en": "https://nationaltoday.com/rid-the-world-of-fad-diets-gimmicks-day/"}, titles: {"en": "Rid the World of Fad Diets & Gimmicks Day"}},
-
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/customer-service-day/"}, titles: {"en": "Customer Service Day"}},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/international-we-are-not-broken-day/"}, titles: {"en": "International We Are Not Broken Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 1, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/museum-selfie-day/"}, titles: {"en": "Museum Selfie Day"}},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-carolina-day/"}, titles: {"en": "National Carolina Day"}},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-charlotte-day/"}, titles: {"en": "National Charlotte Day"}},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-hot-buttered-rum-day/"}, titles: {"en": "National Hot Buttered Rum Day"}, emoji: "🥃"},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-hot-heads-chili-day/"}, titles: {"en": "National Hot Heads Chili Day"}, emoji: "🌶️"},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-ta-day/"}, titles: {"en": "National Ta Day"}},
+        {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-lose-the-jet-lag-day/"}, titles: {"en": "National Lose the Jet Lag Day"}, first: {era: 1, y: 2023}},
     ]
 }
