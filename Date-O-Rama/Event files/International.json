@@ -2291,5 +2291,13 @@
         {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/national-annie-day/"}, titles: {"en": "National Annie Day"}},
         {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/national-lucy-day/"}, titles: {"en": "National Lucy Day"}},
         {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/tenderness-toward-existence-day/"}, titles: {"en": "Tenderness Toward Existence Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/national-charlie-day/"}, titles: {"en": "National Charlie Day"}},
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/national-claudia-day/"}, titles: {"en": "National Claudia Day"}},
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/national-coffee-break-day/"}, titles: {"en": "National Coffee Break Day"}, emoji: "☕️"},
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/national-judy-day/"}, titles: {"en": "National Judy Day"}},
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/national-sebastian-day/"}, titles: {"en": "National Sebastian Day"}},
+        {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/take-a-walk-outdoors-day/"}, titles: {"en": "Take A Walk Outdoors Day"}},
+        {type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-use-your-gift-card-day/"}, titles: {"en": "National Use Your Gift Card Day"}},
+        {type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/soup-swap-day/"}, titles: {"en": "Soup Swap Day"}},
     ]
 }
