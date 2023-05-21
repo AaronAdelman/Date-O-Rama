@@ -109,5 +109,6 @@
         {type: "nD", start: {mon: 5, d: 31}, end: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/garden-wildlife-week/"}, titles: {"en": "Garden Wildlife Week"}, emoji: "🪴"},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/handsel-monday/"}, titles: {"en": "Handsel Monday"}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/national-first-foot-day/"}, titles: {"en": "National First-Foot Day"}},
+        {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/heritage-treasures-day/"}, titles: {"en": "Heritage Treasures Day"}},
     ]
 }
