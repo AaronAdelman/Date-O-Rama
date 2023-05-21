@@ -2282,6 +2282,14 @@
         {type: "1D", start: {mon: 1, d: 18}, urls: {"en": "https://nationaltoday.com/national-gourmet-coffee-day/"}, titles: {"en": "National Gourmet Coffee Day"}, emoji: "☕️"},
         {type: "1D", start: {mon: 1, d: 19, thruD: 25, wkd: [5]}, urls: {"en": "https://nationaltoday.com/womens-healthy-weight-day/"}, titles: {"en": "Women’s Healthy Weight Day"}},
         {type: "1D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}, titles: {"en": "Weedless Wednesday"}},
-
+        {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/artist-as-outlaw-day/"}, titles: {"en": "Artist as Outlaw Day"}},
+        {type: "1D", start: {mon: 1, wkd: [5], wkdRecurrence: 3}, inherits: "Get to Know Your Customers Day"},
+        {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: 3}, inherits: "Get to Know Your Customers Day"},
+        {type: "1D", start: {mon: 7, wkd: [5], wkdRecurrence: 3}, inherits: "Get to Know Your Customers Day"},
+        {type: "1D", start: {mon: 10, wkd: [5], wkdRecurrence: 3}, inherits: "Get to Know Your Customers Day"},
+        {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/good-memory-day/"}, titles: {"en": "Good Memory Day"}},
+        {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/national-annie-day/"}, titles: {"en": "National Annie Day"}},
+        {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/national-lucy-day/"}, titles: {"en": "National Lucy Day"}},
+        {type: "1D", start: {mon: 1, d: 19}, urls: {"en": "https://nationaltoday.com/tenderness-toward-existence-day/"}, titles: {"en": "Tenderness Toward Existence Day"}, first: {era: 1, y: 2000}},
     ]
 }
