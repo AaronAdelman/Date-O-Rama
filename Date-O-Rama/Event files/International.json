@@ -2278,5 +2278,10 @@
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-hot-heads-chili-day/"}, titles: {"en": "National Hot Heads Chili Day"}, emoji: "🌶️"},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-ta-day/"}, titles: {"en": "National Ta Day"}},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-lose-the-jet-lag-day/"}, titles: {"en": "National Lose the Jet Lag Day"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 1, d: 18}, urls: {"en": "https://nationaltoday.com/national-forrest-day/"}, titles: {"en": "National Forrest Day"}},
+        {type: "1D", start: {mon: 1, d: 18}, urls: {"en": "https://nationaltoday.com/national-gourmet-coffee-day/"}, titles: {"en": "National Gourmet Coffee Day"}, emoji: "☕️"},
+        {type: "1D", start: {mon: 1, d: 19, thruD: 25, wkd: [5]}, urls: {"en": "https://nationaltoday.com/womens-healthy-weight-day/"}, titles: {"en": "Women’s Healthy Weight Day"}},
+        {type: "1D", start: {mon: 1, d: 18, thruD: 24, wkd: [4]}, urls: {"en": "https://nationaltoday.com/weedless-wednesday/"}, titles: {"en": "Weedless Wednesday"}},
+
     ]
 }
