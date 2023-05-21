@@ -2252,5 +2252,15 @@
         {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/national-peach-melba-day/"}, titles: {"en": "National Peach Melba Day"}, emoji: "🍑"},
         {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/poetry-break-day/"}, titles: {"en": "Poetry Break Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-gluten-free-day/"}, titles: {"en": "National Gluten-Free Day"}},
+        {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/cesarean-section-day/"}, titles: {"en": "Cesarean Section Day"}, first: {era: 1, y: 1985}},
+        {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/national-hot-pastrami-sandwich-day/"}, titles: {"en": "National Hot Pastrami Sandwich Day"}},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/alpha-kappa-alpha-day/"}, titles: {"en": "Alpha Kappa Alpha Day"}, first: {era: 1, y: 1908}},
+        {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/elementary-school-teacher-day/"}, titles: {"en": "Elementary School Teacher Day"}},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-booch-day/"}, titles: {"en": "National Booch Day"}, emoji: "☕️"},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-fresh-squeezed-juice-day/"}, titles: {"en": "National Fresh Squeezed Juice Day"}},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-kayla-day/"}, titles: {"en": "National Kayla Day"}},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-pothole-day/"}, titles: {"en": "National Pothole Day"}},
+        {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/wikipedia-day/"}, titles: {"en": "Wikipedia Day"}, first: {era: 1, y: 2001}, emoji: "🌐"},
+        {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-snow-day/"}, titles: {"en": "World Snow Day"}, first: {era: 1, y: 2012}, emoji: "❄️"},
     ]
 }

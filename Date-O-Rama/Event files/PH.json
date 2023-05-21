@@ -83,5 +83,6 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-heritage-month/"}, titles: {"en": "National Heritage Month"}},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-flag-day-in-the-philippines/"}, inherits: "National Flag Day", first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-fisherfolks-day/"}, titles: {"en": "National Fisherfolks Day"}, first: {era: 1, y: 2000}, emoji: "🎣"},
+        {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/day-of-sanctity-and-protection-of-human-life/"}, titles: {"en": "Day of Sanctity and Protection of Human Life"}, first: {era: 1, y: 2003}, emoji: "👶"},
     ]
 }
