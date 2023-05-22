@@ -567,6 +567,10 @@
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-bootleggers-day/"}, titles: {"en": "National Bootlegger’s Day"}, emoji: "🥃", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/roe-vs-wade-day/"}, titles: {"en": "Roe vs. Wade Day"}},
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-report-pharmaceutical-fraud-day/"}, titles: {"en": "National Report Pharmaceutical Fraud Day"}, first: {era: 1, y: 2017}, emoji: "💊"},
+        {type: "1D", start: {mon: 1, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/library-shelfie-day/"}, titles: {"en": "Library Shelfie Day"}, first: {era: 1, y: 2014}, emoji: "📚"},
+        {type: "nD", start: {mon: 1, d: 24}, end: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/national-cowboy-poetry-gathering-week/"}, titles: {"en": "National Cowboy Poetry Gathering Week"}, first: {era: 1, y: 1985}, emoji: "🤠"},
+        {type: "1D", start: {mon: 1, wkd: [5], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/nasas-day-of-remembrance/"}, titles: {"en": "NASA’s Day of Remembrance"}, first: {era: 1, y: 2014}, emoji: "👨‍🚀👩‍🚀"},
+        {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/national-iv-nurse-day/"}, titles: {"en": "National IV Nurse Day"}, first: {era: 1, y: 1980}, emoji: "👨‍⚕️👩‍⚕️"},
 
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
