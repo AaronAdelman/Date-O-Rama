@@ -754,6 +754,8 @@
 		A5E8BAE728047B9E0018CD36 /* LR.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E8BAE528047B9E0018CD36 /* LR.json */; };
 		A5E95F6D286F2DB7009267AF /* AS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E95F6C286F2DB7009267AF /* AS.json */; };
 		A5E95F6E286F2DB7009267AF /* AS.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E95F6C286F2DB7009267AF /* AS.json */; };
+		A5E9AB632A1B4C8900433D7A /* Names.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AB622A1B4C8900433D7A /* Names.json */; };
+		A5E9AB642A1B4C8900433D7A /* Names.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E9AB622A1B4C8900433D7A /* Names.json */; };
 		A5EB29192865F98500A1FBF4 /* CX (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB29182865F98500A1FBF4 /* CX (Chinese).json */; };
 		A5EB291A2865F98500A1FBF4 /* CX (Chinese).json in Resources */ = {isa = PBXBuildFile; fileRef = A5EB29182865F98500A1FBF4 /* CX (Chinese).json */; };
 		A5EB4F8D2850980500A32FB1 /* ASACloseBoxImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */; };
@@ -1493,6 +1495,7 @@
 		A5E8BAE227FCCF0B0018CD36 /* BD.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BD.json; sourceTree = "<group>"; };
 		A5E8BAE528047B9E0018CD36 /* LR.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LR.json; sourceTree = "<group>"; };
 		A5E95F6C286F2DB7009267AF /* AS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AS.json; sourceTree = "<group>"; };
+		A5E9AB622A1B4C8900433D7A /* Names.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Names.json; sourceTree = "<group>"; };
 		A5EB29182865F98500A1FBF4 /* CX (Chinese).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "CX (Chinese).json"; sourceTree = "<group>"; };
 		A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACloseBoxImage.swift; sourceTree = "<group>"; };
 		A5EB4F8E2850D5DE00A32FB1 /* PS.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PS.json; sourceTree = "<group>"; };
@@ -1917,6 +1920,7 @@
 				A5E292D1285A59BB00925EBD /* MZ.json */,
 				A5EFFF89285B7CBD00F2205F /* NA.json */,
 				A5837BE0271C139700047475 /* Named full moons.json */,
+				A5E9AB622A1B4C8900433D7A /* Names.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
 				A5E4964F28625479001BF40C /* NC.json */,
 				A5D850B3280C9823005247BD /* NE.json */,
@@ -2708,6 +2712,7 @@
 				A5E49654286254AC001BF40C /* NF.json in Resources */,
 				A5E496112862505C001BF40C /* IO.json in Resources */,
 				A576994B259EDCC000757B0F /* Judaism (minor fasts).json in Resources */,
+				A5E9AB642A1B4C8900433D7A /* Names.json in Resources */,
 				A5D3D7E527FA20CC0099718A /* AU.json in Resources */,
 				A5E4960928624F9A001BF40C /* GW.json in Resources */,
 				A5FB22AD28638E1200B5042B /* ST.json in Resources */,
@@ -2878,6 +2883,7 @@
 				A576C39328171F96005AC73D /* NZ.json in Resources */,
 				A529D3522A151404004D8799 /* Wellcat.json in Resources */,
 				A5F3B02128565F8100865CEB /* BS.json in Resources */,
+				A5E9AB632A1B4C8900433D7A /* Names.json in Resources */,
 				A581B876284E452400407D68 /* LT.json in Resources */,
 				A50DA52828686272008D54AE /* KR (Chinese).json in Resources */,
 				A5B999B228622B1800072FD5 /* BV.json in Resources */,
