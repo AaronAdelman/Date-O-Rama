@@ -2132,5 +2132,7 @@
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/better-business-communication-day/"}, titles: {"en": "Better Business Communication Day"}},
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/come-in-from-the-cold-day/"}, titles: {"en": "Come in From the Cold Day"}},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/community-manager-appreciation-day/"}, titles: {"en": "Community Manager Appreciation Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/international-sticky-toffee-pudding-day/"}, titles: {"en": "International Sticky Toffee Pudding Day"}},
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-rhubarb-pie-day/"}, titles: {"en": "National Rhubarb Pie Day"}, emoji: "🥧"},
     ]
 }

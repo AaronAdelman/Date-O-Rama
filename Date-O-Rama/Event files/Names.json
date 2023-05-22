@@ -183,8 +183,9 @@
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/national-max-day/"}, titles: {"en": "National Max Day"}},
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/national-ty-day/"}, titles: {"en": "National Ty Day"}},
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/national-vincent-day/"}, titles: {"en": "National Vincent Day"}},
-
-        
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-aiden-day/"}, titles: {"en": "National Aiden Day"}},
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-king-day/"}, titles: {"en": "National King Day"}},
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-pedro-day/"}, titles: {"en": "National Pedro Day"}},
         
         
         

@@ -566,6 +566,7 @@
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/prohibition-remembrance-day/"}, titles: {"en": "Prohibition Remembrance Day"}},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-bootleggers-day/"}, titles: {"en": "National Bootlegger’s Day"}, emoji: "🥃", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 1, d: 22}, urls: {"en": "https://nationaltoday.com/roe-vs-wade-day/"}, titles: {"en": "Roe vs. Wade Day"}},
+        {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-report-pharmaceutical-fraud-day/"}, titles: {"en": "National Report Pharmaceutical Fraud Day"}, first: {era: 1, y: 2017}, emoji: "💊"},
 
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
