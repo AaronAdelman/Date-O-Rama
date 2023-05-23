@@ -2150,5 +2150,7 @@
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/national-peanut-brittle-day/"}, titles: {"en": "National Peanut Brittle Day"}, emoji: "🥜"},
         {type: "1D", start: {mon: 1, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-preschool-health-and-fitness-day/"}, titles: {"en": "National Preschool Health and Fitness Day"}},
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/toad-hollow-day-of-encouragement/"}, titles: {"en": "Toad Hollow Day of Encouragement"}, first: {era: 1, y: 2003}, emoji: "🐸"},
+        {type: "1D", start: {mon: 1, d: 27}, urls: {"en": "https://nationaltoday.com/punch-the-clock-day/"}, titles: {"en": "Punch the Clock Day"}},
+        {type: "1D", start: {mon: 1, d: 27}, urls: {"en": "https://nationaltoday.com/world-breast-pumping-day/"}, titles: {"en": "World Breast Pumping Day"}, first: {era: 1, y: 2017}},
     ]
 }
