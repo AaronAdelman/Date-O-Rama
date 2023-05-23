@@ -187,7 +187,7 @@
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-king-day/"}, titles: {"en": "National King Day"}},
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-pedro-day/"}, titles: {"en": "National Pedro Day"}},
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/national-matthew-day/"}, titles: {"en": "National Matthew Day"}},
-
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/national-diane-day/"}, titles: {"en": "National Diane Day"}},
         
         
     ]

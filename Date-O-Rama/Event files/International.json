@@ -2141,9 +2141,14 @@
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/national-lobster-thermidor-day/"}, titles: {"en": "National Lobster Thermidor Day"}, first: {era: 1, y: 2000}, emoji: "🦞"},
         {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/speak-up-and-succeed-day/"}, titles: {"en": "Speak Up and Succeed Day"}},
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/talk-like-a-grizzled-prospector-day/"}, titles: {"en": "Talk Like a Grizzled Prospector Day"}, first: {era: 1, y: 2008}},
-        {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/fluoride-day/"}, titles: {"en": "Fluoride Day"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/fluoride-day/"}, titles: {"en": "Fluoride Day"}, first: {era: 1, y: 1990}, emoji: "🦷"},
         {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/national-fish-taco-day/"}, titles: {"en": "National Fish Taco Day"}, emoji: "🌮"},
         {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/observe-the-weather-day/"}, titles: {"en": "Observe the Weather Day"}, emoji: "☂️🌡️⚡️"},
-
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/dental-drill-appreciation-day/"}, titles: {"en": "Dental Drill Appreciation Day"}, emoji: "🦷"},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/international-environmental-education-day/"}, titles: {"en": "International Environmental Education Day"}},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/lotus-1-2-3-day/"}, titles: {"en": "Lotus 1-2-3 Day"}},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/national-peanut-brittle-day/"}, titles: {"en": "National Peanut Brittle Day"}, emoji: "🥜"},
+        {type: "1D", start: {mon: 1, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-preschool-health-and-fitness-day/"}, titles: {"en": "National Preschool Health and Fitness Day"}},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/toad-hollow-day-of-encouragement/"}, titles: {"en": "Toad Hollow Day of Encouragement"}, first: {era: 1, y: 2003}, emoji: "🐸"},
     ]
 }
