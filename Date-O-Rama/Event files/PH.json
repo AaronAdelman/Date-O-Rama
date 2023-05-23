@@ -56,7 +56,7 @@
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/first-philippine-republic-day/"}, titles: {"en": "First Philippine Republic Day"}, first: {era: 1, y: 1899}},
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-national-artist-napoleon-abueva/"}, titles: {"en": "Birth Anniversary of National Artist Napoleon Abueva"}, inherits: "*BDay*", first: {era: 1, y: 1930}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/julian-felipe-day/"}, titles: {"en": "Julian Felipe Day"}, first: {era: 1, y: 1861}},
-        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day"}, first: {era: 1, y: 1982}},
+        {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-bible-day/"}, titles: {"en": "National Bible Day"}, first: {era: 1, y: 1982}},
         {inherits: "World Hijab Day", type: "1D", start: {mon: 2, d: 1}, first: {era: 1, y: 2021}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/womens-role-in-history-month/"}, titles: {"en": "Women’s Role in History Month"}, first: {era: 1, y: 1989}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-liberation-of-the-battle-of-manila/"}, titles: {"en": "Anniversary of the Liberation of the Battle of Manila"}, first: {era: 1, y: 1945}},

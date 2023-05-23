@@ -577,7 +577,7 @@
         {type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-seed-swap-day/"}, titles: {"en": "National Seed Swap Day"}, emoji: "🌱", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/american-immigration-lawyers-association-day-of-action/"}, titles: {"en": "American Immigration Lawyers Association Day of Action"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/earned-income-tax-credit-awareness-day/"}, titles: {"en": "Earned Income Tax Credit Awareness Day"}},
-        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/international-reducing-co2-emissions-day/"}, titles: {"en": "International Reducing CO₂ Emissions Day"}},
+        {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/national-carnation-day/"}, titles: {"en": "National Carnation Day"}, first: {era: 1, y: 1903}, emoji: "⚘"},
 
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},

@@ -190,5 +190,7 @@
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/national-diane-day/"}, titles: {"en": "National Diane Day"}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-amy-day/"}, titles: {"en": "National Amy Day"}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-tina-day/"}, titles: {"en": "National Tina Day"}},
+        {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/national-colin-day/"}, titles: {"en": "National Colin Day"}},
+
     ]
 }

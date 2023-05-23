@@ -2156,5 +2156,7 @@
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-pediatrician-day/"}, titles: {"en": "National Pediatrician Day"}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/pop-art-day/"}, titles: {"en": "Pop Art Day"}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/thank-a-plugin-developer-day/"}, titles: {"en": "Thank a Plugin Developer Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/international-reducing-co2-emissions-day/"}, titles: {"en": "International Reducing CO₂ Emissions Day"}},
+        {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/seeing-eye-guide-dog-anniversary/"}, titles: {"en": "Seeing-Eye Guide Dog Anniversary"}, emoji: "🦮", first: {era: 1, y: 1929}},
     ]
 }
