@@ -2151,6 +2151,10 @@
         {type: "1D", start: {mon: 1, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-preschool-health-and-fitness-day/"}, titles: {"en": "National Preschool Health and Fitness Day"}},
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/toad-hollow-day-of-encouragement/"}, titles: {"en": "Toad Hollow Day of Encouragement"}, first: {era: 1, y: 2003}, emoji: "🐸"},
         {type: "1D", start: {mon: 1, d: 27}, urls: {"en": "https://nationaltoday.com/punch-the-clock-day/"}, titles: {"en": "Punch the Clock Day"}},
-        {type: "1D", start: {mon: 1, d: 27}, urls: {"en": "https://nationaltoday.com/world-breast-pumping-day/"}, titles: {"en": "World Breast Pumping Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-daisy-day/"}, titles: {"en": "National Daisy Day"}},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-lego-day/"}, titles: {"en": "National Lego Day"}},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-pediatrician-day/"}, titles: {"en": "National Pediatrician Day"}, emoji: "👨‍⚕️👩‍⚕️"},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/pop-art-day/"}, titles: {"en": "Pop Art Day"}},
+        {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/thank-a-plugin-developer-day/"}, titles: {"en": "Thank a Plugin Developer Day"}, first: {era: 1, y: 2009}},
     ]
 }
