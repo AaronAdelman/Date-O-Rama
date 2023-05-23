@@ -2158,5 +2158,15 @@
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/thank-a-plugin-developer-day/"}, titles: {"en": "Thank a Plugin Developer Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/international-reducing-co2-emissions-day/"}, titles: {"en": "International Reducing CO₂ Emissions Day"}},
         {type: "1D", start: {mon: 1, d: 29}, urls: {"en": "https://nationaltoday.com/seeing-eye-guide-dog-anniversary/"}, titles: {"en": "Seeing-Eye Guide Dog Anniversary"}, emoji: "🦮", first: {era: 1, y: 1929}},
+        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-draw-a-dinosaur-day/"}, titles: {"en": "National Draw A Dinosaur Day"}, emoji: "🦖", first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-escape-day/"}, titles: {"en": "National Escape Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-plan-for-vacation-day/"}, titles: {"en": "National Plan for Vacation Day"}, emoji: "⛱️"},
+        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/school-day-of-non-violence-and-peace/"}, titles: {"en": "School Day of Non-violence and Peace"}, emoji: "☮️", first: {era: 1, y: 1964}},
+        {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/yodel-for-your-neighbors-day/"}, titles: {"en": "Yodel For Your Neighbors Day"}},
+        {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/brandy-alexander-day/"}, titles: {"en": "Brandy Alexander Day"}},
+        {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/eat-brussel-sprouts-day/"}, titles: {"en": "Eat Brussel Sprouts Day"}},
+        {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/hell-is-freezing-over-day/"}, titles: {"en": "Hell is Freezing Over Day"}},
+        {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/hug-an-economist-day/"}, titles: {"en": "Hug An Economist Day"}},
+        {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/scotch-tape-day/"}, titles: {"en": "Scotch Tape Day"}},
     ]
 }
