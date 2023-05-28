@@ -193,5 +193,7 @@
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-edison-day/"}, titles: {"en": "National Edison Day"}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-jennifer-day/"}, titles: {"en": "National Jennifer Day"}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-sofia-day/"}, titles: {"en": "National Sofia Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/national-roman-day/"}, titles: {"en": "National Roman Day"}},
+
     ]
 }

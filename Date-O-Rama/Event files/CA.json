@@ -76,5 +76,6 @@
         {type: "1M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}, emoji: "🐕‍🦺"},
         {type: "1D", start: {mon: 5, d: 16}, inherits: "National Do Something Good for Your Neighbor Day", first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/canadian-immigrants-day/"}, titles: {"en": "Canadian Immigrants Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/intergenerational-day/"}, titles: {"en": "Intergenerational Day"}, first: {era: 1, y: 2010}},
     ]
 }

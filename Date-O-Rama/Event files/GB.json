@@ -110,5 +110,7 @@
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/handsel-monday/"}, titles: {"en": "Handsel Monday"}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/national-first-foot-day/"}, titles: {"en": "National First-Foot Day"}},
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/heritage-treasures-day/"}, titles: {"en": "Heritage Treasures Day"}},
+        {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/rspca-week/"}, titles: {"en": "RSPCA Week"}},
+        {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/volunteers-week/"}, titles: {"en": "Volunteers’ Week"}},
     ]
 }

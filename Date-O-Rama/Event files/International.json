@@ -2168,5 +2168,17 @@
         {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/hell-is-freezing-over-day/"}, titles: {"en": "Hell is Freezing Over Day"}},
         {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/hug-an-economist-day/"}, titles: {"en": "Hug An Economist Day"}},
         {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://nationaltoday.com/scotch-tape-day/"}, titles: {"en": "Scotch Tape Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/dare-day/"}, titles: {"en": "Dare Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/dinosaur-day/"}, titles: {"en": "Dinosaur Day"}, emoji: "🦕"},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/flip-coin-day/"}, titles: {"en": "Flip A Coin Day"}, emoji: "🪙"},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/heimlich-maneuver-day/"}, titles: {"en": "National Heimlich Maneuver Day"}},
+        {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-moonshine-day/"}, titles: {"en": "National Moonshine Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/national-olive-day/"}, titles: {"en": "National Olive Day"}, emoji: "🫒"},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/oscar-the-grouch-day/"}, titles: {"en": "Oscar the Grouch Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/pen-pal-day/"}, titles: {"en": "Pen Pal Day"}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/world-narcissistic-abuse-day/"}, titles: {"en": "World Narcissistic Abuse Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/world-outlander-day/"}, titles: {"en": "World Outlander Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/world-reef-awareness-day/"}, titles: {"en": "World Reef Awareness Day"}, emoji: "🪸🐠"},
+        {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/step-parents-week/"}, titles: {"en": "Step Parents Week"}},
     ]
 }

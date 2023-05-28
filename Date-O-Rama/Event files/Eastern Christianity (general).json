@@ -39,7 +39,7 @@
         {titles: {"en": "The Samaritan Woman (Photini)"}, type: "1D", start: {"Easter": "Easter", "offsetD": 28}},
         {titles: {"en": "The Blind Man"}, type: "1D", start: {"Easter": "Easter", "offsetD": 35}},
         {titles: {"en": "The Leave-Taking of Pascha"}, type: "1D", start: {"Easter": "Easter", "offsetD": 38}},
-        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}, urls: {"en": "https://nationaltoday.com/orthodox-ascension-day/"}},
         {titles: {"en": "The Fathers of the First Ecumenical Council"}, type: "1D", start: {"Easter": "Easter", "offsetD": 42}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}, urls: {"en": "https://nationaltoday.com/orthodox-pentecost-sunday/"}},
         {inherits: "All Saints’ Day", type: "1D", start: {"Easter": "Easter", "offsetD": 56}},
