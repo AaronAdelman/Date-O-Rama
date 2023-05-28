@@ -155,7 +155,7 @@
         {inherits: "Emancipation Day", type: "1D", start: {mon: 4, d: 3}, "locations": {"en": "Virginia"}},
        {type: "1D", start: {d: 24, mon: 5}, titles: {"en": "Aviation Maintenance Technician Day"}, urls: {"en": "https://www.daysoftheyear.com/days/aviation-maintenance-technician-day/"}, first: {era: 1, y: 2001}, emoji: "👨‍🔧👩‍🔧"},
         {type: "1M", start: {mon: 10}, titles: {"en": "Filipino American History Month"}, urls: {"en": "https://nationaldaycalendar.com/filipino-american-history-month-october/"}, first: {era: 1, y: 2006}, emoji: "🇵🇭🇺🇸", notes: {"en": "FAHM"}},
-        {type: "1M", start: {mon: 6}, titles: {"en": "LGBT Pride Month"}, urls: {"en": "https://www.daysoftheyear.com/days/pride-month/"}, first: {era: 1, y: 1999}, notes: {"en": "LGBTQ+ Pride Month"}},
+        {type: "1M", start: {mon: 6}, titles: {"en": "LGBT Pride Month"}, urls: {"en": "https://www.daysoftheyear.com/days/pride-month/"}, first: {era: 1, y: 1999}, notes: {"en": "LGBTQ+ Pride Month\nPride Month"}},
         {inherits: "Women’s History Month", type: "1M", start: {mon: 3}, first: {era: 1, y: 1986}},
         {inherits: "Disability History Month", type: "1M", start: {mon: 10}, first: {era: 1, y: 2007}},
         {type: "1M", start: {mon: 10}, titles: {"en": "National Disability Employment Awareness Month"}, urls: {"en": "https://nationaldaycalendar.com/national-disability-employment-awareness-month-october/"}, first: {era: 1, y: 1988}, emoji: "🩼"},
@@ -586,7 +586,38 @@
         {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/statehood-day-in-kentucky/"}, inherits: "Statehood Day", locations: {"en": "Kentucky"}, first: {era: 1, y: 1792}},
         {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/statehood-day-in-tennessee/"}, inherits: "Statehood Day", locations: {"en": "Tennessee"}, first: {era: 1, y: 1796}},
         {type: "nD", start: {mon: 6, d: 1}, end: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-cpr-and-aed-awareness-week/"}, titles: {"en": "National CPR and AED Awareness Week"}, first: {era: 1, y: 2007}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/african-american-appreciation-month/"}, titles: {"en": "African American Appreciation Month"}, first: {era: 1, y: 2000}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/african-american-music-appreciation-month/"}, titles: {"en": "African-American Music Appreciation Month"}, first: {era: 1, y: 1979}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/alzheimers-brain-awareness-month/"}, titles: {"en": "Alzheimer’s and Brain Awareness Month"}, first: {era: 1, y: 1983}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/antiphospholipid-antibody-syndrome-awareness-month/"}, titles: {"en": "Antiphospholipid Antibody Syndrome Awareness Month"}, first: {era: 1, y: 2010}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/black-lives-matter-month/"}, titles: {"en": "Black Lives Matter Month"}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/caribbean-american-heritage-month/"}, titles: {"en": "Caribbean-American Heritage Month"}, first: {era: 1, y: 2004}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/fireworks-safety-month/"}, titles: {"en": "Fireworks Safety Month"}, emoji: "🎇"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/georgia-blueberry-month/"}, titles: {"en": "Georgia Blueberry Month"}, first: {era: 1, y: 2012}, emoji: "🫐"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/great-outdoors-month/"}, titles: {"en": "Great Outdoors Month"}, first: {era: 1, y: 2008}, emoji: "🏞️"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/lane-courtesy-month/"}, titles: {"en": "Lane Courtesy Month"}, first: {era: 1, y: 2000}, emoji: "⛙"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/lemon-month/"}, titles: {"en": "Lemon Month"}, emoji: "🍋"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-adopt-cat-month/"}, titles: {"en": "National Adopt A Cat Month"}, emoji: "🐱"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-congenital-cytomegalovirus-awareness-month/"}, titles: {"en": "National Congenital Cytomegalovirus Awareness Month"}, first: {era: 1, y: 2011}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-homeownership-month/"}, titles: {"en": "National Homeownership Month"}, first: {era: 1, y: 2002}, emoji: "🏠"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-migraine-headache-awareness-month/"}, titles: {"en": "National Migraine and Headache Awareness Month"}, first: {era: 1, y: 2018}, emoji: "🤕"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-pollinators-month/"}, titles: {"en": "National Pollinators Month"}, emoji: "🐝"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-ptsd-awareness-month/"}, titles: {"en": "National PTSD Awareness Month"}, first: {era: 1, y: 2014}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-safety-month/"}, titles: {"en": "National Safety Month"}, first: {era: 1, y: 1986}, emoji: "🥽"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-soul-food-month/"}, titles: {"en": "National Soul Food Month"}, emoji: "🥘"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-zoo-aquarium-month/"}, titles: {"en": "National Zoo and Aquarium Month"}, first: {era: 1, y: 1982}, emoji: "🦘🐟"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/oral-health-month/"}, titles: {"en": "Oral Health Month"}, emoji: "👄"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/pharmacists-declare-war-on-alcoholism-month/"}, titles: {"en": "Pharmacists Declare War on Alcoholism Month"}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/sports-america-kids-month/"}, titles: {"en": "Sports America Kids Month"}, emoji: "🥎🥏🏀"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/vision-research-month/"}, titles: {"en": "Vision Research Month"}, emoji: "👀"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/womens-golf-month/"}, titles: {"en": "Women’s Golf Month"}, first: {era: 1, y: 2005}, emoji: "⛳️"},
 
+        
+        
+        
+        
+        
+        
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
         {type: "1D", start: {d: 10, mon: 5}, titles: {"en": "National Washington Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-washington-day-may-10/"}},
