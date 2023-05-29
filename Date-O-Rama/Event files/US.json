@@ -617,6 +617,9 @@
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-bubbly-day/"}, titles: {"en": "National Bubbly Day"}, emoji: "🥂"},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-prairie-day/"}, titles: {"en": "National Prairie Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-trails-day/"}, titles: {"en": "National Trails Day"}, emoji: "🏞️", first: {era: 1, y: 1993}},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/audacity-to-hope-day/"}, titles: {"en": "Audacity To Hope Day"}},
+        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-cancer-survivors-day/"}, titles: {"en": "National Cancer Survivors Day"}, first: {era: 1, y: 1988}},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-safe-day/"}, titles: {"en": "National SAFE Day"}, first: {era: 1, y: 2016}},
 
         
         

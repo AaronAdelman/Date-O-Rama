@@ -2236,5 +2236,11 @@
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-simp-day/"}, titles: {"en": "National Simp Day"}},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/repeat-day/"}, titles: {"en": "Repeat Day"}, emoji: "🔁"},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/world-cider-day/"}, titles: {"en": "World Cider Day"}, emoji: "🍺"},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/international-corgi-day/"}, titles: {"en": "International Corgi Day"}},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-cheese-day/"}, titles: {"en": "National Cheese Day"}, emoji: "🧀"},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-cognac-day/"}, titles: {"en": "National Cognac Day"}, emoji: "🥃"},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-hug-cat-day/"}, titles: {"en": "National Hug Your Cat Day"}, emoji: "😺"},
+        {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/shopping-cart-day/"}, titles: {"en": "Shopping Cart Day"}, emoji: "🛒"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-hug-your-cat-month/"}, titles: {"en": "National Hug Your Cat Month"}, emoji: "😺"},
     ]
 }
