@@ -86,5 +86,6 @@
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/day-of-sanctity-and-protection-of-human-life/"}, titles: {"en": "Day of Sanctity and Protection of Human Life"}, first: {era: 1, y: 2003}, emoji: "👶"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/we-advocate-time-consciousness-and-honesty/"}, titles: {"en": "We Advocate Time Consciousness and Honesty"}},
         {type: "nD", start: {mon: 6, d: 4}, end: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/week-of-the-philippine-eagle/"}, titles: {"en": "Week of the Philippine Eagle"}},
+        {type: "nD", start: {mon: 6, d: 6}, end: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/linggo-ng-kalayaan/"}, titles: {"en": "Linggo ng Kalayaan"}, first: {era: 1, y: 1992}},
     ]
 }

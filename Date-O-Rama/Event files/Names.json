@@ -200,5 +200,6 @@
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-janet-day/"}, titles: {"en": "National Janet Day"}},
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-jenny-day/"}, titles: {"en": "National Jenny Day"}},
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-joyce-day/"}, titles: {"en": "National Joyce Day"}},
+        {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-cynthia-day/"}, titles: {"en": "National Cynthia Day"}},
     ]
 }
