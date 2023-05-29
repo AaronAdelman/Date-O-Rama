@@ -2254,6 +2254,13 @@
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/world-green-roof-day/"}, titles: {"en": "World Green Roof Day"}},
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/world-pest-day/"}, titles: {"en": "World Pest Day"}, emoji: "🪳", first: {era: 1, y: 2017}},
         {type: "nD", start: {mon: 6, d: 6}, end: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/healthcare-executives-appreciation-week/"}, titles: {"en": "Healthcare Executives Appreciation Week"}},
-
+        {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/global-running-day/"}, titles: {"en": "Global Running Day"}, first: {era: 1, y: 2016}, emoji: "👟"},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/international-supply-chain-professionals-day/"}, titles: {"en": "International Supply Chain Professionals Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/june-bug-day/"}, titles: {"en": "June Bug Day"}, emoji: "🪲"},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-chocolate-ice-cream-day/"}, titles: {"en": "National Chocolate Ice Cream Day"}, emoji: "🍨"},
+        {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-tailors-day/"}, titles: {"en": "National Tailors Day"}, emoji: "🧵"},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-vcr-day/"}, titles: {"en": "National VCR Day"}, emoji: "📼"},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "http://www.worldcaringday.org/"}, titles: {"en": "World Caring Day"}, first: {era: 1, y: 2022}},
+        {type: "nD", start: {mon: 6, d: 7}, end: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/world-heart-rhythm-week/"}, titles: {"en": "World Heart Rhythm Week"}, emoji: "🫀"},
     ]
 }

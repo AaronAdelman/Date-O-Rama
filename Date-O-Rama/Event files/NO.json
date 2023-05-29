@@ -18,5 +18,6 @@
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/sami-national-day/"}, titles: {"en": "Sámi National Day"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
         {type: "1D", start: {mon: 2, d: 21}, urls: {"en": "https://nationaltoday.com/king-harald-vs-day/"}, titles: {"en": "King Harald V’s Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/dissolution-of-union-between-norway-and-sweden/"}, titles: {"en": "Dissolution of Union between Norway and Sweden"}, emoji: "🇳🇴🇸🇪", first: {era: 1, y: 1905}},
     ]
 }

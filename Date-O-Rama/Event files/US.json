@@ -620,9 +620,10 @@
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/audacity-to-hope-day/"}, titles: {"en": "Audacity To Hope Day"}},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-cancer-survivors-day/"}, titles: {"en": "National Cancer Survivors Day"}, first: {era: 1, y: 1988}},
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-safe-day/"}, titles: {"en": "National SAFE Day"}, first: {era: 1, y: 2016}},
-        type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/caves-and-karst-day/"}, titles: {"en": "Caves and Karst Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/caves-and-karst-day/"}, titles: {"en": "Caves and Karst Day"}, first: {era: 1, y: 2017}, emoji: "⽳"},
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-drive-in-movie-day/"}, titles: {"en": "National Drive-In Movie Day"}, emoji: "📽️"},
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-higher-education-day/"}, titles: {"en": "National Higher Education Day"}, emoji: "🎓", first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/daniel-boone-day/"}, titles: {"en": "Daniel Boone Day"}},
 
         
         
