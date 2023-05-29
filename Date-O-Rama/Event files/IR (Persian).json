@@ -10,7 +10,7 @@
         {inherits: "Republic Day", type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://en.wikipedia.org/wiki/Iranian_Islamic_Republic_Day"}, titles: {"en": "Islamic Republic Day", "fa": "روز جمهوری اسلامی"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/nature-day/"}, titles: {"en": "Sizdah Bedar", "fa": "سیزده بدر"}, notes: {"en": "Nature Day"}},
         {type: "1D", start: {mon: 3, d: 14}, titles: {"en": "Death of Khomeini", "fa": "رحلت آیت الله خمینی"}, inherits: "*Death Anniv*"},
-        {type: "1D", start: {mon: 3, d: 15}, titles: {"en": "Revolt of Khordad 15", "fa": "قیام ۱۵ خرداد"}, urls: {"en": "https://nationaltoday.com/khordad-national-uprising-in-iran/"}, notes: {"en": "Khordad National Uprising"},
+        {type: "1D", start: {mon: 3, d: 15}, titles: {"en": "Revolt of Khordad 15", "fa": "قیام ۱۵ خرداد"}, urls: {"en": "https://nationaltoday.com/khordad-national-uprising-in-iran/"}, notes: {"en": "Khordad National Uprising"}},
         {type: "1D", start: {mon: 11, d: 22}, titles: {"en": "Anniversary of Islamic Revolution", "fa": "انقلاب اسلامی پنجاه و هفت"}, urls: {"en": "https://nationaltoday.com/islamic-revolution-day/"}},
         {type: "1D", start: {mon: 12, d: 29}, titles: {"en": "Nationalization of the Iranian oil industry", "fa": "ملی شدن صنعت نفت"}, urls: {"en": "https://en.wikipedia.org/wiki/Nationalization_of_the_Iranian_oil_industry"}},
 
