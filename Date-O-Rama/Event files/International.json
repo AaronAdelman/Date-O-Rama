@@ -2223,6 +2223,18 @@
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/social-petworking-month/"}, titles: {"en": "Social Petworking Month"}, emoji: "🐱"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/turkey-lovers-month/"}, titles: {"en": "Turkey Lovers Month"}, emoji: "🦃"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/world-infertility-awareness-month/"}, titles: {"en": "World Infertility Awareness Month"}},
-
+        {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-love-dentist-day/"}, titles: {"en": "National I Love My Dentist Day"}, emoji: "🦷"},
+        {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-rocky-road-day/"}, titles: {"en": "National Rocky Road Day"}, emoji: "🍨"},
+        {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-rotisserie-chicken-day/"}, titles: {"en": "National Rotisserie Chicken Day"}, emoji: "🍗", first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/chimborazo-day/"}, titles: {"en": "Chimborazo Day"}, emoji: "🏔️"},
+        {type: "1D", start: {mon: 6, d: 3}, inherits: "European Bicycle Day", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/insect-repellent-awareness-day/"}, titles: {"en": "Insect Repellent Awareness Day"}, emoji: "🦟", first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-tabletop-day/"}, titles: {"en": "International Tabletop Day"}, first: {era: 1, y: 2013}, emoji: "🎲♟️🀄️"},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/love-conquers-all-day/"}, titles: {"en": "Love Conquers All Day"}, emoji: "🫶"},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-macaroon-day/"}, titles: {"en": "National Chocolate Macaroon Day"}},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-egg-day/"}, titles: {"en": "National Egg Day"}, emoji: "🥚"},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-simp-day/"}, titles: {"en": "National Simp Day"}},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/repeat-day/"}, titles: {"en": "Repeat Day"}, emoji: "🔁"},
+        {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/world-cider-day/"}, titles: {"en": "World Cider Day"}, emoji: "🍺"},
     ]
 }

@@ -21,5 +21,6 @@
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/day-of-mourning/"}, titles: {"en": "Day of Mourning", "de": "Volkstrauertag"}, first: {era: 1, y: 1922}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/childrens-hospice-day/"}, titles: {"en": "Children’s Hospice Day"}, emoji: "👦👧"},
         {type: "1D", start: {"Easter": "Easter", "offsetD": -47}, inherits: "Fasnacht Day"},
+        {type: "1D", start: {mon: 6, d: 3}, inherits: "European Bicycle Day", first: {era: 1, y: 2018}},
     ]
 }
