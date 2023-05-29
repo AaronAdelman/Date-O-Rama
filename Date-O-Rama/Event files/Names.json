@@ -204,6 +204,7 @@
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-alexandra-day/"}, titles: {"en": "National Alexandra Day"}},
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-benjamin-day/"}, titles: {"en": "National Benjamin Day"}},
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-elias-day/"}, titles: {"en": "National Elias Day"}},
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-karen-day/"}, titles: {"en": "National Karen Day"}},
 
     ]
 }

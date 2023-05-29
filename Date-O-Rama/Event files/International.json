@@ -2262,5 +2262,9 @@
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-vcr-day/"}, titles: {"en": "National VCR Day"}, emoji: "📼"},
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "http://www.worldcaringday.org/"}, titles: {"en": "World Caring Day"}, first: {era: 1, y: 2022}},
         {type: "nD", start: {mon: 6, d: 7}, end: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/world-heart-rhythm-week/"}, titles: {"en": "World Heart Rhythm Week"}, emoji: "🫀"},
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/international-day-of-action-for-elephants-in-zoos/"}, titles: {"en": "International Day of Action for Elephants in Zoos"}, emoji: "🐘", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-name-your-poison-day/"}, titles: {"en": "National Name Your Poison Day"}},
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-upsy-daisy-day/"}, titles: {"en": "National Upsy Daisy Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/world-brain-tumor-day/"}, titles: {"en": "World Brain Tumor Day"}, first: {era: 1, y: 2003}, emoji: "🧠"},
     ]
 }

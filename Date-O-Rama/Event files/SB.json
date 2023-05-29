@@ -13,6 +13,6 @@
         {type: "1D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/choiseul-province-day/"}, titles: {"en": "Choiseul Province Day"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 6, d: 2, wkd: [2, 3, 4, 5, 6, 7]}, urls: {"en": "https://nationaltoday.com/isabel-province-day/"}, inherits: "Isabel Province Day", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 6, d: 3, wkd: [2]}, urls: {"en": "https://nationaltoday.com/isabel-province-day/"}, inherits: "Isabel Province Day", first: {era: 1, y: 2015}},
-
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/temotu-province-day/"}, titles: {"en": "Temotu Province Day"}, first: {era: 1, y: 1981}},
     ]
 }

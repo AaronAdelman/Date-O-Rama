@@ -624,6 +624,7 @@
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-drive-in-movie-day/"}, titles: {"en": "National Drive-In Movie Day"}, emoji: "📽️"},
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-higher-education-day/"}, titles: {"en": "National Higher Education Day"}, emoji: "🎓", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/daniel-boone-day/"}, titles: {"en": "Daniel Boone Day"}},
+        {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-best-friends-day/"}, titles: {"en": "National Best Friends Day"}, first: {era: 1, y: 1935}},
 
         
         
