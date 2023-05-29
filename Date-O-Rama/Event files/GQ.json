@@ -8,5 +8,6 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 12}, first: {era: 1, y: 1968}, urls: {"en": "https://nationaltoday.com/equatorial-guinea-independence-day/"}},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/presidents-day-in-equatorial-guinea/"}, titles: {"en": "President’s Day"}, inherits: "Presidents’ Day"},
   ]
 }

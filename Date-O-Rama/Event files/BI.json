@@ -10,7 +10,7 @@
         {type: "1D", start: {mon: 2, d: 5}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/unity-day-burundi/"}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 10, d: 13}, titles: {"en": "Prince Louis Rwagasore Day"}, urls: {"en": "https://nationaltoday.com/prince-louis-rwagasore-day/"}, first: {era: 1, y: 1961}},
-        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "President Ndadaye’s Day"}, urls: {"en": "https://nationaltoday.com/president-ndadayes-day/"}, first: {era: 1, y: 1993}},
-        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, titles: {"en": "President Ntaryamira Day"}},
+        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "President Ndadaye’s Day"}, urls: {"en": "https://nationaltoday.com/president-ndadayes-day/"}, first: {era: 1, y: 1993}, inherits: "Presidents’ Day"},
+        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, titles: {"en": "President Ntaryamira Day"}, inherits: "Presidents’ Day"},
     ]
 }

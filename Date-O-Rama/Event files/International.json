@@ -2242,5 +2242,9 @@
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-hug-cat-day/"}, titles: {"en": "National Hug Your Cat Day"}, emoji: "😺"},
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/shopping-cart-day/"}, titles: {"en": "Shopping Cart Day"}, emoji: "🛒"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-hug-your-cat-month/"}, titles: {"en": "National Hug Your Cat Month"}, emoji: "😺"},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/hot-air-balloon-day/"}, titles: {"en": "Hot Air Balloon Day"}},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-gingerbread-day/"}, titles: {"en": "National Gingerbread Day"}},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-veggie-burger-day/"}, titles: {"en": "National Veggie Burger Day"}},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/sausage-roll-day/"}, titles: {"en": "Sausage Roll Day"}, first: {era: 1, y: 2015}},
     ]
 }

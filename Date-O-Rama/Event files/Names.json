@@ -197,6 +197,8 @@
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-bubba-day/"}, titles: {"en": "National Bubba Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-janice-day/"}, titles: {"en": "National Janice Day"}},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-carl-day/"}, titles: {"en": "National Carl Day"}},
-
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-janet-day/"}, titles: {"en": "National Janet Day"}},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-jenny-day/"}, titles: {"en": "National Jenny Day"}},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-joyce-day/"}, titles: {"en": "National Joyce Day"}},
     ]
 }
