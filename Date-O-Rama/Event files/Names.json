@@ -216,6 +216,7 @@
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-esther-day/"}, titles: {"en": "National Esther Day"}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-frances-day/"}, titles: {"en": "National Frances Day"}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-jane-day/"}, titles: {"en": "National Jane Day"}},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-marina-day/"}, titles: {"en": "National Marina Day"}},
 
     ]
 }

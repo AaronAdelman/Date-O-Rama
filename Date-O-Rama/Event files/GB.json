@@ -118,5 +118,10 @@
         {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/trooping-the-colour/"}, titles: {"en": "Trooping the Colour"}, first: {era: 1, y: 1748}, emoji: "💂‍♂️"},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/oxfam-water-week/"}, titles: {"en": "Oxfam Water Week"}, emoji: "💦"},
         {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-school-grounds-week/"}, titles: {"en": "National School Grounds Week"}},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/beer-day-britain/"}, titles: {"en": "Beer Day Britain"}, notes: {"en": "National Beer Day"}, emoji: "🍺", first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 1, d: 31}, inherits: "National Bug Busting Day"},
+        {type: "1D", start: {mon: 6, d: 15}, inherits: "National Bug Busting Day"},
+        {type: "1D", start: {mon: 10, d: 31}, inherits: "National Bug Busting Day"},
+
     ]
 }

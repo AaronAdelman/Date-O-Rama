@@ -2310,5 +2310,14 @@
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/monkey-around-day/"}, titles: {"en": "Monkey Around Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/national-pop-goes-weasel-day/"}, titles: {"en": "National Pop Goes The Weasel Day"}},
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/national-strawberry-shortcake-day/"}, titles: {"en": "National Strawberry Shortcake Day"}, emoji: "🍰", first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/global-wind-day/"}, titles: {"en": "Global Wind Day"}, emoji: "💨"},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/magna-carta-day/"}, titles: {"en": "Magna Carta Day"}, first: {era: 1, y: 1215}, emoji: "📜"},
+        {type: "1D", start: {mon: 6, d: 12, thruD: 18, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-career-nurse-assistants-day/"}, titles: {"en": "National Career Nurse Assistants Day"}, first: {era: 1, y: 1977}, emoji: "👨‍⚕️👩‍⚕️"},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-megalodon-day/"}, titles: {"en": "National Megalodon Day"}, emoji: "🦈"},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-prune-day/"}, titles: {"en": "National Prune Day"}},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-smile-power-day/"}, titles: {"en": "National Smile Power Day"}, emoji: "😀", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/nature-photography-day/"}, titles: {"en": "Nature Photography Day"}, first: {era: 1, y: 2006}, emoji: "🌲🌳🌴"},
+        {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/sneak-a-kiss/"}, titles: {"en": "Sneak A Kiss Day"}},
+        {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-tapas-day/"}, titles: {"en": "World Tapas Day"}, first: {era: 1, y: 2010}},
     ]
 }
