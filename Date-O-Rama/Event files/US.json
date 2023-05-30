@@ -64,7 +64,6 @@
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "Law Day"}, first: {era: 1, y: 1958}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://en.wikipedia.org/wiki/Law_Day_(United_States)"}},
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "School Bus Drivers Day"}, first: {era: 1, y: 2009}, emoji: "🚌", urls: {"en": "https://www.daysoftheyear.com/days/school-bus-drivers-day/"}},
         {type: "1D", start: {d: 14, mon: 6}, inherits: "Flag Day", urls: {"en": "https://en.wikipedia.org/wiki/Flag_Day_(United_States)"}, first: {era: 1, y: 1916}},
-        {type: "nD", start: {mon: 6, d: 12}, "end": {mon: 6, d: 18}, titles: {"en": "National Flag Week"}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, first: {era: 1, y: 1966}},
         {inherits: "Veterans Day", type: "1D", start: {d: 11, mon: 11}, urls: {"en": "https://nationaltoday.com/veterans-day/"}},
         {type: "1D", start: {mon: 4, wkd: [6], wkdRecurrence: -1}, inherits: "Arbor Day", first: {era: 1, y: 1872}},
         {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: -1}, titles: {"en": "National Poem in Your Pocket Day"}, first: {era: 1, y: 2002}, emoji: "❤️", urls: {"en": "https://nationaldaycalendar.com/national-poem-in-your-pocket-day-last-thursday-in-april/"}},
@@ -627,6 +626,7 @@
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-krewe-of-tucks-day/"}, titles: {"en": "National Krewe of Tucks Day"}},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-cancer-thriver-day/"}, titles: {"en": "National Cancer Thriver Day"}},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, titles: {"en": "National Flag Week"}, first: {era: 1, y: 1966}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-loving-day/"}, titles: {"en": "National Loving Day"}, first: {era: 1, y: 2004}, emoji: "❤️"},
 
         
         

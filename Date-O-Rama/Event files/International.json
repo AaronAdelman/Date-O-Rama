@@ -2287,5 +2287,13 @@
         {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/say-hi-day/"}, titles: {"en": "Say Hi Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/yarn-bombing-day/"}, titles: {"en": "Yarn Bombing Day"}, emoji: "🧶", first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/scleroderma-awareness-week/"}, titles: {"en": "Scleroderma Awareness Week"}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/eat-flexitarian-day/"}, titles: {"en": "Eat Flexitarian Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/international-falafel-day/"}, titles: {"en": "International Falafel Day"}, emoji: "🧆", first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-button-battery-awareness-day/"}, titles: {"en": "National Button Battery Awareness Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-jerky-day/"}, titles: {"en": "National Jerky Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-peanut-butter-cookie-day/"}, titles: {"en": "National Peanut Butter Cookie Day"}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-red-rose-day/"}, titles: {"en": "National Red Rose Day"}, emoji: "🌹"},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/raggedy-ann-and-andy-day/"}, titles: {"en": "Raggedy Ann and Andy Day"}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/superman-day/"}, titles: {"en": "Superman Day"}},
     ]
 }

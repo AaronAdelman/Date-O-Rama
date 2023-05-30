@@ -14,5 +14,6 @@
         {type: "1D", start: {mon: 8, d: 7}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Boquerón Battle Victory Day"}, urls: {"en": "https://nationaltoday.com/boqueron-battle-victory-day/"}, first: {era: 1, y: 1932}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/virgin-of-caacupe-day/"}, titles: {"en": "Virgin of Caacupé Day"}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/chaco-armistice-day/"}, titles: {"en": "Chaco Armistice Day", "es": "Día de la Paz del Chaco"}, notes: {"en": "Chaco Peace Day"}, first: {era: 1, y: 1935}},
     ]
 }

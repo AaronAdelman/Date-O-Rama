@@ -212,6 +212,8 @@
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-debra-day/"}, titles: {"en": "National Debra Day"}},
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-isabel-day/"}, titles: {"en": "National Isabel Day"}},
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-shawn-day/"}, titles: {"en": "National Shawn Day"}},
-        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-olivia-day/"}, titles: {"en": "National Olivia Day"}},
+        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-olivia-day/"}, titles: {"en": "National Olivia Day"}},        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-dane-day/"}, titles: {"en": "National Dane Day"}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-esther-day/"}, titles: {"en": "National Esther Day"}},
+
     ]
 }
