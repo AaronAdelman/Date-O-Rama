@@ -197,6 +197,7 @@
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/ambedkar-jayanti/"}, titles: {"en": "Ambedkar Jayanti"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/national-technology-day/"}, titles: {"en": "National Technology Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/yma-day/"}, titles: {"en": "YMA Day"}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, titles: {"en": "Martyrdom of Guru Arjan Dev Sahib"}},
 
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/pahili-day/"}, titles: {"en": "Pahili Raja"}, notes: {"en": "Raja Parba (day 1)\nPahili Day"}},
 

@@ -2319,5 +2319,12 @@
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/nature-photography-day/"}, titles: {"en": "Nature Photography Day"}, first: {era: 1, y: 2006}, emoji: "🌲🌳🌴"},
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/sneak-a-kiss/"}, titles: {"en": "Sneak A Kiss Day"}},
         {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-tapas-day/"}, titles: {"en": "World Tapas Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/arborist-appreciation-day/"}, titles: {"en": "Arborist Appreciation Day"}, emoji: "🌴🌳🌲"},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/bloomsday/"}, titles: {"en": "Bloomsday"}, first: {era: 1, y: 1924}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/fresh-veggies-day/"}, titles: {"en": "Fresh Veggies Day"}, emoji: "🥦🥬🧄"},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/international-waterfall-day/"}, titles: {"en": "International Waterfall Day"}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/national-fudge-day/"}, titles: {"en": "National Fudge Day"}},
+        {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-take-back-lunch-break-day/"}, titles: {"en": "National Take Back the Lunch Break Day"}, emoji: "🥪", first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/world-sea-turtle-day/"}, titles: {"en": "World Sea Turtle Day"}},
     ]
 }

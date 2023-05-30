@@ -217,6 +217,9 @@
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-frances-day/"}, titles: {"en": "National Frances Day"}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-jane-day/"}, titles: {"en": "National Jane Day"}},
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-marina-day/"}, titles: {"en": "National Marina Day"}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/national-casey-day/"}, titles: {"en": "National Casey Day"}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/national-mohammad-day/"}, titles: {"en": "National Mohammad Day"}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/national-richard-day/"}, titles: {"en": "National Richard Day"}},
 
     ]
 }
