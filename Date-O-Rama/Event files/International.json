@@ -2282,5 +2282,10 @@
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-rose-day/"}, titles: {"en": "National Rosé Day"}, emoji: "🍷"},
         {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/worldwide-knit-in-public-day/"}, titles: {"en": "Worldwide Knit in Public Day"}, first: {era: 1, y: 2005}, emoji: "🧶"},
         {type: "nD", start: {mon: 6, d: 10}, end: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/superman-week/"}, titles: {"en": "Superman Week"}},
+        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-corn-cob-day/"}, titles: {"en": "National Corn on the Cob Day"}, emoji: "🌽"},
+        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-german-chocolate-cake-day/"}, titles: {"en": "National German Chocolate Cake Day"}, emoji: "🍰"},
+        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/say-hi-day/"}, titles: {"en": "Say Hi Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/yarn-bombing-day/"}, titles: {"en": "Yarn Bombing Day"}, emoji: "🧶", first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/scleroderma-awareness-week/"}, titles: {"en": "Scleroderma Awareness Week"}},
     ]
 }

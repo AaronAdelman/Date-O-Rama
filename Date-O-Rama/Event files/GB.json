@@ -116,5 +116,6 @@
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/thank-you-day/"}, titles: {"en": "Thank You Day"}, first: {era: 1, y: 2021}},
         {type: "nD", start: {mon: 6, d: 7}, end: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/british-heart-week/"}, titles: {"en": "British Heart Week"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 6, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/trooping-the-colour/"}, titles: {"en": "Trooping the Colour"}, first: {era: 1, y: 1748}, emoji: "💂‍♂️"},
+        {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/oxfam-water-week/"}, titles: {"en": "Oxfam Water Week"}, emoji: "💦"},
     ]
 }
