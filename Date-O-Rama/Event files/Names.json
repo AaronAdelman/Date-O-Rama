@@ -205,6 +205,9 @@
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-benjamin-day/"}, titles: {"en": "National Benjamin Day"}},
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-elias-day/"}, titles: {"en": "National Elias Day"}},
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-karen-day/"}, titles: {"en": "National Karen Day"}},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-earl-day/"}, titles: {"en": "National Earl Day"}},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-helen-day/"}, titles: {"en": "National Helen Day"}},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-mitchell-day/"}, titles: {"en": "National Mitchell Day"}},
 
     ]
 }

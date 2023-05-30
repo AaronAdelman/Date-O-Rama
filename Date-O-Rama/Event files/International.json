@@ -2266,5 +2266,10 @@
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-name-your-poison-day/"}, titles: {"en": "National Name Your Poison Day"}},
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-upsy-daisy-day/"}, titles: {"en": "National Upsy Daisy Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/world-brain-tumor-day/"}, titles: {"en": "World Brain Tumor Day"}, first: {era: 1, y: 2003}, emoji: "🧠"},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/international-dark-n-stormy-day/"}, titles: {"en": "International Dark ’n Stormy® Day"}, emoji: "🥃"},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-donald-duck-day/"}, titles: {"en": "National Donald Duck Day"}},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-meal-prep-day/"}, titles: {"en": "National Meal Prep Day"}, emoji: "🥘", first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-no-apologies-period-day/"}, titles: {"en": "National No Apologies Period Day"}},
+        {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-strawberry-rhubarb-pie-day/"}, titles: {"en": "National Strawberry Rhubarb Pie Day"}, emoji: "🥧"},
     ]
 }
