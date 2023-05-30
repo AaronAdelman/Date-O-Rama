@@ -627,6 +627,7 @@
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-cancer-thriver-day/"}, titles: {"en": "National Cancer Thriver Day"}},
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, titles: {"en": "National Flag Week"}, first: {era: 1, y: 1966}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-loving-day/"}, titles: {"en": "National Loving Day"}, first: {era: 1, y: 2004}, emoji: "❤️"},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-kitchen-klutzes-america-day/"}, titles: {"en": "National Kitchen Klutzes of America Day"}, emoji: "👨‍🍳👩‍🍳"},
 
         
         

@@ -2295,5 +2295,16 @@
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-red-rose-day/"}, titles: {"en": "National Red Rose Day"}, emoji: "🌹"},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/raggedy-ann-and-andy-day/"}, titles: {"en": "Raggedy Ann and Andy Day"}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/superman-day/"}, titles: {"en": "Superman Day"}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/international-axe-throwing-day/"}, titles: {"en": "International Axe Throwing Day"}, emoji: "🪓"},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/international-community-association-managers-day/"}, titles: {"en": "International Community Association Managers Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-call-your-doctor-day/"}, titles: {"en": "National Call Your Doctor Day"}, emoji: "👨‍⚕️👩‍⚕️", first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-chamoy-day/"}, titles: {"en": "National Chamoy Day"}},
+        {type: "1D", start: {mon: 6, wkd: [3], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-forklift-safety-day/"}, titles: {"en": "National Forklift Safety Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-productive-business-civility-day/"}, titles: {"en": "National Productive Business Civility Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-sewing-machine-day/"}, titles: {"en": "National Sewing Machine Day"}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-weed-your-garden-day/"}, titles: {"en": "National Weed Your Garden Day"}, emoji: "🪴"},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/random-acts-light-day/"}, titles: {"en": "Random Acts of Light Day"}},
+        {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/world-softball-day/"}, titles: {"en": "World Softball Day"}, emoji: "🥎", first: {era: 1, y: 2005}},
+        {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-clay-week/"}, titles: {"en": "National Clay Week"}, first: {era: 1, y: 1950}},
     ]
 }
