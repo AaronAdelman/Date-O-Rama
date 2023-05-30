@@ -208,6 +208,9 @@
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-earl-day/"}, titles: {"en": "National Earl Day"}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-helen-day/"}, titles: {"en": "National Helen Day"}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-mitchell-day/"}, titles: {"en": "National Mitchell Day"}},
-
+        {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-colt-day/"}, titles: {"en": "National Colt Day"}},
+        {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-debra-day/"}, titles: {"en": "National Debra Day"}},
+        {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-isabel-day/"}, titles: {"en": "National Isabel Day"}},
+        {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-shawn-day/"}, titles: {"en": "National Shawn Day"}},
     ]
 }
