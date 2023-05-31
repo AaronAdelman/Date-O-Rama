@@ -76,7 +76,7 @@
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/national-primrose-day/"}, titles: {"en": "National Primrose Day"}},
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/oatmeal-monday/"}, titles: {"en": "Oatmeal Monday"}, first: {era: 1, y: 1896}, emoji: "🥣"},
         {type: "1D", start: {mon: 2, d: 9}, urls: {"en": "https://nationaltoday.com/gwyl-mabsant/"}, titles: {"en": "Gwyl Mabsant"}},
-        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/welsh-language-music-day/"}, titles: {"en": "Welsh Language Music Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/welsh-language-music-day/"}, titles: {"en": "Welsh Language Music Day"}, first: {era: 1, y: 2013}, emoji: "🎼"},
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/global-scouse-day/"}, titles: {"en": "Global Scouse Day"}},
         {type: "1D", start: {mon: 3, d: 1}, inherits: "St. David’s Day"},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-bed-month-u-k/"}, titles: {"en": "National Bed Month"}},
