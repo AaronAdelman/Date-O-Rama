@@ -227,5 +227,7 @@
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-ralph-day/"}, titles: {"en": "National Ralph Day"}},
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-jesse-day/"}, titles: {"en": "National Jesse Day"}},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-jimmy-day/"}, titles: {"en": "National Jimmy Day"}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-kenneth-day/"}, titles: {"en": "National Kenneth Day"}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-le-day/"}, titles: {"en": "National Le Day"}},
     ]
 }

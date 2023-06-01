@@ -49,7 +49,7 @@
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {type: "1D", era: 1, y: 1919}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-       {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}},
+       {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
 
         {inherits: "Memorial Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, first: {era: 1, y: 1917}, "locations": {"en": "Newfoundland and Labrador"}},
         {type: "1D", start: {mon: 7, d: 9}, titles: {"en": "Nunavut Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/nunavut-day/"}},

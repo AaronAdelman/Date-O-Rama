@@ -2385,5 +2385,10 @@
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-porridge-day/"}, titles: {"en": "National Porridge Day"}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-take-dog-work-day/"}, titles: {"en": "National Take Your Dog to Work Day"}, emoji: "🐶", first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-typewriter-day/"}, titles: {"en": "National Typewriter Day"}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/international-fairy-day/"}, titles: {"en": "International Fairy Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-pralines-day/"}, titles: {"en": "National Pralines Day"}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-relationship-equity-day/"}, titles: {"en": "National Relationship Equity Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/swim-a-lap-day/"}, titles: {"en": "Swim a Lap Day"}},
+        {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/upcycling-day/"}, titles: {"en": "Upcycling Day"}, first: {era: 1, y: 2002}},
     ]
 }
