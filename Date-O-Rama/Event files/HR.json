@@ -14,6 +14,8 @@
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 9, d: 18}, inherits: "Navy Day", titles: {"en": "Day of the Croatian Navy"}},
+        {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/anti-fascist-struggle-day/"}, titles: {"en": "Anti-Fascist Struggle Day"}, first: {era: 1, y: 1991}},
+
     ]
 }
 
