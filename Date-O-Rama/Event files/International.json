@@ -2349,5 +2349,13 @@
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-take-your-cat-to-work-day/"}, titles: {"en": "National Take Your Cat to Work Day"}, emoji: "🐱"},
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-watch-day/"}, titles: {"en": "National Watch Day"}, emoji: "⌚️", first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/world-sauntering-day/"}, titles: {"en": "World Sauntering Day"}, first: {era: 1, y: 1970}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/international-nystagmus-day/"}, titles: {"en": "International Nystagmus Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-celluma-light-therapy-day/"}, titles: {"en": "National Celluma Light Therapy Day"}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-hike-with-geek-day/"}, titles: {"en": "National Hike with a Geek Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-ice-cream-soda-day/"}, titles: {"en": "National Ice Cream Soda Day"}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-vanilla-milkshake-day/"}, titles: {"en": "National Vanilla Milkshake Day"}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/ugliest-dog-day/"}, titles: {"en": "Ugliest Dog Day"}, emoji: "🐩"},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/world-productivity-day/"}, titles: {"en": "World Productivity Day"}},
+        {type: "nD", start: {mon: 6, d: 20}, end: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-mosquito-control-awareness-week/"}, titles: {"en": "National Mosquito Control Awareness Week"}, emoji: "🦟"},
     ]
 }

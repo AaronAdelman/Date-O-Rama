@@ -634,6 +634,8 @@
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-wanna-get-away-day/"}, titles: {"en": "National Wanna Get Away Day"}, first: {era: 1, y: 2021}},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/turkey-lovers-month/"}, titles: {"en": "Turkey Lovers Month"}, emoji: "🦃"},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/turkey-lovers-day/"}, titles: {"en": "Turkey Lovers’ Day"}, emoji: "🦃", first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-american-eagle-day/"}, titles: {"en": "National American Eagle Day"}, notes: {"en": "Bald Eagle Appreciation Day"}, emoji: "🦅"},
+        {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-kouign-amann-day/"}, titles: {"en": "National Kouign Amann Day"}, first: {era: 1, y: 2015}},
 
         
         
