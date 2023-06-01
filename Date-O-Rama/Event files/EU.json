@@ -13,7 +13,7 @@
         {titles: {"en": "European Day of Languages"}, type: "1D", start: {mon: 9, d: 26}, emoji: "🗣", first: {type: "1D", era: 1, y: 2001}},
         {titles: {"en": "European Day against Death Penalty"}, type: "1D", start: {mon: 10, d: 10}, first: {type: "1D", era: 1, y: 2007}},
         {titles: {"en": "European Day of Justice"}, type: "1D", start: {mon: 10, d: 25}, emoji: "⚖️", first: {type: "1D", era: 1, y: 2003}},
-        {titles: {"en": "European Day on the Protection of Children against Sexual Exploitation and Sexual Abuse"}, type: "1D", start: {mon: 11, d: 18}, first: {type: "1D", era: 1, y: 2015}},
+        {titles: {"en": "European Day on the Protection of Children against Sexual Exploitation and Sexual Abuse"}, type: "1D", start: {mon: 11, d: 18}, first: {type: "1D", era: 1, y: 2015}, emoji: "👦👧"},
         {type: "1D", start: {d: 6, mon: 3}, titles: {"en": "European Day of the Righteous"}},
         {inherits: "Black Ribbon Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2009}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}},
