@@ -225,5 +225,6 @@
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-jan-day/"}, titles: {"en": "National Jan Day"}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-mason-day/"}, titles: {"en": "National Mason Day"}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-ralph-day/"}, titles: {"en": "National Ralph Day"}},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-jesse-day/"}, titles: {"en": "National Jesse Day"}},
     ]
 }

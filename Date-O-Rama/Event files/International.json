@@ -295,7 +295,7 @@
         {type: "1D", start: {mon: 5, d: 20}, titles: {"en": "World Metrology Day"}, first: {era: 1, y: 1875}, emoji: "📏", urls: {"en": "https://www.worldmetrologyday.org/"}, notes: {"en": "Weights and Measures Day"}},
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 1958}},
         {type: "1D", start: {d: 28, mon: 5}, titles: {"en": "International Day of Action for Women’s Health"}, first: {era: 1, y: 1987}, emoji: "👩‍⚕️", urls: {"en": "http://www.may28.org/"}},
-        {type: "1D", start: {d: 18, mon: 6}, titles: {"en": "International Panic Day"}, emoji: "😱", urls: {"en": "https://www.daysoftheyear.com/days/international-panic-day/"}},
+        {type: "1D", start: {d: 18, mon: 6}, titles: {"en": "International Panic Day"}, emoji: "😱", urls: {"en": "https://www.daysoftheyear.com/days/international-panic-day/"}, notes: {"en": "National Panic Day"}},
         {type: "1D", start: {d: 19, mon: 6}, titles: {"en": "World Sickle Cell Day"}, urls: {"en": "https://www.sicklecelldisease.org/get-involved/events/awareness-month-and-world-sickle-day/"}},
         {type: "1D", start: {d: 21, mon: 6}, titles: {"en": "World Music Day"}, first: {era: 1, y: 1982}, emoji: "🎼", urls: {"en": "https://www.makemusicday.org/"}},
         {type: "1D", start: {d: 23, mon: 6}, titles: {"en": "International Olympic Day"}, first: {era: 1, y: 1948}, emoji: "🤺", notes: {"en": "Olympic Day"}, urls: {"en": "https://olympics.com/ioc/olympic-day"}},
@@ -2221,7 +2221,6 @@
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/rebuild-your-life-month/"}, titles: {"en": "Rebuild Your Life Month"}},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/skyscraper-month/"}, titles: {"en": "Skyscraper Month"}, emoji: "🏙️"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/social-petworking-month/"}, titles: {"en": "Social Petworking Month"}, emoji: "🐱"},
-        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/turkey-lovers-month/"}, titles: {"en": "Turkey Lovers Month"}, emoji: "🦃"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/world-infertility-awareness-month/"}, titles: {"en": "World Infertility Awareness Month"}},
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-love-dentist-day/"}, titles: {"en": "National I Love My Dentist Day"}, emoji: "🦷"},
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-rocky-road-day/"}, titles: {"en": "National Rocky Road Day"}, emoji: "🍨"},
@@ -2335,5 +2334,14 @@
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/nursing-assistants-day/"}, titles: {"en": "Nursing Assistants Day"}, emoji: "👨‍⚕️👩‍⚕️", first: {era: 1, y: 1977}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/world-tessellation-day/"}, titles: {"en": "World Tessellation Day"}},
         {type: "nD", start: {mon: 6, d: 17}, end: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-week-of-making/"}, titles: {"en": "National Week of Making"}},
+        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/boxkart-bash-day/"}, titles: {"en": "BoxKart Bash Day"}},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/clean-your-aquarium-day/"}, titles: {"en": "Clean Your Aquarium Day"}, emoji: "🐟🐠🐡"},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/international-picnic-day/"}, titles: {"en": "International Picnic Day"}, emoji: "🧺"},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/international-sushi-day/"}, titles: {"en": "International Sushi Day"}, emoji: "🍣", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-cherry-tart-day/"}, titles: {"en": "National Cherry Tart Day"}, emoji: "🍒"},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-go-fishing-day/"}, titles: {"en": "National Go Fishing Day"}, emoji: "🎣"},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-splurge-day/"}, titles: {"en": "National Splurge Day"}, first: {era: 1, y: 1994}, emoji: "🪙"},
+        {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/wear-blue-day/"}, titles: {"en": "Wear BLUE Day"}, emoji: "👕"},
+
     ]
 }

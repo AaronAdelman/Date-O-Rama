@@ -631,6 +631,9 @@
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/bunker-hill-day/"}, titles: {"en": "Bunker Hill Day"}, first: {era: 1, y: 1775}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-dump-pump-day/"}, titles: {"en": "National Dump the Pump Day"}, emoji: "⛽︎", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-stewarts-root-beer-day/"}, titles: {"en": "National Stewart’s Root Beer Day"}},
+        {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-wanna-get-away-day/"}, titles: {"en": "National Wanna Get Away Day"}, first: {era: 1, y: 2021}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/turkey-lovers-month/"}, titles: {"en": "Turkey Lovers Month"}, emoji: "🦃"},
+        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/turkey-lovers-day/"}, titles: {"en": "Turkey Lovers’ Day"}, emoji: "🦃", first: {era: 1, y: 2016}},
 
         
         
