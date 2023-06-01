@@ -2401,6 +2401,10 @@
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-barcode-day/"}, titles: {"en": "National Barcode Day"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-chocolate-pudding/"}, titles: {"en": "National Chocolate Pudding Day"}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/world-refrigeration-day/"}, titles: {"en": "World Refrigeration Day"}, first: {era: 1, y: 2019}},
-        
+        {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/decide-to-be-married-day/"}, titles: {"en": "Decide to be Married Day"}},
+        {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-bingo-day/"}, titles: {"en": "National Bingo Day"}},
+        {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-ice-cream-cake-day/"}, titles: {"en": "National Ice Cream Cake Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-orange-blossom-day/"}, titles: {"en": "National Orange Blossom Day"}},
+        {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-womens-fly-fishing-day/"}, titles: {"en": "National Women’s Fly Fishing Day"}, emoji: "🎣", first: {era: 1, y: 2020}},
     ]
 }
