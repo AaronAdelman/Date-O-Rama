@@ -2379,6 +2379,11 @@
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/pet-choking-prevention-day/"}, titles: {"en": "National Pet Choking Prevention Day"}, emoji: "🐇🐕🐈‍⬛", first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/positive-media-day/"}, titles: {"en": "Positive Media Day"}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/world-rainforest-day/"}, titles: {"en": "World Rainforest Day"}, emoji: "🌳🌴", first: {era: 1, y: 2017}},
-
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-hydration-day/"}, titles: {"en": "National Hydration Day"}, emoji: "🚰", first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-pecan-sandies-day/"}, titles: {"en": "National Pecan Sandies Day"}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-pink-day/"}, titles: {"en": "National Pink Day"}, emoji: "🩷"},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-porridge-day/"}, titles: {"en": "National Porridge Day"}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-take-dog-work-day/"}, titles: {"en": "National Take Your Dog to Work Day"}, emoji: "🐶", first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-typewriter-day/"}, titles: {"en": "National Typewriter Day"}},
     ]
 }

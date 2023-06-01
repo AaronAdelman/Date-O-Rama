@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     eventSpecifications: [
-        {inherits: "Grand Duke’s Official Birthday", type: "1D", start: {mon: 6, d: 23}},
+        {inherits: "Grand Duke’s Official Birthday", type: "1D", start: {mon: 6, d: 23}, notes: {"en": "National Day"}, urls: {"en": "https://nationaltoday.com/national-day-of-luxembourg/"}},
         {inherits: "International Francophonie Day", type: "1D", start: {d: 20, mon: 3}, first: {era: 1, y: 1988}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 1}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}},

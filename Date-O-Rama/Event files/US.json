@@ -636,6 +636,9 @@
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/turkey-lovers-day/"}, titles: {"en": "Turkey Lovers’ Day"}, emoji: "🦃", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-american-eagle-day/"}, titles: {"en": "National American Eagle Day"}, notes: {"en": "Bald Eagle Appreciation Day"}, emoji: "🦅"},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-kouign-amann-day/"}, titles: {"en": "National Kouign Amann Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-detroit-style-pizza-day/"}, titles: {"en": "National Detroit Style Pizza Day"}, emoji: "🍕", notes: {"en": "Buddy’s Pizza Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-family-owned-operated-businesses-day/"}, titles: {"en": "National Family Owned & Operated Businesses Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/pink-flamingo-day/"}, titles: {"en": "Pink Flamingo Day"}, emoji: "🦩", first: {era: 1, y: 2007}},
 
         
         
