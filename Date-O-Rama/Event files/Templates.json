@@ -103,6 +103,7 @@
         {template: "Candlelighting (18 minutes)", titles: {"en": "Candlelighting (18 minutes)", "he": "הדלקת נרות (18 דקות)"}, type: "pt", start: {wkd: [6], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}, inherits: "*Candle LTG*"},
         {template: "Candlelighting (8.5°)", titles: {"en": "Candlelighting (8.5°)", "he": "הדלקת נרות (8.5°)"}, type: "pt", start: {mon: 1, d: 2, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}, inherits: "*Candle LTG*"},
         {template: "Candlemas", titles: {"en": "Candlemas", "he": "קנדלמאס"}, notes: {"en": "Presentation of the Lord"}, type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/candlemas-day/"}, emoji: "🕯"},
+        {template: "Canoe Day", type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/canoe-day/"}, titles: {"en": "Canoe Day"}, emoji: "🛶"},
         {template: "Capricorn", titles: {"en": "Capricorn", "he": "גדי"}, type: "1M", start: {mon: 4}, emoji: "♑️", inherits: "*Astrology*"},
         {template: "Carnival", type: "1D", start: {"Easter": "Easter", "offsetD": -48}, titles: {"en": "Carnival", "ca": "Carnaval", "pt": "Carnaval"}, urls: {"en": "https://nationaltoday.com/carnival-monday/"}},
         {template: "Chakri Day", type: "1D", start: {mon: 4, d: 6, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/chakri-day/"}, titles: {"en": "Chakri Day"}},

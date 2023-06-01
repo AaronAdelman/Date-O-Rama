@@ -2398,6 +2398,9 @@
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-fatherless-childrens-day/"}, titles: {"en": "National Fatherless Children’s Day"}, inherits: "Children’s Day", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-strawberry-parfait-day/"}, titles: {"en": "National Strawberry Parfait Day"}, emoji: "🍓"},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/world-vitiligo-day/"}, titles: {"en": "World Vitiligo Day"}, first: {era: 1, y: 2011}, notes: {"en": "Vitiligo Awareness Day\nVitiligo Purple Fun Day"}, emoji: "🟣"},
-        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/windjammer-days/"}, titles: {"en": "Windjammer Days"}},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-barcode-day/"}, titles: {"en": "National Barcode Day"}, first: {era: 1, y: 1974}},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-chocolate-pudding/"}, titles: {"en": "National Chocolate Pudding Day"}},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/world-refrigeration-day/"}, titles: {"en": "World Refrigeration Day"}, first: {era: 1, y: 2019}},
+        
     ]
 }

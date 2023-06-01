@@ -229,5 +229,8 @@
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-jimmy-day/"}, titles: {"en": "National Jimmy Day"}},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-kenneth-day/"}, titles: {"en": "National Kenneth Day"}},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-le-day/"}, titles: {"en": "National Le Day"}},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-sarah-day/"}, titles: {"en": "National Sarah Day"}},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-zachary-day/"}, titles: {"en": "National Zachary Day"}},
+
     ]
 }

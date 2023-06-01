@@ -644,6 +644,8 @@
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-croatian-wine-day/"}, titles: {"en": "National Croatian Wine Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/please-take-my-children-to-work-day/"}, titles: {"en": "Please Take My Children to Work Day"}, first: {era: 1, y: 2008}},
         {type: "nD", start: {mon: 6, d: 25}, end: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/organic-beer-fest/"}, titles: {"en": "Organic Beer Fest"}, emoji: "🍺"},
+        {type: "1D", start: {mon: 6, d: 26}, inherits: "Canoe Day"},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-report-trade-agreement-act-fraud-day/"}, titles: {"en": "National Report Trade Agreement Act Fraud Day"}, first: {era: 1, y: 2018}},
 
         
         

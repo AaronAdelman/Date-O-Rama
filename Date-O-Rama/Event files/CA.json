@@ -78,5 +78,6 @@
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/canadian-immigrants-day/"}, titles: {"en": "Canadian Immigrants Day"}},
         {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/intergenerational-day/"}, titles: {"en": "Intergenerational Day"}, first: {era: 1, y: 2010}},
         {type: "nD", start: {mon: 6, d: 5}, end: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-commuter-challenge/"}, titles: {"en": "National Commuter Challenge"}, first: {era: 1, y: 1991}},
+        {type: "1D", start: {mon: 6, d: 26}, inherits: "Canoe Day"},
     ]
 }

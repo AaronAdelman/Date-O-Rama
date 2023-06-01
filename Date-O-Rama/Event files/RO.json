@@ -19,5 +19,6 @@
         {type: "1D", start: {mon: 2, d: 19}, urls: {"en": "https://nationaltoday.com/constantin-brancusi-day/"}, titles: {"en": "Constantin Brancusi Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/dragobete/"}, titles: {"en": "Dragobete"}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/martisor/"}, titles: {"en": "Mărțișor"}},
+        {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/flag-day-of-romania/"}, inherits: "Flag Day", first: {era: 1, y: 1998}},
    ]
 }
