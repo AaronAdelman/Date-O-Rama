@@ -12,6 +12,7 @@
         {type: "1D", titles: {"en": "Slovenians in Prekmurje Incorporated into the Mother Nation Day"}, start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/slovenians-in-prekmurje-incorporated-into-the-mother-nation-day/"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/preseren-day/"}, titles: {"en": "Prešeren Day"}, first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/day-of-uprising-against-occupation/"}, titles: {"en": "Day of Uprising Against Occupation"}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/statehood-day/"}, titles: {"en": "Statehood Day"}, first: {era: 1, y: 1991}},
 
   ]
 }

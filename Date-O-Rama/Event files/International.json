@@ -2390,5 +2390,14 @@
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-relationship-equity-day/"}, titles: {"en": "National Relationship Equity Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/swim-a-lap-day/"}, titles: {"en": "Swim a Lap Day"}},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/upcycling-day/"}, titles: {"en": "Upcycling Day"}, first: {era: 1, y: 2002}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/bourdain-day/"}, titles: {"en": "Bourdain Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/color-tv-day/"}, titles: {"en": "Color TV Day"}, emoji: "📺"},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/global-beatles-day/"}, titles: {"en": "Global Beatles Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/goats-cheese-day/"}, titles: {"en": "Goats Cheese Day"}, first: {era: 1, y: 1998}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-camp-counts-day/"}, titles: {"en": "National Camp Counts Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-fatherless-childrens-day/"}, titles: {"en": "National Fatherless Children’s Day"}, inherits: "Children’s Day", first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-strawberry-parfait-day/"}, titles: {"en": "National Strawberry Parfait Day"}, emoji: "🍓"},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/world-vitiligo-day/"}, titles: {"en": "World Vitiligo Day"}, first: {era: 1, y: 2011}, notes: {"en": "Vitiligo Awareness Day\nVitiligo Purple Fun Day"}, emoji: "🟣"},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/windjammer-days/"}, titles: {"en": "Windjammer Days"}},
     ]
 }

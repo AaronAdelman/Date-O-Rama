@@ -639,6 +639,11 @@
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-detroit-style-pizza-day/"}, titles: {"en": "National Detroit Style Pizza Day"}, emoji: "🍕", notes: {"en": "Buddy’s Pizza Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-family-owned-operated-businesses-day/"}, titles: {"en": "National Family Owned & Operated Businesses Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/pink-flamingo-day/"}, titles: {"en": "Pink Flamingo Day"}, emoji: "🦩", first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/log-cabin-day/"}, titles: {"en": "Log Cabin Day"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-catfish-day/"}, titles: {"en": "National Catfish Day"}, first: {era: 1, y: 1987}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-croatian-wine-day/"}, titles: {"en": "National Croatian Wine Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/please-take-my-children-to-work-day/"}, titles: {"en": "Please Take My Children to Work Day"}, first: {era: 1, y: 2008}},
+        {type: "nD", start: {mon: 6, d: 25}, end: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/organic-beer-fest/"}, titles: {"en": "Organic Beer Fest"}, emoji: "🍺"},
 
         
         
