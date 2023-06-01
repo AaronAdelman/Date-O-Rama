@@ -13,7 +13,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
-        {type: "1D", start: {mon: 6, d: 21}, titles: {"en": "Andean New Year", "es": "Año Nuevo Andino", "ay": "Willkakuti"}, urls: {"en": "https://en.wikipedia.org/wiki/Willkakuti"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 8, d: 2}, titles: {"en": "Agrarian Reform Day", "es": "Día de la Revolución Agraria, Productiva y Comunitaria"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 6}, first: {era: 1, y: 1825}, urls: {"en": "https://nationaltoday.com/bolivia-independence-day/"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 2}},
@@ -27,5 +27,6 @@
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 8, d: 7}},
         {type: "1D", start: {mon: 7, d: 23}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 10, d: 17}, titles: {"en": "Day of Dignity"}, urls: {"en": "https://nationaltoday.com/day-of-dignity-bolivia/"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/aymara-new-year/"}, titles: {"en": "Aymara New Year"}},
    ]
 }

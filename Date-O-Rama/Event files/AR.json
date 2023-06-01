@@ -39,6 +39,7 @@
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/action-day-for-tolerance-and-respect-between-people/"}, titles: {"en": "Action Day for Tolerance and Respect between People"}},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/commemoration-of-general-don-martin-miguel-de-guemes/"}, titles: {"en": "Commemoration of General Don Martín Miguel de Güemes"}, first: {era: 1, y: 1900}},
+        {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
 
   ]
 }

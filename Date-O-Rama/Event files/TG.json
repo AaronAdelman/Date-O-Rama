@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     eventSpecifications: [
-        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 6, d: 21}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/martyrs-day-in-togo/"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/togo-independence-day-togo/"}, first: {era: 1, y: 1960}},
     ]
 }

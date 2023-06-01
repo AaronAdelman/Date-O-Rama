@@ -2357,5 +2357,18 @@
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/ugliest-dog-day/"}, titles: {"en": "Ugliest Dog Day"}, emoji: "🐩"},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/world-productivity-day/"}, titles: {"en": "World Productivity Day"}},
         {type: "nD", start: {mon: 6, d: 20}, end: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-mosquito-control-awareness-week/"}, titles: {"en": "National Mosquito Control Awareness Week"}, emoji: "🦟"},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/go-skateboarding-day/"}, titles: {"en": "Go Skateboarding Day"}, first: {era: 1, y: 2004}, emoji: "🛹", notes: {"en": "Go Skate Day"}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-cookie-dough-day/"}, titles: {"en": "National Cookie Dough Day"}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-day-of-the-gong/"}, titles: {"en": "National Day of the Gong"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-daylight-appreciation-day/"}, titles: {"en": "National Daylight Appreciation Day"}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-dog-party-day/"}, titles: {"en": "National Dog Party Day"}, emoji: "🦮🐕‍🦺🐩", first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-peaches-n-cream-day/"}, titles: {"en": "National Peaches ‘N’ Cream Day"}, emoji: "🍑"},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-seashell-day/"}, titles: {"en": "National Seashell Day"}, emoji: "🐚", first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-selfie-day/"}, titles: {"en": "National Selfie Day"}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-smoothie-day/"}, titles: {"en": "National Smoothie Day"}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-yard-games-day/"}, titles: {"en": "National Yard Games Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/shades-for-migraine/"}, titles: {"en": "Shades for Migraine"}, emoji: "🕶️", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/world-hydrography-day/"}, titles: {"en": "World Hydrography Day"}, first: {era: 1, y: 2005}, emoji: "🚢"},
+        {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/world-motorcycle-day/"}, titles: {"en": "World Motorcycle Day"}, emoji: "🏍️"},
     ]
 }
