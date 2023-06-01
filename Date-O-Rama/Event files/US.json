@@ -628,6 +628,9 @@
         {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, titles: {"en": "National Flag Week"}, first: {era: 1, y: 1966}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-loving-day/"}, titles: {"en": "National Loving Day"}, first: {era: 1, y: 2004}, emoji: "❤️"},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-kitchen-klutzes-america-day/"}, titles: {"en": "National Kitchen Klutzes of America Day"}, emoji: "👨‍🍳👩‍🍳"},
+        {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/bunker-hill-day/"}, titles: {"en": "Bunker Hill Day"}, first: {era: 1, y: 1775}},
+        {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-dump-pump-day/"}, titles: {"en": "National Dump the Pump Day"}, emoji: "⛽︎", first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-stewarts-root-beer-day/"}, titles: {"en": "National Stewart’s Root Beer Day"}},
 
         
         
