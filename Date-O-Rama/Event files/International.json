@@ -2342,6 +2342,12 @@
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-go-fishing-day/"}, titles: {"en": "National Go Fishing Day"}, emoji: "🎣"},
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-splurge-day/"}, titles: {"en": "National Splurge Day"}, first: {era: 1, y: 1994}, emoji: "🪙"},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/wear-blue-day/"}, titles: {"en": "Wear BLUE Day"}, emoji: "👕"},
-
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/international-box-day/"}, titles: {"en": "International Box Day"}, emoji: "📦"},
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-freebsd-day/"}, titles: {"en": "National FreeBSD Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-garfield-cat-day/"}, titles: {"en": "National Garfield the Cat Day"}},
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-martini-day/"}, titles: {"en": "National Martini Day"}, emoji: "🍸🍸"},
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-take-your-cat-to-work-day/"}, titles: {"en": "National Take Your Cat to Work Day"}, emoji: "🐱"},
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-watch-day/"}, titles: {"en": "National Watch Day"}, emoji: "⌚️", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/world-sauntering-day/"}, titles: {"en": "World Sauntering Day"}, first: {era: 1, y: 1970}},
     ]
 }
