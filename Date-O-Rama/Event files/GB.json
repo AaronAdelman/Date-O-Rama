@@ -124,6 +124,7 @@
         {type: "1D", start: {mon: 10, d: 31}, inherits: "National Bug Busting Day"},
         {type: "nD", start: {mon: 6, d: 20}, end: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/refugee-week/"}, titles: {"en": "Refugee Week"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 6, d: 22, thruD: 28, wkd: [4]}, urls: {"en": "https://nationaltoday.com/reserves-day/"}, titles: {"en": "Reserves Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
 
     ]
 }

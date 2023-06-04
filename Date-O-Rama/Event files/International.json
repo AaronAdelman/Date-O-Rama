@@ -370,7 +370,7 @@
         {type: "1D", start: {d: 30, mon: 9}, titles: {"en": "International Blasphemy Rights Day"}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaltoday.com/international-blasphemy-rights-day/"}, notes: {"en": "Blasphemy Day\nInternational Blasphemy Day"}},
         {type: "1D", start: {mon: 10, wkdRecurrence: 1, wkd: [6]}, titles: {"en": "World Smile Day"}, first: {era: 1, y: 1999}, emoji: "😀", urls: {"en": "https://www.worldsmileday.com/index.php"}},
         {type: "1D", start: {d: 1, mon: 10}, titles: {"en": "World Postcard Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://worldpostcardday.com/"}},
-        {type: "1D", start: {d: 1, mon: 10}, titles: {"en": "International Coffee Day"}, first: {era: 1, y: 2015}, emoji: "☕️", urls: {"en": "https://www.internationalcoffeeday.org/"}},
+        {type: "1D", start: {d: 1, mon: 10}, titles: {"en": "International Coffee Day", "he": "יום הקפה הבין־לאומי"}, first: {era: 1, y: 2015}, emoji: "☕️", urls: {"en": "https://www.internationalcoffeeday.org/"}},
         {type: "1D", start: {d: 1, mon: 10}, titles: {"en": "World Vegetarian Day"}, first: {era: 1, y: 1977}, emoji: "🌶", urls: {"en": "https://www.daysoftheyear.com/days/vegetarian-day/"}},
         {type: "1D", start: {d: 2, mon: 10}, titles: {"en": "World Day for Farmed Animals"}, first: {era: 1, y: 1983}, emoji: "🐄", urls: {"en": "https://dayforanimals.com/"}},
         {type: "1D", start: {d: 4, mon: 10}, titles: {"en": "World Animal Day"}, first: {era: 1, y: 1929}, emoji: "🐳", urls: {"en": "https://nationaldaycalendar.com/world-animal-day-october-4/"}},

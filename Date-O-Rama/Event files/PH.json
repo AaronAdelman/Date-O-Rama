@@ -89,5 +89,6 @@
         {type: "nD", start: {mon: 6, d: 6}, end: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/linggo-ng-kalayaan/"}, titles: {"en": "Linggo ng Kalayaan"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/filipino-chinese-friendship-day/"}, titles: {"en": "Filipino-Chinese Friendship Day"}, emoji: "🇵🇭🇨🇳", first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/the-day-of-the-filipino-seafarer/"}, titles: {"en": "The Day of the Filipino Seafarer"}, emoji: "🚢", first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
     ]
 }

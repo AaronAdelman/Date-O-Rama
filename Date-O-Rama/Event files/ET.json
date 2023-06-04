@@ -11,5 +11,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/adwa-victory-day/"}, titles: {"en": "Adwa Victory Day"}, first: {era: 1, y: 1896}},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-day-of-ethiopia/"}, inherits: "National Day", notes: {"en": "Downfall of the Derg"}, first: {era: 1, y: 1991}},
+        {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
  ]
 }

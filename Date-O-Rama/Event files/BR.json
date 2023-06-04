@@ -25,5 +25,6 @@
         {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/republic-proclamation-day/"}, titles: {"en": "Republic Proclamation Day"}, first: {era: 1, y: 1889}},
         {inherits: "Carnival", type: "1D", start: {"Easter": "Easter", "offsetD": -47}, urls: {"en": "https://nationaltoday.com/brazilian-carnival/"}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/tiradentes-day-2/"}, titles: {"en": "Tiradentes’ Day"}, notes: {"en": "Tiradentes Day"}, first: {era: 1, y: 1889}},
+        {type: "1D", start: {mon: 5, d: 24}, inherits: "National Coffee Day"},
     ]
 }

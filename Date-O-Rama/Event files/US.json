@@ -649,6 +649,7 @@
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-hiv-testing-day/"}, titles: {"en": "National HIV Testing Day"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-onion-day/"}, titles: {"en": "National Onion Day"}, emoji: "🧅", first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-ptsd-awareness-day/"}, titles: {"en": "National PTSD Awareness Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day", urls: {"en": "https://nationaldaycalendar.com/national-coffee-day-september-29/"}, first: {era: 1, y: 2005}},
 
         
         

@@ -24,5 +24,6 @@
         {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/day-of-goodwill/"}, titles: {"en": "Day of Goodwill"}, first: {era: 1, y: 1994}},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/south-africa-human-rights-day/"}, inherits: "Human Rights Day"},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/south-african-liberation-day/"}, inherits: "Liberation Day", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
    ]
 }

@@ -25,5 +25,6 @@
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/honen-matsuri/"}, titles: {"en": "Honen Matsuri"}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/constitution-memorial-day-japan/"}, titles: {"en": "Constitution Memorial Day"}, first: {era: 1, y: 1947}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/greenery-day-midori-no-hi/"}, titles: {"en": "Greenery Day (Midori no Hi)"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
     ]
 }

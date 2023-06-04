@@ -36,5 +36,6 @@
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/race-relations-day/"}, titles: {"en": "Race Relations Day"}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/otago-anniversary-day/"}, titles: {"en": "Otago Anniversary Day"}, first: {era: 1, y: 1981}},
         {type: "1D", start: {"Easter": "Easter", "offsetD": 2}, urls: {"en": "https://nationaltoday.com/southland-anniversary-day/"}, titles: {"en": "Southland Anniversary Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         ]
     }

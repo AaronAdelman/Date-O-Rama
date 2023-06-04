@@ -16,5 +16,6 @@
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/armed-forces-day-in-honduras/"}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/our-lady-of-suyapa/"}, titles: {"en": "Our Lady of Suyapa"}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/americas-day/"}, titles: {"en": "Americas Day"}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
     ]
 }

@@ -20,6 +20,6 @@
        {type: "1D", start: {"Easter": "Easter", "offsetD": 64}, urls: {"en": "https://nationaltoday.com/columbia-corpus-christi-holiday/"}, titles: {"en": "Corpus Christi Holiday"}},
        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
        {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
-
+       {type: "1D", start: {mon: 6, d: 27}, inherits: "National Coffee Day"},
   ]
 }
