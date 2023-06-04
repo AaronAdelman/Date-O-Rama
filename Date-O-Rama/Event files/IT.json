@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.48, "blue": 0.20},
     eventSpecifications: [
         {inherits: "Liberation Day", type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/national-liberation-day-italy/"}},
-        {inherits: "Republic Day", type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/republic-day-italy/"}, first: {era: 1, y: 1999}},
+        {inherits: "Republic Day", type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/republic-day-italy/", "he": "https://www.daysoftheyear.co.il/2018/06/2.html"}, first: {era: 1, y: 1999}},
         {inherits: "Columbus Day", type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1971}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 3, d: 19}},

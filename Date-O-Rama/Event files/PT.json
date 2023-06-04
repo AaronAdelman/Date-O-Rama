@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.02, "green": 0.42, "blue": 0.22},
     eventSpecifications: [
-        {titles: {"en": "Portugal Day"}, type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/portugal-day/"}},
+        {titles: {"en": "Portugal Day", "he": "יום פורטוגל"}, type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/portugal-day/", "he": "https://www.daysoftheyear.co.il/2019/06/portugal-day.html"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 3, d: 19}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}},
         {titles: {"en": "Madeira Day"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/madeira-day/"}, first: {era: 1, y: 1976}},

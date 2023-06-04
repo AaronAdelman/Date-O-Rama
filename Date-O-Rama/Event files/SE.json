@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.29, "blue": 0.53},
     eventSpecifications: [
-        {inherits: "National Day", type: "1D", start: {mon: 6, d: 6}, first: {era: 1, y: 1523}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Sweden"}},
+        {inherits: "National Day", type: "1D", start: {mon: 6, d: 6}, first: {era: 1, y: 1523}, urls: {"en": "https://en.wikipedia.org/wiki/National_Day_of_Sweden", "he": "https://www.daysoftheyear.co.il/2016/06/6.html"}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {inherits: "Whit Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": 48}},
