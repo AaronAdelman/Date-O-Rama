@@ -232,6 +232,8 @@
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-sarah-day/"}, titles: {"en": "National Sarah Day"}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-zachary-day/"}, titles: {"en": "National Zachary Day"}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-jim-day/"}, titles: {"en": "National Jim Day"}},
+        {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-grant-day/"}, titles: {"en": "National Grant Day"}},
+        {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-lauren-day-2/"}, titles: {"en": "National Lauren Day"}},
 
     ]
 }

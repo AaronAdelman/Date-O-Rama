@@ -2406,5 +2406,10 @@
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-ice-cream-cake-day/"}, titles: {"en": "National Ice Cream Cake Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-orange-blossom-day/"}, titles: {"en": "National Orange Blossom Day"}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-womens-fly-fishing-day/"}, titles: {"en": "National Women’s Fly Fishing Day"}, emoji: "🎣", first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-climate-smart-skin-awareness-day/"}, titles: {"en": "National Climate-Smart Skin Awareness Day"}},
+        {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-insurance-awareness-day/"}, titles: {"en": "National Insurance Awareness Day"}},
+        {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-parchment-day/"}, titles: {"en": "National Parchment Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-tapioca-day/"}, titles: {"en": "National Tapioca Day"}},
+        {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/the-national-day-of-joy/"}, titles: {"en": "The National Day of Joy"}, first: {era: 1, y: 2019}},
     ]
 }
