@@ -234,6 +234,9 @@
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-jim-day/"}, titles: {"en": "National Jim Day"}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-grant-day/"}, titles: {"en": "National Grant Day"}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-lauren-day-2/"}, titles: {"en": "National Lauren Day"}},
-
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-fred-day/"}, titles: {"en": "National Fred Day"}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-gordon-day/"}, titles: {"en": "National Gordon Day"}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-guy-day/"}, titles: {"en": "National Guy Day"}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-nash-day/"}, titles: {"en": "National Nash Day"}},
     ]
 }

@@ -16,6 +16,7 @@
         {type: "1D", start: {mon: 9, d: 19}, inherits: "Army Day", urls: {"en": "https://nationaltoday.com/day-of-the-glories-of-the-army/"}},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/feast-of-the-immaculate-conception-chile/"}},
         {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Feast of Saints Peter and Paul"},
 
   ]
 }

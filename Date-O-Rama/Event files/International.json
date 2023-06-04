@@ -2410,6 +2410,15 @@
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-insurance-awareness-day/"}, titles: {"en": "National Insurance Awareness Day"}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-parchment-day/"}, titles: {"en": "National Parchment Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-tapioca-day/"}, titles: {"en": "National Tapioca Day"}},
-        {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/the-national-day-of-joy/"}, titles: {"en": "The National Day of Joy"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/the-national-day-of-joy/"}, titles: {"en": "The National Day of Joy"}, first: {era: 1, y: 2019}, emoji: "😃"},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/fishermens-day/"}, titles: {"en": "Fishermen’s Day"}, notes: {"en": "International Fisherman Day"}, first: {era: 1, y: 1968}, emoji: "🎣"},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/hug-holiday/"}, titles: {"en": "Hug Holiday"}, emoji: "🫂"},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/international-mud-day/"}, titles: {"en": "International Mud Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-almond-buttercrunch-day/"}, titles: {"en": "National Almond Buttercrunch Day"}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-camera-day/"}, titles: {"en": "National Camera Day"}, emoji: "📷"},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-dieselbilly-day/"}, titles: {"en": "National Dieselbilly Day"}},
+        {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-handshake-day/"}, titles: {"en": "National Handshake Day"}, emoji: "🤝", first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-waffle-iron-day/"}, titles: {"en": "National Waffle Iron Day"}, emoji: "🧇"},
+        {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-work-home-day/"}, titles: {"en": "National Work From Home Day"}, emoji: "🏠"},
     ]
 }
