@@ -5,10 +5,27 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.67, "green": 0.79, "blue": 0.91},
     eventSpecifications: [
+        {inherits: "New Year’s Day", type: "nD", start: {mon: 1, d: 1}, "end": {mon: 1, d: 2}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {type: "1D", start: {mon: 7, d: 1}, titles: {"en": "Sir Seretse Khama Day"}},
+        {inherits: "Presidents’ Day", type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/presidents-day-in-botswana/"}, first: {era: 1, y: 2006}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 30}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/botswana-day/"}, titles: {"en": "Botswana Day"}},
+        {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "Botswana Day Holiday"}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        
+        {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {type: "1D", era: 1, y: 496}},
+        {inherits: "Ash Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -46}},
+        {inherits: "Palm Sunday", type: "1D", start: {"Easter": "Easter", "offsetD": -7}},
+        {inherits: "Halloween", type: "1D", start: {mon: 10, d: 31}},
+        {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Presidents’ Day", type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/presidents-day-in-botswana/"}, first: {era: 1, y: 2006}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 30}, first: {era: 1, y: 1966}, urls: {"en": "https://nationaltoday.com/botswana-day/"}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2011}},
     ]
 }
