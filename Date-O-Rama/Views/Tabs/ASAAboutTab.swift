@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import MarkdownUI
 
 struct ASAAboutTab: View {
     var body: some View {
@@ -57,7 +58,27 @@ struct ASAAboutNavigationLink:  View {
     var text:  String
 
     var body:  some View {
-        NavigationLink(destination:                     ASALocalPDFView(fileName: fileName)) {
+        var markdown: String = {
+            if let filepath = Bundle.main.path(forResource: fileName, ofType: "md") {
+                do {
+                    let result = try String(contentsOfFile: filepath)
+                    debugPrint(#file, #function, result)
+                    return result
+                } catch {
+                    return "!!!"
+                }
+            } else {
+                return "???"
+            }
+        }()
+        
+        
+        NavigationLink(destination:
+                        ScrollView {
+            Markdown(markdown)
+                .padding()
+        }
+        ) {
             Text(NSLocalizedString(text, comment: ""))
                 .font(.headline)
         }
