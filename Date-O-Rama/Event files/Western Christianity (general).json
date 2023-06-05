@@ -14,7 +14,7 @@
         {titles: {"en": "Baptism of the Lord"}, type: "1D", start: {mon: 1, d: 7, "thruD": 13, wkd: [1]}, urls: {"en": "https://nationaltoday.com/the-baptism-of-the-lord/"}},
         {titles: {"en": "Feast of St. Hilary of Poitiers"}, type: "1D", start: {mon: 1, d: 13}},
         {titles: {"en": "Feast of St. Anthony of Egypt"}, type: "1D", start: {mon: 1, d: 17}},
-        {titles: {"en": "Feast of St. Fabian or St. Sebastian"}, type: "1D", start: {mon: 1, d: 20}},
+        {inherits: "Feast of St. Fabian or St. Sebastian", type: "1D", start: {mon: 1, d: 20}},
         {titles: {"en": "Feast of St. Agnes"}, type: "1D", start: {mon: 1, d: 21}},
         {titles: {"en": "Feast of St. Vincent"}, type: "1D", start: {mon: 1, d: 22}},
         {titles: {"en": "Feast of St. Francis de Sales"}, type: "1D", start: {mon: 1, d: 24}},

@@ -45,8 +45,8 @@
 		A507794428919E8B00A98D01 /* ASALocationTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507794128915A0700A98D01 /* ASALocationTypeCell.swift */; };
 		A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
 		A507B0B0270ECCCF00BDAE06 /* Mormonism.json in Resources */ = {isa = PBXBuildFile; fileRef = A507B0AE270ECCCF00BDAE06 /* Mormonism.json */; };
-		A508C7F5283E244E00D96947 /* Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* Templates.json */; };
-		A508C7F6283E244E00D96947 /* Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* Templates.json */; };
+		A508C7F5283E244E00D96947 /* *Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* *Templates.json */; };
+		A508C7F6283E244E00D96947 /* *Templates.json in Resources */ = {isa = PBXBuildFile; fileRef = A508C7F4283E244E00D96947 /* *Templates.json */; };
 		A50C6675263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50C6676263ED6250083725C /* EKParticipantStatusExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */; };
 		A50CD622255414EC00B781EC /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50CD621255414EC00B781EC /* ColorExtensions.swift */; };
@@ -1122,7 +1122,7 @@
 		A506E3DE252C93DF009345A0 /* ASAProcessedClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAProcessedClock.swift; sourceTree = "<group>"; };
 		A507794128915A0700A98D01 /* ASALocationTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationTypeCell.swift; sourceTree = "<group>"; };
 		A507B0AE270ECCCF00BDAE06 /* Mormonism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mormonism.json; sourceTree = "<group>"; };
-		A508C7F4283E244E00D96947 /* Templates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Templates.json; sourceTree = "<group>"; };
+		A508C7F4283E244E00D96947 /* *Templates.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "*Templates.json"; sourceTree = "<group>"; };
 		A50930A225262A3B007F864C /* WatchDate-O-Rama Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchDate-O-Rama Extension.entitlements"; sourceTree = "<group>"; };
 		A50C6674263ED6250083725C /* EKParticipantStatusExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKParticipantStatusExtensions.swift; sourceTree = "<group>"; };
 		A50CD621255414EC00B781EC /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
@@ -1708,6 +1708,7 @@
 		A533798224B2425900340C0B /* Event files */ = {
 			isa = PBXGroup;
 			children = (
+				A508C7F4283E244E00D96947 /* *Templates.json */,
 				A581B88D284E5CB800407D68 /* AD.json */,
 				A5EFFFD8285B855E00F2205F /* AE.json */,
 				A51128062887381000476792 /* AF (Persian).json */,
@@ -2006,7 +2007,6 @@
 				A5171A612899A83B00CCA91A /* Taoism (Chinese).json */,
 				A5FB22B228638E9200B5042B /* TC.json */,
 				A5EFFF38285B5C5B00F2205F /* TD.json */,
-				A508C7F4283E244E00D96947 /* Templates.json */,
 				A5FB22B728638EE000B5042B /* TF.json */,
 				A501C7FF285F7F4200211E33 /* TG.json */,
 				A50DA50B28686271008D54AE /* TH (Chinese).json */,
@@ -2758,7 +2758,7 @@
 				A5EFFFF7285B89B300F2205F /* PG.json in Resources */,
 				A581B88F284E5CB800407D68 /* AD.json in Resources */,
 				A5EFFFD0285B845700F2205F /* SV.json in Resources */,
-				A508C7F6283E244E00D96947 /* Templates.json in Resources */,
+				A508C7F6283E244E00D96947 /* *Templates.json in Resources */,
 				A5E496152862505C001BF40C /* IR.json in Resources */,
 				A581B88C284E5B9C00407D68 /* SM.json in Resources */,
 				A5EFFF65285B61E500F2205F /* IM.json in Resources */,
@@ -3009,7 +3009,7 @@
 				A5D850AE280C95F6005247BD /* ZA.json in Resources */,
 				A5E4960628624F9A001BF40C /* GU.json in Resources */,
 				A5E495FB28624EFE001BF40C /* GM.json in Resources */,
-				A508C7F5283E244E00D96947 /* Templates.json in Resources */,
+				A508C7F5283E244E00D96947 /* *Templates.json in Resources */,
 				A507B0AF270ECCCF00BDAE06 /* Mormonism.json in Resources */,
 				A5EFFFFF285B8DF900F2205F /* BH (Muslim).json in Resources */,
 				A5E4966328625585001BF40C /* PN.json in Resources */,

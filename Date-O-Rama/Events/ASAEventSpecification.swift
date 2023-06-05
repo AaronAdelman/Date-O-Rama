@@ -183,7 +183,7 @@ extension ASAEventSpecification {
     }
     
     static var templateEventsFile: ASAEventsFile? = {
-        let (file, error) = ASAEventsFile.builtIn(fileName: "Templates")
+        let (file, error) = ASAEventsFile.builtIn(fileName: "*Templates")
         if error != nil {
             debugPrint(#file, #function, error as Any)
         }
