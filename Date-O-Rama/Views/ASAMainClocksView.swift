@@ -244,19 +244,19 @@ struct ASAMainClocksSectionView: View {
                     ASAClockCell(processedClock: processedClock, now: $now, shouldShowTime: true, shouldShowMiniCalendar: shouldShowMiniCalendar, isForComplications: false, indexIsOdd: indexIsOdd)
                 }
             }
-            .onDelete(perform: onDelete)
+//            .onDelete(perform: onDelete)
             .onMove(perform: onMove)
         }
     }
     
-    private func onDelete(offsets: IndexSet) {
-        let relevantUUID = self.locationWithClocks.location.id
-        let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
-        if relevantLocationWithClocksIndex != nil {
-            ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.remove(atOffsets: offsets)
-            ASAUserData.shared.savePreferences(code: .clocks)
-        }
-    }
+//    private func onDelete(offsets: IndexSet) {
+//        let relevantUUID = self.locationWithClocks.location.id
+//        let relevantLocationWithClocksIndex = ASAUserData.shared.mainClocks.firstIndex(where: {$0.location.id == relevantUUID})
+//        if relevantLocationWithClocksIndex != nil {
+//            ASAUserData.shared.mainClocks[relevantLocationWithClocksIndex!].clocks.remove(atOffsets: offsets)
+//            ASAUserData.shared.savePreferences(code: .clocks)
+//        }
+//    }
     
     private func onMove(source: IndexSet, destination: Int) {
         let relevantUUID = self.locationWithClocks.location.id
