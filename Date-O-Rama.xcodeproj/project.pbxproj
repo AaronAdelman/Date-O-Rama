@@ -396,6 +396,8 @@
 		A5B6D03925AF294E005ECE8D /* ASAScalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B6D03725AF294D005ECE8D /* ASAScalable.swift */; };
 		A5B75CF62A2F52300010AD55 /* BN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF52A2F52300010AD55 /* BN (Muslim).json */; };
 		A5B75CF72A2F52300010AD55 /* BN (Muslim).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF52A2F52300010AD55 /* BN (Muslim).json */; };
+		A5B75CF92A2F5A900010AD55 /* BG (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF82A2F5A900010AD55 /* BG (Julian).json */; };
+		A5B75CFA2A2F5A900010AD55 /* BG (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5B75CF82A2F5A900010AD55 /* BG (Julian).json */; };
 		A5B816452541A3A200E309E0 /* ASAMainClocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */; };
 		A5B9113D268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
 		A5B9113E268E3EF10058EA69 /* CalendarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */; };
@@ -1292,6 +1294,7 @@
 		A5B6D01B25AEEFF3005ECE8D /* ASACapsuleBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACapsuleBorder.swift; sourceTree = "<group>"; };
 		A5B6D03725AF294D005ECE8D /* ASAScalable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAScalable.swift; sourceTree = "<group>"; };
 		A5B75CF52A2F52300010AD55 /* BN (Muslim).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BN (Muslim).json"; sourceTree = "<group>"; };
+		A5B75CF82A2F5A900010AD55 /* BG (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BG (Julian).json"; sourceTree = "<group>"; };
 		A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMainClocksView.swift; sourceTree = "<group>"; };
 		A5B9113C268E3EF10058EA69 /* CalendarExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExtensions.swift; sourceTree = "<group>"; };
 		A5B9113F268E7C9E0058EA69 /* Time changes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Time changes.json"; sourceTree = "<group>"; };
@@ -1739,6 +1742,7 @@
 				A5E8BAE227FCCF0B0018CD36 /* BD.json */,
 				A581B884284E580A00407D68 /* BE.json */,
 				A5EFFF2E285B5B9E00F2205F /* BF.json */,
+				A5B75CF82A2F5A900010AD55 /* BG (Julian).json */,
 				A5D8509B280C8F9D005247BD /* BG.json */,
 				A5EFFFFE285B8DF800F2205F /* BH (Muslim).json */,
 				A5E292EE285A644000925EBD /* BH.json */,
@@ -1747,8 +1751,8 @@
 				A5B999A828622A4000072FD5 /* BL.json */,
 				A5E292F7285A65FB00925EBD /* BM.json */,
 				A50DA50828686271008D54AE /* BN (Chinese).json */,
-				A5EFFF2D285B5B9E00F2205F /* BN.json */,
 				A5B75CF52A2F52300010AD55 /* BN (Muslim).json */,
+				A5EFFF2D285B5B9E00F2205F /* BN.json */,
 				A5E292C7285A456600925EBD /* BO.json */,
 				A5B999AD28622AB100072FD5 /* BQ.json */,
 				A5D850B9280C99B4005247BD /* BR.json */,
@@ -2645,6 +2649,7 @@
 				A5F3B0192855FEC700865CEB /* RU.json in Resources */,
 				A5E4962E286252EC001BF40C /* MF.json in Resources */,
 				A5D850B8280C98FD005247BD /* ID.json in Resources */,
+				A5B75CFA2A2F5A900010AD55 /* BG (Julian).json in Resources */,
 				A5EFFF8F285B7D4600F2205F /* OM.json in Resources */,
 				A5759142282BE28800675058 /* NO.json in Resources */,
 				A502D3EC286380E700A625A9 /* SD.json in Resources */,
@@ -3215,6 +3220,7 @@
 				A51C8578282D64A00081A11B /* Buddhism.json in Resources */,
 				A5B999D228622D8300072FD5 /* CX.json in Resources */,
 				A5E8BAE027FCCDD00018CD36 /* PK.json in Resources */,
+				A5B75CF92A2F5A900010AD55 /* BG (Julian).json in Resources */,
 				A5EFFF44285B5CE800F2205F /* CY.json in Resources */,
 				A5B0084726CD3A0B00B63B3F /* Earth.json in Resources */,
 				A5364D992850F9EE00054BC2 /* Sunni Islam (times, Egypt).json in Resources */,

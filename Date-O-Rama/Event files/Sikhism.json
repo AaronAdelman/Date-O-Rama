@@ -5,5 +5,6 @@
     calendarColor: {"red": 0.96, "green": 0.78, "blue": 0.27},
     eventSpecifications: [
         {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/guru-gobind-singh-jayanti/"}, titles: {"en": "Guru Gobind Singh Jayanti"}},
+        {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/martyrdom-of-guru-arjan-dev-sahib/"}, titles: {"en": "Martyrdom of Guru Arjan Dev Sahib"}},
     ]
 }
