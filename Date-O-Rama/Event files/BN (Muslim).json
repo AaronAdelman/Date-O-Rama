@@ -1,0 +1,10 @@
+{
+    titles: {"*": "BN"},
+    "//": "Brunei",
+    defaultLocale: "en",
+    calendarCode: "hiq*",
+    calendarColor: {"red": 0.98, "green": 0.88, "blue": 0.13},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 9, d: 17}, titles: {"en": "Nuzul Al-Quran", "ms": "Hari Nuzul Al-Quran"}},
+    ]
+}

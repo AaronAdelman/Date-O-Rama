@@ -4,9 +4,9 @@
     calendarCode: "hiq*",
     calendarColor: {"red": 0.0, "green": 0.97, "blue": 0.0},
     eventSpecifications: [
-        {titles: {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎", "es": "Año Nuevo Islámico"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/islamic-new-year/"}},
+        {titles: {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎", "es": "Año Nuevo Islámico", "ms": "Awal Tahun Hijrah"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/islamic-new-year/"}},
         {titles: {"en": "ʿĀshūrāʾ", "he": "עאשוראא", "ar": "عَاشُورَاء‎", "tr": "Aşure Bayramı"}, type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/Ashura"}},
-        {titles: {"en": "Lailatu 'l-Miʿrāj", "he": "לילת אל־מעראג׳", "ar": "لیلة المعراج‎", "bn": "শবে মেরাজ", "fa": "شب معراج‎", "tr": "Miraç Kandili"}, type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Isra_and_Mi%27raj#Modern_Muslim_observance"}},
+        {titles: {"en": "Lailatu 'l-Miʿrāj", "he": "לילת אל־מעראג׳", "ar": "لیلة المعراج‎", "bn": "শবে মেরাজ", "fa": "شب معراج‎", "tr": "Miraç Kandili", "ms": "Israk dan Mikraj"}, type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Isra_and_Mi%27raj#Modern_Muslim_observance"}},
         {titles: {"en": "Niṣf Sha‘bān", "he": "חצי שעבאן", "ar": "نصف شعبان‎", "ms": "نصف شعبان", "fa": "نيم شعبان‎", "ur": "شبِ براة‎", "hi": "शब-ए-बरात", "bn": "শবে বরাত"}, type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/lailatul-barat-starts/"}},
         {titles: {"en": "Ramaḍān", "he": "רמצֿאן", "ar": "رَمَضَان‎", "az": "Ramazan", "bn": "রমজান", "ckb": "ڕەمەزان‎", "so": "Rabadaan", "tr": "Ramazan", "zza": "Remezan"}, type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/ramadan/"}},
         {inherits: "Laylat al-Qadr", type: "1D", start: {mon: 9, d: 21}},
@@ -15,7 +15,7 @@
         {inherits: "Laylat al-Qadr", type: "1D", start: {mon: 9, d: 27}},
         {titles: {"en": "Chaand Raat", "he": "ליל הלבנה", "bn": "চাঁদ রাত", "ur": "چاند رات‎", "hi": "चाँद रात", "ar": "جاند رات"}, type: "1D", start: {mon: 9, d: -1
             } , urls: {"en": "https://en.wikipedia.org/wiki/Chaand_Raat"}},
-        {titles: {"en": "ʻĪd al-Fiṭr (Festival of Breaking the Fast)", "he": "עיד אלפטר", "ar": "عيد الفطر‎", "es": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán", "tr": "Ramazan Bayramı"}, type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://nationaltoday.com/eid-al-fitr/"}},
+        {titles: {"en": "ʻĪd al-Fiṭr (Festival of Breaking the Fast)", "he": "עיד אלפטר", "ar": "عيد الفطر‎", "es": "Fiesta de la Ruptura del Ayuno del Sagrado Mes de Ramadán", "tr": "Ramazan Bayramı", "ms": "Hari Raya Aidil Fitri"}, type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://nationaltoday.com/eid-al-fitr/"}},
         {titles: {"en": "Ḥajj", "he": "חג׳", "ar": "حَجّ‎"}, type: "nD", start: {mon: 12, d: 8}, "end": {mon: 12, d: 13}, urls: {"en": "https://en.wikipedia.org/wiki/Hajj"}},
         {titles: {"en": "Day of ‘Arafah", "he": "יום ערפה", "ar": "يوم عرفة‎"}, type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/waqfat-arafat-day/"}},
         {inherits: "ʿĪd al-ʾAḍḥā", type: "1D", start: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/hari-raya-haji/"}, notes: {"en": "Hari Raya Haji"}},
