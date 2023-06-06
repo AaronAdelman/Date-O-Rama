@@ -1,15 +1,26 @@
 {
     titles: {"*": "CM"},
     "//": "Cameroon",
+    "TODO": "Muslim holidays?",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.59, "blue": 0.22},
     eventSpecifications: [
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/youth-day-cameroon/"}, inherits: "Youth Day", first: {era: 1, y: 1963}},
+        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/cameroon-republic-day/"}, inherits: "Republic Day"},
+        {inherits: "National Day", type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1960}},
+        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 12, d: 25}, first: {era: 1, y: 1990}},
-        {inherits: "National Day", type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1960}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/youth-day-cameroon/"}, inherits: "Youth Day", first: {era: 1, y: 1963}},
-        {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/cameroon-republic-day/"}, inherits: "Republic Day"},
     ]
 }
