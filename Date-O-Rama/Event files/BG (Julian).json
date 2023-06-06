@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.69, "blue": 0.40},
     eventSpecifications: [
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
-        {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}, urls: {"en": "https://nationaltoday.com/easter-saturday/"}},
+        {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
     ]
