@@ -5,8 +5,16 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.22, "blue": 0.58},
     eventSpecifications: [
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}},
-        {inherits: "Heroes’ Day", type: "1D", start: {mon: 1, d: 20}},
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Democracy Day", "pt": "Dia da Liberdade e Democracia"}, first: {era: 1, y: 1991}, emoji: "🗳"},
+        {inherits: "Heroes’ Day", type: "1D", start: {mon: 1, d: 20}, notes: {"en": "Heroes’ Day", "pt": "Dia da Nacionalidade e dos Heróis Nacionais"}},
+        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Youth Day", type: "1D", start: {mon: 6, d: 1}, titles: {"en": "Youth Day", "pt": "Dia Mundial da Criança"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 5}, first: {era: 1, y: 1975}},
+        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}},
     ]
 }
