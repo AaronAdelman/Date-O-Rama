@@ -1,16 +1,24 @@
 {
     titles: {"*": "BI"},
     "//": "Burundi",
+    "TODO": "Muslim holidays?",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.26, "green": 0.69, "blue": 0.16},
     eventSpecifications: [
-        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/burundi-independence-day/"}, first: {era: 1, y: 1962}},
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 2, d: 5}, inherits: "Unity Day", urls: {"en": "https://nationaltoday.com/unity-day-burundi/"}},
+        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, titles: {"en": "President Ntaryamira Day"}, inherits: "Presidents’ Day", notes: {"en": "Cyprien Ntaryamira Day"}},
+        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/burundi-independence-day/"}, first: {era: 1, y: 1962}},
+        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {type: "1D", start: {mon: 10, d: 13}, titles: {"en": "Prince Louis Rwagasore Day"}, urls: {"en": "https://nationaltoday.com/prince-louis-rwagasore-day/"}, first: {era: 1, y: 1961}, notes: {"en": "Rwagasore Day"}},
+        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "President Ndadaye’s Day"}, urls: {"en": "https://nationaltoday.com/president-ndadayes-day/"}, first: {era: 1, y: 1993}, inherits: "Presidents’ Day", notes: {"en": "Ndadaye Day"}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2012}},
-        {type: "1D", start: {mon: 10, d: 13}, titles: {"en": "Prince Louis Rwagasore Day"}, urls: {"en": "https://nationaltoday.com/prince-louis-rwagasore-day/"}, first: {era: 1, y: 1961}},
-        {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "President Ndadaye’s Day"}, urls: {"en": "https://nationaltoday.com/president-ndadayes-day/"}, first: {era: 1, y: 1993}, inherits: "Presidents’ Day"},
-        {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/president-ntaryamira-day/"}, titles: {"en": "President Ntaryamira Day"}, inherits: "Presidents’ Day"},
     ]
 }
