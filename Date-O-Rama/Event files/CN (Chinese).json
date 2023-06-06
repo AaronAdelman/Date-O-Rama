@@ -6,12 +6,15 @@
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
         {type: "nD", start: {mon: 1, d: 1}, "end": {mon: 1, d: 3}, inherits: "Chinese New Year"},
+        {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/dragon-boat-festival/"}, titles: {"en": "Dragon Boat Festival", "zh_CN": "端午节"}, emoji: "🐲"},
+        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Mid-Autumn Festival", "zh_CN": "中秋节"}, notes: {"en": "Harvest Moon Festival"}, urls: {"en": "https://nationaltoday.com/mid-autumn-festival/"}},
+
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
-        {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Qixi Festival"}, emoji: "❤️"},
-        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Mid-Autumn Festival"}, notes: {"en": "Harvest Moon Festival"}, urls: {"en": "https://nationaltoday.com/mid-autumn-festival/"}},
-        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Chung Yeung Festival"}, notes: {"en": "Double Ninth\nAutumn Remembrance\nFestival of High Places"}, urls: {"en": "https://nationaltoday.com/international-chung-yeung-festival/"}},
-        {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/zhonge-festival/"}, titles: {"en": "Zhonge Festival"}},
-        {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/dragon-boat-festival/"}, titles: {"en": "Dragon Boat Festival"}, emoji: "🐲"},
+        {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/zhonge-festival/"}, titles: {"en": "Zhonge Festival", "zh_CN": "中和节"}, emoji: "🐲"},
+
+        {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Qixi Festival", "zh_CN": "七夕"}, emoji: "❤️", urls: {"en": "https://en.wikipedia.org/wiki/Qixi_Festival"}},
+        {type: "1D", start: {mon: 7, d: 15}, titles: {"en": "Spirit Festival", "zh_CN": "中元节"}, urls: {"en": "https://en.wikipedia.org/wiki/Ghost_Festival"}, notes: {"en": "Ghost Festival"}},
+        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Chung Yeung Festival", "zh_CN": "重阳节"}, notes: {"en": "Chongyang Festival\nDouble Ninth\nAutumn Remembrance\nFestival of High Places"}, urls: {"en": "https://nationaltoday.com/international-chung-yeung-festival/"}},
 
     ]
 }
