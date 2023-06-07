@@ -695,7 +695,7 @@ public class ASAFrenchRepublicanCalendar:  ASACalendar, ASACalendarSupportingWee
     }
     
     func shortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
-        return self.shortStandaloneWeekdaySymbols(localeIdentifier: localeIdentifier)
+        return self.shortWeekdaySymbols(localeIdentifier: localeIdentifier)
     }
     
     func veryShortStandaloneWeekdaySymbols(localeIdentifier: String) -> Array<String> {
