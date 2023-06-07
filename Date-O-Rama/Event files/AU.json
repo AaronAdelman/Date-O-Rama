@@ -20,7 +20,7 @@
         {inherits: "Anzac Day", type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {inherits: "May Day", type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, "locations": {"en": "Queensland"}},
-        {type: "1D", start: {mon: 5, d: 27, "thruMon": 6, "thruD": 3, wkd: [2]}, titles: {"en": "Reconciliation Day"}},
+        {type: "1D", start: {mon: 5, d: 27, "thruMon": 6, "thruD": 3, wkd: [2]}, inherits: "Reconciliation Day"},
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Western Australia Day"}, urls: {"en": "https://nationaltoday.com/western-australia-day/"}},
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 2}, inherits: "King’s Birthday", "locations": {"en": "Australian Captial Territory, New South Wales, South Australia, Tasmania, and Victoria"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Picnic Day"}, urls: {"en": "https://nationaltoday.com/northern-territory-picnic-day/"}, emoji: "🧺", first: {era: 1, y: 1875}},
