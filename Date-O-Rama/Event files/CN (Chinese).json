@@ -16,5 +16,17 @@
         {type: "1D", start: {mon: 7, d: 15}, titles: {"en": "Spirit Festival", "zh_CN": "中元节"}, urls: {"en": "https://en.wikipedia.org/wiki/Ghost_Festival"}, notes: {"en": "Ghost Festival"}},
         {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Chung Yeung Festival", "zh_CN": "重阳节"}, notes: {"en": "Chongyang Festival\nDouble Ninth\nAutumn Remembrance\nFestival of High Places"}, urls: {"en": "https://nationaltoday.com/international-chung-yeung-festival/"}},
 
+        {type: "nD", start: {mon: 3, d: 3}, end: {mon: 3, d: 5}, titles: {"en": "Sam Nyied Sam", "zh_CN": "三月三"}, urls: {"en": "https://en.wikipedia.org/wiki/Zhuang_customs_and_culture#Festivals"}},
+
+        {type: "1D", start: {mon: 6, d: 6}, titles: {"en": "Liuyueliu", "zh_CN": "六月六"}},
+        {type: "1D", start: {mon: 8, d: 8}, titles: {"en": "Bayueba", "zh_CN": "八月八"}},
+        {type: "nD", start: {mon: 9, d: 10}, end: {mon: 9, d: 11}, titles: {"en": "Ā Lù Wō Luó jié", "zh_CN": "阿露窝罗节"}},
+        {type: "nD", start: {mon: 6, d: 24}, end: {mon: 6, d: 25}, titles: {"en": "Kū Zhā Zhā jié", "zh_CN": "矻扎扎节"}},
+        {type: "nD", start: {mon: 6, d: 24}, end: {mon: 6, d: 28}, titles: {"en": "Fire Festival", "zh_CN": "火把节"}, emoji: "🔥"},
+        {type: "nD", start: {mon: 1, d: 15}, end: {mon: 1, d: 16}, titles: {"en": "Manau Festival", "zh_CN": "目瑙纵歌节"}},
+        {type: "nD", start: {mon: 5, d: 5}, end: {mon: 5, d: 7}, titles: {"en": "Nào Dōuyáng", "zh_CN": "闹兜阳"}},
+        {type: "nD", start: {mon: 10, d: 1}, end: {mon: 10, d: 5}, titles: {"en": "Qiang New Year", "zh_CN": "羌历年"}},
+        {type: "nD", start: {mon: 3, d: 15}, end: {mon: 3, d: 22}, titles: {"en": "Third Month Fair", "zh_CN": "三月街"}, urls: {"en": "https://en.wikipedia.org/wiki/Third_Month_Fair"}},
+
     ]
 }
