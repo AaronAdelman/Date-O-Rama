@@ -1278,23 +1278,44 @@ class Date_O_RamaTests: XCTestCase {
         assert(abs(error) < 1.0e-5)
     }
     
-    func testMidnightSun() throws {
-        let saintLouisSecondsFromGMT: Int = -6 * Int(Date.SECONDS_PER_HOUR)
-        let date = GregorianDate(era: 1, year: 2023, month: 1, day: 15, hour: 23, minute: 56, second: 0, secondsFromGMT: saintLouisSecondsFromGMT)
-        
-        let saintLouisCLLocation = CLLocation(latitude: 38.627222, longitude: -90.197778)
-        let saintLouisTimeZone: TimeZone = TimeZone(secondsFromGMT: saintLouisSecondsFromGMT)!
-        let saintLouisLocation = ASALocation(id: UUID(), location: saintLouisCLLocation, name: "Saint Louis", locality: "Missouri", country: "United States", regionCode: "US", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: saintLouisTimeZone, type: .EarthLocation)
-        
-        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
-        let localeIdentifier = "he_IL"
-        let dateFormat = ASADateFormat.full
-        let timeFormat = ASATimeFormat.decimalTwelveHour
-        
-        let stringsAndComponents = hebrewCalendar.dateStringTimeStringDateComponents(now: date, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: saintLouisLocation)
-        debugPrint("🕛", #file, #function, stringsAndComponents as Any)
-        
-
-    } // func testMidnightSun() throws
+//    func testMidnightSun() throws {
+//        let saintLouisSecondsFromGMT: Int = -6 * Int(Date.SECONDS_PER_HOUR)
+//        let date = GregorianDate(era: 1, year: 2023, month: 1, day: 15, hour: 23, minute: 56, second: 0, secondsFromGMT: saintLouisSecondsFromGMT)
+//
+//        let saintLouisCLLocation = CLLocation(latitude: 38.627222, longitude: -90.197778)
+//        let saintLouisTimeZone: TimeZone = TimeZone(secondsFromGMT: saintLouisSecondsFromGMT)!
+//        let saintLouisLocation = ASALocation(id: UUID(), location: saintLouisCLLocation, name: "Saint Louis", locality: "Missouri", country: "United States", regionCode: "US", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: saintLouisTimeZone, type: .EarthLocation)
+//
+//        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+//        let localeIdentifier = "he_IL"
+//        let dateFormat = ASADateFormat.full
+//        let timeFormat = ASATimeFormat.decimalTwelveHour
+//
+//        let stringsAndComponents = hebrewCalendar.dateStringTimeStringDateComponents(now: date, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: saintLouisLocation)
+//        debugPrint("🕛", #file, #function, stringsAndComponents as Any)
+//
+//
+//    } // func testMidnightSun() throws
+    
+//    func testMidnightSun2() throws {
+//        let pethaḥTiqwahSecondsFromGMT: Int = 3 * Int(Date.SECONDS_PER_HOUR)
+//        let date = GregorianDate(era: 1, year: 2023, month: 5, day: 9, hour: 0, minute: 0, second: 0, secondsFromGMT: pethaḥTiqwahSecondsFromGMT)
+//        
+//        let pethaḥTiqwahCLLocation = CLLocation(latitude: 32.088889, longitude: 34.886389)
+//        let pethaḥTiqwahTimeZone: TimeZone = TimeZone(secondsFromGMT: pethaḥTiqwahSecondsFromGMT)!
+//        let pethaḥTiqwahLocation = ASALocation(id: UUID(), location: pethaḥTiqwahCLLocation, name: "פתח תקווה", locality: "", country: "Israel", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: pethaḥTiqwahTimeZone, type: .EarthLocation)
+//        
+//        let hebrewCalendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
+//        let localeIdentifier = "he_IL"
+//        let dateFormat = ASADateFormat.full
+//        let timeFormat = ASATimeFormat.decimalTwelveHour
+//        
+//        let stringsAndComponents = hebrewCalendar.dateStringTimeStringDateComponents(now: date, localeIdentifier: localeIdentifier, dateFormat: dateFormat, timeFormat: timeFormat, locationData: pethaḥTiqwahLocation)
+//        
+//        
+//        debugPrint("🕛", #file, #function, stringsAndComponents as Any)
+//        
+//
+//    } //
     
 } // class Date_O_RamaTests

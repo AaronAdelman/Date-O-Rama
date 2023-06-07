@@ -278,3 +278,36 @@ extension Date {
         return Date(timeIntervalSince1970: timeIntervalSince1970!)
     }
 }
+
+
+// -
+
+extension Date {
+    func formattedFor(timeZone: TimeZone) -> String? {
+        let localDateFormatter = DateFormatter()
+        localDateFormatter.dateStyle = .medium
+        localDateFormatter.timeStyle = .medium
+        localDateFormatter.timeZone = timeZone
+        return localDateFormatter.string(from: self)
+    }
+}
+
+extension Date? {
+    func formattedFor(timeZone: TimeZone) -> String? {
+        if self != nil {
+            return self!.formattedFor(timeZone: timeZone)
+        } else {
+            return nil
+        }
+    }
+}
+
+extension Date?? {
+    func formattedFor(timeZone: TimeZone) -> String? {
+        if self != nil {
+            return self!.formattedFor(timeZone: timeZone)
+        } else {
+            return nil
+        }
+    }
+}

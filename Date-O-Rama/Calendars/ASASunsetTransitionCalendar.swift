@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreLocation
-import UIKit
+//import UIKit
 import SwiftUI
 
 // MARK: -
@@ -37,7 +37,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         let timeZone = locationData.timeZone
         let (fixedNow, transition) = now.solarCorrected(locationData: locationData, transitionEvent: self.dayEnd)
         assert(fixedNow >= now)
-//        debugPrint("📅", #file, #function, "fixedNow:", fixedNow, "transition:", transition as Any)
+//        debugPrint("📅", #file, #function, "fixedNow:", fixedNow.formattedFor(timeZone: timeZone) as Any, "transition:", transition.formattedFor(timeZone: timeZone) as Any)
         
         var timeString:  String = ""
         if timeFormat != .none {
@@ -92,7 +92,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         if !existsSolarTime {
             return (hours:  -1.0, daytime:  false, valid:  false)
         }
-//        debugPrint(#file, #function, "Now:", now, location, timeZone, "Transition:", transition as Any)
+//        debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, location, timeZone, "Transition:", transition?.formattedFor(timeZone: timeZone) as Any)
         
         var dayHalfStart:  Date
         
@@ -104,7 +104,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         if deoptionalizedTransition <= now  {
 //            debugPrint(#file, #function, "deoptionalizedTransition <= now")
             // Nighttime, transition is at the start of the nighttime
-//            debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Nighttime, transition is at the start of the nighttime")
+//            debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Nighttime, transition is at the start of the nighttime")
             //            let nextDate = now.oneDayAfter
             let nextDate = now.noon(timeZone:  timeZone).oneDayAfter
             var nextDayHalfStart:  Date
@@ -112,7 +112,7 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
             nextDayHalfStart = nextEvents[self.dayStart]!!
             assert(nextDayHalfStart > deoptionalizedTransition)
             
-//            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition, "Nighttime end:", nextDayHalfStart)
+//            debugPrint(#file, #function, "Now:", now, "Nighttime start:", deoptionalizedTransition.formattedFor(timeZone: timeZone) as Any, "Nighttime end:", nextDayHalfStart.formattedFor(timeZone: timeZone) as Any)
             
             hours = now.fractionalHours(startDate:  deoptionalizedTransition, endDate:  nextDayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
             daytime = false
@@ -120,7 +120,8 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
 //            debugPrint(#file, #function, "deoptionalizedTransition > now")
             // now < deoptionalizedTransition
 //            let events = now.noon(timeZone: timeZone).solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
-            let events = now.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
+            let dateToCalculateSolarEventsFor = now.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: now)))
+            let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
 //            debugPrint(#file, #function, events)
 
             let rawDayHalfStart: Date?? = events[self.dayStart]
@@ -153,21 +154,21 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
                 dayHalfStart = rawDayHalfStart!!
             }
             
-//            debugPrint(#file, #function, "Day half start:", dayHalfStart)
+//            debugPrint(#file, #function, "Day half start:", dayHalfStart.formattedFor(timeZone: timeZone) as Any)
             
             if dayHalfStart <= now && now < deoptionalizedTransition {
                 // Daytime
-//                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Daytime")
+//                debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Daytime")
                 assert(deoptionalizedTransition > dayHalfStart)
                 hours = now.fractionalHours(startDate:  dayHalfStart, endDate:  deoptionalizedTransition, numberOfHoursPerDay:  NUMBER_OF_HOURS)
                 daytime = true
             } else {
                 // Previous nighttime
-//                debugPrint(#file, #function, "Now:", now, "Transition:", transition!!, "Previous nighttime")
+//                debugPrint(#file, #function, "Now:", now.formattedFor(timeZone: timeZone) as Any, "Transition:", transition.formattedFor(timeZone: timeZone) as Any, "Previous nighttime")
                 var previousDayHalfEnd:  Date
                 previousDayHalfEnd = self.startOfDay(for: jiggeredNow, locationData: locationData)
                 assert(dayHalfStart > previousDayHalfEnd)
-//                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd, "Day half start:", dayHalfStart)
+//                debugPrint(#file, #function, "Previous day half end:", previousDayHalfEnd.formattedFor(timeZone: timeZone) as Any, "Day half start:", dayHalfStart.formattedFor(timeZone: timeZone) as Any)
                 hours = now.fractionalHours(startDate:  previousDayHalfEnd, endDate:  dayHalfStart, numberOfHoursPerDay:  NUMBER_OF_HOURS)
                 daytime = false
             }
