@@ -21,7 +21,7 @@
         {type: "1D", start: {mon: 8, d: 20}, titles: {"en": "Nativity of Liberator Bernardo O'Higgins", "es": "Nacimiento del Prócer de la Independencia"}, inherits: "*BDay*"},
         {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 18}, first: {era: 1, y: 1810}, urls: {"en": "https://nationaltoday.com/independence-day-chile/"}},
         {type: "1D", start: {mon: 9, d: 19}, inherits: "Army Day", urls: {"en": "https://nationaltoday.com/day-of-the-glories-of-the-army/"}},
-        {inherits: "Columbus Day", type: "1D", start: {mon: 10, d: 12}, first: {era: 1, y: 1971}, notes: {"es": "Día de la Raza\nDescubrimiento de América"}},
+        {inherits: "Columbus Day", type: "1D", start: {mon: 10, d: 12}, first: {era: 1, y: 1971}},
         {type: "1D", start: {mon: 10, d: 31, wkd: [5, 6, 7, 1, 2]}, inherits: "Reformation Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 10, d: 27, wkd: [6]}, inherits: "Reformation Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 11, d: 2, wkd: [6]}, inherits: "Reformation Day", first: {era: 1, y: 2008}},

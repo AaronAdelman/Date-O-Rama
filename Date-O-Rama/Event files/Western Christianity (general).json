@@ -346,7 +346,7 @@
         {titles: {"en": "Whit Friday"}, type: "1D", start: {"Easter": "Easter", "offsetD": 54}, emoji: "⚪️"},
         {titles: {"en": "Trinity Sunday", "he": "חג השילוש הקדוש"}, type: "1D", start: {"Easter": "Easter", "offsetD": 56}, urls: {"en": "https://nationaltoday.com/trinity-sunday/"}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
-        {titles: {"en": "Feast of the Sacred Heart"}, type: "1D", start: {"Easter": "Easter", "offsetD": 68}, emoji: "❤️"},
+        {inherits: "Feast of the Sacred Heart", type: "1D", start: {"Easter": "Easter", "offsetD": 68}},
         {titles: {"en": "Feast of the Immaculate Heart of Mary"}, type: "1D", start: {"Easter": "Easter", "offsetD": 69}, emoji: "❤️"},
     ]
 }
