@@ -226,7 +226,7 @@ struct ASAMainClocksSectionView: View {
         ) {
             let location = locationWithClocks.location
             let usesDeviceLocation = locationWithClocks.usesDeviceLocation
-            ForEach(0..<locationWithClocks.clocks.count) {
+            ForEach(locationWithClocks.clocks.indices, id: \.self) {
                 index
                 in
                 
