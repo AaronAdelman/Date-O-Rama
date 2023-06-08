@@ -1242,7 +1242,7 @@ extension ASAEventCalendar {
 
 extension Array where Element == ASAEvent {
     func containsDuplicate(of event: ASAEvent) -> Bool {
-        let firstIndex = self.firstIndex(where: { $0.title == event.title && $0.startDate == event.startDate && $0.calendarTitleWithLocation == event.calendarTitleWithLocation })
+        let firstIndex = self.firstIndex(where: { $0.title == event.title && $0.location == event.location && $0.startDate == event.startDate && $0.calendarTitleWithLocation == event.calendarTitleWithLocation })
         // NOTE:  We do not check the end date, as the switch to daylight savings time can screw that up.
         return firstIndex != nil
     } // func containsDuplicate(of event: ASAEvent) -> Bool
