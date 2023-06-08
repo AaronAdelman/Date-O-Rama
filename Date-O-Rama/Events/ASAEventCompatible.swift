@@ -203,7 +203,7 @@ extension Array where Element == ASAEventCompatible {
     mutating func add(event: ASAEventCompatible) {
         let index = self.firstIndex(where: {
             let titlesAreCloseEnough: Bool = ($0.title.withStraightenedCurlyQuotes.compare(event.title.withStraightenedCurlyQuotes, options: [.caseInsensitive, .diacriticInsensitive]) == ComparisonResult.orderedSame)
-            let locationsAreCloseEnough: Bool = $0.location == event.location
+            let locationsAreCloseEnough: Bool = ($0.location == event.location) || ($0.location?.isEmpty ?? true && event.location?.isEmpty ?? true)
             let startDatesAreTheSame: Bool = $0.startDate == event.startDate
             let endDatesAreCloseEnough: Bool = abs($0.endDate.timeIntervalSince(event.endDate)) <= 1.0
             return titlesAreCloseEnough && locationsAreCloseEnough && startDatesAreTheSame && endDatesAreCloseEnough })

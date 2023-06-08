@@ -58,19 +58,30 @@ struct ASAEventCell:  View {
     fileprivate func eventTitleView() -> ModifiedContent<Text, ASAScalable> {
         let LINE_LIMIT = compact ? 3 : 2
         
-        return Text(event.title)
+        let titleText: String = {
+            let title: String = event.title ?? ""
+            let location: String? = event.location
+            if location != nil {
+                if !location!.isEmpty {
+                    return String.localizedStringWithFormat("%@ (%@)", title, location!)
+                }
+            }
+            
+            return title
+        }()
+        return Text(titleText)
             .font(titleFont)
             .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
     
-    fileprivate func eventLocationView(_ location: String?) -> ModifiedContent<Text, ASAScalable> {
-        let LINE_LIMIT = compact ? 3 : 2
-        
-        return Text(location!)
-            .font(.callout)
-            .foregroundColor(.secondary)
-            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
-    }
+//    fileprivate func eventLocationView(_ location: String?) -> ModifiedContent<Text, ASAScalable> {
+//        let LINE_LIMIT = compact ? 3 : 2
+//
+//        return Text(location!)
+//            .font(.callout)
+//            .foregroundColor(.secondary)
+//            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
+//    }
     
     var body: some View {
         let eventSymbol = event.symbol
@@ -123,10 +134,10 @@ struct ASAEventCell:  View {
                         eventTitleView()
                     }
                     
-                    let location = event.location
-                    if !(location?.isEmpty ?? true) {
-                        eventLocationView(location)
-                    }
+//                    let location = event.location
+//                    if !(location?.isEmpty ?? true) {
+//                        eventLocationView(location)
+//                    }
                     
                     ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 } // VStack
@@ -138,12 +149,12 @@ struct ASAEventCell:  View {
                     eventTitleView()
                 }
                 
-                let location = event.location
-                if !(location?.isEmpty ?? true) {
-                    ASADottedLine()
-                    
-                    eventLocationView(location)
-                }
+//                let location = event.location
+//                if !(location?.isEmpty ?? true) {
+//                    ASADottedLine()
+//
+//                    eventLocationView(location)
+//                }
                 
                 ASADottedLine()
                 
