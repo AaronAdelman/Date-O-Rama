@@ -183,6 +183,64 @@ extension String {
         case REGION_CODE_Austria, REGION_CODE_Belgium, REGION_CODE_Bulgaria, REGION_CODE_Croatia, REGION_CODE_Cyprus, REGION_CODE_Czechia, REGION_CODE_Denmark, REGION_CODE_Estonia, REGION_CODE_Finland, REGION_CODE_France, REGION_CODE_Germany, REGION_CODE_Greece, REGION_CODE_Hungary, REGION_CODE_Ireland, REGION_CODE_Italy, REGION_CODE_Latvia, REGION_CODE_Lithuania, REGION_CODE_Luxembourg, REGION_CODE_Malta, REGION_CODE_Netherlands, REGION_CODE_Poland, REGION_CODE_Portugal, REGION_CODE_Romania, REGION_CODE_Slovakia, REGION_CODE_Slovenia, REGION_CODE_Spain, REGION_CODE_Sweden:
             return REGION_CODE_European_Union
             
+        case REGION_CODE_Algeria,
+            REGION_CODE_Angola,
+            REGION_CODE_Benin,
+            REGION_CODE_Botswana,
+            REGION_CODE_British_Indian_Ocean_Territory,
+            REGION_CODE_Burkina_Faso,
+            REGION_CODE_Burundi,
+            REGION_CODE_Cameroon,
+            REGION_CODE_Cabo_Verde,
+            REGION_CODE_Central_African_Republic,
+            REGION_CODE_Chad,
+            REGION_CODE_Comoros,
+            REGION_CODE_Democratic_Republic_of_the_Congo,
+            REGION_CODE_Djibouti,
+            REGION_CODE_Egypt,
+            REGION_CODE_Equatorial_Guinea,
+            REGION_CODE_Eritrea,
+            REGION_CODE_Eswatini,
+            REGION_CODE_Ethiopia,
+            REGION_CODE_Gabon,
+            REGION_CODE_Gambia,
+            REGION_CODE_Ghana,
+            REGION_CODE_Guinea,
+            REGION_CODE_Guinea_Bissau,
+            REGION_CODE_Cote_dIvoire,
+            REGION_CODE_Kenya,
+            REGION_CODE_Lesotho,
+            REGION_CODE_Liberia,
+            REGION_CODE_Libya,
+            REGION_CODE_Madagascar,
+            REGION_CODE_Malawi,
+            REGION_CODE_Mali,
+            REGION_CODE_Mauritania,
+            REGION_CODE_Mauritius,
+            REGION_CODE_Morocco,
+            REGION_CODE_Mozambique,
+            REGION_CODE_Namibia,
+            REGION_CODE_Niger,
+            REGION_CODE_Nigeria,
+            REGION_CODE_Congo,
+            REGION_CODE_Rwanda,
+//            REGION_CODE_Western_Sahara,
+            REGION_CODE_Sao_Tome_and_Principe,
+            REGION_CODE_Senegal,
+            REGION_CODE_Seychelles,
+            REGION_CODE_Sierra_Leone,
+            REGION_CODE_Somalia,
+            REGION_CODE_South_Africa,
+            REGION_CODE_South_Sudan,
+            REGION_CODE_Sudan,
+            REGION_CODE_Tanzania,
+            REGION_CODE_Togo,
+            REGION_CODE_Tunisia,
+            REGION_CODE_Uganda,
+            REGION_CODE_Zambia,
+        REGION_CODE_Zimbabwe:
+            return REGION_CODE_African_Union
+            
         default:
             return nil
         } // switch self
@@ -592,6 +650,7 @@ let REGION_CODE_Zimbabwe    = "ZW"
 
 let REGION_CODE_European_Union    = "EU"
 let REGION_CODE_United_Nations    = "UN"
+let REGION_CODE_African_Union     = "African Union"
 
 enum ASARegionCodeRegion: Int, CaseIterable, Identifiable {
     var id: Self { self }
