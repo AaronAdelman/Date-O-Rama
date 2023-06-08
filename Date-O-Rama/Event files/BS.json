@@ -10,6 +10,7 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 1}, titles: {"en": "Randol Fawkes Labor Day"}, urls: {"en": "https://nationaltoday.com/randol-fawkes-labour-day/"}, first: {era: 1, y: 2013}},
         {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 10}, first: {era: 1, y: 1973}},

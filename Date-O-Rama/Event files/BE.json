@@ -10,6 +10,7 @@
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "National Day", type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/belgium-independence-day/"}, first: {era: 1, y: 1831}},
         {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},

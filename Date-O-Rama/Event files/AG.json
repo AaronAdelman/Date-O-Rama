@@ -11,6 +11,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "August Monday", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
         {titles: {"en": "August Tuesday "}, type: "1D", start: {mon: 8, wkd: [3], d: 2, "thruD": 8}},

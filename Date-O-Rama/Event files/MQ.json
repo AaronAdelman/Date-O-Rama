@@ -7,6 +7,7 @@
     eventSpecifications: [
         {notes: {"en": "Emancipation Day"}, type: "1D", start: {mon: 5, d: 22}, inherits: "Slavery Abolition Day", urls: {"en": "https://nationaltoday.com/slavery-abolition-day-martinique/"}},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/armistice-day-martinique/"}, inherits: "Armistice Day", first: {era: 1, y: 1918}},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}, urls: {"en": "https://nationaltoday.com/whit-monday-martinique/"}},
     ]
 }

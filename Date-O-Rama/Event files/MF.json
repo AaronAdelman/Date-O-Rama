@@ -7,6 +7,7 @@
     eventSpecifications: [
         {type: "1D", start: {"Easter": "Easter", "offsetD": 39}, urls: {"en": "https://nationaltoday.com/ascencion-day-saint-martin/"}, inherits: "Ascension Day"},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/abolition-day-saint-martin/"}, inherits: "Abolition Day"},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}, urls: {"en": "https://nationaltoday.com/whit-monday-saint-martin/"}},
     ]
 }
