@@ -352,6 +352,8 @@
 		A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */; };
 		A59FB18D270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
 		A59FB18E270B783E0044B530 /* Interfaith.json in Resources */ = {isa = PBXBuildFile; fileRef = A59FB18C270B783E0044B530 /* Interfaith.json */; };
+		A5A62D362A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
+		A5A62D372A322BD500EDBB6D /* African Union.json in Resources */ = {isa = PBXBuildFile; fileRef = A5A62D352A322BD500EDBB6D /* African Union.json */; };
 		A5A638B225A342CC003E67A5 /* ASATimesSubcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */; };
 		A5A638DB25A3873B003E67A5 /* ASAEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A9667B25A31EC900CF158F /* ASAEventCell.swift */; };
 		A5A6405B285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */; };
@@ -1274,6 +1276,7 @@
 		A59C436425A33E5B009C7F7C /* ASATimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASATimeText.swift; sourceTree = "<group>"; };
 		A59D80742600DC2300FD8BBF /* EdgeInsetsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		A59FB18C270B783E0044B530 /* Interfaith.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Interfaith.json; sourceTree = "<group>"; };
+		A5A62D352A322BD500EDBB6D /* African Union.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "African Union.json"; sourceTree = "<group>"; };
 		A5A6405A285CA35C009FBFCA /* Bahá’í Faith (Gregorian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Bahá’í Faith (Gregorian).json"; sourceTree = "<group>"; };
 		A5A6FD4C27BBF1BB003595D5 /* ASACalendarSupportingBlankMonths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASACalendarSupportingBlankMonths.swift; sourceTree = "<group>"; };
 		A5A6FD4F27BEC504003595D5 /* ASADateFormatPatternComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASADateFormatPatternComponent.swift; sourceTree = "<group>"; };
@@ -2063,6 +2066,7 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
+				A5A62D352A322BD500EDBB6D /* African Union.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";
@@ -2857,6 +2861,7 @@
 				A59FB18E270B783E0044B530 /* Interfaith.json in Resources */,
 				A5FB22B928638EE000B5042B /* TF.json in Resources */,
 				A50DA52D28686272008D54AE /* TW (Chinese).json in Resources */,
+				A5A62D372A322BD500EDBB6D /* African Union.json in Resources */,
 				A5E495F628624EFE001BF40C /* GP.json in Resources */,
 				A5EFFF49285B5CE800F2205F /* CW.json in Resources */,
 				A5EFFFBF285B811A00F2205F /* UG.json in Resources */,
@@ -3000,6 +3005,7 @@
 				A5EFFFAE285B7F2E00F2205F /* VC.json in Resources */,
 				A5FB22AC28638E1200B5042B /* ST.json in Resources */,
 				A5EE19EB2806019500B0B9C2 /* Sikhism (supplemental).json in Resources */,
+				A5A62D362A322BD500EDBB6D /* African Union.json in Resources */,
 				A5D3D7E127FA18460099718A /* IN.json in Resources */,
 				A5150F0D25C026AA00BC62C4 /* Personal information policy.pdf in Resources */,
 				A5EFFF48285B5CE800F2205F /* CW.json in Resources */,
