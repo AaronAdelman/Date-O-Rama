@@ -39,14 +39,17 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         assert(fixedNow >= now)
 //        debugPrint("📅", #file, #function, "fixedNow:", fixedNow.formattedFor(timeZone: timeZone) as Any, "transition:", transition.formattedFor(timeZone: timeZone) as Any)
         
+        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.era, .year, .month, .day, .weekday, .fractionalHour, .dayHalf], from: now, locationData: locationData)
+
         var timeString:  String = ""
         if timeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TODO:  EXPAND ON THIS!
+//            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TODO:  EXPAND ON THIS!
+            let solarHours: Double = dateComponents.solarHours ?? -1
+            timeString = self.timeString(hours: solarHours, daytime: dateComponents.dayHalf == .day, valid: solarHours >= 0, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
         }
         
         let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
         
-        let dateComponents = self.dateComponents(fixedDate: fixedNow, transition: transition, components: [.era, .year, .month, .day, .weekday, .fractionalHour, .dayHalf], from: now, locationData: locationData)
         return (dateString, timeString, dateComponents)
     } // func dateStringTimeStringDateComponents(now:  Date, localeIdentifier:  String, dateFormat:  ASADateFormat, timeFormat: ASATimeFormat, locationData:  ASALocation) -> (dateString: String, timeString: String, dateComponents: ASADateComponents)
     
@@ -178,11 +181,16 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         return (hours:  hours, daytime:  daytime, valid:  true)
     } // func solarTimeComponents(now: Date, localeIdentifier: String, locationData: ASALocation, transition:  Date??) -> (hours:  Double, daytime:  Bool, valid:  Bool)
     
-    func timeString(now: Date, localeIdentifier: String, timeFormat: ASATimeFormat, locationData: ASALocation, transition:  Date??) -> String {
+    func timeString(
+        hours:  Double, daytime:  Bool, valid:  Bool,
+//        now: Date,
+        localeIdentifier: String, timeFormat: ASATimeFormat
+//        , locationData: ASALocation, transition:  Date??
+    ) -> String {
         let NIGHT_SYMBOL    = "☽"
         let DAY_SYMBOL      = "☼"
         
-        let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
+//        let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
 //        debugPrint("⌛️", #file, #function, "hours:", hours, "daytime:", daytime as Any, "valid:", valid)
         if !valid {
             return invalidTimeString()
@@ -283,7 +291,9 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
         
         var timeString:  String = ""
         if timeFormat != .none {
-            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
+//            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TO DO:  EXPAND ON THIS!
+            let (hours, daytime, valid) = self.solarTimeComponents(now: now, locationData: locationData, transition: transition)
+            timeString = self.timeString(hours: hours, daytime: daytime, valid: valid, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
         }
         
         let dateString = self.dateString(fixedNow: fixedNow, localeIdentifier: localeIdentifier, timeZone: timeZone, dateFormat: dateFormat)
