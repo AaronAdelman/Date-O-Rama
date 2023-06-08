@@ -743,7 +743,7 @@ extension String {
     var regionCodeRegion: ASARegionCodeRegion {
         switch self {
         case REGION_CODE_United_Nations,
-        REGION_CODE_European_Union:
+        REGION_CODE_European_Union, REGION_CODE_African_Union:
             return .internationalOrganizationsAndRegions
             
         case REGION_CODE_Afghanistan,
