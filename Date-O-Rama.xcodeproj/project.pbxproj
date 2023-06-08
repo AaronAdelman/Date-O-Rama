@@ -1722,6 +1722,7 @@
 				A5EFFFD8285B855E00F2205F /* AE.json */,
 				A51128062887381000476792 /* AF (Persian).json */,
 				A5E292DC285A606E00925EBD /* AF.json */,
+				A5A62D352A322BD500EDBB6D /* African Union.json */,
 				A5E292E5285A61D900925EBD /* AG.json */,
 				A5BDE77E266784EE00F47416 /* Ahmadiyya.json */,
 				A5B9999B2862289000072FD5 /* AI.json */,
@@ -2066,7 +2067,6 @@
 				A5D850AD280C95F6005247BD /* ZA.json */,
 				A5EFFFC4285B81BD00F2205F /* ZM.json */,
 				A5EFFFC3285B81BD00F2205F /* ZW.json */,
-				A5A62D352A322BD500EDBB6D /* African Union.json */,
 			);
 			path = "Event files";
 			sourceTree = "<group>";

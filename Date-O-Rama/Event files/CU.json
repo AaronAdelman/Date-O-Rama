@@ -5,14 +5,23 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.29, "blue": 0.53},
     eventSpecifications: [
+        {inherits: "Liberation Day", type: "1D", start: {mon: 1, d: 1}, first: {era: 1, y: 1959}, notes: {"en": "Triumph of the Revolution"}, urls: {"en": "https://nationaltoday.com/triumph-of-the-revolution/"}},
+        {inherits: "Victory Day", type: "1D", start: {mon: 1, d: 2}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
+        {type: "1D", start: {mon: 7, d: 25}, titles: {"en": "Day before the Commemoration of the Assault of the Moncada garrison", "es": "Conmemoración del asalto a Moncada"}},
+        {type: "1D", start: {mon: 7, d: 26}, titles: {"en": "Commemoration of the Assault of the Moncada garrison", "es": "Día de la Rebeldía Nacional"}},
+        {type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Day after the Commemoration of the Assault of the Moncada garrison", "es": "Conmemoración del asalto a Moncada"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 10}, first: {era: 1, y: 1868}, urls: {"en": "https://nationaltoday.com/cuba-independence-day/"}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 10}, first: {era: 1, y: 1868}, urls: {"en": "https://nationaltoday.com/cuba-independence-day/"}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2011}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 12, d: 2}},
-        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/triumph-of-the-revolution/"}, titles: {"en": "Triumph of the Revolution"}, first: {era: 1, y: 1959}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/jose-martis-birthday-memorial/"}, titles: {"en": "José Martí's Birthday Memorial"}, first: {era: 1, y: 1853}, inherits: "*BDay*"},
     ]
 }
