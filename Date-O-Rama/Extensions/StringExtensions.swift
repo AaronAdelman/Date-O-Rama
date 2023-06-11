@@ -113,7 +113,7 @@ extension String {
         case REGION_CODE_Thailand:
             return [.Gregorian, .Buddhist]
             
-        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine, REGION_CODE_Burundi, REGION_CODE_Burkina_Faso, REGION_CODE_Cameroon, REGION_CODE_Central_African_Republic, REGION_CODE_Chad, REGION_CODE_Comoros, REGION_CODE_Cote_dIvoire, REGION_CODE_Djibouti:
+        case REGION_CODE_Algeria, REGION_CODE_Iraq, REGION_CODE_Jordan, REGION_CODE_Mauritania, REGION_CODE_Morocco, REGION_CODE_Oman, REGION_CODE_Pakistan, REGION_CODE_Somalia, REGION_CODE_Tunisia, REGION_CODE_United_Arab_Emirates, REGION_CODE_Yemen, REGION_CODE_Kuwait, REGION_CODE_Qatar, REGION_CODE_Palestine, REGION_CODE_Burundi, REGION_CODE_Burkina_Faso, REGION_CODE_Cameroon, REGION_CODE_Central_African_Republic, REGION_CODE_Chad, REGION_CODE_Comoros, REGION_CODE_Cote_dIvoire, REGION_CODE_Djibouti, REGION_CODE_Timor_Leste:
             return [.Gregorian, .IslamicSolar]
             
         case REGION_CODE_Libya, REGION_CODE_Lebanon:
