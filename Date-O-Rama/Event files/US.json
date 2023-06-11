@@ -654,7 +654,7 @@
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-paul-bunyan-day/"}, titles: {"en": "National Paul Bunyan Day"}, emoji: "🪓"},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-bacon-burnt-end-day/"}, titles: {"en": "National Bacon Burnt End Day"}, first: {era: 1, y: 2021}, emoji: "🥓"},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-bomb-pop-day/"}, titles: {"en": "National Bomb Pop Day"}, first: {era: 1, y: 2005}},
-
+        {type: "1D", start: {d: 17, mon: 2}, inherits: "Random Acts of Kindness Day", first: {era: 1, y: 1995}},
         
         
         
