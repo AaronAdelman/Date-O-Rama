@@ -5,10 +5,21 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.60, "blue": 0.27},
     eventSpecifications: [
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {titles: {"en": "Carnival Monday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://en.wikipedia.org/wiki/Carnival"}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+        {inherits: "August Monday", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1834}, notes: {"en": "Emancipation Day"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 3}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},
+        {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"}, titles: {"en": "National Day of Community Service"}, first: {era: 1, y: 1978}, notes: {"en": "Community Service Day"}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 3}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/dominican-independence-day/"}},
-        {inherits: "August Monday", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1834}},
-    {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-day-of-community-service/"}, titles: {"en": "National Day of Community Service"}, first: {era: 1, y: 1978}},
     ]
 }
