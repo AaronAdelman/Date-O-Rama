@@ -139,6 +139,9 @@ extension String {
             
         case REGION_CODE_Indonesia, REGION_CODE_Malaysia:
             return [.Gregorian, .Chinese, .IslamicSolar]
+            
+        case REGION_CODE_Ethiopia:
+            return [.Gregorian, .Julian, .IslamicSolar, .EthiopicAmeteMihret]
 
         default:
             return [.Gregorian]

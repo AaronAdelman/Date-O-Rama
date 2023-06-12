@@ -57,6 +57,7 @@ enum ASACalendarCode:  String, Codable {
     case allIslamicSolarTime   = "hiq-solar*"
     case allFrenchRepublican   = "fre*"
     case GregorianOrJulian     = "greOrJul"
+    case allEthiopic           = "Ethiopic*"
     
     /// Gregorian and all calendar systems in which the days, months, and weeks are identical to Gregorian, e.g., Buddhist and Japanese
     case allGregorianMonthsWeeksDays = "gre*"
@@ -70,7 +71,7 @@ extension ASACalendarCode {
     /// An “abstract” calendar code represents a group of calendars, not an individual calendar which can be manifested.
     var isAbstract: Bool {
         switch self {
-        case .allEarth, .allHebrew, .allHebrewSolarTime, .allIslamic, .allIslamicSolarTime, .allGregorianMonthsWeeksDays, .allSupportingTimeZones, .allSupportingEarthLocations:
+        case .allEarth, .allHebrew, .allHebrewSolarTime, .allIslamic, .allIslamicSolarTime, .allGregorianMonthsWeeksDays, .allSupportingTimeZones, .allSupportingEarthLocations, .allEthiopic:
             return true
             
         default:
@@ -329,11 +330,15 @@ extension ASACalendarCode {
         }
         
         if self == .allEarth {
-            return true
+            return self != .MarsSolDate
             // TODO:  Needs to be modified when adding calendars for other planets, e.g., the Darian calendar for Mars.
         }
         
         if self == .GregorianOrJulian && (otherCalendarCode == .Gregorian || otherCalendarCode == .Julian) {
+            return true
+        }
+        
+        if self == .allEthiopic && (otherCalendarCode == .EthiopicAmeteAlem || otherCalendarCode == .EthiopicAmeteMihret) {
             return true
         }
 
