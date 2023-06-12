@@ -625,7 +625,7 @@
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-best-friends-day/", "he": "https://www.daysoftheyear.co.il/2018/06/8.html"}, titles: {"en": "National Best Friends Day", "he": "יום החברים הכי טובים"}, first: {era: 1, y: 1935}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-krewe-of-tucks-day/"}, titles: {"en": "National Krewe of Tucks Day"}},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-cancer-thriver-day/"}, titles: {"en": "National Cancer Thriver Day"}},
-        {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, titles: {"en": "National Flag Week"}, first: {era: 1, y: 1966}},
+        {type: "nD", start: {mon: 6, d: 11}, end: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-flag-week/"}, titles: {"en": "National Flag Week", "he": "שבוע הדגל הלאומי"}, first: {era: 1, y: 1966}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-loving-day/"}, titles: {"en": "National Loving Day"}, first: {era: 1, y: 2004}, emoji: "❤️"},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-kitchen-klutzes-america-day/", "he": "https://www.daysoftheyear.co.il/2018/06/13.html"}, titles: {"en": "National Kitchen Klutzes of America Day", "he": "יום האנשים שלא יודעים לבשל"}, emoji: "👨‍🍳👩‍🍳"},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/bunker-hill-day/"}, titles: {"en": "Bunker Hill Day"}, first: {era: 1, y: 1775}},
