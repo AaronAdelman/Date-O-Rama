@@ -25,5 +25,6 @@
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/sweden-finns-day/"}, titles: {"en": "Sweden Finns Day"}, first: {type: "1D", era: 1, y: 2010}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {type: "1D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
     ]
 }

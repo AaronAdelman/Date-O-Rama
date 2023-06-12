@@ -37,5 +37,6 @@
        {type: "1D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 3}, titles: {"en": "Ethnicity Day"}, urls: {"en": "https://nationaltoday.com/ethnicity-day/"}, first: {era: 1, y: 2011}},
        {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+       {type: "1D", start: {mon: 11, d: 6}, inherits: "Gustavus Adolphus Day"},
     ]
 }
