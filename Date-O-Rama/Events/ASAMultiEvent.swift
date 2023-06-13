@@ -10,7 +10,6 @@ import Foundation
 import SwiftUI
 import EventKit
 
-
 struct ASAMultiEvent:  ASAEventCompatible {
     var events: Array<ASAEventCompatible> = []
     
@@ -99,7 +98,19 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return self.events[0].timeZone
     }
     
-    var url: URL? = nil
+//    var url: URL? = nil
+    
+    var urls: Array<URL> {
+        var temp: Array<URL> = []
+        for event in events {
+            for url in event.urls {
+                if !temp.contains(url) {
+                    temp.append(url)
+                }
+            } // for url
+        } // for event
+        return temp
+    } // var urls: Array<URL>
     
     var hasNotes: Bool = false
     

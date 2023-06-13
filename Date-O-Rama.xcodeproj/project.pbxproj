@@ -114,8 +114,6 @@
 		A52A238B279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */; };
 		A5307024279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
 		A5307025279867E4004A5B37 /* ASAMultiEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307023279867E4004A5B37 /* ASAMultiEvent.swift */; };
-		A53070272799C43E004A5B37 /* ASAMultiEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53070262799C43D004A5B37 /* ASAMultiEventView.swift */; };
-		A53070282799C43E004A5B37 /* ASAMultiEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53070262799C43D004A5B37 /* ASAMultiEventView.swift */; };
 		A533798124B2333500340C0B /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = A533798024B2333400340C0B /* Sun.json */; };
 		A53437512857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
 		A53437522857971800F8E8AF /* ASAJulianCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53437502857971800F8E8AF /* ASAJulianCalendar.swift */; };
@@ -1183,7 +1181,6 @@
 		A52A2386279D8DFC00540D8D /* ASAFrenchRepublicanCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAFrenchRepublicanCalendar.swift; sourceTree = "<group>"; };
 		A52A2389279DA4B600540D8D /* FrenchRepublicanDateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchRepublicanDateExtensions.swift; sourceTree = "<group>"; };
 		A5307023279867E4004A5B37 /* ASAMultiEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEvent.swift; sourceTree = "<group>"; };
-		A53070262799C43D004A5B37 /* ASAMultiEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAMultiEventView.swift; sourceTree = "<group>"; };
 		A533798024B2333400340C0B /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
 		A53437502857971800F8E8AF /* ASAJulianCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAJulianCalendar.swift; sourceTree = "<group>"; };
 		A536399926EF43BD0083C571 /* ASAEaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEaster.swift; sourceTree = "<group>"; };
@@ -2375,7 +2372,6 @@
 				A5B816442541A3A200E309E0 /* ASAMainClocksView.swift */,
 				A53D608E2888805D0094B3F7 /* ASAMainClocksViewSectionHeader.swift */,
 				A5832B87254ED124008E8A97 /* ASAMiniCalendarView.swift */,
-				A53070262799C43D004A5B37 /* ASAMultiEventView.swift */,
 				A593E25A250A1D0600C93F96 /* ASANewClockDetailView.swift */,
 				A5A9669425A31F6400CF158F /* ASATimesSubcell.swift */,
 				A59C436425A33E5B009C7F7C /* ASATimeText.swift */,
@@ -3304,7 +3300,6 @@
 				A566F4752483D7CF000A05B5 /* ASAAppleCalendar.swift in Sources */,
 				A5BDE7B02667FBFE00F47416 /* DictionaryExtensions.swift in Sources */,
 				A566F4732483D7CF000A05B5 /* ASAUserData.swift in Sources */,
-				A53070282799C43E004A5B37 /* ASAMultiEventView.swift in Sources */,
 				A5B4E0492625EC59005D6692 /* ASAWatchDateORamaApp.swift in Sources */,
 				A59D806E2600C6FB00FD8BBF /* ASAEventCalendar.swift in Sources */,
 				A566F47B2483D7CF000A05B5 /* ASASunsetTransitionCalendar.swift in Sources */,
@@ -3467,7 +3462,6 @@
 				A5AA3D5E25CC4DE60043FF9F /* EKRecurrenceFrequencyExtensions.swift in Sources */,
 				A5DC8EBE2678C6CC000B1184 /* ASAICalendarIndexPickerView.swift in Sources */,
 				A5C77BFD2433361400CFEE47 /* AppDelegate.swift in Sources */,
-				A53070272799C43E004A5B37 /* ASAMultiEventView.swift in Sources */,
 				A5BDE7AF2667FBFE00F47416 /* DictionaryExtensions.swift in Sources */,
 				A5BDB7CB244DA4FB0027704F /* ASAAppleCalendar.swift in Sources */,
 				A5BB7EE8244EF22800932AF2 /* ASAJulianDayCalendar.swift in Sources */,

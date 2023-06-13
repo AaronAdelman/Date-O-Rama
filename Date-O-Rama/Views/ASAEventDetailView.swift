@@ -158,32 +158,63 @@ struct ASAEventDetailsNotesAndURLSection: View {
                 Text(event.notes!)
             }
             
-            let eventURL = event.url
-            if eventURL != nil {
-                let absoluteURLString = eventURL!.absoluteString
-                #if os(watchOS)
-                Text(absoluteURLString)
-                #else
-                if absoluteURLString.hasPrefix(CONTACTS_PREFIX) {
-                    Button(action: {
-                        UIApplication.shared.open(eventURL!, options: [:], completionHandler: nil)
-                    }, label: {
-                        Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
-                            .underline()
-                            .foregroundColor(.accentColor)
-                    })
-                } else {
-                    Link(destination: event.url!, label: {
-                        Text(event.url!.absoluteString)
-                            .underline()
-                            .foregroundColor(.accentColor)
-                    })
-                }
-                #endif
+//            let eventURL = event.url
+//            if eventURL != nil {
+//                let absoluteURLString = eventURL!.absoluteString
+//                #if os(watchOS)
+//                Text(absoluteURLString)
+//                #else
+//                if absoluteURLString.hasPrefix(CONTACTS_PREFIX) {
+//                    Button(action: {
+//                        UIApplication.shared.open(eventURL!, options: [:], completionHandler: nil)
+//                    }, label: {
+//                        Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
+//                            .underline()
+//                            .foregroundColor(.accentColor)
+//                    })
+//                } else {
+//                    Link(destination: event.url!, label: {
+//                        Text(event.url!.absoluteString)
+//                            .underline()
+//                            .foregroundColor(.accentColor)
+//                    })
+//                }
+//                #endif
+//            }
+            ForEach(event.urls, id: \.self) {
+                url in
+                ASAEKEventURLView(eventURL: url)
             }
         } // Section
     } // var body
 } // struct ASAEventDetailsNotesAndURLSection
+
+struct ASAEKEventURLView: View {
+    var eventURL: URL
+    
+    var body: some View {
+        let absoluteURLString = eventURL.absoluteString
+        #if os(watchOS)
+        Text(absoluteURLString)
+        #else
+        if absoluteURLString.hasPrefix(CONTACTS_PREFIX) {
+            Button(action: {
+                UIApplication.shared.open(eventURL, options: [:], completionHandler: nil)
+            }, label: {
+                Text(NSLocalizedString(OPEN_IN_CONTACTS_STRING, comment: ""))
+                    .underline()
+                    .foregroundColor(.accentColor)
+            })
+        } else {
+            Link(destination: eventURL, label: {
+                Text(eventURL.absoluteString)
+                    .underline()
+                    .foregroundColor(.accentColor)
+            })
+        }
+        #endif
+    }
+}
 
 
 // MARK:  -

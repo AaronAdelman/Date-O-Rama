@@ -11,7 +11,7 @@ import SwiftUI
 import EventKit
 
 
-struct ASAEvent:  ASAEventCompatible {
+struct ASAEvent:  ASASingleEvent {
     var eventIdentifier: String! = "\(UUID())"
     var title: String!
     var location: String?
@@ -72,6 +72,14 @@ struct ASAEvent:  ASAEventCompatible {
     var fileEmoji: String?
     
     var type: ASAEventSpecificationType
+    
+    var urls: Array<URL> {
+        if url == nil {
+            return []
+        } else {
+            return [url!]
+        }
+    } // var urls: Array<URL>
 } // struct ASAEvent
 
 

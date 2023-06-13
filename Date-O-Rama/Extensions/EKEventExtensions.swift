@@ -10,7 +10,7 @@ import EventKit
 import Foundation
 import SwiftUI
 
-extension EKEvent:  ASAEventCompatible {
+extension EKEvent:  ASASingleEvent {
     var calendarTitleWithoutLocation: String {
         return self.calendar.title
     }
@@ -114,4 +114,12 @@ extension EKEvent:  ASAEventCompatible {
     var secondaryEndDateString: String? {
         return nil
     }
+    
+    var urls: Array<URL> {
+        if url == nil {
+            return []
+        } else {
+            return [url!]
+        }
+    } // var urls: Array<URL>
 } // extension EKEvent:  ASAEventCompatible
