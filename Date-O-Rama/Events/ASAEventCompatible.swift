@@ -41,8 +41,9 @@ protocol ASAEventCompatible {
     var timeZone: TimeZone? { get }
 //    var url: URL? { get } // The URL for the calendar item.
     var urls: Array<URL> { get } // The URLs for the calendar item.
-    var hasNotes: Bool { get } // A Boolean value that indicates whether the calendar item has notes.
-    var notes: String? { get } // The notes associated with the calendar item.
+//    var hasNotes: Bool { get } // A Boolean value that indicates whether the calendar item has notes.
+//    var notes: String? { get } // The notes associated with the calendar item.
+    var allNotes: Array<String> { get } // The notes associated with the calendar item.
     var color:  Color { get }
     var colors:  Array<Color> { get }
     var calendarTitleWithLocation:  String { get }
@@ -62,7 +63,9 @@ protocol ASAEventCompatible {
 
 protocol ASASingleEvent: ASAEventCompatible {
     var url: URL? { get } // The URL for the calendar item.
-}
+    var hasNotes: Bool { get } // A Boolean value that indicates whether the calendar item has notes.
+    var notes: String? { get } // The notes associated with the calendar item.
+} // protocol ASASingleEvent
 
 
 // MARK:  -

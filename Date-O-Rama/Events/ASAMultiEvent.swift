@@ -112,9 +112,21 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return temp
     } // var urls: Array<URL>
     
-    var hasNotes: Bool = false
+//    var hasNotes: Bool = false
+//    
+//    var notes: String? = nil
     
-    var notes: String? = nil
+    var allNotes: Array<String> {
+        var temp: Array<String> = []
+        for event in events {
+            for notes in event.allNotes {
+                if !temp.contains(notes) {
+                    temp.append(notes)
+                }
+            } // for notes
+        } // for event
+        return temp
+    } // var allNotes: Array<String>
     
     var color: Color = .primary
     

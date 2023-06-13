@@ -80,6 +80,14 @@ struct ASAEvent:  ASASingleEvent {
             return [url!]
         }
     } // var urls: Array<URL>
+
+    var allNotes: Array<String> {
+        if !hasNotes || notes == nil {
+            return []
+        } else {
+            return [notes!]
+        }
+    } // var allNotes: Array<String>
 } // struct ASAEvent
 
 
