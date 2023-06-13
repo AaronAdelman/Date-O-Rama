@@ -39,10 +39,7 @@ protocol ASAEventCompatible {
     
     var status: EKEventStatus { get } // The status of the event.
     var timeZone: TimeZone? { get }
-//    var url: URL? { get } // The URL for the calendar item.
     var urls: Array<URL> { get } // The URLs for the calendar item.
-//    var hasNotes: Bool { get } // A Boolean value that indicates whether the calendar item has notes.
-//    var notes: String? { get } // The notes associated with the calendar item.
     var allNotes: Array<String> { get } // The notes associated with the calendar item.
     var color:  Color { get }
     var colors:  Array<Color> { get }
@@ -204,7 +201,7 @@ extension Array where Element == ASAEventCompatible {
     } // func nextAndPresentEvents(now: Date) -> Array<ASAEventCompatible>
     
     mutating func add(event: ASAEventCompatible) {
-        let index = self.firstIndex(where: {
+        let index = !event.isReadOnly ? nil :  self.firstIndex(where: {
             let titlesAreCloseEnough: Bool = ($0.title.withStraightenedCurlyQuotes.compare(event.title.withStraightenedCurlyQuotes, options: [.caseInsensitive, .diacriticInsensitive]) == ComparisonResult.orderedSame)
             let locationsAreCloseEnough: Bool = ($0.location == event.location) || ($0.location?.isEmpty ?? true && event.location?.isEmpty ?? true)
             let startDatesAreTheSame: Bool = $0.startDate == event.startDate
