@@ -10,13 +10,15 @@
         {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "Canada Day", "fr": "Fête du Canada"}, first: {era: 1, y: 1982}, urls: {"en": "https://www.daysoftheyear.com/days/canada-day/"}},
         {inherits: "Labor Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Labour_Day_(Canada)"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {type: "1D", start: {mon: 5, d: 18, "thruD": 24, wkd: [2]}, titles: {"en": "Victoria Day", "fr": "Fête de la Reine"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaltoday.com/victoria-day/"}},
-        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Civic Holiday", "fr": "Premier lundi d'août"}, first: {era: 1, y: 1875}, urls: {"en": "https://nationaltoday.com/civic-holiday-canada/"}},
-        {type: "1D", start: {mon: 9, d: 30}, titles: {"en": "National Day for Truth and Reconciliation", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.orangeshirtday.org/"}},
+        {type: "1D", start: {mon: 5, d: 18, "thruD": 24, wkd: [2]}, titles: {"en": "Victoria Day", "he": "יום ויקטוריה", "fr": "Fête de la Reine"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaltoday.com/victoria-day/"}},
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Civic Holiday", "fr": "Premier lundi d’août"}, first: {era: 1, y: 1875}, urls: {"en": "https://nationaltoday.com/civic-holiday-canada/"}},
+        {type: "1D", start: {mon: 9, d: 30}, titles: {"en": "National Day for Truth and Reconciliation", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.orangeshirtday.org/"}, notes: {"en": "Truth and Reconciliation Day\nOrange Shirt Day"}},
         {inherits: "Thanksgiving Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, first: {type: "1D", era: 1, y: 1957}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-thanksgiving/"}},
         {inherits: "Remembrance Day", type: "1D", start: {d: 11, mon: 11}, first: {era: 1, y: 1919}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, inherits: "Family Day", first: {era: 1, y: 1990}, urls: {"en": "https://nationaltoday.com/family-day/"}},
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Louis Riel Day", "fr": "Journée Louis Riel"}, urls: {"en": "https://nationaltoday.com/louis-riel-day/"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Islander Day", "fr": "Fête des Insulaires"}, urls: {"en": "https://nationaltoday.com/islander-day/"}, first: {era: 1, y: 2008}},
@@ -52,7 +54,7 @@
        {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
 
         {inherits: "Memorial Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, first: {era: 1, y: 1917}, "locations": {"en": "Newfoundland and Labrador"}},
-        {type: "1D", start: {mon: 7, d: 9}, titles: {"en": "Nunavut Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/nunavut-day/"}},
+        {type: "1D", start: {mon: 7, d: 9}, titles: {"en": "Nunavut Day", "iu": "ᓄᓇᕗᑦ ᐅᓪᓗᖓ"}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/nunavut-day/"}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         
         {type: "1D", start: {d: 21, mon: 11}, titles: {"en": "National Red Mitten Day"}, first: {era: 1, y: 2011}, emoji: "🇨🇦", urls: {"en": "https://www.daysoftheyear.com/days/red-mitten-day/"}},
@@ -67,7 +69,7 @@
         {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/la-poutine-week/"}, titles: {"en": "La Poutine Week"}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-have-a-heart-day/"}, titles: {"en": "National Have a Heart Day"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/canadas-agriculture-day/"}, titles: {"en": "Agriculture Day"}, first: {era: 1, y: 2017}},
-        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-flag-of-canada-day/"}, titles: {"en": "National Flag of Canada Day"}, first: {era: 1, y: 1965}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-flag-of-canada-day/"}, titles: {"en": "National Flag of Canada Day", "he": "יום הדגל הלאומי של קנדה", "fr": "Jour du drapeau national du Canada"}, first: {era: 1, y: 1965}, inherits: "National Flag Day"},
         {type: "1D", start: {mon: 2, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/pink-shirt-day/"}, titles: {"en": "Pink Shirt Day"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/yukon-heritage-day/"}, titles: {"en": "Yukon Heritage Day"}, first: {era: 1, y: 1976}},
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-governance-professionals-day/"}, titles: {"en": "National Governance Professionals Day"}, first: {era: 1, y: 2023}},
@@ -80,5 +82,18 @@
         {type: "nD", start: {mon: 6, d: 5}, end: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-commuter-challenge/"}, titles: {"en": "National Commuter Challenge"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 6, d: 26}, inherits: "Canoe Day"},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
+        {titles: {"en": "Terry Fox Day"}, type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
+        {titles: {"en": "Raoul Wallenberg Day", "he": "יום ראול ולנברג"}, type: "1D", start: {mon: 1, d: 17}},
+        {inherits: "Groundhog Day", type: "1D", start: {mon: 2, d: 2}},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
+        {inherits: "Earth Day", type: "1D", start: {mon: 4, d: 22}, first: {era: 1, y: 1970}},
+        {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},
+        {titles: {"en": "Loyalist Day"}, type: "1D", start: {mon: 6, d: 19}},
+        {titles: {"en": "Canadian Multiculturalism Day"}, type: "1D", start: {mon: 6, d: 27}},
+        {titles: {"en": "National Peacekeepers’ Day"}, type: "1D", start: {mon: 8, d: 6, thruD: 12, wkd: [1]}, urls: {"en": "https://en.wikipedia.org/wiki/National_Peacekeepers%27_Day"}},
+        {inherits: "National Grandparents’ Day", type: "1D", start: {mon: 9, wkdRecurrence: 2, wkd: [1]}, first: {era: 1, y: 1978}},
+        {inherits: "Halloween", type: "1D", start: {mon: 10, d: 31}},
+
     ]
 }
