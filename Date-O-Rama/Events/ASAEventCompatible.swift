@@ -47,8 +47,8 @@ protocol ASAEventCompatible {
     var color:  Color { get }
     var colors:  Array<Color> { get }
     var calendarTitleWithLocation:  String { get }
-    var calendarTitleWithoutLocation:  String { get }
-    var longCalendarTitleWithoutLocation:  String { get }
+    var calendarTitle:  String { get }
+    var longCalendarTitle:  String { get }
     var calendarCode:  ASACalendarCode { get }
     var geoLocation: CLLocation? { get }
     var isReadOnly: Bool { get }
@@ -151,7 +151,7 @@ extension Array where Element == ASAEventCompatible {
     func nextEvents(now:  Date) -> Array<ASAEventCompatible> {
         var eventCalendarTitles: Array<String> = []
         for event in self {
-            let eventCalendarTitle: String = event.calendarTitleWithoutLocation
+            let eventCalendarTitle: String = event.calendarTitle
             if !eventCalendarTitles.contains(eventCalendarTitle) {
                 eventCalendarTitles.append(eventCalendarTitle)
             }
@@ -165,13 +165,13 @@ extension Array where Element == ASAEventCompatible {
         var nextEvents:  Array<ASAEventCompatible> = []
         
         for eventCalendarTitle in eventCalendarTitles {
-            let firstIndex = self.firstIndex(where: { $0.startDate > now && $0.calendarTitleWithoutLocation == eventCalendarTitle })
+            let firstIndex = self.firstIndex(where: { $0.startDate > now && $0.calendarTitle == eventCalendarTitle })
             if firstIndex != nil {
                 let firstItemStartDate = self[firstIndex!].startDate
                 
                 for i in firstIndex!..<self.count {
                     let item_i: ASAEventCompatible = self[i]
-                    if item_i.startDate == firstItemStartDate && item_i.calendarTitleWithoutLocation == eventCalendarTitle {
+                    if item_i.startDate == firstItemStartDate && item_i.calendarTitle == eventCalendarTitle {
                         nextEvents.append(item_i)
                     } else {
                         break
@@ -189,7 +189,7 @@ extension Array where Element == ASAEventCompatible {
         var presentEvents: Array<ASAEventCompatible> = []
         var eventCalendarTitles: Array<String> = []
         for event in self {
-            let eventCalendarTitle: String = event.calendarTitleWithoutLocation
+            let eventCalendarTitle: String = event.calendarTitle
             if !eventCalendarTitles.contains(eventCalendarTitle) {
                 eventCalendarTitles.append(eventCalendarTitle)
             }

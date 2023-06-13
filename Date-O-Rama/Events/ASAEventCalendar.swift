@@ -31,7 +31,7 @@ class ASAEventCalendar {
         }
     } // init(fileName:  String)
     
-    func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, regionCode:  String?, requestedLocaleIdentifier:  String, calendar:  ASACalendar, clock: ASAClock) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
+    func events(startDate: Date, endDate: Date, locationData:  ASALocation, eventCalendarName: String, calendarTitle:  String, regionCode:  String?, requestedLocaleIdentifier:  String, calendar:  ASACalendar, clock: ASAClock) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
         //        debugPrint(#file, #function, startDate, endDate, location, timeZone)
         
         if self.eventsFile == nil {
@@ -46,7 +46,7 @@ class ASAEventCalendar {
         var dateEvents:  Array<ASAEvent> = []
         var timeEvents:  Array<ASAEvent> = []
         repeat {
-            let (tempDateEvents, tempTimeEvents) = self.events(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay, clock: clock)
+            let (tempDateEvents, tempTimeEvents) = self.events(date: now.noon(timeZone: timeZone), locationData: locationData, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: requestedLocaleIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay, clock: clock)
             for event in tempDateEvents {
                 if event.relevant(startDate:  startDate, endDate:  endDate) && !dateEvents.containsDuplicate(of: event) {
                     dateEvents.append(event)
@@ -997,7 +997,7 @@ class ASAEventCalendar {
         return self.eventsFile?.symbol
     } // func fileEmoji() -> String?
     
-    fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitleWithoutLocation: String, clock: ASAClock) -> ASAEvent? {
+    fileprivate func processEventSpecification(calendar: ASACalendar, eventSpecification: ASAEventSpecification, otherCalendars: [ASACalendarCode : ASACalendar], components: ASADateComponents, date: Date, locationData: ASALocation, startOfDay: Date, startOfNextDay: Date, previousSunset: Date, nightHourLength: TimeInterval, sunrise: Date, hourLength: TimeInterval, previousOtherDusk: Date, otherNightHourLength: TimeInterval, otherDawn: Date, otherHourLength: TimeInterval, regionCode: String?, location: CLLocation, timeZone: TimeZone, requestedLocaleIdentifier: String, eventCalendarName: String, calendarTitle: String, clock: ASAClock) -> ASAEvent? {
         var appropriateCalendar:  ASACalendar = calendar
         if eventSpecification.calendarCode != nil {
             let probableAppropriateCalendar = otherCalendars[eventSpecification.calendarCode!]
@@ -1047,7 +1047,7 @@ class ASAEventCalendar {
         
         let emoji = filledInEventSpecification.emoji
         
-        var newEvent = ASAEvent(title:  title, location: locationString, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
+        var newEvent = ASAEvent(title:  title, location: locationString, startDate: returnedStartDate, endDate: returnedEndDate, isAllDay: eventSpecification.isAllDay, timeZone: timeZone, url: url, notes: notes, color: color, calendarTitleWithLocation: eventCalendarName, calendarTitle: calendarTitle, calendarCode: appropriateCalendar.calendarCode, locationData:  locationData, recurrenceRules: eventSpecification.recurrenceRules, regionCodes: eventSpecification.regionCodes, excludeRegionCodes: eventSpecification.excludeRegionCodes, emoji: emoji, fileEmoji: fileEmoji(), type: eventSpecification.type)
         
         let eventIsTodayOnly = newEvent.isOnlyForRange(rangeStart: startOfDay, rangeEnd: startOfNextDay)
         let (startDateString, endDateString) = clock.startAndEndDateStrings(event: newEvent, eventIsTodayOnly: eventIsTodayOnly, location: locationData)
@@ -1064,7 +1064,7 @@ class ASAEventCalendar {
         return newEvent
     }
     
-    func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date, clock: ASAClock) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
+    func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitle:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date, clock: ASAClock) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>) {
         let location = locationData.location
         let timeZone = locationData.timeZone
         
@@ -1127,7 +1127,7 @@ class ASAEventCalendar {
 //            assert(startOfDay <= date)
 //            assert(date < startOfNextDay)
             // TODO:  Assertion failure here!
-            let newEvent = processEventSpecification(calendar: calendar, eventSpecification: eventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: calendarTitleWithoutLocation, clock: clock)
+            let newEvent = processEventSpecification(calendar: calendar, eventSpecification: eventSpecification, otherCalendars: otherCalendars, components: components, date: date, locationData: locationData, startOfDay: startOfDay, startOfNextDay: startOfNextDay, previousSunset: previousSunset, nightHourLength: nightHourLength, sunrise: sunrise, hourLength: hourLength, previousOtherDusk: previousOtherDusk, otherNightHourLength: otherNightHourLength, otherDawn: otherDawn, otherHourLength: otherHourLength, regionCode: regionCode, location: location, timeZone: timeZone, requestedLocaleIdentifier: requestedLocaleIdentifier, eventCalendarName: eventCalendarName, calendarTitle: calendarTitle, clock: clock)
             
             if newEvent != nil {
                 if newEvent!.isAllDay {
@@ -1138,7 +1138,7 @@ class ASAEventCalendar {
             }
         } // for eventSpecification in self.eventsFile.eventSpecifications
         return (dateEvents, timeEvents)
-    } // func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitleWithoutLocation:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>)
+    } // func events(date:  Date, locationData:  ASALocation, eventCalendarName: String, calendarTitle:  String, calendar:  ASACalendar, otherCalendars: Dictionary<ASACalendarCode, ASACalendar>, regionCode:  String?, requestedLocaleIdentifier:  String, startOfDay:  Date, startOfNextDay:  Date) -> (dateEvents: Array<ASAEvent>, timeEvents: Array<ASAEvent>)
     
     func eventCalendarNameWithPlaceName(locationData:  ASALocation, localeIdentifier:  String) -> String {
         let localizableTitle = self.eventCalendarNameWithoutPlaceName(localeIdentifier: localeIdentifier)

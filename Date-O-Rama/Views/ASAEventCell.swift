@@ -148,14 +148,7 @@ struct ASAEventCell:  View {
                     }
                     eventTitleView()
                 }
-                
-//                let location = event.location
-//                if !(location?.isEmpty ?? true) {
-//                    ASADottedLine()
-//
-//                    eventLocationView(location)
-//                }
-                
+                                
                 ASADottedLine()
                 
                 ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
@@ -197,7 +190,7 @@ struct ASAEventCellCalendarTitle:  View {
 #endif
     
     var body: some View {
-        let title: String = isForClock ? event.calendarTitleWithoutLocation : event.calendarTitleWithLocation
+        let title: String = isForClock ? event.calendarTitle : event.calendarTitleWithLocation
         Text(title).font(.subheadlineMonospacedDigit)
             .foregroundColor(.secondary)
             .modifier(ASAScalable(lineLimit: compact ? 2 : 1))

@@ -142,7 +142,7 @@ struct ASAEventDetailsTitleSection: View {
             HStack {
                 ASAColorRectangle(colors: event.colors)
                 VStack(alignment: .leading, spacing: 8.0) {
-                    Text(event.longCalendarTitleWithoutLocation)
+                    Text(event.longCalendarTitle)
                     Text(location.formattedOneLineAddress)
                 } // VStack
             } // HStack
@@ -624,6 +624,6 @@ struct ASAEKParticipantView: View {
 
 //struct ASAEventDetailView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitleWithoutLocation: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland, category: .generic), row: ASARow.generic)
+//        ASAEventDetailView(event: ASAEvent(eventIdentifier: "Foo", title: "Foo", location: "Fooland", startDate: Date(), endDate: Date(), isAllDay: true, timeZone: TimeZone.current, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo • Fooland", calendarTitle: "Foo", isEKEvent: false, calendarCode: .Gregorian, locationData: ASALocation.NullIsland, category: .generic), row: ASARow.generic)
 //    }
 //}

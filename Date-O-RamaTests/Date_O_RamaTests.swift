@@ -769,10 +769,10 @@ class Date_O_RamaTests: XCTestCase {
 //        let calendar = ASACalendarFactory.calendar(code: .HebrewGRA)!
 //        let timeZone: TimeZone = TimeZone(identifier: "Asia/Jerusalem")!
 //        let location = ASALocation(id: UUID(), location: CLLocation(latitude: 32.088889, longitude: 34.886389), name: "רוטשילד 101", locality: "פתח תקווה", country: "ישראל", regionCode: "IL", postalCode: nil, administrativeArea: nil, subAdministrativeArea: nil, subLocality: nil, thoroughfare: nil, subThoroughfare: nil, timeZone: timeZone)
-////        let calendarTitleWithoutLocation = "יהדות"
+////        let calendarTitle = "יהדות"
 ////        let calendarTitle = "יהדות · פתח תקווה"
 ////        let otherCalendars = [ASACalendarCode.Coptic: ASACalendarFactory.calendar(code: .Coptic)!]
-//        let calendarTitleWithoutLocation = "ירח"
+//        let calendarTitle = "ירח"
 //        let calendarTitle = "ירח · פתח תקווה"
 ////        let otherCalendars: Dictionary<ASACalendarCode, ASACalendar> = [:]
 //        let regionCode = "IL"
@@ -788,8 +788,8 @@ class Date_O_RamaTests: XCTestCase {
 //
 ////        let eventCalendar = ASAEventCalendar(fileName: "Judaism")
 //        let eventCalendar = ASAEventCalendar(fileName: "Moon")
-////        let events = eventCalendar.events(date: date, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
-//        let events = eventCalendar.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, eventCalendarName: calendarTitle, calendarTitleWithoutLocation: calendarTitleWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, calendar: calendar)
+////        let events = eventCalendar.events(date: date, locationData: location, eventCalendarName: calendarTitle, calendarTitle: calendarTitle, calendar: calendar, otherCalendars: otherCalendars, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, startOfDay: startOfDay, startOfNextDay: startOfNextDay)
+//        let events = eventCalendar.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, eventCalendarName: calendarTitle, calendarTitle: calendarTitle, regionCode: regionCode, requestedLocaleIdentifier: localeIdentifier, calendar: calendar)
 //
 //        debugPrint(#file, #function, events)
 //    }
@@ -1186,7 +1186,7 @@ class Date_O_RamaTests: XCTestCase {
         let eventStartDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 11, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         let eventEndDate = GregorianDate(era: 1, year: 2022, month: 5, day: 26, hour: 3, minute: 17, second: 50, secondsFromGMT: 3 * Int(Date.SECONDS_PER_HOUR))
         
-        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitleWithoutLocation: "Foo", calendarCode: .HebrewGRA, locationData: ASALocation.NullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, type: .oneDay)
+        let event = ASAEvent(eventIdentifier: UUID().uuidString, title: "Foo", startDate: eventStartDate, endDate: eventEndDate, isAllDay: true, timeZone: CharlestonTimeZone, color: .blue, uuid: UUID(), calendarTitleWithLocation: "Foo", calendarTitle: "Foo", calendarCode: .HebrewGRA, locationData: ASALocation.NullIsland, status: .none, hasAttendees: false, attendees: nil, hasAlarms: false, availability: .notSupported, isReadOnly: true, type: .oneDay)
         
         XCTAssertFalse(event.relevant(startDate: startDate, endDate: endDate))
     }

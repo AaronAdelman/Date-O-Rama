@@ -338,7 +338,7 @@ class ASAClock: NSObject, ObservableObject, Identifiable {
         for eventCalendar in self.builtInEventCalendars {
             let eventCalendarName: String = eventCalendar.eventCalendarNameWithPlaceName(locationData: locationData, localeIdentifier: currentLocaleIdentifier)
             let eventCalendarNameWithoutLocation: String = eventCalendar.eventCalendarNameWithoutPlaceName(localeIdentifier: currentLocaleIdentifier)
-            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: locationData, eventCalendarName: eventCalendarName, calendarTitleWithoutLocation: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar, clock: self)
+            let eventCalendarEvents = eventCalendar.events(startDate: startDate, endDate: endDate, locationData: locationData, eventCalendarName: eventCalendarName, calendarTitle: eventCalendarNameWithoutLocation, regionCode: regionCode, requestedLocaleIdentifier: self.localeIdentifier, calendar: self.calendar, clock: self)
             unsortedDateEvents.add(events: eventCalendarEvents.dateEvents)
             unsortedTimeEvents.add(events: eventCalendarEvents.timeEvents)
         } // for eventCalendar in self.builtInEventCalendars

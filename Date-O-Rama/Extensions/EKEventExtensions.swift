@@ -11,12 +11,12 @@ import Foundation
 import SwiftUI
 
 extension EKEvent:  ASASingleEvent {
-    var calendarTitleWithoutLocation: String {
+    var calendarTitle: String {
         return self.calendar.title
     }
     
-    var longCalendarTitleWithoutLocation: String {
-        return calendarTitleWithoutLocation
+    var longCalendarTitle: String {
+        return calendarTitle
     }
 
     var color: Color {

@@ -138,18 +138,18 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return self.events.map { $0.calendarTitleWithLocation }.asFormattedList ?? ""
     }
     
-    var longCalendarTitleWithoutLocation: String {
-        return self.events.map { $0.calendarTitleWithoutLocation }.asFormattedList ?? ""
+    var longCalendarTitle: String {
+        return self.events.map { $0.calendarTitle }.asFormattedList ?? ""
     }
     
-    var calendarTitleWithoutLocation: String {
+    var calendarTitle: String {
         let numberOfEvents = self.events.count
         if numberOfEvents >= 4 {
-            let firstEventTitle = self.events[0].calendarTitleWithoutLocation
+            let firstEventTitle = self.events[0].calendarTitle
             let numberOfExtraEvents = numberOfEvents - 1
             return String.localizedStringWithFormat("%@ + %d", firstEventTitle, numberOfExtraEvents)
         } else {
-            return self.longCalendarTitleWithoutLocation
+            return self.longCalendarTitle
         }
     }
     

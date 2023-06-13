@@ -34,10 +34,10 @@ struct ASAEvent:  ASASingleEvent {
     }
     var uuid = UUID()
     var calendarTitleWithLocation:  String
-    var calendarTitleWithoutLocation: String
+    var calendarTitle: String
     
-    var longCalendarTitleWithoutLocation: String {
-        return calendarTitleWithoutLocation
+    var longCalendarTitle: String {
+        return calendarTitle
     }
     
     var calendarCode: ASACalendarCode
