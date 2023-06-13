@@ -146,7 +146,7 @@
         {titles: {"en": "Feast of Saints Pontian and Hippolytus"}, type: "1D", start: {mon: 8, d: 13}},
         {titles: {"en": "Feast of St. Maximilian Mary Kolbe"}, type: "1D", start: {mon: 8, d: 14}},
         {titles: {"en": "Vigil of Assumption Day"}, type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/vigil-of-assumption-day/"}},
-        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Feast of St. Stephen of Hungary", type: "1D", start: {mon: 8, d: 16}},
         {titles: {"en": "St. Roch’s Day"}, type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/st-rochs-day/"}},
 

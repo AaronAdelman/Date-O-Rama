@@ -12,7 +12,7 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {titles: {"en": "Founders’ Day"}, type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/founders-day/"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 9, d: 21}, titles: {"en": "Kwame Nkrumah Memorial Day"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 12, wkd: [6], wkdRecurrence: 1}, titles: {"en": "Farmers’ Day"}, inherits: "Farmer Day", urls: {"en": "https://nationaltoday.com/ghana-farmers-day/"}, first: {era: 1, y: 1988}},

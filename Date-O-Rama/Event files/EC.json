@@ -10,7 +10,7 @@
         {inherits: "Carnival (day 2)", type: "1D", start: {"Easter": "Easter", "offsetD": -47}, urls: {"en": "https://nationaltoday.com/ecuador-carnival/"}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/the-battle-of-pichincha-day/"}, titles: {"en": "The Battle of Pichincha Day", "es": "Batalla de Pichincha"}},
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/foundation-of-quito-day/"}, titles: {"en": "Foundation of Quito Day", "es": "Primer Grito de Independencia"}, first: {era: 1, y: 1534}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 9}, first: {era: 1, y: 1822}, urls: {"en": "https://nationaltoday.com/independence-of-guayaquil/"}, titles: {"en": "Independence of Guayaquil", "es": "Independencia de Guayaquil"}},

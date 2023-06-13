@@ -10,7 +10,7 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},
         {inherits: "Feast of Saints Cyril and Methodius", type: "1D", start: {mon: 7, d: 5}},
         {titles: {"en": "Jan Hus Day", "cs": "Den upálení mistra Jana Husa"}, type: "1D", start: {mon: 7, d: 6}},

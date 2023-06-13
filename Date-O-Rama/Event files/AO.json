@@ -18,7 +18,7 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {type: "1D", start: {mon: 4, d: 4}, titles: {"en": "Day of Peace and Reconciliation", "pt": "Dia da Paz e Reconciliação"}, emoji: "☮️"},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 9, d: 17}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1975}, urls: {"en": "https://nationaltoday.com/angola-independence-day/"}},

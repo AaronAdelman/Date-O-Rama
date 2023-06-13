@@ -11,7 +11,7 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 3, d: 1}, first: {era: 1, y: 1992}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Bosnia_and_Herzegovina)"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {inherits: "Labor Day", type: "nD", start: {mon: 5, d: 1}, end: {mon: 5, d: 2}},
+        {inherits: "Labour Day", type: "nD", start: {mon: 5, d: 1}, end: {mon: 5, d: 2}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
         {inherits: "St. Vitus Day", type: "1D", start: {mon: 6, d: 28}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},

@@ -79,7 +79,7 @@
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/bataan-day/"}, titles: {"en": "Bataan Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/birth-anniversary-of-manlilikha-ng-bayan-masino-intaray/"}, titles: {"en": "Birth anniversary of Manlilikha ng Bayan Masino Intaray"}, inherits: "*BDay*", first: {era: 1, y: 1943}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/lapu-lapu-day/"}, titles: {"en": "Lapu Lapu Day"}, first: {era: 1, y: 1961}},
-        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/philippines-labor-day/"}, inherits: "Labor Day", first: {era: 1, y: 1913}},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/philippines-labor-day/"}, inherits: "Labour Day", first: {era: 1, y: 1913}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-heritage-month/"}, titles: {"en": "National Heritage Month"}},
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-flag-day-in-the-philippines/"}, inherits: "National Flag Day", first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-fisherfolks-day/"}, titles: {"en": "National Fisherfolks Day"}, first: {era: 1, y: 2000}, emoji: "🎣"},

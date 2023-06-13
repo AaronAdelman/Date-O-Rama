@@ -11,10 +11,10 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", inherits: "Africa Day", start: {d: 25, mon: 5}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 7, d: 22}, first: {era: 1, y: 1994}},
-        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},

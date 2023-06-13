@@ -22,7 +22,7 @@
         {type: "1D", start: {mon: 4, d: 1}, titles: {"en": "Odisha Day"}, notes: {"en": "Utkal Dibasa"}, urls: {"en": "https://nationaltoday.com/odisha-day/"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {d: 14, mon: 4}, titles: {"en": "Dr. Babasaheb Ambedkar Jayanti"}, notes: {"en": "Bhim Jayanti"}, urls: {"en": "https://en.wikipedia.org/wiki/Ambedkar_Jayanti"}},
         {type: "1D", start: {d: 14, mon: 4}, titles: {"en": "Samrat Ashoka’s Jayanti"}, inherits: "*BDay*"},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "Maharashtra Day", "mr": "महाराष्ट्र दिन"}, notes: {"en": "Maharashtra Din"}, first: {era: 1, y: 1960}, urls: {"en": "https://en.wikipedia.org/wiki/Maharashtra_Day"}},
         {type: "1D", start: {mon: 5, d: 1}, titles: {"en": "Gujarat Day"}, first: {era: 1, y: 1960}},
         {type: "1D", start: {mon: 5, d: 9}, titles: {"en": "Rabindra Jayanti"}},

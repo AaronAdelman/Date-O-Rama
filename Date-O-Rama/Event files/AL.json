@@ -24,7 +24,7 @@
         {type: "1D", start: {mon: 3, d: 2}, titles: {"en": "League of Lezhë Day", "sq": "Dita e Besëlidhjes së Lezhës"}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 3, d: 7}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {type: "1D", start: {mon: 11, d: 22}, titles: {"en": "Alphabet Day", "sq": "Dita e Alfabetit"}},
         {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "Emergence of the KLA", "sq": "Dalja në skenë e UÇK-s"}},
         {inherits: "Constitution Day", type: "1D", start: {mon: 11, d: 28}},

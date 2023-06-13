@@ -17,7 +17,7 @@
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Memorial Day", type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaldaycalendar.com/memorial-day-last-monday-in-may/", "he": "https://www.daysoftheyear.co.il/2019/05/memorial-day-us.html"}, first: {era: 1, y: 1971}, notes: {"en": "Decoration Day"}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Labor_Day"}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Labor_Day"}},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/three-kings-day/"}},
         {inherits: "Shrove Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}},
         {inherits: "Ash Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -46}},

@@ -12,7 +12,7 @@
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 28, thruMon: 8, thruD: 3, wkd: [5]}},
         {titles: {"en": "Somers’ Day"}, type: "1D", start: {mon: 7, d: 29, thruMon: 8, thruD: 4, wkd: [6]}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Remembrance Day", type: "1D", start: {d: 11, mon: 11}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},

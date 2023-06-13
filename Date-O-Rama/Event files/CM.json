@@ -8,10 +8,10 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/youth-day-cameroon/"}, inherits: "Youth Day", first: {era: 1, y: 1963}},
-        {inherits: "Labor Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/cameroon-republic-day/"}, inherits: "Republic Day"},
         {inherits: "National Day", type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1960}},
-        {inherits: "Assumption of Mary", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},

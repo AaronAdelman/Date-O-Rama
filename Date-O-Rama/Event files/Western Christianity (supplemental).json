@@ -164,5 +164,6 @@
         {type: "1D", start: {"Easter": "Easter", "offsetD": 48}, urls: {"en": "https://nationaltoday.com/national-christian-t-shirt-day/"}, titles: {"en": "National Christian T-Shirt Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-black-americas-day-of-repentance/"}, titles: {"en": "National Black America’s Day of Repentance"}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/forgiveness-day/"}, titles: {"en": "Forgiveness Day"}, first: {era: 1, y: 1994}},
+        {inherits: "1st Advent Sunday", type: "1D", start: {mon: 11, d: 27, "thruMon": 12, "thruD": 3, wkd: [1]}, titles: {"en": "Sunday of the Dead", "de": "Totensonntag"}, notes: {"en": "Eternity Sunday", "de": "Ewigkeitssonntag\nTotenfest"}, urls: {"en": "https://en.wikipedia.org/wiki/Totensonntag"}},
     ]
 }
