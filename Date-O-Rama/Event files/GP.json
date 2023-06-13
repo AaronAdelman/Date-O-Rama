@@ -5,7 +5,9 @@
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.95, "blue": 0.0},
     eventSpecifications: [
-        {inherits: "Emancipation Day", type: "1D", start: {mon: 5, d: 27}},
+        {inherits: "Laetare", type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/slavery-abolition-day-guadeloupe/"}, inherits: "Slavery Abolition Day"},
+        {inherits: "Emancipation Day", type: "1D", start: {mon: 5, d: 27}},
     ]
 }
