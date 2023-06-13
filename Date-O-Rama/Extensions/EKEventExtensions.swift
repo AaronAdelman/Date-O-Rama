@@ -14,6 +14,10 @@ extension EKEvent:  ASASingleEvent {
     var calendarTitleWithoutLocation: String {
         return self.calendar.title
     }
+    
+    var longCalendarTitleWithoutLocation: String {
+        return calendarTitleWithoutLocation
+    }
 
     var color: Color {
         get {

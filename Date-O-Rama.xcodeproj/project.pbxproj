@@ -642,6 +642,8 @@
 		A5E292F6285A658200925EBD /* BZ.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E292F4285A658200925EBD /* BZ.json */; };
 		A5E292F8285A65FB00925EBD /* BM.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E292F7285A65FB00925EBD /* BM.json */; };
 		A5E292F9285A65FB00925EBD /* BM.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E292F7285A65FB00925EBD /* BM.json */; };
+		A5E2E4EB2A388011000E8049 /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
+		A5E2E4EC2A388011000E8049 /* ASASingleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */; };
 		A5E3606424C71FBC0000A268 /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
 		A5E3606624C756FF0000A268 /* IL (Hebrew).json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606524C756FF0000A268 /* IL (Hebrew).json */; };
 		A5E3606824C7571A0000A268 /* Lubavitch.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606724C7571A0000A268 /* Lubavitch.json */; };
@@ -1446,6 +1448,7 @@
 		A5E292F1285A650100925EBD /* BB.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BB.json; sourceTree = "<group>"; };
 		A5E292F4285A658200925EBD /* BZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BZ.json; sourceTree = "<group>"; };
 		A5E292F7285A65FB00925EBD /* BM.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BM.json; sourceTree = "<group>"; };
+		A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASASingleEvent.swift; sourceTree = "<group>"; };
 		A5E3606324C71FBC0000A268 /* Judaism.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Judaism.json; sourceTree = "<group>"; };
 		A5E3606524C756FF0000A268 /* IL (Hebrew).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "IL (Hebrew).json"; sourceTree = "<group>"; };
 		A5E3606724C7571A0000A268 /* Lubavitch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Lubavitch.json; sourceTree = "<group>"; };
@@ -2258,6 +2261,7 @@
 				A5DB52D7278B1880001562C1 /* ASAMoonPhaseType.swift */,
 				A5307023279867E4004A5B37 /* ASAMultiEvent.swift */,
 				A5365A7C278C8E5A0090AFB3 /* ASAPointEventType.swift */,
+				A5E2E4EA2A388010000E8049 /* ASASingleEvent.swift */,
 				A5F43E29278639DD00FCDB88 /* ASATimeChangeType.swift */,
 			);
 			path = Events;
@@ -3392,6 +3396,7 @@
 				A566F4892483D7CF000A05B5 /* DateExtensions.swift in Sources */,
 				A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */,
 				A5E4301F263FF1C3007CB470 /* EKParticipantExtensions.swift in Sources */,
+				A5E2E4EC2A388011000E8049 /* ASASingleEvent.swift in Sources */,
 				A5BC4DE126494FBE00BF27F2 /* EKRecurrenceDayOfWeekExtensions.swift in Sources */,
 				A53437532857971800F8E8AF /* ASAJulianCalendar.swift in Sources */,
 				A59D80382600C57D00FD8BBF /* ASADateComponents.swift in Sources */,
@@ -3446,6 +3451,7 @@
 				A53A5B062451E945005F9876 /* CLLocationExtensions.swift in Sources */,
 				A5B4E02E2625E688005D6692 /* ASADateORamaApp.swift in Sources */,
 				A5E471A024646C50002BB471 /* ASATimeFormatChooserView.swift in Sources */,
+				A5E2E4EB2A388011000E8049 /* ASASingleEvent.swift in Sources */,
 				A564C1402548731B000F2CDF /* ASAClockCellText.swift in Sources */,
 				A59D80752600DC2300FD8BBF /* EdgeInsetsExtensions.swift in Sources */,
 				A506E3D8252C9378009345A0 /* ASAClockCell.swift in Sources */,

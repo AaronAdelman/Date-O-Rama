@@ -48,6 +48,7 @@ protocol ASAEventCompatible {
     var colors:  Array<Color> { get }
     var calendarTitleWithLocation:  String { get }
     var calendarTitleWithoutLocation:  String { get }
+    var longCalendarTitleWithoutLocation:  String { get }
     var calendarCode:  ASACalendarCode { get }
     var geoLocation: CLLocation? { get }
     var isReadOnly: Bool { get }
@@ -60,12 +61,6 @@ protocol ASAEventCompatible {
     
     var type: ASAEventSpecificationType { get }
 } // protocol ASAEventCompatible
-
-protocol ASASingleEvent: ASAEventCompatible {
-    var url: URL? { get } // The URL for the calendar item.
-    var hasNotes: Bool { get } // A Boolean value that indicates whether the calendar item has notes.
-    var notes: String? { get } // The notes associated with the calendar item.
-} // protocol ASASingleEvent
 
 
 // MARK:  -

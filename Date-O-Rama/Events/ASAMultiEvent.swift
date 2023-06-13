@@ -113,7 +113,7 @@ struct ASAMultiEvent:  ASAEventCompatible {
     } // var urls: Array<URL>
     
 //    var hasNotes: Bool = false
-//    
+//
 //    var notes: String? = nil
     
     var allNotes: Array<String> {
@@ -138,6 +138,10 @@ struct ASAMultiEvent:  ASAEventCompatible {
         return self.events.map { $0.calendarTitleWithLocation }.asFormattedList ?? ""
     }
     
+    var longCalendarTitleWithoutLocation: String {
+        return self.events.map { $0.calendarTitleWithoutLocation }.asFormattedList ?? ""
+    }
+    
     var calendarTitleWithoutLocation: String {
         let numberOfEvents = self.events.count
         if numberOfEvents >= 4 {
@@ -145,7 +149,7 @@ struct ASAMultiEvent:  ASAEventCompatible {
             let numberOfExtraEvents = numberOfEvents - 1
             return String.localizedStringWithFormat("%@ + %d", firstEventTitle, numberOfExtraEvents)
         } else {
-            return self.events.map { $0.calendarTitleWithoutLocation }.asFormattedList ?? ""
+            return self.longCalendarTitleWithoutLocation
         }
     }
     

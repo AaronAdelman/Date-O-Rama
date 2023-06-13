@@ -47,7 +47,7 @@ struct ASAEventDetailView: View {
             }
             #endif
             
-            ASAEventDetailsTitleSection(event: event)
+            ASAEventDetailsTitleSection(event: event, location: location)
             
             ASAEventDetailDateTimeSection(clock: clock, event: event, location: location, usesDeviceLocation: usesDeviceLocation)
             
@@ -123,6 +123,7 @@ struct ASAEventDetailView: View {
 
 struct ASAEventDetailsTitleSection: View {
     var event: ASAEventCompatible
+    var location: ASALocation
     
     var body: some View {
         Section {
@@ -140,7 +141,10 @@ struct ASAEventDetailsTitleSection: View {
             }
             HStack {
                 ASAColorRectangle(colors: event.colors)
-                Text(event.calendarTitleWithLocation)
+                VStack(alignment: .leading, spacing: 8.0) {
+                    Text(event.longCalendarTitleWithoutLocation)
+                    Text(location.formattedOneLineAddress)
+                } // VStack
             } // HStack
         } // Section
     }
@@ -154,9 +158,6 @@ struct ASAEventDetailsNotesAndURLSection: View {
     
     var body: some View {
         Section {
-//            if event.hasNotes {
-//                Text(event.notes!)
-//            }
             ForEach(event.allNotes, id: \.self) {
                 notes in
                 Text(notes)
