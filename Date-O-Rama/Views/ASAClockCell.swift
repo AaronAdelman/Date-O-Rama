@@ -430,7 +430,7 @@ struct ASAEventsForEach: View {
             let eventIsTodayOnly = event.isOnlyForRange(rangeStart: rangeStart, rangeEnd: rangeEnd)
             let (startDateString, endDateString) = (event.startDateString == nil && event.endDateString == nil) ? self.primaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location) : (event.startDateString, event.endDateString)
             
-            ASALinkedEventCell(event: event, primaryClock: primaryClock, now: $now, rangeStart: rangeStart, rangeEnd: rangeEnd, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
+            ASALinkedEventCell(event: event, primaryClock: primaryClock, now: $now, location: location, usesDeviceLocation: usesDeviceLocation, isForClock: true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString!)
         } // ForEach
     }
 }

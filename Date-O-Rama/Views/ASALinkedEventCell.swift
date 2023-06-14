@@ -22,8 +22,6 @@ struct ASALinkedEventCell:  View {
     #endif
     @State private var showingEventView = false
     @Binding var now:  Date
-    var rangeStart:  Date
-    var rangeEnd:  Date
     var location: ASALocation
     var usesDeviceLocation: Bool
     
