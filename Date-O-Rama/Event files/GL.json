@@ -14,14 +14,13 @@
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
-        {inherits: "National Day", type: "1D", start: {mon: 6, d: 21}, first: {era: 1, y: 1985}, urls: {"en": "https://en.wikipedia.org/wiki/Greenland_National_Day"}},
+        {inherits: "National Day", type: "1D", start: {"equinoxOrSolstice": "Jun"}, first: {era: 1, y: 1985}, urls: {"en": "https://www.officeholidays.com/holidays/greenland/ullortuneq"}, notes: {"en": "Ullortuneq"}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
-        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
 
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
-        {type: "1D", start: {"equinoxOrSolstice": "Jun"}, titles: {"en": "Ullortuneq"}, urls: {"en": "https://www.officeholidays.com/holidays/greenland/ullortuneq"}},
     ]
 }
