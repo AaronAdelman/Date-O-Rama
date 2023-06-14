@@ -10,5 +10,6 @@
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/tourism-day/"}, titles: {"en": "Tourism Day"}},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/earth-gods-birthday/"}, titles: {"en": "Earth God’s Birthday"}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/god-of-medicines-birthday/"}, titles: {"en": "God of Medicine’s Birthday"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
    ]
 }

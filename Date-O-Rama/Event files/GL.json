@@ -22,5 +22,6 @@
 
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "1D", start: {"equinoxOrSolstice": "Jun"}, titles: {"en": "Ullortuneq"}, urls: {"en": "https://www.officeholidays.com/holidays/greenland/ullortuneq"}},
     ]
 }

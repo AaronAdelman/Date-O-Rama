@@ -16,6 +16,7 @@
         {type: "1D", start: {mon: 6, d: 7}, titles: {"en": "Battle of Arica", "es": "Asalto y Toma del Morro de Arica"}},
         {type: "1D", start: {mon: 6, d: 21}, titles: {"en": "National Day of Aboriginal Peoples", "es": "Día Nacional de los Pueblos Indígenas"}},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Feast of Saints Peter and Paul"},
+        {type: "1D", start: {mon: 6, d: 26, thruMon: 7, thruD: 2, wkd: [2]}, urls: {"en": "https://nationaltoday.com/saint-peter-and-saint-paul-day-chile/"}, inherits: "Feast of Saints Peter and Paul (in lieu)"},
         {inherits: "Feast of Our Lady of Mount Carmel", type: "1D", start: {mon: 7, d: 16}, first: {era: 1, y: 2007}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {type: "1D", start: {mon: 8, d: 20}, titles: {"en": "Nativity of Liberator Bernardo O'Higgins", "es": "Nacimiento del Prócer de la Independencia"}, inherits: "*BDay*"},

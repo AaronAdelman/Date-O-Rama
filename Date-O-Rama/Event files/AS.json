@@ -7,5 +7,6 @@
     eventSpecifications: [
         {type: "1D", start: {mon: 7, d: 16}, titles: {"en": "Manu’a Cession Day (in lieu)"}, urls: {"en": "https://nationaltoday.com/manua-cession-day-in-lieu/"}, first: {era: 1, y: 1983}},
         {inherits: "Children’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Juneteenth", type: "1D", start: {mon: 6, d: 19}, first: {type: "1D", era: 1, y: 1886}},
    ]
 }

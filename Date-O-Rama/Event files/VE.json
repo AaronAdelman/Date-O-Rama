@@ -23,5 +23,7 @@
         {inherits: "St. Joseph’s Day", type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/st-josephs-day-venezuela/"}},
         {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/st-johns-day-venezuela/"}, inherits: "St. John’s Day"},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {inherits: "Feast of Saints Peter and Paul", type: "1D", start: {mon: 6, d: 29}},
     ]
 }

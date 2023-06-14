@@ -9,5 +9,6 @@
         {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 12}, first: {era: 1, y: 1979}},
         {titles: {"en": "Unimwane Day"}, type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/unimwane-day/"}, emoji: "👴"},
         {type: "1D", start: {mon: 8, d: 5}, inherits: "Youth Day", urls: {"en": "https://nationaltoday.com/kiribati-youth-day/"}},
+        {type: "1D", titles: {"en": "Police National Day"}, start: {mon: 6, d: 23}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/kiribati/police-national-day"}, emoji: "👮‍♂️👮‍♀️"},
     ]
 }

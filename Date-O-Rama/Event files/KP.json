@@ -8,7 +8,7 @@
         {inherits: "National Liberation Day of Korea", type: "1D", start: {d: 15, mon: 8}, first: {era: 1, y: 1950}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 11, d: 16}},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 6}, titles: {"en": "Korean Children’s Union Day", "ko": "조선소년단창립절"}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 6}, titles: {"en": "Korean Children’s Union Day", "ko": "조선소년단창립절"}, notes: {"en": "Children’s Union Foundation Day"}, first: {era: 1, y: 1946}},
         {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "Day of Songun"}, urls: {"en": "https://nationaltoday.com/day-of-songun/"}, first: {era: 1, y: 2013}, emoji: "🎖"},
   ]
 }

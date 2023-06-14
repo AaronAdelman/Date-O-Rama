@@ -6,5 +6,6 @@
     calendarColor: {"red": 1.00, "green": 0.88, "blue": 0.000},
     eventSpecifications: [
         {inherits: "Independence Day", type: "1D", start: {d: 11, mon: 2}, first: {era: 1, y: 1929}},
+        {inherits: "Feast of Saints Peter and Paul", type: "1D", start: {mon: 6, d: 29}},
     ]
 }

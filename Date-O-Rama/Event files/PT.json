@@ -16,5 +16,8 @@
         {inherits: "Republic Day", type: "1D", start: {mon: 10, d: 5}, first: {era: 1, y: 1910}, urls: {"en": "https://nationaltoday.com/portugal-republic-day/"}},
         {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/freedom-day-portugal/"}, inherits: "Freedom Day"},
         {type: "1D", start: {mon: 4, d: 14}, inherits: "National Coffee Day"},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {inherits: "Feast of St. Anthony of Padua", type: "1D", start: {mon: 6, d: 13}},
+        {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
     ]
 }

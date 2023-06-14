@@ -15,5 +15,7 @@
         {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/nafelser-fahrt/"}, titles: {"en": "Näfelser Fahrt"}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/jura-independence-day/"}, titles: {"en": "Jura Independence Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "National Coffee Day"},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {inherits: "Feast of Saints Peter and Paul", type: "1D", start: {mon: 6, d: 29}},
   ]
 }

@@ -11,5 +11,6 @@
         {type: "1D", start: {mon: 10, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/liberation-day-san-marino/"}, inherits: "Liberation Day", first: {era: 1, y: 1740}},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-arengo/"}, titles: {"en": "Anniversary of the Arengo"}, first: {era: 1, y: 1906}},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
     ]
 }

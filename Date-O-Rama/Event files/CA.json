@@ -24,7 +24,7 @@
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Islander Day", "fr": "Fête des Insulaires"}, urls: {"en": "https://nationaltoday.com/islander-day/"}, first: {era: 1, y: 2008}},
         {inherits: "Heritage Day", type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2015}, locations: {"en": "Nova Scotia"}, urls: {"en": "https://nationaltoday.com/nova-scotia-heritage-day/"}},
         {type: "1D", start: {mon: 6, d: 21}, titles: {"en": "National Indigenous Peoples Day", "fr": "Journée nationale des Autochthones"}, notes: {"en": "National Aboriginal Day"}, urls: {"en": "https://nationaltoday.com/canada-national-indigenous-peoples-day/"}, first: {era: 1, y: 1996}},
-        {type: "1D", start: {mon: 6, d: 21, "thruD": 27, wkd: [2]}, titles: {"en": "June Holiday"}, "locations": {"en": "Newfoundland and Labrador"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 6, d: 21, "thruD": 27, wkd: [2]}, titles: {"en": "June Holiday"}, "locations": {"en": "Newfoundland and Labrador"}, first: {era: 1, y: 2020}, urls: {"en": "https://www.officeholidays.com/holidays/canada/newfoundland-and-labrador/newfoundland-discovery-day"}, notes: {"en": "June Day"}},
         {type: "1D", start: {mon: 6, d: 24}, titles: {"en": "National Holiday of Quebec", "fr": "Fête nationale du Québec / Saint-Jean-Baptiste"}},
         {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day"},
         {inherits: "Heritage Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/heritage-day-in-alberta/"}, locations: {"en": "Alberta"}},
