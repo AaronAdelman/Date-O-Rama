@@ -484,8 +484,6 @@
 		A5BDE7A12667B66800F47416 /* IL.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BDE79F2667B66800F47416 /* IL.json */; };
 		A5BDE7AF2667FBFE00F47416 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
 		A5BDE7B02667FBFE00F47416 /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */; };
-		A5C170C02799C72A006C3B88 /* ASAEventDetailDispatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C170BF2799C72A006C3B88 /* ASAEventDetailDispatchView.swift */; };
-		A5C170C12799C72A006C3B88 /* ASAEventDetailDispatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C170BF2799C72A006C3B88 /* ASAEventDetailDispatchView.swift */; };
 		A5C4DCB02694C99B005926D1 /* Islam (times, ISNA).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */; };
 		A5C4DCB12694C99B005926D1 /* Islam (times, ISNA).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */; };
 		A5C72A0B2967633100B8442A /* GB (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A5C72A0A2967633100B8442A /* GB (Julian).json */; };
@@ -1360,7 +1358,6 @@
 		A5BDE7AE2667FBFE00F47416 /* DictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		A5BFC5B4246AB5B50075AF58 /* ASAEKEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEKEventManager.swift; sourceTree = "<group>"; };
 		A5BFC5B6246B29600075AF58 /* ASAEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEvent.swift; sourceTree = "<group>"; };
-		A5C170BF2799C72A006C3B88 /* ASAEventDetailDispatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAEventDetailDispatchView.swift; sourceTree = "<group>"; };
 		A5C4DCAF2694C99B005926D1 /* Islam (times, ISNA).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Islam (times, ISNA).json"; sourceTree = "<group>"; };
 		A5C72A0A2967633100B8442A /* GB (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "GB (Julian).json"; sourceTree = "<group>"; };
 		A5C72A0D2967681700B8442A /* RU (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "RU (Julian).json"; sourceTree = "<group>"; };
@@ -2378,7 +2375,6 @@
 				A5EB4F8C2850980400A32FB1 /* ASACloseBoxImage.swift */,
 				A5AAA74826568452000C18AC /* ASAEditExternalEventButton.swift */,
 				A5A9667B25A31EC900CF158F /* ASAEventCell.swift */,
-				A5C170BF2799C72A006C3B88 /* ASAEventDetailDispatchView.swift */,
 				A5AF2C4A2636ED8900FD479D /* ASAEventDetailView.swift */,
 				A577066C2896B801000AA963 /* ASAGetInfoLabel.swift */,
 				A5A9666925A31E2A00CF158F /* ASALinkedEventCell.swift */,
@@ -3338,7 +3334,6 @@
 				A5EB60E42892E4E9006009AF /* ASALocationManager.swift in Sources */,
 				A5D135BF27C537C500A1A525 /* ASACalendarSupportingQuarters.swift in Sources */,
 				A566F4542483D6EC000A05B5 /* ContentView.swift in Sources */,
-				A5C170C12799C72A006C3B88 /* ASAEventDetailDispatchView.swift in Sources */,
 				A59D806A2600C6FB00FD8BBF /* ASAEKEventManager.swift in Sources */,
 				A59322632577F61100318BC3 /* FontExtensions.swift in Sources */,
 				A59D806B2600C6FB00FD8BBF /* ASAEventsFile.swift in Sources */,
@@ -3449,7 +3444,6 @@
 				A5EFE4242436045B00861979 /* ASAUserData.swift in Sources */,
 				A5BB7EE6244EA48E00932AF2 /* ASAClockDetailView.swift in Sources */,
 				A5A9667C25A31EC900CF158F /* ASAEventCell.swift in Sources */,
-				A5C170C02799C72A006C3B88 /* ASAEventDetailDispatchView.swift in Sources */,
 				A5BD09CB26B17DEA00738C0B /* ASADayFractionView.swift in Sources */,
 				A5C77C4024339E0600CFEE47 /* ASACalendarChooserView.swift in Sources */,
 				A5BCED10252C8E8C008B8339 /* ASALocationSymbol.swift in Sources */,
