@@ -10,7 +10,7 @@
         {inherits: "Gawai Dayak", type: "nD", start: {mon: 6, d: 1}, "end": {mon: 6, d: 2}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "*BDay*", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Yang di-Pertuan Agong’s Birthday"}, urls: {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}},
+        {inherits: "*BDay*", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Yang di-Pertuan Agong’s Birthday"}, urls: {"en": "https://nationaltoday.com/the-yang-di-pertuan-agongs-birthday/"}, notes: {"en": "Birthday of SPB Yang di Pertuan Agong"}},
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "George Town Heritage Day"}, "locations": {"en": "Penang"}, urls: {"en": "https://nationaltoday.com/george-town-heritage-day-in-penang/"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 7, d: 22}, titles: {"en": "Sarawak Day"}, urls: {"en": "https://nationaltoday.com/sarawak-day/"}, first: {era: 1, y: 2016}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 10, d: 1}},

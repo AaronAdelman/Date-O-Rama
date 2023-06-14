@@ -1,7 +1,7 @@
 {
     titles: {"*": "BT"},
     "//": "Bhutan",
-    "TODO": "Buddhist holidays, holidays scheduled on the Tibetan calendar",
+    "TODO": "Buddhist holidays, holidays scheduled on the Tibetan calendar and Bhutanese",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.40, "blue": 0.12},

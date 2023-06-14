@@ -76,5 +76,7 @@
         {type: "1M", titles: {"en": "Migraine Awareness Month"}, start: {mon: 6}},
         {type: "1M", titles: {"en": "Gynaecological Cancer Awareness Month"}, start: {mon: 9}},
         {type: "1M", start: {mon: 11}, inherits: "Movember", first: {era: 1, y: 2004}},
+        
+        {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, inherits: "King’s Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/new-zealand-kings-birthday"}},
         ]
     }
