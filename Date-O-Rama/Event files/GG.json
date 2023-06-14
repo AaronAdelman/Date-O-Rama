@@ -5,9 +5,22 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.91, "green": 0.07, "blue": 0.18},
     eventSpecifications: [
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Early May Bank Holiday"}},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/guernsey-liberation-day/"}, inherits: "Liberation Day", first: {era: 1, y: 1945}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, inherits: "Spring Bank Holiday"},
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, inherits: "Summer Bank Holiday", locations: {"en": "Alderney"}},
+        {type: "1D", start: {mon: 12, d: 15}, titles: {"en": "Homecoming Day"}, locations: {"en": "Alderney"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/guernsey-liberation-day/"}, inherits: "Liberation Day", first: {era: 1, y: 1945}, locations: {"en": "Sark"}},
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
-        {inherits: "Liberation Day", type: "1D", start: {mon: 5, d: 9}, first: {era: 1, y: 1945}},
-        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/guernsey-liberation-day/"}, inherits: "Liberation Day"},
     ]
 }
