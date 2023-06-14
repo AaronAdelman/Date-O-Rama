@@ -19,7 +19,7 @@
         {titles: {"he": "יום־שנה של עלי הכהן ושני בניו", "en": "Yohrtsayt of ‘Eli the Kohen and his two sons"}, type: "1D", start: {mon: 9, d: 10}, inherits: "*Death Anniv*"},
         {titles: {"he": "יום שבו ארון הברית נשבה", "en": "Day the Ark of the Covenant was captured"}, type: "1D", start: {mon: 9, d: 10}},
         {titles: {"he": "יום־שנה של שמואל הנביא", "en": "Yohrtsayt of Shemu’el the Prophet"}, type: "1D", start: {mon: 9, d: 28}, inherits: "*Death Anniv*"},
-        {titles: {"he": "תענית תקופת חמלניצקי", "en": "Fast of the Khmelnitsky Massacres"}, type: "1D", start: {mon: 10, d: 20}},
+        {titles: {"he": "תענית תקופת חמלניצקי", "en": "Fast of the Khmelnitsky Massacres"}, type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://oukosher.org/halacha-yomis?category=20th-of-sivan"}},
         {titles: {"he": "יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט", "en": "Day of stopping of bringing of first fruits to Yerushalayim in the days of Yarov‘am ben Nevaṭ"}, type: "1D", start: {mon: 10, d: 23}},
         {titles: {"he": "יום־שנה של רבן שמעון בן גמליאל הזקן, רבי ישמעאל, ורבי חנינא סגן הכהנים", "en": "Yohrtsayt of Rabban Shim‘on ben Gamli’el hazZaqen, Rabbi Yishma‘e’l, and Rabbi Ḥanina’ Seghan hakKohanim"}, type: "1D", start: {mon: 10, d: 25}, inherits: "*Death Anniv*"},
         {titles: {"he": "יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו", "en": "Yohrtsayt of Rabbi Ḥanina’ ben Teradhyon and the day a Torah scroll was burned with him"}, type: "1D", start: {mon: 10, d: 27}, inherits: "*Death Anniv*"},
