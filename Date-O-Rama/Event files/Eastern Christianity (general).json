@@ -19,7 +19,7 @@
         {titles: {"en": "Feast of St. Mary of Egypt"}, type: "1D", start: {"Easter": "Easter", "offsetD": -14}},
         {titles: {"en": "Lazarus Saturday"}, notes: {"en": "Lent (day 34)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -8}},
         {inherits: "Palm Sunday", type: "1D", start: {"Easter": "Easter", "offsetD": -7}, urls: {"en": "https://nationaltoday.com/orthodox-palm-sunday/"}},
-        {inherits: "Holy Monday", titles: {"en": "Holy Monday"}, notes: {"en": "Lent (day 35)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -6}},
+        {inherits: "Holy Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -6}},
         {inherits: "Holy Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -5}},
         {inherits: "Holy Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -4}},
         {inherits: "Maundy Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -3}},
