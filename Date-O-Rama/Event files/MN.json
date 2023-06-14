@@ -1,6 +1,7 @@
 {
     titles: {"*": "MN"},
     "//": "Mongolia",
+    "TODO": "Buddha Purnima",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.00, "green": 0.85, "blue": 0.00},

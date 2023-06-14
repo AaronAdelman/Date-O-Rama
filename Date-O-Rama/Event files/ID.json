@@ -1,7 +1,7 @@
 {
     titles: {"*": "ID"},
     "//": "Indonesia",
-    "TODO": "Hindu and Muslim holidays?",
+    "TODO": "Hindu and Muslim holidays?, Waisak Day",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},

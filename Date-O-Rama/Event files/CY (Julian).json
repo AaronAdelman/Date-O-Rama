@@ -1,11 +1,10 @@
 {
-    titles: {"*": "RO"},
-    "//": "Romania",
+    titles: {"*": "CY"},
+    "//": "Cyprus",
     defaultLocale: "en",
     calendarCode: "jul",
-    calendarColor: {"red": 0.00, "green": 0.13, "blue": 0.41},
+    calendarColor: {"red": 0.84, "green": 0.47, "blue": 0.00},
     eventSpecifications: [
-        {inherits: "Heroes’ Day", type: "1D", start: {Easter: "Easter", offsetD: 39}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
     ]
