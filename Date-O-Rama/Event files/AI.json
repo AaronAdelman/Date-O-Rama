@@ -8,6 +8,6 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-heroes-and-heroines-day/"}, titles: {"en": "National Heroes and Heroines Day"}, first: {era: 1, y: 1967}},
         {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/james-ronald-webster-day/"}, titles: {"en": "James Ronald Webster Day"}, first: {era: 1, y: 2010}},
-        {type: "1D", start: {mon: 6, d: 12}, inherits: "Birthday of King Charles III", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
+        {type: "1D", start: {mon: 6, d: 12}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
     ]
 }

@@ -7,6 +7,6 @@
     eventSpecifications: [
         {inherits: "National Children’s Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 10}, first: {era: 1, y: 1978}, urls: {"en": "https://nationaltoday.com/tuvalu-independence-day/"}},
-        {type: "1D", start: {mon: 6, d: 10}, inherits: "Birthday of King Charles III", first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 6, d: 10}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}},
     ]
 }

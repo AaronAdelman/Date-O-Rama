@@ -11,6 +11,6 @@
         {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: 1}, titles: {"en": "August Festival (day 3)"}},
         {type: "1D", start: {mon: 10, d: 17}, titles: {"en": "Heroes and Forefathers Day"}, urls: {"en": "https://nationaltoday.com/heroes-and-forefathers-day/"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/lavity-stoutts-birthday/"}, titles: {"en": "Lavity Stoutt’s Birthday"}, first: {era: 1, y: 1929}},
-        {type: "1D", start: {mon: 6, d: 16}, inherits: "Birthday of King Charles III", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
+        {type: "1D", start: {mon: 6, d: 16}, inherits: "King Charles’ Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/cook-islands/king-charles-birthday"}},
     ]
 }
