@@ -66,7 +66,8 @@
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}, urls: {"en": "https://nationaltoday.com/orthodox-pentecost-monday/"}},
         
         {inherits: "St. Florian’s Day", type: "1D", start: {mon: 5, d: 4}},
-        {inherits: "St. Rupert’s Day", type: "1D", start: {mon: 3, d: 27}},        {inherits: "Feast of St. Martin of Tours", type: "1D", start: {mon: 10, d: 12}},
+        {inherits: "St. Rupert’s Day", type: "1D", start: {mon: 3, d: 27}},
+        {inherits: "Feast of St. Martin of Tours", type: "1D", start: {mon: 10, d: 12}},
         {inherits: "St. Maroun Day", type: "1D", start: {mon: 2, d: 14}},
         {inherits: "Feast of St. Vladimir", type: "1D", start: {mon: 7, d: 15}},
         {type: "1D", start: {mon: 12, d: 26}, inherits: "Synaxis of the Mother of God"},
