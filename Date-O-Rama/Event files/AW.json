@@ -5,8 +5,19 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.25, "green": 0.56, "blue": 0.87},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/aruba/betico-croes-day"}, titles: {"en": "Betico Croes Day"}, inherits: "*BDay*", first: {era: 1, y: 1938}},
+        {inherits: "Carnival Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://www.officeholidays.com/holidays/aruba/carnival-monday"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-aruba/"}, titles: {"en": "National Anthem and Flag Day"}, first: {era: 1, y: 1976}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/aruba/netherlands-kings-birthday"}, inherits: "King’s Birthday"},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-aruba/"}, titles: {"en": "National Anthem and Flag Day"}, first: {era: 1, y: 1976}},
    ]
 }

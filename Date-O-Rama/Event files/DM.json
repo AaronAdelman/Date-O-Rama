@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.00, "green": 0.60, "blue": 0.27},
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
-        {titles: {"en": "Carnival Monday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://en.wikipedia.org/wiki/Carnival"}},
+        {inherits: "Carnival Monday", type: "1D", start: {"Easter": "Easter", "offsetD": -48}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
