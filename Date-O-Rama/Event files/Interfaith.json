@@ -4,8 +4,8 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.8, "green": 0.8, "blue": 0.98},
     eventSpecifications: [
-        {titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, first: {type: "1D", era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/world-religion-day-third-sunday-in-january/", "he": "https://www.daysoftheyear.co.il/2019/01/world-religion-day.html"}},
-        {titles: {"en": "Spiritual Literacy Month"}, type: "1M", start: {mon: 12}, emoji: "🙏", urls: {"en": "https://nationaldaycalendar.com/spiritual-literacy-month-december/"}, first: {type: "1D", era: 1, y: 1996}},
+        {titles: {"en": "World Religion Day", "he": "יום הדת העולמי"}, type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, first: {era: 1, y: 1950}, emoji: "📚", urls: {"en": "https://nationaldaycalendar.com/world-religion-day-third-sunday-in-january/", "he": "https://www.daysoftheyear.co.il/2019/01/world-religion-day.html"}},
+        {titles: {"en": "Spiritual Literacy Month"}, type: "1M", start: {mon: 12}, emoji: "🙏", urls: {"en": "https://nationaldaycalendar.com/spiritual-literacy-month-december/"}, first: {era: 1, y: 1996}},
         {titles: {"en": "International Religious Freedom Day"}, type: "1D", start: {mon: 10, d: 27}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/spiritual-wellness-month/"}, titles: {"en": "Spiritual Wellness Month"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/holy-experiment-day/"}, titles: {"en": "Holy Experiment Day"}},

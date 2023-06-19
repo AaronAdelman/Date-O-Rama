@@ -19,7 +19,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
-        {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {type: "1D", era: 1, y: 496}},
+        {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {inherits: "Veterans Day", type: "1D", start: {mon: 4, d: 7}},
         {type: "1D", start: {mon: 5, d: 8}, titles: {"en": "Iris Festival", "nl": "Irisfeest", "fr": "Fête de l’Iris", "de": "Iris-Festival"}, urls: {"en": "https://nationaltoday.com/iris-day/"}, notes: {"en": "Iris Day"}},
         {titles: {"en": "Day of the Flemish Community", "nl": "Feest van de Vlaamse Gemeenschap", "fr": "Fête de la Communauté flamande", "de": "Feiertag der Flämischen Gemeinschaft"}, type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/day-flemish-community/"}, first: {era: 1, y: 1973}},

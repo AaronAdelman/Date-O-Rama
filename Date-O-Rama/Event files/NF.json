@@ -14,7 +14,7 @@
         {inherits: "Anzac Day", type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {inherits: "Bounty Day", type: "1D", start: {mon: 6, d: 8}, first: {era: 1, y: 1856}},
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 2}, inherits: "King’s Birthday", first: {era: 1, y: 2023}},
-        {inherits: "Thanksgiving Day", type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, first: {type: "1D", era: 1, y: 1957}},
+        {inherits: "Thanksgiving Day", type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, first: {era: 1, y: 1957}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
     ]

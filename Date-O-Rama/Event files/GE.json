@@ -10,7 +10,7 @@
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Day of National Unity", type: "1D", start: {d: 9, mon: 4}, first: {era: 1, y: 1991}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
-        {inherits: "Europe Day", type: "1D", start: {mon: 5, d: 9}, first: {type: "1D", era: 1, y: 2019}},
+        {inherits: "Europe Day", type: "1D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
         {inherits: "Independence Day", type: "1D", start: {mon: 5, d: 26}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/georgia-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Day of Svetitskovloba", "ka": "სვეტიცხოვლობა"}, urls: {"en": "https://nationaltoday.com/day-of-svetitskovloba/"}, notes: {"en": "Day of Svetitskhoveli Cathedral (in Mtskheta)"}},
         {inherits: "St. George’s Day", type: "1D", start: {mon: 11, d: 23}},

@@ -4,8 +4,8 @@
     calendarCode: "hiq*",
     calendarColor: {"red": 0.0, "green": 0.97, "blue": 0.0},
     eventSpecifications: [
-        {titles: {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎", "es": "Año Nuevo Islámico", "ms": "Awal Tahun Hijrah"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/islamic-new-year/"}},
-        {titles: {"en": "ʿĀshūrāʾ", "he": "עאשוראא", "ar": "عَاشُورَاء‎", "tr": "Aşure Bayramı"}, type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/Ashura"}},
+        {titles: {"en": "Islamic New Year", "he": "ראש השנה האסלאמי", "ar": "رأس السنة الهجرية‎", "es": "Año Nuevo Islámico", "ms": "Awal Tahun Hijrah"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/islamic-new-year/"}, notes: {"en": "Awal Muharram"}},
+        {titles: {"en": "ʿĀshūrāʾ", "he": "עאשוראא", "ar": "عَاشُورَاء‎", "tr": "Aşure Bayramı"}, type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/Ashura"}, notes: {"en": "Ashura"}},
         {titles: {"en": "Lailatu 'l-Miʿrāj", "he": "לילת אל־מעראג׳", "ar": "لیلة المعراج‎", "bn": "শবে মেরাজ", "fa": "شب معراج‎", "tr": "Miraç Kandili", "ms": "Israk dan Mikraj"}, type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://en.wikipedia.org/wiki/Isra_and_Mi%27raj#Modern_Muslim_observance"}},
         {titles: {"en": "Niṣf Sha‘bān", "he": "חצי שעבאן", "ar": "نصف شعبان‎", "ms": "نصف شعبان", "fa": "نيم شعبان‎", "ur": "شبِ براة‎", "hi": "शब-ए-बरात", "bn": "শবে বরাত"}, type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/lailatul-barat-starts/"}},
         {titles: {"en": "Ramaḍān", "he": "רמצֿאן", "ar": "رَمَضَان‎", "az": "Ramazan", "bn": "রমজান", "ckb": "ڕەمەزان‎", "so": "Rabadaan", "tr": "Ramazan", "zza": "Remezan"}, type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/ramadan/"}, notes: {"en": "Ramadan"}},

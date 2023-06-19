@@ -25,7 +25,7 @@
         {titles: {"en": "Day of peaceful reintegration of the Croatian Danube Region", "hr": "Dan mirne reintegracije hrvatskog Podunavlja"}, type: "1D", start: {mon: 1, d: 15}},
         {titles: {"en": "Day of founding of the People’s Protection", "hr": "Dan osnivanja Narodne zaštite"}, type: "1D", start: {mon: 3, d: 15}},
         {titles: {"en": "Day of the Death of Zrinski and Frankopan", "hr": "Dan pogibije Zrinskog i Frankopana"}, type: "1D", start: {mon: 4, d: 30}, inherits: "*Death Anniv*"},
-        {inherits: "Europe Day", type: "1D", start: {mon: 5, d: 9}, first: {type: "1D", era: 1, y: 2019}},
+        {inherits: "Europe Day", type: "1D", start: {mon: 5, d: 9}, first: {era: 1, y: 2019}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
         {inherits: "Day of Remembrance of Croatian Victims in the Fight for Freedom and Independence", type: "1D", start: {mon: 5, d: 15, thruD: 18, wkd: [7]}},
         {inherits: "Day of Remembrance of Croatian Victims in the Fight for Freedom and Independence", type: "1D", start: {mon: 5, d: 13, thruD: 15, wkd: [1]}},

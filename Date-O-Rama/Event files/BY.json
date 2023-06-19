@@ -20,7 +20,7 @@
         {inherits: "Flag Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, titles: {"en": "State Flag and State Emblem Day", "be": "Дзень Дзяржаўнага Сцяга i Дзяржаўнага Герба"}},
         {type: "1D", start: {mon: 9, d: 17}, inherits: "National Unity Day", urls: {"en": "https://en.wikipedia.org/wiki/National_Unity_Day_(Belarus)"}, first: {era: 1, y: 2021}},
         {inherits: "Veterans Day", type: "1D", start: {mon: 2, d: 15}, titles: {"en": "Afghan War Veterans Day", "be": "Дзень памяці воінаў-інтэрнацыяналістаў "}},
-        {inherits: "International Chernobyl Disaster Remembrance Day", type: "1D", start: {mon: 4, d: 26}, first: {type: "1D", era: 1, y: 2017}},
+        {inherits: "International Chernobyl Disaster Remembrance Day", type: "1D", start: {mon: 4, d: 26}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 6, d: 22}, titles: {"en": "Day of Remembrance of the Victims of the Great Patriotic War", "be": "Дзень усенароднай памяці ахвяр Вялікай Айчыннай вайны"}},
 
         {inherits: "Kupala Night", type: "1D", start: {mon: 7, d: 6}},

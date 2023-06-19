@@ -16,7 +16,7 @@
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Carnival", type: "1D", start: {mon: 8, d: 11}},
-        {inherits: "Thanksgiving Day", type: "1D", start: {mon: 10, d: 25}, first: {type: "1D", era: 1, y: 1983}},
+        {inherits: "Thanksgiving Day", type: "1D", start: {mon: 10, d: 25}, first: {era: 1, y: 1983}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
 

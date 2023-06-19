@@ -17,7 +17,7 @@
         {type: "1D", start: {d: 14, mon: 7}, titles: {"en": "Bastille Day", "he": "יום הבסטיליה", "fr": "Fête nationale française"}, urls: {"en": "https://nationaltoday.com/bastille-day/"}, first: {era: 1, y: 1789}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
-        {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {type: "1D", era: 1, y: 1919}},
+        {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
 

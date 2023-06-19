@@ -14,6 +14,6 @@
         {type: "1D", start: {mon: 10, d: 25}, titles: {"en": "Hurricane Thanksgiving"}, emoji: "🦃🌀"},
         {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "Liberty Day"}, emoji: "🗽", urls: {"en": "https://nationaltoday.com/d-hamilton-jackson-day/"}, notes: {"en": "D. Hamilton Jackson Day"}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
-        {inherits: "Juneteenth", type: "1D", start: {mon: 6, d: 19}, first: {type: "1D", era: 1, y: 1886}},
+        {inherits: "Juneteenth", type: "1D", start: {mon: 6, d: 19}, first: {era: 1, y: 1886}},
     ]
 }

@@ -24,7 +24,7 @@
 
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/our-lady-of-suyapa/"}, titles: {"en": "Our Lady of Suyapa", "es": "Nuestra Señora de Suyapa"}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 3, d: 19}},
-        {inherits: "Spanish Language Day", type: "1D", start: {mon: 4, d: 19}, first: {type: "1D", era: 1, y: 2011}},
+        {inherits: "Spanish Language Day", type: "1D", start: {mon: 4, d: 19}, first: {era: 1, y: 2011}},
 
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 7, d: 16}, inherits: "Engineer’s Day"},

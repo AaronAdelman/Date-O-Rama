@@ -28,7 +28,7 @@
         {type: "1D", titles: {"en": "Africa Food Security and Nutrition Day", emoji: "🥘"}, start: {d: 30, mon: 10}},
         {type: "1D", titles: {"en": "Africa Youth Day"}, start: {d: 1, mon: 11}, emoji: "👦👧"},
         {type: "1D", titles: {"en": "African Statistics Day"}, start: {d: 18, mon: 11}, emoji: "📊"},
-        {inherits: "Africa Industrialization Day", type: "1D", start: {mon: 11, d: 20}, first: {type: "1D", era: 1, y: 2018}},
+        {inherits: "Africa Industrialization Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 2018}},
         {type: "1D", titles: {"en": "Africa Telecommunications and ICT Day"}, start: {d: 7, mon: 12}, emoji: "📞"},
         {type: "1D", titles: {"en": "Day of African Sport"}, start: {d: 14, mon: 12}, emoji: "🏏🏉🏐"},
     ]
