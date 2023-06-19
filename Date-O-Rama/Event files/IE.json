@@ -14,7 +14,7 @@
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: -1}, titles: {"en": "Reek Sunday"}, notes: {"en": "Garland Sunday"}, urls: {"en": "https://nationaltoday.com/reek-sunday/"}, emoji: "⛰"},
         {inherits: "Universal Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2009}},
-        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: -1}, titles: {"en": "October Bank Holiday"}, urls: {"en": "https://nationaltoday.com/october-bank-holiday/"}, first: {era: 1, y: 1977}},
+        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: -1}, titles: {"en": "October Bank Holiday"}, urls: {"en": "https://nationaltoday.com/october-bank-holiday/"}, first: {era: 1, y: 1977}, inherits: "Bank Holiday"},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/constitution-of-ireland/"}, titles: {"en": "Constitution of Ireland"}, first: {era: 1, y: 1937}},
         {type: "1M", start: {mon: 1}, inherits: "START Child Health Campaign", first: {era: 1, y: 2017}},
@@ -23,7 +23,7 @@
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-open-farm-day/"}, titles: {"en": "National Open Farm Day"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/bealtaine-festival/"}, titles: {"en": "Bealtaine Festival"}, first: {era: 1, y: 2009}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
-        {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/june-bank-holiday/"}, titles: {"en": "June Bank Holiday"}, inherits: "Whit Monday"},
+        {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/june-bank-holiday/"}, titles: {"en": "June Bank Holiday"}, inherits: "Bank Holiday"},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
    ]
 }

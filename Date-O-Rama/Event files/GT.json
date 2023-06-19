@@ -17,7 +17,7 @@
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 10}},
         {type: "1D", start: {mon: 6, d: 30}, inherits: "Army Day"},
-        {type: "1D", start: {mon: 7, d: 1}, titles: {"en": "Bank Holiday", "es": "Día del Empleado Bancario"}},
+        {type: "1D", start: {mon: 7, d: 1}, inherits: "Bank Holiday"},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/guatemala-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 12}, inherits: "Day of the Races", first: {era: 1, y: 1917}},
