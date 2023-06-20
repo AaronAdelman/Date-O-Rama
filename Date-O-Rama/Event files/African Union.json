@@ -13,7 +13,7 @@
         {type: "1D", inherits: "Africa Day", start: {d: 25, mon: 5}},
         {type: "1D", titles: {"en": "Africa Border Day"}, start: {d: 7, mon: 6}},
         {type: "1D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1976}},
-        {type: "1D", titles: {"en": "African Refugee Day/World Refugee Day"}, start: {d: 20, mon: 6}, inherits: "World Refugee Day"},
+        {type: "1D", titles: {"en": "African Refugee Day", "he": "יום הפליטים האפריקאי"}, start: {d: 20, mon: 6}, inherits: "World Refugee Day"},
         {type: "1D", titles: {"en": "African Public Service Day"}, start: {d: 23, mon: 6}},
         {type: "1D", titles: {"en": "Day of Africa‘s Scientific Renaissance"}, start: {d: 30, mon: 6}, emoji: "🔭🔬🧪"},
         {type: "1D", titles: {"en": "African Integration Day"}, start: {d: 7, mon: 7}},
