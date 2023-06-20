@@ -11,7 +11,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
-        {type: "1D", start: {mon: 5, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/anguilla/labour-day"}, titles: {"en": "Labour Day (in lieu)"}},
+        {type: "1D", start: {mon: 5, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/anguilla/labour-day"}, inherits: "Labour Day (in lieu)"},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/anguilla/anguilla-day"}, titles: {"en": "Anguilla Day", "he": "יום אנגווילה"}},
