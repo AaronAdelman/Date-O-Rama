@@ -5,8 +5,8 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
-        {type: "1D", start: {mon: 4, d: 27}, titles: {"en": "King’s Day", "nl": "Koningsdag"}, emoji: "🤴", urls: {"en": "https://nationaltoday.com/koningsdag/"}, first: {era: 1, y: 2014}},
-        {titles: {"en": "Queen’s Day", "nl": "Koninginnedag"}, type: "1D", start: {mon: 4, d: 30}, emoji: "👸", urls: {"en": "https://nationaltoday.com/queens-day/"}},
+        {type: "1D", start: {mon: 4, d: 27}, inherits: "King’s Day", urls: {"en": "https://nationaltoday.com/koningsdag/"}, first: {era: 1, y: 2014}},
+        {titles: {"en": "Queen’s Day", "he": "יום המלכה", "nl": "Koninginnedag"}, type: "1D", start: {mon: 4, d: 30}, emoji: "👸", urls: {"en": "https://nationaltoday.com/queens-day/"}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
