@@ -983,7 +983,7 @@
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/casimir-pulaski-day/"}, titles: {"en": "Casimir Pulaski Day"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/dentist-day/", "he": "https://www.daysoftheyear.co.il/2018/03/6.html"}, titles: {"en": "Dentist Day", "he": "יום רופאי השיניים"}, notes: {"en": "National Dentist’s Day"}},
         {type: "1D", start: {mon: 3, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/fun-facts-about-names-day/"}, titles: {"en": "Fun Facts About Names Day", "he": "יום העובדות המהנות על השם שלך"}, first: {era: 1, y: 1997}},
-        {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-heroes-and-benefactors-day/"}, titles: {"en": "National Heroes and Benefactors Day"}},
+        {type: "1D", start: {mon: 3, d: 6}, inherits: "National Heroes and Benefactors Day"},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-oreo-cookie-day/", "he": "https://www.daysoftheyear.co.il/2019/03/6.html"}, titles: {"en": "National Oreo Cookie Day", "he": "יום הולדת לעוגיות אוראו"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-white-chocolate-cheesecake-day/"}, titles: {"en": "National White Chocolate Cheesecake Day"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/world-tennis-day/"}, titles: {"en": "World Tennis Day"}, first: {era: 1, y: 2013}},
