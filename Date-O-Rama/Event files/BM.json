@@ -6,20 +6,21 @@
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
-        {titles: {"en": "Bermuda Day"}, type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/bermuda-day/"}, first: {era: 1, y: 2018}},
-        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}},
-        {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 28, thruMon: 8, thruD: 3, wkd: [5]}},
-        {titles: {"en": "Somers’ Day"}, type: "1D", start: {mon: 7, d: 29, thruMon: 8, thruD: 4, wkd: [6]}},
-        {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}},
-        {inherits: "Remembrance Day", type: "1D", start: {d: 11, mon: 11}},
+        {type: "1D", start: {mon: 5, d: 8, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/king-charles-iiis-coronation"}, titles: {"en": "King Charles III’s Coronation"}, inherits: "*Coronation*"},
+        {titles: {"en": "Bermuda Day", "he": "יום ברמודה"}, type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/bermuda-day/"}, first: {era: 1, y: 2018}},
+        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/bermuda-national-heroes-day"}},
+        {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 28, thruMon: 8, thruD: 3, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/emancipation-day"}},
+        {titles: {"en": "Mary Prince Day"}, type: "1D", start: {mon: 7, d: 29, "thruMon": 8, "thruD": 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {era: 1, y: 2018}, notes: {"en": "Somers’ Day"}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/bermuda-labour-day"}},
+        {inherits: "Remembrance Day", type: "1D", start: {d: 11, mon: 11}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/remembrance-day"}, titles: {"en": "Remembrance Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {titles: {"en": "Mary Prince Day"}, type: "1D", start: {mon: 7, d: 29, "thruMon": 8, "thruD": 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": "Flora Duffy Day"}, urls: {"en": "https://nationaltoday.com/flora-duffy-day/"}, first: {era: 1, y: 2021}},
    ]
 }
