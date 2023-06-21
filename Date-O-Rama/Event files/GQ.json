@@ -10,7 +10,7 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
-        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/presidents-day-in-equatorial-guinea/"}, titles: {"en": "President’s Day", "he": "יום הנשיא"}, inherits: "Presidents’ Day"},
+        {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/presidents-day-in-equatorial-guinea/"}, inherits: "President’s Day"},
         {type: "1D", start: {mon: 8, d: 3}, inherits: "Freedom Day", first: {era: 1, y: 1979}},
         {inherits: "Constitution Day", type: "1D", start: {mon: 8, d: 15}, first: {era: 1, y: 1982}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 12}, first: {era: 1, y: 1968}, urls: {"en": "https://nationaltoday.com/equatorial-guinea-independence-day/"}},

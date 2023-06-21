@@ -326,6 +326,7 @@
         {template: "Pisces", titles: {"en": "Pisces", "he": "דגים"}, type: "1M", start: {mon: 7, "yLengths": [353, 354, 355]}, emoji: "♓️", inherits: "*Astrology*"},
         {template: "Pregnancy and Infant Loss Remembrance Day", type: "1D", start: {mon: 10, d: 15}, titles: {"en": "Pregnancy and Infant Loss Remembrance Day"}, urls: {"en": "https://nationaldaycalendar.com/national-pregnancy-and-infant-loss-remembrance-day-october-15/"}, emoji: "🕯"},
         {template: "Presentation of the Blessed Virgin Mary", titles: {"en": "Presentation of the Blessed Virgin Mary"}, type: "1D", start: {mon: 11, d: 21}},
+        {template: "President’s Day", type: "1D", start: {mon: 6, d: 5}, titles: {"en": "President’s Day", "he": "יום הנשיא"}, inherits: "Presidents’ Day"},
         {template: "Presidents’ Day", type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Presidents’ Day", "he": "יום הנשיאים", "ar": "يوم الرؤساء", "es": "Día de los Presidentes", "fr": "Journée de la Présidence"}},
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "1D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/proclamation-day/"}},
         {template: "Proclamation of Independence Day", titles: {"en": "Proclamation of Independence Day"}, type: "1D", start: {mon: 1, d: 11}},
