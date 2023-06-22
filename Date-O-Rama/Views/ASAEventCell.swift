@@ -114,12 +114,14 @@ struct ASAEventCell:  View {
         } // HStack
 #else
         HStack {
-            ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
-            
-            if eventsViewShouldShowSecondaryDates {
-                let (startDateString, endDateString) = ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
+            if !eventIsTodayOnly || !event.isAllDay {
+                ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
                 
-                ASATimesSubcell(event: event, clock: ASAEventCalendar.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
+                if eventsViewShouldShowSecondaryDates {
+                    let (startDateString, endDateString) = ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
+                    
+                    ASATimesSubcell(event: event, clock: ASAEventCalendar.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
+                }
             }
             
             ASAColorRectangle(colors: event.colors)
@@ -133,12 +135,7 @@ struct ASAEventCell:  View {
                         }
                         eventTitleView()
                     }
-                    
-//                    let location = event.location
-//                    if !(location?.isEmpty ?? true) {
-//                        eventLocationView(location)
-//                    }
-                    
+                                        
                     ASAEventCellCalendarTitle(event: event, isForClock: isForClock)
                 } // VStack
             } else {
