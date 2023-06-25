@@ -2426,6 +2426,19 @@
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-safer-workplace-day/"}, titles: {"en": "National SAFER Workplace Day"}},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://nationaltoday.com/social-media-day/", "he": "https://www.daysoftheyear.co.il/2019/06/social-media-day.html"}, titles: {"en": "Social Media Day", "he": "יום הרשת החברתית"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 6, d: 22, thruD: 28, wkd: [7]}, urls: {"en": "https://nationaldaycalendar.com/global-smurf-day-saturday-closest-to-june-25/"}, titles: {"en": "Global Smurfs Day", "he": "יום הדרדסים העולמי"}, notes: {"en": "Global Smurf Day"}, emoji: "🍄"},
+        {type: "1D", start: {mon: 7, d: 1, yLengths: [365]}, inherits: "Blink 182 Day"},
+        {type: "1D", start: {mon: 6, d: 30, yLengths: [366]}, inherits: "Blink 182 Day"},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/dog-house-repair-month/"}, titles: {"en": "Dog House Repair Month"}},
+        {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/hop-a-park-day/"}, titles: {"en": "Hop A Park Day"}, notes: {"en": "National Hop-A-Park Day"}},
+        {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-cherry-pit-spitting-day/"}, titles: {"en": "International Cherry Pit Spitting Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/international-joke-day/"}, titles: {"en": "International Joke Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, inherits: "International Reggae Day", first: {era: 1, y: 1994}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-baby-led-weaning-day/"}, titles: {"en": "National Baby-Led Weaning Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-creative-ice-cream-flavors-day/"}, titles: {"en": "National Creative Ice Cream Flavors Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-financial-freedom-day/"}, titles: {"en": "National Financial Freedom Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-television-heritage-day/"}, titles: {"en": "National Television Heritage Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/second-second-half-of-the-year-day/"}, titles: {"en": "Second Half of the Year Day"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/smart-irrigation-month/"}, titles: {"en": "Smart Irrigation Month"}},
 
     ]
 }

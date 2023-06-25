@@ -657,7 +657,13 @@
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-bacon-burnt-end-day/"}, titles: {"en": "National Bacon Burnt End Day"}, first: {era: 1, y: 2021}, emoji: "🥓"},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-bomb-pop-day/"}, titles: {"en": "National Bomb Pop Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {d: 17, mon: 2}, inherits: "Random Acts of Kindness Day", first: {era: 1, y: 1995}},
-        
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/american-zoo-day/"}, titles: {"en": "American Zoo Day"}, first: {era: 1, y: 1874}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/international-chicken-wing-day/"}, titles: {"en": "International Chicken Wing Day"}, first: {era: 1, y: 1977}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-postal-workers-day/"}, titles: {"en": "National Postal Workers Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-u-s-postage-stamp-day/"}, titles: {"en": "National U.S. Postage Stamp Day"}},
+        {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/zip-code-day/"}, titles: {"en": "ZIP Code Day"}},
+        {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/clean-beaches-week/"}, titles: {"en": "Clean Beaches Week"}, first: {era: 1, y: 2003}},
+
         
         
         
