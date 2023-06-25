@@ -128,5 +128,6 @@
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/cream-tea-day/"}, titles: {"en": "Cream Tea Day"}, emoji: "☕️"},
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-wrong-trousers-day/"}, titles: {"en": "National Wrong Trousers Day"}, first: {era: 1, y: 1997}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/good-care-month/"}, titles: {"en": "Good Care Month"}},
     ]
 }

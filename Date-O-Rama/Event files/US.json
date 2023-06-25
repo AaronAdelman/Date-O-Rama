@@ -663,6 +663,19 @@
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/national-u-s-postage-stamp-day/"}, titles: {"en": "National U.S. Postage Stamp Day"}},
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/zip-code-day/"}, titles: {"en": "ZIP Code Day"}},
         {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/clean-beaches-week/"}, titles: {"en": "Clean Beaches Week"}, first: {era: 1, y: 2003}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/family-golf-month/"}, titles: {"en": "Family Golf Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/french-american-heritage-month/"}, titles: {"en": "French-American Heritage Month"}, emoji: "🇫🇷🇺🇸", first: {era: 1, y: 1998}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/hitchhiking-month/"}, titles: {"en": "Hitchhiking Month"}, first: {era: 1, y: 2020}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-baked-beans-month/"}, titles: {"en": "National Baked Beans Month"}, first: {era: 1, y: 1981}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-bison-month/"}, titles: {"en": "National Bison Month"}, first: {era: 1, y: 2016}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-blueberry-month/"}, titles: {"en": "National Blueberry Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-contract-sewing-month/"}, titles: {"en": "National Contract Sewing Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-culinary-arts-month/"}, titles: {"en": "National Culinary Arts Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-hot-dog-month/"}, titles: {"en": "National Hot Dog Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-ice-cream-month/"}, titles: {"en": "National Ice Cream Month"}, first: {era: 1, y: 1984}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-minority-mental-health-awareness-month/"}, titles: {"en": "National Minority Mental Health Awareness Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-picnic-month/"}, titles: {"en": "National Picnic Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-watermelon-month/"}, titles: {"en": "National Watermelon Month"}, first: {era: 1, y: 2007}},
 
         
         
