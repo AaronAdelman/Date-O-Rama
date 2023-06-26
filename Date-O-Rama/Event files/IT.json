@@ -21,6 +21,6 @@
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-dante-day/"}, titles: {"en": "National Dante Day"}, first: {era: 1, y: 2020}},
         {inherits: "Feast of St. Mark the Evangelist", type: "1D", start: {mon: 4, d: 25}},
         {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
-
+        {inherits: "Feast of St. Rosalia", type: "nD", start: {mon: 7, d: 10}, end: {mon: 7, d: 15}},
     ]
 }

@@ -2513,5 +2513,11 @@
         {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/martyrdom-of-the-bab/"}, titles: {"en": "Martyrdom of the Bab"}},
         {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/national-dont-put-all-your-eggs-in-one-omelet-day/"}, titles: {"en": "National Don’t Put all your Eggs in One Omelet Day"}},
         {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/national-sugar-cookie-day/"}, titles: {"en": "National Sugar Cookie Day"}},
+        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/global-energy-independence-day/"}, titles: {"en": "Global Energy Independence Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-town-criers-day/"}, titles: {"en": "International Town Criers Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-clerihew-day/"}, titles: {"en": "National Clerihew Day"}},
+        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-kitten-day/"}, titles: {"en": "National Kitten Day"}},
+        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-transplant-financial-coordinator-day/"}, titles: {"en": "National Transplant Financial Coordinator Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/teddy-bear-picnic-day/"}, titles: {"en": "Teddy Bear Picnic Day"}},
     ]
 }

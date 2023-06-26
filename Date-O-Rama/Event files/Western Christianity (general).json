@@ -264,7 +264,7 @@
         {inherits: "St. Florian’s Day", type: "1D", start: {mon: 5, d: 4}},
         {inherits: "St. Leopold’s Day", type: "1D", start: {mon: 11, d: 15}},
         {inherits: "St. Maroun Day", type: "1D", start: {mon: 2, d: 9}},
-        {titles: {"en": "Feast of St. Rosalia"}, type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/feast-of-st-rosalia/"}},
+        {inherits: "Feast of St. Rosalia", type: "1D", start: {mon: 7, d: 14}},
         {inherits: "Feast of St. Vladimir", type: "1D", start: {mon: 7, d: 15}},
         {type: "1D", start: {mon: 9, d: 5}, inherits: "Feast of St. Teresa of Calcutta", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "St. Wenceslas Day", first: {era: 1, y: 935}},

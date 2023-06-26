@@ -13,7 +13,7 @@
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 1}, titles: {"en": "Randol Fawkes Labour Day"}, urls: {"en": "https://nationaltoday.com/randol-fawkes-labour-day/"}, first: {era: 1, y: 2013}, inherits: "Labour Day"},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 10}, first: {era: 1, y: 1973}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 10}, first: {era: 1, y: 1973}, urls: {"en": "https://nationaltoday.com/bahamas-independence-day/"}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1834}, urls: {"en": "https://www.officeholidays.com/holidays/bahamas/emancipation-day"}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-bahamas/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
