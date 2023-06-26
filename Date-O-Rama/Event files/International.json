@@ -2508,5 +2508,10 @@
         {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-scud-day/"}, titles: {"en": "National SCUD Day"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/video-game-day/"}, titles: {"en": "National Video Game Day"}},
         {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/oneofusismissing-day/"}, titles: {"en": "Oneofusismissing Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/barn-day/"}, titles: {"en": "Barn Day"}},
+        {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/call-of-the-horizon-day/"}, titles: {"en": "Call of the Horizon Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/martyrdom-of-the-bab/"}, titles: {"en": "Martyrdom of the Bab"}},
+        {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/national-dont-put-all-your-eggs-in-one-omelet-day/"}, titles: {"en": "National Don’t Put all your Eggs in One Omelet Day"}},
+        {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/national-sugar-cookie-day/"}, titles: {"en": "National Sugar Cookie Day"}},
     ]
 }
