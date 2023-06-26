@@ -218,7 +218,7 @@
         {titles: {"en": "Arabic Language Day", "he": "היום הבינלאומי לשפה הערבית"}, type: "1D", start: {mon: 12, d: 18}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaldaycalendar.com/world-arabic-language-day-december-18/", "he": "https://www.daysoftheyear.co.il/2018/12/arabic-language-day.html"}, emoji: "🇸🇦", notes: {"en": "World Arabic Language Day"}},
         {titles: {"en": "International Human Solidarity Day", "he": "יום הסולידריות האנושית הבינלאומי"}, type: "1D", start: {mon: 12, d: 20}, first: {era: 1, y: 2006}, urls: {"en": "https://nationaldaycalendar.com/international-human-solidarity-december-20/"}, emoji: "🖤"},
         {titles: {"en": "International Day of Epidemic Preparedness", "he": "יום ההיערכות הבינלאומי למגפה"}, type: "1D", start: {mon: 12, d: 27}, first: {era: 1, y: 2020}, emoji: "😷"},
-        {titles: {"en": "Swahili Language Day", "sw": "Siku ya Kiswahili ya Umoja wa Mataifa", "he": "יום השפה הסוואהילית"}, type: "1D", start: {mon: 7, "7": 20}, first: {era: 1, y: 2022}, urls: {"en": "https://en.wikipedia.org/wiki/UN_Swahili_Language_Day"}},
+        {titles: {"en": "Swahili Language Day", "sw": "Siku ya Kiswahili ya Umoja wa Mataifa", "he": "יום השפה הסוואהילית"}, type: "1D", start: {mon: 7, d: 20}, first: {era: 1, y: 2022}, urls: {"en": "https://en.wikipedia.org/wiki/UN_Swahili_Language_Day"}},
 
         {inherits: "Vesak", titles: {"en": "Vesak, the Day of the Full Moon", "he": "ווסק, יום הירח המלא"}, type: "1D", start: {"zmoPhase": "1stFull", mon: 5}, first: {"zmoPhase": "1stFull", era: 1, y: 2000}, notes: {"en": "The birthday of the Buddha.  Whoever decided to make this a UN observance did not understand that celebrating a Buddhist holiday may be taboo to adherents of other religions."}},
 

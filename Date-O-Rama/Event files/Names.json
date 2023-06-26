@@ -243,5 +243,7 @@
         {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-ian-day/"}, titles: {"en": "National Ian Day"}},
         {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-sylvia-day/"}, titles: {"en": "National Sylvia Day"}},
         {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/national-daniel-day/"}, titles: {"en": "National Daniel Day"}},
+        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-denise-day/"}, titles: {"en": "National Denise Day"}},
+       {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-kathryn-day/"}, titles: {"en": "National Kathryn Day"}},
     ]
 }

@@ -669,6 +669,7 @@
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-baked-beans-month/"}, titles: {"en": "National Baked Beans Month"}, first: {era: 1, y: 1981}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-bison-month/"}, titles: {"en": "National Bison Month"}, first: {era: 1, y: 2016}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-blueberry-month/"}, titles: {"en": "National Blueberry Month"}},
+        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-blueberry-day/"}, titles: {"en": "National Blueberry Day"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-contract-sewing-month/"}, titles: {"en": "National Contract Sewing Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-culinary-arts-month/"}, titles: {"en": "National Culinary Arts Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-hot-dog-month/"}, titles: {"en": "National Hot Dog Month"}},
@@ -744,5 +745,6 @@
         {type: "1D", start: {d: 8, mon: 2}, titles: {"en": "National Iowa Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-iowa-day-february-8/"}},
         {type: "1D", start: {d: 8, mon: 3}, titles: {"en": "National Oregon Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-oregon-day-march-8/"}},
         {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "National Louisiana Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-louisiana-day-november-9/"}},
+        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-freezer-pop-day/"}, titles: {"en": "National Freezer Pop Day"}, first: {era: 1, y: 2020}},
     ]
 }
