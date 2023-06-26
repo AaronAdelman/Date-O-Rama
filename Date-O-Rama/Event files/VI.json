@@ -8,7 +8,7 @@
         {type: "1D", start: {mon: 3, d: 31}, titles: {"en": "Transfer Day", "ar": "يوم الانتقال"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/transfer-day/"}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
-        {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://en.wikipedia.org/wiki/Emancipation_Day#US_Virgin_Islands"}, first: {era: 1, y: 1848}},
+        {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/v-i-emancipation-day/"}, first: {era: 1, y: 1848}},
         {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 4}, titles: {"en": "Hurricane Supplication Day"}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, titles: {"en": "Virgin Islands–Puerto Rico Friendship Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Virgin_Islands-Puerto_Rico_Friendship_Day"}, emoji: "🇻🇮🇵🇷", first: {era: 1, y: 1964}},
         {type: "1D", start: {mon: 10, d: 25}, titles: {"en": "Hurricane Thanksgiving"}, emoji: "🦃🌀"},

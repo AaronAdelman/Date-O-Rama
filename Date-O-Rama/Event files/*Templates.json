@@ -87,6 +87,7 @@
         {template: "Candlemas", titles: {"en": "Candlemas", "he": "קנדלמאס"}, notes: {"en": "Presentation of the Lord"}, type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/candlemas-day/"}, emoji: "🕯"},
         {template: "Canoe Day", type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/canoe-day/"}, titles: {"en": "Canoe Day"}, emoji: "🛶"},
         {template: "Capricorn", titles: {"en": "Capricorn", "he": "גדי"}, type: "1M", start: {mon: 4}, emoji: "♑️", inherits: "*Astrology*"},
+        {template: "CARICOM Day", type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/caribbean-community-day/"}, titles: {"en": "CARICOM Day"}, notes: {"en": "Caribbean Community Day"}},
         {template: "Carnival (day 1)", titles: {"en": "Carnival (day 1)", "es": "Carnaval (día 1)", "pt": "Carnaval (dia 1)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -52}},
         {template: "Carnival (day 2)", titles: {"en": "Carnival (day 2)", "es": "Carnaval (día 2)", "pt": "Carnaval (dia 2)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -51}},
         {template: "Carnival Monday", titles: {"en": "Carnival Monday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://en.wikipedia.org/wiki/Carnival"}},

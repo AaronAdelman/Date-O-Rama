@@ -2475,5 +2475,14 @@
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/freedom-from-fear-of-speaking-day/"}, titles: {"en": "Freedom From Fear of Speaking Day"}},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/i-forgot-day/"}, titles: {"en": "I Forgot Day"}},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/special-recreation-for-the-disabled-day/"}, titles: {"en": "Special Recreation for the Disabled Day"}},
+        {type: "nD", start: {mon: 7, d: 3}, end: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/air-conditioning-appreciation-day/"}, titles: {"en": "Air Conditioning Appreciation Days"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/disobedience-day/"}, titles: {"en": "Disobedience Day"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/international-drop-a-rock-day/"}, titles: {"en": "International Drop a Rock Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-wafer-day/"}, titles: {"en": "National Chocolate Wafer Day"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-compliment-mirror-day/"}, titles: {"en": "National Compliment Your Mirror Day"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-eat-beans-day/"}, titles: {"en": "National Eat Beans Day"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-stay-sun-day/"}, titles: {"en": "National Stay Out of the Sun Day"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/starttheconversation-day/"}, titles: {"en": "Start the Conversation Day"}},
+
     ]
 }
