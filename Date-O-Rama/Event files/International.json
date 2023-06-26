@@ -2492,5 +2492,15 @@
         {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/national-hand-roll-day/"}, titles: {"en": "National Hand Roll Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/umbrella-cover-day/"}, titles: {"en": "Umbrella Cover Day"}},
         {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/virtually-hug-a-virtual-assistant-day/"}, titles: {"en": "Virtually Hug a Virtual Assistant Day"}},
+        {type: "1D", start: {mon: 7, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/comic-sans-day/"}, titles: {"en": "Comic Sans Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/international-peace-love-day/"}, titles: {"en": "International Peace & Love Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/national-day-of-rock-n-roll/"}, titles: {"en": "National Day of Rock ‘n’ Roll"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/national-dora-day/"}, titles: {"en": "National Dora Day"}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/national-father-daughter-take-walk-day/"}, titles: {"en": "National Father Daughter Take a Walk Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/national-koi-day/"}, titles: {"en": "National Koi Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/national-macaroni-day/"}, titles: {"en": "National Macaroni Day"}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/national-strawberry-sundae-day/"}, titles: {"en": "National Strawberry Sundae Day"}},
+        {type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/tell-truth-day/"}, titles: {"en": "Tell the Truth Day"}},
+
     ]
 }
