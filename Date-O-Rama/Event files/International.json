@@ -2488,5 +2488,9 @@
         {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-apple-turnover-day/"}, titles: {"en": "National Apple Turnover Day"}},
         {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-graham-crackers-day/"}, titles: {"en": "National Graham Crackers Day"}},
         {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-workaholics-day/"}, titles: {"en": "National Workaholics Day"}},
+        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/national-fried-chicken-day/"}, titles: {"en": "National Fried Chicken Day"}},
+        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/national-hand-roll-day/"}, titles: {"en": "National Hand Roll Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/umbrella-cover-day/"}, titles: {"en": "Umbrella Cover Day"}},
+        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/virtually-hug-a-virtual-assistant-day/"}, titles: {"en": "Virtually Hug a Virtual Assistant Day"}},
     ]
 }

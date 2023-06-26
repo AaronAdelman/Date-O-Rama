@@ -13,7 +13,7 @@
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}, first: {era: 1, y: 1945}},
         {inherits: "Feast of Saints Cyril and Methodius", type: "1D", start: {mon: 7, d: 5}},
-        {titles: {"en": "Jan Hus Day", "cs": "Den upálení mistra Jana Husa"}, type: "1D", start: {mon: 7, d: 6}},
+        {titles: {"en": "Jan Hus Day", "cs": "Den upálení mistra Jana Husa"}, type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/jan-hus-day-in-czech-republic/"}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "Statehood Day", first: {era: 1, y: 2000}, titles: {"en": "Statehood Day"}, urls: {"en": "https://nationaltoday.com/st-wenceslas-day-statehood-day/"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 28}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/czech-founding-day/"}, notes: {"en": "Founding Day"}, titles: {"en": "Independent Czechoslovak State Day", "cs": "Den vzniku samostatného československého státu"}},
         {titles: {"en": "Struggle for Freedom and Democracy Day", "cs": "Den boje za svobodu a demokracii"}, type: "1D", start: {mon: 11, d: 17}},

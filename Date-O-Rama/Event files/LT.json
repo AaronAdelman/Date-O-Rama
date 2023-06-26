@@ -11,5 +11,7 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/independence-restoration-day/"}, titles: {"en": "Independence Restoration Day"}, first: {era: 1, y: 1990}},
         {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}},
+        {type: "1D", start: {mon: 7, d: 6}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-coronation-of-king-mindaugas/"}, titles: {"en": "Anniversary of the Coronation of King Mindaugas"}, inherits: "*Coronation*", notes: {"en": "Statehood Day"}, first: {era: 1, y: 1990}},
+
     ]
 }
