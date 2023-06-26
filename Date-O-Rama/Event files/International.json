@@ -2484,5 +2484,9 @@
         {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-stay-sun-day/"}, titles: {"en": "National Stay Out of the Sun Day"}},
         {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/starttheconversation-day/"}, titles: {"en": "Start the Conversation Day"}},
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/alice-in-wonderland-day/"}, titles: {"en": "Alice in Wonderland Day"}},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/mechanical-pencil-day/"}, titles: {"en": "Mechanical Pencil Day"}},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-apple-turnover-day/"}, titles: {"en": "National Apple Turnover Day"}},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-graham-crackers-day/"}, titles: {"en": "National Graham Crackers Day"}},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-workaholics-day/"}, titles: {"en": "National Workaholics Day"}},
     ]
 }

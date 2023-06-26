@@ -240,5 +240,7 @@
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-nash-day/"}, titles: {"en": "National Nash Day"}},
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-karl-day/"}, titles: {"en": "National Karl Day"}},
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-sophie-day/"}, titles: {"en": "National Sophie Day"}},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-ian-day/"}, titles: {"en": "National Ian Day"}},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/national-sylvia-day/"}, titles: {"en": "National Sylvia Day"}},
     ]
 }
