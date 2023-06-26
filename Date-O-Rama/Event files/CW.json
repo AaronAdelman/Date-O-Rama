@@ -7,6 +7,7 @@
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Curaçao Day"}, urls: {"en": "https://nationaltoday.com/curacao-day/"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Curaçao Day", "he": "יום קוראסאו"}, urls: {"en": "https://nationaltoday.com/curacao-day/"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-curacao/"}, inherits: "National Anthem and Flag Day", first: {era: 1, y: 1984}},
     ]
 }

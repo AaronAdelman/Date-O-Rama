@@ -676,6 +676,8 @@
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-minority-mental-health-awareness-month/"}, titles: {"en": "National Minority Mental Health Awareness Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-picnic-month/"}, titles: {"en": "National Picnic Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-watermelon-month/"}, titles: {"en": "National Watermelon Month"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/made-usa-day/"}, titles: {"en": "Made in the USA Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-report-military-fraud-day/"}, titles: {"en": "National Report Military Fraud Day"}, first: {era: 1, y: 2018}},
 
         
         
