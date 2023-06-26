@@ -681,8 +681,14 @@
         {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/american-redneck-day/"}, titles: {"en": "American Redneck Day"}},
         {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-fried-clam-day/"}, titles: {"en": "National Fried Clam Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-independent-beer-run-day/"}, titles: {"en": "National Independent Beer Run Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/independence-from-meat-day/"}, titles: {"en": "Independence From Meat Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/invisible-day/"}, titles: {"en": "Invisible Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/jackfruit-day/"}, titles: {"en": "Jackfruit Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-barbecued-spareribs-day/"}, titles: {"en": "National Barbecued Spareribs Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-caesar-salad-day/"}, titles: {"en": "National Caesar Salad Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-hillbilly-day/"}, titles: {"en": "National Hillbilly Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/sidewalk-egg-frying-day/"}, titles: {"en": "Sidewalk Egg Frying Day"}, first: {era: 1, y: 1983}},
 
-        
         
         
         

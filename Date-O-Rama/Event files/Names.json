@@ -238,5 +238,7 @@
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-gordon-day/"}, titles: {"en": "National Gordon Day"}},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-guy-day/"}, titles: {"en": "National Guy Day"}},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-nash-day/"}, titles: {"en": "National Nash Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-karl-day/"}, titles: {"en": "National Karl Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-sophie-day/"}, titles: {"en": "National Sophie Day"}},
     ]
 }
