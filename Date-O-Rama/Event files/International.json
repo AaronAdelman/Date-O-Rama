@@ -2519,5 +2519,15 @@
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-kitten-day/"}, titles: {"en": "National Kitten Day"}},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-transplant-financial-coordinator-day/"}, titles: {"en": "National Transplant Financial Coordinator Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/teddy-bear-picnic-day/"}, titles: {"en": "Teddy Bear Picnic Day"}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/bowdlers-day/"}, titles: {"en": "Bowdler’s Day"}, inherits: "*BDay*", first: {era: 1, y: 1754}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/cheer-up-the-lonely-day/"}, titles: {"en": "Cheer Up the Lonely Day"}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-blueberry-muffin-day/"}, titles: {"en": "National Blueberry Muffin Day"}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-free-slurpee-day/"}, titles: {"en": "National Free Slurpee Day"}, first: {era: 1, y: 2002}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-mojito-day/"}, titles: {"en": "National Mojito Day"}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-rainier-cherry-day/"}, titles: {"en": "National Rainier Cherry Day"}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-state-fair-food-day/"}, titles: {"en": "National State Fair Food Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/national-swimming-pool-day/"}, titles: {"en": "National Swimming Pool Day"}},
+        {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/world-benzodiazepine-awareness-day/"}, titles: {"en": "World Benzodiazepine Awareness Day"}},
+
     ]
 }

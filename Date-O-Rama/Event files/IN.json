@@ -199,5 +199,7 @@
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/yma-day/"}, titles: {"en": "YMA Day"}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/india/mizoram/mizoram-remna-ni"}, titles: {"en": "Remna Ni"}, first: {era: 1, y: 1986}},
+        {type: "nD", start: {mon: 7, d: 11}, end: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/behdienkhlam-in-meghalaya/"}, titles: {"en": "Behdienkhlam"}, locations: {"en": "Meghalaya"}},
+
     ]
 }
