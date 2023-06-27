@@ -247,5 +247,6 @@
        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-kathryn-day/"}, titles: {"en": "National Kathryn Day"}},
        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-caleb-day/"}, titles: {"en": "National Caleb Day"}},
        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-stella-day/"}, titles: {"en": "National Stella Day"}},
+       {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/national-tyler-day/"}, titles: {"en": "National Tyler Day"}},
     ]
 }
