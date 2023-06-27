@@ -235,6 +235,8 @@
 		A575914B282BE3BE00675058 /* LU.json in Resources */ = {isa = PBXBuildFile; fileRef = A5759149282BE3BE00675058 /* LU.json */; };
 		A575914D282BE43900675058 /* SK.json in Resources */ = {isa = PBXBuildFile; fileRef = A575914C282BE43900675058 /* SK.json */; };
 		A575914E282BE43900675058 /* SK.json in Resources */ = {isa = PBXBuildFile; fileRef = A575914C282BE43900675058 /* SK.json */; };
+		A575A8062A4B11F100E77142 /* National.json in Resources */ = {isa = PBXBuildFile; fileRef = A575A8052A4B11F100E77142 /* National.json */; };
+		A575A8072A4B11F100E77142 /* National.json in Resources */ = {isa = PBXBuildFile; fileRef = A575A8052A4B11F100E77142 /* National.json */; };
 		A5765A38279ED15900BF1F7E /* Rural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5765A37279ED15900BF1F7E /* Rural.json */; };
 		A5765A39279ED15900BF1F7E /* Rural.json in Resources */ = {isa = PBXBuildFile; fileRef = A5765A37279ED15900BF1F7E /* Rural.json */; };
 		A5765A3C27A02BE400BF1F7E /* FrenchRepublicanCalendarCore in Frameworks */ = {isa = PBXBuildFile; productRef = A5765A3B27A02BE400BF1F7E /* FrenchRepublicanCalendarCore */; };
@@ -1250,6 +1252,7 @@
 		A5759146282BE36500675058 /* SE.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SE.json; sourceTree = "<group>"; };
 		A5759149282BE3BE00675058 /* LU.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LU.json; sourceTree = "<group>"; };
 		A575914C282BE43900675058 /* SK.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SK.json; sourceTree = "<group>"; };
+		A575A8052A4B11F100E77142 /* National.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = National.json; sourceTree = "<group>"; };
 		A5765A37279ED15900BF1F7E /* Rural.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rural.json; sourceTree = "<group>"; };
 		A576C39228171F96005AC73D /* NZ.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NZ.json; sourceTree = "<group>"; };
 		A57706692896B642000AA963 /* ASALocationMenuSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASALocationMenuSymbol.swift; sourceTree = "<group>"; };
@@ -1967,6 +1970,7 @@
 				A5837BE0271C139700047475 /* Named full moons.json */,
 				A5E9AB622A1B4C8900433D7A /* Names.json */,
 				A5BDE78426678B1600F47416 /* Nation of Islam.json */,
+				A575A8052A4B11F100E77142 /* National.json */,
 				A5E4964F28625479001BF40C /* NC.json */,
 				A5D850B3280C9823005247BD /* NE.json */,
 				A5F43E232785D7DE00FCDB88 /* Neopaganism.json */,
@@ -2708,6 +2712,7 @@
 				A5EF0017285B8EEB00F2205F /* KW (Muslim).json in Resources */,
 				A5E04AB32851CA6D001A4911 /* Sunni Islam (times, Egypt).json in Resources */,
 				A5C72A0F2967681700B8442A /* RU (Julian).json in Resources */,
+				A575A8072A4B11F100E77142 /* National.json in Resources */,
 				A5987C502A083338008A9E90 /* Theosophy.json in Resources */,
 				A5EFFF5E285B5F9B00F2205F /* HK.json in Resources */,
 				A5E4963C2862535D001BF40C /* MH.json in Resources */,
@@ -3158,6 +3163,7 @@
 				A5EFFFC6285B81BD00F2205F /* VE.json in Resources */,
 				A5B999BD28622BBA00072FD5 /* CD.json in Resources */,
 				A501C7FD285F75D100211E33 /* SC.json in Resources */,
+				A575A8062A4B11F100E77142 /* National.json in Resources */,
 				A5EFFFDA285B855E00F2205F /* SY.json in Resources */,
 				A5E292EC285A62B600925EBD /* AW.json in Resources */,
 				A5FB22D62863910C00B5042B /* YE.json in Resources */,
