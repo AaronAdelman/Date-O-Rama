@@ -2533,5 +2533,12 @@
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/national-eat-your-jello-day/"}, titles: {"en": "National Eat Your Jello Day"}},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/national-pecan-pie-day/"}, titles: {"en": "National Pecan Pie Day"}},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/new-conversations-day/"}, titles: {"en": "New Conversations Day"}, first: {era: 1, y: 2000}},
+        
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/beef-tallow-day/"}, titles: {"en": "Beef Tallow Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/fools-paradise-day/"}, titles: {"en": "Fool’s Paradise Day"}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/international-rock-day/"}, titles: {"en": "International Rock Day"}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/national-barbershop-music-appreciation-day/"}, titles: {"en": "National Barbershop Music Appreciation Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/national-beans-n-franks-day/"}, titles: {"en": "National Beans ‘N’ Frank Day"}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/national-french-fry-day/"}, titles: {"en": "National French Fry Day"}},
     ]
 }

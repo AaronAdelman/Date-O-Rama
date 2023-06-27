@@ -248,5 +248,7 @@
        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-caleb-day/"}, titles: {"en": "National Caleb Day"}},
        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-stella-day/"}, titles: {"en": "National Stella Day"}},
        {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/national-tyler-day/"}, titles: {"en": "National Tyler Day"}},
+       {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/national-paul-day/"}, titles: {"en": "National Paul Day"}},
+       {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/national-sam-day/"}, titles: {"en": "National Sam Day"}},
     ]
 }

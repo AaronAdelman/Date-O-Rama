@@ -9,7 +9,7 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1989}},
         {inherits: "Statehood Day", type: "1D", start: {d: 15, mon: 2}, first: {era: 1, y: 1835}, urls: {"en": "https://en.wikipedia.org/wiki/Statehood_Day_(Serbia)"}},
-        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/sovereignty-day-of-serbia/"}, titles: {"en": "Sovereignty Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/sovereignty-day-of-serbia/"}, inherits: "Sovereignty Day", first: {era: 1, y: 2001}},
         {inherits: "St. Vitus Day", type: "1D", start: {mon: 6, d: 28}},
    ]
 }

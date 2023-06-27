@@ -9,5 +9,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 21, mon: 5}, first: {era: 1, y: 2006}, urls: {"en": "https://www.daysoftheyear.co.il/2017/05/21.html"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/sovereignty-day-of-montenegro/"}, inherits: "Sovereignty Day", first: {era: 1, y: 1878}},
     ]
 }
