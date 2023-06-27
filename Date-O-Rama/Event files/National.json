@@ -8,108 +8,77 @@
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Buffet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/buffet-day/"}},
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Cream Puff Day"}, urls: {"en": "https://www.daysoftheyear.com/days/creampuff-day/"}, notes: {"en": "National Creampuff Day"}},
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Personal Trainer Awareness Day", "he": "יום מאמן הכושר האישי"}, urls: {"en": "https://www.daysoftheyear.com/days/personal-trainer-awareness-day/", "he": "https://www.daysoftheyear.co.il/2018/01/2.html"}, first: {era: 1, y: 2000}},
-        
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Science Fiction Day", "he": "יום המדע הבדיוני"}, urls: {"en": "https://www.daysoftheyear.com/days/science-fiction-day/", "he": "https://www.daysoftheyear.co.il/2017/01/2.html"}, emoji: "👽"},
-        
         {type: "1D", start: {mon: 1, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-covered-cherry-day/", "he": "https://www.daysoftheyear.co.il/2019/01/chocolate-covered-cherry-day.html"}, titles: {"en": "National Chocolate Covered Cherry Day", "he": "יום הדובדבן מצופה בשוקולד"}, emoji: "🍒"},
         {type: "1D", start: {d: 3, mon: 1}, titles: {"en": "National Drinking Straw Day", "he": "יום קשית השתיה"}, urls: {"en": "https://www.daysoftheyear.com/days/drinking-straw-day/", "he": "https://www.daysoftheyear.co.il/2018/11/3.html"}, emoji: "🧋"},
         {type: "1D", start: {d: 4, mon: 1}, titles: {"en": "National Trivia Day", "he": "יום הטריוויה"}, urls: {"en": "https://www.daysoftheyear.com/days/trivia-day/", "he": "https://www.daysoftheyear.co.il/2018/01/4.html"}, emoji: "🧠"},
-        
         {type: "1D", start: {mon: 1, d: 4}, titles: {"en": "National Spaghetti Day"}, notes: {"en": "Spaghetti Day"}, emoji: "🍝", urls: {"en": "https://www.daysoftheyear.com/days/spaghetti-day/"}},
         {type: "1D", start: {d: 5, mon: 1}, titles: {"en": "National Keto Day"}, urls: {"en": "https://nationaldaycalendar.com/national-keto-day-january-5/"}, emoji: "🧀", first: {era: 1, y: 2019}},
         {type: "1D", start: {d: 5, mon: 1}, titles: {"en": "National Screenwriters Day"}, urls: {"en": "https://nationaldaycalendar.com/national-screenwriters-day-january-5/"}, emoji: "✍️", first: {era: 1, y: 2016}},
         {type: "1D", start: {d: 5, mon: 1}, titles: {"en": "National Whipped Cream Day", "he": "יום הקצפת"}, urls: {"en": "https://www.daysoftheyear.com/days/whipped-cream-day/", "he": "https://www.daysoftheyear.co.il/2018/01/5.html"}},
         {type: "1D", start: {mon: 1, d: 5}, urls: {"en": "https://nationaltoday.com/national-bird-day/", "he": "https://www.daysoftheyear.co.il/2019/01/bird-day.html"}, titles: {"en": "National Bird Day", "he": "יום הציפור"}, emoji: "🐦"},
-        
         {type: "1D", start: {d: 6, mon: 1}, titles: {"en": "National Bean Day", "he": "יום השעועית"}, urls: {"en": "https://www.daysoftheyear.com/days/bean-day/", "he": "https://www.daysoftheyear.co.il/2019/01/bean-day.html"}, emoji: "🫘", notes: {"en": "Dry Bean Day"}},
         {type: "1D", start: {d: 6, mon: 1}, titles: {"en": "National Shortbread Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shortbread-day/"}},
         {type: "1D", start: {d: 6, mon: 1}, titles: {"en": "National Cuddle Up Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cuddle-up-day/"}, emoji: "👨👩"},
-        
         {type: "1D", start: {d: 7, mon: 1}, titles: {"en": "National Tempura Day", "he": "יום הטמפורה"}, urls: {"en": "https://www.daysoftheyear.com/days/tempura-day/", "he": "https://www.daysoftheyear.co.il/2019/01/tempura-day.html"}},
-        
         {type: "1D", start: {d: 8, mon: 1}, titles: {"en": "National Argyle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/argyle-day/"}},
         {type: "1D", start: {d: 8, mon: 1}, titles: {"en": "National English Toffee Day"}, urls: {"en": "https://nationaldaycalendar.com/national-english-toffee-day-january-8/"}},
-        
         {type: "1D", start: {d: 9, mon: 1}, titles: {"en": "National Apricot Day", "he": "יום המשמש"}, urls: {"en": "https://www.daysoftheyear.com/days/apricot-day/", "he": "https://www.daysoftheyear.co.il/2018/01/9.html"}},
         {type: "1D", start: {d: 9, mon: 1}, titles: {"en": "National Balloon Ascension Day"}, urls: {"en": "https://www.daysoftheyear.com/days/balloon-ascension-day/"}, first: {era: 1, y: 1793}},
         {type: "1D", start: {d: 9, mon: 1}, titles: {"en": "National Law Enforcement Appreciation Day"}, urls: {"en": "https://nationaldaycalendar.com/national-law-enforcement-appreciation-day-january-9/"}, emoji: "👮‍♂️👮‍♀️", first: {era: 1, y: 2015}},
         {type: "1D", start: {d: 9, mon: 1}, titles: {"en": "National Static Electricity Day", "he": "יום החשמל הסטטי"}, urls: {"en": "https://www.daysoftheyear.com/days/static-electricity-day/", "he": "https://www.daysoftheyear.co.il/2019/01/static-electric-day.html"}, emoji: "⚡️"},
-        
         {type: "1D", start: {d: 10, mon: 1}, titles: {"en": "National Save the Eagles Day"}, urls: {"en": "https://nationaltoday.com/national-save-the-eagles-day/"}, emoji: "🦅", first: {era: 1, y: 2015}},
-        
         {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-bittersweet-chocolate-day/", "he": "https://www.daysoftheyear.co.il/2018/01/10.html"}, titles: {"en": "National Bittersweet Chocolate Day", "he": "יום השוקולד המריר"}, emoji: "🍫"},
         {type: "1D", start: {d: 11, mon: 1}, titles: {"en": "National Human Trafficking Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/national-human-trafficking-awareness-day-january-11/"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {d: 11, mon: 1}, titles: {"en": "National Milk Day", "he": "יום החלב"}, urls: {"en": "https://nationaldaycalendar.com/national-milk-day-january-11/", "he": "https://www.daysoftheyear.co.il/2017/01/11.html"}, emoji: "🥛", first: {era: 1, y: 1915}},
-        
         {type: "1D", start: {d: 12, mon: 1}, titles: {"en": "National Marzipan Day", "he": "יום המרציפן"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-day/", "he": "https://www.daysoftheyear.co.il/2018/01/12.html"}},
-        
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "National Rubber Ducky Day"}, notes: {"en": "National Rubber Duckie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rubber-duckie-day/"}, emoji: "🐤"},
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "National Sticker Day", "he": "יום המדבקה"}, urls: {"en": "https://www.daysoftheyear.com/days/sticker-day/", "he": "https://www.daysoftheyear.co.il/2019/01/sticker-day.html"}},
-        
         {type: "1D", start: {d: 14, mon: 1}, titles: {"en": "National Dress Up Your Pet Day", "he": "יום הלבש את חיית המחמד שלך"}, urls: {"en": "https://www.daysoftheyear.com/days/dress-up-your-pet-day/", "he": "https://www.daysoftheyear.co.il/2018/01/14.html"}, first: {era: 1, y: 2009}, emoji: "🐈‍⬛"},
-        
         {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Bagel Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bagel-day/"}, first: {era: 1, y: 2000}, emoji: "🥯"},
-        
         {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Strawberry Ice Cream Day", "he": "יום גלידת התות"}, urls: {"en": "https://www.daysoftheyear.com/days/strawberry-ice-cream-day/", "he": "https://www.daysoftheyear.co.il/2020/01/strawberry-icecream-day.html"}, emoji: "🍨", first: {era: 1, y: 1932}},
         {type: "1D", start: {d: 16, mon: 1}, titles: {"en": "National Fig Newton Day"}, urls: {"en": "https://nationaldaycalendar.com/national-fig-newton-day-january-16/"}},
         {type: "1D", start: {d: 16, mon: 1}, titles: {"en": "National Nothing Day", "he": "יום הלא כלום"}, urls: {"en": "https://www.daysoftheyear.com/days/nothing-day/", "he": "https://www.daysoftheyear.co.il/2018/01/16.html"}, emoji: "0️⃣", first: {era: 1, y: 1956}},
-        
         {type: "1D", start: {d: 17, mon: 1}, titles: {"en": "National Kid Inventors’ Day"}, notes: {"en": "Kid Inventors Day"}, emoji: "👧💡", urls: {"en": "https://www.daysoftheyear.com/days/kid-inventors-day/"}},
-        
         {type: "1D", start: {d: 18, mon: 1}, titles: {"en": "National Peking Duck Day"}, urls: {"en": "https://nationaldaycalendar.com/national-peking-duck-day-january-18/"}},
         {type: "1D", start: {d: 18, mon: 1}, titles: {"en": "National Thesaurus Day", "he": "יום התזאורוס"}, urls: {"en": "https://www.daysoftheyear.com/days/thesaurus-day/", "he": "https://www.daysoftheyear.co.il/2019/01/thesaurus-day.html"}, emoji: "📖"},
         {type: "1D", start: {d: 18, mon: 1}, titles: {"en": "National Winnie the Pooh Day", "he": "יום פו הדב"}, urls: {"en": "https://www.daysoftheyear.com/days/winnie-the-pooh-day/", "he": "https://www.daysoftheyear.co.il/2018/01/18.html"}},
-        
         {type: "1D", start: {d: 19, mon: 1}, titles: {"en": "National Popcorn Day", "he": "יום הפופקורן"}, urls: {"en": "https://www.daysoftheyear.com/days/popcorn-day/", "he": "https://www.daysoftheyear.co.il/2018/01/19.html"}, emoji: "🍿"},
-        
         {type: "1D", start: {d: 20, mon: 1}, titles: {"en": "National Buttercrunch Day"}, urls: {"en": "https://www.daysoftheyear.com/days/buttercrunch-day/"}},
         {type: "1D", start: {d: 20, mon: 1}, titles: {"en": "National Cheese Lover’s Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheese-lovers-day/"}, emoji: "🧀"},
         {type: "1D", start: {d: 20, mon: 1}, titles: {"en": "National Disc Jockey Day"}, urls: {"en": "https://www.daysoftheyear.com/days/disc-jockey-day/"}},
-        
         {type: "1D", start: {d: 20, mon: 1}, titles: {"en": "National Camcorder Day"}, notes: {"en": "Camcorder Day"}, urls: {"en": "https://www.daysoftheyear.com/days/camcorder-day/"}, emoji: "📹"},
-        
         {type: "1D", start: {d: 21, mon: 1}, titles: {"en": "National Hugging Day", "he": "יום החיבוקים"}, urls: {"en": "https://www.daysoftheyear.com/days/hugging-day/", "he": "https://www.daysoftheyear.co.il/2018/01/21.html"}, emoji: "🫂", first: {era: 1, y: 1986}},
         {type: "1D", start: {d: 21, mon: 1}, titles: {"en": "National Granola Bar Day"}, urls: {"en": "https://www.daysoftheyear.com/days/granola-bar-day/"}},
         {type: "1D", start: {d: 21, mon: 1}, titles: {"en": "National Squirrel Appreciation Day", "he": "יום ההערכה לסנאי"}, urls: {"en": "https://www.daysoftheyear.com/days/squirrel-appreciation-day/", "he": "https://www.daysoftheyear.co.il/2021/01/squirell-day.html"}, emoji: "🐿"},
         {type: "1D", start: {d: 22, mon: 1}, titles: {"en": "National Blonde Brownie Day", "he": "יום הזהוביות—בלונדיז"}, urls: {"en": "https://www.daysoftheyear.com/days/blonde-brownie-day/", "he": "https://www.daysoftheyear.co.il/2020/01/blondies-day.html"}},
         {type: "1D", start: {d: 22, mon: 1}, titles: {"en": "National Hot Sauce Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-sauce-day/"}, emoji: "🌶"},
-        
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-pie-day/", "he": "https://www.daysoftheyear.co.il/2020/01/pie-day.html"}, titles: {"en": "National Pie Day", "he": "יום מאפה הפאי"}, emoji: "🥧"},
         {type: "1D", start: {mon: 1, d: 24}, titles: {"en": "Beer Can Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/beer-can-appreciation-day/"}, emoji: "🍺", notes: {"en": "National Beer Can Appreciation Day"}},
         {type: "1D", start: {mon: 1, d: 24}, titles: {"en": "National Compliment Day"}, urls: {"en": "https://nationaldaycalendar.com/national-compliment-day-january-24/"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 1, d: 24}, titles: {"en": "National Peanut Butter Day", "he": "יום חמאת הבוטנים"}, urls: {"en": "https://www.daysoftheyear.com/days/peanut-butter-day/", "he": "https://www.daysoftheyear.co.il/2017/01/24.html"}, emoji: "🥜"},
-        
         {type: "1D", start: {d: 25, mon: 1}, titles: {"en": "National Irish Coffee Day", "he": "יום האייריש קופי"}, urls: {"en": "https://www.daysoftheyear.com/days/irish-coffee-day/", "he": "https://www.daysoftheyear.co.il/2018/01/25.html"}, emoji: "☕️"},
         {type: "1D", start: {d: 25, mon: 1}, titles: {"en": "National Opposite Day"}, urls: {"en": "https://www.daysoftheyear.com/days/opposite-day/"}, emoji: "👎👍"},
-        
         {type: "1D", start: {mon: 1, d: 26}, titles: {"en": "National Spouses Day"}, urls: {"en": "https://www.daysoftheyear.com/days/spouses-day/"}, emoji: "👩👨", notes: {"en": "Spouse’s Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {d: 27, mon: 1}, titles: {"en": "National Chocolate Cake Day", "he": "יום עוגת השוקולד"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-cake-day/", "he": "https://www.daysoftheyear.co.il/2020/01/chocolate-cake-day.html"}, emoji: "🍰"},
         {type: "1D", start: {d: 27, mon: 1}, titles: {"en": "National Geographic Day", "he": "יום נשיונל ג׳אוגרפיק"}, urls: {"en": "https://www.daysoftheyear.com/days/national-geographic-day/", "he": "https://www.daysoftheyear.co.il/2019/01/national-geographic-day.html"}, emoji: "🏞"},
-        
         {type: "1D", start: {d: 28, mon: 1}, titles: {"en": "National Blueberry Pancake Day"}, urls: {"en": "https://www.daysoftheyear.com/days/blueberry-pancake-day/"}, emoji: "🥞"},
         {type: "1D", start: {d: 28, mon: 1}, titles: {"en": "National Kazoo Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kazoo-day/"}},
-        
         {type: "1D", start: {d: 29, mon: 1}, titles: {"en": "National Corn Chip Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cornchip-day/"}},
         {type: "1D", start: {d: 29, mon: 1}, titles: {"en": "National Puzzle Day", "he": "יום הפאזל"}, urls: {"en": "https://www.daysoftheyear.com/days/puzzle-day/", "he": "https://www.daysoftheyear.co.il/2020/01/puzzle-day.html"}, emoji: "🧩"},
-        
         {type: "1D", start: {d: 30, mon: 1}, titles: {"en": "National Croissant Day", "he": "יום הקרואסון"}, urls: {"en": "https://www.daysoftheyear.com/days/croissant-day/", "he": "https://www.daysoftheyear.co.il/2018/01/30.html"}, emoji: "🥐"},
         {type: "1D", start: {d: 31, mon: 1}, titles: {"en": "National Backward Day", "he": "יום האחורה"}, urls: {"en": "https://www.daysoftheyear.com/days/backward-day/", "he": "https://www.daysoftheyear.co.il/2018/01/31.html"}, emoji: "⏪"},
         {type: "1D", start: {d: 31, mon: 1}, titles: {"en": "National Hot Chocolate Day"}, urls: {"en": "https://nationaldaycalendar.com/national-hot-chocolate-day-january-31/"}, emoji: "☕️"},
         {type: "1D", start: {d: 31, mon: 1}, titles: {"en": "National Inspire Your Heart With Art Day"}, urls: {"en": "https://nationaldaycalendar.com/inspire-your-heart-with-art-day-january-31/"}, emoji: "🎨"},
         {type: "1D", start: {d: 31, mon: 1}, titles: {"en": "National Gorilla Suit Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gorilla-suit-day/"}, emoji: "🦍", first: {era: 1, y: 1963}},
-        
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: -1}, titles: {"en": "National Bubble Wrap Day"}, notes: {"en": "Bubble Wrap Appreciation Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bubble-wrap-appreciation-day/"}},
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Serpent Day"}, urls: {"en": "https://www.daysoftheyear.com/days/serpent-day/"}, emoji: "🐍"},
-        
         {type: "1D", start: {d: 2, mon: 2}, titles: {"en": "National Heavenly Hash Day"}, urls: {"en": "https://nationaldaycalendar.com/national-heavenly-hash-day-february-2/"}},
-        
         {type: "1D", start: {d: 3, mon: 2}, titles: {"en": "National Women Physicians Day"}, urls: {"en": "https://nationaldaycalendar.com/national-women-physicians-day-february-3/"}, first: {era: 1, y: 2017}, emoji: "👩‍⚕️"},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/national-carrot-cake-day/", "he": "https://www.daysoftheyear.co.il/2018/02/3.html"}, titles: {"en": "National Carrot Cake Day", "he": "יום עוגת הגזר"}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/national-golden-retriever-day/", "he": "https://www.daysoftheyear.co.il/2020/02/golden-retriever-day.html"}, titles: {"en": "National Golden Retriever Day", "he": "יום הגולדן רטריבר"}},
-        
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-homemade-soup-day/", "he": "https://www.daysoftheyear.co.il/2021/02/4.html"}, titles: {"en": "National Homemade Soup Day", "he": "יום המרק הביתי"}, emoji: "🥣"},
         {type: "1D", start: {d: 5, mon: 2}, titles: {"en": "National Weatherperson’s Day", "he": "יום החזאי"}, urls: {"en": "https://www.daysoftheyear.com/days/weatherpersons-day/", "he": "https://www.daysoftheyear.co.il/2016/02/5.html"}, emoji: "🌩"},
-        
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/national-chocolate-fondue-day/", "he": "https://www.daysoftheyear.co.il/2017/02/5.html"}, titles: {"en": "National Chocolate Fondue Day", "he": "יום הפונדו שוקולד"}},
         {type: "1D", start: {d: 6, mon: 2}, titles: {"en": "National Lame Duck Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lame-duck-day/"}},
         {type: "1D", start: {d: 6, mon: 2}, titles: {"en": "National Chopsticks Day"}, urls: {"en": "https://nationaldaycalendar.com/national-chopsticks-day-february-6/"}, first: {era: 1, y: 2012}, emoji: "🥢"},
@@ -117,224 +86,149 @@
         {type: "1D", start: {d: 7, mon: 2}, titles: {"en": "National Periodic Table Day"}, urls: {"en": "https://www.periodictableday.org/"}, first: {era: 1, y: 2016}, emoji: "🧪"},
         {type: "1D", start: {d: 7, mon: 2}, titles: {"en": "National Fettuccine Alfredo Day"}, urls: {"en": "https://nationaldaycalendar.com/national-fettuccine-alfredo-day-february-7/"}, emoji: "🍜", first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/national-send-card-friend-day/", "he": "https://www.daysoftheyear.co.il/2018/02/7.html"}, titles: {"en": "National Send a Card to a Friend Day", "he": "יום שלח לחברך כרטיס ברכה"}},
-        
         {type: "1D", start: {d: 8, mon: 2}, titles: {"en": "National Kite Flying Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kite-flying-day/"}, notes: {"en": "National Kite-Flying Day"}, emoji: "🪁"},
-        
         {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Cut the Cord Day"}, urls: {"en": "https://nationaldaycalendar.com/national-cut-the-cord-day-february-9/"}, first: {era: 1, y: 2020}, emoji: "📺"},
         {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Bagel and Lox Day", "he": "יום הבייגל"}, emoji: "🥯", urls: {"en": "https://nationaldaycalendar.com/national-bagel-and-lox-day-february-9/", "he": "https://www.daysoftheyear.co.il/2019/02/bagel-day.html"}},
-        
         {type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Toothache Day"}, urls: {"en": "https://www.daysoftheyear.com/days/toothache-day/"}, emoji: "🦷"},
         {type: "1D", start: {d: 10, mon: 2}, titles: {"en": "National Umbrella Day", "he": "יום המטריה"}, urls: {"en": "https://www.daysoftheyear.com/days/umbrella-day/", "he": "https://www.daysoftheyear.co.il/2018/02/10.html"}, emoji: "☂️"},
         {type: "1D", start: {d: 11, mon: 2}, titles: {"en": "National Peppermint Patty Day"}, urls: {"en": "https://www.daysoftheyear.com/days/peppermint-patty-day/"}},
         {type: "1D", start: {d: 11, mon: 2}, titles: {"en": "National White Shirt Day"}, urls: {"en": "https://www.daysoftheyear.com/days/white-shirt-day/"}},
-        
         {type: "1D", start: {d: 12, mon: 2}, titles: {"en": "National Plum Pudding Day"}, urls: {urls: "https://www.daysoftheyear.com/days/plum-pudding-day/"}},
-        
         {type: "1D", start: {d: 13, mon: 2}, titles: {"en": "National Cheddar Day"}, urls: {"en": "https://nationaldaycalendar.com/national-cheddar-day-february-13/"}, emoji: "🧀", first: {era: 1, y: 2019}},
         {type: "1D", start: {d: 14, mon: 2}, titles: {"en": "National Ferris Wheel Day", "he": "יום הגלגל הענק"}, urls: {"en": "https://www.daysoftheyear.com/days/ferris-wheel-day/", "he": "https://www.daysoftheyear.co.il/2018/02/14.html"}, emoji: "🎡"},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-pet-theft-awareness-day/", "he": "https://www.daysoftheyear.co.il/2021/02/pet-theft-day.html"}, titles: {"en": "National Pet Theft Awareness Day", "he": "יום המודעות לגניבת חיות מחמד"}, emoji: "🐈‍⬛🦮🐇"},
         {type: "1D", start: {d: 15, mon: 2}, titles: {"en": "National Gumdrop Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gumdrop-day/"}},
-        
         {type: "1D", start: {d: 16, mon: 2}, titles: {"en": "National Almond Day", "he": "יום השקד"}, urls: {"en": "https://www.daysoftheyear.com/days/almond-day/"}},
-        
         {type: "1D", start: {d: 17, mon: 2}, titles: {"en": "National Cabbage Day"}, urls: {"en": "https://nationaldaycalendar.com/national-cabbage-day-february-17/"}, emoji: "🥬"},
-        
         {type: "1D", start: {d: 18, mon: 2}, titles: {"en": "National Battery Day", "he": "יום הבטריה"}, urls: {"en": "https://www.daysoftheyear.com/days/battery-day/", "he": "https://www.daysoftheyear.co.il/2017/02/18.html"}, emoji: "🔋"},
         {type: "1D", start: {d: 18, mon: 2}, titles: {"en": "National Drink Wine Day", "he": "יום שתיית היין"}, urls: {"en": "https://www.daysoftheyear.com/days/drink-wine-day/", "he": "https://www.daysoftheyear.co.il/2018/02/18.html"}, emoji: "🍷"},
-        
         {type: "1D", start: {mon: 2, d: 18}, urls: {"en": "https://nationaltoday.com/national-eat-ice-cream-for-breakfast-day/", "he": "https://www.daysoftheyear.co.il/2021/02/icecream-4-breakfast-day.html"}, titles: {"en": "National Eat Ice Cream for Breakfast Day", "he": "יום אכילת גלידה לארוחת בוקר"}, emoji: "🍨", first: {era: 1, y: 1960}},
         {type: "1D", start: {d: 19, mon: 2}, titles: {"en": "National Arabian Horse Day"}, first: {era: 1, y: 2021}, emoji: "🐎", urls: {"en": "https://nationalarabianhorseday.com/"}},
         {type: "1D", start: {d: 19, mon: 2}, titles: {"en": "National Chocolate Mint Day", "he": "יום השוקולד מנטה"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-mint-day/", "he": "https://www.daysoftheyear.co.il/2021/02/chocolate-mint-day.html"}},
         {type: "1D", start: {d: 19, mon: 2}, titles: {"en": "National Lash Day"}, urls: {"en": "https://nationaldaycalendar.com/national-lash-day-february-19/"}, emoji: "👁", first: {era: 1, y: 2015}},
         {type: "1D", start: {d: 19, mon: 2}, titles: {"en": "National Vet Girls RISE Day"}, emoji: "👩", urls: {"en": "https://nationaldaycalendar.com/national-vet-girls-rise-day-february-19/"}, first: {era: 1, y: 2019}},
-        
         {type: "1D", start: {d: 20, mon: 2}, titles: {"en": "National Comfy Day"}, first: {era: 1, y: 2021}, emoji: "😌", urls: {"en": "https://nationaldaycalendar.com/national-comfy-day-february-20/"}},
         {type: "1D", start: {d: 20, mon: 2}, titles: {"en": "National Cherry Pie Day"}, emoji: "🥧", urls: {"en": "https://www.daysoftheyear.com/days/cherry-pie-day/"}},
         {type: "1D", start: {d: 20, mon: 2}, titles: {"en": "National Muffin Day"}, first: {era: 1, y: 2015}, urls: {"en": "https://www.daysoftheyear.com/days/muffin-day/"}},
         {type: "1D", start: {d: 20, mon: 2}, titles: {"en": "National Love Your Pet Day", "he": "יום האהבה לחיית המחמד שלך"}, urls: {"en": "https://www.daysoftheyear.com/days/love-your-pet-day/", "he": "https://www.daysoftheyear.co.il/2020/02/love-your-pet-day.html"}, emoji: "🐈🐕🐩"},
         {type: "1D", start: {d: 21, mon: 2}, titles: {"en": "National Grain-Free Day"}, first: {era: 1, y: 2019}, emoji: "🥑", urls: {"en": "https://nationaldaycalendar.com/national-grain-free-day-february-21/"}},
         {type: "1D", start: {d: 21, mon: 2}, titles: {"en": "National Sticky Bun Day"}, urls: {"en": "https://www.daysoftheyear.com/days/sticky-bun-day/"}},
-        
         {type: "1D", start: {d: 22, mon: 2}, titles: {"en": "National Supermarket Employee Day"}, first: {era: 1, y: 2022}, emoji: "🍅", urls: {"en": "https://nationaldaycalendar.com/national-supermarket-employee-day-february-22/"}},
         {type: "1D", start: {d: 22, mon: 2}, titles: {"en": "National Margarita Day", "he": "יום המרגריטה"}, first: {era: 1, y: 2008}, emoji: "🍸", urls: {"en": "https://www.daysoftheyear.com/days/margarita-day/", "he": "https://www.daysoftheyear.co.il/2020/02/margarita-day.html"}},
-        
         {type: "1D", start: {d: 23, mon: 2}, titles: {"en": "National Banana Bread Day"}, urls: {"en": "https://www.daysoftheyear.com/days/banana-bread-day/"}},
         {type: "1D", start: {d: 23, mon: 2}, titles: {"en": "National Tile Day"}, first: {era: 1, y: 2017}, emoji: "🀆", urls: {"en": "https://nationaldaycalendar.com/national-tile-day-february-23/"}},
-        
         {type: "1D", start: {d: 24, mon: 2}, titles: {"en": "National Tortilla Chip Day"}, emoji: "△", urls: {"en": "https://www.daysoftheyear.com/days/tortilla-chip-day/"}},
-        
         {type: "1D", start: {d: 25, mon: 2}, titles: {"en": "National Chocolate Covered Nut Day"}, urls: {"en": "https://www.daysoftheyear.com/days/chocolate-covered-peanuts-day/"}},
         {type: "1D", start: {d: 25, mon: 2}, titles: {"en": "National Clam Chowder Day", "he": "יום מרק הצדפות"}, urls: {"en": "https://www.daysoftheyear.com/days/clam-chowder-day/", "he": "https://www.daysoftheyear.co.il/2018/02/25.html"}, emoji: "🥣🦪"},
         {type: "1D", start: {d: 26, mon: 2}, titles: {"en": "National Pistachio Day"}, urls: {"en": "https://www.worldpistachioday.com/"}},
         {type: "1D", start: {d: 26, mon: 2}, titles: {"en": "National Personal Chef Day", "he": "יום השף האישי"}, urls: {"en": "https://www.daysoftheyear.com/days/personal-chef-day/", "he": "https://www.daysoftheyear.co.il/2018/02/26.html"}, emoji: "👨‍🍳👩‍🍳"},
-        
         {type: "1D", start: {d: 27, mon: 2}, titles: {"en": "National Kahlua Day"}, urls: {"en": "https://www.daysoftheyear.com/days/kahlua-day/"}, emoji: "🥃"},
         {type: "1D", start: {d: 27, mon: 2}, titles: {"en": "National Retro Day"}, first: {era: 1, y: 2018}, emoji: "🪩", urls: {"en": "https://nationaldaycalendar.com/national-retro-day-february-27/"}},
         {type: "1D", start: {d: 27, mon: 2}, titles: {"en": "National Strawberry Day", "he": "יום התות"}, first: {era: 1, y: 2013}, emoji: "🍓", urls: {"en": "https://www.daysoftheyear.com/days/strawberry-day/", "he": "https://www.daysoftheyear.co.il/2018/02/27.html"}},
         {type: "1D", start: {d: 27, mon: 2}, titles: {"en": "International Polar Bear Day", "he": "יום דוב הקוטב"}, notes: {"en": "National Polar Bear Day"}, first: {era: 1, y: 2011}, emoji: "🐻‍❄️", urls: {"en": "https://www.daysoftheyear.com/days/polar-bear-day/", "he": "https://www.daysoftheyear.co.il/2021/02/polar-bear-day.html"}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/national-pokemon-day/", "he": "https://www.daysoftheyear.co.il/2020/02/pokemon-day.html"}, titles: {"en": "National Pokemon Day", "he": "יום הפוקימון"}},
-        
         {type: "1D", start: {d: 28, mon: 2}, titles: {"en": "National Public Sleeping Day"}, first: {era: 1, y: 2011}, emoji: "💤", urls: {"en": "https://nationaldaycalendar.com/national-public-sleeping-day-february-28/"}},
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-chocolate-souffle-day/", "he": "https://www.daysoftheyear.co.il/2017/02/28.html"}, titles: {"en": "National Chocolate Souffle Day", "he": "יום הסופלה שוקולד"}},
         {type: "1D", start: {d: 29, mon: 2}, titles: {"en": "National Time Refund Day"}, first: {era: 1, y: 2020}, emoji: "🤷‍♀️", urls: {"en": "https://nationaldaycalendar.com/national-time-refund-day-february-29/"}},
-        
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Pig Day", "he": "יום החזיר"}, first: {era: 1, y: 1972}, emoji: "🐖", urls: {"en": "https://www.daysoftheyear.com/days/pig-day/", "he": "https://www.daysoftheyear.co.il/2017/03/1.html"}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Peanut Butter Lover’s Day"}, first: {era: 1, y: 1990}, emoji: "🥜", urls: {"en": "https://nationaldaycalendar.com/national-peanut-butter-lovers-day-march-1/"}},
         {type: "1D", start: {d: 3, mon: 3}, titles: {"en": "National Canadian Bacon Day"}, notes: {"en": "Canadian Bacon Day"}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-bacon-day/"}},
-        
         {type: "1D", start: {d: 4, mon: 3}, titles: {"en": "National Grammar Day"}, first: {era: 1, y: 2008}, emoji: "👩‍🏫", urls: {"en": "https://www.quickanddirtytips.com/national-grammar-day"}},
         {type: "1D", start: {d: 5, mon: 3}, titles: {"en": "National Cheese Doodle Day"}, urls: {"en": "https://www.daysoftheyear.com/days/cheese-doodle-day/"}, emoji: "🧀"},
         {type: "1D", start: {d: 5, mon: 3}, titles: {"en": "National Absinthe Day"}, urls: {"en": "https://www.daysoftheyear.com/days/absinthe-day/"}},
         {type: "1D", start: {d: 7, mon: 3}, titles: {"en": "National Crown Roast of Pork Day"}, urls: {"en": "https://www.daysoftheyear.com/days/crown-roast-of-pork-day/"}},
-        
         {type: "1D", start: {d: 9, mon: 3}, titles: {"en": "National Meatball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/meatball-day/"}, notes: {"en": "Meatball Day"}, emoji: "🍝"},
-        
         {type: "1D", start: {d: 13, mon: 3}, titles: {"en": "National Coconut Torte Day"}, urls: {"en": "https://www.daysoftheyear.com/days/coconut-torte-day/"}},
-        
         {type: "1D", start: {d: 20, mon: 3}, titles: {"en": "National Native HIV/AIDS Awareness Day"}, first: {era: 1, y: 2006}, emoji: "🌿", urls: {"en": "https://www.nnhaad.org/"}},
-        
         {type: "1D", start: {mon: 4, d: 2}, titles: {"en": "International Children’s Book Day"}, first: {era: 1, y: 1967}, emoji: "📚", urls: {"en": "https://www.daysoftheyear.com/days/childrens-book-day/"}, notes: {"en": "National Children’s Picture Book Day"}, emoji: "👦👧"},
         {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "National Peanut Butter and Jelly Day"}, emoji: "🥪", urls: {"en": "https://www.daysoftheyear.com/days/peanut-butter-and-jelly-day/"}},
         {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "National Ferret Day", "he": "יום החמוס"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/ferret-day/", "he": "https://www.daysoftheyear.co.il/2021/04/ferret-day.html"}},
-        
         {type: "1D", start: {d: 6, mon: 4}, titles: {"en": "National Carbonara Day"}, urls: {"en": "https://nationaldaycalendar.com/national-carbonara-day-april-6/"}, first: {era: 1, y: 2017}, emoji: "🍝"},
-        
         {type: "1D", start: {mon: 4, d: 8}, titles: {"en": "National Zoo Lovers Day", "he": "יום לאוהבי גן חיות"}, emoji: "🦘", urls: {"en": "https://www.daysoftheyear.com/days/zoo-lovers-day/", "he": "https://www.daysoftheyear.co.il/2018/04/8.html"}},
-        
         {type: "1D", start: {d: 11, mon: 4}, titles: {"en": "National Pet Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pet-day/"}, emoji: "🦮", first: {era: 1, y: 2006}},
-        
         {type: "1D", start: {mon: 4, d: 11}, titles: {"en": "National Cheese Fondue Day"}, notes: {"en": "Cheese Fondue Day"}, emoji: "🫕", urls: {"en": "https://www.daysoftheyear.com/days/cheese-fondue-day/"}, emoji: "🧀"},
-        
         {type: "1D", start: {mon: 4, d: 14}, titles: {"en": "National Look up at the Sky Day"}, notes: {"en": "Look up at the Sky Day"}, emoji: "🐦✈️", urls: {"en": "https://www.daysoftheyear.com/days/look-up-at-the-sky-day/"}},
-        
         {type: "1D", start: {mon: 4, d: 17}, titles: {"en": "International Haiku Poetry Day"}, notes: {"en": "National Haiku Poetry Day\nHaiku Day"}, urls: {"en": "https://thehaikufoundation.org/events/international-haiku-poetry-day/"}, emoji: "🚲"},
-        
         {type: "1D", start: {d: 26, mon: 4}, titles: {"en": "National Pretzel Day"}, emoji: "🥨", urls: {"en": "https://www.daysoftheyear.com/days/pretzel-day/"}},
-        
         {type: "1D", start: {mon: 4, d: 28}, titles: {"en": "National Blueberry Pie Day"}, notes: {"en": "Blueberry Pie Day"}, emoji: "🥧", urls: {"en": "https://www.daysoftheyear.com/days/blueberry-pie-day/"}},
-        
         {type: "1D", start: {mon: 5, d: 6}, titles: {"en": "National Beverage Day"}, emoji: "🍵", urls: {"en": "https://www.daysoftheyear.com/days/beverage-day/"}, notes: {"en": "Beverage Day"}},
-        
         {type: "1D", start: {mon: 5, d: 9}, titles: {"en": "National Lost Sock Memorial Day", "he": "יום הזיכרון לגרביים אבודות"}, notes: {"en": "Lost Sock Memorial Day"}, emoji: "🧦", urls: {"en": "https://www.daysoftheyear.com/days/lost-sock-memorial-day/", "he": "https://www.daysoftheyear.co.il/2017/05/9.html"}},
         {type: "1D", start: {mon: 5, d: 12}, titles: {"en": "National Limerick Day"}, emoji: "🖋", notes: {"en": "Limerick Day"}, urls: {"en": "https://www.daysoftheyear.com/days/limerick-day/"}},
-        
         {type: "1D", start: {d: 18, mon: 6}, titles: {"en": "International Panic Day"}, emoji: "😱", urls: {"en": "https://www.daysoftheyear.com/days/international-panic-day/"}, notes: {"en": "National Panic Day"}},
-        
         {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "National Gingersnap Day"}, urls: {"en": "https://www.daysoftheyear.com/days/gingersnap-day/"}},
         {type: "1D", start: {d: 2, mon: 7}, titles: {"en": "National Anisette Day"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/anisette-day/"}},
-        
         {type: "1D", start: {d: 11, mon: 7}, titles: {"en": "National 7-Eleven Day"}, first: {era: 1, y: 2002}, emoji: "🥤", urls: {"en": "https://nationaldaycalendar.com/national-7-eleven-day-july-11/"}},
         {type: "1D", start: {d: 12, mon: 7}, titles: {"en": "National Simplicity Day"}, emoji: "⚪️", urls: {"en": "https://www.daysoftheyear.com/days/simplicity-day/"}},
-        
         {type: "1D", start: {d: 1, mon: 8}, titles: {"en": "National Minority Donor Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/national-minority-donor-awareness-day/"}},
         {type: "1D", start: {d: 2, mon: 8}, titles: {"en": "National Coloring Book Day"}, emoji: "✍️", urls: {"en": "https://www.coloringbookday.com/"}},
         {type: "1D", start: {d: 3, mon: 8}, titles: {"en": "National Watermelon Day"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/"}},
         {type: "1D", start: {d: 5, mon: 8}, titles: {"en": "National Oyster Day"}, emoji: "🦪", urls: {"en": "https://www.daysoftheyear.com/days/oyster-day/"}},
-        
         {type: "1D", start: {d: 11, mon: 8}, titles: {"en": "National Son and Daughter Day"}, first: {era: 1, y: 2944}, emoji: "👦👧", urls: {"en": "https://www.daysoftheyear.com/days/son-and-daughter-day/"}},
-        
         {type: "1D", start: {d: 25, mon: 8}, titles: {"en": "National Whiskey Sour Day"}, emoji: "🥃", notes: {"en": "Whiskey Sour Day"}, urls: {"en": "https://www.daysoftheyear.com/days/whiskey-sour-day/"}},
-        
         {type: "1D", start: {d: 27, mon: 8}, titles: {"en": "National Pots du Creme Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pots-de-creme-day/"}},
         {type: "1D", start: {d: 28, mon: 8}, titles: {"en": "National Bow Tie Day"}, emoji: "⧓", urls: {"en": "https://www.daysoftheyear.com/days/bow-tie-day/"}},
-        
         {type: "1D", start: {d: 3, mon: 9}, titles: {"en": "National Skyscraper Day"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-day/"}},
-        
         {type: "1D", start: {d: 25, mon: 9}, titles: {"en": "National Daughter Day"}, notes: {"en": "National Daughters Day"}, first: {era: 1, y: 2007}, emoji: "👨‍👩‍👧", urls: {"en": "https://www.daysoftheyear.com/days/national-daughter-day/"}},
-        
         {type: "1D", start: {d: 16, mon: 10}, titles: {"en": "National Boss’s Day"}, first: {era: 1, y: 1903}, notes: {"en": "Boss’s Day\nNational Boss Day`\nBosses Day"}, urls: {"en": "https://nationaldaycalendar.com/national-bosss-day-october-16-unless-weekend/"}},
-        
         {type: "1D", start: {d: 29, mon: 10}, titles: {"en": "National Internet Day"}, notes: {"en": "International Internet Day"}, first: {era: 1, y: 2005}, emoji: "🌎", urls: {"en": "https://www.daysoftheyear.com/days/internet-day/"}},
-        
         {type: "1D", start: {d: 2, mon: 11}, titles: {"en": "National Deviled Egg Day"}, emoji: "🥚", urls: {"en": "https://www.daysoftheyear.com/days/deviled-egg-day/"}},
-        
         {type: "1D", start: {d: 4, mon: 11}, titles: {"en": "National Candy Day"}, emoji: "🍬", urls: {"en": "https://www.daysoftheyear.com/days/candy-day/"}},
         {type: "1D", start: {d: 6, mon: 11}, titles: {"en": "National Nachos Day"}, urls: {"en": "https://www.daysoftheyear.com/days/nachos-day/"}},
-        
         {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "National Adoption Day"}, notes: {"en": "World Adoption Day"}, first: {era: 1, y: 2000}, emoji: "👨‍👩‍👧‍👦", urls: {"en": "https://www.daysoftheyear.com/days/adoption-day/"}},
-        
         {type: "1D", start: {d: 10, mon: 11}, titles: {"en": "National Forget-Me-Not Day"}, first: {era: 1, y: 1921}, emoji: "⚘", urls: {"en": "https://www.daysoftheyear.com/days/forget-me-not-day/"}},
-        
         {type: "1D", start: {d: 12, mon: 11}, titles: {"en": "National Happy Hour Day"}, emoji: "🍸", urls: {"en": "https://www.daysoftheyear.com/days/happy-hour-day/"}},
-        
         {type: "1D", start: {mon: 11, wkd: [3], wkdRecurrence: 2}, titles: {"en": "National Young Readers Day"}, first: {era: 1, y: 1989}, emoji: "📖", urls: {"en": "https://holidayinsights.com/moreholidays/November/youngreadersday.htm"}},
         {type: "1D", start: {d: 14, mon: 11}, titles: {"en": "National Pickle Day"}, emoji: "🥒", urls: {"en": "https://www.daysoftheyear.com/days/pickle-day/"}},
         {type: "1D", start: {d: 15, mon: 11}, titles: {"en": "National Clean Out Your Fridge Day"}, emoji: "🧽", urls: {"en": "https://nationaltoday.com/national-clean-out-your-fridge-day/"}},
         {type: "1D", start: {d: 16, mon: 11}, titles: {"en": "National Button Day"}, first: {era: 1, y: 1938}, emoji: "🟠", urls: {"en": "https://www.daysoftheyear.com/days/button-day/"}},
-        
         {type: "1D", start: {d: 18, mon: 11}, titles: {"en": "National Vichyssoise Day"}, emoji: "🥣", urls: {"en": "https://www.daysoftheyear.com/days/vichyssoise-day/"}},
         {type: "1D", start: {d: 19, mon: 11}, titles: {"en": "National Play Monopoly Day"}, emoji: "🏠🏨", urls: {"en": "https://www.daysoftheyear.com/days/play-monopoly-day/"}},
-        
         {type: "1D", start: {mon: 11, d: 20}, titles: {"en": "National Beautiful Day"}},
         {type: "1D", start: {d: 21, mon: 11}, titles: {"en": "National Stuffing Day"}, urls: {"en": "https://www.daysoftheyear.com/days/stuffing-day/"}},
-        
         {type: "1D", start: {d: 25, mon: 11}, titles: {"en": "National Parfait Day"}, urls: {"en": "https://www.daysoftheyear.com/days/parfait-day/"}},
-        
         {type: "1D", start: {d: 29, mon: 11}, titles: {"en": "National Lemon Cream Pie Day"}, emoji: "🥧", urls: {"en": "https://www.daysoftheyear.com/days/lemon-cream-pie-day/"}},
-        
         {type: "1D", start: {d: 22, mon: 12}, titles: {"en": "National Date Nut Bread Day", "he": "יום לחם האגוזים ותמרים"}, urls: {"en": "https://www.daysoftheyear.com/days/date-nut-bread-day/", "he": "https://www.daysoftheyear.co.il/2018/12/date-nut-bread-day.html"}},
         {type: "1D", start: {d: 23, mon: 12}, titles: {"en": "National Roots Day"}, first: {era: 1, y: 1982}, urls: {"en": "https://www.daysoftheyear.com/days/roots-day/"}, emoji: "👨‍👩‍👧‍👦"},
-        
         {type: "1D", start: {d: 28, mon: 12}, titles: {"en": "National Card Playing Day", "he": "יום משחקי הקלפים"}, emoji: "🃏", urls: {"en": "https://www.daysoftheyear.com/days/card-playing-day/", "he": "https://www.daysoftheyear.co.il/2018/12/cardgamesday.html"}},
         {type: "1D", start: {d: 29, mon: 12}, titles: {"en": "National Pepper Pot Day"}, emoji: "🥣", urls: {"en": "https://www.daysoftheyear.com/days/pepper-pot-day/"}},
         {type: "1D", start: {d: 30, mon: 12}, titles: {"en": "National Bacon Day"}, emoji: "🥓", urls: {"en": "https://www.daysoftheyear.com/days/bacon-day/"}},
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/national-bicarbonate-of-soda-day/", "he": "https://www.daysoftheyear.co.il/2018/12/30.html"}, titles: {"en": "National Bicarbonate of Soda Day", "he": "יום הסודה לשתייה"}},
-        
         {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 3}, titles: {"en": "National Bike to Work Day"}, notes: {"en": "Bike to Work Day"}, emoji: "🚲", urls: {"en": "https://www.daysoftheyear.com/days/bike-to-work-day/"}, first: {era: 1, y: 1956}},
-        
         {type: "1D", start: {mon: 1, d: 8}, titles: {"en": "National Bubble Bath Day", "he": "יום אמבטיית הבועות"}, notes: {"en": "Bubble Bath Day"}, emoji: "🛁", urls: {"en": "https://www.daysoftheyear.com/days/bubble-bath-day/", "he": "https://www.daysoftheyear.co.il/2019/01/bubble-bath-day.html"}},
-        
         {type: "1D", start: {mon: 2, d: 13}, titles: {"en": "National Tortellini Day"}, notes: {"en": "Tortellini Day", "he": "יום הטורטליני"}, urls: {"en": "https://www.daysoftheyear.com/days/tortellini-day/", "he": "https://www.daysoftheyear.co.il/2020/02/tortellini-day.html"}, emoji: "🍝"},
-        
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-toast-day/", "he": "https://www.daysoftheyear.co.il/2021/02/toast-day.html"}, titles: {"en": "National Toast Day", "he": "יום הטוסט"}},
         {type: "1D", start: {mon: 3, d: 3}, titles: {"en": "National Mulled Wine Day"}, notes: {"en": "Mulled Wine Day"}, emoji: "🍷", urls: {"en": "https://www.daysoftheyear.com/days/mulled-wine-day/"}},
         {type: "1D", start: {mon: 3, d: 21}, titles: {"en": "National French Bread Day"}, notes: {"en": "French Bread Day"}, emoji: "🥖", urls: {"en": "https://www.daysoftheyear.com/days/french-bread-day/"}},
-        
         {type: "1D", start: {mon: 3, d: 27}, titles: {"en": "National Spanish Paella Day"}, notes: {"en": "Paella Day"}, urls: {"en": "https://www.daysoftheyear.com/days/spanish-paella-day/"}},
         {type: "1D", start: {mon: 4, wkd: [4], wkdRecurrence: 3}, titles: {"en": "National Banana Day"}, emoji: "🍌", notes: {"en": "Banana Day"}, urls: {"en": "https://www.daysoftheyear.com/days/banana-day/"}},
-        
         {type: "1D", start: {mon: 4, d: 9}, titles: {"en": "National Unicorn Day", "he": "יום החד קרן הבינלאומי"}, emoji: "🦄", urls: {"en": "https://www.daysoftheyear.com/days/unicorn-day/", "he": "https://www.daysoftheyear.co.il/2018/04/9.html"}},
-        
         {type: "1D", start: {mon: 6, d: 1}, titles: {"en": "National Go Barefoot Day", "he": "יום ללכת יחפים"}, emoji: "🦶", urls: {"en": "https://www.daysoftheyear.com/days/go-barefoot-day/", "he": "https://www.daysoftheyear.co.il/2018/06/1.html"}},
         {type: "1D", start: {mon: 6, d: 12}, titles: {"en": "National Cougar Day"}, urls: {"en": "https://whatnationaldayisit.com/day/Cougar/"}},
-        
         {type: "1D", start: {mon: 6, d: 14}, titles: {"en": "National Bourbon Day"}, notes: {"en": "Bourbon Day"}, emoji: "🥃", urls: {"en": "http://www.nationalbourbonday.com/"}},
-        
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "National Macaroni Day"}, notes: {"en": "Macaroni Day"}, urls: {"en": "https://www.daysoftheyear.com/days/macaroni-day/"}},
-        
         {type: "1D", start: {mon: 7, d: 19}, titles: {"en": "National Daiquiri Day"}, notes: {"en": "Daiquiri Day"}, emoji: "🍹", urls: {"en": "https://www.daysoftheyear.com/days/daiquiri-day/"}},
         {type: "1D", start: {mon: 7, d: 29}, titles: {"en": "National Lasagne Day"}},
         {type: "1D", start: {mon: 7, d: 24}, titles: {"en": "National Tequila Day", "he": "יום הטקילה הלאומי"}, notes: {"en": "Tequila Day"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/tequila-day/"}},
         {type: "1D", start: {mon: 7, d: 25}, titles: {"en": "National Hot Fudge Sundae Day"}, notes: {"en": "Hot Fudge Sundae Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-fudge-sundae-day/"}, emoji: "🍨"},
-        
         {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Lazy Day"}, notes: {"en": "Lazy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lazy-day/"}, emoji: "🛌"},
         {type: "1D", start: {mon: 8, d: 16}, titles: {"en": "National Rum Day"}, notes: {"en": "Rum Day"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/rum-day/"}},
-        
         {type: "1D", start: {mon: 10, d: 6}, titles: {"en": "National Noodle Day"}, notes: {"en": "Noodle Day"}, emoji: "🍝", urls: {"en": "https://www.daysoftheyear.com/days/noodle-day/"}},
-        
         {titles: {"en": "National Pasta Day"}, type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaldaycalendar.com/national-pasta-day-october-17/"}, emoji: "🍝"},
         {type: "1D", start: {mon: 10, d: 22}, titles: {"en": "National Nut Day"}, emoji: "🌰", urls: {"en": "https://www.daysoftheyear.com/days/nut-day/"}},
-        
         {type: "1D", start: {mon: 12, wkd: [6], wkdRecurrence: 3}, titles: {"en": "National Underdog Day", "he": "יום האנדרדוג"}, urls: {"en": "https://www.daysoftheyear.com/days/underdog-day/", "he": "https://www.daysoftheyear.co.il/2015/12/underdog-day.html"}, first: {era: 1, y: 1976}},
-        
         {type: "1D", start: {d: 24, mon: 7}, titles: {"en": "National Thermal Engineer Day", "he": "יום המהנדס התרמי הלאומי"}, urls: {"en": "https://nationaltoday.com/national-thermal-engineer-day/"}, first: {era: 1, y: 2014}, emoji: "👷‍♂️👷‍♀️"},
-        
         {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-cotton-candy-day/", "he": "https://www.daysoftheyear.co.il/2021/12/mnr-dpi-nue.html"}, titles: {"en": "National Cotton Candy Day", "he": "יום הצמר גפן המתוק"}},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-brownie-day/", "he": "https://www.daysoftheyear.co.il/2021/12/huo-vcrtubhz.html"}, titles: {"en": "National Brownie Day", "he": "יום הבראוניז"}},
-        
         {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-cocoa-day/", "he": "https://www.daysoftheyear.co.il/2019/12/hot-cocoa-day.html"}, titles: {"en": "National Cocoa Day", "he": "יום השוקו החם"}, emoji: "☕️"},
         {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-horse-day/", "he": "https://www.daysoftheyear.co.il/2018/12/13.html"}, titles: {"en": "National Horse Day", "he": "יום הסוס"}, inherits: "*Horse*"},
         {type: "1D", start: {mon: 12, d: 15}, urls: {"en": "https://nationaltoday.com/national-cupcake-day/", "he": "https://www.daysoftheyear.co.il/2018/12/cupcake-day.html"}, titles: {"en": "National Cupcake Day", "he": "יום הקאפקייק"}, emoji: "🧁"},
         {type: "1D", start: {mon: 12, d: 16}, urls: {"en": "https://nationaltoday.com/national-chocolate-covered-anything-day/", "he": "https://www.daysoftheyear.co.il/2018/12/chocolate-covered-anything-day.html"}, titles: {"en": "National Chocolate Covered Anything Day", "he": "יום מצופה בשוקולד"}, emoji: "🍩"},
         {type: "1D", start: {mon: 12, d: 19}, urls: {"en": "https://nationaltoday.com/national-hard-candy-day/", "he": "https://www.daysoftheyear.co.il/2018/12/19.html"}, titles: {"en": "National Hard Candy Day", "he": "יום הסוכריות הקשות"}, emoji: "🍬"},
-        
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/short-story-day/", "he": "https://www.daysoftheyear.co.il/2017/12/short-story-day.html"}, titles: {"en": "National Short Story Day", "he": "יום הסיפור הקצר"}, emoji: "✍️"},
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/national-crossword-puzzle-day/", "he": "https://www.daysoftheyear.co.il/2016/12/crossword-puzzle-day.html"}, titles: {"en": "National Crossword Puzzle Day", "he": "יום הולדת לתשבץ"}},
         {type: "1D", start: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/national-joygerm-day/", "he": "https://www.daysoftheyear.co.il/2018/01/8.html"}, titles: {"en": "National JoyGerm Day", "he": "יום חיידק השמחה"}, emoji: "😃"},
-        
         {type: "1M", start: {mon: 1}, titles: {"en": "National Soup Month", "he": "חודש המרק"}, urls: {"en": "https://www.daysoftheyear.com/days/soup-month/", "he": "https://www.daysoftheyear.co.il/2019/01/soup-month.html"}, emoji: "🥣"},
         {type: "1M", start: {mon: 10}, titles: {"en": "National Pizza Month", "he": "חודש הפיצה"}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-month/", "he": "https://www.daysoftheyear.co.il/2018/10/pizza-month-october.html"}, emoji: "🍕"},
-        
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-adopt-a-rescued-bird-month/"}, titles: {"en": "National Adopt a Rescued Bird Month"}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-bath-safety-month/"}, titles: {"en": "National Bath Safety Month"}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-be-on-purpose-month/"}, titles: {"en": "National Be On-Purpose Month"}},
@@ -367,15 +261,12 @@
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-thank-you-month/"}, titles: {"en": "National Thank You Month"}, first: {era: 1, y: 2000}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-train-dog-month/"}, titles: {"en": "National Train Your Dog Month"}, inherits: "*Dog*"},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/national-wheat-bread-month/"}, titles: {"en": "National Wheat Bread Month"}, first: {era: 1, y: 2011}},
-        
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/national-baked-alaska-day/"}, titles: {"en": "National Baked Alaska Day"}},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/national-dark-chocolate-day/"}, titles: {"en": "National Dark Chocolate Day"}},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/national-get-up-day/"}, titles: {"en": "National Get Up Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/national-girls-women-sports-day/"}, titles: {"en": "National Girls and Women in Sports Day"}},
         {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/national-signing-day/"}, titles: {"en": "National Signing Day"}},
-        
         {type: "nD", start: {mon: 2, d: 1}, end: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/national-patient-recognition-week/"}, titles: {"en": "National Patient Recognition Week"}},
-        
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-arts-month/"}, titles: {"en": "National Arts Month"}, first: {era: 1, y: 1991}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-avocado-and-banana-month/"}, titles: {"en": "National Avocado and Banana Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-bake-for-family-fun-month/"}, titles: {"en": "National Bake For Family Fun Month"}},
@@ -406,7 +297,6 @@
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-time-management-month/"}, titles: {"en": "National Time Management Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-weddings-month/"}, titles: {"en": "National Weddings Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-women-inventors-month/"}, titles: {"en": "National Women Inventors Month"}},
-        
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/national-brown-dog-day/"}, titles: {"en": "National Brown Dog Day"}, first: {era: 1, y: 2021}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/national-catchers-day/"}, titles: {"en": "National Catchers Day"}},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/national-heavenly-hash-day/"}, titles: {"en": "National Heavenly Hash Day"}},
@@ -414,86 +304,62 @@
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/national-river-day/"}, titles: {"en": "National River Day"}, emoji: "🏞️"},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/national-tater-tot-day/"}, titles: {"en": "National Tater Tot Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/national-ukulele-day/"}, titles: {"en": "National Ukulele Day"}},
-        
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/national-cordova-ice-worm-day/"}, titles: {"en": "National Cordova Ice Worm Day"}, first: {era: 1, y: 1961}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/national-missing-persons-day/"}, titles: {"en": "National Missing Persons Day"}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/national-patient-recognition-day/"}, titles: {"en": "National Patient Recognition Day"}},
         {type: "1D", start: {mon: 2, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-wear-red-day/"}, titles: {"en": "National Wear Red Day"}},
         {type: "1D", start: {mon: 2, d: 3}, urls: {"en": "https://nationaltoday.com/national-wedding-ring-day/"}, titles: {"en": "National Wedding Ring Day"}},
-        
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-hemp-day/"}, titles: {"en": "National Hemp Day"}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-stuffed-mushroom-day/"}, titles: {"en": "National Stuffed Mushroom Day"}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-thank-a-mail-carrier-day/"}, titles: {"en": "National Thank a Mail Carrier Day"}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/national-wicker-day/"}, titles: {"en": "National Wicker Day"}},
-        
         {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/national-pork-rind-day/"}, titles: {"en": "National Pork Rind Day"}},
-        
         {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://nationaltoday.com/national-lame-duck-day/"}, titles: {"en": "National Lame Duck Day"}},
-        
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/national-black-hiv-aids-awareness-day/"}, titles: {"en": "National Black HIV/AIDS Awareness Day"}},
         {type: "1D", start: {mon: 2, d: 7}, urls: {"en": "https://nationaltoday.com/national-send-card-friend-day/"}, titles: {"en": "National Send a Card to a Friend Day"}},
-        
         {type: "1D", start: {mon: 2, d: 7}, end: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-marriage-week/"}, titles: {"en": "National Marriage Week"}},
-        
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/national-boy-scout-day/"}, titles: {"en": "National Boy Scout Day"}, first: {era: 1, y: 1910}},
-        
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-cream-cheese-brownie-day/"}, titles: {"en": "National Cream Cheese Brownie Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://nationaltoday.com/national-home-warranty-day/"}, titles: {"en": "National Home Warranty Day"}, first: {era: 1, y: 2016}},
-        
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/get-out-your-guitar-day/"}, titles: {"en": "Get Out Your Guitar Day"}, notes: {"en": "National Guitar Day"}},
-        
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-latte-day/"}, titles: {"en": "National Latte Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-make-a-friend-day/"}, titles: {"en": "National Make a Friend Day"}},
         {type: "1D", start: {mon: 2, d: 11}, urls: {"en": "https://nationaltoday.com/national-shut-in-visitation-day/"}, titles: {"en": "National Shut-in Visitation Day"}},
-        
         {type: "1D", start: {mon: 2, d: 12}, urls: {"en": "https://nationaltoday.com/national-lost-penny-day/"}, titles: {"en": "National Lost Penny Day"}, first: {era: 1, y: 1995}},
-        
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-break-up-with-your-carrier-day/"}, titles: {"en": "National Break Up With Your Carrier Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-clean-out-your-computer-day/"}, titles: {"en": "National Clean Out Your Computer Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-crab-rangoon-day/"}, titles: {"en": "National Crab Rangoon Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-internet-friends-day/"}, titles: {"en": "National Internet Friends Day"}},
-        
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-donor-day/"}, titles: {"en": "National Donor Day"}, notes: {"en": "Organ Donor Day"}},
-        
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-black-girl-magic-day/"}, titles: {"en": "National Black Girl Magic Day"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-gumdrop-day/"}, titles: {"en": "National Gumdrop Day"}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/national-i-want-butterscotch-day/"}, titles: {"en": "National I Want Butterscotch Day"}},
-        
         {type: "1D", start: {mon: 2, d: 17}, urls: {"en": "https://nationaltoday.com/national-cafe-au-lait-day/"}, titles: {"en": "National Cafe au Lait Day"}},
         {type: "1D", start: {mon: 2, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-caregivers-day/"}, titles: {"en": "National Caregivers Day"}, first: {era: 1, y: 2016}},
         {type: "nD", start: {mon: 2, d: 17}, end: {mon: 2, d: 19}, urls: {"en": "https://nationaltoday.com/national-public-science-day/"}, titles: {"en": "National Public Science Day"}, first: {era: 1, y: 1989}},
         {type: "1D", start: {mon: 2, d: 17}, urls: {"en": "https://nationaltoday.com/national-tennis-pro-day/"}, titles: {"en": "National Tennis Pro Day"}, first: {era: 1, y: 2021}},
-        
         {type: "1D", start: {mon: 2, d: 18}, urls: {"en": "https://nationaltoday.com/national-crab-stuffed-flounder-day/"}, titles: {"en": "National Crab Stuffed Flounder Day"}},
-        
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-leadership-day/"}, titles: {"en": "National Leadership Day"}},
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-student-volunteer-day/"}, titles: {"en": "National Student Volunteer Day"}},
         {type: "1D", start: {mon: 2, d: 20}, urls: {"en": "https://nationaltoday.com/national-whistleblower-reward-day/"}, titles: {"en": "National Whistleblower Reward Day"}},
-        
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/national-heart-valve-disease-awareness-day/"}, titles: {"en": "National Heart Valve Disease Awareness Day"}},
         {type: "1D", start: {mon: 2, d: 22}, urls: {"en": "https://nationaltoday.com/national-walking-the-dog-day/"}, titles: {"en": "National Walking the Dog Day"}, inherits: "*Dog*"},
-        
         {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/national-chili-day/"}, titles: {"en": "National Chili Day"}},
         {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/national-hospitality-workers-appreciation-day/"}, titles: {"en": "National Hospitality Workers Appreciation Day"}},
         {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/national-rationalization-day/"}, titles: {"en": "National Rationalization Day"}, first: {era: 1, y: 2016}},
-        
         {type: "1D", start: {mon: 2, wkd: [6], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-skip-the-straw-day/"}, titles: {"en": "National Skip the Straw Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/national-trading-card-day/"}, titles: {"en": "National Trading Card Day"}},
-        
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-customized-wheel-and-tire-day/"}, titles: {"en": "National Customized Wheel and Tire Day"}},
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-essay-day/"}, titles: {"en": "National Essay Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 2, d: 29}, urls: {"en": "https://nationaltoday.com/national-time-refund-day/"}, titles: {"en": "National Time Refund Day"}},
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/tooth-fairy-day/"}, titles: {"en": "National Tooth Fairy Day"}},
-        
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-dadgum-thats-good-day/"}, titles: {"en": "National Dadgum That’s Good Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-fruit-compote-day/"}, titles: {"en": "National Fruit Compote Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-wedding-planning-day/"}, titles: {"en": "National Wedding Planning Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-welsh-corgi-day/"}, titles: {"en": "National Welsh Corgi Day"}},
-        
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-ghostwriters-week/"}, titles: {"en": "National Ghostwriters Week"}},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-will-eisner-week/"}, titles: {"en": "National Will Eisner Week"}, first: {era: 1, y: 2016}},
         {type: "nD", start: {mon: 3, d: 1}, end: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-write-a-letter-of-appreciation-week/"}, titles: {"en": "National Write a Letter of Appreciation Week"}},
-        
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-breast-implant-awareness-month/"}, titles: {"en": "National Breast Implant Awareness Month"}, first: {era: 1, y: 2018}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-celery-month/"}, titles: {"en": "National Celery Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-cerebral-palsy-awareness-month/"}, titles: {"en": "National Cerebral Palsy Awareness Month"}, first: {era: 1, y: 2006}},
@@ -501,7 +367,6 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-crafting-month/"}, titles: {"en": "National Crafting Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-credit-education-month/"}, titles: {"en": "National Credit Education Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-crochet-month/"}, titles: {"en": "National Crochet Month"}, first: {era: 1, y: 2005}},
-        
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-essential-tremor-awareness-month/"}, titles: {"en": "National Essential Tremor Awareness Month"}, first: {era: 1, y: 2010}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-ethics-awareness-month/"}, titles: {"en": "National Ethics Awareness Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-eye-donor-month/"}, titles: {"en": "National Eye Donor Month"}, first: {era: 1, y: 1983}},
@@ -518,54 +383,42 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-reading-month/"}, titles: {"en": "National Reading Month"}, first: {era: 1, y: 1994}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-sauce-month/"}, titles: {"en": "National Sauce Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-umbrella-month/"}, titles: {"en": "National Umbrella Month"}, first: {era: 1, y: 2013}},
-        
         {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-banana-cream-pie-day/"}, titles: {"en": "National Banana Cream Pie Day"}, emoji: "🥧"},
         {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-egg-mcmuffin-day/"}, titles: {"en": "National Egg McMuffin Day"}},
         {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-hospitalist-day/"}, titles: {"en": "National Hospitalist Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 3, d: 2}, urls: {"en": "https://nationaltoday.com/national-old-stuff-day/", "he": "https://www.daysoftheyear.co.il/2018/03/2.html"}, titles: {"en": "National Old Stuff Day", "he": "יום החפצים הישנים"}},
-        
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-cold-cuts-day/"}, titles: {"en": "National Cold Cuts Day"}},
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-day-unplugging/"}, titles: {"en": "National Day of Unplugging"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-dress-in-blue-day/", "he": "https://www.daysoftheyear.co.il/2017/03/blog-post.html"}, titles: {"en": "National Dress in Blue Day", "he": "יום לובשים כחול"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-want-happy-day/", "he": "https://www.daysoftheyear.co.il/2018/03/3.html"}, titles: {"en": "National I Want You to be Happy Day", "he": "יום אני רוצה שתהיה שמח"}},
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-moscow-mule-day/"}, titles: {"en": "National Moscow Mule Day"}},
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/national-soup-it-forward-day/"}, titles: {"en": "National Soup it Forward Day"}, first: {era: 1, y: 2018}},
-        
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-backcountry-ski-day/"}, titles: {"en": "National Backcountry Ski Day"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-dance-the-waltz-day/"}, titles: {"en": "National Dance the Waltz Day"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-grammar-day/"}, titles: {"en": "National Grammar Day"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-pound-cake-day/"}, titles: {"en": "National Pound Cake Day"}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-snack-day/"}, titles: {"en": "National Snack Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/national-sons-day/"}, titles: {"en": "National Sons Day"}, first: {era: 1, y: 2018}},
-        
         {type: "nD", start: {mon: 3, d: 4}, end: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-endometriosis-awareness-week/"}, titles: {"en": "National Endometriosis Awareness Week"}},
-        
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-frozen-food-day/", "he": "https://www.daysoftheyear.co.il/2021/03/frozen-food-day.html"}, titles: {"en": "National Frozen Food Day", "he": "יום האוכל הקפוא"}},
-        
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/dentist-day/", "he": "https://www.daysoftheyear.co.il/2018/03/6.html"}, titles: {"en": "Dentist Day", "he": "יום רופאי השיניים"}, notes: {"en": "National Dentist’s Day"}},
-        
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-oreo-cookie-day/", "he": "https://www.daysoftheyear.co.il/2019/03/6.html"}, titles: {"en": "National Oreo Cookie Day", "he": "יום הולדת לעוגיות אוראו"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/national-white-chocolate-cheesecake-day/"}, titles: {"en": "National White Chocolate Cheesecake Day"}},
-        
         {type: "nD", start: {mon: 3, d: 6}, end: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-groundwater-awareness-week/"}, titles: {"en": "National Groundwater Awareness Week"}, first: {era: 1, y: 1999}},
-        
         {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-be-heard-day/"}, titles: {"en": "National Be Heard Day"}},
         {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-cereal-day/", "he": "https://www.daysoftheyear.co.il/2018/03/7.html"}, titles: {"en": "National Cereal Day", "he": "יום דגני הבוקר"}},
         {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-flapjack-day/"}, titles: {"en": "National Flapjack Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 3, d: 7}, urls: {"en": "https://nationaltoday.com/national-library-workers-day/"}, titles: {"en": "National Library Workers Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 3, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-sportsmanship-day/"}, titles: {"en": "National Sportsmanship Day"}, first: {era: 1, y: 1991}},
-        
         {type: "1D", start: {mon: 3, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-no-smoking-day/"}, titles: {"en": "National No Smoking Day"}},
         {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-peanut-cluster-day/"}, titles: {"en": "National Peanut Cluster Day"}},
         {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-proofreading-day/"}, titles: {"en": "National Proofreading Day"}},
         {type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/national-retro-video-game-day/"}, titles: {"en": "National Retro Video Game Day"}},
-        
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-barbie-day/", "he": "https://www.daysoftheyear.co.il/2018/03/9.html"}, titles: {"en": "National Barbie Day", "he": "יום הולדת לברבי"}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-crab-meat-day/"}, titles: {"en": "National Crab Meat Day"}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-dish-washer-appreciation-day/"}, titles: {"en": "National Dish Washer Appreciation Day"}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-false-teeth-day/", "he": "https://www.daysoftheyear.co.il/2021/03/false-teeth-day.html"}, titles: {"en": "National False Teeth Day", "he": "יום השיניים התותבות"}},
         {type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://nationaltoday.com/national-get-over-it-day/"}, titles: {"en": "National Get Over It Day"}},
-        
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-blueberry-popover-day/"}, titles: {"en": "National Blueberry Popover Day"}, emoji: "🫐"},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-landline-telephone-day/"}, titles: {"en": "National Landline Telephone Day"}},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-pack-your-lunch-day/", "he": "https://www.daysoftheyear.co.il/2018/03/10.html"}, titles: {"en": "National Pack Your Lunch Day", "he": "יום קופסת האוכל"}},
@@ -573,7 +426,6 @@
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-ranch-day/"}, titles: {"en": "National Ranch Day"}},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-sending-day/"}, titles: {"en": "National Sending Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://nationaltoday.com/national-women-and-girls-hiv-aids-awareness-day/"}, titles: {"en": "National Women and Girls HIV/AIDS Awareness Day"}},
-        
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-covid-19-day/"}, titles: {"en": "National COVID-19 Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-dream-day/"}, titles: {"en": "National Dream Day"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-no-code-day/"}, titles: {"en": "National No-Code Day"}, first: {era: 1, y: 2022}},
@@ -582,15 +434,12 @@
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-promposal-day/"}, titles: {"en": "National Promposal Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-sofrito-day/"}, titles: {"en": "National Sofrito Day"}},
         {type: "1D", start: {mon: 3, d: 11}, urls: {"en": "https://nationaltoday.com/national-urban-ballroom-dancing-day/"}, titles: {"en": "National Urban Ballroom Dancing Day"}},
-        
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-baked-scallops-day/"}, titles: {"en": "National Baked Scallops Day"}},
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-girl-scout-day/"}, titles: {"en": "National Girl Scout Day"}, first: {era: 1, y: 1912}},
         {type: "1D", start: {mon: 3, d: 12}, urls: {"en": "https://nationaltoday.com/national-plant-a-flower-day/", "he": "https://www.daysoftheyear.co.il/2021/03/plantflowerday.html"}, titles: {"en": "National Plant a Flower Day", "he": "יום שתילת הפרחים"}},
-        
         {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/national-napping-day/"}, titles: {"en": "National Napping Day"}},
         {type: "1D", start: {mon: 3, d: 13}, urls: {"en": "https://nationaltoday.com/national-open-an-umbrella-indoors-day/"}, titles: {"en": "National Open An Umbrella Indoors Day"}},
         {type: "nD", start: {mon: 3, d: 13}, end: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-deaf-history-month/"}, titles: {"en": "National Deaf History Month"}, first: {era: 1, y: 1997}},
-        
         {type: "1D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-childrens-craft-day/"}, titles: {"en": "National Children’s Craft Day"}, emoji: "👦👧"},
         {type: "1D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-dog-theft-awareness-day/"}, titles: {"en": "National Dog Theft Awareness Day"}, first: {era: 1, y: 2017}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-learn-about-butterflies-day/"}, titles: {"en": "National Learn About Butterflies Day"}},
@@ -598,37 +447,30 @@
         {type: "1D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-potato-chip-day/", "he": "https://www.daysoftheyear.co.il/2016/03/14.html"}, titles: {"en": "National Potato Chip Day", "he": "יום חטיף הצ׳יפס"}},
         {type: "1D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-save-a-spider-day/"}, titles: {"en": "National Save a Spider Day"}},
         {type: "1D", start: {mon: 3, d: 14}, urls: {"en": "https://nationaltoday.com/national-write-your-story-day/"}, titles: {"en": "National Write Your Story Day"}},
-        
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/national-peanut-lovers-day/"}, titles: {"en": "National Peanut Lovers Day"}, emoji: "🥜"},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/national-pears-helene-day/"}, titles: {"en": "National Pears Helene Day"}, emoji: "🍐"},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/national-shoe-the-world-day/"}, titles: {"en": "National Shoe the World Day"}, first: {era: 1, y: 2014}, emoji: "🥾"},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/national-vo-day/"}, titles: {"en": "National VO Day"}},
-        
         {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-artichoke-hearts-day/"}, titles: {"en": "National Artichoke Hearts Day"}},
         {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-close-gap-day/"}, titles: {"en": "National Close the Gap Day"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 3, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-farm-rescuer-day/"}, titles: {"en": "National Farm Rescuer Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-panda-day/", "he": "https://www.daysoftheyear.co.il/2017/03/16.html"}, titles: {"en": "National Panda Day", "he": "יום הפנדה"}, emoji: "🐼"},
         {type: "1D", start: {mon: 3, d: 16}, urls: {"en": "https://nationaltoday.com/national-vaccination-day/"}, titles: {"en": "National Vaccination Day"}},
-        
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-day-of-action-against-bullying-and-violence/"}, titles: {"en": "National Day of Action Against Bullying and Violence"}},
         {type: "1D", start: {mon: 3, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-preschool-teachers-appreciation-day/"}, titles: {"en": "National Preschool Teachers Appreciation Day"}},
-        
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-biodiesel-day/"}, titles: {"en": "National Biodiesel Day"}},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-corn-dog-day/"}, titles: {"en": "National Corn Dog Day"}},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-lacy-oatmeal-cookie-day/"}, titles: {"en": "National Lacy Oatmeal Cookie Day"}},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-quilting-day/"}, titles: {"en": "National Quilting Day"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-sloppy-joe-day/"}, titles: {"en": "National Sloppy Joe Day"}},
-        
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-lets-laugh-day/"}, titles: {"en": "National Let’s Laugh Day"}, emoji: "🤣"},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-automatic-door-day/"}, titles: {"en": "National Automatic Door Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-backyard-day/"}, titles: {"en": "National Backyard Day"}},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-chocolate-caramel-day/", "he": "https://www.daysoftheyear.co.il/2020/03/chocolate-caramel-day.html"}, titles: {"en": "National Chocolate Caramel Day", "he": "יום השוקולד קרמל"}},
         {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/national-poultry-day/"}, titles: {"en": "National Poultry Day"}, emoji: "🍗"},
-        
         {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://nationaltoday.com/national-jump-out-day/"}, titles: {"en": "National Jump Out Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://nationaltoday.com/national-proposal-day/"}, titles: {"en": "National Proposal Day"}},
         {type: "1D", start: {mon: 3, d: 20}, urls: {"en": "https://nationaltoday.com/national-ravioli-day/", "he": "https://www.daysoftheyear.co.il/2016/03/20.html"}, titles: {"en": "National Ravioli Day", "he": "יום הרביולי"}},
-        
         {type: "1D", start: {mon: 3, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-3-d-day/"}, titles: {"en": "National 3-D Day"}},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-california-strawberry-day/"}, titles: {"en": "National California Strawberry Day"}, first: {era: 1, y: 1983}, emoji: "🍓"},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-common-courtesy-day/"}, titles: {"en": "National Common Courtesy Day"}},
@@ -640,66 +482,50 @@
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-renewable-energy-day/"}, titles: {"en": "National Renewable Energy Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-single-parent-day/", "he": "https://www.daysoftheyear.co.il/2021/03/singleparents-day.html"}, titles: {"en": "National Single Parent Day", "he": "יום ההורים היחידנים"}},
         {type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/national-teenager-day/"}, titles: {"en": "National Teenager Day"}},
-        
         {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/international-goof-off-day/"}, titles: {"en": "International Goof-Off Day"}, first: {era: 1, y: 1976}, notes: {"en": "National Goof Off Day"}},
-        
         {type: "1D", start: {mon: 3, d: 22}, urls: {"en": "https://nationaltoday.com/national-donald-day/"}, titles: {"en": "National Donald Day"}},
-        
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/chips-and-dip-day/"}, titles: {"en": "Chips and Dip Day"}, notes: {"en": "National Chip and Dip Day"}},
-        
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/national-chia-day/"}, titles: {"en": "National Chia Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/national-puppy-day/", "he": "https://www.daysoftheyear.co.il/2018/03/23.html"}, titles: {"en": "National Puppy Day", "he": "יום הגורים"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 3, d: 23}, urls: {"en": "https://nationaltoday.com/national-tamale-day/"}, titles: {"en": "National Tamale Day"}},
-        
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-adverse-drug-event-awareness-day/"}, titles: {"en": "National Adverse Drug Event Awareness Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-cheesesteak-day/"}, titles: {"en": "National Cheesesteak Day"}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-chocolate-covered-raisin-day/"}, titles: {"en": "National Chocolate Covered Raisin Day"}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-cocktail-day/"}, titles: {"en": "National Cocktail Day"}},
         {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/national-each-person-is-a-person-of-worth-day/"}, titles: {"en": "National Each Person Is a Person of Worth Day"}, first: {era: 1, y: 2020}},
-        
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-lobster-newburg-day/"}, titles: {"en": "National Lobster Newburg Day"}, emoji: "🦞"},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-michelle-shafer-half-moon-cookie-day/"}, titles: {"en": "National Michelle Shafer Half-Moon Cookie Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/national-omazingyou-day/"}, titles: {"en": "National OmazingYou Day"}, first: {era: 1, y: 2021}},
-        
         {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/national-nougat-day/", "he": "https://www.daysoftheyear.co.il/2021/03/nougatday.html"}, titles: {"en": "National Nougat Day", "he": "יום הנוגט"}},
         {type: "1D", start: {mon: 3, d: 26}, urls: {"en": "https://nationaltoday.com/national-spinach-day/", "he": "https://www.daysoftheyear.co.il/2020/03/spinach-day.html"}, titles: {"en": "National Spinach Day", "he": "יום התרד"}},
-        
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-acoustic-soul-day/"}, titles: {"en": "National Acoustic Soul Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-joe-day/"}, titles: {"en": "National Joe Day"}},
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/national-medical-science-liaison-awareness-and-appreciation-day/"}, titles: {"en": "National Medical Science Liaison Awareness and Appreciation Day"}, first: {era: 1, y: 1967}},
-        
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-black-forest-cake-day/", "he": "https://www.daysoftheyear.co.il/2021/03/blackforestcake-day.html"}, titles: {"en": "National Black Forest Cake Day", "he": "יום עוגת היער השחור"}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-something-stick-day/"}, titles: {"en": "National Something On a Stick Day"}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-triglycerides-day/"}, titles: {"en": "National Triglycerides Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/national-weed-appreciation-day/", "he": "https://www.daysoftheyear.co.il/2018/03/28.html"}, titles: {"en": "National Weed Appreciation Day", "he": "יום העשבים"}},
-        
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/national-lemon-chiffon-cake-day/"}, titles: {"en": "National Lemon Chiffon Cake Day"}, emoji: "🍰"},
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/national-mom-pop-business-owners-day/"}, titles: {"en": "National Mom and Pop Business Owners Day"}},
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/national-smoke-mirrors-day/", "he": "https://www.daysoftheyear.co.il/2021/03/smoke-mirrors-day.html"}, titles: {"en": "National Smoke and Mirrors Day", "he": "יום העשן ומראות"}},
-        
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-fitness-recovery-day/"}, titles: {"en": "National Fitness Recovery Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-folding-laundry-day/"}, titles: {"en": "National Folding Laundry Day"}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-pencil-day/", "he": "https://www.daysoftheyear.co.il/2017/03/30.html"}, titles: {"en": "National Pencil Day", "he": "יום העיפרון"}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-virtual-vacation-day/"}, titles: {"en": "National Virtual Vacation Day"}},
-        
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/crayola-crayon-day/", "he": "https://www.daysoftheyear.co.il/2019/03/crayons-day.html"}, titles: {"en": "National Crayon Day", "he": "יום צבעי הפנדה"}, notes: {"en": "Crayola Crayon Day"}},
-        
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/national-bunsen-burner-day/"}, titles: {"en": "National Bunsen Burner Day"}},
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/national-clams-on-the-half-shell-day/"}, titles: {"en": "National Clams on the Half Shell Day"}},
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/national-farm-workers-day/"}, titles: {"en": "National Farm Workers Day"}},
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/national-prom-day/"}, titles: {"en": "National Prom Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/national-shes-funny-that-way-day/"}, titles: {"en": "National She’s Funny That Way Day"}, notes: {"en": "She’s Funny That Way Day"}},
         {type: "1D", start: {mon: 3, d: 31}, urls: {"en": "https://nationaltoday.com/national-tater-day/"}, titles: {"en": "National Tater Day"}},
-        
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/edible-book-day/"}, titles: {"en": "Edible Book Day"}, notes: {"en": "National Edible Book Festival"}, first: {era: 1, y: 2000}},
-        
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-fun-day/"}, titles: {"en": "National Fun Day"}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-greeting-card-day/"}, titles: {"en": "National Greeting Card Day"}},
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-handmade-day/"}, titles: {"en": "National Handmade Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-love-our-children-day/", "he": "https://www.daysoftheyear.co.il/2018/04/5.html"}, titles: {"en": "National Love Our Children Day", "he": "יום האהבה לילדים שלנו"}, emoji: "👦👧"},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-sourdough-bread-day/"}, titles: {"en": "National Sourdough Bread Day"}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-trombone-players-day/"}, titles: {"en": "National Trombone Players Day"}},
-        
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-adopt-a-greyhound-month/"}, titles: {"en": "National Adopt a Greyhound Month"}, first: {era: 1, y: 2010}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-alcohol-awareness-month/"}, titles: {"en": "National Alcohol Awareness Month"}, first: {era: 1, y: 1987}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-blt-sandwich-month/"}, titles: {"en": "National BLT Sandwich Month"}},
@@ -725,24 +551,20 @@
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-welding-month/"}, titles: {"en": "National Welding Month"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-woodworking-month/"}, titles: {"en": "National Woodworking Month"}, first: {era: 1, y: 1990}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-youth-sports-safety-month/"}, titles: {"en": "National Youth Sports Safety Month"}, first: {era: 1, y: 2001}, emoji: "👦👧"},
-        
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-diy-day/"}, titles: {"en": "National DIY Day"}},
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-love-your-produce-manager-day/"}, titles: {"en": "National Love Your Produce Manager Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-reconciliation-day/", "he": "https://www.daysoftheyear.co.il/2018/04/2.html"}, titles: {"en": "National Reconciliation Day", "he": "יום הפיוס"}, first: {era: 1, y: 1989}},
         {type: "1D", start: {mon: 4, d: 2}, urls: {"en": "https://nationaltoday.com/national-ride-your-horse-to-a-bar-day/"}, titles: {"en": "National Ride Your Horse to a Bar Day"}, first: {era: 1, y: 2021}},
-        
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-mousse-day/", "he": "https://www.daysoftheyear.co.il/2020/04/chocolate-mousse-day.html"}, titles: {"en": "National Chocolate Mousse Day", "he": "יום מוס השוקולד"}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-film-score-day/"}, titles: {"en": "National Film Score Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-find-a-rainbow-day/"}, titles: {"en": "National Find a Rainbow Day"}},
         {type: "1D", start: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-inspiring-joy-day/"}, titles: {"en": "National Inspiring Joy Day"}, first: {era: 1, y: 2019}},
-        
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-cordon-bleu-day/"}, titles: {"en": "National Cordon Bleu Day"}},
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-hug-newsperson-day/"}, titles: {"en": "National Hug a Newsperson Day"}},
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-school-librarian-day/"}, titles: {"en": "National School Librarian Day"}},
         {type: "1D", start: {mon: 4, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-sexual-assault-awareness-months-day-of-action/"}, titles: {"en": "National Sexual Assault Awareness Month’s Day of Action"}},
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-vitamin-c-day/"}, titles: {"en": "National Vitamin C Day"}},
         {type: "1D", start: {mon: 4, d: 4}, urls: {"en": "https://nationaltoday.com/national-walk-around-things-day/"}, titles: {"en": "National Walk Around Things Day"}},
-        
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-body-care-day/"}, titles: {"en": "National Body Care Day"}},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-caramel-day/"}, titles: {"en": "National Caramel Day", "he": "יום הקרמל"}},
         {type: "1D", start: {mon: 4, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-childhelp-day-of-hope/"}, titles: {"en": "National Childhelp Day of Hope"}, notes: {"en": "Day of Hope"}, emoji: "👦👧"},
@@ -753,7 +575,6 @@
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-self-care-day/"}, titles: {"en": "National Self Care Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://nationaltoday.com/national-si-5-star-phone-certification-day/"}, titles: {"en": "National SI 5 Star Phone Certification Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 4, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-walking-day/"}, titles: {"en": "National Walking Day"}},
-        
         {type: "1D", start: {mon: 4, d: 5, thruD: 11, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-alcohol-screening-day/"}, titles: {"en": "National Alcohol Screening Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-burrito-day/"}, titles: {"en": "National Burrito Day"}},
         {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/national-caramel-popcorn-day/"}, titles: {"en": "National Caramel Popcorn Day"}},
@@ -763,133 +584,108 @@
         {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/national-sorry-charlie-day/"}, titles: {"en": "National Sorry Charlie Day"}},
         {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/national-student-athlete-day-2/"}, titles: {"en": "National Student Athlete Day"}},
         {type: "1D", start: {mon: 4, d: 6}, urls: {"en": "https://nationaltoday.com/national-teflon-day/", "he": "https://www.daysoftheyear.co.il/2018/04/6.html"}, titles: {"en": "National Teflon Day", "he": "יום הטפלון"}},
-        
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/national-beer-day/"}, titles: {"en": "National Beer Day"}, first: {era: 1, y: 2009}, emoji: "🍺"},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/national-coffee-cake-day/"}, titles: {"en": "National Coffee Cake Day"}},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/national-girl-me-too-day/"}, titles: {"en": "National Girl Me Too Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/national-pet-health-insurance-day/"}, titles: {"en": "National Pet Health Insurance Day"}},
-        
         {type: "nD", start: {mon: 4, d: 7}, end: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-integrated-respiratory-care-week/"}, titles: {"en": "National Integrated Respiratory Care Week"}, first: {era: 1, y: 2020}},
-        
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-all-is-ours-day/"}, titles: {"en": "National All is Ours Day"}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-dog-fighting-awareness-day/"}, titles: {"en": "National Dog Fighting Awareness Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/national-empanada-day/"}, titles: {"en": "National Empanada Day"}},
-        
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-cherish-an-antique-day/", "he": "https://www.daysoftheyear.co.il/2017/04/9.html"}, titles: {"en": "National Cherish an Antique Day", "he": "יום העתיקות"}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-chicken-little-awareness-day/"}, titles: {"en": "National Chicken Little Awareness Day"}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-chinese-almond-cookie-day/"}, titles: {"en": "National Chinese Almond Cookie Day"}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-gin-and-tonic-day/"}, titles: {"en": "National Gin and Tonic Day"}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-mature-womens-day/"}, titles: {"en": "National Mature Women’s Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/national-name-yourself-day/"}, titles: {"en": "National Name Yourself Day"}},
-        
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-cinnamon-crescent-day/"}, titles: {"en": "National Cinnamon Crescent Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-encourage-a-young-writer-day/"}, titles: {"en": "National Encourage a Young Writer Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-farm-animals-day/"}, titles: {"en": "National Farm Animals Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-hug-your-dog-day/"}, titles: {"en": "National Hug Your Dog Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-siblings-day/"}, titles: {"en": "National Siblings Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/national-youth-hiv-and-aids-awareness-day/"}, titles: {"en": "National Youth HIV and AIDS Awareness Day"}, emoji: "👦👧"},
-        
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-barbershop-quartet-day/"}, titles: {"en": "National Barbershop Quartet Day"}},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-clean-up-your-pantry-day/"}, titles: {"en": "National Clean Up Your Pantry Day"}},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-eight-track-tape-day/"}, titles: {"en": "National Eight Track Tape Day"}},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-marketing-operations-appreciation-day/"}, titles: {"en": "National Marketing Operations Appreciation Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-poutine-day/"}, titles: {"en": "National Poutine Day"}},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/national-ranch-water-day/"}, titles: {"en": "National Ranch Water Day"}, first: {era: 1, y: 2021}},
-        
         {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/national-big-wind-day/"}, titles: {"en": "National Big Wind Day"}},
         {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/national-for-twelves-day/"}, titles: {"en": "National For Twelves Day"}},
         {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/national-licorice-day/", "he": "https://www.daysoftheyear.co.il/2018/04/12.html"}, titles: {"en": "National Licorice Day", "he": "יום הליקריץ"}},
         {type: "1D", start: {mon: 4, d: 12}, urls: {"en": "https://nationaltoday.com/national-only-child-day/"}, titles: {"en": "National Only Child Day"}, emoji: "👦👧"},
-        
         {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-make-lunch-count-day/"}, titles: {"en": "National Make Lunch Count Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-peach-cobbler-day/"}, titles: {"en": "National Peach Cobbler Day"}},
         {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/national-scrabble-day/", "he": "https://www.daysoftheyear.co.il/2018/04/13.html"}, titles: {"en": "National Scrabble Day", "he": "יום השבץ נא"}},
-        
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-dolphin-day/", "he": "https://www.daysoftheyear.co.il/2018/04/14.html"}, titles: {"en": "National Dolphin Day", "he": "יום הדולפין"}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-donate-a-book-day/"}, titles: {"en": "National Donate a Book Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-ex-spouse-day/"}, titles: {"en": "National Ex-Spouse Day"}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-gardening-day/"}, titles: {"en": "National Gardening Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-pecan-day/"}, titles: {"en": "National Pecan Day"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 4, d: 14}, urls: {"en": "https://nationaltoday.com/national-reach-as-high-as-you-can-day/"}, titles: {"en": "National Reach As High As You Can Day"}},
-        
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/husband-appreciation-day/"}, titles: {"en": "Husband Appreciation Day"}, notes: {"en": "National Husband Day\nWorld Husband Day"}},
-        
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-anime-day/"}, titles: {"en": "National Anime Day"}, first: {era: 1, y: 1975}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-asl-day/"}, titles: {"en": "National ASL Day"}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-glazed-spiral-ham-day/"}, titles: {"en": "National Glazed Spiral Ham Day"}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-gripers-day/"}, titles: {"en": "National Griper’s Day"}, first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-laundry-day/"}, titles: {"en": "National Laundry Day"}},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/national-rubber-eraser-day/"}, titles: {"en": "National Rubber Eraser Day"}},
-        
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-bean-counter-day/"}, titles: {"en": "National Bean Counter Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-eggs-benedict-day/"}, titles: {"en": "National Eggs Benedict Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-healthcare-decisions-day/"}, titles: {"en": "National Healthcare Decisions Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-librarian-day/"}, titles: {"en": "National Librarian Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-orchid-day/"}, titles: {"en": "National Orchid Day"}},
         {type: "1D", start: {mon: 4, d: 16}, urls: {"en": "https://nationaltoday.com/national-reveal-the-genius-within-day/"}, titles: {"en": "National Reveal the Genius Within Day"}, first: {era: 1, y: 2020}},
-        
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/national-cheeseball-day/"}, titles: {"en": "National Cheese Ball Day"}},
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/national-crawfish-day/"}, titles: {"en": "National Crawfish Day"}},
         {type: "1D", start: {mon: 4, d: 17}, urls: {"en": "https://nationaltoday.com/national-kickball-day/"}, titles: {"en": "National Kickball Day"}, first: {era: 1, y: 2015}},
-        
         {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/national-animal-crackers-day/"}, titles: {"en": "National Animal Crackers Day"}},
         {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/national-exercise-day/"}, titles: {"en": "National Exercise Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/national-newspaper-columnists-day/", "he": "https://www.daysoftheyear.co.il/2018/04/18.html"}, titles: {"en": "National Newspaper Columnists Day", "he": "יום העיתונאים"}, first: {era: 1, y: 1977}},
         {type: "1D", start: {mon: 4, d: 18}, urls: {"en": "https://nationaltoday.com/national-velociraptor-awareness-day/"}, titles: {"en": "National Velociraptor Awareness Day"}},
-        
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-amaretto-day/"}, titles: {"en": "National Amaretto Day"}},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-cat-lady-day/"}, titles: {"en": "National Cat Lady Day"}, emoji: "🐈"},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-dog-parent-appreciation-day/"}, titles: {"en": "National Dog Parent Appreciation Day"}, first: {era: 1, y: 2021}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-garlic-day/", "he": "https://www.daysoftheyear.co.il/2021/04/garlic-day.html"}, titles: {"en": "National Garlic Day", "he": "יום השום הבינלאומי"}, emoji: "🧄"},
         {type: "1D", start: {mon: 4, d: 19}, urls: {"en": "https://nationaltoday.com/national-hanging-out-day/", "he": "https://www.daysoftheyear.co.il/2018/04/19.html"}, titles: {"en": "National Hanging Out Day", "he": "יום תליית הכביסה"}, first: {era: 1, y: 1996}},
-        
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/look-alike-day/"}, titles: {"en": "Look Alike Day"}, first: {era: 1, y: 1980}, notes: {"en": "National Look-Alike Day"}},
         {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-auctioneers-day/"}, titles: {"en": "National Auctioneers Day"}},
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/national-cheddar-fries-day/"}, titles: {"en": "National Cheddar Fries Day"}},
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/national-death-doula-day/"}, titles: {"en": "National Death Doula Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/national-high-five-day/"}, titles: {"en": "National High Five Day"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 4, d: 20}, urls: {"en": "https://nationaltoday.com/national-pineapple-upside-cake-day/"}, titles: {"en": "National Pineapple Upside-Down Cake Day"}},
-        
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-bulldogs-beautiful-day/", "he": "https://www.daysoftheyear.co.il/2021/04/bulldog-day.html"}, titles: {"en": "National Bulldogs Are Beautiful Day", "he": "יום הבולדוגים הם יפים"}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-chickpea-day/"}, titles: {"en": "National Chickpea Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-chocolate-covered-cashews-day/"}, titles: {"en": "National Chocolate Covered Cashews Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 4, d: 21}, urls: {"en": "https://nationaltoday.com/national-kindergarten-day/", "he": "https://www.daysoftheyear.co.il/2018/04/21.html"}, titles: {"en": "National Kindergarten Day", "he": "יום הגננת"}},
-        
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-day-of-puppetry/"}, titles: {"en": "National Day of Puppetry"}},
         {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/national-i-t-service-provider-day/"}, titles: {"en": "National I.T. Service Provider Day"}},
         {type: "1D", start: {mon: 4, d: 22}, urls: {"en": "https://nationaltoday.com/national-jelly-bean-day/"}, titles: {"en": "National Jelly Bean Day"}},
-        
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-cherry-cheesecake-day/"}, titles: {"en": "National Cherry Cheesecake Day"}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-email-day/"}, titles: {"en": "National Email Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-english-muffin-day/"}, titles: {"en": "National English Muffin Day"}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-lost-dogs-awareness-day/"}, titles: {"en": "National Lost Dogs Awareness Day"}, first: {era: 1, y: 2014}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-picnic-day/"}, titles: {"en": "National Picnic Day"}},
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/national-take-a-chance-day/"}, titles: {"en": "National Take a Chance Day"}},
-        
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/national-pigs-blanket-day/", "he": "https://www.daysoftheyear.co.il/2018/04/24.html"}, titles: {"en": "National Pigs in a Blanket Day", "he": "יום משה בתיבה"}},
         {type: "1D", start: {mon: 4, d: 24}, urls: {"en": "https://nationaltoday.com/national-skipping-day/"}, titles: {"en": "National Skipping Day"}},
-        
         {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-hug-a-plumber-day/"}, titles: {"en": "National Hug a Plumber Day"}, notes: {"en": "National Plumbers Day"}},
         {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-telephone-day/"}, titles: {"en": "National Telephone Day"}},
         {type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/national-zucchini-bread-day/"}, titles: {"en": "National Zucchini Bread Day"}},
-        
         {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/national-dissertation-day/"}, titles: {"en": "National Dissertation Day"}},
         {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/national-garage-day/"}, titles: {"en": "National Garage Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/national-help-horse-day/"}, titles: {"en": "National Help A Horse Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/national-kids-pets-day/"}, titles: {"en": "National Kids and Pets Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 4, d: 26}, urls: {"en": "https://nationaltoday.com/national-static-cling-day/"}, titles: {"en": "National Static Cling Day"}},
-        
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-devil-dog-day/"}, titles: {"en": "National Devil Dog Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-little-pampered-dog-day/"}, titles: {"en": "National Little Pampered Dog Day"}, first: {era: 1, y: 2016}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-pneumatics-day/"}, titles: {"en": "National Pneumatics Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-prime-rib-day/"}, titles: {"en": "National Prime Rib Day"}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-teach-children-to-save-day/"}, titles: {"en": "National Teach Children to Save Day"}, emoji: "👦👧"},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/national-tell-story-day/", "he": "https://www.daysoftheyear.co.il/2018/04/27.html"}, titles: {"en": "National Tell A Story Day", "he": "יום מספרי הסיפורים"}, first: {era: 1, y: 2009}},
-        
         {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-bravehearts-day/"}, titles: {"en": "National BraveHearts Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-cubicle-day/"}, titles: {"en": "National Cubicle Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/national-superhero-day/", "he": "https://www.daysoftheyear.co.il/2019/04/superheroes-day.html"}, titles: {"en": "National Superhero Day", "he": "יום גיבורי העל"}, first: {era: 1, y: 1995}},
-        
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-go-birding-day/"}, titles: {"en": "National Go Birding Day"}},
         {type: "1D", start: {mon: 4, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-kiss-of-hope-day/"}, titles: {"en": "National Kiss of Hope Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/national-peace-rose-day/"}, titles: {"en": "National Peace Rose Day"}},
@@ -899,7 +695,6 @@
         {type: "1D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/national-shrimp-scampi-day/"}, titles: {"en": "National Shrimp Scampi Day"}},
         {type: "1D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/national-supply-chain-day/"}, titles: {"en": "National Supply Chain Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 4, d: 29}, urls: {"en": "https://nationaltoday.com/national-zipper-day/", "he": "https://www.daysoftheyear.co.il/2018/04/29.html"}, titles: {"en": "National Zipper Day", "he": "יום הריצ׳רץ׳"}},
-        
         {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-adopt-shelter-pet-day/"}, titles: {"en": "National Adopt A Shelter Pet Day"}, first: {era: 1, y: 1981}},
         {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-animal-advocacy-day/"}, titles: {"en": "National Animal Advocacy Day"}},
         {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-bubble-tea-day/"}, titles: {"en": "National Bubble Tea Day", "he": "יום תה הבועות הלאומי"}, first: {era: 1, y: 2018}, emoji: "🧋"},
@@ -910,14 +705,12 @@
         {type: "1D", start: {mon: 4, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-pet-parents-day/"}, titles: {"en": "National Pet Parents Day"}},
         {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-raisin-day/"}, titles: {"en": "National Raisin Day"}},
         {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/national-tabby-day/"}, titles: {"en": "National Tabby Day"}, first: {era: 1, y: 2016}},
-        
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/national-black-barber-shop-appreciation-day/"}, titles: {"en": "National Black Barber Shop Appreciation Day"}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/national-chocolate-parfait-day/"}, titles: {"en": "National Chocolate Parfait Day"}},
         {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-infertility-survival-day/"}, titles: {"en": "National Infertility Survival Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/national-mother-goose-day/"}, titles: {"en": "National Mother Goose Day"}, first: {era: 1, y: 1987}},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/national-purebred-dog-day/"}, titles: {"en": "National Purebred Dog Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/national-rotate-your-beer-day/"}, titles: {"en": "National Rotate Your Beer Day"}, first: {era: 1, y: 2019}, emoji: "🍺"},
-        
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-allergy-and-asthma-awareness-month/"}, titles: {"en": "National Allergy and Asthma Awareness Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-anxiety-month/"}, titles: {"en": "National Anxiety Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-asparagus-month/"}, titles: {"en": "National Asparagus Month"}, first: {era: 1, y: 1985}},
@@ -947,13 +740,10 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-tuberous-sclerosis-awareness-month/"}, titles: {"en": "National Tuberous Sclerosis Awareness Month"}, notes: {"en": "Tuberous Sclerosis Awareness Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-vinegar-month/"}, titles: {"en": "National Vinegar Month"}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/national-walking-month/"}, titles: {"en": "National Walking Month"}},
-        
         {type: "1D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/brothers-and-sisters-day/", "he": "https://www.daysoftheyear.co.il/2018/05/12.html"}, titles: {"en": "Brothers and Sisters Day", "he": "יום האחים והאחיות"}, notes: {"en": "National Brothers and Sisters Day"}, emoji: "👦👧"},
-        
         {type: "1D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/national-life-insurance-day/"}, titles: {"en": "National Life Insurance Day"}},
         {type: "1D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/national-play-your-ukulele-day/"}, titles: {"en": "National Play Your Ukulele Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 5, d: 2}, urls: {"en": "https://nationaltoday.com/national-truffle-day/"}, titles: {"en": "National Truffle Day"}},
-        
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-anxiety-disorders-screening-day/"}, titles: {"en": "National Anxiety Disorders Screening Day"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-custard-day/"}, titles: {"en": "National Chocolate Custard Day"}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/national-garden-meditation-day/", "he": "https://www.daysoftheyear.co.il/2020/05/garden-meditation-day.html"}, titles: {"en": "National Garden Meditation Day", "he": "יום המדיטציה בגינה"}, first: {era: 1, y: 2000}},
@@ -964,40 +754,32 @@
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/national-specially-able-pets-day/"}, titles: {"en": "National Specially-Able Pets Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/national-textile-day/"}, titles: {"en": "National Textile Day"}, first: {era: 1, y: 2016}, notes: {"en": "National Textiles Day"}},
         {type: "1D", start: {mon: 5, d: 3}, urls: {"en": "https://nationaltoday.com/national-two-different-colored-shoes-day/", "he": "https://www.daysoftheyear.co.il/2018/05/3.html"}, titles: {"en": "National Two Different Colored Shoes Day", "he": "יום שתי נעליים בשני צבעים"}, first: {era: 1, y: 2009}},
-        
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-candied-orange-peel-day/"}, titles: {"en": "National Candied Orange Peel Day"}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-orange-juice-day/"}, titles: {"en": "National Orange Juice Day"}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-renewal-day/"}, titles: {"en": "National Renewal Day"}},
-        
         {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/national-cartoonists-day/"}, titles: {"en": "National Cartoonists Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/national-concert-day/"}, titles: {"en": "National Concert Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/national-hoagie-day/"}, titles: {"en": "National Hoagie Day"}},
         {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/national-silence-the-shame-day/"}, titles: {"en": "National Silence the Shame Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/national-totally-chipotle-day/"}, titles: {"en": "National Totally Chipotle Day"}},
-        
         {type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://nationaltoday.com/national-crepe-suzette-day/"}, titles: {"en": "National Crepe Suzette Day"}},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-scrapbook-day/"}, titles: {"en": "National Scrapbook Day"}, notes: {"en": "National Scrapbooking Day"}},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-start-seeing-monarchs-day/"}, titles: {"en": "National Start Seeing Monarchs Day"}},
         {type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://nationaltoday.com/national-tourist-appreciation-day/"}, titles: {"en": "National Tourist Appreciation Day"}},
-        
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-cosmopolitan-day/"}, titles: {"en": "National Cosmopolitan Day"}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-packaging-design-day/"}, titles: {"en": "National Packaging Design Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-paste-up-day/"}, titles: {"en": "National Paste Up Day"}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-roast-leg-of-lamb-day/"}, titles: {"en": "National Roast Leg of Lamb Day"}},
-        
         {type: "nD", start: {mon: 5, d: 7}, end: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-holiday-week/"}, titles: {"en": "National Hug Holiday Week"}, first: {era: 1, y: 1986}},
-        
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-amyloidosis-day/"}, titles: {"en": "National Amyloidosis Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-coconut-cream-pie-day/"}, titles: {"en": "National Coconut Cream Pie Day"}, emoji: "🥧"},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-give-someone-a-cupcake-day/"}, titles: {"en": "National Give Someone a Cupcake Day"}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-have-a-coke-day/"}, titles: {"en": "National Have a Coke Day"}},
         {type: "1D", start: {mon: 5, d: 2, thruD: 8, wkd: [2]}, urls: {"en": "https://nationaltoday.com/national-meeting-planners-appreciation-day/"}, titles: {"en": "National Meeting Planners Appreciation Day"}},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/national-student-nurse-day/"}, titles: {"en": "National Student Nurse Day"}, first: {era: 1, y: 1997}},
-        
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-butterscotch-brownie-day/"}, titles: {"en": "National Butterscotch Brownie Day"}},
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-moscato-day/"}, titles: {"en": "National Moscato Day"}},
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-sleepover-day/"}, titles: {"en": "National Sleepover Day"}, first: {era: 1, y: 2017}},
-        
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-clean-your-room-day/"}, titles: {"en": "National Clean Your Room Day"}},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-golf-day/"}, titles: {"en": "National Golf Day"}},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-lipid-day/"}, titles: {"en": "National Lipid Day"}, first: {era: 1, y: 2015}},
@@ -1006,16 +788,13 @@
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-ship-via-rail-day/"}, titles: {"en": "National Ship Via Rail Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-shrimp-day/"}, titles: {"en": "National Shrimp Day"}},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-small-business-day/"}, titles: {"en": "National Small Business Day"}},
-        
         {type: "1D", start: {mon: 5, d: 5, thruD: 11, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-childrens-mental-health-awareness-day/"}, titles: {"en": "National Children’s Mental Health Awareness Day"}, first: {era: 1, y: 2005}, emoji: "👦👧"},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/national-foam-rolling-day/"}, titles: {"en": "National Foam Rolling Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/national-twilight-zone-day/"}, titles: {"en": "National Twilight Zone Day"}},
-        
         {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-fibromyalgia-awareness-day/", "he": "https://www.daysoftheyear.co.il/2017/05/12.html"}, titles: {"en": "National Fibromyalgia Awareness Day", "he": "יום המודעות לפיברומיאלגיה"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-nutty-fudge-day/"}, titles: {"en": "National Nutty Fudge Day"}},
         {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-odometer-day/"}, titles: {"en": "National Odometer Day"}},
         {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-ya-dig-day/"}, titles: {"en": "National YA DIG Day"}, first: {era: 1, y: 2020}},
-        
         {type: "1D", start: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-apple-pie-day/", "he": "https://www.daysoftheyear.co.il/2018/05/13.html"}, titles: {"en": "National Apple Pie Day", "he": "יום הפאי תפוחים"}, emoji: "🥧"},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-dog-moms-day/"}, titles: {"en": "National Dog Mom’s Day"}, first: {era: 1, y: 2018}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 5, d: 13}, urls: {"en": "https://nationaltoday.com/national-fruit-cocktail-day/"}, titles: {"en": "National Fruit Cocktail Day"}, emoji: "🍊🍌🍍"},
@@ -1023,182 +802,136 @@
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-miniature-golf-day/"}, titles: {"en": "National Miniature Golf Day"}, emoji: "⛳️"},
         {type: "1D", start: {mon: 5, d: 7, thruD: 13, wkd: [7]}, urls: {"en": "https://nationaltoday.com/national-train-day/"}, titles: {"en": "National Train Day"}, first: {era: 1, y: 2008}, emoji: "🚆"},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-windmill-day/"}, titles: {"en": "National Windmill Day"}},
-        
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-buttermilk-biscuit-day/"}, titles: {"en": "National Buttermilk Biscuit Day"}},
         {type: "1D", start: {mon: 5, d: 14}, urls: {"en": "https://nationaltoday.com/national-dance-like-a-chicken-day/", "he": "https://www.daysoftheyear.co.il/2017/05/14.html"}, titles: {"en": "National Dance Like a Chicken Day", "he": "יום ריקוד הציפורים"}},
-        
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-chocolate-chip-day/", "he": "https://www.daysoftheyear.co.il/2018/05/15.html"}, titles: {"en": "National Chocolate Chip Day", "he": "יום השוקולד צ׳יפס"}, emoji: "🍪"},
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-safety-dose-day/"}, titles: {"en": "National Safety Dose Day"}},
         {type: "1D", start: {mon: 5, d: 15}, urls: {"en": "https://nationaltoday.com/national-tuberous-sclerosis-day/"}, titles: {"en": "National Tuberous Sclerosis Day"}},
-        
         {type: "nD", start: {mon: 5, d: 15}, end: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-stationery-week/"}, titles: {"en": "National Stationery Week"}, first: {era: 1, y: 2013}, emoji: "📄"},
-        
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-coquilles-saint-jacques-day/"}, titles: {"en": "National Coquilles Saint Jacques Day"}},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-love-tree-day/"}, titles: {"en": "National Love a Tree Day"}, emoji: "🌳"},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-mimosa-day/"}, titles: {"en": "National Mimosa Day"}, emoji: "🍹"},
         {type: "1D", start: {mon: 5, d: 16}, urls: {"en": "https://nationaltoday.com/national-sea-monkey-day/", "he": "https://www.daysoftheyear.co.il/2019/05/sea-monkeys-day.html"}, titles: {"en": "National Sea Monkey Day", "he": "יום קופי הים"}},
-        
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-cherry-cobbler-day/"}, titles: {"en": "National Cherry Cobbler Day"}, emoji: "🍒"},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-employee-health-and-fitness-day/"}, titles: {"en": "National Employee Health and Fitness Day"}},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-graduation-tassel-day/"}, titles: {"en": "National Graduation Tassel Day"}},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-juice-slush-day/"}, titles: {"en": "National Juice Slush Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-mushroom-hunting-day/"}, titles: {"en": "National Mushroom Hunting Day"}, first: {era: 1, y: 2014}, emoji: "🍄"},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-pinkfix-day/"}, titles: {"en": "National Pinkfix Day"}, first: {era: 1, y: 2018}},
-        
         {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-aperitif-day/"}, titles: {"en": "National Aperitif Day"}},
         {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-cheese-souffle-day/"}, titles: {"en": "National Cheese Soufflé Day"}, emoji: "🧀"},
         {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-no-dirty-dishes-day/", "he": "https://www.daysoftheyear.co.il/2021/05/no-dirty-dishes-day.html"}, titles: {"en": "National No Dirty Dishes Day", "he": "יום ללא כלים מלוכלכים"}, emoji: "🥣"},
         {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-notebook-day/", "he": "https://www.daysoftheyear.co.il/2021/05/notebook-day.html"}, titles: {"en": "National Notebook Day", "he": "יום המחברת"}, first: {era: 1, y: 2016}, emoji: "📒"},
         {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-visit-relatives-day/", "he": "https://www.daysoftheyear.co.il/2017/05/18.html"}, titles: {"en": "National Visit Your Relatives Day", "he": "יום ביקור קרובי משפחה"}, emoji: "👨‍👩‍👧‍👦"},
-        
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-barber-mental-health-awareness-day/"}, titles: {"en": "National Barber Mental Health Awareness Day"}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-devils-food-cake-day/"}, titles: {"en": "National Devil’s Food Cake Day"}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-endangered-species-day/"}, titles: {"en": "National Endangered Species Day"}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-may-ray-day/"}, titles: {"en": "National May Ray Day"}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-mechanical-dry-eye-day/"}, titles: {"en": "National Mechanical Dry Eye Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-pizza-party-day/"}, titles: {"en": "National Pizza Party Day"}, emoji: "🍕"},
-        
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://microkickboard.com/pages/national-scooter-day", "he": "https://www.daysoftheyear.co.il/2018/05/19.html"}, titles: {"en": "National Scooter Day", "he": "יום הקורקינט"}, first: {era: 1, y: 2015}},
-        
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-band-directors-day/"}, titles: {"en": "National Band Director’s Day"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-be-a-millionaire-day/"}, titles: {"en": "National Be a Millionaire Day"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-pick-strawberries-day/"}, titles: {"en": "National Pick Strawberries Day"}, emoji: "🍓"},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-quiche-lorraine-day/", "he": "https://www.daysoftheyear.co.il/2018/05/20.html"}, titles: {"en": "National Quiche Lorraine Day", "he": "יום הקיש לורן"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-rescue-dog-day/"}, titles: {"en": "National Rescue Dog Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-streaming-day/"}, titles: {"en": "National Streaming Day"}},
-        
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-memo-day/"}, titles: {"en": "National Memo Day"}, first: {era: 1, y: 1989}, emoji: "📝"},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-strawberries-cream-day/"}, titles: {"en": "National Strawberries and Cream Day"}, emoji: "🍓"},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-talk-like-yoda-day/"}, titles: {"en": "National Talk Like Yoda Day"}},
         {type: "1D", start: {mon: 5, d: 21}, urls: {"en": "https://nationaltoday.com/national-waiters-and-waitresses-day-2/"}, notes: {"en": "National Waiters and Waitresses Day"}, titles: {"en": "National Waitstaff Day"}, first: {era: 1, y: 2013}},
-        
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-boss-babes-day/"}, titles: {"en": "National Boss Babes Day"}, first: {era: 1, y: 2022}, emoji: "👩"},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-craft-distillery-day/"}, titles: {"en": "National Craft Distillery Day"}, emoji: "🝠"},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-solitaire-day/"}, titles: {"en": "National Solitaire Day"}, emoji: "🃏"},
         {type: "1D", start: {mon: 5, d: 22}, urls: {"en": "https://nationaltoday.com/national-vanilla-pudding-day/"}, titles: {"en": "National Vanilla Pudding Day"}, emoji: "🥣"},
-        
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-drinking-with-chickens-day/"}, titles: {"en": "National Drinking with Chickens Day"}, emoji: "🐓"},
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-medical-coder-day/"}, titles: {"en": "National Medical Coder Day"}},
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://nationaltoday.com/national-taffy-day/"}, titles: {"en": "National Taffy Day"}, emoji: "🍬"},
-        
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-brothers-day/", "he": "https://www.daysoftheyear.co.il/2018/05/24.html"}, titles: {"en": "National Brother’s Day", "he": "יום האחים"}, emoji: "👦👦"},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-caterers-appreciation-day/"}, titles: {"en": "National Caterers Appreciation Day"}, first: {era: 1, y: 2022}, emoji: "👨‍🍳👩‍🍳"},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-escargot-day/"}, titles: {"en": "National Escargot Day"}, emoji: "🐌"},
         {type: "1D", start: {mon: 5, d: 24}, urls: {"en": "https://nationaltoday.com/national-scavenger-hunt-day/"}, titles: {"en": "National Scavenger Hunt Day"}},
-        
         {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-bath-bomb-day/"}, titles: {"en": "National Bath Bomb Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-brown-bag-day/"}, titles: {"en": "National Brown-Bag It Day"}},
         {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-sing-out-day/"}, titles: {"en": "National Sing Out Day"}, emoji: "🎤"},
         {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-vtuber-day/"}, titles: {"en": "National VTuber Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, d: 25}, urls: {"en": "https://nationaltoday.com/national-wine-day/"}, titles: {"en": "National Wine Day"}, emoji: "🍷"},
-        
         {type: "1D", start: {mon: 5, d: 26}, urls: {"en": "https://nationaltoday.com/national-blueberry-cheesecake-day/"}, titles: {"en": "National Blueberry Cheesecake Day"}, emoji: "🫐"},
         {type: "1D", start: {mon: 5, d: 26}, urls: {"en": "https://nationaltoday.com/national-cherry-dessert-day/"}, titles: {"en": "National Cherry Dessert Day"}, emoji: "🍒"},
         {type: "1D", start: {mon: 5, d: 26}, urls: {"en": "https://nationaltoday.com/national-paper-airplane-day/", "he": "https://www.daysoftheyear.co.il/2021/05/paper-plane-day.html"}, titles: {"en": "National Paper Airplane Day", "he": "יום מטוס הנייר"}},
         {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-title-track-day/"}, titles: {"en": "National Title Track Day"}},
-        
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/national-cellophane-tape-day/", "he": "https://www.daysoftheyear.co.il/2018/05/27.html"}, titles: {"en": "National Cellophane Tape Day", "he": "יום נייר הסלוטייפ"}},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/national-grape-popsicle-day/"}, titles: {"en": "National Grape Popsicle Day"}},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/national-gray-day/"}, titles: {"en": "National Gray Day"}},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/national-hairstylist-mental-health-awareness-day/"}, titles: {"en": "National Hairstylist Mental Health Awareness Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-italian-beef-day/"}, titles: {"en": "National Italian Beef Day"}, first: {era: 1, y: 2017}, emoji: "🥩"},
-        
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/national-brisket-day/"}, titles: {"en": "National Brisket Day"}},
-        
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-coq-au-vin-day/"}, titles: {"en": "National Coq Au Vin Day"}, emoji: "🍗"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-hydroxyapatite-day/"}, titles: {"en": "National Hydroxyapatite Day"}},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/national-snail-day/"}, titles: {"en": "National Snail Day"}, emoji: "🐌"},
         {type: "1D", start: {mon: 5, d: 29}, urls: {"en": "https://nationaltoday.com/paper-clip-day/"}, titles: {"en": "Paper Clip Day"}, notes: {"en": "National Paperclip Day"}, emoji: "📎"},
-        
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-creativity-day/"}, titles: {"en": "National Creativity Day"}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-hole-in-my-bucket-day/"}, titles: {"en": "National Hole In My Bucket Day"}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/national-mint-julep-day/"}, titles: {"en": "National Mint Julep Day"}, emoji: "🥃"},
-        
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-macaroon-day/"}, titles: {"en": "National Macaroon Day"}},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-save-your-hearing-day/"}, titles: {"en": "National Save Your Hearing Day"}, emoji: "👂"},
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-speak-in-complete-sentences-day/"}, titles: {"en": "National Speak in Complete Sentences Day"}, emoji: "🗣️"},
-        
         {type: "1D", start: {mon: 5, d: 31}, urls: {"en": "https://nationaltoday.com/national-patient-participation-week/"}, titles: {"en": "National Patient Participation Week"}},
-        
         {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 7}, urls: {"en": "https://nationaltoday.com/national-silent-record-week/"}, titles: {"en": "National Silent Record Week"}, first: {era: 1, y: 1960}},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/national-pet-travel-safety-day/"}, titles: {"en": "National Pet Travel Safety Day"}, emoji: "🐈‍⬛🐇🐕"},
-        
         {type: "1D", start: {mon: 1, d: 4}, urls: {"en": "https://nationaltoday.com/national-cando-day/"}, titles: {"en": "National CanDo Day"}},
-        
         {type: "1D", start: {mon: 1, d: 6}, urls: {"en": "https://nationaltoday.com/national-take-a-poet-to-lunch-day/"}, titles: {"en": "National Take a Poet to Lunch Day"}},
-        
         {type: "1D", start: {mon: 1, d: 7}, urls: {"en": "https://nationaltoday.com/national-bobblehead-day/"}, titles: {"en": "National Bobblehead Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/national-snuggle-a-chicken-day/"}, titles: {"en": "National Snuggle a Chicken Day"}, emoji: "🐓"},
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-sunday-supper-day/"}, titles: {"en": "National Sunday Supper Day"}, first: {era: 1, y: 2012}, emoji: "🍽️"},
         {type: "1D", start: {mon: 1, d: 8}, urls: {"en": "https://nationaltoday.com/national-winter-skin-relief-day/"}, titles: {"en": "National Winter Skin Relief Day"}, first: {era: 1, y: 2017}},
-        
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-cassoulet-day/"}, titles: {"en": "National Cassoulet Day"}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-clean-your-desk-day/"}, titles: {"en": "National Clean Your Desk Day"}},
         {type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/national-fourth-graders-day/"}, titles: {"en": "National Fourth Graders Day"}},
         {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-shop-for-travel-day/"}, titles: {"en": "National Shop For Travel Day"}, first: {era: 1, y: 2018}},
-        
         {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-cut-energy-costs-day/"}, titles: {"en": "National Cut Your Energy Costs Day"}},
         {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-oysters-rockefeller-day/"}, titles: {"en": "National Oysters Rockefeller Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 1, d: 10}, urls: {"en": "https://nationaltoday.com/national-shareholders-day/"}, titles: {"en": "National Shareholders Day"}},
-        
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/national-girl-hug-boy-day/"}, titles: {"en": "National Girl Hug Boy Day"}},
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/national-hot-toddy-day/"}, titles: {"en": "National Hot Toddy Day"}},
         {type: "1D", start: {mon: 1, d: 11}, urls: {"en": "https://nationaltoday.com/national-step-in-a-puddle-and-splash-your-friends-day/"}, titles: {"en": "National Step in a Puddle and Splash Your Friends Day"}, first: {era: 1, y: 1998}},
-        
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-curried-chicken-day/"}, titles: {"en": "National Curried Chicken Day"}},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-hot-tea-day/"}, titles: {"en": "National Hot Tea Day", "he": "יום התה החם הלאומי"}, first: {era: 1, y: 2016}, emoji: "☕️"},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-kettlebell-day/"}, titles: {"en": "National Kettlebell Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-pharmacist-day/"}, titles: {"en": "National Pharmacist Day"}},
-        
         {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/national-peach-melba-day/"}, titles: {"en": "National Peach Melba Day"}, emoji: "🍑"},
-        
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-gluten-free-day/"}, titles: {"en": "National Gluten-Free Day"}},
-        
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/national-hot-pastrami-sandwich-day/"}, titles: {"en": "National Hot Pastrami Sandwich Day"}},
-        
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-booch-day/"}, titles: {"en": "National Booch Day"}, emoji: "☕️"},
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-fresh-squeezed-juice-day/"}, titles: {"en": "National Fresh Squeezed Juice Day"}},
         {type: "1D", start: {mon: 1, d: 15}, urls: {"en": "https://nationaltoday.com/national-pothole-day/"}, titles: {"en": "National Pothole Day"}},
-        
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-good-teen-day/"}, titles: {"en": "National Good Teen Day"}},
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-quinoa-day/"}, titles: {"en": "National Quinoa Day"}},
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/national-without-a-scalpel-day/"}, titles: {"en": "National Without a Scalpel Day"}, first: {era: 1, y: 2005}},
-        
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-hot-buttered-rum-day/"}, titles: {"en": "National Hot Buttered Rum Day"}, emoji: "🥃"},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-hot-heads-chili-day/"}, titles: {"en": "National Hot Heads Chili Day"}, emoji: "🌶️"},
         {type: "1D", start: {mon: 1, d: 17}, urls: {"en": "https://nationaltoday.com/national-lose-the-jet-lag-day/"}, titles: {"en": "National Lose the Jet Lag Day"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 1, d: 18}, urls: {"en": "https://nationaltoday.com/national-gourmet-coffee-day/"}, titles: {"en": "National Gourmet Coffee Day"}, emoji: "☕️"},
-        
         {type: "1D", start: {mon: 1, d: 20}, urls: {"en": "https://nationaltoday.com/national-coffee-break-day/"}, titles: {"en": "National Coffee Break Day"}, emoji: "☕️"},
-        
         {type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-use-your-gift-card-day/"}, titles: {"en": "National Use Your Gift Card Day"}},
-        
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/national-bakers-crafters-makers-day/"}, titles: {"en": "National Bakers-Crafters-Makers Day"}, emoji: "🍞🍩🍪", first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/national-conscious-uncoupling-day/"}, titles: {"en": "National Conscious Uncoupling Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/national-hug-your-puppy-day/"}, titles: {"en": "National Hug Your Puppy Day"}, emoji: "🐶"},
-        
         {type: "1D", start: {mon: 1, d: 23}, urls: {"en": "https://nationaltoday.com/national-rhubarb-pie-day/"}, titles: {"en": "National Rhubarb Pie Day"}, emoji: "🥧"},
-        
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/national-just-do-it-day/"}, titles: {"en": "National “Just Do It” Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 1, d: 24}, urls: {"en": "https://nationaltoday.com/national-lobster-thermidor-day/"}, titles: {"en": "National Lobster Thermidor Day"}, first: {era: 1, y: 2000}, emoji: "🦞"},
-        
         {type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://nationaltoday.com/national-fish-taco-day/"}, titles: {"en": "National Fish Taco Day"}, emoji: "🌮"},
-        
         {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/national-peanut-brittle-day/"}, titles: {"en": "National Peanut Brittle Day"}, emoji: "🥜"},
         {type: "1D", start: {mon: 1, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-preschool-health-and-fitness-day/"}, titles: {"en": "National Preschool Health and Fitness Day"}},
-        
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-daisy-day/"}, titles: {"en": "National Daisy Day"}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-lego-day/"}, titles: {"en": "National Lego Day"}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/national-pediatrician-day/"}, titles: {"en": "National Pediatrician Day"}, emoji: "👨‍⚕️👩‍⚕️"},
-        
         {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-draw-a-dinosaur-day/"}, titles: {"en": "National Draw A Dinosaur Day"}, emoji: "🦖", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 1, d: 30}, urls: {"en": "https://nationaltoday.com/national-escape-day/"}, titles: {"en": "National Escape Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-plan-for-vacation-day/"}, titles: {"en": "National Plan for Vacation Day"}, emoji: "⛱️"},
-        
         {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/heimlich-maneuver-day/"}, titles: {"en": "National Heimlich Maneuver Day"}},
         {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-moonshine-day/"}, titles: {"en": "National Moonshine Day"}},
         {type: "1D", start: {mon: 6, d: 1}, urls: {"en": "https://nationaltoday.com/national-olive-day/"}, titles: {"en": "National Olive Day"}, emoji: "🫒"},
-        
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-accordion-awareness-month/"}, titles: {"en": "National Accordion Awareness Month"}, emoji: "🪗"},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-aphasia-awareness-month/"}, titles: {"en": "National Aphasia Awareness Month"}},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-camping-month/"}, titles: {"en": "National Camping Month"}, first: {era: 1, y: 1970}, emoji: "🏕️"},
@@ -1220,40 +953,30 @@
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-scleroderma-awareness-month/"}, titles: {"en": "National Scleroderma Awareness Month"}},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-scoliosis-awareness-month/"}, titles: {"en": "National Scoliosis Awareness Month"}},
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-steakhouse-month/"}, titles: {"en": "National Steakhouse Month"}, emoji: "🥩"},
-        
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-love-dentist-day/"}, titles: {"en": "National I Love My Dentist Day"}, emoji: "🦷"},
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-rocky-road-day/"}, titles: {"en": "National Rocky Road Day"}, emoji: "🍨"},
         {type: "1D", start: {mon: 6, d: 2}, urls: {"en": "https://nationaltoday.com/national-rotisserie-chicken-day/"}, titles: {"en": "National Rotisserie Chicken Day"}, emoji: "🍗", first: {era: 1, y: 2015}},
-        
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-chocolate-macaroon-day/"}, titles: {"en": "National Chocolate Macaroon Day"}},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-egg-day/"}, titles: {"en": "National Egg Day"}, emoji: "🥚"},
         {type: "1D", start: {mon: 6, d: 3}, urls: {"en": "https://nationaltoday.com/national-simp-day/"}, titles: {"en": "National Simp Day"}},
-        
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-cheese-day/"}, titles: {"en": "National Cheese Day"}, emoji: "🧀"},
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-cognac-day/"}, titles: {"en": "National Cognac Day"}, emoji: "🥃"},
         {type: "1D", start: {mon: 6, d: 4}, urls: {"en": "https://nationaltoday.com/national-hug-cat-day/"}, titles: {"en": "National Hug Your Cat Day"}, emoji: "😺"},
-        
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/national-hug-your-cat-month/"}, titles: {"en": "National Hug Your Cat Month"}, emoji: "😺"},
-        
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-gingerbread-day/"}, titles: {"en": "National Gingerbread Day"}},
         {type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/national-veggie-burger-day/", "he": "https://www.daysoftheyear.co.il/2019/06/national-veggie-burger-day.html"}, titles: {"en": "National Veggie Burger Day", "he": "יום ההמבורגר הצמחי"}},
-        
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-applesauce-cake-day/"}, titles: {"en": "National Applesauce Cake Day"}},
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-gardening-exercise-day/"}, titles: {"en": "National Gardening Exercise Day"}, emoji: "👨‍🌾👩‍🌾"},
         {type: "1D", start: {mon: 6, d: 6}, urls: {"en": "https://nationaltoday.com/national-yo-yo-day/", "he": "https://www.daysoftheyear.co.il/2019/06/yoyo-day.html"}, titles: {"en": "National Yo-Yo Day", "he": "יום היו יו"}, emoji: "🪀"},
-        
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-chocolate-ice-cream-day/", "he": "https://www.daysoftheyear.co.il/2018/06/7.html"}, titles: {"en": "National Chocolate Ice Cream Day", "he": "יום גלידת השוקולד"}, emoji: "🍨"},
         {type: "1D", start: {mon: 6, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-tailors-day/"}, titles: {"en": "National Tailors Day"}, emoji: "🧵"},
         {type: "1D", start: {mon: 6, d: 7}, urls: {"en": "https://nationaltoday.com/national-vcr-day/"}, titles: {"en": "National VCR Day"}, emoji: "📼"},
-        
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-name-your-poison-day/"}, titles: {"en": "National Name Your Poison Day"}},
         {type: "1D", start: {mon: 6, d: 8}, urls: {"en": "https://nationaltoday.com/national-upsy-daisy-day/"}, titles: {"en": "National Upsy Daisy Day"}, first: {era: 1, y: 2003}},
-        
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-donald-duck-day/", "he": "https://www.daysoftheyear.co.il/2018/06/9.html"}, titles: {"en": "National Donald Duck Day", "he": "יום הולדת לדונלד דאק"}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-meal-prep-day/"}, titles: {"en": "National Meal Prep Day"}, emoji: "🥘", first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-no-apologies-period-day/"}, titles: {"en": "National No Apologies Period Day"}},
         {type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/national-strawberry-rhubarb-pie-day/"}, titles: {"en": "National Strawberry Rhubarb Pie Day"}, emoji: "🥧"},
-        
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-bae-day/"}, titles: {"en": "National Bae Day"}},
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-ballpoint-pen-day/"}, titles: {"en": "National Ballpoint Pen Day"}, emoji: "🖋️"},
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-bed-bug-prevention-day/"}, titles: {"en": "National Bed Bug Prevention Day"}, emoji: "🛏️", first: {era: 1, y: 2019}},
@@ -1262,58 +985,44 @@
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-herbs-spices-day/"}, titles: {"en": "National Herbs and Spices Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-iced-tea-day/", "he": "https://www.daysoftheyear.co.il/2018/06/10.html"}, titles: {"en": "National Iced Tea Day", "he": "יום האייס טי"}},
         {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/national-rose-day/"}, titles: {"en": "National Rosé Day"}, emoji: "🍷"},
-        
         {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-corn-cob-day/"}, titles: {"en": "National Corn on the Cob Day"}, emoji: "🌽"},
         {type: "1D", start: {mon: 6, d: 11}, urls: {"en": "https://nationaltoday.com/national-german-chocolate-cake-day/"}, titles: {"en": "National German Chocolate Cake Day"}, emoji: "🍰"},
-        
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-button-battery-awareness-day/"}, titles: {"en": "National Button Battery Awareness Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-jerky-day/"}, titles: {"en": "National Jerky Day"}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-peanut-butter-cookie-day/"}, titles: {"en": "National Peanut Butter Cookie Day"}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/national-red-rose-day/", "he": "https://www.daysoftheyear.co.il/2017/06/12.html"}, titles: {"en": "National Red Rose Day", "he": "יום הורד האדום"}, emoji: "🌹"},
-        
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-call-your-doctor-day/"}, titles: {"en": "National Call Your Doctor Day"}, emoji: "👨‍⚕️👩‍⚕️", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-chamoy-day/"}, titles: {"en": "National Chamoy Day"}},
         {type: "1D", start: {mon: 6, wkd: [3], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-forklift-safety-day/"}, titles: {"en": "National Forklift Safety Day"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-productive-business-civility-day/"}, titles: {"en": "National Productive Business Civility Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-sewing-machine-day/", "he": "https://www.daysoftheyear.co.il/2019/06/sewing-machine-day.html"}, titles: {"en": "National Sewing Machine Day", "he": "יום מכונת התפירה"}},
         {type: "1D", start: {mon: 6, d: 13}, urls: {"en": "https://nationaltoday.com/national-weed-your-garden-day/"}, titles: {"en": "National Weed Your Garden Day"}, emoji: "🪴"},
-        
         {type: "nD", start: {mon: 6, d: 13}, end: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-clay-week/"}, titles: {"en": "National Clay Week"}, first: {era: 1, y: 1950}},
-        
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/national-pop-goes-weasel-day/"}, titles: {"en": "National Pop Goes The Weasel Day"}},
         {type: "1D", start: {mon: 6, d: 14}, urls: {"en": "https://nationaltoday.com/national-strawberry-shortcake-day/"}, titles: {"en": "National Strawberry Shortcake Day"}, emoji: "🍰", first: {era: 1, y: 2003}},
-        
         {type: "1D", start: {mon: 6, d: 12, thruD: 18, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-career-nurse-assistants-day/"}, titles: {"en": "National Career Nurse Assistants Day"}, first: {era: 1, y: 1977}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-megalodon-day/"}, titles: {"en": "National Megalodon Day"}, emoji: "🦈"},
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-prune-day/"}, titles: {"en": "National Prune Day"}},
         {type: "1D", start: {mon: 6, d: 15}, urls: {"en": "https://nationaltoday.com/national-smile-power-day/"}, titles: {"en": "National Smile Power Day"}, emoji: "😀", first: {era: 1, y: 2009}},
-        
         {type: "1D", start: {mon: 6, d: 16}, urls: {"en": "https://nationaltoday.com/national-fudge-day/"}, titles: {"en": "National Fudge Day"}},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-take-back-lunch-break-day/"}, titles: {"en": "National Take Back the Lunch Break Day"}, emoji: "🥪", first: {era: 1, y: 2018}},
-        
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-apple-strudel-day/", "he": "https://www.daysoftheyear.co.il/2018/06/17.html"}, titles: {"en": "National Apple Strudel Day", "he": "יום השטרודל תפוחים"}, emoji: "🍎"},
         {type: "1D", start: {mon: 6, d: 14, thruD: 20, wkd: [7]}, urls: {"en": "https://nationaltoday.com/national-dog-dad-day/"}, titles: {"en": "National Dog Dad Day"}, emoji: "🐶"},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-eat-vegetables-day/"}, titles: {"en": "National Eat Your Vegetables Day"}, emoji: "🥒🥔🥕"},
         {type: "1D", start: {mon: 6, d: 17}, urls: {"en": "https://nationaltoday.com/national-mascot-day/"}, titles: {"en": "National Mascot Day"}},
-        
         {type: "nD", start: {mon: 6, d: 17}, end: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-week-of-making/"}, titles: {"en": "National Week of Making"}},
-        
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-cherry-tart-day/"}, titles: {"en": "National Cherry Tart Day"}, emoji: "🍒"},
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-go-fishing-day/"}, titles: {"en": "National Go Fishing Day"}, emoji: "🎣"},
         {type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/national-splurge-day/"}, titles: {"en": "National Splurge Day"}, first: {era: 1, y: 1994}, emoji: "🪙"},
-        
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-freebsd-day/"}, titles: {"en": "National FreeBSD Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-garfield-cat-day/", "he": "https://www.daysoftheyear.co.il/2018/06/19.html"}, titles: {"en": "National Garfield the Cat Day", "he": "יום הולדת לגארפילד"}},
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-martini-day/"}, titles: {"en": "National Martini Day"}, emoji: "🍸🍸"},
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-take-your-cat-to-work-day/"}, titles: {"en": "National Take Your Cat to Work Day"}, emoji: "🐱"},
         {type: "1D", start: {mon: 6, d: 19}, urls: {"en": "https://nationaltoday.com/national-watch-day/"}, titles: {"en": "National Watch Day"}, emoji: "⌚️", first: {era: 1, y: 2017}},
-        
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-hike-with-geek-day/"}, titles: {"en": "National Hike with a Geek Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-ice-cream-soda-day/"}, titles: {"en": "National Ice Cream Soda Day"}},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-vanilla-milkshake-day/", "he": "https://www.daysoftheyear.co.il/2018/06/20.html"}, titles: {"en": "National Vanilla Milkshake Day", "he": "יום המילקשייק וניל"}},
-        
         {type: "nD", start: {mon: 6, d: 20}, end: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-mosquito-control-awareness-week/"}, titles: {"en": "National Mosquito Control Awareness Week"}, emoji: "🦟"},
-        
         {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-cookie-dough-day/"}, titles: {"en": "National Cookie Dough Day"}},
         {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-day-of-the-gong/"}, titles: {"en": "National Day of the Gong"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-daylight-appreciation-day/"}, titles: {"en": "National Daylight Appreciation Day"}},
@@ -1323,49 +1032,39 @@
         {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-selfie-day/", "he": "https://www.daysoftheyear.co.il/2017/06/21.html"}, titles: {"en": "National Selfie Day", "he": "יום הסלפי"}},
         {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-smoothie-day/"}, titles: {"en": "National Smoothie Day"}},
         {type: "1D", start: {mon: 6, d: 21}, urls: {"en": "https://nationaltoday.com/national-yard-games-day/"}, titles: {"en": "National Yard Games Day"}, first: {era: 1, y: 2021}},
-        
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/national-chocolate-eclair-day/"}, titles: {"en": "National Chocolate Eclair Day"}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/national-hvac-tech-day/"}, titles: {"en": "National HVAC Tech Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/national-kissing-day/"}, titles: {"en": "National Kissing Day"}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/national-limoncello-day/"}, titles: {"en": "National Limoncello Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/national-onion-ring-day/", "he": "https://www.daysoftheyear.co.il/2018/06/22.html"}, titles: {"en": "National Onion Ring Day", "he": "יום טבעות הבצל"}},
         {type: "1D", start: {mon: 6, d: 22}, urls: {"en": "https://nationaltoday.com/pet-choking-prevention-day/"}, titles: {"en": "National Pet Choking Prevention Day"}, emoji: "🐇🐕🐈‍⬛", first: {era: 1, y: 2023}},
-        
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-hydration-day/"}, titles: {"en": "National Hydration Day"}, emoji: "🚰", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-pecan-sandies-day/"}, titles: {"en": "National Pecan Sandies Day"}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-pink-day/"}, titles: {"en": "National Pink Day"}, emoji: "🩷"},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-porridge-day/"}, titles: {"en": "National Porridge Day"}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-take-dog-work-day/"}, titles: {"en": "National Take Your Dog to Work Day"}, emoji: "🐶", first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/national-typewriter-day/"}, titles: {"en": "National Typewriter Day"}},
-        
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-pralines-day/"}, titles: {"en": "National Pralines Day"}},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/national-relationship-equity-day/"}, titles: {"en": "National Relationship Equity Day"}, first: {era: 1, y: 2020}},
-        
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-camp-counts-day/"}, titles: {"en": "National Camp Counts Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-fatherless-childrens-day/"}, titles: {"en": "National Fatherless Children’s Day"}, inherits: "Children’s Day", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/national-strawberry-parfait-day/"}, titles: {"en": "National Strawberry Parfait Day"}, emoji: "🍓"},
-        
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-barcode-day/"}, titles: {"en": "National Barcode Day"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/national-chocolate-pudding/"}, titles: {"en": "National Chocolate Pudding Day"}},
-        
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-bingo-day/"}, titles: {"en": "National Bingo Day"}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-ice-cream-cake-day/"}, titles: {"en": "National Ice Cream Cake Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-orange-blossom-day/"}, titles: {"en": "National Orange Blossom Day"}},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-womens-fly-fishing-day/"}, titles: {"en": "National Women’s Fly Fishing Day"}, emoji: "🎣", first: {era: 1, y: 2020}},
-        
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-climate-smart-skin-awareness-day/"}, titles: {"en": "National Climate-Smart Skin Awareness Day"}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-insurance-awareness-day/"}, titles: {"en": "National Insurance Awareness Day"}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-parchment-day/"}, titles: {"en": "National Parchment Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-tapioca-day/", "he": "https://www.daysoftheyear.co.il/2019/06/tapioca-day.html"}, titles: {"en": "National Tapioca Day", "he": "יום הטפיוקה"}},
-        
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-almond-buttercrunch-day/"}, titles: {"en": "National Almond Buttercrunch Day"}},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-camera-day/"}, titles: {"en": "National Camera Day"}, emoji: "📷"},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-dieselbilly-day/"}, titles: {"en": "National Dieselbilly Day"}},
         {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-handshake-day/"}, titles: {"en": "National Handshake Day"}, emoji: "🤝", first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-waffle-iron-day/"}, titles: {"en": "National Waffle Iron Day"}, emoji: "🧇"},
-        
         {type: "1D", start: {mon: 6, wkd: [5], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-work-home-day/"}, titles: {"en": "National Work From Home Day"}, emoji: "🏠"},
-        
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-food-truck-day/"}, titles: {"en": "National Food Truck Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://nationaltoday.com/national-meteor-watch-day/"}, titles: {"en": "National Meteor Watch Day"}, emoji: "☄️"},
         {type: "1D", start: {mon: 6, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-safer-workplace-day/"}, titles: {"en": "National SAFER Workplace Day"}},
@@ -1405,7 +1104,6 @@
         {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/video-game-day/"}, titles: {"en": "National Video Game Day"}},
         {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/national-dont-put-all-your-eggs-in-one-omelet-day/"}, titles: {"en": "National Don’t Put all your Eggs in One Omelet Day"}},
         {type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/national-sugar-cookie-day/"}, titles: {"en": "National Sugar Cookie Day"}},
-        
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-clerihew-day/"}, titles: {"en": "National Clerihew Day"}},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-kitten-day/"}, titles: {"en": "National Kitten Day"}},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-transplant-financial-coordinator-day/"}, titles: {"en": "National Transplant Financial Coordinator Day"}, first: {era: 1, y: 2021}},
