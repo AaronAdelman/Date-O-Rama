@@ -1181,5 +1181,18 @@
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/french-american-heritage-month/"}, titles: {"en": "French-American Heritage Month"}, emoji: "🇫🇷🇺🇸", first: {era: 1, y: 1998}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/hitchhiking-month/"}, titles: {"en": "Hitchhiking Month"}, first: {era: 1, y: 2020}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-baked-beans-month/"}, titles: {"en": "National Baked Beans Month"}, first: {era: 1, y: 1981}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-contract-sewing-month/"}, titles: {"en": "National Contract Sewing Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-culinary-arts-month/"}, titles: {"en": "National Culinary Arts Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-hot-dog-month/"}, titles: {"en": "National Hot Dog Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-picnic-month/"}, titles: {"en": "National Picnic Month"}},
+        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/made-usa-day/"}, titles: {"en": "Made in the USA Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/american-redneck-day/"}, titles: {"en": "American Redneck Day"}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-fried-clam-day/"}, titles: {"en": "National Fried Clam Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/national-independent-beer-run-day/"}, titles: {"en": "National Independent Beer Run Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/independence-from-meat-day/"}, titles: {"en": "Independence From Meat Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/invisible-day/"}, titles: {"en": "Invisible Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/jackfruit-day/"}, titles: {"en": "Jackfruit Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-barbecued-spareribs-day/"}, titles: {"en": "National Barbecued Spareribs Day"}},
+
     ]
 }
