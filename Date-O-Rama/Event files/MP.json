@@ -5,6 +5,6 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.20, "blue": 0.63},
     eventSpecifications: [
-        
+        {type: "1D", start: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/commonwealth-covenant-day/"}, titles: {"en": "Commonwealth Covenant Day"}, first: {era: 1, y: 1976}},
     ]
 }

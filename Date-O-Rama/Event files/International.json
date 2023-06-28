@@ -52,7 +52,7 @@
         {type: "1D", start: {d: 4, mon: 2}, titles: {"en": "World Cancer Day", "he": "יום הסרטן"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.worldcancerday.org/", "he": "https://www.daysoftheyear.co.il/2018/02/4.html"}},
         {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/facebooks-birthday/", "he": "https://www.daysoftheyear.co.il/2016/02/4.html"}, titles: {"en": "Facebook’s Birthday", "he": "יום הולדת לפייסבוק"}},
         {type: "1D", start: {d: 5, mon: 2}, titles: {"en": "World Nutella Day", "he": "יום הנוטלה העולמי"}, urls: {"en": "https://www.daysoftheyear.com/days/nutella-day/", "he": "https://www.daysoftheyear.co.il/2018/02/5.html"}, first: {era: 1, y: 2007}},
-        {type: "1D", start: {d: 8, mon: 2}, titles: {"en": "Safer Internet Day"}, urls: {"en": "https://www.saferinternetday.org/"}, first: {era: 1, y: 2004}, emoji: "📱"},
+        {inherits: "Safer Internet Day", type: "1D", start: {mon: 2, d: 5, thruD: 11, wkd: [3]}, first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/laugh-and-get-rich-day/", "he": "https://www.daysoftheyear.co.il/2018/02/8.html"}, titles: {"en": "Laugh and Get Rich Day", "he": "יום צחק ותתעשר"}, emoji: "🤣"},
         {type: "1D", start: {mon: 2, d: 8}, urls: {"en": "https://nationaltoday.com/opera-day/", "he": "https://www.daysoftheyear.co.il/2020/02/opera-day.html"}, titles: {"en": "Opera Day", "he": "יום האופרה"}},
         {type: "1D", start: {d: 9, mon: 2}, inherits: "National Pizza Day", notes: {"en": "Pizza Pie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-day/", "he": "https://www.daysoftheyear.co.il/2017/02/9.html"}, first: {era: 1, y: 2000}},
@@ -1429,6 +1429,12 @@
         {type: "1M", start: {mon: 9}, titles: {"en": "Classical Music Month"}, urls: {"en": "https://nationaltoday.com/classical-music-month/"}, first: {era: 1, y: 1994}, emoji: "🎻"},
         {type: "1M", start: {mon: 9}, titles: {"en": "Leukemia and Lymphoma Awareness Month"}, urls: {"en": "https://nationaltoday.com/leukemia-and-lymphoma-awareness-month/"}, first: {era: 1, y: 2017}, emoji: "🩸"},
         {type: "1D", titles: {"en": "Restless Legs Awareness Day"}, start: {mon: 9, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/restless-legs-awareness-day/"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/bed-in-for-peace-day/"}, titles: {"en": "Bed-in for Peace Day"}, first: {era: 1, y: 2010}},
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/north-american-inclusion-month-naim/"}, titles: {"en": "North American Inclusion Month (NAIM)"}},
+        {type: "1D", start: {mon: 2, d: 4}, urls: {"en": "https://nationaltoday.com/torture-abolition-day/"}, titles: {"en": "Torture Abolition Day"}},
+        {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/twin-peaks-day/"}, titles: {"en": "Twin Peaks Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/carnival-day/"}, titles: {"en": "Carnival Day"}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/child-abuse-awareness-month/"}, titles: {"en": "Child Abuse Awareness Month"}, first: {era: 1, y: 1979}, emoji: "👦👧"},
 
     ]
 }
