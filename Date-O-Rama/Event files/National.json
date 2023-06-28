@@ -1228,7 +1228,12 @@
         {type: "nD", start: {mon: 3, d: 28}, end: {mon: 4, d: 3}, urls: {"en": "https://nationaltoday.com/national-protocol-officers-week/"}, titles: {"en": "National Protocol Officer’s Week"}},
         {type: "1D", start: {mon: 3, d: 30}, urls: {"en": "https://nationaltoday.com/national-control-day/", "he": "https://www.daysoftheyear.co.il/2018/03/30.html"}, titles: {"en": "National I Am In Control Day", "he": "יום ה״אני בשליטה״"}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/national-one-cent-day/"}, titles: {"en": "National One Cent Day"}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-african-american-womens-fitness-month/"}, titles: {"en": "National African-American Women’s Fitness Month"}, first: {era: 1, y: 2006}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-facial-protection-month/"}, titles: {"en": "National Facial Protection Month"}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-foot-health-awareness-month/"}, titles: {"en": "National Foot Health Awareness Month"}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-sexually-transmitted-diseases-stds-education-and-awareness-month/"}, titles: {"en": "National Sexually Transmitted Infections (STIs) Education and Awareness Month"}},
 
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/grange-month/"}, titles: {"en": "Grange Month"}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/st-stupid-day/"}, titles: {"en": "St. Stupid Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 3, d: 29}, urls: {"en": "https://nationaltoday.com/texas-loves-the-children-day/"}, titles: {"en": "Texas Loves the Children Day"}, emoji: "👦👧"},
         {type: "nD", start: {mon: 3, d: 11}, end: {mon: 3, d: 17}, urls: {"en": "https://nationaltoday.com/turkey-vultures-return-to-the-living-sign/"}, titles: {"en": "Turkey Vultures Return to the Living Sign Week"}},
