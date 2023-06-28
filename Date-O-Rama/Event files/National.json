@@ -1198,6 +1198,16 @@
         {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-freezer-pop-day/"}, titles: {"en": "National Freezer Pop Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 7, d: 10}, inherits: "National Wyoming Day"},
         {type: "1D", start: {mon: 12, d: 10}, inherits: "National Wyoming Day"},
+        {type: "1D", start: {mon: 6, d: 30}, titles: {"en": "National Corvette Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-corvette-day/"}},
+        {titles: {"en": "National Day of the Cowboy", "he": "יום הקאובוי הלאומי"}, type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaldayofthecowboy.com/"}, first: {era: 1, y: 2005}, emoji: "🤠"},
+        {type: "1M", start: {mon: 8}, titles: {"en": "National MedicAlert Awareness Month"}, first: {era: 1, y: 1996}, emoji: "☤", urls: {"en": "https://nationaltoday.com/medicalert-awareness-month/"}},
+        {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/national-supreme-sacrifice-day/"}, titles: {"en": "National Supreme Sacrifice Day"}, first: {era: 1, y: 2004}},
 
+        
+        
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/fabulous-florida-strawberry-month/"}, titles: {"en": "Fabulous Florida Strawberry Month"}, first: {era: 1, y: 1930}, emoji: "🍓"},
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/from-africa-to-virginia-month/"}, titles: {"en": "From Africa to Virginia Month"}},
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/great-american-pie-month/"}, titles: {"en": "Great American Pie Month"}, first: {era: 1, y: 1990}, emoji: "🥧"},
+        {type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://nationaltoday.com/operation-iraqi-freedom-day/"}, titles: {"en": "Operation Iraqi Freedom Day"}, first: {era: 1, y: 2003}},
     ]
 }
