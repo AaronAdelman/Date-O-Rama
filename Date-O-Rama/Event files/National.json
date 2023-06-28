@@ -32,7 +32,7 @@
         {type: "1D", start: {d: 14, mon: 6}, titles: {"en": "National New Mexico Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-new-mexico-day-june-14/"}},
         {type: "1D", start: {d: 22, mon: 2}, titles: {"en": "National California Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-california-day-february-22/"}},
         {type: "1D", start: {mon:3, d: 22}, titles: {"en": "National West Virginia Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-west-virginia-day-march-22/"}},
-        {type: "1D", start: {d: 24, mon: 5}, titles: {"en": "National Wyoming Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-wyoming-day-may-24/"}},
+        {type: "1D", start: {d: 24, mon: 5}, inherits: "National Wyoming Day", first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-wyoming-day-may-24/"}},
         {type: "1D", start: {d: 24, mon: 8}, titles: {"en": "National Maryland Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-maryland-day-august-24/"}},
         {type: "1D", start: {d: 25, mon: 1}, titles: {"en": "National Florida Day"}, urls: {"en": "https://nationaldaycalendar.com/national-florida-day-january-25/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 26}, titles: {"en": "National Tennessee Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-tennessee-day-october-26/"}},
@@ -1193,6 +1193,11 @@
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/invisible-day/"}, titles: {"en": "Invisible Day"}},
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/jackfruit-day/"}, titles: {"en": "Jackfruit Day"}},
         {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-barbecued-spareribs-day/"}, titles: {"en": "National Barbecued Spareribs Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-caesar-salad-day/"}, titles: {"en": "National Caesar Salad Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-hillbilly-day/"}, titles: {"en": "National Hillbilly Day"}},
+        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-freezer-pop-day/"}, titles: {"en": "National Freezer Pop Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 7, d: 10}, inherits: "National Wyoming Day"},
+        {type: "1D", start: {mon: 12, d: 10}, inherits: "National Wyoming Day"},
 
     ]
 }

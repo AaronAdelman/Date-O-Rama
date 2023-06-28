@@ -924,7 +924,6 @@
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/babe-ruth-day/"}, titles: {"en": "Babe Ruth Day"}, first: {era: 1, y: 1947}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/international-donor-conception-awareness-day/"}, titles: {"en": "International Donor Conception Awareness Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/morse-code-day/"}, titles: {"en": "Morse Code Day"}},
-        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/take-daughters-sons-work-day/"}, titles: {"en": "Take Our Daughters and Sons to Work Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/woody-woodpecker-day/"}, titles: {"en": "Woody Woodpecker Day"}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/world-design-day/", "he": "https://www.daysoftheyear.co.il/2021/04/graphicsday.html"}, titles: {"en": "World Design Day", "he": "יום העיצוב הגרפי העולמי"}},
         {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/world-tapir-day/"}, titles: {"en": "World Tapir Day"}, first: {era: 1, y: 2008}},
@@ -1425,5 +1424,6 @@
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/beef-tallow-day/"}, titles: {"en": "Beef Tallow Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/fools-paradise-day/"}, titles: {"en": "Fool’s Paradise Day"}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/international-rock-day/"}, titles: {"en": "International Rock Day"}},
+        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/sidewalk-egg-frying-day/"}, titles: {"en": "Sidewalk Egg Frying Day"}, first: {era: 1, y: 1983}},
     ]
 }

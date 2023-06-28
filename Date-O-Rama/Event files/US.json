@@ -666,13 +666,10 @@
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-minority-mental-health-awareness-month/"}, titles: {"en": "National Minority Mental Health Awareness Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-watermelon-month/"}, titles: {"en": "National Watermelon Month"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-report-military-fraud-day/"}, titles: {"en": "National Report Military Fraud Day"}, first: {era: 1, y: 2018}},
-        
-        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-caesar-salad-day/"}, titles: {"en": "National Caesar Salad Day"}},
-        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/national-hillbilly-day/"}, titles: {"en": "National Hillbilly Day"}},
-        {type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/sidewalk-egg-frying-day/"}, titles: {"en": "Sidewalk Egg Frying Day"}, first: {era: 1, y: 1983}},
-        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-freezer-pop-day/"}, titles: {"en": "National Freezer Pop Day"}, first: {era: 1, y: 2020}},
-        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-wyoming-day/"}, titles: {"en": "National Wyoming Day"}},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/pick-blueberries-day/"}, titles: {"en": "Pick Blueberries Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/take-daughters-sons-work-day/"}, titles: {"en": "Take Our Daughters and Sons to Work Day"}, first: {era: 1, y: 2003}},
+
+        
         {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/all-american-pet-photo-day/"}, titles: {"en": "All American Pet Photo Day"}},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/night-of-nights/"}, titles: {"en": "Night of Nights"}, first: {era: 1, y: 1999}},
     ]
