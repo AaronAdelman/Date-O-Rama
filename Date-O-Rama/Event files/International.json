@@ -1421,7 +1421,8 @@
         {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/world-benzodiazepine-awareness-day/"}, titles: {"en": "World Benzodiazepine Awareness Day"}},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/etch-a-sketch-day/"}, titles: {"en": "Etch A Sketch Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/new-conversations-day/"}, titles: {"en": "New Conversations Day"}, first: {era: 1, y: 2000}},
-        
+        {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/data-innovation-day-data-innovation-summit/"}, titles: {"en": "Data Innovation Day (Data Innovation Summit)"}},
+
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/beef-tallow-day/"}, titles: {"en": "Beef Tallow Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/fools-paradise-day/"}, titles: {"en": "Fool’s Paradise Day"}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/international-rock-day/"}, titles: {"en": "International Rock Day"}},
@@ -1436,5 +1437,15 @@
         {type: "1D", start: {mon: 2, d: 26}, urls: {"en": "https://nationaltoday.com/carnival-day/"}, titles: {"en": "Carnival Day"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/child-abuse-awareness-month/"}, titles: {"en": "Child Abuse Awareness Month"}, first: {era: 1, y: 1979}, emoji: "👦👧"},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/occupational-therapy-month/"}, titles: {"en": "Occupational Therapy Month"}, first: {era: 1, y: 1980}},
+        {type: "1D", start: {mon: 4, d: 28}, urls: {"en": "https://nationaltoday.com/workers-memorial-day/"}, titles: {"en": "Workers’ Memorial Day"}, notes: {"en": "Workers Memorial Day"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://nationaltoday.com/marine-mammal-rescue-day/"}, titles: {"en": "Marine Mammal Rescue Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 4, d: 30}, urls: {"en": "https://nationaltoday.com/spank-out-day/"}, titles: {"en": "Spank Out Day"}, first: {era: 1, y: 1998}},
+        {type: "1D", start: {mon: 5, wkd: [2], d: 1, thruD: 7}, urls: {"en": "https://nationaltoday.com/great-lakes-awareness-day/"}, titles: {"en": "Great Lakes Awareness Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/melanoma-monday/"}, titles: {"en": "Melanoma Monday"}},
+        {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/borderline-personality-disorder-awareness-month/"}, titles: {"en": "Borderline Personality Disorder Awareness Month"}, first: {era: 1, y: 2008}},
+        {type: "1M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
+        {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/strike-out-strokes-month/"}, titles: {"en": "Strike Out Strokes Month"}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/project-aces-day/"}, titles: {"en": "Project ACES Day"}, first: {era: 1, y: 1989}},
+
     ]
 }
