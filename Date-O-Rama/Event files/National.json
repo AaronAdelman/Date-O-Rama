@@ -1232,6 +1232,7 @@
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-facial-protection-month/"}, titles: {"en": "National Facial Protection Month"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-foot-health-awareness-month/"}, titles: {"en": "National Foot Health Awareness Month"}},
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-sexually-transmitted-diseases-stds-education-and-awareness-month/"}, titles: {"en": "National Sexually Transmitted Infections (STIs) Education and Awareness Month"}},
+        {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/national-sjogrens-syndrome-awareness-month/"}, titles: {"en": "National Sjogren’s Syndrome Awareness Month"}, first: {era: 1, y: 1998}},
 
         {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/grange-month/"}, titles: {"en": "Grange Month"}},
         {type: "1D", start: {mon: 4, d: 1}, urls: {"en": "https://nationaltoday.com/st-stupid-day/"}, titles: {"en": "St. Stupid Day"}, first: {era: 1, y: 1979}},
