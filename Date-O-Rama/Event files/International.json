@@ -1422,6 +1422,11 @@
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/etch-a-sketch-day/"}, titles: {"en": "Etch A Sketch Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/new-conversations-day/"}, titles: {"en": "New Conversations Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 5, d: 11}, urls: {"en": "https://nationaltoday.com/data-innovation-day-data-innovation-summit/"}, titles: {"en": "Data Innovation Day (Data Innovation Summit)"}},
+        {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/root-canal-appreciation-day/"}, titles: {"en": "Root Canal Appreciation Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 5, d: 7, thruD: 13, wkd: [7]}, urls: {"en": "https://nationaltoday.com/brunch-for-lunch-day/"}, titles: {"en": "Brunch for Lunch Day"}},
+        {type: "1D", start: {mon: 5, d: 15, thruD: 21, wkd: [1]}, urls: {"en": "https://nationaltoday.com/emergency-medical-services-day/"}, titles: {"en": "Emergency Medical Services Day"}, emoji: "🚑"},
+        {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/old-time-player-piano-day/"}, titles: {"en": "Old Time Player Piano Day"}, emoji: "🎹", first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/loomis-day/"}, titles: {"en": "Loomis Day"}},
 
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/beef-tallow-day/"}, titles: {"en": "Beef Tallow Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/fools-paradise-day/"}, titles: {"en": "Fool’s Paradise Day"}},
