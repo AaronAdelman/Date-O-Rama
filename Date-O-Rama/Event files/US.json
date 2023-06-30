@@ -400,6 +400,7 @@
         {type: "1D", start: {mon: 5, d: 28}, urls: {"en": "https://nationaltoday.com/julia-pierpont-day/"}, titles: {"en": "Julia Pierpont Day"}},
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/prayer-for-peace-memorial-day/"}, titles: {"en": "Prayer for Peace Memorial Day"}, first: {era: 1, y: 1971}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-senior-health-fitness-day/"}, titles: {"en": "National Senior Health and Fitness Day"}, emoji: "👴👵"},
+        {type: "1D", start: {mon: 6, d: 30}, titles: {"en": "National Corvette Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-corvette-day/"}},
         
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/ellis-island-day/"}, titles: {"en": "Ellis Island Day"}},
         {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://nationaltoday.com/55-mph-speed-limit-day/"}, titles: {"en": "55 mph Speed Limit Day"}, first: {era: 1, y: 1973}},
