@@ -1451,6 +1451,13 @@
         {type: "1M", start: {mon: 5}, inherits: "National Service Dog Eye Examination Month", first: {era: 1, y: 2008}},
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/strike-out-strokes-month/"}, titles: {"en": "Strike Out Strokes Month"}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/project-aces-day/"}, titles: {"en": "Project ACES Day"}, first: {era: 1, y: 1989}},
-
+        {type: "1D", start: {mon: 1, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/library-shelfie-day/"}, titles: {"en": "Library Shelfie Day"}, first: {era: 1, y: 2014}, emoji: "📚"},
+        {type: "1D", start: {mon: 1, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/local-quilt-shop-day/"}, titles: {"en": "Local Quilt Shop Day"}, notes: {"en": "Visit Your Local Quilt Shop Day"}, first: {era: 1, y: 2021}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/antiphospholipid-antibody-syndrome-awareness-month/"}, titles: {"en": "Antiphospholipid Antibody Syndrome Awareness Month"}, first: {era: 1, y: 2010}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/lane-courtesy-month/"}, titles: {"en": "Lane Courtesy Month"}, first: {era: 1, y: 2000}, emoji: "⛙"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/lemon-month/"}, titles: {"en": "Lemon Month"}, emoji: "🍋"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/oral-health-month/"}, titles: {"en": "Oral Health Month"}, emoji: "👄"},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/pharmacists-declare-war-on-alcoholism-month/"}, titles: {"en": "Pharmacists Declare War on Alcoholism Month"}},
+        {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/womens-golf-month/"}, titles: {"en": "Women’s Golf Month"}, first: {era: 1, y: 2005}, emoji: "⛳️"},
     ]
 }
