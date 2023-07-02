@@ -1256,6 +1256,13 @@
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-logistics-day/"}, titles: {"en": "National Logistics Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/national-paul-bunyan-day/"}, titles: {"en": "National Paul Bunyan Day"}, emoji: "🪓"},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-report-military-fraud-day/"}, titles: {"en": "National Report Military Fraud Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/national-bomb-pop-day/"}, titles: {"en": "National Bomb Pop Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-be-nice-to-bugs-day/"}, titles: {"en": "National Be Nice to Bugs Day"}, first: {era: 1, y: 2021}, emoji: "🐞"},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-break-free-big-three-day/"}, titles: {"en": "National Break Free From the Big Three Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-grand-marnier-day/"}, titles: {"en": "National Grand Marnier Day"}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-mac-cheese-day/"}, titles: {"en": "National Mac and Cheese Day"}},
+        {type: "1D", start: {mon: 7, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-motorcycle-day/"}, titles: {"en": "National Motorcycle Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-tape-measure-day/"}, titles: {"en": "National Tape Measure Day"}},
 
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/night-of-nights/"}, titles: {"en": "Night of Nights"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/all-american-pet-photo-day/"}, titles: {"en": "All American Pet Photo Day"}},

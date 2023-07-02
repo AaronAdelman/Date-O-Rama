@@ -1463,5 +1463,8 @@
         {type: "1M", start: {mon: 6}, urls: {"en": "https://nationaltoday.com/turkey-lovers-month/"}, titles: {"en": "Turkey Lovers Month"}, emoji: "🦃"},
         {type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/turkey-lovers-day/"}, titles: {"en": "Turkey Lovers’ Day"}, emoji: "🦃", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/please-take-my-children-to-work-day/"}, titles: {"en": "Please Take My Children to Work Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/kebab-day/"}, titles: {"en": "Kebab Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/pandemonium-day/"}, titles: {"en": "Pandemonium Day"}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/shark-awareness-day/"}, titles: {"en": "Shark Awareness Day"}, emoji: "🦈"},
     ]
 }
