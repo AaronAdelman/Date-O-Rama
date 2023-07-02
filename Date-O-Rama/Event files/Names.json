@@ -253,5 +253,6 @@
        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-joey-day/"}, titles: {"en": "National Joey Day"}},
        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-marco-day/"}, titles: {"en": "National Marco Day"}},
        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/national-reese-day/"}, titles: {"en": "National Reese Day"}},
+       {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/national-donna-day/"}, titles: {"en": "National Donna Day"}},
     ]
 }
