@@ -1468,5 +1468,10 @@
         {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/shark-awareness-day/"}, titles: {"en": "Shark Awareness Day"}, emoji: "🦈"},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/developmental-disability-professionals-day/"}, titles: {"en": "Developmental Disability Professionals Day"}, first: {era: 1, y: 2019}, emoji: "🦼"},
         {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/woodie-wagon-day/"}, titles: {"en": "Woodie Wagon Day"}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/artificial-intelligence-appreciation-day/"}, titles: {"en": "Artificial Intelligence Appreciation Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/fresh-spinach-day/"}, titles: {"en": "Fresh Spinach Day"}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/guinea-pig-appreciation-day/"}, titles: {"en": "Guinea Pig Appreciation Day"}},
+        {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/lake-superior-day/"}, titles: {"en": "Lake Superior Day"}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/world-snake-day/"}, titles: {"en": "World Snake Day"}, emoji: "🐍"},
     ]
 }

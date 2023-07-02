@@ -1270,7 +1270,13 @@
         {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-strawberry-rhubarb-wine-day/"}, titles: {"en": "National Strawberry Rhubarb Wine Day"}, emoji: "🍷", first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/national-tapioca-pudding-day/"}, titles: {"en": "National Tapioca Pudding Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/orange-chicken-day/"}, titles: {"en": "National Orange Chicken Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-cherry-day/"}, titles: {"en": "National Cherry Day"}, emoji: "🍒"},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-corn-fritter-day/"}, titles: {"en": "National Corn Fritter Day"}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-dress-syndrome-day/"}, titles: {"en": "National D.R.E.S.S. Syndrome Day"}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-personal-chef-day/"}, titles: {"en": "National Personal Chef Day"}, notes: {"en": "National Personal Chef’s Day"}},
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-wedding-invitation-day/"}, titles: {"en": "National Wedding Invitation Day"}, first: {era: 1, y: 2019}},
 
+        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/celebration-of-the-horse-day/"}, titles: {"en": "Celebration of the Horse Day"}, inherits: "*Horse*"},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/night-of-nights/"}, titles: {"en": "Night of Nights"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 7, d: 11}, urls: {"en": "https://nationaltoday.com/all-american-pet-photo-day/"}, titles: {"en": "All American Pet Photo Day"}},

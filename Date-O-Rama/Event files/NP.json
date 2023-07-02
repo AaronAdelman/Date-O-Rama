@@ -11,5 +11,6 @@
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/nari-dibas/"}},
         {type: "1D", start: {mon: 7, d: 30}, inherits: "Friendship Day"},
+
    ]
 }
