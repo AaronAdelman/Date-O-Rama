@@ -1479,6 +1479,5 @@
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/insurance-nerd-day/"}, titles: {"en": "Insurance Nerd Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/perfect-family-day/"}, titles: {"en": "Perfect Family Day"}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/world-listening-day/"}, titles: {"en": "World Listening Day"}, first: {era: 1, y: 2010}},
-        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-zoo-keeper-week/"}, titles: {"en": "National Zoo Keeper Week"}},
     ]
 }
