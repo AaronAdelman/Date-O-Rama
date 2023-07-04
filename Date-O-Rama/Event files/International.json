@@ -154,8 +154,8 @@
         {type: "1D", start: {d: 6, mon: 7}, titles: {"en": "International Kissing Day"}, first: {era: 1, y: 2006}, emoji: "😗", urls: {"en": "https://www.daysoftheyear.com/days/international-kissing-day/"}},
         {type: "1D", start: {d: 7, mon: 7}, titles: {"en": "World Chocolate Day"}, emoji: "🍫", urls: {"en": "https://www.daysoftheyear.com/days/chocolate-day/"}},
         {type: "1D", start: {d: 12, mon: 7}, titles: {"en": "Paper Bag Day"}, emoji: "🛍", urls: {"en": "https://nationaldaycalendar.com/paper-bag-day-july-12/"}},
-        {type: "1D", start: {d: 17, mon: 7}, titles: {"en": "World Day for International Justice"}, notes: {"en": "Day of International Criminal Justice\nInternational Justice Day"}, first: {era: 1, y: 2010}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://en.wikipedia.org/wiki/World_Day_for_International_Justice"}},
-        {type: "1D", start: {d: 17, mon: 7}, titles: {"en": "World Emoji Day"}, first: {era: 1, y: 2014}, emoji: "📅", urls: {"en": "https://worldemojiday.com/"}},
+        {type: "1D", start: {mon: 7, d: 17}, titles: {"en": "World Day for International Justice"}, notes: {"en": "Day of International Criminal Justice\nInternational Justice Day"}, first: {era: 1, y: 2010}, emoji: "👨‍⚖️👩‍⚖️", urls: {"en": "https://nationaltoday.com/world-day-international-justice/"}},
+        {type: "1D", start: {mon: 7, d: 17}, titles: {"en": "World Emoji Day"}, first: {era: 1, y: 2014}, emoji: "📅", urls: {"en": "https://worldemojiday.com/"}},
         {type: "1D", start: {d: 22, mon: 7}, titles: {"en": "Pi Approximation Day", "he": "יום קירוב פאי"}, emoji: "≈π", notes: {"en": "Casual Pi Day"}, urls: {"en": "https://nationaltoday.com/pi-approximation-day/"}},
         {type: "1D", start: {d: 28, mon: 7}, titles: {"en": "World Nature Conservation Day"}, emoji: "🌿", urls: {"en": "https://nationaldaycalendar.com/world-conservation-day-july-28/"}},
         {type: "1D", start: {d: 29, mon: 7}, titles: {"en": "International Tiger Day"}, first: {era: 1, y: 2010}, emoji: "🐅", urls: {"en": "https://www.daysoftheyear.com/days/international-tiger-day/"}},
@@ -1473,5 +1473,9 @@
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/guinea-pig-appreciation-day/"}, titles: {"en": "Guinea Pig Appreciation Day"}},
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/lake-superior-day/"}, titles: {"en": "Lake Superior Day"}},
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/world-snake-day/"}, titles: {"en": "World Snake Day"}, emoji: "🐍"},
+        {type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://nationaltoday.com/global-hug-your-kids-day/"}, titles: {"en": "Global Hug Your Kids Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://nationaltoday.com/yellow-pig-day/"}, titles: {"en": "Yellow Pig Day"}, first: {era: 1, y: 1960}},
+        {type: "nD", start: {mon: 7, d: 18}, end: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/south-asian-heritage-month/"}, titles: {"en": "South Asian Heritage Month"}, first: {era: 1, y: 1990}},
+
     ]
 }

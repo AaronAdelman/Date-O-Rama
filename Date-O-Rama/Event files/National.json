@@ -1274,6 +1274,9 @@
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-dress-syndrome-day/"}, titles: {"en": "National D.R.E.S.S. Syndrome Day"}},
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-personal-chef-day/"}, titles: {"en": "National Personal Chef Day"}, notes: {"en": "National Personal Chef’s Day"}},
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-wedding-invitation-day/"}, titles: {"en": "National Wedding Invitation Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-get-dog-house-day/"}, titles: {"en": "National Get Out of the Dog House Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://nationaltoday.com/national-peach-ice-cream-day/"}, titles: {"en": "National Peach Ice Cream Day"}},
+
 
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/celebration-of-the-horse-day/"}, titles: {"en": "Celebration of the Horse Day"}, inherits: "*Horse*"},

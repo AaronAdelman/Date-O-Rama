@@ -256,5 +256,6 @@
        {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/national-donna-day/"}, titles: {"en": "National Donna Day"}},
        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-emily-day/"}, titles: {"en": "National Emily Day"}},
        {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-jerry-day/"}, titles: {"en": "National Jerry Day"}},
+       {type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://nationaltoday.com/national-cory-day/"}, titles: {"en": "National Cory Day"}},
     ]
 }
