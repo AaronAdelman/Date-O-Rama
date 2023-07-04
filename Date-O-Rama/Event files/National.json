@@ -1276,6 +1276,9 @@
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/national-wedding-invitation-day/"}, titles: {"en": "National Wedding Invitation Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-get-dog-house-day/"}, titles: {"en": "National Get Out of the Dog House Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://nationaltoday.com/national-peach-ice-cream-day/"}, titles: {"en": "National Peach Ice Cream Day"}},
+        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-caviar-day/"}, titles: {"en": "National Caviar Day"}},
+        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-dapper-your-data-day/"}, titles: {"en": "National Dapper Your Data Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-sour-candy-day/"}, titles: {"en": "National Sour Candy Day"}, first: {era: 1, y: 2015}},
 
 
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}},
