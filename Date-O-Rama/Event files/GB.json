@@ -134,5 +134,6 @@
         {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/emmeline-pankhurst-day/"}, titles: {"en": "Emmeline Pankhurst Day"}},
         {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-snowdon-race/"}, titles: {"en": "International Snowdon Race"}, first: {era: 1, y: 1976}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"},
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-flitch-day/"}, titles: {"en": "National Flitch Day"}, first: {era: 1, y: 1104}},
+        {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/spoonerism-day/"}, titles: {"en": "Spoonerism Day"}},
     ]
 }

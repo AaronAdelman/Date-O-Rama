@@ -266,5 +266,7 @@
        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-natalie-day/"}, titles: {"en": "National Natalie Day"}},
        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-eduardo-day/"}, titles: {"en": "National Eduardo Day"}},
        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-edward-day/"}, titles: {"en": "National Edward Day"}},
+       {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/national-sophia-day/"}, titles: {"en": "National Sophia Day"}},
+       {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/national-thomas-day/"}, titles: {"en": "National Thomas Day"}},
     ]
 }
