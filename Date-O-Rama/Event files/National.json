@@ -1300,6 +1300,11 @@
         {type: "1D", start: {mon: 7, d: 24}, urls: {"en": "https://nationaltoday.com/national-drive-thru-day/"}, titles: {"en": "National Drive-Thru Day"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 7, d: 24}, urls: {"en": "https://nationaltoday.com/national-tell-an-old-joke-day/"}, titles: {"en": "National Tell An Old Joke Day"}},
         {type: "nD", start: {mon: 7, d: 24}, end: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/national-fishing-month/"}, titles: {"en": "National Fishing Month"}, emoji: "🎣"},
+        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/carousel-day/"}, titles: {"en": "Carousel Day"}, notes: {"en": "National Merry-Go-Round Day"}, first: {era: 1, y: 2014}, emoji: "🎠"},
+        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-hire-a-veteran-day/"}, titles: {"en": "National Hire a Veteran Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-hot-fudge-sundae-day/"}, titles: {"en": "National Hot Fudge Sundae Day"}},
+        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-thread-needle-day/"}, titles: {"en": "National Thread the Needle Day"}},
+        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-wine-and-cheese-day/"}, titles: {"en": "National Wine and Cheese Day"}},
 
 
         {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/legal-drinking-age-day-july-21/"}, titles: {"en": "Legal Drinking Age Day"}},
