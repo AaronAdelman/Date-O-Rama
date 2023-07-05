@@ -133,6 +133,6 @@
         {type: "nD", start: {mon: 7, d: 10}, end: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/conwy-river-festival/"}, titles: {"en": "Conwy River Festival"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/emmeline-pankhurst-day/"}, titles: {"en": "Emmeline Pankhurst Day"}},
         {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-snowdon-race/"}, titles: {"en": "International Snowdon Race"}, first: {era: 1, y: 1976}, emoji: "🏴󠁧󠁢󠁷󠁬󠁳󠁿"},
-
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-flitch-day/"}, titles: {"en": "National Flitch Day"}, first: {era: 1, y: 1104}},
     ]
 }

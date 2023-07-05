@@ -436,6 +436,8 @@
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://nationaltoday.com/national-ptsd-awareness-day/"}, titles: {"en": "National PTSD Awareness Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/collector-car-appreciation-day/"}, titles: {"en": "Collector Car Appreciation Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 7, d: 17}, urls: {"en": "https://nationaltoday.com/wrong-way-corrigan-day/"}, titles: {"en": "Wrong Way Corrigan Day"}, first: {era: 1, y: 1987}},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/flight-attendant-safety-professionals-day/"}, titles: {"en": "Flight Attendant Safety Professionals’ Day"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-urban-beekeeping-day/"}, titles: {"en": "National Urban Beekeeping Day"}, emoji: "🐝", first: {era: 1, y: 2020}},
 
         
         {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/clean-beaches-week/"}, titles: {"en": "Clean Beaches Week"}, first: {era: 1, y: 2003}},

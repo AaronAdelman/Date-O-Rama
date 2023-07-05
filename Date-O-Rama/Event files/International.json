@@ -1479,5 +1479,8 @@
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/insurance-nerd-day/"}, titles: {"en": "Insurance Nerd Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/perfect-family-day/"}, titles: {"en": "Perfect Family Day"}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/world-listening-day/"}, titles: {"en": "World Listening Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/international-retainer-day/"}, titles: {"en": "International Retainer Day"}},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/stick-tongue-day/"}, titles: {"en": "Stick Out Your Tongue Day"}, emoji: "😛"},
+        {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/take-your-poet-to-work-day/"}, titles: {"en": "Take Your Poet to Work Day"}, first: {era: 1, y: 2013}},
     ]
 }

@@ -1279,6 +1279,9 @@
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-caviar-day/"}, titles: {"en": "National Caviar Day"}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-dapper-your-data-day/"}, titles: {"en": "National Dapper Your Data Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-sour-candy-day/"}, titles: {"en": "National Sour Candy Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-football-day/"}, titles: {"en": "National Football Day"}, emoji: "🏈"},
+        {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-hot-dog-day/"}, titles: {"en": "National Hot Dog Day"}, first: {era: 1, y: 1971}, emoji: "🌭"},
+        {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-words-with-friends-day/"}, titles: {"en": "National Words with Friends Day"}, first: {era: 1, y: 2021}},
 
 
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}},

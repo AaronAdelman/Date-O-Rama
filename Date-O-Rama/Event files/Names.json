@@ -261,5 +261,6 @@
        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-emma-day/"}, titles: {"en": "National Emma Day"}},
        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-monica-day/"}, titles: {"en": "National Monica Day"}},
        {type: "1D", start: {mon: 7, d: 18}, urls: {"en": "https://nationaltoday.com/national-peyton-day/"}, titles: {"en": "National Peyton Day"}},
+       {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-barbara-day/"}, titles: {"en": "National Barbara Day"}},
     ]
 }
