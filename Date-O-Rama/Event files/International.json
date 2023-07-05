@@ -1482,5 +1482,6 @@
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/international-retainer-day/"}, titles: {"en": "International Retainer Day"}},
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/stick-tongue-day/"}, titles: {"en": "Stick Out Your Tongue Day"}, emoji: "😛"},
         {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/take-your-poet-to-work-day/"}, titles: {"en": "Take Your Poet to Work Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/world-jump-day/"}, titles: {"en": "World Jump Day"}, first: {era: 1, y: 2006}},
     ]
 }

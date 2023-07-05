@@ -31,5 +31,6 @@
         {inherits: "Children’s Day", type: "1D", start: {mon: 9, d: 10}},
         {type: "nD", start: {mon: 10, d: 4}, end: {mon: 10, d: 7}, titles: {"en": "Morazánica Week", "es": "Semana Morazánica"}, urls: {"en": "https://nationaltoday.com/semana-morazanica-in-honduras/"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/lempira-day/"}, titles: {"en": "Lempira Day"}},
     ]
 }

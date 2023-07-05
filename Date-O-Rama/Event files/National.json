@@ -1282,6 +1282,10 @@
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-football-day/"}, titles: {"en": "National Football Day"}, emoji: "🏈"},
         {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-hot-dog-day/"}, titles: {"en": "National Hot Dog Day"}, first: {era: 1, y: 1971}, emoji: "🌭"},
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/national-words-with-friends-day/"}, titles: {"en": "National Words with Friends Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-fortune-cookie-day/"}, titles: {"en": "National Fortune Cookie Day"}, emoji: "🥠"},
+        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-lollipop-day/"}, titles: {"en": "National Lollipop Day"}, emoji: "🍭"},
+       {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-moon-day/"}, titles: {"en": "National Moon Day"}, emoji: "☽", first: {era: 1, y: 1969}},
+        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-ugly-truck-contest-day/"}, titles: {"en": "National Ugly Truck Contest Day"}, emoji: "🛻"},
 
 
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}},
