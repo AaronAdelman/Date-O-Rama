@@ -1427,7 +1427,7 @@
         {type: "1D", start: {mon: 5, d: 15, thruD: 21, wkd: [1]}, urls: {"en": "https://nationaltoday.com/emergency-medical-services-day/"}, titles: {"en": "Emergency Medical Services Day"}, emoji: "🚑"},
         {type: "1D", start: {mon: 5, d: 27}, urls: {"en": "https://nationaltoday.com/old-time-player-piano-day/"}, titles: {"en": "Old Time Player Piano Day"}, emoji: "🎹", first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"en": "https://nationaltoday.com/loomis-day/"}, titles: {"en": "Loomis Day"}},
-
+        
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/beef-tallow-day/"}, titles: {"en": "Beef Tallow Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/fools-paradise-day/"}, titles: {"en": "Fool’s Paradise Day"}},
         {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/international-rock-day/"}, titles: {"en": "International Rock Day"}},
@@ -1494,5 +1494,6 @@
         {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/peanut-butter-and-chocolate-day/"}, titles: {"en": "Peanut Butter and Chocolate Day"}},
         {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/sprinkle-day/"}, titles: {"en": "Sprinkle Day"}},
         {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/world-sjogrens-day/"}, titles: {"en": "World Sjogren’s Day"}},
+        {type: "1D", start: {mon: 7, d: 24}, urls: {"en": "https://nationaltoday.com/international-self-care-day/"}, titles: {"en": "International Self-Care Day"}, first: {era: 1, y: 2011}},
     ]
 }
