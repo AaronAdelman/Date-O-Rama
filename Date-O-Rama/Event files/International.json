@@ -1483,5 +1483,8 @@
         {type: "1D", start: {mon: 7, d: 19}, urls: {"en": "https://nationaltoday.com/stick-tongue-day/"}, titles: {"en": "Stick Out Your Tongue Day"}, emoji: "😛"},
         {type: "1D", start: {mon: 7, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/take-your-poet-to-work-day/"}, titles: {"en": "Take Your Poet to Work Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/world-jump-day/"}, titles: {"en": "World Jump Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/invite-an-alien-to-live-with-you-day/"}, titles: {"en": "Invite an Alien to Live with You Day"}},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/no-pet-store-puppies-day/"}, titles: {"en": "No Pet Store Puppies Day"}, emoji: "🐶"},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/take-a-monkey-to-lunch-day/"}, titles: {"en": "Take a Monkey to Lunch Day"}, first: {era: 1, y: 2000}, emoji: "🐒"},
     ]
 }

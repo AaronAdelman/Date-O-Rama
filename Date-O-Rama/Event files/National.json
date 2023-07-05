@@ -1286,8 +1286,12 @@
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-lollipop-day/"}, titles: {"en": "National Lollipop Day"}, emoji: "🍭"},
        {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-moon-day/"}, titles: {"en": "National Moon Day"}, emoji: "☽", first: {era: 1, y: 1969}},
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/national-ugly-truck-contest-day/"}, titles: {"en": "National Ugly Truck Contest Day"}, emoji: "🛻"},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-someone-day/"}, titles: {"en": "National Be Someone Day"}},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-craft-for-your-local-shelters-day/"}, titles: {"en": "National Craft for your Local Shelters Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-junk-food-day/"}, titles: {"en": "National Junk Food Day"}},
 
 
+        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/legal-drinking-age-day-july-21/"}, titles: {"en": "Legal Drinking Age Day"}},
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/celebration-of-the-horse-day/"}, titles: {"en": "Celebration of the Horse Day"}, inherits: "*Horse*"},
         {type: "1D", start: {mon: 7, d: 12}, urls: {"en": "https://nationaltoday.com/night-of-nights/"}, titles: {"en": "Night of Nights"}, first: {era: 1, y: 1999}},
