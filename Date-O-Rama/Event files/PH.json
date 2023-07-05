@@ -92,5 +92,6 @@
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://nationaltoday.com/philippine-spanish-friendship-day/"}, titles: {"en": "Philippine-Spanish Friendship Day"}, emoji: "🇵🇭🇪🇸"},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, titles: {"en": "Manila Day"}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/apolinario-mabini-day/"}, titles: {"en": "Apolinario Mabini Day"}, inherits: "*BDay*", first: {era: 1, y: 2007}},
     ]
 }

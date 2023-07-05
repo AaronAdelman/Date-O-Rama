@@ -1291,6 +1291,9 @@
         {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-junk-food-day/"}, titles: {"en": "National Junk Food Day"}},
         {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/national-hammock-day/"}, titles: {"en": "National Hammock Day"}},
         {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/national-penuche-fudge-day/"}, titles: {"en": "National Penuche Fudge Day"}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/national-gorgeous-grandma-day/"}, titles: {"en": "National Gorgeous Grandma Day"}, emoji: "👵", first: {era: 1, y: 1984}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/national-vanilla-ice-cream-day/"}, titles: {"en": "National Vanilla Ice Cream Day"}, emoji: "🍨", first: {era: 1, y: 2000, first: {era: 1, y: 2021}}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/national-women-touched-by-addiction-day/"}, titles: {"en": "National Women Touched By Addiction Day"}},
 
 
         {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/legal-drinking-age-day-july-21/"}, titles: {"en": "Legal Drinking Age Day"}},

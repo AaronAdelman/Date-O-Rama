@@ -1490,5 +1490,9 @@
         {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/mango-day/"}, titles: {"en": "Mango Day"}, emoji: "🥭"},
         {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/toss-away-the-could-haves-and-should-haves-day/"}, titles: {"en": "Toss Away the “Could Haves” and “Should Haves” Day"}},
         {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/world-brain-day/"}, titles: {"en": "World Brain Day"}, emoji: "🧠"},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/international-yada-yada-yada-day/"}, titles: {"en": "International Yada Yada Yada Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/peanut-butter-and-chocolate-day/"}, titles: {"en": "Peanut Butter and Chocolate Day"}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/sprinkle-day/"}, titles: {"en": "Sprinkle Day"}},
+        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/world-sjogrens-day/"}, titles: {"en": "World Sjogren’s Day"}},
     ]
 }
