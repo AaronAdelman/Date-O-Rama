@@ -125,7 +125,7 @@
         {titles: {"en": "Feast of St. Birgitta"}, type: "1D", start: {mon: 7, d: 23}},
         {titles: {"en": "Feast of St. Sharbel Makhlūf"}, type: "1D", start: {mon: 7, d: 24}},
         {inherits: "Feast of St. James", type: "1D", start: {mon: 7, d: 25}},
-        {titles: {"en": "Feast of Saints Joachim and Anne"}, type: "1D", start: {mon: 7, d: 26}},
+        {inherits: "Feast of Saints Joachim and Anne", type: "1D", start: {mon: 7, d: 26}},
         {titles: {"en": "Feast of Saints Martha, Mary and Lazarus"}, type: "1D", start: {mon: 7, d: 29}},
         {titles: {"en": "Feast of St. Peter Chrysologus"}, type: "1D", start: {mon: 7, d: 30}},
         {titles: {"en": "Feast of St. Ignatius of Loyola"}, type: "1D", start: {mon: 7, d: 31}},

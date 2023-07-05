@@ -271,5 +271,6 @@
        {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/national-russell-day/"}, titles: {"en": "National Russell Day"}},
        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-clay-day/"}, titles: {"en": "National Clay Day"}},
        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-houston-day/"}, titles: {"en": "National Houston Day"}},
+       {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-saint-day/"}, titles: {"en": "National Saint Day"}},
     ]
 }

@@ -11,7 +11,8 @@
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {type: "1D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
         {type: "1D", start: {mon: 7, d: 25}, titles: {"en": "Day before the Commemoration of the Assault of the Moncada garrison", "es": "Conmemoración del asalto a Moncada"}},
-        {type: "1D", start: {mon: 7, d: 26}, titles: {"en": "Commemoration of the Assault of the Moncada garrison", "es": "Día de la Rebeldía Nacional"}},
+        {type: "1D", start: {mon: 7, d: 26}, titles: {"en": "National Rebellion Day", "es": "Día de la Rebeldía Nacional"}, notes: {"en": "Commemoration of the Assault of the Moncada Garrison"}, urls: {"en": "https://nationaltoday.com/national-rebellion-day-cuba/"}},
+
         {type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Day after the Commemoration of the Assault of the Moncada garrison", "es": "Conmemoración del asalto a Moncada"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 10}, first: {era: 1, y: 1868}, urls: {"en": "https://nationaltoday.com/cuba-independence-day/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},

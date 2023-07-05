@@ -1305,6 +1305,12 @@
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-hot-fudge-sundae-day/"}, titles: {"en": "National Hot Fudge Sundae Day"}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-thread-needle-day/"}, titles: {"en": "National Thread the Needle Day"}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-wine-and-cheese-day/"}, titles: {"en": "National Wine and Cheese Day"}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-all-or-nothing-day/"}, titles: {"en": "National All or Nothing Day"}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-aunt-and-uncle-day/"}, titles: {"en": "National Aunt and Uncle Day"}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-bagelfest-day/"}, titles: {"en": "National Bagelfest Day"}, emoji: "🥯", first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-coffee-milkshake-day/"}, titles: {"en": "National Coffee Milkshake Day"}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-disability-independence-day/"}, titles: {"en": "National Disability Independence Day"}},
+        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-dog-photography-day/"}, titles: {"en": "National Dog Photography Day"}, emoji: "🐩", first: {era: 1, y: 2018}},
 
 
         {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/legal-drinking-age-day-july-21/"}, titles: {"en": "Legal Drinking Age Day"}},
