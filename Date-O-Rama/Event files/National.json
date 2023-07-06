@@ -1329,6 +1329,10 @@
         {type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/national-chicken-wing-day/"}, titles: {"en": "National Chicken Wing Day"}},
         {type: "1D", start: {mon: 7, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-get-gnarly-day/"}, titles: {"en": "National Get Gnarly Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/national-lasagna-day/"}, titles: {"en": "National Lasagna Day"}},
+        {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-cheesecake-day/"}, titles: {"en": "National Cheesecake Day"}, first: {era: 1, y: 1985}},
+        {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-father-in-law-day/"}, titles: {"en": "National Father-in-Law Day"}},
+        {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-support-public-education-day/"}, titles: {"en": "National Support Public Education Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-whistleblower-day/"}, titles: {"en": "National Whistleblower Day"}, first: {era: 1, y: 2015}},
 
 
         {type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/buffalo-soldiers-day/"}, titles: {"en": "Buffalo Soldiers Day"}},
