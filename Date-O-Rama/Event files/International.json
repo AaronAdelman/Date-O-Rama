@@ -1510,5 +1510,10 @@
         {type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/rain-day/"}, titles: {"en": "Rain Day"}, emoji: "🌧️"},
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/paperback-book-day/"}, titles: {"en": "Paperback Book Day"}},
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/share-a-hug-day/"}, titles: {"en": "Share a Hug Day"}, first: {era: 1, y: 2018}},
-        {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/world-snorkeling-day/"}, titles: {"en": "World Snorkeling Day"}},    ]
+        {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/world-snorkeling-day/"}, titles: {"en": "World Snorkeling Day"}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/harry-potters-birthday/"}, titles: {"en": "Harry Potter’s Birthday"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/international-lifeguard-appreciation-day/"}, titles: {"en": "International Lifeguard Appreciation Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/shredded-wheat-day/"}, titles: {"en": "Shredded Wheat Day"}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/uncommon-instrument-awareness-day/"}, titles: {"en": "Uncommon Instrument Awareness Day"}},
+    ]
 }

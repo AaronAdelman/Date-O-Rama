@@ -1333,6 +1333,11 @@
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-father-in-law-day/"}, titles: {"en": "National Father-in-Law Day"}},
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-support-public-education-day/"}, titles: {"en": "National Support Public Education Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-whistleblower-day/"}, titles: {"en": "National Whistleblower Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/national-avocado-day/"}, titles: {"en": "National Avocado Day"}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/national-jump-for-jelly-beans-day/"}, titles: {"en": "National Jump for Jelly Beans Day"}},
+        {type: "1D", start: {mon: 7, d: 31}, inherits: "National Mutt Day"},
+        {type: "1D", start: {mon: 12, d: 2}, inherits: "National Mutt Day"},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/national-raspberry-cake-day/"}, titles: {"en": "National Raspberry Cake Day"}},
 
 
         {type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/buffalo-soldiers-day/"}, titles: {"en": "Buffalo Soldiers Day"}},
