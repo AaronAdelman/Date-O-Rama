@@ -272,5 +272,8 @@
        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-clay-day/"}, titles: {"en": "National Clay Day"}},
        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-houston-day/"}, titles: {"en": "National Houston Day"}},
        {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-saint-day/"}, titles: {"en": "National Saint Day"}},
+       {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/national-carson-day-2/"}, titles: {"en": "National Carson Day"}},
+       {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/national-nancy-day/"}, titles: {"en": "National Nancy Day"}},
+      {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/national-sheila-day/"}, titles: {"en": "National Sheila Day"}},
     ]
 }

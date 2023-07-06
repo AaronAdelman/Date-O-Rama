@@ -137,5 +137,6 @@
         {type: "1D", start: {mon: 7, d: 22}, urls: {"en": "https://nationaltoday.com/spoonerism-day/"}, titles: {"en": "Spoonerism Day"}},
         {type: "nD", start: {mon: 7, d: 24}, end: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-marine-week/"}, titles: {"en": "National Marine Week"}},
         {type: "1D", start: {mon: 7, d: 24}, urls: {"en": "https://nationaltoday.com/samaritans-awareness-day/"}, titles: {"en": "Samaritans Awareness Day"}, notes: {"en": "No association whatsoever with actual Samaritans."}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/bagpipe-appreciation-day/"}, titles: {"en": "Bagpipe Appreciation Day"}},
     ]
 }

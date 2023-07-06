@@ -1499,5 +1499,12 @@
         {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/aunties-day/"}, titles: {"en": "Auntie’s Day"}},
         {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/world-tofu-day/"}, titles: {"en": "World Tofu Day"}, first: {era: 1, y: 2014}},
         {type: "nD", start: {mon: 7, d: 26}, end: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/hepatitis-awareness-week/"}, titles: {"en": "Hepatitis Awareness Week"}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/chicken-finger-day/"}, titles: {"en": "Chicken Finger Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/cross-atlantic-communication-day/"}, titles: {"en": "Cross Atlantic Communication Day"}, first: {era: 1, y: 1866}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/gary-gygax-day/"}, titles: {"en": "Gary Gygax Day"}},
+        {type: "1D", start: {mon: 7, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/digital-adoption-professionals-day/"}, titles: {"en": "International Digital Adoption (DAP) Professionals Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/take-your-houseplant-for-a-walk-day/"}, titles: {"en": "Take Your Houseplant For A Walk Day"}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/take-your-pants-for-a-walk-day/"}, titles: {"en": "Take Your Pants for a Walk Day"}},
+        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/walk-on-stilts-day/"}, titles: {"en": "Walk On Stilts Day"}},
     ]
 }
