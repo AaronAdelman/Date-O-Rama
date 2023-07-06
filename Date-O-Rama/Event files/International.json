@@ -1503,8 +1503,10 @@
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/cross-atlantic-communication-day/"}, titles: {"en": "Cross Atlantic Communication Day"}, first: {era: 1, y: 1866}},
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/gary-gygax-day/"}, titles: {"en": "Gary Gygax Day"}},
         {type: "1D", start: {mon: 7, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/digital-adoption-professionals-day/"}, titles: {"en": "International Digital Adoption (DAP) Professionals Day"}, first: {era: 1, y: 2022}},
-        {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/take-your-houseplant-for-a-walk-day/"}, titles: {"en": "Take Your Houseplant For A Walk Day"}},
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/take-your-pants-for-a-walk-day/"}, titles: {"en": "Take Your Pants for a Walk Day"}},
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/walk-on-stilts-day/"}, titles: {"en": "Walk On Stilts Day"}},
+        {type: "1D", start: {mon: 7, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/system-administrator-appreciation-day/"}, titles: {"en": "System Administrator Appreciation Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 7, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/paddle-for-perthes-disease-awareness-day/"}, titles: {"en": "Paddle for Perthes Disease Awareness Day"}, first: {era: 1, y: 2010}, emoji: "🛶"},
+        {type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/rain-day/"}, titles: {"en": "Rain Day"}, emoji: "🌧️"},
     ]
 }

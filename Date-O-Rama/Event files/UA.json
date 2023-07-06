@@ -21,6 +21,6 @@
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Day of the Defender"}, urls: {"en": "https://nationaltoday.com/day-of-the-defender/"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 1, d: 25}, inherits: "Tatiana Day"},
         {type: "1D", start: {mon: 6, d: 28}, urls: {"en": "https://nationaltoday.com/ukraine-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 1996}},
-
+        {type: "1D", start: {mon: 7, d: 28}, inherits: "Baptism Day of Kyivan Rus"},
   ]
 }

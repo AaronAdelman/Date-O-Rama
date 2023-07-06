@@ -32,5 +32,6 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 10, d: 14}, first: {era: 1, y: 1996}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 3}, inherits: "Air Force Day"},
+        {type: "1D", start: {mon: 7, d: 28}, inherits: "Baptism Day of Kyivan Rus"},
     ]
 }
