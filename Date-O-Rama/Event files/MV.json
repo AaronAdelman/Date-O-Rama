@@ -6,7 +6,7 @@
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/maldives-independence-day/"}, first: {era: 1, y: 1965}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/maldives-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/07/maldives-independence-day.html"}, first: {era: 1, y: 1965}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 10}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/maldives-victory-day/"}, inherits: "Victory Day"},

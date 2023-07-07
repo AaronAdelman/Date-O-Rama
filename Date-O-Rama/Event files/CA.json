@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
-        {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "Canada Day", "fr": "Fête du Canada"}, first: {era: 1, y: 1982}, urls: {"en": "https://www.daysoftheyear.com/days/canada-day/"}},
+        {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "Canada Day", "he": "יום קנדה", "fr": "Fête du Canada"}, first: {era: 1, y: 1982}, urls: {"en": "https://www.daysoftheyear.com/days/canada-day/", "he": "https://www.daysoftheyear.co.il/2017/07/1.html"}},
         {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Labour_Day_(Canada)"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         

@@ -10,7 +10,7 @@
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/belarus-independence-day/"}, first: {era: 1, y: 1991}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 3}, urls: {"en": "https://nationaltoday.com/belarus-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/07/belarus-independence-day.html"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "October Revolution Day", "be": "Дзень Кастрычніцкай рэвалюцыі", "ru": "День Великой Октябрьской социалистической революции"}, urls: {"en": "https://en.wikipedia.org/wiki/October_Revolution_Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         

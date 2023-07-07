@@ -23,7 +23,7 @@
         {type: "1D", start: {mon: 6, d: 19, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/national-flag-day"}, titles: {"en": "Flag Day (bridge day)"}},
         {type: "1D", start: {mon: 6, d: 20}, urls: {"en": "https://nationaltoday.com/national-flag-day-in-argentina/"}, inherits: "Flag Day"},
         {type: "1D", start: {mon: 6, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/day-of-the-state-worker"}, titles: {"en": "Day of the State Worker"}, first: {era: 1, y: 2013}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 9}, first: {era: 1, y: 1816}, urls: {"en": "https://nationaltoday.com/argentine-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 9}, first: {era: 1, y: 1816}, urls: {"en": "https://nationaltoday.com/argentine-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/07/9.html"}},
         {type: "1D", start: {mon: 8, d: 15, "thruD": 21, wkd: [2]}, titles: {"en": "General José de San Martín Memorial Day", "es": "Paso a la Inmortalidad del General José de San Martín"}, inherits: "*Death Anniv*", urls: {"en": "https://nationaltoday.com/san-martin-day/"}, notes: {"en": "San Martin’s Day"}},
         {inherits: "Public Holiday", type: "1D", start: {mon: 10, d: 12, y: 2020}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},
         {inherits: "Public Holiday", type: "1D", start: {mon: 10, d: 8, y: 2021}, urls: {"en": "https://www.officeholidays.com/holidays/argentina/day-of-respect-for-cultural-diversity"}},

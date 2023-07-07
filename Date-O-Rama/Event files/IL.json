@@ -22,5 +22,7 @@
         {titles: {"he": "יום ההכרזה על הקמת מדינת ישראל", "en": "Day of the Declaration of the Establishment of the State of Israel"}, type: "1D", start: {mon: 5, d: 14}, urls: {"he": "https://www.daysoftheyear.co.il/2016/05/14.html"}, first: {era: 1, y: 1948}},
         {titles: {"he": "יום הולדת לצה״ל", "en": "Birthday of the IDF"}, type: "1D", start: {mon: 5, d: 26}, urls: {"he": "https://www.daysoftheyear.co.il/2018/05/26.html"}, first: {era: 1, y: 1948}},
         {titles: {"he": "הטבח בנמל התעופה לוד", "en": "Anniversary of the Lod Airport Massacre"}, type: "1D", start: {mon: 5, d: 30}, urls: {"he": "https://www.daysoftheyear.co.il/2018/05/30.html"}, first: {era: 1, y: 1972}},
+        {titles: {"he": "יום הולדת לויקיפדיה העברית", "en": "Hebrew Wikipedia Day"}, type: "1D", start: {mon: 7, d: 8}, urls: {"he": "https://www.daysoftheyear.co.il/2018/07/8.html"}, first: {era: 1, y: 2003}, emoji: "🌐"},
+
     ]
 }

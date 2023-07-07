@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.37, "blue": 0.72},
     eventSpecifications: [
-        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/solomon-islands-independence-day/"}, first: {era: 1, y: 1978}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://nationaltoday.com/solomon-islands-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/07/solomon-islands-independence-day.html"}, first: {era: 1, y: 1978}},
         {inherits: "Children’s Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
         {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Guadalcanal Province Day"}, urls: {"en": "https://nationaltoday.com/guadalcanal-province-day/"}},
         {type: "1D", start: {mon: 8, d: 3}, titles: {"en": "Makira-Ulawa Province Day"}, urls: {"en": "https://nationaltoday.com/makira-ulawa-province-day/"}},

@@ -72,7 +72,7 @@
         {template: "Autumnal Equinox", titles: {"en": "Autumnal Equinox", "he": "שוויון סתווי"}, type: "pt", start: {"equinoxOrSolstice": "Sep"}},
         {template: "Bank Holiday", type: "1D", start: {mon: 7, d: 1}, titles: {"en": "Bank Holiday", "es": "Día del Empleado Bancario"}, emoji: "🏦"},
         {template: "Baptism Day of Kyivan Rus", type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/baptism-day-of-kyivan-rus/"}, titles: {"en": "Baptism Day of Kyivan Rus"}},
-        {template: "Bastille Day", type: "1D", start: {d: 14, mon: 7}, titles: {"en": "Bastille Day", "he": "יום הבסטיליה", "fr": "Fête nationale française"}, urls: {"en": "https://nationaltoday.com/bastille-day/"}},
+        {template: "Bastille Day", type: "1D", start: {d: 14, mon: 7}, titles: {"en": "Bastille Day", "he": "יום הבסטיליה", "fr": "Fête nationale française"}, urls: {"en": "https://nationaltoday.com/bastille-day/", "he": "https://www.daysoftheyear.co.il/2019/07/bastille-day.html"}},
         {template: "Beheading of St. John the Baptist", titles: {"en": "Beheading of St. John the Baptist"}, type: "1D", start: {mon: 8, d: 29}},
         {template: "Beltane", titles: {"en": "Beltane", "he": "בלטיין"}, notes: {"en": "May Day", "fi": "Vappu", "sv": "Första maj"}, type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://nationaltoday.com/beltane/"}},
         {template: "Black Friday", type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, titles: {"en": "Black Friday", "he": "בלאק פריידיי"}, emoji: "🛒", urls: {"en": "https://en.wikipedia.org/wiki/Black_Friday_(shopping)", "he": "https://he.wikipedia.org/wiki/%D7%91%D7%9C%D7%90%D7%A7_%D7%A4%D7%A8%D7%99%D7%99%D7%93%D7%99%D7%99"}},
