@@ -443,12 +443,12 @@
         
         {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/clean-beaches-week/"}, titles: {"en": "Clean Beaches Week"}, first: {era: 1, y: 2003}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-bison-month/"}, titles: {"en": "National Bison Month"}, first: {era: 1, y: 2016}},
-        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-blueberry-month/"}, titles: {"en": "National Blueberry Month"}},
-        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-blueberry-day/"}, titles: {"en": "National Blueberry Day"}},
-        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-ice-cream-month/"}, titles: {"en": "National Ice Cream Month"}, first: {era: 1, y: 1984}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-blueberry-month/"}, titles: {"en": "National Blueberry Month"}, emoji: "🫐"},
+        {type: "1D", start: {mon: 7, d: 8}, urls: {"en": "https://nationaltoday.com/national-blueberry-day/"}, titles: {"en": "National Blueberry Day"}, emoji: "🫐"},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-ice-cream-month/"}, titles: {"en": "National Ice Cream Month"}, first: {era: 1, y: 1984}, emoji: "🍦"},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-minority-mental-health-awareness-month/"}, titles: {"en": "National Minority Mental Health Awareness Month"}},
-        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-watermelon-month/"}, titles: {"en": "National Watermelon Month"}, first: {era: 1, y: 2007}},
-        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/pick-blueberries-day/"}, titles: {"en": "Pick Blueberries Day"}, first: {era: 1, y: 2003}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/national-watermelon-month/"}, titles: {"en": "National Watermelon Month"}, first: {era: 1, y: 2007}, emoji: "🍉"},
+        {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/pick-blueberries-day/"}, titles: {"en": "Pick Blueberries Day"}, first: {era: 1, y: 2003}, emoji: "🫐"},
                 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
