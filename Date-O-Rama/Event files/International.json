@@ -1393,6 +1393,7 @@
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/uv-safety-awareness-month/"}, titles: {"en": "UV Safety Awareness Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/wild-about-wildlife-month/"}, titles: {"en": "Wild About Wildlife Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/world-watercolor-month/"}, titles: {"en": "World Watercolor Month"}, first: {era: 1, y: 2016}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://www.plasticfreejuly.org/"}, titles: {"en": "Plastic Free July"}},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/freedom-from-fear-of-speaking-day/"}, titles: {"en": "Freedom From Fear of Speaking Day"}},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/i-forgot-day/"}, titles: {"en": "I Forgot Day"}},
         {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/special-recreation-for-the-disabled-day/"}, titles: {"en": "Special Recreation for the Disabled Day"}},
