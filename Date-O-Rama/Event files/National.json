@@ -34,7 +34,7 @@
         {type: "1D", start: {d: 12, mon: 1}, titles: {"en": "National Marzipan Day", "he": "יום המרציפן הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-day/", "he": "https://www.daysoftheyear.co.il/2018/01/12.html"}},
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "National Rubber Ducky Day"}, notes: {"en": "National Rubber Duckie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/rubber-duckie-day/"}, emoji: "🐤"},
         {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "National Sticker Day", "he": "יום המדבקה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/sticker-day/", "he": "https://www.daysoftheyear.co.il/2019/01/sticker-day.html"}},
-        {type: "1D", start: {d: 14, mon: 1}, titles: {"en": "National Dress Up Your Pet Day", "he": "יום הלבש את חיית המחמד שלך הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/dress-up-your-pet-day/", "he": "https://www.daysoftheyear.co.il/2018/01/14.html"}, first: {era: 1, y: 2009}, emoji: "🐈‍⬛"},
+        {type: "1D", start: {d: 14, mon: 1}, titles: {"en": "National Dress Up Your Pet Day", "he": "יום ״הלבש את חיית המחמד שלך״ הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/dress-up-your-pet-day/", "he": "https://www.daysoftheyear.co.il/2018/01/14.html"}, first: {era: 1, y: 2009}, emoji: "🐈‍⬛"},
         {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Bagel Day"}, urls: {"en": "https://www.daysoftheyear.com/days/bagel-day/"}, first: {era: 1, y: 2000}, emoji: "🥯"},
         {type: "1D", start: {d: 15, mon: 1}, titles: {"en": "National Strawberry Ice Cream Day", "he": "יום גלידת התות הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/strawberry-ice-cream-day/", "he": "https://www.daysoftheyear.co.il/2020/01/strawberry-icecream-day.html"}, emoji: "🍨", first: {era: 1, y: 1932}},
         {type: "1D", start: {d: 16, mon: 1}, titles: {"en": "National Fig Newton Day"}, urls: {"en": "https://nationaldaycalendar.com/national-fig-newton-day-january-16/"}},
@@ -1416,6 +1416,6 @@
         {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/missouri-compromise-day/"}, titles: {"en": "Missouri Compromise Day"}, first: {era: 1, y: 1820}},
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/benjamin-harrison-day/"}, titles: {"en": "Benjamin Harrison Day"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/alamo-day/"}, titles: {"en": "Alamo Day"}, first: {era: 1, y: 1836}},
-
+        {type: "1D", start: {d: 9, mon: 2}, inherits: "National Pizza Day", notes: {"en": "Pizza Pie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-day/", "he": "https://www.daysoftheyear.co.il/2017/02/9.html"}, first: {era: 1, y: 2000}},
     ]
 }
