@@ -22,7 +22,6 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 1, wkd: [6], wkdRecurrence: 1}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 12, d: 26}, inherits: "Junkanoo", first: {era: 1, y: 1708}},
         {type: "1D", start: {mon: 1, d: 1}, inherits: "Junkanoo", first: {era: 1, y: 1709}},
    ]

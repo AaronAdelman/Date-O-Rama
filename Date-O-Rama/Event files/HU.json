@@ -16,7 +16,6 @@
         {inherits: "Independence Day", type: "1D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], wkdRecurrence: -1, mon: 6}, first: {era: 1, y: 1991}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 4, d: 4}, first: {era: 1, y: 1945}},
         {type: "1D", start: {mon: 6, d: 4}, inherits: "National Unity Day"},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
   ]
 }

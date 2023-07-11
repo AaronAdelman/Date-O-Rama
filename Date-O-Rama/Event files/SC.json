@@ -7,7 +7,6 @@
     eventSpecifications: [
         {inherits: "Constitution Day", type: "1D", start: {mon: 6, d: 18}, urls: {"en": "https://nationaltoday.com/seychelles-constitution-day/"}, first: {era: 1, y: 1993}},
         {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 29}, urls: {"en": "https://nationaltoday.com/seychelles-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/06/Seychelles-Independence-Day.html"}, first: {era: 1, y: 1976}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2012}},
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
    ]
 }

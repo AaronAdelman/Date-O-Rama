@@ -25,7 +25,6 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 12, d: 15}, first: {era: 1, y: 2015}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 4, d: 30}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 7, d: 19}, inherits: "Friendship Day"},
         {type: "1D", start: {mon: 12, d: 27}, urls: {"en": "https://nationaltoday.com/anniversary-of-benazir-bhuttos-death/"}, titles: {"en": "Anniversary of Benazir Bhutto’s Death"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},

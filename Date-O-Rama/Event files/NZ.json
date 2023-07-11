@@ -13,7 +13,6 @@
         
         {titles: {"en": "National Disco Day"}, type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-disco-day/"}, emoji: "🪩"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 3, wkd: [1], wkdRecurrence: 1}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2018}},
         {titles: {"en": "Dominion Status Day"}, type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/dominion-status-day/"}, first: {era: 1, y: 1907}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 4}, inherits: "Labour Day", urls: {"en": "https://nationaltoday.com/new-zealand-labour-day/"}, first: {era: 1, y: 1890}},
         {type: "1D", start: {mon: 10, d: 29, thruMon: 11, thruD: 4, wkd: [2]}, urls: {"en": "https://nationaltoday.com/marlborough-anniversary-day/"}, titles: {"en": "Marlborough Anniversary Day"}, first: {era: 1, y: 1859}},

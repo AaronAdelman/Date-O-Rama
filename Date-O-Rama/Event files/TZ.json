@@ -11,7 +11,6 @@
         {type: "1D", start: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 9, mon: 12}, first: {era: 1, y: 1961}, urls: {"en": "https://nationaltoday.com/tanzania-independence-day/"}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day", first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Mwalimu Nyerere Day"}, urls: {"en": "https://nationaltoday.com/mwalimu-nyerere-day/"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 4, d: 7}, urls: {"en": "https://nationaltoday.com/karume-day/"}, titles: {"en": "Karume Day"}, first: {era: 1, y: 1972}},
     ]

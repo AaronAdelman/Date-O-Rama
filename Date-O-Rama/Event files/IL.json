@@ -14,7 +14,6 @@
         {titles: {"he": "מבצע דוגו", "en": "Operation Dogo"}, type: "1D", start: {mon: 1, d: 18}, emoji: "🧆", urls: {"he": "https://brave-together.com/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F", "en": "https://brave-together.com/en/2021/07/16/%D7%A1%D7%99%D7%A4%D7%95%D7%A8-%D7%94%D7%92%D7%91%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%93%D7%95%D7%93-%D7%93%D7%95%D7%92%D7%95-%D7%9C%D7%99%D7%99%D7%98%D7%A0%D7%A8%2F"}},
         {type: "1D", start: {mon: 1, d: 22}, inherits: "Engineer’s Day", titles: {"en": "Israeli Engineer’s Day", "he": "יום המהנדס/ת הישראלי/ת"}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 6, d: 30}, inherits: "Navy Day", urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Israel)"}},
         {type: "1D", start: {mon: 1, d: 11}, inherits: "Doctor’s Day", urls: {"he": "https://www.daysoftheyear.co.il/2018/01/11.html"}, first: {era: 1, y: 1912}, emoji: "👨‍⚕️👩‍⚕️"},
         {titles: {"he": "יום הולדת לטלוויזיה החינוכית", "en": "Channel 23 Day"}, type: "1D", start: {mon: 3, d: 24}, emoji: "📺", urls: {"he": "https://www.daysoftheyear.co.il/2018/03/24.html"}},

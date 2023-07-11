@@ -35,7 +35,6 @@
         
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 9, d: 20}},
-        {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
     ]
 }
