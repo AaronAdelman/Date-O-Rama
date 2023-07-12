@@ -43,7 +43,6 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
 
         var timeString:  String = ""
         if timeFormat != .none {
-//            timeString = self.timeString(now: now, localeIdentifier:  localeIdentifier, timeFormat:  timeFormat, locationData: locationData, transition: transition) // TODO:  EXPAND ON THIS!
             let solarHours: Double = dateComponents.solarHours ?? -1
             timeString = self.timeString(hours: solarHours, daytime: dateComponents.dayHalf == .day, valid: solarHours >= 0, localeIdentifier: localeIdentifier, timeFormat: timeFormat)
         }
@@ -123,8 +122,9 @@ public class ASASunsetTransitionCalendar:  ASACalendar, ASACalendarSupportingWee
 //            debugPrint(#file, #function, "deoptionalizedTransition > now")
             // now < deoptionalizedTransition
 //            let events = now.noon(timeZone: timeZone).solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
-            let dateToCalculateSolarEventsFor = now.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: now)))
-            let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
+//            let dateToCalculateSolarEventsFor = now.addingTimeInterval(TimeInterval(timeZone.secondsFromGMT(for: now)))
+            let dateToCalculateSolarEventsFor = now
+          let events = dateToCalculateSolarEventsFor.solarEvents(location: location, events: [self.dayStart], timeZone: timeZone)
 //            debugPrint(#file, #function, events)
 
             let rawDayHalfStart: Date?? = events[self.dayStart]

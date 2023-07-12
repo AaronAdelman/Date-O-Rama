@@ -66,7 +66,7 @@ extension Date {
     func solarEvents(location: CLLocation, events:  Array<ASASolarEvent>, timeZone:  TimeZone) -> Dictionary<ASASolarEvent, Date?> {
         Date.solarEventsGregorianCalendar.timeZone = timeZone
 
-        let now = JulianDay(self)
+        let now = JulianDay(self.dateToCalculateSolarEventsFor(timeZone: timeZone))
         let terra = Earth(julianDay: now, highPrecision: true)
         let coordinates = GeographicCoordinates(location)
         var result:  Dictionary<ASASolarEvent, Date?> = [:]
