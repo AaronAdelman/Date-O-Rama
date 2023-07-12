@@ -74,15 +74,6 @@ struct ASAEventCell:  View {
             .modifier(ASAScalable(lineLimit: LINE_LIMIT))
     }
     
-//    fileprivate func eventLocationView(_ location: String?) -> ModifiedContent<Text, ASAScalable> {
-//        let LINE_LIMIT = compact ? 3 : 2
-//
-//        return Text(location!)
-//            .font(.callout)
-//            .foregroundColor(.secondary)
-//            .modifier(ASAScalable(lineLimit: LINE_LIMIT))
-//    }
-    
     var body: some View {
         let eventSymbol = event.symbol
         let eventsViewShouldShowSecondaryDates = primaryClock.eventsShouldShowSecondaryDates
@@ -117,7 +108,7 @@ struct ASAEventCell:  View {
             if !eventIsTodayOnly || !event.isAllDay {
                 ASATimesSubcell(event: event, clock: self.primaryClock, isForClock: isForClock, isPrimaryClock:  true, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: false)
                 
-                if eventsViewShouldShowSecondaryDates {
+                if eventsViewShouldShowSecondaryDates && !event.isAllDay {
                     let (startDateString, endDateString) = ASAEventCalendar.secondaryClock.startAndEndDateStrings(event: event, eventIsTodayOnly: eventIsTodayOnly, location: location)
                     
                     ASATimesSubcell(event: event, clock: ASAEventCalendar.secondaryClock, isForClock: isForClock, isPrimaryClock:  false, eventIsTodayOnly: eventIsTodayOnly, startDateString: startDateString, endDateString: endDateString, isSecondary: true)
