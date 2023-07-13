@@ -65,5 +65,6 @@
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "1D", start: {mon: 5, d: 24}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, inherits: "National Pizza Day"},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://en.wikipedia.org/wiki/World_Rock_Day", "es": "https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock", "pt": "https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, titles: {"en": "World Rock Day", "es": "Día Mundial del Rock", "pt": "Dia Mundial do Rock"}, emoji: "🎸", first: {era: 1, y: 1990}},
     ]
 }
