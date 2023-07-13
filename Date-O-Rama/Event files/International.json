@@ -1368,7 +1368,7 @@
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/second-second-half-of-the-year-day/"}, titles: {"en": "Second Half of the Year Day"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/smart-irrigation-month/"}, titles: {"en": "Smart Irrigation Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/bank-account-bonus-month/"}, titles: {"en": "Bank Account Bonus Month"}},
-        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/beans-month/"}, titles: {"en": "Beans Month"}},
+        {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/beans-month/"}, titles: {"en": "Beans Month"}, emoji: "🫘"},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/bereaved-parents-awareness-month/"}, titles: {"en": "Bereaved Parents Awareness Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/bioterrorism-disaster-education-and-awareness-month/"}, titles: {"en": "Bioterrorism/Disaster Education and Awareness Month"}},
         {type: "1M", start: {mon: 7}, urls: {"en": "https://nationaltoday.com/cord-blood-awareness-month/"}, titles: {"en": "Cord Blood Awareness Month"}, inherits: "*MedicalAwareness*"},
