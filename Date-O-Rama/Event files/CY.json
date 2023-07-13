@@ -20,6 +20,7 @@
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {inherits: "Dormition of the Mother of God", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://nationaltoday.com/cyprus-independence-day/"}, first: {era: 1, y: 1979}},
+        {type: "1D", start: {mon: 10, d: 28}, inherits: "Ochi Day"},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaltoday.com/orthodox-christmas-day/"}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
