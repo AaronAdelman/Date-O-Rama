@@ -11,7 +11,7 @@
         {type: "1D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day", first: {era: 1, y: 2018}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1925}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
-        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/restoration-day-in-geneva/"}, titles: {"en": "Restoration Day"}, locations: {"en": "Geneva"}},
+        {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/restoration-day-in-geneva/"}, inherits: "Restoration Day", locations: {"en": "Geneva"}},
         {type: "1D", start: {mon: 4, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/nafelser-fahrt/"}, titles: {"en": "Näfelser Fahrt"}},
         {type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://nationaltoday.com/jura-independence-day/"}, titles: {"en": "Jura Independence Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 9, d: 28}, inherits: "National Coffee Day"},
