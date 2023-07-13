@@ -5,9 +5,20 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.17, "blue": 0.50},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/carnival-monday"}, inherits: "Carnival Monday"},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 4, d: 27}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/netherlands-kings-birthday"}, inherits: "King’s Birthday"},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-curacao/"}, inherits: "National Anthem and Flag Day", first: {era: 1, y: 1984}},
+        {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Curaçao Day", "he": "יום קוראסאו"}, urls: {"en": "https://nationaltoday.com/curacao-day/"}, first: {era: 1, y: 2010}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/curacao/christmas-holiday"}, titles: {"en": "Day after Christmas"}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Curaçao Day", "he": "יום קוראסאו"}, urls: {"en": "https://nationaltoday.com/curacao-day/"}, first: {era: 1, y: 2010}},
-        {type: "1D", start: {mon: 7, d: 2}, urls: {"en": "https://nationaltoday.com/national-anthem-and-flag-day-in-curacao/"}, inherits: "National Anthem and Flag Day", first: {era: 1, y: 1984}},
     ]
 }
