@@ -1,25 +1,26 @@
 {
     titles: {"*": "EG"},
     "//": "Egypt",
+    "TODO": "Muslim holidays, including End of Ramadan and Eid-el-Kibr Holiday",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
-        {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 25}, first: {era: 1, y: 2012}, titles: {"en": "Revolution Day 2011", "ar": "عيد ثورة 25 يناير", "he": "יום המהפכה"}},
-        {titles: {"en": "National Police Day", "ar": "عيد الشرطة"}, type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"}, first: {era: 1, y: 2009}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 25}, first: {era: 1, y: 2012}, titles: {"en": "Revolution Day January 25", "he": "יום המהפכה ינואר 25", "ar": "عيد ثورة 25 يناير"}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/revolution-day-january-25"}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 1, d: 26, thruD: 28, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/revolution-day-january-25"}, titles: {"en": "Revolution Day January 25 (in lieu)"}},
         {titles: {"en": "Sinai Liberation Day", "ar": "عيد تحرير سيناء"}, type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1989}},
-        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
-        {titles: {"en": "30 June Day", "ar": "عيد ثورة 30 يونيو"}, type: "1D", start: {mon: 6, d: 30}, first: {era: 1, y: 2014}},
-        {inherits: "Revolution Day", type: "1D", start: {mon: 7, d: 23}, first: {era: 1, y: 2012}, titles: {"en": "Revolution Day", "ar": "عيد ثورة 23 يوليو", "he": "יום המהפכה"}, urls: {"en": "https://en.wikipedia.org/wiki/Revolution_Day_(Egypt)"}},
-        {inherits: "National Day", type: "1D", start: {mon: 7, d: 23}},
-
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1, wkd: [1, 2, 3, 4, 6, 7]}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 2, wkd: [7]}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 4, wkd: [5]}},
+        {titles: {"en": "30 June Day", "ar": "عيد ثورة 30 يونيو"}, type: "1D", start: {mon: 6, d: 30}, first: {era: 1, y: 2015}, urls: {"en": "https://www.officeholidays.com/holidays/egypt/revolution-day-june-30"}},
+        {inherits: "Revolution Day", type: "1D", start: {mon: 7, d: 23}, first: {era: 1, y: 2012}, titles: {"en": "Revolution Day July 23", "ar": "عيد ثورة 23 يوليو", "he": "יום המהפכה יולי 23"}, urls: {"en": "https://en.wikipedia.org/wiki/Revolution_Day_(Egypt)"}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 10, d: 6}, first: {era: 1, y: 1974}},
 
+        {titles: {"en": "National Police Day", "ar": "عيد الشرطة"}, type: "1D", start: {mon: 1, d: 25}, urls: {"en": "https://en.wikipedia.org/wiki/National_Police_Day_(Egypt)"}, first: {era: 1, y: 2009}},
         {titles: {"en": "Evacuation Day (Eid el-Galaa)"}, type: "1D", start: {mon: 6, d: 18}, first: {era: 1, y: 1956}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, d: 21}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 21}, urls: {"en": "https://nationaltoday.com/egypt-mothers-day/"}, first: {era: 1, y: 1957}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {titles: {"en": "Flooding of the Nile (Wafaa El-Nil)", "cop": "ⲡⲓⲧⲏⲃ ⲛⲙⲁⲣⲧⲏⲣⲟⲥ"}, type: "nD", start: {mon: 8, d: 15}, end: {mon: 8, d: 28}, urls: {"en": "https://nationaltoday.com/flooding-of-the-nile/"}},
-
   ]
 }
