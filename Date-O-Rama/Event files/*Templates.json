@@ -350,7 +350,7 @@
         {template: "Presidents’ Day", type: "1D", start: {mon: 2, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Presidents’ Day", "he": "יום הנשיאים", "ar": "يوم الرؤساء", "es": "Día de los Presidentes", "fr": "Journée de la Présidence"}},
         {template: "Proclamation Day", titles: {"en": "Proclamation Day"}, type: "1D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/proclamation-day/"}},
         {template: "Proclamation of Independence Day", titles: {"en": "Proclamation of Independence Day"}, type: "1D", start: {mon: 1, d: 11}},
-        {template: "Public Holiday", titles: {"en": "Public Holiday"}, type: "1D", start: {mon: 6, d: 1, y: 2023}},
+        {template: "Public Holiday", titles: {"en": "Public Holiday", "he": "חג ציבורי"}, type: "1D", start: {mon: 6, d: 1, y: 2023}},
         {template: "Queen’s Birthday", type: "1D", start: {mon: 6, d: 11}, titles: {"en": "Queen’s Birthday", "he": "יום הולדתה של המלכה"}, inherits: "*BDay*", urls: {"en": "https://en.wikipedia.org/wiki/Queen%27s_Official_Birthday"}},
         {template: "Random Acts of Kindness Day", type: "1D", start: {d: 17, mon: 2}, titles: {"en": "Random Acts of Kindness Day"}, urls: {"en": "https://www.daysoftheyear.com/days/random-acts-of-kindness-day/"}, emoji: "🎁", first: {era: 1, y: 1995}},
         {template: "Reconciliation Day", titles: {"en": "Reconciliation Day", "fr": "Fête de la Réconciliation"}, type: "1D", start: {mon: 1, d: 17}},
