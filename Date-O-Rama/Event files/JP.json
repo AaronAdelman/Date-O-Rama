@@ -9,7 +9,7 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Star Festival", "ja": "星祭り"}, notes: {"en": "Tanabata", "ja": "たなばた\n七夕"}, urls: {"en": "https://nationaltoday.com/star-festival/"}},
-        {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Marine Day", "he": "יום הים", "ja": "海の日"}, urls: {"en": "https://nationaltoday.com/marine-day-in-japan/"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 7, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Marine Day", "he": "יום הים", "ja": "海の日"}, urls: {"en": "https://nationaltoday.com/marine-day-in-japan/"}, first: {era: 1, y: 2003}, emoji: "🌊"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 5}, urls: {"en": "https://nationaltoday.com/childrens-day-kodomo-no-hi/"}, first: {era: 1, y: 1984}, notes: {"en": "Kodomo no Hi"}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, inherits: "National Sports Day", titles: {"en": "Sports Day", "ja": "スポーツの日"}, first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}},
         {titles: {"en": "Mountain Day", "he": "יום ההר"}, type: "1D", start: {mon: 8, d: 11}, first: {era: 1, y: 2016}, urls: {"en": "https://nationaltoday.com/mountain-day/"}, emoji: "🗻"},
