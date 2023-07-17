@@ -19,7 +19,7 @@
 
         {titles: {"en": "Kurdish Authors Union Day"}, type: "1D", start: {mon: 2, d: 10}, "locations": {"en": "Iraqi Kurdistan"}, emoji: "✍️"},
         {titles: {"en": "Kurdish Students Union Day"}, type: "1D", start: {mon: 2, d: 18}, "locations": {"en": "Iraqi Kurdistan"}, emoji: "👨‍🎓👩‍🎓"},
-        {titles: {"en": "Commemoration of Mustafa Barzani’s Death"}, type: "1D", start: {mon: 3, d: 1}, "locations": {"en": "Iraqi Kurdistan"}, inherits: "*Death Anniv*"},
+        {titles: {"en": "Commemoration of Mustafa Barzani’s Death"}, type: "1D", start: {mon: 3, d: 1}, "locations": {"en": "Iraqi Kurdistan"}, inherits: "*DeathAnniv*"},
         {titles: {"en": "Liberation of Slemani City"}, type: "1D", start: {mon: 3, d: 7}, "locations": {"en": "Iraqi Kurdistan"}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}, first: {era: 1, y: 2021}},
         {titles: {"en": "Kurdish Clothes Day"}, type: "1D", start: {mon: 3, d: 10}, "locations": {"en": "Iraqi Kurdistan"}, emoji: "🧥"},
