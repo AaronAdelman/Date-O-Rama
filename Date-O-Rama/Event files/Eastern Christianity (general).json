@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Eastern Christianity (general)", "he": "נצרות מזרחית (כללי)"},
+    titles: {"en": "Eastern Christianity", "he": "נצרות מזרחית"},
     defaultLocale: "en",
     calendarCode: "greOrJul",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},

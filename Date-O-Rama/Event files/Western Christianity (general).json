@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Western Christianity (general)", "he": "נצרות מערבית (כללי)"},
+    titles: {"en": "Western Christianity", "he": "נצרות מערבית"},
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 1.0, "green": 0.0, "blue": 0.0},

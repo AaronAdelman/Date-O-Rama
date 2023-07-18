@@ -5,7 +5,22 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.91, "green": 0.56, "blue": 0.30},
     eventSpecifications: [
-        {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/slavery-abolition-day-french-guiana/"}, inherits: "Slavery Abolition Day", first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -48}, urls: {"en": "https://www.officeholidays.com/holidays/french-guiana/carnival-monday"}, inherits: "Carnival Monday"},
+        {inherits: "Shrove Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}, urls: {"en": "https://www.officeholidays.com/holidays/french-guiana/carnival-tuesday"}},
+        {inherits: "Ash Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -46}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/french-guiana/v-e-day"}, inherits: "Victory in Europe Day"},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+        {type: "1D", start: {mon: 6, d: 10}, urls: {"en": "https://nationaltoday.com/slavery-abolition-day-french-guiana/"}, inherits: "Abolition Day", notes: {"en": "Slavery Abolition Day"}, first: {era: 1, y: 2012}},
+        {type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/french-guiana/bastille-day"}, inherits: "Bastille Day"},
+        {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/french-guiana-armistice-day/"}, inherits: "Armistice Day", first: {era: 1, y: 1918}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}}
     ]
 }

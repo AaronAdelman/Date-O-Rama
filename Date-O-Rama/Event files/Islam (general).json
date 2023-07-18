@@ -1,5 +1,5 @@
 {
-    titles: {"en": "Islam (general)", "he": "אסלאם (כללי)", "ar": "الإسلام (عام)"},
+    titles: {"en": "Islam", "he": "אסלאם", "ar": "الإسلام"},
     defaultLocale: "en",
     calendarCode: "hiq*",
     calendarColor: {"red": 0.0, "green": 0.97, "blue": 0.0},
