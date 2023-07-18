@@ -1,6 +1,7 @@
 {
     titles: {"*": "FR"},
     "//": "France",
+    "TODO": "Mother’s Day may need to be shifted due to Pentecost.",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.0, "green": 0.33, "blue": 0.64},
@@ -12,22 +13,22 @@
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
         {inherits: "Victory in Europe Day", type: "1D", start: {mon: 5, d: 8}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://www.officeholidays.com/holidays/france/mothers-day"}, inherits: "Mother’s Day"},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.officeholidays.com/holidays/france/fathers-day"}},
         {type: "1D", start: {d: 14, mon: 7}, inherits: "Bastille Day", first: {era: 1, y: 1789}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 10, d: 31, thruMon: 11, thruD: 6, wkd: [7]}},
-        {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/french-armistice-day/"}, inherits: "Armistice Day", first: {era: 1, y: 1918}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
 
         {inherits: "Armenian Genocide Remembrance Day", type: "1D", start: {d: 24, mon: 4}, first: {era: 1, y: 2019}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {inherits: "International Francophonie Day", type: "1D", start: {d: 20, mon: 3}, first: {era: 1, y: 1988}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {type: "1D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
-        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/french-armistice-day/"}, inherits: "Armistice Day", first: {era: 1, y: 1918}},
     ]
 }
 
