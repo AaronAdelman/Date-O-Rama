@@ -1517,6 +1517,6 @@
         {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/shredded-wheat-day/"}, titles: {"en": "Shredded Wheat Day"}},
         {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/uncommon-instrument-awareness-day/", "he": "https://www.daysoftheyear.co.il/2017/07/31.html"}, titles: {"en": "Uncommon Instrument Awareness Day", "he": "יום כלי הנגינה הלא מוכרים"}},
         {type: "1D", start: {d: 19, mon: 11}, inherits: "International Men’s Day"},
-        {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/super-bowl-sunday/"}, titles: {"en": "Super Bowl Sunday"}, first: {era: 1, y: 1967}, emoji: "🏈"},
+        {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, inherits: "Super Bowl Sunday", first: {era: 1, y: 1967}},
     ]
 }

@@ -404,6 +404,7 @@
         {template: "Summer Solstice", titles: {"en": "Summer Solstice", "he": "היפוך קיץ"}, type: "pt", start: {"equinoxOrSolstice": "Jun"}},
         {template: "Sunrise", titles: {"en": "Sunrise", "he": "נץ החמה", "ar": "شروق"}, type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": true, "offset": 0.0}, emoji: "🌅"},
         {template: "Sunset", titles: {"en": "Sunset", "he": "שקיעת החמה", "ar": "غروب"}, type: "pt", start: {"ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": 0.0}, emoji: "🌇"},
+        {template: "Super Bowl Sunday", type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/super-bowl-sunday/"}, titles: {"en": "Super Bowl Sunday"}, first: {era: 1, y: 1967}, emoji: "🏈"},
         {template: "Synaxis of the Mother of God", type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaltoday.com/synaxis-of-the-mother-of-god/"}, titles: {"en": "Synaxis of the Mother of God", "el": "Σύναξις Υπεραγίας Θεοτόκου Μαρίας"}, notes: {"en": "Glorifying Mother of God"}},
         {template: "Talk Like Shakespeare Day", titles: {"en": "Talk Like Shakespeare Day"}, type: "1D", start: {mon: 4, d: 23}, urls: {"en": "http://www.talklikeshakespeare.org/"}, emoji: "🎭"},
         {template: "Tartan Day", type: "1D", start: {d: 6, mon: 4}, titles: {"en": "Tartan Day"}, notes: {"en": "National Tartan Day"}, urls: {"en": "https://www.daysoftheyear.com/days/tartan-day/"}},
