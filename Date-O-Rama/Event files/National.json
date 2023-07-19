@@ -1417,5 +1417,8 @@
         {type: "1D", start: {mon: 3, d: 4}, urls: {"en": "https://nationaltoday.com/benjamin-harrison-day/"}, titles: {"en": "Benjamin Harrison Day"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/alamo-day/"}, titles: {"en": "Alamo Day"}, first: {era: 1, y: 1836}},
         {type: "1D", start: {d: 9, mon: 2}, inherits: "National Pizza Day", notes: {"en": "Pizza Pie Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-day/", "he": "https://www.daysoftheyear.co.il/2017/02/9.html"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-homegating-day/"}, titles: {"en": "National Homegating Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 5, d: 23, thruD: 29, wkd: [1]}, urls: {"en": "https://nationaltoday.com/indy-500/"}, titles: {"en": "Indianapolis 500"}, emoji: "🏎️", first: {era: 1, y: 1911}},
+        {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/kentucky-derby-day/"}, titles: {"en": "Kentucky Derby", "he": "הדרבי של קנטקי"}, emoji: "🏇", first: {era: 1, y: 1875}},
     ]
 }
