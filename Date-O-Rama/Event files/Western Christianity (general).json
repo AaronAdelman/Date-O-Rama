@@ -292,7 +292,7 @@
         {titles: {"en": "Lent (day 11)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -34}},
         {titles: {"en": "Lent (day 12)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -33}},
         {titles: {"en": "Lent (day 13)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -32}},
-        {titles: {"en": "Lent (day 14)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -31}},
+        {inherits: "Mid-Lent", type: "1D", start: {"Easter": "Easter", "offsetD": -31}},
         {titles: {"en": "Lent (day 15)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -30}},
         {titles: {"en": "Lent (day 16)"}, type: "1D", start: {"Easter": "Easter", "offsetD": -29}},
         {titles: {"en": "Oculi"}, type: "1D", start: {"Easter": "Easter", "offsetD": -28}},
