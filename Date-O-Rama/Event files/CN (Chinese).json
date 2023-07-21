@@ -15,9 +15,9 @@
         {type: "1D", start: {mon: 1, d: 6, wkd: [4, 5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/china/chinese-new-year"}, inherits: "Spring Festival Holiday"},
         {type: "1D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
         {type: "1D", start: {mon: 5, d: 6, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/china/dragon-boat-festival"}, inherits: "Dragon Boat Festival Holiday"},
-        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Chung Yeung Festival", "zh_CN": "重阳节"}, notes: {"en": "Chongyang Festival\nDouble Ninth\nAutumn Remembrance\nFestival of High Places"}, urls: {"en": "https://nationaltoday.com/international-chung-yeung-festival/"}},
+        {type: "1D", start: {mon: 9, d: 9}, inherits: "Chung Yeung Festival"},
 
-        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Mid-Autumn Festival", "zh_CN": "中秋节"}, notes: {"en": "Harvest Moon Festival"}, urls: {"en": "https://nationaltoday.com/mid-autumn-festival/"}},
+        {type: "1D", start: {mon: 8, d: 15}, inherits: "Mid-Autumn Festival"},
 
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/zhonge-festival/"}, titles: {"en": "Zhonge Festival", "zh_CN": "中和节"}, emoji: "🐲"},
