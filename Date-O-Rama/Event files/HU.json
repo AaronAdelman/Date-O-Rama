@@ -21,11 +21,22 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/hungary/christmas-holiday"}, inherits: "Boxing Day"},
         
+        {type: "1D", start: {mon: 1, d: 22}, titles: {"en": "Day of the Hungarian Culture", "hu": "A magyar kultúra napja"}, first: {era: 1, y: 1989}},
+        {type: "1D", start: {mon: 2, d: 1}, titles: {"en": "Memorial Day of the Republic", "hu": "A köztársaság emléknapja"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 2, d: 25}, titles: {"en": "Memorial Day for the Victims of the Communist Dictatorships", "hu": "A kommunista diktatúrák áldozatainak emléknapja"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 4, d: 16}, titles: {"en": "Memorial Day for the Victims of the Holocaust", "hu": "A holokauszt áldozatainak emléknapja"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 5, d: 21}, titles: {"en": "National Defense Day", "hu": "Honvédelmi nap"}},
+        {type: "1D", start: {mon: 6, d: 4}, inherits: "National Unity Day"},
+        {type: "1D", start: {mon: 6, d: 19}, titles: {"en": "Independent Hungary Day", "hu": "A független Magyarország napja"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 10, d: 6}, titles: {"en": "Memorial Day for the Martyrs of Arad", "hu": "Az aradi vértanúk emléknapja"}},
+
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {inherits: "St. Nicholas Day", type: "1D", start: {mon: 12, d: 6}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
+
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}, first: {era: 1, y: 1950}},
         {inherits: "Heroes’ Day", type: "1D", start: {mon: 5, d: 31}, first: {era: 1, y: 2001}},
         {inherits: "Independence Day", type: "1D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], wkdRecurrence: -1, mon: 6}, first: {era: 1, y: 1991}},
-        {inherits: "Liberation Day", type: "1D", start: {mon: 4, d: 4}, first: {era: 1, y: 1945}},
-        {type: "1D", start: {mon: 6, d: 4}, inherits: "National Unity Day"},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
   ]
 }
