@@ -35,7 +35,7 @@
         {type: "1Y", start: {era: 1, y: 2004}, titles: {"en": "European Year of Education through Sport"}, emoji: "🏈"},
         {type: "1Y", start: {era: 1, y: 2003}, titles: {"en": "European Year of People with Disabilities"}, urls: {"en": "https://en.wikipedia.org/wiki/European_Year_of_People_with_Disabilities"}, emoji: "🧑‍🦼"},
         {type: "1Y", start: {era: 1, y: 2001}, titles: {"en": "European Year of Languages"}, urls: {"en": "https://en.wikipedia.org/wiki/European_Year_of_Languages"}, emoji: "🗣"},
-        {type: "1Y", start: {era: 1, y: 1999}, titles: {"en": "European Year of Action to Combat Violence Against Women"}},
+        {type: "1Y", start: {era: 1, y: 1999}, titles: {"en": "European Year of Action to Combat Violence Against Women"}, emoji: "👩"},
         {type: "1Y", start: {era: 1, y: 1998}, titles: {"en": "European Year of Local and Regional Democracy"}, emoji: "🗳"},
         {type: "1Y", start: {era: 1, y: 1997}, titles: {"en": "European Year against Racism and Xenophobia"}},
         {type: "1Y", start: {era: 1, y: 1996}, titles: {"en": "European Year of Lifelong Learning"}, emoji: "📚"},

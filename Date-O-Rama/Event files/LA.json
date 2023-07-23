@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {titles: {"en": "Women’s Union Establishment Day"}, type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/womens-union-establishment-day/"}, first: {era: 1, y: 1955}},
+        {titles: {"en": "Women’s Union Establishment Day"}, type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/womens-union-establishment-day/"}, first: {era: 1, y: 1955}, emoji: "👩"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/lao-national-day/"}, inherits: "National Day", first: {era: 1, y: 1975}},
