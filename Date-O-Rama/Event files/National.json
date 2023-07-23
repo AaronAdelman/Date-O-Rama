@@ -206,7 +206,6 @@
         {type: "1D", start: {mon: 6, d: 14}, titles: {"en": "National Bourbon Day"}, notes: {"en": "Bourbon Day"}, emoji: "🥃", urls: {"en": "http://www.nationalbourbonday.com/"}},
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "National Macaroni Day"}, notes: {"en": "Macaroni Day"}, urls: {"en": "https://www.daysoftheyear.com/days/macaroni-day/"}},
         {type: "1D", start: {mon: 7, d: 19}, titles: {"en": "National Daiquiri Day", "he": "יום הדאקירי הלאומי"}, notes: {"en": "Daiquiri Day"}, emoji: "🍹", urls: {"en": "https://www.daysoftheyear.com/days/daiquiri-day/", "he": "https://www.daysoftheyear.co.il/2018/07/19.html"}},
-        {type: "1D", start: {mon: 7, d: 29}, titles: {"en": "National Lasagne Day"}},
         {type: "1D", start: {mon: 7, d: 24}, titles: {"en": "National Tequila Day", "he": "יום הטקילה הלאומי"}, notes: {"en": "Tequila Day"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/tequila-day/", "he": "https://www.daysoftheyear.co.il/2020/07/tequila-day.html"}},
         {type: "1D", start: {mon: 7, d: 25}, titles: {"en": "National Hot Fudge Sundae Day"}, notes: {"en": "Hot Fudge Sundae Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-fudge-sundae-day/"}, emoji: "🍨"},
         {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Lazy Day"}, notes: {"en": "Lazy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lazy-day/"}, emoji: "🛌"},
