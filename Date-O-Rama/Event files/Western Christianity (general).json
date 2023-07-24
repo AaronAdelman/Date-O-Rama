@@ -123,7 +123,7 @@
         {titles: {"en": "Feast of St. Lawrence of Brindisi"}, type: "1D", start: {mon: 7, d: 21}},
         {titles: {"en": "Feast of St. Mary Magdalene"}, type: "1D", start: {mon: 7, d: 22}},
         {titles: {"en": "Feast of St. Birgitta"}, type: "1D", start: {mon: 7, d: 23}},
-        {titles: {"en": "Feast of St. Sharbel Makhlūf"}, type: "1D", start: {mon: 7, d: 24}},
+        {titles: {"en": "Feast of St. Sharbel Makhlūf", "he": "החג של שרבל מכלוף"}, type: "1D", start: {mon: 7, d: 24}},
         {inherits: "Feast of St. James", type: "1D", start: {mon: 7, d: 25}},
         {inherits: "Feast of Saints Joachim and Anne", type: "1D", start: {mon: 7, d: 26}},
         {titles: {"en": "Feast of Saints Martha, Mary and Lazarus"}, type: "1D", start: {mon: 7, d: 29}},

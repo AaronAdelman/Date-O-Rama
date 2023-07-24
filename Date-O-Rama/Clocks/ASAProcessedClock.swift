@@ -15,12 +15,7 @@ struct ASAProcessedClock {
     var calendarString:  String
     var dateString:  String
     var timeString:  String?
-//    var flagEmojiString:  String
-//    var timeZoneString:  String
-
-//    var locationString:  String
     var canSplitTimeFromDate:  Bool
-//    var supportsTimeZones:  Bool
     var supportsLocations:  Bool
     var supportsTimes:  Bool
 
@@ -125,8 +120,6 @@ struct ASAProcessedClock {
 
         let startOfDay: Date = clock.startOfDay(date: now, location: location)
         let startOfNextDay: Date   = clock.startOfNextDay(date: now, location: location)
-//        assert(startOfDay <= now)
-//        assert(now < startOfNextDay)
         let clockEvents = clock.events(startDate: startOfDay, endDate: startOfNextDay, locationData: location, usesDeviceLocation: usesDeviceLocation)
         self.dateEvents = isForComplications ? [] : clockEvents.dateEvents
         self.timeEvents = isForComplications ? [] : clockEvents.timeEvents
@@ -189,10 +182,4 @@ extension Array where Element == ASAProcessedClock {
     fileprivate func noCountryString() -> String {
         return NSLocalizedString("NO_COUNTRY_OR_REGION", comment: "")
     }
-    
-//    var sortedByCalendar: Array<ASAProcessedClock> {
-//        return self.sorted {
-//            $0.calendarString < $1.calendarString
-//        }
-//    }
 }

@@ -11,8 +11,8 @@ import Foundation
 enum ASAClockCellDateEventVisibility: Int, CaseIterable {
     case none           = 0
     case oneDay         = 1
-    case oneWeekOrLess  = 8
-    case oneMonthOrLess = 38
+    case oneWeekOrLess  = 14
+    case oneMonthOrLess = 45
     case oneYearOrLess  = 400
     case all            = 1000000000
 
@@ -23,9 +23,9 @@ enum ASAClockCellDateEventVisibility: Int, CaseIterable {
         case .oneDay:
             return 1.1 * Date.SECONDS_PER_DAY
         case .oneWeekOrLess:
-            return 7.1 * Date.SECONDS_PER_DAY
+            return 14.1 * Date.SECONDS_PER_DAY
         case .oneMonthOrLess:
-            return 31.1 * Date.SECONDS_PER_DAY
+            return 45.1 * Date.SECONDS_PER_DAY
         case .oneYearOrLess:
             return 400 * Date.SECONDS_PER_DAY
         case .all:
