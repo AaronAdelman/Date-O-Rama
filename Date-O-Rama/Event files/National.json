@@ -1301,7 +1301,7 @@
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-hire-a-veteran-day/"}, titles: {"en": "National Hire a Veteran Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-hot-fudge-sundae-day/"}, titles: {"en": "National Hot Fudge Sundae Day"}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-thread-needle-day/", "he": "https://www.daysoftheyear.co.il/2018/07/25.html"}, titles: {"en": "National Thread the Needle Day", "he": "יום השחלת חוט במחט הלאומי"}},
-        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-wine-and-cheese-day/"}, titles: {"en": "National Wine and Cheese Day"}, emoji: "🍷🧀"},
+        {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/national-wine-and-cheese-day/"}, titles: {"en": "National Wine and Cheese Day", "he": "יום יין וגבינה הלאומי"}, emoji: "🍷🧀"},
         {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-all-or-nothing-day/"}, titles: {"en": "National All or Nothing Day"}},
         {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-aunt-and-uncle-day/", "he": "https://www.daysoftheyear.co.il/2018/07/26.html"}, titles: {"en": "National Aunt and Uncle Day", "he": "יום הדוד והדודה הלאומי"}},
         {type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/national-bagelfest-day/"}, titles: {"en": "National Bagelfest Day"}, emoji: "🥯", first: {era: 1, y: 1986}},
