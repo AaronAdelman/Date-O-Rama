@@ -385,7 +385,7 @@
         {type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-bike-to-school-day/"}, titles: {"en": "National Bike to School Day"}, first: {era: 1, y: 2012}, emoji: "🚲"},
         {type: "1D", start: {mon: 5, d: 17}, urls: {"en": "https://nationaltoday.com/national-walnut-day/"}, titles: {"en": "National Walnut Day"}, first: {era: 1, y: 1958}},
         {type: "1D", start: {mon: 5, d: 18}, urls: {"en": "https://nationaltoday.com/national-hiv-vaccine-awareness-day/"}, titles: {"en": "National HIV Vaccine Awareness Day"}, first: {era: 1, y: 1998}, emoji: "💉", inherits: "*MedicalAwareness*"},
-        {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/hepatitis-testing-day/"}, titles: {"en": "Hepatitis Testing Day"}, first: {era: 1, y: 2012}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/hepatitis-testing-day/"}, titles: {"en": "Hepatitis Testing Day", "he": "יום בדיקת הפטיטיס"}, first: {era: 1, y: 2012}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/national-asian-and-pacific-islander-hiv-aids-awareness-day/"}, titles: {"en": "National Asian and Pacific Islander HIV/AIDS Awareness Day"}, first: {era: 1, y: 2005}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 5, d: 19}, urls: {"en": "https://nationaltoday.com/plant-something-day/"}, titles: {"en": "Plant Something Day"}},
         {type: "1D", start: {mon: 5, d: 20}, urls: {"en": "https://nationaltoday.com/national-river-cleanup-day/"}, titles: {"en": "National River Cleanup Day"}},
