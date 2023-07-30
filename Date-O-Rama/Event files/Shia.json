@@ -16,7 +16,7 @@
         {titles: {"en": "Mourning:  Arrival of Husayn ibn Ali in Karbalā, 61 AH‎"}, type: "1D", start: {mon: 1, d: 2}},
         {titles: {"en": "Mourning:  Water supply to the camp of Husayn ibn Ali was stopped"}, type: "1D", start: {mon: 1, d: 3}},
         {titles: {"en": "Mourning:  Stored water in the tents of the camp of Husayn ibn Ali runs out"}, type: "1D", start: {mon: 1, d: 7}},
-        {titles: {"en": "Mourning:  Eve of Ashura (Tāsūʿā)"}, type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/tassoua/"}},
+        {titles: {"en": "ʿĀshūrāʾ Eve", "he": "ערב עאשוראא"}, type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/tassoua/"}, notes: {"en": "Mourning:  Eve of Ashura (Tāsūʿā)\nAshura Eve\nAshoora Eve"}},
         {titles: {"en": "Mourning:  Burial of the martyrs of Karbala by Bani Asad"}, type: "1D", start: {mon: 1, d: 12}},
         {titles: {"en": "Remembrance:  Abraha attacked the Kaʿbah in the Year of the Elephant"}, type: "1D", start: {mon: 1, d: 17}, inherits: "*Remembrance*"},
         {titles: {"en": "Remembrance:  Changing of the Qibla, 2 AH"}, type: "1D", start: {mon: 1, d: 18}, inherits: "*Remembrance*"},

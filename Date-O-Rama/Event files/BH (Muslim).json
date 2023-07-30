@@ -9,7 +9,6 @@
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/bahrain/eid-al-fitr"}, inherits: "ʻĪd al-Fiṭr Holiday"},
         {type: "1D", start: {mon: 12, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/bahrain/eid-al-adha"}, titles: {"en": "ʿĪd al-ʾAḍḥā Holiday"}},
         {type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://www.officeholidays.com/holidays/bahrain/eid-al-adha"}, titles: {"en": "ʿĪd al-ʾAḍḥā Holiday"}},
-        {titles: {"en": "ʿĀshūrāʾ Eve"}, type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/bahrain/ashura"}, notes: {"en": "Ashura Eve\nAshoora Eve"}},
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 7, d: 13}},
     ]
