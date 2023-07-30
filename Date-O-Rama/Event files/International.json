@@ -388,7 +388,7 @@
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/international-hoof-care-month/"}, titles: {"en": "International Hoof Care Month"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/international-month-of-black-women-in-the-arts/"}, titles: {"en": "International Month of Black Women in the Arts"}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/international-prenatal-infection-prevention-month/"}, titles: {"en": "International Prenatal Infection Prevention Month"}},
-        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/jobs-in-golf-month/"}, titles: {"en": "Jobs in Golf Month"}, first: {era: 1, y: 2002}},
+        {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/jobs-in-golf-month/"}, titles: {"en": "Jobs in Golf Month", emoji: "⛳️"}, first: {era: 1, y: 2002}},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/love-the-bus-month/"}, titles: {"en": "Love the Bus Month"}, emoji: "🚌"},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/marfan-syndrome-awareness-month/"}, titles: {"en": "Marfan Syndrome Awareness Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/pet-dental-health-month/"}, titles: {"en": "Pet Dental Health Month"}, inherits: "*MedicalAwareness*"},
@@ -827,7 +827,7 @@
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/step-into-the-spotlight-day/"}, titles: {"en": "Step into the Spotlight Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/jumbo-day/"}, titles: {"en": "Jumbo Day"}},
         {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/global-work-from-home-day/"}, titles: {"en": "Global Work From Home Day"}},
-        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/golfers-day/"}, titles: {"en": "Golfer’s Day"}},
+        {type: "1D", start: {mon: 4, d: 10}, urls: {"en": "https://nationaltoday.com/golfers-day/"}, titles: {"en": "Golfer’s Day", emoji: "⛳️"}},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/dog-therapy-appreciation-day/"}, titles: {"en": "Dog Therapy Appreciation Day"}, inherits: "*Dog*"},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/global-day-to-end-child-sexual-abuse/"}, titles: {"en": "Global Day to End Child Sexual Abuse"}, first: {era: 1, y: 2013}, emoji: "👦👧"},
         {type: "1D", start: {mon: 4, d: 11}, urls: {"en": "https://nationaltoday.com/international-be-kind-to-lawyers-day/"}, titles: {"en": "International Be Kind to Lawyers Day", emoji: "👨‍💼👩‍💼"}, first: {era: 1, y: 2008}},
@@ -1529,7 +1529,6 @@
         {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/spider-man-day/"}, titles: {"en": "Spider-Man Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/woman-astronomers-day/"}, titles: {"en": "Woman Astronomers Day"}, emoji: "👩"},
         {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/international-clown-week/"}, titles: {"en": "International Clown Week"}, emoji: "🤡", first: {era: 1, y: 1950}},
-        {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/world-breastfeeding-week/"}, titles: {"en": "World Breastfeeding Week"}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/family-fun-month/"}, titles: {"en": "Family Fun Month"}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/gastroparesis-awareness-month/"}, titles: {"en": "Gastroparesis Awareness Month"}, inherits: "*MedicalAwareness*", first: {era: 1, y: 2016}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/happiness-happens-month/"}, titles: {"en": "Happiness Happens Month"}, emoji: "😀", first: {era: 1, y: 2000}},
@@ -1537,6 +1536,7 @@
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/psoriasis-awareness-month/"}, titles: {"en": "Psoriasis Awareness Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/spinal-muscular-atrophy-awareness-month/"}, titles: {"en": "Spinal Muscular Atrophy Awareness Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/summer-sun-safety-month/"}, titles: {"en": "Summer Sun Safety Month"}},
-
+        {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/national-cad-day/"}, titles: {"en": "National CAD Day"}},
+        {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/national-ice-cream-sandwich-day/"}, titles: {"en": "National Ice Cream Sandwich Day"}},
     ]
 }

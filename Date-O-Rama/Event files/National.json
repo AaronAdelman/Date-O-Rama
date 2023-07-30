@@ -779,7 +779,7 @@
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-moscato-day/"}, titles: {"en": "National Moscato Day"}},
         {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://nationaltoday.com/national-sleepover-day/"}, titles: {"en": "National Sleepover Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-clean-your-room-day/"}, titles: {"en": "National Clean Your Room Day"}},
-        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-golf-day/"}, titles: {"en": "National Golf Day"}},
+        {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-golf-day/"}, titles: {"en": "National Golf Day"}, emoji: "⛳️"},
         {type: "1D", start: {mon: 5, d: 10}, urls: {"en": "https://nationaltoday.com/national-lipid-day/"}, titles: {"en": "National Lipid Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-night-shift-workers-day/"}, titles: {"en": "National Night Shift Workers Day"}, notes: {"en": "National Third Shift Workers Day"}},
         {type: "1D", start: {mon: 5, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-receptionists-day/"}, titles: {"en": "National Receptionists Day"}},
@@ -1429,7 +1429,7 @@
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/back-to-school-month/"}, titles: {"en": "Back to School Month"}, first: {era: 1, y: 1960}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/black-business-month/"}, titles: {"en": "Black Business Month"}, first: {era: 1, y: 2004}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/childrens-eye-health-and-safety-month/"}, titles: {"en": "Children’s Eye Health and Safety Month"}, emoji: "👁️"},
-        {type: "1M", start: {mon: 8}, titles: {"en": "National Breastfeeding Month"}},
+        {type: "1M", start: {mon: 8}, titles: {"en": "National Breastfeeding Month", "he": "חודש ההנקה הלאומי"}, first: {era: 1, y: 1995}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-catfish-month/"}, titles: {"en": "National Catfish Month"}, first: {era: 1, y: 2013}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-civility-month/"}, titles: {"en": "National Civility Month"}},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-eye-exam-month/"}, titles: {"en": "National Eye Exam Month"}, emoji: "👁️"},
@@ -1441,5 +1441,6 @@
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-peach-month/"}, titles: {"en": "National Peach Month"}, emoji: "🍑"},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-sandwich-month/"}, titles: {"en": "National Sandwich Month"}, emoji: "🥪"},
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-traffic-awareness-month/"}, titles: {"en": "National Traffic Awareness Month"}, emoji: "🛑"},
+        {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/take-a-penny-leave-a-penny-day/"}, titles: {"en": "Take a Penny/Leave a Penny Day"}, emoji: "🪙"},
     ]
 }

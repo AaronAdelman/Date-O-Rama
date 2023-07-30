@@ -207,7 +207,6 @@
         {titles: {"en": "Space Force Birthday"}, type: "1D", start: {mon: 12, d: 20}},
         {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "Colorado Day"}, first: {era: 1, y: 1907}, urls: {"en": "https://nationaltoday.com/colorado-day/"}},
         {type: "1M", start: {mon: 8}, titles: {"en": "National Child Support Awareness Month"}, first: {era: 1, y: 1995}, emoji: "👨‍👩‍👧‍👦", urls: {"en": "https://nationaltoday.com/child-support-awareness-month/"}},
-        {type: "1M", start: {mon: 8}, titles: {"en": "National Breastfeeding Month"}, first: {era: 1, y: 1995}, urls: {"en": "https://nationaltoday.com/national-breastfeeding-month/"}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, inherits: "Friendship Day", titles: {"en": "National Friendship Day"}, urls: {"en": "https://nationaltoday.com/friendship-day/"}, first: {era: 1, y: 1935}},
         {inherits: "Victory Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 2}, titles: {"en": "U.S. Victory Day"}, locations: {"en": "Rhode Island"}, urls: {"en": "https://nationaltoday.com/us-victory-day/"}, first: {era: 1, y: 1966}},
         {titles: {"en": "Navajo Code Talkers Day"}, type: "1D", start: {mon: 8, d: 14}, notes: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}},
