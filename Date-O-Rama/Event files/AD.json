@@ -30,6 +30,6 @@
         {type: "nD", start: {mon: 7, d: 25}, "end": {mon: 7, d: 26}, titles: {"en": "Escaldes–Engordany Annual Festival"}},
         {type: "nD", start: {mon: 8, d: 15}, "end": {mon: 8, d: 16}, titles: {"en": "La Massana Annual Festival"}},
         {type: "nD", start: {mon: 8, d: 15}, "end": {mon: 8, d: 16}, titles: {"en": "Ordino Annual Festival"}},
-        {type: "nD", start: {mon: 7, d: 27}, "end": {mon: 7, d: 30}, titles: {"en": "Sant Julià de Lòria Annual Festival"}},
+        {type: "nD", start: {mon: 7, d: 27}, "end": {mon: 7, d: 30}, titles: {"en": "Sant Julià de Lòria Annual Festival", "he": "הפסטיבל השנתי של סנט ז׳וליה דה לוריה"}},
     ]
 }
