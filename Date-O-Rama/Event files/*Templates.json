@@ -317,6 +317,7 @@
         {template: "National Liberation Day of Korea", type: "1D", start: {d: 15, mon: 8}, titles: {"en": "Liberation Day", "ko_KR": "광복절", "ko_KP": "조국해방의 날"}, urls: {"en": "https://nationaltoday.com/liberation-day-south-korea/"}},
         {template: "National Maritime Day", type: "1D", start: {mon: 5, d: 22}, titles: {"en": "National Maritime Day"}, urls: {"en": "https://en.wikipedia.org/wiki/Maritime_Day"}, emoji: "🚢"},
         {template: "National Mutt Day", type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/national-mutt-day-july/"}, titles: {"en": "National Mutt Day"}, emoji: "🐶"},
+        {template: "National Night Out", type: "1D", start: {mon: 8, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-night-out/"}, titles: {"en": "National Night Out"}, first: {era: 1, y: 1984}},
         {template: "National Pizza Day", type: "1D", start: {d: 9, mon: 2}, titles: {"en": "National Pizza Day", "he": "יום הפיצה הלאומי"}, emoji: "🍕"},
         {template: "National Press Day", titles: {"en": "National Press Day", "id": "Hari Pers Nasional"}, type: "1D", start: {mon: 2, d: 9}, emoji: "🗞️"},
         {template: "National Sanctity of Human Life Day", type: "1D", start: {d: 22, mon: 1}, titles: {"en": "National Sanctity of Human Life Day", "ar": "اليوم الوطني لقداسة حياة الإنسان"}, urls: {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, emoji: "👶"},

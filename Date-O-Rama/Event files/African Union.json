@@ -21,7 +21,7 @@
         {type: "1D", titles: {"en": "Africa Day of Seas and Oceans", "he": "יום הימים והאוקיינוסים האפריקאי"}, start: {d: 25, mon: 7}, emoji: "🌊"},
         {type: "1D", titles: {"en": "Africa’s Women Day"}, start: {d: 31, mon: 7}, emoji: "👩"},
         {type: "1D", titles: {"en": "Africa Day of Decentralisation and Local Development"}, start: {d: 10, mon: 8}},
-        {type: "1D", titles: {"en": "Civil Registration and Vital Statistics Day"}, start: {d: 1, mon: 8}},
+        {type: "1D", titles: {"en": "Civil Registration and Vital Statistics Day"}, start: {mon: 8, d: 1}},
         {type: "1D", titles: {"en": "African Traditional Medicine Day"}, start: {d: 31, mon: 8}},
         {type: "1D", titles: {"en": "African Union Day", "he": "יום האיחוד האפריקאי"}, start: {d: 9, mon: 9}},
         {type: "1D", titles: {"en": "Africa Human Rights Day"}, start: {d: 21, mon: 10}},

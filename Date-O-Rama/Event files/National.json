@@ -158,7 +158,7 @@
         {type: "1D", start: {d: 2, mon: 7}, titles: {"en": "National Anisette Day", "he": "יום משקאות האניס הלאומי"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/anisette-day/", "he": "https://www.daysoftheyear.co.il/2019/07/anisette-day.html"}},
         {type: "1D", start: {d: 11, mon: 7}, titles: {"en": "National 7-Eleven Day"}, first: {era: 1, y: 2002}, emoji: "🥤", urls: {"en": "https://nationaldaycalendar.com/national-7-eleven-day-july-11/"}},
         {type: "1D", start: {d: 12, mon: 7}, titles: {"en": "National Simplicity Day", "he": "יום הפשטות הלאומי"}, emoji: "⚪️", urls: {"en": "https://www.daysoftheyear.com/days/simplicity-day/", "he": "https://www.daysoftheyear.co.il/2020/07/simplicity-day.html"}},
-        {type: "1D", start: {d: 1, mon: 8}, titles: {"en": "National Minority Donor Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/national-minority-donor-awareness-day/"}},
+        {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "National Minority Donor Awareness Day"}, urls: {"en": "https://nationaldaycalendar.com/national-minority-donor-awareness-day/"}},
         {type: "1D", start: {d: 2, mon: 8}, titles: {"en": "National Coloring Book Day"}, emoji: "✍️", urls: {"en": "https://www.coloringbookday.com/"}},
         {type: "1D", start: {d: 3, mon: 8}, titles: {"en": "National Watermelon Day"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/"}},
         {type: "1D", start: {d: 5, mon: 8}, titles: {"en": "National Oyster Day"}, emoji: "🦪", urls: {"en": "https://www.daysoftheyear.com/days/oyster-day/"}},
@@ -1417,5 +1417,13 @@
         {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-homegating-day/"}, titles: {"en": "National Homegating Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 5, d: 23, thruD: 29, wkd: [1]}, urls: {"en": "https://nationaltoday.com/indy-500/"}, titles: {"en": "Indianapolis 500"}, emoji: "🏎️", first: {era: 1, y: 1911}},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/kentucky-derby-day/"}, titles: {"en": "Kentucky Derby", "he": "הדרבי של קנטקי"}, emoji: "🏇", first: {era: 1, y: 1875}},
+        {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/national-girlfriend-day/"}, titles: {"en": "National Girlfriend Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/national-minority-donor-awareness-day/"}, titles: {"en": "National Minority Donor Awareness Day"}},
+        {type: "1D", start: {mon: 8, wkd: [3], wkdRecurrence: 1}, inherits: "National Night Out", first: {era: 1, y: 1984}},
+        {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/national-promise-to-care-day/"}, titles: {"en": "National Promise to Care Day"}},
+        {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/national-raspberry-cream-pie-day/"}, titles: {"en": "National Raspberry Cream Pie Day"}, emoji: "🥧"},
+        {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/national-wellness-month/"}, titles: {"en": "National Wellness Month"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/start-up-day-across-america/"}, titles: {"en": "Start Up Day Across America"}, notes: {"en": "Congressional Startup Day"}, first: {era: 1, y: 2013}},
+        {type: "nD", start: {mon: 8, d: 1}, end: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-minority-donor-awareness-week/"}, titles: {"en": "National Minority Donor Awareness Week"}},
     ]
 }

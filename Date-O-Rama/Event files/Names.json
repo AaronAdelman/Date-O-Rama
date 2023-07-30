@@ -278,5 +278,6 @@
       {type: "1D", start: {mon: 7, d: 29}, urls: {"en": "https://nationaltoday.com/national-harold-day/"}, titles: {"en": "National Harold Day"}},
       {type: "1D", start: {mon: 7, d: 30}, urls: {"en": "https://nationaltoday.com/national-norma-day/"}, titles: {"en": "National Norma Day"}},
       {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/national-diana-day/"}, titles: {"en": "National Diana Day"}},
+      {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/national-andrew-day/"}, titles: {"en": "National Andrew Day"}},
     ]
 }

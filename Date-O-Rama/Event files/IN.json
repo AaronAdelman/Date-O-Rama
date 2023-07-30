@@ -152,7 +152,7 @@
         {type: "1D", start: {d: 1, mon: 7}, titles: {"en": "GST Day"}},
         {type: "1D", start: {d: 10, mon: 7}, titles: {"en": "National Fish Farmers’ Day"}, emoji: "🐟"},
         {type: "1D", start: {d: 23, mon: 7}, inherits: "National Broadcasting Day"},
-        {type: "1D", start: {d: 1, mon: 8}, titles: {"en": "National Mountain Climbing Day"}},
+        {type: "1D", start: {mon: 8, d: 1}, titles: {"en": "National Mountain Climbing Day"}},
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, inherits: "Friendship Day", urls: {"en": "https://en.wikipedia.org/wiki/Friendship_Day#Celebrations_in_August"}},
         {type: "1D", start: {d: 7, mon: 8}, titles: {"en": "National Handloom Day"}, urls: {"en": "https://vikaspedia.in/social-welfare/entrepreneurship/national-handloom-day"}, first: {era: 1, y: 2015}, emoji: "🧵"},
         {type: "1D", start: {d: 13, mon: 8}, titles: {"en": "World Organ Donation Day"}},
