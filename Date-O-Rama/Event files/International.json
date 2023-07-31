@@ -1538,5 +1538,8 @@
         {type: "1M", start: {mon: 8}, urls: {"en": "https://nationaltoday.com/summer-sun-safety-month/"}, titles: {"en": "Summer Sun Safety Month"}},
         {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/national-cad-day/"}, titles: {"en": "National CAD Day"}},
         {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/national-ice-cream-sandwich-day/"}, titles: {"en": "National Ice Cream Sandwich Day"}},
+        {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://nationaltoday.com/clean-your-floors-day/"}, titles: {"en": "Clean Your Floors Day"}},
+        {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://nationaltoday.com/cloves-syndrome-awareness-day/"}, titles: {"en": "Cloves Syndrome Awareness Day"}, inherits: "*MedicalAwareness*"},
+
     ]
 }
