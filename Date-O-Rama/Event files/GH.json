@@ -25,7 +25,7 @@
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {inherits: "Republic Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/ghana-republic-day/"}, first: {era: 1, y: 1960}},
-        {type: "nD", start: {mon: 7, d: 23}, end: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/panafest/"}, titles: {"en": "PANAFEST"}, first: {era: 1, y: 1991}},
+        {type: "nD", start: {mon: 7, d: 23}, end: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/panafest/"}, titles: {"en": "PANAFEST", "he": "פרוייקט התיאטרון ההיסטורי הפאן־אפריקאי"}, first: {era: 1, y: 1991}, notes: {"en": "Pan African Historical Theatre Project"}},
    ]
 }
 

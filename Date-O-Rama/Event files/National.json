@@ -1334,7 +1334,6 @@
         {type: "1D", start: {mon: 12, d: 2}, inherits: "National Mutt Day"},
         {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/national-raspberry-cake-day/"}, titles: {"en": "National Raspberry Cake Day"}, emoji: "🍰"},
 
-
         {type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/buffalo-soldiers-day/"}, titles: {"en": "Buffalo Soldiers Day"}},
        {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/legal-drinking-age-day-july-21/"}, titles: {"en": "Legal Drinking Age Day"}},
         {type: "1D", start: {mon: 7, d: 16}, urls: {"en": "https://nationaltoday.com/rural-transit-day/"}, titles: {"en": "Rural Transit Day"}, first: {era: 1, y: 2019}, emoji: "🛣️"},
