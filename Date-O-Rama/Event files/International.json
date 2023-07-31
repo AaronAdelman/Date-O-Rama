@@ -1545,6 +1545,8 @@
         {type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/hooray-for-kids-day/"}, titles: {"en": "Hooray for Kids Day"}, emoji: "👦👧"},
         {type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/international-clouded-leopard-day/"}, titles: {"en": "International Clouded Leopard Day"}, notes: {"en": "I.C.L.D."}, first: {era: 1, y: 2018}, emoji: "🐆"},
         {type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/single-working-womens-day/"}, titles: {"en": "Single Working Women’s Day"}, first: {era: 1, y: 2006}, emoji: "👩"},
-
+        {type: "1D", start: {mon: 8, d: 5}, urls: {"en": "https://nationaltoday.com/blogger-day/"}, titles: {"en": "Blogger Day"}},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/sandcastle-day/"}, titles: {"en": "Sandcastle Day"}},
+        {type: "1D", start: {mon: 8, d: 5}, urls: {"en": "https://nationaltoday.com/work-like-a-dog-day/"}, titles: {"en": "Work Like a Dog Day"}},
     ]
 }

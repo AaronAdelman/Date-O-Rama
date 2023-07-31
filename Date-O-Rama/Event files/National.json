@@ -1447,5 +1447,10 @@
         {type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/national-chocolate-chip-cookie-day/"}, titles: {"en": "National Chocolate Chip Cookie Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/national-water-balloon-day/"}, titles: {"en": "National Water Balloon Day"}, first: {era: 1, y: 2019}, emoji: "🎈"},
         {type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/national-white-wine-day/"}, titles: {"en": "National White Wine Day"}, emoji: "🍷"},
+        {type: "1D", start: {mon: 8, d: 5}, urls: {"en": "https://nationaltoday.com/national-couscous-day/"}, titles: {"en": "National Couscous Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 8, d: 5}, urls: {"en": "https://nationaltoday.com/national-dash-cam-day/"}, titles: {"en": "National Dash Cam Day"}},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-disc-golf-day/"}, titles: {"en": "National Disc Golf Day"}, first: {era: 1, y: 2016}, emoji: "🥏"},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-jamaican-patty-day/"}, titles: {"en": "National Jamaican Patty Day"}},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-mustard-day/"}, titles: {"en": "National Mustard Day"}},
     ]
 }
