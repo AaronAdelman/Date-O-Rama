@@ -209,6 +209,6 @@
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/india/mizoram/mizoram-remna-ni"}, titles: {"en": "Remna Ni"}, first: {era: 1, y: 1986}},
         {type: "nD", start: {mon: 7, d: 11}, end: {mon: 7, d: 13}, urls: {"en": "https://nationaltoday.com/behdienkhlam-in-meghalaya/"}, titles: {"en": "Behdienkhlam"}, locations: {"en": "Meghalaya"}},
-        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/martyrdom-day-of-shaheed-udham-singh/"}, titles: {"en": "Martyrdom Day of Shaheed Udham Singh"}, first: {era: 1, y: 1940}},
+        {type: "1D", start: {mon: 7, d: 31}, urls: {"en": "https://nationaltoday.com/martyrdom-day-of-shaheed-udham-singh/"}, titles: {"en": "Martyrdom Day of Shaheed Udham Singh", "he": "יום השהידות של אודהם סינג"}, first: {era: 1, y: 1940}},
     ]
 }
