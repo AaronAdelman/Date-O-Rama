@@ -282,5 +282,7 @@
       {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/national-hugh-day/"}, titles: {"en": "National Hugh Day"}},
       {type: "1D", start: {mon: 8, d: 2}, urls: {"en": "https://nationaltoday.com/national-jacqueline-day/"}, titles: {"en": "National Jacqueline Day"}},
       {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://nationaltoday.com/national-michael-day/"}, titles: {"en": "National Michael Day"}},
+      {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-carolyn-day/"}, titles: {"en": "National Carolyn Day"}},
+      {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-henry-day/"}, titles: {"en": "National Henry Day"}},
     ]
 }
