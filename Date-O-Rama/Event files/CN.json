@@ -25,7 +25,7 @@
 
         {inherits: "Youth Day", type: "1D", start: {mon: 5, d: 4}},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {type: "1D", start: {mon: 8, d: 1}, inherits: "Army Day", first: {era: 1, y: 1933}, urls: {"en": "https://en.wikipedia.org/wiki/PLA_Day"}, titles: {"en": "People’s Liberation Army Day", "zh_CN": "建军节"}},
+        {type: "1D", start: {mon: 8, d: 1}, inherits: "Army Day", first: {era: 1, y: 1933}, urls: {"en": "https://en.wikipedia.org/wiki/PLA_Day"}, titles: {"en": "People’s Liberation Army Day", "he": "יום צבא השחרור של העם", "zh_CN": "建军节"}},
 
         {type: "1D", start: {mon: 3, d: 12}, inherits: "Arbor Day"},
         {titles: {"en": "C.P.C. Founding Day", "zh_CN": "建党节"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/cpc-founding-day/"}, first: {era: 1, y: 1921}, notes: {"en": "Chinese Communist Party Founding Day"}},

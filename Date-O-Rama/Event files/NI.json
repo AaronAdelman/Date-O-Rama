@@ -11,7 +11,7 @@
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}},
         {type: "1D", start: {mon: 2, d: 1}, inherits: "Air Force Day"},
-        {titles: {"en": "Santo Domingo Celebration Start"}, type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/santo-domingo-celebrations-start/"}, first: {era: 1, y: 1885}},
+        {titles: {"en": "Santo Domingo Celebration Start", "he": "תחילת חגיגת סנטו דומינגו"}, type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/santo-domingo-celebrations-start/"}, first: {era: 1, y: 1885}},
         {titles: {"en": "Ascent of Saint Dominic"}, start: {mon: 8, d: 10}, type: "1D", urls: {"en": "https://nationaltoday.com/ascent-of-saint-dominic/"}},
         {titles: {"es": "Fiesta de San Jerónimo"}, start: {mon: 9, d: 30}, type: "1D", urls: {"en": "https://nationaltoday.com/fiesta-de-san-jeronimo-nicaragua/"}, first: {era: 1, y: 1987}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/fiesta-de-santiago-nicaragua/"}, inherits: "Feast of St. James"},
