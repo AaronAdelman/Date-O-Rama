@@ -1455,5 +1455,9 @@
         {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-root-beer-float-day/"}, titles: {"en": "National Root Beer Float Day"}, emoji: "🍺"},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/sisters-day/"}, titles: {"en": "National Sisters Day"}, emoji: "👧👧"},
          {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-wiggle-your-toes-day/"}, titles: {"en": "National Wiggle Your Toes Day"}, emoji: "🦶"},
+         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/purple-heart-day/"}, titles: {"en": "Purple Heart Day"}, first: {era: 1, y: 2014}, emoji: "💜"},
+         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-lighthouse-day/", "he": "https://www.daysoftheyear.co.il/2018/08/7.html"}, titles: {"en": "National Lighthouse Day", "he": "יום המגדלור הלאומי"}, emoji: "⛯"},
+         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-raspberries-n-cream-day/"}, titles: {"en": "National Raspberries n’ Cream Day"}},
+         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-sea-serpent-day/"}, titles: {"en": "National Sea Serpent Day"}},
     ]
 }

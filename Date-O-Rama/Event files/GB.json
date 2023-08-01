@@ -137,5 +137,6 @@
         {type: "1D", start: {mon: 7, d: 24}, urls: {"en": "https://nationaltoday.com/samaritans-awareness-day/"}, titles: {"en": "Samaritans Awareness Day"}, notes: {"en": "No association whatsoever with actual Samaritans."}},
         {type: "1D", start: {mon: 7, d: 27}, urls: {"en": "https://nationaltoday.com/bagpipe-appreciation-day/"}, titles: {"en": "Bagpipe Appreciation Day"}},
         {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://nationaltoday.com/cycle-work-day/"}, titles: {"en": "Cycle to Work Day"}, emoji: "🚲"},
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/festival-monday/"}, titles: {"en": "Festival Monday"}, first: {era: 1, y: 1871}},
     ]
 }

@@ -284,5 +284,5 @@
       {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://nationaltoday.com/national-michael-day/"}, titles: {"en": "National Michael Day"}},
       {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-carolyn-day/"}, titles: {"en": "National Carolyn Day"}},
       {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-henry-day/"}, titles: {"en": "National Henry Day"}},
-    ]
+    {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-valentino-day-2/"}, titles: {"en": "National Valentino Day"}},    ]
 }
