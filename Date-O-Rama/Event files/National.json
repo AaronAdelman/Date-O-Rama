@@ -209,7 +209,7 @@
         {type: "1D", start: {mon: 7, d: 19}, titles: {"en": "National Daiquiri Day", "he": "יום הדאקירי הלאומי"}, notes: {"en": "Daiquiri Day"}, emoji: "🍹", urls: {"en": "https://www.daysoftheyear.com/days/daiquiri-day/", "he": "https://www.daysoftheyear.co.il/2018/07/19.html"}},
         {type: "1D", start: {mon: 7, d: 24}, titles: {"en": "National Tequila Day", "he": "יום הטקילה הלאומי"}, notes: {"en": "Tequila Day"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/tequila-day/", "he": "https://www.daysoftheyear.co.il/2020/07/tequila-day.html"}},
         {type: "1D", start: {mon: 7, d: 25}, titles: {"en": "National Hot Fudge Sundae Day"}, notes: {"en": "Hot Fudge Sundae Day"}, urls: {"en": "https://www.daysoftheyear.com/days/hot-fudge-sundae-day/"}, emoji: "🍨"},
-        {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Lazy Day"}, notes: {"en": "Lazy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lazy-day/"}, emoji: "🛌"},
+        {type: "1D", start: {mon: 8, d: 10}, titles: {"en": "National Lazy Day", "he": "יום העצלנות הלאומי"}, notes: {"en": "Lazy Day"}, urls: {"en": "https://www.daysoftheyear.com/days/lazy-day/", "he": "https://www.daysoftheyear.co.il/2017/08/10.html"}, emoji: "🛌"},
         {type: "1D", start: {mon: 8, d: 16}, titles: {"en": "National Rum Day"}, notes: {"en": "Rum Day"}, emoji: "🥃", urls: {"en": "https://www.daysoftheyear.com/days/rum-day/"}},
         {type: "1D", start: {mon: 10, d: 6}, titles: {"en": "National Noodle Day"}, notes: {"en": "Noodle Day"}, emoji: "🍝", urls: {"en": "https://www.daysoftheyear.com/days/noodle-day/"}},
         {titles: {"en": "National Pasta Day"}, type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaldaycalendar.com/national-pasta-day-october-17/"}, emoji: "🍝"},
@@ -1469,5 +1469,10 @@
          {type: "1D", start: {mon: 8, d: 4, thruD: 10, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-psychiatric-technician-appreciation-day/"}, titles: {"en": "National Psychiatric Technician Appreciation Day"}, notes: {"en": "Psychiatric Technicians’ Day,"}},
          {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/national-rice-pudding-day/"}, titles: {"en": "National Rice Pudding Day"}},
          {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/national-veep-day/"}, titles: {"en": "National Veep Day"}},
+         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/herbert-hoover-day/"}, titles: {"en": "Herbert Hoover Day"}, inherits: "*BDay*", first: {era: 1, y: 1874}},
+         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-smores-day/"}, titles: {"en": "National S’mores Day"}},
+         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-ski-citrus-soda-day/"}, titles: {"en": "National SKI Citrus Soda Day"}, first: {era: 1, y: 2020}, emoji: "🥤"},
+         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-spoil-dog-day/"}, titles: {"en": "National Spoil Your Dog Day"}, emoji: "🐩"},
+         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/duran-duran-appreciation-day/"}, titles: {"en": "Duran Duran Appreciation Day"}, notes: {"en": "National Duran Duran Appreciation Day"}, emoji: "🎸"},
     ]
 }

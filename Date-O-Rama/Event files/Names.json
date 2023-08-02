@@ -289,5 +289,7 @@
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-liam-day/"}, titles: {"en": "National Liam Day"}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-melvin-day/"}, titles: {"en": "National Melvin Day"}},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/national-rebecca-day/"}, titles: {"en": "National Rebecca Day"}},
+        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-dean-day/"}, titles: {"en": "National Dean Day"}},
+        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-mary-day/"}, titles: {"en": "National Mary Day"}},
     ]
 }

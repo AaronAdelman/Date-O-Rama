@@ -169,7 +169,7 @@
         {type: "1D", start: {d: 8, mon: 8}, titles: {"en": "International Cat Day", "he": "יום החתול הבינלאומי"}, emoji: "🐈", urls: {"en": "https://www.daysoftheyear.com/days/international-cat-day/", "he": "https://www.daysoftheyear.co.il/2018/08/8.html"}},
         {type: "1D", start: {d: 9, mon: 8}, titles: {"en": "Nagasaki Day"}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/nagasaki-memorial-day/"}, notes: {"en": "Nagasaki Memorial Day"}},
         {type: "1D", start: {d: 9, mon: 8}, titles: {"en": "International Coworking Day"}, first: {era: 1, y: 2010}, emoji: "👩‍💻", urls: {"en": "https://nationaldaycalendar.com/international-coworking-day-august-9/"}, notes: {"en": "Co Working Day"}},
-        {type: "1D", start: {d: 10, mon: 8}, titles: {"en": "World Lion Day"}, first: {era: 1, y: 2013}, emoji: "🦁", urls: {"en": "https://www.daysoftheyear.com/days/lion-day/"}},
+        {type: "1D", start: {d: 10, mon: 8}, titles: {"en": "World Lion Day", "he": "יום האריה העולמי"}, first: {era: 1, y: 2013}, emoji: "🦁", urls: {"en": "https://www.daysoftheyear.com/days/lion-day/", "he": "https://www.daysoftheyear.co.il/2018/08/10.html"}},
         {type: "1D", start: {d: 12, mon: 8}, titles: {"en": "World Elephant Day"}, first: {era: 1, y: 2012}, emoji: "🐘", urls: {"en": "https://worldelephantday.org/"}},
         {type: "1D", start: {d: 13, mon: 8}, titles: {"en": "International Lefthanders Day", "he": "יום השמאליים הבינלאומי"}, first: {era: 1, y: 1976}, emoji: "🫲", urls: {"en": "http://www.lefthandersday.com/"}},
         {type: "1D", start: {d: 14, mon: 8}, titles: {"en": "World Lizard Day"}, emoji: "🦎", urls: {"en": "https://nationaldaycalendar.com/world-lizard-day-august-14/"}},
@@ -1559,5 +1559,8 @@
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/wear-your-mothers-jewelry-day/"}, titles: {"en": "Wear Your Mother’s Jewelry Day"}, first: {era: 1, y: 2017}, emoji: "💍"},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/annual-perseid-meteor-shower-peak-night/"}, titles: {"en": "Annual Perseid Meteor Shower Peak Night"}, emoji: "☄️"},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/hold-hands-day/"}, titles: {"en": "Hold Hands Day"}},
+        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/international-biodiesel-day/"}, titles: {"en": "International Biodiesel Day"}, emoji: "⛽️"},
+        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/update-your-bio-day/"}, titles: {"en": "Update Your Bio Day"}, emoji: "📄"},
+        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/vlogging-day/"}, titles: {"en": "Vlogging Day"}, first: {era: 1, y: 2018}},
     ]
 }
