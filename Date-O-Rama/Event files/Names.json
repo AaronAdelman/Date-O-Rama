@@ -288,6 +288,6 @@
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-anne-day/"}, titles: {"en": "National Anne Day"}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-liam-day/"}, titles: {"en": "National Liam Day"}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-melvin-day/"}, titles: {"en": "National Melvin Day"}},
-
+        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/national-rebecca-day/"}, titles: {"en": "National Rebecca Day"}},
     ]
 }
