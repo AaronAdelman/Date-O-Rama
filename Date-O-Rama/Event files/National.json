@@ -1474,5 +1474,10 @@
          {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-ski-citrus-soda-day/"}, titles: {"en": "National SKI Citrus Soda Day"}, first: {era: 1, y: 2020}, emoji: "🥤"},
          {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-spoil-dog-day/"}, titles: {"en": "National Spoil Your Dog Day"}, emoji: "🐩"},
          {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/duran-duran-appreciation-day/"}, titles: {"en": "Duran Duran Appreciation Day"}, notes: {"en": "National Duran Duran Appreciation Day"}, emoji: "🎸"},
+         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-align-your-teeth-day/"}, titles: {"en": "National Align Your Teeth Day"}, emoji: "😁"},
+         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-fufu-day/"}, titles: {"en": "National Fufu Day"}, first: {era: 1, y: 2022}},
+         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-presidential-joke-day/"}, titles: {"en": "National Presidential Joke Day"}, first: {era: 1, y: 1984}},
+         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-raspberry-bombe-day/"}, titles: {"en": "National Raspberry Bombe Day"}},
+         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-son-daughter-day/"}, titles: {"en": "National Son and Daughter Day"}, emoji: "👦👧"},
     ]
 }
