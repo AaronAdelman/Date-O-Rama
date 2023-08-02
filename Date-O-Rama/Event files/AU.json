@@ -39,7 +39,7 @@
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "Proclamation Day", type: "1D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, locations: {"en": "South Australia"}, first: {era: 1, y: 1836}},
         {inherits: "Proclamation Day", type: "1D", start: {mon: 12, d: 28, wkd: [2, 3]}, locations: {"en": "South Australia"}, first: {era: 1, y: 1836}},
-       {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 1958}},
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "1D", start: {mon: 10, d: 15}, first: {era: 1, y: 2014}},
@@ -77,5 +77,7 @@
         {type: "1D", start: {mon: 7, d: 21}, urls: {"en": "https://nationaltoday.com/national-lamington-day/"}, titles: {"en": "National Lamington Day"}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/international-red-shoe-day/"}, titles: {"en": "International Red Shoe Day", "he": "יום הנעליים האדומות הבינלאומי"}, first: {era: 1, y: 2014}, emoji: "👠"},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/st-james-tg/"}, inherits: "Feast of St. James"},
-        {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/aged-care-employee-day/"}, titles: {"en": "Aged Care Employee Day"}, first: {era: 1, y: 2018}, emoji: "👴🧓"},    ]
+        {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/aged-care-employee-day/"}, titles: {"en": "Aged Care Employee Day"}, first: {era: 1, y: 2018}, emoji: "👴🧓"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/top-8-challenge-day/"}, titles: {"en": "Top 8 Challenge Day"}, first: {era: 1, y: 2010}},
+    ]
 }

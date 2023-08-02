@@ -166,7 +166,7 @@
         {type: "1D", start: {mon: 8, wkd: [6], wkdRecurrence: 1}, titles: {"en": "International Beer Day", "he": "יום הבירה הבינלאומי"}, emoji: "🍺", urls: {"en": "http://internationalbeerday.com/"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {d: 6, mon: 8}, titles: {"en": "Hiroshima Day", "he": "יום הטלת פצצת האטום על הירושימה"}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/hiroshima-day/", "he": "https://www.daysoftheyear.co.il/2018/08/6.html"}},
         {type: "1D", start: {d: 7, mon: 8}, titles: {"en": "Professional Speakers Day"}, emoji: "🎤", urls: {"en": "https://www.daysoftheyear.com/days/professional-speakers-day/"}},
-        {type: "1D", start: {d: 8, mon: 8}, titles: {"en": "International Cat Day", "he": "יום החתול הבינלאומי"}, emoji: "🐈", urls: {"en": "https://www.daysoftheyear.com/days/international-cat-day/"}},
+        {type: "1D", start: {d: 8, mon: 8}, titles: {"en": "International Cat Day", "he": "יום החתול הבינלאומי"}, emoji: "🐈", urls: {"en": "https://www.daysoftheyear.com/days/international-cat-day/", "he": "https://www.daysoftheyear.co.il/2018/08/8.html"}},
         {type: "1D", start: {d: 9, mon: 8}, titles: {"en": "Nagasaki Day"}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/nagasaki-memorial-day/"}},
         {type: "1D", start: {d: 9, mon: 8}, titles: {"en": "International Coworking Day"}, first: {era: 1, y: 2010}, emoji: "👩‍💻", urls: {"en": "https://nationaldaycalendar.com/international-coworking-day-august-9/"}},
         {type: "1D", start: {d: 10, mon: 8}, titles: {"en": "World Lion Day"}, first: {era: 1, y: 2013}, emoji: "🦁", urls: {"en": "https://www.daysoftheyear.com/days/lion-day/"}},
@@ -1550,5 +1550,12 @@
         {type: "1D", start: {mon: 8, d: 5}, urls: {"en": "https://nationaltoday.com/work-like-a-dog-day/", "he": "https://www.daysoftheyear.co.il/2019/08/5.html"}, titles: {"en": "Work Like a Dog Day", "he": "יום עבוד כמו כלב"}},
         {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/balloons-to-heaven-day/"}, titles: {"en": "Balloons to Heaven Day"}, emoji: "🎈"},
         {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/farmworker-appreciation-day/"}, titles: {"en": "Farmworker Appreciation Day"}, emoji: "👨‍🌾👩‍🌾"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/digital-nomad-day/"}, titles: {"en": "Digital Nomad Day"}, first: {era: 1, y: 2020}, emoji: "💻"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/dying-know-day/"}, titles: {"en": "Dying to Know Day"}, first: {era: 1, y: 2013}, emoji: "🌹"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/happiness-happens-day/"}, titles: {"en": "Happiness Happens Day"}, emoji: "😀"},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/international-allyship-day/"}, titles: {"en": "International Allyship Day"}, first: {era: 1, y: 2023}},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/odie-day/"}, titles: {"en": "Odie Day"}},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/peace-festival-in-augsburg/"}, titles: {"en": "Peace Festival in Augsburg"}},
+        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/wear-your-mothers-jewelry-day/"}, titles: {"en": "Wear Your Mother’s Jewelry Day"}, first: {era: 1, y: 2017}, emoji: "💍"},
     ]
 }

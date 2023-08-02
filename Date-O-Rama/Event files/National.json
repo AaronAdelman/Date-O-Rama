@@ -1459,5 +1459,12 @@
          {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-lighthouse-day/", "he": "https://www.daysoftheyear.co.il/2018/08/7.html"}, titles: {"en": "National Lighthouse Day", "he": "יום המגדלור הלאומי"}, emoji: "⛯"},
          {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-raspberries-n-cream-day/"}, titles: {"en": "National Raspberries n’ Cream Day"}},
          {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-sea-serpent-day/"}, titles: {"en": "National Sea Serpent Day"}},
+         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-dollar-day/"}, titles: {"en": "National Dollar Day"}, emoji: "💵"},
+         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-frozen-custard-day/"}, titles: {"en": "National Frozen Custard Day"}},
+         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-mochi-day/"}, titles: {"en": "National Mochi Day"}, emoji: "🍡", first: {era: 1, y: 2021}},
+         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-perler-day/"}, titles: {"en": "National Perler Day"}, first: {era: 1, y: 2019}},
+         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-pickleball-day/"}, titles: {"en": "National Pickleball Day"}, first: {era: 1, y: 2021}},
+         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/national-tarantula-appreciation-day/"}, titles: {"en": "National Tarantula Appreciation Day"}},
+
     ]
 }
