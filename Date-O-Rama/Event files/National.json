@@ -1484,5 +1484,6 @@
          {type: "1D", start: {mon: 8, d: 12}, urls: {"en": "https://nationaltoday.com/national-julienne-fries-day/"}, titles: {"en": "National Julienne Fries Day"}},
          {type: "1D", start: {mon: 8, d: 12}, urls: {"en": "https://nationaltoday.com/national-middle-child-day/", "he": "https://www.daysoftheyear.co.il/2018/08/12.html"}, titles: {"en": "National Middle Child Day", "he": "יום ילדי הסנדוויץ׳ הלאומי"}, first: {era: 1, y: 1986}, emoji: "👧👦👶"},
          {type: "1D", start: {mon: 8, d: 12}, urls: {"en": "https://nationaltoday.com/national-vinyl-record-day/"}, titles: {"en": "National Vinyl Record Day"}},
-    ]
+         {type: "1D", start: {mon: 8, d: 13}, urls: {"en": "https://nationaltoday.com/national-filet-mignon-day/"}, titles: {"en": "National Filet Mignon Day"}},
+         {type: "1D", start: {mon: 8, d: 13}, urls: {"en": "https://nationaltoday.com/national-prosecco-day/"}, titles: {"en": "National Prosecco Day"}},    ]
 }
