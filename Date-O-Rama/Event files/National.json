@@ -164,7 +164,7 @@
         {type: "1D", start: {d: 3, mon: 8}, titles: {"en": "National Watermelon Day", "he": "יום האבטיח הלאומי"}, emoji: "🍉", urls: {"en": "https://www.daysoftheyear.com/days/watermelon-day/", "he": "https://www.daysoftheyear.co.il/2018/08/3.html"}},
         {type: "1D", start: {d: 5, mon: 8}, titles: {"en": "National Oyster Day"}, emoji: "🦪", urls: {"en": "https://www.daysoftheyear.com/days/oyster-day/"}},
         {type: "1D", start: {d: 11, mon: 8}, titles: {"en": "National Son and Daughter Day"}, first: {era: 1, y: 2944}, emoji: "👦👧", urls: {"en": "https://www.daysoftheyear.com/days/son-and-daughter-day/"}},
-        {type: "1D", start: {d: 25, mon: 8}, titles: {"en": "National Whiskey Sour Day"}, emoji: "🥃", notes: {"en": "Whiskey Sour Day"}, urls: {"en": "https://www.daysoftheyear.com/days/whiskey-sour-day/"}},
+        {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "National Whiskey Sour Day"}, emoji: "🥃", notes: {"en": "Whiskey Sour Day"}, urls: {"en": "https://www.daysoftheyear.com/days/whiskey-sour-day/"}},
         {type: "1D", start: {d: 27, mon: 8}, titles: {"en": "National Pots du Creme Day"}, urls: {"en": "https://www.daysoftheyear.com/days/pots-de-creme-day/"}},
         {type: "1D", start: {d: 28, mon: 8}, titles: {"en": "National Bow Tie Day"}, emoji: "⧓", urls: {"en": "https://www.daysoftheyear.com/days/bow-tie-day/"}},
         {type: "1D", start: {d: 3, mon: 9}, titles: {"en": "National Skyscraper Day"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-day/"}},
@@ -1531,5 +1531,8 @@
          {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-peach-pie-day/"}, titles: {"en": "National Peach Pie Day"}, emoji: "🥧"},
          {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-skam-artist-day/"}, titles: {"en": "National SKAM Artist Day"}, first: {era: 1, y: 2020}},
          {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-waffle-day/"}, titles: {"en": "National Waffle Day", "he": "יום הופל הלאומי"}, emoji: "🧇"},
+         {type: "1D", start: {mon: 8, d: 25}, urls: {"en": "https://nationaltoday.com/national-banana-split-day/", "he": "https://www.daysoftheyear.co.il/2021/08/banana-split-day.html"}, titles: {"en": "National Banana Split Day", "he": "יום הבננה ספליט הלאומי"}, emoji: "🍌"},
+         {type: "1D", start: {mon: 8, d: 25}, urls: {"en": "https://nationaltoday.com/national-park-service-founders-day/"}, titles: {"en": "National Park Service Founders Day"}, emoji: "🏞️", first: {era: 1, y: 1916}},
+         {type: "1D", start: {mon: 8, d: 25}, urls: {"en": "https://nationaltoday.com/national-secondhand-wardrobe-day/", "he": "https://www.daysoftheyear.co.il/2018/08/25.html"}, titles: {"en": "National Secondhand Wardrobe Day", "en": "יום בגדי יד שנייה הלאומי"}, emoji: "🧢"},
     ]
 }
