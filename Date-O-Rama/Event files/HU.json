@@ -29,14 +29,15 @@
         {type: "1D", start: {mon: 6, d: 4}, inherits: "National Unity Day"},
         {type: "1D", start: {mon: 6, d: 19}, titles: {"en": "Independent Hungary Day", "hu": "A független Magyarország napja"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 10, d: 6}, titles: {"en": "Memorial Day for the Martyrs of Arad", "hu": "Az aradi vértanúk emléknapja"}},
-
+        
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {inherits: "St. Nicholas Day", type: "1D", start: {mon: 12, d: 6}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
-
+        
         {inherits: "Children’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}, first: {era: 1, y: 1950}},
         {inherits: "Heroes’ Day", type: "1D", start: {mon: 5, d: 31}, first: {era: 1, y: 2001}},
         {inherits: "Independence Day", type: "1D", titles: {"en": "Day of Hungarian Freedom", "hu" :"A magyar szabadság napja"}, start: {wkd: [7], wkdRecurrence: -1, mon: 6}, first: {era: 1, y: 1991}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
-  ]
+        {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/hungary-national-day/"}, inherits: "National Day"},
+    ]
 }

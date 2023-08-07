@@ -1511,5 +1511,9 @@
          {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-patient-advocacy-day/"}, titles: {"en": "National Patient Advocacy Day"}, first: {era: 1, y: 1993}},
          {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-potato-day/"}, titles: {"en": "National Potato Day"}, emoji: "🥔"},
          {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-soft-ice-cream-day/"}, titles: {"en": "National Soft Ice Cream Day"}, emoji: "🍦"},
+     {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-bacon-lovers-day/"}, titles: {"en": "National Bacon Lovers Day"}, emoji: "🥓"},
+         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-chocolate-pecan-pie-day/"}, titles: {"en": "National Chocolate Pecan Pie Day"}, emoji: "🥧"},
+         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-lemonade-day/"}, titles: {"en": "National Lemonade Day"}, emoji: "🍋"},
+         {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-radio-day/"}, titles: {"en": "National Radio Day"}, emoji: "📻"},
     ]
 }
