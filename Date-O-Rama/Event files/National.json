@@ -351,7 +351,7 @@
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-customized-wheel-and-tire-day/"}, titles: {"en": "National Customized Wheel and Tire Day"}},
         {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/national-essay-day/"}, titles: {"en": "National Essay Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 2, d: 29}, urls: {"en": "https://nationaltoday.com/national-time-refund-day/"}, titles: {"en": "National Time Refund Day"}},
-        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/tooth-fairy-day/"}, titles: {"en": "National Tooth Fairy Day"}},
+        {type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://www.daysoftheyear.com/days/tooth-fairy-day/"}, inherits: "National Tooth Fairy Day"},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-dadgum-thats-good-day/"}, titles: {"en": "National Dadgum That’s Good Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-fruit-compote-day/"}, titles: {"en": "National Fruit Compote Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-wedding-planning-day/"}, titles: {"en": "National Wedding Planning Day"}, first: {era: 1, y: 2017}},
@@ -1517,5 +1517,11 @@
          {type: "1D", start: {mon: 8, d: 20}, urls: {"en": "https://nationaltoday.com/national-radio-day/"}, titles: {"en": "National Radio Day"}, emoji: "📻"},
          {type: "1D", start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/national-report-upcoding-fraud-day/"}, titles: {"en": "National Report Upcoding Fraud Day"}, first: {era: 1, y: 2017}},
          {type: "1D", start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/national-spumoni-day/"}, titles: {"en": "National Spumoni Day"}, emoji: "🍨"},
+         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-bao-day/"}, titles: {"en": "National Bao Day"}, first: {era: 1, y: 2017}},
+         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-pecan-torte-day/"}, titles: {"en": "National Pecan Torte Day"}},
+         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-rainbow-baby-day/"}, titles: {"en": "National Rainbow Baby Day"}, first: {era: 1, y: 2018}, emoji: "👶"},
+         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-surgical-oncologist-day/"}, titles: {"en": "National Surgical Oncologist Day"}, first: {era: 1, y: 2019}, emoji: "👨‍⚕️👩‍⚕️"},
+         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-take-your-cat-to-the-vet-day/"}, titles: {"en": "National Take Your Cat to the Vet Day"}, emoji: "🐈"},
+         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-tooth-fairy-day/"}, inherits: "National Tooth Fairy Day"},
     ]
 }

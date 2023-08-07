@@ -297,5 +297,6 @@
         {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-marilyn-day/"}, titles: {"en": "National Marilyn Day"}},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-angela-day/"}, titles: {"en": "National Angela Day"}},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-jaden-day/"}, titles: {"en": "National Jaden Day"}},
+        {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-pamela-day/"}, titles: {"en": "National Pamela Day"}},
     ]
 }

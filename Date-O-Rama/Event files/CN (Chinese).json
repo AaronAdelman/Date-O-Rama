@@ -22,7 +22,7 @@
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
         {type: "1D", start: {mon: 2, d: 2}, urls: {"en": "https://nationaltoday.com/zhonge-festival/"}, titles: {"en": "Zhonge Festival", "zh_CN": "中和节"}, emoji: "🐲"},
 
-        {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Qixi Festival", "zh_CN": "七夕"}, emoji: "❤️", urls: {"en": "https://en.wikipedia.org/wiki/Qixi_Festival"}},
+        {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Qixi Festival", "zh_CN": "七夕"}, emoji: "❤️", urls: {"en": "https://nationaltoday.com/qixi-festival/"}},
         {type: "1D", start: {mon: 7, d: 15}, titles: {"en": "Spirit Festival", "zh_CN": "中元节"}, urls: {"en": "https://en.wikipedia.org/wiki/Ghost_Festival"}, notes: {"en": "Ghost Festival"}},
 
         {type: "nD", start: {mon: 3, d: 3}, end: {mon: 3, d: 5}, titles: {"en": "Sam Nyied Sam", "zh_CN": "三月三"}, urls: {"en": "https://en.wikipedia.org/wiki/Zhuang_customs_and_culture#Festivals"}},

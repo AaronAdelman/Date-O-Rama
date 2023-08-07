@@ -165,5 +165,6 @@
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/forgiveness-day/"}, titles: {"en": "Forgiveness Day"}, first: {era: 1, y: 1994}},
         {inherits: "1st Advent Sunday", type: "1D", start: {mon: 11, d: 27, "thruMon": 12, "thruD": 3, wkd: [1]}, titles: {"en": "Sunday of the Dead", "de": "Totensonntag"}, notes: {"en": "Eternity Sunday", "de": "Ewigkeitssonntag\nTotenfest"}, urls: {"en": "https://en.wikipedia.org/wiki/Totensonntag"}},
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/talk-to-us/"}, titles: {"en": "Talk to Us"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/be-an-angel-day/", "he": "https://www.daysoftheyear.co.il/2022/08/huo%20vnktl.html"}, titles: {"en": "Be An Angel Day", "he": "יום המלאך"}, first: {era: 1, y: 1993}},
     ]
 }

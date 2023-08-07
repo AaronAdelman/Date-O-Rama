@@ -18,7 +18,7 @@
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 8, d: 12}, inherits: "Air Force Day", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: -1}, inherits: "Navy Day", first: {era: 1, y: 2013}, urls: {"en": "https://en.wikipedia.org/wiki/Navy_Day_(Russia)"}},
-        {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/russia-national-flag-day/"}},
+        {inherits: "National Flag Day", type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/russia-national-flag-day/", "he": "https://www.daysoftheyear.co.il/2018/08/22.html"}},
         {type: "1D", start: {mon: 1, d: 25}, inherits: "Tatiana Day"},
         {type: "1D", start: {mon: 2, d: 23}, urls: {"en": "https://nationaltoday.com/defence-of-the-fatherland-day/"}, titles: {"en": "Defense of the Fatherland Day"}, inherits: "International Men’s Day", first: {era: 1, y: 1919}},
         {type: "1D", start: {mon: 2, d: 27}, urls: {"en": "https://nationaltoday.com/special-operations-forces-day-2/"}, titles: {"en": "Special Operations Forces Day"}, first: {era: 1, y: 2015}},
