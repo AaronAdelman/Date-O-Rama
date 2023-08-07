@@ -301,5 +301,7 @@
         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-levi-day/"}, titles: {"en": "National Levi Day"}},
         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-danny-day/"}, titles: {"en": "National Danny Day"}},
         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-emory-day/"}, titles: {"en": "National Emory Day"}},
+        {type: "1D", start: {mon: 8, d: 26}, urls: {"en": "https://nationaltoday.com/national-kelly-day/"}, titles: {"en": "National Kelly Day"}},
+        {type: "1D", start: {mon: 8, d: 26}, urls: {"en": "https://nationaltoday.com/national-logan-day/"}, titles: {"en": "National Logan Day"}},
     ]
 }

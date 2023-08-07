@@ -132,7 +132,7 @@
         {inherits: "May Day", type: "1D", start: {mon: 5, d: 1}},
         {type: "1D", start: {mon: 6, d: 27}, titles: {"en": "Helen Keller Day"}, urls: {"en": "https://nationaltoday.com/helen-keller-day/"}, first: {era: 1, y: 2006}},
         {inherits: "Pioneer Day", type: "1D", start: {mon: 7, d: 24}, first: {era: 1, y: 1949}},
-        {type: "1D", start: {d: 26, mon: 8}, titles: {"en": "Women’s Equality Day", "he": "יום השוויון לנשים"}, emoji: "👩", urls: {"en": "https://www.daysoftheyear.com/days/womens-equality-day/", "he": "https://he.wikipedia.org%2Fwiki%2F%D7%99%D7%95%D7%9D_%D7%94%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F_%D7%9C%D7%A0%D7%A9%D7%99%D7%9D"}, first: {era: 1, y: 1973}},
+        {type: "1D", start: {mon: 8, d: 26}, titles: {"en": "Women’s Equality Day", "he": "יום השוויון לנשים"}, emoji: "👩", urls: {"en": "https://www.daysoftheyear.com/days/womens-equality-day/", "he": "https://he.wikipedia.org%2Fwiki%2F%D7%99%D7%95%D7%9D_%D7%94%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F_%D7%9C%D7%A0%D7%A9%D7%99%D7%9D"}, first: {era: 1, y: 1973}},
         {type: "1D", start: {mon: 9, d: 11}, titles: {"en": "Patriot Day"}, urls: {"en": "https://nationaldaycalendar.com/patriot-day-and-national-day-of-service-and-remberance-september-11/"}, first: {era: 1, y: 2002}},
         {inherits: "Constitution Day", notes: {"en": "Citizenship Day"}, type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/constitution-day/"}, first: {era: 1, y: 2004}},
         {inherits: "Black Friday", type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, first: {era: 1, y: 1951}},
