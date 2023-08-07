@@ -79,5 +79,6 @@
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/st-james-tg/"}, inherits: "Feast of St. James"},
         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/aged-care-employee-day/"}, titles: {"en": "Aged Care Employee Day"}, first: {era: 1, y: 2018}, emoji: "👴🧓"},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/top-8-challenge-day/"}, titles: {"en": "Top 8 Challenge Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/love-your-bookshop-day/"}, titles: {"en": "Love Your Bookshop Day"}, emoji: "📚"},
     ]
 }

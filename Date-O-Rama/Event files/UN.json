@@ -127,7 +127,7 @@
         {titles: {"en": "International Day of Friendship", "he": "יום הידידות הבינלאומי "}, type: "1D", start: {mon: 7, d: 30}, first: {era: 1, y: 2012}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-friendship-july-30/", "he": "https://www.daysoftheyear.co.il/2016/08/blog-post.html"}},
         {titles: {"en": "World Day against Trafficking in Persons", "he": "היום העולמי נגד סחר בבני אדם"}, type: "1D", start: {mon: 7, d: 30}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaldaycalendar.com/world-day-against-trafficking-in-persons-july-30/"}},
 
-        {titles: {"en": "World Breastfeeding Week", "he": "שבוע ההנקה העולמי"}, type: "nD", start: {mon: 8, d: 1}, "end": {mon: 8, d: 7}, first: {type: "nD", era: 1, y: 1991}},
+        {titles: {"en": "World Breastfeeding Week", "he": "שבוע ההנקה העולמי"}, type: "nD", start: {mon: 8, d: 1}, "end": {mon: 8, d: 7}, first: {type: "nD", era: 1, y: 1991}, urls: {"en": "https://worldbreastfeedingweek.org/"}},
         {inherits: "International Day of the World’s Indigenous Peoples", type: "1D", start: {mon: 8, d: 9}, first: {era: 1, y: 1995}},
         {inherits: "International Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 1999}},
         {titles: {"en": "World Humanitarian Day", "he": "היום ההומניטרי הבינלאומי"}, type: "1D", start: {mon: 8, d: 19}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaldaycalendar.com/world-humanitarian-day-august-19/"}, emoji: "❤️"},

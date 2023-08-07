@@ -463,6 +463,7 @@
         {type: "1D", start: {mon: 10, d: 1}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 17}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 26}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/national-spirit-of-45-day/"}, titles: {"en": "National Spirit of ’45 Day"}, first: {era: 1, y: 2010}},
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},

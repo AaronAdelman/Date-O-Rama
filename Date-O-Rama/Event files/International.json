@@ -1564,6 +1564,7 @@
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/vlogging-day/"}, titles: {"en": "Vlogging Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/hip-hop-day/"}, titles: {"en": "Hip Hop Day"}, emoji: "🎤"},
         {type: "1D", start: {mon: 8, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/shop-online-for-groceries-day/"}, titles: {"en": "Shop Online for Groceries Day"}, first: {era: 1, y: 2014}, emoji: "🛒"},
+        {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/play-in-the-sand-day/", "he": "https://www.daysoftheyear.co.il/2020/08/play-in-the-sand-day.html"}, titles: {"en": "Play in the Sand Day", "he": "יום המשחק בחול"}, emoji: "🏖️"},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/garage-sale-day/"}, titles: {"en": "Garage Sale Day"}},
         {type: "1D", start: {mon: 8, d: 12}, urls: {"en": "https://nationaltoday.com/ibm-pc-day/"}, titles: {"en": "IBM PC Day"}, first: {era: 1, y: 1981}},
         {type: "1D", start: {mon: 8, d: 12}, urls: {"en": "https://nationaltoday.com/milkman-day/"}, titles: {"en": "Milkman Day"}, emoji: "🥛"},
