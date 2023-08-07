@@ -1523,5 +1523,9 @@
          {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-surgical-oncologist-day/"}, titles: {"en": "National Surgical Oncologist Day"}, first: {era: 1, y: 2019}, emoji: "👨‍⚕️👩‍⚕️"},
          {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-take-your-cat-to-the-vet-day/"}, titles: {"en": "National Take Your Cat to the Vet Day"}, emoji: "🐈"},
          {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-tooth-fairy-day/"}, inherits: "National Tooth Fairy Day"},
+         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-cuban-sandwich-day/"}, titles: {"en": "National Cuban Sandwich Day"}},
+         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-ride-the-wind-day/"}, titles: {"en": "National Ride The Wind Day"}},
+         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-sponge-cake-day/"}, titles: {"en": "National Sponge Cake Day"}, emoji: "🍰"},
+         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-valentino-day/", "he": "https://www.daysoftheyear.co.il/2018/08/23.html"}, titles: {"en": "National Valentino Day", "he": "יום ולנטינו הלאומי"}, first: {era: 1, y: 1926}, inherits: "*DeathAnniv*"},
     ]
 }
