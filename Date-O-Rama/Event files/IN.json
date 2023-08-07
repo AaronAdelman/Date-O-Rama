@@ -19,7 +19,7 @@
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/india/rajasthan/devnarayan-jayanti"}, titles: {"en": "Devnarayan Jayanti"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 1, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/india/assam/me-dam-me-phi"}, titles: {"en": "Me-dam-me-phi"}},
         
-        {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 8}, urls: {"en": "https://nationaltoday.com/indian-independence-day/"}, first: {era: 1, y: 1947}},
+        {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 8}, urls: {"en": "https://nationaltoday.com/indian-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/08/15.html"}, first: {era: 1, y: 1947}},
         {type: "1D", start: {d: 2, mon: 10}, titles: {"en": "Gandhi Jayanti"}, first: {era: 1, y: 1869}, urls: {"en": "https://en.wikipedia.org/wiki/Gandhi_Jayanti"}, inherits: "*BDay*"},
         
         {type: "1D", start: {d: 30, mon: 1}, titles: {"en": "Mahatma Gandhi’s Death Anniversary"}, inherits: "*DeathAnniv*", first: {era: 1, y: 1948}},

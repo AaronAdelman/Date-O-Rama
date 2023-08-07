@@ -291,5 +291,7 @@
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/national-rebecca-day/"}, titles: {"en": "National Rebecca Day"}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-dean-day/"}, titles: {"en": "National Dean Day"}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-mary-day/"}, titles: {"en": "National Mary Day"}},
+        {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-jean-day/"}, titles: {"en": "National Jean Day"}},
+        {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-philip-day/"}, titles: {"en": "National Philip Day"}},
     ]
 }

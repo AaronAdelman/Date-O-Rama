@@ -23,6 +23,6 @@
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {titles: {"en": "Public Sector Holiday"}, type: "1D", start: {mon: 6, d: 2, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/international-childrens-day"}, first: {era: 1, y: 2017}},
-
+        {inherits: "Dormition of the Mother of God", type: "1D", start: {mon: 8, d: 15}},
    ]
 }
