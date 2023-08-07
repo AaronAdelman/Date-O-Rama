@@ -1493,5 +1493,10 @@
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-leathercraft-day/"}, titles: {"en": "National Leathercraft Day"}, emoji: "💼"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-lemon-meringue-pie-day/"}, titles: {"en": "National Lemon Meringue Pie Day"}, emoji: "🥧"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-relaxation-day/"}, titles: {"en": "National Relaxation Day"}, emoji: "😎", first: {era: 1, y: 1985}},
+        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-authenticity-day/"}, titles: {"en": "National Authenticity Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-backflow-prevention-day/"}, titles: {"en": "National Backflow Prevention Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-independent-worker-day/"}, titles: {"en": "National Independent Worker Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-roller-coaster-day/", "he": "https://www.daysoftheyear.co.il/2018/08/16.html"}, titles: {"en": "National Roller Coaster Day", "he": "יום רכבת ההרים הלאומי"}, emoji: "🎢"},
+        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-tell-joke-day/"}, titles: {"en": "National Tell a Joke Day"}, emoji: "🤭", notes: {"he": "Joe Miller’s Joke Day"}},
     ]
 }

@@ -295,7 +295,7 @@
         {type: "1D", start: {mon: 7, d: 10}, titles: {"en": "Piña Colada Day", "he": "יום הפינה קולדה"}, emoji: "🍹", urls: {"en": "https://www.daysoftheyear.com/days/pina-colada-day/", "he": "https://www.daysoftheyear.co.il/2018/07/10.html"}},
         {type: "1D", start: {mon: 7, wkd: [3], wkdRecurrence: 2}, first: {era: 1, y: 1995}, titles: {"en": "Cow Appreciation Day"}, emoji: "🐄", urls: {"en": "https://www.daysoftheyear.com/days/cow-appreciation-day/"}},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, titles: {"en": "Mead Day"}, emoji: "🍺", urls: {"en": "https://www.daysoftheyear.com/days/mead-day/"}, first: {era: 1, y: 2002}},
-        {type: "1D", start: {mon: 8, d: 16}, titles: {"en": "Surveillance Day"}, notes: {"en": "Wave At the Surveillance Cameras Day"}, emoji: "👋", urls: {"en": "https://www.daysoftheyear.com/days/surveillance-day/"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 8, d: 16}, titles: {"en": "Surveillance Day", "he": "יום נפנף למצלמות המעקב"}, notes: {"en": "Wave at the Surveillance Cameras Day"}, notes: {"en": "Wave At the Surveillance Cameras Day"}, emoji: "👋", urls: {"en": "https://www.daysoftheyear.com/days/surveillance-day/", "he": "https://www.daysoftheyear.co.il/2020/08/surveillance-cameras-day.html"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 25}, titles: {"en": "World Pasta Day"}, emoji: "🍝", urls: {"en": "https://www.daysoftheyear.com/days/world-pasta-day/"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {mon: 12, d: 11}, titles: {"en": "Noodle Ring Day"}, urls: {"en": "https://www.daysoftheyear.com/days/noodle-ring-day/"}},
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 2}, titles: {"en": "International Shareware Day"}, emoji: "💾", urls: {"en": "https://www.daysoftheyear.com/days/shareware-day/"}},
@@ -1571,5 +1571,6 @@
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/chant-at-the-moon-day/"}, titles: {"en": "Chant at the Moon Day"}, emoji: "🌕"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/check-the-chip-day/"}, titles: {"en": "Check the Chip Day"}},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/world-greatness-day/"}, titles: {"en": "World Greatness Day"}, first: {era: 1, y: 2016}, emoji: "🦸‍♂️🦸‍♀️"},
+        {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/world-calligraphy-day/"}, titles: {"en": "World Calligraphy Day"}, emoji: "🖋️"},
     ]
 }
