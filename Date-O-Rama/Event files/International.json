@@ -179,7 +179,7 @@
         {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "International Orangutan Day", "he": "יום האורנגאוטן הבינלאומי"}, emoji: "🦧", urls: {"en": "http://www.worldorangutanevents.org/international-orangutan-day.php", "he": "https://www.daysoftheyear.co.il/2018/08/19.html"}},
         {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "International Bow Day"}, emoji: "🎀", urls: {"en": "https://www.daysoftheyear.com/days/international-bow-day/"}},
         {type: "1D", start: {d: 20, mon: 8}, titles: {"en": "World Mosquito Day", "he": "יום היתוש העולמי"}, first: {era: 1, y: 1897}, emoji: "🦟", urls: {"en": "https://www.daysoftheyear.com/days/world-mosquito-day/", "he": "https://www.daysoftheyear.co.il/2018/08/20.html"}},
-        {type: "1D", start: {d: 24, mon: 8}, titles: {"en": "International Strange Music Day"}, first: {era: 1, y: 1997}, emoji: "🎶", urls: {"en": "https://www.daysoftheyear.com/days/international-strange-music-day/"}},
+        {type: "1D", start: {d: 24, mon: 8}, titles: {"en": "International Strange Music Day", "he": "יום המוזיקה המוזרה הבינלאומי"}, first: {era: 1, y: 1997}, emoji: "🎶", urls: {"en": "https://www.daysoftheyear.com/days/international-strange-music-day/", "he": "https://www.daysoftheyear.co.il/2020/08/strange0music-day.html"}},
         {type: "1D", start: {d: 26, mon: 8}, titles: {"en": "International Dog Day", "he": "יום הכלב הבינלאומי"}, first: {era: 1, y: 2004}, emoji: "🦮", urls: {"en": "https://www.nationaldogday.com/"}},
         {type: "1D", start: {d: 30, mon: 8}, titles: {"en": "International Whale Shark Day"}, first: {era: 1, y: 2012}, urls: {"en": "https://www.daysoftheyear.com/days/international-whale-shark-day/"}},
         {type: "1D", start: {mon: 8, d: 31}, titles: {"en": "International Overdose Awareness Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.overdoseday.com/"}, inherits: "*MedicalAwareness*"},
@@ -1587,5 +1587,9 @@
         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/find-your-inner-nerd-day/"}, titles: {"en": "Find Your Inner Nerd Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/health-unit-coordinators-day/"}, titles: {"en": "Health Unit Coordinators Day"}},
         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/international-blind-dog-day/"}, titles: {"en": "International Blind Dog Day"}, emoji: "🐶", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/kobe-bryant-day/"}, titles: {"en": "Kobe Bryant Day"}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/pluto-demoted-day/"}, titles: {"en": "Pluto Demoted Day"}, emoji: "♇", first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/vesuvius-day/", "he": "https://www.daysoftheyear.co.il/2018/08/24.html"}, titles: {"en": "Vesuvius Day", "he": "יום וזוב"}, emoji: "🌋", first: {era: 1, y: 79}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/william-wilberforce-day/"}, titles: {"en": "William Wilberforce Day"}, inherits: "*BDay*", first: {era: 1, y: 1759}},
     ]
 }

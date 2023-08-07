@@ -1527,5 +1527,9 @@
          {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-ride-the-wind-day/"}, titles: {"en": "National Ride The Wind Day"}},
          {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-sponge-cake-day/"}, titles: {"en": "National Sponge Cake Day"}, emoji: "🍰"},
          {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-valentino-day/", "he": "https://www.daysoftheyear.co.il/2018/08/23.html"}, titles: {"en": "National Valentino Day", "he": "יום ולנטינו הלאומי"}, first: {era: 1, y: 1926}, inherits: "*DeathAnniv*"},
+         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-knife-day/"}, titles: {"en": "National Knife Day"}, first: {era: 1, y: 2011}, emoji: "🗡️"},
+         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-peach-pie-day/"}, titles: {"en": "National Peach Pie Day"}, emoji: "🥧"},
+         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-skam-artist-day/"}, titles: {"en": "National SKAM Artist Day"}, first: {era: 1, y: 2020}},
+         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-waffle-day/"}, titles: {"en": "National Waffle Day", "he": "יום הופל הלאומי"}, emoji: "🧇"},
     ]
 }

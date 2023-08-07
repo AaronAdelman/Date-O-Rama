@@ -299,5 +299,7 @@
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-jaden-day/"}, titles: {"en": "National Jaden Day"}},
         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/national-pamela-day/"}, titles: {"en": "National Pamela Day"}},
         {type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/national-levi-day/"}, titles: {"en": "National Levi Day"}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-danny-day/"}, titles: {"en": "National Danny Day"}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-emory-day/"}, titles: {"en": "National Emory Day"}},
     ]
 }
