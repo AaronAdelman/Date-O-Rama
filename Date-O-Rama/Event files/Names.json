@@ -293,5 +293,7 @@
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-mary-day/"}, titles: {"en": "National Mary Day"}},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-jean-day/"}, titles: {"en": "National Jean Day"}},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-philip-day/"}, titles: {"en": "National Philip Day"}},
+        {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-abel-day/"}, titles: {"en": "National Abel Day"}},
+        {type: "1D", start: {mon: 8, d: 17}, urls: {"en": "https://nationaltoday.com/national-marilyn-day/"}, titles: {"en": "National Marilyn Day"}},
     ]
 }
