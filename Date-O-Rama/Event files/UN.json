@@ -245,6 +245,7 @@
         {type: "nD", start: {mon: 3, d: 16}, end: {mon: 3, d: 24}, urls: {"en": "https://nationaltoday.com/european-wide-action-week-against-racism/"}, titles: {"en": "European-wide Action Week Against Racism"}, first: {era: 1, y: 1966}},
         {type: "1D", start: {mon: 3, d: 18}, urls: {"en": "https://nationaltoday.com/global-recycling-day/"}, titles: {"en": "Global Recycling Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/international-day-of-plant-health/"}, titles: {"en": "International Day of Plant Health"}, emoji: "🌱", first: {era: 1, y: 2022}},
+        {type: "1D", start: {d: 21, mon: 8}, titles: {"en": "World Senior Citizen Day"}, first: {era: 1, y: 1997}, emoji: "👴👵", urls: {"en": "https://en.wikipedia.org/wiki/World_Senior_Citizen%27s_Day"}},
 
         {titles: {"en": "International Decade of Indigenous Languages"}, type: "nY", start: {era: 1, y: 2022}, "end": {era: 1, y: 2032}},
         {titles: {"en": "Second Decade of Action for Road Safety"}, type: "nY", start: {era: 1, y: 2021}, emoji: "🚏", "end": {era: 1, y: 2030}},

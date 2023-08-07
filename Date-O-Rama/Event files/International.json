@@ -1579,5 +1579,7 @@
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-geocaching-day/"}, titles: {"en": "International Geocaching Day"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-homeless-animals-day/"}, titles: {"en": "International Homeless Animals Day"}, notes: {"en": "IHAD"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-honey-bee-day/"}, titles: {"en": "World Honey Bee Day"}, emoji: "🐝", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/internet-self-care-day/"}, titles: {"en": "Internet Self-Care Day"}, emoji: "👨‍💻👩‍💻"},
+        {type: "1D", start: {mon: 8, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/poets-day/", "he": "https://www.daysoftheyear.co.il/2018/08/21.html"}, titles: {"en": "Poetry Day", "he": "יום השירה"}, notes: {"en": "Poet’s Day"}, first: {era: 1, y: 1994}},
     ]
 }

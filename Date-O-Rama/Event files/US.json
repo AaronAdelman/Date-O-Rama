@@ -81,7 +81,6 @@
         {type: "1D", start: {d: 4, mon: 8}, inherits: "Coast Guard Day", urls: {"en": "https://nationaldaycalendar.com/national-coast-guard-day-august-4/"}},
         {inherits: "Victory Over Japan Day", type: "1D", start: {d: 2, mon: 9}, first: {era: 1, y: 1945}, urls: {"en": "https://nationaltoday.com/vj-day/"}},
         {type: "1D", start: {d: 16, mon: 8}, titles: {"en": "Bennington Battle Day"}, first: {era: 1, y: 1977}, urls: {"en": "https://nationaltoday.com/bennington-battle-day/"}},
-        {type: "1D", start: {d: 21, mon: 8}, titles: {"en": "World Senior Citizen Day"}, first: {era: 1, y: 1997}, emoji: "👴👵", urls: {"en": "https://en.wikipedia.org/wiki/World_Senior_Citizen%27s_Day"}},
         {inherits: "Black Ribbon Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 5, wkd: [5], wkdRecurrence: 1}, titles: {"en": "National Day of Prayer"}, emoji: "🛐", urls: {"en": "https://nationaldaycalendar.com/national-day-of-prayer-first-thursday-in-may/"}, first: {era: 1, y: 1984}},
         {type: "1D", start: {d: 5, mon: 5}, titles: {"en": "Cinco de Mayo", "he": "סינקו דה מאיו"}, first: {era: 1, y: 2006}, emoji: "🇲🇽🇺🇸", urls: {"en": "https://nationaldaycalendar.com/cinco-de-mayo-may-5/", "he": "https://www.daysoftheyear.co.il/2016/05/5.html"}},
@@ -465,6 +464,8 @@
         {type: "1D", start: {mon: 10, d: 17}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 26}, inherits: "International Dadaism Month", first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/national-spirit-of-45-day/"}, titles: {"en": "National Spirit of ’45 Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 8, d: 21}, urls: {"en": "https://nationaltoday.com/national-senior-citizens-day/"}, titles: {"en": "National Senior Citizens Day"}, first: {era: 1, y: 1988}, emoji: "👴👵"},
+
 
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 3, d: 1}, titles: {"en": "National Minnesota Day"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-minnesota-day-march-1/"}},
