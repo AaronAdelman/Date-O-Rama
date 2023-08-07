@@ -175,9 +175,9 @@
         {type: "1D", start: {d: 14, mon: 8}, titles: {"en": "World Lizard Day", "he": "יום הלטאה העולמי"}, emoji: "🦎", urls: {"en": "https://nationaldaycalendar.com/world-lizard-day-august-14/", "he": "https://www.daysoftheyear.co.il/2020/08/lizard-day.html"}},
         {inherits: "Victory Over Japan Day", type: "1D", start: {d: 15, mon: 8}, first: {era: 1, y: 1945}},
         {type: "1D", start: {d: 18, mon: 8}, titles: {"en": "Never Give Up Day"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.nevergiveupday.com/"}},
-        {type: "1D", start: {d: 19, mon: 8}, titles: {"en": "World Photography Day"}, emoji: "📷", notes: {"en": "World Photo Day"}, urls: {"en": "https://www.worldphotographyday.com/"}},
-        {type: "1D", start: {d: 19, mon: 8}, titles: {"en": "International Orangutan Day"}, emoji: "🦧", urls: {"en": "http://www.worldorangutanevents.org/international-orangutan-day.php"}},
-        {type: "1D", start: {d: 19, mon: 8}, titles: {"en": "International Bow Day"}, emoji: "🎀", urls: {"en": "https://www.daysoftheyear.com/days/international-bow-day/"}},
+        {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "World Photography Day"}, emoji: "📷", notes: {"en": "World Photo Day"}, urls: {"en": "https://www.worldphotographyday.com/"}, notes: {"en": "National Photography Day\nWorld Photo Day"}},
+        {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "International Orangutan Day", "he": "יום האורנגאוטן הבינלאומי"}, emoji: "🦧", urls: {"en": "http://www.worldorangutanevents.org/international-orangutan-day.php", "he": "https://www.daysoftheyear.co.il/2018/08/19.html"}},
+        {type: "1D", start: {mon: 8, d: 19}, titles: {"en": "International Bow Day"}, emoji: "🎀", urls: {"en": "https://www.daysoftheyear.com/days/international-bow-day/"}},
         {type: "1D", start: {d: 20, mon: 8}, titles: {"en": "World Mosquito Day"}, first: {era: 1, y: 1897}, emoji: "🦟", urls: {"en": "https://www.daysoftheyear.com/days/world-mosquito-day/"}},
         {type: "1D", start: {d: 24, mon: 8}, titles: {"en": "International Strange Music Day"}, first: {era: 1, y: 1997}, emoji: "🎶", urls: {"en": "https://www.daysoftheyear.com/days/international-strange-music-day/"}},
         {type: "1D", start: {d: 26, mon: 8}, titles: {"en": "International Dog Day", "he": "יום הכלב הבינלאומי"}, first: {era: 1, y: 2004}, emoji: "🦮", urls: {"en": "https://www.nationaldogday.com/"}},
@@ -1574,6 +1574,10 @@
         {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/world-calligraphy-day/"}, titles: {"en": "World Calligraphy Day"}, emoji: "🖋️"},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/never-give-up-day/"}, titles: {"en": "Never Give Up Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/pinot-noir-day/"}, titles: {"en": "Pinot Noir Day"}, emoji: "🍷"},
-        {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/serendipity-day/"}, titles: {"en": "Serendipity Day"}, first: {era: 1, y: 2010}},
-        {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/world-breast-cancer-research-day/"}, titles: {"en": "World Breast Cancer Research Day"}, inherits: "*MedicalAwareness*"},    ]
+        {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/serendipity-day/", "he": "https://www.daysoftheyear.co.il/2018/08/18.html"}, titles: {"en": "Serendipity Day", "he": "יום הסרנדיפיות"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/world-breast-cancer-research-day/"}, titles: {"en": "World Breast Cancer Research Day"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-geocaching-day/"}, titles: {"en": "International Geocaching Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-homeless-animals-day/"}, titles: {"en": "International Homeless Animals Day"}, notes: {"en": "IHAD"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-honey-bee-day/"}, titles: {"en": "World Honey Bee Day"}, emoji: "🐝", first: {era: 1, y: 2009}},
+    ]
 }

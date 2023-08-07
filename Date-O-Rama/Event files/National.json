@@ -1508,5 +1508,8 @@
          {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-fajita-day/"}, titles: {"en": "National Fajita Day"}},
          {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-ice-cream-pie-day/"}, titles: {"en": "National Ice Cream Pie Day"}},
          {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/national-mail-order-catalog-day/"}, titles: {"en": "National Mail Order Catalog Day"}},
+         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-patient-advocacy-day/"}, titles: {"en": "National Patient Advocacy Day"}, first: {era: 1, y: 1993}},
+         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-potato-day/"}, titles: {"en": "National Potato Day"}, emoji: "🥔"},
+         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/national-soft-ice-cream-day/"}, titles: {"en": "National Soft Ice Cream Day"}, emoji: "🍦"},
     ]
 }
