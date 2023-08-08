@@ -1554,7 +1554,6 @@
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/happiness-happens-day/"}, titles: {"en": "Happiness Happens Day"}, emoji: "😀"},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/international-allyship-day/"}, titles: {"en": "International Allyship Day"}, first: {era: 1, y: 2023}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/odie-day/"}, titles: {"en": "Odie Day"}},
-        {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/peace-festival-in-augsburg/"}, titles: {"en": "Peace Festival in Augsburg"}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/wear-your-mothers-jewelry-day/"}, titles: {"en": "Wear Your Mother’s Jewelry Day"}, first: {era: 1, y: 2017}, emoji: "💍"},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/annual-perseid-meteor-shower-peak-night/"}, titles: {"en": "Annual Perseid Meteor Shower Peak Night"}, emoji: "☄️"},
         {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/hold-hands-day/"}, titles: {"en": "Hold Hands Day"}},
