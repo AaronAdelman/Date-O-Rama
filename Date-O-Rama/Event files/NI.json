@@ -16,5 +16,7 @@
         {titles: {"es": "Fiesta de San Jerónimo"}, start: {mon: 9, d: 30}, type: "1D", urls: {"en": "https://nationaltoday.com/fiesta-de-san-jeronimo-nicaragua/"}, first: {era: 1, y: 1987}},
         {type: "1D", start: {mon: 7, d: 25}, urls: {"en": "https://nationaltoday.com/fiesta-de-santiago-nicaragua/"}, inherits: "Feast of St. James"},
         {inherits: "Feast of Saints Joachim and Anne", type: "1D", start: {mon: 7, d: 26}},
+        {type: "1D", start: {mon: 8, d: 27}, urls: {"en": "https://nationaltoday.com/crab-soup-day/"}, titles: {"en": "Crab Soup Day"}},
+
    ]
 }
