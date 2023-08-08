@@ -1599,7 +1599,11 @@
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/frankenstein-day/"}, titles: {"en": "Frankenstein Day"}},
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/international-cabernet-sauvignon-day/"}, titles: {"en": "International Cabernet Sauvignon Day"}, emoji: "🍷", first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/slinky-day/", "he": "https://www.daysoftheyear.co.il/2018/08/30.html"}, titles: {"en": "Slinky Day", "he": "יום הסלינקי"}},
-        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/spirit-festival/"}, titles: {"en": "Spirit Festival"}},
-        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/ullambana/"}, titles: {"en": "Ullambana"}},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/eat-outside-day/"}, titles: {"en": "Eat Outside Day"}, notes: {"en": "National Eat Outside Day"}, emoji: "🧺"},
+        {type: "1D", start: {mon: 8, d: 27, thruMon: 9, thruD: 2}, urls: {"en": "https://nationaltoday.com/international-cabernet-day/"}, titles: {"en": "International Cabernet Day"}, emoji: "🍷", first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/we-love-memoirs-day/"}, titles: {"en": "We Love Memoirs Day"}, emoji: "📝"},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/world-distance-learning-day/"}, titles: {"en": "World Distance Learning Day"}, emoji: "🎧"},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://anydayguide.com/calendar/2395", "he": "https://www.daysoftheyear.co.il/2018/08/3108-31.html"}, titles: {"en": "Blog Day", "he": "יום הבלוג"}, first: {era: 1, y: 2005}},
+
     ]
 }

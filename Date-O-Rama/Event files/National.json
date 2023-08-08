@@ -1546,5 +1546,8 @@
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/national-beach-day/"}, titles: {"en": "National Beach Day"}, first: {era: 1, y: 2014}, emoji: "🏖️"},
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/national-grief-awareness-day/"}, titles: {"en": "National Grief Awareness Day"}, emoji: "☹️", first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/national-toasted-marshmallow-day/"}, titles: {"en": "National Toasted Marshmallow Day"}},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-diatomaceous-earth-day/"}, titles: {"en": "National Diatomaceous Earth Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-matchmaker-day/"}, titles: {"en": "National Matchmaker Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-trail-mix-day/"}, titles: {"en": "National Trail Mix Day"}},
     ]
 }
