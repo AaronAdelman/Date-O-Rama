@@ -1452,7 +1452,7 @@
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-mustard-day/"}, titles: {"en": "National Mustard Day"}},
         {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-fresh-breath-day/", "he": "https://www.daysoftheyear.co.il/2019/08/fresh-breath-day.html"}, titles: {"en": "National Fresh Breath Day", "he": "יום הנשימה הרעננה הלאומי"}},
         {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-root-beer-float-day/"}, titles: {"en": "National Root Beer Float Day"}, emoji: "🍺"},
-        {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/sisters-day/"}, titles: {"en": "National Sisters Day"}, emoji: "👧👧"},
+        {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/sisters-day/", "he": "https://www.daysoftheyear.co.il/2017/08/blog-post_6.html"}, titles: {"en": "National Sisters Day", "he": "יום האחיות הלאומי"}, emoji: "👧👧"},
         {type: "1D", start: {mon: 8, d: 6}, urls: {"en": "https://nationaltoday.com/national-wiggle-your-toes-day/"}, titles: {"en": "National Wiggle Your Toes Day"}, emoji: "🦶"},
         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/purple-heart-day/"}, titles: {"en": "Purple Heart Day"}, first: {era: 1, y: 2014}, emoji: "💜"},
         {type: "1D", start: {mon: 8, d: 7}, urls: {"en": "https://nationaltoday.com/national-lighthouse-day/", "he": "https://www.daysoftheyear.co.il/2018/08/7.html"}, titles: {"en": "National Lighthouse Day", "he": "יום המגדלור הלאומי"}, emoji: "⛯"},

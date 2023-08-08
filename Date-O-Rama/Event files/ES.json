@@ -39,6 +39,6 @@
         {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/jenkins-ear-day/"}, titles: {"en": "Jenkins Ear Day"}},
         {type: "1D", start: {mon: 5, d: 30}, urls: {"he": "https://www.daysoftheyear.co.il/2017/05/30.html"}, titles: {"en": "Day of the Canary Islands", "he": "יום האיים הקנריים", "es": "Día de las Canarias"}},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/assumption-of-mary-spain/"}, inherits: "Assumption Day"},
-        {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/la-tomatina/"}, titles: {"en": "La Tomatina"}, emoji: "🍅", first: {era: 1, y: 1945}},
+        {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/la-tomatina/", "he": "https://www.daysoftheyear.co.il/2017/08/blog-post_30.html"}, titles: {"en": "La Tomatina", "he": "טומטינה", "es": "La Tomatina"}, emoji: "🍅", first: {era: 1, y: 1945}},
     ]
 }
