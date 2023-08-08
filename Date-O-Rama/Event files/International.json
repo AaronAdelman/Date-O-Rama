@@ -1594,5 +1594,9 @@
         {type: "nD", start: {mon: 8, d: 25}, end: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/be-kind-to-humankind-week/"}, titles: {"en": "Be Kind to Humankind Week"}, first: {era: 1, y: 1988}, notes: {"en": "BK2HK"}, emoji: "👨👩"},
         {type: "1D", start: {mon: 8, d: 27}, urls: {"en": "https://nationaltoday.com/the-duchess-who-wasnt-day/"}, titles: {"en": "The Duchess Who Wasn’t Day"}},
         {type: "1D", start: {mon: 8, d: 28}, urls: {"en": "https://nationaltoday.com/rainbow-bridge-remembrance-day/"}, titles: {"en": "Rainbow Bridge Remembrance Day"}, emoji: "🌈", first: {era: 1, y: 2015}},
-    ]
+        {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/according-to-hoyle-day/"}, titles: {"en": "According to Hoyle Day"}, emoji: "🃏🎲"},
+        {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/individual-rights-day/", "he": "https://www.daysoftheyear.co.il/2018/12/29.html"}, titles: {"en": "Individual Rights Day", "he": "יום זכויות הפרט"}},
+        {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/national-chop-suey-day/"}, titles: {"en": "National Chop Suey Day"}},
+        {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/national-lemon-juice-day/"}, titles: {"en": "National Lemon Juice Day"}, emoji: "🍋"},
+        ]
 }
