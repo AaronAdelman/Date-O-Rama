@@ -44,5 +44,7 @@
         {inherits: "Non-Working Day", type: "1D", start: {mon: 12, d: 7, y: 2023}},
         {inherits: "Non-Working Day", type: "1D", start: {mon: 12, d: 26, y: 2023}},
         {inherits: "Non-Working Day", type: "1D", start: {mon: 1, d: 2, y: 2024}},
+
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/santa-rosa-de-lima/"}, titles: {"en": "Santa Rosa de Lima Day"}},
     ]
 }

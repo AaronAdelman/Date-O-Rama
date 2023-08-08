@@ -1596,7 +1596,10 @@
         {type: "1D", start: {mon: 8, d: 28}, urls: {"en": "https://nationaltoday.com/rainbow-bridge-remembrance-day/"}, titles: {"en": "Rainbow Bridge Remembrance Day"}, emoji: "🌈", first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/according-to-hoyle-day/"}, titles: {"en": "According to Hoyle Day"}, emoji: "🃏🎲"},
         {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/individual-rights-day/", "he": "https://www.daysoftheyear.co.il/2018/12/29.html"}, titles: {"en": "Individual Rights Day", "he": "יום זכויות הפרט"}},
-        {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/national-chop-suey-day/"}, titles: {"en": "National Chop Suey Day"}},
-        {type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/national-lemon-juice-day/"}, titles: {"en": "National Lemon Juice Day"}, emoji: "🍋"},
-        ]
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/frankenstein-day/"}, titles: {"en": "Frankenstein Day"}},
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/international-cabernet-sauvignon-day/"}, titles: {"en": "International Cabernet Sauvignon Day"}, emoji: "🍷", first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/slinky-day/", "he": "https://www.daysoftheyear.co.il/2018/08/30.html"}, titles: {"en": "Slinky Day", "he": "יום הסלינקי"}},
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/spirit-festival/"}, titles: {"en": "Spirit Festival"}},
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/ullambana/"}, titles: {"en": "Ullambana"}},
+    ]
 }

@@ -303,5 +303,6 @@
         {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/national-emory-day/"}, titles: {"en": "National Emory Day"}},
         {type: "1D", start: {mon: 8, d: 26}, urls: {"en": "https://nationaltoday.com/national-kelly-day/"}, titles: {"en": "National Kelly Day"}},
         {type: "1D", start: {mon: 8, d: 26}, urls: {"en": "https://nationaltoday.com/national-logan-day/"}, titles: {"en": "National Logan Day"}},
+        {type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/national-harper-day/"}, titles: {"en": "National Harper Day"}},
     ]
 }
