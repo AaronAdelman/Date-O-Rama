@@ -34,8 +34,8 @@
         {inherits: "Labour Day", type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: -1}, titles: {"en": "Spring Bank Holiday"}, notes: {"en": "Spring Holiday"}, urls: {"en": "https://nationaltoday.com/spring-bank-holiday/"}},
-        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, inherits: "Summer Bank Holiday", locations: {"en": "Scotland"}, urls: {"en": "https://nationaltoday.com/festival-monday/"}},
-        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}},
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, inherits: "Summer Bank Holiday", locations: {"en": "Scotland"}, urls: {"en": "https://nationaltoday.com/festival-monday/"}, notes: {"en": "Late Summer Bank Holiday"}},
+        {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, inherits: "Summer Bank Holiday", locations: {"en": "England and Wales"}, urls: {"en": "https://nationaltoday.com/summer-bank-holiday-england-and-wales/"}, notes: {"en": "Late Summer Bank Holiday"}},
         
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         {type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, inherits: "Early May Bank Holiday", urls: {"en": "https://nationaltoday.com/early-may-bank-holiday/"}, first: {era: 1, y: 1978}},
