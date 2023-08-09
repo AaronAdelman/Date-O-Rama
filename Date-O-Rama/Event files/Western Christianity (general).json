@@ -139,7 +139,7 @@
         
         {titles: {"en": "Feast of St. Sixtus II and companions or St. Cajetan"}, type: "1D", start: {mon: 8, d: 7}},
         {titles: {"en": "Feast of St. Dominic"}, type: "1D", start: {mon: 8, d: 8}},
-        {titles: {"en": "Feast of St. Teresa Benedicta of the Cross (Edith Stein)"}, type: "1D", start: {mon: 8, d: 9}},
+        {titles: {"en": "Feast of St. Teresa Benedicta of the Cross (Edith Stein)", "he": "החג של תרזה בנדיקטה הקדושה (אדית שטיין)"}, type: "1D", start: {mon: 8, d: 9}},
         {titles: {"en": "Feast of St. Lawrence"}, type: "1D", start: {mon: 8, d: 10}},
         {titles: {"en": "Feast of St. Clare"}, type: "1D", start: {mon: 8, d: 11}},
         {titles: {"en": "Feast of St. Jane Frances de Chantal"}, type: "1D", start: {mon: 8, d: 12}},

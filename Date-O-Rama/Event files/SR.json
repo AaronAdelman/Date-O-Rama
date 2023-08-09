@@ -12,6 +12,6 @@
         {titles: {"en": "Keti Koti"}, type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/keti-koti/"}, inherits: "Emancipation Day"},
         {type: "1D", start: {mon: 10, d: 10}, titles: {"en": "Maroons Day"}, urls: {"en": "https://nationaltoday.com/maroons-day/"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 2, d: 25}, urls: {"en": "https://nationaltoday.com/day-of-liberation-and-innovation/"}, titles: {"en": "Day of Liberation and Innovation"}, first: {era: 1, y: 2018}},
-        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/suriname-indigenous-peoples-day/"}, titles: {"en": "Indigenous People’s Day"}},
+        {type: "1D", start: {mon: 8, d: 9}, urls: {"en": "https://nationaltoday.com/suriname-indigenous-peoples-day/"}, titles: {"en": "Indigenous People’s Day", "he": "יום העמים הילידים"}},
    ]
 }

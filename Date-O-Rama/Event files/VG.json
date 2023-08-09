@@ -22,7 +22,7 @@
         {type: "1D", start: {mon: 6, d: 29, wkd: [2]}, inherits: "Virgin Islands Day"},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/emancipation-festival"}, titles: {"en": "Emancipation Monday"}, notes: {"en": "August Festival (day 1)"}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [3], d: 2, thruD: 8}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/emancipation-festival"}, titles: {"en": "Emancipation Tuesday"}, notes: {"en": "August Festival (day 2)"}},
-        {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [4], d: 3, thruD: 9}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/emancipation-festival"}, titles: {"en": "Emancipation Wednesday"}, notes: {"en": "August Festival (day 3)"}},
+        {inherits: "Emancipation Day", type: "1D", start: {mon: 8, wkd: [4], d: 3, thruD: 9}, urls: {"en": "https://www.officeholidays.com/holidays/british-virgin-islands/emancipation-festival"}, titles: {"en": "Emancipation Wednesday", "he": "יום רביעי של אמנציפציה"}, notes: {"en": "August Festival (day 3)"}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 3}, titles: {"en": "Heroes and Forefathers Day"}, urls: {"en": "https://nationaltoday.com/heroes-and-forefathers-day/"}, first: {era: 1, y: 2021}, notes: {"en": "Heroes and Foreparents Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
