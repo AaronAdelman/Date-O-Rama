@@ -26,7 +26,7 @@
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 2}, inherits: "King’s Birthday", "locations": {"en": "Australian Capital Territory, New South Wales, South Australia, Tasmania, and Victoria"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/australia/australia-kings-birthday"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "New South Wales Bank Holiday"}, urls: {"en": "https://nationaltoday.com/new-south-wales-bank-holiday/"}, first: {era: 1, y: 1875}, inherits: "Bank Holiday"},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Picnic Day"}, urls: {"en": "https://nationaltoday.com/northern-territory-picnic-day/"}, emoji: "🧺", first: {era: 1, y: 1875}},
-        {type: "1D", start: {mon: 8, wkd: [4], wkd: -3}, urls: {"en": "https://nationaltoday.com/ekka-peoples-day/"}, titles: {"en": "Ekka People’s Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: -3}, urls: {"en": "https://nationaltoday.com/ekka-peoples-day/"}, titles: {"en": "Ekka People’s Day"}, first: {era: 1, y: 2022}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 1}},
         {inherits: "King’s Birthday", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: -1}, "locations": {"en": "Western Australia"}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/australia/western-australia/australia-kings-birthday"}},
         {type: "1D", start: {mon: 9, d: 23, thruD: 29, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/australia/victoria/grand-final-eve"}, titles: {"en": "Grand Final Eve"}, first: {era: 1, y: 2021}},
