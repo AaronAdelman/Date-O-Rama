@@ -1471,7 +1471,7 @@
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/herbert-hoover-day/"}, titles: {"en": "Herbert Hoover Day", "he": "יום הרברט הובר"}, inherits: "*BDay*", first: {era: 1, y: 1874}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-smores-day/"}, titles: {"en": "National S’mores Day", "he": "יום סמורס הלאומי"}},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-ski-citrus-soda-day/"}, titles: {"en": "National SKI Citrus Soda Day"}, first: {era: 1, y: 2020}, emoji: "🥤"},
-        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-spoil-dog-day/"}, titles: {"en": "National Spoil Your Dog Day", "he": "יום הלאומי לפנק את הכלב שלך"}, emoji: "🐩"},
+        {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/national-spoil-dog-day/"}, titles: {"en": "National Spoil Your Dog Day", "he": "יום פינוק הכלב הלאומי"}, emoji: "🐩"},
         {type: "1D", start: {mon: 8, d: 10}, urls: {"en": "https://nationaltoday.com/duran-duran-appreciation-day/"}, titles: {"en": "Duran Duran Appreciation Day", "he": "יום הוקרה לדוראן דוראן"}, notes: {"en": "National Duran Duran Appreciation Day"}, emoji: "🎸"},
         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-align-your-teeth-day/"}, titles: {"en": "National Align Your Teeth Day", "he": "יום יישור השיניים הלאומי"}, emoji: "😁"},
         {type: "1D", start: {mon: 8, d: 11}, urls: {"en": "https://nationaltoday.com/national-fufu-day/"}, titles: {"en": "National Fufu Day"}, first: {era: 1, y: 2022}},

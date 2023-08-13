@@ -83,9 +83,10 @@
         {type: "1D", start: {d: 19, mon: 12}, titles: {"en": "Goa Liberation Day", "pt": "Dia da libertação de Goa", "kok": "गोंय मुक्ति दिस", "hi": "गोवा मुक्ति दिवस"}, notes: {"en": "Goa, Daman and Diu Liberation Day"}, urls: {"en": "https://nationaltoday.com/goa-liberation-day/"}, first: {era: 1, y: 1961}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
-        
-
-
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        {type: "1D", start: {mon: 12, d: 27, wkd: [4]}, urls: {"en": "https://www.officeholidays.com/holidays/india/nagaland/christmas-holiday"}, titles: {"en": "Christmas Festival"}},
+        {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://www.officeholidays.com/holidays/india/meghalaya/u-kiang-nangbah"}, titles: {"en": "U Kiang Nangbah"}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
 
 
 
@@ -128,7 +129,6 @@
         {inherits: "Nativity of Mary", type: "1D", start: {mon: 9, d: 8}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
-        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 30, wkd: [6]}},
         {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 26, "thruD": 31, wkd: [1]}},
 
