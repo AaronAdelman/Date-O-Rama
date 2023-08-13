@@ -10,10 +10,12 @@
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}, first: {era: 1, y: 1953}},
         {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
-        {inherits: "Vesak", type: "1D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 1983}},
         {titles: {"en": "Pancasila Day", "id": "Hari Lahir Pancasila"}, type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 6, d: 2, y: 2023, era: 1}, urls: {"en": "https://www.officeholidays.com/holidays/indonesia/wesak-day"}, titles: {"en": "Waisak Day Holiday"}},
+        {inherits: "Vesak", type: "1D", start: {"zmoPhase": "1stFull", mon: 5}, first: {era: 1, y: 1983}},
         {inherits: "Independence Day", type: "1D", start: {d: 17, mon: 8}, urls: {"en": "https://nationaltoday.com/indonesia-independence-day/"}, first: {era: 1, y: 1945}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.officeholidays.com/holidays/indonesia/christmas-holiday"}, inherits: "Christmas Holiday", first: {era: 1, y: 2023}},
 
         {titles: {"en": "Ministry of Religious Affairs Day", "id": "Hari Kementerian Agama Republik Indonesia"}, type: "1D", start: {mon: 1, d: 3}, first: {era: 1, y: 1946}},
         {titles: {"en": "Ocean Duty Day", "id": "Hari Dharma Samudera"}, notes: {"en": "Day of the Sea and Ocean Event", "id": "Hari Peristiwa Laut dan Samudera"}, type: "1D", start: {mon: 1, d: 15}, first: {era: 1, y: 1962}},
