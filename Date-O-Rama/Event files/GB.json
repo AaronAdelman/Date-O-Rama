@@ -139,7 +139,7 @@
         {type: "1D", start: {mon: 8, d: 3}, urls: {"en": "https://nationaltoday.com/cycle-work-day/"}, titles: {"en": "Cycle to Work Day"}, emoji: "🚲"},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/festival-monday/"}, titles: {"en": "Festival Monday"}, first: {era: 1, y: 1871}},
         {type: "1D", start: {mon: 8, d: 8}, urls: {"en": "https://nationaltoday.com/scottish-wildcat-day/"}, titles: {"en": "Scottish Wildcat Day"}},
-        {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/falklands-day/"}, titles: {"en": "Falklands Day"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
+        {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/falklands-day/"}, titles: {"en": "Falklands Day", "he": "יום איי פוקלנד"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
         {type: "1D", start: {mon: 8, d: 20, thruD: 26, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-burger-day/"}, titles: {"en": "National Burger Day"}, emoji: "🍔"},
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-zoo-awareness-day/"}, titles: {"en": "National Zoo Awareness Day"}, emoji: "🦓"},
     ]
