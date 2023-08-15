@@ -1490,7 +1490,7 @@
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/national-tattoo-removal-day/"}, titles: {"en": "National Tattoo Removal Day", "he": "יום הסרת הקעקועים הלאומי"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-back-school-prep-day/"}, titles: {"en": "National Back to School Prep Day", "he": "יום ההכנה הלאומי לחזרה לבית הספר"}, emoji: "🎒"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-leathercraft-day/"}, titles: {"en": "National Leathercraft Day", "he": "היום הלאומי למלאכת עור"}, emoji: "💼"},
-        {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-lemon-meringue-pie-day/"}, titles: {"en": "National Lemon Meringue Pie Day"}, emoji: "🥧"},
+        {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-lemon-meringue-pie-day/"}, titles: {"en": "National Lemon Meringue Pie Day", "he": "יום פאי לימון מרנג הלאומי"}, emoji: "🥧"},
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/national-relaxation-day/"}, titles: {"en": "National Relaxation Day", "he": "יום המנוחה הלאומי"}, emoji: "😎", first: {era: 1, y: 1985}},
         {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-authenticity-day/"}, titles: {"en": "National Authenticity Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-backflow-prevention-day/"}, titles: {"en": "National Backflow Prevention Day"}, first: {era: 1, y: 2021}},

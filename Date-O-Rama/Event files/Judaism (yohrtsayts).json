@@ -192,7 +192,7 @@
         {titles: {"he": "יום־שנה של החוזה מלובלין"}, type: "1D", start: {d: 9, mon: 12}, first: {era: 0, y: 5575}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ חיים מבריסק"}, type: "1D", start: {d: 21, mon: 12}, first: {era: 0, y: 5578}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הנצי״ב מוולוז׳ין"}, type: "1D", start: {d: 28, mon: 12}, first: {era: 0, y: 5553}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרב דוד כהן - הנזיר"}, type: "1D", start: {d: 28, mon: 12}, first: {era: 0, y: 5732}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הרב דוד כהן (הנזיר)"}, type: "1D", start: {d: 28, mon: 12}, first: {era: 0, y: 5732}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ שמואל סלנט"}, type: "1D", start: {d: 29, mon: 12}, first: {era: 0, y: 5569}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הראי״ה קוק"}, type: "1D", start: {d: 3, mon: 13}, first: {era: 0, y: 5595}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של האור שמח"}, type: "1D", start: {d: 4, mon: 13}, first: {era: 0, y: 5586}, inherits: "*DeathAnniv*"},
