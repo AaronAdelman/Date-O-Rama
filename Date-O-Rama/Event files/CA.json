@@ -18,7 +18,7 @@
         {inherits: "St. George’s Day", type: "1D", start: {mon: 4, d: 23}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/canada/mothers-day"}},
         {type: "1D", start: {mon: 5, d: 18, "thruD": 24, wkd: [2]}, titles: {"en": "Victoria Day", "he": "יום ויקטוריה", "fr": "Fête de la Reine"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaltoday.com/victoria-day/"}},
-        {type: "1D", start: {mon: 5, d: 18, thruD: 24, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/quebec/canada-quebec-national-patriots-day"}, titles: {"en": "National Patriots’ Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 5, d: 18, thruD: 24, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/canada/quebec/canada-quebec-national-patriots-day"}, titles: {"en": "National Patriots’ Day", "he": "יום הפטריוטים הלאומי"}, first: {era: 1, y: 2003}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://www.officeholidays.com/holidays/canada/fathers-day"}},
         {type: "1D", start: {mon: 6, d: 21}, titles: {"en": "National Indigenous Peoples Day", "fr": "Journée nationale des Autochthones"}, notes: {"en": "National Aboriginal Day"}, urls: {"en": "https://nationaltoday.com/canada-national-indigenous-peoples-day/"}, first: {era: 1, y: 1996}},
         {type: "1D", start: {mon: 6, d: 24}, titles: {"en": "National Holiday of Quebec", "fr": "Fête nationale du Québec / Saint-Jean-Baptiste"}},
