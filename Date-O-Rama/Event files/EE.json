@@ -28,7 +28,7 @@
         {inherits: "National Flag Day", type: "1D", start: {mon: 6, d: 4}, first: {era: 1, y: 1884}},
         {titles: {"en": "Day of Mourning and Commemoration", "et": "leinapäev"}, type: "1D", start: {mon: 6, d: 14}},
         {inherits: "Black Ribbon Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2009}},
-        {titles: {"en": "Grandparents Day", "et": "vanavanemate päev"}, type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Grandparents Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}},
         {titles: {"en": "Resistance Fighting Day", "et": "vastupanuvõitluse päev"}, type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://en.wikipedia.org/wiki/Resistance_Fighting_Day"}, notes: {"en": "Otto Tief Government", "et": "Otto Tiefi valitsuse päev"}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "Local Government Day"},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
