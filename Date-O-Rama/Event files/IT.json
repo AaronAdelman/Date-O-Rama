@@ -31,6 +31,15 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}, first: {era: 1, y: 1947}},
         
+        {type: "1D", start: {mon: 2, d: 10}, urls: {"en": "https://en.wikipedia.org/wiki/National_Memorial_Day_of_the_Exiles_and_Foibe"}, titles: {"en": "National Memorial Day of the Exiles and Foibe", "it": "Giorno del ricordo"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 2, d: 11}, titles: {"en": "Lateran Treaty Day", "it": "Patti Lateranensi"}},
+        {type: "1D", start: {mon: 9, d: 9}, titles: {"en": "Day of Remembrance for Sailors Lost at Sea", "it": "Giornata della memoria dei marinai scomparsi in mare"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "Four Days of Naples Day", "it": "Insurrezione popolare di Napoli contro i nazifascisti or Quattro giornate di Napoli"}},
+        {type: "1D", start: {mon: 10, d: 4}, titles: {"en": "Feast of Saints Francis and Catherine", "it": "San Francesco e Santa Caterina"}, first: {era: 1, y: 1958}},
+        {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://en.wikipedia.org/wiki/National_Unity_and_Armed_Forces_Day"}, titles: {"en": "National Unity and Armed Forces Day", "it": "Giorno dell’Unità Nazionale e Festa delle Forze Armate"}, first: {era: 1, y: 1919}},
+        {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "Remembrance day for military and civilian fallen in international peace missions", "it": "Giornata del ricordo dei Caduti militari e civili nelle missioni internazionali per la pace"}, first: {era: 1, y: 2009}},
+
+        
         {inherits: "Columbus Day", type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 1}, first: {era: 1, y: 1971}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {type: "1D", start: {mon: 6, d: 15}, inherits: "Engineer’s Day"},
