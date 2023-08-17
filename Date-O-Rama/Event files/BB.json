@@ -26,7 +26,7 @@
         {titles: {"en": "Anniversary of Bussa’s Rebellion"}, type: "1D", start: {mon: 4, d: 14}},
         {inherits: "Africa Day", type: "1D", start: {mon: 5, d: 25}},
         {titles: {"en": "Day of National Significance", "he": "יום של משמעות לאומית"}, type: "1D", start: {mon: 7, d: 26}},
-        {type: "1D", start: {mon: 8, d: 17}, titles: {"en": "Birthday of Marcus Garvey"}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 8, d: 17}, titles: {"en": "Birthday of Marcus Garvey", "he": "יום הולדת של מרקוס גארבי"}, inherits: "*BDay*"},
         {inherits: "International Day for the Remembrance of the Slave Trade and Its Abolition", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 1998}},
     ]
 }
