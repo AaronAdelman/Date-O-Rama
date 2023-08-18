@@ -1572,7 +1572,7 @@
         {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/world-greatness-day/"}, titles: {"en": "World Greatness Day"}, first: {era: 1, y: 2016}, emoji: "🦸‍♂️🦸‍♀️"},
         {type: "1D", start: {mon: 8, wkd: [4], d: 11, thruD: 17}, urls: {"en": "https://www.daysoftheyear.com/days/world-calligraphy-day/"}, titles: {"en": "World Calligraphy Day", "he": "יום הקליגרפיה העולמי"}, emoji: "🖋️", first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/never-give-up-day/"}, titles: {"en": "Never Give Up Day"}, first: {era: 1, y: 2000}},
-        {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/pinot-noir-day/"}, titles: {"en": "Pinot Noir Day"}, emoji: "🍷"},
+        {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/pinot-noir-day/"}, titles: {"en": "Pinot Noir Day", "he": "יום הפינו נואר הלאומי"}, emoji: "🍷"},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/serendipity-day/", "he": "https://www.daysoftheyear.co.il/2018/08/18.html"}, titles: {"en": "Serendipity Day", "he": "יום הסרנדיפיות"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 8, d: 18}, urls: {"en": "https://nationaltoday.com/world-breast-cancer-research-day/"}, titles: {"en": "World Breast Cancer Research Day"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 8, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-geocaching-day/"}, titles: {"en": "International Geocaching Day"}, first: {era: 1, y: 2011}},
