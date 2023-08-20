@@ -30,5 +30,7 @@
         {type: "1D", start: {mon: 8, d: 14}, titles: {"en": "Honey Feast of the Savior"}, emoji: "🍯"},
         {type: "1D", start: {mon: 8, d: 19}, urls: {"en": "https://nationaltoday.com/saviours-of-the-apple-feast-day/"}, titles: {"en": "Saviours of the Apple Feast Day"}, emoji: "🍎"},
         {type: "1D", start: {mon: 8, d: 29}, titles: {"en": "Nut Feast of the Savior"}, emoji: "🌰"},
+        {inherits: "Border Guards Day", type: "1D", start: {mon: 5, d: 28}, first: {era: 1, y: 1919}},
+        {inherits: "Day of Remembrance of the Victims of Political Repressions", start: {mon: 10, d: 30}, type: "1D", first: {era: 1, y: 1991}},
    ]
 }
