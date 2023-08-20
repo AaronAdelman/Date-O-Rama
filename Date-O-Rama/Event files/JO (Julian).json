@@ -1,0 +1,12 @@
+{
+    titles: {"*": "JO"},
+    "//": "Jordan",
+    defaultLocale: "en",
+    calendarCode: "jul",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "Palm Sunday", type: "1D", start: {"Easter": "Easter", "offsetD": -7}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+    ]
+}

@@ -158,6 +158,8 @@
 		A545D8602924235C0055F457 /* SwiftAA in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A545D85E2924235C0055F457 /* SwiftAA */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A5490F982550339D00EFB13F /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5490F972550339D00EFB13F /* WatchFace.swift */; };
 		A5490FA92550360700EFB13F /* ASAClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A506E3D7252C9378009345A0 /* ASAClockCell.swift */; };
+		A54B61AE2A92455B005CC33D /* JO (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A54B61AD2A92455B005CC33D /* JO (Julian).json */; };
+		A54B61AF2A92455B005CC33D /* JO (Julian).json in Resources */ = {isa = PBXBuildFile; fileRef = A54B61AD2A92455B005CC33D /* JO (Julian).json */; };
 		A54F0536259B5C4B004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F053C259B5CCC004122DC /* TimeZoneExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */; };
 		A54F094226D57FF70093E13F /* Judaism.json in Resources */ = {isa = PBXBuildFile; fileRef = A5E3606324C71FBC0000A268 /* Judaism.json */; };
@@ -1223,6 +1225,7 @@
 		A54539DF26A9BA180028EAD5 /* Shia (times, Jafari).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Shia (times, Jafari).json"; sourceTree = "<group>"; };
 		A54539E526A9CB600028EAD5 /* Sunni Islam (times, Umm al-Qura).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Sunni Islam (times, Umm al-Qura).json"; sourceTree = "<group>"; };
 		A5490F972550339D00EFB13F /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
+		A54B61AD2A92455B005CC33D /* JO (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "JO (Julian).json"; sourceTree = "<group>"; };
 		A54F0535259B5C4B004122DC /* TimeZoneExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneExtensions.swift; sourceTree = "<group>"; };
 		A554AFA2294F7CED0068D8E0 /* BA (Julian).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "BA (Julian).json"; sourceTree = "<group>"; };
 		A5596A3D258950AD002298CE /* LocaleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleExtensions.swift; sourceTree = "<group>"; };
@@ -1911,6 +1914,7 @@
 				A5BC24BF2796EABE00D14B21 /* Jewish planetary hours.json */,
 				A56F0DA025F1705200301969 /* Jewish zodiac.json */,
 				A5EFFF5F285B61E500F2205F /* JM.json */,
+				A54B61AD2A92455B005CC33D /* JO (Julian).json */,
 				A5EFFFD4285B851300F2205F /* JO.json */,
 				A5EE2FA02815DB9800B6E81E /* JP.json */,
 				A5E7590D2768BC23008D7D57 /* Judaism (forgotten).json */,
@@ -2655,6 +2659,7 @@
 				A50DA52128686272008D54AE /* CN (Chinese).json in Resources */,
 				A5EFFF6A285B63BB00F2205F /* IR (Muslim).json in Resources */,
 				A5B999AF28622AB100072FD5 /* BQ.json in Resources */,
+				A54B61AF2A92455B005CC33D /* JO (Julian).json in Resources */,
 				A5FB22A828638D2B00B5042B /* SJ.json in Resources */,
 				A5E4964B286253D0001BF40C /* MS.json in Resources */,
 				A5EFFFAD285B7F2E00F2205F /* QA.json in Resources */,
@@ -3293,6 +3298,7 @@
 				A5DC9C7E27285D2100047F64 /* Planets.json in Resources */,
 				A51C8578282D64A00081A11B /* Buddhism.json in Resources */,
 				A5B999D228622D8300072FD5 /* CX.json in Resources */,
+				A54B61AE2A92455B005CC33D /* JO (Julian).json in Resources */,
 				A5E8BAE027FCCDD00018CD36 /* PK.json in Resources */,
 				A5B75CF92A2F5A900010AD55 /* BG (Julian).json in Resources */,
 				A5EFFF44285B5CE800F2205F /* CY.json in Resources */,
