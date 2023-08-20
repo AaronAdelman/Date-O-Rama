@@ -14,7 +14,7 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Hong Kong Special Administrative Region Establishment Day", type: "1D", start: {mon: 7, d: 1}, first: {era: 1, y: 1997}, notes: {"en": "Special Administration Region (SAR) Day"}},
         {type: "1D", start: {mon: 10, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-national-day"}, inherits: "National Day"},
-        {type: "1D", start: {mon: 10, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-national-day"}, titles: {"en": "National Day (in lieu)"}, inherits: "National Day"},
+        {type: "1D", start: {mon: 10, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-national-day"}, inherits: "National Day (in lieu)"},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {type: "1D", start: {mon: 12, d: 26, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/christmas-holiday"}, inherits: "Boxing Day"},
         {type: "1D", start: {mon: 12, d: 27, thruD: 28, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/christmas-holiday"}, inherits: "Boxing Day"},
