@@ -1,16 +1,24 @@
 {
     titles: {"*": "XK"},
     "//": "Kosovo",
+    "TODO": "Muslim holidays",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.00, "green": 0.00, "blue": 0.50},
     eventSpecifications: [
-        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/day-of-ashakalia/"}, titles: {"en": "Day of Ashakalia"}},
+        {type: "nD", start: {mon: 1, d: 1}, end: {mon: 1, d: 2}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 4, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/kosovo/day-after-new-years-day"}, inherits: "Day after New Year’s Day (in lieu)"},
         {type: "1D", start: {mon: 2, d: 17}, urls: {"en": "https://nationaltoday.com/kosovo-independence-day/"}, inherits: "Independence Day", first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/kosovo-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 2008}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {type: "1D", start: {mon: 5, d: 9}, urls: {"en": "https://www.officeholidays.com/holidays/kosovo/europe-day"}, inherits: "Europe Day"},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
+        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/day-of-ashakalia/"}, titles: {"en": "Day of Ashakalia"}},
         {type: "1D", start: {mon: 3, d: 6}, urls: {"en": "https://nationaltoday.com/day-of-memorial-and-respect-for-veterans/"}, titles: {"en": "Day of Memorial And Respect For Veterans"}},
         {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://nationaltoday.com/day-of-romas/"}, titles: {"en": "Day of Romas"}, inherits: "International Romani Day"},
-        {type: "1D", start: {mon: 4, d: 9}, urls: {"en": "https://nationaltoday.com/kosovo-constitution-day/"}, inherits: "Constitution Day", first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/peace-day/"}, titles: {"en": "Peace Day"}, first: {era: 1, y: 1999}, emoji: "☮️"},
-
     ]
 }
