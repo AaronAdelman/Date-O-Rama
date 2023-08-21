@@ -24,7 +24,7 @@
         {titles: {"he": "יום טוב של בני פחת מואב בן יהודה", "en": "Festival of Bene Paḥath Mo’av ben Yehudhah"}, type: "1D", start: {mon: 12, d: 20}, notes: {"he": "תענית כ״ו ע״א"}},
         {titles: {"he": "יום טוב של בני עדין בן יהודה", "en": "Festival of Bene ‘Adhin ben Yehudhah"}, type: "1D", start: {mon: 13, d: 20}, notes: {"he": "תענית כ״ו ע״א, תענית כ״ח ע״א"}},
         
-        {titles: {"he": "חנוכת שיר ירושלם", "en": "Song of Yerushalayim Dedication Day"}, type: "1D", start: {mon: 9, d: 7}, notes: {"he": "מגילת תענית"}},
+        {titles: {"he": "חנוכת שור ירושלים", "en": "Wall of Yerushalayim Dedication Day"}, type: "1D", start: {mon: 9, d: 7}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "יומא דביה נפקו בני חקרא מירושלם", "en": "Day in Which Bene Ḥaqra’ Went Out of Yerushalayim"}, type: "1D", start: {mon: 9, d: 23}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "יומא דביה איתנטילו כלילאי מיהודה ומירושלם", "en": "Day in Which the Coronation Tax Was Remitted from Yehudhah and Yerushalayim"}, type: "1D", start: {mon: 9, d: 27}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "אחידת מגדל צור", "en": "Conquest of the Tower of Ṣur"}, type: "1D", start: {mon: 10, d: 17}, notes: {"he": "מגילת תענית"}},
@@ -32,7 +32,7 @@
         {titles: {"he": "יומא דביה איתנטילו דימסנאי מיהודה וירושלים", "en": "Day in Which Public Revenue Farmers Were Removed from Yehudhah and Yerushalayim"}, type: "1D", start: {mon: 10, d: 25}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "יומא דביה עדא ספר גזרתא", "en": "Book of Enactments Nullification Day"}, type: "1D", start: {mon: 11, d: 14}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "יומא דביה תבנא לדיננא", "en": "Reestablishment of Jewish Law Day"}, type: "1D", start: {mon: 12, d: 24}, notes: {"he": "מגילת תענית"}},
-        {titles: {"he": "חנוכת שיר ירושלם", "en": "Song of Yerushalayim Dedication Day"}, type: "1D", start: {mon: 13, d: 4}, notes: {"he": "מגילת תענית"}},
+        {titles: {"he": "חנוכת שור ירושלם", "en": "Wall of Yerushalayim Dedication Day"}, type: "1D", start: {mon: 13, d: 7}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "יומא דביה נפקו רומאי מן ירושלם", "en": "Romans Leave Yerushalayim  Day"}, type: "1D", start: {mon: 13, d: 17}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "יומא דביה תבו לקטלא משמדיא", "en": "Death Penalty Restoration Day"}, type: "1D", start: {mon: 13, d: 22}, notes: {"he": "מגילת תענית"}},
         {titles: {"he": "בטילת אדכרתא מן שטריא", "en": "Cancelation of Use of the Tetragrammaton in Documents Day"}, type: "1D", start: {mon: 1, d: 3}, notes: {"he": "מגילת תענית"}},
