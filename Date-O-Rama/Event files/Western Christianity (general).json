@@ -152,7 +152,7 @@
 
         {titles: {"en": "Feast of St. John Eudes"}, type: "1D", start: {mon: 8, d: 19}},
         {titles: {"en": "Feast of St. Bernard of Clairvaux", "he": "החג של ברנרדוס הקדוש"}, type: "1D", start: {mon: 8, d: 20}},
-        {titles: {"en": "Feast of St. Pius X"}, type: "1D", start: {mon: 8, d: 21}},
+        {titles: {"en": "Feast of St. Pius X", "he": "החג של פיוס העשירי הקדוש"}, type: "1D", start: {mon: 8, d: 21}},
         {titles: {"en": "Queenship of Blessed Virgin Mary"}, type: "1D", start: {mon: 8, d: 22}},
         {inherits: "Feast of St. Rose of Lima", type: "1D", start: {mon: 8, d: 23}},
         {titles: {"en": "Feast of St. Bartholomew the Apostle"}, type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/st-bartholomew-history/"}},
