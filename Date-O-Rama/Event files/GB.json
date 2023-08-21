@@ -19,7 +19,7 @@
         
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {titles: {"en": "New Year’s Day Observed"}, type: "1D", start: {mon: 1, d: 2, "thruD": 3, wkd: [2]}},
-        {titles: {"en": "New Year Holiday"}, type: "1D", start: {mon: 1, d: 2}},
+        {inherits: "New Year Holiday", type: "1D", start: {mon: 1, d: 2}},
         {titles: {"en": "New Year Holiday Observed"}, type: "1D", start: {mon: 1, d: 3, "thruD": 4, wkd: [3]}},
         {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},

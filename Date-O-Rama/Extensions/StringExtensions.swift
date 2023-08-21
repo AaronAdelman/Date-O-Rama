@@ -131,7 +131,7 @@ extension String {
         case REGION_CODE_Saudi_Arabia:
             return [.Gregorian, .IslamicUmmAlQuraSolar]
             
-        case REGION_CODE_Albania, REGION_CODE_Romania, REGION_CODE_Bulgaria,  REGION_CODE_Georgia, REGION_CODE_Greece, REGION_CODE_Ukraine, REGION_CODE_Cyprus:
+        case REGION_CODE_Albania, REGION_CODE_Romania, REGION_CODE_Bulgaria,  REGION_CODE_Georgia, REGION_CODE_Greece, REGION_CODE_Ukraine, REGION_CODE_Cyprus, REGION_CODE_Kyrgyzstan:
             return [.Gregorian, .Julian]
             
         case REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Philippines, REGION_CODE_Singapore, REGION_CODE_Vietnam:

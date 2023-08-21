@@ -5,6 +5,14 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 2, wkd: [2, 4]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/day-after-new-years-day"}, inherits: "New Year Holiday"},
+        {type: "1D", start: {mon: 1, d: 3, wkd: [2, 3, 5]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/day-after-new-years-day"}, inherits: "New Year Holiday"},
+        {type: "1D", start: {mon: 1, d: 4, wkd: [4, 6]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/day-after-new-years-day"}, inherits: "New Year Holiday"},
+        {type: "1D", start: {mon: 1, d: 5, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/day-after-new-years-day"}, inherits: "New Year Holiday"},
+        {type: "1D", start: {mon: 1, d: 6, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/kyrgyzstan/day-after-new-years-day"}, inherits: "New Year Holiday"},
+
+        
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 19}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Independence Day", type: "1D", start: {d: 31, mon: 8}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/kyrgyzstan-independence-day/"}},
