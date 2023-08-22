@@ -61,7 +61,7 @@
         {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "Soldier’s Day", "pt": "Dia do Soldado"}},
         {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Aviator’s Day", "pt": "Dia do Aviador"}},
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
-        {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
+        {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "he": "יום פוּלקלוֹר", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "1D", start: {mon: 5, d: 24}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, inherits: "National Pizza Day"},
