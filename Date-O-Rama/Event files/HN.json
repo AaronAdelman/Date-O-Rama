@@ -18,9 +18,9 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/honduras/mothers-day"}},
         {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/honduras-independence-day/"}},
-        {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Francisco Morazán’s Day", "es": "Día del Soldado"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, first: {era: 1, y: 1792}, notes: {"en": "Soldier’s Day"}},
+        {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Francisco Morazán’s Day", "es": "Día del Soldado"}, urls: {"en": "https://nationaltoday.com/francisco-morazans-day/"}, first: {era: 1, y: 1792}, notes: {"en": "Soldier’s Day", "he": "יום החייל"}},
         {type: "nD", start: {mon: 10, d: 4}, end: {mon: 10, d: 7}, titles: {"en": "Morazánica Week", "es": "Semana Morazánica"}, urls: {"en": "https://nationaltoday.com/semana-morazanica-in-honduras/"}, first: {era: 1, y: 2014}},
-        {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Discovery of America Day", "es": "Día del Descubrimiento de América"}, urls: {"en": "https://nationaltoday.com/honduras-discovery-of-america-day/"}, first: {era: 1, y: 2015}, notes: {"en": "Soldier’s Day"}},
+        {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Discovery of America Day", "es": "Día del Descubrimiento de América"}, urls: {"en": "https://nationaltoday.com/honduras-discovery-of-america-day/"}, first: {era: 1, y: 2015}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/armed-forces-day-in-honduras/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 

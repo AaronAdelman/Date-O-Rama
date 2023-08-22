@@ -56,15 +56,15 @@
 
         {type: "1D", start: {mon: 12, d: 11}, inherits: "Engineer’s Day"},
         {type: "1D", start: {mon: 6, d: 11}, inherits: "Navy Day"},
-        {type: "1D", start: {mon: 12, d: 13}, titles: {"en": "Sailor’s Day", "pt": "Dia do Marinheiro"}},
+        {type: "1D", start: {mon: 12, d: 13}, titles: {"en": "Sailor’s Day", "he": "יום המלח", "pt": "Dia do Marinheiro"}},
         {type: "1D", start: {mon: 4, d: 19}, inherits: "Army Day"},
-        {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "Soldier’s Day", "pt": "Dia do Soldado"}},
-        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Aviator’s Day", "pt": "Dia do Aviador"}},
+        {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "Soldier’s Day", "he": "יום החייל", "pt": "Dia do Soldado"}},
+        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Aviator’s Day", "he": "יום הטייס", "pt": "Dia do Aviador"}},
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Friendship Day"},
-        {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "he": "יום פולקלור", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
+        {type: "1D", start: {mon: 8, d: 22}, titles: {"en": "Folklore Day", "he": "יום הפולקלור", "pt": "Dia do Folclore"}, urls: {"en": "https://nationaltoday.com/folklore-day/"}, first: {era: 1, y: 1965}},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "Start of Fasching", first: {era: 1, y: 1234}},
         {type: "1D", start: {mon: 5, d: 24}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 7, d: 10}, urls: {"en": "https://nationaltoday.com/national-pizza-day-in-brazil/"}, inherits: "National Pizza Day"},
-        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://en.wikipedia.org/wiki/World_Rock_Day", "es": "https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock", "pt": "https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, titles: {"en": "World Rock Day", "es": "Día Mundial del Rock", "pt": "Dia Mundial do Rock"}, emoji: "🎸", first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 7, d: 13}, urls: {"en": "https://en.wikipedia.org/wiki/World_Rock_Day", "es": "https://es.wikipedia.org/wiki/D%C3%ADa_Mundial_del_Rock", "pt": "https://pt.wikipedia.org/wiki/Dia_Mundial_do_Rock"}, titles: {"en": "World Rock Day", "he": "יום הרוק העולמי", "es": "Día Mundial del Rock", "pt": "Dia Mundial do Rock"}, emoji: "🎸", first: {era: 1, y: 1990}},
     ]
 }
