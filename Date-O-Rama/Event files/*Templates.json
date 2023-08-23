@@ -274,6 +274,7 @@
         {template: "Labour Day Holiday", type: "1D", start: {mon: 5, d: 2, wkd: [2, 3, 5]}, titles: {"en": "Labour Day Holiday"}},
         {template: "Laetare", titles: {"en": "Laetare", "fr": "Mi-Carême"}, notes: {"en": "Mothering Sunday\nPretzel Sunday"}, type: "1D", start: {"Easter": "Easter", "offsetD": -21}},
         {template: "Lantern Festival", type: "1D", start: {mon: 1, d: 15}, titles: {"en": "Lantern Festival", "zh": "元宵節", "zh_CN": "元宵节", "he": "פסטיבל עששיות"}, urls: {"en": "https://www.daysoftheyear.com/days/lantern-festival/"}, emoji: "🏮"},
+        {template: "Lao New Year Holiday", type: "1D", start: {mon: 4, d: 17, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/lao/lao-new-year"}, titles: {"en": "Lao New Year Holiday"}},
         {template: "Laylat al-Qadr", titles: {"en": "Laylat al-Qadr (Night of Power)", "he": "לילת אל־קדר", "ar": "لیلة القدر‎"}, type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/laylat-al-qadr/"}, notes: {"en": "Laylat Al Qadr\nShab-e-Qadr\nNight of Destiny"}},
         {template: "Leo", titles: {"en": "Leo", "he": "אריה"}, type: "1M", start: {mon: 12}, emoji: "♌️", inherits: "*Astrology*"},
         {template: "Liberation Day (day off)", type: "1D", start: {d: 3, mon: 3}, titles: {"en": "Liberation Day (day off)"}, urls: {"en": "https://en.wikipedia.org/wiki/Liberation_Day"}},

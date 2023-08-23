@@ -1,15 +1,23 @@
 {
     titles: {"*": "LA"},
     "//": "Laos",
+    "TODO": "Buddhist holidays",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lao/international-new-years-day"}, inherits: "New Year’s Day"},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {type: "nD", start: {mon: 4, d: 14}, end: {mon: 4, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/lao/lao-new-year"}, titles: {"en": "Lao New Year"}},
+        {type: "1D", start: {mon: 4, d: 17, wkd: [2]}, inherits: "Lao New Year Holiday"},
+        {type: "1D", start: {mon: 4, d: 18, wkd: [3]}, inherits: "Lao New Year Holiday"},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/lao/labour-day"}, inherits: "Labour Day"},
+        {titles: {"en": "Women’s Union Establishment Day"}, type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/womens-union-establishment-day/"}, first: {era: 1, y: 1955}, emoji: "👩"},
+        {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/lao/bol-establishment-day"}, titles: {"en": "BOL Establishment Day"}, emoji: "🏦", first: {era: 1, y: 1968}},
+        {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/lao-national-day/"}, inherits: "National Day", first: {era: 1, y: 1975}},
+
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {titles: {"en": "Women’s Union Establishment Day"}, type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/womens-union-establishment-day/"}, first: {era: 1, y: 1955}, emoji: "👩"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
-        {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/lao-national-day/"}, inherits: "National Day", first: {era: 1, y: 1975}},
     ]
 }
