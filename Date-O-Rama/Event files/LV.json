@@ -1,17 +1,30 @@
 {
     titles: {"*": "LV"},
     "//": "Latvia",
+    "TODO": "Latvian Song and Dance Festival",
     defaultLocale: "en",
     calendarCode: "gre",
     calendarColor: {"red": 0.64, "green": 0.20, "blue": 0.23},
     eventSpecifications: [
-        {titles: {"en": "Proclamation Day of the Republic of Latvia"}, type: "1D", start: {mon: 11, d: 18}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},
-        {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {type: "1D", start: {mon: 5, d: 1}, inherits: "Labour Day"},
+        {inherits: "Restoration of Independence Day (bridge day)", type: "1D", start: {mon: 5, d: 3, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
+        {inherits: "Restoration of Independence Day", type: "1D", start: {mon: 5, d: 4}, first: {era: 1, y: 1990}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}},
+        {inherits: "Restoration of Independence Day (in lieu)", type: "1D", start: {mon: 5, d: 5, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
+        {inherits: "Restoration of Independence Day (bridge day)", type: "1D", start: {mon: 5, d: 5, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
+        {inherits: "Restoration of Independence Day (in lieu)", type: "1D", start: {mon: 5, d: 6, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/latvia-declaration-of-independence-day"}, first: {era: 1, y: 1990}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {titles: {"en": "Herbal Day"}, type: "1D", start: {mon: 6, d: 22}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 5, d: 29}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/day-of-the-bronze-medal-win"}, titles: {"en": "Day of the Bronze Medal Win"}, emoji: "🥉"},
         {inherits: "Midsummer Eve", type: "1D", start: {mon: 6, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/latvia/midsummer-eve"}},
-        {titles: {"en": "Jani"}, type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/jani/"}, first: {era: 1, y: 1990}},
+        {inherits: "Midsummer Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/jani/"}, first: {era: 1, y: 1990}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}},
+
+
+        {titles: {"en": "Proclamation Day of the Republic of Latvia"}, type: "1D", start: {mon: 11, d: 18}, first: {era: 1, y: 1918}, urls: {"en": "https://nationaltoday.com/latvia-independence-day/"}},
+        {titles: {"en": "Herbal Day"}, type: "1D", start: {mon: 6, d: 22}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
-        {titles: {"en": "Day of the Restoration of Latvian Independence"}, type: "1D", start: {mon: 5, d: 4}, first: {era: 1, y: 1990}, urls: {"en": "https://en.wikipedia.org/wiki/Day_of_the_Restoration_of_Latvian_Independence"}},
    ]
 }
