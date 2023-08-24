@@ -21,6 +21,6 @@
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/declaration-of-malacca-as-a-historical-city/"}, titles: {"en": "Declaration of Malacca as a Historical City"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "*BDay*", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}, titles: {"en": "Birthday of the Sultan of Kedah"}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/kedah/birthday-of-the-sultan-of-kedah"}, first: {era: 1, y: 2018}},
-        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/melaka-governors-birthday/"}, titles: {"en": "Melaka Governor’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1949}},
+        {type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/melaka-governors-birthday/"}, titles: {"en": "Melaka Governor’s Birthday", "he": "יום הולדתו של מושל מלאקה"}, inherits: "*BDay*", first: {era: 1, y: 1949}},
     ]
 }

@@ -155,7 +155,7 @@
         {titles: {"en": "Feast of St. Pius X", "he": "החג של פיוס העשירי הקדוש"}, type: "1D", start: {mon: 8, d: 21}},
         {titles: {"en": "Queenship of Blessed Virgin Mary", "he": "חג המלכות של מרים הבתולה הקדושה"}, type: "1D", start: {mon: 8, d: 22}},
         {inherits: "Feast of St. Rose of Lima", type: "1D", start: {mon: 8, d: 23}},
-        {titles: {"en": "Feast of St. Bartholomew the Apostle"}, type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/st-bartholomew-history/"}},
+        {titles: {"en": "Feast of St. Bartholomew the Apostle", "he": "החג של ברתולומאוס הקדוש"}, type: "1D", start: {mon: 8, d: 24}, urls: {"en": "https://nationaltoday.com/st-bartholomew-history/"}},
         {titles: {"en": "Feast of St. Louis or St. Joseph of Calasanz"}, type: "1D", start: {mon: 8, d: 25}},
         {titles: {"en": "Feast of St. Monica"}, type: "1D", start: {mon: 8, d: 27}},
         {titles: {"en": "Feast of St. Augustine of Hippo"}, type: "1D", start: {mon: 8, d: 28}},

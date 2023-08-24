@@ -22,7 +22,7 @@
         {type: "1D", start: {mon: 12, d: 1}, titles: {"en": "Army Abolition Day", "es": "Día de la Abolición del Ejército"}, first: {era: 1, y: 1948}, urls: {"en": "https://www.officeholidays.com/holidays/costa-rica/army-abolition-day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
-        {type: "1D", start: {mon: 8, d: 24}, titles: {"en": "National Parks Day", "es": "Día de los Parques Nacionales"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 8, d: 24}, titles: {"en": "National Parks Day", "he": "יום הפארקים הלאומיים", "es": "Día de los Parques Nacionales"}, first: {era: 1, y: 1986}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 9, d: 9}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {type: "1D", start: {mon: 7, d: 20}, inherits: "Engineer’s Day"},
