@@ -16,6 +16,7 @@
         {type: "1D", start: {mon: 5, d: 1}, inherits: "International Workers’ Day"},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://en.wikipedia.org/wiki/Martyrs%27_Day_(Lebanon_and_Syria)"}, first: {era: 1, y: 1916}},
         {titles: {"en": "Liberation and Resistance Day", "ar": "عيد المقاومة و التحرير", "fr": "Fête de la Libération et Résistance"}, type: "1D", start: {mon: 5, d: 25}, first: {era: 1, y: 2000}},
+        {titles: {"en": "Beirut Explosion Memorial Day "}, type: "1D", start: {mon: 8, d: 4}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/lebanon/beirut-explosion-memorial-day"}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 22}, first: {era: 1, y: 1943}, urls: {"en": "https://nationaltoday.com/lebanon-independence-day/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
