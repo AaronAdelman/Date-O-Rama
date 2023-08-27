@@ -209,7 +209,7 @@
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, inherits: "Friendship Day", titles: {"en": "National Friendship Day"}, urls: {"en": "https://nationaltoday.com/friendship-day/"}, first: {era: 1, y: 1935}},
         {inherits: "Victory Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 2}, locations: {"en": "Rhode Island", "he": "רוד איילנד"}, urls: {"en": "https://nationaltoday.com/us-victory-day/"}, first: {era: 1, y: 1966}},
         {titles: {"en": "Navajo Code Talkers Day", "he": "יום דוברי הקוד מבני ההנאוואחו"}, type: "1D", start: {mon: 8, d: 14}, notes: {"en": "U.S. Victory Day"}, urls: {"en": "https://nationaltoday.com/navajo-code-talkers-day/"}, first: {era: 1, y: 1982}},
-        {type: "1D", start: {mon: 8, d: 27}, titles: {"en": "Lyndon Baines Johnson Day"}, urls: {"en": "https://nationaltoday.com/lyndon-baines-johnson-day/"}, inherits: "*BDay*", first: {era: 1, y: 1908}},
+        {type: "1D", start: {mon: 8, d: 27}, titles: {"en": "Lyndon Baines Johnson Day", "he": "יום לינדון ביינס ג׳ונסון"}, urls: {"en": "https://nationaltoday.com/lyndon-baines-johnson-day/"}, inherits: "*BDay*", first: {era: 1, y: 1908}},
         {type: "nD", titles: {"en": "National Crime Prevention Week"}, start: {mon: 9, d: 1}, end: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-crime-prevention-week/"}, first: {era: 1, y: 1984}, emoji: "🐶"},
         {type: "1M", start: {mon: 9}, titles: {"en": "Blood Cancer Awareness Month"}, urls: {"en": "https://nationaltoday.com/blood-cancer-awareness-month/"}, first: {era: 1, y: 2010}, emoji: "🩸", inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 9}, titles: {"en": "National Bourbon Heritage Month"}, urls: {"en": "https://nationaltoday.com/bourbon-heritage-month/"}, first: {era: 1, y: 2007}, emoji: "🥃"},

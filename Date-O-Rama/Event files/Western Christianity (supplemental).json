@@ -77,7 +77,7 @@
         {type: "1D", start: {mon: 6, d: 3}, inherits: "Uganda Martyrs Day", first: {era: 1, y: 1975}},
         {type: "1D", start: {mon: 6, d: 25}, titles: {"en": "National Leon Day"}, first: {era: 1, y: 1975}, emoji: "🧸", urls: {"en": "https://www.daysoftheyear.com/days/national-leon-day/"}},
         {inherits: "Nakba Day", type: "1D", start: {mon: 5, d: 15}, first: {era: 1, y: 2023}, notes: {"en": "Thank the US Presbyterian Church for adopting an antisemitic hate-fest."}, titles: {"en": "Nakba Remembrance Day"}},
-        {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: -1}, titles: {"en": "Social Justice Sunday"}, first: {era: 1, y: 1940}, urls: {"en": "https://nationaltoday.com/social-justice-sunday/"}, emoji: "🖐"},
+        {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: -1}, titles: {"en": "Social Justice Sunday", "he": "יום ראשון של צדק חברתי "}, first: {era: 1, y: 1940}, urls: {"en": "https://nationaltoday.com/social-justice-sunday/"}, emoji: "🖐"},
         {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 1}, titles: {"en": "National Pastor’s Spouses Day"}, first: {era: 1, y: 2022}, urls: {"en": "https://nationaldaycalendar.com/national-pastors-spouses-day-first-sunday-in-september/"}, emoji: "📖🤍"},
         {type: "1D", start: {mon: 9, d: 24}, titles: {"en": "Schwenkfelder Thanksgiving"}, first: {era: 1, y: 1734}, urls: {"en": "https://nationaldaycalendar.com/schwenkfelder-thanksgiving-september-24/"}, inherits: "Thanksgiving Day"},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Day of Praise and Worship"}, first: {era: 1, y: 2020}, urls: {"en": "https://nationaltoday.com/national-day-of-praise-and-worship/"}, emoji: "🙏"},
