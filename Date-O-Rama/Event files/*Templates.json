@@ -180,7 +180,7 @@
         {template: "Feast of St. Mark the Evangelist", titles: {"en": "Feast of St. Mark the Evangelist"}, type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://nationaltoday.com/the-feast-of-st-mark-italy/"}},
         {template: "Feast of St. Martin of Tours", titles: {"en": "Feast of St. Martin of Tours", "de": "Martin"}, type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/saint-martins-day/"}},
         {template: "Feast of St. Rosalia", titles: {"en": "Feast of St. Rosalia", "it": "U Festinu"}, type: "1D", start: {mon: 7, d: 14}, urls: {"en": "https://nationaltoday.com/feast-of-st-rosalia/"}},
-        {template: "Feast of St. Rose of Lima", titles: {"en": "Feast of St. Rose of Lima"}, type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/santa-rosa-de-lima/"}},
+        {template: "Feast of St. Rose of Lima", titles: {"en": "Feast of St. Rose of Lima"}, type: "1D", start: {mon: 8, d: 23}, urls: {"en": "https://nationaltoday.com/santa-rosa-de-lima/"}, notes: {"en": "Santa Rosa de Lima Day"}},
         {template: "Feast of St. Stephen of Hungary", titles: {"en": "Feast of St. Stephen of Hungary", "he": "החג של אישטוואן הראשון הקדוש"}, type: "1D", start: {mon: 8, d: 16}, notes: {"en": "St. Stephen’s Day"}, urls: {"en": "https://nationaltoday.com/st-stephens-day/"}},
         {template: "Feast of St. Teresa of Calcutta", type: "1D", start: {mon: 9, d: 5}, titles: {"en": "Feast of St. Teresa of Calcutta"}},
         {template: "Feast of St. Thomas Becket", titles: {"en": "Feast of St. Thomas Becket"}, notes: {"en": "Christmastide (day 5)"}, type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},

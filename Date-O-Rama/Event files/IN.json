@@ -205,7 +205,7 @@
         {type: "1D", start: {mon: 8, wkd: [1], wkdRecurrence: 1}, inherits: "Friendship Day", urls: {"en": "https://en.wikipedia.org/wiki/Friendship_Day#Celebrations_in_August"}},
         {type: "1D", start: {d: 7, mon: 8}, titles: {"en": "National Handloom Day"}, urls: {"en": "https://vikaspedia.in/social-welfare/entrepreneurship/national-handloom-day"}, first: {era: 1, y: 2015}, emoji: "🧵"},
         {type: "1D", start: {d: 13, mon: 8}, titles: {"en": "World Organ Donation Day"}},
-        {type: "1D", start: {d: 30, mon: 8}, titles: {"en": "Small Industry Day"}},
+        {type: "1D", start: {d: 30, mon: 8}, titles: {"en": "Small Industry Day", "he": "יום התעשייה הקטנה"}},
         {type: "1D", start: {d: 11, mon: 9}, titles: {"en": "National Forest Martyrs Day"}, emoji: "🌲🌳🌴"},
         {type: "1D", start: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
         {type: "1D", start: {d: 21, mon: 9}, titles: {"en": "Biosphere Day"}, first: {era: 1, y: 1992}},
