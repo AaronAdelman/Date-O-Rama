@@ -31,7 +31,7 @@
         {inherits: "Day of Remembrance of Croatian Victims in the Fight for Freedom and Independence", type: "1D", start: {mon: 5, d: 13, thruD: 15, wkd: [1]}},
         {inherits: "Independence Day", type: "1D", start: {mon: 6, d: 25}, urls: {"en": "https://nationaltoday.com/croatia-independence-day/"}, first: {era: 1, y: 2002}},
         {inherits: "Black Ribbon Day", type: "1D", start: {mon: 8, d: 23}, first: {era: 1, y: 2009}},
-        {titles: {"en": "Day of Remembrance of Missing Persons in the War of Independence", "hr": "Dan sjećanja na nestale osobe u Domovinskom ratu"}, type: "1D", start: {mon: 8, d: 30}},
+        {titles: {"en": "Day of Remembrance of Missing Persons in the War of Independence", "he": "יום הזיכרון לנעדרים במלחמת העצמאות", "hr": "Dan sjećanja na nestale osobe u Domovinskom ratu"}, type: "1D", start: {mon: 8, d: 30}},
         {titles: {"en": "Day of the Deciscion about the Unification of Istria, Rijeka, Zadar and the Islands with the Parent Body Croatia", "hr": "Dan donošenja Odluke o sjedinjenju Istre, Rijeke, Zadra i otoka s maticom zemljom Hrvatskom"}, type: "1D", start: {mon: 9, d: 25}},
         {type: "1D", start: {mon: 10, d: 8}, titles: {"en": "Day of the Croatian Parliament", "hr": "Dan Hrvatskoga sabora"}},
         {inherits: "Shrove Tuesday", type: "1D", start: {"Easter": "Easter", "offsetD": -47}},
