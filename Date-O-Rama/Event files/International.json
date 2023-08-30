@@ -1604,6 +1604,9 @@
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/we-love-memoirs-day/"}, titles: {"en": "We Love Memoirs Day"}, emoji: "📝"},
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/world-distance-learning-day/"}, titles: {"en": "World Distance Learning Day"}, emoji: "🎧"},
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://anydayguide.com/calendar/2395", "he": "https://www.daysoftheyear.co.il/2018/08/3108-31.html"}, titles: {"en": "Blog Day", "he": "יום הבלוג"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/bring-your-manners-to-work-day/"}, titles: {"en": "Bring Your Manners to Work Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/building-and-code-staff-appreciation-day/"}, titles: {"en": "Building and Code Staff Appreciation Day"}},
+        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/ginger-cat-appreciation-day/"}, titles: {"en": "Ginger Cat Appreciation Day"}},
 
     ]
 }
