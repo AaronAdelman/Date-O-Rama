@@ -1607,6 +1607,7 @@
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/bring-your-manners-to-work-day/"}, titles: {"en": "Bring Your Manners to Work Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/building-and-code-staff-appreciation-day/"}, titles: {"en": "Building and Code Staff Appreciation Day"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/ginger-cat-appreciation-day/"}, titles: {"en": "Ginger Cat Appreciation Day"}},
-
+        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/pink-cadillac-day/"}, titles: {"en": "Pink Cadillac Day"}},
+        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/world-letter-writing-day/", "he": "https://www.daysoftheyear.co.il/2016/09/letter-writing-day.html"}, titles: {"en": "World Letter Writing Day", "he": "יום כתיבת המכתבים העולמי"}, first: {era: 1, y: 2014}},
     ]
 }

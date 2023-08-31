@@ -1559,7 +1559,7 @@
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-food-bank-day/"}, titles: {"en": "National Food Bank Day"}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-lazy-moms-day/"}, titles: {"en": "National Lazy Mom’s Day"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-no-rhyme-nor-reason-day/"}, titles: {"en": "National No Rhyme Nor Reason Day"}, notes: {"en": "National No Rhyme (Nor Reason) Day"}},
-        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-tofu-day/"}, titles: {"en": "National Tofu Day"}},
+        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-tofu-day/"}, titles: {"en": "National Tofu Day", "he": "יום הטופו הלאומי"}},
 
 
     ]
