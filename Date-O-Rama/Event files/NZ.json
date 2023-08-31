@@ -69,7 +69,7 @@
         {type: "1D", start: {mon: 12, d: 5}, inherits: "International Volunteer Day", first: {era: 1, y: 1985}},
         {inherits: "Human Rights Day", type: "1D", start: {mon: 12, d: 10}, first: {era: 1, y: 1951}},
 
-        {type: "1M", titles: {"en": "Ovarian Cancer Awareness Month"}, start: {mon: 2}},
+        {type: "1M", inherits: "Ovarian Cancer Awareness Month", start: {mon: 2}},
         {type: "1M", start: {mon: 3}, inherits: "Endometriosis Awareness Month", first: {era: 1, y: 1993}},
         {type: "1M", titles: {"en": "NZ Music Month"}, start: {mon: 5}, emoji: "🎶"},
         {type: "1M", titles: {"en": "Migraine Awareness Month"}, start: {mon: 6}, inherits: "*MedicalAwareness*"},

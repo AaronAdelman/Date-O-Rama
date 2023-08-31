@@ -82,5 +82,6 @@
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/love-your-bookshop-day/"}, titles: {"en": "Love Your Bookshop Day", "he": "יום אהבת חנויות ספרים"}, emoji: "📚"},
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "http://every-day-is-special.blogspot.com/2012/08/august-31-2012-white-rose-day-in.html", "he": "https://www.daysoftheyear.co.il/2017/08/31.html"}, titles: {"en": "White Rose Day", "he": "יום הורד הלבן"}, inherits: "*DeathAnniv*", first: {era: 1, y: 1997}},
         {type: "1D", inherits: "Daffodil Day", start: {mon: 8, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://www.daffodilday.com.au/", "he": "https://www.daysoftheyear.co.il/2019/08/daffodilday.html"}},
-    ]
+        {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/footy-colors-day/"}, titles: {"en": "Footy Colors Day"}, first: {era: 1, y: 1995}, inherits: "*MedicalAwareness*"},
+   ]
 }

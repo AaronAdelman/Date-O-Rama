@@ -142,5 +142,8 @@
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/falklands-day/"}, titles: {"en": "Falklands Day", "he": "יום איי פוקלנד"}, first: {era: 1, y: 1592}, emoji: "🇫🇰"},
         {type: "1D", start: {mon: 8, d: 20, thruD: 26, wkd: [5]}, urls: {"en": "https://nationaltoday.com/national-burger-day/"}, titles: {"en": "National Burger Day", "he": "יום ההמבורגר הלאומי"}, emoji: "🍔"},
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-zoo-awareness-day/"}, titles: {"en": "National Zoo Awareness Day"}, emoji: "🦓"},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/festival-of-learning-have-a-go-month/"}, titles: {"en": "Festival of Learning Have a Go Month"}, first: {era: 1, y: 2013}},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-organic-month/"}, titles: {"en": "National Organic Month"}, first: {era: 1, y: 2013}, notes: {"en": "Organic September"}},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/vascular-disease-awareness-month/"}, titles: {"en": "Vascular Disease Awareness Month"}, inherits: "*MedicalAwareness*"},
     ]
 }
