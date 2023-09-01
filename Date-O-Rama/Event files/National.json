@@ -1557,7 +1557,7 @@
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-chianti-day/"}, titles: {"en": "National Chianti Day", "he": "יום קיאנטי הלאומי"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-child-identity-theft-awareness-day/"}, titles: {"en": "National Child Identity Theft Awareness Day", "he": "יום המודעות הלאומי לגניבת זהות ילד"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-food-bank-day/"}, titles: {"en": "National Food Bank Day", "he": "יום בנק המזון הלאומי"}},
-        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-lazy-moms-day/"}, titles: {"en": "National Lazy Mom’s Day", "he": "יום האמא העצלן הלאומי"}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-lazy-moms-day/"}, titles: {"en": "National Lazy Mom’s Day", "he": "יום האמא העצלנית הלאומי"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-no-rhyme-nor-reason-day/"}, titles: {"en": "National No Rhyme Nor Reason Day"}, notes: {"en": "National No Rhyme (Nor Reason) Day"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-tofu-day/"}, titles: {"en": "National Tofu Day", "he": "יום הטופו הלאומי"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/childhood-cancer-awareness-month/"}, titles: {"en": "Childhood Cancer Awareness Month"}, inherits: "*MedicalAwareness*"},
