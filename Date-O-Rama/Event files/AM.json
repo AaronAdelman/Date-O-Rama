@@ -33,7 +33,7 @@
         {type: "1D", start: {mon: 6, d: 1}, titles: {"en": "Protection of Children’s Rights Day", "hy": "Երեխաների իրավունքների պաշտպանության օր"}, inherits: "Children’s Day"},
         {type: "1D", start: {mon: 6, d: 14}, titles: {"en": "Day of Remembrance for the Oppressed", "hy": "Բռնադատվածների հիշատակի օր"}},
         {titles: {"en": "Holiday of St. Etchmiadzin", "hy": "Սուրբ Էջմիածնի տոն"}, type: "1D", start: {"Easter": "Easter", "offsetD": 64}},
-        {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "Knowledge and School Day", "hy": "Գիտելիքի և դպրության օր"}, emoji: "👨‍🏫👩‍🏫"},
+        {type: "1D", start: {mon: 9, d: 1}, titles: {"en": "Knowledge and School Day", "he": "יום ידע ולימודים", "hy": "Գիտելիքի և դպրության օր"}, emoji: "👨‍🏫👩‍🏫"},
         {type: "1D", start: {mon: 9, d: 12}, titles: {"en": "Sparapet Day", "hy": "Սպարապետի օր"}, urls: {"en": "https://en.wikipedia.org/wiki/Mkhitar_Sparapet#Sparapet_Day"}},
         {inherits: "Teacher’s Day", type: "1D", start: {mon: 10, d: 5}},
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, titles: {"en": "Translators’ Day", "hy": "Թարգմանչաց տոն"}},
