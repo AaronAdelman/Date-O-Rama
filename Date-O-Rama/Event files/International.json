@@ -1637,5 +1637,10 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/world-animal-remembrance-month/"}, titles: {"en": "World Animal Remembrance Month"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/world-candle-month/"}, titles: {"en": "World Candle Month"}, first: {era: 1, y: 2013}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/world-fun-fair-month/"}, titles: {"en": "World Fun Fair Month"}},
-    ]
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/bison-ten-yell-day/"}, titles: {"en": "Bison-ten Yell Day"}},
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/calendar-adjustment-day/"}, titles: {"en": "Calendar Adjustment Day"}, first: {era: 1, y: 1752}},
+        {type: "1D", start: {mon: 8, d: 30, thruMon: 9, thruD: 5, wkd: [7]}, urls: {"en": "https://nationaltoday.com/franchise-appreciation-day/"}, titles: {"en": "Franchise Appreciation Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-bacon-day/"}, titles: {"en": "International Bacon Day"}},
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/spalding-baseball-day/"}, titles: {"en": "Spalding Baseball Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/turkey-vulture-day/"}, titles: {"en": "Turkey Vulture Day"}},    ]
 }

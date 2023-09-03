@@ -1552,7 +1552,7 @@
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/american-chess-day/"}, titles: {"en": "American Chess Day", "he": "יום השחמט האמריקאי"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/cherry-popover-day/"}, titles: {"en": "Cherry Popover Day"}, notes: {"en": "National Cherry Popover Day"}},
         {type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/chicken-boy-day/"}, titles: {"en": "Chicken Boy Day"}, notes: {"en": "National Chicken Boy Day"}},
-        {type: "1D", start: {mon: 8, d: 28, thruMon: 9, thruD: 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/college-colors-day/"}, titles: {"en": "College Colors Day"}, notes: {"en": "National College Colors Day"}, first: {era: 1, y: 2004}},
+        {type: "1D", start: {mon: 8, d: 29, thruMon: 9, thruD: 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/college-colors-day/"}, titles: {"en": "College Colors Day"}, notes: {"en": "National College Colors Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/emma-m-nutt-day/"}, titles: {"en": "Emma M. Nutt Day"}, notes: {"en": "National Emma M. Nutt Day"}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-chianti-day/"}, titles: {"en": "National Chianti Day", "he": "יום קיאנטי הלאומי"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-child-identity-theft-awareness-day/"}, titles: {"en": "National Child Identity Theft Awareness Day", "he": "יום המודעות הלאומי לגניבת זהות ילד"}, first: {era: 1, y: 2018}},
@@ -1583,5 +1583,10 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-velociraptor-awareness-month/"}, titles: {"en": "National Velociraptor Awareness Month"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/pain-awareness-month/"}, titles: {"en": "Pain Awareness Month"}, first: {era: 1, y: 2001}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/responsible-dog-ownership-month/"}, titles: {"en": "Responsible Dog Ownership Month"}},
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/national-blueberry-popsicle-day/"}, titles: {"en": "National Blueberry Popsicle Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-hummingbird-day/"}, titles: {"en": "National Hummingbird Day"}},
+        {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/national-live-fearless-day/"}, titles: {"en": "National Live Fearless Day"}, first: {era: 1, y: 2020}},
+        
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-tailgating-day/"}, titles: {"en": "National Tailgating Day"}, first: {era: 1, y: 2016}},
     ]
 }
