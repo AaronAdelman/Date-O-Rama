@@ -182,7 +182,7 @@
         {type: "1D", start: {d: 24, mon: 8}, titles: {"en": "International Strange Music Day", "he": "יום המוזיקה המוזרה הבינלאומי"}, first: {era: 1, y: 1997}, emoji: "🎶", urls: {"en": "https://www.daysoftheyear.com/days/international-strange-music-day/", "he": "https://www.daysoftheyear.co.il/2020/08/strange0music-day.html"}},
         {type: "1D", start: {d: 30, mon: 8}, titles: {"en": "International Whale Shark Day", "he": "יום הכריש הלווייתני הלאומי"}, first: {era: 1, y: 2012}, urls: {"en": "https://www.daysoftheyear.com/days/international-whale-shark-day/"}},
         {type: "1D", start: {mon: 8, d: 31}, titles: {"en": "International Overdose Awareness Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.overdoseday.com/"}, inherits: "*MedicalAwareness*"},
-        {type: "1D", start: {d: 2, mon: 9}, titles: {"en": "World Coconut Day", "he": "יום הקוקוס הלאומי"}, emoji: "🥥", urls: {"en": "https://nationaldaycalendar.com/world-coconut-day-september-2/"}},
+        {type: "1D", start: {mon: 9, d: 2}, titles: {"en": "World Coconut Day", "he": "יום הקוקוס הלאומי"}, emoji: "🥥", urls: {"en": "https://nationaldaycalendar.com/world-coconut-day-september-2/", "he": "https://www.daysoftheyear.co.il/2022/09/2.html"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, titles: {"en": "World Beard Day"}, emoji: "🧔‍♂️", urls: {"en": "https://www.daysoftheyear.com/days/beard-day/"}},
         {type: "1D", start: {d: 8, mon: 9}, titles: {"en": "World Physical Therapy Day"}, first: {era: 1, y: 1996}, urls: {"en": "https://nationaldaycalendar.com/world-physical-therapy-day-september-8/"}},
         {type: "1D", start: {d: 10, mon: 9}, titles: {"en": "World Suicide Prevention Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaltoday.com/world-suicide-prevention-day/"}},
@@ -1642,5 +1642,6 @@
         {type: "1D", start: {mon: 8, d: 30, thruMon: 9, thruD: 5, wkd: [7]}, urls: {"en": "https://nationaltoday.com/franchise-appreciation-day/"}, titles: {"en": "Franchise Appreciation Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-bacon-day/"}, titles: {"en": "International Bacon Day"}},
         {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/spalding-baseball-day/"}, titles: {"en": "Spalding Baseball Day"}},
-        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/turkey-vulture-day/"}, titles: {"en": "Turkey Vulture Day"}},    ]
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/turkey-vulture-day/"}, titles: {"en": "Turkey Vulture Day"}},
+    ]
 }

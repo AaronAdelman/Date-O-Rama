@@ -166,7 +166,7 @@
         {type: "1D", start: {d: 11, mon: 8}, titles: {"en": "National Son and Daughter Day"}, first: {era: 1, y: 2944}, emoji: "👦👧", urls: {"en": "https://www.daysoftheyear.com/days/son-and-daughter-day/"}},
         {type: "1D", start: {mon: 8, d: 25}, titles: {"en": "National Whiskey Sour Day", "he": "יום הויסקי סאוור הלאומי"}, emoji: "🥃", notes: {"en": "Whiskey Sour Day", "he": "יום הויסקי סאוור"}, urls: {"en": "https://www.daysoftheyear.com/days/whiskey-sour-day/"}},
         {type: "1D", start: {mon: 8, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/pots-de-creme-day/"}, titles: {"en": "National Pots de Crème Day"}},
-        {type: "1D", start: {d: 3, mon: 9}, titles: {"en": "National Skyscraper Day"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-day/"}},
+        {type: "1D", start: {d: 3, mon: 9}, titles: {"en": "National Skyscraper Day", "he": "יום גורדי השחקים הלאומי"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-day/", "he": "https://www.daysoftheyear.co.il/2018/09/3.html"}},
         {type: "1D", start: {d: 25, mon: 9}, titles: {"en": "National Daughter Day"}, notes: {"en": "National Daughters Day"}, first: {era: 1, y: 2007}, emoji: "👨‍👩‍👧", urls: {"en": "https://www.daysoftheyear.com/days/national-daughter-day/"}},
         {type: "1D", start: {d: 16, mon: 10}, titles: {"en": "National Boss’s Day"}, first: {era: 1, y: 1903}, notes: {"en": "Boss’s Day\nNational Boss Day`\nBosses Day"}, urls: {"en": "https://nationaldaycalendar.com/national-bosss-day-october-16-unless-weekend/"}},
         {type: "1D", start: {d: 29, mon: 10}, titles: {"en": "National Internet Day"}, notes: {"en": "International Internet Day"}, first: {era: 1, y: 2005}, emoji: "🌎", urls: {"en": "https://www.daysoftheyear.com/days/internet-day/"}},
@@ -1586,7 +1586,9 @@
         {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/national-blueberry-popsicle-day/"}, titles: {"en": "National Blueberry Popsicle Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-hummingbird-day/"}, titles: {"en": "National Hummingbird Day"}},
         {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/national-live-fearless-day/"}, titles: {"en": "National Live Fearless Day"}, first: {era: 1, y: 2020}},
-        
+        {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-pet-rock-day/"}, titles: {"en": "National Pet Rock Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-tailgating-day/"}, titles: {"en": "National Tailgating Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/national-welsh-rarebit-day/"}, titles: {"en": "National Welsh Rarebit Day"}},
+        {type: "1D", start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/us-bowling-league-day/"}, titles: {"en": "US Bowling League Day"}},
     ]
 }

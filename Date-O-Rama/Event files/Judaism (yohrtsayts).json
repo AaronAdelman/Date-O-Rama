@@ -143,7 +143,7 @@
         {titles: {"he": "יום־שנה של רבי חיים ויטאל"}, type: "1D", start: {d: 30, mon: 8}, first: {era: 0, y: 5380}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ר׳ מנחם מנדל מויטבסק"}, type: "1D", start: {d: 1, mon: 9}, first: {era: 0, y: 5548}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב אהרן ליכטנשטיין"}, type: "1D", start: {d: 1, mon: 9}, first: {era: 0, y: 5775}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של הרב יעקב יוסף"}, type: "1D", start: {d: 2, mon: 9}, first: {era: 0, y: 5773}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של הרב יעקב יוסף"}, type: "1D", start: {mon: 9, d: 2}, first: {era: 0, y: 5773}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של בית הלוי מבריסק"}, type: "1D", start: {d: 4, mon: 9}, first: {era: 0, y: 5552}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הכלי יקר"}, type: "1D", start: {d: 7, mon: 9}, first: {era: 0, y: 5379}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב עוזי קלכהיים"}, type: "1D", start: {d: 9, mon: 9}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
