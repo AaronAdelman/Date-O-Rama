@@ -1644,5 +1644,8 @@
         {type: "1D", start: {mon: 9, d: 2}, urls: {"en": "https://nationaltoday.com/spalding-baseball-day/"}, titles: {"en": "Spalding Baseball Day"}},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/turkey-vulture-day/"}, titles: {"en": "Turkey Vulture Day"}},
         {type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/mouthguard-day/"}, titles: {"en": "Mouthguard Day"}},
+        {type: "1D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://nationaltoday.com/another-look-unlimited-day/"}, titles: {"en": "Another Look Unlimited Day"}},
+        {type: "1D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://nationaltoday.com/telephone-tuesday/"}, titles: {"en": "Telephone Tuesday"}},
+        {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/world-samosa-day/"}, titles: {"en": "World Samosa Day"}},
     ]
 }

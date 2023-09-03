@@ -1594,5 +1594,10 @@
         {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://nationaltoday.com/national-macadamia-nut-day/"}, titles: {"en": "National Macadamia Nut Day"}},
         {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://nationaltoday.com/national-wildlife-day/"}, titles: {"en": "​National Wildlife Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/newspaper-carrier-day/", "he": "https://www.daysoftheyear.co.il/2018/09/4.html"}, titles: {"en": "National Newspaper Carrier Day", "he": "יום מחלקי העיתונים"}},
+        {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/national-actdumb-day/"}, titles: {"en": "National Actdumb. Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/national-be-late-for-something-day/", "he": "https://www.daysoftheyear.co.il/2018/09/5.html"}, titles: {"en": "National Be Late for Something Day", "he": "יום האיחורים הלאומי"}},
+        {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/national-cellulite-day/"}, titles: {"en": "National Cellulite Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/national-cheese-pizza-day/"}, titles: {"en": "National Cheese Pizza Day"}},
+        {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/national-shrink-day/"}, titles: {"en": "National Shrink Day"}},
     ]
 }
