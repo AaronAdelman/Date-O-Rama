@@ -1590,5 +1590,9 @@
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-tailgating-day/"}, titles: {"en": "National Tailgating Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/national-welsh-rarebit-day/"}, titles: {"en": "National Welsh Rarebit Day"}},
         {type: "1D", start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/us-bowling-league-day/"}, titles: {"en": "US Bowling League Day"}},
+        {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://nationaltoday.com/eat-an-extra-dessert-day/"}, titles: {"en": "Eat an Extra Dessert Day"}, notes: {"en": "National Eat an Extra Dessert Day"}},
+        {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://nationaltoday.com/national-macadamia-nut-day/"}, titles: {"en": "National Macadamia Nut Day"}},
+        {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://nationaltoday.com/national-wildlife-day/"}, titles: {"en": "​National Wildlife Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 9, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/newspaper-carrier-day/", "he": "https://www.daysoftheyear.co.il/2018/09/4.html"}, titles: {"en": "National Newspaper Carrier Day", "he": "יום מחלקי העיתונים"}},
     ]
 }
