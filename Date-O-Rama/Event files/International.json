@@ -1657,6 +1657,13 @@
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/world-duchenne-awareness-day/"}, titles: {"en": "World Duchenne Awareness Day"}, first: {era: 1, y: 2014}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/stand-up-to-cancer-day/"}, titles: {"en": "Stand Up To Cancer Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/star-trek-day/"}, titles: {"en": "Star Trek Day"}, first: {era: 1, y: 1966}},
-
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/care-bears-share-your-care-day/"}, titles: {"en": "Care Bears Share Your Care Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/drive-your-studebaker-day/"}, titles: {"en": "Drive Your Studebaker Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/farmers-consumer-awareness-day/"}, titles: {"en": "Farmers’ Consumer Awareness Day"}, first: {era: 1, y: 1981}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/international-box-wine-day/"}, titles: {"en": "International Box Wine Day"}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/international-fetal-alcohol-spectrum-disorders-awareness-day/"}, titles: {"en": "International Fetal Alcohol Spectrum Disorders Awareness Day"}, notes: {"en": "FASD"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/international-sudoku-day/"}, titles: {"en": "International Sudoku Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/steak-au-poivre-day/"}, titles: {"en": "Steak Au Poivre Day"}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/teddy-bear-day/", "he": "https://www.daysoftheyear.co.il/2018/12/9.html"}, titles: {"en": "Teddy Bear Day", "he": "יום הדובון"}, emoji: "🧸"},
     ]
 }

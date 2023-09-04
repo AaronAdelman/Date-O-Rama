@@ -1615,5 +1615,7 @@
         {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-iguana-awareness-day/"}, titles: {"en": "National Iguana Awareness Day", "he": "יום האיגואנה הלאומי"}},
         {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-pediatric-hematology-oncology-nurses-day/"}, titles: {"en": "National Pediatric Hematology/Oncology Nurses Day"}},
         {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/pardon-day/"}, titles: {"en": "Pardon Day"}, first: {era: 1, y: 1974}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/national-when-pigs-fly-day/"}, titles: {"en": "National When Pigs Fly Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/national-wiener-schnitzel-day/"}, titles: {"en": "National Wiener Schnitzel Day"}},
     ]
 }
