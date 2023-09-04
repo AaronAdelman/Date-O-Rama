@@ -168,7 +168,7 @@
         {type: "1D", start: {d: 25, mon: 9}, titles: {"en": "Antyodaya Diwas"}},
         {type: "1D", start: {d: 24, mon: 10}, titles: {"en": "Raising Day of Indo-Tibetan Border Police"}},
         {type: "1D", start: {d: 14, mon: 9}, titles: {"en": "Hindi Day", "hi": "हिन्दी दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Hindi_Day"}},
-        {type: "1D", start: {d: 15, mon: 9}, titles: {"en": "Sanchayika Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, titles: {"en": "Sanchayika Day"}},
         {type: "nD", start: {d: 1, mon: 12}, "end": {d: 10, mon: 12}, titles: {"en": "Hornbill Festival"}, locations: {"en": "Nagaland"}, urls: {"en": "https://www.hornbillfestival.com/"}},
         {type: "1D", start: {d: 21, mon: 4}, titles: {"en": "National Civil Service Day"}},
         {type: "1D", start: {d: 10, mon: 2}, titles: {"en": "National Deworming Day"}},

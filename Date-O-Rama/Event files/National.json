@@ -1579,7 +1579,7 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-recovery-month/"}, titles: {"en": "National Recovery Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-save-a-tiger-month/"}, titles: {"en": "National Save a Tiger Month"}, first: {era: 1, y: 2015}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-service-dog-month/"}, titles: {"en": "National Service Dog Month"}, first: {era: 1, y: 2004}},
-        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-suicide-prevention-month/"}, titles: {"en": "National Suicide Prevention Month"}, first: {era: 1, y: 1979}, inherits: "*MedicalAwareness*"},
+        {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-suicide-prevention-month/"}, titles: {"en": "National Suicide Prevention Month", "he": "החודש הלאומי למניעת התאבדויות"}, first: {era: 1, y: 1979}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-velociraptor-awareness-month/"}, titles: {"en": "National Velociraptor Awareness Month"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/pain-awareness-month/"}, titles: {"en": "Pain Awareness Month"}, first: {era: 1, y: 2001}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/responsible-dog-ownership-month/"}, titles: {"en": "Responsible Dog Ownership Month"}},
@@ -1617,5 +1617,8 @@
         {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/pardon-day/"}, titles: {"en": "Pardon Day"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/national-when-pigs-fly-day/"}, titles: {"en": "National When Pigs Fly Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/national-wiener-schnitzel-day/"}, titles: {"en": "National Wiener Schnitzel Day"}},
+        {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/national-anti-junk-light-day/"}, titles: {"en": "National Anti-Junk Light Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-pet-memorial-day/"}, titles: {"en": "National Pet Memorial Day"}},
+        {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/national-tv-dinner-day/"}, titles: {"en": "National TV Dinner Day"}},
     ]
 }

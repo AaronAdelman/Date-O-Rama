@@ -14,7 +14,7 @@
         {type: "1D", start: {mon: 6, d: 30}, inherits: "Army Day", urls: {"en": "https://www.officeholidays.com/holidays/guatemala/guatemala-army-day"}},
         {type: "1D", start: {mon: 7, d: 1}, inherits: "Bank Holiday"},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
-        {inherits: "Independence Day", type: "1D", start: {d: 15, mon: 9}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/guatemala-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 9, d: 15}, first: {era: 1, y: 1821}, urls: {"en": "https://nationaltoday.com/guatemala-independence-day/"}},
         {type: "1D", start: {mon: 10, d: 12}, inherits: "Day of the Races", first: {era: 1, y: 1917}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 10, d: 20}, first: {era: 1, y: 1944}, urls: {"en": "https://nationaltoday.com/revolution-day-guatemala/"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
