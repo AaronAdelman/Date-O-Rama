@@ -309,5 +309,6 @@
         {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/national-sabrina-day/"}, titles: {"en": "National Sabrina Day"}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-regina-day/"}, titles: {"en": "National Regina Day"}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-tatiana-day/"}, titles: {"en": "National Tatiana Day"}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-david-day/"}, titles: {"en": "National David Day"}},
     ]
 }

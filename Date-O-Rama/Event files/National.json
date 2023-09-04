@@ -1606,7 +1606,14 @@
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-feel-the-love-day/"}, titles: {"en": "National Feel the Love Day"}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-grateful-patient-day/"}, titles: {"en": "National Grateful Patient Day"}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-neither-snow-nor-rain-day/"}, titles: {"en": "National Neither Snow Nor Rain Day"}},
-        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-salami-day/"}, titles: {"en": "National Salami Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-salami-day/"}, titles: {"en": "National Salami Day", "he": "יום הסלמי הלאומי"}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/texas-energy-savings-day/"}, titles: {"en": "Texas Energy Savings Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/actors-day/"}, titles: {"en": "Actors’ Day"}, notes: {"en": "National Actors’ Day"}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-401k-day/"}, titles: {"en": "National 401(k) Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-ampersand-day/"}, titles: {"en": "National Ampersand Day"}, emoji: "&"},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-dog-walker-appreciation-day/"}, titles: {"en": "National Dog Walker Appreciation Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-iguana-awareness-day/"}, titles: {"en": "National Iguana Awareness Day", "he": "יום האיגואנה הלאומי"}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/national-pediatric-hematology-oncology-nurses-day/"}, titles: {"en": "National Pediatric Hematology/Oncology Nurses Day"}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/pardon-day/"}, titles: {"en": "Pardon Day"}, first: {era: 1, y: 1974}},
     ]
 }

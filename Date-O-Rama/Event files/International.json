@@ -1655,5 +1655,8 @@
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/google-commemoration-day/"}, titles: {"en": "Google Commemoration Day"}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/superhuman-day/"}, titles: {"en": "Superhuman Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/world-duchenne-awareness-day/"}, titles: {"en": "World Duchenne Awareness Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/stand-up-to-cancer-day/"}, titles: {"en": "Stand Up To Cancer Day"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 9, d: 8}, urls: {"en": "https://nationaltoday.com/star-trek-day/"}, titles: {"en": "Star Trek Day"}, first: {era: 1, y: 1966}},
+
     ]
 }
