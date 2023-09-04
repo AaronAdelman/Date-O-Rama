@@ -1625,5 +1625,10 @@
         {type: "1D", start: {mon: 9, d: 11}, urls: {"en": "https://nationaltoday.com/national-hot-cross-bun-day/"}, titles: {"en": "National Hot Cross Bun Day"}},
         {type: "1D", start: {mon: 9, d: 11}, urls: {"en": "https://nationaltoday.com/national-make-bed-day/"}, titles: {"en": "National Make Your Bed Day"}},
         {type: "1D", start: {mon: 9, d: 11}, urls: {"en": "https://nationaltoday.com/no-news-is-good-news-day/"}, titles: {"en": "No News is Good News Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, wkd: [3], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-ants-on-a-log-day/"}, titles: {"en": "National Ants on a Log Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 9, d: 12}, urls: {"en": "https://nationaltoday.com/national-chocolate-milkshake-day/"}, titles: {"en": "National Chocolate Milkshake Day"}},
+        {type: "1D", start: {mon: 9, d: 12}, urls: {"en": "https://nationaltoday.com/national-police-woman-day/"}, titles: {"en": "National Police Woman Day"}},
+        {type: "1D", start: {mon: 9, d: 12}, urls: {"en": "https://nationaltoday.com/national-report-medicare-fraud-day/"}, titles: {"en": "National Report Medicare Fraud Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 9, d: 12}, urls: {"en": "https://nationaltoday.com/national-video-games-day/"}, titles: {"en": "National Video Games Day"}},
     ]
 }

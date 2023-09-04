@@ -438,6 +438,8 @@
         {type: "1D", start: {mon: 7, d: 20}, urls: {"en": "https://nationaltoday.com/space-exploration-day/"}, titles: {"en": "Space Exploration Day"}, first: {era: 1, y: 1984}, emoji: "👨‍🚀👩‍🚀"},
         {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://nationaltoday.com/national-airborne-day/"}, titles: {"en": "National Airborne Day"}, first: {era: 1, y: 2002}, emoji: "🪂"},
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/california-admission-day/"}, titles: {"en": "California Admission Day"}, first: {era: 1, y: 1850}},
+        {type: "1D", start: {mon: 9, d: 12}, urls: {"en": "https://nationaltoday.com/national-day-of-encouragement/"}, titles: {"en": "National Day of Encouragement"}, first: {era: 1, y: 2007}},
+
 
         
         {type: "nD", start: {mon: 7, d: 1}, end: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/clean-beaches-week/"}, titles: {"en": "Clean Beaches Week"}, first: {era: 1, y: 2003}},
