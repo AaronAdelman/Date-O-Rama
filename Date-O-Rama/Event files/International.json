@@ -1668,5 +1668,11 @@
         {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/hug-your-hound-day/"}, titles: {"en": "Hug Your Hound Day"}},
         {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/swap-ideas-day/"}, titles: {"en": "Swap Ideas Day"}},
         {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/top-up-day/"}, titles: {"en": "Top Up Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/international-chocolate-day/"}, titles: {"en": "International Chocolate Day"}},
+        {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/pet-birth-defect-awareness-day/"}, titles: {"en": "Pet Birth Defect Awareness Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/positive-thinking-day/", "he": "https://www.daysoftheyear.co.il/2016/09/13.html"}, titles: {"en": "Positive Thinking Day", "he": "יום החשיבה החיובית"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/programmers-day/"}, titles: {"en": "Programmers Day"}},
+        {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/roald-dahl-day/"}, titles: {"en": "Roald Dahl Day"}},
+        {type: "nD", start: {mon: 9, d: 13}, end: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/orchid-male-cancer-awareness-week/"}, titles: {"en": "Orchid Male Cancer Awareness Week"}, first: {era: 1, y: 2008}},
     ]
 }
