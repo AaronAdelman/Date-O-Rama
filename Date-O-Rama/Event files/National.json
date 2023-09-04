@@ -1601,5 +1601,12 @@
         {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/national-shrink-day/"}, titles: {"en": "National Shrink Day"}},
         {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/national-coffee-ice-cream-day/"}, titles: {"en": "National Coffee Ice Cream Day"}},
         {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/national-read-book-day/"}, titles: {"en": "National Read a Book Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-acorn-squash-day/"}, titles: {"en": "National Acorn Squash Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-beer-lovers-day/"}, titles: {"en": "National Beer Lovers Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-feel-the-love-day/"}, titles: {"en": "National Feel the Love Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-grateful-patient-day/"}, titles: {"en": "National Grateful Patient Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-neither-snow-nor-rain-day/"}, titles: {"en": "National Neither Snow Nor Rain Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-salami-day/"}, titles: {"en": "National Salami Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/texas-energy-savings-day/"}, titles: {"en": "Texas Energy Savings Day"}, first: {era: 1, y: 2016}},
     ]
 }

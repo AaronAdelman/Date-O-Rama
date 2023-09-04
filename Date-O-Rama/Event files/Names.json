@@ -307,5 +307,7 @@
         {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://nationaltoday.com/national-dan-day/"}, titles: {"en": "National Dan Day"}},
         {type: "1D", start: {mon: 9, d: 3}, urls: {"en": "https://nationaltoday.com/national-stephen-day/"}, titles: {"en": "National Stephen Day"}},
         {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/national-sabrina-day/"}, titles: {"en": "National Sabrina Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-regina-day/"}, titles: {"en": "National Regina Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/national-tatiana-day/"}, titles: {"en": "National Tatiana Day"}},
     ]
 }

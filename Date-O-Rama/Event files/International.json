@@ -1647,9 +1647,13 @@
         {type: "1D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://nationaltoday.com/another-look-unlimited-day/"}, titles: {"en": "Another Look Unlimited Day"}},
         {type: "1D", start: {mon: 9, d: 2, thruD: 8, wkd: [3]}, urls: {"en": "https://nationaltoday.com/telephone-tuesday/"}, titles: {"en": "Telephone Tuesday"}},
         {type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/world-samosa-day/"}, titles: {"en": "World Samosa Day"}},
-        {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/fight-procrastination-day/"}, titles: {"en": "Fight Procrastination Day"}},
+        {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/fight-procrastination-day/", "he": "https://www.daysoftheyear.co.il/2018/09/6.html"}, titles: {"en": "Fight Procrastination Day", "he": "יום המלחמה בדחיינות"}},
         {type: "1D", start: {mon: 9, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/global-talent-acquisition-day/"}, titles: {"en": "Global Talent Acquisition Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 9, d: 6}, urls: {"en": "https://nationaltoday.com/great-egg-toss-day/"}, titles: {"en": "Great Egg Toss Day"}},
-
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/buy-a-book-day/"}, titles: {"en": "Buy a Book Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/fluidra-international-pool-pro-day/"}, titles: {"en": "Fluidra International Pool Pro Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/google-commemoration-day/"}, titles: {"en": "Google Commemoration Day"}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/superhuman-day/"}, titles: {"en": "Superhuman Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 7}, urls: {"en": "https://nationaltoday.com/world-duchenne-awareness-day/"}, titles: {"en": "World Duchenne Awareness Day"}, first: {era: 1, y: 2014}},
     ]
 }
