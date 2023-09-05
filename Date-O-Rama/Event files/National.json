@@ -1638,6 +1638,13 @@
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/national-peanut-day/", "he": "https://www.daysoftheyear.co.il/2020/09/13.html"}, titles: {"en": "National Peanut Day", "he": "יום הבוטנים הלאומי"}},
         {type: "nD", start: {mon: 9, d: 13}, end: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-eczema-week/"}, titles: {"en": "National Eczema Week"}},
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://www.daysoftheyear.com/days/fortune-cookie-day/", "he": "https://www.daysoftheyear.co.il/2018/09/13.html"}, inherits: "National Fortune Cookie Day"},
-
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-coloring-day/"}, titles: {"en": "National Coloring Day"}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-cream-filled-donut-day/"}, titles: {"en": "National Cream Filled Donut Day"}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-eat-a-hoagie-day/"}, titles: {"en": "National Eat a Hoagie Day"}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-food-is-medicine-day/"}, titles: {"en": "National Food Is Medicine Day"}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-live-creative-day/"}, titles: {"en": "National Live Creative Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-rosa-tequila-day/"}, titles: {"en": "National Rosa Tequila Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-school-pictures-day/"}, titles: {"en": "National School Pictures Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-sober-day/"}, titles: {"en": "National Sober Day"}, first: {era: 1, y: 2019}},
     ]
 }

@@ -28,7 +28,7 @@
         {titles: {"en": "Mourning:  Martyrdom of Ruqayyah bint Husayn, youngest daughter of Husayn ibn Ali and a prisoner of Karbalā, Mourning:  30th day after ʿĀshūrāʾ, Remembrance: Victory to Ali in the Battle of Nahrawan"}, type: "1D", start: {mon: 2, d: 10}},
         {titles: {"en": "Remembrance:  Birth of Salman the Persian"}, type: "1D", start: {mon: 2, d: 12}, inherits: "*BDay*"},
         {titles: {"en": "Mourning:  Martyrdom of Ali ar-Ridha, 203 AH"}, type: "1D", start: {mon: 2, d: 17}},
-        {titles: {"en": "Mourning:  Martyrdom of Muhammad, 11 AH, Mourning:  Martyrdom of Hasan ibn Ali, 50 AH"}, type: "1D", start: {mon: 2, d: 28}},
+        {titles: {"en": "Mourning:  Martyrdom of Muhammad, 11 AH, Mourning:  Martyrdom of Hasan ibn Ali, 50 AH"}, type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://nationaltoday.com/death-of-prophet-muhammed/"}, notes: {"en": "Death of Prophet Muhammed"}},
         {titles: {"en": "Remembrance:  Hijrah"}, type: "1D", start: {mon: 3, d: 1}, inherits: "*Remembrance*"},
         {titles: {"en": "Mourning:  Martyrdom of Fatimah bint Musa"}, type: "1D", start: {mon: 3, d: 4}},
         {titles: {"en": "Mourning:  Martyrdom of Hasan al-Askari, 260 AH"}, type: "1D", start: {mon: 3, d: 8}, urls: {"en": "https://nationaltoday.com/martyrdom-of-imam-hassan-asgari/"}},
