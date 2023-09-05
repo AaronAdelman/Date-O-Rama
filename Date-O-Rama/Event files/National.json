@@ -1657,5 +1657,21 @@
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-online-learning-day/"}, titles: {"en": "National Online Learning Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-tackle-kids-cancer-day/"}, titles: {"en": "National Tackle Kids Cancer Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-tradesmen-day/"}, titles: {"en": "National Tradesmen Day"}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/anne-bradstreet-day/"}, titles: {"en": "Anne Bradstreet Day"}, titles: {"en": "National Anne Bradstreet Day"}, first: {era: 1, y: 1672}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/mayflower-day/"}, titles: {"en": "Mayflower Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-akc-responsible-dog-ownership-day/"}, titles: {"en": "National AKC Responsible Dog Ownership Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-boys-and-girls-club-day-for-kids/"}, titles: {"en": "National Boys’ and Girls’ Club Day for Kids"}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/national-choose-chocolate-day/"}, titles: {"en": "National Choose Your Chocolate Day"}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/national-cinnamon-raisin-bread-day/"}, titles: {"en": "National Cinnamon Raisin Bread Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-cleanup-day/"}, titles: {"en": "National CleanUp Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-dance-day/"}, titles: {"en": "National Dance Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-gymnastics-day/"}, titles: {"en": "National Gymnastics Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/national-play-doh-day/"}, titles: {"en": "National Play-Doh Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-sew-a-jelly-roll-day/"}, titles: {"en": "National Sew a Jelly Roll Day"}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/national-sit-with-a-stranger-day/"}, titles: {"en": "National Sit With a Stranger Day"}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/national-stepfamily-day/"}, titles: {"en": "National Stepfamily Day"}, first: {era: 1, y: 1997}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/stay-away-from-seattle-day/"}, titles: {"en": "Stay Away From Seattle Day"}},
+        {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/guacamole-day/", "he": "https://www.daysoftheyear.co.il/2019/09/16.html"}, titles: {"en": "National Guacamole Day", "he": "יום הגואקמולי הלאומי"}, emoji: "🥑"},
+
     ]
 }
