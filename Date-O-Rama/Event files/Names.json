@@ -313,5 +313,8 @@
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/national-jose-day/"}, titles: {"en": "National José Day"}},
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/national-juan-day/"}, titles: {"en": "National Juan Day"}},
         {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-noel-day/"}, titles: {"en": "National Noel Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-malcolm-day/"}, titles: {"en": "National Malcolm Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-ruben-day/"}, titles: {"en": "National Ruben Day"}},
+
     ]
 }

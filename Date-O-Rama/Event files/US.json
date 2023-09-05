@@ -471,6 +471,8 @@
         {type: "1D", start: {mon: 8, d: 14}, urls: {"en": "https://nationaltoday.com/national-spirit-of-45-day/"}, titles: {"en": "National Spirit of ’45 Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {d: 21, mon: 8}, titles: {"en": "World Senior Citizen’s Day", "he": "יום האזרח הוותיק העולמי"}, first: {era: 1, y: 1991}, emoji: "👴👵", urls: {"en": "https://nationaltoday.com/national-senior-citizens-day/"}, notes: {"en": "National Day of the Third Age\nNational Senior Citizens Day"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-sewing-month/"}, titles: {"en": "National Sewing Month"}, emoji: "🧵🪡", first: {era: 1, y: 1982}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-pow-mia-recognition-day/"}, titles: {"en": "National POW/MIA Recognition Day"}, first: {era: 1, y: 1979}},
+
 
         
         {type: "1D", start: {d: 1, mon: 2}, titles: {"en": "National Texas Day", "he": "יום טקסס הלאומי"}, urls: {"en": "https://nationaldaycalendar.com/national-texas-day-february-1/"}, first: {era: 1, y: 2017}},
@@ -482,7 +484,7 @@
         {type: "1D", start: {d: 12, mon: 4}, titles: {"en": "National Colorado Day", "he": "יום קולורדו הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-colorado-day-april-12/"}},
         {type: "1D", start: {d: 13, mon: 7}, titles: {"en": "National Delaware Day", "he": "יום דלאוור הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-delaware-day-july-13-2/"}},
         {type: "1D", start: {d: 14, mon: 12}, titles: {"en": "National Alabama Day", "he": "יום אלבמה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-alabama-day-december-14/"}},
-        {type: "1D", start: {d: 14, mon: 9}, titles: {"en": "National Virginia Day", "he": "יום וירג׳יניה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-virginia-day-september-14/"}},
+        {type: "1D", start: {mon: 9, d: 14}, titles: {"en": "National Virginia Day", "he": "יום וירג׳יניה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-virginia-day-september-14/"}},
         {type: "1D", start: {d: 15, mon: 2}, titles: {"en": "National Wisconsin Day", "he": "יום ויסקונסין הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-wisconsin-day-february-15/"}},
         {type: "1D", start: {d: 15, mon: 3}, titles: {"en": "National Kansas Day", "he": "יום קנזס הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-kansas-day-march-15/"}},
         {type: "1D", start: {d: 16, mon: 11}, titles: {"en": "National Indiana Day", "he": "יום אינדיאנה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-indiana-day-november-16/"}},

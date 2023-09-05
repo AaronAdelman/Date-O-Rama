@@ -11,7 +11,7 @@
         {type: "1D", start: {d: 12, mon: 3}, titles: {"en": "Aztec New Year"}, urls: {"en": "https://nationaltoday.com/aztec-new-year/"}},
         {type: "1D", start: {mon: 7, d: 1}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 4, d: 30}, first: {era: 1, y: 1925}, urls: {"en": "https://nationaltoday.com/day-of-the-child/"}},
-        {inherits: "Independence Day", type: "1D", start: {d: 16, mon: 9}, first: {era: 1, y: 1810}, urls: {"en": "https://nationaltoday.com/mexican-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {d: 16, mon: 9}, first: {era: 1, y: 1810}, urls: {"en": "https://nationaltoday.com/mexican-independence-day/", "he": "https://www.daysoftheyear.co.il/2017/09/16.html"}},
         {inherits: "Revolution Day", type: "1D", start: {mon: 11, d: 20}, first: {era: 1, y: 1910}, urls: {"en": "https://nationaltoday.com/revolution-day-mexico/"}},
         {type: "1D", start: {mon: 11, d: 23}, inherits: "Navy Day"},
         {inherits: "National Maritime Day", type: "1D", start: {mon: 6, d: 1}},

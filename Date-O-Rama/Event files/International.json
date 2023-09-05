@@ -1675,6 +1675,10 @@
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/roald-dahl-day/"}, titles: {"en": "Roald Dahl Day"}},
         {type: "nD", start: {mon: 9, d: 13}, end: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/orchid-male-cancer-awareness-week/"}, titles: {"en": "Orchid Male Cancer Awareness Week"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/gobstopper-day/"}, titles: {"en": "Gobstopper Day"}},
-
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/butterscotch-cinnamon-pie-day/"}, titles: {"en": "Butterscotch Cinnamon Pie Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 15}, inherits: "Greenpeace Day", first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/international-dot-day/"}, titles: {"en": "International Dot Day"}, first: {era: 1, y: 2009}, emoji: "⚫️"},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/world-afro-day/"}, titles: {"en": "World Afro Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/world-engineers-day/"}, titles: {"en": "World Engineers Day"}},
     ]
 }

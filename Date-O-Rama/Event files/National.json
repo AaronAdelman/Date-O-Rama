@@ -1646,5 +1646,16 @@
         {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-rosa-tequila-day/"}, titles: {"en": "National Rosa Tequila Day"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-school-pictures-day/"}, titles: {"en": "National School Pictures Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-sober-day/"}, titles: {"en": "National Sober Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-africa-civility-day/"}, titles: {"en": "National Africa Civility Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-cheese-toast-day/"}, titles: {"en": "National Cheese Toast Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-concussion-awareness-day/"}, titles: {"en": "National Concussion Awareness Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-creme-de-menthe-day/"}, titles: {"en": "National Creme de Menthe Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-custom-framing-day/"}, titles: {"en": "National Custom Framing Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-double-cheeseburger-day/"}, titles: {"en": "National Double Cheeseburger Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-google-com-day/"}, titles: {"en": "National Google.com Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-linguine-day/"}, titles: {"en": "National Linguine Day"}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-online-learning-day/"}, titles: {"en": "National Online Learning Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-tackle-kids-cancer-day/"}, titles: {"en": "National Tackle Kids Cancer Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-tradesmen-day/"}, titles: {"en": "National Tradesmen Day"}},
     ]
 }

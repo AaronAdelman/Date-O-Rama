@@ -167,7 +167,7 @@
         {type: "1D", start: {d: 20, mon: 8}, titles: {"en": "Akshay Urja Diwas"}, notes: {"en": "Akshay Urja Day"}, first: {era: 1, y: 2004}, urls: {"en": "https://en.wikipedia.org/wiki/Indian_Akshay_Urja_Day"}},
         {type: "1D", start: {d: 25, mon: 9}, titles: {"en": "Antyodaya Diwas"}},
         {type: "1D", start: {d: 24, mon: 10}, titles: {"en": "Raising Day of Indo-Tibetan Border Police"}},
-        {type: "1D", start: {d: 14, mon: 9}, titles: {"en": "Hindi Day", "hi": "हिन्दी दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Hindi_Day"}},
+        {type: "1D", start: {mon: 9, d: 14}, titles: {"en": "Hindi Day", "he": "יום השפה ההינדית", "hi": "हिन्दी दिवस"}, urls: {"en": "https://en.wikipedia.org/wiki/Hindi_Day", "he": "https://www.daysoftheyear.co.il/2018/09/hindi-day.html"}},
         {type: "1D", start: {mon: 9, d: 15}, titles: {"en": "Sanchayika Day"}},
         {type: "nD", start: {d: 1, mon: 12}, "end": {d: 10, mon: 12}, titles: {"en": "Hornbill Festival"}, locations: {"en": "Nagaland"}, urls: {"en": "https://www.hornbillfestival.com/"}},
         {type: "1D", start: {d: 21, mon: 4}, titles: {"en": "National Civil Service Day"}},
