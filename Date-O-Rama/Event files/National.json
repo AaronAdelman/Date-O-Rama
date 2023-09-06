@@ -1672,6 +1672,12 @@
         {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/national-stepfamily-day/"}, titles: {"en": "National Stepfamily Day"}, first: {era: 1, y: 1997}},
         {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://nationaltoday.com/stay-away-from-seattle-day/"}, titles: {"en": "Stay Away From Seattle Day"}},
         {type: "1D", start: {mon: 9, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/guacamole-day/", "he": "https://www.daysoftheyear.co.il/2019/09/16.html"}, titles: {"en": "National Guacamole Day", "he": "יום הגואקמולי הלאומי"}, emoji: "🥑"},
-
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-apple-dumpling-day/"}, titles: {"en": "National Apple Dumpling Day"}},
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-arielle-k-sterrett-day/"}, titles: {"en": "National Arielle K. Sterrett Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-monte-cristo-day/"}, titles: {"en": "National Monte Cristo Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-pet-bird-day/"}, titles: {"en": "National Pet Bird Day"}},
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-pet-carbon-monoxide-co-safety-day/"}, titles: {"en": "National Pet Carbon Monoxide (CO) Safety Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-professional-house-cleaners-day/"}, titles: {"en": "National Professional House Cleaners Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-table-shuffleboard-day/"}, titles: {"en": "National Table Shuffleboard Day"}, first: {era: 1, y: 2017}},
     ]
 }
