@@ -1679,5 +1679,11 @@
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-pet-carbon-monoxide-co-safety-day/"}, titles: {"en": "National Pet Carbon Monoxide (CO) Safety Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-professional-house-cleaners-day/"}, titles: {"en": "National Professional House Cleaners Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-table-shuffleboard-day/"}, titles: {"en": "National Table Shuffleboard Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-cartonnage-day/"}, titles: {"en": "National Cartonnage Day"}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-cheeseburger-day/"}, titles: {"en": "National Cheeseburger Day"}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-first-love-day/", "he": "https://www.daysoftheyear.co.il/2019/09/first-love-day.html"}, titles: {"en": "National First Love Day", "he": "יום האהבה הראשונה הלאומי"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-hiv-aids-and-aging-awareness-day/"}, titles: {"en": "National HIV/AIDS and Aging Awareness Day"}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-report-kickback-fraud-day/"}, titles: {"en": "National Report Kickback Fraud Day"}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-respect-day/", "he": "https://www.daysoftheyear.co.il/2018/09/18.html"}, titles: {"en": "National Respect Day", "he": "יום הכבוד הלאומי"}},
     ]
 }

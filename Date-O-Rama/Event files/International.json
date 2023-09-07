@@ -1694,5 +1694,12 @@
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/international-country-music-day/"}, titles: {"en": "International Country Music Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/international-grenache-day/"}, titles: {"en": "International Grenache Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/wife-appreciation-day/"}, titles: {"en": "Wife Appreciation Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/global-company-culture-day/"}, titles: {"en": "Global Company Culture Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/hug-a-greeting-card-writer-day/"}, titles: {"en": "Hug A Greeting Card Writer Day"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/locate-an-old-friend-day/"}, titles: {"en": "Locate An Old Friend Day"}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/purple-bra-day/"}, titles: {"en": "Purple Bra Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/read-an-ebook-day/"}, titles: {"en": "Read An eBook Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/rice-krispies-treats-day/"}, titles: {"en": "Rice Krispies Treats Day"}},
+        {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/world-water-monitoring-day/"}, titles: {"en": "World Water Monitoring Day"}, first: {era: 1, y: 2003}},
     ]
 }
