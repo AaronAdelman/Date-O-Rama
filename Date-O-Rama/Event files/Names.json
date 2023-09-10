@@ -318,6 +318,9 @@
         {type: "1D", start: {mon: 9, d: 17}, urls: {"en": "https://nationaltoday.com/national-bobby-day/"}, titles: {"en": "National Bobby Day"}},
         {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/national-colton-day/"}, titles: {"en": "National Colton Day"}},
         {type: "1D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-jude-day/"}, titles: {"en": "National Jude Day"}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-brittany-day/"}, titles: {"en": "National Brittany Day"}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-hannah-day/"}, titles: {"en": "National Hannah Day"}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-kristina-day/"}, titles: {"en": "National Kristina Day"}},
 
     ]
 }

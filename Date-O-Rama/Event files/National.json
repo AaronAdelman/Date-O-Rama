@@ -1691,6 +1691,13 @@
         {type: "1D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-meow-like-pirate-day/"}, titles: {"en": "National Meow Like a Pirate Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-voter-registration-day/"}, titles: {"en": "​National Voter Registration Day"}},
         {type: "1D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/national-woman-road-warrior-day/"}, titles: {"en": "National Woman Road Warrior Day"}},
+        {type: "1D", start: {mon: 9, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/get-ready-day/"}, titles: {"en": "Get Ready Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-cat-dog-gut-health-awareness-day/"}, titles: {"en": "National Cat & Dog Gut Health Awareness Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-chai-day/"}, titles: {"en": "National Chai Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-garage-condo-day/"}, titles: {"en": "National Garage Condo Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-opioid-awareness-day/"}, titles: {"en": "National Opioid Awareness Day"}},
+        {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-pawpaw-day/"}, titles: {"en": "National Pawpaw Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-pecan-cookie-day/"}, titles: {"en": "National Pecan Cookie Day"}},
 
     ]
 }
