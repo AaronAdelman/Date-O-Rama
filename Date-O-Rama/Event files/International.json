@@ -1702,6 +1702,14 @@
         {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/rice-krispies-treats-day/"}, titles: {"en": "Rice Krispies Treats Day"}},
         {type: "1D", start: {mon: 9, d: 18}, urls: {"en": "https://nationaltoday.com/world-water-monitoring-day/"}, titles: {"en": "World Water Monitoring Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 9, d: 19}, urls: {"en": "https://nationaltoday.com/aortic-dissection-awareness-day/"}, titles: {"en": "Aortic Dissection Awareness Day"}},
-
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/international-nft-day/"}, titles: {"en": "International NFT Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-care-for-kids-day/"}, titles: {"en": "National Care For Kids Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-crime-and-intelligence-analyst-appreciation-day/"}, titles: {"en": "National Crime and Intelligence Analyst Appreciation Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-fried-rice-day/"}, titles: {"en": "National Fried Rice Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-punch-day/", "he": "https://www.daysoftheyear.co.il/2018/09/20.html"}, titles: {"en": "National Punch Day", "he": "יום הפונץ׳ הלאומי"}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-queso-day/"}, titles: {"en": "National Queso Day"}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-school-backpack-awareness-day/"}, titles: {"en": "National School Backpack Awareness Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-string-cheese-day/"}, titles: {"en": "National String Cheese Day"}, first: {era: 1, y: 2017}},
+        {type: "nD", start: {mon: 9, d: 20}, end: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/international-week-of-happiness-at-work/"}, titles: {"en": "International Week of Happiness at Work"}, first: {era: 1, y: 2017}},
     ]
 }
