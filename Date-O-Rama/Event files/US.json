@@ -472,6 +472,8 @@
         {type: "1D", start: {d: 21, mon: 8}, titles: {"en": "World Senior Citizen’s Day", "he": "יום האזרח הוותיק העולמי"}, first: {era: 1, y: 1991}, emoji: "👴👵", urls: {"en": "https://nationaltoday.com/national-senior-citizens-day/"}, notes: {"en": "National Day of the Third Age\nNational Senior Citizens Day"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-sewing-month/"}, titles: {"en": "National Sewing Month"}, emoji: "🧵🪡", first: {era: 1, y: 1982}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-pow-mia-recognition-day/"}, titles: {"en": "National POW/MIA Recognition Day"}, first: {era: 1, y: 1979}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/american-business-womens-day/"}, titles: {"en": "American Business Women’s Day"}, first: {era: 1, y: 1983}},
+
 
 
         

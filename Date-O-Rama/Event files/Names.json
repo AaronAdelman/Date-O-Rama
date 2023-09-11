@@ -321,6 +321,8 @@
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-brittany-day/"}, titles: {"en": "National Brittany Day"}},
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-hannah-day/"}, titles: {"en": "National Hannah Day"}},
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/national-kristina-day/"}, titles: {"en": "National Kristina Day"}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-dante-day-2/"}, titles: {"en": "National Dante Day"}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-khalid-day/"}, titles: {"en": "National Khalid Day"}},
 
     ]
 }

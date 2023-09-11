@@ -1712,8 +1712,9 @@
         {type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://nationaltoday.com/national-string-cheese-day/"}, titles: {"en": "National String Cheese Day"}, first: {era: 1, y: 2017}},
         {type: "nD", start: {mon: 9, d: 20}, end: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/international-week-of-happiness-at-work/"}, titles: {"en": "International Week of Happiness at Work"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/escapology-day/"}, titles: {"en": "Escapology Day"}},
-        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/miniature-golf-day-september-21/"}, titles: {"en": "Miniature Golf Day"}},
+        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/miniature-golf-day-september-21/"}, titles: {"en": "Miniature Golf Day"}, notes: {"en": "World Mini Golf Day"}},
         {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/world-gratitude-day/"}, titles: {"en": "World Gratitude Day"}, first: {era: 1, y: 1966}},
-        {type: "1D", start: {mon: 9, d: 21}, urls: {"en": "https://nationaltoday.com/world-mini-golf-day/"}, titles: {"en": "World Mini Golf Day"}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/chainmail-day/"}, titles: {"en": "Chainmail Day"}},
+        {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/falls-prevention-awareness-day/"}, titles: {"en": "Falls Prevention Awareness Day"}, first: {era: 1, y: 2008}},
     ]
 }
