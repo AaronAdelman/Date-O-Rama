@@ -1731,5 +1731,8 @@
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/math-storytelling-day/"}, titles: {"en": "Math Storytelling Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/research-administrator-day/"}, titles: {"en": "Research Administrator Day"}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/world-dream-day/", "he": "https://www.daysoftheyear.co.il/2017/09/25.html"}, titles: {"en": "World Dream Day", "he": "יום החלומות העולמי"}, first: {era: 1, y: 2012}},
-]
+         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/better-breakfast-day/"}, titles: {"en": "Better Breakfast Day"}, first: {era: 1, y: 2019}},
+         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/human-resource-professional-day/"}, titles: {"en": "Human Resource Professional Day"}, first: {era: 1, y: 2018}},
+         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/love-note-day/", "he": "https://www.daysoftheyear.co.il/2018/09/26.html"}, titles: {"en": "Love Note Day", "he": "יום פתק האהבה"}},
+    ]
 }

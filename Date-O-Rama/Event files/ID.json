@@ -39,7 +39,7 @@
         {titles: {"en": "Agricultural Activity Day", "id": "Hari Krida Pertanian"}, type: "1D", start: {mon: 6, d: 21}, first: {era: 1, y: 1972}, emoji: "🌾"},
         {titles: {"en": "National Midwife Day", "id": "Hari Bidan Nasional"}, type: "1D", start: {mon: 6, d: 24}, first: {era: 1, y: 1951}},
         {inherits: "International Day Against Drug Abuse and Illicit Trafficking", type: "1D", start: {mon: 6, d: 26}, first: {era: 1, y: 1989}},
-        {type: "1D", start: {mon: 6, d: 29}, inherits: "Family Day", titles: {"en": "National Family Day", "id": "Hari Keluarga Nasional"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 6, d: 29}, inherits: "National Family Day", first: {era: 1, y: 2014}},
         {titles: {"en": "Bhayangkara Day", "id": "Hari Bhayangkara"}, type: "1D", start: {mon: 7, d: 1}, emoji: "👮‍♂️👮‍♀️"},
         {titles: {"en": "Bank Indonesia Day", "id": "Hari Bank Indonesia"}, type: "1D", start: {mon: 7, d: 5}, emoji: "🏦"},
         {type: "1D", start: {mon: 7, d: 14}, inherits: "Tax Day"},

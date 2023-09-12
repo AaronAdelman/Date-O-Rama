@@ -1724,6 +1724,16 @@
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-quesadilla-day/"}, titles: {"en": "National Quesadilla Day"}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-roadkill-day/"}, titles: {"en": "National Roadkill Day"}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-tune-up-day/"}, titles: {"en": "National Tune-Up Day"}, first: {era: 1, y: 2014}},
-
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/alpaca-day/"}, titles: {"en": "Alpaca Day"}, notes: {"en": "National Alpaca Farm Day"}, first: {era: 1, y: 2014}, emoji: "🦙"},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/johnny-appleseed-day/"}, titles: {"en": "Johnny Appleseed Day"}, first: {era: 1, y: 1774}, inherits: "*BDay*"},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-chimichanga-day/"}, titles: {"en": "National Chimichanga Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-compliance-officer-day/"}, titles: {"en": "National Compliance Officer Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-dumpling-day/"}, titles: {"en": "National Dumpling Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-family-day/"}, inherits: "National Family Day"},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-key-lime-pie-day/"}, titles: {"en": "National Key Lime Pie Day"}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-law-enforcement-suicide-awareness-day/"}, titles: {"en": "National Law Enforcement Suicide Awareness Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/lumberjack-day/"}, titles: {"en": "Lumberjack Day"}, first: {era: 1, y: 2005}, notes: {"en": "National Pancake Day"}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-situational-awareness-day/"}, titles: {"en": "National Situational Awareness Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/shamu-the-whale-day/"}, titles: {"en": "Shamu the Whale Day"}, notes: {"en": "National Shamu the Whale Day"}},
     ]
 }
