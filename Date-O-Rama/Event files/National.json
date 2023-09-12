@@ -1712,5 +1712,9 @@
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-public-lands-day/"}, titles: {"en": "National Public Lands Day"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-snack-stick-day/"}, titles: {"en": "National Snack Stick Day"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-temperature-control-day/"}, titles: {"en": "National Temperature Control Day"}},
+        {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-cherries-jubilee-day/"}, titles: {"en": "National Cherries Jubilee Day"}},
+        {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-horchata-day/"}, titles: {"en": "National Horchata Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-mofongo-day/"}, titles: {"en": "National Mofongo Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-punctuation-day/", "he": "https://www.daysoftheyear.co.il/2018/09/24.html"}, titles: {"en": "National Punctuation Day", "he": "יום הפיסוק הלאומי"}},
     ]
 }

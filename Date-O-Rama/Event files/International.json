@@ -1721,5 +1721,9 @@
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/seed-gathering-season-day/"}, titles: {"en": "Seed Gathering Season"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/teal-talk-day/"}, titles: {"en": "Teal Talk Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/zaatar-day/", "he": "https://www.daysoftheyear.co.il/2020/09/zaatar-day.html"}, titles: {"en": "Za’atar Day", "he": "יום הזעתר"}},
+        {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/bluebird-of-happiness-day/"}, titles: {"en": "Bluebird of Happiness Day"}},
+        {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/world-bollywood-day/"}, titles: {"en": "World Bollywood Day"}},
+        {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/world-day-of-the-deaf/"}, titles: {"en": "World Day of the Deaf"}, first: {era: 1, y: 1958}},
+        {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/world-rivers-day/"}, titles: {"en": "World Rivers Day"}, first: {era: 1, y: 2005}},
     ]
 }
