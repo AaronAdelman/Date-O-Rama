@@ -896,7 +896,7 @@
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-curried-chicken-day/"}, titles: {"en": "National Curried Chicken Day"}},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-hot-tea-day/"}, titles: {"en": "National Hot Tea Day", "he": "יום התה החם הלאומי"}, first: {era: 1, y: 2016}, emoji: "☕️"},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-kettlebell-day/"}, titles: {"en": "National Kettlebell Day"}, first: {era: 1, y: 2021}},
-        {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-pharmacist-day/"}, titles: {"en": "National Pharmacist Day"}},
+        {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/national-pharmacist-day/"}, titles: {"en": "National Pharmacist Day", "he": "יום הרוקח הלאומי"}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 1, d: 13}, urls: {"en": "https://nationaltoday.com/national-peach-melba-day/"}, titles: {"en": "National Peach Melba Day"}, emoji: "🍑"},
         {type: "1D", start: {mon: 1, wkd: [2], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-gluten-free-day/"}, titles: {"en": "National Gluten-Free Day"}},
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/national-hot-pastrami-sandwich-day/"}, titles: {"en": "National Hot Pastrami Sandwich Day"}},
@@ -1716,5 +1716,14 @@
         {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-horchata-day/"}, titles: {"en": "National Horchata Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-mofongo-day/"}, titles: {"en": "National Mofongo Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/national-punctuation-day/", "he": "https://www.daysoftheyear.co.il/2018/09/24.html"}, titles: {"en": "National Punctuation Day", "he": "יום הפיסוק הלאומי"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-comic-book-day/"}, titles: {"en": "National Comic Book Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-cooking-day/"}, titles: {"en": "National Cooking Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-food-service-employee-day/"}, titles: {"en": "National Food Service Employee Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-one-hit-wonder-day/"}, titles: {"en": "National One-Hit Wonder Day"}, notes: {"en": "One-Hit Wonder Day"}, first: {era: 1, y: 1990}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-psychotherapy-day/"}, titles: {"en": "National Psychotherapy Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-quesadilla-day/"}, titles: {"en": "National Quesadilla Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-roadkill-day/"}, titles: {"en": "National Roadkill Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-tune-up-day/"}, titles: {"en": "National Tune-Up Day"}, first: {era: 1, y: 2014}},
+
     ]
 }

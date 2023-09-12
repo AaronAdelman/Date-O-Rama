@@ -324,6 +324,8 @@
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-dante-day-2/"}, titles: {"en": "National Dante Day"}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/national-khalid-day/"}, titles: {"en": "National Khalid Day"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-baker-day/"}, titles: {"en": "National Baker Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-john-day/"}, titles: {"en": "National John Day"}},
+        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-wade-day/"}, titles: {"en": "National Wade Day"}},
 
     ]
 }
