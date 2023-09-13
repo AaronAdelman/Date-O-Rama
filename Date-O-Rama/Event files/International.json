@@ -1734,5 +1734,8 @@
          {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/better-breakfast-day/"}, titles: {"en": "Better Breakfast Day"}, first: {era: 1, y: 2019}},
          {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/human-resource-professional-day/"}, titles: {"en": "Human Resource Professional Day"}, first: {era: 1, y: 2018}},
          {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/love-note-day/", "he": "https://www.daysoftheyear.co.il/2018/09/26.html"}, titles: {"en": "Love Note Day", "he": "יום פתק האהבה"}},
+         {type: "1D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/ancestor-appreciation-day/"}, titles: {"en": "Ancestor Appreciation Day"}},
+         {type: "1D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/morning-show-hosts-day/"}, titles: {"en": "Morning Show Hosts Day"}},
+
     ]
 }
