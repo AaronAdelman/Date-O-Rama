@@ -1736,6 +1736,7 @@
          {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/love-note-day/", "he": "https://www.daysoftheyear.co.il/2018/09/26.html"}, titles: {"en": "Love Note Day", "he": "יום פתק האהבה"}},
          {type: "1D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/ancestor-appreciation-day/"}, titles: {"en": "Ancestor Appreciation Day"}},
          {type: "1D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/morning-show-hosts-day/"}, titles: {"en": "Morning Show Hosts Day"}},
-
+         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/international-right-to-know-day/"}, titles: {"en": "International Right to Know Day"}, first: {era: 1, y: 2002}},
+         {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/remember-me-thursday/"}, titles: {"en": "Remember Me Thursday"}, first: {era: 1, y: 2012}},
     ]
 }

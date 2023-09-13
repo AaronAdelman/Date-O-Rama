@@ -328,6 +328,7 @@
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/national-wade-day/"}, titles: {"en": "National Wade Day"}},
         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-amanda-day/"}, titles: {"en": "National Amanda Day"}},
         {type: "1D", start: {mon: 9, d: 26}, urls: {"en": "https://nationaltoday.com/national-hari-day/"}, titles: {"en": "National Hari Day"}},
+        {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-chris-day/"}, titles: {"en": "National Chris Day"}},
 
     ]
 }
