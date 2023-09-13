@@ -1717,7 +1717,7 @@
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/chainmail-day/"}, titles: {"en": "Chainmail Day"}},
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/falls-prevention-awareness-day/"}, titles: {"en": "Falls Prevention Awareness Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/education-technology-day/"}, titles: {"en": "Education Technology Day"}},
-        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/international-rabbit-day/"}, titles: {"en": "International Rabbit Day"}, first: {era: 1, y: 1998}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/rabbit-day/", "he": "https://www.daysoftheyear.co.il/2017/09/blog-post_23.html"}, titles: {"en": "International Rabbit Day", "he": "יום הארנב הלאומי"}, first: {era: 1, y: 1998}, emoji: "🐇", notes: {"en": "National Bunny Day"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/seed-gathering-season-day/"}, titles: {"en": "Seed Gathering Season"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/teal-talk-day/"}, titles: {"en": "Teal Talk Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/zaatar-day/", "he": "https://www.daysoftheyear.co.il/2020/09/zaatar-day.html"}, titles: {"en": "Za’atar Day", "he": "יום הזעתר"}},
@@ -1742,6 +1742,10 @@
          {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/german-butterbrot-day/"}, titles: {"en": "German Butterbrot Day", "de": "Tag des Deutschen Butterbrotes"}, notes: {"en": "German Sandwich Day"}, first: {era: 1, y: 1999}},
          {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/international-day-of-awareness-of-food-loss-and-waste/"}, titles: {"en": "International Day of Awareness of Food Loss and Waste"}, first: {era: 1, y: 2020}},
          {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/sport-purple-for-platelets-day/"}, titles: {"en": "Sport Purple for Platelets Day"}},
-    {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://coffee.macmillan.org.uk/"}, titles: {"en": "World’s Biggest Coffee Morning"}, notes: {"en": "Macmillan Coffee Morning"}},
+         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://coffee.macmillan.org.uk/"}, titles: {"en": "World’s Biggest Coffee Morning"}, notes: {"en": "Macmillan Coffee Morning"}},
+         {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/extra-virgin-olive-oil-day/"}, titles: {"en": "Extra Virgin Olive Oil Day"}, first: {era: 1, y: 2019}},
+         {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/rumi-day/"}, titles: {"en": "Rumi Day"}, first: {era: 1, y: 1207}, inherits: "*BDay*"},
+         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/save-your-photos-day/"}, titles: {"en": "Save Your Photos Day"}},
+         {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/thunderbirds-day/"}, titles: {"en": "Thunderbirds Day"}, first: {era: 1, y: 2017}},
     ]
 }

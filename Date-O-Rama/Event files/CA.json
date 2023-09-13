@@ -31,7 +31,7 @@
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Civic Holiday", "fr": "Premier lundi d’août"}, first: {era: 1, y: 1875}, urls: {"en": "https://nationaltoday.com/civic-holiday-canada/"}},
         {titles: {"en": "British Columbia Day", "fr": "Jour de la Colombie-Britannique"}, type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/british-columbia-day/"}},
         {inherits: "Discovery Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 3}, "locations": {"en": "Yukon"}, urls: {"en": "https://nationaltoday.com/discovery-day/"}, first: {era: 1, y: 1911}},
-        {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/canada/canada-labour-day"}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/canada/canada-labour-day", "he": "https://www.daysoftheyear.co.il/2019/09/blog-post.html"}},
         {type: "1D", start: {mon: 9, d: 30}, titles: {"en": "National Day for Truth and Reconciliation", "fr": "Journée nationale de la vérité et de la réconciliation"}, first: {era: 1, y: 2013}, urls: {"en": "https://www.orangeshirtday.org/"}, notes: {"en": "Truth and Reconciliation Day\nOrange Shirt Day"}},
         {inherits: "Thanksgiving Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 1957}, urls: {"en": "https://www.daysoftheyear.com/days/canadian-thanksgiving/"}},
         {inherits: "Remembrance Day", type: "1D", start: {d: 11, mon: 11}, first: {era: 1, y: 1919}},

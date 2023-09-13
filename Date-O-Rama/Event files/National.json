@@ -1557,7 +1557,7 @@
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-chianti-day/"}, titles: {"en": "National Chianti Day", "he": "יום קיאנטי הלאומי"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-child-identity-theft-awareness-day/"}, titles: {"en": "National Child Identity Theft Awareness Day", "he": "יום המודעות הלאומי לגניבת זהות ילד"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-food-bank-day/"}, titles: {"en": "National Food Bank Day", "he": "יום בנק המזון הלאומי"}},
-        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-lazy-moms-day/"}, titles: {"en": "National Lazy Mom’s Day", "he": "יום האמא העצלנית הלאומי"}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-lazy-moms-day/", "he": "https://www.daysoftheyear.co.il/2015/09/blog-post.html"}, titles: {"en": "National Lazy Mom’s Day", "he": "יום האמא העצלנית הלאומי"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-no-rhyme-nor-reason-day/"}, titles: {"en": "National No Rhyme Nor Reason Day"}, notes: {"en": "National No Rhyme (Nor Reason) Day"}},
         {type: "1D", start: {mon: 9, d: 1}, urls: {"en": "https://nationaltoday.com/national-tofu-day/"}, titles: {"en": "National Tofu Day", "he": "יום הטופו הלאומי"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/childhood-cancer-awareness-month/"}, titles: {"en": "Childhood Cancer Awareness Month"}, inherits: "*MedicalAwareness*"},
@@ -1648,7 +1648,7 @@
         {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://nationaltoday.com/national-sober-day/"}, titles: {"en": "National Sober Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-africa-civility-day/"}, titles: {"en": "National Africa Civility Day"}},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-cheese-toast-day/"}, titles: {"en": "National Cheese Toast Day"}, first: {era: 1, y: 2015}},
-        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-concussion-awareness-day/"}, titles: {"en": "National Concussion Awareness Day"}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-concussion-awareness-day/", "he": "https://www.daysoftheyear.co.il/2019/09/blog-post_20.html"}, titles: {"en": "National Concussion Awareness Day", "he": "יום המודעות לזעזוע מוח לאומי"}},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-creme-de-menthe-day/"}, titles: {"en": "National Creme de Menthe Day"}},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-custom-framing-day/"}, titles: {"en": "National Custom Framing Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 9, d: 15}, urls: {"en": "https://nationaltoday.com/national-double-cheeseburger-day/"}, titles: {"en": "National Double Cheeseburger Day"}},
@@ -1709,6 +1709,7 @@
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-field-marketers-day/"}, titles: {"en": "National Field Marketer’s Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-go-with-your-gut-day/"}, titles: {"en": "National Go With Your Gut Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-great-american-pot-pie-day/"}, titles: {"en": "National Great American Pot Pie Day"}, first: {era: 1, y: 2002}},
+        {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/redhead-appreciation-day/", "he": "https://www.daysoftheyear.co.il/2016/09/blog-post.html"}, titles: {"en": "Redhead Appreciation Day", "he": "יום הג׳ינג׳ים"}, emoji: "👨‍🦰👩‍🦰"},
         {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-public-lands-day/"}, titles: {"en": "National Public Lands Day"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-snack-stick-day/"}, titles: {"en": "National Snack Stick Day"}},
         {type: "1D", start: {mon: 9, d: 23}, urls: {"en": "https://nationaltoday.com/national-temperature-control-day/"}, titles: {"en": "National Temperature Control Day"}},
@@ -1750,5 +1751,12 @@
         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/national-silent-movie-day/"}, titles: {"en": "National Silent Movie Day"}, first: {era: 1, y: 2021}},
         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/national-starbucks-day/"}, titles: {"en": "National Starbucks Day"}},
         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/vfw-day/"}, titles: {"en": "V.F.W. DAY"}, notes: {"en": "National V.F.W. DAY"}},
+        {type: "1D", start: {mon: 9, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/family-health-fitness-day-usa/"}, titles: {"en": "Family Health & Fitness Day USA"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/national-chewing-gum-day/", "he": "https://www.daysoftheyear.co.il/2018/09/30.html"}, titles: {"en": "National Chewing Gum Day", "he": "יום המסטיק הלאומי"}},
+        {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/national-ghost-hunting-day/"}, titles: {"en": "National Ghost Hunting Day"}},
+        {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/national-hot-mulled-cider-day/"}, titles: {"en": "National Hot Mulled Cider Day"}},
+        {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/national-puppy-mill-survivor-day/"}, titles: {"en": "National Puppy Mill Survivor Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/pet-tricks-day/"}, titles: {"en": "Pet Tricks Day"}, first: {era: 1, y: 2021}, notes: {"en": "National Pet Tricks Day"}},
+
     ]
 }
