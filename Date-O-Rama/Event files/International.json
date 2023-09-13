@@ -196,9 +196,9 @@
         {type: "1D", start: {mon: 9, d: 22}, titles: {"en": "World Car Free Day", "he": "יום ללא מכוניות העולמי"}, first: {era: 1, y: 2000}, emoji: "🚶‍♂️🚶‍♀️", urls: {"en": "https://nationaltoday.com/world-car-free-day/", "he": "https://www.daysoftheyear.co.il/2018/09/22.html"}, notes: {"he": "יום ללא מכוניות"}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://www.fip.org/world-pharmacists-day", "he": "https://www.daysoftheyear.co.il/2019/09/pharmacist-day.html"}, titles: {"en": "World Pharmacists Day", "he": "יום הרוקחים העולמי"}, first: {era: 1, y: 2009}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "World Environmental Health Day"}, emoji: "🌎", urls: {"en": "https://www.ifeh.org/wehd/"}, first: {era: 1, y: 2011}},
-        {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "World Rabies Day"}, first: {era: 1, y: 2007}, emoji: "🐩", urls: {"en": "https://en.wikipedia.org/wiki/World_Rabies_Day"}},
+        {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "World Rabies Day", "he": "יום הכלבת העולמי"}, first: {era: 1, y: 2007}, emoji: "🐩", urls: {"en": "https://rabiesalliance.org/world-rabies-day", "he": "https://www.daysoftheyear.co.il/2018/09/28.html"}},
         {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "International Poke Day"}, urls: {"en": "https://www.daysoftheyear.com/days/international-poke-day/"}},
-        {type: "1D", start: {mon: 9, d: 29}, titles: {"en": "World Heart Day"}, first: {era: 1, y: 2000}, emoji: "🫀", urls: {"en": "https://nationaltoday.com/world-heart-day/"}},
+        {type: "1D", start: {mon: 9, d: 29}, titles: {"en": "World Heart Day", "he": "יום הלב העולמי"}, first: {era: 1, y: 2000}, emoji: "🫀", urls: {"en": "https://nationaltoday.com/world-heart-day/", "he": "https://www.daysoftheyear.co.il/2018/09/29.html"}},
         {type: "1D", start: {d: 30, mon: 9}, titles: {"en": "International Podcast Day"}, emoji: "🎧", urls: {"en": "https://internationalpodcastday.com/"}},
         {type: "1D", start: {d: 30, mon: 9}, titles: {"en": "International Blasphemy Rights Day"}, first: {era: 1, y: 2009}, urls: {"en": "https://nationaltoday.com/international-blasphemy-rights-day/"}, notes: {"en": "Blasphemy Day\nInternational Blasphemy Day"}},
         {type: "1D", start: {mon: 10, wkdRecurrence: 1, wkd: [6]}, titles: {"en": "World Smile Day", "he": "יום החיוך העולמי"}, first: {era: 1, y: 1999}, emoji: "😀", urls: {"en": "https://www.worldsmileday.com/index.php"}},
@@ -1738,5 +1738,10 @@
          {type: "1D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/morning-show-hosts-day/"}, titles: {"en": "Morning Show Hosts Day"}},
          {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/international-right-to-know-day/"}, titles: {"en": "International Right to Know Day"}, first: {era: 1, y: 2002}},
          {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/remember-me-thursday/"}, titles: {"en": "Remember Me Thursday"}, first: {era: 1, y: 2012}},
+         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/confucius-day/"}, titles: {"en": "Confucius Day"}},
+         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/german-butterbrot-day/"}, titles: {"en": "German Butterbrot Day", "de": "Tag des Deutschen Butterbrotes"}, notes: {"en": "German Sandwich Day"}, first: {era: 1, y: 1999}},
+         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/international-day-of-awareness-of-food-loss-and-waste/"}, titles: {"en": "International Day of Awareness of Food Loss and Waste"}, first: {era: 1, y: 2020}},
+         {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/sport-purple-for-platelets-day/"}, titles: {"en": "Sport Purple for Platelets Day"}},
+    {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://coffee.macmillan.org.uk/"}, titles: {"en": "World’s Biggest Coffee Morning"}, notes: {"en": "Macmillan Coffee Morning"}},
     ]
 }

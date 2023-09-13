@@ -1745,5 +1745,10 @@
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-neighbor-day/"}, titles: {"en": "National Neighbor Day"}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-self-awareness-day/"}, titles: {"en": "National Self Awareness Day"}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-strawberry-cream-pie-day/"}, titles: {"en": "National Strawberry Cream Pie Day"}},
+        {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/national-biscotti-day/"}, titles: {"en": "National Biscotti Day"}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-brave-day/"}, titles: {"en": "National BRAVE Day"}},
+        {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/national-silent-movie-day/"}, titles: {"en": "National Silent Movie Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/national-starbucks-day/"}, titles: {"en": "National Starbucks Day"}},
+        {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/vfw-day/"}, titles: {"en": "V.F.W. DAY"}, notes: {"en": "National V.F.W. DAY"}},
     ]
 }

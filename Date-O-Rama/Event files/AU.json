@@ -29,7 +29,7 @@
         {type: "1D", start: {mon: 8, wkd: [4], wkdRecurrence: -3}, urls: {"en": "https://nationaltoday.com/ekka-peoples-day/"}, titles: {"en": "Ekka People’s Day"}, first: {era: 1, y: 2022}},
         {inherits: "Father’s Day", type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 1}},
         {inherits: "King’s Birthday", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: -1}, "locations": {"en": "Western Australia"}, first: {era: 1, y: 2022}, urls: {"en": "https://www.officeholidays.com/holidays/australia/western-australia/australia-kings-birthday"}},
-        {type: "1D", start: {mon: 9, d: 23, thruD: 29, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/australia/victoria/grand-final-eve"}, titles: {"en": "Grand Final Eve"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/afl-grand-final-friday/"}, titles: {"en": "AFL Grand Final Friday"}, notes: {"en": "Grand Final Eve"}, first: {era: 1, y: 2021}},
         {inherits: "Labour Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 1}, "locations": {"en": "Australian Capital Territory, New South Wales, and South Australia"}, urls: {"en": "https://nationaltoday.com/labour-day/"}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/australia/queensland/australia-kings-birthday"}, inherits: "King’s Birthday", locations: {"en": "Queensland"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Recreation Day"}, urls: {"en": "https://nationaltoday.com/recreation-day/"}, emoji: "🤿"},
