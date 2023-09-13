@@ -168,7 +168,7 @@
 
         {titles: {"en": "Feast of St. Peter Claver"}, type: "1D", start: {mon: 9, d: 9}},
         {titles: {"en": "Holy Name of the Blessed Virgin Mary"}, type: "1D", start: {mon: 9, d: 12}},
-        {titles: {"en": "Feast of St. John Chrysostom"}, type: "1D", start: {mon: 9, d: 13}},
+        {titles: {"en": "Feast of St. John Chrysostom", "he": "החג של יוחנן כריסוסטומוס"}, type: "1D", start: {mon: 9, d: 13}},
 
         {inherits: "Feast of the Exaltation of the Holy Cross", type: "1D", start: {mon: 9, d: 14}},
         
