@@ -20,7 +20,7 @@
         {type: "1D", start: {mon: 6, d: 21}, inherits: "Andean New Year", first: {era: 1, y: 2009}, urls: {"en": "https://nationaltoday.com/aymara-new-year/"}},
         {type: "1D", start: {mon: 7, d: 16}, titles: {"en": "La Paz Day", "es": "Día del departamento de La Paz"}, urls: {"en": "https://nationaltoday.com/la-paz-day/"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 6}, first: {era: 1, y: 1825}, urls: {"en": "https://nationaltoday.com/bolivia-independence-day/"}},
-        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/bolivia/cochabamba/cochabamba-day"}, titles: {"en": "Cochabamba Day", "es": "Día del departamento de Cochabamba"}},
+        {type: "1D", start: {mon: 9, d: 14}, urls: {"en": "https://www.officeholidays.com/holidays/bolivia/cochabamba/cochabamba-day"}, titles: {"en": "Cochabamba Day", "he": "יום קוצ׳במבה", "es": "Día del departamento de Cochabamba"}},
         {type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/bolivia/santa-cruz/bolivia-regional-holiday"}, titles: {"en": "Public Holiday"}, locations: {"en": "Santa Cruz"}},
         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/bolivia/pando/bolivia-regional-holiday"}, titles: {"en": "Public Holiday"}, locations: {"en": "Pando"}},
         {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
