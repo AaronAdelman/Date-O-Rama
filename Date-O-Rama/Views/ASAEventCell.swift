@@ -63,7 +63,7 @@ struct ASAEventCell:  View {
             let location: String? = event.location
             if location != nil {
                 if !location!.isEmpty {
-                    return String.localizedStringWithFormat("%@ (%@)", title, location!)
+                    return String.localizedStringWithFormat(NSLocalizedString("%@ (%@)", comment: ""), title, location!)
                 }
             }
             
