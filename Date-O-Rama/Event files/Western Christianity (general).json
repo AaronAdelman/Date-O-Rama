@@ -176,7 +176,7 @@
         {titles: {"en": "Feast of Saints Cornelius and Cyprian"}, type: "1D", start: {mon: 9, d: 16}},
         {titles: {"en": "Feast of St. Robert Bellarmine or St. Hildegard of Bingen"}, type: "1D", start: {mon: 9, d: 17}},
         {titles: {"en": "Feast of St. Januarius"}, type: "1D", start: {mon: 9, d: 19}},
-        {titles: {"en": "Feast of Saints Andrew Kim Taegon and companions"}, type: "1D", start: {mon: 9, d: 20}},
+        {titles: {"en": "Feast of Saints Andrew Kim Taegon and companions", "he": "חג הקדושים אנדרו קים טאה־גון וחבריו"}, type: "1D", start: {mon: 9, d: 20}},
         {titles: {"en": "Feast of St. Matthew the Evangelist"}, type: "1D", start: {mon: 9, d: 21}},
         {titles: {"en": "Feast of St. Pio of Pietrelcina (Padre Pio)"}, type: "1D", start: {mon: 9, d: 23}},
         {titles: {"en": "Feast of Saints Cosmas and Damian"}, type: "1D", start: {mon: 9, d: 26}},
