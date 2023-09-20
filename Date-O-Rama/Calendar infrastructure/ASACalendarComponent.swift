@@ -151,6 +151,8 @@ extension Calendar.Component {
             return .calendar
         case .timeZone:
             return .timeZone
+        case .isLeapMonth:
+            return nil
         @unknown default:
             return nil
         } // switch self
