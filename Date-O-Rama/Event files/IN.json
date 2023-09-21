@@ -208,7 +208,7 @@
         {type: "1D", start: {d: 30, mon: 8}, titles: {"en": "Small Industry Day", "he": "יום התעשייה הקטנה"}},
         {type: "1D", start: {d: 11, mon: 9}, titles: {"en": "National Forest Martyrs Day"}, emoji: "🌲🌳🌴"},
         {type: "1D", start: {mon: 9, d: 15}, inherits: "Engineer’s Day"},
-        {type: "1D", start: {d: 21, mon: 9}, titles: {"en": "Biosphere Day"}, first: {era: 1, y: 1992}},
+        {type: "1D", start: {d: 21, mon: 9}, titles: {"en": "Biosphere Day", "he": "יום הביוספירה"}, first: {era: 1, y: 1992}},
         {type: "1D", start: {mon: 9, d: 22}, titles: {"en": "World Rose Day"}, emoji: "🌹"},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "Council of Scientific and Industrial Research Day"}, first: {era: 1, y: 1942}},
         {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "Gunners Day"}},
