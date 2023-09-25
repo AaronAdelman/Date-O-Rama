@@ -1719,7 +1719,7 @@
         {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/world-day-of-the-deaf/"}, titles: {"en": "World Day of the Deaf"}, first: {era: 1, y: 1958}},
         {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/world-rivers-day/"}, titles: {"en": "World Rivers Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/binge-day/"}, titles: {"en": "Binge Day"}},
-        {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/german-butterbrot-day/"}, titles: {"en": "German Butterbrot Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://www.daysoftheyear.com/days/german-butterbrot-day/"}, titles: {"en": "German Butterbrot Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/international-ataxia-awareness-day/"}, titles: {"en": "International Ataxia Awareness Day"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/math-storytelling-day/"}, titles: {"en": "Math Storytelling Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 9, d: 25}, urls: {"en": "https://nationaltoday.com/research-administrator-day/"}, titles: {"en": "Research Administrator Day"}},
