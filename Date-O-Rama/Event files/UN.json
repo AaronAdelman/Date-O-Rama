@@ -230,7 +230,7 @@
         {inherits: "World Wetlands Day", type: "1D", start: {d: 2, mon: 2}, first: {era: 1, y: 2022}},
         {type: "1D", start: {d: 12, mon: 7}, titles: {"en": "Malala Day", "he": "יום מלאלה"}, first: {era: 1, y: 2013}, urls: {"en": "https://nationaldaycalendar.com/malala-day-july-12/"}},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "World Contraception Day", "he": "יום אמצעי המניעה העולמי"}},
-        {type: "1D", start: {d: 7, mon: 10}, titles: {"en": "World Cotton Day", "he": "יום הכותנה העולמי"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.worldcottonday.com/"}},
+        {type: "1D", start: {mon: 10, d: 7}, titles: {"en": "World Cotton Day", "he": "יום הכותנה העולמי"}, first: {era: 1, y: 2019}, urls: {"en": "https://www.worldcottonday.com/"}},
         {type: "1D", start: {mon: 5, d: 12}, titles: {"en": "International Nurses Day", "he": "יום האחות הבינלאומי"}, first: {era: 1, y: 1965}, urls: {"en": "https://en.wikipedia.org/wiki/International_Nurses_Day"}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 6, d: 1}, titles: {"en": "World Milk Day", "he": "יום החלב הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/world-milk-day/"}, emoji: "🥛", first: {era: 1, y: 1915}},
         {type: "1D", start: {mon: 6, d: 18}, titles: {"en": "International Day for Countering Hate Speech"}, urls: {"en": "https://nationaltoday.com/international-day-for-countering-hate-speech/"}},

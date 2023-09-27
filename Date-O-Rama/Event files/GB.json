@@ -146,5 +146,7 @@
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/national-organic-month/"}, titles: {"en": "National Organic Month"}, first: {era: 1, y: 2013}, notes: {"en": "Organic September"}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/vascular-disease-awareness-month/"}, titles: {"en": "Vascular Disease Awareness Month"}, inherits: "*MedicalAwareness*"},
         {type: "nD", start: {mon: 9, d: 23}, end: {mon: 10, d: 23}, urls: {"en": "https://nationaltoday.com/seed-gathering-season/"}, titles: {"en": "Seed Gathering Season"}, first: {era: 1, y: 1998}},
+        {type: "1D", start: {mon: 10, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationalpoetryday.co.uk/"}, titles: {"en": "National Poetry Day"}, emoji: "☂️🐢🍄"},
+        {type: "1D", start: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, urls: {"en": "https://nationaltoday.com/national-police-memorial-day/"}, titles: {"en": "National Police Memorial Day"}, first: {era: 1, y: 2001}},
     ]
 }

@@ -22,7 +22,7 @@
         {titles: {"he": "תענית תקופת חמלניצקי", "en": "Fast of the Khmelnitsky Massacres"}, type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://oukosher.org/halacha-yomis?category=20th-of-sivan"}},
         {titles: {"he": "יום שבו נפסקה הבאת הביכורים לירושלים בימי ירבעם בן נבט", "en": "Day of stopping of bringing of first fruits to Yerushalayim in the days of Yarov‘am ben Nevaṭ"}, type: "1D", start: {mon: 10, d: 23}},
         {inherits: "יום־שנה של רבן שמעון בן גמליאל הזקן", type: "1D", start: {mon: 10, d: 25}, first: {era: 0, y: 3875}},
-        {inherits: "יום־שנה של רבי ישמעאל בן אלישע כהן גדול", type: "1D", start: {d: 25, mon: 10}, first: {era: 0, y: 3884}},
+        {inherits: "יום־שנה של רבי ישמעאל בן אלישע כהן גדול", type: "1D", start: {mon: 10, d: 25}, first: {era: 0, y: 3884}},
         {inherits: "יום־שנה של רבי חנינא סגן הכהנים", type: "1D", start: {mon: 10, d: 25}},
         {titles: {"he": "יום־שנה של רבי חנינא בן תרדיון ויום שספר תורה נשרפה עמו", "en": "Yohrtsayt of Rabbi Ḥanina’ ben Teradhyon and the day a Torah scroll was burned with him"}, type: "1D", start: {mon: 10, d: 27}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום שבו כבה הנר המערבי בימי המלך אחז", "en": "Day of extinguishing of the western lamp in the days of King ’Aḥaz"}, type: "1D", start: {mon: 12, d: 18}},
