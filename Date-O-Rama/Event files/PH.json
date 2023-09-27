@@ -93,5 +93,7 @@
         {type: "1D", start: {mon: 6, d: 30}, urls: {"en": "https://nationaltoday.com/philippine-spanish-friendship-day/"}, titles: {"en": "Philippine-Spanish Friendship Day"}, emoji: "🇵🇭🇪🇸"},
         {type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://www.officeholidays.com/holidays/philippines/manila-ncr/manila-day"}, titles: {"en": "Manila Day"}},
         {type: "1D", start: {mon: 7, d: 23}, urls: {"en": "https://nationaltoday.com/apolinario-mabini-day/"}, titles: {"en": "Apolinario Mabini Day"}, inherits: "*BDay*", first: {era: 1, y: 2007}},
+        {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/museums-and-galleries-month/"}, titles: {"en": "Museums and Galleries Month"}, first: {era: 1, y: 1991}},
+        {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/national-indigenous-peoples-month/"}, titles: {"en": "National Indigenous Peoples Month"}, first: {era: 1, y: 2009}},
     ]
 }
