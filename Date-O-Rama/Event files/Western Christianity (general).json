@@ -181,7 +181,7 @@
         {titles: {"en": "Feast of St. Pio of Pietrelcina (Padre Pio)"}, type: "1D", start: {mon: 9, d: 23}},
         {titles: {"en": "Feast of Saints Cosmas and Damian"}, type: "1D", start: {mon: 9, d: 26}},
         {titles: {"en": "Feast of St. Vincent de Paul"}, type: "1D", start: {mon: 9, d: 27}},
-        {titles: {"en": "Feast of St. Wenceslaus or St. Lorenzo Ruiz and companions"}, type: "1D", start: {mon: 9, d: 28}},
+        {titles: {"en": "Feast of St. Lorenzo Ruiz and companions"}, type: "1D", start: {mon: 9, d: 28}},
         {titles: {"en": "Feast of Saints Michael, Gabriel and Raphael/Michaelmas"}, type: "1D", start: {mon: 9, d: 29}, notes: {"en": "International Happy Goose Day"}, urls: {"en": "https://nationaltoday.com/michaelmas/"}},
         {titles: {"en": "Feast of St. Jerome"}, type: "1D", start: {mon: 9, d: 30}},
 

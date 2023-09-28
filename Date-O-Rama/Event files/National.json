@@ -1749,7 +1749,6 @@
         {type: "1D", start: {mon: 9, d: 27}, urls: {"en": "https://nationaltoday.com/national-womens-health-and-fitness-day/"}, titles: {"en": "National Women’s Health and Fitness Day"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 9, d: 28, wkd: [2, 3, 4, 5, 6]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 1980}},
         {type: "1D", start: {mon: 9, d: 29, thruD: 30, wkd: [2]}, inherits: "Ask a Stupid Question Day", first: {era: 1, y: 1980}},
-        {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-neighbor-day/"}, titles: {"en": "National Neighbor Day"}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-self-awareness-day/"}, titles: {"en": "National Self Awareness Day"}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationaltoday.com/national-strawberry-cream-pie-day/"}, titles: {"en": "National Strawberry Cream Pie Day"}},
         {type: "1D", start: {mon: 9, d: 29}, urls: {"en": "https://nationaltoday.com/national-biscotti-day/"}, titles: {"en": "National Biscotti Day"}},
