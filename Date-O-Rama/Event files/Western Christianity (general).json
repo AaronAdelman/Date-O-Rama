@@ -186,7 +186,7 @@
         {titles: {"en": "Feast of St. Jerome"}, type: "1D", start: {mon: 9, d: 30}},
 
         {titles: {"en": "Feast of St. Thérèse of the Child Jesus"}, type: "1D", start: {mon: 10, d: 1}},
-        {titles: {"en": "Memorial of the Holy Guardian Angels"}, type: "1D", start: {mon: 10, d: 2}},
+        {titles: {"en": "Memorial of the Holy Guardian Angels"}, type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/guardian-angels-day/"}, notes: {"en": "Guardian Angels Day"}},
         {titles: {"en": "Feast of St. Francis of Assisi"}, type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/feast-of-st-francis-of-assisi/"}},
         {titles: {"en": "Feast of St. Faustina Kowalska"}, type: "1D", start: {mon: 10, d: 5}},
         {titles: {"en": "Feast of St. Bruno"}, type: "1D", start: {mon: 10, d: 6}},

@@ -82,7 +82,7 @@
         {type: "1D", start: {mon: 9, d: 24}, titles: {"en": "Schwenkfelder Thanksgiving"}, first: {era: 1, y: 1734}, urls: {"en": "https://nationaldaycalendar.com/schwenkfelder-thanksgiving-september-24/"}, inherits: "Thanksgiving Day"},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Day of Praise and Worship"}, first: {era: 1, y: 2020}, urls: {"en": "https://nationaltoday.com/national-day-of-praise-and-worship/"}, emoji: "🙏"},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "World Day of Migrants and Refugees"}, first: {era: 1, y: 1914}, urls: {"en": "https://nationaltoday.com/world-day-of-migrants-and-refugees/"}},
-        {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 1}, titles: {"en": "International Blessings of The Fishing Fleet Day"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, emoji: "🚤"},
+        {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 1}, titles: {"en": "International Blessings of the Fishing Fleet Day"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, emoji: "🚤"},
         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 3}, titles: {"en": "Sunday School Teacher Appreciation Day"}, urls: {"en": "https://nationaltoday.com/sunday-school-teacher-appreciation-day/"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 10, d: 17}, titles: {"en": "National Catholic Men’s Conference Day"}, urls: {"en": "https://nationaltoday.com/national-catholic-mens-conference-day/"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 10, d: 31}, inherits: "Reformation Day", first: {era: 1, y: 1717}},
