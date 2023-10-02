@@ -1806,6 +1806,9 @@
         {type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://www.daysoftheyear.com/days/name-your-car-day/"}, titles: {"en": "National Name Your Car Day"}},
         {type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/national-produce-misting-day/"}, titles: {"en": "National Produce Misting Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/national-report-long-term-acute-care-hospital-fraud-day/"}, titles: {"en": "National Report Long Term Acute Care Hospital Fraud Day"}},
-
+        {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/national-boyfriend-day/"}, titles: {"en": "National Boyfriend Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 10, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-fruit-at-work-day/"}, titles: {"en": "National Fruit at Work Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/national-techies-day/", "he": "https://www.daysoftheyear.co.il/2018/10/hitecday.html"}, titles: {"en": "National Techies Day", "he": "יום אנשי ההיי טק הלאומי"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/national-wide-awakes-day/"}, titles: {"en": "National Wide Awakes Day"}},
     ]
 }

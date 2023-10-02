@@ -1779,5 +1779,7 @@
          {type: "1M", start: {mon: 10}, urls: {"en": "https://www.worldanimalday.org.uk/"}, titles: {"en": "World Animal Month"}, first: {era: 1, y: 1931}, emoji: "🐍"},
          {type: "1M", start: {mon: 4}, urls: {"en": "https://nationaltoday.com/world-autism-month/"}, titles: {"en": "World Autism Month", "he": "חודש המודעות העולמי לאוטיזם"}, inherits: "*MedicalAwareness*"},
          {type: "1M", start: {mon: 10}, urls: {"en": "https://nationaltoday.com/world-menopause-month/"}, titles: {"en": "World Menopause Month"}, inherits: "*MedicalAwareness*"},
+         {type: "nD", start: {mon: 10, d: 3}, end: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/animal-welfare-week/"}, titles: {"en": "Animal Welfare Week"}},
+
     ]
 }

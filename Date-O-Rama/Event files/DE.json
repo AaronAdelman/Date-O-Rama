@@ -21,7 +21,7 @@
         {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
         {inherits: "Assumption Day", type: "1D", start: {mon: 8, d: 15}},
         {inherits: "Universal Children’s Day", type: "1D", start: {mon: 9, d: 20}, urls: {"en": "https://www.officeholidays.com/holidays/germany/thuringia/international-childrens-day"}, notes: {"en": "German World Children’s Day"}},
-        {type: "1D", start: {mon: 10, d: 3}, inherits: "Unity Day", first: {era: 1, y: 1990}, urls: {"en": "https://nationaltoday.com/national-unity-day/"}, titles: {"en": "German Unity Day", "he": "יום האחדות הגרמנית", "de": "Tag der Deutschen Einheit"}},
+        {type: "1D", start: {mon: 10, d: 3}, inherits: "Unity Day", first: {era: 1, y: 1990}, urls: {"en": "https://nationaltoday.com/national-unity-day/", "he": "https://www.daysoftheyear.co.il/2018/10/german-unity-day.html"}, titles: {"en": "German Unity Day", "he": "יום האחדות הגרמנית", "de": "Tag der Deutschen Einheit"}},
         {type: "1D", start: {mon: 10, d: 31}, inherits: "Reformation Day", first: {era: 1, y: 1717}, urls: {"en": "https://www.officeholidays.com/holidays/germany/reformation-day"}},
         {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
         {type: "1D", start: {mon: 11, d: 16, thruD: 22, wkd: [4]}, titles: {"en": "Repentance and Prayer Day", "de": "Buß- und Bettag"}, urls: {"en": "https://www.officeholidays.com/holidays/germany/saxony/repentance-day"}, notes: {"en": "Day of Repentance and Prayer\nRepentance Day"}},
