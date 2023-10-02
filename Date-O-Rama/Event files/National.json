@@ -1810,5 +1810,15 @@
         {type: "1D", start: {mon: 10, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-fruit-at-work-day/"}, titles: {"en": "National Fruit at Work Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/national-techies-day/", "he": "https://www.daysoftheyear.co.il/2018/10/hitecday.html"}, titles: {"en": "National Techies Day", "he": "יום אנשי ההיי טק הלאומי"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/national-wide-awakes-day/"}, titles: {"en": "National Wide Awakes Day"}},
+        {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/coffee-with-a-cop-day/"}, titles: {"en": "Coffee with a Cop Day"}, notes: {"en": "National Coffee with a Cop Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-golf-lovers-day/"}, titles: {"en": "National Golf Lovers Day"}},
+        {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-kale-day/"}, titles: {"en": "National Kale Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-pumpkin-seed-day/"}, titles: {"en": "National Pumpkin Seed Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-taco-day/"}, titles: {"en": "National Taco Day"}},
+        {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-truckers-appreciation-day/"}, titles: {"en": "National Truckers Appreciation Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "http://www.nationalvodkaday.com/", "he": "https://www.daysoftheyear.co.il/2017/10/vodka-day.html"}, titles: {"en": "National Vodka Day", "he": "יום הוודקה הלאומי"}},
+        {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-walk-and-bike-to-school-day/"}, titles: {"en": "National Walk and Bike to School Day"}},
+
+
     ]
 }
