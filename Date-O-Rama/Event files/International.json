@@ -1783,6 +1783,7 @@
          {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/improve-your-office-day/", "he": "https://www.daysoftheyear.co.il/2017/10/improve-your-office-day.html"}, titles: {"en": "Improve Your Office Day", "he": "יום שפר את המשרד שלך"}},
          {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-walk-to-school-day/"}, titles: {"en": "International Walk to School Day"}, notes: {"en": "IWTSD"}, first: {era: 1, y: 1990}},
          {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-cinnamon-roll-day/"}, titles: {"en": "​National Cinnamon Roll Day"}, first: {era: 1, y: 1999}},
+         {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/world-meningitis-day/"}, titles: {"en": "World Meningitis Day"}, first: {era: 1, y: 2022}},
 
     ]
 }

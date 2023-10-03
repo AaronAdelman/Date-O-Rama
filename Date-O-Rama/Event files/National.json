@@ -1818,7 +1818,15 @@
         {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-truckers-appreciation-day/"}, titles: {"en": "National Truckers Appreciation Day"}, first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "http://www.nationalvodkaday.com/", "he": "https://www.daysoftheyear.co.il/2017/10/vodka-day.html"}, titles: {"en": "National Vodka Day", "he": "יום הוודקה הלאומי"}},
         {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-walk-and-bike-to-school-day/"}, titles: {"en": "National Walk and Bike to School Day"}},
-
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-above-the-bus-day/"}, titles: {"en": "National Above the Bus Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-apple-betty-day/"}, titles: {"en": "National Apple Betty Day"}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-be-nice-day/"}, titles: {"en": "National Be Nice Day"}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-caribbean-civility-day/"}, titles: {"en": "National Caribbean Civility Day"}, first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-depression-screening-day/"}, titles: {"en": "National Depression Screening Day"}, first: {era: 1, y: 1991}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-something-nice-day/"}, titles: {"en": "National Do Something Nice Day"}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-get-funky-day/"}, titles: {"en": "National Get Funky Day"}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-kiss-a-wrestler-day/"}, titles: {"en": "National Kiss a Wrestler Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/national-military-podcast-day/"}, titles: {"en": "National Military Podcast Day"}, first: {era: 1, y: 2021}},
 
     ]
 }
