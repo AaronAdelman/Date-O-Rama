@@ -1784,6 +1784,10 @@
          {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-walk-to-school-day/"}, titles: {"en": "International Walk to School Day"}, notes: {"en": "IWTSD"}, first: {era: 1, y: 1990}},
          {type: "1D", start: {mon: 10, d: 4}, urls: {"en": "https://nationaltoday.com/national-cinnamon-roll-day/"}, titles: {"en": "​National Cinnamon Roll Day"}, first: {era: 1, y: 1999}},
          {type: "1D", start: {mon: 10, d: 5}, urls: {"en": "https://nationaltoday.com/world-meningitis-day/"}, titles: {"en": "World Meningitis Day"}, first: {era: 1, y: 2022}},
+         {type: "1D", start: {mon: 10, d: 6}, urls: {"en": "https://nationaltoday.com/inbox-zero-day/"}, titles: {"en": "Inbox Zero Day"}, first: {era: 1, y: 2020}},
+         {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/kids-music-day/"}, titles: {"en": "Kids Music Day"}, first: {era: 1, y: 2016}},
+         {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/manufacturing-day/"}, titles: {"en": "Manufacturing Day"}},
+         {type: "1D", start: {mon: 10, d: 6}, urls: {"en": "https://nationaltoday.com/world-cerebral-palsy-day/"}, titles: {"en": "World Cerebral Palsy Day"}},
 
     ]
 }
