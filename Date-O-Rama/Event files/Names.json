@@ -333,5 +333,6 @@
         {type: "1D", start: {mon: 10, d: 2}, urls: {"en": "https://nationaltoday.com/national-michelle-day/"}, titles: {"en": "National Michelle Day"}},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/national-kevin-day/"}, titles: {"en": "National Kevin Day"}, notes: {"en": "National Hug-a-Kevin Day"}},
         {type: "1D", start: {mon: 10, d: 6}, urls: {"en": "https://nationaltoday.com/national-isabella-day/"}, titles: {"en": "National Isabella Day"}, first: {era: 1, y: 2022}},
+        {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/national-jonathan-day/"}, titles: {"en": "National Jonathan Day"}},
     ]
 }

@@ -1835,6 +1835,10 @@
         {type: "1D", start: {mon: 10, d: 6}, urls: {"en": "https://nationaltoday.com/national-orange-wine-day/"}, titles: {"en": "National Orange Wine Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 10, d: 6}, urls: {"en": "https://nationaltoday.com/national-transfer-money-to-your-daughter-day/"}, titles: {"en": "​National Transfer Money to Your Daughter Day"}},
         {type: "nD", start: {mon: 10, d: 6}, end: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/national-physician-assistant-week/"}, titles: {"en": "National Physician Assistant Week"}},
+        {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/national-frappe-day/"}, titles: {"en": "​National Frappe Day"}},
+        {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/national-inner-beauty-day/"}, titles: {"en": "National Inner Beauty Day"}},
+        {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/national-led-light-day/"}, titles: {"en": "National LED Light Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/bathtub-day/", "he": "https://www.daysoftheyear.co.il/2019/10/bathtub-day.html"}, titles: {"en": "National Bathtub Day", "he": "יום האמבטיה הלאומי"}},
 
     ]
 }
