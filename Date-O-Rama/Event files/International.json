@@ -1792,7 +1792,13 @@
          {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/international-day-of-peaceful-communication/"}, titles: {"en": "International Day of Peaceful Communication"}, first: {era: 1, y: 2019}},
          {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/world-card-making-day/"}, titles: {"en": "World Card Making Day"}, first: {era: 1, y: 2006}},
          {type: "1D", start: {mon: 10, d: 7}, urls: {"en": "https://nationaltoday.com/you-matter-to-me-day/"}, titles: {"en": "You Matter To Me Day"}, first: {era: 1, y: 2010}},
-
+         {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/international-birth-registration-day/"}, titles: {"en": "International Birth Registration Day"}, first: {era: 1, y: 2018}},
+         {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/international-newspaper-carrier-day/"}, titles: {"en": "International Newspaper Carrier Day", "he": "יום מחלקי העיתונים הבינלאומי"}, emoji: "🗞️"},
+         {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/world-dyslexia-day/"}, titles: {"en": "World Dyslexia Day"}},
+         {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/world-octopus-day/"}, titles: {"en": "World Octopus Day", "he": "יום התמנון העולמי"}, first: {era: 1, y: 2006}, emoji: "🐙"},
+         {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/curious-events-day/"}, titles: {"en": "Curious Events Day"}},
+         {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/international-beer-and-pizza-day/"}, titles: {"en": "International Beer and Pizza Day"}, first: {era: 1, y: 2016}, emoji: "🍺🍕"},
+         {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/world-hospice-and-palliative-care-day/"}, titles: {"en": "World Hospice and Palliative Care Day"}, first: {era: 1, y: 1989}},
 
     ]
 }

@@ -35,7 +35,7 @@
 
         {type: "1D", start: {mon: 7, d: 16}, inherits: "Engineer’s Day"},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
-        {type: "1D", start: {mon: 10, d: 6}, urls: {"en": "https://nationaltoday.com/honduras-discovery-of-america-day/"}, titles: {"en": "Discovery of America Day"}},
+        {type: "1D", start: {mon: 10, d: 8}, urls: {"en": "https://nationaltoday.com/honduras-discovery-of-america-day/"}, titles: {"en": "Discovery of America Day"}},
 
     ]
 }

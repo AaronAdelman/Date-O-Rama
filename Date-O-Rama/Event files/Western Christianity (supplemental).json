@@ -18,8 +18,8 @@
         {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
         {titles: {"en": "Genealogy Day", "he": "יום הגנאולוגיה"}, type: "1D", start: {mon: 3, wkd: [7], wkdRecurrence: 2}, first: {era: 1, y: 2013}, urls: {"en": "https://www.daysoftheyear.com/days/genealogy-day/"}, emoji: "👨‍👩‍👧‍👦"},
         {titles: {"en": "Global Forgiveness Day"}, type: "1D", start: {mon: 7, d: 7}, urls: {"en": "https://www.daysoftheyear.com/days/forgiveness-day/"}, first: {era: 1, y: 1994}},
-        {titles: {"en": "Clergy Appreciation Month"}, type: "1M", start: {mon: 10}, urls: {"en": "https://corporate.hallmark.com/holidays-occasions/clergy-appreciation-month/"}, emoji: "👩‍💼👨‍💼", first: {era: 1, y: 2002}},
-        {titles: {"en": "Clergy Appreciation Day"}, type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1992}, urls: {"en": "https://nationaldaycalendar.com/clergy-appreciation-day-second-sunday-in-october/"}, emoji: "👩‍💼👨‍💼"},
+        {titles: {"en": "Clergy Appreciation Month"}, type: "1M", start: {mon: 10}, urls: {"en": "https://corporate.hallmark.com/holidays-occasions/clergy-appreciation-month/"}, emoji: "👩‍💼👨‍💼", first: {era: 1, y: 2002}, notes: {"en": "Pastor Appreciation Month"}},
+        {titles: {"en": "Clergy Appreciation Day"}, type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 2}, first: {era: 1, y: 1992}, urls: {"en": "https://nationaldaycalendar.com/clergy-appreciation-day-second-sunday-in-october/"}, emoji: "👩‍💼👨‍💼", notes: {"en": "Pastor Appreciation Day"}},
         {titles: {"en": "Shopping Reminder Day"}, type: "1D", start: {mon: 11, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/shopping-reminder-day/"}, emoji: "🎁"},
         {titles: {"en": "Make A Gift Day"}, type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/make-a-gift-day/"}, emoji: "🎁"},
         {titles: {"en": "National Ambrosia Day"}, type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaldaycalendar.com/national-ambrosia-day-december-12/"}},
@@ -166,5 +166,7 @@
         {inherits: "1st Advent Sunday", type: "1D", start: {mon: 11, d: 27, "thruMon": 12, "thruD": 3, wkd: [1]}, titles: {"en": "Sunday of the Dead", "de": "Totensonntag"}, notes: {"en": "Eternity Sunday", "de": "Ewigkeitssonntag\nTotenfest"}, urls: {"en": "https://en.wikipedia.org/wiki/Totensonntag"}},
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/talk-to-us/"}, titles: {"en": "Talk to Us"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/be-an-angel-day/", "he": "https://www.daysoftheyear.co.il/2022/08/huo%20vnktl.html"}, titles: {"en": "Be An Angel Day", "he": "יום המלאך"}, first: {era: 1, y: 1993}},
+        {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, titles: {"en": "International Blessings of the Fishing Fleet Day"}},
+
     ]
 }
