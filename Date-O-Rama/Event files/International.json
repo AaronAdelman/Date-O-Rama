@@ -1812,5 +1812,7 @@
          {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-top-spinning-day/"}, titles: {"en": "International Top Spinning Day"}},
          {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/party-day/"}, titles: {"en": "It’s My Party Day"}},
          {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-bring-your-teddy-bear-to-school-day/"}, titles: {"en": "National Bring Your Teddy Bear to School Day"}},
+         {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/harry-potter-book-day/"}, titles: {"en": "Harry Potter Book Day"}, first: {era: 1, y: 2023}},
+         {type: "nD", start: {mon: 10, d: 12}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/bone-and-joint-health-national-action-week/"}, titles: {"en": "Bone and Joint Health National Action Week"}, first: {era: 1, y: 2012}},
     ]
 }

@@ -340,6 +340,7 @@
         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-porter-day/"}, titles: {"en": "National Porter Day"}},
         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/national-kim-day/"}, titles: {"en": "National Kim Day"}},
         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/national-kimberly-day/"}, titles: {"en": "National Kimberly Day"}},
+        {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/national-martin-day/"}, titles: {"en": "National Martin Day"}},
 
     ]
 }

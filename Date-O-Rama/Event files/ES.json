@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
     eventSpecifications: [
-        {titles: {"en": "Fiesta Nacional de España", "es": "Fiesta Nacional de España"}, type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/spain-hispanic-day/"}, inherits: "National Day"},
+        {titles: {"en": "Hispanic Day", "es": "Fiesta Nacional de España"}, type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/spain-hispanic-day/"}, inherits: "National Day", notes: {"es": "Día de la Hispanidad"}},
         {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
         {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
         {titles: {"en": "Day of La Rioja", "es": "Día de La Rioja"}, type: "1D", start: {mon: 6, d: 9}, urls: {"en": "https://nationaltoday.com/day-of-la-rioja/"}, first: {era: 1, y: 1983}},
