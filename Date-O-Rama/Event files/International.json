@@ -1799,6 +1799,13 @@
          {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/curious-events-day/"}, titles: {"en": "Curious Events Day"}},
          {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/international-beer-and-pizza-day/"}, titles: {"en": "International Beer and Pizza Day"}, first: {era: 1, y: 2016}, emoji: "🍺🍕"},
          {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/world-hospice-and-palliative-care-day/"}, titles: {"en": "World Hospice and Palliative Care Day"}, first: {era: 1, y: 1989}},
-
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/ada-lovelace-day/"}, titles: {"en": "Ada Lovelace Day"}, first: {era: 1, y: 2009}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/international-stage-management-day/"}, titles: {"en": "International Stage Management Day"}, first: {era: 1, y: 2013}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-animal-road-accident-awareness-day/"}, titles: {"en": "World Animal Road Accident Awareness Day"}, first: {era: 1, y: 2020}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-homeless-day/"}, titles: {"en": "World Homeless Day"}, first: {era: 1, y: 2010}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-inclusion-day/"}, titles: {"en": "World Inclusion Day"}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-plant-based-burger-day/"}, titles: {"en": "World Plant-based Burger Day"}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-porridge-day/"}, titles: {"en": "World Porridge Day"}, first: {era: 1, y: 2009}},
+         {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-curry-week/"}, titles: {"en": "National Curry Week"}},
     ]
 }

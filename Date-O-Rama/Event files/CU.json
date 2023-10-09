@@ -24,5 +24,6 @@
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 12, d: 2}},
         {type: "1D", start: {mon: 1, d: 28}, urls: {"en": "https://nationaltoday.com/jose-martis-birthday-memorial/"}, titles: {"en": "José Martí's Birthday Memorial"}, first: {era: 1, y: 1853}, inherits: "*BDay*"},
         {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://en.wikipedia.org/wiki/Treaty_of_Chaguaramas#CARICOM_Day"}, titles: {"en": "CARICOM-Cuba Day"}},
+        {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/the-beginning-of-the-ten-years-war/"}, titles: {"en": "The Beginning of the Ten Years’ War"}},
     ]
 }

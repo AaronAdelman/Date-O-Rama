@@ -1851,5 +1851,9 @@
         {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/national-kick-butt-day/"}, titles: {"en": "National Kick Butt Day"}},
         {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/national-moldy-cheese-day/"}, titles: {"en": "National Moldy Cheese Day"}, emoji: "🧀"},
         {type: "1D", start: {mon: 10, d: 9}, urls: {"en": "https://nationaltoday.com/national-online-bank-day/"}, titles: {"en": "National Online Bank Day"}},
+        {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-angel-food-cake-day/"}, titles: {"en": "National Angel Food Cake Day"}, emoji: "🍰"},
+        {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-cake-decorating-day/"}, titles: {"en": "National Cake Decorating Day"}, emoji: "🧁"},
+        {type: "1D", start: {mon: 10, wkd: [3], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-face-your-fears-day/"}, titles: {"en": "National Face Your Fears Day"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-hug-a-drummer-day/"}, titles: {"en": "National Hug a Drummer Day"}},
     ]
 }
