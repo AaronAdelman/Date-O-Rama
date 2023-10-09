@@ -1807,5 +1807,10 @@
          {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-plant-based-burger-day/"}, titles: {"en": "World Plant-based Burger Day"}},
          {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/world-porridge-day/"}, titles: {"en": "World Porridge Day"}, first: {era: 1, y: 2009}},
          {type: "1D", start: {mon: 10, d: 10}, urls: {"en": "https://nationaltoday.com/national-curry-week/"}, titles: {"en": "National Curry Week"}},
+         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/black-girl-day-off/"}, titles: {"en": "Black Girl Day Off"}},
+         {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/emergency-nurses-day/"}, titles: {"en": "Emergency Nurses Day"}, first: {era: 1, y: 1989}},
+         {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-top-spinning-day/"}, titles: {"en": "International Top Spinning Day"}},
+         {type: "1D", start: {mon: 10, d: 11}, urls: {"en": "https://nationaltoday.com/party-day/"}, titles: {"en": "It’s My Party Day"}},
+         {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-bring-your-teddy-bear-to-school-day/"}, titles: {"en": "National Bring Your Teddy Bear to School Day"}},
     ]
 }
