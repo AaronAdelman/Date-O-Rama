@@ -1894,6 +1894,13 @@
         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/national-pharmacy-technician-day/"}, titles: {"en": "National Pharmacy Technician Day"}},
         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/women-in-military-service-for-america-memorial-anniversary/"}, titles: {"en": "Women in Military Service for America Memorial Anniversary"}},
         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationalcardcollectionday.com/", "he": "https://www.daysoftheyear.co.il/2016/10/playingcardsday.html"}, titles: {"en": "National Playing Card Collection Day", "he": "יום אוסף קלפי המשחק הלאומי"}},
+        {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-bra-day/"}, titles: {"en": "National BRA Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-chocolate-cupcake-day/"}, titles: {"en": "National Chocolate Cupcake Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-mashed-potato-day/"}, titles: {"en": "National Mashed Potato Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-medical-assistants-day/"}, titles: {"en": "National Medical Assistants Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-speak-up-for-victims-of-sexual-abuse-day/"}, titles: {"en": "National Speak Up for Victims of Sexual Abuse Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-sunday-day/"}, titles: {"en": "National Sunday Day"}},
+        {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/support-your-local-chamber-of-commerce-day/"}, titles: {"en": "Support Your Local Chamber of Commerce Day"}},
 
     ]
 }

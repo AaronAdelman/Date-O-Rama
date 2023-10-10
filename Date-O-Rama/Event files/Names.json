@@ -347,5 +347,10 @@
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-eddie-day/"}, titles: {"en": "National Eddie Day"}},
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-elaine-day/"}, titles: {"en": "National Elaine Day"}},
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-trey-day/"}, titles: {"en": "National Trey Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-ken-day/"}, titles: {"en": "National Ken Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-louie-day/"}, titles: {"en": "National Louie Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-mark-day/"}, titles: {"en": "National Mark Day"}},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-zane-day/"}, titles: {"en": "National Zane Day"}},
+
     ]
 }

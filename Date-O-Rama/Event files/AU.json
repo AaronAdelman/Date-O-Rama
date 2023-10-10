@@ -87,5 +87,6 @@
         {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/white-balloon-day/"}, titles: {"en": "White Balloon Day"}, first: {era: 1, y: 1997}},
         {type: "1D", start: {mon: 9, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/are-you-okay-day/"}, titles: {"en": "Are You Okay Day", "he": "יום ״האם אתה בסדר״"}},
         {type: "1D", start: {mon: 9, d: 30}, urls: {"en": "https://nationaltoday.com/save-the-koala-day/"}, titles: {"en": "Save the Koala Day"}, emoji: "🐨"},
+        {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/ride-to-work-day/"}, titles: {"en": "Ride to Work Day"}, first: {era: 1, y: 1994}},
    ]
 }
