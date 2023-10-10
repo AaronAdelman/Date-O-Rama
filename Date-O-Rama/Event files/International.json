@@ -1827,6 +1827,6 @@
          {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/dictionary-day/"}, titles: {"en": "Dictionary Day"}},
          {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/global-cat-day/"}, titles: {"en": "Global Cat Day"}, first: {era: 1, y: 2016}, notes: {"en": "National Feral Cat Day"}},
          {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/world-allergy-awareness-day/"}, titles: {"en": "World Allergy Awareness Day"}},
-
+         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/world-trauma-day/"}, titles: {"en": "World Trauma Day"}, first: {era: 1, y: 2011}},
     ]
 }

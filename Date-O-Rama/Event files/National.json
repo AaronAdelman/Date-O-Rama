@@ -1886,6 +1886,14 @@
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-department-store-day/"}, titles: {"en": "National Department Store Day"}},
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-liqueur-day/"}, titles: {"en": "​National Liqueur Day"}},
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-veterans-bbq-day/"}, titles: {"en": "National Veterans BBQ Day"}, first: {era: 1, y: 2021}},
+        {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "Farmers Day"}, inherits: "Farmer Day", urls: {"en": "https://nationaltoday.com/national-farmers-day/"}},
+        {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/clean-virtual-desktop-day/"}, titles: {"en": "National Clean Your Virtual Desktop Day"}},
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/national-edge-day/"}, titles: {"en": "National Edge Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/national-mulligan-day/"}, titles: {"en": "National Mulligan Day"}},
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/national-pay-back-a-friend-day/"}, titles: {"en": "National Pay Back a Friend Day"}},
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/national-pharmacy-technician-day/"}, titles: {"en": "National Pharmacy Technician Day"}},
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/women-in-military-service-for-america-memorial-anniversary/"}, titles: {"en": "Women in Military Service for America Memorial Anniversary"}},
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationalcardcollectionday.com/", "he": "https://www.daysoftheyear.co.il/2016/10/playingcardsday.html"}, titles: {"en": "National Playing Card Collection Day", "he": "יום אוסף קלפי המשחק הלאומי"}},
 
     ]
 }

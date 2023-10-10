@@ -167,6 +167,6 @@
         {type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://nationaltoday.com/talk-to-us/"}, titles: {"en": "Talk to Us"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 8, d: 22}, urls: {"en": "https://nationaltoday.com/be-an-angel-day/", "he": "https://www.daysoftheyear.co.il/2022/08/huo%20vnktl.html"}, titles: {"en": "Be An Angel Day", "he": "יום המלאך"}, first: {era: 1, y: 1993}},
         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/international-blessings-of-the-fishing-fleet-day/"}, titles: {"en": "International Blessings of the Fishing Fleet Day"}},
-
+        {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/national-catholic-mens-conference-day/"}, titles: {"en": "National Catholic Men’s Conference Day"}, first: {era: 1, y: 2008}},
     ]
 }
