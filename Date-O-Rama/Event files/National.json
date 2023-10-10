@@ -1872,6 +1872,9 @@
         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/national-train-your-brain-day/"}, titles: {"en": "National Train Your Brain Day"}},
         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/national-transfer-money-son-day/"}, titles: {"en": "National Transfer Money to Your Son Day"}},
         {type: "1D", start: {mon: 10, d: 13}, inherits: "National Yorkshire Pudding Day"},
-
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-costume-swap-day/"}, titles: {"en": "National Costume Swap Day"}},
+        {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/national-dessert-day/"}, titles: {"en": "National Dessert Day"}},
+        {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/national-i-love-you-day/"}, titles: {"en": "National I Love You Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-motorcycle-ride-day/"}, titles: {"en": "National Motorcycle Ride Day"}, first: {era: 1, y: 2015}},
     ]
 }

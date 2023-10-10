@@ -1820,5 +1820,8 @@
          {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/international-skeptics-day/"}, titles: {"en": "International Skeptics Day"}},
          {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/vet-nurse-day/"}, titles: {"en": "Vet Nurse Day"}},
          {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/world-thrombosis-day/"}, titles: {"en": "World Thrombosis Day"}, first: {era: 1, y: 2014}},
+         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/i-love-yarn-day/"}, titles: {"en": "I Love Yarn Day"}, first: {era: 1, y: 2011}},
+         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-african-penguin-awareness-day/"}, titles: {"en": "International African Penguin Awareness Day"}},
+         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/universal-music-day/"}, titles: {"en": "Universal Music Day"}},
     ]
 }

@@ -484,6 +484,7 @@
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/american-business-womens-day/", "he": "https://www.daysoftheyear.co.il/2017/09/22.html"}, titles: {"en": "American Business Women’s Day", "he": "יום נשות העסקים האמריקאי"}, first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationalgoodneighborday.com/"}, titles: {"en": "National Good Neighbor Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/metastatic-breast-cancer-awareness-day/"}, titles: {"en": "Metastatic Breast Cancer Awareness Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-chess-day/"}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1979}},
 
 
 
