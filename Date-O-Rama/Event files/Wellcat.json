@@ -80,7 +80,7 @@
         {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "Fish Tank Floorshow Night"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 10, d: 12}, titles: {"en": "International Moment of Frustration Scream Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Be Bald and Be Free Day", "he": "יום תהיה קרח וחופשי"}, inherits: "*Wellcat*"},
-        {type: "1D", start: {mon: 10, d: 19}, titles: {"en": "Evaluate Your Life Day"}, inherits: "*Wellcat*"},
+        {type: "1D", start: {mon: 10, d: 19}, titles: {"en": "Evaluate Your Life Day", "he": "יום ״הערך את החיים שלך״"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 10, d: 27}, titles: {"en": "Cranky Co-Workers Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 10, d: 30}, titles: {"en": "Haunted Refrigerator Night"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 11, d: 3}, titles: {"en": "Cliché Day"}, inherits: "*Wellcat*"},

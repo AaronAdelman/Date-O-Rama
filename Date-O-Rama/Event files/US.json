@@ -178,7 +178,7 @@
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/humpback-whale-awareness-month/"}, titles: {"en": "Humpback Whale Awareness Month"}, first: {era: 1, y: 2008}},
         {type: "1M", start: {mon: 4}, titles: {"en": "Cancer Control Month"}, urls: {"en": "https://nationaltoday.com/cancer-control-month/"}, first: {era: 1, y: 2009}},
          {type: "1D", start: {d: 25, mon: 5}, titles: {"en": "National Missing Children’s Day"}, urls: {"en": "https://nationaldaycalendar.com/national-missing-childrens-day-may-25/"}, first: {era: 1, y: 1983}, emoji: "👟", inherits: "Children’s Day"},
-         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": " Alaska Day", "he": "יום אלסקה", "es": "Día de Alaska", "fr": "Jour de l’Alaska"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/national-alaska-day/"}},
+         {type: "1D", start: {mon: 10, d: 18}, titles: {"en": " Alaska Day", "he": "יום אלסקה", "es": "Día de Alaska", "fr": "Jour de l’Alaska"}, first: {era: 1, y: 1917}, urls: {"en": "https://nationaltoday.com/national-alaska-day/", "he": "https://www.daysoftheyear.co.il/2016/10/alaska-day.html"}},
         {type: "1D", start: {mon: 6, d: 20}, titles: {"en": "West Virginia Day", "he": "יום וירג׳יניה המערבית"}, first: {era: 1, y: 1864}, urls: {"en": "https://nationaltoday.com/west-virginia-day/"}},
         {type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Casimir Pulaski Day", "fr": "Journée de Casimir Pulaski"}, first: {era: 1, y: 1978}, urls: {"en": "https://en.wikipedia.org/wiki/Casimir_Pulaski_Day"}},
         {type: "1D", start: {mon: 10, d: 11}, titles: {"en": "General Pulaski Memorial Day"}, first: {era: 1, y: 2002}, urls: {"en": "https://nationaldaycalendar.com/general-pulaski-memorial-day-october-11/"}},

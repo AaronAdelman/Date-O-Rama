@@ -351,6 +351,7 @@
         {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-louie-day/"}, titles: {"en": "National Louie Day"}},
         {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-mark-day/"}, titles: {"en": "National Mark Day"}},
         {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-zane-day/"}, titles: {"en": "National Zane Day"}},
+        {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/national-jared-day/"}, titles: {"en": "National Jared Day"}},
 
     ]
 }
