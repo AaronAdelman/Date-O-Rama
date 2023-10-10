@@ -1866,5 +1866,12 @@
         {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/national-gumbo-day/"}, titles: {"en": "National Gumbo Day"}},
         {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/national-pulled-pork-day/"}, titles: {"en": "National Pulled Pork Day"}},
         {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/national-savings-day/"}, titles: {"en": "National Savings Day"}},
+        {type: "1D", start: {mon: 10, d: 13}, titles: {"en": "National Herpes Awareness Day"}},
+        {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/national-mm-day/"}, titles: {"en": "National M&M Day"}},
+        {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/national-no-bra-day/", "he": "https://www.daysoftheyear.co.il/2017/10/no-bra-day.html"}, titles: {"en": "National No Bra Day", "he": "יום ללא חזיה הלאומי"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/national-train-your-brain-day/"}, titles: {"en": "National Train Your Brain Day"}},
+        {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/national-transfer-money-son-day/"}, titles: {"en": "National Transfer Money to Your Son Day"}},
+        {type: "1D", start: {mon: 10, d: 13}, inherits: "National Yorkshire Pudding Day"},
+
     ]
 }

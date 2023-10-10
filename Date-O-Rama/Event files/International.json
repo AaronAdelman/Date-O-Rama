@@ -1814,5 +1814,11 @@
          {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-bring-your-teddy-bear-to-school-day/"}, titles: {"en": "National Bring Your Teddy Bear to School Day"}},
          {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/harry-potter-book-day/"}, titles: {"en": "Harry Potter Book Day"}, first: {era: 1, y: 2023}},
          {type: "nD", start: {mon: 10, d: 12}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/bone-and-joint-health-national-action-week/"}, titles: {"en": "Bone and Joint Health National Action Week"}, first: {era: 1, y: 2012}},
+         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/english-language-day/"}, titles: {"en": "English Language Day"}},
+         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/international-civility-for-the-girl-child-day/"}, titles: {"en": "International Civility For the Girl Child Day"}, first: {era: 1, y: 2020}},
+         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/international-day-for-failure/"}, titles: {"en": "International Day for Failure"}, first: {era: 1, y: 2010}},
+         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/international-skeptics-day/"}, titles: {"en": "International Skeptics Day"}},
+         {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/vet-nurse-day/"}, titles: {"en": "Vet Nurse Day"}},
+         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/world-thrombosis-day/"}, titles: {"en": "World Thrombosis Day"}, first: {era: 1, y: 2014}},
     ]
 }
