@@ -45,5 +45,6 @@
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
         {type: "1M", start: {mon: 9}, urls: {"en": "https://nationaltoday.com/irish-heart-month/"}, titles: {"en": "Irish Heart Month"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/shine-a-light-night/"}, titles: {"en": "Shine a Light Night"}, first: {era: 1, y: 2012}},
    ]
 }

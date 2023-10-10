@@ -1876,5 +1876,12 @@
         {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/national-dessert-day/"}, titles: {"en": "National Dessert Day"}},
         {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/national-i-love-you-day/"}, titles: {"en": "National I Love You Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-motorcycle-ride-day/"}, titles: {"en": "National Motorcycle Ride Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-cheese-curd-day/"}, titles: {"en": "National Cheese Curd Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-grouch-day/"}, titles: {"en": "National Grouch Day"}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-hsa-awareness-day/"}, titles: {"en": "National HSA Awareness Day"}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-i-love-lucy-day/"}, titles: {"en": "​National I Love Lucy Day"}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-latino-aids-awareness-day/"}, titles: {"en": "National Latino AIDS Awareness Day"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-lemon-bar-day/"}, titles: {"en": "National Lemon Bar Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-mushroom-day/"}, titles: {"en": "National Mushroom Day"}, emoji: "🍄"},
     ]
 }

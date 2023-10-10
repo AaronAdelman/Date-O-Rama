@@ -149,8 +149,10 @@
         {type: "1D", start: {mon: 10, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationalpoetryday.co.uk/"}, titles: {"en": "National Poetry Day"}, emoji: "☂️🐢🍄"},
         {type: "1D", start: {mon: 9, d: 26, thruMon: 10, thruD: 2, wkd: [1]}, urls: {"en": "https://nationaltoday.com/national-police-memorial-day/"}, titles: {"en": "National Police Memorial Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 10, d: 3}, urls: {"en": "https://nationaltoday.com/buy-british-day/"}, titles: {"en": "Buy British Day"}, first: {era: 1, y: 2014}},
-        {type: "nD", start: {mon: 10, d: 9}, end: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/baby-loss-awareness-week/"}, titles: {"en": "Baby Loss Awareness Week"}, first: {era: 1, y: 2003}},
+        {type: "nD", start: {mon: 10, d: 9}, end: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/baby-loss-awareness-week/"}, titles: {"en": "Baby Loss Awareness Week"}, first: {era: 1, y: 2003}, emoji: "👶", inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 1}, inherits: "National Yorkshire Pudding Day"},
         {type: "nD", start: {mon: 10, d: 14}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-baking-week/"}, titles: {"en": "National Baking Week"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-roast-pheasant-day/"}, titles: {"en": "National Roast Pheasant Day"}},
+
     ]
 }

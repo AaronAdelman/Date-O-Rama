@@ -343,6 +343,6 @@
         {type: "1D", start: {mon: 10, d: 12}, urls: {"en": "https://nationaltoday.com/national-martin-day/"}, titles: {"en": "National Martin Day"}},
         {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/national-ryan-day/"}, titles: {"en": "National Ryan Day"}},
         {type: "1D", start: {mon: 10, d: 14}, urls: {"en": "https://nationaltoday.com/national-veronica-day/"}, titles: {"en": "National Veronica Day"}},
-
+        {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-riley-day/"}, titles: {"en": "National Riley Day"}},
     ]
 }
