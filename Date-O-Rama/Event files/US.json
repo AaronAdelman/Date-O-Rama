@@ -485,6 +485,8 @@
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationalgoodneighborday.com/"}, titles: {"en": "National Good Neighbor Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/metastatic-breast-cancer-awareness-day/"}, titles: {"en": "Metastatic Breast Cancer Awareness Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-chess-day/"}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1979}},
+        {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/", "he": "https://www.daysoftheyear.co.il/2017/10/steve-jobs-day.html"}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, first: {era: 1, y: 2011}},
+
 
 
 

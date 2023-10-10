@@ -1824,5 +1824,9 @@
          {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/international-african-penguin-awareness-day/"}, titles: {"en": "International African Penguin Awareness Day"}, emoji: "🐧"},
          {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/universal-music-day/"}, titles: {"en": "Universal Music Day"}, emoji: "🌎"},
          {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-toy-camera-day/"}, titles: {"en": "World Toy Camera Day"}, first: {era: 1, y: 2002}},
+         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/dictionary-day/"}, titles: {"en": "Dictionary Day"}},
+         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/global-cat-day/"}, titles: {"en": "Global Cat Day"}, first: {era: 1, y: 2016}, notes: {"en": "National Feral Cat Day"}},
+         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/world-allergy-awareness-day/"}, titles: {"en": "World Allergy Awareness Day"}},
+
     ]
 }

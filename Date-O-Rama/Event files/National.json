@@ -168,7 +168,7 @@
         {type: "1D", start: {mon: 8, d: 27}, urls: {"en": "https://www.daysoftheyear.com/days/pots-de-creme-day/"}, titles: {"en": "National Pots de Crème Day"}},
         {type: "1D", start: {d: 3, mon: 9}, titles: {"en": "National Skyscraper Day", "he": "יום גורדי השחקים הלאומי"}, emoji: "🏙", urls: {"en": "https://www.daysoftheyear.com/days/skyscraper-day/", "he": "https://www.daysoftheyear.co.il/2018/09/3.html"}},
         {type: "1D", start: {mon: 9, d: 25}, titles: {"en": "National Daughter Day"}, notes: {"en": "National Daughters Day"}, first: {era: 1, y: 2007}, emoji: "👨‍👩‍👧", urls: {"en": "https://www.daysoftheyear.com/days/national-daughter-day/"}},
-        {type: "1D", start: {mon: 10, d: 16}, titles: {"en": "National Boss’s Day"}, first: {era: 1, y: 1903}, notes: {"en": "Boss’s Day\nNational Boss Day`\nBosses Day"}, urls: {"en": "https://nationaldaycalendar.com/national-bosss-day-october-16-unless-weekend/"}},
+        {type: "1D", start: {mon: 10, d: 16}, titles: {"en": "National Boss’s Day", "he": "יום הבוס הלאומי"}, first: {era: 1, y: 1903}, notes: {"en": "Boss’s Day\nNational Boss Day`\nBosses Day"}, urls: {"en": "https://nationaldaycalendar.com/national-bosss-day-october-16-unless-weekend/", "he": "https://www.daysoftheyear.co.il/2018/10/boss-day.html"}},
         {type: "1D", start: {mon: 10, d: 29}, titles: {"en": "National Internet Day"}, notes: {"en": "International Internet Day"}, first: {era: 1, y: 2005}, emoji: "🌎", urls: {"en": "https://www.daysoftheyear.com/days/internet-day/"}},
         {type: "1D", start: {d: 2, mon: 11}, titles: {"en": "National Deviled Egg Day"}, emoji: "🥚", urls: {"en": "https://www.daysoftheyear.com/days/deviled-egg-day/"}},
         {type: "1D", start: {d: 4, mon: 11}, titles: {"en": "National Candy Day"}, emoji: "🍬", urls: {"en": "https://www.daysoftheyear.com/days/candy-day/"}},
@@ -1883,5 +1883,9 @@
         {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-latino-aids-awareness-day/"}, titles: {"en": "National Latino AIDS Awareness Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-lemon-bar-day/"}, titles: {"en": "National Lemon Bar Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-mushroom-day/"}, titles: {"en": "National Mushroom Day"}, emoji: "🍄"},
+        {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-department-store-day/"}, titles: {"en": "National Department Store Day"}},
+        {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-liqueur-day/"}, titles: {"en": "​National Liqueur Day"}},
+        {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://nationaltoday.com/national-veterans-bbq-day/"}, titles: {"en": "National Veterans BBQ Day"}, first: {era: 1, y: 2021}},
+
     ]
 }
