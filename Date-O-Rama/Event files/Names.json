@@ -352,6 +352,8 @@
         {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-mark-day/"}, titles: {"en": "National Mark Day"}},
         {type: "1D", start: {mon: 10, d: 18}, urls: {"en": "https://nationaltoday.com/national-zane-day/"}, titles: {"en": "National Zane Day"}},
         {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/national-jared-day/"}, titles: {"en": "National Jared Day"}},
+        {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-jeff-day/"}, titles: {"en": "National Jeff Day"}},
+        {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-lane-day/"}, titles: {"en": "National Lane Day"}},
 
     ]
 }

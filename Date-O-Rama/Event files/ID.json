@@ -56,7 +56,7 @@
         {type: "1D", start: {mon: 9, d: 17}, titles: {"en": "Red Cross Day", "id": "Hari Palang Merah"}, first: {era: 1, y: 1945}, emoji: "🏥"},
         {type: "1D", start: {mon: 9, d: 17}, titles: {"en": "National Transport Day", "id": "Hari Perhubungan Nasional"}, first: {era: 1, y: 1971}, emoji: "🚚"},
         {type: "1D", start: {mon: 9, d: 24}, titles: {"en": "National Agrarian Day", "id": "Hari Agraria Nasional"}, notes: {"en": "National Peasants' Day", "id": "Hari Tani Nasional"}, first: {era: 1, y: 1960}, emoji: "👨‍🌾👩‍🌾"},
-        {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Statistics Day", "id": "Hari Statistik Nasional"}, first: {era: 1, y: 1971}, emoji: "🏙"},
+        {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Statistics Day", "he": "יום הסטטיסטיקה הלאומי", "id": "Hari Statistik Nasional"}, first: {era: 1, y: 1971}, emoji: "🏙"},
         {type: "1D", start: {mon: 9, d: 27}, titles: {"en": "Post and Telecommunications’ Service Day", "id": "Hari Bakti Pos dan Telekomunikasi"}, emoji: "📫"},
         {type: "1D", start: {mon: 9, d: 28}, titles: {"en": "Railway Day", "id": "Hari Kereta Api"}, notes: {"en": "Anniversary of Kereta Api Indonesia", "id": "Hari Ulang Tahun PT Kereta Api Indonesia (Persero)"}, emoji: "🛤"},
         {type: "1D", start: {mon: 10, d: 1}, titles: {"en": "National Day of Pancasila Sanctity and 30 September Movement Memorial Day", "id": "Hari Kesaktian Pancasila"}, first: {era: 1, y: 1967}},

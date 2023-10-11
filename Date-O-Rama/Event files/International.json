@@ -1835,5 +1835,9 @@
          {type: "1D", start: {mon: 10, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/international-shakeout-day/"}, titles: {"en": "International ShakeOut Day"}},
          {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/world-humanitarian-action-day/"}, titles: {"en": "World Humanitarian Action Day"}},
          {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/world-pediatric-bone-and-joint-day/"}, titles: {"en": "World Pediatric Bone and Joint Day"}},
+         {type: "1D", start: {era: 1, y: 2009, mon: 8, d: 12}, inherits: "Information Overload Day"},
+         {type: "1D", start: {mon: 10, d: 20}, inherits: "Information Overload Day", first: {era: 1, y: 2010}},
+         {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/talent-transformation-day/"}, titles: {"en": "Talent Transformation Day"}, first: {era: 1, y: 2020}},
+         {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/world-crispr-day/"}, titles: {"en": "World CRISPR Day"}, first: {era: 1, y: 2020}},
     ]
 }

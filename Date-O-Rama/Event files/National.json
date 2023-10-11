@@ -1904,6 +1904,10 @@
         {type: "1D", start: {mon: 10, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-get-smart-about-credit-day/"}, titles: {"en": "National Get Smart About Credit Day"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/national-new-friends-day/"}, titles: {"en": "National New Friends Day"}},
         {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/national-seafood-bisque-day/"}, titles: {"en": "National Seafood Bisque Day"}},
+        {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-brandied-fruit-day/"}, titles: {"en": "National Brandied Fruit Day"}},
+        {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-day-on-writing/"}, titles: {"en": "National Day on Writing"}},
+        {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-mammography-day/"}, titles: {"en": "National Mammography Day"}},
+        {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-youth-confidence-day/"}, titles: {"en": "National Youth Confidence Day"}},
 
     ]
 }
