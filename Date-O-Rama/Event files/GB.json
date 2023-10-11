@@ -153,6 +153,7 @@
         {type: "1D", start: {mon: 2, wkd: [1], wkdRecurrence: 1}, inherits: "National Yorkshire Pudding Day"},
         {type: "nD", start: {mon: 10, d: 14}, end: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-baking-week/"}, titles: {"en": "National Baking Week"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-roast-pheasant-day/"}, titles: {"en": "National Roast Pheasant Day"}},
+        {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/newport-wales-marathon/"}, titles: {"en": "Newport Wales Marathon"}, first: {era: 1, y: 2018}},
 
     ]
 }

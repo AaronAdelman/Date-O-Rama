@@ -354,6 +354,12 @@
         {type: "1D", start: {mon: 10, d: 19}, urls: {"en": "https://nationaltoday.com/national-jared-day/"}, titles: {"en": "National Jared Day"}},
         {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-jeff-day/"}, titles: {"en": "National Jeff Day"}},
         {type: "1D", start: {mon: 10, d: 20}, urls: {"en": "https://nationaltoday.com/national-lane-day/"}, titles: {"en": "National Lane Day"}},
+        {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-alexander-day/"}, titles: {"en": "National Alexander Day"}},
+        {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-jameson-day/"}, titles: {"en": "National Jameson Day"}},
+        {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-raymond-day/"}, titles: {"en": "National Raymond Day"}},
+        {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-anna-day/"}, titles: {"en": "National Anna Day"}},
+        {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-diego-day/"}, titles: {"en": "National Diego Day"}},
+        {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-lauren-day/"}, titles: {"en": "National Lauren Day"}},
 
     ]
 }

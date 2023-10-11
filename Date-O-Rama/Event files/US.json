@@ -230,7 +230,7 @@
         {titles: {"en": "National Lobster Day"}, type: "1D", start: {mon: 9, d: 25}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaldaycalendar.com/national-lobster-day-september-25/"}, emoji: "🦞"},
         {titles: {"en": "Michigan Indian Day"}, type: "1D", start: {mon: 9, wkd: [6], wkdRecurrence: 4}, first: {era: 1, y: 2014}, urls: {"en": "https://nationaltoday.com/michigan-indian-day/"}, first: {era: 1, y: 1974}},
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Mesothelioma Awareness Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://nationaltoday.com/national-mesothelioma-awareness-day/"}, inherits: "*MedicalAwareness*"},
-        {titles: {"en": "Respiratory Care Week"}, type: "nD", start: {mon: 10, d: 23}, "end": {mon: 10, d: 30}, emoji: "🫁", urls: {"en": "https://nationaltoday.com/respiratory-care-week/"}, inherits: "*MedicalAwareness*"},
+        {titles: {"en": "Respiratory Care Week"}, type: "nD", start: {mon: 10, d: 22}, "end": {mon: 10, d: 28}, emoji: "🫁", urls: {"en": "https://nationaltoday.com/respiratory-care-week/"}, inherits: "*MedicalAwareness*", first: {era: 1, y: 1982}},
         {type: "1D", start: {mon: 10, d: 29}, titles: {"en": "National Prescription Drug Take Back Day"}, urls: {"en": "https://nationaltoday.com/national-prescription-drug-take-back-day/"}, first: {era: 1, y: 2010}, emoji: "💊", inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 10, d: 31}, titles: {"en": "Nevada Day", "he": "יום נבדה"}, first: {era: 1, y: 1864}, urls: {"en": "http://nevadaday.com/"}},
         {type: "1D", start: {mon: 4, d: 29}, titles: {"en": "End Jew Hatred Day"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.queensjewishlink.com/index.php/local/26-community-corner/7051-nassau-county-legislators-issue-end-jew-hatred-day-proclamation"}},
@@ -361,8 +361,8 @@
         {type: "1M", start: {mon: 5}, urls: {"en": "https://nationaltoday.com/zombie-awareness-month/"}, titles: {"en": "Zombie Awareness Month"}, first: {era: 1, y: 2007}},
         {type: "1D", start: {mon: 5, d: 4}, urls: {"en": "https://nationaltoday.com/national-weather-observers-day/"}, titles: {"en": "National Weather Observers Day"}, first: {era: 1, y: 1989}},
         {type: "1D", start: {mon: 5, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-explosive-ordnance-disposal-day/"}, titles: {"en": "National Explosive Ordnance Disposal Day"}},
-        {type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://nationaltoday.com/national-nurses-day/"}, titles: {"en": "National Nurses Day"}, first: {era: 1, y: 1954}},
-        {type: "nD", start: {mon: 5, d: 6}, end: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-nurses-week/"}, titles: {"en": "National Nurses Week"}, first: {era: 1, y: 1994}},
+        {type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://nationaltoday.com/national-nurses-day/"}, titles: {"en": "National Nurses Day"}, first: {era: 1, y: 1954}, emoji: "👨‍⚕️👩‍⚕️"},
+        {type: "nD", start: {mon: 5, d: 6}, end: {mon: 5, d: 12}, urls: {"en": "https://nationaltoday.com/national-nurses-week/"}, titles: {"en": "National Nurses Week"}, first: {era: 1, y: 1994}, emoji: "👨‍⚕️👩‍⚕️"},
         {type: "1D", start: {mon: 5, d: 6}, urls: {"en": "https://nationaltoday.com/national-wildfire-community-preparedness-day/"}, titles: {"en": "National Wildfire Community Preparedness Day"}},
         {type: "1D", start: {mon: 5, d: 7}, urls: {"en": "https://nationaltoday.com/national-tourism-day/"}, inherits: "National Tourism Day"},
         {type: "1D", start: {mon: 5, d: 8}, urls: {"en": "https://nationaltoday.com/jamestown-day/"}, titles: {"en": "Jamestown Day"}},
@@ -482,6 +482,8 @@
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-chess-day/"}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1979}},
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/", "he": "https://www.daysoftheyear.co.il/2017/10/steve-jobs-day.html"}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/black-poetry-day/"}, titles: {"en": "Black Poetry Day"}},
+        {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-check-your-meds-day/"}, titles: {"en": "National Check Your Meds Day"}, first: {era: 1, y: 2017}, emoji: "💊"},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/sweetest-day/"}, titles: {"en": "Sweetest Day"}, first: {era: 1, y: 1921}, emoji: "🧡🩷💚"},
 
 
 
