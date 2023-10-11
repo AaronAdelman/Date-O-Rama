@@ -109,16 +109,28 @@ class ASAEKEventManager:  NSObject, ObservableObject {
             debugPrint(#file, #function, "Case Default")
         }
         
-        eventStore.requestAccess(to: EKEntityType.event, completion: {
-            (accessGranted: Bool, error: Error?) in
-//            debugPrint(#file, #function, "Access granted:", accessGranted, error as Any)
-            if accessGranted == true {
-                self.handleAccessGranted()
-            } else {
-                self.handleAccessDenied()
+        if #available(iOS 17.0, watchOS 10.0, *) {
+            eventStore.requestFullAccessToEvents(completion: {
+                (accessGranted: Bool, error: Error?) in
+                self.handleRequestAccessResult(accessGranted: accessGranted, error: error)
+            })
+        } else {
+            // Fallback on earlier versions
+            eventStore.requestAccess(to: EKEntityType.event) {
+                (accessGranted: Bool, error: Error?) in
+                self.handleRequestAccessResult(accessGranted: accessGranted, error: error)
             }
-        })
+        }
     } // func requestAccessToEKCalendars()
+    
+    private func handleRequestAccessResult            (accessGranted: Bool, error: Error?) {
+        //            debugPrint(#file, #function, "Access granted:", accessGranted, error as Any)
+        if accessGranted == true {
+            self.handleAccessGranted()
+        } else {
+            self.handleAccessDenied()
+        }
+    }
     
     public func eventsFor(startDate:  Date, endDate: Date, calendars:  Array<EKCalendar>) -> Array<ASAEventCompatible> {
         // Use an event store instance to create and properly configure an NSPredicate
