@@ -360,6 +360,6 @@
         {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-anna-day/"}, titles: {"en": "National Anna Day"}},
         {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-diego-day/"}, titles: {"en": "National Diego Day"}},
         {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-lauren-day/"}, titles: {"en": "National Lauren Day"}},
-
+        {type: "1D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/national-elizabeth-day/"}, titles: {"en": "National Elizabeth Day"}},
     ]
 }

@@ -219,8 +219,8 @@
         {type: "1D", start: {mon: 10, d: 20}, titles: {"en": "World Osteoporosis Day"}, first: {era: 1, y: 1996}, emoji: "🦴", urls: {"en": "https://www.worldosteoporosisday.org/"}},
         {type: "1D", start: {mon: 10, d: 20}, titles: {"en": "International Day of the Air Traffic Controller"}, first: {era: 1, y: 1961}, emoji: "✈️", urls: {"en": "https://nationaldaycalendar.com/international-day-of-the-air-traffic-controller-october-20/"}},
         {type: "1D", start: {mon: 10, d: 20}, titles: {"en": "International Chefs Day"}, first: {era: 1, y: 2004}, emoji: "👨‍🍳👩‍🍳", urls: {"en": "https://www.daysoftheyear.com/days/international-chef-day/"}},
-        {type: "1D", start: {mon: 10, d: 22}, titles: {"en": "International Stuttering Awareness Day"}, first: {era: 1, y: 1998}, emoji: "🗣", urls: {"en": "http://www.isastutter.org/what-we-do/isad"}, inherits: "*MedicalAwareness*"},
-        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Mole Day", "he": "יום מול"}, first: {era: 1, y: 1991}, emoji: "⚛️", urls: {"en": "https://www.moleday.org/"}},
+        {type: "1D", start: {mon: 10, d: 22}, titles: {"en": "International Stuttering Awareness Day", "he": "יום המודעות לגמגום הבינלאומי"}, first: {era: 1, y: 1998}, emoji: "🗣", urls: {"en": "http://www.isastutter.org/what-we-do/isad", "he": "https://www.daysoftheyear.co.il/2018/10/stutterday.html"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Mole Day", "he": "יום מול"}, first: {era: 1, y: 1991}, emoji: "⚛️", urls: {"en": "https://www.moleday.org/", "he": "https://www.daysoftheyear.co.il/2019/10/mole-day.html"}},
         {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "International Snow Leopard Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/snow-leopard-day/"}},
         {type: "1D", start: {mon: 10, d: 24}, titles: {"en": "World Polio Day"}, first: {era: 1, y: 2000}, emoji: "💉", urls: {"en": "https://www.endpolio.org/world-polio-day"}},
         {type: "1D", start: {mon: 10, d: 28}, titles: {"en": "International Animation Day"}, first: {era: 1, y: 2002}, emoji: "🎞", urls: {"en": "https://www.daysoftheyear.com/days/animation-day/"}},
@@ -1847,6 +1847,8 @@
          {type: "1D", start: {mon: 10, d: 22}, inherits: "International Caps Lock Day", first: {era: 1, y: 2000}},
          {type: "1D", start: {mon: 6, d: 28}, inherits: "International Caps Lock Day", first: {era: 1, y: 2010}},
          {type: "1D", start: {mon: 10, d: 23}, urls: {"en": "https://nationaltoday.com/international-swallows-depart-from-san-juan-capistrano-day/"}, titles: {"en": "International Swallows Depart from San Juan Capistrano Day"}},
-         {type: "1D", start: {mon: 10, d: 23}, urls: {"en": "https://nationaltoday.com/t-v-talk-show-host-day/"}, titles: {"en": "T.V. Talk Show Host Day"}},
+         {type: "1D", start: {mon: 10, d: 23}, urls: {"en": "https://nationaltoday.com/t-v-talk-show-host-day/", "he": "https://www.daysoftheyear.co.il/2018/10/talkshowday.html"}, titles: {"en": "T.V. Talk Show Host Day", "he": "יום תכניות האירוח בטלויזיה"}},
+         {type: "1D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/my-best-winter-skin-day/"}, titles: {"en": "My Best Winter Skin Day"}, first: {era: 1, y: 2023}},
+         {type: "1D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/world-tripe-day/"}, titles: {"en": "World Tripe Day"}, first: {era: 1, y: 2011}},
     ]
 }

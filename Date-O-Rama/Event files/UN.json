@@ -384,5 +384,7 @@
         {titles: {"en": "International Co-operation Year"}, type: "1Y", start: {era: 1, y: 1965}},
         {titles: {"en": "International Health and Medical Research Year"}, type: "1Y", start: {era: 1, y: 1961}, emoji: "⚕️"},
         {titles: {"en": "World Refugee Year"}, type: "1D", start: {era: 1, y: 1959, mon: 6, d: 1}, "end": {era: 1, y: 1960, mon: 5, d: 31}},
+        
+        {type: "nD", start: {mon: 10, d: 24}, end: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/global-media-and-information-literacy-week/"}, titles: {"en": "Global Media and Information Literacy Week"}, first: {era: 1, y: 2012}},
     ]
 }
