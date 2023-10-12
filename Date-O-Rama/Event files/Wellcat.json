@@ -82,7 +82,7 @@
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Be Bald and Be Free Day", "he": "יום תהיה קרח וחופשי"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 10, d: 19}, titles: {"en": "Evaluate Your Life Day", "he": "יום ״הערך את החיים שלך״"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 10, d: 27}, titles: {"en": "Cranky Co-Workers Day", "he": "יום השותפים העצבנים לעבודה"}, inherits: "*Wellcat*"},
-        {type: "1D", start: {mon: 10, d: 30}, titles: {"en": "Haunted Refrigerator Night"}, inherits: "*Wellcat*"},
+        {type: "1D", start: {mon: 10, d: 30}, titles: {"en": "Haunted Refrigerator Night", "he": "ליל המקרר הרדוף"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 11, d: 3}, titles: {"en": "Cliché Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 11, d: 8}, titles: {"en": "Cook Something Bold and Pungent Day"}, inherits: "*Wellcat*"},
         {type: "1D", start: {mon: 11, d: 18}, titles: {"en": "Married To A Scorpio Support Day"}, inherits: "*Astrology*"},

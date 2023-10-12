@@ -483,7 +483,7 @@
         {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/", "he": "https://www.daysoftheyear.co.il/2017/10/steve-jobs-day.html"}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, first: {era: 1, y: 2011}, emoji: "📱"},
         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/black-poetry-day/"}, titles: {"en": "Black Poetry Day"}},
         {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-check-your-meds-day/"}, titles: {"en": "National Check Your Meds Day"}, first: {era: 1, y: 2017}, emoji: "💊"},
-        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/sweetest-day/"}, titles: {"en": "Sweetest Day"}, first: {era: 1, y: 1921}, emoji: "🧡🩷💚"},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/sweetest-day/", "he": "https://www.daysoftheyear.co.il/2017/10/sweetest-day.html"}, titles: {"en": "Sweetest Day", "he": "היום המתוק ביותר"}, first: {era: 1, y: 1921}, emoji: "🧡🩷💚"},
         {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-day-of-the-deployed/"}, titles: {"en": "National Day of the Deployed"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-first-responders-day/"}, titles: {"en": "​National First Responders Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-immigrants-day/"}, titles: {"en": "​National Immigrants Day"}, first: {era: 1, y: 1987}, emoji: "🗽"},

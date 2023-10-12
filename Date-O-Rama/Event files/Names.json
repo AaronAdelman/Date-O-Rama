@@ -367,6 +367,7 @@
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-caroline-day/"}, titles: {"en": "National Caroline Day"}},
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-william-day/"}, titles: {"en": "National William Day"}},
         {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/national-martina-day/"}, titles: {"en": "National Martina Day"}},
+        {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-prince-day/"}, titles: {"en": "National Prince Day"}},
 
     ]
 }
