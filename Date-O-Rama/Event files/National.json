@@ -1944,5 +1944,8 @@
         {type: "1D", start: {mon: 10, d: 27}, urls: {"en": "https://nationaltoday.com/national-henry-c-ramos-day/"}, titles: {"en": "National Henry C. Ramos Day"}},
         {type: "1D", start: {mon: 10, d: 27}, urls: {"en": "https://nationaltoday.com/national-mentoring-day/"}, titles: {"en": "​National Mentoring Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 10, d: 24, thruD: 30, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-pharmacy-buyer-day/"}, titles: {"en": "National Pharmacy Buyer Day"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-chocolate-day/"}, titles: {"en": "National Chocolate Day", "he": "יום השוקולד הלאומי"}, emoji: "🍫"},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-one-united-race-day/"}, titles: {"en": "National One United Race Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-pit-bull-awareness-day/"}, titles: {"en": "National Pit Bull Awareness Day"}, first: {era: 1, y: 2007}},
     ]
 }

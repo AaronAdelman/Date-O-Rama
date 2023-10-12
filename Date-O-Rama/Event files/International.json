@@ -223,7 +223,7 @@
         {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "Mole Day", "he": "יום מול"}, first: {era: 1, y: 1991}, emoji: "⚛️", urls: {"en": "https://www.moleday.org/", "he": "https://www.daysoftheyear.co.il/2019/10/mole-day.html"}},
         {type: "1D", start: {mon: 10, d: 23}, titles: {"en": "International Snow Leopard Day"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/snow-leopard-day/"}},
         {type: "1D", start: {mon: 10, d: 24}, titles: {"en": "World Polio Day"}, first: {era: 1, y: 2000}, emoji: "💉", urls: {"en": "https://www.endpolio.org/world-polio-day"}},
-        {type: "1D", start: {mon: 10, d: 28}, titles: {"en": "International Animation Day"}, first: {era: 1, y: 2002}, emoji: "🎞", urls: {"en": "https://www.daysoftheyear.com/days/animation-day/"}},
+        {type: "1D", start: {mon: 10, d: 28}, titles: {"en": "International Animation Day", "he": "יום האנימציה הבינלאומי"}, first: {era: 1, y: 2002}, emoji: "🎞", urls: {"en": "https://www.daysoftheyear.com/days/animation-day/", "he": "https://www.daysoftheyear.co.il/2018/10/animationday.html"}},
         {type: "1D", start: {mon: 10, d: 31}, titles: {"en": "World Savings Day"}, notes: {"en": "World Thrift Day"}, first: {era: 1, y: 1924}, emoji: "🪙", urls: {"en": "https://nationaltoday.com/world-savings-day/"}},
         {type: "1D", start: {d: 1, mon: 11}, titles: {"en": "World Vegan Day", "he": "יום הטבעונות העולמי"}, first: {era: 1, y: 1994}, emoji: "🌽", urls: {"en": "https://www.daysoftheyear.com/days/vegan-day/"}},
         {type: "1D", start: {d: 3, mon: 11}, titles: {"en": "Sandwich Day"}, emoji: "🥪", urls: {"en": "https://www.daysoftheyear.com/days/sandwich-day/"}},
@@ -1856,5 +1856,10 @@
          {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/frankenstein-friday/"}, titles: {"en": "Frankenstein Friday"}, first: {era: 1, y: 1997}},
          {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/global-champagne-day/"}, titles: {"en": "Global Champagne Day"}, emoji: "🥂"},
          {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/world-lemur-day/"}, titles: {"en": "World Lemur Day"}, first: {era: 1, y: 2014}},
+         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/hug-a-sheep-day/"}, titles: {"en": "Hug a Sheep Day"}, emoji: "🐑"},
+         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/make-a-difference-day/"}, titles: {"en": "Make a Difference Day"}, first: {era: 1, y: 1992}},
+         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/muddy-dog-day/"}, titles: {"en": "Muddy Dog Day"}, first: {era: 1, y: 2021}, emoji: "🐾"},
+         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/plush-animal-lovers-day/", "he": "https://www.daysoftheyear.co.il/2019/10/plush-animal-lovers-day.html"}, titles: {"en": "Plush Animal Lovers Day", "he": "יום אוהבי בובות פרווה של חיות"}, emoji: "🧸"},
+         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/wild-foods-day/"}, titles: {"en": "Wild Foods Day"}, first: {era: 1, y: 1974}, emoji: "🫐"},
     ]
 }
