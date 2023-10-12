@@ -232,7 +232,7 @@
         {type: "1D", start: {mon: 9, d: 26}, titles: {"en": "National Mesothelioma Awareness Day"}, first: {era: 1, y: 2010}, urls: {"en": "https://nationaltoday.com/national-mesothelioma-awareness-day/"}, inherits: "*MedicalAwareness*"},
         {titles: {"en": "Respiratory Care Week"}, type: "nD", start: {mon: 10, d: 22}, "end": {mon: 10, d: 28}, emoji: "🫁", urls: {"en": "https://nationaltoday.com/respiratory-care-week/"}, inherits: "*MedicalAwareness*", first: {era: 1, y: 1982}},
         {type: "1D", start: {mon: 10, d: 29}, titles: {"en": "National Prescription Drug Take Back Day"}, urls: {"en": "https://nationaltoday.com/national-prescription-drug-take-back-day/"}, first: {era: 1, y: 2010}, emoji: "💊", inherits: "*MedicalAwareness*"},
-        {type: "1D", start: {mon: 10, d: 31}, titles: {"en": "Nevada Day", "he": "יום נבדה"}, first: {era: 1, y: 1864}, urls: {"en": "http://nevadaday.com/"}},
+        {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: -1}, titles: {"en": "Nevada Day", "he": "יום נבדה"}, first: {era: 1, y: 1864}, urls: {"en": "http://nevadaday.com/"}},
         {type: "1D", start: {mon: 4, d: 29}, titles: {"en": "End Jew Hatred Day"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.queensjewishlink.com/index.php/local/26-community-corner/7051-nassau-county-legislators-issue-end-jew-hatred-day-proclamation"}},
         {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "National Authors’ Day"}, urls: {"en": "https://www.daysoftheyear.com/days/authors-day/"}, first: {era: 1, y: 1949}, emoji: "✍️"},
         {type: "1M", start: {mon: 11}, titles: {"en": "National Adoption Month"}, urls: {"en": "https://www.daysoftheyear.com/days/adoption-month/"}, first: {era: 1, y: 1995}},

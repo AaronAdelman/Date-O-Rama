@@ -79,5 +79,6 @@
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, inherits: "King’s Birthday", first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/new-zealand/new-zealand-kings-birthday"}},
         {type: "1D", start: {mon: 5, d: 2}, inherits: "National Alpaca Day"},
         {type: "1D", start: {mon: 10, d: 19, thruD: 25, wkd: [6]}, urls: {"en": "https://nationaltoday.com/hawkes-bay-anniversary-day/"}, titles: {"en": "Hawke’s Bay Anniversary Day"}},
+        {type: "nD", start: {mon: 10, d: 27}, end: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/grandparents-week/"}, titles: {"en": "Grandparents Week"}, first: {era: 1, y: 2002}},
         ]
     }

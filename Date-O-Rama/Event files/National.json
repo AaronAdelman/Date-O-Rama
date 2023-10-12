@@ -1938,5 +1938,11 @@
         {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-mule-day/"}, titles: {"en": "National Mule Day"}, first: {era: 1, y: 1930}, notes: {"en": "Breeders Day"}, emoji: "🫏"},
         {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-pumpkin-day/", "he": "https://www.daysoftheyear.co.il/2019/10/pumpkin-day.html"}, titles: {"en": "National Pumpkin Day", "he": "יום הדלעת הלאומי"}, emoji: "🎃"},
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/sourest-day/"}, titles: {"en": "Sourest Day"}},
+        {type: "1D", start: {mon: 10, d: 27}, urls: {"en": "https://nationaltoday.com/national-american-beer-day/"}, titles: {"en": "National American Beer Day"}, emoji: "🍺"},
+        {type: "1D", start: {mon: 10, d: 27}, urls: {"en": "https://nationaltoday.com/national-black-cat-day/", "he": "https://www.daysoftheyear.co.il/2020/10/black-cat-day.html"}, titles: {"en": "National Black Cat Day", "he": "יום החתול השחור הלאומי"}, emoji: "🐈‍⬛"},
+        {type: "1D", start: {mon: 10, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-breadstick-day/"}, titles: {"en": "National Breadstick Day"}},
+        {type: "1D", start: {mon: 10, d: 27}, urls: {"en": "https://nationaltoday.com/national-henry-c-ramos-day/"}, titles: {"en": "National Henry C. Ramos Day"}},
+        {type: "1D", start: {mon: 10, d: 27}, urls: {"en": "https://nationaltoday.com/national-mentoring-day/"}, titles: {"en": "​National Mentoring Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 10, d: 24, thruD: 30, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-pharmacy-buyer-day/"}, titles: {"en": "National Pharmacy Buyer Day"}, first: {era: 1, y: 2007}},
     ]
 }

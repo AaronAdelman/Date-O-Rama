@@ -7,7 +7,7 @@
     eventSpecifications: [
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
-        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 27}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 10, d: 27}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/saint-vincent-and-the-grenadines-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/10/27.html"}},
         {inherits: "August Monday", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}},
    ]
 }
