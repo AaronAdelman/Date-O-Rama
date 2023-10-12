@@ -1863,5 +1863,7 @@
          {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/wild-foods-day/"}, titles: {"en": "Wild Foods Day"}, first: {era: 1, y: 1974}, emoji: "🫐"},
          {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/visit-a-cemetery-day/"}, titles: {"en": "Visit A Cemetery Day"}},
          {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/world-psoriasis-day/"}, titles: {"en": "World Psoriasis Day"}},
+         {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/create-a-great-funeral-day/"}, titles: {"en": "Create a Great Funeral Day"}, first: {era: 1, y: 2000}},
+         {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/mischief-night/"}, titles: {"en": "Mischief Night"}, first: {era: 1, y: 1790}},
     ]
 }

@@ -1950,6 +1950,11 @@
         {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/national-cat-day/"}, titles: {"en": "National Cat Day"}, first: {era: 1, y: 2005}},
         {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/national-hermit-day/"}, titles: {"en": "National Hermit Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/national-oatmeal-day/", "he": "https://www.daysoftheyear.co.il/2022/10/29.html"}, titles: {"en": "National Oatmeal Day", "he": "יום דייסת שיבולת השועל הלאומי"}},
-
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-candy-corn-day/"}, titles: {"en": "National Candy Corn Day"}},
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-checklist-day/"}, titles: {"en": "National Checklist Day"}},
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-publicist-day/"}, titles: {"en": "National Publicist Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-speak-up-for-service-day/"}, titles: {"en": "National Speak Up For Service Day"}, first: {era: 1, y: 2014}},
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-text-your-ex-day/"}, titles: {"en": "National Text Your Ex Day"}},
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-treat-your-pet-day/"}, titles: {"en": "National Treat Your Pet Day"}, first: {era: 1, y: 2021}, emoji: "😼"},
     ]
 }
