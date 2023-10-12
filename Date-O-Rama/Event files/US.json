@@ -479,11 +479,13 @@
         {type: "1D", start: {mon: 9, d: 22}, urls: {"en": "https://nationaltoday.com/american-business-womens-day/", "he": "https://www.daysoftheyear.co.il/2017/09/22.html"}, titles: {"en": "American Business Women’s Day", "he": "יום נשות העסקים האמריקאי"}, first: {era: 1, y: 1983}},
         {type: "1D", start: {mon: 9, d: 28}, urls: {"en": "https://nationalgoodneighborday.com/"}, titles: {"en": "National Good Neighbor Day"}, first: {era: 1, y: 2004}},
         {type: "1D", start: {mon: 10, d: 13}, urls: {"en": "https://nationaltoday.com/metastatic-breast-cancer-awareness-day/"}, titles: {"en": "Metastatic Breast Cancer Awareness Day"}, first: {era: 1, y: 2009}},
-        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-chess-day/"}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1979}},
-        {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/", "he": "https://www.daysoftheyear.co.il/2017/10/steve-jobs-day.html"}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-chess-day/"}, titles: {"en": "National Chess Day"}, first: {era: 1, y: 1979}, emoji: "♟️"},
+        {type: "1D", start: {mon: 10, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/steve-jobs-day/", "he": "https://www.daysoftheyear.co.il/2017/10/steve-jobs-day.html"}, titles: {"en": "Steve Jobs Day", "he": "יום סטיב ג׳ובס"}, first: {era: 1, y: 2011}, emoji: "📱"},
         {type: "1D", start: {mon: 10, d: 17}, urls: {"en": "https://nationaltoday.com/black-poetry-day/"}, titles: {"en": "Black Poetry Day"}},
         {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-check-your-meds-day/"}, titles: {"en": "National Check Your Meds Day"}, first: {era: 1, y: 2017}, emoji: "💊"},
         {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/sweetest-day/"}, titles: {"en": "Sweetest Day"}, first: {era: 1, y: 1921}, emoji: "🧡🩷💚"},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-day-of-the-deployed/"}, titles: {"en": "National Day of the Deployed"}, first: {era: 1, y: 2006}},
+
 
 
 

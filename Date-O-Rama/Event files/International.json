@@ -1852,7 +1852,6 @@
          {type: "1D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/world-tripe-day/"}, titles: {"en": "World Tripe Day"}, first: {era: 1, y: 2011}},
          {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/international-artist-day/", "he": "https://www.daysoftheyear.co.il/2019/10/artists-day.html"}, titles: {"en": "International Artist Day", "he": "יום האמנים הבינלאומי"}, emoji: "👨‍🎨👩‍🎨"},
          {type: "1D", start: {mon: 10, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/lung-health-day/"}, titles: {"en": "Lung Health Day"}, first: {era: 1, y: 2003}, emoji: "🫁"},
-         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/sourest-day/"}, titles: {"en": "Sourest Day"}},
-
+         {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/worldwide-howl-at-the-moon-night/"}, titles: {"en": "Worldwide Howl at the Moon Night"}, first: {era: 1, y: 2009}, emoji: "🐺"},
     ]
 }

@@ -363,6 +363,7 @@
         {type: "1D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/national-elizabeth-day/"}, titles: {"en": "National Elizabeth Day"}},
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-danielle-day/"}, titles: {"en": "National Danielle Day"}},
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-yasmin-day/"}, titles: {"en": "National Yasmin Day"}},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-noah-day/"}, titles: {"en": "National Noah Day"}},
 
     ]
 }

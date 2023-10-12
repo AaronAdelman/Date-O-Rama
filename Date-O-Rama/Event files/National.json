@@ -1932,6 +1932,11 @@
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-greasy-foods-day/"}, titles: {"en": "National Greasy Foods Day"}},
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-hope-for-henry-day/"}, titles: {"en": "National Hope for Henry Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-i-care-about-you-day/"}, titles: {"en": "​National I Care About You Day"}, first: {era: 1, y: 2016}},
-
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-chicken-fried-steak-day/"}, titles: {"en": "National Chicken Fried Steak Day"}},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-financial-crime-fighter-day/"}, titles: {"en": "National Financial Crime Fighter Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-mincemeat-day/"}, titles: {"en": "National Mincemeat Day"}, first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-mule-day/"}, titles: {"en": "National Mule Day"}, first: {era: 1, y: 1930}, notes: {"en": "Breeders Day"}, emoji: "🫏"},
+        {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-pumpkin-day/", "he": "https://www.daysoftheyear.co.il/2019/10/pumpkin-day.html"}, titles: {"en": "National Pumpkin Day", "he": "יום הדלעת הלאומי"}, emoji: "🎃"},
+        {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/sourest-day/"}, titles: {"en": "Sourest Day"}},
     ]
 }
