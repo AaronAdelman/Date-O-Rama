@@ -1861,5 +1861,7 @@
          {type: "1D", start: {mon: 10, wkd: [7], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/muddy-dog-day/"}, titles: {"en": "Muddy Dog Day"}, first: {era: 1, y: 2021}, emoji: "🐾"},
          {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/plush-animal-lovers-day/", "he": "https://www.daysoftheyear.co.il/2019/10/plush-animal-lovers-day.html"}, titles: {"en": "Plush Animal Lovers Day", "he": "יום אוהבי בובות פרווה של חיות"}, emoji: "🧸"},
          {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/wild-foods-day/"}, titles: {"en": "Wild Foods Day"}, first: {era: 1, y: 1974}, emoji: "🫐"},
+         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/visit-a-cemetery-day/"}, titles: {"en": "Visit A Cemetery Day"}},
+         {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/world-psoriasis-day/"}, titles: {"en": "World Psoriasis Day"}},
     ]
 }

@@ -12,7 +12,7 @@
         {type: "1D", start: {mon: 5, d: 19}, titles: {"en": "Commemoration of Atatürk, Youth and Sports Day", "tr": "Atatürk'ü Anma, Gençlik ve Spor Bayramı"}, urls: {"en": "https://en.wikipedia.org/wiki/Commemoration_of_Atat%C3%BCrk%2C_Youth_and_Sports_Day"}, first: {era: 1, y: 1938}, emoji: "⚽️"},
         {type: "1D", start: {mon: 7, d: 15}, titles: {"en": "Democracy and National Unity Day", "tr": "Demokrasi ve Milli Birlik Günü"}, urls: {"en": "https://nationaltoday.com/the-democracy-and-national-unity-day-of-turkey/"}, first: {era: 1, y: 2016}, emoji: "15🇹🇷"},
         {inherits: "Victory Day", type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/victory-day/"}, first: {era: 1, y: 1923}},
-        {inherits: "Republic Day", type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/turkey-republic-day/"}, first: {era: 1, y: 1923}},
+        {inherits: "Republic Day", type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/turkey-republic-day/", "he": "https://www.daysoftheyear.co.il/2018/10/Republic-of-Turkey-Day.html"}, first: {era: 1, y: 1923}},
 
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
