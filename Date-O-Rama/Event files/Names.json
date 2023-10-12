@@ -361,5 +361,8 @@
         {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-diego-day/"}, titles: {"en": "National Diego Day"}},
         {type: "1D", start: {mon: 10, d: 22}, urls: {"en": "https://nationaltoday.com/national-lauren-day/"}, titles: {"en": "National Lauren Day"}},
         {type: "1D", start: {mon: 10, d: 24}, urls: {"en": "https://nationaltoday.com/national-elizabeth-day/"}, titles: {"en": "National Elizabeth Day"}},
+        {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-danielle-day/"}, titles: {"en": "National Danielle Day"}},
+        {type: "1D", start: {mon: 10, d: 25}, urls: {"en": "https://nationaltoday.com/national-yasmin-day/"}, titles: {"en": "National Yasmin Day"}},
+
     ]
 }
