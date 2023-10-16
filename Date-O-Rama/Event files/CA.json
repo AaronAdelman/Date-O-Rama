@@ -52,7 +52,7 @@
         {inherits: "Black History Month", type: "1M", start: {mon: 2}, first: {era: 1, y: 1995}},
         {inherits: "Women’s History Month", type: "1M", start: {mon: 10}, first: {era: 1, y: 1992}},
         {type: "1M", start: {mon: 4}, titles: {"en": "Dalit History Month"}, urls: {"en": "https://en.wikipedia.org/wiki/Dalit_History_Month"}, first: {era: 1, y: 2022}},
-        {inherits: "International Francophonie Day", type: "1D", start: {d: 20, mon: 3}, first: {era: 1, y: 1988}},
+        {inherits: "International Francophonie Day", type: "1D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
        {inherits: "St. John’s Day", type: "1D", start: {mon: 6, d: 24}, urls: {"en": "https://nationaltoday.com/saint-jean-baptiste-day/"}, first: {era: 1, y: 1925}, notes: {"en": "Saint-Jean-Baptiste Day"}},
         {inherits: "Memorial Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, first: {era: 1, y: 1917}, "locations": {"en": "Newfoundland and Labrador"}},

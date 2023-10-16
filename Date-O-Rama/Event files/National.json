@@ -139,7 +139,7 @@
         {type: "1D", start: {d: 7, mon: 3}, titles: {"en": "National Crown Roast of Pork Day"}, urls: {"en": "https://www.daysoftheyear.com/days/crown-roast-of-pork-day/"}},
         {type: "1D", start: {d: 9, mon: 3}, titles: {"en": "National Meatball Day"}, urls: {"en": "https://www.daysoftheyear.com/days/meatball-day/"}, notes: {"en": "Meatball Day"}, emoji: "🍝"},
         {type: "1D", start: {d: 13, mon: 3}, titles: {"en": "National Coconut Torte Day"}, urls: {"en": "https://www.daysoftheyear.com/days/coconut-torte-day/"}},
-        {type: "1D", start: {d: 20, mon: 3}, titles: {"en": "National Native HIV/AIDS Awareness Day"}, first: {era: 1, y: 2006}, emoji: "🌿", urls: {"en": "https://www.nnhaad.org/"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 3, d: 20}, titles: {"en": "National Native HIV/AIDS Awareness Day"}, first: {era: 1, y: 2006}, emoji: "🌿", urls: {"en": "https://www.nnhaad.org/"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "National Peanut Butter and Jelly Day"}, emoji: "🥪", urls: {"en": "https://www.daysoftheyear.com/days/peanut-butter-and-jelly-day/"}},
         {type: "1D", start: {d: 2, mon: 4}, titles: {"en": "National Ferret Day", "he": "יום החמוס הלאומי"}, first: {era: 1, y: 2014}, urls: {"en": "https://www.daysoftheyear.com/days/ferret-day/", "he": "https://www.daysoftheyear.co.il/2021/04/ferret-day.html"}},
         {type: "1D", start: {d: 6, mon: 4}, titles: {"en": "National Carbonara Day"}, urls: {"en": "https://nationaldaycalendar.com/national-carbonara-day-april-6/"}, first: {era: 1, y: 2017}, emoji: "🍝"},
