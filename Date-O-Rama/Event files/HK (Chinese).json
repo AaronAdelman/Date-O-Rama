@@ -7,9 +7,9 @@
     calendarColor: {"red": 0.93, "green": 0.11, "blue": 0.15},
     eventSpecifications: [
         {type: "nD", start: {mon: 1, d: 1}, "end": {mon: 1, d: 3}, inherits: "Chinese New Year", urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/chinese-new-year"}},
-        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}, titles: {"en": "Birthday of the Buddha", "zh_CN": "佛誕"}, inherits: "Vesak"},
+        {type: "1D", start: {mon: 4, d: 8}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/the-buddhas-birthday"}, inherits: "Buddha’s Birthday"},
         {type: "1D", start: {mon: 5, d: 5}, inherits: "Dragon Boat Festival"},
-        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/mid-autumn-festival"}, titles: {"en": "The day following the Chinese Mid-Autumn Festival", "zh_CN": "中秋節翌日"}},
+        {type: "1D", start: {mon: 8, d: 16}, urls: {"en": "https://www.officeholidays.com/holidays/hong-kong/mid-autumn-festival"}, inherits: "Day following the Mid-Autumn Festival"},
         {type: "1D", start: {mon: 9, d: 9}, inherits: "Chung Yeung Festival"},
 
         {type: "1D", start: {mon: 1, d: 15}, inherits: "Lantern Festival"},
