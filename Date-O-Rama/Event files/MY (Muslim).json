@@ -1,0 +1,11 @@
+{
+    titles: {"*": "MY"},
+    "//": "Malaysia",
+    defaultLocale: "en",
+    calendarCode: "hiq*",
+    calendarColor: {"red": 0.00, "green": 0.20, "blue": 0.63},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 2, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/malaysia/johor/the-sultan-of-johor-hol"}, titles: {"en": "The Sultan of Johor Hol"}, first: {y: 1431}, inherits: "*DeathAnniv*"},
+   ]
+}
+
