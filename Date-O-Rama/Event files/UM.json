@@ -1,9 +1,0 @@
-{
-    titles: {"*": "UM"},
-    "//": "United States Minor Outlying Islands",
-    defaultLocale: "en",
-    calendarCode: "gre",
-    calendarColor: {"red": 0.10, "green": 0.22, "blue": 0.36},
-    eventSpecifications: [
-    ]
-}

@@ -1,9 +1,0 @@
-{
-    titles: {"en": "Druzism (Muslim)", "he": "דרוזים (מוסלמי)", "ar": "دروز (إسلامي)"},
-    defaultLocale: "en",
-    calendarCode: "hiq*",
-    calendarColor: {"red": 0.21, "green": 0.49, "blue": 0.31},
-    eventSpecifications: [
-        {inherits: "ʿĪd al-ʾAḍḥā", type: "1D", start: {mon: 12, d: 10}},
-        ]
-    }
