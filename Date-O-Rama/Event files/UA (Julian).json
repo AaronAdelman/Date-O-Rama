@@ -1,0 +1,12 @@
+{
+    titles: {"*": "UA"},
+    "//": "Ukraine",
+    defaultLocale: "en",
+    calendarCode: "jul",
+    calendarColor: {"red": 0.00, "green": 0.34, "blue": 0.72},
+    eventSpecifications: [
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+    ]
+}
+

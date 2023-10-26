@@ -1,0 +1,20 @@
+{
+    titles: {"*": "PY"},
+    "//": "Paraguay",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.94, "green": 0.20, "blue": 0.25},
+    eventSpecifications: [
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, d: 15}},
+        {type: "1D", start: {mon: 7, d: 23}, inherits: "Engineer’s Day"},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 8, d: 16}},
+        {inherits: "Heroes’ Day", type: "1D", start: {mon: 3, d: 1}},
+        {inherits: "Independence Day", type: "nD", start: {mon: 5, d: 14}, end: {mon: 5, d: 15}, first: {era: 1, y: 1811}, urls: {"en": "https://nationaltoday.com/paraguay-independence-day/"}},
+        {type: "1D", start: {mon: 8, d: 7}, inherits: "Friendship Day"},
+        {type: "1D", start: {mon: 10, d: 3}, titles: {"en": "Boquerón Battle Victory Day"}, urls: {"en": "https://nationaltoday.com/boqueron-battle-victory-day/"}, first: {era: 1, y: 1932}},
+        {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/virgin-of-caacupe-day/"}, titles: {"en": "Virgin of Caacupé Day"}},
+        {type: "1D", start: {mon: 6, d: 12}, urls: {"en": "https://nationaltoday.com/chaco-armistice-day/"}, titles: {"en": "Chaco Armistice Day", "es": "Día de la Paz del Chaco"}, notes: {"en": "Chaco Peace Day"}, first: {era: 1, y: 1935}},
+        {type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://nationaltoday.com/founding-of-asuncion-in-paraguay/"}, titles: {"en": "Founding of Asuncion"}},
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    titles: {"*": "GE"},
+    "//": "Georgia",
+    defaultLocale: "en",
+    calendarCode: "jul",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Holy Saturday", type: "1D", start: {"Easter": "Easter", "offsetD": -1}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "St. Andrew’s Day", type: "1D", start: {mon: 4, d: 29}},
+        {inherits: "Dormition of the Mother of God", type: "1D", start: {mon: 8, d: 15}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}},
+        {type: "1D", start: {mon: 8, d: 28}, urls: {"en": "https://www.officeholidays.com/holidays/georgia/saint-marys-day"}, titles: {"en": "St. Mary’s Day"}},
+
+
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    titles: {"*": "MU"},
+    "//": "Mauritius",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 1.00, "green": 0.82, "blue": 0.00},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 3, d: 12}, notes: {"en": "Mauritius Day"}, first: {era: 1, y: 1968}, inherits: "Independence Day", urls: {"en": "https://nationaltoday.com/mauritius-independence-day/", "he": "https://www.daysoftheyear.co.il/2018/03/12.html"}},
+        {inherits: "International Francophonie Day", type: "1D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}},
+        {type: "1D", start: {mon: 9, d: 13}, inherits: "Engineer’s Day"},
+        {type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/arrival-of-indentured-labourers/"}, titles: {"en": "Arrival of Indentured Labourers"}},
+        {type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/abolition-of-slavery-day/"}, titles: {"en": "Abolition of Slavery Day"}, first: {era: 1, y: 1835}},
+    ]
+}

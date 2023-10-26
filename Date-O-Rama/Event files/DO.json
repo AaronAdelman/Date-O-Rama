@@ -1,0 +1,29 @@
+{
+    titles: {"*": "DO"},
+    "//": "Dominican Republic",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.18, "blue": 0.38},
+    eventSpecifications: [
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {type: "1D", start: {mon: 1, d: 2, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/international-new-years-day"}, inherits: "New Year’s Day (in lieu)"},
+        {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
+        {type: "1D", start: {mon: 1, d: 21}, urls: {"en": "https://nationaltoday.com/our-lady-of-altagracia/"}, titles: {"en": "Our Lady of Altagracia", "es": "Nuestra Señora de la Altagracia"}, notes: {"en": "Day of the Lady of Altagracia\nOur Lady of High Grace"}, first: {era: 1, y: 1924}},
+        {type: "1D", start: {mon: 1, d: 26}, urls: {"en": "https://nationaltoday.com/duarte-day/"}, titles: {"en": "Duarte Day"}, first: {era: 1, y: 1813}, inherits: "*BDay*", notes: {"en": "Juan Pablo Duarte Day"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 27}, first: {era: 1, y: 1844}, urls: {"en": "https://nationaltoday.com/dominican-republic-independence-day/"}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/mothers-day"}},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://www.officeholidays.com/holidays/dominican-republic/fathers-day"}},
+        {type: "1D", start: {mon: 8, d: 16}, inherits: "Restoration Day", urls: {"en": "https://nationaltoday.com/restoration-day-dominican-republic/"}},
+        {titles: {"en": "Our Lady of Mercedes Day"}, type: "1D", start: {mon: 9, d: 24}, urls: {"en": "https://nationaltoday.com/our-lady-of-mercedes-day/"}, first: {era: 1, y: 1615}, notes: {"en": "Our Lady of Mercy"}},
+        {type: "1D", start: {mon: 11, d: 3, thruD: 9, wkd: [2]}, urls: {"en": "https://nationaltoday.com/constitution-day-dominican-republic/"}, inherits: "Constitution Day", first: {era: 1, y: 2011}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
+        {inherits: "Armed Forces Day", type: "1D", start: {mon: 2, d: 25}},
+        {type: "1D", start: {mon: 2, d: 14}, inherits: "Friendship Day"},
+        {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-larimar-day/"}, titles: {"en": "National Larimar Day"}, first: {era: 1, y: 2018}},
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    titles: {"*": "FO"},
+    "//": "Faroe Islands",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.13, "green": 0.25, "blue": 0.60},
+    eventSpecifications: [
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {inherits: "Maundy Thursday", type: "1D", start: {"Easter": "Easter", "offsetD": -3}},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "National Flag Day", type: "1D", start: {mon: 4, d: 25}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/faroe-islands-national-flag-day"}},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/general-prayer-day"}},
+        {inherits: "Ascension Day", type: "1D", start: {"Easter": "Easter", "offsetD": 39}},
+        {inherits: "Pentecost", type: "1D", start: {"Easter": "Easter", "offsetD": 49}},
+        {inherits: "Whit Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 50}},
+        {inherits: "Constitution Day", type: "1D", start: {mon: 6, d: 5}, urls: {"en": "https://nationaltoday.com/constitution-day-denmark/"}},
+        {titles: {"en": "St. Olav’s Eve", "fo": "Ólavsøkuaftan"}, type: "1D", start: {mon: 7, d: 28}, urls: {"en": "https://nationaltoday.com/st-olavs-eve-in-faroe-islands/"}, start: {era: 1, y: 1031}},
+        {titles: {"en": "St. Olav’s Day", "fo": "Ólavsøkudagur"}, type: "1D", start: {mon: 7, d: 29}, start: {era: 1, y: 1031}, urls: {"en": "https://www.officeholidays.com/holidays/faroe-islands/st-olavs-day"}},
+        {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "Boxing Day", type: "1D", start: {mon: 12, d: 26}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
+
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {type: "1D", start: {mon: 2, d: 19}, inherits: "Fastelavn"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": 26}, inherits: "General Prayer Day", first: {era: 1, y: 1686}},
+    ]
+}

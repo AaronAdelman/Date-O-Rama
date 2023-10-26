@@ -1,0 +1,21 @@
+{
+    titles: {"*": "PA"},
+    "//": "Panama",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.37, "blue": 0.72},
+    eventSpecifications: [
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/panama-mothers-day/"}, first: {era: 1, y: 1930}},
+        {type: "1D", start: {mon: 1, d: 26}, inherits: "Engineer’s Day"},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Martyrs’ Day", type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/panamas-martyrs-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {d: 28, mon: 11}, first: {era: 1, y: 1821}},
+        {inherits: "Independence Day", type: "1D", start: {d: 3, mon: 11}, first: {era: 1, y: 1903}, titles: {"en": "Separation Day"}},
+        {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Foundation of Old Panama City"}, urls: {"en": "https://nationaltoday.com/foundation-of-old-panama-city/"}, first: {era: 1, y: 1519}},
+        {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/separation-day/"}, titles: {"en": "Separation Day"}, inherits: "National Day", first: {era: 1, y: 1903}},
+        {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/flag-day-in-panama/"}, inherits: "Flag Day"},
+        {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/colon-day/"}, titles: {"en": "Colón Day"}, first: {era: 1, y: 1903}},
+        {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://nationaltoday.com/day-of-the-primer-grito-de-independencia/"}, titles: {"en": "Day of the “Primer Grito de Independencia”"}},
+    ]
+}

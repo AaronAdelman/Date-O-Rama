@@ -1,0 +1,15 @@
+{
+    titles: {"*": "LC"},
+    "//": "Saint Lucia",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.47, "blue": 0.78},
+    eventSpecifications: [
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 2, d: 22}, first: {era: 1, y: 1979}, urls: {"en": "https://nationaltoday.com/independence-day-saint-lucia/"}},
+        
+        {type: "1D", start: {mon: 12, d: 13}, urls: {"en": "https://nationaltoday.com/national-day-of-saint-lucia/"}, inherits: "National Day", first: {era: 1, y: 1979}},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+    ]
+}

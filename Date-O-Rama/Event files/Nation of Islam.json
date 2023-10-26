@@ -1,0 +1,9 @@
+{
+    titles: {"en": "Nation of Islam", "he": "אומת האסלאם", "ar": "حركة أمة الإسلام"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.4, "green": 0.6, "blue": 0.4},
+    eventSpecifications: [
+        {titles: {"en": "Saviours’ Day", "ar": "يوم المنقذ"}, type: "1D", start: {mon: 2, d: 28}, urls: {"en": "https://en.wikipedia.org/wiki/Saviours%27_Day", "ar": "https://ar.wikipedia.org/wiki%2F%D9%8A%D9%88%D9%85_%D8%A7%D9%84%D9%85%D9%86%D9%82%D8%B0"}},
+    ]
+}

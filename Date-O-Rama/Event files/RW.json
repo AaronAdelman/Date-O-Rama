@@ -1,0 +1,13 @@
+{
+    titles: {"*": "RW"},
+    "//": "Rwanda",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.47, "blue": 0.78},
+    eventSpecifications: [
+        {inherits: "Liberation Day", type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/rwanda-liberation-day/"}, first: {era: 1, y: 1994}},
+        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 2, d: 1}, urls: {"en": "https://nationaltoday.com/heroes-day-rwanda/"}},
+        {inherits: "Independence Day", type: "1D", start: {d: 1, mon: 7}, first: {era: 1, y: 1962}},
+        {type: "1D", start: {mon: 8, wkd: [6], wkdRecurrence: 1}, titles: {"en": "Umuganura Day"}, urls: {"en": "https://nationaltoday.com/umuganura-day/"}, first: {era: 1, y: 2011}}
+    ]
+}

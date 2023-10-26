@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>every n years</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@every_n_years@</string>
+		<key>every_n_years</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>כל שנה</string>
+			<key>two</key>
+			<string>כל שנתיים</string>
+			<key>other</key>
+			<string>כל %d שנה</string>
+		</dict>
+	</dict>
+	<key>every n months</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@every_n_months@</string>
+		<key>every_n_months</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>כל חודש</string>
+			<key>two</key>
+			<string>כל חודשיים</string>
+			<key>other</key>
+			<string>כל %d חודש</string>
+		</dict>
+	</dict>
+	<key>every n weeks</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@every_n_weeks@</string>
+		<key>every_n_weeks</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>כל שבוע</string>
+			<key>two</key>
+			<string>כל שבועיים</string>
+			<key>other</key>
+			<string>כל %d שבוע</string>
+		</dict>
+	</dict>
+	<key>every n days</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@every_n_days@</string>
+		<key>every_n_days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>כל יום</string>
+			<key>two</key>
+			<string>כל יומיים</string>
+			<key>other</key>
+			<string>כל %d יום</string>
+		</dict>
+	</dict>
+	<key>n events</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@n_events@</string>
+		<key>n_events</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>(אירוע 1)</string>
+			<key>other</key>
+			<string>(%d אירועים)</string>
+		</dict>
+	</dict>
+	<key>n events today</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@n_events_today@</string>
+		<key>n_events_today</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>one</key>
+			<string>אירוע 1 היום</string>
+			<key>other</key>
+			<string>%d אירועים היום</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

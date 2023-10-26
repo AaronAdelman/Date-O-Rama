@@ -1,0 +1,23 @@
+{
+    titles: {"*": "SK"},
+    "//": "Slovakia",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.24, "blue": 0.65},
+    eventSpecifications: [
+        {inherits: "Constitution Day", type: "1D", start: {mon: 9, d: 1}, emoji: "🇸🇰", urls: {"en": "https://nationaltoday.com/slovakia-constitution-day/"}, first: {era: 1, y: 1992}},
+        {titles: {"en": "Day of the Establishment of the Slovak Republic"}, type: "1D", start: {mon: 1, d: 1}},
+        {titles: {"en": "Anniversary of the Memorandum of the Slovak Nation"}, type: "1D", start: {mon: 6, d: 7}, first: {era: 1, y: 1861}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-memorandum-of-the-slovak-nation/"}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
+        {inherits: "Kupala Night", type: "1D", start: {mon: 6, d: 23}},
+        {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
+        {inherits: "Independence Day", type: "1D", start: {d: 17, mon: 7}, first: {era: 1, y: 1992}},
+        {titles: {"en": "Matica Slovenská Day"}, type: "1D", start: {mon: 8, d: 4}, urls: {"en": "https://nationaltoday.com/matice-slovenska-day/"}},
+        {titles: {"en": "National Uprising Day"}, type: "1D", start: {mon: 8, d: 29}, urls: {"en": "https://nationaltoday.com/national-uprising-day/"}, first: {era: 1, y: 2003}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/struggle-for-human-rights-day/"}, titles: {"en": "Struggle For Human Rights Day"}, first: {era: 1, y: 1988}},
+        {type: "1D", start: {mon: 4, d: 13}, urls: {"en": "https://nationaltoday.com/unfairly-prosecuted-persons-day/"}, titles: {"en": "Unfairly Prosecuted Persons Day"}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "1D", start: {mon: 7, d: 5}, urls: {"en": "https://nationaltoday.com/foreign-slovaks-day/"}, titles: {"en": "Foreign Slovaks Day"}, first: {era: 1, y: 2000}},
+    ]
+}

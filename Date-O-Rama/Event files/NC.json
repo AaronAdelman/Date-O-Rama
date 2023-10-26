@@ -1,0 +1,10 @@
+{
+    titles: {"*": "NC"},
+    "//": "New Caledonia",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.98, "green": 0.98, "blue": 0.00},
+    eventSpecifications: [
+        {type: "1D", titles: {"en": "Citizenship Day", "fr": "Fête de la citoyenneté"}, start: {mon: 9, d: 24}},
+    ]
+}

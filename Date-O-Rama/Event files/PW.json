@@ -1,0 +1,11 @@
+{
+    titles: {"*": "PW"},
+    "//": "Palau",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.60, "blue": 1.00},
+    eventSpecifications: [
+        {inherits: "Constitution Day", type: "1D", start: {mon: 7, d: 9}, urls: {"en": "https://nationaltoday.com/palau-constitution-day/"}, first: {era: 1, y: 1981}},
+
+    ]
+}

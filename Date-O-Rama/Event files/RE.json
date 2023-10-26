@@ -1,0 +1,11 @@
+{
+    titles: {"*": "RE"},
+    "//": "Réunion",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.98, "green": 0.83, "blue": 0.31},
+    eventSpecifications: [
+        {titles: {"en": "Réunion Freedom Day", "fr": "Fête réunionnaise de la liberté"}, type: "1D", start: {mon: 12, d: 20}},
+
+    ]
+}

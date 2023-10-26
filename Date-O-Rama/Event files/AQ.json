@@ -1,0 +1,10 @@
+{
+    titles: {"*": "AQ"},
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.23, "green": 0.49, "blue": 0.81},
+    eventSpecifications: [
+        {inherits: "Antarctica Day", type: "1D", start: {mon: 12, d: 1}, first: {era: 1, y: 2010}},
+        {inherits: "Winter Solstice", titles: {"en": "Midwinter Day"}, notes: {"en": "Midwinter\nMidwinter Festival\nWinter Solstice"},type: "1D", start: {"equinoxOrSolstice": "Jun"}, urls: {"en": "https://en.wikipedia.org/wiki/Midwinter_Day"}, first: {era: 1, y: 1902}}, 
+    ]
+}

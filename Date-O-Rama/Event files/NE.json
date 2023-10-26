@@ -1,0 +1,15 @@
+{
+    titles: {"*": "NE"},
+    "//": "Niger",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 1.00, "green": 0.70, "blue": 0.36},
+    eventSpecifications: [
+        {inherits: "Independence Day", type: "1D", start: {d: 3, mon: 8}, first: {era: 1, y: 1960}, urls: {"en": "https://en.wikipedia.org/wiki/Independence_Day_(Niger)"}},
+        {inherits: "International Francophonie Day", type: "1D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: -1}},
+        {type: "1D", start: {mon: 12, d: 18}, urls: {"en": "https://nationaltoday.com/republic-day-of-niger/"}, inherits: "Republic Day", first: {era: 1, y: 2005}},
+    ]
+}
+
+

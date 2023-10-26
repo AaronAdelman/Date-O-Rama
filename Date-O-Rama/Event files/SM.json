@@ -1,0 +1,16 @@
+{
+    titles: {"*": "SM"},
+    "//": "San Marino",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.61, "green": 0.80, "blue": 0.92},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 7, d: 28}, titles: {"en": "Anniversary of the Fall of Fascism and Freedom Day"}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-fall-of-fascism-and-freedom-day/"}, first: {era: 1, y: 1943}},
+        {type: "1D", start: {mon: 9, d: 3}, titles: {"en": "Foundation Day"}, urls: {"en": "https://nationaltoday.com/foundation-day-in-san-marino/"}, first: {era: 1, y: 301}},
+        {type: "1D", start: {mon: 4, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "Investiture of the New Captains Regent", first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 2, d: 5}, urls: {"en": "https://nationaltoday.com/liberation-day-san-marino/"}, inherits: "Liberation Day", first: {era: 1, y: 1740}},
+        {type: "1D", start: {mon: 3, d: 25}, urls: {"en": "https://nationaltoday.com/anniversary-of-the-arengo/"}, titles: {"en": "Anniversary of the Arengo"}, first: {era: 1, y: 1906}},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+    ]
+}

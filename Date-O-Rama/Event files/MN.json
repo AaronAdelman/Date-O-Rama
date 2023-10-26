@@ -1,0 +1,18 @@
+{
+    titles: {"*": "MN"},
+    "//": "Mongolia",
+    "TODO": "Buddha Purnima",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 1.00, "green": 0.85, "blue": 0.00},
+    eventSpecifications: [
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 6, d: 1}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
+        {inherits: "Flag Day", type: "1D", start: {mon: 7, d: 10}, titles: {"en": "Political Flag Day"}, urls: {"en": "https://nationaltoday.com/political-flag-day/"}, first: {era: 1, y: 2009}},
+        {titles: {"en": "Naadam Holiday", "he": "פסטיבל נאדאם"}, type: "nD", start: {mon: 7, d: 11}, "end": {mon: 7, d: 15}, urls: {"en": "https://nationaltoday.com/naadam-holiday/", "he": "https://www.daysoftheyear.co.il/2019/07/nadaam-festival-mongolia.html"}, first: {era: 1, y: 1921}},
+        {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
+        {inherits: "Independence Day", type: "1D", start: {d: 29, mon: 12}, first: {era: 1, y: 1911}, urls: {"en": "https://nationaltoday.com/mongolia-independence-day/"}},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+    ]
+}

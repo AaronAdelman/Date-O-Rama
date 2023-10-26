@@ -1,0 +1,32 @@
+{
+    titles: {"*": "TL"},
+    "//": "Timor-Leste, AKA East Timor",
+    "TODO": "Muslim holidays",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.85, "green": 0.16, "blue": 0.11},
+    eventSpecifications: [
+        {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
+        {inherits: "Ash Wednesday", type: "1D", start: {"Easter": "Easter", "offsetD": -46}},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/east-timor-veterans-day"}, inherits: "Veterans Day"},
+        {type: "1D", start: {"Easter": "Easter", "offsetD": -45}, inherits: "Maundy Thursday"},
+        {inherits: "Good Friday", type: "1D", start: {"Easter": "Easter", "offsetD": -2}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Labour Day", type: "1D", start: {mon: 5, d: 1}},
+        {type: "1D", start: {mon: 5, d: 20}, first: {era: 1, y: 1991}, urls: {"en": "https://nationaltoday.com/east-timor-independence-day/"}, inherits: "Independence Restoration Day"},
+        {inherits: "Corpus Christi", type: "1D", start: {"Easter": "Easter", "offsetD": 60}},
+        {titles: {"en": "Popular Consultation Day", "he": "יום הייעוץ הפופולרי"}, type: "1D", start: {mon: 8, d: 30}, urls: {"en": "https://nationaltoday.com/popular-consultation-day/"}, first: {era: 1, y: 1999}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
+        {inherits: "All Souls’ Day", type: "1D", start: {mon: 11, d: 2}},
+        {inherits: "National Youth Day", type: "1D", start: {mon: 11, d: 12}, first: {era: 1, y: 1991}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/youth-national-day"}, notes: {"en": "Youth National Day"}},
+        {inherits: "Proclamation of Independence Day", type: "1D", start: {mon: 11, d: 28}, first: {era: 1, y: 1975}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/proclamation-of-independence-day"}},
+        {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/east-timor/east-timor-memorial-day"}, inherits: "Memorial Day"},
+        {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+        {inherits: "National Heroes’ Day", type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/national-heroes-day-timor-leste/"}},
+
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 11, d: 3}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
+        {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/memorial-day-in-east-timor/"}, inherits: "Memorial Day", first: {era: 1, y: 1975}},
+    ]
+}

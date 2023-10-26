@@ -1,0 +1,30 @@
+{
+    titles: {"*": "BA"},
+    "//": "Bosnia and Herzegovina",
+    "TODO": "Muslim holidays?",
+    defaultLocale: "en",
+    calendarCode: "gre",
+    calendarColor: {"red": 0.00, "green": 0.18, "blue": 0.42},
+    eventSpecifications: [
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {mon: 1, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/bosnia-and-herzegovina/day-after-new-years-day"}, inherits: "New Year’s Holiday"},
+        {type: "1D", start: {mon: 1, d: 3, wkd: [3]}, urls: {"en": "https://www.officeholidays.com/holidays/bosnia-and-herzegovina/day-after-new-years-day"}, inherits: "New Year’s Holiday"},
+        {inherits: "Independence Day", type: "1D", start: {mon: 3, d: 1}, first: {era: 1, y: 1992}, urls: {"en": "https://www.officeholidays.com/holidays/bosnia-and-herzegovina/federation-of-bosnia-and-herzegovina/bosnia-and-herzegovina-independence-day"}},
+        {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
+        {inherits: "Easter Monday", type: "1D", start: {"Easter": "Easter", "offsetD": 1}},
+        {inherits: "Labour Day", type: "nD", start: {mon: 5, d: 1}, end: {mon: 5, d: 2}},
+        {inherits: "Victory Day (May 9)", type: "1D", start: {mon: 5, d: 9}},
+        {inherits: "St. Vitus Day", type: "1D", start: {mon: 6, d: 28}},
+        {inherits: "All Saints’ Day", type: "1D", start: {mon: 11, d: 1}},
+        {type: "1D", start: {mon: 11, d: 21}, titles: {"en": "General Framework Agreement Day", "bs": "Dan uspostave Opšteg okvirnog sporazuma za mir u Bosni i Hercegovini"}, notes: {"en": "Dayton Agreement Day"}, urls: {"en": "https://www.officeholidays.com/holidays/bosnia-and-herzegovina/srpska/general-framework-agreement-day"}},
+        {type: "1D", start: {mon: 11, d: 25}, urls: {"en": "https://nationaltoday.com/national-day-of-bosnia-herzigovina/"}, inherits: "Statehood Day", notes: {"en": "National Day"}},
+        {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
+        {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
+
+        {inherits: "Republic Day", type: "1D", start: {mon: 1, d: 9}},
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Mother’s Day", type: "1D", start: {mon: 3, d: 8}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}, first: {era: 1, y: 1993}},
+        {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
+   ]
+}
