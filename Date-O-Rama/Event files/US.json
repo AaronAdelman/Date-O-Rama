@@ -26,9 +26,9 @@
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}},
         
         {type: "1D", start: {d: 2, mon: 1}, titles: {"en": "National Motivation and Inspiration Day"}, notes: {"en": "Motivation and Inspiration Day"}, urls: {"en": "https://www.daysoftheyear.com/days/motivation-and-inspiration-day/"}, first: {era: 1, y: 2002}},
-        {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "Korean American Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaldaycalendar.com/korean-american-day-january-13/"}},
-        {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "Stephen Foster Memorial Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaldaycalendar.com/stephen-foster-memorial-day-january-13/"}},
-        {type: "1D", start: {d: 14, mon: 1}, titles: {"en": "Ratification Day"}, urls: {"en": "https://nationaldaycalendar.com/ratification-day-january-14/"}, first: {era: 1, y: 1784}},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Korean American Day"}, first: {era: 1, y: 2003}, urls: {"en": "https://nationaldaycalendar.com/korean-american-day-january-13/"}},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Stephen Foster Memorial Day"}, first: {era: 1, y: 1952}, urls: {"en": "https://nationaldaycalendar.com/stephen-foster-memorial-day-january-13/"}},
+        {type: "1D", start: {mon: 1, d: 14}, titles: {"en": "Ratification Day"}, urls: {"en": "https://nationaldaycalendar.com/ratification-day-january-14/"}, first: {era: 1, y: 1784}},
         {type: "1D", start: {d: 16, mon: 1}, titles: {"en": "National Religious Freedom Day", "es": "Día Nacional de la Libertad Religiosa", "he": "יום חופש הדת"}, urls: {"en": "https://www.daysoftheyear.com/days/religious-freedom-day/", "he": "https://www.daysoftheyear.co.il/2018/11/16.html"}, first: {era: 1, y: 1786}},
         {inherits: "National Sanctity of Human Life Day", type: "1D", start: {d: 22, mon: 1}, first: {era: 1, y: 1984}},
         {inherits: "Data Protection Day", type: "1D", start: {mon: 1, d: 28}, first: {era: 1, y: 2009}},
@@ -487,6 +487,8 @@
         {type: "1D", start: {mon: 10, d: 26}, urls: {"en": "https://nationaltoday.com/national-day-of-the-deployed/"}, titles: {"en": "National Day of the Deployed"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-first-responders-day/"}, titles: {"en": "​National First Responders Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-immigrants-day/"}, titles: {"en": "​National Immigrants Day"}, first: {era: 1, y: 1987}, emoji: "🗽"},
+        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/extra-mile-day/"}, titles: {"en": "Extra Mile Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://www.daysoftheyear.com/days/mine-rescue-day/"}, titles: {"en": "Mine Rescue Day"}, first: {era: 1, y: 2013}},
 
 
 

@@ -368,6 +368,8 @@
         {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/national-william-day/"}, titles: {"en": "National William Day"}},
         {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/national-martina-day/"}, titles: {"en": "National Martina Day"}},
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-prince-day/"}, titles: {"en": "National Prince Day"}},
+        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-jayden-day/"}, titles: {"en": "National Jayden Day"}},
+        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-mia-day/"}, titles: {"en": "National Mia Day"}},
 
     ]
 }

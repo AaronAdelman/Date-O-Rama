@@ -25,9 +25,9 @@
         {type: "1D", start: {d: 11, mon: 1}, titles: {"en": "Learn Your Name In Morse Code Day"}, urls: {"en": "https://www.daysoftheyear.com/days/learn-your-name-in-morse-code-day/"}, emoji: "·-"},
         {type: "1D", start: {mon: 1, wkd: [3], wkdRecurrence: 2}, titles: {"en": "Poetry At Work Day"}, urls: {"en": "https://www.daysoftheyear.com/days/poetry-at-work-day/"}, emoji: "📖"},
         {type: "1D", start: {mon: 1, d: 12}, urls: {"en": "https://nationaltoday.com/kiss-a-ginger-day/", "he": "https://www.daysoftheyear.co.il/2019/01/kiss-a-ginger-day.html"}, titles: {"en": "Kiss a Ginger Day", "he": "יום נשק ג׳ינג׳י"}, emoji: "👨‍🦰👩‍🦰"},
-        {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "Public Radio Broadcasting Day"}, urls: {"en": "https://www.daysoftheyear.com/days/public-radio-broadcasting-day/"}, emoji: "🎙"},
-        {type: "1D", start: {d: 13, mon: 1}, titles: {"en": "Make Your Dreams Come True Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-your-dream-come-true-day/"}, emoji: "💤"},
-        {type: "1D", start: {d: 14, mon: 1}, titles: {"en": "International Kite Day", "he": "יום העפיפון הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-kite-day/", "he": "https://www.daysoftheyear.co.il/2017/01/14.html"}, emoji: "🪁"},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Public Radio Broadcasting Day"}, urls: {"en": "https://www.daysoftheyear.com/days/public-radio-broadcasting-day/"}, emoji: "🎙"},
+        {type: "1D", start: {mon: 1, d: 13}, titles: {"en": "Make Your Dreams Come True Day"}, urls: {"en": "https://www.daysoftheyear.com/days/make-your-dream-come-true-day/"}, emoji: "💤"},
+        {type: "1D", start: {mon: 1, d: 14}, titles: {"en": "International Kite Day", "he": "יום העפיפון הבינלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/international-kite-day/", "he": "https://www.daysoftheyear.co.il/2017/01/14.html"}, emoji: "🪁"},
         {type: "1D", start: {mon: 1, d: 14}, urls: {"en": "https://nationaltoday.com/organize-your-home-day/", "he": "https://www.daysoftheyear.co.il/2019/01/organize-your-home-day.html"}, titles: {"en": "Organize Your Home Day", "he": "יום סידור הבית"}, emoji: "🧹"},
         {inherits: "National Hat Day", type: "1D", start: {d: 15, mon: 1}},
         {type: "1D", start: {mon: 1, d: 16}, urls: {"en": "https://nationaltoday.com/appreciate-a-dragon-day/", "he": "https://www.daysoftheyear.co.il/2019/01/appreciate-a-dragon-day.html"}, titles: {"en": "Appreciate a Dragon Day", "he": "יום הערך את הדרקון"}, emoji: "🐉"},
@@ -1859,5 +1859,13 @@
          {type: "1D", start: {mon: 10, d: 28}, urls: {"en": "https://nationaltoday.com/wild-foods-day/"}, titles: {"en": "Wild Foods Day"}, first: {era: 1, y: 1974}, emoji: "🫐"},
          {type: "1D", start: {mon: 10, d: 29}, urls: {"en": "https://nationaltoday.com/world-psoriasis-day/"}, titles: {"en": "World Psoriasis Day"}, inherits: "*MedicalAwareness*"},
          {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/girl-scout-founders-day/"}, titles: {"en": "Girl Scout Founder’s Day"}},
+         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/international-pet-groomer-appreciation-day/"}, titles: {"en": "International Pet Groomer Appreciation Day"}, first: {era: 1, y: 2019}},
+         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/pate-day/"}, titles: {"en": "Pâté Day"}},
+         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/prime-meridian-day/"}, titles: {"en": "Prime Meridian Day"}, first: {era: 1, y: 1884}},
+         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/scented-candle-day/"}, titles: {"en": "Scented Candle Day"}},
+         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-fig-week/"}, titles: {"en": "National Fig Week"}},
+         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/wobbly-wednesday/"}, titles: {"en": "Wobbly Wednesday"}, inherits: "*MedicalAwareness*", emoji: "👁️"},
+         {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "Marzipan Week", "he": "שבוע המרציפן"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-week/"}},
+
     ]
 }

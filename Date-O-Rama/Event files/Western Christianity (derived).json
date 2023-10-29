@@ -109,8 +109,9 @@
         {type: "1D", start: {mon: 4, d: 23}, urls: {"en": "https://nationaltoday.com/slay-a-dragon-day/"}, titles: {"en": "Slay a Dragon Day"}},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/apple-gifting-day/"}, titles: {"en": "Apple Gifting Day"}, emoji: "🍎"},
         {type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://nationaltoday.com/new-years-dishonor-list-day/"}, titles: {"en": "New Year’s Dishonor List Day"}, first: {era: 1, y: 1976}},
-
+        {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-caramel-apple-day/"}, titles: {"en": "​National Caramel Apple Day"}},
+        {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-doorbell-day/"}, titles: {"en": "National Doorbell Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-knock-knock-joke-day/"}, titles: {"en": "National Knock Knock Joke Day"}},
 
     ]
 }
-
