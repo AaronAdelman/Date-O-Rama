@@ -1027,6 +1027,8 @@
 		A5FA44C82A1958A000B7FBB4 /* Hinduism (supplemental).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */; };
 		A5FA5A6A270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */; };
 		A5FA5A6B270C495C006147D0 /* ASAClockCellDateEventVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */; };
+		A5FAAFCE2AEEB87100097724 /* Western Christianity (derived).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FAAFCD2AEEB87100097724 /* Western Christianity (derived).json */; };
+		A5FAAFCF2AEEB87100097724 /* Western Christianity (derived).json in Resources */ = {isa = PBXBuildFile; fileRef = A5FAAFCD2AEEB87100097724 /* Western Christianity (derived).json */; };
 		A5FB22A528638D2B00B5042B /* SI.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22A228638D2B00B5042B /* SI.json */; };
 		A5FB22A628638D2B00B5042B /* SI.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22A228638D2B00B5042B /* SI.json */; };
 		A5FB22A728638D2B00B5042B /* SJ.json in Resources */ = {isa = PBXBuildFile; fileRef = A5FB22A328638D2B00B5042B /* SJ.json */; };
@@ -1669,6 +1671,7 @@
 		A5F5B08C2858D8BA003E313D /* Eastern Christianity (general).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Eastern Christianity (general).json"; sourceTree = "<group>"; };
 		A5FA44C62A1958A000B7FBB4 /* Hinduism (supplemental).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Hinduism (supplemental).json"; sourceTree = "<group>"; };
 		A5FA5A69270C495C006147D0 /* ASAClockCellDateEventVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAClockCellDateEventVisibility.swift; sourceTree = "<group>"; };
+		A5FAAFCD2AEEB87100097724 /* Western Christianity (derived).json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Western Christianity (derived).json"; sourceTree = "<group>"; };
 		A5FB22A228638D2B00B5042B /* SI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SI.json; sourceTree = "<group>"; };
 		A5FB22A328638D2B00B5042B /* SJ.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SJ.json; sourceTree = "<group>"; };
 		A5FB22A428638D2B00B5042B /* SH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SH.json; sourceTree = "<group>"; };
@@ -2127,6 +2130,7 @@
 				A5EFFFC5285B81BD00F2205F /* VN.json */,
 				A5CF46542810C4EB0088738D /* VU.json */,
 				A529D3512A151404004D8799 /* Wellcat.json */,
+				A5FAAFCD2AEEB87100097724 /* Western Christianity (derived).json */,
 				A536399F26EF7A000083C571 /* Western Christianity (general).json */,
 				A5BC61452709B11800888611 /* Western Christianity (supplemental).json */,
 				A58BA9C625EFCD9D0082DA64 /* Western zodiac.json */,
@@ -2857,6 +2861,7 @@
 				A5EFFFF7285B89B300F2205F /* PG.json in Resources */,
 				A581B88F284E5CB800407D68 /* AD.json in Resources */,
 				A5EFFFD0285B845700F2205F /* SV.json in Resources */,
+				A5FAAFCF2AEEB87100097724 /* Western Christianity (derived).json in Resources */,
 				A508C7F6283E244E00D96947 /* *Templates.json in Resources */,
 				A54B61B52A9267FA005CC33D /* XK (Julian).json in Resources */,
 				A5E496152862505C001BF40C /* IR.json in Resources */,
@@ -3166,6 +3171,7 @@
 				A50DA51428686272008D54AE /* HK (Chinese).json in Resources */,
 				A54B61B72A93F25E005CC33D /* KG (Julian).json in Resources */,
 				A5E49653286254AC001BF40C /* NF.json in Resources */,
+				A5FAAFCE2AEEB87100097724 /* Western Christianity (derived).json in Resources */,
 				A5EFFFB3285B808E00F2205F /* TZ.json in Resources */,
 				A5EFFF31285B5B9E00F2205F /* BN.json in Resources */,
 				A5BDE78B26679DAA00F47416 /* Sunni Islam.json in Resources */,
