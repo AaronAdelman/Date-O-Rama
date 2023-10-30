@@ -1993,5 +1993,9 @@
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/pta-healthy-lifestyles-month/"}, titles: {"en": "PTA Healthy Lifestyles Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/stomach-cancer-awareness-month/"}, titles: {"en": "Stomach Cancer Awareness Month"}, first: {era: 1, y: 2010}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/worldwide-bereaved-siblings-month/"}, titles: {"en": "Worldwide Bereaved Siblings Month"}},
+        {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/give-someone-a-dollar-day/"}, titles: {"en": "Give Someone a Dollar Day"}, emoji: "💵"},
+        {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-cash-back-day/"}, titles: {"en": "National Cash Back Day"}, first: {era: 1, y: 2019}, emoji: "💰"},
+        {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/national-homemaker-day/"}, titles: {"en": "National Homemaker Day"}, notes: {"en": "National Housewife Day"}},
+        {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/national-sandwich-day/"}, titles: {"en": "National Sandwich Day"}, emoji: "🥪"},
     ]
 }

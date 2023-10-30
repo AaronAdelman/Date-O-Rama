@@ -1878,12 +1878,16 @@
          {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/international-stout-day/"}, titles: {"en": "International Stout Day"}, emoji: "🍺", first: {era: 1, y: 2011}},
          {type: "1D", start: {mon: 11, d: 2, wkd: [2, 3, 4, 5, 6]}, inherits: "Traffic Directors Day"},
          {type: "1D", start: {mon: 11, d: 3, thruD: 4, wkd: [2]}, inherits: "Traffic Directors Day"},
-         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/project-management-day/"}, titles: {"en": "International Project Management Day"}, first: {era: 1, y: 2004}},
+         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/project-management-day/"}, titles: {"en": "International Project Management Day"}, first: {era: 1, y: 2004}, notes: {"en": "Project Management Day"}},
          {type: "1D", start: {mon: 4, d: 6}, inherits: "Plan Your Epitaph Day", first: {era: 1, y: 1995}},
          {type: "1D", start: {mon: 11, d: 2}, inherits: "Plan Your Epitaph Day", first: {era: 1, y: 1995}},
          {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "http://www.menmakedinnerday.com/home/index.php"}, titles: {"en": "National Men Make Dinner Day"}, emoji: "👨‍🍳"},
          {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/world-audio-drama-day-october-30"}, titles: {"en": "World Audio Drama Day"}, emoji: "🎙️"},
          {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-wicked-day-october-30-2023"}, titles: {"en": "National Wicked Day"}, emoji: "🧙‍♀️", first: {era: 1, y: 2023}, notes: {"en": "This observance is not approved of in the Land of Oz."}},
+         {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/fountain-pen-day/"}, titles: {"en": "Fountain Pen Day"}, first: {era: 1, y: 2012}, emoji: "✒️"},
+         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/jellyfish-day/"}, titles: {"en": "World Jellyfish Day"}, notes: {"en": "Jellyfish Day"}, emoji: "🪼"},
+         {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/love-your-lawyer-day/"}, titles: {"en": "Love Your Lawyer Day"}, emoji: "👨‍💼👩‍💼"},
+         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/smart-home-day/"}, titles: {"en": "Smart Home Day"}, first: {era: 1, y: 2018}},
 
     ]
 }
