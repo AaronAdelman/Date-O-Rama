@@ -701,7 +701,6 @@
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/celebrate-exchange-day/"}, titles: {"en": "Celebrate Exchange Day"}, first: {era: 1, y: 1911}},
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/international-scribble-day/"}, titles: {"en": "International Scribble Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 3, d: 27}, urls: {"en": "https://nationaltoday.com/international-whiskey-day/", "he": "https://www.daysoftheyear.co.il/2018/03/27.html"}, titles: {"en": "International Whiskey Day", "he": "יום הויסקי הבינלאומי"}, first: {era: 1, y: 2008}},
-        {type: "1D", start: {mon: 3, wkd: [3], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/american-diabetes-alert-day/"}, titles: {"en": "American Diabetes Alert Day"}, first: {era: 1, y: 1988}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/barnum-bailey-day/"}, titles: {"en": "Barnum & Bailey Day"}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/eat-an-eskimo-pie-day/"}, titles: {"en": "Eat an Eskimo Pie Day"}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/respect-your-cat-day/"}, titles: {"en": "Respect Your Cat Day"}, emoji: "🐈"},
@@ -1866,6 +1865,11 @@
          {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-fig-week/"}, titles: {"en": "National Fig Week"}},
          {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/wobbly-wednesday/"}, titles: {"en": "Wobbly Wednesday"}, inherits: "*MedicalAwareness*", emoji: "👁️"},
          {type: "nD", start: {mon: 11, d: 1}, end: {mon: 11, d: 7}, titles: {"en": "Marzipan Week", "he": "שבוע המרציפן"}, urls: {"en": "https://www.daysoftheyear.com/days/marzipan-week/"}},
-
+         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/banana-pudding-lovers-month/"}, titles: {"en": "Banana Pudding Lovers Month"}},
+         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/bladder-health-month/"}, titles: {"en": "Bladder Health Month"}, first: {era: 1, y: 2022}},
+         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/chronic-obstructive-pulmonary-disease-awareness-month/"}, titles: {"en": "Chronic Obstructive Pulmonary Disease Awareness Month"}, emoji: "🫁", inherits: "*MedicalAwareness*"},
+         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/diabetic-eye-disease-month/"}, titles: {"en": "Diabetic Eye Disease Month"}, emoji: "👁️", inherits: "*MedicalAwareness*"},
+         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/family-stories-month/"}, titles: {"en": "Family Stories Month"}},
+         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/gluten-free-diet-awareness-month/"}, titles: {"en": "Gluten-Free Diet Awareness Month"}, inherits: "*MedicalAwareness*"},
     ]
 }

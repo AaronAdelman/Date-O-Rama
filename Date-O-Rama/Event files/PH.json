@@ -17,7 +17,7 @@
         {inherits: "Republic Day", type: "1D", start: {mon: 7, d: 4}, urls: {"en": "https://nationaltoday.com/philippines-republic-day/"}, first: {era: 1, y: 1946}},
         {type: "1D", start: {mon: 7, d: 27}, titles: {"en": "Iglesia ni Cristo Day"}, urls: {"en": "https://nationaltoday.com/iglesia-ni-cristo-day/"}, first: {era: 1, y: 1914}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}},
-        {type: "1M", start: {mon: 11}, titles: {"en": "Children’s Month"}, inherits: "Children’s Day", urls: {"en": "https://nationaltoday.com/national-childrens-month/"}, first: {era: 1, y: 2015}},
+        {type: "1M", start: {mon: 11}, titles: {"en": "National Children’s Month"}, inherits: "Children’s Day", urls: {"en": "https://www.daysoftheyear.com/days/national-childrens-month/"}, first: {era: 1, y: 2015}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/national-heroes-day-philippines/"}},
         {type: "1D", start: {mon: 7, d: 1}, inherits: "Air Force Day"},
         {type: "1M", start: {mon: 8}, titles: {"en": "National Language Month", "fil": "Buwan ng Wikang Pambansa"}, urls: {"en": "https://nationaltoday.com/national-language-month/"}, emoji: "🗣", first: {era: 1, y: 1997}},
