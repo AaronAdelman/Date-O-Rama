@@ -607,7 +607,7 @@
         {template: "תענית אסתר", titles: {"he": "תענית אסתר", "en": "Fast of ’Ester"}, type: "1D", start: {mon: 7, d: 13, wkd: [1, 2, 3, 4, 5, 6]}, urls: {"en": "https://www.ou.org/holidays/category/fast-of-esther/"}},
         {template: "תענית בכורות", titles: {"he": "תענית בכורות", "en": "Fast of the Firstborn"}, type: "1D", start: {mon: 8, d: 14, wkd: [1, 2, 3, 4, 5, 6]}},
         {template: "יום־שנה של רחל אימנו", titles: {"he": "יום־שנה של רחל אימנו", "en": "Raḥel Our Mother Memorial Day"}, type: "1D", start: {mon: 2, d: 11}, inherits: "*DeathAnniv*"},
-        {template: "Traffic Directors Day", type: "1D", start: {mon: 11, d: 2, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/traffic-directors-day/"}, titles: {"en": "Traffic Directors Day"}},
+        {template: "Traffic Directors Day", type: "1D", start: {mon: 11, d: 2, wkd: [2, 3, 4, 5, 6]}, urls: {"en": "https://nationaltoday.com/traffic-directors-day/"}, titles: {"en": "Traffic Directors Day"}, emoji: "🚥"},
         {template: "Plan Your Epitaph Day", type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/plan-your-epitaph-day/"}, titles: {"en": "Plan Your Epitaph Day"}, emoji: "🪦"},
     ]
 }

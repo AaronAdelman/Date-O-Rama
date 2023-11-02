@@ -1961,7 +1961,7 @@
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/go-cook-for-your-pets-day/"}, titles: {"en": "National Cook For Your Pets Day"}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/french-fried-clam-day/"}, titles: {"en": "National Deep Fried Clams Day"}, first: {era: 1, y: 2015}, notes: {"en": "National French Fried Clam Day"}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-family-literacy-day/"}, titles: {"en": "National Family Literacy Day"}, first: {era: 1, y: 1994}},
-        {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-men-make-dinner-day/"}, titles: {"en": "National Men Make Dinner Day"}},
+        {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "http://www.menmakedinnerday.com/home/index.php"}, titles: {"en": "National Men Make Dinner Day"}, emoji: "👨‍🍳"},
         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-stress-awareness-day/"}, titles: {"en": "National Stress Awareness Day"}, inherits: "*MedicalAwareness*", first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/vinegar-day/"}, titles: {"en": "National Vinegar Day"}},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/adopt-a-turkey-month/"}, titles: {"en": "Adopt a Turkey Month"}, emoji: "🦃"},
