@@ -371,6 +371,7 @@
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-jayden-day/"}, titles: {"en": "National Jayden Day"}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-mia-day/"}, titles: {"en": "National Mia Day"}},
         {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-melanie-day/"}, titles: {"en": "National Melanie Day"}},
-
+        {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/national-erik-day/"}, titles: {"en": "National Erik Day"}},
+        {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/national-luke-day/"}, titles: {"en": "National Luke Day"}},
     ]
 }

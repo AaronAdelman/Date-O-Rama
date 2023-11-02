@@ -60,7 +60,7 @@
         {type: "1D", titles: {"en": "World Stroke Day"}, start: {mon: 10, d: 29}},
         {inherits: "Halloween", type: "1D", start: {mon: 10, d: 31}},
         {type: "1D", titles: {"en": "NZDA National Oral Health"}, start: {mon: 11, wkd: [6], wkdRecurrence: 1}, emoji: "👄"},
-        {type: "1D", start: {mon: 11, d: 5}, inherits: "Guy Fawke’s Night", first: {era: 1, y: 1604}},
+        {type: "1D", start: {mon: 11, d: 5}, inherits: "Guy Fawkes Night", first: {era: 1, y: 1604}},
         {type: "1D", titles: {"en": "Premature Awareness Day"}, start: {d: 17, mon: 11}, inherits: "*MedicalAwareness*"},
         {type: "1D", titles: {"en": "World Day for the Prevention of Abuse and Violence Against Children"}, start: {d: 19, mon: 11}},
         {inherits: "International Day for the Elimination of Violence Against Women", type: "1D", start: {mon: 11, d: 25}, first: {era: 1, y: 2000}},

@@ -62,7 +62,7 @@
         {type: "1D", titles: {"en": "Emergency Services Day"}, start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/emergency-services-day/"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "Everyone Writes Day"}, urls: {"en": "https://nationaltoday.com/everyone-writes-day/"}, emoji: "✍️"},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/calan-gaeaf/"}, titles: {"en": "Calan Gaeaf"}},
-        {type: "1D", start: {mon: 11, d: 5}, inherits: "Guy Fawke’s Night", first: {era: 1, y: 1604}},
+        {type: "1D", start: {mon: 11, d: 5}, inherits: "Guy Fawkes Night", first: {era: 1, y: 1604}},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/remembrance-sunday/"}, titles: {"en": "Remembrance Sunday"}, first: {era: 1, y: 1946}},
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/lancashire-day/"}, titles: {"en": "Lancashire Day"}},
         {type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://nationaltoday.com/hogmanay/"}, titles: {"en": "Hogmanay"}},
