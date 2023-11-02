@@ -1997,5 +1997,7 @@
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-cash-back-day/"}, titles: {"en": "National Cash Back Day"}, first: {era: 1, y: 2019}, emoji: "💰"},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/national-homemaker-day/"}, titles: {"en": "National Homemaker Day"}, notes: {"en": "National Housewife Day"}},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/national-sandwich-day/"}, titles: {"en": "National Sandwich Day"}, emoji: "🥪"},
+        {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-easy-bake-oven-day/"}, titles: {"en": "National Easy-Bake Oven Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-waiting-for-the-barbarians-day/"}, titles: {"en": "National Waiting for the Barbarians Day"}},
     ]
 }

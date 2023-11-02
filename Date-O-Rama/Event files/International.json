@@ -1889,5 +1889,8 @@
          {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/smart-home-day/"}, titles: {"en": "Smart Home Day"}, first: {era: 1, y: 2018}},
          {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/autistics-speaking-day-november-1"}, titles: {"en": "Autistics Speaking Day"}, emoji: "📢", first: {era: 1, y: 2010}},
          {type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://www.nationaldaycalendar.com/international/international-doge-day"}, titles: {"en": "International Doge Day"}, emoji: "🦮", first: {era: 1, y: 2023}},
+         {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://www.daysoftheyear.com/days/use-your-common-sense-day/"}, titles: {"en": "Use Your Common Sense Day"}},
+         {type: "1D", start: {mon: 11, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/numbat-day/"}, titles: {"en": "World Numbat Day"}, notes: {"en": "National Numbat Day"}, first: {era: 1, y: 2015}},
+
     ]
 }

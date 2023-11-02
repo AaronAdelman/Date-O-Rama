@@ -492,6 +492,8 @@
         {type: "1M", start: {mon: 11}, urls: {"en": "https://www.daysoftheyear.com/days/manatee-awareness-month/"}, titles: {"en": "Manatee Awareness Month"}, first: {era: 1, y: 1979}, notes: {"en": "National Manatee Awareness Month"}},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://lcam.org/"}, titles: {"en": "Lung Cancer Awareness Month"}, first: {era: 1, y: 1995}, inherits: "*MedicalAwareness*", emoji: "🫁🫁"},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/national-diabetes-month/"}, titles: {"en": "National Diabetes Month"}, first: {era: 1, y: 1982}, notes: {"en": "Diabetes Awareness Month"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-chicken-lady-day/"}, titles: {"en": "National Chicken Lady Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 11, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-bison-day/"}, titles: {"en": "National Bison Day"}, first: {era: 1, y: 2013}},
 
 
 
