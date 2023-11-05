@@ -19,7 +19,7 @@
         {type: "1D", start: {mon: 2, d: 24}, urls: {"en": "https://nationaltoday.com/dragobete/"}, titles: {"en": "Dragobete"}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/martisor/"}, titles: {"en": "Mărțișor"}},
         {type: "1D", start: {mon: 6, d: 26}, urls: {"en": "https://nationaltoday.com/flag-day-of-romania/"}, inherits: "Flag Day", first: {era: 1, y: 1998}},
-        {type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/national-language-day"}, titles: {"en": "Romanian Language Day", "he": "יום הלשון הרומנית", "ro": "Ziua Limbii Române"}, first: {era: 1, y: 2013}},
+        {inherits: "Romanian Language Day", type: "1D", start: {mon: 8, d: 31}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 9, d: 29}, inherits: "National Coffee Day"},
         {inherits: "International Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {titles: {"en": "Public Sector Holiday"}, type: "1D", start: {mon: 6, d: 2, wkd: [6]}, urls: {"en": "https://www.officeholidays.com/holidays/romania/international-childrens-day"}, first: {era: 1, y: 2017}},

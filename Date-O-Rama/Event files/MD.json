@@ -11,5 +11,6 @@
         {inherits: "Liberation Day", type: "1D", start: {mon: 8, d: 24}, first: {era: 1, y: 1944}},
         {inherits: "International Women’s Day", type: "1D", start: {mon: 3, d: 8}},
         {type: "1D", start: {mon: 10, d: 14}, titles: {"en": "Chisinau City Day"}, urls: {"en": "https://nationaltoday.com/chisinau-city-day/"}},
+        {inherits: "Romanian Language Day", type: "1D", start: {mon: 8, d: 31}, first: {era: 1, y: 2013}},
     ]
 }

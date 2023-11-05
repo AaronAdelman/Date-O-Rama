@@ -2001,5 +2001,7 @@
         {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-waiting-for-the-barbarians-day/"}, titles: {"en": "National Waiting for the Barbarians Day"}},
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/american-football-day/"}, titles: {"en": "American Football Day"}, emoji: "🏈"},
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-chinese-takeout-day/"}, titles: {"en": "National Chinese Take Out Day"}, emoji: "🥡"},
+        {type: "1D", start: {wkd: [7], wkdRecurrence: 1}, urls: {"en": "http://playoutsideday.org/"}, titles: {"en": "National Play Outside Day"}, emoji: "🛝", first: {era: 1, y: 2011, mon: 4}},
+
     ]
 }
