@@ -376,6 +376,11 @@
         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-michele-day/"}, titles: {"en": "National Michele Day"}},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-keith-day/"}, titles: {"en": "National Keith Day"}},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-lori-day/"}, titles: {"en": "National Lori Day"}},
-        
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-adam-day/"}, titles: {"en": "National Adam Day"}},
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-ashley-day/"}, titles: {"en": "National Ashley Day"}},
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-christopher-day/"}, titles: {"en": "National Christopher Day"}},
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-irene-day/"}, titles: {"en": "National Irene Day"}},
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-kyle-day/"}, titles: {"en": "National Kyle Day"}},
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-leon-day-2/"}, titles: {"en": "National Leon Day"}},
     ]
 }
