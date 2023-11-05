@@ -1894,5 +1894,12 @@
          {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/zero-tasking-day/"}, titles: {"en": "Zero Tasking Day"}, emoji: "0️⃣"},
          {type: "1D", start: {mon: 11, wkd: [1], d: 5, thruD: 11}, urls: {"en": "https://www.daysoftheyear.com/days/world-run-day/"}, titles: {"en": "World Run Day"}, first: {era: 1, y: 1999}, emoji: "👟"},
          {type: "1D", start: {mon: 11, d: 3}, inherits: "One Health Day", first: {era: 1, y: 2016}},
+         {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/color-the-world-orange-day/"}, titles: {"en": "Color the World Orange Day"}, inherits: "*MedicalAwareness*"},
+         {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/job-action-day/"}, titles: {"en": "Job Action Day"}, first: {era: 1, y: 2008}},
+         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/marooned-without-a-compass-day/"}, titles: {"en": "Marooned Without a Compass Day"}, emoji: "🧭"},
+         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/play-basketball-day/"}, titles: {"en": "Play Basketball Day"}, first: {era: 1, y: 2016}, emoji: "🏀"},
+         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/notary-public-day/"}, titles: {"en": "Notary Public Day"}, first: {era: 1, y: 1975}},
+         {type: "nD", start: {mon: 11, d: 7}, end: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/national-book-award-week/"}, titles: {"en": "National Book Award Week"}},
+         
     ]
 }

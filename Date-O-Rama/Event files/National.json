@@ -2002,6 +2002,11 @@
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/american-football-day/"}, titles: {"en": "American Football Day"}, emoji: "🏈"},
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://www.daysoftheyear.com/days/national-chinese-takeout-day/"}, titles: {"en": "National Chinese Take Out Day"}, emoji: "🥡"},
         {type: "1D", start: {wkd: [7], wkdRecurrence: 1}, urls: {"en": "http://playoutsideday.org/"}, titles: {"en": "National Play Outside Day"}, emoji: "🛝", first: {era: 1, y: 2011, mon: 4}},
-
+        {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-report-home-health-care-fraud-day/"}, titles: {"en": "National Report Home Health Care Fraud Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-saxophone-day/"}, titles: {"en": "National Saxophone Day"}, emoji: "🎷"},
+        {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-team-manager-day/"}, titles: {"en": "National Team Manager Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-bittersweet-chocolate-with-almonds-day/"}, titles: {"en": "National Bittersweet Chocolate with Almonds Day"}, emoji: "🍫"},
+        {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-canine-lymphoma-awareness-day/"}, titles: {"en": "National Canine Lymphoma Awareness Day"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-programmatic-advertising-day/"}, titles: {"en": "National Programmatic Advertising Day"}, first: {era: 1, y: 2019}},
     ]
 }

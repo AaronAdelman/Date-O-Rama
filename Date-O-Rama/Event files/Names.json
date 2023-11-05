@@ -373,5 +373,9 @@
         {type: "1D", start: {mon: 11, d: 4}, urls: {"en": "https://nationaltoday.com/national-melanie-day/"}, titles: {"en": "National Melanie Day"}},
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/national-erik-day/"}, titles: {"en": "National Erik Day"}},
         {type: "1D", start: {mon: 11, d: 5}, urls: {"en": "https://nationaltoday.com/national-luke-day/"}, titles: {"en": "National Luke Day"}},
+        {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-michele-day/"}, titles: {"en": "National Michele Day"}},
+        {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-keith-day/"}, titles: {"en": "National Keith Day"}},
+        {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/national-lori-day/"}, titles: {"en": "National Lori Day"}},
+        
     ]
 }
