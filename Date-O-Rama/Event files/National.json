@@ -1955,7 +1955,7 @@
         {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-text-your-ex-day/"}, titles: {"en": "National Text Your Ex Day"}},
         {type: "1D", start: {mon: 10, d: 30}, urls: {"en": "https://nationaltoday.com/national-treat-your-pet-day/"}, titles: {"en": "National Treat Your Pet Day"}, first: {era: 1, y: 2021}, emoji: "😼"},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-biologic-coordinators-day/"}, titles: {"en": "National Biologic Coordinators Day"}},
-        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-brush-day/"}, titles: {"en": "National Brush Day"}},
+        {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/national-brush-day/"}, titles: {"en": "National Brush Day"}, emoji: "🪥"},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-calzone-day/"}, titles: {"en": "​National Calzone Day"}, first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-cinnamon-day/"}, titles: {"en": "National Cinnamon Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/go-cook-for-your-pets-day/"}, titles: {"en": "National Cook For Your Pets Day"}},
@@ -2017,6 +2017,8 @@
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/stem-steam-day/"}, titles: {"en": "National STEM/STEAM Day"}, notes: {"en": "STEM/STEAM Day"}, first: {era: 1, y: 2015}},
         {type: "nD", start: {mon: 11, d: 8}, end: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/nyc-kidney-walk/"}, titles: {"en": "NYC Kidney Walk"}},
         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/eating-healthy-day/"}, titles: {"en": "Eating Healthy Day"}, first: {era: 1, y: 2015}},
-
+        {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/eleven09-day/"}, titles: {"en": "Eleven09 Day"}},
+        {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-fried-chicken-sandwich-day/"}, titles: {"en": "National Fried Chicken Sandwich Day"}},
+        {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/scrapple-day/"}, titles: {"en": "National Scrapple Day"}},
     ]
 }
