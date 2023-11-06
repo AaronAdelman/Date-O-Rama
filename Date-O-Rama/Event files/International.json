@@ -1665,7 +1665,7 @@
         {type: "1D", start: {mon: 9, d: 9}, urls: {"en": "https://nationaltoday.com/teddy-bear-day/", "he": "https://www.daysoftheyear.co.il/2018/12/9.html"}, titles: {"en": "Teddy Bear Day", "he": "יום הדובון"}, emoji: "🧸"},
         {type: "1D", start: {mon: 9, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/hug-your-hound-day/"}, titles: {"en": "Hug Your Hound Day"}},
         {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/swap-ideas-day/"}, titles: {"en": "Swap Ideas Day"}},
-        {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://nationaltoday.com/top-up-day/"}, titles: {"en": "Top Up Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 9, d: 10}, urls: {"en": "https://blog.mobilerecharge.com/world-top-up-day/"}, titles: {"en": "World Top Up Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/international-chocolate-day/"}, titles: {"en": "International Chocolate Day", "he": "יום השוקולד הבינלאומי"}, emoji: "🍫"},
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/pet-birth-defect-awareness-day/"}, titles: {"en": "Pet Birth Defect Awareness Day", "he": "יום המודעות למומים מולדים של חיות מחמד"}, first: {era: 1, y: 2014}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 9, d: 13}, urls: {"en": "https://nationaltoday.com/positive-thinking-day/", "he": "https://www.daysoftheyear.co.il/2016/09/13.html"}, titles: {"en": "Positive Thinking Day", "he": "יום החשיבה החיובית"}, first: {era: 1, y: 2003}},
@@ -1910,5 +1910,8 @@
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/microtia-awareness-day/"}, titles: {"en": "Microtia Awareness Day"}, inherits: "*MedicalAwareness*", first: {era: 1, y: 2016}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/the-geriatric-toothfairy-day/"}, titles: {"en": "Geriatric Toothfairy Day"}, first: {era: 1, y: 2020}, emoji: "🦷"},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/world-usability-day/"}, titles: {"en": "World Usability Day"}, notes: {"en": "Make Things Easier Day"}, first: {era: 1, y: 2005}},
+        {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/accounting-day/"}, titles: {"en": "International Accounting Day"}, first: {era: 1, y: 1972}},
+        {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/sesame-street-day/"}, titles: {"en": "Sesame Street Day"}, first: {era: 1, y: 2009}},
+        {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://nationaltoday.com/world-keratoconus-day/"}, titles: {"en": "World Keratoconus Day"}, inherits: "*MedicalAwareness*"},
     ]
 }

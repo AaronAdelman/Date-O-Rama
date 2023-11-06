@@ -2020,5 +2020,8 @@
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/eleven09-day/"}, titles: {"en": "Eleven09 Day"}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-fried-chicken-sandwich-day/"}, titles: {"en": "National Fried Chicken Sandwich Day"}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/scrapple-day/"}, titles: {"en": "National Scrapple Day"}},
+        {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/area-code-day/"}, titles: {"en": "Area Code Day"}},
+        {type: "1D", start: {d: 9, "thruD": 15, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-dtc-direct-to-consumer-friday/"}, titles: {"en": "National DTC (Direct-To-Consumer) Friday"}},
+        {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/vanilla-cupcake-day/"}, titles: {"en": "National Vanilla Cupcake Day"}, emoji: "🧁"},
     ]
 }
