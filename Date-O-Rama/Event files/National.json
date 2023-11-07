@@ -175,7 +175,7 @@
         {type: "1D", start: {mon: 11, d: 6}, titles: {"en": "National Nachos Day"}, urls: {"en": "https://www.daysoftheyear.com/days/nachos-day/"}},
         {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "National Adoption Day"}, notes: {"en": "World Adoption Day"}, first: {era: 1, y: 2000}, emoji: "👨‍👩‍👧‍👦", urls: {"en": "https://www.daysoftheyear.com/days/adoption-day/"}},
         {type: "1D", start: {mon: 11, d: 10}, titles: {"en": "National Forget-Me-Not Day"}, first: {era: 1, y: 1921}, emoji: "⚘", urls: {"en": "https://www.daysoftheyear.com/days/forget-me-not-day/"}},
-        {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "National Happy Hour Day"}, emoji: "🍸", urls: {"en": "https://www.daysoftheyear.com/days/happy-hour-day/"}},
+        {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "National Happy Hour Day"}, emoji: "🍸🥃🍺", urls: {"en": "https://www.daysoftheyear.com/days/happy-hour-day/"}},
         {type: "1D", start: {mon: 11, wkd: [3], wkdRecurrence: 2}, titles: {"en": "National Young Readers Day"}, first: {era: 1, y: 1989}, emoji: "📖", urls: {"en": "https://holidayinsights.com/moreholidays/November/youngreadersday.htm"}},
         {type: "1D", start: {d: 14, mon: 11}, titles: {"en": "National Pickle Day"}, emoji: "🥒", urls: {"en": "https://www.daysoftheyear.com/days/pickle-day/"}},
         {type: "1D", start: {d: 15, mon: 11}, titles: {"en": "National Clean Out Your Fridge Day"}, emoji: "🧽", urls: {"en": "https://nationaltoday.com/national-clean-out-your-fridge-day/"}},
@@ -2027,7 +2027,6 @@
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/sundae-day/"}, titles: {"en": "National Sundae Day"}, emoji: "🍨"},
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/fancy-rat-mouse-day/"}, titles: {"en": "American Fancy Rat & Mouse Day"}, emoji: "🐀🐁", notes: {"en": "Fancy Rat and Mouse Day"}},
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-french-dip-day/"}, titles: {"en": "National French Dip Day"}, first: {era: 1, y: 2018}},
-        {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://nationaltoday.com/national-happy-hour-day/"}, titles: {"en": "National Happy Hour Day"}, emoji: "🥃🍺"},
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-with-the-works-except-anchovies-day/"}, titles: {"en": "National Pizza with the Works Except Anchovies Day"}, emoji: "🍕", notes: {"en": "National Pizza With Everything (Except Anchovies) Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-pupusa-day/"}, titles: {"en": "National Pupusa Day"}},
     ]
