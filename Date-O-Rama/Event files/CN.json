@@ -57,7 +57,7 @@
         {titles: {"en": "Xishuangbanna Prefecture Foundation Day"}, type: "1D", start: {mon: 1, d: 23}},
         {titles: {"en": "Yanbian Prefecture Foundation Day"}, type: "1D", start: {mon: 9, d: 3}},
         {type: "1D", start: {mon: 3, d: 28}, urls: {"en": "https://nationaltoday.com/serfs-emancipation-day/"}, titles: {"en": "Serfs’ Emancipation Day"}},
-        {type: "1D", start: {d: 11, mon: 11}, titles: {"en": "Singles Day", "he": "חג הרווקים", "zh": "光棍节"}, urls: {"en": "https://www.daysoftheyear.com/days/singles-day/"}},
+        {type: "1D", start: {mon: 11, d: 11}, titles: {"en": "Singles Day", "he": "חג הרווקים", "zh": "光棍节"}, urls: {"en": "https://www.daysoftheyear.com/days/singles-day/"}},
         
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},

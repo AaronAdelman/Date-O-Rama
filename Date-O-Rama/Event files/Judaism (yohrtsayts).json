@@ -175,7 +175,7 @@
         {titles: {"he": "יום־שנה של הרב יהושע ישעיה נויבירט"}, type: "1D", start: {d: 3, mon: 11}, first: {era: 0, y: 5753}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבנו תם"}, type: "1D", start: {d: 4, mon: 11}, first: {era: 0, y: 4931}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של השפע חיים מצאנז"}, type: "1D", start: {d: 9, mon: 11}, first: {era: 0, y: 5754}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של ר׳ אלחנן וסרמן"}, type: "1D", start: {d: 11, mon: 11}, first: {era: 0, y: 571}, inherits: "*DeathAnniv*"},
+        {titles: {"he": "יום־שנה של ר׳ אלחנן וסרמן"}, type: "1D", start: {mon: 11, d: 11}, first: {era: 0, y: 571}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של בעל הטורים"}, type: "1D", start: {mon: 11, d: 12}, first: {era: 0, y: 18}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של אור החיים הקדוש"}, type: "1D", start: {d: 15, mon: 11}, first: {era: 0, y: 5503}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב יוסף קפאח"}, type: "1D", start: {d: 18, mon: 11}, first: {era: 0, y: 5760}, inherits: "*DeathAnniv*"},

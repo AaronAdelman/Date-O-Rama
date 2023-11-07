@@ -1913,5 +1913,10 @@
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/accounting-day/"}, titles: {"en": "International Accounting Day"}, first: {era: 1, y: 1972}},
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/sesame-street-day/"}, titles: {"en": "Sesame Street Day"}, first: {era: 1, y: 2009}},
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://nationaltoday.com/world-keratoconus-day/"}, titles: {"en": "World Keratoconus Day"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/international-merlot-day-november-7"}, titles: {"en": "International Merlot Day"}, emoji: "🍷"},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/death-duty-day/"}, titles: {"en": "Death/Duty Day"}, first: {era: 1, y: 1918}, emoji: "🪦"},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/origami-day/"}, titles: {"en": "World Origami Day"}, notes: {"en": "National Origami Day\nInternational Origami Day"}},
+
+        
     ]
 }

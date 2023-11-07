@@ -220,7 +220,7 @@
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "Infant Protection Day"}, emoji: "👶"},
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "National Cancer Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-cancer-awareness-day/"}, first: {era: 1, y: 2014}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "Legal Services Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Legal_Services_Day"}, first: {era: 1, y: 1995}, emoji: "👨‍💼👩‍💼"},
-        {type: "1D", start: {d: 11, mon: 11}, inherits: "National Education Day", first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-education-day/"}},
+        {type: "1D", start: {mon: 11, d: 11}, inherits: "National Education Day", first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-education-day/"}},
         {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "Public Service Broadcasting Day"}},
         {inherits: "Children’s Day", type: "1D", start: {d: 14, mon: 11}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/childrens-day-india/"}},
         {type: "1D", start: {d: 17, mon: 11}, titles: {"en": "National Journalism Day"}},

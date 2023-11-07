@@ -58,7 +58,7 @@
         {type: "1D", titles: {"en": "Australia Citizenship Day"}, start: {mon: 9, d: 17}, first: {era: 1, y: 2001}, urls: {"en": "https://nationaltoday.com/australian-citizenship-day/"}},
         {type: "1D", titles: {"en": "National Police Remembrance Day"}, start: {mon: 9, d: 29}, first: {era: 1, y: 1989}, urls: {"en": "https://nationaltoday.com/national-police-remembrance-day/"}, emoji: "👮‍♂️👮‍♀️"},
         {type: "1D", start: {mon: 11, wkd: [3], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/melbourne-cup-day/"}, titles: {"en": "Melbourne Cup Day"}, first: {era: 1, y: 1861}},
-        {inherits: "Remembrance Day", type: "1D", start: {d: 11, mon: 11}, urls: {"en": "https://nationaltoday.com/remembrance-day-australia/"}},
+        {inherits: "Remembrance Day", type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/remembrance-day-australia/"}},
         {type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://nationaltoday.com/genocide-prevention-day/"}, titles: {"en": "Genocide Prevention Day"}},
         {type: "1D", start: {mon: 2, d: 13}, urls: {"en": "https://nationaltoday.com/national-apology-day/"}, titles: {"en": "National Apology Day"}, first: {era: 1, y: 2008}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/library-lovers-day-february/"}, titles: {"en": "Library Lovers’ Day"}, first: {era: 1, y: 2006}, emoji: "📚"},

@@ -28,8 +28,9 @@
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Star Festival", "ja": "星祭り"}, notes: {"en": "Tanabata", "ja": "たなばた\n七夕"}, urls: {"en": "https://nationaltoday.com/star-festival/"}},
         {type: "1D", start: {d: 8, mon: 12}, inherits: "Bodhi Day"},
         {type: "1D", start: {mon: 12, d: 23}, urls: {"en": "https://nationaltoday.com/birthday-of-emperor-akihito/"}, titles: {"en": "Birthday of Emperor Akihito"}, inherits: "*BDay*", first: {era: 1, y: 1989}},
-        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/japan-dolls-festival/"}, titles: {"en": "Japan Dolls Festival"}, first: {era: 1, y: 1868}},
+        {type: "1D", start: {mon: 3, d: 3}, urls: {"en": "https://nationaltoday.com/japan-dolls-festival/"}, titles: {"en": "Japan Dolls Festival"}, first: {era: 1, y: 1868}, emoji: "🎎"},
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/honen-matsuri/"}, titles: {"en": "Honen Matsuri"}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, titles: {"en": "Pocky Day"}},
     ]
 }

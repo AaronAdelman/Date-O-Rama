@@ -2023,5 +2023,8 @@
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/area-code-day/"}, titles: {"en": "Area Code Day"}},
         {type: "1D", start: {d: 9, "thruD": 15, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-dtc-direct-to-consumer-friday/"}, titles: {"en": "National DTC (Direct-To-Consumer) Friday"}},
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/vanilla-cupcake-day/"}, titles: {"en": "National Vanilla Cupcake Day"}, emoji: "🧁"},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-metal-day/"}, titles: {"en": "National Metal Day"}, first: {era: 1, y: 2011}, emoji: "🎸"},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/sundae-day/"}, titles: {"en": "National Sundae Day"}, emoji: "🍨"},
+        
     ]
 }

@@ -385,5 +385,9 @@
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/national-alejandro-day/"}, titles: {"en": "National Alejandro Day"}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/national-grace-day/"}, titles: {"en": "National Grace Day"}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/national-hunter-day/"}, titles: {"en": "National Hunter Day"}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/national-chase-day/"}, titles: {"en": "National Chase Day"}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/national-isabelle-day/"}, titles: {"en": "National Isabelle Day"}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/national-lei-day/"}, titles: {"en": "National Lei Day"}},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/national-timothy-day/"}, titles: {"en": "National Timothy Day"}},
     ]
 }
