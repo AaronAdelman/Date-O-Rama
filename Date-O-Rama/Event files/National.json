@@ -2025,6 +2025,10 @@
         {type: "1D", start: {mon: 11, d: 10}, urls: {"en": "https://www.daysoftheyear.com/days/vanilla-cupcake-day/"}, titles: {"en": "National Vanilla Cupcake Day"}, emoji: "🧁"},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/national-metal-day/"}, titles: {"en": "National Metal Day"}, first: {era: 1, y: 2011}, emoji: "🎸"},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/sundae-day/"}, titles: {"en": "National Sundae Day"}, emoji: "🍨"},
-        
+        {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/fancy-rat-mouse-day/"}, titles: {"en": "American Fancy Rat & Mouse Day"}, emoji: "🐀🐁", notes: {"en": "Fancy Rat and Mouse Day"}},
+        {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-french-dip-day/"}, titles: {"en": "National French Dip Day"}, first: {era: 1, y: 2018}},
+        {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://nationaltoday.com/national-happy-hour-day/"}, titles: {"en": "National Happy Hour Day"}, emoji: "🥃🍺"},
+        {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-with-the-works-except-anchovies-day/"}, titles: {"en": "National Pizza with the Works Except Anchovies Day"}, emoji: "🍕", notes: {"en": "National Pizza With Everything (Except Anchovies) Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-pupusa-day/"}, titles: {"en": "National Pupusa Day"}},
     ]
 }

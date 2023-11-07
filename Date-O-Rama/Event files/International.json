@@ -233,7 +233,7 @@
         {type: "1D", start: {mon: 11, d: 10}, titles: {"en": "World Immunization Day"}, first: {era: 1, y: 2010}, emoji: "💉", urls: {"en": "https://nationaltoday.com/world-immunisation-day/"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 2}, titles: {"en": "World Quality Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/world-quality-day/"}, emoji: "🌎"},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 2}, titles: {"en": "International Tempranillo Day"}, first: {era: 1, y: 2011}, emoji: "🍷", urls: {"en": "https://nationaldaycalendar.com/international-tempranillo-day-second-thursday-in-november/"}},
-        {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "World Pneumonia Day"}, first: {era: 1, y: 2009}, emoji: "🩻", urls: {"en": "https://nationaltoday.com/world-pneumonia-day/"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "World Pneumonia Day"}, first: {era: 1, y: 2009}, emoji: "🩻", urls: {"en": "https://www.worldpneumoniaday.org/"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {d: 13, mon: 11}, titles: {"en": "World Kindness Day"}, first: {era: 1, y: 1998}, emoji: "🙂", urls: {"en": "https://www.daysoftheyear.com/days/kindness-day/"}},
         {type: "1D", start: {d: 17, mon: 11}, titles: {"en": "International Students’ Day"}, notes: {"en": "International Students Day"}, first: {era: 1, y: 1941}, emoji: "👨‍🎓👩‍🎓", urls: {"en": "https://nationaldaycalendar.com/international-students-day-november-17/"}},
         {type: "1D", start: {d: 17, mon: 11}, titles: {"en": "Homemade Bread Day", "he": "יום הלחם הביתי"}, emoji: "🍞", urls: {"en": "https://www.daysoftheyear.com/days/homemade-bread-day/"}},
@@ -1916,6 +1916,7 @@
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/international-merlot-day-november-7"}, titles: {"en": "International Merlot Day"}, emoji: "🍷"},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/death-duty-day/"}, titles: {"en": "Death/Duty Day"}, first: {era: 1, y: 1918}, emoji: "🪦"},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/origami-day/"}, titles: {"en": "World Origami Day"}, notes: {"en": "National Origami Day\nInternational Origami Day"}},
+        {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/tongue-twister-day/"}, titles: {"en": "International Tongue Twister Day"}},
 
         
     ]
