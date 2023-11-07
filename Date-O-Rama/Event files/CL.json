@@ -32,7 +32,7 @@
         {inherits: "Feast of the Immaculate Conception", type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/feast-of-the-immaculate-conception-chile/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
-        {type: "1D", start: {mon: 5, d: 7}, titles: {"en": "Elections in Chile", "es": "Elecciones de consejeros constitucionales"}},
+        {type: "1D", start: {mon: 5, d: 7}, titles: {"en": "Elections in Chile", "es": "Elecciones de consejeros constitucionales"}, emoji: "🗳️"},
         {type: "1D", start: {mon: 6, d: 7}, titles: {"en": "Battle of Arica", "es": "Asalto y Toma del Morro de Arica"}},
         {type: "1D", start: {mon: 12, d: 17}, titles: {"en": "National plebiscite", "es": "Plebiscito nacional"}},
         {type: "1D", start: {mon: 5, d: 14}, inherits: "Engineer’s Day"},

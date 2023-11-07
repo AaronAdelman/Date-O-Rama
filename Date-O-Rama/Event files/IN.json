@@ -217,7 +217,7 @@
         {type: "1D", start: {mon: 10, d: 20}, titles: {"en": "National Solidarity Day"}},
         {type: "1D", start: {mon: 10, d: 21}, titles: {"en": "Police Commemoration Day"}, first: {era: 1, y: 1960}, emoji: "👮‍♂️👮‍♀️", urls: {"en": "https://nationaltoday.com/police-commemoration-day/"}},
         {type: "1D", start: {mon: 10, d: 27}, titles: {"en": "Infantry Day"}},
-        {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "Infant Protection Day"}},
+        {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "Infant Protection Day"}, emoji: "👶"},
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "National Cancer Awareness Day"}, urls: {"en": "https://nationaltoday.com/national-cancer-awareness-day/"}, first: {era: 1, y: 2014}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "Legal Services Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Legal_Services_Day"}, first: {era: 1, y: 1995}, emoji: "👨‍💼👩‍💼"},
         {type: "1D", start: {d: 11, mon: 11}, inherits: "National Education Day", first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-education-day/"}},
