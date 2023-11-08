@@ -228,8 +228,8 @@
         {type: "1D", start: {d: 1, mon: 11}, titles: {"en": "World Vegan Day", "he": "יום הטבעונות העולמי"}, first: {era: 1, y: 1994}, emoji: "🌽", urls: {"en": "https://www.daysoftheyear.com/days/vegan-day/"}},
         {type: "1D", start: {d: 3, mon: 11}, titles: {"en": "Sandwich Day"}, emoji: "🥪", urls: {"en": "https://www.daysoftheyear.com/days/sandwich-day/"}},
         {type: "1D", start: {mon: 11, d: 7}, titles: {"en": "International Day of Medical Physics"}, urls: {"en": "https://nationaldaycalendar.com/international-day-of-medical-physics-november-7/"}, first: {era: 1, y: 2012}},
-        {type: "1D", start: {mon: 11, d: 8}, titles: {"en": "Shot Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shot-day/"}, emoji: "🥃"},
         {type: "1D", start: {mon: 11, d: 8}, titles: {"en": "World Radiography Day"}, first: {era: 1, y: 1996}, emoji: "🩻", urls: {"en": "https://nationaldaycalendar.com/world-radiography-day-november-8/"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://www.internationaldayofradiology.com/"}, titles: {"en": "International Day of Radiology"}, first: {era: 1, y: 2012}, emoji: "🩻"},
         {type: "1D", start: {mon: 11, d: 10}, titles: {"en": "World Immunization Day"}, first: {era: 1, y: 2010}, emoji: "💉", urls: {"en": "https://nationaltoday.com/world-immunisation-day/"}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 2}, titles: {"en": "World Quality Day"}, first: {era: 1, y: 2008}, urls: {"en": "https://www.daysoftheyear.com/days/world-quality-day/"}, emoji: "🌎"},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 2}, titles: {"en": "International Tempranillo Day"}, first: {era: 1, y: 2011}, emoji: "🍷", urls: {"en": "https://nationaldaycalendar.com/international-tempranillo-day-second-thursday-in-november/"}},
@@ -466,7 +466,6 @@
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-angelman-day/"}, titles: {"en": "International Angelman Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/international-childhood-cancer-day/"}, titles: {"en": "International Childhood Cancer Day"}, first: {era: 1, y: 2002}, emoji: "👦👧"},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/lui-ngai-ni-2/"}, titles: {"en": "Lui-Ngai-Ni"}},
-        {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/st-skeletors-day/"}, titles: {"en": "St. Skeletor’s Day"}, first: {era: 1, y: 1998}},
         {type: "1D", start: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/do-a-grouch-a-favor-day/"}, titles: {"en": "Do a Grouch a Favor Day"}},
         {type: "1D", start: {mon: 2, d: 16}, urls: {"en": "https://nationaltoday.com/kyoto-protocol-day/"}, titles: {"en": "Kyoto Protocol Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 2, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-anthropology-day/"}, titles: {"en": "World Anthropology Day"}, first: {era: 1, y: 2015}},
@@ -1900,7 +1899,7 @@
         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/play-basketball-day/"}, titles: {"en": "Play Basketball Day"}, first: {era: 1, y: 2016}, emoji: "🏀"},
         {type: "1D", start: {mon: 11, d: 7}, urls: {"en": "https://nationaltoday.com/notary-public-day/"}, titles: {"en": "Notary Public Day"}, first: {era: 1, y: 1975}},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/abet-and-aid-punsters-day/"}, titles: {"en": "Abet and Aid Punsters Day"}},
-        {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/international-day-of-radiology/"}, titles: {"en": "International Day of Radiology"}, first: {era: 1, y: 2012}, emoji: "🩻"},
+        {type: "1D", start: {mon: 11, d: 8}, titles: {"en": "Shot Day"}, urls: {"en": "https://www.daysoftheyear.com/days/shot-day/"}, emoji: "🥃"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/talk-money-day/"}, titles: {"en": "Talk Money Day"}, emoji: "🪙💰💳"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/world-pianist-day/"}, titles: {"en": "World Pianist Day"}, first: {era: 1, y: 2015}, emoji: "🎹"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/world-town-planning-day/"}, titles: {"en": "World Town Planning Day"}, first: {era: 1, y: 1949}, emoji: "🏘️", notes: {"en": "World Urbanism Day"}},
@@ -1917,6 +1916,7 @@
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/death-duty-day/"}, titles: {"en": "Death/Duty Day"}, first: {era: 1, y: 1918}, emoji: "🪦"},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/origami-day/"}, titles: {"en": "World Origami Day"}, notes: {"en": "National Origami Day\nInternational Origami Day"}},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/tongue-twister-day/"}, titles: {"en": "International Tongue Twister Day"}},
+        {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/symphonic-metal-day/"}, titles: {"en": "Symphonic Metal Day"}},
 
         
     ]

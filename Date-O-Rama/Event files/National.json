@@ -370,7 +370,7 @@
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-eye-donor-month/"}, titles: {"en": "National Eye Donor Month"}, first: {era: 1, y: 1983}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-flour-month/"}, titles: {"en": "National Flour Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-frozen-food-month/"}, titles: {"en": "National Frozen Food Month"}},
-        {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-kidney-month/"}, titles: {"en": "National Kidney Month"}},
+        {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-kidney-month/"}, titles: {"en": "National Kidney Month"}, inherits: "*MedicalAwareness*"},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-march-into-literacy-month/"}, titles: {"en": "National March Into Literacy Month"}},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-music-schools-month/"}, titles: {"en": "National Music in Our Schools Month"}, first: {era: 1, y: 1985}, emoji: "🎼"},
         {type: "1M", start: {mon: 3}, urls: {"en": "https://nationaltoday.com/national-noodle-month/"}, titles: {"en": "National Noodle Month"}, emoji: "🍝"},
@@ -2015,8 +2015,8 @@
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://www.daysoftheyear.com/days/harvey-wallbanger-day/"}, titles: {"en": "National Harvey Wallbanger Day"}, first: {era: 1, y: 1971}, emoji: "🥃"},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/national-parents-as-teachers-day/"}, titles: {"en": "National Parents as Teachers Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 8}, urls: {"en": "https://nationaltoday.com/stem-steam-day/"}, titles: {"en": "National STEM/STEAM Day"}, notes: {"en": "STEM/STEAM Day"}, first: {era: 1, y: 2015}},
-        {type: "nD", start: {mon: 11, d: 8}, end: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/nyc-kidney-walk/"}, titles: {"en": "NYC Kidney Walk"}},
-        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/eating-healthy-day/"}, titles: {"en": "Eating Healthy Day"}, first: {era: 1, y: 2015}},
+        {type: "nD", start: {mon: 11, d: 8}, end: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/nyc-kidney-walk/"}, titles: {"en": "NYC Kidney Walk"}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/eating-healthy-day/"}, titles: {"en": "Eating Healthy Day"}, first: {era: 1, y: 2015}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://nationaltoday.com/eleven09-day/"}, titles: {"en": "Eleven09 Day"}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/national-fried-chicken-sandwich-day/"}, titles: {"en": "National Fried Chicken Sandwich Day"}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/scrapple-day/"}, titles: {"en": "National Scrapple Day"}},
@@ -2029,5 +2029,9 @@
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/national-french-dip-day/"}, titles: {"en": "National French Dip Day"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://www.daysoftheyear.com/days/pizza-with-the-works-except-anchovies-day/"}, titles: {"en": "National Pizza with the Works Except Anchovies Day"}, emoji: "🍕", notes: {"en": "National Pizza With Everything (Except Anchovies) Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://nationaltoday.com/national-pupusa-day/"}, titles: {"en": "National Pupusa Day"}},
+        {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-musician-day/"}, titles: {"en": "National Hug a Musician Day"}},
+        {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/national-indian-pudding-day/"}, titles: {"en": "National Indian Pudding Day"}},
+        {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/sadie-hawkins-day/"}, titles: {"en": "Sadie Hawkins Day"}, notes: {"en": "National Sadie Hawkins Day"}},
+        
     ]
 }
