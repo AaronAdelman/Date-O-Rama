@@ -178,7 +178,7 @@
         {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "National Happy Hour Day"}, emoji: "🍸🥃🍺", urls: {"en": "https://www.daysoftheyear.com/days/happy-hour-day/"}},
         {type: "1D", start: {mon: 11, wkd: [3], wkdRecurrence: 2}, titles: {"en": "National Young Readers Day"}, first: {era: 1, y: 1989}, emoji: "📖", urls: {"en": "https://holidayinsights.com/moreholidays/November/youngreadersday.htm"}},
         {type: "1D", start: {d: 14, mon: 11}, titles: {"en": "National Pickle Day"}, emoji: "🥒", urls: {"en": "https://www.daysoftheyear.com/days/pickle-day/"}},
-        {type: "1D", start: {d: 15, mon: 11}, titles: {"en": "National Clean Out Your Fridge Day"}, emoji: "🧽", urls: {"en": "https://nationaltoday.com/national-clean-out-your-fridge-day/"}},
+        {type: "1D", start: {mon: 11, d: 15}, titles: {"en": "National Clean Out Your Fridge Day"}, emoji: "🧽", urls: {"en": "https://nationaltoday.com/national-clean-out-your-fridge-day/"}, first: {era: 1, y: 1995}},
         {type: "1D", start: {d: 16, mon: 11}, titles: {"en": "National Button Day"}, first: {era: 1, y: 1938}, emoji: "🟠", urls: {"en": "https://www.daysoftheyear.com/days/button-day/"}},
         {type: "1D", start: {d: 18, mon: 11}, titles: {"en": "National Vichyssoise Day"}, emoji: "🥣", urls: {"en": "https://www.daysoftheyear.com/days/vichyssoise-day/"}},
         {type: "1D", start: {d: 19, mon: 11}, titles: {"en": "National Play Monopoly Day"}, emoji: "🏠🏨", urls: {"en": "https://www.daysoftheyear.com/days/play-monopoly-day/"}},
@@ -2036,5 +2036,14 @@
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-family-pj-day/"}, titles: {"en": "National Family PJ Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-seat-belt-day/"}, titles: {"en": "National Seat Belt Day"}},
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-spicy-guacamole-day/"}, titles: {"en": "National Spicy Guacamole Day"}},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/education-support-professionals-day/"}, titles: {"en": "Education Support Professionals Day"}, notes: {"en": "E.S.P.s Day"}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-ample-time-day/"}, titles: {"en": "National Ample Time Day"}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-bundt-day/"}, titles: {"en": "National Bundt Day"}, first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-camp-t-shirt-day/"}, titles: {"en": "National Camp T-Shirt Day"}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-drummer-day/"}, titles: {"en": "National Drummer Day"}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-family-civility-day/"}, titles: {"en": "National Family Civility Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-raisin-bran-cereal-day/"}, titles: {"en": "National Raisin Bran Cereal Day"}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-recycling-day/"}, titles: {"en": "National Recycling Day"}, emoji: "♻️"},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-spicy-hermit-cookie-day/"}, titles: {"en": "National Spicy Hermit Cookie Day"}, first: {era: 1, y: 1990}},
     ]
 }

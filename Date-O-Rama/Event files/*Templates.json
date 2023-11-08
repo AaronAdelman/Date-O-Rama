@@ -611,6 +611,7 @@
         {template: "Plan Your Epitaph Day", type: "1D", start: {mon: 11, d: 2}, urls: {"en": "https://nationaltoday.com/plan-your-epitaph-day/"}, titles: {"en": "Plan Your Epitaph Day"}, emoji: "🪦"},
         {template: "Romanian Language Day", type: "1D", start: {mon: 8, d: 31}, urls: {"en": "https://www.officeholidays.com/holidays/moldova/national-language-day"}, titles: {"en": "Romanian Language Day", "he": "יום הלשון הרומנית", "ro": "Ziua Limbii Române"}},
         {template: "One Health Day", type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/one-health-day-november-3"}, titles: {"en": "One Health Day"}, emoji: "🩺"},
+        {template: "National Philanthropy Day", type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-philanthropy-day/"}, titles: {"en": "National Philanthropy Day"}},
 
     ]
 }

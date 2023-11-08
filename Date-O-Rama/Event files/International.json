@@ -1920,6 +1920,11 @@
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/international-girls-day-kappa-delta/"}, titles: {"en": "International Girls Day"}, emoji: "👧", first: {era: 1, y: 1897}},
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/loosen-up-lighten-up-day/"}, titles: {"en": "Loosen Up Lighten Up Day"}, notes: {"en": "LULU Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/operating-room-nurse-day/"}, titles: {"en": "Operating Room Nurse Day"}},
-
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/day-of-the-imprisoned-writer/"}, titles: {"en": "Day of the Imprisoned Writer"}, first: {era: 1, y: 1981}},
+        {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/geographic-information-systems-day/"}, titles: {"en": "Geographic Information Systems Day"}, notes: {"en": "G.I.S. Day\nGIS Day"}, first: {era: 1, y: 1999}, emoji: "🌎"},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/i-love-to-write-day/"}, titles: {"en": "I Love to Write Day"}, first: {era: 1, y: 2002}, emoji: "✍️"},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/pack-your-moms-lunch-day/"}, titles: {"en": "Pack Your Mom’s Lunch Day"}, first: {era: 1, y: 2011}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/steve-irwin-day/"}, titles: {"en": "Steve Irwin Day"}, first: {era: 1, y: 2007}},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-copd-day/"}, titles: {"en": "World COPD Day"}, notes: {"en": "World C.O.P.D. Day"}, emoji: "🫁"},
     ]
 }
