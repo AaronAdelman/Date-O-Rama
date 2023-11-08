@@ -2032,6 +2032,9 @@
         {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/national-hug-musician-day/"}, titles: {"en": "National Hug a Musician Day"}},
         {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/national-indian-pudding-day/"}, titles: {"en": "National Indian Pudding Day"}},
         {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/sadie-hawkins-day/"}, titles: {"en": "Sadie Hawkins Day"}, notes: {"en": "National Sadie Hawkins Day"}},
-        
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-american-teddy-bear-day/"}, titles: {"en": "National American Teddy Bear Day"}, emoji: "🧸"},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-family-pj-day/"}, titles: {"en": "National Family PJ Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-seat-belt-day/"}, titles: {"en": "National Seat Belt Day"}},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-spicy-guacamole-day/"}, titles: {"en": "National Spicy Guacamole Day"}},
     ]
 }

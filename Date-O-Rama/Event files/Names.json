@@ -390,5 +390,7 @@
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/national-lei-day/"}, titles: {"en": "National Lei Day"}},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/national-timothy-day/"}, titles: {"en": "National Timothy Day"}},
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://nationaltoday.com/national-nathaniel-day/"}, titles: {"en": "National Nathaniel Day"}},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-marie-day/"}, titles: {"en": "National Marie Day"}},
+
     ]
 }

@@ -1917,7 +1917,9 @@
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/origami-day/"}, titles: {"en": "World Origami Day"}, notes: {"en": "National Origami Day\nInternational Origami Day"}},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.daysoftheyear.com/days/tongue-twister-day/"}, titles: {"en": "International Tongue Twister Day"}},
         {type: "1D", start: {mon: 11, d: 13}, urls: {"en": "https://nationaltoday.com/symphonic-metal-day/"}, titles: {"en": "Symphonic Metal Day"}},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/international-girls-day-kappa-delta/"}, titles: {"en": "International Girls Day"}, emoji: "👧", first: {era: 1, y: 1897}},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/loosen-up-lighten-up-day/"}, titles: {"en": "Loosen Up Lighten Up Day"}, notes: {"en": "LULU Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/operating-room-nurse-day/"}, titles: {"en": "Operating Room Nurse Day"}},
 
-        
     ]
 }
