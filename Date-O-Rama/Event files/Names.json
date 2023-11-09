@@ -394,5 +394,8 @@
         {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-dylan-day/"}, titles: {"en": "National Dylan Day"}},
         {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/national-andy-day/"}, titles: {"en": "National Andy Day"}},
         {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/national-charles-day/"}, titles: {"en": "National Charles Day"}},
+
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/national-jaden-day-2/"}, titles: {"en": "National Jaden Day"}},
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/national-reuben-day/"}, titles: {"en": "National Reuben Day"}},
     ]
 }

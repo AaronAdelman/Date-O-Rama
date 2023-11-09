@@ -155,6 +155,6 @@
         {type: "1D", start: {mon: 10, d: 15}, urls: {"en": "https://nationaltoday.com/national-roast-pheasant-day/"}, titles: {"en": "National Roast Pheasant Day"}},
         {type: "1D", start: {mon: 10, wkd: [1], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/newport-wales-marathon/"}, titles: {"en": "Newport Wales Marathon"}, first: {era: 1, y: 2018}},
         {type: "1D", start: {mon: 11, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/british-pudding-day/"}, titles: {"en": "British Pudding Day"}},
-
+        {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/bbc-children-in-need-appeal/"}, titles: {"en": "BBC Children in Need Appeal"}, notes: {"en": "B.B.C. Children in Need Appeal"}, first: {era: 1, y: 1980}},
     ]
 }

@@ -2050,5 +2050,10 @@
         {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/clarinet-day/"}, titles: {"en": "National Clarinet Day"}, notes: {"en": "Clarinet Day"}, first: {era: 1, y: 1980}},
         {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/national-fast-food-day/"}, titles: {"en": "National Fast Food Day"}, emoji: "🍟🍔"},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-rural-health-day/"}, titles: {"en": "National Rural Health Day"}, emoji: "🩺", inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/national-baklava-day/"}, titles: {"en": "National Baklava Day"}},
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/national-hiking-day/"}, titles: {"en": "National Hiking Day"}, notes: {"en": "Take A Hike Day\nNational Take a Hike Day"}},
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/national-testosterone-awareness-day/"}, titles: {"en": "National Testosterone Awareness Day"}},
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/national-unfriend-day/"}, titles: {"en": "National Unfriend Day"}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 11, d: 17}, urls: {"en": "https://nationaltoday.com/zinfandel-day/"}, titles: {"en": "Zinfandel Day"}, emoji: "🍷", first: {era: 1, y: 1990}},
     ]
 }
