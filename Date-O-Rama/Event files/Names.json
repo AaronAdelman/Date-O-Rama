@@ -392,6 +392,7 @@
         {type: "1D", start: {mon: 11, d: 12}, urls: {"en": "https://nationaltoday.com/national-nathaniel-day/"}, titles: {"en": "National Nathaniel Day"}},
         {type: "1D", start: {mon: 11, d: 14}, urls: {"en": "https://nationaltoday.com/national-marie-day/"}, titles: {"en": "National Marie Day"}},
         {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/national-dylan-day/"}, titles: {"en": "National Dylan Day"}},
-
+        {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/national-andy-day/"}, titles: {"en": "National Andy Day"}},
+        {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://nationaltoday.com/national-charles-day/"}, titles: {"en": "National Charles Day"}},
     ]
 }

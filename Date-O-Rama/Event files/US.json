@@ -97,7 +97,7 @@
         {type: "1M", start: {mon: 10}, titles: {"en": "Pregnancy and Infant Loss Remembrance Month"}, first: {era: 1, y: 1988}, urls: {"en": "https://nationaldaycalendar.com/national-pregnancy-and-infant-loss-awareness-month-october/"}, inherits: "*MedicalAwareness*"},
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "1D", start: {mon: 10, d: 15}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 10, d: 15}, titles: {"en": "White Cane Safety Day"}, notes: {"en": "Blind Americans Equality Day"}, first: {era: 1, y: 1964}, emoji: "🦯", urls: {"en": "https://www.daysoftheyear.com/days/white-cane-safety-day/"}},
-        {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "World Freedom Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.daysoftheyear.com/days/world-freedom-day/"}},
+        {type: "1D", start: {mon: 11, d: 9}, titles: {"en": "World Freedom Day"}, first: {era: 1, y: 2001}, urls: {"en": "https://www.daysoftheyear.com/days/world-freedom-day/"}},
         {type: "1D", start: {d: 4, mon: 12}, titles: {"en": "World Wildlife Conservation Day", "he": "יום שימור חיות הבר העולמי"}, first: {era: 1, y: 2012}, emoji: "🏞", urls: {"en": "https://www.daysoftheyear.com/days/world-wildlife-conservation-day/", "he": "https://www.daysoftheyear.co.il/2018/12/world-wildlife-conservation-day.html"}},
         {type: "1D", start: {d: 17, mon: 12}, titles: {"en": "Wright Brothers Day", "he": "יום האחים רייט"}, first: {era: 1, y: 1959}, emoji: "🛩", urls: {"en": "https://www.daysoftheyear.com/days/wright-brothers-day/", "he": "https://www.daysoftheyear.co.il/2018/12/wright-brothers-day.html"}},
         {type: "1D", start: {d: 15, mon: 5}, titles: {"en": "Peace Officers Memorial Day"}, first: {era: 1, y: 1962}, emoji: "👮‍♂️👮‍♀️", urls: {"en": "https://nationaldaycalendar.com/national-police-officers-memorial-day-may-15/"}},
@@ -516,7 +516,7 @@
         {type: "1D", start: {mon: 9, d: 14}, titles: {"en": "National Virginia Day", "he": "יום וירג׳יניה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-virginia-day-september-14/"}},
         {type: "1D", start: {mon: 2, d: 15}, titles: {"en": "National Wisconsin Day", "he": "יום ויסקונסין הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-wisconsin-day-february-15/"}},
         {type: "1D", start: {d: 15, mon: 3}, titles: {"en": "National Kansas Day", "he": "יום קנזס הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-kansas-day-march-15/"}},
-        {type: "1D", start: {d: 16, mon: 11}, titles: {"en": "National Indiana Day", "he": "יום אינדיאנה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-indiana-day-november-16/"}},
+        {type: "1D", start: {mon: 11, d: 16}, titles: {"en": "National Indiana Day", "he": "יום אינדיאנה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-indiana-day-november-16/"}},
         {type: "1D", start: {d: 17, mon: 5}, titles: {"en": "National Idaho Day", "he": "יום איידהו הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-idaho-day-may-17/"}},
         {type: "1D", start: {d: 17, mon: 8}, titles: {"en": "National Massachusetts Day", "he": "יום מסצ׳וסטס הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-massachusetts-day-august-17/"}},
         {type: "1D", start: {d: 18, mon: 1}, titles: {"en": "National Michigan Day", "he": "יום מישיגן הלאומי"}, urls: {"en": "https://nationaldaycalendar.com/national-michigan-day-january-18/"}, first: {era: 1, y: 2017}},
@@ -553,6 +553,6 @@
         {type: "1D", start: {d: 7, mon: 9}, titles: {"en": "National New Hampshire Day", "he": "יום ניו המפשייר הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-new-hampshire-day-september-7/"}},
         {type: "1D", start: {mon: 2, d: 8}, titles: {"en": "National Iowa Day", "he": "יום איווה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-iowa-day-february-8/"}},
         {type: "1D", start: {d: 8, mon: 3}, titles: {"en": "National Oregon Day", "he": "יום אורגון הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-oregon-day-march-8/"}},
-        {type: "1D", start: {d: 9, mon: 11}, titles: {"en": "National Louisiana Day", "he": "יום לואיזיאנה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-louisiana-day-november-9/"}},
+        {type: "1D", start: {mon: 11, d: 9}, titles: {"en": "National Louisiana Day", "he": "יום לואיזיאנה הלאומי"}, first: {era: 1, y: 2017}, urls: {"en": "https://nationaldaycalendar.com/national-louisiana-day-november-9/"}},
     ]
 }
