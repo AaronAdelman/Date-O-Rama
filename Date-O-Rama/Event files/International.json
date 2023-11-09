@@ -1930,5 +1930,9 @@
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/social-enterprise-day/"}, titles: {"en": "Social Enterprise Day"}},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/use-less-stuff-day/"}, titles: {"en": "Use Less Stuff Day"}, emoji: "🥣☕️", first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 11, wkd: [5], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/world-pancreatic-cancer-day/"}, titles: {"en": "World Pancreatic Cancer Day"}, first: {era: 1, y: 2000}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/apple-cider-day/"}, titles: {"en": "Apple Cider Day"}},
+        {type: "1D", start: {mon: 11, d: 17, thruD: 23, wkd: [7]}, urls: {"en": "https://nationaltoday.com/international-survivors-of-suicide-day/"}, titles: {"en": "International Survivors of Suicide Loss Day"}, first: {era: 1, y: 1999}},
+        {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/mickey-mouses-birthday/"}, titles: {"en": "Mickey Mouse’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/minnie-mouses-birthday/"}, titles: {"en": "Minnie Mouse’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
     ]
 }
