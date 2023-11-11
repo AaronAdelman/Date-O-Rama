@@ -2071,5 +2071,14 @@
         {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-jukebox-day/"}, titles: {"en": "National Jukebox Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-tie-one-on-day/"}, titles: {"en": "National Tie One On Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-loneliness-awareness-day/"}, titles: {"en": "What Do You Love About America Day"}},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/eat-a-cranberry-day/"}, titles: {"en": "Eat a Cranberry Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/macys-thanksgiving-day-parade/"}, titles: {"en": "Macy’s Thanksgiving Day Parade"}, first: {era: 1, y: 1924}, emoji: "🦃"},
+        {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/national-cashew-day/"}, titles: {"en": "National Cashew Day"}},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-dog-show-broadcast/"}, titles: {"en": "National Dog Show Broadcast"}, emoji: "🐶🥇", first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/national-espresso-day/"}, titles: {"en": "National Espresso Day"}, emoji: "☕️"},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-family-health-history-day/"}, titles: {"en": "National Family Health History Day"}},
+        {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/thankful-for-my-dog-day/"}, titles: {"en": "Thankful For My Dog Day"}, emoji: "🐶", first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/turkey-free-thanksgiving/"}, titles: {"en": "Turkey-free Thanksgiving"}, emoji: "🥦"},
+
     ]
 }

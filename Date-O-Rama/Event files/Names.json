@@ -407,5 +407,7 @@
         {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-amelia-day/"}, titles: {"en": "National Amelia Day"}},
         {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-aron-day/"}, titles: {"en": "National Aron Day"}},
         {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-nathan-day/"}, titles: {"en": "National Nathan Day"}},
+        {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/national-margaret-day/"}, titles: {"en": "National Margaret Day"}},
+
     ]
 }
