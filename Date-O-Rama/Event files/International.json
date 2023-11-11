@@ -239,7 +239,7 @@
         {type: "1D", start: {mon: 11, d: 17}, titles: {"en": "Homemade Bread Day", "he": "יום הלחם הביתי"}, emoji: "🍞", urls: {"en": "https://www.daysoftheyear.com/days/homemade-bread-day/"}},
         {type: "1D", start: {mon: 11, d: 17}, titles: {"en": "International Happy Gose Day"}, emoji: "🍻", urls: {"en": "https://www.daysoftheyear.com/days/international-happy-gose-day/"}},
         {type: "1D", start: {mon: 11, d: 17}, inherits: "World Prematurity Day"},
-        {type: "1D", start: {mon: 11, d: 19}, titles: {"en": "Women’s Entrepreneurship Day"}, notes: {"en": "WED"}, first: {era: 1, y: 2014}, emoji: "👩‍💼", urls: {"en": "https://nationaltoday.com/womens-entrepreneurship-day/"}},
+        {type: "1D", start: {mon: 11, d: 19}, titles: {"en": "Women’s Entrepreneurship Day"}, notes: {"en": "WED"}, first: {era: 1, y: 2014}, emoji: "👩‍💼", urls: {"en": "https://nationaltoday.com/womens-entrepreneurship-day/"}, notes: {"en": "Women Entrepreneurs Day"}},
         {type: "1D", start: {mon: 11, d: 19}, titles: {"en": "World Day for Prevention of Child Abuse"}, first: {era: 1, y: 2000}, urls: {"en": "https://www.apa.org/pi/prevent-violence/programs/international-day"}},
         {type: "1D", start: {mon: 11, d: 20}, titles: {"en": "Transgender Day of Remembrance"}, notes: {"en": "TDoR\nInternational Transgender Day of Remembrance"}, first: {era: 1, y: 1999}, emoji: "🏳️‍⚧️", urls: {"en": "https://en.wikipedia.org/wiki/Transgender_Day_of_Remembrance"}},
         {type: "1D", start: {mon: 11, d: 21}, titles: {"en": "World Hello Day"}, first: {era: 1, y: 1973}, emoji: "🙋‍♂️🙋‍♀️", notes: {"en": "This observance is meant to promote peace through communication.  Sadly, some people prefer to communicate clearly that they are interested in war and violence."}, urls: {"en": "https://www.daysoftheyear.com/days/hello-day/"}},
@@ -1934,5 +1934,7 @@
         {type: "1D", start: {mon: 11, d: 17, thruD: 23, wkd: [7]}, urls: {"en": "https://nationaltoday.com/international-survivors-of-suicide-day/"}, titles: {"en": "International Survivors of Suicide Loss Day"}, first: {era: 1, y: 1999}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/mickey-mouses-birthday/"}, titles: {"en": "Mickey Mouse’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/minnie-mouses-birthday/"}, titles: {"en": "Minnie Mouse’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
+        {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/international-journalists-remembrance-day/"}, titles: {"en": "International Journalist’s Remembrance Day"}, notes: {"en": "International Journalist Day"}, emoji: "🎤📰"},
+
     ]
 }

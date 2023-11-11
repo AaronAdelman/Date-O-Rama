@@ -2058,5 +2058,8 @@
         {type: "1D", start: {mon: 11, d: 17, thruD: 23, wkd: [7]}, urls: {"en": "https://nationaltoday.com/family-volunteer-day/"}, titles: {"en": "Family Volunteer Day"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/national-adoption-day/"}, titles: {"en": "National Adoption Day"}, first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/national-princess-day/"}, titles: {"en": "National Princess Day"}},
+        {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-camp-day/"}, titles: {"en": "National Camp Day"}, emoji: "🏕️"},
+        {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-carbonated-beverage-with-caffeine-day/"}, titles: {"en": "National Carbonated Beverage with Caffeine Day"}, emoji: "🥤"},
+
     ]
 }
