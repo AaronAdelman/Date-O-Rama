@@ -2066,6 +2066,10 @@
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-peanut-butter-fudge-day/"}, titles: {"en": "National Peanut Butter Fudge Day"}},
         {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://nationaltoday.com/alascattalo-day/"}, titles: {"en": "Alascattalo Day"}},
         {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://nationaltoday.com/national-gingerbread-cookie-day/"}, titles: {"en": "National Gingerbread Cookie Day"}},
-        
+        {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/drinksgiving/"}, titles: {"en": "DrinksGiving"}, emoji: "🥂"},
+        {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-cranberry-relish-day/"}, titles: {"en": "National Cranberry Relish Day"}},
+        {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-jukebox-day/"}, titles: {"en": "National Jukebox Day"}, first: {era: 1, y: 2017}},
+        {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-tie-one-on-day/"}, titles: {"en": "National Tie One On Day"}, first: {era: 1, y: 2006}},
+        {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-loneliness-awareness-day/"}, titles: {"en": "What Do You Love About America Day"}},
     ]
 }

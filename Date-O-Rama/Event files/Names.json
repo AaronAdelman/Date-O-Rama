@@ -404,5 +404,8 @@
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-lucia-day/"}, titles: {"en": "National Lucia Day"}},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-oscar-day/"}, titles: {"en": "National Oscar Day"}},
         {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://nationaltoday.com/national-dennis-day/"}, titles: {"en": "National Dennis Day"}},
+        {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-amelia-day/"}, titles: {"en": "National Amelia Day"}},
+        {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-aron-day/"}, titles: {"en": "National Aron Day"}},
+        {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/national-nathan-day/"}, titles: {"en": "National Nathan Day"}},
     ]
 }

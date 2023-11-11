@@ -1936,5 +1936,6 @@
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/minnie-mouses-birthday/"}, titles: {"en": "Minnie Mouse’s Birthday"}, inherits: "*BDay*", first: {era: 1, y: 1928}},
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/international-journalists-remembrance-day/"}, titles: {"en": "International Journalist’s Remembrance Day"}, notes: {"en": "International Journalist Day"}, emoji: "🎤📰"},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/international-hug-a-runner-day/"}, titles: {"en": "International Hug a Runner Day"}, notes: {"en": "Globally Organized Hug A Runner Day\nG.O.H.A.R.D."}, first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/humane-society-anniversary-day/"}, titles: {"en": "Humane Society Anniversary Day"}, emoji: "🐶", first: {era: 1, y: 1991}},
     ]
 }
