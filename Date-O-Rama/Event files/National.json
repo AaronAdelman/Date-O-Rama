@@ -2060,6 +2060,10 @@
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://nationaltoday.com/national-princess-day/"}, titles: {"en": "National Princess Day"}},
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-camp-day/"}, titles: {"en": "National Camp Day"}, emoji: "🏕️"},
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-carbonated-beverage-with-caffeine-day/"}, titles: {"en": "National Carbonated Beverage with Caffeine Day"}, emoji: "🥤"},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/future-teachers-of-america-day/"}, titles: {"en": "Future Teachers of America Day"}},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-absurdity-day/"}, titles: {"en": "National Absurdity Day"}, emoji: "🦆", first: {era: 1, y: 2000}},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-pay-back-parents-day/"}, titles: {"en": "National Pay Back Your Parents Day"}},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-peanut-butter-fudge-day/"}, titles: {"en": "National Peanut Butter Fudge Day"}},
 
     ]
 }

@@ -400,5 +400,8 @@
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-carla-day/"}, titles: {"en": "National Carla Day"}},
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-lewis-day/"}, titles: {"en": "National Lewis Day"}},
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/national-morgan-day/"}, titles: {"en": "National Morgan Day"}},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-gary-day/"}, titles: {"en": "National Gary Day"}},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-lucia-day/"}, titles: {"en": "National Lucia Day"}},
+        {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-oscar-day/"}, titles: {"en": "National Oscar Day"}},
     ]
 }
