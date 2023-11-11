@@ -403,5 +403,6 @@
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-gary-day/"}, titles: {"en": "National Gary Day"}},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-lucia-day/"}, titles: {"en": "National Lucia Day"}},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-oscar-day/"}, titles: {"en": "National Oscar Day"}},
+        {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://nationaltoday.com/national-dennis-day/"}, titles: {"en": "National Dennis Day"}},
     ]
 }

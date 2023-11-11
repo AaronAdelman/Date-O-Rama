@@ -2064,6 +2064,8 @@
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-absurdity-day/"}, titles: {"en": "National Absurdity Day"}, emoji: "🦆", first: {era: 1, y: 2000}},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-pay-back-parents-day/"}, titles: {"en": "National Pay Back Your Parents Day"}},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/national-peanut-butter-fudge-day/"}, titles: {"en": "National Peanut Butter Fudge Day"}},
-
+        {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://nationaltoday.com/alascattalo-day/"}, titles: {"en": "Alascattalo Day"}},
+        {type: "1D", start: {mon: 11, d: 21}, urls: {"en": "https://nationaltoday.com/national-gingerbread-cookie-day/"}, titles: {"en": "National Gingerbread Cookie Day"}},
+        
     ]
 }
