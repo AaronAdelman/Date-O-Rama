@@ -413,5 +413,10 @@
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-eric-day/"}, titles: {"en": "National Eric Day"}},
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-heath-day/"}, titles: {"en": "National Heath Day"}},
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/national-lawrence-day/"}, titles: {"en": "National Lawrence Day"}},
+        {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-alan-day/"}, titles: {"en": "National Alan Day"}},
+        {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-cole-day/"}, titles: {"en": "National Cole Day"}},
+        {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-madison-day/"}, titles: {"en": "National Madison Day"}},
+        {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-patrick-day/"}, titles: {"en": "National Patrick Day"}},
+
     ]
 }

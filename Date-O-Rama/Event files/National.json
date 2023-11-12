@@ -2092,5 +2092,6 @@
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/national-bavarian-cream-pie-day/"}, titles: {"en": "National Bavarian Cream Pie Day"}, emoji: "🥧"},
         {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-brand-day/"}, titles: {"en": "National Brand Day"}},
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/national-craft-jerky-day/"}, titles: {"en": "National Craft Jerky Day"}, first: {era: 1, y: 2013}},
+        {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-french-toast-day/"}, titles: {"en": "National French Toast Day"}},
     ]
 }
