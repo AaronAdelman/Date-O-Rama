@@ -417,6 +417,8 @@
         {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-cole-day/"}, titles: {"en": "National Cole Day"}},
         {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-madison-day/"}, titles: {"en": "National Madison Day"}},
         {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-patrick-day/"}, titles: {"en": "National Patrick Day"}},
+        {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/national-evan-day/"}, titles: {"en": "National Evan Day"}},
+
 
     ]
 }

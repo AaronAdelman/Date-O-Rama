@@ -1946,5 +1946,11 @@
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/pins-and-needles-day/"}, titles: {"en": "Pins and Needles Day"}},
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/turtle-adoption-day/"}, titles: {"en": "Turtle Adoption Day"}, emoji: "🐢", first: {era: 1, y: 2011}},
         {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/red-planet-day/"}, emoji: "🔴", titles: {"en": "Red Planet Day"}, first: {era: 1, y: 1964}},
+        {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/chadwick-boseman-day/"}, titles: {"en": "Chadwick Boseman Day"}, inherits: "*BDay*", first: {era: 1, y: 2020}},
+        {type: "1D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [4]}, urls: {"en": "https://nationaltoday.com/choose-women-wednesday/"}, titles: {"en": "Choose Women Wednesday"}, first: {era: 1, y: 2016}, emoji: "👩‍💼", notes: {"en": "Women on Wednesday\nWomen Owned Wednesday\n#WomenWOW\nWomenWednesday\nWomen Wednesday"}},
+        {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/electronic-greetings-day/"}, titles: {"en": "Electronic Greetings Day"}},
+        {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/isdal-woman-day/"}, titles: {"en": "Isdal Woman Day"}, first: {era: 1, y: 1970}},
+        {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/throw-out-your-leftovers-day/"}, titles: {"en": "Throw Out Your Leftovers Day"}},
+
     ]
 }
