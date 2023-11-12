@@ -222,7 +222,7 @@
         {type: "1D", start: {mon: 11, d: 9}, titles: {"en": "Legal Services Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Legal_Services_Day"}, first: {era: 1, y: 1995}, emoji: "👨‍💼👩‍💼"},
         {type: "1D", start: {mon: 11, d: 11}, inherits: "National Education Day", first: {era: 1, y: 2008}, urls: {"en": "https://nationaltoday.com/national-education-day/"}},
         {type: "1D", start: {mon: 11, d: 12}, titles: {"en": "Public Service Broadcasting Day"}},
-        {inherits: "Children’s Day", type: "1D", start: {d: 14, mon: 11}, first: {era: 1, y: 1964}, urls: {"en": "https://nationaltoday.com/childrens-day-india/"}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 14}, first: {era: 1, y: 1964}, urls: {"en": "https://www.daysoftheyear.com/days/childrens-day/"}},
         {type: "1D", start: {mon: 11, d: 17}, titles: {"en": "National Journalism Day"}},
         {type: "1D", start: {mon: 11, d: 17}, titles: {"en": "National Epilepsy Day"}},
         {type: "1D", start: {mon: 11, d: 18}, titles: {"en": "World Adult Day"}},

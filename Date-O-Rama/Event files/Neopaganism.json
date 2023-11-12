@@ -21,5 +21,7 @@
         {inherits: "Samhain", type: "1D", start: {mon: 5, d: 1}, "regionCodes": ["xc"]},
         {inherits: "Yule", type: "1D", start: {"equinoxOrSolstice": "Jun"}, "regionCodes": ["xc"]},
         {inherits: "Imbolc", type: "1D", start: {mon: 8, d: 1}, "regionCodes": ["xc"]},
+        
+        {type: "1D", start: {mon: 11, d: 16}, urls: {"en": "https://www.daysoftheyear.com/days/the-night-of-hekate/"}, titles: {"en": "Night of Hekate"}},
  ]
 }

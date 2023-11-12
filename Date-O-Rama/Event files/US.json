@@ -239,7 +239,6 @@
         {type: "1M", start: {mon: 11}, titles: {"en": "National Native American Heritage Month"}, urls: {"en": "https://www.daysoftheyear.com/days/native-american-heritage-month/"}, first: {era: 1, y: 1990}},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/military-family-month/"}, titles: {"en": "Military Family Month"}, first: {era: 1, y: 1996}},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/national-entrepreneurship-month/"}, titles: {"en": "National Entrepreneurship Month"}, first: {era: 1, y: 2011}},
-        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://nationaltoday.com/america-recycles-day/"}, titles: {"en": "America Recycles Day"}, first: {era: 1, y: 1997}, emoji: "♻️"},
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-meth-awareness-day/"}, titles: {"en": "National Meth Awareness Day"}, first: {era: 1, y: 2006}, inherits: "*MedicalAwareness*", notes: {"en": "National Methamphetamine Awareness Day"}},
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://www.daysoftheyear.com/days/miners-day/", "he": "https://www.daysoftheyear.co.il/2017/12/miners-day.html"}, titles: {"en": "National Miners Day", "he": "יום הכורים"}, first: {era: 1, y: 2009}},
         {type: "nD", start: {mon: 12, d: 6}, end: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/national-influenza-vaccination-week/"}, titles: {"en": "National Influenza Vaccination Week"}, first: {era: 1, y: 2005}, inherits: "*MedicalAwareness*"},
@@ -497,6 +496,7 @@
         {type: "1D", start: {mon: 11, d: 3}, inherits: "One Health Day", first: {era: 1, y: 2016}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 11, wkd: [3], wkdRecurrence: 3}, urls: {"en": "https://nationaltoday.com/national-entrepreneurs-day/"}, titles: {"en": "National Entrepreneur’s Day"}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 11, d: 15}, inherits: "National Philanthropy Day", first: {era: 1, y: 1986}},
+        {type: "1D", start: {mon: 11, d: 15}, urls: {"en": "https://www.daysoftheyear.com/days/national-recycling-day/"}, titles: {"en": "National Recycling Day"}, emoji: "♻️", first: {era: 1, y: 1997}, notes: {"en": "America Recycles Day"}},
 
 
 
