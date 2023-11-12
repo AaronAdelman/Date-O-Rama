@@ -1943,6 +1943,7 @@
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/international-cake-day/"}, titles: {"en": "International Cake Day"}, emoji: "🍰"},
         {type: "1D", start: {mon: 11, wkd: [1], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/international-shift-worker-sunday/"}, titles: {"en": "Shift Worker Sunday"}},
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/world-lewis-day/"}, titles: {"en": "World Lewis Day"}, emoji: "🐨"},
-
+        {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/pins-and-needles-day/"}, titles: {"en": "Pins and Needles Day"}},
+        {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/turtle-adoption-day/"}, titles: {"en": "Turtle Adoption Day"}, emoji: "🐢", first: {era: 1, y: 2011}},
     ]
 }
