@@ -1937,5 +1937,7 @@
         {type: "1D", start: {mon: 11, d: 19}, urls: {"en": "https://nationaltoday.com/international-journalists-remembrance-day/"}, titles: {"en": "International Journalist’s Remembrance Day"}, notes: {"en": "International Journalist Day"}, emoji: "🎤📰"},
         {type: "1D", start: {mon: 11, d: 20}, urls: {"en": "https://nationaltoday.com/international-hug-a-runner-day/"}, titles: {"en": "International Hug a Runner Day"}, notes: {"en": "Globally Organized Hug A Runner Day\nG.O.H.A.R.D."}, first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 11, d: 22}, urls: {"en": "https://nationaltoday.com/humane-society-anniversary-day/"}, titles: {"en": "Humane Society Anniversary Day"}, emoji: "🐶", first: {era: 1, y: 1991}},
+        {type: "1D", start: {mon: 11, d: 24}, urls: {"en": "https://nationaltoday.com/d-b-cooper-day/"}, titles: {"en": "D.B. Cooper Day"}, first: {era: 1, y: 1996}},
+        {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/systems-engineer-day/"}, titles: {"en": "Systems Engineer Day"}},
     ]
 }

@@ -2079,6 +2079,12 @@
         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-family-health-history-day/"}, titles: {"en": "National Family Health History Day"}},
         {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/thankful-for-my-dog-day/"}, titles: {"en": "Thankful For My Dog Day"}, emoji: "🐶", first: {era: 1, y: 2020}},
         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/turkey-free-thanksgiving/"}, titles: {"en": "Turkey-free Thanksgiving"}, emoji: "🥦"},
-
+        {type: "1D", start: {mon: 11, wkd: [6], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/flossing-day/"}, titles: {"en": "Flossing Day"}, first: {era: 1, y: 2000}, emoji: "🦷"},
+        {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/fur-free-friday/"}, titles: {"en": "Fur-Free Friday"}, first: {era: 1, y: 1986}},
+        {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/maize-day/"}, titles: {"en": "Maize Day"}, first: {era: 1, y: 2004}, emoji: "🌽"},
+        {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/national-day-of-listening/"}, titles: {"en": "National Day of Listening"}, notes: {"en": "Day of Listening"}, first: {era: 1, y: 2008}},
+        {type: "1D", start: {mon: 11, d: 24}, urls: {"en": "https://nationaltoday.com/national-sardines-day/"}, titles: {"en": "National Sardines Day"}},
+        {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/sinkie-day/"}, titles: {"en": "Sinkie Day"}, notes: {"en": "Dine Over Your Kitchen Sink Day"}, first: {era: 1, y: 1991}},
+        {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/youre-welcomegiving-day/"}, titles: {"en": "You’re Welcomegiving Day"}, first: {era: 1, y: 2002}},
     ]
 }
