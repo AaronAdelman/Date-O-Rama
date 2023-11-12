@@ -2087,5 +2087,7 @@
         {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/sinkie-day/"}, titles: {"en": "Sinkie Day"}, notes: {"en": "Dine Over Your Kitchen Sink Day"}, first: {era: 1, y: 1991}},
         {type: "1D", start: {d: 23, "thruD": 29, mon: 11, wkd: [6]}, urls: {"en": "https://nationaltoday.com/youre-welcomegiving-day/"}, titles: {"en": "You’re Welcomegiving Day"}, first: {era: 1, y: 2002}},
         {type: "1D", start: {mon: 11, d: 25}, urls: {"en": "https://nationaltoday.com/national-play-day-with-dad/"}, titles: {"en": "National Play Day with Dad"}},
+        {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-anti-obesity-day/"}, titles: {"en": "National Anti Obesity Day"}, first: {era: 1, y: 2001}},
+        {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-cake-day/"}, titles: {"en": "National Cake Day"}, emoji: "🍰"},
     ]
 }
