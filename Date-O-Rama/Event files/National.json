@@ -2094,6 +2094,11 @@
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/national-craft-jerky-day/"}, titles: {"en": "National Craft Jerky Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 11, d: 28}, urls: {"en": "https://nationaltoday.com/national-french-toast-day/"}, titles: {"en": "National French Toast Day"}},
         {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/square-dancing-day/"}, titles: {"en": "Square Dancing Day"}, notes: {"en": "National Square Dancing Day"}},
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-computer-security-day/"}, titles: {"en": "National Computer Security Day"}, emoji: "💻", first: {era: 1, y: 1988}},
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-mason-jar-day/"}, titles: {"en": "National Mason Jar Day"}, emoji: "🫙"},
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-mousse-day/"}, titles: {"en": "National Mousse Day"}},
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-personal-space-day/"}, titles: {"en": "National Personal Space Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/native-womens-equal-pay-day/"}, titles: {"en": "Native Women’s Equal Pay Day"}, emoji: "👩"},
 
     ]
 }

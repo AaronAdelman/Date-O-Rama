@@ -1951,6 +1951,6 @@
         {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/electronic-greetings-day/"}, titles: {"en": "Electronic Greetings Day"}},
         {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/isdal-woman-day/"}, titles: {"en": "Isdal Woman Day"}, first: {era: 1, y: 1970}},
         {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/throw-out-your-leftovers-day/"}, titles: {"en": "Throw Out Your Leftovers Day"}},
-
+        {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/perpetual-youth-day/"}, titles: {"en": "Perpetual Youth Day"}, inherits: "*BDay*", first: {era: 1, y: 1929}, notes: {"en": "Dick Clark’s Birthday"}},
     ]
 }
