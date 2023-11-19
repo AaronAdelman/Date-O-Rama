@@ -5,9 +5,21 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.78, "green": 0.06, "blue": 0.18},
     eventSpecifications: [
-        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {type: "1D", start: {mon: 1, d: 1}, inherits: "New Year’s Day"},
+        {type: "1D", start: {era: 1, y: 2023, mon: 2, d: 6}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2022, mon: 2, d: 3}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}, inherits: "Public Holiday"},
+        {type: "1D", start: {era: 1, y: 2021, mon: 2, d: 7}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-first-day-of-parliament"}, inherits: "Public Holiday"},
+        {type: "1D", start: {mon: 5, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/labour-day"}, inherits: "Labour Day"},
         {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 26}, urls: {"en": "https://nationaltoday.com/maldives-independence-day/", "he": "https://www.daysoftheyear.co.il/2019/07/maldives-independence-day.html"}, first: {era: 1, y: 1965}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 10}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 9, d: 10}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-voting-admin"}, inherits: "Public Holiday", titles: {"en": "Maldives Voting Admin"}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 9, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-voting-admin"}, inherits: "Public Holiday", titles: {"en": "Maldives Voting Admin"}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 10, d: 1}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-voting-admin"}, inherits: "Public Holiday", titles: {"en": "Maldives Voting Admin"}},
+        {type: "1D", start: {era: 1, y: 2023, mon: 10, d: 2}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-voting-admin"}, inherits: "Public Holiday", titles: {"en": "Maldives Voting Admin"}},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/maldives-victory-day/"}, inherits: "Victory Day"},
+        {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/maldives/maldives-republic-day"}, inherits: "Republic Day", first: {era: 1, y: 1968}},
+        {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
+        
+        {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 5, d: 10}},
    ]
 }
