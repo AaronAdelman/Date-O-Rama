@@ -10,7 +10,7 @@
         {type: "1D", titles: {"en": "Africa Environment and Wangari Maathai Day"}, start: {d: 3, mon: 3}, emoji: "🌱"},
         {type: "1D", titles: {"en": "African Union Day of Commemoration of the 1994 Genocide Against the Tutsi in Rwanda"}, start: {d: 7, mon: 4}},
         {type: "1D", titles: {"en": "Day of the Battle of Cuito Cuanavale"}, start: {d: 23, mon: 4}},
-        {type: "1D", inherits: "Africa Day", start: {d: 25, mon: 5}},
+        {type: "1D", inherits: "Africa Day", start: {mon: 5, d: 25}},
         {type: "1D", titles: {"en": "Africa Border Day"}, start: {d: 7, mon: 6}},
         {type: "1D", start: {mon: 6, d: 16}, inherits: "International Day of the African Child", first: {era: 1, y: 1976}},
         {type: "1D", titles: {"en": "African Refugee Day", "he": "יום הפליטים האפריקאי"}, start: {d: 20, mon: 6}, inherits: "World Refugee Day"},
