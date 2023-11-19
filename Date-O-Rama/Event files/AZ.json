@@ -63,7 +63,7 @@
         {type: "1D", start: {mon: 11, d: 6}, titles: {"en": "Day of Baku Metro Employees"}},
         {type: "1D", start: {mon: 11, d: 12}, inherits: "Constitution Day"},
         {type: "1D", start: {mon: 11, d: 17}, titles: {"en": "National Revival Day"}, urls: {"en": "https://en.wikipedia.org/wiki/National_Revival_Day"}},
-        {type: "1D", start: {d: 22, mon: 11}, titles: {"en": "Day of Justice"}},
+        {type: "1D", start: {mon: 11, d: 22}, titles: {"en": "Day of Justice"}},
         {type: "1D", start: {d: 6, mon: 12}, titles: {"en": "Day of the Ministry of Communications and Information Technologies of Azerbaijan"}},
         {type: "1D", start: {d: 12, mon: 12}, titles: {"en": "Memorial Day of Heydar Aliyev"}},
         {type: "1D", start: {d: 16, mon: 12}, titles: {"en": "Day of Azerbaijani Ministry of Emergency Situations"}},

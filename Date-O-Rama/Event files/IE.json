@@ -33,7 +33,7 @@
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {type: "1D", start: {mon: 7, d: 12}, inherits: "Orangemen’s Day"},
         {type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: -1}, titles: {"en": "Reek Sunday", "ga": "Domhnach na Cruaiche"}, notes: {"en": "Garland Sunday"}, urls: {"en": "https://nationaltoday.com/reek-sunday/"}, emoji: "⛰"},
-        {inherits: "Universal Children’s Day", type: "1D", start: {mon: 11, d: 20}},
+        {inherits: "World Children’s Day", type: "1D", start: {mon: 11, d: 20}},
         {type: "1D", start: {mon: 12, d: 29}, urls: {"en": "https://nationaltoday.com/constitution-of-ireland/"}, titles: {"en": "Constitution of Ireland"}, first: {era: 1, y: 1937}},
         {type: "1M", start: {mon: 1}, inherits: "START Child Health Campaign", first: {era: 1, y: 2017}},
         {type: "1M", start: {mon: 1}, urls: {"en": "https://nationaltoday.com/get-ireland-active/"}, titles: {"en": "Get Ireland Active"}},

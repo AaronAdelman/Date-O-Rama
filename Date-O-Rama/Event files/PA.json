@@ -10,7 +10,7 @@
         {type: "1D", start: {mon: 1, d: 26}, inherits: "Engineer’s Day"},
         {inherits: "Children’s Day", type: "1D", start: {mon: 7, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 1, d: 9}, urls: {"en": "https://nationaltoday.com/panamas-martyrs-day/"}},
-        {inherits: "Independence Day", type: "1D", start: {d: 28, mon: 11}, first: {era: 1, y: 1821}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 28}, first: {era: 1, y: 1821}},
         {inherits: "Independence Day", type: "1D", start: {d: 3, mon: 11}, first: {era: 1, y: 1903}, titles: {"en": "Separation Day"}},
         {type: "1D", start: {mon: 8, d: 15}, titles: {"en": "Foundation of Old Panama City"}, urls: {"en": "https://nationaltoday.com/foundation-of-old-panama-city/"}, first: {era: 1, y: 1519}},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/separation-day/"}, titles: {"en": "Separation Day"}, inherits: "National Day", first: {era: 1, y: 1903}},
