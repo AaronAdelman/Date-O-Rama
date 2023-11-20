@@ -103,5 +103,6 @@
         {type: "1D", start: {mon: 11, d: 6}, urls: {"en": "https://nationaltoday.com/national-ladies-learning-code-day/"}, titles: {"en": "National Ladies Learning Code Day"}, emoji: "👩‍💻", notes: {"en": "National Girl Learning Code Day"}},
         {type: "1D", start: {mon: 11, d: 15}, inherits: "National Philanthropy Day", first: {era: 1, y: 2012}},
         {type: "1D", start: {mon: 11, d: 18}, urls: {"en": "https://www.daysoftheyear.com/days/housing-day/"}, titles: {"en": "Housing Day"}, first: {era: 1, y: 1998}, emoji: "🏠"},
+        {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, titles: {"en": "National Child Day", "he": "יום הילד הלאומי"}, urls: {"en": "https://www.nationalchildday.ca/"}},
     ]
 }
