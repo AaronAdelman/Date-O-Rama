@@ -58,7 +58,6 @@
         {inherits: "Memorial Day", type: "1D", start: {mon: 7, d: 1}, urls: {"en": "https://en.wikipedia.org/wiki/Memorial_Day_(Newfoundland_and_Labrador)"}, first: {era: 1, y: 1917}, "locations": {"en": "Newfoundland and Labrador"}},
         {inherits: "Christmas Eve", type: "1D", start: {mon: 12, d: 24}},
         {type: "1D", start: {mon: 11, d: 21}, titles: {"en": "National Red Mitten Day"}, first: {era: 1, y: 2011}, emoji: "🇨🇦", urls: {"en": "https://www.daysoftheyear.com/days/red-mitten-day/"}},
-        {inherits: "Children’s Day", type: "1D", start: {mon: 11, d: 20}, titles: {"en": "National Child Day"}, first: {era: 1, y: 1993}},
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         {type: "1D", start: {mon: 6, d: 4}, inherits: "Air Force Day", first: {era: 1, y: 2006}},
         {inherits: "Armed Forces Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 1}, first: {era: 1, y: 2002}},
