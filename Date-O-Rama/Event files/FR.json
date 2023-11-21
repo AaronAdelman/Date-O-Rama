@@ -24,7 +24,7 @@
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
         {inherits: "St. Stephen’s Day", type: "1D", start: {mon: 12, d: 26}},
 
-        {inherits: "Armenian Genocide Remembrance Day", type: "1D", start: {d: 24, mon: 4}, first: {era: 1, y: 2019}},
+        {inherits: "Armenian Genocide Remembrance Day", type: "1D", start: {mon: 4, d: 24}, first: {era: 1, y: 2019}},
         {inherits: "April Fools’ Day", type: "1D", start: {mon: 4, d: 1}},
         {inherits: "International Francophonie Day", type: "1D", start: {mon: 3, d: 20}, first: {era: 1, y: 1988}},
         {type: "1D", start: {mon: 3, d: 4}, inherits: "Engineer’s Day"},

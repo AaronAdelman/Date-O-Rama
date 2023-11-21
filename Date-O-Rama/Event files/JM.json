@@ -13,7 +13,7 @@
         {type: "1D", start: {mon: 5, d: 23}, urls: {"en": "https://www.officeholidays.com/holidays/jamaica/jamaica-labour-day"}, inherits: "Labour Day", first: {era: 1, y: 1961}},
         {type: "1D", start: {mon: 5, d: 24, thruD: 25, wkd: [2]}, urls: {"en": "https://www.officeholidays.com/holidays/jamaica/jamaica-labour-day"}, inherits: "Labour Day (in lieu)", first: {era: 1, y: 1961}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 8, d: 1}},
-        {inherits: "Independence Day", type: "1D", start: {d: 6, mon: 8}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/jamaica-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 6}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/jamaica-independence-day/"}},
         {inherits: "Independence Day (in lieu)", type: "1D", start: {d: 7, mon: 8, wkd: [2]}, first: {era: 1, y: 1962}, urls: {"en": "https://nationaltoday.com/jamaica-independence-day/"}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 1969}, urls: {"en": "https://nationaltoday.com/national-heroes-day-of-jamaica/"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},

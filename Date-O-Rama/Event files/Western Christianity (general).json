@@ -11,7 +11,7 @@
         {inherits: "Epiphany Eve", type: "1D", start: {mon: 1, d: 5}},
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
         {titles: {"en": "Feast of St. Raymond of Penyafort"}, type: "1D", start: {mon: 1, d: 7}},
-        {titles: {"en": "Baptism of the Lord"}, type: "1D", start: {mon: 1, d: 7, "thruD": 13, wkd: [1]}, urls: {"en": "https://nationaltoday.com/the-baptism-of-the-lord/"}},
+        {titles: {"en": "Baptism of the Lord"}, type: "1D", start: {mon: 1, d: 7, thruD: 13, wkd: [1]}, urls: {"en": "https://nationaltoday.com/the-baptism-of-the-lord/"}},
         {titles: {"en": "Feast of St. Hilary of Poitiers"}, type: "1D", start: {mon: 1, d: 13}},
         {titles: {"en": "Feast of St. Anthony of Egypt"}, type: "1D", start: {mon: 1, d: 17}},
         {inherits: "Feast of St. Fabian or St. Sebastian", type: "1D", start: {mon: 1, d: 20}},
@@ -228,11 +228,11 @@
         {titles: {"en": "Feast of St. Catherine of Alexandria"}, type: "1D", start: {mon: 11, d: 25}},
         {inherits: "St. Andrew’s Day", type: "1D", start: {mon: 11, d: 30}},
         
-        {titles: {"en": "Feast of Christ the King"}, type: "1D", start: {mon: 11, d: 20, "thruD": 26, wkd: [1]}, urls: {"en": "https://nationaltoday.com/christ-the-king-day/"}},
-        {inherits: "1st Advent Sunday", type: "1D", start: {mon: 11, d: 27, "thruMon": 12, "thruD": 3, wkd: [1]}},
-        {inherits: "2nd Advent Sunday", type: "1D", start: {mon: 12, d: 4, "thruD": 10, wkd: [1]}},
-        {inherits: "3rd Advent Sunday", type: "1D", start: {mon: 12, d: 11, "thruD": 17, wkd: [1]}},
-        {inherits: "4th Advent Sunday", type: "1D", start: {mon: 12, d: 18, "thruD": 24, wkd: [1]}},
+        {titles: {"en": "Feast of Christ the King"}, type: "1D", start: {mon: 11, d: 20, thruD: 26, wkd: [1]}, urls: {"en": "https://nationaltoday.com/christ-the-king-day/"}},
+        {inherits: "1st Advent Sunday", type: "1D", start: {mon: 11, d: 27, thruMon: 12, thruD: 3, wkd: [1]}},
+        {inherits: "2nd Advent Sunday", type: "1D", start: {mon: 12, d: 4, thruD: 10, wkd: [1]}},
+        {inherits: "3rd Advent Sunday", type: "1D", start: {mon: 12, d: 11, thruD: 17, wkd: [1]}},
+        {inherits: "4th Advent Sunday", type: "1D", start: {mon: 12, d: 18, thruD: 24, wkd: [1]}},
         
         {inherits: "Feast of St. Francis Xavier", type: "1D", start: {mon: 12, d: 3}},
         {titles: {"en": "Feast of St. John Damascene"}, type: "1D", start: {mon: 12, d: 4}},
@@ -257,7 +257,7 @@
         {inherits: "Feast of St. Egwin of Worcester", type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaldaycalendar.com/twelve-days-of-christmas-december-25-to-january-5/"}},
         {inherits: "New Year’s Eve", type: "1D", start: {mon: 12, d: 31}},
         {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 30, wkd: [6]}},
-        {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 26, "thruD": 31, wkd: [1]}},
+        {inherits: "Feast of the Holy Family", type: "1D", start: {mon: 12, d: 26, thruD: 31, wkd: [1]}},
         {titles: {"en": "Lammas Day"}, type: "1D", start: {mon: 8, d: 1}, urls: {"en": "https://nationaltoday.com/lammas-day/"}, emoji: "🌾"},
 
         

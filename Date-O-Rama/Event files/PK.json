@@ -7,7 +7,7 @@
     calendarColor: {"red": 0.10, "green": 0.25, "blue": 0.13},
     eventSpecifications: [
         {type: "1D", start: {d: 23, mon: 3}, titles: {"en": "Pakistan Day", "ur": "یوم پاکستان"}, urls: {"en": "https://nationaltoday.com/pakistan-day/"}},
-        {inherits: "Independence Day", type: "1D", start: {d: 14, mon: 8}, first: {era: 1, y: 1947}, urls: {"en": "https://nationaltoday.com/pakistan-independence-day/"}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 8, d: 14}, first: {era: 1, y: 1947}, urls: {"en": "https://nationaltoday.com/pakistan-independence-day/"}},
         {type: "1D", start: {mon: 12, d: 25}, titles: {"en": "Quaid-e-Azam Day", "ur": "یوم ولادت قائداعظم"}, urls: {"en": "https://nationaltoday.com/quaid-e-azam-day/"}, first: {era: 1, y: 1942}, inherits: "*BDay*"},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 

@@ -8,7 +8,7 @@
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 1}},
         {inherits: "Children’s Day", type: "1D", start: {mon: 6, d: 1}},
         {inherits: "Martyrs’ Day", type: "1D", start: {mon: 2, d: 3}, titles: {"es": "Dia dos Mártires da Liberdade", "en": "Commemoration of the Batepá Massacre"}},
-        {inherits: "Independence Day", type: "1D", start: {d: 12, mon: 7}, first: {era: 1, y: 1975}},
+        {inherits: "Independence Day", type: "1D", start: {mon: 7, d: 12}, first: {era: 1, y: 1975}},
         {type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://nationaltoday.com/sao-tome-day/"}, titles: {"en": "São Tomé Day", "pt": "Dia de São Tomé"}},
     ]
 }

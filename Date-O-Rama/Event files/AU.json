@@ -21,7 +21,7 @@
         {inherits: "Anzac Day", type: "1D", start: {mon: 4, d: 25}, first: {era: 1, y: 1916}},
         {inherits: "Labour Day", type: "1D", start: {mon: 5, wkd: [2], wkdRecurrence: 1}, "locations": {"en": "Northern Territory and Queensland"}, urls: {"en": "https://www.officeholidays.com/holidays/australia/australia-labour-day"}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}, urls: {"en": "https://www.officeholidays.com/holidays/australia/mothers-day"}},
-        {type: "1D", start: {mon: 5, d: 27, "thruMon": 6, "thruD": 3, wkd: [2]}, inherits: "Reconciliation Day"},
+        {type: "1D", start: {mon: 5, d: 27, thruMon: 6, thruD: 3, wkd: [2]}, inherits: "Reconciliation Day"},
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 1}, titles: {"en": "Western Australia Day"}, urls: {"en": "https://nationaltoday.com/western-australia-day/"}},
         {type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 2}, inherits: "King’s Birthday", "locations": {"en": "Australian Capital Territory, New South Wales, South Australia, Tasmania, and Victoria"}, first: {era: 1, y: 2023}, urls: {"en": "https://www.officeholidays.com/holidays/australia/australia-kings-birthday"}},
         {type: "1D", start: {mon: 8, wkd: [2], wkdRecurrence: 1}, titles: {"en": "New South Wales Bank Holiday"}, urls: {"en": "https://nationaltoday.com/new-south-wales-bank-holiday/"}, first: {era: 1, y: 1875}, inherits: "Bank Holiday"},

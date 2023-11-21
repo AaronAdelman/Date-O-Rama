@@ -13,7 +13,7 @@
         {titles: {"en": "Bermuda Day", "he": "יום ברמודה"}, type: "1D", start: {mon: 5, wkd: [6], wkdRecurrence: -1}, urls: {"en": "https://nationaltoday.com/bermuda-day/"}, first: {era: 1, y: 2018}},
         {inherits: "National Heroes’ Day", type: "1D", start: {mon: 6, wkd: [2], wkdRecurrence: 3}, first: {era: 1, y: 2009}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/bermuda-national-heroes-day"}},
         {inherits: "Emancipation Day", type: "1D", start: {mon: 7, d: 28, thruMon: 8, thruD: 3, wkd: [5]}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/emancipation-day"}},
-        {titles: {"en": "Mary Prince Day"}, type: "1D", start: {mon: 7, d: 29, "thruMon": 8, "thruD": 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {era: 1, y: 2018}, notes: {"en": "Somers’ Day"}},
+        {titles: {"en": "Mary Prince Day"}, type: "1D", start: {mon: 7, d: 29, thruMon: 8, thruD: 4, wkd: [6]}, urls: {"en": "https://nationaltoday.com/mary-prince-day/"}, first: {era: 1, y: 2018}, notes: {"en": "Somers’ Day"}},
         {inherits: "Labour Day", type: "1D", start: {mon: 9, wkd: [2], wkdRecurrence: 1}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/bermuda-labour-day"}},
         {inherits: "Remembrance Day", type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.officeholidays.com/holidays/bermuda/remembrance-day"}, titles: {"en": "Remembrance Day"}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},

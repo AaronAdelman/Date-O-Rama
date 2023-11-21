@@ -8,8 +8,8 @@
     eventSpecifications: [
         {inherits: "New Year’s Day", type: "1D", start: {mon: 1, d: 1}},
         {type: "1D", start: {mon: 1, d: 2}, titles: {"en": "Day after New Year’s Day"}},
-        {type: "1D", start: {mon: 1, d: 2, "thruD": 3, wkd: [2]}, inherits: "New Year’s Day (in lieu)"},
-        {type: "1D", start: {mon: 1, d: 3, "thruD": 4, wkd: [3]}, inherits: "Day after New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 1, d: 2, thruD: 3, wkd: [2]}, inherits: "New Year’s Day (in lieu)"},
+        {type: "1D", start: {mon: 1, d: 3, thruD: 4, wkd: [3]}, inherits: "Day after New Year’s Day (in lieu)"},
         {type: "1D", start: {mon: 3, d: 14}, titles: {"en": "Summer Day", "sq": "Dita e Verës"}},
         {inherits: "Nowruz", type: "1D", start: {mon: 3, d: 22}, first: {era: 1, y: 2004}, urls: {"en": "https://nationaltoday.com/nevruz-day/"}},
         {inherits: "Easter Sunday", type: "1D", start: {"Easter": "Easter"}},
@@ -18,7 +18,7 @@
         {inherits: "Feast of St. Teresa of Calcutta", type: "1D", start: {mon: 9, d: 5}, urls: {"en": "https://nationaltoday.com/saint-teresa-canonisation-day-in-albania/"}},
         {inherits: "Independence Day", type: "1D", start: {mon: 11, d: 28}, first: {era: 1, y: 1912}, urls: {"en": "https://nationaltoday.com/albania-independence-day/"}},
         {inherits: "Liberation Day", type: "1D", start: {mon: 11, d: 29}, first: {era: 1, y: 1944}},
-        {inherits: "National Youth Day", type: "1D", start: {d: 12, mon: 8}, first: {era: 1, y: 2010}},
+        {inherits: "National Youth Day", type: "1D", start: {mon: 8, d: 12}, first: {era: 1, y: 2010}},
         {inherits: "Christmas Day", type: "1D", start: {mon: 12, d: 25}},
 
         {inherits: "Epiphany", type: "1D", start: {mon: 1, d: 6}},
