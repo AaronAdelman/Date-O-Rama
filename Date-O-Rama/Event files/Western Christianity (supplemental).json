@@ -20,7 +20,7 @@
         
         {inherits: "Valentine’s Day", type: "1D", start: {mon: 2, d: 14}, first: {era: 1, y: 496}},
         
-        {inherits: "National Sanctity of Human Life Day", type: "1D", start: {d: 22, mon: 1}, first: {era: 1, y: 1984}},
+        {inherits: "National Sanctity of Human Life Day", type: "1D", start: {mon: 1, d: 22}, first: {era: 1, y: 1984}},
         {type: "1D", start: {mon: 1, wkd: [1], wkdRecurrence: 3}, titles: {"en": "National Sanctity of Human Life Sunday"}, first: {era: 1, y: 1984}, urls: {"en": "https://nationaltoday.com/national-sanctity-of-human-life-day/"}, emoji: "👶"},
         {type: "1D", start: {mon: 4, d: 15}, urls: {"en": "https://nationaltoday.com/father-damien-day/"}, titles: {"en": "Father Damien Day"}},
         {type: "1D", start: {mon: 3, d: 1}, inherits: "St. David’s Day"},

@@ -44,7 +44,7 @@
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 1958}},
         {inherits: "Pregnancy and Infant Loss Remembrance Day", type: "1D", start: {mon: 10, d: 15}, first: {era: 1, y: 2014}},
         {inherits: "Women’s History Month", type: "1M", start: {mon: 3}, first: {era: 1, y: 2000}},
-        {inherits: "Tartan Day", type: "1D", start: {d: 1, mon: 7}, first: {era: 1, "year": 1989}},
+        {inherits: "Tartan Day", type: "1D", start: {mon: 7, d: 1}, first: {era: 1, "year": 1989}},
         {inherits: "Armistice Day", type: "1D", start: {mon: 11, d: 11}, first: {era: 1, y: 1919}},
         {type: "1D", start: {mon: 6, d: 6}, titles: {"en": "Queensland Day"}, urls: {"en": "https://nationaltoday.com/queensland-day/"}, first: {era: 1, y: 1981}},
         {inherits: "Feast of St. James", type: "1D", start: {mon: 7, d: 25}},

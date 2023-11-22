@@ -5,7 +5,7 @@
     calendarCode: "gre",
     calendarColor: {"red": 0.72, "green": 0.17, "blue": 0.21},
     eventSpecifications: [
-        {inherits: "Burns Night", type: "1D", start: {d: 25, mon: 1}, first: {era: 1, y: 1801}},
+        {inherits: "Burns Night", type: "1D", start: {mon: 1, d: 25}, first: {era: 1, y: 1801}},
         {type: "1D", start: {mon: 4, d: 21}, titles: {"en": "National Tea Day", "he": "יום התה הלאומי"}, urls: {"en": "https://www.daysoftheyear.com/days/tea-day/"}, emoji: "☕️"},
         {inherits: "Commonwealth Day", type: "1D", start: {mon: 3, wkd: [2], wkdRecurrence: 2}, first: {era: 1, y: 1958}},
         {inherits: "Victory Over Japan Day", type: "1D", start: {mon: 8, d: 15}, first: {era: 1, y: 1945}},
