@@ -51,7 +51,7 @@
         {titles: {"he": "יום־שנה של המהרש״א"}, type: "1D", start: {d: 5, mon: 3}, first: {era: 0, y: 5392}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב ברוך דוב ליבוביץ (ברכת שמואל)"}, type: "1D", start: {d: 5, mon: 3}, first: {era: 0, y: 5700}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של הרב יעקב משה חרל״פ"}, type: "1D", start: {d: 7, mon: 3}, first: {era: 0, y: 5712}, inherits: "*DeathAnniv*"},
-        {titles: {"he": "יום־שנה של רבי דוב בער שניאורי (האדמו״ר האמצעי—חב״ד)"}, type: "1D", start: {d: 9, mon: 3}, first: {era: 0, y: 5588}, inherits: "*DeathAnniv*"},
+        {inherits: "יום־שנה של רבי דובער שניאורי", type: "1D", start: {mon: 3, d: 9}, first: {era: 0, y: 5588}},
         {titles: {"he": "יום־שנה של ר׳ איסר זלמן מלצר"}, type: "1D", start: {mon: 3, d: 10}, first: {era: 0, y: 5714}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של רבי שלמה לוריא (מהרש״ל)"}, type: "1D", start: {d: 12, mon: 3}, first: {era: 0, y: 5334}, inherits: "*DeathAnniv*"},
         {titles: {"he": "יום־שנה של ראובן בן יעקב"}, type: "1D", start: {mon: 3, d: 14}, first: {era: 0, y: 2348}, inherits: "*DeathAnniv*"},

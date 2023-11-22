@@ -4,7 +4,7 @@
     calendarCode: "heb*",
     calendarColor: {"red": 0.0, "green": 0.58, "blue": 1.0},
     eventSpecifications: [
-        {titles: {"he": "יום־שנה של רבי דובער שניאורי", "en": "Tes Kislev"}, type: "1D", start: {mon: 3, d: 9}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/9"}, inherits: "*DeathAnniv*"},
+        {inherits: "יום־שנה של רבי דובער שניאורי", type: "1D", start: {mon: 3, d: 9}, first: {era: 0, y: 5588}},
         {titles: {"he": "יום גאולה של רבי דובער שניאור", "en": "Yud Kislev"}, type: "1D", start: {mon: 3, d: 10}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/10"}},
         {titles: {"he": "יום גאולה של רבי שניאור זלמן מליאדי", "en": "Yud Tes Kislev"}, type: "1D", start: {mon: 3, d: 19}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=9/19"}},
         {titles: {"he": "ה׳ טבת", "en": "Hei Teves"}, type: "1D", start: {mon: 4, d: 5}, urls: {"en": "https://www.chabad.org/calendar/view/day.asp?hdate=10/5"}},
