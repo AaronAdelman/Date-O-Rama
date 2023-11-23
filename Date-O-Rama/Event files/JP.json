@@ -21,8 +21,6 @@
         {type: "1D", start: {"equinoxOrSolstice": "Sep"}, urls: {"en": "https://www.officeholidays.com/holidays/japan/autumnal-equinox-day"}, titles: {"en": "Autumnal Equinox Day", "ja": "秋分の日"}},
         {type: "1D", start: {mon: 10, wkd: [2], wkdRecurrence: 2}, inherits: "National Sports Day", titles: {"en": "Sports Day", "ja": "スポーツの日"}, first: {era: 1, y: 2000}, urls: {"en": "https://nationaltoday.com/health-and-sports-day-japan/"}, notes: {"en": "Health and Sports Day", "ja": "体育の日"}},
         {type: "1D", start: {mon: 11, d: 3}, urls: {"en": "https://nationaltoday.com/japanese-culture-day/"}, titles: {"en": "Culture Day", "ja": "文化の日"}},
-        {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://nationaltoday.com/labor-appreciation-day/"}, titles: {"en": "Labor Thanksgiving Day", "ja": "勤労感謝の日"}, first: {era: 1, y: 1948}, emoji: "㊘", notes: {"en": "Labour Appreciation Day "}},
-
         {inherits: "Father’s Day", type: "1D", start: {mon: 6, wkd: [1], wkdRecurrence: 3}},
         {inherits: "Mother’s Day", type: "1D", start: {mon: 5, wkd: [1], wkdRecurrence: 2}},
         {type: "1D", start: {mon: 7, d: 7}, titles: {"en": "Star Festival", "ja": "星祭り"}, notes: {"en": "Tanabata", "ja": "たなばた\n七夕"}, urls: {"en": "https://nationaltoday.com/star-festival/"}},
@@ -32,8 +30,7 @@
         {type: "1D", start: {mon: 3, d: 15}, urls: {"en": "https://nationaltoday.com/honen-matsuri/"}, titles: {"en": "Honen Matsuri"}},
         {type: "1D", start: {mon: 10, d: 1}, inherits: "National Coffee Day"},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://www.daysoftheyear.com/days/pocky-day/"}, titles: {"en": "Pocky Day"}},
-        {type: "1D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Appreciation Day", first: {era: 1, y: 1948}},
-        {type: "1D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Appreciation Day", first: {era: 1, y: 1948}},
-
+        {type: "1D", start: {mon: 11, d: 23, wkd: [2, 3, 4, 5, 6, 7]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
+        {type: "1D", start: {mon: 11, d: 24, wkd: [1]}, inherits: "Labor Thanksgiving Day", first: {era: 1, y: 1948}},
     ]
 }
