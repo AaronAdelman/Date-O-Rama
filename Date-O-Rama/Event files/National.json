@@ -2073,7 +2073,7 @@
         {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://www.daysoftheyear.com/days/jukebox-day/"}, titles: {"en": "National Jukebox Day"}, first: {era: 1, y: 2017}},
         {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://www.daysoftheyear.com/days/tie-one-on-day/"}, titles: {"en": "National Tie One On Day"}, first: {era: 1, y: 2006}},
         {type: "1D", start: {mon: 11, d: 21, thruD: 27, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-loneliness-awareness-day/"}, titles: {"en": "What Do You Love About America Day"}},
-        {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://www.daysoftheyear.com/days/eat-a-cranberry-day/"}, titles: {"en": "National Eat a Cranberry Day"}, notes: {"en": "Eat a Cranberry Day"}, first: {era: 1, y: 2015}},
+        {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/eat-a-cranberry-day/"}, titles: {"en": "National Eat a Cranberry Day"}, notes: {"en": "Eat a Cranberry Day"}, first: {era: 1, y: 2015}},
         {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/cashew-day/"}, titles: {"en": "National Cashew Day"}},
         {type: "1D", start: {mon: 11, wkd: [4], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-dog-show-broadcast/"}, titles: {"en": "National Dog Show Broadcast"}, emoji: "🐶🥇", first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 23}, urls: {"en": "https://www.daysoftheyear.com/days/espresso-day/"}, titles: {"en": "National Espresso Day"}, emoji: "☕️"},
