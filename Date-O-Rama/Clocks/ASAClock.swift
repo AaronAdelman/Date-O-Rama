@@ -561,7 +561,7 @@ extension ASAClock {
         return (eventIsTodayOnly && !eventIsAllDay) ? self.timeString(now: date, location: location) : self.shortenedDateTimeString(now: date, location: location)
      } // func properlyShortenedString(date:  Date, isPrimaryClock: Bool, eventIsTodayOnly: Bool) -> String
     
-    private func genericStartAndEndDateStrings(event: ASAEventCompatible,                                               eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
+    private func genericStartAndEndDateStrings(event: ASAEventCompatible, eventIsTodayOnly: Bool, location: ASALocation) -> (startDateString: String?, endDateString: String) {
         var startDateString: String?
         var endDateString: String
         

@@ -51,6 +51,6 @@
         {inherits: "Candlelighting (8.5°)", "excludeRegionCodes": ["IL", "PS"], type: "pt", start: {mon: 8, d: 21, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}},
         {inherits: "Candlelighting (18 minutes)", type: "pt", start: {mon: 10, d: 5, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 0.833, "rising": false, "offset": -1080.0}},
         {inherits: "Candlelighting (8.5°)", type: "pt", start: {mon: 10, d: 6, wkd: [1], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}},
-        {inherits: "Candlelighting (8.5°)", "excludeRegionCodes": ["IL", "PS"], type: "pt",  start: {mon: 10, d: 7, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}}
+        {inherits: "Candlelighting (8.5°)", "excludeRegionCodes": ["IL", "PS"], type: "pt", start: {mon: 10, d: 7, wkd: [1, 2, 3, 4, 5], "ptType": "twilight", "degBelowHorizon": 8.5, "rising": false, "offset": 0}}
     ]
 }

@@ -97,7 +97,7 @@
         {titles: {"he": "פסח (חול המועד, יום ה׳)", "en": "Pesaḥ (Passover) (ḥol hammo‘edh, day 5)"}, "regionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 20}, inherits: "*פסח*"},
         {titles: {"he": "פסח (יום טוב אחרון)", "en": "Pesaḥ (Passover) (yom ṭov ’aḥaron)"}, type: "1D", start: {mon: 8, d: 21}, inherits: "*פסח*"},
         {titles: {"he": "פסח (יום טוב שני)", "en": "Pesaḥ (Passover) (yom ṭov sheni)"}, "excludeRegionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 16}, inherits: "*פסח*"},
-        {inherits: "פסח (חול המועד, יום א׳)",  "excludeRegionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 17}},
+        {inherits: "פסח (חול המועד, יום א׳)", "excludeRegionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 17}},
         {inherits: "פסח (חול המועד, יום ב׳)", "excludeRegionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 18}},
         {inherits: "פסח (חול המועד, יום ג׳)", "excludeRegionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 19}},
         {inherits: "פסח (חול המועד, יום ד׳)", "excludeRegionCodes": ["IL", "PS"], type: "1D", start: {mon: 8, d: 20}},

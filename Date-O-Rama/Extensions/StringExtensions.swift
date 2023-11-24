@@ -131,7 +131,7 @@ extension String {
         case REGION_CODE_Saudi_Arabia:
             return [.Gregorian, .IslamicUmmAlQuraSolar]
             
-        case REGION_CODE_Albania, REGION_CODE_Romania, REGION_CODE_Bulgaria,  REGION_CODE_Georgia, REGION_CODE_Greece, REGION_CODE_Ukraine, REGION_CODE_Cyprus, REGION_CODE_Kyrgyzstan:
+        case REGION_CODE_Albania, REGION_CODE_Romania, REGION_CODE_Bulgaria, REGION_CODE_Georgia, REGION_CODE_Greece, REGION_CODE_Ukraine, REGION_CODE_Cyprus, REGION_CODE_Kyrgyzstan:
             return [.Gregorian, .Julian]
             
         case REGION_CODE_China, REGION_CODE_Christmas_Island, REGION_CODE_Hong_Kong, REGION_CODE_South_Korea, REGION_CODE_Macao, REGION_CODE_Philippines, REGION_CODE_Singapore, REGION_CODE_Vietnam:
@@ -1074,7 +1074,7 @@ extension String {
             let character = Character(scalar)
             if buffer.isEmpty {
                 buffer.append(character)
-                //                debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+                //                debugPrint(#file, #function, "Buffer is now “\(buffer)”, Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
             } else if character == "'" {
                 if mode == .symbol {
                     let newComponent = ASADateFormatPatternComponent(type: .symbol, string: buffer)
@@ -1090,18 +1090,18 @@ extension String {
                 
                 mode = .literal
                 quoteMode = !quoteMode
-                //                debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+                //                debugPrint(#file, #function, "Buffer is now “\(buffer)”, Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
             } else if mode == .symbol {
                 if character == lastCharacter {
                     buffer.append(character)
-                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”, Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 } else {
                     let newComponent = ASADateFormatPatternComponent(type: .symbol, string: buffer)
                     components.append(newComponent)
                     //                    debugPrint(#file, #function, "Appending symbol component “\(buffer)”")
                     buffer = String(character)
                     mode = character.isSyntaxCharacter ? .symbol : .literal
-                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”, Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 }
             } else if mode == .literal {
                 if character.isSyntaxCharacter && !quoteMode {
@@ -1110,10 +1110,10 @@ extension String {
                     //                    debugPrint(#file, #function, "Appending literal component “\(buffer)”")
                     buffer = String(character)
                     mode = .symbol
-                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”, Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 } else {
                     buffer.append(character)
-                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”,  Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
+                    //                    debugPrint(#file, #function, "Buffer is now “\(buffer)”, Mode is now \(mode == .literal ? "literal" : "symbol"), Quote mode is now \(quoteMode ? "true" : "false")")
                 }
             }
             
