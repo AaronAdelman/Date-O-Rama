@@ -22,7 +22,7 @@
         {titles: {"en": "Krampus Night/Krampusnacht"}, type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaldaycalendar.com/krampusnacht-december-5/"}},
         {titles: {"en": "Christmas Card Day"}, type: "1D", start: {mon: 12, d: 9}, urls: {"en": "https://www.daysoftheyear.com/days/christmas-card-day/"}},
         {titles: {"en": "Shopping Reminder Day"}, type: "1D", start: {mon: 11, d: 25}, urls: {"en": "https://www.daysoftheyear.com/days/shopping-reminder-day/"}, emoji: "🎁"},
-        {titles: {"en": "Make A Gift Day"}, type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/make-a-gift-day/"}, emoji: "🎁"},
+        {titles: {"en": "Make a Gift Day"}, type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://www.daysoftheyear.com/days/make-a-gift-day/"}, emoji: "🎁"},
         {titles: {"en": "National Ambrosia Day"}, type: "1D", start: {mon: 12, d: 12}, urls: {"en": "https://nationaldaycalendar.com/national-ambrosia-day-december-12/"}},
         {titles: {"en": "Ugly Christmas Sweater Day"}, type: "1D", start: {mon: 12, wkd: [6], wkdRecurrence: 3}, first: {era: 1, y: 2011}, urls: {"en": "https://www.daysoftheyear.com/days/ugly-christmas-sweater-day/"}, emoji: "🦺"},
         {titles: {"en": "Roast Chestnuts Day", "he": "יום הערמונים הקלויים"}, type: "1D", start: {mon: 12, d: 14}, urls: {"en": "https://www.daysoftheyear.com/days/roast-chestnuts-day/", "he": "https://www.daysoftheyear.co.il/2017/12/roast-chestnuts-day.html"}, emoji: "🌰"},
@@ -45,7 +45,8 @@
         {titles: {"en": "National Candy Cane Day"}, type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/candy-cane-day/"}, notes: {"en": "National Candy Cane Day"}},
         {titles: {"en": "National Coquito Day"}, type: "1D", start: {mon: 12, d: 21}, urls: {"en": "https://www.daysoftheyear.com/days/coquito-day/"}, emoji: "🥛"},
         {titles: {"en": "A’Phabet Day or No “L” Day"}, type: "1D", start: {mon: 12, d: 25}, urls: {"en": "https://nationaldaycalendar.com/aphabet-day-or-no-l-day-december-25/"}, emoji: "Ł"},
-        {titles: {"en": "National Christmas Lights Day"}, type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/national-christmas-lights-day/"}, emoji: "🎄"},
+        {titles: {"en": "National Christmas Lights Day"}, type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-christmas-lights-day/"}, emoji: "🎄"},
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/national-cookie-cutter-day/"}, titles: {"en": "National Cookie Cutter Day"}, first: {era: 1, y: 2019}},
         {titles: {"en": "National Whiners Day"}, type: "1D", start: {mon: 12, d: 26}, urls: {"en": "https://nationaldaycalendar.com/national-whiners-day-december-26/"}, emoji: "☹️"},
         {titles: {"en": "National Champagne Day"}, type: "1D", start: {mon: 12, d: 31}, urls: {"en": "https://www.daysoftheyear.com/days/champagne-day/"}, emoji: "🥂"},
         {titles: {"en": "Ring a Bell Day"}, type: "1D", start: {mon: 1, d: 1}, urls: {"en": "https://www.daysoftheyear.com/days/ring-a-bell-day/"}, emoji: "🔔"},
@@ -114,5 +115,8 @@
         {type: "1D", start: {mon: 10, d: 31}, urls: {"en": "https://nationaltoday.com/national-knock-knock-joke-day/"}, titles: {"en": "National Knock Knock Joke Day"}},
         {type: "1D", start: {mon: 11, d: 1}, urls: {"en": "https://nationaltoday.com/deck-the-everything-day/"}, titles: {"en": "Deck the Everything Day"}, first: {era: 1, y: 2023}, emoji: "🎄"},
         {type: "1D", start: {mon: 2, d: 15}, urls: {"en": "https://nationaltoday.com/st-skeletors-day/"}, titles: {"en": "St. Skeletor’s Day"}, first: {era: 1, y: 1998}, emoji: "💀"},
+        {type: "nD", start: {mon: 12, d: 1}, end: {mon: 12, d: 24}, urls: {"en": "https://nationaltoday.com/operation-santa-paws/"}, titles: {"en": "Operation Santa Paws"}, first: {era: 1, y: 2001}},
+        {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/safe-toys-and-gifts-month/"}, titles: {"en": "Safe Toys and Gifts Month"}},
+        {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://www.daysoftheyear.com/days/candle-day/"}, titles: {"en": "Candle Day"}, emoji: "🕯️", first: {era: 1, y: 2013}},
     ]
 }

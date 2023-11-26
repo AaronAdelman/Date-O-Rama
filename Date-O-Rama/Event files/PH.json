@@ -45,7 +45,7 @@
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/philippine-book-development-month/"}, titles: {"en": "Philippine Book Development Month"}, first: {era: 1, y: 2011}},
         {type: "1M", start: {mon: 11}, urls: {"en": "https://nationaltoday.com/traditional-and-alternative-health-month/"}, titles: {"en": "Traditional and Alternative Health Month"}, urls: {"en": "https://skepdic.com/tialtmed.html"}},
         {type: "nD", start: {mon: 11, d: 25}, end: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/18-day-campaign-to-end-violence-against-women/"}, titles: {"en": "18-Day Campaign to End Violence against Women"}, first: {era: 1, y: 2006}},
-        {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/national-volunteers-month/"}, titles: {"en": "National Volunteers Month"}, first: {era: 1, y: 1998}},
+        {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/national-volunteers-month/"}, titles: {"en": "National Volunteers Month"}, first: {era: 1, y: 1998}, notes: {"en": "Volunteerism Month"}},
         {type: "1M", start: {mon: 12}, urls: {"en": "https://nationaltoday.com/the-month-of-overseas-filipinos/"}, titles: {"en": "Month of Overseas Filipinos"}, first: {era: 1, y: 2007}},
         {type: "nD", start: {mon: 12, d: 4}, end: {mon: 12, d: 10}, urls: {"en": "https://nationaltoday.com/national-human-rights-consciousness-week/"}, titles: {"en": "National Human Rights Consciousness Week"}, first: {era: 1, y: 2003}},
         {type: "1D", start: {mon: 12, d: 30}, urls: {"en": "https://nationaltoday.com/rizal-day/"}, titles: {"en": "Rizal Day"}, first: {era: 1, y: 1902}},
@@ -98,6 +98,5 @@
         {type: "1D", start: {mon: 10, d: 21}, urls: {"en": "https://nationaltoday.com/national-archives-day/"}, titles: {"en": "National Archives Day"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 11, d: 11}, urls: {"en": "https://nationaltoday.com/puerto-princesa-underground-river-day/"}, titles: {"en": "Puerto Princesa Underground River Day"}},
         {type: "nD", start: {mon: 11, d: 25}, end: {mon: 12, d: 12}, urls: {"en": "https://nationaltoday.com/18-day-campaign-to-end-vaw/"}, titles: {"en": "18-Day Campaign to End Violence against Women"}, first: {era: 1, y: 2002}},
-
     ]
 }
