@@ -1957,5 +1957,8 @@
         {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/isdal-woman-day/"}, titles: {"en": "Isdal Woman Day"}, first: {era: 1, y: 1970}},
         {type: "1D", start: {mon: 11, d: 29}, urls: {"en": "https://nationaltoday.com/throw-out-your-leftovers-day/"}, titles: {"en": "Throw Out Your Leftovers Day"}},
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/perpetual-youth-day/"}, titles: {"en": "Perpetual Youth Day"}, inherits: "*BDay*", first: {era: 1, y: 1929}, notes: {"en": "Dick Clark’s Birthday"}},
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/day-without-art-day/"}, titles: {"en": "Day Without Art Day"}, emoji: "🫶", first: {era: 1, y: 1989}, inherits: "*MedicalAwareness*"},
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/prisoners-for-peace-day/"}, titles: {"en": "Prisoners for Peace Day"}},
+        {type: "nD", start: {mon: 12, d: 1}, end: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/crohns-and-colitis-awareness-week/"}, titles: {"en": "Crohn’s and Colitis Awareness Week"}, inherits: "*MedicalAwareness*"},
     ]
 }

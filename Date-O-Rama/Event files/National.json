@@ -2106,6 +2106,9 @@
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-mousse-day/"}, titles: {"en": "National Mousse Day"}},
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/national-personal-space-day/"}, titles: {"en": "National Personal Space Day"}, first: {era: 1, y: 2019}},
         {type: "1D", start: {mon: 11, d: 30}, urls: {"en": "https://nationaltoday.com/native-womens-equal-pay-day/"}, titles: {"en": "Native Women’s Equal Pay Day"}, emoji: "👩"},
-
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/eat-red-apple-day/"}, titles: {"en": "Eat a Red Apple Day"}, notes: {"en": "National Eat a Red Apple Day"}, emoji: "🍎"},
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/national-cookie-cutter-day/"}, titles: {"en": "National Cookie Cutter Day"}, first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 11, d: 28, thruMon: 12, thruD: 4, wkd: [4]}, urls: {"en": "https://nationaltoday.com/national-package-protection-day/"}, titles: {"en": "National Package Protection Day"}, emoji: "📦", first: {era: 1, y: 2016}},
+        {type: "1D", start: {mon: 12, d: 1}, urls: {"en": "https://nationaltoday.com/national-women-support-women-day/"}, titles: {"en": "National Women Support Women Day"}, emoji: "👩", first: {era: 1, y: 2018}},
     ]
 }
