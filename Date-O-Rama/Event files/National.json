@@ -2095,6 +2095,7 @@
         {type: "1D", start: {mon: 11, d: 25}, urls: {"en": "https://nationaltoday.com/national-play-day-with-dad/"}, titles: {"en": "National Play Day with Dad"}},
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://nationaltoday.com/national-anti-obesity-day/"}, titles: {"en": "National Anti Obesity Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 11, d: 26}, urls: {"en": "https://www.daysoftheyear.com/days/cake-day/"}, titles: {"en": "National Cake Day"}, emoji: "🍰"},
+        {type: "1D", start: {mon: 11, d: 25, thruMon: 12, thruD: 1, wkd: [1]}, urls: {"en": "https://www.nationaldaycalendar.com/national-day/national-secondhand-sunday-sunday-after-thanksgiving"}, titles: {"en": "National Secondhand Sunday"}, first: {era: 1, y: 2022}},
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/national-bavarian-cream-pie-day/"}, titles: {"en": "National Bavarian Cream Pie Day"}, emoji: "🥧"},
         {type: "1D", start: {mon: 11, wkd: [2], wkdRecurrence: 4}, urls: {"en": "https://nationaltoday.com/national-brand-day/"}, titles: {"en": "National Brand Day"}},
         {type: "1D", start: {mon: 11, d: 27}, urls: {"en": "https://nationaltoday.com/national-craft-jerky-day/"}, titles: {"en": "National Craft Jerky Day"}, first: {era: 1, y: 2013}},
