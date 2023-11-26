@@ -2122,7 +2122,9 @@
         {type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-green-bean-casserole-day/"}, titles: {"en": "National Green Bean Casserole Day"}, first: {era: 1, y: 2001}},
         {type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-roof-over-your-head/"}, titles: {"en": "National Roof Over Your Head Day"}, emoji: "🏠"},
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-rhubarb-vodka-day/"}, titles: {"en": "National Rhubarb Vodka Day"}, first: {era: 1, y: 2013}},
-        
+        {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-cookie-day/"}, titles: {"en": "National Cookie Day"}, emoji: "🍪"},
+        {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-dice-day/"}, titles: {"en": "National Dice Day"}, emoji: "🎲"},
+
         
     ]
 }
