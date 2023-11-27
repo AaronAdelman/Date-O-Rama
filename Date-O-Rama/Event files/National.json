@@ -1151,7 +1151,7 @@
         {type: "1M", start: {mon: 11}, titles: {"en": "National Epilepsy Awareness Month"}, urls: {"en": "https://www.daysoftheyear.com/days/epilepsy-awareness-month/"}, first: {era: 1, y: 2003}, inherits: "*MedicalAwareness*"},
         {type: "1D", start: {mon: 11, d: 1}, titles: {"en": "National Family Literacy Day"}, urls: {"en": "https://nationaldaycalendar.com/national-family-literacy-day-november-1/"}, first: {era: 1, y: 1994}, emoji: "📖"},
         {type: "1D", start: {mon: 12, d: 2}, urls: {"en": "https://nationaltoday.com/national-anytime-hawaiian-day/"}, titles: {"en": "National Anytime Hawaiian Day"}},
-        {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-repeal-day/", "he": "https://www.daysoftheyear.co.il/2021/12/repealday.html"}, titles: {"en": "National Repeal Day", "he": "יום הביטול הלאומי"}},
+        {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-repeal-day/", "he": "https://www.daysoftheyear.co.il/2021/12/repealday.html"}, titles: {"en": "National Repeal Day", "he": "יום הביטול הלאומי"}, first: {era: 1, y: 1933}, emoji: "🥃"},
         {type: "1M", start: {mon: 2}, urls: {"en": "https://nationaltoday.com/national-african-american-read-in/"}, titles: {"en": "National African American Read-In"}, first: {era: 1, y: 1990}},
         {type: "1D", start: {mon: 2, d: 14}, urls: {"en": "https://nationaltoday.com/national-black-literacy-day/"}, titles: {"en": "National Black Literacy Day"}},
         {type: "1D", start: {mon: 3, d: 1}, urls: {"en": "https://nationaltoday.com/national-black-women-in-jazz-and-the-arts-day/"}, titles: {"en": "National Black Women in Jazz and the Arts Day"}},
@@ -2125,7 +2125,7 @@
         {type: "1D", start: {mon: 12, wkd: [7], wkdRecurrence: 1}, urls: {"en": "https://nationaltoday.com/national-rhubarb-vodka-day/"}, titles: {"en": "National Rhubarb Vodka Day"}, first: {era: 1, y: 2013}},
         {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-cookie-day/"}, titles: {"en": "National Cookie Day"}, emoji: "🍪"},
         {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-dice-day/"}, titles: {"en": "National Dice Day"}, emoji: "🎲"},
-
-        
+        {type: "1D", start: {mon: 11, d: 29, thruMon: 12, thruD: 5, wkd: [5]}, urls: {"en": "https://nationaltoday.com/celebrate-shelter-pets-day/"}, titles: {"en": "Celebrate Shelter Pets Day"}, emoji: "🦮🐕‍🦺", first: {era: 1, y: 2010}},
+        {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/sacher-torte-day/"}, titles: {"en": "Sacher-Torte Day"}},
     ]
 }

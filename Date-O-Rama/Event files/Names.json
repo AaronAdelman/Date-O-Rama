@@ -426,7 +426,8 @@
         {type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-lisa-day/"}, titles: {"en": "National Lisa Day"}},
         {type: "1D", start: {mon: 12, d: 3}, urls: {"en": "https://nationaltoday.com/national-ronald-day/"}, titles: {"en": "National Ronald Day"}},
         {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-francis-day/"}, titles: {"en": "National Francis Day"}},
-        
+        {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-devon-day/"}, titles: {"en": "National Devon Day"}},
+        {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-johnny-day/"}, titles: {"en": "National Johnny Day"}},
         
     ]
 }
