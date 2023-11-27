@@ -2127,5 +2127,10 @@
         {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-dice-day/"}, titles: {"en": "National Dice Day"}, emoji: "🎲"},
         {type: "1D", start: {mon: 11, d: 29, thruMon: 12, thruD: 5, wkd: [5]}, urls: {"en": "https://nationaltoday.com/celebrate-shelter-pets-day/"}, titles: {"en": "Celebrate Shelter Pets Day"}, emoji: "🦮🐕‍🦺", first: {era: 1, y: 2010}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/sacher-torte-day/"}, titles: {"en": "Sacher-Torte Day"}},
+        {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-gazpacho-day/"}, titles: {"en": "National Gazpacho Day"}, emoji: "🥣"},
+        {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-microwave-oven-day/"}, titles: {"en": "National Microwave Oven Day"}},
+        {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-pawnbrokers-day/"}, titles: {"en": "National Pawnbrokers Day"}},
+        {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-letter-writing-day/"}, titles: {"en": "National Letter Writing Day"}, emoji: "🖋️"},
+
     ]
 }

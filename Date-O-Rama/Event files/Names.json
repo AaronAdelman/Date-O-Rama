@@ -428,6 +428,9 @@
         {type: "1D", start: {mon: 12, d: 4}, urls: {"en": "https://nationaltoday.com/national-francis-day/"}, titles: {"en": "National Francis Day"}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-devon-day/"}, titles: {"en": "National Devon Day"}},
         {type: "1D", start: {mon: 12, d: 5}, urls: {"en": "https://nationaltoday.com/national-johnny-day/"}, titles: {"en": "National Johnny Day"}},
-        
+        {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-travis-day/"}, titles: {"en": "National Travis Day"}},
+        {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-joy-day/"}, titles: {"en": "National Joy Day"}},
+        {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-judith-day/"}, titles: {"en": "National Judith Day"}},
+        {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-rina-day/"}, titles: {"en": "National Rina Day"}},
     ]
 }
