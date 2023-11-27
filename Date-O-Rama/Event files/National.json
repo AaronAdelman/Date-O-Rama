@@ -2131,6 +2131,9 @@
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-microwave-oven-day/"}, titles: {"en": "National Microwave Oven Day"}},
         {type: "1D", start: {mon: 12, d: 6}, urls: {"en": "https://nationaltoday.com/national-pawnbrokers-day/"}, titles: {"en": "National Pawnbrokers Day"}},
         {type: "1D", start: {mon: 12, d: 7}, urls: {"en": "https://nationaltoday.com/national-letter-writing-day/"}, titles: {"en": "National Letter Writing Day"}, emoji: "🖋️"},
+        {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-blue-collar-day/"}, titles: {"en": "National Blue Collar Day"}, emoji: "👷‍♂️👷‍♀️", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-health-savings-account-day/"}, titles: {"en": "National Health Savings Account Day"}, emoji: "👨‍⚕️👩‍⚕️", first: {era: 1, y: 2019}},
+        {type: "1D", start: {mon: 12, d: 8}, urls: {"en": "https://nationaltoday.com/national-salesperson-day/"}, titles: {"en": "National Salesperson Day"}, emoji: "👨‍💼👩‍💼", first: {era: 1, y: 2000}},
 
     ]
 }
